@@ -5,7 +5,6 @@
 
 import type {
   BasicInfoResponse,
-  CurrentCountResponse,
   SchoolBusResponse,
   MealInfoResponse,
   AreaInfoResponse,
@@ -66,15 +65,6 @@ export async function fetchBasicInfo(
 }
 
 /**
- * 현원현황 조회
- */
-export async function fetchCurrentCount(
-  options: FetchOptions
-): Promise<CurrentCountResponse[]> {
-  return fetchKindergartenApi<CurrentCountResponse>('childAbstnt', options);
-}
-
-/**
  * 통학차량 현황 조회
  */
 export async function fetchSchoolBus(
@@ -89,7 +79,7 @@ export async function fetchSchoolBus(
 export async function fetchMealInfo(
   options: FetchOptions
 ): Promise<MealInfoResponse[]> {
-  return fetchKindergartenApi<MealInfoResponse>('mealSafetyInfo', options);
+  return fetchKindergartenApi<MealInfoResponse>('schoolMeal', options);
 }
 
 /**
@@ -98,7 +88,7 @@ export async function fetchMealInfo(
 export async function fetchAreaInfo(
   options: FetchOptions
 ): Promise<AreaInfoResponse[]> {
-  return fetchKindergartenApi<AreaInfoResponse>('arEyOfTheInfo', options);
+  return fetchKindergartenApi<AreaInfoResponse>('classArea', options);
 }
 
 /**
@@ -107,17 +97,17 @@ export async function fetchAreaInfo(
 export async function fetchAfterSchool(
   options: FetchOptions
 ): Promise<AfterSchoolResponse[]> {
-  return fetchKindergartenApi<AfterSchoolResponse>('afterSchool', options);
+  return fetchKindergartenApi<AfterSchoolResponse>('afterSchoolPresent', options);
 }
 
 /**
  * 모든 정보 병렬 조회
+ * 현원현황(childAbstnt) API는 공식 제공되지 않아 빈 배열 반환
  */
 export async function fetchAllKindergartenInfo(options: FetchOptions) {
-  const [basicInfo, currentCount, schoolBus, mealInfo, areaInfo, afterSchool] =
+  const [basicInfo, schoolBus, mealInfo, areaInfo, afterSchool] =
     await Promise.all([
       fetchBasicInfo(options),
-      fetchCurrentCount(options),
       fetchSchoolBus(options),
       fetchMealInfo(options),
       fetchAreaInfo(options),
@@ -126,7 +116,7 @@ export async function fetchAllKindergartenInfo(options: FetchOptions) {
 
   return {
     basicInfo,
-    currentCount,
+    currentCount: [], // 현원현황 API 미제공
     schoolBus,
     mealInfo,
     areaInfo,
