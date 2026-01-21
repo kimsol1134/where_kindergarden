@@ -15,16 +15,21 @@
 - [x] 홈페이지 기본 UI 구현 (위치 검색 버튼)
 - [x] 환경 변수 템플릿 (.env.example) 생성
 - [x] next.config.ts 보안 설정 (CVE-2025-66478 대응)
+- [x] Supabase 스키마 생성 (`supabase/migrations/001_create_kindergartens.sql`)
+- [x] 유치원 알리미 API 연동 (`src/lib/api/kindergartenApi.ts`)
+- [x] Kakao API 연동 (`src/lib/api/kakaoApi.ts`)
+- [x] `/api/kindergartens` Route 구현
+- [x] `/api/geocode` Route 구현
 
 ## 진행 중인 작업
-- 없음 (초기 설정 완료)
+- 없음
 
 ## 다음에 할 작업
-1. Supabase 스키마 생성 (kindergartens 테이블)
-2. 유치원 알리미 API 연동 (/api/kindergartens/route.ts)
-3. Kakao 주소 검색 API 연동 (/api/geocode/route.ts)
-4. 검색 결과 목록 컴포넌트 구현
-5. 지도 뷰 컴포넌트 구현 (Kakao Maps)
+1. Supabase에서 마이그레이션 SQL 실행
+2. 검색 결과 페이지 UI 구현 (`/search`)
+3. 검색 결과 목록 컴포넌트 구현
+4. 지도 뷰 컴포넌트 구현 (Kakao Maps)
+5. 비교표 기능 구현 (`/compare`)
 
 ## 주의사항 / 알려진 이슈
 - 환경 변수 미설정 상태 (.env.local 생성 필요)
