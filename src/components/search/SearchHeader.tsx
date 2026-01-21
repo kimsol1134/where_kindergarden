@@ -2,9 +2,23 @@
 
 import { useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
-import { School, Search, X, Heart, User, SlidersHorizontal, ChevronDown, Bus, Clock, MapPin } from 'lucide-react';
+import {
+  School,
+  Search,
+  X,
+  Heart,
+  User,
+  SlidersHorizontal,
+  ChevronDown,
+  Bus,
+  MapPin,
+  UserCheck,
+  Home,
+  Maximize,
+  Building2,
+} from 'lucide-react';
 import { useSearchStore, type InstitutionFilter } from '@/stores';
-import { useAddressSearch, useGeolocation } from '@/hooks';
+import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
 import type { RadiusOption } from '@/types';
 
 export function SearchHeader() {
@@ -19,22 +33,29 @@ export function SearchHeader() {
     setRadius,
     setType,
     setHasBus,
-    setHasAfterSchool,
+    setHasVacancy,
+    setHasIndoorPlayground,
+    setHasLargeSpace,
+    setHasModernBuilding,
     search,
   } = useSearchStore();
 
   const {
     query,
     suggestions,
+    kindergartenSuggestions,
     isLoading: isSearching,
     isOpen,
     setQuery,
     selectAddress,
+    selectKindergarten,
     clearSelection,
     setOpen,
   } = useAddressSearch();
 
   const { getCurrentPosition, isLoading: isGeoLoading } = useGeolocation();
+
+  const { setDetailId } = useSearchStore();
 
   // 주소 선택 핸들러
   const handleSelectAddress = useCallback(
@@ -45,6 +66,20 @@ export function SearchHeader() {
       inputRef.current?.blur();
     },
     [selectAddress, setLocation, search]
+  );
+
+  // 유치원 선택 핸들러
+  const handleSelectKindergarten = useCallback(
+    (kindergarten: KindergartenSearchResult) => {
+      selectKindergarten(kindergarten);
+      // 유치원 위치로 이동하고 검색
+      setLocation({ lat: kindergarten.lat, lng: kindergarten.lng }, kindergarten.address);
+      search();
+      // 선택한 유치원의 상세 정보 표시
+      setDetailId(kindergarten.kindercode);
+      inputRef.current?.blur();
+    },
+    [selectKindergarten, setLocation, search, setDetailId]
   );
 
   // 현재 위치 검색
@@ -84,10 +119,25 @@ export function SearchHeader() {
     setHasBus(filters.hasBus === true ? null : true);
   }, [setHasBus, filters.hasBus]);
 
-  // 방과후 필터 토글
-  const handleAfterSchoolToggle = useCallback(() => {
-    setHasAfterSchool(filters.hasAfterSchool === true ? null : true);
-  }, [setHasAfterSchool, filters.hasAfterSchool]);
+  // 여유정원 필터 토글
+  const handleVacancyToggle = useCallback(() => {
+    setHasVacancy(filters.hasVacancy === true ? null : true);
+  }, [setHasVacancy, filters.hasVacancy]);
+
+  // 실내놀이터 필터 토글
+  const handleIndoorPlaygroundToggle = useCallback(() => {
+    setHasIndoorPlayground(filters.hasIndoorPlayground === true ? null : true);
+  }, [setHasIndoorPlayground, filters.hasIndoorPlayground]);
+
+  // 넓은 공간 필터 토글
+  const handleLargeSpaceToggle = useCallback(() => {
+    setHasLargeSpace(filters.hasLargeSpace === true ? null : true);
+  }, [setHasLargeSpace, filters.hasLargeSpace]);
+
+  // 최신 건물 필터 토글
+  const handleModernBuildingToggle = useCallback(() => {
+    setHasModernBuilding(filters.hasModernBuilding === true ? null : true);
+  }, [setHasModernBuilding, filters.hasModernBuilding]);
 
   // 입력 초기화
   const handleClear = useCallback(() => {
@@ -119,7 +169,7 @@ export function SearchHeader() {
             value={query || address}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => {
-              if (suggestions.length > 0) {
+              if (suggestions.length > 0 || kindergartenSuggestions.length > 0) {
                 setOpen(true);
               }
             }}
@@ -158,31 +208,82 @@ export function SearchHeader() {
               {/* 검색 결과 */}
               {isSearching ? (
                 <div className="px-4 py-6 text-center text-gray-500">검색 중...</div>
-              ) : suggestions.length > 0 ? (
-                <ul>
-                  {suggestions.map((suggestion, index) => (
-                    <li key={`${suggestion.lat}-${suggestion.lng}-${index}`}>
-                      <button
-                        onClick={() => handleSelectAddress(suggestion)}
-                        className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
-                      >
-                        <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                          <Search className="w-4 h-4 text-gray-400" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="font-medium text-gray-900 truncate">
-                            {suggestion.address}
-                          </div>
-                        </div>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              ) : query.length >= 2 ? (
-                <div className="px-4 py-6 text-center text-gray-500">
-                  검색 결과가 없습니다
-                </div>
-              ) : null}
+              ) : (
+                <>
+                  {/* 유치원 검색 결과 */}
+                  {kindergartenSuggestions.length > 0 && (
+                    <div>
+                      <div className="px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 border-b border-gray-100">
+                        유치원
+                      </div>
+                      <ul>
+                        {kindergartenSuggestions.map((kindergarten) => (
+                          <li key={kindergarten.kindercode}>
+                            <button
+                              onClick={() => handleSelectKindergarten(kindergarten)}
+                              className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
+                            >
+                              <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
+                                <School className="w-4 h-4 text-emerald-600" />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <div className="font-medium text-gray-900 truncate">
+                                  {kindergarten.name}
+                                </div>
+                                <div className="text-xs text-gray-500 truncate">
+                                  {kindergarten.address}
+                                </div>
+                              </div>
+                              <span className={`text-xs px-2 py-0.5 rounded-full ${
+                                kindergarten.type === 'public'
+                                  ? 'bg-blue-100 text-blue-700'
+                                  : 'bg-orange-100 text-orange-700'
+                              }`}>
+                                {kindergarten.type === 'public' ? '공립' : '사립'}
+                              </span>
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 주소 검색 결과 */}
+                  {suggestions.length > 0 && (
+                    <div>
+                      <div className="px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 border-b border-gray-100">
+                        주소
+                      </div>
+                      <ul>
+                        {suggestions.map((suggestion, index) => (
+                          <li key={`${suggestion.lat}-${suggestion.lng}-${index}`}>
+                            <button
+                              onClick={() => handleSelectAddress(suggestion)}
+                              className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
+                            >
+                              <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                                <MapPin className="w-4 h-4 text-gray-400" />
+                              </div>
+                              <div className="flex-1 min-w-0">
+                                <div className="font-medium text-gray-900 truncate">
+                                  {suggestion.address}
+                                </div>
+                              </div>
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* 검색 결과 없음 */}
+                  {query.length >= 2 && suggestions.length === 0 && kindergartenSuggestions.length === 0 && (
+                    <div className="px-4 py-6 text-center text-gray-500">
+                      검색 결과가 없습니다
+                    </div>
+                  )}
+                </>
+              )}
             </div>
           )}
         </div>
@@ -294,16 +395,52 @@ export function SearchHeader() {
           <Bus className="w-3.5 h-3.5" /> 셔틀버스
         </button>
 
-        {/* 방과후 필터 */}
+        {/* 여유정원 필터 */}
         <button
-          onClick={handleAfterSchoolToggle}
+          onClick={handleVacancyToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasAfterSchool === true
+            filters.hasVacancy === true
               ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
               : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
           }`}
         >
-          <Clock className="w-3.5 h-3.5" /> 방과후과정
+          <UserCheck className="w-3.5 h-3.5" /> 여유정원
+        </button>
+
+        {/* 실내놀이터 필터 */}
+        <button
+          onClick={handleIndoorPlaygroundToggle}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.hasIndoorPlayground === true
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
+          <Home className="w-3.5 h-3.5" /> 실내놀이터
+        </button>
+
+        {/* 넓은 공간 필터 */}
+        <button
+          onClick={handleLargeSpaceToggle}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.hasLargeSpace === true
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
+          <Maximize className="w-3.5 h-3.5" /> 넓은 공간
+        </button>
+
+        {/* 최신 건물 필터 */}
+        <button
+          onClick={handleModernBuildingToggle}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.hasModernBuilding === true
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
+          <Building2 className="w-3.5 h-3.5" /> 최신건물
         </button>
       </div>
 

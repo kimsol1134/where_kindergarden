@@ -7,7 +7,7 @@ import type { Kindergarten, InstitutionType, MealType } from '@/types';
 /** 기관 유형별 스타일 */
 const TYPE_STYLES: Record<InstitutionType, { label: string; className: string }> = {
   public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
-  private: { label: '사립', className: 'text-orange-600 bg-orange-50' },
+  private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 };
 
@@ -58,16 +58,16 @@ export function CompareGrid({ items }: CompareGridProps) {
                   <XCircle className="w-5 h-5" />
                 </button>
                 <div className="flex flex-col items-center">
-                  <div className={`w-16 h-16 rounded-xl mb-3 flex items-center justify-center transition-colors ${
-                    item.type === 'private' ? 'bg-orange-100' : 
-                    item.type === 'public' ? 'bg-emerald-100' : 'bg-gray-100'
+                  <div className={`w-16 h-16 rounded-2xl mb-3 flex items-center justify-center transition-colors border ${
+                    item.type === 'private' ? 'bg-indigo-50/50 border-indigo-100' : 
+                    item.type === 'public' ? 'bg-emerald-50/50 border-emerald-100' : 'bg-gray-50 border-gray-100'
                   }`}>
                     <School 
-                      className={`w-8 h-8 ${
-                        item.type === 'private' ? 'text-orange-600' : 
-                        item.type === 'public' ? 'text-emerald-600' : 'text-gray-500'
+                      className={`w-7 h-7 ${
+                        item.type === 'private' ? 'text-indigo-500' : 
+                        item.type === 'public' ? 'text-emerald-500' : 'text-gray-400'
                       }`} 
-                      strokeWidth={1.5} 
+                      strokeWidth={1.25} 
                     />
                   </div>
                   <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded mb-1 ${typeStyle.className}`}>

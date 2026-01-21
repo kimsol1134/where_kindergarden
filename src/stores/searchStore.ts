@@ -87,7 +87,10 @@ export interface SearchFilters {
   radius: RadiusOption;
   type: InstitutionFilter;
   hasBus: boolean | null;
-  hasAfterSchool: boolean | null;
+  hasVacancy: boolean | null; // 여유정원 있음
+  hasIndoorPlayground: boolean | null; // 실내놀이터
+  hasLargeSpace: boolean | null; // 넓은 공간 (1인당 5㎡ 이상)
+  hasModernBuilding: boolean | null; // 최신 건물 (2010년 이후)
 }
 
 /** 검색 스토어 상태 */
@@ -129,7 +132,10 @@ interface SearchActions {
   setRadius: (radius: RadiusOption) => void;
   setType: (type: InstitutionFilter) => void;
   setHasBus: (hasBus: boolean | null) => void;
-  setHasAfterSchool: (hasAfterSchool: boolean | null) => void;
+  setHasVacancy: (hasVacancy: boolean | null) => void;
+  setHasIndoorPlayground: (hasIndoorPlayground: boolean | null) => void;
+  setHasLargeSpace: (hasLargeSpace: boolean | null) => void;
+  setHasModernBuilding: (hasModernBuilding: boolean | null) => void;
   resetFilters: () => void;
 
   // 정렬
@@ -150,7 +156,10 @@ const DEFAULT_FILTERS: SearchFilters = {
   radius: 1,
   type: 'all',
   hasBus: null,
-  hasAfterSchool: null,
+  hasVacancy: null,
+  hasIndoorPlayground: null,
+  hasLargeSpace: null,
+  hasModernBuilding: null,
 };
 
 const initialState: SearchState = {
@@ -262,9 +271,27 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
     }));
   },
 
-  setHasAfterSchool: (hasAfterSchool) => {
+  setHasVacancy: (hasVacancy) => {
     set((state) => ({
-      filters: { ...state.filters, hasAfterSchool },
+      filters: { ...state.filters, hasVacancy },
+    }));
+  },
+
+  setHasIndoorPlayground: (hasIndoorPlayground) => {
+    set((state) => ({
+      filters: { ...state.filters, hasIndoorPlayground },
+    }));
+  },
+
+  setHasLargeSpace: (hasLargeSpace) => {
+    set((state) => ({
+      filters: { ...state.filters, hasLargeSpace },
+    }));
+  },
+
+  setHasModernBuilding: (hasModernBuilding) => {
+    set((state) => ({
+      filters: { ...state.filters, hasModernBuilding },
     }));
   },
 
@@ -300,15 +327,33 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
   getFilteredAndSortedResults: () => {
     const { results, filters, sortBy } = get();
 
-    // 클라이언트 측 필터링 (버스, 방과후 등)
+    // 클라이언트 측 필터링
     let filtered = results;
 
     if (filters.hasBus !== null) {
       filtered = filtered.filter((k) => k.hasBus === filters.hasBus);
     }
 
-    if (filters.hasAfterSchool !== null) {
-      filtered = filtered.filter((k) => k.hasAfterSchool === filters.hasAfterSchool);
+    // 여유정원 필터 (capacity > currentCount)
+    if (filters.hasVacancy === true) {
+      filtered = filtered.filter((k) => k.capacity > k.currentCount);
+    }
+
+    // 실내놀이터 필터 (indoorPlaygroundArea > 0)
+    if (filters.hasIndoorPlayground === true) {
+      filtered = filtered.filter((k) => k.indoorPlaygroundArea > 0);
+    }
+
+    // 넓은 공간 필터 (areaPerChild >= 5)
+    if (filters.hasLargeSpace === true) {
+      filtered = filtered.filter((k) => k.areaPerChild >= 5);
+    }
+
+    // 최신 건물 필터 (buildingYear >= 2010)
+    if (filters.hasModernBuilding === true) {
+      filtered = filtered.filter(
+        (k) => k.buildingYear !== null && k.buildingYear >= 2010
+      );
     }
 
     // 정렬 (toSorted 사용 - 원본 배열 불변성 유지)

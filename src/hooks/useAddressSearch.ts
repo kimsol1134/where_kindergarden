@@ -2,11 +2,23 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { GeocodeResult, ApiResponse } from '@/types';
+import { useKindergartenStore, type KindergartenRaw } from '@/stores/kindergartenStore';
+
+/** 유치원 검색 결과 타입 */
+export interface KindergartenSearchResult {
+  kindercode: string;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  type: 'public' | 'private';
+}
 
 /** 주소 검색 상태 */
 interface AddressSearchState {
   query: string;
   suggestions: GeocodeResult[];
+  kindergartenSuggestions: KindergartenSearchResult[];
   selectedAddress: GeocodeResult | null;
   isLoading: boolean;
   error: string | null;
@@ -34,14 +46,46 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
   const [state, setState] = useState<AddressSearchState>({
     query: '',
     suggestions: [],
+    kindergartenSuggestions: [],
     selectedAddress: null,
     isLoading: false,
     error: null,
     isOpen: false,
   });
 
+  const kindergartenStore = useKindergartenStore();
+
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+
+  // 유치원 이름 검색 함수
+  const searchKindergartens = useCallback(
+    (searchQuery: string): KindergartenSearchResult[] => {
+      // 데이터가 로드되지 않았으면 빈 배열 반환
+      if (!kindergartenStore.isLoaded) {
+        return [];
+      }
+
+      const allData = kindergartenStore.getAll();
+      const queryLower = searchQuery.toLowerCase();
+
+      // 이름에 검색어가 포함된 유치원 찾기 (최대 10개)
+      const results = allData
+        .filter((item) => item.name.toLowerCase().includes(queryLower))
+        .slice(0, 10)
+        .map((item) => ({
+          kindercode: item.kindercode,
+          name: item.name,
+          address: item.address,
+          lat: item.lat,
+          lng: item.lng,
+          type: item.type,
+        }));
+
+      return results;
+    },
+    [kindergartenStore]
+  );
 
   // 검색 함수
   const searchAddress = useCallback(
@@ -55,6 +99,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
         setState((prev) => ({
           ...prev,
           suggestions: [],
+          kindergartenSuggestions: [],
           isOpen: false,
           isLoading: false,
         }));
@@ -62,6 +107,9 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
       }
 
       setState((prev) => ({ ...prev, isLoading: true, error: null }));
+
+      // 유치원 이름 검색 (동기)
+      const kindergartenResults = searchKindergartens(searchQuery);
 
       const abortController = new AbortController();
       abortControllerRef.current = abortController;
@@ -78,21 +126,26 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
         const json: ApiResponse<GeocodeResult[]> = await response.json();
 
         if (!json.success) {
+          // 주소 검색 실패해도 유치원 검색 결과가 있으면 표시
           setState((prev) => ({
             ...prev,
-            error: json.error,
+            error: kindergartenResults.length > 0 ? null : json.error,
             suggestions: [],
+            kindergartenSuggestions: kindergartenResults,
             isLoading: false,
-            isOpen: false,
+            isOpen: kindergartenResults.length > 0,
           }));
           return;
         }
 
+        const hasResults = json.data.length > 0 || kindergartenResults.length > 0;
+
         setState((prev) => ({
           ...prev,
           suggestions: json.data,
+          kindergartenSuggestions: kindergartenResults,
           isLoading: false,
-          isOpen: json.data.length > 0,
+          isOpen: hasResults,
         }));
       } catch (err) {
         // AbortError는 무시
@@ -100,16 +153,18 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
           return;
         }
 
+        // 네트워크 오류 시에도 유치원 검색 결과는 표시
         setState((prev) => ({
           ...prev,
-          error: '주소 검색 중 오류가 발생했습니다.',
+          error: kindergartenResults.length > 0 ? null : '주소 검색 중 오류가 발생했습니다.',
           suggestions: [],
+          kindergartenSuggestions: kindergartenResults,
           isLoading: false,
-          isOpen: false,
+          isOpen: kindergartenResults.length > 0,
         }));
       }
     },
-    [minQueryLength]
+    [minQueryLength, searchKindergartens]
   );
 
   // 디바운스된 쿼리 변경 핸들러
@@ -137,6 +192,18 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
       selectedAddress: address,
       query: address.address,
       suggestions: [],
+      kindergartenSuggestions: [],
+      isOpen: false,
+    }));
+  }, []);
+
+  // 유치원 선택
+  const selectKindergarten = useCallback((kindergarten: KindergartenSearchResult) => {
+    setState((prev) => ({
+      ...prev,
+      query: kindergarten.name,
+      suggestions: [],
+      kindergartenSuggestions: [],
       isOpen: false,
     }));
   }, []);
@@ -146,6 +213,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     setState({
       query: '',
       suggestions: [],
+      kindergartenSuggestions: [],
       selectedAddress: null,
       isLoading: false,
       error: null,
@@ -179,6 +247,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     ...state,
     setQuery,
     selectAddress,
+    selectKindergarten,
     clearSelection,
     setOpen,
     clearError,

@@ -10,7 +10,7 @@ import type { SortOption } from '@/stores/searchStore';
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
   public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
-  private: { label: '사립', className: 'text-orange-600 bg-orange-50' },
+  private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 } as const;
 
@@ -241,16 +241,16 @@ function KindergartenCard({
 
       <div className="flex gap-4">
         {/* 썸네일 */}
-        <div className={`w-20 h-20 rounded-xl flex-shrink-0 flex items-center justify-center transition-colors ${
-          kindergarten.type === 'private' ? 'bg-orange-100' : 
-          kindergarten.type === 'public' ? 'bg-emerald-100' : 'bg-gray-100'
+        <div className={`w-20 h-20 rounded-2xl flex-shrink-0 flex items-center justify-center transition-colors border ${
+          kindergarten.type === 'private' ? 'bg-indigo-50/50 border-indigo-100' : 
+          kindergarten.type === 'public' ? 'bg-emerald-50/50 border-emerald-100' : 'bg-gray-50 border-gray-100'
         }`}>
           <School 
-            className={`w-10 h-10 ${
-              kindergarten.type === 'private' ? 'text-orange-600' : 
-              kindergarten.type === 'public' ? 'text-emerald-600' : 'text-gray-500'
+            className={`w-9 h-9 ${
+              kindergarten.type === 'private' ? 'text-indigo-500' : 
+              kindergarten.type === 'public' ? 'text-emerald-500' : 'text-gray-400'
             }`} 
-            strokeWidth={1.5} 
+            strokeWidth={1.25} 
           />
         </div>
 

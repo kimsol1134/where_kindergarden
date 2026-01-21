@@ -1,4 +1,4 @@
 export { useGeolocation } from './useGeolocation';
-export { useAddressSearch } from './useAddressSearch';
+export { useAddressSearch, type KindergartenSearchResult } from './useAddressSearch';
 export { useKakaoMap } from './useKakaoMap';
 export { useURLSync } from './useURLSync';
