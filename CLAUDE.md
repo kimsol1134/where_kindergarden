@@ -617,10 +617,117 @@ Base URL: `https://e-childschoolinfo.moe.go.kr/api/notice`
 #### 현재 사용 중인 엔드포인트
 
 ```typescript
-// src/lib/api/kindergartenApi.ts
-'basicInfo'          // 기본현황
-'schoolBus'          // 통학차량현황
-'schoolMeal'         // 급식운영현황
+// scripts/sync-kindergartens.ts - 13개 엔드포인트 전체 수집
+'basicInfo2'         // 기본현황(신규) - 좌표(lat, lng) 포함
+'building'           // 건물현황
 'classArea'          // 교실면적현황
+'teachersInfo'       // 직위·자격별 교직원현황
+'lessonDay'          // 수업일수현황
+'schoolMeal'         // 급식운영현황
+'schoolBus'          // 통학차량현황
+'yearOfWork'         // 근속연수현황
+'environmentHygiene' // 환경위생 관리현황
+'safetyEdu'          // 안전점검·교육 실시현황
+'deductionSociety'   // 공제회 가입현황
+'insurance'          // 보험별 가입현황
 'afterSchoolPresent' // 방과후 과정
 ```
+
+---
+
+## 유치원 데이터 동기화 스크립트
+
+### 개요
+
+`scripts/sync-kindergartens.ts` 스크립트를 사용하여 유치원 알리미 API에서 전국 유치원 데이터를 수집합니다.
+
+### 실행 방법
+
+```bash
+# 전체 동기화 (250개 시군구, 13개 엔드포인트)
+pnpm sync:kindergartens
+
+# 테스트 모드 (서울 종로구만)
+pnpm sync:kindergartens -- --test
+
+# JSON 파일로 저장
+pnpm sync:kindergartens -- --save-json
+
+# 테스트 + JSON 저장
+pnpm sync:kindergartens -- --test --save-json
+```
+
+### 필요한 환경 변수
+
+```env
+# .env.local
+KINDERGARTEN_API_KEY=your_api_key_here
+
+# Supabase에 저장하려면 (선택사항)
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+```
+
+### 출력 파일
+
+- **위치**: `scripts/data-output/`
+- **파일명**: `kindergartens-full-YYYY-MM-DD.json`
+- **크기**: 약 94MB (7,950개 유치원, 13개 엔드포인트 데이터 포함)
+
+### 데이터 구조
+
+```typescript
+interface KindergartenRecord {
+  // 핵심 필드 (DB 저장용)
+  kindercode: string;
+  name: string;
+  address: string;
+  sido_code: string;
+  sigungu_code: string;
+  type: 'public' | 'private' | 'home';
+  capacity: number;
+  current_count: number;
+  has_bus: boolean;
+  bus_count: number;
+  meal_type: 'direct' | 'outsourced' | null;
+  has_after_school: boolean;
+  area_per_child: number;
+  phone: string | null;
+  homepage: string | null;
+  operation_hours: string | null;
+  has_playground: boolean;
+  lat: number | null;    // 위도 (basicInfo2에서 제공)
+  lng: number | null;    // 경도 (basicInfo2에서 제공)
+
+  // 원시 데이터 (JSON 저장시에만 포함)
+  raw_data: {
+    basicInfo2: {...};
+    building: {...};
+    teachersInfo: {...};
+    lessonDay: {...};
+    schoolBus: {...};
+    schoolMeal: {...};
+    classArea: {...};
+    yearOfWork: {...};
+    environmentHygiene: {...};
+    safetyEdu: {...};
+    deductionSociety: {...};
+    afterSchool: {...};
+    insurance: [...];  // 보험은 유치원당 여러 행
+  };
+}
+```
+
+### 수집 프로세스
+
+1. **시군구 코드 로드**: `scripts/data/sigungu-codes.ts`에서 250개 시군구 정보 로드
+2. **병렬 API 호출**: 각 시군구별로 13개 엔드포인트 동시 호출
+3. **데이터 병합**: `kindercode`를 키로 모든 데이터 병합
+4. **저장**: Supabase 또는 JSON 파일로 저장
+
+### 주의사항
+
+- API 호출 간 300ms 딜레이 적용 (Rate limiting 대응)
+- `insurance` 엔드포인트는 유치원당 여러 행 반환 (보험 종류별)
+- `basicInfo2`에서 좌표(`lttdcdnt`, `lngtcdnt`) 제공
+- Supabase 저장 시 `raw_data` 필드는 제외됨
