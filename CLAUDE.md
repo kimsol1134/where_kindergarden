@@ -24,6 +24,10 @@
 - `.env.local` - 환경 변수, 직접 수정 금지
 - `package.json`의 engines 필드 - Node.js 버전 고정
 
+### Git 브랜치 규칙
+- **main 브랜치에서 직접 작업 금지** - 반드시 feature 브랜치 생성 후 작업
+- **모든 기능 개발은 Git Worktree 사용** - 아래 Git 워크플로우 섹션 참고
+
 ---
 
 ## Git 워크플로우
@@ -34,7 +38,8 @@
 
 ### Git Worktree 기반 개발
 
-새로운 기능 개발 시 반드시 Git Worktree를 사용합니다.
+> **중요**: 새로운 기능 개발 시 **반드시** Git Worktree를 사용합니다.
+> main 브랜치에서 직접 커밋하지 마세요!
 
 #### 워크플로우
 
