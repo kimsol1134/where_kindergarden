@@ -85,7 +85,7 @@
 │   ├── 헤더 (뒤로가기, 제목)
 │   ├── 비교 그리드
 │   │   ├── 기본 정보 섹션
-│   │   ├── 정원/현원 섹션
+│   │   ├── 정원 섹션 (현원은 API 미제공)
 │   │   ├── 통학/급식 섹션
 │   │   ├── 시설/면적 섹션
 │   │   └── 방과후 섹션
@@ -291,12 +291,12 @@ interface CompareURLParams {
 | Attribute | Type | Source | Display |
 |-----------|------|--------|---------|
 | capacity | number | basicInfo | Card, Compare |
-| currentCount | number | N/A* | Card, Compare |
-| vacancies | number | Calculated | Compare (highlight) |
+| currentCount | number | N/A* | **미표시** (API 미제공) |
+| vacancies | number | N/A* | **미표시** (현원 부재로 계산 불가) |
 | foundedYear | number | basicInfo | Detail |
 | operatingHours | string | basicInfo | Detail |
 
-> *현원현황 API는 공식 제공되지 않음
+> *현원현황 API는 공식 제공되지 않음. 따라서 현원(currentCount)과 여유석(vacancies)은 표시하지 않음.
 
 #### Facilities (시설정보)
 
@@ -377,8 +377,8 @@ interface CompareURLParams {
 |------------|-------|--------|
 | 거리 | distance | 0.0km |
 | 정원 | capacity | 00명 |
-| 현원 | currentCount | 00명 |
-| 여유석 | vacancies | 00석 |
+| ~~현원~~ | ~~currentCount~~ | ~~00명~~ (API 미제공으로 표시 안함) |
+| ~~여유석~~ | ~~vacancies~~ | ~~00석~~ (현원 부재로 계산 불가) |
 | 통학차량 | hasBus | 있음/없음 (0대) |
 | 급식 | mealType | 직영/위탁/없음 |
 | 1인당 면적 | areaPerChild | 0.0㎡ |
@@ -463,7 +463,7 @@ interface CompareURLParams {
 │                                         │
 ├─────────────────────────────────────────┤
 │  개인정보처리방침  |  서비스 소개       │  ← Footer
-│           © 2025 우리동네 유치원        │
+│           © 2026 우리동네 유치원        │
 └─────────────────────────────────────────┘
 ```
 
@@ -572,7 +572,7 @@ interface CompareURLParams {
 │ └─────────────────────────────────────┘ │
 │                                         │
 │ ┌─────────────────────────────────────┐ │
-│ │ [▶ 정원/현원]                      │ │  ← Section (Collapsed)
+│ │ [▶ 정원]                           │ │  ← Section (Collapsed, 현원은 API 미제공)
 │ └─────────────────────────────────────┘ │
 │                                         │
 │ ┌─────────────────────────────────────┐ │

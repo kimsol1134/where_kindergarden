@@ -82,7 +82,7 @@
 | UC-06 | 비교표 생성 | P0 | Medium | Implemented |
 | UC-07 | 지도 뷰 확인 | P1 | Medium | Implemented |
 | UC-08 | 반경 변경 | P0 | Low | Implemented |
-| UC-09 | 공유 | P0 | Low | Partial |
+| UC-09 | 공유 | P0 | Low | Partial (카카오톡 SDK 미연동) |
 
 ---
 
@@ -249,7 +249,7 @@
 | BR-07 | API 응답은 24시간 캐싱 |
 | BR-08 | 인접 시군구도 함께 조회하여 경계 지역 대응 |
 | BR-09 | 거리 계산은 클라이언트 사이드에서 수행 |
-| BR-10 | 목록 표시 정보: 기관명, 유형, 거리, 정원/현원, 통학차량 유무 |
+| BR-10 | 목록 표시 정보: 기관명, 유형, 거리, 정원, 통학차량 유무 (현원은 API 미제공) |
 
 #### Data Flow
 
@@ -429,7 +429,7 @@
 | Section | Items | Highlight Criteria |
 |---------|-------|-------------------|
 | 기본 정보 | 기관명, 설립유형, 거리 | 거리 최소값 |
-| 정원/현원 | 정원, 현원, 여유석 | 여유석 최대값 |
+| 정원 | 정원 (현원은 API 미제공으로 표시 불가) | - |
 | 통학/급식 | 통학차량 유무/대수, 급식 방식 | - |
 | 시설/면적 | 1인당 면적, 놀이터 유무 | 면적 최대값 |
 | 방과후 | 운영 여부, 시간 | - |
@@ -629,7 +629,7 @@
 | REQ-06: 상세 정보 | UC-04 | ✅ |
 | REQ-07: 비교 선택 | UC-05 | ✅ |
 | REQ-08: 비교표 | UC-06 | ✅ |
-| REQ-09: 공유 | UC-09 | 🔄 |
+| REQ-09: 공유 | UC-09 | 🔄 (링크 복사만 구현, 카카오톡 미연동) |
 
 ### Use Cases ↔ Components
 
@@ -643,7 +643,7 @@
 | UC-06 | `ComparePage.tsx`, `CompareGrid.tsx` |
 | UC-07 | `MapView.tsx`, `useKakaoMap.ts` |
 | UC-08 | `SearchHeader.tsx`, `useURLSync.ts` |
-| UC-09 | (Partial) - `CompareHeader.tsx` |
+| UC-09 | (Partial) - `CompareHeader.tsx` (링크 복사만 구현, 카카오톡 SDK 미연동) |
 
 ---
 
