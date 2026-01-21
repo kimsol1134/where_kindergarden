@@ -1,5 +1,6 @@
 'use client';
 
+import { startTransition } from 'react';
 import { X, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { useCompareStore } from '@/stores';
@@ -8,6 +9,12 @@ const MAX_COMPARE_ITEMS = 3;
 
 export function CompareFloatingBar() {
   const { items, removeItem, clearAll } = useCompareStore();
+
+  const handleRemoveItem = (kindercode: string) => {
+    startTransition(() => {
+      removeItem(kindercode);
+    });
+  };
 
   if (items.length === 0) {
     return null;
@@ -20,30 +27,30 @@ export function CompareFloatingBar() {
           <div className="flex items-center gap-4 overflow-x-auto hide-scrollbar">
             {/* 선택된 아이템들 */}
             {items.map((item, index) => (
-              <div key={item.kindercode} className="flex items-center gap-2 flex-shrink-0">
-                <div className="bg-emerald-100 text-emerald-600 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+              <div key={item.kindercode} className="flex items-center gap-1.5 flex-shrink-0 bg-gray-50 rounded-full pl-1 pr-1.5 py-1">
+                <div className="bg-emerald-500 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-xs">
                   {index + 1}
                 </div>
-                <span className="font-bold text-gray-800 truncate max-w-[120px]">{item.name}</span>
+                <span className="font-medium text-gray-700 truncate max-w-[100px] text-sm">{item.name}</span>
                 <button
-                  onClick={() => removeItem(item.kindercode)}
-                  className="text-gray-400 hover:text-gray-600 p-1"
+                  onClick={() => handleRemoveItem(item.kindercode)}
+                  className="w-6 h-6 rounded-full flex items-center justify-center bg-gray-200 text-gray-500 hover:bg-red-100 hover:text-red-500 transition-colors"
                   aria-label={`${item.name} 제거`}
                 >
-                  <X className="w-3 h-3" />
+                  <X className="w-3.5 h-3.5" />
                 </button>
               </div>
             ))}
 
             {/* 구분선 및 남은 슬롯 표시 */}
-            {items.length < MAX_COMPARE_ITEMS && (
+            {items.length < MAX_COMPARE_ITEMS ? (
               <>
                 <div className="w-px h-4 bg-gray-300 flex-shrink-0" />
                 <span className="text-sm text-gray-500 flex-shrink-0">
                   {MAX_COMPARE_ITEMS - items.length}개 더 선택 가능
                 </span>
               </>
-            )}
+            ) : null}
           </div>
 
           <div className="flex items-center gap-2 flex-shrink-0 ml-4">
