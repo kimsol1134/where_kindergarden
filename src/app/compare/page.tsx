@@ -23,15 +23,53 @@ function transformToKindergarten(raw: KindergartenRaw): Kindergarten {
     lat: raw.lat,
     lng: raw.lng,
     distance: 0, // URL 복원 시 거리 정보 없음
+
+    // 정원/현원
     capacity: raw.capacity,
     currentCount: raw.current_count,
+
+    // 연령별 학급 수
+    classCountAge3: raw.class_count_age3,
+    classCountAge4: raw.class_count_age4,
+    classCountAge5: raw.class_count_age5,
+
+    // 연령별 정원
+    capacityAge3: raw.capacity_age3,
+    capacityAge4: raw.capacity_age4,
+    capacityAge5: raw.capacity_age5,
+
+    // 연령별 현원
+    currentAge3: raw.current_age3,
+    currentAge4: raw.current_age4,
+    currentAge5: raw.current_age5,
+
+    // 운영 정보
     hasBus: raw.has_bus,
     busCount: raw.bus_count,
     mealType: (raw.meal_type ?? 'none') as MealType,
     hasAfterSchool: raw.has_after_school,
+    establishDate: raw.establish_date,
+
+    // 시설 정보
     areaPerChild: raw.area_per_child,
-    phone: raw.phone ?? undefined,
     hasPlayground: raw.has_playground,
+    buildingYear: raw.building_year,
+    floorInfo: raw.floor_info,
+    classroomArea: raw.classroom_area,
+    indoorPlaygroundArea: raw.indoor_playground_area,
+    outdoorPlaygroundArea: raw.outdoor_playground_area,
+
+    // 교직원 정보
+    teacherCount: raw.teacher_count,
+    seniorTeacherCount: raw.senior_teacher_count,
+
+    // 안전 정보
+    cctvCount: raw.cctv_count,
+
+    // 연락처
+    phone: raw.phone,
+    homepage: raw.homepage,
+    operationHours: raw.operation_hours,
   };
 }
 

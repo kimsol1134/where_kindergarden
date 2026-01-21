@@ -1,6 +1,6 @@
 'use client';
 
-import { Layers, XCircle, Info, BookOpen, ShieldCheck, Phone, Calendar } from 'lucide-react';
+import { Layers, XCircle, Info, BookOpen, ShieldCheck, Calendar, School } from 'lucide-react';
 import { useCompareStore } from '@/stores';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
@@ -58,8 +58,17 @@ export function CompareGrid({ items }: CompareGridProps) {
                   <XCircle className="w-5 h-5" />
                 </button>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-xl overflow-hidden mb-3 shadow-sm bg-gray-100 flex items-center justify-center">
-                    <span className="text-3xl">🏫</span>
+                  <div className={`w-16 h-16 rounded-xl mb-3 flex items-center justify-center transition-colors ${
+                    item.type === 'private' ? 'bg-orange-100' : 
+                    item.type === 'public' ? 'bg-emerald-100' : 'bg-gray-100'
+                  }`}>
+                    <School 
+                      className={`w-8 h-8 ${
+                        item.type === 'private' ? 'text-orange-600' : 
+                        item.type === 'public' ? 'text-emerald-600' : 'text-gray-500'
+                      }`} 
+                      strokeWidth={1.5} 
+                    />
                   </div>
                   <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded mb-1 ${typeStyle.className}`}>
                     {typeStyle.label}
@@ -114,9 +123,7 @@ export function CompareGrid({ items }: CompareGridProps) {
             {items.map((item) => (
               <div key={item.kindercode} className="p-4 text-sm text-center">
                 {item.hasAfterSchool ? (
-                  <span className="text-emerald-600 font-bold">
-                    운영 {item.afterSchoolHours ? `(${item.afterSchoolHours})` : ''}
-                  </span>
+                  <span className="text-emerald-600 font-bold">운영</span>
                 ) : (
                   <span className="text-gray-400">미운영</span>
                 )}
@@ -170,12 +177,8 @@ export function CompareGrid({ items }: CompareGridProps) {
       {/* Floating Action Buttons */}
       <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 z-40">
         <div className="max-w-5xl mx-auto flex gap-3">
-          <div className="flex-1 grid grid-cols-2 gap-3">
-            <button className="flex flex-col items-center justify-center py-2 px-4 rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors">
-              <Phone className="w-5 h-5 text-gray-600 mb-1" />
-              <span className="text-[11px] font-bold text-gray-700">전화 상담</span>
-            </button>
-            <button className="flex flex-col items-center justify-center py-2 px-4 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-100">
+          <div className="flex-1">
+            <button className="w-full h-full flex flex-col items-center justify-center py-2 px-4 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-100">
               <Calendar className="w-5 h-5 mb-1" />
               <span className="text-[11px] font-bold">방문 예약</span>
             </button>

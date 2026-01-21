@@ -23,16 +23,53 @@ export interface Kindergarten {
   lat: number;
   lng: number;
   distance: number; // km
+
+  // 정원/현원
   capacity: number; // 정원
   currentCount: number; // 현원
+
+  // 연령별 학급 수
+  classCountAge3: number;
+  classCountAge4: number;
+  classCountAge5: number;
+
+  // 연령별 정원
+  capacityAge3: number;
+  capacityAge4: number;
+  capacityAge5: number;
+
+  // 연령별 현원
+  currentAge3: number;
+  currentAge4: number;
+  currentAge5: number;
+
+  // 운영 정보
   hasBus: boolean;
   busCount: number;
   mealType: MealType;
   hasAfterSchool: boolean;
+  establishDate: string; // 설립일
+
+  // 시설 정보
   areaPerChild: number; // 1인당 면적 (㎡)
-  phone?: string;
-  hasPlayground?: boolean;
-  afterSchoolHours?: string;
+  hasPlayground: boolean;
+  buildingYear: number | null; // 건축년도
+  floorInfo: string | null; // 층 정보
+  classroomArea: number; // 교실 면적
+  indoorPlaygroundArea: number; // 실내놀이터 면적
+  outdoorPlaygroundArea: number; // 실외놀이터 면적
+
+  // 교직원 정보
+  teacherCount: number;
+  seniorTeacherCount: number;
+
+  // 안전 정보
+  cctvCount: number;
+
+  // 연락처
+  phone: string | null;
+  homepage: string | null;
+  operationHours: string | null;
 }
 
 /** 검색 결과 */
