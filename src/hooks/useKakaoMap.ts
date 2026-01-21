@@ -1,0 +1,367 @@
+'use client';
+
+import { useEffect, useRef, useState, useCallback } from 'react';
+import type { Coordinates, Kindergarten } from '@/types';
+
+/** Kakao Maps 전역 타입 선언 */
+declare global {
+  interface Window {
+    kakao: {
+      maps: {
+        load: (callback: () => void) => void;
+        Map: new (
+          container: HTMLElement,
+          options: { center: KakaoLatLng; level: number }
+        ) => KakaoMap;
+        LatLng: new (lat: number, lng: number) => KakaoLatLng;
+        Marker: new (options: {
+          position: KakaoLatLng;
+          map?: KakaoMap;
+          image?: KakaoMarkerImage;
+        }) => KakaoMarker;
+        MarkerImage: new (
+          src: string,
+          size: KakaoSize,
+          options?: { offset?: KakaoPoint }
+        ) => KakaoMarkerImage;
+        Size: new (width: number, height: number) => KakaoSize;
+        Point: new (x: number, y: number) => KakaoPoint;
+        InfoWindow: new (options: {
+          content: string;
+          removable?: boolean;
+        }) => KakaoInfoWindow;
+        event: {
+          addListener: (
+            target: KakaoMarker | KakaoMap,
+            type: string,
+            callback: () => void
+          ) => void;
+          removeListener: (
+            target: KakaoMarker | KakaoMap,
+            type: string,
+            callback: () => void
+          ) => void;
+        };
+        LatLngBounds: new () => KakaoLatLngBounds;
+      };
+    };
+  }
+
+  interface KakaoLatLng {
+    getLat: () => number;
+    getLng: () => number;
+  }
+
+  interface KakaoMap {
+    setCenter: (latLng: KakaoLatLng) => void;
+    setLevel: (level: number) => void;
+    getLevel: () => number;
+    setBounds: (bounds: KakaoLatLngBounds, paddingTop?: number, paddingRight?: number, paddingBottom?: number, paddingLeft?: number) => void;
+  }
+
+  interface KakaoMarker {
+    setMap: (map: KakaoMap | null) => void;
+    getPosition: () => KakaoLatLng;
+    setImage: (image: KakaoMarkerImage) => void;
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface KakaoMarkerImage {}
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface KakaoSize {}
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
+  interface KakaoPoint {}
+
+  interface KakaoInfoWindow {
+    open: (map: KakaoMap, marker: KakaoMarker) => void;
+    close: () => void;
+    setContent: (content: string) => void;
+  }
+
+  interface KakaoLatLngBounds {
+    extend: (latLng: KakaoLatLng) => void;
+  }
+}
+
+/** 마커 데이터 타입 */
+interface MarkerData {
+  id: string;
+  marker: KakaoMarker;
+  kindergarten: Kindergarten;
+}
+
+/** Kakao Map 훅 상태 */
+interface KakaoMapState {
+  isLoaded: boolean;
+  isError: boolean;
+  errorMessage: string | null;
+}
+
+/** Kakao Map 훅 옵션 */
+interface KakaoMapOptions {
+  center?: Coordinates;
+  level?: number;
+  onMarkerClick?: (kindergarten: Kindergarten) => void;
+}
+
+const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false`;
+const DEFAULT_CENTER: Coordinates = { lat: 37.5665, lng: 126.978 }; // 서울시청
+const DEFAULT_LEVEL = 5;
+
+/**
+ * Kakao Maps SDK 래핑 훅
+ */
+export function useKakaoMap(
+  containerRef: React.RefObject<HTMLDivElement | null>,
+  options: KakaoMapOptions = {}
+) {
+  const { center = DEFAULT_CENTER, level = DEFAULT_LEVEL, onMarkerClick } = options;
+
+  const [state, setState] = useState<KakaoMapState>({
+    isLoaded: false,
+    isError: false,
+    errorMessage: null,
+  });
+
+  const mapRef = useRef<KakaoMap | null>(null);
+  const markersRef = useRef<MarkerData[]>([]);
+  const currentLocationMarkerRef = useRef<KakaoMarker | null>(null);
+  const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
+  const selectedMarkerIdRef = useRef<string | null>(null);
+
+  // SDK 스크립트 로드
+  useEffect(() => {
+    const existingScript = document.getElementById('kakao-maps-sdk');
+
+    if (existingScript) {
+      // 이미 로드된 경우
+      if (window.kakao?.maps) {
+        window.kakao.maps.load(() => {
+          setState({ isLoaded: true, isError: false, errorMessage: null });
+        });
+      }
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.id = 'kakao-maps-sdk';
+    script.src = KAKAO_SDK_URL;
+    script.async = true;
+
+    script.onload = () => {
+      window.kakao.maps.load(() => {
+        setState({ isLoaded: true, isError: false, errorMessage: null });
+      });
+    };
+
+    script.onerror = () => {
+      setState({
+        isLoaded: false,
+        isError: true,
+        errorMessage: 'Kakao Maps SDK 로드에 실패했습니다.',
+      });
+    };
+
+    document.head.appendChild(script);
+
+    return () => {
+      // 스크립트는 재사용을 위해 제거하지 않음
+    };
+  }, []);
+
+  // 지도 초기화
+  useEffect(() => {
+    if (!state.isLoaded || !containerRef.current || mapRef.current) {
+      return;
+    }
+
+    const { kakao } = window;
+    const mapCenter = new kakao.maps.LatLng(center.lat, center.lng);
+    const mapOptions = {
+      center: mapCenter,
+      level,
+    };
+
+    mapRef.current = new kakao.maps.Map(containerRef.current, mapOptions);
+
+    // 인포윈도우 생성
+    infoWindowRef.current = new kakao.maps.InfoWindow({
+      content: '',
+      removable: true,
+    });
+  }, [state.isLoaded, containerRef, center.lat, center.lng, level]);
+
+  // 지도 중심 이동
+  const setCenter = useCallback((coords: Coordinates) => {
+    if (!mapRef.current || !window.kakao) return;
+
+    const newCenter = new window.kakao.maps.LatLng(coords.lat, coords.lng);
+    mapRef.current.setCenter(newCenter);
+  }, []);
+
+  // 지도 레벨 설정
+  const setLevel = useCallback((newLevel: number) => {
+    if (!mapRef.current) return;
+    mapRef.current.setLevel(newLevel);
+  }, []);
+
+  // 인포윈도우 표시
+  const showInfoWindow = useCallback((marker: KakaoMarker, kindergarten: Kindergarten) => {
+    if (!infoWindowRef.current || !mapRef.current) return;
+
+    const content = `
+      <div style="padding:8px;min-width:150px;font-size:13px;">
+        <strong style="display:block;margin-bottom:4px;">${kindergarten.name}</strong>
+        <span style="color:#666;">${kindergarten.distance.toFixed(1)}km</span>
+      </div>
+    `;
+
+    infoWindowRef.current.setContent(content);
+    infoWindowRef.current.open(mapRef.current, marker);
+  }, []);
+
+  // 마커 생성 함수
+  const createMarker = useCallback(
+    (kindergarten: Kindergarten, isSelected = false): KakaoMarker | null => {
+      if (!mapRef.current || !window.kakao) return null;
+
+      const { kakao } = window;
+      const position = new kakao.maps.LatLng(kindergarten.lat, kindergarten.lng);
+
+      // 마커 이미지 설정
+      const imageSrc = isSelected ? '/markers/active.svg' : '/markers/default.svg';
+      const imageSize = new kakao.maps.Size(32, 40);
+      const imageOption = { offset: new kakao.maps.Point(16, 40) };
+      const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+
+      const marker = new kakao.maps.Marker({
+        position,
+        map: mapRef.current,
+        image: markerImage,
+      });
+
+      // 클릭 이벤트
+      kakao.maps.event.addListener(marker, 'click', () => {
+        onMarkerClick?.(kindergarten);
+        showInfoWindow(marker, kindergarten);
+      });
+
+      return marker;
+    },
+    [onMarkerClick, showInfoWindow]
+  );
+
+  // 마커 업데이트
+  const updateMarkers = useCallback(
+    (kindergartens: Kindergarten[]) => {
+      if (!mapRef.current || !window.kakao) return;
+
+      // 기존 마커 제거
+      markersRef.current.forEach(({ marker }) => {
+        marker.setMap(null);
+      });
+      markersRef.current = [];
+
+      // 새 마커 생성
+      kindergartens.forEach((k) => {
+        const marker = createMarker(k, selectedMarkerIdRef.current === k.kindercode);
+        if (marker) {
+          markersRef.current.push({
+            id: k.kindercode,
+            marker,
+            kindergarten: k,
+          });
+        }
+      });
+
+      // 마커가 모두 보이도록 지도 범위 조정
+      if (kindergartens.length > 0) {
+        const bounds = new window.kakao.maps.LatLngBounds();
+        kindergartens.forEach((k) => {
+          bounds.extend(new window.kakao.maps.LatLng(k.lat, k.lng));
+        });
+        mapRef.current.setBounds(bounds, 50, 50, 50, 50);
+      }
+    },
+    [createMarker]
+  );
+
+  // 선택된 마커 하이라이트
+  const selectMarker = useCallback((id: string | null) => {
+    if (!window.kakao) return;
+
+    selectedMarkerIdRef.current = id;
+
+    markersRef.current.forEach(({ marker, kindergarten }) => {
+      const isSelected = kindergarten.kindercode === id;
+      const imageSrc = isSelected ? '/markers/active.svg' : '/markers/default.svg';
+      const imageSize = new window.kakao.maps.Size(32, 40);
+      const imageOption = { offset: new window.kakao.maps.Point(16, 40) };
+      const markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+      marker.setImage(markerImage);
+
+      // 선택된 마커로 인포윈도우 표시
+      if (isSelected) {
+        showInfoWindow(marker, kindergarten);
+      }
+    });
+  }, [showInfoWindow]);
+
+  // 현재 위치 마커 표시
+  const showCurrentLocation = useCallback((coords: Coordinates) => {
+    if (!mapRef.current || !window.kakao) return;
+
+    const { kakao } = window;
+
+    // 기존 현재 위치 마커 제거
+    if (currentLocationMarkerRef.current) {
+      currentLocationMarkerRef.current.setMap(null);
+    }
+
+    const position = new kakao.maps.LatLng(coords.lat, coords.lng);
+
+    // 현재 위치 마커 이미지 (파란 점)
+    const imageSrc = 'data:image/svg+xml,' + encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="8" fill="#4285F4" stroke="white" stroke-width="3"/>
+      </svg>
+    `);
+    const imageSize = new kakao.maps.Size(20, 20);
+    const imageOption = { offset: new kakao.maps.Point(10, 10) };
+    const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+
+    currentLocationMarkerRef.current = new kakao.maps.Marker({
+      position,
+      map: mapRef.current,
+      image: markerImage,
+    });
+
+    // 지도 중심을 현재 위치로 이동
+    mapRef.current.setCenter(position);
+  }, []);
+
+  // 인포윈도우 닫기
+  const closeInfoWindow = useCallback(() => {
+    infoWindowRef.current?.close();
+  }, []);
+
+  // 지도 존재 여부 확인 (렌더링 중 ref 접근 방지)
+  const getMap = useCallback(() => mapRef.current, []);
+
+  // 현재 줌 레벨 가져오기
+  const getLevel = useCallback(() => mapRef.current?.getLevel() ?? 5, []);
+
+  return {
+    ...state,
+    getMap,
+    getLevel,
+    setCenter,
+    setLevel,
+    updateMarkers,
+    selectMarker,
+    showCurrentLocation,
+    closeInfoWindow,
+  };
+}
