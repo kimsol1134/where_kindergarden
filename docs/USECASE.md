@@ -2,8 +2,8 @@
 
 ## 우리동네 유치원
 
-**버전**: 1.0.0
-**작성일**: 2026-01-21
+**버전**: 1.2.0
+**최종 수정일**: 2026-01-21
 **표준**: Cockburn Use Case Template + UML 2.5
 
 ---
@@ -16,9 +16,10 @@
 |-------|------|-------------|-------|
 | **부모** | Primary | 유치원/어린이집을 찾는 사용자 | 자녀에게 최적의 기관 선택 |
 | **공유 수신자** | Secondary | 공유된 비교표를 확인하는 사용자 | 비교 결과 검토 |
-| **유치원 알리미 API** | External System | 기관 데이터 제공 | - |
-| **Kakao API** | External System | 지도/지오코딩 제공 | - |
+| **Static JSON** | Internal System | 정적 유치원 데이터 (8.5MB, 37필드) | 클라이언트 로드 |
+| **Kakao API** | External System | 지도/주소 검색 제공 | - |
 | **Geolocation API** | External System | GPS 좌표 제공 | - |
+| **유치원 알리미 API** | External System (Batch) | 원천 데이터 (JSON 갱신 시에만 사용) | - |
 
 ### 1.2 Use Case Diagram
 
@@ -209,12 +210,12 @@
 |------|-------------|
 | **Use Case ID** | UC-03 |
 | **Use Case Name** | 검색 결과 조회 |
-| **Version** | 1.0 |
+| **Version** | 1.2 |
 | **Primary Actor** | 부모 |
-| **Secondary Actors** | 유치원 알리미 API |
+| **Secondary Actors** | Static JSON (클라이언트 메모리) |
 | **Description** | 위치 기반으로 주변 유치원/어린이집 목록을 조회한다 |
 | **Trigger** | /search 페이지 진입 (UC-01 또는 UC-02 완료 후) |
-| **Pre-conditions** | URL에 유효한 lat, lng 파라미터가 존재함 |
+| **Pre-conditions** | URL에 유효한 lat, lng 파라미터가 존재함, JSON 데이터 로드 완료 |
 | **Post-conditions** | 반경 내 기관 목록이 거리순으로 표시됨 |
 
 #### Main Success Scenario
@@ -222,34 +223,31 @@
 | Step | Actor | System |
 |------|-------|--------|
 | 1 | - | URL에서 lat, lng, radius 파라미터 추출 |
-| 2 | - | 좌표 기반 시군구 코드 산출 |
-| 3 | - | 로딩 Skeleton UI 표시 |
-| 4 | - | 유치원 알리미 API 호출 (병렬: 기본정보, 통학, 급식, 면적, 방과후) |
-| 5 | - | 응답 데이터 정규화 및 병합 |
-| 6 | - | Haversine 공식으로 거리 계산 |
-| 7 | - | 반경 내 기관만 필터링 |
-| 8 | - | 거리순 정렬 |
-| 9 | - | 결과 목록 표시 (초기 20개) |
-| 10 | 스크롤 다운 | - |
-| 11 | - | 추가 20개 Load More |
+| 2 | - | 로딩 Skeleton UI 표시 (최초 JSON 로드 시) |
+| 3 | - | 메모리에 캐싱된 JSON 데이터에서 전체 유치원 참조 |
+| 4 | - | 클라이언트에서 Haversine으로 각 기관까지 거리 계산 |
+| 5 | - | 반경 내 기관만 필터링 |
+| 6 | - | 거리순 정렬 (Array.toSorted) |
+| 7 | - | 결과 목록 표시 (초기 20개) |
+| 8 | 스크롤 다운 | - |
+| 9 | - | 추가 20개 Load More |
 
 #### Extensions
 
 | Extension | Condition | Steps |
 |-----------|-----------|-------|
-| **4a** | API 일부 실패 | 4a1. 성공한 데이터만 사용<br>4a2. 실패 항목은 "N/A" 표시 |
-| **4b** | API 전체 실패 | 4b1. 에러 화면 표시<br>4b2. "다시 시도" 버튼 제공 |
-| **7a** | 반경 내 결과 0개 | 7a1. "주변에 기관이 없습니다" 표시<br>7a2. 반경 확대 버튼 제공 (2km, 5km) |
-| **9a** | 결과가 100개 초과 | 9a1. 상위 100개만 표시<br>9a2. "반경을 줄여보세요" 안내 |
+| **2a** | JSON 로드 실패 | 2a1. 에러 화면 표시<br>2a2. "다시 시도" 버튼 제공 |
+| **5a** | 반경 내 결과 0개 | 5a1. "주변에 기관이 없습니다" 표시<br>5a2. 반경 확대 버튼 제공 (2km, 5km) |
+| **7a** | 결과가 100개 초과 | 7a1. 상위 100개만 표시<br>7a2. "반경을 줄여보세요" 안내 |
 
 #### Business Rules
 
 | Rule ID | Description |
 |---------|-------------|
-| BR-07 | API 응답은 24시간 캐싱 |
-| BR-08 | 인접 시군구도 함께 조회하여 경계 지역 대응 |
-| BR-09 | 거리 계산은 클라이언트 사이드에서 수행 |
-| BR-10 | 목록 표시 정보: 기관명, 유형, 거리, 정원, 통학차량 유무 (현원은 API 미제공) |
+| BR-07 | 데이터는 학기별 JSON 파일 갱신으로 관리 (파일명/버전으로 표시) |
+| BR-08 | 거리 계산은 클라이언트 Haversine 공식 사용 |
+| BR-09 | 데이터 버전은 UI Footer에 표시 (예: "2026-1학기 데이터") |
+| BR-10 | 목록 표시 정보: 기관명, 유형, 거리, 정원, 현원, 통학차량 유무 |
 
 #### Data Flow
 
@@ -267,36 +265,33 @@
 │       │                                                            │
 │       ▼                                                            │
 │  ┌──────────────────────┐                                         │
-│  │ 시군구 코드 변환      │ → "11680" (강남구)                       │
-│  └──────────────────────┘                                         │
-│       │                                                            │
-│       ▼                                                            │
-│  ┌──────────────────────┐     ┌──────────────────────┐           │
-│  │ 유치원 알리미 API    │────▶│  5개 엔드포인트 병렬   │           │
-│  │ /api/kindergartens   │     │  - basicInfo         │           │
-│  └──────────────────────┘     │  - schoolBus         │           │
-│       │                       │  - schoolMeal        │           │
-│       │                       │  - classArea         │           │
-│       │                       │  - afterSchoolPresent│           │
-│       │                       └──────────────────────┘           │
-│       ▼                                                            │
-│  ┌──────────────────────┐                                         │
-│  │ 데이터 정규화        │ → Kindergarten[] 타입으로 변환           │
-│  │ (Transformer)        │                                         │
+│  │ kindergartenStore    │  ← 앱 시작 시 JSON 로드 완료             │
+│  │ (메모리 캐시된 데이터) │     /data/kindergartens.json            │
 │  └──────────────────────┘                                         │
 │       │                                                            │
 │       ▼                                                            │
 │  ┌──────────────────────┐                                         │
-│  │ Haversine 거리 계산  │ → 각 기관에 distance 필드 추가           │
+│  │ Client-side          │  ← 브라우저 JavaScript에서 처리          │
+│  │ Haversine 거리 계산   │     (전체 ~8,000개 순회)                 │
 │  └──────────────────────┘                                         │
 │       │                                                            │
 │       ▼                                                            │
 │  ┌──────────────────────┐                                         │
 │  │ 반경 필터 + 정렬     │ → 1km 이내, 거리 오름차순               │
+│  │ (Array.filter/sort)  │                                         │
 │  └──────────────────────┘                                         │
 │       │                                                            │
 │       ▼                                                            │
 │  [검색 결과 목록 렌더링]                                            │
+│                                                                    │
+│  ─────────────────────────────────────────────────────────────    │
+│                                                                    │
+│  데이터 출처: 유치원 알리미 API (학기별 JSON 갱신)                   │
+│  갱신 주기: 학기별 수동                                             │
+│  데이터 필드 (37개): kindercode, name, address, lat, lng, type,    │
+│    capacity, current_count, class_count_age3~5, capacity_age3~5,  │
+│    current_age3~5, has_bus, bus_count, meal_type, has_after_school│
+│    area_per_child, teacher_count, cctv_count, building_year 등    │
 │                                                                    │
 └────────────────────────────────────────────────────────────────────┘
 ```
@@ -428,11 +423,12 @@
 
 | Section | Items | Highlight Criteria |
 |---------|-------|-------------------|
-| 기본 정보 | 기관명, 설립유형, 거리 | 거리 최소값 |
-| 정원 | 정원 (현원은 API 미제공으로 표시 불가) | - |
+| 기본 정보 | 기관명, 설립유형, 거리, 설립연도 | 거리 최소값 |
+| 정원/현원 | 총 정원, 총 현원, 여유석, 연령별 정원/현원 | 여유석 최대값 |
 | 통학/급식 | 통학차량 유무/대수, 급식 방식 | - |
-| 시설/면적 | 1인당 면적, 놀이터 유무 | 면적 최대값 |
-| 방과후 | 운영 여부, 시간 | - |
+| 시설/면적 | 1인당 면적, 교실면적, 실외놀이터 면적, 놀이터 유무 | 면적 최대값 |
+| 교직원/안전 | 교사 수, 수석교사 수, CCTV 대수 | CCTV 최대값 |
+| 방과후 | 운영 여부 | - |
 
 #### UI Mockup Reference
 
@@ -454,6 +450,8 @@
 │  [▶ 통학/급식]                                              │
 │                                                             │
 │  [▶ 시설/면적]                                              │
+│                                                             │
+│  [▶ 교직원/안전]                                            │
 │                                                             │
 │  [▶ 방과후]                                                 │
 │                                                             │
@@ -593,7 +591,8 @@
 | Scenario | Steps | Expected Result |
 |----------|-------|-----------------|
 | 초기 페이지 로드 | 홈페이지 접속 | LCP < 2.5초 |
-| 검색 API 호출 | GPS 검색 실행 | 응답 시간 < 3초 |
+| JSON 데이터 로드 | 앱 시작 시 JSON 로드 | < 2초 (gzip 압축 기준) |
+| 검색 필터링 | 위치 기반 필터 실행 | < 100ms (클라이언트 처리) |
 | 비교표 렌더링 | 3개 기관 비교 | TTI < 1초 |
 | 스크롤 성능 | 100개 결과 스크롤 | 60fps 유지 |
 
@@ -609,9 +608,9 @@
 
 | Scenario | Steps | Expected Result |
 |----------|-------|-----------------|
-| 네트워크 오류 | API 호출 중 연결 끊김 | "다시 시도" 버튼 표시 |
+| JSON 로드 실패 | 네트워크 오류 또는 파일 손상 | "다시 시도" 버튼 표시 |
 | GPS 타임아웃 | 10초 이상 응답 없음 | 주소 검색으로 대체 |
-| API 부분 실패 | 5개 중 2개 API 실패 | 성공 데이터만 표시, 실패 항목 N/A |
+| Kakao API 실패 | 지도/주소 검색 실패 | 목록 뷰 기본 유지, 에러 토스트 표시 |
 
 ---
 
@@ -637,7 +636,7 @@
 |----------|------------------------|
 | UC-01 | `useGeolocation.ts`, `Hero.tsx` |
 | UC-02 | `useAddressSearch.ts`, `SearchHeader.tsx` |
-| UC-03 | `KindergartenList.tsx`, `searchStore.ts`, `kindergartenApi.ts` |
+| UC-03 | `KindergartenList.tsx`, `searchStore.ts`, `kindergartenStore.ts` (JSON 캐시) |
 | UC-04 | `KindergartenList.tsx` (expand) |
 | UC-05 | `CompareFloatingBar.tsx`, `compareStore.ts` |
 | UC-06 | `ComparePage.tsx`, `CompareGrid.tsx` |
@@ -652,3 +651,5 @@
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | 2026-01-21 | Claude | Initial creation |
+| 1.1 | 2026-01-21 | Claude | 데이터 소스 변경: 유치원 알리미 API 실시간 호출 → Supabase DB 배치 데이터 조회 |
+| 1.2 | 2026-01-21 | Claude | 데이터 소스 변경: Supabase DB → 정적 JSON 파일 (8.5MB), 클라이언트 Haversine 거리 계산, 비교표 항목 확장 (37개 필드) |

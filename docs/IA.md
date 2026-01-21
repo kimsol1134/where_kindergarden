@@ -2,8 +2,8 @@
 
 ## 우리동네 유치원
 
-**버전**: 1.0.0
-**작성일**: 2026-01-21
+**버전**: 1.2.0
+**최종 수정일**: 2026-01-21
 **기반**: Rosenfeld & Morville IA Framework
 
 ---
@@ -85,9 +85,10 @@
 │   ├── 헤더 (뒤로가기, 제목)
 │   ├── 비교 그리드
 │   │   ├── 기본 정보 섹션
-│   │   ├── 정원 섹션 (현원은 API 미제공)
+│   │   ├── 정원/현원 섹션
 │   │   ├── 통학/급식 섹션
 │   │   ├── 시설/면적 섹션
+│   │   ├── 교직원/안전 섹션
 │   │   └── 방과후 섹션
 │   └── 공유 영역
 │       ├── 카카오톡 공유
@@ -273,48 +274,77 @@ interface CompareURLParams {
 | sigungu | string | Derived | No |
 | sigunguCode | string | Derived | Yes |
 
-#### Kindergarten (기관)
+#### Kindergarten (기관) - 37개 필드
 
 | Attribute | Type | Source | Display |
 |-----------|------|--------|---------|
-| kindercode | string | 유치원알리미 | Hidden |
-| name | string | basicInfo | Card Title |
-| type | enum | basicInfo | Badge |
-| address | string | basicInfo | Detail |
-| lat | number | Geocoding | Hidden |
-| lng | number | Geocoding | Hidden |
-| distance | number | Calculated | Card |
-| phone | string | basicInfo | Detail |
+| kindercode | string | Static JSON | Hidden |
+| name | string | Static JSON | Card Title |
+| type | enum (public/private) | Static JSON | Badge |
+| address | string | Static JSON | Detail |
+| lat | number | Static JSON (지오코딩 완료) | Hidden |
+| lng | number | Static JSON (지오코딩 완료) | Hidden |
+| distance | number | Calculated (Client Haversine) | Card |
+| phone | string | Static JSON | Detail |
+| homepage | string | Static JSON | Detail (링크) |
+| operation_hours | string | Static JSON | Detail |
+| sido_code | string | Static JSON | Hidden (필터링용) |
+| sigungu_code | string | Static JSON | Hidden (필터링용) |
+| establish_date | string (YYYYMMDD) | Static JSON | Compare |
 
-#### BasicInfo (기본정보)
+> **Note**: 기관 데이터는 사전에 유치원 알리미 API에서 수집 및 지오코딩되어 Static JSON 파일로 제공됨 (약 8,000개, 8.5MB, 37개 필드)
 
-| Attribute | Type | Source | Display |
-|-----------|------|--------|---------|
-| capacity | number | basicInfo | Card, Compare |
-| currentCount | number | N/A* | **미표시** (API 미제공) |
-| vacancies | number | N/A* | **미표시** (현원 부재로 계산 불가) |
-| foundedYear | number | basicInfo | Detail |
-| operatingHours | string | basicInfo | Detail |
-
-> *현원현황 API는 공식 제공되지 않음. 따라서 현원(currentCount)과 여유석(vacancies)은 표시하지 않음.
-
-#### Facilities (시설정보)
+#### BasicInfo (기본정보/정원/현원)
 
 | Attribute | Type | Source | Display |
 |-----------|------|--------|---------|
-| hasBus | boolean | schoolBus | Card, Compare |
-| busCount | number | schoolBus | Compare |
-| mealType | enum | schoolMeal | Compare |
-| areaPerChild | number | classArea | Compare (highlight) |
-| hasPlayground | boolean | basicInfo | Compare |
+| capacity | number | Static JSON | Card, Compare (총 정원) |
+| current_count | number | Static JSON | Card, Compare (총 현원) |
+| vacancies | number | Calculated (capacity - current_count) | Compare (여유석) |
+| class_count_age3 | number | Static JSON | Compare (만3세 학급 수) |
+| class_count_age4 | number | Static JSON | Compare (만4세 학급 수) |
+| class_count_age5 | number | Static JSON | Compare (만5세 학급 수) |
+| capacity_age3 | number | Static JSON | Compare (만3세 정원) |
+| capacity_age4 | number | Static JSON | Compare (만4세 정원) |
+| capacity_age5 | number | Static JSON | Compare (만5세 정원) |
+| current_age3 | number | Static JSON | Compare (만3세 현원) |
+| current_age4 | number | Static JSON | Compare (만4세 현원) |
+| current_age5 | number | Static JSON | Compare (만5세 현원) |
+
+> **Note**: 연령별 정원/현원 정보가 제공되어 연령대별 여유석 계산이 가능함.
+
+#### Facilities (시설/교직원 정보)
+
+| Attribute | Type | Source | Display |
+|-----------|------|--------|---------|
+| has_bus | boolean | Static JSON | Card, Compare |
+| bus_count | number | Static JSON | Compare |
+| meal_type | enum (direct/위탁/미운영) | Static JSON | Compare |
+| area_per_child | number | Static JSON | Compare (highlight, ㎡) |
+| has_playground | boolean | Static JSON | Compare |
+| building_year | number | Static JSON | Compare (건축연도) |
+| floor_info | string | Static JSON | Compare (예: 지상2층/지하1층) |
+| classroom_area | number | Static JSON | Compare (교실면적 ㎡) |
+| indoor_playground_area | number | Static JSON | Compare (실내놀이터 ㎡) |
+| outdoor_playground_area | number | Static JSON | Compare (실외놀이터 ㎡) |
+| teacher_count | number | Static JSON | Compare (교사 수) |
+| senior_teacher_count | number | Static JSON | Compare (수석교사 수) |
+| cctv_count | number | Static JSON | Compare (CCTV 대수) |
 
 #### Programs (프로그램)
 
 | Attribute | Type | Source | Display |
 |-----------|------|--------|---------|
-| hasAfterSchool | boolean | afterSchoolPresent | Card, Compare |
-| afterSchoolHours | string | afterSchoolPresent | Compare |
-| specialPrograms | string[] | N/A (Phase 2) | - |
+| has_after_school | boolean | Static JSON | Card, Compare |
+
+#### DataMeta (데이터 메타정보)
+
+| Attribute | Type | Source | Display |
+|-----------|------|--------|---------|
+| dataVersion | string | JSON 파일명 (예: "2026-1학기") | Footer |
+| lastUpdated | date | JSON 생성일 | Footer |
+
+> **Note**: 정적 JSON 파일로 데이터가 제공되므로 DB 메타정보가 아닌 파일 버전으로 관리됨.
 
 ### 4.3 Content Relationships
 
@@ -377,12 +407,19 @@ interface CompareURLParams {
 |------------|-------|--------|
 | 거리 | distance | 0.0km |
 | 정원 | capacity | 00명 |
-| ~~현원~~ | ~~currentCount~~ | ~~00명~~ (API 미제공으로 표시 안함) |
-| ~~여유석~~ | ~~vacancies~~ | ~~00석~~ (현원 부재로 계산 불가) |
-| 통학차량 | hasBus | 있음/없음 (0대) |
-| 급식 | mealType | 직영/위탁/없음 |
-| 1인당 면적 | areaPerChild | 0.0㎡ |
-| 방과후 | hasAfterSchool | 운영/미운영 |
+| 현원 | current_count | 00명 |
+| 여유석 | vacancies (calculated) | 00석 |
+| 만3세 정원/현원 | capacity_age3, current_age3 | 00/00명 |
+| 만4세 정원/현원 | capacity_age4, current_age4 | 00/00명 |
+| 만5세 정원/현원 | capacity_age5, current_age5 | 00/00명 |
+| 통학차량 | has_bus, bus_count | 있음/없음 (0대) |
+| 급식 | meal_type | 직영/위탁/미운영 |
+| 1인당 면적 | area_per_child | 0.0㎡ |
+| 방과후 | has_after_school | 운영/미운영 |
+| 교사 수 | teacher_count | 0명 |
+| CCTV | cctv_count | 0대 |
+| 건축연도 | building_year | 0000년 |
+| 교실면적 | classroom_area | 0.0㎡ |
 
 #### Institution Type Labels
 
@@ -572,7 +609,7 @@ interface CompareURLParams {
 │ └─────────────────────────────────────┘ │
 │                                         │
 │ ┌─────────────────────────────────────┐ │
-│ │ [▶ 정원]                           │ │  ← Section (Collapsed, 현원은 API 미제공)
+│ │ [▶ 정원/현원]                      │ │  ← Section (Collapsed)
 │ └─────────────────────────────────────┘ │
 │                                         │
 │ ┌─────────────────────────────────────┐ │
@@ -588,6 +625,10 @@ interface CompareURLParams {
 │ │ │면적   │         │        │      ││ │
 │ │ │놀이터 │ 있음    │ 있음   │ 없음 ││ │
 │ │ └───────┴─────────┴────────┴──────┘│ │
+│ └─────────────────────────────────────┘ │
+│                                         │
+│ ┌─────────────────────────────────────┐ │
+│ │ [▶ 교직원/안전]                    │ │
 │ └─────────────────────────────────────┘ │
 │                                         │
 │ ┌─────────────────────────────────────┐ │
@@ -767,9 +808,13 @@ interface CompareURLParams {
 │  │                       Zustand Store                                  │   │
 │  │                    (Client, Session)                                 │   │
 │  │  ───────────────────────────────────────────────────────────────    │   │
+│  │  kindergartenStore:                                                  │   │
+│  │  • allData: Kindergarten[] (전체 JSON 캐시)                          │   │
+│  │  • isLoaded: boolean                                                 │   │
+│  │  ───────────────────────────────────────────────────────────────    │   │
 │  │  searchStore:                                                        │   │
 │  │  • location: Coordinates | null                                      │   │
-│  │  • results: Kindergarten[]                                           │   │
+│  │  • results: Kindergarten[] (필터링된 결과)                           │   │
 │  │  • isLoading: boolean                                                │   │
 │  │  • error: string | null                                              │   │
 │  │  ───────────────────────────────────────────────────────────────    │   │
@@ -798,6 +843,24 @@ interface CompareURLParams {
 │                              Data Flow                                      │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
+│  [앱 초기화]                                                                │
+│       │                                                                     │
+│       ▼                                                                     │
+│  ┌──────────────────┐                                                      │
+│  │ Static JSON 로드 │  ← /data/kindergartens.json (8.5MB, 37필드)          │
+│  │ (전국 ~8,000개)  │                                                      │
+│  └────────┬─────────┘                                                      │
+│           │                                                                 │
+│           ▼                                                                 │
+│  ┌──────────────────┐                                                      │
+│  │ kindergartenStore│  ← 메모리에 전체 데이터 캐싱                          │
+│  │ setAllData()     │                                                      │
+│  └────────┬─────────┘                                                      │
+│           │                                                                 │
+│           │ (데이터 로드 완료 후 검색 가능)                                  │
+│           │                                                                 │
+│  ─────────┼─────────────────────────────────────────────────────────────   │
+│           │                                                                 │
 │  [User Action]                                                              │
 │       │                                                                     │
 │       ▼                                                                     │
@@ -812,30 +875,16 @@ interface CompareURLParams {
 │  └──────────────────┘     └────────┬─────────┘                            │
 │                                    │                                        │
 │                                    ▼                                        │
-│                           ┌──────────────────┐                            │
-│                           │ API Call         │                            │
-│                           │ /api/kinder...   │                            │
-│                           └────────┬─────────┘                            │
-│                                    │                                        │
-│           ┌────────────────────────┼────────────────────────┐              │
-│           │                        │                        │              │
-│           ▼                        ▼                        ▼              │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐        │
-│  │ basicInfo API    │  │ schoolBus API    │  │ schoolMeal API   │        │
-│  └────────┬─────────┘  └────────┬─────────┘  └────────┬─────────┘        │
-│           │                     │                     │                    │
-│           └─────────────────────┼─────────────────────┘                    │
-│                                 │                                          │
-│                                 ▼                                          │
 │                        ┌──────────────────┐                               │
-│                        │ Transformer      │                               │
-│                        │ → Kindergarten[] │                               │
+│                        │ Client-side      │  ← 브라우저 메모리에서 처리    │
+│                        │ Haversine Filter │                               │
+│                        │ (반경 필터링)     │                               │
 │                        └────────┬─────────┘                               │
 │                                 │                                          │
 │                                 ▼                                          │
 │                        ┌──────────────────┐                               │
-│                        │ Haversine Filter │                               │
-│                        │ (radius 적용)    │                               │
+│                        │ 거리순 정렬      │                               │
+│                        │ (Array.sort)     │                               │
 │                        └────────┬─────────┘                               │
 │                                 │                                          │
 │                                 ▼                                          │
@@ -849,6 +898,22 @@ interface CompareURLParams {
 │                        │ UI Render        │                               │
 │                        │ KindergartenList │                               │
 │                        └──────────────────┘                               │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                         데이터 갱신 프로세스 (개발 시)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  [학기별 수동 실행]                                                          │
+│       │                                                                     │
+│       ▼                                                                     │
+│  ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐   │
+│  │ 유치원 알리미    │────▶│ 데이터 정규화    │────▶│ JSON 파일 생성   │   │
+│  │ API 전체 조회    │     │ & 지오코딩       │     │ (/data 배포)     │   │
+│  └──────────────────┘     └──────────────────┘     └──────────────────┘   │
+│                                                                             │
+│  * scripts/ 폴더의 배치 스크립트로 실행                                      │
+│  * 생성된 JSON을 커밋하여 배포                                               │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -932,3 +997,5 @@ interface CompareURLParams {
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | 2026-01-21 | Claude | Initial creation |
+| 1.1 | 2026-01-21 | Claude | Data Flow 변경: 유치원 알리미 API 실시간 호출 → Supabase DB 배치 데이터 조회 |
+| 1.2 | 2026-01-21 | Claude | Content Model 업데이트: 37개 필드 정의 (연령별 정원/현원, 교사 수, CCTV 등 추가), 정적 JSON 8.5MB |
