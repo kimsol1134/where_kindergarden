@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback } from 'react';
-import { Heart, ChevronDown, Loader2, SearchX, School } from 'lucide-react';
+import { Heart, ChevronDown, Loader2, SearchX, School, MapPin } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
@@ -21,7 +21,15 @@ const SORT_LABELS: Record<SortOption, string> = {
   areaPerChild: '면적순',
 };
 
-export function KindergartenList() {
+/** 모바일 뷰 모드 타입 */
+type MobileViewMode = 'list' | 'map';
+
+interface KindergartenListProps {
+  mobileView: MobileViewMode;
+  onToggleMobileView: () => void;
+}
+
+export function KindergartenList({ mobileView, onToggleMobileView }: KindergartenListProps) {
   const {
     address,
     filters,
@@ -89,9 +97,14 @@ export function KindergartenList() {
     setDetailId(null);
   }, [setDetailId]);
 
+  // 모바일에서 지도 뷰일 때는 리스트 숨김
+  const isHiddenOnMobile = mobileView === 'map';
+
   return (
     <aside
-      className="w-full md:w-[450px] lg:w-[500px] bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0"
+      className={`w-full md:w-[450px] lg:w-[500px] bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0 ${
+        isHiddenOnMobile ? '-translate-x-full md:translate-x-0' : 'translate-x-0'
+      }`}
       id="listPanel"
     >
       {/* List Header */}
@@ -194,6 +207,17 @@ export function KindergartenList() {
           isInCompare={isInCompare(detailKindergarten.kindercode)}
           canAddToCompare={canAdd()}
         />
+      )}
+
+      {/* 모바일 지도 탭 - 우측 중앙 플로팅 탭 */}
+      {mobileView === 'list' && (
+        <button
+          onClick={onToggleMobileView}
+          className="md:hidden fixed right-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pl-3 pr-2 py-2.5 rounded-l-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-r-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
+        >
+          <MapPin className="w-4 h-4 text-emerald-600" />
+          <span className="text-[11px] text-gray-600">지도</span>
+        </button>
       )}
     </aside>
   );

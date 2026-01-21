@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, Suspense } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
@@ -8,11 +8,17 @@ import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { useGeolocation, useURLSync } from '@/hooks';
 
+/** 모바일 뷰 모드 타입 */
+type MobileViewMode = 'list' | 'map';
+
 function SearchPageContent() {
   const { location, setLocation, search, isLoading, error } = useSearchStore();
   const { items } = useCompareStore();
   const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
+
+  // 모바일에서 리스트/지도 뷰 전환 상태
+  const [mobileView, setMobileView] = useState<MobileViewMode>('list');
 
   // mode=location 파라미터가 있으면 현재 위치로 검색
   useEffect(() => {
@@ -42,8 +48,14 @@ function SearchPageContent() {
     <div className="bg-gray-50 text-gray-800 flex flex-col h-screen">
       <SearchHeader />
       <main className="flex-1 flex overflow-hidden relative">
-        <KindergartenList />
-        <MapView />
+        <KindergartenList
+          mobileView={mobileView}
+          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+        />
+        <MapView
+          mobileView={mobileView}
+          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+        />
       </main>
       {items.length > 0 && <CompareFloatingBar />}
 

@@ -49,6 +49,7 @@ export function SearchHeader() {
     address,
     filters,
     setLocation,
+    setAddress,
     setRadius,
     setType,
     setHasBus,
@@ -164,8 +165,9 @@ export function SearchHeader() {
   // 입력 초기화
   const handleClear = useCallback(() => {
     clearSelection();
+    setAddress(''); // searchStore의 address도 초기화
     inputRef.current?.focus();
-  }, [clearSelection]);
+  }, [clearSelection, setAddress]);
 
   return (
     <header className="relative bg-white border-b border-gray-200 z-30 flex-none">
@@ -181,7 +183,7 @@ export function SearchHeader() {
         </Link>
 
         {/* Search Input */}
-        <div className="flex-1 max-w-xl relative group">
+        <div className="flex-1 max-w-xl md:max-w-2xl relative group">
           <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-emerald-500 transition-colors">
             <Search className="w-5 h-5" />
           </div>
@@ -195,8 +197,8 @@ export function SearchHeader() {
                 setOpen(true);
               }
             }}
-            className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-12 text-sm transition-all outline-none shadow-sm"
-            placeholder="유치원 이름, 집 주소 로 검색해보세요"
+            className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-12 text-sm text-gray-900 placeholder:text-gray-500 transition-all outline-none shadow-sm"
+            placeholder="주소, 유치원 이름 검색"
           />
           {(query || address) && (
             <button
@@ -209,7 +211,18 @@ export function SearchHeader() {
 
           {/* Autocomplete Dropdown */}
           {isOpen && (
-            <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden z-50">
+            <div className="fixed top-[116px] left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto border-t border-gray-200 md:absolute md:top-full md:left-0 md:right-0 md:bottom-auto md:h-auto md:mt-2 md:rounded-xl md:shadow-xl md:border md:overflow-hidden">
+              {/* 모바일 검색 결과 헤더 */}
+              <div className="md:hidden sticky top-0 bg-white border-b border-gray-100 px-4 py-3 flex items-center justify-between">
+                <span className="text-sm font-medium text-gray-700">검색 결과</span>
+                <button
+                  onClick={() => setOpen(false)}
+                  className="p-1.5 rounded-full hover:bg-gray-100 text-gray-500"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
               {/* 현재 위치 검색 옵션 */}
               <button
                 onClick={handleCurrentLocation}
@@ -318,13 +331,13 @@ export function SearchHeader() {
           )}
         </div>
 
-        {/* Header Actions */}
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <button className="hidden md:flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100">
+        {/* Header Actions - 데스크톱에서만 표시 */}
+        <div className="hidden md:flex items-center gap-3 flex-shrink-0">
+          <button className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100">
             <Heart className="w-4 h-4" />
             찜한 목록
           </button>
-          <div className="h-6 w-px bg-gray-200 hidden md:block" />
+          <div className="h-6 w-px bg-gray-200" />
           <button className="flex items-center gap-2 text-sm font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-lg transition-colors">
             <User className="w-4 h-4" />
             로그인
@@ -433,10 +446,10 @@ export function SearchHeader() {
         </button>
       </div>
 
-      {/* Backdrop for search dropdown - positioned below header */}
+      {/* Backdrop for search dropdown - positioned below header (hidden on mobile since dropdown is fullscreen) */}
       {isOpen && (
         <div
-          className="fixed inset-x-0 top-[120px] bottom-0 z-40"
+          className="hidden md:block fixed inset-x-0 top-[120px] bottom-0 z-40"
           onClick={() => setOpen(false)}
         />
       )}
@@ -452,65 +465,124 @@ export function SearchHeader() {
         />
       )}
 
-      {/* 반경 필터 드롭다운 (fixed position) */}
+      {/* 반경 필터 드롭다운 */}
       {isRadiusOpen && (
-        <div
-          className="fixed bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]"
-          style={{ top: radiusDropdownPos.top, left: radiusDropdownPos.left }}
-        >
-          <div className="flex items-center justify-between mb-3">
-            <span className="text-xs text-gray-500">반경 설정</span>
-            <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
+        <>
+          {/* 모바일: 하단 시트 스타일 */}
+          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 animate-slide-in-bottom">
+            <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm font-medium text-gray-700">반경 설정</span>
+              <span className="text-lg font-bold text-emerald-600">{filters.radius}km</span>
+            </div>
+            <input
+              type="range"
+              min={RADIUS_MIN}
+              max={RADIUS_MAX}
+              step={1}
+              value={filters.radius}
+              onChange={handleRadiusChange}
+              onMouseUp={handleRadiusChangeEnd}
+              onTouchEnd={handleRadiusChangeEnd}
+              className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+            />
+            <div className="flex justify-between mt-2 text-xs text-gray-400">
+              <span>{RADIUS_MIN}km</span>
+              <span>{RADIUS_MAX}km</span>
+            </div>
+            <button
+              onClick={() => setIsRadiusOpen(false)}
+              className="w-full mt-4 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm"
+            >
+              적용
+            </button>
           </div>
-          <input
-            type="range"
-            min={RADIUS_MIN}
-            max={RADIUS_MAX}
-            step={1}
-            value={filters.radius}
-            onChange={handleRadiusChange}
-            onMouseUp={handleRadiusChangeEnd}
-            onTouchEnd={handleRadiusChangeEnd}
-            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
-          />
-          <div className="flex justify-between mt-2 text-xs text-gray-400">
-            <span>{RADIUS_MIN}km</span>
-            <span>{RADIUS_MAX}km</span>
+          {/* 데스크톱: 기존 드롭다운 */}
+          <div
+            className="hidden md:block fixed bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]"
+            style={{ top: radiusDropdownPos.top, left: radiusDropdownPos.left }}
+          >
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xs text-gray-500">반경 설정</span>
+              <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
+            </div>
+            <input
+              type="range"
+              min={RADIUS_MIN}
+              max={RADIUS_MAX}
+              step={1}
+              value={filters.radius}
+              onChange={handleRadiusChange}
+              onMouseUp={handleRadiusChangeEnd}
+              onTouchEnd={handleRadiusChangeEnd}
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+            />
+            <div className="flex justify-between mt-2 text-xs text-gray-400">
+              <span>{RADIUS_MIN}km</span>
+              <span>{RADIUS_MAX}km</span>
+            </div>
           </div>
-        </div>
+        </>
       )}
 
-      {/* 기관 유형 필터 드롭다운 (fixed position) */}
+      {/* 기관 유형 필터 드롭다운 */}
       {isTypeOpen && (
-        <div
-          className="fixed bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]"
-          style={{ top: typeDropdownPos.top, left: typeDropdownPos.left }}
-        >
-          <button
-            onClick={() => handleTypeChange('all')}
-            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-              filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-            }`}
+        <>
+          {/* 모바일: 하단 시트 스타일 */}
+          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 animate-slide-in-bottom">
+            <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
+            <div className="text-sm font-medium text-gray-700 mb-3">기관 유형</div>
+            <div className="space-y-2">
+              {[
+                { value: 'all', label: '전체' },
+                { value: 'public', label: '공립' },
+                { value: 'private', label: '사립' },
+              ].map((option) => (
+                <button
+                  key={option.value}
+                  onClick={() => handleTypeChange(option.value as InstitutionFilter)}
+                  className={`w-full py-3 px-4 rounded-xl text-left text-sm font-medium transition-colors ${
+                    filters.type === option.value
+                      ? 'bg-emerald-50 text-emerald-700 border-2 border-emerald-500'
+                      : 'bg-gray-50 text-gray-700 border-2 border-transparent'
+                  }`}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+          {/* 데스크톱: 기존 드롭다운 */}
+          <div
+            className="hidden md:block fixed bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]"
+            style={{ top: typeDropdownPos.top, left: typeDropdownPos.left }}
           >
-            전체
-          </button>
-          <button
-            onClick={() => handleTypeChange('public')}
-            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-              filters.type === 'public' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-            }`}
-          >
-            공립
-          </button>
-          <button
-            onClick={() => handleTypeChange('private')}
-            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-              filters.type === 'private' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-            }`}
-          >
-            사립
-          </button>
-        </div>
+            <button
+              onClick={() => handleTypeChange('all')}
+              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+              }`}
+            >
+              전체
+            </button>
+            <button
+              onClick={() => handleTypeChange('public')}
+              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                filters.type === 'public' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+              }`}
+            >
+              공립
+            </button>
+            <button
+              onClick={() => handleTypeChange('private')}
+              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                filters.type === 'private' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+              }`}
+            >
+              사립
+            </button>
+          </div>
+        </>
       )}
     </header>
   );

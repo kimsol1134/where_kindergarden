@@ -6,7 +6,15 @@ import { useSearchStore, useCompareStore } from '@/stores';
 import { useKakaoMap, useGeolocation } from '@/hooks';
 import type { Kindergarten } from '@/types';
 
-export function MapView() {
+/** 모바일 뷰 모드 타입 */
+type MobileViewMode = 'list' | 'map';
+
+interface MapViewProps {
+  mobileView: MobileViewMode;
+  onToggleMobileView: () => void;
+}
+
+export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
 
   const {
@@ -171,16 +179,16 @@ export function MapView() {
         </button>
       </div>
 
-      {/* Mobile List Toggle Button (Visible only on mobile inside map) */}
-      <div
-        className={`md:hidden absolute left-1/2 -translate-x-1/2 z-50 transition-[bottom] duration-300 ${
-          hasCompareItems ? 'bottom-24' : 'bottom-6'
-        }`}
-      >
-        <button className="bg-white text-gray-900 px-5 py-3 rounded-full shadow-lg border border-gray-200 flex items-center gap-2 font-bold text-sm">
-          <List className="w-4 h-4" /> 목록 보기
+      {/* 모바일 목록 탭 - 좌측 중앙 플로팅 탭 */}
+      {mobileView === 'map' && (
+        <button
+          onClick={onToggleMobileView}
+          className="md:hidden fixed left-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pr-3 pl-2 py-2.5 rounded-r-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-l-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
+        >
+          <span className="text-[11px] text-gray-600">목록</span>
+          <List className="w-4 h-4 text-emerald-600" />
         </button>
-      </div>
+      )}
 
       {/* 결과 개수 표시 */}
       {isLoaded && results.length > 0 && (
