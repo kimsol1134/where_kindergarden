@@ -280,9 +280,9 @@ describe('useSearchStore', () => {
 
     it('should set type', () => {
       const store = useSearchStore.getState();
-      store.setType('kindergarten');
+      store.setType('public');
 
-      expect(useSearchStore.getState().filters.type).toBe('kindergarten');
+      expect(useSearchStore.getState().filters.type).toBe('public');
     });
 
     it('should set hasBus filter', () => {
@@ -323,7 +323,7 @@ describe('useSearchStore', () => {
     it('should reset filters to defaults', () => {
       const store = useSearchStore.getState();
       store.setRadius(5);
-      store.setType('kindergarten');
+      store.setType('public');
       store.setHasBus(true);
       store.resetFilters();
 

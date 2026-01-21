@@ -178,7 +178,7 @@ function isValidRadius(value: string): boolean {
 }
 
 function isValidType(value: string): value is InstitutionFilter {
-  return value === 'all' || value === 'kindergarten' || value === 'daycare';
+  return value === 'all' || value === 'public' || value === 'private';
 }
 
 function isValidSort(value: string): value is SortOption {

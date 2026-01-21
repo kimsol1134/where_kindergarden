@@ -45,12 +45,12 @@ export function MapView() {
     onMarkerClick: handleMarkerClick,
   });
 
-  // 결과가 변경되면 마커 업데이트
+  // 결과가 변경되면 마커 업데이트 (사용자 위치 포함)
   useEffect(() => {
     if (isLoaded && results.length > 0) {
-      updateMarkers(results);
+      updateMarkers(results, location ?? undefined);
     }
-  }, [isLoaded, results, updateMarkers]);
+  }, [isLoaded, results, location, updateMarkers]);
 
   // 선택된 마커 하이라이트
   useEffect(() => {

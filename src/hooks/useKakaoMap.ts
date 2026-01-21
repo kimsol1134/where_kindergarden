@@ -255,7 +255,7 @@ export function useKakaoMap(
 
   // 마커 업데이트
   const updateMarkers = useCallback(
-    (kindergartens: Kindergarten[]) => {
+    (kindergartens: Kindergarten[], userLocation?: Coordinates) => {
       if (!mapRef.current || !window.kakao) return;
 
       // 기존 마커 제거
@@ -276,9 +276,15 @@ export function useKakaoMap(
         }
       });
 
-      // 마커가 모두 보이도록 지도 범위 조정
+      // 마커가 모두 보이도록 지도 범위 조정 (사용자 위치 포함)
       if (kindergartens.length > 0) {
         const bounds = new window.kakao.maps.LatLngBounds();
+
+        // 사용자 현재 위치를 bounds에 포함
+        if (userLocation) {
+          bounds.extend(new window.kakao.maps.LatLng(userLocation.lat, userLocation.lng));
+        }
+
         kindergartens.forEach((k) => {
           bounds.extend(new window.kakao.maps.LatLng(k.lat, k.lng));
         });

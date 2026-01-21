@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useCallback, useState } from 'react';
+import { useRef, useCallback, useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   School,
@@ -23,8 +23,27 @@ import { RADIUS_MIN, RADIUS_MAX } from '@/types';
 
 export function SearchHeader() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const radiusButtonRef = useRef<HTMLButtonElement>(null);
+  const typeButtonRef = useRef<HTMLButtonElement>(null);
   const [isRadiusOpen, setIsRadiusOpen] = useState(false);
   const [isTypeOpen, setIsTypeOpen] = useState(false);
+  const [radiusDropdownPos, setRadiusDropdownPos] = useState({ top: 0, left: 0 });
+  const [typeDropdownPos, setTypeDropdownPos] = useState({ top: 0, left: 0 });
+
+  // 드롭다운 위치 계산
+  useEffect(() => {
+    if (isRadiusOpen && radiusButtonRef.current) {
+      const rect = radiusButtonRef.current.getBoundingClientRect();
+      setRadiusDropdownPos({ top: rect.bottom + 8, left: rect.left });
+    }
+  }, [isRadiusOpen]);
+
+  useEffect(() => {
+    if (isTypeOpen && typeButtonRef.current) {
+      const rect = typeButtonRef.current.getBoundingClientRect();
+      setTypeDropdownPos({ top: rect.bottom + 4, left: rect.left });
+    }
+  }, [isTypeOpen]);
 
   const {
     address,
@@ -314,93 +333,44 @@ export function SearchHeader() {
       </div>
 
       {/* Filters (Scrollable) */}
-      <div className="relative z-50 border-t border-gray-100 py-3 px-4 flex gap-2 overflow-x-auto hide-scrollbar bg-white">
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-300 bg-white text-xs font-medium hover:border-gray-800 hover:bg-gray-50 transition-colors whitespace-nowrap">
+      <div className="relative z-50 border-t border-gray-100 py-3 px-4 flex gap-2 overflow-x-auto overflow-y-visible hide-scrollbar bg-white">
+        <button
+          disabled
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-gray-50 text-xs font-medium text-gray-400 cursor-not-allowed whitespace-nowrap"
+          title="준비 중인 기능입니다"
+        >
           <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
         </button>
         <div className="w-px h-6 bg-gray-200 mx-1" />
 
-        {/* 반경 필터 (슬라이더) */}
-        <div className="relative">
-          <button
-            onClick={() => {
-              setIsRadiusOpen(!isRadiusOpen);
-              setIsTypeOpen(false);
-            }}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
-          >
-            반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
-          </button>
-          {isRadiusOpen && (
-            <div className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs text-gray-500">반경 설정</span>
-                <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
-              </div>
-              <input
-                type="range"
-                min={RADIUS_MIN}
-                max={RADIUS_MAX}
-                step={1}
-                value={filters.radius}
-                onChange={handleRadiusChange}
-                onMouseUp={handleRadiusChangeEnd}
-                onTouchEnd={handleRadiusChangeEnd}
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
-              />
-              <div className="flex justify-between mt-2 text-xs text-gray-400">
-                <span>{RADIUS_MIN}km</span>
-                <span>{RADIUS_MAX}km</span>
-              </div>
-            </div>
-          )}
-        </div>
+        {/* 반경 필터 버튼 */}
+        <button
+          ref={radiusButtonRef}
+          onClick={() => {
+            setIsRadiusOpen(!isRadiusOpen);
+            setIsTypeOpen(false);
+          }}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
+        >
+          반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
+        </button>
 
-        {/* 기관 유형 필터 */}
-        <div className="relative">
-          <button
-            onClick={() => {
-              setIsTypeOpen(!isTypeOpen);
-              setIsRadiusOpen(false);
-            }}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-              filters.type !== 'all'
-                ? 'border-emerald-500 bg-emerald-50 text-emerald-700 font-bold'
-                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
-            }`}
-          >
-            유형: {filters.type === 'all' ? '전체' : filters.type === 'kindergarten' ? '유치원' : '어린이집'}
-            <ChevronDown className="w-3 h-3" />
-          </button>
-          {isTypeOpen && (
-            <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]">
-              <button
-                onClick={() => handleTypeChange('all')}
-                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                  filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-                }`}
-              >
-                전체
-              </button>
-              <button
-                onClick={() => handleTypeChange('kindergarten')}
-                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                  filters.type === 'kindergarten' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-                }`}
-              >
-                유치원
-              </button>
-              <button
-                onClick={() => handleTypeChange('daycare')}
-                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                  filters.type === 'daycare' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-                }`}
-              >
-                어린이집
-              </button>
-            </div>
-          )}
-        </div>
+        {/* 기관 유형 필터 버튼 */}
+        <button
+          ref={typeButtonRef}
+          onClick={() => {
+            setIsTypeOpen(!isTypeOpen);
+            setIsRadiusOpen(false);
+          }}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.type !== 'all'
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700 font-bold'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
+          유형: {filters.type === 'all' ? '전체' : filters.type === 'public' ? '공립' : '사립'}
+          <ChevronDown className={`w-3 h-3 transition-transform ${isTypeOpen ? 'rotate-180' : ''}`} />
+        </button>
 
         {/* 셔틀버스 필터 */}
         <button
@@ -480,6 +450,67 @@ export function SearchHeader() {
             setIsTypeOpen(false);
           }}
         />
+      )}
+
+      {/* 반경 필터 드롭다운 (fixed position) */}
+      {isRadiusOpen && (
+        <div
+          className="fixed bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]"
+          style={{ top: radiusDropdownPos.top, left: radiusDropdownPos.left }}
+        >
+          <div className="flex items-center justify-between mb-3">
+            <span className="text-xs text-gray-500">반경 설정</span>
+            <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
+          </div>
+          <input
+            type="range"
+            min={RADIUS_MIN}
+            max={RADIUS_MAX}
+            step={1}
+            value={filters.radius}
+            onChange={handleRadiusChange}
+            onMouseUp={handleRadiusChangeEnd}
+            onTouchEnd={handleRadiusChangeEnd}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+          />
+          <div className="flex justify-between mt-2 text-xs text-gray-400">
+            <span>{RADIUS_MIN}km</span>
+            <span>{RADIUS_MAX}km</span>
+          </div>
+        </div>
+      )}
+
+      {/* 기관 유형 필터 드롭다운 (fixed position) */}
+      {isTypeOpen && (
+        <div
+          className="fixed bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]"
+          style={{ top: typeDropdownPos.top, left: typeDropdownPos.left }}
+        >
+          <button
+            onClick={() => handleTypeChange('all')}
+            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+              filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+            }`}
+          >
+            전체
+          </button>
+          <button
+            onClick={() => handleTypeChange('public')}
+            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+              filters.type === 'public' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+            }`}
+          >
+            공립
+          </button>
+          <button
+            onClick={() => handleTypeChange('private')}
+            className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+              filters.type === 'private' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+            }`}
+          >
+            사립
+          </button>
+        </div>
       )}
     </header>
   );

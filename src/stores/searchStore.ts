@@ -74,8 +74,8 @@ function transformToKindergarten(
   };
 }
 
-/** 기관 유형 필터 */
-export type InstitutionFilter = 'all' | 'kindergarten' | 'daycare';
+/** 기관 유형 필터 (공립/사립) */
+export type InstitutionFilter = 'all' | 'public' | 'private';
 
 /** 정렬 옵션 */
 export type SortOption = 'distance' | 'capacity' | 'areaPerChild';
@@ -330,6 +330,11 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
 
     // 클라이언트 측 필터링
     let filtered = results;
+
+    // 유형 필터 (공립/사립)
+    if (filters.type !== 'all') {
+      filtered = filtered.filter((k) => k.type === filters.type);
+    }
 
     if (filters.hasBus !== null) {
       filtered = filtered.filter((k) => k.hasBus === filters.hasBus);
