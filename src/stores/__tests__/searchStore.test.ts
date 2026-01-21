@@ -1,6 +1,128 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { useSearchStore } from '../searchStore';
+import { useKindergartenStore, type KindergartenRaw } from '../kindergartenStore';
 import type { Kindergarten } from '@/types';
+
+// 테스트용 유치원 Raw 데이터 (JSON 파일 형식)
+const mockKindergartenRaw: KindergartenRaw[] = [
+  {
+    kindercode: 'K001',
+    name: '역삼유치원',
+    type: 'public',
+    address: '서울 강남구 역삼동',
+    lat: 37.5,
+    lng: 127.0,
+    capacity: 120,
+    current_count: 110,
+    has_bus: true,
+    bus_count: 2,
+    meal_type: 'direct',
+    has_after_school: true,
+    area_per_child: 5.5,
+    has_playground: true,
+    phone: '02-1234-5678',
+    homepage: null,
+    operation_hours: null,
+    sido_code: '11',
+    sigungu_code: '11680',
+    class_count_age3: 1,
+    class_count_age4: 1,
+    class_count_age5: 1,
+    capacity_age3: 30,
+    capacity_age4: 40,
+    capacity_age5: 50,
+    current_age3: 28,
+    current_age4: 38,
+    current_age5: 44,
+    establish_date: '19900301',
+    building_year: 1990,
+    floor_info: '지상2층',
+    classroom_area: 200,
+    indoor_playground_area: 50,
+    outdoor_playground_area: 100,
+    teacher_count: 8,
+    senior_teacher_count: 2,
+    cctv_count: 10,
+  },
+  {
+    kindercode: 'K002',
+    name: '해맑은어린이집',
+    type: 'private',
+    address: '서울 강남구 논현동',
+    lat: 37.51,
+    lng: 127.01,
+    capacity: 45,
+    current_count: 40,
+    has_bus: false,
+    bus_count: 0,
+    meal_type: 'outsourced',
+    has_after_school: false,
+    area_per_child: 4.2,
+    has_playground: false,
+    phone: null,
+    homepage: null,
+    operation_hours: null,
+    sido_code: '11',
+    sigungu_code: '11680',
+    class_count_age3: 1,
+    class_count_age4: 1,
+    class_count_age5: 0,
+    capacity_age3: 20,
+    capacity_age4: 25,
+    capacity_age5: 0,
+    current_age3: 18,
+    current_age4: 22,
+    current_age5: 0,
+    establish_date: '20000301',
+    building_year: 2000,
+    floor_info: '지상1층',
+    classroom_area: 100,
+    indoor_playground_area: 20,
+    outdoor_playground_area: 30,
+    teacher_count: 4,
+    senior_teacher_count: 1,
+    cctv_count: 5,
+  },
+  {
+    kindercode: 'K003',
+    name: '꿈나무유치원',
+    type: 'private',
+    address: '서울 강남구 도곡동',
+    lat: 37.52,
+    lng: 127.02,
+    capacity: 200,
+    current_count: 195,
+    has_bus: true,
+    bus_count: 3,
+    meal_type: 'direct',
+    has_after_school: true,
+    area_per_child: 6.0,
+    has_playground: true,
+    phone: '02-9876-5432',
+    homepage: 'http://example.com',
+    operation_hours: '08:00-18:00',
+    sido_code: '11',
+    sigungu_code: '11680',
+    class_count_age3: 2,
+    class_count_age4: 2,
+    class_count_age5: 2,
+    capacity_age3: 60,
+    capacity_age4: 70,
+    capacity_age5: 70,
+    current_age3: 58,
+    current_age4: 68,
+    current_age5: 69,
+    establish_date: '19850301',
+    building_year: 1985,
+    floor_info: '지상3층',
+    classroom_area: 400,
+    indoor_playground_area: 100,
+    outdoor_playground_area: 200,
+    teacher_count: 12,
+    senior_teacher_count: 4,
+    cctv_count: 20,
+  },
+];
 
 // 테스트용 유치원 데이터
 const mockKindergartens: Kindergarten[] = [
@@ -218,39 +340,66 @@ describe('useSearchStore', () => {
   });
 
   describe('search', () => {
+    beforeEach(() => {
+      // kindergartenStore를 테스트 데이터로 초기화
+      useKindergartenStore.setState({
+        allData: mockKindergartenRaw,
+        isLoaded: true,
+        isLoading: false,
+        error: null,
+      });
+    });
+
+    afterEach(() => {
+      // kindergartenStore 초기화
+      useKindergartenStore.setState({
+        allData: [],
+        isLoaded: false,
+        isLoading: false,
+        error: null,
+      });
+    });
+
     it('should set error when location is not set', async () => {
       await useSearchStore.getState().search();
 
       expect(useSearchStore.getState().error).toBe('위치 정보가 필요합니다.');
     });
 
-    it('should set loading state during search', async () => {
-      // Mock fetch
-      global.fetch = vi.fn().mockImplementation(
-        () =>
-          new Promise((resolve) => {
-            setTimeout(() => {
-              resolve({
-                json: () =>
-                  Promise.resolve({
-                    success: true,
-                    data: { count: 0, items: [] },
-                  }),
-              });
-            }, 100);
-          })
-      );
-
+    it('should search kindergartens within radius', async () => {
       useSearchStore.getState().setLocation({ lat: 37.5, lng: 127.0 });
-      const searchPromise = useSearchStore.getState().search();
+      useSearchStore.getState().setRadius(5); // 5km 반경
 
-      // 로딩 상태 확인
-      expect(useSearchStore.getState().isLoading).toBe(true);
+      await useSearchStore.getState().search();
 
-      await searchPromise;
+      const state = useSearchStore.getState();
+      expect(state.isLoading).toBe(false);
+      expect(state.error).toBeNull();
+      expect(state.results.length).toBeGreaterThan(0);
+      // 결과가 거리순으로 정렬되었는지 확인
+      if (state.results.length > 1) {
+        expect(state.results[0].distance).toBeLessThanOrEqual(state.results[1].distance);
+      }
+    });
 
-      // 로딩 완료 후 상태 확인
+    it('should complete search and set loading to false', async () => {
+      useSearchStore.getState().setLocation({ lat: 37.5, lng: 127.0 });
+      await useSearchStore.getState().search();
+
+      // 검색 완료 후 로딩 상태 확인
       expect(useSearchStore.getState().isLoading).toBe(false);
+      expect(useSearchStore.getState().error).toBeNull();
+    });
+
+    it('should filter by radius', async () => {
+      useSearchStore.getState().setLocation({ lat: 37.5, lng: 127.0 });
+      useSearchStore.getState().setRadius(1); // 1km 반경
+
+      await useSearchStore.getState().search();
+
+      const state = useSearchStore.getState();
+      // 모든 결과가 1km 이내인지 확인
+      expect(state.results.every((k) => k.distance <= 1)).toBe(true);
     });
   });
 

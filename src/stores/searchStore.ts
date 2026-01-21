@@ -1,11 +1,39 @@
 import { create } from 'zustand';
-import type {
-  Coordinates,
-  Kindergarten,
-  RadiusOption,
-  ApiResponse,
-  SearchResult,
-} from '@/types';
+import type { Coordinates, Kindergarten, RadiusOption } from '@/types';
+import { useKindergartenStore, type KindergartenRaw } from './kindergartenStore';
+import { calculateDistance } from '@/lib/geo';
+
+/**
+ * KindergartenRaw를 Kindergarten 타입으로 변환하고 거리 계산
+ */
+function transformToKindergarten(
+  raw: KindergartenRaw,
+  userLocation: Coordinates
+): Kindergarten {
+  const distance =
+    Math.round(
+      calculateDistance(userLocation, { lat: raw.lat, lng: raw.lng }) * 100
+    ) / 100;
+
+  return {
+    kindercode: raw.kindercode,
+    name: raw.name,
+    type: raw.type,
+    address: raw.address,
+    lat: raw.lat,
+    lng: raw.lng,
+    distance,
+    capacity: raw.capacity,
+    currentCount: raw.current_count,
+    hasBus: raw.has_bus,
+    busCount: raw.bus_count,
+    mealType: raw.meal_type ?? 'none',
+    hasAfterSchool: raw.has_after_school,
+    areaPerChild: raw.area_per_child,
+    phone: raw.phone ?? undefined,
+    hasPlayground: raw.has_playground,
+  };
+}
 
 /** 기관 유형 필터 */
 export type InstitutionFilter = 'all' | 'kindergarten' | 'daycare';
@@ -125,24 +153,32 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
     set({ isLoading: true, error: null });
 
     try {
-      const params = new URLSearchParams({
-        lat: String(location.lat),
-        lng: String(location.lng),
-        radius: String(filters.radius),
-        type: filters.type,
-      });
+      // kindergartenStore에서 데이터 로드 확인
+      const kindergartenStore = useKindergartenStore.getState();
 
-      const response = await fetch(`/api/kindergartens?${params}`);
-      const json: ApiResponse<SearchResult> = await response.json();
+      if (!kindergartenStore.isLoaded) {
+        await kindergartenStore.loadData();
+      }
 
-      if (!json.success) {
-        set({ error: json.error, isLoading: false });
+      const allData = kindergartenStore.getAll();
+
+      if (allData.length === 0) {
+        set({
+          error: kindergartenStore.error || '데이터를 로드할 수 없습니다.',
+          isLoading: false,
+        });
         return;
       }
 
+      // 거리 계산 및 반경 필터링
+      const results: Kindergarten[] = allData
+        .map((item) => transformToKindergarten(item, location))
+        .filter((item) => item.distance <= filters.radius)
+        .toSorted((a, b) => a.distance - b.distance);
+
       set({
-        results: json.data.items,
-        totalCount: json.data.count,
+        results,
+        totalCount: results.length,
         isLoading: false,
         error: null,
       });
