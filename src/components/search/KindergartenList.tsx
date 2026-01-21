@@ -1,8 +1,9 @@
 'use client';
 
 import { useCallback } from 'react';
-import { Heart, ChevronDown, Loader2, SearchX } from 'lucide-react';
+import { Heart, ChevronDown, Loader2, SearchX, School } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
+import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
 
@@ -29,7 +30,8 @@ export function KindergartenList() {
     selectedId,
     sortBy,
     getFilteredAndSortedResults,
-    setSelectedId,
+    setDetailId,
+    getDetailKindergarten,
     setSortBy,
     setRadius,
     search,
@@ -43,6 +45,7 @@ export function KindergartenList() {
   } = useCompareStore();
 
   const results = getFilteredAndSortedResults();
+  const detailKindergarten = getDetailKindergarten();
 
   // 정렬 변경 핸들러
   const handleSortChange = useCallback(
@@ -73,13 +76,18 @@ export function KindergartenList() {
     [isInCompare, removeItem, addItem]
   );
 
-  // 카드 클릭 핸들러 (선택)
+  // 카드 클릭 핸들러 (상세 보기)
   const handleCardClick = useCallback(
     (id: string) => {
-      setSelectedId(selectedId === id ? null : id);
+      setDetailId(id);
     },
-    [selectedId, setSelectedId]
+    [setDetailId]
   );
+
+  // 상세 패널 닫기 핸들러
+  const handleCloseDetail = useCallback(() => {
+    setDetailId(null);
+  }, [setDetailId]);
 
   return (
     <aside
@@ -176,6 +184,17 @@ export function KindergartenList() {
             />
           ))}
       </div>
+
+      {/* 상세 정보 패널 */}
+      {detailKindergarten && (
+        <KindergartenDetailPanel
+          kindergarten={detailKindergarten}
+          onClose={handleCloseDetail}
+          onCompareToggle={() => handleCompareToggle(detailKindergarten)}
+          isInCompare={isInCompare(detailKindergarten.kindercode)}
+          canAddToCompare={canAdd()}
+        />
+      )}
     </aside>
   );
 }
@@ -222,8 +241,17 @@ function KindergartenCard({
 
       <div className="flex gap-4">
         {/* 썸네일 */}
-        <div className="w-20 h-20 rounded-lg bg-gray-100 flex-shrink-0 overflow-hidden flex items-center justify-center">
-          <span className="text-3xl">🏫</span>
+        <div className={`w-20 h-20 rounded-xl flex-shrink-0 flex items-center justify-center transition-colors ${
+          kindergarten.type === 'private' ? 'bg-orange-100' : 
+          kindergarten.type === 'public' ? 'bg-emerald-100' : 'bg-gray-100'
+        }`}>
+          <School 
+            className={`w-10 h-10 ${
+              kindergarten.type === 'private' ? 'text-orange-600' : 
+              kindergarten.type === 'public' ? 'text-emerald-600' : 'text-gray-500'
+            }`} 
+            strokeWidth={1.5} 
+          />
         </div>
 
         <div className="flex-1 min-w-0">

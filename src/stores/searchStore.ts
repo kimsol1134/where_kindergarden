@@ -71,6 +71,7 @@ interface SearchState {
   // UI 상태
   viewMode: ViewMode;
   selectedId: string | null;
+  detailId: string | null; // 상세 패널에 표시할 유치원 ID
 }
 
 /** 검색 스토어 액션 */
@@ -99,6 +100,8 @@ interface SearchActions {
   // UI
   setViewMode: (mode: ViewMode) => void;
   setSelectedId: (id: string | null) => void;
+  setDetailId: (id: string | null) => void;
+  getDetailKindergarten: () => Kindergarten | null;
 
   // 유틸리티
   getFilteredAndSortedResults: () => Kindergarten[];
@@ -123,6 +126,7 @@ const initialState: SearchState = {
   sortBy: 'distance',
   viewMode: 'split',
   selectedId: null,
+  detailId: null,
 };
 
 export const useSearchStore = create<SearchState & SearchActions>((set, get) => ({
@@ -242,6 +246,16 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
 
   setSelectedId: (id) => {
     set({ selectedId: id });
+  },
+
+  setDetailId: (id) => {
+    set({ detailId: id, selectedId: id });
+  },
+
+  getDetailKindergarten: () => {
+    const { results, detailId } = get();
+    if (!detailId) return null;
+    return results.find((k) => k.kindercode === detailId) ?? null;
   },
 
   // 필터링 및 정렬된 결과 반환
