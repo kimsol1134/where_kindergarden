@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { useSearchStore } from '../searchStore';
 import { useKindergartenStore, type KindergartenRaw } from '../kindergartenStore';
 import type { Kindergarten } from '@/types';
+import { RADIUS_DEFAULT } from '@/types';
 
 // 테스트용 유치원 Raw 데이터 (JSON 파일 형식)
 const mockKindergartenRaw: KindergartenRaw[] = [
@@ -327,7 +328,7 @@ describe('useSearchStore', () => {
       store.resetFilters();
 
       const state = useSearchStore.getState();
-      expect(state.filters.radius).toBe(1);
+      expect(state.filters.radius).toBe(RADIUS_DEFAULT);
       expect(state.filters.type).toBe('all');
       expect(state.filters.hasBus).toBeNull();
     });
@@ -517,7 +518,7 @@ describe('useSearchStore', () => {
       expect(state.location).toBeNull();
       expect(state.address).toBe('');
       expect(state.results).toEqual([]);
-      expect(state.filters.radius).toBe(1);
+      expect(state.filters.radius).toBe(RADIUS_DEFAULT);
       expect(state.selectedId).toBeNull();
     });
   });

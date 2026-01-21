@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import { useSearchStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
-import type { RadiusOption } from '@/types';
+import { RADIUS_MIN, RADIUS_MAX } from '@/types';
 
 export function SearchHeader() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -94,15 +94,18 @@ export function SearchHeader() {
     }
   }, [getCurrentPosition, setLocation, clearSelection, search]);
 
-  // 반경 변경 핸들러
+  // 반경 변경 핸들러 (슬라이더)
   const handleRadiusChange = useCallback(
-    (radius: RadiusOption) => {
-      setRadius(radius);
-      setIsRadiusOpen(false);
-      search();
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setRadius(Number(e.target.value));
     },
-    [setRadius, search]
+    [setRadius]
   );
+
+  // 슬라이더에서 손을 뗐을 때 검색 실행
+  const handleRadiusChangeEnd = useCallback(() => {
+    search();
+  }, [search]);
 
   // 유형 변경 핸들러
   const handleTypeChange = useCallback(
@@ -174,7 +177,7 @@ export function SearchHeader() {
               }
             }}
             className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-12 text-sm transition-all outline-none shadow-sm"
-            placeholder="지역, 기관명으로 검색해보세요"
+            placeholder="유치원 이름, 집 주소 로 검색해보세요"
           />
           {(query || address) && (
             <button
@@ -317,7 +320,7 @@ export function SearchHeader() {
         </button>
         <div className="w-px h-6 bg-gray-200 mx-1" />
 
-        {/* 반경 필터 */}
+        {/* 반경 필터 (슬라이더) */}
         <div className="relative">
           <button
             onClick={() => {
@@ -326,21 +329,29 @@ export function SearchHeader() {
             }}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
           >
-            반경: {filters.radius}km <ChevronDown className="w-3 h-3" />
+            반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
           </button>
           {isRadiusOpen && (
-            <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[80px]">
-              {[1, 2, 5].map((r) => (
-                <button
-                  key={r}
-                  onClick={() => handleRadiusChange(r as RadiusOption)}
-                  className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                    filters.radius === r ? 'text-emerald-600 font-bold' : 'text-gray-700'
-                  }`}
-                >
-                  {r}km
-                </button>
-              ))}
+            <div className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-xs text-gray-500">반경 설정</span>
+                <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
+              </div>
+              <input
+                type="range"
+                min={RADIUS_MIN}
+                max={RADIUS_MAX}
+                step={1}
+                value={filters.radius}
+                onChange={handleRadiusChange}
+                onMouseUp={handleRadiusChangeEnd}
+                onTouchEnd={handleRadiusChangeEnd}
+                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+              />
+              <div className="flex justify-between mt-2 text-xs text-gray-400">
+                <span>{RADIUS_MIN}km</span>
+                <span>{RADIUS_MAX}km</span>
+              </div>
             </div>
           )}
         </div>
