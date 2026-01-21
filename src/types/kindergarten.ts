@@ -82,7 +82,7 @@ export interface SearchResult {
 export interface SearchParams {
   lat: number;
   lng: number;
-  radius: 1 | 2 | 5;
+  radius: number;
   type?: 'all' | 'kindergarten' | 'daycare';
 }
 
@@ -92,6 +92,8 @@ export interface ComparisonData {
   items: Kindergarten[];
 }
 
-/** 반경 옵션 */
-export const RADIUS_OPTIONS = [1, 2, 5] as const;
-export type RadiusOption = (typeof RADIUS_OPTIONS)[number];
+/** 반경 옵션 (km) */
+export const RADIUS_MIN = 1;
+export const RADIUS_MAX = 10;
+export const RADIUS_DEFAULT = 3;
+export type RadiusOption = number;

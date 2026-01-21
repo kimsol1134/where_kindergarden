@@ -146,7 +146,7 @@ export function SearchHeader() {
   }, [clearSelection]);
 
   return (
-    <header className="bg-white border-b border-gray-200 z-30 flex-none">
+    <header className="relative bg-white border-b border-gray-200 z-30 flex-none">
       <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
@@ -223,8 +223,16 @@ export function SearchHeader() {
                               onClick={() => handleSelectKindergarten(kindergarten)}
                               className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
                             >
-                              <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                                <School className="w-4 h-4 text-emerald-600" />
+                              <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                                kindergarten.type === 'public'
+                                  ? 'bg-emerald-100'
+                                  : 'bg-indigo-100'
+                              }`}>
+                                <School className={`w-4 h-4 ${
+                                  kindergarten.type === 'public'
+                                    ? 'text-emerald-600'
+                                    : 'text-indigo-600'
+                                }`} />
                               </div>
                               <div className="flex-1 min-w-0">
                                 <div className="font-medium text-gray-900 truncate">
@@ -236,8 +244,8 @@ export function SearchHeader() {
                               </div>
                               <span className={`text-xs px-2 py-0.5 rounded-full ${
                                 kindergarten.type === 'public'
-                                  ? 'bg-blue-100 text-blue-700'
-                                  : 'bg-orange-100 text-orange-700'
+                                  ? 'bg-emerald-100 text-emerald-700'
+                                  : 'bg-indigo-100 text-indigo-700'
                               }`}>
                                 {kindergarten.type === 'public' ? '공립' : '사립'}
                               </span>
@@ -444,18 +452,18 @@ export function SearchHeader() {
         </button>
       </div>
 
-      {/* Backdrop for search dropdown */}
+      {/* Backdrop for search dropdown - positioned below header */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40"
+          className="fixed inset-x-0 top-[120px] bottom-0 z-40"
           onClick={() => setOpen(false)}
         />
       )}
 
-      {/* Backdrop for filter dropdowns */}
+      {/* Backdrop for filter dropdowns - positioned below header */}
       {(isRadiusOpen || isTypeOpen) && (
         <div
-          className="fixed inset-0 z-40"
+          className="fixed inset-x-0 top-[120px] bottom-0 z-40"
           onClick={() => {
             setIsRadiusOpen(false);
             setIsTypeOpen(false);

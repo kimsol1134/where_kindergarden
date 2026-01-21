@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import type { Coordinates, Kindergarten, RadiusOption } from '@/types';
+import { RADIUS_DEFAULT } from '@/types';
 import { useKindergartenStore, type KindergartenRaw } from './kindergartenStore';
 import { calculateDistance } from '@/lib/geo';
 
@@ -153,7 +154,7 @@ interface SearchActions {
 }
 
 const DEFAULT_FILTERS: SearchFilters = {
-  radius: 1,
+  radius: RADIUS_DEFAULT,
   type: 'all',
   hasBus: null,
   hasVacancy: null,

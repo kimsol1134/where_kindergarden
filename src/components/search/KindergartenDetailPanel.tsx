@@ -22,7 +22,7 @@ import type { Kindergarten } from '@/types';
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
   public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
-  private: { label: '사립', className: 'text-orange-600 bg-orange-50' },
+  private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 } as const;
 
