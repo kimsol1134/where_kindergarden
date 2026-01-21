@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { Search, Loader2 } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
@@ -43,9 +43,6 @@ export default function ComparePage() {
   const { allData, isLoaded, isLoading, loadData, getByKindercode } =
     useKindergartenStore();
 
-  // 복원 시도 여부를 추적하는 ref (리렌더링 방지)
-  const hasAttemptedRestore = useRef(false);
-
   // 데이터 로드
   useEffect(() => {
     loadData();
@@ -53,15 +50,8 @@ export default function ComparePage() {
 
   // URL 파라미터로부터 비교 목록 복원
   useEffect(() => {
-    // 이미 복원을 시도했으면 스킵
-    if (hasAttemptedRestore.current) {
-      return;
-    }
-
     // URL에 ids 파라미터가 있고, 스토어가 비어있고, 데이터 로드가 완료된 경우에만 복원
     if (idsParam && items.length === 0 && isLoaded && allData.length > 0) {
-      hasAttemptedRestore.current = true;
-
       const ids = idsParam.split(',').filter(Boolean);
       const kindergartens = ids
         .map((id) => getByKindercode(id))
@@ -75,10 +65,7 @@ export default function ComparePage() {
   }, [idsParam, items.length, isLoaded, allData.length, getByKindercode, setItems]);
 
   // URL에 ids가 있지만 아직 데이터 로드 중인 경우 로딩 표시
-  const shouldShowLoading =
-    idsParam && isLoading && items.length === 0 && !hasAttemptedRestore.current;
-
-  if (shouldShowLoading) {
+  if (idsParam && (isLoading || !isLoaded) && items.length === 0) {
     return (
       <div className="bg-gray-50 text-gray-900 min-h-screen">
         <CompareHeader />

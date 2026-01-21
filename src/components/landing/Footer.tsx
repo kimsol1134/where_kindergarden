@@ -38,6 +38,18 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
             <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
             <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
+            <p className="text-gray-500">
+              데이터 출처:{' '}
+              <a
+                href="https://e-childschoolinfo.moe.go.kr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-emerald-500 transition-colors"
+              >
+                유치원 알리미
+              </a>
+              (교육부)
+            </p>
           </div>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></Link>

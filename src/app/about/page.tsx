@@ -130,8 +130,15 @@ export default function AboutPage() {
                   <h3 className="font-bold text-gray-900 mb-2">데이터 출처</h3>
                   <p className="text-sm text-gray-600">
                     교육부에서 운영하는{' '}
-                    <strong>유치원 알리미 공공데이터</strong>를 활용합니다.
-                    정확하고 공식적인 정보를 제공합니다.
+                    <a
+                      href="https://e-childschoolinfo.moe.go.kr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-600 font-bold hover:underline"
+                    >
+                      유치원 알리미
+                    </a>{' '}
+                    공공데이터를 활용합니다. 정확하고 공식적인 정보를 제공합니다.
                   </p>
                 </div>
               </div>
@@ -149,8 +156,19 @@ export default function AboutPage() {
               </div>
             </div>
             <p className="text-xs text-gray-500 mt-6 pt-6 border-t border-gray-100">
-              * 제공되는 정보는 공시 데이터 기준이며, 실제 현황과 다를 수
-              있습니다. 정확한 정보는 해당 기관에 직접 문의해주세요.
+              본 서비스는 교육부{' '}
+              <a
+                href="https://e-childschoolinfo.moe.go.kr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:underline"
+              >
+                유치원 알리미
+              </a>
+              의 공공데이터를 활용하며, 출처 표시 시 영리 목적을 포함한 자유
+              이용이 가능합니다. 제공되는 정보는 공시 데이터 기준이며, 실제
+              현황과 다를 수 있습니다. 정확한 정보는 해당 기관에 직접
+              문의해주세요.
             </p>
           </div>
         </div>
