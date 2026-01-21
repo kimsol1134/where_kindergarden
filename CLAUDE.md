@@ -590,3 +590,37 @@ NEXT_PUBLIC_VERCEL_ANALYTICS_ID=
 - [유치원 알리미 Open API](https://e-childschoolinfo.moe.go.kr/)
 - [Kakao Maps API](https://apis.map.kakao.com/)
 - [Kakao 주소 검색 API](https://developers.kakao.com/docs/latest/ko/local/dev-guide)
+
+### 유치원 알리미 API 엔드포인트 (공식)
+
+Base URL: `https://e-childschoolinfo.moe.go.kr/api/notice`
+
+| 기능 | 엔드포인트 | 비고 |
+|-----|-----------|------|
+| 기본현황 | `basicInfo` | 유치원 기본 정보 |
+| 기본현황(신규) | `basicInfo2` | |
+| 건물현황 | `building` | |
+| 교실면적현황 | `classArea` | 면적 정보 |
+| 직위·자격별 교직원현황 | `teachersInfo` | |
+| 수업일수현황 | `lessonDay` | |
+| 급식운영현황 | `schoolMeal` | 급식 정보 |
+| 통학차량현황 | `schoolBus` | 차량 운영 여부 |
+| 근속연수현황 | `yearOfWork` | |
+| 환경위생 관리현황 | `environmentHygiene` | |
+| 안전점검·교육 실시현황 | `safetyEdu` | |
+| 공제회 가입현황 | `deductionSociety` | |
+| 보험별 가입현황 | `insurance` | |
+| 방과후 과정 편성 운영 현황 | `afterSchoolPresent` | 방과후 운영 여부 |
+
+> **주의**: "현원현황" API (`childAbstnt`)는 공식적으로 제공되지 않음
+
+#### 현재 사용 중인 엔드포인트
+
+```typescript
+// src/lib/api/kindergartenApi.ts
+'basicInfo'          // 기본현황
+'schoolBus'          // 통학차량현황
+'schoolMeal'         // 급식운영현황
+'classArea'          // 교실면적현황
+'afterSchoolPresent' // 방과후 과정
+```
