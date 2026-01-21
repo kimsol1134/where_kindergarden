@@ -16,7 +16,7 @@ const API_BASE_URL = 'https://e-childschoolinfo.moe.go.kr/api/notice';
 
 interface FetchOptions {
   sidoCode: string;
-  sggCode: string; // 시군구 코드
+  sggCode?: string; // 시군구 코드 (선택, 미입력시 시도 전체 조회)
 }
 
 /**
@@ -35,8 +35,12 @@ async function fetchKindergartenApi<T>(
   const params = new URLSearchParams({
     key: apiKey,
     sidoCode: options.sidoCode,
-    sggCode: options.sggCode,
   });
+
+  // sggCode가 있으면 추가 (없으면 시도 전체 조회)
+  if (options.sggCode) {
+    params.append('sggCode', options.sggCode);
+  }
 
   const url = `${API_BASE_URL}/${endpoint}.do?${params.toString()}`;
 

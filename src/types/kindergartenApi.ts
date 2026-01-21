@@ -50,29 +50,33 @@ export interface CurrentCountResponse {
 /** 통학차량 API 응답 */
 export interface SchoolBusResponse {
   kindercode: string;
-  vhcnt: string; // 차량 대수
-  opra_yn: string; // 운영여부 (Y/N)
+  vhcl_oprn_yn: string; // 운영여부 (Y/N)
+  opra_vhcnt: string; // 운영 차량 대수
+  dclr_vhcnt: string; // 신고 차량 대수
 }
 
 /** 급식 현황 API 응답 */
 export interface MealInfoResponse {
   kindercode: string;
-  mlsvof: string; // 급식 운영 형태 (직영, 위탁 등)
-  phgrinfl: string; // 조리실 정보
+  mlsr_oprn_way_tp_cd: string; // 급식 운영 형태 (직영, 위탁 등)
+  al_kpcnt: string; // 전체 급식 인원
+  mlsr_kpcnt: string; // 급식 인원
 }
 
 /** 면적 현황 API 응답 */
 export interface AreaInfoResponse {
   kindercode: string;
-  gfa: string; // 건물 연면적
-  pga: string; // 놀이터 면적
-  plgrdco: string; // 실외 놀이터 수
+  crcnt: string; // 교실 수 (예: "2개")
+  clsrarea: string; // 교실 면적 (예: "159㎡")
+  phgrindrarea: string; // 실내 놀이터 면적
+  otsparea: string; // 실외 놀이터 면적
 }
 
 /** 방과후 과정 API 응답 */
 export interface AfterSchoolResponse {
   kindercode: string;
-  afschDn: string; // 방과후 운영 여부
+  inor_clcnt: string; // 방과후 학급 수
+  inor_ptcn_kpcnt: string; // 방과후 참여 원아 수
 }
 
 /** 시군구 코드 */

@@ -1,20 +1,23 @@
 'use client';
 
-import { useRef, useCallback } from 'react';
+import { useRef, useCallback, useState } from 'react';
 import Link from 'next/link';
 import { School, Search, X, Heart, User, SlidersHorizontal, ChevronDown, Bus, Clock, MapPin } from 'lucide-react';
-import { useSearchStore } from '@/stores';
+import { useSearchStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation } from '@/hooks';
 import type { RadiusOption } from '@/types';
 
 export function SearchHeader() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const [isRadiusOpen, setIsRadiusOpen] = useState(false);
+  const [isTypeOpen, setIsTypeOpen] = useState(false);
 
   const {
     address,
     filters,
     setLocation,
     setRadius,
+    setType,
     setHasBus,
     setHasAfterSchool,
     search,
@@ -60,9 +63,20 @@ export function SearchHeader() {
   const handleRadiusChange = useCallback(
     (radius: RadiusOption) => {
       setRadius(radius);
+      setIsRadiusOpen(false);
       search();
     },
     [setRadius, search]
+  );
+
+  // 유형 변경 핸들러
+  const handleTypeChange = useCallback(
+    (type: InstitutionFilter) => {
+      setType(type);
+      setIsTypeOpen(false);
+      search();
+    },
+    [setType, search]
   );
 
   // 버스 필터 토글
@@ -195,30 +209,78 @@ export function SearchHeader() {
         <div className="w-px h-6 bg-gray-200 mx-1" />
 
         {/* 반경 필터 */}
-        <div className="relative group">
-          <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap">
+        <div className="relative">
+          <button
+            onClick={() => {
+              setIsRadiusOpen(!isRadiusOpen);
+              setIsTypeOpen(false);
+            }}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
+          >
             반경: {filters.radius}km <ChevronDown className="w-3 h-3" />
           </button>
-          <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 hidden group-hover:block z-50">
-            {[1, 2, 5].map((r) => (
-              <button
-                key={r}
-                onClick={() => handleRadiusChange(r as RadiusOption)}
-                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                  filters.radius === r ? 'text-emerald-600 font-bold' : 'text-gray-700'
-                }`}
-              >
-                {r}km
-              </button>
-            ))}
-          </div>
+          {isRadiusOpen && (
+            <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[80px]">
+              {[1, 2, 5].map((r) => (
+                <button
+                  key={r}
+                  onClick={() => handleRadiusChange(r as RadiusOption)}
+                  className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                    filters.radius === r ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                  }`}
+                >
+                  {r}km
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* 기관 유형 필터 */}
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium hover:border-gray-400 whitespace-nowrap">
-          유형: {filters.type === 'all' ? '전체' : filters.type === 'kindergarten' ? '유치원' : '어린이집'}
-          <ChevronDown className="w-3 h-3" />
-        </button>
+        <div className="relative">
+          <button
+            onClick={() => {
+              setIsTypeOpen(!isTypeOpen);
+              setIsRadiusOpen(false);
+            }}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+              filters.type !== 'all'
+                ? 'border-emerald-500 bg-emerald-50 text-emerald-700 font-bold'
+                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+            }`}
+          >
+            유형: {filters.type === 'all' ? '전체' : filters.type === 'kindergarten' ? '유치원' : '어린이집'}
+            <ChevronDown className="w-3 h-3" />
+          </button>
+          {isTypeOpen && (
+            <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]">
+              <button
+                onClick={() => handleTypeChange('all')}
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                  filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                }`}
+              >
+                전체
+              </button>
+              <button
+                onClick={() => handleTypeChange('kindergarten')}
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                  filters.type === 'kindergarten' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                }`}
+              >
+                유치원
+              </button>
+              <button
+                onClick={() => handleTypeChange('daycare')}
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                  filters.type === 'daycare' ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                }`}
+              >
+                어린이집
+              </button>
+            </div>
+          )}
+        </div>
 
         {/* 셔틀버스 필터 */}
         <button
@@ -245,11 +307,22 @@ export function SearchHeader() {
         </button>
       </div>
 
-      {/* Backdrop for dropdown */}
+      {/* Backdrop for search dropdown */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40"
           onClick={() => setOpen(false)}
+        />
+      )}
+
+      {/* Backdrop for filter dropdowns */}
+      {(isRadiusOpen || isTypeOpen) && (
+        <div
+          className="fixed inset-0 z-40"
+          onClick={() => {
+            setIsRadiusOpen(false);
+            setIsTypeOpen(false);
+          }}
         />
       )}
     </header>

@@ -87,23 +87,23 @@ describe('transformToKindergartens', () => {
   ];
 
   const mockSchoolBus: SchoolBusResponse[] = [
-    { kindercode: 'K001', vhcnt: '2', opra_yn: 'Y' },
-    { kindercode: 'K002', vhcnt: '0', opra_yn: 'N' },
+    { kindercode: 'K001', opra_vhcnt: '2', dclr_vhcnt: '2', vhcl_oprn_yn: 'Y' },
+    { kindercode: 'K002', opra_vhcnt: '0', dclr_vhcnt: '0', vhcl_oprn_yn: 'N' },
   ];
 
   const mockMealInfo: MealInfoResponse[] = [
-    { kindercode: 'K001', mlsvof: '직영', phgrinfl: '있음' },
-    { kindercode: 'K002', mlsvof: '위탁급식', phgrinfl: '있음' },
+    { kindercode: 'K001', mlsr_oprn_way_tp_cd: '직영', al_kpcnt: '54', mlsr_kpcnt: '54' },
+    { kindercode: 'K002', mlsr_oprn_way_tp_cd: '위탁급식', al_kpcnt: '43', mlsr_kpcnt: '43' },
   ];
 
   const mockAreaInfo: AreaInfoResponse[] = [
-    { kindercode: 'K001', gfa: '500', pga: '200', plgrdco: '2' },
-    { kindercode: 'K002', gfa: '300', pga: '0', plgrdco: '0' },
+    { kindercode: 'K001', crcnt: '6개', clsrarea: '500㎡', phgrindrarea: '100㎡', otsparea: '200㎡' },
+    { kindercode: 'K002', crcnt: '3개', clsrarea: '300㎡', phgrindrarea: '0㎡', otsparea: '0㎡' },
   ];
 
   const mockAfterSchool: AfterSchoolResponse[] = [
-    { kindercode: 'K001', afschDn: 'Y' },
-    { kindercode: 'K002', afschDn: 'N' },
+    { kindercode: 'K001', inor_clcnt: '2', inor_ptcn_kpcnt: '30' },
+    { kindercode: 'K002', inor_clcnt: '0', inor_ptcn_kpcnt: '0' },
   ];
 
   it('기본 정보를 올바르게 변환한다', () => {
