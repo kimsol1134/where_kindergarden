@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import Link from 'next/link';
 import { Search, Loader2 } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
@@ -73,7 +73,27 @@ function transformToKindergarten(raw: KindergartenRaw): Kindergarten {
   };
 }
 
+function CompareLoading() {
+  return (
+    <div className="bg-gray-50 text-gray-900 min-h-screen">
+      <CompareHeader />
+      <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+        <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
+        <p className="text-sm text-gray-500">비교 정보를 불러오는 중...</p>
+      </main>
+    </div>
+  );
+}
+
 export default function ComparePage() {
+  return (
+    <Suspense fallback={<CompareLoading />}>
+      <CompareContent />
+    </Suspense>
+  );
+}
+
+function CompareContent() {
   const searchParams = useSearchParams();
   const idsParam = searchParams.get('ids');
 
