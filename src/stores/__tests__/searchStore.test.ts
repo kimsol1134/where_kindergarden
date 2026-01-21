@@ -291,11 +291,32 @@ describe('useSearchStore', () => {
       expect(useSearchStore.getState().filters.hasBus).toBe(true);
     });
 
-    it('should set hasAfterSchool filter', () => {
+    it('should set hasVacancy filter', () => {
       const store = useSearchStore.getState();
-      store.setHasAfterSchool(true);
+      store.setHasVacancy(true);
 
-      expect(useSearchStore.getState().filters.hasAfterSchool).toBe(true);
+      expect(useSearchStore.getState().filters.hasVacancy).toBe(true);
+    });
+
+    it('should set hasIndoorPlayground filter', () => {
+      const store = useSearchStore.getState();
+      store.setHasIndoorPlayground(true);
+
+      expect(useSearchStore.getState().filters.hasIndoorPlayground).toBe(true);
+    });
+
+    it('should set hasLargeSpace filter', () => {
+      const store = useSearchStore.getState();
+      store.setHasLargeSpace(true);
+
+      expect(useSearchStore.getState().filters.hasLargeSpace).toBe(true);
+    });
+
+    it('should set hasModernBuilding filter', () => {
+      const store = useSearchStore.getState();
+      store.setHasModernBuilding(true);
+
+      expect(useSearchStore.getState().filters.hasModernBuilding).toBe(true);
     });
 
     it('should reset filters to defaults', () => {
@@ -387,21 +408,34 @@ describe('useSearchStore', () => {
       expect(results.every((k) => k.hasBus)).toBe(true);
     });
 
-    it('should filter by hasAfterSchool', () => {
-      useSearchStore.getState().setHasAfterSchool(true);
+    it('should filter by hasVacancy', () => {
+      useSearchStore.getState().setHasVacancy(true);
       const results = useSearchStore.getState().getFilteredAndSortedResults();
 
+      // K001: 120 > 110 (여유정원 있음)
+      // K002: 45 > 40 (여유정원 있음)
+      // K003: 200 > 195 (여유정원 있음)
+      expect(results.length).toBe(3);
+      expect(results.every((k) => k.capacity > k.currentCount)).toBe(true);
+    });
+
+    it('should filter by hasLargeSpace', () => {
+      useSearchStore.getState().setHasLargeSpace(true);
+      const results = useSearchStore.getState().getFilteredAndSortedResults();
+
+      // K001: 5.5㎡, K003: 6.0㎡ (5㎡ 이상)
       expect(results.length).toBe(2);
-      expect(results.every((k) => k.hasAfterSchool)).toBe(true);
+      expect(results.every((k) => k.areaPerChild >= 5)).toBe(true);
     });
 
     it('should apply multiple filters', () => {
       useSearchStore.getState().setHasBus(true);
-      useSearchStore.getState().setHasAfterSchool(true);
+      useSearchStore.getState().setHasLargeSpace(true);
       const results = useSearchStore.getState().getFilteredAndSortedResults();
 
-      expect(results.length).toBe(2); // K001 and K003 have both
-      expect(results.every((k) => k.hasBus && k.hasAfterSchool)).toBe(true);
+      // K001 and K003 have both bus and large space
+      expect(results.length).toBe(2);
+      expect(results.every((k) => k.hasBus && k.areaPerChild >= 5)).toBe(true);
     });
   });
 

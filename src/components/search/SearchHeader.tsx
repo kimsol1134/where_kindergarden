@@ -303,7 +303,7 @@ export function SearchHeader() {
       </div>
 
       {/* Filters (Scrollable) */}
-      <div className="border-t border-gray-100 py-3 px-4 flex gap-2 overflow-x-auto hide-scrollbar">
+      <div className="relative z-50 border-t border-gray-100 py-3 px-4 flex gap-2 overflow-x-auto hide-scrollbar bg-white">
         <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-300 bg-white text-xs font-medium hover:border-gray-800 hover:bg-gray-50 transition-colors whitespace-nowrap">
           <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
         </button>
