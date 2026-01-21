@@ -15,6 +15,7 @@ interface CompareActions {
   addItem: (item: Kindergarten) => boolean;
   removeItem: (id: string) => void;
   clearAll: () => void;
+  setItems: (items: Kindergarten[]) => void;
   isInCompare: (id: string) => boolean;
   canAdd: () => boolean;
   getItemCount: () => number;
@@ -50,6 +51,11 @@ export const useCompareStore = create<CompareState & CompareActions>()(
 
       clearAll: () => {
         set({ items: [] });
+      },
+
+      setItems: (items) => {
+        // 최대 3개까지만 저장
+        set({ items: items.slice(0, MAX_COMPARE_ITEMS) });
       },
 
       isInCompare: (id) => {

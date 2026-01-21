@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback } from 'react';
-import { Heart, ArrowDownUp, Loader2 } from 'lucide-react';
+import { Heart, ChevronDown, Loader2, SearchX } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
@@ -12,6 +12,13 @@ const TYPE_STYLES = {
   private: { label: '사립', className: 'text-orange-600 bg-orange-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 } as const;
+
+/** 정렬 옵션 라벨 */
+const SORT_LABELS: Record<SortOption, string> = {
+  distance: '거리순',
+  capacity: '정원순',
+  areaPerChild: '면적순',
+};
 
 export function KindergartenList() {
   const {
@@ -24,6 +31,8 @@ export function KindergartenList() {
     getFilteredAndSortedResults,
     setSelectedId,
     setSortBy,
+    setRadius,
+    search,
   } = useSearchStore();
 
   const {
@@ -35,25 +44,22 @@ export function KindergartenList() {
 
   const results = getFilteredAndSortedResults();
 
-  // 정렬 순환 핸들러
-  const handleSortToggle = useCallback(() => {
-    const sortOptions: SortOption[] = ['distance', 'capacity', 'areaPerChild'];
-    const currentIndex = sortOptions.indexOf(sortBy);
-    const nextIndex = (currentIndex + 1) % sortOptions.length;
-    setSortBy(sortOptions[nextIndex]);
-  }, [sortBy, setSortBy]);
+  // 정렬 변경 핸들러
+  const handleSortChange = useCallback(
+    (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setSortBy(e.target.value as SortOption);
+    },
+    [setSortBy]
+  );
 
-  // 정렬 라벨
-  const getSortLabel = (sort: SortOption) => {
-    switch (sort) {
-      case 'distance':
-        return '거리순';
-      case 'capacity':
-        return '정원순';
-      case 'areaPerChild':
-        return '면적순';
-    }
-  };
+  // 반경 확대 핸들러
+  const handleExpandRadius = useCallback(
+    (newRadius: 2 | 5) => {
+      setRadius(newRadius);
+      search();
+    },
+    [setRadius, search]
+  );
 
   // 비교함 토글 핸들러
   const handleCompareToggle = useCallback(
@@ -90,12 +96,20 @@ export function KindergartenList() {
             {address || '위치를 선택해주세요'} 기준 {filters.radius}km 이내
           </p>
         </div>
-        <button
-          onClick={handleSortToggle}
-          className="flex items-center gap-1 text-xs text-gray-500 cursor-pointer hover:text-gray-900"
-        >
-          {getSortLabel(sortBy)} <ArrowDownUp className="w-3 h-3" />
-        </button>
+        <div className="relative">
+          <select
+            value={sortBy}
+            onChange={handleSortChange}
+            className="appearance-none bg-gray-50 border border-gray-200 rounded-md pl-3 pr-7 py-1.5 text-xs text-gray-700 cursor-pointer hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+          >
+            {(Object.entries(SORT_LABELS) as [SortOption, string][]).map(([value, label]) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400 pointer-events-none" />
+        </div>
       </div>
 
       {/* List Content */}
@@ -117,9 +131,34 @@ export function KindergartenList() {
 
         {/* 빈 상태 */}
         {!isLoading && !error && results.length === 0 && (
-          <div className="flex flex-col items-center justify-center py-12 text-gray-500">
-            <p className="text-sm">검색 결과가 없습니다</p>
-            <p className="text-xs mt-1">검색 조건을 변경해보세요</p>
+          <div className="flex flex-col items-center justify-center py-12 text-center">
+            <SearchX className="h-12 w-12 text-gray-300 mb-4" />
+            <p className="text-gray-500 mb-4">
+              주변 {filters.radius}km 내에 기관이 없습니다.
+            </p>
+
+            {filters.radius < 5 && (
+              <div className="flex flex-col gap-2">
+                {filters.radius < 2 && (
+                  <button
+                    onClick={() => handleExpandRadius(2)}
+                    className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
+                  >
+                    반경 2km로 검색하기
+                  </button>
+                )}
+                <button
+                  onClick={() => handleExpandRadius(5)}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 transition-colors"
+                >
+                  반경 5km로 검색하기
+                </button>
+              </div>
+            )}
+
+            <p className="text-sm text-gray-400 mt-4">
+              또는 다른 위치로 검색해보세요.
+            </p>
           </div>
         )}
 

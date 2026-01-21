@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { School, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { DATA_VERSION } from '@/lib/constants';
 
 export function Footer() {
   return (
@@ -33,9 +34,12 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-          <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
-          <div className="flex gap-4 mt-4 md:mt-0">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
+            <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
+          </div>
+          <div className="flex gap-4">
             <Link href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></Link>
             <Link href="#" className="hover:text-white"><Facebook className="w-5 h-5" /></Link>
             <Link href="#" className="hover:text-white"><MessageCircle className="w-5 h-5" /></Link>

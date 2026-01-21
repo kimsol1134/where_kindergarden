@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 
 export const metadata: Metadata = {
   title: '우리동네 유치원',
@@ -28,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="min-h-screen bg-white antialiased">{children}</body>
+      <body className="min-h-screen bg-white antialiased">
+        <KakaoSDKProvider>{children}</KakaoSDKProvider>
+      </body>
     </html>
   );
 }
