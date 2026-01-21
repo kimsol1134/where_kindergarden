@@ -96,7 +96,7 @@ export function Features() {
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               지도 앱 켜고, 맘카페 검색하고, 홈페이지 들어가보고...<br/>
-              이제 '우리동네 유치원'에서 한 번에 해결하세요.
+              이제 &apos;우리동네 유치원&apos;에서 한 번에 해결하세요.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">

@@ -5,7 +5,7 @@ export function CTA() {
   return (
     <section className="py-20 bg-emerald-50">
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">지금 바로 우리 아이 학교를 찾아보세요</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">지금 바로 우리 아이 유치원을 찾아보세요</h2>
         <p className="text-gray-600 mb-10">로그인 없이 바로 시작할 수 있습니다.</p>
         <Link 
           href="/search"

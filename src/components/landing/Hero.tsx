@@ -23,7 +23,7 @@ export function Hero() {
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6 leading-tight animate-fade-up delay-100">
-          우리 아이 첫 학교,<br className="hidden md:block" />
+          우리 아이 첫 유치원,<br className="hidden md:block" />
           <span className="text-emerald-500">가장 쉽고 똑똑하게</span> 찾는 법
         </h1>
         
