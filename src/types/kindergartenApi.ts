@@ -83,11 +83,10 @@ export interface SigunguCode {
   sigunguName: string;
 }
 
-/** API 엔드포인트 타입 */
+/** API 엔드포인트 타입 (실제 API 엔드포인트명) */
 export type ApiEndpoint =
-  | 'basicInfo' // 일반현황
-  | 'currentCount' // 현원현황
-  | 'schoolBus' // 통학차량
-  | 'mealInfo' // 급식현황
-  | 'areaInfo' // 면적현황
-  | 'afterSchool'; // 방과후과정
+  | 'basicInfo' // 기본현황
+  | 'schoolBus' // 통학차량현황
+  | 'schoolMeal' // 급식운영현황
+  | 'classArea' // 교실면적현황
+  | 'afterSchoolPresent'; // 방과후 과정 편성 운영 현황

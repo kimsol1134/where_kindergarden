@@ -1,9 +1,86 @@
 'use client';
 
+import { useRef, useCallback } from 'react';
 import Link from 'next/link';
-import { School, Search, X, Heart, User, SlidersHorizontal, ChevronDown, Bus, Clock } from 'lucide-react';
+import { School, Search, X, Heart, User, SlidersHorizontal, ChevronDown, Bus, Clock, MapPin } from 'lucide-react';
+import { useSearchStore } from '@/stores';
+import { useAddressSearch, useGeolocation } from '@/hooks';
+import type { RadiusOption } from '@/types';
 
 export function SearchHeader() {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const {
+    address,
+    filters,
+    setLocation,
+    setRadius,
+    setHasBus,
+    setHasAfterSchool,
+    search,
+  } = useSearchStore();
+
+  const {
+    query,
+    suggestions,
+    isLoading: isSearching,
+    isOpen,
+    setQuery,
+    selectAddress,
+    clearSelection,
+    setOpen,
+  } = useAddressSearch();
+
+  const { getCurrentPosition, isLoading: isGeoLoading } = useGeolocation();
+
+  // 주소 선택 핸들러
+  const handleSelectAddress = useCallback(
+    (suggestion: typeof suggestions[0]) => {
+      selectAddress(suggestion);
+      setLocation({ lat: suggestion.lat, lng: suggestion.lng }, suggestion.address);
+      search();
+      inputRef.current?.blur();
+    },
+    [selectAddress, setLocation, search]
+  );
+
+  // 현재 위치 검색
+  const handleCurrentLocation = useCallback(async () => {
+    try {
+      const coords = await getCurrentPosition();
+      setLocation(coords);
+      clearSelection();
+      search();
+    } catch {
+      // 에러는 useGeolocation 내부에서 처리됨
+    }
+  }, [getCurrentPosition, setLocation, clearSelection, search]);
+
+  // 반경 변경 핸들러
+  const handleRadiusChange = useCallback(
+    (radius: RadiusOption) => {
+      setRadius(radius);
+      search();
+    },
+    [setRadius, search]
+  );
+
+  // 버스 필터 토글
+  const handleBusToggle = useCallback(() => {
+    setHasBus(filters.hasBus === true ? null : true);
+  }, [setHasBus, filters.hasBus]);
+
+  // 방과후 필터 토글
+  const handleAfterSchoolToggle = useCallback(() => {
+    setHasAfterSchool(filters.hasAfterSchool === true ? null : true);
+  }, [setHasAfterSchool, filters.hasAfterSchool]);
+
+  // 입력 초기화
+  const handleClear = useCallback(() => {
+    clearSelection();
+    inputRef.current?.focus();
+  }, [clearSelection]);
+
   return (
     <header className="bg-white border-b border-gray-200 z-30 flex-none">
       <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
@@ -12,7 +89,9 @@ export function SearchHeader() {
           <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
             <School className="w-5 h-5" />
           </div>
-          <span className="text-lg font-bold tracking-tight text-gray-900 hidden md:block">우리동네 유치원</span>
+          <span className="text-lg font-bold tracking-tight text-gray-900 hidden md:block">
+            우리동네 유치원
+          </span>
         </Link>
 
         {/* Search Input */}
@@ -20,15 +99,78 @@ export function SearchHeader() {
           <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-emerald-500 transition-colors">
             <Search className="w-5 h-5" />
           </div>
-          <input 
-            type="text" 
-            defaultValue="서울 강남구 역삼동" 
+          <input
+            ref={inputRef}
+            type="text"
+            value={query || address}
+            onChange={(e) => setQuery(e.target.value)}
+            onFocus={() => {
+              if (suggestions.length > 0) {
+                setOpen(true);
+              }
+            }}
             className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-12 text-sm transition-all outline-none shadow-sm"
             placeholder="지역, 기관명으로 검색해보세요"
           />
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full hover:bg-gray-200 text-gray-400">
-            <X className="w-4 h-4" />
-          </button>
+          {(query || address) && (
+            <button
+              onClick={handleClear}
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full hover:bg-gray-200 text-gray-400"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
+
+          {/* Autocomplete Dropdown */}
+          {isOpen && (
+            <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden z-50">
+              {/* 현재 위치 검색 옵션 */}
+              <button
+                onClick={handleCurrentLocation}
+                disabled={isGeoLoading}
+                className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left border-b border-gray-100"
+              >
+                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <MapPin className="w-4 h-4 text-emerald-600" />
+                </div>
+                <div>
+                  <div className="font-medium text-gray-900">
+                    {isGeoLoading ? '위치 확인 중...' : '현재 위치로 검색'}
+                  </div>
+                  <div className="text-xs text-gray-500">GPS를 사용하여 내 위치 찾기</div>
+                </div>
+              </button>
+
+              {/* 검색 결과 */}
+              {isSearching ? (
+                <div className="px-4 py-6 text-center text-gray-500">검색 중...</div>
+              ) : suggestions.length > 0 ? (
+                <ul>
+                  {suggestions.map((suggestion, index) => (
+                    <li key={`${suggestion.lat}-${suggestion.lng}-${index}`}>
+                      <button
+                        onClick={() => handleSelectAddress(suggestion)}
+                        className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
+                      >
+                        <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                          <Search className="w-4 h-4 text-gray-400" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium text-gray-900 truncate">
+                            {suggestion.address}
+                          </div>
+                        </div>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              ) : query.length >= 2 ? (
+                <div className="px-4 py-6 text-center text-gray-500">
+                  검색 결과가 없습니다
+                </div>
+              ) : null}
+            </div>
+          )}
         </div>
 
         {/* Header Actions */}
@@ -37,7 +179,7 @@ export function SearchHeader() {
             <Heart className="w-4 h-4" />
             찜한 목록
           </button>
-          <div className="h-6 w-px bg-gray-200 hidden md:block"></div>
+          <div className="h-6 w-px bg-gray-200 hidden md:block" />
           <button className="flex items-center gap-2 text-sm font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-lg transition-colors">
             <User className="w-4 h-4" />
             로그인
@@ -50,26 +192,66 @@ export function SearchHeader() {
         <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-300 bg-white text-xs font-medium hover:border-gray-800 hover:bg-gray-50 transition-colors whitespace-nowrap">
           <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
         </button>
-        <div className="w-px h-6 bg-gray-200 mx-1"></div>
-        
-        {/* Active Filter */}
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap">
-          유형: 전체 <ChevronDown className="w-3 h-3" />
-        </button>
-        
+        <div className="w-px h-6 bg-gray-200 mx-1" />
+
+        {/* 반경 필터 */}
+        <div className="relative group">
+          <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap">
+            반경: {filters.radius}km <ChevronDown className="w-3 h-3" />
+          </button>
+          <div className="absolute top-full left-0 mt-1 bg-white rounded-lg shadow-xl border border-gray-200 hidden group-hover:block z-50">
+            {[1, 2, 5].map((r) => (
+              <button
+                key={r}
+                onClick={() => handleRadiusChange(r as RadiusOption)}
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                  filters.radius === r ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                }`}
+              >
+                {r}km
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* 기관 유형 필터 */}
         <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium hover:border-gray-400 whitespace-nowrap">
-          연령 <ChevronDown className="w-3 h-3" />
+          유형: {filters.type === 'all' ? '전체' : filters.type === 'kindergarten' ? '유치원' : '어린이집'}
+          <ChevronDown className="w-3 h-3" />
         </button>
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium hover:border-gray-400 whitespace-nowrap">
-          설립유형 <ChevronDown className="w-3 h-3" />
-        </button>
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium hover:border-gray-400 whitespace-nowrap">
+
+        {/* 셔틀버스 필터 */}
+        <button
+          onClick={handleBusToggle}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.hasBus === true
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
           <Bus className="w-3.5 h-3.5" /> 셔틀버스
         </button>
-        <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium hover:border-gray-400 whitespace-nowrap">
-          <Clock className="w-3.5 h-3.5" /> 야간연장
+
+        {/* 방과후 필터 */}
+        <button
+          onClick={handleAfterSchoolToggle}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+            filters.hasAfterSchool === true
+              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
+              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+          }`}
+        >
+          <Clock className="w-3.5 h-3.5" /> 방과후과정
         </button>
       </div>
+
+      {/* Backdrop for dropdown */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </header>
   );
 }

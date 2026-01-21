@@ -1,6 +1,5 @@
 export {
   fetchBasicInfo,
-  fetchCurrentCount,
   fetchSchoolBus,
   fetchMealInfo,
   fetchAreaInfo,

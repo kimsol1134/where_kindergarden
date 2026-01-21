@@ -63,14 +63,17 @@ function calculateCurrentCount(data: CurrentCountResponse | undefined): number {
 
 /**
  * 1인당 면적 계산
+ * currentCount가 0이면 capacity를 사용 (현원 API 미제공 대응)
  */
 function calculateAreaPerChild(
   areaInfo: AreaInfoResponse | undefined,
-  currentCount: number
+  currentCount: number,
+  capacity: number
 ): number {
-  if (!areaInfo || currentCount === 0) return 0;
+  const denominator = currentCount > 0 ? currentCount : capacity;
+  if (!areaInfo || denominator === 0) return 0;
   const totalArea = parseFloat(areaInfo.gfa || '0');
-  return Math.round((totalArea / currentCount) * 10) / 10;
+  return Math.round((totalArea / denominator) * 10) / 10;
 }
 
 /**
@@ -114,7 +117,7 @@ export function transformToKindergartens(input: TransformInput): Omit<Kindergart
       busCount: parseInt(schoolBusData?.vhcnt || '0', 10),
       mealType: parseMealType(mealInfoData?.mlsvof),
       hasAfterSchool: afterSchoolData?.afschDn === 'Y',
-      areaPerChild: calculateAreaPerChild(areaInfoData, currentCountValue),
+      areaPerChild: calculateAreaPerChild(areaInfoData, currentCountValue, capacity),
       phone: basic.telno,
       hasPlayground: parseInt(areaInfoData?.plgrdco || '0', 10) > 0,
     };
