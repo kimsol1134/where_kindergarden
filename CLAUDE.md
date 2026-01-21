@@ -86,6 +86,26 @@ git worktree prune
 - [ ] console.log 제거 확인
 - [ ] any 타입 사용 없음
 
+### 기능 구현 후 필수 절차
+
+**기능 구현 완료 후 반드시 아래 순서로 진행합니다:**
+
+```bash
+# 1. 유닛 테스트 실행
+pnpm test
+
+# 2. 타입 체크
+pnpm type-check
+
+# 3. 모두 통과하면 커밋
+git add .
+git commit -m "feat: 기능 설명"
+```
+
+- 테스트가 실패하면 커밋하지 않고 수정 후 재시도
+- 새로운 기능에는 반드시 해당 기능의 유닛 테스트 작성
+- API 관련 기능은 transformer, 유틸리티 함수 테스트 필수
+
 ---
 
 ## 세션 인계 (HANDOFF.md)
