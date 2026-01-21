@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useCallback } from 'react';
 import { Crosshair, Plus, Minus, RotateCw, List, Loader2 } from 'lucide-react';
-import { useSearchStore } from '@/stores';
+import { useSearchStore, useCompareStore } from '@/stores';
 import { useKakaoMap, useGeolocation } from '@/hooks';
 import type { Kindergarten } from '@/types';
 
@@ -18,6 +18,9 @@ export function MapView() {
     setLocation,
     search,
   } = useSearchStore();
+
+  const { items: compareItems } = useCompareStore();
+  const hasCompareItems = compareItems.length > 0;
 
   const { getCurrentPosition, isLoading: isGeoLoading } = useGeolocation();
 
@@ -169,7 +172,11 @@ export function MapView() {
       </div>
 
       {/* Mobile List Toggle Button (Visible only on mobile inside map) */}
-      <div className="md:hidden absolute bottom-6 left-1/2 -translate-x-1/2 z-50">
+      <div
+        className={`md:hidden absolute left-1/2 -translate-x-1/2 z-50 transition-[bottom] duration-300 ${
+          hasCompareItems ? 'bottom-24' : 'bottom-6'
+        }`}
+      >
         <button className="bg-white text-gray-900 px-5 py-3 rounded-full shadow-lg border border-gray-200 flex items-center gap-2 font-bold text-sm">
           <List className="w-4 h-4" /> 목록 보기
         </button>
