@@ -317,9 +317,17 @@ export function KindergartenDetailPanel({
               />
               <InfoRow
                 label="실외놀이터"
-                value={kindergarten.hasPlayground ? `${kindergarten.outdoorPlaygroundArea.toFixed(1)} ㎡` : '없음'}
+                value={
+                  kindergarten.hasPlayground && kindergarten.outdoorPlaygroundArea > 0
+                    ? `${kindergarten.outdoorPlaygroundArea.toFixed(1)} ㎡`
+                    : '없음'
+                }
                 icon={<Leaf className="w-4 h-4 text-green-500" />}
-                valueClassName={kindergarten.hasPlayground ? 'text-emerald-600' : 'text-gray-400'}
+                valueClassName={
+                  kindergarten.hasPlayground && kindergarten.outdoorPlaygroundArea > 0
+                    ? 'text-emerald-600'
+                    : 'text-gray-400'
+                }
               />
               {kindergarten.buildingYear && (
                 <InfoRow

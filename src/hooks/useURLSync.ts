@@ -4,6 +4,7 @@ import { useEffect, useCallback, useRef } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { useSearchStore } from '@/stores/searchStore';
 import type { RadiusOption } from '@/types';
+import { RADIUS_DEFAULT } from '@/types';
 import type { InstitutionFilter, SortOption, ViewMode } from '@/stores/searchStore';
 
 /** URL 파라미터 키 */
@@ -122,7 +123,7 @@ export function useURLSync() {
       params.set(URL_PARAMS.ADDRESS, address);
     }
 
-    if (filters.radius !== 1) {
+    if (filters.radius !== RADIUS_DEFAULT) {
       params.set(URL_PARAMS.RADIUS, String(filters.radius));
     }
 
@@ -174,7 +175,7 @@ export function useURLSync() {
 // 타입 가드 함수들
 function isValidRadius(value: string): boolean {
   const num = parseInt(value, 10);
-  return num === 1 || num === 2 || num === 5;
+  return num === 1 || num === 2 || num === 3 || num === 5;
 }
 
 function isValidType(value: string): value is InstitutionFilter {

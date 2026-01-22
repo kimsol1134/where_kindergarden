@@ -55,6 +55,7 @@ interface KindergartenState {
   isLoaded: boolean;
   isLoading: boolean;
   error: string | null;
+  loadPromise: Promise<void> | null;
 }
 
 /** 유치원 데이터 스토어 액션 */
@@ -69,6 +70,7 @@ const initialState: KindergartenState = {
   isLoaded: false,
   isLoading: false,
   error: null,
+  loadPromise: null,
 };
 
 export const useKindergartenStore = create<KindergartenState & KindergartenActions>(
@@ -78,37 +80,48 @@ export const useKindergartenStore = create<KindergartenState & KindergartenActio
     /**
      * JSON 파일에서 전체 유치원 데이터를 로드
      * 앱 시작 시 한 번만 호출되어야 함
+     * 여러 호출자가 동시에 호출해도 하나의 로드만 수행되고 모두 대기
      */
     loadData: async () => {
-      const { isLoaded, isLoading } = get();
+      const { isLoaded, isLoading, loadPromise } = get();
 
-      // 이미 로드됨 또는 로딩 중이면 스킵
-      if (isLoaded || isLoading) {
+      // 이미 로드됨
+      if (isLoaded) {
         return;
       }
 
-      set({ isLoading: true, error: null });
-
-      try {
-        const response = await fetch('/data/kindergartens.json');
-
-        if (!response.ok) {
-          throw new Error(`데이터 로드 실패: ${response.status}`);
-        }
-
-        const data: KindergartenRaw[] = await response.json();
-
-        set({
-          allData: data,
-          isLoaded: true,
-          isLoading: false,
-          error: null,
-        });
-      } catch (err) {
-        const errorMessage =
-          err instanceof Error ? err.message : '데이터 로드 중 오류가 발생했습니다.';
-        set({ error: errorMessage, isLoading: false });
+      // 로딩 중이면 기존 Promise 대기
+      if (isLoading && loadPromise) {
+        return loadPromise;
       }
+
+      // 새 로드 시작
+      const promise = (async () => {
+        try {
+          const response = await fetch('/data/kindergartens.json');
+
+          if (!response.ok) {
+            throw new Error(`데이터 로드 실패: ${response.status}`);
+          }
+
+          const data: KindergartenRaw[] = await response.json();
+
+          set({
+            allData: data,
+            isLoaded: true,
+            isLoading: false,
+            error: null,
+            loadPromise: null,
+          });
+        } catch (err) {
+          const errorMessage =
+            err instanceof Error ? err.message : '데이터 로드 중 오류가 발생했습니다.';
+          set({ error: errorMessage, isLoading: false, loadPromise: null });
+        }
+      })();
+
+      set({ isLoading: true, error: null, loadPromise: promise });
+      return promise;
     },
 
     /**
