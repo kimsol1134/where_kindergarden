@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 
 /*
@@ -43,6 +44,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  viewportFit: 'cover', // iOS Safe Area 지원
 };
 
 export default function RootLayout({
@@ -53,7 +55,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="min-h-screen bg-white antialiased">
-        <KakaoSDKProvider>{children}</KakaoSDKProvider>
+        <GlobalProviders>
+          <KakaoSDKProvider>{children}</KakaoSDKProvider>
+        </GlobalProviders>
       </body>
     </html>
   );

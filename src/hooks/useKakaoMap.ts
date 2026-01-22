@@ -106,9 +106,10 @@ interface KakaoMapOptions {
   onMarkerClick?: (kindergarten: Kindergarten) => void;
 }
 
-const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false`;
+const KAKAO_SDK_URL = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false`;
 const DEFAULT_CENTER: Coordinates = { lat: 37.5665, lng: 126.978 }; // 서울시청
 const DEFAULT_LEVEL = 5;
+const SDK_LOAD_TIMEOUT_MS = 10000; // SDK 로드 타임아웃 (10초)
 
 /** 마커 색상 상수 */
 const MARKER_COLORS = {
@@ -194,17 +195,50 @@ export function useKakaoMap(
 
   // SDK 스크립트 로드
   useEffect(() => {
+    // API 키 체크
+    if (!process.env.NEXT_PUBLIC_KAKAO_JS_KEY) {
+      setState({
+        isLoaded: false,
+        isError: true,
+        errorMessage: 'Kakao API 키가 설정되지 않았습니다.',
+      });
+      return;
+    }
+
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    let isResolved = false;
+
+    const resolveSuccess = () => {
+      if (isResolved) return;
+      isResolved = true;
+      if (timeoutId) clearTimeout(timeoutId);
+      setState({ isLoaded: true, isError: false, errorMessage: null });
+    };
+
+    const resolveError = (message: string) => {
+      if (isResolved) return;
+      isResolved = true;
+      if (timeoutId) clearTimeout(timeoutId);
+      setState({ isLoaded: false, isError: true, errorMessage: message });
+    };
+
     const existingScript = document.getElementById('kakao-maps-sdk');
 
     if (existingScript) {
       // 이미 로드된 경우
       if (window.kakao?.maps) {
-        window.kakao.maps.load(() => {
-          setState({ isLoaded: true, isError: false, errorMessage: null });
-        });
+        window.kakao.maps.load(resolveSuccess);
+      } else {
+        // 스크립트는 있지만 kakao 객체가 없는 경우 - 로드 실패
+        resolveError('Kakao Maps SDK 로드에 실패했습니다. 도메인 설정을 확인해주세요.');
       }
       return;
     }
+
+    // 타임아웃 설정 (SDK 로드가 조용히 실패하는 경우 대응)
+    timeoutId = setTimeout(() => {
+      resolveError('지도 로딩 시간이 초과되었습니다. 네트워크 연결을 확인해주세요.');
+    }, SDK_LOAD_TIMEOUT_MS);
 
     const script = document.createElement('script');
     script.id = 'kakao-maps-sdk';
@@ -212,22 +246,21 @@ export function useKakaoMap(
     script.async = true;
 
     script.onload = () => {
-      window.kakao.maps.load(() => {
-        setState({ isLoaded: true, isError: false, errorMessage: null });
-      });
+      if (window.kakao?.maps) {
+        window.kakao.maps.load(resolveSuccess);
+      } else {
+        resolveError('Kakao Maps SDK가 로드되었지만 초기화에 실패했습니다.');
+      }
     };
 
     script.onerror = () => {
-      setState({
-        isLoaded: false,
-        isError: true,
-        errorMessage: 'Kakao Maps SDK 로드에 실패했습니다.',
-      });
+      resolveError('Kakao Maps SDK 로드에 실패했습니다. 네트워크 연결을 확인해주세요.');
     };
 
     document.head.appendChild(script);
 
     return () => {
+      if (timeoutId) clearTimeout(timeoutId);
       // 스크립트는 재사용을 위해 제거하지 않음
     };
   }, []);

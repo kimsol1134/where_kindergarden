@@ -129,6 +129,40 @@
   }
 }
 
+/* iOS Safe Area 지원 (Dynamic Island, 노치 등) */
+:root {
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+}
+
+.safe-area-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-area-all {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Fixed/Sticky 헤더용 - top 위치 조정 (다이나믹 아일랜드 대응) */
+.safe-top-offset {
+  top: env(safe-area-inset-top, 0px);
+}
+
+/* Fixed 전체 화면 패널용 - inset-y 대체 */
+.safe-inset-y {
+  top: env(safe-area-inset-top, 0px);
+  bottom: env(safe-area-inset-bottom, 0px);
+}
+
 @keyframes fadeUp {
   to { opacity: 1; transform: translateY(0); }
 }

@@ -220,7 +220,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
       />
 
       {/* Panel */}
-      <div className="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right">
+      <div className="fixed safe-inset-y right-0 w-full max-w-md bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md sticky top-0 z-10">
           <div className="flex items-center gap-2">
