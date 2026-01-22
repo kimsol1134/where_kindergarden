@@ -102,6 +102,75 @@ platform :ios do
     puts "✅ 빌드 완료: ./build/App.ipa"
   end
 
+  desc "App Store Connect 메타데이터 업로드"
+  lane :upload_metadata do
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      force: true,
+      metadata_path: "./fastlane/metadata",
+      overwrite_screenshots: false,
+      submit_for_review: false,
+      automatic_release: false
+    )
+    puts "✅ 메타데이터 업로드 완료!"
+  end
+
+  desc "App Store Connect 메타데이터 업로드 (API Key 사용)"
+  lane :upload_metadata_with_api_key do
+    api_key = app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_API_ISSUER_ID"],
+      key_content: ENV["APP_STORE_CONNECT_API_KEY_CONTENT"],
+      is_key_content_base64: true
+    )
+
+    deliver(
+      api_key: api_key,
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      force: true,
+      metadata_path: "./fastlane/metadata",
+      overwrite_screenshots: false,
+      submit_for_review: false,
+      automatic_release: false
+    )
+    puts "✅ 메타데이터 업로드 완료!"
+  end
+
+  desc "App Store 출시 (빌드 + 메타데이터 + 심사 제출)"
+  lane :release do
+    # 빌드 번호 자동 증가
+    increment_build_number(
+      xcodeproj: "App.xcodeproj",
+      build_number: latest_testflight_build_number + 1
+    )
+
+    # 앱 빌드
+    build_app(
+      project: "App.xcodeproj",
+      scheme: "App",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "./build",
+      output_name: "App.ipa",
+      clean: true,
+      xcargs: "-allowProvisioningUpdates"
+    )
+
+    # App Store에 업로드 (메타데이터 포함)
+    deliver(
+      force: true,
+      metadata_path: "./fastlane/metadata",
+      submit_for_review: false,
+      automatic_release: false,
+      skip_screenshots: true
+    )
+
+    puts "✅ App Store 업로드 완료!"
+    puts "📱 App Store Connect에서 심사를 제출하세요."
+  end
+
   # 에러 핸들링
   error do |lane, exception|
     puts "❌ 에러 발생: #{exception.message}"

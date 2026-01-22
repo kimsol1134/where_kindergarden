@@ -1,0 +1,57 @@
+# Deliverfile - App Store Connect 배포 설정
+#
+# 사용법:
+#   cd ios/App && fastlane upload_metadata
+#   cd ios/App && fastlane release
+
+# 앱 식별자
+app_identifier(ENV["APP_IDENTIFIER"] || "com.solkim.kindergarden")
+
+# 메타데이터 경로
+metadata_path("./fastlane/metadata")
+
+# 스크린샷 경로 (아직 없음)
+# screenshots_path("./fastlane/screenshots")
+
+# 앱 버전 (Info.plist에서 자동 읽기)
+# app_version("1.0")
+
+# 기본 설정
+force(true)                          # 확인 프롬프트 건너뛰기
+skip_screenshots(true)               # 스크린샷 업로드 건너뛰기 (별도 관리)
+overwrite_screenshots(false)         # 기존 스크린샷 유지
+submit_for_review(false)             # 자동 심사 제출 비활성화
+automatic_release(false)             # 자동 출시 비활성화
+phased_release(true)                 # 단계적 출시 (심사 통과 후)
+
+# 앱 심사 정보
+app_review_information(
+  first_name: "Sol",
+  last_name: "Kim",
+  phone_number: "+82-10-XXXX-XXXX",        # TODO: 실제 연락처로 변경
+  email_address: "your-email@domain.com",   # TODO: 실제 이메일로 변경
+  demo_user: "",                            # 로그인 불필요
+  demo_password: "",
+  notes: <<-NOTE
+앱 테스트 방법:
+
+1. 앱 실행 시 위치 권한을 허용해 주세요.
+2. 홈 화면에서 "현재 위치로 검색" 버튼을 탭하면 주변 유치원 목록이 표시됩니다.
+3. 주소 검색도 가능합니다 (예: "강남구" 또는 "서울시청").
+4. 검색 결과에서 유치원을 선택하면 상세 정보를 볼 수 있습니다.
+5. 최대 3개 유치원을 선택 후 "비교하기" 버튼으로 비교표를 생성할 수 있습니다.
+
+참고사항:
+- 회원가입/로그인이 필요 없는 앱입니다.
+- 모든 데이터는 교육부 '유치원 알리미' 공공 API에서 제공됩니다.
+- 위치 정보는 검색 목적으로만 사용되며 서버에 저장되지 않습니다.
+
+테스트 위치 추천: 서울 강남구 (유치원 밀집 지역)
+NOTE
+)
+
+# 연령 등급 (4+)
+app_rating_config_path("./fastlane/rating_config.json")
+
+# 가격 (무료)
+price_tier(0)

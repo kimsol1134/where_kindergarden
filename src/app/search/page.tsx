@@ -6,10 +6,16 @@ import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
+import { PanelResizer } from '@/components/search/PanelResizer';
 import { useSearchStore, useCompareStore } from '@/stores';
 // Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
+
+/** 패널 너비 제한 (px) */
+const PANEL_MIN_WIDTH = 320;
+const PANEL_MAX_WIDTH = 700;
+const PANEL_DEFAULT_WIDTH = 450;
 
 /** 모바일 뷰 모드 타입 */
 type MobileViewMode = 'list' | 'map';
@@ -22,6 +28,9 @@ function SearchPageContent() {
 
   // 모바일에서 리스트/지도 뷰 전환 상태
   const [mobileView, setMobileView] = useState<MobileViewMode>('list');
+
+  // 데스크탑에서 패널 너비 상태
+  const [panelWidth, setPanelWidth] = useState(PANEL_DEFAULT_WIDTH);
 
   // Toast visibility and animation state
   const [isToastVisible, setIsToastVisible] = useState(false);
@@ -90,6 +99,13 @@ function SearchPageContent() {
         <KindergartenList
           mobileView={mobileView}
           onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+          panelWidth={panelWidth}
+        />
+        <PanelResizer
+          onResize={setPanelWidth}
+          minWidth={PANEL_MIN_WIDTH}
+          maxWidth={PANEL_MAX_WIDTH}
+          initialWidth={panelWidth}
         />
         <MapView
           mobileView={mobileView}

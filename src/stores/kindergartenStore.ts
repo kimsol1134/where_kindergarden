@@ -87,47 +87,24 @@ export const useKindergartenStore = create<KindergartenState & KindergartenActio
 
       // 이미 로드됨
       if (isLoaded) {
-         
-        console.log('[KindergartenStore] loadData: 이미 로드됨');
         return;
       }
 
       // 로딩 중이면 기존 Promise 대기
       if (isLoading && loadPromise) {
-         
-        console.log('[KindergartenStore] loadData: 로딩 중, 기존 Promise 대기');
         return loadPromise;
       }
-
-       
-      console.log('[KindergartenStore] loadData: 새 로드 시작');
 
       // 새 로드 시작
       const promise = (async () => {
         try {
-           
-          console.log('[KindergartenStore] Fetching /data/kindergartens.json');
-
           const response = await fetch('/data/kindergartens.json');
-
-           
-          console.log('[KindergartenStore] Response:', {
-            ok: response.ok,
-            status: response.status,
-            url: response.url,
-          });
 
           if (!response.ok) {
             throw new Error(`데이터 로드 실패: ${response.status}`);
           }
 
           const data: KindergartenRaw[] = await response.json();
-
-           
-          console.log('[KindergartenStore] 데이터 로드 완료:', {
-            dataCount: data.length,
-            sampleNames: data.slice(0, 3).map((d) => d.name),
-          });
 
           set({
             allData: data,
@@ -137,8 +114,6 @@ export const useKindergartenStore = create<KindergartenState & KindergartenActio
             loadPromise: null,
           });
         } catch (err) {
-           
-          console.error('[KindergartenStore] 로드 에러:', err);
           const errorMessage =
             err instanceof Error ? err.message : '데이터 로드 중 오류가 발생했습니다.';
           set({ error: errorMessage, isLoading: false, loadPromise: null });

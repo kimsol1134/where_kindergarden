@@ -29,9 +29,11 @@ type MobileViewMode = 'list' | 'map';
 interface KindergartenListProps {
   mobileView: MobileViewMode;
   onToggleMobileView: () => void;
+  /** 데스크탑에서 패널 너비 (px) */
+  panelWidth?: number;
 }
 
-export function KindergartenList({ mobileView, onToggleMobileView }: KindergartenListProps) {
+export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }: KindergartenListProps) {
   const {
     address,
     filters,
@@ -153,9 +155,10 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
 
   return (
     <aside
-      className={`w-full md:w-[450px] lg:w-[500px] bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0 ${
+      className={`w-full bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0 flex-shrink-0 ${
         isHiddenOnMobile ? '-translate-x-full md:translate-x-0' : 'translate-x-0'
       }`}
+      style={{ width: panelWidth ? `${panelWidth}px` : undefined }}
       id="listPanel"
     >
       {/* List Header */}
@@ -337,8 +340,10 @@ function KindergartenCard({
   return (
     <div
       onClick={onClick}
-      className={`bg-white rounded-2xl p-5 border shadow-[0_2px_8px_rgba(0,0,0,0.04)] relative group cursor-pointer transition-all hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 ${
-        isSelected ? 'border-emerald-500 ring-1 ring-emerald-500' : 'border-gray-100 hover:border-emerald-200'
+      className={`bg-white rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] relative group cursor-pointer transition-all hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 ${
+        isSelected
+          ? 'border-2 border-emerald-500 z-10'
+          : 'border border-gray-100 hover:border-emerald-200'
       }`}
     >
       <div className="absolute top-5 right-5 z-10">

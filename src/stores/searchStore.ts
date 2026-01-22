@@ -127,12 +127,7 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
   search: async () => {
     const { location, filters } = get();
 
-     
-    console.log('[SearchStore] search 시작:', { location, filters });
-
     if (!location) {
-       
-      console.log('[SearchStore] 위치 없음, 검색 중단');
       set({ error: '위치 정보가 필요합니다.' });
       return;
     }
@@ -143,27 +138,13 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
       // kindergartenStore에서 데이터 로드 확인
       const kindergartenStore = useKindergartenStore.getState();
 
-       
-      console.log('[SearchStore] kindergartenStore 상태:', {
-        isLoaded: kindergartenStore.isLoaded,
-        isLoading: kindergartenStore.isLoading,
-        error: kindergartenStore.error,
-      });
-
       if (!kindergartenStore.isLoaded) {
-         
-        console.log('[SearchStore] 데이터 로드 대기 중...');
         await kindergartenStore.loadData();
       }
 
       const allData = kindergartenStore.getAll();
 
-       
-      console.log('[SearchStore] 전체 데이터 수:', allData.length);
-
       if (allData.length === 0) {
-         
-        console.log('[SearchStore] 데이터가 비어있음');
         set({
           error: kindergartenStore.error || '데이터를 로드할 수 없습니다.',
           isLoading: false,
@@ -178,17 +159,6 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
       const results: Kindergarten[] = filtered.map(({ kindergarten }) => kindergarten);
       // 정렬은 getFilteredAndSortedResults()에서 처리
 
-       
-      console.log('[SearchStore] 반경 필터링 결과:', {
-        radius: filters.radius,
-        전체: allData.length,
-        반경내: results.length,
-        샘플거리: withDistance.slice(0, 5).map((d) => ({
-          name: d.kindergarten.name,
-          distance: d.rawDistance.toFixed(2),
-        })),
-      });
-
       set({
         results,
         totalCount: results.length,
@@ -196,8 +166,6 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
         error: null,
       });
     } catch (err) {
-       
-      console.error('[SearchStore] 검색 에러:', err);
       const errorMessage =
         err instanceof Error ? err.message : '검색 중 오류가 발생했습니다.';
       set({ error: errorMessage, isLoading: false });
@@ -293,35 +261,29 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
 
     // 클라이언트 측 필터링
     let filtered = results;
-    const filterLog: Record<string, number> = { 반경내: results.length };
 
     // 유형 필터 (공립/사립)
     if (filters.type !== 'all') {
       filtered = filtered.filter((k) => k.type === filters.type);
-      filterLog['유형필터후'] = filtered.length;
     }
 
     if (filters.hasBus !== null) {
       filtered = filtered.filter((k) => k.hasBus === filters.hasBus);
-      filterLog['버스필터후'] = filtered.length;
     }
 
     // 여유정원 필터 (capacity > currentCount)
     if (filters.hasVacancy === true) {
       filtered = filtered.filter((k) => k.capacity > k.currentCount);
-      filterLog['여유정원필터후'] = filtered.length;
     }
 
     // 실내놀이터 필터 (indoorPlaygroundArea > 0)
     if (filters.hasIndoorPlayground === true) {
       filtered = filtered.filter((k) => k.indoorPlaygroundArea > 0);
-      filterLog['실내놀이터필터후'] = filtered.length;
     }
 
     // 넓은 공간 필터 (areaPerChild >= 5)
     if (filters.hasLargeSpace === true) {
       filtered = filtered.filter((k) => k.areaPerChild >= 5);
-      filterLog['넓은공간필터후'] = filtered.length;
     }
 
     // 최신 건물 필터 (buildingYear >= 2010)
@@ -329,11 +291,7 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
       filtered = filtered.filter(
         (k) => k.buildingYear !== null && k.buildingYear >= 2010
       );
-      filterLog['최신건물필터후'] = filtered.length;
     }
-
-     
-    console.log('[SearchStore] 클라이언트 필터 파이프라인:', filterLog);
 
     // 정렬 (toSorted 사용 - 원본 배열 불변성 유지)
     const sorted = filtered.toSorted((a, b) => {
