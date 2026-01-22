@@ -2,7 +2,8 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react';
 import type { GeocodeResult, ApiResponse } from '@/types';
-import { useKindergartenStore, type KindergartenRaw } from '@/stores/kindergartenStore';
+import { useKindergartenStore } from '@/stores/kindergartenStore';
+import { getApiUrl } from '@/lib/api/config';
 
 /** 유치원 검색 결과 타입 */
 export interface KindergartenSearchResult {
@@ -120,7 +121,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
           mode: 'search',
         });
 
-        const response = await fetch(`/api/geocode?${params}`, {
+        const response = await fetch(getApiUrl(`/api/geocode?${params}`), {
           signal: abortController.signal,
         });
         const json: ApiResponse<GeocodeResult[]> = await response.json();

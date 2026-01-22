@@ -7,3 +7,5 @@ export {
   type ReverseGeocodeResult,
   type KakaoKeywordDocument,
 } from './kakaoApi';
+
+export { getApiBaseUrl, getApiUrl } from './config';

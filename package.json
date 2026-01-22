@@ -17,9 +17,22 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "check:api": "tsx scripts/check-api-data.ts",
-    "sync:kindergartens": "tsx scripts/sync-kindergartens.ts"
+    "sync:kindergartens": "tsx scripts/sync-kindergartens.ts",
+    "mobile": "pnpm build && npx cap sync",
+    "mobile:ios": "pnpm mobile && npx cap open ios",
+    "mobile:android": "pnpm mobile && npx cap open android"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.1",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/core": "^8.0.1",
+    "@capacitor/geolocation": "^8.0.0",
+    "@capacitor/ios": "^8.0.1",
+    "@capacitor/keyboard": "^8.0.0",
+    "@capacitor/preferences": "^8.0.0",
+    "@capacitor/share": "^8.0.0",
+    "@capacitor/splash-screen": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0",
     "@supabase/supabase-js": "^2.49.0",
     "@tanstack/react-virtual": "^3.13.18",
     "class-variance-authority": "^0.7.1",
@@ -33,6 +46,7 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.0.1",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/postcss": "^4",
     "@testing-library/dom": "^10.4.0",
