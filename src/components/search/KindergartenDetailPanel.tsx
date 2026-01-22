@@ -4,13 +4,11 @@ import {
   X,
   Phone,
   MapPin,
-  Users,
   Bus,
   Clock,
   Utensils,
   Building,
   Leaf,
-  GraduationCap,
   Calendar,
   Globe,
   Shield,
@@ -23,6 +21,7 @@ import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { DonutChart } from './charts/DonutChart';
 import { RatioBarChart } from './charts/RatioBarChart';
+import { useCompareStore } from '@/stores';
 
 // ... (previous imports remain, make sure to integrate properly)
 
@@ -90,6 +89,10 @@ export function KindergartenDetailPanel({
   canAddToCompare,
 }: KindergartenDetailPanelProps) {
   const typeStyle = TYPE_STYLES[kindergarten.type];
+
+  // CompareFloatingBar가 표시되는지 확인 (비교함에 아이템이 있을 때)
+  const compareItems = useCompareStore((state) => state.items);
+  const hasCompareBar = compareItems.length > 0;
   
   // 학급 수 데이터
   const totalClassCount =
@@ -517,8 +520,8 @@ export function KindergartenDetailPanel({
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="p-5 border-t border-gray-200 bg-white">
+        {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
+        <div className={`p-5 border-t border-gray-200 bg-white ${hasCompareBar ? 'pb-20' : ''}`}>
           <button
             onClick={onCompareToggle}
             disabled={!isInCompare && !canAddToCompare}
