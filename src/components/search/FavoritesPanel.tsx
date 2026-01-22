@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Heart,
   X,
@@ -46,6 +47,7 @@ interface FavoritesPanelProps {
 }
 
 export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
+  const router = useRouter();
   const { items, removeItem, clearAll } = useFavoriteStore();
   const { addItem: addToCompare, removeItem: removeFromCompare, isInCompare, canAdd: canAddToCompare } = useCompareStore();
 
@@ -158,7 +160,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     setSelectedItems(newSelected);
   };
 
-  // 선택된 아이템 모두 비교함에 추가
+  // 선택된 아이템 모두 비교함에 추가 후 비교 페이지로 이동
   const handleBulkCompare = useCallback(() => {
     const kindergartenStore = useKindergartenStore.getState();
     const location = useSearchStore.getState().location;
@@ -175,7 +177,9 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
 
     setSelectedItems(new Set());
     setIsSelectMode(false);
-  }, [selectedItems, addToCompare, isInCompare]);
+    onClose();
+    router.push('/compare');
+  }, [selectedItems, addToCompare, isInCompare, onClose, router]);
 
   // 선택 취소
   const handleCancelSelect = () => {
