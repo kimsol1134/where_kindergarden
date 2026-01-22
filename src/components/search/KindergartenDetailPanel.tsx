@@ -392,7 +392,11 @@ export function KindergartenDetailPanel({
               교육비용 정보
             </h4>
             <a
-              href={getKindergartenInfoUrl(kindergarten.kindercode)}
+              href={getKindergartenInfoUrl({
+                name: kindergarten.name,
+                sidoCode: kindergarten.sidoCode,
+                sigunguCode: kindergarten.sigunguCode,
+              })}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-amber-50 hover:bg-amber-100 rounded-lg p-4 transition-colors group"
@@ -408,7 +412,7 @@ export function KindergartenDetailPanel({
                       <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
                     </div>
                     <div className="text-xs text-gray-500">
-                      유치원 알리미에서 &apos;비용·회계&apos; 탭을 확인하세요
+                      유치원 알리미에서 상세 페이지 → 비용·회계 탭
                     </div>
                   </div>
                 </div>

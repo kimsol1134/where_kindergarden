@@ -23,6 +23,8 @@ export interface Kindergarten {
   lat: number;
   lng: number;
   distance: number; // km
+  sidoCode: string; // 시도 코드
+  sigunguCode: string; // 시군구 코드
 
   // 정원/현원
   capacity: number; // 정원

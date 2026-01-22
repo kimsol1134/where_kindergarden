@@ -35,6 +35,8 @@ export function transformToKindergartenWithDistance(
     lat: raw.lat,
     lng: raw.lng,
     distance,
+    sidoCode: raw.sido_code,
+    sigunguCode: raw.sigungu_code,
 
     // 정원/현원
     capacity: raw.capacity,

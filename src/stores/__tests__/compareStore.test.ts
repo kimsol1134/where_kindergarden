@@ -11,6 +11,8 @@ const createMockKindergarten = (id: string, name: string): Kindergarten => ({
   lat: 37.5,
   lng: 127.0,
   distance: 0.5,
+  sidoCode: '11',
+  sigunguCode: '11680',
   capacity: 100,
   currentCount: 90,
   classCountAge3: 2,
