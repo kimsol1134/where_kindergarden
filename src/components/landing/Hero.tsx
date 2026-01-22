@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <section className="relative safe-pt-hero pb-20 lg:pb-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-white"></div>
         <Image

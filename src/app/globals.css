@@ -163,6 +163,17 @@
   bottom: env(safe-area-inset-bottom, 0px);
 }
 
+/* Hero 섹션용 - safe area + 헤더 높이 고려 */
+.safe-pt-hero {
+  padding-top: calc(env(safe-area-inset-top, 0px) + 8rem);
+}
+
+@media (min-width: 1024px) {
+  .safe-pt-hero {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 12rem);
+  }
+}
+
 @keyframes fadeUp {
   to { opacity: 1; transform: translateY(0); }
 }

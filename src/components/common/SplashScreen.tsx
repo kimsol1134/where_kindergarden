@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+
 
 export function SplashScreen({ onFinished }: { onFinished?: () => void }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,16 +28,7 @@ export function SplashScreen({ onFinished }: { onFinished?: () => void }) {
       style={{ opacity }}
     >
       <div className="flex flex-col items-center animate-fade-up">
-        <div className="relative w-32 h-32 mb-8 rounded-[28px] overflow-hidden shadow-2xl shadow-emerald-500/20 animate-pulse-slow">
-           {/* Using the updated icon */}
-           <Image 
-             src="/icon.png" 
-             alt="App Icon" 
-             fill
-             className="object-cover"
-             priority
-           />
-        </div>
+        {/* Icon removed as requested to show only splash screen text/branding */}
         
         <h1 className="text-3xl font-bold text-gray-900 mb-2 tracking-tight">
           우리동네 유치원

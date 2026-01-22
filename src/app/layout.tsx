@@ -36,6 +36,14 @@ export const metadata: Metadata = {
       'naver-site-verification': 'e087398a93c79ec531bd7e5f9d5356da210c4b44',
     },
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: '우리동네 유치원',
+    startupImage: [
+      '/startup.png',
+    ],
+  },
 };
 
 

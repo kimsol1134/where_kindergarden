@@ -516,7 +516,8 @@ async function upsertToSupabase(
     const batch = records.slice(i, i + BATCH_SIZE);
 
     // raw_data 제외하고 저장 (DB 스키마에 맞게)
-    const dbRecords = batch.map(({ raw_data, ...rest }) => rest);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const dbRecords = batch.map(({ raw_data: _raw_data, ...rest }) => rest);
 
     const { error } = await supabase.from('kindergartens').upsert(dbRecords, {
       onConflict: 'kindercode',

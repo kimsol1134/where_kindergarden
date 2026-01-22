@@ -40,6 +40,7 @@ export function SearchHeader() {
 
   // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- 마운트 상태 추적은 의도적인 패턴
     setHasMounted(true);
   }, []);
 
