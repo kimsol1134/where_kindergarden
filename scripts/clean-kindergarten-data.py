@@ -70,33 +70,46 @@ def clean_kindergarten(item):
         'sido_code': item.get('sido_code'),
         'sigungu_code': item.get('sigungu_code'),
 
-        # 정원/현원 (기존)
-        'capacity': item.get('capacity'),
-        'current_count': item.get('current_count'),
+        # 정원: prmstfcnt(인가정원)가 있으면 사용, 없으면 연령별 합산
+        'capacity': parse_int(basic.get('prmstfcnt')) if basic.get('prmstfcnt') else (
+            parse_int(basic.get('ag3fpcnt')) +
+            parse_int(basic.get('ag4fpcnt')) +
+            parse_int(basic.get('ag5fpcnt')) +
+            parse_int(basic.get('mixfpcnt')) +
+            parse_int(basic.get('spcnfpcnt'))
+        ),
+        # 현원: 연령별 원아수 합산 (ppcnt* + shppcnt)
+        'current_count': (
+            parse_int(basic.get('ppcnt3')) +
+            parse_int(basic.get('ppcnt4')) +
+            parse_int(basic.get('ppcnt5')) +
+            parse_int(basic.get('mixppcnt')) +
+            parse_int(basic.get('shppcnt'))
+        ),
 
         # 연령별 학급수 (raw_data에서 추출)
         'class_count_age3': parse_int(basic.get('clcnt3')),
         'class_count_age4': parse_int(basic.get('clcnt4')),
         'class_count_age5': parse_int(basic.get('clcnt5')),
 
-        # 연령별 정원 (raw_data에서 추출)
-        'capacity_age3': parse_int(basic.get('ppcnt3')),
-        'capacity_age4': parse_int(basic.get('ppcnt4')),
-        'capacity_age5': parse_int(basic.get('ppcnt5')),
+        # 연령별 정원 (raw_data에서 추출) - ag*fpcnt가 정원
+        'capacity_age3': parse_int(basic.get('ag3fpcnt')),
+        'capacity_age4': parse_int(basic.get('ag4fpcnt')),
+        'capacity_age5': parse_int(basic.get('ag5fpcnt')),
 
-        # 연령별 현원 (raw_data에서 추출)
-        'current_age3': parse_int(basic.get('ag3fpcnt')),
-        'current_age4': parse_int(basic.get('ag4fpcnt')),
-        'current_age5': parse_int(basic.get('ag5fpcnt')),
+        # 연령별 현원 (raw_data에서 추출) - ppcnt*가 현원
+        'current_age3': parse_int(basic.get('ppcnt3')),
+        'current_age4': parse_int(basic.get('ppcnt4')),
+        'current_age5': parse_int(basic.get('ppcnt5')),
 
         # 혼합반 (raw_data에서 추출)
         'class_count_mix': parse_int(basic.get('mixclcnt')),
-        'capacity_mix': parse_int(basic.get('mixppcnt')),
-        'current_mix': parse_int(basic.get('mixfpcnt')),
+        'capacity_mix': parse_int(basic.get('mixfpcnt')),   # 정원
+        'current_mix': parse_int(basic.get('mixppcnt')),    # 현원
 
         # 특수학급 (raw_data에서 추출)
-        'capacity_special': parse_int(basic.get('shppcnt')),
-        'current_special': parse_int(basic.get('spcnfpcnt')),
+        'capacity_special': parse_int(basic.get('spcnfpcnt')),  # 정원
+        'current_special': parse_int(basic.get('shppcnt')),     # 현원
 
         # 설립일 (raw_data에서 추출)
         'establish_date': basic.get('edate'),

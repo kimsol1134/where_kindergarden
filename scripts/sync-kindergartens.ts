@@ -418,21 +418,23 @@ function transformData(
     const afterSchoolData = afterSchoolMap.get(basic.kindercode);
 
     // 정원 계산 (prmstfcnt가 있으면 사용, 없으면 개별 합산)
+    // ag*fpcnt = 정원수, spcnfpcnt = 특수학급 정원
     const capacity = basic.prmstfcnt
       ? parseInt(basic.prmstfcnt, 10)
-      : parseInt(basic.ppcnt3 || '0', 10) +
-        parseInt(basic.ppcnt4 || '0', 10) +
-        parseInt(basic.ppcnt5 || '0', 10) +
-        parseInt(basic.mixppcnt || '0', 10) +
-        parseInt(basic.shppcnt || '0', 10);
+      : parseInt(basic.ag3fpcnt || '0', 10) +
+        parseInt(basic.ag4fpcnt || '0', 10) +
+        parseInt(basic.ag5fpcnt || '0', 10) +
+        parseInt(basic.mixfpcnt || '0', 10) +
+        parseInt(basic.spcnfpcnt || '0', 10);
 
-    // 현원 계산 (연령별 현원 합산)
+    // 현원 계산 (연령별 원아수 합산)
+    // ppcnt* = 원아수(현원), shppcnt = 특수학급 현원
     const currentCount =
-      parseInt(basic.ag3fpcnt || '0', 10) +
-      parseInt(basic.ag4fpcnt || '0', 10) +
-      parseInt(basic.ag5fpcnt || '0', 10) +
-      parseInt(basic.mixfpcnt || '0', 10) +
-      parseInt(basic.spcnfpcnt || '0', 10);
+      parseInt(basic.ppcnt3 || '0', 10) +
+      parseInt(basic.ppcnt4 || '0', 10) +
+      parseInt(basic.ppcnt5 || '0', 10) +
+      parseInt(basic.mixppcnt || '0', 10) +
+      parseInt(basic.shppcnt || '0', 10);
 
     // 면적 계산
     const totalArea = parseArea(areaData?.clsrarea);
