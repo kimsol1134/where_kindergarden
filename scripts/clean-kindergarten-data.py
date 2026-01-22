@@ -70,8 +70,10 @@ def clean_kindergarten(item):
         'sido_code': item.get('sido_code'),
         'sigungu_code': item.get('sigungu_code'),
 
-        # 정원: prmstfcnt(인가정원)가 있으면 사용, 없으면 연령별 합산
-        'capacity': parse_int(basic.get('prmstfcnt')) if basic.get('prmstfcnt') else (
+        # 정원: prmstfcnt(인가정원)와 연령별 합산 중 큰 값 사용
+        # (일부 유치원에서 prmstfcnt가 실제 연령별 정원 합보다 작은 데이터 오류 존재)
+        'capacity': max(
+            parse_int(basic.get('prmstfcnt')),
             parse_int(basic.get('ag3fpcnt')) +
             parse_int(basic.get('ag4fpcnt')) +
             parse_int(basic.get('ag5fpcnt')) +

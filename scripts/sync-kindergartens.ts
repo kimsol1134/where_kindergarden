@@ -417,15 +417,16 @@ function transformData(
     const areaData = classAreaMap.get(basic.kindercode);
     const afterSchoolData = afterSchoolMap.get(basic.kindercode);
 
-    // 정원 계산 (prmstfcnt가 있으면 사용, 없으면 개별 합산)
-    // ag*fpcnt = 정원수, spcnfpcnt = 특수학급 정원
-    const capacity = basic.prmstfcnt
-      ? parseInt(basic.prmstfcnt, 10)
-      : parseInt(basic.ag3fpcnt || '0', 10) +
-        parseInt(basic.ag4fpcnt || '0', 10) +
-        parseInt(basic.ag5fpcnt || '0', 10) +
-        parseInt(basic.mixfpcnt || '0', 10) +
-        parseInt(basic.spcnfpcnt || '0', 10);
+    // 정원 계산: prmstfcnt(인가정원)와 연령별 합산 중 큰 값 사용
+    // (일부 유치원에서 prmstfcnt가 실제 연령별 정원 합보다 작은 데이터 오류 존재)
+    const prmstfcnt = basic.prmstfcnt ? parseInt(basic.prmstfcnt, 10) : 0;
+    const ageSum =
+      parseInt(basic.ag3fpcnt || '0', 10) +
+      parseInt(basic.ag4fpcnt || '0', 10) +
+      parseInt(basic.ag5fpcnt || '0', 10) +
+      parseInt(basic.mixfpcnt || '0', 10) +
+      parseInt(basic.spcnfpcnt || '0', 10);
+    const capacity = Math.max(prmstfcnt, ageSum);
 
     // 현원 계산 (연령별 원아수 합산)
     // ppcnt* = 원아수(현원), shppcnt = 특수학급 현원
