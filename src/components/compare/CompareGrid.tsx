@@ -31,6 +31,13 @@ export function CompareGrid({ items }: CompareGridProps) {
       ? 'grid-cols-[100px_repeat(3,1fr)] sm:grid-cols-[140px_repeat(3,1fr)]'
       : 'grid-cols-[100px_repeat(2,1fr)] sm:grid-cols-[140px_repeat(2,1fr)]';
 
+  // 베스트 조건 계산
+  const minDistance = Math.min(...items.map((i) => i.distance));
+  const maxArea = Math.max(...items.map((i) => i.areaPerChild));
+  const maxBusCount = Math.max(...items.map((i) => (i.hasBus ? i.busCount : 0)));
+
+  const highlightClass = 'bg-emerald-50 text-emerald-700 font-bold';
+
   return (
     <>
       {/* 헤더: 기관 카드들 */}
@@ -74,7 +81,13 @@ export function CompareGrid({ items }: CompareGridProps) {
                     {typeStyle.label}
                   </span>
                   <h3 className="text-sm font-bold truncate w-full">{item.name}</h3>
-                  <p className="text-[10px] text-gray-400 mt-1">{item.distance.toFixed(1)}km</p>
+                  <div
+                    className={`mt-1 px-2 py-0.5 rounded text-[10px] ${
+                      item.distance === minDistance ? 'bg-emerald-50 text-emerald-700 font-bold' : 'text-gray-400'
+                    }`}
+                  >
+                    {item.distance.toFixed(1)}km
+                  </div>
                 </div>
               </div>
             );
@@ -110,7 +123,12 @@ export function CompareGrid({ items }: CompareGridProps) {
 
           <CompareRow label="1인당 면적" gridCols={gridCols}>
             {items.map((item) => (
-              <div key={item.kindercode} className="p-4 text-sm text-center">
+              <div
+                key={item.kindercode}
+                className={`p-4 text-sm text-center flex items-center justify-center ${
+                  item.areaPerChild === maxArea && item.areaPerChild > 0 ? highlightClass : ''
+                }`}
+              >
                 {item.areaPerChild > 0 ? `${item.areaPerChild.toFixed(1)}㎡` : '-'}
               </div>
             ))}
@@ -121,11 +139,16 @@ export function CompareGrid({ items }: CompareGridProps) {
         <CompareSection icon={<BookOpen className="w-3.5 h-3.5" />} title="교육 및 활동">
           <CompareRow label="방과후 과정" gridCols={gridCols}>
             {items.map((item) => (
-              <div key={item.kindercode} className="p-4 text-sm text-center">
+              <div
+                key={item.kindercode}
+                className={`p-4 text-sm text-center flex items-center justify-center ${
+                  item.hasAfterSchool ? highlightClass : ''
+                }`}
+              >
                 {item.hasAfterSchool ? (
-                  <span className="text-emerald-600 font-bold">운영</span>
+                  <span>운영</span>
                 ) : (
-                  <span className="text-gray-400">미운영</span>
+                  <span className="text-gray-400 font-normal">미운영</span>
                 )}
               </div>
             ))}
@@ -135,24 +158,37 @@ export function CompareGrid({ items }: CompareGridProps) {
         {/* Section: 시설 및 안전 */}
         <CompareSection icon={<ShieldCheck className="w-3.5 h-3.5" />} title="시설 및 안전">
           <CompareRow label="통학차량" gridCols={gridCols}>
-            {items.map((item) => (
-              <div key={item.kindercode} className="p-4 text-sm text-center">
-                {item.hasBus ? (
-                  <span className="text-emerald-600 font-bold">{item.busCount}대 운영</span>
-                ) : (
-                  <span className="text-gray-400">미운영</span>
-                )}
-              </div>
-            ))}
+            {items.map((item) => {
+              const isBestBus = item.hasBus && (maxBusCount > 0 ? item.busCount === maxBusCount : true);
+              return (
+                <div
+                  key={item.kindercode}
+                  className={`p-4 text-sm text-center flex items-center justify-center ${
+                    isBestBus ? highlightClass : ''
+                  }`}
+                >
+                  {item.hasBus ? (
+                    <span>{item.busCount}대 운영</span>
+                  ) : (
+                    <span className="text-gray-400 font-normal">미운영</span>
+                  )}
+                </div>
+              );
+            })}
           </CompareRow>
 
           <CompareRow label="실외놀이터" gridCols={gridCols}>
             {items.map((item) => (
-              <div key={item.kindercode} className="p-4 text-sm text-center">
+              <div
+                key={item.kindercode}
+                className={`p-4 text-sm text-center flex items-center justify-center ${
+                  item.hasPlayground ? highlightClass : ''
+                }`}
+              >
                 {item.hasPlayground ? (
-                  <span className="text-emerald-600 font-bold">있음</span>
+                  <span>있음</span>
                 ) : (
-                  <span className="text-gray-400">없음</span>
+                  <span className="text-gray-400 font-normal">없음</span>
                 )}
               </div>
             ))}
@@ -160,7 +196,12 @@ export function CompareGrid({ items }: CompareGridProps) {
 
           <CompareRow label="급식 정보" gridCols={gridCols}>
             {items.map((item) => (
-              <div key={item.kindercode} className="p-4 text-sm text-center">
+              <div
+                key={item.kindercode}
+                className={`p-4 text-sm text-center flex items-center justify-center ${
+                  item.mealType === 'direct' ? highlightClass : ''
+                }`}
+              >
                 {MEAL_TYPE_LABELS[item.mealType]}
               </div>
             ))}
