@@ -190,7 +190,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     setState((prev) => ({
       ...prev,
       selectedAddress: address,
-      query: address.address,
+      query: address.placeName || address.address,
       suggestions: [],
       kindergartenSuggestions: [],
       isOpen: false,

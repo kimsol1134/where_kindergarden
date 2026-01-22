@@ -14,7 +14,7 @@ export interface Coordinates {
   lng: number;
 }
 
-/** 유치원/어린이집 기본 정보 */
+/** 유치원 기본 정보 */
 export interface Kindergarten {
   kindercode: string;
   name: string;

@@ -42,6 +42,36 @@ interface KakaoCoord2RegionResponse {
   };
 }
 
+// 키워드 검색 API 관련 인터페이스
+export interface KakaoKeywordDocument {
+  id: string;
+  place_name: string;
+  category_name: string;
+  category_group_code: string;
+  category_group_name: string;
+  phone: string;
+  address_name: string;
+  road_address_name: string;
+  x: string; // longitude
+  y: string; // latitude
+  place_url: string;
+  distance: string;
+}
+
+interface KakaoKeywordResponse {
+  documents: KakaoKeywordDocument[];
+  meta: {
+    total_count: number;
+    pageable_count: number;
+    is_end: boolean;
+    same_name: {
+      region: string[];
+      keyword: string;
+      selected_region: string;
+    };
+  };
+}
+
 export interface GeocodeResult {
   lat: number;
   lng: number;
@@ -181,5 +211,37 @@ export async function searchAddress(query: string): Promise<KakaoAddressDocument
   }
 
   const data: KakaoAddressResponse = await response.json();
+  return data.documents;
+}
+
+/**
+ * 키워드 검색 (주소, 장소명, 아파트 이름 등)
+ */
+export async function searchKeyword(query: string): Promise<KakaoKeywordDocument[]> {
+  const apiKey = process.env.KAKAO_REST_API_KEY;
+
+  if (!apiKey) {
+    throw new Error('KAKAO_REST_API_KEY is not configured');
+  }
+
+  const params = new URLSearchParams({
+    query,
+    size: '10',
+  });
+
+  const response = await fetch(
+    `https://dapi.kakao.com/v2/local/search/keyword.json?${params.toString()}`,
+    {
+      headers: {
+        Authorization: `KakaoAK ${apiKey}`,
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`Kakao API request failed: ${response.status}`);
+  }
+
+  const data: KakaoKeywordResponse = await response.json();
   return data.documents;
 }

@@ -2,6 +2,7 @@
 
 import { useRef, useCallback, useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Search,
   X,
@@ -175,9 +176,13 @@ export function SearchHeader() {
       <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
-            <KindergartenIcon className="w-5 h-5" />
-          </div>
+          <Image
+            src="/logo.png"
+            alt="우리동네 유치원"
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
           <span className="text-lg font-bold tracking-tight text-gray-900 hidden md:block">
             우리동네 유치원
           </span>
@@ -299,7 +304,7 @@ export function SearchHeader() {
                                   ? 'bg-emerald-100 text-emerald-700'
                                   : 'bg-indigo-100 text-indigo-700'
                               }`}>
-                                {kindergarten.type === 'public' ? '공립' : '사립'}
+                                {kindergarten.type === 'public' ? '국공립' : '사립'}
                               </span>
                             </button>
                           </li>
@@ -403,7 +408,7 @@ export function SearchHeader() {
               : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
           }`}
         >
-          유형: {filters.type === 'all' ? '전체' : filters.type === 'public' ? '공립' : '사립'}
+          유형: {filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}
           <ChevronDown className={`w-3 h-3 transition-transform ${isTypeOpen ? 'rotate-180' : ''}`} />
         </button>
 
@@ -557,7 +562,7 @@ export function SearchHeader() {
             <div className="space-y-2">
               {[
                 { value: 'all', label: '전체' },
-                { value: 'public', label: '공립' },
+                { value: 'public', label: '국공립' },
                 { value: 'private', label: '사립' },
               ].map((option) => (
                 <button
@@ -593,7 +598,7 @@ export function SearchHeader() {
                 filters.type === 'public' ? 'text-emerald-600 font-bold' : 'text-gray-700'
               }`}
             >
-              공립
+              국공립
             </button>
             <button
               onClick={() => handleTypeChange('private')}

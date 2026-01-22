@@ -35,7 +35,7 @@ export function Features() {
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-bold text-gray-900">역삼유치원</h3>
-                        <span className="text-xs text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded font-medium">공립</span>
+                        <span className="text-xs text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded font-medium">국공립</span>
                         <span className="text-xs text-gray-500 ml-1">0.3km</span>
                       </div>
                     </div>
@@ -58,8 +58,8 @@ export function Features() {
                   <div className="pl-8">
                     <div className="flex justify-between items-start mb-2">
                       <div>
-                        <h3 className="font-bold text-gray-900">해맑은어린이집</h3>
-                        <span className="text-xs text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded font-medium">민간</span>
+                        <h3 className="font-bold text-gray-900">해맑은유치원</h3>
+                        <span className="text-xs text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded font-medium">사립</span>
                         <span className="text-xs text-gray-500 ml-1">0.5km</span>
                       </div>
                     </div>
@@ -103,13 +103,13 @@ export function Features() {
                 <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Check className="w-4 h-4 text-emerald-600" />
                 </div>
-                <span className="text-gray-700"><strong>위치 기반 검색:</strong> 집 근처 유치원/어린이집을 거리순으로 확인</span>
+                <span className="text-gray-700"><strong>위치 기반 검색:</strong> 집 근처 유치원을 거리순으로 확인</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Check className="w-4 h-4 text-emerald-600" />
                 </div>
-                <span className="text-gray-700"><strong>유형별 필터:</strong> 국공립, 사립, 민간 등 원하는 유형만 골라보기</span>
+                <span className="text-gray-700"><strong>유형별 필터:</strong> 국공립, 사립 등 원하는 유형만 골라보기</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -176,8 +176,8 @@ export function Features() {
                   <tbody className="divide-y divide-gray-50">
                     <tr>
                       <td className="p-4 bg-gray-50/50 text-gray-500">유형</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">공립</td>
-                      <td className="p-4 text-gray-700">민간</td>
+                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">국공립</td>
+                      <td className="p-4 text-gray-700">사립</td>
                       <td className="p-4 text-gray-700">사립</td>
                     </tr>
                     <tr>

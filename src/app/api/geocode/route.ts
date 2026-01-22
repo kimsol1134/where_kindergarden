@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { geocodeAddress, searchAddress } from '@/lib/api';
+import { geocodeAddress, searchKeyword } from '@/lib/api';
 import type { ApiResponse, GeocodeResult } from '@/types';
 
 export const dynamic = 'force-dynamic';
@@ -23,19 +23,17 @@ export async function GET(
     }
 
     if (mode === 'search') {
-      // 주소 검색 자동완성
-      const results = await searchAddress(query);
+      // 키워드 검색 (주소, 아파트, 장소 이름 등)
+      const results = await searchKeyword(query);
 
-      const geocodeResults: GeocodeResult[] = results.map((doc) => {
-        const hCode = doc.address?.h_code || '';
-        return {
-          lat: parseFloat(doc.y),
-          lng: parseFloat(doc.x),
-          address: doc.address_name,
-          sidoCode: hCode.substring(0, 2),
-          sigunguCode: hCode.substring(0, 5),
-        };
-      });
+      const geocodeResults: GeocodeResult[] = results.map((doc) => ({
+        lat: parseFloat(doc.y),
+        lng: parseFloat(doc.x),
+        address: doc.road_address_name || doc.address_name,
+        placeName: doc.place_name,
+        sidoCode: '', // 키워드 검색에서는 행정코드 제공 안 함
+        sigunguCode: '',
+      }));
 
       return NextResponse.json({
         success: true,

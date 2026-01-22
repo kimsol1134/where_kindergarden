@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { School, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Footer } from '@/components/landing/Footer';
+import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 
 export const metadata: Metadata = {
   title: '개인정보처리방침 - 우리동네 유치원',
@@ -24,7 +25,7 @@ export default function PrivacyPage() {
             </Link>
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
-                <School className="w-5 h-5" />
+                <KindergartenIcon className="w-5 h-5" />
               </div>
               <span className="text-xl font-bold tracking-tight text-gray-900">
                 우리동네 유치원
@@ -71,7 +72,7 @@ export default function PrivacyPage() {
                 2. 개인정보 수집 목적
               </h2>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>주변 유치원/어린이집 검색 서비스 제공</li>
+                <li>주변 유치원 검색 서비스 제공</li>
                 <li>거리 기반 검색 결과 정렬</li>
                 <li>반경 필터(1km, 2km, 5km) 적용</li>
               </ul>
@@ -101,7 +102,7 @@ export default function PrivacyPage() {
                 5. 유치원 데이터 출처
               </h2>
               <p className="text-gray-600 mb-4">
-                서비스에서 제공하는 유치원/어린이집 정보는 다음 출처에서
+                서비스에서 제공하는 유치원 정보는 다음 출처에서
                 수집됩니다:
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
@@ -159,7 +160,7 @@ export default function PrivacyPage() {
             </section>
 
             <p className="text-gray-500 text-sm mt-12">
-              시행일: 2024년 1월 1일
+              시행일: 2026년 1월 22일
             </p>
           </div>
         </div>

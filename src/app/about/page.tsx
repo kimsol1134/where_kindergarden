@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
-  School,
   ArrowLeft,
   MapPin,
   Filter,
@@ -11,6 +10,7 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { Footer } from '@/components/landing/Footer';
+import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 
 export const metadata: Metadata = {
   title: '서비스 소개 - 우리동네 유치원',
@@ -57,7 +57,7 @@ export default function AboutPage() {
             </Link>
             <Link href="/" className="flex items-center gap-2">
               <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
-                <School className="w-5 h-5" />
+                <KindergartenIcon className="w-5 h-5" />
               </div>
               <span className="text-xl font-bold tracking-tight text-gray-900">
                 우리동네 유치원

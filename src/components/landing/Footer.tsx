@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { School, Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { DATA_VERSION } from '@/lib/constants';
 
 export function Footer() {
@@ -10,12 +10,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4 text-white">
-              <School className="w-6 h-6 text-emerald-500" />
+              <Image
+                src="/logo.png"
+                alt="우리동네 유치원"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="text-xl font-bold">우리동네 유치원</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
               학부모님들의 현명한 선택을 돕기 위해 만든<br/>
-              위치 기반 유치원/어린이집 비교 서비스입니다.
+              위치 기반 유치원 비교 서비스입니다.
             </p>
           </div>
           <div>
@@ -30,7 +36,7 @@ export function Footer() {
             <h4 className="text-white font-bold mb-4">문의</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="#" className="hover:text-emerald-500">자주 묻는 질문</Link></li>
-              <li><Link href="#" className="hover:text-emerald-500">제휴 문의</Link></li>
+              <li><Link href="mailto:kimsol1134@naver.com" className="hover:text-emerald-500">제휴 문의</Link></li>
               <li><Link href="/privacy" className="hover:text-emerald-500">개인정보처리방침</Link></li>
             </ul>
           </div>
@@ -53,7 +59,18 @@ export function Footer() {
           
           <div className="flex flex-col md:flex-row justify-between items-center text-xs gap-4">
             <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-              <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
+              <p>
+                &copy; 2026{' '}
+                <a 
+                  href="https://litt.ly/solkim" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white underline"
+                >
+                  solkim
+                </a>
+                . All rights reserved.
+              </p>
               <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
               <p className="text-gray-500">
                 데이터 출처:{' '}

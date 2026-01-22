@@ -9,8 +9,8 @@ export function Stats() {
             <div className="text-emerald-100">등록된 유치원</div>
           </div>
           <div className="p-6 border-t md:border-t-0 md:border-l border-emerald-800">
-            <div className="text-4xl font-bold mb-2 text-emerald-400">17개 시/도</div>
-            <div className="text-emerald-100">전국 유치원 정보 보유</div>
+            <div className="text-4xl font-bold mb-2 text-emerald-400">전국 17개 시/도</div>
+            <div className="text-emerald-100">유치원 정보 보유</div>
           </div>
           <div className="p-6 border-t md:border-t-0 md:border-l border-emerald-800">
             <div className="text-4xl font-bold mb-2 text-emerald-400">무료</div>

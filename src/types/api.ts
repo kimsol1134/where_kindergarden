@@ -27,6 +27,7 @@ export interface GeocodeResult {
   lat: number;
   lng: number;
   address: string;
+  placeName?: string; // 장소명 (아파트, 건물 등)
   sidoCode: string;
   sigunguCode: string;
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Search } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -32,7 +32,7 @@ export function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-up delay-200">
-          위치 기반으로 주변 유치원과 어린이집을 검색하고,<br className="hidden md:block" /> 
+          위치 기반으로 주변 유치원을 검색하고,<br className="hidden md:block" /> 
           시설부터 교육 프로그램까지 한눈에 비교하세요.
         </p>
 
@@ -44,13 +44,7 @@ export function Hero() {
             <MapPin className="w-5 h-5 group-hover:scale-110 transition-transform" />
             내 주변 유치원 찾기
           </Link>
-          <Link 
-            href="/search" 
-            className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2"
-          >
-            <Search className="w-5 h-5" />
-            주소로 검색하기
-          </Link>
+
         </div>
         
         <p className="mt-4 text-sm text-gray-500 animate-fade-up delay-300">
