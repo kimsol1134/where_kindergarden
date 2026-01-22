@@ -16,8 +16,11 @@ import {
   Shield,
   Home,
   SquareStack,
+  ExternalLink,
+  Coins,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
+import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
@@ -208,24 +211,18 @@ export function KindergartenDetailPanel({
               <div className="grid grid-cols-3 gap-2 text-center">
                 <div className="bg-white rounded-md p-2">
                   <div className="text-xs text-gray-500 mb-1">만 3세</div>
-                  <div className="text-sm font-bold text-gray-900">
-                    {kindergarten.currentAge3}/{kindergarten.capacityAge3}
-                  </div>
-                  <div className="text-[10px] text-gray-400">{kindergarten.classCountAge3}학급</div>
+                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge3}명</div>
+                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge3} · {kindergarten.classCountAge3}학급</div>
                 </div>
                 <div className="bg-white rounded-md p-2">
                   <div className="text-xs text-gray-500 mb-1">만 4세</div>
-                  <div className="text-sm font-bold text-gray-900">
-                    {kindergarten.currentAge4}/{kindergarten.capacityAge4}
-                  </div>
-                  <div className="text-[10px] text-gray-400">{kindergarten.classCountAge4}학급</div>
+                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge4}명</div>
+                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge4} · {kindergarten.classCountAge4}학급</div>
                 </div>
                 <div className="bg-white rounded-md p-2">
                   <div className="text-xs text-gray-500 mb-1">만 5세</div>
-                  <div className="text-sm font-bold text-gray-900">
-                    {kindergarten.currentAge5}/{kindergarten.capacityAge5}
-                  </div>
-                  <div className="text-[10px] text-gray-400">{kindergarten.classCountAge5}학급</div>
+                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge5}명</div>
+                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge5} · {kindergarten.classCountAge5}학급</div>
                 </div>
               </div>
             </div>
@@ -242,18 +239,15 @@ export function KindergartenDetailPanel({
                   {(kindergarten.capacityMix > 0 || kindergarten.currentMix > 0) && (
                     <div className="bg-white rounded-md p-2">
                       <div className="text-xs text-amber-600 mb-1">혼합반</div>
-                      <div className="text-sm font-bold text-gray-900">
-                        {kindergarten.currentMix}/{kindergarten.capacityMix}
-                      </div>
-                      <div className="text-[10px] text-gray-400">{kindergarten.classCountMix}학급</div>
+                      <div className="text-lg font-bold text-emerald-600">{kindergarten.currentMix}명</div>
+                      <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityMix} · {kindergarten.classCountMix}학급</div>
                     </div>
                   )}
                   {(kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0) && (
                     <div className="bg-white rounded-md p-2">
                       <div className="text-xs text-purple-600 mb-1">특수학급</div>
-                      <div className="text-sm font-bold text-gray-900">
-                        {kindergarten.currentSpecial}/{kindergarten.capacitySpecial}
-                      </div>
+                      <div className="text-lg font-bold text-emerald-600">{kindergarten.currentSpecial}명</div>
+                      <div className="text-[10px] text-gray-400">정원 {kindergarten.capacitySpecial}</div>
                     </div>
                   )}
                 </div>
@@ -389,6 +383,37 @@ export function KindergartenDetailPanel({
               </div>
               <div className="text-2xl font-bold text-blue-600">{kindergarten.cctvCount}대</div>
             </div>
+          </div>
+
+          {/* 교육비용 정보 (외부 링크) */}
+          <div className="p-5 border-b border-gray-100">
+            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <Coins className="w-4 h-4 text-emerald-600" />
+              교육비용 정보
+            </h4>
+            <a
+              href={getKindergartenInfoUrl(kindergarten.kindercode)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-amber-50 hover:bg-amber-100 rounded-lg p-4 transition-colors group"
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-amber-100 group-hover:bg-amber-200 rounded-full flex items-center justify-center transition-colors">
+                    <Coins className="w-5 h-5 text-amber-600" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-gray-900 flex items-center gap-1">
+                      교육비용 확인하기
+                      <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      유치원 알리미에서 &apos;비용·회계&apos; 탭을 확인하세요
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
