@@ -155,10 +155,10 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
 
   return (
     <aside
-      className={`w-full bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0 flex-shrink-0 ${
+      className={`max-md:!w-full bg-white flex flex-col border-r border-gray-200 z-20 absolute md:relative h-full transition-transform duration-300 transform md:translate-x-0 flex-shrink-0 ${
         isHiddenOnMobile ? '-translate-x-full md:translate-x-0' : 'translate-x-0'
       }`}
-      style={{ width: panelWidth ? `${panelWidth}px` : undefined }}
+      style={{ width: panelWidth ?? 450 }}
       id="listPanel"
     >
       {/* List Header */}
