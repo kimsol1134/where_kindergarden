@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { School, Instagram, Facebook, MessageCircle } from 'lucide-react';
 import { DATA_VERSION } from '@/lib/constants';
 
@@ -34,27 +35,44 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
-            <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
-            <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
-            <p className="text-gray-500">
-              데이터 출처:{' '}
-              <a
-                href="https://e-childschoolinfo.moe.go.kr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-emerald-500 transition-colors"
-              >
-                유치원 알리미
-              </a>
-              (교육부)
+
+        <div className="border-t border-gray-800 pt-8 mt-8">
+          <div className="flex items-start gap-3 mb-6">
+            <Image 
+              src="/images/kogl_type1.jpg" 
+              alt="공공누리 제1유형" 
+              width={80} 
+              height={40}
+              className="w-16 h-auto"
+            />
+            <p className="text-[10px] text-gray-500 leading-relaxed">
+              본 저작물은 '교육부'에서 '2026년' 작성하여 공공누리 제1유형으로 개방한 '전국유치원표준데이터'를 이용하였으며,
+              해당 저작물은 <a href="https://e-childschoolinfo.moe.go.kr" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 underline">유치원 알리미</a>에서 무료로 다운받으실 수 있습니다.
             </p>
           </div>
-          <div className="flex gap-4">
-            <Link href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></Link>
-            <Link href="#" className="hover:text-white"><Facebook className="w-5 h-5" /></Link>
-            <Link href="#" className="hover:text-white"><MessageCircle className="w-5 h-5" /></Link>
+          
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <p>&copy; 2024 우리동네 유치원. All rights reserved.</p>
+              <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
+              <p className="text-gray-500">
+                데이터 출처:{' '}
+                <a
+                  href="https://e-childschoolinfo.moe.go.kr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-500 transition-colors"
+                >
+                  유치원 알리미
+                </a>
+                (교육부)
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <Link href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></Link>
+              <Link href="#" className="hover:text-white"><Facebook className="w-5 h-5" /></Link>
+              <Link href="#" className="hover:text-white"><MessageCircle className="w-5 h-5" /></Link>
+            </div>
           </div>
         </div>
       </div>

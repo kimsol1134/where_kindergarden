@@ -313,6 +313,47 @@ export function KindergartenDetailPanel({
                   </div>
                </div>
             </div>
+
+            {/* 특수/혼합 학급 세부 정보 */}
+            {(kindergarten.classCountMix > 0 || kindergarten.currentSpecial > 0) && (
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {kindergarten.classCountMix > 0 && (
+                  <div className="bg-violet-50 rounded-xl p-5 border border-violet-100 flex flex-col justify-between h-28 relative overflow-hidden">
+                    <div className="relative z-10">
+                      <div className="text-sm font-bold text-violet-900 mb-1 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-violet-500"></span>
+                        혼합반
+                      </div>
+                      <div className="flex items-end gap-1.5">
+                        <span className="text-2xl font-bold text-violet-700">{kindergarten.currentMix}명</span>
+                        <span className="text-xs text-violet-500 mb-1.5">/ 정원 {kindergarten.capacityMix}명</span>
+                      </div>
+                    </div>
+                    <div className="relative z-10 text-xs text-violet-600 font-medium bg-white/60 w-fit px-2 py-1 rounded">
+                      총 {kindergarten.classCountMix}학급
+                    </div>
+                  </div>
+                )}
+                
+                {kindergarten.currentSpecial > 0 && (
+                  <div className="bg-pink-50 rounded-xl p-5 border border-pink-100 flex flex-col justify-between h-28 relative overflow-hidden">
+                    <div className="relative z-10">
+                      <div className="text-sm font-bold text-pink-900 mb-1 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-pink-500"></span>
+                        특수학급
+                      </div>
+                      <div className="flex items-end gap-1.5">
+                        <span className="text-2xl font-bold text-pink-700">{kindergarten.currentSpecial}명</span>
+                        <span className="text-xs text-pink-500 mb-1.5">/ 정원 {kindergarten.capacitySpecial}명</span>
+                      </div>
+                    </div>
+                    <div className="relative z-10 text-xs text-pink-600 font-medium bg-white/60 w-fit px-2 py-1 rounded">
+                      특수교육 대상자
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* 교사 현황 시각화 */}
@@ -322,7 +363,7 @@ export function KindergartenDetailPanel({
               교사현황
             </h4>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="max-w-xs mx-auto">
               {/* 교사 자격 차트 */}
               <div className="bg-white rounded-xl">
                 <DonutChart 
@@ -333,17 +374,6 @@ export function KindergartenDetailPanel({
                   totalUnit="명"
                   valueUnit="명"
                 />
-              </div>
-
-              {/* 근속 연수 (데이터 없음) - 대신 정보 표시 */}
-              <div className="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl text-center h-full min-h-[250px]">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-3">
-                  <GraduationCap className="w-6 h-6 text-gray-400" />
-                </div>
-                <h5 className="font-bold text-gray-900 mb-1">근속 연수 데이터 미제공</h5>
-                <p className="text-sm text-gray-500 word-keep-all">
-                  현재 데이터 제공처에서 교사의 근속 연수 정보를 제공하지 않고 있습니다.
-                </p>
               </div>
             </div>
           </div>

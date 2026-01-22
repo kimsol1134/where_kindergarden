@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback } from 'react';
-import { Heart, ChevronDown, Loader2, SearchX, School, MapPin } from 'lucide-react';
+import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
@@ -247,95 +247,89 @@ function KindergartenCard({
   return (
     <div
       onClick={onClick}
-      className={`bg-white rounded-xl p-4 border shadow-sm relative group cursor-pointer transition-all hover:shadow-lg ${
-        isSelected ? 'border-emerald-500 shadow-md' : 'border-gray-200 hover:border-emerald-400'
+      className={`bg-white rounded-2xl p-5 border shadow-[0_2px_8px_rgba(0,0,0,0.04)] relative group cursor-pointer transition-all hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 ${
+        isSelected ? 'border-emerald-500 ring-1 ring-emerald-500' : 'border-gray-100 hover:border-emerald-200'
       }`}
     >
-      <div className="absolute top-4 right-4">
+      <div className="absolute top-5 right-5 z-10">
         <button
           onClick={(e) => {
             e.stopPropagation();
             // 찜하기 기능 (미구현)
           }}
-          className="text-gray-300 hover:text-red-500 transition-colors"
+          className="text-gray-300 hover:text-red-500 transition-colors p-1"
         >
           <Heart className="w-5 h-5" />
         </button>
       </div>
 
-      <div className="flex gap-4">
-        {/* 썸네일 */}
-        <div className={`w-20 h-20 rounded-2xl flex-shrink-0 flex items-center justify-center transition-colors border ${
-          kindergarten.type === 'private' ? 'bg-indigo-50/50 border-indigo-100' : 
-          kindergarten.type === 'public' ? 'bg-emerald-50/50 border-emerald-100' : 'bg-gray-50 border-gray-100'
-        }`}>
-          <School 
-            className={`w-9 h-9 ${
-              kindergarten.type === 'private' ? 'text-indigo-500' : 
-              kindergarten.type === 'public' ? 'text-emerald-500' : 'text-gray-400'
-            }`} 
-            strokeWidth={1.25} 
-          />
-        </div>
-
-        <div className="flex-1 min-w-0">
-          {/* 기관 유형 + 이름 */}
-          <div className="flex items-center gap-2 mb-1">
-            <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${typeStyle.className}`}>
+      <div className="flex flex-col gap-3">
+        {/* 헤더: 유형 + 이름 */}
+        <div>
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full tracking-wide ${typeStyle.className}`}>
               {typeStyle.label}
             </span>
-            <h3 className="font-bold text-gray-900 text-lg truncate">{kindergarten.name}</h3>
           </div>
-
-          {/* 정보 */}
-          <div className="flex items-center gap-2 text-xs text-gray-500 mb-2">
-            <span>{kindergarten.distance.toFixed(1)}km</span>
-            <span className="text-gray-300">|</span>
-            <span>정원 {kindergarten.capacity}명</span>
-            <span className="text-gray-300">|</span>
-            <span>현원 {kindergarten.currentCount}명</span>
-          </div>
-
-          {/* 태그들 */}
-          <div className="flex gap-1 flex-wrap">
-            {kindergarten.hasAfterSchool && (
-              <span className="px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 text-[10px]">
-                방과후과정
-              </span>
-            )}
-            {kindergarten.hasBus && (
-              <span className="px-1.5 py-0.5 rounded border border-emerald-200 bg-emerald-50/50 text-emerald-600 text-[10px]">
-                셔틀운행 ({kindergarten.busCount}대)
-              </span>
-            )}
-            {kindergarten.hasPlayground && (
-              <span className="px-1.5 py-0.5 rounded border border-gray-200 text-gray-500 text-[10px]">
-                실외놀이터
-              </span>
-            )}
-          </div>
+          <h3 className="font-bold text-gray-900 text-xl tracking-tight leading-snug pr-8">
+            {kindergarten.name}
+          </h3>
         </div>
-      </div>
 
-      {/* 하단: 주소 + 비교함 버튼 */}
-      <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-        <div className="text-xs text-gray-400 truncate max-w-[60%]">{kindergarten.address}</div>
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onCompareToggle();
-          }}
-          disabled={!isInCompare && !canAddToCompare}
-          className={`text-xs font-bold px-3 py-1.5 rounded-md transition-all border ${
-            isInCompare
-              ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
-              : canAddToCompare
-              ? 'bg-gray-100 text-gray-600 border-transparent hover:bg-gray-200'
-              : 'bg-gray-50 text-gray-400 border-transparent cursor-not-allowed'
-          }`}
-        >
-          {isInCompare ? '✓ 비교함 담김' : '+ 비교함 담기'}
-        </button>
+        {/* 주요 정보 */}
+        <div className="flex items-center gap-3 text-sm text-gray-500 font-medium">
+          <div className="flex items-center gap-1">
+            <MapPin className="w-3.5 h-3.5 text-gray-400" />
+            <span>{kindergarten.distance.toFixed(1)}km</span>
+          </div>
+          <div className="w-0.5 h-3 bg-gray-200" />
+          <span>정원 {kindergarten.capacity}명</span>
+          <div className="w-0.5 h-3 bg-gray-200" />
+          <span>현원 {kindergarten.currentCount}명</span>
+        </div>
+
+        {/* 태그들 */}
+        <div className="flex gap-1.5 flex-wrap mt-1">
+          {kindergarten.hasAfterSchool && (
+            <span className="px-2 py-1 rounded-md bg-gray-50 border border-gray-100 text-gray-600 text-[11px] font-medium">
+              방과후과정
+            </span>
+          )}
+          {kindergarten.hasBus && (
+            <span className="px-2 py-1 rounded-md bg-emerald-50 border border-emerald-100 text-emerald-600 text-[11px] font-medium">
+              셔틀운행 ({kindergarten.busCount}대)
+            </span>
+          )}
+          {kindergarten.hasPlayground && (
+            <span className="px-2 py-1 rounded-md bg-sky-50 border border-sky-100 text-sky-600 text-[11px] font-medium">
+              실외놀이터
+            </span>
+          )}
+        </div>
+
+        {/* 하단: 주소 + 비교함 버튼 */}
+        <div className="mt-2 pt-4 border-t border-gray-50 flex items-center justify-between gap-4">
+          <div className="text-xs text-gray-400 truncate flex-1 min-w-0 font-medium">
+            {kindergarten.address}
+          </div>
+          
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onCompareToggle();
+            }}
+            disabled={!isInCompare && !canAddToCompare}
+            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all border ${
+              isInCompare
+                ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
+                : canAddToCompare
+                ? 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100 hover:text-gray-900'
+                : 'bg-white text-gray-300 border-gray-100 cursor-not-allowed'
+            }`}
+          >
+            {isInCompare ? '✓ 담김' : '+ 비교'}
+          </button>
+        </div>
       </div>
     </div>
   );
