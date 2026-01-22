@@ -33,9 +33,15 @@ export function SearchHeader() {
   const [isFavoritesPanelOpen, setIsFavoritesPanelOpen] = useState(false);
   const [radiusDropdownPos, setRadiusDropdownPos] = useState({ top: 0, left: 0 });
   const [typeDropdownPos, setTypeDropdownPos] = useState({ top: 0, left: 0 });
+  const [hasMounted, setHasMounted] = useState(false);
 
-  // 찜하기 스토어
+  // 찜하기 스토어 (hydration 이후에만 count 표시)
   const favoriteCount = useFavoriteStore(state => state.getItemCount());
+
+  // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   // 드롭다운 위치 계산
   useEffect(() => {
@@ -371,8 +377,7 @@ export function SearchHeader() {
           >
             <Heart className="w-4 h-4" />
             찜한 목록
-            {/* rendering-conditional-render: 삼항 연산자 사용 */}
-            {favoriteCount > 0 ? (
+            {hasMounted && favoriteCount > 0 ? (
               <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] min-w-5 h-5 rounded-full flex items-center justify-center font-bold px-1">
                 {favoriteCount > 99 ? '99+' : favoriteCount}
               </span>
