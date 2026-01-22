@@ -8,5 +8,8 @@ export type {
 
 export { useCompareStore } from './compareStore';
 
+export { useFavoriteStore } from './favoriteStore';
+export type { FavoriteItem } from './favoriteStore';
+
 export { useKindergartenStore } from './kindergartenStore';
 export type { KindergartenRaw } from './kindergartenStore';

@@ -18,11 +18,12 @@ import {
   ExternalLink,
   Coins,
   Loader2,
+  Heart,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
-import { useCompareStore } from '@/stores';
+import { useCompareStore, useFavoriteStore } from '@/stores';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -113,6 +114,13 @@ export function KindergartenDetailPanel({
   // CompareFloatingBar가 표시되는지 확인 (비교함에 아이템이 있을 때)
   const compareItems = useCompareStore((state) => state.items);
   const hasCompareBar = compareItems.length > 0;
+
+  // 찜하기 상태
+  const { isFavorite, toggleItem: toggleFavorite } = useFavoriteStore();
+  const isFav = isFavorite(kindergarten.kindercode);
+  const handleFavoriteToggle = () => {
+    toggleFavorite(kindergarten);
+  };
   
   // 학급 수 데이터
   const totalClassCount =
@@ -550,19 +558,35 @@ export function KindergartenDetailPanel({
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
         <div className={`p-5 border-t border-gray-200 bg-white ${hasCompareBar ? 'pb-20' : ''}`}>
-          <button
-            onClick={onCompareToggle}
-            disabled={!isInCompare && !canAddToCompare}
-            className={`w-full py-3 rounded-xl font-bold text-sm transition-all ${
-              isInCompare
-                ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
-                : canAddToCompare
-                ? 'bg-emerald-500 text-white hover:bg-emerald-600'
-                : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-            }`}
-          >
-            {isInCompare ? '✓ 비교함에서 제거' : '+ 비교함에 담기'}
-          </button>
+          <div className="flex gap-3">
+            {/* 찜하기 버튼 */}
+            <button
+              onClick={handleFavoriteToggle}
+              className={`flex-shrink-0 w-14 h-12 rounded-xl flex items-center justify-center transition-all border ${
+                isFav
+                  ? 'bg-red-50 border-red-200 text-red-500 hover:bg-red-100'
+                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:bg-gray-100 hover:text-red-500'
+              }`}
+              title={isFav ? '찜 해제' : '찜하기'}
+            >
+              <Heart className={`w-5 h-5 ${isFav ? 'fill-red-500' : ''}`} />
+            </button>
+
+            {/* 비교함 담기 버튼 */}
+            <button
+              onClick={onCompareToggle}
+              disabled={!isInCompare && !canAddToCompare}
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${
+                isInCompare
+                  ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                  : canAddToCompare
+                  ? 'bg-emerald-500 text-white hover:bg-emerald-600'
+                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+              }`}
+            >
+              {isInCompare ? '✓ 비교함에서 제거' : '+ 비교함에 담기'}
+            </button>
+          </div>
         </div>
       </div>
     </>

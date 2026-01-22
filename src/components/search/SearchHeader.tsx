@@ -19,9 +19,10 @@ import {
   Crosshair,
 } from 'lucide-react';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
-import { useSearchStore, type InstitutionFilter } from '@/stores';
+import { useSearchStore, useFavoriteStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
 import { RADIUS_MIN, RADIUS_MAX } from '@/types';
+import { FavoritesPanel } from './FavoritesPanel';
 
 export function SearchHeader() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -29,8 +30,12 @@ export function SearchHeader() {
   const typeButtonRef = useRef<HTMLButtonElement>(null);
   const [isRadiusOpen, setIsRadiusOpen] = useState(false);
   const [isTypeOpen, setIsTypeOpen] = useState(false);
+  const [isFavoritesPanelOpen, setIsFavoritesPanelOpen] = useState(false);
   const [radiusDropdownPos, setRadiusDropdownPos] = useState({ top: 0, left: 0 });
   const [typeDropdownPos, setTypeDropdownPos] = useState({ top: 0, left: 0 });
+
+  // 찜하기 스토어
+  const favoriteCount = useFavoriteStore(state => state.getItemCount());
 
   // 드롭다운 위치 계산
   useEffect(() => {
@@ -360,9 +365,18 @@ export function SearchHeader() {
 
         {/* Header Actions - 데스크톱에서만 표시 */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-          <button className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100">
+          <button
+            onClick={() => setIsFavoritesPanelOpen(true)}
+            className="relative flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100"
+          >
             <Heart className="w-4 h-4" />
             찜한 목록
+            {/* rendering-conditional-render: 삼항 연산자 사용 */}
+            {favoriteCount > 0 ? (
+              <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] min-w-5 h-5 rounded-full flex items-center justify-center font-bold px-1">
+                {favoriteCount > 99 ? '99+' : favoriteCount}
+              </span>
+            ) : null}
           </button>
           <div className="h-6 w-px bg-gray-200" />
           <button className="flex items-center gap-2 text-sm font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-lg transition-colors">
@@ -611,6 +625,12 @@ export function SearchHeader() {
           </div>
         </>
       )}
+
+      {/* 찜한 목록 패널 */}
+      <FavoritesPanel
+        isOpen={isFavoritesPanelOpen}
+        onClose={() => setIsFavoritesPanelOpen(false)}
+      />
     </header>
   );
 }

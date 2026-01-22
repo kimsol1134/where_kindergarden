@@ -3,7 +3,7 @@
 import { useCallback, useMemo, useRef, useEffect } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
-import { useSearchStore, useCompareStore } from '@/stores';
+import { useSearchStore, useCompareStore, useFavoriteStore } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
@@ -53,6 +53,11 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
     isInCompare,
     canAdd,
   } = useCompareStore();
+
+  const {
+    isFavorite,
+    toggleItem: toggleFavorite,
+  } = useFavoriteStore();
 
   // Memoize filtered and sorted results to avoid recalculation on every render
   const results = useMemo(() => getFilteredAndSortedResults(), [
@@ -122,6 +127,14 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
       }
     },
     [isInCompare, removeItem, addItem]
+  );
+
+  // 찜하기 토글 핸들러
+  const handleFavoriteToggle = useCallback(
+    (kindergarten: Kindergarten) => {
+      toggleFavorite(kindergarten);
+    },
+    [toggleFavorite]
   );
 
   // 카드 클릭 핸들러 (상세 보기)
@@ -255,8 +268,10 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
                     isSelected={selectedId === kindergarten.kindercode}
                     isInCompare={isInCompare(kindergarten.kindercode)}
                     canAddToCompare={canAdd()}
+                    isFavorite={isFavorite(kindergarten.kindercode)}
                     onClick={() => handleCardClick(kindergarten.kindercode)}
                     onCompareToggle={() => handleCompareToggle(kindergarten)}
+                    onFavoriteToggle={() => handleFavoriteToggle(kindergarten)}
                   />
                 </div>
               );
@@ -296,8 +311,10 @@ interface KindergartenCardProps {
   isSelected: boolean;
   isInCompare: boolean;
   canAddToCompare: boolean;
+  isFavorite: boolean;
   onClick: () => void;
   onCompareToggle: () => void;
+  onFavoriteToggle: () => void;
 }
 
 /** 유치원 카드 컴포넌트 */
@@ -306,8 +323,10 @@ function KindergartenCard({
   isSelected,
   isInCompare,
   canAddToCompare,
+  isFavorite,
   onClick,
   onCompareToggle,
+  onFavoriteToggle,
 }: KindergartenCardProps) {
   const typeStyle = TYPE_STYLES[kindergarten.type];
 
@@ -322,11 +341,16 @@ function KindergartenCard({
         <button
           onClick={(e) => {
             e.stopPropagation();
-            // 찜하기 기능 (미구현)
+            onFavoriteToggle();
           }}
-          className="text-gray-300 hover:text-red-500 transition-colors p-1"
+          className={`transition-colors p-1 ${
+            isFavorite
+              ? 'text-red-500 hover:text-red-600'
+              : 'text-gray-300 hover:text-red-500'
+          }`}
+          title={isFavorite ? '찜 해제' : '찜하기'}
         >
-          <Heart className="w-5 h-5" />
+          <Heart className={`w-5 h-5 ${isFavorite ? 'fill-red-500' : ''}`} />
         </button>
       </div>
 
