@@ -110,6 +110,66 @@ const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT
 const DEFAULT_CENTER: Coordinates = { lat: 37.5665, lng: 126.978 }; // 서울시청
 const DEFAULT_LEVEL = 5;
 
+/** 마커 색상 상수 */
+const MARKER_COLORS = {
+  default: '#10B981',      // 에메랄드
+  selected: '#059669',     // 진한 에메랄드
+  compare: '#F97316',      // 오렌지
+  compareSelected: '#EA580C', // 진한 오렌지
+} as const;
+
+/**
+ * 마커 SVG Data URL 생성
+ * @param options.isSelected - 선택 상태
+ * @param options.comparePosition - 비교함 위치 (1, 2, 3) 또는 null
+ */
+function generateMarkerDataUrl(options: {
+  isSelected: boolean;
+  comparePosition: number | null;
+}): string {
+  const { isSelected, comparePosition } = options;
+  const isCompare = comparePosition !== null;
+
+  // 색상 결정
+  let fillColor: string;
+  if (isCompare) {
+    fillColor = isSelected ? MARKER_COLORS.compareSelected : MARKER_COLORS.compare;
+  } else {
+    fillColor = isSelected ? MARKER_COLORS.selected : MARKER_COLORS.default;
+  }
+
+  // SVG 생성
+  let svg: string;
+  if (isCompare) {
+    // 비교함 마커: 숫자 표시
+    svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
+        <circle cx="16" cy="14" r="10" fill="white"/>
+        <text x="16" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="${fillColor}">${comparePosition}</text>
+      </svg>
+    `;
+  } else if (isSelected) {
+    // 선택된 마커: 채워진 원
+    svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
+        <circle cx="16" cy="14" r="6" fill="white"/>
+      </svg>
+    `;
+  } else {
+    // 기본 마커: 링 모양
+    svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
+        <circle cx="16" cy="14" r="6" fill="none" stroke="white" stroke-width="2"/>
+      </svg>
+    `;
+  }
+
+  return 'data:image/svg+xml,' + encodeURIComponent(svg.trim());
+}
+
 /**
  * Kakao Maps SDK 래핑 훅
  */
@@ -130,6 +190,7 @@ export function useKakaoMap(
   const currentLocationMarkerRef = useRef<KakaoMarker | null>(null);
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
   const selectedMarkerIdRef = useRef<string | null>(null);
+  const compareItemsRef = useRef<string[]>([]); // 비교함 아이템 ID 배열 (순서 보존)
 
   // SDK 스크립트 로드
   useEffect(() => {
@@ -222,6 +283,12 @@ export function useKakaoMap(
     infoWindowRef.current.open(mapRef.current, marker);
   }, []);
 
+  // 비교함 위치 가져오기 (1, 2, 3 또는 null)
+  const getComparePosition = useCallback((kindercode: string): number | null => {
+    const index = compareItemsRef.current.indexOf(kindercode);
+    return index === -1 ? null : index + 1;
+  }, []);
+
   // 마커 생성 함수
   const createMarker = useCallback(
     (kindergarten: Kindergarten, isSelected = false): KakaoMarker | null => {
@@ -230,8 +297,9 @@ export function useKakaoMap(
       const { kakao } = window;
       const position = new kakao.maps.LatLng(kindergarten.lat, kindergarten.lng);
 
-      // 마커 이미지 설정
-      const imageSrc = isSelected ? '/markers/active.svg' : '/markers/default.svg';
+      // 마커 이미지 설정 (비교함 상태 포함)
+      const comparePosition = getComparePosition(kindergarten.kindercode);
+      const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
       const imageSize = new kakao.maps.Size(32, 40);
       const imageOption = { offset: new kakao.maps.Point(16, 40) };
       const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
@@ -250,7 +318,7 @@ export function useKakaoMap(
 
       return marker;
     },
-    [onMarkerClick, showInfoWindow]
+    [onMarkerClick, showInfoWindow, getComparePosition]
   );
 
   // 마커 업데이트
@@ -302,7 +370,8 @@ export function useKakaoMap(
 
     markersRef.current.forEach(({ marker, kindergarten }) => {
       const isSelected = kindergarten.kindercode === id;
-      const imageSrc = isSelected ? '/markers/active.svg' : '/markers/default.svg';
+      const comparePosition = getComparePosition(kindergarten.kindercode);
+      const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
       const imageSize = new window.kakao.maps.Size(32, 40);
       const imageOption = { offset: new window.kakao.maps.Point(16, 40) };
       const markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
@@ -313,7 +382,25 @@ export function useKakaoMap(
         showInfoWindow(marker, kindergarten);
       }
     });
-  }, [showInfoWindow]);
+  }, [showInfoWindow, getComparePosition]);
+
+  // 비교함 아이템 업데이트
+  const updateCompareItems = useCallback((compareItemIds: string[]) => {
+    if (!window.kakao) return;
+
+    compareItemsRef.current = compareItemIds;
+
+    // 모든 마커의 이미지 업데이트
+    markersRef.current.forEach(({ marker, kindergarten }) => {
+      const isSelected = kindergarten.kindercode === selectedMarkerIdRef.current;
+      const comparePosition = getComparePosition(kindergarten.kindercode);
+      const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
+      const imageSize = new window.kakao.maps.Size(32, 40);
+      const imageOption = { offset: new window.kakao.maps.Point(16, 40) };
+      const markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+      marker.setImage(markerImage);
+    });
+  }, [getComparePosition]);
 
   // 현재 위치 마커 표시
   const showCurrentLocation = useCallback((coords: Coordinates) => {
@@ -367,6 +454,7 @@ export function useKakaoMap(
     setLevel,
     updateMarkers,
     selectMarker,
+    updateCompareItems,
     showCurrentLocation,
     closeInfoWindow,
   };

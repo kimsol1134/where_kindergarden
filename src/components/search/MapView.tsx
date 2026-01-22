@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect, useCallback } from 'react';
+import { useRef, useEffect, useCallback, useMemo } from 'react';
 import { Crosshair, Plus, Minus, RotateCw, List, Loader2 } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { useKakaoMap, useGeolocation } from '@/hooks';
@@ -28,7 +28,12 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
   } = useSearchStore();
 
   const { items: compareItems } = useCompareStore();
-  const hasCompareItems = compareItems.length > 0;
+
+  // 비교함 아이템 ID 추출 (순서 보존)
+  const compareItemIds = useMemo(
+    () => compareItems.map((item) => item.kindercode),
+    [compareItems]
+  );
 
   const { getCurrentPosition, isLoading: isGeoLoading } = useGeolocation();
 
@@ -49,6 +54,7 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
     setLevel,
     updateMarkers,
     selectMarker,
+    updateCompareItems,
     showCurrentLocation,
   } = useKakaoMap(mapContainerRef, {
     center: location ?? { lat: 37.5665, lng: 126.978 },
@@ -76,6 +82,13 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
       showCurrentLocation(location);
     }
   }, [isLoaded, location, showCurrentLocation]);
+
+  // 비교함 상태가 변경되면 마커 업데이트
+  useEffect(() => {
+    if (isLoaded) {
+      updateCompareItems(compareItemIds);
+    }
+  }, [isLoaded, compareItemIds, updateCompareItems]);
 
   // 현재 위치로 이동
   const handleCurrentLocation = useCallback(async () => {
