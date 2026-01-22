@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.kindergarden.app',
+  appId: 'com.solkim.kindergarden',
   appName: '우리동네 유치원',
   webDir: 'out',
   server: {
