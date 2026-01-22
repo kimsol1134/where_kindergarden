@@ -39,6 +39,8 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
     error,
     selectedId,
     sortBy,
+    totalCount,
+    results: storeResults,
     getFilteredAndSortedResults,
     setDetailId,
     getDetailKindergarten,
@@ -60,7 +62,8 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
   } = useFavoriteStore();
 
   // Memoize filtered and sorted results to avoid recalculation on every render
-  const results = useMemo(() => getFilteredAndSortedResults(), [getFilteredAndSortedResults]);
+  // storeResults를 의존성에 추가하여 검색 결과 변경 시 재계산
+  const results = useMemo(() => getFilteredAndSortedResults(), [getFilteredAndSortedResults, storeResults, filters, sortBy]);
   const detailKindergarten = getDetailKindergarten();
 
   // Scroll container ref for virtualization
@@ -163,6 +166,12 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
           </h1>
           <p className="text-xs text-gray-500 mt-1">
             {address || '위치를 선택해주세요'} 기준 {filters.radius}km 이내
+            {/* 필터로 인해 결과가 줄어든 경우 안내 표시 */}
+            {totalCount > results.length && (
+              <span className="ml-2 text-amber-600">
+                (전체 {totalCount}개 중 필터 적용)
+              </span>
+            )}
           </p>
         </div>
         <div className="relative">

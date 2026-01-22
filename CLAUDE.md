@@ -565,7 +565,10 @@ pnpm test:e2e
 pnpm db:migrate
 pnpm db:generate
 
-# TestFlight 배포
+# TestFlight 배포 (수동 - Xcode 사용)
+# 아래 "iOS 배포" 섹션 참고
+
+# TestFlight 배포 (자동화 - Fastlane)
 pnpm deploy:testflight        # 전체 배포 (빌드 + 업로드)
 pnpm deploy:testflight:build  # 빌드만 (업로드 없이)
 pnpm deploy:testflight:api    # API Key 방식 배포 (권장)
@@ -573,82 +576,37 @@ pnpm deploy:testflight:api    # API Key 방식 배포 (권장)
 
 ---
 
-## TestFlight 자동 배포
+## iOS 배포 (TestFlight)
 
-### 개요
+### 현재 배포 방식: 수동 (Xcode)
 
-Fastlane을 사용하여 TestFlight 배포를 자동화합니다. Xcode 수동 작업 없이 명령어 한 줄로 배포 가능합니다.
+> **참고**: Fastlane 자동화 스크립트도 있지만, 현재는 Xcode 수동 배포를 사용합니다.
 
-### 관련 파일
+```bash
+# 1. 웹 앱 빌드
+pnpm build
 
-| 파일 | 설명 |
+# 2. iOS 프로젝트에 동기화
+npx cap sync ios
+
+# 3. Xcode에서 열기
+npx cap open ios
+```
+
+**Xcode에서 수동 작업:**
+1. Product → Archive
+2. Distribute App → App Store Connect
+3. Upload
+4. TestFlight에서 빌드 확인 후 테스터에게 배포
+
+### App Store 메타데이터
+
+App Store Connect 제출 시 필요한 메타데이터는 별도 문서에 정리되어 있습니다.
+
+| 문서 | 설명 |
 |------|------|
-| `scripts/deploy-testflight.sh` | 메인 배포 스크립트 |
-| `ios/App/fastlane/Fastfile` | Fastlane 배포 설정 |
-| `ios/App/fastlane/Appfile` | App Store Connect 설정 |
-| `.env.testflight.example` | 환경 변수 예시 |
-
-### 사용법
-
-```bash
-# 전체 배포 (Next.js 빌드 → Capacitor sync → iOS 빌드 → TestFlight 업로드)
-pnpm deploy:testflight
-
-# 빌드만 (TestFlight 업로드 없이)
-pnpm deploy:testflight:build
-
-# API Key 방식으로 배포 (2FA 없이 자동화 가능, CI/CD 권장)
-pnpm deploy:testflight:api
-```
-
-### 초기 설정
-
-#### 1. Fastlane 설치 (최초 1회)
-
-```bash
-# Homebrew로 설치
-brew install fastlane
-
-# 또는 Bundler 사용
-cd ios/App && bundle install
-```
-
-#### 2. 환경 변수 설정
-
-**방법 A: Apple ID 방식** (수동 로그인, 2FA 필요)
-
-```bash
-export APPLE_ID="your@email.com"
-export TEAM_ID="XXXXXXXXXX"        # Apple Developer Team ID
-export ITC_TEAM_ID="XXXXXXXXXX"    # App Store Connect Team ID
-```
-
-**방법 B: API Key 방식** (권장, CI/CD 자동화)
-
-1. [App Store Connect](https://appstoreconnect.apple.com/access/api) > Keys에서 API Key 생성
-2. 환경 변수 설정:
-
-```bash
-export APP_STORE_CONNECT_API_KEY_ID="ABC123XYZ"
-export APP_STORE_CONNECT_API_ISSUER_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-export APP_STORE_CONNECT_API_KEY_CONTENT="$(cat AuthKey_ABC123XYZ.p8 | base64)"
-```
-
-### 배포 프로세스
-
-스크립트 실행 시 자동으로 진행되는 단계:
-
-1. **Next.js 빌드**: `pnpm build` → `out/` 디렉토리 생성
-2. **Capacitor 동기화**: `npx cap sync ios` → iOS 프로젝트에 웹 앱 복사
-3. **빌드 번호 증가**: TestFlight 최신 빌드 번호 + 1
-4. **iOS 빌드**: Release 설정으로 `.ipa` 생성
-5. **TestFlight 업로드**: App Store Connect에 업로드
-
-### 주의사항
-
-- 첫 배포 전 Xcode에서 **Signing & Capabilities** 설정 필요
-- 인증서와 프로비저닝 프로파일이 Mac에 설치되어 있어야 함
-- API Key는 **절대 커밋하지 않음** (`.gitignore` 확인)
+| `docs/APP_STORE_METADATA.md` | App Store Connect 메타데이터 (복사용) |
+| `ios/App/fastlane/metadata/` | Fastlane 형식 메타데이터 (참고용) |
 
 ---
 

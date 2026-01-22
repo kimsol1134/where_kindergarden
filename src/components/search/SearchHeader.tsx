@@ -118,12 +118,24 @@ export function SearchHeader() {
 
   // 현재 위치 검색
   const handleCurrentLocation = useCallback(async () => {
+     
+    console.log('[SearchHeader] handleCurrentLocation 시작');
     try {
       const coords = await getCurrentPosition();
+       
+      console.log('[SearchHeader] 위치 획득:', coords);
       setLocation(coords);
+       
+      console.log('[SearchHeader] setLocation 완료');
       clearSelection();
+       
+      console.log('[SearchHeader] search() 호출 전');
       search();
-    } catch {
+       
+      console.log('[SearchHeader] search() 호출 완료');
+    } catch (err) {
+       
+      console.error('[SearchHeader] 위치 에러:', err);
       // 에러는 useGeolocation 내부에서 처리됨
     }
   }, [getCurrentPosition, setLocation, clearSelection, search]);
