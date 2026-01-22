@@ -34,10 +34,12 @@ export function CompareFloatingBar() {
                 <span className="font-medium text-gray-700 truncate max-w-[60px] md:max-w-[100px] text-xs md:text-sm">{item.name}</span>
                 <button
                   onClick={() => handleRemoveItem(item.kindercode)}
-                  className="w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center bg-gray-200 text-gray-500 hover:bg-red-100 hover:text-red-500 transition-colors"
+                  className="relative w-11 h-11 flex items-center justify-center -mr-2"
                   aria-label={`${item.name} 제거`}
                 >
-                  <X className="w-3 h-3 md:w-3.5 md:h-3.5" />
+                  <span className="w-6 h-6 rounded-full flex items-center justify-center bg-gray-200 text-gray-500 hover:bg-red-100 hover:text-red-500 transition-colors">
+                    <X className="w-3.5 h-3.5" />
+                  </span>
                 </button>
               </div>
             ))}

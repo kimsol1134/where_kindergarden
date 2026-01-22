@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Search } from 'lucide-react';
 
@@ -6,10 +7,13 @@ export function Hero() {
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/50 to-white"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=2000&q=80" 
-          alt="Kindergarten" 
-          className="w-full h-full object-cover opacity-5 md:opacity-10 mix-blend-multiply"
+        <Image
+          src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=2000&q=80"
+          alt="행복한 유치원"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-5 md:opacity-10 mix-blend-multiply"
         />
       </div>
 

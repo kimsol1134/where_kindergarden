@@ -8,6 +8,8 @@ const MAX_COMPARE_ITEMS = 3;
 /** 비교 스토어 상태 */
 interface CompareState {
   items: Kindergarten[];
+  /** Map for O(1) lookup by kindercode */
+  itemsMap: Map<string, Kindergarten>;
 }
 
 /** 비교 스토어 액션 */
@@ -21,16 +23,22 @@ interface CompareActions {
   getItemCount: () => number;
 }
 
+/** Helper to create Map from items array */
+function createItemsMap(items: Kindergarten[]): Map<string, Kindergarten> {
+  return new Map(items.map(item => [item.kindercode, item]));
+}
+
 export const useCompareStore = create<CompareState & CompareActions>()(
   persist(
     (set, get) => ({
       items: [],
+      itemsMap: new Map(),
 
       addItem: (item) => {
-        const { items, canAdd, isInCompare } = get();
+        const { itemsMap, canAdd } = get();
 
-        // 이미 추가된 아이템인지 확인
-        if (isInCompare(item.kindercode)) {
+        // O(1) 조회: 이미 추가된 아이템인지 확인
+        if (itemsMap.has(item.kindercode)) {
           return false;
         }
 
@@ -39,27 +47,38 @@ export const useCompareStore = create<CompareState & CompareActions>()(
           return false;
         }
 
-        set({ items: [...items, item] });
+        const newItems = [...get().items, item];
+        set({
+          items: newItems,
+          itemsMap: createItemsMap(newItems),
+        });
         return true;
       },
 
       removeItem: (id) => {
-        set((state) => ({
-          items: state.items.filter((item) => item.kindercode !== id),
-        }));
+        const newItems = get().items.filter((item) => item.kindercode !== id);
+        set({
+          items: newItems,
+          itemsMap: createItemsMap(newItems),
+        });
       },
 
       clearAll: () => {
-        set({ items: [] });
+        set({ items: [], itemsMap: new Map() });
       },
 
       setItems: (items) => {
         // 최대 3개까지만 저장
-        set({ items: items.slice(0, MAX_COMPARE_ITEMS) });
+        const limitedItems = items.slice(0, MAX_COMPARE_ITEMS);
+        set({
+          items: limitedItems,
+          itemsMap: createItemsMap(limitedItems),
+        });
       },
 
+      // O(1) lookup using Map
       isInCompare: (id) => {
-        return get().items.some((item) => item.kindercode === id);
+        return get().itemsMap.has(id);
       },
 
       canAdd: () => {
@@ -72,8 +91,14 @@ export const useCompareStore = create<CompareState & CompareActions>()(
     }),
     {
       name: 'kindergarten-compare',
-      // partialize를 사용하여 필요한 데이터만 저장
+      // partialize를 사용하여 필요한 데이터만 저장 (Map은 저장하지 않음)
       partialize: (state) => ({ items: state.items }),
+      // onRehydrateStorage: 로컬 스토리지에서 복원 시 Map 재생성
+      onRehydrateStorage: () => (state) => {
+        if (state) {
+          state.itemsMap = createItemsMap(state.items);
+        }
+      },
     }
   )
 );

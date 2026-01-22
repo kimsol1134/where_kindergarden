@@ -125,20 +125,26 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
         {/* 에러 상태 */}
         {isError && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-            <div className="flex flex-col items-center text-gray-500">
-              <span className="text-sm text-red-500">{errorMessage}</span>
-              <span className="text-xs mt-1">지도 API 키를 확인해주세요</span>
+            <div className="flex flex-col items-center text-gray-500 px-4">
+              <span className="text-sm text-red-500 text-center">{errorMessage}</span>
+              <span className="text-xs mt-1 text-center">지도 API 키를 확인해주세요</span>
+              <button
+                onClick={() => window.location.reload()}
+                className="mt-4 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium text-sm hover:bg-emerald-600 transition-colors min-h-[44px] min-w-[120px]"
+              >
+                다시 시도
+              </button>
             </div>
           </div>
         )}
       </div>
 
-      {/* Map Controls */}
+      {/* Map Controls - 44px min touch targets */}
       <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
         <button
           onClick={handleCurrentLocation}
           disabled={isGeoLoading}
-          className="bg-white p-2 rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 disabled:opacity-50"
+          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 disabled:opacity-50 flex items-center justify-center"
           title="현재 위치로 이동"
         >
           {isGeoLoading ? (
@@ -149,14 +155,14 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
         </button>
         <button
           onClick={handleZoomIn}
-          className="bg-white p-2 rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50"
+          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 flex items-center justify-center"
           title="확대"
         >
           <Plus className="w-5 h-5" />
         </button>
         <button
           onClick={handleZoomOut}
-          className="bg-white p-2 rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50"
+          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 flex items-center justify-center"
           title="축소"
         >
           <Minus className="w-5 h-5" />

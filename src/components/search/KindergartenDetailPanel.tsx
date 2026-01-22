@@ -1,5 +1,6 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import {
   X,
   Phone,
@@ -16,14 +17,33 @@ import {
   SquareStack,
   ExternalLink,
   Coins,
+  Loader2,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
-import { DonutChart } from './charts/DonutChart';
-import { RatioBarChart } from './charts/RatioBarChart';
+import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore } from '@/stores';
 
-// ... (previous imports remain, make sure to integrate properly)
+/** Chart skeleton for loading state */
+function ChartSkeleton() {
+  return (
+    <div className="flex flex-col items-center justify-center h-[200px]">
+      <Loader2 className="w-6 h-6 animate-spin text-gray-300" />
+      <span className="text-xs text-gray-400 mt-2">차트 로딩 중...</span>
+    </div>
+  );
+}
+
+/** Dynamic imports for charts (~40KB Recharts bundle) */
+const DonutChart = dynamic(
+  () => import('./charts/DonutChart').then((mod) => ({ default: mod.DonutChart })),
+  { ssr: false, loading: () => <ChartSkeleton /> }
+);
+
+const RatioBarChart = dynamic(
+  () => import('./charts/RatioBarChart').then((mod) => ({ default: mod.RatioBarChart })),
+  { ssr: false, loading: () => <ChartSkeleton /> }
+);
 
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
@@ -253,32 +273,38 @@ export function KindergartenDetailPanel({
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* 학급수 차트 */}
               <div className="bg-white rounded-xl">
-                <DonutChart 
-                  data={classData}
-                  title="학급수"
-                  totalLabel="총 학급"
-                  totalValue={totalClassCount}
-                />
+                <ChartErrorBoundary>
+                  <DonutChart
+                    data={classData}
+                    title="학급수"
+                    totalLabel="총 학급"
+                    totalValue={totalClassCount}
+                  />
+                </ChartErrorBoundary>
               </div>
 
               {/* 원아수 차트 */}
               <div className="bg-white rounded-xl">
-                <DonutChart 
-                  data={childData}
-                  title="원아수"
-                  totalLabel="총 원아"
-                  totalValue={totalChildren}
-                  totalUnit="명"
-                  valueUnit="명"
-                />
+                <ChartErrorBoundary>
+                  <DonutChart
+                    data={childData}
+                    title="원아수"
+                    totalLabel="총 원아"
+                    totalValue={totalChildren}
+                    totalUnit="명"
+                    valueUnit="명"
+                  />
+                </ChartErrorBoundary>
               </div>
 
               {/* 비율 차트 */}
               <div className="bg-white rounded-xl md:col-span-2 lg:col-span-1">
-                <RatioBarChart 
-                  data={ratioData}
-                  title="교사당/학급당 원아수"
-                />
+                <ChartErrorBoundary>
+                  <RatioBarChart
+                    data={ratioData}
+                    title="교사당/학급당 원아수"
+                  />
+                </ChartErrorBoundary>
               </div>
             </div>
             
@@ -369,14 +395,16 @@ export function KindergartenDetailPanel({
             <div className="max-w-xs mx-auto">
               {/* 교사 자격 차트 */}
               <div className="bg-white rounded-xl">
-                <DonutChart 
-                  data={teacherData}
-                  title="교사 자격"
-                  totalLabel="총 교사"
-                  totalValue={kindergarten.teacherCount}
-                  totalUnit="명"
-                  valueUnit="명"
-                />
+                <ChartErrorBoundary>
+                  <DonutChart
+                    data={teacherData}
+                    title="교사 자격"
+                    totalLabel="총 교사"
+                    totalValue={kindergarten.teacherCount}
+                    totalUnit="명"
+                    valueUnit="명"
+                  />
+                </ChartErrorBoundary>
               </div>
             </div>
           </div>

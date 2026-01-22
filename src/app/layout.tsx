@@ -2,6 +2,18 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 
+/*
+ * Font optimization: To use next/font/local for better performance,
+ * download Pretendard font files to public/fonts/:
+ * - Pretendard-Regular.woff2
+ * - Pretendard-Medium.woff2
+ * - Pretendard-SemiBold.woff2
+ * - Pretendard-Bold.woff2
+ *
+ * Then uncomment and configure localFont below.
+ * Currently using CDN fallback in globals.css.
+ */
+
 export const metadata: Metadata = {
   title: '우리동네 유치원',
   description:

@@ -1,24 +1,63 @@
 'use client';
 
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useState, useCallback, Suspense } from 'react';
+import { X } from 'lucide-react';
 import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { useSearchStore, useCompareStore } from '@/stores';
-import { useGeolocation, useURLSync } from '@/hooks';
+// Direct imports instead of barrel imports for better tree-shaking
+import { useGeolocation } from '@/hooks/useGeolocation';
+import { useURLSync } from '@/hooks/useURLSync';
 
 /** 모바일 뷰 모드 타입 */
 type MobileViewMode = 'list' | 'map';
 
 function SearchPageContent() {
-  const { location, setLocation, search, isLoading, error } = useSearchStore();
+  const { location, setLocation, search, isLoading, error, setError } = useSearchStore();
   const { items } = useCompareStore();
   const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
 
   // 모바일에서 리스트/지도 뷰 전환 상태
   const [mobileView, setMobileView] = useState<MobileViewMode>('list');
+
+  // Toast visibility and animation state
+  const [isToastVisible, setIsToastVisible] = useState(false);
+  const [isToastFading, setIsToastFading] = useState(false);
+
+  // Handle toast visibility based on error state
+  useEffect(() => {
+    if (error) {
+      setIsToastVisible(true);
+      setIsToastFading(false);
+
+      // Auto-dismiss after 5 seconds
+      const fadeTimer = setTimeout(() => {
+        setIsToastFading(true);
+      }, 4700); // Start fade 300ms before hide
+
+      const hideTimer = setTimeout(() => {
+        setIsToastVisible(false);
+        setError(null);
+      }, 5000);
+
+      return () => {
+        clearTimeout(fadeTimer);
+        clearTimeout(hideTimer);
+      };
+    }
+  }, [error, setError]);
+
+  // Manual toast dismiss
+  const handleDismissToast = useCallback(() => {
+    setIsToastFading(true);
+    setTimeout(() => {
+      setIsToastVisible(false);
+      setError(null);
+    }, 300);
+  }, [setError]);
 
   // mode=location 파라미터가 있으면 현재 위치로 검색
   useEffect(() => {
@@ -59,10 +98,21 @@ function SearchPageContent() {
       </main>
       {items.length > 0 && <CompareFloatingBar />}
 
-      {/* 전역 에러 토스트 */}
-      {error && (
-        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-50">
-          {error}
+      {/* 전역 에러 토스트 - Auto-dismiss after 5s with fade animation */}
+      {isToastVisible && (
+        <div
+          className={`fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-3 transition-opacity duration-300 ${
+            isToastFading ? 'opacity-0' : 'opacity-100'
+          }`}
+        >
+          <span>{error}</span>
+          <button
+            onClick={handleDismissToast}
+            className="min-w-[44px] min-h-[44px] -mr-2 flex items-center justify-center hover:bg-red-600 rounded-full transition-colors"
+            aria-label="닫기"
+          >
+            <X className="w-4 h-4" />
+          </button>
         </div>
       )}
     </div>

@@ -3,7 +3,6 @@
 import { useRef, useCallback, useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
-  School,
   Search,
   X,
   Heart,
@@ -16,7 +15,9 @@ import {
   Home,
   Maximize,
   Building2,
+  Crosshair,
 } from 'lucide-react';
+import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 import { useSearchStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
 import { RADIUS_MIN, RADIUS_MAX } from '@/types';
@@ -170,12 +171,12 @@ export function SearchHeader() {
   }, [clearSelection, setAddress]);
 
   return (
-    <header className="relative bg-white border-b border-gray-200 z-30 flex-none">
+    <header className="relative bg-white border-b border-gray-200 z-50 flex-none">
       <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
-            <School className="w-5 h-5" />
+            <KindergartenIcon className="w-5 h-5" />
           </div>
           <span className="text-lg font-bold tracking-tight text-gray-900 hidden md:block">
             우리동네 유치원
@@ -197,17 +198,33 @@ export function SearchHeader() {
                 setOpen(true);
               }
             }}
-            className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-12 text-sm text-gray-900 placeholder:text-gray-500 transition-all outline-none shadow-sm"
-            placeholder="주소, 유치원 이름 검색"
+            className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-24 text-sm text-gray-900 placeholder:text-gray-500 transition-all outline-none shadow-sm"
+            placeholder="주소, 유치원, 아파트 이름 검색"
           />
-          {(query || address) && (
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+            {(query || address) && (
+              <>
+                <button
+                  onClick={handleClear}
+                  className="p-2.5 rounded-full hover:bg-gray-200 text-gray-400 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                  title="지우기"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                <div className="w-px h-3 bg-gray-300" />
+              </>
+            )}
             <button
-              onClick={handleClear}
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full hover:bg-gray-200 text-gray-400"
+              onClick={handleCurrentLocation}
+              disabled={isGeoLoading}
+              className={`p-1.5 rounded-full hover:bg-gray-200 transition-colors ${
+                isGeoLoading ? 'text-gray-400 animate-pulse' : 'text-emerald-600'
+              }`}
+              title="내 위치 찾기"
             >
-              <X className="w-4 h-4" />
+              <Crosshair className="w-4 h-4" />
             </button>
-          )}
+          </div>
 
           {/* Autocomplete Dropdown */}
           {isOpen && (
@@ -263,7 +280,7 @@ export function SearchHeader() {
                                   ? 'bg-emerald-100'
                                   : 'bg-indigo-100'
                               }`}>
-                                <School className={`w-4 h-4 ${
+                                <KindergartenIcon className={`w-4 h-4 ${
                                   kindergarten.type === 'public'
                                     ? 'text-emerald-600'
                                     : 'text-indigo-600'
@@ -291,11 +308,11 @@ export function SearchHeader() {
                     </div>
                   )}
 
-                  {/* 주소 검색 결과 */}
+                  {/* 장소/주소 검색 결과 */}
                   {suggestions.length > 0 && (
                     <div>
                       <div className="px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 border-b border-gray-100">
-                        주소
+                        장소
                       </div>
                       <ul>
                         {suggestions.map((suggestion, index) => (
@@ -309,8 +326,13 @@ export function SearchHeader() {
                               </div>
                               <div className="flex-1 min-w-0">
                                 <div className="font-medium text-gray-900 truncate">
-                                  {suggestion.address}
+                                  {suggestion.placeName || suggestion.address}
                                 </div>
+                                {suggestion.placeName && (
+                                  <div className="text-xs text-gray-500 truncate">
+                                    {suggestion.address}
+                                  </div>
+                                )}
                               </div>
                             </button>
                           </li>
@@ -529,7 +551,7 @@ export function SearchHeader() {
       {isTypeOpen && (
         <>
           {/* 모바일: 하단 시트 스타일 */}
-          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 animate-slide-in-bottom">
+          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 pb-10 animate-slide-in-bottom">
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
             <div className="text-sm font-medium text-gray-700 mb-3">기관 유형</div>
             <div className="space-y-2">

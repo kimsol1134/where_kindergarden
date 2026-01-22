@@ -1,6 +1,7 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useMemo, useRef, useEffect } from 'react';
+import { useVirtualizer } from '@tanstack/react-virtual';
 import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
@@ -37,6 +38,7 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
     error,
     selectedId,
     sortBy,
+    results: rawResults,
     getFilteredAndSortedResults,
     setDetailId,
     getDetailKindergarten,
@@ -52,8 +54,46 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
     canAdd,
   } = useCompareStore();
 
-  const results = getFilteredAndSortedResults();
+  // Memoize filtered and sorted results to avoid recalculation on every render
+  const results = useMemo(() => getFilteredAndSortedResults(), [
+    filters.type, filters.hasBus, filters.hasVacancy,
+    filters.hasIndoorPlayground, filters.hasLargeSpace,
+    filters.hasModernBuilding, sortBy, rawResults.length,
+    getFilteredAndSortedResults
+  ]);
   const detailKindergarten = getDetailKindergarten();
+
+  // Scroll container ref for virtualization
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  // Scroll position preservation for list/map toggle
+  const scrollPositionRef = useRef<number>(0);
+
+  // Save scroll position when switching to map view
+  useEffect(() => {
+    if (mobileView === 'map' && scrollContainerRef.current) {
+      scrollPositionRef.current = scrollContainerRef.current.scrollTop;
+    }
+  }, [mobileView]);
+
+  // Restore scroll position when returning to list view
+  useEffect(() => {
+    if (mobileView === 'list' && scrollContainerRef.current && scrollPositionRef.current > 0) {
+      // Use requestAnimationFrame to ensure DOM is ready
+      requestAnimationFrame(() => {
+        if (scrollContainerRef.current) {
+          scrollContainerRef.current.scrollTop = scrollPositionRef.current;
+        }
+      });
+    }
+  }, [mobileView]);
+
+  // Virtual list configuration
+  const rowVirtualizer = useVirtualizer({
+    count: results.length,
+    getScrollElement: () => scrollContainerRef.current,
+    estimateSize: () => 180, // Estimated card height
+    overscan: 5, // Render 5 extra items above/below viewport
+  });
 
   // 정렬 변경 핸들러
   const handleSortChange = useCallback(
@@ -134,7 +174,10 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
       </div>
 
       {/* List Content */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+      <div
+        ref={scrollContainerRef}
+        className="flex-1 overflow-y-auto p-4 bg-gray-50"
+      >
         {/* 로딩 상태 */}
         {isLoading && (
           <div className="flex flex-col items-center justify-center py-12 text-gray-500">
@@ -183,19 +226,43 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
           </div>
         )}
 
-        {/* 결과 목록 */}
-        {!isLoading &&
-          results.map((kindergarten) => (
-            <KindergartenCard
-              key={kindergarten.kindercode}
-              kindergarten={kindergarten}
-              isSelected={selectedId === kindergarten.kindercode}
-              isInCompare={isInCompare(kindergarten.kindercode)}
-              canAddToCompare={canAdd()}
-              onClick={() => handleCardClick(kindergarten.kindercode)}
-              onCompareToggle={() => handleCompareToggle(kindergarten)}
-            />
-          ))}
+        {/* 결과 목록 - Virtualized */}
+        {!isLoading && results.length > 0 && (
+          <div
+            style={{
+              height: `${rowVirtualizer.getTotalSize()}px`,
+              width: '100%',
+              position: 'relative',
+            }}
+          >
+            {rowVirtualizer.getVirtualItems().map((virtualItem) => {
+              const kindergarten = results[virtualItem.index];
+              return (
+                <div
+                  key={kindergarten.kindercode}
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: `${virtualItem.size}px`,
+                    transform: `translateY(${virtualItem.start}px)`,
+                  }}
+                  className="pb-4"
+                >
+                  <KindergartenCard
+                    kindergarten={kindergarten}
+                    isSelected={selectedId === kindergarten.kindercode}
+                    isInCompare={isInCompare(kindergarten.kindercode)}
+                    canAddToCompare={canAdd()}
+                    onClick={() => handleCardClick(kindergarten.kindercode)}
+                    onCompareToggle={() => handleCompareToggle(kindergarten)}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* 상세 정보 패널 */}
@@ -209,11 +276,11 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
         />
       )}
 
-      {/* 모바일 지도 탭 - 우측 중앙 플로팅 탭 */}
+      {/* 모바일 지도 탭 - 우측 중앙 플로팅 탭 (min 44px touch target) */}
       {mobileView === 'list' && (
         <button
           onClick={onToggleMobileView}
-          className="md:hidden fixed right-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pl-3 pr-2 py-2.5 rounded-l-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-r-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
+          className="md:hidden fixed right-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pl-3 pr-3 min-h-[44px] rounded-l-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-r-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
         >
           <MapPin className="w-4 h-4 text-emerald-600" />
           <span className="text-[11px] text-gray-600">지도</span>

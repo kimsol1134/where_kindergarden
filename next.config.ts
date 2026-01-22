@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     dangerouslyAllowLocalIP: false,
     maximumRedirects: 3,
-    remotePatterns: [],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+    ],
   },
 };
 
