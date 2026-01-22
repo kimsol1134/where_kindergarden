@@ -1,0 +1,27 @@
+import { MetadataRoute } from 'next';
+
+export const dynamic = 'force-static';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: '우리동네 유치원',
+    short_name: '우리동네 유치원',
+    description: '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요.',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#ffffff',
+    icons: [
+      {
+        src: '/icon.png',
+        sizes: '192x192',
+        type: 'image/png',
+      },
+      {
+        src: '/app-icon-preview.png',
+        sizes: '512x512',
+        type: 'image/png',
+      },
+    ],
+  };
+}

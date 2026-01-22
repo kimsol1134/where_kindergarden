@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useCallback, useRef, useEffect } from 'react';
-import type { GeocodeResult, ApiResponse } from '@/types';
+import type { GeocodeResult } from '@/types';
 import { useKindergartenStore } from '@/stores/kindergartenStore';
-import { getApiUrl } from '@/lib/api/config';
+import { searchAddressWithKakaoSDK, isKakaoServicesLoaded } from '@/lib/kakaoServices';
 
 /** 유치원 검색 결과 타입 */
 export interface KindergartenSearchResult {
@@ -116,34 +116,23 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
       abortControllerRef.current = abortController;
 
       try {
-        const params = new URLSearchParams({
-          q: searchQuery,
-          mode: 'search',
-        });
+        let addressResults: GeocodeResult[] = [];
 
-        const response = await fetch(getApiUrl(`/api/geocode?${params}`), {
-          signal: abortController.signal,
-        });
-        const json: ApiResponse<GeocodeResult[]> = await response.json();
+        // Kakao SDK가 로드되었으면 클라이언트 사이드 검색 사용
+        if (isKakaoServicesLoaded()) {
+          addressResults = await searchAddressWithKakaoSDK(searchQuery);
+        }
 
-        if (!json.success) {
-          // 주소 검색 실패해도 유치원 검색 결과가 있으면 표시
-          setState((prev) => ({
-            ...prev,
-            error: kindergartenResults.length > 0 ? null : json.error,
-            suggestions: [],
-            kindergartenSuggestions: kindergartenResults,
-            isLoading: false,
-            isOpen: kindergartenResults.length > 0,
-          }));
+        // 요청이 취소되었으면 무시
+        if (abortController.signal.aborted) {
           return;
         }
 
-        const hasResults = json.data.length > 0 || kindergartenResults.length > 0;
+        const hasResults = addressResults.length > 0 || kindergartenResults.length > 0;
 
         setState((prev) => ({
           ...prev,
-          suggestions: json.data,
+          suggestions: addressResults,
           kindergartenSuggestions: kindergartenResults,
           isLoading: false,
           isOpen: hasResults,
@@ -154,7 +143,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
           return;
         }
 
-        // 네트워크 오류 시에도 유치원 검색 결과는 표시
+        // 오류 시에도 유치원 검색 결과는 표시
         setState((prev) => ({
           ...prev,
           error: kindergartenResults.length > 0 ? null : '주소 검색 중 오류가 발생했습니다.',
