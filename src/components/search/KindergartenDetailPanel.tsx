@@ -21,6 +21,10 @@ import {
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
+import { DonutChart } from './charts/DonutChart';
+import { RatioBarChart } from './charts/RatioBarChart';
+
+// ... (previous imports remain, make sure to integrate properly)
 
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
@@ -86,8 +90,75 @@ export function KindergartenDetailPanel({
   canAddToCompare,
 }: KindergartenDetailPanelProps) {
   const typeStyle = TYPE_STYLES[kindergarten.type];
+  
+  // 학급 수 데이터
   const totalClassCount =
     kindergarten.classCountAge3 + kindergarten.classCountAge4 + kindergarten.classCountAge5 + kindergarten.classCountMix;
+
+  const classData = [
+    { name: '만 3세반', value: kindergarten.classCountAge3, color: '#86efac' }, // green-300
+    { name: '만 4세반', value: kindergarten.classCountAge4, color: '#fcd34d' }, // amber-300
+    { name: '만 5세반', value: kindergarten.classCountAge5, color: '#93c5fd' }, // blue-300
+  ];
+  if (kindergarten.classCountMix > 0) {
+    classData.push({ name: '혼합반', value: kindergarten.classCountMix, color: '#c4b5fd' }); // violet-300
+  }
+
+  // 원아 수 데이터 (특수학급 포함)
+  const totalChildren = kindergarten.currentCount;
+  const childData = [
+    { name: '만 3세반', value: kindergarten.currentAge3, color: '#86efac' },
+    { name: '만 4세반', value: kindergarten.currentAge4, color: '#fcd34d' },
+    { name: '만 5세반', value: kindergarten.currentAge5, color: '#93c5fd' },
+  ];
+  if (kindergarten.currentMix > 0) {
+    childData.push({ name: '혼합반', value: kindergarten.currentMix, color: '#c4b5fd' });
+  }
+  if (kindergarten.currentSpecial > 0) {
+    childData.push({ name: '특수학급', value: kindergarten.currentSpecial, color: '#f9a8d4' }); // pink-300
+  }
+
+  // 비율 데이터
+  const teacherChildRatio = kindergarten.teacherCount > 0 
+    ? parseFloat((kindergarten.currentCount / kindergarten.teacherCount).toFixed(1)) 
+    : 0;
+  
+  const classChildRatio = totalClassCount > 0 
+    ? parseFloat((kindergarten.currentCount / totalClassCount).toFixed(1)) 
+    : 0;
+
+  const ratioData = [
+    { 
+      name: '교사당 원아수', 
+      value: teacherChildRatio, 
+      unit: '명', 
+      color: '#10b981', // emerald-500
+      description: '교사 1인당 원아 수'
+    },
+    { 
+      name: '학급당 원아수', 
+      value: classChildRatio, 
+      unit: '명', 
+      color: '#6366f1', // indigo-500
+      description: '학급 1개당 평균 원아 수'
+    },
+  ];
+
+  // 교사 자격 데이터
+  const teacherData = [
+    { 
+      name: '1/2급 정교사', 
+      value: Math.max(0, kindergarten.teacherCount - kindergarten.seniorTeacherCount), 
+      color: '#fbbf24' // amber-400
+    },
+  ];
+  if (kindergarten.seniorTeacherCount > 0) {
+    teacherData.unshift({ 
+      name: '수석/부장교사', 
+      value: kindergarten.seniorTeacherCount, 
+      color: '#9ca3af' // gray-400
+    });
+  }
 
   return (
     <>
@@ -98,9 +169,9 @@ export function KindergartenDetailPanel({
       />
 
       {/* Panel */}
-      <div className="fixed inset-y-0 right-0 w-full max-w-md bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right">
+      <div className="fixed inset-y-0 right-0 w-full max-w-2xl bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right md:min-w-[500px]">
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200 bg-white">
+        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md sticky top-0 z-10">
           <h2 className="text-lg font-bold text-gray-900">상세 정보</h2>
           <button
             onClick={onClose}
@@ -111,29 +182,29 @@ export function KindergartenDetailPanel({
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto bg-gray-50">
           {/* 기관 기본 정보 */}
-          <div className="p-5 border-b border-gray-100 bg-gradient-to-b from-gray-50 to-white">
+          <div className="p-6 bg-white border-b border-gray-100 mb-2">
             <div className="flex items-center gap-2 mb-2">
               <span className={`text-xs font-bold px-2 py-1 rounded ${typeStyle.className}`}>
                 {typeStyle.label}
               </span>
               <span className="text-xs text-gray-500">{kindergarten.distance.toFixed(1)}km</span>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">{kindergarten.name}</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{kindergarten.name}</h3>
 
-            <div className="space-y-2">
-              <div className="flex items-start gap-2 text-sm text-gray-600">
+            <div className="space-y-2.5">
+              <div className="flex items-start gap-3 text-sm text-gray-600">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-gray-400" />
                 <span>{kindergarten.address}</span>
               </div>
 
               {kindergarten.phone && (
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center gap-3 text-sm">
                   <Phone className="w-4 h-4 text-gray-400" />
                   <a
                     href={`tel:${kindergarten.phone}`}
-                    className="text-emerald-600 hover:underline font-medium"
+                    className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"
                   >
                     {kindergarten.phone}
                   </a>
@@ -141,144 +212,139 @@ export function KindergartenDetailPanel({
               )}
 
               {kindergarten.homepage && (
-                <div className="flex items-center gap-2 text-sm">
+                <div className="flex items-center gap-3 text-sm">
                   <Globe className="w-4 h-4 text-gray-400" />
                   <a
                     href={kindergarten.homepage.startsWith('http') ? kindergarten.homepage : `http://${kindergarten.homepage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline font-medium truncate"
+                    className="text-emerald-600 hover:underline font-medium truncate max-w-[300px]"
                   >
-                    홈페이지 바로가기
+                    홈페이지 방문하기
                   </a>
                 </div>
               )}
-
-              <div className="flex items-center gap-2 text-sm text-gray-600">
-                <Calendar className="w-4 h-4 text-gray-400" />
-                <span>설립일: {formatEstablishDate(kindergarten.establishDate)}</span>
-              </div>
-
-              {kindergarten.operationHours && (
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <Clock className="w-4 h-4 text-gray-400" />
-                  <span>운영시간: {kindergarten.operationHours}</span>
+              
+              <div className="flex gap-4 pt-1">
+                <div className="flex items-center gap-2 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+                  <Calendar className="w-3.5 h-3.5" />
+                  설립일: {formatEstablishDate(kindergarten.establishDate)}
                 </div>
-              )}
+                {kindergarten.operationHours && (
+                  <div className="flex items-center gap-2 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+                    <Clock className="w-3.5 h-3.5" />
+                    {kindergarten.operationHours}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
-          {/* 정원/현원 정보 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <Users className="w-4 h-4 text-emerald-600" />
-              정원 현황
+          {/* 학급/아동 시각화 */}
+          <div className="p-6 bg-white border-b border-gray-100 mb-2">
+            <h4 className="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full"></span>
+              학급/아동
             </h4>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* 학급수 차트 */}
+              <div className="bg-white rounded-xl">
+                <DonutChart 
+                  data={classData}
+                  title="학급수"
+                  totalLabel="총 학급"
+                  totalValue={totalClassCount}
+                />
+              </div>
 
-            {/* 전체 현황 */}
-            <div className="grid grid-cols-2 gap-3 mb-4">
-              <div className="bg-gray-50 rounded-lg p-3 text-center">
-                <div className="text-2xl font-bold text-gray-900">{kindergarten.capacity}</div>
-                <div className="text-xs text-gray-500">전체 정원</div>
+              {/* 원아수 차트 */}
+              <div className="bg-white rounded-xl">
+                <DonutChart 
+                  data={childData}
+                  title="원아수"
+                  totalLabel="총 원아"
+                  totalValue={totalChildren}
+                  totalUnit="명"
+                  valueUnit="명"
+                />
               </div>
-              <div className="bg-emerald-50 rounded-lg p-3 text-center">
-                <div className="text-2xl font-bold text-emerald-600">{kindergarten.currentCount}</div>
-                <div className="text-xs text-gray-500">현재 원아 수</div>
-              </div>
-            </div>
 
-            {/* 여유 정원 바 */}
-            <div className="bg-gray-100 rounded-lg p-3 mb-4">
-              <div className="flex items-center justify-between text-sm mb-2">
-                <span className="text-gray-600">여유 정원</span>
-                <span className="font-bold text-emerald-700">
-                  {Math.max(0, kindergarten.capacity - kindergarten.currentCount)}명
-                </span>
-              </div>
-              <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-emerald-500 rounded-full transition-all"
-                  style={{
-                    width: `${Math.min(100, (kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%`,
-                  }}
+              {/* 비율 차트 */}
+              <div className="bg-white rounded-xl md:col-span-2 lg:col-span-1">
+                <RatioBarChart 
+                  data={ratioData}
+                  title="교사당/학급당 원아수"
                 />
               </div>
             </div>
-
-            {/* 연령별 현황 */}
-            <div className="bg-gray-50 rounded-lg p-3">
-              <div className="text-xs font-medium text-gray-500 mb-2">연령별 현황</div>
-              <div className="grid grid-cols-3 gap-2 text-center">
-                <div className="bg-white rounded-md p-2">
-                  <div className="text-xs text-gray-500 mb-1">만 3세</div>
-                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge3}명</div>
-                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge3} · {kindergarten.classCountAge3}학급</div>
-                </div>
-                <div className="bg-white rounded-md p-2">
-                  <div className="text-xs text-gray-500 mb-1">만 4세</div>
-                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge4}명</div>
-                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge4} · {kindergarten.classCountAge4}학급</div>
-                </div>
-                <div className="bg-white rounded-md p-2">
-                  <div className="text-xs text-gray-500 mb-1">만 5세</div>
-                  <div className="text-lg font-bold text-emerald-600">{kindergarten.currentAge5}명</div>
-                  <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityAge5} · {kindergarten.classCountAge5}학급</div>
-                </div>
-              </div>
+            
+            {/* 정원 현황 요약 */}
+            <div className="mt-6 p-4 bg-gray-50 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+               <div className="flex items-center gap-8">
+                 <div className="text-center">
+                   <div className="text-sm text-gray-500 mb-1">전체 정원</div>
+                   <div className="text-xl font-bold text-gray-900">{kindergarten.capacity}명</div>
+                 </div>
+                 <div className="w-px h-8 bg-gray-300"></div>
+                 <div className="text-center">
+                   <div className="text-sm text-gray-500 mb-1">현재 현원</div>
+                   <div className="text-xl font-bold text-emerald-600">{kindergarten.currentCount}명</div>
+                 </div>
+               </div>
+               
+               <div className="flex-1 w-full md:w-auto max-w-xs">
+                  <div className="flex justify-between text-xs mb-1.5">
+                    <span className="text-gray-600">정원 충족률</span>
+                    <span className="font-bold text-emerald-700">
+                      {Math.round((kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%
+                    </span>
+                  </div>
+                  <div className="h-2.5 bg-gray-200 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-emerald-500 rounded-full transition-all"
+                      style={{
+                        width: `${Math.min(100, (kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%`,
+                      }}
+                    />
+                  </div>
+                  <div className="text-right text-xs text-gray-400 mt-1">
+                    여유 정원 {Math.max(0, kindergarten.capacity - kindergarten.currentCount)}명
+                  </div>
+               </div>
             </div>
-
-            {/* 혼합반/특수학급 현황 */}
-            {(kindergarten.capacityMix > 0 || kindergarten.currentMix > 0 || kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0) && (
-              <div className="bg-amber-50 rounded-lg p-3 mt-3">
-                <div className="text-xs font-medium text-amber-700 mb-2">혼합반/특수학급</div>
-                <div className={`grid gap-2 text-center ${
-                  (kindergarten.capacityMix > 0 || kindergarten.currentMix > 0) && (kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0)
-                    ? 'grid-cols-2'
-                    : 'grid-cols-1'
-                }`}>
-                  {(kindergarten.capacityMix > 0 || kindergarten.currentMix > 0) && (
-                    <div className="bg-white rounded-md p-2">
-                      <div className="text-xs text-amber-600 mb-1">혼합반</div>
-                      <div className="text-lg font-bold text-emerald-600">{kindergarten.currentMix}명</div>
-                      <div className="text-[10px] text-gray-400">정원 {kindergarten.capacityMix} · {kindergarten.classCountMix}학급</div>
-                    </div>
-                  )}
-                  {(kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0) && (
-                    <div className="bg-white rounded-md p-2">
-                      <div className="text-xs text-purple-600 mb-1">특수학급</div>
-                      <div className="text-lg font-bold text-emerald-600">{kindergarten.currentSpecial}명</div>
-                      <div className="text-[10px] text-gray-400">정원 {kindergarten.capacitySpecial}</div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
           </div>
 
-          {/* 교직원 정보 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <GraduationCap className="w-4 h-4 text-emerald-600" />
-              교직원 정보
+          {/* 교사 현황 시각화 */}
+          <div className="p-6 bg-white border-b border-gray-100 mb-2">
+            <h4 className="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-emerald-500 rounded-full"></span>
+              교사현황
             </h4>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="bg-blue-50 rounded-lg p-3 text-center">
-                <div className="text-xl font-bold text-blue-600">{kindergarten.teacherCount}</div>
-                <div className="text-xs text-gray-500">전체 교사</div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 교사 자격 차트 */}
+              <div className="bg-white rounded-xl">
+                <DonutChart 
+                  data={teacherData}
+                  title="교사 자격"
+                  totalLabel="총 교사"
+                  totalValue={kindergarten.teacherCount}
+                  totalUnit="명"
+                  valueUnit="명"
+                />
               </div>
-              <div className="bg-purple-50 rounded-lg p-3 text-center">
-                <div className="text-xl font-bold text-purple-600">{kindergarten.seniorTeacherCount}</div>
-                <div className="text-xs text-gray-500">수석/부장교사</div>
+
+              {/* 근속 연수 (데이터 없음) - 대신 정보 표시 */}
+              <div className="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-xl text-center h-full min-h-[250px]">
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-3">
+                  <GraduationCap className="w-6 h-6 text-gray-400" />
+                </div>
+                <h5 className="font-bold text-gray-900 mb-1">근속 연수 데이터 미제공</h5>
+                <p className="text-sm text-gray-500 word-keep-all">
+                  현재 데이터 제공처에서 교사의 근속 연수 정보를 제공하지 않고 있습니다.
+                </p>
               </div>
-            </div>
-            <div className="mt-3 text-center">
-              <span className="text-sm text-gray-600">
-                교사 1인당 원아 수: <span className="font-bold text-gray-900">
-                  {kindergarten.teacherCount > 0
-                    ? (kindergarten.currentCount / kindergarten.teacherCount).toFixed(1)
-                    : '-'}
-                </span>명
-              </span>
             </div>
           </div>
 
@@ -385,7 +451,7 @@ export function KindergartenDetailPanel({
             </div>
           </div>
 
-          {/* 교육비용 정보 (외부 링크) */}
+          {/* 교육비용 정보 (외부 링크) - 디자인 개선 */}
           <div className="p-5 border-b border-gray-100">
             <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
               <Coins className="w-4 h-4 text-emerald-600" />
@@ -399,20 +465,20 @@ export function KindergartenDetailPanel({
               })}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-amber-50 hover:bg-amber-100 rounded-lg p-4 transition-colors group"
+              className="block bg-white border border-gray-200 hover:border-emerald-200 hover:shadow-md rounded-xl p-4 transition-all group"
             >
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-amber-100 group-hover:bg-amber-200 rounded-full flex items-center justify-center transition-colors">
-                    <Coins className="w-5 h-5 text-amber-600" />
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 bg-gray-50 group-hover:bg-emerald-50 rounded-full flex items-center justify-center transition-colors">
+                    <Coins className="w-5 h-5 text-gray-600 group-hover:text-emerald-600" />
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-gray-900 flex items-center gap-1">
+                    <div className="text-base font-semibold text-gray-900 flex items-center gap-1 group-hover:text-emerald-700 transition-colors">
                       교육비용 확인하기
-                      <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
+                      <ExternalLink className="w-3.5 h-3.5 text-gray-400 group-hover:text-emerald-500" />
                     </div>
-                    <div className="text-xs text-gray-500">
-                      유치원 알리미에서 상세 페이지 → 비용·회계 탭
+                    <div className="text-xs text-gray-500 mt-0.5">
+                      유치원 알리미에서 상세 확인 가능
                     </div>
                   </div>
                 </div>
