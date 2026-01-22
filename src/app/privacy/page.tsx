@@ -5,8 +5,23 @@ import { Footer } from '@/components/landing/Footer';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 
 export const metadata: Metadata = {
-  title: '개인정보처리방침 - 우리동네 유치원',
-  description: '우리동네 유치원 서비스의 개인정보처리방침입니다.',
+  title: '개인정보처리방침',
+  description:
+    '우리동네 유치원 서비스의 개인정보처리방침입니다. 위치 정보 수집 목적, 보유 기간, 이용자 권리 등을 안내합니다.',
+  alternates: {
+    canonical: '/privacy',
+  },
+  openGraph: {
+    title: '개인정보처리방침 - 우리동네 유치원',
+    description: '우리동네 유치원 서비스의 개인정보처리방침입니다.',
+    url: '/privacy',
+    type: 'website',
+    locale: 'ko_KR',
+  },
+  twitter: {
+    title: '개인정보처리방침 - 우리동네 유치원',
+    description: '우리동네 유치원 서비스의 개인정보처리방침입니다.',
+  },
 };
 
 export default function PrivacyPage() {

@@ -1,0 +1,12 @@
+# 네이버 SEO 최적화 - 검색엔진 크롤러 허용
+# https://searchadvisor.naver.com/guide/seo-basic-robots
+
+User-agent: *
+Allow: /
+
+# 네이버 검색로봇 (Yeti) 명시적 허용
+User-agent: Yeti
+Allow: /
+
+# 사이트맵 위치
+Sitemap: https://where-kindergarden.vercel.app/sitemap.xml

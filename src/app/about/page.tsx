@@ -13,9 +13,25 @@ import { Footer } from '@/components/landing/Footer';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 
 export const metadata: Metadata = {
-  title: '서비스 소개 - 우리동네 유치원',
+  title: '서비스 소개',
   description:
-    '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다.',
+    '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다. GPS 위치 검색, 반경 필터, 비교표 생성, 카카오톡 공유 기능을 제공합니다.',
+  alternates: {
+    canonical: '/about',
+  },
+  openGraph: {
+    title: '서비스 소개 - 우리동네 유치원',
+    description:
+      '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다.',
+    url: '/about',
+    type: 'website',
+    locale: 'ko_KR',
+  },
+  twitter: {
+    title: '서비스 소개 - 우리동네 유치원',
+    description:
+      '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다.',
+  },
 };
 
 const features = [
