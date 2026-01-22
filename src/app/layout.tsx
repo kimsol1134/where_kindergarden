@@ -29,7 +29,14 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  verification: {
+    google: '9xdRn2UOPOTpBwDt2oILqTEvY-X27sQbcy20V4p7yb4',
+    other: {
+      'naver-site-verification': 'e087398a93c79ec531bd7e5f9d5356da210c4b44',
+    },
+  },
 };
+
 
 export const viewport: Viewport = {
   width: 'device-width',
