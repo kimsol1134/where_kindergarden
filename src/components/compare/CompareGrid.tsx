@@ -1,6 +1,6 @@
 'use client';
 
-import { Layers, XCircle, Info, BookOpen, ShieldCheck, School } from 'lucide-react';
+import { Layers, XCircle, Info, BookOpen, ShieldCheck } from 'lucide-react';
 import { useCompareStore } from '@/stores';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
@@ -44,9 +44,8 @@ export function CompareGrid({ items }: CompareGridProps) {
       <div className="sticky-header bg-white border-b border-gray-100 shadow-sm">
         <div className={`grid ${gridCols}`}>
           {/* 항목 비교 라벨 */}
-          <div className="bg-gray-50 flex flex-col items-center justify-center p-4 border-r border-gray-100">
-            <Layers className="w-6 h-6 text-gray-300 mb-2" />
-            <span className="text-[10px] text-gray-400 font-medium">항목 비교</span>
+          <div className="bg-white flex flex-col items-center justify-center p-4 border-r border-gray-100">
+            <span className="text-sm text-gray-400 font-medium">항목 비교</span>
           </div>
 
           {/* 기관 카드들 */}
@@ -55,40 +54,29 @@ export function CompareGrid({ items }: CompareGridProps) {
             return (
               <div
                 key={item.kindercode}
-                className="p-4 border-r border-gray-100 last:border-r-0 relative group text-center"
+                className="p-4 border-r border-gray-100 last:border-r-0 relative group text-center flex flex-col items-center justify-between min-h-[140px]"
               >
+                <div className="flex flex-col items-center w-full pt-4">
+                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded mb-2 ${typeStyle.className}`}>
+                    {typeStyle.label}
+                  </span>
+                  <h3 className="text-base sm:text-lg font-bold leading-tight break-keep w-full px-1">
+                    {item.name}
+                  </h3>
+                  <div
+                    className={`mt-2 text-[11px] text-gray-500`}
+                  >
+                     {item.distance.toFixed(1)}km
+                  </div>
+                </div>
+
                 <button
                   onClick={() => removeItem(item.kindercode)}
-                  className="absolute top-2 right-2 text-gray-300 hover:text-gray-500"
+                  className="absolute top-2 right-2 p-1 text-gray-300 hover:text-gray-500 hover:bg-gray-50 rounded-full transition-colors"
                   aria-label={`${item.name} 제거`}
                 >
                   <XCircle className="w-5 h-5" />
                 </button>
-                <div className="flex flex-col items-center">
-                  <div className={`w-16 h-16 rounded-2xl mb-3 flex items-center justify-center transition-colors border ${
-                    item.type === 'private' ? 'bg-indigo-50/50 border-indigo-100' : 
-                    item.type === 'public' ? 'bg-emerald-50/50 border-emerald-100' : 'bg-gray-50 border-gray-100'
-                  }`}>
-                    <School 
-                      className={`w-7 h-7 ${
-                        item.type === 'private' ? 'text-indigo-500' : 
-                        item.type === 'public' ? 'text-emerald-500' : 'text-gray-400'
-                      }`} 
-                      strokeWidth={1.25} 
-                    />
-                  </div>
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded mb-1 ${typeStyle.className}`}>
-                    {typeStyle.label}
-                  </span>
-                  <h3 className="text-sm font-bold truncate w-full">{item.name}</h3>
-                  <div
-                    className={`mt-1 px-2 py-0.5 rounded text-[10px] ${
-                      item.distance === minDistance ? 'bg-emerald-50 text-emerald-700 font-bold' : 'text-gray-400'
-                    }`}
-                  >
-                    {item.distance.toFixed(1)}km
-                  </div>
-                </div>
               </div>
             );
           })}
@@ -98,7 +86,7 @@ export function CompareGrid({ items }: CompareGridProps) {
       {/* 비교 내용 */}
       <div className="bg-white">
         {/* Section: 기본 정보 */}
-        <CompareSection icon={<Info className="w-3.5 h-3.5" />} title="기본 정보">
+        <CompareSection title="기본 정보">
           <CompareRow label="주소" gridCols={gridCols}>
             {items.map((item) => (
               <div key={item.kindercode} className="p-4 text-sm text-center text-gray-600 truncate">
@@ -136,7 +124,7 @@ export function CompareGrid({ items }: CompareGridProps) {
         </CompareSection>
 
         {/* Section: 교육 및 활동 */}
-        <CompareSection icon={<BookOpen className="w-3.5 h-3.5" />} title="교육 및 활동">
+        <CompareSection title="교육 및 활동">
           <CompareRow label="방과후 과정" gridCols={gridCols}>
             {items.map((item) => (
               <div
@@ -156,7 +144,7 @@ export function CompareGrid({ items }: CompareGridProps) {
         </CompareSection>
 
         {/* Section: 시설 및 안전 */}
-        <CompareSection icon={<ShieldCheck className="w-3.5 h-3.5" />} title="시설 및 안전">
+        <CompareSection title="시설 및 안전">
           <CompareRow label="통학차량" gridCols={gridCols}>
             {items.map((item) => {
               const isBestBus = item.hasBus && (maxBusCount > 0 ? item.busCount === maxBusCount : true);
@@ -222,18 +210,16 @@ export function CompareGrid({ items }: CompareGridProps) {
 
 /** 비교 섹션 컴포넌트 */
 function CompareSection({
-  icon,
   title,
   children,
 }: {
-  icon: React.ReactNode;
   title: string;
   children: React.ReactNode;
 }) {
   return (
     <div className="border-b border-gray-100">
-      <div className="px-4 py-3 bg-gray-50/50 text-xs font-bold text-gray-500 flex items-center gap-1.5">
-        {icon} {title}
+      <div className="px-4 py-6 bg-white text-lg font-bold text-gray-900 border-b border-gray-100/50">
+        {title}
       </div>
       {children}
     </div>
