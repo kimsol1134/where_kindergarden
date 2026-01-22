@@ -49,7 +49,7 @@ interface FavoritesPanelProps {
 export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
   const router = useRouter();
   const { items, removeItem, clearAll } = useFavoriteStore();
-  const { addItem: addToCompare, removeItem: removeFromCompare, isInCompare, canAdd: canAddToCompare } = useCompareStore();
+  const { addItem: addToCompare, removeItem: removeFromCompare, setItems, isInCompare, canAdd: canAddToCompare } = useCompareStore();
 
   // 상세보기 상태
   const [detailKindercode, setDetailKindercode] = useState<string | null>(null);
@@ -160,41 +160,34 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     setSelectedItems(newSelected);
   };
 
-  // 선택된 아이템 모두 비교함에 추가 후 비교 페이지로 이동
+  // 선택된 아이템으로 비교함을 교체 후 비교 페이지로 이동
   const handleBulkCompare = useCallback(() => {
     const kindergartenStore = useKindergartenStore.getState();
     const location = useSearchStore.getState().location;
 
+    // 선택한 항목들을 Kindergarten 객체로 변환
+    const kindergartens: Kindergarten[] = [];
     selectedItems.forEach((kindercode) => {
-      if (!isInCompare(kindercode)) {
-        const raw = kindergartenStore.getByKindercode(kindercode);
-        if (raw) {
-          const kindergarten = transformToKindergarten(raw, location ?? undefined);
-          addToCompare(kindergarten);
-        }
+      const raw = kindergartenStore.getByKindercode(kindercode);
+      if (raw) {
+        kindergartens.push(transformToKindergarten(raw, location ?? undefined));
       }
     });
+
+    // 비교함을 선택한 항목으로 교체 (기존 항목 대체)
+    setItems(kindergartens);
 
     setSelectedItems(new Set());
     setIsSelectMode(false);
     onClose();
     router.push('/compare');
-  }, [selectedItems, addToCompare, isInCompare, onClose, router]);
+  }, [selectedItems, setItems, onClose, router]);
 
   // 선택 취소
   const handleCancelSelect = () => {
     setSelectedItems(new Set());
     setIsSelectMode(false);
   };
-
-  // 비교함에 추가 가능한 선택된 아이템 수
-  const selectableCount = useMemo(() => {
-    let count = 0;
-    selectedItems.forEach((kindercode) => {
-      if (!isInCompare(kindercode)) count++;
-    });
-    return count;
-  }, [selectedItems, isInCompare]);
 
   if (!isOpen) return null;
 
@@ -372,9 +365,9 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
               // 선택 모드: 비교하기 버튼
               <button
                 onClick={handleBulkCompare}
-                disabled={selectableCount === 0}
+                disabled={selectedItems.size === 0}
                 className={`w-full py-3 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 ${
-                  selectableCount > 0
+                  selectedItems.size > 0
                     ? 'bg-emerald-500 text-white hover:bg-emerald-600'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 }`}
