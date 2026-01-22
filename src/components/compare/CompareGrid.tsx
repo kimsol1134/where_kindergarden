@@ -1,6 +1,6 @@
 'use client';
 
-import { Layers, XCircle, Info, BookOpen, ShieldCheck, Calendar, School } from 'lucide-react';
+import { Layers, XCircle, Info, BookOpen, ShieldCheck, School } from 'lucide-react';
 import { useCompareStore } from '@/stores';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
@@ -174,17 +174,7 @@ export function CompareGrid({ items }: CompareGridProps) {
         </p>
       </div>
 
-      {/* Floating Action Buttons */}
-      <div className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 z-40">
-        <div className="max-w-5xl mx-auto flex gap-3">
-          <div className="flex-1">
-            <button className="w-full h-full flex flex-col items-center justify-center py-2 px-4 rounded-xl bg-emerald-600 text-white hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-100">
-              <Calendar className="w-5 h-5 mb-1" />
-              <span className="text-[11px] font-bold">방문 예약</span>
-            </button>
-          </div>
-        </div>
-      </div>
+
     </>
   );
 }

@@ -43,6 +43,15 @@ export interface Kindergarten {
   currentAge4: number;
   currentAge5: number;
 
+  // 혼합반
+  classCountMix: number;
+  capacityMix: number;
+  currentMix: number;
+
+  // 특수학급
+  capacitySpecial: number;
+  currentSpecial: number;
+
   // 운영 정보
   hasBus: boolean;
   busCount: number;

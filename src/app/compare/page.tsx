@@ -43,6 +43,15 @@ function transformToKindergarten(raw: KindergartenRaw): Kindergarten {
     currentAge4: raw.current_age4,
     currentAge5: raw.current_age5,
 
+    // 혼합반
+    classCountMix: raw.class_count_mix,
+    capacityMix: raw.capacity_mix,
+    currentMix: raw.current_mix,
+
+    // 특수학급
+    capacitySpecial: raw.capacity_special,
+    currentSpecial: raw.current_special,
+
     // 운영 정보
     hasBus: raw.has_bus,
     busCount: raw.bus_count,

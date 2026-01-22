@@ -27,6 +27,11 @@ export interface KindergartenRaw {
   current_age3: number;
   current_age4: number;
   current_age5: number;
+  class_count_mix: number;
+  capacity_mix: number;
+  current_mix: number;
+  capacity_special: number;
+  current_special: number;
   establish_date: string;
   has_bus: boolean;
   bus_count: number;

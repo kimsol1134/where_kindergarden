@@ -84,7 +84,7 @@ export function KindergartenDetailPanel({
 }: KindergartenDetailPanelProps) {
   const typeStyle = TYPE_STYLES[kindergarten.type];
   const totalClassCount =
-    kindergarten.classCountAge3 + kindergarten.classCountAge4 + kindergarten.classCountAge5;
+    kindergarten.classCountAge3 + kindergarten.classCountAge4 + kindergarten.classCountAge5 + kindergarten.classCountMix;
 
   return (
     <>
@@ -229,6 +229,36 @@ export function KindergartenDetailPanel({
                 </div>
               </div>
             </div>
+
+            {/* 혼합반/특수학급 현황 */}
+            {(kindergarten.capacityMix > 0 || kindergarten.currentMix > 0 || kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0) && (
+              <div className="bg-amber-50 rounded-lg p-3 mt-3">
+                <div className="text-xs font-medium text-amber-700 mb-2">혼합반/특수학급</div>
+                <div className={`grid gap-2 text-center ${
+                  (kindergarten.capacityMix > 0 || kindergarten.currentMix > 0) && (kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0)
+                    ? 'grid-cols-2'
+                    : 'grid-cols-1'
+                }`}>
+                  {(kindergarten.capacityMix > 0 || kindergarten.currentMix > 0) && (
+                    <div className="bg-white rounded-md p-2">
+                      <div className="text-xs text-amber-600 mb-1">혼합반</div>
+                      <div className="text-sm font-bold text-gray-900">
+                        {kindergarten.currentMix}/{kindergarten.capacityMix}
+                      </div>
+                      <div className="text-[10px] text-gray-400">{kindergarten.classCountMix}학급</div>
+                    </div>
+                  )}
+                  {(kindergarten.capacitySpecial > 0 || kindergarten.currentSpecial > 0) && (
+                    <div className="bg-white rounded-md p-2">
+                      <div className="text-xs text-purple-600 mb-1">특수학급</div>
+                      <div className="text-sm font-bold text-gray-900">
+                        {kindergarten.currentSpecial}/{kindergarten.capacitySpecial}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* 교직원 정보 */}

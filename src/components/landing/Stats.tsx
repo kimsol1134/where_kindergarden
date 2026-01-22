@@ -5,12 +5,12 @@ export function Stats() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="p-6">
-            <div className="text-4xl font-bold mb-2 text-emerald-400">8,500+</div>
-            <div className="text-emerald-100">등록된 유치원/어린이집</div>
+            <div className="text-4xl font-bold mb-2 text-emerald-400">7,950+</div>
+            <div className="text-emerald-100">등록된 유치원</div>
           </div>
           <div className="p-6 border-t md:border-t-0 md:border-l border-emerald-800">
-            <div className="text-4xl font-bold mb-2 text-emerald-400">12만+</div>
-            <div className="text-emerald-100">누적 학부모 방문수</div>
+            <div className="text-4xl font-bold mb-2 text-emerald-400">17개 시/도</div>
+            <div className="text-emerald-100">전국 유치원 정보 보유</div>
           </div>
           <div className="p-6 border-t md:border-t-0 md:border-l border-emerald-800">
             <div className="text-4xl font-bold mb-2 text-emerald-400">무료</div>

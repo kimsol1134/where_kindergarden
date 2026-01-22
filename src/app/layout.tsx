@@ -10,8 +10,12 @@ export const metadata: Metadata = {
     title: '우리동네 유치원',
     description:
       '현재 위치 기반으로 주변 유치원과 어린이집을 검색하고 비교해보세요.',
+    images: ['/og-image.png'],
     type: 'website',
     locale: 'ko_KR',
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 };
 

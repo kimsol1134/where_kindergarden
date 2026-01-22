@@ -176,7 +176,7 @@ export function Features() {
                   <tbody className="divide-y divide-gray-50">
                     <tr>
                       <td className="p-4 bg-gray-50/50 text-gray-500">유형</td>
-                      <td className="p-4 text-emerald-600 font-bold bg-emerald-50/30">공립</td>
+                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">공립</td>
                       <td className="p-4 text-gray-700">민간</td>
                       <td className="p-4 text-gray-700">사립</td>
                     </tr>
