@@ -52,7 +52,7 @@ export function Footer() {
               className="w-16 h-auto"
             />
             <p className="text-[10px] text-gray-500 leading-relaxed">
-              본 저작물은 '교육부'에서 '2026년' 작성하여 공공누리 제1유형으로 개방한 '전국유치원표준데이터'를 이용하였으며,
+              본 저작물은 &apos;교육부&apos;에서 &apos;2026년&apos; 작성하여 공공누리 제1유형으로 개방한 &apos;전국유치원표준데이터&apos;를 이용하였으며,
               해당 저작물은 <a href="https://e-childschoolinfo.moe.go.kr" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 underline">유치원 알리미</a>에서 무료로 다운받으실 수 있습니다.
             </p>
           </div>

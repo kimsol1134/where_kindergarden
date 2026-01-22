@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 
@@ -77,6 +78,14 @@ export const metadata: Metadata = {
       'naver-site-verification': 'e087398a93c79ec531bd7e5f9d5356da210c4b44',
     },
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: '우리동네 유치원',
+    startupImage: [
+      '/startup.png',
+    ],
+  },
 };
 
 
@@ -85,6 +94,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  viewportFit: 'cover', // iOS Safe Area 지원
 };
 
 export default function RootLayout({
@@ -95,7 +105,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="min-h-screen bg-white antialiased">
-        <KakaoSDKProvider>{children}</KakaoSDKProvider>
+        <GlobalProviders>
+          <KakaoSDKProvider>{children}</KakaoSDKProvider>
+        </GlobalProviders>
         {/* 네이버 SEO - 구조화된 데이터 */}
         <WebsiteJsonLd />
         <OrganizationJsonLd />

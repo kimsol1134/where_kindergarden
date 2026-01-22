@@ -40,6 +40,7 @@ export function SearchHeader() {
 
   // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- 마운트 상태 추적은 의도적인 패턴
     setHasMounted(true);
   }, []);
 
@@ -183,7 +184,7 @@ export function SearchHeader() {
   }, [clearSelection, setAddress]);
 
   return (
-    <header className="relative bg-white border-b border-gray-200 z-50 flex-none">
+    <header className="relative bg-white border-b border-gray-200 z-50 flex-none safe-area-top">
       <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
@@ -368,6 +369,19 @@ export function SearchHeader() {
             </div>
           )}
         </div>
+
+        {/* Header Actions - 모바일: 찜목록만 표시 */}
+        <button
+          onClick={() => setIsFavoritesPanelOpen(true)}
+          className="md:hidden relative p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100 flex-shrink-0"
+        >
+          <Heart className="w-5 h-5" />
+          {hasMounted && favoriteCount > 0 ? (
+            <span className="absolute -top-0.5 -right-0.5 bg-red-500 text-white text-[10px] min-w-4 h-4 rounded-full flex items-center justify-center font-bold px-1">
+              {favoriteCount > 99 ? '99+' : favoriteCount}
+            </span>
+          ) : null}
+        </button>
 
         {/* Header Actions - 데스크톱에서만 표시 */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">

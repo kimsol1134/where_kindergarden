@@ -47,3 +47,13 @@ next-env.d.ts
 
 # data output (large JSON files)
 scripts/data-output/
+
+# Capacitor native platforms (generated web assets)
+ios/App/App/public/
+ios/App/Pods/
+ios/DerivedData/
+android/app/src/main/assets/public/
+android/.gradle/
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/

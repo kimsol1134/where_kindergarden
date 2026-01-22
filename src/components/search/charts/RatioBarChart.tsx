@@ -16,11 +16,31 @@ interface RatioBarChartProps {
   title: string;
 }
 
+interface CustomTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload: RatioData }>;
+}
+
+function CustomTooltip({ active, payload }: CustomTooltipProps) {
+  if (active && payload && payload.length) {
+    const item = payload[0].payload;
+    return (
+      <div className="bg-white p-2 rounded-lg shadow-lg border border-gray-100 text-xs">
+        <div className="font-bold text-gray-900 mb-1">{item.name}</div>
+        <div className="text-emerald-600 font-medium">
+          {item.description}: {item.value}{item.unit}
+        </div>
+      </div>
+    );
+  }
+  return null;
+}
+
 export function RatioBarChart({ data, title }: RatioBarChartProps) {
   return (
     <div className="flex flex-col h-full">
       <h4 className="text-sm font-bold text-gray-900 mb-4 text-center">{title}</h4>
-      
+
       <div className="h-[250px] w-full">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -34,32 +54,19 @@ export function RatioBarChart({ data, title }: RatioBarChartProps) {
             barSize={60}
           >
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E5E7EB" />
-            <XAxis 
-              dataKey="name" 
+            <XAxis
+              dataKey="name"
               axisLine={false}
               tickLine={false}
               tick={{ fill: '#4B5563', fontSize: 12 }}
               dy={10}
             />
-            <YAxis 
-              hide={true} 
+            <YAxis
+              hide={true}
             />
             <Tooltip
               cursor={{ fill: 'transparent' }}
-              content={({ active, payload }: { active?: boolean; payload?: any }) => {
-                if (active && payload && payload.length) {
-                  const data = payload[0].payload;
-                  return (
-                    <div className="bg-white p-2 rounded-lg shadow-lg border border-gray-100 text-xs">
-                      <div className="font-bold text-gray-900 mb-1">{data.name}</div>
-                      <div className="text-emerald-600 font-medium">
-                        {data.description}: {data.value}{data.unit}
-                      </div>
-                    </div>
-                  );
-                }
-                return null;
-              }}
+              content={<CustomTooltip />}
             />
             <Bar 
               dataKey="value" 

@@ -1,5 +1,6 @@
 'use client';
 
+/* eslint-disable react-hooks/incompatible-library -- TanStack Virtual은 React Compiler와 호환되지 않음 */
 import { useCallback, useMemo, useRef, useEffect } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
@@ -38,7 +39,6 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
     error,
     selectedId,
     sortBy,
-    results: rawResults,
     getFilteredAndSortedResults,
     setDetailId,
     getDetailKindergarten,
@@ -60,12 +60,7 @@ export function KindergartenList({ mobileView, onToggleMobileView }: Kindergarte
   } = useFavoriteStore();
 
   // Memoize filtered and sorted results to avoid recalculation on every render
-  const results = useMemo(() => getFilteredAndSortedResults(), [
-    filters.type, filters.hasBus, filters.hasVacancy,
-    filters.hasIndoorPlayground, filters.hasLargeSpace,
-    filters.hasModernBuilding, sortBy, rawResults.length,
-    getFilteredAndSortedResults
-  ]);
+  const results = useMemo(() => getFilteredAndSortedResults(), [getFilteredAndSortedResults]);
   const detailKindergarten = getDetailKindergarten();
 
   // Scroll container ref for virtualization

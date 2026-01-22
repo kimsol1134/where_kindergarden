@@ -30,6 +30,14 @@ declare global {
           content: string;
           removable?: boolean;
         }) => KakaoInfoWindow;
+        CustomOverlay: new (options: {
+          content: string | HTMLElement;
+          position: KakaoLatLng;
+          xAnchor?: number;
+          yAnchor?: number;
+          zIndex?: number;
+          map?: KakaoMap;
+        }) => KakaoCustomOverlay;
         event: {
           addListener: (
             target: KakaoMarker | KakaoMap,
@@ -43,8 +51,91 @@ declare global {
           ) => void;
         };
         LatLngBounds: new () => KakaoLatLngBounds;
+        services: {
+          Geocoder: new () => KakaoGeocoder;
+          Places: new () => KakaoPlaces;
+          Status: {
+            OK: string;
+            ZERO_RESULT: string;
+            ERROR: string;
+          };
+        };
       };
     };
+  }
+
+  /** Kakao Geocoder 인터페이스 */
+  interface KakaoGeocoder {
+    addressSearch: (
+      address: string,
+      callback: (result: KakaoAddressResult[], status: string) => void
+    ) => void;
+    coord2RegionCode: (
+      lng: number,
+      lat: number,
+      callback: (result: KakaoRegionResult[], status: string) => void
+    ) => void;
+  }
+
+  /** Kakao Places 인터페이스 */
+  interface KakaoPlaces {
+    keywordSearch: (
+      keyword: string,
+      callback: (result: KakaoPlaceResult[], status: string, pagination: KakaoPagination) => void,
+      options?: { size?: number }
+    ) => void;
+  }
+
+  /** Kakao 주소 검색 결과 */
+  interface KakaoAddressResult {
+    address_name: string;
+    x: string;
+    y: string;
+    address?: {
+      region_1depth_name: string;
+      region_2depth_name: string;
+      region_3depth_name: string;
+      h_code: string;
+      b_code: string;
+    };
+    road_address?: {
+      address_name: string;
+      region_1depth_name: string;
+      region_2depth_name: string;
+      region_3depth_name: string;
+    };
+  }
+
+  /** Kakao 지역 코드 결과 */
+  interface KakaoRegionResult {
+    region_type: string;
+    address_name: string;
+    region_1depth_name: string;
+    region_2depth_name: string;
+    region_3depth_name: string;
+    code: string;
+    x: number;
+    y: number;
+  }
+
+  /** Kakao 장소 검색 결과 */
+  interface KakaoPlaceResult {
+    id: string;
+    place_name: string;
+    category_name: string;
+    address_name: string;
+    road_address_name: string;
+    x: string;
+    y: string;
+    phone: string;
+    place_url: string;
+  }
+
+  /** Kakao 페이지네이션 */
+  interface KakaoPagination {
+    totalCount: number;
+    hasNextPage: boolean;
+    hasPrevPage: boolean;
   }
 
   interface KakaoLatLng {
@@ -80,6 +171,12 @@ declare global {
     setContent: (content: string) => void;
   }
 
+  interface KakaoCustomOverlay {
+    setMap: (map: KakaoMap | null) => void;
+    setPosition: (position: KakaoLatLng) => void;
+    setContent: (content: string | HTMLElement) => void;
+  }
+
   interface KakaoLatLngBounds {
     extend: (latLng: KakaoLatLng) => void;
   }
@@ -106,9 +203,13 @@ interface KakaoMapOptions {
   onMarkerClick?: (kindergarten: Kindergarten) => void;
 }
 
-const KAKAO_SDK_URL = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false`;
+const KAKAO_SDK_URL = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_JS_KEY}&autoload=false&libraries=services`;
 const DEFAULT_CENTER: Coordinates = { lat: 37.5665, lng: 126.978 }; // 서울시청
 const DEFAULT_LEVEL = 5;
+const SDK_LOAD_TIMEOUT_MS = 10000; // SDK 로드 타임아웃 (10초)
+
+// iOS 디버깅 플래그 (Safari Web Inspector에서 확인용)
+const DEBUG_KAKAO_MAPS = false;
 
 /** 마커 색상 상수 */
 const MARKER_COLORS = {
@@ -116,6 +217,12 @@ const MARKER_COLORS = {
   selected: '#059669',     // 진한 에메랄드
   compare: '#F97316',      // 오렌지
   compareSelected: '#EA580C', // 진한 오렌지
+} as const;
+
+/** 마커 크기 상수 */
+const MARKER_SIZE = {
+  width: 20,
+  height: 25,
 } as const;
 
 /**
@@ -138,31 +245,31 @@ function generateMarkerDataUrl(options: {
     fillColor = isSelected ? MARKER_COLORS.selected : MARKER_COLORS.default;
   }
 
-  // SVG 생성
+  // SVG 생성 (20x25 크기로 축소)
   let svg: string;
   if (isCompare) {
     // 비교함 마커: 숫자 표시
     svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
-        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
-        <circle cx="16" cy="14" r="10" fill="white"/>
-        <text x="16" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="${fillColor}">${comparePosition}</text>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+        <path d="M10 0C4.477 0 0 4.477 0 10c0 5.523 10 15 10 15s10-9.477 10-15C20 4.477 15.523 0 10 0z" fill="${fillColor}"/>
+        <circle cx="10" cy="9" r="6" fill="white"/>
+        <text x="10" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="${fillColor}">${comparePosition}</text>
       </svg>
     `;
   } else if (isSelected) {
     // 선택된 마커: 채워진 원
     svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
-        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
-        <circle cx="16" cy="14" r="6" fill="white"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+        <path d="M10 0C4.477 0 0 4.477 0 10c0 5.523 10 15 10 15s10-9.477 10-15C20 4.477 15.523 0 10 0z" fill="${fillColor}"/>
+        <circle cx="10" cy="9" r="4" fill="white"/>
       </svg>
     `;
   } else {
     // 기본 마커: 링 모양
     svg = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
-        <path d="M16 0C7.163 0 0 7.163 0 16c0 8.837 16 24 16 24s16-15.163 16-24C32 7.163 24.837 0 16 0z" fill="${fillColor}"/>
-        <circle cx="16" cy="14" r="6" fill="none" stroke="white" stroke-width="2"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+        <path d="M10 0C4.477 0 0 4.477 0 10c0 5.523 10 15 10 15s10-9.477 10-15C20 4.477 15.523 0 10 0z" fill="${fillColor}"/>
+        <circle cx="10" cy="9" r="4" fill="none" stroke="white" stroke-width="1.5"/>
       </svg>
     `;
   }
@@ -188,23 +295,103 @@ export function useKakaoMap(
   const mapRef = useRef<KakaoMap | null>(null);
   const markersRef = useRef<MarkerData[]>([]);
   const currentLocationMarkerRef = useRef<KakaoMarker | null>(null);
-  const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
+  const customOverlayRef = useRef<KakaoCustomOverlay | null>(null);
   const selectedMarkerIdRef = useRef<string | null>(null);
   const compareItemsRef = useRef<string[]>([]); // 비교함 아이템 ID 배열 (순서 보존)
 
   // SDK 스크립트 로드
   useEffect(() => {
+    // 디버그 로깅 함수
+    const debugLog = (message: string, data?: Record<string, unknown>) => {
+      if (DEBUG_KAKAO_MAPS) {
+        const prefix = '[KakaoMap Debug]';
+        if (data) {
+          console.log(prefix, message, data);
+        } else {
+          console.log(prefix, message);
+        }
+      }
+    };
+
+    // 초기 환경 정보 로깅
+    debugLog('=== Kakao Maps SDK 로드 시작 ===');
+    debugLog('환경 정보', {
+      origin: window.location.origin,
+      href: window.location.href,
+      protocol: window.location.protocol,
+      hostname: window.location.hostname,
+      referrer: document.referrer || '(없음)',
+      userAgent: navigator.userAgent,
+      apiKeyExists: !!process.env.NEXT_PUBLIC_KAKAO_JS_KEY,
+      apiKeyPrefix: process.env.NEXT_PUBLIC_KAKAO_JS_KEY?.substring(0, 8) + '...',
+    });
+
+    // API 키 체크
+    if (!process.env.NEXT_PUBLIC_KAKAO_JS_KEY) {
+      debugLog('❌ API 키 없음');
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- SDK 로드 실패 시 상태 업데이트 필요
+      setState({
+        isLoaded: false,
+        isError: true,
+        errorMessage: 'Kakao API 키가 설정되지 않았습니다.',
+      });
+      return;
+    }
+
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
+    let isResolved = false;
+
+    const resolveSuccess = () => {
+      if (isResolved) return;
+      isResolved = true;
+      if (timeoutId) clearTimeout(timeoutId);
+      debugLog('✅ SDK 로드 성공', {
+        kakaoExists: !!window.kakao,
+        kakaoMapsExists: !!window.kakao?.maps,
+      });
+      setState({ isLoaded: true, isError: false, errorMessage: null });
+    };
+
+    const resolveError = (message: string) => {
+      if (isResolved) return;
+      isResolved = true;
+      if (timeoutId) clearTimeout(timeoutId);
+      debugLog('❌ SDK 로드 실패', {
+        message,
+        kakaoExists: !!window.kakao,
+        kakaoMapsExists: !!window.kakao?.maps,
+        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
+      });
+      setState({ isLoaded: false, isError: true, errorMessage: message });
+    };
+
     const existingScript = document.getElementById('kakao-maps-sdk');
 
     if (existingScript) {
+      debugLog('기존 스크립트 발견', {
+        kakaoExists: !!window.kakao,
+        kakaoMapsExists: !!window.kakao?.maps,
+      });
       // 이미 로드된 경우
       if (window.kakao?.maps) {
-        window.kakao.maps.load(() => {
-          setState({ isLoaded: true, isError: false, errorMessage: null });
-        });
+        window.kakao.maps.load(resolveSuccess);
+      } else {
+        // 스크립트는 있지만 kakao 객체가 없는 경우 - 로드 실패
+        resolveError('Kakao Maps SDK 로드에 실패했습니다. 도메인 설정을 확인해주세요.');
       }
       return;
     }
+
+    // 타임아웃 설정 (SDK 로드가 조용히 실패하는 경우 대응)
+    debugLog('스크립트 로드 시작, 타임아웃: ' + SDK_LOAD_TIMEOUT_MS + 'ms');
+    timeoutId = setTimeout(() => {
+      debugLog('⏱️ 타임아웃 발생', {
+        kakaoExists: !!window.kakao,
+        kakaoMapsExists: !!window.kakao?.maps,
+        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
+      });
+      resolveError('지도 로딩 시간이 초과되었습니다. 네트워크 연결을 확인해주세요.');
+    }, SDK_LOAD_TIMEOUT_MS);
 
     const script = document.createElement('script');
     script.id = 'kakao-maps-sdk';
@@ -212,22 +399,38 @@ export function useKakaoMap(
     script.async = true;
 
     script.onload = () => {
-      window.kakao.maps.load(() => {
-        setState({ isLoaded: true, isError: false, errorMessage: null });
+      debugLog('스크립트 onload 이벤트', {
+        kakaoExists: !!window.kakao,
+        kakaoMapsExists: !!window.kakao?.maps,
+        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
+        kakaoType: typeof window.kakao,
       });
+
+      if (window.kakao?.maps) {
+        debugLog('kakao.maps.load() 호출');
+        window.kakao.maps.load(() => {
+          debugLog('kakao.maps.load() 콜백 실행');
+          resolveSuccess();
+        });
+      } else {
+        debugLog('❌ window.kakao.maps 없음 - 도메인 검증 실패 가능성');
+        resolveError('Kakao Maps SDK가 로드되었지만 초기화에 실패했습니다.');
+      }
     };
 
-    script.onerror = () => {
-      setState({
-        isLoaded: false,
-        isError: true,
-        errorMessage: 'Kakao Maps SDK 로드에 실패했습니다.',
+    script.onerror = (error) => {
+      debugLog('❌ 스크립트 onerror 이벤트', {
+        error: String(error),
+        errorType: typeof error,
       });
+      resolveError('Kakao Maps SDK 로드에 실패했습니다. 네트워크 연결을 확인해주세요.');
     };
 
     document.head.appendChild(script);
+    debugLog('스크립트 태그 추가됨');
 
     return () => {
+      if (timeoutId) clearTimeout(timeoutId);
       // 스크립트는 재사용을 위해 제거하지 않음
     };
   }, []);
@@ -247,11 +450,7 @@ export function useKakaoMap(
 
     mapRef.current = new kakao.maps.Map(containerRef.current, mapOptions);
 
-    // 인포윈도우 생성
-    infoWindowRef.current = new kakao.maps.InfoWindow({
-      content: '',
-      removable: true,
-    });
+    // CustomOverlay는 표시할 때 생성
   }, [state.isLoaded, containerRef, center.lat, center.lng, level]);
 
   // 지도 중심 이동
@@ -270,17 +469,67 @@ export function useKakaoMap(
 
   // 인포윈도우 표시
   const showInfoWindow = useCallback((marker: KakaoMarker, kindergarten: Kindergarten) => {
-    if (!infoWindowRef.current || !mapRef.current) return;
+    if (!mapRef.current || !window.kakao) return;
 
+    // 기존 오버레이 제거
+    if (customOverlayRef.current) {
+      customOverlayRef.current.setMap(null);
+    }
+
+    const position = marker.getPosition();
+
+    // 닫기 버튼이 있는 스타일링된 컨텐츠
     const content = `
-      <div style="padding:8px;min-width:150px;font-size:13px;">
-        <strong style="display:block;margin-bottom:4px;">${kindergarten.name}</strong>
-        <span style="color:#666;">${kindergarten.distance.toFixed(1)}km</span>
+      <div style="
+        position: relative;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        padding: 10px 12px;
+        min-width: 120px;
+        font-size: 13px;
+        border: 1px solid #e5e7eb;
+        transform: translateY(-8px);
+      ">
+        <button onclick="this.parentElement.parentElement.style.display='none'" style="
+          position: absolute;
+          top: 4px;
+          right: 6px;
+          background: none;
+          border: none;
+          font-size: 16px;
+          cursor: pointer;
+          color: #9ca3af;
+          padding: 0;
+          line-height: 1;
+        ">×</button>
+        <strong style="display: block; margin-bottom: 3px; padding-right: 16px; color: #111827;">${kindergarten.name}</strong>
+        <span style="color: #6b7280; font-size: 12px;">${kindergarten.distance.toFixed(1)}km</span>
+        <div style="
+          position: absolute;
+          bottom: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid white;
+          filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+        "></div>
       </div>
     `;
 
-    infoWindowRef.current.setContent(content);
-    infoWindowRef.current.open(mapRef.current, marker);
+    // 새 CustomOverlay 생성 (yAnchor를 높게 설정하여 마커 위에 표시)
+    customOverlayRef.current = new window.kakao.maps.CustomOverlay({
+      content,
+      position,
+      xAnchor: 0.5,
+      yAnchor: 1.3, // 마커 위로 충분히 올림
+      zIndex: 100,
+    });
+
+    customOverlayRef.current.setMap(mapRef.current);
   }, []);
 
   // 비교함 위치 가져오기 (1, 2, 3 또는 null)
@@ -300,8 +549,8 @@ export function useKakaoMap(
       // 마커 이미지 설정 (비교함 상태 포함)
       const comparePosition = getComparePosition(kindergarten.kindercode);
       const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
-      const imageSize = new kakao.maps.Size(32, 40);
-      const imageOption = { offset: new kakao.maps.Point(16, 40) };
+      const imageSize = new kakao.maps.Size(MARKER_SIZE.width, MARKER_SIZE.height);
+      const imageOption = { offset: new kakao.maps.Point(MARKER_SIZE.width / 2, MARKER_SIZE.height) };
       const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
 
       const marker = new kakao.maps.Marker({
@@ -372,8 +621,8 @@ export function useKakaoMap(
       const isSelected = kindergarten.kindercode === id;
       const comparePosition = getComparePosition(kindergarten.kindercode);
       const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
-      const imageSize = new window.kakao.maps.Size(32, 40);
-      const imageOption = { offset: new window.kakao.maps.Point(16, 40) };
+      const imageSize = new window.kakao.maps.Size(MARKER_SIZE.width, MARKER_SIZE.height);
+      const imageOption = { offset: new window.kakao.maps.Point(MARKER_SIZE.width / 2, MARKER_SIZE.height) };
       const markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
       marker.setImage(markerImage);
 
@@ -395,8 +644,8 @@ export function useKakaoMap(
       const isSelected = kindergarten.kindercode === selectedMarkerIdRef.current;
       const comparePosition = getComparePosition(kindergarten.kindercode);
       const imageSrc = generateMarkerDataUrl({ isSelected, comparePosition });
-      const imageSize = new window.kakao.maps.Size(32, 40);
-      const imageOption = { offset: new window.kakao.maps.Point(16, 40) };
+      const imageSize = new window.kakao.maps.Size(MARKER_SIZE.width, MARKER_SIZE.height);
+      const imageOption = { offset: new window.kakao.maps.Point(MARKER_SIZE.width / 2, MARKER_SIZE.height) };
       const markerImage = new window.kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
       marker.setImage(markerImage);
     });
@@ -437,7 +686,9 @@ export function useKakaoMap(
 
   // 인포윈도우 닫기
   const closeInfoWindow = useCallback(() => {
-    infoWindowRef.current?.close();
+    if (customOverlayRef.current) {
+      customOverlayRef.current.setMap(null);
+    }
   }, []);
 
   // 지도 존재 여부 확인 (렌더링 중 ref 접근 방지)
