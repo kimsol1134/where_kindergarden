@@ -157,6 +157,13 @@
   top: env(safe-area-inset-top, 0px);
 }
 
+/* 비교 페이지 - 기관 카드 sticky (헤더 아래 고정) */
+.sticky-header {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 64px);
+  z-index: 20;
+}
+
 /* Fixed 전체 화면 패널용 - inset-y 대체 */
 .safe-inset-y {
   top: env(safe-area-inset-top, 0px);

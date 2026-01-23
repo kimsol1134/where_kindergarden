@@ -39,7 +39,7 @@ export function CompareHeader() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky safe-top-offset z-30 safe-area-top">
+    <header className="bg-white border-b border-gray-200 sticky safe-top-offset z-30">
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button

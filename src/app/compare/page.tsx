@@ -12,7 +12,7 @@ import { transformToKindergarten } from '@/lib/transforms';
 
 function CompareLoading() {
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen">
+    <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
       <CompareHeader />
       <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
         <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
@@ -63,7 +63,7 @@ function CompareContent() {
   // URL에 ids가 있지만 아직 데이터 로드 중인 경우 로딩 표시
   if (idsParam && (isLoading || !isLoaded) && items.length === 0) {
     return (
-      <div className="bg-gray-50 text-gray-900 min-h-screen">
+      <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
         <CompareHeader />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
@@ -76,7 +76,7 @@ function CompareContent() {
   // 비교할 아이템이 없으면 빈 상태 표시
   if (items.length === 0) {
     return (
-      <div className="bg-gray-50 text-gray-900 min-h-screen">
+      <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
         <CompareHeader />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
@@ -98,7 +98,7 @@ function CompareContent() {
   }
 
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen">
+    <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
       <CompareHeader />
       <main className="max-w-5xl mx-auto pb-24">
         <CompareGrid items={items} />
