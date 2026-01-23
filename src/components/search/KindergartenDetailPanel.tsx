@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import {
   X,
@@ -19,11 +20,14 @@ import {
   Coins,
   Loader2,
   Heart,
+  MessageCircle,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore, useFavoriteStore } from '@/stores';
+import { QuestionList } from '@/components/qna/QuestionList';
+import { useQuestions } from '@/hooks/useQuestions';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -102,6 +106,8 @@ function InfoRow({
   );
 }
 
+type DetailTab = 'info' | 'qna';
+
 export function KindergartenDetailPanel({
   kindergarten,
   onClose,
@@ -109,7 +115,12 @@ export function KindergartenDetailPanel({
   isInCompare,
   canAddToCompare,
 }: KindergartenDetailPanelProps) {
+  const [activeTab, setActiveTab] = useState<DetailTab>('info');
   const typeStyle = TYPE_STYLES[kindergarten.type];
+
+  // Q&A 질문 수 조회 (탭 뱃지용)
+  const { questions } = useQuestions(kindergarten.kindercode);
+  const questionCount = questions.length;
 
   // CompareFloatingBar가 표시되는지 확인 (비교함에 아이템이 있을 때)
   const compareItems = useCompareStore((state) => state.items);
@@ -202,7 +213,7 @@ export function KindergartenDetailPanel({
       {/* Panel */}
       <div className="fixed inset-y-0 right-0 w-full max-w-2xl bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right md:min-w-[500px]">
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md sticky top-0 z-10">
+        <div className="flex items-center justify-between px-5 py-4 border-b-0 bg-white/80 backdrop-blur-md sticky top-0 z-10">
           <h2 className="text-lg font-bold text-gray-900">상세 정보</h2>
           <button
             onClick={onClose}
@@ -212,7 +223,48 @@ export function KindergartenDetailPanel({
           </button>
         </div>
 
+        {/* Tab Bar */}
+        <div className="flex border-b border-gray-200 bg-white sticky top-[60px] z-10">
+          <button
+            onClick={() => setActiveTab('info')}
+            className={`flex-1 py-3 text-sm font-medium text-center transition-colors relative ${
+              activeTab === 'info'
+                ? 'text-emerald-600'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            기본정보
+            {activeTab === 'info' && (
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
+            )}
+          </button>
+          <button
+            onClick={() => setActiveTab('qna')}
+            className={`flex-1 py-3 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
+              activeTab === 'qna'
+                ? 'text-emerald-600'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            <MessageCircle className="w-4 h-4" />
+            Q&A
+            {questionCount > 0 && (
+              <span className="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-bold">
+                {questionCount}
+              </span>
+            )}
+            {activeTab === 'qna' && (
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
+            )}
+          </button>
+        </div>
+
         {/* Content */}
+        {activeTab === 'qna' ? (
+          <div className="flex-1 overflow-y-auto bg-gray-50">
+            <QuestionList kindergartenId={kindergarten.kindercode} />
+          </div>
+        ) : (
         <div className="flex-1 overflow-y-auto bg-gray-50">
           {/* 기관 기본 정보 */}
           <div className="p-6 bg-white border-b border-gray-100 mb-2">
@@ -555,6 +607,7 @@ export function KindergartenDetailPanel({
             </a>
           </div>
         </div>
+        )}
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
         <div className={`p-5 border-t border-gray-200 bg-white ${hasCompareBar ? 'pb-20' : ''}`}>
