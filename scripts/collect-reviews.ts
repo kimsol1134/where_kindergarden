@@ -275,9 +275,12 @@ async function main() {
     fs.readFileSync(kindergartensPath, 'utf-8')
   );
 
-  // sigungu_code === "28260" 필터 (부평구)
-  let targets = allKindergartens.filter((k) => k.sigungu_code === '28260');
-  console.log(`대상 유치원: ${targets.length}개 (부평구)`);
+  // 인천 서구(검단), 계양구, 김포시 필터
+  const TARGET_SIGUNGU_CODES = ['28260', '28245', '41570'];
+  let targets = allKindergartens.filter((k) =>
+    TARGET_SIGUNGU_CODES.includes(k.sigungu_code)
+  );
+  console.log(`대상 유치원: ${targets.length}개 (인천 서구/계양구, 김포시)`);
 
   if (isTest) {
     targets = targets.slice(0, 3);
