@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
-import { Loader2 } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Loader2, Plus } from 'lucide-react';
 import { useReviewStore } from '@/stores';
 import { ReviewLinkCard } from './ReviewLinkCard';
 import { ReviewEmpty } from './ReviewEmpty';
+import { ReviewSuggestionModal } from './ReviewSuggestionModal';
 
 interface ReviewLinkListProps {
   kindergartenId: string;
@@ -12,10 +13,20 @@ interface ReviewLinkListProps {
 
 export function ReviewLinkList({ kindergartenId }: ReviewLinkListProps) {
   const { isLoaded, isLoading, error, loadData, getByKindergartenId } = useReviewStore();
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [deleteModal, setDeleteModal] = useState<{
+    isOpen: boolean;
+    reviewId: string;
+    reviewTitle: string;
+  }>({ isOpen: false, reviewId: '', reviewTitle: '' });
 
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  const handleDeleteSuggestion = (reviewId: string, reviewTitle: string) => {
+    setDeleteModal({ isOpen: true, reviewId, reviewTitle });
+  };
 
   if (isLoading && !isLoaded) {
     return (
@@ -37,7 +48,17 @@ export function ReviewLinkList({ kindergartenId }: ReviewLinkListProps) {
   const reviews = getByKindergartenId(kindergartenId);
 
   if (reviews.length === 0) {
-    return <ReviewEmpty />;
+    return (
+      <>
+        <ReviewEmpty kindergartenId={kindergartenId} />
+        <ReviewSuggestionModal
+          isOpen={isAddModalOpen}
+          onClose={() => setIsAddModalOpen(false)}
+          kindergartenId={kindergartenId}
+          type="add"
+        />
+      </>
+    );
   }
 
   const sortedReviews = reviews.toSorted((a, b) => {
@@ -48,10 +69,43 @@ export function ReviewLinkList({ kindergartenId }: ReviewLinkListProps) {
   });
 
   return (
-    <div className="space-y-3 p-4">
-      {sortedReviews.map((review) => (
-        <ReviewLinkCard key={review.id} review={review} />
-      ))}
-    </div>
+    <>
+      <div className="space-y-3 p-4">
+        {sortedReviews.map((review) => (
+          <ReviewLinkCard 
+            key={review.id} 
+            review={review} 
+            onDeleteSuggestion={handleDeleteSuggestion}
+          />
+        ))}
+        
+        {/* Add Suggestion Button */}
+        <button
+          onClick={() => setIsAddModalOpen(true)}
+          className="w-full py-3 px-4 border-2 border-dashed border-emerald-200 hover:border-emerald-400 rounded-xl text-emerald-600 hover:text-emerald-700 font-medium text-sm flex items-center justify-center gap-2 transition-colors bg-emerald-50/50 hover:bg-emerald-50"
+        >
+          <Plus className="w-4 h-4" />
+          후기 추가 제안하기
+        </button>
+      </div>
+
+      {/* Add Modal */}
+      <ReviewSuggestionModal
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+        kindergartenId={kindergartenId}
+        type="add"
+      />
+
+      {/* Delete Modal */}
+      <ReviewSuggestionModal
+        isOpen={deleteModal.isOpen}
+        onClose={() => setDeleteModal({ isOpen: false, reviewId: '', reviewTitle: '' })}
+        kindergartenId={kindergartenId}
+        type="delete"
+        reviewId={deleteModal.reviewId}
+        reviewTitle={deleteModal.reviewTitle}
+      />
+    </>
   );
 }

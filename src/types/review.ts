@@ -18,3 +18,26 @@ export interface ReviewsData {
   kindergartenCount: number;
   reviews: Record<string, ReviewLink[]>;
 }
+
+// Review Suggestion Types
+export type ReviewSuggestionType = 'add' | 'delete';
+
+export interface ReviewSuggestionBase {
+  kindergartenId: string;
+  reason?: string;
+  submitterEmail?: string;
+}
+
+export interface ReviewAddSuggestion extends ReviewSuggestionBase {
+  type: 'add';
+  url: string;
+  title: string;
+  source: ReviewSource;
+}
+
+export interface ReviewDeleteSuggestion extends ReviewSuggestionBase {
+  type: 'delete';
+  reviewId: string;
+}
+
+export type ReviewSuggestion = ReviewAddSuggestion | ReviewDeleteSuggestion;
