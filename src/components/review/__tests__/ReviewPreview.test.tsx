@@ -96,7 +96,7 @@ describe('ReviewPreview', () => {
     expect(links[1]).toHaveAttribute('href', 'https://blog.naver.com/2');
   });
 
-  it('should display total count in "전체보기" button', () => {
+  it('should display total count badge', () => {
     useReviewStore.setState({
       data: mockReviewsData,
       isLoaded: true,
@@ -106,7 +106,7 @@ describe('ReviewPreview', () => {
     });
 
     render(<ReviewPreview kindergartenId="K001" onViewAll={() => {}} />);
-    expect(screen.getByText('후기 3건 전체보기 →')).toBeInTheDocument();
+    expect(screen.getByText('3건')).toBeInTheDocument();
   });
 
   it('should call onViewAll when "전체보기" button is clicked', () => {
@@ -120,7 +120,7 @@ describe('ReviewPreview', () => {
 
     const onViewAll = vi.fn();
     render(<ReviewPreview kindergartenId="K001" onViewAll={onViewAll} />);
-    fireEvent.click(screen.getByText('후기 3건 전체보기 →'));
+    fireEvent.click(screen.getByText('후기 전체보기 →'));
     expect(onViewAll).toHaveBeenCalledOnce();
   });
 
