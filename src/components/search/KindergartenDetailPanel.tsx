@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import {
   X,
@@ -19,11 +20,13 @@ import {
   Coins,
   Loader2,
   Heart,
+  Newspaper,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
-import { useCompareStore, useFavoriteStore } from '@/stores';
+import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
+import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -115,13 +118,20 @@ export function KindergartenDetailPanel({
   const compareItems = useCompareStore((state) => state.items);
   const hasCompareBar = compareItems.length > 0;
 
+  // 탭 상태
+  type TabId = 'info' | 'reviews';
+  const [activeTab, setActiveTab] = useState<TabId>('info');
+
+  // 후기 수
+  const reviewCount = useReviewStore((state) => state.getCountByKindergartenId(kindergarten.kindercode));
+
   // 찜하기 상태
   const { isFavorite, toggleItem: toggleFavorite } = useFavoriteStore();
   const isFav = isFavorite(kindergarten.kindercode);
   const handleFavoriteToggle = () => {
     toggleFavorite(kindergarten);
   };
-  
+
   // 학급 수 데이터
   const totalClassCount =
     kindergarten.classCountAge3 + kindergarten.classCountAge4 + kindergarten.classCountAge5 + kindergarten.classCountMix;
@@ -212,8 +222,46 @@ export function KindergartenDetailPanel({
           </button>
         </div>
 
+        {/* Tab Bar */}
+        <div className="flex border-b border-gray-200 bg-white px-5">
+          <button
+            onClick={() => setActiveTab('info')}
+            className={`flex items-center gap-1.5 px-4 py-3 text-sm font-medium border-b-2 transition-colors ${
+              activeTab === 'info'
+                ? 'border-emerald-500 text-emerald-700'
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            기본정보
+          </button>
+          <button
+            onClick={() => setActiveTab('reviews')}
+            className={`flex items-center gap-1.5 px-4 py-3 text-sm font-medium border-b-2 transition-colors ${
+              activeTab === 'reviews'
+                ? 'border-emerald-500 text-emerald-700'
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            <Newspaper className="w-4 h-4" />
+            후기
+            {reviewCount > 0 && (
+              <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+                activeTab === 'reviews'
+                  ? 'bg-emerald-100 text-emerald-700'
+                  : 'bg-gray-100 text-gray-600'
+              }`}>
+                {reviewCount}
+              </span>
+            )}
+          </button>
+        </div>
+
         {/* Content */}
         <div className="flex-1 overflow-y-auto bg-gray-50">
+          {activeTab === 'reviews' ? (
+            <ReviewLinkList kindergartenId={kindergarten.kindercode} />
+          ) : (
+          <>
           {/* 기관 기본 정보 */}
           <div className="p-6 bg-white border-b border-gray-100 mb-2">
             <div className="flex items-center gap-2 mb-2">
@@ -554,6 +602,8 @@ export function KindergartenDetailPanel({
               </div>
             </a>
           </div>
+          </>
+          )}
         </div>
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
