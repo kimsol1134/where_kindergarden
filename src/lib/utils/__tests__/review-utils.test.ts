@@ -125,4 +125,44 @@ describe('calculateRelevanceScore', () => {
     // 후기(+1) vs 시공(-2) + 블라인드(-2) + 인테리어(-2) = -5
     expect(score).toBeLessThan(0);
   });
+
+  it('should penalize food delivery spam', () => {
+    const score = calculateRelevanceScore(
+      '수제샌드위치 다과박스 단체주문',
+      '배송 가능한 답례품 전문점입니다.'
+    );
+    expect(score).toBeLessThan(0);
+  });
+
+  it('should penalize media/broadcast content', () => {
+    const score = calculateRelevanceScore(
+      'MBC 촬영 현장',
+      'KBS 방송 출연 후기입니다.'
+    );
+    expect(score).toBeLessThan(0);
+  });
+
+  it('should penalize real estate content', () => {
+    const score = calculateRelevanceScore(
+      '모델하우스 방문 후기',
+      '입주 예정 아파트 단지입니다.'
+    );
+    expect(score).toBeLessThan(0);
+  });
+
+  it('should penalize unrelated business content', () => {
+    const score = calculateRelevanceScore(
+      '네일 미용실 후기',
+      '베이커리 옆 꽃집에서 구매했습니다.'
+    );
+    expect(score).toBeLessThan(0);
+  });
+
+  it('should penalize flower exhibition content', () => {
+    const score = calculateRelevanceScore(
+      '꽃박람회 후기',
+      '꽃 전시회 다녀왔습니다.'
+    );
+    expect(score).toBeLessThan(0);
+  });
 });

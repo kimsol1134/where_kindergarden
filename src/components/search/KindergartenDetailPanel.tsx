@@ -27,6 +27,7 @@ import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
+import { ReviewPreview } from '@/components/review/ReviewPreview';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -245,10 +246,10 @@ export function KindergartenDetailPanel({
             <Newspaper className="w-4 h-4" />
             후기
             {reviewCount > 0 && (
-              <span className={`text-xs px-1.5 py-0.5 rounded-full ${
+              <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                 activeTab === 'reviews'
                   ? 'bg-emerald-100 text-emerald-700'
-                  : 'bg-gray-100 text-gray-600'
+                  : 'bg-amber-500 text-white'
               }`}>
                 {reviewCount}
               </span>
@@ -602,6 +603,12 @@ export function KindergartenDetailPanel({
               </div>
             </a>
           </div>
+
+          {/* 후기 미리보기 */}
+          <ReviewPreview
+            kindergartenId={kindergarten.kindercode}
+            onViewAll={() => setActiveTab('reviews')}
+          />
           </>
           )}
         </div>
