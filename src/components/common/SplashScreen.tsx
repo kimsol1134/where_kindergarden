@@ -1,13 +1,25 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Capacitor } from '@capacitor/core';
 
 
 export function SplashScreen({ onFinished }: { onFinished?: () => void }) {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
+    // Only show splash screen on native apps, not on web
+    const isNative = Capacitor.isNativePlatform();
+    
+    if (!isNative) {
+      setIsVisible(false);
+      onFinished?.();
+      return;
+    }
+
+    setIsVisible(true);
+
     // Artificial delay to show splash screen or wait for initial data
     const timer = setTimeout(() => {
       setOpacity(0);
