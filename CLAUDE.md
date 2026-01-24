@@ -778,3 +778,91 @@ interface KindergartenRecord {
 - `insurance` 엔드포인트는 유치원당 여러 행 반환 (보험 종류별)
 - `basicInfo2`에서 좌표(`lttdcdnt`, `lngtcdnt`) 제공
 - Supabase 저장 시 `raw_data` 필드는 제외됨
+
+---
+
+## 유치원 후기 수집 및 큐레이션
+
+### 개요
+
+유치원별 학부모 후기를 네이버 블로그/카페, Google에서 자동 수집하고, 큐레이션을 거쳐 `public/data/reviews.json`에 저장합니다.
+
+### 수집 대상 지역
+
+- 인천 서구 (28260) - 검단 포함
+- 인천 계양구 (28245)
+- 김포시 (41570)
+
+### 실행 명령어
+
+```bash
+# 1단계: 후기 수집 (Naver/Google API → raw JSON)
+pnpm collect:reviews              # 전체 수집
+pnpm collect:reviews -- --test    # 테스트 (3개 유치원만)
+pnpm collect:reviews -- --google  # Google CSE 포함
+pnpm collect:reviews -- --max 10  # 쿼리당 최대 결과 수
+
+# 2단계: 큐레이션 (중복 제거 → reviews.json 생성)
+pnpm curate:reviews
+pnpm curate:reviews -- --input reviews-raw-2026-01-24.json
+```
+
+### 수집 프로세스
+
+1. `public/data/kindergartens.json`에서 대상 유치원 로드
+2. 유치원명 + 지역명으로 다중 쿼리 검색 (블로그/카페)
+3. `calculateRelevanceScore()`로 관련성 필터링 (score > 0만 유지)
+4. 중복 URL 제거 및 ID 부여 (`rev-NNNN`)
+5. `kindergartenId` 기준으로 그룹화하여 저장
+
+### 관련 파일
+
+| 파일 | 역할 |
+|------|------|
+| `scripts/collect-reviews.ts` | 수집 스크립트 |
+| `scripts/curate-reviews.ts` | 큐레이션 스크립트 |
+| `src/lib/utils/review-utils.ts` | 관련성 점수 계산 (키워드) |
+| `src/types/review.ts` | 타입 정의 |
+| `src/stores/reviewStore.ts` | Zustand 스토어 |
+| `public/data/reviews.json` | 최종 출력 파일 |
+
+### reviews.json 구조
+
+```json
+{
+  "version": "YYYY-MM-DD",
+  "lastCuratedAt": "ISO-8601 timestamp",
+  "totalCount": number,
+  "kindergartenCount": number,
+  "reviews": {
+    "kindergartenId": [{ "id", "title", "snippet", "url", "source", "date", "collectedAt" }]
+  }
+}
+```
+
+### 필요한 환경 변수
+
+```env
+NAVER_CLIENT_ID=
+NAVER_CLIENT_SECRET=
+GOOGLE_CSE_API_KEY=       # 선택
+GOOGLE_CSE_CX=            # 선택
+```
+
+### 후기 큐레이션 스킬 (`/review-curate`)
+
+수집된 후기 중 스팸/무관 콘텐츠를 식별하고 제거하는 스킬입니다.
+
+- **실행**: `/review-curate` 명령
+- **검토 범위**: `lastCuratedAt` 이후 수집된 후기만 검토 (이전 검토 완료분 스킵)
+- **제거 기준**:
+  - 잘못 연결된 후기 (다른 지역/다른 유치원 글이 잘못 매핑된 경우)
+  - 스팸 (음식배달, 미용, 마사지, 부동산, 학원 등 업체 광고)
+  - 무관한 개인 글 (유치원과 관련 없는 일상/여행/맛집)
+- **스킬 파일**: `~/.claude/skills/review-curation/skill.md`
+
+### 주의사항
+
+- 동명 유치원 주의: "예은유치원", "중앙유치원" 등 전국에 같은 이름 다수 존재
+- 수집 시 유치원명이 snippet에 단순 나열만 된 글도 잡힐 수 있음 → 큐레이션 필수
+- `review-utils.ts`의 NEGATIVE_KEYWORDS 업데이트 시 큐레이션 스킬과 동기화 유지
