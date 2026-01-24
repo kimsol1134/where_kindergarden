@@ -1,10 +1,28 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.SUPABASE_URL!;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY!;
+// Lazy initialization to avoid build-time errors when env vars are not set
+let supabaseInstance: SupabaseClient | null = null;
 
-// Client for server-side operations (API routes)
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+function getSupabaseClient(): SupabaseClient {
+  if (!supabaseInstance) {
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+    
+    if (!supabaseUrl || !supabaseAnonKey) {
+      throw new Error('Supabase environment variables are not configured');
+    }
+    
+    supabaseInstance = createClient(supabaseUrl, supabaseAnonKey);
+  }
+  return supabaseInstance;
+}
+
+// Export a getter instead of a direct instance
+export const supabase = new Proxy({} as SupabaseClient, {
+  get(_, prop) {
+    return getSupabaseClient()[prop as keyof SupabaseClient];
+  },
+});
 
 // Rate limiting constants
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
