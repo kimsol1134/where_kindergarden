@@ -1,20 +1,23 @@
 /**
- * 유치원 후기 링크 수집 스크립트
+ * 유치원 후기 링크 수집 스크립트 (v2 - 관련성 필터링 적용)
  *
- * Naver Blog/Cafe API를 통해 유치원 후기를 검색하고
- * 결과를 JSON 파일로 저장합니다.
+ * 개선사항:
+ * - 지역명 포함 다중 쿼리 (동명 유치원 구분)
+ * - 관련성 점수 기반 자동 필터링
+ * - 최근 3년 이내 글만 포함
+ * - 블로그 sim+date 이중 검색으로 다양한 결과 확보
  *
  * 사용법:
- *   pnpm collect:reviews                    # 전체 수집 (sigungu_code=28260)
+ *   pnpm collect:reviews                    # 전체 수집
  *   pnpm collect:reviews -- --test          # 처음 3개만 테스트
  *   pnpm collect:reviews -- --google        # Google CSE 포함
- *   pnpm collect:reviews -- --max 3         # 소스당 최대 3개
+ *   pnpm collect:reviews -- --max 3         # 쿼리당 최대 3개
  */
 
 import { config } from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
-import { stripHtml, formatNaverDate } from '../src/lib/utils/review-utils';
+import { stripHtml, formatNaverDate, extractRegionName, calculateRelevanceScore } from '../src/lib/utils/review-utils';
 
 config({ path: '.env.local' });
 config();
@@ -26,6 +29,7 @@ config();
 interface KindergartenEntry {
   kindercode: string;
   name: string;
+  address: string;
   sigungu_code: string;
 }
 
@@ -63,6 +67,22 @@ interface RawReviewLink {
   snippet: string;
   date: string | null;
   collectedAt: string;
+  relevanceScore: number;
+}
+
+// ============================================================================
+// 날짜 필터
+// ============================================================================
+
+const THREE_YEARS_AGO = (() => {
+  const d = new Date();
+  d.setFullYear(d.getFullYear() - 3);
+  return d.toISOString().split('T')[0].replace(/-/g, '');
+})();
+
+function isRecentEnough(postdate: string | undefined): boolean {
+  if (!postdate || postdate.length !== 8) return true; // 날짜 없으면 포함
+  return postdate >= THREE_YEARS_AGO;
 }
 
 // ============================================================================
@@ -79,7 +99,8 @@ function delay(ms: number): Promise<void> {
 
 async function searchNaverBlog(
   query: string,
-  display: number
+  display: number,
+  sort: 'date' | 'sim' = 'date'
 ): Promise<NaverSearchItem[]> {
   const clientId = process.env.NAVER_CLIENT_ID;
   const clientSecret = process.env.NAVER_CLIENT_SECRET;
@@ -92,7 +113,7 @@ async function searchNaverBlog(
   const url = new URL('https://openapi.naver.com/v1/search/blog.json');
   url.searchParams.set('query', query);
   url.searchParams.set('display', String(display));
-  url.searchParams.set('sort', 'date');
+  url.searchParams.set('sort', sort);
 
   const response = await fetch(url.toString(), {
     headers: {
@@ -124,7 +145,7 @@ async function searchNaverCafe(
   const url = new URL('https://openapi.naver.com/v1/search/cafearticle.json');
   url.searchParams.set('query', query);
   url.searchParams.set('display', String(display));
-  url.searchParams.set('sort', 'date');
+  url.searchParams.set('sort', 'sim');
 
   const response = await fetch(url.toString(), {
     headers: {
@@ -150,7 +171,6 @@ async function searchGoogle(
   const cx = process.env.GOOGLE_CSE_CX;
 
   if (!apiKey || !cx) {
-    console.warn('  [SKIP] GOOGLE_CSE_API_KEY/CX 미설정');
     return [];
   }
 
@@ -177,74 +197,97 @@ async function searchGoogle(
 
 async function collectReviewsForKindergarten(
   kindergarten: KindergartenEntry,
-  maxPerSource: number,
+  maxPerQuery: number,
   includeGoogle: boolean
 ): Promise<RawReviewLink[]> {
-  const query = `"${kindergarten.name}" 후기`;
+  const regionName = extractRegionName(kindergarten.address);
   const collectedAt = new Date().toISOString();
-  const results: RawReviewLink[] = [];
   const seenUrls = new Set<string>();
+  const results: RawReviewLink[] = [];
 
-  // Naver Blog
-  const blogItems = await searchNaverBlog(query, maxPerSource);
-  for (const item of blogItems) {
-    if (seenUrls.has(item.link)) continue;
-    seenUrls.add(item.link);
-    results.push({
-      kindergartenId: kindergarten.kindercode,
-      kindergartenName: kindergarten.name,
-      title: stripHtml(item.title),
-      url: item.link,
-      source: 'naver_blog',
-      sourceName: item.bloggername ?? '',
-      snippet: stripHtml(item.description),
-      date: formatNaverDate(item.postdate),
-      collectedAt,
-    });
-  }
+  // 다중 쿼리 전략
+  // 지역명은 따옴표 없이 (블로그에서 "인천 계양구"를 정확히 쓰진 않으므로)
+  const queryRegion = `"${kindergarten.name}" ${regionName} 후기`;
+  const queryExperience = `"${kindergarten.name}" 다녀보니`;
 
+  // 블로그: 지역+후기 (date순)
+  const blogDateItems = await searchNaverBlog(queryRegion, maxPerQuery, 'date');
+  addItems(blogDateItems, 'naver_blog', 'bloggername');
   await delay(300);
 
-  // Naver Cafe
-  const cafeItems = await searchNaverCafe(query, maxPerSource);
-  for (const item of cafeItems) {
-    if (seenUrls.has(item.link)) continue;
-    seenUrls.add(item.link);
-    results.push({
-      kindergartenId: kindergarten.kindercode,
-      kindergartenName: kindergarten.name,
-      title: stripHtml(item.title),
-      url: item.link,
-      source: 'naver_cafe',
-      sourceName: item.cafename ?? '',
-      snippet: stripHtml(item.description),
-      date: formatNaverDate(item.postdate),
-      collectedAt,
-    });
-  }
+  // 블로그: 지역+후기 (sim순) - 다른 결과셋 확보
+  const blogSimItems = await searchNaverBlog(queryRegion, maxPerQuery, 'sim');
+  addItems(blogSimItems, 'naver_blog', 'bloggername');
+  await delay(300);
+
+  // 블로그: 다녀보니 (sim순) - 체험 후기
+  const blogExpItems = await searchNaverBlog(queryExperience, maxPerQuery, 'sim');
+  addItems(blogExpItems, 'naver_blog', 'bloggername');
+  await delay(300);
+
+  // 카페: 지역+후기
+  const cafeItems = await searchNaverCafe(queryRegion, maxPerQuery);
+  addItems(cafeItems, 'naver_cafe', 'cafename');
 
   // Google (optional)
   if (includeGoogle) {
     await delay(300);
-    const googleItems = await searchGoogle(query, maxPerSource);
+    const googleQuery = `"${kindergarten.name}" ${regionName} 후기`;
+    const googleItems = await searchGoogle(googleQuery, maxPerQuery);
     for (const item of googleItems) {
       if (seenUrls.has(item.link)) continue;
       seenUrls.add(item.link);
+      const title = stripHtml(item.title);
+      const snippet = stripHtml(item.snippet);
       results.push({
         kindergartenId: kindergarten.kindercode,
         kindergartenName: kindergarten.name,
-        title: stripHtml(item.title),
+        title,
         url: item.link,
         source: 'google',
         sourceName: '',
-        snippet: stripHtml(item.snippet),
+        snippet,
         date: null,
         collectedAt,
+        relevanceScore: calculateRelevanceScore(title, snippet),
       });
     }
   }
 
-  return results;
+  function addItems(
+    items: NaverSearchItem[],
+    source: 'naver_blog' | 'naver_cafe',
+    nameField: 'bloggername' | 'cafename'
+  ) {
+    for (const item of items) {
+      if (seenUrls.has(item.link)) continue;
+      if (!isRecentEnough(item.postdate)) continue;
+      seenUrls.add(item.link);
+
+      const title = stripHtml(item.title);
+      const snippet = stripHtml(item.description);
+      results.push({
+        kindergartenId: kindergarten.kindercode,
+        kindergartenName: kindergarten.name,
+        title,
+        url: item.link,
+        source,
+        sourceName: item[nameField] ?? '',
+        snippet,
+        date: formatNaverDate(item.postdate),
+        collectedAt,
+        relevanceScore: calculateRelevanceScore(title, snippet),
+      });
+    }
+  }
+
+  // 관련성 점수 기준 필터: 0점 이하 제거
+  const filtered = results.filter((r) => r.relevanceScore > 0);
+
+  // 점수 높은 순 정렬
+  filtered.sort((a, b) => b.relevanceScore - a.relevanceScore);
+
+  return filtered;
 }
 
 // ============================================================================
@@ -256,12 +299,13 @@ async function main() {
   const isTest = args.includes('--test');
   const includeGoogle = args.includes('--google');
   const maxIdx = args.indexOf('--max');
-  const maxPerSource = maxIdx !== -1 ? parseInt(args[maxIdx + 1], 10) || 5 : 5;
+  const maxPerQuery = maxIdx !== -1 ? parseInt(args[maxIdx + 1], 10) || 5 : 5;
 
-  console.log('=== 유치원 후기 링크 수집 ===');
+  console.log('=== 유치원 후기 링크 수집 (v2) ===');
   console.log(`모드: ${isTest ? '테스트 (3개)' : '전체'}`);
-  console.log(`소스당 최대: ${maxPerSource}개`);
+  console.log(`쿼리당 최대: ${maxPerQuery}개`);
   console.log(`Google CSE: ${includeGoogle ? '포함' : '미포함'}`);
+  console.log(`날짜 필터: ${THREE_YEARS_AGO.substring(0, 4)}년 이후`);
   console.log('');
 
   // 유치원 데이터 로드
@@ -290,14 +334,28 @@ async function main() {
   console.log('');
 
   // 수집
+  let totalRaw = 0;
+  let totalFiltered = 0;
   const allReviews: RawReviewLink[] = [];
+
   for (let i = 0; i < targets.length; i++) {
     const k = targets[i];
-    console.log(`[${i + 1}/${targets.length}] ${k.name} (${k.kindercode})`);
+    const region = extractRegionName(k.address);
+    console.log(`[${i + 1}/${targets.length}] ${k.name} (${region})`);
 
-    const reviews = await collectReviewsForKindergarten(k, maxPerSource, includeGoogle);
+    const reviews = await collectReviewsForKindergarten(k, maxPerQuery, includeGoogle);
     allReviews.push(...reviews);
-    console.log(`  → ${reviews.length}건 수집`);
+
+    const rawCount = reviews.length;
+    totalRaw += rawCount;
+    totalFiltered += rawCount;
+
+    if (rawCount > 0) {
+      const scores = reviews.map((r) => r.relevanceScore);
+      console.log(`  → ${rawCount}건 (점수: ${Math.min(...scores)}~${Math.max(...scores)})`);
+    } else {
+      console.log(`  → 0건`);
+    }
 
     if (i < targets.length - 1) {
       await delay(300);
@@ -305,7 +363,7 @@ async function main() {
   }
 
   console.log('');
-  console.log(`총 수집: ${allReviews.length}건`);
+  console.log(`총 수집: ${totalFiltered}건 (필터 통과)`);
 
   // 결과 저장
   const outputDir = path.resolve('scripts/data-output');
