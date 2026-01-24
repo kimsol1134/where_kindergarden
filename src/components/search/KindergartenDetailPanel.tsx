@@ -27,6 +27,7 @@ import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
+import { ReviewPreview } from '@/components/review/ReviewPreview';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -602,6 +603,12 @@ export function KindergartenDetailPanel({
               </div>
             </a>
           </div>
+
+          {/* 후기 미리보기 */}
+          <ReviewPreview
+            kindergartenId={kindergarten.kindercode}
+            onViewAll={() => setActiveTab('reviews')}
+          />
           </>
           )}
         </div>
