@@ -319,12 +319,9 @@ async function main() {
     fs.readFileSync(kindergartensPath, 'utf-8')
   );
 
-  // 인천 서구(검단), 계양구, 김포시 필터
-  const TARGET_SIGUNGU_CODES = ['28260', '28245', '41570'];
-  let targets = allKindergartens.filter((k) =>
-    TARGET_SIGUNGU_CODES.includes(k.sigungu_code)
-  );
-  console.log(`대상 유치원: ${targets.length}개 (인천 서구/계양구, 김포시)`);
+  // 인천 전체 지역 필터
+  let targets = allKindergartens.filter((k) => k.address.includes('인천'));
+  console.log(`대상 유치원: ${targets.length}개 (인천 전체)`);
 
   if (isTest) {
     targets = targets.slice(0, 3);
@@ -338,28 +335,34 @@ async function main() {
   let totalFiltered = 0;
   const allReviews: RawReviewLink[] = [];
 
-  for (let i = 0; i < targets.length; i++) {
-    const k = targets[i];
-    const region = extractRegionName(k.address);
-    console.log(`[${i + 1}/${targets.length}] ${k.name} (${region})`);
+  const BATCH_SIZE = 3;
+  for (let i = 0; i < targets.length; i += BATCH_SIZE) {
+    const batch = targets.slice(i, i + BATCH_SIZE);
+    console.log(`[Batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(targets.length / BATCH_SIZE)}] Processing ${batch.length} items...`);
 
-    const reviews = await collectReviewsForKindergarten(k, maxPerQuery, includeGoogle);
-    allReviews.push(...reviews);
+    const results = await Promise.all(
+      batch.map(async (k) => {
+        // 개별 요청 간 약간의 지연 추가 (랜덤)
+        await delay(Math.random() * 500);
+        const reviews = await collectReviewsForKindergarten(k, maxPerQuery, includeGoogle);
+        return { k, reviews };
+      })
+    );
 
-    const rawCount = reviews.length;
-    totalRaw += rawCount;
-    totalFiltered += rawCount;
+    for (const { k, reviews } of results) {
+       const region = extractRegionName(k.address);
+       const rawCount = reviews.length;
+       allReviews.push(...reviews);
+       totalRaw += rawCount;
+       totalFiltered += rawCount;
 
-    if (rawCount > 0) {
-      const scores = reviews.map((r) => r.relevanceScore);
-      console.log(`  → ${rawCount}건 (점수: ${Math.min(...scores)}~${Math.max(...scores)})`);
-    } else {
-      console.log(`  → 0건`);
+       if (rawCount > 0) {
+         const scores = reviews.map((r) => r.relevanceScore);
+         console.log(`  [${k.name}] ${rawCount}건 (점수: ${Math.min(...scores)}~${Math.max(...scores)})`);
+       }
     }
-
-    if (i < targets.length - 1) {
-      await delay(300);
-    }
+    
+    await delay(1000);
   }
 
   console.log('');
