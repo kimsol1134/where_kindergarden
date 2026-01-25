@@ -80,69 +80,91 @@ function main() {
 
     inputPath = path.resolve(outputDir, rawFiles[0]);
   }
+  const RAW_DATA_DIR = path.resolve('scripts/data-output');
+  const PUBLIC_DATA_DIR = path.resolve('public/data/reviews');
 
   console.log('=== 후기 데이터 큐레이션 ===');
-  console.log(`입력: ${inputPath}`);
 
-  if (!fs.existsSync(inputPath)) {
-    console.error(`ERROR: 파일을 찾을 수 없습니다: ${inputPath}`);
+  // 파일 로드 로직 변경: 모든 raw 파일 읽기
+  const processedData: Record<string, { total: number; reviews: Record<string, ReviewLink[]> }> = {};
+
+  if (!fs.existsSync(RAW_DATA_DIR)) {
+    console.error('ERROR: scripts/data-output/ 디렉토리를 찾을 수 없습니다.');
+    console.error('먼저 pnpm collect:reviews를 실행하세요.');
     process.exit(1);
   }
 
-  const rawData: RawReviewLink[] = JSON.parse(fs.readFileSync(inputPath, 'utf-8'));
-  console.log(`원본 데이터: ${rawData.length}건`);
-
-  // URL 중복 제거
-  const seenUrls = new Set<string>();
-  const deduplicated = rawData.filter((item) => {
-    if (seenUrls.has(item.url)) return false;
-    seenUrls.add(item.url);
-    return true;
-  });
-  console.log(`중복 제거 후: ${deduplicated.length}건`);
-
-  // kindergartenId별 그룹핑 + ID 부여
-  const reviews: Record<string, ReviewLink[]> = {};
-  let idCounter = 1;
-
-  for (const raw of deduplicated) {
-    const review: ReviewLink = {
-      id: `rev-${String(idCounter++).padStart(4, '0')}`,
-      kindergartenId: raw.kindergartenId,
-      title: raw.title,
-      url: raw.url,
-      source: raw.source,
-      sourceName: raw.sourceName,
-      snippet: raw.snippet,
-      date: raw.date,
-      collectedAt: raw.collectedAt,
-    };
-
-    if (!reviews[raw.kindergartenId]) {
-      reviews[raw.kindergartenId] = [];
-    }
-    reviews[raw.kindergartenId].push(review);
+  const files = fs.readdirSync(RAW_DATA_DIR).filter(f => f.startsWith('reviews-raw-') && f.endsWith('.json'));
+  
+  if (files.length === 0) {
+    console.log('처리할 원본 데이터 파일이 없습니다.');
+    return;
   }
 
-  const kindergartenCount = Object.keys(reviews).length;
-  const today = new Date().toISOString().split('T')[0];
+  console.log(`발견된 파일: ${files.length}개`);
 
-  const output: ReviewsData = {
-    version: today,
-    totalCount: deduplicated.length,
-    kindergartenCount,
-    reviews,
-  };
+  for (const file of files) {
+    const rawPath = path.join(RAW_DATA_DIR, file);
+    const rawData: RawReviewLink[] = JSON.parse(fs.readFileSync(rawPath, 'utf-8'));
+    
+    // 파일명에서 시도 코드 추출 (reviews-raw-YYYY-MM-DD-SS.json)
+    const match = file.match(/reviews-raw-\d{4}-\d{2}-\d{2}-(\d+)\.json/);
+    const sido = match ? match[1] : 'unknown';
 
-  // public/data/reviews.json에 저장
-  const outputPath = path.resolve('public/data/reviews.json');
-  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2), 'utf-8');
+    console.log(`처리 중: ${file} (${rawData.length}건, 시도: ${sido})`);
 
-  console.log('');
-  console.log(`출력: ${outputPath}`);
-  console.log(`유치원 수: ${kindergartenCount}개`);
-  console.log(`총 후기 수: ${deduplicated.length}건`);
-  console.log(`버전: ${today}`);
+    if (!processedData[sido]) {
+      processedData[sido] = { total: 0, reviews: {} };
+    }
+
+    // 중복 제거 및 구조 변환
+    for (const item of rawData) {
+      const kId = item.kindergartenId;
+      
+      const validated: ReviewLink = {
+        id: `rev-${item.url.slice(-4)}-${Math.random().toString(36).substr(2, 4)}`, // ID 생성 규칙 단순화
+        kindergartenId: kId,
+        title: item.title,
+        url: item.url,
+        source: item.source,
+        sourceName: item.sourceName,
+        snippet: item.snippet,
+        date: item.date,
+        collectedAt: new Date().toISOString(),
+      };
+
+      if (!processedData[sido].reviews[kId]) {
+        processedData[sido].reviews[kId] = [];
+      }
+      
+      // URL 중복 체크
+      const exists = processedData[sido].reviews[kId].some(r => r.url === validated.url);
+      if (!exists) {
+        processedData[sido].reviews[kId].push(validated);
+        processedData[sido].total++;
+      }
+    }
+  }
+
+  // 결과 저장 (시도별)
+  if (!fs.existsSync(PUBLIC_DATA_DIR)) {
+    fs.mkdirSync(PUBLIC_DATA_DIR, { recursive: true });
+  }
+
+  console.log('\n=== 저장 결과 ===');
+  for (const [sido, data] of Object.entries(processedData)) {
+    const outPath = path.join(PUBLIC_DATA_DIR, `${sido}.json`);
+    
+    const output: ReviewsData = {
+      version: new Date().toISOString().split('T')[0],
+      totalCount: data.total,
+      kindergartenCount: Object.keys(data.reviews).length,
+      reviews: data.reviews
+    };
+
+    fs.writeFileSync(outPath, JSON.stringify(output, null, 2));
+    console.log(`[${sido}] ${outPath}: ${data.total}건`);
+  }
   console.log('');
   console.log('큐레이션 완료!');
 }

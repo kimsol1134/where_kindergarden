@@ -785,27 +785,63 @@ interface KindergartenRecord {
 
 ### 개요
 
-유치원별 학부모 후기를 네이버 블로그/카페, Google에서 자동 수집하고, 큐레이션을 거쳐 `public/data/reviews.json`에 저장합니다.
+유치원별 학부모 후기를 네이버 블로그/카페, Google에서 자동 수집하고, 큐레이션을 거쳐 `public/data/reviews/[sido_code].json`에 지역별로 분리 저장합니다.
 
-### 수집 대상 지역
+### 수집 대상 및 진행 현황
 
-- 인천 서구 (28260) - 검단 포함
-- 인천 계양구 (28245)
-- 김포시 (41570)
+- **수집 방식**: 지역별(시도) 일괄 수집
+- **현재 진행**: 
+  - [x] 인천 (28) 완료: `public/data/reviews/28.json` (185건)
+  - [x] 서울 (11) 완료: `public/data/reviews/11.json` (753건)
+  - [x] 경기 (41) 완료: `public/data/reviews/41.json` (2,654건)
 
-### 실행 명령어
+### 스크립트 실행
 
 ```bash
-# 1단계: 후기 수집 (Naver/Google API → raw JSON)
-pnpm collect:reviews              # 전체 수집
-pnpm collect:reviews -- --test    # 테스트 (3개 유치원만)
-pnpm collect:reviews -- --google  # Google CSE 포함
-pnpm collect:reviews -- --max 10  # 쿼리당 최대 결과 수
+# 통합 워크플로우 (권장)
+# 수집 -> 큐레이션 -> 스팸필터 -> 분할을 한 번에 실행
+pnpm collect:all -- --sido 11           # 서울 전체 실행
+pnpm collect:all -- --sido 41           # 경기 전체 실행
 
-# 2단계: 큐레이션 (중복 제거 → reviews.json 생성)
-pnpm curate:reviews
-pnpm curate:reviews -- --input reviews-raw-2026-01-24.json
+# 개별 단계 실행 (수동)
+pnpm collect:reviews -- --sido 11       # 1. 수집
+pnpm collect:reviews -- --sido 11 --test # (테스트: 처음 3개만)
+pnpm curate:reviews                     # 2. 큐레이션
+pnpm filter:reviews -- --sido 11        # 3. 스팸 필터링
+pnpm split:reviews -- --sido 11         # 4. 지역 분할
 ```
+
+### 데이터 구조 (v2)
+
+파일 경로: `public/data/reviews/[sido_code].json` (예: `28.json`, `11.json`)
+
+```json
+{
+  "version": "YYYY-MM-DD",
+  "totalCount": number,
+  "kindergartenCount": number,
+  "reviews": {
+    "kindergarten_uuid": [
+      {
+        "id": "rev-XXXX",
+        "title": "...",
+        "url": "...",
+        "source": "naver_blog",
+        "snippet": "...",
+        "date": "YYYY-MM-DD",
+        "collectedAt": "ISOString"
+      }
+    ]
+  }
+}
+```
+
+### 필터링 정책 (큐레이션)
+
+`scripts/curate-reviews.ts` 및 `/review-curation` 스킬에 정의된 규칙 적용:
+- **블랙리스트 키워드 제외**: 음악학원, 태권도, 부동산, 꽃집, 맛집 등
+- **중복 제거**: 동일 URL 제외
+- **유효성 검사**: 유치원 관련성이 낮은 글 제외
 
 ### 수집 프로세스
 

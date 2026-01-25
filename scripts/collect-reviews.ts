@@ -8,16 +8,28 @@
  * - 블로그 sim+date 이중 검색으로 다양한 결과 확보
  *
  * 사용법:
- *   pnpm collect:reviews                    # 전체 수집
- *   pnpm collect:reviews -- --test          # 처음 3개만 테스트
- *   pnpm collect:reviews -- --google        # Google CSE 포함
- *   pnpm collect:reviews -- --max 3         # 쿼리당 최대 3개
+ *   pnpm collect:reviews                       # 전체 수집 (전국)
+ *   pnpm collect:reviews -- --sido 11          # 서울만 수집
+ *   pnpm collect:reviews -- --sido 41          # 경기만 수집
+ *   pnpm collect:reviews -- --sido 28          # 인천만 수집
+ *   pnpm collect:reviews -- --test             # 처음 3개만 테스트
+ *   pnpm collect:reviews -- --google           # Google CSE 포함
+ *   pnpm collect:reviews -- --max 3            # 쿼리당 최대 3개
+ *   pnpm collect:reviews -- --sido 11 --test   # 서울, 처음 3개만 테스트
  */
 
 import { config } from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
-import { stripHtml, formatNaverDate, extractRegionName, calculateRelevanceScore } from '../src/lib/utils/review-utils';
+import { 
+  stripHtml, 
+  formatNaverDate, 
+  extractRegionName, 
+  calculateRelevanceScore,
+  calculateRelevanceScoreV2,
+  isSpamTitle,
+  type RelevanceResult 
+} from '../src/lib/utils/review-utils';
 
 config({ path: '.env.local' });
 config();
@@ -31,6 +43,7 @@ interface KindergartenEntry {
   name: string;
   address: string;
   sigungu_code: string;
+  sido_code?: string;
 }
 
 interface NaverSearchItem {
@@ -205,27 +218,36 @@ async function collectReviewsForKindergarten(
   const seenUrls = new Set<string>();
   const results: RawReviewLink[] = [];
 
-  // 다중 쿼리 전략
-  // 지역명은 따옴표 없이 (블로그에서 "인천 계양구"를 정확히 쓰진 않으므로)
+  // 다중 쿼리 전략 (v2)
+  // 1. 기본: "유치원명" 지역명 후기
   const queryRegion = `"${kindergarten.name}" ${regionName} 후기`;
+  
+  // 2. 경험: "유치원명" 다녀보니 / 장단점
   const queryExperience = `"${kindergarten.name}" 다녀보니`;
+  
+  // 3. 입학: "유치원명" 입학설명회 / 상담
+  const queryAdmission = `"${kindergarten.name}" 입학설명회 다녀온`;
+  
+  // 4. 재원/졸업: "유치원명" 재원생 / 졸업생
+  const queryAttending = `"${kindergarten.name}" 재원생 후기`;
 
-  // 블로그: 지역+후기 (date순)
-  const blogDateItems = await searchNaverBlog(queryRegion, maxPerQuery, 'date');
-  addItems(blogDateItems, 'naver_blog', 'bloggername');
+  // 블로그 수집 실행 (각 쿼리별 수집)
+  const queries = [
+    { q: queryRegion, sort: 'sim' },
+    { q: queryExperience, sort: 'sim' },
+    { q: queryAdmission, sort: 'date' }, // 입학설명회는 최신순이 중요할 수 있음
+    { q: queryAttending, sort: 'sim' }
+  ];
+
+  for (const { q, sort } of queries) {
+    // 쿼리별 요청 딜레이
+    await delay(300);
+    const items = await searchNaverBlog(q, maxPerQuery, sort as 'date' | 'sim');
+    addItems(items, 'naver_blog', 'bloggername');
+  }
+
+  // 카페: 지역+후기 (카페는 정확도가 낮을 수 있어서 가장 기본적인 쿼리만)
   await delay(300);
-
-  // 블로그: 지역+후기 (sim순) - 다른 결과셋 확보
-  const blogSimItems = await searchNaverBlog(queryRegion, maxPerQuery, 'sim');
-  addItems(blogSimItems, 'naver_blog', 'bloggername');
-  await delay(300);
-
-  // 블로그: 다녀보니 (sim순) - 체험 후기
-  const blogExpItems = await searchNaverBlog(queryExperience, maxPerQuery, 'sim');
-  addItems(blogExpItems, 'naver_blog', 'bloggername');
-  await delay(300);
-
-  // 카페: 지역+후기
   const cafeItems = await searchNaverCafe(queryRegion, maxPerQuery);
   addItems(cafeItems, 'naver_cafe', 'cafename');
 
@@ -236,9 +258,19 @@ async function collectReviewsForKindergarten(
     const googleItems = await searchGoogle(googleQuery, maxPerQuery);
     for (const item of googleItems) {
       if (seenUrls.has(item.link)) continue;
-      seenUrls.add(item.link);
+      
       const title = stripHtml(item.title);
       const snippet = stripHtml(item.snippet);
+      
+      // V2: 스팸 사전 필터링
+      if (isSpamTitle(title)) continue;
+      
+      const relevance = calculateRelevanceScoreV2(
+        title, snippet, kindergarten.name, regionName
+      );
+      if (relevance.isSpam) continue;
+      
+      seenUrls.add(item.link);
       results.push({
         kindergartenId: kindergarten.kindercode,
         kindergartenName: kindergarten.name,
@@ -249,7 +281,7 @@ async function collectReviewsForKindergarten(
         snippet,
         date: null,
         collectedAt,
-        relevanceScore: calculateRelevanceScore(title, snippet),
+        relevanceScore: relevance.score,
       });
     }
   }
@@ -262,10 +294,25 @@ async function collectReviewsForKindergarten(
     for (const item of items) {
       if (seenUrls.has(item.link)) continue;
       if (!isRecentEnough(item.postdate)) continue;
-      seenUrls.add(item.link);
-
+      
       const title = stripHtml(item.title);
       const snippet = stripHtml(item.description);
+      
+      // V2: 스팸 사전 필터링
+      if (isSpamTitle(title)) continue;
+      
+      // V2: 강화된 관련성 점수 계산
+      const relevance = calculateRelevanceScoreV2(
+        title, 
+        snippet, 
+        kindergarten.name, 
+        regionName
+      );
+      
+      // 스팸이면 스킵
+      if (relevance.isSpam) continue;
+      
+      seenUrls.add(item.link);
       results.push({
         kindergartenId: kindergarten.kindercode,
         kindergartenName: kindergarten.name,
@@ -276,13 +323,13 @@ async function collectReviewsForKindergarten(
         snippet,
         date: formatNaverDate(item.postdate),
         collectedAt,
-        relevanceScore: calculateRelevanceScore(title, snippet),
+        relevanceScore: relevance.score,
       });
     }
   }
 
-  // 관련성 점수 기준 필터: 0점 이하 제거
-  const filtered = results.filter((r) => r.relevanceScore > 0);
+  // V2: 관련성 점수 기준 필터: 2점 이하 제거 (더 엄격)
+  const filtered = results.filter((r) => r.relevanceScore >= 2);
 
   // 점수 높은 순 정렬
   filtered.sort((a, b) => b.relevanceScore - a.relevanceScore);
@@ -294,18 +341,46 @@ async function collectReviewsForKindergarten(
 // 메인 실행
 // ============================================================================
 
+// 시도 코드별 이름 매핑
+const SIDO_NAMES: Record<string, string> = {
+  '11': '서울',
+  '26': '부산',
+  '27': '대구',
+  '28': '인천',
+  '29': '광주',
+  '30': '대전',
+  '31': '울산',
+  '36': '세종',
+  '41': '경기',
+  '42': '강원',
+  '43': '충북',
+  '44': '충남',
+  '45': '전북',
+  '46': '전남',
+  '47': '경북',
+  '48': '경남',
+  '50': '제주',
+};
+
 async function main() {
   const args = process.argv.slice(2);
   const isTest = args.includes('--test');
   const includeGoogle = args.includes('--google');
   const maxIdx = args.indexOf('--max');
   const maxPerQuery = maxIdx !== -1 ? parseInt(args[maxIdx + 1], 10) || 5 : 5;
+  
+  // --sido 인자 파싱
+  const sidoIdx = args.indexOf('--sido');
+  const sidoCode = sidoIdx !== -1 ? args[sidoIdx + 1] : null;
 
   console.log('=== 유치원 후기 링크 수집 (v2) ===');
   console.log(`모드: ${isTest ? '테스트 (3개)' : '전체'}`);
   console.log(`쿼리당 최대: ${maxPerQuery}개`);
   console.log(`Google CSE: ${includeGoogle ? '포함' : '미포함'}`);
   console.log(`날짜 필터: ${THREE_YEARS_AGO.substring(0, 4)}년 이후`);
+  if (sidoCode) {
+    console.log(`시도 필터: ${sidoCode} (${SIDO_NAMES[sidoCode] || '알 수 없음'})`);
+  }
   console.log('');
 
   // 유치원 데이터 로드
@@ -319,9 +394,24 @@ async function main() {
     fs.readFileSync(kindergartensPath, 'utf-8')
   );
 
-  // 인천 전체 지역 필터
-  let targets = allKindergartens.filter((k) => k.address.includes('인천'));
-  console.log(`대상 유치원: ${targets.length}개 (인천 전체)`);
+  // 시도 코드로 필터링 (--sido 인자가 있으면 해당 시도만, 없으면 전체)
+  let targets: KindergartenEntry[];
+  if (sidoCode) {
+    targets = allKindergartens.filter((k) => k.sido_code === sidoCode);
+    const sidoName = SIDO_NAMES[sidoCode] || sidoCode;
+    console.log(`대상 유치원: ${targets.length}개 (${sidoName})`);
+    
+    if (targets.length === 0) {
+      console.error(`ERROR: 시도 코드 ${sidoCode}에 해당하는 유치원이 없습니다.`);
+      console.error('사용 가능한 시도 코드:', Object.entries(SIDO_NAMES).map(([k, v]) => `${k}(${v})`).join(', '));
+      process.exit(1);
+    }
+  } else {
+    targets = allKindergartens;
+    console.log(`대상 유치원: ${targets.length}개 (전국)`);
+    console.log('TIP: 특정 시도만 수집하려면 --sido 인자를 사용하세요.');
+    console.log('     예: pnpm collect:reviews -- --sido 11 (서울)');
+  }
 
   if (isTest) {
     targets = targets.slice(0, 3);
@@ -370,15 +460,35 @@ async function main() {
 
   // 결과 저장
   const outputDir = path.resolve('scripts/data-output');
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
+  const OUTPUT_DIR = path.resolve('scripts/data-output');
+  const DATE_PREFIX = new Date().toISOString().split('T')[0];
+
+  // 4. 결과 저장 (시도별 분리 저장)
+  console.log(`\n=== 결과 저장 (총 ${allReviews.length}건) ===`);
+  
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
-  const today = new Date().toISOString().split('T')[0];
-  const outputPath = path.join(outputDir, `reviews-raw-${today}.json`);
+  // 시도별로 그룹화
+  const reviewsBySido: Record<string, RawReviewLink[]> = {};
+  
+  for (const review of allReviews) {
+    const k = allKindergartens.find(k => k.kindercode === review.kindergartenId);
+    if (k) {
+      const sido = k.sido_code || 'unknown';
+      if (!reviewsBySido[sido]) reviewsBySido[sido] = [];
+      reviewsBySido[sido].push(review);
+    }
+  }
 
-  fs.writeFileSync(outputPath, JSON.stringify(allReviews, null, 2), 'utf-8');
-  console.log(`저장 완료: ${outputPath}`);
+  // 각 시도별 파일 저장
+  for (const [sido, reviews] of Object.entries(reviewsBySido)) {
+    const fileName = `reviews-raw-${DATE_PREFIX}-${sido}.json`;
+    const filePath = path.join(OUTPUT_DIR, fileName);
+    fs.writeFileSync(filePath, JSON.stringify(reviews, null, 2));
+    console.log(`저장 완료 (${sido}): ${filePath} (${reviews.length}건)`);
+  }
 }
 
 main().catch((err) => {
