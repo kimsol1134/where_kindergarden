@@ -32,6 +32,7 @@
     "deploy:testflight:api": "./scripts/deploy-testflight.sh --api-key"
   },
   "dependencies": {
+    "@capacitor-community/admob": "^8.0.0",
     "@capacitor/android": "^8.0.1",
     "@capacitor/app": "^8.0.0",
     "@capacitor/core": "^8.0.1",

@@ -3,6 +3,7 @@ import './globals.css';
 import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
+import { AdContainer } from '@/components/ads/AdContainer';
 
 /*
  * Font optimization: To use next/font/local for better performance,
@@ -111,6 +112,7 @@ export default function RootLayout({
         {/* 네이버 SEO - 구조화된 데이터 */}
         <WebsiteJsonLd />
         <OrganizationJsonLd />
+        <AdContainer />
       </body>
     </html>
   );
