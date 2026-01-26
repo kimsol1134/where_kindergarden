@@ -44,6 +44,11 @@ interface ReviewsData {
   reviews: Record<string, ReviewLink[]>;
 }
 
+interface KindergartenInfo {
+  kindercode: string;
+  sido_code: string;
+}
+
 // ============================================================================
 // 메인 실행
 // ============================================================================
@@ -103,23 +108,44 @@ function main() {
 
   console.log(`발견된 파일: ${files.length}개`);
 
+  // 유치원 데이터 로드 및 맵 생성
+  const kindergartensPath = path.resolve('public/data/kindergartens.json');
+  if (!fs.existsSync(kindergartensPath)) {
+    console.error('ERROR: public/data/kindergartens.json 파일을 찾을 수 없습니다.');
+    process.exit(1);
+  }
+
+  const kindergartens: KindergartenInfo[] = JSON.parse(fs.readFileSync(kindergartensPath, 'utf-8'));
+  const kindergartenSidoMap = new Map<string, string>();
+  
+  kindergartens.forEach(k => {
+    if (k.kindercode && k.sido_code) {
+      kindergartenSidoMap.set(k.kindercode, k.sido_code);
+    }
+  });
+
+  console.log(`유치원 데이터 로드 완료: ${kindergartens.length}개`);
+
   for (const file of files) {
     const rawPath = path.join(RAW_DATA_DIR, file);
     const rawData: RawReviewLink[] = JSON.parse(fs.readFileSync(rawPath, 'utf-8'));
     
-    // 파일명에서 시도 코드 추출 (reviews-raw-YYYY-MM-DD-SS.json)
+    // 파일명에서 시도 코드 추출 (참고용)
     const match = file.match(/reviews-raw-\d{4}-\d{2}-\d{2}-(\d+)\.json/);
-    const sido = match ? match[1] : 'unknown';
+    const fileSido = match ? match[1] : 'unknown';
 
-    console.log(`처리 중: ${file} (${rawData.length}건, 시도: ${sido})`);
-
-    if (!processedData[sido]) {
-      processedData[sido] = { total: 0, reviews: {} };
-    }
+    console.log(`처리 중: ${file} (${rawData.length}건, 파일시도: ${fileSido})`);
 
     // 중복 제거 및 구조 변환
     for (const item of rawData) {
       const kId = item.kindergartenId;
+      
+      // ID 기반으로 정확한 시도 코드 찾기
+      const sido = kindergartenSidoMap.get(kId) || 'unknown';
+
+      if (!processedData[sido]) {
+        processedData[sido] = { total: 0, reviews: {} };
+      }
       
       const validated: ReviewLink = {
         id: `rev-${item.url.slice(-4)}-${Math.random().toString(36).substr(2, 4)}`, // ID 생성 규칙 단순화
@@ -137,7 +163,7 @@ function main() {
         processedData[sido].reviews[kId] = [];
       }
       
-      // URL 중복 체크
+    // URL 중복 체크
       const exists = processedData[sido].reviews[kId].some(r => r.url === validated.url);
       if (!exists) {
         processedData[sido].reviews[kId].push(validated);
@@ -146,10 +172,32 @@ function main() {
     }
   }
 
-  // 결과 저장 (시도별)
+  // 1. 결과 저장 (시도별)
   if (!fs.existsSync(PUBLIC_DATA_DIR)) {
     fs.mkdirSync(PUBLIC_DATA_DIR, { recursive: true });
   }
+
+  // 2. 통합 데이터 생성 (frontend 호환용)
+  const combinedReviews: Record<string, ReviewLink[]> = {};
+  let combinedTotal = 0;
+  let combinedKindergartenCount = 0;
+
+  for (const [, data] of Object.entries(processedData)) {
+    combinedTotal += data.total;
+    Object.assign(combinedReviews, data.reviews);
+  }
+  combinedKindergartenCount = Object.keys(combinedReviews).length;
+
+  const combinedOutput: ReviewsData = {
+    version: new Date().toISOString().split('T')[0],
+    totalCount: combinedTotal,
+    kindergartenCount: combinedKindergartenCount,
+    reviews: combinedReviews
+  };
+
+  const combinedPath = path.resolve('public/data/reviews.json');
+  fs.writeFileSync(combinedPath, JSON.stringify(combinedOutput, null, 2));
+  console.log(`\n[통합] ${combinedPath}: ${combinedTotal}건 (유치원 ${combinedKindergartenCount}개)`);
 
   console.log('\n=== 저장 결과 ===');
   for (const [sido, data] of Object.entries(processedData)) {

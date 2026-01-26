@@ -19,6 +19,7 @@
     "check:api": "tsx scripts/check-api-data.ts",
     "sync:kindergartens": "tsx scripts/sync-kindergartens.ts",
     "collect:reviews": "tsx scripts/collect-reviews.ts",
+    "collect:reviews:v3": "tsx scripts/collect-reviews-v3.ts",
     "curate:reviews": "tsx scripts/curate-reviews.ts",
     "filter:reviews": "tsx scripts/filter-reviews.ts",
     "split:reviews": "tsx scripts/split-reviews.ts",

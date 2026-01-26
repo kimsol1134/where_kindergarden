@@ -401,6 +401,17 @@ const sorted = items.toSorted((a, b) => a.distance - b.distance);
 ## 프로젝트 구조
 
 ```
+.claude/
+└── agents/
+    └── review-curator.md     # 후기 큐레이션 Subagent
+
+scripts/
+├── collect-reviews.ts        # 후기 수집 (v2)
+├── collect-reviews-v3.ts     # 후기 수집 (v3 - 지역 검증)
+├── filter-reviews.ts         # 자동 스팸 필터링
+├── curate-reviews.ts         # 큐레이션
+└── sync-kindergartens.ts     # 유치원 데이터 동기화
+
 src/
 ├── app/
 │   ├── page.tsx              # 홈 (위치 검색)
@@ -803,13 +814,29 @@ interface KindergartenRecord {
 pnpm collect:all -- --sido 11           # 서울 전체 실행
 pnpm collect:all -- --sido 41           # 경기 전체 실행
 
+# V3 수집 스크립트 (지역 검증 + 엄격 필터링)
+pnpm collect:reviews:v3 -- --sido 11           # 서울 수집
+pnpm collect:reviews:v3 -- --sido 41 --strict  # 경기, 엄격 모드 (3점 이상)
+pnpm collect:reviews:v3 -- --sido 11 --test    # 테스트 (3개만)
+
 # 개별 단계 실행 (수동)
-pnpm collect:reviews -- --sido 11       # 1. 수집
+pnpm collect:reviews -- --sido 11       # 1. 수집 (v2)
 pnpm collect:reviews -- --sido 11 --test # (테스트: 처음 3개만)
 pnpm curate:reviews                     # 2. 큐레이션
 pnpm filter:reviews -- --sido 11        # 3. 스팸 필터링
 pnpm split:reviews -- --sido 11         # 4. 지역 분할
 ```
+
+### V3 수집 스크립트 개선사항
+
+`scripts/collect-reviews-v3.ts`는 다음 기능이 추가되었습니다:
+
+- **지역 검증 로직**: 서울/경기 상호 오염 방지
+  - 서울(11) 수집 시: 경기 지역 언급 자동 필터
+  - 경기(41) 수집 시: 서울 구 이름 언급 자동 필터
+- **`--strict` 모드**: 관련성 점수 3점 이상만 수집 (기본 2점)
+- **제외어 자동 추가**: 검색 쿼리에 `-태권도 -부동산 -등산` 등 자동 추가
+- **필터링 통계**: 스팸/지역불일치/점수미달 각각 표시
 
 ### 데이터 구조 (v2)
 
@@ -855,12 +882,15 @@ pnpm split:reviews -- --sido 11         # 4. 지역 분할
 
 | 파일 | 역할 |
 |------|------|
-| `scripts/collect-reviews.ts` | 수집 스크립트 |
+| `scripts/collect-reviews.ts` | 수집 스크립트 (v2) |
+| `scripts/collect-reviews-v3.ts` | 수집 스크립트 (v3 - 지역 검증) |
+| `scripts/filter-reviews.ts` | 자동 스팸 필터링 |
 | `scripts/curate-reviews.ts` | 큐레이션 스크립트 |
-| `src/lib/utils/review-utils.ts` | 관련성 점수 계산 (키워드) |
+| `src/lib/utils/review-utils.ts` | 관련성 점수, 지역 검증, 키워드 |
 | `src/types/review.ts` | 타입 정의 |
 | `src/stores/reviewStore.ts` | Zustand 스토어 |
-| `public/data/reviews.json` | 최종 출력 파일 |
+| `.claude/agents/review-curator.md` | 큐레이션 Subagent |
+| `public/data/reviews/` | 시도별 후기 데이터 |
 
 ### reviews.json 구조
 
@@ -885,20 +915,46 @@ GOOGLE_CSE_API_KEY=       # 선택
 GOOGLE_CSE_CX=            # 선택
 ```
 
-### 후기 큐레이션 스킬 (`/review-curate`)
+### 후기 큐레이션 Subagent (`review-curator`)
 
-수집된 후기 중 스팸/무관 콘텐츠를 식별하고 제거하는 스킬입니다.
+수집된 후기 중 스팸/무관 콘텐츠를 식별하고 제거하는 전문 Subagent입니다.
 
-- **실행**: `/review-curate` 명령
-- **검토 범위**: `lastCuratedAt` 이후 수집된 후기만 검토 (이전 검토 완료분 스킵)
-- **제거 기준**:
-  - 잘못 연결된 후기 (다른 지역/다른 유치원 글이 잘못 매핑된 경우)
-  - 스팸 (음식배달, 미용, 마사지, 부동산, 학원 등 업체 광고)
-  - 무관한 개인 글 (유치원과 관련 없는 일상/여행/맛집)
-- **스킬 파일**: `~/.claude/skills/review-curation/skill.md`
+- **파일 위치**: `.claude/agents/review-curator.md`
+- **모델**: `sonnet` (맥락 이해 정확도를 위해)
+- **사용 가능 도구**: Read, Glob, Grep, Edit, Write
+
+#### 호출 방법
+
+```bash
+# Claude Code에서 자동 위임 (권장)
+"서울 리뷰 파일 큐레이션 해줘"
+"경기 후기 데이터 정제해줘"
+
+# 명시적 호출
+"review-curator subagent로 11.json 검토해줘"
+```
+
+#### 제거 기준
+
+| 유형 | 예시 |
+|------|------|
+| 잘못 연결된 후기 | 다른 지역/다른 유치원 글이 잘못 매핑된 경우 |
+| 업체 광고 | 음식배달, 미용, 마사지, 부동산, 마술공연 섭외 등 |
+| 학원 (유치원 아님) | 태권도, 피아노, 축구클럽, 발레학원 |
+| 무관한 활동 | 등산, 산행, 키즈카페, 맛집, 여행 |
+
+#### Sonnet → Haiku 전환
+
+다음 조건 충족 시 `.claude/agents/review-curator.md`에서 `model: haiku`로 변경 가능:
+- 3-5회 사용 후 정확도 확인
+- 잘못 연결된 후기 판단이 정확함
+- 애매한 케이스에서 오판이 적음
 
 ### 주의사항
 
 - 동명 유치원 주의: "예은유치원", "중앙유치원" 등 전국에 같은 이름 다수 존재
 - 수집 시 유치원명이 snippet에 단순 나열만 된 글도 잡힐 수 있음 → 큐레이션 필수
-- `review-utils.ts`의 NEGATIVE_KEYWORDS 업데이트 시 큐레이션 스킬과 동기화 유지
+- 스팸 패턴 업데이트 시 동기화 필요:
+  - `src/lib/utils/review-utils.ts` (NEGATIVE_KEYWORDS, SPAM_TITLE_PATTERNS)
+  - `scripts/filter-reviews.ts` (SPAM_TITLE_PATTERNS)
+  - `.claude/agents/review-curator.md` (제거 기준)
