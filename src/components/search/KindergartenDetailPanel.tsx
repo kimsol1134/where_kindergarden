@@ -21,7 +21,6 @@ import {
   Loader2,
   Heart,
   Newspaper,
-  MessageCircle,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
@@ -29,8 +28,6 @@ import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 import { ReviewPreview } from '@/components/review/ReviewPreview';
-import { QuestionList } from '@/components/qna/QuestionList';
-import { useQuestions } from '@/hooks/useQuestions';
 
 /** Chart skeleton for loading state */
 function ChartSkeleton() {
@@ -109,7 +106,7 @@ function InfoRow({
   );
 }
 
-type DetailTab = 'info' | 'reviews' | 'qna';
+type DetailTab = 'info' | 'reviews';
 
 export function KindergartenDetailPanel({
   kindergarten,
@@ -120,10 +117,6 @@ export function KindergartenDetailPanel({
 }: KindergartenDetailPanelProps) {
   const [activeTab, setActiveTab] = useState<DetailTab>('info');
   const typeStyle = TYPE_STYLES[kindergarten.type];
-
-  // Q&A 질문 수 조회 (탭 뱃지용)
-  const { questions } = useQuestions(kindergarten.kindercode);
-  const questionCount = questions.length;
 
   // CompareFloatingBar가 표시되는지 확인 (비교함에 아이템이 있을 때)
   const compareItems = useCompareStore((state) => state.items);
@@ -217,7 +210,7 @@ export function KindergartenDetailPanel({
       />
 
       {/* Panel */}
-      <div className="fixed inset-y-0 right-0 w-full max-w-2xl bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right md:min-w-[500px]">
+      <div className="fixed inset-y-0 right-0 w-full md:w-[550px] md:max-w-none bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b-0 bg-white/80 backdrop-blur-md sticky top-0 z-10">
           <h2 className="text-lg font-bold text-gray-900">상세 정보</h2>
@@ -267,33 +260,9 @@ export function KindergartenDetailPanel({
               <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
             )}
           </button>
-          <button
-            onClick={() => setActiveTab('qna')}
-            className={`flex-1 py-3 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
-              activeTab === 'qna'
-                ? 'text-emerald-600'
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            <MessageCircle className="w-4 h-4" />
-            Q&A
-            {questionCount > 0 && (
-              <span className="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-bold">
-                {questionCount}
-              </span>
-            )}
-            {activeTab === 'qna' && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
-            )}
-          </button>
         </div>
 
         {/* Content */}
-        {activeTab === 'qna' ? (
-          <div className="flex-1 overflow-y-auto bg-gray-50">
-            <QuestionList kindergartenId={kindergarten.kindercode} />
-          </div>
-        ) : (
         <div className="flex-1 overflow-y-auto bg-gray-50">
           {activeTab === 'reviews' ? (
             <ReviewLinkList kindergartenId={kindergarten.kindercode} />
@@ -363,7 +332,7 @@ export function KindergartenDetailPanel({
               학급/아동
             </h4>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* 학급수 차트 */}
               <div className="bg-white rounded-xl">
                 <ChartErrorBoundary>
@@ -391,7 +360,7 @@ export function KindergartenDetailPanel({
               </div>
 
               {/* 비율 차트 */}
-              <div className="bg-white rounded-xl md:col-span-2 lg:col-span-1">
+              <div className="bg-white rounded-xl md:col-span-2">
                 <ChartErrorBoundary>
                   <RatioBarChart
                     data={ratioData}
@@ -648,7 +617,6 @@ export function KindergartenDetailPanel({
           </>
           )}
         </div>
-        )}
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
         <div className={`p-5 border-t border-gray-200 bg-white ${hasCompareBar ? 'pb-20' : ''}`}>

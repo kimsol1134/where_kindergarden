@@ -9,7 +9,11 @@ export function GlobalProviders({ children }: { children: React.ReactNode }) {
   const initialize = useAuthStore((state) => state.initialize);
 
   useEffect(() => {
-    initialize();
+    try {
+      initialize();
+    } catch {
+      // Supabase not configured - silently ignore
+    }
   }, [initialize]);
 
   return (
