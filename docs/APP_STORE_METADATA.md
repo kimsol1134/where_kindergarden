@@ -213,6 +213,32 @@
 
 **결과**: 4+ (모든 연령에 적합)
 
+**결과**: 4+ (모든 연령에 적합)
+
+---
+
+## 앱 개인정보 보호 (App Privacy)
+
+AdMob 도입으로 인해 **"사용자 추적 데이터"** 항목을 설정해야 합니다.
+
+### 1. 데이터를 사용하여 사용자를 추적합니까? (Tracking)
+- **예 (Yes)** 선택
+
+### 2. 추적 목적 및 데이터 유형
+- **식별자 (Identifiers)**: 기기 ID (Device ID)
+  - 목적: **타사 광고 (Third-Party Advertising)**
+
+### 3. 수집되는 데이터 (Data Collected)
+- **식별자 (Identifiers)** -> 기기 ID (Device ID)
+  - 사용자에게 연결됨 (Linked to User): 예
+  - 목적: 타사 광고 (Third-Party Advertising)
+- **사용 데이터 (Usage Data)** -> 광고 데이터 (Advertising Data)
+  - 사용자에게 연결됨: 아니요
+  - 목적: 타사 광고
+
+> **심사 질문**: "왜 IDFA(광고 식별자)를 사용합니까?"
+> **답변**: "개인 맞춤형 광고 제공 및 광고 성과 측정을 위해 타사 광고 네트워크(Google AdMob)에서 사용합니다."
+
 ---
 
 ## 스크린샷 권장 구성
