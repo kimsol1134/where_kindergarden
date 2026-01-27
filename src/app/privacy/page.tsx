@@ -83,6 +83,7 @@ export default function PrivacyPage() {
                 <li>
                   <strong>앱 이용 및 광고 상호작용 정보</strong>: 광고 노출 및
                   클릭, 앱 내 활동 정보 등이 분석 목적으로 수집될 수 있습니다.
+                </li>
               </ul>
               <p className="text-gray-600 mt-4 bg-emerald-50 p-4 rounded-lg">
                 <strong>중요:</strong> 위치 정보는 서버에 저장되지 않으며,
@@ -133,8 +134,8 @@ export default function PrivacyPage() {
                     (Google 광고 정책 확인)
                   </a>
                 </li>
+                </li>
               </ul>
-              </p>
             </section>
 
             <section className="mb-8">
