@@ -19,7 +19,7 @@ import {
   Crosshair,
 } from 'lucide-react';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
-import { useSearchStore, useFavoriteStore, type InstitutionFilter } from '@/stores';
+import { useSearchStore, useFavoriteStore, useUIStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
 import { RADIUS_MIN, RADIUS_MAX } from '@/types';
 import { FavoritesPanel } from './FavoritesPanel';
@@ -37,6 +37,9 @@ export function SearchHeader() {
 
   // 찜하기 스토어 (hydration 이후에만 count 표시)
   const favoriteCount = useFavoriteStore(state => state.getItemCount());
+
+  // UI 상태 관리 (광고와 BottomSheet 조율)
+  const setBottomSheetOpen = useUIStore(state => state.setBottomSheetOpen);
 
   // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
   useEffect(() => {
@@ -146,9 +149,10 @@ export function SearchHeader() {
     (type: InstitutionFilter) => {
       setType(type);
       setIsTypeOpen(false);
+      setBottomSheetOpen(false);
       search();
     },
-    [setType, search]
+    [setType, setBottomSheetOpen, search]
   );
 
   // 버스 필터 토글
@@ -420,8 +424,10 @@ export function SearchHeader() {
         <button
           ref={radiusButtonRef}
           onClick={() => {
-            setIsRadiusOpen(!isRadiusOpen);
+            const newState = !isRadiusOpen;
+            setIsRadiusOpen(newState);
             setIsTypeOpen(false);
+            setBottomSheetOpen(newState);
           }}
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
         >
@@ -432,8 +438,10 @@ export function SearchHeader() {
         <button
           ref={typeButtonRef}
           onClick={() => {
-            setIsTypeOpen(!isTypeOpen);
+            const newState = !isTypeOpen;
+            setIsTypeOpen(newState);
             setIsRadiusOpen(false);
+            setBottomSheetOpen(newState);
           }}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.type !== 'all'
@@ -521,6 +529,7 @@ export function SearchHeader() {
           onClick={() => {
             setIsRadiusOpen(false);
             setIsTypeOpen(false);
+            setBottomSheetOpen(false);
           }}
         />
       )}
@@ -551,7 +560,10 @@ export function SearchHeader() {
               <span>{RADIUS_MAX}km</span>
             </div>
             <button
-              onClick={() => setIsRadiusOpen(false)}
+              onClick={() => {
+                setIsRadiusOpen(false);
+                setBottomSheetOpen(false);
+              }}
               className="w-full mt-4 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm"
             >
               적용
