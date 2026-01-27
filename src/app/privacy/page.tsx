@@ -60,143 +60,167 @@ export default function PrivacyPage() {
           <div className="prose prose-gray max-w-none">
             <p className="text-gray-600 mb-8">
               우리동네 유치원(이하 &quot;서비스&quot;)은 이용자의 개인정보를
-              중요시하며, 개인정보 보호법을 준수하고 있습니다.
+              중요시하며, 개인정보 보호법, 정보통신망 이용촉진 및 정보보호 등에
+              관한 법률을 준수하고 있습니다.
             </p>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">
-                1. 수집하는 개인정보
+                1. 수집하는 개인정보 항목 및 방법
               </h2>
               <p className="text-gray-600 mb-4">
-                서비스는 다음과 같은 정보를 수집합니다:
+                서비스는 원활한 서비스 제공과 광고 게재를 위해 다음과 같은
+                정보를 수집할 수 있습니다.
               </p>
+              <h3 className="font-semibold text-gray-800 mb-2">
+                가. 필수적 수집 항목 (앱 기능)
+              </h3>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+                <li>
+                  <strong>위치 정보 (GPS 좌표)</strong>: 사용자 주변의 유치원을
+                  검색하고 거리를 계산하기 위해 사용됩니다.
+                  <br />※ 위치 정보는 사용자 기기 내에서만 처리되며, 서버로
+                  전송되거나 저장되지 않습니다.
+                </li>
+              </ul>
+              <h3 className="font-semibold text-gray-800 mb-2">
+                나. 자동 수집 항목 (타사 광고 및 분석)
+              </h3>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
                 <li>
-                  <strong>위치 정보 (GPS 좌표)</strong>: 현재 위치 기반 유치원
-                  검색을 위해 사용됩니다.
+                  <strong>기기 식별자 (Device ID, Advertising ID)</strong>:
+                  맞춤형 광고 제공 및 앱 이용 분석을 위해 타사(Google)에 의해
+                  수집될 수 있습니다.
                 </li>
                 <li>
-                  <strong>기기 식별자 (Device ID/Advertising ID)</strong>:
-                  앱 이용 분석 및 개인 맞춤형 광고 제공을 위해 수집될 수
-                  있습니다.
+                  <strong>앱 이용 기록</strong>: 광고 노출, 클릭, 앱 내 상호작용
+                  데이터가 수집될 수 있습니다.
                 </li>
                 <li>
-                  <strong>앱 이용 및 광고 상호작용 정보</strong>: 광고 노출 및
-                  클릭, 앱 내 활동 정보 등이 분석 목적으로 수집될 수 있습니다.
+                  <strong>쿠키(Cookie) 및 로컬 스토리지</strong>: 검색 설정 저장
+                  등 편의 기능을 위해 사용됩니다.
                 </li>
               </ul>
-              <p className="text-gray-600 mt-4 bg-emerald-50 p-4 rounded-lg">
-                <strong>중요:</strong> 위치 정보는 서버에 저장되지 않으며,
-                클라이언트(사용자 기기)에서만 일시적으로 사용됩니다.
-              </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">
-                2. 개인정보 수집 목적
+                2. 개인정보의 수집 및 이용 목적
               </h2>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>주변 유치원 검색 서비스 제공</li>
-                <li>거리 기반 검색 결과 정렬</li>
-                <li>반경 필터(1km, 2km, 5km) 적용</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                3. 개인정보 보유 기간
-              </h2>
-              <p className="text-gray-600">
-                수집된 위치 정보는 브라우저 세션 종료 시 자동으로 삭제됩니다.
-                서버에 별도로 저장되지 않습니다.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                4. 개인정보 제3자 제공
-              </h2>
-              <p className="text-gray-600">
-                서비스는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지
-                않으나, 다음의 경우에는 예외로 합니다:
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-4">
                 <li>
-                  <strong>Google AdMob</strong>: 광고 게재 및 성과 분석을 위해
-                  기기 식별자(Advertising ID) 및 이용 기록이 Google에 제공될 수
-                  있습니다.
-                  <a
-                    href="https://policies.google.com/technologies/ads"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline ml-1"
-                  >
-                    (Google 광고 정책 확인)
-                  </a>
+                  <strong>위치 기반 서비스 제공</strong>: 현재 위치 주변 유치원
+                  탐색 및 거리순 정렬
                 </li>
+                <li>
+                  <strong>광고 게재</strong>: Google AdMob을 통한 맞춤형 광고
+                  제공 (개인 식별 불가한 형태)
+                </li>
+                <li>
+                  <strong>서비스 개선</strong>: 앱 이용 통계 분석 및 버그 수정
                 </li>
               </ul>
             </section>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">
-                5. 유치원 데이터 출처
+                3. 개인정보의 보유 및 이용 기간
+              </h2>
+              <p className="text-gray-600">
+                원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당
+                정보를 지체 없이 파기합니다.
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-2">
+                <li>
+                  <strong>위치 정보</strong>: 앱 종료 또는 브라우저 세션 종료 시
+                  즉시 파기 (서버 저장 안 함)
+                </li>
+                <li>
+                  <strong>광고 식별자</strong>: Google의 광고 데이터 처리 방침에
+                  따라 관리됨
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">
+                4. 개인정보의 제3자 제공
+              </h2>
+              <p className="text-gray-600">
+                서비스는 이용자의 동의 없이 개인정보를 외부에 제공하지 않습니다.
+                단, 맞춤형 광고 제공을 위해 아래와 같이 타사 서비스가 이용될 수
+                있습니다.
+              </p>
+              <div className="mt-4 bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <p className="font-semibold text-gray-800">Google AdMob</p>
+                <ul className="list-disc pl-6 text-gray-600 space-y-1 mt-2 text-sm">
+                  <li>제공받는 자: Google LLC, Google Asia Pacific Pte. Ltd.</li>
+                  <li>제공 목적: 맞춤형 광고 게재 및 광고 성과 분석</li>
+                  <li>제공 항목: 기기 식별자(Advertising ID), 쿠키, 앱 이용 기록</li>
+                  <li>
+                    보유 및 이용 기간:
+                    <a
+                      href="https://policies.google.com/technologies/ads"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-600 hover:underline ml-1"
+                    >
+                      Google 파트너의 데이터 사용 정책 참조
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">
+                5. 이용자의 권리 및 행사 방법 (광고 철회)
               </h2>
               <p className="text-gray-600 mb-4">
-                서비스에서 제공하는 유치원 정보는 다음 출처에서
-                수집됩니다:
+                이용자는 언제든지 맞춤형 광고 수신을 거부할 수 있습니다.
               </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>
-                  <strong>유치원 알리미</strong> (교육부 운영 공공데이터)
-                </li>
-                <li>e-childschoolinfo.moe.go.kr</li>
-              </ul>
-              <p className="text-gray-600 mt-4">
-                데이터는 정기적으로 업데이트되며, 실제 현황과 다를 수 있습니다.
-              </p>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-1">
+                    iOS (iPhone/iPad)
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    설정 &gt; 개인정보 보호 및 보안 &gt; 추적 &gt; &#39;앱이
+                    추적을 요청하도록 허용&#39; 끄기 또는 본 앱 선택 해제
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-1">Android</h3>
+                  <p className="text-gray-600 text-sm">
+                    설정 &gt; Google &gt; 광고 &gt; 광고 ID 삭제 또는
+                    재설정
+                  </p>
+                </div>
+              </div>
             </section>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">
-                6. 쿠키 사용
+                6. 문의처
               </h2>
               <p className="text-gray-600">
-                서비스는 비교 목록 저장을 위해 브라우저의 로컬 스토리지를
-                사용합니다. 이는 이용자의 편의를 위한 것이며, 개인을 식별하는
-                정보는 저장되지 않습니다.
+                개인정보 관련 문의사항은 아래로 연락해주시기 바랍니다.
               </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                7. 이용자의 권리
-              </h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>위치 정보 수집 동의 철회 (브라우저 설정에서 변경 가능)</li>
-                <li>브라우저 캐시 및 로컬 스토리지 삭제</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                8. 문의처
-              </h2>
-              <p className="text-gray-600">
-                개인정보 관련 문의사항이 있으시면 아래로 연락해주세요:
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-4">
+              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-2">
                 <li>이메일: privacy@kindergarden.kr</li>
               </ul>
             </section>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 mb-4">
-                9. 개인정보처리방침 변경
+                7. 개인정보처리방침 변경
               </h2>
               <p className="text-gray-600">
-                본 개인정보처리방침은 법령 및 서비스 변경에 따라 수정될 수
-                있습니다. 변경 시 서비스 내 공지를 통해 안내드립니다.
+                이 개인정보처리방침은 2026년 1월 27일부터 적용됩니다.
+              </p>
+              <p className="text-gray-500 text-sm mt-2">
+                공고일자: 2026년 1월 27일<br />
+                시행일자: 2026년 1월 27일
               </p>
             </section>
 
