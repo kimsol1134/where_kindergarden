@@ -16,10 +16,17 @@ export function AdContainer() {
     const isNative = Capacitor.isNativePlatform();
     setPlatform(isNative ? 'native' : 'web');
 
-    // 네이티브 플랫폼일 때 즉시 광고 높이 설정 (광고 로드 전에도 공간 확보)
+    // 네이티브 플랫폼일 때 body 클래스 및 CSS 변수 설정
     if (isNative) {
+      document.body.classList.add('native-platform');
+      document.documentElement.style.setProperty('--ad-banner-height', `${AD_BANNER_HEIGHT}px`);
       setAdBannerHeight(AD_BANNER_HEIGHT);
     }
+
+    return () => {
+      document.body.classList.remove('native-platform');
+      document.documentElement.style.setProperty('--ad-banner-height', '0px');
+    };
   }, [setAdBannerHeight]);
 
   if (!platform) return null;

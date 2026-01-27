@@ -25,7 +25,7 @@ import {
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
-import { useCompareStore, useFavoriteStore, useReviewStore, useUIStore } from '@/stores';
+import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 import { ReviewPreview } from '@/components/review/ReviewPreview';
 
@@ -122,9 +122,6 @@ export function KindergartenDetailPanel({
   const compareItems = useCompareStore((state) => state.items);
   const hasCompareBar = compareItems.length > 0;
 
-  // 광고 배너 높이 (네이티브 앱에서 광고가 표시될 때)
-  const adBannerHeight = useUIStore((state) => state.adBannerHeight);
-
   // 후기 수
   const reviewCount = useReviewStore((state) => state.getCountByKindergartenId(kindergarten.kindercode));
 
@@ -214,8 +211,7 @@ export function KindergartenDetailPanel({
 
       {/* Panel */}
       <div
-        className="fixed top-0 right-0 w-full md:w-[550px] md:max-w-none bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right"
-        style={{ bottom: adBannerHeight }}
+        className="fixed top-0 right-0 w-full md:w-[550px] md:max-w-none bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right fixed-bottom-with-ad"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b-0 bg-white/80 backdrop-blur-md sticky top-0 z-10">

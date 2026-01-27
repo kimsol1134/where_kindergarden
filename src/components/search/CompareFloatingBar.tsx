@@ -3,13 +3,12 @@
 import { startTransition } from 'react';
 import { X, ArrowRight, Trash2 } from 'lucide-react';
 import Link from 'next/link';
-import { useCompareStore, useUIStore } from '@/stores';
+import { useCompareStore } from '@/stores';
 
 const MAX_COMPARE_ITEMS = 3;
 
 export function CompareFloatingBar() {
   const { items, removeItem, clearAll } = useCompareStore();
-  const adBannerHeight = useUIStore((state) => state.adBannerHeight);
 
   const handleRemoveItem = (kindercode: string) => {
     startTransition(() => {
@@ -23,8 +22,7 @@ export function CompareFloatingBar() {
 
   return (
     <div
-      className="fixed left-0 w-full z-40"
-      style={{ bottom: adBannerHeight }}
+      className="fixed left-0 w-full z-40 fixed-bottom-with-ad"
       id="compareBar"
     >
       <div className="bg-white border-t border-gray-200 shadow-[0_-5px_20px_rgba(0,0,0,0.1)] p-3 md:p-4">

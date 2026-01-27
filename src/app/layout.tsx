@@ -4,6 +4,7 @@ import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { AdContainer } from '@/components/ads/AdContainer';
+import { Analytics } from '@vercel/analytics/next';
 
 /*
  * Font optimization: To use next/font/local for better performance,
@@ -113,6 +114,7 @@ export default function RootLayout({
         <WebsiteJsonLd />
         <OrganizationJsonLd />
         <AdContainer />
+        <Analytics />
       </body>
     </html>
   );
