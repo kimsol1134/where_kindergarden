@@ -16,3 +16,5 @@ export type { KindergartenRaw } from './kindergartenStore';
 
 export { useReviewStore } from './reviewStore';
 export { useAuthStore } from './authStore';
+
+export { useUIStore } from './uiStore';

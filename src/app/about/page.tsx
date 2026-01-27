@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import {
   ArrowLeft,
   MapPin,
@@ -10,7 +11,6 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { Footer } from '@/components/landing/Footer';
-import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 
 export const metadata: Metadata = {
   title: '서비스 소개',
@@ -72,9 +72,13 @@ export default function AboutPage() {
               <ArrowLeft className="w-5 h-5 text-gray-600" />
             </Link>
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center text-white">
-                <KindergartenIcon className="w-5 h-5" />
-              </div>
+              <Image
+                src="/logo.png"
+                alt="우리동네 유치원"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
               <span className="text-xl font-bold tracking-tight text-gray-900">
                 우리동네 유치원
               </span>
