@@ -40,6 +40,33 @@ export const useReviewStore = create<ReviewState & ReviewActions>(
 
       const promise = (async () => {
         try {
+          // 1. Try fetching from remote server first (Real-time updates)
+          try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
+
+            const response = await fetch('https://where-kindergarden.vercel.app/data/reviews.json', {
+              signal: controller.signal,
+              cache: 'no-store', // Always get fresh data
+            });
+            clearTimeout(timeoutId);
+
+            if (response.ok) {
+              const data: ReviewsData = await response.json();
+              set({
+                data,
+                isLoaded: true,
+                isLoading: false,
+                error: null,
+                loadPromise: null,
+              });
+              return; // Success, exit
+            }
+          } catch (remoteError) {
+            console.warn('Remote review fetch failed, falling back to local:', remoteError);
+          }
+
+          // 2. Fallback to local data (Bundled with app)
           const response = await fetch('/data/reviews.json');
 
           if (!response.ok) {
