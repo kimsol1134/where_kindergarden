@@ -217,27 +217,61 @@
 
 ---
 
-## 앱 개인정보 보호 (App Privacy)
+---
 
-AdMob 도입으로 인해 **"사용자 추적 데이터"** 항목을 설정해야 합니다.
+## 앱 개인정보 보호 (App Privacy) - 데이터 수집
 
-### 1. 데이터를 사용하여 사용자를 추적합니까? (Tracking)
-- **예 (Yes)** 선택
+AdMob 광고와 위치 기반 검색 기능을 위해 다음 항목들을 체크해야 합니다.
 
-### 2. 추적 목적 및 데이터 유형
-- **식별자 (Identifiers)**: 기기 ID (Device ID)
-  - 목적: **타사 광고 (Third-Party Advertising)**
+### 1. 데이터 수집 여부
+- **"이 앱에서 데이터를 수집합니까?"** -> **예 (Yes)**
 
-### 3. 수집되는 데이터 (Data Collected)
-- **식별자 (Identifiers)** -> 기기 ID (Device ID)
-  - 사용자에게 연결됨 (Linked to User): 예
-  - 목적: 타사 광고 (Third-Party Advertising)
-- **사용 데이터 (Usage Data)** -> 광고 데이터 (Advertising Data)
-  - 사용자에게 연결됨: 아니요
-  - 목적: 타사 광고
+### 2. 수집하는 데이터 유형
+다음 4가지 항목을 모두 선택합니다:
 
-> **심사 질문**: "왜 IDFA(광고 식별자)를 사용합니까?"
-> **답변**: "개인 맞춤형 광고 제공 및 광고 성과 측정을 위해 타사 광고 네트워크(Google AdMob)에서 사용합니다."
+1.  **위치 (Location)**
+    - [x] 정확한 위치 (Precise Location)
+2.  **식별자 (Identifiers)**
+    - [x] 기기 ID (Device ID)
+3.  **사용 데이터 (Usage Data)**
+    - [x] 제품 상호 작용 (Product Interaction)
+    - [x] 광고 데이터 (Advertising Data)
+4.  **진단 (Diagnostics)**
+    - [x] 충돌 데이터 (Crash Data)
+    - [x] 실적 데이터 (Performance Data)
+
+### 3. 세부 설정 답변 (가장 중요)
+
+각 항목별로 "설정"을 누르고 다음과 같이 답변하세요.
+
+#### A. 정확한 위치 (Precise Location)
+- **목적**: 앱의 기본 기능 (App Functionality)
+- **사용자와 연결됨**: 아니요 (No)
+- **추적 목적으로 사용**: 아니요 (No)
+> 이유: 주변 유치원 검색에만 사용됨
+
+#### B. 기기 ID (Device ID) - **AdMob 필수**
+- **목적**: 타사 광고 (Third-Party Advertising)
+- **사용자와 연결됨**: **예 (Yes)**
+- **추적 목적으로 사용**: **예 (Yes)**
+> 이유: 개인 맞춤형 광고 제공 (IDFA 사용)
+
+#### C. 제품 상호 작용 (Product Interaction)
+- **목적**: 타사 광고 (Third-Party Advertising)
+- **사용자와 연결됨**: 아니요 (No)
+- **추적 목적으로 사용**: 아니요 (No)
+
+#### D. 광고 데이터 (Advertising Data)
+- **목적**: 타사 광고 (Third-Party Advertising)
+- **사용자와 연결됨**: 아니요 (No)
+- **추적 목적으로 사용**: 아니요 (No)
+
+#### E. 충돌 데이터 / 실적 데이터 (Diagnostics)
+- **목적**: 분석 (Analytics)
+- **사용자와 연결됨**: 아니요 (No)
+- **추적 목적으로 사용**: 아니요 (No)
+
+---
 
 ---
 
