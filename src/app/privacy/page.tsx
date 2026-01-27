@@ -75,6 +75,14 @@ export default function PrivacyPage() {
                   <strong>위치 정보 (GPS 좌표)</strong>: 현재 위치 기반 유치원
                   검색을 위해 사용됩니다.
                 </li>
+                <li>
+                  <strong>기기 식별자 (Device ID/Advertising ID)</strong>:
+                  앱 이용 분석 및 개인 맞춤형 광고 제공을 위해 수집될 수
+                  있습니다.
+                </li>
+                <li>
+                  <strong>앱 이용 및 광고 상호작용 정보</strong>: 광고 노출 및
+                  클릭, 앱 내 활동 정보 등이 분석 목적으로 수집될 수 있습니다.
               </ul>
               <p className="text-gray-600 mt-4 bg-emerald-50 p-4 rounded-lg">
                 <strong>중요:</strong> 위치 정보는 서버에 저장되지 않으며,
@@ -108,7 +116,24 @@ export default function PrivacyPage() {
                 4. 개인정보 제3자 제공
               </h2>
               <p className="text-gray-600">
-                서비스는 이용자의 개인정보를 제3자에게 제공하지 않습니다.
+                서비스는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지
+                않으나, 다음의 경우에는 예외로 합니다:
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-4">
+                <li>
+                  <strong>Google AdMob</strong>: 광고 게재 및 성과 분석을 위해
+                  기기 식별자(Advertising ID) 및 이용 기록이 Google에 제공될 수
+                  있습니다.
+                  <a
+                    href="https://policies.google.com/technologies/ads"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 hover:underline ml-1"
+                  >
+                    (Google 광고 정책 확인)
+                  </a>
+                </li>
+              </ul>
               </p>
             </section>
 
