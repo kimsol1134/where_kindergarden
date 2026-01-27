@@ -57,3 +57,8 @@ android/.gradle/
 android/app/build/
 android/build/
 android/capacitor-cordova-android-plugins/build/
+
+# Android keystore (보안)
+*.keystore
+*.jks
+android/openjdk-21.jdk
