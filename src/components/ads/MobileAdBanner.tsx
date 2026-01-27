@@ -19,11 +19,11 @@ export function MobileAdBanner() {
         // await AdMob.requestConsentInfo(); 
 
         await AdMob.showBanner({
-          adId: 'ca-app-pub-3940256099942544/6300978111', // Test Banner ID
+          adId: 'ca-app-pub-5648788643644962/5397823299', // Real Banner ID
           adSize: BannerAdSize.ADAPTIVE_BANNER,
           position: BannerAdPosition.BOTTOM_CENTER,
           margin: 0,
-          isTesting: true,
+          isTesting: false,
         });
         
         isAdLoaded.current = true;
