@@ -127,7 +127,7 @@ export function TestFlow() {
   const handleShare = () => {
     if (!result) return;
 
-    const shareUrl = `${window.location.origin}/test/`;
+    const shareUrl = 'https://where-kindergarden.vercel.app/test/';
     const shareTitle = `나는 ${result.name}!`;
 
     const kakao = (window as unknown as { Kakao?: {
@@ -155,7 +155,7 @@ export function TestFlow() {
         content: {
           title: shareTitle,
           description: result.description,
-          imageUrl: `${window.location.origin}/og-test.png`,
+          imageUrl: 'https://where-kindergarden.vercel.app/og-test.png',
           link: {
             mobileWebUrl: shareUrl,
             webUrl: shareUrl,
@@ -171,6 +171,7 @@ export function TestFlow() {
           },
         ],
       });
+    }
     } else {
       navigator.clipboard.writeText(shareUrl);
       alert('링크가 복사되었습니다!');
