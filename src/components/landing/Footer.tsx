@@ -30,7 +30,7 @@ export function Footer() {
               className="inline-block hover:opacity-80 transition-opacity"
             >
               <Image
-                src="/images/app-store-badge.png"
+                src="/images/app-store-badge.svg"
                 alt="Download on the App Store"
                 width={120}
                 height={40}

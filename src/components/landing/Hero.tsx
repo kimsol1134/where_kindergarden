@@ -63,7 +63,7 @@ export function Hero() {
             className="hover:opacity-80 transition-opacity"
           >
             <Image
-              src="/images/app-store-badge.png"
+              src="/images/app-store-badge.svg"
               alt="Download on the App Store"
               width={160}
               height={53}
