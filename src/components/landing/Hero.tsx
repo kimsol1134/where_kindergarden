@@ -54,7 +54,25 @@ export function Hero() {
           </Link>
         </div>
         
-        <p className="mt-4 text-sm text-gray-500 animate-fade-up delay-300">
+        <div className="mt-8 animate-fade-up delay-400 flex flex-col items-center gap-3">
+          <p className="text-sm font-medium text-gray-500">앱으로 더 편리하게 이용하세요</p>
+          <Link 
+            href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/images/app-store-badge.png"
+              alt="Download on the App Store"
+              width={160}
+              height={53}
+              className="h-[52px] w-auto"
+            />
+          </Link>
+        </div>
+        
+        <p className="mt-8 text-sm text-gray-500 animate-fade-up delay-300">
           * 위치 정보는 저장되지 않으며 검색 목적으로만 사용됩니다.
         </p>
       </div>

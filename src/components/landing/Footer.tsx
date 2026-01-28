@@ -19,10 +19,24 @@ export function Footer() {
               />
               <span className="text-xl font-bold">우리동네 유치원</span>
             </div>
-            <p className="text-sm leading-relaxed max-w-xs">
+            <p className="text-sm leading-relaxed max-w-xs mb-6">
               학부모님들의 현명한 선택을 돕기 위해 만든<br/>
               위치 기반 유치원 비교 서비스입니다.
             </p>
+            <Link 
+              href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/images/app-store-badge.png"
+                alt="Download on the App Store"
+                width={120}
+                height={40}
+                className="h-[40px] w-auto"
+              />
+            </Link>
           </div>
           <div>
             <h4 className="text-white font-bold mb-4">서비스</h4>
