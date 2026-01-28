@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin } from 'lucide-react';
+import { MapPin, Sparkles } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -37,14 +37,21 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up delay-300 w-full max-w-md mx-auto sm:max-w-none">
-          <Link 
-            href="/search?mode=location" 
+          <Link
+            href="/search?mode=location"
             className="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-lg shadow-lg shadow-emerald-200 transition-all flex items-center justify-center gap-2 group"
           >
             <MapPin className="w-5 h-5 group-hover:scale-110 transition-transform" />
             내 주변 유치원 찾기
           </Link>
 
+          <Link
+            href="/test"
+            className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-emerald-50 text-emerald-600 border-2 border-emerald-500 rounded-xl font-bold text-lg shadow-md transition-all flex items-center justify-center gap-2 group"
+          >
+            <Sparkles className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            우리 아이 성향 테스트
+          </Link>
         </div>
         
         <p className="mt-4 text-sm text-gray-500 animate-fade-up delay-300">
