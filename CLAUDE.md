@@ -403,11 +403,14 @@ const sorted = items.toSorted((a, b) => a.distance - b.distance);
 ```
 .claude/
 └── agents/
-    └── review-curator.md     # 후기 큐레이션 Subagent
+    ├── review-curator.md         # 후기 큐레이션 Subagent
+    └── chrome-review-extractor.md # URL 배치 추출 Subagent
 
 scripts/
 ├── collect-reviews.ts        # 후기 수집 (v2)
 ├── collect-reviews-v3.ts     # 후기 수집 (v3 - 지역 검증)
+├── enrich-chrome-reviews.ts  # Chrome 수집 URL 보강 (네이버 API)
+├── merge-chrome-reviews.ts   # Chrome 수집 결과 병합
 ├── filter-reviews.ts         # 자동 스팸 필터링
 ├── curate-reviews.ts         # 큐레이션
 └── sync-kindergartens.ts     # 유치원 데이터 동기화
@@ -830,9 +833,9 @@ interface KindergartenRecord {
 ### 수집 대상 및 진행 현황
 
 - **수집 방식**: 지역별(시도) 일괄 수집
-- **현재 진행**: 
+- **현재 진행**:
   - [x] 인천 (28) 완료: `public/data/reviews/28.json` (185건)
-  - [x] 서울 (11) 완료: `public/data/reviews/11.json` (753건)
+  - [x] 서울 (11) 완료: `public/data/reviews/11.json` (1,562건)
   - [x] 경기 (41) 완료: `public/data/reviews/41.json` (2,654건)
 
 ### 스크립트 실행
@@ -854,7 +857,92 @@ pnpm collect:reviews -- --sido 11 --test # (테스트: 처음 3개만)
 pnpm curate:reviews                     # 2. 큐레이션
 pnpm filter:reviews -- --sido 11        # 3. 스팸 필터링
 pnpm split:reviews -- --sido 11         # 4. 지역 분할
+
+# Chrome 반자동 수집 결과 병합
+pnpm merge:chrome-reviews -- --input chrome-reviews.json --sido 11
+pnpm merge:chrome-reviews -- --input chrome-reviews.json --sido 41 --dry-run
 ```
+
+### Claude in Chrome 반자동 수집
+
+API로 접근할 수 없는 후기(폐쇄 카페, 동적 콘텐츠 등)를 Claude in Chrome 확장 프로그램을 통해 수집합니다.
+
+#### 프롬프트 가이드
+- **위치**: `scripts/prompts/chrome-collect-reviews.md`
+- **사용법**: Claude.com에서 해당 프롬프트를 참고하여 반자동 수집
+
+#### 워크플로우 (기본)
+1. Claude.com → Claude in Chrome 활성화
+2. `scripts/prompts/chrome-collect-reviews.md` 가이드 따라 수집
+3. JSON 형식으로 결과 저장
+4. `pnpm merge:chrome-reviews` 로 기존 데이터에 병합
+
+### URL 보강 워크플로우 (자동화)
+
+Chrome으로 수집한 URL 목록을 네이버 검색 API로 자동 보강합니다.
+
+#### Subagent
+- **위치**: `.claude/agents/chrome-review-extractor.md`
+- **역할**: URL 배치 처리, 메타데이터 추출
+
+#### 스크립트 사용법
+
+```bash
+# 1. Chrome으로 URL 수집 후 JSON 저장
+#    예: scripts/data-output/chrome-reviews-20260128.json
+
+# 2. 네이버 API로 메타데이터 보강
+pnpm enrich:chrome-reviews -- --input chrome-reviews-*.json --sido 11
+pnpm enrich:chrome-reviews -- --input chrome-reviews-*.json --sido 11 --dry-run
+
+# 3. 보강된 결과 병합
+pnpm merge:chrome-reviews -- --input enriched-reviews-*.json --sido 11
+```
+
+#### 보강 스크립트 기능
+- query에서 유치원명 추출
+- 네이버 검색 API로 제목/스니펫/날짜 추출
+- query에 유치원명 없으면 검색 결과에서 추출
+- 관련성 필터링 + 스팸 제거
+- ChromeCollectedReview 형식으로 저장
+
+#### 입력 형식 (chrome-reviews-*.json)
+```json
+{
+  "reviews": [
+    {
+      "url": "https://blog.naver.com/...",
+      "source": "naver_blog",
+      "query": "강서구 장미유치원 후기",
+      "district": "강서구"
+    }
+  ]
+}
+```
+
+#### 출력 형식 (enriched-reviews-*.json)
+```json
+{
+  "reviews": [
+    {
+      "kindergartenName": "장미유치원",
+      "sidoCode": "11",
+      "title": "장미유치원 입학설명회 후기",
+      "url": "https://blog.naver.com/...",
+      "source": "naver_blog",
+      "snippet": "...",
+      "date": "2024-11-02"
+    }
+  ]
+}
+```
+
+#### 병합 스크립트 옵션
+| 옵션 | 설명 |
+|------|------|
+| `--input <file>` | 수집한 JSON 파일 경로 |
+| `--sido <code>` | 시도 코드 (11=서울, 41=경기, 28=인천) |
+| `--dry-run` | 저장 없이 시뮬레이션만 |
 
 ### V3 수집 스크립트 개선사항
 
@@ -913,6 +1001,8 @@ pnpm split:reviews -- --sido 11         # 4. 지역 분할
 |------|------|
 | `scripts/collect-reviews.ts` | 수집 스크립트 (v2) |
 | `scripts/collect-reviews-v3.ts` | 수집 스크립트 (v3 - 지역 검증) |
+| `scripts/merge-chrome-reviews.ts` | Chrome 수집 결과 병합 |
+| `scripts/prompts/chrome-collect-reviews.md` | Chrome 수집 프롬프트 가이드 |
 | `scripts/filter-reviews.ts` | 자동 스팸 필터링 |
 | `scripts/curate-reviews.ts` | 큐레이션 스크립트 |
 | `src/lib/utils/review-utils.ts` | 관련성 점수, 지역 검증, 키워드 |

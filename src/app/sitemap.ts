@@ -23,8 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/search`,
       lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.9,
+      changeFrequency: 'always',
+      priority: 1,
     },
     {
       url: `${baseUrl}/compare`,

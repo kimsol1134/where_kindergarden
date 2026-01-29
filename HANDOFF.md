@@ -1,98 +1,46 @@
-# HANDOFF.md
+# 서울 유치원 후기 수집 작업 인계
 
 ## 마지막 작업 일시
-2026-01-21
+2026-01-28 (오후)
 
-## 완료된 작업
-- [x] 프로젝트 초기 설정
-  - Next.js 16.1.4 + React 19.2.3 + TypeScript 5.9.3
-  - TailwindCSS 4.x + shadcn/ui 설정
-  - Zustand 5.x 상태 관리
-  - Vitest + Playwright 테스트 환경 구성
-- [x] 프로젝트 구조 생성 (CLAUDE.md 스펙에 맞게)
-- [x] TypeScript 타입 정의 (Kindergarten, API 응답 타입)
-- [x] Haversine 거리 계산 함수 구현 및 테스트 (6개 테스트 통과)
-- [x] 홈페이지 기본 UI 구현 (위치 검색 버튼)
-- [x] 환경 변수 템플릿 (.env.example) 생성
-- [x] next.config.ts 보안 설정 (CVE-2025-66478 대응)
-- [x] Kakao API 연동 (`src/lib/api/kakaoApi.ts`)
-- [x] 유치원 알리미 API 데이터 수집 스크립트 (`scripts/sync-kindergartens.ts`)
-- [x] **아키텍처 변경: Supabase DB → 정적 JSON 파일**
-- [x] 정적 JSON 데이터 생성 (`/data/kindergartens.json`, 8.5MB, ~8,000개 기관)
-- [x] PRD, IA, USECASE 문서 정적 JSON 아키텍처로 업데이트 (v1.2.0)
+## 현재 상황 요약
 
-## 진행 중인 작업
-- 없음
+### 서울 후기 현황
+- **총 1,568건 / 443개 유치원** (759개 중 58.4% 커버리지)
+- **모든 구에 후기 존재** (v3 스크립트로 기수집)
 
-## 다음에 할 작업
-1. 검색 결과 페이지 UI 구현 (`/search`)
-2. kindergartenStore 구현 (JSON 데이터 로드 및 캐싱)
-3. 클라이언트 사이드 Haversine 필터링 로직 구현
-4. 검색 결과 목록 컴포넌트 구현 (KindergartenList, KindergartenCard)
-5. 지도 뷰 컴포넌트 구현 (Kakao Maps)
-6. 비교표 기능 구현 (`/compare`)
+### 이번 세션 완료 작업
+| 구 | 유치원 수 | 기존 | 추가 | 병합 |
+|---|---|---|---|---|
+| 금천구 | 16 | 23 | +2 | ✅ 완료 |
+| 마포구 | 27 | 26 | +2 | ✅ 완료 |
+| 구로구 | 30 | 27 | +1 | ✅ 완료 |
 
-## 아키텍처 변경 사항 (중요)
+### 종로구 검색 시도 (결과 없음)
+- 교동초등학교병설유치원 → 다른 지역(춘천, 세종) 결과만 노출
+- 혜화유치원 → 성당, 문화투어 결과만 노출
+- 종로구는 인구/유치원 수가 적어 온라인 후기가 거의 없음
 
-### Before (Supabase)
-- Supabase PostgreSQL + PostGIS
-- 실시간 DB 쿼리
-- 서버 사이드 거리 계산
+### 후기가 적은 구 (추가 수집 대상)
+| 구 | 유치원 수 | 후기 수 | 상태 |
+|---|---|---|---|
+| 종로구 | 15 | 20 | Chrome 검색 시도 - 결과 없음 |
+| 중구 | 14 | 23 | 미착수 |
+| 용산구 | 13 | 27 | 미착수 |
 
-### After (정적 JSON)
-- `/data/kindergartens.json` (8.5MB, 37필드)
-- 클라이언트 메모리에 전체 데이터 캐싱
-- 클라이언트 사이드 Haversine 거리 계산
-- 학기별 JSON 파일 수동 갱신
+## 저장된 파일
+- `scripts/data-output/chrome-reviews-guro-20260128.json` - 구로구 수집
+- `scripts/data-output/chrome-reviews-mapo-20260128.json` - 마포구 수집
+- `scripts/data-output/enriched-mapo-20260128.json` - 마포구 enriched
+- `scripts/data-output/enriched-reviews-11-20260128.json` - 금천구 enriched
+- `public/data/reviews/11.json` - 서울 최종 (1568건)
 
-### 데이터 구조 (37개 필드)
-```
-kindercode, name, address, lat, lng, type, phone, homepage, operation_hours,
-sido_code, sigungu_code, capacity, current_count,
-class_count_age3~5, capacity_age3~5, current_age3~5,
-establish_date, has_bus, bus_count, meal_type, has_after_school,
-area_per_child, has_playground, building_year, floor_info,
-classroom_area, indoor_playground_area, outdoor_playground_area,
-teacher_count, senior_teacher_count, cctv_count
-```
-
-## 주의사항 / 알려진 이슈
-- 환경 변수 (.env.local 필요)
-  - `NEXT_PUBLIC_KAKAO_JS_KEY` - 지도/주소 검색용
-  - `KAKAO_REST_API_KEY` - 서버 사이드 지오코딩용 (선택)
-  - `KINDERGARTEN_API_KEY` - JSON 갱신 시에만 필요
-- Supabase 관련 환경 변수는 더 이상 필요 없음
-- JSON 파일 크기 8.5MB → gzip 압축 시 ~1.5MB
-- Playwright 브라우저 미설치 (`npx playwright install` 필요)
-
-## 현재 브랜치
-main
+## 다음 단계 권장
+1. 중구/용산구 유치원 Chrome 검색 시도
+2. 또는 경기도(41) 후기 보강 작업으로 전환
+3. 서울 도심 구(종로/중구/용산)는 후기가 적으므로 우선순위 낮춤
 
 ## 참고 파일
-- `docs/PRD.md` - 제품 요구사항 (v1.2.0)
-- `docs/IA.md` - 정보 아키텍처 (v1.2.0)
-- `docs/USECASE.md` - 유스케이스 명세 (v1.2.0)
 - `CLAUDE.md` - 개발 가이드
-- `scripts/sync-kindergartens.ts` - JSON 데이터 갱신 스크립트
-
-## 설치된 주요 패키지
-| 패키지 | 버전 | 용도 |
-|--------|------|------|
-| next | 16.1.4 | Framework |
-| react | 19.2.3 | UI Library |
-| tailwindcss | 4.1.18 | Styling |
-| zustand | 5.0.10 | State Management |
-| vitest | 3.2.4 | Unit Testing |
-| @playwright/test | 1.57.0 | E2E Testing |
-
-## 개발 명령어
-```bash
-pnpm dev           # 개발 서버 (Turbopack)
-pnpm build         # 프로덕션 빌드
-pnpm test          # 유닛 테스트
-pnpm test:e2e      # E2E 테스트
-pnpm type-check    # 타입 체크
-
-# JSON 데이터 갱신 (학기별)
-pnpm sync:kindergartens -- --save-json
-```
+- `.claude/agents/chrome-review-extractor.md` - URL 추출 Subagent
+- `scripts/merge-chrome-reviews.ts` - 병합 스크립트

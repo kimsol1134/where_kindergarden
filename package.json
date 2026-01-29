@@ -23,6 +23,8 @@
     "curate:reviews": "tsx scripts/curate-reviews.ts",
     "filter:reviews": "tsx scripts/filter-reviews.ts",
     "split:reviews": "tsx scripts/split-reviews.ts",
+    "merge:chrome-reviews": "tsx scripts/merge-chrome-reviews.ts",
+    "enrich:chrome-reviews": "tsx scripts/enrich-chrome-reviews.ts",
     "collect:all": "tsx scripts/collect-and-curate.ts",
     "mobile": "pnpm build && npx cap sync",
     "mobile:ios": "pnpm mobile && npx cap open ios",

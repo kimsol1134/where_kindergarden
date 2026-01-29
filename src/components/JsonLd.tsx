@@ -105,3 +105,36 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
     />
   );
 }
+
+interface FAQJsonLdProps {
+  mainEntity: Array<{
+    questionName: string;
+    acceptedAnswerText: string;
+  }>;
+}
+
+/**
+ * FAQ 구조화된 데이터
+ * 자주 묻는 질문을 검색 결과에 표시
+ */
+export function FAQJsonLd({ mainEntity }: FAQJsonLdProps) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: mainEntity.map((entity) => ({
+      '@type': 'Question',
+      name: entity.questionName,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: entity.acceptedAnswerText,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
