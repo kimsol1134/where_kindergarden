@@ -1,11 +1,12 @@
 /**
  * 후기 데이터 자동 정제 스크립트
  * 스팸/무관 콘텐츠를 자동으로 필터링
- * 
+ *
  * 사용법:
  *   pnpm filter:reviews              # 모든 시도 파일 필터링
  *   pnpm filter:reviews -- --sido 11 # 특정 시도만 필터링
  *   pnpm filter:reviews -- --dry-run # 미리보기 (파일 수정 안함)
+ *   pnpm filter:reviews -- --min-score 2 # relevanceScore < 2인 리뷰 제거 (시군구 파일 전용)
  */
 
 import * as fs from 'fs';
@@ -158,11 +159,29 @@ const SPAM_TITLE_PATTERNS = [
   /뮤지컬.*후기(?!.*유치원)/i,
   /페스티벌.*후기/i,
 
-  // 종교/이단
+  // 종교/이단 (V10 확장)
   /이단.*단체/i,
   /이단.*계열/i,
   /연등축제/i,
   /청련암.*전통사찰/i,
+  /교회.*역사(?!.*유치원)/i,
+  /교회.*설교/i,
+  /교회.*예배(?!.*유치원)/i,
+  /목사님.*설교/i,
+  /부활절.*예배/i,
+  /성경.*공부(?!.*유치원)/i,
+  /선교사.*이야기/i,
+  /절.*방문.*후기(?!.*유치원)/i,
+  /사찰.*탐방/i,
+
+  // 결혼/웨딩 (V10 추가)
+  /결혼식.*후기(?!.*유치원)/i,
+  /웨딩홀.*후기/i,
+  /웨딩.*촬영/i,
+  /돌잔치.*후기(?!.*유치원)/i,
+  /신혼여행/i,
+  /예식장.*추천/i,
+  /스드메.*추천/i,
 
   // 상품 광고
   /블로퍼.*추천/i,
@@ -197,37 +216,7 @@ const SPAM_TITLE_PATTERNS = [
   /탄핵/i,
   /선거.*후보/i,
 
-  // 타 지역 유치원 (인천 28 필터링용)
-  /분당.*유치원/i,
-  /세종.*유치원/i,
-  /대전.*유치원/i,
-  /대전.*어린이집/i,
-  /대구.*유치원/i,
-  /수원.*유치원/i,
-  /원주.*유치원/i,
-  /전주.*유치원/i,
-  /진주.*유치원/i,
-  /마산.*유치원/i,
-  /동탄.*유치원/i,
-  /평택.*유치원/i,
-  /파주.*유치원/i,
-  /목동.*유치원/i,
-  /송파.*유치원/i,
-  /용인.*유치원/i,
-  /광교.*유치원/i,
-  /김해.*유치원/i,
-  /해운대.*유치원/i,
-  /장유.*유치원/i,
-  /천안.*유치원/i,
-  /김천.*유치원/i,
-  /포항.*유치원/i,
-  /경기광주.*유치원/i,
-  /성북구.*유치원/i,
-  /강서구.*유치원.*입학/i,
-  /동대문구.*유치원/i,
-  /강동구.*유치원/i,
-  /김포.*유치원/i,
-  /위례.*유치원/i,
+  // 타 지역 유치원 패턴은 LOCATION_MISMATCH_PATTERNS 및 LOCATION_PATTERNS_BY_SIDO에서 처리
 
   // 맛집/카페/음식점 (V4 추가)
   /수제돈까스/i,
@@ -302,9 +291,7 @@ const SPAM_TITLE_PATTERNS = [
   /기흥키즈카페/i,
   /GLC키즈카페/i,
 
-  // 타 지역 추가 (V4)
-  /성북.*유치원/i,
-  /강북.*유치원/i,
+  // 타 지역 추가는 LOCATION_PATTERNS_BY_SIDO에서 처리
 
   // 업체 후기 (유치원과 무관)
   /천하여장군/i,
@@ -394,63 +381,36 @@ const SPAM_TITLE_PATTERNS = [
   /링키영어.*양산/i,
 
 ];
-// 타 지역 시군구명 포함 스팸
-const ADDITIONAL_LOCATION_SPAM = [
-  // 경기도 시군구
-  /분당구/i,
-  /수정구/i,
-  /야탑/i,
-  /이매/i,
-  /죽전/i,
-  /보정동/i,
-  /용인시/i,
-  /수지구/i,
-  /기흥구/i,
-  /동탄/i,
-  /화성시/i,
-  /평택시/i,
-  /오산시/i,
-  /광명시/i,
-  /시흥시/i,
-  /파주시/i,
-  /김포시/i,
-  /고양시/i,
-  /일산/i,
-  /광교/i,
-  /위례/i,
-  /성남시/i,
+// 시도별 시군구명 패턴 매핑 (해당 시도의 리뷰에서는 적용하지 않음)
+const LOCATION_PATTERNS_BY_SIDO: Record<string, RegExp[]> = {
+  '41': [ // 경기도 시군구
+    /분당구/i, /수정구/i, /야탑/i, /이매/i, /죽전/i, /보정동/i,
+    /용인시/i, /수지구/i, /기흥구/i, /동탄/i, /화성시/i, /평택시/i,
+    /오산시/i, /광명시/i, /시흥시/i, /파주시/i, /김포시/i, /고양시/i,
+    /일산/i, /광교/i, /위례/i, /성남시/i,
+  ],
+  '11': [ // 서울 구
+    /송파구/i, /강동구/i, /강서구.*입학/i, /목동/i, /동대문구/i,
+    /성북구/i, /강북구/i,
+  ],
+  '26': [/부산시/i], '27': [/대구시/i], '28': [/인천시/i],
+  '29': [/광주시(?!.*경기)/i], '30': [/대전시/i], '31': [/울산시/i],
+  '36': [/세종시/i], '42': [/춘천시/i, /원주시/i],
+  '43': [/청주시/i], '44': [/천안시/i],
+  '46': [/전주시/i], '47': [/포항시/i, /구미시/i, /경산시/i],
+  '48': [/창원시/i, /김해시/i, /진주시/i, /마산/i, /거제시/i],
+  '50': [/제주시/i],
+};
 
-  // 서울 구
-  /송파구/i,
-  /강동구/i,
-  /강서구.*입학/i,
-  /목동/i,
-  /동대문구/i,
-  /성북구/i,
-  /강북구/i,
-
-  // 기타 광역시/도
-  /세종시/i,
-  /대전시/i,
-  /대구시/i,
-  /부산시/i,
-  /울산시/i,
-  /광주시(?!.*경기)/i,
-  /전주시/i,
-  /청주시/i,
-  /천안시/i,
-  /창원시/i,
-  /김해시/i,
-  /진주시/i,
-  /마산/i,
-  /원주시/i,
-  /춘천시/i,
-  /포항시/i,
-  /구미시/i,
-  /경산시/i,
-  /거제시/i,
-  /제주시/i,
-];
+function getLocationSpamPatterns(currentSidoCode: string): RegExp[] {
+  const patterns: RegExp[] = [];
+  for (const [sidoCode, sidoPatterns] of Object.entries(LOCATION_PATTERNS_BY_SIDO)) {
+    if (sidoCode !== currentSidoCode) {
+      patterns.push(...sidoPatterns);
+    }
+  }
+  return patterns;
+}
 
 // 지역 불일치 패턴 (시도 코드 → 패턴 매핑)
 // 현재 처리 중인 시도에 해당하는 패턴은 적용하지 않음
@@ -495,6 +455,8 @@ interface ReviewLink {
   snippet: string;
   date: string | null;
   collectedAt: string;
+  relevanceScore?: number;
+  [key: string]: unknown;
 }
 
 interface ReviewsData {
@@ -533,9 +495,10 @@ function isSpam(review: ReviewLink, currentSidoCode?: string): { isSpam: boolean
     }
   }
 
-  // 인천(28) 처리 시 타 지역 시군구명 검사
-  if (currentSidoCode === '28') {
-    for (const pattern of ADDITIONAL_LOCATION_SPAM) {
+  // 타 지역 시군구명 검사 (현재 시도에 속하지 않는 패턴만 적용)
+  if (currentSidoCode) {
+    const locationPatterns = getLocationSpamPatterns(currentSidoCode);
+    for (const pattern of locationPatterns) {
       if (pattern.test(review.title) || pattern.test(review.snippet)) {
         return { isSpam: true, reason: `타 지역 시군구: ${pattern.toString()}` };
       }
@@ -561,7 +524,9 @@ function main() {
   const sidoIdx = args.indexOf('--sido');
   const sidoCode = sidoIdx !== -1 ? args[sidoIdx + 1] : null;
   const isDryRun = args.includes('--dry-run');
-  
+  const minScoreIdx = args.indexOf('--min-score');
+  const minScore = minScoreIdx !== -1 ? parseInt(args[minScoreIdx + 1], 10) : null;
+
   const REVIEWS_DIR = path.resolve('public/data/reviews');
   
   if (!fs.existsSync(REVIEWS_DIR)) {
@@ -592,10 +557,11 @@ function main() {
     }
   } else {
     // 모든 JSON 파일과 하위 디렉토리 파일 처리
+    const SKIP_FILES = ['reviews.json', 'reviews.backup.json', 'unknown.json'];
     const items = fs.readdirSync(REVIEWS_DIR);
     for (const item of items) {
       const itemPath = path.join(REVIEWS_DIR, item);
-      if (item.endsWith('.json')) {
+      if (item.endsWith('.json') && !SKIP_FILES.includes(item)) {
         files.push(item);
       } else if (fs.statSync(itemPath).isDirectory()) {
         const subFiles = fs.readdirSync(itemPath).filter(f => f.endsWith('.json'));
@@ -607,6 +573,9 @@ function main() {
   console.log('=== 후기 데이터 자동 필터링 ===');
   console.log(`모드: ${isDryRun ? '미리보기 (dry-run)' : '실제 수정'}`);
   console.log(`대상 파일: ${files.length}개`);
+  if (minScore !== null) {
+    console.log(`최소 관련성 점수: ${minScore} (시군구 파일만 적용)`);
+  }
   console.log('');
   
   let totalRemoved = 0;
@@ -616,6 +585,7 @@ function main() {
     const data: ReviewsData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     // 시도 코드 추출: "28.json" → "28", "28/28110.json" → "28"
     const currentSidoCode = file.includes('/') ? file.split('/')[0] : file.replace('.json', '');
+    const isSigunguFile = file.includes('/');
 
     console.log(`\n--- 처리 중: ${file} (${data.totalCount}건, 시도: ${currentSidoCode}) ---`);
 
@@ -628,12 +598,23 @@ function main() {
 
       for (const review of reviews) {
         const { isSpam: spam, reason } = isSpam(review, currentSidoCode);
-        
+
         if (spam) {
           removedItems.push({
             id: review.id,
             title: review.title.substring(0, 60),
             reason,
+          });
+        } else if (
+          minScore !== null &&
+          isSigunguFile &&
+          typeof review.relevanceScore === 'number' &&
+          review.relevanceScore < minScore
+        ) {
+          removedItems.push({
+            id: review.id,
+            title: review.title.substring(0, 60),
+            reason: `관련성 점수 미달: ${review.relevanceScore} < ${minScore}`,
           });
         } else {
           filtered.push(review);

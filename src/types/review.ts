@@ -8,6 +8,9 @@ export interface ReviewLink {
   source: ReviewSource;
   sourceName: string;
   snippet: string;
+  summary?: string;
+  tags?: string[];
+  content?: string;
   date: string | null;
   collectedAt: string;
 }
