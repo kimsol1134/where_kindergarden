@@ -128,11 +128,17 @@ function main() {
 
   for (const file of files) {
     const rawPath = path.join(RAW_DATA_DIR, file);
-    const rawData: RawReviewLink[] = JSON.parse(fs.readFileSync(rawPath, 'utf-8'));
-    
+    const rawJson = JSON.parse(fs.readFileSync(rawPath, 'utf-8'));
+    const rawData: RawReviewLink[] = Array.isArray(rawJson) ? rawJson : rawJson.reviews;
+
+    if (!Array.isArray(rawData)) {
+      console.log(`스킵: ${file} (지원하지 않는 형식)`);
+      continue;
+    }
+
     // 파일명에서 시도 코드 추출 (참고용)
-    const match = file.match(/reviews-raw-\d{4}-\d{2}-\d{2}-(\d+)\.json/);
-    const fileSido = match ? match[1] : 'unknown';
+    const match = file.match(/reviews-raw-(?:v3-)?\d{4}-\d{2}-\d{2}-?(\d+)?\.json/);
+    const fileSido = match?.[1] || rawJson.sidoCode || 'unknown';
 
     console.log(`처리 중: ${file} (${rawData.length}건, 파일시도: ${fileSido})`);
 
