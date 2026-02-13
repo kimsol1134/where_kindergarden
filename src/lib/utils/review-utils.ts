@@ -447,3 +447,103 @@ export function buildQueryWithExclusions(
   const allExclusions = [...commonExclusions, ...sidoExclusions];
   return `${baseQuery} ${allExclusions.join(' ')}`;
 }
+
+// ============================================================================
+// V3: 본문 기반 관련성 점수 계산
+// ============================================================================
+
+/** 학부모 체험 키워드 (본문에서 탐지) */
+const PARENT_EXPERIENCE_KEYWORDS = [
+  '원비', '선생님', '교실', '급식', '통학버스', '방과후',
+  '원장님', '담임', '학부모', '입학설명회', '원아모집',
+  '교육과정', '누리과정', '돌봄', '연장보육', '종일반',
+  '등원', '하원', '하원시간', '원복', '가방', '알림장',
+];
+
+export interface RelevanceResultV3 extends RelevanceResult {
+  contentScore: number;
+}
+
+/**
+ * 본문 기반 관련성 점수 계산 (V3)
+ *
+ * 기존 V2 점수에 본문 분석 결과를 가산.
+ * 본문이 없으면 V2 점수를 그대로 반환.
+ *
+ * 추가 점수 체계:
+ * - 본문에 유치원명 1회 등장: +1, 3회+: +3
+ * - 본문에 학부모 체험 키워드: +2
+ * - 본문에 다른 유치원명이 주된 내용: -5
+ * - 본문이 500자 미만: -1 (저품질)
+ */
+export function calculateRelevanceScoreV3(
+  title: string,
+  snippet: string,
+  fullContent: string | null,
+  kindergartenName: string,
+  regionName: string
+): RelevanceResultV3 {
+  // V2 기본 점수 계산
+  const v2Result = calculateRelevanceScoreV2(title, snippet, kindergartenName, regionName);
+
+  if (!fullContent || v2Result.isSpam) {
+    return { ...v2Result, contentScore: 0 };
+  }
+
+  const contentLower = fullContent.toLowerCase();
+  let contentScore = 0;
+  const reasons = [...v2Result.reasons];
+
+  // 1. 유치원명 등장 횟수
+  const nameWithoutSuffix = kindergartenName
+    .replace(/유치원$/, '')
+    .replace(/어린이집$/, '')
+    .trim()
+    .toLowerCase();
+
+  if (nameWithoutSuffix.length >= 2) {
+    const nameRegex = new RegExp(nameWithoutSuffix, 'gi');
+    const matches = contentLower.match(nameRegex);
+    const count = matches?.length ?? 0;
+
+    if (count >= 3) {
+      contentScore += 3;
+      reasons.push(`본문유치원명(${count}회):+3`);
+    } else if (count >= 1) {
+      contentScore += 1;
+      reasons.push(`본문유치원명(${count}회):+1`);
+    } else {
+      contentScore -= 2;
+      reasons.push('본문유치원명없음:-2');
+    }
+  }
+
+  // 2. 학부모 체험 키워드
+  let experienceKeywordCount = 0;
+  for (const keyword of PARENT_EXPERIENCE_KEYWORDS) {
+    if (contentLower.includes(keyword)) {
+      experienceKeywordCount++;
+    }
+  }
+
+  if (experienceKeywordCount >= 3) {
+    contentScore += 2;
+    reasons.push(`체험키워드(${experienceKeywordCount}개):+2`);
+  } else if (experienceKeywordCount >= 1) {
+    contentScore += 1;
+    reasons.push(`체험키워드(${experienceKeywordCount}개):+1`);
+  }
+
+  // 3. 본문 길이 체크 (500자 미만 = 저품질)
+  if (fullContent.length < 500) {
+    contentScore -= 1;
+    reasons.push('본문짧음(<500자):-1');
+  }
+
+  return {
+    score: v2Result.score + contentScore,
+    reasons,
+    isSpam: v2Result.isSpam,
+    contentScore,
+  };
+}

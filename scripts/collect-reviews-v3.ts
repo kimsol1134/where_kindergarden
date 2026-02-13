@@ -88,7 +88,41 @@ interface CollectionStats {
   filteredByScore: number;
   filteredByLocation: number;
   filteredBySpam: number;
+  filteredByDuplicate: number;
   finalCount: number;
+}
+
+// ============================================================================
+// 기존 URL 중복 체크
+// ============================================================================
+
+function loadExistingUrls(sidoCode: string): { urlSet: Set<string>; urlToKindergartens: Map<string, Set<string>> } {
+  const urlSet = new Set<string>();
+  const urlToKindergartens = new Map<string, Set<string>>();
+
+  const reviewsDir = path.resolve('public/data/reviews');
+  const mainFile = path.join(reviewsDir, `${sidoCode}.json`);
+
+  if (!fs.existsSync(mainFile)) {
+    return { urlSet, urlToKindergartens };
+  }
+
+  const data = JSON.parse(fs.readFileSync(mainFile, 'utf-8'));
+
+  for (const [kindergartenId, reviews] of Object.entries(data.reviews)) {
+    for (const review of reviews as Array<{ url: string }>) {
+      urlSet.add(review.url);
+
+      const existing = urlToKindergartens.get(review.url);
+      if (existing) {
+        existing.add(kindergartenId);
+      } else {
+        urlToKindergartens.set(review.url, new Set([kindergartenId]));
+      }
+    }
+  }
+
+  return { urlSet, urlToKindergartens };
 }
 
 // ============================================================================
@@ -243,7 +277,8 @@ async function collectReviewsForKindergarten(
   targetSidoCode: string,
   maxPerQuery: number,
   includeGoogle: boolean,
-  strictMode: boolean
+  strictMode: boolean,
+  existingUrls?: { urlSet: Set<string>; urlToKindergartens: Map<string, Set<string>> }
 ): Promise<{ reviews: RawReviewLink[]; stats: CollectionStats }> {
   const regionName = extractRegionName(kindergarten.address);
   const collectedAt = new Date().toISOString();
@@ -255,6 +290,7 @@ async function collectReviewsForKindergarten(
     filteredByScore: 0,
     filteredByLocation: 0,
     filteredBySpam: 0,
+    filteredByDuplicate: 0,
     finalCount: 0,
   };
 
@@ -298,6 +334,14 @@ async function collectReviewsForKindergarten(
 
     for (const item of googleItems) {
       if (seenUrls.has(item.link)) continue;
+
+      // 기존 URL 중복 체크
+      if (existingUrls && existingUrls.urlSet.has(item.link)) {
+        stats.filteredByDuplicate++;
+        seenUrls.add(item.link);
+        continue;
+      }
+
       stats.totalRaw++;
 
       const title = stripHtml(item.title);
@@ -366,6 +410,21 @@ async function collectReviewsForKindergarten(
     for (const item of items) {
       if (seenUrls.has(item.link)) continue;
       if (!isRecentEnough(item.postdate)) continue;
+
+      // 기존 URL 중복 체크
+      if (existingUrls) {
+        if (existingUrls.urlSet.has(item.link)) {
+          stats.filteredByDuplicate++;
+          seenUrls.add(item.link);
+
+          // 다른 유치원에 이미 매핑된 경우 경고
+          const mappedKindergartens = existingUrls.urlToKindergartens.get(item.link);
+          if (mappedKindergartens && !mappedKindergartens.has(kindergarten.kindercode)) {
+            console.warn(`    [WARN] URL이 다른 유치원에 이미 매핑됨: ${item.link}`);
+          }
+          continue;
+        }
+      }
 
       stats.totalRaw++;
 
@@ -492,6 +551,9 @@ async function main() {
     console.log(`테스트 모드: 처음 ${targets.length}개만 수집`);
   }
 
+  // 기존 URL 로드 (중복 방지)
+  const existingUrls = loadExistingUrls(sidoCode);
+  console.log(`기존 URL: ${existingUrls.urlSet.size}개 로드됨 (중복 방지)`);
   console.log('');
 
   // 통계 집계
@@ -500,6 +562,7 @@ async function main() {
     filteredByScore: 0,
     filteredByLocation: 0,
     filteredBySpam: 0,
+    filteredByDuplicate: 0,
     finalCount: 0,
   };
 
@@ -521,7 +584,8 @@ async function main() {
           sidoCode,
           maxPerQuery,
           includeGoogle,
-          strictMode
+          strictMode,
+          existingUrls
         );
         return { k, reviews, stats };
       })
@@ -535,6 +599,7 @@ async function main() {
       globalStats.filteredByScore += stats.filteredByScore;
       globalStats.filteredByLocation += stats.filteredByLocation;
       globalStats.filteredBySpam += stats.filteredBySpam;
+      globalStats.filteredByDuplicate += stats.filteredByDuplicate;
       globalStats.finalCount += stats.finalCount;
 
       if (reviews.length > 0) {
@@ -554,12 +619,16 @@ async function main() {
   // 결과 요약
   console.log('');
   console.log('=== 수집 결과 요약 ===');
-  console.log(`총 수집: ${globalStats.totalRaw}건`);
+  const totalProcessed = globalStats.totalRaw + globalStats.filteredByDuplicate;
+  console.log(`총 발견: ${totalProcessed}건`);
+  console.log(`  - 기존 URL 중복: ${globalStats.filteredByDuplicate}건`);
   console.log(`  - 스팸 제외: ${globalStats.filteredBySpam}건`);
   console.log(`  - 지역 불일치 제외: ${globalStats.filteredByLocation}건`);
   console.log(`  - 점수 미달 제외: ${globalStats.filteredByScore}건`);
   console.log(`최종 통과: ${globalStats.finalCount}건`);
-  console.log(`필터링률: ${((1 - globalStats.finalCount / globalStats.totalRaw) * 100).toFixed(1)}%`);
+  if (globalStats.totalRaw > 0) {
+    console.log(`필터링률: ${((1 - globalStats.finalCount / globalStats.totalRaw) * 100).toFixed(1)}%`);
+  }
 
   // 결과 저장
   const OUTPUT_DIR = path.resolve('scripts/data-output');

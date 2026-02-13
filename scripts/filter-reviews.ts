@@ -474,6 +474,49 @@ interface FilterResult {
 }
 
 // ============================================================================
+// ID 정규화 로직
+// ============================================================================
+
+const VALID_ID_PATTERN = /^rev-[a-zA-Z0-9]+-[a-zA-Z0-9]+$/;
+
+function generateReviewId(): string {
+  const timestamp = Date.now().toString(36).slice(-4);
+  const random = Math.random().toString(36).slice(2, 6);
+  return `rev-${timestamp}-${random}`;
+}
+
+function normalizeReviewIds(reviews: Record<string, ReviewLink[]>): number {
+  let normalized = 0;
+  const usedIds = new Set<string>();
+
+  // 먼저 모든 기존 유효 ID를 수집
+  for (const reviewList of Object.values(reviews)) {
+    for (const review of reviewList) {
+      if (VALID_ID_PATTERN.test(review.id)) {
+        usedIds.add(review.id);
+      }
+    }
+  }
+
+  // 비정상 ID 재생성
+  for (const reviewList of Object.values(reviews)) {
+    for (const review of reviewList) {
+      if (!VALID_ID_PATTERN.test(review.id)) {
+        let newId = generateReviewId();
+        while (usedIds.has(newId)) {
+          newId = generateReviewId();
+        }
+        usedIds.add(newId);
+        review.id = newId;
+        normalized++;
+      }
+    }
+  }
+
+  return normalized;
+}
+
+// ============================================================================
 // 필터링 로직
 // ============================================================================
 
@@ -535,7 +578,7 @@ function main() {
   }
   
   // 대상 파일 결정 (하위 디렉토리 포함)
-  let files: string[] = [];
+  const files: string[] = [];
   
   if (sidoCode) {
     // 특정 시도의 메인 파일과 하위 디렉토리 파일 모두 처리
@@ -588,6 +631,12 @@ function main() {
     const isSigunguFile = file.includes('/');
 
     console.log(`\n--- 처리 중: ${file} (${data.totalCount}건, 시도: ${currentSidoCode}) ---`);
+
+    // ID 정규화
+    const normalizedCount = normalizeReviewIds(data.reviews);
+    if (normalizedCount > 0) {
+      console.log(`  ID 정규화: ${normalizedCount}건`);
+    }
 
     const removedItems: FilterResult[] = [];
     const newReviews: Record<string, ReviewLink[]> = {};
@@ -642,7 +691,7 @@ function main() {
     
     totalRemoved += removedItems.length;
     
-    if (!isDryRun && removedItems.length > 0) {
+    if (!isDryRun && (removedItems.length > 0 || normalizedCount > 0)) {
       const newData: ReviewsData = {
         version: new Date().toISOString().split('T')[0],
         totalCount: newTotal,
@@ -650,7 +699,7 @@ function main() {
         lastCuratedAt: new Date().toISOString(),
         reviews: newReviews,
       };
-      
+
       fs.writeFileSync(filePath, JSON.stringify(newData, null, 2));
       console.log(`  저장 완료: ${data.totalCount}건 → ${newTotal}건`);
     }

@@ -1,5 +1,13 @@
 export type ReviewSource = 'naver_blog' | 'naver_cafe' | 'google' | 'other';
 
+export type ValidationStatus =
+  | 'VALID'
+  | 'WRONG_KINDERGARTEN'
+  | 'WRONG_TOPIC'
+  | 'LISTING'
+  | 'ADVERTISEMENT'
+  | 'BROKEN';
+
 export interface ReviewLink {
   id: string;
   kindergartenId: string;
@@ -13,6 +21,9 @@ export interface ReviewLink {
   content?: string;
   date: string | null;
   collectedAt: string;
+  validated?: ValidationStatus;
+  validatedAt?: string;
+  relevanceScore?: number;
 }
 
 export interface ReviewsData {
