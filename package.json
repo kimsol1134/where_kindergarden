@@ -27,6 +27,7 @@
     "enrich:chrome-reviews": "tsx scripts/enrich-chrome-reviews.ts",
     "merge:sigungu": "tsx scripts/merge-sigungu-to-region.ts",
     "rebuild:reviews": "tsx scripts/rebuild-reviews-json.ts",
+    "validate:reviews": "tsx scripts/validate-review-urls.ts",
     "collect:all": "tsx scripts/collect-and-curate.ts",
     "extract:all": "tsx scripts/batch-extract-urls.ts",
     "scrape:batch": "tsx scripts/batch-scrape-content.ts",
