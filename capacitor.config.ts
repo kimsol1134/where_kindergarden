@@ -7,6 +7,7 @@ const config: CapacitorConfig = {
   server: {
     // iOS는 HTTPS 사용 (Mixed Content 정책 대응)
     // Android는 http 유지 (Kakao Maps SDK 호환)
+    hostname: 'where-kindergarden.vercel.app',
     androidScheme: 'http',
     iosScheme: 'https',
   },
