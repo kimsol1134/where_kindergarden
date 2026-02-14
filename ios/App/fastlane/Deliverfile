@@ -53,5 +53,5 @@ NOTE
 # 연령 등급 (4+)
 app_rating_config_path("./fastlane/rating_config.json")
 
-# 가격 (무료)
-price_tier(0)
+# 가격 (무료) — API Key 권한 이슈로 주석 처리 (ASC에서 이미 설정됨)
+# price_tier(0)

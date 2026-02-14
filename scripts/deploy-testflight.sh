@@ -15,7 +15,9 @@
 # 또는 API Key 방식 (권장):
 #   APP_STORE_CONNECT_API_KEY_ID
 #   APP_STORE_CONNECT_API_ISSUER_ID
-#   APP_STORE_CONNECT_API_KEY_CONTENT (base64 인코딩)
+#   APP_STORE_CONNECT_API_KEY_FILEPATH (.p8 파일 경로)
+#
+# --api-key 사용 시 .env.testflight.local에서 자동 로드됩니다.
 #
 
 set -e  # 에러 발생 시 중단
@@ -122,6 +124,19 @@ if [ "$BUILD_ONLY" = true ]; then
   log_success "iOS 빌드 완료: ios/App/build/App.ipa"
 else
   if [ "$USE_API_KEY" = true ]; then
+    # .env.testflight.local에서 환경변수 자동 로드
+    ENV_FILE="$PROJECT_ROOT/.env.testflight.local"
+    if [ -f "$ENV_FILE" ]; then
+      log_info ".env.testflight.local에서 환경변수 로드 중..."
+      set -a
+      source <(grep -v '^#' "$ENV_FILE" | grep -v '^$')
+      set +a
+      log_success "환경변수 로드 완료 (KEY_ID: ${APP_STORE_CONNECT_API_KEY_ID:-미설정})"
+    else
+      log_error ".env.testflight.local 파일을 찾을 수 없습니다."
+      log_error "프로젝트 루트에 .env.testflight.local 파일을 생성하세요."
+      exit 1
+    fi
     log_info "TestFlight 배포 중 (API Key 방식)..."
     fastlane beta_with_api_key
   else
