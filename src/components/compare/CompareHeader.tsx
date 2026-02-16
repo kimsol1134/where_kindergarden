@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ArrowLeft, Share2, Link2, MessageCircle, Check } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useCompareStore } from '@/stores';
-import { shareToKakao, copyShareUrl } from '@/lib/share/kakaoShare';
+import { shareComparison, copyShareUrl } from '@/lib/share/kakaoShare';
 
 export function CompareHeader() {
   const router = useRouter();
@@ -19,9 +19,9 @@ export function CompareHeader() {
 
   const kindercodes = items.map((item) => item.kindercode);
 
-  const handleKakaoShare = () => {
+  const handleKakaoShare = async () => {
     const names = items.map((item) => item.name).join(', ');
-    shareToKakao({
+    await shareComparison({
       title: '우리동네 유치원 비교표',
       description: `${names} 비교 결과를 확인해보세요.`,
       compareIds: kindercodes,

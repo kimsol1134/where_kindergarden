@@ -78,7 +78,7 @@ export default function TestLayout({
       </div>
 
       {/* 헤더 */}
-      <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-emerald-100/50">
+      <header className="sticky safe-top-offset z-50 bg-white/70 backdrop-blur-xl border-b border-emerald-100/50">
         <div className="max-w-lg mx-auto px-4 py-3 flex items-center justify-between">
           <Link
             href="/"
