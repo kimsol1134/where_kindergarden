@@ -8,6 +8,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { isSpamReview, classifyContentType } from '../src/lib/utils/review-utils';
 
 // ============================================================================
 // 타입 정의
@@ -23,6 +24,7 @@ interface RawReviewLink {
   snippet: string;
   date: string | null;
   collectedAt: string;
+  relevanceScore?: number;
 }
 
 interface ReviewLink {
@@ -35,6 +37,7 @@ interface ReviewLink {
   snippet: string;
   date: string | null;
   collectedAt: string;
+  relevanceScore?: number;
 }
 
 interface ReviewsData {
@@ -172,6 +175,18 @@ function main() {
     // URL 중복 체크
       const exists = processedData[sido].reviews[kId].some(r => r.url === validated.url);
       if (!exists) {
+        // 품질 게이트: 스팸 + 콘텐츠유형 필터링
+        const spamCheck = isSpamReview({ title: validated.title, snippet: validated.snippet });
+        if (spamCheck.isSpam) continue;
+
+        const contentType = classifyContentType(validated.title, validated.snippet);
+        if (contentType === 'template') continue;
+
+        // relevanceScore 보존
+        if (item.relevanceScore !== undefined) {
+          validated.relevanceScore = item.relevanceScore;
+        }
+
         processedData[sido].reviews[kId].push(validated);
         processedData[sido].total++;
       }

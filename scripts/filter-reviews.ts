@@ -11,6 +11,11 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import {
+  UNIFIED_SPAM_TITLE_PATTERNS,
+  SPAM_SNIPPET_PATTERNS as UNIFIED_SNIPPET_PATTERNS,
+  classifyContentType,
+} from '../src/lib/utils/review-utils';
 
 // ============================================================================
 // 스팸 키워드 정의 (title + snippet 검사)
@@ -719,24 +724,29 @@ interface FilterResult {
 // ============================================================================
 
 function isSpam(review: ReviewLink, currentSidoCode?: string): { isSpam: boolean; reason: string } {
-  // 타이틀 검사
+  // 1. 로컬 타이틀 패턴 검사
   for (const pattern of SPAM_TITLE_PATTERNS) {
     if (pattern.test(review.title)) {
       return { isSpam: true, reason: `타이틀 패턴: ${pattern.toString()}` };
     }
   }
 
-  // 지역 불일치 검사 (현재 시도 제외)
-  for (const [sidoCode, pattern] of Object.entries(LOCATION_MISMATCH_PATTERNS)) {
-    // 현재 처리 중인 시도의 패턴은 건너뜀
-    if (currentSidoCode && sidoCode === currentSidoCode) continue;
+  // 2. 통합 타이틀 패턴 검사 (review-utils.ts의 V14 패턴 — 질문글/정보글 등)
+  for (const pattern of UNIFIED_SPAM_TITLE_PATTERNS) {
+    if (pattern.test(review.title)) {
+      return { isSpam: true, reason: `통합 타이틀 패턴: ${pattern.toString()}` };
+    }
+  }
 
+  // 3. 지역 불일치 검사 (현재 시도 제외)
+  for (const [sidoCode, pattern] of Object.entries(LOCATION_MISMATCH_PATTERNS)) {
+    if (currentSidoCode && sidoCode === currentSidoCode) continue;
     if (pattern.test(review.title)) {
       return { isSpam: true, reason: `지역 불일치: ${pattern.toString()}` };
     }
   }
 
-  // 타 지역 시군구명 검사 (현재 시도에 속하지 않는 패턴만 적용)
+  // 4. 타 지역 시군구명 검사
   if (currentSidoCode) {
     const locationPatterns = getLocationSpamPatterns(currentSidoCode);
     for (const pattern of locationPatterns) {
@@ -746,11 +756,24 @@ function isSpam(review: ReviewLink, currentSidoCode?: string): { isSpam: boolean
     }
   }
 
-  // Snippet 검사
+  // 5. 로컬 Snippet 검사
   for (const pattern of SPAM_SNIPPET_PATTERNS) {
     if (pattern.test(review.snippet)) {
       return { isSpam: true, reason: `Snippet 패턴: ${pattern.toString()}` };
     }
+  }
+
+  // 6. 통합 Snippet 패턴 검사 (포럼 템플릿, 등업글 등)
+  for (const pattern of UNIFIED_SNIPPET_PATTERNS) {
+    if (pattern.test(review.snippet)) {
+      return { isSpam: true, reason: `통합 Snippet: ${pattern.toString()}` };
+    }
+  }
+
+  // 7. 콘텐츠 유형 검사 (포럼 템플릿 필터링)
+  const contentType = classifyContentType(review.title, review.snippet);
+  if (contentType === 'template') {
+    return { isSpam: true, reason: `콘텐츠 유형: ${contentType}` };
   }
 
   return { isSpam: false, reason: '' };
