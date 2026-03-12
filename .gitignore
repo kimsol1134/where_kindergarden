@@ -46,7 +46,9 @@ yarn-error.log*
 next-env.d.ts
 
 # data output (large JSON files)
-scripts/data-output/
+scripts/data-output/*
+!scripts/data-output/review-verification-state.json
+!scripts/data-output/review-body-cache.json
 
 # Capacitor native platforms (generated web assets)
 ios/App/App/public/

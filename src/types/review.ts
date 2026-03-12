@@ -185,6 +185,22 @@ export interface ReviewVerificationQaSampleReport {
   newlyRemovedSamples: ReviewVerificationRunReportItem[];
 }
 
+export interface ReviewVerificationApplySummaryReport {
+  removed: number;
+  keptVerified: number;
+  keptUncertain: number;
+  untouched: number;
+  byStatus: Record<ReviewVerificationStatus, number>;
+}
+
+export interface ReviewVerificationApplyReport {
+  generatedAt: string;
+  inputPath: string;
+  dryRun: boolean;
+  rebuiltCount: number | null;
+  summary: ReviewVerificationApplySummaryReport;
+}
+
 // Review Suggestion Types
 export type ReviewSuggestionType = 'add' | 'delete';
 

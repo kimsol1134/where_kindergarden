@@ -1,0 +1,231 @@
+name: Review Verification Incremental
+
+on:
+  workflow_dispatch:
+    inputs:
+      sido:
+        description: 'Comma-separated sido codes'
+        required: false
+        default: '11,41'
+        type: string
+      apply_changes:
+        description: 'Apply verification results to review JSON files'
+        required: false
+        default: false
+        type: boolean
+      qa_sample_size:
+        description: 'QA sample size for newly verified/removed reviews'
+        required: false
+        default: 5
+        type: number
+  schedule:
+    # 07:15 KST daily (GitHub Actions cron uses UTC)
+    - cron: '15 22 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: review-verification-incremental-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Resolve workflow parameters
+        id: params
+        shell: bash
+        run: |
+          SIDO_INPUT="${{ github.event_name == 'workflow_dispatch' && inputs.sido || '' }}"
+          QA_SAMPLE_INPUT="${{ github.event_name == 'workflow_dispatch' && inputs.qa_sample_size || '' }}"
+          APPLY_INPUT="${{ github.event_name == 'workflow_dispatch' && inputs.apply_changes || 'false' }}"
+
+          SIDO="${SIDO_INPUT:-11,41}"
+          QA_SAMPLE_SIZE="${QA_SAMPLE_INPUT:-5}"
+          APPLY_CHANGES="${APPLY_INPUT:-false}"
+          MODE="review-only"
+
+          if [ "$APPLY_CHANGES" = "true" ]; then
+            MODE="apply"
+          fi
+
+          SIDO_TAG="$(printf '%s' "$SIDO" | tr ',' '\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | awk 'NF' | sort | paste -sd '-' -)"
+          OUTPUT_DIR="scripts/data-output/workflow-runs/review-verification/${GITHUB_RUN_ID}"
+          CACHE_DIR=".cache/review-verification"
+
+          echo "sido=$SIDO" >> "$GITHUB_OUTPUT"
+          echo "qa_sample_size=$QA_SAMPLE_SIZE" >> "$GITHUB_OUTPUT"
+          echo "apply_changes=$APPLY_CHANGES" >> "$GITHUB_OUTPUT"
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "sido_tag=$SIDO_TAG" >> "$GITHUB_OUTPUT"
+          echo "output_dir=$OUTPUT_DIR" >> "$GITHUB_OUTPUT"
+          echo "cache_dir=$CACHE_DIR" >> "$GITHUB_OUTPUT"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Restore verification cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ steps.params.outputs.cache_dir }}
+          key: review-verification-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            review-verification-${{ runner.os }}-${{ github.ref_name }}-
+            review-verification-${{ runner.os }}-
+
+      - name: Seed verification cache
+        shell: bash
+        env:
+          CACHE_DIR: ${{ steps.params.outputs.cache_dir }}
+        run: |
+          mkdir -p "$CACHE_DIR"
+
+          if [ ! -f "$CACHE_DIR/review-verification-state.json" ]; then
+            cp scripts/data-output/review-verification-state.json \
+              "$CACHE_DIR/review-verification-state.json"
+          fi
+
+          if [ ! -f "$CACHE_DIR/review-body-cache.json" ]; then
+            cp scripts/data-output/review-body-cache.json \
+              "$CACHE_DIR/review-body-cache.json"
+          fi
+
+      - name: Run incremental review verification
+        shell: bash
+        env:
+          SIDO: ${{ steps.params.outputs.sido }}
+          QA_SAMPLE_SIZE: ${{ steps.params.outputs.qa_sample_size }}
+          APPLY_CHANGES: ${{ steps.params.outputs.apply_changes }}
+          OUTPUT_DIR: ${{ steps.params.outputs.output_dir }}
+          CACHE_DIR: ${{ steps.params.outputs.cache_dir }}
+        run: |
+          COMMAND=(
+            pnpm verify:review-incremental -- --sido "$SIDO"
+            --qa-sample-size "$QA_SAMPLE_SIZE"
+            --output-dir "$OUTPUT_DIR"
+            --state-file "$CACHE_DIR/review-verification-state.json"
+            --body-cache-file "$CACHE_DIR/review-body-cache.json"
+          )
+
+          if [ "$APPLY_CHANGES" != "true" ]; then
+            COMMAND+=(--no-apply)
+          fi
+
+          "${COMMAND[@]}"
+
+          cp "$CACHE_DIR/review-verification-state.json" \
+            "$OUTPUT_DIR/review-verification-state.json"
+          cp "$CACHE_DIR/review-body-cache.json" \
+            "$OUTPUT_DIR/review-body-cache.json"
+
+      - name: Build workflow summary
+        id: summary
+        env:
+          OUTPUT_DIR: ${{ steps.params.outputs.output_dir }}
+          SIDO_TAG: ${{ steps.params.outputs.sido_tag }}
+          MODE: ${{ steps.params.outputs.mode }}
+        run: |
+          pnpm verify:review-summary -- \
+            --report "$OUTPUT_DIR/review-verification-run-report.json" \
+            --qa "$OUTPUT_DIR/review-verification-qa-samples-${SIDO_TAG}.json" \
+            --apply "$OUTPUT_DIR/review-verification-apply-${SIDO_TAG}.json" \
+            --mode "$MODE" \
+            --summary-file "$GITHUB_STEP_SUMMARY" \
+            --github-output "$GITHUB_OUTPUT" \
+            --output-json "$OUTPUT_DIR/review-verification-workflow-summary.json"
+
+      - name: Emit review verification notice
+        if: always()
+        shell: bash
+        run: |
+          if [ "${{ steps.summary.outputs.has_new_reviews }}" = "true" ]; then
+            echo "::notice title=Review verification::New or changed reviews were evaluated in this run."
+          else
+            echo "::notice title=Review verification::No new or changed reviews were evaluated in this run."
+          fi
+
+      - name: Collect apply artifacts
+        if: steps.params.outputs.apply_changes == 'true'
+        shell: bash
+        env:
+          OUTPUT_DIR: ${{ steps.params.outputs.output_dir }}
+          CACHE_DIR: ${{ steps.params.outputs.cache_dir }}
+        run: |
+          APPLY_DIR="$OUTPUT_DIR/apply-artifacts"
+          mkdir -p "$APPLY_DIR/files"
+
+          git diff --name-only -- public/data/reviews public/data/reviews.json \
+            > "$APPLY_DIR/tracked-review-files.txt"
+          git ls-files --others --exclude-standard -- public/data/reviews \
+            > "$APPLY_DIR/untracked-review-files.txt"
+          cat "$APPLY_DIR/tracked-review-files.txt" \
+            "$APPLY_DIR/untracked-review-files.txt" | awk 'NF' | sort -u \
+            > "$APPLY_DIR/changed-review-files.txt"
+          git diff --binary -- public/data/reviews public/data/reviews.json \
+            > "$APPLY_DIR/review-verification-apply.patch"
+
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then
+              continue
+            fi
+
+            git diff --no-index -- /dev/null "$file" \
+              >> "$APPLY_DIR/review-verification-apply.patch" || true
+          done < "$APPLY_DIR/untracked-review-files.txt"
+
+          while IFS= read -r file; do
+            if [ -z "$file" ]; then
+              continue
+            fi
+
+            mkdir -p "$APPLY_DIR/files/$(dirname "$file")"
+            cp "$file" "$APPLY_DIR/files/$file"
+          done < "$APPLY_DIR/changed-review-files.txt"
+
+          cp "$CACHE_DIR/review-verification-state.json" \
+            "$APPLY_DIR/review-verification-state.json"
+          cp "$CACHE_DIR/review-body-cache.json" \
+            "$APPLY_DIR/review-body-cache.json"
+
+      - name: Upload review verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-verification-${{ steps.params.outputs.sido_tag }}-${{ github.run_id }}
+          path: ${{ steps.params.outputs.output_dir }}/*.json
+          if-no-files-found: error
+
+      - name: Upload apply artifacts
+        if: always() && steps.params.outputs.apply_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-verification-apply-${{ steps.params.outputs.sido_tag }}-${{ github.run_id }}
+          path: ${{ steps.params.outputs.output_dir }}/apply-artifacts
+          if-no-files-found: error
+
+      - name: Save verification cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ steps.params.outputs.cache_dir }}
+          key: review-verification-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}

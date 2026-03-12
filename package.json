@@ -33,6 +33,7 @@
     "verify:review-finalize": "tsx scripts/finalize-review-verification.ts",
     "verify:review-apply": "tsx scripts/apply-review-verification.ts",
     "verify:review-incremental": "tsx scripts/verify-review-incremental.ts",
+    "verify:review-summary": "tsx scripts/write-review-verification-summary.ts",
     "collect:all": "tsx scripts/collect-and-curate.ts",
     "extract:all": "tsx scripts/batch-extract-urls.ts",
     "scrape:batch": "tsx scripts/batch-scrape-content.ts",
