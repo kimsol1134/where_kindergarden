@@ -1,46 +1,76 @@
-# 서울 유치원 후기 수집 작업 인계
+# 후기 검증 파이프라인 작업 인계
 
 ## 마지막 작업 일시
-2026-01-28 (오후)
+2026-03-11
 
-## 현재 상황 요약
+## 완료된 작업
+- [x] 서울/경기 후기 링크용 다단계 검증 파이프라인 설계
+- [x] `src/lib/utils/review-verification.ts` 추가
+  - title/snippet 기반 metadata 판정
+  - body text 기반 최종 판정
+  - `verified | mismatch | advertorial | generic_info | uncertain` 상태 정의
+- [x] `src/lib/utils/review-html.ts` 추가
+  - Naver Blog/Cafe HTML에서 판정용 텍스트 추출
+- [x] `scripts/extract-review-verification-candidates.ts` 추가
+  - 전체 metadata 결과 + 저신뢰 candidate + body-check 입력 생성
+- [x] `scripts/batch-scrape-content.ts` 확장
+  - 기존 `--sido` raw HTML 모드 유지
+  - 새 `--input` 본문 텍스트 추출 모드 추가
+- [x] `scripts/finalize-review-verification.ts` 추가
+  - metadata + body + optional LLM 결과 merge
+  - uncertain/LLM queue 출력
+- [x] `scripts/apply-review-verification.ts` 추가
+  - reject 상태만 제거
+  - split 파일 재생성 + 통합 `reviews.json` 재빌드 지원
+- [x] `scripts/prompts/llm-review-validation.md` 업데이트
+  - uncertain 큐 전용 프롬프트 추가
+- [x] 유닛 테스트 추가
+  - `src/lib/utils/__tests__/review-verification.test.ts`
 
-### 서울 후기 현황
-- **총 1,568건 / 443개 유치원** (759개 중 58.4% 커버리지)
-- **모든 구에 후기 존재** (v3 스크립트로 기수집)
+## 진행 중인 작업
+- body scrape 실제 실행은 아직 안 함
+  - 네트워크/Playwright 실행이 필요한 단계
+  - 현재는 metadata 기준 결과와 dry-run 반영까지만 검증 완료
 
-### 이번 세션 완료 작업
-| 구 | 유치원 수 | 기존 | 추가 | 병합 |
-|---|---|---|---|---|
-| 금천구 | 16 | 23 | +2 | ✅ 완료 |
-| 마포구 | 27 | 26 | +2 | ✅ 완료 |
-| 구로구 | 30 | 27 | +1 | ✅ 완료 |
+## 검증 결과
+- `pnpm test src/lib/utils/__tests__/review-verification.test.ts` 통과
+- `pnpm exec tsc --noEmit --incremental false` 통과
+- `pnpm tsx scripts/extract-review-verification-candidates.ts --sido 11,41` 실행 완료
+  - 전체 4,773건 분석
+  - body check 후보 2,507건
+- `pnpm tsx scripts/batch-scrape-content.ts --input scripts/data-output/review-body-check-11-41.json --output scripts/data-output/review-body-scrape-11-41.json --concurrency 8`
+  - 2,507건 전부 성공 스크랩
+- `pnpm tsx scripts/finalize-review-verification.ts --metadata ... --body ...` 실행 완료
+  - 최종 상태:
+    - verified 2,475
+    - advertorial 1,665
+    - generic_info 415
+    - mismatch 218
+    - uncertain 0
+- `pnpm tsx scripts/apply-review-verification.ts --input ...` 실반영 완료
+  - 1차 반영 후 fallback 규칙 추가
+  - Codex가 남은 uncertain 묶음 + 단건 217건까지 직접 읽고 decision merge 진행
+  - 현재 유지:
+    - verified 2,475건
+    - uncertain 0건
+  - 현재 최종 파일:
+    - 서울 `11.json`: 700건 / 302개 유치원
+    - 경기 `41.json`: 1,775건 / 684개 유치원
+    - 통합 `public/data/reviews.json`: 5,506건 / 2,264개 유치원
 
-### 종로구 검색 시도 (결과 없음)
-- 교동초등학교병설유치원 → 다른 지역(춘천, 세종) 결과만 노출
-- 혜화유치원 → 성당, 문화투어 결과만 노출
-- 종로구는 인구/유치원 수가 적어 온라인 후기가 거의 없음
+## 다음에 할 작업
+1. 필요 시 `verified` 샘플링 검토로 과잉 제거/과잉 유지 여부 점검
+2. 이후 신규 리뷰 수집분에 대해 같은 파이프라인 재실행
+3. 원하면 지금 변경분 커밋/정리
 
-### 후기가 적은 구 (추가 수집 대상)
-| 구 | 유치원 수 | 후기 수 | 상태 |
-|---|---|---|---|
-| 종로구 | 15 | 20 | Chrome 검색 시도 - 결과 없음 |
-| 중구 | 14 | 23 | 미착수 |
-| 용산구 | 13 | 27 | 미착수 |
+## 주요 파일
+- `src/lib/utils/review-verification.ts`
+- `src/lib/utils/review-html.ts`
+- `scripts/extract-review-verification-candidates.ts`
+- `scripts/batch-scrape-content.ts`
+- `scripts/finalize-review-verification.ts`
+- `scripts/apply-review-verification.ts`
+- `scripts/prompts/llm-review-validation.md`
 
-## 저장된 파일
-- `scripts/data-output/chrome-reviews-guro-20260128.json` - 구로구 수집
-- `scripts/data-output/chrome-reviews-mapo-20260128.json` - 마포구 수집
-- `scripts/data-output/enriched-mapo-20260128.json` - 마포구 enriched
-- `scripts/data-output/enriched-reviews-11-20260128.json` - 금천구 enriched
-- `public/data/reviews/11.json` - 서울 최종 (1568건)
-
-## 다음 단계 권장
-1. 중구/용산구 유치원 Chrome 검색 시도
-2. 또는 경기도(41) 후기 보강 작업으로 전환
-3. 서울 도심 구(종로/중구/용산)는 후기가 적으므로 우선순위 낮춤
-
-## 참고 파일
-- `CLAUDE.md` - 개발 가이드
-- `.claude/agents/chrome-review-extractor.md` - URL 추출 Subagent
-- `scripts/merge-chrome-reviews.ts` - 병합 스크립트
+## 현재 브랜치
+codex/feature-review-verification-pipeline
