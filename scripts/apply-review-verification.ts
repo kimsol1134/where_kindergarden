@@ -1,17 +1,12 @@
 import * as path from 'path';
 import type {
-  ReviewsData,
   ReviewVerificationRecord,
   ReviewVerificationStatus,
 } from '../src/types/review';
-import { shouldRemoveReviewAfterVerification } from '../src/lib/utils/review-verification';
+import { applyReviewVerificationDecisions } from './lib/review-verification-apply';
 import {
   buildSidoTag,
-  loadKindergartens,
-  loadReviewsData,
   readJsonFile,
-  splitReviewsBySigungu,
-  writeCombinedReviews,
   writeJsonFile,
 } from './lib/review-verification-pipeline';
 
@@ -40,94 +35,29 @@ function main(): void {
 
   const inputPath = path.resolve(args[inputIndex + 1]);
   const resultsFile = readJsonFile<ResultsFile>(inputPath);
-  const decisions = new Map<
-    string,
-    { status: ReviewVerificationStatus; kindergartenId: string; sidoCode: string }
-  >(
+  const decisions = Array.from(
     resultsFile.reviews
-      .filter((record): record is ReviewVerificationRecord & { finalStatus: ReviewVerificationStatus } => Boolean(record.finalStatus))
-      .map((record) => [
-        record.reviewId,
-        {
-          status: record.finalStatus as ReviewVerificationStatus,
-          kindergartenId: record.kindergartenId,
-          sidoCode: record.sidoCode,
-        },
-      ])
+      .filter(
+        (
+          record
+        ): record is ReviewVerificationRecord & {
+          finalStatus: ReviewVerificationStatus;
+        } => Boolean(record.finalStatus)
+      )
+      .map((record) => ({
+        reviewId: record.reviewId,
+        kindergartenId: record.kindergartenId,
+        sidoCode: record.sidoCode,
+        status: record.finalStatus as ReviewVerificationStatus,
+      }))
   );
-  const targetSidos = Array.from(
-    new Set(resultsFile.reviews.map((record) => record.sidoCode))
+  const tag = buildSidoTag(
+    Array.from(new Set(decisions.map((decision) => decision.sidoCode)))
   );
-  const tag = buildSidoTag(targetSidos);
-  const kindergartens = loadKindergartens();
-
-  const summary = {
-    removed: 0,
-    keptVerified: 0,
-    keptUncertain: 0,
-    untouched: 0,
-    byStatus: {
-      verified: 0,
-      mismatch: 0,
-      advertorial: 0,
-      generic_info: 0,
-      uncertain: 0,
-    } satisfies Record<ReviewVerificationStatus, number>,
-  };
-
-  for (const sidoCode of targetSidos) {
-    const sourceData = loadReviewsData(sidoCode);
-    const updatedReviews: ReviewsData['reviews'] = {};
-
-    for (const [kindergartenId, reviews] of Object.entries(sourceData.reviews)) {
-      const nextReviews = reviews.filter((review) => {
-        const decision = decisions.get(review.id);
-        if (!decision) {
-          summary.untouched += 1;
-          return true;
-        }
-
-        summary.byStatus[decision.status] += 1;
-        if (shouldRemoveReviewAfterVerification(decision.status)) {
-          summary.removed += 1;
-          return false;
-        }
-
-        if (decision.status === 'verified') {
-          summary.keptVerified += 1;
-          return true;
-        }
-
-        summary.keptUncertain += 1;
-        return true;
-      });
-
-      if (nextReviews.length > 0) {
-        updatedReviews[kindergartenId] = nextReviews;
-      }
-    }
-
-    const nextData: ReviewsData = {
-      version: new Date().toISOString().split('T')[0],
-      totalCount: Object.values(updatedReviews).reduce(
-        (accumulator, items) => accumulator + items.length,
-        0
-      ),
-      kindergartenCount: Object.keys(updatedReviews).length,
-      reviews: updatedReviews,
-    };
-
-    if (!dryRun) {
-      writeJsonFile(path.resolve(`public/data/reviews/${sidoCode}.json`), nextData);
-      splitReviewsBySigungu(sidoCode, nextData, kindergartens);
-    }
-  }
-
-  let rebuiltCount: number | null = null;
-  if (!dryRun && !noRebuild) {
-    const combined = writeCombinedReviews();
-    rebuiltCount = combined.totalCount;
-  }
+  const applyResult = applyReviewVerificationDecisions(decisions, {
+    dryRun,
+    noRebuild,
+  });
 
   const reportPath = path.join(
     outputDir,
@@ -137,15 +67,15 @@ function main(): void {
     generatedAt: new Date().toISOString(),
     inputPath,
     dryRun,
-    rebuiltCount,
-    summary,
+    rebuiltCount: applyResult.rebuiltCount,
+    summary: applyResult.summary,
   });
 
   writeLine(`apply report: ${reportPath}`);
-  writeLine(`removed: ${summary.removed}`);
-  writeLine(`kept verified: ${summary.keptVerified}`);
-  writeLine(`kept uncertain: ${summary.keptUncertain}`);
-  writeLine(`untouched: ${summary.untouched}`);
+  writeLine(`removed: ${applyResult.summary.removed}`);
+  writeLine(`kept verified: ${applyResult.summary.keptVerified}`);
+  writeLine(`kept uncertain: ${applyResult.summary.keptUncertain}`);
+  writeLine(`untouched: ${applyResult.summary.untouched}`);
 }
 
 main();
