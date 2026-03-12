@@ -11,6 +11,11 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import {
+  UNIFIED_SPAM_TITLE_PATTERNS,
+  SPAM_SNIPPET_PATTERNS as UNIFIED_SNIPPET_PATTERNS,
+  classifyContentType,
+} from '../src/lib/utils/review-utils';
 
 // ============================================================================
 // 스팸 키워드 정의 (title + snippet 검사)
@@ -438,6 +443,189 @@ const SPAM_TITLE_PATTERNS = [
   /세탁기.*청소.*후기/i,
   /매트리스.*청소/i,
 
+  // 피트니스/운동 (V12 - 전수 큐레이션)
+  /필라테스(?!.*유치원)/i,
+  /헬스장(?!.*유치원)/i,
+  /퍼스널트레이닝/i,
+  /요가.*(해소|수련|힐링)/i,
+
+  // 세차 (V12)
+  /세차장(?!.*유치원)/i,
+  /셀프세차/i,
+  /손세차/i,
+  /출장세차/i,
+  /디테일링.*세차/i,
+  /워시아지트/i,
+  /오토모티브.*세차/i,
+
+  // 패스트푸드/음식점 (V12)
+  /왓더버거/i,
+  /왓더런치/i,
+  /마라탕(?!.*유치원)/i,
+
+  // 애견/반려동물 (V12)
+  /애견호텔/i,
+  /애견유치원/i,
+  /애견미용/i,
+  /멍균관대/i,
+  /놀러오개/i,
+  /동물병원(?!.*유치원)/i,
+
+  // 법률/전문서비스 (V12)
+  /변호사.*(후기|추천|상담)/i,
+  /법률사무소/i,
+
+  // 이사 (V12)
+  /포장이사/i,
+  /이삿짐.*센터/i,
+
+  // 상품 리뷰/중고 (V12)
+  /가습기.*(추천|후기|장점|단점|가격|BEST|구매평)/i,
+  /유모차.*드려요/i,
+  /식기세척기.*설치(?!.*유치원)/i,
+
+  // 다이어트 (V12)
+  /다이어트.*(후기|추천)/i,
+  /바디라인.*정리/i,
+
+  // 숙박/리조트 (V12)
+  /파크하얏트/i,
+  /5성급.*호텔/i,
+  /해외.*가족연수/i,
+  /키즈풀빌라/i,
+  /워터파크.*후기(?!.*유치원)/i,
+
+  // 코딩교구 광고 (V12)
+  /ㅋㄷㅋㄷ코딩/i,
+  /피지컬컴퓨팅.*교구/i,
+
+  // 과외 광고 (V12)
+  /과외.*(국어|영어|수학|한국사|전문)/i,
+  /전문과외/i,
+  /예비중학생.*(국어|수학|영어)/i,
+
+  // 업체 포트폴리오 (V12)
+  /모래소독.*\d{3,}번째/i,
+  /키제코.*모래소독/i,
+  /키제코.*방역/i,
+
+  // 자원봉사 공고 (V12)
+  /자원봉사자.*위촉.*공고/i,
+
+  // 버스광고 (V12)
+  /시내버스.*광고/i,
+  /버스쉘터.*광고/i,
+
+  // 아파트/부동산 리뷰 (V12)
+  /거주후기(?!.*유치원)/i,
+
+  // 종교 무관 (V12)
+  /성지순례/i,
+  /주교좌/i,
+
+  // 로또 (V12)
+  /로또.*명당/i,
+
+  // 스키/리조트 (V12)
+  /런투스키스쿨/i,
+
+  // 도서관/장난감 대여 (V12)
+  /송도국제도서관/i,
+
+  // 소아과 (V12)
+  /소아청소년과의원/i,
+
+  // 의류매장 (V12)
+  /여성복.*옷가게/i,
+
+  // === V13: 3차 큐레이션 패턴 ===
+
+  // 공방/출장수업 업체 포트폴리오
+  /캔들.*공방.*출장/i,
+  /비누.*공방.*출장/i,
+  /공예.*체험.*출장/i,
+  /도자기.*체험.*출장/i,
+  /천연비누.*만들기.*출장/i,
+  /슬라임.*체험.*출장/i,
+  /원데이클래스.*출장/i,
+  /쿠킹클래스.*출장/i,
+  /바리스타.*체험.*출장/i,
+
+  // 퍼스널컬러/강사 출강 포트폴리오
+  /퍼스널컬러.*진단/i,
+  /스피치.*강사.*출강/i,
+  /이미지.*컨설팅.*출강/i,
+  /마인드.*교육.*출강/i,
+
+  // 요양원/방문요양/돌봄
+  /요양원(?!.*유치원)/i,
+  /방문요양/i,
+  /요양센터/i,
+  /요양보호사/i,
+  /노인.*돌봄/i,
+  /주간보호센터/i,
+
+  // 운전연수/자동차
+  /운전연수(?!.*유치원)/i,
+  /도로연수/i,
+  /자동차.*정비/i,
+
+  // 소개팅/모임
+  /소개팅/i,
+  /미팅.*모임/i,
+
+  // 교육청 주간소식/행정 문서
+  /교육청.*주간/i,
+  /주간소식.*교육/i,
+  /교육지원청.*소식/i,
+
+  // 족보/경매/논문/역사적 유치원명 나열
+  /족보.*유치원/i,
+  /경매.*유치원/i,
+  /논문.*유치원(?!.*후기)/i,
+
+  // 자전거/동호회
+  /자전거.*동호회/i,
+  /자전거.*라이딩.*코스/i,
+  /라이딩.*후기(?!.*유치원)/i,
+
+  // 초등학교 입학/학원 (병설유치원 아닌 순수 초등 정보)
+  /초등학교.*입학(?!.*유치원)/i,
+  /초등.*방과후(?!.*유치원)/i,
+  /초등.*학원.*추천(?!.*유치원)/i,
+  /예비초등.*학원/i,
+
+  // 대치/학원 SEO 키워드 남용
+  /대치알파학원/i,
+  /대치동.*학원.*후기/i,
+
+  // 간호학원/직업학원
+  /간호학원/i,
+  /간호조무사.*학원/i,
+  /직업학원/i,
+  /직업훈련/i,
+
+  // 인형극/마술/공연 업체 포트폴리오 추가
+  /인형극.*공연.*후기(?!.*유치원)/i,
+  /마술.*공연.*후기(?!.*유치원)/i,
+  /버블쇼.*공연.*후기/i,
+  /샌드아트.*공연.*후기/i,
+  /동화구연.*출장/i,
+
+  // 시설공사/놀이터 시공 업체 추가
+  /놀이터.*설치.*업체/i,
+  /유아.*놀이기구.*설치/i,
+  /어린이.*놀이시설.*설치/i,
+  /바닥재.*시공(?!.*유치원)/i,
+  /탄성포장.*시공/i,
+  /우레탄.*시공/i,
+
+  // 유치원 근처 맛집/카페 (유치원명만 랜드마크로 언급)
+  /맛집.*유치원.*근처/i,
+  /카페.*유치원.*옆/i,
+  /유치원.*앞.*맛집/i,
+  /유치원.*건너편.*카페/i,
+
 ];
 // 시도별 시군구명 패턴 매핑 (해당 시도의 리뷰에서는 적용하지 않음)
 const LOCATION_PATTERNS_BY_SIDO: Record<string, RegExp[]> = {
@@ -536,24 +724,29 @@ interface FilterResult {
 // ============================================================================
 
 function isSpam(review: ReviewLink, currentSidoCode?: string): { isSpam: boolean; reason: string } {
-  // 타이틀 검사
+  // 1. 로컬 타이틀 패턴 검사
   for (const pattern of SPAM_TITLE_PATTERNS) {
     if (pattern.test(review.title)) {
       return { isSpam: true, reason: `타이틀 패턴: ${pattern.toString()}` };
     }
   }
 
-  // 지역 불일치 검사 (현재 시도 제외)
-  for (const [sidoCode, pattern] of Object.entries(LOCATION_MISMATCH_PATTERNS)) {
-    // 현재 처리 중인 시도의 패턴은 건너뜀
-    if (currentSidoCode && sidoCode === currentSidoCode) continue;
+  // 2. 통합 타이틀 패턴 검사 (review-utils.ts의 V14 패턴 — 질문글/정보글 등)
+  for (const pattern of UNIFIED_SPAM_TITLE_PATTERNS) {
+    if (pattern.test(review.title)) {
+      return { isSpam: true, reason: `통합 타이틀 패턴: ${pattern.toString()}` };
+    }
+  }
 
+  // 3. 지역 불일치 검사 (현재 시도 제외)
+  for (const [sidoCode, pattern] of Object.entries(LOCATION_MISMATCH_PATTERNS)) {
+    if (currentSidoCode && sidoCode === currentSidoCode) continue;
     if (pattern.test(review.title)) {
       return { isSpam: true, reason: `지역 불일치: ${pattern.toString()}` };
     }
   }
 
-  // 타 지역 시군구명 검사 (현재 시도에 속하지 않는 패턴만 적용)
+  // 4. 타 지역 시군구명 검사
   if (currentSidoCode) {
     const locationPatterns = getLocationSpamPatterns(currentSidoCode);
     for (const pattern of locationPatterns) {
@@ -563,11 +756,24 @@ function isSpam(review: ReviewLink, currentSidoCode?: string): { isSpam: boolean
     }
   }
 
-  // Snippet 검사
+  // 5. 로컬 Snippet 검사
   for (const pattern of SPAM_SNIPPET_PATTERNS) {
     if (pattern.test(review.snippet)) {
       return { isSpam: true, reason: `Snippet 패턴: ${pattern.toString()}` };
     }
+  }
+
+  // 6. 통합 Snippet 패턴 검사 (포럼 템플릿, 등업글 등)
+  for (const pattern of UNIFIED_SNIPPET_PATTERNS) {
+    if (pattern.test(review.snippet)) {
+      return { isSpam: true, reason: `통합 Snippet: ${pattern.toString()}` };
+    }
+  }
+
+  // 7. 콘텐츠 유형 검사 (포럼 템플릿 필터링)
+  const contentType = classifyContentType(review.title, review.snippet);
+  if (contentType === 'template') {
+    return { isSpam: true, reason: `콘텐츠 유형: ${contentType}` };
   }
 
   return { isSpam: false, reason: '' };

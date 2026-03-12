@@ -25,8 +25,10 @@ import {
   extractRegionName,
   calculateRelevanceScoreV2,
   isSpamTitle,
+  isSpamReview,
   validateLocationMatch,
   buildQueryWithExclusions,
+  classifyContentType,
   type RelevanceResult,
 } from '../src/lib/utils/review-utils';
 
@@ -310,6 +312,18 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
+      // V4: snippet 스팸 + 콘텐츠 유형 검사
+      const googleSpamCheck = isSpamReview({ title, snippet });
+      if (googleSpamCheck.isSpam) {
+        stats.filteredBySpam++;
+        continue;
+      }
+      const googleContentType = classifyContentType(title, snippet);
+      if (googleContentType === 'template') {
+        stats.filteredBySpam++;
+        continue;
+      }
+
       // V3: 지역 검증
       const locationCheck = validateLocationMatch(
         fullText,
@@ -334,8 +348,8 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
-      // V3: strictMode에 따른 점수 기준
-      const minScore = strictMode ? 3 : 2;
+      // V4: strictMode에 따른 점수 기준 (강화: 기본 3, strict 4)
+      const minScore = strictMode ? 4 : 3;
       if (relevance.score < minScore) {
         stats.filteredByScore++;
         continue;
@@ -379,6 +393,18 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
+      // V4: snippet 스팸 + 콘텐츠 유형 검사
+      const spamCheck = isSpamReview({ title, snippet });
+      if (spamCheck.isSpam) {
+        stats.filteredBySpam++;
+        continue;
+      }
+      const contentType = classifyContentType(title, snippet);
+      if (contentType === 'template') {
+        stats.filteredBySpam++;
+        continue;
+      }
+
       // V3: 지역 검증
       const locationCheck = validateLocationMatch(
         fullText,
@@ -403,8 +429,8 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
-      // V3: strictMode에 따른 점수 기준
-      const minScore = strictMode ? 3 : 2;
+      // V4: strictMode에 따른 점수 기준 (강화: 기본 3, strict 4)
+      const minScore = strictMode ? 4 : 3;
       if (relevance.score < minScore) {
         stats.filteredByScore++;
         continue;
@@ -459,7 +485,7 @@ async function main() {
 
   console.log('=== 유치원 후기 링크 수집 (v3 - 지역 검증) ===');
   console.log(`모드: ${isTest ? '테스트 (3개)' : '전체'}`);
-  console.log(`엄격 모드: ${strictMode ? 'ON (3점 이상)' : 'OFF (2점 이상)'}`);
+  console.log(`엄격 모드: ${strictMode ? 'ON (4점 이상)' : 'OFF (3점 이상)'}`);
   console.log(`쿼리당 최대: ${maxPerQuery}개`);
   console.log(`Google CSE: ${includeGoogle ? '포함' : '미포함'}`);
   console.log(`날짜 필터: ${THREE_YEARS_AGO.substring(0, 4)}년 이후`);
