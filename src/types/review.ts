@@ -107,6 +107,84 @@ export interface LlmReviewValidationDecision {
   reason: string;
 }
 
+export interface ReviewVerificationStateEntry {
+  reviewId: string;
+  kindergartenId: string;
+  kindergartenName?: string;
+  sidoCode?: string;
+  normalizedUrl: string;
+  finalStatus: ReviewVerificationStatus;
+  confidence: number;
+  reviewedAt: string;
+  reviewFingerprint: string;
+  title: string;
+  snippet: string;
+}
+
+export interface ReviewVerificationStateFile {
+  updatedAt: string;
+  totalCount: number;
+  entries: ReviewVerificationStateEntry[];
+}
+
+export interface ReviewBodyCacheEntry {
+  reviewId: string;
+  kindergartenId: string;
+  normalizedUrl: string;
+  reviewFingerprint: string;
+  title: string;
+  snippet: string;
+  bodyText: string;
+  textLength: number;
+  scrapedAt: string;
+  status: 'success' | 'fail';
+  error?: string;
+}
+
+export interface ReviewBodyCacheFile {
+  updatedAt: string;
+  totalCount: number;
+  entries: ReviewBodyCacheEntry[];
+}
+
+export interface ReviewVerificationRunReportItem {
+  reviewId: string;
+  kindergartenId: string;
+  kindergartenName: string;
+  normalizedUrl: string;
+  url: string;
+  title: string;
+  snippet: string;
+  previousStatus: ReviewVerificationStatus | null;
+  nextStatus: ReviewVerificationStatus;
+  confidence: number;
+  reviewedAt: string;
+  reused: boolean;
+}
+
+export interface ReviewVerificationRunReport {
+  generatedAt: string;
+  targetSidos: string[];
+  totalReviewsSeen: number;
+  reusedCount: number;
+  newlyEvaluatedCount: number;
+  newlyScrapedCount: number;
+  cachedBodyCount: number;
+  statusSummary: Record<ReviewVerificationStatus, number>;
+  changedDecisions: ReviewVerificationRunReportItem[];
+  newlyRemoved: ReviewVerificationRunReportItem[];
+  newlyVerified: ReviewVerificationRunReportItem[];
+}
+
+export interface ReviewVerificationQaSampleReport {
+  generatedAt: string;
+  targetSidos: string[];
+  sampleSize: number;
+  seed: number;
+  newlyVerifiedSamples: ReviewVerificationRunReportItem[];
+  newlyRemovedSamples: ReviewVerificationRunReportItem[];
+}
+
 // Review Suggestion Types
 export type ReviewSuggestionType = 'add' | 'delete';
 
