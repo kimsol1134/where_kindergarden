@@ -40,9 +40,11 @@
   - `src/lib/utils/__tests__/review-verification.test.ts`
 
 ## 진행 중인 작업
-- 실제 external body scrape 기반 cache hit 검증은 아직 안 함
-  - Codex sandbox에서는 `--skip-scrape`로 orchestration/runtime만 검증
-  - 네트워크 가능한 환경에서 `pnpm verify:review-incremental -- --sido 11,41` 실실행 필요
+- 11/41 운영형 증분 bootstrap 완료
+  - legacy full 결과(`review-verification-results-11-41.json`, `review-body-scrape-11-41.json`) 기반으로
+    `review-verification-state.json`, `review-body-cache.json` 생성 완료
+  - 현재 11/41 데이터는 전부 기존 판정 재사용 상태
+  - 다음 실행부터는 신규/변경 리뷰가 생길 때만 증분 평가됨
 - 기존 리뷰 UI/store 테스트는 이번 작업과 무관하게 별도 실패 상태
   - `reviewStore`, `ReviewLinkCard`, `ReviewLinkList`, `ReviewPreview`
   - React/Zustand 테스트 환경 이슈로 보이며 이번 변경 범위는 아님
@@ -57,14 +59,26 @@
   - 1건 `reused`
   - 4건 `newlyEvaluated`
   - 과거 `uncertain` 재평가 규칙 확인
+- `pnpm verify:review-incremental -- --sido 11,41 --dry-run --no-apply`
+  - `2475`건 전체 재사용
+  - `newlyEvaluated 0`, `newlyScraped 0`
+- `pnpm verify:review-incremental -- --sido 11,41 --no-apply`
+  - 운영용 `state/body-cache/report/qa-samples` 실제 저장 완료
+- 동일 명령 재실행
+  - `state source: state`
+  - `body cache source: body-cache`
+  - bootstrap이 아니라 저장된 운영 state/cache를 읽는 것까지 확인
 - 주의:
   - `pnpm test` 전체 스위트는 기존 리뷰 컴포넌트/스토어 테스트 실패로 통과하지 않음
   - 이번 변경 유틸 테스트는 별도 direct vitest 실행으로 검증함
 
 ## 다음에 할 작업
-1. 실제 external scrape 가능한 환경에서 `pnpm verify:review-incremental -- --sido 11,41` 전체 실행
-2. 생성된 `review-verification-run-report.json`과 QA sample로 새 `verified`/제거 대상을 샘플 검수
-3. 기존 legacy 결과 파일이 있으면 최초 11/41 전체 state/cache bootstrap 후 운영 루틴으로 전환
+1. 신규 리뷰 수집/병합 후 `pnpm verify:review-incremental -- --sido 11,41` 실행
+2. `review-verification-run-report.json`에서 `newlyEvaluatedCount`가 0보다 크면
+   `review-verification-qa-samples-11-41.json`로 샘플 검수
+3. 실제 반영이 필요할 때는 기본 명령 그대로 실행
+   - 기본은 apply 포함
+   - 사전 검토만 원하면 `--no-apply`
 4. 필요 시 `verify:review-incremental`을 주기 실행용 automation이나 CI job으로 연결
 
 ## 주요 파일
