@@ -115,9 +115,9 @@ export function ReviewSuggestionModal({
       />
       
       {/* Modal */}
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div className="relative w-full max-w-md overflow-hidden rounded-[28px] border border-gray-100 bg-white shadow-xl">
         {/* Header */}
-        <div className={`px-5 py-4 flex items-center justify-between ${
+        <div className={`flex items-center justify-between px-5 py-4 ${
           type === 'add' ? 'bg-emerald-50' : 'bg-amber-50'
         }`}>
           <div className="flex items-center gap-2">
@@ -141,7 +141,7 @@ export function ReviewSuggestionModal({
         </div>
 
         {/* Body */}
-        <form onSubmit={handleSubmit} className="p-5 space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 p-5">
           {success ? (
             <div className="py-8 text-center">
               <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -164,7 +164,7 @@ export function ReviewSuggestionModal({
                       onChange={(e) => setUrl(e.target.value)}
                       placeholder="https://blog.naver.com/..."
                       required
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full rounded-2xl border border-gray-200 px-3 py-2.5 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     />
                   </div>
                   <div>
@@ -178,7 +178,7 @@ export function ReviewSuggestionModal({
                       placeholder="후기 글 제목을 입력하세요"
                       required
                       maxLength={200}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full rounded-2xl border border-gray-200 px-3 py-2.5 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     />
                   </div>
                   <div>
@@ -188,7 +188,7 @@ export function ReviewSuggestionModal({
                     <select
                       value={source}
                       onChange={(e) => setSource(e.target.value as ReviewSource)}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full rounded-2xl border border-gray-200 px-3 py-2.5 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-500"
                     >
                       {SOURCE_OPTIONS.map((opt) => (
                         <option key={opt.value} value={opt.value}>
@@ -200,7 +200,7 @@ export function ReviewSuggestionModal({
                 </>
               ) : (
                 <>
-                  <div className="p-3 bg-gray-50 rounded-lg">
+                  <div className="rounded-2xl bg-gray-50 p-3">
                     <p className="text-sm text-gray-600">삭제 제안 대상:</p>
                     <p className="font-medium text-gray-900 line-clamp-2">{reviewTitle}</p>
                   </div>
@@ -214,7 +214,7 @@ export function ReviewSuggestionModal({
                       placeholder="삭제를 요청하는 이유를 입력하세요 (예: 링크가 만료됨, 잘못된 정보)"
                       required
                       rows={3}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
+                      className="w-full resize-none rounded-2xl border border-gray-200 px-3 py-2.5 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-amber-500"
                     />
                   </div>
                 </>
@@ -229,7 +229,7 @@ export function ReviewSuggestionModal({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="답변받을 이메일 주소"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
+                  className="w-full rounded-2xl border border-gray-200 px-3 py-2.5 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-400"
                 />
                 <p className="text-xs text-gray-400 mt-1">
                   검토 결과를 받으실 경우 입력하세요
@@ -237,7 +237,7 @@ export function ReviewSuggestionModal({
               </div>
 
               {error && (
-                <div className="p-3 bg-red-50 rounded-lg">
+                <div className="rounded-2xl bg-red-50 p-3">
                   <p className="text-sm text-red-600">{error}</p>
                 </div>
               )}

@@ -22,6 +22,8 @@ import {
 } from '@/stores';
 import { useFavoriteKindergartens, useFavoriteKindergarten } from '@/hooks';
 import { transformToKindergarten } from '@/lib/transforms';
+import { generateCompareSharePath } from '@/lib/share/kakaoShare';
+import { formatDistanceLabel } from '@/lib/utils';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 
 /** 기관 유형별 스타일 */
@@ -164,6 +166,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
   const handleBulkCompare = useCallback(() => {
     const kindergartenStore = useKindergartenStore.getState();
     const location = useSearchStore.getState().location;
+    const address = useSearchStore.getState().address;
 
     // 선택한 항목들을 Kindergarten 객체로 변환
     const kindergartens: Kindergarten[] = [];
@@ -180,7 +183,13 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     setSelectedItems(new Set());
     setIsSelectMode(false);
     onClose();
-    router.push('/compare');
+    router.push(
+      generateCompareSharePath(
+        kindergartens.map((kindergarten) => kindergarten.kindercode),
+        location,
+        address
+      )
+    );
   }, [selectedItems, setItems, onClose, router]);
 
   // 선택 취소
@@ -319,13 +328,22 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
           {/* 빈 상태 UI */}
           {items.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                <Heart className="w-8 h-8 text-gray-300" />
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-50">
+                <Heart className="h-8 w-8 text-red-300" />
               </div>
-              <p className="text-gray-500 font-medium mb-2">찜한 유치원이 없습니다</p>
-              <p className="text-sm text-gray-400">
-                마음에 드는 유치원의 하트를 눌러 저장하세요
+              <p className="mb-2 text-base font-semibold text-gray-900">찜한 기관이 아직 없습니다</p>
+              <p className="text-sm leading-6 text-gray-500">
+                검색 결과에서 하트를 누르면 나중에 다시 비교할 후보를 모아둘 수 있어요.
               </p>
+              <button
+                onClick={() => {
+                  onClose();
+                  router.push('/search');
+                }}
+                className="mt-5 rounded-2xl bg-emerald-500 px-5 py-3 text-sm font-bold text-white"
+              >
+                기관 검색하러 가기
+              </button>
             </div>
           ) : (
             <div className="p-4 space-y-3">
@@ -481,9 +499,9 @@ function FavoriteItemCard({
               {typeStyle.label}
             </span>
             {/* 거리 표시 */}
-            {kindergarten && kindergarten.distance >= 0 ? (
+            {kindergarten && formatDistanceLabel(kindergarten.distance) ? (
               <span className="text-[11px] text-gray-400">
-                {kindergarten.distance.toFixed(1)}km
+                {formatDistanceLabel(kindergarten.distance)}
               </span>
             ) : null}
           </div>

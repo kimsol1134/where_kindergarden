@@ -14,6 +14,11 @@ const URL_PARAMS = {
   ADDRESS: 'address',
   RADIUS: 'radius',
   TYPE: 'type',
+  HAS_BUS: 'hasBus',
+  HAS_VACANCY: 'hasVacancy',
+  HAS_INDOOR_PLAYGROUND: 'hasIndoorPlayground',
+  HAS_LARGE_SPACE: 'hasLargeSpace',
+  HAS_MODERN_BUILDING: 'hasModernBuilding',
   SORT: 'sort',
   VIEW: 'view',
   SELECTED: 'selected',
@@ -39,6 +44,7 @@ export function useURLSync() {
     setLocation,
     setRadius,
     setType,
+    applyFilters,
     setSortBy,
     setViewMode,
     setSelectedId,
@@ -55,6 +61,11 @@ export function useURLSync() {
     const addressParam = searchParams.get(URL_PARAMS.ADDRESS);
     const radius = searchParams.get(URL_PARAMS.RADIUS);
     const type = searchParams.get(URL_PARAMS.TYPE);
+    const hasBus = searchParams.get(URL_PARAMS.HAS_BUS);
+    const hasVacancy = searchParams.get(URL_PARAMS.HAS_VACANCY);
+    const hasIndoorPlayground = searchParams.get(URL_PARAMS.HAS_INDOOR_PLAYGROUND);
+    const hasLargeSpace = searchParams.get(URL_PARAMS.HAS_LARGE_SPACE);
+    const hasModernBuilding = searchParams.get(URL_PARAMS.HAS_MODERN_BUILDING);
     const sort = searchParams.get(URL_PARAMS.SORT);
     const view = searchParams.get(URL_PARAMS.VIEW);
     const selected = searchParams.get(URL_PARAMS.SELECTED);
@@ -76,6 +87,14 @@ export function useURLSync() {
     if (type && isValidType(type)) {
       setType(type);
     }
+
+    applyFilters({
+      hasBus: parseBooleanParam(hasBus),
+      hasVacancy: parseBooleanParam(hasVacancy),
+      hasIndoorPlayground: parseBooleanParam(hasIndoorPlayground),
+      hasLargeSpace: parseBooleanParam(hasLargeSpace),
+      hasModernBuilding: parseBooleanParam(hasModernBuilding),
+    });
 
     // 정렬 복원
     if (sort && isValidSort(sort)) {
@@ -104,6 +123,7 @@ export function useURLSync() {
     setLocation,
     setRadius,
     setType,
+    applyFilters,
     setSortBy,
     setViewMode,
     setSelectedId,
@@ -131,6 +151,26 @@ export function useURLSync() {
       params.set(URL_PARAMS.TYPE, filters.type);
     }
 
+    if (filters.hasBus === true) {
+      params.set(URL_PARAMS.HAS_BUS, '1');
+    }
+
+    if (filters.hasVacancy === true) {
+      params.set(URL_PARAMS.HAS_VACANCY, '1');
+    }
+
+    if (filters.hasIndoorPlayground === true) {
+      params.set(URL_PARAMS.HAS_INDOOR_PLAYGROUND, '1');
+    }
+
+    if (filters.hasLargeSpace === true) {
+      params.set(URL_PARAMS.HAS_LARGE_SPACE, '1');
+    }
+
+    if (filters.hasModernBuilding === true) {
+      params.set(URL_PARAMS.HAS_MODERN_BUILDING, '1');
+    }
+
     if (sortBy !== 'distance') {
       params.set(URL_PARAMS.SORT, sortBy);
     }
@@ -156,7 +196,21 @@ export function useURLSync() {
     if (!isInitializedRef.current) return;
 
     updateURL();
-  }, [location, address, filters.radius, filters.type, sortBy, viewMode, selectedId, updateURL]);
+  }, [
+    location,
+    address,
+    filters.radius,
+    filters.type,
+    filters.hasBus,
+    filters.hasVacancy,
+    filters.hasIndoorPlayground,
+    filters.hasLargeSpace,
+    filters.hasModernBuilding,
+    sortBy,
+    viewMode,
+    selectedId,
+    updateURL,
+  ]);
 
   // 검색 모드 확인 (mode=location은 현재 위치 검색 트리거용)
   const getSearchMode = useCallback((): 'location' | 'address' | null => {
@@ -188,4 +242,12 @@ function isValidSort(value: string): value is SortOption {
 
 function isValidViewMode(value: string): value is ViewMode {
   return value === 'list' || value === 'map' || value === 'split';
+}
+
+function parseBooleanParam(value: string | null): boolean | null {
+  if (value === '1' || value === 'true') {
+    return true;
+  }
+
+  return null;
 }

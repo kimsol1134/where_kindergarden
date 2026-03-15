@@ -13,7 +13,7 @@ export function transformToKindergarten(
 ): Kindergarten {
   const distance = userLocation
     ? Math.round(calculateDistance(userLocation, { lat: raw.lat, lng: raw.lng }) * 100) / 100
-    : -1;
+    : null;
 
   return transformToKindergartenWithDistance(raw, distance);
 }
@@ -25,7 +25,7 @@ export function transformToKindergarten(
  */
 export function transformToKindergartenWithDistance(
   raw: KindergartenRaw,
-  distance: number
+  distance: number | null
 ): Kindergarten {
   return {
     kindercode: raw.kindercode,

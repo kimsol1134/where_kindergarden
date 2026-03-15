@@ -23,7 +23,7 @@ export function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          학부모 98%가 만족한 서비스
+          교육부 공시 데이터 기반으로 찾기
         </div>
         
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6 leading-tight animate-fade-up delay-100">
@@ -36,25 +36,30 @@ export function Hero() {
           시설부터 교육 프로그램까지 한눈에 비교하세요.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up delay-300 w-full max-w-md mx-auto sm:max-w-none">
+        <div className="animate-fade-up delay-300 w-full max-w-md mx-auto">
           <Link
             href="/search?mode=location"
-            className="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-lg shadow-lg shadow-emerald-200 transition-all flex items-center justify-center gap-2 group"
+            className="w-full px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-2xl font-bold text-lg shadow-lg shadow-emerald-200 transition-all flex items-center justify-center gap-2 group"
           >
             <MapPin className="w-5 h-5 group-hover:scale-110 transition-transform" />
             내 주변 유치원 찾기
           </Link>
-
+        </div>
+        
+        <div className="mt-5 animate-fade-up delay-400 flex flex-col items-center gap-2">
           <Link
             href="/test"
-            className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-emerald-50 text-emerald-600 border-2 border-emerald-500 rounded-xl font-bold text-lg shadow-md transition-all flex items-center justify-center gap-2 group"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 transition-colors hover:text-emerald-800"
           >
-            <Sparkles className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            우리 아이 성향 테스트
+            <Sparkles className="h-4 w-4" />
+            우리 아이 성향 테스트도 함께 해보기
+          </Link>
+          <Link href="#features" className="text-sm text-gray-500 transition-colors hover:text-gray-700">
+            어떤 정보를 볼 수 있나요?
           </Link>
         </div>
         
-        <div className="mt-8 animate-fade-up delay-400 flex flex-col items-center gap-3">
+        <div className="mt-12 animate-fade-up delay-400 flex flex-col items-center gap-3">
           <p className="text-sm font-medium text-gray-500">앱으로 더 편리하게 이용하세요</p>
           <Link 
             href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"

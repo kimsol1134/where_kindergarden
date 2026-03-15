@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Instagram, Facebook, MessageCircle } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 import { DATA_VERSION } from '@/lib/constants';
 
 export function Footer() {
@@ -43,15 +43,15 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/search" className="hover:text-emerald-500">유치원 찾기</Link></li>
               <li><Link href="/compare" className="hover:text-emerald-500">비교하기</Link></li>
-              <li><Link href="#" className="hover:text-emerald-500">이용 가이드</Link></li>
+              <li><Link href="/about" className="hover:text-emerald-500">서비스 소개</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-white font-bold mb-4">문의</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-emerald-500">자주 묻는 질문</Link></li>
-              <li><Link href="mailto:kimsol1134@naver.com" className="hover:text-emerald-500">제휴 문의</Link></li>
               <li><Link href="/privacy" className="hover:text-emerald-500">개인정보처리방침</Link></li>
+              <li><Link href="mailto:kimsol1134@naver.com" className="hover:text-emerald-500">제휴 문의</Link></li>
+              <li><Link href="/test" className="hover:text-emerald-500">아이 성향 테스트</Link></li>
             </ul>
           </div>
         </div>
@@ -100,9 +100,22 @@ export function Footer() {
               </p>
             </div>
             <div className="flex gap-4">
-              <Link href="#" className="hover:text-white"><Instagram className="w-5 h-5" /></Link>
-              <Link href="#" className="hover:text-white"><Facebook className="w-5 h-5" /></Link>
-              <Link href="#" className="hover:text-white"><MessageCircle className="w-5 h-5" /></Link>
+              <Link
+                href="mailto:kimsol1134@naver.com"
+                className="flex items-center gap-2 hover:text-white"
+              >
+                <Mail className="w-4 h-4" />
+                <span className="text-xs">이메일 문의</span>
+              </Link>
+              <Link
+                href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span className="text-xs">앱 다운로드</span>
+              </Link>
             </div>
           </div>
         </div>

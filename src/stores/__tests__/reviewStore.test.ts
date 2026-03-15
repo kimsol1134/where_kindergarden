@@ -89,10 +89,15 @@ describe('useReviewStore', () => {
     });
 
     it('should handle fetch errors', async () => {
-      vi.spyOn(globalThis, 'fetch').mockResolvedValueOnce({
-        ok: false,
-        status: 404,
-      } as Response);
+      vi.spyOn(globalThis, 'fetch')
+        .mockResolvedValueOnce({
+          ok: false,
+          status: 503,
+        } as Response)
+        .mockResolvedValueOnce({
+          ok: false,
+          status: 404,
+        } as Response);
 
       await useReviewStore.getState().loadData();
 

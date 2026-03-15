@@ -211,6 +211,18 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     });
   }, []);
 
+  const clearQuery = useCallback(() => {
+    setState((prev) => ({
+      ...prev,
+      query: '',
+      suggestions: [],
+      kindergartenSuggestions: [],
+      isLoading: false,
+      error: null,
+      isOpen: false,
+    }));
+  }, []);
+
   // 드롭다운 열기/닫기
   const setOpen = useCallback((isOpen: boolean) => {
     setState((prev) => ({ ...prev, isOpen }));
@@ -239,6 +251,7 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     selectAddress,
     selectKindergarten,
     clearSelection,
+    clearQuery,
     setOpen,
     clearError,
   };

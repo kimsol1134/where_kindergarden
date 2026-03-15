@@ -1,46 +1,48 @@
-# 서울 유치원 후기 수집 작업 인계
+# HANDOFF.md
 
 ## 마지막 작업 일시
-2026-01-28 (오후)
+2026-03-15
 
-## 현재 상황 요약
+## 완료된 작업
+- [x] 랜딩 Hero CTA 우선순위 재정렬
+- [x] 모바일 헤더 메뉴를 실제 네비게이션 시트로 교체
+- [x] 검색 상태 모델을 `idle / locating / results / empty / filtered_empty / error`로 재구성
+- [x] 검색 초기 가이드 카드, query 초기화, 검색 세션 초기화, 필터 초기화 UX 추가
+- [x] 모바일 `목록 / 지도` 세그먼트 전환 적용
+- [x] 모바일 compare bar를 요약형 + 확장형 구조로 재설계
+- [x] 상세 화면을 모바일 시트형 레이아웃으로 재구성
+- [x] 비교 페이지를 모바일 카드형 / 데스크톱 표형으로 분기
+- [x] compare 공유 URL에 optional `lat/lng/address` 지원 추가
+- [x] 성향 테스트 intro CTA 위치 조정 및 결과 → 추천 검색 연결
+- [x] 공유/복사 피드백을 공통 토스트로 통일
+- [x] 찜/후기 empty state 및 후기 제안 모달 톤 정리
+- [x] 브라우저 확대 허용으로 접근성 개선
 
-### 서울 후기 현황
-- **총 1,568건 / 443개 유치원** (759개 중 58.4% 커버리지)
-- **모든 구에 후기 존재** (v3 스크립트로 기수집)
+## 진행 중인 작업
+- 없음
 
-### 이번 세션 완료 작업
-| 구 | 유치원 수 | 기존 | 추가 | 병합 |
-|---|---|---|---|---|
-| 금천구 | 16 | 23 | +2 | ✅ 완료 |
-| 마포구 | 27 | 26 | +2 | ✅ 완료 |
-| 구로구 | 30 | 27 | +1 | ✅ 완료 |
+## 다음에 할 작업
+1. 실제 디바이스 또는 TestFlight 빌드에서 Safari/Capacitor safe area 차이 추가 검증
+2. 검색/비교/공유 이벤트 대시보드 연결 여부 확인
+3. 필요하면 E2E 테스트에 `검색 시작 → 상세 → 비교` 모바일 시나리오 추가
 
-### 종로구 검색 시도 (결과 없음)
-- 교동초등학교병설유치원 → 다른 지역(춘천, 세종) 결과만 노출
-- 혜화유치원 → 성당, 문화투어 결과만 노출
-- 종로구는 인구/유치원 수가 적어 온라인 후기가 거의 없음
+## 검증 결과
+- `pnpm type-check` 통과
+- `pnpm test` 통과 (14 files, 184 tests)
+- 변경 파일 대상 `eslint` 통과
+- iOS Simulator Safari에서 랜딩 / 검색 초기 / 검색 결과 / 상세 / 비교 / 테스트 화면 수동 확인
 
-### 후기가 적은 구 (추가 수집 대상)
-| 구 | 유치원 수 | 후기 수 | 상태 |
-|---|---|---|---|
-| 종로구 | 15 | 20 | Chrome 검색 시도 - 결과 없음 |
-| 중구 | 14 | 23 | 미착수 |
-| 용산구 | 13 | 27 | 미착수 |
+## 주의사항 / 알려진 이슈
+- worktree에서 `node_modules`를 symlink로 연결해 사용 중이라 `pnpm build`는 Turbopack의 symlink 제한 때문에 실패함
+- 동일 브랜치를 원본 저장소에서 계속 작업하지 말고, 현재 worktree(`/tmp/where_kindergarden-ux-overhaul`)에서 이어서 작업하는 것이 안전함
+- 전체 `pnpm lint`는 기존 `scripts/` 디렉터리의 선행 에러 때문에 여전히 실패할 수 있음. 이번 작업 변경 파일 자체는 별도 `eslint`로 확인 완료
 
-## 저장된 파일
-- `scripts/data-output/chrome-reviews-guro-20260128.json` - 구로구 수집
-- `scripts/data-output/chrome-reviews-mapo-20260128.json` - 마포구 수집
-- `scripts/data-output/enriched-mapo-20260128.json` - 마포구 enriched
-- `scripts/data-output/enriched-reviews-11-20260128.json` - 금천구 enriched
-- `public/data/reviews/11.json` - 서울 최종 (1568건)
-
-## 다음 단계 권장
-1. 중구/용산구 유치원 Chrome 검색 시도
-2. 또는 경기도(41) 후기 보강 작업으로 전환
-3. 서울 도심 구(종로/중구/용산)는 후기가 적으므로 우선순위 낮춤
+## 현재 브랜치
+codex/feature/ux-overhaul
 
 ## 참고 파일
-- `CLAUDE.md` - 개발 가이드
-- `.claude/agents/chrome-review-extractor.md` - URL 추출 Subagent
-- `scripts/merge-chrome-reviews.ts` - 병합 스크립트
+- `src/stores/searchStore.ts` - 검색 상태 모델 및 필터/세션 로직
+- `src/components/search/SearchHeader.tsx` - 검색 시작/필터/세션 초기화 UX
+- `src/components/search/KindergartenDetailPanel.tsx` - 모바일 상세 시트
+- `src/components/compare/CompareGrid.tsx` - 모바일/데스크톱 비교 UI 분기
+- `src/app/test/_components/TestFlow.tsx` - 테스트 CTA/추천 검색 연결

@@ -22,7 +22,7 @@ export interface Kindergarten {
   address: string;
   lat: number;
   lng: number;
-  distance: number; // km
+  distance: number | null; // km
   sidoCode: string; // 시도 코드
   sigunguCode: string; // 시군구 코드
 

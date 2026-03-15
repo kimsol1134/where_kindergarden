@@ -8,12 +8,19 @@ import { CompareHeader } from '@/components/compare/CompareHeader';
 import { CompareGrid } from '@/components/compare/CompareGrid';
 import { useCompareStore, useKindergartenStore, useSearchStore } from '@/stores';
 import type { KindergartenRaw } from '@/stores/kindergartenStore';
+import type { Coordinates } from '@/types';
 import { transformToKindergarten } from '@/lib/transforms';
 
-function CompareLoading() {
+function CompareLoading({
+  shareLocation,
+  shareAddress,
+}: {
+  shareLocation: Coordinates | null;
+  shareAddress: string;
+}) {
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
-      <CompareHeader />
+      <CompareHeader shareLocation={shareLocation} shareAddress={shareAddress} />
       <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
         <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
         <p className="text-sm text-gray-500">비교 정보를 불러오는 중...</p>
@@ -23,8 +30,11 @@ function CompareLoading() {
 }
 
 export default function ComparePage() {
+  const shareLocation = null;
+  const shareAddress = '';
+
   return (
-    <Suspense fallback={<CompareLoading />}>
+    <Suspense fallback={<CompareLoading shareLocation={shareLocation} shareAddress={shareAddress} />}>
       <CompareContent />
     </Suspense>
   );
@@ -33,16 +43,27 @@ export default function ComparePage() {
 function CompareContent() {
   const searchParams = useSearchParams();
   const idsParam = searchParams.get('ids');
+  const latParam = searchParams.get('lat');
+  const lngParam = searchParams.get('lng');
+  const addressParam = searchParams.get('address') ?? '';
+  const shareLocation = parseLocation(latParam, lngParam);
 
   const { items, setItems } = useCompareStore();
   const { allData, isLoaded, isLoading, loadData, getByKindercode } =
     useKindergartenStore();
-  const { location } = useSearchStore();
+  const { location, setLocation } = useSearchStore();
+  const compareLocation = shareLocation ?? location ?? undefined;
 
   // 데이터 로드
   useEffect(() => {
     loadData();
   }, [loadData]);
+
+  useEffect(() => {
+    if (shareLocation && !location) {
+      setLocation(shareLocation, addressParam);
+    }
+  }, [addressParam, location, setLocation, shareLocation]);
 
   // URL 파라미터로부터 비교 목록 복원
   useEffect(() => {
@@ -52,19 +73,27 @@ function CompareContent() {
       const kindergartens = ids
         .map((id) => getByKindercode(id))
         .filter((k): k is KindergartenRaw => k !== undefined)
-        .map((raw) => transformToKindergarten(raw, location ?? undefined));
+        .map((raw) => transformToKindergarten(raw, compareLocation));
 
       if (kindergartens.length > 0) {
         setItems(kindergartens);
       }
     }
-  }, [idsParam, items.length, isLoaded, allData.length, getByKindercode, setItems, location]);
+  }, [
+    idsParam,
+    items.length,
+    isLoaded,
+    allData.length,
+    getByKindercode,
+    setItems,
+    compareLocation,
+  ]);
 
   // URL에 ids가 있지만 아직 데이터 로드 중인 경우 로딩 표시
   if (idsParam && (isLoading || !isLoaded) && items.length === 0) {
     return (
       <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
-        <CompareHeader />
+        <CompareHeader shareLocation={shareLocation} shareAddress={addressParam} />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
           <p className="text-sm text-gray-500">비교 정보를 불러오는 중...</p>
@@ -77,7 +106,7 @@ function CompareContent() {
   if (items.length === 0) {
     return (
       <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
-        <CompareHeader />
+        <CompareHeader shareLocation={shareLocation} shareAddress={addressParam} />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
           <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
             <Search className="w-8 h-8 text-gray-400" />
@@ -99,10 +128,25 @@ function CompareContent() {
 
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
-      <CompareHeader />
+      <CompareHeader shareLocation={shareLocation} shareAddress={addressParam} />
       <main className="max-w-5xl mx-auto pb-24">
         <CompareGrid items={items} />
       </main>
     </div>
   );
+}
+
+function parseLocation(latParam: string | null, lngParam: string | null): Coordinates | null {
+  if (!latParam || !lngParam) {
+    return null;
+  }
+
+  const lat = Number.parseFloat(latParam);
+  const lng = Number.parseFloat(lngParam);
+
+  if (Number.isNaN(lat) || Number.isNaN(lng)) {
+    return null;
+  }
+
+  return { lat, lng };
 }

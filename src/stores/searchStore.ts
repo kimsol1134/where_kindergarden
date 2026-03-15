@@ -13,53 +13,55 @@ export type SortOption = 'distance' | 'capacity' | 'areaPerChild';
 /** 뷰 모드 */
 export type ViewMode = 'list' | 'map' | 'split';
 
+/** 검색 상태 */
+export type SearchStatus =
+  | 'idle'
+  | 'locating'
+  | 'results'
+  | 'empty'
+  | 'filtered_empty'
+  | 'error';
+
 /** 검색 필터 */
 export interface SearchFilters {
   radius: RadiusOption;
   type: InstitutionFilter;
   hasBus: boolean | null;
-  hasVacancy: boolean | null; // 여유정원 있음
-  hasIndoorPlayground: boolean | null; // 실내놀이터
-  hasLargeSpace: boolean | null; // 넓은 공간 (1인당 5㎡ 이상)
-  hasModernBuilding: boolean | null; // 최신 건물 (2010년 이후)
+  hasVacancy: boolean | null;
+  hasIndoorPlayground: boolean | null;
+  hasLargeSpace: boolean | null;
+  hasModernBuilding: boolean | null;
 }
 
 /** 검색 스토어 상태 */
 interface SearchState {
-  // 위치 정보
   location: Coordinates | null;
   address: string;
-
-  // 검색 결과
   results: Kindergarten[];
   totalCount: number;
   isLoading: boolean;
   error: string | null;
-
-  // 필터 및 정렬
   filters: SearchFilters;
   sortBy: SortOption;
-
-  // UI 상태
   viewMode: ViewMode;
   selectedId: string | null;
-  detailId: string | null; // 상세 패널에 표시할 유치원 ID
+  detailId: string | null;
+  status: SearchStatus;
+  hasSearched: boolean;
 }
 
 /** 검색 스토어 액션 */
 interface SearchActions {
-  // 위치 관련
   setLocation: (location: Coordinates, address?: string) => void;
   setAddress: (address: string) => void;
+  clearQuery: () => void;
   clearLocation: () => void;
-
-  // 검색
+  clearSearchSession: () => void;
+  startLocationSearch: () => void;
   search: () => Promise<void>;
   setResults: (results: Kindergarten[], count: number) => void;
   setLoading: (isLoading: boolean) => void;
   setError: (error: string | null) => void;
-
-  // 필터
   setRadius: (radius: RadiusOption) => void;
   setType: (type: InstitutionFilter) => void;
   setHasBus: (hasBus: boolean | null) => void;
@@ -67,18 +69,13 @@ interface SearchActions {
   setHasIndoorPlayground: (hasIndoorPlayground: boolean | null) => void;
   setHasLargeSpace: (hasLargeSpace: boolean | null) => void;
   setHasModernBuilding: (hasModernBuilding: boolean | null) => void;
+  applyFilters: (updates: Partial<SearchFilters>) => void;
   resetFilters: () => void;
-
-  // 정렬
   setSortBy: (sortBy: SortOption) => void;
-
-  // UI
   setViewMode: (mode: ViewMode) => void;
   setSelectedId: (id: string | null) => void;
   setDetailId: (id: string | null) => void;
   getDetailKindergarten: () => Kindergarten | null;
-
-  // 유틸리티
   getFilteredAndSortedResults: () => Kindergarten[];
   reset: () => void;
 }
@@ -105,37 +102,181 @@ const initialState: SearchState = {
   viewMode: 'split',
   selectedId: null,
   detailId: null,
+  status: 'idle',
+  hasSearched: false,
 };
+
+function applyClientFilters(results: Kindergarten[], filters: SearchFilters): Kindergarten[] {
+  let filtered = results;
+
+  if (filters.type !== 'all') {
+    filtered = filtered.filter((kindergarten) => kindergarten.type === filters.type);
+  }
+
+  if (filters.hasBus !== null) {
+    filtered = filtered.filter((kindergarten) => kindergarten.hasBus === filters.hasBus);
+  }
+
+  if (filters.hasVacancy === true) {
+    filtered = filtered.filter(
+      (kindergarten) => kindergarten.capacity > kindergarten.currentCount
+    );
+  }
+
+  if (filters.hasIndoorPlayground === true) {
+    filtered = filtered.filter((kindergarten) => kindergarten.indoorPlaygroundArea > 0);
+  }
+
+  if (filters.hasLargeSpace === true) {
+    filtered = filtered.filter((kindergarten) => kindergarten.areaPerChild >= 5);
+  }
+
+  if (filters.hasModernBuilding === true) {
+    filtered = filtered.filter(
+      (kindergarten) =>
+        kindergarten.buildingYear !== null && kindergarten.buildingYear >= 2010
+    );
+  }
+
+  return filtered;
+}
+
+function sortResults(results: Kindergarten[], sortBy: SortOption): Kindergarten[] {
+  return results.toSorted((left, right) => {
+    switch (sortBy) {
+      case 'distance': {
+        const leftDistance = left.distance ?? Number.POSITIVE_INFINITY;
+        const rightDistance = right.distance ?? Number.POSITIVE_INFINITY;
+        return leftDistance - rightDistance;
+      }
+      case 'capacity':
+        return right.capacity - left.capacity;
+      case 'areaPerChild':
+        return right.areaPerChild - left.areaPerChild;
+      default:
+        return 0;
+    }
+  });
+}
+
+function deriveStatus(state: SearchState): SearchStatus {
+  if (state.error) {
+    return 'error';
+  }
+
+  if (state.status === 'locating' && state.location === null) {
+    return 'locating';
+  }
+
+  if (!state.hasSearched) {
+    return 'idle';
+  }
+
+  if (state.totalCount === 0) {
+    return 'empty';
+  }
+
+  const filteredCount = applyClientFilters(state.results, state.filters).length;
+  if (filteredCount === 0) {
+    return 'filtered_empty';
+  }
+
+  return 'results';
+}
+
+function updateDerivedState(
+  partial: Partial<SearchState>,
+  previous: SearchState
+): Partial<SearchState> {
+  const nextState: SearchState = {
+    ...previous,
+    ...partial,
+  };
+
+  return {
+    ...partial,
+    status: deriveStatus(nextState),
+  };
+}
 
 export const useSearchStore = create<SearchState & SearchActions>((set, get) => ({
   ...initialState,
 
-  // 위치 관련 액션
   setLocation: (location, address = '') => {
-    set({ location, address, error: null });
+    set((state) =>
+      updateDerivedState(
+        {
+          location,
+          address,
+          error: null,
+        },
+        state
+      )
+    );
   },
 
   setAddress: (address) => {
     set({ address });
   },
 
-  clearLocation: () => {
-    set({ location: null, address: '', results: [], totalCount: 0 });
+  clearQuery: () => {
+    set({ address: '' });
   },
 
-  // 검색 액션
+  clearLocation: () => {
+    set({
+      location: null,
+      address: '',
+      results: [],
+      totalCount: 0,
+      selectedId: null,
+      detailId: null,
+      hasSearched: false,
+      status: 'idle',
+      error: null,
+    });
+  },
+
+  clearSearchSession: () => {
+    set({
+      ...initialState,
+      filters: { ...DEFAULT_FILTERS },
+    });
+  },
+
+  startLocationSearch: () => {
+    set((state) => ({
+      ...state,
+      status: 'locating',
+      error: null,
+      isLoading: false,
+      selectedId: null,
+      detailId: null,
+    }));
+  },
+
   search: async () => {
     const { location, filters } = get();
 
     if (!location) {
-      set({ error: '위치 정보가 필요합니다.' });
+      set((state) =>
+        updateDerivedState(
+          {
+            error: '위치 정보가 필요합니다.',
+          },
+          state
+        )
+      );
       return;
     }
 
-    set({ isLoading: true, error: null });
+    set((state) => ({
+      ...state,
+      isLoading: true,
+      error: null,
+    }));
 
     try {
-      // kindergartenStore에서 데이터 로드 확인
       const kindergartenStore = useKindergartenStore.getState();
 
       if (!kindergartenStore.isLoaded) {
@@ -145,35 +286,67 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
       const allData = kindergartenStore.getAll();
 
       if (allData.length === 0) {
-        set({
-          error: kindergartenStore.error || '데이터를 로드할 수 없습니다.',
-          isLoading: false,
-        });
+        set((state) =>
+          updateDerivedState(
+            {
+              error: kindergartenStore.error || '데이터를 로드할 수 없습니다.',
+              isLoading: false,
+            },
+            state
+          )
+        );
         return;
       }
 
-      // 거리 계산 및 반경 필터링
-      // 원본 거리로 필터링 후 반올림된 거리를 사용 (경계값 문제 해결)
       const withDistance = allData.map((item) => transformWithRawDistance(item, location));
       const filtered = withDistance.filter(({ rawDistance }) => rawDistance <= filters.radius);
       const results: Kindergarten[] = filtered.map(({ kindergarten }) => kindergarten);
-      // 정렬은 getFilteredAndSortedResults()에서 처리
 
-      set({
-        results,
-        totalCount: results.length,
-        isLoading: false,
-        error: null,
-      });
+      set((state) =>
+        updateDerivedState(
+          {
+            results,
+            totalCount: results.length,
+            isLoading: false,
+            error: null,
+            hasSearched: true,
+            selectedId: results.some((item) => item.kindercode === state.selectedId)
+              ? state.selectedId
+              : null,
+            detailId: results.some((item) => item.kindercode === state.detailId)
+              ? state.detailId
+              : null,
+          },
+          state
+        )
+      );
     } catch (err) {
       const errorMessage =
         err instanceof Error ? err.message : '검색 중 오류가 발생했습니다.';
-      set({ error: errorMessage, isLoading: false });
+
+      set((state) =>
+        updateDerivedState(
+          {
+            error: errorMessage,
+            isLoading: false,
+          },
+          state
+        )
+      );
     }
   },
 
   setResults: (results, count) => {
-    set({ results, totalCount: count });
+    set((state) =>
+      updateDerivedState(
+        {
+          results,
+          totalCount: count,
+          hasSearched: true,
+        },
+        state
+      )
+    );
   },
 
   setLoading: (isLoading) => {
@@ -181,62 +354,120 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
   },
 
   setError: (error) => {
-    set({ error });
+    set((state) => updateDerivedState({ error }, state));
   },
 
-  // 필터 액션
   setRadius: (radius) => {
-    set((state) => ({
-      filters: { ...state.filters, radius },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, radius },
+        },
+        state
+      )
+    );
   },
 
   setType: (type) => {
-    set((state) => ({
-      filters: { ...state.filters, type },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, type },
+        },
+        state
+      )
+    );
   },
 
   setHasBus: (hasBus) => {
-    set((state) => ({
-      filters: { ...state.filters, hasBus },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, hasBus },
+        },
+        state
+      )
+    );
   },
 
   setHasVacancy: (hasVacancy) => {
-    set((state) => ({
-      filters: { ...state.filters, hasVacancy },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, hasVacancy },
+        },
+        state
+      )
+    );
   },
 
   setHasIndoorPlayground: (hasIndoorPlayground) => {
-    set((state) => ({
-      filters: { ...state.filters, hasIndoorPlayground },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, hasIndoorPlayground },
+        },
+        state
+      )
+    );
   },
 
   setHasLargeSpace: (hasLargeSpace) => {
-    set((state) => ({
-      filters: { ...state.filters, hasLargeSpace },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, hasLargeSpace },
+        },
+        state
+      )
+    );
   },
 
   setHasModernBuilding: (hasModernBuilding) => {
-    set((state) => ({
-      filters: { ...state.filters, hasModernBuilding },
-    }));
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, hasModernBuilding },
+        },
+        state
+      )
+    );
+  },
+
+  applyFilters: (updates) => {
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...state.filters, ...updates },
+        },
+        state
+      )
+    );
   },
 
   resetFilters: () => {
-    set({ filters: DEFAULT_FILTERS });
+    set((state) =>
+      updateDerivedState(
+        {
+          filters: { ...DEFAULT_FILTERS },
+          sortBy: 'distance',
+        },
+        state
+      )
+    );
   },
 
-  // 정렬 액션
   setSortBy: (sortBy) => {
-    set({ sortBy });
+    set((state) =>
+      updateDerivedState(
+        {
+          sortBy,
+        },
+        state
+      )
+    );
   },
 
-  // UI 액션
   setViewMode: (mode) => {
     set({ viewMode: mode });
   },
@@ -252,65 +483,14 @@ export const useSearchStore = create<SearchState & SearchActions>((set, get) => 
   getDetailKindergarten: () => {
     const { results, detailId } = get();
     if (!detailId) return null;
-    return results.find((k) => k.kindercode === detailId) ?? null;
+    return results.find((kindergarten) => kindergarten.kindercode === detailId) ?? null;
   },
 
-  // 필터링 및 정렬된 결과 반환
   getFilteredAndSortedResults: () => {
     const { results, filters, sortBy } = get();
-
-    // 클라이언트 측 필터링
-    let filtered = results;
-
-    // 유형 필터 (공립/사립)
-    if (filters.type !== 'all') {
-      filtered = filtered.filter((k) => k.type === filters.type);
-    }
-
-    if (filters.hasBus !== null) {
-      filtered = filtered.filter((k) => k.hasBus === filters.hasBus);
-    }
-
-    // 여유정원 필터 (capacity > currentCount)
-    if (filters.hasVacancy === true) {
-      filtered = filtered.filter((k) => k.capacity > k.currentCount);
-    }
-
-    // 실내놀이터 필터 (indoorPlaygroundArea > 0)
-    if (filters.hasIndoorPlayground === true) {
-      filtered = filtered.filter((k) => k.indoorPlaygroundArea > 0);
-    }
-
-    // 넓은 공간 필터 (areaPerChild >= 5)
-    if (filters.hasLargeSpace === true) {
-      filtered = filtered.filter((k) => k.areaPerChild >= 5);
-    }
-
-    // 최신 건물 필터 (buildingYear >= 2010)
-    if (filters.hasModernBuilding === true) {
-      filtered = filtered.filter(
-        (k) => k.buildingYear !== null && k.buildingYear >= 2010
-      );
-    }
-
-    // 정렬 (toSorted 사용 - 원본 배열 불변성 유지)
-    const sorted = filtered.toSorted((a, b) => {
-      switch (sortBy) {
-        case 'distance':
-          return a.distance - b.distance;
-        case 'capacity':
-          return b.capacity - a.capacity;
-        case 'areaPerChild':
-          return b.areaPerChild - a.areaPerChild;
-        default:
-          return 0;
-      }
-    });
-
-    return sorted;
+    return sortResults(applyClientFilters(results, filters), sortBy);
   },
 
-  // 리셋
   reset: () => {
     set(initialState);
   },

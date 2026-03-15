@@ -51,7 +51,7 @@ describe('ReviewLinkList', () => {
     });
 
     render(<ReviewLinkList kindergartenId="K999" />);
-    expect(screen.getByText('수집된 후기가 없습니다')).toBeInTheDocument();
+    expect(screen.getByText('아직 연결된 후기가 없습니다')).toBeInTheDocument();
   });
 
   it('should render review list when data exists', () => {
@@ -84,10 +84,15 @@ describe('ReviewLinkList', () => {
   });
 
   it('should show error message on error', async () => {
-    vi.spyOn(globalThis, 'fetch').mockResolvedValueOnce({
-      ok: false,
-      status: 500,
-    } as Response);
+    vi.spyOn(globalThis, 'fetch')
+      .mockResolvedValueOnce({
+        ok: false,
+        status: 503,
+      } as Response)
+      .mockResolvedValueOnce({
+        ok: false,
+        status: 500,
+      } as Response);
 
     useReviewStore.setState({
       data: null,

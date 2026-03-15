@@ -1,13 +1,24 @@
 'use client';
 
 /* eslint-disable react-hooks/incompatible-library -- TanStack Virtual은 React Compiler와 호환되지 않음 */
-import { useCallback, useMemo, useRef, useEffect } from 'react';
+import { useCallback, useRef, useEffect } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
-import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
+import {
+  Heart,
+  ChevronDown,
+  Loader2,
+  SearchX,
+  MapPin,
+  Compass,
+  Search,
+  SlidersHorizontal,
+} from 'lucide-react';
 import { useSearchStore, useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
+import { formatDistanceLabel } from '@/lib/utils';
+import { trackUXEvent } from '@/lib/analytics';
 
 /** 기관 유형별 스타일 */
 const TYPE_STYLES = {
@@ -29,25 +40,35 @@ type MobileViewMode = 'list' | 'map';
 interface KindergartenListProps {
   mobileView: MobileViewMode;
   onToggleMobileView: () => void;
+  onRequestCurrentLocation: () => void | Promise<void>;
   /** 데스크탑에서 패널 너비 (px) */
   panelWidth?: number;
 }
 
-export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }: KindergartenListProps) {
+export function KindergartenList({
+  mobileView,
+  onToggleMobileView,
+  onRequestCurrentLocation,
+  panelWidth,
+}: KindergartenListProps) {
   const {
     address,
+    location,
+    status,
     filters,
     isLoading,
     error,
     selectedId,
     sortBy,
     totalCount,
-    results: storeResults,
+    hasSearched,
     getFilteredAndSortedResults,
     setDetailId,
     getDetailKindergarten,
     setSortBy,
     setRadius,
+    resetFilters,
+    clearSearchSession,
     search,
   } = useSearchStore();
 
@@ -67,7 +88,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
 
   // Memoize filtered and sorted results to avoid recalculation on every render
   // storeResults를 의존성에 추가하여 검색 결과 변경 시 재계산
-  const results = useMemo(() => getFilteredAndSortedResults(), [getFilteredAndSortedResults, storeResults, filters, sortBy]);
+  const results = getFilteredAndSortedResults();
   const detailKindergarten = getDetailKindergarten();
 
   // Scroll container ref for virtualization
@@ -149,6 +170,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   // 카드 클릭 핸들러 (상세 보기)
   const handleCardClick = useCallback(
     (id: string) => {
+      trackUXEvent('search_card_opened', { kindercode: id });
       setDetailId(id);
     },
     [setDetailId]
@@ -161,6 +183,8 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
 
   // 모바일에서 지도 뷰일 때는 리스트 숨김
   const isHiddenOnMobile = mobileView === 'map';
+  const showSegmentedViewToggle = hasSearched || location !== null;
+  const hasVisibleResults = !isLoading && results.length > 0;
 
   return (
     <aside
@@ -171,35 +195,74 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
       id="listPanel"
     >
       {/* List Header */}
-      <div className="px-5 py-4 border-b border-gray-100 flex justify-between items-end bg-white">
-        <div>
-          <h1 className="text-lg font-bold text-gray-900">
-            검색 결과 <span className="text-emerald-600">{results.length}</span>건
-          </h1>
-          <p className="text-xs text-gray-500 mt-1">
-            {address || '위치를 선택해주세요'} 기준 {filters.radius}km 이내
-            {/* 필터로 인해 결과가 줄어든 경우 안내 표시 */}
-            {totalCount > results.length && (
-              <span className="ml-2 text-amber-600">
-                (전체 {totalCount}개 중 필터 적용)
-              </span>
-            )}
-          </p>
+      <div className="border-b border-gray-100 bg-white px-5 py-4">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-600">
+              Search Flow
+            </p>
+            <h1 className="mt-1 text-lg font-bold text-gray-900">
+              {status === 'idle' ? '유치원 검색을 시작해보세요' : (
+                <>
+                  검색 결과 <span className="text-emerald-600">{results.length}</span>건
+                </>
+              )}
+            </h1>
+            <p className="mt-1 text-xs text-gray-500">
+              {status === 'idle'
+                ? '현재 위치 또는 주소를 선택하면 주변 기관을 바로 비교할 수 있어요.'
+                : `${address || '선택한 위치'} 기준 ${filters.radius}km 이내`}
+              {totalCount > results.length && status === 'filtered_empty' ? (
+                <span className="ml-2 text-amber-600">(전체 {totalCount}개에서 필터 적용 중)</span>
+              ) : null}
+            </p>
+          </div>
+          {status === 'results' || status === 'filtered_empty' ? (
+            <div className="relative">
+              <select
+                value={sortBy}
+                onChange={handleSortChange}
+                className="appearance-none rounded-xl border border-gray-200 bg-gray-50 py-2 pl-3 pr-8 text-xs text-gray-700 hover:border-gray-300 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              >
+                {(Object.entries(SORT_LABELS) as [SortOption, string][]).map(([value, label]) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-3 w-3 -translate-y-1/2 text-gray-400" />
+            </div>
+          ) : null}
         </div>
-        <div className="relative">
-          <select
-            value={sortBy}
-            onChange={handleSortChange}
-            className="appearance-none bg-gray-50 border border-gray-200 rounded-md pl-3 pr-7 py-1.5 text-xs text-gray-700 cursor-pointer hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
-          >
-            {(Object.entries(SORT_LABELS) as [SortOption, string][]).map(([value, label]) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-          <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400 pointer-events-none" />
-        </div>
+
+        {showSegmentedViewToggle ? (
+          <div className="mt-4 md:hidden">
+            <div className="grid grid-cols-2 rounded-2xl bg-gray-100 p-1">
+              <button
+                type="button"
+                onClick={() => mobileView === 'map' && onToggleMobileView()}
+                className={`rounded-xl px-3 py-2 text-sm font-semibold transition-colors ${
+                  mobileView === 'list'
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-500'
+                }`}
+              >
+                목록
+              </button>
+              <button
+                type="button"
+                onClick={() => mobileView === 'list' && onToggleMobileView()}
+                className={`rounded-xl px-3 py-2 text-sm font-semibold transition-colors ${
+                  mobileView === 'map'
+                    ? 'bg-white text-gray-900 shadow-sm'
+                    : 'text-gray-500'
+                }`}
+              >
+                지도
+              </button>
+            </div>
+          </div>
+        ) : null}
       </div>
 
       {/* List Content */}
@@ -207,8 +270,29 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
         ref={scrollContainerRef}
         className="flex-1 overflow-y-auto p-4 bg-gray-50"
       >
+        {status === 'idle' && (
+          <SearchStartState
+            onRequestCurrentLocation={onRequestCurrentLocation}
+            onActivateManualSearch={() =>
+              document.getElementById('kindergarten-search-input')?.focus()
+            }
+          />
+        )}
+
+        {status === 'locating' && (
+          <div className="rounded-[28px] border border-emerald-100 bg-white p-6 text-center shadow-[0_12px_30px_rgba(16,185,129,0.08)]">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-50">
+              <Loader2 className="h-6 w-6 animate-spin text-emerald-600" />
+            </div>
+            <h2 className="mt-4 text-lg font-bold text-gray-900">현재 위치를 확인하고 있어요</h2>
+            <p className="mt-2 text-sm leading-6 text-gray-500">
+              위치 권한을 허용하면 주변 유치원을 거리순으로 바로 보여드립니다.
+            </p>
+          </div>
+        )}
+
         {/* 로딩 상태 */}
-        {isLoading && (
+        {isLoading && status !== 'locating' && (
           <div className="flex flex-col items-center justify-center py-12 text-gray-500">
             <Loader2 className="w-8 h-8 animate-spin mb-3" />
             <p className="text-sm">검색 중...</p>
@@ -216,18 +300,27 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
         )}
 
         {/* 에러 상태 */}
-        {!isLoading && error && (
-          <div className="flex flex-col items-center justify-center py-12">
-            <p className="text-red-500 text-sm">{error}</p>
-          </div>
+        {!isLoading && status === 'error' && (
+          <SearchErrorState
+            message={error ?? '검색 중 오류가 발생했습니다.'}
+            canRetryLocation={!location}
+            onRetryLocation={onRequestCurrentLocation}
+            onActivateManualSearch={() =>
+              document.getElementById('kindergarten-search-input')?.focus()
+            }
+            onResetSession={clearSearchSession}
+          />
         )}
 
         {/* 빈 상태 */}
-        {!isLoading && !error && results.length === 0 && (
+        {!isLoading && status === 'empty' && (
           <div className="flex flex-col items-center justify-center py-12 text-center">
             <SearchX className="h-12 w-12 text-gray-300 mb-4" />
-            <p className="text-gray-500 mb-4">
-              주변 {filters.radius}km 내에 기관이 없습니다.
+            <p className="mb-2 text-base font-semibold text-gray-900">
+              주변 {filters.radius}km 내에 기관이 없습니다
+            </p>
+            <p className="mb-4 text-sm text-gray-500">
+              반경을 넓히거나 다른 위치로 검색해보세요.
             </p>
 
             {filters.radius < 5 && (
@@ -255,8 +348,37 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
           </div>
         )}
 
+        {!isLoading && status === 'filtered_empty' && (
+          <div className="rounded-[28px] border border-amber-100 bg-white p-6 text-center shadow-[0_12px_30px_rgba(245,158,11,0.08)]">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-amber-50">
+              <SlidersHorizontal className="h-6 w-6 text-amber-500" />
+            </div>
+            <h2 className="mt-4 text-lg font-bold text-gray-900">필터를 조금만 풀면 더 보여드릴 수 있어요</h2>
+            <p className="mt-2 text-sm leading-6 text-gray-500">
+              현재 조건으로는 보이지 않지만, 반경 {filters.radius}km 안에는
+              <span className="font-semibold text-amber-700"> {totalCount}개 기관</span>이 있어요.
+            </p>
+            <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
+              <button
+                type="button"
+                onClick={resetFilters}
+                className="rounded-2xl bg-amber-500 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-amber-600"
+              >
+                필터 초기화
+              </button>
+              <button
+                type="button"
+                onClick={() => document.getElementById('kindergarten-search-input')?.focus()}
+                className="rounded-2xl border border-gray-200 bg-white px-5 py-3 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+              >
+                검색어 바꾸기
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* 결과 목록 - Virtualized */}
-        {!isLoading && results.length > 0 && (
+        {hasVisibleResults && (
           <div
             style={{
               height: `${rowVirtualizer.getTotalSize()}px`,
@@ -307,18 +429,99 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
           canAddToCompare={canAdd()}
         />
       )}
-
-      {/* 모바일 지도 탭 - 우측 중앙 플로팅 탭 (min 44px touch target) */}
-      {mobileView === 'list' && (
-        <button
-          onClick={onToggleMobileView}
-          className="md:hidden fixed right-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pl-3 pr-3 min-h-[44px] rounded-l-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-r-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
-        >
-          <MapPin className="w-4 h-4 text-emerald-600" />
-          <span className="text-[11px] text-gray-600">지도</span>
-        </button>
-      )}
     </aside>
+  );
+}
+
+function SearchStartState({
+  onRequestCurrentLocation,
+  onActivateManualSearch,
+}: {
+  onRequestCurrentLocation: () => void | Promise<void>;
+  onActivateManualSearch: () => void;
+}) {
+  return (
+    <div className="rounded-[32px] border border-emerald-100 bg-white p-6 shadow-[0_18px_40px_rgba(16,185,129,0.08)]">
+      <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+        <Compass className="h-3.5 w-3.5" />
+        시작하기
+      </div>
+      <h2 className="mt-4 text-2xl font-bold leading-tight text-gray-900">
+        현재 위치나 주소로
+        <br />
+        가까운 유치원을 찾아보세요
+      </h2>
+      <p className="mt-3 text-sm leading-6 text-gray-500">
+        첫 검색만 시작하면 거리, 정원, 후기, 통학 여부까지 한 화면에서 비교할 수 있습니다.
+      </p>
+      <div className="mt-6 space-y-3">
+        <button
+          type="button"
+          onClick={() => void onRequestCurrentLocation()}
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-5 py-4 text-sm font-bold text-white shadow-lg shadow-emerald-200 transition-transform hover:-translate-y-0.5 hover:bg-emerald-600"
+        >
+          <MapPin className="h-4 w-4" />
+          현재 위치로 검색
+        </button>
+        <button
+          type="button"
+          onClick={onActivateManualSearch}
+          className="flex w-full items-center justify-center gap-2 rounded-2xl border border-gray-200 bg-white px-5 py-4 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+        >
+          <Search className="h-4 w-4" />
+          주소 또는 기관명으로 검색
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function SearchErrorState({
+  message,
+  canRetryLocation,
+  onRetryLocation,
+  onActivateManualSearch,
+  onResetSession,
+}: {
+  message: string;
+  canRetryLocation: boolean;
+  onRetryLocation: () => void | Promise<void>;
+  onActivateManualSearch: () => void;
+  onResetSession: () => void;
+}) {
+  return (
+    <div className="rounded-[28px] border border-red-100 bg-white p-6 text-center shadow-[0_12px_30px_rgba(239,68,68,0.08)]">
+      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-50">
+        <SearchX className="h-6 w-6 text-red-500" />
+      </div>
+      <h2 className="mt-4 text-lg font-bold text-gray-900">검색을 바로 시작하지 못했어요</h2>
+      <p className="mt-2 text-sm leading-6 text-gray-500">{message}</p>
+      <div className="mt-5 flex flex-col gap-2">
+        {canRetryLocation ? (
+          <button
+            type="button"
+            onClick={() => void onRetryLocation()}
+            className="rounded-2xl bg-emerald-500 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-emerald-600"
+          >
+            현재 위치 다시 시도
+          </button>
+        ) : null}
+        <button
+          type="button"
+          onClick={onActivateManualSearch}
+          className="rounded-2xl border border-gray-200 bg-white px-5 py-3 text-sm font-semibold text-gray-700 transition-colors hover:bg-gray-50"
+        >
+          주소로 검색하기
+        </button>
+        <button
+          type="button"
+          onClick={onResetSession}
+          className="rounded-2xl px-5 py-3 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-100"
+        >
+          검색 상태 초기화
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -348,6 +551,7 @@ function KindergartenCard({
   onFavoriteToggle,
 }: KindergartenCardProps) {
   const typeStyle = TYPE_STYLES[kindergarten.type];
+  const distanceLabel = formatDistanceLabel(kindergarten.distance);
 
   return (
     <div
@@ -390,11 +594,15 @@ function KindergartenCard({
 
         {/* 주요 정보 */}
         <div className="flex items-center gap-3 text-sm text-gray-500 font-medium">
-          <div className="flex items-center gap-1">
-            <MapPin className="w-3.5 h-3.5 text-gray-400" />
-            <span>{kindergarten.distance.toFixed(1)}km</span>
-          </div>
-          <div className="w-0.5 h-3 bg-gray-200" />
+          {distanceLabel ? (
+            <>
+              <div className="flex items-center gap-1">
+                <MapPin className="w-3.5 h-3.5 text-gray-400" />
+                <span>{distanceLabel}</span>
+              </div>
+              <div className="w-0.5 h-3 bg-gray-200" />
+            </>
+          ) : null}
           <span>정원 {kindergarten.capacity}명</span>
           <div className="w-0.5 h-3 bg-gray-200" />
           <span>현원 {kindergarten.currentCount}명</span>

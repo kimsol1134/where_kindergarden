@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Users,
   Palette,
@@ -17,10 +17,12 @@ import {
   School,
   type LucideIcon,
 } from 'lucide-react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { QUESTIONS, RESULTS, calculateResult, ResultType } from '../_lib/testData';
 import { isNative } from '@/lib/utils/platform';
 import { Share } from '@capacitor/share';
+import { ToastMessage } from '@/components/common/ToastMessage';
+import { trackUXEvent } from '@/lib/analytics';
 
 type TestPhase = 'intro' | 'questions' | 'result';
 
@@ -93,15 +95,25 @@ function getRecommendationIcon(text: string): LucideIcon {
   return Star;
 }
 
+const RESULT_SEARCH_PATHS: Record<ResultType['id'], string> = {
+  A: '/search?hasBus=1&sort=capacity',
+  B: '/search?type=private&hasLargeSpace=1&sort=areaPerChild',
+  C: '/search?hasModernBuilding=1&sort=capacity',
+  D: '/search?hasVacancy=1',
+};
+
 export function TestFlow() {
+  const router = useRouter();
   const [phase, setPhase] = useState<TestPhase>('intro');
   const [currentStep, setCurrentStep] = useState(1);
   const [answers, setAnswers] = useState('');
   const [result, setResult] = useState<ResultType | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const totalQuestions = QUESTIONS.length;
 
   const handleStart = () => {
+    trackUXEvent('test_started');
     setAnswers('');
     setCurrentStep(1);
     setPhase('questions');
@@ -141,6 +153,7 @@ export function TestFlow() {
           url: shareUrl,
           dialogTitle: '테스트 결과 공유',
         });
+        setToastMessage('공유 시트를 열었어요.');
       } catch {
         // 사용자가 공유 취소한 경우
       }
@@ -189,8 +202,8 @@ export function TestFlow() {
         ],
       });
     } else {
-      navigator.clipboard.writeText(shareUrl);
-      alert('링크가 복사되었습니다!');
+      await navigator.clipboard.writeText(shareUrl);
+      setToastMessage('테스트 링크를 복사했어요.');
     }
   };
 
@@ -198,91 +211,113 @@ export function TestFlow() {
     const shareUrl = `${window.location.origin}/test/`;
     try {
       await navigator.clipboard.writeText(shareUrl);
-      alert('링크가 복사되었습니다!');
+      setToastMessage('테스트 링크를 복사했어요.');
     } catch {
-      alert('링크 복사에 실패했습니다.');
+      setToastMessage('링크 복사에 실패했습니다.');
     }
   };
+
+  const handleMoveToRecommendedSearch = () => {
+    if (!result) return;
+
+    trackUXEvent('test_to_search', { result: result.id });
+    router.push(RESULT_SEARCH_PATHS[result.id]);
+  };
+
+  useEffect(() => {
+    if (!toastMessage) return;
+
+    const timer = window.setTimeout(() => setToastMessage(null), 2200);
+    return () => window.clearTimeout(timer);
+  }, [toastMessage]);
+
+  const toast = toastMessage ? (
+    <ToastMessage
+      message={toastMessage}
+      tone={toastMessage.includes('실패') ? 'error' : 'success'}
+      onClose={() => setToastMessage(null)}
+    />
+  ) : null;
 
   // ===== 인트로 화면 =====
   if (phase === 'intro') {
     return (
-      <div className="space-y-8">
-        {/* 히어로 섹션 */}
-        <div className="text-center pt-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-6">
-            <BookOpen className="w-4 h-4" />
-            아동심리 전문가 연구 기반
+      <>
+        {toast}
+        <div className="space-y-6">
+          {/* 히어로 섹션 */}
+          <div className="text-center pt-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-6">
+              <BookOpen className="w-4 h-4" />
+              아동심리 전문가 연구 기반
+            </div>
+
+            <h1 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              우리 아이는
+              <br />
+              <span className="text-emerald-500">어떤 성향</span>일까?
+            </h1>
+
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              7가지 질문으로 알아보는
+              <br />
+              아이에게 맞는 유치원 환경 추천
+            </p>
           </div>
 
-          <h1 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
-            우리 아이는
-            <br />
-            <span className="text-emerald-500">어떤 성향</span>일까?
-          </h1>
+          <button
+            onClick={handleStart}
+            className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            테스트 시작하기
+          </button>
 
-          <p className="text-gray-600 mb-8 leading-relaxed">
-            7가지 질문으로 알아보는
-            <br />
-            아이에게 맞는 유치원 환경 추천
+          <div className="grid grid-cols-2 gap-3">
+            {([
+              { id: 'A' as const, name: '사교형 탐험가', color: 'from-amber-200 to-orange-300' },
+              { id: 'B' as const, name: '창의형 예술가', color: 'from-purple-200 to-pink-300' },
+              { id: 'C' as const, name: '학습형 연구자', color: 'from-blue-200 to-indigo-300' },
+              { id: 'D' as const, name: '안정형 행복이', color: 'from-emerald-200 to-teal-300' },
+            ]).map((type) => {
+              const TypeIcon = typeIcons[type.id];
+              return (
+                <div
+                  key={type.id}
+                  className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                >
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center mb-3 shadow-lg`}>
+                    <TypeIcon className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-sm font-medium text-gray-700">{type.name}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-5 border border-gray-100">
+            <div className="flex items-center justify-around text-center">
+              <div>
+                <p className="text-2xl font-bold text-emerald-600">7</p>
+                <p className="text-xs text-gray-500 mt-1">질문</p>
+              </div>
+              <div className="w-px h-10 bg-gray-200" />
+              <div>
+                <p className="text-2xl font-bold text-emerald-600">1분</p>
+                <p className="text-xs text-gray-500 mt-1">소요시간</p>
+              </div>
+              <div className="w-px h-10 bg-gray-200" />
+              <div>
+                <p className="text-2xl font-bold text-emerald-600">4</p>
+                <p className="text-xs text-gray-500 mt-1">유형</p>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-sm text-gray-400">
+            지금까지 <span className="font-semibold text-emerald-600">2,847명</span>이 참여했어요
           </p>
         </div>
-
-        {/* 4가지 유형 미리보기 카드 */}
-        <div className="grid grid-cols-2 gap-3">
-          {([
-            { id: 'A' as const, name: '사교형 탐험가', color: 'from-amber-200 to-orange-300' },
-            { id: 'B' as const, name: '창의형 예술가', color: 'from-purple-200 to-pink-300' },
-            { id: 'C' as const, name: '학습형 연구자', color: 'from-blue-200 to-indigo-300' },
-            { id: 'D' as const, name: '안정형 행복이', color: 'from-emerald-200 to-teal-300' },
-          ]).map((type) => {
-            const TypeIcon = typeIcons[type.id];
-            return (
-              <div
-                key={type.id}
-                className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center mb-3 shadow-lg`}>
-                  <TypeIcon className="w-6 h-6 text-white" />
-                </div>
-                <p className="text-sm font-medium text-gray-700">{type.name}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* 테스트 정보 */}
-        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-5 border border-gray-100">
-          <div className="flex items-center justify-around text-center">
-            <div>
-              <p className="text-2xl font-bold text-emerald-600">7</p>
-              <p className="text-xs text-gray-500 mt-1">질문</p>
-            </div>
-            <div className="w-px h-10 bg-gray-200" />
-            <div>
-              <p className="text-2xl font-bold text-emerald-600">1분</p>
-              <p className="text-xs text-gray-500 mt-1">소요시간</p>
-            </div>
-            <div className="w-px h-10 bg-gray-200" />
-            <div>
-              <p className="text-2xl font-bold text-emerald-600">4</p>
-              <p className="text-xs text-gray-500 mt-1">유형</p>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA 버튼 */}
-        <button
-          onClick={handleStart}
-          className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-        >
-          테스트 시작하기
-        </button>
-
-        <p className="text-center text-sm text-gray-400">
-          지금까지 <span className="font-semibold text-emerald-600">2,847명</span>이 참여했어요
-        </p>
-      </div>
+      </>
     );
   }
 
@@ -292,7 +327,9 @@ export function TestFlow() {
     const progress = (currentStep / totalQuestions) * 100;
 
     return (
-      <div className="space-y-6">
+      <>
+        {toast}
+        <div className="space-y-6">
         {/* 프로그레스 바 */}
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-gray-100">
           <div className="flex justify-between items-center mb-3">
@@ -355,7 +392,8 @@ export function TestFlow() {
         <p className="text-center text-sm text-gray-400">
           직감적으로 선택해 주세요
         </p>
-      </div>
+        </div>
+      </>
     );
   }
 
@@ -369,7 +407,9 @@ export function TestFlow() {
     const CautionMatchIcon = typeIcons[cautionMatch.id];
 
     return (
-      <div className="space-y-8">
+      <>
+        {toast}
+        <div className="space-y-8">
         {/* 결과 메인 카드 */}
         <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100">
           {/* 그라데이션 헤더 - 파스텔 톤 + 아이콘 */}
@@ -461,6 +501,14 @@ export function TestFlow() {
 
         {/* 공유 버튼 */}
         <div className="space-y-3">
+          <button
+            onClick={handleMoveToRecommendedSearch}
+            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <School className="w-5 h-5" />
+            추천 조건으로 기관 보기
+          </button>
+
           <div className="grid grid-cols-2 gap-3">
             <button
               onClick={handleShare}
@@ -485,29 +533,22 @@ export function TestFlow() {
             다시 테스트하기
           </button>
 
-          {isNative() ? (
-            <Link
-              href="/search"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <School className="w-5 h-5" />
-              유치원 찾아보기
-            </Link>
-          ) : (
+          {!isNative() ? (
             <a
               href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
+              className="flex items-center justify-center gap-2 w-full bg-white border-2 border-emerald-100 text-emerald-700 font-semibold py-4 px-4 rounded-xl transition-all hover:bg-emerald-50 hover:scale-[1.02] active:scale-[0.98]"
             >
               <School className="w-5 h-5" />
-              앱에서 유치원 찾아보기
+              앱으로 열기
             </a>
-          )}
+          ) : null}
         </div>
-      </div>
+        </div>
+      </>
     );
   }
 
-  return null;
+  return toast;
 }

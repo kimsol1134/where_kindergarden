@@ -71,6 +71,9 @@ export function ReviewLinkList({ kindergartenId }: ReviewLinkListProps) {
   return (
     <>
       <div className="space-y-3 p-4">
+        <div className="rounded-2xl border border-gray-100 bg-white px-4 py-3 text-xs leading-5 text-gray-500 shadow-sm">
+          후기는 공개된 웹 링크만 노출되며, 삭제 또는 추가 제안은 검토 후 반영됩니다.
+        </div>
         {sortedReviews.map((review) => (
           <ReviewLinkCard 
             key={review.id} 
@@ -82,9 +85,9 @@ export function ReviewLinkList({ kindergartenId }: ReviewLinkListProps) {
         {/* Add Suggestion Button */}
         <button
           onClick={() => setIsAddModalOpen(true)}
-          className="w-full py-3 px-4 border-2 border-dashed border-emerald-200 hover:border-emerald-400 rounded-xl text-emerald-600 hover:text-emerald-700 font-medium text-sm flex items-center justify-center gap-2 transition-colors bg-emerald-50/50 hover:bg-emerald-50"
+          className="flex w-full items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-emerald-200 bg-emerald-50/60 px-4 py-3 text-sm font-semibold text-emerald-600 transition-colors hover:border-emerald-400 hover:bg-emerald-50 hover:text-emerald-700"
         >
-          <Plus className="w-4 h-4" />
+          <Plus className="h-4 w-4" />
           후기 추가 제안하기
         </button>
       </div>

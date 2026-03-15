@@ -1,104 +1,84 @@
 'use client';
 
-import { useEffect, useState, useCallback, Suspense } from 'react';
-import { X } from 'lucide-react';
+import { useEffect, useCallback, useState, Suspense } from 'react';
 import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { PanelResizer } from '@/components/search/PanelResizer';
 import { useSearchStore, useCompareStore } from '@/stores';
-// Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
+import { trackUXEvent } from '@/lib/analytics';
 
-/** 패널 너비 제한 (px) */
 const PANEL_MIN_WIDTH = 320;
 const PANEL_MAX_WIDTH = 700;
 const PANEL_DEFAULT_WIDTH = 450;
 
-/** 모바일 뷰 모드 타입 */
 type MobileViewMode = 'list' | 'map';
 
 function SearchPageContent() {
-  const { location, setLocation, search, isLoading, error, setError } = useSearchStore();
+  const {
+    location,
+    status,
+    detailId,
+    setLocation,
+    setError,
+    search,
+    startLocationSearch,
+    viewMode,
+    setViewMode,
+  } = useSearchStore();
   const { items } = useCompareStore();
   const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
 
-  // 모바일에서 리스트/지도 뷰 전환 상태
-  const [mobileView, setMobileView] = useState<MobileViewMode>('list');
+  const mobileView: MobileViewMode = viewMode === 'map' ? 'map' : 'list';
 
-  // 데스크탑에서 패널 너비 상태
   const [panelWidth, setPanelWidth] = useState(PANEL_DEFAULT_WIDTH);
 
-  // Toast visibility and animation state
-  const [isToastVisible, setIsToastVisible] = useState(false);
-  const [isToastFading, setIsToastFading] = useState(false);
+  const handleCurrentLocationSearch = useCallback(async () => {
+    startLocationSearch();
 
-  // Handle toast visibility based on error state
-  useEffect(() => {
-    if (error) {
-      setIsToastVisible(true);
-      setIsToastFading(false);
+    try {
+      const coords = await getCurrentPosition();
+      setLocation(coords);
+      setViewMode('list');
+      trackUXEvent('search_started', { source: 'current_location' });
+      await search();
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : '위치 정보를 가져오지 못했습니다. 주소로 검색해보세요.';
 
-      // Auto-dismiss after 5 seconds
-      const fadeTimer = setTimeout(() => {
-        setIsToastFading(true);
-      }, 4700); // Start fade 300ms before hide
-
-      const hideTimer = setTimeout(() => {
-        setIsToastVisible(false);
-        setError(null);
-      }, 5000);
-
-      return () => {
-        clearTimeout(fadeTimer);
-        clearTimeout(hideTimer);
-      };
+      setError(message);
     }
-  }, [error, setError]);
+  }, [getCurrentPosition, search, setError, setLocation, setViewMode, startLocationSearch]);
 
-  // Manual toast dismiss
-  const handleDismissToast = useCallback(() => {
-    setIsToastFading(true);
-    setTimeout(() => {
-      setIsToastVisible(false);
-      setError(null);
-    }, 300);
-  }, [setError]);
+  const handleToggleMobileView = useCallback(() => {
+    setViewMode(mobileView === 'list' ? 'map' : 'list');
+  }, [mobileView, setViewMode]);
 
-  // mode=location 파라미터가 있으면 현재 위치로 검색
   useEffect(() => {
     const mode = getSearchMode();
 
-    if (mode === 'location' && !location) {
-      getCurrentPosition()
-        .then((coords) => {
-          setLocation(coords);
-          // 검색은 useURLSync에서 처리됨
-        })
-        .catch(() => {
-          // 에러는 useGeolocation 내부에서 처리됨
-        });
+    if (mode === 'location' && !location && status === 'idle') {
+      void handleCurrentLocationSearch();
     }
-  }, [getSearchMode, location, getCurrentPosition, setLocation]);
-
-  // location이 설정되면 검색 실행 (URL에서 복원된 경우 제외)
-  useEffect(() => {
-    if (location && !isLoading) {
-      search();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location?.lat, location?.lng]);
+  }, [getSearchMode, handleCurrentLocationSearch, location, status]);
 
   return (
-    <div className="bg-gray-50 text-gray-800 flex flex-col h-screen">
-      <SearchHeader />
-      <main className="flex-1 flex overflow-hidden relative">
+    <div className="flex h-screen flex-col bg-gray-50 text-gray-800">
+      <SearchHeader
+        isLocating={status === 'locating'}
+        onRequestCurrentLocation={handleCurrentLocationSearch}
+      />
+      <main className="relative flex flex-1 overflow-hidden">
         <KindergartenList
           mobileView={mobileView}
-          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+          onToggleMobileView={handleToggleMobileView}
+          onRequestCurrentLocation={handleCurrentLocationSearch}
           panelWidth={panelWidth}
         />
         <PanelResizer
@@ -107,30 +87,9 @@ function SearchPageContent() {
           maxWidth={PANEL_MAX_WIDTH}
           initialWidth={panelWidth}
         />
-        <MapView
-          mobileView={mobileView}
-          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
-        />
+        <MapView />
       </main>
-      {items.length > 0 && <CompareFloatingBar />}
-
-      {/* 전역 에러 토스트 - Auto-dismiss after 5s with fade animation */}
-      {isToastVisible && (
-        <div
-          className={`fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-3 transition-opacity duration-300 ${
-            isToastFading ? 'opacity-0' : 'opacity-100'
-          }`}
-        >
-          <span>{error}</span>
-          <button
-            onClick={handleDismissToast}
-            className="min-w-[44px] min-h-[44px] -mr-2 flex items-center justify-center hover:bg-red-600 rounded-full transition-colors"
-            aria-label="닫기"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-      )}
+      {items.length > 0 && !detailId ? <CompareFloatingBar /> : null}
     </div>
   );
 }
@@ -145,38 +104,35 @@ export default function SearchPage() {
 
 function SearchPageSkeleton() {
   return (
-    <div className="bg-gray-50 text-gray-800 flex flex-col h-screen">
-      {/* Header Skeleton */}
-      <header className="bg-white border-b border-gray-200 z-30 flex-none">
-        <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
-          <div className="w-8 h-8 bg-gray-200 rounded-lg animate-pulse" />
-          <div className="flex-1 max-w-xl h-10 bg-gray-200 rounded-full animate-pulse" />
-          <div className="w-20 h-8 bg-gray-200 rounded-lg animate-pulse" />
+    <div className="flex h-screen flex-col bg-gray-50 text-gray-800">
+      <header className="flex-none border-b border-gray-200 bg-white z-30">
+        <div className="mx-auto flex h-16 max-w-[1920px] items-center justify-between gap-4 px-4">
+          <div className="h-8 w-8 animate-pulse rounded-lg bg-gray-200" />
+          <div className="h-10 max-w-xl flex-1 animate-pulse rounded-full bg-gray-200" />
+          <div className="h-8 w-10 animate-pulse rounded-lg bg-gray-200" />
         </div>
       </header>
-      <main className="flex-1 flex overflow-hidden relative">
-        {/* List Skeleton */}
-        <aside className="w-full md:w-[450px] lg:w-[500px] bg-white flex flex-col border-r border-gray-200 z-20">
-          <div className="px-5 py-4 border-b border-gray-100">
-            <div className="h-6 w-32 bg-gray-200 rounded animate-pulse" />
+      <main className="relative flex flex-1 overflow-hidden">
+        <aside className="z-20 flex w-full flex-col border-r border-gray-200 bg-white md:w-[450px] lg:w-[500px]">
+          <div className="border-b border-gray-100 px-5 py-4">
+            <div className="h-6 w-32 animate-pulse rounded bg-gray-200" />
           </div>
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl p-4 border border-gray-200">
+          <div className="flex-1 space-y-4 overflow-y-auto bg-gray-50 p-4">
+            {[1, 2, 3].map((item) => (
+              <div key={item} className="rounded-xl border border-gray-200 bg-white p-4">
                 <div className="flex gap-4">
-                  <div className="w-20 h-20 rounded-lg bg-gray-200 animate-pulse" />
+                  <div className="h-20 w-20 animate-pulse rounded-lg bg-gray-200" />
                   <div className="flex-1 space-y-2">
-                    <div className="h-4 w-24 bg-gray-200 rounded animate-pulse" />
-                    <div className="h-5 w-32 bg-gray-200 rounded animate-pulse" />
-                    <div className="h-3 w-40 bg-gray-200 rounded animate-pulse" />
+                    <div className="h-4 w-24 animate-pulse rounded bg-gray-200" />
+                    <div className="h-5 w-32 animate-pulse rounded bg-gray-200" />
+                    <div className="h-3 w-40 animate-pulse rounded bg-gray-200" />
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </aside>
-        {/* Map Skeleton */}
-        <div className="flex-1 bg-gray-200 animate-pulse" />
+        <div className="flex-1 animate-pulse bg-gray-200" />
       </main>
     </div>
   );

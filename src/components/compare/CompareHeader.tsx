@@ -1,16 +1,27 @@
 'use client';
 
-import { useState } from 'react';
-import { ArrowLeft, Share2, Link2, MessageCircle, Check } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowLeft, Share2, Link2, MessageCircle } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useCompareStore } from '@/stores';
+import type { Coordinates } from '@/types';
 import { shareComparison, copyShareUrl } from '@/lib/share/kakaoShare';
+import { trackUXEvent } from '@/lib/analytics';
+import { ToastMessage } from '@/components/common/ToastMessage';
 
-export function CompareHeader() {
+interface CompareHeaderProps {
+  shareLocation: Coordinates | null;
+  shareAddress: string;
+}
+
+export function CompareHeader({
+  shareLocation,
+  shareAddress,
+}: CompareHeaderProps) {
   const router = useRouter();
   const { items, clearAll } = useCompareStore();
   const [showShareMenu, setShowShareMenu] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   const handleClearAll = () => {
     clearAll();
@@ -21,25 +32,45 @@ export function CompareHeader() {
 
   const handleKakaoShare = async () => {
     const names = items.map((item) => item.name).join(', ');
-    await shareComparison({
+    const success = await shareComparison({
       title: '우리동네 유치원 비교표',
       description: `${names} 비교 결과를 확인해보세요.`,
       compareIds: kindercodes,
+      location: shareLocation,
+      address: shareAddress,
     });
+
+    if (success) {
+      trackUXEvent('compare_shared', { method: 'kakao' });
+      setToastMessage('비교 링크를 공유할 수 있도록 준비했어요.');
+    } else {
+      setToastMessage('공유를 열지 못했습니다. 다시 시도해주세요.');
+    }
+
     setShowShareMenu(false);
   };
 
   const handleCopyLink = async () => {
-    const success = await copyShareUrl(kindercodes);
+    const success = await copyShareUrl(kindercodes, shareLocation, shareAddress);
     if (success) {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      trackUXEvent('compare_shared', { method: 'copy' });
+      setToastMessage('비교 링크를 복사했어요.');
+    } else {
+      setToastMessage('링크를 복사하지 못했습니다.');
     }
     setShowShareMenu(false);
   };
 
+  useEffect(() => {
+    if (!toastMessage) return;
+
+    const timer = window.setTimeout(() => setToastMessage(null), 2200);
+    return () => window.clearTimeout(timer);
+  }, [toastMessage]);
+
   return (
-    <header className="bg-white border-b border-gray-200 sticky safe-top-offset z-30">
+    <>
+      <header className="bg-white border-b border-gray-200 sticky safe-top-offset z-50">
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button
@@ -78,17 +109,8 @@ export function CompareHeader() {
                       onClick={handleCopyLink}
                       className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 flex items-center gap-2"
                     >
-                      {copied ? (
-                        <>
-                          <Check className="w-4 h-4 text-emerald-500" />
-                          복사 완료!
-                        </>
-                      ) : (
-                        <>
-                          <Link2 className="w-4 h-4 text-gray-500" />
-                          링크 복사
-                        </>
-                      )}
+                      <Link2 className="w-4 h-4 text-gray-500" />
+                      링크 복사
                     </button>
                   </div>
                 )}
@@ -110,6 +132,14 @@ export function CompareHeader() {
           onClick={() => setShowShareMenu(false)}
         />
       )}
-    </header>
+      </header>
+      {toastMessage ? (
+        <ToastMessage
+          message={toastMessage}
+          tone={toastMessage.includes('못') ? 'error' : 'success'}
+          onClose={() => setToastMessage(null)}
+        />
+      ) : null}
+    </>
   );
 }

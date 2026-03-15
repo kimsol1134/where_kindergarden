@@ -504,7 +504,9 @@ export function useKakaoMap(
           line-height: 1;
         ">×</button>
         <strong style="display: block; margin-bottom: 3px; padding-right: 16px; color: #111827;">${kindergarten.name}</strong>
-        <span style="color: #6b7280; font-size: 12px;">${kindergarten.distance.toFixed(1)}km</span>
+        <span style="color: #6b7280; font-size: 12px;">${
+          kindergarten.distance !== null ? `${kindergarten.distance.toFixed(1)}km` : '거리 정보 없음'
+        }</span>
         <div style="
           position: absolute;
           bottom: -8px;

@@ -515,7 +515,9 @@ describe('useSearchStore', () => {
       expect(state.results.length).toBeGreaterThan(0);
       // 결과가 거리순으로 정렬되었는지 확인
       if (state.results.length > 1) {
-        expect(state.results[0].distance).toBeLessThanOrEqual(state.results[1].distance);
+        expect(state.results[0].distance).not.toBeNull();
+        expect(state.results[1].distance).not.toBeNull();
+        expect(state.results[0].distance ?? 0).toBeLessThanOrEqual(state.results[1].distance ?? 0);
       }
     });
 
@@ -536,7 +538,7 @@ describe('useSearchStore', () => {
 
       const state = useSearchStore.getState();
       // 모든 결과가 1km 이내인지 확인
-      expect(state.results.every((k) => k.distance <= 1)).toBe(true);
+      expect(state.results.every((k) => (k.distance ?? Number.POSITIVE_INFINITY) <= 1)).toBe(true);
     });
   });
 
