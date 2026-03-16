@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const useExternalServer = process.env.PLAYWRIGHT_DISABLE_WEBSERVER === '1';
+
 export default defineConfig({
   testDir: './e2e',
   fullyParallel: true,
@@ -8,7 +10,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://127.0.0.1:3100',
     trace: 'on-first-retry',
   },
   projects: [
@@ -25,9 +27,12 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
-  webServer: {
-    command: 'pnpm dev',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
-  },
+  webServer: useExternalServer
+    ? undefined
+    : {
+        command:
+          'pnpm build:webpack && python3 -m http.server 3100 --bind 127.0.0.1 --directory out',
+        url: 'http://127.0.0.1:3100',
+        reuseExistingServer: !process.env.CI,
+      },
 });

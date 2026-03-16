@@ -9,7 +9,7 @@ test.describe('홈페이지', () => {
   test('현재 위치로 검색 버튼이 표시된다', async ({ page }) => {
     await page.goto('/');
     await expect(
-      page.getByRole('button', { name: /현재 위치로 검색/ })
+      page.getByRole('link', { name: /내 주변 유치원 찾기/ })
     ).toBeVisible();
   });
 });

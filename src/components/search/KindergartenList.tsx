@@ -644,6 +644,11 @@ function KindergartenCard({
               onCompareToggle();
             }}
             disabled={!isInCompare && !canAddToCompare}
+            aria-label={
+              isInCompare
+                ? `${kindergarten.name} 비교함에서 제거`
+                : `${kindergarten.name} 비교함에 담기`
+            }
             className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all border ${
               isInCompare
                 ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'

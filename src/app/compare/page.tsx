@@ -10,6 +10,7 @@ import { useCompareStore, useKindergartenStore, useSearchStore } from '@/stores'
 import type { KindergartenRaw } from '@/stores/kindergartenStore';
 import type { Coordinates } from '@/types';
 import { transformToKindergarten } from '@/lib/transforms';
+import { trackUXEvent } from '@/lib/analytics';
 
 function CompareLoading({
   shareLocation,
@@ -64,6 +65,15 @@ function CompareContent() {
       setLocation(shareLocation, addressParam);
     }
   }, [addressParam, location, setLocation, shareLocation]);
+
+  useEffect(() => {
+    if (items.length > 0) {
+      trackUXEvent('compare_opened', {
+        count: items.length,
+        source: idsParam ? 'shared' : 'in_app',
+      });
+    }
+  }, [idsParam, items.length]);
 
   // URL 파라미터로부터 비교 목록 복원
   useEffect(() => {

@@ -127,7 +127,7 @@ export function SearchHeader({
 
   const hasSearchSession = location !== null || hasSearched;
   const activeFilterCount = getActiveFilterCount(filters);
-  const showFilters = hasSearchSession;
+  const showFilters = hasSearchSession || activeFilterCount > 0;
 
   const handleSelectAddress = useCallback(
     (suggestion: typeof suggestions[0]) => {

@@ -17,6 +17,11 @@
 - [x] 공유/복사 피드백을 공통 토스트로 통일
 - [x] 찜/후기 empty state 및 후기 제안 모달 톤 정리
 - [x] 브라우저 확대 허용으로 접근성 개선
+- [x] `build:webpack` 스크립트 추가 및 정적 export 빌드 검증
+- [x] 모바일 Playwright E2E 2종 추가
+  - `e2e/search-compare.spec.ts`
+  - `e2e/test-to-search.spec.ts`
+- [x] Playwright를 built `out/` 기준으로 검증할 수 있도록 설정 보강
 
 ## 진행 중인 작업
 - 없음
@@ -30,10 +35,12 @@
 - `pnpm type-check` 통과
 - `pnpm test` 통과 (14 files, 184 tests)
 - 변경 파일 대상 `eslint` 통과
+- `pnpm build:webpack` 통과
+- `PLAYWRIGHT_DISABLE_WEBSERVER=1 pnpm exec playwright test e2e/search-compare.spec.ts e2e/test-to-search.spec.ts --project='Mobile Safari' --project='Mobile Chrome'` 통과 (4 tests)
 - iOS Simulator Safari에서 랜딩 / 검색 초기 / 검색 결과 / 상세 / 비교 / 테스트 화면 수동 확인
 
 ## 주의사항 / 알려진 이슈
-- worktree에서 `node_modules`를 symlink로 연결해 사용 중이라 `pnpm build`는 Turbopack의 symlink 제한 때문에 실패함
+- 기본 `pnpm build`는 Next 16 Turbopack 경로를 사용하므로, sandbox/worktree 환경에서는 제약에 걸릴 수 있음. 이번 세션에서 검증한 안정 경로는 `pnpm build:webpack`
 - 동일 브랜치를 원본 저장소에서 계속 작업하지 말고, 현재 worktree(`/tmp/where_kindergarden-ux-overhaul`)에서 이어서 작업하는 것이 안전함
 - 전체 `pnpm lint`는 기존 `scripts/` 디렉터리의 선행 에러 때문에 여전히 실패할 수 있음. 이번 작업 변경 파일 자체는 별도 `eslint`로 확인 완료
 
@@ -46,3 +53,6 @@ codex/feature/ux-overhaul
 - `src/components/search/KindergartenDetailPanel.tsx` - 모바일 상세 시트
 - `src/components/compare/CompareGrid.tsx` - 모바일/데스크톱 비교 UI 분기
 - `src/app/test/_components/TestFlow.tsx` - 테스트 CTA/추천 검색 연결
+- `playwright.config.ts` - static build 기반 E2E 서버 전략
+- `e2e/search-compare.spec.ts` - 모바일 검색 → 상세 → 비교 진입 시나리오
+- `e2e/test-to-search.spec.ts` - 모바일 테스트 → 추천 검색 시나리오
