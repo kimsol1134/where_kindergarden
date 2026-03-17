@@ -93,7 +93,7 @@ function SearchPageContent() {
   }, [location?.lat, location?.lng]);
 
   return (
-    <div className="bg-gray-50 text-gray-800 flex flex-col h-screen">
+    <div className="flex h-screen flex-col text-[var(--brand-ink)]">
       <SearchHeader />
       <main className="flex-1 flex overflow-hidden relative">
         <KindergartenList
@@ -145,30 +145,30 @@ export default function SearchPage() {
 
 function SearchPageSkeleton() {
   return (
-    <div className="bg-gray-50 text-gray-800 flex flex-col h-screen">
+    <div className="flex h-screen flex-col text-[var(--brand-ink)]">
       {/* Header Skeleton */}
-      <header className="bg-white border-b border-gray-200 z-30 flex-none">
-        <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
-          <div className="w-8 h-8 bg-gray-200 rounded-lg animate-pulse" />
-          <div className="flex-1 max-w-xl h-10 bg-gray-200 rounded-full animate-pulse" />
-          <div className="w-20 h-8 bg-gray-200 rounded-lg animate-pulse" />
+      <header className="z-30 flex-none px-4 pt-3">
+        <div className="brand-shell mx-auto flex h-16 max-w-[1920px] items-center justify-between gap-4 px-4">
+          <div className="h-10 w-10 rounded-2xl bg-[rgba(203,188,174,0.22)] animate-pulse" />
+          <div className="h-10 max-w-xl flex-1 rounded-full bg-[rgba(255,255,255,0.82)] animate-pulse" />
+          <div className="h-8 w-20 rounded-full bg-[rgba(255,255,255,0.82)] animate-pulse" />
         </div>
       </header>
       <main className="flex-1 flex overflow-hidden relative">
         {/* List Skeleton */}
-        <aside className="w-full md:w-[450px] lg:w-[500px] bg-white flex flex-col border-r border-gray-200 z-20">
-          <div className="px-5 py-4 border-b border-gray-100">
-            <div className="h-6 w-32 bg-gray-200 rounded animate-pulse" />
+        <aside className="z-20 flex w-full flex-col border-r border-white/70 bg-white/72 md:w-[450px] lg:w-[500px]">
+          <div className="border-b border-[rgba(203,188,174,0.18)] px-5 py-4">
+            <div className="h-6 w-32 rounded bg-[rgba(203,188,174,0.22)] animate-pulse" />
           </div>
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+          <div className="flex-1 space-y-4 overflow-y-auto bg-[rgba(246,245,239,0.72)] p-4">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl p-4 border border-gray-200">
+              <div key={i} className="brand-card rounded-[1.4rem] p-4">
                 <div className="flex gap-4">
-                  <div className="w-20 h-20 rounded-lg bg-gray-200 animate-pulse" />
+                  <div className="h-20 w-20 rounded-[1rem] bg-[rgba(203,188,174,0.22)] animate-pulse" />
                   <div className="flex-1 space-y-2">
-                    <div className="h-4 w-24 bg-gray-200 rounded animate-pulse" />
-                    <div className="h-5 w-32 bg-gray-200 rounded animate-pulse" />
-                    <div className="h-3 w-40 bg-gray-200 rounded animate-pulse" />
+                    <div className="h-4 w-24 rounded bg-[rgba(203,188,174,0.22)] animate-pulse" />
+                    <div className="h-5 w-32 rounded bg-[rgba(203,188,174,0.22)] animate-pulse" />
+                    <div className="h-3 w-40 rounded bg-[rgba(203,188,174,0.22)] animate-pulse" />
                   </div>
                 </div>
               </div>
@@ -176,7 +176,7 @@ function SearchPageSkeleton() {
           </div>
         </aside>
         {/* Map Skeleton */}
-        <div className="flex-1 bg-gray-200 animate-pulse" />
+        <div className="flex-1 animate-pulse bg-[linear-gradient(180deg,rgba(255,255,255,0.76),rgba(78,169,109,0.12))]" />
       </main>
     </div>
   );

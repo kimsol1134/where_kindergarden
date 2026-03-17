@@ -27,7 +27,7 @@ const FAQ_DATA = [
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-screen font-sans">
+    <div className="min-h-screen font-sans text-[var(--brand-ink)]">
       <Header />
       <main>
         <Hero />

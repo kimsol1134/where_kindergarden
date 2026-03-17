@@ -4,29 +4,28 @@
 2026-03-17
 
 ## 완료된 작업
-- [x] 공식 결원정보 타입 추가 (`src/types/vacancy.ts`)
-- [x] 공식 결원정보 스토어 추가 (`src/stores/vacancyStore.ts`)
-- [x] 결원 HTML 파서 추가 (`src/lib/vacancy/parser.ts`)
-- [x] 결원 동기화 스크립트 추가 (`scripts/sync-vacancy.ts`)
+- [x] 앱 아이콘 기준 브랜드 토큰 정의 및 웹 shell 리브랜딩 반영
+- [x] SwiftUI 기반 네이티브 앱 스캐폴드 추가
+- [x] 후기 검증 증분 파이프라인 및 CI 자동화 추가
+- [x] 공식 결원정보 타입/스토어/파서/동기화 스크립트 추가
 - [x] 검색 카드에 `공식 결원 N명` 배지 노출
 - [x] 상세 패널에 공식 결원정보 3상태 UI 추가
-- [x] 파서/스토어/컴포넌트 테스트 추가
-- [x] `pnpm test` 통과
-- [x] `pnpm type-check` 통과
+- [x] 전국 실데이터 `public/data/vacancy.json` 생성 완료
+- [x] `pnpm test`, `pnpm type-check`, `pnpm build` 통과
 
 ## 진행 중인 작업
-- 전국 실데이터 동기화 완료
-  - `pnpm sync:vacancy -- --year 2026` 실행 성공
-  - 현재 `public/data/vacancy.json`은 전국 기준 실데이터 상태
-  - 집계: 총 2,753건 / 양수 결원 2,115건 / 0명 등록 638건
+- PR `#21` 배포 머지 과정에서 `origin/main` 병합 중
+- 별도 Xcode iOS App target은 아직 생성하지 않음
+- Kakao 지도 SDK 브리지와 native 실데이터 로더는 아직 mock/prototype 수준
+- GitHub Actions 원격에서 review verification workflow 1회 실실행 확인 필요
 
 ## 다음에 할 작업
-1. 생성된 전국 `public/data/vacancy.json`을 기준으로 앱 UI 수동 검수
-2. 배포하여 원격 `/data/vacancy.json` 반영
-3. 필요하면 정기 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
+1. 현재 브랜치의 merge conflict 정리 후 PR `#21` 머지
+2. Vercel production 배포 완료 여부 확인
+3. 원격 `/data/vacancy.json`이 최신 전국 데이터로 노출되는지 확인
+4. 필요하면 정기 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
 
 ## 주의사항 / 알려진 이슈
-- `scripts/sync-vacancy.ts`는 수집 결과가 0건이면 `vacancy.json`을 덮어쓰지 않고 실패 처리함
 - 공식 결원정보는 `kindercode === ittId` 조인 전제
 - live 사이트는 Node/undici 기준 `UNABLE_TO_VERIFY_LEAF_SIGNATURE`가 나서 sync 스크립트 프로세스 안에서만 TLS 검증 완화 적용
 - live 사이트는 브라우저 세션 쿠키 없이 직접 POST하면 `Request Blocked`를 반환하므로 스크립트가 초기 GET 세션을 먼저 생성함
@@ -36,6 +35,8 @@
 - `codex/feature-vacancy-integration`
 
 ## 참고 파일
-- `scripts/sync-vacancy.ts` - 공식 결원정보 동기화
-- `public/data/vacancy.json` - 앱 런타임에서 읽는 정적 결원 데이터
-- `docs/DETAILED_SPEC.md` - 공식 결원정보 동기화 절차 추가
+- `scripts/sync-vacancy.ts`
+- `public/data/vacancy.json`
+- `docs/DETAILED_SPEC.md`
+- `docs/brand/icon-brand-system.md`
+- `.github/workflows/review-verification-incremental.yml`

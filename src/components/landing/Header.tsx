@@ -1,29 +1,36 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Menu } from 'lucide-react';
+import { BrandMark } from '@/components/common/BrandMark';
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 safe-area-top">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/logo.png"
-            alt="우리동네 유치원"
-            width={40}
-            height={40}
-            className="rounded-lg"
-          />
-          <span className="text-xl font-bold tracking-tight text-gray-900">우리동네 유치원</span>
+    <header className="fixed top-0 left-0 right-0 z-50 safe-area-top">
+      <div className="mx-auto max-w-7xl px-4 pt-3 sm:px-6 lg:px-8">
+        <div className="brand-shell flex h-18 items-center justify-between rounded-[2rem] px-4 sm:px-6">
+          <Link href="/" className="min-w-0">
+            <BrandMark compact />
+          </Link>
+          <nav className="hidden gap-8 text-sm font-medium text-[var(--brand-ink-soft)] md:flex">
+            <Link href="#features" className="transition-colors hover:text-[var(--brand-leaf)]">
+              서비스 소개
+            </Link>
+            <Link href="#preview" className="transition-colors hover:text-[var(--brand-leaf)]">
+              미리보기
+            </Link>
+            <Link href="#faq" className="transition-colors hover:text-[var(--brand-leaf)]">
+              자주 묻는 질문
+            </Link>
+          </nav>
+          <Link
+            href="/search?mode=location"
+            className="hidden rounded-full bg-[var(--brand-leaf)] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(78,169,109,0.22)] md:inline-flex"
+          >
+            바로 탐색
+          </Link>
+          <button className="p-2 text-[var(--brand-ink-soft)] md:hidden">
+            <Menu className="h-6 w-6" />
+          </button>
         </div>
-        <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-          <Link href="#features" className="hover:text-emerald-600 transition-colors">서비스 소개</Link>
-          <Link href="#preview" className="hover:text-emerald-600 transition-colors">미리보기</Link>
-
-        </nav>
-        <button className="md:hidden p-2 text-gray-600">
-          <Menu className="w-6 h-6" />
-        </button>
       </div>
     </header>
   );

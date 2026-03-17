@@ -1,216 +1,245 @@
-import { Check, Users, Bus, CircleSlash, ArrowRight, BarChart2, Award, Share2, BarChart3, Search } from 'lucide-react';
+import {
+  ArrowRight,
+  Award,
+  BarChart2,
+  Bus,
+  Check,
+  CircleSlash,
+  Search,
+  Share2,
+  Sparkles,
+  Users,
+} from 'lucide-react';
 
 export function Features() {
   return (
-    <section id="features" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Feature 1: Search & List */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
-          <div className="lg:w-1/2 order-2 lg:order-1 relative">
-            {/* Mobile Mockup: Search Result */}
-            <div className="mobile-frame max-w-sm mx-auto h-[600px] bg-gray-50 flex flex-col">
-              {/* App Header */}
-              <div className="pt-10 pb-4 px-4 bg-white shadow-sm z-10">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-lg font-bold">📍 서울 강남구 역삼동</span>
-                  <button className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-600">변경</button>
-                </div>
-                <div className="flex gap-2">
-                  <div className="px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-medium">반경 1km</div>
-                  <div className="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-xs font-medium">전체 유형</div>
-                </div>
-              </div>
-              
-              {/* List Content */}
-              <div className="flex-1 overflow-y-auto p-4 space-y-4">
-                {/* Card 1 */}
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm relative">
-                  <div className="absolute top-4 left-4">
-                    <div className="w-5 h-5 rounded border-2 border-emerald-500 bg-emerald-500 flex items-center justify-center">
-                      <Check className="w-3 h-3 text-white" />
-                    </div>
-                  </div>
-                  <div className="pl-8">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="font-bold text-gray-900">역삼유치원</h3>
-                        <span className="text-xs text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded font-medium">국공립</span>
-                        <span className="text-xs text-gray-500 ml-1">0.3km</span>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 text-xs text-gray-500 mb-3">
-                      <span className="flex items-center gap-1"><Users className="w-3 h-3" /> 정원 40명</span>
-                      <span className="flex items-center gap-1"><Bus className="w-3 h-3" /> 셔틀 있음</span>
-                    </div>
-                    <div className="border-t border-gray-50 pt-3 mt-2 text-xs text-gray-500 space-y-1">
-                      <p>📍 서울 강남구 역삼로 123</p>
-                      <p>📞 02-1234-5678</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Card 2 */}
-                <div className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm relative opacity-70">
-                  <div className="absolute top-4 left-4">
-                    <div className="w-5 h-5 rounded border-2 border-gray-300"></div>
-                  </div>
-                  <div className="pl-8">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="font-bold text-gray-900">해맑은유치원</h3>
-                        <span className="text-xs text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded font-medium">사립</span>
-                        <span className="text-xs text-gray-500 ml-1">0.5km</span>
-                      </div>
-                    </div>
-                    <div className="flex gap-3 text-xs text-gray-500">
-                      <span className="flex items-center gap-1"><Users className="w-3 h-3" /> 정원 60명</span>
-                      <span className="flex items-center gap-1 text-gray-400"><CircleSlash className="w-3 h-3" /> 셔틀 없음</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sticky Bottom CTA */}
-              <div className="p-4 bg-white border-t border-gray-100">
-                <button className="w-full bg-emerald-500 text-white py-3 rounded-lg font-bold shadow-lg shadow-emerald-100 text-sm flex items-center justify-center gap-2">
-                  <span>선택한 1개 비교하기</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
-            
-            {/* Decor elements */}
-            <div className="absolute -z-10 top-20 -right-12 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-            <div className="absolute -z-10 bottom-10 -left-12 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+    <section id="features" className="py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 max-w-3xl">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/76 px-4 py-2 text-sm font-semibold text-[var(--brand-leaf)]">
+            <Sparkles className="h-4 w-4" />
+            검색에서 비교까지 한 흐름
           </div>
-          
-          <div className="lg:w-1/2 order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-4">
-              <Search className="w-4 h-4" />
+          <h2 className="mt-5 text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)] md:text-5xl">
+            브랜드는 새로 정리했지만
+            <br />
+            핵심 탐색 구조는 더 선명해졌습니다
+          </h2>
+        </div>
+
+        <div className="mb-28 grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="order-2 lg:order-1">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(78,169,109,0.12)] px-3 py-1 text-sm font-semibold text-[var(--brand-leaf)]">
+              <Search className="h-4 w-4" />
               스마트 검색
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              복잡한 정보 검색은 그만,<br/>
-              <span className="text-emerald-500">필요한 정보만 쏙쏙</span>
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              지도 앱 켜고, 맘카페 검색하고, 홈페이지 들어가보고...<br/>
-              이제 &apos;우리동네 유치원&apos;에서 한 번에 해결하세요.
+            <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
+              복잡한 정보 검색은 줄이고,
+              <br />
+              필요한 정보는 더 빠르게
+            </h3>
+            <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
+              지도 앱, 맘카페, 기관 홈페이지를 따로 돌지 않아도 됩니다. 위치 기준 탐색,
+              핵심 지표, 비교 진입이 한 화면 흐름 안에서 이어집니다.
             </p>
-            <ul className="space-y-4">
+            <ul className="mt-8 space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-4 h-4 text-emerald-600" />
+                <div className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(78,169,109,0.14)]">
+                  <Check className="h-4 w-4 text-[var(--brand-leaf)]" />
                 </div>
-                <span className="text-gray-700"><strong>위치 기반 검색:</strong> 집 근처 유치원을 거리순으로 확인</span>
+                <span className="text-[var(--brand-ink-soft)]">
+                  <strong className="text-[var(--brand-ink)]">위치 기반 탐색:</strong> 집 근처 기관을
+                  거리순으로 확인
+                </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-4 h-4 text-emerald-600" />
+                <div className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(244,216,106,0.18)]">
+                  <Check className="h-4 w-4 text-[var(--brand-ink)]" />
                 </div>
-                <span className="text-gray-700"><strong>유형별 필터:</strong> 국공립, 사립 등 원하는 유형만 골라보기</span>
+                <span className="text-[var(--brand-ink-soft)]">
+                  <strong className="text-[var(--brand-ink)]">필터 중심 UX:</strong> 반경, 셔틀, 공간,
+                  최신 건물 등 한 손 조작 가능한 칩 형태
+                </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-4 h-4 text-emerald-600" />
+                <div className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(203,188,174,0.18)]">
+                  <Check className="h-4 w-4 text-[var(--brand-ink)]" />
                 </div>
-                <span className="text-gray-700"><strong>핵심 정보 요약:</strong> 정원, 현원, 셔틀버스 등 필수 정보 즉시 확인</span>
+                <span className="text-[var(--brand-ink-soft)]">
+                  <strong className="text-[var(--brand-ink)]">하단 결과 시트:</strong> iPhone에서는 전체
+                  지도와 결과 리스트를 자연스럽게 넘나듭니다
+                </span>
               </li>
             </ul>
           </div>
+
+          <div className="order-1 lg:order-2">
+            <div className="mobile-frame mx-auto flex h-[620px] max-w-sm flex-col bg-[linear-gradient(180deg,rgba(255,255,255,0.84),rgba(246,245,239,0.96))]">
+              <div className="border-b border-white/70 bg-white/72 px-4 pb-4 pt-10 shadow-sm">
+                <div className="mb-4 rounded-full bg-white/90 px-4 py-3 text-sm font-semibold text-[var(--brand-ink)]">
+                  서울 강남구 역삼동
+                </div>
+                <div className="flex gap-2">
+                  <div className="rounded-full border border-[rgba(78,169,109,0.28)] bg-[rgba(78,169,109,0.12)] px-3 py-1.5 text-xs font-semibold text-[var(--brand-leaf)]">
+                    반경 1km
+                  </div>
+                  <div className="rounded-full border border-[rgba(203,188,174,0.3)] bg-white/80 px-3 py-1.5 text-xs font-semibold text-[var(--brand-ink-soft)]">
+                    넓은 공간
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 space-y-4 overflow-y-auto p-4">
+                <div className="brand-card relative rounded-[1.6rem] p-4">
+                  <div className="absolute left-4 top-4">
+                    <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--brand-leaf)]">
+                      <Check className="h-3 w-3 text-white" />
+                    </div>
+                  </div>
+                  <div className="pl-8">
+                    <div className="mb-2">
+                      <h4 className="font-bold text-[var(--brand-ink)]">역삼유치원</h4>
+                      <div className="mt-2 flex items-center gap-2">
+                        <span className="rounded-full bg-[rgba(78,169,109,0.12)] px-2 py-0.5 text-xs font-semibold text-[var(--brand-leaf)]">
+                          국공립
+                        </span>
+                        <span className="text-xs text-[var(--brand-ink-soft)]">0.3km</span>
+                      </div>
+                    </div>
+                    <div className="mb-3 flex gap-3 text-xs text-[var(--brand-ink-soft)]">
+                      <span className="flex items-center gap-1">
+                        <Users className="h-3 w-3" /> 정원 40명
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Bus className="h-3 w-3" /> 셔틀 있음
+                      </span>
+                    </div>
+                    <div className="border-t border-[rgba(203,188,174,0.18)] pt-3 text-xs text-[var(--brand-ink-soft)]">
+                      서울 강남구 역삼로 123
+                    </div>
+                  </div>
+                </div>
+
+                <div className="brand-card relative rounded-[1.6rem] p-4 opacity-90">
+                  <div className="absolute left-4 top-4">
+                    <div className="h-5 w-5 rounded-full border border-[rgba(203,188,174,0.48)]" />
+                  </div>
+                  <div className="pl-8">
+                    <div className="mb-2">
+                      <h4 className="font-bold text-[var(--brand-ink)]">해맑은유치원</h4>
+                      <div className="mt-2 flex items-center gap-2">
+                        <span className="rounded-full bg-[rgba(203,188,174,0.2)] px-2 py-0.5 text-xs font-semibold text-[var(--brand-ink-soft)]">
+                          사립
+                        </span>
+                        <span className="text-xs text-[var(--brand-ink-soft)]">0.5km</span>
+                      </div>
+                    </div>
+                    <div className="flex gap-3 text-xs text-[var(--brand-ink-soft)]">
+                      <span className="flex items-center gap-1">
+                        <Users className="h-3 w-3" /> 정원 60명
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <CircleSlash className="h-3 w-3" /> 셔틀 없음
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-white/70 bg-white/82 p-4">
+                <button className="flex w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] py-3 text-sm font-bold text-white shadow-[0_14px_28px_rgba(78,169,109,0.22)]">
+                  <span>선택한 1개 비교하기</span>
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Feature 2: Comparison */}
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-600 text-sm font-semibold mb-4">
-              <BarChart2 className="w-4 h-4" />
+        <div id="preview" className="grid items-center gap-14 lg:grid-cols-[1fr_1fr]">
+          <div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(244,216,106,0.16)] px-3 py-1 text-sm font-semibold text-[var(--brand-ink)]">
+              <BarChart2 className="h-4 w-4 text-[var(--brand-leaf)]" />
               한눈에 비교
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              고민되는 후보들,<br/>
-              <span className="text-emerald-500">표 하나로 깔끔하게 정리</span>
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              최대 3개 기관을 선택하여 나란히 비교해보세요.<br/>
-              가장 유리한 조건은 자동으로 하이라이트 됩니다.
+            <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
+              고민되는 후보들은
+              <br />
+              카드와 지표로 더 또렷하게
+            </h3>
+            <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
+              최대 3개 기관을 골라 거리, 면적, 셔틀, 방과후 등 핵심 지표를 빠르게 비교할 수
+              있습니다. iPhone에서는 공유도 시스템 시트로 자연스럽게 이어집니다.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-                <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center mb-3">
-                  <Award className="w-5 h-5 text-emerald-600" />
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="brand-card rounded-[1.8rem] p-5">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-[rgba(78,169,109,0.14)]">
+                  <Award className="h-5 w-5 text-[var(--brand-leaf)]" />
                 </div>
-                <h4 className="font-bold text-gray-900 mb-1">베스트 조건 강조</h4>
-                <p className="text-sm text-gray-500">거리, 면적 등 주요 지표의 최고 값을 자동으로 표시합니다.</p>
+                <h4 className="font-bold text-[var(--brand-ink)]">베스트 조건 강조</h4>
+                <p className="mt-2 text-sm leading-6 text-[var(--brand-ink-soft)]">
+                  거리, 면적, 셔틀 운영 등 결정에 도움이 되는 값을 먼저 보이게 합니다.
+                </p>
               </div>
-              <div className="p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-                <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center mb-3">
-                  <Share2 className="w-5 h-5 text-emerald-600" />
+              <div className="brand-card rounded-[1.8rem] p-5">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-[rgba(244,216,106,0.18)]">
+                  <Share2 className="h-5 w-5 text-[var(--brand-ink)]" />
                 </div>
-                <h4 className="font-bold text-gray-900 mb-1">간편한 공유</h4>
-                <p className="text-sm text-gray-500">비교 결과를 배우자나 가족에게 카톡으로 바로 공유하세요.</p>
+                <h4 className="font-bold text-[var(--brand-ink)]">간편한 공유</h4>
+                <p className="mt-2 text-sm leading-6 text-[var(--brand-ink-soft)]">
+                  비교 결과를 웹과 iPhone 모두 같은 링크 구조로 바로 공유할 수 있습니다.
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="lg:w-1/2 relative w-full">
-            {/* Comparison Table Mockup */}
-            <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-              <div className="p-4 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
-                <h3 className="font-bold text-gray-800 flex items-center gap-2">
-                  <BarChart3 className="w-4 h-4 text-emerald-500" /> 비교 결과
-                </h3>
-                <span className="text-xs text-gray-500">3개 기관 선택됨</span>
+          <div className="brand-shell overflow-hidden rounded-[2.2rem] p-5">
+            <div className="rounded-[1.7rem] bg-white/74 p-4">
+              <div className="mb-4 flex items-center justify-between border-b border-[rgba(203,188,174,0.18)] pb-4">
+                <h4 className="font-bold text-[var(--brand-ink)]">비교 결과</h4>
+                <span className="text-xs text-[var(--brand-ink-soft)]">3개 기관 선택됨</span>
               </div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-left">
-                  <thead>
-                    <tr className="border-b border-gray-100">
-                      <th className="p-4 bg-gray-50 min-w-[80px] text-gray-500 font-medium">구분</th>
-                      <th className="p-4 min-w-[100px] font-bold text-gray-900">역삼유치원</th>
-                      <th className="p-4 min-w-[100px] font-bold text-gray-900">해맑은</th>
-                      <th className="p-4 min-w-[100px] font-bold text-gray-900">꿈나무</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-50">
-                    <tr>
-                      <td className="p-4 bg-gray-50/50 text-gray-500">유형</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">국공립</td>
-                      <td className="p-4 text-gray-700">사립</td>
-                      <td className="p-4 text-gray-700">사립</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4 bg-gray-50/50 text-gray-500">거리</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">0.3km</td>
-                      <td className="p-4 text-gray-700">0.5km</td>
-                      <td className="p-4 text-gray-700">0.8km</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4 bg-gray-50/50 text-gray-500">셔틀</td>
-                      <td className="p-4 text-gray-700">운행함</td>
-                      <td className="p-4 text-gray-400">미운행</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">운행(2대)</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4 bg-gray-50/50 text-gray-500">급식</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">직영조리</td>
-                      <td className="p-4 text-gray-700">위탁급식</td>
-                      <td className="p-4 text-gray-700">직영조리</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4 bg-gray-50/50 text-gray-500">1인 면적</td>
-                      <td className="p-4 text-gray-700">3.2㎡</td>
-                      <td className="p-4 bg-emerald-50 text-emerald-700 font-bold">4.5㎡</td>
-                      <td className="p-4 text-gray-700">2.8㎡</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="space-y-3">
+                <CompareRow title="기관" values={['역삼유치원', '해맑은', '꿈나무']} emphasizedIndex={0} />
+                <CompareRow title="거리" values={['0.3km', '0.5km', '0.8km']} emphasizedIndex={0} />
+                <CompareRow title="셔틀" values={['1대', '없음', '2대']} emphasizedIndex={2} />
+                <CompareRow title="급식" values={['직영', '위탁', '직영']} emphasizedIndex={0} />
+                <CompareRow title="1인 면적" values={['3.2㎡', '4.5㎡', '2.8㎡']} emphasizedIndex={1} />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function CompareRow({
+  title,
+  values,
+  emphasizedIndex,
+}: {
+  title: string;
+  values: string[];
+  emphasizedIndex: number;
+}) {
+  return (
+    <div className="grid grid-cols-[80px_repeat(3,minmax(0,1fr))] gap-2">
+      <div className="rounded-2xl bg-[rgba(246,245,239,0.8)] px-3 py-4 text-xs font-semibold text-[var(--brand-ink-soft)]">
+        {title}
+      </div>
+      {values.map((value, index) => (
+        <div
+          key={`${title}-${value}`}
+          className={`rounded-2xl px-3 py-4 text-center text-sm font-semibold ${
+            index === emphasizedIndex
+              ? 'brand-highlight text-[var(--brand-ink)]'
+              : 'bg-white text-[var(--brand-ink-soft)]'
+          }`}
+        >
+          {value}
+        </div>
+      ))}
+    </div>
   );
 }

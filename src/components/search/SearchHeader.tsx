@@ -2,7 +2,6 @@
 
 import { useRef, useCallback, useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   Search,
   X,
@@ -18,6 +17,7 @@ import {
   Building2,
   Crosshair,
 } from 'lucide-react';
+import { BrandMark } from '@/components/common/BrandMark';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 import { useSearchStore, useFavoriteStore, useUIStore, type InstitutionFilter } from '@/stores';
 import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from '@/hooks';
@@ -188,25 +188,18 @@ export function SearchHeader() {
   }, [clearSelection, setAddress]);
 
   return (
-    <header className="relative bg-white border-b border-gray-200 z-50 flex-none safe-area-top">
-      <div className="max-w-[1920px] mx-auto px-4 h-16 flex items-center justify-between gap-4">
+    <header className="relative z-50 flex-none safe-area-top">
+      <div className="mx-auto max-w-[1920px] px-4 pt-3">
+        <div className="brand-shell">
+      <div className="h-16 flex items-center justify-between gap-4 px-4 md:px-5">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-          <Image
-            src="/logo.png"
-            alt="우리동네 유치원"
-            width={40}
-            height={40}
-            className="rounded-lg"
-          />
-          <span className="text-lg font-bold tracking-tight text-gray-900 hidden md:block">
-            우리동네 유치원
-          </span>
+          <BrandMark compact labelClassName="hidden md:block text-lg" />
         </Link>
 
         {/* Search Input */}
         <div className="flex-1 max-w-xl md:max-w-2xl relative group">
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-emerald-500 transition-colors">
+          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--brand-sand)] group-focus-within:text-[var(--brand-leaf)] transition-colors">
             <Search className="w-5 h-5" />
           </div>
           <input
@@ -219,7 +212,7 @@ export function SearchHeader() {
                 setOpen(true);
               }
             }}
-            className="w-full bg-gray-100 hover:bg-gray-50 focus:bg-white border border-transparent focus:border-emerald-500 rounded-full py-2.5 pl-10 pr-24 text-sm text-gray-900 placeholder:text-gray-500 transition-all outline-none shadow-sm"
+            className="w-full rounded-full border border-white/80 bg-white/78 py-2.5 pl-10 pr-24 text-sm text-[var(--brand-ink)] outline-none transition-all placeholder:text-[var(--brand-ink-soft)] shadow-[0_14px_28px_rgba(125,132,96,0.08)] hover:bg-white/92 focus:border-[rgba(78,169,109,0.35)] focus:bg-white"
             placeholder="주소, 유치원, 아파트 이름 검색"
           />
           <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
@@ -227,19 +220,19 @@ export function SearchHeader() {
               <>
                 <button
                   onClick={handleClear}
-                  className="p-2.5 rounded-full hover:bg-gray-200 text-gray-400 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                  className="min-h-[44px] min-w-[44px] rounded-full p-2.5 text-[var(--brand-ink-soft)] hover:bg-[rgba(203,188,174,0.18)] flex items-center justify-center"
                   title="지우기"
                 >
                   <X className="w-4 h-4" />
                 </button>
-                <div className="w-px h-3 bg-gray-300" />
+                <div className="h-3 w-px bg-[rgba(203,188,174,0.4)]" />
               </>
             )}
             <button
               onClick={handleCurrentLocation}
               disabled={isGeoLoading}
-              className={`p-1.5 rounded-full hover:bg-gray-200 transition-colors ${
-                isGeoLoading ? 'text-gray-400 animate-pulse' : 'text-emerald-600'
+              className={`rounded-full p-1.5 transition-colors hover:bg-[rgba(203,188,174,0.18)] ${
+                isGeoLoading ? 'text-[var(--brand-ink-soft)] animate-pulse' : 'text-[var(--brand-leaf)]'
               }`}
               title="내 위치 찾기"
             >
@@ -249,13 +242,13 @@ export function SearchHeader() {
 
           {/* Autocomplete Dropdown */}
           {isOpen && (
-            <div className="fixed top-[116px] left-0 right-0 bottom-0 bg-white z-50 overflow-y-auto border-t border-gray-200 md:absolute md:top-full md:left-0 md:right-0 md:bottom-auto md:h-auto md:mt-2 md:rounded-xl md:shadow-xl md:border md:overflow-hidden">
+            <div className="fixed top-[116px] left-0 right-0 bottom-0 z-50 overflow-y-auto border-t border-white/70 bg-[var(--brand-page)] md:absolute md:top-full md:left-0 md:right-0 md:bottom-auto md:mt-2 md:h-auto md:overflow-hidden md:rounded-[1.6rem] md:border md:bg-white/95 md:shadow-[0_28px_60px_rgba(121,128,92,0.14)]">
               {/* 모바일 검색 결과 헤더 */}
-              <div className="md:hidden sticky top-0 bg-white border-b border-gray-100 px-4 py-3 flex items-center justify-between">
-                <span className="text-sm font-medium text-gray-700">검색 결과</span>
+              <div className="md:hidden sticky top-0 flex items-center justify-between border-b border-[rgba(203,188,174,0.24)] bg-[var(--brand-page)] px-4 py-3">
+                <span className="text-sm font-medium text-[var(--brand-ink-soft)]">검색 결과</span>
                 <button
                   onClick={() => setOpen(false)}
-                  className="p-1.5 rounded-full hover:bg-gray-100 text-gray-500"
+                  className="rounded-full p-1.5 text-[var(--brand-ink-soft)] hover:bg-white/70"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -265,16 +258,16 @@ export function SearchHeader() {
               <button
                 onClick={handleCurrentLocation}
                 disabled={isGeoLoading}
-                className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left border-b border-gray-100"
+                className="flex w-full items-center gap-3 border-b border-[rgba(203,188,174,0.24)] px-4 py-3 text-left hover:bg-white/72"
               >
-                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                  <MapPin className="w-4 h-4 text-emerald-600" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(78,169,109,0.12)]">
+                  <MapPin className="w-4 h-4 text-[var(--brand-leaf)]" />
                 </div>
                 <div>
-                  <div className="font-medium text-gray-900">
+                  <div className="font-medium text-[var(--brand-ink)]">
                     {isGeoLoading ? '위치 확인 중...' : '현재 위치로 검색'}
                   </div>
-                  <div className="text-xs text-gray-500">GPS를 사용하여 내 위치 찾기</div>
+                  <div className="text-xs text-[var(--brand-ink-soft)]">GPS를 사용하여 내 위치 찾기</div>
                 </div>
               </button>
 
@@ -294,7 +287,7 @@ export function SearchHeader() {
                           <li key={kindergarten.kindercode}>
                             <button
                               onClick={() => handleSelectKindergarten(kindergarten)}
-                              className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-white/72"
                             >
                               <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                                 kindergarten.type === 'public'
@@ -308,10 +301,10 @@ export function SearchHeader() {
                                 }`} />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <div className="font-medium text-gray-900 truncate">
+                                <div className="font-medium text-[var(--brand-ink)] truncate">
                                   {kindergarten.name}
                                 </div>
-                                <div className="text-xs text-gray-500 truncate">
+                                <div className="text-xs text-[var(--brand-ink-soft)] truncate">
                                   {kindergarten.address}
                                 </div>
                               </div>
@@ -340,17 +333,17 @@ export function SearchHeader() {
                           <li key={`${suggestion.lat}-${suggestion.lng}-${index}`}>
                             <button
                               onClick={() => handleSelectAddress(suggestion)}
-                              className="w-full px-4 py-3 flex items-center gap-3 hover:bg-gray-50 text-left"
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-white/72"
                             >
-                              <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                                <MapPin className="w-4 h-4 text-gray-400" />
+                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(203,188,174,0.18)]">
+                                <MapPin className="w-4 h-4 text-[var(--brand-ink-soft)]" />
                               </div>
                               <div className="flex-1 min-w-0">
-                                <div className="font-medium text-gray-900 truncate">
+                                <div className="font-medium text-[var(--brand-ink)] truncate">
                                   {suggestion.placeName || suggestion.address}
                                 </div>
                                 {suggestion.placeName && (
-                                  <div className="text-xs text-gray-500 truncate">
+                                  <div className="text-xs text-[var(--brand-ink-soft)] truncate">
                                     {suggestion.address}
                                   </div>
                                 )}
@@ -377,7 +370,7 @@ export function SearchHeader() {
         {/* Header Actions - 모바일: 찜목록만 표시 */}
         <button
           onClick={() => setIsFavoritesPanelOpen(true)}
-          className="md:hidden relative p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100 flex-shrink-0"
+          className="relative flex-shrink-0 rounded-2xl p-2 text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)] md:hidden"
         >
           <Heart className="w-5 h-5" />
           {hasMounted && favoriteCount > 0 ? (
@@ -391,7 +384,7 @@ export function SearchHeader() {
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <button
             onClick={() => setIsFavoritesPanelOpen(true)}
-            className="relative flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-100"
+            className="relative flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
           >
             <Heart className="w-4 h-4" />
             찜한 목록
@@ -399,10 +392,10 @@ export function SearchHeader() {
               <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] min-w-5 h-5 rounded-full flex items-center justify-center font-bold px-1">
                 {favoriteCount > 99 ? '99+' : favoriteCount}
               </span>
-            ) : null}
+          ) : null}
           </button>
-          <div className="h-6 w-px bg-gray-200" />
-          <button className="flex items-center gap-2 text-sm font-bold text-emerald-600 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-lg transition-colors">
+          <div className="h-6 w-px bg-[rgba(203,188,174,0.34)]" />
+          <button className="flex items-center gap-2 rounded-full bg-[rgba(78,169,109,0.12)] px-4 py-2 text-sm font-bold text-[var(--brand-leaf)] transition-colors hover:bg-[rgba(78,169,109,0.18)]">
             <User className="w-4 h-4" />
             로그인
           </button>
@@ -410,15 +403,15 @@ export function SearchHeader() {
       </div>
 
       {/* Filters (Scrollable) */}
-      <div className="relative z-50 border-t border-gray-100 py-3 px-4 flex gap-2 overflow-x-auto overflow-y-visible hide-scrollbar bg-white">
+      <div className="relative z-50 flex gap-2 overflow-x-auto overflow-y-visible border-t border-white/70 bg-white/44 px-4 py-3 hide-scrollbar md:px-5">
         <button
           disabled
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-gray-200 bg-gray-50 text-xs font-medium text-gray-400 cursor-not-allowed whitespace-nowrap"
+          className="brand-chip cursor-not-allowed whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium text-[var(--brand-ink-soft)] opacity-55"
           title="준비 중인 기능입니다"
         >
           <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
         </button>
-        <div className="w-px h-6 bg-gray-200 mx-1" />
+        <div className="mx-1 h-6 w-px bg-[rgba(203,188,174,0.34)]" />
 
         {/* 반경 필터 버튼 */}
         <button
@@ -429,7 +422,7 @@ export function SearchHeader() {
             setIsTypeOpen(false);
             setBottomSheetOpen(newState);
           }}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500 bg-emerald-50 text-emerald-700 text-xs font-bold whitespace-nowrap"
+          className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] px-3 py-1.5 text-xs font-bold text-[var(--brand-leaf)]"
         >
           반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
         </button>
@@ -445,8 +438,8 @@ export function SearchHeader() {
           }}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.type !== 'all'
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700 font-bold'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)] font-bold'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           유형: {filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}
@@ -458,8 +451,8 @@ export function SearchHeader() {
           onClick={handleBusToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasBus === true
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           <Bus className="w-3.5 h-3.5" /> 셔틀버스
@@ -470,8 +463,8 @@ export function SearchHeader() {
           onClick={handleVacancyToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasVacancy === true
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           <UserCheck className="w-3.5 h-3.5" /> 여유정원
@@ -482,8 +475,8 @@ export function SearchHeader() {
           onClick={handleIndoorPlaygroundToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasIndoorPlayground === true
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           <Home className="w-3.5 h-3.5" /> 실내놀이터
@@ -494,8 +487,8 @@ export function SearchHeader() {
           onClick={handleLargeSpaceToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasLargeSpace === true
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           <Maximize className="w-3.5 h-3.5" /> 넓은 공간
@@ -506,12 +499,14 @@ export function SearchHeader() {
           onClick={handleModernBuildingToggle}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasModernBuilding === true
-              ? 'border-emerald-500 bg-emerald-50 text-emerald-700'
-              : 'border-gray-200 bg-white text-gray-600 hover:border-gray-400'
+              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
+              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
           <Building2 className="w-3.5 h-3.5" /> 최신건물
         </button>
+      </div>
+        </div>
       </div>
 
       {/* Backdrop for search dropdown - positioned below header (hidden on mobile since dropdown is fullscreen) */}

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import {
   ArrowLeft,
   MapPin,
@@ -10,6 +9,7 @@ import {
   Database,
   RefreshCw,
 } from 'lucide-react';
+import { BrandMark } from '@/components/common/BrandMark';
 import { Footer } from '@/components/landing/Footer';
 
 export const metadata: Metadata = {
@@ -59,49 +59,40 @@ const features = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-white min-h-screen font-sans">
+    <div className="min-h-screen font-sans">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <header className="fixed top-0 z-50 w-full px-4 pt-3">
+        <div className="brand-shell mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="rounded-full bg-white/80 p-2 transition-colors hover:bg-white"
               aria-label="홈으로"
             >
-              <ArrowLeft className="w-5 h-5 text-gray-600" />
+              <ArrowLeft className="h-5 w-5 text-[var(--brand-ink)]" />
             </Link>
-            <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="우리동네 유치원"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
-              <span className="text-xl font-bold tracking-tight text-gray-900">
-                우리동네 유치원
-              </span>
+            <Link href="/">
+              <BrandMark compact labelClassName="text-lg" />
             </Link>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-emerald-50 to-white">
+      <section className="bg-gradient-to-b from-[rgba(244,216,106,0.12)] to-transparent pb-16 pt-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="mb-6 text-4xl font-bold text-[var(--brand-ink)] md:text-5xl">
             우리 아이에게 맞는
             <br />
-            <span className="text-emerald-500">유치원을 쉽게 찾아보세요</span>
+            <span className="text-[var(--brand-leaf)]">유치원을 쉽게 찾아보세요</span>
           </h1>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-[var(--brand-ink-soft)]">
             복잡한 검색 없이 내 위치 기반으로 주변 유치원을 한눈에 비교하고,
             가족과 함께 고민해보세요.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-emerald-100 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)]"
           >
             지금 검색하기
             <MapPin className="w-5 h-5" />
