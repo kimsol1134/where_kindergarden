@@ -426,6 +426,26 @@ public final class NativeAppModel: ObservableObject {
         selectedTab = .search
     }
 
+    public func removeRecentSearch(_ search: RecentSearch) {
+        recentSearches.removeAll {
+            $0.id == search.id || ($0.label == search.label && $0.coordinates == search.coordinates)
+        }
+        persistence.saveRecentSearches(recentSearches)
+    }
+
+    public func deleteRecentSearches(atOffsets offsets: IndexSet) {
+        for offset in offsets.sorted(by: >) {
+            recentSearches.remove(at: offset)
+        }
+        persistence.saveRecentSearches(recentSearches)
+    }
+
+    public func clearRecentSearches() {
+        guard !recentSearches.isEmpty else { return }
+        recentSearches = []
+        persistence.saveRecentSearches(recentSearches)
+    }
+
     private func refresh() {
         guard !allKindergartens.isEmpty else {
             results = []

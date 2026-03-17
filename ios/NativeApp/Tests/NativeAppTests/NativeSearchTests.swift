@@ -163,6 +163,47 @@ final class NativeSearchTests: XCTestCase {
     }
 
     @MainActor
+    func testSearchModelRemovesSingleRecentSearch() {
+        let model = makeModel()
+        let cityHall = RecentSearch(
+            label: "서울시청",
+            coordinates: Coordinates(lat: 37.5665, lng: 126.9780)
+        )
+        let gangnam = RecentSearch(
+            label: "강남역",
+            coordinates: Coordinates(lat: 37.4979, lng: 127.0276)
+        )
+
+        model.restoreRecentSearch(cityHall)
+        model.restoreRecentSearch(gangnam)
+        model.removeRecentSearch(gangnam)
+
+        XCTAssertEqual(model.recentSearches.map(\.label), ["서울시청"])
+    }
+
+    @MainActor
+    func testSearchModelClearsRecentSearches() {
+        let model = makeModel()
+
+        model.restoreRecentSearch(
+            RecentSearch(
+                label: "서울시청",
+                coordinates: Coordinates(lat: 37.5665, lng: 126.9780)
+            )
+        )
+        model.restoreRecentSearch(
+            RecentSearch(
+                label: "강남역",
+                coordinates: Coordinates(lat: 37.4979, lng: 127.0276)
+            )
+        )
+
+        model.clearRecentSearches()
+
+        XCTAssertTrue(model.recentSearches.isEmpty)
+    }
+
+    @MainActor
     func testSearchModelFallsBackToLocalSuggestionsWhenRuntimeConfigMissing() {
         let service = KakaoLocalSuggestionService(
             client: KakaoLocalAPIClient(apiKey: nil)

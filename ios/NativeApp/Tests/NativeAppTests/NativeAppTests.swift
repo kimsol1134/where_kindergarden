@@ -144,6 +144,16 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(webLink, .compare(ids: ["A003"]))
     }
 
+    func testNativeAppConfigurationTreatsUnresolvedKakaoBuildSettingsAsMissing() {
+        let configuration = NativeAppConfiguration(
+            kakaoAppKey: "$(WK_KAKAO_NATIVE_APP_KEY)",
+            kakaoRESTAPIKey: "   "
+        )
+
+        XCTAssertNil(configuration.kakaoAppKey)
+        XCTAssertNil(configuration.kakaoRESTAPIKey)
+    }
+
     @MainActor
     func testPersistenceRestoresFavoritesRecentsAndCompareSelection() {
         let store = InMemoryNativeAppStore()
