@@ -13,6 +13,9 @@ let package = Package(
         .library(name: "Features", targets: ["Features"]),
         .library(name: "AppShell", targets: ["AppShell"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git", branch: "master"),
+    ],
     targets: [
         .target(
             name: "Models"
@@ -23,7 +26,15 @@ let package = Package(
         ),
         .target(
             name: "Features",
-            dependencies: ["Models", "Services"]
+            dependencies: [
+                "Models",
+                "Services",
+                .product(
+                    name: "KakaoMapsSDK-SPM",
+                    package: "KakaoMapsSDK-SPM",
+                    condition: .when(platforms: [.iOS])
+                ),
+            ]
         ),
         .target(
             name: "AppShell",

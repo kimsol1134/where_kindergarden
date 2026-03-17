@@ -282,21 +282,63 @@ public struct Kindergarten: Identifiable, Hashable, Sendable {
 
 public struct ReviewLink: Codable, Identifiable, Hashable, Sendable {
     public let id: String
+    public let kindergartenId: String?
     public let title: String
     public let url: String
     public let source: String
+    public let sourceName: String?
     public let snippet: String
-    public let date: String
+    public let summary: String?
+    public let tags: [String]?
+    public let content: String?
+    public let date: String?
     public let collectedAt: String
+    public let relevanceScore: Int?
+
+    public init(
+        id: String,
+        kindergartenId: String?,
+        title: String,
+        url: String,
+        source: String,
+        sourceName: String?,
+        snippet: String,
+        summary: String?,
+        tags: [String]?,
+        content: String?,
+        date: String?,
+        collectedAt: String,
+        relevanceScore: Int?
+    ) {
+        self.id = id
+        self.kindergartenId = kindergartenId
+        self.title = title
+        self.url = url
+        self.source = source
+        self.sourceName = sourceName
+        self.snippet = snippet
+        self.summary = summary
+        self.tags = tags
+        self.content = content
+        self.date = date
+        self.collectedAt = collectedAt
+        self.relevanceScore = relevanceScore
+    }
 
     enum CodingKeys: String, CodingKey {
         case id
+        case kindergartenId
         case title
         case url
         case source
+        case sourceName
         case snippet
+        case summary
+        case tags
+        case content
         case date
         case collectedAt = "collectedAt"
+        case relevanceScore
     }
 }
 
@@ -305,6 +347,18 @@ public struct ReviewsData: Codable, Hashable, Sendable {
     public let totalCount: Int
     public let kindergartenCount: Int
     public let reviews: [String: [ReviewLink]]
+
+    public init(
+        version: String,
+        totalCount: Int,
+        kindergartenCount: Int,
+        reviews: [String: [ReviewLink]]
+    ) {
+        self.version = version
+        self.totalCount = totalCount
+        self.kindergartenCount = kindergartenCount
+        self.reviews = reviews
+    }
 
     enum CodingKeys: String, CodingKey {
         case version

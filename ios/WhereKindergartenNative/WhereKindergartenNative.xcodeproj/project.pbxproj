@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28F4DE09ADED88E19075522 /* Assets.xcassets */; };
+		476CD3D9B77EE4C0C3C64E5C /* kindergartens.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */; };
+		6E9A9CAA3EAE26E600A56F98 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = 41EAF112B635B0F638C82AC1 /* AppShell */; };
+		76993D7A0C92DBC68350157A /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 175D3B701759603B8E6884C6 /* reviews.json */; };
+		EC743E9EFFC6BB7CAD5D32B4 /* WhereKindergartenNativeHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D2C57622F53A73CECF46A59 /* NativeApp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeApp; path = ../NativeApp; sourceTree = SOURCE_ROOT; };
+		175D3B701759603B8E6884C6 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
+		2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kindergartens.json; sourceTree = "<group>"; };
+		6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereKindergartenNativeHostApp.swift; sourceTree = "<group>"; };
+		C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WhereKindergartenNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28F4DE09ADED88E19075522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6133C5DC019C711AFC0B0FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9A9CAA3EAE26E600A56F98 /* AppShell in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B0354592B2891DB7E86425 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				55A78FEC9157F220DE617532 /* App */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2E3C959622239FB0C26A30A7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */,
+				175D3B701759603B8E6884C6 /* reviews.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		4B881123B4A59183867576F7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C57622F53A73CECF46A59 /* NativeApp */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4D8EC3288D49FCA900BB53A0 /* where_kindergarden-native-ios-phase */ = {
+			isa = PBXGroup;
+			children = (
+				F0435359057D1D55E2D04766 /* public */,
+			);
+			name = "where_kindergarden-native-ios-phase";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		55A78FEC9157F220DE617532 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D28F4DE09ADED88E19075522 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		594615B87801135194FB99CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C244F8C4272AA666E83E370 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		910DD70A1B98A8662D8FD12A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				02B0354592B2891DB7E86425 /* App */,
+			);
+			name = ios;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F0435359057D1D55E2D04766 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C959622239FB0C26A30A7 /* data */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		F3E69CA0CFB46F897F4F6E30 = {
+			isa = PBXGroup;
+			children = (
+				910DD70A1B98A8662D8FD12A /* ios */,
+				4B881123B4A59183867576F7 /* Packages */,
+				5C244F8C4272AA666E83E370 /* Sources */,
+				4D8EC3288D49FCA900BB53A0 /* where_kindergarden-native-ios-phase */,
+				594615B87801135194FB99CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5667C77232876B6DB901884A /* WhereKindergartenNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31136805B9937407D49EE09C /* Build configuration list for PBXNativeTarget "WhereKindergartenNative" */;
+			buildPhases = (
+				C1BAB1467DCB3F0462055A9C /* Sources */,
+				10A46C1DD5054FC2881C4E40 /* Resources */,
+				6133C5DC019C711AFC0B0FE5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhereKindergartenNative;
+			packageProductDependencies = (
+				41EAF112B635B0F638C82AC1 /* AppShell */,
+			);
+			productName = WhereKindergartenNative;
+			productReference = C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F03EF1F8EE01311ACAA16BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5667C77232876B6DB901884A = {
+						DevelopmentTeam = D48DDX5D5W;
+					};
+				};
+			};
+			buildConfigurationList = A6EE24140483066B5EDC5C36 /* Build configuration list for PBXProject "WhereKindergartenNative" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F3E69CA0CFB46F897F4F6E30;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9C00BD24812F2349CF260C84 /* XCLocalSwiftPackageReference "../NativeApp" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5667C77232876B6DB901884A /* WhereKindergartenNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10A46C1DD5054FC2881C4E40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */,
+				476CD3D9B77EE4C0C3C64E5C /* kindergartens.json in Resources */,
+				76993D7A0C92DBC68350157A /* reviews.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1BAB1467DCB3F0462055A9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC743E9EFFC6BB7CAD5D32B4 /* WhereKindergartenNativeHostApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		588CD49B0CF7105DD30C625B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_MODULE_NAME = WhereKindergartenNative;
+				PRODUCT_NAME = WhereKindergartenNative;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB44C37C3829C104A79FE602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_MODULE_NAME = WhereKindergartenNative;
+				PRODUCT_NAME = WhereKindergartenNative;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BF8B9724303A6DB58F9C968C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ../NativeApp/Config/NativeApp.entitlements;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D48DDX5D5W;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ../NativeApp/Config/NativeAppInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				KAKAO_NATIVE_APP_KEY = "";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solkim.wherekindergarten.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C07EF66781EF5188EC759987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ../NativeApp/Config/NativeApp.entitlements;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D48DDX5D5W;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ../NativeApp/Config/NativeAppInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				KAKAO_NATIVE_APP_KEY = "";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.solkim.wherekindergarten.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31136805B9937407D49EE09C /* Build configuration list for PBXNativeTarget "WhereKindergartenNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				588CD49B0CF7105DD30C625B /* Debug */,
+				AB44C37C3829C104A79FE602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6EE24140483066B5EDC5C36 /* Build configuration list for PBXProject "WhereKindergartenNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8B9724303A6DB58F9C968C /* Debug */,
+				C07EF66781EF5188EC759987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9C00BD24812F2349CF260C84 /* XCLocalSwiftPackageReference "../NativeApp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../NativeApp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41EAF112B635B0F638C82AC1 /* AppShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppShell;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F03EF1F8EE01311ACAA16BBE /* Project object */;
+}

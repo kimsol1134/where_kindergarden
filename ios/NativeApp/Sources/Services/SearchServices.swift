@@ -153,6 +153,18 @@ public struct DeepLinkParser {
     public init() {}
 
     public func destination(for url: URL) -> DeepLinkDestination? {
+        if url.scheme == "https" || url.scheme == "http" {
+            guard url.host == "where-kindergarden.vercel.app" else {
+                return nil
+            }
+        }
+
+        if url.scheme != "wherekindergarten",
+           url.scheme != "https",
+           url.scheme != "http" {
+            return nil
+        }
+
         let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
         let ids = components?.queryItems?
             .first(where: { $0.name == "ids" })?
