@@ -15,6 +15,7 @@ export { useKindergartenStore } from './kindergartenStore';
 export type { KindergartenRaw } from './kindergartenStore';
 
 export { useReviewStore } from './reviewStore';
+export { useVacancyStore } from './vacancyStore';
 export { useAuthStore } from './authStore';
 
 export { useUIStore } from './uiStore';

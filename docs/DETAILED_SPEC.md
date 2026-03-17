@@ -123,6 +123,18 @@ const cookie = (await cookies()).get('token');
 | Supabase | 지오코딩 결과 | 영구 (주소 변경 시 갱신) |
 | Browser | 정적 자원 | Vercel 기본 설정 |
 
+### 2.4 공식 결원정보 동기화
+
+- 데이터 소스: `https://www.go-firstschool.go.kr/PAMS_SS/selectVacancyInfoList.do`
+- 수집 방식: 배치 스크립트가 HTML 응답을 정규화해 `public/data/vacancy.json` 생성
+- 조인 키: `kindercode === ittId`
+- 런타임 로딩: 배포된 `/data/vacancy.json` 우선, 실패 시 번들된 파일 fallback
+- 참고: live 사이트는 Node/undici 기준 인증서 체인 검증 오류가 있어 sync 스크립트 프로세스에서만 TLS 검증 완화 필요
+- 운영 절차:
+  1. `pnpm sync:vacancy -- --year 2026`
+  2. 생성된 `public/data/vacancy.json` 검수
+  3. 배포 후 검색 카드와 상세 패널에서 읽기 전용으로 표시
+
 ---
 
 ## 3. 데이터베이스 스키마

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import {
   X,
@@ -21,11 +21,12 @@ import {
   Loader2,
   Heart,
   Newspaper,
+  UserCheck,
 } from 'lucide-react';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
-import { useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
+import { useCompareStore, useFavoriteStore, useReviewStore, useVacancyStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 import { ReviewPreview } from '@/components/review/ReviewPreview';
 
@@ -81,6 +82,11 @@ function formatEstablishDate(dateStr: string): string {
   return `${year}년 ${parseInt(month)}월 ${parseInt(day)}일`;
 }
 
+function formatVacancyUpdatedAt(dateStr: string | null): string | null {
+  if (!dateStr) return null;
+  return dateStr.replace(/-/g, '.');
+}
+
 /** 정보 행 컴포넌트 */
 function InfoRow({
   label,
@@ -124,6 +130,15 @@ export function KindergartenDetailPanel({
 
   // 후기 수
   const reviewCount = useReviewStore((state) => state.getCountByKindergartenId(kindergarten.kindercode));
+  const {
+    isLoaded: isVacancyLoaded,
+    isLoading: isVacancyLoading,
+    error: vacancyError,
+    loadData: loadVacancyData,
+    getByKindergartenId,
+  } = useVacancyStore();
+  const vacancySummary = getByKindergartenId(kindergarten.kindercode);
+  const formattedVacancyUpdatedAt = formatVacancyUpdatedAt(vacancySummary?.updatedAt ?? null);
 
   // 찜하기 상태
   const { isFavorite, toggleItem: toggleFavorite } = useFavoriteStore();
@@ -131,6 +146,10 @@ export function KindergartenDetailPanel({
   const handleFavoriteToggle = () => {
     toggleFavorite(kindergarten);
   };
+
+  useEffect(() => {
+    loadVacancyData();
+  }, [loadVacancyData]);
 
   // 학급 수 데이터
   const totalClassCount =
@@ -554,6 +573,85 @@ export function KindergartenDetailPanel({
                 valueClassName={kindergarten.mealType !== 'none' ? 'text-emerald-600' : 'text-gray-400'}
               />
             </div>
+          </div>
+
+          <div className="p-5 border-b border-gray-100">
+            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
+              <UserCheck className="w-4 h-4 text-emerald-600" />
+              공식 결원정보
+            </h4>
+
+            {isVacancyLoading && !isVacancyLoaded ? (
+              <div className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-5 text-sm text-gray-500">
+                공식 결원정보 확인 중...
+              </div>
+            ) : vacancyError ? (
+              <div className="rounded-xl border border-red-100 bg-red-50 px-4 py-5 text-sm text-red-600">
+                {vacancyError}
+              </div>
+            ) : vacancySummary && vacancySummary.vacancyCount > 0 ? (
+              <div className="space-y-4">
+                <div className="rounded-xl border border-rose-100 bg-rose-50 px-4 py-4">
+                  <div className="flex items-center justify-between gap-4">
+                    <div>
+                      <div className="text-xs font-medium text-rose-500">공식 결원 등록</div>
+                      <div className="mt-1 text-2xl font-bold text-rose-700">
+                        총 결원 {vacancySummary.vacancyCount}명
+                      </div>
+                    </div>
+                    {formattedVacancyUpdatedAt && (
+                      <div className="text-right text-xs text-rose-500">
+                        최종 변경
+                        <div className="mt-1 font-semibold text-rose-700">
+                          {formattedVacancyUpdatedAt}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {vacancySummary.detail.length > 0 && (
+                  <div className="space-y-2">
+                    {vacancySummary.detail.map((detail) => (
+                      <div
+                        key={`${detail.rowNo}-${detail.age}-${detail.course}`}
+                        className="rounded-xl border border-gray-100 bg-white px-4 py-3"
+                      >
+                        <div className="flex items-center justify-between gap-3">
+                          <div>
+                            <div className="text-sm font-semibold text-gray-900">{detail.age}</div>
+                            <div className="text-xs text-gray-500 mt-1">{detail.course}</div>
+                          </div>
+                          <div className="text-sm font-bold text-rose-600">
+                            결원 {detail.vacancyCount}명
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : vacancySummary ? (
+              <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-5">
+                <div className="text-sm font-semibold text-emerald-700">
+                  현재 등록된 공식 결원은 없습니다.
+                </div>
+                <div className="text-xs text-emerald-600 mt-1">
+                  {formattedVacancyUpdatedAt
+                    ? `최종 변경일 ${formattedVacancyUpdatedAt}`
+                    : '기관에서 결원 정보를 0명으로 등록했습니다.'}
+                </div>
+              </div>
+            ) : (
+              <div className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-5">
+                <div className="text-sm font-semibold text-gray-700">
+                  공식 결원 등록 정보가 없습니다.
+                </div>
+                <div className="text-xs text-gray-500 mt-1">
+                  해당 기관이 유치원입학 시스템에 결원정보를 등록하지 않았을 수 있습니다.
+                </div>
+              </div>
+            )}
           </div>
 
           {/* 안전 정보 */}

@@ -4,7 +4,13 @@
 import { useCallback, useMemo, useRef, useEffect } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
 import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
-import { useSearchStore, useCompareStore, useFavoriteStore, useReviewStore } from '@/stores';
+import {
+  useSearchStore,
+  useCompareStore,
+  useFavoriteStore,
+  useReviewStore,
+  useVacancyStore,
+} from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
@@ -64,6 +70,10 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   } = useFavoriteStore();
 
   const { loadData: loadReviews, getCountByKindergartenId } = useReviewStore();
+  const {
+    loadData: loadVacancyData,
+    getCountByKindergartenId: getVacancyCountByKindergartenId,
+  } = useVacancyStore();
 
   // Memoize filtered and sorted results to avoid recalculation on every render
   // storeResults를 의존성에 추가하여 검색 결과 변경 시 재계산
@@ -79,8 +89,9 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   useEffect(() => {
     if (results.length > 0) {
       loadReviews();
+      loadVacancyData();
     }
-  }, [results.length, loadReviews]);
+  }, [results.length, loadReviews, loadVacancyData]);
 
   // Save scroll position when switching to map view
   useEffect(() => {
@@ -286,6 +297,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
                     canAddToCompare={canAdd()}
                     isFavorite={isFavorite(kindergarten.kindercode)}
                     reviewCount={getCountByKindergartenId(kindergarten.kindercode)}
+                    vacancyCount={getVacancyCountByKindergartenId(kindergarten.kindercode)}
                     onClick={() => handleCardClick(kindergarten.kindercode)}
                     onCompareToggle={() => handleCompareToggle(kindergarten)}
                     onFavoriteToggle={() => handleFavoriteToggle(kindergarten)}
@@ -330,6 +342,7 @@ interface KindergartenCardProps {
   canAddToCompare: boolean;
   isFavorite: boolean;
   reviewCount: number;
+  vacancyCount: number;
   onClick: () => void;
   onCompareToggle: () => void;
   onFavoriteToggle: () => void;
@@ -343,6 +356,7 @@ function KindergartenCard({
   canAddToCompare,
   isFavorite,
   reviewCount,
+  vacancyCount,
   onClick,
   onCompareToggle,
   onFavoriteToggle,
@@ -402,6 +416,11 @@ function KindergartenCard({
 
         {/* 태그들 */}
         <div className="flex gap-1.5 flex-wrap mt-1">
+          {vacancyCount > 0 && (
+            <span className="px-2 py-1 rounded-md bg-rose-50 border border-rose-100 text-rose-600 text-[11px] font-medium">
+              공식 결원 {vacancyCount}명
+            </span>
+          )}
           {kindergarten.hasAfterSchool && (
             <span className="px-2 py-1 rounded-md bg-gray-50 border border-gray-100 text-gray-600 text-[11px] font-medium">
               방과후과정
