@@ -1,5 +1,84 @@
 # 유치원 후기 데이터 검증 프롬프트
 
+## 2026-03 검증 파이프라인용 권장 흐름
+
+이 프롬프트 파일은 이제 전체 리뷰 파일 전수 검토보다, 자동 파이프라인에서 `uncertain`으로 남은 링크를 재판정하는 용도로 사용합니다.
+
+### 입력 파일
+
+- `scripts/data-output/review-verification-llm-queue-11-41.json`
+- 항목별 포함 정보:
+  - `reviewId`
+  - `kindergartenId`
+  - `kindergartenName`
+  - `kindergartenAddress`
+  - `title`
+  - `snippet`
+  - `bodyExcerpt`
+  - `whyFlagged`
+  - `autoReasons`
+
+### LLM에게 요구할 것
+
+아래 3가지만 요구합니다.
+
+1. `verdict`
+   - `verified`
+   - `mismatch`
+   - `advertorial`
+   - `generic_info`
+   - `uncertain`
+2. `reason`
+   - 한두 문장으로 왜 그렇게 판단했는지
+3. `confidence`
+   - `0`~`1` 사이 숫자
+
+### 보수적 판정 원칙
+
+- 해당 유치원명이 직접 확인되고 실제 경험/설명회/재원/교육과정/급식/버스/교사 관련 정보가 있으면 `verified`
+- 다른 유치원이 실제 주제이거나 지역/기관이 어긋나면 `mismatch`
+- 업체 홍보, 학원 광고, 행사 대행, 부동산, 맛집, 시장 후기 등은 `advertorial`
+- 정책 안내, 지원금, 일반 지역 정보, 질문글, 리스트글은 `generic_info`
+- 조금이라도 애매하면 `uncertain`
+
+### 권장 프롬프트
+
+```text
+첨부한 JSON은 유치원 후기 자동 검증 파이프라인에서 `uncertain`으로 남은 링크들입니다.
+각 항목에 대해 아래 3개만 판단해주세요.
+
+1. verdict: verified | mismatch | advertorial | generic_info | uncertain
+2. reason: 1~2문장
+3. confidence: 0~1 숫자
+
+판정 기준:
+- verified: 해당 유치원이 실제 주제이고, 경험담/설명회/재원/교육과정/급식/버스/교사/원비 등 실질 정보가 있음
+- mismatch: 다른 유치원/어린이집이 실제 주제이거나 잘못 연결됨
+- advertorial: 업체 홍보, 학원 광고, 행사대행, 부동산, 맛집/시장/일반 상업성 글
+- generic_info: 정책 안내, 지원금, 질문글, 일반 정보글, 리스트형 모음
+- uncertain: 확정 근거 부족
+
+반드시 아래 JSON만 반환해주세요:
+{
+  "decisions": [
+    {
+      "reviewId": "rev-XXXX",
+      "verdict": "verified",
+      "confidence": 0.91,
+      "reason": "해당 유치원 설명회 경험과 급식/교사 정보가 본문에 직접 나옵니다."
+    }
+  ]
+}
+
+보수적으로 판단해주세요. 확신이 낮으면 uncertain으로 두세요.
+```
+
+### 반영 규칙
+
+- `scripts/finalize-review-verification.ts --llm <result.json>` 으로 merge
+- 기본 임계값은 `confidence >= 0.8`
+- `uncertain`은 자동 삭제하지 않음
+
 ## 사용법
 
 파일을 첨부하고 아래 프롬프트를 복사해서 사용하세요.
