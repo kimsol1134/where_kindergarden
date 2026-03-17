@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28F4DE09ADED88E19075522 /* Assets.xcassets */; };
-		476CD3D9B77EE4C0C3C64E5C /* kindergartens.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */; };
+		2F8EFBCB22FF27C4B61449DB /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C2215E8F5BD484A2ACBDE8 /* reviews.json */; };
 		6E9A9CAA3EAE26E600A56F98 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = 41EAF112B635B0F638C82AC1 /* AppShell */; };
-		76993D7A0C92DBC68350157A /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 175D3B701759603B8E6884C6 /* reviews.json */; };
+		C21BF0BD13CEF6E1687A5D87 /* kindergartens.json in Resources */ = {isa = PBXBuildFile; fileRef = 35428D688B8EE0590B8914FC /* kindergartens.json */; };
 		EC743E9EFFC6BB7CAD5D32B4 /* WhereKindergartenNativeHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D2C57622F53A73CECF46A59 /* NativeApp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeApp; path = ../NativeApp; sourceTree = SOURCE_ROOT; };
-		175D3B701759603B8E6884C6 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reviews.json; sourceTree = "<group>"; };
-		2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kindergartens.json; sourceTree = "<group>"; };
+		35428D688B8EE0590B8914FC /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = kindergartens.json; path = ../../public/data/kindergartens.json; sourceTree = "<group>"; };
+		43C2215E8F5BD484A2ACBDE8 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = reviews.json; path = ../../public/data/reviews.json; sourceTree = "<group>"; };
 		6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereKindergartenNativeHostApp.swift; sourceTree = "<group>"; };
 		C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WhereKindergartenNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E16FB563928C2F7D96A79E /* KakaoKeys.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = KakaoKeys.example.xcconfig; sourceTree = "<group>"; };
 		D28F4DE09ADED88E19075522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E49744D980789CA185FFB382 /* WhereKindergartenNative.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WhereKindergartenNative.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,30 +45,12 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		2E3C959622239FB0C26A30A7 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				2B427CF5C80DB2DD6C7984A9 /* kindergartens.json */,
-				175D3B701759603B8E6884C6 /* reviews.json */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
 		4B881123B4A59183867576F7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
 				0D2C57622F53A73CECF46A59 /* NativeApp */,
 			);
 			name = Packages;
-			sourceTree = "<group>";
-		};
-		4D8EC3288D49FCA900BB53A0 /* where_kindergarden-native-ios-phase */ = {
-			isa = PBXGroup;
-			children = (
-				F0435359057D1D55E2D04766 /* public */,
-			);
-			name = "where_kindergarden-native-ios-phase";
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		55A78FEC9157F220DE617532 /* App */ = {
@@ -83,6 +67,14 @@
 				C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5C1565DEF9AA12B1087CCEEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBC01A2A8E7CA59198A21B5F /* Data */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		5C244F8C4272AA666E83E370 /* Sources */ = {
@@ -102,21 +94,32 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		F0435359057D1D55E2D04766 /* public */ = {
+		DC6EBACDE3417AE0316182AA /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				2E3C959622239FB0C26A30A7 /* data */,
+				C8E16FB563928C2F7D96A79E /* KakaoKeys.example.xcconfig */,
+				E49744D980789CA185FFB382 /* WhereKindergartenNative.xcconfig */,
 			);
-			path = public;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EBC01A2A8E7CA59198A21B5F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				35428D688B8EE0590B8914FC /* kindergartens.json */,
+				43C2215E8F5BD484A2ACBDE8 /* reviews.json */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		F3E69CA0CFB46F897F4F6E30 = {
 			isa = PBXGroup;
 			children = (
+				DC6EBACDE3417AE0316182AA /* Config */,
 				910DD70A1B98A8662D8FD12A /* ios */,
 				4B881123B4A59183867576F7 /* Packages */,
+				5C1565DEF9AA12B1087CCEEE /* Resources */,
 				5C244F8C4272AA666E83E370 /* Sources */,
-				4D8EC3288D49FCA900BB53A0 /* where_kindergarden-native-ios-phase */,
 				594615B87801135194FB99CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */,
-				476CD3D9B77EE4C0C3C64E5C /* kindergartens.json in Resources */,
-				76993D7A0C92DBC68350157A /* reviews.json in Resources */,
+				C21BF0BD13CEF6E1687A5D87 /* kindergartens.json in Resources */,
+				2F8EFBCB22FF27C4B61449DB /* reviews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +210,7 @@
 /* Begin XCBuildConfiguration section */
 		588CD49B0CF7105DD30C625B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49744D980789CA185FFB382 /* WhereKindergartenNative.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -225,6 +229,7 @@
 		};
 		AB44C37C3829C104A79FE602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49744D980789CA185FFB382 /* WhereKindergartenNative.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -299,7 +304,6 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ../NativeApp/Config/NativeAppInfo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				KAKAO_NATIVE_APP_KEY = "";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -368,7 +372,6 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ../NativeApp/Config/NativeAppInfo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				KAKAO_NATIVE_APP_KEY = "";
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

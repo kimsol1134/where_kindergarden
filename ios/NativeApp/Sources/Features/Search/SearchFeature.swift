@@ -186,7 +186,8 @@ private struct SearchChrome: View {
                         localSuggestions: model.localSearchSuggestions,
                         remoteSuggestions: model.remoteSearchSuggestions,
                         isLoading: model.isSearchSuggestionsLoading,
-                        message: model.searchSuggestionMessage
+                        message: model.searchSuggestionMessage,
+                        onClearRecentSearches: model.clearRecentSearches
                     ) { suggestion in
                         model.selectSearchSuggestion(suggestion)
                         isSearchFieldFocused = false
@@ -251,6 +252,7 @@ private struct SearchSuggestionPanel: View {
     let remoteSuggestions: [SearchSuggestion]
     let isLoading: Bool
     let message: String?
+    let onClearRecentSearches: () -> Void
     let onSelect: (SearchSuggestion) -> Void
 
     private var shouldShowEmptyState: Bool {
@@ -269,11 +271,28 @@ private struct SearchSuggestionPanel: View {
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 } else {
-                    SearchSuggestionSection(
-                        title: "최근 검색",
-                        suggestions: recentSuggestions,
-                        onSelect: onSelect
-                    )
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack {
+                            Text("최근 검색")
+                                .font(.caption.weight(.semibold))
+                                .foregroundStyle(.secondary)
+                            Spacer()
+                            Button("전체 삭제", role: .destructive, action: onClearRecentSearches)
+                                .font(.caption.weight(.semibold))
+                                .buttonStyle(.plain)
+                        }
+
+                        VStack(spacing: 10) {
+                            ForEach(recentSuggestions) { suggestion in
+                                Button {
+                                    onSelect(suggestion)
+                                } label: {
+                                    SearchSuggestionRow(suggestion: suggestion)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                    }
                 }
             } else {
                 if !localSuggestions.isEmpty {

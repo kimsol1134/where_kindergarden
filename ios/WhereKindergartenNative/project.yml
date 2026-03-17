@@ -1,6 +1,13 @@
+minimumXcodeGenVersion: 2.44.1
 name: WhereKindergartenNative
 options:
   createIntermediateGroups: true
+  preGenCommand: |
+    if [ -d "WhereKindergartenNative.xcodeproj" ]; then
+      rm -rf "WhereKindergartenNative.xcodeproj"
+    fi
+fileGroups:
+  - Config
 settings:
   base:
     SWIFT_VERSION: 5.10
@@ -16,8 +23,6 @@ settings:
     TARGETED_DEVICE_FAMILY: "1"
     SUPPORTS_MACCATALYST: NO
     SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
-    KAKAO_NATIVE_APP_KEY: ""
-    KAKAO_REST_API_KEY: ""
 packages:
   NativeApp:
     path: ../NativeApp
@@ -26,13 +31,18 @@ targets:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
+    configFiles:
+      Debug: Config/WhereKindergartenNative.xcconfig
+      Release: Config/WhereKindergartenNative.xcconfig
     sources:
       - path: Sources
       - path: ../App/App/Assets.xcassets
         buildPhase: resources
       - path: ../../public/data/kindergartens.json
+        group: Resources/Data
         buildPhase: resources
       - path: ../../public/data/reviews.json
+        group: Resources/Data
         buildPhase: resources
     dependencies:
       - package: NativeApp

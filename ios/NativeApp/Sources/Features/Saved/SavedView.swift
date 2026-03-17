@@ -31,7 +31,7 @@ public struct SavedView: View {
                     }
                 }
 
-                Section("최근 검색") {
+                Section {
                     if model.recentSearches.isEmpty {
                         Text("현재 위치 또는 주소 기반 검색을 하면 최근 검색이 남습니다.")
                             .foregroundStyle(.secondary)
@@ -50,6 +50,16 @@ public struct SavedView: View {
                                 }
                             }
                             .buttonStyle(.plain)
+                        }
+                        .onDelete(perform: model.deleteRecentSearches)
+                    }
+                } header: {
+                    HStack {
+                        Text("최근 검색")
+                        Spacer()
+                        if !model.recentSearches.isEmpty {
+                            Button("전체 삭제", role: .destructive, action: model.clearRecentSearches)
+                                .font(.caption.weight(.semibold))
                         }
                     }
                 }
