@@ -1,46 +1,41 @@
-# 서울 유치원 후기 수집 작업 인계
+# HANDOFF.md
 
 ## 마지막 작업 일시
-2026-01-28 (오후)
+2026-03-17
 
-## 현재 상황 요약
+## 완료된 작업
+- [x] 공식 결원정보 타입 추가 (`src/types/vacancy.ts`)
+- [x] 공식 결원정보 스토어 추가 (`src/stores/vacancyStore.ts`)
+- [x] 결원 HTML 파서 추가 (`src/lib/vacancy/parser.ts`)
+- [x] 결원 동기화 스크립트 추가 (`scripts/sync-vacancy.ts`)
+- [x] 검색 카드에 `공식 결원 N명` 배지 노출
+- [x] 상세 패널에 공식 결원정보 3상태 UI 추가
+- [x] 파서/스토어/컴포넌트 테스트 추가
+- [x] `pnpm test` 통과
+- [x] `pnpm type-check` 통과
 
-### 서울 후기 현황
-- **총 1,568건 / 443개 유치원** (759개 중 58.4% 커버리지)
-- **모든 구에 후기 존재** (v3 스크립트로 기수집)
+## 진행 중인 작업
+- 전국 실데이터 동기화 완료
+  - `pnpm sync:vacancy -- --year 2026` 실행 성공
+  - 현재 `public/data/vacancy.json`은 전국 기준 실데이터 상태
+  - 집계: 총 2,753건 / 양수 결원 2,115건 / 0명 등록 638건
 
-### 이번 세션 완료 작업
-| 구 | 유치원 수 | 기존 | 추가 | 병합 |
-|---|---|---|---|---|
-| 금천구 | 16 | 23 | +2 | ✅ 완료 |
-| 마포구 | 27 | 26 | +2 | ✅ 완료 |
-| 구로구 | 30 | 27 | +1 | ✅ 완료 |
+## 다음에 할 작업
+1. 생성된 전국 `public/data/vacancy.json`을 기준으로 앱 UI 수동 검수
+2. 배포하여 원격 `/data/vacancy.json` 반영
+3. 필요하면 정기 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
 
-### 종로구 검색 시도 (결과 없음)
-- 교동초등학교병설유치원 → 다른 지역(춘천, 세종) 결과만 노출
-- 혜화유치원 → 성당, 문화투어 결과만 노출
-- 종로구는 인구/유치원 수가 적어 온라인 후기가 거의 없음
+## 주의사항 / 알려진 이슈
+- `scripts/sync-vacancy.ts`는 수집 결과가 0건이면 `vacancy.json`을 덮어쓰지 않고 실패 처리함
+- 공식 결원정보는 `kindercode === ittId` 조인 전제
+- live 사이트는 Node/undici 기준 `UNABLE_TO_VERIFY_LEAF_SIGNATURE`가 나서 sync 스크립트 프로세스 안에서만 TLS 검증 완화 적용
+- live 사이트는 브라우저 세션 쿠키 없이 직접 POST하면 `Request Blocked`를 반환하므로 스크립트가 초기 GET 세션을 먼저 생성함
+- 기존 `여유정원` 필터는 휴리스틱(`capacity > currentCount`)으로 유지되며 공식 결원 필터는 아직 없음
 
-### 후기가 적은 구 (추가 수집 대상)
-| 구 | 유치원 수 | 후기 수 | 상태 |
-|---|---|---|---|
-| 종로구 | 15 | 20 | Chrome 검색 시도 - 결과 없음 |
-| 중구 | 14 | 23 | 미착수 |
-| 용산구 | 13 | 27 | 미착수 |
-
-## 저장된 파일
-- `scripts/data-output/chrome-reviews-guro-20260128.json` - 구로구 수집
-- `scripts/data-output/chrome-reviews-mapo-20260128.json` - 마포구 수집
-- `scripts/data-output/enriched-mapo-20260128.json` - 마포구 enriched
-- `scripts/data-output/enriched-reviews-11-20260128.json` - 금천구 enriched
-- `public/data/reviews/11.json` - 서울 최종 (1568건)
-
-## 다음 단계 권장
-1. 중구/용산구 유치원 Chrome 검색 시도
-2. 또는 경기도(41) 후기 보강 작업으로 전환
-3. 서울 도심 구(종로/중구/용산)는 후기가 적으므로 우선순위 낮춤
+## 현재 브랜치
+- `codex/feature-vacancy-integration`
 
 ## 참고 파일
-- `CLAUDE.md` - 개발 가이드
-- `.claude/agents/chrome-review-extractor.md` - URL 추출 Subagent
-- `scripts/merge-chrome-reviews.ts` - 병합 스크립트
+- `scripts/sync-vacancy.ts` - 공식 결원정보 동기화
+- `public/data/vacancy.json` - 앱 런타임에서 읽는 정적 결원 데이터
+- `docs/DETAILED_SPEC.md` - 공식 결원정보 동기화 절차 추가
