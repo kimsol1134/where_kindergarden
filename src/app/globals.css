@@ -52,25 +52,34 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --radius: 1rem;
+  --brand-page: #fbfaf7;
+  --brand-mist: #f6f5ef;
+  --brand-mist-strong: #ece8df;
+  --brand-leaf: #4ea96d;
+  --brand-leaf-deep: #3c8757;
+  --brand-sun: #f4d86a;
+  --brand-sand: #cbbcae;
+  --brand-ink: #1f241d;
+  --brand-ink-soft: #5f655a;
+  --background: var(--brand-page);
+  --foreground: var(--brand-ink);
+  --card: rgba(255, 255, 255, 0.84);
+  --card-foreground: var(--brand-ink);
+  --popover: rgba(255, 255, 255, 0.92);
+  --popover-foreground: var(--brand-ink);
+  --primary: var(--brand-leaf);
+  --primary-foreground: #ffffff;
+  --secondary: var(--brand-mist);
+  --secondary-foreground: var(--brand-ink);
+  --muted: var(--brand-mist);
+  --muted-foreground: var(--brand-ink-soft);
+  --accent: #fff8df;
+  --accent-foreground: var(--brand-ink);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: rgba(202, 188, 174, 0.45);
+  --input: rgba(255, 255, 255, 0.88);
+  --ring: rgba(78, 169, 109, 0.35);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -126,7 +135,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at top left, rgba(244, 216, 106, 0.26), transparent 26%),
+      radial-gradient(circle at top right, rgba(78, 169, 109, 0.18), transparent 30%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(246, 245, 239, 0.86));
+    background-attachment: fixed;
   }
+}
+
+::selection {
+  background: rgba(78, 169, 109, 0.24);
 }
 
 /* iOS Safe Area 지원 (Dynamic Island, 노치 등) */
@@ -213,12 +231,13 @@ body.native-platform {
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 .mobile-frame {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  border: 8px solid #1f2937;
-  border-radius: 30px;
+  box-shadow: 0 24px 70px rgba(112, 122, 82, 0.18);
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  border-radius: 34px;
   overflow: hidden;
-  background: white;
+  background: rgba(255, 255, 255, 0.86);
   position: relative;
+  backdrop-filter: blur(12px);
 }
 .mobile-frame::before {
   content: '';
@@ -227,7 +246,7 @@ body.native-platform {
   transform: translateX(-50%);
   width: 120px;
   height: 20px;
-  background: #1f2937;
+  background: rgba(203, 188, 174, 0.86);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   z-index: 50;
@@ -261,4 +280,33 @@ body.native-platform {
 
 .animate-slide-in-bottom {
   animation: slideInBottom 0.3s ease-out forwards;
+}
+
+.brand-shell {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 64px rgba(129, 136, 97, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.brand-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: 0 20px 48px rgba(138, 142, 109, 0.14);
+}
+
+.brand-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(246, 245, 239, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 44px rgba(131, 141, 94, 0.14);
+}
+
+.brand-chip {
+  border: 1px solid rgba(203, 188, 174, 0.32);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.brand-highlight {
+  background: linear-gradient(135deg, rgba(78, 169, 109, 0.18), rgba(244, 216, 106, 0.2));
 }

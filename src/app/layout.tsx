@@ -79,6 +79,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+    shortcut: '/icon-small.png',
   },
   verification: {
     google: '9xdRn2UOPOTpBwDt2oILqTEvY-X27sQbcy20V4p7yb4',
@@ -88,7 +90,7 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'default',
+    statusBarStyle: 'black-translucent',
     title: '우리동네 유치원',
     startupImage: [
       '/startup.png',
@@ -103,6 +105,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: 'cover', // iOS Safe Area 지원
+  themeColor: '#f6f5ef',
 };
 
 export default function RootLayout({
@@ -112,7 +115,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className="min-h-screen bg-white antialiased">
+      <body className="min-h-screen antialiased text-[var(--brand-ink)]">
         <GlobalProviders>
           <KakaoSDKProvider>{children}</KakaoSDKProvider>
         </GlobalProviders>

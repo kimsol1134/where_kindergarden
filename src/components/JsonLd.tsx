@@ -57,7 +57,7 @@ interface OrganizationJsonLdProps {
 export function OrganizationJsonLd({
   url = 'https://where-kindergarden.vercel.app',
   name = '우리동네 유치원',
-  logo = 'https://where-kindergarden.vercel.app/logo.png',
+  logo = 'https://where-kindergarden.vercel.app/app-icon-preview.png',
 }: OrganizationJsonLdProps) {
   const jsonLd = {
     '@context': 'https://schema.org',
