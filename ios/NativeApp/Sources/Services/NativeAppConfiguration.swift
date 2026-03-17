@@ -2,6 +2,7 @@ import Foundation
 
 public struct NativeAppConfiguration: Sendable {
     public let kakaoAppKey: String?
+    public let kakaoRESTAPIKey: String?
     public let reviewsRemoteURL: URL
     public let compareShareBaseURL: URL
     public let kindergartensResourceName: String
@@ -9,12 +10,14 @@ public struct NativeAppConfiguration: Sendable {
 
     public init(
         kakaoAppKey: String?,
+        kakaoRESTAPIKey: String? = nil,
         reviewsRemoteURL: URL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!,
         compareShareBaseURL: URL = URL(string: "https://where-kindergarden.vercel.app/compare")!,
         kindergartensResourceName: String = "kindergartens",
         reviewsResourceName: String = "reviews"
     ) {
         self.kakaoAppKey = Self.normalizedValue(kakaoAppKey)
+        self.kakaoRESTAPIKey = Self.normalizedValue(kakaoRESTAPIKey)
         self.reviewsRemoteURL = reviewsRemoteURL
         self.compareShareBaseURL = compareShareBaseURL
         self.kindergartensResourceName = kindergartensResourceName
@@ -23,7 +26,8 @@ public struct NativeAppConfiguration: Sendable {
 
     public static func live(bundle: Bundle = .main) -> NativeAppConfiguration {
         NativeAppConfiguration(
-            kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String
+            kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
+            kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String
         )
     }
 

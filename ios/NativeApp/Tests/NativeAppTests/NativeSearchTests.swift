@@ -1,0 +1,219 @@
+import Foundation
+import XCTest
+@testable import Features
+@testable import Models
+@testable import Services
+
+final class NativeSearchTests: XCTestCase {
+    func testKakaoAddressResponseDecodesRoadAddressAndCoordinates() throws {
+        let json = """
+        {
+          "documents": [
+            {
+              "address_name": "서울 강남구 역삼동 123-45",
+              "x": "127.02758",
+              "y": "37.49810",
+              "address": {
+                "address_name": "서울 강남구 역삼동 123-45",
+                "region_1depth_name": "서울",
+                "region_2depth_name": "강남구",
+                "region_3depth_name": "역삼동",
+                "h_code": "1168064000",
+                "b_code": "1168010100"
+              },
+              "road_address": {
+                "address_name": "서울 강남구 역삼로 123",
+                "road_name": "역삼로",
+                "region_1depth_name": "서울",
+                "region_2depth_name": "강남구",
+                "region_3depth_name": "역삼동"
+              }
+            }
+          ],
+          "meta": {
+            "total_count": 1,
+            "pageable_count": 1,
+            "is_end": true
+          }
+        }
+        """
+
+        let response = try JSONDecoder().decode(KakaoAddressSearchResponse.self, from: Data(json.utf8))
+
+        XCTAssertEqual(response.meta.totalCount, 1)
+        XCTAssertEqual(response.documents.first?.roadAddress?.addressName, "서울 강남구 역삼로 123")
+        XCTAssertEqual(response.documents.first?.coordinates, Coordinates(lat: 37.49810, lng: 127.02758))
+    }
+
+    func testKakaoKeywordSearchRequestBuildsQueryWithOriginAndRadius() throws {
+        let request = try KakaoKeywordSearchRequest(
+            query: "역삼역",
+            page: 2,
+            size: 7,
+            origin: Coordinates(lat: 37.49810, lng: 127.02758),
+            radiusMeters: 5000
+        )
+        .makeURLRequest(
+            baseURL: URL(string: "https://dapi.kakao.com")!,
+            apiKey: "test-key"
+        )
+
+        let components = try XCTUnwrap(URLComponents(url: try XCTUnwrap(request.url), resolvingAgainstBaseURL: false))
+        let queryItems = Dictionary(uniqueKeysWithValues: (components.queryItems ?? []).compactMap { item in
+            item.value.map { (item.name, $0) }
+        })
+
+        XCTAssertEqual(components.path, "/v2/local/search/keyword.json")
+        XCTAssertEqual(queryItems["query"], "역삼역")
+        XCTAssertEqual(queryItems["page"], "2")
+        XCTAssertEqual(queryItems["size"], "7")
+        XCTAssertEqual(queryItems["x"], "127.02758")
+        XCTAssertEqual(queryItems["y"], "37.4981")
+        XCTAssertEqual(queryItems["radius"], "5000")
+        XCTAssertEqual(request.value(forHTTPHeaderField: "Authorization"), "KakaoAK test-key")
+    }
+
+    func testKakaoSuggestionServiceReturnsDegradedResultWhenAPIKeyMissing() async {
+        let service = KakaoLocalSuggestionService(
+            client: KakaoLocalAPIClient(apiKey: nil)
+        )
+
+        let result = await service.suggestions(for: "강남역", near: nil)
+
+        XCTAssertTrue(result.suggestions.isEmpty)
+        XCTAssertEqual(result.message, service.unavailableMessage)
+    }
+
+    @MainActor
+    func testSearchModelSelectsLocalKindergartenSuggestionAndUpdatesResults() throws {
+        let model = makeModel(
+            remoteSearchService: TestRemoteLocationSearchService(
+                isConfigured: false,
+                unavailableMessage: "remote-off",
+                result: RemoteLocationSearchResult(suggestions: [])
+            )
+        )
+
+        model.updateSearchText("역삼")
+
+        let suggestion = try XCTUnwrap(model.localSearchSuggestions.first)
+        model.selectSearchSuggestion(suggestion)
+
+        XCTAssertEqual(model.locationLabel, "역삼유치원")
+        XCTAssertEqual(model.userLocation, Coordinates(lat: 37.4981, lng: 127.0276))
+        XCTAssertEqual(model.results.first?.kindercode, "A001")
+        XCTAssertEqual(model.results.first?.distance ?? -1, 0, accuracy: 0.01)
+        XCTAssertEqual(model.recentSearches.first?.label, "역삼유치원")
+        XCTAssertEqual(model.searchText, "역삼유치원")
+    }
+
+    @MainActor
+    func testSearchModelSelectsRemoteAddressSuggestionAndUpdatesLocation() {
+        let model = makeModel()
+        let suggestion = SearchSuggestion(
+            id: "address:test",
+            kind: .address,
+            title: "서울 강남구 역삼로 123",
+            subtitle: "서울 강남구 역삼동 123-45",
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276)
+        )
+
+        model.selectSearchSuggestion(suggestion)
+
+        XCTAssertEqual(model.locationLabel, "서울 강남구 역삼로 123")
+        XCTAssertEqual(model.userLocation, Coordinates(lat: 37.4981, lng: 127.0276))
+        XCTAssertEqual(model.results.first?.kindercode, "A001")
+        XCTAssertEqual(model.recentSearches.first?.label, "서울 강남구 역삼로 123")
+    }
+
+    @MainActor
+    func testSearchModelSelectsRemotePlaceSuggestionAndUpdatesLocation() {
+        let model = makeModel()
+        let suggestion = SearchSuggestion(
+            id: "place:test",
+            kind: .place,
+            title: "서초구청",
+            subtitle: "서울 서초구 서초대로 1",
+            coordinates: Coordinates(lat: 37.4915, lng: 127.0177)
+        )
+
+        model.selectSearchSuggestion(suggestion)
+
+        XCTAssertEqual(model.locationLabel, "서초구청")
+        XCTAssertEqual(model.userLocation, Coordinates(lat: 37.4915, lng: 127.0177))
+        XCTAssertEqual(model.results.first?.kindercode, "A003")
+        XCTAssertEqual(model.searchText, "서초구청")
+    }
+
+    @MainActor
+    func testSearchModelRestoresRecentSearchAndKeepsSearchTabActive() {
+        let model = makeModel()
+        let recent = RecentSearch(
+            label: "서울시청",
+            coordinates: Coordinates(lat: 37.5665, lng: 126.9780)
+        )
+
+        model.restoreRecentSearch(recent)
+
+        XCTAssertEqual(model.locationLabel, "서울시청")
+        XCTAssertEqual(model.userLocation, Coordinates(lat: 37.5665, lng: 126.9780))
+        XCTAssertEqual(model.selectedTab, .search)
+        XCTAssertEqual(model.searchText, "서울시청")
+        XCTAssertEqual(model.recentSearches.first?.label, "서울시청")
+    }
+
+    @MainActor
+    func testSearchModelFallsBackToLocalSuggestionsWhenRuntimeConfigMissing() {
+        let service = KakaoLocalSuggestionService(
+            client: KakaoLocalAPIClient(apiKey: nil)
+        )
+        let model = makeModel(remoteSearchService: service)
+
+        model.updateSearchText("역삼")
+
+        XCTAssertEqual(model.localSearchSuggestions.map(\.title), ["역삼유치원"])
+        XCTAssertTrue(model.remoteSearchSuggestions.isEmpty)
+        XCTAssertEqual(model.searchSuggestionMessage, service.unavailableMessage)
+        XCTAssertFalse(model.isSearchSuggestionsLoading)
+    }
+
+    @MainActor
+    private func makeModel(
+        remoteSearchService: any RemoteLocationSuggesting = TestRemoteLocationSearchService()
+    ) -> NativeAppModel {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        return NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: remoteSearchService,
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil, kakaoRESTAPIKey: nil),
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:]),
+            searchDebounceDuration: .zero
+        )
+    }
+}
+
+private struct TestRemoteLocationSearchService: RemoteLocationSuggesting {
+    let isConfigured: Bool
+    let unavailableMessage: String
+    let result: RemoteLocationSearchResult
+
+    init(
+        isConfigured: Bool = true,
+        unavailableMessage: String = "remote-off",
+        result: RemoteLocationSearchResult = RemoteLocationSearchResult(suggestions: [])
+    ) {
+        self.isConfigured = isConfigured
+        self.unavailableMessage = unavailableMessage
+        self.result = result
+    }
+
+    func suggestions(for query: String, near origin: Coordinates?) async -> RemoteLocationSearchResult {
+        result
+    }
+}
