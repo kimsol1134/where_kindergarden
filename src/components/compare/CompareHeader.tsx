@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowLeft, Share2, Link2, MessageCircle, Check } from 'lucide-react';
+import { ArrowLeft, Check, Link2, MessageCircle, Share2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { BrandMark } from '@/components/common/BrandMark';
+import { copyShareUrl, shareComparison } from '@/lib/share/kakaoShare';
 import { useCompareStore } from '@/stores';
-import { shareComparison, copyShareUrl } from '@/lib/share/kakaoShare';
 
 export function CompareHeader() {
   const router = useRouter();
@@ -39,77 +40,80 @@ export function CompareHeader() {
   };
 
   return (
-    <header className="bg-white border-b border-gray-200 sticky safe-top-offset z-30">
-      <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => router.back()}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            aria-label="뒤로 가기"
-          >
-            <ArrowLeft className="w-6 h-6" />
-          </button>
-          <h1 className="text-lg font-bold">기관 비교하기</h1>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-500 mr-2">
-            총 <span className="text-emerald-600 font-bold">{items.length}</span>개 비교 중
-          </span>
-          {items.length > 0 && (
-            <>
-              <div className="relative">
+    <>
+      <header className="sticky safe-top-offset z-30 px-4 pt-3">
+        <div className="brand-shell mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-[2rem] px-4 py-3">
+          <div className="flex min-w-0 items-center gap-3">
+            <button
+              onClick={() => router.back()}
+              className="rounded-full bg-white/80 p-2 text-[var(--brand-ink)] transition-colors hover:bg-white"
+              aria-label="뒤로 가기"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </button>
+            <div className="min-w-0">
+              <BrandMark compact labelClassName="hidden sm:block text-base" />
+              <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">최대 3개 기관 비교 및 공유</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="hidden text-sm text-[var(--brand-ink-soft)] md:block">
+              총 <span className="font-bold text-[var(--brand-leaf)]">{items.length}</span>개 비교 중
+            </span>
+            {items.length > 0 ? (
+              <>
+                <div className="relative">
+                  <button
+                    onClick={() => setShowShareMenu(!showShareMenu)}
+                    className="rounded-full bg-white/80 p-2 text-[var(--brand-ink-soft)] transition-colors hover:bg-white hover:text-[var(--brand-ink)]"
+                    aria-label="공유하기"
+                  >
+                    <Share2 className="h-5 w-5" />
+                  </button>
+                  {showShareMenu ? (
+                    <div className="brand-card absolute right-0 top-full z-50 mt-2 min-w-[180px] rounded-[1.25rem] py-2">
+                      <button
+                        onClick={handleKakaoShare}
+                        className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
+                      >
+                        <MessageCircle className="h-4 w-4 text-[var(--brand-sun)]" />
+                        카카오톡 공유
+                      </button>
+                      <button
+                        onClick={handleCopyLink}
+                        className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
+                      >
+                        {copied ? (
+                          <>
+                            <Check className="h-4 w-4 text-[var(--brand-leaf)]" />
+                            복사 완료!
+                          </>
+                        ) : (
+                          <>
+                            <Link2 className="h-4 w-4 text-[var(--brand-ink-soft)]" />
+                            링크 복사
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  ) : null}
+                </div>
                 <button
-                  onClick={() => setShowShareMenu(!showShareMenu)}
-                  className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                  aria-label="공유하기"
+                  onClick={handleClearAll}
+                  className="rounded-full border border-[rgba(203,188,174,0.32)] bg-white/70 px-3 py-2 text-xs font-semibold text-[var(--brand-ink-soft)] transition-colors hover:bg-white"
                 >
-                  <Share2 className="w-5 h-5 text-gray-600" />
+                  전체 삭제
                 </button>
-                {showShareMenu && (
-                  <div className="absolute right-0 top-full mt-2 bg-white border border-gray-200 rounded-lg shadow-lg py-2 min-w-[160px] z-50">
-                    <button
-                      onClick={handleKakaoShare}
-                      className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 flex items-center gap-2"
-                    >
-                      <MessageCircle className="w-4 h-4 text-yellow-500" />
-                      카카오톡 공유
-                    </button>
-                    <button
-                      onClick={handleCopyLink}
-                      className="w-full px-4 py-2 text-left text-sm hover:bg-gray-50 flex items-center gap-2"
-                    >
-                      {copied ? (
-                        <>
-                          <Check className="w-4 h-4 text-emerald-500" />
-                          복사 완료!
-                        </>
-                      ) : (
-                        <>
-                          <Link2 className="w-4 h-4 text-gray-500" />
-                          링크 복사
-                        </>
-                      )}
-                    </button>
-                  </div>
-                )}
-              </div>
-              <button
-                onClick={handleClearAll}
-                className="text-xs font-medium text-gray-400 hover:text-gray-600 underline"
-              >
-                전체 삭제
-              </button>
-            </>
-          )}
+              </>
+            ) : null}
+          </div>
         </div>
-      </div>
-      {/* Backdrop for closing share menu */}
-      {showShareMenu && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setShowShareMenu(false)}
-        />
-      )}
-    </header>
+      </header>
+
+      {showShareMenu ? (
+        <div className="fixed inset-0 z-20" onClick={() => setShowShareMenu(false)} />
+      ) : null}
+    </>
   );
 }

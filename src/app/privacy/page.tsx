@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
+import { BrandMark } from '@/components/common/BrandMark';
 import { Footer } from '@/components/landing/Footer';
 
 export const metadata: Metadata = {
@@ -26,29 +26,20 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="bg-white min-h-screen font-sans">
+    <div className="min-h-screen font-sans">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <header className="fixed top-0 z-50 w-full px-4 pt-3">
+        <div className="brand-shell mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="rounded-full bg-white/80 p-2 transition-colors hover:bg-white"
               aria-label="홈으로"
             >
-              <ArrowLeft className="w-5 h-5 text-gray-600" />
+              <ArrowLeft className="h-5 w-5 text-[var(--brand-ink)]" />
             </Link>
-            <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo.png"
-                alt="우리동네 유치원"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
-              <span className="text-xl font-bold tracking-tight text-gray-900">
-                우리동네 유치원
-              </span>
+            <Link href="/">
+              <BrandMark compact labelClassName="text-lg" />
             </Link>
           </div>
         </div>

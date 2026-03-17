@@ -1,46 +1,47 @@
-# 서울 유치원 후기 수집 작업 인계
+# HANDOFF.md
 
 ## 마지막 작업 일시
-2026-01-28 (오후)
+2026-03-17
 
-## 현재 상황 요약
+## 완료된 작업
+- [x] 앱 아이콘 기준 브랜드 토큰 정의
+- [x] 웹 shell 리브랜딩 적용
+- [x] `manifest`, 메타데이터, structured data 로고 기준 통일
+- [x] 별도 SwiftUI 네이티브 앱 소스 구조 추가
+- [x] Swift 패키지 단위 테스트 작성 및 통과
 
-### 서울 후기 현황
-- **총 1,568건 / 443개 유치원** (759개 중 58.4% 커버리지)
-- **모든 구에 후기 존재** (v3 스크립트로 기수집)
+## 이번 세션 변경 요약
+- `src/app/globals.css`에 아이콘 기준 `Mist White / Leaf Green / Sun Yellow / Warm Sand` 토큰과 frosted surface 스타일을 추가함
+- 랜딩, 검색 헤더, 비교 헤더, 서비스 소개/개인정보처리방침 상단 chrome을 새 브랜드 톤으로 교체함
+- `src/app/manifest.ts`, `src/components/JsonLd.tsx`, `src/app/layout.tsx`를 통해 아이콘/메타데이터 기준을 앱 아이콘으로 통일함
+- `docs/brand/icon-brand-system.md`, `docs/contracts/native-data-contracts.md`로 브랜드 원칙과 공용 계약을 문서화함
+- `ios/NativeApp/` 아래에 `Models / Services / Features / AppShell / Config` 구조의 SwiftUI-first 네이티브 앱 스캐폴드를 추가함
 
-### 이번 세션 완료 작업
-| 구 | 유치원 수 | 기존 | 추가 | 병합 |
-|---|---|---|---|---|
-| 금천구 | 16 | 23 | +2 | ✅ 완료 |
-| 마포구 | 27 | 26 | +2 | ✅ 완료 |
-| 구로구 | 30 | 27 | +1 | ✅ 완료 |
+## 진행 중인 작업
+- 별도 Xcode iOS App target은 아직 생성하지 않음
+- Kakao 지도 SDK 브리지와 실제 JSON 로더, 위치 권한 연동은 아직 mock/prototype 수준임
 
-### 종로구 검색 시도 (결과 없음)
-- 교동초등학교병설유치원 → 다른 지역(춘천, 세종) 결과만 노출
-- 혜화유치원 → 성당, 문화투어 결과만 노출
-- 종로구는 인구/유치원 수가 적어 온라인 후기가 거의 없음
+## 다음에 할 작업
+1. `ios/NativeApp` 소스를 연결하는 실제 Xcode SwiftUI app project 생성
+2. Kakao 지도 SDK `UIViewRepresentable` 브리지 추가
+3. `/data/kindergartens.json`, `/data/reviews.json`를 실제로 읽는 native repository 구현
+4. 찜/최근 검색 UserDefaults 저장과 compare deep link 복원 연결
+5. 웹의 검색/비교 본문 카드까지 brand token을 더 깊게 적용할지 결정
 
-### 후기가 적은 구 (추가 수집 대상)
-| 구 | 유치원 수 | 후기 수 | 상태 |
-|---|---|---|---|
-| 종로구 | 15 | 20 | Chrome 검색 시도 - 결과 없음 |
-| 중구 | 14 | 23 | 미착수 |
-| 용산구 | 13 | 27 | 미착수 |
+## 주의사항 / 알려진 이슈
+- 루트 `pnpm lint`는 이번 변경과 무관한 기존 `scripts/*`, `src/components/ads/AdContainer.tsx` 문제로 전체 통과하지 않음
+- 이번 세션에서 수정한 React 파일들은 개별 eslint 검사 통과
+- `swift test` 실행으로 `.clang-module-cache/`가 생성됨
 
-## 저장된 파일
-- `scripts/data-output/chrome-reviews-guro-20260128.json` - 구로구 수집
-- `scripts/data-output/chrome-reviews-mapo-20260128.json` - 마포구 수집
-- `scripts/data-output/enriched-mapo-20260128.json` - 마포구 enriched
-- `scripts/data-output/enriched-reviews-11-20260128.json` - 금천구 enriched
-- `public/data/reviews/11.json` - 서울 최종 (1568건)
+## 검증 결과
+- `pnpm type-check` 통과
+- 변경 파일 대상 `pnpm eslint ...` 통과
+- `swift test` 통과
 
-## 다음 단계 권장
-1. 중구/용산구 유치원 Chrome 검색 시도
-2. 또는 경기도(41) 후기 보강 작업으로 전환
-3. 서울 도심 구(종로/중구/용산)는 후기가 적으므로 우선순위 낮춤
+## 현재 브랜치
+codex/icon-brand-swiftui
 
 ## 참고 파일
-- `CLAUDE.md` - 개발 가이드
-- `.claude/agents/chrome-review-extractor.md` - URL 추출 Subagent
-- `scripts/merge-chrome-reviews.ts` - 병합 스크립트
+- `docs/brand/icon-brand-system.md`
+- `docs/contracts/native-data-contracts.md`
+- `ios/NativeApp/README.md`

@@ -12,11 +12,11 @@ import { transformToKindergarten } from '@/lib/transforms';
 
 function CompareLoading() {
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
+    <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
       <CompareHeader />
       <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
-        <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
-        <p className="text-sm text-gray-500">비교 정보를 불러오는 중...</p>
+        <Loader2 className="mb-4 h-8 w-8 animate-spin text-[var(--brand-leaf)]" />
+        <p className="text-sm text-[var(--brand-ink-soft)]">비교 정보를 불러오는 중...</p>
       </main>
     </div>
   );
@@ -63,11 +63,11 @@ function CompareContent() {
   // URL에 ids가 있지만 아직 데이터 로드 중인 경우 로딩 표시
   if (idsParam && (isLoading || !isLoaded) && items.length === 0) {
     return (
-      <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
+      <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
         <CompareHeader />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
-          <Loader2 className="w-8 h-8 text-emerald-600 animate-spin mb-4" />
-          <p className="text-sm text-gray-500">비교 정보를 불러오는 중...</p>
+          <Loader2 className="mb-4 h-8 w-8 animate-spin text-[var(--brand-leaf)]" />
+          <p className="text-sm text-[var(--brand-ink-soft)]">비교 정보를 불러오는 중...</p>
         </main>
       </div>
     );
@@ -76,19 +76,19 @@ function CompareContent() {
   // 비교할 아이템이 없으면 빈 상태 표시
   if (items.length === 0) {
     return (
-      <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
+      <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
         <CompareHeader />
         <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
-          <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-            <Search className="w-8 h-8 text-gray-400" />
+          <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[rgba(203,188,174,0.2)]">
+            <Search className="h-8 w-8 text-[var(--brand-ink-soft)]" />
           </div>
-          <h2 className="text-lg font-bold text-gray-900 mb-2">비교할 기관이 없습니다</h2>
-          <p className="text-sm text-gray-500 text-center mb-6">
+          <h2 className="mb-2 text-lg font-bold text-[var(--brand-ink)]">비교할 기관이 없습니다</h2>
+          <p className="mb-6 text-center text-sm text-[var(--brand-ink-soft)]">
             검색 결과에서 비교할 기관을 선택해주세요
           </p>
           <Link
             href="/search"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md transition-colors"
+            className="rounded-full bg-[var(--brand-leaf)] px-6 py-3 text-sm font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)]"
           >
             기관 검색하기
           </Link>
@@ -98,7 +98,7 @@ function CompareContent() {
   }
 
   return (
-    <div className="bg-gray-50 text-gray-900 min-h-screen safe-area-top">
+    <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
       <CompareHeader />
       <main className="max-w-5xl mx-auto pb-24">
         <CompareGrid items={items} />
