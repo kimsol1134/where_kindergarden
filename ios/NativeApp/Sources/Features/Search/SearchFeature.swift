@@ -1,161 +1,131 @@
 import Foundation
 import Models
-import Services
 import SwiftUI
 
-@MainActor
-public final class SearchFeatureModel: ObservableObject {
-    @Published public var query: String = ""
-    @Published public var filters: SearchFilters
-    @Published public var userLocation: Coordinates?
-    @Published public private(set) var results: [Kindergarten]
-    @Published public var selectedKindergarten: Kindergarten?
-    @Published public private(set) var recentSearches: [RecentSearch]
-    @Published public var compareSelection: CompareSelection
-
-    private let allKindergartens: [KindergartenRaw]
-    private let searchEngine: KindergartenSearchEngine
-
-    public init(
-        allKindergartens: [KindergartenRaw] = NativePreviewFixtures.kindergartens,
-        filters: SearchFilters = SearchFilters(),
-        recentSearches: [RecentSearch] = [],
-        compareSelection: CompareSelection = CompareSelection(),
-        searchEngine: KindergartenSearchEngine = KindergartenSearchEngine()
-    ) {
-        self.allKindergartens = allKindergartens
-        self.filters = filters
-        self.recentSearches = recentSearches
-        self.compareSelection = compareSelection
-        self.searchEngine = searchEngine
-        self.results = searchEngine.makeKindergartens(raws: allKindergartens, relativeTo: nil)
-    }
-
-    public func setLocation(_ coordinates: Coordinates, label: String) {
-        userLocation = coordinates
-        recentSearches = [RecentSearch(label: label, coordinates: coordinates)] + recentSearches.filter { $0.label != label }
-        recentSearches = Array(recentSearches.prefix(5))
-        refresh()
-    }
-
-    public func updateRadius(to radius: Double) {
-        filters.radiusKM = radius
-        refresh()
-    }
-
-    public func updateSort(to sort: SortOption) {
-        filters.sort = sort
-        refresh()
-    }
-
-    public func toggleBusFilter() {
-        filters.hasBus = filters.hasBus == true ? nil : true
-        refresh()
-    }
-
-    public func toggleLargeSpaceFilter() {
-        filters.hasLargeSpace = filters.hasLargeSpace == true ? nil : true
-        refresh()
-    }
-
-    public func select(kindergarten: Kindergarten) {
-        selectedKindergarten = kindergarten
-    }
-
-    public func toggleCompare(for kindergarten: Kindergarten) {
-        compareSelection.toggle(id: kindergarten.kindercode)
-    }
-
-    public func isCompared(_ kindergarten: Kindergarten) -> Bool {
-        compareSelection.contains(kindergarten.kindercode)
-    }
-
-    public func comparedKindergartens() -> [Kindergarten] {
-        results.filter { compareSelection.contains($0.kindercode) }
-    }
-
-    public func refresh() {
-        guard let userLocation else {
-            results = searchEngine.makeKindergartens(raws: allKindergartens, relativeTo: nil)
-            return
-        }
-        results = searchEngine.search(raws: allKindergartens, location: userLocation, filters: filters)
-    }
-}
-
-@MainActor
 public struct SearchHomeView: View {
-    @StateObject private var model: SearchFeatureModel
-    @State private var showDetail = false
+    @ObservedObject private var model: NativeAppModel
+    @State private var mapRuntimeMessage: String?
 
-    public init() {
-        _model = StateObject(wrappedValue: SearchFeatureModel())
+    public init(model: NativeAppModel) {
+        self.model = model
     }
 
-    public init(model: SearchFeatureModel) {
-        _model = StateObject(wrappedValue: model)
+    @MainActor public init() {
+        self.model = .preview()
+    }
+
+    private var sheetSelection: Binding<Kindergarten?> {
+        Binding(
+            get: { model.selectedKindergarten },
+            set: { selection in
+                if selection == nil {
+                    model.dismissDetail()
+                }
+            }
+        )
+    }
+
+    private var mapMarkers: [SearchMapMarker] {
+        model.results.map { kindergarten in
+            SearchMapMarker(
+                id: kindergarten.kindercode,
+                title: kindergarten.name,
+                coordinates: kindergarten.location,
+                compareOrder: model.compareOrder(for: kindergarten.kindercode)
+            )
+        }
     }
 
     public var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
-                NativeMapSurface()
-                    .ignoresSafeArea()
+                KakaoSearchMapSurface(
+                    appKey: model.configuration.kakaoAppKey,
+                    center: model.userLocation,
+                    currentLocation: model.userLocation,
+                    markers: mapMarkers,
+                    selectedKindergartenID: model.selectedKindergarten?.kindercode,
+                    runtimeMessage: $mapRuntimeMessage
+                ) { kindercode in
+                    guard let kindergarten = model.results.first(where: { $0.kindercode == kindercode }) else {
+                        return
+                    }
+                    model.select(kindergarten: kindergarten)
+                }
+                .ignoresSafeArea()
 
                 VStack(spacing: 14) {
                     SearchChrome(model: model)
                     Spacer()
                 }
             }
+            .task {
+                await model.bootstrapIfNeeded()
+            }
             .safeAreaInset(edge: .bottom) {
                 ResultSheet(
                     results: model.results,
                     comparedIDs: Set(model.compareSelection.ids),
-                    onSelect: { kindergarten in
-                        model.select(kindergarten: kindergarten)
-                        showDetail = true
-                    },
-                    onToggleCompare: { kindergarten in
-                        model.toggleCompare(for: kindergarten)
-                    }
+                    favoriteIDs: Set(model.favorites.map(\.kindercode)),
+                    reviewCounts: Dictionary(
+                        uniqueKeysWithValues: model.results.map { ($0.kindercode, model.reviews(for: $0.kindercode).count) }
+                    ),
+                    onSelect: { model.select(kindergarten: $0) },
+                    onToggleCompare: { model.toggleCompare(for: $0) },
+                    onToggleFavorite: { model.toggleFavorite(for: $0) }
                 )
-            }
-            .sheet(isPresented: $showDetail) {
-                if let selectedKindergarten = model.selectedKindergarten {
-                    KindergartenDetailSheet(
-                        kindergarten: selectedKindergarten,
-                        isCompared: model.isCompared(selectedKindergarten),
-                        onToggleCompare: { model.toggleCompare(for: selectedKindergarten) }
-                    )
-                    .presentationDetents([.medium, .large])
-                    .presentationDragIndicator(.visible)
-                }
             }
             .safeAreaInset(edge: .bottom) {
                 if !model.compareSelection.ids.isEmpty {
-                    PersistentCompareBar(count: model.compareSelection.ids.count)
-                        .padding(.horizontal, 16)
-                        .padding(.bottom, 6)
+                    Button {
+                        model.selectedTab = .compare
+                    } label: {
+                        PersistentCompareBar(count: model.compareSelection.ids.count)
+                            .padding(.horizontal, 16)
+                            .padding(.bottom, 6)
+                    }
+                    .buttonStyle(.plain)
                 }
+            }
+            .sheet(item: sheetSelection) { kindergarten in
+                KindergartenDetailSheet(
+                    kindergarten: kindergarten,
+                    reviews: model.reviews(for: kindergarten.kindercode),
+                    isCompared: model.isCompared(kindergarten),
+                    isFavorite: model.isFavorite(kindergarten),
+                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                )
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
             }
         }
     }
 }
 
 private struct SearchChrome: View {
-    @ObservedObject var model: SearchFeatureModel
+    @ObservedObject var model: NativeAppModel
 
     var body: some View {
         VStack(spacing: 12) {
             HStack(spacing: 12) {
-                Label("우리동네 유치원 탐색", systemImage: "sparkles")
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(leafGreen)
-                Spacer()
-                Button("현위치") {
-                    model.setLocation(Coordinates(lat: 37.4981, lng: 127.0276), label: "서울 강남구 역삼동")
+                VStack(alignment: .leading, spacing: 4) {
+                    Label("우리동네 유치원 탐색", systemImage: "sparkles")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(leafGreen)
+                    Text(model.locationLabel)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
                 }
-                .font(.footnote.weight(.semibold))
+                Spacer()
+                Button {
+                    Task {
+                        await model.centerOnCurrentLocation()
+                    }
+                } label: {
+                    Label("현위치", systemImage: "location.fill")
+                        .font(.footnote.weight(.semibold))
+                }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
                 .background(.white.opacity(0.84), in: Capsule())
@@ -164,8 +134,14 @@ private struct SearchChrome: View {
             HStack(spacing: 10) {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(leafGreen)
-                TextField("주소, 유치원, 아파트 이름 검색", text: $model.query)
-                    .textFieldStyle(.plain)
+                TextField(
+                    "유치원명 또는 주소로 결과 좁히기",
+                    text: Binding(
+                        get: { model.query },
+                        set: { model.query = $0 }
+                    )
+                )
+                .textFieldStyle(.plain)
                 Button {
                     model.query = ""
                 } label: {
@@ -181,12 +157,12 @@ private struct SearchChrome: View {
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
                     .stroke(Color.white.opacity(0.8), lineWidth: 1)
             )
-            .shadow(color: sand.opacity(0.22), radius: 24, y: 10)
+            .shadow(color: warmSand.opacity(0.22), radius: 24, y: 10)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
                     FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true) {
-                        let nextRadius: Double = model.filters.radiusKM == 1 ? 2 : 5
+                        let nextRadius: Double = model.filters.radiusKM == 1 ? 2 : model.filters.radiusKM == 2 ? 5 : 1
                         model.updateRadius(to: nextRadius)
                     }
                     FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
@@ -195,12 +171,30 @@ private struct SearchChrome: View {
                     FilterChip(label: "넓은 공간", isActive: model.filters.hasLargeSpace == true) {
                         model.toggleLargeSpaceFilter()
                     }
-                    FilterChip(label: "거리순", isActive: model.filters.sort == .distance) {
+                    FilterChip(label: model.filters.sort == .distance ? "거리순" : "정원순", isActive: true) {
                         let next: SortOption = model.filters.sort == .distance ? .capacity : .distance
                         model.updateSort(to: next)
                     }
                 }
                 .padding(.horizontal, 2)
+            }
+
+            if model.isCatalogLoading || model.isReviewsLoading {
+                HStack(spacing: 8) {
+                    ProgressView()
+                        .controlSize(.small)
+                    Text("공용 JSON 데이터를 불러오는 중")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+
+            if let locationError = model.locationError {
+                InlineNotice(message: locationError)
+            } else if let catalogError = model.catalogError {
+                InlineNotice(message: catalogError)
+            } else if let reviewsError = model.reviewsError {
+                InlineNotice(message: reviewsError)
             }
         }
         .padding(.horizontal, 16)
@@ -208,45 +202,14 @@ private struct SearchChrome: View {
     }
 }
 
-private struct NativeMapSurface: View {
-    var body: some View {
-        ZStack {
-            LinearGradient(
-                colors: [Color(red: 0.97, green: 0.96, blue: 0.94), Color.white, Color(red: 0.94, green: 0.98, blue: 0.95)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            Circle()
-                .fill(Color(red: 0.97, green: 0.84, blue: 0.42).opacity(0.28))
-                .frame(width: 240, height: 240)
-                .offset(x: -110, y: 120)
-            Circle()
-                .fill(Color(red: 0.36, green: 0.73, blue: 0.48).opacity(0.22))
-                .frame(width: 280, height: 280)
-                .offset(x: 110, y: -180)
-
-            VStack(spacing: 16) {
-                Image(systemName: "map.circle.fill")
-                    .font(.system(size: 72))
-                    .foregroundStyle(leafGreen)
-                Text("KakaoMap UIViewRepresentable 자리")
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(.primary)
-                Text("실제 네이티브 앱에서는 Kakao 지도 SDK 브리지가 이 자리를 대체합니다.")
-                    .font(.subheadline)
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.secondary)
-                    .frame(maxWidth: 280)
-            }
-        }
-    }
-}
-
 private struct ResultSheet: View {
     let results: [Kindergarten]
     let comparedIDs: Set<String>
+    let favoriteIDs: Set<String>
+    let reviewCounts: [String: Int]
     let onSelect: (Kindergarten) -> Void
     let onToggleCompare: (Kindergarten) -> Void
+    let onToggleFavorite: (Kindergarten) -> Void
 
     var body: some View {
         VStack(spacing: 12) {
@@ -259,7 +222,7 @@ private struct ResultSheet: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("탐색 결과")
                         .font(.headline.weight(.bold))
-                    Text("\(results.count)개 기관을 iPhone 하단 sheet로 요약")
+                    Text("\(results.count)개 기관")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
@@ -268,18 +231,21 @@ private struct ResultSheet: View {
 
             ScrollView {
                 LazyVStack(spacing: 12) {
-                    ForEach(results.prefix(6)) { kindergarten in
+                    ForEach(results.prefix(10)) { kindergarten in
                         SearchResultCard(
                             kindergarten: kindergarten,
                             isCompared: comparedIDs.contains(kindergarten.kindercode),
+                            isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                            reviewCount: reviewCounts[kindergarten.kindercode] ?? 0,
                             onTap: { onSelect(kindergarten) },
-                            onToggleCompare: { onToggleCompare(kindergarten) }
+                            onToggleCompare: { onToggleCompare(kindergarten) },
+                            onToggleFavorite: { onToggleFavorite(kindergarten) }
                         )
                     }
                 }
                 .padding(.bottom, 8)
             }
-            .frame(maxHeight: 320)
+            .frame(maxHeight: 360)
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)
@@ -298,8 +264,11 @@ private struct ResultSheet: View {
 private struct SearchResultCard: View {
     let kindergarten: Kindergarten
     let isCompared: Bool
+    let isFavorite: Bool
+    let reviewCount: Int
     let onTap: () -> Void
     let onToggleCompare: () -> Void
+    let onToggleFavorite: () -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -321,12 +290,21 @@ private struct SearchResultCard: View {
                     }
                 }
                 Spacer()
-                Button(action: onToggleCompare) {
-                    Image(systemName: isCompared ? "checkmark.circle.fill" : "plus.circle")
-                        .font(.title3)
-                        .foregroundStyle(isCompared ? leafGreen : sand)
+                VStack(spacing: 10) {
+                    Button(action: onToggleFavorite) {
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            .font(.title3)
+                            .foregroundStyle(isFavorite ? sunYellow : warmSand)
+                    }
+                    .buttonStyle(.plain)
+
+                    Button(action: onToggleCompare) {
+                        Image(systemName: isCompared ? "checkmark.circle.fill" : "plus.circle")
+                            .font(.title3)
+                            .foregroundStyle(isCompared ? leafGreen : warmSand)
+                    }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
             }
 
             Text(kindergarten.address)
@@ -337,6 +315,7 @@ private struct SearchResultCard: View {
             HStack(spacing: 14) {
                 Label("정원 \(kindergarten.capacity)", systemImage: "person.3.fill")
                 Label(kindergarten.hasBus ? "셔틀 \(kindergarten.busCount)대" : "셔틀 없음", systemImage: "bus")
+                Label("후기 \(reviewCount)", systemImage: "bubble.left.and.text.bubble.right")
             }
             .font(.caption)
             .foregroundStyle(.secondary)
@@ -354,14 +333,22 @@ private struct SearchResultCard: View {
 
 private struct KindergartenDetailSheet: View {
     let kindergarten: Kindergarten
+    let reviews: [ReviewLink]
     let isCompared: Bool
+    let isFavorite: Bool
     let onToggleCompare: () -> Void
+    let onToggleFavorite: () -> Void
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                Text(kindergarten.name)
-                    .font(.title2.weight(.bold))
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(kindergarten.name)
+                        .font(.title2.weight(.bold))
+                    Text(kindergarten.address)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
 
                 HStack(spacing: 12) {
                     MetricPill(label: "거리", value: String(format: "%.1fkm", kindergarten.distance))
@@ -369,27 +356,63 @@ private struct KindergartenDetailSheet: View {
                     MetricPill(label: "정원", value: "\(kindergarten.capacity)명")
                 }
 
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("후기 프리뷰")
-                        .font(.headline.weight(.semibold))
-                    Text("네이티브 앱에서는 원격 리뷰 JSON을 우선 조회하고, 실패 시 번들 데이터를 즉시 fallback 합니다.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                HStack(spacing: 10) {
+                    Button(action: onToggleFavorite) {
+                        Label(
+                            isFavorite ? "찜 해제" : "찜하기",
+                            systemImage: isFavorite ? "heart.slash.fill" : "heart.fill"
+                        )
+                        .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(sunYellow)
+
+                    Button(action: onToggleCompare) {
+                        Label(
+                            isCompared ? "비교 해제" : "비교 추가",
+                            systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill"
+                        )
+                        .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(leafGreen)
                 }
 
-                Button(action: onToggleCompare) {
-                    Label(
-                        isCompared ? "비교 목록에서 제거" : "비교 목록에 추가",
-                        systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill"
-                    )
-                    .frame(maxWidth: .infinity)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("후기")
+                        .font(.headline.weight(.semibold))
+
+                    if reviews.isEmpty {
+                        Text("원격 리뷰를 우선 조회했고, 현재 보여줄 후기가 없습니다.")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    } else {
+                        ForEach(reviews.prefix(3)) { review in
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(review.title)
+                                    .font(.subheadline.weight(.semibold))
+                                Text(review.snippet)
+                                    .font(.footnote)
+                                    .foregroundStyle(.secondary)
+                                HStack(spacing: 8) {
+                                    Text(review.sourceName ?? review.source)
+                                    if let date = review.date {
+                                        Text(date)
+                                    }
+                                }
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                            }
+                            .padding(14)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        }
+                    }
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(leafGreen)
             }
             .padding(24)
         }
-        .background(Color(red: 0.97, green: 0.96, blue: 0.94))
+        .background(mistWhite)
     }
 }
 
@@ -401,9 +424,9 @@ private struct PersistentCompareBar: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text("비교할 기관 \(count)개")
                     .font(.subheadline.weight(.bold))
-                Text("상세 화면과 탭 전환을 넘나들며 유지됩니다.")
+                Text("딥링크와 재실행 이후에도 유지됩니다.")
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.82))
             }
             Spacer()
             Image(systemName: "arrow.right.circle.fill")
@@ -432,7 +455,7 @@ private struct FilterChip: View {
                 .foregroundStyle(isActive ? leafGreen : .primary)
                 .overlay(
                     Capsule()
-                        .stroke(isActive ? leafGreen.opacity(0.25) : sand.opacity(0.28), lineWidth: 1)
+                        .stroke(isActive ? leafGreen.opacity(0.25) : warmSand.opacity(0.28), lineWidth: 1)
                 )
         }
         .buttonStyle(.plain)
@@ -457,8 +480,23 @@ private struct MetricPill: View {
     }
 }
 
-private let leafGreen = Color(red: 0.31, green: 0.68, blue: 0.43)
-private let sand = Color(red: 0.77, green: 0.71, blue: 0.64)
+private struct InlineNotice: View {
+    let message: String
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "info.circle.fill")
+                .foregroundStyle(sunYellow)
+            Text(message)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            Spacer()
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(.white.opacity(0.86), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+    }
+}
 
 public enum NativePreviewFixtures {
     public static let kindergartens: [KindergartenRaw] = [
@@ -518,80 +556,80 @@ public enum NativePreviewFixtures {
             operationHours: "09:00-18:00",
             sidoCode: "11",
             sigunguCode: "11680",
-            capacity: 60,
-            currentCount: 58,
-            classCountAge3: 2,
-            classCountAge4: 2,
+            capacity: 48,
+            currentCount: 41,
+            classCountAge3: 1,
+            classCountAge4: 1,
             classCountAge5: 2,
-            capacityAge3: 20,
-            capacityAge4: 20,
+            capacityAge3: 10,
+            capacityAge4: 12,
             capacityAge5: 20,
-            currentAge3: 19,
-            currentAge4: 19,
-            currentAge5: 20,
+            currentAge3: 9,
+            currentAge4: 11,
+            currentAge5: 18,
             classCountMix: 0,
             capacityMix: 0,
             currentMix: 0,
             capacitySpecial: 0,
             currentSpecial: 0,
             establishDate: "20110302",
-            hasBus: false,
-            busCount: 0,
+            hasBus: true,
+            busCount: 2,
             mealType: .outsourced,
             hasAfterSchool: true,
-            areaPerChild: 5.4,
+            areaPerChild: 5.8,
             hasPlayground: true,
-            buildingYear: 2011,
-            floorInfo: "지상 2층",
-            classroomArea: 220,
-            indoorPlaygroundArea: 48,
-            outdoorPlaygroundArea: 60,
+            buildingYear: 2012,
+            floorInfo: "지상 4층",
+            classroomArea: 210,
+            indoorPlaygroundArea: 44,
+            outdoorPlaygroundArea: 66,
             teacherCount: 10,
-            seniorTeacherCount: 1,
+            seniorTeacherCount: 3,
             cctvCount: 16
         ),
         KindergartenRaw(
             kindercode: "A003",
-            name: "꿈나무유치원",
-            address: "서울 강남구 테헤란로 77",
-            lat: 37.5019,
-            lng: 127.0396,
-            type: .private,
-            phone: nil,
-            homepage: nil,
-            operationHours: "08:30-17:30",
+            name: "도담유치원",
+            address: "서울 서초구 서운로 31",
+            lat: 37.4915,
+            lng: 127.0177,
+            type: .public,
+            phone: "02-5555-1111",
+            homepage: "https://example.com/dodam",
+            operationHours: "09:00-17:00",
             sidoCode: "11",
-            sigunguCode: "11680",
-            capacity: 48,
-            currentCount: 33,
+            sigunguCode: "11650",
+            capacity: 36,
+            currentCount: 24,
             classCountAge3: 1,
-            classCountAge4: 2,
+            classCountAge4: 1,
             classCountAge5: 1,
             capacityAge3: 12,
-            capacityAge4: 24,
+            capacityAge4: 12,
             capacityAge5: 12,
-            currentAge3: 10,
-            currentAge4: 15,
+            currentAge3: 8,
+            currentAge4: 8,
             currentAge5: 8,
             classCountMix: 0,
             capacityMix: 0,
             currentMix: 0,
             capacitySpecial: 0,
             currentSpecial: 0,
-            establishDate: "20200302",
-            hasBus: true,
-            busCount: 2,
+            establishDate: "20190304",
+            hasBus: false,
+            busCount: 0,
             mealType: .direct,
             hasAfterSchool: false,
-            areaPerChild: 4.3,
-            hasPlayground: false,
-            buildingYear: 2020,
-            floorInfo: "지상 4층",
-            classroomArea: 160,
-            indoorPlaygroundArea: 22,
-            outdoorPlaygroundArea: 0,
+            areaPerChild: 6.2,
+            hasPlayground: true,
+            buildingYear: 2019,
+            floorInfo: "지상 2층",
+            classroomArea: 190,
+            indoorPlaygroundArea: 28,
+            outdoorPlaygroundArea: 74,
             teacherCount: 7,
-            seniorTeacherCount: 1,
+            seniorTeacherCount: 2,
             cctvCount: 10
         ),
     ]

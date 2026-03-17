@@ -107,12 +107,15 @@ final class NativeAppTests: XCTestCase {
             "A001": [
               {
                 "id": "rev-1",
+                "kindergartenId": "A001",
                 "title": "후기",
                 "url": "https://example.com",
                 "source": "naver_blog",
+                "sourceName": "네이버 블로그",
                 "snippet": "좋았어요",
-                "date": "2026-03-01",
-                "collectedAt": "2026-03-17T00:00:00Z"
+                "date": null,
+                "collectedAt": "2026-03-17T00:00:00Z",
+                "relevanceScore": 3
               }
             ]
           }
@@ -128,6 +131,7 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertEqual(reviews.totalCount, 1)
         XCTAssertEqual(reviews.reviews["A001"]?.count, 1)
+        XCTAssertNil(reviews.reviews["A001"]?.first?.date)
     }
 
     func testDeepLinkParserSupportsUniversalLinksAndCustomScheme() {
@@ -138,5 +142,50 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertEqual(appLink, .compare(ids: ["A001", "A002"]))
         XCTAssertEqual(webLink, .compare(ids: ["A003"]))
+    }
+
+    @MainActor
+    func testPersistenceRestoresFavoritesRecentsAndCompareSelection() {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        let favorites = [
+            FavoriteItem(kindercode: "A001", name: "역삼유치원", address: "서울 강남구 역삼로 123", type: .public),
+        ]
+        let recents = [
+            RecentSearch(label: "서울 강남구 역삼동", coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+        ]
+        let selection = CompareSelection(ids: ["A001", "A002"])
+
+        persistence.saveFavorites(favorites)
+        persistence.saveRecentSearches(recents)
+        persistence.saveCompareSelection(selection)
+
+        let restored = persistence.restore()
+
+        XCTAssertEqual(restored.favorites, favorites)
+        XCTAssertEqual(restored.recentSearches.count, 1)
+        XCTAssertEqual(restored.compareSelection.ids, ["A001", "A002"])
+    }
+
+    @MainActor
+    func testNativeAppModelAppliesCompareDeepLinkAndRestoresTab() {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:])
+        )
+
+        model.applyDeepLink(URL(string: "wherekindergarten://compare?ids=A001,A003")!)
+
+        XCTAssertEqual(model.compareSelection.ids, ["A001", "A003"])
+        XCTAssertEqual(model.selectedTab, .compare)
+        XCTAssertEqual(persistence.restore().compareSelection.ids, ["A001", "A003"])
     }
 }

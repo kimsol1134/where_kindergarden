@@ -1,0 +1,53 @@
+name: WhereKindergartenNative
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    DEVELOPMENT_TEAM: D48DDX5D5W
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0
+    GENERATE_INFOPLIST_FILE: NO
+    INFOPLIST_FILE: ../NativeApp/Config/NativeAppInfo.plist
+    CODE_SIGN_ENTITLEMENTS: ../NativeApp/Config/NativeApp.entitlements
+    PRODUCT_BUNDLE_IDENTIFIER: com.solkim.wherekindergarten.native
+    ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    TARGETED_DEVICE_FAMILY: "1"
+    SUPPORTS_MACCATALYST: NO
+    SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+    KAKAO_NATIVE_APP_KEY: ""
+packages:
+  NativeApp:
+    path: ../NativeApp
+targets:
+  WhereKindergartenNative:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources
+      - path: ../App/App/Assets.xcassets
+        buildPhase: resources
+      - path: ../../public/data/kindergartens.json
+        buildPhase: resources
+      - path: ../../public/data/reviews.json
+        buildPhase: resources
+    dependencies:
+      - package: NativeApp
+        product: AppShell
+    settings:
+      base:
+        PRODUCT_NAME: WhereKindergartenNative
+        PRODUCT_MODULE_NAME: WhereKindergartenNative
+        SWIFT_EMIT_LOC_STRINGS: YES
+        TARGETED_DEVICE_FAMILY: 1
+schemes:
+  WhereKindergartenNative:
+    build:
+      targets:
+        WhereKindergartenNative: all
+    run:
+      config: Debug
+    archive:
+      config: Release
