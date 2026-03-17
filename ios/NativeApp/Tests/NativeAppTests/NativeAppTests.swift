@@ -175,6 +175,9 @@ final class NativeAppTests: XCTestCase {
         let model = NativeAppModel(
             kindergartenRepository: KindergartenJSONRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
             locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
             persistence: persistence,
             configuration: NativeAppConfiguration(kakaoAppKey: nil),

@@ -105,6 +105,25 @@ public struct SearchHomeView: View {
 
 private struct SearchChrome: View {
     @ObservedObject var model: NativeAppModel
+    @FocusState private var isSearchFieldFocused: Bool
+
+    private var trimmedSearchText: String {
+        model.searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private var shouldShowSuggestionPanel: Bool {
+        isSearchFieldFocused || !trimmedSearchText.isEmpty
+    }
+
+    private var hasSuggestionContent: Bool {
+        isSearchFieldFocused
+            || !model.recentSearchSuggestions.isEmpty
+            || !model.localSearchSuggestions.isEmpty
+            || !model.remoteSearchSuggestions.isEmpty
+            || model.isSearchSuggestionsLoading
+            || model.searchSuggestionMessage != nil
+            || !trimmedSearchText.isEmpty
+    }
 
     var body: some View {
         VStack(spacing: 12) {
@@ -128,30 +147,53 @@ private struct SearchChrome: View {
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
-                .background(.white.opacity(0.84), in: Capsule())
+                        .background(.white.opacity(0.84), in: Capsule())
             }
 
-            HStack(spacing: 10) {
-                Image(systemName: "magnifyingglass")
-                    .foregroundStyle(leafGreen)
-                TextField(
-                    "유치원명 또는 주소로 결과 좁히기",
-                    text: Binding(
-                        get: { model.query },
-                        set: { model.query = $0 }
+            VStack(spacing: 0) {
+                HStack(spacing: 10) {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(leafGreen)
+                    TextField(
+                        "주소, 장소명, 유치원명으로 검색",
+                        text: Binding(
+                            get: { model.searchText },
+                            set: { model.updateSearchText($0) }
+                        )
                     )
-                )
-                .textFieldStyle(.plain)
-                Button {
-                    model.query = ""
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .foregroundStyle(.secondary)
+                    .focused($isSearchFieldFocused)
+                    .textFieldStyle(.plain)
+                    .submitLabel(.search)
+
+                    Button {
+                        model.clearSearchText()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(.secondary)
+                    }
+                    .opacity(model.searchText.isEmpty ? 0 : 1)
                 }
-                .opacity(model.query.isEmpty ? 0 : 1)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 15)
+
+                if shouldShowSuggestionPanel && hasSuggestionContent {
+                    Divider()
+                        .padding(.horizontal, 16)
+
+                    SearchSuggestionPanel(
+                        searchText: trimmedSearchText,
+                        recentSuggestions: model.recentSearchSuggestions,
+                        localSuggestions: model.localSearchSuggestions,
+                        remoteSuggestions: model.remoteSearchSuggestions,
+                        isLoading: model.isSearchSuggestionsLoading,
+                        message: model.searchSuggestionMessage
+                    ) { suggestion in
+                        model.selectSearchSuggestion(suggestion)
+                        isSearchFieldFocused = false
+                    }
+                    .padding(16)
+                }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 15)
             .background(.white.opacity(0.88), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
             .overlay(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
@@ -202,6 +244,175 @@ private struct SearchChrome: View {
     }
 }
 
+private struct SearchSuggestionPanel: View {
+    let searchText: String
+    let recentSuggestions: [SearchSuggestion]
+    let localSuggestions: [SearchSuggestion]
+    let remoteSuggestions: [SearchSuggestion]
+    let isLoading: Bool
+    let message: String?
+    let onSelect: (SearchSuggestion) -> Void
+
+    private var shouldShowEmptyState: Bool {
+        !searchText.isEmpty
+            && localSuggestions.isEmpty
+            && remoteSuggestions.isEmpty
+            && !isLoading
+            && message == nil
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            if searchText.isEmpty {
+                if recentSuggestions.isEmpty {
+                    Text("주소나 장소를 검색하면 최근 검색이 여기에 저장됩니다.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                } else {
+                    SearchSuggestionSection(
+                        title: "최근 검색",
+                        suggestions: recentSuggestions,
+                        onSelect: onSelect
+                    )
+                }
+            } else {
+                if !localSuggestions.isEmpty {
+                    SearchSuggestionSection(
+                        title: "유치원 바로가기",
+                        suggestions: localSuggestions,
+                        onSelect: onSelect
+                    )
+                }
+
+                if !remoteSuggestions.isEmpty {
+                    SearchSuggestionSection(
+                        title: "주소 / 장소",
+                        suggestions: remoteSuggestions,
+                        onSelect: onSelect
+                    )
+                }
+
+                if isLoading {
+                    HStack(spacing: 8) {
+                        ProgressView()
+                            .controlSize(.small)
+                        Text("Kakao Local 제안을 불러오는 중")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                if let message {
+                    HStack(spacing: 8) {
+                        Image(systemName: "info.circle.fill")
+                            .foregroundStyle(sunYellow)
+                        Text(message)
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                if shouldShowEmptyState {
+                    Text("일치하는 제안을 찾지 못했습니다. 다른 주소나 장소명을 입력해 보세요.")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+private struct SearchSuggestionSection: View {
+    let title: String
+    let suggestions: [SearchSuggestion]
+    let onSelect: (SearchSuggestion) -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(title)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.secondary)
+
+            VStack(spacing: 10) {
+                ForEach(suggestions) { suggestion in
+                    Button {
+                        onSelect(suggestion)
+                    } label: {
+                        SearchSuggestionRow(suggestion: suggestion)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+}
+
+private struct SearchSuggestionRow: View {
+    let suggestion: SearchSuggestion
+
+    private var iconName: String {
+        switch suggestion.kind {
+        case .recent:
+            return "clock.arrow.circlepath"
+        case .kindergarten:
+            return "building.2.fill"
+        case .address:
+            return "mappin.and.ellipse"
+        case .place:
+            return "sparkle.magnifyingglass"
+        }
+    }
+
+    private var badgeLabel: String {
+        switch suggestion.kind {
+        case .recent:
+            return "최근"
+        case .kindergarten:
+            return "기관"
+        case .address:
+            return "주소"
+        case .place:
+            return "장소"
+        }
+    }
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: iconName)
+                .font(.title3)
+                .foregroundStyle(leafGreen)
+                .frame(width: 28)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(suggestion.title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.primary)
+                    .lineLimit(1)
+
+                if let subtitle = suggestion.subtitle, !subtitle.isEmpty {
+                    Text(subtitle)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+                }
+            }
+
+            Spacer(minLength: 12)
+
+            Text(badgeLabel)
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(leafGreen)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 5)
+                .background(leafGreen.opacity(0.12), in: Capsule())
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.white.opacity(0.86), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+    }
+}
+
 private struct ResultSheet: View {
     let results: [Kindergarten]
     let comparedIDs: Set<String>
@@ -230,20 +441,33 @@ private struct ResultSheet: View {
             }
 
             ScrollView {
-                LazyVStack(spacing: 12) {
-                    ForEach(results.prefix(10)) { kindergarten in
-                        SearchResultCard(
-                            kindergarten: kindergarten,
-                            isCompared: comparedIDs.contains(kindergarten.kindercode),
-                            isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                            reviewCount: reviewCounts[kindergarten.kindercode] ?? 0,
-                            onTap: { onSelect(kindergarten) },
-                            onToggleCompare: { onToggleCompare(kindergarten) },
-                            onToggleFavorite: { onToggleFavorite(kindergarten) }
-                        )
+                if results.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("선택한 위치 주변에 표시할 기관이 없습니다.")
+                            .font(.subheadline.weight(.semibold))
+                        Text("반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요.")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(18)
+                    .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+                } else {
+                    LazyVStack(spacing: 12) {
+                        ForEach(results.prefix(10)) { kindergarten in
+                            SearchResultCard(
+                                kindergarten: kindergarten,
+                                isCompared: comparedIDs.contains(kindergarten.kindercode),
+                                isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                                reviewCount: reviewCounts[kindergarten.kindercode] ?? 0,
+                                onTap: { onSelect(kindergarten) },
+                                onToggleCompare: { onToggleCompare(kindergarten) },
+                                onToggleFavorite: { onToggleFavorite(kindergarten) }
+                            )
+                        }
+                    }
+                    .padding(.bottom, 8)
                 }
-                .padding(.bottom, 8)
             }
             .frame(maxHeight: 360)
         }

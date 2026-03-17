@@ -17,6 +17,7 @@ settings:
     SUPPORTS_MACCATALYST: NO
     SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
     KAKAO_NATIVE_APP_KEY: ""
+    KAKAO_REST_API_KEY: ""
 packages:
   NativeApp:
     path: ../NativeApp

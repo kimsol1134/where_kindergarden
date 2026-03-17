@@ -14,10 +14,10 @@ public enum NativeTab: Hashable {
 public final class NativeAppModel: ObservableObject {
     public static let defaultCenter = Coordinates(lat: 37.5665, lng: 126.9780)
     public static let defaultLocationLabel = "서울 시청"
+    private static let searchSuggestionMinimumLength = 2
+    private static let searchLocale = Locale(identifier: "ko_KR")
 
-    @Published public var query: String {
-        didSet { refresh() }
-    }
+    @Published public private(set) var searchText: String
 
     @Published public var filters: SearchFilters {
         didSet { refresh() }
@@ -29,6 +29,10 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var reviewsData: ReviewsData?
     @Published public private(set) var favorites: [FavoriteItem]
     @Published public private(set) var recentSearches: [RecentSearch]
+    @Published public private(set) var localSearchSuggestions: [SearchSuggestion]
+    @Published public private(set) var remoteSearchSuggestions: [SearchSuggestion]
+    @Published public private(set) var isSearchSuggestionsLoading = false
+    @Published public private(set) var searchSuggestionMessage: String?
     @Published public var compareSelection: CompareSelection {
         didSet { persistence.saveCompareSelection(compareSelection) }
     }
@@ -45,29 +49,35 @@ public final class NativeAppModel: ObservableObject {
     private let kindergartenRepository: KindergartenJSONRepository
     private let reviewRepository: ReviewRepository
     private let searchEngine: KindergartenSearchEngine
+    private let remoteSearchService: any RemoteLocationSuggesting
     private let locationProvider: CurrentLocationProviding
     private let persistence: NativeAppPersistence
+    private let searchDebounceDuration: Duration
 
     private var allKindergartens: [KindergartenRaw]
     private var hasBootstrapped: Bool
     private var kindergartenLookup: [String: KindergartenRaw]
+    private var searchSuggestionTask: Task<Void, Never>?
 
     public init(
         kindergartenRepository: KindergartenJSONRepository,
         reviewRepository: ReviewRepository,
         searchEngine: KindergartenSearchEngine = KindergartenSearchEngine(),
+        remoteSearchService: any RemoteLocationSuggesting,
         locationProvider: CurrentLocationProviding,
         persistence: NativeAppPersistence,
         configuration: NativeAppConfiguration,
         initialKindergartens: [KindergartenRaw] = [],
         initialReviews: ReviewsData? = nil,
         filters: SearchFilters = SearchFilters(),
-        query: String = ""
+        searchText: String = "",
+        searchDebounceDuration: Duration = .milliseconds(300)
     ) {
         let restoredState = persistence.restore()
         self.kindergartenRepository = kindergartenRepository
         self.reviewRepository = reviewRepository
         self.searchEngine = searchEngine
+        self.remoteSearchService = remoteSearchService
         self.locationProvider = locationProvider
         self.persistence = persistence
         self.configuration = configuration
@@ -76,12 +86,15 @@ public final class NativeAppModel: ObservableObject {
         self.kindergartenLookup = Dictionary(
             uniqueKeysWithValues: initialKindergartens.map { ($0.kindercode, $0) }
         )
-        self.query = query
+        self.searchText = searchText
         self.filters = filters
         self.reviewsData = initialReviews
         self.favorites = restoredState.favorites
         self.recentSearches = restoredState.recentSearches
+        self.localSearchSuggestions = []
+        self.remoteSearchSuggestions = []
         self.compareSelection = restoredState.compareSelection
+        self.searchDebounceDuration = searchDebounceDuration
 
         if let restoredSearch = restoredState.recentSearches.first, let coordinates = restoredSearch.coordinates {
             self.userLocation = coordinates
@@ -93,6 +106,27 @@ public final class NativeAppModel: ObservableObject {
 
         self.results = []
         refresh()
+        refreshSearchSuggestions()
+    }
+
+    deinit {
+        searchSuggestionTask?.cancel()
+    }
+
+    public var recentSearchSuggestions: [SearchSuggestion] {
+        recentSearches.compactMap { search in
+            guard let coordinates = search.coordinates else {
+                return nil
+            }
+
+            return SearchSuggestion(
+                id: "recent:\(search.id.uuidString)",
+                kind: .recent,
+                title: search.label,
+                subtitle: String(format: "%.4f, %.4f", coordinates.lat, coordinates.lng),
+                coordinates: coordinates
+            )
+        }
     }
 
     public static func live(
@@ -120,6 +154,12 @@ public final class NativeAppModel: ObservableObject {
         return NativeAppModel(
             kindergartenRepository: kindergartenRepository,
             reviewRepository: reviewRepository,
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(
+                    apiKey: configuration.kakaoRESTAPIKey,
+                    session: session
+                )
+            ),
             locationProvider: CurrentLocationService(),
             persistence: NativeAppPersistence(store: userDefaults),
             configuration: configuration
@@ -176,6 +216,9 @@ public final class NativeAppModel: ObservableObject {
                 Data()
             },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
             locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
             persistence: persistence,
             configuration: NativeAppConfiguration(kakaoAppKey: nil),
@@ -204,6 +247,7 @@ public final class NativeAppModel: ObservableObject {
             allKindergartens = loaded
             kindergartenLookup = Dictionary(uniqueKeysWithValues: loaded.map { ($0.kindercode, $0) })
             refresh()
+            refreshSearchSuggestions()
         } catch {
             catalogError = error.localizedDescription
             results = []
@@ -231,6 +275,14 @@ public final class NativeAppModel: ObservableObject {
         filters.sort = sort
     }
 
+    public func updateSearchText(_ text: String) {
+        setSearchText(text, refreshSuggestions: true)
+    }
+
+    public func clearSearchText() {
+        setSearchText("", refreshSuggestions: false)
+    }
+
     public func toggleBusFilter() {
         filters.hasBus = filters.hasBus == true ? nil : true
     }
@@ -250,7 +302,9 @@ public final class NativeAppModel: ObservableObject {
         }
 
         let nextSearch = RecentSearch(label: label, coordinates: coordinates)
-        let filtered = recentSearches.filter { $0.label != label }
+        let filtered = recentSearches.filter {
+            $0.label != label || $0.coordinates != coordinates
+        }
         recentSearches = Array(([nextSearch] + filtered).prefix(5))
         persistence.saveRecentSearches(recentSearches)
         refresh()
@@ -271,6 +325,12 @@ public final class NativeAppModel: ObservableObject {
 
     public func dismissDetail() {
         selectedKindergarten = nil
+    }
+
+    public func selectSearchSuggestion(_ suggestion: SearchSuggestion) {
+        setLocation(suggestion.coordinates, label: suggestion.title)
+        setSearchText(suggestion.title, refreshSuggestions: false)
+        selectedTab = .search
     }
 
     public func toggleCompare(for kindergarten: Kindergarten) {
@@ -349,7 +409,7 @@ public final class NativeAppModel: ObservableObject {
             selectedTab = .compare
             refreshSelectedKindergarten()
         case let .search(query):
-            self.query = query ?? ""
+            updateSearchText(query ?? "")
             selectedTab = .search
         }
     }
@@ -362,6 +422,7 @@ public final class NativeAppModel: ObservableObject {
     public func restoreRecentSearch(_ search: RecentSearch) {
         guard let coordinates = search.coordinates else { return }
         setLocation(coordinates, label: search.label)
+        setSearchText(search.label, refreshSuggestions: false)
         selectedTab = .search
     }
 
@@ -378,20 +439,7 @@ public final class NativeAppModel: ObservableObject {
             filters: filters
         )
 
-        let normalizedQuery = query
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .folding(options: .diacriticInsensitive, locale: Locale(identifier: "ko_KR"))
-
-        if normalizedQuery.isEmpty {
-            results = baseResults
-        } else {
-            results = baseResults.filter { kindergarten in
-                let searchable = "\(kindergarten.name) \(kindergarten.address)"
-                    .folding(options: .diacriticInsensitive, locale: Locale(identifier: "ko_KR"))
-                return searchable.localizedCaseInsensitiveContains(normalizedQuery)
-            }
-        }
-
+        results = baseResults
         refreshSelectedKindergarten()
     }
 
@@ -403,5 +451,140 @@ public final class NativeAppModel: ObservableObject {
 
     private func makeKindergarten(from raw: KindergartenRaw) -> Kindergarten {
         searchEngine.makeKindergartens(raws: [raw], relativeTo: userLocation).first ?? Kindergarten(raw: raw, distance: -1)
+    }
+
+    private func setSearchText(_ text: String, refreshSuggestions: Bool) {
+        searchText = text
+
+        if refreshSuggestions {
+            refreshSearchSuggestions()
+        } else {
+            clearSearchSuggestions()
+        }
+    }
+
+    private func refreshSearchSuggestions() {
+        searchSuggestionTask?.cancel()
+
+        let trimmedQuery = trimmedSearchText(searchText)
+        guard trimmedQuery.count >= Self.searchSuggestionMinimumLength else {
+            clearSearchSuggestions()
+            return
+        }
+
+        localSearchSuggestions = makeLocalSearchSuggestions(for: trimmedQuery)
+        remoteSearchSuggestions = []
+        searchSuggestionMessage = nil
+
+        guard remoteSearchService.isConfigured else {
+            isSearchSuggestionsLoading = false
+            searchSuggestionMessage = remoteSearchService.unavailableMessage
+            return
+        }
+
+        isSearchSuggestionsLoading = true
+        let origin = userLocation
+        let querySnapshot = trimmedQuery
+
+        searchSuggestionTask = Task { [weak self] in
+            guard let self else { return }
+
+            do {
+                try await Task.sleep(for: self.searchDebounceDuration)
+            } catch {
+                return
+            }
+
+            let result = await self.remoteSearchService.suggestions(for: querySnapshot, near: origin)
+            self.applyRemoteSearchSuggestions(result, for: querySnapshot)
+        }
+    }
+
+    private func applyRemoteSearchSuggestions(
+        _ result: RemoteLocationSearchResult,
+        for query: String
+    ) {
+        guard trimmedSearchText(searchText) == query else {
+            return
+        }
+
+        remoteSearchSuggestions = result.suggestions
+        searchSuggestionMessage = result.message
+        isSearchSuggestionsLoading = false
+    }
+
+    private func clearSearchSuggestions() {
+        searchSuggestionTask?.cancel()
+        searchSuggestionTask = nil
+        localSearchSuggestions = []
+        remoteSearchSuggestions = []
+        searchSuggestionMessage = nil
+        isSearchSuggestionsLoading = false
+    }
+
+    private func makeLocalSearchSuggestions(for query: String) -> [SearchSuggestion] {
+        let normalizedQuery = normalizedSearchText(query)
+
+        let rankedMatches = allKindergartens.compactMap { raw -> (priority: Int, distance: Double, raw: KindergartenRaw)? in
+            let normalizedName = normalizedSearchText(raw.name)
+            let normalizedAddress = normalizedSearchText(raw.address)
+
+            let priority: Int?
+            if normalizedName == normalizedQuery {
+                priority = 0
+            } else if normalizedName.hasPrefix(normalizedQuery) {
+                priority = 1
+            } else if normalizedName.localizedCaseInsensitiveContains(normalizedQuery) {
+                priority = 2
+            } else if normalizedAddress.localizedCaseInsensitiveContains(normalizedQuery) {
+                priority = 3
+            } else {
+                priority = nil
+            }
+
+            guard let priority else {
+                return nil
+            }
+
+            let distance = DistanceCalculator().kilometers(
+                from: userLocation,
+                to: Coordinates(lat: raw.lat, lng: raw.lng)
+            )
+
+            return (priority, distance, raw)
+        }
+
+        return rankedMatches
+            .sorted { lhs, rhs in
+                if lhs.priority != rhs.priority {
+                    return lhs.priority < rhs.priority
+                }
+
+                if lhs.distance != rhs.distance {
+                    return lhs.distance < rhs.distance
+                }
+
+                return lhs.raw.name.localizedCompare(rhs.raw.name) == .orderedAscending
+            }
+            .prefix(6)
+            .map { match in
+                SearchSuggestion(
+                    id: "kindergarten:\(match.raw.kindercode)",
+                    kind: .kindergarten,
+                    title: match.raw.name,
+                    subtitle: match.raw.address,
+                    coordinates: Coordinates(lat: match.raw.lat, lng: match.raw.lng),
+                    kindercode: match.raw.kindercode
+                )
+            }
+    }
+
+    private func trimmedSearchText(_ text: String) -> String {
+        text.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private func normalizedSearchText(_ text: String) -> String {
+        trimmedSearchText(text)
+            .folding(options: [.diacriticInsensitive, .caseInsensitive], locale: Self.searchLocale)
     }
 }
