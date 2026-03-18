@@ -5,13 +5,17 @@ import SwiftUI
 
 @MainActor
 public final class SearchFeatureModel: ObservableObject {
-    @Published public var query: String = ""
+    @Published public var query: String = "" {
+        didSet {
+            guard query != oldValue else { return }
+            refresh()
+        }
+    }
     @Published public var filters: SearchFilters
     @Published public var userLocation: Coordinates?
     @Published public private(set) var results: [Kindergarten]
     @Published public var selectedKindergarten: Kindergarten?
     @Published public private(set) var recentSearches: [RecentSearch]
-    @Published public var compareSelection: CompareSelection
 
     private let allKindergartens: [KindergartenRaw]
     private let searchEngine: KindergartenSearchEngine
@@ -20,15 +24,13 @@ public final class SearchFeatureModel: ObservableObject {
         allKindergartens: [KindergartenRaw] = NativePreviewFixtures.kindergartens,
         filters: SearchFilters = SearchFilters(),
         recentSearches: [RecentSearch] = [],
-        compareSelection: CompareSelection = CompareSelection(),
         searchEngine: KindergartenSearchEngine = KindergartenSearchEngine()
     ) {
         self.allKindergartens = allKindergartens
         self.filters = filters
         self.recentSearches = recentSearches
-        self.compareSelection = compareSelection
         self.searchEngine = searchEngine
-        self.results = searchEngine.makeKindergartens(raws: allKindergartens, relativeTo: nil)
+        self.results = searchEngine.search(raws: allKindergartens, location: nil, filters: filters)
     }
 
     public func setLocation(_ coordinates: Coordinates, label: String) {
@@ -62,38 +64,49 @@ public final class SearchFeatureModel: ObservableObject {
         selectedKindergarten = kindergarten
     }
 
-    public func toggleCompare(for kindergarten: Kindergarten) {
-        compareSelection.toggle(id: kindergarten.kindercode)
-    }
-
-    public func isCompared(_ kindergarten: Kindergarten) -> Bool {
-        compareSelection.contains(kindergarten.kindercode)
-    }
-
-    public func comparedKindergartens() -> [Kindergarten] {
-        results.filter { compareSelection.contains($0.kindercode) }
-    }
-
     public func refresh() {
-        guard let userLocation else {
-            results = searchEngine.makeKindergartens(raws: allKindergartens, relativeTo: nil)
-            return
-        }
-        results = searchEngine.search(raws: allKindergartens, location: userLocation, filters: filters)
+        results = searchEngine.search(
+            raws: allKindergartens,
+            location: userLocation,
+            filters: filters,
+            query: query
+        )
+    }
+
+    public func kindergartens(for ids: [String]) -> [Kindergarten] {
+        let byID = Dictionary(uniqueKeysWithValues: searchEngine.makeKindergartens(raws: allKindergartens, relativeTo: userLocation).map {
+            ($0.kindercode, $0)
+        })
+
+        return ids.compactMap { byID[$0] }
     }
 }
 
 @MainActor
 public struct SearchHomeView: View {
-    @StateObject private var model: SearchFeatureModel
+    @ObservedObject private var model: SearchFeatureModel
+    private let compareSelection: CompareSelection
+    private let onToggleCompare: (Kindergarten) -> Void
+    private let onOpenCompare: () -> Void
     @State private var showDetail = false
 
     public init() {
-        _model = StateObject(wrappedValue: SearchFeatureModel())
+        _model = ObservedObject(wrappedValue: SearchFeatureModel())
+        self.compareSelection = CompareSelection()
+        self.onToggleCompare = { _ in }
+        self.onOpenCompare = {}
     }
 
-    public init(model: SearchFeatureModel) {
-        _model = StateObject(wrappedValue: model)
+    public init(
+        model: SearchFeatureModel,
+        compareSelection: CompareSelection = CompareSelection(),
+        onToggleCompare: @escaping (Kindergarten) -> Void = { _ in },
+        onOpenCompare: @escaping () -> Void = {}
+    ) {
+        _model = ObservedObject(wrappedValue: model)
+        self.compareSelection = compareSelection
+        self.onToggleCompare = onToggleCompare
+        self.onOpenCompare = onOpenCompare
     }
 
     public var body: some View {
@@ -110,30 +123,32 @@ public struct SearchHomeView: View {
             .safeAreaInset(edge: .bottom) {
                 ResultSheet(
                     results: model.results,
-                    comparedIDs: Set(model.compareSelection.ids),
+                    comparedIDs: Set(compareSelection.ids),
                     onSelect: { kindergarten in
                         model.select(kindergarten: kindergarten)
                         showDetail = true
                     },
-                    onToggleCompare: { kindergarten in
-                        model.toggleCompare(for: kindergarten)
-                    }
+                    onToggleCompare: onToggleCompare
                 )
             }
             .sheet(isPresented: $showDetail) {
                 if let selectedKindergarten = model.selectedKindergarten {
                     KindergartenDetailSheet(
                         kindergarten: selectedKindergarten,
-                        isCompared: model.isCompared(selectedKindergarten),
-                        onToggleCompare: { model.toggleCompare(for: selectedKindergarten) }
+                        isCompared: compareSelection.contains(selectedKindergarten.kindercode),
+                        onToggleCompare: { onToggleCompare(selectedKindergarten) }
                     )
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
                 }
             }
             .safeAreaInset(edge: .bottom) {
-                if !model.compareSelection.ids.isEmpty {
-                    PersistentCompareBar(count: model.compareSelection.ids.count)
+                if !compareSelection.ids.isEmpty {
+                    Button(action: onOpenCompare) {
+                        PersistentCompareBar(count: compareSelection.ids.count)
+                    }
+                    .accessibilityIdentifier("search.compareBarButton")
+                    .buttonStyle(.plain)
                         .padding(.horizontal, 16)
                         .padding(.bottom, 6)
                 }
@@ -166,12 +181,14 @@ private struct SearchChrome: View {
                     .foregroundStyle(leafGreen)
                 TextField("주소, 유치원, 아파트 이름 검색", text: $model.query)
                     .textFieldStyle(.plain)
+                    .accessibilityIdentifier("search.queryField")
                 Button {
                     model.query = ""
                 } label: {
                     Image(systemName: "xmark.circle.fill")
                         .foregroundStyle(.secondary)
                 }
+                .accessibilityIdentifier("search.clearQuery")
                 .opacity(model.query.isEmpty ? 0 : 1)
             }
             .padding(.horizontal, 16)
@@ -262,6 +279,7 @@ private struct ResultSheet: View {
                     Text("\(results.count)개 기관을 iPhone 하단 sheet로 요약")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
+                        .accessibilityIdentifier("search.resultCountLabel")
                 }
                 Spacer()
             }
@@ -303,7 +321,7 @@ private struct SearchResultCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .top) {
+            Button(action: onTap) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(kindergarten.name)
                         .font(.headline.weight(.semibold))
@@ -319,27 +337,40 @@ private struct SearchResultCard: View {
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
+
+                    Text(kindergarten.address)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+
+                    HStack(spacing: 14) {
+                        Label("정원 \(kindergarten.capacity)", systemImage: "person.3.fill")
+                        Label(kindergarten.hasBus ? "셔틀 \(kindergarten.busCount)대" : "셔틀 없음", systemImage: "bus")
+                    }
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
                 }
+                .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .buttonStyle(.plain)
+
+            HStack {
                 Spacer()
                 Button(action: onToggleCompare) {
-                    Image(systemName: isCompared ? "checkmark.circle.fill" : "plus.circle")
-                        .font(.title3)
-                        .foregroundStyle(isCompared ? leafGreen : sand)
+                    Label(
+                        isCompared ? "비교중" : "비교 추가",
+                        systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle"
+                    )
+                    .font(.footnote.weight(.semibold))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .background(isCompared ? leafGreen.opacity(0.14) : sand.opacity(0.12), in: Capsule())
+                    .foregroundStyle(isCompared ? leafGreen : .primary)
                 }
+                .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
                 .buttonStyle(.plain)
             }
-
-            Text(kindergarten.address)
-                .font(.footnote)
-                .foregroundStyle(.secondary)
-                .lineLimit(2)
-
-            HStack(spacing: 14) {
-                Label("정원 \(kindergarten.capacity)", systemImage: "person.3.fill")
-                Label(kindergarten.hasBus ? "셔틀 \(kindergarten.busCount)대" : "셔틀 없음", systemImage: "bus")
-            }
-            .font(.caption)
-            .foregroundStyle(.secondary)
         }
         .padding(16)
         .background(.white.opacity(0.92), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
@@ -347,8 +378,6 @@ private struct SearchResultCard: View {
             RoundedRectangle(cornerRadius: 24, style: .continuous)
                 .stroke(Color.white.opacity(0.76), lineWidth: 1)
         )
-        .contentShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-        .onTapGesture(perform: onTap)
     }
 }
 
@@ -384,6 +413,7 @@ private struct KindergartenDetailSheet: View {
                     )
                     .frame(maxWidth: .infinity)
                 }
+                .accessibilityIdentifier("search.detailCompareToggle.\(kindergarten.kindercode)")
                 .buttonStyle(.borderedProminent)
                 .tint(leafGreen)
             }
@@ -414,6 +444,7 @@ private struct PersistentCompareBar: View {
         .background(leafGreen, in: Capsule())
         .foregroundStyle(.white)
         .shadow(color: leafGreen.opacity(0.24), radius: 18, y: 8)
+        .accessibilityIdentifier("search.compareBar")
     }
 }
 

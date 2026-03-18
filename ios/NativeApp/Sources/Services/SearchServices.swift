@@ -27,17 +27,25 @@ public struct KindergartenSearchEngine {
 
     public func search(
         raws: [KindergartenRaw],
-        location: Coordinates,
-        filters: SearchFilters
+        location: Coordinates?,
+        filters: SearchFilters,
+        query: String? = nil
     ) -> [Kindergarten] {
         let visible = raws.compactMap { raw -> Kindergarten? in
-            let distance = distanceCalculator.kilometers(from: location, to: Coordinates(lat: raw.lat, lng: raw.lng))
-            guard distance <= filters.radiusKM else { return nil }
-            return Kindergarten(raw: raw, distance: (distance * 100).rounded() / 100)
+            let distance = location.map {
+                distanceCalculator.kilometers(from: $0, to: Coordinates(lat: raw.lat, lng: raw.lng))
+            }
+
+            if let distance, distance > filters.radiusKM {
+                return nil
+            }
+
+            let roundedDistance = distance.map { ($0 * 100).rounded() / 100 } ?? -1
+            return Kindergarten(raw: raw, distance: roundedDistance)
         }
 
         return sort(
-            filter(kindergartens: visible, filters: filters),
+            filter(kindergartens: filter(kindergartens: visible, query: query), filters: filters),
             by: filters.sort
         )
     }
@@ -49,6 +57,18 @@ public struct KindergartenSearchEngine {
                 return (kilometers * 100).rounded() / 100
             } ?? -1
             return Kindergarten(raw: raw, distance: distance)
+        }
+    }
+
+    public func filter(kindergartens: [Kindergarten], query: String?) -> [Kindergarten] {
+        let trimmedQuery = query?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        guard !trimmedQuery.isEmpty else {
+            return kindergartens
+        }
+
+        return kindergartens.filter { kindergarten in
+            kindergarten.name.localizedCaseInsensitiveContains(trimmedQuery)
+                || kindergarten.address.localizedCaseInsensitiveContains(trimmedQuery)
         }
     }
 
@@ -89,7 +109,11 @@ public struct KindergartenSearchEngine {
     }
 
     private func sort(_ kindergartens: [Kindergarten], by option: SortOption) -> [Kindergarten] {
-        kindergartens.sorted { lhs, rhs in
+        if option == .distance, kindergartens.contains(where: { $0.distance < 0 }) {
+            return kindergartens
+        }
+
+        return kindergartens.sorted { lhs, rhs in
             switch option {
             case .distance:
                 return lhs.distance < rhs.distance
@@ -99,6 +123,27 @@ public struct KindergartenSearchEngine {
                 return lhs.areaPerChild > rhs.areaPerChild
             }
         }
+    }
+}
+
+public struct DeepLinkBuilder {
+    private let baseURL: URL
+
+    public init(baseURL: URL = URL(string: "https://where-kindergarden.vercel.app")!) {
+        self.baseURL = baseURL
+    }
+
+    public func compareURL(ids: [String]) -> URL? {
+        guard !ids.isEmpty else {
+            return nil
+        }
+
+        let compareURL = baseURL.appending(path: "compare")
+        var components = URLComponents(url: compareURL, resolvingAgainstBaseURL: false)
+        components?.queryItems = [
+            URLQueryItem(name: "ids", value: ids.joined(separator: ","))
+        ]
+        return components?.url
     }
 }
 

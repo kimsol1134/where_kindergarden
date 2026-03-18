@@ -87,6 +87,32 @@ final class NativeAppTests: XCTestCase {
         XCTAssertTrue(results.allSatisfy { $0.hasBus })
     }
 
+    @MainActor
+    func testSearchFeatureModelFiltersByQueryAndClearsToFullSet() {
+        let model = SearchFeatureModel()
+
+        XCTAssertEqual(model.results.count, NativePreviewFixtures.kindergartens.count)
+
+        model.query = "역삼"
+        XCTAssertEqual(model.results.map(\.kindercode), ["A001"])
+
+        model.query = "도곡로"
+        XCTAssertEqual(model.results.map(\.kindercode), ["A002"])
+
+        model.query = ""
+        XCTAssertEqual(model.results.count, NativePreviewFixtures.kindergartens.count)
+    }
+
+    @MainActor
+    func testSearchFeatureModelResolvesComparedItemsFromAllKindergartens() {
+        let model = SearchFeatureModel()
+        model.query = "역삼"
+
+        let compared = model.kindergartens(for: ["A002", "A001"])
+
+        XCTAssertEqual(compared.map(\.kindercode), ["A002", "A001"])
+    }
+
     func testCompareSelectionStopsAtThree() {
         var selection = CompareSelection()
         selection.toggle(id: "A001")
@@ -138,5 +164,13 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertEqual(appLink, .compare(ids: ["A001", "A002"]))
         XCTAssertEqual(webLink, .compare(ids: ["A003"]))
+    }
+
+    func testDeepLinkBuilderCreatesCompareLink() {
+        let builder = DeepLinkBuilder()
+
+        let url = builder.compareURL(ids: ["A001", "A002"])
+
+        XCTAssertEqual(url?.absoluteString, "https://where-kindergarden.vercel.app/compare?ids=A001,A002")
     }
 }
