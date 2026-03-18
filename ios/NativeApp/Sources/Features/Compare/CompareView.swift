@@ -1,20 +1,19 @@
 import Models
-import Services
 import SwiftUI
 
 public struct CompareView: View {
-    private let items: [Kindergarten]
-    private let onRemove: (Kindergarten) -> Void
-    private let deepLinkBuilder: DeepLinkBuilder
+    @ObservedObject private var model: NativeAppModel
 
-    public init(
-        items: [Kindergarten] = [],
-        onRemove: @escaping (Kindergarten) -> Void = { _ in },
-        deepLinkBuilder: DeepLinkBuilder = DeepLinkBuilder()
-    ) {
-        self.items = items
-        self.onRemove = onRemove
-        self.deepLinkBuilder = deepLinkBuilder
+    public init(model: NativeAppModel) {
+        self.model = model
+    }
+
+    @MainActor public init() {
+        self.model = .preview()
+    }
+
+    private var items: [Kindergarten] {
+        model.comparedKindergartens()
     }
 
     public var body: some View {
@@ -34,7 +33,9 @@ public struct CompareView: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 14) {
                                 ForEach(items) { item in
-                                    CompareHeaderCard(item: item, onRemove: { onRemove(item) })
+                                    CompareHeaderCard(item: item) {
+                                        model.toggleCompare(for: item)
+                                    }
                                 }
                             }
                         }
@@ -44,10 +45,11 @@ public struct CompareView: View {
                             CompareMetricRow(title: "정원", values: items.map { "\($0.capacity)명" })
                             CompareMetricRow(title: "셔틀", values: items.map { $0.hasBus ? "\($0.busCount)대" : "없음" })
                             CompareMetricRow(title: "방과후", values: items.map { $0.hasAfterSchool ? "운영" : "미운영" })
+                            CompareMetricRow(title: "후기 수", values: items.map { "\(model.reviews(for: $0.kindercode).count)건" })
                         }
                     }
 
-                    if let shareURL {
+                    if let shareURL = model.compareShareURL() {
                         ShareLink(
                             item: shareURL,
                             subject: Text("우리동네 유치원 비교"),
@@ -69,7 +71,7 @@ public struct CompareView: View {
                 }
                 .padding(20)
             }
-            .background(Color(red: 0.97, green: 0.96, blue: 0.94))
+            .background(mistWhite)
             .navigationTitle("비교")
         }
     }
@@ -85,10 +87,6 @@ public struct CompareView: View {
         }
     }
 
-    private var shareURL: URL? {
-        deepLinkBuilder.compareURL(ids: items.map(\.kindercode))
-    }
-
     private var shareSummary: String {
         let lines = items.map { item in
             "\(item.name) · \(item.address) · 정원 \(item.capacity)명 · 1인당 면적 \(String(format: "%.1f㎡", item.areaPerChild))"
@@ -97,7 +95,7 @@ public struct CompareView: View {
         return ([
             "우리동네 유치원 비교",
             lines.joined(separator: "\n"),
-            shareURL?.absoluteString ?? ""
+            model.compareShareURL()?.absoluteString ?? ""
         ])
         .filter { !$0.isEmpty }
         .joined(separator: "\n\n")
@@ -184,5 +182,3 @@ private struct CompareMetricRow: View {
         }
     }
 }
-
-private let leafGreen = Color(red: 0.31, green: 0.68, blue: 0.43)

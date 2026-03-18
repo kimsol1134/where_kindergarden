@@ -1,0 +1,5 @@
+#include? "KakaoKeys.local.xcconfig"
+
+// Keep Kakao keys out of the generated project. Local overrides can define WK_* values.
+KAKAO_NATIVE_APP_KEY = $(WK_KAKAO_NATIVE_APP_KEY)
+KAKAO_REST_API_KEY = $(WK_KAKAO_REST_API_KEY)

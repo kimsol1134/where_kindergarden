@@ -1,65 +1,53 @@
 import Features
-import Models
 import SwiftUI
 
 public struct NativeRootView: View {
-    @StateObject private var searchModel: SearchFeatureModel
-    @State private var compareSelection = CompareSelection()
-    @State private var selectedTab: NativeTab = .search
+    @StateObject private var model: NativeAppModel
 
-    public init() {
-        _searchModel = StateObject(wrappedValue: SearchFeatureModel())
+    public init(model: NativeAppModel) {
+        _model = StateObject(wrappedValue: model)
+    }
+
+    @MainActor public init() {
+        _model = StateObject(wrappedValue: .live())
     }
 
     public var body: some View {
-        TabView(selection: $selectedTab) {
-            SearchHomeView(
-                model: searchModel,
-                compareSelection: compareSelection,
-                onToggleCompare: toggleCompare(for:),
-                onOpenCompare: openCompare
-            )
-                .tag(NativeTab.search)
+        TabView(selection: $model.selectedTab) {
+            SearchHomeView(model: model)
                 .tabItem {
                     Label("탐색", systemImage: "magnifyingglass")
                 }
+                .tag(NativeTab.search)
 
-            CompareView(
-                items: searchModel.kindergartens(for: compareSelection.ids),
-                onRemove: toggleCompare(for:)
-            )
-                .tag(NativeTab.compare)
+            CompareView(model: model)
                 .tabItem {
                     Label("비교", systemImage: "square.split.2x2")
                 }
+                .tag(NativeTab.compare)
 
-            SavedView()
-                .tag(NativeTab.saved)
+            SavedView(model: model)
                 .tabItem {
                     Label("보관함", systemImage: "heart")
                 }
+                .tag(NativeTab.saved)
 
             MoreView()
                 .tag(NativeTab.more)
                 .tabItem {
                     Label("더보기", systemImage: "ellipsis.circle")
                 }
+                .tag(NativeTab.more)
         }
-        .tint(Color(red: 0.31, green: 0.68, blue: 0.43))
+        .task {
+            await model.bootstrapIfNeeded()
+        }
+        .onOpenURL { url in
+            model.applyDeepLink(url)
+        }
+        .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
+            model.applyUniversalLink(userActivity)
+        }
+        .tint(leafGreen)
     }
-
-    private func toggleCompare(for kindergarten: Kindergarten) {
-        compareSelection.toggle(id: kindergarten.kindercode)
-    }
-
-    private func openCompare() {
-        selectedTab = .compare
-    }
-}
-
-private enum NativeTab: Hashable {
-    case search
-    case compare
-    case saved
-    case more
 }
