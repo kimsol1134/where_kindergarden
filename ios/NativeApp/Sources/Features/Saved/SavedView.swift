@@ -20,14 +20,37 @@ public struct SavedView: View {
                             .foregroundStyle(.secondary)
                     } else {
                         ForEach(model.favoriteKindergartens()) { kindergarten in
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text(kindergarten.name)
-                                    .font(.headline)
-                                Text(kindergarten.address)
-                                    .font(.footnote)
+                            Button {
+                                model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                            } label: {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    HStack {
+                                        Text(kindergarten.name)
+                                            .font(.headline)
+                                        Spacer()
+                                        Text(kindergarten.type.label)
+                                            .font(.caption.weight(.semibold))
+                                            .foregroundStyle(leafGreen)
+                                    }
+
+                                    Text(kindergarten.address)
+                                        .font(.footnote)
+                                        .foregroundStyle(.secondary)
+
+                                    HStack(spacing: 12) {
+                                        if kindergarten.distance >= 0 {
+                                            Label(String(format: "%.1fkm", kindergarten.distance), systemImage: "location")
+                                        }
+                                        Label("후기 \(model.reviews(for: kindergarten.kindercode).count)", systemImage: "bubble.left.and.text.bubble.right")
+                                    }
+                                    .font(.caption)
                                     .foregroundStyle(.secondary)
+                                }
+                                .padding(.vertical, 4)
                             }
+                            .buttonStyle(.plain)
                         }
+                        .onDelete(perform: model.deleteFavorites)
                     }
                 }
 

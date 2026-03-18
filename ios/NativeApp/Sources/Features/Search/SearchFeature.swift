@@ -43,7 +43,7 @@ public struct SearchHomeView: View {
                 KakaoSearchMapSurface(
                     appKey: model.configuration.kakaoAppKey,
                     center: model.userLocation,
-                    currentLocation: model.userLocation,
+                    currentLocation: model.currentDeviceLocation,
                     markers: mapMarkers,
                     selectedKindergartenID: model.selectedKindergarten?.kindercode,
                     runtimeMessage: $mapRuntimeMessage
@@ -637,6 +637,27 @@ private struct KindergartenDetailSheet: View {
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
 
+    private var homepageURL: URL? {
+        guard let homepage = kindergarten.homepage?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !homepage.isEmpty else {
+            return nil
+        }
+
+        if let url = URL(string: homepage), url.scheme != nil {
+            return url
+        }
+
+        return URL(string: "https://\(homepage)")
+    }
+
+    private var phoneURL: URL? {
+        guard let phone = kindergarten.phone?.filter(\.isNumber), !phone.isEmpty else {
+            return nil
+        }
+
+        return URL(string: "tel://\(phone)")
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
@@ -677,8 +698,37 @@ private struct KindergartenDetailSheet: View {
                     .tint(leafGreen)
                 }
 
+                if homepageURL != nil || phoneURL != nil {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("기관 정보")
+                            .font(.headline.weight(.semibold))
+
+                        if let homepageURL {
+                            Link(destination: homepageURL) {
+                                DetailLinkRow(
+                                    title: "홈페이지 열기",
+                                    subtitle: homepageURL.absoluteString,
+                                    systemImage: "globe"
+                                )
+                            }
+                            .buttonStyle(.plain)
+                        }
+
+                        if let phoneURL, let phone = kindergarten.phone {
+                            Link(destination: phoneURL) {
+                                DetailLinkRow(
+                                    title: "전화하기",
+                                    subtitle: phone,
+                                    systemImage: "phone.fill"
+                                )
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("후기")
+                    Text("후기 \(reviews.count)건")
                         .font(.headline.weight(.semibold))
 
                     if reviews.isEmpty {
@@ -687,24 +737,14 @@ private struct KindergartenDetailSheet: View {
                             .foregroundStyle(.secondary)
                     } else {
                         ForEach(reviews.prefix(3)) { review in
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text(review.title)
-                                    .font(.subheadline.weight(.semibold))
-                                Text(review.snippet)
-                                    .font(.footnote)
-                                    .foregroundStyle(.secondary)
-                                HStack(spacing: 8) {
-                                    Text(review.sourceName ?? review.source)
-                                    if let date = review.date {
-                                        Text(date)
-                                    }
+                            if let url = URL(string: review.url) {
+                                Link(destination: url) {
+                                    ReviewCard(review: review)
                                 }
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
+                                .buttonStyle(.plain)
+                            } else {
+                                ReviewCard(review: review)
                             }
-                            .padding(14)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
                         }
                     }
                 }
@@ -712,6 +752,63 @@ private struct KindergartenDetailSheet: View {
             .padding(24)
         }
         .background(mistWhite)
+    }
+}
+
+private struct DetailLinkRow: View {
+    let title: String
+    let subtitle: String
+    let systemImage: String
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: systemImage)
+                .font(.title3)
+                .foregroundStyle(leafGreen)
+                .frame(width: 24)
+
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.primary)
+                Text(subtitle)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(2)
+            }
+
+            Spacer()
+            Image(systemName: "arrow.up.right.square")
+                .foregroundStyle(.secondary)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+    }
+}
+
+private struct ReviewCard: View {
+    let review: ReviewLink
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(review.title)
+                .font(.subheadline.weight(.semibold))
+            Text(review.snippet)
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+            HStack(spacing: 8) {
+                Text(review.sourceName ?? review.source)
+                if let date = review.date {
+                    Text(date)
+                }
+            }
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 }
 

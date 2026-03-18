@@ -24,6 +24,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     @Published public private(set) var userLocation: Coordinates
+    @Published public private(set) var currentDeviceLocation: Coordinates?
     @Published public private(set) var locationLabel: String
     @Published public private(set) var results: [Kindergarten]
     @Published public private(set) var reviewsData: ReviewsData?
@@ -57,6 +58,8 @@ public final class NativeAppModel: ObservableObject {
     private var allKindergartens: [KindergartenRaw]
     private var hasBootstrapped: Bool
     private var kindergartenLookup: [String: KindergartenRaw]
+    private var pendingSearchDeepLinkQuery: String?
+    private var searchDeepLinkTask: Task<Void, Never>?
     private var searchSuggestionTask: Task<Void, Never>?
     private var resultQuery: String
 
@@ -105,6 +108,7 @@ public final class NativeAppModel: ObservableObject {
             self.userLocation = Self.defaultCenter
             self.locationLabel = Self.defaultLocationLabel
         }
+        self.currentDeviceLocation = nil
 
         self.results = []
         refresh()
@@ -112,6 +116,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     deinit {
+        searchDeepLinkTask?.cancel()
         searchSuggestionTask?.cancel()
     }
 
@@ -250,6 +255,11 @@ public final class NativeAppModel: ObservableObject {
             kindergartenLookup = Dictionary(uniqueKeysWithValues: loaded.map { ($0.kindercode, $0) })
             refresh()
             refreshSearchSuggestions()
+
+            if let pendingSearchDeepLinkQuery {
+                self.pendingSearchDeepLinkQuery = nil
+                applySearchDeepLink(query: pendingSearchDeepLinkQuery)
+            }
         } catch {
             catalogError = error.localizedDescription
             results = []
@@ -315,6 +325,7 @@ public final class NativeAppModel: ObservableObject {
     public func centerOnCurrentLocation() async {
         do {
             let coordinates = try await locationProvider.requestCurrentLocation()
+            currentDeviceLocation = coordinates
             setLocation(coordinates, label: "현재 위치")
         } catch {
             locationError = error.localizedDescription
@@ -390,6 +401,22 @@ public final class NativeAppModel: ObservableObject {
         persistence.saveFavorites(favorites)
     }
 
+    public func deleteFavorites(atOffsets offsets: IndexSet) {
+        for offset in offsets.sorted(by: >) {
+            favorites.remove(at: offset)
+        }
+        persistence.saveFavorites(favorites)
+    }
+
+    public func openKindergartenDetail(kindercode: String, recordRecents: Bool = false) {
+        guard let raw = kindergartenLookup[kindercode] else { return }
+        let kindergarten = makeKindergarten(from: raw)
+        setLocation(kindergarten.location, label: kindergarten.name, recordRecents: recordRecents)
+        setSearchText(kindergarten.name, refreshSuggestions: false, applyAsResultQuery: true)
+        selectedTab = .search
+        selectedKindergarten = kindergartenLookup[kindercode].map(makeKindergarten(from:))
+    }
+
     public func isFavorite(_ kindergarten: Kindergarten) -> Bool {
         favorites.contains { $0.kindercode == kindergarten.kindercode }
     }
@@ -415,8 +442,8 @@ public final class NativeAppModel: ObservableObject {
             selectedTab = .compare
             refreshSelectedKindergarten()
         case let .search(query):
-            setSearchText(query ?? "", refreshSuggestions: false, applyAsResultQuery: true)
             selectedTab = .search
+            applySearchDeepLink(query: query)
         }
     }
 
@@ -606,6 +633,52 @@ public final class NativeAppModel: ObservableObject {
                     kindercode: match.raw.kindercode
                 )
             }
+    }
+
+    private func applySearchDeepLink(query: String?) {
+        searchDeepLinkTask?.cancel()
+        searchDeepLinkTask = nil
+        selectedKindergarten = nil
+
+        let trimmedQuery = trimmedSearchText(query ?? "")
+        guard !trimmedQuery.isEmpty else {
+            pendingSearchDeepLinkQuery = nil
+            clearSearchText()
+            return
+        }
+
+        guard !allKindergartens.isEmpty else {
+            pendingSearchDeepLinkQuery = trimmedQuery
+            setSearchText(trimmedQuery, refreshSuggestions: false, applyAsResultQuery: false)
+            return
+        }
+
+        if let matchingKindergarten = makeLocalSearchSuggestions(for: trimmedQuery).first?.kindercode {
+            openKindergartenDetail(kindercode: matchingKindergarten, recordRecents: false)
+            return
+        }
+
+        guard remoteSearchService.isConfigured else {
+            setSearchText(trimmedQuery, refreshSuggestions: false, applyAsResultQuery: true)
+            return
+        }
+
+        setSearchText(trimmedQuery, refreshSuggestions: false, applyAsResultQuery: false)
+        let origin = userLocation
+
+        searchDeepLinkTask = Task { @MainActor [weak self] in
+            guard let self else { return }
+
+            let result = await self.remoteSearchService.suggestions(for: trimmedQuery, near: origin)
+            guard !Task.isCancelled else { return }
+
+            if let suggestion = result.suggestions.first {
+                self.selectSearchSuggestion(suggestion)
+            } else {
+                self.setSearchText(trimmedQuery, refreshSuggestions: false, applyAsResultQuery: true)
+                self.searchSuggestionMessage = result.message
+            }
+        }
     }
 
     private func trimmedSearchText(_ text: String) -> String {

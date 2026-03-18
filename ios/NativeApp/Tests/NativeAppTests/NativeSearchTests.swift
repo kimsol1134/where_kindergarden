@@ -146,6 +146,28 @@ final class NativeSearchTests: XCTestCase {
     }
 
     @MainActor
+    func testSearchModelKeepsDeviceLocationSeparateFromSearchCenter() async {
+        let currentLocation = Coordinates(lat: 37.4981, lng: 127.0276)
+        let model = makeModel(
+            locationProvider: PreviewLocationProvider(coordinates: currentLocation)
+        )
+        let suggestion = SearchSuggestion(
+            id: "place:test",
+            kind: .place,
+            title: "서초구청",
+            subtitle: "서울 서초구 서초대로 1",
+            coordinates: Coordinates(lat: 37.4915, lng: 127.0177)
+        )
+
+        await model.centerOnCurrentLocation()
+        model.selectSearchSuggestion(suggestion)
+
+        XCTAssertEqual(model.currentDeviceLocation, currentLocation)
+        XCTAssertEqual(model.userLocation, Coordinates(lat: 37.4915, lng: 127.0177))
+        XCTAssertEqual(model.locationLabel, "서초구청")
+    }
+
+    @MainActor
     func testSearchModelRestoresRecentSearchAndKeepsSearchTabActive() {
         let model = makeModel()
         let recent = RecentSearch(
@@ -220,7 +242,10 @@ final class NativeSearchTests: XCTestCase {
 
     @MainActor
     private func makeModel(
-        remoteSearchService: any RemoteLocationSuggesting = TestRemoteLocationSearchService()
+        remoteSearchService: any RemoteLocationSuggesting = TestRemoteLocationSearchService(),
+        locationProvider: CurrentLocationProviding = PreviewLocationProvider(
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276)
+        )
     ) -> NativeAppModel {
         let store = InMemoryNativeAppStore()
         let persistence = NativeAppPersistence(store: store)
@@ -229,7 +254,7 @@ final class NativeSearchTests: XCTestCase {
             kindergartenRepository: KindergartenJSONRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: remoteSearchService,
-            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            locationProvider: locationProvider,
             persistence: persistence,
             configuration: NativeAppConfiguration(kakaoAppKey: nil, kakaoRESTAPIKey: nil),
             initialKindergartens: NativePreviewFixtures.kindergartens,

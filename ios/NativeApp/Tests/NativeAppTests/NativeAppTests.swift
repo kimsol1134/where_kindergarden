@@ -298,6 +298,58 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(model.selectedTab, .compare)
         XCTAssertEqual(persistence.restore().compareSelection.ids, ["A001", "A003"])
     }
+
+    @MainActor
+    func testNativeAppModelAppliesSearchDeepLinkByOpeningMatchingKindergarten() {
+        let model = makeNativeAppModel()
+
+        model.applyDeepLink(URL(string: "wherekindergarten://search?q=%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90")!)
+
+        XCTAssertEqual(model.selectedTab, .search)
+        XCTAssertEqual(model.locationLabel, "해맑은유치원")
+        XCTAssertEqual(model.searchText, "해맑은유치원")
+        XCTAssertEqual(model.selectedKindergarten?.kindercode, "A002")
+        XCTAssertEqual(model.results.first?.kindercode, "A002")
+    }
+
+    @MainActor
+    func testNativeAppModelQueuesSearchDeepLinkUntilCatalogLoads() async throws {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+        let catalogData = try JSONEncoder().encode(NativePreviewFixtures.kindergartens)
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { catalogData },
+            reviewRepository: ReviewRepository(localLoader: { Data("{\"version\":\"2026-03-17\",\"totalCount\":0,\"kindergartenCount\":0,\"reviews\":{}}".utf8) }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            initialKindergartens: [],
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:])
+        )
+
+        model.applyDeepLink(URL(string: "wherekindergarten://search?q=%EC%97%AD%EC%82%BC%EC%9C%A0%EC%B9%98%EC%9B%90")!)
+        await model.loadCatalog()
+
+        XCTAssertEqual(model.selectedTab, .search)
+        XCTAssertEqual(model.locationLabel, "역삼유치원")
+        XCTAssertEqual(model.selectedKindergarten?.kindercode, "A001")
+        XCTAssertEqual(model.results.first?.kindercode, "A001")
+    }
+
+    @MainActor
+    func testNativeAppModelOpensKindergartenDetailFromSavedFlow() {
+        let model = makeNativeAppModel()
+
+        model.openKindergartenDetail(kindercode: "A002")
+
+        XCTAssertEqual(model.selectedTab, .search)
+        XCTAssertEqual(model.locationLabel, "해맑은유치원")
+        XCTAssertEqual(model.searchText, "해맑은유치원")
+        XCTAssertEqual(model.selectedKindergarten?.kindercode, "A002")
+    }
 }
 
 @MainActor
