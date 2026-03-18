@@ -224,6 +224,60 @@ public struct KindergartenRaw: Codable, Identifiable, Hashable, Sendable {
         case seniorTeacherCount = "senior_teacher_count"
         case cctvCount = "cctv_count"
     }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        func decode<T: Decodable>(_ type: T.Type, for key: CodingKeys) throws -> T {
+            try container.decode(T.self, forKey: key)
+        }
+
+        kindercode = try decode(String.self, for: .kindercode)
+        name = try decode(String.self, for: .name)
+        address = try decode(String.self, for: .address)
+        lat = try decode(Double.self, for: .lat)
+        lng = try decode(Double.self, for: .lng)
+        type = try decode(InstitutionType.self, for: .type)
+        phone = try container.decodeIfPresent(String.self, forKey: .phone)
+        homepage = try container.decodeIfPresent(String.self, forKey: .homepage)
+        operationHours = try container.decodeIfPresent(String.self, forKey: .operationHours)
+        sidoCode = try decode(String.self, for: .sidoCode)
+        sigunguCode = try decode(String.self, for: .sigunguCode)
+        capacity = try decode(Int.self, for: .capacity)
+        currentCount = try decode(Int.self, for: .currentCount)
+        classCountAge3 = try decode(Int.self, for: .classCountAge3)
+        classCountAge4 = try decode(Int.self, for: .classCountAge4)
+        classCountAge5 = try decode(Int.self, for: .classCountAge5)
+        capacityAge3 = try decode(Int.self, for: .capacityAge3)
+        capacityAge4 = try decode(Int.self, for: .capacityAge4)
+        capacityAge5 = try decode(Int.self, for: .capacityAge5)
+        currentAge3 = try decode(Int.self, for: .currentAge3)
+        currentAge4 = try decode(Int.self, for: .currentAge4)
+        currentAge5 = try decode(Int.self, for: .currentAge5)
+        classCountMix = try decode(Int.self, for: .classCountMix)
+        capacityMix = try decode(Int.self, for: .capacityMix)
+        currentMix = try decode(Int.self, for: .currentMix)
+        capacitySpecial = try decode(Int.self, for: .capacitySpecial)
+        currentSpecial = try decode(Int.self, for: .currentSpecial)
+        establishDate = try decode(String.self, for: .establishDate)
+        hasBus = try decode(Bool.self, for: .hasBus)
+        busCount = try decode(Int.self, for: .busCount)
+        mealType = try container.decodeIfPresent(MealType.self, forKey: .mealType)
+        hasAfterSchool = try decode(Bool.self, for: .hasAfterSchool)
+        areaPerChild = try decode(Double.self, for: .areaPerChild)
+        hasPlayground = try decode(Bool.self, for: .hasPlayground)
+        buildingYear = try container.decodeIfPresent(Int.self, forKey: .buildingYear)
+        floorInfo = try container.decodeIfPresent(String.self, forKey: .floorInfo)
+
+        // A small subset of production records omits these area fields entirely.
+        classroomArea = try container.decodeIfPresent(Double.self, forKey: .classroomArea) ?? 0
+        indoorPlaygroundArea = try container.decodeIfPresent(Double.self, forKey: .indoorPlaygroundArea) ?? 0
+        outdoorPlaygroundArea = try container.decodeIfPresent(Double.self, forKey: .outdoorPlaygroundArea) ?? 0
+
+        teacherCount = try decode(Int.self, for: .teacherCount)
+        seniorTeacherCount = try decode(Int.self, for: .seniorTeacherCount)
+        cctvCount = try decode(Int.self, for: .cctvCount)
+    }
 }
 
 public struct Kindergarten: Identifiable, Hashable, Sendable {

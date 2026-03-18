@@ -97,19 +97,38 @@ private struct MapUnavailablePlaceholder: View {
                 .frame(width: 260, height: 260)
                 .offset(x: 120, y: -180)
 
-            VStack(spacing: 14) {
-                Image(systemName: "map.circle.fill")
-                    .font(.system(size: 66))
-                    .foregroundStyle(leafGreen)
-                Text(title)
-                    .font(.headline.weight(.semibold))
-                Text(message)
-                    .font(.subheadline)
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.secondary)
-                    .frame(maxWidth: 300)
+            VStack {
+                Spacer(minLength: 150)
+
+                HStack(alignment: .top, spacing: 14) {
+                    Image(systemName: "map.circle.fill")
+                        .font(.system(size: 34, weight: .semibold))
+                        .foregroundStyle(leafGreen)
+                        .padding(12)
+                        .background(leafGreen.opacity(0.12), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(title)
+                            .font(.headline.weight(.semibold))
+                            .foregroundStyle(.primary)
+                        Text(message)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .padding(20)
+                .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 28, style: .continuous))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                        .stroke(Color.white.opacity(0.86), lineWidth: 1)
+                )
+                .shadow(color: warmSand.opacity(0.18), radius: 20, y: 12)
+                .padding(.horizontal, 24)
+
+                Spacer()
             }
-            .padding(24)
         }
     }
 }

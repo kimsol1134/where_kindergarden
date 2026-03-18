@@ -61,6 +61,58 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(raw.sigunguCode, "11680")
     }
 
+    func testDecodesKindergartenRawWhenAreaFieldsAreMissing() throws {
+        let json = """
+        {
+          "kindercode": "A002",
+          "name": "누락 필드 유치원",
+          "address": "서울 강남구 테스트로 1",
+          "lat": 37.5,
+          "lng": 127.0,
+          "type": "private",
+          "phone": null,
+          "homepage": null,
+          "operation_hours": null,
+          "sido_code": "11",
+          "sigungu_code": "11680",
+          "capacity": 20,
+          "current_count": 12,
+          "class_count_age3": 1,
+          "class_count_age4": 1,
+          "class_count_age5": 0,
+          "capacity_age3": 10,
+          "capacity_age4": 10,
+          "capacity_age5": 0,
+          "current_age3": 6,
+          "current_age4": 6,
+          "current_age5": 0,
+          "class_count_mix": 0,
+          "capacity_mix": 0,
+          "current_mix": 0,
+          "capacity_special": 0,
+          "current_special": 0,
+          "establish_date": "20190304",
+          "has_bus": false,
+          "bus_count": 0,
+          "meal_type": null,
+          "has_after_school": false,
+          "area_per_child": 4.1,
+          "has_playground": false,
+          "building_year": null,
+          "floor_info": null,
+          "teacher_count": 4,
+          "senior_teacher_count": 1,
+          "cctv_count": 3
+        }
+        """
+
+        let raw = try JSONDecoder().decode(KindergartenRaw.self, from: Data(json.utf8))
+
+        XCTAssertEqual(raw.classroomArea, 0)
+        XCTAssertEqual(raw.indoorPlaygroundArea, 0)
+        XCTAssertEqual(raw.outdoorPlaygroundArea, 0)
+    }
+
     func testHaversineDistanceMatchesExistingWebExpectation() {
         let calculator = DistanceCalculator()
         let cityHall = Coordinates(lat: 37.5665, lng: 126.9780)

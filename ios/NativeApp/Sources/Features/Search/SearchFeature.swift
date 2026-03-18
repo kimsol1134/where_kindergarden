@@ -5,6 +5,7 @@ import SwiftUI
 public struct SearchHomeView: View {
     @ObservedObject private var model: NativeAppModel
     @State private var mapRuntimeMessage: String?
+    @State private var isSearchPanelPresented = false
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -54,29 +55,45 @@ public struct SearchHomeView: View {
                 }
                 .ignoresSafeArea()
 
+                if isSearchPanelPresented {
+                    Color.black.opacity(0.08)
+                        .ignoresSafeArea()
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            isSearchPanelPresented = false
+                        }
+                        .transition(.opacity)
+                }
+
                 VStack(spacing: 14) {
-                    SearchChrome(model: model)
+                    SearchChrome(
+                        model: model,
+                        isSuggestionPanelPresented: $isSearchPanelPresented
+                    )
                     Spacer()
                 }
             }
+            .animation(.easeInOut(duration: 0.18), value: isSearchPanelPresented)
             .task {
                 await model.bootstrapIfNeeded()
             }
             .safeAreaInset(edge: .bottom) {
-                ResultSheet(
-                    results: model.results,
-                    comparedIDs: Set(model.compareSelection.ids),
-                    favoriteIDs: Set(model.favorites.map(\.kindercode)),
-                    reviewCounts: Dictionary(
-                        uniqueKeysWithValues: model.results.map { ($0.kindercode, model.reviews(for: $0.kindercode).count) }
-                    ),
-                    onSelect: { model.select(kindergarten: $0) },
-                    onToggleCompare: { model.toggleCompare(for: $0) },
-                    onToggleFavorite: { model.toggleFavorite(for: $0) }
-                )
+                if !isSearchPanelPresented {
+                    ResultSheet(
+                        results: model.results,
+                        comparedIDs: Set(model.compareSelection.ids),
+                        favoriteIDs: Set(model.favorites.map(\.kindercode)),
+                        reviewCounts: Dictionary(
+                            uniqueKeysWithValues: model.results.map { ($0.kindercode, model.reviews(for: $0.kindercode).count) }
+                        ),
+                        onSelect: { model.select(kindergarten: $0) },
+                        onToggleCompare: { model.toggleCompare(for: $0) },
+                        onToggleFavorite: { model.toggleFavorite(for: $0) }
+                    )
+                }
             }
             .safeAreaInset(edge: .bottom) {
-                if !model.compareSelection.ids.isEmpty {
+                if !isSearchPanelPresented, !model.compareSelection.ids.isEmpty {
                     Button {
                         model.selectedTab = .compare
                     } label: {
@@ -105,6 +122,7 @@ public struct SearchHomeView: View {
 
 private struct SearchChrome: View {
     @ObservedObject var model: NativeAppModel
+    @Binding var isSuggestionPanelPresented: Bool
     @FocusState private var isSearchFieldFocused: Bool
 
     private var trimmedSearchText: String {
@@ -112,7 +130,7 @@ private struct SearchChrome: View {
     }
 
     private var shouldShowSuggestionPanel: Bool {
-        isSearchFieldFocused || !trimmedSearchText.isEmpty
+        isSearchFieldFocused
     }
 
     private var hasSuggestionContent: Bool {
@@ -122,7 +140,12 @@ private struct SearchChrome: View {
             || !model.remoteSearchSuggestions.isEmpty
             || model.isSearchSuggestionsLoading
             || model.searchSuggestionMessage != nil
-            || !trimmedSearchText.isEmpty
+    }
+
+    private var primarySuggestion: SearchSuggestion? {
+        model.localSearchSuggestions.first
+            ?? model.remoteSearchSuggestions.first
+            ?? model.recentSearchSuggestions.first
     }
 
     var body: some View {
@@ -164,6 +187,12 @@ private struct SearchChrome: View {
                     .focused($isSearchFieldFocused)
                     .textFieldStyle(.plain)
                     .submitLabel(.search)
+                    .onSubmit {
+                        if let primarySuggestion {
+                            model.selectSearchSuggestion(primarySuggestion)
+                        }
+                        isSearchFieldFocused = false
+                    }
 
                     Button {
                         model.clearSearchText()
@@ -180,19 +209,22 @@ private struct SearchChrome: View {
                     Divider()
                         .padding(.horizontal, 16)
 
-                    SearchSuggestionPanel(
-                        searchText: trimmedSearchText,
-                        recentSuggestions: model.recentSearchSuggestions,
-                        localSuggestions: model.localSearchSuggestions,
-                        remoteSuggestions: model.remoteSearchSuggestions,
-                        isLoading: model.isSearchSuggestionsLoading,
-                        message: model.searchSuggestionMessage,
-                        onClearRecentSearches: model.clearRecentSearches
-                    ) { suggestion in
-                        model.selectSearchSuggestion(suggestion)
-                        isSearchFieldFocused = false
+                    ScrollView(showsIndicators: false) {
+                        SearchSuggestionPanel(
+                            searchText: trimmedSearchText,
+                            recentSuggestions: model.recentSearchSuggestions,
+                            localSuggestions: model.localSearchSuggestions,
+                            remoteSuggestions: model.remoteSearchSuggestions,
+                            isLoading: model.isSearchSuggestionsLoading,
+                            message: model.searchSuggestionMessage,
+                            onClearRecentSearches: model.clearRecentSearches
+                        ) { suggestion in
+                            model.selectSearchSuggestion(suggestion)
+                            isSearchFieldFocused = false
+                        }
+                        .padding(16)
                     }
-                    .padding(16)
+                    .frame(maxHeight: 280)
                 }
             }
             .background(.white.opacity(0.88), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
@@ -201,43 +233,53 @@ private struct SearchChrome: View {
                     .stroke(Color.white.opacity(0.8), lineWidth: 1)
             )
             .shadow(color: warmSand.opacity(0.22), radius: 24, y: 10)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true) {
-                        let nextRadius: Double = model.filters.radiusKM == 1 ? 2 : model.filters.radiusKM == 2 ? 5 : 1
-                        model.updateRadius(to: nextRadius)
-                    }
-                    FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
-                        model.toggleBusFilter()
-                    }
-                    FilterChip(label: "넓은 공간", isActive: model.filters.hasLargeSpace == true) {
-                        model.toggleLargeSpaceFilter()
-                    }
-                    FilterChip(label: model.filters.sort == .distance ? "거리순" : "정원순", isActive: true) {
-                        let next: SortOption = model.filters.sort == .distance ? .capacity : .distance
-                        model.updateSort(to: next)
-                    }
-                }
-                .padding(.horizontal, 2)
+            .onChange(of: isSearchFieldFocused) { _, isFocused in
+                isSuggestionPanelPresented = isFocused
             }
-
-            if model.isCatalogLoading || model.isReviewsLoading {
-                HStack(spacing: 8) {
-                    ProgressView()
-                        .controlSize(.small)
-                    Text("공용 JSON 데이터를 불러오는 중")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+            .onChange(of: isSuggestionPanelPresented) { _, isPresented in
+                if !isPresented, isSearchFieldFocused {
+                    isSearchFieldFocused = false
                 }
             }
 
-            if let locationError = model.locationError {
-                InlineNotice(message: locationError)
-            } else if let catalogError = model.catalogError {
-                InlineNotice(message: catalogError)
-            } else if let reviewsError = model.reviewsError {
-                InlineNotice(message: reviewsError)
+            if !shouldShowSuggestionPanel {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true) {
+                            let nextRadius: Double = model.filters.radiusKM == 1 ? 2 : model.filters.radiusKM == 2 ? 5 : 1
+                            model.updateRadius(to: nextRadius)
+                        }
+                        FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
+                            model.toggleBusFilter()
+                        }
+                        FilterChip(label: "넓은 공간", isActive: model.filters.hasLargeSpace == true) {
+                            model.toggleLargeSpaceFilter()
+                        }
+                        FilterChip(label: model.filters.sort == .distance ? "거리순" : "정원순", isActive: true) {
+                            let next: SortOption = model.filters.sort == .distance ? .capacity : .distance
+                            model.updateSort(to: next)
+                        }
+                    }
+                    .padding(.horizontal, 2)
+                }
+
+                if model.isCatalogLoading || model.isReviewsLoading {
+                    HStack(spacing: 8) {
+                        ProgressView()
+                            .controlSize(.small)
+                        Text("공용 JSON 데이터를 불러오는 중")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                if let locationError = model.locationError {
+                    InlineNotice(message: locationError)
+                } else if let catalogError = model.catalogError {
+                    InlineNotice(message: catalogError)
+                } else if let reviewsError = model.reviewsError {
+                    InlineNotice(message: reviewsError)
+                }
             }
         }
         .padding(.horizontal, 16)
