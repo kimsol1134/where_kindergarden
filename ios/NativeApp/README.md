@@ -27,6 +27,10 @@ SwiftUI-first native package for `우리동네 유치원`.
 
 If `KakaoKeys.local.xcconfig` is absent or unresolved, the app intentionally falls back to local kindergarten suggestions plus recent searches and will not enable live Kakao Local suggestions.
 
+2026-03-19 measured runtime state:
+- Kakao Local REST requests succeed with the injected `WK_KAKAO_REST_API_KEY`.
+- Kakao Maps SDK auth in Simulator currently fails with `401 Unauthorized`; the native search screen now surfaces that as a visible failure placeholder instead of leaving the map area blank.
+
 ## Deep links
 - Universal compare: `https://where-kindergarden.vercel.app/compare?ids=...`
 - Custom compare: `wherekindergarten://compare?ids=...`
@@ -44,3 +48,4 @@ Use real bundled catalog IDs for runtime verification, for example:
 ## Real-device prerequisites
 - The provisioning profile used for `ios/WhereKindergartenNative` must include `Associated Domains`.
 - `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association` must return `200` before universal links can bind on-device.
+- As of 2026-03-19, a connected iPhone build still fails because the active team provisioning profile does not include `Associated Domains`.

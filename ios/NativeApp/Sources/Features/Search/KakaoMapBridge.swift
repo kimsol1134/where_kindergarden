@@ -58,18 +58,11 @@ struct KakaoSearchMapSurface: View {
                 message: "이 환경에서는 Kakao iOS SDK를 로드할 수 없어 지도 대신 안전한 placeholder를 표시합니다."
             )
 #endif
-
-            if let runtimeMessage {
-                VStack {
-                    Spacer()
-                    Text(runtimeMessage)
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(.white)
-                        .padding(.horizontal, 14)
-                        .padding(.vertical, 10)
-                        .background(Color.black.opacity(0.75), in: Capsule())
-                        .padding(.bottom, 20)
-                }
+            if let runtimeMessage, appKey != nil {
+                MapUnavailablePlaceholder(
+                    title: "Kakao 지도 연결 실패",
+                    message: runtimeMessage
+                )
                 .transition(.opacity)
             }
         }

@@ -1,6 +1,6 @@
 # Native iOS Migration Status
 
-기준일: 2026-03-18
+기준일: 2026-03-19
 
 이 문서는 `ios/NativeApp` Swift package와 `ios/WhereKindergartenNative` 호스트 앱 기준으로, 현재 네이티브 SwiftUI 마이그레이션 상태와 handoff 직전 기준의 검증 결과를 정리한다.
 
@@ -8,7 +8,7 @@
 
 - 네이티브 SwiftUI 경로는 현재 iOS source of truth이며, 기존 호스트 앱 타깃 `ios/WhereKindergartenNative`를 계속 사용한다.
 - 로컬 빌드, 패키지 테스트, Simulator 실행, 검색/비교 deep link, favorites/recent persistence는 현재 재현 가능하다.
-- Kakao Local 키 주입 경로와 원격 suggestion state update는 확인됐지만, Kakao 지도 tile의 Simulator 렌더링은 아직 handoff-ready로 결론 내리지 못했다.
+- Kakao Local 키 주입 경로와 원격 suggestion state update는 확인됐고, Kakao Maps SDK 런타임은 현재 Simulator에서 `401 Unauthorized`로 명시적으로 실패한다.
 - 실기기 universal link handoff는 여전히 외부 blocker가 남아 있다.
 
 ## 현재 기준 실제 상태
@@ -20,14 +20,16 @@
 - 공유 모델 아키텍처는 `NativeAppModel` 중심으로 유지 중
 - 검색 중심 위치와 실제 기기 위치 분리는 유지되고 있으며, 최근 검색 복원으로 이 분리가 깨지지 않는다
 
-### 2026-03-18 로컬 검증 결과
+### 2026-03-19 로컬 검증 결과
 
 - `cd ios/NativeApp && swift test` 통과
 - `xcodebuild -project ios/WhereKindergartenNative/WhereKindergartenNative.xcodeproj -scheme WhereKindergartenNative -destination 'generic/platform=iOS Simulator' build` 통과
 - 호스트 앱 Simulator 설치 및 실행 확인
 - `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig` 로컬 존재 확인
 - `ios/WhereKindergartenNative/Config/WhereKindergartenNative.xcconfig`가 `KakaoKeys.local.xcconfig`를 optional include 하는 현재 구조 유지 확인
-- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association`는 2026-03-18에 `404` 반환 확인
+- 빌드된 앱 `Info.plist`에 `KAKAO_NATIVE_APP_KEY`, `KAKAO_REST_API_KEY`, custom scheme가 실제 확장된 값으로 들어간 것 확인
+- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association`는 2026-03-19에 다시 `404` 반환 확인
+- 연결된 실기기 대상 빌드는 2026-03-19에 provisioning profile의 `Associated Domains` 누락으로 실패 확인
 
 ## 이미 검증된 사용자-visible 동작
 
@@ -52,9 +54,14 @@
 ### Kakao configuration and remote suggestion path
 
 - Kakao 키 로컬 주입 경로는 현재 빌드 구조에 연결되어 있음
-- Kakao Local live HTTP 응답 성공은 이전 검증 baseline과 현재 문서 기준으로 유지
-- 원격 suggestion 선택 시 native search state 갱신 관찰 baseline 유지
-- 다만 Kakao map tile 자체의 Simulator 렌더링은 아직 불안정하며, SDK 또는 Simulator 동작 특성 영향 가능성이 큼
+- Kakao Local live HTTP 응답은 2026-03-19에 다시 성공 확인
+  - address query `서울특별시 종로구 자하문로9길 24` -> `total_count: 1`
+  - keyword query `서울시청` near `서울 시청` -> `total_count: 350`, 첫 결과 `서울특별시청`
+- custom search deep link를 통해 원격 place / address suggestion이 실제 search center로 적용되는 것 확인
+  - `wherekindergarten://search?q=서울시청` -> `서울특별시청`
+  - `wherekindergarten://search?q=서울특별시 종로구 자하문로9길 24` -> `서울 종로구 자하문로9길 24`
+- Kakao Maps SDK는 2026-03-19 Simulator 런타임 로그에서 반복적으로 `authentication failed code=401 desc=Unauthorized`를 반환
+- 이에 따라 네이티브 앱은 blank map 대신 명시적 실패 placeholder를 보여주도록 보강됨
 
 ## Batch 3에서 이번에 마감한 항목
 
@@ -97,9 +104,10 @@
 
 현재 상태:
 - 키 주입 경로와 원격 suggestion 경로는 확인됨
-- map tile Simulator 렌더링은 아직 확정적으로 통과 처리하지 않음
+- Simulator에서는 Kakao Maps SDK 인증이 `401 Unauthorized`로 실패해 tile / camera / marker 검증이 진행되지 않음
 
 남은 확인:
+- Kakao Developers 쪽 iOS 앱 키 또는 번들 등록 상태 확인
 - 실기기에서 Kakao map tile 렌더링
 - 실기기에서 현재 위치 버튼과 marker 반영
 - 필요 시 Simulator 특이점과 실기기 동작 차이 문서화
@@ -107,8 +115,8 @@
 ### 2. 실기기 universal link / handoff
 
 현재 blocker:
-- device provisioning profile에 `Associated Domains` capability 없음
-- AASA endpoint가 `404`
+- 연결된 iPhone 대상 `xcodebuild`가 `iOS Team Provisioning Profile: * doesn't include the Associated Domains capability`로 실패
+- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association`가 2026-03-19에도 `404`
 
 남은 확인:
 - 실기기 위치 권한 허용/거부 플로우

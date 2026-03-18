@@ -1,6 +1,6 @@
 # Native iOS Handoff Checklist
 
-기준일: 2026-03-18
+기준일: 2026-03-19
 
 이 체크리스트는 `ios/NativeApp` Swift package와 `ios/WhereKindergartenNative` 호스트 앱 기준으로, 로컬 개발자 handoff 전에 반복해야 하는 최소 검증 루틴을 정리한다.
 
@@ -31,12 +31,13 @@
 1. 첫 화면이 네이티브 탭 셸로 뜨는지 확인
 2. `wherekindergarten://search?q=옥인유치원` 또는 실기관명 검색으로 상세 시트까지 열리는지 확인
 3. 검색 결과 시트가 반경/정렬 요약, 빈 상태, 로딩 상태를 적절히 보여주는지 확인
-4. 상세 시트에서 아래가 동작하는지 확인
+4. Kakao Maps SDK 인증이 실패하면 blank map 대신 명시적 실패 placeholder가 보이는지 확인
+5. 상세 시트에서 아래가 동작하는지 확인
    - 찜하기 / 비교 추가
    - 지도에서 보기
    - 홈페이지 열기
    - 전화하기
-5. 실데이터 후기 링크가 있으면 최대 3건까지 노출되는지 확인
+6. 실데이터 후기 링크가 있으면 최대 3건까지 노출되는지 확인
 
 ### Compare tab
 
@@ -74,19 +75,20 @@
 
 ### Measured blockers
 
-- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association`는 2026-03-18에 `404`를 반환했다.
-- 실기기 handoff는 provisioning profile에 `Associated Domains` capability가 포함되기 전까지 막혀 있다.
+- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association`는 2026-03-19에 다시 `404`를 반환했다.
+- 연결된 iPhone 대상 `xcodebuild`는 2026-03-19에 provisioning profile이 `Associated Domains` capability와 `com.apple.developer.associated-domains` entitlement를 포함하지 않아 실패했다.
 
 ### Verified but still pending
 
 - `KakaoKeys.local.xcconfig`의 로컬 존재와 키 빌드 주입 경로는 확인됨
 - Kakao Local live HTTP 응답 성공은 확인됨
 - 원격 suggestion 선택 기반의 네이티브 search state 갱신은 확인됨
-- Kakao map tile 자체의 Simulator 렌더링은 아직 handoff-ready로 결론 내리지 못함
+- Kakao Maps SDK는 Simulator 런타임에서 `401 Unauthorized`를 반환하며, 앱은 이를 실패 placeholder로 노출함
 
 ### Still requires real-device or external follow-up
 
 - 실기기 위치 권한 허용/거부 플로우
+- 실기기 custom scheme
 - 실기기 universal link association
 - 실기기 cold-start handoff
 - Kakao map tile의 실기기 렌더링 재확인
