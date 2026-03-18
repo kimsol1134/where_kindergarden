@@ -1,4 +1,5 @@
 import Models
+import Services
 import SwiftUI
 
 struct SearchMapMarker: Equatable, Identifiable {
@@ -48,7 +49,7 @@ struct KakaoSearchMapSurface: View {
             } else {
                 MapUnavailablePlaceholder(
                     title: "Kakao Maps 설정 필요",
-                    message: "Info.plist의 KAKAO_NATIVE_APP_KEY가 비어 있어 지도를 표시하지 못했습니다."
+                    message: "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoNativeAppKeyBuildSetting) 값을 채워야 지도를 표시할 수 있습니다."
                 )
             }
 #else

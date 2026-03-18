@@ -1,7 +1,12 @@
+import Services
 import SwiftUI
 
 public struct MoreView: View {
-    public init() {}
+    private let configuration: NativeAppConfiguration
+
+    public init(configuration: NativeAppConfiguration = .live()) {
+        self.configuration = configuration
+    }
 
     private var appVersionText: String {
         let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
@@ -9,9 +14,38 @@ public struct MoreView: View {
         return "버전 \(version) (\(build))"
     }
 
+    private var kakaoMapStatusText: String {
+        configuration.hasKakaoMapKey ? "설정됨" : "키 없음"
+    }
+
+    private var kakaoLocalStatusText: String {
+        configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음"
+    }
+
+    private var customSchemeText: String {
+        "wherekindergarten://compare?ids=..."
+    }
+
+    private var universalLinkText: String {
+        configuration.universalLinkHost.map { "https://\($0)/compare?ids=..." } ?? "구성 없음"
+    }
+
     public var body: some View {
         NavigationStack {
             List {
+                Section {
+                    LabeledContent("Kakao 지도 키", value: kakaoMapStatusText)
+                    LabeledContent("Kakao Local 키", value: kakaoLocalStatusText)
+                    LabeledContent("커스텀 스킴", value: customSchemeText)
+                    LabeledContent("Universal Link", value: universalLinkText)
+                } header: {
+                    Text("검증 준비 상태")
+                } footer: {
+                    if !configuration.missingKakaoBuildSettings.isEmpty {
+                        Text(configuration.kakaoConfigurationHelpText)
+                    }
+                }
+
                 Section("서비스") {
                     ExternalRow(
                         title: "서비스 소개",

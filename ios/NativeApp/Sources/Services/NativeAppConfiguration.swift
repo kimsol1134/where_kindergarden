@@ -1,6 +1,10 @@
 import Foundation
 
 public struct NativeAppConfiguration: Sendable {
+    public static let kakaoKeysConfigRelativePath = "ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig"
+    public static let kakaoNativeAppKeyBuildSetting = "WK_KAKAO_NATIVE_APP_KEY"
+    public static let kakaoRESTAPIKeyBuildSetting = "WK_KAKAO_REST_API_KEY"
+
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
     public let reviewsRemoteURL: URL
@@ -29,6 +33,37 @@ public struct NativeAppConfiguration: Sendable {
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
             kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String
         )
+    }
+
+    public var hasKakaoMapKey: Bool {
+        kakaoAppKey != nil
+    }
+
+    public var hasKakaoRESTAPIKey: Bool {
+        kakaoRESTAPIKey != nil
+    }
+
+    public var missingKakaoBuildSettings: [String] {
+        var missing: [String] = []
+
+        if kakaoAppKey == nil {
+            missing.append(Self.kakaoNativeAppKeyBuildSetting)
+        }
+
+        if kakaoRESTAPIKey == nil {
+            missing.append(Self.kakaoRESTAPIKeyBuildSetting)
+        }
+
+        return missing
+    }
+
+    public var kakaoConfigurationHelpText: String {
+        let missingKeys = missingKakaoBuildSettings.joined(separator: ", ")
+        return "\(Self.kakaoKeysConfigRelativePath)에서 \(missingKeys) 값을 채우면 실지도와 원격 장소/주소 제안을 검증할 수 있습니다."
+    }
+
+    public var universalLinkHost: String? {
+        compareShareBaseURL.host
     }
 
     private static func normalizedValue(_ rawValue: String?) -> String? {

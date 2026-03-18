@@ -9,7 +9,7 @@ public enum KakaoLocalSearchError: LocalizedError, Equatable {
     public var errorDescription: String? {
         switch self {
         case .missingAPIKey:
-            return "KAKAO_REST_API_KEY가 없어 주소와 장소 제안을 불러올 수 없습니다."
+            return "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoRESTAPIKeyBuildSetting) 값을 채워야 주소와 장소 제안을 불러올 수 있습니다."
         case .invalidRequest:
             return "Kakao Local 요청을 생성하지 못했습니다."
         case let .invalidHTTPStatus(statusCode):
@@ -339,7 +339,7 @@ public struct KakaoLocalSuggestionService: RemoteLocationSuggesting {
 
     public init(
         client: any KakaoLocalSearching,
-        unavailableMessage: String = "KAKAO_REST_API_KEY가 없어 주소와 장소 제안은 비활성화되었습니다. 유치원명과 최근 검색은 계속 사용할 수 있습니다."
+        unavailableMessage: String = "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoRESTAPIKeyBuildSetting) 값을 채우기 전까지 주소와 장소 제안은 비활성화됩니다. 유치원명과 최근 검색은 계속 사용할 수 있습니다."
     ) {
         self.client = client
         self.unavailableMessage = unavailableMessage

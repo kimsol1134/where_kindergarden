@@ -27,3 +27,8 @@ Separate SwiftUI-first iPhone app scaffold for `우리동네 유치원`.
 - Custom scheme: `wherekindergarten://compare?ids=...`
 - Universal link search: `https://where-kindergarden.vercel.app/search?q=...`
 - Custom scheme search: `wherekindergarten://search?q=...`
+
+## Real-Device Prerequisites
+- The iPhone provisioning profile used for `ios/WhereKindergartenNative` must include the `Associated Domains` capability or device builds will fail before install.
+- `https://where-kindergarden.vercel.app/.well-known/apple-app-site-association` must return `200` from the live domain for universal links to bind on-device.
+- If `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig` is missing, the app intentionally stays in Kakao fallback mode and only local/recent search suggestions are available.

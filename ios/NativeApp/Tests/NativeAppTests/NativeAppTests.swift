@@ -233,6 +233,14 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(webLink, .compare(ids: ["A003"]))
     }
 
+    func testDeepLinkParserSupportsUniversalSearchLinks() {
+        let parser = DeepLinkParser()
+
+        let webLink = parser.destination(for: URL(string: "https://where-kindergarden.vercel.app/search?q=%EC%97%AD%EC%82%BC%EC%9C%A0%EC%B9%98%EC%9B%90")!)
+
+        XCTAssertEqual(webLink, .search(query: "역삼유치원"))
+    }
+
     func testDeepLinkBuilderCreatesCompareLink() {
         let builder = DeepLinkBuilder()
 
@@ -249,6 +257,26 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertNil(configuration.kakaoAppKey)
         XCTAssertNil(configuration.kakaoRESTAPIKey)
+    }
+
+    func testNativeAppConfigurationSurfacesVerificationState() {
+        let configuration = NativeAppConfiguration(
+            kakaoAppKey: nil,
+            kakaoRESTAPIKey: nil,
+            compareShareBaseURL: URL(string: "https://where-kindergarden.vercel.app/compare")!
+        )
+
+        XCTAssertFalse(configuration.hasKakaoMapKey)
+        XCTAssertFalse(configuration.hasKakaoRESTAPIKey)
+        XCTAssertEqual(
+            configuration.missingKakaoBuildSettings,
+            [
+                NativeAppConfiguration.kakaoNativeAppKeyBuildSetting,
+                NativeAppConfiguration.kakaoRESTAPIKeyBuildSetting,
+            ]
+        )
+        XCTAssertEqual(configuration.universalLinkHost, "where-kindergarden.vercel.app")
+        XCTAssertTrue(configuration.kakaoConfigurationHelpText.contains("KakaoKeys.local.xcconfig"))
     }
 
     @MainActor
