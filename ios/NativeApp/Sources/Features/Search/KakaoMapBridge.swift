@@ -136,6 +136,7 @@ private struct MapUnavailablePlaceholder: View {
 
 #if os(iOS) && canImport(UIKit) && canImport(KakaoMapsSDK)
 import KakaoMapsSDK
+import OSLog
 import UIKit
 
 private struct KakaoSearchMapRepresentable: UIViewRepresentable {
@@ -169,6 +170,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
     final class Coordinator: NSObject, MapControllerDelegate {
         private static var initializedAppKeys = Set<String>()
+        private static let logger = Logger(subsystem: "com.solkim.wherekindergarten.native", category: "KakaoMap")
 
         private let appKey: String
         private let runtimeMessage: Binding<String?>
@@ -203,11 +205,16 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             self.container = container
             initializeSDKIfNeeded()
 
+            Self.logger.notice(
+                "Attaching Kakao map container. renderMode=\(Self.describe(container.renderMode), privacy: .public)"
+            )
+
             let controller = KMController(viewContainer: container)
             self.controller = controller
             controller.delegate = self
             controller.prepareEngine()
             controller.activateEngine()
+            Self.logger.notice("Prepared and activated Kakao engine. state=\(controller.getStateDescMessage(), privacy: .public)")
         }
 
         func update(state: SearchMapViewState) {
@@ -224,6 +231,9 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
         }
 
         func stop() {
+            if let controller {
+                Self.logger.notice("Stopping Kakao engine. state=\(controller.getStateDescMessage(), privacy: .public)")
+            }
             controller?.pauseEngine()
             controller?.resetEngine()
             controller = nil
@@ -256,22 +266,33 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
         func addViewSucceeded(_ viewName: String, viewInfoName: String) {
             runtimeMessage.wrappedValue = nil
             mapView = controller?.getView(viewName) as? KakaoMap
+            if let container {
+                Self.logger.notice(
+                    "Kakao addViewSucceeded viewName=\(viewName, privacy: .public) renderMode=\(Self.describe(container.renderMode), privacy: .public) hasRenderView=\((container.renderView != nil), privacy: .public)"
+                )
+            } else {
+                Self.logger.notice("Kakao addViewSucceeded viewName=\(viewName, privacy: .public) without container reference")
+            }
             renderMap(moveCameraIfNeeded: true)
         }
 
         func addViewFailed(_ viewName: String, viewInfoName: String) {
+            Self.logger.error("Kakao addViewFailed viewName=\(viewName, privacy: .public) viewInfoName=\(viewInfoName, privacy: .public)")
             runtimeMessage.wrappedValue = "지도를 초기화하지 못했습니다."
         }
 
         func containerDidResized(_ size: CGSize) {
             mapView?.viewRect = CGRect(origin: .zero, size: size)
+            Self.logger.debug("Kakao container resized width=\(size.width, privacy: .public) height=\(size.height, privacy: .public)")
         }
 
         func authenticationSucceeded() {
+            Self.logger.notice("Kakao authentication succeeded")
             runtimeMessage.wrappedValue = nil
         }
 
         func authenticationFailed(_ errorCode: Int, desc: String) {
+            Self.logger.error("Kakao authentication failed code=\(errorCode, privacy: .public) desc=\(desc, privacy: .public)")
             runtimeMessage.wrappedValue = "Kakao 지도 인증 실패 (\(errorCode)): \(desc)"
         }
 
@@ -363,10 +384,25 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 let area = AreaRect(points: points)
                 let cameraUpdate = CameraUpdate.make(area: area)
                 mapView.moveCamera(cameraUpdate)
+                Self.logger.debug("Moved Kakao camera to area with \(points.count, privacy: .public) points")
             } else {
                 let target = MapPoint(longitude: currentState.center.lng, latitude: currentState.center.lat)
                 let cameraUpdate = CameraUpdate.make(target: target, zoomLevel: 5, mapView: mapView)
                 mapView.moveCamera(cameraUpdate)
+                Self.logger.debug("Moved Kakao camera to target lat=\(self.currentState.center.lat, privacy: .public) lng=\(self.currentState.center.lng, privacy: .public)")
+            }
+        }
+
+        private static func describe(_ mode: RenderMode) -> String {
+            switch Int(mode.rawValue) {
+            case 0:
+                return "gl"
+            case 1:
+                return "metal"
+            case 2:
+                return "undefined"
+            default:
+                return "unknown"
             }
         }
 
