@@ -1,7 +1,10 @@
+import Models
 import SwiftUI
 
 public struct SavedView: View {
     @ObservedObject private var model: NativeAppModel
+    @State private var pendingUndo: SavedUndoState?
+    @State private var isRecentClearConfirmationPresented = false
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -14,7 +17,7 @@ public struct SavedView: View {
     public var body: some View {
         NavigationStack {
             List {
-                Section("찜한 기관") {
+                Section {
                     if model.favorites.isEmpty {
                         Text("검색 화면에서 찜한 기관이 여기에 저장됩니다.")
                             .foregroundStyle(.secondary)
@@ -49,8 +52,35 @@ public struct SavedView: View {
                                 .padding(.vertical, 4)
                             }
                             .buttonStyle(.plain)
+                            .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                                Button {
+                                    model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                } label: {
+                                    Label("열기", systemImage: "arrow.up.forward.app")
+                                }
+                                .tint(leafGreen)
+                            }
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    guard let removed = model.takeFavorite(kindercode: kindergarten.kindercode) else {
+                                        return
+                                    }
+                                    stageUndo(.favorites([removed]))
+                                } label: {
+                                    Label("삭제", systemImage: "trash")
+                                }
+                            }
                         }
-                        .onDelete(perform: model.deleteFavorites)
+                        .onDelete { offsets in
+                            let removed = model.takeFavorites(atOffsets: offsets)
+                            stageUndo(.favorites(removed))
+                        }
+                    }
+                } header: {
+                    Text("찜한 기관")
+                } footer: {
+                    if !model.favorites.isEmpty {
+                        Text("왼쪽으로 밀어 상세로 열고, 오른쪽으로 밀어 삭제할 수 있습니다.")
                     }
                 }
 
@@ -73,21 +103,139 @@ public struct SavedView: View {
                                 }
                             }
                             .buttonStyle(.plain)
+                            .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                                Button {
+                                    model.restoreRecentSearch(item)
+                                } label: {
+                                    Label("복원", systemImage: "arrow.counterclockwise")
+                                }
+                                .tint(leafGreen)
+                            }
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    guard let removed = model.takeRecentSearch(item) else {
+                                        return
+                                    }
+                                    stageUndo(.recents([removed]))
+                                } label: {
+                                    Label("삭제", systemImage: "trash")
+                                }
+                            }
                         }
-                        .onDelete(perform: model.deleteRecentSearches)
+                        .onDelete { offsets in
+                            let removed = model.takeRecentSearches(atOffsets: offsets)
+                            stageUndo(.recents(removed))
+                        }
                     }
                 } header: {
                     HStack {
                         Text("최근 검색")
                         Spacer()
                         if !model.recentSearches.isEmpty {
-                            Button("전체 삭제", role: .destructive, action: model.clearRecentSearches)
+                            Button("전체 삭제", role: .destructive) {
+                                isRecentClearConfirmationPresented = true
+                            }
                                 .font(.caption.weight(.semibold))
                         }
+                    }
+                } footer: {
+                    if !model.recentSearches.isEmpty {
+                        Text("최근 검색을 복원해도 실제 기기 위치는 바뀌지 않고 검색 기준 위치만 다시 적용됩니다.")
                     }
                 }
             }
             .navigationTitle("보관함")
+            .confirmationDialog(
+                "최근 검색을 모두 삭제할까요?",
+                isPresented: $isRecentClearConfirmationPresented,
+                titleVisibility: .visible
+            ) {
+                Button("전체 삭제", role: .destructive) {
+                    let removed = model.takeAllRecentSearches()
+                    stageUndo(.recents(removed))
+                }
+                Button("취소", role: .cancel) {}
+            } message: {
+                Text("삭제 후에는 하단 배너에서 바로 복원할 수 있습니다.")
+            }
+            .safeAreaInset(edge: .bottom) {
+                if let pendingUndo {
+                    UndoBanner(message: pendingUndo.message) {
+                        pendingUndo.restore(model)
+                        self.pendingUndo = nil
+                    } onDismiss: {
+                        self.pendingUndo = nil
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 8)
+                }
+            }
+        }
+    }
+
+    private func stageUndo(_ undoState: SavedUndoState?) {
+        guard let undoState else { return }
+        pendingUndo = undoState
+    }
+}
+
+private struct UndoBanner: View {
+    let message: String
+    let onUndo: () -> Void
+    let onDismiss: () -> Void
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "arrow.uturn.backward.circle.fill")
+                .foregroundStyle(leafGreen)
+
+            Text(message)
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(.primary)
+
+            Spacer(minLength: 8)
+
+            Button("복원", action: onUndo)
+                .font(.footnote.weight(.bold))
+                .buttonStyle(.plain)
+
+            Button(action: onDismiss) {
+                Image(systemName: "xmark")
+                    .font(.footnote.weight(.bold))
+            }
+            .buttonStyle(.plain)
+            .foregroundStyle(.secondary)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .background(.white.opacity(0.96), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .stroke(warmSand.opacity(0.24), lineWidth: 1)
+        )
+        .shadow(color: warmSand.opacity(0.18), radius: 18, y: 8)
+    }
+}
+
+@MainActor
+private struct SavedUndoState: Identifiable {
+    let id = UUID()
+    let message: String
+    let restore: @MainActor (NativeAppModel) -> Void
+
+    static func favorites(_ items: [IndexedFavoriteItem]) -> SavedUndoState? {
+        guard !items.isEmpty else { return nil }
+        let message = items.count == 1 ? "찜한 기관을 삭제했습니다." : "찜한 기관 \(items.count)곳을 삭제했습니다."
+        return SavedUndoState(message: message) { model in
+            model.restoreFavorites(items)
+        }
+    }
+
+    static func recents(_ items: [IndexedRecentSearch]) -> SavedUndoState? {
+        guard !items.isEmpty else { return nil }
+        let message = items.count == 1 ? "최근 검색을 삭제했습니다." : "최근 검색 \(items.count)건을 삭제했습니다."
+        return SavedUndoState(message: message) { model in
+            model.restoreRecentSearches(items)
         }
     }
 }

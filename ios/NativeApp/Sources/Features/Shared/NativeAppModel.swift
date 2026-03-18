@@ -402,10 +402,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func deleteFavorites(atOffsets offsets: IndexSet) {
-        for offset in offsets.sorted(by: >) {
-            favorites.remove(at: offset)
-        }
-        persistence.saveFavorites(favorites)
+        _ = takeFavorites(atOffsets: offsets)
     }
 
     public func openKindergartenDetail(kindercode: String, recordRecents: Bool = false) {
@@ -459,23 +456,93 @@ public final class NativeAppModel: ObservableObject {
         selectedTab = .search
     }
 
-    public func removeRecentSearch(_ search: RecentSearch) {
-        recentSearches.removeAll {
-            $0.id == search.id || ($0.label == search.label && $0.coordinates == search.coordinates)
-        }
-        persistence.saveRecentSearches(recentSearches)
-    }
-
     public func deleteRecentSearches(atOffsets offsets: IndexSet) {
-        for offset in offsets.sorted(by: >) {
-            recentSearches.remove(at: offset)
-        }
-        persistence.saveRecentSearches(recentSearches)
+        _ = takeRecentSearches(atOffsets: offsets)
     }
 
     public func clearRecentSearches() {
-        guard !recentSearches.isEmpty else { return }
-        recentSearches = []
+        _ = takeAllRecentSearches()
+    }
+
+    public func takeFavorite(kindercode: String) -> IndexedFavoriteItem? {
+        guard let index = favorites.firstIndex(where: { $0.kindercode == kindercode }) else {
+            return nil
+        }
+
+        let item = favorites.remove(at: index)
+        persistence.saveFavorites(favorites)
+        return IndexedFavoriteItem(value: item, index: index)
+    }
+
+    public func takeFavorites(atOffsets offsets: IndexSet) -> [IndexedFavoriteItem] {
+        let removals = offsets.sorted().compactMap { offset -> IndexedFavoriteItem? in
+            guard favorites.indices.contains(offset) else { return nil }
+            return IndexedFavoriteItem(value: favorites[offset], index: offset)
+        }
+
+        guard !removals.isEmpty else { return [] }
+
+        for offset in offsets.sorted(by: >) where favorites.indices.contains(offset) {
+            favorites.remove(at: offset)
+        }
+        persistence.saveFavorites(favorites)
+        return removals
+    }
+
+    public func restoreFavorites(_ items: [IndexedFavoriteItem]) {
+        guard !items.isEmpty else { return }
+
+        for item in items.sorted(by: { $0.index < $1.index }) {
+            favorites.removeAll { $0.kindercode == item.value.kindercode }
+            favorites.insert(item.value, at: min(item.index, favorites.count))
+        }
+        persistence.saveFavorites(favorites)
+    }
+
+    public func removeRecentSearch(_ search: RecentSearch) {
+        _ = takeRecentSearch(search)
+    }
+
+    public func takeRecentSearch(_ search: RecentSearch) -> IndexedRecentSearch? {
+        guard let index = recentSearches.firstIndex(where: {
+            $0.id == search.id || ($0.label == search.label && $0.coordinates == search.coordinates)
+        }) else {
+            return nil
+        }
+
+        let item = recentSearches.remove(at: index)
+        persistence.saveRecentSearches(recentSearches)
+        return IndexedRecentSearch(value: item, index: index)
+    }
+
+    public func takeRecentSearches(atOffsets offsets: IndexSet) -> [IndexedRecentSearch] {
+        let removals = offsets.sorted().compactMap { offset -> IndexedRecentSearch? in
+            guard recentSearches.indices.contains(offset) else { return nil }
+            return IndexedRecentSearch(value: recentSearches[offset], index: offset)
+        }
+
+        guard !removals.isEmpty else { return [] }
+
+        for offset in offsets.sorted(by: >) where recentSearches.indices.contains(offset) {
+            recentSearches.remove(at: offset)
+        }
+        persistence.saveRecentSearches(recentSearches)
+        return removals
+    }
+
+    public func takeAllRecentSearches() -> [IndexedRecentSearch] {
+        takeRecentSearches(atOffsets: IndexSet(recentSearches.indices))
+    }
+
+    public func restoreRecentSearches(_ items: [IndexedRecentSearch]) {
+        guard !items.isEmpty else { return }
+
+        for item in items.sorted(by: { $0.index < $1.index }) {
+            recentSearches.removeAll {
+                $0.id == item.value.id || ($0.label == item.value.label && $0.coordinates == item.value.coordinates)
+            }
+            recentSearches.insert(item.value, at: min(item.index, recentSearches.count))
+        }
         persistence.saveRecentSearches(recentSearches)
     }
 

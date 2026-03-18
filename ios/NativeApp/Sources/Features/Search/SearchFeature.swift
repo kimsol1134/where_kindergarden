@@ -37,6 +37,60 @@ public struct SearchHomeView: View {
         }
     }
 
+    private var trimmedSearchQuery: String {
+        model.searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private var resultSummaryText: String {
+        var components = [
+            "\(model.results.count)개 기관",
+            "반경 \(Int(model.filters.radiusKM))km",
+            model.filters.sort == .distance ? "거리순" : "정원순"
+        ]
+
+        if model.results.count > 10 {
+            components.append("상위 10개 표시")
+        }
+
+        return components.joined(separator: " · ")
+    }
+
+    private var resultDegradedMessage: String? {
+        if let reviewsError = model.reviewsError {
+            return "후기 데이터를 불러오지 못해 후기 수가 비어 있을 수 있습니다. \(reviewsError)"
+        }
+
+        guard !model.configuration.hasKakaoRESTAPIKey else {
+            return nil
+        }
+
+        return "원격 주소/장소 제안은 현재 비활성화되어 유치원명과 최근 검색 중심으로 탐색 중입니다."
+    }
+
+    private var emptyStateTitle: String {
+        if model.isCatalogLoading || model.isReviewsLoading {
+            return "탐색 결과를 준비하는 중입니다."
+        }
+
+        if !trimmedSearchQuery.isEmpty {
+            return "'\(trimmedSearchQuery)'와 일치하는 기관이 없습니다."
+        }
+
+        return "선택한 위치 주변에 표시할 기관이 없습니다."
+    }
+
+    private var emptyStateMessage: String {
+        if model.isCatalogLoading || model.isReviewsLoading {
+            return "공용 JSON 데이터와 후기 데이터를 읽는 동안 잠시만 기다려 주세요."
+        }
+
+        if !trimmedSearchQuery.isEmpty {
+            return "반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요."
+        }
+
+        return "반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요."
+    }
+
     public var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -81,6 +135,11 @@ public struct SearchHomeView: View {
                 if !isSearchPanelPresented {
                     ResultSheet(
                         results: model.results,
+                        summaryText: resultSummaryText,
+                        isLoading: model.isCatalogLoading || model.isReviewsLoading,
+                        degradedMessage: resultDegradedMessage,
+                        emptyTitle: emptyStateTitle,
+                        emptyMessage: emptyStateMessage,
                         comparedIDs: Set(model.compareSelection.ids),
                         favoriteIDs: Set(model.favorites.map(\.kindercode)),
                         reviewCounts: Dictionary(
@@ -479,6 +538,11 @@ private struct SearchSuggestionRow: View {
 
 private struct ResultSheet: View {
     let results: [Kindergarten]
+    let summaryText: String
+    let isLoading: Bool
+    let degradedMessage: String?
+    let emptyTitle: String
+    let emptyMessage: String
     let comparedIDs: Set<String>
     let favoriteIDs: Set<String>
     let reviewCounts: [String: Int]
@@ -497,7 +561,7 @@ private struct ResultSheet: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("탐색 결과")
                         .font(.headline.weight(.bold))
-                    Text("\(results.count)개 기관")
+                    Text(summaryText)
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                         .accessibilityIdentifier("search.resultCountLabel")
@@ -505,12 +569,25 @@ private struct ResultSheet: View {
                 Spacer()
             }
 
+            if let degradedMessage {
+                InlineNotice(message: degradedMessage)
+            }
+
             ScrollView {
-                if results.isEmpty {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("선택한 위치 주변에 표시할 기관이 없습니다.")
+                if isLoading && results.isEmpty {
+                    HStack(spacing: 10) {
+                        ProgressView()
+                        Text("탐색 결과를 준비하는 중")
                             .font(.subheadline.weight(.semibold))
-                        Text("반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요.")
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(18)
+                    .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+                } else if results.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(emptyTitle)
+                            .font(.subheadline.weight(.semibold))
+                        Text(emptyMessage)
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -518,17 +595,26 @@ private struct ResultSheet: View {
                     .padding(18)
                     .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
                 } else {
-                    LazyVStack(spacing: 12) {
-                        ForEach(results.prefix(10)) { kindergarten in
-                            SearchResultCard(
-                                kindergarten: kindergarten,
-                                isCompared: comparedIDs.contains(kindergarten.kindercode),
-                                isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                reviewCount: reviewCounts[kindergarten.kindercode] ?? 0,
-                                onTap: { onSelect(kindergarten) },
-                                onToggleCompare: { onToggleCompare(kindergarten) },
-                                onToggleFavorite: { onToggleFavorite(kindergarten) }
-                            )
+                    VStack(spacing: 12) {
+                        LazyVStack(spacing: 12) {
+                            ForEach(results.prefix(10)) { kindergarten in
+                                SearchResultCard(
+                                    kindergarten: kindergarten,
+                                    isCompared: comparedIDs.contains(kindergarten.kindercode),
+                                    isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                                    reviewCount: reviewCounts[kindergarten.kindercode] ?? 0,
+                                    onTap: { onSelect(kindergarten) },
+                                    onToggleCompare: { onToggleCompare(kindergarten) },
+                                    onToggleFavorite: { onToggleFavorite(kindergarten) }
+                                )
+                            }
+                        }
+                        if results.count > 10 {
+                            Text("결과가 많아 상위 10곳만 먼저 보여줍니다. 반경이나 검색어를 조정하면 더 빠르게 좁힐 수 있습니다.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.horizontal, 4)
                         }
                     }
                     .padding(.bottom, 8)
@@ -658,6 +744,66 @@ private struct KindergartenDetailSheet: View {
         return URL(string: "tel://\(phone)")
     }
 
+    private var mapURL: URL? {
+        var components = URLComponents(string: "http://maps.apple.com/")
+        components?.queryItems = [
+            URLQueryItem(name: "ll", value: "\(kindergarten.location.lat),\(kindergarten.location.lng)"),
+            URLQueryItem(name: "q", value: kindergarten.name)
+        ]
+        return components?.url
+    }
+
+    private var formattedEstablishDate: String? {
+        guard kindergarten.establishDate.count == 8 else {
+            return nil
+        }
+
+        let year = kindergarten.establishDate.prefix(4)
+        let monthStart = kindergarten.establishDate.index(kindergarten.establishDate.startIndex, offsetBy: 4)
+        let dayStart = kindergarten.establishDate.index(kindergarten.establishDate.startIndex, offsetBy: 6)
+        let month = kindergarten.establishDate[monthStart..<dayStart]
+        let day = kindergarten.establishDate.suffix(2)
+        return "\(year).\(month).\(day)"
+    }
+
+    private var mealTypeLabel: String {
+        switch kindergarten.mealType {
+        case .direct:
+            return "직영"
+        case .outsourced:
+            return "위탁"
+        case .none:
+            return "정보 없음"
+        }
+    }
+
+    private var buildingSummary: String {
+        let year = kindergarten.buildingYear.map { "\($0)년" } ?? "연도 정보 없음"
+        if let floorInfo = kindergarten.floorInfo, !floorInfo.isEmpty {
+            return "\(year) · \(floorInfo)"
+        }
+        return year
+    }
+
+    private var playgroundSummary: String {
+        guard kindergarten.hasPlayground else {
+            return "없음"
+        }
+
+        let indoor = kindergarten.indoorPlaygroundArea > 0 ? "실내 \(Int(kindergarten.indoorPlaygroundArea))㎡" : nil
+        let outdoor = kindergarten.outdoorPlaygroundArea > 0 ? "실외 \(Int(kindergarten.outdoorPlaygroundArea))㎡" : nil
+        let details = [indoor, outdoor].compactMap { $0 }
+        return details.isEmpty ? "있음" : details.joined(separator: " · ")
+    }
+
+    private var homepageSubtitle: String {
+        guard let homepageURL else {
+            return kindergarten.homepage ?? ""
+        }
+
+        return homepageURL.host(percentEncoded: false) ?? homepageURL.absoluteString
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
@@ -672,7 +818,8 @@ private struct KindergartenDetailSheet: View {
                 HStack(spacing: 12) {
                     MetricPill(label: "거리", value: String(format: "%.1fkm", kindergarten.distance))
                     MetricPill(label: "1인당 면적", value: String(format: "%.1f㎡", kindergarten.areaPerChild))
-                    MetricPill(label: "정원", value: "\(kindergarten.capacity)명")
+                    MetricPill(label: "현원 / 정원", value: "\(kindergarten.currentCount) / \(kindergarten.capacity)명")
+                    MetricPill(label: "후기", value: "\(reviews.count)건")
                 }
 
                 HStack(spacing: 10) {
@@ -698,16 +845,55 @@ private struct KindergartenDetailSheet: View {
                     .tint(leafGreen)
                 }
 
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("운영 정보")
+                        .font(.headline.weight(.semibold))
+
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                        DetailFactCard(title: "유형", value: kindergarten.type.label)
+                        DetailFactCard(title: "운영시간", value: kindergarten.operationHours ?? "정보 없음")
+                        DetailFactCard(title: "방과후", value: kindergarten.hasAfterSchool ? "운영" : "미운영")
+                        DetailFactCard(title: "셔틀", value: kindergarten.hasBus ? "\(kindergarten.busCount)대" : "없음")
+                        DetailFactCard(title: "교사", value: "\(kindergarten.teacherCount)명 (경력 \(kindergarten.seniorTeacherCount)명)")
+                        DetailFactCard(title: "급식", value: mealTypeLabel)
+                        DetailFactCard(title: "놀이공간", value: playgroundSummary)
+                        DetailFactCard(title: "건물", value: buildingSummary)
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("시설 데이터")
+                        .font(.headline.weight(.semibold))
+
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                        DetailFactCard(title: "설립일", value: formattedEstablishDate ?? kindergarten.establishDate)
+                        DetailFactCard(title: "교실 면적", value: "\(Int(kindergarten.classroomArea))㎡")
+                        DetailFactCard(title: "CCTV", value: "\(kindergarten.cctvCount)대")
+                        DetailFactCard(title: "실내 놀이", value: kindergarten.indoorPlaygroundArea > 0 ? "\(Int(kindergarten.indoorPlaygroundArea))㎡" : "없음")
+                    }
+                }
+
                 if homepageURL != nil || phoneURL != nil {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("기관 정보")
                             .font(.headline.weight(.semibold))
 
+                        if let mapURL {
+                            Link(destination: mapURL) {
+                                DetailLinkRow(
+                                    title: "지도에서 보기",
+                                    subtitle: kindergarten.address,
+                                    systemImage: "map.fill"
+                                )
+                            }
+                            .buttonStyle(.plain)
+                        }
+
                         if let homepageURL {
                             Link(destination: homepageURL) {
                                 DetailLinkRow(
                                     title: "홈페이지 열기",
-                                    subtitle: homepageURL.absoluteString,
+                                    subtitle: homepageSubtitle,
                                     systemImage: "globe"
                                 )
                             }
@@ -746,6 +932,12 @@ private struct KindergartenDetailSheet: View {
                                 ReviewCard(review: review)
                             }
                         }
+
+                        if reviews.count > 3 {
+                            Text("최신 노출용으로 상위 3건만 먼저 보여줍니다.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
             }
@@ -783,6 +975,26 @@ private struct DetailLinkRow: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+    }
+}
+
+private struct DetailFactCard: View {
+    let title: String
+    let value: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(title)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            Text(value)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.primary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, minHeight: 86, alignment: .topLeading)
         .background(.white, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 }

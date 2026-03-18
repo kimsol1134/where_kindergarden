@@ -32,7 +32,7 @@ public struct NativeRootView: View {
                 }
                 .tag(NativeTab.saved)
 
-            MoreView(configuration: model.configuration)
+            MoreView(model: model)
                 .tag(NativeTab.more)
                 .tabItem {
                     Label("더보기", systemImage: "ellipsis.circle")

@@ -299,11 +299,16 @@ public struct Kindergarten: Identifiable, Hashable, Sendable {
     public let hasPlayground: Bool
     public let buildingYear: Int?
     public let indoorPlaygroundArea: Double
+    public let outdoorPlaygroundArea: Double
+    public let classroomArea: Double
     public let teacherCount: Int
     public let seniorTeacherCount: Int
+    public let cctvCount: Int
     public let phone: String?
     public let homepage: String?
     public let operationHours: String?
+    public let establishDate: String
+    public let floorInfo: String?
 
     public var id: String { kindercode }
 
@@ -326,11 +331,16 @@ public struct Kindergarten: Identifiable, Hashable, Sendable {
         self.hasPlayground = raw.hasPlayground
         self.buildingYear = raw.buildingYear
         self.indoorPlaygroundArea = raw.indoorPlaygroundArea
+        self.outdoorPlaygroundArea = raw.outdoorPlaygroundArea
+        self.classroomArea = raw.classroomArea
         self.teacherCount = raw.teacherCount
         self.seniorTeacherCount = raw.seniorTeacherCount
+        self.cctvCount = raw.cctvCount
         self.phone = raw.phone
         self.homepage = raw.homepage
         self.operationHours = raw.operationHours
+        self.establishDate = raw.establishDate
+        self.floorInfo = raw.floorInfo
     }
 }
 
@@ -494,6 +504,19 @@ public struct FavoriteItem: Codable, Hashable, Sendable, Identifiable {
         self.type = type
     }
 }
+
+public struct IndexedStoredItem<Value: Hashable & Sendable>: Hashable, Sendable {
+    public let value: Value
+    public let index: Int
+
+    public init(value: Value, index: Int) {
+        self.value = value
+        self.index = index
+    }
+}
+
+public typealias IndexedFavoriteItem = IndexedStoredItem<FavoriteItem>
+public typealias IndexedRecentSearch = IndexedStoredItem<RecentSearch>
 
 public struct RecentSearch: Codable, Hashable, Sendable, Identifiable {
     public let id: UUID

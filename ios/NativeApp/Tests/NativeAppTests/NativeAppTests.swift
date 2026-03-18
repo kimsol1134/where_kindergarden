@@ -378,6 +378,40 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(model.searchText, "해맑은유치원")
         XCTAssertEqual(model.selectedKindergarten?.kindercode, "A002")
     }
+
+    @MainActor
+    func testNativeAppModelRestoresDeletedFavoritesInOriginalOrder() {
+        let model = makeNativeAppModel()
+        let first = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
+        let second = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
+
+        model.toggleFavorite(for: first)
+        model.toggleFavorite(for: second)
+
+        let removed = model.takeFavorites(atOffsets: IndexSet([0]))
+        XCTAssertEqual(model.favorites.map(\.kindercode), ["A001"])
+
+        model.restoreFavorites(removed)
+
+        XCTAssertEqual(model.favorites.map(\.kindercode), ["A002", "A001"])
+    }
+
+    @MainActor
+    func testNativeAppModelRestoresDeletedRecentSearchesInOriginalOrder() {
+        let model = makeNativeAppModel()
+        let first = RecentSearch(label: "서울시청", coordinates: Coordinates(lat: 37.5665, lng: 126.9780))
+        let second = RecentSearch(label: "강남역", coordinates: Coordinates(lat: 37.4979, lng: 127.0276))
+
+        model.restoreRecentSearch(first)
+        model.restoreRecentSearch(second)
+
+        let removed = model.takeAllRecentSearches()
+        XCTAssertTrue(model.recentSearches.isEmpty)
+
+        model.restoreRecentSearches(removed)
+
+        XCTAssertEqual(model.recentSearches.map(\.label), ["강남역", "서울시청", "서울 강남구 역삼동"])
+    }
 }
 
 @MainActor
