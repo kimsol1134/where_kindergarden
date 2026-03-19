@@ -408,7 +408,7 @@ export function SearchHeader() {
       <div className="relative z-50 flex gap-2 overflow-x-auto overflow-y-visible border-t border-white/70 bg-white/44 px-4 py-3 hide-scrollbar md:px-5">
         <button
           disabled
-          className="brand-chip cursor-not-allowed whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium text-[var(--brand-ink-soft)] opacity-55"
+          className="brand-chip cursor-not-allowed whitespace-nowrap rounded-full px-3 py-2 text-xs font-medium text-[var(--brand-ink-soft)] opacity-55"
           title="준비 중인 기능입니다"
         >
           <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
@@ -424,7 +424,9 @@ export function SearchHeader() {
             setIsTypeOpen(false);
             setBottomSheetOpen(newState);
           }}
-          className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] px-3 py-1.5 text-xs font-bold text-[var(--brand-leaf)]"
+          aria-haspopup="listbox"
+          aria-expanded={isRadiusOpen}
+          className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] px-3 py-2 text-xs font-bold text-[var(--brand-leaf)]"
         >
           반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
         </button>
@@ -438,7 +440,9 @@ export function SearchHeader() {
             setIsRadiusOpen(false);
             setBottomSheetOpen(newState);
           }}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          aria-haspopup="listbox"
+          aria-expanded={isTypeOpen}
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.type !== 'all'
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)] font-bold'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
@@ -451,7 +455,7 @@ export function SearchHeader() {
         {/* 셔틀버스 필터 */}
         <button
           onClick={handleBusToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasBus === true
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
@@ -463,7 +467,7 @@ export function SearchHeader() {
         {/* 여유정원 필터 */}
         <button
           onClick={handleVacancyToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasVacancy === true
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
@@ -475,7 +479,7 @@ export function SearchHeader() {
         {/* 실내놀이터 필터 */}
         <button
           onClick={handleIndoorPlaygroundToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasIndoorPlayground === true
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
@@ -487,7 +491,7 @@ export function SearchHeader() {
         {/* 넓은 공간 필터 */}
         <button
           onClick={handleLargeSpaceToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasLargeSpace === true
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
@@ -499,7 +503,7 @@ export function SearchHeader() {
         {/* 최신 건물 필터 */}
         <button
           onClick={handleModernBuildingToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.hasModernBuilding === true
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'

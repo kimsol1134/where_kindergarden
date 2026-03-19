@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware';
 import type { Kindergarten } from '@/types';
 
 /** 비교함 최대 아이템 수 */
-const MAX_COMPARE_ITEMS = 3;
+export const MAX_COMPARE_ITEMS = 3;
 
 /** 비교 스토어 상태 */
 interface CompareState {

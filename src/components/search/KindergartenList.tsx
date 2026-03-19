@@ -89,6 +89,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   // Scroll position preservation for list/map toggle
   const scrollPositionRef = useRef<number>(0);
+  const hasScrolledRef = useRef(false);
 
   // Load review data when results are available
   useEffect(() => {
@@ -102,12 +103,13 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   useEffect(() => {
     if (mobileView === 'map' && scrollContainerRef.current) {
       scrollPositionRef.current = scrollContainerRef.current.scrollTop;
+      hasScrolledRef.current = true;
     }
   }, [mobileView]);
 
   // Restore scroll position when returning to list view
   useEffect(() => {
-    if (mobileView === 'list' && scrollContainerRef.current && scrollPositionRef.current > 0) {
+    if (mobileView === 'list' && scrollContainerRef.current && hasScrolledRef.current) {
       // Use requestAnimationFrame to ensure DOM is ready
       requestAnimationFrame(() => {
         if (scrollContainerRef.current) {
@@ -463,7 +465,8 @@ function KindergartenCard({
               onCompareToggle();
             }}
             disabled={!isInCompare && !canAddToCompare}
-            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all border ${
+            aria-label={isInCompare ? '비교함에서 제거' : canAddToCompare ? '비교함에 담기' : '비교함이 가득 찼습니다'}
+            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all active:scale-95 border ${
               isInCompare
                 ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
                 : canAddToCompare

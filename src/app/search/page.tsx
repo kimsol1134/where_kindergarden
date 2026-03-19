@@ -12,6 +12,11 @@ import { useSearchStore, useCompareStore, useUIStore } from '@/stores';
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
 
+/** 토스트 타이밍 (ms) */
+const TOAST_FADE_DELAY = 4700;
+const TOAST_DISMISS_DELAY = 5000;
+const TOAST_MANUAL_DISMISS_DELAY = 300;
+
 /** 패널 너비 제한 (px) */
 const PANEL_MIN_WIDTH = 320;
 const PANEL_MAX_WIDTH = 700;
@@ -55,8 +60,8 @@ function SearchPageContent() {
         manualDismissTimer.current = null;
       }
       setIsToastFading(false);
-      const fadeTimer = setTimeout(() => setIsToastFading(true), 4700);
-      const hideTimer = setTimeout(() => dismissToast(), 5000);
+      const fadeTimer = setTimeout(() => setIsToastFading(true), TOAST_FADE_DELAY);
+      const hideTimer = setTimeout(() => dismissToast(), TOAST_DISMISS_DELAY);
       return () => {
         clearTimeout(fadeTimer);
         clearTimeout(hideTimer);
@@ -67,7 +72,7 @@ function SearchPageContent() {
   // Manual toast dismiss
   const handleDismissToast = useCallback(() => {
     setIsToastFading(true);
-    manualDismissTimer.current = setTimeout(() => dismissToast(), 300);
+    manualDismissTimer.current = setTimeout(() => dismissToast(), TOAST_MANUAL_DISMISS_DELAY);
   }, [dismissToast]);
 
   // mode=location 파라미터가 있으면 현재 위치로 검색

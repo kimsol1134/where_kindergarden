@@ -18,6 +18,7 @@ import {
   useCompareStore,
   useKindergartenStore,
   useSearchStore,
+  MAX_COMPARE_ITEMS,
   type FavoriteItem,
 } from '@/stores';
 import { useFavoriteKindergartens, useFavoriteKindergarten } from '@/hooks';
@@ -154,7 +155,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     const newSelected = new Set(selectedItems);
     if (newSelected.has(kindercode)) {
       newSelected.delete(kindercode);
-    } else if (newSelected.size < 3) {
+    } else if (newSelected.size < MAX_COMPARE_ITEMS) {
       newSelected.add(kindercode);
     }
     setSelectedItems(newSelected);
@@ -236,7 +237,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -334,7 +335,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
                 const inCompare = isInCompare(item.kindercode);
                 const canAdd = canAddToCompare();
                 const isSelected = selectedItems.has(item.kindercode);
-                const canSelect = selectedItems.size < 3 || isSelected;
+                const canSelect = selectedItems.size < MAX_COMPARE_ITEMS || isSelected;
 
                 return (
                   <FavoriteItemCard

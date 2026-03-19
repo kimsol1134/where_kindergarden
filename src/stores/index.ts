@@ -6,7 +6,7 @@ export type {
   SearchFilters,
 } from './searchStore';
 
-export { useCompareStore } from './compareStore';
+export { useCompareStore, MAX_COMPARE_ITEMS } from './compareStore';
 
 export { useFavoriteStore } from './favoriteStore';
 export type { FavoriteItem } from './favoriteStore';

@@ -237,16 +237,18 @@ export function KindergartenDetailPanel({
           <h2 className="text-lg font-bold text-gray-900">상세 정보</h2>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Tab Bar */}
-        <div className="flex border-b border-gray-200 bg-white sticky top-[60px] z-10">
+        <div className="flex border-b border-gray-200 bg-white sticky top-[60px] z-10" role="tablist">
           <button
             onClick={() => setActiveTab('info')}
+            role="tab"
+            aria-selected={activeTab === 'info'}
             className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative ${
               activeTab === 'info'
                 ? 'text-emerald-600'
@@ -260,6 +262,8 @@ export function KindergartenDetailPanel({
           </button>
           <button
             onClick={() => setActiveTab('reviews')}
+            role="tab"
+            aria-selected={activeTab === 'reviews'}
             className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
               activeTab === 'reviews'
                 ? 'text-emerald-600'
@@ -284,7 +288,7 @@ export function KindergartenDetailPanel({
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto bg-gray-50">
+        <div className="flex-1 overflow-y-auto bg-gray-50" role="tabpanel">
           {activeTab === 'reviews' ? (
             <ReviewLinkList kindergartenId={kindergarten.kindercode} />
           ) : (
@@ -738,7 +742,7 @@ export function KindergartenDetailPanel({
             <button
               onClick={onCompareToggle}
               disabled={!isInCompare && !canAddToCompare}
-              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all active:scale-[0.98] ${
                 isInCompare
                   ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
                   : canAddToCompare
