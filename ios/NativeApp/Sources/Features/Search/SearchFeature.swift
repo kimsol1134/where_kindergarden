@@ -1,5 +1,6 @@
 import Foundation
 import Models
+import Services
 import SwiftUI
 
 public struct SearchHomeView: View {
@@ -145,6 +146,7 @@ public struct SearchHomeView: View {
                         reviewCounts: Dictionary(
                             uniqueKeysWithValues: model.results.map { ($0.kindercode, model.reviews(for: $0.kindercode).count) }
                         ),
+                        adUnitID: model.configuration.adMobBannerUnitID,
                         onSelect: { model.select(kindergarten: $0) },
                         onToggleCompare: { model.toggleCompare(for: $0) },
                         onToggleFavorite: { model.toggleFavorite(for: $0) }
@@ -546,6 +548,7 @@ private struct ResultSheet: View {
     let comparedIDs: Set<String>
     let favoriteIDs: Set<String>
     let reviewCounts: [String: Int]
+    let adUnitID: String
     let onSelect: (Kindergarten) -> Void
     let onToggleCompare: (Kindergarten) -> Void
     let onToggleFavorite: (Kindergarten) -> Void
@@ -616,6 +619,11 @@ private struct ResultSheet: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .padding(.horizontal, 4)
                         }
+
+                        #if canImport(GoogleMobileAds)
+                        NativeAdBanner(adUnitID: adUnitID)
+                            .padding(.top, 4)
+                        #endif
                     }
                     .padding(.bottom, 8)
                 }

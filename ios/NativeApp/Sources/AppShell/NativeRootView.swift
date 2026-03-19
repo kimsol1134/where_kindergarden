@@ -1,4 +1,5 @@
 import Features
+import Services
 import SwiftUI
 
 public struct NativeRootView: View {
@@ -40,14 +41,35 @@ public struct NativeRootView: View {
                 .tag(NativeTab.more)
         }
         .task {
-            await model.bootstrapIfNeeded()
+            async let services: Void = initializeServices()
+            async let bootstrap: Void = model.bootstrapIfNeeded()
+            _ = await (services, bootstrap)
         }
         .onOpenURL { url in
+            #if canImport(KakaoSDKShare)
+            if url.scheme?.hasPrefix("kakao") == true {
+                return
+            }
+            #endif
             model.applyDeepLink(url)
         }
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
             model.applyUniversalLink(userActivity)
         }
         .tint(leafGreen)
+    }
+
+    private func initializeServices() async {
+        _ = await TrackingTransparencyService.requestIfNeeded()
+
+        #if canImport(GoogleMobileAds)
+        AdMobService.configure()
+        #endif
+
+        #if canImport(KakaoSDKShare)
+        if let appKey = model.configuration.kakaoAppKey {
+            KakaoShareService.initializeSDK(appKey: appKey)
+        }
+        #endif
     }
 }

@@ -1,4 +1,5 @@
 import Models
+import Services
 import SwiftUI
 
 public struct CompareView: View {
@@ -50,6 +51,24 @@ public struct CompareView: View {
                     }
 
                     if let shareURL = model.compareShareURL() {
+                        #if canImport(KakaoSDKShare)
+                        if KakaoShareService.isKakaoTalkAvailable {
+                            Button {
+                                KakaoShareService.shareCompare(
+                                    names: items.map(\.name),
+                                    shareURL: shareURL
+                                )
+                            } label: {
+                                Label("카카오톡으로 공유", systemImage: "message.fill")
+                                    .frame(maxWidth: .infinity)
+                            }
+                            .accessibilityIdentifier("compare.kakaoShareButton")
+                            .buttonStyle(.borderedProminent)
+                            .tint(kakaoYellow)
+                            .foregroundStyle(.black)
+                        }
+                        #endif
+
                         ShareLink(
                             item: shareURL,
                             subject: Text("우리동네 유치원 비교"),
@@ -68,6 +87,11 @@ public struct CompareView: View {
                             .background(Color.gray.opacity(0.16), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                             .foregroundStyle(.secondary)
                     }
+
+                    #if canImport(GoogleMobileAds)
+                    NativeAdBanner(adUnitID: model.configuration.adMobBannerUnitID)
+                        .padding(.top, 8)
+                    #endif
                 }
                 .padding(20)
             }
