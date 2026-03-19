@@ -82,15 +82,15 @@ function CompareContent() {
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[rgba(203,188,174,0.2)]">
             <Search className="h-8 w-8 text-[var(--brand-ink-soft)]" />
           </div>
-          <h2 className="mb-2 text-lg font-bold text-[var(--brand-ink)]">비교할 기관이 없습니다</h2>
+          <h2 className="mb-2 text-lg font-bold text-[var(--brand-ink)]">비교할 유치원이 없어요</h2>
           <p className="mb-6 text-center text-sm text-[var(--brand-ink-soft)]">
-            검색 결과에서 비교할 기관을 선택해주세요
+            검색 결과에서 비교할 유치원을 선택해주세요
           </p>
           <Link
             href="/search"
             className="rounded-full bg-[var(--brand-leaf)] px-6 py-3 text-sm font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)]"
           >
-            기관 검색하기
+            유치원 검색하기
           </Link>
         </main>
       </div>

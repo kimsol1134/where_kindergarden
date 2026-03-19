@@ -7,7 +7,7 @@ import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { PanelResizer } from '@/components/search/PanelResizer';
-import { useSearchStore, useCompareStore, useUIStore } from '@/stores';
+import { useSearchStore, useCompareStore, useUIStore, useKindergartenStore } from '@/stores';
 // Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
@@ -30,6 +30,7 @@ function SearchPageContent() {
   const { items } = useCompareStore();
   const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
+  const { loadData: loadKindergartenData } = useKindergartenStore();
 
   // 모바일에서 리스트/지도 뷰 전환 상태
   const [mobileView, setMobileView] = useState<MobileViewMode>('list');
@@ -43,6 +44,11 @@ function SearchPageContent() {
   const dismissToast = useUIStore((state) => state.dismissToast);
   const [isToastFading, setIsToastFading] = useState(false);
   const manualDismissTimer = useRef<ReturnType<typeof setTimeout>>(null);
+
+  // 검색 페이지 진입 시 유치원 데이터 미리 로드 (이름 자동완성용)
+  useEffect(() => {
+    loadKindergartenData();
+  }, [loadKindergartenData]);
 
   // Show toast when search error occurs
   useEffect(() => {

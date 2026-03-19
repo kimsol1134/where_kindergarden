@@ -160,7 +160,7 @@ describe('KindergartenDetailPanel', () => {
       />
     );
 
-    expect(screen.getByText('현재 등록된 공식 결원은 없습니다.')).toBeInTheDocument();
+    expect(screen.getByText('현재 빈 자리가 없어요')).toBeInTheDocument();
     expect(screen.getByText('최종 변경일 2026.03.17')).toBeInTheDocument();
   });
 

@@ -127,8 +127,7 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-2">
                 <li>
-                  <strong>위치 정보</strong>: 앱 종료 또는 브라우저 세션 종료 시
-                  즉시 파기 (서버 저장 안 함)
+                  <strong>위치 정보</strong>: 앱 종료 시 즉시 파기 (서버 저장 안 함)
                 </li>
                 <li>
                   <strong>광고 식별자</strong>: Google의 광고 데이터 처리 방침에
@@ -220,7 +219,7 @@ export default function PrivacyPage() {
             </section>
 
             <p className="text-gray-500 text-sm mt-12">
-              시행일: 2026년 1월 22일
+              시행일: 2026년 1월 27일
             </p>
           </div>
         </div>

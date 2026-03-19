@@ -35,7 +35,7 @@ function ChartSkeleton() {
   return (
     <div className="flex flex-col items-center justify-center h-[200px]">
       <Loader2 className="w-6 h-6 animate-spin text-gray-300" />
-      <span className="text-xs text-gray-400 mt-2">차트 로딩 중...</span>
+      <span className="text-xs text-gray-400 mt-2">정보를 불러오는 중...</span>
     </div>
   );
 }
@@ -330,7 +330,7 @@ export function KindergartenDetailPanel({
                     rel="noopener noreferrer"
                     className="text-emerald-600 hover:underline font-medium truncate max-w-[300px]"
                   >
-                    홈페이지 방문하기
+                    유치원 홈페이지
                   </a>
                 </div>
               )}
@@ -404,14 +404,14 @@ export function KindergartenDetailPanel({
                  </div>
                  <div className="w-px h-8 bg-gray-300"></div>
                  <div className="text-center">
-                   <div className="text-sm text-gray-500 mb-1">현재 현원</div>
+                   <div className="text-sm text-gray-500 mb-1">현재 원아수</div>
                    <div className="text-xl font-bold text-emerald-600">{kindergarten.currentCount}명</div>
                  </div>
                </div>
                
                <div className="flex-1 w-full md:w-auto max-w-xs">
                   <div className="flex justify-between text-xs mb-1.5">
-                    <span className="text-gray-600">정원 충족률</span>
+                    <span className="text-gray-600">모집 현황</span>
                     <span className="font-bold text-emerald-700">
                       {Math.round((kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%
                     </span>
@@ -587,7 +587,7 @@ export function KindergartenDetailPanel({
 
             {isVacancyLoading && !isVacancyLoaded ? (
               <div className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-5 text-sm text-gray-500">
-                공식 결원정보 확인 중...
+                빈 자리 확인 중...
               </div>
             ) : vacancyError ? (
               <div className="rounded-xl border border-red-100 bg-red-50 px-4 py-5 text-sm text-red-600">
@@ -638,12 +638,12 @@ export function KindergartenDetailPanel({
             ) : vacancySummary ? (
               <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-5">
                 <div className="text-sm font-semibold text-emerald-700">
-                  현재 등록된 공식 결원은 없습니다.
+                  현재 빈 자리가 없어요
                 </div>
                 <div className="text-xs text-emerald-600 mt-1">
                   {formattedVacancyUpdatedAt
                     ? `최종 변경일 ${formattedVacancyUpdatedAt}`
-                    : '기관에서 결원 정보를 0명으로 등록했습니다.'}
+                    : '이 유치원에 현재 빈 자리가 없어요'}
                 </div>
               </div>
             ) : (
@@ -652,7 +652,7 @@ export function KindergartenDetailPanel({
                   공식 결원 등록 정보가 없습니다.
                 </div>
                 <div className="text-xs text-gray-500 mt-1">
-                  해당 기관이 유치원입학 시스템에 결원정보를 등록하지 않았을 수 있습니다.
+                  빈 자리 정보를 제공하지 않는 유치원이에요. 직접 전화로 확인해보세요.
                 </div>
               </div>
             )}
@@ -750,7 +750,7 @@ export function KindergartenDetailPanel({
                   : 'bg-gray-200 text-gray-400 cursor-not-allowed'
               }`}
             >
-              {isInCompare ? '✓ 비교함에서 제거' : '+ 비교함에 담기'}
+              {isInCompare ? '✓ 비교 목록에서 빼기' : '+ 비교 목록에 추가'}
             </button>
           </div>
         </div>

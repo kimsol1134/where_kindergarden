@@ -78,7 +78,7 @@ export function CompareFloatingBar() {
               <>
                 <div className="w-px h-4 bg-gray-300 flex-shrink-0 hidden md:block" />
                 <span className="text-sm text-gray-500 flex-shrink-0 hidden md:block">
-                  {MAX_COMPARE_ITEMS - items.length}개 더 선택 가능
+                  {MAX_COMPARE_ITEMS - items.length}곳 더 추가할 수 있어요
                 </span>
               </>
             )}
