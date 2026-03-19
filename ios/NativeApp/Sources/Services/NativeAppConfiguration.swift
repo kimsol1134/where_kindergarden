@@ -7,6 +7,7 @@ public struct NativeAppConfiguration: Sendable {
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
+    public let adMobBannerUnitID: String
     public let reviewsRemoteURL: URL
     public let compareShareBaseURL: URL
     public let kindergartensResourceName: String
@@ -15,6 +16,7 @@ public struct NativeAppConfiguration: Sendable {
     public init(
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
+        adMobBannerUnitID: String = "ca-app-pub-5648788643644962/5397823299",
         reviewsRemoteURL: URL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!,
         compareShareBaseURL: URL = URL(string: "https://where-kindergarden.vercel.app/compare")!,
         kindergartensResourceName: String = "kindergartens",
@@ -22,6 +24,7 @@ public struct NativeAppConfiguration: Sendable {
     ) {
         self.kakaoAppKey = Self.normalizedValue(kakaoAppKey)
         self.kakaoRESTAPIKey = Self.normalizedValue(kakaoRESTAPIKey)
+        self.adMobBannerUnitID = adMobBannerUnitID
         self.reviewsRemoteURL = reviewsRemoteURL
         self.compareShareBaseURL = compareShareBaseURL
         self.kindergartensResourceName = kindergartensResourceName
