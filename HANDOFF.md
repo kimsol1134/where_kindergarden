@@ -1,9 +1,10 @@
 # HANDOFF.md
 
 ## 마지막 작업 일시
-2026-03-18
+2026-03-19
 
 ## 완료된 작업
+- [x] PR #26 머지 후 QA에서 발견된 UX/UI 10건 수정 (z-index, 터치타겟, 스크롤 복원, a11y, 상수 통합, 토스트 상수화, active 피드백)
 - [x] 앱 아이콘 기준 브랜드 토큰 정의 및 웹 shell 리브랜딩 반영
 - [x] 후기 검증 증분 파이프라인 및 CI 자동화 추가
 - [x] 공식 결원정보 타입/스토어/파서/동기화 스크립트 추가
@@ -110,4 +111,4 @@
 - `ios/WhereKindergartenNative/project.yml`
 
 ## 현재 브랜치
-- `main`
+- `fix/ux-ui-10-improvements` (PR 생성 후 main 머지 예정)

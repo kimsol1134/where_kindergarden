@@ -6,6 +6,7 @@ import { FAQ } from '@/components/landing/FAQ';
 import { CTA } from '@/components/landing/CTA';
 import { Footer } from '@/components/landing/Footer';
 import { FAQJsonLd } from '@/components/JsonLd';
+import { HomeRouter } from '@/components/home/HomeRouter';
 
 const FAQ_DATA = [
   {
@@ -27,17 +28,19 @@ const FAQ_DATA = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-sans text-[var(--brand-ink)]">
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Stats />
-        <FAQ />
-        <CTA />
-      </main>
-      <Footer />
-      <FAQJsonLd mainEntity={FAQ_DATA} />
-    </div>
+    <HomeRouter>
+      <div className="min-h-screen font-sans text-[var(--brand-ink)]">
+        <Header />
+        <main>
+          <Hero />
+          <Features />
+          <Stats />
+          <FAQ />
+          <CTA />
+        </main>
+        <Footer />
+        <FAQJsonLd mainEntity={FAQ_DATA} />
+      </div>
+    </HomeRouter>
   );
 }

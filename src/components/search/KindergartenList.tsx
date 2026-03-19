@@ -89,6 +89,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   // Scroll position preservation for list/map toggle
   const scrollPositionRef = useRef<number>(0);
+  const hasScrolledRef = useRef(false);
 
   // Load review data when results are available
   useEffect(() => {
@@ -102,12 +103,13 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
   useEffect(() => {
     if (mobileView === 'map' && scrollContainerRef.current) {
       scrollPositionRef.current = scrollContainerRef.current.scrollTop;
+      hasScrolledRef.current = true;
     }
   }, [mobileView]);
 
   // Restore scroll position when returning to list view
   useEffect(() => {
-    if (mobileView === 'list' && scrollContainerRef.current && scrollPositionRef.current > 0) {
+    if (mobileView === 'list' && scrollContainerRef.current && hasScrolledRef.current) {
       // Use requestAnimationFrame to ensure DOM is ready
       requestAnimationFrame(() => {
         if (scrollContainerRef.current) {
@@ -148,10 +150,10 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
     (kindergarten: Kindergarten) => {
       if (isInCompare(kindergarten.kindercode)) {
         removeItem(kindergarten.kindercode);
-        showToast('비교함에서 제거했습니다', 'success');
+        showToast('비교 목록에서 뺐어요', 'success');
       } else {
         addItem(kindergarten);
-        showToast(`비교함에 추가했습니다 (${compareItemCount + 1}/3)`, 'success');
+        showToast(`비교 목록에 추가했어요 (${compareItemCount + 1}/3)`, 'success');
       }
     },
     [isInCompare, removeItem, addItem, showToast, compareItemCount]
@@ -193,14 +195,14 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
       <div className="px-5 py-4 border-b border-gray-100 flex justify-between items-end bg-white">
         <div>
           <h1 className="text-lg font-bold text-gray-900">
-            검색 결과 <span className="text-emerald-600">{results.length}</span>건
+            주변 유치원 <span className="text-emerald-600">{results.length}</span>곳
           </h1>
           <p className="text-xs text-gray-500 mt-1">
             {address || '위치를 선택해주세요'} 기준 {filters.radius}km 이내
             {/* 필터로 인해 결과가 줄어든 경우 안내 표시 */}
             {totalCount > results.length && (
               <span className="ml-2 text-amber-600">
-                (전체 {totalCount}개 중 필터 적용)
+                (전체 {totalCount}곳 중 조건 적용)
               </span>
             )}
           </p>
@@ -246,7 +248,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
           <div className="flex flex-col items-center justify-center py-12 text-center">
             <SearchX className="h-12 w-12 text-gray-300 mb-4" />
             <p className="text-gray-500 mb-4">
-              주변 {filters.radius}km 내에 기관이 없습니다.
+              주변 {filters.radius}km 안에 유치원이 없어요.
             </p>
 
             {filters.radius < 5 && (
@@ -269,7 +271,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
             )}
 
             <p className="text-sm text-gray-400 mt-4">
-              또는 다른 위치로 검색해보세요.
+              다른 주소나 동네로 다시 검색해보세요
             </p>
           </div>
         )}
@@ -463,7 +465,8 @@ function KindergartenCard({
               onCompareToggle();
             }}
             disabled={!isInCompare && !canAddToCompare}
-            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all border ${
+            aria-label={isInCompare ? '비교 목록에서 빼기' : canAddToCompare ? '비교 목록에 추가' : '비교 목록이 가득 찼어요'}
+            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all active:scale-95 border ${
               isInCompare
                 ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
                 : canAddToCompare
@@ -471,7 +474,7 @@ function KindergartenCard({
                 : 'bg-white text-gray-300 border-gray-100 cursor-not-allowed'
             }`}
           >
-            {isInCompare ? '✓ 담김' : '+ 비교'}
+            {isInCompare ? '비교중' : '+ 비교'}
           </button>
         </div>
       </div>

@@ -53,7 +53,7 @@ export function CompareHeader() {
             </button>
             <div className="min-w-0">
               <BrandMark compact labelClassName="hidden sm:block text-base" />
-              <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">최대 3개 기관 비교 및 공유</p>
+              <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">최대 3곳 비교 및 공유</p>
             </div>
           </div>
 

@@ -6,8 +6,6 @@ import {
   Search,
   X,
   Heart,
-  User,
-  SlidersHorizontal,
   ChevronDown,
   Bus,
   MapPin,
@@ -190,8 +188,8 @@ export function SearchHeader() {
   return (
     <header className="relative z-50 flex-none safe-area-top">
       <div className="mx-auto max-w-[1920px] px-4 pt-3">
-        <div className="brand-shell">
-      <div className="h-16 flex items-center justify-between gap-4 px-4 md:px-5">
+        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.06)] md:brand-shell">
+      <div className="h-14 flex items-center justify-between gap-3 px-3 md:h-16 md:gap-4 md:px-5">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 flex-shrink-0">
           <BrandMark compact labelClassName="hidden md:block text-lg" />
@@ -215,7 +213,7 @@ export function SearchHeader() {
               }
             }}
             className="w-full rounded-full border border-white/80 bg-white/78 py-2.5 pl-10 pr-24 text-sm text-[var(--brand-ink)] outline-none transition-all placeholder:text-[var(--brand-ink-soft)] shadow-[0_14px_28px_rgba(125,132,96,0.08)] hover:bg-white/92 focus:border-[rgba(78,169,109,0.35)] focus:bg-white"
-            placeholder="주소, 유치원, 아파트 이름 검색"
+            placeholder="유치원, 주소 검색"
           />
           <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
             {(query || address) && (
@@ -269,7 +267,7 @@ export function SearchHeader() {
                   <div className="font-medium text-[var(--brand-ink)]">
                     {isGeoLoading ? '위치 확인 중...' : '현재 위치로 검색'}
                   </div>
-                  <div className="text-xs text-[var(--brand-ink-soft)]">GPS를 사용하여 내 위치 찾기</div>
+                  <div className="text-xs text-[var(--brand-ink-soft)]">현재 위치에서 검색</div>
                 </div>
               </button>
 
@@ -386,7 +384,7 @@ export function SearchHeader() {
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <button
             onClick={() => setIsFavoritesPanelOpen(true)}
-            className="relative flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
+            className="relative flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
           >
             <Heart className="w-4 h-4" />
             찜한 목록
@@ -396,25 +394,11 @@ export function SearchHeader() {
               </span>
           ) : null}
           </button>
-          <div className="h-6 w-px bg-[rgba(203,188,174,0.34)]" />
-          <button className="flex items-center gap-2 rounded-full bg-[rgba(78,169,109,0.12)] px-4 py-2 text-sm font-bold text-[var(--brand-leaf)] transition-colors hover:bg-[rgba(78,169,109,0.18)]">
-            <User className="w-4 h-4" />
-            로그인
-          </button>
         </div>
       </div>
 
       {/* Filters (Scrollable) */}
       <div className="relative z-50 flex gap-2 overflow-x-auto overflow-y-visible border-t border-white/70 bg-white/44 px-4 py-3 hide-scrollbar md:px-5">
-        <button
-          disabled
-          className="brand-chip cursor-not-allowed whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium text-[var(--brand-ink-soft)] opacity-55"
-          title="준비 중인 기능입니다"
-        >
-          <SlidersHorizontal className="w-3.5 h-3.5" /> 필터
-        </button>
-        <div className="mx-1 h-6 w-px bg-[rgba(203,188,174,0.34)]" />
-
         {/* 반경 필터 버튼 */}
         <button
           ref={radiusButtonRef}
@@ -424,9 +408,11 @@ export function SearchHeader() {
             setIsTypeOpen(false);
             setBottomSheetOpen(newState);
           }}
+          aria-haspopup="listbox"
+          aria-expanded={isRadiusOpen}
           className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] px-3 py-1.5 text-xs font-bold text-[var(--brand-leaf)]"
         >
-          반경: {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
+          {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
         </button>
 
         {/* 기관 유형 필터 버튼 */}
@@ -438,13 +424,15 @@ export function SearchHeader() {
             setIsRadiusOpen(false);
             setBottomSheetOpen(newState);
           }}
+          aria-haspopup="listbox"
+          aria-expanded={isTypeOpen}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.type !== 'all'
               ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)] font-bold'
               : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
           }`}
         >
-          유형: {filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}
+          {filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}
           <ChevronDown className={`w-3 h-3 transition-transform ${isTypeOpen ? 'rotate-180' : ''}`} />
         </button>
 
@@ -600,9 +588,9 @@ export function SearchHeader() {
           {/* 모바일: 하단 시트 스타일 */}
           <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 pb-10 animate-slide-in-bottom">
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
-            <div className="text-sm font-medium text-gray-700 mb-3">기관 유형</div>
+            <div className="text-sm font-medium text-gray-700 mb-3">유치원 종류</div>
             <p className="text-sm text-gray-500 mb-3">
-              현재: <span className="font-bold text-emerald-600">{filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}</span>
+              <span className="font-bold text-emerald-600">{filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}</span>
             </p>
             <div className="space-y-2">
               {[

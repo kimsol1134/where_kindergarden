@@ -18,6 +18,8 @@ import {
   useCompareStore,
   useKindergartenStore,
   useSearchStore,
+  useUIStore,
+  MAX_COMPARE_ITEMS,
   type FavoriteItem,
 } from '@/stores';
 import { useFavoriteKindergartens, useFavoriteKindergarten } from '@/hooks';
@@ -49,6 +51,7 @@ interface FavoritesPanelProps {
 export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
   const router = useRouter();
   const { items, removeItem, clearAll } = useFavoriteStore();
+  const showToast = useUIStore((state) => state.showToast);
   const { addItem: addToCompare, removeItem: removeFromCompare, setItems, isInCompare, canAdd: canAddToCompare } = useCompareStore();
 
   // 상세보기 상태
@@ -100,11 +103,10 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
   };
 
   const handleClearAll = () => {
-    if (window.confirm('모든 찜한 목록을 삭제하시겠습니까?')) {
-      clearAll();
-      setSelectedItems(new Set());
-      setIsSelectMode(false);
-    }
+    clearAll();
+    setSelectedItems(new Set());
+    setIsSelectMode(false);
+    showToast('모두 삭제했어요', 'success');
   };
 
   const handleCardClick = (kindercode: string) => {
@@ -154,7 +156,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     const newSelected = new Set(selectedItems);
     if (newSelected.has(kindercode)) {
       newSelected.delete(kindercode);
-    } else if (newSelected.size < 3) {
+    } else if (newSelected.size < MAX_COMPARE_ITEMS) {
       newSelected.add(kindercode);
     }
     setSelectedItems(newSelected);
@@ -236,7 +238,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -322,9 +324,9 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
                 <Heart className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium mb-2">찜한 유치원이 없습니다</p>
+              <p className="text-gray-500 font-medium mb-2">아직 찜한 유치원이 없어요</p>
               <p className="text-sm text-gray-400">
-                마음에 드는 유치원의 하트를 눌러 저장하세요
+                마음에 드는 유치원의 ♥를 눌러 모아보세요
               </p>
             </div>
           ) : (
@@ -334,7 +336,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
                 const inCompare = isInCompare(item.kindercode);
                 const canAdd = canAddToCompare();
                 const isSelected = selectedItems.has(item.kindercode);
-                const canSelect = selectedItems.size < 3 || isSelected;
+                const canSelect = selectedItems.size < MAX_COMPARE_ITEMS || isSelected;
 
                 return (
                   <FavoriteItemCard
@@ -508,14 +510,14 @@ function FavoriteItemCard({
               }`}
               title={
                 !canAddToCompare && !isInCompare
-                  ? '비교함이 가득 찼습니다 (최대 3개)'
+                  ? '비교 목록이 가득 찼어요 (최대 3개)'
                   : undefined
               }
             >
               {isInCompare ? (
                 <>
                   <Check className="w-3 h-3" />
-                  비교함에서 제거
+                  비교 목록에서 빼기
                 </>
               ) : (
                 <>

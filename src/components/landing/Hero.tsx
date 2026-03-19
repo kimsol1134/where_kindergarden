@@ -17,7 +17,7 @@ export function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/72 px-4 py-2 text-sm font-semibold text-[var(--brand-leaf)] shadow-[0_14px_34px_rgba(123,132,100,0.12)] animate-fade-up">
               <SearchCheck className="h-4 w-4" />
-              아이콘 기준 브랜드 리프레시 적용
+              내 주변 유치원 한눈에 비교
             </div>
 
             <div className="mt-6 animate-fade-up delay-100">
@@ -35,9 +35,8 @@ export function Hero() {
             </div>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--brand-ink-soft)] animate-fade-up delay-200">
-              현재 위치 기반으로 주변 유치원을 찾고, 비교하고, 후기까지 확인하는 흐름을
-              반투명한 탐색 도구처럼 재구성했습니다. 웹은 같은 브랜드 시스템으로 정리하고,
-              iPhone은 별도 SwiftUI 앱으로 확장합니다.
+              현재 위치 기반으로 주변 유치원을 찾고, 비교하고, 학부모 후기까지
+              한번에 확인하세요. 전국 7,950개 이상의 유치원 정보를 제공합니다.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 animate-fade-up delay-300 sm:flex-row">
@@ -78,10 +77,10 @@ export function Hero() {
                 <div className="flex items-center justify-between rounded-[1.6rem] bg-white/72 px-5 py-4">
                   <div className="space-y-1">
                     <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--brand-ink-soft)]">
-                      New iPhone UX
+                      iOS App
                     </p>
                     <p className="text-lg font-semibold text-[var(--brand-ink)]">
-                      전체 화면 지도 + 결과 시트
+                      지도에서 바로 탐색
                     </p>
                   </div>
                   <ShieldCheck className="h-7 w-7 text-[var(--brand-leaf)]" />
@@ -98,7 +97,7 @@ export function Hero() {
                             반경 1km 안에 18개 기관
                           </p>
                           <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">
-                            전체 화면 지도 위로 하단 결과 카드가 올라옵니다.
+                            가까운 유치원을 지도 위에서 한눈에 확인하세요.
                           </p>
                         </div>
                         <div className="brand-card rounded-[1.5rem] p-4">
@@ -122,7 +121,7 @@ export function Hero() {
                         className="mx-auto h-auto w-36 rounded-[2rem]"
                       />
                       <p className="mt-4 text-center text-sm leading-6 text-[var(--brand-ink-soft)]">
-                        흰 무대, 초록 탐색 실루엣, 노란 아침빛, 돋보기 메타포를 UI 전체로 확장했습니다.
+                        App Store에서 무료로 다운로드하여 더 빠르게 탐색하세요.
                       </p>
                     </div>
                     <div className="brand-card rounded-[2rem] p-5">

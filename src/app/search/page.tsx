@@ -7,10 +7,15 @@ import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { PanelResizer } from '@/components/search/PanelResizer';
-import { useSearchStore, useCompareStore, useUIStore } from '@/stores';
+import { useSearchStore, useCompareStore, useUIStore, useKindergartenStore } from '@/stores';
 // Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
+
+/** 토스트 타이밍 (ms) */
+const TOAST_FADE_DELAY = 4700;
+const TOAST_DISMISS_DELAY = 5000;
+const TOAST_MANUAL_DISMISS_DELAY = 300;
 
 /** 패널 너비 제한 (px) */
 const PANEL_MIN_WIDTH = 320;
@@ -25,6 +30,7 @@ function SearchPageContent() {
   const { items } = useCompareStore();
   const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
+  const { loadData: loadKindergartenData } = useKindergartenStore();
 
   // 모바일에서 리스트/지도 뷰 전환 상태
   const [mobileView, setMobileView] = useState<MobileViewMode>('list');
@@ -38,6 +44,11 @@ function SearchPageContent() {
   const dismissToast = useUIStore((state) => state.dismissToast);
   const [isToastFading, setIsToastFading] = useState(false);
   const manualDismissTimer = useRef<ReturnType<typeof setTimeout>>(null);
+
+  // 검색 페이지 진입 시 유치원 데이터 미리 로드 (이름 자동완성용)
+  useEffect(() => {
+    loadKindergartenData();
+  }, [loadKindergartenData]);
 
   // Show toast when search error occurs
   useEffect(() => {
@@ -55,8 +66,8 @@ function SearchPageContent() {
         manualDismissTimer.current = null;
       }
       setIsToastFading(false);
-      const fadeTimer = setTimeout(() => setIsToastFading(true), 4700);
-      const hideTimer = setTimeout(() => dismissToast(), 5000);
+      const fadeTimer = setTimeout(() => setIsToastFading(true), TOAST_FADE_DELAY);
+      const hideTimer = setTimeout(() => dismissToast(), TOAST_DISMISS_DELAY);
       return () => {
         clearTimeout(fadeTimer);
         clearTimeout(hideTimer);
@@ -67,7 +78,7 @@ function SearchPageContent() {
   // Manual toast dismiss
   const handleDismissToast = useCallback(() => {
     setIsToastFading(true);
-    manualDismissTimer.current = setTimeout(() => dismissToast(), 300);
+    manualDismissTimer.current = setTimeout(() => dismissToast(), TOAST_MANUAL_DISMISS_DELAY);
   }, [dismissToast]);
 
   // mode=location 파라미터가 있으면 현재 위치로 검색

@@ -15,7 +15,7 @@ const TYPE_STYLES: Record<InstitutionType, { label: string; className: string }>
 const MEAL_TYPE_LABELS: Record<MealType, string> = {
   direct: '직영급식',
   outsourced: '위탁급식',
-  none: '급식 미제공',
+  none: '급식 없음',
 };
 
 interface CompareGridProps {
@@ -108,7 +108,7 @@ export function CompareGrid({ items }: CompareGridProps) {
                   <div className="font-bold text-emerald-600 text-xs sm:text-sm whitespace-nowrap">
                     {item.capacity} / {item.currentCount}명
                   </div>
-                  <div className="text-[10px] text-gray-400 mt-1">충원율 {fillRate}%</div>
+                  <div className="text-[10px] text-gray-400 mt-1">정원 대비 {fillRate}%</div>
                 </div>
               );
             })}
@@ -204,7 +204,7 @@ export function CompareGrid({ items }: CompareGridProps) {
 
         <div className="mt-8 px-4 text-center">
           <p className="text-xs text-gray-400">
-            * 위 정보는 정보공시 데이터를 바탕으로 제공되며, 실제 현황과 다를 수 있습니다.
+            * 위 정보는 유치원 알리미 공개 데이터 기준이며, 실제 현황과 다를 수 있습니다.
           </p>
         </div>
       </div>

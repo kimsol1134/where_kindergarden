@@ -56,6 +56,13 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
 
   const kindergartenStore = useKindergartenStore();
 
+  // 유치원 데이터 미로드 시 자동 로드 트리거
+  useEffect(() => {
+    if (!kindergartenStore.isLoaded && !kindergartenStore.isLoading) {
+      kindergartenStore.loadData();
+    }
+  }, [kindergartenStore]);
+
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
@@ -156,6 +163,14 @@ export function useAddressSearch(options: AddressSearchOptions = {}) {
     },
     [minQueryLength, searchKindergartens]
   );
+
+  // 데이터 로드 완료 시 현재 쿼리가 있으면 재검색
+  useEffect(() => {
+    if (kindergartenStore.isLoaded && state.query.length >= minQueryLength) {
+      searchAddress(state.query);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [kindergartenStore.isLoaded]);
 
   // 디바운스된 쿼리 변경 핸들러
   const setQuery = useCallback(
