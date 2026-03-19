@@ -1,8 +1,12 @@
 import Services
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public struct MoreView: View {
     @ObservedObject private var model: NativeAppModel
+    @AppStorage("native.debugMode") private var isDebugModeActive = false
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -22,61 +26,34 @@ public struct MoreView: View {
         return "버전 \(version) (\(build))"
     }
 
-    private var kakaoMapStatusText: String {
-        configuration.hasKakaoMapKey ? "설정됨" : "키 없음"
-    }
-
-    private var kakaoLocalStatusText: String {
-        configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음"
-    }
-
-    private var customSchemeText: String {
-        "wherekindergarten://compare?ids=..."
-    }
-
-    private var universalLinkText: String {
-        configuration.universalLinkHost.map { "https://\($0)/compare?ids=..." } ?? "구성 없음"
-    }
-
     private var reviewVersionText: String {
         model.reviewsData?.version ?? "로딩 전"
     }
 
-    private var currentDeviceLocationText: String {
-        if let currentDeviceLocation = model.currentDeviceLocation {
-            return String(format: "%.4f, %.4f", currentDeviceLocation.lat, currentDeviceLocation.lng)
+    private var locationPermissionStatus: String {
+        if model.currentDeviceLocation != nil {
+            return "허용됨"
+        } else if model.locationError != nil {
+            return "거부됨"
+        } else {
+            return "미요청"
         }
-
-        return "아직 요청되지 않음"
     }
 
     public var body: some View {
         NavigationStack {
             List {
-                Section {
-                    LabeledContent("검색 기준 위치", value: model.locationLabel)
-                    LabeledContent("실제 기기 위치", value: currentDeviceLocationText)
-                    LabeledContent("찜한 기관", value: "\(model.favorites.count)곳")
-                    LabeledContent("최근 검색", value: "\(model.recentSearches.count)건")
-                    LabeledContent("비교 목록", value: "\(model.compareSelection.ids.count)곳")
-                    LabeledContent("후기 데이터 버전", value: reviewVersionText)
-                } header: {
-                    Text("현재 앱 상태")
-                } footer: {
-                    Text("검색 기준 위치와 실제 기기 위치를 분리해서 유지하므로, 최근 검색 복원이나 주소 선택이 위치 권한 상태를 덮어쓰지 않습니다.")
-                }
-
-                Section {
-                    LabeledContent("Kakao 지도 키", value: kakaoMapStatusText)
-                    LabeledContent("Kakao Local 키", value: kakaoLocalStatusText)
-                    LabeledContent("커스텀 스킴", value: customSchemeText)
-                    LabeledContent("Universal Link", value: universalLinkText)
-                } header: {
-                    Text("검증 준비 상태")
-                } footer: {
-                    if !configuration.missingKakaoBuildSettings.isEmpty {
-                        Text(configuration.kakaoConfigurationHelpText)
+                Section("앱 상태") {
+                    LabeledContent("위치 권한", value: locationPermissionStatus)
+                    #if canImport(UIKit)
+                    if let _ = model.locationError {
+                        Link(destination: URL(string: UIApplication.openSettingsURLString)!) {
+                            Label("설정에서 위치 권한 변경", systemImage: "gear")
+                                .font(.subheadline)
+                        }
                     }
+                    #endif
+                    LabeledContent("데이터 갱신일", value: reviewVersionText)
                 }
 
                 Section("서비스") {
@@ -125,6 +102,27 @@ public struct MoreView: View {
 
                     LabeledContent("앱 버전", value: appVersionText)
                         .font(.footnote)
+                        .onTapGesture(count: 5) {
+                            isDebugModeActive.toggle()
+                        }
+                }
+
+                if isDebugModeActive {
+                    Section("디버그") {
+                        LabeledContent("검색 기준 위치", value: model.locationLabel)
+                        LabeledContent("실제 기기 위치", value: {
+                            if let loc = model.currentDeviceLocation {
+                                return String(format: "%.4f, %.4f", loc.lat, loc.lng)
+                            }
+                            return "아직 요청되지 않음"
+                        }())
+                        LabeledContent("Kakao 지도 키", value: configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
+                        LabeledContent("Kakao Local 키", value: configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
+                        LabeledContent("딥링크", value: "wherekindergarten://compare?ids=...")
+                        LabeledContent("찜한 기관", value: "\(model.favorites.count)곳")
+                        LabeledContent("최근 검색", value: "\(model.recentSearches.count)건")
+                        LabeledContent("비교 목록", value: "\(model.compareSelection.ids.count)곳")
+                    }
                 }
             }
             .navigationTitle("더보기")

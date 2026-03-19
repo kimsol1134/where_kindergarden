@@ -412,6 +412,251 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertEqual(model.recentSearches.map(\.label), ["강남역", "서울시청", "서울 강남구 역삼동"])
     }
+
+    // MARK: - PR 1: RecentSearch backward compatibility
+
+    func testDecodesLegacyRecentSearchWithoutNewFields() throws {
+        let json = """
+        {
+          "id": "00000000-0000-0000-0000-000000000001",
+          "label": "서울시청",
+          "coordinates": { "lat": 37.5665, "lng": 126.978 }
+        }
+        """
+
+        let search = try JSONDecoder().decode(RecentSearch.self, from: Data(json.utf8))
+
+        XCTAssertEqual(search.label, "서울시청")
+        XCTAssertNil(search.displayName)
+        XCTAssertNil(search.searchType)
+        XCTAssertNil(search.createdAt)
+        XCTAssertEqual(search.resolvedDisplayName, "서울시청")
+    }
+
+    func testRecentSearchRoundTripWithNewFields() throws {
+        let search = RecentSearch(
+            label: "현재 위치",
+            coordinates: Coordinates(lat: 37.5, lng: 127.0),
+            displayName: "현재 위치",
+            searchType: .currentLocation,
+            createdAt: Date(timeIntervalSince1970: 1700000000)
+        )
+
+        let data = try JSONEncoder().encode(search)
+        let decoded = try JSONDecoder().decode(RecentSearch.self, from: data)
+
+        XCTAssertEqual(decoded.label, "현재 위치")
+        XCTAssertEqual(decoded.displayName, "현재 위치")
+        XCTAssertEqual(decoded.searchType, .currentLocation)
+        XCTAssertEqual(decoded.createdAt, Date(timeIntervalSince1970: 1700000000))
+    }
+
+    @MainActor
+    func testCenterOnCurrentLocationSetsSearchType() async {
+        let model = makeNativeAppModel()
+        await model.centerOnCurrentLocation()
+
+        XCTAssertEqual(model.recentSearches.first?.searchType, .currentLocation)
+    }
+
+    @MainActor
+    func testSelectSearchSuggestionMapsSearchType() {
+        let model = makeNativeAppModel()
+
+        let suggestion = SearchSuggestion(
+            id: "test",
+            kind: .address,
+            title: "강남구 역삼동",
+            subtitle: nil,
+            coordinates: Coordinates(lat: 37.5, lng: 127.0)
+        )
+        model.selectSearchSuggestion(suggestion)
+
+        XCTAssertEqual(model.recentSearches.first?.searchType, .address)
+    }
+
+    // MARK: - PR 2: Analytics
+
+    @MainActor
+    func testAnalyticsTracksSearchAndCompareEvents() {
+        let mockAnalytics = MockAnalytics()
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            analytics: mockAnalytics,
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:]),
+            searchDebounceDuration: .zero
+        )
+
+        model.setLocation(Coordinates(lat: 37.4981, lng: 127.0276), label: "test")
+        model.updateRadius(to: 5)
+
+        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
+        model.select(kindergarten: a001)
+        model.toggleCompare(for: a001)
+        model.toggleFavorite(for: a001)
+
+        XCTAssertTrue(mockAnalytics.events.contains(where: { $0.event == .resultTapped }))
+        XCTAssertTrue(mockAnalytics.events.contains(where: { $0.event == .compareToggled }))
+        XCTAssertTrue(mockAnalytics.events.contains(where: { $0.event == .favoriteToggled }))
+        XCTAssertTrue(mockAnalytics.events.contains(where: { $0.event == .searchExecuted }))
+    }
+
+    // MARK: - PR 3: Filter helpers
+
+    @MainActor
+    func testResetFiltersRestoresDefaults() {
+        let model = makeNativeAppModel()
+        model.filters.hasBus = true
+        model.filters.hasAfterSchool = true
+        model.filters.type = .public
+
+        model.resetFilters()
+
+        XCTAssertNil(model.filters.hasBus)
+        XCTAssertNil(model.filters.hasAfterSchool)
+        XCTAssertEqual(model.filters.type, .all)
+        XCTAssertEqual(model.filters.radiusKM, 1)
+    }
+
+    @MainActor
+    func testHasActiveAdvancedFiltersDetectsEachFilter() {
+        let model = makeNativeAppModel()
+        XCTAssertFalse(model.hasActiveAdvancedFilters)
+
+        model.filters.hasAfterSchool = true
+        XCTAssertTrue(model.hasActiveAdvancedFilters)
+
+        model.filters.hasAfterSchool = nil
+        model.filters.type = .public
+        XCTAssertTrue(model.hasActiveAdvancedFilters)
+    }
+
+    // MARK: - PR 4: Compare helpers
+
+    @MainActor
+    func testRemoveCompareAtIndex() {
+        let model = makeNativeAppModel()
+        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
+        let a002 = model.results.first(where: { $0.kindercode == "A002" })!
+
+        model.toggleCompare(for: a001)
+        model.toggleCompare(for: a002)
+
+        model.removeCompare(at: 0)
+
+        XCTAssertEqual(model.compareSelection.ids, ["A002"])
+    }
+
+    @MainActor
+    func testComparedKindergartenNamesPreservesOrder() {
+        let model = makeNativeAppModel()
+        let a002 = model.results.first(where: { $0.kindercode == "A002" })!
+        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
+
+        model.toggleCompare(for: a002)
+        model.toggleCompare(for: a001)
+
+        XCTAssertEqual(model.comparedKindergartenNames(), ["해맑은유치원", "역삼유치원"])
+    }
+
+    // MARK: - PR 6: Advanced filter count
+
+    @MainActor
+    func testActiveAdvancedFilterCountAndDescriptions() {
+        let model = makeNativeAppModel()
+        XCTAssertEqual(model.activeAdvancedFilterCount, 0)
+        XCTAssertTrue(model.activeAdvancedFilterDescriptions.isEmpty)
+
+        model.filters.hasAfterSchool = true
+        model.filters.hasVacancy = true
+        model.filters.type = .public
+
+        XCTAssertEqual(model.activeAdvancedFilterCount, 3)
+        XCTAssertEqual(model.activeAdvancedFilterDescriptions.count, 3)
+
+        model.activeAdvancedFilterDescriptions.first(where: { $0.label == "방과후" })?.reset()
+        XCTAssertNil(model.filters.hasAfterSchool)
+        XCTAssertEqual(model.activeAdvancedFilterCount, 2)
+    }
+
+    // MARK: - PR 8: FTUE
+
+    @MainActor
+    func testFirstLaunchInitialState() {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            searchDebounceDuration: .zero
+        )
+
+        XCTAssertTrue(model.isFirstLaunch)
+
+        model.completeFirstLaunch()
+        XCTAssertFalse(model.isFirstLaunch)
+
+        let model2 = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            searchDebounceDuration: .zero
+        )
+
+        XCTAssertFalse(model2.isFirstLaunch)
+    }
+
+    @MainActor
+    func testLocationDeniedSetsShouldFocusSearchField() async {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: FailingLocationProvider(),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            searchDebounceDuration: .zero
+        )
+
+        await model.centerOnCurrentLocation()
+
+        XCTAssertTrue(model.shouldFocusSearchField)
+        XCTAssertNotNil(model.locationError)
+    }
+}
+
+private final class FailingLocationProvider: CurrentLocationProviding {
+    func requestCurrentLocation() async throws -> Coordinates {
+        throw LocationServiceError.authorizationDenied
+    }
 }
 
 @MainActor

@@ -32,12 +32,29 @@ public enum InstitutionFilter: String, Codable, CaseIterable, Hashable, Sendable
     case `public`
     case `private`
     case home
+
+    public var label: String {
+        switch self {
+        case .all: return "전체"
+        case .public: return "국공립"
+        case .private: return "사립"
+        case .home: return "가정"
+        }
+    }
 }
 
 public enum SortOption: String, Codable, CaseIterable, Hashable, Sendable {
     case distance
     case capacity
     case areaPerChild
+
+    public var label: String {
+        switch self {
+        case .distance: return "거리순"
+        case .capacity: return "정원순"
+        case .areaPerChild: return "면적순"
+        }
+    }
 }
 
 public enum MealType: String, Codable, Hashable, Sendable {
@@ -487,6 +504,11 @@ public struct CompareSelection: Codable, Hashable, Sendable {
     public func contains(_ id: String) -> Bool {
         ids.contains(id)
     }
+
+    public mutating func remove(at index: Int) {
+        guard ids.indices.contains(index) else { return }
+        ids.remove(at: index)
+    }
 }
 
 public struct FavoriteItem: Codable, Hashable, Sendable, Identifiable {
@@ -518,15 +540,39 @@ public struct IndexedStoredItem<Value: Hashable & Sendable>: Hashable, Sendable 
 public typealias IndexedFavoriteItem = IndexedStoredItem<FavoriteItem>
 public typealias IndexedRecentSearch = IndexedStoredItem<RecentSearch>
 
+public enum SearchType: String, Codable, Hashable, Sendable {
+    case currentLocation
+    case address
+    case place
+    case kindergarten
+}
+
 public struct RecentSearch: Codable, Hashable, Sendable, Identifiable {
     public let id: UUID
     public let label: String
     public let coordinates: Coordinates?
+    public let displayName: String?
+    public let searchType: SearchType?
+    public let createdAt: Date?
 
-    public init(id: UUID = UUID(), label: String, coordinates: Coordinates? = nil) {
+    public var resolvedDisplayName: String {
+        displayName ?? label
+    }
+
+    public init(
+        id: UUID = UUID(),
+        label: String,
+        coordinates: Coordinates? = nil,
+        displayName: String? = nil,
+        searchType: SearchType? = nil,
+        createdAt: Date? = Date()
+    ) {
         self.id = id
         self.label = label
         self.coordinates = coordinates
+        self.displayName = displayName
+        self.searchType = searchType
+        self.createdAt = createdAt
     }
 }
 

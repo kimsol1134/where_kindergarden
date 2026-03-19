@@ -25,7 +25,15 @@ public struct CompareView: View {
                         .font(.largeTitle.bold())
 
                     if items.isEmpty {
-                        EmptyCompareState()
+                        EmptyStateView(
+                            icon: "square.split.2x2",
+                            title: "아직 비교할 유치원을 선택하지 않았습니다.",
+                            message: "탐색 화면에서 비교 목록에 추가하면 여기서 바로 비교할 수 있습니다.",
+                            ctaLabel: "탐색으로 이동"
+                        ) {
+                            model.selectedTab = .search
+                        }
+                        .accessibilityIdentifier("compare.emptyState")
                     } else {
                         Text(summaryLine)
                             .font(.subheadline)
@@ -123,27 +131,6 @@ public struct CompareView: View {
         ])
         .filter { !$0.isEmpty }
         .joined(separator: "\n\n")
-    }
-}
-
-private struct EmptyCompareState: View {
-    var body: some View {
-        VStack(spacing: 14) {
-            Image(systemName: "square.split.2x2")
-                .font(.system(size: 36))
-                .foregroundStyle(leafGreen)
-            Text("아직 비교할 유치원을 선택하지 않았습니다.")
-                .font(.headline.weight(.semibold))
-            Text("탐색 화면이나 상세 시트에서 비교 목록에 추가하면 여기서 바로 비교할 수 있습니다.")
-                .font(.subheadline)
-                .multilineTextAlignment(.center)
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 48)
-        .padding(.horizontal, 20)
-        .background(.white, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
-        .accessibilityIdentifier("compare.emptyState")
     }
 }
 
