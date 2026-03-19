@@ -36,12 +36,17 @@ targets:
       Release: Config/WhereKindergartenNative.xcconfig
     sources:
       - path: Sources
+      - path: Resources
+        buildPhase: resources
       - path: ../App/App/Assets.xcassets
         buildPhase: resources
       - path: ../../public/data/kindergartens.json
         group: Resources/Data
         buildPhase: resources
       - path: ../../public/data/reviews.json
+        group: Resources/Data
+        buildPhase: resources
+      - path: ../../public/data/vacancy.json
         group: Resources/Data
         buildPhase: resources
     dependencies:

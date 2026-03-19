@@ -119,7 +119,7 @@ public struct MoreView: View {
                         LabeledContent("Kakao 지도 키", value: configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
                         LabeledContent("Kakao Local 키", value: configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
                         LabeledContent("딥링크", value: "wherekindergarten://compare?ids=...")
-                        LabeledContent("찜한 기관", value: "\(model.favorites.count)곳")
+                        LabeledContent("찜한 유치원", value: "\(model.favorites.count)곳")
                         LabeledContent("최근 검색", value: "\(model.recentSearches.count)건")
                         LabeledContent("비교 목록", value: "\(model.compareSelection.ids.count)곳")
                     }

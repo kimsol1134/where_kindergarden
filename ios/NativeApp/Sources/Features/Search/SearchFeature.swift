@@ -43,8 +43,31 @@ public struct SearchHomeView: View {
     }
 
     private var resultSummaryText: String {
-        [
-            "\(model.results.count)개 기관",
+        if model.isCatalogLoading && model.results.isEmpty {
+            return "유치원 알리미 공개 데이터를 불러오는 중이에요"
+        }
+
+        if model.catalogError != nil {
+            return "유치원 데이터를 다시 확인해 주세요"
+        }
+
+        if model.results.isEmpty {
+            if trimmedSearchQuery.isEmpty,
+               model.currentDeviceLocation == nil,
+               model.recentSearches.isEmpty,
+               model.locationError == nil {
+                return "현재 위치나 주소를 확인하면 주변 유치원이 보여요"
+            }
+
+            return [
+                "주변 유치원",
+                "반경 \(Int(model.filters.radiusKM))km",
+                model.filters.sort.label,
+            ].joined(separator: " · ")
+        }
+
+        return [
+            "\(model.results.count)곳 유치원",
             "반경 \(Int(model.filters.radiusKM))km",
             model.filters.sort.label,
         ].joined(separator: " · ")
@@ -59,7 +82,7 @@ public struct SearchHomeView: View {
             return nil
         }
 
-        return "원격 주소/장소 제안은 현재 비활성화되어 유치원명과 최근 검색 중심으로 탐색 중입니다."
+        return "주소와 장소 검색은 잠시 쉬고 있어요. 유치원 이름 검색은 계속 사용할 수 있어요."
     }
 
     public var body: some View {
@@ -98,6 +121,8 @@ public struct SearchHomeView: View {
                     Spacer()
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .background(mistWhite.ignoresSafeArea())
             .animation(.easeInOut(duration: 0.18), value: isSearchPanelPresented)
             .task {
                 if model.isFirstLaunch {
@@ -133,6 +158,10 @@ public struct SearchHomeView: View {
                     kindergarten: kindergarten,
                     reviews: model.reviews(for: kindergarten.kindercode),
                     reviewsVersion: model.reviewsData?.version,
+                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
+                    vacancyDatasetVersion: model.vacancyData?.version,
+                    isVacancyLoading: model.isVacancyLoading,
+                    vacancyError: model.vacancyError,
                     isCompared: model.isCompared(kindergarten),
                     isFavorite: model.isFavorite(kindergarten),
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
@@ -142,6 +171,7 @@ public struct SearchHomeView: View {
                 .presentationDragIndicator(.visible)
             }
         }
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
@@ -196,9 +226,10 @@ private struct SearchChrome: View {
                         await model.centerOnCurrentLocation()
                     }
                 } label: {
-                    Label("현위치", systemImage: "location.fill")
+                    Label("내 위치", systemImage: "location.fill")
                         .font(.footnote.weight(.semibold))
                 }
+                .accessibilityIdentifier("search.currentLocationButton")
                 .padding(.horizontal, 12)
                 .padding(.vertical, 8)
                         .background(.white.opacity(0.84), in: Capsule())
@@ -209,7 +240,7 @@ private struct SearchChrome: View {
                     Image(systemName: "magnifyingglass")
                         .foregroundStyle(leafGreen)
                     TextField(
-                        "주소, 장소명, 유치원명으로 검색",
+                        "유치원, 주소 검색",
                         text: Binding(
                             get: { model.searchText },
                             set: { model.updateSearchText($0) }
@@ -335,7 +366,7 @@ private struct SearchChrome: View {
                     HStack(spacing: 8) {
                         ProgressView()
                             .controlSize(.small)
-                        Text("공용 JSON 데이터를 불러오는 중")
+                        Text("유치원 알리미 공개 데이터를 불러오는 중")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
@@ -381,7 +412,7 @@ private struct SearchSuggestionPanel: View {
         VStack(alignment: .leading, spacing: 14) {
             if searchText.isEmpty {
                 if recentSuggestions.isEmpty {
-                    Text("주소나 장소를 검색하면 최근 검색이 여기에 저장됩니다.")
+                    Text("유치원이나 주소를 검색하면 최근 검색이 여기에 저장돼요.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 } else {
@@ -411,7 +442,7 @@ private struct SearchSuggestionPanel: View {
             } else {
                 if !localSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "유치원 바로가기",
+                        title: "유치원",
                         suggestions: localSuggestions,
                         onSelect: onSelect
                     )
@@ -419,7 +450,7 @@ private struct SearchSuggestionPanel: View {
 
                 if !remoteSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "주소 / 장소",
+                        title: "주소 · 장소",
                         suggestions: remoteSuggestions,
                         onSelect: onSelect
                     )
@@ -429,7 +460,7 @@ private struct SearchSuggestionPanel: View {
                     HStack(spacing: 8) {
                         ProgressView()
                             .controlSize(.small)
-                        Text("Kakao Local 제안을 불러오는 중")
+                        Text("주소와 장소를 찾는 중이에요")
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -446,7 +477,7 @@ private struct SearchSuggestionPanel: View {
                 }
 
                 if shouldShowEmptyState {
-                    Text("일치하는 제안을 찾지 못했습니다. 다른 주소나 장소명을 입력해 보세요.")
+                    Text("일치하는 유치원이나 장소를 찾지 못했어요. 다른 이름이나 주소로 다시 검색해보세요.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
@@ -502,7 +533,7 @@ private struct SearchSuggestionRow: View {
         case .recent:
             return "최근"
         case .kindergarten:
-            return "기관"
+            return "유치원"
         case .address:
             return "주소"
         case .place:
@@ -579,14 +610,17 @@ private struct ResultSheet: View {
             if model.locationError != nil {
                 EmptyStateView(
                     icon: "location.slash",
-                    title: "위치 권한이 필요합니다",
-                    message: "주소를 입력하면 주변 유치원을 찾을 수 있어요"
-                )
+                    title: "위치 권한이 필요해요",
+                    message: "현재 위치를 허용하면 주변 유치원을 바로 찾을 수 있어요. 주소 검색도 가능해요.",
+                    ctaLabel: "현재 위치 다시 확인"
+                ) {
+                    Task { await model.centerOnCurrentLocation() }
+                }
             } else if model.currentDeviceLocation != nil || !model.recentSearches.isEmpty {
                 EmptyStateView(
                     icon: "map",
-                    title: "반경 \(Int(model.filters.radiusKM))km 내 유치원이 없습니다",
-                    message: "반경을 넓히면 더 많은 유치원을 찾을 수 있습니다.",
+                    title: "주변 \(Int(model.filters.radiusKM))km 안에 유치원이 없어요",
+                    message: "반경을 넓히거나 다른 동네를 찾아보세요.",
                     ctaLabel: "반경 넓히기"
                 ) {
                     model.updateRadius(to: model.nextRadius)
@@ -594,9 +628,9 @@ private struct ResultSheet: View {
             } else {
                 EmptyStateView(
                     icon: "magnifyingglass",
-                    title: "주변 유치원을 찾아보세요",
-                    message: "현재 위치 또는 주소를 검색하면 주변 유치원 목록이 나타납니다.",
-                    ctaLabel: "현재 위치로 검색"
+                    title: "주변 유치원을 찾아볼까요?",
+                    message: "현재 위치를 확인하거나 주소를 검색하면 주변 유치원을 보여드려요.",
+                    ctaLabel: "현재 위치로 찾기"
                 ) {
                     Task { await model.centerOnCurrentLocation() }
                 }
@@ -604,8 +638,8 @@ private struct ResultSheet: View {
         } else if results.isEmpty && !trimmedSearchQuery.isEmpty {
             EmptyStateView(
                 icon: "magnifyingglass",
-                title: "'\(trimmedSearchQuery)' 검색 결과 없음",
-                message: "반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요."
+                title: "'\(trimmedSearchQuery)'와 일치하는 유치원이 없어요",
+                message: "다른 유치원 이름이나 주소로 다시 검색해보세요."
             )
         } else if results.isEmpty && model.hasActiveAdvancedFilters {
             EmptyStateView(
@@ -628,7 +662,7 @@ private struct ResultSheet: View {
 
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("탐색 결과")
+                    Text("주변 유치원")
                         .font(.headline.weight(.bold))
                     Text(summaryText)
                         .font(.footnote)
@@ -642,10 +676,10 @@ private struct ResultSheet: View {
                 InlineNotice(message: degradedMessage)
             }
 
-            ScrollView {
-                if results.isEmpty {
-                    emptyContent
-                } else {
+            if results.isEmpty {
+                emptyContent
+            } else {
+                ScrollView {
                     LazyVStack(spacing: 12) {
                         ForEach(results) { kindergarten in
                             SearchResultCard(
@@ -653,6 +687,7 @@ private struct ResultSheet: View {
                                 isCompared: comparedIDs.contains(kindergarten.kindercode),
                                 isFavorite: favoriteIDs.contains(kindergarten.kindercode),
                                 reviewCount: model.reviews(for: kindergarten.kindercode).count,
+                                vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
                                 onTap: { model.select(kindergarten: kindergarten) },
                                 onToggleCompare: { model.toggleCompare(for: kindergarten) },
                                 onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
@@ -666,12 +701,12 @@ private struct ResultSheet: View {
                     }
                     .padding(.bottom, 8)
                 }
+                #if canImport(UIKit)
+                .frame(maxHeight: UIScreen.main.bounds.height * 0.58)
+                #else
+                .frame(maxHeight: 520)
+                #endif
             }
-            #if canImport(UIKit)
-            .frame(maxHeight: UIScreen.main.bounds.height * 0.55)
-            #else
-            .frame(maxHeight: 500)
-            #endif
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)
@@ -692,6 +727,7 @@ private struct SearchResultCard: View {
     let isCompared: Bool
     let isFavorite: Bool
     let reviewCount: Int
+    let vacancyCount: Int
     let onTap: () -> Void
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
@@ -720,6 +756,7 @@ private struct SearchResultCard: View {
                     }
 
                     HStack(spacing: 12) {
+                        Label("현재 원아수 \(kindergarten.currentCount)명", systemImage: "person.2.fill")
                         if kindergarten.hasBus {
                             Label("셔틀 \(kindergarten.busCount)대", systemImage: "bus.fill")
                         }
@@ -732,6 +769,28 @@ private struct SearchResultCard: View {
                     }
                     .font(.caption)
                     .foregroundStyle(.secondary)
+
+                    if vacancyCount > 0 || reviewCount > 0 {
+                        HStack(spacing: 8) {
+                            if vacancyCount > 0 {
+                                Text("공식 빈 자리 \(vacancyCount)명")
+                                    .font(.caption2.weight(.semibold))
+                                    .foregroundStyle(.red)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 6)
+                                    .background(Color.red.opacity(0.08), in: Capsule())
+                            }
+
+                            if reviewCount > 0 {
+                                Text("후기 \(reviewCount)건")
+                                    .font(.caption2.weight(.semibold))
+                                    .foregroundStyle(.orange)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 6)
+                                    .background(Color.orange.opacity(0.08), in: Capsule())
+                            }
+                        }
+                    }
                 }
 
                 VStack(spacing: 12) {
@@ -769,6 +828,10 @@ private struct KindergartenDetailSheet: View {
     let kindergarten: Kindergarten
     let reviews: [ReviewLink]
     let reviewsVersion: String?
+    let vacancySummary: VacancySummary?
+    let vacancyDatasetVersion: String?
+    let isVacancyLoading: Bool
+    let vacancyError: String?
     let isCompared: Bool
     let isFavorite: Bool
     let onToggleCompare: () -> Void
@@ -829,7 +892,7 @@ private struct KindergartenDetailSheet: View {
         case .outsourced:
             return "위탁"
         case .none:
-            return "정보 없음"
+            return "급식 없음"
         }
     }
 
@@ -875,13 +938,36 @@ private struct KindergartenDetailSheet: View {
             tags.append(("넓은 공간", "arrow.up.left.and.arrow.down.right"))
         }
         if kindergarten.currentCount < Int(Double(kindergarten.capacity) * 0.9) {
-            tags.append(("여유 정원", "person.badge.plus"))
+            tags.append(("정원 여유", "person.badge.plus"))
         }
         return tags
     }
 
     private var hasContactInfo: Bool {
         mapURL != nil || homepageURL != nil || phoneURL != nil
+    }
+
+    private var fillRate: Int {
+        guard kindergarten.capacity > 0 else { return 0 }
+        return Int((Double(kindergarten.currentCount) / Double(kindergarten.capacity) * 100).rounded())
+    }
+
+    private var formattedVacancyUpdatedAt: String? {
+        formatVacancyUpdatedAt(vacancySummary?.updatedAt)
+    }
+
+    private var sourceCaption: String {
+        var parts = ["출처: 유치원 알리미 공개 데이터"]
+
+        if let vacancyDatasetVersion, !vacancyDatasetVersion.isEmpty {
+            parts.append("빈 자리 갱신 \(formatVacancyUpdatedAt(vacancyDatasetVersion) ?? vacancyDatasetVersion)")
+        }
+
+        if let reviewsVersion, !reviewsVersion.isEmpty {
+            parts.append("후기 갱신 \(formatVacancyUpdatedAt(reviewsVersion) ?? reviewsVersion)")
+        }
+
+        return parts.joined(separator: " · ")
     }
 
     var body: some View {
@@ -905,11 +991,11 @@ private struct KindergartenDetailSheet: View {
                     }
                 }
 
-                HStack(spacing: 12) {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                     MetricPill(label: "거리", value: String(format: "%.1fkm", kindergarten.distance))
                     MetricPill(label: "1인당 면적", value: String(format: "%.1fm2", kindergarten.areaPerChild))
-                    MetricPill(label: "현원 / 정원", value: "\(kindergarten.currentCount) / \(kindergarten.capacity)명")
-                    MetricPill(label: "후기", value: "\(reviews.count)건")
+                    MetricPill(label: "현재 원아수", value: "\(kindergarten.currentCount)명 / 정원 \(kindergarten.capacity)명")
+                    MetricPill(label: "모집 현황", value: "정원 대비 \(fillRate)%")
                 }
 
                 HStack(spacing: 10) {
@@ -935,11 +1021,18 @@ private struct KindergartenDetailSheet: View {
                     .tint(leafGreen)
                 }
 
+                VacancyStatusCard(
+                    summary: vacancySummary,
+                    formattedUpdatedAt: formattedVacancyUpdatedAt,
+                    isLoading: isVacancyLoading,
+                    errorMessage: vacancyError
+                )
+
                 DisclosureGroup("운영 정보", isExpanded: $operationExpanded) {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
-                        DetailFactCard(title: "유형", value: kindergarten.type.label)
+                        DetailFactCard(title: "유치원 종류", value: kindergarten.type.label)
                         DetailFactCard(title: "운영시간", value: kindergarten.operationHours ?? "정보 없음")
-                        DetailFactCard(title: "방과후", value: kindergarten.hasAfterSchool ? "운영" : "미운영")
+                        DetailFactCard(title: "방과후 과정", value: kindergarten.hasAfterSchool ? "운영" : "미운영")
                         DetailFactCard(title: "셔틀", value: kindergarten.hasBus ? "\(kindergarten.busCount)대" : "없음")
                         DetailFactCard(title: "교사", value: "\(kindergarten.teacherCount)명 (경력 \(kindergarten.seniorTeacherCount)명)")
                         DetailFactCard(title: "급식", value: mealTypeLabel)
@@ -953,9 +1046,9 @@ private struct KindergartenDetailSheet: View {
                         DetailFactCard(title: "놀이공간", value: playgroundSummary)
                         DetailFactCard(title: "건물", value: buildingSummary)
                         DetailFactCard(title: "설립일", value: formattedEstablishDate ?? kindergarten.establishDate)
-                        DetailFactCard(title: "교실 면적", value: "\(Int(kindergarten.classroomArea))m2")
+                        DetailFactCard(title: "교실 면적", value: "\(Int(kindergarten.classroomArea))㎡")
                         DetailFactCard(title: "CCTV", value: "\(kindergarten.cctvCount)대")
-                        DetailFactCard(title: "실내 놀이", value: kindergarten.indoorPlaygroundArea > 0 ? "\(Int(kindergarten.indoorPlaygroundArea))m2" : "없음")
+                        DetailFactCard(title: "실내 놀이", value: kindergarten.indoorPlaygroundArea > 0 ? "\(Int(kindergarten.indoorPlaygroundArea))㎡" : "없음")
                     }
                     .padding(.top, 10)
                 }
@@ -1031,7 +1124,7 @@ private struct KindergartenDetailSheet: View {
                     .font(.headline.weight(.semibold))
                 }
 
-                Text("출처: 교육부 유치원 알리미 · 데이터 갱신: \(reviewsVersion ?? "미확인")")
+                Text(sourceCaption)
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -1040,6 +1133,107 @@ private struct KindergartenDetailSheet: View {
             .padding(24)
         }
         .background(mistWhite)
+    }
+}
+
+private struct VacancyStatusCard: View {
+    let summary: VacancySummary?
+    let formattedUpdatedAt: String?
+    let isLoading: Bool
+    let errorMessage: String?
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label("빈 자리 정보", systemImage: "person.badge.plus")
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(.primary)
+
+            if isLoading && summary == nil {
+                infoCard(
+                    title: "빈 자리 확인 중...",
+                    message: "유치원입학 시스템 기준으로 최신 정보를 불러오고 있어요.",
+                    tint: .secondary
+                )
+            } else if let errorMessage {
+                infoCard(
+                    title: "빈 자리 정보를 불러오지 못했어요",
+                    message: errorMessage,
+                    tint: .red
+                )
+            } else if let summary, summary.vacancyCount > 0 {
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("지금 확인된 빈 자리는 총 \(summary.vacancyCount)명이에요")
+                                .font(.subheadline.weight(.bold))
+                                .foregroundStyle(.primary)
+                            Text("유치원입학 시스템 기준")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
+                        Spacer()
+                        if let formattedUpdatedAt {
+                            Text(formattedUpdatedAt)
+                                .font(.caption.weight(.semibold))
+                                .foregroundStyle(.red)
+                        }
+                    }
+
+                    if !summary.detail.isEmpty {
+                        VStack(spacing: 8) {
+                            ForEach(summary.detail) { detail in
+                                HStack {
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        Text(detail.age)
+                                            .font(.subheadline.weight(.semibold))
+                                        Text(detail.course)
+                                            .font(.caption)
+                                            .foregroundStyle(.secondary)
+                                    }
+                                    Spacer()
+                                    Text("\(detail.vacancyCount)명")
+                                        .font(.subheadline.weight(.bold))
+                                        .foregroundStyle(.red)
+                                }
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 10)
+                                .background(.white.opacity(0.92), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                            }
+                        }
+                    }
+                }
+                .padding(16)
+                .background(Color.red.opacity(0.06), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            } else if summary != nil {
+                infoCard(
+                    title: "현재 빈 자리가 없어요",
+                    message: formattedUpdatedAt.map { "최근 확인: \($0)" } ?? "이 유치원에는 현재 확인된 빈 자리가 없어요.",
+                    tint: leafGreen
+                )
+            } else {
+                infoCard(
+                    title: "빈 자리 정보를 제공하지 않는 유치원이에요",
+                    message: "직접 전화로 확인해보세요.",
+                    tint: .secondary
+                )
+            }
+        }
+        .padding(18)
+        .background(.white, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+    }
+
+    private func infoCard(title: String, message: String, tint: Color) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(title)
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(tint)
+            Text(message)
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background(tint.opacity(0.08), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 }
 
@@ -1141,7 +1335,7 @@ private struct AdvancedFilterSheet: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("기관 유형") {
+                Section("유치원 종류") {
                     Picker("유형", selection: $model.filters.type) {
                         ForEach(InstitutionFilter.allCases, id: \.self) { filter in
                             Text(filter.label).tag(filter)
@@ -1173,7 +1367,7 @@ private struct AdvancedFilterSheet: View {
                     ))
                 }
             }
-            .navigationTitle("고급 필터")
+            .navigationTitle("검색 필터")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
@@ -1250,6 +1444,40 @@ private struct InlineNotice: View {
         .padding(.vertical, 10)
         .background(.white.opacity(0.86), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
+}
+
+private let vacancyISO8601Formatter: ISO8601DateFormatter = {
+    let formatter = ISO8601DateFormatter()
+    formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+    return formatter
+}()
+
+private let vacancyFallbackISO8601Formatter: ISO8601DateFormatter = {
+    let formatter = ISO8601DateFormatter()
+    formatter.formatOptions = [.withInternetDateTime]
+    return formatter
+}()
+
+private let vacancyDateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "ko_KR")
+    formatter.dateFormat = "M월 d일 HH:mm"
+    return formatter
+}()
+
+private func formatVacancyUpdatedAt(_ rawValue: String?) -> String? {
+    guard let rawValue, !rawValue.isEmpty else {
+        return nil
+    }
+
+    let parsedDate = vacancyISO8601Formatter.date(from: rawValue)
+        ?? vacancyFallbackISO8601Formatter.date(from: rawValue)
+
+    guard let parsedDate else {
+        return rawValue
+    }
+
+    return vacancyDateFormatter.string(from: parsedDate)
 }
 
 public enum NativePreviewFixtures {

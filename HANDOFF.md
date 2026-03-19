@@ -4,6 +4,11 @@
 2026-03-19
 
 ## 완료된 작업
+- [x] 네이티브 검색 홈 safe area / sheet 레이아웃 정리로 상하단 검은 여백 제거
+- [x] 네이티브 검색/비교/보관함 카피를 웹앱 기준 부모님 친화 문구로 정리
+- [x] 네이티브 앱에 `vacancy.json` 번들/로더/상세 빈 자리 UI 연결
+- [x] `project.yml`에 `vacancy.json` 리소스 추가 후 `xcodegen generate` 재동기화
+- [x] iOS Simulator에서 위치 권한 prompt, 위치 기반 결과, deep link 이름 검색, 빈 자리 상세 패널 재검증
 - [x] PR #26 머지 후 QA에서 발견된 UX/UI 10건 수정 (z-index, 터치타겟, 스크롤 복원, a11y, 상수 통합, 토스트 상수화, active 피드백)
 - [x] 앱 아이콘 기준 브랜드 토큰 정의 및 웹 shell 리브랜딩 반영
 - [x] 후기 검증 증분 파이프라인 및 CI 자동화 추가
@@ -46,6 +51,9 @@
 - 빌드는 되지만 simulator install이 실패하던 `.app` bundle metadata 누락 문제 해결
 - 실제 `kindergartens.json` 일부 레코드의 면적 필드 누락 때문에 전체 카탈로그 디코딩이 깨지던 문제 해결
 - 검색 중 suggestion panel, filter chip, result sheet, placeholder가 한 화면에서 과도하게 겹치던 문제를 완화
+- search home이 content intrinsic size에 맞춰 축소되며 생기던 상하단 검은 영역 제거
+- Kakao 지도 실패 placeholder를 compact card로 축소하고 raw technical error 노출을 줄임
+- 상세 패널에 `현재 원아수`, `모집 현황`, `빈 자리 정보`를 포함한 부모님 친화 레이아웃 반영
 
 ### Kakao 런타임 키 상태
 - 이 환경에는 git-ignore된 `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`가 없었음
@@ -77,19 +85,24 @@
 - `wherekindergarten://search?q=역삼` deep link로 검색 텍스트를 주입했을 때 로컬 유치원 제안 2건이 실제로 표시되는 것 확인
 - same runtime state에서 `KAKAO_REST_API_KEY가 없어 주소와 장소 제안은 비활성화되었습니다...` degraded message 노출 확인
 - 검색 중에는 suggestion panel에 집중되도록 result sheet / compare bar / filter chip 노출이 줄어든 것 확인
+- `QA Test` (`20F6282B-9AB7-42C3-8C00-8065EB76C926`) simulator에서 위치 권한 prompt(`한 번 허용` / `앱을 사용하는 동안 허용` / `허용 안 함`) 실제 노출 확인
+- 위치 권한 허용 후 현재 위치(역삼 좌표) 기준 `4곳 유치원 · 반경 1km · 거리순` 결과 렌더링 확인
+- 홈 화면 placeholder/summary가 `유치원, 주소 검색`, `주변 유치원`, `N곳 유치원` 카피로 반영된 것 확인
+- `wherekindergarten://search?q=역삼` deep link로 이름 검색 시 상세 패널이 열리고 `빈 자리 정보`, `현재 원아수`, `모집 현황` 카드가 렌더링되는 것 확인
+- built app bundle에 `kindergartens.json`, `reviews.json`, `vacancy.json` 3종 리소스 포함 확인
 
 ## 이번 환경에서 막힌 것
-- 실제 Kakao 지도 인증 성공 여부
-- 실제 Kakao REST 주소/장소 제안 로딩
+- 실제 Kakao 지도 렌더 성공 여부 (현재 runtime은 `401 Unauthorized`로 compact fallback card 경로만 확인)
+- 실제 검색 입력 필드에 한글을 직접 붙여넣어 suggestion panel autocomplete를 조작하는 simulator automation은 불안정해서 deep link + unit test로 보완
 - non-empty `KAKAO_NATIVE_APP_KEY`, `KAKAO_REST_API_KEY`가 `Info.plist`에 주입된 빌드 검증
 - 실기기에서 위치 권한, universal link association, cold start deep link restore 검증
 - production 배포 완료 여부와 최신 `/data/vacancy.json` 노출 상태는 별도 확인 필요
 
 ## 남은 리스크 / 다음 단계
-1. production에서 `/data/vacancy.json`과 검색/상세 결원 UI가 최신 상태로 노출되는지 확인
-2. 필요하면 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
-3. `ios/WhereKindergartenNative/Config/KakaoKeys.example.xcconfig`를 복사해 로컬 전용 `KakaoKeys.local.xcconfig`를 만든 뒤 실제 Kakao 키로 simulator/runtime smoke test 수행
-4. 실제 Kakao 키가 준비되면 지도 인증 성공, 원격 주소/장소 제안, suggestion selection 이후 map center 업데이트를 end-to-end로 확인
+1. Kakao native app key / REST key의 운영값이 올바른지 확인하고 지도 401 없이 실제 렌더되는지 재검증
+2. 실제 타이핑 기반 한글 자동완성(UI suggestion panel)이 simulator 또는 실기기에서 의도대로 동작하는지 smoke test
+3. production에서 `/data/vacancy.json`과 네이티브 상세 `빈 자리 정보` UI가 최신 상태로 노출되는지 확인
+4. 필요하면 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
 5. 실기기에서 위치 권한 허용/거부, custom scheme, universal link, cold start restore를 확인
 
 ## 주의사항 / 알려진 이슈
@@ -100,6 +113,8 @@
 - Kakao SPM 의존성은 현재 공식 저장소 `master` 브랜치를 참조함
 
 ## 주요 파일
+- `ios/NativeApp/Sources/Models/VacancyModels.swift`
+- `ios/NativeApp/Sources/Services/VacancyService.swift`
 - `scripts/sync-vacancy.ts`
 - `public/data/vacancy.json`
 - `src/lib/vacancy/parser.ts`
@@ -111,4 +126,4 @@
 - `ios/WhereKindergartenNative/project.yml`
 
 ## 현재 브랜치
-- `fix/ux-ui-10-improvements` (PR 생성 후 main 머지 예정)
+- `main`
