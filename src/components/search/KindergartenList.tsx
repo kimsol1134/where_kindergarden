@@ -10,6 +10,7 @@ import {
   useFavoriteStore,
   useReviewStore,
   useVacancyStore,
+  useUIStore,
 } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
 import type { Kindergarten } from '@/types';
@@ -75,6 +76,10 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
     getCountByKindergartenId: getVacancyCountByKindergartenId,
   } = useVacancyStore();
 
+  const showToast = useUIStore((state) => state.showToast);
+  const compareBarHeight = useUIStore((state) => state.compareBarHeight);
+  const compareItemCount = useCompareStore((state) => state.items.length);
+
   // Memoize filtered and sorted results to avoid recalculation on every render
   // storeResults를 의존성에 추가하여 검색 결과 변경 시 재계산
   const results = useMemo(() => getFilteredAndSortedResults(), [getFilteredAndSortedResults, storeResults, filters, sortBy]);
@@ -118,6 +123,7 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
     getScrollElement: () => scrollContainerRef.current,
     estimateSize: () => 180, // Estimated card height
     overscan: 5, // Render 5 extra items above/below viewport
+    paddingEnd: compareBarHeight,
   });
 
   // 정렬 변경 핸들러
@@ -142,11 +148,13 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
     (kindergarten: Kindergarten) => {
       if (isInCompare(kindergarten.kindercode)) {
         removeItem(kindergarten.kindercode);
+        showToast('비교함에서 제거했습니다', 'success');
       } else {
         addItem(kindergarten);
+        showToast(`비교함에 추가했습니다 (${compareItemCount + 1}/3)`, 'success');
       }
     },
-    [isInCompare, removeItem, addItem]
+    [isInCompare, removeItem, addItem, showToast, compareItemCount]
   );
 
   // 찜하기 토글 핸들러

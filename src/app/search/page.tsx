@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect, useState, useCallback, Suspense } from 'react';
+import { useEffect, useState, useCallback, useRef, Suspense } from 'react';
 import { X } from 'lucide-react';
 import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { PanelResizer } from '@/components/search/PanelResizer';
-import { useSearchStore, useCompareStore } from '@/stores';
+import { useSearchStore, useCompareStore, useUIStore } from '@/stores';
 // Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
@@ -32,41 +32,43 @@ function SearchPageContent() {
   // 데스크탑에서 패널 너비 상태
   const [panelWidth, setPanelWidth] = useState(PANEL_DEFAULT_WIDTH);
 
-  // Toast visibility and animation state
-  const [isToastVisible, setIsToastVisible] = useState(false);
+  // Toast system (global via uiStore)
+  const toast = useUIStore((state) => state.toast);
+  const showToast = useUIStore((state) => state.showToast);
+  const dismissToast = useUIStore((state) => state.dismissToast);
   const [isToastFading, setIsToastFading] = useState(false);
+  const manualDismissTimer = useRef<ReturnType<typeof setTimeout>>(null);
 
-  // Handle toast visibility based on error state
+  // Show toast when search error occurs
   useEffect(() => {
     if (error) {
-      setIsToastVisible(true);
+      showToast(error, 'error');
+      setError(null);
+    }
+  }, [error, showToast, setError]);
+
+  // Auto-dismiss toast after 5s
+  useEffect(() => {
+    if (toast) {
+      if (manualDismissTimer.current) {
+        clearTimeout(manualDismissTimer.current);
+        manualDismissTimer.current = null;
+      }
       setIsToastFading(false);
-
-      // Auto-dismiss after 5 seconds
-      const fadeTimer = setTimeout(() => {
-        setIsToastFading(true);
-      }, 4700); // Start fade 300ms before hide
-
-      const hideTimer = setTimeout(() => {
-        setIsToastVisible(false);
-        setError(null);
-      }, 5000);
-
+      const fadeTimer = setTimeout(() => setIsToastFading(true), 4700);
+      const hideTimer = setTimeout(() => dismissToast(), 5000);
       return () => {
         clearTimeout(fadeTimer);
         clearTimeout(hideTimer);
       };
     }
-  }, [error, setError]);
+  }, [toast, dismissToast]);
 
   // Manual toast dismiss
   const handleDismissToast = useCallback(() => {
     setIsToastFading(true);
-    setTimeout(() => {
-      setIsToastVisible(false);
-      setError(null);
-    }, 300);
-  }, [setError]);
+    manualDismissTimer.current = setTimeout(() => dismissToast(), 300);
+  }, [dismissToast]);
 
   // mode=location 파라미터가 있으면 현재 위치로 검색
   useEffect(() => {
@@ -114,17 +116,19 @@ function SearchPageContent() {
       </main>
       {items.length > 0 && <CompareFloatingBar />}
 
-      {/* 전역 에러 토스트 - Auto-dismiss after 5s with fade animation */}
-      {isToastVisible && (
+      {/* 전역 토스트 - Auto-dismiss after 5s with fade animation */}
+      {toast && (
         <div
-          className={`fixed bottom-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 flex items-center gap-3 transition-opacity duration-300 ${
+          className={`fixed bottom-4 left-1/2 -translate-x-1/2 ${
+            toast.type === 'success' ? 'bg-emerald-500' : 'bg-red-500'
+          } text-white px-4 py-2 rounded-lg shadow-lg z-[55] flex items-center gap-3 transition-opacity duration-300 ${
             isToastFading ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <span>{error}</span>
+          <span>{toast.message}</span>
           <button
             onClick={handleDismissToast}
-            className="min-w-[44px] min-h-[44px] -mr-2 flex items-center justify-center hover:bg-red-600 rounded-full transition-colors"
+            className="min-w-[44px] min-h-[44px] -mr-2 flex items-center justify-center hover:bg-white/20 rounded-full transition-colors"
             aria-label="닫기"
           >
             <X className="w-4 h-4" />
