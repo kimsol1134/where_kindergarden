@@ -156,6 +156,8 @@
 
   /* AdMob 배너 오프셋 - 네이티브 앱용 */
   --ad-banner-height: 0px;
+  /* 비교 트레이 높이 - 동적으로 업데이트됨 */
+  --compare-bar-height: 0px;
   --total-bottom-offset: calc(var(--ad-banner-height) + var(--safe-area-inset-bottom));
 }
 
@@ -309,4 +311,9 @@ body.native-platform {
 
 .brand-highlight {
   background: linear-gradient(135deg, rgba(78, 169, 109, 0.18), rgba(244, 216, 106, 0.2));
+}
+
+/* 검색 입력 네이티브 clear 버튼 숨김 */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }

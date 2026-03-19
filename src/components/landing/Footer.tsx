@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Instagram, MessageCircle } from 'lucide-react';
 import { BrandMark } from '@/components/common/BrandMark';
 import { DATA_VERSION } from '@/lib/constants';
 
@@ -124,17 +123,6 @@ export function Footer() {
                 </a>
                 (교육부)
               </p>
-            </div>
-            <div className="flex gap-4">
-              <Link href="#" className="hover:text-white">
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="hover:text-white">
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="hover:text-white">
-                <MessageCircle className="h-5 w-5" />
-              </Link>
             </div>
           </div>
         </div>

@@ -204,7 +204,9 @@ export function SearchHeader() {
           </div>
           <input
             ref={inputRef}
-            type="text"
+            type="search"
+            inputMode="search"
+            enterKeyHint="search"
             value={query || address}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => {
@@ -599,6 +601,9 @@ export function SearchHeader() {
           <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 pb-10 animate-slide-in-bottom">
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
             <div className="text-sm font-medium text-gray-700 mb-3">기관 유형</div>
+            <p className="text-sm text-gray-500 mb-3">
+              현재: <span className="font-bold text-emerald-600">{filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}</span>
+            </p>
             <div className="space-y-2">
               {[
                 { value: 'all', label: '전체' },

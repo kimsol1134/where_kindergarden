@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useEffect, useCallback, useMemo } from 'react';
-import { Crosshair, Plus, Minus, RotateCw, List, Loader2 } from 'lucide-react';
+import { Crosshair, Plus, Minus, RotateCw, List, Loader2, MapPin } from 'lucide-react';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { useKakaoMap, useGeolocation } from '@/hooks';
 import type { Kindergarten } from '@/types';
@@ -90,6 +90,13 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
     }
   }, [isLoaded, compareItemIds, updateCompareItems]);
 
+  // 지도 에러 시 모바일에서 목록 뷰로 자동 전환
+  useEffect(() => {
+    if (isError && mobileView === 'map') {
+      onToggleMobileView();
+    }
+  }, [isError, mobileView, onToggleMobileView]);
+
   // 현재 위치로 이동
   const handleCurrentLocation = useCallback(async () => {
     try {
@@ -137,13 +144,14 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
 
         {/* 에러 상태 */}
         {isError && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-            <div className="flex flex-col items-center text-gray-500 px-4">
-              <span className="text-sm text-red-500 text-center">{errorMessage}</span>
-              <span className="text-xs mt-1 text-center">지도 API 키를 확인해주세요</span>
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-100/80">
+            <div className="bg-white rounded-xl shadow-md p-5 mx-4 max-w-xs text-center">
+              <MapPin className="w-8 h-8 text-gray-300 mx-auto mb-2" />
+              <p className="text-sm font-medium text-gray-700 mb-1">지도를 불러올 수 없습니다</p>
+              <p className="text-xs text-gray-500 mb-3">{errorMessage}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="mt-4 px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium text-sm hover:bg-emerald-600 transition-colors min-h-[44px] min-w-[120px]"
+                className="px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium text-sm hover:bg-emerald-600 transition-colors min-h-[44px] min-w-[120px]"
               >
                 다시 시도
               </button>

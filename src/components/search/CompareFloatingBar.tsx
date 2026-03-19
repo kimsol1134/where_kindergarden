@@ -1,14 +1,41 @@
 'use client';
 
-import { startTransition } from 'react';
+import { startTransition, useRef, useEffect } from 'react';
 import { X, ArrowRight, Trash2 } from 'lucide-react';
 import Link from 'next/link';
-import { useCompareStore } from '@/stores';
+import { useCompareStore, useUIStore } from '@/stores';
 
 const MAX_COMPARE_ITEMS = 3;
 
 export function CompareFloatingBar() {
   const { items, removeItem, clearAll } = useCompareStore();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const setCompareBarHeight = useUIStore((state) => state.setCompareBarHeight);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) {
+      document.documentElement.style.setProperty('--compare-bar-height', '0px');
+      setCompareBarHeight(0);
+      return;
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const height = entry.borderBoxSize?.[0]?.blockSize ?? entry.contentRect.height;
+        document.documentElement.style.setProperty('--compare-bar-height', `${height}px`);
+        setCompareBarHeight(height);
+      }
+    });
+
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.setProperty('--compare-bar-height', '0px');
+      setCompareBarHeight(0);
+    };
+  }, [setCompareBarHeight, items.length]);
 
   const handleRemoveItem = (kindercode: string) => {
     startTransition(() => {
@@ -22,6 +49,7 @@ export function CompareFloatingBar() {
 
   return (
     <div
+      ref={containerRef}
       className="fixed left-0 w-full z-40 fixed-bottom-with-ad"
       id="compareBar"
     >

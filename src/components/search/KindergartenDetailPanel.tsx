@@ -247,7 +247,7 @@ export function KindergartenDetailPanel({
         <div className="flex border-b border-gray-200 bg-white sticky top-[60px] z-10">
           <button
             onClick={() => setActiveTab('info')}
-            className={`flex-1 py-3 text-sm font-medium text-center transition-colors relative ${
+            className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative ${
               activeTab === 'info'
                 ? 'text-emerald-600'
                 : 'text-gray-500 hover:text-gray-700'
@@ -260,7 +260,7 @@ export function KindergartenDetailPanel({
           </button>
           <button
             onClick={() => setActiveTab('reviews')}
-            className={`flex-1 py-3 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
+            className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
               activeTab === 'reviews'
                 ? 'text-emerald-600'
                 : 'text-gray-500 hover:text-gray-700'
@@ -719,7 +719,7 @@ export function KindergartenDetailPanel({
         </div>
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
-        <div className={`p-5 border-t border-gray-200 bg-white ${hasCompareBar ? 'pb-20' : ''}`}>
+        <div className="p-5 border-t border-gray-200 bg-white" style={{ paddingBottom: hasCompareBar ? 'calc(var(--compare-bar-height, 0px) + 8px)' : undefined }}>
           <div className="flex gap-3">
             {/* 찜하기 버튼 */}
             <button
