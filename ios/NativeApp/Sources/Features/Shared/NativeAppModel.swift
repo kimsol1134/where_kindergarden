@@ -1,6 +1,7 @@
 import Combine
 import Foundation
 import Models
+import os
 import Services
 
 public enum NativeTab: Hashable {
@@ -20,7 +21,10 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var searchText: String
 
     @Published public var filters: SearchFilters {
-        didSet { refresh() }
+        didSet {
+            analytics?.track(event: .filterChanged, properties: ["radius": "\(filters.radiusKM)", "sort": filters.sort.rawValue])
+            refresh()
+        }
     }
 
     @Published public private(set) var userLocation: Coordinates
@@ -44,6 +48,8 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var catalogError: String?
     @Published public private(set) var reviewsError: String?
     @Published public private(set) var locationError: String?
+    @Published public private(set) var isFirstLaunch: Bool
+    @Published public var shouldFocusSearchField: Bool = false
 
     public let configuration: NativeAppConfiguration
 
@@ -53,6 +59,7 @@ public final class NativeAppModel: ObservableObject {
     private let remoteSearchService: any RemoteLocationSuggesting
     private let locationProvider: CurrentLocationProviding
     private let persistence: NativeAppPersistence
+    private let analytics: AnalyticsTracking?
     private let searchDebounceDuration: Duration
 
     private var allKindergartens: [KindergartenRaw]
@@ -71,6 +78,7 @@ public final class NativeAppModel: ObservableObject {
         locationProvider: CurrentLocationProviding,
         persistence: NativeAppPersistence,
         configuration: NativeAppConfiguration,
+        analytics: AnalyticsTracking? = nil,
         initialKindergartens: [KindergartenRaw] = [],
         initialReviews: ReviewsData? = nil,
         filters: SearchFilters = SearchFilters(),
@@ -85,6 +93,7 @@ public final class NativeAppModel: ObservableObject {
         self.locationProvider = locationProvider
         self.persistence = persistence
         self.configuration = configuration
+        self.analytics = analytics
         self.allKindergartens = initialKindergartens
         self.hasBootstrapped = !initialKindergartens.isEmpty && initialReviews != nil
         self.kindergartenLookup = Dictionary(
@@ -100,6 +109,7 @@ public final class NativeAppModel: ObservableObject {
         self.remoteSearchSuggestions = []
         self.compareSelection = restoredState.compareSelection
         self.searchDebounceDuration = searchDebounceDuration
+        self.isFirstLaunch = !persistence.hasLaunched()
 
         if let restoredSearch = restoredState.recentSearches.first, let coordinates = restoredSearch.coordinates {
             self.userLocation = coordinates
@@ -130,7 +140,7 @@ public final class NativeAppModel: ObservableObject {
                 id: "recent:\(search.id.uuidString)",
                 kind: .recent,
                 title: search.label,
-                subtitle: String(format: "%.4f, %.4f", coordinates.lat, coordinates.lng),
+                subtitle: search.resolvedDisplayName,
                 coordinates: coordinates
             )
         }
@@ -169,7 +179,8 @@ public final class NativeAppModel: ObservableObject {
             ),
             locationProvider: CurrentLocationService(),
             persistence: NativeAppPersistence(store: userDefaults),
-            configuration: configuration
+            configuration: configuration,
+            analytics: OSLogAnalytics()
         )
     }
 
@@ -237,6 +248,7 @@ public final class NativeAppModel: ObservableObject {
     public func bootstrapIfNeeded() async {
         guard !hasBootstrapped else { return }
         hasBootstrapped = true
+        analytics?.track(event: .appLaunched)
 
         async let catalogTask: Void = loadCatalog()
         async let reviewsTask: Void = loadReviews()
@@ -303,7 +315,7 @@ public final class NativeAppModel: ObservableObject {
         filters.hasLargeSpace = filters.hasLargeSpace == true ? nil : true
     }
 
-    public func setLocation(_ coordinates: Coordinates, label: String, recordRecents: Bool = true) {
+    public func setLocation(_ coordinates: Coordinates, label: String, recordRecents: Bool = true, searchType: SearchType? = nil) {
         userLocation = coordinates
         locationLabel = label
         locationError = nil
@@ -313,7 +325,13 @@ public final class NativeAppModel: ObservableObject {
             return
         }
 
-        let nextSearch = RecentSearch(label: label, coordinates: coordinates)
+        let nextSearch = RecentSearch(
+            label: label,
+            coordinates: coordinates,
+            displayName: label,
+            searchType: searchType,
+            createdAt: Date()
+        )
         let filtered = recentSearches.filter {
             $0.label != label || $0.coordinates != coordinates
         }
@@ -326,13 +344,16 @@ public final class NativeAppModel: ObservableObject {
         do {
             let coordinates = try await locationProvider.requestCurrentLocation()
             currentDeviceLocation = coordinates
-            setLocation(coordinates, label: "현재 위치")
+            shouldFocusSearchField = false
+            setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
         } catch {
             locationError = error.localizedDescription
+            shouldFocusSearchField = true
         }
     }
 
     public func select(kindergarten: Kindergarten) {
+        analytics?.track(event: .resultTapped, properties: ["kindercode": kindergarten.kindercode])
         selectedKindergarten = kindergarten
     }
 
@@ -341,7 +362,15 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func selectSearchSuggestion(_ suggestion: SearchSuggestion) {
-        setLocation(suggestion.coordinates, label: suggestion.title)
+        let mappedType: SearchType? = {
+            switch suggestion.kind {
+            case .address: return .address
+            case .place: return .place
+            case .kindergarten: return .kindergarten
+            case .recent: return nil
+            }
+        }()
+        setLocation(suggestion.coordinates, label: suggestion.title, searchType: mappedType)
         setSearchText(
             suggestion.title,
             refreshSuggestions: false,
@@ -352,6 +381,10 @@ public final class NativeAppModel: ObservableObject {
 
     public func toggleCompare(for kindergarten: Kindergarten) {
         compareSelection.toggle(id: kindergarten.kindercode)
+        analytics?.track(event: .compareToggled, properties: [
+            "kindercode": kindergarten.kindercode,
+            "selected": "\(compareSelection.contains(kindergarten.kindercode))"
+        ])
         persistence.saveCompareSelection(compareSelection)
         refreshSelectedKindergarten()
     }
@@ -384,7 +417,12 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func toggleFavorite(for kindergarten: Kindergarten) {
-        if favorites.contains(where: { $0.kindercode == kindergarten.kindercode }) {
+        let wasFavorite = favorites.contains(where: { $0.kindercode == kindergarten.kindercode })
+        analytics?.track(event: .favoriteToggled, properties: [
+            "kindercode": kindergarten.kindercode,
+            "favorited": "\(!wasFavorite)"
+        ])
+        if wasFavorite {
             favorites.removeAll { $0.kindercode == kindergarten.kindercode }
         } else {
             favorites.insert(
@@ -462,6 +500,69 @@ public final class NativeAppModel: ObservableObject {
 
     public func clearRecentSearches() {
         _ = takeAllRecentSearches()
+    }
+
+    // MARK: - Filter helpers (PR 3 / PR 6)
+
+    public func resetFilters() {
+        filters = SearchFilters()
+    }
+
+    public var hasActiveAdvancedFilters: Bool {
+        activeAdvancedFilterCount > 0
+    }
+
+    public var nextRadius: Double {
+        switch filters.radiusKM {
+        case 1: return 2
+        case 2: return 5
+        default: return 5
+        }
+    }
+
+    public var activeAdvancedFilterCount: Int {
+        var count = 0
+        if filters.hasAfterSchool == true { count += 1 }
+        if filters.hasVacancy == true { count += 1 }
+        if filters.hasLargeSpace == true { count += 1 }
+        if filters.hasIndoorPlayground == true { count += 1 }
+        if filters.hasModernBuilding == true { count += 1 }
+        if filters.type != .all { count += 1 }
+        return count
+    }
+
+    public var activeAdvancedFilterDescriptions: [(label: String, reset: () -> Void)] {
+        var result: [(label: String, reset: () -> Void)] = []
+        if filters.hasAfterSchool == true { result.append(("방과후", { [self] in filters.hasAfterSchool = nil })) }
+        if filters.hasVacancy == true { result.append(("여유정원", { [self] in filters.hasVacancy = nil })) }
+        if filters.hasLargeSpace == true { result.append(("넓은공간", { [self] in filters.hasLargeSpace = nil })) }
+        if filters.hasIndoorPlayground == true { result.append(("실내놀이터", { [self] in filters.hasIndoorPlayground = nil })) }
+        if filters.hasModernBuilding == true { result.append(("최신건물", { [self] in filters.hasModernBuilding = nil })) }
+        if filters.type != .all { result.append((filters.type.label, { [self] in filters.type = .all })) }
+        return result
+    }
+
+    // MARK: - Compare helpers (PR 4)
+
+    public func removeCompare(at index: Int) {
+        guard compareSelection.ids.indices.contains(index) else { return }
+        let id = compareSelection.ids[index]
+        compareSelection.remove(at: index)
+        analytics?.track(event: .compareToggled, properties: ["kindercode": id, "selected": "false"])
+        persistence.saveCompareSelection(compareSelection)
+    }
+
+    public func comparedKindergartenNames() -> [String] {
+        compareSelection.ids.compactMap { id in
+            kindergartenLookup[id]?.name
+        }
+    }
+
+    // MARK: - FTUE (PR 8)
+
+    public func completeFirstLaunch() {
+        isFirstLaunch = false
+        persistence.markAsLaunched()
     }
 
     public func takeFavorite(kindercode: String) -> IndexedFavoriteItem? {
@@ -560,7 +661,12 @@ public final class NativeAppModel: ObservableObject {
             query: resultQuery
         )
 
+        let previouslyHadResults = !results.isEmpty
         results = baseResults
+        analytics?.track(event: .searchExecuted, properties: ["resultCount": "\(baseResults.count)"])
+        if baseResults.isEmpty && previouslyHadResults {
+            analytics?.track(event: .emptyStateShown)
+        }
         refreshSelectedKindergarten()
     }
 

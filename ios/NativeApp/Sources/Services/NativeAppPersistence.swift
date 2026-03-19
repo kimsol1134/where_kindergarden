@@ -28,6 +28,7 @@ public enum NativeAppStorageKey: String, CaseIterable, Sendable {
     case favorites = "native.favorites"
     case recentSearches = "native.recentSearches"
     case compareSelection = "native.compareSelection"
+    case hasLaunched = "native.hasLaunched"
 }
 
 @MainActor
@@ -77,11 +78,13 @@ public final class NativeAppPersistence {
     private let favoritesStore: CodableStoredValue<[FavoriteItem]>
     private let recentSearchesStore: CodableStoredValue<[RecentSearch]>
     private let compareSelectionStore: CodableStoredValue<CompareSelection>
+    private let hasLaunchedStore: CodableStoredValue<Bool>
 
     public init(store: NativeAppDataStoring = UserDefaults.standard) {
         favoritesStore = CodableStoredValue(key: .favorites, store: store)
         recentSearchesStore = CodableStoredValue(key: .recentSearches, store: store)
         compareSelectionStore = CodableStoredValue(key: .compareSelection, store: store)
+        hasLaunchedStore = CodableStoredValue(key: .hasLaunched, store: store)
     }
 
     public func restore() -> PersistedNativeState {
@@ -102,5 +105,13 @@ public final class NativeAppPersistence {
 
     public func saveCompareSelection(_ selection: CompareSelection) {
         compareSelectionStore.save(selection)
+    }
+
+    public func hasLaunched() -> Bool {
+        hasLaunchedStore.load(defaultValue: false)
+    }
+
+    public func markAsLaunched() {
+        hasLaunchedStore.save(true)
     }
 }

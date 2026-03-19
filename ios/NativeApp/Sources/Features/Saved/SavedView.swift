@@ -19,8 +19,13 @@ public struct SavedView: View {
             List {
                 Section {
                     if model.favorites.isEmpty {
-                        Text("검색 화면에서 찜한 기관이 여기에 저장됩니다.")
-                            .foregroundStyle(.secondary)
+                        EmptyStateView(
+                            icon: "heart",
+                            title: "찜한 기관이 없습니다",
+                            message: "검색 화면에서 찜한 기관이 여기에 저장됩니다."
+                        )
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
                     } else {
                         ForEach(model.favoriteKindergartens()) { kindergarten in
                             Button {
@@ -86,19 +91,34 @@ public struct SavedView: View {
 
                 Section {
                     if model.recentSearches.isEmpty {
-                        Text("현재 위치 또는 주소 기반 검색을 하면 최근 검색이 남습니다.")
-                            .foregroundStyle(.secondary)
+                        EmptyStateView(
+                            icon: "clock.arrow.circlepath",
+                            title: "최근 검색이 없습니다",
+                            message: "현재 위치 또는 주소 기반 검색을 하면 최근 검색이 남습니다."
+                        )
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
                     } else {
                         ForEach(model.recentSearches) { item in
                             Button {
                                 model.restoreRecentSearch(item)
                             } label: {
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Label(item.label, systemImage: "clock.arrow.circlepath")
-                                    if let coordinates = item.coordinates {
-                                        Text(String(format: "%.4f, %.4f", coordinates.lat, coordinates.lng))
+                                HStack(spacing: 12) {
+                                    Image(systemName: recentSearchIcon(for: item.searchType))
+                                        .foregroundStyle(leafGreen)
+                                        .frame(width: 24)
+                                    VStack(alignment: .leading, spacing: 4) {
+                                        Text(item.label)
+                                            .font(.subheadline.weight(.semibold))
+                                        Text(item.resolvedDisplayName)
                                             .font(.caption)
                                             .foregroundStyle(.secondary)
+                                    }
+                                    Spacer()
+                                    if let createdAt = item.createdAt {
+                                        Text(relativeDate(createdAt))
+                                            .font(.caption2)
+                                            .foregroundStyle(.tertiary)
                                     }
                                 }
                             }
@@ -238,4 +258,25 @@ private struct SavedUndoState: Identifiable {
             model.restoreRecentSearches(items)
         }
     }
+}
+
+private func recentSearchIcon(for searchType: SearchType?) -> String {
+    switch searchType {
+    case .currentLocation: return "location.fill"
+    case .address: return "mappin.and.ellipse"
+    case .place: return "sparkle.magnifyingglass"
+    case .kindergarten: return "building.2.fill"
+    case nil: return "clock.arrow.circlepath"
+    }
+}
+
+private let sharedRelativeDateFormatter: RelativeDateTimeFormatter = {
+    let formatter = RelativeDateTimeFormatter()
+    formatter.locale = Locale(identifier: "ko_KR")
+    formatter.unitsStyle = .short
+    return formatter
+}()
+
+private func relativeDate(_ date: Date) -> String {
+    sharedRelativeDateFormatter.localizedString(for: date, relativeTo: Date())
 }
