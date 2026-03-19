@@ -25,6 +25,7 @@ struct KakaoSearchMapSurface: View {
     let markers: [SearchMapMarker]
     let selectedKindergartenID: String?
     @Binding var runtimeMessage: String?
+    let showsStatusCard: Bool
     let onMarkerTap: (String) -> Void
 
     private var state: SearchMapViewState {
@@ -49,19 +50,22 @@ struct KakaoSearchMapSurface: View {
             } else {
                 MapUnavailablePlaceholder(
                     title: "Kakao Maps 설정 필요",
-                    message: "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoNativeAppKeyBuildSetting) 값을 채워야 지도를 표시할 수 있습니다."
+                    message: "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoNativeAppKeyBuildSetting) 값을 채워야 지도를 표시할 수 있습니다.",
+                    showsContent: !showsStatusCard
                 )
             }
 #else
             MapUnavailablePlaceholder(
                 title: "Kakao Maps 준비 중",
-                message: "이 환경에서는 Kakao iOS SDK를 로드할 수 없어 지도 대신 안전한 placeholder를 표시합니다."
+                message: "이 환경에서는 Kakao iOS SDK를 로드할 수 없어 지도 대신 안전한 placeholder를 표시합니다.",
+                showsContent: !showsStatusCard
             )
 #endif
             if let runtimeMessage, appKey != nil {
                 MapUnavailablePlaceholder(
                     title: "Kakao 지도 연결 실패",
-                    message: runtimeMessage
+                    message: runtimeMessage,
+                    showsContent: !showsStatusCard
                 )
                 .transition(.opacity)
             }
@@ -72,56 +76,61 @@ struct KakaoSearchMapSurface: View {
 private struct MapUnavailablePlaceholder: View {
     let title: String
     let message: String
+    var showsContent = true
 
     var body: some View {
-        ZStack {
-            LinearGradient(
-                colors: [mistWhite, .white, leafGreen.opacity(0.12)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-
-            Circle()
-                .fill(sunYellow.opacity(0.26))
-                .frame(width: 220, height: 220)
-                .offset(x: -120, y: 120)
-
-            Circle()
-                .fill(leafGreen.opacity(0.18))
-                .frame(width: 260, height: 260)
-                .offset(x: 120, y: -180)
-
-            VStack {
-                Spacer(minLength: 150)
-
-                HStack(alignment: .top, spacing: 14) {
-                    Image(systemName: "map.circle.fill")
-                        .font(.system(size: 34, weight: .semibold))
-                        .foregroundStyle(leafGreen)
-                        .padding(12)
-                        .background(leafGreen.opacity(0.12), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(title)
-                            .font(.headline.weight(.semibold))
-                            .foregroundStyle(.primary)
-                        Text(message)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                    Spacer(minLength: 0)
-                }
-                .padding(20)
-                .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 28, style: .continuous))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
-                        .stroke(Color.white.opacity(0.86), lineWidth: 1)
+        GeometryReader { proxy in
+            ZStack {
+                LinearGradient(
+                    colors: [cloudWhite, mistWhite, paperWhite],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
                 )
-                .shadow(color: warmSand.opacity(0.18), radius: 20, y: 12)
-                .padding(.horizontal, 24)
 
-                Spacer()
+                Circle()
+                    .fill(sunYellow.opacity(0.20))
+                    .frame(width: 220, height: 220)
+                    .offset(x: -120, y: 120)
+
+                Circle()
+                    .fill(jadeGreen.opacity(0.16))
+                    .frame(width: 260, height: 260)
+                    .offset(x: 120, y: -180)
+
+                if showsContent {
+                    VStack {
+                        Spacer(minLength: max(220, proxy.size.height * 0.46))
+
+                        HStack(alignment: .top, spacing: 14) {
+                            ZStack(alignment: .bottomTrailing) {
+                                BrandGlyphView(size: 46, cornerRadius: 16)
+                                Image(systemName: "map.circle.fill")
+                                    .font(.system(size: 14, weight: .bold))
+                                    .foregroundStyle(inkBlack)
+                                    .padding(8)
+                                    .background(sunYellow.opacity(0.92), in: Circle())
+                                    .offset(x: 6, y: 8)
+                            }
+
+                            VStack(alignment: .leading, spacing: 8) {
+                                NativeBadge("지도 상태", tone: .slate)
+                                Text(title)
+                                    .font(.headline.weight(.semibold))
+                                    .foregroundStyle(inkBlack)
+                                Text(message)
+                                    .font(.footnote)
+                                    .foregroundStyle(slateBlue)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                            Spacer(minLength: 0)
+                        }
+                        .padding(18)
+                        .glassPanel(cornerRadius: 28)
+                        .padding(.horizontal, 24)
+
+                        Spacer()
+                    }
+                }
             }
         }
     }

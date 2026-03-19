@@ -12,15 +12,15 @@ struct SkeletonCard: View {
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .solidPanel(cornerRadius: 26, tint: paperWhite.opacity(0.78))
         .mask(
-            RoundedRectangle(cornerRadius: 22, style: .continuous)
+            RoundedRectangle(cornerRadius: 26, style: .continuous)
         )
         .overlay(
             Group {
                 if !reduceMotion {
                     LinearGradient(
-                        colors: [.clear, .white.opacity(0.4), .clear],
+                        colors: [.clear, paperWhite.opacity(0.54), .clear],
                         startPoint: .leading,
                         endPoint: .trailing
                     )
@@ -32,7 +32,7 @@ struct SkeletonCard: View {
                     }
                 }
             }
-            .mask(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .mask(RoundedRectangle(cornerRadius: 26, style: .continuous))
         )
     }
 }
@@ -43,7 +43,7 @@ private struct SkeletonLine: View {
 
     var body: some View {
         RoundedRectangle(cornerRadius: height / 2)
-            .fill(Color.secondary.opacity(0.15))
+            .fill(slateBlue.opacity(0.12))
             .frame(width: width, height: height)
     }
 }
