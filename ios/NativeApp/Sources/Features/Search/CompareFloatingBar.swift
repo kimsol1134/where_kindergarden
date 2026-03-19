@@ -10,9 +10,9 @@ struct CompareFloatingBar: View {
 
     private var statusText: String {
         switch count {
-        case 1: return "1곳 선택됨 · 비교할 곳을 더 담아보세요"
-        case 2: return "2곳 비교하기"
-        case 3: return "3곳 비교하기"
+        case 1: return "비교 목록에 1곳 담았어요 · 한 곳 더 담으면 비교할 수 있어요"
+        case 2: return "비교 목록 2곳 보기"
+        case 3: return "비교 목록 3곳 보기"
         default: return ""
         }
     }

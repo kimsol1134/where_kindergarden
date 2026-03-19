@@ -21,8 +21,8 @@ public struct SavedView: View {
                     if model.favorites.isEmpty {
                         EmptyStateView(
                             icon: "heart",
-                            title: "찜한 기관이 없습니다",
-                            message: "검색 화면에서 찜한 기관이 여기에 저장됩니다."
+                            title: "아직 찜한 유치원이 없어요",
+                            message: "마음에 드는 유치원을 찜해두면 여기에서 다시 볼 수 있어요."
                         )
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)
@@ -82,7 +82,7 @@ public struct SavedView: View {
                         }
                     }
                 } header: {
-                    Text("찜한 기관")
+                    Text("찜한 유치원")
                 } footer: {
                     if !model.favorites.isEmpty {
                         Text("왼쪽으로 밀어 상세로 열고, 오른쪽으로 밀어 삭제할 수 있습니다.")
@@ -245,7 +245,7 @@ private struct SavedUndoState: Identifiable {
 
     static func favorites(_ items: [IndexedFavoriteItem]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
-        let message = items.count == 1 ? "찜한 기관을 삭제했습니다." : "찜한 기관 \(items.count)곳을 삭제했습니다."
+        let message = items.count == 1 ? "찜한 유치원을 삭제했어요." : "찜한 유치원 \(items.count)곳을 삭제했어요."
         return SavedUndoState(message: message) { model in
             model.restoreFavorites(items)
         }

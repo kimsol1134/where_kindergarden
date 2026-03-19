@@ -32,6 +32,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var locationLabel: String
     @Published public private(set) var results: [Kindergarten]
     @Published public private(set) var reviewsData: ReviewsData?
+    @Published public private(set) var vacancyData: VacancyDataset?
     @Published public private(set) var favorites: [FavoriteItem]
     @Published public private(set) var recentSearches: [RecentSearch]
     @Published public private(set) var localSearchSuggestions: [SearchSuggestion]
@@ -45,8 +46,10 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var selectedKindergarten: Kindergarten?
     @Published public private(set) var isCatalogLoading = false
     @Published public private(set) var isReviewsLoading = false
+    @Published public private(set) var isVacancyLoading = false
     @Published public private(set) var catalogError: String?
     @Published public private(set) var reviewsError: String?
+    @Published public private(set) var vacancyError: String?
     @Published public private(set) var locationError: String?
     @Published public private(set) var isFirstLaunch: Bool
     @Published public var shouldFocusSearchField: Bool = false
@@ -55,6 +58,7 @@ public final class NativeAppModel: ObservableObject {
 
     private let kindergartenRepository: KindergartenJSONRepository
     private let reviewRepository: ReviewRepository
+    private let vacancyRepository: VacancyRepository
     private let searchEngine: KindergartenSearchEngine
     private let remoteSearchService: any RemoteLocationSuggesting
     private let locationProvider: CurrentLocationProviding
@@ -73,6 +77,7 @@ public final class NativeAppModel: ObservableObject {
     public init(
         kindergartenRepository: KindergartenJSONRepository,
         reviewRepository: ReviewRepository,
+        vacancyRepository: VacancyRepository = .empty,
         searchEngine: KindergartenSearchEngine = KindergartenSearchEngine(),
         remoteSearchService: any RemoteLocationSuggesting,
         locationProvider: CurrentLocationProviding,
@@ -81,6 +86,7 @@ public final class NativeAppModel: ObservableObject {
         analytics: AnalyticsTracking? = nil,
         initialKindergartens: [KindergartenRaw] = [],
         initialReviews: ReviewsData? = nil,
+        initialVacancy: VacancyDataset? = nil,
         filters: SearchFilters = SearchFilters(),
         searchText: String = "",
         searchDebounceDuration: Duration = .milliseconds(300)
@@ -88,6 +94,7 @@ public final class NativeAppModel: ObservableObject {
         let restoredState = persistence.restore()
         self.kindergartenRepository = kindergartenRepository
         self.reviewRepository = reviewRepository
+        self.vacancyRepository = vacancyRepository
         self.searchEngine = searchEngine
         self.remoteSearchService = remoteSearchService
         self.locationProvider = locationProvider
@@ -103,6 +110,7 @@ public final class NativeAppModel: ObservableObject {
         self.resultQuery = searchText
         self.filters = filters
         self.reviewsData = initialReviews
+        self.vacancyData = initialVacancy
         self.favorites = restoredState.favorites
         self.recentSearches = restoredState.recentSearches
         self.localSearchSuggestions = []
@@ -168,9 +176,19 @@ public final class NativeAppModel: ObservableObject {
             }
         )
 
+        let vacancyRepository = VacancyRepository(
+            remoteLoader: {
+                try await remoteLoader.data(from: configuration.vacancyRemoteURL)
+            },
+            localLoader: {
+                try bundledLoader.data(named: configuration.vacancyResourceName)
+            }
+        )
+
         return NativeAppModel(
             kindergartenRepository: kindergartenRepository,
             reviewRepository: reviewRepository,
+            vacancyRepository: vacancyRepository,
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(
                     apiKey: configuration.kakaoRESTAPIKey,
@@ -228,12 +246,53 @@ public final class NativeAppModel: ObservableObject {
                 ],
             ]
         )
+        let previewVacancy = VacancyDataset(
+            version: "2026-03-17",
+            source: "bundled-preview",
+            aidYear: "2026",
+            totalCount: 2,
+            positiveCount: 1,
+            items: [
+                "A001": VacancySummary(
+                    kindercode: "A001",
+                    aidYear: "2026",
+                    vacancyCount: 2,
+                    updatedAt: "2026-03-17T00:00:00Z",
+                    preschCd: nil,
+                    upperEduOfficeCd: nil,
+                    eduOfficeCd: nil,
+                    foundType: "국공립",
+                    name: "역삼유치원",
+                    address: "서울 강남구 역삼로 123",
+                    phone: "02-1234-5678",
+                    detail: [
+                        VacancyDetailRow(rowNo: 1, age: "만 4세", course: "일반과정", vacancyCount: 1),
+                        VacancyDetailRow(rowNo: 2, age: "만 5세", course: "방과후과정", vacancyCount: 1),
+                    ]
+                ),
+                "A002": VacancySummary(
+                    kindercode: "A002",
+                    aidYear: "2026",
+                    vacancyCount: 0,
+                    updatedAt: "2026-03-16T00:00:00Z",
+                    preschCd: nil,
+                    upperEduOfficeCd: nil,
+                    eduOfficeCd: nil,
+                    foundType: "사립",
+                    name: "해맑은유치원",
+                    address: "서울 강남구 도곡로 47",
+                    phone: "02-9876-5432",
+                    detail: []
+                ),
+            ]
+        )
 
         return NativeAppModel(
             kindergartenRepository: KindergartenJSONRepository {
                 Data()
             },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
+            vacancyRepository: .empty,
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
             ),
@@ -241,7 +300,8 @@ public final class NativeAppModel: ObservableObject {
             persistence: persistence,
             configuration: NativeAppConfiguration(kakaoAppKey: nil),
             initialKindergartens: NativePreviewFixtures.kindergartens,
-            initialReviews: previewReviews
+            initialReviews: previewReviews,
+            initialVacancy: previewVacancy
         )
     }
 
@@ -252,7 +312,8 @@ public final class NativeAppModel: ObservableObject {
 
         async let catalogTask: Void = loadCatalog()
         async let reviewsTask: Void = loadReviews()
-        _ = await (catalogTask, reviewsTask)
+        async let vacancyTask: Void = loadVacancy()
+        _ = await (catalogTask, reviewsTask, vacancyTask)
     }
 
     public func loadCatalog() async {
@@ -288,6 +349,19 @@ public final class NativeAppModel: ObservableObject {
             reviewsData = try await reviewRepository.load()
         } catch {
             reviewsError = error.localizedDescription
+        }
+    }
+
+    public func loadVacancy() async {
+        guard !isVacancyLoading else { return }
+        isVacancyLoading = true
+        vacancyError = nil
+        defer { isVacancyLoading = false }
+
+        do {
+            vacancyData = try await vacancyRepository.load()
+        } catch {
+            vacancyError = error.localizedDescription
         }
     }
 
@@ -464,6 +538,14 @@ public final class NativeAppModel: ObservableObject {
 
     public func reviews(for kindercode: String) -> [ReviewLink] {
         reviewsData?.reviews[kindercode] ?? []
+    }
+
+    public func vacancy(for kindercode: String) -> VacancySummary? {
+        vacancyData?.items[kindercode]
+    }
+
+    public func vacancyCount(for kindercode: String) -> Int {
+        vacancy(for: kindercode)?.vacancyCount ?? 0
     }
 
     public func applyDeepLink(_ url: URL) {

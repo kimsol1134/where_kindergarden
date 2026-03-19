@@ -14,32 +14,39 @@ public struct NativeRootView: View {
     }
 
     public var body: some View {
-        TabView(selection: $model.selectedTab) {
-            SearchHomeView(model: model)
-                .tabItem {
-                    Label("탐색", systemImage: "magnifyingglass")
-                }
-                .tag(NativeTab.search)
+        ZStack {
+            mistWhite
+                .ignoresSafeArea()
 
-            CompareView(model: model)
-                .tabItem {
-                    Label("비교", systemImage: "square.split.2x2")
-                }
-                .tag(NativeTab.compare)
+            TabView(selection: $model.selectedTab) {
+                SearchHomeView(model: model)
+                    .tabItem {
+                        Label("탐색", systemImage: "magnifyingglass")
+                    }
+                    .tag(NativeTab.search)
 
-            SavedView(model: model)
-                .tabItem {
-                    Label("보관함", systemImage: "heart")
-                }
-                .tag(NativeTab.saved)
+                CompareView(model: model)
+                    .tabItem {
+                        Label("비교", systemImage: "square.split.2x2")
+                    }
+                    .tag(NativeTab.compare)
 
-            MoreView(model: model)
-                .tag(NativeTab.more)
-                .tabItem {
-                    Label("더보기", systemImage: "ellipsis.circle")
-                }
-                .tag(NativeTab.more)
+                SavedView(model: model)
+                    .tabItem {
+                        Label("보관함", systemImage: "heart")
+                    }
+                    .tag(NativeTab.saved)
+
+                MoreView(model: model)
+                    .tag(NativeTab.more)
+                    .tabItem {
+                        Label("더보기", systemImage: "ellipsis.circle")
+                    }
+                    .tag(NativeTab.more)
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(mistWhite.ignoresSafeArea())
         .task {
             async let services: Void = initializeServices()
             async let bootstrap: Void = model.bootstrapIfNeeded()

@@ -48,82 +48,84 @@ struct KakaoSearchMapSurface: View {
                 )
             } else {
                 MapUnavailablePlaceholder(
-                    title: "Kakao Maps 설정 필요",
-                    message: "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoNativeAppKeyBuildSetting) 값을 채워야 지도를 표시할 수 있습니다."
+                    title: "지도를 준비 중이에요",
+                    message: "지금은 목록으로 주변 유치원을 살펴볼 수 있어요.",
+                    detail: "Kakao 지도 연결이 준비되면 지도도 함께 보여드릴게요."
                 )
             }
 #else
             MapUnavailablePlaceholder(
-                title: "Kakao Maps 준비 중",
-                message: "이 환경에서는 Kakao iOS SDK를 로드할 수 없어 지도 대신 안전한 placeholder를 표시합니다."
+                title: "지도를 준비 중이에요",
+                message: "지금은 목록으로 주변 유치원을 살펴볼 수 있어요."
             )
 #endif
             if let runtimeMessage, appKey != nil {
                 MapUnavailablePlaceholder(
-                    title: "Kakao 지도 연결 실패",
-                    message: runtimeMessage
+                    title: "지도를 불러오지 못했어요",
+                    message: runtimeMessage.contains("401")
+                        ? "목록으로 주변 유치원을 계속 찾을 수 있어요."
+                        : "지금은 목록으로 주변 유치원을 먼저 살펴볼 수 있어요."
                 )
                 .transition(.opacity)
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 private struct MapUnavailablePlaceholder: View {
     let title: String
     let message: String
+    var detail: String? = nil
 
     var body: some View {
         ZStack {
             LinearGradient(
-                colors: [mistWhite, .white, leafGreen.opacity(0.12)],
+                colors: [mistWhite, .white, leafGreen.opacity(0.08)],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
 
-            Circle()
-                .fill(sunYellow.opacity(0.26))
-                .frame(width: 220, height: 220)
-                .offset(x: -120, y: 120)
-
-            Circle()
-                .fill(leafGreen.opacity(0.18))
-                .frame(width: 260, height: 260)
-                .offset(x: 120, y: -180)
-
             VStack {
-                Spacer(minLength: 150)
+                Spacer(minLength: 180)
 
-                HStack(alignment: .top, spacing: 14) {
+                HStack(alignment: .top, spacing: 12) {
                     Image(systemName: "map.circle.fill")
-                        .font(.system(size: 34, weight: .semibold))
+                        .font(.system(size: 28, weight: .semibold))
                         .foregroundStyle(leafGreen)
-                        .padding(12)
-                        .background(leafGreen.opacity(0.12), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        .padding(10)
+                        .background(leafGreen.opacity(0.12), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
 
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 6) {
                         Text(title)
-                            .font(.headline.weight(.semibold))
+                            .font(.subheadline.weight(.bold))
                             .foregroundStyle(.primary)
                         Text(message)
-                            .font(.subheadline)
+                            .font(.footnote)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
+                        if let detail, !detail.isEmpty {
+                            Text(detail)
+                                .font(.caption2)
+                                .foregroundStyle(.tertiary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
                     }
                     Spacer(minLength: 0)
                 }
-                .padding(20)
-                .background(.white.opacity(0.82), in: RoundedRectangle(cornerRadius: 28, style: .continuous))
+                .padding(16)
+                .background(.white.opacity(0.88), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                    RoundedRectangle(cornerRadius: 22, style: .continuous)
                         .stroke(Color.white.opacity(0.86), lineWidth: 1)
                 )
-                .shadow(color: warmSand.opacity(0.18), radius: 20, y: 12)
-                .padding(.horizontal, 24)
+                .shadow(color: warmSand.opacity(0.14), radius: 16, y: 8)
+                .padding(.horizontal, 20)
 
                 Spacer()
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

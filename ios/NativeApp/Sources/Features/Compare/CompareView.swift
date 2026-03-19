@@ -27,9 +27,9 @@ public struct CompareView: View {
                     if items.isEmpty {
                         EmptyStateView(
                             icon: "square.split.2x2",
-                            title: "아직 비교할 유치원을 선택하지 않았습니다.",
-                            message: "탐색 화면에서 비교 목록에 추가하면 여기서 바로 비교할 수 있습니다.",
-                            ctaLabel: "탐색으로 이동"
+                            title: "비교할 유치원이 없어요",
+                            message: "검색 화면에서 비교 목록에 담아두면 여기에서 바로 비교할 수 있어요.",
+                            ctaLabel: "유치원 검색하기"
                         ) {
                             model.selectedTab = .search
                         }
@@ -104,18 +104,18 @@ public struct CompareView: View {
                 .padding(20)
             }
             .background(mistWhite)
-            .navigationTitle("비교")
+            .navigationTitle("비교 목록")
         }
     }
 
     private var summaryLine: String {
         switch items.count {
         case 1:
-            return "선택한 1곳의 핵심 지표입니다. 검색 화면에서 최대 2곳까지 더 추가할 수 있습니다."
+            return "선택한 1곳의 핵심 정보를 보여드려요. 비교 목록에 1곳 더 담으면 나란히 비교할 수 있어요."
         case 2:
-            return "선택한 2곳의 핵심 지표를 나란히 비교합니다."
+            return "선택한 2곳 유치원의 핵심 정보를 나란히 비교해요."
         default:
-            return "선택한 \(items.count)곳의 핵심 지표를 나란히 비교합니다."
+            return "선택한 \(items.count)곳 유치원의 핵심 정보를 나란히 비교해요."
         }
     }
 
