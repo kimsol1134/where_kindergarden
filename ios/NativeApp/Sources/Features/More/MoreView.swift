@@ -40,17 +40,22 @@ public struct MoreView: View {
                             title: "안내와 문의",
                             subtitle: "도움말과 정책을 한곳에서 확인할 수 있어요."
                         ) {
-                            Link(destination: URL(string: "mailto:support@where-kindergarten.com")!) {
-                                Text("문의하기")
+                            Link(destination: URL(string: "https://apps.apple.com/app/id6758149645?action=write-review")!) {
+                                Text("앱스토어 리뷰")
                                     .font(.footnote.weight(.semibold))
                                     .foregroundStyle(inkBlack)
                                     .padding(.horizontal, 14)
                                     .padding(.vertical, 10)
-                                    .background(jadeGreen.opacity(0.20), in: Capsule())
+                                    .background(sunYellow.opacity(0.28), in: Capsule())
                             }
                         }
                         .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 10, trailing: 0))
                         .listRowBackground(Color.clear)
+
+                        IntroCard(
+                            title: "가까운 유치원을 빠르게 찾고, 저장하고, 비교해 보세요.",
+                            message: "후기와 기본 정보를 함께 보여드려서 동네 선택이 더 쉬워져요."
+                        )
 
                         ExternalRow(
                             title: "문의하기",
@@ -69,11 +74,6 @@ public struct MoreView: View {
                             subtitle: "기능과 이용 방법을 빠르게 볼 수 있어요.",
                             systemImage: "questionmark.circle",
                             url: URL(string: "https://where-kindergarden.vercel.app/#faq")!
-                        )
-
-                        IntroCard(
-                            title: "가까운 유치원을 빠르게 찾고, 저장하고, 비교해 보세요.",
-                            message: "후기와 기본 정보를 함께 보여드려서 동네 선택이 더 쉬워져요."
                         )
                     }
 
@@ -96,11 +96,29 @@ public struct MoreView: View {
                         #if canImport(UIKit)
                         if model.shouldShowLocationSettingsCTA {
                             Link(destination: URL(string: UIApplication.openSettingsURLString)!) {
-                                HStack {
-                                    Label("위치 권한 설정 열기", systemImage: "gear")
+                                HStack(spacing: 12) {
+                                    ZStack {
+                                        Circle()
+                                            .fill(sunYellow.opacity(0.20))
+                                            .frame(width: 36, height: 36)
+                                        Image(systemName: "gear")
+                                            .font(.callout.weight(.bold))
+                                            .foregroundStyle(inkBlack)
+                                    }
+                                    VStack(alignment: .leading, spacing: 4) {
+                                        Text("위치 권한 설정 열기")
+                                            .font(.subheadline.weight(.semibold))
+                                            .foregroundStyle(inkBlack)
+                                        Text("위치를 허용하면 근처 유치원을 바로 찾을 수 있어요.")
+                                            .font(.caption)
+                                            .foregroundStyle(slateBlue)
+                                    }
                                     Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .foregroundStyle(slateSoft)
                                 }
-                                .padding(.vertical, 4)
+                                .padding(16)
+                                .solidPanel(cornerRadius: CornerRadius.medium, tint: sunYellow.opacity(0.08))
                             }
                             .buttonStyle(.plain)
                         }
@@ -169,7 +187,7 @@ private struct IntroCard: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(18)
-        .glassPanel(cornerRadius: 28)
+        .glassPanel(cornerRadius: CornerRadius.large)
         .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 8, trailing: 0))
         .listRowBackground(Color.clear)
     }
@@ -228,7 +246,7 @@ private struct ExternalRow: View {
                     .foregroundStyle(slateSoft)
             }
             .padding(16)
-            .solidPanel(cornerRadius: 24, tint: paperWhite.opacity(0.94))
+            .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.94))
         }
         .buttonStyle(.plain)
     }

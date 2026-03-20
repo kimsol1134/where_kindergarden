@@ -35,8 +35,11 @@ public struct SavedView: View {
                             EmptyStateView(
                                 icon: "heart",
                                 title: "찜한 곳이 아직 없어요",
-                                message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요."
-                            )
+                                message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요.",
+                                ctaLabel: "유치원 찾아보기"
+                            ) {
+                                model.selectedTab = .search
+                            }
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
                         } else {
@@ -70,6 +73,19 @@ public struct SavedView: View {
                                         Label("삭제", systemImage: "trash")
                                     }
                                 }
+                                .contextMenu {
+                                    Button {
+                                        model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                    } label: {
+                                        Label("열기", systemImage: "arrow.up.forward.app")
+                                    }
+                                    Button(role: .destructive) {
+                                        guard let removed = model.takeFavorite(kindercode: kindergarten.kindercode) else { return }
+                                        stageUndo(.favorites([removed]))
+                                    } label: {
+                                        Label("삭제", systemImage: "trash")
+                                    }
+                                }
                             }
                             .onDelete { offsets in
                                 let removed = model.takeFavorites(atOffsets: offsets)
@@ -90,8 +106,11 @@ public struct SavedView: View {
                             EmptyStateView(
                                 icon: "clock.arrow.circlepath",
                                 title: "최근 찾은 곳이 없어요",
-                                message: "동네 이름이나 현재 위치로 찾으면 여기에 남아요."
-                            )
+                                message: "동네 이름이나 현재 위치로 찾으면 여기에 남아요.",
+                                ctaLabel: "유치원 찾아보기"
+                            ) {
+                                model.selectedTab = .search
+                            }
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
                         } else {
@@ -170,6 +189,14 @@ public struct SavedView: View {
                     .padding(.bottom, 8)
                 }
             }
+            .task(id: pendingUndo?.id) {
+                guard pendingUndo != nil else { return }
+                try? await Task.sleep(for: .seconds(6))
+                guard !Task.isCancelled else { return }
+                withAnimation {
+                    pendingUndo = nil
+                }
+            }
         }
     }
 
@@ -214,7 +241,7 @@ private struct UndoBanner: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 14)
-        .glassPanel(cornerRadius: 24)
+        .glassPanel(cornerRadius: CornerRadius.medium)
     }
 }
 
@@ -262,9 +289,14 @@ private struct FavoriteSavedCard: View {
 
                 Spacer(minLength: 12)
 
-                Image(systemName: "chevron.right")
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(slateSoft)
+                VStack(spacing: 8) {
+                    Image(systemName: "heart.fill")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(sunYellow)
+                    Image(systemName: "chevron.right")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(slateSoft)
+                }
             }
 
             HStack(spacing: 8) {
@@ -280,7 +312,7 @@ private struct FavoriteSavedCard: View {
             }
         }
         .padding(18)
-        .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.94))
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
     }
 }
 
@@ -316,7 +348,7 @@ private struct RecentSavedCard: View {
             }
         }
         .padding(16)
-        .solidPanel(cornerRadius: 24, tint: paperWhite.opacity(0.94))
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.94))
     }
 }
 

@@ -175,7 +175,7 @@ public struct SearchHomeView: View {
                     .padding(.bottom, 56)
                 }
             }
-            .fullScreenCover(item: sheetSelection) { kindergarten in
+            .sheet(item: sheetSelection) { kindergarten in
                 KindergartenDetailSheet(
                     kindergarten: kindergarten,
                     reviews: model.reviews(for: kindergarten.kindercode),
@@ -189,6 +189,8 @@ public struct SearchHomeView: View {
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                 )
+                .presentationDetents([.large])
+                .presentationDragIndicator(.visible)
             }
         }
         .toolbar(.hidden, for: .navigationBar)
@@ -361,7 +363,7 @@ private struct SearchChrome: View {
                     .padding(.horizontal, 18)
                     .padding(.vertical, 16)
                     .background(
-                        RoundedRectangle(cornerRadius: 24, style: .continuous)
+                        RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
                             .fill(paperWhite.opacity(0.88))
                     )
 
@@ -387,13 +389,17 @@ private struct SearchChrome: View {
                             .padding(.horizontal, 18)
                             .padding(.vertical, 18)
                         }
+                        #if canImport(UIKit)
+                        .frame(maxHeight: min(280, UIScreen.main.bounds.height * 0.35))
+                        #else
                         .frame(maxHeight: 280)
+                        #endif
                     }
                 }
                 .padding(.horizontal, 18)
                 .padding(.bottom, 14)
             }
-            .solidPanel(cornerRadius: 32, tint: paperWhite.opacity(0.96))
+            .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
             .onChange(of: isSearchFieldFocused) { _, isFocused in
                 isSuggestionPanelPresented = isFocused
             }
@@ -425,14 +431,24 @@ private struct SearchChrome: View {
                     if model.searchHomePresentationState != .firstVisit {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 10) {
-                                FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true, variant: .selector) {
-                                    let nextRadius: Double = model.filters.radiusKM == 1 ? 2 : model.filters.radiusKM == 2 ? 5 : 1
-                                    model.updateRadius(to: nextRadius)
+                                Menu {
+                                    ForEach([1.0, 2.0, 5.0], id: \.self) { radius in
+                                        Button("반경 \(Int(radius))km") {
+                                            model.updateRadius(to: radius)
+                                        }
+                                    }
+                                } label: {
+                                    FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true, variant: .selector, action: {})
                                 }
                                 .sensoryFeedback(.selection, trigger: model.filters.radiusKM)
-                                FilterChip(label: model.filters.sort.label, isActive: true, variant: .selector) {
-                                    let next: SortOption = model.filters.sort == .distance ? .capacity : model.filters.sort == .capacity ? .areaPerChild : .distance
-                                    model.updateSort(to: next)
+                                Menu {
+                                    ForEach(SortOption.allCases, id: \.self) { option in
+                                        Button(option.label) {
+                                            model.updateSort(to: option)
+                                        }
+                                    }
+                                } label: {
+                                    FilterChip(label: model.filters.sort.label, isActive: true, variant: .selector, action: {})
                                 }
                                 .sensoryFeedback(.selection, trigger: model.filters.sort)
                                 FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
@@ -482,8 +498,11 @@ private struct SearchChrome: View {
                             .controlSize(.small)
                         Text("정보를 불러오는 중")
                             .font(.caption)
-                        .foregroundStyle(.secondary)
+                            .foregroundStyle(.secondary)
                     }
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
                 }
 
                 if let mapStatusMessage, model.searchHomePresentationState != .firstVisit {
@@ -695,7 +714,7 @@ private struct SearchSuggestionRow: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .solidPanel(cornerRadius: 22, tint: paperWhite.opacity(0.88))
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
     }
 }
 
@@ -708,6 +727,14 @@ private struct ResultSheet: View {
 
     private var results: [Kindergarten] { model.results }
     private var isLoading: Bool { model.isCatalogLoading || model.isReviewsLoading }
+    private var dynamicHeightRatio: CGFloat {
+        #if canImport(UIKit)
+        let isCompact = UIScreen.main.bounds.height < 700
+        return isCompact ? 0.48 : 0.58
+        #else
+        return 0.58
+        #endif
+    }
     private var comparedIDs: Set<String> { Set(model.compareSelection.ids) }
     private var favoriteIDs: Set<String> { Set(model.favorites.map(\.kindercode)) }
     private var sectionTitle: String {
@@ -852,16 +879,12 @@ private struct ResultSheet: View {
                     }
                     .padding(.bottom, 8)
                 }
-                #if canImport(UIKit)
-                .frame(maxHeight: UIScreen.main.bounds.height * 0.58)
-                #else
-                .frame(maxHeight: 520)
-                #endif
+                .frame(maxHeight: UIScreen.main.bounds.height * dynamicHeightRatio)
             }
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)
-        .solidPanel(cornerRadius: 34, tint: paperWhite.opacity(0.96))
+        .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
     }
 }
 
@@ -919,79 +942,81 @@ private struct SearchResultCard: View {
     let reviewsVersion: String?
 
     var body: some View {
-        HStack(alignment: .top, spacing: 14) {
-            VStack(alignment: .leading, spacing: 10) {
-                HStack(alignment: .top) {
-                    NativeBadge(kindergarten.type.label)
-                    Spacer(minLength: 12)
-                    Text(distanceText)
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(slateBlue)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 6)
-                        .background(slateBlue.opacity(0.08), in: Capsule())
-                }
+        Button(action: onTap) {
+            HStack(alignment: .top, spacing: 14) {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack(alignment: .top) {
+                        NativeBadge(kindergarten.type.label)
+                        Spacer(minLength: 12)
+                        Text(distanceText)
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(slateBlue)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 6)
+                            .background(slateBlue.opacity(0.08), in: Capsule())
+                    }
 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(kindergarten.name)
-                        .font(.headline.weight(.bold))
-                        .foregroundStyle(inkBlack)
-                        .lineLimit(2)
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(kindergarten.name)
+                            .font(.headline.weight(.bold))
+                            .foregroundStyle(inkBlack)
+                            .lineLimit(2)
 
-                    Text(supportLine)
-                        .font(.footnote)
-                        .foregroundStyle(slateBlue)
-                        .lineLimit(2)
-                }
+                        Text(supportLine)
+                            .font(.footnote)
+                            .foregroundStyle(slateBlue)
+                            .lineLimit(2)
+                    }
 
-                if !highlightItems.isEmpty {
-                    HStack(spacing: 8) {
-                        ForEach(highlightItems, id: \.title) { item in
-                            NativeBadge(item.title, tone: item.tone)
+                    if !highlightItems.isEmpty {
+                        HStack(spacing: 8) {
+                            ForEach(highlightItems, id: \.title) { item in
+                                NativeBadge(item.title, tone: item.tone)
+                            }
                         }
                     }
                 }
-            }
 
-            VStack(spacing: 10) {
-                Button(action: onToggleCompare) {
-                    Image(systemName: isCompared ? "checkmark" : "plus")
-                        .font(.system(size: 14, weight: .black))
-                        .foregroundStyle(isCompared ? inkBlack : jadeDeep)
-                        .frame(width: 38, height: 38)
-                        .background(
-                            Circle()
-                                .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
-                        )
-                }
-                .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
-                .buttonStyle(.plain)
-                .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
+                VStack(spacing: 12) {
+                    Button(action: onToggleCompare) {
+                        Image(systemName: isCompared ? "checkmark" : "plus")
+                            .font(.system(size: 14, weight: .black))
+                            .foregroundStyle(isCompared ? inkBlack : jadeDeep)
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
+                            )
+                    }
+                    .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
+                    .buttonStyle(.borderless)
+                    .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
 
-                Button(action: onToggleFavorite) {
-                    Image(systemName: isFavorite ? "heart.fill" : "heart")
-                        .font(.system(size: 14, weight: .black))
-                        .foregroundStyle(isFavorite ? inkBlack : sandDeep)
-                        .frame(width: 38, height: 38)
-                        .background(
-                            Circle()
-                                .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.30))
-                        )
+                    Button(action: onToggleFavorite) {
+                        Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            .font(.system(size: 14, weight: .black))
+                            .foregroundStyle(isFavorite ? inkBlack : slateBlue)
+                            .frame(width: 44, height: 44)
+                            .background(
+                                Circle()
+                                    .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
+                            )
+                    }
+                    .buttonStyle(.borderless)
+                    .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
                 }
-                .buttonStyle(.plain)
-                .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
             }
         }
+        .buttonStyle(.plain)
         .padding(cardPadding)
-        .solidPanel(cornerRadius: 30, tint: paperWhite.opacity(0.95))
-        .contentShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .onTapGesture(perform: onTap)
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
         .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
     }
 }
 
 private struct KindergartenDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
+    @State private var showAllReviews = false
     let kindergarten: Kindergarten
     let reviews: [ReviewLink]
     let reviewsVersion: String?
@@ -1180,12 +1205,6 @@ private struct KindergartenDetailSheet: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 VStack(alignment: .leading, spacing: 18) {
-                    Capsule()
-                        .fill(slateSoft.opacity(0.24))
-                        .frame(width: 46, height: 5)
-                        .frame(maxWidth: .infinity)
-                        .padding(.bottom, 4)
-
                     HStack(alignment: .top) {
                         HStack(spacing: 8) {
                             ForEach(Array(heroBadges.enumerated()), id: \.offset) { _, item in
@@ -1199,7 +1218,7 @@ private struct KindergartenDetailSheet: View {
                             Image(systemName: "xmark")
                                 .font(.system(size: 14, weight: .bold))
                                 .foregroundStyle(slateBlue)
-                                .frame(width: 32, height: 32)
+                                .frame(width: 44, height: 44)
                                 .background(paperWhite.opacity(0.88), in: Circle())
                         }
                         .buttonStyle(.plain)
@@ -1259,7 +1278,7 @@ private struct KindergartenDetailSheet: View {
                     }
                 }
                 .padding(22)
-                .solidPanel(cornerRadius: 34, tint: paperWhite.opacity(0.98))
+                .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.98))
 
                 NativeFactSummaryCard(
                     title: "눈여겨볼 점",
@@ -1305,7 +1324,7 @@ private struct KindergartenDetailSheet: View {
                                 .font(.subheadline)
                                 .foregroundStyle(slateBlue)
                         } else {
-                            ForEach(reviews.prefix(3)) { review in
+                            ForEach(showAllReviews ? reviews : Array(reviews.prefix(3))) { review in
                                 if let url = URL(string: review.url) {
                                     Link(destination: url) {
                                         ReviewCard(review: review)
@@ -1317,9 +1336,22 @@ private struct KindergartenDetailSheet: View {
                             }
 
                             if reviews.count > 3 {
-                                Text("후기 3개만 먼저 보여드려요.")
-                                    .font(.caption)
-                                    .foregroundStyle(slateSoft)
+                                Button {
+                                    withAnimation(.easeInOut(duration: 0.25)) {
+                                        showAllReviews.toggle()
+                                    }
+                                } label: {
+                                    HStack(spacing: 6) {
+                                        Text(showAllReviews ? "접기" : "전체 후기 보기 (\(reviews.count)건)")
+                                            .font(.footnote.weight(.semibold))
+                                        Image(systemName: showAllReviews ? "chevron.up" : "chevron.down")
+                                            .font(.caption2.weight(.bold))
+                                    }
+                                    .foregroundStyle(jadeDeep)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 10)
+                                }
+                                .buttonStyle(.plain)
                             }
                         }
                     }
@@ -1371,7 +1403,7 @@ private struct KindergartenDetailSheet: View {
                     .padding(.top, 8)
             }
             .padding(24)
-            .padding(.bottom, 48)
+            .padding(.bottom, 24)
         }
         .background {
             NativeScreenBackground(topTintOpacity: 0.14)
@@ -1401,7 +1433,7 @@ private struct VacancyStatusCard: View {
                 infoCard(
                     title: "빈 자리 정보를 불러오지 못했어요",
                     message: errorMessage,
-                    tint: .red
+                    tint: sunYellow
                 )
             } else if let summary, summary.vacancyCount > 0 {
                 VStack(alignment: .leading, spacing: 12) {
@@ -1418,7 +1450,7 @@ private struct VacancyStatusCard: View {
                         if let formattedUpdatedAt {
                             Text(formattedUpdatedAt)
                                 .font(.caption.weight(.semibold))
-                                .foregroundStyle(.red)
+                                .foregroundStyle(sunYellow)
                         }
                     }
 
@@ -1436,17 +1468,17 @@ private struct VacancyStatusCard: View {
                                     Spacer()
                                     Text("\(detail.vacancyCount)명")
                                         .font(.subheadline.weight(.bold))
-                                        .foregroundStyle(.red)
+                                        .foregroundStyle(sunYellow)
                                 }
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 10)
-                                .background(.white.opacity(0.92), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                                .background(paperWhite.opacity(0.92), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                             }
                         }
                     }
                 }
                 .padding(16)
-                .background(Color.red.opacity(0.06), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .background(sunYellow.opacity(0.10), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
             } else if summary != nil {
                 infoCard(
                     title: "현재 빈 자리가 없어요",
@@ -1462,7 +1494,7 @@ private struct VacancyStatusCard: View {
             }
         }
         .padding(18)
-        .background(.white, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .background(paperWhite, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
     }
 
     private func infoCard(title: String, message: String, tint: Color) -> some View {
@@ -1476,7 +1508,7 @@ private struct VacancyStatusCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(16)
-        .background(tint.opacity(0.08), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .background(tint.opacity(0.08), in: RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous))
     }
 }
 
@@ -1531,9 +1563,9 @@ private struct DetailActionButtonLabel: View {
         .foregroundStyle(inkBlack)
         .frame(maxWidth: .infinity)
         .padding(.vertical, 14)
-        .background(backgroundColor, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .background(backgroundColor, in: RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous))
         .overlay(
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
+            RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous)
                 .stroke(strokeColor, lineWidth: 1)
         )
     }
@@ -1600,7 +1632,7 @@ private struct NativeFactSummaryCard: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(18)
-        .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.94))
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
     }
 }
 
@@ -1636,7 +1668,7 @@ private struct DetailLinkRow: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .solidPanel(cornerRadius: 22, tint: paperWhite)
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite)
     }
 }
 
@@ -1671,7 +1703,7 @@ private struct ReviewCard: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .solidPanel(cornerRadius: 22, tint: paperWhite)
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite)
     }
 }
 
@@ -1828,7 +1860,7 @@ private struct InlineNotice: View {
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 10)
-        .solidPanel(cornerRadius: 20, tint: paperWhite.opacity(0.88))
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
     }
 }
 
@@ -1875,7 +1907,7 @@ private struct SearchWelcomeCard: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(18)
-        .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.96))
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.96))
     }
 }
 
@@ -1889,7 +1921,7 @@ private struct CompactMapStatusCard: View {
                     .fill(jadeGreen.opacity(0.16))
                     .frame(width: 30, height: 30)
                 Image(systemName: "map.circle.fill")
-                    .font(.system(size: 13, weight: .bold))
+                    .font(.footnote.weight(.bold))
                     .foregroundStyle(jadeDeep)
             }
 
@@ -1907,7 +1939,7 @@ private struct CompactMapStatusCard: View {
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 10)
-        .solidPanel(cornerRadius: 22, tint: paperWhite.opacity(0.88))
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
     }
 }
 
