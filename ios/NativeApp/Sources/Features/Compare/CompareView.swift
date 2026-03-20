@@ -19,11 +19,8 @@ public struct CompareView: View {
 
     public var body: some View {
         NavigationStack {
-            ZStack {
-                NativeScreenBackground()
-
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 18) {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
                         NativeScreenHeader(
                             eyebrow: "비교",
                             title: "나란히 보기",
@@ -111,9 +108,11 @@ public struct CompareView: View {
                             .padding(.top, 8)
                         #endif
                     }
-                    .padding(20)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 12)
+                    .padding(.bottom, 20)
                 }
-            }
+            .background { NativeScreenBackground() }
         }
     }
 
@@ -250,6 +249,7 @@ private struct CompareInsightCard: View {
             Text(message)
                 .font(.subheadline)
                 .foregroundStyle(slateBlue)
+                .lineSpacing(3)
         }
         .padding(20)
         .glassPanel(cornerRadius: CornerRadius.large)
@@ -290,9 +290,10 @@ private struct CompareHeaderCard: View {
             }
         }
         .padding(18)
-        .frame(width: 220, alignment: .leading)
+        .frame(minWidth: 180, idealWidth: 220, maxWidth: 280, alignment: .leading)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
         .accessibilityIdentifier("compare.card.\(item.kindercode)")
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -334,6 +335,8 @@ private struct CompareMatrix: View {
         ]
     }
 
+    @ScaledMetric(relativeTo: .footnote) private var columnWidth: CGFloat = 100
+
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("비교표")
@@ -352,7 +355,7 @@ private struct CompareMatrix: View {
                             Text(shortHeader(for: header))
                                 .font(.caption.weight(.bold))
                                 .foregroundStyle(inkBlack)
-                                .frame(minWidth: 100, maxWidth: .infinity, alignment: .center)
+                                .frame(minWidth: columnWidth, maxWidth: .infinity, alignment: .center)
                                 .lineLimit(1)
                         }
                     }
@@ -363,8 +366,12 @@ private struct CompareMatrix: View {
                 }
                 .padding(18)
                 .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
+                .scrollTargetLayout()
             }
+            .scrollTargetBehavior(.viewAligned)
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("비교표. \(items.count)곳 비교")
     }
 
     private func highlightedIndexes(for winningIndex: Int?) -> Set<Int> {
@@ -393,6 +400,7 @@ private struct CompareMatrixRowModel: Identifiable {
 
 private struct CompareMatrixRow: View {
     let row: CompareMatrixRowModel
+    @ScaledMetric(relativeTo: .footnote) private var columnWidth: CGFloat = 100
 
     var body: some View {
         HStack(spacing: 10) {
@@ -405,7 +413,7 @@ private struct CompareMatrixRow: View {
                 Text(value)
                     .font(.footnote.weight(.semibold))
                     .foregroundStyle(row.highlightedIndexes.contains(index) ? inkBlack : slateBlue)
-                    .frame(minWidth: 100, maxWidth: .infinity)
+                    .frame(minWidth: columnWidth, maxWidth: .infinity)
                     .padding(.vertical, 14)
                     .background(
                         row.highlightedIndexes.contains(index)

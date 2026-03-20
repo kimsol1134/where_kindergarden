@@ -120,27 +120,23 @@ public struct NativeScreenHeader<Accessory: View>: View {
 
     public var body: some View {
         HStack(alignment: .top, spacing: 14) {
-            HStack(alignment: .top, spacing: 12) {
-                BrandGlyphView(size: 42, cornerRadius: 14)
-
-                VStack(alignment: .leading, spacing: 4) {
-                    if let eyebrow {
-                        Text(eyebrow)
-                            .font(.caption2.weight(.black))
-                            .foregroundStyle(slateSoft)
-                            .textCase(.uppercase)
-                    }
-
-                    Text(title)
-                        .font(.title3.weight(.bold))
-                        .foregroundStyle(inkBlack)
-                        .lineLimit(2)
-
-                    Text(subtitle)
-                        .font(.footnote)
-                        .foregroundStyle(slateBlue)
-                        .lineLimit(2)
+            VStack(alignment: .leading, spacing: 4) {
+                if let eyebrow {
+                    Text(eyebrow)
+                        .font(.caption2.weight(.black))
+                        .foregroundStyle(slateSoft)
+                        .textCase(.uppercase)
                 }
+
+                Text(title)
+                    .font(.title3.weight(.bold))
+                    .foregroundStyle(inkBlack)
+                    .lineLimit(2)
+
+                Text(subtitle)
+                    .font(.footnote)
+                    .foregroundStyle(slateBlue)
+                    .lineLimit(2)
             }
 
             Spacer(minLength: 12)
@@ -244,6 +240,17 @@ public extension View {
 
     func nativeSectionPanel(cornerRadius: CGFloat = CornerRadius.large) -> some View {
         modifier(NativeSectionPanelModifier(cornerRadius: cornerRadius))
+    }
+}
+
+public struct PressableCardStyle: ButtonStyle {
+    public init() {}
+
+    public func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
+            .opacity(configuration.isPressed ? 0.92 : 1.0)
+            .animation(.spring(duration: 0.2), value: configuration.isPressed)
     }
 }
 

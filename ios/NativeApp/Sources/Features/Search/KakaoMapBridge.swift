@@ -103,14 +103,13 @@ private struct MapUnavailablePlaceholder: View {
                         Spacer(minLength: max(220, proxy.size.height * 0.46))
 
                         HStack(alignment: .top, spacing: 14) {
-                            ZStack(alignment: .bottomTrailing) {
-                                BrandGlyphView(size: 46, cornerRadius: 16)
+                            ZStack {
+                                Circle()
+                                    .fill(jadeGreen.opacity(0.16))
+                                    .frame(width: 46, height: 46)
                                 Image(systemName: "map.circle.fill")
-                                    .font(.system(size: 14, weight: .bold))
-                                    .foregroundStyle(inkBlack)
-                                    .padding(8)
-                                    .background(sunYellow.opacity(0.92), in: Circle())
-                                    .offset(x: 6, y: 8)
+                                    .font(.title2.weight(.bold))
+                                    .foregroundStyle(jadeDeep)
                             }
 
                             VStack(alignment: .leading, spacing: 8) {

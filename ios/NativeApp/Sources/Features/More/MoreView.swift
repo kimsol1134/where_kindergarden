@@ -30,10 +30,7 @@ public struct MoreView: View {
 
     public var body: some View {
         NavigationStack {
-            ZStack {
-                NativeScreenBackground(topTintOpacity: 0.16)
-
-                List {
+            List {
                     Section {
                         NativeScreenHeader(
                             eyebrow: "앱 정보",
@@ -49,7 +46,7 @@ public struct MoreView: View {
                                     .background(sunYellow.opacity(0.28), in: Capsule())
                             }
                         }
-                        .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 10, trailing: 0))
+                        .listRowInsets(EdgeInsets(top: 16, leading: 20, bottom: 10, trailing: 20))
                         .listRowBackground(Color.clear)
 
                         IntroCard(
@@ -149,12 +146,11 @@ public struct MoreView: View {
                     }
                     #endif
                 }
-                .listStyle(.plain)
-                .scrollContentBackground(.hidden)
-                .background(Color.clear)
-                .task {
-                    model.refreshLocationPermissionState()
-                }
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
+            .background { NativeScreenBackground(topTintOpacity: 0.16) }
+            .task {
+                model.refreshLocationPermissionState()
             }
         }
     }
@@ -188,7 +184,7 @@ private struct IntroCard: View {
         }
         .padding(18)
         .glassPanel(cornerRadius: CornerRadius.large)
-        .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 8, trailing: 0))
+        .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 8, trailing: 20))
         .listRowBackground(Color.clear)
     }
 }
@@ -210,6 +206,7 @@ private struct StatRow: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.vertical, 4)
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -248,6 +245,7 @@ private struct ExternalRow: View {
             .padding(16)
             .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.94))
         }
-        .buttonStyle(.plain)
+        .buttonStyle(PressableCardStyle())
+        .accessibilityElement(children: .combine)
     }
 }

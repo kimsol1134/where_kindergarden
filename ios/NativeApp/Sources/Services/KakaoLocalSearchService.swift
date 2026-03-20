@@ -265,7 +265,7 @@ public protocol KakaoLocalSearching: Sendable {
 public struct KakaoLocalAPIClient: KakaoLocalSearching {
     public let isConfigured: Bool
 
-    private static let defaultBaseURL = URL(string: "https://dapi.kakao.com")!
+    public static let defaultBaseURL = URL(string: "https://dapi.kakao.com")!
 
     private let apiKey: String?
     private let session: URLSession

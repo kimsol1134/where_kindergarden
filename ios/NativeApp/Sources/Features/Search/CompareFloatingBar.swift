@@ -42,8 +42,11 @@ struct CompareFloatingBar: View {
                                     Image(systemName: "xmark")
                                         .font(.system(size: 8, weight: .bold))
                                         .foregroundStyle(slateSoft)
+                                        .frame(width: 44, height: 44)
+                                        .contentShape(Circle())
                                 }
                                 .buttonStyle(.plain)
+                                .accessibilityLabel("\(name) 비교에서 빼기")
                             }
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)
@@ -77,5 +80,6 @@ struct CompareFloatingBar: View {
         .padding(.bottom, 2)
         .transition(reduceMotion ? .opacity : .move(edge: .bottom).combined(with: .opacity))
         .accessibilityIdentifier("search.compareBar")
+        .accessibilityLabel("비교할 곳 \(count)곳. \(statusText)")
     }
 }
