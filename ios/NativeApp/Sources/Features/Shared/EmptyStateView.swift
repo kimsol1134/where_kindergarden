@@ -28,7 +28,7 @@ public struct EmptyStateView: View {
                     .fill(jadeGreen.opacity(0.16))
                     .frame(width: 60, height: 60)
                 Image(systemName: icon)
-                    .font(.system(size: 20, weight: .bold))
+                    .font(.title3.weight(.bold))
                     .foregroundStyle(jadeDeep)
             }
 
@@ -66,6 +66,6 @@ public struct EmptyStateView: View {
         .frame(maxWidth: .infinity)
         .padding(.vertical, 28)
         .padding(.horizontal, 22)
-        .solidPanel(cornerRadius: 26, tint: paperWhite.opacity(0.95))
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
     }
 }

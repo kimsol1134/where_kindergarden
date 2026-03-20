@@ -167,7 +167,7 @@ public struct NativeBadge: View {
 
         fileprivate var background: Color {
             switch self {
-            case .jade: return jadeGreen.opacity(0.14)
+            case .jade: return jadeGreen.opacity(0.20)
             case .sun: return sunYellow.opacity(0.30)
             case .slate: return slateBlue.opacity(0.10)
             case .sand: return warmSand.opacity(0.26)
@@ -234,15 +234,15 @@ public struct NativeMetricTile: View {
 }
 
 public extension View {
-    func glassPanel(cornerRadius: CGFloat = 28) -> some View {
+    func glassPanel(cornerRadius: CGFloat = CornerRadius.large) -> some View {
         modifier(NativeGlassPanelModifier(cornerRadius: cornerRadius))
     }
 
-    func solidPanel(cornerRadius: CGFloat = 26, tint: Color = paperWhite) -> some View {
+    func solidPanel(cornerRadius: CGFloat = CornerRadius.large, tint: Color = paperWhite) -> some View {
         modifier(NativeSolidPanelModifier(cornerRadius: cornerRadius, tint: tint))
     }
 
-    func nativeSectionPanel(cornerRadius: CGFloat = 28) -> some View {
+    func nativeSectionPanel(cornerRadius: CGFloat = CornerRadius.large) -> some View {
         modifier(NativeSectionPanelModifier(cornerRadius: cornerRadius))
     }
 }

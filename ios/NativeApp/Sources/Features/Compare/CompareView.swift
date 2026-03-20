@@ -48,29 +48,65 @@ public struct CompareView: View {
                             }
                             .accessibilityIdentifier("compare.emptyState")
                         } else {
-                            CompareInsightCard(
-                                title: compareInsightTitle,
-                                message: compareInsightMessage,
-                                summary: comparisonWinnerLine
-                            )
-
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 14) {
-                                    ForEach(items) { item in
-                                        CompareHeaderCard(item: item) {
-                                            model.toggleCompare(for: item)
+                            if items.count == 1 {
+                                // Single item: summary card + CTA
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 14) {
+                                        ForEach(items) { item in
+                                            CompareHeaderCard(item: item) {
+                                                model.toggleCompare(for: item)
+                                            }
                                         }
                                     }
+                                    .padding(.vertical, 4)
                                 }
-                                .padding(.vertical, 4)
+
+                                VStack(alignment: .leading, spacing: 12) {
+                                    Text("한 곳 더 담으면 바로 비교할 수 있어요")
+                                        .font(.subheadline)
+                                        .foregroundStyle(slateBlue)
+                                    Button {
+                                        model.selectedTab = .search
+                                    } label: {
+                                        HStack(spacing: 6) {
+                                            Image(systemName: "plus.circle.fill")
+                                            Text("탐색에서 추가하기")
+                                        }
+                                        .font(.subheadline.weight(.semibold))
+                                        .foregroundStyle(inkBlack)
+                                        .padding(.horizontal, 18)
+                                        .padding(.vertical, 12)
+                                        .background(jadeGreen.opacity(0.22), in: Capsule())
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                                .nativeSectionPanel()
+                            } else {
+                                // 2+ items: full comparison
+                                CompareInsightCard(
+                                    title: compareInsightTitle,
+                                    message: compareInsightMessage,
+                                    summary: comparisonWinnerLine
+                                )
+
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 14) {
+                                        ForEach(items) { item in
+                                            CompareHeaderCard(item: item) {
+                                                model.toggleCompare(for: item)
+                                            }
+                                        }
+                                    }
+                                    .padding(.vertical, 4)
+                                }
+
+                                CompareMatrix(items: items, reviewCounts: items.map { model.reviews(for: $0.kindercode).count })
                             }
-
-                            CompareMatrix(items: items, reviewCounts: items.map { model.reviews(for: $0.kindercode).count })
-
-                            CompareConclusionCard(message: comparisonConclusion)
                         }
 
-                        shareActions
+                        if !items.isEmpty {
+                            shareActions
+                        }
 
                         #if canImport(GoogleMobileAds)
                         NativeAdBanner(adUnitID: model.configuration.adMobBannerUnitID)
@@ -132,27 +168,6 @@ public struct CompareView: View {
         return sentences.joined(separator: " ")
     }
 
-    private var comparisonConclusion: String {
-        let nearest = items.min(by: { $0.distance < $1.distance })
-        let roomiest = items.max(by: { $0.areaPerChild < $1.areaPerChild })
-        let mostReviewed = items.max(by: { model.reviews(for: $0.kindercode).count < model.reviews(for: $1.kindercode).count })
-
-        var parts: [String] = []
-
-        if let nearest {
-            parts.append("가까운 곳을 먼저 보면 \(nearest.name)")
-        }
-
-        if let roomiest, roomiest.kindercode != nearest?.kindercode {
-            parts.append("공간을 더 보면 \(roomiest.name)")
-        }
-
-        if let mostReviewed, model.reviews(for: mostReviewed.kindercode).count > 0 {
-            parts.append("후기는 \(mostReviewed.name) 쪽이 더 많아요")
-        }
-
-        return parts.joined(separator: " · ")
-    }
 
     @ViewBuilder
     private var shareActions: some View {
@@ -173,7 +188,7 @@ public struct CompareView: View {
                         .foregroundStyle(inkBlack)
                         .padding(.horizontal, 18)
                         .padding(.vertical, 16)
-                        .background(kakaoYellow, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                        .background(kakaoYellow, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                     }
                     .accessibilityIdentifier("compare.kakaoShareButton")
                     .buttonStyle(.plain)
@@ -192,17 +207,17 @@ public struct CompareView: View {
                     .foregroundStyle(inkBlack)
                     .padding(.horizontal, 18)
                     .padding(.vertical, 16)
-                    .background(jadeGreen.opacity(0.24), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .background(jadeGreen.opacity(0.24), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                 }
                 .accessibilityIdentifier("compare.shareButton")
                 .buttonStyle(.plain)
             }
-            .nativeSectionPanel(cornerRadius: 28)
+            .nativeSectionPanel(cornerRadius: CornerRadius.large)
         } else {
             Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
-                .solidPanel(cornerRadius: 24, tint: paperWhite.opacity(0.82))
+                .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.82))
                 .foregroundStyle(slateSoft)
         }
     }
@@ -240,23 +255,7 @@ private struct CompareInsightCard: View {
                 .foregroundStyle(slateBlue)
         }
         .padding(20)
-        .glassPanel(cornerRadius: 30)
-    }
-}
-
-private struct CompareConclusionCard: View {
-    let message: String
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("이렇게 보면 좋아요")
-                .font(.headline.weight(.semibold))
-                .foregroundStyle(inkBlack)
-            Text(message)
-                .font(.subheadline)
-                .foregroundStyle(slateBlue)
-        }
-        .nativeSectionPanel()
+        .glassPanel(cornerRadius: CornerRadius.large)
     }
 }
 
@@ -273,6 +272,8 @@ private struct CompareHeaderCard: View {
                     Image(systemName: "minus.circle.fill")
                         .font(.title3)
                         .foregroundStyle(slateSoft)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Circle())
                 }
                 .buttonStyle(.plain)
             }
@@ -293,7 +294,7 @@ private struct CompareHeaderCard: View {
         }
         .padding(18)
         .frame(width: 220, alignment: .leading)
-        .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.94))
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
         .accessibilityIdentifier("compare.card.\(item.kindercode)")
     }
 }
@@ -342,28 +343,30 @@ private struct CompareMatrix: View {
                 .font(.headline.weight(.bold))
                 .foregroundStyle(inkBlack)
 
-            VStack(spacing: 10) {
-                HStack(spacing: 10) {
-                    Text("항목")
-                        .font(.caption.weight(.heavy))
-                        .foregroundStyle(slateSoft)
-                        .frame(width: 70, alignment: .leading)
+            ScrollView(.horizontal, showsIndicators: false) {
+                VStack(spacing: 10) {
+                    HStack(spacing: 10) {
+                        Text("항목")
+                            .font(.caption.weight(.heavy))
+                            .foregroundStyle(slateSoft)
+                            .frame(width: 70, alignment: .leading)
 
-                    ForEach(Array(headers.enumerated()), id: \.offset) { _, header in
-                        Text(shortHeader(for: header))
-                            .font(.caption.weight(.bold))
-                            .foregroundStyle(inkBlack)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .lineLimit(1)
+                        ForEach(Array(headers.enumerated()), id: \.offset) { _, header in
+                            Text(shortHeader(for: header))
+                                .font(.caption.weight(.bold))
+                                .foregroundStyle(inkBlack)
+                                .frame(minWidth: 100, maxWidth: .infinity, alignment: .center)
+                                .lineLimit(1)
+                        }
+                    }
+
+                    ForEach(rows) { row in
+                        CompareMatrixRow(row: row)
                     }
                 }
-
-                ForEach(rows) { row in
-                    CompareMatrixRow(row: row)
-                }
+                .padding(18)
+                .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
             }
-            .padding(18)
-            .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.94))
         }
     }
 
@@ -405,16 +408,16 @@ private struct CompareMatrixRow: View {
                 Text(value)
                     .font(.footnote.weight(.semibold))
                     .foregroundStyle(row.highlightedIndexes.contains(index) ? inkBlack : slateBlue)
-                    .frame(maxWidth: .infinity)
+                    .frame(minWidth: 100, maxWidth: .infinity)
                     .padding(.vertical, 14)
                     .background(
                         row.highlightedIndexes.contains(index)
                             ? jadeGreen.opacity(0.18)
                             : paperWhite.opacity(0.86),
-                        in: RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        in: RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous)
                     )
                     .overlay(
-                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                        RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous)
                             .stroke(
                                 row.highlightedIndexes.contains(index)
                                     ? jadeGreen.opacity(0.24)
