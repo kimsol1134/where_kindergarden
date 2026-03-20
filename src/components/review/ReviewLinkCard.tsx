@@ -1,6 +1,7 @@
 'use client';
 
-import { ExternalLink, Trash2 } from 'lucide-react';
+import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import type { ReviewLink, ReviewSource } from '@/types';
 
 const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> = {
@@ -76,19 +77,16 @@ export function ReviewLinkCard({ review, onDeleteSuggestion }: ReviewLinkCardPro
                 )}
               </div>
               
-              {/* Optional: Indicator for full content availability */}
-
             </div>
           </div>
           <ExternalLink className="w-4 h-4 text-gray-300 group-hover:text-emerald-500 flex-shrink-0 mt-1 transition-colors" />
         </div>
       </a>
       
-      {/* Delete Suggestion Button */}
       {onDeleteSuggestion && (
         <button
           onClick={handleDeleteClick}
-          className="absolute bottom-2 right-2 p-1.5 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200 opacity-0 group-hover/card:opacity-100 hover:bg-red-50 hover:border-red-200 transition-all"
+          className="absolute bottom-2 right-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200 opacity-100 md:opacity-0 md:group-hover/card:opacity-100 hover:bg-red-50 hover:border-red-200 transition-all"
           title="삭제 제안"
         >
           <Trash2 className="w-3.5 h-3.5 text-red-400 hover:text-red-500" />

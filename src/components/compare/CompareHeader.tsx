@@ -1,7 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowLeft, Check, Link2, MessageCircle, Share2 } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import Check from 'lucide-react/dist/esm/icons/check';
+import Link2 from 'lucide-react/dist/esm/icons/link-2';
+import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
+import Share2 from 'lucide-react/dist/esm/icons/share-2';
 import { useRouter } from 'next/navigation';
 import { BrandMark } from '@/components/common/BrandMark';
 import { copyShareUrl, shareComparison } from '@/lib/share/kakaoShare';
@@ -14,6 +18,7 @@ export function CompareHeader() {
   const [copied, setCopied] = useState(false);
 
   const handleClearAll = () => {
+    if (!confirm('비교 목록을 모두 삭제할까요?')) return;
     clearAll();
     router.push('/search');
   };
@@ -46,19 +51,19 @@ export function CompareHeader() {
           <div className="flex min-w-0 items-center gap-3">
             <button
               onClick={() => router.back()}
-              className="rounded-full bg-white/80 p-2 text-[var(--brand-ink)] transition-colors hover:bg-white"
+              className="rounded-full bg-white/80 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--brand-ink)] transition-colors hover:bg-white"
               aria-label="뒤로 가기"
             >
               <ArrowLeft className="h-5 w-5" />
             </button>
             <div className="min-w-0">
               <BrandMark compact labelClassName="hidden sm:block text-base" />
-              <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">최대 3곳 비교 및 공유</p>
+              <p className="mt-1 whitespace-nowrap text-xs text-[var(--brand-ink-soft)]">최대 3곳 비교 및 공유</p>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="hidden text-sm text-[var(--brand-ink-soft)] md:block">
+            <span className="whitespace-nowrap text-sm text-[var(--brand-ink-soft)]">
               총 <span className="font-bold text-[var(--brand-leaf)]">{items.length}</span>개 비교 중
             </span>
             {items.length > 0 ? (
@@ -66,7 +71,7 @@ export function CompareHeader() {
                 <div className="relative">
                   <button
                     onClick={() => setShowShareMenu(!showShareMenu)}
-                    className="rounded-full bg-white/80 p-2 text-[var(--brand-ink-soft)] transition-colors hover:bg-white hover:text-[var(--brand-ink)]"
+                    className="rounded-full bg-white/80 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--brand-ink-soft)] transition-colors hover:bg-white hover:text-[var(--brand-ink)]"
                     aria-label="공유하기"
                   >
                     <Share2 className="h-5 w-5" />
@@ -75,14 +80,14 @@ export function CompareHeader() {
                     <div className="brand-card absolute right-0 top-full z-50 mt-2 min-w-[180px] rounded-[1.25rem] py-2">
                       <button
                         onClick={handleKakaoShare}
-                        className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
+                        className="flex w-full items-center gap-2 px-4 py-3 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
                       >
                         <MessageCircle className="h-4 w-4 text-[var(--brand-sun)]" />
                         카카오톡 공유
                       </button>
                       <button
                         onClick={handleCopyLink}
-                        className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
+                        className="flex w-full items-center gap-2 px-4 py-3 text-left text-sm text-[var(--brand-ink)] hover:bg-white/80"
                       >
                         {copied ? (
                           <>
@@ -101,7 +106,7 @@ export function CompareHeader() {
                 </div>
                 <button
                   onClick={handleClearAll}
-                  className="rounded-full border border-[rgba(203,188,174,0.32)] bg-white/70 px-3 py-2 text-xs font-semibold text-[var(--brand-ink-soft)] transition-colors hover:bg-white"
+                  className="whitespace-nowrap rounded-full border border-[rgba(203,188,174,0.32)] bg-white/70 px-3 py-2 text-xs font-semibold text-[var(--brand-ink-soft)] transition-colors hover:bg-white"
                 >
                   전체 삭제
                 </button>

@@ -1,17 +1,15 @@
 'use client';
 
-import { XCircle } from 'lucide-react';
+import XCircle from 'lucide-react/dist/esm/icons/x-circle';
 import { useCompareStore } from '@/stores';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
-/** 기관 유형별 스타일 */
 const TYPE_STYLES: Record<InstitutionType, { label: string; className: string }> = {
   public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
   private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 };
 
-/** 급식 방식 라벨 */
 const MEAL_TYPE_LABELS: Record<MealType, string> = {
   direct: '직영급식',
   outsourced: '위탁급식',
@@ -28,23 +26,24 @@ export function CompareGrid({ items }: CompareGridProps) {
   // 동적 그리드 컬럼 클래스 (2개 vs 3개) - minmax로 최소 너비 보장
   const gridCols =
     items.length === 3
-      ? 'grid-cols-[80px_repeat(3,minmax(90px,1fr))] sm:grid-cols-[120px_repeat(3,minmax(130px,1fr))]'
-      : 'grid-cols-[80px_repeat(2,minmax(110px,1fr))] sm:grid-cols-[120px_repeat(2,minmax(150px,1fr))]';
+      ? 'grid-cols-[100px_repeat(3,minmax(100px,1fr))] sm:grid-cols-[140px_repeat(3,minmax(130px,1fr))]'
+      : 'grid-cols-[100px_repeat(2,minmax(110px,1fr))] sm:grid-cols-[140px_repeat(2,minmax(150px,1fr))]';
 
   // 베스트 조건 계산
   const maxArea = Math.max(...items.map((i) => i.areaPerChild));
   const maxBusCount = Math.max(...items.map((i) => (i.hasBus ? i.busCount : 0)));
 
-  const highlightClass = 'bg-emerald-50 text-emerald-700 font-bold';
+  const highlightClass = 'bg-emerald-100 text-emerald-700 font-bold';
 
   return (
-    <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+    <div className="relative">
+      <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
       <div className="min-w-[360px]">
         {/* 헤더: 기관 카드들 */}
         <div className="sticky-header bg-white border-b border-gray-100 shadow-sm">
           <div className={`grid ${gridCols}`}>
           {/* 항목 비교 라벨 */}
-          <div className="bg-white flex flex-col items-center justify-center p-4 border-r border-gray-100">
+          <div className="bg-white flex flex-col items-center justify-center px-3 py-4 border-r border-gray-100">
             <span className="text-sm text-gray-400 font-medium">항목 비교</span>
           </div>
 
@@ -61,7 +60,7 @@ export function CompareGrid({ items }: CompareGridProps) {
                     {typeStyle.label}
                   </span>
                   <h3
-                    className="text-sm sm:text-base font-bold leading-snug break-keep w-full px-0.5 line-clamp-2"
+                    className="text-xs sm:text-sm font-bold leading-snug break-keep w-full px-0.5 line-clamp-3"
                     title={item.name}
                   >
                     {item.name}
@@ -73,7 +72,7 @@ export function CompareGrid({ items }: CompareGridProps) {
 
                 <button
                   onClick={() => removeItem(item.kindercode)}
-                  className="absolute top-2 right-2 p-1 text-gray-300 hover:text-gray-500 hover:bg-gray-50 rounded-full transition-colors"
+                  className="absolute top-2 right-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-300 hover:text-gray-500 hover:bg-gray-50 rounded-full transition-colors"
                   aria-label={`${item.name} 제거`}
                 >
                   <XCircle className="w-5 h-5" />
@@ -209,10 +208,11 @@ export function CompareGrid({ items }: CompareGridProps) {
         </div>
       </div>
     </div>
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white/80 to-transparent sm:hidden" />
+    </div>
   );
 }
 
-/** 비교 섹션 컴포넌트 */
 function CompareSection({
   title,
   children,
@@ -230,7 +230,6 @@ function CompareSection({
   );
 }
 
-/** 비교 행 컴포넌트 */
 function CompareRow({
   label,
   gridCols,
@@ -242,7 +241,7 @@ function CompareRow({
 }) {
   return (
     <div className={`grid ${gridCols} border-b border-gray-50`}>
-      <div className="p-4 bg-gray-50/30 text-xs text-gray-500 font-medium">{label}</div>
+      <div className="px-3 py-4 bg-gray-50/30 text-xs text-gray-500 font-medium whitespace-nowrap">{label}</div>
       {children}
     </div>
   );

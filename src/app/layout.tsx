@@ -4,22 +4,10 @@ import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { AdContainer } from '@/components/ads/AdContainer';
+import { BottomTabBar } from '@/components/navigation/BottomTabBar';
+import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
-/*
- * Font optimization: To use next/font/local for better performance,
- * download Pretendard font files to public/fonts/:
- * - Pretendard-Regular.woff2
- * - Pretendard-Medium.woff2
- * - Pretendard-SemiBold.woff2
- * - Pretendard-Bold.woff2
- *
- * Then uncomment and configure localFont below.
- * Currently using CDN fallback in globals.css.
- */
-
-// 네이버 SEO 최적화 - 메타데이터 강화
-// https://searchadvisor.naver.com/guide/markup-content
 export const metadata: Metadata = {
   metadataBase: new URL('https://where-kindergarden.vercel.app'),
   title: {
@@ -98,13 +86,12 @@ export const metadata: Metadata = {
   },
 };
 
-
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  viewportFit: 'cover', // iOS Safe Area 지원
+  viewportFit: 'cover',
   themeColor: '#f6f5ef',
 };
 
@@ -116,13 +103,14 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className="min-h-screen antialiased text-[var(--brand-ink)]">
+        <OfflineBanner />
         <GlobalProviders>
           <KakaoSDKProvider>{children}</KakaoSDKProvider>
         </GlobalProviders>
-        {/* 네이버 SEO - 구조화된 데이터 */}
         <WebsiteJsonLd />
         <OrganizationJsonLd />
         <AdContainer />
+        <BottomTabBar />
         <Analytics />
       </body>
     </html>

@@ -2,14 +2,6 @@
 
 import { useEffect, useRef } from 'react';
 
-/**
- * KakaoAdFit Web Banner
- * Uses script injection to load ads.
- * Requires a valid ad unit ID from KakaoAdFit console.
- */
-
-// Extend Window interface to include kakao ad object if needed, 
-// though we just rely on the global script execution.
 declare global {
   interface Window {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -23,10 +15,6 @@ export function WebAdBanner() {
   useEffect(() => {
     if (!containerRef.current) return;
 
-    // Prevent duplicate injection if strictly controlled, 
-    // but KakaoAdFit script usually handles its own lifecycle within the ins tag.
-    // However, React re-renders might duplicate scripts if not careful.
-    
     const script = document.createElement('script');
     script.src = '//t1.daumcdn.net/kas/static/ba.min.js';
     script.async = true;
@@ -34,22 +22,17 @@ export function WebAdBanner() {
 
     containerRef.current.appendChild(script);
 
+    const container = containerRef.current;
     return () => {
-      // Cleanup script if necessary, though usually not needed for ad scripts 
-      // as they modify the DOM inside the <ins> tag.
-      // Removing the script tag itself doesn't remove the ad, but React will remove the container.
-      if (containerRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        const scripts = containerRef.current.getElementsByTagName('script');
-        if (scripts.length > 0) {
-            containerRef.current.removeChild(scripts[0]);
-        }
+      const scripts = container.getElementsByTagName('script');
+      if (scripts.length > 0) {
+        container.removeChild(scripts[0]);
       }
     };
   }, []);
 
   return (
-    <div ref={containerRef} className="flex justify-center my-4 w-full h-[50px] overflow-hidden">
+    <div ref={containerRef} className="flex justify-center w-full h-[50px] overflow-hidden">
       <ins
         className="kakao_ad_area"
         style={{ display: 'none' }}

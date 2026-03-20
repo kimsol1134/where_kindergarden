@@ -127,9 +127,11 @@ public struct KindergartenSearchEngine {
 }
 
 public struct DeepLinkBuilder {
+    private static let defaultBaseURL = URL(string: "https://where-kindergarden.vercel.app")!
+
     private let baseURL: URL
 
-    public init(baseURL: URL = URL(string: "https://where-kindergarden.vercel.app")!) {
+    public init(baseURL: URL = DeepLinkBuilder.defaultBaseURL) {
         self.baseURL = baseURL
     }
 

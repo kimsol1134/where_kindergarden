@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import { Capacitor } from '@capacitor/core';
 import { MobileAdBanner } from './MobileAdBanner';
 import { WebAdBanner } from './WebAdBanner';
-import { useUIStore } from '@/stores';
-
-const AD_BANNER_HEIGHT = 50;
+import { AD_BANNER_HEIGHT } from '@/lib/constants';
+import { useUIStore } from '@/stores/uiStore';
 
 export function AdContainer() {
   const [platform, setPlatform] = useState<'web' | 'native' | null>(null);

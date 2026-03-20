@@ -2,19 +2,17 @@
 
 import { useRef, useCallback, useState, useEffect } from 'react';
 import Link from 'next/link';
-import {
-  Search,
-  X,
-  Heart,
-  ChevronDown,
-  Bus,
-  MapPin,
-  UserCheck,
-  Home,
-  Maximize,
-  Building2,
-  Crosshair,
-} from 'lucide-react';
+import Search from 'lucide-react/dist/esm/icons/search';
+import X from 'lucide-react/dist/esm/icons/x';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import Bus from 'lucide-react/dist/esm/icons/bus';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import UserCheck from 'lucide-react/dist/esm/icons/user-check';
+import Home from 'lucide-react/dist/esm/icons/home';
+import Maximize from 'lucide-react/dist/esm/icons/maximize';
+import Building2 from 'lucide-react/dist/esm/icons/building-2';
+import Crosshair from 'lucide-react/dist/esm/icons/crosshair';
 import { BrandMark } from '@/components/common/BrandMark';
 import { KindergartenIcon } from '@/components/icons/KindergartenIcon';
 import { useSearchStore, useFavoriteStore, useUIStore, type InstitutionFilter } from '@/stores';
@@ -22,22 +20,43 @@ import { useAddressSearch, useGeolocation, type KindergartenSearchResult } from 
 import { RADIUS_MIN, RADIUS_MAX } from '@/types';
 import { FavoritesPanel } from './FavoritesPanel';
 
+/** 활성/비활성 필터 칩 클래스 */
+const CHIP_ACTIVE = 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]';
+const CHIP_INACTIVE = 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]';
+
+/** 토글형 필터 칩 정의 */
+const TOGGLE_FILTERS = [
+  { key: 'hasBus', label: '셔틀버스', icon: Bus },
+  { key: 'hasVacancy', label: '여유정원', icon: UserCheck },
+  { key: 'hasIndoorPlayground', label: '실내놀이터', icon: Home },
+  { key: 'hasLargeSpace', label: '넓은 공간', icon: Maximize },
+  { key: 'hasModernBuilding', label: '최신건물', icon: Building2 },
+] as const;
+
+/** 기관 유형 옵션 */
+const TYPE_OPTIONS: { value: InstitutionFilter; label: string }[] = [
+  { value: 'all', label: '전체' },
+  { value: 'public', label: '국공립' },
+  { value: 'private', label: '사립' },
+];
+
+type ToggleFilterKey = (typeof TOGGLE_FILTERS)[number]['key'];
+
 export function SearchHeader() {
   const inputRef = useRef<HTMLInputElement>(null);
   const radiusButtonRef = useRef<HTMLButtonElement>(null);
   const typeButtonRef = useRef<HTMLButtonElement>(null);
   const [isRadiusOpen, setIsRadiusOpen] = useState(false);
   const [isTypeOpen, setIsTypeOpen] = useState(false);
-  const [isFavoritesPanelOpen, setIsFavoritesPanelOpen] = useState(false);
   const [radiusDropdownPos, setRadiusDropdownPos] = useState({ top: 0, left: 0 });
   const [typeDropdownPos, setTypeDropdownPos] = useState({ top: 0, left: 0 });
   const [hasMounted, setHasMounted] = useState(false);
 
-  // 찜하기 스토어 (hydration 이후에만 count 표시)
   const favoriteCount = useFavoriteStore(state => state.getItemCount());
 
-  // UI 상태 관리 (광고와 BottomSheet 조율)
   const setBottomSheetOpen = useUIStore(state => state.setBottomSheetOpen);
+  const isFavoritesPanelOpen = useUIStore(state => state.isFavoritesPanelOpen);
+  const setFavoritesPanelOpen = useUIStore(state => state.setFavoritesPanelOpen);
 
   // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
   useEffect(() => {
@@ -92,7 +111,15 @@ export function SearchHeader() {
 
   const { setDetailId } = useSearchStore();
 
-  // 주소 선택 핸들러
+  /** 필터 setter 맵 (토글 핸들러 통합용) */
+  const filterSetters: Record<ToggleFilterKey, (value: boolean | null) => void> = {
+    hasBus: setHasBus,
+    hasVacancy: setHasVacancy,
+    hasIndoorPlayground: setHasIndoorPlayground,
+    hasLargeSpace: setHasLargeSpace,
+    hasModernBuilding: setHasModernBuilding,
+  };
+
   const handleSelectAddress = useCallback(
     (suggestion: typeof suggestions[0]) => {
       selectAddress(suggestion);
@@ -103,21 +130,17 @@ export function SearchHeader() {
     [selectAddress, setLocation, search]
   );
 
-  // 유치원 선택 핸들러
   const handleSelectKindergarten = useCallback(
     (kindergarten: KindergartenSearchResult) => {
       selectKindergarten(kindergarten);
-      // 유치원 위치로 이동하고 검색
       setLocation({ lat: kindergarten.lat, lng: kindergarten.lng }, kindergarten.address);
       search();
-      // 선택한 유치원의 상세 정보 표시
       setDetailId(kindergarten.kindercode);
       inputRef.current?.blur();
     },
     [selectKindergarten, setLocation, search, setDetailId]
   );
 
-  // 현재 위치 검색
   const handleCurrentLocation = useCallback(async () => {
     try {
       const coords = await getCurrentPosition();
@@ -129,7 +152,6 @@ export function SearchHeader() {
     }
   }, [getCurrentPosition, setLocation, clearSelection, search]);
 
-  // 반경 변경 핸들러 (슬라이더)
   const handleRadiusChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setRadius(Number(e.target.value));
@@ -137,12 +159,10 @@ export function SearchHeader() {
     [setRadius]
   );
 
-  // 슬라이더에서 손을 뗐을 때 검색 실행
   const handleRadiusChangeEnd = useCallback(() => {
     search();
   }, [search]);
 
-  // 유형 변경 핸들러
   const handleTypeChange = useCallback(
     (type: InstitutionFilter) => {
       setType(type);
@@ -153,37 +173,31 @@ export function SearchHeader() {
     [setType, setBottomSheetOpen, search]
   );
 
-  // 버스 필터 토글
-  const handleBusToggle = useCallback(() => {
-    setHasBus(filters.hasBus === true ? null : true);
-  }, [setHasBus, filters.hasBus]);
+  const handleToggleFilter = useCallback(
+    (key: ToggleFilterKey) => {
+      const setter = filterSetters[key];
+      setter(filters[key] === true ? null : true);
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- filterSetters is stable (derived from store setters)
+    [filters, setHasBus, setHasVacancy, setHasIndoorPlayground, setHasLargeSpace, setHasModernBuilding]
+  );
 
-  // 여유정원 필터 토글
-  const handleVacancyToggle = useCallback(() => {
-    setHasVacancy(filters.hasVacancy === true ? null : true);
-  }, [setHasVacancy, filters.hasVacancy]);
-
-  // 실내놀이터 필터 토글
-  const handleIndoorPlaygroundToggle = useCallback(() => {
-    setHasIndoorPlayground(filters.hasIndoorPlayground === true ? null : true);
-  }, [setHasIndoorPlayground, filters.hasIndoorPlayground]);
-
-  // 넓은 공간 필터 토글
-  const handleLargeSpaceToggle = useCallback(() => {
-    setHasLargeSpace(filters.hasLargeSpace === true ? null : true);
-  }, [setHasLargeSpace, filters.hasLargeSpace]);
-
-  // 최신 건물 필터 토글
-  const handleModernBuildingToggle = useCallback(() => {
-    setHasModernBuilding(filters.hasModernBuilding === true ? null : true);
-  }, [setHasModernBuilding, filters.hasModernBuilding]);
-
-  // 입력 초기화
   const handleClear = useCallback(() => {
     clearSelection();
-    setAddress(''); // searchStore의 address도 초기화
+    setAddress('');
     inputRef.current?.focus();
   }, [clearSelection, setAddress]);
+
+  const handleCloseDropdowns = useCallback(() => {
+    setIsRadiusOpen(false);
+    setIsTypeOpen(false);
+    setBottomSheetOpen(false);
+  }, [setBottomSheetOpen]);
+
+  /** 기관 유형 필터 라벨 */
+  function getTypeLabel(type: InstitutionFilter): string {
+    return TYPE_OPTIONS.find(o => o.value === type)?.label ?? '전체';
+  }
 
   return (
     <header className="relative z-50 flex-none safe-area-top">
@@ -231,7 +245,7 @@ export function SearchHeader() {
             <button
               onClick={handleCurrentLocation}
               disabled={isGeoLoading}
-              className={`rounded-full p-1.5 transition-colors hover:bg-[rgba(203,188,174,0.18)] ${
+              className={`min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full transition-colors hover:bg-[rgba(203,188,174,0.18)] ${
                 isGeoLoading ? 'text-[var(--brand-ink-soft)] animate-pulse' : 'text-[var(--brand-leaf)]'
               }`}
               title="내 위치 찾기"
@@ -242,13 +256,13 @@ export function SearchHeader() {
 
           {/* Autocomplete Dropdown */}
           {isOpen && (
-            <div className="fixed top-[116px] left-0 right-0 bottom-0 z-50 overflow-y-auto border-t border-white/70 bg-[var(--brand-page)] md:absolute md:top-full md:left-0 md:right-0 md:bottom-auto md:mt-2 md:h-auto md:overflow-hidden md:rounded-[1.6rem] md:border md:bg-white/95 md:shadow-[0_28px_60px_rgba(121,128,92,0.14)]">
+            <div className="fixed top-[var(--search-header-height,116px)] left-0 right-0 bottom-0 z-50 overflow-y-auto border-t border-white/70 bg-[var(--brand-page)] md:absolute md:top-full md:left-0 md:right-0 md:bottom-auto md:mt-2 md:h-auto md:overflow-hidden md:rounded-[1.6rem] md:border md:bg-white/95 md:shadow-[0_28px_60px_rgba(121,128,92,0.14)]">
               {/* 모바일 검색 결과 헤더 */}
               <div className="md:hidden sticky top-0 flex items-center justify-between border-b border-[rgba(203,188,174,0.24)] bg-[var(--brand-page)] px-4 py-3">
                 <span className="text-sm font-medium text-[var(--brand-ink-soft)]">검색 결과</span>
                 <button
                   onClick={() => setOpen(false)}
-                  className="rounded-full p-1.5 text-[var(--brand-ink-soft)] hover:bg-white/70"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-[var(--brand-ink-soft)] hover:bg-white/70"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -369,7 +383,7 @@ export function SearchHeader() {
 
         {/* Header Actions - 모바일: 찜목록만 표시 */}
         <button
-          onClick={() => setIsFavoritesPanelOpen(true)}
+          onClick={() => setFavoritesPanelOpen(true)}
           className="relative flex-shrink-0 rounded-2xl p-2 text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)] md:hidden"
         >
           <Heart className="w-5 h-5" />
@@ -383,7 +397,7 @@ export function SearchHeader() {
         {/* Header Actions - 데스크톱에서만 표시 */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <button
-            onClick={() => setIsFavoritesPanelOpen(true)}
+            onClick={() => setFavoritesPanelOpen(true)}
             className="relative flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
           >
             <Heart className="w-4 h-4" />
@@ -410,7 +424,7 @@ export function SearchHeader() {
           }}
           aria-haspopup="listbox"
           aria-expanded={isRadiusOpen}
-          className="flex items-center gap-1.5 whitespace-nowrap rounded-full border border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] px-3 py-1.5 text-xs font-bold text-[var(--brand-leaf)]"
+          className={`flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-2 min-h-[36px] text-xs font-bold ${CHIP_ACTIVE}`}
         >
           {filters.radius}km <ChevronDown className={`w-3 h-3 transition-transform ${isRadiusOpen ? 'rotate-180' : ''}`} />
         </button>
@@ -426,75 +440,28 @@ export function SearchHeader() {
           }}
           aria-haspopup="listbox"
           aria-expanded={isTypeOpen}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
+          className={`flex items-center gap-1.5 px-3 py-2 min-h-[36px] rounded-full border text-xs font-medium whitespace-nowrap ${
             filters.type !== 'all'
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)] font-bold'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
+              ? `${CHIP_ACTIVE} font-bold`
+              : CHIP_INACTIVE
           }`}
         >
-          {filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}
+          {getTypeLabel(filters.type)}
           <ChevronDown className={`w-3 h-3 transition-transform ${isTypeOpen ? 'rotate-180' : ''}`} />
         </button>
 
-        {/* 셔틀버스 필터 */}
-        <button
-          onClick={handleBusToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasBus === true
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
-          }`}
-        >
-          <Bus className="w-3.5 h-3.5" /> 셔틀버스
-        </button>
-
-        {/* 여유정원 필터 */}
-        <button
-          onClick={handleVacancyToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasVacancy === true
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
-          }`}
-        >
-          <UserCheck className="w-3.5 h-3.5" /> 여유정원
-        </button>
-
-        {/* 실내놀이터 필터 */}
-        <button
-          onClick={handleIndoorPlaygroundToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasIndoorPlayground === true
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
-          }`}
-        >
-          <Home className="w-3.5 h-3.5" /> 실내놀이터
-        </button>
-
-        {/* 넓은 공간 필터 */}
-        <button
-          onClick={handleLargeSpaceToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasLargeSpace === true
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
-          }`}
-        >
-          <Maximize className="w-3.5 h-3.5" /> 넓은 공간
-        </button>
-
-        {/* 최신 건물 필터 */}
-        <button
-          onClick={handleModernBuildingToggle}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium whitespace-nowrap ${
-            filters.hasModernBuilding === true
-              ? 'border-[rgba(78,169,109,0.26)] bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf)]'
-              : 'brand-chip text-[var(--brand-ink-soft)] hover:border-[rgba(203,188,174,0.48)]'
-          }`}
-        >
-          <Building2 className="w-3.5 h-3.5" /> 최신건물
-        </button>
+        {/* 토글형 필터 칩 */}
+        {TOGGLE_FILTERS.map(({ key, label, icon: Icon }) => (
+          <button
+            key={key}
+            onClick={() => handleToggleFilter(key)}
+            className={`flex items-center gap-1.5 px-3 py-2 min-h-[36px] rounded-full border text-xs font-medium whitespace-nowrap ${
+              filters[key] === true ? CHIP_ACTIVE : CHIP_INACTIVE
+            }`}
+          >
+            <Icon className="w-3.5 h-3.5" /> {label}
+          </button>
+        ))}
       </div>
         </div>
       </div>
@@ -511,11 +478,7 @@ export function SearchHeader() {
       {(isRadiusOpen || isTypeOpen) && (
         <div
           className="fixed inset-x-0 top-[120px] bottom-0 z-40"
-          onClick={() => {
-            setIsRadiusOpen(false);
-            setIsTypeOpen(false);
-            setBottomSheetOpen(false);
-          }}
+          onClick={handleCloseDropdowns}
         />
       )}
 
@@ -545,10 +508,7 @@ export function SearchHeader() {
               <span>{RADIUS_MAX}km</span>
             </div>
             <button
-              onClick={() => {
-                setIsRadiusOpen(false);
-                setBottomSheetOpen(false);
-              }}
+              onClick={handleCloseDropdowns}
               className="w-full mt-4 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm"
             >
               적용
@@ -590,17 +550,13 @@ export function SearchHeader() {
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
             <div className="text-sm font-medium text-gray-700 mb-3">유치원 종류</div>
             <p className="text-sm text-gray-500 mb-3">
-              <span className="font-bold text-emerald-600">{filters.type === 'all' ? '전체' : filters.type === 'public' ? '국공립' : '사립'}</span>
+              <span className="font-bold text-emerald-600">{getTypeLabel(filters.type)}</span>
             </p>
             <div className="space-y-2">
-              {[
-                { value: 'all', label: '전체' },
-                { value: 'public', label: '국공립' },
-                { value: 'private', label: '사립' },
-              ].map((option) => (
+              {TYPE_OPTIONS.map((option) => (
                 <button
                   key={option.value}
-                  onClick={() => handleTypeChange(option.value as InstitutionFilter)}
+                  onClick={() => handleTypeChange(option.value)}
                   className={`w-full py-3 px-4 rounded-xl text-left text-sm font-medium transition-colors ${
                     filters.type === option.value
                       ? 'bg-emerald-50 text-emerald-700 border-2 border-emerald-500'
@@ -617,30 +573,17 @@ export function SearchHeader() {
             className="hidden md:block fixed bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]"
             style={{ top: typeDropdownPos.top, left: typeDropdownPos.left }}
           >
-            <button
-              onClick={() => handleTypeChange('all')}
-              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                filters.type === 'all' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-              }`}
-            >
-              전체
-            </button>
-            <button
-              onClick={() => handleTypeChange('public')}
-              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                filters.type === 'public' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-              }`}
-            >
-              국공립
-            </button>
-            <button
-              onClick={() => handleTypeChange('private')}
-              className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                filters.type === 'private' ? 'text-emerald-600 font-bold' : 'text-gray-700'
-              }`}
-            >
-              사립
-            </button>
+            {TYPE_OPTIONS.map((option) => (
+              <button
+                key={option.value}
+                onClick={() => handleTypeChange(option.value)}
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
+                  filters.type === option.value ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                }`}
+              >
+                {option.label}
+              </button>
+            ))}
           </div>
         </>
       )}
@@ -648,7 +591,7 @@ export function SearchHeader() {
       {/* 찜한 목록 패널 */}
       <FavoritesPanel
         isOpen={isFavoritesPanelOpen}
-        onClose={() => setIsFavoritesPanelOpen(false)}
+        onClose={() => setFavoritesPanelOpen(false)}
       />
     </header>
   );

@@ -7,50 +7,74 @@ import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';
 import { CompareFloatingBar } from '@/components/search/CompareFloatingBar';
 import { PanelResizer } from '@/components/search/PanelResizer';
+import { LocationPermissionModal } from '@/components/search/LocationPermissionModal';
 import { useSearchStore, useCompareStore, useUIStore, useKindergartenStore } from '@/stores';
-// Direct imports instead of barrel imports for better tree-shaking
 import { useGeolocation } from '@/hooks/useGeolocation';
 import { useURLSync } from '@/hooks/useURLSync';
+import {
+  LOCATION_PERMISSION_KEY,
+  PANEL_MIN_WIDTH,
+  PANEL_MAX_WIDTH,
+  PANEL_DEFAULT_WIDTH,
+  TOAST_FADE_DELAY,
+  TOAST_DISMISS_DELAY,
+  TOAST_MANUAL_DISMISS_DELAY,
+} from '@/lib/constants';
 
-/** 토스트 타이밍 (ms) */
-const TOAST_FADE_DELAY = 4700;
-const TOAST_DISMISS_DELAY = 5000;
-const TOAST_MANUAL_DISMISS_DELAY = 300;
-
-/** 패널 너비 제한 (px) */
-const PANEL_MIN_WIDTH = 320;
-const PANEL_MAX_WIDTH = 700;
-const PANEL_DEFAULT_WIDTH = 450;
-
-/** 모바일 뷰 모드 타입 */
 type MobileViewMode = 'list' | 'map';
 
 function SearchPageContent() {
   const { location, setLocation, search, isLoading, error, setError } = useSearchStore();
   const { items } = useCompareStore();
-  const { getCurrentPosition } = useGeolocation();
   const { getSearchMode } = useURLSync();
+
+  // 위치 권한 사전 설명 모달
+  const [isPermissionModalOpen, setIsPermissionModalOpen] = useState(false);
+  const permissionResolveRef = useRef<((value: boolean) => void) | null>(null);
+
+  const handleBeforeLocationRequest = useCallback(async (): Promise<boolean> => {
+    if (localStorage.getItem(LOCATION_PERMISSION_KEY)) {
+      return true;
+    }
+
+    return new Promise<boolean>((resolve) => {
+      permissionResolveRef.current = resolve;
+      setIsPermissionModalOpen(true);
+    });
+  }, []);
+
+  const resolvePermission = useCallback((allowed: boolean) => {
+    if (allowed) {
+      localStorage.setItem(LOCATION_PERMISSION_KEY, 'true');
+    }
+    setIsPermissionModalOpen(false);
+    permissionResolveRef.current?.(allowed);
+    permissionResolveRef.current = null;
+  }, []);
+
+  const { getCurrentPosition } = useGeolocation({
+    onBeforeRequest: handleBeforeLocationRequest,
+  });
   const { loadData: loadKindergartenData } = useKindergartenStore();
 
-  // 모바일에서 리스트/지도 뷰 전환 상태
   const [mobileView, setMobileView] = useState<MobileViewMode>('list');
-
-  // 데스크탑에서 패널 너비 상태
   const [panelWidth, setPanelWidth] = useState(PANEL_DEFAULT_WIDTH);
 
-  // Toast system (global via uiStore)
+  const toggleMobileView = useCallback(() => {
+    setMobileView((prev) => (prev === 'list' ? 'map' : 'list'));
+  }, []);
+
+  // Toast
   const toast = useUIStore((state) => state.toast);
   const showToast = useUIStore((state) => state.showToast);
   const dismissToast = useUIStore((state) => state.dismissToast);
   const [isToastFading, setIsToastFading] = useState(false);
   const manualDismissTimer = useRef<ReturnType<typeof setTimeout>>(null);
 
-  // 검색 페이지 진입 시 유치원 데이터 미리 로드 (이름 자동완성용)
   useEffect(() => {
     loadKindergartenData();
   }, [loadKindergartenData]);
 
-  // Show toast when search error occurs
   useEffect(() => {
     if (error) {
       showToast(error, 'error');
@@ -58,24 +82,23 @@ function SearchPageContent() {
     }
   }, [error, showToast, setError]);
 
-  // Auto-dismiss toast after 5s
   useEffect(() => {
-    if (toast) {
-      if (manualDismissTimer.current) {
-        clearTimeout(manualDismissTimer.current);
-        manualDismissTimer.current = null;
-      }
-      setIsToastFading(false);
-      const fadeTimer = setTimeout(() => setIsToastFading(true), TOAST_FADE_DELAY);
-      const hideTimer = setTimeout(() => dismissToast(), TOAST_DISMISS_DELAY);
-      return () => {
-        clearTimeout(fadeTimer);
-        clearTimeout(hideTimer);
-      };
+    if (!toast) return;
+
+    if (manualDismissTimer.current) {
+      clearTimeout(manualDismissTimer.current);
+      manualDismissTimer.current = null;
     }
+    setIsToastFading(false);
+
+    const fadeTimer = setTimeout(() => setIsToastFading(true), TOAST_FADE_DELAY);
+    const hideTimer = setTimeout(() => dismissToast(), TOAST_DISMISS_DELAY);
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(hideTimer);
+    };
   }, [toast, dismissToast]);
 
-  // Manual toast dismiss
   const handleDismissToast = useCallback(() => {
     setIsToastFading(true);
     manualDismissTimer.current = setTimeout(() => dismissToast(), TOAST_MANUAL_DISMISS_DELAY);
@@ -83,21 +106,16 @@ function SearchPageContent() {
 
   // mode=location 파라미터가 있으면 현재 위치로 검색
   useEffect(() => {
-    const mode = getSearchMode();
-
-    if (mode === 'location' && !location) {
+    if (getSearchMode() === 'location' && !location) {
       getCurrentPosition()
-        .then((coords) => {
-          setLocation(coords);
-          // 검색은 useURLSync에서 처리됨
-        })
+        .then((coords) => setLocation(coords))
         .catch(() => {
           // 에러는 useGeolocation 내부에서 처리됨
         });
     }
   }, [getSearchMode, location, getCurrentPosition, setLocation]);
 
-  // location이 설정되면 검색 실행 (URL에서 복원된 경우 제외)
+  // location이 설정되면 검색 실행
   useEffect(() => {
     if (location && !isLoading) {
       search();
@@ -105,13 +123,15 @@ function SearchPageContent() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location?.lat, location?.lng]);
 
+  const toastBgClass = toast?.type === 'success' ? 'bg-emerald-500' : 'bg-red-500';
+
   return (
     <div className="flex h-screen flex-col text-[var(--brand-ink)]">
       <SearchHeader />
       <main className="flex-1 flex overflow-hidden relative">
         <KindergartenList
           mobileView={mobileView}
-          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+          onToggleMobileView={toggleMobileView}
           panelWidth={panelWidth}
         />
         <PanelResizer
@@ -122,17 +142,20 @@ function SearchPageContent() {
         />
         <MapView
           mobileView={mobileView}
-          onToggleMobileView={() => setMobileView(mobileView === 'list' ? 'map' : 'list')}
+          onToggleMobileView={toggleMobileView}
         />
       </main>
       {items.length > 0 && <CompareFloatingBar />}
 
-      {/* 전역 토스트 - Auto-dismiss after 5s with fade animation */}
-      {toast && (
+      <LocationPermissionModal
+        isOpen={isPermissionModalOpen}
+        onAllow={() => resolvePermission(true)}
+        onDismiss={() => resolvePermission(false)}
+      />
+
+      {toast ? (
         <div
-          className={`fixed bottom-4 left-1/2 -translate-x-1/2 ${
-            toast.type === 'success' ? 'bg-emerald-500' : 'bg-red-500'
-          } text-white px-4 py-2 rounded-lg shadow-lg z-[55] flex items-center gap-3 transition-opacity duration-300 ${
+          className={`fixed bottom-[calc(var(--total-bottom-offset,0px)+var(--compare-bar-height,0px)+1rem)] left-1/2 -translate-x-1/2 ${toastBgClass} text-white px-4 py-2 rounded-lg shadow-lg z-[55] flex items-center gap-3 transition-opacity duration-300 ${
             isToastFading ? 'opacity-0' : 'opacity-100'
           }`}
         >
@@ -145,7 +168,7 @@ function SearchPageContent() {
             <X className="w-4 h-4" />
           </button>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
@@ -161,7 +184,6 @@ export default function SearchPage() {
 function SearchPageSkeleton() {
   return (
     <div className="flex h-screen flex-col text-[var(--brand-ink)]">
-      {/* Header Skeleton */}
       <header className="z-30 flex-none px-4 pt-3">
         <div className="brand-shell mx-auto flex h-16 max-w-[1920px] items-center justify-between gap-4 px-4">
           <div className="h-10 w-10 rounded-2xl bg-[rgba(203,188,174,0.22)] animate-pulse" />
@@ -170,7 +192,6 @@ function SearchPageSkeleton() {
         </div>
       </header>
       <main className="flex-1 flex overflow-hidden relative">
-        {/* List Skeleton */}
         <aside className="z-20 flex w-full flex-col border-r border-white/70 bg-white/72 md:w-[450px] lg:w-[500px]">
           <div className="border-b border-[rgba(203,188,174,0.18)] px-5 py-4">
             <div className="h-6 w-32 rounded bg-[rgba(203,188,174,0.22)] animate-pulse" />
@@ -190,7 +211,6 @@ function SearchPageSkeleton() {
             ))}
           </div>
         </aside>
-        {/* Map Skeleton */}
         <div className="flex-1 animate-pulse bg-[linear-gradient(180deg,rgba(255,255,255,0.76),rgba(78,169,109,0.12))]" />
       </main>
     </div>

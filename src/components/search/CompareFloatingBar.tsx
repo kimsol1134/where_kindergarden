@@ -60,7 +60,7 @@ export function CompareFloatingBar() {
                 <div className="bg-emerald-500 text-white w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center font-bold text-[10px] md:text-xs">
                   {index + 1}
                 </div>
-                <span className="font-medium text-gray-700 truncate max-w-[60px] md:max-w-[100px] text-xs md:text-sm">{item.name}</span>
+                <span className="font-medium text-gray-700 truncate max-w-[80px] md:max-w-[100px] text-xs md:text-sm">{item.name}</span>
                 <button
                   onClick={() => handleRemoveItem(item.kindercode)}
                   className="relative w-11 h-11 flex items-center justify-center -mr-2"
@@ -87,8 +87,11 @@ export function CompareFloatingBar() {
           <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
             {/* 전체 삭제 버튼 - 모바일에서는 아이콘만 */}
             <button
-              onClick={clearAll}
-              className="text-gray-500 hover:text-gray-700 p-2 md:px-3 md:py-2 text-sm font-medium transition-colors"
+              onClick={() => {
+                if (!confirm('비교 목록을 모두 삭제할까요?')) return;
+                clearAll();
+              }}
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-500 hover:text-gray-700 md:px-3 text-sm font-medium transition-colors"
               aria-label="전체 삭제"
             >
               <Trash2 className="w-4 h-4 md:hidden" />

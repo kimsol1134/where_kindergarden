@@ -2,16 +2,14 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import {
-  Heart,
-  X,
-  Trash2,
-  ChevronDown,
-  CheckSquare,
-  Square,
-  Plus,
-  Check,
-} from 'lucide-react';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import X from 'lucide-react/dist/esm/icons/x';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import CheckSquare from 'lucide-react/dist/esm/icons/check-square';
+import Square from 'lucide-react/dist/esm/icons/square';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Check from 'lucide-react/dist/esm/icons/check';
 import type { Kindergarten } from '@/types';
 import {
   useFavoriteStore,
@@ -25,13 +23,7 @@ import {
 import { useFavoriteKindergartens, useFavoriteKindergarten } from '@/hooks';
 import { transformToKindergarten } from '@/lib/transforms';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
-
-/** 기관 유형별 스타일 */
-const TYPE_STYLES = {
-  public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
-  private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
-  home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
-} as const;
+import { TYPE_STYLES } from '@/lib/constants';
 
 /** 정렬 옵션 타입 */
 type FavoriteSortOption = 'recent' | 'distance' | 'capacity';
@@ -98,11 +90,13 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
   // 핸들러
   const handleRemove = (kindercode: string) => {
     removeItem(kindercode);
-    selectedItems.delete(kindercode);
-    setSelectedItems(new Set(selectedItems));
+    const next = new Set(selectedItems);
+    next.delete(kindercode);
+    setSelectedItems(next);
   };
 
   const handleClearAll = () => {
+    if (!confirm('찜한 유치원을 모두 삭제할까요?')) return;
     clearAll();
     setSelectedItems(new Set());
     setIsSelectMode(false);
@@ -126,10 +120,6 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
     if (kindergarten) {
       addToCompare(kindergarten);
     }
-  };
-
-  const handleRemoveFromCompare = (kindercode: string) => {
-    removeFromCompare(kindercode);
   };
 
   // 상세 패널에서 비교함 토글
@@ -158,6 +148,8 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
       newSelected.delete(kindercode);
     } else if (newSelected.size < MAX_COMPARE_ITEMS) {
       newSelected.add(kindercode);
+    } else {
+      showToast('최대 3개까지 선택할 수 있어요', 'error');
     }
     setSelectedItems(newSelected);
   };
@@ -325,9 +317,15 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
                 <Heart className="w-8 h-8 text-gray-300" />
               </div>
               <p className="text-gray-500 font-medium mb-2">아직 찜한 유치원이 없어요</p>
-              <p className="text-sm text-gray-400">
-                마음에 드는 유치원의 ♥를 눌러 모아보세요
+              <p className="text-sm text-gray-400 mb-6 leading-relaxed">
+                검색 결과에서 유치원 카드 오른쪽의 ♡를 눌러<br />저장하세요
               </p>
+              <button
+                onClick={onClose}
+                className="rounded-xl bg-[var(--brand-leaf)] px-6 py-3 text-sm font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)] active:scale-[0.98]"
+              >
+                유치원 찾으러 가기
+              </button>
             </div>
           ) : (
             <div className="p-4 space-y-3">
@@ -346,7 +344,7 @@ export function FavoritesPanel({ isOpen, onClose }: FavoritesPanelProps) {
                     onRemove={handleRemove}
                     onClick={handleCardClick}
                     onAddToCompare={handleAddToCompare}
-                    onRemoveFromCompare={handleRemoveFromCompare}
+                    onRemoveFromCompare={removeFromCompare}
                     isInCompare={inCompare}
                     canAddToCompare={canAdd}
                     isSelectMode={isSelectMode}
@@ -460,7 +458,7 @@ function FavoriteItemCard({
         {isSelectMode ? (
           <button
             onClick={handleSelectClick}
-            className={`flex-shrink-0 mt-0.5 transition-colors ${
+            className={`flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors ${
               isSelected
                 ? 'text-emerald-500'
                 : canSelect
@@ -489,10 +487,10 @@ function FavoriteItemCard({
               </span>
             ) : null}
           </div>
-          <h3 className="font-bold text-gray-900 text-base truncate">
+          <h3 className="font-bold text-gray-900 text-base line-clamp-2">
             {item.name}
           </h3>
-          <p className="text-xs text-gray-400 mt-1 truncate">
+          <p className="text-xs text-gray-400 mt-1 line-clamp-2">
             {item.address}
           </p>
 
@@ -532,7 +530,7 @@ function FavoriteItemCard({
         {/* 찜 해제 버튼 */}
         <button
           onClick={handleRemoveClick}
-          className="flex-shrink-0 p-2 rounded-full hover:bg-red-50 text-red-500 transition-colors"
+          className="flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-red-50 text-red-500 transition-colors"
           title="찜 해제"
         >
           <Heart className="w-5 h-5 fill-red-500" />

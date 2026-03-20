@@ -265,6 +265,8 @@ public protocol KakaoLocalSearching: Sendable {
 public struct KakaoLocalAPIClient: KakaoLocalSearching {
     public let isConfigured: Bool
 
+    private static let defaultBaseURL = URL(string: "https://dapi.kakao.com")!
+
     private let apiKey: String?
     private let session: URLSession
     private let baseURL: URL
@@ -273,7 +275,7 @@ public struct KakaoLocalAPIClient: KakaoLocalSearching {
     public init(
         apiKey: String?,
         session: URLSession = .shared,
-        baseURL: URL = URL(string: "https://dapi.kakao.com")!,
+        baseURL: URL = KakaoLocalAPIClient.defaultBaseURL,
         decoder: JSONDecoder = JSONDecoder()
     ) {
         self.apiKey = apiKey?.trimmingCharacters(in: .whitespacesAndNewlines)

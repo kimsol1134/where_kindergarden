@@ -2,27 +2,25 @@
 
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import {
-  X,
-  Phone,
-  MapPin,
-  Bus,
-  Clock,
-  Utensils,
-  Building,
-  Leaf,
-  Calendar,
-  Globe,
-  Shield,
-  Home,
-  SquareStack,
-  ExternalLink,
-  Coins,
-  Loader2,
-  Heart,
-  Newspaper,
-  UserCheck,
-} from 'lucide-react';
+import X from 'lucide-react/dist/esm/icons/x';
+import Phone from 'lucide-react/dist/esm/icons/phone';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import Bus from 'lucide-react/dist/esm/icons/bus';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import Utensils from 'lucide-react/dist/esm/icons/utensils';
+import Building from 'lucide-react/dist/esm/icons/building';
+import Leaf from 'lucide-react/dist/esm/icons/leaf';
+import Calendar from 'lucide-react/dist/esm/icons/calendar';
+import Globe from 'lucide-react/dist/esm/icons/globe';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Home from 'lucide-react/dist/esm/icons/home';
+import SquareStack from 'lucide-react/dist/esm/icons/square-stack';
+import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
+import Coins from 'lucide-react/dist/esm/icons/coins';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import Newspaper from 'lucide-react/dist/esm/icons/newspaper';
+import UserCheck from 'lucide-react/dist/esm/icons/user-check';
 import type { Kindergarten } from '@/types';
 import { getKindergartenInfoUrl } from '@/lib/utils/kindergarten-url';
 import { ChartErrorBoundary } from './ChartErrorBoundary';
@@ -30,7 +28,6 @@ import { useCompareStore, useFavoriteStore, useReviewStore, useVacancyStore } fr
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 import { ReviewPreview } from '@/components/review/ReviewPreview';
 
-/** Chart skeleton for loading state */
 function ChartSkeleton() {
   return (
     <div className="flex flex-col items-center justify-center h-[200px]">
@@ -40,7 +37,6 @@ function ChartSkeleton() {
   );
 }
 
-/** Dynamic imports for charts (~40KB Recharts bundle) */
 const DonutChart = dynamic(
   () => import('./charts/DonutChart').then((mod) => ({ default: mod.DonutChart })),
   { ssr: false, loading: () => <ChartSkeleton /> }
@@ -51,14 +47,12 @@ const RatioBarChart = dynamic(
   { ssr: false, loading: () => <ChartSkeleton /> }
 );
 
-/** 기관 유형별 스타일 */
 const TYPE_STYLES = {
   public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
   private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
   home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
 } as const;
 
-/** 급식 유형 라벨 */
 const MEAL_LABELS = {
   direct: '직영',
   outsourced: '위탁',
@@ -73,7 +67,6 @@ interface KindergartenDetailPanelProps {
   canAddToCompare: boolean;
 }
 
-/** 설립일 포맷 함수 */
 function formatEstablishDate(dateStr: string): string {
   if (!dateStr || dateStr.length !== 8) return dateStr;
   const year = dateStr.substring(0, 4);
@@ -87,7 +80,6 @@ function formatVacancyUpdatedAt(dateStr: string | null): string | null {
   return dateStr.replace(/-/g, '.');
 }
 
-/** 정보 행 컴포넌트 */
 function InfoRow({
   label,
   value,
@@ -328,14 +320,14 @@ export function KindergartenDetailPanel({
                     href={kindergarten.homepage.startsWith('http') ? kindergarten.homepage : `http://${kindergarten.homepage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline font-medium truncate max-w-[300px]"
+                    className="text-emerald-600 hover:underline font-medium"
                   >
                     유치원 홈페이지
                   </a>
                 </div>
               )}
               
-              <div className="flex gap-4 pt-1">
+              <div className="flex flex-wrap gap-2 pt-1">
                 <div className="flex items-center gap-2 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
                   <Calendar className="w-3.5 h-3.5" />
                   설립일: {formatEstablishDate(kindergarten.establishDate)}
@@ -396,6 +388,9 @@ export function KindergartenDetailPanel({
             </div>
             
             {/* 정원 현황 요약 */}
+            {(() => {
+              const enrollmentPercent = (kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100;
+              return (
             <div className="mt-6 p-4 bg-gray-50 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
                <div className="flex items-center gap-8">
                  <div className="text-center">
@@ -408,19 +403,19 @@ export function KindergartenDetailPanel({
                    <div className="text-xl font-bold text-emerald-600">{kindergarten.currentCount}명</div>
                  </div>
                </div>
-               
+
                <div className="flex-1 w-full md:w-auto max-w-xs">
                   <div className="flex justify-between text-xs mb-1.5">
                     <span className="text-gray-600">모집 현황</span>
                     <span className="font-bold text-emerald-700">
-                      {Math.round((kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%
+                      {Math.round(enrollmentPercent)}%
                     </span>
                   </div>
                   <div className="h-2.5 bg-gray-200 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-emerald-500 rounded-full transition-all"
                       style={{
-                        width: `${Math.min(100, (kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100)}%`,
+                        width: `${Math.min(100, enrollmentPercent)}%`,
                       }}
                     />
                   </div>
@@ -429,6 +424,8 @@ export function KindergartenDetailPanel({
                   </div>
                </div>
             </div>
+              );
+            })()}
 
             {/* 특수/혼합 학급 세부 정보 */}
             {(kindergarten.classCountMix > 0 || kindergarten.currentSpecial > 0) && (
@@ -503,7 +500,7 @@ export function KindergartenDetailPanel({
               시설 정보
             </h4>
 
-            <div className="space-y-0">
+            <div>
               <InfoRow
                 label="총 학급 수"
                 value={`${totalClassCount}학급`}
@@ -558,7 +555,7 @@ export function KindergartenDetailPanel({
               <Clock className="w-4 h-4 text-emerald-600" />
               운영 정보
             </h4>
-            <div className="space-y-0">
+            <div>
               <InfoRow
                 label="셔틀버스"
                 value={kindergarten.hasBus ? `운행 (${kindergarten.busCount}대)` : '미운행'}
@@ -723,7 +720,7 @@ export function KindergartenDetailPanel({
         </div>
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
-        <div className="p-5 border-t border-gray-200 bg-white" style={{ paddingBottom: hasCompareBar ? 'calc(var(--compare-bar-height, 0px) + 8px)' : undefined }}>
+        <div className="p-5 border-t border-gray-200 bg-white" style={{ paddingBottom: hasCompareBar ? 'calc(var(--compare-bar-height, 0px) + 8px)' : 'calc(env(safe-area-inset-bottom, 0px) + 20px)' }}>
           <div className="flex gap-3">
             {/* 찜하기 버튼 */}
             <button

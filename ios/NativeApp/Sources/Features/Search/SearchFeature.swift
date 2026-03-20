@@ -277,7 +277,9 @@ private struct SearchChrome: View {
     private func handleLocationNoticeAction() {
         if model.shouldShowLocationSettingsCTA {
             #if canImport(UIKit)
-            openURL(URL(string: UIApplication.openSettingsURLString)!)
+            if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+                openURL(settingsURL)
+            }
             #endif
             return
         }
@@ -787,7 +789,9 @@ private struct ResultSheet: View {
                     ctaLabel: model.shouldShowLocationSettingsCTA ? "설정 열기" : nil
                 ) {
                     #if canImport(UIKit)
-                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                    if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(settingsURL)
+                    }
                     #endif
                 }
             } else if model.currentDeviceLocation != nil || !model.recentSearches.isEmpty {
@@ -1141,7 +1145,7 @@ private struct KindergartenDetailSheet: View {
     private var heroBadges: [(String, NativeBadge.Tone)] {
         var items: [(String, NativeBadge.Tone)] = [("공식 정보", .slate)]
 
-        if reviews.count > 0 {
+        if !reviews.isEmpty {
             items.append(("후기 \(reviews.count)건", .sun))
         }
 
@@ -1408,107 +1412,6 @@ private struct KindergartenDetailSheet: View {
         .background {
             NativeScreenBackground(topTintOpacity: 0.14)
         }
-    }
-}
-
-private struct VacancyStatusCard: View {
-    let summary: VacancySummary?
-    let formattedUpdatedAt: String?
-    let isLoading: Bool
-    let errorMessage: String?
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label("빈 자리 정보", systemImage: "person.badge.plus")
-                .font(.headline.weight(.semibold))
-                .foregroundStyle(.primary)
-
-            if isLoading && summary == nil {
-                infoCard(
-                    title: "빈 자리 확인 중...",
-                    message: "유치원입학 시스템 기준으로 최신 정보를 불러오고 있어요.",
-                    tint: .secondary
-                )
-            } else if let errorMessage {
-                infoCard(
-                    title: "빈 자리 정보를 불러오지 못했어요",
-                    message: errorMessage,
-                    tint: sunYellow
-                )
-            } else if let summary, summary.vacancyCount > 0 {
-                VStack(alignment: .leading, spacing: 12) {
-                    HStack(alignment: .top) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("지금 확인된 빈 자리는 총 \(summary.vacancyCount)명이에요")
-                                .font(.subheadline.weight(.bold))
-                                .foregroundStyle(.primary)
-                            Text("유치원입학 시스템 기준")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                        Spacer()
-                        if let formattedUpdatedAt {
-                            Text(formattedUpdatedAt)
-                                .font(.caption.weight(.semibold))
-                                .foregroundStyle(sunYellow)
-                        }
-                    }
-
-                    if !summary.detail.isEmpty {
-                        VStack(spacing: 8) {
-                            ForEach(summary.detail) { detail in
-                                HStack {
-                                    VStack(alignment: .leading, spacing: 2) {
-                                        Text(detail.age)
-                                            .font(.subheadline.weight(.semibold))
-                                        Text(detail.course)
-                                            .font(.caption)
-                                            .foregroundStyle(.secondary)
-                                    }
-                                    Spacer()
-                                    Text("\(detail.vacancyCount)명")
-                                        .font(.subheadline.weight(.bold))
-                                        .foregroundStyle(sunYellow)
-                                }
-                                .padding(.horizontal, 12)
-                                .padding(.vertical, 10)
-                                .background(paperWhite.opacity(0.92), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                            }
-                        }
-                    }
-                }
-                .padding(16)
-                .background(sunYellow.opacity(0.10), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-            } else if summary != nil {
-                infoCard(
-                    title: "현재 빈 자리가 없어요",
-                    message: formattedUpdatedAt.map { "최근 확인: \($0)" } ?? "이 유치원에는 현재 확인된 빈 자리가 없어요.",
-                    tint: leafGreen
-                )
-            } else {
-                infoCard(
-                    title: "빈 자리 정보를 제공하지 않는 유치원이에요",
-                    message: "직접 전화로 확인해보세요.",
-                    tint: .secondary
-                )
-            }
-        }
-        .padding(18)
-        .background(paperWhite, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
-    }
-
-    private func infoCard(title: String, message: String, tint: Color) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(title)
-                .font(.subheadline.weight(.bold))
-                .foregroundStyle(tint)
-            Text(message)
-                .font(.footnote)
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(16)
-        .background(tint.opacity(0.08), in: RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous))
     }
 }
 
@@ -1829,15 +1732,6 @@ private struct FilterChip: View {
     }
 }
 
-private struct MetricPill: View {
-    let label: String
-    let value: String
-
-    var body: some View {
-        NativeMetricTile(label: label, value: value)
-    }
-}
-
 private struct InlineNotice: View {
     let message: String
     var actionLabel: String? = nil
@@ -1941,40 +1835,6 @@ private struct CompactMapStatusCard: View {
         .padding(.vertical, 10)
         .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
     }
-}
-
-private let vacancyISO8601Formatter: ISO8601DateFormatter = {
-    let formatter = ISO8601DateFormatter()
-    formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-    return formatter
-}()
-
-private let vacancyFallbackISO8601Formatter: ISO8601DateFormatter = {
-    let formatter = ISO8601DateFormatter()
-    formatter.formatOptions = [.withInternetDateTime]
-    return formatter
-}()
-
-private let vacancyDateFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.locale = Locale(identifier: "ko_KR")
-    formatter.dateFormat = "M월 d일 HH:mm"
-    return formatter
-}()
-
-private func formatVacancyUpdatedAt(_ rawValue: String?) -> String? {
-    guard let rawValue, !rawValue.isEmpty else {
-        return nil
-    }
-
-    let parsedDate = vacancyISO8601Formatter.date(from: rawValue)
-        ?? vacancyFallbackISO8601Formatter.date(from: rawValue)
-
-    guard let parsedDate else {
-        return rawValue
-    }
-
-    return vacancyDateFormatter.string(from: parsedDate)
 }
 
 public enum NativePreviewFixtures {

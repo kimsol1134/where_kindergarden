@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { MapPin, GitCompareArrows, MessageSquareText, ShieldCheck } from 'lucide-react';
+import { MapPin, GitCompareArrows, MessageSquareText, ShieldCheck, ChevronRight } from 'lucide-react';
 import { BrandMark } from '@/components/common/BrandMark';
 
 const FEATURES = [
@@ -31,7 +31,7 @@ export function AppHome() {
         <div className="absolute right-[-3rem] top-48 h-56 w-56 rounded-full bg-[rgba(78,169,109,0.16)] blur-3xl" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-lg flex-col px-5 safe-pt-hero pb-12">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-lg flex-col px-5 safe-pt-hero pb-[calc(3rem+var(--total-bottom-offset,0px))]">
         {/* 브랜드마크 */}
         <div className="pt-8 pb-2 animate-fade-up">
           <BrandMark
@@ -84,17 +84,20 @@ export function AppHome() {
           href="/test"
           className="mt-6 block animate-fade-up delay-300"
         >
-          <div className="brand-shell rounded-2xl px-5 py-4 text-center transition-transform active:scale-[0.98]">
-            <p className="text-sm font-semibold text-[var(--brand-ink)]">
-              우리 아이 유치원 성향 테스트
-            </p>
-            <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">
-              7가지 질문으로 알아보는 맞춤 유치원 유형
-            </p>
+          <div className="brand-shell flex items-center rounded-2xl px-5 py-4 transition-transform active:scale-[0.98]">
+            <div className="flex-1 text-center">
+              <p className="text-sm font-semibold text-[var(--brand-ink)]">
+                우리 아이 유치원 성향 테스트
+              </p>
+              <p className="mt-1 text-xs text-[var(--brand-ink-soft)]">
+                7가지 질문으로 알아보는 맞춤 유치원 유형
+              </p>
+            </div>
+            <ChevronRight className="w-5 h-5 text-gray-400 shrink-0" />
           </div>
         </Link>
 
-        {/* 하단 신뢰 정보 */}
+        {/* 하단 신뢰 정보 + 더보기 링크 */}
         <div className="mt-auto pt-10 animate-fade-up delay-300">
           <div className="flex items-center justify-center gap-1.5 text-xs text-[var(--brand-ink-soft)]">
             <ShieldCheck className="h-3.5 w-3.5 text-[var(--brand-leaf)]" />

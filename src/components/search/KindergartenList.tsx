@@ -3,7 +3,11 @@
 /* eslint-disable react-hooks/incompatible-library -- TanStack Virtual은 React Compiler와 호환되지 않음 */
 import { useCallback, useMemo, useRef, useEffect } from 'react';
 import { useVirtualizer } from '@tanstack/react-virtual';
-import { Heart, ChevronDown, Loader2, SearchX, MapPin } from 'lucide-react';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import SearchX from 'lucide-react/dist/esm/icons/search-x';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 import {
   useSearchStore,
   useCompareStore,
@@ -13,15 +17,9 @@ import {
   useUIStore,
 } from '@/stores';
 import { KindergartenDetailPanel } from './KindergartenDetailPanel';
+import { TYPE_STYLES } from '@/lib/constants';
 import type { Kindergarten } from '@/types';
 import type { SortOption } from '@/stores/searchStore';
-
-/** 기관 유형별 스타일 */
-const TYPE_STYLES = {
-  public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
-  private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
-  home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
-} as const;
 
 /** 정렬 옵션 라벨 */
 const SORT_LABELS: Record<SortOption, string> = {
@@ -159,22 +157,6 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
     [isInCompare, removeItem, addItem, showToast, compareItemCount]
   );
 
-  // 찜하기 토글 핸들러
-  const handleFavoriteToggle = useCallback(
-    (kindergarten: Kindergarten) => {
-      toggleFavorite(kindergarten);
-    },
-    [toggleFavorite]
-  );
-
-  // 카드 클릭 핸들러 (상세 보기)
-  const handleCardClick = useCallback(
-    (id: string) => {
-      setDetailId(id);
-    },
-    [setDetailId]
-  );
-
   // 상세 패널 닫기 핸들러
   const handleCloseDetail = useCallback(() => {
     setDetailId(null);
@@ -308,9 +290,9 @@ export function KindergartenList({ mobileView, onToggleMobileView, panelWidth }:
                     isFavorite={isFavorite(kindergarten.kindercode)}
                     reviewCount={getCountByKindergartenId(kindergarten.kindercode)}
                     vacancyCount={getVacancyCountByKindergartenId(kindergarten.kindercode)}
-                    onClick={() => handleCardClick(kindergarten.kindercode)}
+                    onClick={() => setDetailId(kindergarten.kindercode)}
                     onCompareToggle={() => handleCompareToggle(kindergarten)}
-                    onFavoriteToggle={() => handleFavoriteToggle(kindergarten)}
+                    onFavoriteToggle={() => toggleFavorite(kindergarten)}
                   />
                 </div>
               );
@@ -388,10 +370,10 @@ function KindergartenCard({
             e.stopPropagation();
             onFavoriteToggle();
           }}
-          className={`transition-colors p-1 ${
+          className={`min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full transition-colors ${
             isFavorite
               ? 'text-red-500 hover:text-red-600'
-              : 'text-gray-300 hover:text-red-500'
+              : 'text-gray-400 bg-gray-50 hover:text-red-500 hover:bg-red-50'
           }`}
           title={isFavorite ? '찜 해제' : '찜하기'}
         >
@@ -427,27 +409,27 @@ function KindergartenCard({
         {/* 태그들 */}
         <div className="flex gap-1.5 flex-wrap mt-1">
           {vacancyCount > 0 && (
-            <span className="px-2 py-1 rounded-md bg-rose-50 border border-rose-100 text-rose-600 text-[11px] font-medium">
+            <span className="px-2 py-1 rounded-md bg-rose-50 border border-rose-100 text-rose-600 text-xs font-medium">
               공식 결원 {vacancyCount}명
             </span>
           )}
           {kindergarten.hasAfterSchool && (
-            <span className="px-2 py-1 rounded-md bg-gray-50 border border-gray-100 text-gray-600 text-[11px] font-medium">
+            <span className="px-2 py-1 rounded-md bg-gray-50 border border-gray-100 text-gray-600 text-xs font-medium">
               방과후과정
             </span>
           )}
           {kindergarten.hasBus && (
-            <span className="px-2 py-1 rounded-md bg-emerald-50 border border-emerald-100 text-emerald-600 text-[11px] font-medium">
+            <span className="px-2 py-1 rounded-md bg-emerald-50 border border-emerald-100 text-emerald-600 text-xs font-medium">
               셔틀운행 ({kindergarten.busCount}대)
             </span>
           )}
           {kindergarten.hasPlayground && (
-            <span className="px-2 py-1 rounded-md bg-sky-50 border border-sky-100 text-sky-600 text-[11px] font-medium">
+            <span className="px-2 py-1 rounded-md bg-sky-50 border border-sky-100 text-sky-600 text-xs font-medium">
               실외놀이터
             </span>
           )}
           {reviewCount > 0 && (
-            <span className="px-2 py-1 rounded-md bg-amber-50 border border-amber-100 text-amber-600 text-[11px] font-medium">
+            <span className="px-2 py-1 rounded-md bg-amber-50 border border-amber-100 text-amber-600 text-xs font-medium">
               후기 {reviewCount}건
             </span>
           )}
@@ -455,7 +437,7 @@ function KindergartenCard({
 
         {/* 하단: 주소 + 비교함 버튼 */}
         <div className="mt-2 pt-4 border-t border-gray-50 flex items-center justify-between gap-4">
-          <div className="text-xs text-gray-400 truncate flex-1 min-w-0 font-medium">
+          <div className="text-xs text-gray-400 line-clamp-2 break-keep flex-1 min-w-0 font-medium">
             {kindergarten.address}
           </div>
           
@@ -466,7 +448,7 @@ function KindergartenCard({
             }}
             disabled={!isInCompare && !canAddToCompare}
             aria-label={isInCompare ? '비교 목록에서 빼기' : canAddToCompare ? '비교 목록에 추가' : '비교 목록이 가득 찼어요'}
-            className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-all active:scale-95 border ${
+            className={`flex-shrink-0 text-xs font-bold px-3 py-2 min-h-[36px] rounded-lg transition-all active:scale-95 border ${
               isInCompare
                 ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
                 : canAddToCompare

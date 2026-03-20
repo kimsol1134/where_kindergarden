@@ -49,7 +49,6 @@ public struct CompareView: View {
                             .accessibilityIdentifier("compare.emptyState")
                         } else {
                             if items.count == 1 {
-                                // Single item: summary card + CTA
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 14) {
                                         ForEach(items) { item in
@@ -82,7 +81,6 @@ public struct CompareView: View {
                                 }
                                 .nativeSectionPanel()
                             } else {
-                                // 2+ items: full comparison
                                 CompareInsightCard(
                                     title: compareInsightTitle,
                                     message: compareInsightMessage,
@@ -161,13 +159,12 @@ public struct CompareView: View {
             sentences.append("\(roomiest.name)은 1인당 \(String(format: "%.1f㎡", roomiest.areaPerChild))로 공간이 가장 넉넉해요.")
         }
 
-        if let mostReviewed, model.reviews(for: mostReviewed.kindercode).count > 0 {
+        if let mostReviewed, !model.reviews(for: mostReviewed.kindercode).isEmpty {
             sentences.append("후기는 \(mostReviewed.name) 쪽이 더 많아요.")
         }
 
         return sentences.joined(separator: " ")
     }
-
 
     @ViewBuilder
     private var shareActions: some View {

@@ -1,9 +1,6 @@
 import Features
 import Services
 import SwiftUI
-#if canImport(UIKit)
-import UIKit
-#endif
 
 public struct NativeRootView: View {
     @StateObject private var model: NativeAppModel
@@ -47,8 +44,6 @@ public struct NativeRootView: View {
                     .tag(NativeTab.more)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(mistWhite.ignoresSafeArea())
         .task {
             async let services: Void = initializeServices()
             async let bootstrap: Void = model.bootstrapIfNeeded()

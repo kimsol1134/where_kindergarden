@@ -5,6 +5,10 @@ public struct NativeAppConfiguration: Sendable {
     public static let kakaoNativeAppKeyBuildSetting = "WK_KAKAO_NATIVE_APP_KEY"
     public static let kakaoRESTAPIKeyBuildSetting = "WK_KAKAO_REST_API_KEY"
 
+    static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
+    static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
+    static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
+
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
     public let adMobBannerUnitID: String
@@ -19,9 +23,9 @@ public struct NativeAppConfiguration: Sendable {
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
         adMobBannerUnitID: String = "ca-app-pub-5648788643644962/5397823299",
-        reviewsRemoteURL: URL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!,
-        vacancyRemoteURL: URL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!,
-        compareShareBaseURL: URL = URL(string: "https://where-kindergarden.vercel.app/compare")!,
+        reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
+        vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
+        compareShareBaseURL: URL = NativeAppConfiguration.defaultCompareShareBaseURL,
         kindergartensResourceName: String = "kindergartens",
         reviewsResourceName: String = "reviews",
         vacancyResourceName: String = "vacancy"
