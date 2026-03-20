@@ -15,7 +15,6 @@ SwiftUI-first native package for `우리동네 유치원`.
 - `Config`: plist and entitlements shared by the host app target.
 
 ## Local verification
-- Package tests: `cd ios/NativeApp && swift test`
 - Host app build: `xcodebuild -project ios/WhereKindergartenNative/WhereKindergartenNative.xcodeproj -scheme WhereKindergartenNative -destination 'generic/platform=iOS Simulator' build`
 - Install and launch the built host app in Simulator before handoff.
 

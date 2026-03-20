@@ -75,8 +75,6 @@ public struct NativeRootView: View {
     }
 
     private func initializeServices() async {
-        _ = await TrackingTransparencyService.requestIfNeeded()
-
         #if canImport(GoogleMobileAds)
         AdMobService.configure()
         #endif

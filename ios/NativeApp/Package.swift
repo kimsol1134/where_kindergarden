@@ -5,7 +5,6 @@ let package = Package(
     name: "NativeApp",
     platforms: [
         .iOS(.v17),
-        .macOS(.v14),
     ],
     products: [
         .library(name: "Models", targets: ["Models"]),
@@ -14,7 +13,7 @@ let package = Package(
         .library(name: "AppShell", targets: ["AppShell"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git", branch: "master"),
+        .package(url: "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git", revision: "cc073a32729b7f545cca49f96d0b859fa3a0d5db"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "12.0.0"),
         .package(url: "https://github.com/kakao/kakao-ios-sdk.git", from: "2.25.0"),
     ],
