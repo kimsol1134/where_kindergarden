@@ -2,9 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 import { AdMob, BannerAdSize, BannerAdPosition } from '@capacitor-community/admob';
-import { useUIStore } from '@/stores';
-
-const AD_BANNER_HEIGHT = 50;
+import { AD_BANNER_HEIGHT } from '@/lib/constants';
+import { useUIStore } from '@/stores/uiStore';
 
 export function MobileAdBanner() {
   const isAdLoaded = useRef(false);

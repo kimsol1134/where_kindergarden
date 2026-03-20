@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { ArrowLeft } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
 import { BrandMark } from '@/components/common/BrandMark';
 import { Footer } from '@/components/landing/Footer';
 
@@ -27,7 +27,6 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen font-sans">
-      {/* Header */}
       <header className="fixed top-0 z-50 w-full px-4 pt-3">
         <div className="brand-shell mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
@@ -45,8 +44,7 @@ export default function PrivacyPage() {
         </div>
       </header>
 
-      {/* Content */}
-      <main className="pt-24 pb-16">
+      <main className="pt-24 pb-[calc(4rem+var(--total-bottom-offset,0px))]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-8">
             개인정보처리방침

@@ -212,7 +212,7 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
           onClick={onToggleMobileView}
           className="md:hidden fixed left-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pr-3 pl-2 py-2.5 rounded-r-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-l-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
         >
-          <span className="text-[11px] text-gray-600">목록</span>
+          <span className="text-xs text-gray-600">목록</span>
           <List className="w-4 h-4 text-emerald-600" />
         </button>
       )}

@@ -65,9 +65,15 @@ public final class CurrentLocationService: NSObject, CurrentLocationProviding {
             throw LocationServiceError.unknown
         }
 
-        return try await withCheckedThrowingContinuation { continuation in
-            self.continuation = continuation
-            handleAuthorization(status: manager.authorizationStatus)
+        return try await withTaskCancellationHandler {
+            try await withCheckedThrowingContinuation { continuation in
+                self.continuation = continuation
+                handleAuthorization(status: manager.authorizationStatus)
+            }
+        } onCancel: { [weak self] in
+            Task { @MainActor in
+                self?.finish(with: .failure(CancellationError()))
+            }
         }
     }
 

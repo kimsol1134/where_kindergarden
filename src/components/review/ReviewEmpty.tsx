@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Newspaper, Plus } from 'lucide-react';
+import Newspaper from 'lucide-react/dist/esm/icons/newspaper';
+import Plus from 'lucide-react/dist/esm/icons/plus';
 import { ReviewSuggestionModal } from './ReviewSuggestionModal';
 
 interface ReviewEmptyProps {
@@ -17,9 +18,12 @@ export function ReviewEmpty({ kindergartenId }: ReviewEmptyProps) {
         <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-3">
           <Newspaper className="w-6 h-6 text-gray-400" />
         </div>
-        <p className="text-sm font-medium text-gray-600 mb-1">수집된 후기가 없습니다</p>
-        <p className="text-xs text-gray-400 mb-4">
+        <p className="text-sm font-medium text-gray-600 mb-1">아직 수집된 후기가 없어요</p>
+        <p className="text-xs text-gray-400 mb-1">
           이 유치원의 후기 정보가 아직 수집되지 않았습니다.
+        </p>
+        <p className="text-xs text-gray-400 mb-4">
+          네이버에서 &apos;유치원명 후기&apos;로 검색해보세요
         </p>
         
         {kindergartenId && (

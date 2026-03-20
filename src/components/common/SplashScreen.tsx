@@ -1,11 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Capacitor } from '@capacitor/core';
 import Image from 'next/image';
+import { isNative as checkIsNative } from '@/lib/utils/platform';
 
-export function SplashScreen({ onFinished }: { onFinished?: () => void }) {
-  const isNative = Capacitor.isNativePlatform();
+interface Props {
+  onFinished?: () => void;
+}
+
+export function SplashScreen({ onFinished }: Props) {
+  const isNative = checkIsNative();
   const [isVisible, setIsVisible] = useState(isNative);
   const [opacity, setOpacity] = useState(1);
 
@@ -55,7 +59,7 @@ export function SplashScreen({ onFinished }: { onFinished?: () => void }) {
         </p>
       </div>
 
-      <div className="absolute bottom-32 h-1 w-48 overflow-hidden rounded-full bg-[rgba(203,188,174,0.22)]">
+      <div className="absolute bottom-[calc(env(safe-area-inset-bottom,0px)+8rem)] h-1 w-48 overflow-hidden rounded-full bg-[rgba(203,188,174,0.22)]">
         <div className="h-full rounded-full bg-gradient-to-r from-[var(--brand-leaf)] via-[var(--brand-sun)] to-[var(--brand-leaf)] animate-loading-bar" />
       </div>
     </div>

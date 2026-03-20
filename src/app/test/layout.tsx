@@ -64,21 +64,18 @@ export default function TestLayout({
 }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-teal-50">
-      {/* Quiz JSON-LD 구조화 데이터 */}
       <Script
         id="quiz-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(quizJsonLd) }}
       />
-      {/* 배경 장식 */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200/30 rounded-full blur-3xl" />
         <div className="absolute top-1/2 -left-40 w-80 h-80 bg-teal-200/20 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 right-1/4 w-60 h-60 bg-emerald-100/40 rounded-full blur-3xl" />
       </div>
 
-      {/* 헤더 */}
-      <header className="sticky safe-top-offset z-50 bg-white/70 backdrop-blur-xl border-b border-emerald-100/50">
+      <header className="sticky top-0 z-50 safe-area-top bg-white/70 backdrop-blur-xl border-b border-emerald-100/50">
         <div className="max-w-lg mx-auto px-4 py-3 flex items-center justify-between">
           <Link
             href="/"
@@ -93,10 +90,8 @@ export default function TestLayout({
         </div>
       </header>
 
-      {/* 콘텐츠 영역 */}
       <main className="relative max-w-lg mx-auto px-4 py-8">{children}</main>
 
-      {/* 푸터 */}
       <footer className="relative max-w-lg mx-auto px-4 py-8 text-center">
         <p className="text-sm text-gray-400">
           우리동네 유치원 | 아이에게 딱 맞는 유치원을 찾아보세요

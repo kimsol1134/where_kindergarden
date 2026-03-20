@@ -226,7 +226,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
             guard let controller else { return }
 
-            if controller.isEngineActive == false {
+            if !controller.isEngineActive {
                 controller.activateEngine()
             }
 

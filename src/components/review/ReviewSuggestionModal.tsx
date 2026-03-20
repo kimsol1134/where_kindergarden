@@ -1,7 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { X, Send, Plus, Flag, Loader2 } from 'lucide-react';
+import Flag from 'lucide-react/dist/esm/icons/flag';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Send from 'lucide-react/dist/esm/icons/send';
+import X from 'lucide-react/dist/esm/icons/x';
 import type { ReviewSource, ReviewSuggestion } from '@/types';
 
 const SOURCE_OPTIONS: { value: ReviewSource; label: string }[] = [
@@ -32,15 +36,10 @@ export function ReviewSuggestionModal({
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  // Add form state
   const [url, setUrl] = useState('');
   const [title, setTitle] = useState('');
   const [source, setSource] = useState<ReviewSource>('naver_blog');
-
-  // Delete form state
   const [reason, setReason] = useState('');
-
-  // Common
   const [email, setEmail] = useState('');
 
   const resetForm = () => {
@@ -108,15 +107,12 @@ export function ReviewSuggestionModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={handleClose}
       />
-      
-      {/* Modal */}
+
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden">
-        {/* Header */}
         <div className={`px-5 py-4 flex items-center justify-between ${
           type === 'add' ? 'bg-emerald-50' : 'bg-amber-50'
         }`}>
@@ -134,13 +130,12 @@ export function ReviewSuggestionModal({
           </div>
           <button
             onClick={handleClose}
-            className="p-1 rounded-full hover:bg-black/10 transition-colors"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-black/10 transition-colors"
           >
             <X className="w-5 h-5 text-gray-500" />
           </button>
         </div>
 
-        {/* Body */}
         <form onSubmit={handleSubmit} className="p-5 space-y-4">
           {success ? (
             <div className="py-8 text-center">
@@ -164,7 +159,7 @@ export function ReviewSuggestionModal({
                       onChange={(e) => setUrl(e.target.value)}
                       placeholder="https://blog.naver.com/..."
                       required
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-3 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -178,7 +173,7 @@ export function ReviewSuggestionModal({
                       placeholder="후기 글 제목을 입력하세요"
                       required
                       maxLength={200}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-3 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -188,7 +183,7 @@ export function ReviewSuggestionModal({
                     <select
                       value={source}
                       onChange={(e) => setSource(e.target.value as ReviewSource)}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      className="w-full px-3 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
                     >
                       {SOURCE_OPTIONS.map((opt) => (
                         <option key={opt.value} value={opt.value}>
@@ -214,7 +209,7 @@ export function ReviewSuggestionModal({
                       placeholder="삭제를 요청하는 이유를 입력하세요 (예: 링크가 만료됨, 잘못된 정보)"
                       required
                       rows={3}
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
+                      className="w-full px-3 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none"
                     />
                   </div>
                 </>
@@ -229,7 +224,7 @@ export function ReviewSuggestionModal({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="답변받을 이메일 주소"
-                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
+                  className="w-full px-3 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
                 />
                 <p className="text-xs text-gray-400 mt-1">
                   검토 결과를 받으실 경우 입력하세요

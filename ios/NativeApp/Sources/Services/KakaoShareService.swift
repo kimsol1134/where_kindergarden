@@ -1,11 +1,16 @@
 #if canImport(KakaoSDKShare)
-import Foundation
 import KakaoSDKCommon
 import KakaoSDKShare
 import KakaoSDKTemplate
+import os
 import UIKit
 
 public enum KakaoShareService {
+    private static let logger = Logger(
+        subsystem: Bundle.main.bundleIdentifier ?? "com.wherekindergarten",
+        category: "KakaoShare"
+    )
+
     public static func initializeSDK(appKey: String) {
         KakaoSDK.initSDK(appKey: appKey)
     }
@@ -49,6 +54,7 @@ public enum KakaoShareService {
 
         ShareApi.shared.shareDefault(templateObject: templateJSON) { sharingResult, error in
             if let error {
+                logger.error("Kakao share failed: \(error.localizedDescription, privacy: .public)")
                 return
             }
 

@@ -94,8 +94,8 @@ public struct MoreView: View {
                         StatRow(title: "위치 권한", value: model.locationPermissionStatusText)
                         StatRow(title: "정보 업데이트", value: reviewVersionText)
                         #if canImport(UIKit)
-                        if model.shouldShowLocationSettingsCTA {
-                            Link(destination: URL(string: UIApplication.openSettingsURLString)!) {
+                        if model.shouldShowLocationSettingsCTA, let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+                            Link(destination: settingsURL) {
                                 HStack(spacing: 12) {
                                     ZStack {
                                         Circle()

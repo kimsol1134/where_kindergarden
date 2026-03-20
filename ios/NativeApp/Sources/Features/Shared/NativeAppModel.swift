@@ -1,7 +1,5 @@
-import Combine
 import Foundation
 import Models
-import os
 import Services
 
 public enum NativeTab: Hashable {
@@ -673,7 +671,7 @@ public final class NativeAppModel: ObservableObject {
         _ = takeAllRecentSearches()
     }
 
-    // MARK: - Filter helpers (PR 3 / PR 6)
+    // MARK: - Filters
 
     public func resetFilters() {
         dismissFirstLaunchIfNeeded()
@@ -714,7 +712,7 @@ public final class NativeAppModel: ObservableObject {
         return result
     }
 
-    // MARK: - Compare helpers (PR 4)
+    // MARK: - Compare
 
     public func removeCompare(at index: Int) {
         guard compareSelection.ids.indices.contains(index) else { return }
@@ -730,7 +728,7 @@ public final class NativeAppModel: ObservableObject {
         }
     }
 
-    // MARK: - FTUE (PR 8)
+    // MARK: - First Launch
 
     public func completeFirstLaunch() {
         isFirstLaunch = false
@@ -897,6 +895,7 @@ public final class NativeAppModel: ObservableObject {
             }
 
             let result = await self.remoteSearchService.suggestions(for: querySnapshot, near: origin)
+            guard !Task.isCancelled else { return }
             self.applyRemoteSearchSuggestions(result, for: querySnapshot)
         }
     }

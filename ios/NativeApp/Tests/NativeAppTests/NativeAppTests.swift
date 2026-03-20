@@ -1,4 +1,3 @@
-import Foundation
 import XCTest
 @testable import Features
 @testable import Models
@@ -165,10 +164,10 @@ final class NativeAppTests: XCTestCase {
     }
 
     @MainActor
-    func testNativeAppModelComparedKindergartensFollowSelectionOrder() {
+    func testNativeAppModelComparedKindergartensFollowSelectionOrder() throws {
         let model = makeNativeAppModel()
-        let a001 = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
-        let a002 = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
+        let a001 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
+        let a002 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
 
         model.toggleCompare(for: a002)
         model.toggleCompare(for: a001)
@@ -380,10 +379,10 @@ final class NativeAppTests: XCTestCase {
     }
 
     @MainActor
-    func testNativeAppModelRestoresDeletedFavoritesInOriginalOrder() {
+    func testNativeAppModelRestoresDeletedFavoritesInOriginalOrder() throws {
         let model = makeNativeAppModel()
-        let first = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
-        let second = try! XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
+        let first = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
+        let second = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
 
         model.toggleFavorite(for: first)
         model.toggleFavorite(for: second)
@@ -478,7 +477,7 @@ final class NativeAppTests: XCTestCase {
     // MARK: - PR 2: Analytics
 
     @MainActor
-    func testAnalyticsTracksSearchAndCompareEvents() {
+    func testAnalyticsTracksSearchAndCompareEvents() throws {
         let mockAnalytics = MockAnalytics()
         let store = InMemoryNativeAppStore()
         let persistence = NativeAppPersistence(store: store)
@@ -501,7 +500,7 @@ final class NativeAppTests: XCTestCase {
         model.setLocation(Coordinates(lat: 37.4981, lng: 127.0276), label: "test")
         model.updateRadius(to: 5)
 
-        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
+        let a001 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
         model.select(kindergarten: a001)
         model.toggleCompare(for: a001)
         model.toggleFavorite(for: a001)
@@ -545,10 +544,10 @@ final class NativeAppTests: XCTestCase {
     // MARK: - PR 4: Compare helpers
 
     @MainActor
-    func testRemoveCompareAtIndex() {
+    func testRemoveCompareAtIndex() throws {
         let model = makeNativeAppModel()
-        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
-        let a002 = model.results.first(where: { $0.kindercode == "A002" })!
+        let a001 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
+        let a002 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
 
         model.toggleCompare(for: a001)
         model.toggleCompare(for: a002)
@@ -559,10 +558,10 @@ final class NativeAppTests: XCTestCase {
     }
 
     @MainActor
-    func testComparedKindergartenNamesPreservesOrder() {
+    func testComparedKindergartenNamesPreservesOrder() throws {
         let model = makeNativeAppModel()
-        let a002 = model.results.first(where: { $0.kindercode == "A002" })!
-        let a001 = model.results.first(where: { $0.kindercode == "A001" })!
+        let a002 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A002" }))
+        let a001 = try XCTUnwrap(model.results.first(where: { $0.kindercode == "A001" }))
 
         model.toggleCompare(for: a002)
         model.toggleCompare(for: a001)

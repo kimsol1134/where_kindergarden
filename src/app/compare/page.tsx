@@ -1,8 +1,9 @@
 'use client';
 
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Search, Loader2 } from 'lucide-react';
+import Search from 'lucide-react/dist/esm/icons/search';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import { useSearchParams } from 'next/navigation';
 import { CompareHeader } from '@/components/compare/CompareHeader';
 import { CompareGrid } from '@/components/compare/CompareGrid';
@@ -10,15 +11,33 @@ import { useCompareStore, useKindergartenStore, useSearchStore } from '@/stores'
 import type { KindergartenRaw } from '@/stores/kindergartenStore';
 import { transformToKindergarten } from '@/lib/transforms';
 
-function CompareLoading() {
+/** Shared page wrapper with header and centered content area */
+function ComparePageShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
       <CompareHeader />
-      <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+      {children}
+    </div>
+  );
+}
+
+/** Centered content area used for loading, error, and empty states */
+function CenteredMessage({ children }: { children: React.ReactNode }) {
+  return (
+    <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+      {children}
+    </main>
+  );
+}
+
+function CompareLoading() {
+  return (
+    <ComparePageShell>
+      <CenteredMessage>
         <Loader2 className="mb-4 h-8 w-8 animate-spin text-[var(--brand-leaf)]" />
         <p className="text-sm text-[var(--brand-ink-soft)]">비교 정보를 불러오는 중...</p>
-      </main>
-    </div>
+      </CenteredMessage>
+    </ComparePageShell>
   );
 }
 
@@ -38,47 +57,66 @@ function CompareContent() {
   const { allData, isLoaded, isLoading, loadData, getByKindercode } =
     useKindergartenStore();
   const { location } = useSearchStore();
+  const [loadTimedOut, setLoadTimedOut] = useState(false);
 
-  // 데이터 로드
+  const hasItems = items.length > 0;
+
   useEffect(() => {
     loadData();
   }, [loadData]);
 
+  useEffect(() => {
+    if (!idsParam || isLoaded || hasItems) return;
+    const timer = setTimeout(() => setLoadTimedOut(true), 10000);
+    return () => clearTimeout(timer);
+  }, [idsParam, isLoaded, hasItems]);
+
   // URL 파라미터로부터 비교 목록 복원
   useEffect(() => {
-    // URL에 ids 파라미터가 있고, 스토어가 비어있고, 데이터 로드가 완료된 경우에만 복원
-    if (idsParam && items.length === 0 && isLoaded && allData.length > 0) {
-      const ids = idsParam.split(',').filter(Boolean);
-      const kindergartens = ids
-        .map((id) => getByKindercode(id))
-        .filter((k): k is KindergartenRaw => k !== undefined)
-        .map((raw) => transformToKindergarten(raw, location ?? undefined));
+    if (!idsParam || hasItems || !isLoaded || allData.length === 0) return;
 
-      if (kindergartens.length > 0) {
-        setItems(kindergartens);
-      }
+    const ids = idsParam.split(',').filter(Boolean);
+    const kindergartens = ids
+      .map((id) => getByKindercode(id))
+      .filter((k): k is KindergartenRaw => k !== undefined)
+      .map((raw) => transformToKindergarten(raw, location ?? undefined));
+
+    if (kindergartens.length > 0) {
+      setItems(kindergartens);
     }
-  }, [idsParam, items.length, isLoaded, allData.length, getByKindercode, setItems, location]);
+  }, [idsParam, hasItems, isLoaded, allData.length, getByKindercode, setItems, location]);
 
-  // URL에 ids가 있지만 아직 데이터 로드 중인 경우 로딩 표시
-  if (idsParam && (isLoading || !isLoaded) && items.length === 0) {
+  if (loadTimedOut && !hasItems) {
     return (
-      <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
-        <CompareHeader />
-        <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
-          <Loader2 className="mb-4 h-8 w-8 animate-spin text-[var(--brand-leaf)]" />
-          <p className="text-sm text-[var(--brand-ink-soft)]">비교 정보를 불러오는 중...</p>
-        </main>
-      </div>
+      <ComparePageShell>
+        <CenteredMessage>
+          <p className="mb-4 text-sm text-[var(--brand-ink-soft)]">로딩에 실패했습니다. 다시 시도해주세요</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="rounded-full bg-[var(--brand-leaf)] px-6 py-3 text-sm font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)]"
+          >
+            다시 시도
+          </button>
+        </CenteredMessage>
+      </ComparePageShell>
     );
   }
 
-  // 비교할 아이템이 없으면 빈 상태 표시
-  if (items.length === 0) {
+  if (idsParam && (isLoading || !isLoaded) && !hasItems) {
     return (
-      <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
-        <CompareHeader />
-        <main className="max-w-5xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+      <ComparePageShell>
+        <CenteredMessage>
+          <Loader2 className="mb-4 h-8 w-8 animate-spin text-[var(--brand-leaf)]" />
+          <p className="text-sm text-[var(--brand-ink-soft)]">비교 정보를 불러오는 중...</p>
+        </CenteredMessage>
+      </ComparePageShell>
+    );
+  }
+
+  if (!hasItems) {
+    return (
+      <ComparePageShell>
+        <CenteredMessage>
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[rgba(203,188,174,0.2)]">
             <Search className="h-8 w-8 text-[var(--brand-ink-soft)]" />
           </div>
@@ -92,17 +130,27 @@ function CompareContent() {
           >
             유치원 검색하기
           </Link>
-        </main>
-      </div>
+        </CenteredMessage>
+      </ComparePageShell>
     );
   }
 
   return (
-    <div className="min-h-screen safe-area-top text-[var(--brand-ink)]">
-      <CompareHeader />
+    <ComparePageShell>
       <main className="max-w-5xl mx-auto pb-24">
+        {items.length === 1 && (
+          <div className="mx-4 mt-4 flex items-center justify-between gap-3 rounded-xl bg-amber-50 border border-amber-200 px-4 py-3">
+            <p className="text-sm text-amber-700">비교할 유치원을 더 추가해보세요</p>
+            <Link
+              href="/search"
+              className="flex-shrink-0 rounded-lg bg-amber-500 px-3 py-1.5 text-xs font-bold text-white hover:bg-amber-600 transition-colors"
+            >
+              검색으로
+            </Link>
+          </div>
+        )}
         <CompareGrid items={items} />
       </main>
-    </div>
+    </ComparePageShell>
   );
 }

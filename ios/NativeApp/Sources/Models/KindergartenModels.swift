@@ -418,7 +418,7 @@ public struct ReviewLink: Codable, Identifiable, Hashable, Sendable {
         case tags
         case content
         case date
-        case collectedAt = "collectedAt"
+        case collectedAt
         case relevanceScore
     }
 }
@@ -439,13 +439,6 @@ public struct ReviewsData: Codable, Hashable, Sendable {
         self.totalCount = totalCount
         self.kindergartenCount = kindergartenCount
         self.reviews = reviews
-    }
-
-    enum CodingKeys: String, CodingKey {
-        case version
-        case totalCount
-        case kindergartenCount
-        case reviews
     }
 }
 

@@ -1,38 +1,24 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import type { Metadata } from 'next';
-import {
-  ArrowLeft,
-  MapPin,
-  Filter,
-  BarChart3,
-  Share2,
-  Database,
-  RefreshCw,
-} from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import BarChart3 from 'lucide-react/dist/esm/icons/bar-chart-3';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
+import Database from 'lucide-react/dist/esm/icons/database';
+import Filter from 'lucide-react/dist/esm/icons/filter';
+import HelpCircle from 'lucide-react/dist/esm/icons/help-circle';
+import Mail from 'lucide-react/dist/esm/icons/mail';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import Share2 from 'lucide-react/dist/esm/icons/share-2';
+import Shield from 'lucide-react/dist/esm/icons/shield';
+import Star from 'lucide-react/dist/esm/icons/star';
+import { isNative } from '@/lib/utils/platform';
 import { BrandMark } from '@/components/common/BrandMark';
 import { Footer } from '@/components/landing/Footer';
 
-export const metadata: Metadata = {
-  title: '서비스 소개',
-  description:
-    '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다. GPS 위치 검색, 반경 필터, 비교표 생성, 카카오톡 공유 기능을 제공합니다.',
-  alternates: {
-    canonical: '/about',
-  },
-  openGraph: {
-    title: '서비스 소개 - 우리동네 유치원',
-    description:
-      '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다.',
-    url: '/about',
-    type: 'website',
-    locale: 'ko_KR',
-  },
-  twitter: {
-    title: '서비스 소개 - 우리동네 유치원',
-    description:
-      '우리동네 유치원은 위치 기반으로 주변 유치원을 검색하고 비교할 수 있는 서비스입니다.',
-  },
-};
+const APP_VERSION = '1.0.0';
 
 const features = [
   {
@@ -57,11 +43,99 @@ const features = [
   },
 ];
 
+const nativeMenuItems = [
+  {
+    icon: Mail,
+    label: '문의하기',
+    href: 'mailto:privacy@kindergarden.kr',
+    external: true,
+  },
+  {
+    icon: Shield,
+    label: '개인정보처리방침',
+    href: '/privacy',
+    external: false,
+  },
+  {
+    icon: HelpCircle,
+    label: '자주 묻는 질문',
+    href: '/faq',
+    external: false,
+  },
+  {
+    icon: Star,
+    label: '앱스토어에서 보기',
+    href: 'https://apps.apple.com/app/id6745186892',
+    external: true,
+  },
+];
+
 export default function AboutPage() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (mounted && isNative()) {
+    return (
+      <div className="min-h-screen bg-[var(--brand-page)] font-sans">
+        <header className="safe-area-top sticky top-0 z-50 border-b border-[rgba(203,188,174,0.2)] bg-white/80 backdrop-blur-xl">
+          <div className="flex h-14 items-center gap-3 px-4">
+            <Link
+              href="/"
+              className="rounded-full bg-white/80 p-2 transition-colors active:bg-white"
+              aria-label="홈으로"
+            >
+              <ArrowLeft className="h-5 w-5 text-[var(--brand-ink)]" />
+            </Link>
+            <h1 className="text-base font-semibold text-[var(--brand-ink)]">더보기</h1>
+          </div>
+        </header>
+
+        <main className="mx-auto max-w-lg px-4 py-6">
+          <div className="overflow-hidden rounded-2xl border border-[rgba(203,188,174,0.2)] bg-white shadow-sm">
+            {nativeMenuItems.map((item, index) => {
+              const Icon = item.icon;
+              const isLast = index === nativeMenuItems.length - 1;
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  className={`flex min-h-[56px] items-center gap-3 px-4 py-3 transition-colors active:bg-gray-50${isLast ? '' : ' border-b border-[rgba(203,188,174,0.15)]'}`}
+                >
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[rgba(78,169,109,0.1)]">
+                    <Icon className="h-4 w-4 text-[var(--brand-leaf)]" />
+                  </div>
+                  <span className="flex-1 text-[15px] font-medium text-[var(--brand-ink)]">
+                    {item.label}
+                  </span>
+                  <ChevronRight className="h-4 w-4 text-gray-400" />
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="mt-6 overflow-hidden rounded-2xl border border-[rgba(203,188,174,0.2)] bg-white shadow-sm">
+            <div className="flex min-h-[56px] items-center gap-3 px-4 py-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[rgba(203,188,174,0.15)]">
+                <MapPin className="h-4 w-4 text-[var(--brand-ink-soft)]" />
+              </div>
+              <span className="flex-1 text-[15px] font-medium text-[var(--brand-ink)]">
+                앱 버전
+              </span>
+              <span className="text-sm text-[var(--brand-ink-soft)]">{APP_VERSION}</span>
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen font-sans">
-      {/* Header */}
-      <header className="fixed top-0 z-50 w-full px-4 pt-3">
+      <header className="safe-area-top fixed top-0 z-50 w-full px-4 pt-3">
         <div className="brand-shell mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <Link
@@ -78,7 +152,6 @@ export default function AboutPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="bg-gradient-to-b from-[rgba(244,216,106,0.12)] to-transparent pb-16 pt-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="mb-6 text-4xl font-bold text-[var(--brand-ink)] md:text-5xl">
@@ -100,7 +173,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
@@ -112,8 +184,8 @@ export default function AboutPage() {
                 key={feature.title}
                 className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-[rgba(78,169,109,0.1)] rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[var(--brand-leaf)]" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
                   {feature.title}
@@ -125,7 +197,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Data Source Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
@@ -145,7 +216,7 @@ export default function AboutPage() {
                       href="https://e-childschoolinfo.moe.go.kr"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-600 font-bold hover:underline"
+                      className="text-[var(--brand-leaf)] font-bold hover:underline"
                     >
                       유치원 알리미
                     </a>{' '}
@@ -185,7 +256,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -196,7 +266,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-emerald-100 transition-colors"
+            className="inline-flex items-center gap-2 bg-[var(--brand-leaf)] hover:bg-[var(--brand-leaf-deep)] text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-[rgba(78,169,109,0.2)] transition-colors"
           >
             유치원 검색하기
             <MapPin className="w-5 h-5" />

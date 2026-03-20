@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { ReviewLinkList } from '../ReviewLinkList';
-import { useReviewStore } from '@/stores';
+import { useReviewStore } from '@/stores/reviewStore';
 import type { ReviewsData } from '@/types';
 
 const mockReviewsData: ReviewsData = {
@@ -51,7 +51,7 @@ describe('ReviewLinkList', () => {
     });
 
     render(<ReviewLinkList kindergartenId="K999" />);
-    expect(screen.getByText('수집된 후기가 없습니다')).toBeInTheDocument();
+    expect(screen.getByText('아직 수집된 후기가 없어요')).toBeInTheDocument();
   });
 
   it('should render review list when data exists', () => {
