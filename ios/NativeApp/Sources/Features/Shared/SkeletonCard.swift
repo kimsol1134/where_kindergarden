@@ -6,9 +6,9 @@ struct SkeletonCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SkeletonLine(width: 160, height: 14)
-            SkeletonLine(width: 220, height: 10)
-            SkeletonLine(width: 140, height: 10)
+            SkeletonLine(widthRatio: 0.55, baseHeight: 14)
+            SkeletonLine(widthRatio: 0.75, baseHeight: 10)
+            SkeletonLine(widthRatio: 0.48, baseHeight: 10)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -34,16 +34,23 @@ struct SkeletonCard: View {
             }
             .mask(RoundedRectangle(cornerRadius: 26, style: .continuous))
         )
+        .accessibilityLabel("정보를 불러오는 중")
+        .accessibilityHidden(false)
     }
 }
 
 private struct SkeletonLine: View {
-    let width: CGFloat
-    let height: CGFloat
+    let widthRatio: CGFloat
+    let baseHeight: CGFloat
+    @ScaledMetric(relativeTo: .body) private var scale: CGFloat = 1.0
 
     var body: some View {
-        RoundedRectangle(cornerRadius: height / 2)
-            .fill(slateBlue.opacity(0.12))
-            .frame(width: width, height: height)
+        let h = baseHeight * scale
+        GeometryReader { proxy in
+            RoundedRectangle(cornerRadius: h / 2)
+                .fill(slateBlue.opacity(0.12))
+                .frame(width: proxy.size.width * widthRatio, height: h)
+        }
+        .frame(height: h)
     }
 }

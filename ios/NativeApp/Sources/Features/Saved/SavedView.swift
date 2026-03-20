@@ -16,17 +16,14 @@ public struct SavedView: View {
 
     public var body: some View {
         NavigationStack {
-            ZStack {
-                NativeScreenBackground(topTintOpacity: 0.16)
-
-                List {
+            List {
                     Section {
                         NativeScreenHeader(
                             eyebrow: "보관함",
                             title: "저장한 곳",
                             subtitle: "찜한 기관 \(model.favorites.count)곳 · 최근 검색 \(model.recentSearches.count)건"
                         )
-                        .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 14, trailing: 0))
+                        .listRowInsets(EdgeInsets(top: 16, leading: 20, bottom: 14, trailing: 20))
                         .listRowBackground(Color.clear)
                     }
 
@@ -40,7 +37,7 @@ public struct SavedView: View {
                             ) {
                                 model.selectedTab = .search
                             }
-                            .listRowInsets(EdgeInsets())
+                            .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                         } else {
                             ForEach(model.favoriteKindergartens()) { kindergarten in
@@ -52,9 +49,10 @@ public struct SavedView: View {
                                         reviewCount: model.reviews(for: kindergarten.kindercode).count
                                     )
                                 }
-                                .buttonStyle(.plain)
-                                .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
+                                .buttonStyle(PressableCardStyle())
+                                .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20))
                                 .listRowBackground(Color.clear)
+                                .accessibilityLabel("\(kindergarten.name), \(kindergarten.type.label)")
                                 .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                     Button {
                                         model.openKindergartenDetail(kindercode: kindergarten.kindercode)
@@ -87,10 +85,6 @@ public struct SavedView: View {
                                     }
                                 }
                             }
-                            .onDelete { offsets in
-                                let removed = model.takeFavorites(atOffsets: offsets)
-                                stageUndo(.favorites(removed))
-                            }
                         }
                     } header: {
                         SavedSectionHeader(title: "찜한 곳", subtitle: "눌러서 다시 보고 비교할 수 있어요.")
@@ -111,7 +105,7 @@ public struct SavedView: View {
                             ) {
                                 model.selectedTab = .search
                             }
-                            .listRowInsets(EdgeInsets())
+                            .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                         } else {
                             ForEach(model.recentSearches) { item in
@@ -120,9 +114,10 @@ public struct SavedView: View {
                                 } label: {
                                     RecentSavedCard(item: item)
                                 }
-                                .buttonStyle(.plain)
-                                .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
+                                .buttonStyle(PressableCardStyle())
+                                .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20))
                                 .listRowBackground(Color.clear)
+                                .accessibilityLabel("\(item.label), \(item.resolvedDisplayName)")
                                 .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                     Button {
                                         model.restoreRecentSearch(item)
@@ -142,10 +137,6 @@ public struct SavedView: View {
                                     }
                                 }
                             }
-                            .onDelete { offsets in
-                                let removed = model.takeRecentSearches(atOffsets: offsets)
-                                stageUndo(.recents(removed))
-                            }
                         }
                     } header: {
                         HStack {
@@ -160,10 +151,9 @@ public struct SavedView: View {
                         }
                     }
                 }
-                .listStyle(.plain)
-                .scrollContentBackground(.hidden)
-                .background(Color.clear)
-            }
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
+            .background { NativeScreenBackground(topTintOpacity: 0.16) }
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",
                 isPresented: $isRecentClearConfirmationPresented,
@@ -187,13 +177,14 @@ public struct SavedView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.bottom, 8)
+                    .animation(.spring(duration: 0.35), value: pendingUndo.id)
                 }
             }
             .task(id: pendingUndo?.id) {
                 guard pendingUndo != nil else { return }
                 try? await Task.sleep(for: .seconds(6))
                 guard !Task.isCancelled else { return }
-                withAnimation {
+                withAnimation(.spring(duration: 0.3)) {
                     pendingUndo = nil
                 }
             }
@@ -235,13 +226,21 @@ private struct UndoBanner: View {
             Button(action: onDismiss) {
                 Image(systemName: "xmark")
                     .font(.footnote.weight(.bold))
+                    .frame(width: 44, height: 44)
+                    .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             .foregroundStyle(slateSoft)
+            .accessibilityLabel("알림 닫기")
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 14)
         .glassPanel(cornerRadius: CornerRadius.medium)
+        .transition(.asymmetric(
+            insertion: .move(edge: .bottom).combined(with: .opacity),
+            removal: .opacity
+        ))
+        .sensoryFeedback(.success, trigger: message)
     }
 }
 
@@ -324,7 +323,7 @@ private struct RecentSavedCard: View {
             ZStack {
                 Circle()
                     .fill(jadeGreen.opacity(0.16))
-                    .frame(width: 38, height: 38)
+                    .frame(width: 36, height: 36)
                 Image(systemName: recentSearchIcon(for: item.searchType))
                     .foregroundStyle(jadeDeep)
             }

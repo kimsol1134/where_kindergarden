@@ -5,9 +5,9 @@ public struct NativeAppConfiguration: Sendable {
     public static let kakaoNativeAppKeyBuildSetting = "WK_KAKAO_NATIVE_APP_KEY"
     public static let kakaoRESTAPIKeyBuildSetting = "WK_KAKAO_REST_API_KEY"
 
-    static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
-    static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
-    static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
+    public static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
+    public static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
+    public static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?

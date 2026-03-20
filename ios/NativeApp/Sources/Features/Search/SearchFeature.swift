@@ -130,8 +130,9 @@ public struct SearchHomeView: View {
                         }
                         .transition(.opacity)
                 }
-
-                VStack(spacing: 14) {
+            }
+            .overlay(alignment: .top) {
+                VStack(spacing: 16) {
                     SearchChrome(
                         model: model,
                         isSuggestionPanelPresented: $isSearchPanelPresented,
@@ -142,7 +143,7 @@ public struct SearchHomeView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .background(mistWhite.ignoresSafeArea())
-            .animation(.easeInOut(duration: 0.18), value: isSearchPanelPresented)
+            .animation(.spring(duration: 0.3, bounce: 0.12), value: isSearchPanelPresented)
             .task {
                 model.refreshLocationPermissionState()
                 await model.bootstrapIfNeeded()
@@ -189,10 +190,11 @@ public struct SearchHomeView: View {
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                 )
-                .presentationDetents([.large])
+                .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
             }
         }
+        .navigationTitle("탐색")
         .toolbar(.hidden, for: .navigationBar)
     }
 }
@@ -320,7 +322,7 @@ private struct SearchChrome: View {
                     .buttonStyle(.plain)
                 }
                 .padding(.horizontal, 18)
-                .padding(.top, 40)
+                .padding(.top, 14)
                 .padding(.bottom, 10)
 
                 VStack(spacing: 0) {
@@ -358,8 +360,11 @@ private struct SearchChrome: View {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.body)
                                 .foregroundStyle(model.searchText.isEmpty ? slateSoft.opacity(0.45) : slateBlue)
+                                .frame(width: 44, height: 44)
+                                .contentShape(Circle())
                         }
                         .accessibilityIdentifier("search.clearQuery")
+                        .accessibilityLabel("검색어 지우기")
                         .opacity(model.searchText.isEmpty ? 0 : 1)
                     }
                     .padding(.horizontal, 18)
@@ -391,11 +396,7 @@ private struct SearchChrome: View {
                             .padding(.horizontal, 18)
                             .padding(.vertical, 18)
                         }
-                        #if canImport(UIKit)
-                        .frame(maxHeight: min(280, UIScreen.main.bounds.height * 0.35))
-                        #else
                         .frame(maxHeight: 280)
-                        #endif
                     }
                 }
                 .padding(.horizontal, 18)
@@ -456,6 +457,7 @@ private struct SearchChrome: View {
                                 FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
                                     model.toggleBusFilter()
                                 }
+                                .sensoryFeedback(.selection, trigger: model.filters.hasBus)
                                 FilterChip(label: advancedFilterChipLabel, isActive: model.activeAdvancedFilterCount > 0) {
                                     isAdvancedFilterPresented = true
                                 }
@@ -485,7 +487,10 @@ private struct SearchChrome: View {
                                             )
                                             .foregroundStyle(jadeDeep)
                                         }
+                                        .frame(minHeight: 44)
+                                        .contentShape(Capsule())
                                         .buttonStyle(.plain)
+                                        .accessibilityLabel("\(desc.label) 필터 해제")
                                     }
                                 }
                                 .padding(.horizontal, 2)
@@ -524,8 +529,7 @@ private struct SearchChrome: View {
                 }
             }
         }
-        .padding(.horizontal, 16)
-        .padding(.top, 8)
+        .padding(.horizontal, 20)
         .sheet(isPresented: $isAdvancedFilterPresented) {
             AdvancedFilterSheet(model: model)
                 .presentationDetents([.medium])
@@ -729,14 +733,7 @@ private struct ResultSheet: View {
 
     private var results: [Kindergarten] { model.results }
     private var isLoading: Bool { model.isCatalogLoading || model.isReviewsLoading }
-    private var dynamicHeightRatio: CGFloat {
-        #if canImport(UIKit)
-        let isCompact = UIScreen.main.bounds.height < 700
-        return isCompact ? 0.48 : 0.58
-        #else
-        return 0.58
-        #endif
-    }
+    @State private var containerHeight: CGFloat = 800
     private var comparedIDs: Set<String> { Set(model.compareSelection.ids) }
     private var favoriteIDs: Set<String> { Set(model.favorites.map(\.kindercode)) }
     private var sectionTitle: String {
@@ -883,12 +880,17 @@ private struct ResultSheet: View {
                     }
                     .padding(.bottom, 8)
                 }
-                .frame(maxHeight: UIScreen.main.bounds.height * dynamicHeightRatio)
+                .frame(maxHeight: containerHeight * (containerHeight < 700 ? 0.48 : 0.58))
             }
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 20)
         .padding(.bottom, 16)
         .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
+        .background(
+            GeometryReader { proxy in
+                Color.clear.onAppear { containerHeight = proxy.size.height }
+            }
+        )
     }
 }
 
@@ -993,8 +995,10 @@ private struct SearchResultCard: View {
                             )
                     }
                     .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
+                    .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
                     .buttonStyle(.borderless)
                     .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
+                    .contentTransition(.symbolEffect(.replace))
 
                     Button(action: onToggleFavorite) {
                         Image(systemName: isFavorite ? "heart.fill" : "heart")
@@ -1006,15 +1010,18 @@ private struct SearchResultCard: View {
                                     .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
                             )
                     }
+                    .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
                     .buttonStyle(.borderless)
                     .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
+                    .contentTransition(.symbolEffect(.replace))
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(PressableCardStyle())
         .padding(cardPadding)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
         .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -1223,9 +1230,11 @@ private struct KindergartenDetailSheet: View {
                                 .font(.system(size: 14, weight: .bold))
                                 .foregroundStyle(slateBlue)
                                 .frame(width: 44, height: 44)
+                                .contentShape(Circle())
                                 .background(paperWhite.opacity(0.88), in: Circle())
                         }
                         .buttonStyle(.plain)
+                        .accessibilityLabel("닫기")
                     }
 
                     VStack(alignment: .leading, spacing: 8) {
@@ -1235,6 +1244,7 @@ private struct KindergartenDetailSheet: View {
                         Text("\(kindergarten.address)\n\(kindergarten.type.label) · \(distanceLabel)")
                             .font(.subheadline)
                             .foregroundStyle(slateBlue)
+                            .lineSpacing(3)
                     }
 
                     if !summaryTags.isEmpty {
@@ -1341,7 +1351,7 @@ private struct KindergartenDetailSheet: View {
 
                             if reviews.count > 3 {
                                 Button {
-                                    withAnimation(.easeInOut(duration: 0.25)) {
+                                    withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
                                         showAllReviews.toggle()
                                     }
                                 } label: {

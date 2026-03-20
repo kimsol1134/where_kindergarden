@@ -7,6 +7,8 @@ public struct EmptyStateView: View {
     var ctaLabel: String?
     var ctaAction: (() -> Void)?
 
+    @State private var appeared = false
+
     public init(
         icon: String,
         title: String,
@@ -21,19 +23,32 @@ public struct EmptyStateView: View {
         self.ctaAction = ctaAction
     }
 
+    private var isErrorState: Bool {
+        icon == "exclamationmark.triangle" || icon == "location.slash"
+    }
+
+    private var iconBackground: Color {
+        isErrorState ? sunYellow.opacity(0.22) : jadeGreen.opacity(0.16)
+    }
+
+    private var iconForeground: Color {
+        isErrorState ? amberOrange : jadeDeep
+    }
+
     public var body: some View {
         VStack(spacing: 14) {
             ZStack {
                 Circle()
-                    .fill(jadeGreen.opacity(0.16))
-                    .frame(width: 60, height: 60)
+                    .fill(iconBackground)
+                    .frame(width: 80, height: 80)
                 Image(systemName: icon)
-                    .font(.title3.weight(.bold))
-                    .foregroundStyle(jadeDeep)
+                    .font(.title2.weight(.bold))
+                    .foregroundStyle(iconForeground)
             }
+            .accessibilityHidden(true)
 
             Text(title)
-                .font(.headline.weight(.semibold))
+                .font(.title3.weight(.bold))
                 .foregroundStyle(inkBlack)
                 .multilineTextAlignment(.center)
 
@@ -41,6 +56,7 @@ public struct EmptyStateView: View {
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(slateBlue)
+                .lineSpacing(3)
 
             if let ctaLabel, let ctaAction {
                 Button(action: ctaAction) {
@@ -64,8 +80,16 @@ public struct EmptyStateView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 28)
+        .padding(.vertical, 36)
         .padding(.horizontal, 22)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
+        .opacity(appeared ? 1 : 0)
+        .offset(y: appeared ? 0 : 12)
+        .onAppear {
+            withAnimation(.spring(duration: 0.45, bounce: 0.15)) {
+                appeared = true
+            }
+        }
+        .accessibilityElement(children: .combine)
     }
 }
