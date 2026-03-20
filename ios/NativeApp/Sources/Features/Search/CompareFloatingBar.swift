@@ -10,9 +10,9 @@ struct CompareFloatingBar: View {
 
     private var statusText: String {
         switch count {
-        case 1: return "비교 목록에 1곳 담았어요 · 한 곳 더 담으면 비교할 수 있어요"
-        case 2: return "비교 목록 2곳 보기"
-        case 3: return "비교 목록 3곳 보기"
+        case 1: return "한 곳 더 담으면 바로 비교할 수 있어요"
+        case 2: return "2곳 비교하기"
+        case 3: return "3곳 비교하기"
         default: return ""
         }
     }
@@ -22,49 +22,42 @@ struct CompareFloatingBar: View {
     }
 
     var body: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 8) {
-                ForEach(Array(names.enumerated()), id: \.offset) { index, name in
-                    Button {
-                        onRemoveAt(index)
-                    } label: {
-                        HStack(spacing: 4) {
-                            Text(name)
-                                .font(.caption2.weight(.semibold))
-                                .lineLimit(1)
-                            Image(systemName: "xmark")
-                                .font(.system(size: 8, weight: .bold))
-                        }
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 6)
-                        .background(.white.opacity(0.22), in: Capsule())
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-
-            Button(action: onNavigateToCompare) {
-                HStack {
+        Button(action: onNavigateToCompare) {
+            HStack(spacing: 12) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("비교할 곳 \(count)곳")
+                        .font(.caption.weight(.heavy))
+                        .foregroundStyle(slateSoft)
+                        .textCase(.uppercase)
+                    Text(names.joined(separator: " · "))
+                        .font(.caption)
+                        .foregroundStyle(slateBlue)
+                        .lineLimit(1)
                     Text(statusText)
                         .font(.subheadline.weight(.bold))
-                    Spacer()
-                    if isCtaEnabled {
-                        Image(systemName: "arrow.right.circle.fill")
-                            .font(.title2)
-                    }
+                        .foregroundStyle(inkBlack)
+                }
+
+                Spacer()
+
+                ZStack {
+                    Circle()
+                        .fill(isCtaEnabled ? jadeGreen : warmSand.opacity(0.36))
+                        .frame(width: 40, height: 40)
+                    Image(systemName: "arrow.right")
+                        .font(.system(size: 15, weight: .black))
+                        .foregroundStyle(inkBlack.opacity(isCtaEnabled ? 1 : 0.52))
                 }
             }
-            .buttonStyle(.plain)
-            .disabled(!isCtaEnabled)
-            .opacity(isCtaEnabled ? 1 : 0.7)
         }
+        .buttonStyle(.plain)
+        .disabled(!isCtaEnabled)
+        .opacity(isCtaEnabled ? 1 : 0.7)
         .padding(.horizontal, 18)
         .padding(.vertical, 14)
-        .background(leafGreen, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-        .foregroundStyle(.white)
-        .shadow(color: leafGreen.opacity(0.24), radius: 18, y: 8)
+        .glassPanel(cornerRadius: 28)
         .padding(.horizontal, 16)
-        .padding(.bottom, 6)
+        .padding(.bottom, 2)
         .transition(reduceMotion ? .opacity : .move(edge: .bottom).combined(with: .opacity))
         .accessibilityIdentifier("search.compareBar")
     }

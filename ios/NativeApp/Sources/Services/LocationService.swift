@@ -11,13 +11,13 @@ public enum LocationServiceError: LocalizedError, Equatable {
     public var errorDescription: String? {
         switch self {
         case .servicesDisabled:
-            return "위치 서비스가 비활성화되어 있습니다."
+            return "위치 서비스를 켜면 가까운 유치원을 더 쉽게 찾을 수 있어요."
         case .authorizationDenied:
-            return "현재 위치 권한이 없어 지도를 현재 위치로 이동할 수 없습니다."
+            return "위치 권한이 꺼져 있어요. 주소나 기관 이름으로도 찾을 수 있어요."
         case .unavailable:
-            return "현재 위치를 아직 가져오지 못했습니다."
+            return "현재 위치를 다시 확인해 주세요."
         case .unknown:
-            return "현재 위치를 확인하는 중 오류가 발생했습니다."
+            return "위치를 불러오지 못했어요. 잠시 후 다시 시도해 주세요."
         }
     }
 }

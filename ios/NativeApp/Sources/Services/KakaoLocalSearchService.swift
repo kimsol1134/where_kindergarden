@@ -9,11 +9,11 @@ public enum KakaoLocalSearchError: LocalizedError, Equatable {
     public var errorDescription: String? {
         switch self {
         case .missingAPIKey:
-            return "주소와 장소 검색을 준비하는 중이에요."
+            return "주소나 장소 추천을 지금은 사용할 수 없어요."
         case .invalidRequest:
-            return "Kakao Local 요청을 생성하지 못했습니다."
-        case let .invalidHTTPStatus(statusCode):
-            return "Kakao Local 응답이 유효하지 않습니다. (\(statusCode))"
+            return "추천 결과를 불러오지 못했어요."
+        case .invalidHTTPStatus:
+            return "추천 결과를 불러오지 못했어요."
         }
     }
 }
@@ -339,7 +339,7 @@ public struct KakaoLocalSuggestionService: RemoteLocationSuggesting {
 
     public init(
         client: any KakaoLocalSearching,
-        unavailableMessage: String = "주소와 장소 검색은 잠시 쉬고 있어요. 유치원 이름 검색은 계속 사용할 수 있어요."
+        unavailableMessage: String = "주소나 장소 추천이 잠시 쉬고 있어요. 기관 이름이나 최근 검색으로 찾아보세요."
     ) {
         self.client = client
         self.unavailableMessage = unavailableMessage
@@ -367,7 +367,7 @@ public struct KakaoLocalSuggestionService: RemoteLocationSuggesting {
 
         return RemoteLocationSearchResult(
             suggestions: [],
-            message: "주소와 장소 제안을 불러오지 못했습니다. 유치원명 검색과 최근 검색은 계속 사용할 수 있습니다."
+            message: "추천 결과를 불러오지 못했어요. 기관 이름이나 최근 검색으로 찾아보세요."
         )
     }
 

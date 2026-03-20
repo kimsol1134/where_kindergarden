@@ -1,6 +1,9 @@
 import Features
 import Services
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public struct NativeRootView: View {
     @StateObject private var model: NativeAppModel
@@ -51,6 +54,11 @@ public struct NativeRootView: View {
             async let services: Void = initializeServices()
             async let bootstrap: Void = model.bootstrapIfNeeded()
             _ = await (services, bootstrap)
+        }
+        .onAppear {
+            #if canImport(UIKit)
+            configureNativeTabBarAppearance()
+            #endif
         }
         .onOpenURL { url in
             #if canImport(KakaoSDKShare)

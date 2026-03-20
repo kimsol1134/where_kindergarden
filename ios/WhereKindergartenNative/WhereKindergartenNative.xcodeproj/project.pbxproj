@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D28F4DE09ADED88E19075522 /* Assets.xcassets */; };
 		2F8EFBCB22FF27C4B61449DB /* reviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 43C2215E8F5BD484A2ACBDE8 /* reviews.json */; };
-		3B4A40E78AF3CD83AFB8BB53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7538DB491ADFAC279746DE1C /* LaunchScreen.storyboard */; };
+		403EC4581364F35ABA88B384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE6FD1A016CBE87CE38FA0 /* LaunchScreen.storyboard */; };
 		6E9A9CAA3EAE26E600A56F98 /* AppShell in Frameworks */ = {isa = PBXBuildFile; productRef = 41EAF112B635B0F638C82AC1 /* AppShell */; };
 		C21BF0BD13CEF6E1687A5D87 /* kindergartens.json in Resources */ = {isa = PBXBuildFile; fileRef = 35428D688B8EE0590B8914FC /* kindergartens.json */; };
 		EC743E9EFFC6BB7CAD5D32B4 /* WhereKindergartenNativeHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */; };
@@ -18,12 +18,11 @@
 
 /* Begin PBXFileReference section */
 		0D2C57622F53A73CECF46A59 /* NativeApp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeApp; path = ../NativeApp; sourceTree = SOURCE_ROOT; };
-		35428D688B8EE0590B8914FC /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = kindergartens.json; path = ../../../public/data/kindergartens.json; sourceTree = "<group>"; };
-		43C2215E8F5BD484A2ACBDE8 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = reviews.json; path = ../../../public/data/reviews.json; sourceTree = "<group>"; };
+		35428D688B8EE0590B8914FC /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = kindergartens.json; path = ../../public/data/kindergartens.json; sourceTree = "<group>"; };
+		43C2215E8F5BD484A2ACBDE8 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = reviews.json; path = ../../public/data/reviews.json; sourceTree = "<group>"; };
 		5882C84991C544378008A018 /* KakaoKeys.local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = KakaoKeys.local.xcconfig; sourceTree = "<group>"; };
-		614B734E74A5B7BDBEA8C104 /* vacancy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = vacancy.json; path = ../../../public/data/vacancy.json; sourceTree = "<group>"; };
 		6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereKindergartenNativeHostApp.swift; sourceTree = "<group>"; };
-		9C3128356D85B9C9F84A37DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EDE6FD1A016CBE87CE38FA0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../App/App/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FB5FFA17846B54A8199A40 /* WhereKindergartenNative.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WhereKindergartenNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E16FB563928C2F7D96A79E /* KakaoKeys.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = KakaoKeys.example.xcconfig; sourceTree = "<group>"; };
 		D28F4DE09ADED88E19075522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +47,14 @@
 				55A78FEC9157F220DE617532 /* App */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		3EDC1A350A6D47B91601E159 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE6FD1A016CBE87CE38FA0 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		4B881123B4A59183867576F7 /* Packages */ = {
@@ -79,6 +86,7 @@
 			children = (
 				7538DB491ADFAC279746DE1C /* LaunchScreen.storyboard */,
 				EBC01A2A8E7CA59198A21B5F /* Data */,
+				3EDC1A350A6D47B91601E159 /* LaunchScreen */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -197,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D731B33E9C7DE848589999 /* Assets.xcassets in Resources */,
-				3B4A40E78AF3CD83AFB8BB53 /* LaunchScreen.storyboard in Resources */,
+				403EC4581364F35ABA88B384 /* LaunchScreen.storyboard in Resources */,
 				C21BF0BD13CEF6E1687A5D87 /* kindergartens.json in Resources */,
 				2F8EFBCB22FF27C4B61449DB /* reviews.json in Resources */,
 				F4C2954BA9320C7419680B12 /* vacancy.json in Resources */,

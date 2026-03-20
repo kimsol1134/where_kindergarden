@@ -22,36 +22,58 @@ public struct EmptyStateView: View {
     }
 
     public var body: some View {
-        VStack(spacing: 14) {
-            Image(systemName: icon)
-                .font(.system(size: 36))
-                .foregroundStyle(leafGreen)
+        VStack(spacing: 16) {
+            ZStack(alignment: .bottomTrailing) {
+                BrandGlyphView(size: 58, cornerRadius: 18)
+
+                Image(systemName: icon)
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(inkBlack)
+                    .padding(10)
+                    .background(sunYellow.opacity(0.92), in: Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(paperWhite.opacity(0.92), lineWidth: 1)
+                    )
+                    .offset(x: 8, y: 6)
+            }
+
+            NativeBadge("안내", tone: .slate)
 
             Text(title)
                 .font(.headline.weight(.semibold))
+                .foregroundStyle(inkBlack)
                 .multilineTextAlignment(.center)
 
             Text(message)
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(slateBlue)
 
             if let ctaLabel, let ctaAction {
                 Button(action: ctaAction) {
-                    Text(ctaLabel)
-                        .font(.subheadline.weight(.semibold))
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 12)
-                        .background(leafGreen, in: Capsule())
-                        .foregroundStyle(.white)
+                    HStack(spacing: 8) {
+                        Text(ctaLabel)
+                            .font(.subheadline.weight(.semibold))
+                        Image(systemName: "arrow.right.circle.fill")
+                            .font(.body)
+                    }
+                    .foregroundStyle(inkBlack)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 12)
+                    .background(jadeGreen.opacity(0.22), in: Capsule())
+                    .overlay(
+                        Capsule()
+                            .stroke(jadeGreen.opacity(0.20), lineWidth: 1)
+                    )
                 }
                 .buttonStyle(.plain)
                 .padding(.top, 4)
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 36)
-        .padding(.horizontal, 20)
-        .background(.white, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+        .padding(.vertical, 32)
+        .padding(.horizontal, 22)
+        .solidPanel(cornerRadius: 30, tint: paperWhite.opacity(0.92))
     }
 }
