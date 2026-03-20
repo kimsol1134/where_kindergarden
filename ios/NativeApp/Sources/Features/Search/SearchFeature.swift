@@ -779,11 +779,6 @@ private struct ResultSheet: View {
                 .frame(maxHeight: 520)
                 #endif
             }
-            #if canImport(UIKit)
-            .frame(maxHeight: UIScreen.main.bounds.height * 0.45)
-            #else
-            .frame(maxHeight: 420)
-            #endif
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 16)

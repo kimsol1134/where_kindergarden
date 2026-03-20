@@ -40,9 +40,6 @@ targets:
         buildPhase: resources
       - path: ../App/App/Assets.xcassets
         buildPhase: resources
-      - path: ../App/App/Base.lproj/LaunchScreen.storyboard
-        group: Resources/LaunchScreen
-        buildPhase: resources
       - path: ../../public/data/kindergartens.json
         group: Resources/Data
         buildPhase: resources
