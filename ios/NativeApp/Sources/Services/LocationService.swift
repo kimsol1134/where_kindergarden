@@ -2,18 +2,30 @@ import CoreLocation
 import Foundation
 import Models
 
+public enum LocationPermissionState: Equatable, Sendable {
+    case notDetermined
+    case granted
+    case denied
+    case restricted
+    case servicesDisabled
+    case transientFailure
+}
+
 public enum LocationServiceError: LocalizedError, Equatable {
     case servicesDisabled
     case authorizationDenied
+    case authorizationRestricted
     case unavailable
     case unknown
 
     public var errorDescription: String? {
         switch self {
         case .servicesDisabled:
-            return "위치 서비스를 켜면 가까운 유치원을 더 쉽게 찾을 수 있어요."
+            return "위치 서비스가 꺼져 있어요. 동네 이름이나 기관명으로도 찾을 수 있어요."
         case .authorizationDenied:
-            return "위치 권한이 꺼져 있어요. 주소나 기관 이름으로도 찾을 수 있어요."
+            return "위치 권한 없이도 검색할 수 있어요. 필요하면 설정에서 켤 수 있어요."
+        case .authorizationRestricted:
+            return "이 기기에서는 위치 사용이 제한되어 있어요. 동네 이름으로도 찾을 수 있어요."
         case .unavailable:
             return "현재 위치를 다시 확인해 주세요."
         case .unknown:
@@ -24,6 +36,13 @@ public enum LocationServiceError: LocalizedError, Equatable {
 
 public protocol CurrentLocationProviding: AnyObject {
     func requestCurrentLocation() async throws -> Coordinates
+    func permissionState() -> LocationPermissionState
+}
+
+public extension CurrentLocationProviding {
+    func permissionState() -> LocationPermissionState {
+        .notDetermined
+    }
 }
 
 public final class CurrentLocationService: NSObject, CurrentLocationProviding {
@@ -52,14 +71,35 @@ public final class CurrentLocationService: NSObject, CurrentLocationProviding {
         }
     }
 
+    public func permissionState() -> LocationPermissionState {
+        guard CLLocationManager.locationServicesEnabled() else {
+            return .servicesDisabled
+        }
+
+        switch manager.authorizationStatus {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return .granted
+        case .notDetermined:
+            return .notDetermined
+        case .denied:
+            return .denied
+        case .restricted:
+            return .restricted
+        @unknown default:
+            return .transientFailure
+        }
+    }
+
     private func handleAuthorization(status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
             manager.requestLocation()
         case .notDetermined:
             manager.requestWhenInUseAuthorization()
-        case .restricted, .denied:
+        case .denied:
             finish(with: .failure(LocationServiceError.authorizationDenied))
+        case .restricted:
+            finish(with: .failure(LocationServiceError.authorizationRestricted))
         @unknown default:
             finish(with: .failure(LocationServiceError.unknown))
         }
@@ -80,6 +120,7 @@ public final class CurrentLocationService: NSObject, CurrentLocationProviding {
 
 extension CurrentLocationService: CLLocationManagerDelegate {
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        guard continuation != nil else { return }
         handleAuthorization(status: manager.authorizationStatus)
     }
 
@@ -106,5 +147,9 @@ public final class PreviewLocationProvider: CurrentLocationProviding {
 
     public func requestCurrentLocation() async throws -> Coordinates {
         coordinates
+    }
+
+    public func permissionState() -> LocationPermissionState {
+        .granted
     }
 }

@@ -630,7 +630,7 @@ final class NativeAppTests: XCTestCase {
     }
 
     @MainActor
-    func testLocationDeniedSetsShouldFocusSearchField() async {
+    func testLocationDeniedShowsPermissionRecoveryWithoutFocusingSearchField() async {
         let store = InMemoryNativeAppStore()
         let persistence = NativeAppPersistence(store: store)
 
@@ -648,14 +648,48 @@ final class NativeAppTests: XCTestCase {
 
         await model.centerOnCurrentLocation()
 
-        XCTAssertTrue(model.shouldFocusSearchField)
+        XCTAssertFalse(model.shouldFocusSearchField)
         XCTAssertNotNil(model.locationError)
+        XCTAssertEqual(model.locationPermissionState, .denied)
+        XCTAssertEqual(model.searchHomePresentationState, .permissionRecovery)
+    }
+
+    @MainActor
+    func testSearchInteractionCompletesFirstLaunchState() {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:]),
+            searchDebounceDuration: .zero
+        )
+
+        XCTAssertEqual(model.searchHomePresentationState, .firstVisit)
+
+        model.focusSearchField()
+
+        XCTAssertFalse(model.isFirstLaunch)
+        XCTAssertTrue(model.shouldFocusSearchField)
+        XCTAssertEqual(model.searchHomePresentationState, .normal)
     }
 }
 
 private final class FailingLocationProvider: CurrentLocationProviding {
     func requestCurrentLocation() async throws -> Coordinates {
         throw LocationServiceError.authorizationDenied
+    }
+
+    func permissionState() -> LocationPermissionState {
+        .denied
     }
 }
 

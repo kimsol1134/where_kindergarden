@@ -11,6 +11,12 @@ public enum NativeTab: Hashable {
     case more
 }
 
+public enum SearchHomePresentationState: Equatable {
+    case firstVisit
+    case normal
+    case permissionRecovery
+}
+
 @MainActor
 public final class NativeAppModel: ObservableObject {
     public static let defaultCenter = Coordinates(lat: 37.5665, lng: 126.9780)
@@ -48,6 +54,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var catalogError: String?
     @Published public private(set) var reviewsError: String?
     @Published public private(set) var locationError: String?
+    @Published public private(set) var locationPermissionState: LocationPermissionState
     @Published public private(set) var isFirstLaunch: Bool
     @Published public var shouldFocusSearchField: Bool = false
 
@@ -109,6 +116,7 @@ public final class NativeAppModel: ObservableObject {
         self.remoteSearchSuggestions = []
         self.compareSelection = restoredState.compareSelection
         self.searchDebounceDuration = searchDebounceDuration
+        self.locationPermissionState = locationProvider.permissionState()
         self.isFirstLaunch = !persistence.hasLaunched()
 
         if let restoredSearch = restoredState.recentSearches.first, let coordinates = restoredSearch.coordinates {
@@ -144,6 +152,62 @@ public final class NativeAppModel: ObservableObject {
                 coordinates: coordinates
             )
         }
+    }
+
+    public var searchHomePresentationState: SearchHomePresentationState {
+        if isFirstLaunch {
+            return .firstVisit
+        }
+
+        switch locationPermissionState {
+        case .denied, .restricted, .servicesDisabled:
+            return .permissionRecovery
+        case .notDetermined, .granted, .transientFailure:
+            return .normal
+        }
+    }
+
+    public var locationPermissionStatusText: String {
+        switch locationPermissionState {
+        case .granted:
+            return "사용 중"
+        case .denied, .restricted:
+            return "꺼짐"
+        case .servicesDisabled:
+            return "서비스 꺼짐"
+        case .transientFailure:
+            return "다시 확인 필요"
+        case .notDetermined:
+            return "설정 전"
+        }
+    }
+
+    public var locationPermissionMessage: String? {
+        switch locationPermissionState {
+        case .denied:
+            return "위치 권한 없이도 검색할 수 있어요. 필요하면 설정에서 켤 수 있어요."
+        case .restricted:
+            return "이 기기에서는 위치 사용이 제한되어 있어요. 동네 이름으로도 찾을 수 있어요."
+        case .servicesDisabled:
+            return "위치 서비스가 꺼져 있어요. 동네 이름이나 기관명으로도 찾을 수 있어요."
+        case .transientFailure:
+            return locationError ?? "현재 위치를 다시 확인해 주세요."
+        case .notDetermined, .granted:
+            return nil
+        }
+    }
+
+    public var shouldShowLocationSettingsCTA: Bool {
+        switch locationPermissionState {
+        case .denied, .restricted:
+            return true
+        case .notDetermined, .granted, .servicesDisabled, .transientFailure:
+            return false
+        }
+    }
+
+    public var shouldShowLocationRetryCTA: Bool {
+        locationPermissionState == .transientFailure
     }
 
     public static func live(
@@ -292,14 +356,19 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func updateRadius(to radius: Double) {
+        dismissFirstLaunchIfNeeded()
         filters.radiusKM = radius
     }
 
     public func updateSort(to sort: SortOption) {
+        dismissFirstLaunchIfNeeded()
         filters.sort = sort
     }
 
     public func updateSearchText(_ text: String) {
+        if !trimmedSearchText(text).isEmpty {
+            dismissFirstLaunchIfNeeded()
+        }
         setSearchText(text, refreshSuggestions: true, applyAsResultQuery: true)
     }
 
@@ -308,14 +377,17 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func toggleBusFilter() {
+        dismissFirstLaunchIfNeeded()
         filters.hasBus = filters.hasBus == true ? nil : true
     }
 
     public func toggleLargeSpaceFilter() {
+        dismissFirstLaunchIfNeeded()
         filters.hasLargeSpace = filters.hasLargeSpace == true ? nil : true
     }
 
     public func setLocation(_ coordinates: Coordinates, label: String, recordRecents: Bool = true, searchType: SearchType? = nil) {
+        dismissFirstLaunchIfNeeded()
         userLocation = coordinates
         locationLabel = label
         locationError = nil
@@ -341,15 +413,30 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func centerOnCurrentLocation() async {
+        dismissFirstLaunchIfNeeded()
+        refreshLocationPermissionState()
+
         do {
             let coordinates = try await locationProvider.requestCurrentLocation()
             currentDeviceLocation = coordinates
+            locationPermissionState = .granted
+            locationError = nil
             shouldFocusSearchField = false
             setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
         } catch {
+            locationPermissionState = resolvedPermissionState(for: error)
             locationError = error.localizedDescription
-            shouldFocusSearchField = true
+            shouldFocusSearchField = false
         }
+    }
+
+    public func refreshLocationPermissionState() {
+        locationPermissionState = locationProvider.permissionState()
+    }
+
+    public func focusSearchField() {
+        dismissFirstLaunchIfNeeded()
+        shouldFocusSearchField = true
     }
 
     public func select(kindergarten: Kindergarten) {
@@ -362,6 +449,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func selectSearchSuggestion(_ suggestion: SearchSuggestion) {
+        dismissFirstLaunchIfNeeded()
         let mappedType: SearchType? = {
             switch suggestion.kind {
             case .address: return .address
@@ -488,6 +576,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func restoreRecentSearch(_ search: RecentSearch) {
+        dismissFirstLaunchIfNeeded()
         guard let coordinates = search.coordinates else { return }
         setLocation(coordinates, label: search.label)
         setSearchText(search.label, refreshSuggestions: false, applyAsResultQuery: false)
@@ -505,6 +594,7 @@ public final class NativeAppModel: ObservableObject {
     // MARK: - Filter helpers (PR 3 / PR 6)
 
     public func resetFilters() {
+        dismissFirstLaunchIfNeeded()
         filters = SearchFilters()
     }
 
@@ -809,6 +899,7 @@ public final class NativeAppModel: ObservableObject {
     }
 
     private func applySearchDeepLink(query: String?) {
+        dismissFirstLaunchIfNeeded()
         searchDeepLinkTask?.cancel()
         searchDeepLinkTask = nil
         selectedKindergarten = nil
@@ -861,5 +952,28 @@ public final class NativeAppModel: ObservableObject {
     private func normalizedSearchText(_ text: String) -> String {
         trimmedSearchText(text)
             .folding(options: [.diacriticInsensitive, .caseInsensitive], locale: Self.searchLocale)
+    }
+
+    private func dismissFirstLaunchIfNeeded() {
+        guard isFirstLaunch else { return }
+        completeFirstLaunch()
+    }
+
+    private func resolvedPermissionState(for error: Error) -> LocationPermissionState {
+        if let error = error as? LocationServiceError {
+            switch error {
+            case .servicesDisabled:
+                return .servicesDisabled
+            case .authorizationDenied:
+                return .denied
+            case .authorizationRestricted:
+                return .restricted
+            case .unavailable, .unknown:
+                break
+            }
+        }
+
+        let providerState = locationProvider.permissionState()
+        return providerState == .granted ? .transientFailure : providerState
     }
 }

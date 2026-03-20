@@ -22,23 +22,15 @@ public struct EmptyStateView: View {
     }
 
     public var body: some View {
-        VStack(spacing: 16) {
-            ZStack(alignment: .bottomTrailing) {
-                BrandGlyphView(size: 58, cornerRadius: 18)
-
+        VStack(spacing: 14) {
+            ZStack {
+                Circle()
+                    .fill(jadeGreen.opacity(0.16))
+                    .frame(width: 60, height: 60)
                 Image(systemName: icon)
-                    .font(.system(size: 15, weight: .bold))
-                    .foregroundStyle(inkBlack)
-                    .padding(10)
-                    .background(sunYellow.opacity(0.92), in: Circle())
-                    .overlay(
-                        Circle()
-                            .stroke(paperWhite.opacity(0.92), lineWidth: 1)
-                    )
-                    .offset(x: 8, y: 6)
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundStyle(jadeDeep)
             }
-
-            NativeBadge("안내", tone: .slate)
 
             Text(title)
                 .font(.headline.weight(.semibold))
@@ -72,8 +64,8 @@ public struct EmptyStateView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 32)
+        .padding(.vertical, 28)
         .padding(.horizontal, 22)
-        .solidPanel(cornerRadius: 30, tint: paperWhite.opacity(0.92))
+        .solidPanel(cornerRadius: 26, tint: paperWhite.opacity(0.95))
     }
 }

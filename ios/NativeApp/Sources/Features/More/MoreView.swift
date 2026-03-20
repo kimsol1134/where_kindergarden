@@ -6,7 +6,9 @@ import UIKit
 
 public struct MoreView: View {
     @ObservedObject private var model: NativeAppModel
+    #if DEBUG
     @AppStorage("native.debugMode") private var isDebugModeActive = false
+    #endif
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -16,28 +18,14 @@ public struct MoreView: View {
         self.model = .preview()
     }
 
-    private var configuration: NativeAppConfiguration {
-        model.configuration
+    private var reviewVersionText: String {
+        model.reviewsData?.version ?? "확인 중"
     }
 
     private var appVersionText: String {
         let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
         let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "1"
         return "버전 \(version) (\(build))"
-    }
-
-    private var reviewVersionText: String {
-        model.reviewsData?.version ?? "확인 중"
-    }
-
-    private var locationPermissionStatus: String {
-        if model.currentDeviceLocation != nil {
-            return "켜짐"
-        } else if model.locationError != nil {
-            return "꺼짐"
-        } else {
-            return "확인 전"
-        }
     }
 
     public var body: some View {
@@ -50,7 +38,7 @@ public struct MoreView: View {
                         NativeScreenHeader(
                             eyebrow: "앱 정보",
                             title: "안내와 문의",
-                            subtitle: "앱 소개, 개인정보처리방침, 문의처를 확인할 수 있어요."
+                            subtitle: "도움말과 정책을 한곳에서 확인할 수 있어요."
                         ) {
                             Link(destination: URL(string: "mailto:support@where-kindergarten.com")!) {
                                 Text("문의하기")
@@ -64,33 +52,49 @@ public struct MoreView: View {
                         .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 10, trailing: 0))
                         .listRowBackground(Color.clear)
 
-                        TrustHeroCard(
-                            title: "주변 유치원을 쉽게 찾고 비교해요",
-                            message: "동네별로 유치원을 찾고, 저장하고, 비교까지 한 번에 할 수 있어요.",
-                            meta: "최근 업데이트 \(reviewVersionText)"
+                        ExternalRow(
+                            title: "문의하기",
+                            subtitle: "불편한 점이나 제안은 메일로 보내주세요.",
+                            systemImage: "paperplane",
+                            url: URL(string: "mailto:support@where-kindergarten.com")!
                         )
-                        TrustCard(
-                            title: "후기는 참고용으로 볼 수 있어요",
-                            message: "블로그나 카페 후기를 모아 보여드려서 분위기를 가늠하는 데 도움을 드려요.",
-                            tone: .sun
+                        ExternalRow(
+                            title: "개인정보처리방침",
+                            subtitle: "위치와 이용 정보의 사용 범위를 확인해요.",
+                            systemImage: "lock.shield",
+                            url: URL(string: "https://where-kindergarden.vercel.app/privacy")!
                         )
-                        TrustCard(
-                            title: "위치는 필요한 때만 사용해요",
-                            message: "내 위치로 찾을 때만 활용하고, 저장한 동네는 언제든 다시 불러올 수 있어요.",
-                            tone: .slate
+                        ExternalRow(
+                            title: "자주 묻는 질문",
+                            subtitle: "기능과 이용 방법을 빠르게 볼 수 있어요.",
+                            systemImage: "questionmark.circle",
+                            url: URL(string: "https://where-kindergarden.vercel.app/#faq")!
                         )
-                        TrustCard(
-                            title: "궁금한 점은 바로 문의해 주세요",
-                            message: "불편한 점이나 제안하고 싶은 내용을 메일로 편하게 보내실 수 있어요.",
-                            tone: .jade
+
+                        IntroCard(
+                            title: "가까운 유치원을 빠르게 찾고, 저장하고, 비교해 보세요.",
+                            message: "후기와 기본 정보를 함께 보여드려서 동네 선택이 더 쉬워져요."
                         )
                     }
 
                     Section {
-                        StatRow(title: "위치 권한", value: locationPermissionStatus)
+                        ExternalRow(
+                            title: "앱스토어 보기",
+                            subtitle: "최신 버전과 리뷰를 확인해요.",
+                            systemImage: "apple.logo",
+                            url: URL(string: "https://apps.apple.com/app/id6758149645")!
+                        )
+
+                        StatRow(title: "앱 버전", value: appVersionText)
+                    } header: {
+                        MoreSectionHeader(title: "앱 정보")
+                    }
+
+                    Section {
+                        StatRow(title: "위치 권한", value: model.locationPermissionStatusText)
                         StatRow(title: "정보 업데이트", value: reviewVersionText)
                         #if canImport(UIKit)
-                        if let _ = model.locationError {
+                        if model.shouldShowLocationSettingsCTA {
                             Link(destination: URL(string: UIApplication.openSettingsURLString)!) {
                                 HStack {
                                     Label("위치 권한 설정 열기", systemImage: "gear")
@@ -105,62 +109,7 @@ public struct MoreView: View {
                         MoreSectionHeader(title: "앱 상태")
                     }
 
-                    Section {
-                        ExternalRow(
-                            title: "앱 소개",
-                            subtitle: "앱에서 할 수 있는 일을 소개합니다.",
-                            systemImage: "text.book.closed",
-                            url: URL(string: "https://where-kindergarden.vercel.app/about")!
-                        )
-                        ExternalRow(
-                            title: "개인정보처리방침",
-                            subtitle: "위치와 이용 정보가 어떻게 쓰이는지 확인합니다.",
-                            systemImage: "lock.shield",
-                            url: URL(string: "https://where-kindergarden.vercel.app/privacy")!
-                        )
-                        ExternalRow(
-                            title: "자주 묻는 질문",
-                            subtitle: "많이 묻는 내용을 먼저 확인해 보세요.",
-                            systemImage: "questionmark.circle",
-                            url: URL(string: "https://where-kindergarden.vercel.app/#faq")!
-                        )
-                    } header: {
-                        MoreSectionHeader(title: "서비스")
-                    }
-
-                    Section {
-                        ExternalRow(
-                            title: "문의하기",
-                            subtitle: "불편한 점이나 제안할 내용을 보내주세요.",
-                            systemImage: "paperplane",
-                            url: URL(string: "mailto:support@where-kindergarten.com")!
-                        )
-                        ExternalRow(
-                            title: "유치원 알리미",
-                            subtitle: "기본 정보 출처를 확인합니다.",
-                            systemImage: "building.columns",
-                            url: URL(string: "https://e-childschoolinfo.moe.go.kr")!
-                        )
-                    } header: {
-                        MoreSectionHeader(title: "지원")
-                    }
-
-                    Section {
-                        ExternalRow(
-                            title: "앱스토어 보기",
-                            subtitle: "앱스토어 페이지를 엽니다.",
-                            systemImage: "apple.logo",
-                            url: URL(string: "https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645")!
-                        )
-
-                        StatRow(title: "앱 버전", value: appVersionText)
-                            .onTapGesture(count: 5) {
-                                isDebugModeActive.toggle()
-                            }
-                    } header: {
-                        MoreSectionHeader(title: "앱 정보")
-                    }
-
+                    #if DEBUG
                     if isDebugModeActive {
                         Section {
                             StatRow(title: "검색 기준 위치", value: model.locationLabel)
@@ -170,8 +119,8 @@ public struct MoreView: View {
                                 }
                                 return "아직 요청되지 않음"
                             }())
-                            StatRow(title: "Kakao 지도 키", value: configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
-                            StatRow(title: "Kakao Local 키", value: configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
+                            StatRow(title: "Kakao 지도 키", value: model.configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
+                            StatRow(title: "Kakao Local 키", value: model.configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
                             StatRow(title: "딥링크", value: "wherekindergarten://compare?ids=...")
                             StatRow(title: "찜한 기관", value: "\(model.favorites.count)곳")
                             StatRow(title: "최근 검색", value: "\(model.recentSearches.count)건")
@@ -180,10 +129,14 @@ public struct MoreView: View {
                             MoreSectionHeader(title: "디버그")
                         }
                     }
+                    #endif
                 }
                 .listStyle(.plain)
                 .scrollContentBackground(.hidden)
                 .background(Color.clear)
+                .task {
+                    model.refreshLocationPermissionState()
+                }
             }
         }
     }
@@ -200,30 +153,9 @@ private struct MoreSectionHeader: View {
     }
 }
 
-private struct TrustCard: View {
+private struct IntroCard: View {
     let title: String
     let message: String
-    let tone: NativeBadge.Tone
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            NativeBadge(title, tone: tone)
-            Text(message)
-                .font(.subheadline)
-                .foregroundStyle(slateBlue)
-                .fixedSize(horizontal: false, vertical: true)
-        }
-        .padding(18)
-        .solidPanel(cornerRadius: 28, tint: paperWhite.opacity(0.94))
-        .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
-        .listRowBackground(Color.clear)
-    }
-}
-
-private struct TrustHeroCard: View {
-    let title: String
-    let message: String
-    let meta: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -235,12 +167,9 @@ private struct TrustHeroCard: View {
                 .font(.subheadline)
                 .foregroundStyle(slateBlue)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(meta)
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(jadeDeep)
         }
-        .padding(22)
-        .glassPanel(cornerRadius: 30)
+        .padding(18)
+        .glassPanel(cornerRadius: 28)
         .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 8, trailing: 0))
         .listRowBackground(Color.clear)
     }
@@ -260,6 +189,7 @@ private struct StatRow: View {
                 .font(.footnote)
                 .foregroundStyle(slateBlue)
                 .multilineTextAlignment(.trailing)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .padding(.vertical, 4)
     }
@@ -294,7 +224,7 @@ private struct ExternalRow: View {
                 }
 
                 Spacer()
-                Image(systemName: "arrow.up.right.square")
+                Image(systemName: "chevron.right")
                     .foregroundStyle(slateSoft)
             }
             .padding(16)
