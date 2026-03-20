@@ -10,7 +10,7 @@ struct CompareFloatingBar: View {
 
     private var statusText: String {
         switch count {
-        case 1: return "1곳 선택됨 · 비교할 곳을 더 담아보세요"
+        case 1: return "한 곳 더 담으면 바로 비교할 수 있어요"
         case 2: return "2곳 비교하기"
         case 3: return "3곳 비교하기"
         default: return ""
@@ -25,7 +25,7 @@ struct CompareFloatingBar: View {
         Button(action: onNavigateToCompare) {
             HStack(spacing: 12) {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("비교 중 \(count)곳")
+                    Text("비교할 곳 \(count)곳")
                         .font(.caption.weight(.heavy))
                         .foregroundStyle(slateSoft)
                         .textCase(.uppercase)

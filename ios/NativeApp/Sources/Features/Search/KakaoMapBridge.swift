@@ -49,21 +49,21 @@ struct KakaoSearchMapSurface: View {
                 )
             } else {
                 MapUnavailablePlaceholder(
-                    title: "Kakao Maps 설정 필요",
-                    message: "\(NativeAppConfiguration.kakaoKeysConfigRelativePath)에서 \(NativeAppConfiguration.kakaoNativeAppKeyBuildSetting) 값을 채워야 지도를 표시할 수 있습니다.",
+                    title: "지도를 준비 중이에요",
+                    message: "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요.",
                     showsContent: !showsStatusCard
                 )
             }
 #else
             MapUnavailablePlaceholder(
-                title: "Kakao Maps 준비 중",
-                message: "이 환경에서는 Kakao iOS SDK를 로드할 수 없어 지도 대신 안전한 placeholder를 표시합니다.",
+                title: "지도를 준비 중이에요",
+                message: "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요.",
                 showsContent: !showsStatusCard
             )
 #endif
             if let runtimeMessage, appKey != nil {
                 MapUnavailablePlaceholder(
-                    title: "Kakao 지도 연결 실패",
+                    title: "지도를 불러오지 못했어요",
                     message: runtimeMessage,
                     showsContent: !showsStatusCard
                 )
@@ -280,7 +280,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         func addViewFailed(_ viewName: String, viewInfoName: String) {
             Self.logger.error("Kakao addViewFailed viewName=\(viewName, privacy: .public) viewInfoName=\(viewInfoName, privacy: .public)")
-            runtimeMessage.wrappedValue = "지도를 초기화하지 못했습니다."
+            runtimeMessage.wrappedValue = "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
         }
 
         func containerDidResized(_ size: CGSize) {
@@ -295,7 +295,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         func authenticationFailed(_ errorCode: Int, desc: String) {
             Self.logger.error("Kakao authentication failed code=\(errorCode, privacy: .public) desc=\(desc, privacy: .public)")
-            runtimeMessage.wrappedValue = "Kakao 지도 인증 실패 (\(errorCode)): \(desc)"
+            runtimeMessage.wrappedValue = "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
         }
 
         private func renderMap(moveCameraIfNeeded: Bool) {

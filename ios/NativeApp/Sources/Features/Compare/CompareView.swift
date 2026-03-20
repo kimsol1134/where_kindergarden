@@ -25,8 +25,8 @@ public struct CompareView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 18) {
                         NativeScreenHeader(
-                            eyebrow: "비교 센터",
-                            title: "우리 집 비교",
+                            eyebrow: "비교",
+                            title: "나란히 보기",
                             subtitle: summaryLine
                         ) {
                             Text("최대 3곳")
@@ -40,9 +40,9 @@ public struct CompareView: View {
                         if items.isEmpty {
                             EmptyStateView(
                                 icon: "square.split.2x2",
-                                title: "아직 비교할 유치원을 선택하지 않았습니다.",
-                                message: "탐색 화면에서 비교 목록에 추가하면 여기서 거리, 공간, 후기 신호를 나란히 볼 수 있습니다.",
-                                ctaLabel: "탐색으로 이동"
+                                title: "비교할 곳이 아직 없어요",
+                                message: "탐색에서 비교 버튼을 누르면 여기에 모여요.",
+                                ctaLabel: "탐색하러 가기"
                             ) {
                                 model.selectedTab = .search
                             }
@@ -86,28 +86,28 @@ public struct CompareView: View {
     private var summaryLine: String {
         switch items.count {
         case 1:
-            return "선택한 1곳의 핵심 지표입니다. 탐색 화면에서 최대 2곳까지 더 담아 비교할 수 있습니다."
+            return "선택한 곳을 먼저 살펴보고 있어요. 최대 2곳 더 담아 비교할 수 있어요."
         case 2:
-            return "선택한 2곳의 통학, 운영, 후기 신호를 나란히 비교합니다."
+            return "선택한 2곳을 한눈에 비교해 보세요."
         default:
-            return "선택한 \(items.count)곳의 핵심 지표를 같은 기준으로 읽어봅니다."
+            return "선택한 \(items.count)곳을 같은 기준으로 비교해요."
         }
     }
 
     private var compareInsightTitle: String {
         guard let nearest = items.min(by: { $0.distance < $1.distance }) else {
-            return "핵심 비교"
+            return "비교 요약"
         }
 
-        return "\(nearest.name)이 가장 가깝습니다"
+        return "가장 가까운 곳은 \(nearest.name)입니다"
     }
 
     private var comparisonWinnerLine: String {
         guard let nearest = items.min(by: { $0.distance < $1.distance }) else {
-            return "선택한 기관을 같은 기준으로 읽어봅니다."
+            return "선택한 곳을 같은 기준으로 볼 수 있어요."
         }
 
-        return "거리 기준으로는 \(nearest.name), 공간 기준으로는 \(items.max(by: { $0.areaPerChild < $1.areaPerChild })?.name ?? nearest.name)이 강합니다."
+        return "거리로는 \(nearest.name), 공간으로는 \(items.max(by: { $0.areaPerChild < $1.areaPerChild })?.name ?? nearest.name)이 돋보여요."
     }
 
     private var compareInsightMessage: String {
@@ -118,15 +118,15 @@ public struct CompareView: View {
         var sentences: [String] = []
 
         if let nearest {
-            sentences.append("거리 기준으로는 \(nearest.name)이 가장 짧습니다.")
+            sentences.append("가까운 곳을 먼저 보면 \(nearest.name)이 유리해요.")
         }
 
         if let roomiest {
-            sentences.append("공간 기준으로는 \(roomiest.name)이 \(String(format: "%.1f㎡", roomiest.areaPerChild))로 가장 넓습니다.")
+            sentences.append("\(roomiest.name)은 1인당 \(String(format: "%.1f㎡", roomiest.areaPerChild))로 공간이 가장 넉넉해요.")
         }
 
         if let mostReviewed, model.reviews(for: mostReviewed.kindercode).count > 0 {
-            sentences.append("후기 신호는 \(mostReviewed.name)이 가장 많습니다.")
+            sentences.append("후기는 \(mostReviewed.name) 쪽이 더 많아요.")
         }
 
         return sentences.joined(separator: " ")
@@ -140,15 +140,15 @@ public struct CompareView: View {
         var parts: [String] = []
 
         if let nearest {
-            parts.append("등하원 안정성을 먼저 보면 \(nearest.name)")
+            parts.append("가까운 곳을 먼저 보면 \(nearest.name)")
         }
 
         if let roomiest, roomiest.kindercode != nearest?.kindercode {
-            parts.append("공간 여유를 더 보면 \(roomiest.name)")
+            parts.append("공간을 더 보면 \(roomiest.name)")
         }
 
         if let mostReviewed, model.reviews(for: mostReviewed.kindercode).count > 0 {
-            parts.append("후기 신호는 \(mostReviewed.name)이 가장 많습니다")
+            parts.append("후기는 \(mostReviewed.name) 쪽이 더 많아요")
         }
 
         return parts.joined(separator: " · ")
@@ -167,7 +167,7 @@ public struct CompareView: View {
                         )
                     } label: {
                         HStack {
-                            Label("카카오톡으로 공유", systemImage: "message.fill")
+                            Label("카카오톡으로 보내기", systemImage: "message.fill")
                             Spacer()
                         }
                         .foregroundStyle(inkBlack)
@@ -182,11 +182,11 @@ public struct CompareView: View {
 
                 ShareLink(
                     item: shareURL,
-                    subject: Text("우리동네 유치원 비교"),
+                    subject: Text("유치원 비교"),
                     message: Text(shareSummary)
                 ) {
                     HStack {
-                        Label("비교 결과 공유", systemImage: "square.and.arrow.up.fill")
+                        Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
                         Spacer()
                     }
                     .foregroundStyle(inkBlack)
@@ -199,7 +199,7 @@ public struct CompareView: View {
             }
             .nativeSectionPanel(cornerRadius: 28)
         } else {
-            Label("비교 결과 공유", systemImage: "square.and.arrow.up.fill")
+            Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
                 .solidPanel(cornerRadius: 24, tint: paperWhite.opacity(0.82))
@@ -213,7 +213,7 @@ public struct CompareView: View {
         }
 
         return ([
-            "우리동네 유치원 비교",
+            "유치원 비교",
             lines.joined(separator: "\n"),
             model.compareShareURL()?.absoluteString ?? ""
         ])
@@ -228,7 +228,7 @@ private struct CompareInsightCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            NativeBadge("Best Fit", tone: .slate)
+            NativeBadge("추천 포인트", tone: .slate)
             Text(title)
                 .font(.title3.weight(.bold))
                 .foregroundStyle(inkBlack)
@@ -249,7 +249,7 @@ private struct CompareConclusionCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("한 줄 판단")
+            Text("이렇게 보면 좋아요")
                 .font(.headline.weight(.semibold))
                 .foregroundStyle(inkBlack)
             Text(message)
@@ -338,7 +338,7 @@ private struct CompareMatrix: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("핵심 비교")
+            Text("비교표")
                 .font(.headline.weight(.bold))
                 .foregroundStyle(inkBlack)
 

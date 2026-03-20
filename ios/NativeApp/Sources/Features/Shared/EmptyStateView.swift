@@ -38,7 +38,7 @@ public struct EmptyStateView: View {
                     .offset(x: 8, y: 6)
             }
 
-            NativeBadge("바로 확인해보세요", tone: .slate)
+            NativeBadge("안내", tone: .slate)
 
             Text(title)
                 .font(.headline.weight(.semibold))

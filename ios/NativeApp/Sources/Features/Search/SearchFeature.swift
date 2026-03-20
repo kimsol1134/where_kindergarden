@@ -52,15 +52,15 @@ public struct SearchHomeView: View {
     }
 
     private var resultDegradedMessage: String? {
-        if let reviewsError = model.reviewsError {
-            return "후기 데이터를 불러오지 못해 후기 수가 비어 있을 수 있습니다. \(reviewsError)"
+        if model.reviewsError != nil {
+            return "후기 정보를 불러오지 못했어요. 일부 정보가 비어 보일 수 있어요."
         }
 
         guard !model.configuration.hasKakaoRESTAPIKey else {
             return nil
         }
 
-        return "원격 주소/장소 제안은 현재 비활성화되어 유치원명과 최근 검색 중심으로 탐색 중입니다."
+        return "주소나 장소 추천이 잠시 쉬고 있어요. 기관 이름이나 최근 검색으로 찾아보세요."
     }
 
     private var mapStatusMessage: String? {
@@ -69,7 +69,7 @@ public struct SearchHomeView: View {
         }
 
         if !model.configuration.hasKakaoMapKey {
-            return "Kakao Maps 설정이 없어 지도 대신 안전한 배경 상태를 표시합니다."
+            return "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
         }
 
         return nil
@@ -142,10 +142,10 @@ public struct SearchHomeView: View {
                             adUnitID: model.configuration.adMobBannerUnitID
                         )
                     }
-                    .padding(.bottom, 6)
+                    .padding(.bottom, 56)
                 }
             }
-            .sheet(item: sheetSelection) { kindergarten in
+            .fullScreenCover(item: sheetSelection) { kindergarten in
                 KindergartenDetailSheet(
                     kindergarten: kindergarten,
                     reviews: model.reviews(for: kindergarten.kindercode),
@@ -155,8 +155,6 @@ public struct SearchHomeView: View {
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                 )
-                .presentationDetents([.large, .medium])
-                .presentationDragIndicator(.visible)
             }
         }
     }
@@ -204,25 +202,25 @@ private struct SearchChrome: View {
 
     private var headerSubtitle: String {
         if model.currentDeviceLocation != nil {
-            return "실제 기기 위치는 저장하지 않고 검색 기준으로만 사용합니다."
+            return "지금 있는 곳 근처를 보여드려요."
         }
 
         if model.locationError != nil {
-            return "위치 권한 없이도 주소나 장소명 기준으로 탐색할 수 있습니다."
+            return "주소나 기관 이름으로도 쉽게 찾을 수 있어요."
         }
 
         if !model.recentSearches.isEmpty {
-            return "위치 저장 안 함 · 최근 검색 기준을 바로 복원할 수 있어요."
+            return "최근 찾은 곳을 다시 볼 수 있어요."
         }
 
-        return "위치 저장 안 함 · 현재 위치 또는 주소 기준으로 탐색하세요."
+        return "현재 위치나 동네 이름으로 찾아보세요."
     }
 
     var body: some View {
         VStack(spacing: 12) {
             VStack(spacing: 0) {
                 NativeScreenHeader(
-                    eyebrow: "우리동네 유치원 탐색",
+                    eyebrow: "유치원 찾기",
                     title: headerTitle,
                     subtitle: headerSubtitle
                 ) {
@@ -234,7 +232,7 @@ private struct SearchChrome: View {
                         HStack(spacing: 7) {
                             Image(systemName: "location.fill")
                                 .font(.caption.weight(.bold))
-                            Text("현위치")
+                            Text("내 위치")
                                 .font(.footnote.weight(.semibold))
                         }
                         .foregroundStyle(inkBlack)
@@ -263,7 +261,7 @@ private struct SearchChrome: View {
                         }
 
                         TextField(
-                            "주소, 장소명, 유치원명으로 검색",
+                            "유치원 이름, 동네, 장소로 검색",
                             text: Binding(
                                 get: { model.searchText },
                                 set: { model.updateSearchText($0) }
@@ -400,7 +398,7 @@ private struct SearchChrome: View {
                     HStack(spacing: 8) {
                         ProgressView()
                             .controlSize(.small)
-                        Text("공용 JSON 데이터를 불러오는 중")
+                        Text("정보를 불러오는 중")
                             .font(.caption)
                         .foregroundStyle(.secondary)
                     }
@@ -450,7 +448,7 @@ private struct SearchSuggestionPanel: View {
         VStack(alignment: .leading, spacing: 14) {
             if searchText.isEmpty {
                 if recentSuggestions.isEmpty {
-                    Text("주소나 장소를 검색하면 최근 검색이 여기에 저장됩니다.")
+                    Text("찾았던 동네나 기관은 여기에 다시 보여드려요.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 } else {
@@ -480,7 +478,7 @@ private struct SearchSuggestionPanel: View {
             } else {
                 if !localSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "유치원 바로가기",
+                        title: "기관 이름",
                         suggestions: localSuggestions,
                         onSelect: onSelect
                     )
@@ -488,7 +486,7 @@ private struct SearchSuggestionPanel: View {
 
                 if !remoteSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "주소 / 장소",
+                        title: "주소·장소",
                         suggestions: remoteSuggestions,
                         onSelect: onSelect
                     )
@@ -498,7 +496,7 @@ private struct SearchSuggestionPanel: View {
                     HStack(spacing: 8) {
                         ProgressView()
                             .controlSize(.small)
-                        Text("Kakao Local 제안을 불러오는 중")
+                        Text("추천 결과를 찾는 중")
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -515,7 +513,7 @@ private struct SearchSuggestionPanel: View {
                 }
 
                 if shouldShowEmptyState {
-                    Text("일치하는 제안을 찾지 못했습니다. 다른 주소나 장소명을 입력해 보세요.")
+                    Text("입력한 내용과 맞는 결과가 없어요.")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
@@ -627,9 +625,9 @@ private struct ResultSheet: View {
     private var comparedIDs: Set<String> { Set(model.compareSelection.ids) }
     private var favoriteIDs: Set<String> { Set(model.favorites.map(\.kindercode)) }
     private var sectionTitle: String {
-        guard !results.isEmpty else { return "탐색 결과" }
+        guard !results.isEmpty else { return "검색 결과" }
         let count = min(results.count, 3)
-        return "\(model.locationLabel)에서 우선 볼 \(count)곳"
+        return "\(model.locationLabel) 근처 추천 \(count)곳"
     }
 
     @ViewBuilder
@@ -640,12 +638,12 @@ private struct ResultSheet: View {
                 SkeletonCard()
                 SkeletonCard()
             }
-        } else if let catalogError = model.catalogError {
+        } else if model.catalogError != nil {
             EmptyStateView(
                 icon: "exclamationmark.triangle",
-                title: "데이터를 불러올 수 없습니다",
-                message: catalogError,
-                ctaLabel: "다시 시도"
+                title: "정보를 불러오지 못했어요",
+                message: "잠시 후 다시 시도해 주세요.",
+                ctaLabel: "다시 불러오기"
             ) {
                 Task { await model.loadCatalog() }
             }
@@ -653,24 +651,24 @@ private struct ResultSheet: View {
             if model.locationError != nil {
                 EmptyStateView(
                     icon: "location.slash",
-                    title: "위치 권한이 필요합니다",
-                    message: "주소를 입력하면 주변 유치원을 찾을 수 있어요"
+                    title: "위치 없이도 찾을 수 있어요",
+                    message: "동네 이름이나 기관 이름으로 검색해 보세요."
                 )
             } else if model.currentDeviceLocation != nil || !model.recentSearches.isEmpty {
                 EmptyStateView(
                     icon: "map",
-                    title: "반경 \(Int(model.filters.radiusKM))km 내 유치원이 없습니다",
-                    message: "반경을 넓히면 더 많은 유치원을 찾을 수 있습니다.",
-                    ctaLabel: "반경 넓히기"
+                    title: "이 근처에서는 찾지 못했어요",
+                    message: "범위를 넓혀서 다시 찾아보세요.",
+                    ctaLabel: "범위 넓히기"
                 ) {
                     model.updateRadius(to: model.nextRadius)
                 }
             } else {
                 EmptyStateView(
                     icon: "magnifyingglass",
-                    title: "주변 유치원을 찾아보세요",
-                    message: "현재 위치 또는 주소를 검색하면 주변 유치원 목록이 나타납니다.",
-                    ctaLabel: "현재 위치로 검색"
+                    title: "유치원을 찾아보세요",
+                    message: "현재 위치나 동네 이름으로 바로 찾을 수 있어요.",
+                    ctaLabel: "내 위치로 찾기"
                 ) {
                     Task { await model.centerOnCurrentLocation() }
                 }
@@ -678,14 +676,14 @@ private struct ResultSheet: View {
         } else if results.isEmpty && !trimmedSearchQuery.isEmpty {
             EmptyStateView(
                 icon: "magnifyingglass",
-                title: "'\(trimmedSearchQuery)' 검색 결과 없음",
-                message: "반경을 넓히거나 다른 주소, 장소, 유치원명을 선택해 보세요."
+                title: "'\(trimmedSearchQuery)' 결과가 없어요",
+                message: "다른 이름이나 동네로 다시 찾아보세요."
             )
         } else if results.isEmpty && model.hasActiveAdvancedFilters {
             EmptyStateView(
                 icon: "line.3.horizontal.decrease.circle",
-                title: "조건에 맞는 유치원이 없습니다",
-                message: "필터 조건을 줄이거나 초기화해 보세요.",
+                title: "조건에 맞는 곳이 없어요",
+                message: "필터를 조금 줄이면 더 많이 볼 수 있어요.",
                 ctaLabel: "필터 초기화"
             ) {
                 model.resetFilters()
@@ -702,7 +700,7 @@ private struct ResultSheet: View {
 
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
-                    NativeBadge(results.isEmpty ? "탐색 결과" : "먼저 볼 이유", tone: .slate)
+                    NativeBadge(results.isEmpty ? "검색 결과" : "추천", tone: .slate)
 
                     Text(sectionTitle)
                         .font(.title3.weight(.bold))
@@ -769,14 +767,14 @@ private struct SearchResultCard: View {
     @ScaledMetric(relativeTo: .body) private var cardPadding: CGFloat = 16
 
     private var distanceText: String {
-        kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 미확인"
+        kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 확인 전"
     }
 
     private var trustSummary: String {
         var items: [String] = []
 
         if kindergarten.homepage?.isEmpty == false {
-            items.append("공식 웹사이트 확인 가능")
+            items.append("홈페이지 있음")
         }
 
         if kindergarten.hasBus {
@@ -788,7 +786,7 @@ private struct SearchResultCard: View {
         }
 
         if items.isEmpty {
-            items.append("교육부 공식 데이터 기준")
+            items.append("공식 정보")
         }
 
         return items.prefix(2).joined(separator: " · ")
@@ -813,11 +811,7 @@ private struct SearchResultCard: View {
     }
 
     private var trustItems: [String] {
-        var items = ["공식 데이터"]
-
-        if let reviewsVersion, !reviewsVersion.isEmpty {
-            items.append("업데이트 \(reviewsVersion)")
-        }
+        var items = ["공식 정보"]
 
         if kindergarten.indoorPlaygroundArea > 0 {
             items.append("실내놀이 \(Int(kindergarten.indoorPlaygroundArea))㎡")
@@ -925,6 +919,7 @@ private struct SearchResultCard: View {
 }
 
 private struct KindergartenDetailSheet: View {
+    @Environment(\.dismiss) private var dismiss
     let kindergarten: Kindergarten
     let reviews: [ReviewLink]
     let reviewsVersion: String?
@@ -983,12 +978,12 @@ private struct KindergartenDetailSheet: View {
         case .outsourced:
             return "위탁"
         case .none:
-            return "정보 없음"
+            return "확인 전"
         }
     }
 
     private var buildingSummary: String {
-        let year = kindergarten.buildingYear.map { "\($0)년" } ?? "연도 정보 없음"
+        let year = kindergarten.buildingYear.map { "\($0)년" } ?? "연도 확인 전"
         if let floorInfo = kindergarten.floorInfo, !floorInfo.isEmpty {
             return "\(year) · \(floorInfo)"
         }
@@ -1039,22 +1034,22 @@ private struct KindergartenDetailSheet: View {
     }
 
     private var distanceLabel: String {
-        kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 미확인"
+        kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 확인 전"
     }
 
     private var heroBadges: [(String, NativeBadge.Tone)] {
-        var items: [(String, NativeBadge.Tone)] = [("공식 데이터", .slate)]
+        var items: [(String, NativeBadge.Tone)] = [("공식 정보", .slate)]
 
         if reviews.count > 0 {
             items.append(("후기 \(reviews.count)건", .sun))
         }
 
         if phoneURL != nil {
-            items.append(("전화 가능", .jade))
+            items.append(("전화", .jade))
         }
 
         if homepageURL != nil {
-            items.append(("웹사이트 있음", .jade))
+            items.append(("홈페이지", .jade))
         }
 
         return Array(items.prefix(3))
@@ -1064,21 +1059,21 @@ private struct KindergartenDetailSheet: View {
         var reasons: [String] = []
 
         if kindergarten.distance < 1.0 {
-            reasons.append("등하원 동선이 짧고")
+            reasons.append("가까워서 오가기 편하고")
         }
 
         if kindergarten.hasBus {
-            reasons.append("셔틀 운영 여부를 바로 확인할 수 있으며")
+            reasons.append("통학이 편하고")
         }
 
         if homepageURL != nil {
-            reasons.append("공식 웹사이트를 함께 검토할 수 있습니다")
+            reasons.append("홈페이지에서 자세한 안내를 바로 볼 수 있어요")
         } else if reviews.count > 0 {
-            reasons.append("후기 출처가 있어 추가 판단 근거를 확보할 수 있습니다")
+            reasons.append("후기를 참고해 분위기를 가늠할 수 있어요")
         }
 
         if reasons.isEmpty {
-            reasons.append("공식 데이터 기준으로 핵심 운영 지표를 빠르게 검토할 수 있습니다")
+            reasons.append("기본 정보를 한눈에 보기 좋아요")
         }
 
         return reasons.joined(separator: " ")
@@ -1086,7 +1081,7 @@ private struct KindergartenDetailSheet: View {
 
     private var lifestyleSummary: String {
         [
-            kindergarten.operationHours.map { "운영시간 \($0)" },
+            kindergarten.operationHours.map { "운영 \($0)" },
             kindergarten.hasBus ? "셔틀 \(kindergarten.busCount)대" : "셔틀 정보 없음",
             kindergarten.hasAfterSchool ? "방과후 운영" : "방과후 미운영",
         ]
@@ -1096,30 +1091,43 @@ private struct KindergartenDetailSheet: View {
 
     private var reviewSignalSummary: String {
         guard !reviews.isEmpty else {
-            return "아직 수집된 후기가 없어 공식 데이터와 운영 지표를 먼저 확인하는 편이 안전합니다."
+            return "아직 후기가 없어요. 기본 정보와 홈페이지를 먼저 확인해 보세요."
         }
 
         let sources = Set(reviews.compactMap { $0.sourceName ?? $0.source }).sorted()
-        let latestDate = reviews.compactMap(\.date).max() ?? "날짜 미확인"
-        let sourceText = sources.isEmpty ? "후기 출처 확인" : sources.prefix(2).joined(separator: ", ")
-        return "\(sourceText) 기준 후기 \(reviews.count)건을 확인할 수 있고 최신 날짜는 \(latestDate)입니다."
+        let latestDate = reviews.compactMap(\.date).max() ?? "확인 전"
+        let sourceText = sources.isEmpty ? "후기" : sources.prefix(2).joined(separator: ", ")
+        return "\(sourceText) \(reviews.count)건을 볼 수 있어요. 가장 최근 글은 \(latestDate)입니다."
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                HStack(spacing: 8) {
-                    ForEach(Array(heroBadges.enumerated()), id: \.offset) { _, item in
-                        NativeBadge(item.0, tone: item.1)
-                    }
-                }
-
                 VStack(alignment: .leading, spacing: 18) {
                     Capsule()
                         .fill(slateSoft.opacity(0.24))
                         .frame(width: 46, height: 5)
                         .frame(maxWidth: .infinity)
                         .padding(.bottom, 4)
+
+                    HStack(alignment: .top) {
+                        HStack(spacing: 8) {
+                            ForEach(Array(heroBadges.enumerated()), id: \.offset) { _, item in
+                                NativeBadge(item.0, tone: item.1)
+                            }
+                        }
+                        Spacer()
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.system(size: 14, weight: .bold))
+                                .foregroundStyle(slateBlue)
+                                .frame(width: 32, height: 32)
+                                .background(paperWhite.opacity(0.88), in: Circle())
+                        }
+                        .buttonStyle(.plain)
+                    }
 
                     VStack(alignment: .leading, spacing: 8) {
                         Text(kindergarten.name)
@@ -1149,14 +1157,14 @@ private struct KindergartenDetailSheet: View {
 
                     HStack(spacing: 10) {
                         DetailActionButton(
-                            title: isFavorite ? "찜 해제" : "찜하기",
+                            title: isFavorite ? "저장 취소" : "저장",
                             systemImage: isFavorite ? "heart.slash.fill" : "heart.fill",
                             tone: .sun,
                             action: onToggleFavorite
                         )
 
                         DetailActionButton(
-                            title: isCompared ? "비교 해제" : "비교 추가",
+                            title: isCompared ? "비교 빼기" : "비교 담기",
                             systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill",
                             tone: .jade,
                             action: onToggleCompare
@@ -1175,27 +1183,27 @@ private struct KindergartenDetailSheet: View {
                     }
                 }
                 .padding(22)
-                .glassPanel(cornerRadius: 34)
+                .solidPanel(cornerRadius: 34, tint: paperWhite.opacity(0.98))
 
                 NativeFactSummaryCard(
-                    title: "왜 먼저 볼 만한가",
+                    title: "눈여겨볼 점",
                     message: recommendationSummary
                 )
 
                 NativeFactSummaryCard(
-                    title: "생활 리듬",
+                    title: "운영 시간",
                     message: lifestyleSummary
                 )
 
                 NativeFactSummaryCard(
-                    title: "후기 신호",
+                    title: "후기 요약",
                     message: reviewSignalSummary
                 )
 
-                DetailSectionCard(title: "운영 정보") {
+                DetailSectionCard(title: "기본 정보") {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                         DetailFactCard(title: "유형", value: kindergarten.type.label)
-                        DetailFactCard(title: "운영시간", value: kindergarten.operationHours ?? "정보 없음")
+                        DetailFactCard(title: "운영시간", value: kindergarten.operationHours ?? "확인 전")
                         DetailFactCard(title: "방과후", value: kindergarten.hasAfterSchool ? "운영" : "미운영")
                         DetailFactCard(title: "셔틀", value: kindergarten.hasBus ? "\(kindergarten.busCount)대" : "없음")
                         DetailFactCard(title: "교사", value: "\(kindergarten.teacherCount)명 (경력 \(kindergarten.seniorTeacherCount)명)")
@@ -1203,21 +1211,21 @@ private struct KindergartenDetailSheet: View {
                     }
                 }
 
-                DetailSectionCard(title: "시설 정보") {
+                DetailSectionCard(title: "시설") {
                     LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
                         DetailFactCard(title: "놀이공간", value: playgroundSummary)
                         DetailFactCard(title: "건물", value: buildingSummary)
                         DetailFactCard(title: "설립일", value: formattedEstablishDate ?? kindergarten.establishDate)
-                        DetailFactCard(title: "교실 면적", value: "\(Int(kindergarten.classroomArea))m2")
+                        DetailFactCard(title: "교실 면적", value: "\(Int(kindergarten.classroomArea))㎡")
                         DetailFactCard(title: "CCTV", value: "\(kindergarten.cctvCount)대")
-                        DetailFactCard(title: "실내 놀이", value: kindergarten.indoorPlaygroundArea > 0 ? "\(Int(kindergarten.indoorPlaygroundArea))m2" : "없음")
+                        DetailFactCard(title: "실내 놀이", value: kindergarten.indoorPlaygroundArea > 0 ? "\(Int(kindergarten.indoorPlaygroundArea))㎡" : "없음")
                     }
                 }
 
-                DetailSectionCard(title: "후기에서 확인할 수 있는 출처") {
+                DetailSectionCard(title: "후기") {
                     VStack(alignment: .leading, spacing: 10) {
                         if reviews.isEmpty {
-                            Text("수집된 후기가 없습니다.")
+                            Text("아직 등록된 후기가 없어요.")
                                 .font(.subheadline)
                                 .foregroundStyle(slateBlue)
                         } else {
@@ -1233,7 +1241,7 @@ private struct KindergartenDetailSheet: View {
                             }
 
                             if reviews.count > 3 {
-                                Text("상위 3건만 표시 중입니다.")
+                                Text("후기 3개만 먼저 보여드려요.")
                                     .font(.caption)
                                     .foregroundStyle(slateSoft)
                             }
@@ -1242,7 +1250,7 @@ private struct KindergartenDetailSheet: View {
                 }
 
                 if hasContactInfo {
-                    DetailSectionCard(title: "연락처와 추가 정보") {
+                    DetailSectionCard(title: "바로가기") {
                         VStack(spacing: 10) {
                             if let mapURL {
                                 Link(destination: mapURL) {
@@ -1258,7 +1266,7 @@ private struct KindergartenDetailSheet: View {
                             if let homepageURL {
                                 Link(destination: homepageURL) {
                                     DetailLinkRow(
-                                        title: "홈페이지 열기",
+                                        title: "홈페이지",
                                         subtitle: homepageSubtitle,
                                         systemImage: "globe"
                                     )
@@ -1280,13 +1288,14 @@ private struct KindergartenDetailSheet: View {
                     }
                 }
 
-                Text("출처: 교육부 유치원 알리미 · 데이터 갱신: \(reviewsVersion ?? "미확인")")
+                Text("기준 정보: 유치원 알리미 · 업데이트 \(reviewsVersion ?? "확인 전")")
                     .font(.caption2)
                     .foregroundStyle(slateSoft)
                     .frame(maxWidth: .infinity, alignment: .center)
                     .padding(.top, 8)
             }
             .padding(24)
+            .padding(.bottom, 48)
         }
         .background {
             NativeScreenBackground(topTintOpacity: 0.14)
@@ -1497,7 +1506,7 @@ private struct AdvancedFilterSheet: View {
         NavigationStack {
             List {
                 Section("기관 유형") {
-                    Picker("유형", selection: $model.filters.type) {
+                    Picker("유치원 유형", selection: $model.filters.type) {
                         ForEach(InstitutionFilter.allCases, id: \.self) { filter in
                             Text(filter.label).tag(filter)
                         }
@@ -1505,7 +1514,7 @@ private struct AdvancedFilterSheet: View {
                     .pickerStyle(.segmented)
                 }
 
-                Section("조건 필터") {
+                Section("원하는 조건") {
                     Toggle("방과후 운영", isOn: Binding(
                         get: { model.filters.hasAfterSchool == true },
                         set: { model.filters.hasAfterSchool = $0 ? true : nil }
@@ -1514,7 +1523,7 @@ private struct AdvancedFilterSheet: View {
                         get: { model.filters.hasVacancy == true },
                         set: { model.filters.hasVacancy = $0 ? true : nil }
                     ))
-                    Toggle("넓은 공간 (5m2 이상)", isOn: Binding(
+                    Toggle("넓은 공간 (5㎡ 이상)", isOn: Binding(
                         get: { model.filters.hasLargeSpace == true },
                         set: { model.filters.hasLargeSpace = $0 ? true : nil }
                     ))
@@ -1522,13 +1531,13 @@ private struct AdvancedFilterSheet: View {
                         get: { model.filters.hasIndoorPlayground == true },
                         set: { model.filters.hasIndoorPlayground = $0 ? true : nil }
                     ))
-                    Toggle("최신 건물 (2015년 이후)", isOn: Binding(
+                    Toggle("최근 지은 건물 (2015년 이후)", isOn: Binding(
                         get: { model.filters.hasModernBuilding == true },
                         set: { model.filters.hasModernBuilding = $0 ? true : nil }
                     ))
                 }
             }
-            .navigationTitle("고급 필터")
+            .navigationTitle("상세 필터")
             #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
@@ -1539,7 +1548,7 @@ private struct AdvancedFilterSheet: View {
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("적용") {
+                    Button("완료") {
                         dismiss()
                     }
                     .fontWeight(.semibold)

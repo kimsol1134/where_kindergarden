@@ -27,16 +27,16 @@ public struct MoreView: View {
     }
 
     private var reviewVersionText: String {
-        model.reviewsData?.version ?? "로딩 전"
+        model.reviewsData?.version ?? "확인 중"
     }
 
     private var locationPermissionStatus: String {
         if model.currentDeviceLocation != nil {
-            return "허용됨"
+            return "켜짐"
         } else if model.locationError != nil {
-            return "거부됨"
+            return "꺼짐"
         } else {
-            return "미요청"
+            return "확인 전"
         }
     }
 
@@ -48,12 +48,12 @@ public struct MoreView: View {
                 List {
                     Section {
                         NativeScreenHeader(
-                            eyebrow: "신뢰센터",
-                            title: "우리동네 유치원을 믿는 기준",
-                            subtitle: "데이터, 위치, 광고, 접근성, 문의 기준을 한 화면에서 확인하세요."
+                            eyebrow: "앱 정보",
+                            title: "안내와 문의",
+                            subtitle: "앱 소개, 개인정보처리방침, 문의처를 확인할 수 있어요."
                         ) {
                             Link(destination: URL(string: "mailto:support@where-kindergarten.com")!) {
-                                Text("문의")
+                                Text("문의하기")
                                     .font(.footnote.weight(.semibold))
                                     .foregroundStyle(inkBlack)
                                     .padding(.horizontal, 14)
@@ -65,45 +65,35 @@ public struct MoreView: View {
                         .listRowBackground(Color.clear)
 
                         TrustHeroCard(
-                            title: "공식 교육부 데이터 기반",
-                            message: "전국 유치원 정보를 교육부 기준 데이터로 표시하고, 현재 갱신일 \(reviewVersionText)과 함께 판단 근거를 읽을 수 있게 정리합니다.",
-                            meta: "데이터 갱신일 \(reviewVersionText) · 위치 권한 \(locationPermissionStatus)"
+                            title: "주변 유치원을 쉽게 찾고 비교해요",
+                            message: "동네별로 유치원을 찾고, 저장하고, 비교까지 한 번에 할 수 있어요.",
+                            meta: "최근 업데이트 \(reviewVersionText)"
                         )
                         TrustCard(
-                            title: "후기 출처를 분리해 보여줌",
-                            message: "블로그, 카페 등 출처와 날짜를 분리해 보여 부모가 직접 신뢰도를 판단할 수 있게 합니다.",
+                            title: "후기는 참고용으로 볼 수 있어요",
+                            message: "블로그나 카페 후기를 모아 보여드려서 분위기를 가늠하는 데 도움을 드려요.",
                             tone: .sun
                         )
                         TrustCard(
-                            title: "위치 정보는 저장하지 않음",
-                            message: "검색 기준 위치만 사용하고, 현재 기기 위치는 권한 상태에 따라 일시적으로만 활용합니다.",
+                            title: "위치는 필요한 때만 사용해요",
+                            message: "내 위치로 찾을 때만 활용하고, 저장한 동네는 언제든 다시 불러올 수 있어요.",
                             tone: .slate
                         )
                         TrustCard(
-                            title: "광고와 탐색 데이터 분리",
-                            message: "광고 노출과 유치원 비교 데이터는 분리해 보여주며, 판단 근거는 검색 결과 카드 안에서 따로 읽을 수 있습니다.",
-                            tone: .sun
-                        )
-                        TrustCard(
-                            title: "접근성 기준 포함",
-                            message: "큰 텍스트, 충분한 대비, 명확한 버튼 구조를 전제로 화면을 설계했습니다.",
-                            tone: .slate
-                        )
-                        TrustCard(
-                            title: "문의와 출처를 바로 확인",
-                            message: "문의 메일과 공식 데이터 출처 링크를 같은 탭에서 바로 열 수 있습니다.",
+                            title: "궁금한 점은 바로 문의해 주세요",
+                            message: "불편한 점이나 제안하고 싶은 내용을 메일로 편하게 보내실 수 있어요.",
                             tone: .jade
                         )
                     }
 
                     Section {
                         StatRow(title: "위치 권한", value: locationPermissionStatus)
-                        StatRow(title: "데이터 갱신일", value: reviewVersionText)
+                        StatRow(title: "정보 업데이트", value: reviewVersionText)
                         #if canImport(UIKit)
                         if let _ = model.locationError {
                             Link(destination: URL(string: UIApplication.openSettingsURLString)!) {
                                 HStack {
-                                    Label("설정에서 위치 권한 변경", systemImage: "gear")
+                                    Label("위치 권한 설정 열기", systemImage: "gear")
                                     Spacer()
                                 }
                                 .padding(.vertical, 4)
@@ -117,22 +107,22 @@ public struct MoreView: View {
 
                     Section {
                         ExternalRow(
-                            title: "서비스 소개",
-                            subtitle: "우리동네 유치원이 어떤 데이터를 바탕으로 동작하는지 확인합니다.",
+                            title: "앱 소개",
+                            subtitle: "앱에서 할 수 있는 일을 소개합니다.",
                             systemImage: "text.book.closed",
-                            url: URL(string: "https://where-kindergarten.com/about")!
+                            url: URL(string: "https://where-kindergarden.vercel.app/about")!
                         )
                         ExternalRow(
                             title: "개인정보처리방침",
-                            subtitle: "위치 정보와 앱 데이터 처리 기준을 확인합니다.",
+                            subtitle: "위치와 이용 정보가 어떻게 쓰이는지 확인합니다.",
                             systemImage: "lock.shield",
-                            url: URL(string: "https://where-kindergarten.com/privacy")!
+                            url: URL(string: "https://where-kindergarden.vercel.app/privacy")!
                         )
                         ExternalRow(
-                            title: "앱 사용 가이드",
-                            subtitle: "자주 묻는 질문과 기본 사용 흐름을 엽니다.",
+                            title: "자주 묻는 질문",
+                            subtitle: "많이 묻는 내용을 먼저 확인해 보세요.",
                             systemImage: "questionmark.circle",
-                            url: URL(string: "https://where-kindergarten.com/#faq")!
+                            url: URL(string: "https://where-kindergarden.vercel.app/#faq")!
                         )
                     } header: {
                         MoreSectionHeader(title: "서비스")
@@ -140,14 +130,14 @@ public struct MoreView: View {
 
                     Section {
                         ExternalRow(
-                            title: "피드백 보내기",
-                            subtitle: "오류 제보, 데이터 제안, 제휴 문의를 메일로 보냅니다.",
+                            title: "문의하기",
+                            subtitle: "불편한 점이나 제안할 내용을 보내주세요.",
                             systemImage: "paperplane",
                             url: URL(string: "mailto:support@where-kindergarten.com")!
                         )
                         ExternalRow(
-                            title: "공식 데이터 출처",
-                            subtitle: "교육부 유치원 알리미 사이트를 엽니다.",
+                            title: "유치원 알리미",
+                            subtitle: "기본 정보 출처를 확인합니다.",
                             systemImage: "building.columns",
                             url: URL(string: "https://e-childschoolinfo.moe.go.kr")!
                         )
@@ -157,8 +147,8 @@ public struct MoreView: View {
 
                     Section {
                         ExternalRow(
-                            title: "App Store 페이지",
-                            subtitle: "현재 앱스토어 등록 페이지를 엽니다.",
+                            title: "앱스토어 보기",
+                            subtitle: "앱스토어 페이지를 엽니다.",
                             systemImage: "apple.logo",
                             url: URL(string: "https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645")!
                         )
@@ -237,7 +227,7 @@ private struct TrustHeroCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            NativeBadge("핵심 기준", tone: .slate)
+            NativeBadge("한눈에 보기", tone: .slate)
             Text(title)
                 .font(.title3.weight(.bold))
                 .foregroundStyle(inkBlack)

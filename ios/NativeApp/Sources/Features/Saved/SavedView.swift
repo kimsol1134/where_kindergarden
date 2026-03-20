@@ -23,7 +23,7 @@ public struct SavedView: View {
                     Section {
                         NativeScreenHeader(
                             eyebrow: "보관함",
-                            title: "다시 볼 곳과 최근 기준",
+                            title: "저장한 곳",
                             subtitle: "찜한 기관 \(model.favorites.count)곳 · 최근 검색 \(model.recentSearches.count)건"
                         )
                         .listRowInsets(EdgeInsets(top: 12, leading: 0, bottom: 14, trailing: 0))
@@ -34,8 +34,8 @@ public struct SavedView: View {
                         if model.favorites.isEmpty {
                             EmptyStateView(
                                 icon: "heart",
-                                title: "찜한 기관이 없습니다",
-                                message: "검색 화면에서 찜한 기관을 담아두면 여기서 다시 열 수 있습니다."
+                                title: "찜한 곳이 아직 없어요",
+                                message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요."
                             )
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
@@ -77,10 +77,10 @@ public struct SavedView: View {
                             }
                         }
                     } header: {
-                        SavedSectionHeader(title: "찜한 기관", subtitle: "상세를 다시 열고 비교 흐름으로 이어집니다.")
+                        SavedSectionHeader(title: "찜한 곳", subtitle: "눌러서 다시 보고 비교할 수 있어요.")
                     } footer: {
                         if !model.favorites.isEmpty {
-                            Text("왼쪽으로 밀어 상세로 열고, 오른쪽으로 밀어 삭제할 수 있습니다.")
+                            Text("밀어서 열거나 삭제할 수 있어요.")
                                 .foregroundStyle(slateSoft)
                         }
                     }
@@ -89,8 +89,8 @@ public struct SavedView: View {
                         if model.recentSearches.isEmpty {
                             EmptyStateView(
                                 icon: "clock.arrow.circlepath",
-                                title: "최근 검색이 없습니다",
-                                message: "현재 위치 또는 주소 기반 검색을 하면 최근 검색이 여기에 남습니다."
+                                title: "최근 찾은 곳이 없어요",
+                                message: "동네 이름이나 현재 위치로 찾으면 여기에 남아요."
                             )
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
@@ -130,7 +130,7 @@ public struct SavedView: View {
                         }
                     } header: {
                         HStack {
-                            SavedSectionHeader(title: "최근 검색", subtitle: "검색 기준 위치만 복원되고 실제 기기 위치는 바뀌지 않습니다.")
+                            SavedSectionHeader(title: "최근 검색", subtitle: "선택했던 동네나 위치로 다시 돌아갈 수 있어요.")
                             Spacer()
                             if !model.recentSearches.isEmpty {
                                 Button("전체 삭제", role: .destructive) {
@@ -146,7 +146,7 @@ public struct SavedView: View {
                 .background(Color.clear)
             }
             .confirmationDialog(
-                "최근 검색을 모두 삭제할까요?",
+                "최근 검색을 모두 지울까요?",
                 isPresented: $isRecentClearConfirmationPresented,
                 titleVisibility: .visible
             ) {
@@ -156,7 +156,7 @@ public struct SavedView: View {
                 }
                 Button("취소", role: .cancel) {}
             } message: {
-                Text("삭제 후에는 하단 배너에서 바로 복원할 수 있습니다.")
+                Text("필요하면 바로 되돌릴 수 있어요.")
             }
             .safeAreaInset(edge: .bottom) {
                 if let pendingUndo {
@@ -200,7 +200,7 @@ private struct UndoBanner: View {
 
             Spacer(minLength: 8)
 
-            Button("복원", action: onUndo)
+            Button("되돌리기", action: onUndo)
                 .font(.footnote.weight(.bold))
                 .buttonStyle(.plain)
                 .foregroundStyle(jadeDeep)
@@ -328,7 +328,7 @@ private struct SavedUndoState: Identifiable {
 
     static func favorites(_ items: [IndexedFavoriteItem]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
-        let message = items.count == 1 ? "찜한 기관을 삭제했습니다." : "찜한 기관 \(items.count)곳을 삭제했습니다."
+        let message = items.count == 1 ? "찜한 곳을 삭제했어요." : "찜한 곳 \(items.count)곳을 삭제했어요."
         return SavedUndoState(message: message) { model in
             model.restoreFavorites(items)
         }
@@ -336,7 +336,7 @@ private struct SavedUndoState: Identifiable {
 
     static func recents(_ items: [IndexedRecentSearch]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
-        let message = items.count == 1 ? "최근 검색을 삭제했습니다." : "최근 검색 \(items.count)건을 삭제했습니다."
+        let message = items.count == 1 ? "최근 검색을 삭제했어요." : "최근 검색 \(items.count)건을 삭제했어요."
         return SavedUndoState(message: message) { model in
             model.restoreRecentSearches(items)
         }
