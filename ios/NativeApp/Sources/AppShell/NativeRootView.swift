@@ -66,6 +66,7 @@ public struct NativeRootView: View {
             model.applyUniversalLink(userActivity)
         }
         .tint(leafGreen)
+        .preferredColorScheme(.light)
     }
 
     private func initializeServices() async {

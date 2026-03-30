@@ -11,6 +11,7 @@ public struct SearchHomeView: View {
     @ObservedObject private var model: NativeAppModel
     @State private var mapRuntimeMessage: String?
     @State private var isSearchPanelPresented = false
+    @State private var resultSheetDetent: PresentationDetent = .fraction(0.35)
     private let bottomStackSpacing: CGFloat = 12
 
     public init(model: NativeAppModel) {
@@ -152,46 +153,54 @@ public struct SearchHomeView: View {
                 guard nextPhase == .active else { return }
                 model.refreshLocationPermissionState()
             }
-            .safeAreaInset(edge: .bottom) {
-                if !isSearchPanelPresented {
-                    VStack(spacing: bottomStackSpacing) {
-                        if !model.compareSelection.ids.isEmpty {
-                            CompareFloatingBar(
-                                count: model.compareSelection.ids.count,
-                                names: model.comparedKindergartenNames(),
-                                onNavigateToCompare: { model.selectedTab = .compare },
-                                onRemoveAt: { model.removeCompare(at: $0) }
-                            )
-                            .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
-                        }
-
-                        ResultSheet(
-                            model: model,
-                            summaryText: resultSummaryText,
-                            degradedMessage: resultDegradedMessage,
-                            trimmedSearchQuery: trimmedSearchQuery,
-                            adUnitID: model.configuration.adMobBannerUnitID
-                        )
-                    }
-                    .padding(.bottom, 56)
+            .onChange(of: mapStatusMessage) { _, message in
+                if message != nil {
+                    resultSheetDetent = .large
                 }
             }
-            .sheet(item: sheetSelection) { kindergarten in
-                KindergartenDetailSheet(
-                    kindergarten: kindergarten,
-                    reviews: model.reviews(for: kindergarten.kindercode),
-                    reviewsVersion: model.reviewsData?.version,
-                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                    vacancyDatasetVersion: model.vacancyData?.version,
-                    isVacancyLoading: model.isVacancyLoading,
-                    vacancyError: model.vacancyError,
-                    isCompared: model.isCompared(kindergarten),
-                    isFavorite: model.isFavorite(kindergarten),
-                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                )
-                .presentationDetents([.medium, .large])
+            .sheet(isPresented: .constant(true)) {
+                VStack(spacing: bottomStackSpacing) {
+                    if !model.compareSelection.ids.isEmpty {
+                        CompareFloatingBar(
+                            count: model.compareSelection.ids.count,
+                            names: model.comparedKindergartenNames(),
+                            onNavigateToCompare: { model.selectedTab = .compare },
+                            onRemoveAt: { model.removeCompare(at: $0) }
+                        )
+                        .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
+                        .padding(.horizontal, 20)
+                    }
+
+                    ResultSheet(
+                        model: model,
+                        summaryText: resultSummaryText,
+                        degradedMessage: resultDegradedMessage,
+                        trimmedSearchQuery: trimmedSearchQuery,
+                        adUnitID: model.configuration.adMobBannerUnitID
+                    )
+                }
+                .presentationDetents([.fraction(0.35), .medium, .large], selection: $resultSheetDetent)
                 .presentationDragIndicator(.visible)
+                .presentationBackgroundInteraction(.enabled(upThrough: .medium))
+                .interactiveDismissDisabled(true)
+                .presentationCornerRadius(24)
+                .sheet(item: sheetSelection) { kindergarten in
+                    KindergartenDetailSheet(
+                        kindergarten: kindergarten,
+                        reviews: model.reviews(for: kindergarten.kindercode),
+                        reviewsVersion: model.reviewsData?.version,
+                        vacancySummary: model.vacancy(for: kindergarten.kindercode),
+                        vacancyDatasetVersion: model.vacancyData?.version,
+                        isVacancyLoading: model.isVacancyLoading,
+                        vacancyError: model.vacancyError,
+                        isCompared: model.isCompared(kindergarten),
+                        isFavorite: model.isFavorite(kindergarten),
+                        onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                        onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                    )
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+                }
             }
         }
         .navigationTitle("탐색")
@@ -235,35 +244,6 @@ private struct SearchChrome: View {
         return count > 0 ? "필터 +\(count)" : "필터"
     }
 
-    private var headerTitle: String {
-        if model.searchHomePresentationState == .firstVisit {
-            return "가까운 유치원을 빠르게 찾아보세요"
-        }
-
-        let label = model.locationLabel.trimmingCharacters(in: .whitespacesAndNewlines)
-        return label.isEmpty ? "우리 동네 유치원 찾기" : "\(label) 근처 유치원"
-    }
-
-    private var headerSubtitle: String {
-        if model.searchHomePresentationState == .firstVisit {
-            return "찾기, 저장, 비교를 한 번에 도와드려요."
-        }
-
-        if model.currentDeviceLocation != nil {
-            return "지금 있는 곳 근처를 보여드려요."
-        }
-
-        if model.searchHomePresentationState == .permissionRecovery {
-            return "주소나 기관 이름으로도 쉽게 찾을 수 있어요."
-        }
-
-        if !model.recentSearches.isEmpty {
-            return "최근 찾은 곳을 다시 볼 수 있어요."
-        }
-
-        return "동네 이름이나 기관명으로 바로 찾아보세요."
-    }
-
     private var locationNoticeActionLabel: String? {
         if model.shouldShowLocationSettingsCTA {
             return "설정 열기"
@@ -292,116 +272,96 @@ private struct SearchChrome: View {
     }
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 10) {
             VStack(spacing: 0) {
-                NativeScreenHeader(
-                    eyebrow: "유치원 찾기",
-                    title: headerTitle,
-                    subtitle: headerSubtitle
-                ) {
-                    Button {
-                        Task {
-                            await model.centerOnCurrentLocation()
-                        }
-                    } label: {
-                        HStack(spacing: 7) {
-                            Image(systemName: "location.fill")
-                                .font(.caption.weight(.bold))
-                            Text("내 위치")
-                                .font(.footnote.weight(.semibold))
-                        }
-                        .foregroundStyle(inkBlack)
-                        .padding(.horizontal, 14)
-                        .padding(.vertical, 10)
-                        .background(jadeGreen.opacity(0.20), in: Capsule())
-                        .overlay(
-                            Capsule()
-                                .stroke(jadeGreen.opacity(0.18), lineWidth: 1)
-                        )
+                HStack(spacing: 10) {
+                    ZStack {
+                        Circle()
+                            .fill(jadeGreen.opacity(0.16))
+                            .frame(width: 34, height: 34)
+                        Image(systemName: "magnifyingglass")
+                            .foregroundStyle(jadeDeep)
                     }
-                    .buttonStyle(.plain)
-                }
-                .padding(.horizontal, 18)
-                .padding(.top, 14)
-                .padding(.bottom, 10)
 
-                VStack(spacing: 0) {
-                    HStack(spacing: 12) {
-                        ZStack {
-                            Circle()
-                                .fill(jadeGreen.opacity(0.16))
-                                .frame(width: 34, height: 34)
-                            Image(systemName: "magnifyingglass")
-                                .foregroundStyle(jadeDeep)
-                        }
-
-                        TextField(
-                            "유치원 이름, 동네, 장소로 검색",
-                            text: Binding(
-                                get: { model.searchText },
-                                set: { model.updateSearchText($0) }
-                            )
+                    TextField(
+                        "유치원 이름, 동네, 장소로 검색",
+                        text: Binding(
+                            get: { model.searchText },
+                            set: { model.updateSearchText($0) }
                         )
-                        .accessibilityIdentifier("search.queryField")
-                        .focused($isSearchFieldFocused)
-                        .textFieldStyle(.plain)
-                        .foregroundStyle(inkBlack)
-                        .submitLabel(.search)
-                        .onSubmit {
-                            if let primarySuggestion {
-                                model.selectSearchSuggestion(primarySuggestion)
-                            }
-                            isSearchFieldFocused = false
+                    )
+                    .accessibilityIdentifier("search.queryField")
+                    .focused($isSearchFieldFocused)
+                    .textFieldStyle(.plain)
+                    .foregroundStyle(inkBlack)
+                    .submitLabel(.search)
+                    .onSubmit {
+                        if let primarySuggestion {
+                            model.selectSearchSuggestion(primarySuggestion)
                         }
+                        isSearchFieldFocused = false
+                    }
 
+                    if !model.searchText.isEmpty {
                         Button {
                             model.clearSearchText()
                         } label: {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.body)
-                                .foregroundStyle(model.searchText.isEmpty ? slateSoft.opacity(0.45) : slateBlue)
+                                .foregroundStyle(slateBlue)
                                 .frame(width: 44, height: 44)
                                 .contentShape(Circle())
                         }
                         .accessibilityIdentifier("search.clearQuery")
                         .accessibilityLabel("검색어 지우기")
-                        .opacity(model.searchText.isEmpty ? 0 : 1)
                     }
-                    .padding(.horizontal, 18)
-                    .padding(.vertical, 16)
-                    .background(
-                        RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
-                            .fill(paperWhite.opacity(0.88))
-                    )
 
-                    if shouldShowSuggestionPanel && hasSuggestionContent {
-                        Divider()
-                            .overlay(lineSoft)
-                            .padding(.horizontal, 18)
-                            .padding(.top, 14)
-
-                        ScrollView(showsIndicators: false) {
-                            SearchSuggestionPanel(
-                                searchText: trimmedSearchText,
-                                recentSuggestions: model.recentSearchSuggestions,
-                                localSuggestions: model.localSearchSuggestions,
-                                remoteSuggestions: model.remoteSearchSuggestions,
-                                isLoading: model.isSearchSuggestionsLoading,
-                                message: model.searchSuggestionMessage,
-                                onClearRecentSearches: model.clearRecentSearches
-                            ) { suggestion in
-                                model.selectSearchSuggestion(suggestion)
-                                isSearchFieldFocused = false
-                            }
-                            .padding(.horizontal, 18)
-                            .padding(.vertical, 18)
-                        }
-                        .frame(maxHeight: 280)
+                    Button {
+                        Task { await model.centerOnCurrentLocation() }
+                    } label: {
+                        Image(systemName: "location.fill")
+                            .font(.caption.weight(.bold))
+                            .foregroundStyle(jadeDeep)
+                            .frame(width: 38, height: 38)
+                            .background(jadeGreen.opacity(0.16), in: Circle())
                     }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("내 위치로 찾기")
                 }
-                .padding(.horizontal, 18)
-                .padding(.bottom, 14)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                        .fill(paperWhite.opacity(0.88))
+                )
+
+                if shouldShowSuggestionPanel && hasSuggestionContent {
+                    Divider()
+                        .overlay(lineSoft)
+                        .padding(.horizontal, 18)
+                        .padding(.top, 14)
+
+                    ScrollView(showsIndicators: false) {
+                        SearchSuggestionPanel(
+                            searchText: trimmedSearchText,
+                            recentSuggestions: model.recentSearchSuggestions,
+                            localSuggestions: model.localSearchSuggestions,
+                            remoteSuggestions: model.remoteSearchSuggestions,
+                            isLoading: model.isSearchSuggestionsLoading,
+                            message: model.searchSuggestionMessage,
+                            onClearRecentSearches: model.clearRecentSearches
+                        ) { suggestion in
+                            model.selectSearchSuggestion(suggestion)
+                            isSearchFieldFocused = false
+                        }
+                        .padding(.horizontal, 18)
+                        .padding(.vertical, 18)
+                    }
+                    .frame(maxHeight: 280)
+                }
             }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
             .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
             .onChange(of: isSearchFieldFocused) { _, isFocused in
                 isSuggestionPanelPresented = isFocused
@@ -419,113 +379,52 @@ private struct SearchChrome: View {
             }
 
             if !shouldShowSuggestionPanel {
-                VStack(spacing: 8) {
-                    if model.searchHomePresentationState == .firstVisit {
-                        SearchWelcomeCard(
-                            onUseCurrentLocation: {
-                                Task { await model.centerOnCurrentLocation() }
-                            },
-                            onSearchManually: {
-                                model.focusSearchField()
-                            }
-                        )
-                    }
-
-                    if model.searchHomePresentationState != .firstVisit {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 10) {
-                                Menu {
-                                    ForEach([1.0, 2.0, 5.0], id: \.self) { radius in
-                                        Button("반경 \(Int(radius))km") {
-                                            model.updateRadius(to: radius)
-                                        }
-                                    }
-                                } label: {
-                                    FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true, variant: .selector, action: {})
-                                }
-                                .sensoryFeedback(.selection, trigger: model.filters.radiusKM)
-                                Menu {
-                                    ForEach(SortOption.allCases, id: \.self) { option in
-                                        Button(option.label) {
-                                            model.updateSort(to: option)
-                                        }
-                                    }
-                                } label: {
-                                    FilterChip(label: model.filters.sort.label, isActive: true, variant: .selector, action: {})
-                                }
-                                .sensoryFeedback(.selection, trigger: model.filters.sort)
-                                FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
-                                    model.toggleBusFilter()
-                                }
-                                .sensoryFeedback(.selection, trigger: model.filters.hasBus)
-                                FilterChip(label: advancedFilterChipLabel, isActive: model.activeAdvancedFilterCount > 0) {
-                                    isAdvancedFilterPresented = true
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        Menu {
+                            ForEach([1.0, 2.0, 5.0], id: \.self) { radius in
+                                Button("반경 \(Int(radius))km") {
+                                    model.updateRadius(to: radius)
                                 }
                             }
-                            .padding(.horizontal, 2)
+                        } label: {
+                            FilterChip(label: "반경 \(Int(model.filters.radiusKM))km", isActive: true, variant: .selector, action: {})
                         }
-
-                        if !model.activeAdvancedFilterDescriptions.isEmpty {
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 8) {
-                                    ForEach(Array(model.activeAdvancedFilterDescriptions.enumerated()), id: \.offset) { _, desc in
-                                        Button {
-                                            desc.reset()
-                                        } label: {
-                                            HStack(spacing: 4) {
-                                                Text(desc.label)
-                                                    .font(.caption2.weight(.semibold))
-                                                Image(systemName: "xmark")
-                                                    .font(.system(size: 8, weight: .bold))
-                                            }
-                                            .padding(.horizontal, 10)
-                                            .padding(.vertical, 6)
-                                            .background(jadeGreen.opacity(0.12), in: Capsule())
-                                            .overlay(
-                                                Capsule()
-                                                    .stroke(jadeGreen.opacity(0.18), lineWidth: 1)
-                                            )
-                                            .foregroundStyle(jadeDeep)
-                                        }
-                                        .frame(minHeight: 44)
-                                        .contentShape(Capsule())
-                                        .buttonStyle(.plain)
-                                        .accessibilityLabel("\(desc.label) 필터 해제")
-                                    }
+                        .sensoryFeedback(.selection, trigger: model.filters.radiusKM)
+                        Menu {
+                            ForEach(SortOption.allCases, id: \.self) { option in
+                                Button(option.label) {
+                                    model.updateSort(to: option)
                                 }
-                                .padding(.horizontal, 2)
                             }
+                        } label: {
+                            FilterChip(label: model.filters.sort.label, isActive: true, variant: .selector, action: {})
+                        }
+                        .sensoryFeedback(.selection, trigger: model.filters.sort)
+                        Menu {
+                            ForEach(InstitutionFilter.allCases, id: \.self) { filterType in
+                                Button(filterType.label) {
+                                    model.filters.type = filterType
+                                }
+                            }
+                        } label: {
+                            FilterChip(
+                                label: model.filters.type == .all ? "유형" : model.filters.type.label,
+                                isActive: model.filters.type != .all,
+                                variant: .selector,
+                                action: {}
+                            )
+                        }
+                        .sensoryFeedback(.selection, trigger: model.filters.type)
+                        FilterChip(label: "셔틀", isActive: model.filters.hasBus == true) {
+                            model.toggleBusFilter()
+                        }
+                        .sensoryFeedback(.selection, trigger: model.filters.hasBus)
+                        FilterChip(label: advancedFilterChipLabel, isActive: model.activeAdvancedFilterCount > 0) {
+                            isAdvancedFilterPresented = true
                         }
                     }
-                }
-
-                if model.isCatalogLoading || model.isReviewsLoading {
-                    HStack(spacing: 8) {
-                        ProgressView()
-                            .controlSize(.small)
-                        Text("정보를 불러오는 중")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    }
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 8)
-                    .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
-                }
-
-                if let mapStatusMessage, model.searchHomePresentationState != .firstVisit {
-                    CompactMapStatusCard(message: mapStatusMessage)
-                }
-
-                if let locationMessage = model.locationPermissionMessage, model.searchHomePresentationState != .firstVisit {
-                    InlineNotice(
-                        message: locationMessage,
-                        actionLabel: locationNoticeActionLabel,
-                        action: locationNoticeActionLabel == nil ? nil : handleLocationNoticeAction
-                    )
-                } else if let catalogError = model.catalogError {
-                    InlineNotice(message: catalogError)
-                } else if let reviewsError = model.reviewsError {
-                    InlineNotice(message: reviewsError)
+                    .padding(.horizontal, 2)
                 }
             }
         }
@@ -733,22 +632,20 @@ private struct ResultSheet: View {
 
     private var results: [Kindergarten] { model.results }
     private var isLoading: Bool { model.isCatalogLoading || model.isReviewsLoading }
-    @State private var containerHeight: CGFloat = 800
     private var comparedIDs: Set<String> { Set(model.compareSelection.ids) }
     private var favoriteIDs: Set<String> { Set(model.favorites.map(\.kindercode)) }
     private var sectionTitle: String {
         guard !results.isEmpty else {
             switch model.searchHomePresentationState {
             case .firstVisit:
-                return "처음 둘러보기"
+                return "내 위치나 동네 이름으로 시작해 보세요"
             case .permissionRecovery:
                 return "검색 시작하기"
             case .normal:
                 return "검색 결과"
             }
         }
-        let count = min(results.count, 3)
-        return "\(model.locationLabel) 근처 추천 \(count)곳"
+        return "\(model.locationLabel) 근처 \(results.count)곳"
     }
 
     @ViewBuilder
@@ -830,15 +727,8 @@ private struct ResultSheet: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Capsule()
-                .fill(slateSoft.opacity(0.26))
-                .frame(width: 42, height: 5)
-                .padding(.top, 8)
-
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 4) {
-                    NativeBadge(results.isEmpty ? "검색 결과" : "추천", tone: .slate)
-
                     Text(sectionTitle)
                         .font(.title3.weight(.bold))
                         .foregroundStyle(inkBlack)
@@ -880,17 +770,10 @@ private struct ResultSheet: View {
                     }
                     .padding(.bottom, 8)
                 }
-                .frame(maxHeight: containerHeight * (containerHeight < 700 ? 0.48 : 0.58))
             }
         }
         .padding(.horizontal, 20)
-        .padding(.bottom, 16)
-        .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
-        .background(
-            GeometryReader { proxy in
-                Color.clear.onAppear { containerHeight = proxy.size.height }
-            }
-        )
+        .padding(.top, 16)
     }
 }
 

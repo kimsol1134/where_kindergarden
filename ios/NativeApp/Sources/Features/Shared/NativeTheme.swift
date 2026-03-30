@@ -119,28 +119,27 @@ public struct NativeScreenHeader<Accessory: View>: View {
     }
 
     public var body: some View {
-        HStack(alignment: .top, spacing: 14) {
-            VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack {
                 if let eyebrow {
                     Text(eyebrow)
                         .font(.caption2.weight(.black))
                         .foregroundStyle(slateSoft)
                         .textCase(.uppercase)
                 }
-
-                Text(title)
-                    .font(.title3.weight(.bold))
-                    .foregroundStyle(inkBlack)
-                    .lineLimit(2)
-
-                Text(subtitle)
-                    .font(.footnote)
-                    .foregroundStyle(slateBlue)
-                    .lineLimit(2)
+                Spacer(minLength: 12)
+                accessory
             }
 
-            Spacer(minLength: 12)
-            accessory
+            Text(title)
+                .font(.title3.weight(.bold))
+                .foregroundStyle(inkBlack)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Text(subtitle)
+                .font(.footnote)
+                .foregroundStyle(slateBlue)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
