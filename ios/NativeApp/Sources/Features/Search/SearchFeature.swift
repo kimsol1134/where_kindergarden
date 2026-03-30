@@ -11,8 +11,11 @@ public struct SearchHomeView: View {
     @ObservedObject private var model: NativeAppModel
     @State private var mapRuntimeMessage: String?
     @State private var isSearchPanelPresented = false
-    @State private var resultSheetDetent: PresentationDetent = .fraction(0.35)
+    @State private var screenHeight: CGFloat = 800
+    @State private var sheetFraction: CGFloat = 0.38
+    @State private var dragOffset: CGFloat = 0
     private let bottomStackSpacing: CGFloat = 12
+    private let sheetSnaps: [CGFloat] = [0.32, 0.55, 0.88]
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -143,7 +146,13 @@ public struct SearchHomeView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .background(mistWhite.ignoresSafeArea())
+            .background(
+                GeometryReader { proxy in
+                    mistWhite.ignoresSafeArea()
+                        .onAppear { screenHeight = proxy.size.height }
+                        .onChange(of: proxy.size.height) { _, h in screenHeight = h }
+                }
+            )
             .animation(.spring(duration: 0.3, bounce: 0.12), value: isSearchPanelPresented)
             .task {
                 model.refreshLocationPermissionState()
@@ -153,54 +162,85 @@ public struct SearchHomeView: View {
                 guard nextPhase == .active else { return }
                 model.refreshLocationPermissionState()
             }
-            .onChange(of: mapStatusMessage) { _, message in
-                if message != nil {
-                    resultSheetDetent = .large
+            .overlay(alignment: .bottom) {
+                if !isSearchPanelPresented {
+                    let sheetHeight = min(
+                        max(screenHeight * sheetFraction - dragOffset, screenHeight * sheetSnaps[0]),
+                        screenHeight * sheetSnaps[2]
+                    )
+
+                    VStack(spacing: 0) {
+                        // 드래그 핸들
+                        Capsule()
+                            .fill(slateSoft.opacity(0.35))
+                            .frame(width: 40, height: 5)
+                            .padding(.top, 10)
+                            .padding(.bottom, 8)
+                            .frame(maxWidth: .infinity)
+                            .contentShape(Rectangle())
+                            .gesture(
+                                DragGesture()
+                                    .onChanged { value in
+                                        dragOffset = value.translation.height
+                                    }
+                                    .onEnded { value in
+                                        let projected = sheetFraction - value.predictedEndTranslation.height / screenHeight
+                                        let clamped = min(max(projected, sheetSnaps[0]), sheetSnaps[2])
+                                        let nearest = sheetSnaps.min(by: { abs($0 - clamped) < abs($1 - clamped) }) ?? sheetFraction
+                                        dragOffset = 0
+                                        withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
+                                            sheetFraction = nearest
+                                        }
+                                    }
+                            )
+
+                        if !model.compareSelection.ids.isEmpty {
+                            CompareFloatingBar(
+                                count: model.compareSelection.ids.count,
+                                names: model.comparedKindergartenNames(),
+                                onNavigateToCompare: { model.selectedTab = .compare },
+                                onRemoveAt: { model.removeCompare(at: $0) }
+                            )
+                            .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, bottomStackSpacing)
+                        }
+
+                        ResultSheet(
+                            model: model,
+                            summaryText: resultSummaryText,
+                            degradedMessage: resultDegradedMessage,
+                            trimmedSearchQuery: trimmedSearchQuery,
+                            adUnitID: model.configuration.adMobBannerUnitID
+                        )
+                    }
+                    .frame(height: sheetHeight)
+                    .background(
+                        RoundedRectangle(cornerRadius: 24, style: .continuous)
+                            .fill(paperWhite.opacity(0.97))
+                            .shadow(color: .black.opacity(0.08), radius: 12, y: -4)
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .animation(.spring(duration: 0.3, bounce: 0.12), value: dragOffset)
+                    .transition(.move(edge: .bottom))
                 }
             }
-            .sheet(isPresented: .constant(true)) {
-                VStack(spacing: bottomStackSpacing) {
-                    if !model.compareSelection.ids.isEmpty {
-                        CompareFloatingBar(
-                            count: model.compareSelection.ids.count,
-                            names: model.comparedKindergartenNames(),
-                            onNavigateToCompare: { model.selectedTab = .compare },
-                            onRemoveAt: { model.removeCompare(at: $0) }
-                        )
-                        .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
-                        .padding(.horizontal, 20)
-                    }
-
-                    ResultSheet(
-                        model: model,
-                        summaryText: resultSummaryText,
-                        degradedMessage: resultDegradedMessage,
-                        trimmedSearchQuery: trimmedSearchQuery,
-                        adUnitID: model.configuration.adMobBannerUnitID
-                    )
-                }
-                .presentationDetents([.fraction(0.35), .medium, .large], selection: $resultSheetDetent)
+            .sheet(item: sheetSelection) { kindergarten in
+                KindergartenDetailSheet(
+                    kindergarten: kindergarten,
+                    reviews: model.reviews(for: kindergarten.kindercode),
+                    reviewsVersion: model.reviewsData?.version,
+                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
+                    vacancyDatasetVersion: model.vacancyData?.version,
+                    isVacancyLoading: model.isVacancyLoading,
+                    vacancyError: model.vacancyError,
+                    isCompared: model.isCompared(kindergarten),
+                    isFavorite: model.isFavorite(kindergarten),
+                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                )
+                .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
-                .presentationBackgroundInteraction(.enabled(upThrough: .medium))
-                .interactiveDismissDisabled(true)
-                .presentationCornerRadius(24)
-                .sheet(item: sheetSelection) { kindergarten in
-                    KindergartenDetailSheet(
-                        kindergarten: kindergarten,
-                        reviews: model.reviews(for: kindergarten.kindercode),
-                        reviewsVersion: model.reviewsData?.version,
-                        vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                        vacancyDatasetVersion: model.vacancyData?.version,
-                        isVacancyLoading: model.isVacancyLoading,
-                        vacancyError: model.vacancyError,
-                        isCompared: model.isCompared(kindergarten),
-                        isFavorite: model.isFavorite(kindergarten),
-                        onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                        onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                    )
-                    .presentationDetents([.medium, .large])
-                    .presentationDragIndicator(.visible)
-                }
             }
         }
         .navigationTitle("탐색")
@@ -773,7 +813,6 @@ private struct ResultSheet: View {
             }
         }
         .padding(.horizontal, 20)
-        .padding(.top, 16)
     }
 }
 
