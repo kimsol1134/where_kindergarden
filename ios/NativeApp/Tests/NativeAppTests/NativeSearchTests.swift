@@ -289,6 +289,71 @@ final class NativeSearchTests: XCTestCase {
         XCTAssertEqual(model.locationLabel, "서초구청")
     }
 
+    func testSearchMapCameraDecisionIgnoresPassiveCurrentLocationUpdate() {
+        let marker = SearchMapMarker(
+            id: "A001",
+            title: "역삼유치원",
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276),
+            compareOrder: nil
+        )
+        let previous = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: nil,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            currentLocationRecenterRequestID: 0
+        )
+        let next = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: Coordinates(lat: 37.4970, lng: 127.0280),
+            markers: [marker],
+            selectedKindergartenID: nil,
+            currentLocationRecenterRequestID: 0
+        )
+
+        XCTAssertEqual(
+            SearchMapCameraDecision.command(
+                previousRenderedState: previous,
+                nextState: next,
+                isPerformingExplicitCurrentLocationRecenter: false
+            ),
+            .none
+        )
+    }
+
+    func testSearchMapCameraDecisionCentersOnExplicitRecenterRequest() {
+        let currentLocation = Coordinates(lat: 37.4970, lng: 127.0280)
+        let marker = SearchMapMarker(
+            id: "A001",
+            title: "역삼유치원",
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276),
+            compareOrder: nil
+        )
+        let previous = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: currentLocation,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            currentLocationRecenterRequestID: 0
+        )
+        let next = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: currentLocation,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            currentLocationRecenterRequestID: 1
+        )
+
+        XCTAssertEqual(
+            SearchMapCameraDecision.command(
+                previousRenderedState: previous,
+                nextState: next,
+                isPerformingExplicitCurrentLocationRecenter: false
+            ),
+            .centerOnCurrentLocation
+        )
+    }
+
     @MainActor
     func testSearchModelRestoresRecentSearchAndKeepsSearchTabActive() {
         let model = makeModel()
@@ -304,6 +369,27 @@ final class NativeSearchTests: XCTestCase {
         XCTAssertEqual(model.selectedTab, .search)
         XCTAssertEqual(model.searchText, "서울시청")
         XCTAssertEqual(model.recentSearches.first?.label, "서울시청")
+    }
+
+    @MainActor
+    func testSearchModelRestoresCurrentLocationRecentSearchWithoutQueryText() {
+        let model = makeModel()
+        let currentLocation = Coordinates(lat: 37.4981, lng: 127.0276)
+        let recent = RecentSearch(
+            label: "현재 위치",
+            coordinates: currentLocation,
+            displayName: "현재 위치",
+            searchType: .currentLocation
+        )
+
+        model.restoreRecentSearch(recent)
+
+        XCTAssertEqual(model.locationLabel, "현재 위치")
+        XCTAssertEqual(model.userLocation, currentLocation)
+        XCTAssertEqual(model.selectedTab, .search)
+        XCTAssertEqual(model.searchText, "")
+        XCTAssertEqual(model.activeSearchType, .currentLocation)
+        XCTAssertTrue(model.isCurrentLocationSearchActive)
     }
 
     @MainActor

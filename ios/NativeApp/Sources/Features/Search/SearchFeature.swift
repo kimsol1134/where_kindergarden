@@ -49,7 +49,7 @@ public struct SearchHomeView: View {
     }
 
     private var hasSearchContext: Bool {
-        model.currentDeviceLocation != nil
+        model.isCurrentLocationSearchActive
             || !model.recentSearches.isEmpty
             || !trimmedSearchQuery.isEmpty
             || model.hasActiveAdvancedFilters
@@ -76,6 +76,16 @@ public struct SearchHomeView: View {
         )
     }
 
+    private var currentLocationFABVerticalOffset: CGFloat {
+        guard isResultsSheetPresented else { return 0 }
+
+        return detentHeights[selectedResultsDetent]
+            ?? SearchResultsSheetPolicy.height(
+                for: selectedResultsDetent,
+                maximumDetentValue: resultsSheetAvailableHeight
+            )
+    }
+
     private var resultDegradedMessage: String? {
         if model.reviewsError != nil {
             return "후기 정보를 불러오지 못했어요. 일부 정보가 비어 보일 수 있어요."
@@ -100,7 +110,7 @@ public struct SearchHomeView: View {
 
         if model.results.isEmpty {
             if trimmedSearchQuery.isEmpty,
-               model.currentDeviceLocation == nil,
+               !model.isCurrentLocationSearchActive,
                model.recentSearches.isEmpty,
                model.locationError == nil {
                 return "현재 위치나 주소를 확인하면 주변 유치원이 보여요"
@@ -138,6 +148,23 @@ public struct SearchHomeView: View {
         return message
     }
 
+    private var shouldShowCurrentLocationFAB: Bool {
+        mapStatusMessage == nil && !isSearchPanelPresented
+    }
+
+    private var currentLocationRecenterRequestID: Int {
+        model.currentLocationRecenterRequestID
+    }
+
+    private func primeCurrentDeviceLocationIfNeeded() async {
+        guard model.selectedTab == .search else { return }
+        await model.primeCurrentDeviceLocationIfAuthorized()
+    }
+
+    private func scheduleCurrentDeviceLocationPrimingIfNeeded() {
+        Task { await primeCurrentDeviceLocationIfNeeded() }
+    }
+
     public var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -147,6 +174,7 @@ public struct SearchHomeView: View {
                     currentLocation: model.currentDeviceLocation,
                     markers: mapMarkers,
                     selectedKindergartenID: model.selectedKindergarten?.kindercode,
+                    currentLocationRecenterRequestID: currentLocationRecenterRequestID,
                     runtimeMessage: $mapRuntimeMessage,
                     showsStatusCard: true
                 ) { kindercode in
@@ -192,11 +220,17 @@ public struct SearchHomeView: View {
             .task {
                 model.refreshLocationPermissionState()
                 await model.bootstrapIfNeeded()
+                await primeCurrentDeviceLocationIfNeeded()
                 updateResultsDetent(preferredResultsDetentAfterSuggestionDismiss())
             }
             .onChange(of: scenePhase) { _, nextPhase in
                 guard nextPhase == .active else { return }
                 model.refreshLocationPermissionState()
+                scheduleCurrentDeviceLocationPrimingIfNeeded()
+            }
+            .onChange(of: model.selectedTab) { _, nextTab in
+                guard nextTab == .search else { return }
+                scheduleCurrentDeviceLocationPrimingIfNeeded()
             }
             .onChange(of: isSearchPanelPresented) { _, presented in
                 guard !presented else { return }
@@ -218,6 +252,18 @@ public struct SearchHomeView: View {
                         )
                     }
                     .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+            }
+            .overlay(alignment: .bottomTrailing) {
+                if shouldShowCurrentLocationFAB {
+                    SearchCurrentLocationFAB(isLoading: model.isLocatingCurrentPosition) {
+                        Task { await model.recenterMapToCurrentLocation() }
+                    }
+                    .padding(.trailing, 20)
+                    .padding(.bottom, 22)
+                    .offset(y: -currentLocationFABVerticalOffset)
+                    .animation(.spring(duration: 0.28, bounce: 0.18), value: selectedResultsDetent)
+                    .animation(.spring(duration: 0.28, bounce: 0.18), value: isResultsSheetPresented)
                 }
             }
             .sheet(item: sheetSelection) { kindergarten in
@@ -248,6 +294,83 @@ public struct SearchHomeView: View {
         }
         .navigationTitle("탐색")
         .toolbar(.hidden, for: .navigationBar)
+    }
+}
+
+private struct SearchCurrentLocationFAB: View {
+    let isLoading: Bool
+    let action: () -> Void
+    private let visualDiameter: CGFloat = 34
+    private let tapTargetDiameter: CGFloat = 44
+
+    var body: some View {
+        Button(action: action) {
+            ZStack {
+                Circle()
+                    .fill(jadeGreen.opacity(0.20))
+                    .overlay(
+                        Circle()
+                            .stroke(jadeGreen.opacity(0.32), lineWidth: 1)
+                    )
+
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(.circular)
+                        .tint(jadeDeep)
+                        .controlSize(.small)
+                } else {
+                    NaverStyleCurrentLocationGlyph(color: jadeDeep)
+                        .frame(width: 16, height: 16)
+                }
+            }
+            .frame(width: visualDiameter, height: visualDiameter)
+            .shadow(color: inkBlack.opacity(0.08), radius: 8, y: 4)
+            .frame(width: tapTargetDiameter, height: tapTargetDiameter)
+            .contentShape(Circle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("search.currentLocationFAB")
+        .accessibilityLabel("현재 위치로 지도 이동")
+    }
+}
+
+private struct NaverStyleCurrentLocationGlyph: View {
+    let color: Color
+
+    var body: some View {
+        GeometryReader { proxy in
+            let size = min(proxy.size.width, proxy.size.height)
+            let center = CGPoint(x: size / 2, y: size / 2)
+            let outerRadius = size * 0.46
+            let ringRadius = size * 0.29
+            let innerRadius = size * 0.34
+            let lineWidth = max(1.5, size * 0.095)
+
+            ZStack {
+                Path { path in
+                    path.move(to: CGPoint(x: center.x, y: center.y - outerRadius))
+                    path.addLine(to: CGPoint(x: center.x, y: center.y - innerRadius))
+
+                    path.move(to: CGPoint(x: center.x + innerRadius, y: center.y))
+                    path.addLine(to: CGPoint(x: center.x + outerRadius, y: center.y))
+
+                    path.move(to: CGPoint(x: center.x, y: center.y + innerRadius))
+                    path.addLine(to: CGPoint(x: center.x, y: center.y + outerRadius))
+
+                    path.move(to: CGPoint(x: center.x - outerRadius, y: center.y))
+                    path.addLine(to: CGPoint(x: center.x - innerRadius, y: center.y))
+                }
+                .stroke(
+                    color,
+                    style: StrokeStyle(lineWidth: lineWidth, lineCap: .round)
+                )
+
+                Circle()
+                    .stroke(color, lineWidth: lineWidth)
+                    .frame(width: ringRadius * 2, height: ringRadius * 2)
+            }
+            .frame(width: proxy.size.width, height: proxy.size.height)
+        }
     }
 }
 
@@ -381,18 +504,6 @@ private struct SearchChrome: View {
                         .accessibilityIdentifier("search.clearQuery")
                         .accessibilityLabel("검색어 지우기")
                     }
-
-                    Button {
-                        Task { await model.centerOnCurrentLocation() }
-                    } label: {
-                        Image(systemName: "location.fill")
-                            .font(.caption.weight(.bold))
-                            .foregroundStyle(jadeDeep)
-                            .frame(width: 38, height: 38)
-                            .background(jadeGreen.opacity(0.16), in: Circle())
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("내 위치로 찾기")
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
@@ -799,7 +910,7 @@ private struct ResultSheet: View {
                         #endif
                     }
                 )
-            } else if model.currentDeviceLocation != nil || !model.recentSearches.isEmpty {
+            } else if model.isCurrentLocationSearchActive || !model.recentSearches.isEmpty {
                 EmptyStateView(
                     icon: "map",
                     title: "이 근처에서는 찾지 못했어요",
@@ -816,7 +927,7 @@ private struct ResultSheet: View {
                     ctaAction: { Task { await model.centerOnCurrentLocation() } }
                 )
             }
-        } else if results.isEmpty && !trimmedSearchQuery.isEmpty {
+        } else if results.isEmpty && !trimmedSearchQuery.isEmpty && !model.isCurrentLocationSearchActive {
             EmptyStateView(
                 icon: "magnifyingglass",
                 title: "'\(trimmedSearchQuery)' 결과가 없어요",
