@@ -232,7 +232,6 @@ public struct SearchHomeView: View {
                     isCompared: model.isCompared(kindergarten),
                     isFavorite: model.isFavorite(kindergarten),
                     fitReasons: model.fitReasons(for: kindergarten),
-                    fitSummary: model.fitSummary(for: kindergarten),
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                 )
@@ -869,11 +868,8 @@ private struct ResultSheet: View {
                         DiscoveryPreviewSection(title: discoveryTitle) {
                             HStack(spacing: 14) {
                                 ForEach(topDiscoveries) { kindergarten in
-                                    let reasons = model.fitReasons(for: kindergarten)
                                     DiscoveryPreviewCard(
                                         kindergarten: kindergarten,
-                                        fitReasons: reasons,
-                                        fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
                                         isCompared: comparedIDs.contains(kindergarten.kindercode),
                                         isFavorite: favoriteIDs.contains(kindergarten.kindercode),
                                         vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
@@ -894,13 +890,10 @@ private struct ResultSheet: View {
 
                                 LazyVStack(spacing: 12) {
                                     ForEach(remainingResults) { kindergarten in
-                                        let reasons = model.fitReasons(for: kindergarten)
                                         SearchResultCard(
                                             kindergarten: kindergarten,
                                             isCompared: comparedIDs.contains(kindergarten.kindercode),
                                             isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                            fitReasons: reasons,
-                                            fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
                                             vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
                                             reviewCount: model.reviews(for: kindergarten.kindercode).count,
                                             onTap: { model.select(kindergarten: kindergarten) },
@@ -931,8 +924,6 @@ private struct SearchResultCard: View {
     let kindergarten: Kindergarten
     let isCompared: Bool
     let isFavorite: Bool
-    let fitReasons: [KindergartenFitReason]
-    let fitSummary: String?
     let vacancyCount: Int
     let reviewCount: Int
     let onTap: () -> Void
@@ -1035,13 +1026,6 @@ private struct SearchResultCard: View {
                                 .foregroundStyle(inkBlack)
                                 .lineLimit(2)
 
-                            if let fitSummary {
-                                Text(fitSummary)
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(inkBlack.opacity(0.84))
-                                    .lineLimit(2)
-                            }
-
                             if vacancyCount > 0 {
                                 (Text("여유 \(vacancyCount)명")
                                     .font(.footnote.weight(.semibold))
@@ -1124,8 +1108,6 @@ private struct DiscoveryPreviewSection<Content: View>: View {
 
 private struct DiscoveryPreviewCard: View {
     let kindergarten: Kindergarten
-    let fitReasons: [KindergartenFitReason]
-    let fitSummary: String?
     let isCompared: Bool
     let isFavorite: Bool
     let vacancyCount: Int
@@ -1167,19 +1149,10 @@ private struct DiscoveryPreviewCard: View {
                         .foregroundStyle(slateBlue)
                 }
 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(kindergarten.name)
-                        .font(.headline.weight(.bold))
-                        .foregroundStyle(inkBlack)
-                        .lineLimit(2)
-
-                    if let fitSummary {
-                        Text(fitSummary)
-                            .font(.footnote)
-                            .foregroundStyle(slateBlue)
-                            .lineLimit(2)
-                    }
-                }
+                Text(kindergarten.name)
+                    .font(.headline.weight(.bold))
+                    .foregroundStyle(inkBlack)
+                    .lineLimit(2)
 
                 SpecBarView(specs: miniSpecs)
 
