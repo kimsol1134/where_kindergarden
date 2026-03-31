@@ -818,9 +818,7 @@ private struct SearchResultsSheetContainer: View {
             if !model.compareSelection.ids.isEmpty {
                 CompareFloatingBar(
                     count: model.compareSelection.ids.count,
-                    names: model.comparedKindergartenNames(),
-                    onNavigateToCompare: { model.selectedTab = .compare },
-                    onRemoveAt: { model.removeCompare(at: $0) }
+                    onNavigateToCompare: { model.selectedTab = .compare }
                 )
                 .padding(.horizontal, 20)
                 .padding(.top, 12)
