@@ -78,7 +78,7 @@ private extension CompareMatrixView {
                 .foregroundStyle(slateSoft)
                 .frame(width: 70, alignment: .leading)
 
-            ForEach(Array(items.enumerated()), id: \.offset) { _, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
                 Text(shortHeader(for: item.name))
                     .font(.caption.weight(.bold))
                     .foregroundStyle(inkBlack)
@@ -110,7 +110,7 @@ private extension CompareMatrixView {
 // MARK: - Section 1: Core Comparison
 
 private extension CompareMatrixView {
-    // 1. Teacher-to-child ratio (lower is better)
+    // lower is better
     var teacherRatioRow: some View {
         let ratios: [Double] = items.map { item in
             item.teacherCount > 0
@@ -131,12 +131,11 @@ private extension CompareMatrixView {
         )
     }
 
-    // 2. Capacity / current count with progress bar
     var capacityRow: some View {
         let allSame = Set(items.map { "\($0.capacity)/\($0.currentCount)" }).count <= 1
 
         return conditionalRowContent(title: "현원/정원", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 let fillRate = item.capacity > 0
                     ? Double(item.currentCount) / Double(item.capacity)
                     : 0
@@ -164,12 +163,11 @@ private extension CompareMatrixView {
                 }
                 .frame(minWidth: columnWidth, maxWidth: .infinity)
                 .padding(.vertical, 12)
-                .cellBackground(highlighted: false, index: index)
+                .cellBackground(highlighted: false)
             }
         }
     }
 
-    // 3. Vacancy
     var vacancyRow: some View {
         let labels: [String] = vacancyCounts.map { count in
             count > 0 ? "빈자리 \(count)명" : "없음"
@@ -190,18 +188,17 @@ private extension CompareMatrixView {
 // MARK: - Section 2: Care Environment
 
 private extension CompareMatrixView {
-    // 4. Meal type with badge
     var mealRow: some View {
         let mealTypes = items.map(\.mealType)
         let highlights = mealHighlights(mealTypes)
         let allSame = Set(mealTypes.map(\.rawValue)).count <= 1
 
         return conditionalRowContent(title: "급식", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 NativeBadge(mealLabel(for: item.mealType), tone: mealTone(for: item.mealType))
                     .frame(minWidth: columnWidth, maxWidth: .infinity)
                     .padding(.vertical, 12)
-                    .cellBackground(highlighted: highlights.contains(index), index: index)
+                    .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
@@ -222,14 +219,13 @@ private extension CompareMatrixView {
         }
     }
 
-    // 5. After-school program
     var afterSchoolRow: some View {
         let values = items.map(\.hasAfterSchool)
         let highlights = boolHighlights(values)
         let allSame = Set(values).count <= 1
 
         return conditionalRowContent(title: "방과후", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 Group {
                     if item.hasAfterSchool {
                         Image(systemName: "checkmark.circle.fill")
@@ -242,12 +238,11 @@ private extension CompareMatrixView {
                 .font(.body)
                 .frame(minWidth: columnWidth, maxWidth: .infinity)
                 .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index), index: index)
+                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
 
-    // 6. Shuttle bus
     var busRow: some View {
         let busCounts = items.map { $0.hasBus ? $0.busCount : 0 }
         let highlights = highestHighlights(busCounts)
@@ -255,7 +250,7 @@ private extension CompareMatrixView {
             && Set(busCounts).count <= 1
 
         return conditionalRowContent(title: "셔틀", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 Group {
                     if item.hasBus {
                         Text("\(item.busCount)대")
@@ -271,7 +266,7 @@ private extension CompareMatrixView {
                 }
                 .frame(minWidth: columnWidth, maxWidth: .infinity)
                 .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index), index: index)
+                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
@@ -280,7 +275,6 @@ private extension CompareMatrixView {
 // MARK: - Section 3: Facilities & Safety
 
 private extension CompareMatrixView {
-    // 7. Playground
     var playgroundRow: some View {
         let values = items.map(\.hasPlayground)
         let highlights = boolHighlights(values)
@@ -288,7 +282,7 @@ private extension CompareMatrixView {
             && Set(items.map { Int($0.outdoorPlaygroundArea) }).count <= 1
 
         return conditionalRowContent(title: "놀이터", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 VStack(spacing: 2) {
                     if item.hasPlayground {
                         Image(systemName: "checkmark.circle.fill")
@@ -308,12 +302,11 @@ private extension CompareMatrixView {
                 }
                 .frame(minWidth: columnWidth, maxWidth: .infinity)
                 .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index), index: index)
+                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
 
-    // 8. CCTV
     var cctvRow: some View {
         let counts = items.map(\.cctvCount)
         let highlights = highestHighlights(counts)
@@ -327,11 +320,10 @@ private extension CompareMatrixView {
         )
     }
 
-    // 9. Area per child
     var areaRow: some View {
         let areas = items.map(\.areaPerChild)
         let labels = areas.map { String(format: "%.1f\u{33A1}", $0) }
-        let highlights = highestHighlightsDouble(areas)
+        let highlights = highestHighlights(areas)
         let allSame = Set(labels).count <= 1
 
         return conditionalRow(
@@ -346,7 +338,6 @@ private extension CompareMatrixView {
 // MARK: - Section 4: Reference
 
 private extension CompareMatrixView {
-    // 10. Reviews
     var reviewRow: some View {
         let highlights = highestHighlights(reviewCounts)
         let labels = reviewCounts.map { "\($0)건" }
@@ -360,7 +351,6 @@ private extension CompareMatrixView {
         )
     }
 
-    // 11. Establishment year
     var establishRow: some View {
         let years = items.map { String($0.establishDate.prefix(4)) + "년" }
         let allSame = Set(years).count <= 1
@@ -373,13 +363,12 @@ private extension CompareMatrixView {
         )
     }
 
-    // 12. Phone
     var phoneRow: some View {
         let phones = items.map(\.phone)
         let allSame = Set(phones.map { $0 ?? "" }).count <= 1
 
         return conditionalRowContent(title: "전화", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.offset) { index, item in
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 Group {
                     if let phone = item.phone,
                        let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
@@ -400,7 +389,7 @@ private extension CompareMatrixView {
                 }
                 .frame(minWidth: columnWidth, maxWidth: .infinity)
                 .padding(.vertical, 12)
-                .cellBackground(highlighted: false, index: index)
+                .cellBackground(highlighted: false)
             }
         }
     }
@@ -454,7 +443,7 @@ private extension CompareMatrixView {
                         )
                         .frame(minWidth: columnWidth, maxWidth: .infinity)
                         .padding(.vertical, 12)
-                        .cellBackground(highlighted: highlights.contains(index), index: index)
+                        .cellBackground(highlighted: highlights.contains(index))
                 }
             }
         }
@@ -504,7 +493,7 @@ private struct CellBackgroundModifier: ViewModifier {
 }
 
 private extension View {
-    func cellBackground(highlighted: Bool, index: Int) -> some View {
+    func cellBackground(highlighted: Bool) -> some View {
         modifier(CellBackgroundModifier(highlighted: highlighted))
     }
 }
@@ -512,15 +501,7 @@ private extension View {
 // MARK: - Highlight Helpers
 
 private extension CompareMatrixView {
-    /// Highlight indexes with the highest value. No highlight if all equal or all zero.
-    func highestHighlights(_ values: [Int]) -> Set<Int> {
-        guard let highest = values.max(), highest > 0 else { return [] }
-        let indices = Set(values.enumerated().compactMap { idx, val in val == highest ? idx : nil })
-        return indices.count == values.count ? [] : indices
-    }
-
-    /// Highlight indexes with the highest Double value.
-    func highestHighlightsDouble(_ values: [Double]) -> Set<Int> {
+    func highestHighlights<T: Comparable & Numeric>(_ values: [T]) -> Set<Int> {
         guard let highest = values.max(), highest > 0 else { return [] }
         let indices = Set(values.enumerated().compactMap { idx, val in val == highest ? idx : nil })
         return indices.count == values.count ? [] : indices
@@ -546,15 +527,8 @@ private extension CompareMatrixView {
         return Set(values.enumerated().compactMap { idx, val in val == .direct ? idx : nil })
     }
 
-    /// Highlight if vacancyCount > 0. No highlight if all same.
     func vacancyHighlights(_ values: [Int]) -> Set<Int> {
-        let hasPositive = values.contains(where: { $0 > 0 })
-        let allPositive = values.allSatisfy { $0 > 0 }
-        guard hasPositive, !allPositive else {
-            if allPositive { return [] }
-            if !hasPositive { return [] }
-            return []
-        }
+        guard values.contains(where: { $0 > 0 }), !values.allSatisfy({ $0 > 0 }) else { return [] }
         return Set(values.enumerated().compactMap { idx, val in val > 0 ? idx : nil })
     }
 }

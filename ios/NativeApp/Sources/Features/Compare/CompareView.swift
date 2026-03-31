@@ -2,6 +2,9 @@ import Models
 import Services
 import SwiftUI
 
+private let compareBestTint = Color.blue.opacity(0.10)
+private let compareBestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
+
 public struct CompareView: View {
     @ObservedObject private var model: NativeAppModel
 
@@ -75,11 +78,13 @@ public struct CompareView: View {
                                 }
                             } else {
                                 let scores = calculateScores()
+                                let reviewCounts = items.map { model.reviews(for: $0.kindercode).count }
+                                let vacancyCounts = items.map { model.vacancyCount(for: $0.kindercode) }
 
                                 CompareQuickStats(
                                     items: items,
-                                    reviewCounts: items.map { model.reviews(for: $0.kindercode).count },
-                                    vacancyCounts: items.map { model.vacancyCount(for: $0.kindercode) },
+                                    reviewCounts: reviewCounts,
+                                    vacancyCounts: vacancyCounts,
                                     scores: scores
                                 )
 
@@ -96,8 +101,8 @@ public struct CompareView: View {
 
                                 CompareMatrixView(
                                     items: items,
-                                    reviewCounts: items.map { model.reviews(for: $0.kindercode).count },
-                                    vacancyCounts: items.map { model.vacancyCount(for: $0.kindercode) }
+                                    reviewCounts: reviewCounts,
+                                    vacancyCounts: vacancyCounts
                                 )
                             }
                         }
@@ -256,9 +261,6 @@ private struct CompareQuickStats: View {
     let vacancyCounts: [Int]
     let scores: [Int]
 
-    private let bestTint = Color.blue.opacity(0.10)
-    private let bestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
-
     private var winnerSummary: String? {
         guard let maxScore = scores.max(), maxScore > 0 else { return nil }
         let winnerIndexes = scores.enumerated().filter { $0.element == maxScore }
@@ -362,7 +364,7 @@ private struct CompareQuickStats: View {
                     .lineLimit(1)
                 Text(value)
                     .font(.caption2)
-                    .foregroundStyle(bestForeground)
+                    .foregroundStyle(compareBestForeground)
             } else {
                 Text("동일")
                     .font(.footnote)
@@ -421,10 +423,10 @@ private struct CompareHeaderCard: View {
             if score > 0 {
                 Text("\(score)개 우세")
                     .font(.caption2.weight(.bold))
-                    .foregroundStyle(Color(red: 0.18, green: 0.38, blue: 0.68))
+                    .foregroundStyle(compareBestForeground)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
-                    .background(Color.blue.opacity(0.10), in: Capsule())
+                    .background(compareBestTint, in: Capsule())
             }
         }
         .padding(18)
