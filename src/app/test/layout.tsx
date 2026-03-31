@@ -70,9 +70,9 @@ export default function TestLayout({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(quizJsonLd) }}
       />
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200/30 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-teal-200/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 right-1/4 w-60 h-60 bg-emerald-100/40 rounded-full blur-3xl" />
+        <div className="absolute -top-10 -right-16 h-[220px] w-[280px] rounded-[40%_60%_55%_45%/55%_40%_60%_45%] bg-[radial-gradient(ellipse_at_30%_40%,rgba(78,169,109,0.18),rgba(78,169,109,0.06)_60%,transparent_80%)] blur-[40px]" />
+        <div className="absolute top-1/2 -left-16 h-[200px] w-[240px] rounded-[55%_45%_50%_50%/45%_55%_45%_55%] bg-[radial-gradient(ellipse_at_60%_50%,rgba(244,216,106,0.20),rgba(244,216,106,0.08)_55%,transparent_80%)] blur-[40px]" />
+        <div className="absolute -bottom-10 right-1/4 h-[200px] w-[240px] rounded-[50%_50%_40%_60%/60%_40%_55%_45%] bg-[radial-gradient(ellipse_at_40%_60%,rgba(78,169,109,0.14),transparent_70%)] blur-[40px]" />
       </div>
 
       <header className="sticky top-0 z-50 safe-area-top bg-white/70 backdrop-blur-xl border-b border-emerald-100/50">

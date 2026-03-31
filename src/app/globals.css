@@ -146,10 +146,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image:
-      radial-gradient(circle at top left, rgba(244, 216, 106, 0.26), transparent 26%),
-      radial-gradient(circle at top right, rgba(78, 169, 109, 0.18), transparent 30%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(246, 245, 239, 0.86));
+    background-color: #FAFDF8;
     background-attachment: fixed;
   }
 }
@@ -298,6 +295,30 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
+/* ── Splash: Discovery Scan keyframes ── */
+@keyframes splash-radius-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.06); opacity: 0.7; }
+}
+@keyframes splash-orbit-dot {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+@keyframes splash-sweep {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+@keyframes splash-mag-wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+@keyframes splash-loading {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
 /* 접근성: 모션 감소 선호 */
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
@@ -306,5 +327,8 @@ input[type="search"]::-webkit-search-cancel-button {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+  [class*="splash-"] {
+    animation: none !important;
   }
 }

@@ -25,10 +25,14 @@ const FEATURES = [
 export function AppHome() {
   return (
     <div className="relative min-h-screen bg-[var(--brand-page)] font-sans text-[var(--brand-ink)]">
-      {/* 배경 장식 */}
+      {/* 배경 장식 — 수채화 워시 */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute left-[-4rem] top-20 h-64 w-64 rounded-full bg-[rgba(244,216,106,0.22)] blur-3xl" />
-        <div className="absolute right-[-3rem] top-48 h-56 w-56 rounded-full bg-[rgba(78,169,109,0.16)] blur-3xl" />
+        <div className="absolute right-[-3.5rem] top-[-2.5rem] h-[220px] w-[280px] rounded-[40%_60%_55%_45%/55%_40%_60%_45%] bg-[radial-gradient(ellipse_at_30%_40%,rgba(78,169,109,0.18),rgba(78,169,109,0.06)_60%,transparent_80%)] blur-[40px]" />
+        <div className="absolute left-[-3rem] top-[180px] h-[200px] w-[240px] rounded-[55%_45%_50%_50%/45%_55%_45%_55%] bg-[radial-gradient(ellipse_at_60%_50%,rgba(244,216,106,0.22),rgba(244,216,106,0.08)_55%,transparent_80%)] blur-[40px]" />
+        <div className="absolute bottom-[120px] right-[-1.5rem] h-[260px] w-[200px] rounded-[50%_50%_40%_60%/60%_40%_55%_45%] bg-[radial-gradient(ellipse_at_40%_60%,rgba(78,169,109,0.12),rgba(45,90,61,0.04)_50%,transparent_75%)] blur-[40px]" />
+        <div className="absolute bottom-[-1.5rem] left-[-2.5rem] h-[180px] w-[320px] rounded-[45%_55%_60%_40%/50%_50%_45%_55%] bg-[radial-gradient(ellipse_at_50%_30%,rgba(244,216,106,0.14),rgba(244,216,106,0.04)_60%,transparent_85%)] blur-[40px]" />
+        <div className="absolute right-5 top-[60px] h-[140px] w-[160px] rounded-[50%_50%_45%_55%/55%_45%_50%_50%] bg-[rgba(78,169,109,0.08)] blur-[60px]" />
+        <div className="absolute left-[30px] top-[280px] h-[120px] w-[180px] rounded-[50%] bg-[rgba(244,216,106,0.1)] blur-[60px]" />
       </div>
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-lg flex-col px-5 safe-pt-hero pb-[calc(3rem+var(--total-bottom-offset,0px))]">

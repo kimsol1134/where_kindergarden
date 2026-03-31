@@ -20,7 +20,7 @@ export default function Splash3() {
         }`}
       >
         <Image 
-          src="/app-icon-preview.png" 
+          src="/icon.png" 
           alt="App Icon" 
           width={100} 
           height={100}

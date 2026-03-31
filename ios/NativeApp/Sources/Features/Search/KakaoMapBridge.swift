@@ -82,21 +82,33 @@ private struct MapUnavailablePlaceholder: View {
     var body: some View {
         GeometryReader { proxy in
             ZStack {
-                LinearGradient(
-                    colors: [cloudWhite, mistWhite, paperWhite],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                )
+                Color(red: 0.98, green: 0.992, blue: 0.973)
 
-                Circle()
-                    .fill(sunYellow.opacity(0.20))
-                    .frame(width: 220, height: 220)
-                    .offset(x: -120, y: 120)
+                Ellipse()
+                    .fill(
+                        RadialGradient(
+                            colors: [sunYellow.opacity(0.20), sunYellow.opacity(0.06), .clear],
+                            center: UnitPoint(x: 0.6, y: 0.5),
+                            startRadius: 0,
+                            endRadius: 110
+                        )
+                    )
+                    .frame(width: 220, height: 180)
+                    .offset(x: -100, y: 100)
+                    .blur(radius: 40)
 
-                Circle()
-                    .fill(jadeGreen.opacity(0.16))
-                    .frame(width: 260, height: 260)
-                    .offset(x: 120, y: -180)
+                Ellipse()
+                    .fill(
+                        RadialGradient(
+                            colors: [jadeGreen.opacity(0.16), jadeGreen.opacity(0.04), .clear],
+                            center: UnitPoint(x: 0.3, y: 0.4),
+                            startRadius: 0,
+                            endRadius: 130
+                        )
+                    )
+                    .frame(width: 260, height: 200)
+                    .offset(x: 100, y: -160)
+                    .blur(radius: 40)
 
                 if showsContent {
                     VStack {
