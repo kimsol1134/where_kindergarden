@@ -33,10 +33,9 @@ public struct SavedView: View {
                                 icon: "heart",
                                 title: "찜한 곳이 아직 없어요",
                                 message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요.",
-                                ctaLabel: "유치원 찾아보기"
-                            ) {
-                                model.selectedTab = .search
-                            }
+                                ctaLabel: "유치원 찾아보기",
+                                ctaAction: { model.selectedTab = .search }
+                            )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                         } else {
@@ -101,10 +100,9 @@ public struct SavedView: View {
                                 icon: "clock.arrow.circlepath",
                                 title: "최근 찾은 곳이 없어요",
                                 message: "동네 이름이나 현재 위치로 찾으면 여기에 남아요.",
-                                ctaLabel: "유치원 찾아보기"
-                            ) {
-                                model.selectedTab = .search
-                            }
+                                ctaLabel: "유치원 찾아보기",
+                                ctaAction: { model.selectedTab = .search }
+                            )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                         } else {

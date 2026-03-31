@@ -58,6 +58,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var locationPermissionState: LocationPermissionState
     @Published public private(set) var isFirstLaunch: Bool
     @Published public var shouldFocusSearchField: Bool = false
+    @Published public private(set) var compareToastMessage: String?
 
     public let configuration: NativeAppConfiguration
 
@@ -563,12 +564,18 @@ public final class NativeAppModel: ObservableObject {
 
     public func toggleCompare(for kindergarten: Kindergarten) {
         compareSelection.toggle(id: kindergarten.kindercode)
+        let isNowCompared = compareSelection.contains(kindergarten.kindercode)
         analytics?.track(event: .compareToggled, properties: [
             "kindercode": kindergarten.kindercode,
-            "selected": "\(compareSelection.contains(kindergarten.kindercode))"
+            "selected": "\(isNowCompared)"
         ])
         persistence.saveCompareSelection(compareSelection)
         refreshSelectedKindergarten()
+        compareToastMessage = isNowCompared ? "비교에 담았어요" : "비교에서 뺐어요"
+    }
+
+    public func dismissCompareToast() {
+        compareToastMessage = nil
     }
 
     public func isCompared(_ kindergarten: Kindergarten) -> Bool {
