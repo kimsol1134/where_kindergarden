@@ -702,10 +702,6 @@ public final class NativeAppModel: ObservableObject {
         )
     }
 
-    func fitSummary(for kindergarten: Kindergarten) -> String? {
-        KindergartenFitSummaryBuilder.summary(for: fitReasons(for: kindergarten))
-    }
-
     public func vacancy(for kindercode: String) -> VacancySummary? {
         vacancyData?.items[kindercode]
     }

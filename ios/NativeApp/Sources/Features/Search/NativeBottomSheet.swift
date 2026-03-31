@@ -46,8 +46,6 @@ struct NativeBottomSheet<Content: View>: UIViewControllerRepresentable {
     }
 }
 
-// MARK: - UIKit Controller
-
 private final class PassthroughContainerView: UIView {
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         subviews.contains { subview in
@@ -189,7 +187,7 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
             hosting.view.topAnchor.constraint(equalTo: grabberView.bottomAnchor, constant: 8),
             hosting.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             hosting.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            hosting.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            hosting.view.bottomAnchor.constraint(equalTo: containerView.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 

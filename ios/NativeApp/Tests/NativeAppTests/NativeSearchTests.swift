@@ -124,21 +124,6 @@ final class NativeSearchTests: XCTestCase {
         XCTAssertEqual(reasons.first?.title, "셔틀")
     }
 
-    @MainActor
-    func testNativeAppModelFitSummaryUsesDeterministicPhrase() {
-        let model = makeModel()
-        let kindergarten = KindergartenSearchEngine()
-            .makeKindergartens(
-                raws: NativePreviewFixtures.kindergartens,
-                relativeTo: Coordinates(lat: 37.4981, lng: 127.0276)
-            )
-            .first(where: { $0.kindercode == "A001" })!
-
-        model.applySearchLens(.bus)
-
-        XCTAssertEqual(model.fitSummary(for: kindergarten), "셔틀이 있고 방과후를 운영해요")
-    }
-
     func testKakaoAddressResponseDecodesRoadAddressAndCoordinates() throws {
         let json = """
         {

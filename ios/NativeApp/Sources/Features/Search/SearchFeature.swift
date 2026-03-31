@@ -278,7 +278,6 @@ public struct SearchHomeView: View {
                     isCompared: model.isCompared(kindergarten),
                     isFavorite: model.isFavorite(kindergarten),
                     fitReasons: model.fitReasons(for: kindergarten),
-                    fitSummary: model.fitSummary(for: kindergarten),
                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                 )
@@ -371,6 +370,16 @@ private struct NaverStyleCurrentLocationGlyph: View {
                     .frame(width: ringRadius * 2, height: ringRadius * 2)
             }
             .frame(width: proxy.size.width, height: proxy.size.height)
+        }
+    }
+}
+
+private struct BottomFadeMask: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            Color.black
+            LinearGradient(colors: [.black, .clear], startPoint: .top, endPoint: .bottom)
+                .frame(height: 32)
         }
     }
 }
@@ -524,7 +533,8 @@ private struct SearchChrome: View {
                         .padding(.horizontal, 18)
                         .padding(.vertical, 18)
                     }
-                    .frame(maxHeight: 280)
+                    .mask(BottomFadeMask())
+                    .frame(maxHeight: .infinity)
                 }
             }
             .padding(.horizontal, 14)
@@ -633,9 +643,18 @@ private struct SearchSuggestionPanel: View {
         VStack(alignment: .leading, spacing: 14) {
             if searchText.isEmpty {
                 if recentSuggestions.isEmpty {
-                    Text("최근 찾은 곳을 다시 볼 수 있어요.")
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("이렇게 검색해 보세요")
+                            .font(.caption.weight(.heavy))
+                            .foregroundStyle(slateSoft)
+                            .textCase(.uppercase)
+
+                        VStack(alignment: .leading, spacing: 8) {
+                            SearchHintRow(icon: "mappin.and.ellipse", text: "강남구, 분당 등 동네 이름")
+                            SearchHintRow(icon: "backpack.fill", text: "유치원 이름 (예: 해나루유치원)")
+                            SearchHintRow(icon: "sparkle.magnifyingglass", text: "장소 이름 (예: 코엑스 근처)")
+                        }
+                    }
                 } else {
                     VStack(alignment: .leading, spacing: 10) {
                         HStack {
@@ -663,7 +682,7 @@ private struct SearchSuggestionPanel: View {
             } else {
                 if !localSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "기관 이름",
+                        title: "기관 이름 \(localSuggestions.count)건",
                         suggestions: localSuggestions,
                         onSelect: onSelect
                     )
@@ -671,7 +690,7 @@ private struct SearchSuggestionPanel: View {
 
                 if !remoteSuggestions.isEmpty {
                     SearchSuggestionSection(
-                        title: "주소·장소",
+                        title: "주소·장소 \(remoteSuggestions.count)건",
                         suggestions: remoteSuggestions,
                         onSelect: onSelect
                     )
@@ -727,19 +746,6 @@ private struct SearchSuggestionSection: View {
 private struct SearchSuggestionRow: View {
     let suggestion: SearchSuggestion
 
-    private var iconName: String {
-        switch suggestion.kind {
-        case .recent:
-            return "clock.arrow.circlepath"
-        case .kindergarten:
-            return "building.2.fill"
-        case .address:
-            return "mappin.and.ellipse"
-        case .place:
-            return "sparkle.magnifyingglass"
-        }
-    }
-
     private var badgeLabel: String {
         switch suggestion.kind {
         case .recent:
@@ -755,15 +761,6 @@ private struct SearchSuggestionRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            ZStack {
-                Circle()
-                    .fill(jadeGreen.opacity(0.16))
-                    .frame(width: 36, height: 36)
-                Image(systemName: iconName)
-                    .font(.callout.weight(.bold))
-                    .foregroundStyle(jadeDeep)
-            }
-
             VStack(alignment: .leading, spacing: 4) {
                 Text(suggestion.title)
                     .font(.subheadline.weight(.semibold))
@@ -774,7 +771,7 @@ private struct SearchSuggestionRow: View {
                     Text(subtitle)
                         .font(.caption)
                         .foregroundStyle(slateBlue)
-                        .lineLimit(2)
+                        .lineLimit(1)
                 }
             }
 
@@ -785,6 +782,23 @@ private struct SearchSuggestionRow: View {
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
+    }
+}
+
+private struct SearchHintRow: View {
+    let icon: String
+    let text: String
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: icon)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(jadeDeep)
+                .frame(width: 20)
+            Text(text)
+                .font(.subheadline)
+                .foregroundStyle(slateBlue)
+        }
     }
 }
 
@@ -837,11 +851,6 @@ private struct ResultSheet: View {
     private var comparedIDs: Set<String> { Set(model.compareSelection.ids) }
     private var favoriteIDs: Set<String> { Set(model.favorites.map(\.kindercode)) }
     private var recentSearchPreview: [RecentSearch] { Array(model.recentSearches.prefix(3)) }
-    private var topDiscoveries: [Kindergarten] { Array(results.prefix(3)) }
-
-    private var remainingResults: [Kindergarten] {
-        Array(results.dropFirst(topDiscoveries.count))
-    }
 
     private var sectionTitle: String {
         guard !results.isEmpty else {
@@ -858,14 +867,6 @@ private struct ResultSheet: View {
             return "\(model.locationLabel) 근처 \(lens.label) \(results.count)곳"
         }
         return "\(model.locationLabel) 근처 \(results.count)곳"
-    }
-
-    private var discoveryTitle: String {
-        if model.activeSearchLens != nil || model.hasActiveAdvancedFilters || !trimmedSearchQuery.isEmpty {
-            return "우리 조건에 먼저 맞는 곳"
-        }
-
-        return "이 동네에서 먼저 볼 곳"
     }
 
     @ViewBuilder
@@ -977,49 +978,18 @@ private struct ResultSheet: View {
                             }
                         }
 
-                        DiscoveryPreviewSection(title: discoveryTitle) {
-                            HStack(spacing: 14) {
-                                ForEach(topDiscoveries) { kindergarten in
-                                    let reasons = model.fitReasons(for: kindergarten)
-                                    DiscoveryPreviewCard(
-                                        kindergarten: kindergarten,
-                                        fitReasons: reasons,
-                                        fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
-                                        isCompared: comparedIDs.contains(kindergarten.kindercode),
-                                        isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                        vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
-                                        onTap: { model.select(kindergarten: kindergarten) },
-                                        onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                                        onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                                    )
-                                }
-                            }
-                        }
-
-                        if !remainingResults.isEmpty {
-                            VStack(alignment: .leading, spacing: 12) {
-                                Text("전체 결과")
-                                    .font(.subheadline.weight(.heavy))
-                                    .foregroundStyle(slateSoft)
-                                    .textCase(.uppercase)
-
-                                LazyVStack(spacing: 12) {
-                                    ForEach(remainingResults) { kindergarten in
-                                        let reasons = model.fitReasons(for: kindergarten)
-                                        SearchResultCard(
-                                            kindergarten: kindergarten,
-                                            isCompared: comparedIDs.contains(kindergarten.kindercode),
-                                            isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                            fitReasons: reasons,
-                                            fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
-                                            vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
-                                            reviewCount: model.reviews(for: kindergarten.kindercode).count,
-                                            onTap: { model.select(kindergarten: kindergarten) },
-                                            onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                                            onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                                        )
-                                    }
-                                }
+                        LazyVStack(spacing: 12) {
+                            ForEach(results) { kindergarten in
+                                SearchResultCard(
+                                    kindergarten: kindergarten,
+                                    isCompared: comparedIDs.contains(kindergarten.kindercode),
+                                    isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                                    vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
+                                    reviewCount: model.reviews(for: kindergarten.kindercode).count,
+                                    onTap: { model.select(kindergarten: kindergarten) },
+                                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                                )
                             }
                         }
 
@@ -1042,8 +1012,6 @@ private struct SearchResultCard: View {
     let kindergarten: Kindergarten
     let isCompared: Bool
     let isFavorite: Bool
-    let fitReasons: [KindergartenFitReason]
-    let fitSummary: String?
     let vacancyCount: Int
     let reviewCount: Int
     let onTap: () -> Void
@@ -1074,17 +1042,14 @@ private struct SearchResultCard: View {
 
     private var specItems: [SpecBarView.Spec] {
         [
-            .init(id: "bus", icon: "bus.fill", label: "셔틀", isMet: kindergarten.hasBus),
-            .init(id: "after", icon: "sun.max.fill", label: "방과후", isMet: kindergarten.hasAfterSchool),
-            .init(id: "meal", icon: "fork.knife",
-                  label: { switch kindergarten.mealType { case .direct: "직영"; case .outsourced: "위탁"; case .none: "급식" } }(),
-                  isMet: kindergarten.mealType != .none),
+            .init(id: "bus", icon: "bus.fill", label: "셔틀",
+                  isMet: kindergarten.hasBus, tone: .slate),
             .init(id: "vacancy", icon: "checkmark.seal.fill",
                   label: vacancyCount > 0 ? "여유 \(vacancyCount)" : "여유",
-                  isMet: vacancyCount > 0),
+                  isMet: vacancyCount > 0, tone: .jade),
             .init(id: "review", icon: "text.bubble.fill",
                   label: reviewCount > 0 ? "후기 \(reviewCount)" : "후기",
-                  isMet: reviewCount > 0),
+                  isMet: reviewCount > 0, tone: .amber),
         ]
     }
 
@@ -1115,220 +1080,87 @@ private struct SearchResultCard: View {
 
     var body: some View {
         Button(action: onTap) {
-            HStack(spacing: 0) {
-                if vacancyCount > 0 {
-                    RoundedRectangle(cornerRadius: 1)
-                        .fill(jadeGreen)
-                        .frame(width: 3)
-                        .padding(.vertical, 6)
-                }
-
-                HStack(alignment: .top, spacing: 14) {
-                    VStack(alignment: .leading, spacing: 10) {
-                        HStack(alignment: .top) {
-                            HStack(spacing: 8) {
-                                ForEach(statusBadges, id: \.title) { item in
-                                    NativeBadge(item.title, tone: item.tone)
-                                }
-                            }
-                            Spacer(minLength: 12)
-                            Text(distanceText)
-                                .font(.caption.weight(.semibold))
-                                .foregroundStyle(slateBlue)
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 6)
-                                .background(slateBlue.opacity(0.08), in: Capsule())
-                        }
-
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(kindergarten.name)
-                                .font(.headline.weight(.bold))
-                                .foregroundStyle(inkBlack)
-                                .lineLimit(2)
-
-                            if let fitSummary {
-                                Text(fitSummary)
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(inkBlack.opacity(0.84))
-                                    .lineLimit(2)
-                            }
-
-                            if vacancyCount > 0 {
-                                (Text("여유 \(vacancyCount)명")
-                                    .font(.footnote.weight(.semibold))
-                                    .foregroundStyle(jadeDeep)
-                                 + Text(" · \(kindergarten.address)")
-                                    .font(.footnote)
-                                    .foregroundStyle(slateBlue))
-                                .lineLimit(1)
-                            } else {
-                                Text(supportLine)
-                                    .font(.footnote)
-                                    .foregroundStyle(slateBlue)
-                                    .lineLimit(2)
+            HStack(alignment: .top, spacing: 14) {
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack(alignment: .top) {
+                        HStack(spacing: 8) {
+                            ForEach(statusBadges, id: \.title) { item in
+                                NativeBadge(item.title, tone: item.tone)
                             }
                         }
-
-                        SpecBarView(specs: specItems)
-                    }
-
-                    VStack(spacing: 12) {
-                        Button(action: onToggleCompare) {
-                            Image(systemName: isCompared ? "checkmark" : "plus")
-                                .font(.system(size: 14, weight: .black))
-                                .foregroundStyle(isCompared ? inkBlack : jadeDeep)
-                                .frame(width: 44, height: 44)
-                                .background(
-                                    Circle()
-                                        .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
-                                )
-                        }
-                        .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
-                        .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
-                        .buttonStyle(.borderless)
-                        .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
-                        .contentTransition(.symbolEffect(.replace))
-
-                        Button(action: onToggleFavorite) {
-                            Image(systemName: isFavorite ? "heart.fill" : "heart")
-                                .font(.system(size: 14, weight: .black))
-                                .foregroundStyle(isFavorite ? inkBlack : slateBlue)
-                                .frame(width: 44, height: 44)
-                                .background(
-                                    Circle()
-                                        .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
-                                )
-                        }
-                        .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
-                        .buttonStyle(.borderless)
-                        .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
-                        .contentTransition(.symbolEffect(.replace))
-                    }
-                }
-                .padding(cardPadding)
-            }
-        }
-        .buttonStyle(PressableCardStyle())
-        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
-        .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
-        .accessibilityElement(children: .combine)
-    }
-}
-
-private struct DiscoveryPreviewSection<Content: View>: View {
-    let title: String
-    @ViewBuilder let content: () -> Content
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(title)
-                .font(.subheadline.weight(.heavy))
-                .foregroundStyle(slateSoft)
-                .textCase(.uppercase)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                content()
-            }
-        }
-    }
-}
-
-private struct DiscoveryPreviewCard: View {
-    let kindergarten: Kindergarten
-    let fitReasons: [KindergartenFitReason]
-    let fitSummary: String?
-    let isCompared: Bool
-    let isFavorite: Bool
-    let vacancyCount: Int
-    let onTap: () -> Void
-    let onToggleCompare: () -> Void
-    let onToggleFavorite: () -> Void
-
-    private var distanceText: String {
-        kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 확인 전"
-    }
-
-    private var miniSpecs: [SpecBarView.Spec] {
-        [
-            .init(id: "bus", icon: "bus.fill", label: "셔틀", isMet: kindergarten.hasBus),
-            .init(id: "after", icon: "sun.max.fill", label: "방과후", isMet: kindergarten.hasAfterSchool),
-            .init(id: "vacancy", icon: "checkmark.seal.fill", label: "여유", isMet: vacancyCount > 0),
-        ]
-    }
-
-    private var typeTone: NativeBadge.Tone {
-        switch kindergarten.type {
-        case .public:
-            return .jade
-        case .private:
-            return .sand
-        case .home:
-            return .slate
-        }
-    }
-
-    var body: some View {
-        Button(action: onTap) {
-            VStack(alignment: .leading, spacing: 12) {
-                HStack(alignment: .top) {
-                    NativeBadge(kindergarten.type.label, tone: typeTone)
-                    Spacer(minLength: 12)
-                    Text(distanceText)
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(slateBlue)
-                }
-
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(kindergarten.name)
-                        .font(.headline.weight(.bold))
-                        .foregroundStyle(inkBlack)
-                        .lineLimit(2)
-
-                    if let fitSummary {
-                        Text(fitSummary)
-                            .font(.footnote)
+                        Spacer(minLength: 12)
+                        Text(distanceText)
+                            .font(.caption.weight(.semibold))
                             .foregroundStyle(slateBlue)
-                            .lineLimit(2)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 6)
+                            .background(slateBlue.opacity(0.08), in: Capsule())
                     }
+
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(kindergarten.name)
+                            .font(.headline.weight(.bold))
+                            .foregroundStyle(inkBlack)
+                            .lineLimit(2)
+
+                        if vacancyCount > 0 {
+                            (Text("여유 \(vacancyCount)명")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(jadeDeep)
+                             + Text(" · \(kindergarten.address)")
+                                .font(.footnote)
+                                .foregroundStyle(slateBlue))
+                            .lineLimit(1)
+                        } else {
+                            Text(supportLine)
+                                .font(.footnote)
+                                .foregroundStyle(slateBlue)
+                                .lineLimit(2)
+                        }
+                    }
+
+                    SpecBarView(specs: specItems)
                 }
 
-                SpecBarView(specs: miniSpecs)
-
-                HStack(spacing: 10) {
+                VStack(spacing: 12) {
                     Button(action: onToggleCompare) {
                         Image(systemName: isCompared ? "checkmark" : "plus")
-                            .font(.system(size: 13, weight: .black))
+                            .font(.system(size: 14, weight: .black))
                             .foregroundStyle(isCompared ? inkBlack : jadeDeep)
-                            .frame(width: 36, height: 36)
+                            .frame(width: 44, height: 44)
                             .background(
                                 Circle()
                                     .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
                             )
                     }
-                    .buttonStyle(.borderless)
+                    .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
                     .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
+                    .buttonStyle(.borderless)
+                    .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
+                    .contentTransition(.symbolEffect(.replace))
 
                     Button(action: onToggleFavorite) {
                         Image(systemName: isFavorite ? "heart.fill" : "heart")
-                            .font(.system(size: 13, weight: .black))
+                            .font(.system(size: 14, weight: .black))
                             .foregroundStyle(isFavorite ? inkBlack : slateBlue)
-                            .frame(width: 36, height: 36)
+                            .frame(width: 44, height: 44)
                             .background(
                                 Circle()
                                     .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
                             )
                     }
-                    .buttonStyle(.borderless)
                     .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
-
-                    Spacer()
+                    .buttonStyle(.borderless)
+                    .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
+                    .contentTransition(.symbolEffect(.replace))
                 }
             }
+            .padding(cardPadding)
         }
         .buttonStyle(PressableCardStyle())
-        .padding(16)
-        .frame(width: 280, alignment: .leading)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
+        .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -1341,7 +1173,7 @@ private struct RecentSearchSummaryStrip: View {
         case .currentLocation:
             return "location.fill"
         case .kindergarten:
-            return "building.2.fill"
+            return "backpack.fill"
         case .address:
             return "mappin.and.ellipse"
         case .place:
@@ -1564,27 +1396,69 @@ private struct InlineNotice: View {
 }
 
 private struct SpecBarView: View {
+    enum Tone {
+        case jade, slate, amber
+
+        var foreground: Color {
+            switch self {
+            case .jade: return jadeDeep
+            case .slate: return slateBlue
+            case .amber: return amberOrange
+            }
+        }
+
+        var background: Color {
+            switch self {
+            case .jade: return jadeGreen.opacity(0.14)
+            case .slate: return slateBlue.opacity(0.10)
+            case .amber: return sunYellow.opacity(0.18)
+            }
+        }
+
+        var stroke: Color {
+            switch self {
+            case .jade: return jadeGreen.opacity(0.18)
+            case .slate: return slateBlue.opacity(0.16)
+            case .amber: return sunYellow.opacity(0.28)
+            }
+        }
+    }
+
     struct Spec: Identifiable {
         let id: String
         let icon: String
         let label: String
         let isMet: Bool
+        var tone: Tone = .jade
     }
 
     let specs: [Spec]
 
     var body: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 8) {
             ForEach(specs) { spec in
-                HStack(spacing: 4) {
-                    Image(systemName: spec.icon)
-                        .font(.system(size: 10, weight: .bold))
-                    Text(spec.label)
-                        .font(.caption2.weight(.semibold))
-                        .lineLimit(1)
+                if spec.isMet {
+                    iconLabel(spec, iconSize: 9, weight: .bold)
+                        .foregroundStyle(spec.tone.foreground)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 5)
+                        .background(spec.tone.background, in: Capsule())
+                        .overlay(Capsule().stroke(spec.tone.stroke, lineWidth: 1))
+                } else {
+                    iconLabel(spec, iconSize: 10, weight: .semibold)
+                        .foregroundStyle(slateSoft.opacity(0.6))
                 }
-                .foregroundStyle(spec.isMet ? jadeDeep : slateSoft)
             }
+        }
+    }
+
+    private func iconLabel(_ spec: Spec, iconSize: CGFloat, weight: Font.Weight) -> some View {
+        HStack(spacing: 4) {
+            Image(systemName: spec.icon)
+                .font(.system(size: iconSize, weight: .bold))
+            Text(spec.label)
+                .font(.caption2.weight(weight))
+                .lineLimit(1)
         }
     }
 }
