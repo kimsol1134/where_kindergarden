@@ -433,32 +433,7 @@ private struct SearchChrome: View {
         [.publicOnly, .privateOnly, .bus, .afterSchool, .vacancy]
     }
 
-    private var locationNoticeActionLabel: String? {
-        if model.shouldShowLocationSettingsCTA {
-            return "설정 열기"
-        }
 
-        if model.shouldShowLocationRetryCTA {
-            return "다시 시도"
-        }
-
-        return nil
-    }
-
-    private func handleLocationNoticeAction() {
-        if model.shouldShowLocationSettingsCTA {
-            #if canImport(UIKit)
-            if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
-                openURL(settingsURL)
-            }
-            #endif
-            return
-        }
-
-        if model.shouldShowLocationRetryCTA {
-            Task { await model.centerOnCurrentLocation() }
-        }
-    }
 
     var body: some View {
         VStack(spacing: 10) {
@@ -1458,85 +1433,6 @@ private struct SpecBarView: View {
                 .font(.caption2.weight(weight))
                 .lineLimit(1)
         }
-    }
-}
-
-private struct SearchWelcomeCard: View {
-    let onUseCurrentLocation: () -> Void
-    let onSearchManually: () -> Void
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            NativeBadge("바로 시작하기", tone: .slate)
-
-            Text("가까운 유치원을 빠르게 찾고, 저장하고, 비교해 보세요.")
-                .font(.headline.weight(.bold))
-                .foregroundStyle(inkBlack)
-
-            Text("현재 위치로 찾거나 동네 이름과 기관명으로 바로 검색할 수 있어요.")
-                .font(.subheadline)
-                .foregroundStyle(slateBlue)
-                .fixedSize(horizontal: false, vertical: true)
-
-            HStack(spacing: 10) {
-                Button(action: onUseCurrentLocation) {
-                    HStack(spacing: 6) {
-                        Image(systemName: "location.fill")
-                        Text("내 위치로 찾기")
-                    }
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(inkBlack)
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 11)
-                    .background(jadeGreen.opacity(0.22), in: Capsule())
-                }
-                .buttonStyle(.plain)
-
-                Button("검색으로 찾기", action: onSearchManually)
-                    .font(.footnote.weight(.semibold))
-                    .buttonStyle(.plain)
-                    .foregroundStyle(jadeDeep)
-            }
-
-            Text("현재 위치는 찾을 때만 사용돼요.")
-                .font(.caption)
-                .foregroundStyle(slateSoft)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(18)
-        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.96))
-    }
-}
-
-private struct CompactMapStatusCard: View {
-    let message: String
-
-    var body: some View {
-        HStack(spacing: 10) {
-            ZStack {
-                Circle()
-                    .fill(jadeGreen.opacity(0.16))
-                    .frame(width: 30, height: 30)
-                Image(systemName: "map.circle.fill")
-                    .font(.footnote.weight(.bold))
-                    .foregroundStyle(jadeDeep)
-            }
-
-            VStack(alignment: .leading, spacing: 4) {
-                Text("지도 상태")
-                    .font(.caption2.weight(.heavy))
-                    .foregroundStyle(slateSoft)
-                Text(message)
-                    .font(.footnote)
-                    .foregroundStyle(slateBlue)
-                    .lineLimit(2)
-            }
-
-            Spacer()
-        }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
-        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
     }
 }
 
