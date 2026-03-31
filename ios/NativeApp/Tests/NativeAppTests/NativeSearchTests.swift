@@ -4,6 +4,73 @@ import XCTest
 @testable import Services
 
 final class NativeSearchTests: XCTestCase {
+    func testSearchResultsSheetPolicyClampsPeekHeight() {
+        let compactHeight = SearchResultsSheetPolicy.height(
+            for: .peek,
+            maximumDetentValue: 500
+        )
+        let tallHeight = SearchResultsSheetPolicy.height(
+            for: .peek,
+            maximumDetentValue: 1_000
+        )
+
+        XCTAssertEqual(compactHeight, 200, accuracy: 0.0001)
+        XCTAssertEqual(tallHeight, 320, accuracy: 0.0001)
+    }
+
+    func testSearchResultsSheetPolicyMapsKindsToPresentationDetents() {
+        XCTAssertEqual(
+            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .peek)),
+            .peek
+        )
+        XCTAssertEqual(
+            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .mid)),
+            .mid
+        )
+        XCTAssertEqual(
+            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .expanded)),
+            .expanded
+        )
+    }
+
+    func testSearchResultsSheetPolicyShowsSheetOnlyOnSearchTabWhenSuggestionsHidden() {
+        XCTAssertTrue(
+            SearchResultsSheetPolicy.shouldPresentResultsSheet(
+                isSearchPanelPresented: false,
+                isSearchTabSelected: true
+            )
+        )
+        XCTAssertFalse(
+            SearchResultsSheetPolicy.shouldPresentResultsSheet(
+                isSearchPanelPresented: true,
+                isSearchTabSelected: true
+            )
+        )
+        XCTAssertFalse(
+            SearchResultsSheetPolicy.shouldPresentResultsSheet(
+                isSearchPanelPresented: false,
+                isSearchTabSelected: false
+            )
+        )
+    }
+
+    func testSearchResultsSheetPolicyPrefersMidDetentWhenSearchHasContext() {
+        XCTAssertEqual(
+            SearchResultsSheetPolicy.preferredDetentAfterSuggestionPanelDismiss(
+                resultsCount: 3,
+                hasSearchContext: true
+            ),
+            .mid
+        )
+        XCTAssertEqual(
+            SearchResultsSheetPolicy.preferredDetentAfterSuggestionPanelDismiss(
+                resultsCount: 0,
+                hasSearchContext: false
+            ),
+            .peek
+        )
+    }
+
     func testKakaoAddressResponseDecodesRoadAddressAndCoordinates() throws {
         let json = """
         {

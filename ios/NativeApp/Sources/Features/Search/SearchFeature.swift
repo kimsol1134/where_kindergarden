@@ -11,12 +11,7 @@ public struct SearchHomeView: View {
     @ObservedObject private var model: NativeAppModel
     @State private var mapRuntimeMessage: String?
     @State private var isSearchPanelPresented = false
-    @State private var screenHeight: CGFloat = 800
-    @State private var sheetFraction: CGFloat = 0.38
-    @State private var dragOffset: CGFloat = 0
-    private let bottomStackSpacing: CGFloat = 12
-    private let minimumSheetHeight: CGFloat = 200
-    private let sheetSnaps: [CGFloat] = [0.32, 0.55, 0.88]
+    @State private var selectedResultsDetent: SearchResultsSheetDetentKind = .peek
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -24,17 +19,6 @@ public struct SearchHomeView: View {
 
     @MainActor public init() {
         self.model = .preview()
-    }
-
-    private var sheetSelection: Binding<Kindergarten?> {
-        Binding(
-            get: { model.selectedKindergarten },
-            set: { selection in
-                if selection == nil {
-                    model.dismissDetail()
-                }
-            }
-        )
     }
 
     private var mapMarkers: [SearchMapMarker] {
@@ -50,6 +34,61 @@ public struct SearchHomeView: View {
 
     private var trimmedSearchQuery: String {
         model.searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private var hasSearchContext: Bool {
+        model.currentDeviceLocation != nil
+            || !model.recentSearches.isEmpty
+            || !trimmedSearchQuery.isEmpty
+            || model.hasActiveAdvancedFilters
+    }
+
+    private var isResultsSheetPresented: Bool {
+        SearchResultsSheetPolicy.shouldPresentResultsSheet(
+            isSearchPanelPresented: isSearchPanelPresented,
+            isSearchTabSelected: model.selectedTab == .search
+        )
+    }
+
+    private var resultsSheetBinding: Binding<Bool> {
+        Binding(
+            get: { isResultsSheetPresented },
+            set: { _ in }
+        )
+    }
+
+    private var selectedResultsPresentationDetent: Binding<PresentationDetent> {
+        Binding(
+            get: {
+                SearchResultsSheetPolicy.presentationDetent(for: selectedResultsDetent)
+            },
+            set: { nextDetent in
+                if let nextKind = SearchResultsSheetPolicy.kind(for: nextDetent) {
+                    selectedResultsDetent = nextKind
+                }
+            }
+        )
+    }
+
+    private func updateResultsDetent(_ detent: SearchResultsSheetDetentKind, animated: Bool = true) {
+        guard selectedResultsDetent != detent else {
+            return
+        }
+
+        if animated {
+            withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
+                selectedResultsDetent = detent
+            }
+        } else {
+            selectedResultsDetent = detent
+        }
+    }
+
+    private func preferredResultsDetentAfterSuggestionDismiss() -> SearchResultsSheetDetentKind {
+        SearchResultsSheetPolicy.preferredDetentAfterSuggestionPanelDismiss(
+            resultsCount: model.results.count,
+            hasSearchContext: hasSearchContext
+        )
     }
 
     private var resultSummaryText: String {
@@ -83,18 +122,6 @@ public struct SearchHomeView: View {
         ].joined(separator: " · ")
     }
 
-    private var resultDegradedMessage: String? {
-        if model.reviewsError != nil {
-            return "후기 정보를 불러오지 못했어요. 일부 정보가 비어 보일 수 있어요."
-        }
-
-        guard !model.configuration.hasKakaoRESTAPIKey else {
-            return nil
-        }
-
-        return "주소나 장소 추천이 잠시 쉬고 있어요. 기관 이름이나 최근 검색으로 찾아보세요."
-    }
-
     private var mapStatusMessage: String? {
         if let mapRuntimeMessage {
             return mapRuntimeMessage
@@ -122,6 +149,7 @@ public struct SearchHomeView: View {
                     guard let kindergarten = model.results.first(where: { $0.kindercode == kindercode }) else {
                         return
                     }
+                    updateResultsDetent(.mid)
                     model.select(kindergarten: kindergarten)
                 }
                 .ignoresSafeArea()
@@ -147,13 +175,6 @@ public struct SearchHomeView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .background(
-                GeometryReader { proxy in
-                    mistWhite.ignoresSafeArea()
-                        .onAppear { screenHeight = proxy.size.height }
-                        .onChange(of: proxy.size.height) { _, h in screenHeight = h }
-                }
-            )
             .animation(.spring(duration: 0.3, bounce: 0.12), value: isSearchPanelPresented)
             .task {
                 model.refreshLocationPermissionState()
@@ -163,90 +184,28 @@ public struct SearchHomeView: View {
                 guard nextPhase == .active else { return }
                 model.refreshLocationPermissionState()
             }
-            .overlay(alignment: .bottom) {
-                if !isSearchPanelPresented {
-                    let minimumVisibleSheetHeight = max(screenHeight * sheetSnaps[0], minimumSheetHeight)
-                    let maximumVisibleSheetHeight = max(screenHeight * sheetSnaps[2], minimumVisibleSheetHeight)
-                    let sheetHeight = min(
-                        max(screenHeight * sheetFraction - dragOffset, minimumVisibleSheetHeight),
-                        maximumVisibleSheetHeight
-                    )
-
-                    VStack(spacing: 0) {
-                        // 드래그 핸들
-                        Capsule()
-                            .fill(slateSoft.opacity(0.35))
-                            .frame(width: 40, height: 5)
-                            .padding(.top, 10)
-                            .padding(.bottom, 8)
-                            .frame(maxWidth: .infinity)
-                            .layoutPriority(2)
-                            .contentShape(Rectangle())
-                            .gesture(
-                                DragGesture()
-                                    .onChanged { value in
-                                        dragOffset = value.translation.height
-                                    }
-                                    .onEnded { value in
-                                        let projected = sheetFraction - value.predictedEndTranslation.height / screenHeight
-                                        let clamped = min(max(projected, sheetSnaps[0]), sheetSnaps[2])
-                                        let nearest = sheetSnaps.min(by: { abs($0 - clamped) < abs($1 - clamped) }) ?? sheetFraction
-                                        dragOffset = 0
-                                        withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
-                                            sheetFraction = nearest
-                                        }
-                                    }
-                            )
-
-                        if !model.compareSelection.ids.isEmpty {
-                            CompareFloatingBar(
-                                count: model.compareSelection.ids.count,
-                                names: model.comparedKindergartenNames(),
-                                onNavigateToCompare: { model.selectedTab = .compare },
-                                onRemoveAt: { model.removeCompare(at: $0) }
-                            )
-                            .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
-                            .padding(.horizontal, 20)
-                            .padding(.bottom, bottomStackSpacing)
-                            .layoutPriority(1)
-                        }
-
-                        ResultSheet(
-                            model: model,
-                            summaryText: resultSummaryText,
-                            degradedMessage: resultDegradedMessage,
-                            trimmedSearchQuery: trimmedSearchQuery,
-                            adUnitID: model.configuration.adMobBannerUnitID
-                        )
-                        .layoutPriority(1)
-                    }
-                    .frame(height: sheetHeight)
-                    .background(
-                        RoundedRectangle(cornerRadius: 24, style: .continuous)
-                            .fill(paperWhite.opacity(0.97))
-                            .shadow(color: .black.opacity(0.08), radius: 12, y: -4)
-                    )
-                    .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
-                    .animation(.spring(duration: 0.3, bounce: 0.12), value: dragOffset)
-                    .transition(.move(edge: .bottom))
-                }
+            .onChange(of: isSearchPanelPresented) { _, presented in
+                guard !presented else { return }
+                updateResultsDetent(preferredResultsDetentAfterSuggestionDismiss())
             }
-            .sheet(item: sheetSelection) { kindergarten in
-                KindergartenDetailSheet(
-                    kindergarten: kindergarten,
-                    reviews: model.reviews(for: kindergarten.kindercode),
-                    reviewsVersion: model.reviewsData?.version,
-                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                    vacancyDatasetVersion: model.vacancyData?.version,
-                    isVacancyLoading: model.isVacancyLoading,
-                    vacancyError: model.vacancyError,
-                    isCompared: model.isCompared(kindergarten),
-                    isFavorite: model.isFavorite(kindergarten),
-                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+            .sheet(isPresented: resultsSheetBinding) {
+                SearchResultsSheetContainer(
+                    model: model,
+                    summaryText: resultSummaryText,
+                    trimmedSearchQuery: trimmedSearchQuery,
+                    adUnitID: model.configuration.adMobBannerUnitID
                 )
-                .presentationDetents([.medium, .large])
+                .presentationDetents(
+                    SearchResultsSheetPolicy.supportedDetents,
+                    selection: selectedResultsPresentationDetent
+                )
+                .presentationContentInteraction(.resizes)
+                .presentationBackgroundInteraction(
+                    .enabled(upThrough: SearchResultsSheetPolicy.presentationDetent(for: .mid))
+                )
                 .presentationDragIndicator(.visible)
+                .presentationCornerRadius(SearchResultsSheetPolicy.cornerRadius)
+                .interactiveDismissDisabled()
             }
         }
         .navigationTitle("탐색")
@@ -276,7 +235,6 @@ private struct SearchChrome: View {
             || !model.localSearchSuggestions.isEmpty
             || !model.remoteSearchSuggestions.isEmpty
             || model.isSearchSuggestionsLoading
-            || model.searchSuggestionMessage != nil
     }
 
     private var primarySuggestion: SearchSuggestion? {
@@ -394,7 +352,6 @@ private struct SearchChrome: View {
                             localSuggestions: model.localSearchSuggestions,
                             remoteSuggestions: model.remoteSearchSuggestions,
                             isLoading: model.isSearchSuggestionsLoading,
-                            message: model.searchSuggestionMessage,
                             onClearRecentSearches: model.clearRecentSearches
                         ) { suggestion in
                             model.selectSearchSuggestion(suggestion)
@@ -488,7 +445,6 @@ private struct SearchSuggestionPanel: View {
     let localSuggestions: [SearchSuggestion]
     let remoteSuggestions: [SearchSuggestion]
     let isLoading: Bool
-    let message: String?
     let onClearRecentSearches: () -> Void
     let onSelect: (SearchSuggestion) -> Void
 
@@ -497,7 +453,6 @@ private struct SearchSuggestionPanel: View {
             && localSuggestions.isEmpty
             && remoteSuggestions.isEmpty
             && !isLoading
-            && message == nil
     }
 
     var body: some View {
@@ -553,16 +508,6 @@ private struct SearchSuggestionPanel: View {
                         ProgressView()
                             .controlSize(.small)
                         Text("추천 결과를 찾는 중")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                    }
-                }
-
-                if let message {
-                    HStack(spacing: 8) {
-                        Image(systemName: "info.circle.fill")
-                            .foregroundStyle(sunYellow)
-                        Text(message)
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -669,10 +614,72 @@ private struct SearchSuggestionRow: View {
     }
 }
 
+private struct SearchResultsSheetContainer: View {
+    @ObservedObject var model: NativeAppModel
+    let summaryText: String
+    let trimmedSearchQuery: String
+    let adUnitID: String
+
+    private var topContentInset: CGFloat {
+        model.compareSelection.ids.isEmpty ? 18 : 10
+    }
+
+    private var detailSelection: Binding<Kindergarten?> {
+        Binding(
+            get: { model.selectedKindergarten },
+            set: { selection in
+                if selection == nil {
+                    model.dismissDetail()
+                }
+            }
+        )
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            if !model.compareSelection.ids.isEmpty {
+                CompareFloatingBar(
+                    count: model.compareSelection.ids.count,
+                    names: model.comparedKindergartenNames(),
+                    onNavigateToCompare: { model.selectedTab = .compare },
+                    onRemoveAt: { model.removeCompare(at: $0) }
+                )
+                .padding(.horizontal, 20)
+                .padding(.top, 12)
+                .padding(.bottom, 8)
+            }
+
+            ResultSheet(
+                model: model,
+                summaryText: summaryText,
+                trimmedSearchQuery: trimmedSearchQuery,
+                adUnitID: adUnitID
+            )
+        }
+        .sheet(item: detailSelection) { kindergarten in
+            KindergartenDetailSheet(
+                kindergarten: kindergarten,
+                reviews: model.reviews(for: kindergarten.kindercode),
+                reviewsVersion: model.reviewsData?.version,
+                vacancySummary: model.vacancy(for: kindergarten.kindercode),
+                vacancyDatasetVersion: model.vacancyData?.version,
+                isVacancyLoading: model.isVacancyLoading,
+                vacancyError: model.vacancyError,
+                isCompared: model.isCompared(kindergarten),
+                isFavorite: model.isFavorite(kindergarten),
+                onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+            )
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+        }
+        .padding(.top, topContentInset)
+    }
+}
+
 private struct ResultSheet: View {
     @ObservedObject var model: NativeAppModel
     let summaryText: String
-    let degradedMessage: String?
     let trimmedSearchQuery: String
     let adUnitID: String
 
@@ -787,11 +794,6 @@ private struct ResultSheet: View {
             }
             .fixedSize(horizontal: false, vertical: true)
             .layoutPriority(2)
-
-            if let degradedMessage {
-                InlineNotice(message: degradedMessage)
-                    .layoutPriority(1)
-            }
 
             if results.isEmpty {
                 emptyContent
