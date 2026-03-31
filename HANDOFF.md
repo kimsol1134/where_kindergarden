@@ -1,129 +1,102 @@
 # HANDOFF.md
 
 ## 마지막 작업 일시
-2026-03-19
+2026-03-31
 
 ## 완료된 작업
-- [x] 네이티브 검색 홈 safe area / sheet 레이아웃 정리로 상하단 검은 여백 제거
-- [x] 네이티브 검색/비교/보관함 카피를 웹앱 기준 부모님 친화 문구로 정리
-- [x] 네이티브 앱에 `vacancy.json` 번들/로더/상세 빈 자리 UI 연결
-- [x] `project.yml`에 `vacancy.json` 리소스 추가 후 `xcodegen generate` 재동기화
-- [x] iOS Simulator에서 위치 권한 prompt, 위치 기반 결과, deep link 이름 검색, 빈 자리 상세 패널 재검증
-- [x] PR #26 머지 후 QA에서 발견된 UX/UI 10건 수정 (z-index, 터치타겟, 스크롤 복원, a11y, 상수 통합, 토스트 상수화, active 피드백)
-- [x] 앱 아이콘 기준 브랜드 토큰 정의 및 웹 shell 리브랜딩 반영
-- [x] 후기 검증 증분 파이프라인 및 CI 자동화 추가
-- [x] 공식 결원정보 타입/스토어/파서/동기화 스크립트 추가
-- [x] 검색 카드에 `공식 결원 N명` 배지 노출
-- [x] 상세 패널에 공식 결원정보 3상태 UI 추가
-- [x] 전국 실데이터 `public/data/vacancy.json` 생성 완료
-- [x] 웹 앱 기준 `pnpm test`, `pnpm type-check`, `pnpm build` 통과
-- [x] `ios/NativeApp` Swift package 스캐폴드 및 별도 SwiftUI iPhone 앱 프로젝트 `ios/WhereKindergartenNative` 생성
-- [x] `public/data/kindergartens.json` 번들 로딩 연결
-- [x] 리뷰 원격 우선(`https://where-kindergarden.vercel.app/data/reviews.json`) + 로컬 fallback 연결
-- [x] 찜 / 최근 검색 / 비교 선택 UserDefaults 영속 저장 및 복원 연결
-- [x] compare custom URL scheme / universal link 라우팅 연결
-- [x] Kakao Maps `UIViewRepresentable` 브리지 추가
-- [x] Kakao Local REST 기반 네이티브 주소/장소 검색 서비스 추가
-- [x] `KAKAO_REST_API_KEY` 런타임 설정 경로 추가 (`Info.plist` / `project.yml`)
-- [x] 네이티브 검색 입력을 디바운스 + 로컬 기관 매치 + 원격 주소/장소 제안 + 최근 검색 섹션으로 확장
-- [x] 최근 검색 전체 삭제 / 목록 삭제 UX 추가 및 관련 Swift 테스트 보강
-- [x] `xcodegen generate` 기준으로 `project.yml`와 실제 `.xcodeproj` 재동기화
-- [x] 네이티브 앱 `Info.plist`에 필수 bundle metadata를 보강해 실제 시뮬레이터 설치 가능 상태로 수정
-- [x] 실데이터의 누락된 면적 필드를 0으로 fallback 하도록 `KindergartenRaw` 디코딩 보강
-- [x] 누락 필드 디코딩 regression test 추가
-- [x] no-key degraded path를 실제 iOS Simulator에서 재검증
-- [x] 검색 중 suggestion panel / 결과 시트 / 필터가 동시에 겹치던 레이아웃을 정리하고 no-key map placeholder를 카드형으로 축소
+- [x] 탐색 페이지 UX 대규모 개선 (커밋 76ba9d0)
+  - SearchChrome 압축: eyebrow/타이틀/서브타이틀 제거, 검색바+📍버튼 1줄로
+  - 국공립/사립/가정 유형 필터 1depth FilterChip 노출
+  - "추천" 오해 유발 라벨 → "XX 근처 N곳" 정확한 표현
+  - NativeScreenHeader VStack 레이아웃 (타이틀 잘림 수정)
+  - 라이트모드 고정 (.preferredColorScheme(.light))
+- [x] 커스텀 overlay + DragGesture 바텀시트 (커밋 4873eca)
+  - safeAreaInset(고정) 대신 overlay + DragGesture로 3단계 snap (32%→55%→88%)
+  - 탭바 유지 + 지도 인터랙션 유지
 
-## 현재 상황 요약
+## 미해결 버그 2개 (이어서 작업 필요)
 
-### 웹 / 결원정보 상태
-- 공식 결원정보는 `public/data/vacancy.json`을 기준으로 서비스되고 있음
-- 검색 리스트와 상세 패널 모두 공식 결원정보를 읽도록 연결됨
-- 현재 `origin/main`에는 결원정보 파이프라인과 native follow-up이 함께 병합된 상태임
+---
 
-### 네이티브 앱 상태
-- `ios/WhereKindergartenNative/project.yml`이 source of truth이며 `xcodegen generate` 결과 드리프트 없음
-- 앱 타깃은 `ios/NativeApp` 패키지의 `Models / Services / Features / AppShell` 레이어를 그대로 사용함
-- `FavoriteItem`, `RecentSearch`, `CompareSelection` 영속 저장 / 복원 흐름 유지
-- compare custom URL scheme / universal link restore regression 징후 없음
+### 버그 1 (Critical): 📍 버튼 탭 시 "'현재 위치' 결과가 없어요" 표시
 
-### 이번 native follow-up에서 해결한 런타임 이슈
-- 빌드는 되지만 simulator install이 실패하던 `.app` bundle metadata 누락 문제 해결
-- 실제 `kindergartens.json` 일부 레코드의 면적 필드 누락 때문에 전체 카탈로그 디코딩이 깨지던 문제 해결
-- 검색 중 suggestion panel, filter chip, result sheet, placeholder가 한 화면에서 과도하게 겹치던 문제를 완화
-- search home이 content intrinsic size에 맞춰 축소되며 생기던 상하단 검은 영역 제거
-- Kakao 지도 실패 placeholder를 compact card로 축소하고 raw technical error 노출을 줄임
-- 상세 패널에 `현재 원아수`, `모집 현황`, `빈 자리 정보`를 포함한 부모님 친화 레이아웃 반영
+**증상**: 📍 버튼을 누르면 검색바에 "현재 위치" 텍스트가 들어가고, 반경 5km까지 확대해도 "'현재 위치' 결과가 없어요"가 표시됨. 검색창에서 "현재 위치"를 다시 선택하면 정상 작동.
 
-### Kakao 런타임 키 상태
-- 이 환경에는 git-ignore된 `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`가 없었음
-- 따라서 검증 빌드의 `KAKAO_NATIVE_APP_KEY`, `KAKAO_REST_API_KEY`는 둘 다 빈 문자열로 해석됨
-- empty-key degraded fallback은 유지됨
-  - 지도는 placeholder/runtime message로 안전하게 내려감
-  - Kakao REST 제안은 비활성화 메시지를 노출하고 로컬 유치원 제안은 계속 동작함
+**근본 원인**: `resultQuery`가 아닌 `searchText`가 문제.
 
-## 실제로 검증한 것
+`centerOnCurrentLocation()` (NativeAppModel.swift:487)에서:
+```swift
+setSearchText("현재 위치", refreshSuggestions: false, applyAsResultQuery: false)
+setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
+```
 
-### 웹
-- `pnpm test`
-- `pnpm type-check`
-- `pnpm build`
+`setSearchText(applyAsResultQuery: false)`는 `resultQuery = ""`로 설정하므로 `search(query:)`에서는 텍스트 필터링 안 함 → **여기까지는 정상**.
 
-### 네이티브 프로젝트 생성 / 빌드
-- `xcodegen generate` 통과
-- `env HOME=/tmp/where_kindergarden-native-followup-home CLANG_MODULE_CACHE_PATH=/tmp/where_kindergarden-native-followup-clang-modules swift test` 통과
-- `xcodebuild -project ios/WhereKindergartenNative/WhereKindergartenNative.xcodeproj -scheme WhereKindergartenNative -destination 'generic/platform=iOS Simulator' -derivedDataPath /tmp/where_kindergarden-native-followup-deriveddata CODE_SIGNING_ALLOWED=NO build` 통과
-- built app bundle에 `kindergartens.json`, `reviews.json` 포함 확인
-- built `Info.plist`에서 `CFBundleIdentifier = com.solkim.wherekindergarten.native`, `CFBundleExecutable = WhereKindergartenNative` 확인
-- built `Info.plist`에서 `KAKAO_NATIVE_APP_KEY`, `KAKAO_REST_API_KEY` 모두 빈 값으로 해석되는 것 확인
+**하지만** `ResultSheet`의 empty state 분기에서 `trimmedSearchQuery`를 체크:
+```swift
+// SearchFeature.swift의 SearchHomeView
+private var trimmedSearchQuery: String {
+    model.searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+}
 
-### 실제 iOS Simulator 런타임
-- `iPhone 17 Pro` simulator에 앱 설치 성공
-- 앱 실행 성공
-- no-key 상태에서 `Kakao Maps 설정 필요` placeholder와 관련 runtime message 노출 확인
-- 기본 위치(`서울 시청`) 기준으로 카탈로그가 로드되어 탐색 결과가 실제로 렌더링되는 것 확인
-- `wherekindergarten://search?q=역삼` deep link로 검색 텍스트를 주입했을 때 로컬 유치원 제안 2건이 실제로 표시되는 것 확인
-- same runtime state에서 `KAKAO_REST_API_KEY가 없어 주소와 장소 제안은 비활성화되었습니다...` degraded message 노출 확인
-- 검색 중에는 suggestion panel에 집중되도록 result sheet / compare bar / filter chip 노출이 줄어든 것 확인
-- `QA Test` (`20F6282B-9AB7-42C3-8C00-8065EB76C926`) simulator에서 위치 권한 prompt(`한 번 허용` / `앱을 사용하는 동안 허용` / `허용 안 함`) 실제 노출 확인
-- 위치 권한 허용 후 현재 위치(역삼 좌표) 기준 `4곳 유치원 · 반경 1km · 거리순` 결과 렌더링 확인
-- 홈 화면 placeholder/summary가 `유치원, 주소 검색`, `주변 유치원`, `N곳 유치원` 카피로 반영된 것 확인
-- `wherekindergarten://search?q=역삼` deep link로 이름 검색 시 상세 패널이 열리고 `빈 자리 정보`, `현재 원아수`, `모집 현황` 카드가 렌더링되는 것 확인
-- built app bundle에 `kindergartens.json`, `reviews.json`, `vacancy.json` 3종 리소스 포함 확인
+// ResultSheet empty state (line ~703)
+} else if results.isEmpty && !trimmedSearchQuery.isEmpty {
+    EmptyStateView(title: "'\(trimmedSearchQuery)' 결과가 없어요", ...)
+```
 
-## 이번 환경에서 막힌 것
-- 실제 Kakao 지도 렌더 성공 여부 (현재 runtime은 `401 Unauthorized`로 compact fallback card 경로만 확인)
-- 실제 검색 입력 필드에 한글을 직접 붙여넣어 suggestion panel autocomplete를 조작하는 simulator automation은 불안정해서 deep link + unit test로 보완
-- non-empty `KAKAO_NATIVE_APP_KEY`, `KAKAO_REST_API_KEY`가 `Info.plist`에 주입된 빌드 검증
-- 실기기에서 위치 권한, universal link association, cold start deep link restore 검증
-- production 배포 완료 여부와 최신 `/data/vacancy.json` 노출 상태는 별도 확인 필요
+`searchText`가 "현재 위치"이므로 `trimmedSearchQuery`는 "현재 위치" → **텍스트 검색 실패 empty state가 표시됨**. 실제로는 위치 검색 empty state("이 근처에서는 찾지 못했어요 / 범위 넓히기")가 표시되어야 함.
 
-## 남은 리스크 / 다음 단계
-1. Kakao native app key / REST key의 운영값이 올바른지 확인하고 지도 401 없이 실제 렌더되는지 재검증
-2. 실제 타이핑 기반 한글 자동완성(UI suggestion panel)이 simulator 또는 실기기에서 의도대로 동작하는지 smoke test
-3. production에서 `/data/vacancy.json`과 네이티브 상세 `빈 자리 정보` UI가 최신 상태로 노출되는지 확인
-4. 필요하면 운영 루틴에 `pnpm sync:vacancy -- --year 2026` 추가
-5. 실기기에서 위치 권한 허용/거부, custom scheme, universal link, cold start restore를 확인
+또한 `searchText`가 "현재 위치"이므로 사용자가 "검색어가 있는 상태"로 인식됨 → 결과가 있어도 `filter(query: resultQuery)`에서 빈 문자열이지만, 다른 분기 조건에 영향.
 
-## 주의사항 / 알려진 이슈
-- 공식 결원정보는 `kindercode === ittId` 조인 전제
-- live 사이트는 Node/undici 기준 `UNABLE_TO_VERIFY_LEAF_SIGNATURE`가 나서 sync 스크립트 프로세스 안에서만 TLS 검증 완화 적용
-- live 사이트는 브라우저 세션 쿠키 없이 직접 POST하면 `Request Blocked`를 반환하므로 스크립트가 초기 GET 세션을 먼저 생성함
-- 기존 `여유정원` 필터는 휴리스틱(`capacity > currentCount`)으로 유지되며 공식 결원 필터는 아직 없음
-- Kakao SPM 의존성은 현재 공식 저장소 `master` 브랜치를 참조함
+**수정 방법** (2가지 중 택 1):
 
-## 주요 파일
-- `ios/NativeApp/Sources/Models/VacancyModels.swift`
-- `ios/NativeApp/Sources/Services/VacancyService.swift`
-- `scripts/sync-vacancy.ts`
-- `public/data/vacancy.json`
-- `src/lib/vacancy/parser.ts`
-- `src/stores/vacancyStore.ts`
-- `ios/NativeApp/Config/NativeAppInfo.plist`
-- `ios/NativeApp/Sources/Models/KindergartenModels.swift`
-- `ios/NativeApp/Sources/Features/Search/SearchFeature.swift`
-- `ios/NativeApp/Sources/Features/Search/KakaoMapBridge.swift`
-- `ios/WhereKindergartenNative/project.yml`
+**방법 A (권장)**: `centerOnCurrentLocation()`에서 `searchText`를 빈 문자열로 설정
+```swift
+// NativeAppModel.swift centerOnCurrentLocation() 수정
+setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
+setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
+```
+- 검색바는 비어있고 placeholder "유치원 이름, 동네, 장소로 검색" 표시
+- `locationLabel`은 "현재 위치"로 유지 → ResultSheet에서 "현재 위치 근처 N곳" 표시
+- `trimmedSearchQuery`가 빈 문자열 → 올바른 empty state 분기 진입
+
+**방법 B**: ResultSheet empty state 분기에서 현재 위치 검색 중일 때 예외 처리
+```swift
+} else if results.isEmpty && !trimmedSearchQuery.isEmpty && model.currentDeviceLocation == nil {
+    // 텍스트 검색 실패 (위치 검색이 아닌 경우에만)
+    EmptyStateView(title: "'\(trimmedSearchQuery)' 결과가 없어요", ...)
+}
+```
+
+**관련 파일**:
+- `ios/NativeApp/Sources/Features/Shared/NativeAppModel.swift` line 487-515
+- `ios/NativeApp/Sources/Features/Search/SearchFeature.swift` line 47-49 (`trimmedSearchQuery`), line ~703 (empty state)
+
+---
+
+### 버그 2: 바텀시트 최소 높이에서 텍스트 잘림 + 드래그 핸들 안 보임
+
+**증상**: 시트를 최소(32%)로 내리면 "검색 결과" 타이틀 상단이 잘리고, 위로 올리기 위한 드래그 핸들(회색 Capsule 바)이 보이지 않음.
+
+**원인**: overlay의 `frame(height: sheetHeight)` + `.clipShape(RoundedRectangle)`에서 내부 콘텐츠의 최소 높이가 보장되지 않음. 드래그 핸들(Capsule) + 패딩이 ~23pt인데, 시트 전체 높이가 충분하지 않으면 VStack 내용이 clipShape에 의해 잘림.
+
+**수정 방법**:
+1. `sheetSnaps` 첫 번째 값을 0.32에서 0.35~0.38로 올리거나
+2. `sheetHeight` 계산 시 하한선 추가: `max(screenHeight * fraction, 200)`
+3. VStack 내부에서 드래그 핸들과 헤더에 `.layoutPriority(1)` 적용하여 잘리지 않도록
+
+**관련 파일**:
+- `ios/NativeApp/Sources/Features/Search/SearchFeature.swift` — overlay 블록의 `sheetSnaps` 배열, `sheetHeight` let 계산, Capsule 드래그 핸들
+
+---
 
 ## 현재 브랜치
-- `main`
+main
+
+## 참고 파일
+- `CLAUDE.md` — 개발 가이드
+- `ios/NativeApp/Sources/Features/Search/SearchFeature.swift` — 탐색 페이지 전체 (SearchHomeView, SearchChrome, ResultSheet)
+- `ios/NativeApp/Sources/Features/Shared/NativeAppModel.swift` — 모델 (위치/검색/필터 로직)
+- `ios/NativeApp/Sources/Services/SearchServices.swift` — 검색 엔진 (거리 계산, 필터링)
+- `ios/NativeApp/Sources/Models/KindergartenModels.swift` — SearchFilters, InstitutionFilter, SortOption
+- `ios/NativeApp/Sources/Features/Shared/NativeTheme.swift` — NativeScreenHeader, NativeBadge 등 디자인 시스템
