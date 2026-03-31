@@ -135,8 +135,6 @@ struct KindergartenFitReason: Identifiable, Hashable {
     let title: String
     let tone: NativeBadge.Tone
     let priority: Int
-    let continuationText: String
-    let terminalText: String
 
     var id: String { title }
 }
@@ -159,9 +157,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "정원여유",
                     tone: .sun,
-                    priority: boosted(76, when: filters.hasVacancy == true),
-                    continuationText: "정원 여유가 있고",
-                    terminalText: "정원 여유가 있어요"
+                    priority: boosted(76, when: filters.hasVacancy == true)
                 )
             )
         }
@@ -171,9 +167,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "셔틀",
                     tone: .jade,
-                    priority: boosted(80, when: filters.hasBus == true),
-                    continuationText: "셔틀이 있고",
-                    terminalText: "셔틀을 운영해요"
+                    priority: boosted(80, when: filters.hasBus == true)
                 )
             )
         }
@@ -183,9 +177,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "방과후",
                     tone: .slate,
-                    priority: boosted(82, when: filters.hasAfterSchool == true),
-                    continuationText: "방과후를 운영하고",
-                    terminalText: "방과후를 운영해요"
+                    priority: boosted(82, when: filters.hasAfterSchool == true)
                 )
             )
         }
@@ -195,9 +187,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "넓은공간",
                     tone: .sun,
-                    priority: boosted(74, when: filters.hasLargeSpace == true),
-                    continuationText: "공간이 넉넉하고",
-                    terminalText: "공간이 넉넉해요"
+                    priority: boosted(74, when: filters.hasLargeSpace == true)
                 )
             )
         }
@@ -207,9 +197,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "후기 있음",
                     tone: .sand,
-                    priority: 72,
-                    continuationText: "후기 신호가 있고",
-                    terminalText: "후기 신호가 있어요"
+                    priority: 72
                 )
             )
         }
@@ -219,9 +207,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "거리 가까움",
                     tone: .slate,
-                    priority: 64,
-                    continuationText: "가까운 편이고",
-                    terminalText: "가까운 편이에요"
+                    priority: 64
                 )
             )
         }
@@ -232,9 +218,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "국공립",
                     tone: .jade,
-                    priority: boosted(58, when: filters.type == .public),
-                    continuationText: "국공립이고",
-                    terminalText: "국공립이에요"
+                    priority: boosted(58, when: filters.type == .public)
                 )
             )
         case .private:
@@ -242,9 +226,7 @@ enum KindergartenFitSummaryBuilder {
                 KindergartenFitReason(
                     title: "사립",
                     tone: .sand,
-                    priority: boosted(58, when: filters.type == .private),
-                    continuationText: "사립이고",
-                    terminalText: "사립이에요"
+                    priority: boosted(58, when: filters.type == .private)
                 )
             )
         case .home:
@@ -260,23 +242,5 @@ enum KindergartenFitSummaryBuilder {
             }
             .prefix(3)
             .map { $0 }
-    }
-
-    static func summary(for reasons: [KindergartenFitReason]) -> String? {
-        let topReasons = Array(reasons.prefix(2))
-
-        guard let first = topReasons.first else {
-            return nil
-        }
-
-        if topReasons.count == 1 {
-            return first.terminalText
-        }
-
-        if let second = topReasons.last {
-            return "\(first.continuationText) \(second.terminalText)"
-        }
-
-        return first.terminalText
     }
 }

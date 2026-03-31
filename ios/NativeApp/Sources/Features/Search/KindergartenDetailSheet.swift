@@ -14,7 +14,6 @@ struct KindergartenDetailSheet: View {
     let isCompared: Bool
     let isFavorite: Bool
     let fitReasons: [KindergartenFitReason]
-    let fitSummary: String?
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
 
@@ -266,13 +265,6 @@ struct KindergartenDetailSheet: View {
                     .font(.subheadline)
                     .foregroundStyle(slateBlue)
                     .lineLimit(1)
-
-                if let fitSummary {
-                    Text(fitSummary)
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(inkBlack.opacity(0.84))
-                        .fixedSize(horizontal: false, vertical: true)
-                }
             }
 
             if !fitReasons.isEmpty {
