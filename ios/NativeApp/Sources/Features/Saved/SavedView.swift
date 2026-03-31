@@ -377,7 +377,7 @@ private func recentSearchIcon(for searchType: SearchType?) -> String {
     case .currentLocation: return "location.fill"
     case .address: return "mappin.and.ellipse"
     case .place: return "sparkle.magnifyingglass"
-    case .kindergarten: return "building.2.fill"
+    case .kindergarten: return "backpack.fill"
     case nil: return "clock.arrow.circlepath"
     }
 }

@@ -46,6 +46,15 @@ struct NativeBottomSheet<Content: View>: UIViewControllerRepresentable {
     }
 }
 
+// MARK: - Passthrough View
+
+private final class PassthroughView: UIView {
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hit = super.hitTest(point, with: event)
+        return hit === self ? nil : hit
+    }
+}
+
 // MARK: - UIKit Controller
 
 final class NativeBottomSheetController<Content: View>: UIViewController, UIGestureRecognizerDelegate {
@@ -84,6 +93,10 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
     required init?(coder: NSCoder) { fatalError() }
 
     // MARK: Lifecycle
+
+    override func loadView() {
+        view = PassthroughView()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -174,7 +187,7 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
             hosting.view.topAnchor.constraint(equalTo: grabberView.bottomAnchor, constant: 8),
             hosting.view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             hosting.view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            hosting.view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+            hosting.view.bottomAnchor.constraint(equalTo: containerView.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 
