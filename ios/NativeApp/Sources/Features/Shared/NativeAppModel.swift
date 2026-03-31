@@ -488,13 +488,26 @@ public final class NativeAppModel: ObservableObject {
         dismissFirstLaunchIfNeeded()
         refreshLocationPermissionState()
 
+        if allKindergartens.isEmpty {
+            await loadCatalog()
+        }
+
         do {
             let coordinates = try await locationProvider.requestCurrentLocation()
             currentDeviceLocation = coordinates
             locationPermissionState = .granted
             locationError = nil
             shouldFocusSearchField = false
+            setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
             setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
+
+            if results.isEmpty && filters.radiusKM < 5 {
+                let expandedRadii: [Double] = [2, 5]
+                for radius in expandedRadii where radius > filters.radiusKM {
+                    filters.radiusKM = radius
+                    if !results.isEmpty { break }
+                }
+            }
         } catch {
             locationPermissionState = resolvedPermissionState(for: error)
             locationError = error.localizedDescription

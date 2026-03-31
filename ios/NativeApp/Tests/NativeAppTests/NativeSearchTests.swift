@@ -159,6 +159,9 @@ final class NativeSearchTests: XCTestCase {
         )
 
         await model.centerOnCurrentLocation()
+
+        XCTAssertEqual(model.searchText, "")
+        XCTAssertEqual(model.locationLabel, "현재 위치")
         model.selectSearchSuggestion(suggestion)
 
         XCTAssertEqual(model.currentDeviceLocation, currentLocation)
