@@ -6,10 +6,12 @@ import { BrandMark } from '@/components/common/BrandMark';
 export function Hero() {
   return (
     <section className="relative safe-pt-hero overflow-hidden pb-20 lg:pb-32">
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,216,106,0.28),transparent_28%),radial-gradient(circle_at_80%_15%,rgba(78,169,109,0.16),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.82),rgba(246,245,239,0.74))]" />
-        <div className="absolute left-[-4rem] top-24 h-72 w-72 rounded-full bg-[rgba(244,216,106,0.24)] blur-3xl" />
-        <div className="absolute right-[-3rem] top-16 h-80 w-80 rounded-full bg-[rgba(78,169,109,0.18)] blur-3xl" />
+      {/* 수채화 워시 배경 */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute right-[-3.5rem] top-[-2.5rem] h-[220px] w-[280px] rounded-[40%_60%_55%_45%/55%_40%_60%_45%] bg-[radial-gradient(ellipse_at_30%_40%,rgba(78,169,109,0.18),rgba(78,169,109,0.06)_60%,transparent_80%)] blur-[40px]" />
+        <div className="absolute left-[-3rem] top-[180px] h-[200px] w-[240px] rounded-[55%_45%_50%_50%/45%_55%_45%_55%] bg-[radial-gradient(ellipse_at_60%_50%,rgba(244,216,106,0.22),rgba(244,216,106,0.08)_55%,transparent_80%)] blur-[40px]" />
+        <div className="absolute bottom-[80px] right-[-1.5rem] h-[260px] w-[200px] rounded-[50%_50%_40%_60%/60%_40%_55%_45%] bg-[radial-gradient(ellipse_at_40%_60%,rgba(78,169,109,0.12),rgba(45,90,61,0.04)_50%,transparent_75%)] blur-[40px]" />
+        <div className="absolute right-5 top-[60px] h-[140px] w-[160px] rounded-[50%_50%_45%_55%/55%_45%_50%_50%] bg-[rgba(78,169,109,0.08)] blur-[60px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -71,8 +73,8 @@ export function Hero() {
 
           <div className="relative animate-fade-up delay-200">
             <div className="brand-shell relative overflow-hidden rounded-[2.25rem] p-5 sm:p-7">
-              <div className="absolute left-[-3rem] top-[-2.5rem] h-44 w-44 rounded-full bg-[rgba(244,216,106,0.24)] blur-3xl" />
-              <div className="absolute bottom-[-4rem] right-[-3rem] h-52 w-52 rounded-full bg-[rgba(78,169,109,0.22)] blur-3xl" />
+              <div className="absolute left-[-2rem] top-[-2rem] h-[160px] w-[180px] rounded-[55%_45%_50%_50%/45%_55%_45%_55%] bg-[radial-gradient(ellipse_at_60%_50%,rgba(244,216,106,0.20),rgba(244,216,106,0.06)_55%,transparent_80%)] blur-[35px]" />
+              <div className="absolute bottom-[-3rem] right-[-2rem] h-[180px] w-[200px] rounded-[50%_50%_40%_60%/60%_40%_55%_45%] bg-[radial-gradient(ellipse_at_40%_60%,rgba(78,169,109,0.16),rgba(78,169,109,0.04)_50%,transparent_75%)] blur-[35px]" />
               <div className="relative space-y-5">
                 <div className="flex items-center justify-between rounded-[1.6rem] bg-white/72 px-5 py-4">
                   <div className="space-y-1">
@@ -114,7 +116,7 @@ export function Hero() {
                   <div className="flex flex-col gap-4">
                     <div className="brand-card rounded-[2rem] p-5">
                       <Image
-                        src="/app-icon-preview.png"
+                        src="/icon.png"
                         alt="우리동네 유치원 앱 아이콘"
                         width={180}
                         height={180}

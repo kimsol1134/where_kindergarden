@@ -24,7 +24,7 @@ export function BrandMark({
         )}
       >
         <Image
-          src="/app-icon-preview.png"
+          src="/icon.png"
           alt="우리동네 유치원 아이콘"
           fill
           sizes={compact ? '40px' : '48px'}

@@ -14,7 +14,7 @@
 
 ## Usage Rules
 - Use the app icon as the default mark in headers, footers, splash, manifest, and structured data.
-- Reserve the legacy `logo.png` house-heart illustration for optional editorial use only.
+- The legacy `logo.png` house-heart illustration has been removed from the project.
 - Search surfaces should look like frosted tools placed on a calm canvas, not generic flat admin panels.
 - Comparison states should emphasize clarity first: warm neutrals for scaffolding, leaf green only for intentional highlights.
 - Motion should be slow and buoyant. Prefer fades, drift, and soft scale shifts over sharp snaps.

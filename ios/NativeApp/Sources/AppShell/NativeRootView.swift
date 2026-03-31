@@ -4,6 +4,7 @@ import SwiftUI
 
 public struct NativeRootView: View {
     @StateObject private var model: NativeAppModel
+    @State private var showSplash = true
 
     public init(model: NativeAppModel) {
         _model = StateObject(wrappedValue: model)
@@ -67,6 +68,12 @@ public struct NativeRootView: View {
         }
         .tint(leafGreen)
         .preferredColorScheme(.light)
+        .overlay {
+            if showSplash {
+                SplashView { showSplash = false }
+                    .transition(.opacity)
+            }
+        }
     }
 
     private func initializeServices() async {

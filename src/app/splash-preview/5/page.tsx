@@ -34,7 +34,7 @@ export default function Splash5() {
         }`}
       >
         <Image 
-          src="/app-icon-preview.png" 
+          src="/icon.png" 
           alt="App Icon" 
           width={120} 
           height={120}

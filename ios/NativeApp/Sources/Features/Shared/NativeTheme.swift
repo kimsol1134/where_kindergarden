@@ -11,28 +11,76 @@ public struct NativeScreenBackground: View {
     }
 
     public var body: some View {
+        let base = Color(red: 0.98, green: 0.992, blue: 0.973)
+
         ZStack {
-            LinearGradient(
-                colors: [cloudWhite, mistWhite, paperWhite],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
+            base
 
-            Circle()
-                .fill(jadeGreen.opacity(topTintOpacity))
-                .frame(width: 320, height: 320)
-                .offset(x: 134, y: -188)
+            // Watercolor wash stains — organic shapes with radial gradients
+            Ellipse()
+                .fill(
+                    RadialGradient(
+                        colors: [jadeGreen.opacity(topTintOpacity), jadeGreen.opacity(0.06), .clear],
+                        center: UnitPoint(x: 0.3, y: 0.4),
+                        startRadius: 0,
+                        endRadius: 140
+                    )
+                )
+                .frame(width: 280, height: 220)
+                .offset(x: 100, y: -280)
+                .blur(radius: 40)
 
-            Circle()
-                .fill(sunYellow.opacity(0.16))
-                .frame(width: 240, height: 240)
-                .offset(x: -166, y: 214)
+            Ellipse()
+                .fill(
+                    RadialGradient(
+                        colors: [sunYellow.opacity(0.22), sunYellow.opacity(0.08), .clear],
+                        center: UnitPoint(x: 0.6, y: 0.5),
+                        startRadius: 0,
+                        endRadius: 120
+                    )
+                )
+                .frame(width: 240, height: 200)
+                .offset(x: -120, y: -40)
+                .blur(radius: 40)
 
-            RoundedRectangle(cornerRadius: 999, style: .continuous)
-                .fill(slateBlue.opacity(0.06))
-                .frame(width: 340, height: 18)
-                .rotationEffect(.degrees(-11))
-                .offset(x: 52, y: 316)
+            Ellipse()
+                .fill(
+                    RadialGradient(
+                        colors: [jadeGreen.opacity(0.12), jadeGreen.opacity(0.04), .clear],
+                        center: UnitPoint(x: 0.4, y: 0.6),
+                        startRadius: 0,
+                        endRadius: 130
+                    )
+                )
+                .frame(width: 200, height: 260)
+                .offset(x: 80, y: 200)
+                .blur(radius: 40)
+
+            Ellipse()
+                .fill(
+                    RadialGradient(
+                        colors: [sunYellow.opacity(0.14), sunYellow.opacity(0.04), .clear],
+                        center: UnitPoint(x: 0.5, y: 0.3),
+                        startRadius: 0,
+                        endRadius: 160
+                    )
+                )
+                .frame(width: 320, height: 180)
+                .offset(x: -60, y: 300)
+                .blur(radius: 40)
+
+            // Bleed layers — softer, deeper blur
+            Ellipse()
+                .fill(jadeGreen.opacity(0.08))
+                .frame(width: 160, height: 140)
+                .offset(x: 60, y: -180)
+                .blur(radius: 60)
+
+            Ellipse()
+                .fill(sunYellow.opacity(0.10))
+                .frame(width: 180, height: 120)
+                .offset(x: -40, y: 80)
+                .blur(radius: 60)
         }
         .ignoresSafeArea()
     }
