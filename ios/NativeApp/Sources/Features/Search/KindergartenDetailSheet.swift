@@ -85,8 +85,8 @@ struct KindergartenDetailSheet: View {
             return "없음"
         }
 
-        let indoor = kindergarten.indoorPlaygroundArea > 0 ? "실내 \(Int(kindergarten.indoorPlaygroundArea))m2" : nil
-        let outdoor = kindergarten.outdoorPlaygroundArea > 0 ? "실외 \(Int(kindergarten.outdoorPlaygroundArea))m2" : nil
+        let indoor = kindergarten.indoorPlaygroundArea > 0 ? "실내 \(Int(kindergarten.indoorPlaygroundArea))m²" : nil
+        let outdoor = kindergarten.outdoorPlaygroundArea > 0 ? "실외 \(Int(kindergarten.outdoorPlaygroundArea))m²" : nil
         let details = [indoor, outdoor].compactMap { $0 }
         return details.isEmpty ? "있음" : details.joined(separator: " · ")
     }
@@ -275,7 +275,7 @@ struct KindergartenDetailSheet: View {
                 )
                 NativeMetricTile(
                     label: "1인당 면적",
-                    value: String(format: "%.1fm2", kindergarten.areaPerChild),
+                    value: String(format: "%.1fm²", kindergarten.areaPerChild),
                     accent: kindergarten.areaPerChild >= 5 ? jadeGreen : amberOrange
                 )
                 NativeMetricTile(
@@ -329,17 +329,18 @@ struct KindergartenDetailSheet: View {
             VStack(alignment: .leading, spacing: 10) {
                 if isVacancyLoading {
                     ForEach(0..<3, id: \.self) { _ in
-                        HStack(spacing: 12) {
-                            Text("만0세")
+                        HStack(spacing: 10) {
+                            Text("3세")
                                 .font(.subheadline)
                                 .foregroundStyle(slateBlue)
-                                .frame(width: 48, alignment: .leading)
+                                .frame(width: 36, alignment: .leading)
                             RoundedRectangle(cornerRadius: 4, style: .continuous)
                                 .fill(slateSoft.opacity(0.15))
                                 .frame(height: 8)
                             Text("0명 여유")
                                 .font(.caption.weight(.semibold))
                                 .foregroundStyle(slateSoft)
+                                .frame(width: 64, alignment: .trailing)
                         }
                         .redacted(reason: .placeholder)
                     }
@@ -488,13 +489,21 @@ struct KindergartenDetailSheet: View {
                 .font(.caption2)
                 .foregroundStyle(slateSoft)
             if let version = vacancyDatasetVersion {
-                Text("빈자리 정보: \(version)")
+                Text("빈자리 정보: \(formatDatePrefix(version))")
                     .font(.caption2)
                     .foregroundStyle(slateSoft)
             }
         }
         .frame(maxWidth: .infinity, alignment: .center)
         .padding(.top, 8)
+    }
+
+    private func formatDatePrefix(_ isoString: String) -> String {
+        let dateOnly = String(isoString.prefix(10))
+        if dateOnly.count == 10, dateOnly.contains("-") {
+            return dateOnly
+        }
+        return isoString
     }
 }
 
@@ -582,12 +591,22 @@ private struct VacancyBarRow: View {
 
     private var hasVacancy: Bool { vacancy > 0 }
 
+    private var shortLabel: String {
+        if label.contains("혼합") {
+            return "혼합"
+        }
+        return label
+            .replacingOccurrences(of: "만", with: "")
+            .replacingOccurrences(of: "세", with: "세")
+    }
+
     var body: some View {
-        HStack(spacing: 12) {
-            Text(label)
+        HStack(spacing: 10) {
+            Text(shortLabel)
                 .font(.subheadline)
                 .foregroundStyle(slateBlue)
-                .frame(width: 48, alignment: .leading)
+                .lineLimit(1)
+                .frame(width: 36, alignment: .leading)
 
             RoundedRectangle(cornerRadius: 4, style: .continuous)
                 .fill(hasVacancy ? jadeGreen : coralRed)
@@ -596,7 +615,7 @@ private struct VacancyBarRow: View {
             Text(hasVacancy ? "\(vacancy)명 여유" : "마감")
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(hasVacancy ? jadeDeep : coralRed)
-                .frame(width: 60, alignment: .trailing)
+                .frame(width: 64, alignment: .trailing)
         }
     }
 }
@@ -713,7 +732,7 @@ private struct DetailLinkRow: View {
                 Text(subtitle)
                     .font(.caption)
                     .foregroundStyle(slateBlue)
-                    .lineLimit(2)
+                    .lineLimit(1)
             }
 
             Spacer()
