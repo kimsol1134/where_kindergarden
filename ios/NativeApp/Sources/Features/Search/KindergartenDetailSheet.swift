@@ -207,11 +207,11 @@ struct KindergartenDetailSheet: View {
                     sectionVacancy
                 }
 
-                // Section D: Details Grid
-                sectionDetails
-
-                // Section E: Reviews
+                // Section D: Reviews (moved up for faster parent access)
                 sectionReviews
+
+                // Section E: Details Grid
+                sectionDetails
 
                 // Section F: Quick Links
                 if hasContactInfo {

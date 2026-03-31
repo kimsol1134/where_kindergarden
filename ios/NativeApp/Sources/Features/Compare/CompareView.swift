@@ -39,10 +39,9 @@ public struct CompareView: View {
                                 icon: "square.split.2x2",
                                 title: "비교할 곳이 아직 없어요",
                                 message: "탐색에서 비교 버튼을 누르면 여기에 모여요.",
-                                ctaLabel: "탐색하러 가기"
-                            ) {
-                                model.selectedTab = .search
-                            }
+                                ctaLabel: "탐색하러 가기",
+                                ctaAction: { model.selectedTab = .search }
+                            )
                             .accessibilityIdentifier("compare.emptyState")
                         } else {
                             if items.count == 1 {

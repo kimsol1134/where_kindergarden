@@ -6,6 +6,8 @@ public struct EmptyStateView: View {
     let message: String
     var ctaLabel: String?
     var ctaAction: (() -> Void)?
+    var secondaryCTALabel: String?
+    var secondaryCTAAction: (() -> Void)?
 
     @State private var appeared = false
 
@@ -14,13 +16,17 @@ public struct EmptyStateView: View {
         title: String,
         message: String,
         ctaLabel: String? = nil,
-        ctaAction: (() -> Void)? = nil
+        ctaAction: (() -> Void)? = nil,
+        secondaryCTALabel: String? = nil,
+        secondaryCTAAction: (() -> Void)? = nil
     ) {
         self.icon = icon
         self.title = title
         self.message = message
         self.ctaLabel = ctaLabel
         self.ctaAction = ctaAction
+        self.secondaryCTALabel = secondaryCTALabel
+        self.secondaryCTAAction = secondaryCTAAction
     }
 
     private var isErrorState: Bool {
@@ -77,6 +83,15 @@ public struct EmptyStateView: View {
                 }
                 .buttonStyle(.plain)
                 .padding(.top, 4)
+            }
+
+            if let secondaryCTALabel, let secondaryCTAAction {
+                Button(action: secondaryCTAAction) {
+                    Text(secondaryCTALabel)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(slateBlue)
+                }
+                .buttonStyle(.plain)
             }
         }
         .frame(maxWidth: .infinity)
