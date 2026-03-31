@@ -47,46 +47,46 @@ public struct CompareView: View {
                             if items.count == 1 {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 14) {
-                                        ForEach(items) { item in
-                                            CompareHeaderCard(item: item) {
-                                                model.toggleCompare(for: item)
-                                            }
+                                        CompareHeaderCard(item: items[0], score: 0) {
+                                            model.toggleCompare(for: items[0])
                                         }
+
+                                        Button {
+                                            model.selectedTab = .search
+                                        } label: {
+                                            VStack(spacing: 8) {
+                                                Image(systemName: "plus.circle")
+                                                    .font(.title2)
+                                                    .foregroundStyle(slateSoft)
+                                                Text("비교 대상 추가")
+                                                    .font(.caption.weight(.medium))
+                                                    .foregroundStyle(slateSoft)
+                                            }
+                                            .frame(minWidth: 170, idealWidth: 200, maxWidth: 260, minHeight: 120)
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: CornerRadius.large, style: .continuous)
+                                                    .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [8, 6]))
+                                                    .foregroundStyle(slateSoft.opacity(0.3))
+                                            )
+                                        }
+                                        .buttonStyle(.plain)
                                     }
                                     .padding(.vertical, 4)
                                 }
-
-                                VStack(alignment: .leading, spacing: 12) {
-                                    Text("한 곳 더 담으면 바로 비교할 수 있어요")
-                                        .font(.subheadline)
-                                        .foregroundStyle(slateBlue)
-                                    Button {
-                                        model.selectedTab = .search
-                                    } label: {
-                                        HStack(spacing: 6) {
-                                            Image(systemName: "plus.circle.fill")
-                                            Text("탐색에서 추가하기")
-                                        }
-                                        .font(.subheadline.weight(.semibold))
-                                        .foregroundStyle(inkBlack)
-                                        .padding(.horizontal, 18)
-                                        .padding(.vertical, 12)
-                                        .background(jadeGreen.opacity(0.22), in: Capsule())
-                                    }
-                                    .buttonStyle(.plain)
-                                }
-                                .nativeSectionPanel()
                             } else {
-                                CompareInsightCard(
-                                    title: compareInsightTitle,
-                                    message: compareInsightMessage,
-                                    summary: comparisonWinnerLine
+                                let scores = calculateScores()
+
+                                CompareQuickStats(
+                                    items: items,
+                                    reviewCounts: items.map { model.reviews(for: $0.kindercode).count },
+                                    vacancyCounts: items.map { model.vacancyCount(for: $0.kindercode) },
+                                    scores: scores
                                 )
 
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 14) {
-                                        ForEach(items) { item in
-                                            CompareHeaderCard(item: item) {
+                                        ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                                            CompareHeaderCard(item: item, score: scores[index]) {
                                                 model.toggleCompare(for: item)
                                             }
                                         }
@@ -94,7 +94,11 @@ public struct CompareView: View {
                                     .padding(.vertical, 4)
                                 }
 
-                                CompareMatrix(items: items, reviewCounts: items.map { model.reviews(for: $0.kindercode).count })
+                                CompareMatrixView(
+                                    items: items,
+                                    reviewCounts: items.map { model.reviews(for: $0.kindercode).count },
+                                    vacancyCounts: items.map { model.vacancyCount(for: $0.kindercode) }
+                                )
                             }
                         }
 
@@ -126,42 +130,55 @@ public struct CompareView: View {
         }
     }
 
-    private var compareInsightTitle: String {
-        guard let nearest = items.min(by: { $0.distance < $1.distance }) else {
-            return "비교 요약"
+    // MARK: - Score calculation
+
+    private func calculateScores() -> [Int] {
+        guard items.count >= 2 else { return Array(repeating: 0, count: items.count) }
+        var scores = Array(repeating: 0, count: items.count)
+
+        // Teacher ratio: lower is better
+        let ratios = items.map { $0.teacherCount > 0 ? Double($0.currentCount) / Double($0.teacherCount) : Double.infinity }
+        if let minRatio = ratios.filter({ $0.isFinite }).min(), ratios.filter({ $0 == minRatio }).count < items.count {
+            for (i, r) in ratios.enumerated() where r == minRatio { scores[i] += 1 }
         }
 
-        return "가장 가까운 곳은 \(nearest.name)입니다"
-    }
-
-    private var comparisonWinnerLine: String {
-        guard let nearest = items.min(by: { $0.distance < $1.distance }) else {
-            return "선택한 곳을 같은 기준으로 볼 수 있어요."
+        // Area per child: higher is better
+        let areas = items.map(\.areaPerChild)
+        if let maxArea = areas.max(), maxArea > 0, Set(areas).count > 1 {
+            for (i, item) in items.enumerated() where item.areaPerChild == maxArea { scores[i] += 1 }
         }
 
-        return "거리로는 \(nearest.name), 공간으로는 \(items.max(by: { $0.areaPerChild < $1.areaPerChild })?.name ?? nearest.name)이 돋보여요."
-    }
-
-    private var compareInsightMessage: String {
-        let nearest = items.min(by: { $0.distance < $1.distance })
-        let roomiest = items.max(by: { $0.areaPerChild < $1.areaPerChild })
-        let mostReviewed = items.max(by: { model.reviews(for: $0.kindercode).count < model.reviews(for: $1.kindercode).count })
-
-        var sentences: [String] = []
-
-        if let nearest {
-            sentences.append("가까운 곳을 먼저 보면 \(nearest.name)이 유리해요.")
+        // CCTV: more is better
+        let cctvs = items.map(\.cctvCount)
+        if let maxCctv = cctvs.max(), maxCctv > 0, Set(cctvs).count > 1 {
+            for (i, item) in items.enumerated() where item.cctvCount == maxCctv { scores[i] += 1 }
         }
 
-        if let roomiest {
-            sentences.append("\(roomiest.name)은 1인당 \(String(format: "%.1f㎡", roomiest.areaPerChild))로 공간이 가장 넉넉해요.")
+        // After school: having it is better (only when not all same)
+        let afterSchools = items.map(\.hasAfterSchool)
+        if Set(afterSchools).count > 1 {
+            for (i, item) in items.enumerated() where item.hasAfterSchool { scores[i] += 1 }
         }
 
-        if let mostReviewed, !model.reviews(for: mostReviewed.kindercode).isEmpty {
-            sentences.append("후기는 \(mostReviewed.name) 쪽이 더 많아요.")
+        // Playground: having it is better
+        let playgrounds = items.map(\.hasPlayground)
+        if Set(playgrounds).count > 1 {
+            for (i, item) in items.enumerated() where item.hasPlayground { scores[i] += 1 }
         }
 
-        return sentences.joined(separator: " ")
+        // Meal: direct is better
+        let meals = items.map(\.mealType)
+        if Set(meals).count > 1 {
+            for (i, item) in items.enumerated() where item.mealType == .direct { scores[i] += 1 }
+        }
+
+        // Bus: most is better (only when not all same)
+        let buses = items.map { $0.hasBus ? $0.busCount : 0 }
+        if let maxBus = buses.max(), maxBus > 0, Set(buses).count > 1 {
+            for (i, b) in buses.enumerated() where b == maxBus { scores[i] += 1 }
+        }
+
+        return scores
     }
 
     @ViewBuilder
@@ -231,38 +248,151 @@ public struct CompareView: View {
         .joined(separator: "\n\n")
     }
 
-private struct CompareInsightCard: View {
-    let title: String
-    let message: String
-    let summary: String
+// MARK: - CompareQuickStats
+
+private struct CompareQuickStats: View {
+    let items: [Kindergarten]
+    let reviewCounts: [Int]
+    let vacancyCounts: [Int]
+    let scores: [Int]
+
+    private let bestTint = Color.blue.opacity(0.10)
+    private let bestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
+
+    private var winnerSummary: String? {
+        guard let maxScore = scores.max(), maxScore > 0 else { return nil }
+        let winnerIndexes = scores.enumerated().filter { $0.element == maxScore }
+        guard winnerIndexes.count == 1, let winner = winnerIndexes.first else { return nil }
+        return "\(items[winner.offset].name)이 \(maxScore)개 항목에서 우세"
+    }
+
+    private var bestTeacherRatio: (name: String, value: String)? {
+        let ratios: [(Int, Double)] = items.enumerated().compactMap { i, item in
+            guard item.teacherCount > 0 else { return nil }
+            return (i, Double(item.currentCount) / Double(item.teacherCount))
+        }
+        guard let best = ratios.min(by: { $0.1 < $1.1 }) else { return nil }
+        return (items[best.0].name, String(format: "1:%.1f", best.1))
+    }
+
+    private var bestVacancy: (name: String, value: String)? {
+        guard let maxVacancy = vacancyCounts.max(), maxVacancy > 0 else { return nil }
+        if let index = vacancyCounts.firstIndex(of: maxVacancy) {
+            return (items[index].name, "\(maxVacancy)자리")
+        }
+        return nil
+    }
+
+    private var directMealKinder: String? {
+        items.first(where: { $0.mealType == .direct })?.name
+    }
+
+    private var bestReview: (name: String, value: String)? {
+        guard let maxReview = reviewCounts.max(), maxReview > 0 else { return nil }
+        if let index = reviewCounts.firstIndex(of: maxReview) {
+            return (items[index].name, "\(maxReview)건")
+        }
+        return nil
+    }
+
+    private let columns = [
+        GridItem(.flexible(), spacing: 10),
+        GridItem(.flexible(), spacing: 10)
+    ]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            NativeBadge("추천 포인트", tone: .slate)
-            Text(title)
-                .font(.title3.weight(.bold))
-                .foregroundStyle(inkBlack)
-            Text(summary)
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(jadeDeep)
-            Text(message)
-                .font(.subheadline)
-                .foregroundStyle(slateBlue)
-                .lineSpacing(3)
+        VStack(alignment: .leading, spacing: 14) {
+            NativeBadge("한눈에 비교", tone: .slate)
+
+            if let summary = winnerSummary {
+                Label(summary, systemImage: "crown.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Color(red: 0.55, green: 0.40, blue: 0.05))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .background(sunYellow.opacity(0.18), in: Capsule())
+            }
+
+            LazyVGrid(columns: columns, spacing: 10) {
+                quickStatTile(
+                    icon: "person.2",
+                    label: "교사 비율",
+                    name: bestTeacherRatio?.name,
+                    value: bestTeacherRatio?.value
+                )
+                quickStatTile(
+                    icon: "chair.lounge",
+                    label: "빈자리",
+                    name: bestVacancy?.name,
+                    value: bestVacancy?.value
+                )
+                quickStatTile(
+                    icon: "fork.knife",
+                    label: "급식",
+                    name: directMealKinder,
+                    value: directMealKinder != nil ? "직영" : nil
+                )
+                quickStatTile(
+                    icon: "newspaper",
+                    label: "후기",
+                    name: bestReview?.name,
+                    value: bestReview?.value
+                )
+            }
         }
         .padding(20)
         .glassPanel(cornerRadius: CornerRadius.large)
     }
+
+    @ViewBuilder
+    private func quickStatTile(icon: String, label: String, name: String?, value: String?) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(spacing: 4) {
+                Image(systemName: icon)
+                    .font(.caption)
+                    .foregroundStyle(slateSoft)
+                Text(label)
+                    .font(.caption)
+                    .foregroundStyle(slateSoft)
+            }
+            if let name, let value {
+                Text(name)
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(inkBlack)
+                    .lineLimit(1)
+                Text(value)
+                    .font(.caption2)
+                    .foregroundStyle(bestForeground)
+            } else {
+                Text("동일")
+                    .font(.footnote)
+                    .foregroundStyle(slateSoft)
+            }
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, minHeight: 80, alignment: .topLeading)
+        .background(paperWhite.opacity(0.7), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                .stroke(lineSoft, lineWidth: 1)
+        )
+    }
 }
+
+// MARK: - CompareHeaderCard
 
 private struct CompareHeaderCard: View {
     let item: Kindergarten
+    let score: Int
     let onRemove: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top) {
-                NativeBadge(item.type.label)
+                Text(item.name)
+                    .font(.headline.weight(.bold))
+                    .foregroundStyle(inkBlack)
+                    .lineLimit(1)
                 Spacer()
                 Button(action: onRemove) {
                     Image(systemName: "minus.circle.fill")
@@ -274,18 +404,27 @@ private struct CompareHeaderCard: View {
                 .buttonStyle(.plain)
             }
 
-            Text(item.name)
-                .font(.headline.weight(.bold))
-                .foregroundStyle(inkBlack)
-            Text(item.address)
-                .font(.footnote)
-                .foregroundStyle(slateBlue)
-                .lineLimit(2)
+            HStack(spacing: 6) {
+                NativeBadge(item.type.label)
+                if item.distance >= 0 {
+                    Label(String(format: "%.1fkm", item.distance), systemImage: "mappin")
+                        .font(.caption2.weight(.medium))
+                        .foregroundStyle(slateSoft)
+                }
+            }
 
-            if item.distance >= 0 {
-                Text(String(format: "%.1fkm", item.distance))
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(slateSoft)
+            Text(shortenAddress(item.address))
+                .font(.caption)
+                .foregroundStyle(slateBlue)
+                .lineLimit(1)
+
+            if score > 0 {
+                Text("\(score)개 우세")
+                    .font(.caption2.weight(.bold))
+                    .foregroundStyle(Color(red: 0.18, green: 0.38, blue: 0.68))
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(Color.blue.opacity(0.10), in: Capsule())
             }
         }
         .padding(18)
@@ -294,143 +433,12 @@ private struct CompareHeaderCard: View {
         .accessibilityIdentifier("compare.card.\(item.kindercode)")
         .accessibilityElement(children: .combine)
     }
-}
 
-private struct CompareMatrix: View {
-    let items: [Kindergarten]
-    let reviewCounts: [Int]
-
-    private var headers: [String] {
-        items.map(\.name)
-    }
-
-    private var rows: [CompareMatrixRowModel] {
-        [
-            CompareMatrixRowModel(
-                title: "통학",
-                values: items.map { $0.distance >= 0 ? String(format: "%.1fkm", $0.distance) : "미확인" },
-                highlightedIndexes: highlightedIndexes(for: items.enumerated().min(by: { $0.element.distance < $1.element.distance })?.offset)
-            ),
-            CompareMatrixRowModel(
-                title: "셔틀",
-                values: items.map { $0.hasBus ? "\($0.busCount)대" : "없음" },
-                highlightedIndexes: highestIndexes(items.map { $0.hasBus ? $0.busCount : 0 })
-            ),
-            CompareMatrixRowModel(
-                title: "방과후",
-                values: items.map { $0.hasAfterSchool ? "운영" : "미운영" },
-                highlightedIndexes: highestIndexes(items.map { $0.hasAfterSchool ? 1 : 0 })
-            ),
-            CompareMatrixRowModel(
-                title: "후기",
-                values: reviewCounts.map { "\($0)건" },
-                highlightedIndexes: highestIndexes(reviewCounts)
-            ),
-            CompareMatrixRowModel(
-                title: "공간",
-                values: items.map { String(format: "%.1f㎡", $0.areaPerChild) },
-                highlightedIndexes: highestIndexes(items.map { Int($0.areaPerChild * 10) })
-            ),
-        ]
-    }
-
-    @ScaledMetric(relativeTo: .footnote) private var columnWidth: CGFloat = 100
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("비교표")
-                .font(.headline.weight(.bold))
-                .foregroundStyle(inkBlack)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                VStack(spacing: 10) {
-                    HStack(spacing: 10) {
-                        Text("항목")
-                            .font(.caption.weight(.heavy))
-                            .foregroundStyle(slateSoft)
-                            .frame(width: 70, alignment: .leading)
-
-                        ForEach(Array(headers.enumerated()), id: \.offset) { _, header in
-                            Text(shortHeader(for: header))
-                                .font(.caption.weight(.bold))
-                                .foregroundStyle(inkBlack)
-                                .frame(minWidth: columnWidth, maxWidth: .infinity, alignment: .center)
-                                .lineLimit(1)
-                        }
-                    }
-
-                    ForEach(rows) { row in
-                        CompareMatrixRow(row: row)
-                    }
-                }
-                .padding(18)
-                .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
-                .scrollTargetLayout()
-            }
-            .scrollTargetBehavior(.viewAligned)
-        }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("비교표. \(items.count)곳 비교")
-    }
-
-    private func highlightedIndexes(for winningIndex: Int?) -> Set<Int> {
-        guard let winningIndex else { return [] }
-        return [winningIndex]
-    }
-
-    private func highestIndexes(_ values: [Int]) -> Set<Int> {
-        guard let highest = values.max(), highest > 0 else { return [] }
-        return Set(values.enumerated().compactMap { index, value in
-            value == highest ? index : nil
-        })
-    }
-
-    private func shortHeader(for name: String) -> String {
-        name.replacingOccurrences(of: "유치원", with: "")
+    private func shortenAddress(_ address: String) -> String {
+        let parts = address.split(separator: " ")
+        guard parts.count >= 3 else { return address }
+        return parts.dropFirst().prefix(2).joined(separator: " ")
     }
 }
 
-private struct CompareMatrixRowModel: Identifiable {
-    let id = UUID()
-    let title: String
-    let values: [String]
-    let highlightedIndexes: Set<Int>
-}
-
-private struct CompareMatrixRow: View {
-    let row: CompareMatrixRowModel
-    @ScaledMetric(relativeTo: .footnote) private var columnWidth: CGFloat = 100
-
-    var body: some View {
-        HStack(spacing: 10) {
-            Text(row.title)
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(slateBlue)
-                .frame(width: 70, alignment: .leading)
-
-            ForEach(Array(row.values.enumerated()), id: \.offset) { index, value in
-                Text(value)
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(row.highlightedIndexes.contains(index) ? inkBlack : slateBlue)
-                    .frame(minWidth: columnWidth, maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background(
-                        row.highlightedIndexes.contains(index)
-                            ? jadeGreen.opacity(0.18)
-                            : paperWhite.opacity(0.86),
-                        in: RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous)
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: CornerRadius.small, style: .continuous)
-                            .stroke(
-                                row.highlightedIndexes.contains(index)
-                                    ? jadeGreen.opacity(0.24)
-                                    : lineSoft,
-                                lineWidth: 1
-                            )
-                    )
-                }
-            }
-        }
-    }
 }
