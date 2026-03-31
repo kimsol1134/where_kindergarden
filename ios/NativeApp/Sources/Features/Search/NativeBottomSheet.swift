@@ -52,13 +52,14 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
 
     // MARK: Properties
 
-    var coordinator: NativeBottomSheet<Content>.Coordinator?
-    private(set) var currentDetent: SearchResultsSheetDetentKind = .peek
-    private(set) var isDragging = false
+    fileprivate var coordinator: NativeBottomSheet<Content>.Coordinator?
+    fileprivate private(set) var currentDetent: SearchResultsSheetDetentKind = .peek
+    fileprivate private(set) var isDragging = false
 
     private let sheetCornerRadius: CGFloat
     private var detentHeights: [SearchResultsSheetDetentKind: CGFloat] = [:]
 
+    private let shadowHost = UIView()
     private let containerView = UIView()
     private let grabberView = UIView()
     private var hostingController: UIHostingController<Content>?
@@ -66,11 +67,9 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
 
     private var panGesture: UIPanGestureRecognizer!
     private weak var trackedScrollView: UIScrollView?
-    private var scrollViewObservation: NSKeyValueObservation?
     private var runningAnimator: UIViewPropertyAnimator?
 
     private var dragStartHeight: CGFloat = 0
-    private var scrollStartOffsetY: CGFloat = 0
     private var isTransitioningFromScroll = false
 
     // MARK: Init
@@ -102,32 +101,41 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
     // MARK: Setup
 
     private func setupContainer() {
+        shadowHost.translatesAutoresizingMaskIntoConstraints = false
+        shadowHost.backgroundColor = .clear
+        shadowHost.layer.shadowColor = UIColor.black.cgColor
+        shadowHost.layer.shadowOpacity = 0.08
+        shadowHost.layer.shadowRadius = 12
+        shadowHost.layer.shadowOffset = CGSize(width: 0, height: -4)
+
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.backgroundColor = UIColor.white.withAlphaComponent(0.97)
+        containerView.backgroundColor = UIColor(paperWhite).withAlphaComponent(0.97)
         containerView.layer.cornerRadius = sheetCornerRadius
         containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         containerView.layer.cornerCurve = .continuous
-        containerView.layer.shadowColor = UIColor.black.cgColor
-        containerView.layer.shadowOpacity = 0.08
-        containerView.layer.shadowRadius = 12
-        containerView.layer.shadowOffset = CGSize(width: 0, height: -4)
         containerView.clipsToBounds = true
 
-        view.addSubview(containerView)
+        view.addSubview(shadowHost)
+        shadowHost.addSubview(containerView)
 
-        heightConstraint = containerView.heightAnchor.constraint(equalToConstant: 200)
+        heightConstraint = shadowHost.heightAnchor.constraint(equalToConstant: 200)
 
         NSLayoutConstraint.activate([
-            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            shadowHost.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            shadowHost.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            shadowHost.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             heightConstraint,
+
+            containerView.topAnchor.constraint(equalTo: shadowHost.topAnchor),
+            containerView.leadingAnchor.constraint(equalTo: shadowHost.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: shadowHost.trailingAnchor),
+            containerView.bottomAnchor.constraint(equalTo: shadowHost.bottomAnchor),
         ])
     }
 
     private func setupGrabber() {
         grabberView.translatesAutoresizingMaskIntoConstraints = false
-        grabberView.backgroundColor = UIColor(red: 0.35, green: 0.41, blue: 0.45, alpha: 0.35)
+        grabberView.backgroundColor = UIColor(slateSoft).withAlphaComponent(0.35)
         grabberView.layer.cornerRadius = 2.5
 
         containerView.addSubview(grabberView)
@@ -271,18 +279,14 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
         isDragging = true
         dragStartHeight = heightConstraint.constant
         isTransitioningFromScroll = false
-
-        if let scrollView = trackedScrollView {
-            scrollStartOffsetY = scrollView.contentOffset.y
-        }
     }
 
     private func handlePanChanged(_ gesture: UIPanGestureRecognizer) {
         let translationY = gesture.translation(in: containerView).y
-        let velocityY = gesture.velocity(in: containerView).y
 
         if let scrollView = trackedScrollView, currentDetent == .expanded {
             let scrollOffset = scrollView.contentOffset.y
+            let velocityY = gesture.velocity(in: containerView).y
 
             if !isTransitioningFromScroll && scrollOffset <= 0 && velocityY > 0 {
                 isTransitioningFromScroll = true
@@ -335,16 +339,8 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
     }
 
     private func nearestDetent(for height: CGFloat) -> SearchResultsSheetDetentKind {
-        let maxValue = expandedHeight / 0.88
+        let maxValue = expandedHeight / SearchResultsSheetPolicy.expandedFraction
         return SearchResultsSheetPolicy.nearestDetent(for: height, maximumDetentValue: maxValue)
-    }
-}
-
-// MARK: - Sizing wrapper
-
-extension NativeBottomSheet {
-    func frame(maxHeight: CGFloat) -> some View {
-        self.frame(maxWidth: .infinity, maxHeight: maxHeight)
     }
 }
 #endif

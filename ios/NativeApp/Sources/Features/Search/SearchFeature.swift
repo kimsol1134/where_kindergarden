@@ -62,7 +62,7 @@ public struct SearchHomeView: View {
         )
     }
 
-    private func updateResultsDetent(_ detent: SearchResultsSheetDetentKind, animated: Bool = true) {
+    private func updateResultsDetent(_ detent: SearchResultsSheetDetentKind) {
         guard selectedResultsDetent != detent else {
             return
         }
@@ -191,7 +191,7 @@ public struct SearchHomeView: View {
             .task {
                 model.refreshLocationPermissionState()
                 await model.bootstrapIfNeeded()
-                updateResultsDetent(preferredResultsDetentAfterSuggestionDismiss(), animated: false)
+                updateResultsDetent(preferredResultsDetentAfterSuggestionDismiss())
             }
             .onChange(of: scenePhase) { _, nextPhase in
                 guard nextPhase == .active else { return }

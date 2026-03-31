@@ -9,6 +9,7 @@ enum SearchResultsSheetDetentKind: CaseIterable {
 enum SearchResultsSheetPolicy {
     static let cornerRadius: CGFloat = 24
     static let minimumVisibleHeight: CGFloat = 200
+    static let expandedFraction: CGFloat = 0.88
 
     static func height(for kind: SearchResultsSheetDetentKind, maximumDetentValue: CGFloat) -> CGFloat {
         switch kind {
@@ -17,7 +18,7 @@ enum SearchResultsSheetPolicy {
         case .mid:
             return maximumDetentValue * 0.55
         case .expanded:
-            return maximumDetentValue * 0.88
+            return maximumDetentValue * expandedFraction
         }
     }
 
