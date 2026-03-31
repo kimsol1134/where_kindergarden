@@ -58,7 +58,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var locationPermissionState: LocationPermissionState
     @Published public private(set) var isFirstLaunch: Bool
     @Published public var shouldFocusSearchField: Bool = false
-    @Published public var compareToastMessage: String?
+    @Published public private(set) var compareToastMessage: String?
 
     public let configuration: NativeAppConfiguration
 
@@ -572,6 +572,10 @@ public final class NativeAppModel: ObservableObject {
         persistence.saveCompareSelection(compareSelection)
         refreshSelectedKindergarten()
         compareToastMessage = isNowCompared ? "비교에 담았어요" : "비교에서 뺐어요"
+    }
+
+    public func dismissCompareToast() {
+        compareToastMessage = nil
     }
 
     public func isCompared(_ kindergarten: Kindergarten) -> Bool {

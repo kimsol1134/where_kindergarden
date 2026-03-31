@@ -271,7 +271,7 @@ public struct SearchHomeView: View {
             .toast(
                 isPresented: Binding(
                     get: { model.compareToastMessage != nil },
-                    set: { if !$0 { model.compareToastMessage = nil } }
+                    set: { if !$0 { model.dismissCompareToast() } }
                 ),
                 message: model.compareToastMessage ?? ""
             )
@@ -777,8 +777,7 @@ private struct ResultSheet: View {
     private var topDiscoveries: [Kindergarten] { Array(results.prefix(3)) }
 
     private var remainingResults: [Kindergarten] {
-        let discoveryIDs = Set(topDiscoveries.map(\.kindercode))
-        return results.filter { !discoveryIDs.contains($0.kindercode) }
+        Array(results.dropFirst(topDiscoveries.count))
     }
 
     private var sectionTitle: String {
@@ -918,10 +917,11 @@ private struct ResultSheet: View {
                         DiscoveryPreviewSection(title: discoveryTitle) {
                             HStack(spacing: 14) {
                                 ForEach(topDiscoveries) { kindergarten in
+                                    let reasons = model.fitReasons(for: kindergarten)
                                     DiscoveryPreviewCard(
                                         kindergarten: kindergarten,
-                                        fitReasons: model.fitReasons(for: kindergarten),
-                                        fitSummary: model.fitSummary(for: kindergarten),
+                                        fitReasons: reasons,
+                                        fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
                                         isCompared: comparedIDs.contains(kindergarten.kindercode),
                                         isFavorite: favoriteIDs.contains(kindergarten.kindercode),
                                         vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
@@ -934,29 +934,30 @@ private struct ResultSheet: View {
                         }
 
                         if !remainingResults.isEmpty {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("전체 결과")
-                                .font(.subheadline.weight(.heavy))
-                                .foregroundStyle(slateSoft)
-                                .textCase(.uppercase)
+                            VStack(alignment: .leading, spacing: 12) {
+                                Text("전체 결과")
+                                    .font(.subheadline.weight(.heavy))
+                                    .foregroundStyle(slateSoft)
+                                    .textCase(.uppercase)
 
-                            LazyVStack(spacing: 12) {
-                                ForEach(remainingResults) { kindergarten in
-                                    SearchResultCard(
-                                        kindergarten: kindergarten,
-                                        isCompared: comparedIDs.contains(kindergarten.kindercode),
-                                        isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                        fitReasons: model.fitReasons(for: kindergarten),
-                                        fitSummary: model.fitSummary(for: kindergarten),
-                                        vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
-                                        reviewCount: model.reviews(for: kindergarten.kindercode).count,
-                                        onTap: { model.select(kindergarten: kindergarten) },
-                                        onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                                        onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                                    )
+                                LazyVStack(spacing: 12) {
+                                    ForEach(remainingResults) { kindergarten in
+                                        let reasons = model.fitReasons(for: kindergarten)
+                                        SearchResultCard(
+                                            kindergarten: kindergarten,
+                                            isCompared: comparedIDs.contains(kindergarten.kindercode),
+                                            isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                                            fitReasons: reasons,
+                                            fitSummary: KindergartenFitSummaryBuilder.summary(for: reasons),
+                                            vacancyCount: model.vacancyCount(for: kindergarten.kindercode),
+                                            reviewCount: model.reviews(for: kindergarten.kindercode).count,
+                                            onTap: { model.select(kindergarten: kindergarten) },
+                                            onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                                            onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                                        )
+                                    }
                                 }
                             }
-                        }
                         }
 
                         #if canImport(GoogleMobileAds)
@@ -1013,7 +1014,7 @@ private struct SearchResultCard: View {
             .init(id: "bus", icon: "bus.fill", label: "셔틀", isMet: kindergarten.hasBus),
             .init(id: "after", icon: "sun.max.fill", label: "방과후", isMet: kindergarten.hasAfterSchool),
             .init(id: "meal", icon: "fork.knife",
-                  label: kindergarten.mealType == .direct ? "직영" : (kindergarten.mealType == .outsourced ? "위탁" : "급식"),
+                  label: { switch kindergarten.mealType { case .direct: "직영"; case .outsourced: "위탁"; case .none: "급식" } }(),
                   isMet: kindergarten.mealType != .none),
             .init(id: "vacancy", icon: "checkmark.seal.fill",
                   label: vacancyCount > 0 ? "여유 \(vacancyCount)" : "여유",
@@ -1092,10 +1093,10 @@ private struct SearchResultCard: View {
                             if vacancyCount > 0 {
                                 (Text("여유 \(vacancyCount)명")
                                     .font(.footnote.weight(.semibold))
-                                    .foregroundColor(jadeDeep)
+                                    .foregroundStyle(jadeDeep)
                                  + Text(" · \(kindergarten.address)")
                                     .font(.footnote)
-                                    .foregroundColor(slateBlue))
+                                    .foregroundStyle(slateBlue))
                                 .lineLimit(1)
                             } else {
                                 Text(supportLine)
@@ -1109,37 +1110,37 @@ private struct SearchResultCard: View {
                     }
 
                     VStack(spacing: 12) {
-                    Button(action: onToggleCompare) {
-                        Image(systemName: isCompared ? "checkmark" : "plus")
-                            .font(.system(size: 14, weight: .black))
-                            .foregroundStyle(isCompared ? inkBlack : jadeDeep)
-                            .frame(width: 44, height: 44)
-                            .background(
-                                Circle()
-                                    .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
-                            )
-                    }
-                    .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
-                    .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
-                    .buttonStyle(.borderless)
-                    .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
-                    .contentTransition(.symbolEffect(.replace))
+                        Button(action: onToggleCompare) {
+                            Image(systemName: isCompared ? "checkmark" : "plus")
+                                .font(.system(size: 14, weight: .black))
+                                .foregroundStyle(isCompared ? inkBlack : jadeDeep)
+                                .frame(width: 44, height: 44)
+                                .background(
+                                    Circle()
+                                        .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
+                                )
+                        }
+                        .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
+                        .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
+                        .buttonStyle(.borderless)
+                        .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
+                        .contentTransition(.symbolEffect(.replace))
 
-                    Button(action: onToggleFavorite) {
-                        Image(systemName: isFavorite ? "heart.fill" : "heart")
-                            .font(.system(size: 14, weight: .black))
-                            .foregroundStyle(isFavorite ? inkBlack : slateBlue)
-                            .frame(width: 44, height: 44)
-                            .background(
-                                Circle()
-                                    .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
-                            )
+                        Button(action: onToggleFavorite) {
+                            Image(systemName: isFavorite ? "heart.fill" : "heart")
+                                .font(.system(size: 14, weight: .black))
+                                .foregroundStyle(isFavorite ? inkBlack : slateBlue)
+                                .frame(width: 44, height: 44)
+                                .background(
+                                    Circle()
+                                        .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
+                                )
+                        }
+                        .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
+                        .buttonStyle(.borderless)
+                        .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
+                        .contentTransition(.symbolEffect(.replace))
                     }
-                    .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
-                    .buttonStyle(.borderless)
-                    .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
-                    .contentTransition(.symbolEffect(.replace))
-                }
                 }
                 .padding(cardPadding)
             }

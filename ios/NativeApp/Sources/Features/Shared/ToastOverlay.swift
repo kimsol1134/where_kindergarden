@@ -19,12 +19,13 @@ struct ToastOverlay: View {
             .padding(.vertical, 12)
             .glassPanel(cornerRadius: CornerRadius.medium)
             .transition(.move(edge: .bottom).combined(with: .opacity))
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            .task {
+                do {
+                    try await Task.sleep(for: .seconds(2))
                     withAnimation(.spring(duration: 0.3, bounce: 0.12)) {
                         isPresented = false
                     }
-                }
+                } catch {}
             }
         }
     }
