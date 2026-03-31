@@ -13,7 +13,6 @@ public struct SearchHomeView: View {
     @State private var isSearchPanelPresented = false
     @State private var resultsSheetAvailableHeight: CGFloat = 800
     @State private var selectedResultsDetent: SearchResultsSheetDetentKind = .peek
-    @GestureState private var resultsSheetDragTranslation: CGFloat = 0
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -67,14 +66,7 @@ public struct SearchHomeView: View {
         guard selectedResultsDetent != detent else {
             return
         }
-
-        if animated {
-            withAnimation(.spring(duration: 0.35, bounce: 0.12)) {
-                selectedResultsDetent = detent
-            }
-        } else {
-            selectedResultsDetent = detent
-        }
+        selectedResultsDetent = detent
     }
 
     private func preferredResultsDetentAfterSuggestionDismiss() -> SearchResultsSheetDetentKind {
@@ -96,38 +88,10 @@ public struct SearchHomeView: View {
         return "주소나 장소 추천이 잠시 쉬고 있어요. 기관 이름이나 최근 검색으로 찾아보세요."
     }
 
-    private func resultsSheetHeight(for maximumDetentValue: CGFloat) -> CGFloat {
-        SearchResultsSheetPolicy.height(
-            for: selectedResultsDetent,
-            maximumDetentValue: maximumDetentValue
-        )
-    }
-
-    private func interactiveResultsSheetHeight(for maximumDetentValue: CGFloat) -> CGFloat {
-        SearchResultsSheetPolicy.clampedHeight(
-            resultsSheetHeight(for: maximumDetentValue) - resultsSheetDragTranslation,
-            maximumDetentValue: maximumDetentValue
-        )
-    }
-
-    private func resultsSheetDragGesture(maximumDetentValue: CGFloat) -> some Gesture {
-        DragGesture(minimumDistance: 3, coordinateSpace: .local)
-            .updating($resultsSheetDragTranslation) { value, state, _ in
-                state = value.translation.height
-            }
-            .onEnded { value in
-                let projectedHeight = SearchResultsSheetPolicy.clampedHeight(
-                    resultsSheetHeight(for: maximumDetentValue) - value.predictedEndTranslation.height,
-                    maximumDetentValue: maximumDetentValue
-                )
-
-                updateResultsDetent(
-                    SearchResultsSheetPolicy.nearestDetent(
-                        for: projectedHeight,
-                        maximumDetentValue: maximumDetentValue
-                    )
-                )
-            }
+    private var detentHeights: [SearchResultsSheetDetentKind: CGFloat] {
+        Dictionary(uniqueKeysWithValues: SearchResultsSheetDetentKind.allCases.map { kind in
+            (kind, SearchResultsSheetPolicy.height(for: kind, maximumDetentValue: resultsSheetAvailableHeight))
+        })
     }
 
     private var resultSummaryText: String {
@@ -239,19 +203,20 @@ public struct SearchHomeView: View {
             }
             .overlay(alignment: .bottom) {
                 if isResultsSheetPresented {
-                    SearchResultsBottomPanel(
-                        model: model,
-                        summaryText: resultSummaryText,
-                        degradedMessage: resultDegradedMessage,
-                        trimmedSearchQuery: trimmedSearchQuery,
-                        adUnitID: model.configuration.adMobBannerUnitID,
-                        height: interactiveResultsSheetHeight(for: resultsSheetAvailableHeight),
-                        grabberGesture: resultsSheetDragGesture(
-                            maximumDetentValue: resultsSheetAvailableHeight
+                    NativeBottomSheet(
+                        detents: detentHeights,
+                        selectedDetent: $selectedResultsDetent,
+                        cornerRadius: SearchResultsSheetPolicy.cornerRadius
+                    ) {
+                        SearchResultsSheetContainer(
+                            model: model,
+                            summaryText: resultSummaryText,
+                            degradedMessage: resultDegradedMessage,
+                            trimmedSearchQuery: trimmedSearchQuery,
+                            adUnitID: model.configuration.adMobBannerUnitID
                         )
-                    )
+                    }
                     .transition(.move(edge: .bottom).combined(with: .opacity))
-                    .animation(.spring(duration: 0.35, bounce: 0.12), value: selectedResultsDetent)
                 }
             }
             .sheet(item: sheetSelection) { kindergarten in
@@ -676,44 +641,6 @@ private struct SearchSuggestionRow: View {
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
-    }
-}
-
-private struct SearchResultsBottomPanel<GrabberGesture: Gesture>: View {
-    @ObservedObject var model: NativeAppModel
-    let summaryText: String
-    let degradedMessage: String?
-    let trimmedSearchQuery: String
-    let adUnitID: String
-    let height: CGFloat
-    let grabberGesture: GrabberGesture
-
-    var body: some View {
-        VStack(spacing: 0) {
-            Capsule()
-                .fill(slateSoft.opacity(0.35))
-                .frame(width: 40, height: 5)
-                .padding(.top, 10)
-                .padding(.bottom, 8)
-                .frame(maxWidth: .infinity)
-                .contentShape(Rectangle())
-                .gesture(grabberGesture)
-
-            SearchResultsSheetContainer(
-                model: model,
-                summaryText: summaryText,
-                degradedMessage: degradedMessage,
-                trimmedSearchQuery: trimmedSearchQuery,
-                adUnitID: adUnitID
-            )
-        }
-        .frame(height: height, alignment: .top)
-        .background(
-            RoundedRectangle(cornerRadius: SearchResultsSheetPolicy.cornerRadius, style: .continuous)
-                .fill(paperWhite.opacity(0.97))
-                .shadow(color: .black.opacity(0.08), radius: 12, y: -4)
-        )
-        .clipShape(RoundedRectangle(cornerRadius: SearchResultsSheetPolicy.cornerRadius, style: .continuous))
     }
 }
 
