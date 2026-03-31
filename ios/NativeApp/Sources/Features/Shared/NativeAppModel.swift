@@ -448,6 +448,15 @@ public final class NativeAppModel: ObservableObject {
         setSearchText("", refreshSuggestions: false, applyAsResultQuery: true)
     }
 
+    var activeSearchLens: SearchLens? {
+        SearchLens.activeLens(in: filters)
+    }
+
+    func applySearchLens(_ lens: SearchLens) {
+        dismissFirstLaunchIfNeeded()
+        filters = SearchLens.toggledFilters(from: filters, lens: lens)
+    }
+
     public func toggleBusFilter() {
         dismissFirstLaunchIfNeeded()
         filters.hasBus = filters.hasBus == true ? nil : true
@@ -637,6 +646,19 @@ public final class NativeAppModel: ObservableObject {
 
     public func reviews(for kindercode: String) -> [ReviewLink] {
         reviewsData?.reviews[kindercode] ?? []
+    }
+
+    func fitReasons(for kindergarten: Kindergarten) -> [KindergartenFitReason] {
+        KindergartenFitSummaryBuilder.reasons(
+            for: kindergarten,
+            filters: filters,
+            reviewCount: reviews(for: kindergarten.kindercode).count,
+            vacancyCount: vacancyCount(for: kindergarten.kindercode)
+        )
+    }
+
+    func fitSummary(for kindergarten: Kindergarten) -> String? {
+        KindergartenFitSummaryBuilder.summary(for: fitReasons(for: kindergarten))
     }
 
     public func vacancy(for kindercode: String) -> VacancySummary? {

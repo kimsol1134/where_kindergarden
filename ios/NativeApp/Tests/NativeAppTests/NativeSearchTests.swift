@@ -18,17 +18,26 @@ final class NativeSearchTests: XCTestCase {
         XCTAssertEqual(tallHeight, 320, accuracy: 0.0001)
     }
 
-    func testSearchResultsSheetPolicyMapsKindsToPresentationDetents() {
+    func testSearchResultsSheetPolicySnapsToNearestDetent() {
         XCTAssertEqual(
-            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .peek)),
+            SearchResultsSheetPolicy.nearestDetent(
+                for: 210,
+                maximumDetentValue: 500
+            ),
             .peek
         )
         XCTAssertEqual(
-            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .mid)),
+            SearchResultsSheetPolicy.nearestDetent(
+                for: 290,
+                maximumDetentValue: 500
+            ),
             .mid
         )
         XCTAssertEqual(
-            SearchResultsSheetPolicy.kind(for: SearchResultsSheetPolicy.presentationDetent(for: .expanded)),
+            SearchResultsSheetPolicy.nearestDetent(
+                for: 430,
+                maximumDetentValue: 500
+            ),
             .expanded
         )
     }
@@ -69,6 +78,65 @@ final class NativeSearchTests: XCTestCase {
             ),
             .peek
         )
+    }
+
+    func testSearchLensToggleResetsOtherAdvancedFiltersAndSetsRequestedLens() {
+        var filters = SearchFilters(
+            radiusKM: 2,
+            type: .private,
+            hasBus: nil,
+            hasVacancy: nil,
+            hasAfterSchool: nil,
+            hasIndoorPlayground: true,
+            hasLargeSpace: nil,
+            hasModernBuilding: true,
+            sort: .capacity
+        )
+
+        filters = SearchLens.toggledFilters(from: filters, lens: .bus)
+
+        XCTAssertEqual(filters.radiusKM, 2)
+        XCTAssertEqual(filters.sort, .capacity)
+        XCTAssertEqual(filters.type, .all)
+        XCTAssertEqual(filters.hasBus, true)
+        XCTAssertNil(filters.hasVacancy)
+        XCTAssertNil(filters.hasAfterSchool)
+        XCTAssertNil(filters.hasIndoorPlayground)
+        XCTAssertNil(filters.hasLargeSpace)
+        XCTAssertNil(filters.hasModernBuilding)
+        XCTAssertEqual(SearchLens.activeLens(in: filters), .bus)
+    }
+
+    @MainActor
+    func testNativeAppModelFitReasonsPrioritizeActiveLens() {
+        let model = makeModel()
+        let kindergarten = KindergartenSearchEngine()
+            .makeKindergartens(
+                raws: NativePreviewFixtures.kindergartens,
+                relativeTo: Coordinates(lat: 37.4981, lng: 127.0276)
+            )
+            .first(where: { $0.kindercode == "A001" })!
+
+        model.applySearchLens(.bus)
+
+        let reasons = model.fitReasons(for: kindergarten)
+
+        XCTAssertEqual(reasons.first?.title, "셔틀")
+    }
+
+    @MainActor
+    func testNativeAppModelFitSummaryUsesDeterministicPhrase() {
+        let model = makeModel()
+        let kindergarten = KindergartenSearchEngine()
+            .makeKindergartens(
+                raws: NativePreviewFixtures.kindergartens,
+                relativeTo: Coordinates(lat: 37.4981, lng: 127.0276)
+            )
+            .first(where: { $0.kindercode == "A001" })!
+
+        model.applySearchLens(.bus)
+
+        XCTAssertEqual(model.fitSummary(for: kindergarten), "셔틀이 있고 방과후를 운영해요")
     }
 
     func testKakaoAddressResponseDecodesRoadAddressAndCoordinates() throws {
