@@ -49,7 +49,7 @@ public struct SearchHomeView: View {
     }
 
     private var hasSearchContext: Bool {
-        model.isSearchingFromCurrentLocation
+        model.isCurrentLocationSearchActive
             || !model.recentSearches.isEmpty
             || !trimmedSearchQuery.isEmpty
             || model.hasActiveAdvancedFilters
@@ -76,7 +76,7 @@ public struct SearchHomeView: View {
         )
     }
 
-    private var currentLocationButtonVerticalOffset: CGFloat {
+    private var currentLocationFABVerticalOffset: CGFloat {
         guard isResultsSheetPresented else { return 0 }
 
         return detentHeights[selectedResultsDetent]
@@ -110,7 +110,7 @@ public struct SearchHomeView: View {
 
         if model.results.isEmpty {
             if trimmedSearchQuery.isEmpty,
-               !model.isSearchingFromCurrentLocation,
+               !model.isCurrentLocationSearchActive,
                model.recentSearches.isEmpty,
                model.locationError == nil {
                 return "현재 위치나 주소를 확인하면 주변 유치원이 보여요"
@@ -149,9 +149,20 @@ public struct SearchHomeView: View {
     }
 
     private var shouldShowCurrentLocationFAB: Bool {
-        model.configuration.hasKakaoMapKey
-            && mapStatusMessage == nil
-            && !isSearchPanelPresented
+        mapStatusMessage == nil && !isSearchPanelPresented
+    }
+
+    private var currentLocationRecenterRequestID: Int {
+        model.currentLocationRecenterRequestID
+    }
+
+    private func primeCurrentDeviceLocationIfNeeded() async {
+        guard model.selectedTab == .search else { return }
+        await model.primeCurrentDeviceLocationIfAuthorized()
+    }
+
+    private func scheduleCurrentDeviceLocationPrimingIfNeeded() {
+        Task { await primeCurrentDeviceLocationIfNeeded() }
     }
 
     public var body: some View {
@@ -163,7 +174,7 @@ public struct SearchHomeView: View {
                     currentLocation: model.currentDeviceLocation,
                     markers: mapMarkers,
                     selectedKindergartenID: model.selectedKindergarten?.kindercode,
-                    recenterRequestID: model.currentLocationRecenterTrigger,
+                    currentLocationRecenterRequestID: currentLocationRecenterRequestID,
                     runtimeMessage: $mapRuntimeMessage,
                     showsStatusCard: true
                 ) { kindercode in
@@ -209,18 +220,17 @@ public struct SearchHomeView: View {
             .task {
                 model.refreshLocationPermissionState()
                 await model.bootstrapIfNeeded()
-                await model.primeCurrentLocationIfAuthorized()
+                await primeCurrentDeviceLocationIfNeeded()
                 updateResultsDetent(preferredResultsDetentAfterSuggestionDismiss())
             }
             .onChange(of: scenePhase) { _, nextPhase in
                 guard nextPhase == .active else { return }
                 model.refreshLocationPermissionState()
-                guard model.selectedTab == .search else { return }
-                Task { await model.primeCurrentLocationIfAuthorized() }
+                scheduleCurrentDeviceLocationPrimingIfNeeded()
             }
             .onChange(of: model.selectedTab) { _, nextTab in
                 guard nextTab == .search else { return }
-                Task { await model.primeCurrentLocationIfAuthorized() }
+                scheduleCurrentDeviceLocationPrimingIfNeeded()
             }
             .onChange(of: isSearchPanelPresented) { _, presented in
                 guard !presented else { return }
@@ -247,11 +257,11 @@ public struct SearchHomeView: View {
             .overlay(alignment: .bottomTrailing) {
                 if shouldShowCurrentLocationFAB {
                     SearchCurrentLocationFAB(isLoading: model.isLocatingCurrentPosition) {
-                        Task { await model.recenterOnCurrentLocation() }
+                        Task { await model.recenterMapToCurrentLocation() }
                     }
                     .padding(.trailing, 20)
                     .padding(.bottom, 22)
-                    .offset(y: -currentLocationButtonVerticalOffset)
+                    .offset(y: -currentLocationFABVerticalOffset)
                     .animation(.spring(duration: 0.28, bounce: 0.18), value: selectedResultsDetent)
                     .animation(.spring(duration: 0.28, bounce: 0.18), value: isResultsSheetPresented)
                 }
@@ -899,7 +909,7 @@ private struct ResultSheet: View {
                         #endif
                     }
                 )
-            } else if model.isSearchingFromCurrentLocation || !model.recentSearches.isEmpty {
+            } else if model.isCurrentLocationSearchActive || !model.recentSearches.isEmpty {
                 EmptyStateView(
                     icon: "map",
                     title: "이 근처에서는 찾지 못했어요",
@@ -916,7 +926,7 @@ private struct ResultSheet: View {
                     ctaAction: { Task { await model.centerOnCurrentLocation() } }
                 )
             }
-        } else if results.isEmpty && !trimmedSearchQuery.isEmpty && model.activeSearchType != .currentLocation {
+        } else if results.isEmpty && !trimmedSearchQuery.isEmpty && !model.isCurrentLocationSearchActive {
             EmptyStateView(
                 icon: "magnifyingglass",
                 title: "'\(trimmedSearchQuery)' 결과가 없어요",

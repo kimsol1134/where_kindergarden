@@ -17,7 +17,7 @@ struct SearchMapViewState: Equatable {
     let currentLocation: Coordinates?
     let markers: [SearchMapMarker]
     let selectedKindergartenID: String?
-    let recenterRequestID: Int
+    let currentLocationRecenterRequestID: Int
 }
 
 enum SearchMapCameraCommand: Equatable {
@@ -26,19 +26,34 @@ enum SearchMapCameraCommand: Equatable {
     case centerOnCurrentLocation
 }
 
+private struct SearchMapAutoFitSignature: Equatable {
+    struct Marker: Equatable {
+        let id: String
+        let coordinates: Coordinates
+    }
+
+    let center: Coordinates
+    let markers: [Marker]
+
+    init(state: SearchMapViewState) {
+        center = state.center
+        markers = state.markers.map { Marker(id: $0.id, coordinates: $0.coordinates) }
+    }
+}
+
 enum SearchMapCameraDecision {
     static func command(
         previousRenderedState: SearchMapViewState?,
         nextState: SearchMapViewState,
-        isAwaitingExplicitRecenterCompletion: Bool
+        isPerformingExplicitCurrentLocationRecenter: Bool
     ) -> SearchMapCameraCommand {
-        if nextState.recenterRequestID != 0,
-           nextState.recenterRequestID != previousRenderedState?.recenterRequestID,
+        if nextState.currentLocationRecenterRequestID != 0,
+           nextState.currentLocationRecenterRequestID != previousRenderedState?.currentLocationRecenterRequestID,
            nextState.currentLocation != nil {
             return .centerOnCurrentLocation
         }
 
-        if isAwaitingExplicitRecenterCompletion {
+        if isPerformingExplicitCurrentLocationRecenter {
             return .none
         }
 
@@ -46,16 +61,10 @@ enum SearchMapCameraDecision {
             return .fitSearchContext
         }
 
-        return fitSignature(for: previousRenderedState) == fitSignature(for: nextState)
+        return SearchMapAutoFitSignature(state: previousRenderedState)
+            == SearchMapAutoFitSignature(state: nextState)
             ? .none
             : .fitSearchContext
-    }
-
-    private static func fitSignature(for state: SearchMapViewState) -> String {
-        let markerIDs = state.markers
-            .map { "\($0.id):\($0.coordinates.lat):\($0.coordinates.lng)" }
-            .joined(separator: "|")
-        return "\(state.center.lat):\(state.center.lng)|\(markerIDs)"
     }
 }
 
@@ -65,7 +74,7 @@ struct KakaoSearchMapSurface: View {
     let currentLocation: Coordinates?
     let markers: [SearchMapMarker]
     let selectedKindergartenID: String?
-    let recenterRequestID: Int
+    let currentLocationRecenterRequestID: Int
     @Binding var runtimeMessage: String?
     let showsStatusCard: Bool
     let onMarkerTap: (String) -> Void
@@ -76,7 +85,7 @@ struct KakaoSearchMapSurface: View {
             currentLocation: currentLocation,
             markers: markers,
             selectedKindergartenID: selectedKindergartenID,
-            recenterRequestID: recenterRequestID
+            currentLocationRecenterRequestID: currentLocationRecenterRequestID
         )
     }
 
@@ -246,14 +255,13 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             currentLocation: nil,
             markers: [],
             selectedKindergartenID: nil,
-            recenterRequestID: 0
+            currentLocationRecenterRequestID: 0
         )
         private var lastRenderedState: SearchMapViewState?
         private var lastAppliedContainerSize: CGSize = .zero
         private var pendingInitialViewAdd = false
         private var hasRequestedMapView = false
-        private var isAwaitingCurrentLocationCameraStop = false
-        private var pendingExplicitRecenterRequestID: Int?
+        private var activeCurrentLocationRecenterRequestID: Int?
         private let minimumRenderableViewDimension: CGFloat = 10
 
         init(
@@ -295,16 +303,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             applyMapViewRectIfNeeded(reason: "update")
 
             guard mapView != nil else { return }
-            if state.recenterRequestID != 0,
-               state.recenterRequestID != lastRenderedState?.recenterRequestID {
-                pendingExplicitRecenterRequestID = state.recenterRequestID
-            }
-            let cameraCommand = SearchMapCameraDecision.command(
-                previousRenderedState: lastRenderedState,
-                nextState: state,
-                isAwaitingExplicitRecenterCompletion: pendingExplicitRecenterRequestID != nil
-            )
-            renderMap(cameraCommand: cameraCommand)
+            renderMap(cameraCommand: cameraCommand(for: state))
             lastRenderedState = state
         }
 
@@ -323,7 +322,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             hasRequestedMapView = false
             lastRenderedState = nil
             lastAppliedContainerSize = .zero
-            pendingExplicitRecenterRequestID = nil
+            activeCurrentLocationRecenterRequestID = nil
         }
 
         private func initializeSDKIfNeeded() {
@@ -357,15 +356,14 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 viewName: "search-map",
                 viewInfoName: "map",
                 defaultPosition: defaultPosition,
-                defaultLevel: 5
+                defaultLevel: defaultSearchZoomLevel
             )
 
-            let viewSize = resolvedViewSize(from: rawSize)
             hasRequestedMapView = true
             Self.logger.notice(
-                "Adding Kakao view reason=\(reason, privacy: .public) width=\(viewSize.width, privacy: .public) height=\(viewSize.height, privacy: .public)"
+                "Adding Kakao view reason=\(reason, privacy: .public) width=\(rawSize.width, privacy: .public) height=\(rawSize.height, privacy: .public)"
             )
-            controller.addView(mapInfo, viewSize: viewSize)
+            controller.addView(mapInfo, viewSize: rawSize)
         }
 
         func addViewSucceeded(_ viewName: String, viewInfoName: String) {
@@ -382,12 +380,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             } else {
                 Self.logger.notice("Kakao addViewSucceeded viewName=\(viewName, privacy: .public) without container reference")
             }
-            let cameraCommand = SearchMapCameraDecision.command(
-                previousRenderedState: lastRenderedState,
-                nextState: currentState,
-                isAwaitingExplicitRecenterCompletion: pendingExplicitRecenterRequestID != nil
-            )
-            renderMap(cameraCommand: cameraCommand)
+            renderMap(cameraCommand: cameraCommand(for: currentState))
             lastRenderedState = currentState
         }
 
@@ -427,9 +420,16 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             }
         }
 
+        private func cameraCommand(for state: SearchMapViewState) -> SearchMapCameraCommand {
+            SearchMapCameraDecision.command(
+                previousRenderedState: lastRenderedState,
+                nextState: state,
+                isPerformingExplicitCurrentLocationRecenter: activeCurrentLocationRecenterRequestID != nil
+            )
+        }
+
         private func renderMap(cameraCommand: SearchMapCameraCommand) {
             guard let mapView else { return }
-            mapView.eventDelegate = self
 
             let labelManager = mapView.getLabelManager()
             configureStylesIfNeeded(labelManager: labelManager)
@@ -470,15 +470,10 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             }
         }
 
-        private func resolvedViewSize(from rawSize: CGSize) -> CGSize {
-            return rawSize
-        }
-
         private func applyMapViewRectIfNeeded(reason: String, size explicitSize: CGSize? = nil) {
             guard let mapView else { return }
 
-            let rawSize = explicitSize ?? container?.bounds.size ?? .zero
-            let size = resolvedViewSize(from: rawSize)
+            let size = explicitSize ?? container?.bounds.size ?? .zero
             guard size != lastAppliedContainerSize else { return }
 
             mapView.viewRect = CGRect(origin: .zero, size: size)
@@ -525,7 +520,6 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         private func fitCameraToSearchContext() {
             guard let mapView else { return }
-            isAwaitingCurrentLocationCameraStop = false
 
             var points = currentState.markers.map {
                 MapPoint(longitude: $0.coordinates.lng, latitude: $0.coordinates.lat)
@@ -539,7 +533,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 Self.logger.debug("Moved Kakao camera to area with \(points.count, privacy: .public) points")
             } else {
                 let target = MapPoint(longitude: currentState.center.lng, latitude: currentState.center.lat)
-                let cameraUpdate = CameraUpdate.make(target: target, zoomLevel: 5, mapView: mapView)
+                let cameraUpdate = CameraUpdate.make(target: target, zoomLevel: defaultSearchZoomLevel, mapView: mapView)
                 mapView.moveCamera(cameraUpdate)
                 Self.logger.debug("Moved Kakao camera to target lat=\(self.currentState.center.lat, privacy: .public) lng=\(self.currentState.center.lng, privacy: .public)")
             }
@@ -547,11 +541,12 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         private func centerCameraOnCurrentLocation() {
             guard let mapView, let currentLocation = currentState.currentLocation else {
-                isAwaitingCurrentLocationCameraStop = false
+                activeCurrentLocationRecenterRequestID = nil
                 return
             }
 
-            isAwaitingCurrentLocationCameraStop = true
+            let requestID = currentState.currentLocationRecenterRequestID
+            activeCurrentLocationRecenterRequestID = requestID
             let zoomLevel = mapView.zoomLevel > 0 ? mapView.zoomLevel : defaultSearchZoomLevel
             let target = MapPoint(longitude: currentLocation.lng, latitude: currentLocation.lat)
             let cameraUpdate = CameraUpdate.make(target: target, zoomLevel: zoomLevel, mapView: mapView)
@@ -560,7 +555,11 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 self.logMapInteraction(
                     "Current-location camera callback fired. focused=\(mapView.isFocused)"
                 )
-                self.restoreMapInteractivity(mapView, reason: "moveCamera callback")
+                self.completeExplicitCurrentLocationRecenter(
+                    requestID: requestID,
+                    on: mapView,
+                    reason: "moveCamera callback"
+                )
             }
             Self.logger.debug(
                 "Centered Kakao camera on current location lat=\(currentLocation.lat, privacy: .public) lng=\(currentLocation.lng, privacy: .public) zoom=\(zoomLevel, privacy: .public)"
@@ -577,14 +576,10 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         func cameraDidStopped(kakaoMap: KakaoMap, by: MoveBy) {
             logMapInteraction(
-                "Camera stopped. focused=\(kakaoMap.isFocused) awaitingRecovery=\(isAwaitingCurrentLocationCameraStop)"
+                "Camera stopped. focused=\(kakaoMap.isFocused) explicitRecenterInProgress=\(activeCurrentLocationRecenterRequestID != nil)"
             )
 
-            guard isAwaitingCurrentLocationCameraStop else { return }
-            isAwaitingCurrentLocationCameraStop = false
-            pendingExplicitRecenterRequestID = nil
-
-            restoreMapInteractivity(kakaoMap, reason: "cameraDidStopped")
+            completeActiveCurrentLocationRecenter(on: kakaoMap, reason: "cameraDidStopped")
         }
 
         private static func describe(_ mode: RenderMode) -> String {
@@ -746,6 +741,22 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         private func logMapInteraction(_ message: String) {
             Self.logger.notice("\(message, privacy: .public)")
+        }
+
+        private func completeActiveCurrentLocationRecenter(on kakaoMap: KakaoMap, reason: String) {
+            guard let requestID = activeCurrentLocationRecenterRequestID else { return }
+            completeExplicitCurrentLocationRecenter(requestID: requestID, on: kakaoMap, reason: reason)
+        }
+
+        private func completeExplicitCurrentLocationRecenter(
+            requestID: Int,
+            on kakaoMap: KakaoMap,
+            reason: String
+        ) {
+            guard activeCurrentLocationRecenterRequestID == requestID else { return }
+
+            activeCurrentLocationRecenterRequestID = nil
+            restoreMapInteractivity(kakaoMap, reason: reason)
         }
 
         private func restoreMapInteractivity(_ kakaoMap: KakaoMap, reason: String) {

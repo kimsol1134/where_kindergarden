@@ -462,12 +462,13 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertEqual(model.searchText, "")
         XCTAssertEqual(model.activeSearchType, .currentLocation)
+        XCTAssertTrue(model.isCurrentLocationSearchActive)
         XCTAssertEqual(model.locationLabel, "현재 위치")
         XCTAssertEqual(model.recentSearches.first?.searchType, .currentLocation)
     }
 
     @MainActor
-    func testPrimeCurrentLocationIfAuthorizedKeepsSearchStateIntact() async {
+    func testPrimeCurrentDeviceLocationIfAuthorizedKeepsSearchStateIntact() async {
         let model = makeNativeAppModel()
         let searchedCenter = Coordinates(lat: 37.5665, lng: 126.9780)
         model.setLocation(searchedCenter, label: "서울시청", searchType: .address)
@@ -476,7 +477,7 @@ final class NativeAppTests: XCTestCase {
         let originalResults = model.results.map(\.kindercode)
         let originalRecents = model.recentSearches
 
-        await model.primeCurrentLocationIfAuthorized()
+        await model.primeCurrentDeviceLocationIfAuthorized()
 
         XCTAssertEqual(model.currentDeviceLocation, Coordinates(lat: 37.4981, lng: 127.0276))
         XCTAssertEqual(model.userLocation, searchedCenter)
@@ -485,11 +486,11 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(model.activeSearchType, .address)
         XCTAssertEqual(model.results.map(\.kindercode), originalResults)
         XCTAssertEqual(model.recentSearches, originalRecents)
-        XCTAssertEqual(model.currentLocationRecenterTrigger, 0)
+        XCTAssertEqual(model.currentLocationRecenterRequestID, 0)
     }
 
     @MainActor
-    func testCurrentLocationRequestsAreSharedAcrossPrimeAndExplicitCenter() async {
+    func testCurrentLocationRequestsAreSharedAcrossPrimeAndFullCurrentLocationSearch() async {
         let store = InMemoryNativeAppStore()
         let persistence = NativeAppPersistence(store: store)
         let provider = CountingLocationProvider(
@@ -512,15 +513,57 @@ final class NativeAppTests: XCTestCase {
         )
 
         await withTaskGroup(of: Void.self) { group in
-            group.addTask { await model.primeCurrentLocationIfAuthorized() }
-            group.addTask { await model.centerOnCurrentLocation(recenterMap: true) }
+            group.addTask { await model.primeCurrentDeviceLocationIfAuthorized() }
+            group.addTask { await model.centerOnCurrentLocation() }
             await group.waitForAll()
         }
 
         XCTAssertEqual(provider.requestCount, 1)
         XCTAssertEqual(model.locationLabel, "현재 위치")
         XCTAssertEqual(model.activeSearchType, .currentLocation)
-        XCTAssertEqual(model.currentLocationRecenterTrigger, 1)
+        XCTAssertTrue(model.isCurrentLocationSearchActive)
+        XCTAssertEqual(model.currentLocationRecenterRequestID, 0)
+    }
+
+    @MainActor
+    func testRecenterMapToCurrentLocationUsesCachedDeviceLocation() async {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+        let currentLocation = Coordinates(lat: 37.4981, lng: 127.0276)
+        let provider = CountingLocationProvider(
+            coordinates: currentLocation,
+            delayNanoseconds: 0
+        )
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: provider,
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:]),
+            searchDebounceDuration: .zero
+        )
+
+        model.setLocation(Coordinates(lat: 37.5665, lng: 126.9780), label: "서울시청", searchType: .address)
+        model.updateSearchText("서울시청")
+
+        await model.primeCurrentDeviceLocationIfAuthorized()
+        XCTAssertEqual(provider.requestCount, 1)
+
+        await model.recenterMapToCurrentLocation()
+
+        XCTAssertEqual(provider.requestCount, 1)
+        XCTAssertEqual(model.userLocation, currentLocation)
+        XCTAssertEqual(model.locationLabel, "현재 위치")
+        XCTAssertEqual(model.searchText, "")
+        XCTAssertEqual(model.activeSearchType, .currentLocation)
+        XCTAssertTrue(model.isCurrentLocationSearchActive)
+        XCTAssertEqual(model.currentLocationRecenterRequestID, 1)
     }
 
     @MainActor

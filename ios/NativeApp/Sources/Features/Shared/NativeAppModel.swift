@@ -25,7 +25,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var searchText: String
     @Published public private(set) var activeSearchType: SearchType?
     @Published public private(set) var isLocatingCurrentPosition = false
-    @Published public private(set) var currentLocationRecenterTrigger = 0
+    @Published public private(set) var currentLocationRecenterRequestID = 0
 
     @Published public var filters: SearchFilters {
         didSet {
@@ -82,8 +82,8 @@ public final class NativeAppModel: ObservableObject {
     private var searchDeepLinkTask: Task<Void, Never>?
     private var searchSuggestionTask: Task<Void, Never>?
     private var resultQuery: String
-    private var locationRequestTask: Task<Coordinates, Error>?
-    private var locationRequestTaskID = 0
+    private var currentDeviceLocationTask: Task<Coordinates, Error>?
+    private var currentDeviceLocationTaskID = 0
 
     public init(
         kindergartenRepository: KindergartenJSONRepository,
@@ -502,11 +502,11 @@ public final class NativeAppModel: ObservableObject {
         refresh()
     }
 
-    public var isSearchingFromCurrentLocation: Bool {
+    public var isCurrentLocationSearchActive: Bool {
         activeSearchType == .currentLocation
     }
 
-    public func primeCurrentLocationIfAuthorized() async {
+    public func primeCurrentDeviceLocationIfAuthorized() async {
         refreshLocationPermissionState()
 
         guard locationPermissionState == .granted else {
@@ -515,7 +515,7 @@ public final class NativeAppModel: ObservableObject {
         }
 
         do {
-            let coordinates = try await requestCurrentLocation()
+            let coordinates = try await resolveCurrentDeviceLocation()
             currentDeviceLocation = coordinates
             locationPermissionState = .granted
             locationError = nil
@@ -529,7 +529,7 @@ public final class NativeAppModel: ObservableObject {
         }
     }
 
-    public func centerOnCurrentLocation(recenterMap: Bool = false) async {
+    public func centerOnCurrentLocation() async {
         dismissFirstLaunchIfNeeded()
         refreshLocationPermissionState()
 
@@ -538,24 +538,8 @@ public final class NativeAppModel: ObservableObject {
         }
 
         do {
-            let coordinates = try await requestCurrentLocation()
-            currentDeviceLocation = coordinates
-            locationPermissionState = .granted
-            locationError = nil
-            shouldFocusSearchField = false
-            if recenterMap {
-                currentLocationRecenterTrigger &+= 1
-            }
-            setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
-            setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
-
-            if results.isEmpty && filters.radiusKM < 5 {
-                let expandedRadii: [Double] = [2, 5]
-                for radius in expandedRadii where radius > filters.radiusKM {
-                    filters.radiusKM = radius
-                    if !results.isEmpty { break }
-                }
-            }
+            let coordinates = try await resolveCurrentDeviceLocation()
+            applyCurrentLocationSearch(using: coordinates, requestMapRecenter: false)
         } catch {
             let nextPermissionState = resolvedPermissionState(for: error)
             locationPermissionState = nextPermissionState
@@ -567,21 +551,16 @@ public final class NativeAppModel: ObservableObject {
         }
     }
 
-    public func recenterOnCurrentLocation() async {
+    public func recenterMapToCurrentLocation() async {
         dismissFirstLaunchIfNeeded()
         refreshLocationPermissionState()
 
         if let currentDeviceLocation {
-            locationPermissionState = .granted
-            locationError = nil
-            shouldFocusSearchField = false
-            currentLocationRecenterTrigger &+= 1
-            setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
-            setLocation(currentDeviceLocation, label: "현재 위치", searchType: .currentLocation)
+            applyCurrentLocationSearch(using: currentDeviceLocation, requestMapRecenter: true)
             return
         }
 
-        await centerOnCurrentLocation(recenterMap: true)
+        await centerOnCurrentLocation()
     }
 
     public func refreshLocationPermissionState() {
@@ -964,17 +943,42 @@ public final class NativeAppModel: ObservableObject {
         }
     }
 
-    private func requestCurrentLocation() async throws -> Coordinates {
-        try await sharedCurrentLocationTask().value
-    }
+    private func applyCurrentLocationSearch(using coordinates: Coordinates, requestMapRecenter: Bool) {
+        currentDeviceLocation = coordinates
+        locationPermissionState = .granted
+        locationError = nil
+        shouldFocusSearchField = false
 
-    private func sharedCurrentLocationTask() -> Task<Coordinates, Error> {
-        if let locationRequestTask {
-            return locationRequestTask
+        if requestMapRecenter {
+            currentLocationRecenterRequestID &+= 1
         }
 
-        locationRequestTaskID &+= 1
-        let requestID = locationRequestTaskID
+        setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
+        setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
+        expandRadiusForSparseCurrentLocationResultsIfNeeded()
+    }
+
+    private func expandRadiusForSparseCurrentLocationResultsIfNeeded() {
+        guard results.isEmpty, filters.radiusKM < 5 else { return }
+
+        let expandedRadii: [Double] = [2, 5]
+        for radius in expandedRadii where radius > filters.radiusKM {
+            filters.radiusKM = radius
+            if !results.isEmpty { break }
+        }
+    }
+
+    private func resolveCurrentDeviceLocation() async throws -> Coordinates {
+        try await sharedCurrentDeviceLocationTask().value
+    }
+
+    private func sharedCurrentDeviceLocationTask() -> Task<Coordinates, Error> {
+        if let currentDeviceLocationTask {
+            return currentDeviceLocationTask
+        }
+
+        currentDeviceLocationTaskID &+= 1
+        let requestID = currentDeviceLocationTaskID
         isLocatingCurrentPosition = true
 
         let task = Task { @MainActor [weak self] in
@@ -984,7 +988,7 @@ public final class NativeAppModel: ObservableObject {
             return try await self.locationProvider.requestCurrentLocation()
         }
 
-        locationRequestTask = task
+        currentDeviceLocationTask = task
 
         Task { @MainActor [weak self] in
             do {
@@ -993,8 +997,8 @@ public final class NativeAppModel: ObservableObject {
                 _ = error
             }
 
-            guard let self, self.locationRequestTaskID == requestID else { return }
-            self.locationRequestTask = nil
+            guard let self, self.currentDeviceLocationTaskID == requestID else { return }
+            self.currentDeviceLocationTask = nil
             self.isLocatingCurrentPosition = false
         }
 
