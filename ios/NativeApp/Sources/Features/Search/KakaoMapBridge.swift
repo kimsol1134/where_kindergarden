@@ -205,6 +205,10 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             selectedKindergartenID: nil
         )
         private var lastCameraSignature = ""
+        private var lastAppliedContainerSize: CGSize = .zero
+        private var pendingInitialViewAdd = false
+        private var hasRequestedMapView = false
+        private let minimumRenderableViewDimension: CGFloat = 10
 
         init(
             appKey: String,
@@ -241,6 +245,9 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 controller.activateEngine()
             }
 
+            addMapViewIfNeeded(reason: "update")
+            applyMapViewRectIfNeeded(reason: "update")
+
             guard mapView != nil else { return }
             renderMap(moveCameraIfNeeded: shouldMoveCamera(for: state))
         }
@@ -256,6 +263,9 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             resultLayer = nil
             currentLocationLayer = nil
             resultHandlers.removeAll()
+            pendingInitialViewAdd = false
+            hasRequestedMapView = false
+            lastAppliedContainerSize = .zero
         }
 
         private func initializeSDKIfNeeded() {
@@ -265,6 +275,22 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
         }
 
         func addViews() {
+            pendingInitialViewAdd = true
+            addMapViewIfNeeded(reason: "addViews")
+        }
+
+        private func addMapViewIfNeeded(reason: String) {
+            guard pendingInitialViewAdd else { return }
+            guard !hasRequestedMapView else { return }
+            guard let controller else { return }
+
+            let rawSize = container?.bounds.size ?? .zero
+            guard rawSize.width > minimumRenderableViewDimension,
+                  rawSize.height > minimumRenderableViewDimension else {
+                Self.logger.notice("Deferring Kakao view add until layout settles. reason=\(reason, privacy: .public)")
+                return
+            }
+
             let defaultPosition = MapPoint(
                 longitude: currentState.center.lng,
                 latitude: currentState.center.lat
@@ -275,12 +301,21 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 defaultPosition: defaultPosition,
                 defaultLevel: 5
             )
-            controller?.addView(mapInfo)
+
+            let viewSize = resolvedViewSize(from: rawSize)
+            hasRequestedMapView = true
+            Self.logger.notice(
+                "Adding Kakao view reason=\(reason, privacy: .public) width=\(viewSize.width, privacy: .public) height=\(viewSize.height, privacy: .public)"
+            )
+            controller.addView(mapInfo, viewSize: viewSize)
         }
 
         func addViewSucceeded(_ viewName: String, viewInfoName: String) {
             runtimeMessage.wrappedValue = nil
+            pendingInitialViewAdd = false
             mapView = controller?.getView(viewName) as? KakaoMap
+            mapView?.keepLevelOnResize = true
+            applyMapViewRectIfNeeded(reason: "addViewSucceeded")
             if let container {
                 Self.logger.notice(
                     "Kakao addViewSucceeded viewName=\(viewName, privacy: .public) renderMode=\(Self.describe(container.renderMode), privacy: .public) hasRenderView=\((container.renderView != nil), privacy: .public)"
@@ -293,12 +328,13 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         func addViewFailed(_ viewName: String, viewInfoName: String) {
             Self.logger.error("Kakao addViewFailed viewName=\(viewName, privacy: .public) viewInfoName=\(viewInfoName, privacy: .public)")
+            hasRequestedMapView = false
             runtimeMessage.wrappedValue = "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
         }
 
         func containerDidResized(_ size: CGSize) {
-            mapView?.viewRect = CGRect(origin: .zero, size: size)
-            Self.logger.debug("Kakao container resized width=\(size.width, privacy: .public) height=\(size.height, privacy: .public)")
+            addMapViewIfNeeded(reason: "containerDidResized")
+            applyMapViewRectIfNeeded(reason: "containerDidResized", size: size)
         }
 
         func authenticationSucceeded() {
@@ -308,7 +344,22 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
         func authenticationFailed(_ errorCode: Int, desc: String) {
             Self.logger.error("Kakao authentication failed code=\(errorCode, privacy: .public) desc=\(desc, privacy: .public)")
-            runtimeMessage.wrappedValue = "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
+            runtimeMessage.wrappedValue = runtimeFailureMessage(for: errorCode)
+        }
+
+        private func runtimeFailureMessage(for errorCode: Int) -> String {
+            switch errorCode {
+            case 401:
+                return "Kakao 지도 인증이 거부됐어요. 앱 키와 Kakao 개발자 설정을 확인해 주세요."
+            case 403:
+                return "Kakao 지도 권한이 없어 지도를 열 수 없어요. 설정을 확인해 주세요."
+            case 429:
+                return "Kakao 지도 호출 한도를 넘어 잠시 후 다시 시도해 주세요."
+            case 499:
+                return "Kakao 지도 서버와 통신하지 못했어요. 네트워크를 확인해 주세요."
+            default:
+                return "지도를 불러오지 못했어요. 아래 목록으로 먼저 둘러보세요."
+            }
         }
 
         private func renderMap(moveCameraIfNeeded: Bool) {
@@ -346,6 +397,24 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             if moveCameraIfNeeded {
                 updateCamera()
             }
+        }
+
+        private func resolvedViewSize(from rawSize: CGSize) -> CGSize {
+            return rawSize
+        }
+
+        private func applyMapViewRectIfNeeded(reason: String, size explicitSize: CGSize? = nil) {
+            guard let mapView else { return }
+
+            let rawSize = explicitSize ?? container?.bounds.size ?? .zero
+            let size = resolvedViewSize(from: rawSize)
+            guard size != lastAppliedContainerSize else { return }
+
+            mapView.viewRect = CGRect(origin: .zero, size: size)
+            lastAppliedContainerSize = size
+            Self.logger.notice(
+                "Applied Kakao viewRect reason=\(reason, privacy: .public) width=\(size.width, privacy: .public) height=\(size.height, privacy: .public)"
+            )
         }
 
         private func renderResultPois() {
@@ -438,15 +507,15 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
         private func configureStylesIfNeeded(labelManager: LabelManager) {
             guard !didConfigureStyles else { return }
             let stylePairs: [(String, UIImage)] = [
-                ("marker-default", makeMarkerImage(fill: UIColor(leafGreen), border: UIColor.white, text: nil, emphasized: false)),
-                ("marker-selected", makeMarkerImage(fill: UIColor(sunYellow), border: UIColor.white, text: nil, emphasized: true)),
-                ("marker-compared-1", makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "1", emphasized: false)),
-                ("marker-compared-2", makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "2", emphasized: false)),
-                ("marker-compared-3", makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "3", emphasized: false)),
-                ("marker-selected-compared-1", makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "1", emphasized: true)),
-                ("marker-selected-compared-2", makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "2", emphasized: true)),
-                ("marker-selected-compared-3", makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "3", emphasized: true)),
-                ("current-location", makeCurrentLocationImage()),
+                ("marker-default", pngNormalizedImage(makeMarkerImage(fill: UIColor(leafGreen), border: UIColor.white, text: nil, emphasized: false))),
+                ("marker-selected", pngNormalizedImage(makeMarkerImage(fill: UIColor(sunYellow), border: UIColor.white, text: nil, emphasized: true))),
+                ("marker-compared-1", pngNormalizedImage(makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "1", emphasized: false))),
+                ("marker-compared-2", pngNormalizedImage(makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "2", emphasized: false))),
+                ("marker-compared-3", pngNormalizedImage(makeMarkerImage(fill: UIColor(leafGreen), border: UIColor(sunYellow), text: "3", emphasized: false))),
+                ("marker-selected-compared-1", pngNormalizedImage(makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "1", emphasized: true))),
+                ("marker-selected-compared-2", pngNormalizedImage(makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "2", emphasized: true))),
+                ("marker-selected-compared-3", pngNormalizedImage(makeMarkerImage(fill: UIColor(sunYellow), border: UIColor(leafGreen), text: "3", emphasized: true))),
+                ("current-location", pngNormalizedImage(makeCurrentLocationImage())),
             ]
 
             for (styleID, image) in stylePairs {
@@ -455,6 +524,16 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 labelManager.addPoiStyle(PoiStyle(styleID: styleID, styles: [perLevelStyle]))
             }
             didConfigureStyles = true
+        }
+
+        private func pngNormalizedImage(_ image: UIImage) -> UIImage {
+            guard let pngData = image.pngData(),
+                  let normalizedImage = UIImage(data: pngData, scale: UIScreen.main.scale) else {
+                Self.logger.notice("Kakao marker image PNG normalization skipped")
+                return image
+            }
+
+            return normalizedImage
         }
 
         private func styleID(for compareOrder: Int?, isSelected: Bool) -> String {
@@ -479,21 +558,21 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
             text: String?,
             emphasized: Bool
         ) -> UIImage {
-            let size = CGSize(width: 42, height: 54)
+            let size = CGSize(width: 16, height: 21)
             let renderer = UIGraphicsImageRenderer(size: size)
 
             return renderer.image { context in
                 let cg = context.cgContext
-                let pinRect = CGRect(x: 5, y: 2, width: 32, height: 40)
-                let shadowColor = UIColor.black.withAlphaComponent(emphasized ? 0.25 : 0.16)
+                let pinRect = CGRect(x: 2.5, y: 1.0, width: 11, height: 14)
+                let shadowColor = UIColor.black.withAlphaComponent(emphasized ? 0.20 : 0.12)
 
-                cg.setShadow(offset: CGSize(width: 0, height: 8), blur: 12, color: shadowColor.cgColor)
+                cg.setShadow(offset: CGSize(width: 0, height: 2), blur: 3.5, color: shadowColor.cgColor)
                 let path = UIBezierPath()
-                path.move(to: CGPoint(x: pinRect.midX, y: pinRect.maxY + 10))
+                path.move(to: CGPoint(x: pinRect.midX, y: pinRect.maxY + 4))
                 path.addCurve(
                     to: CGPoint(x: pinRect.minX, y: pinRect.midY),
-                    controlPoint1: CGPoint(x: pinRect.midX - 12, y: pinRect.maxY + 4),
-                    controlPoint2: CGPoint(x: pinRect.minX, y: pinRect.maxY - 6)
+                    controlPoint1: CGPoint(x: pinRect.midX - 4.5, y: pinRect.maxY + 1.5),
+                    controlPoint2: CGPoint(x: pinRect.minX, y: pinRect.maxY - 2)
                 )
                 path.addArc(
                     withCenter: CGPoint(x: pinRect.midX, y: pinRect.midY),
@@ -503,9 +582,9 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                     clockwise: true
                 )
                 path.addCurve(
-                    to: CGPoint(x: pinRect.midX, y: pinRect.maxY + 10),
-                    controlPoint1: CGPoint(x: pinRect.maxX, y: pinRect.maxY - 6),
-                    controlPoint2: CGPoint(x: pinRect.midX + 12, y: pinRect.maxY + 4)
+                    to: CGPoint(x: pinRect.midX, y: pinRect.maxY + 4),
+                    controlPoint1: CGPoint(x: pinRect.maxX, y: pinRect.maxY - 2),
+                    controlPoint2: CGPoint(x: pinRect.midX + 4.5, y: pinRect.maxY + 1.5)
                 )
                 path.close()
 
@@ -513,23 +592,33 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
                 path.fill()
 
                 border.setStroke()
-                path.lineWidth = emphasized ? 4 : 3
+                path.lineWidth = emphasized ? 2.2 : 1.8
                 path.stroke()
 
+                let ringRect = CGRect(x: pinRect.midX - 2.4, y: pinRect.midY - 2.4, width: 4.8, height: 4.8)
+                let ringPath = UIBezierPath(ovalIn: ringRect)
+                UIColor.white.setFill()
+                ringPath.fill()
+
+                let centerRect = CGRect(x: pinRect.midX - 1.15, y: pinRect.midY - 1.15, width: 2.3, height: 2.3)
+                let centerPath = UIBezierPath(ovalIn: centerRect)
+                (emphasized ? UIColor(jadeDeep) : fill).setFill()
+                centerPath.fill()
+
                 if let text {
-                    let badgeRect = CGRect(x: 12, y: 10, width: 18, height: 18)
+                    let badgeRect = CGRect(x: 9, y: 3.2, width: 6.4, height: 6.4)
                     let badgePath = UIBezierPath(ovalIn: badgeRect)
                     UIColor.white.setFill()
                     badgePath.fill()
 
                     let attributes: [NSAttributedString.Key: Any] = [
-                        .font: UIFont.systemFont(ofSize: 11, weight: .bold),
-                        .foregroundColor: fill,
+                        .font: UIFont.systemFont(ofSize: 4.8, weight: .bold),
+                        .foregroundColor: emphasized ? UIColor(jadeDeep) : fill,
                     ]
                     let textSize = text.size(withAttributes: attributes)
                     let textOrigin = CGPoint(
                         x: badgeRect.midX - textSize.width / 2,
-                        y: badgeRect.midY - textSize.height / 2
+                        y: badgeRect.midY - textSize.height / 2 - 0.15
                     )
                     text.draw(at: textOrigin, withAttributes: attributes)
                 }

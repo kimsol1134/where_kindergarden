@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		0D2C57622F53A73CECF46A59 /* NativeApp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NativeApp; path = ../NativeApp; sourceTree = SOURCE_ROOT; };
 		35428D688B8EE0590B8914FC /* kindergartens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = kindergartens.json; path = ../../../public/data/kindergartens.json; sourceTree = "<group>"; };
+		3FCECE0A46E3B97EC9E75983 /* inject_kakao_keys.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = inject_kakao_keys.sh; sourceTree = "<group>"; };
 		43C2215E8F5BD484A2ACBDE8 /* reviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = reviews.json; path = ../../../public/data/reviews.json; sourceTree = "<group>"; };
 		614B734E74A5B7BDBEA8C104 /* vacancy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = vacancy.json; path = ../../../public/data/vacancy.json; sourceTree = "<group>"; };
 		6C677919E47B35DA97754F1F /* WhereKindergartenNativeHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereKindergartenNativeHostApp.swift; sourceTree = "<group>"; };
@@ -90,6 +91,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		6DE77AFD0F31F0C7BF5A29FF /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3FCECE0A46E3B97EC9E75983 /* inject_kakao_keys.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		910DD70A1B98A8662D8FD12A /* ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +134,7 @@
 				910DD70A1B98A8662D8FD12A /* ios */,
 				4B881123B4A59183867576F7 /* Packages */,
 				5C1565DEF9AA12B1087CCEEE /* Resources */,
+				6DE77AFD0F31F0C7BF5A29FF /* Scripts */,
 				5C244F8C4272AA666E83E370 /* Sources */,
 				594615B87801135194FB99CF /* Products */,
 			);
@@ -140,6 +150,7 @@
 				C1BAB1467DCB3F0462055A9C /* Sources */,
 				10A46C1DD5054FC2881C4E40 /* Resources */,
 				6133C5DC019C711AFC0B0FE5 /* Frameworks */,
+				130294355152876847A5481F /* Inject Kakao Keys */,
 			);
 			buildRules = (
 			);
@@ -203,6 +214,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130294355152876847A5481F /* Inject Kakao Keys */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Inject Kakao Keys";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nset -eu\n\nPROJECT_DIR=\"$(CDPATH= cd -- \"$(dirname \"$0\")/..\" && pwd)\"\nLOCAL_CONFIG=\"${PROJECT_DIR}/Config/KakaoKeys.local.xcconfig\"\nSHARED_CONFIG=\"${HOME}/.config/where-kindergarten/KakaoKeys.local.xcconfig\"\nINFO_PLIST=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nPLIST_BUDDY=\"/usr/libexec/PlistBuddy\"\n\nnormalize_value() {\n    printf '%s' \"$1\" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'\n}\n\nis_resolved_value() {\n    value=\"$(normalize_value \"$1\")\"\n    case \"$value\" in\n        \"\"|'$('*)\n            return 1\n            ;;\n        *)\n            return 0\n            ;;\n    esac\n}\n\nread_config_value() {\n    config_path=\"$1\"\n    key=\"$2\"\n\n    [ -f \"$config_path\" ] || return 1\n\n    raw_value=\"$(awk -F= -v key=\"$key\" '\n        $0 ~ \"^[[:space:]]*\" key \"[[:space:]]*=\" {\n            sub(/^[^=]*=/, \"\", $0)\n            print\n            exit\n        }\n    ' \"$config_path\")\"\n    value=\"$(normalize_value \"$raw_value\")\"\n    value=\"${value#\\\"}\"\n    value=\"${value%\\\"}\"\n\n    is_resolved_value \"$value\" || return 1\n    printf '%s' \"$value\"\n}\n\nread_plist_value() {\n    key_path=\"$1\"\n    raw_value=\"$(\"$PLIST_BUDDY\" -c \"Print ${key_path}\" \"$INFO_PLIST\" 2>/dev/null || true)\"\n    value=\"$(normalize_value \"$raw_value\")\"\n\n    is_resolved_value \"$value\" || return 1\n    printf '%s' \"$value\"\n}\n\nset_plist_string() {\n    key_path=\"$1\"\n    value=\"$2\"\n\n    if \"$PLIST_BUDDY\" -c \"Set ${key_path} ${value}\" \"$INFO_PLIST\" >/dev/null 2>&1; then\n        return 0\n    fi\n\n    \"$PLIST_BUDDY\" -c \"Add ${key_path} string ${value}\" \"$INFO_PLIST\" >/dev/null\n}\n\ndelete_plist_key() {\n    key_path=\"$1\"\n    \"$PLIST_BUDDY\" -c \"Delete ${key_path}\" \"$INFO_PLIST\" >/dev/null 2>&1 || true\n}\n\nconfig_has_resolved_key() {\n    config_path=\"$1\"\n\n    read_config_value \"$config_path\" \"WK_KAKAO_NATIVE_APP_KEY\" >/dev/null 2>&1 \\\n        || read_config_value \"$config_path\" \"WK_KAKAO_REST_API_KEY\" >/dev/null 2>&1\n}\n\nselected_source=\"\"\nselected_source_label=\"\"\n\nif config_has_resolved_key \"$LOCAL_CONFIG\"; then\n    selected_source=\"$LOCAL_CONFIG\"\n    selected_source_label=\"worktree-local\"\nelif config_has_resolved_key \"$SHARED_CONFIG\"; then\n    selected_source=\"$SHARED_CONFIG\"\n    selected_source_label=\"shared-global\"\nfi\n\napp_key=\"\"\nrest_key=\"\"\n\nif [ -n \"$selected_source\" ]; then\n    app_key=\"$(read_config_value \"$selected_source\" \"WK_KAKAO_NATIVE_APP_KEY\" 2>/dev/null || true)\"\n    rest_key=\"$(read_config_value \"$selected_source\" \"WK_KAKAO_REST_API_KEY\" 2>/dev/null || true)\"\nfi\n\nif [ -z \"$app_key\" ]; then\n    app_key=\"$(read_plist_value \":KAKAO_NATIVE_APP_KEY\" 2>/dev/null || true)\"\nfi\n\nif [ -z \"$rest_key\" ]; then\n    rest_key=\"$(read_plist_value \":KAKAO_REST_API_KEY\" 2>/dev/null || true)\"\nfi\n\nif [ -z \"$selected_source_label\" ] && { [ -n \"$app_key\" ] || [ -n \"$rest_key\" ]; }; then\n    selected_source_label=\"build-settings\"\nfi\n\nif [ -n \"$app_key\" ]; then\n    set_plist_string \":KAKAO_NATIVE_APP_KEY\" \"$app_key\"\n    set_plist_string \":CFBundleURLTypes:1:CFBundleURLSchemes:0\" \"kakao${app_key}\"\nfi\n\nif [ -n \"$rest_key\" ]; then\n    set_plist_string \":KAKAO_REST_API_KEY\" \"$rest_key\"\nfi\n\nif [ -n \"$selected_source_label\" ]; then\n    set_plist_string \":KAKAO_CONFIG_SOURCE\" \"$selected_source_label\"\nelse\n    delete_plist_key \":KAKAO_CONFIG_SOURCE\"\nfi\n\nif [ -n \"$selected_source\" ]; then\n    echo \"Resolved Kakao keys from ${selected_source_label} config.\"\nelif [ -n \"$selected_source_label\" ]; then\n    echo \"Using Kakao keys already present in build settings.\"\nelse\n    echo \"warning: Kakao keys not found in worktree-local or shared-global config. Search tab will stay in degraded map fallback mode.\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1BAB1467DCB3F0462055A9C /* Sources */ = {

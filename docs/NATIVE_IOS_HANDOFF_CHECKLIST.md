@@ -7,12 +7,14 @@
 ## 1. Kakao local setup
 
 1. `ios/WhereKindergartenNative/Config/KakaoKeys.example.xcconfig`를 복사해 `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`를 만든다.
+   - 여러 worktree에서 공통으로 재사용하려면 `~/.config/where-kindergarten/KakaoKeys.local.xcconfig`에 둬도 된다.
 2. 아래 두 값을 로컬에만 채운다.
    - `WK_KAKAO_NATIVE_APP_KEY`
    - `WK_KAKAO_REST_API_KEY`
 3. `ios/WhereKindergartenNative/Config/WhereKindergartenNative.xcconfig`에 아래 include가 유지되는지 확인한다.
    - `#include? "KakaoKeys.local.xcconfig"`
 4. 호스트 앱을 다시 빌드한다.
+   - 빌드 시 host target post-build script가 `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`를 우선 사용하고, 없으면 `~/.config/where-kindergarten/KakaoKeys.local.xcconfig`를 fallback으로 사용한다.
 
 참고:
 - 키가 없거나 값이 해석되지 않으면 앱은 의도적으로 fallback 모드로 내려간다.
@@ -60,6 +62,7 @@
 
 1. 현재 검색 기준 위치, 실제 기기 위치 상태, 찜/최근/비교 개수가 보이는지 확인
 2. Kakao 키 상태와 링크 구성이 표시되는지 확인
+   - debug 빌드에서는 `Kakao 키 소스`가 `현재 worktree 로컬 설정`, `공용 로컬 설정`, `빌드 설정`, `미설정` 중 하나로 보인다.
 3. 외부 링크가 기대한 목적지로 열리는지 확인
 
 ## 3. Release / handoff verification
