@@ -23,6 +23,9 @@ public final class NativeAppModel: ObservableObject {
     private static let searchLocale = Locale(identifier: "ko_KR")
 
     @Published public private(set) var searchText: String
+    @Published public private(set) var activeSearchType: SearchType?
+    @Published public private(set) var isLocatingCurrentPosition = false
+    @Published public private(set) var currentLocationRecenterTrigger = 0
 
     @Published public var filters: SearchFilters {
         didSet {
@@ -79,6 +82,8 @@ public final class NativeAppModel: ObservableObject {
     private var searchDeepLinkTask: Task<Void, Never>?
     private var searchSuggestionTask: Task<Void, Never>?
     private var resultQuery: String
+    private var locationRequestTask: Task<Coordinates, Error>?
+    private var locationRequestTaskID = 0
 
     public init(
         kindergartenRepository: KindergartenJSONRepository,
@@ -129,9 +134,11 @@ public final class NativeAppModel: ObservableObject {
         if let restoredSearch = restoredState.recentSearches.first, let coordinates = restoredSearch.coordinates {
             self.userLocation = coordinates
             self.locationLabel = restoredSearch.label
+            self.activeSearchType = restoredSearch.searchType
         } else {
             self.userLocation = Self.defaultCenter
             self.locationLabel = Self.defaultLocationLabel
+            self.activeSearchType = nil
         }
         self.currentDeviceLocation = nil
 
@@ -472,6 +479,7 @@ public final class NativeAppModel: ObservableObject {
         dismissFirstLaunchIfNeeded()
         userLocation = coordinates
         locationLabel = label
+        activeSearchType = searchType
         locationError = nil
 
         guard recordRecents else {
@@ -494,7 +502,34 @@ public final class NativeAppModel: ObservableObject {
         refresh()
     }
 
-    public func centerOnCurrentLocation() async {
+    public var isSearchingFromCurrentLocation: Bool {
+        activeSearchType == .currentLocation
+    }
+
+    public func primeCurrentLocationIfAuthorized() async {
+        refreshLocationPermissionState()
+
+        guard locationPermissionState == .granted else {
+            currentDeviceLocation = nil
+            return
+        }
+
+        do {
+            let coordinates = try await requestCurrentLocation()
+            currentDeviceLocation = coordinates
+            locationPermissionState = .granted
+            locationError = nil
+        } catch {
+            let nextPermissionState = resolvedPermissionState(for: error)
+            locationPermissionState = nextPermissionState
+
+            if nextPermissionState != .granted {
+                currentDeviceLocation = nil
+            }
+        }
+    }
+
+    public func centerOnCurrentLocation(recenterMap: Bool = false) async {
         dismissFirstLaunchIfNeeded()
         refreshLocationPermissionState()
 
@@ -503,11 +538,14 @@ public final class NativeAppModel: ObservableObject {
         }
 
         do {
-            let coordinates = try await locationProvider.requestCurrentLocation()
+            let coordinates = try await requestCurrentLocation()
             currentDeviceLocation = coordinates
             locationPermissionState = .granted
             locationError = nil
             shouldFocusSearchField = false
+            if recenterMap {
+                currentLocationRecenterTrigger &+= 1
+            }
             setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
             setLocation(coordinates, label: "현재 위치", searchType: .currentLocation)
 
@@ -519,10 +557,31 @@ public final class NativeAppModel: ObservableObject {
                 }
             }
         } catch {
-            locationPermissionState = resolvedPermissionState(for: error)
+            let nextPermissionState = resolvedPermissionState(for: error)
+            locationPermissionState = nextPermissionState
+            if nextPermissionState != .granted {
+                currentDeviceLocation = nil
+            }
             locationError = error.localizedDescription
             shouldFocusSearchField = false
         }
+    }
+
+    public func recenterOnCurrentLocation() async {
+        dismissFirstLaunchIfNeeded()
+        refreshLocationPermissionState()
+
+        if let currentDeviceLocation {
+            locationPermissionState = .granted
+            locationError = nil
+            shouldFocusSearchField = false
+            currentLocationRecenterTrigger &+= 1
+            setSearchText("", refreshSuggestions: false, applyAsResultQuery: false)
+            setLocation(currentDeviceLocation, label: "현재 위치", searchType: .currentLocation)
+            return
+        }
+
+        await centerOnCurrentLocation(recenterMap: true)
     }
 
     public func refreshLocationPermissionState() {
@@ -700,8 +759,9 @@ public final class NativeAppModel: ObservableObject {
     public func restoreRecentSearch(_ search: RecentSearch) {
         dismissFirstLaunchIfNeeded()
         guard let coordinates = search.coordinates else { return }
-        setLocation(coordinates, label: search.label)
-        setSearchText(search.label, refreshSuggestions: false, applyAsResultQuery: false)
+        setLocation(coordinates, label: search.label, searchType: search.searchType)
+        let searchText = search.searchType == .currentLocation ? "" : search.label
+        setSearchText(searchText, refreshSuggestions: false, applyAsResultQuery: false)
         selectedTab = .search
     }
 
@@ -902,6 +962,43 @@ public final class NativeAppModel: ObservableObject {
         } else {
             clearSearchSuggestions()
         }
+    }
+
+    private func requestCurrentLocation() async throws -> Coordinates {
+        try await sharedCurrentLocationTask().value
+    }
+
+    private func sharedCurrentLocationTask() -> Task<Coordinates, Error> {
+        if let locationRequestTask {
+            return locationRequestTask
+        }
+
+        locationRequestTaskID &+= 1
+        let requestID = locationRequestTaskID
+        isLocatingCurrentPosition = true
+
+        let task = Task { @MainActor [weak self] in
+            guard let self else {
+                throw CancellationError()
+            }
+            return try await self.locationProvider.requestCurrentLocation()
+        }
+
+        locationRequestTask = task
+
+        Task { @MainActor [weak self] in
+            do {
+                _ = try await task.value
+            } catch {
+                _ = error
+            }
+
+            guard let self, self.locationRequestTaskID == requestID else { return }
+            self.locationRequestTask = nil
+            self.isLocatingCurrentPosition = false
+        }
+
+        return task
     }
 
     private func refreshSearchSuggestions() {

@@ -48,6 +48,17 @@ struct NativeBottomSheet<Content: View>: UIViewControllerRepresentable {
 
 // MARK: - UIKit Controller
 
+private final class PassthroughContainerView: UIView {
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        subviews.contains { subview in
+            !subview.isHidden
+                && subview.alpha > 0.01
+                && subview.isUserInteractionEnabled
+                && subview.frame.contains(point)
+        }
+    }
+}
+
 final class NativeBottomSheetController<Content: View>: UIViewController, UIGestureRecognizerDelegate {
 
     // MARK: Properties
@@ -84,6 +95,10 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
     required init?(coder: NSCoder) { fatalError() }
 
     // MARK: Lifecycle
+
+    override func loadView() {
+        view = PassthroughContainerView()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

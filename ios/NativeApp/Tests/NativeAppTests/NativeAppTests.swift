@@ -461,8 +461,66 @@ final class NativeAppTests: XCTestCase {
         await model.centerOnCurrentLocation()
 
         XCTAssertEqual(model.searchText, "")
+        XCTAssertEqual(model.activeSearchType, .currentLocation)
         XCTAssertEqual(model.locationLabel, "현재 위치")
         XCTAssertEqual(model.recentSearches.first?.searchType, .currentLocation)
+    }
+
+    @MainActor
+    func testPrimeCurrentLocationIfAuthorizedKeepsSearchStateIntact() async {
+        let model = makeNativeAppModel()
+        let searchedCenter = Coordinates(lat: 37.5665, lng: 126.9780)
+        model.setLocation(searchedCenter, label: "서울시청", searchType: .address)
+        model.updateSearchText("서울시청")
+
+        let originalResults = model.results.map(\.kindercode)
+        let originalRecents = model.recentSearches
+
+        await model.primeCurrentLocationIfAuthorized()
+
+        XCTAssertEqual(model.currentDeviceLocation, Coordinates(lat: 37.4981, lng: 127.0276))
+        XCTAssertEqual(model.userLocation, searchedCenter)
+        XCTAssertEqual(model.locationLabel, "서울시청")
+        XCTAssertEqual(model.searchText, "서울시청")
+        XCTAssertEqual(model.activeSearchType, .address)
+        XCTAssertEqual(model.results.map(\.kindercode), originalResults)
+        XCTAssertEqual(model.recentSearches, originalRecents)
+        XCTAssertEqual(model.currentLocationRecenterTrigger, 0)
+    }
+
+    @MainActor
+    func testCurrentLocationRequestsAreSharedAcrossPrimeAndExplicitCenter() async {
+        let store = InMemoryNativeAppStore()
+        let persistence = NativeAppPersistence(store: store)
+        let provider = CountingLocationProvider(
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276),
+            delayNanoseconds: 60_000_000
+        )
+
+        let model = NativeAppModel(
+            kindergartenRepository: KindergartenJSONRepository { Data() },
+            reviewRepository: ReviewRepository(localLoader: { Data() }),
+            remoteSearchService: KakaoLocalSuggestionService(
+                client: KakaoLocalAPIClient(apiKey: nil)
+            ),
+            locationProvider: provider,
+            persistence: persistence,
+            configuration: NativeAppConfiguration(kakaoAppKey: nil),
+            initialKindergartens: NativePreviewFixtures.kindergartens,
+            initialReviews: ReviewsData(version: "2026-03-17", totalCount: 0, kindergartenCount: 0, reviews: [:]),
+            searchDebounceDuration: .zero
+        )
+
+        await withTaskGroup(of: Void.self) { group in
+            group.addTask { await model.primeCurrentLocationIfAuthorized() }
+            group.addTask { await model.centerOnCurrentLocation(recenterMap: true) }
+            await group.waitForAll()
+        }
+
+        XCTAssertEqual(provider.requestCount, 1)
+        XCTAssertEqual(model.locationLabel, "현재 위치")
+        XCTAssertEqual(model.activeSearchType, .currentLocation)
+        XCTAssertEqual(model.currentLocationRecenterTrigger, 1)
     }
 
     @MainActor
@@ -696,6 +754,37 @@ private final class FailingLocationProvider: CurrentLocationProviding {
 
     func permissionState() -> LocationPermissionState {
         .denied
+    }
+}
+
+private final class CountingLocationProvider: CurrentLocationProviding {
+    private let coordinates: Coordinates
+    private let delayNanoseconds: UInt64
+    private let lock = NSLock()
+    private var _requestCount = 0
+
+    init(coordinates: Coordinates, delayNanoseconds: UInt64) {
+        self.coordinates = coordinates
+        self.delayNanoseconds = delayNanoseconds
+    }
+
+    var requestCount: Int {
+        lock.lock()
+        defer { lock.unlock() }
+        return _requestCount
+    }
+
+    func requestCurrentLocation() async throws -> Coordinates {
+        lock.lock()
+        _requestCount += 1
+        lock.unlock()
+
+        try await Task.sleep(nanoseconds: delayNanoseconds)
+        return coordinates
+    }
+
+    func permissionState() -> LocationPermissionState {
+        .granted
     }
 }
 

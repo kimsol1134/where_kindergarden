@@ -304,6 +304,71 @@ final class NativeSearchTests: XCTestCase {
         XCTAssertEqual(model.locationLabel, "서초구청")
     }
 
+    func testSearchMapCameraDecisionIgnoresPassiveCurrentLocationUpdate() {
+        let marker = SearchMapMarker(
+            id: "A001",
+            title: "역삼유치원",
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276),
+            compareOrder: nil
+        )
+        let previous = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: nil,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            recenterRequestID: 0
+        )
+        let next = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: Coordinates(lat: 37.4970, lng: 127.0280),
+            markers: [marker],
+            selectedKindergartenID: nil,
+            recenterRequestID: 0
+        )
+
+        XCTAssertEqual(
+            SearchMapCameraDecision.command(
+                previousRenderedState: previous,
+                nextState: next,
+                isAwaitingExplicitRecenterCompletion: false
+            ),
+            .none
+        )
+    }
+
+    func testSearchMapCameraDecisionCentersOnExplicitRecenterRequest() {
+        let currentLocation = Coordinates(lat: 37.4970, lng: 127.0280)
+        let marker = SearchMapMarker(
+            id: "A001",
+            title: "역삼유치원",
+            coordinates: Coordinates(lat: 37.4981, lng: 127.0276),
+            compareOrder: nil
+        )
+        let previous = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: currentLocation,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            recenterRequestID: 0
+        )
+        let next = SearchMapViewState(
+            center: Coordinates(lat: 37.4981, lng: 127.0276),
+            currentLocation: currentLocation,
+            markers: [marker],
+            selectedKindergartenID: nil,
+            recenterRequestID: 1
+        )
+
+        XCTAssertEqual(
+            SearchMapCameraDecision.command(
+                previousRenderedState: previous,
+                nextState: next,
+                isAwaitingExplicitRecenterCompletion: false
+            ),
+            .centerOnCurrentLocation
+        )
+    }
+
     @MainActor
     func testSearchModelRestoresRecentSearchAndKeepsSearchTabActive() {
         let model = makeModel()
