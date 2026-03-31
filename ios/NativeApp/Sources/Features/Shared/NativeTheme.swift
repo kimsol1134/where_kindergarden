@@ -353,7 +353,7 @@ public func configureNativeTabBarAppearance() {
     let appearance = UITabBarAppearance()
     appearance.configureWithTransparentBackground()
     appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
-    appearance.backgroundColor = UIColor(cloudWhite).withAlphaComponent(0.84)
+    appearance.backgroundColor = UIColor(paperWhite).withAlphaComponent(0.84)
     appearance.shadowColor = UIColor(lineSoft)
 
     let normal = appearance.stackedLayoutAppearance.normal
