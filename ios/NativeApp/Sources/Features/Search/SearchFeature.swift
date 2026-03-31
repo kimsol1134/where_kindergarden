@@ -132,6 +132,12 @@ public struct SearchHomeView: View {
         return nil
     }
 
+    private var visibleMapStatusMessage: String? {
+        guard let message = mapStatusMessage else { return nil }
+        guard !isSearchPanelPresented else { return nil }
+        return message
+    }
+
     public var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -167,7 +173,7 @@ public struct SearchHomeView: View {
                     SearchChrome(
                         model: model,
                         isSuggestionPanelPresented: $isSearchPanelPresented,
-                        mapStatusMessage: mapStatusMessage
+                        mapStatusMessage: visibleMapStatusMessage
                     )
                     Spacer()
                 }
@@ -467,6 +473,25 @@ private struct SearchChrome: View {
                     }
                     .padding(.horizontal, 2)
                 }
+            }
+
+            if let mapStatusMessage {
+                HStack(alignment: .top, spacing: 10) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(sunYellow)
+                        .padding(.top, 2)
+
+                    Text(mapStatusMessage)
+                        .font(.footnote)
+                        .foregroundStyle(inkBlack)
+                        .fixedSize(horizontal: false, vertical: true)
+
+                    Spacer(minLength: 0)
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .solidPanel(cornerRadius: CornerRadius.large, tint: warmSand.opacity(0.30))
             }
         }
         .padding(.horizontal, 20)

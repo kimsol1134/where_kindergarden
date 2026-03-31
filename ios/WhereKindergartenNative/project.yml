@@ -8,6 +8,7 @@ options:
     fi
 fileGroups:
   - Config
+  - Scripts
 settings:
   base:
     SWIFT_VERSION: 5.10
@@ -52,6 +53,12 @@ targets:
     dependencies:
       - package: NativeApp
         product: AppShell
+    postBuildScripts:
+      - name: Inject Kakao Keys
+        path: Scripts/inject_kakao_keys.sh
+        shell: /bin/sh
+        basedOnDependencyAnalysis: false
+        showEnvVars: false
     settings:
       base:
         PRODUCT_NAME: WhereKindergartenNative

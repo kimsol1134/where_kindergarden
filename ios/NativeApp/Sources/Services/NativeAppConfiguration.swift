@@ -1,9 +1,28 @@
 import Foundation
 
+public enum KakaoConfigurationSource: String, Sendable {
+    case worktreeLocal = "worktree-local"
+    case sharedGlobal = "shared-global"
+    case buildSettings = "build-settings"
+
+    public var description: String {
+        switch self {
+        case .worktreeLocal:
+            return "현재 worktree 로컬 설정"
+        case .sharedGlobal:
+            return "공용 로컬 설정"
+        case .buildSettings:
+            return "빌드 설정"
+        }
+    }
+}
+
 public struct NativeAppConfiguration: Sendable {
     public static let kakaoKeysConfigRelativePath = "ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig"
+    public static let sharedKakaoKeysConfigPath = "~/.config/where-kindergarten/KakaoKeys.local.xcconfig"
     public static let kakaoNativeAppKeyBuildSetting = "WK_KAKAO_NATIVE_APP_KEY"
     public static let kakaoRESTAPIKeyBuildSetting = "WK_KAKAO_REST_API_KEY"
+    public static let kakaoConfigSourceInfoKey = "KAKAO_CONFIG_SOURCE"
 
     public static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
     public static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
@@ -11,6 +30,7 @@ public struct NativeAppConfiguration: Sendable {
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
+    public let kakaoConfigurationSource: KakaoConfigurationSource?
     public let adMobBannerUnitID: String
     public let reviewsRemoteURL: URL
     public let vacancyRemoteURL: URL
@@ -22,6 +42,7 @@ public struct NativeAppConfiguration: Sendable {
     public init(
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
+        kakaoConfigurationSource: String? = nil,
         adMobBannerUnitID: String = "ca-app-pub-5648788643644962/5397823299",
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
@@ -32,6 +53,8 @@ public struct NativeAppConfiguration: Sendable {
     ) {
         self.kakaoAppKey = Self.normalizedValue(kakaoAppKey)
         self.kakaoRESTAPIKey = Self.normalizedValue(kakaoRESTAPIKey)
+        self.kakaoConfigurationSource = Self.normalizedValue(kakaoConfigurationSource)
+            .flatMap(KakaoConfigurationSource.init(rawValue:))
         self.adMobBannerUnitID = adMobBannerUnitID
         self.reviewsRemoteURL = reviewsRemoteURL
         self.vacancyRemoteURL = vacancyRemoteURL
@@ -44,7 +67,8 @@ public struct NativeAppConfiguration: Sendable {
     public static func live(bundle: Bundle = .main) -> NativeAppConfiguration {
         NativeAppConfiguration(
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
-            kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String
+            kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String,
+            kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String
         )
     }
 
@@ -54,6 +78,10 @@ public struct NativeAppConfiguration: Sendable {
 
     public var hasKakaoRESTAPIKey: Bool {
         kakaoRESTAPIKey != nil
+    }
+
+    public var kakaoConfigurationSourceDescription: String {
+        kakaoConfigurationSource?.description ?? "미설정"
     }
 
     public var missingKakaoBuildSettings: [String] {
@@ -72,7 +100,7 @@ public struct NativeAppConfiguration: Sendable {
 
     public var kakaoConfigurationHelpText: String {
         let missingKeys = missingKakaoBuildSettings.joined(separator: ", ")
-        return "\(Self.kakaoKeysConfigRelativePath)에서 \(missingKeys) 값을 채우면 실지도와 원격 장소/주소 제안을 검증할 수 있습니다."
+        return "\(Self.kakaoKeysConfigRelativePath) 또는 \(Self.sharedKakaoKeysConfigPath)에서 \(missingKeys) 값을 채우면 실지도와 원격 장소/주소 제안을 검증할 수 있습니다."
     }
 
     public var universalLinkHost: String? {

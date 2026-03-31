@@ -121,6 +121,7 @@ public struct MoreView: View {
                         }())
                         StatRow(title: "Kakao 지도 키", value: model.configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
                         StatRow(title: "Kakao Local 키", value: model.configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
+                        StatRow(title: "Kakao 키 소스", value: model.configuration.kakaoConfigurationSourceDescription)
                         StatRow(title: "딥링크", value: "wherekindergarten://compare?ids=...")
                         StatRow(title: "찜한 기관", value: "\(model.favorites.count)곳")
                         StatRow(title: "최근 검색", value: "\(model.recentSearches.count)건")

@@ -256,17 +256,21 @@ final class NativeAppTests: XCTestCase {
 
         XCTAssertNil(configuration.kakaoAppKey)
         XCTAssertNil(configuration.kakaoRESTAPIKey)
+        XCTAssertNil(configuration.kakaoConfigurationSource)
     }
 
     func testNativeAppConfigurationSurfacesVerificationState() {
         let configuration = NativeAppConfiguration(
             kakaoAppKey: nil,
             kakaoRESTAPIKey: nil,
+            kakaoConfigurationSource: "shared-global",
             compareShareBaseURL: URL(string: "https://where-kindergarden.vercel.app/compare")!
         )
 
         XCTAssertFalse(configuration.hasKakaoMapKey)
         XCTAssertFalse(configuration.hasKakaoRESTAPIKey)
+        XCTAssertEqual(configuration.kakaoConfigurationSource, .sharedGlobal)
+        XCTAssertEqual(configuration.kakaoConfigurationSourceDescription, "공용 로컬 설정")
         XCTAssertEqual(
             configuration.missingKakaoBuildSettings,
             [
@@ -276,6 +280,7 @@ final class NativeAppTests: XCTestCase {
         )
         XCTAssertEqual(configuration.universalLinkHost, "where-kindergarden.vercel.app")
         XCTAssertTrue(configuration.kakaoConfigurationHelpText.contains("KakaoKeys.local.xcconfig"))
+        XCTAssertTrue(configuration.kakaoConfigurationHelpText.contains("~/.config/where-kindergarten"))
     }
 
     @MainActor

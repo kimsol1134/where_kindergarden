@@ -19,12 +19,16 @@ SwiftUI-first native package for `우리동네 유치원`.
 - Install and launch the built host app in Simulator before handoff.
 
 ## Kakao local setup
-1. Copy `ios/WhereKindergartenNative/Config/KakaoKeys.example.xcconfig` to `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`.
+1. Copy `ios/WhereKindergartenNative/Config/KakaoKeys.example.xcconfig` to one of the supported local paths:
+   - worktree-local override: `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`
+   - shared fallback for all worktrees: `~/.config/where-kindergarten/KakaoKeys.local.xcconfig`
 2. Fill `WK_KAKAO_NATIVE_APP_KEY` and `WK_KAKAO_REST_API_KEY`.
 3. Confirm `ios/WhereKindergartenNative/Config/WhereKindergartenNative.xcconfig` still includes `#include? "KakaoKeys.local.xcconfig"`.
-4. Rebuild the host app.
+4. Rebuild the host app. The host target post-build script will patch the built app `Info.plist` and Kakao callback scheme from the first resolved source in this order:
+   - `ios/WhereKindergartenNative/Config/KakaoKeys.local.xcconfig`
+   - `~/.config/where-kindergarten/KakaoKeys.local.xcconfig`
 
-If `KakaoKeys.local.xcconfig` is absent or unresolved, the app intentionally falls back to local kindergarten suggestions plus recent searches and will not enable live Kakao Local suggestions.
+If neither local path is present or resolved, the app intentionally falls back to local kindergarten suggestions plus recent searches and will not enable live Kakao Local suggestions. Debug builds surface the effective Kakao key source in the More tab.
 
 2026-03-19 measured runtime state:
 - Kakao Local REST requests succeed with the injected `WK_KAKAO_REST_API_KEY`.
