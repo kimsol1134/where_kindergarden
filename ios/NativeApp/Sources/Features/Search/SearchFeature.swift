@@ -15,6 +15,7 @@ public struct SearchHomeView: View {
     @State private var sheetFraction: CGFloat = 0.38
     @State private var dragOffset: CGFloat = 0
     private let bottomStackSpacing: CGFloat = 12
+    private let minimumSheetHeight: CGFloat = 200
     private let sheetSnaps: [CGFloat] = [0.32, 0.55, 0.88]
 
     public init(model: NativeAppModel) {
@@ -164,9 +165,11 @@ public struct SearchHomeView: View {
             }
             .overlay(alignment: .bottom) {
                 if !isSearchPanelPresented {
+                    let minimumVisibleSheetHeight = max(screenHeight * sheetSnaps[0], minimumSheetHeight)
+                    let maximumVisibleSheetHeight = max(screenHeight * sheetSnaps[2], minimumVisibleSheetHeight)
                     let sheetHeight = min(
-                        max(screenHeight * sheetFraction - dragOffset, screenHeight * sheetSnaps[0]),
-                        screenHeight * sheetSnaps[2]
+                        max(screenHeight * sheetFraction - dragOffset, minimumVisibleSheetHeight),
+                        maximumVisibleSheetHeight
                     )
 
                     VStack(spacing: 0) {
@@ -177,6 +180,7 @@ public struct SearchHomeView: View {
                             .padding(.top, 10)
                             .padding(.bottom, 8)
                             .frame(maxWidth: .infinity)
+                            .layoutPriority(2)
                             .contentShape(Rectangle())
                             .gesture(
                                 DragGesture()
@@ -204,6 +208,7 @@ public struct SearchHomeView: View {
                             .animation(.spring(duration: 0.35), value: model.compareSelection.ids.count)
                             .padding(.horizontal, 20)
                             .padding(.bottom, bottomStackSpacing)
+                            .layoutPriority(1)
                         }
 
                         ResultSheet(
@@ -213,6 +218,7 @@ public struct SearchHomeView: View {
                             trimmedSearchQuery: trimmedSearchQuery,
                             adUnitID: model.configuration.adMobBannerUnitID
                         )
+                        .layoutPriority(1)
                     }
                     .frame(height: sheetHeight)
                     .background(
@@ -779,13 +785,17 @@ private struct ResultSheet: View {
                 }
                 Spacer()
             }
+            .fixedSize(horizontal: false, vertical: true)
+            .layoutPriority(2)
 
             if let degradedMessage {
                 InlineNotice(message: degradedMessage)
+                    .layoutPriority(1)
             }
 
             if results.isEmpty {
                 emptyContent
+                    .frame(maxHeight: .infinity, alignment: .top)
             } else {
                 ScrollView {
                     LazyVStack(spacing: 12) {
@@ -810,9 +820,11 @@ private struct ResultSheet: View {
                     }
                     .padding(.bottom, 8)
                 }
+                .frame(maxHeight: .infinity, alignment: .top)
             }
         }
         .padding(.horizontal, 20)
+        .padding(.bottom, 12)
     }
 }
 

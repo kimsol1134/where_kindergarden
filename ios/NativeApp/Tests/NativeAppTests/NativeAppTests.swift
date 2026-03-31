@@ -455,6 +455,8 @@ final class NativeAppTests: XCTestCase {
         let model = makeNativeAppModel()
         await model.centerOnCurrentLocation()
 
+        XCTAssertEqual(model.searchText, "")
+        XCTAssertEqual(model.locationLabel, "현재 위치")
         XCTAssertEqual(model.recentSearches.first?.searchType, .currentLocation)
     }
 
