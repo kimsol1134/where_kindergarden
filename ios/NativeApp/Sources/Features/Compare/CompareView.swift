@@ -29,7 +29,7 @@ public struct CompareView: View {
                             title: "나란히 보기",
                             subtitle: summaryLine
                         ) {
-                            Text("최대 3곳")
+                            Text(items.isEmpty ? "최대 3곳" : "\(items.count) / 3곳")
                                 .font(.footnote.weight(.semibold))
                                 .foregroundStyle(inkBlack)
                                 .padding(.horizontal, 14)
@@ -81,22 +81,22 @@ public struct CompareView: View {
                                 let reviewCounts = items.map { model.reviews(for: $0.kindercode).count }
                                 let vacancyCounts = items.map { model.vacancyCount(for: $0.kindercode) }
 
-                                CompareQuickStats(
-                                    items: items,
-                                    reviewCounts: reviewCounts,
-                                    vacancyCounts: vacancyCounts,
-                                    scores: scores
-                                )
+                                if let summary = winnerSummary(scores: scores) {
+                                    Label(summary, systemImage: "crown.fill")
+                                        .font(.subheadline.weight(.semibold))
+                                        .foregroundStyle(Color(red: 0.55, green: 0.40, blue: 0.05))
+                                        .padding(.horizontal, 14)
+                                        .padding(.vertical, 10)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .background(sunYellow.opacity(0.18), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+                                }
 
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    HStack(spacing: 14) {
-                                        ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                                            CompareHeaderCard(item: item, score: scores[index]) {
-                                                model.toggleCompare(for: item)
-                                            }
+                                HStack(alignment: .top, spacing: 14) {
+                                    ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                                        CompareHeaderCard(item: item, score: scores[index]) {
+                                            model.toggleCompare(for: item)
                                         }
                                     }
-                                    .padding(.vertical, 4)
                                 }
 
                                 CompareMatrixView(
@@ -133,6 +133,15 @@ public struct CompareView: View {
         default:
             return "선택한 \(items.count)곳을 같은 기준으로 비교해요."
         }
+    }
+
+    // MARK: - Winner summary
+
+    private func winnerSummary(scores: [Int]) -> String? {
+        guard let maxScore = scores.max(), maxScore > 0 else { return nil }
+        let winnerIndexes = scores.enumerated().filter { $0.element == maxScore }
+        guard winnerIndexes.count == 1, let winner = winnerIndexes.first else { return nil }
+        return "\(items[winner.offset].name)이 \(maxScore)개 항목에서 우세"
     }
 
     // MARK: - Score calculation
@@ -253,134 +262,6 @@ public struct CompareView: View {
         .joined(separator: "\n\n")
     }
 
-// MARK: - CompareQuickStats
-
-private struct CompareQuickStats: View {
-    let items: [Kindergarten]
-    let reviewCounts: [Int]
-    let vacancyCounts: [Int]
-    let scores: [Int]
-
-    private var winnerSummary: String? {
-        guard let maxScore = scores.max(), maxScore > 0 else { return nil }
-        let winnerIndexes = scores.enumerated().filter { $0.element == maxScore }
-        guard winnerIndexes.count == 1, let winner = winnerIndexes.first else { return nil }
-        return "\(items[winner.offset].name)이 \(maxScore)개 항목에서 우세"
-    }
-
-    private var bestTeacherRatio: (name: String, value: String)? {
-        let ratios: [(Int, Double)] = items.enumerated().compactMap { i, item in
-            guard item.teacherCount > 0 else { return nil }
-            return (i, Double(item.currentCount) / Double(item.teacherCount))
-        }
-        guard let best = ratios.min(by: { $0.1 < $1.1 }) else { return nil }
-        return (items[best.0].name, String(format: "1:%.1f", best.1))
-    }
-
-    private var bestVacancy: (name: String, value: String)? {
-        guard let maxVacancy = vacancyCounts.max(), maxVacancy > 0 else { return nil }
-        if let index = vacancyCounts.firstIndex(of: maxVacancy) {
-            return (items[index].name, "\(maxVacancy)자리")
-        }
-        return nil
-    }
-
-    private var directMealKinder: String? {
-        items.first(where: { $0.mealType == .direct })?.name
-    }
-
-    private var bestReview: (name: String, value: String)? {
-        guard let maxReview = reviewCounts.max(), maxReview > 0 else { return nil }
-        if let index = reviewCounts.firstIndex(of: maxReview) {
-            return (items[index].name, "\(maxReview)건")
-        }
-        return nil
-    }
-
-    private let columns = [
-        GridItem(.flexible(), spacing: 10),
-        GridItem(.flexible(), spacing: 10)
-    ]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            NativeBadge("한눈에 비교", tone: .slate)
-
-            if let summary = winnerSummary {
-                Label(summary, systemImage: "crown.fill")
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(Color(red: 0.55, green: 0.40, blue: 0.05))
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 8)
-                    .background(sunYellow.opacity(0.18), in: Capsule())
-            }
-
-            LazyVGrid(columns: columns, spacing: 10) {
-                quickStatTile(
-                    icon: "person.2",
-                    label: "교사 비율",
-                    name: bestTeacherRatio?.name,
-                    value: bestTeacherRatio?.value
-                )
-                quickStatTile(
-                    icon: "chair.lounge",
-                    label: "빈자리",
-                    name: bestVacancy?.name,
-                    value: bestVacancy?.value
-                )
-                quickStatTile(
-                    icon: "fork.knife",
-                    label: "급식",
-                    name: directMealKinder,
-                    value: directMealKinder != nil ? "직영" : nil
-                )
-                quickStatTile(
-                    icon: "newspaper",
-                    label: "후기",
-                    name: bestReview?.name,
-                    value: bestReview?.value
-                )
-            }
-        }
-        .padding(20)
-        .glassPanel(cornerRadius: CornerRadius.large)
-    }
-
-    @ViewBuilder
-    private func quickStatTile(icon: String, label: String, name: String?, value: String?) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack(spacing: 4) {
-                Image(systemName: icon)
-                    .font(.caption)
-                    .foregroundStyle(slateSoft)
-                Text(label)
-                    .font(.caption)
-                    .foregroundStyle(slateSoft)
-            }
-            if let name, let value {
-                Text(name)
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(inkBlack)
-                    .lineLimit(1)
-                Text(value)
-                    .font(.caption2)
-                    .foregroundStyle(compareBestForeground)
-            } else {
-                Text("동일")
-                    .font(.footnote)
-                    .foregroundStyle(slateSoft)
-            }
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, minHeight: 80, alignment: .topLeading)
-        .background(paperWhite.opacity(0.7), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
-                .stroke(lineSoft, lineWidth: 1)
-        )
-    }
-}
-
 // MARK: - CompareHeaderCard
 
 private struct CompareHeaderCard: View {
@@ -391,10 +272,11 @@ private struct CompareHeaderCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top) {
-                Text(item.name)
+                Text(shortenName(item.name))
                     .font(.headline.weight(.bold))
                     .foregroundStyle(inkBlack)
-                    .lineLimit(1)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.75)
                 Spacer()
                 Button(action: onRemove) {
                     Image(systemName: "minus.circle.fill")
@@ -420,20 +302,24 @@ private struct CompareHeaderCard: View {
                 .foregroundStyle(slateBlue)
                 .lineLimit(1)
 
-            if score > 0 {
-                Text("\(score)개 우세")
-                    .font(.caption2.weight(.bold))
-                    .foregroundStyle(compareBestForeground)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
-                    .background(compareBestTint, in: Capsule())
-            }
+            Text("\(max(score, 1))개 우세")
+                .font(.caption2.weight(.bold))
+                .foregroundStyle(compareBestForeground)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 3)
+                .background(compareBestTint, in: Capsule())
+                .opacity(score > 0 ? 1 : 0)
         }
         .padding(18)
-        .frame(minWidth: 180, idealWidth: 220, maxWidth: 280, alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
         .accessibilityIdentifier("compare.card.\(item.kindercode)")
         .accessibilityElement(children: .combine)
+    }
+
+    private func shortenName(_ name: String) -> String {
+        name.replacingOccurrences(of: "유치원", with: "")
+            .replacingOccurrences(of: "어린이집", with: "")
     }
 
     private func shortenAddress(_ address: String) -> String {

@@ -18,47 +18,77 @@ struct CompareMatrixView: View {
                     .font(.headline.weight(.bold))
                     .foregroundStyle(inkBlack)
                 Spacer()
-                Toggle("차이점만", isOn: $showDiffsOnly)
-                    .font(.caption2.weight(.medium))
-                    .toggleStyle(.switch)
-                    .tint(jadeGreen)
-                    .fixedSize()
-            }
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                VStack(spacing: 6) {
-                    headerRow
-
-                    sectionHeader("핵심 비교")
-                    teacherRatioRow
-                    capacityRow
-                    vacancyRow
-
-                    sectionHeader("돌봄 환경")
-                    mealRow
-                    afterSchoolRow
-                    busRow
-
-                    sectionHeader("시설·안전")
-                    playgroundRow
-                    cctvRow
-                    areaRow
-
-                    sectionHeader("참고 정보")
-                    reviewRow
-                    establishRow
-                    phoneRow
+                Button {
+                    showDiffsOnly.toggle()
+                } label: {
+                    HStack(spacing: 5) {
+                        Image(systemName: showDiffsOnly
+                              ? "line.3.horizontal.decrease.circle.fill"
+                              : "line.3.horizontal.decrease.circle")
+                            .font(.footnote)
+                        Text("차이점만")
+                            .font(.footnote.weight(.semibold))
+                    }
+                    .foregroundStyle(showDiffsOnly ? jadeDeep : slateSoft)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 7)
+                    .background(
+                        showDiffsOnly ? jadeGreen.opacity(0.18) : slateBlue.opacity(0.08),
+                        in: Capsule()
+                    )
                 }
-                .padding(16)
-                .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
-                .scrollTargetLayout()
+                .buttonStyle(.plain)
+                .animation(.easeInOut(duration: 0.2), value: showDiffsOnly)
             }
-            .scrollTargetBehavior(.viewAligned)
+
+            if items.count <= 2 {
+                tableContent
+                    .padding(16)
+                    .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    tableContent
+                        .padding(16)
+                        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
+                        .scrollTargetLayout()
+                }
+                .scrollTargetBehavior(.viewAligned)
+            }
 
             legendView
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel("비교표. \(items.count)곳 비교")
+    }
+}
+
+// MARK: - Table Content
+
+private extension CompareMatrixView {
+    var tableContent: some View {
+        VStack(spacing: 6) {
+            headerRow
+
+            sectionHeader("핵심 비교")
+            teacherRatioRow
+            capacityRow
+            vacancyRow
+
+            sectionHeader("돌봄 환경")
+            mealRow
+            afterSchoolRow
+            busRow
+
+            sectionHeader("시설·안전")
+            playgroundRow
+            cctvRow
+            areaRow
+
+            sectionHeader("참고 정보")
+            reviewRow
+            establishRow
+            phoneRow
+        }
     }
 }
 
@@ -90,6 +120,7 @@ private extension CompareMatrixView {
 
     func shortHeader(for name: String) -> String {
         name.replacingOccurrences(of: "유치원", with: "")
+            .replacingOccurrences(of: "어린이집", with: "")
     }
 }
 
@@ -190,17 +221,16 @@ private extension CompareMatrixView {
 private extension CompareMatrixView {
     var mealRow: some View {
         let mealTypes = items.map(\.mealType)
+        let labels = items.map { mealLabel(for: $0.mealType) }
         let highlights = mealHighlights(mealTypes)
         let allSame = Set(mealTypes.map(\.rawValue)).count <= 1
 
-        return conditionalRowContent(title: "급식", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                NativeBadge(mealLabel(for: item.mealType), tone: mealTone(for: item.mealType))
-                    .frame(minWidth: columnWidth, maxWidth: .infinity)
-                    .padding(.vertical, 12)
-                    .cellBackground(highlighted: highlights.contains(index))
-            }
-        }
+        return conditionalRow(
+            title: "급식",
+            labels: labels,
+            highlights: highlights,
+            allSame: allSame
+        )
     }
 
     func mealLabel(for type: MealType) -> String {
@@ -208,14 +238,6 @@ private extension CompareMatrixView {
         case .direct: return "직영"
         case .outsourced: return "위탁"
         case .none: return "없음"
-        }
-    }
-
-    func mealTone(for type: MealType) -> NativeBadge.Tone {
-        switch type {
-        case .direct: return .jade
-        case .outsourced: return .sun
-        case .none: return .slate
         }
     }
 
