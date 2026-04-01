@@ -120,6 +120,7 @@ private extension CompareMatrixView {
 
     func shortHeader(for name: String) -> String {
         name.replacingOccurrences(of: "유치원", with: "")
+            .replacingOccurrences(of: "어린이집", with: "")
     }
 }
 
@@ -237,14 +238,6 @@ private extension CompareMatrixView {
         case .direct: return "직영"
         case .outsourced: return "위탁"
         case .none: return "없음"
-        }
-    }
-
-    func mealTone(for type: MealType) -> NativeBadge.Tone {
-        switch type {
-        case .direct: return .jade
-        case .outsourced: return .sun
-        case .none: return .slate
         }
     }
 

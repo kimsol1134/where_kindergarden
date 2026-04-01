@@ -302,12 +302,13 @@ private struct CompareHeaderCard: View {
                 .foregroundStyle(slateBlue)
                 .lineLimit(1)
 
-            Text(score > 0 ? "\(score)개 우세" : " ")
+            Text("\(max(score, 1))개 우세")
                 .font(.caption2.weight(.bold))
-                .foregroundStyle(score > 0 ? compareBestForeground : .clear)
+                .foregroundStyle(compareBestForeground)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 3)
-                .background(score > 0 ? compareBestTint : .clear, in: Capsule())
+                .background(compareBestTint, in: Capsule())
+                .opacity(score > 0 ? 1 : 0)
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
