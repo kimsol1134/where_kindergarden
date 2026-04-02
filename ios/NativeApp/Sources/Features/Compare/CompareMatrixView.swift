@@ -41,8 +41,6 @@ struct CompareMatrixView: View {
                 .animation(.easeInOut(duration: 0.2), value: showDiffsOnly)
             }
 
-            nameHeader
-
             reviewCard
             capacityCard
             teacherRatioCard
@@ -93,18 +91,27 @@ private let bestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
 
 // MARK: - Name Header
 
+private let columnDotColors: [Color] = [jadeDeep, amberOrange, slateBlue]
+
 private extension CompareMatrixView {
     var nameHeader: some View {
         HStack(spacing: 8) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
-                Text(shortenKindergartenName(item.name))
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(inkBlack)
-                    .frame(maxWidth: .infinity)
-                    .lineLimit(1)
+            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                HStack(spacing: 5) {
+                    Circle()
+                        .fill(columnDotColors[index % columnDotColors.count])
+                        .frame(width: 7, height: 7)
+                    Text(shortenKindergartenName(item.name))
+                        .font(.subheadline.weight(.heavy))
+                        .foregroundStyle(inkBlack)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                }
+                .frame(maxWidth: .infinity)
             }
         }
-        .padding(.vertical, 8)
+        .padding(.vertical, 12)
+        .padding(.horizontal, 4)
     }
 
 }

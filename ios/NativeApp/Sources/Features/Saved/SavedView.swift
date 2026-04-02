@@ -25,7 +25,7 @@ public struct SavedView: View {
                         if model.favorites.isEmpty {
                             EmptyStateView(
                                 icon: "heart",
-                                title: "찜한 곳이 아직 없어요",
+                                title: "찜한곳이 아직 없어요",
                                 message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요.",
                                 ctaLabel: "유치원 찾아보기",
                                 ctaAction: { model.selectedTab = .search }
@@ -178,7 +178,7 @@ public struct SavedView: View {
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .background { NativeScreenBackground(topTintOpacity: 0.16) }
-            .navigationTitle("찜한 곳")
+            .navigationTitle("찜한곳")
             .navigationBarTitleDisplayMode(.large)
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",
@@ -403,7 +403,7 @@ private struct SavedUndoState: Identifiable {
 
     static func favorites(_ items: [IndexedFavoriteItem]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
-        let message = items.count == 1 ? "찜한 곳을 삭제했어요." : "찜한 곳 \(items.count)곳을 삭제했어요."
+        let message = items.count == 1 ? "찜한곳을 삭제했어요." : "찜한곳 \(items.count)곳을 삭제했어요."
         return SavedUndoState(message: message) { model in
             model.restoreFavorites(items)
         }
@@ -423,7 +423,7 @@ private func recentSearchIcon(for searchType: SearchType?) -> String {
     case .currentLocation: return "location.fill"
     case .address: return "mappin.and.ellipse"
     case .place: return "sparkle.magnifyingglass"
-    case .kindergarten: return "backpack.fill"
+    case .kindergarten: return "teddybear.fill"
     case nil: return "clock.arrow.circlepath"
     }
 }
