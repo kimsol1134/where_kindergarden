@@ -1,0 +1,76 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and upload to TestFlight (API Key)"
+  lane :beta_with_api_key do
+    api_key = app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_API_ISSUER_ID"],
+      key_filepath: ENV["APP_STORE_CONNECT_API_KEY_FILEPATH"],
+      in_house: false
+    )
+
+    build_app(
+      project: "WhereKindergartenNative.xcodeproj",
+      scheme: "WhereKindergartenNative",
+      configuration: "Release",
+      export_method: "app-store",
+      clean: true,
+      xcargs: "CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates"
+    )
+
+    upload_to_testflight(
+      api_key: api_key,
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  desc "Build only (no upload)"
+  lane :build_only do
+    build_app(
+      project: "WhereKindergartenNative.xcodeproj",
+      scheme: "WhereKindergartenNative",
+      configuration: "Release",
+      export_method: "app-store",
+      clean: true
+    )
+  end
+
+  desc "Upload metadata (API Key)"
+  lane :upload_metadata_with_api_key do
+    api_key = app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_API_ISSUER_ID"],
+      key_filepath: ENV["APP_STORE_CONNECT_API_KEY_FILEPATH"],
+      in_house: false
+    )
+
+    # Read version from package.json
+    package_json = JSON.parse(File.read("../../package.json"))
+    app_version = package_json["version"]
+
+    # Temporarily rename name.txt to avoid app name conflicts
+    name_file = "fastlane/metadata/ko/name.txt"
+    name_backup = "fastlane/metadata/ko/name.txt.bak"
+    if File.exist?(name_file)
+      FileUtils.mv(name_file, name_backup)
+    end
+
+    begin
+      deliver(
+        api_key: api_key,
+        app_version: app_version,
+        skip_binary_upload: true,
+        skip_screenshots: true,
+        force: true,
+        submit_for_review: false,
+        precheck_include_in_app_purchases: false,
+        metadata_path: "./fastlane/metadata"
+      )
+    ensure
+      if File.exist?(name_backup)
+        FileUtils.mv(name_backup, name_file)
+      end
+    end
+  end
+end
