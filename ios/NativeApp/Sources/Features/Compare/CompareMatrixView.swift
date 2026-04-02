@@ -41,8 +41,6 @@ struct CompareMatrixView: View {
                 .animation(.easeInOut(duration: 0.2), value: showDiffsOnly)
             }
 
-            nameHeader
-
             reviewCard
             capacityCard
             teacherRatioCard
@@ -91,23 +89,6 @@ private let bestTint = Color.blue.opacity(0.10)
 private let bestBorder = Color.blue.opacity(0.20)
 private let bestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
 
-// MARK: - Name Header
-
-private extension CompareMatrixView {
-    var nameHeader: some View {
-        HStack(spacing: 8) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
-                Text(shortenKindergartenName(item.name))
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(inkBlack)
-                    .frame(maxWidth: .infinity)
-                    .lineLimit(1)
-            }
-        }
-        .padding(.vertical, 8)
-    }
-
-}
 
 // MARK: - Metric Card Components
 

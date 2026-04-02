@@ -438,14 +438,10 @@ private struct SearchChrome: View {
     var body: some View {
         VStack(spacing: 10) {
             VStack(spacing: 0) {
-                HStack(spacing: 10) {
-                    ZStack {
-                        Circle()
-                            .fill(jadeGreen.opacity(0.16))
-                            .frame(width: 34, height: 34)
-                        Image(systemName: "magnifyingglass")
-                            .foregroundStyle(jadeDeep)
-                    }
+                HStack(spacing: 6) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 15, weight: .medium))
+                        .foregroundStyle(slateSoft)
 
                     TextField(
                         searchPlaceholder,
@@ -457,6 +453,7 @@ private struct SearchChrome: View {
                     .accessibilityIdentifier("search.queryField")
                     .focused($isSearchFieldFocused)
                     .textFieldStyle(.plain)
+                    .font(.body)
                     .foregroundStyle(inkBlack)
                     .submitLabel(.search)
                     .onSubmit {
@@ -472,7 +469,7 @@ private struct SearchChrome: View {
                         } label: {
                             Image(systemName: "xmark.circle.fill")
                                 .font(.body)
-                                .foregroundStyle(slateBlue)
+                                .foregroundStyle(slateBlue.opacity(0.5))
                                 .frame(width: 44, height: 44)
                                 .contentShape(Circle())
                         }
@@ -480,12 +477,8 @@ private struct SearchChrome: View {
                         .accessibilityLabel("검색어 지우기")
                     }
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
-                .background(
-                    RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
-                        .fill(paperWhite.opacity(0.88))
-                )
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
 
                 if shouldShowSuggestionPanel && hasSuggestionContent {
                     Divider()
@@ -512,8 +505,8 @@ private struct SearchChrome: View {
                     .frame(maxHeight: .infinity)
                 }
             }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 6)
             .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
             .onChange(of: isSearchFieldFocused) { _, isFocused in
                 isSuggestionPanelPresented = isFocused
@@ -626,7 +619,7 @@ private struct SearchSuggestionPanel: View {
 
                         VStack(alignment: .leading, spacing: 8) {
                             SearchHintRow(icon: "mappin.and.ellipse", text: "강남구, 분당 등 동네 이름")
-                            SearchHintRow(icon: "backpack.fill", text: "유치원 이름 (예: 해나루유치원)")
+                            SearchHintRow(icon: "teddybear.fill", text: "유치원 이름 (예: 해나루유치원)")
                             SearchHintRow(icon: "sparkle.magnifyingglass", text: "장소 이름 (예: 코엑스 근처)")
                         }
                     }
@@ -1146,7 +1139,7 @@ private struct RecentSearchSummaryStrip: View {
         case .currentLocation:
             return "location.fill"
         case .kindergarten:
-            return "backpack.fill"
+            return "teddybear.fill"
         case .address:
             return "mappin.and.ellipse"
         case .place:
