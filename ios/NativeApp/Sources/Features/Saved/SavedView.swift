@@ -35,6 +35,7 @@ public struct SavedView: View {
                             .listRowSeparator(.hidden)
                         } else {
                             ForEach(model.favoriteKindergartens()) { kindergarten in
+                                let isCompared = model.isCompared(kindergarten)
                                 Button {
                                     model.openKindergartenDetail(kindercode: kindergarten.kindercode)
                                 } label: {
@@ -43,8 +44,7 @@ public struct SavedView: View {
                                         reviewCount: model.reviews(for: kindergarten.kindercode).count,
                                         onCall: kindergarten.phone.map { phone in
                                             {
-                                                let digits = phone.replacingOccurrences(of: "-", with: "")
-                                                if let url = URL(string: "tel:\(digits)") {
+                                                if let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
                                                     openURL(url)
                                                 }
                                             }
@@ -61,11 +61,11 @@ public struct SavedView: View {
                                         model.toggleCompare(for: kindergarten)
                                     } label: {
                                         Label(
-                                            model.isCompared(kindergarten) ? "비교 빼기" : "비교 추가",
-                                            systemImage: model.isCompared(kindergarten) ? "minus.square" : "plus.square.on.square"
+                                            isCompared ? "비교 빼기" : "비교 추가",
+                                            systemImage: isCompared ? "minus.square" : "plus.square.on.square"
                                         )
                                     }
-                                    .tint(model.isCompared(kindergarten) ? .orange : jadeGreen)
+                                    .tint(isCompared ? .orange : jadeGreen)
                                 }
                                 .swipeActions {
                                     Button(role: .destructive) {
@@ -88,15 +88,14 @@ public struct SavedView: View {
                                         model.toggleCompare(for: kindergarten)
                                     } label: {
                                         Label(
-                                            model.isCompared(kindergarten) ? "비교에서 빼기" : "비교에 추가",
-                                            systemImage: model.isCompared(kindergarten) ? "minus.square" : "plus.square.on.square"
+                                            isCompared ? "비교에서 빼기" : "비교에 추가",
+                                            systemImage: isCompared ? "minus.square" : "plus.square.on.square"
                                         )
                                     }
 
                                     if let phone = kindergarten.phone {
                                         Button {
-                                            let digits = phone.replacingOccurrences(of: "-", with: "")
-                                            if let url = URL(string: "tel:\(digits)") {
+                                            if let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
                                                 openURL(url)
                                             }
                                         } label: {
@@ -319,9 +318,9 @@ private struct FavoriteSavedCard: View {
                 Spacer(minLength: 12)
 
                 HStack(spacing: 12) {
-                    if onCall != nil {
+                    if let onCall {
                         Button {
-                            onCall?()
+                            onCall()
                         } label: {
                             Image(systemName: "phone.circle.fill")
                                 .font(.title3)

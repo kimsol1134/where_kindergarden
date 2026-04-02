@@ -111,23 +111,9 @@ public struct CompareView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Text(items.isEmpty ? "최대 3곳" : "\(items.count) / 3곳")
                         .font(.footnote.weight(.semibold))
-                        .foregroundStyle(inkBlack)
-                        .padding(.horizontal, 14)
-                        .padding(.vertical, 8)
-                        .background(sunYellow.opacity(0.28), in: Capsule())
+                        .foregroundStyle(slateSoft)
                 }
             }
-        }
-    }
-
-    private var summaryLine: String {
-        switch items.count {
-        case 1:
-            return "선택한 곳을 먼저 살펴보고 있어요. 최대 2곳 더 담아 비교할 수 있어요."
-        case 2:
-            return "선택한 2곳을 한눈에 비교해 보세요."
-        default:
-            return "선택한 \(items.count)곳을 같은 기준으로 비교해요."
         }
     }
 
@@ -252,7 +238,7 @@ private struct CompareHeaderCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .top) {
-                Text(shortenName(item.name))
+                Text(shortenKindergartenName(item.name))
                     .font(.subheadline.weight(.bold))
                     .foregroundStyle(inkBlack)
                     .lineLimit(1)
@@ -288,10 +274,11 @@ private struct CompareHeaderCard: View {
         .accessibilityElement(children: .combine)
     }
 
-    private func shortenName(_ name: String) -> String {
-        name.replacingOccurrences(of: "유치원", with: "")
-            .replacingOccurrences(of: "어린이집", with: "")
-    }
 }
 
+}
+
+func shortenKindergartenName(_ name: String) -> String {
+    name.replacingOccurrences(of: "유치원", with: "")
+        .replacingOccurrences(of: "어린이집", with: "")
 }

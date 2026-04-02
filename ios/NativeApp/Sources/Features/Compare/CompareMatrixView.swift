@@ -43,14 +43,12 @@ struct CompareMatrixView: View {
 
             nameHeader
 
-            // 핵심 항목 (사용자 지정 순서)
             reviewCard
             capacityCard
             teacherRatioCard
             busCard
             areaCard
 
-            // 더보기 섹션
             if showMore {
                 mealCard
                 afterSchoolCard
@@ -99,7 +97,7 @@ private extension CompareMatrixView {
     var nameHeader: some View {
         HStack(spacing: 8) {
             ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
-                Text(shortHeader(for: item.name))
+                Text(shortenKindergartenName(item.name))
                     .font(.caption.weight(.bold))
                     .foregroundStyle(inkBlack)
                     .frame(maxWidth: .infinity)
@@ -109,10 +107,6 @@ private extension CompareMatrixView {
         .padding(.vertical, 8)
     }
 
-    func shortHeader(for name: String) -> String {
-        name.replacingOccurrences(of: "유치원", with: "")
-            .replacingOccurrences(of: "어린이집", with: "")
-    }
 }
 
 // MARK: - Metric Card Components
@@ -147,18 +141,13 @@ private struct MetricCell: View {
     }
 }
 
-// MARK: - Core Cards (핵심 항목)
+// MARK: - Simple Metric Row Helper
 
 private extension CompareMatrixView {
-    // 1. 후기
     @ViewBuilder
-    var reviewCard: some View {
-        let highlights = highestHighlights(reviewCounts)
-        let labels = reviewCounts.map { "\($0)건" }
-        let allSame = Set(reviewCounts).count <= 1
-
+    func simpleMetricCard(title: String, labels: [String], highlights: Set<Int>, allSame: Bool) -> some View {
         if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "후기") {
+            CompareMetricCard(title: title) {
                 HStack(spacing: 8) {
                     ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
                         MetricCell(value: label, highlighted: highlights.contains(index))
@@ -167,8 +156,21 @@ private extension CompareMatrixView {
             }
         }
     }
+}
 
-    // 2. 현원/정원
+// MARK: - Core Cards
+
+private extension CompareMatrixView {
+    @ViewBuilder
+    var reviewCard: some View {
+        simpleMetricCard(
+            title: "후기",
+            labels: reviewCounts.map { "\($0)건" },
+            highlights: highestHighlights(reviewCounts),
+            allSame: Set(reviewCounts).count <= 1
+        )
+    }
+
     @ViewBuilder
     var capacityCard: some View {
         let allSame = Set(items.map { "\($0.capacity)/\($0.currentCount)" }).count <= 1
@@ -211,7 +213,6 @@ private extension CompareMatrixView {
         }
     }
 
-    // 3. 교사비율
     @ViewBuilder
     var teacherRatioCard: some View {
         let ratios: [Double] = items.map { item in
@@ -222,21 +223,14 @@ private extension CompareMatrixView {
         let labels: [String] = ratios.map { ratio in
             ratio > 0 ? "1:\(String(format: "%.1f", ratio))" : "-"
         }
-        let highlights = lowestHighlights(ratios)
-        let allSame = Set(labels).count <= 1
-
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "교사 대 원아 비율") {
-                HStack(spacing: 8) {
-                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
-                        MetricCell(value: label, highlighted: highlights.contains(index))
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "교사 대 원아 비율",
+            labels: labels,
+            highlights: lowestHighlights(ratios),
+            allSame: Set(labels).count <= 1
+        )
     }
 
-    // 4. 셔틀
     @ViewBuilder
     var busCard: some View {
         let busCounts = items.map { $0.hasBus ? $0.busCount : 0 }
@@ -270,23 +264,16 @@ private extension CompareMatrixView {
         }
     }
 
-    // 5. 1인당 면적
     @ViewBuilder
     var areaCard: some View {
         let areas = items.map(\.areaPerChild)
         let labels = areas.map { String(format: "%.1f\u{33A1}", $0) }
-        let highlights = highestHighlights(areas)
-        let allSame = Set(labels).count <= 1
-
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "1인당 면적") {
-                HStack(spacing: 8) {
-                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
-                        MetricCell(value: label, highlighted: highlights.contains(index))
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "1인당 면적",
+            labels: labels,
+            highlights: highestHighlights(areas),
+            allSame: Set(labels).count <= 1
+        )
     }
 }
 
@@ -296,19 +283,12 @@ private extension CompareMatrixView {
     @ViewBuilder
     var mealCard: some View {
         let mealTypes = items.map(\.mealType)
-        let labels = items.map { mealLabel(for: $0.mealType) }
-        let highlights = mealHighlights(mealTypes)
-        let allSame = Set(mealTypes.map(\.rawValue)).count <= 1
-
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "급식") {
-                HStack(spacing: 8) {
-                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
-                        MetricCell(value: label, highlighted: highlights.contains(index))
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "급식",
+            labels: items.map { mealLabel(for: $0.mealType) },
+            highlights: mealHighlights(mealTypes),
+            allSame: Set(mealTypes.map(\.rawValue)).count <= 1
+        )
     }
 
     func mealLabel(for type: MealType) -> String {
@@ -356,15 +336,12 @@ private extension CompareMatrixView {
         let highlights = vacancyHighlights(vacancyCounts)
         let allSame = Set(vacancyCounts).count <= 1
 
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "결원") {
-                HStack(spacing: 8) {
-                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
-                        MetricCell(value: label, highlighted: highlights.contains(index))
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "결원",
+            labels: labels,
+            highlights: highlights,
+            allSame: allSame
+        )
     }
 
     @ViewBuilder
@@ -409,31 +386,23 @@ private extension CompareMatrixView {
         let highlights = highestHighlights(counts)
         let allSame = Set(counts).count <= 1
 
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "CCTV") {
-                HStack(spacing: 8) {
-                    ForEach(Array(counts.enumerated()), id: \.offset) { index, count in
-                        MetricCell(value: "\(count)대", highlighted: highlights.contains(index))
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "CCTV",
+            labels: counts.map { "\($0)대" },
+            highlights: highlights,
+            allSame: allSame
+        )
     }
 
     @ViewBuilder
     var establishCard: some View {
         let years = items.map { String($0.establishDate.prefix(4)) + "년" }
-        let allSame = Set(years).count <= 1
-
-        if !showDiffsOnly || !allSame {
-            CompareMetricCard(title: "설립") {
-                HStack(spacing: 8) {
-                    ForEach(Array(years.enumerated()), id: \.offset) { _, year in
-                        MetricCell(value: year, highlighted: false)
-                    }
-                }
-            }
-        }
+        simpleMetricCard(
+            title: "설립",
+            labels: years,
+            highlights: [],
+            allSame: Set(years).count <= 1
+        )
     }
 
     @ViewBuilder
