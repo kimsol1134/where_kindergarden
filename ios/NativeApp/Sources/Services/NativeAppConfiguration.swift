@@ -43,7 +43,13 @@ public struct NativeAppConfiguration: Sendable {
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
         kakaoConfigurationSource: String? = nil,
-        adMobBannerUnitID: String = "ca-app-pub-5648788643644962/5397823299",
+        adMobBannerUnitID: String = {
+            #if DEBUG
+            return "ca-app-pub-3940256099942544/2435281174"
+            #else
+            return "ca-app-pub-5648788643644962/5397823299"
+            #endif
+        }(),
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
         compareShareBaseURL: URL = NativeAppConfiguration.defaultCompareShareBaseURL,
@@ -65,10 +71,18 @@ public struct NativeAppConfiguration: Sendable {
     }
 
     public static func live(bundle: Bundle = .main) -> NativeAppConfiguration {
-        NativeAppConfiguration(
+        let adMobID = normalizedValue(bundle.object(forInfoDictionaryKey: "ADMOB_BANNER_UNIT_ID") as? String)
+        return NativeAppConfiguration(
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
             kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String,
-            kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String
+            kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String,
+            adMobBannerUnitID: adMobID ?? {
+                #if DEBUG
+                return "ca-app-pub-3940256099942544/2435281174"
+                #else
+                return "ca-app-pub-5648788643644962/5397823299"
+                #endif
+            }()
         )
     }
 

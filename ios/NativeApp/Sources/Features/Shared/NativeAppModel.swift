@@ -665,6 +665,7 @@ public final class NativeAppModel: ObservableObject {
             isCompared: isCompared(kindergarten),
             isFavorite: isFavorite(kindergarten),
             fitReasons: fitReasons(for: kindergarten),
+            adUnitID: configuration.adMobBannerUnitID,
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
         )

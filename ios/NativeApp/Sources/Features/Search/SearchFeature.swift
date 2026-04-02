@@ -492,7 +492,8 @@ private struct SearchChrome: View {
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 6)
-            .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.96))
+            .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.98))
+            .shadow(color: inkBlack.opacity(0.04), radius: 4, y: 2)
             .onChange(of: isSearchFieldFocused) { _, isFocused in
                 isSuggestionPanelPresented = isFocused
             }
@@ -930,7 +931,7 @@ private struct ResultSheet: View {
                         }
 
                         LazyVStack(spacing: 12) {
-                            ForEach(results) { kindergarten in
+                            ForEach(Array(results.enumerated()), id: \.element.kindercode) { index, kindergarten in
                                 SearchResultCard(
                                     kindergarten: kindergarten,
                                     isCompared: comparedIDs.contains(kindergarten.kindercode),
@@ -941,13 +942,15 @@ private struct ResultSheet: View {
                                     onToggleCompare: { model.toggleCompare(for: kindergarten) },
                                     onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
                                 )
+
+                                #if canImport(GoogleMobileAds)
+                                if index == 4, results.count > 5 {
+                                    NativeAdBanner(adUnitID: adUnitID)
+                                        .padding(.vertical, 4)
+                                }
+                                #endif
                             }
                         }
-
-                        #if canImport(GoogleMobileAds)
-                        NativeAdBanner(adUnitID: adUnitID)
-                            .padding(.top, 4)
-                        #endif
                     }
                     .padding(.bottom, 8)
                 }
@@ -1156,9 +1159,13 @@ private struct RecentSearchSummaryStrip: View {
                                     .foregroundStyle(inkBlack)
                                     .lineLimit(1)
                             }
-                            .padding(.horizontal, 12)
+                            .padding(.horizontal, 14)
                             .padding(.vertical, 10)
-                            .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.88))
+                            .background(jadeGreen.opacity(0.10), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                                    .stroke(jadeGreen.opacity(0.25), lineWidth: 1)
+                            )
                         }
                         .buttonStyle(.plain)
                     }

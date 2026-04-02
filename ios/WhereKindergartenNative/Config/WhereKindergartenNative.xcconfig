@@ -3,3 +3,7 @@
 // Keep Kakao keys out of the generated project. Local overrides can define WK_* values.
 KAKAO_NATIVE_APP_KEY = $(WK_KAKAO_NATIVE_APP_KEY)
 KAKAO_REST_API_KEY = $(WK_KAKAO_REST_API_KEY)
+
+// AdMob
+WK_ADMOB_BANNER_UNIT_ID = ca-app-pub-5648788643644962/5397823299
+ADMOB_BANNER_UNIT_ID = $(WK_ADMOB_BANNER_UNIT_ID)

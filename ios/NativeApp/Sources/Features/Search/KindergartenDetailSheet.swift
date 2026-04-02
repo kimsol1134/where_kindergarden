@@ -14,6 +14,7 @@ struct KindergartenDetailSheet: View {
     let isCompared: Bool
     let isFavorite: Bool
     let fitReasons: [KindergartenFitReason]
+    let adUnitID: String
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
 
@@ -208,6 +209,11 @@ struct KindergartenDetailSheet: View {
 
                 // Section D: Reviews (moved up for faster parent access)
                 sectionReviews
+
+                // Ad Banner
+                #if canImport(GoogleMobileAds)
+                NativeAdBanner(adUnitID: adUnitID)
+                #endif
 
                 // Section E: Details Grid
                 sectionDetails

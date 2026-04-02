@@ -1,4 +1,5 @@
 import Models
+import Services
 import SwiftUI
 #if canImport(UIKit)
 import UIKit
@@ -175,6 +176,15 @@ public struct SavedView: View {
                             }
                         }
                     }
+
+                    #if canImport(GoogleMobileAds)
+                    Section {
+                        NativeAdBanner(adUnitID: model.configuration.adMobBannerUnitID)
+                            .listRowInsets(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
+                            .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
+                    }
+                    #endif
                 }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)

@@ -78,7 +78,7 @@ struct CompareMatrixView: View {
 
             legendView
         }
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .contain)
         .accessibilityLabel("비교표. \(items.count)곳 비교")
     }
 }
@@ -135,7 +135,16 @@ private extension CompareMatrixView {
                     }
                 }
             }
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(metricAccessibilityLabel(title: title, labels: labels, highlights: highlights))
         }
+    }
+
+    private func metricAccessibilityLabel(title: String, labels: [String], highlights: Set<Int>) -> String {
+        let pairs = zip(items.map(\.name), labels).enumerated().map { index, pair in
+            highlights.contains(index) ? "\(pair.0) \(pair.1), 우수" : "\(pair.0) \(pair.1)"
+        }
+        return "\(title). \(pairs.joined(separator: ", "))"
     }
 }
 

@@ -91,10 +91,6 @@ public struct CompareView: View {
                             )
                         }
 
-                        if !items.isEmpty {
-                            shareActions
-                        }
-
                         #if canImport(GoogleMobileAds)
                         NativeAdBanner(adUnitID: model.configuration.adMobBannerUnitID)
                             .padding(.top, 8)
@@ -112,6 +108,14 @@ public struct CompareView: View {
                 CompareBadge(count: items.count)
                     .padding(.trailing, 20)
                     .padding(.top, -36)
+            }
+            .safeAreaInset(edge: .bottom) {
+                if items.count >= 2 {
+                    shareActions
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 12)
+                        .background(.ultraThinMaterial)
+                }
             }
         }
     }
