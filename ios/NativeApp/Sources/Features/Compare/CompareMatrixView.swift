@@ -9,7 +9,7 @@ struct CompareMatrixView: View {
     let vacancyCounts: [Int]
 
     @State private var showDiffsOnly = false
-    @ScaledMetric(relativeTo: .footnote) private var columnWidth: CGFloat = 100
+    @State private var showMore = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -41,54 +41,49 @@ struct CompareMatrixView: View {
                 .animation(.easeInOut(duration: 0.2), value: showDiffsOnly)
             }
 
-            if items.count <= 2 {
-                tableContent
-                    .padding(16)
-                    .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
-            } else {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    tableContent
-                        .padding(16)
-                        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
-                        .scrollTargetLayout()
-                }
-                .scrollTargetBehavior(.viewAligned)
+            nameHeader
+
+            // 핵심 항목 (사용자 지정 순서)
+            reviewCard
+            capacityCard
+            teacherRatioCard
+            busCard
+            areaCard
+
+            // 더보기 섹션
+            if showMore {
+                mealCard
+                afterSchoolCard
+                vacancyCard
+                playgroundCard
+                cctvCard
+                establishCard
+                phoneCard
             }
+
+            Button {
+                withAnimation(.spring(duration: 0.3)) {
+                    showMore.toggle()
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    Text(showMore ? "접기" : "상세 비교 더보기")
+                        .font(.footnote.weight(.semibold))
+                    Image(systemName: showMore ? "chevron.up" : "chevron.down")
+                        .font(.caption.weight(.semibold))
+                }
+                .foregroundStyle(jadeDeep)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .frame(maxWidth: .infinity)
+                .background(jadeGreen.opacity(0.10), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+            }
+            .buttonStyle(.plain)
 
             legendView
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel("비교표. \(items.count)곳 비교")
-    }
-}
-
-// MARK: - Table Content
-
-private extension CompareMatrixView {
-    var tableContent: some View {
-        VStack(spacing: 6) {
-            headerRow
-
-            sectionHeader("핵심 비교")
-            teacherRatioRow
-            capacityRow
-            vacancyRow
-
-            sectionHeader("돌봄 환경")
-            mealRow
-            afterSchoolRow
-            busRow
-
-            sectionHeader("시설·안전")
-            playgroundRow
-            cctvRow
-            areaRow
-
-            sectionHeader("참고 정보")
-            reviewRow
-            establishRow
-            phoneRow
-        }
     }
 }
 
@@ -98,24 +93,20 @@ private let bestTint = Color.blue.opacity(0.10)
 private let bestBorder = Color.blue.opacity(0.20)
 private let bestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
 
-// MARK: - Header Row
+// MARK: - Name Header
 
 private extension CompareMatrixView {
-    var headerRow: some View {
-        HStack(spacing: 10) {
-            Text("항목")
-                .font(.caption.weight(.heavy))
-                .foregroundStyle(slateSoft)
-                .frame(width: 70, alignment: .leading)
-
+    var nameHeader: some View {
+        HStack(spacing: 8) {
             ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
                 Text(shortHeader(for: item.name))
                     .font(.caption.weight(.bold))
                     .foregroundStyle(inkBlack)
-                    .frame(minWidth: columnWidth, maxWidth: .infinity, alignment: .center)
+                    .frame(maxWidth: .infinity)
                     .lineLimit(1)
             }
         }
+        .padding(.vertical, 8)
     }
 
     func shortHeader(for name: String) -> String {
@@ -124,25 +115,105 @@ private extension CompareMatrixView {
     }
 }
 
-// MARK: - Section Header
+// MARK: - Metric Card Components
 
-private extension CompareMatrixView {
-    func sectionHeader(_ title: String) -> some View {
-        Text(title)
-            .font(.caption.weight(.bold))
-            .foregroundStyle(slateSoft)
-            .textCase(.uppercase)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.top, 10)
-            .padding(.bottom, 2)
+private struct CompareMetricCard<Content: View>: View {
+    let title: String
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.footnote.weight(.bold))
+                .foregroundStyle(slateBlue)
+            content
+        }
+        .padding(14)
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.94))
     }
 }
 
-// MARK: - Section 1: Core Comparison
+private struct MetricCell: View {
+    let value: String
+    let highlighted: Bool
+
+    var body: some View {
+        Text(value)
+            .font(.footnote.weight(.semibold))
+            .foregroundStyle(highlighted ? bestForeground : slateBlue)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .cellBackground(highlighted: highlighted)
+    }
+}
+
+// MARK: - Core Cards (핵심 항목)
 
 private extension CompareMatrixView {
-    // lower is better
-    var teacherRatioRow: some View {
+    // 1. 후기
+    @ViewBuilder
+    var reviewCard: some View {
+        let highlights = highestHighlights(reviewCounts)
+        let labels = reviewCounts.map { "\($0)건" }
+        let allSame = Set(reviewCounts).count <= 1
+
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "후기") {
+                HStack(spacing: 8) {
+                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
+                        MetricCell(value: label, highlighted: highlights.contains(index))
+                    }
+                }
+            }
+        }
+    }
+
+    // 2. 현원/정원
+    @ViewBuilder
+    var capacityCard: some View {
+        let allSame = Set(items.map { "\($0.capacity)/\($0.currentCount)" }).count <= 1
+
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "현원 / 정원") {
+                HStack(spacing: 8) {
+                    ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
+                        let fillRate = item.capacity > 0
+                            ? Double(item.currentCount) / Double(item.capacity)
+                            : 0
+                        let barColor: Color = fillRate >= 0.9 ? amberOrange : jadeGreen
+
+                        VStack(spacing: 4) {
+                            Text("\(item.currentCount)/\(item.capacity)명")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(slateBlue)
+
+                            GeometryReader { geo in
+                                Capsule()
+                                    .fill(barColor.opacity(0.18))
+                                    .frame(height: 4)
+                                    .overlay(alignment: .leading) {
+                                        Capsule()
+                                            .fill(barColor)
+                                            .frame(
+                                                width: geo.size.width * min(fillRate, 1.0),
+                                                height: 4
+                                            )
+                                    }
+                            }
+                            .frame(height: 4)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .cellBackground(highlighted: false)
+                    }
+                }
+            }
+        }
+    }
+
+    // 3. 교사비율
+    @ViewBuilder
+    var teacherRatioCard: some View {
         let ratios: [Double] = items.map { item in
             item.teacherCount > 0
                 ? Double(item.currentCount) / Double(item.teacherCount)
@@ -154,83 +225,90 @@ private extension CompareMatrixView {
         let highlights = lowestHighlights(ratios)
         let allSame = Set(labels).count <= 1
 
-        return conditionalRow(
-            title: "교사비율",
-            labels: labels,
-            highlights: highlights,
-            allSame: allSame
-        )
-    }
-
-    var capacityRow: some View {
-        let allSame = Set(items.map { "\($0.capacity)/\($0.currentCount)" }).count <= 1
-
-        return conditionalRowContent(title: "현원/정원", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                let fillRate = item.capacity > 0
-                    ? Double(item.currentCount) / Double(item.capacity)
-                    : 0
-                let barColor: Color = fillRate >= 0.9 ? amberOrange : jadeGreen
-
-                VStack(spacing: 4) {
-                    Text("\(item.currentCount) / \(item.capacity)명")
-                        .font(.footnote.weight(.semibold))
-                        .foregroundStyle(slateBlue)
-
-                    GeometryReader { geo in
-                        Capsule()
-                            .fill(barColor.opacity(0.18))
-                            .frame(height: 4)
-                            .overlay(alignment: .leading) {
-                                Capsule()
-                                    .fill(barColor)
-                                    .frame(
-                                        width: geo.size.width * min(fillRate, 1.0),
-                                        height: 4
-                                    )
-                            }
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "교사 대 원아 비율") {
+                HStack(spacing: 8) {
+                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
+                        MetricCell(value: label, highlighted: highlights.contains(index))
                     }
-                    .frame(height: 4)
                 }
-                .frame(minWidth: columnWidth, maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .cellBackground(highlighted: false)
             }
         }
     }
 
-    var vacancyRow: some View {
-        let labels: [String] = vacancyCounts.map { count in
-            count > 0 ? "빈자리 \(count)명" : "없음"
-        }
-        let highlights = vacancyHighlights(vacancyCounts)
-        let allSame = Set(vacancyCounts).count <= 1
+    // 4. 셔틀
+    @ViewBuilder
+    var busCard: some View {
+        let busCounts = items.map { $0.hasBus ? $0.busCount : 0 }
+        let highlights = highestHighlights(busCounts)
+        let allSame = Set(items.map { $0.hasBus }).count <= 1
+            && Set(busCounts).count <= 1
 
-        return conditionalRow(
-            title: "결원",
-            labels: labels,
-            highlights: highlights,
-            allSame: allSame,
-            highlightFont: .footnote.weight(.bold)
-        )
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "셔틀") {
+                HStack(spacing: 8) {
+                    ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                        Group {
+                            if item.hasBus {
+                                Text("\(item.busCount)대")
+                                    .font(.footnote.weight(.semibold))
+                                    .foregroundStyle(
+                                        highlights.contains(index) ? bestForeground : slateBlue
+                                    )
+                            } else {
+                                Image(systemName: "xmark.circle")
+                                    .font(.body)
+                                    .foregroundStyle(slateSoft.opacity(0.5))
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .cellBackground(highlighted: highlights.contains(index))
+                    }
+                }
+            }
+        }
+    }
+
+    // 5. 1인당 면적
+    @ViewBuilder
+    var areaCard: some View {
+        let areas = items.map(\.areaPerChild)
+        let labels = areas.map { String(format: "%.1f\u{33A1}", $0) }
+        let highlights = highestHighlights(areas)
+        let allSame = Set(labels).count <= 1
+
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "1인당 면적") {
+                HStack(spacing: 8) {
+                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
+                        MetricCell(value: label, highlighted: highlights.contains(index))
+                    }
+                }
+            }
+        }
     }
 }
 
-// MARK: - Section 2: Care Environment
+// MARK: - More Cards (더보기 항목)
 
 private extension CompareMatrixView {
-    var mealRow: some View {
+    @ViewBuilder
+    var mealCard: some View {
         let mealTypes = items.map(\.mealType)
         let labels = items.map { mealLabel(for: $0.mealType) }
         let highlights = mealHighlights(mealTypes)
         let allSame = Set(mealTypes.map(\.rawValue)).count <= 1
 
-        return conditionalRow(
-            title: "급식",
-            labels: labels,
-            highlights: highlights,
-            allSame: allSame
-        )
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "급식") {
+                HStack(spacing: 8) {
+                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
+                        MetricCell(value: label, highlighted: highlights.contains(index))
+                    }
+                }
+            }
+        }
     }
 
     func mealLabel(for type: MealType) -> String {
@@ -241,177 +319,155 @@ private extension CompareMatrixView {
         }
     }
 
-    var afterSchoolRow: some View {
+    @ViewBuilder
+    var afterSchoolCard: some View {
         let values = items.map(\.hasAfterSchool)
         let highlights = boolHighlights(values)
         let allSame = Set(values).count <= 1
 
-        return conditionalRowContent(title: "방과후", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                Group {
-                    if item.hasAfterSchool {
-                        Image(systemName: "checkmark.circle.fill")
-                            .foregroundStyle(jadeGreen)
-                    } else {
-                        Image(systemName: "xmark.circle")
-                            .foregroundStyle(slateSoft.opacity(0.5))
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "방과후") {
+                HStack(spacing: 8) {
+                    ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                        Group {
+                            if item.hasAfterSchool {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundStyle(jadeGreen)
+                            } else {
+                                Image(systemName: "xmark.circle")
+                                    .foregroundStyle(slateSoft.opacity(0.5))
+                            }
+                        }
+                        .font(.body)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .cellBackground(highlighted: highlights.contains(index))
                     }
                 }
-                .font(.body)
-                .frame(minWidth: columnWidth, maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
 
-    var busRow: some View {
-        let busCounts = items.map { $0.hasBus ? $0.busCount : 0 }
-        let highlights = highestHighlights(busCounts)
-        let allSame = Set(items.map { $0.hasBus }).count <= 1
-            && Set(busCounts).count <= 1
+    @ViewBuilder
+    var vacancyCard: some View {
+        let labels: [String] = vacancyCounts.map { count in
+            count > 0 ? "빈자리 \(count)명" : "없음"
+        }
+        let highlights = vacancyHighlights(vacancyCounts)
+        let allSame = Set(vacancyCounts).count <= 1
 
-        return conditionalRowContent(title: "셔틀", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                Group {
-                    if item.hasBus {
-                        Text("\(item.busCount)대")
-                            .font(.footnote.weight(.semibold))
-                            .foregroundStyle(
-                                highlights.contains(index) ? bestForeground : slateBlue
-                            )
-                    } else {
-                        Image(systemName: "xmark.circle")
-                            .font(.body)
-                            .foregroundStyle(slateSoft.opacity(0.5))
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "결원") {
+                HStack(spacing: 8) {
+                    ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
+                        MetricCell(value: label, highlighted: highlights.contains(index))
                     }
                 }
-                .frame(minWidth: columnWidth, maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
-}
 
-// MARK: - Section 3: Facilities & Safety
-
-private extension CompareMatrixView {
-    var playgroundRow: some View {
+    @ViewBuilder
+    var playgroundCard: some View {
         let values = items.map(\.hasPlayground)
         let highlights = boolHighlights(values)
         let allSame = Set(values).count <= 1
             && Set(items.map { Int($0.outdoorPlaygroundArea) }).count <= 1
 
-        return conditionalRowContent(title: "놀이터", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                VStack(spacing: 2) {
-                    if item.hasPlayground {
-                        Image(systemName: "checkmark.circle.fill")
-                            .foregroundStyle(jadeGreen)
-                            .font(.body)
-                    } else {
-                        Image(systemName: "xmark.circle")
-                            .foregroundStyle(slateSoft.opacity(0.5))
-                            .font(.body)
-                    }
-
-                    if item.outdoorPlaygroundArea > 0 {
-                        Text(String(format: "%.0f\u{33A1}", item.outdoorPlaygroundArea))
-                            .font(.caption2)
-                            .foregroundStyle(slateSoft)
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "놀이터") {
+                HStack(spacing: 8) {
+                    ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
+                        VStack(spacing: 2) {
+                            if item.hasPlayground {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundStyle(jadeGreen)
+                                    .font(.body)
+                            } else {
+                                Image(systemName: "xmark.circle")
+                                    .foregroundStyle(slateSoft.opacity(0.5))
+                                    .font(.body)
+                            }
+                            if item.outdoorPlaygroundArea > 0 {
+                                Text(String(format: "%.0f\u{33A1}", item.outdoorPlaygroundArea))
+                                    .font(.caption2)
+                                    .foregroundStyle(slateSoft)
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .cellBackground(highlighted: highlights.contains(index))
                     }
                 }
-                .frame(minWidth: columnWidth, maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .cellBackground(highlighted: highlights.contains(index))
             }
         }
     }
 
-    var cctvRow: some View {
+    @ViewBuilder
+    var cctvCard: some View {
         let counts = items.map(\.cctvCount)
         let highlights = highestHighlights(counts)
         let allSame = Set(counts).count <= 1
 
-        return conditionalRow(
-            title: "CCTV",
-            labels: counts.map { "\($0)대" },
-            highlights: highlights,
-            allSame: allSame
-        )
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "CCTV") {
+                HStack(spacing: 8) {
+                    ForEach(Array(counts.enumerated()), id: \.offset) { index, count in
+                        MetricCell(value: "\(count)대", highlighted: highlights.contains(index))
+                    }
+                }
+            }
+        }
     }
 
-    var areaRow: some View {
-        let areas = items.map(\.areaPerChild)
-        let labels = areas.map { String(format: "%.1f\u{33A1}", $0) }
-        let highlights = highestHighlights(areas)
-        let allSame = Set(labels).count <= 1
-
-        return conditionalRow(
-            title: "1인당면적",
-            labels: labels,
-            highlights: highlights,
-            allSame: allSame
-        )
-    }
-}
-
-// MARK: - Section 4: Reference
-
-private extension CompareMatrixView {
-    var reviewRow: some View {
-        let highlights = highestHighlights(reviewCounts)
-        let labels = reviewCounts.map { "\($0)건" }
-        let allSame = Set(reviewCounts).count <= 1
-
-        return conditionalRow(
-            title: "후기",
-            labels: labels,
-            highlights: highlights,
-            allSame: allSame
-        )
-    }
-
-    var establishRow: some View {
+    @ViewBuilder
+    var establishCard: some View {
         let years = items.map { String($0.establishDate.prefix(4)) + "년" }
         let allSame = Set(years).count <= 1
 
-        return conditionalRow(
-            title: "설립",
-            labels: years,
-            highlights: [],
-            allSame: allSame
-        )
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "설립") {
+                HStack(spacing: 8) {
+                    ForEach(Array(years.enumerated()), id: \.offset) { _, year in
+                        MetricCell(value: year, highlighted: false)
+                    }
+                }
+            }
+        }
     }
 
-    var phoneRow: some View {
+    @ViewBuilder
+    var phoneCard: some View {
         let phones = items.map(\.phone)
         let allSame = Set(phones.map { $0 ?? "" }).count <= 1
 
-        return conditionalRowContent(title: "전화", allSame: allSame) {
-            ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                Group {
-                    if let phone = item.phone,
-                       let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
-                        Link(destination: url) {
-                            HStack(spacing: 4) {
-                                Image(systemName: "phone.fill")
-                                    .font(.caption)
-                                Text(phone)
-                                    .font(.caption2)
+        if !showDiffsOnly || !allSame {
+            CompareMetricCard(title: "전화") {
+                HStack(spacing: 8) {
+                    ForEach(Array(items.enumerated()), id: \.element.id) { _, item in
+                        Group {
+                            if let phone = item.phone,
+                               let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
+                                Link(destination: url) {
+                                    HStack(spacing: 4) {
+                                        Image(systemName: "phone.fill")
+                                            .font(.caption)
+                                        Text(phone)
+                                            .font(.caption2)
+                                    }
+                                    .foregroundStyle(jadeDeep)
+                                }
+                            } else {
+                                Text("-")
+                                    .font(.footnote)
+                                    .foregroundStyle(slateSoft.opacity(0.5))
                             }
-                            .foregroundStyle(jadeDeep)
                         }
-                    } else {
-                        Text("-")
-                            .font(.footnote)
-                            .foregroundStyle(slateSoft.opacity(0.5))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .cellBackground(highlighted: false)
                     }
                 }
-                .frame(minWidth: columnWidth, maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .cellBackground(highlighted: false)
             }
         }
     }
@@ -435,59 +491,6 @@ private extension CompareMatrixView {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 6)
-    }
-}
-
-// MARK: - Reusable Row Builders
-
-private extension CompareMatrixView {
-    /// Simple text-based row with optional highlight.
-    @ViewBuilder
-    func conditionalRow(
-        title: String,
-        labels: [String],
-        highlights: Set<Int>,
-        allSame: Bool,
-        highlightFont: Font = .footnote.weight(.semibold)
-    ) -> some View {
-        if !showDiffsOnly || !allSame {
-            HStack(spacing: 10) {
-                Text(title)
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(slateBlue)
-                    .frame(width: 70, alignment: .leading)
-
-                ForEach(Array(labels.enumerated()), id: \.offset) { index, label in
-                    Text(label)
-                        .font(highlights.contains(index) ? highlightFont : .footnote.weight(.semibold))
-                        .foregroundStyle(
-                            highlights.contains(index) ? bestForeground : slateBlue
-                        )
-                        .frame(minWidth: columnWidth, maxWidth: .infinity)
-                        .padding(.vertical, 12)
-                        .cellBackground(highlighted: highlights.contains(index))
-                }
-            }
-        }
-    }
-
-    /// Row with custom cell content.
-    @ViewBuilder
-    func conditionalRowContent<Content: View>(
-        title: String,
-        allSame: Bool,
-        @ViewBuilder content: () -> Content
-    ) -> some View {
-        if !showDiffsOnly || !allSame {
-            HStack(spacing: 10) {
-                Text(title)
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(slateBlue)
-                    .frame(width: 70, alignment: .leading)
-
-                content()
-            }
-        }
     }
 }
 
@@ -529,7 +532,6 @@ private extension CompareMatrixView {
         return indices.count == values.count ? [] : indices
     }
 
-    /// Highlight indexes with the lowest value (lower is better). Zeros excluded.
     func lowestHighlights(_ values: [Double]) -> Set<Int> {
         let positives = values.enumerated().filter { $0.element > 0 }
         guard let lowest = positives.min(by: { $0.element < $1.element })?.element else { return [] }
@@ -537,13 +539,11 @@ private extension CompareMatrixView {
         return indices.count == positives.count ? [] : indices
     }
 
-    /// Highlight indexes where Bool is true. No highlight if all same.
     func boolHighlights(_ values: [Bool]) -> Set<Int> {
         guard Set(values).count > 1 else { return [] }
         return Set(values.enumerated().compactMap { idx, val in val ? idx : nil })
     }
 
-    /// Highlight only `.direct` meal type. No highlight if all same.
     func mealHighlights(_ values: [MealType]) -> Set<Int> {
         guard Set(values).count > 1 else { return [] }
         return Set(values.enumerated().compactMap { idx, val in val == .direct ? idx : nil })

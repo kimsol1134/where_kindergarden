@@ -34,7 +34,7 @@ public struct NativeRootView: View {
 
                 SavedView(model: model)
                     .tabItem {
-                        Label("보관함", systemImage: "heart")
+                        Label("찜한 곳", systemImage: "heart")
                     }
                     .tag(NativeTab.saved)
 

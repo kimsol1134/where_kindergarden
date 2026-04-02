@@ -1,8 +1,12 @@
 import Models
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public struct SavedView: View {
     @ObservedObject private var model: NativeAppModel
+    @Environment(\.openURL) private var openURL
     @State private var pendingUndo: SavedUndoState?
     @State private var isRecentClearConfirmationPresented = false
 
@@ -18,16 +22,6 @@ public struct SavedView: View {
         NavigationStack {
             List {
                     Section {
-                        NativeScreenHeader(
-                            eyebrow: "보관함",
-                            title: "저장한 곳",
-                            subtitle: "찜한 기관 \(model.favorites.count)곳 · 최근 검색 \(model.recentSearches.count)건"
-                        )
-                        .listRowInsets(EdgeInsets(top: 16, leading: 20, bottom: 14, trailing: 20))
-                        .listRowBackground(Color.clear)
-                    }
-
-                    Section {
                         if model.favorites.isEmpty {
                             EmptyStateView(
                                 icon: "heart",
@@ -38,6 +32,7 @@ public struct SavedView: View {
                             )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
                         } else {
                             ForEach(model.favoriteKindergartens()) { kindergarten in
                                 Button {
@@ -45,20 +40,32 @@ public struct SavedView: View {
                                 } label: {
                                     FavoriteSavedCard(
                                         kindergarten: kindergarten,
-                                        reviewCount: model.reviews(for: kindergarten.kindercode).count
+                                        reviewCount: model.reviews(for: kindergarten.kindercode).count,
+                                        onCall: kindergarten.phone.map { phone in
+                                            {
+                                                let digits = phone.replacingOccurrences(of: "-", with: "")
+                                                if let url = URL(string: "tel:\(digits)") {
+                                                    openURL(url)
+                                                }
+                                            }
+                                        }
                                     )
                                 }
                                 .buttonStyle(PressableCardStyle())
                                 .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20))
                                 .listRowBackground(Color.clear)
+                                .listRowSeparator(.hidden)
                                 .accessibilityLabel("\(kindergarten.name), \(kindergarten.type.label)")
                                 .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                     Button {
-                                        model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                        model.toggleCompare(for: kindergarten)
                                     } label: {
-                                        Label("열기", systemImage: "arrow.up.forward.app")
+                                        Label(
+                                            model.isCompared(kindergarten) ? "비교 빼기" : "비교 추가",
+                                            systemImage: model.isCompared(kindergarten) ? "minus.square" : "plus.square.on.square"
+                                        )
                                     }
-                                    .tint(jadeGreen)
+                                    .tint(model.isCompared(kindergarten) ? .orange : jadeGreen)
                                 }
                                 .swipeActions {
                                     Button(role: .destructive) {
@@ -76,6 +83,37 @@ public struct SavedView: View {
                                     } label: {
                                         Label("열기", systemImage: "arrow.up.forward.app")
                                     }
+
+                                    Button {
+                                        model.toggleCompare(for: kindergarten)
+                                    } label: {
+                                        Label(
+                                            model.isCompared(kindergarten) ? "비교에서 빼기" : "비교에 추가",
+                                            systemImage: model.isCompared(kindergarten) ? "minus.square" : "plus.square.on.square"
+                                        )
+                                    }
+
+                                    if let phone = kindergarten.phone {
+                                        Button {
+                                            let digits = phone.replacingOccurrences(of: "-", with: "")
+                                            if let url = URL(string: "tel:\(digits)") {
+                                                openURL(url)
+                                            }
+                                        } label: {
+                                            Label("전화 걸기", systemImage: "phone")
+                                        }
+                                    }
+
+                                    Button {
+                                        #if canImport(UIKit)
+                                        UIPasteboard.general.string = kindergarten.address
+                                        #endif
+                                    } label: {
+                                        Label("주소 복사", systemImage: "doc.on.doc")
+                                    }
+
+                                    Divider()
+
                                     Button(role: .destructive) {
                                         guard let removed = model.takeFavorite(kindercode: kindergarten.kindercode) else { return }
                                         stageUndo(.favorites([removed]))
@@ -86,12 +124,7 @@ public struct SavedView: View {
                             }
                         }
                     } header: {
-                        SavedSectionHeader(title: "찜한 곳", subtitle: "눌러서 다시 보고 비교할 수 있어요.")
-                    } footer: {
-                        if !model.favorites.isEmpty {
-                            Text("밀어서 열거나 삭제할 수 있어요.")
-                                .foregroundStyle(slateSoft)
-                        }
+                        SavedSectionHeader(title: "\(model.favorites.count)곳 저장됨", subtitle: "")
                     }
 
                     Section {
@@ -105,6 +138,7 @@ public struct SavedView: View {
                             )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
                         } else {
                             ForEach(model.recentSearches) { item in
                                 Button {
@@ -115,15 +149,8 @@ public struct SavedView: View {
                                 .buttonStyle(PressableCardStyle())
                                 .listRowInsets(EdgeInsets(top: 4, leading: 20, bottom: 4, trailing: 20))
                                 .listRowBackground(Color.clear)
+                                .listRowSeparator(.hidden)
                                 .accessibilityLabel("\(item.label), \(item.resolvedDisplayName)")
-                                .swipeActions(edge: .leading, allowsFullSwipe: false) {
-                                    Button {
-                                        model.restoreRecentSearch(item)
-                                    } label: {
-                                        Label("복원", systemImage: "arrow.counterclockwise")
-                                    }
-                                    .tint(jadeGreen)
-                                }
                                 .swipeActions {
                                     Button(role: .destructive) {
                                         guard let removed = model.takeRecentSearch(item) else {
@@ -138,7 +165,7 @@ public struct SavedView: View {
                         }
                     } header: {
                         HStack {
-                            SavedSectionHeader(title: "최근 검색", subtitle: "선택했던 동네나 위치로 다시 돌아갈 수 있어요.")
+                            SavedSectionHeader(title: "최근 검색", subtitle: "\(model.recentSearches.count)건")
                             Spacer()
                             if !model.recentSearches.isEmpty {
                                 Button("전체 삭제", role: .destructive) {
@@ -152,6 +179,8 @@ public struct SavedView: View {
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .background { NativeScreenBackground(topTintOpacity: 0.16) }
+            .navigationTitle("찜한 곳")
+            .navigationBarTitleDisplayMode(.large)
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",
                 isPresented: $isRecentClearConfirmationPresented,
@@ -251,9 +280,11 @@ private struct SavedSectionHeader: View {
             Text(title)
                 .font(.headline.weight(.bold))
                 .foregroundStyle(inkBlack)
-            Text(subtitle)
-                .font(.caption)
-                .foregroundStyle(slateSoft)
+            if !subtitle.isEmpty {
+                Text(subtitle)
+                    .font(.caption)
+                    .foregroundStyle(slateSoft)
+            }
         }
         .textCase(nil)
     }
@@ -262,10 +293,11 @@ private struct SavedSectionHeader: View {
 private struct FavoriteSavedCard: View {
     let kindergarten: Kindergarten
     let reviewCount: Int
+    let onCall: (() -> Void)?
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .top) {
+            HStack(alignment: .center) {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(spacing: 8) {
                         NativeBadge(kindergarten.type.label)
@@ -286,13 +318,28 @@ private struct FavoriteSavedCard: View {
 
                 Spacer(minLength: 12)
 
-                VStack(spacing: 8) {
-                    Image(systemName: "heart.fill")
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(sunYellow)
+                HStack(spacing: 12) {
+                    if onCall != nil {
+                        Button {
+                            onCall?()
+                        } label: {
+                            Image(systemName: "phone.circle.fill")
+                                .font(.title3)
+                                .foregroundStyle(jadeGreen)
+                        }
+                        .buttonStyle(.plain)
+                    }
+
                     Image(systemName: "chevron.right")
-                        .font(.caption.weight(.bold))
-                        .foregroundStyle(slateSoft)
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(slateSoft.opacity(0.6))
+                }
+            }
+
+            HStack(spacing: 8) {
+                NativeBadge("현원 \(kindergarten.currentCount)/\(kindergarten.capacity)명", tone: .slate)
+                if kindergarten.teacherCount > 0 {
+                    NativeBadge("교사 1:\(kindergarten.currentCount / max(kindergarten.teacherCount, 1))", tone: .slate)
                 }
             }
 
