@@ -601,15 +601,29 @@ public final class NativeAppModel: ObservableObject {
     }
 
     public func toggleCompare(for kindergarten: Kindergarten) {
+        if compareSelection.contains(kindergarten.kindercode) {
+            compareSelection.toggle(id: kindergarten.kindercode)
+            analytics?.track(event: .compareToggled, properties: [
+                "kindercode": kindergarten.kindercode,
+                "selected": "false"
+            ])
+            persistence.saveCompareSelection(compareSelection)
+            refreshSelectedKindergarten()
+            compareToastMessage = "비교에서 뺐어요"
+            return
+        }
+        guard compareSelection.ids.count < CompareSelection.limit else {
+            compareToastMessage = "비교는 최대 3곳까지 가능해요"
+            return
+        }
         compareSelection.toggle(id: kindergarten.kindercode)
-        let isNowCompared = compareSelection.contains(kindergarten.kindercode)
         analytics?.track(event: .compareToggled, properties: [
             "kindercode": kindergarten.kindercode,
-            "selected": "\(isNowCompared)"
+            "selected": "true"
         ])
         persistence.saveCompareSelection(compareSelection)
         refreshSelectedKindergarten()
-        compareToastMessage = isNowCompared ? "비교에 담았어요" : "비교에서 뺐어요"
+        compareToastMessage = "비교에 담았어요"
     }
 
     public func dismissCompareToast() {

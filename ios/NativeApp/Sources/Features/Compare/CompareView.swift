@@ -24,19 +24,6 @@ public struct CompareView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                        NativeScreenHeader(
-                            eyebrow: "비교",
-                            title: "나란히 보기",
-                            subtitle: summaryLine
-                        ) {
-                            Text(items.isEmpty ? "최대 3곳" : "\(items.count) / 3곳")
-                                .font(.footnote.weight(.semibold))
-                                .foregroundStyle(inkBlack)
-                                .padding(.horizontal, 14)
-                                .padding(.vertical, 10)
-                                .background(sunYellow.opacity(0.28), in: Capsule())
-                        }
-
                         if items.isEmpty {
                             EmptyStateView(
                                 icon: "square.split.2x2",
@@ -48,33 +35,30 @@ public struct CompareView: View {
                             .accessibilityIdentifier("compare.emptyState")
                         } else {
                             if items.count == 1 {
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    HStack(spacing: 14) {
-                                        CompareHeaderCard(item: items[0], score: 0) {
-                                            model.toggleCompare(for: items[0])
-                                        }
-
-                                        Button {
-                                            model.selectedTab = .search
-                                        } label: {
-                                            VStack(spacing: 8) {
-                                                Image(systemName: "plus.circle")
-                                                    .font(.title2)
-                                                    .foregroundStyle(slateSoft)
-                                                Text("비교 대상 추가")
-                                                    .font(.caption.weight(.medium))
-                                                    .foregroundStyle(slateSoft)
-                                            }
-                                            .frame(minWidth: 170, idealWidth: 200, maxWidth: 260, minHeight: 120)
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: CornerRadius.large, style: .continuous)
-                                                    .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [8, 6]))
-                                                    .foregroundStyle(slateSoft.opacity(0.3))
-                                            )
-                                        }
-                                        .buttonStyle(.plain)
+                                HStack(spacing: 8) {
+                                    CompareHeaderCard(item: items[0], score: 0) {
+                                        model.toggleCompare(for: items[0])
                                     }
-                                    .padding(.vertical, 4)
+
+                                    Button {
+                                        model.selectedTab = .search
+                                    } label: {
+                                        VStack(spacing: 6) {
+                                            Image(systemName: "plus.circle")
+                                                .font(.body)
+                                                .foregroundStyle(slateSoft)
+                                            Text("추가")
+                                                .font(.caption2.weight(.medium))
+                                                .foregroundStyle(slateSoft)
+                                        }
+                                        .frame(maxWidth: .infinity, minHeight: 72)
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                                                .strokeBorder(style: StrokeStyle(lineWidth: 2, dash: [8, 6]))
+                                                .foregroundStyle(slateSoft.opacity(0.3))
+                                        )
+                                    }
+                                    .buttonStyle(.plain)
                                 }
                             } else {
                                 let scores = calculateScores()
@@ -91,7 +75,7 @@ public struct CompareView: View {
                                         .background(sunYellow.opacity(0.18), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                                 }
 
-                                HStack(alignment: .top, spacing: 14) {
+                                HStack(alignment: .top, spacing: 8) {
                                     ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                                         CompareHeaderCard(item: item, score: scores[index]) {
                                             model.toggleCompare(for: item)
@@ -121,17 +105,15 @@ public struct CompareView: View {
                     .padding(.bottom, 20)
                 }
             .background { NativeScreenBackground() }
-        }
-    }
-
-    private var summaryLine: String {
-        switch items.count {
-        case 1:
-            return "선택한 곳을 먼저 살펴보고 있어요. 최대 2곳 더 담아 비교할 수 있어요."
-        case 2:
-            return "선택한 2곳을 한눈에 비교해 보세요."
-        default:
-            return "선택한 \(items.count)곳을 같은 기준으로 비교해요."
+            .navigationTitle("비교")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Text(items.isEmpty ? "최대 3곳" : "\(items.count) / 3곳")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(slateSoft)
+                }
+            }
         }
     }
 
@@ -213,7 +195,7 @@ public struct CompareView: View {
                         }
                         .foregroundStyle(inkBlack)
                         .padding(.horizontal, 18)
-                        .padding(.vertical, 16)
+                        .padding(.vertical, 14)
                         .background(kakaoYellow, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                     }
                     .accessibilityIdentifier("compare.kakaoShareButton")
@@ -224,7 +206,7 @@ public struct CompareView: View {
                 ShareLink(
                     item: shareURL,
                     subject: Text("유치원 비교"),
-                    message: Text(shareSummary)
+                    message: Text(shareURL.absoluteString)
                 ) {
                     HStack {
                         Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
@@ -232,34 +214,18 @@ public struct CompareView: View {
                     }
                     .foregroundStyle(inkBlack)
                     .padding(.horizontal, 18)
-                    .padding(.vertical, 16)
+                    .padding(.vertical, 14)
                     .background(jadeGreen.opacity(0.24), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                 }
                 .accessibilityIdentifier("compare.shareButton")
                 .buttonStyle(.plain)
             }
-            .nativeSectionPanel(cornerRadius: CornerRadius.large)
         } else {
             Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
                 .frame(maxWidth: .infinity)
-                .padding(.vertical, 16)
-                .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.82))
+                .padding(.vertical, 14)
                 .foregroundStyle(slateSoft)
         }
-    }
-
-    private var shareSummary: String {
-        let lines = items.map { item in
-            "\(item.name) · \(item.address) · 정원 \(item.capacity)명 · 1인당 면적 \(String(format: "%.1f㎡", item.areaPerChild))"
-        }
-
-        return ([
-            "유치원 비교",
-            lines.joined(separator: "\n"),
-            model.compareShareURL()?.absoluteString ?? ""
-        ])
-        .filter { !$0.isEmpty }
-        .joined(separator: "\n\n")
     }
 
 // MARK: - CompareHeaderCard
@@ -270,63 +236,49 @@ private struct CompareHeaderCard: View {
     let onRemove: () -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 6) {
             HStack(alignment: .top) {
-                Text(shortenName(item.name))
-                    .font(.headline.weight(.bold))
+                Text(shortenKindergartenName(item.name))
+                    .font(.subheadline.weight(.bold))
                     .foregroundStyle(inkBlack)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.75)
-                Spacer()
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                Spacer(minLength: 4)
                 Button(action: onRemove) {
                     Image(systemName: "minus.circle.fill")
-                        .font(.title3)
+                        .font(.footnote)
                         .foregroundStyle(slateSoft)
-                        .frame(width: 44, height: 44)
+                        .frame(width: 32, height: 32)
                         .contentShape(Circle())
                 }
                 .buttonStyle(.plain)
             }
 
-            HStack(spacing: 6) {
-                NativeBadge(item.type.label)
-                if item.distance >= 0 {
-                    Label(String(format: "%.1fkm", item.distance), systemImage: "mappin")
-                        .font(.caption2.weight(.medium))
-                        .foregroundStyle(slateSoft)
-                }
+            Text("\(item.type.label) \(item.distance >= 0 ? String(format: "%.1fkm", item.distance) : "")")
+                .font(.caption2.weight(.medium))
+                .foregroundStyle(slateSoft)
+
+            if score > 0 {
+                Text("\(score)개 우세")
+                    .font(.caption2.weight(.bold))
+                    .foregroundStyle(compareBestForeground)
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 2)
+                    .background(compareBestTint, in: Capsule())
             }
-
-            Text(shortenAddress(item.address))
-                .font(.caption)
-                .foregroundStyle(slateBlue)
-                .lineLimit(1)
-
-            Text("\(max(score, 1))개 우세")
-                .font(.caption2.weight(.bold))
-                .foregroundStyle(compareBestForeground)
-                .padding(.horizontal, 8)
-                .padding(.vertical, 3)
-                .background(compareBestTint, in: Capsule())
-                .opacity(score > 0 ? 1 : 0)
         }
-        .padding(18)
+        .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
+        .solidPanel(cornerRadius: CornerRadius.medium, tint: paperWhite.opacity(0.94))
         .accessibilityIdentifier("compare.card.\(item.kindercode)")
         .accessibilityElement(children: .combine)
     }
 
-    private func shortenName(_ name: String) -> String {
-        name.replacingOccurrences(of: "유치원", with: "")
-            .replacingOccurrences(of: "어린이집", with: "")
-    }
-
-    private func shortenAddress(_ address: String) -> String {
-        let parts = address.split(separator: " ")
-        guard parts.count >= 3 else { return address }
-        return parts.dropFirst().prefix(2).joined(separator: " ")
-    }
 }
 
+}
+
+func shortenKindergartenName(_ name: String) -> String {
+    name.replacingOccurrences(of: "유치원", with: "")
+        .replacingOccurrences(of: "어린이집", with: "")
 }
