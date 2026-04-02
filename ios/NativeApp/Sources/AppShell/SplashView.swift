@@ -40,9 +40,6 @@ struct SplashView: View {
                         .opacity(phase ? 0.5 : 0.25)
                 } animation: { _ in .easeInOut(duration: 3).repeatForever(autoreverses: true) }
 
-            // Orbit dots
-            OrbitDots()
-
             // Main content
             VStack(spacing: 0) {
                 // Icon with scan sweep
@@ -125,36 +122,6 @@ private struct DashedRing: View {
             .strokeBorder(style: StrokeStyle(lineWidth: 1.5, dash: [dash, gap]))
             .foregroundStyle(color)
             .frame(width: size, height: size)
-    }
-}
-
-// MARK: - Orbit Dots
-
-private struct OrbitDots: View {
-    @State private var animate = false
-
-    var body: some View {
-        ZStack {
-            dotView(offset: CGSize(width: 0, height: -112), color: leafGreen.opacity(0.35), delay: 1.2)
-            dotView(offset: CGSize(width: 112, height: 0), color: sunYellow.opacity(0.45), delay: 1.8)
-            dotView(offset: CGSize(width: 0, height: 112), color: leafGreen.opacity(0.25), delay: 2.4)
-        }
-        .onAppear { animate = true }
-    }
-
-    private func dotView(offset: CGSize, color: Color, delay: Double) -> some View {
-        Circle()
-            .fill(color)
-            .frame(width: 8, height: 8)
-            .offset(offset)
-            .opacity(animate ? 0.8 : 0)
-            .scaleEffect(animate ? 1.2 : 0.5)
-            .animation(
-                .easeInOut(duration: 3)
-                    .repeatForever(autoreverses: true)
-                    .delay(delay),
-                value: animate
-            )
     }
 }
 
