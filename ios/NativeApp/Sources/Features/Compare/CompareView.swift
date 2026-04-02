@@ -21,11 +21,11 @@ public struct CompareView: View {
     }
 
     public var body: some View {
+        let scores = items.count >= 2 ? calculateScores() : []
+
         NavigationStack {
             VStack(spacing: 0) {
-                // Sticky name bar (2+ items)
                 if items.count >= 2 {
-                    let scores = calculateScores()
                     CompareNameBar(
                         items: items,
                         scores: scores,
@@ -71,7 +71,6 @@ public struct CompareView: View {
                                 .buttonStyle(.plain)
                             }
                         } else {
-                            let scores = calculateScores()
                             let reviewCounts = items.map { model.reviews(for: $0.kindercode).count }
                             let vacancyCounts = items.map { model.vacancyCount(for: $0.kindercode) }
 
