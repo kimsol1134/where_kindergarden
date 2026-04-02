@@ -182,30 +182,14 @@ public struct SavedView: View {
             .navigationTitle("찜한 곳")
             .navigationBarTitleDisplayMode(.large)
             .sheet(item: $selectedKindergarten) { kindergarten in
-                KindergartenDetailSheet(
-                    kindergarten: kindergarten,
-                    reviews: model.reviews(for: kindergarten.kindercode),
-                    reviewsVersion: model.reviewsData?.version,
-                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                    vacancyDatasetVersion: model.vacancyData?.version,
-                    isVacancyLoading: model.isVacancyLoading,
-                    vacancyError: model.vacancyError,
-                    isCompared: model.isCompared(kindergarten),
-                    isFavorite: model.isFavorite(kindergarten),
-                    fitReasons: model.fitReasons(for: kindergarten),
-                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                )
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
-                .toast(
-                    isPresented: Binding(
-                        get: { model.compareToast != nil },
-                        set: { if !$0 { model.dismissCompareToast() } }
-                    ),
-                    message: model.compareToast?.message ?? "",
-                    icon: model.compareToast?.icon ?? "checkmark.circle.fill"
-                )
+                model.makeDetailSheet(for: kindergarten)
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+                    .toast(
+                        isPresented: model.compareToastBinding,
+                        message: model.compareToast?.message ?? "",
+                        icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                    )
             }
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",

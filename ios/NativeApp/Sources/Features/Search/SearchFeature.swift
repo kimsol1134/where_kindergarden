@@ -268,39 +268,23 @@ public struct SearchHomeView: View {
             }
             .fullScreenCover(item: sheetSelection) { kindergarten in
                 NavigationStack {
-                    KindergartenDetailSheet(
-                        kindergarten: kindergarten,
-                        reviews: model.reviews(for: kindergarten.kindercode),
-                        reviewsVersion: model.reviewsData?.version,
-                        vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                        vacancyDatasetVersion: model.vacancyData?.version,
-                        isVacancyLoading: model.isVacancyLoading,
-                        vacancyError: model.vacancyError,
-                        isCompared: model.isCompared(kindergarten),
-                        isFavorite: model.isFavorite(kindergarten),
-                        fitReasons: model.fitReasons(for: kindergarten),
-                        onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                        onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                    )
-                    .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-                            Button {
-                                model.dismissDetail()
-                            } label: {
-                                Image(systemName: "xmark")
-                                    .font(.body.weight(.semibold))
-                                    .foregroundStyle(.secondary)
+                    model.makeDetailSheet(for: kindergarten)
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                Button {
+                                    model.dismissDetail()
+                                } label: {
+                                    Image(systemName: "xmark")
+                                        .font(.body.weight(.semibold))
+                                        .foregroundStyle(.secondary)
+                                }
                             }
                         }
-                    }
-                    .toast(
-                        isPresented: Binding(
-                            get: { model.compareToast != nil },
-                            set: { if !$0 { model.dismissCompareToast() } }
-                        ),
-                        message: model.compareToast?.message ?? "",
-                        icon: model.compareToast?.icon ?? "checkmark.circle.fill"
-                    )
+                        .toast(
+                            isPresented: model.compareToastBinding,
+                            message: model.compareToast?.message ?? "",
+                            icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                        )
                 }
             }
         }

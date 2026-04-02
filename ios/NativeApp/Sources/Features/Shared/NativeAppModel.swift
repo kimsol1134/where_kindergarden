@@ -1,6 +1,7 @@
 import Foundation
 import Models
 import Services
+import SwiftUI
 
 public enum NativeTab: Hashable {
     case search
@@ -10,16 +11,17 @@ public enum NativeTab: Hashable {
 }
 
 public struct CompareToast: Equatable {
+    public let id: UUID
     public let message: String
     public let icon: String
     public let isWarning: Bool
 
     public static func success(_ message: String) -> CompareToast {
-        CompareToast(message: message, icon: "checkmark.circle.fill", isWarning: false)
+        CompareToast(id: UUID(), message: message, icon: "checkmark.circle.fill", isWarning: false)
     }
 
     public static func warning(_ message: String) -> CompareToast {
-        CompareToast(message: message, icon: "exclamationmark.triangle.fill", isWarning: true)
+        CompareToast(id: UUID(), message: message, icon: "exclamationmark.triangle.fill", isWarning: true)
     }
 }
 
@@ -642,6 +644,30 @@ public final class NativeAppModel: ObservableObject {
 
     public func dismissCompareToast() {
         compareToast = nil
+    }
+
+    public var compareToastBinding: Binding<Bool> {
+        Binding(
+            get: { self.compareToast != nil },
+            set: { if !$0 { self.dismissCompareToast() } }
+        )
+    }
+
+    func makeDetailSheet(for kindergarten: Kindergarten) -> KindergartenDetailSheet {
+        KindergartenDetailSheet(
+            kindergarten: kindergarten,
+            reviews: reviews(for: kindergarten.kindercode),
+            reviewsVersion: reviewsData?.version,
+            vacancySummary: vacancy(for: kindergarten.kindercode),
+            vacancyDatasetVersion: vacancyData?.version,
+            isVacancyLoading: isVacancyLoading,
+            vacancyError: vacancyError,
+            isCompared: isCompared(kindergarten),
+            isFavorite: isFavorite(kindergarten),
+            fitReasons: fitReasons(for: kindergarten),
+            onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+        )
     }
 
     public func isCompared(_ kindergarten: Kindergarten) -> Bool {
