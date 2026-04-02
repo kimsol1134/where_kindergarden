@@ -114,7 +114,7 @@ public struct CompareView: View {
                     shareActions
                         .padding(.horizontal, 20)
                         .padding(.vertical, 12)
-                        .background(.ultraThinMaterial)
+                        .glassPanel(cornerRadius: 0)
                 }
             }
         }

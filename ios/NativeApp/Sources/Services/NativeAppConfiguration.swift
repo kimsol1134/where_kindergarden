@@ -27,6 +27,13 @@ public struct NativeAppConfiguration: Sendable {
     public static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
     public static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
     public static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
+    public static let defaultAdMobBannerUnitID: String = {
+        #if DEBUG
+        return "ca-app-pub-3940256099942544/2435281174"
+        #else
+        return "ca-app-pub-5648788643644962/5397823299"
+        #endif
+    }()
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
@@ -43,13 +50,7 @@ public struct NativeAppConfiguration: Sendable {
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
         kakaoConfigurationSource: String? = nil,
-        adMobBannerUnitID: String = {
-            #if DEBUG
-            return "ca-app-pub-3940256099942544/2435281174"
-            #else
-            return "ca-app-pub-5648788643644962/5397823299"
-            #endif
-        }(),
+        adMobBannerUnitID: String = NativeAppConfiguration.defaultAdMobBannerUnitID,
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
         compareShareBaseURL: URL = NativeAppConfiguration.defaultCompareShareBaseURL,
@@ -76,13 +77,7 @@ public struct NativeAppConfiguration: Sendable {
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
             kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String,
             kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String,
-            adMobBannerUnitID: adMobID ?? {
-                #if DEBUG
-                return "ca-app-pub-3940256099942544/2435281174"
-                #else
-                return "ca-app-pub-5648788643644962/5397823299"
-                #endif
-            }()
+            adMobBannerUnitID: adMobID ?? Self.defaultAdMobBannerUnitID
         )
     }
 
