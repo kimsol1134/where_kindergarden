@@ -269,17 +269,6 @@ public struct SearchHomeView: View {
             .fullScreenCover(item: sheetSelection) { kindergarten in
                 NavigationStack {
                     model.makeDetailSheet(for: kindergarten)
-                        .toolbar {
-                            ToolbarItem(placement: .topBarLeading) {
-                                Button {
-                                    model.dismissDetail()
-                                } label: {
-                                    Image(systemName: "xmark")
-                                        .font(.body.weight(.semibold))
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
-                        }
                         .toast(
                             isPresented: model.compareToastBinding,
                             message: model.compareToast?.message ?? "",

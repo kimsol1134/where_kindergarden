@@ -304,6 +304,8 @@ private struct CompareNameBar: View {
                                     .foregroundStyle(slateSoft)
                                     .frame(width: 18, height: 18)
                                     .background(slateSoft.opacity(0.12), in: Circle())
+                                    .frame(width: 44, height: 44)
+                                    .contentShape(Circle())
                             }
                             .buttonStyle(.plain)
                         }

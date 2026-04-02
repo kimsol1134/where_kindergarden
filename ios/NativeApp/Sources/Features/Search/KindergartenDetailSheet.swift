@@ -301,14 +301,14 @@ struct KindergartenDetailSheet: View {
                 DetailActionButton(
                     title: isFavorite ? "저장 취소" : "저장",
                     systemImage: isFavorite ? "heart.slash.fill" : "heart.fill",
-                    tone: .sun,
+                    tone: isFavorite ? .slate : .sun,
                     action: onToggleFavorite
                 )
 
                 DetailActionButton(
                     title: isCompared ? "비교 빼기" : "비교 담기",
                     systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill",
-                    tone: .jade,
+                    tone: isCompared ? .slate : .jade,
                     action: onToggleCompare
                 )
 
