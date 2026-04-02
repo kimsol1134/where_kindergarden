@@ -9,6 +9,20 @@ public enum NativeTab: Hashable {
     case more
 }
 
+public struct CompareToast: Equatable {
+    public let message: String
+    public let icon: String
+    public let isWarning: Bool
+
+    public static func success(_ message: String) -> CompareToast {
+        CompareToast(message: message, icon: "checkmark.circle.fill", isWarning: false)
+    }
+
+    public static func warning(_ message: String) -> CompareToast {
+        CompareToast(message: message, icon: "exclamationmark.triangle.fill", isWarning: true)
+    }
+}
+
 public enum SearchHomePresentationState: Equatable {
     case firstVisit
     case normal
@@ -61,7 +75,7 @@ public final class NativeAppModel: ObservableObject {
     @Published public private(set) var locationPermissionState: LocationPermissionState
     @Published public private(set) var isFirstLaunch: Bool
     @Published public var shouldFocusSearchField: Bool = false
-    @Published public private(set) var compareToastMessage: String?
+    @Published public private(set) var compareToast: CompareToast?
 
     public let configuration: NativeAppConfiguration
 
@@ -609,11 +623,11 @@ public final class NativeAppModel: ObservableObject {
             ])
             persistence.saveCompareSelection(compareSelection)
             refreshSelectedKindergarten()
-            compareToastMessage = "비교에서 뺐어요"
+            compareToast = .success("비교에서 뺐어요")
             return
         }
         guard compareSelection.ids.count < CompareSelection.limit else {
-            compareToastMessage = "비교는 최대 3곳까지 가능해요"
+            compareToast = .warning("비교는 최대 3곳까지 가능해요")
             return
         }
         compareSelection.toggle(id: kindergarten.kindercode)
@@ -623,11 +637,11 @@ public final class NativeAppModel: ObservableObject {
         ])
         persistence.saveCompareSelection(compareSelection)
         refreshSelectedKindergarten()
-        compareToastMessage = "비교에 담았어요"
+        compareToast = .success("비교에 담았어요")
     }
 
     public func dismissCompareToast() {
-        compareToastMessage = nil
+        compareToast = nil
     }
 
     public func isCompared(_ kindergarten: Kindergarten) -> Bool {

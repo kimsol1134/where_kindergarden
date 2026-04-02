@@ -18,7 +18,7 @@ struct ToastOverlay: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
             .glassPanel(cornerRadius: CornerRadius.medium)
-            .transition(.move(edge: .bottom).combined(with: .opacity))
+            .transition(.move(edge: .top).combined(with: .opacity))
             .task {
                 do {
                     try await Task.sleep(for: .seconds(2))
@@ -32,10 +32,10 @@ struct ToastOverlay: View {
 }
 
 extension View {
-    func toast(isPresented: Binding<Bool>, message: String, icon: String = "checkmark.circle.fill") -> some View {
-        overlay(alignment: .bottom) {
+    public func toast(isPresented: Binding<Bool>, message: String, icon: String = "checkmark.circle.fill") -> some View {
+        overlay(alignment: .top) {
             ToastOverlay(message: message, icon: icon, isPresented: isPresented)
-                .padding(.bottom, 16)
+                .padding(.top, 8)
                 .animation(.spring(duration: 0.35, bounce: 0.12), value: isPresented.wrappedValue)
         }
     }

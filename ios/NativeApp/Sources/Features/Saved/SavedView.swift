@@ -9,6 +9,7 @@ public struct SavedView: View {
     @Environment(\.openURL) private var openURL
     @State private var pendingUndo: SavedUndoState?
     @State private var isRecentClearConfirmationPresented = false
+    @State private var selectedKindergarten: Kindergarten?
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -37,7 +38,7 @@ public struct SavedView: View {
                             ForEach(model.favoriteKindergartens()) { kindergarten in
                                 let isCompared = model.isCompared(kindergarten)
                                 Button {
-                                    model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                    selectedKindergarten = kindergarten
                                 } label: {
                                     FavoriteSavedCard(
                                         kindergarten: kindergarten,
@@ -79,7 +80,7 @@ public struct SavedView: View {
                                 }
                                 .contextMenu {
                                     Button {
-                                        model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                        selectedKindergarten = kindergarten
                                     } label: {
                                         Label("열기", systemImage: "arrow.up.forward.app")
                                     }
@@ -180,6 +181,32 @@ public struct SavedView: View {
             .background { NativeScreenBackground(topTintOpacity: 0.16) }
             .navigationTitle("찜한 곳")
             .navigationBarTitleDisplayMode(.large)
+            .sheet(item: $selectedKindergarten) { kindergarten in
+                KindergartenDetailSheet(
+                    kindergarten: kindergarten,
+                    reviews: model.reviews(for: kindergarten.kindercode),
+                    reviewsVersion: model.reviewsData?.version,
+                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
+                    vacancyDatasetVersion: model.vacancyData?.version,
+                    isVacancyLoading: model.isVacancyLoading,
+                    vacancyError: model.vacancyError,
+                    isCompared: model.isCompared(kindergarten),
+                    isFavorite: model.isFavorite(kindergarten),
+                    fitReasons: model.fitReasons(for: kindergarten),
+                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
+                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
+                )
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+                .toast(
+                    isPresented: Binding(
+                        get: { model.compareToast != nil },
+                        set: { if !$0 { model.dismissCompareToast() } }
+                    ),
+                    message: model.compareToast?.message ?? "",
+                    icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                )
+            }
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",
                 isPresented: $isRecentClearConfirmationPresented,
