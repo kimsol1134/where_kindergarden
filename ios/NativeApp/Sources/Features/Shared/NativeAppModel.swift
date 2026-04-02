@@ -665,7 +665,6 @@ public final class NativeAppModel: ObservableObject {
             isCompared: isCompared(kindergarten),
             isFavorite: isFavorite(kindergarten),
             fitReasons: fitReasons(for: kindergarten),
-            adUnitID: configuration.adMobBannerUnitID,
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
         )
@@ -966,10 +965,22 @@ public final class NativeAppModel: ObservableObject {
         let previouslyHadResults = !results.isEmpty
         results = baseResults
         analytics?.track(event: .searchExecuted, properties: ["resultCount": "\(baseResults.count)"])
+        requestATTIfFirstResults(baseResults)
         if baseResults.isEmpty && previouslyHadResults {
             analytics?.track(event: .emptyStateShown)
         }
         refreshSelectedKindergarten()
+    }
+
+    private var didRequestATT = false
+
+    private func requestATTIfFirstResults(_ results: [Kindergarten]) {
+        guard !didRequestATT, !results.isEmpty else { return }
+        didRequestATT = true
+        Task {
+            try? await Task.sleep(for: .seconds(1.5))
+            _ = await TrackingTransparencyService.requestIfNeeded()
+        }
     }
 
     private func refreshSelectedKindergarten() {

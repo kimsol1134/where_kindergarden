@@ -14,7 +14,6 @@ struct KindergartenDetailSheet: View {
     let isCompared: Bool
     let isFavorite: Bool
     let fitReasons: [KindergartenFitReason]
-    let adUnitID: String
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
 
@@ -210,11 +209,6 @@ struct KindergartenDetailSheet: View {
                 // Section D: Reviews (moved up for faster parent access)
                 sectionReviews
 
-                // Ad Banner
-                #if canImport(GoogleMobileAds)
-                NativeAdBanner(adUnitID: adUnitID)
-                #endif
-
                 // Section E: Details Grid
                 sectionDetails
 
@@ -307,14 +301,14 @@ struct KindergartenDetailSheet: View {
                 DetailActionButton(
                     title: isFavorite ? "저장 취소" : "저장",
                     systemImage: isFavorite ? "heart.slash.fill" : "heart.fill",
-                    tone: isFavorite ? .slate : .sun,
+                    tone: .sun,
                     action: onToggleFavorite
                 )
 
                 DetailActionButton(
                     title: isCompared ? "비교 빼기" : "비교 담기",
                     systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill",
-                    tone: isCompared ? .slate : .jade,
+                    tone: .jade,
                     action: onToggleCompare
                 )
 
