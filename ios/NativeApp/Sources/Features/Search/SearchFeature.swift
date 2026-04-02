@@ -13,6 +13,7 @@ public struct SearchHomeView: View {
     @State private var isSearchPanelPresented = false
     @State private var resultsSheetAvailableHeight: CGFloat = 800
     @State private var selectedResultsDetent: SearchResultsSheetDetentKind = .peek
+    @State private var liveSheetHeight: CGFloat = 0
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -241,6 +242,7 @@ public struct SearchHomeView: View {
                     NativeBottomSheet(
                         detents: detentHeights,
                         selectedDetent: $selectedResultsDetent,
+                        currentHeight: $liveSheetHeight,
                         cornerRadius: SearchResultsSheetPolicy.cornerRadius
                     ) {
                         SearchResultsSheetContainer(
@@ -256,14 +258,12 @@ public struct SearchHomeView: View {
             }
             .overlay(alignment: .bottomTrailing) {
                 if shouldShowCurrentLocationFAB {
-                    SearchCurrentLocationFAB(isLoading: model.isLocatingCurrentPosition) {
+                    SearchCurrentLocationFAB(isLoading: model.isLocatingCurrentPosition && model.currentDeviceLocation == nil) {
                         Task { await model.recenterMapToCurrentLocation() }
                     }
-                    .padding(.trailing, 20)
-                    .padding(.bottom, 22)
-                    .offset(y: -currentLocationFABVerticalOffset)
-                    .animation(.spring(duration: 0.28, bounce: 0.18), value: selectedResultsDetent)
-                    .animation(.spring(duration: 0.28, bounce: 0.18), value: isResultsSheetPresented)
+                    .padding(.trailing, 16)
+                    .padding(.bottom, 16)
+                    .offset(y: -liveSheetHeight)
                 }
             }
             .fullScreenCover(item: sheetSelection) { kindergarten in
@@ -285,17 +285,17 @@ public struct SearchHomeView: View {
 private struct SearchCurrentLocationFAB: View {
     let isLoading: Bool
     let action: () -> Void
-    private let visualDiameter: CGFloat = 34
-    private let tapTargetDiameter: CGFloat = 44
+    private let visualDiameter: CGFloat = 42
+    private let tapTargetDiameter: CGFloat = 48
 
     var body: some View {
         Button(action: action) {
             ZStack {
                 Circle()
-                    .fill(jadeGreen.opacity(0.20))
+                    .fill(.white)
                     .overlay(
                         Circle()
-                            .stroke(jadeGreen.opacity(0.32), lineWidth: 1)
+                            .stroke(Color.gray.opacity(0.15), lineWidth: 0.5)
                     )
 
                 if isLoading {
@@ -309,7 +309,7 @@ private struct SearchCurrentLocationFAB: View {
                 }
             }
             .frame(width: visualDiameter, height: visualDiameter)
-            .shadow(color: inkBlack.opacity(0.08), radius: 8, y: 4)
+            .shadow(color: inkBlack.opacity(0.18), radius: 6, y: 3)
             .frame(width: tapTargetDiameter, height: tapTargetDiameter)
             .contentShape(Circle())
         }

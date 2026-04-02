@@ -7,11 +7,12 @@ import UIKit
 struct NativeBottomSheet<Content: View>: UIViewControllerRepresentable {
     let detents: [SearchResultsSheetDetentKind: CGFloat]
     @Binding var selectedDetent: SearchResultsSheetDetentKind
+    var currentHeight: Binding<CGFloat>?
     let cornerRadius: CGFloat
     @ViewBuilder let content: () -> Content
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(selectedDetent: $selectedDetent)
+        Coordinator(selectedDetent: $selectedDetent, currentHeight: currentHeight)
     }
 
     func makeUIViewController(context: Context) -> NativeBottomSheetController<Content> {
@@ -39,9 +40,11 @@ struct NativeBottomSheet<Content: View>: UIViewControllerRepresentable {
 
     final class Coordinator {
         var selectedDetent: Binding<SearchResultsSheetDetentKind>
+        var currentHeight: Binding<CGFloat>?
 
-        init(selectedDetent: Binding<SearchResultsSheetDetentKind>) {
+        init(selectedDetent: Binding<SearchResultsSheetDetentKind>, currentHeight: Binding<CGFloat>?) {
             self.selectedDetent = selectedDetent
+            self.currentHeight = currentHeight
         }
     }
 }
@@ -209,6 +212,7 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
 
         currentDetent = detent
         updateScrollEnabled()
+        coordinator?.currentHeight?.wrappedValue = targetHeight
 
         if animated {
             let reduceMotion = UIAccessibility.isReduceMotionEnabled
@@ -318,6 +322,7 @@ final class NativeBottomSheetController<Content: View>: UIViewController, UIGest
         let rawHeight = dragStartHeight - translationY
         let clampedHeight = rubberBand(rawHeight, min: peekHeight, max: expandedHeight)
         heightConstraint.constant = clampedHeight
+        coordinator?.currentHeight?.wrappedValue = clampedHeight
     }
 
     private func handlePanEnded(_ gesture: UIPanGestureRecognizer) {

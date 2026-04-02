@@ -547,7 +547,7 @@ private struct KakaoSearchMapRepresentable: UIViewRepresentable {
 
             let requestID = currentState.currentLocationRecenterRequestID
             activeCurrentLocationRecenterRequestID = requestID
-            let zoomLevel = mapView.zoomLevel > 0 ? mapView.zoomLevel : defaultSearchZoomLevel
+            let zoomLevel = 15
             let target = MapPoint(longitude: currentLocation.lng, latitude: currentLocation.lat)
             let cameraUpdate = CameraUpdate.make(target: target, zoomLevel: zoomLevel, mapView: mapView)
             mapView.moveCamera(cameraUpdate) { [weak self, weak mapView] in
