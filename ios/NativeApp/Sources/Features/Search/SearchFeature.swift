@@ -266,31 +266,27 @@ public struct SearchHomeView: View {
                     .animation(.spring(duration: 0.28, bounce: 0.18), value: isResultsSheetPresented)
                 }
             }
-            .sheet(item: sheetSelection) { kindergarten in
-                KindergartenDetailSheet(
-                    kindergarten: kindergarten,
-                    reviews: model.reviews(for: kindergarten.kindercode),
-                    reviewsVersion: model.reviewsData?.version,
-                    vacancySummary: model.vacancy(for: kindergarten.kindercode),
-                    vacancyDatasetVersion: model.vacancyData?.version,
-                    isVacancyLoading: model.isVacancyLoading,
-                    vacancyError: model.vacancyError,
-                    isCompared: model.isCompared(kindergarten),
-                    isFavorite: model.isFavorite(kindergarten),
-                    fitReasons: model.fitReasons(for: kindergarten),
-                    onToggleCompare: { model.toggleCompare(for: kindergarten) },
-                    onToggleFavorite: { model.toggleFavorite(for: kindergarten) }
-                )
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
+            .fullScreenCover(item: sheetSelection) { kindergarten in
+                NavigationStack {
+                    model.makeDetailSheet(for: kindergarten)
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                Button {
+                                    model.dismissDetail()
+                                } label: {
+                                    Image(systemName: "xmark")
+                                        .font(.body.weight(.semibold))
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                        .toast(
+                            isPresented: model.compareToastBinding,
+                            message: model.compareToast?.message ?? "",
+                            icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                        )
+                }
             }
-            .toast(
-                isPresented: Binding(
-                    get: { model.compareToastMessage != nil },
-                    set: { if !$0 { model.dismissCompareToast() } }
-                ),
-                message: model.compareToastMessage ?? ""
-            )
         }
         .navigationTitle("탐색")
         .toolbar(.hidden, for: .navigationBar)

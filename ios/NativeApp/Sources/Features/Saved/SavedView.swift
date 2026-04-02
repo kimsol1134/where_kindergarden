@@ -9,6 +9,7 @@ public struct SavedView: View {
     @Environment(\.openURL) private var openURL
     @State private var pendingUndo: SavedUndoState?
     @State private var isRecentClearConfirmationPresented = false
+    @State private var selectedKindergarten: Kindergarten?
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -37,7 +38,7 @@ public struct SavedView: View {
                             ForEach(model.favoriteKindergartens()) { kindergarten in
                                 let isCompared = model.isCompared(kindergarten)
                                 Button {
-                                    model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                    selectedKindergarten = kindergarten
                                 } label: {
                                     FavoriteSavedCard(
                                         kindergarten: kindergarten,
@@ -79,7 +80,7 @@ public struct SavedView: View {
                                 }
                                 .contextMenu {
                                     Button {
-                                        model.openKindergartenDetail(kindercode: kindergarten.kindercode)
+                                        selectedKindergarten = kindergarten
                                     } label: {
                                         Label("열기", systemImage: "arrow.up.forward.app")
                                     }
@@ -180,6 +181,16 @@ public struct SavedView: View {
             .background { NativeScreenBackground(topTintOpacity: 0.16) }
             .navigationTitle("찜한곳")
             .navigationBarTitleDisplayMode(.large)
+            .sheet(item: $selectedKindergarten) { kindergarten in
+                model.makeDetailSheet(for: kindergarten)
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+                    .toast(
+                        isPresented: model.compareToastBinding,
+                        message: model.compareToast?.message ?? "",
+                        icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                    )
+            }
             .confirmationDialog(
                 "최근 검색을 모두 지울까요?",
                 isPresented: $isRecentClearConfirmationPresented,

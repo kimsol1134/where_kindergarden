@@ -68,6 +68,15 @@ public struct NativeRootView: View {
         }
         .tint(leafGreen)
         .preferredColorScheme(.light)
+        .toast(
+            isPresented: model.compareToastBinding,
+            message: model.compareToast?.message ?? "",
+            icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+        )
+        .sensoryFeedback(
+            model.compareToast?.isWarning == true ? .warning : .success,
+            trigger: model.compareToast?.id
+        )
         .overlay {
             if showSplash {
                 SplashView { showSplash = false }

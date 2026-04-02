@@ -24,6 +24,11 @@
 - `.env.local` - 환경 변수, 직접 수정 금지
 - `package.json`의 engines 필드 - Node.js 버전 고정
 
+### iOS 앱 개발
+- **Capacitor 웹앱 (`ios/App/`, `src/`)은 레거시** - 더 이상 개발하지 않음
+- **iOS 네이티브 앱 (`ios/NativeApp/`, `ios/WhereKindergartenNative/`)이 현재 메인 앱**
+- iOS 기능 개발/수정은 SwiftUI 네이티브 코드에서 진행
+
 ### Git 브랜치 규칙
 - **main 브랜치에서 직접 작업 금지** - 반드시 feature 브랜치 생성 후 작업
 - **모든 기능 개발은 Git Worktree 사용** - 아래 Git 워크플로우 섹션 참고
