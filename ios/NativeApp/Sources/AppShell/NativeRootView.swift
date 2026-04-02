@@ -96,11 +96,11 @@ public struct NativeRootView: View {
             if showOnboarding {
                 OnboardingOverlay(isPresented: $showOnboarding)
                     .transition(.opacity)
-                    .onChange(of: showOnboarding) { _, isPresented in
-                        if !isPresented {
-                            hasSeenOnboarding = true
-                        }
-                    }
+            }
+        }
+        .onChange(of: showOnboarding) { _, isPresented in
+            if !isPresented {
+                hasSeenOnboarding = true
             }
         }
     }

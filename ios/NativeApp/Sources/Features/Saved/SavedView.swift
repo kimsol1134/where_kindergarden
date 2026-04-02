@@ -36,7 +36,8 @@ public struct SavedView: View {
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                         } else {
-                            ForEach(Array(model.favoriteKindergartens().enumerated()), id: \.element.id) { index, kindergarten in
+                            let favoriteItems = model.favoriteKindergartens()
+                            ForEach(favoriteItems) { kindergarten in
                                 let isCompared = model.isCompared(kindergarten)
                                 Button {
                                     selectedKindergarten = kindergarten
@@ -59,13 +60,13 @@ public struct SavedView: View {
                                 .listRowSeparator(.hidden)
                                 .accessibilityLabel("\(kindergarten.name), \(kindergarten.type.label)")
                                 .overlay(alignment: .trailing) {
-                                    if index == 0, !hasSeenSwipeHint {
+                                    if kindergarten.id == favoriteItems.first?.id, !hasSeenSwipeHint {
                                         SwipeHintBadge()
-                                            .onAppear {
-                                                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                                                    withAnimation(.easeOut(duration: 0.3)) {
-                                                        hasSeenSwipeHint = true
-                                                    }
+                                            .task {
+                                                try? await Task.sleep(for: .seconds(4))
+                                                guard !Task.isCancelled else { return }
+                                                withAnimation(.easeOut(duration: 0.3)) {
+                                                    hasSeenSwipeHint = true
                                                 }
                                             }
                                     }
