@@ -10,6 +10,7 @@ public struct SavedView: View {
     @State private var pendingUndo: SavedUndoState?
     @State private var isRecentClearConfirmationPresented = false
     @State private var selectedKindergarten: Kindergarten?
+    @AppStorage("native.hasSeenSwipeHint") private var hasSeenSwipeHint = false
 
     public init(model: NativeAppModel) {
         self.model = model
@@ -35,7 +36,7 @@ public struct SavedView: View {
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                         } else {
-                            ForEach(model.favoriteKindergartens()) { kindergarten in
+                            ForEach(Array(model.favoriteKindergartens().enumerated()), id: \.element.id) { index, kindergarten in
                                 let isCompared = model.isCompared(kindergarten)
                                 Button {
                                     selectedKindergarten = kindergarten
@@ -57,6 +58,18 @@ public struct SavedView: View {
                                 .listRowBackground(Color.clear)
                                 .listRowSeparator(.hidden)
                                 .accessibilityLabel("\(kindergarten.name), \(kindergarten.type.label)")
+                                .overlay(alignment: .trailing) {
+                                    if index == 0, !hasSeenSwipeHint {
+                                        SwipeHintBadge()
+                                            .onAppear {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                                                    withAnimation(.easeOut(duration: 0.3)) {
+                                                        hasSeenSwipeHint = true
+                                                    }
+                                                }
+                                            }
+                                    }
+                                }
                                 .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                     Button {
                                         model.toggleCompare(for: kindergarten)
@@ -365,8 +378,8 @@ private struct FavoriteSavedCard: View {
                 }
             }
         }
-        .padding(18)
-        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.94))
+        .padding(16)
+        .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
     }
 }
 
@@ -448,4 +461,27 @@ private let sharedRelativeDateFormatter: RelativeDateTimeFormatter = {
 
 private func relativeDate(_ date: Date) -> String {
     sharedRelativeDateFormatter.localizedString(for: date, relativeTo: Date())
+}
+
+private struct SwipeHintBadge: View {
+    @State private var offsetX: CGFloat = 0
+
+    var body: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "arrow.left")
+                .font(.caption2.weight(.bold))
+            Text("스와이프")
+                .font(.caption2.weight(.bold))
+        }
+        .foregroundStyle(.white)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(jadeDeep.opacity(0.85), in: Capsule())
+        .offset(x: offsetX - 8)
+        .onAppear {
+            withAnimation(.easeInOut(duration: 1.0).repeatCount(2, autoreverses: true)) {
+                offsetX = -12
+            }
+        }
+    }
 }

@@ -5,6 +5,8 @@ import SwiftUI
 public struct NativeRootView: View {
     @StateObject private var model: NativeAppModel
     @State private var showSplash = true
+    @State private var showOnboarding = false
+    @AppStorage("native.hasSeenOnboarding") private var hasSeenOnboarding = false
 
     public init(model: NativeAppModel) {
         _model = StateObject(wrappedValue: model)
@@ -79,8 +81,26 @@ public struct NativeRootView: View {
         )
         .overlay {
             if showSplash {
-                SplashView { showSplash = false }
+                SplashView {
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        showSplash = false
+                        if !hasSeenOnboarding {
+                            showOnboarding = true
+                        }
+                    }
+                }
+                .transition(.opacity)
+            }
+        }
+        .overlay {
+            if showOnboarding {
+                OnboardingOverlay(isPresented: $showOnboarding)
                     .transition(.opacity)
+                    .onChange(of: showOnboarding) { _, isPresented in
+                        if !isPresented {
+                            hasSeenOnboarding = true
+                        }
+                    }
             }
         }
     }

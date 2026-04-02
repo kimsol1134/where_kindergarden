@@ -36,7 +36,7 @@ public struct MoreView: View {
                         title: "문의하기",
                         systemImage: "paperplane",
                         tint: jadeGreen,
-                        url: URL(string: "mailto:support@where-kindergarten.com")!
+                        url: URL(string: "mailto:kimsol1134@naver.com")!
                     )
                     SettingsRow(
                         title: "자주 묻는 질문",
@@ -92,6 +92,38 @@ public struct MoreView: View {
                     }
                     .buttonStyle(.plain)
                     .listRowBackground(sunYellow.opacity(0.08))
+                }
+
+                Section {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Label {
+                            Text("유치원 카드의 비교 버튼을 눌러 최대 3곳을 비교하세요.")
+                                .font(.caption)
+                                .foregroundStyle(slateBlue)
+                        } icon: {
+                            Image(systemName: "square.split.2x2")
+                                .foregroundStyle(jadeDeep)
+                        }
+                        Label {
+                            Text("찜한곳에서 왼쪽 스와이프로 삭제, 오른쪽 스와이프로 비교에 추가할 수 있어요.")
+                                .font(.caption)
+                                .foregroundStyle(slateBlue)
+                        } icon: {
+                            Image(systemName: "hand.draw")
+                                .foregroundStyle(jadeDeep)
+                        }
+                    }
+                    .padding(.vertical, 4)
+                } header: {
+                    MoreSectionHeader(title: "이용 팁")
+                }
+
+                Section {
+                    StatRow(title: "유치원 정보", value: "유치원 알리미 공공데이터")
+                    StatRow(title: "후기", value: "네이버 블로그/카페")
+                    StatRow(title: "지도", value: "카카오맵")
+                } header: {
+                    MoreSectionHeader(title: "데이터 출처")
                 }
 
                 Section {

@@ -296,15 +296,8 @@ struct KindergartenDetailSheet: View {
                 )
             }
 
-            // A4: Action buttons
+            // A4: Action buttons — 비교가 주요 CTA, 저장/전화는 아이콘
             HStack(spacing: 10) {
-                DetailActionButton(
-                    title: isFavorite ? "저장 취소" : "저장",
-                    systemImage: isFavorite ? "heart.slash.fill" : "heart.fill",
-                    tone: .sun,
-                    action: onToggleFavorite
-                )
-
                 DetailActionButton(
                     title: isCompared ? "비교 빼기" : "비교 담기",
                     systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill",
@@ -312,15 +305,28 @@ struct KindergartenDetailSheet: View {
                     action: onToggleCompare
                 )
 
+                Button(action: onToggleFavorite) {
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(isFavorite ? sunYellow : slateSoft)
+                        .frame(width: 48, height: 48)
+                        .background(
+                            isFavorite ? sunYellow.opacity(0.18) : slateBlue.opacity(0.08),
+                            in: Circle()
+                        )
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(isFavorite ? "저장 취소" : "저장")
+
                 if let phoneURL {
                     Link(destination: phoneURL) {
-                        DetailActionButtonLabel(
-                            title: "전화",
-                            systemImage: "phone.fill",
-                            tone: .slate
-                        )
+                        Image(systemName: "phone.fill")
+                            .font(.body.weight(.semibold))
+                            .foregroundStyle(jadeDeep)
+                            .frame(width: 48, height: 48)
+                            .background(slateBlue.opacity(0.08), in: Circle())
                     }
-                    .buttonStyle(.plain)
+                    .accessibilityLabel("전화")
                 }
             }
         }
