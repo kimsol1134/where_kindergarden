@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Search } from 'lucide-react';
+import Image from 'next/image';
+import Search from 'lucide-react/dist/esm/icons/search';
 
 export function CTA() {
   return (
@@ -10,15 +11,31 @@ export function CTA() {
             지금 바로 우리 아이 유치원을 찾아보세요
           </h2>
           <p className="mb-10 text-[var(--brand-ink-soft)]">
-            로그인 없이 바로 시작할 수 있고, iPhone 네이티브 앱 경험도 함께 준비 중입니다.
+            로그인 없이 바로 시작할 수 있습니다. iOS 앱에서는 더 빠르고 자연스러운 탐색을 경험할 수 있어요.
           </p>
-          <Link
-            href="/search?mode=location"
-            className="mx-auto flex w-fit items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-1"
-          >
-            <Search className="h-5 w-5" />
-            무료로 시작하기
-          </Link>
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/search?mode=location"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-1"
+            >
+              <Search className="h-5 w-5" />
+              웹에서 바로 탐색하기
+            </Link>
+            <Link
+              href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-opacity hover:opacity-80"
+            >
+              <Image
+                src="/images/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={160}
+                height={53}
+                className="h-[52px] w-auto"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

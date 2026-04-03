@@ -203,7 +203,7 @@ body.native-platform {
 }
 
 .animate-fade-up {
-  animation: fadeUp 0.8s ease-out forwards;
+  animation: fadeUp 0.5s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
 }
@@ -215,27 +215,6 @@ body.native-platform {
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-.mobile-frame {
-  box-shadow: 0 24px 70px rgba(112, 122, 82, 0.18);
-  border: 8px solid rgba(255, 255, 255, 0.9);
-  border-radius: 34px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.86);
-  position: relative;
-  backdrop-filter: blur(12px);
-}
-.mobile-frame::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 20px;
-  background: rgba(203, 188, 174, 0.86);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  z-index: 50;
-}
 
 @keyframes slideInRight {
   from {
@@ -270,14 +249,14 @@ body.native-platform {
 .brand-shell {
   background: rgba(255, 255, 255, 0.74);
   border: 1px solid rgba(255, 255, 255, 0.82);
-  box-shadow: 0 24px 64px rgba(129, 136, 97, 0.12);
+  box-shadow: 0 24px 64px rgba(129, 136, 97, 0.08);
   backdrop-filter: blur(18px);
 }
 
 .brand-card {
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.84);
-  box-shadow: 0 20px 48px rgba(138, 142, 109, 0.14);
+  box-shadow: 0 20px 48px rgba(138, 142, 109, 0.08);
 }
 
 .brand-chip {
