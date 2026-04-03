@@ -1,9 +1,7 @@
 'use client';
 
 import { useState, useCallback, useRef } from 'react';
-import { Geolocation } from '@capacitor/geolocation';
 import type { Coordinates } from '@/types';
-import { isNative } from '@/lib/utils/platform';
 
 interface GeolocationState {
   coordinates: Coordinates | null;
@@ -22,23 +20,6 @@ interface GeolocationOptions {
 const DEFAULT_ENABLE_HIGH_ACCURACY = true;
 const DEFAULT_TIMEOUT = 10000;
 const DEFAULT_MAXIMUM_AGE = 0;
-
-/** Capacitor 에러 메시지를 사용자 친화적 메시지로 변환 */
-function toNativeErrorMessage(error: unknown): string {
-  const message = error instanceof Error ? error.message : String(error);
-  const lower = message.toLowerCase();
-
-  if (lower.includes('denied') || lower.includes('permission')) {
-    return '위치 권한이 거부되었습니다. 설정에서 위치 권한을 허용해주세요.';
-  }
-  if (lower.includes('unavailable') || lower.includes('location services')) {
-    return '위치 정보를 사용할 수 없습니다. 위치 서비스가 켜져 있는지 확인해주세요.';
-  }
-  if (lower.includes('timeout')) {
-    return '위치 요청 시간이 초과되었습니다.';
-  }
-  return '위치를 가져오는데 실패했습니다.';
-}
 
 /** 브라우저 GeolocationPositionError 코드를 사용자 친화적 메시지로 변환 */
 function toBrowserErrorMessage(error: GeolocationPositionError): string {
@@ -88,19 +69,13 @@ export function useGeolocation(options: GeolocationOptions = {}) {
     }
 
     try {
-      const positionOptions = { enableHighAccuracy, timeout, maximumAge };
-      const coords = isNative()
-        ? extractCoordinates(await Geolocation.getCurrentPosition(positionOptions))
-        : await getBrowserPosition(positionOptions);
-
+      const coords = await getBrowserPosition({ enableHighAccuracy, timeout, maximumAge });
       setState({ coordinates: coords, error: null, isLoading: false });
       return coords;
     } catch (error) {
-      const errorMessage = isNative()
-        ? toNativeErrorMessage(error)
-        : error instanceof Error
-          ? error.message
-          : '위치를 가져오는데 실패했습니다.';
+      const errorMessage = error instanceof Error
+        ? error.message
+        : '위치를 가져오는데 실패했습니다.';
 
       setState({ coordinates: null, error: errorMessage, isLoading: false });
       throw error;

@@ -1,9 +1,7 @@
 /**
  * 카카오톡 공유 기능
  */
-import { Share } from '@capacitor/share';
 import type { KakaoShareFeedOptions } from '@/types/kakao.d';
-import { isNative } from '@/lib/utils/platform';
 import { SITE_URL, TOTAL_KINDERGARTEN_COUNT, OG_IMAGE } from '@/lib/constants';
 
 interface ShareToKakaoParams {
@@ -71,46 +69,15 @@ export function shareToKakao({
 }
 
 /**
- * 네이티브 공유 시트 열기 (iOS/Android)
- */
-export async function shareNative({
-  title,
-  description,
-  compareIds,
-}: ShareToKakaoParams): Promise<boolean> {
-  const url = generateCompareShareUrl(compareIds);
-
-  try {
-    await Share.share({
-      title,
-      text: description,
-      url,
-      dialogTitle: '유치원 비교표 공유',
-    });
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-/**
- * 플랫폼에 맞는 공유 방식 자동 선택
- * - 네이티브 앱: 네이티브 공유 시트 사용
- * - 웹: 카카오톡 공유 또는 클립보드 복사
+ * 비교표 공유 (카카오톡 또는 클립보드 복사)
  */
 export async function shareComparison({
   title,
   description,
   compareIds,
 }: ShareToKakaoParams): Promise<boolean> {
-  if (isNative()) {
-    return shareNative({ title, description, compareIds });
-  }
-
-  // 웹에서는 카카오톡 공유 시도
   const kakaoSuccess = shareToKakao({ title, description, compareIds });
   if (!kakaoSuccess) {
-    // 카카오톡 공유 실패 시 클립보드 복사
     return copyShareUrl(compareIds);
   }
   return kakaoSuccess;

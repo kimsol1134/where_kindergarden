@@ -4,7 +4,6 @@ import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { AdContainer } from '@/components/ads/AdContainer';
-import { BottomTabBar } from '@/components/navigation/BottomTabBar';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -110,7 +109,6 @@ export default function RootLayout({
         <WebsiteJsonLd />
         <OrganizationJsonLd />
         <AdContainer />
-        <BottomTabBar />
         <Analytics />
       </body>
     </html>

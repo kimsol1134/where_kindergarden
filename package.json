@@ -38,26 +38,9 @@
     "collect:all": "tsx scripts/collect-and-curate.ts",
     "extract:all": "tsx scripts/batch-extract-urls.ts",
     "scrape:batch": "tsx scripts/batch-scrape-content.ts",
-    "enrich:all": "tsx scripts/batch-enrich.ts",
-    "mobile": "pnpm build && npx cap sync",
-    "mobile:ios": "pnpm mobile && npx cap open ios",
-    "mobile:android": "pnpm mobile && npx cap open android",
-    "deploy:testflight": "./scripts/deploy-testflight.sh",
-    "deploy:testflight:build": "./scripts/deploy-testflight.sh --build",
-    "deploy:testflight:api": "./scripts/deploy-testflight.sh --api-key"
+    "enrich:all": "tsx scripts/batch-enrich.ts"
   },
   "dependencies": {
-    "@capacitor-community/admob": "^8.0.0",
-    "@capacitor/android": "^8.0.1",
-    "@capacitor/app": "^8.0.0",
-    "@capacitor/core": "^8.0.1",
-    "@capacitor/geolocation": "^8.0.0",
-    "@capacitor/ios": "^8.0.1",
-    "@capacitor/keyboard": "^8.0.0",
-    "@capacitor/preferences": "^8.0.0",
-    "@capacitor/share": "^8.0.0",
-    "@capacitor/splash-screen": "^8.0.0",
-    "@capacitor/status-bar": "^8.0.0",
     "@supabase/supabase-js": "^2.49.0",
     "@tanstack/react-virtual": "^3.13.18",
     "@vercel/analytics": "^1.6.1",
@@ -72,8 +55,6 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
-    "@capacitor/assets": "^3.0.5",
-    "@capacitor/cli": "^8.0.1",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/postcss": "^4",
     "@testing-library/dom": "^10.4.0",
