@@ -16,12 +16,12 @@ export function Footer() {
   }, []);
 
   return (
-    <footer className="border-t border-white/70 bg-[rgba(31,36,29,0.95)] py-12 text-gray-300">
+    <footer className="border-t border-[rgba(203,188,174,0.18)] bg-[var(--brand-mist)] py-12 text-[var(--brand-ink-soft)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="col-span-1 md:col-span-2">
-            <BrandMark className="mb-4" labelClassName="text-white" compact />
-            <p className="mb-6 max-w-xs text-sm leading-relaxed text-gray-300">
+            <BrandMark className="mb-4" compact />
+            <p className="mb-6 max-w-xs text-sm leading-relaxed text-[var(--brand-ink-soft)]">
               학부모님들의 현명한 선택을 돕기 위해 만든
               <br />
               위치 기반 유치원 비교 서비스입니다.
@@ -44,40 +44,40 @@ export function Footer() {
             ) : null}
           </div>
           <div>
-            <h4 className="mb-4 font-bold text-white">서비스</h4>
+            <h4 className="mb-4 font-bold text-[var(--brand-ink)]">서비스</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/search" className="hover:text-[var(--brand-sun)]">
+                <Link href="/search" className="hover:text-[var(--brand-leaf)]">
                   유치원 찾기
                 </Link>
               </li>
               <li>
-                <Link href="/compare" className="hover:text-[var(--brand-sun)]">
+                <Link href="/compare" className="hover:text-[var(--brand-leaf)]">
                   비교하기
                 </Link>
               </li>
               <li>
-                <Link href="/#faq" className="hover:text-[var(--brand-sun)]">
+                <Link href="/#faq" className="hover:text-[var(--brand-leaf)]">
                   이용 가이드
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="mb-4 font-bold text-white">문의</h4>
+            <h4 className="mb-4 font-bold text-[var(--brand-ink)]">문의</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/#faq" className="hover:text-[var(--brand-sun)]">
+                <Link href="/#faq" className="hover:text-[var(--brand-leaf)]">
                   자주 묻는 질문
                 </Link>
               </li>
               <li>
-                <Link href="mailto:kimsol1134@naver.com" className="hover:text-[var(--brand-sun)]">
+                <Link href="mailto:kimsol1134@naver.com" className="hover:text-[var(--brand-leaf)]">
                   제휴 문의
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-[var(--brand-sun)]">
+                <Link href="/privacy" className="hover:text-[var(--brand-leaf)]">
                   개인정보처리방침
                 </Link>
               </li>
@@ -85,7 +85,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-800 pt-8">
+        <div className="mt-8 border-t border-[rgba(203,188,174,0.18)] pt-8">
           <div className="mb-6 flex items-start gap-3">
             <Image
               src="/images/kogl_type1.jpg"
@@ -94,14 +94,14 @@ export function Footer() {
               height={40}
               className="h-auto w-16"
             />
-            <p className="text-[10px] leading-relaxed text-gray-500">
+            <p className="text-[10px] leading-relaxed text-[var(--brand-ink-soft)]/60">
               본 저작물은 &apos;교육부&apos;에서 &apos;2026년&apos; 작성하여 공공누리 제1유형으로 개방한
               &apos;전국유치원표준데이터&apos;를 이용하였으며, 해당 저작물은{' '}
               <a
                 href="https://e-childschoolinfo.moe.go.kr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-gray-300"
+                className="underline hover:text-[var(--brand-leaf)]"
               >
                 유치원 알리미
               </a>
@@ -117,20 +117,20 @@ export function Footer() {
                   href="https://litt.ly/solkim"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-white"
+                  className="underline hover:text-[var(--brand-leaf)]"
                 >
                   solkim
                 </a>
                 . All rights reserved.
               </p>
-              <p className="text-gray-500">데이터 기준: {DATA_VERSION.label}</p>
-              <p className="text-gray-500">
+              <p className="text-[var(--brand-ink-soft)]/60">데이터 기준: {DATA_VERSION.label}</p>
+              <p className="text-[var(--brand-ink-soft)]/60">
                 데이터 출처:{' '}
                 <a
                   href="https://e-childschoolinfo.moe.go.kr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors hover:text-[var(--brand-sun)]"
+                  className="transition-colors hover:text-[var(--brand-leaf)]"
                 >
                   유치원 알리미
                 </a>
