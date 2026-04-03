@@ -8,7 +8,7 @@ export function CTA() {
       <div className="mx-auto max-w-4xl px-4 text-center">
         <div className="brand-shell rounded-[2.5rem] px-8 py-12">
           <h2 className="mb-6 text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)]">
-            고민만 하기엔, 입학 시즌이 너무 빨라요
+            아직 고민 중이라면, 늦기 전에
           </h2>
           <p className="mb-10 text-[var(--brand-ink-soft)]">
             가입도, 로그인도 필요 없어요. 지금 바로 우리 동네 유치원을 확인해보세요.
