@@ -4,6 +4,7 @@
 import { Share } from '@capacitor/share';
 import type { KakaoShareFeedOptions } from '@/types/kakao.d';
 import { isNative } from '@/lib/utils/platform';
+import { SITE_URL } from '@/lib/constants';
 
 interface ShareToKakaoParams {
   title: string;
@@ -15,8 +16,7 @@ interface ShareToKakaoParams {
  * 비교표 공유 URL 생성
  */
 export function generateCompareShareUrl(kindercodes: string[]): string {
-  const base = typeof window !== 'undefined' ? window.location.origin : '';
-  return `${base}/compare?ids=${kindercodes.join(',')}`;
+  return `${SITE_URL}/compare?ids=${kindercodes.join(',')}`;
 }
 
 /**
@@ -37,7 +37,7 @@ export function shareToKakao({
   }
 
   const url = generateCompareShareUrl(compareIds);
-  const imageUrl = `${window.location.origin}/og-image.png`;
+  const imageUrl = `${SITE_URL}/og-image.png`;
 
   const options: KakaoShareFeedOptions = {
     objectType: 'feed',
@@ -45,14 +45,19 @@ export function shareToKakao({
       title,
       description,
       imageUrl,
+      imageWidth: 1200,
+      imageHeight: 630,
       link: {
         mobileWebUrl: url,
         webUrl: url,
       },
     },
+    social: {
+      viewCount: 7950,
+    },
     buttons: [
       {
-        title: '비교표 보기',
+        title: '비교표 바로 보기',
         link: {
           mobileWebUrl: url,
           webUrl: url,

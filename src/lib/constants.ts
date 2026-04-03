@@ -1,3 +1,6 @@
+/** 프로덕션 사이트 URL */
+export const SITE_URL = 'https://where-kindergarden.vercel.app';
+
 /** 데이터 버전 정보 */
 export const DATA_VERSION = {
   label: '2026년 1학기',
