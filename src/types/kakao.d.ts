@@ -11,7 +11,17 @@ interface KakaoShareContent {
   title: string;
   description: string;
   imageUrl: string;
+  imageWidth?: number;
+  imageHeight?: number;
   link: KakaoShareLink;
+}
+
+interface KakaoShareSocial {
+  likeCount?: number;
+  commentCount?: number;
+  sharedCount?: number;
+  viewCount?: number;
+  subscriberCount?: number;
 }
 
 interface KakaoShareButton {
@@ -22,6 +32,7 @@ interface KakaoShareButton {
 interface KakaoShareFeedOptions {
   objectType: 'feed';
   content: KakaoShareContent;
+  social?: KakaoShareSocial;
   buttons?: KakaoShareButton[];
 }
 
@@ -44,6 +55,7 @@ declare global {
 export type {
   KakaoShareLink,
   KakaoShareContent,
+  KakaoShareSocial,
   KakaoShareButton,
   KakaoShareFeedOptions,
   KakaoShare,

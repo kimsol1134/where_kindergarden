@@ -23,7 +23,7 @@ public enum KakaoShareService {
         names: [String],
         shareURL: URL
     ) {
-        let description = names.joined(separator: ", ")
+        let namesText = names.joined(separator: " vs ")
 
         let link = Link(
             webUrl: shareURL,
@@ -31,17 +31,22 @@ public enum KakaoShareService {
         )
 
         let content = Content(
-            title: "우리동네 유치원 비교",
-            imageUrl: nil,
-            description: description,
+            title: "\(namesText) 비교 결과",
+            imageUrl: NativeAppConfiguration.defaultShareImageURL,
+            imageWidth: 1200,
+            imageHeight: 630,
+            description: NativeAppConfiguration.shareDescription,
             link: link
         )
 
+        let social = Social(viewCount: NativeAppConfiguration.totalKindergartenCount)
+
         let feedTemplate = FeedTemplate(
             content: content,
+            social: social,
             buttons: [
                 Button(
-                    title: "비교표 보기",
+                    title: "비교표 바로 보기",
                     link: link
                 )
             ]

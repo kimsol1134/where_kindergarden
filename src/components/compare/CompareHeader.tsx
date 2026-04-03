@@ -26,10 +26,10 @@ export function CompareHeader() {
   const kindercodes = items.map((item) => item.kindercode);
 
   const handleKakaoShare = async () => {
-    const names = items.map((item) => item.name).join(', ');
+    const names = items.map((item) => item.name).join(' vs ');
     await shareComparison({
-      title: '우리동네 유치원 비교표',
-      description: `${names} 비교 결과를 확인해보세요.`,
+      title: `${names} 비교 결과`,
+      description: '교육비, 교사 비율, 시설 등 한눈에 비교해봤어요!',
       compareIds: kindercodes,
     });
     setShowShareMenu(false);
