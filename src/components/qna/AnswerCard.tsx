@@ -1,6 +1,7 @@
 'use client';
 
-import { ThumbsUp, Trash2 } from 'lucide-react';
+import ThumbsUp from 'lucide-react/dist/esm/icons/thumbs-up';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import type { Answer } from '@/types/community';
 import { RELATION_LABELS } from '@/types/community';
 import { useAuthStore } from '@/stores/authStore';

@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Plus, Loader2, MessageCircle } from 'lucide-react';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
 import type { QuestionCategory } from '@/types/community';
 import { useQuestions } from '@/hooks/useQuestions';
 import { useAuthStore } from '@/stores/authStore';

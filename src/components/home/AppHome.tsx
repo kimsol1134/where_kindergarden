@@ -1,7 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { MapPin, GitCompareArrows, MessageSquareText, ShieldCheck, ChevronRight } from 'lucide-react';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import GitCompareArrows from 'lucide-react/dist/esm/icons/git-compare-arrows';
+import MessageSquareText from 'lucide-react/dist/esm/icons/message-square-text';
+import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check';
+import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import { BrandMark } from '@/components/common/BrandMark';
 
 const FEATURES = [

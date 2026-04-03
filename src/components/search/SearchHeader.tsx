@@ -287,13 +287,13 @@ export function SearchHeader() {
 
               {/* 검색 결과 */}
               {isSearching ? (
-                <div className="px-4 py-6 text-center text-gray-500">검색 중...</div>
+                <div className="px-4 py-6 text-center text-[var(--brand-ink-soft)]">검색 중...</div>
               ) : (
                 <>
                   {/* 유치원 검색 결과 */}
                   {kindergartenSuggestions.length > 0 && (
                     <div>
-                      <div className="px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 border-b border-gray-100">
+                      <div className="px-4 py-2 text-xs font-semibold text-[var(--brand-ink-soft)] bg-[var(--brand-mist)] border-b border-[rgba(203,188,174,0.12)]">
                         유치원
                       </div>
                       <ul>
@@ -305,12 +305,12 @@ export function SearchHeader() {
                             >
                               <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                                 kindergarten.type === 'public'
-                                  ? 'bg-emerald-100'
+                                  ? 'bg-[rgba(78,169,109,0.12)]'
                                   : 'bg-indigo-100'
                               }`}>
                                 <KindergartenIcon className={`w-4 h-4 ${
                                   kindergarten.type === 'public'
-                                    ? 'text-emerald-600'
+                                    ? 'text-[var(--brand-leaf)]'
                                     : 'text-indigo-600'
                                 }`} />
                               </div>
@@ -324,7 +324,7 @@ export function SearchHeader() {
                               </div>
                               <span className={`text-xs px-2 py-0.5 rounded-full ${
                                 kindergarten.type === 'public'
-                                  ? 'bg-emerald-100 text-emerald-700'
+                                  ? 'bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf-deep)]'
                                   : 'bg-indigo-100 text-indigo-700'
                               }`}>
                                 {kindergarten.type === 'public' ? '국공립' : '사립'}
@@ -339,7 +339,7 @@ export function SearchHeader() {
                   {/* 장소/주소 검색 결과 */}
                   {suggestions.length > 0 && (
                     <div>
-                      <div className="px-4 py-2 text-xs font-semibold text-gray-500 bg-gray-50 border-b border-gray-100">
+                      <div className="px-4 py-2 text-xs font-semibold text-[var(--brand-ink-soft)] bg-[var(--brand-mist)] border-b border-[rgba(203,188,174,0.12)]">
                         장소
                       </div>
                       <ul>
@@ -371,7 +371,7 @@ export function SearchHeader() {
 
                   {/* 검색 결과 없음 */}
                   {query.length >= 2 && suggestions.length === 0 && kindergartenSuggestions.length === 0 && (
-                    <div className="px-4 py-6 text-center text-gray-500">
+                    <div className="px-4 py-6 text-center text-[var(--brand-ink-soft)]">
                       검색 결과가 없습니다
                     </div>
                   )}
@@ -486,11 +486,11 @@ export function SearchHeader() {
       {isRadiusOpen && (
         <>
           {/* 모바일: 하단 시트 스타일 */}
-          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 animate-slide-in-bottom">
-            <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
+          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-[rgba(203,188,174,0.18)] z-50 p-5 animate-slide-in-bottom">
+            <div className="w-12 h-1 bg-[rgba(203,188,174,0.36)] rounded-full mx-auto mb-4" />
             <div className="flex items-center justify-between mb-4">
-              <span className="text-sm font-medium text-gray-700">반경 설정</span>
-              <span className="text-lg font-bold text-emerald-600">{filters.radius}km</span>
+              <span className="text-sm font-medium text-[var(--brand-ink)]">반경 설정</span>
+              <span className="text-lg font-bold text-[var(--brand-leaf)]">{filters.radius}km</span>
             </div>
             <input
               type="range"
@@ -501,27 +501,27 @@ export function SearchHeader() {
               onChange={handleRadiusChange}
               onMouseUp={handleRadiusChangeEnd}
               onTouchEnd={handleRadiusChangeEnd}
-              className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+              className="w-full h-3 bg-[rgba(203,188,174,0.18)] rounded-lg appearance-none cursor-pointer accent-[var(--brand-leaf)] [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--brand-leaf)] [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
             />
-            <div className="flex justify-between mt-2 text-xs text-gray-400">
+            <div className="flex justify-between mt-2 text-xs text-[var(--brand-ink-soft)]/60">
               <span>{RADIUS_MIN}km</span>
               <span>{RADIUS_MAX}km</span>
             </div>
             <button
               onClick={handleCloseDropdowns}
-              className="w-full mt-4 py-3 bg-emerald-600 text-white rounded-xl font-bold text-sm"
+              className="w-full mt-4 py-3 bg-[var(--brand-leaf)] text-white rounded-xl font-bold text-sm"
             >
               적용
             </button>
           </div>
           {/* 데스크톱: 기존 드롭다운 */}
           <div
-            className="hidden md:block fixed bg-white rounded-xl shadow-xl border border-gray-200 z-50 p-4 min-w-[200px]"
+            className="hidden md:block fixed bg-white rounded-xl shadow-xl border border-[rgba(203,188,174,0.18)] z-50 p-4 min-w-[200px]"
             style={{ top: radiusDropdownPos.top, left: radiusDropdownPos.left }}
           >
             <div className="flex items-center justify-between mb-3">
-              <span className="text-xs text-gray-500">반경 설정</span>
-              <span className="text-sm font-bold text-emerald-600">{filters.radius}km</span>
+              <span className="text-xs text-[var(--brand-ink-soft)]">반경 설정</span>
+              <span className="text-sm font-bold text-[var(--brand-leaf)]">{filters.radius}km</span>
             </div>
             <input
               type="range"
@@ -532,9 +532,9 @@ export function SearchHeader() {
               onChange={handleRadiusChange}
               onMouseUp={handleRadiusChangeEnd}
               onTouchEnd={handleRadiusChangeEnd}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-500 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-emerald-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
+              className="w-full h-2 bg-[rgba(203,188,174,0.18)] rounded-lg appearance-none cursor-pointer accent-[var(--brand-leaf)] [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--brand-leaf)] [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-md"
             />
-            <div className="flex justify-between mt-2 text-xs text-gray-400">
+            <div className="flex justify-between mt-2 text-xs text-[var(--brand-ink-soft)]/60">
               <span>{RADIUS_MIN}km</span>
               <span>{RADIUS_MAX}km</span>
             </div>
@@ -546,11 +546,11 @@ export function SearchHeader() {
       {isTypeOpen && (
         <>
           {/* 모바일: 하단 시트 스타일 */}
-          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-gray-200 z-50 p-5 pb-10 animate-slide-in-bottom">
-            <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
-            <div className="text-sm font-medium text-gray-700 mb-3">유치원 종류</div>
-            <p className="text-sm text-gray-500 mb-3">
-              <span className="font-bold text-emerald-600">{getTypeLabel(filters.type)}</span>
+          <div className="md:hidden fixed inset-x-0 bottom-0 bg-white rounded-t-2xl shadow-xl border-t border-[rgba(203,188,174,0.18)] z-50 p-5 pb-10 animate-slide-in-bottom">
+            <div className="w-12 h-1 bg-[rgba(203,188,174,0.36)] rounded-full mx-auto mb-4" />
+            <div className="text-sm font-medium text-[var(--brand-ink)] mb-3">유치원 종류</div>
+            <p className="text-sm text-[var(--brand-ink-soft)] mb-3">
+              <span className="font-bold text-[var(--brand-leaf)]">{getTypeLabel(filters.type)}</span>
             </p>
             <div className="space-y-2">
               {TYPE_OPTIONS.map((option) => (
@@ -559,8 +559,8 @@ export function SearchHeader() {
                   onClick={() => handleTypeChange(option.value)}
                   className={`w-full py-3 px-4 rounded-xl text-left text-sm font-medium transition-colors ${
                     filters.type === option.value
-                      ? 'bg-emerald-50 text-emerald-700 border-2 border-emerald-500'
-                      : 'bg-gray-50 text-gray-700 border-2 border-transparent'
+                      ? 'bg-[rgba(78,169,109,0.06)] text-[var(--brand-leaf-deep)] border-2 border-[var(--brand-leaf)]'
+                      : 'bg-[var(--brand-mist)] text-[var(--brand-ink)] border-2 border-transparent'
                   }`}
                 >
                   {option.label}
@@ -570,15 +570,15 @@ export function SearchHeader() {
           </div>
           {/* 데스크톱: 기존 드롭다운 */}
           <div
-            className="hidden md:block fixed bg-white rounded-lg shadow-xl border border-gray-200 z-50 min-w-[100px]"
+            className="hidden md:block fixed bg-white rounded-lg shadow-xl border border-[rgba(203,188,174,0.18)] z-50 min-w-[100px]"
             style={{ top: typeDropdownPos.top, left: typeDropdownPos.left }}
           >
             {TYPE_OPTIONS.map((option) => (
               <button
                 key={option.value}
                 onClick={() => handleTypeChange(option.value)}
-                className={`block w-full px-4 py-2 text-left text-sm hover:bg-gray-50 ${
-                  filters.type === option.value ? 'text-emerald-600 font-bold' : 'text-gray-700'
+                className={`block w-full px-4 py-2 text-left text-sm hover:bg-[var(--brand-mist)] ${
+                  filters.type === option.value ? 'text-[var(--brand-leaf)] font-bold' : 'text-[var(--brand-ink)]'
                 }`}
               >
                 {option.label}

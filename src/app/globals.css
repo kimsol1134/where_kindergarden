@@ -146,7 +146,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #FAFDF8;
+    background-color: var(--brand-page);
     background-attachment: fixed;
   }
 }

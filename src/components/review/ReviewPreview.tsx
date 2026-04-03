@@ -1,6 +1,6 @@
 'use client';
 
-import { Newspaper } from 'lucide-react';
+import Newspaper from 'lucide-react/dist/esm/icons/newspaper';
 import { useReviewStore } from '@/stores';
 import type { ReviewLink } from '@/types';
 

@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { Search, Heart, MoreHorizontal } from 'lucide-react';
+import Search from 'lucide-react/dist/esm/icons/search';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import MoreHorizontal from 'lucide-react/dist/esm/icons/more-horizontal';
 import { isNative } from '@/lib/utils/platform';
 import { useFavoriteStore, useUIStore } from '@/stores';
 

@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Loader2, Plus } from 'lucide-react';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import Plus from 'lucide-react/dist/esm/icons/plus';
 import { useReviewStore } from '@/stores';
 import { ReviewLinkCard } from './ReviewLinkCard';
 import { ReviewEmpty } from './ReviewEmpty';

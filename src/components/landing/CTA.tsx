@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Search from 'lucide-react/dist/esm/icons/search';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 
 export function CTA() {
   return (
@@ -18,8 +18,8 @@ export function CTA() {
               href="/search?mode=location"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_14px_28px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-0.5"
             >
-              <Search className="h-5 w-5" />
-              웹에서 바로 탐색하기
+              <MapPin className="h-5 w-5" />
+              내 주변 유치원 찾기
             </Link>
             <Link
               href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
