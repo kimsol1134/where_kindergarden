@@ -1,4 +1,4 @@
-export type ReviewSource = 'naver_blog' | 'naver_cafe' | 'google' | 'other';
+export type ReviewSource = 'naver_blog' | 'naver_cafe' | 'google' | 'naver_place' | 'starteacher' | 'other';
 
 export interface ReviewLink {
   id: string;

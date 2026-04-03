@@ -1,6 +1,10 @@
 import { chromium, type Page, type Route } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
+import {
+  validateReviewsWithHaiku,
+  type HaikuValidationInput,
+} from './lib/haiku-review-validator';
 import type {
   LlmReviewValidationDecision,
   ReviewBodyCacheEntry,
@@ -638,6 +642,8 @@ async function main(): Promise<void> {
   const noApply = hasFlag(args, '--no-apply');
   const skipScrape = hasFlag(args, '--skip-scrape');
   const noRebuild = hasFlag(args, '--no-rebuild');
+  const useHaiku = hasFlag(args, '--haiku');
+  const maxHaikuCalls = parseInteger(args, '--max-haiku', 0);
   const llmPathValue = getArgValue(args, '--llm');
 
   ensureDirectory(outputDir);
@@ -686,7 +692,33 @@ async function main(): Promise<void> {
       entry.kindergarten,
       coreNameFrequencies
     );
-    const metadata = assessReviewMetadata(entry.review, context);
+    // 네이버 플레이스/별별선생 리뷰는 구조적으로 장소에 연결 → 자동 verified
+    const isStructurallyLinked =
+      entry.review.source === 'naver_place' || entry.review.source === 'starteacher';
+    const metadata = isStructurallyLinked
+      ? {
+          decision: 'verified' as const,
+          preliminaryStatus: 'verified' as const,
+          confidence: 0.99,
+          reasons: ['구조적으로 장소에 연결된 리뷰 (자동 verified)'],
+          whyFlagged: [] as string[],
+          signals: {
+            directNameMatch: true,
+            coreNameMatch: true,
+            genericCoreOnly: false,
+            genericCoreName: false,
+            locationValid: true,
+            contentType: 'review' as const,
+            reviewIndicators: [],
+            firstHandIndicators: [],
+            schoolDetailIndicators: [],
+            genericInfoIndicators: [],
+            advertorialIndicators: [],
+            institutionMentions: [],
+            otherInstitutionMentions: [],
+          },
+        }
+      : assessReviewMetadata(entry.review, context);
     const action = decideIncrementalReviewAction(stateLookup, {
       reviewId: entry.review.id,
       kindergartenId: entry.kindergarten.kindercode,
@@ -772,6 +804,43 @@ async function main(): Promise<void> {
   const bodyCandidateMap = new Map(
     bodyCandidates.map((candidate) => [candidate.reviewId, candidate])
   );
+  // Haiku LLM 검증: uncertain 상태 리뷰를 Haiku에 전송하여 재판정
+  if (useHaiku) {
+    const haikuInputs: HaikuValidationInput[] = [];
+    for (const candidate of bodyCandidates) {
+      const bodyResult =
+        candidate.cacheHit
+          ? findReusableBodyCacheEntry(
+              bodyCacheLookup,
+              candidate.normalizedUrl,
+              candidate.reviewFingerprint
+            )
+          : scrapedBodyResultMap.get(candidate.reviewId);
+      const bodyText =
+        (bodyResult && 'bodyText' in bodyResult ? bodyResult.bodyText : '') ?? '';
+      haikuInputs.push({
+        reviewId: candidate.reviewId,
+        kindergartenName: candidate.kindergartenName,
+        kindergartenAddress: '',
+        sidoCode: candidate.sidoCode,
+        title: candidate.title,
+        snippet: candidate.snippet,
+        bodyExcerpt: buildTextExcerpt(bodyText, 1200),
+        whyFlagged: candidate.whyFlagged,
+        autoReasons: [],
+      });
+    }
+
+    if (haikuInputs.length > 0) {
+      const haikuResults = await validateReviewsWithHaiku(haikuInputs, {
+        maxCalls: maxHaikuCalls,
+      });
+      for (const result of haikuResults) {
+        llmMap.set(result.reviewId, result);
+      }
+    }
+  }
+
   const finalizedRecords: FinalizedReviewRecord[] = [];
   const newStateEntries: ReviewVerificationStateEntry[] = [];
   const newBodyCacheEntries: ReviewBodyCacheEntry[] = [];
