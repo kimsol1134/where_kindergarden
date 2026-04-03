@@ -18,7 +18,7 @@ import { isNative } from '@/lib/utils/platform';
 import { BrandMark } from '@/components/common/BrandMark';
 import { Footer } from '@/components/landing/Footer';
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '2.0.0';
 
 const features = [
   {
@@ -59,7 +59,7 @@ const nativeMenuItems = [
   {
     icon: HelpCircle,
     label: '자주 묻는 질문',
-    href: '/faq',
+    href: '/#faq',
     external: false,
   },
   {
@@ -103,7 +103,7 @@ export default function AboutPage() {
                   key={item.label}
                   href={item.href}
                   {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  className={`flex min-h-[56px] items-center gap-3 px-4 py-3 transition-colors active:bg-gray-50${isLast ? '' : ' border-b border-[rgba(203,188,174,0.15)]'}`}
+                  className={`flex min-h-[56px] items-center gap-3 px-4 py-3 transition-colors active:bg-[var(--brand-mist)]${isLast ? '' : ' border-b border-[rgba(203,188,174,0.15)]'}`}
                 >
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[rgba(78,169,109,0.1)]">
                     <Icon className="h-4 w-4 text-[var(--brand-leaf)]" />
@@ -111,7 +111,7 @@ export default function AboutPage() {
                   <span className="flex-1 text-[15px] font-medium text-[var(--brand-ink)]">
                     {item.label}
                   </span>
-                  <ChevronRight className="h-4 w-4 text-gray-400" />
+                  <ChevronRight className="h-4 w-4 text-[var(--brand-ink-soft)]/60" />
                 </Link>
               );
             })}
@@ -175,42 +175,42 @@ export default function AboutPage() {
 
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-2xl font-bold text-[var(--brand-ink)] text-center mb-12">
             주요 기능
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                className="bg-white p-6 rounded-[1.75rem] border border-[rgba(203,188,174,0.12)] shadow-[0_8px_20px_rgba(129,136,97,0.06)] hover:shadow-[0_12px_28px_rgba(129,136,97,0.08)] transition-shadow"
               >
                 <div className="w-12 h-12 bg-[rgba(78,169,109,0.1)] rounded-lg flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-[var(--brand-leaf)]" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-lg font-bold text-[var(--brand-ink)] mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-gray-600">{feature.description}</p>
+                <p className="text-sm text-[var(--brand-ink-soft)]">{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-[var(--brand-mist)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-2xl font-bold text-[var(--brand-ink)] text-center mb-12">
             신뢰할 수 있는 데이터
           </h2>
-          <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+          <div className="bg-white p-8 rounded-2xl border border-[rgba(203,188,174,0.12)] shadow-[0_8px_20px_rgba(129,136,97,0.06)]">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Database className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-[rgba(78,169,109,0.12)] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Database className="w-6 h-6 text-[var(--brand-leaf)]" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">데이터 출처</h3>
-                  <p className="text-sm text-gray-600">
+                  <h3 className="font-bold text-[var(--brand-ink)] mb-2">데이터 출처</h3>
+                  <p className="text-sm text-[var(--brand-ink-soft)]">
                     교육부에서 운영하는{' '}
                     <a
                       href="https://e-childschoolinfo.moe.go.kr"
@@ -225,25 +225,25 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <RefreshCw className="w-6 h-6 text-purple-600" />
+                <div className="w-12 h-12 bg-[rgba(244,216,106,0.14)] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <RefreshCw className="w-6 h-6 text-[var(--brand-ink)]" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">업데이트 주기</h3>
-                  <p className="text-sm text-gray-600">
+                  <h3 className="font-bold text-[var(--brand-ink)] mb-2">업데이트 주기</h3>
+                  <p className="text-sm text-[var(--brand-ink-soft)]">
                     데이터는 <strong>학기별</strong>로 정기 업데이트되어 최신
                     정보를 반영합니다.
                   </p>
                 </div>
               </div>
             </div>
-            <p className="text-xs text-gray-500 mt-6 pt-6 border-t border-gray-100">
+            <p className="text-xs text-[var(--brand-ink-soft)] mt-6 pt-6 border-t border-[rgba(203,188,174,0.12)]">
               본 서비스는 교육부{' '}
               <a
                 href="https://e-childschoolinfo.moe.go.kr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:underline"
+                className="text-[var(--brand-ink-soft)] hover:underline"
               >
                 유치원 알리미
               </a>
@@ -258,15 +258,15 @@ export default function AboutPage() {
 
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-[var(--brand-ink)] mb-4">
             지금 바로 시작해보세요
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-[var(--brand-ink-soft)] mb-8">
             별도의 회원가입 없이 바로 검색할 수 있습니다.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 bg-[var(--brand-leaf)] hover:bg-[var(--brand-leaf-deep)] text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-[rgba(78,169,109,0.2)] transition-colors"
+            className="inline-flex items-center gap-2 bg-[var(--brand-leaf)] hover:bg-[var(--brand-leaf-deep)] text-white px-8 py-4 rounded-full font-bold shadow-lg shadow-[rgba(78,169,109,0.2)] transition-colors"
           >
             유치원 검색하기
             <MapPin className="w-5 h-5" />

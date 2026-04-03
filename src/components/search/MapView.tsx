@@ -1,7 +1,13 @@
 'use client';
 
 import { useRef, useEffect, useCallback, useMemo } from 'react';
-import { Crosshair, Plus, Minus, RotateCw, List, Loader2, MapPin } from 'lucide-react';
+import Crosshair from 'lucide-react/dist/esm/icons/crosshair';
+import Plus from 'lucide-react/dist/esm/icons/plus';
+import Minus from 'lucide-react/dist/esm/icons/minus';
+import RotateCw from 'lucide-react/dist/esm/icons/rotate-cw';
+import List from 'lucide-react/dist/esm/icons/list';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 import { useSearchStore, useCompareStore } from '@/stores';
 import { useKakaoMap, useGeolocation } from '@/hooks';
 import type { Kindergarten } from '@/types';
@@ -129,13 +135,13 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
   }, [location, search]);
 
   return (
-    <div className="flex-1 bg-gray-100 relative h-full w-full">
+    <div className="flex-1 bg-[var(--brand-mist-strong)] relative h-full w-full">
       {/* 지도 컨테이너 */}
       <div ref={mapContainerRef} className="absolute inset-0">
         {/* 로딩 상태 */}
         {!isLoaded && !isError && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-            <div className="flex flex-col items-center text-gray-500">
+          <div className="absolute inset-0 flex items-center justify-center bg-[rgba(203,188,174,0.18)]">
+            <div className="flex flex-col items-center text-[var(--brand-ink-soft)]">
               <Loader2 className="w-8 h-8 animate-spin mb-2" />
               <span className="text-sm">지도를 불러오는 중...</span>
             </div>
@@ -144,14 +150,14 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
 
         {/* 에러 상태 */}
         {isError && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-100/80">
-            <div className="bg-white rounded-xl shadow-md p-5 mx-4 max-w-xs text-center">
-              <MapPin className="w-8 h-8 text-gray-300 mx-auto mb-2" />
-              <p className="text-sm font-medium text-gray-700 mb-1">지도를 불러올 수 없습니다</p>
-              <p className="text-xs text-gray-500 mb-3">{errorMessage}</p>
+          <div className="absolute inset-0 flex items-center justify-center bg-[var(--brand-mist-strong)]/80">
+            <div className="bg-white rounded-xl shadow-[0_12px_28px_rgba(129,136,97,0.08)] p-5 mx-4 max-w-xs text-center">
+              <MapPin className="w-8 h-8 text-[var(--brand-ink-soft)]/60 mx-auto mb-2" />
+              <p className="text-sm font-medium text-[var(--brand-ink)] mb-1">지도를 불러올 수 없습니다</p>
+              <p className="text-xs text-[var(--brand-ink-soft)] mb-3">{errorMessage}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="px-4 py-2 bg-emerald-500 text-white rounded-lg font-medium text-sm hover:bg-emerald-600 transition-colors min-h-[44px] min-w-[120px]"
+                className="px-4 py-2 bg-[var(--brand-leaf)] text-white rounded-xl font-medium text-sm hover:bg-[var(--brand-leaf-deep)] transition-colors min-h-[44px] min-w-[120px]"
               >
                 다시 시도
               </button>
@@ -165,8 +171,8 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
         <button
           onClick={handleCurrentLocation}
           disabled={isGeoLoading}
-          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 disabled:opacity-50 flex items-center justify-center"
-          title="현재 위치로 이동"
+          className="bg-white min-w-[44px] min-h-[44px] rounded-xl shadow-[0_8px_20px_rgba(129,136,97,0.06)] text-[var(--brand-ink-soft)] hover:text-[var(--brand-leaf)] hover:bg-[var(--brand-mist)] disabled:opacity-50 flex items-center justify-center"
+          aria-label="현재 위치로 이동"
         >
           {isGeoLoading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
@@ -176,15 +182,15 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
         </button>
         <button
           onClick={handleZoomIn}
-          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 flex items-center justify-center"
-          title="확대"
+          className="bg-white min-w-[44px] min-h-[44px] rounded-xl shadow-[0_8px_20px_rgba(129,136,97,0.06)] text-[var(--brand-ink-soft)] hover:text-[var(--brand-leaf)] hover:bg-[var(--brand-mist)] flex items-center justify-center"
+          aria-label="확대"
         >
           <Plus className="w-5 h-5" />
         </button>
         <button
           onClick={handleZoomOut}
-          className="bg-white min-w-[44px] min-h-[44px] rounded shadow-md text-gray-600 hover:text-emerald-600 hover:bg-gray-50 flex items-center justify-center"
-          title="축소"
+          className="bg-white min-w-[44px] min-h-[44px] rounded-xl shadow-[0_8px_20px_rgba(129,136,97,0.06)] text-[var(--brand-ink-soft)] hover:text-[var(--brand-leaf)] hover:bg-[var(--brand-mist)] flex items-center justify-center"
+          aria-label="축소"
         >
           <Minus className="w-5 h-5" />
         </button>
@@ -195,7 +201,7 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
         <button
           onClick={handleResearch}
           disabled={isLoading || !location}
-          className="bg-white px-4 py-2 rounded-full shadow-md text-emerald-600 text-sm font-bold flex items-center gap-2 hover:bg-gray-50 transition-transform hover:scale-105 disabled:opacity-50 disabled:hover:scale-100"
+          className="bg-white px-4 py-2 rounded-full shadow-[0_8px_20px_rgba(129,136,97,0.06)] text-[var(--brand-leaf)] text-sm font-bold flex items-center gap-2 hover:bg-[var(--brand-mist)] transition-transform hover:scale-105 disabled:opacity-50 disabled:hover:scale-100"
         >
           {isLoading ? (
             <Loader2 className="w-4 h-4 animate-spin" />
@@ -210,16 +216,16 @@ export function MapView({ mobileView, onToggleMobileView }: MapViewProps) {
       {mobileView === 'map' && (
         <button
           onClick={onToggleMobileView}
-          className="md:hidden fixed left-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-gray-700 pr-3 pl-2 py-2.5 rounded-r-full shadow-[0_2px_12px_rgba(0,0,0,0.15)] border border-l-0 border-gray-200 flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
+          className="md:hidden fixed left-0 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-[var(--brand-ink)] pr-3 pl-2 py-2.5 rounded-r-full shadow-[0_2px_12px_rgba(129,136,97,0.08)] border border-l-0 border-[rgba(203,188,174,0.18)] flex items-center gap-1 font-medium text-xs z-50 active:scale-95 transition-transform"
         >
-          <span className="text-xs text-gray-600">목록</span>
-          <List className="w-4 h-4 text-emerald-600" />
+          <span className="text-xs text-[var(--brand-ink-soft)]">목록</span>
+          <List className="w-4 h-4 text-[var(--brand-leaf)]" />
         </button>
       )}
 
       {/* 결과 개수 표시 */}
       {isLoaded && results.length > 0 && (
-        <div className="absolute bottom-4 left-4 bg-white px-3 py-1.5 rounded-full shadow-md text-xs text-gray-600 z-10 hidden md:block">
+        <div className="absolute bottom-4 left-4 bg-white px-3 py-1.5 rounded-full shadow-[0_8px_20px_rgba(129,136,97,0.06)] text-xs text-[var(--brand-ink-soft)] z-10 hidden md:block">
           {results.length}개 기관 표시 중
         </div>
       )}

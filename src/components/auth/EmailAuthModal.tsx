@@ -1,7 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { X, Mail, Loader2, CheckCircle } from 'lucide-react';
+import X from 'lucide-react/dist/esm/icons/x';
+import Mail from 'lucide-react/dist/esm/icons/mail';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import CheckCircle from 'lucide-react/dist/esm/icons/check-circle';
 import { useAuthStore } from '@/stores/authStore';
 import { NicknameSetup } from './NicknameSetup';
 

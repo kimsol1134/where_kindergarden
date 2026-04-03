@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import type { AnswerRelation } from '@/types/community';
 import { RELATION_LABELS } from '@/types/community';
 import { useAuthStore } from '@/stores/authStore';

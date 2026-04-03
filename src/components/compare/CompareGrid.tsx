@@ -5,9 +5,9 @@ import { useCompareStore } from '@/stores';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
 const TYPE_STYLES: Record<InstitutionType, { label: string; className: string }> = {
-  public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
+  public: { label: '국공립', className: 'text-[var(--brand-leaf)] bg-[rgba(78,169,109,0.06)]' },
   private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
-  home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
+  home: { label: '가정', className: 'text-[var(--brand-ink-soft)] bg-[var(--brand-mist-strong)]' },
 };
 
 const MEAL_TYPE_LABELS: Record<MealType, string> = {
@@ -33,18 +33,18 @@ export function CompareGrid({ items }: CompareGridProps) {
   const maxArea = Math.max(...items.map((i) => i.areaPerChild));
   const maxBusCount = Math.max(...items.map((i) => (i.hasBus ? i.busCount : 0)));
 
-  const highlightClass = 'bg-emerald-100 text-emerald-700 font-bold';
+  const highlightClass = 'bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf-deep)] font-bold';
 
   return (
     <div className="relative">
       <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
       <div className="min-w-[360px]">
         {/* 헤더: 기관 카드들 */}
-        <div className="sticky-header bg-white border-b border-gray-100 shadow-sm">
+        <div className="sticky-header bg-white border-b border-[rgba(203,188,174,0.12)] shadow-[0_8px_20px_rgba(129,136,97,0.06)]">
           <div className={`grid ${gridCols}`}>
           {/* 항목 비교 라벨 */}
-          <div className="bg-white flex flex-col items-center justify-center px-3 py-4 border-r border-gray-100">
-            <span className="text-sm text-gray-400 font-medium">항목 비교</span>
+          <div className="bg-white flex flex-col items-center justify-center px-3 py-4 border-r border-[rgba(203,188,174,0.12)]">
+            <span className="text-sm text-[var(--brand-ink-soft)]/60 font-medium">항목 비교</span>
           </div>
 
           {/* 기관 카드들 */}
@@ -53,10 +53,10 @@ export function CompareGrid({ items }: CompareGridProps) {
             return (
               <div
                 key={item.kindercode}
-                className="p-4 border-r border-gray-100 last:border-r-0 relative group text-center flex flex-col items-center justify-between min-h-[140px]"
+                className="p-4 border-r border-[rgba(203,188,174,0.12)] last:border-r-0 relative group text-center flex flex-col items-center justify-between min-h-[140px]"
               >
                 <div className="flex flex-col items-center w-full pt-4">
-                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded mb-2 ${typeStyle.className}`}>
+                  <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-full mb-2 ${typeStyle.className}`}>
                     {typeStyle.label}
                   </span>
                   <h3
@@ -65,14 +65,14 @@ export function CompareGrid({ items }: CompareGridProps) {
                   >
                     {item.name}
                   </h3>
-                  <div className="mt-2 text-[11px] text-gray-500">
+                  <div className="mt-2 text-[11px] text-[var(--brand-ink-soft)]">
                     {item.distance.toFixed(1)}km
                   </div>
                 </div>
 
                 <button
                   onClick={() => removeItem(item.kindercode)}
-                  className="absolute top-2 right-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-300 hover:text-gray-500 hover:bg-gray-50 rounded-full transition-colors"
+                  className="absolute top-2 right-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-[var(--brand-ink-soft)]/60 hover:text-[var(--brand-ink-soft)] hover:bg-[var(--brand-mist)] rounded-full transition-colors"
                   aria-label={`${item.name} 제거`}
                 >
                   <XCircle className="w-5 h-5" />
@@ -91,7 +91,7 @@ export function CompareGrid({ items }: CompareGridProps) {
             {items.map((item) => (
               <div
                 key={item.kindercode}
-                className="p-3 sm:p-4 text-xs sm:text-sm text-center text-gray-600 line-clamp-2 break-keep"
+                className="p-3 sm:p-4 text-xs sm:text-sm text-center text-[var(--brand-ink-soft)] line-clamp-2 break-keep"
                 title={item.address}
               >
                 {item.address}
@@ -104,10 +104,10 @@ export function CompareGrid({ items }: CompareGridProps) {
               const fillRate = item.capacity > 0 ? Math.round((item.currentCount / item.capacity) * 100) : 0;
               return (
                 <div key={item.kindercode} className="p-3 sm:p-4 text-sm text-center">
-                  <div className="font-bold text-emerald-600 text-xs sm:text-sm whitespace-nowrap">
+                  <div className="font-bold text-[var(--brand-leaf)] text-xs sm:text-sm whitespace-nowrap">
                     {item.capacity} / {item.currentCount}명
                   </div>
-                  <div className="text-[10px] text-gray-400 mt-1">정원 대비 {fillRate}%</div>
+                  <div className="text-[10px] text-[var(--brand-ink-soft)]/60 mt-1">정원 대비 {fillRate}%</div>
                 </div>
               );
             })}
@@ -140,7 +140,7 @@ export function CompareGrid({ items }: CompareGridProps) {
                 {item.hasAfterSchool ? (
                   <span>운영</span>
                 ) : (
-                  <span className="text-gray-400 font-normal">미운영</span>
+                  <span className="text-[var(--brand-ink-soft)]/60 font-normal">미운영</span>
                 )}
               </div>
             ))}
@@ -162,7 +162,7 @@ export function CompareGrid({ items }: CompareGridProps) {
                   {item.hasBus ? (
                     <span>{item.busCount}대 운영</span>
                   ) : (
-                    <span className="text-gray-400 font-normal">미운영</span>
+                    <span className="text-[var(--brand-ink-soft)]/60 font-normal">미운영</span>
                   )}
                 </div>
               );
@@ -180,7 +180,7 @@ export function CompareGrid({ items }: CompareGridProps) {
                 {item.hasPlayground ? (
                   <span>있음</span>
                 ) : (
-                  <span className="text-gray-400 font-normal">없음</span>
+                  <span className="text-[var(--brand-ink-soft)]/60 font-normal">없음</span>
                 )}
               </div>
             ))}
@@ -201,8 +201,11 @@ export function CompareGrid({ items }: CompareGridProps) {
         </CompareSection>
       </div>
 
-        <div className="mt-8 px-4 text-center">
-          <p className="text-xs text-gray-400">
+        <div className="mt-4 px-4 text-center">
+          <p className="mt-4 text-center text-xs text-[var(--brand-ink-soft)]">초록 강조 = 비교 항목 중 가장 좋은 조건</p>
+        </div>
+        <div className="mt-4 px-4 text-center">
+          <p className="text-xs text-[var(--brand-ink-soft)]/60">
             * 위 정보는 유치원 알리미 공개 데이터 기준이며, 실제 현황과 다를 수 있습니다.
           </p>
         </div>
@@ -221,8 +224,8 @@ function CompareSection({
   children: React.ReactNode;
 }) {
   return (
-    <div className="border-b border-gray-100">
-      <div className="px-4 py-6 bg-white text-lg font-bold text-gray-900 border-b border-gray-100/50">
+    <div className="border-b border-[rgba(203,188,174,0.12)]">
+      <div className="px-4 py-6 bg-white text-lg font-bold text-[var(--brand-ink)] border-b border-[rgba(203,188,174,0.08)]">
         {title}
       </div>
       {children}
@@ -240,8 +243,8 @@ function CompareRow({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`grid ${gridCols} border-b border-gray-50`}>
-      <div className="px-3 py-4 bg-gray-50/30 text-xs text-gray-500 font-medium whitespace-nowrap">{label}</div>
+    <div className={`grid ${gridCols} border-b border-[rgba(203,188,174,0.06)]`}>
+      <div className="px-3 py-4 bg-[var(--brand-mist)]/30 text-xs text-[var(--brand-ink-soft)] font-medium whitespace-nowrap">{label}</div>
       {children}
     </div>
   );

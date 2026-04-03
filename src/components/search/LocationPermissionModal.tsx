@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin } from 'lucide-react';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 
 interface Props {
   isOpen: boolean;

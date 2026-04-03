@@ -1,22 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-import {
-  Users,
-  Palette,
-  BookOpen,
-  Home,
-  Check,
-  GraduationCap,
-  Bus,
-  Users2,
-  Sparkles,
-  Heart,
-  Star,
-  Clock,
-  School,
-  type LucideIcon,
-} from 'lucide-react';
+import Users from 'lucide-react/dist/esm/icons/users';
+import Palette from 'lucide-react/dist/esm/icons/palette';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Home from 'lucide-react/dist/esm/icons/home';
+import Check from 'lucide-react/dist/esm/icons/check';
+import GraduationCap from 'lucide-react/dist/esm/icons/graduation-cap';
+import Bus from 'lucide-react/dist/esm/icons/bus';
+import Users2 from 'lucide-react/dist/esm/icons/users-2';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import Star from 'lucide-react/dist/esm/icons/star';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import School from 'lucide-react/dist/esm/icons/school';
+import type { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { QUESTIONS, RESULTS, calculateResult, ResultType } from '../_lib/testData';
 import { isNative } from '@/lib/utils/platform';
@@ -212,7 +210,7 @@ export function TestFlow() {
         <div className="text-center pt-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-6">
             <BookOpen className="w-4 h-4" />
-            아동심리 전문가 연구 기반
+            교육부 유치원 데이터 기반
           </div>
 
           <h1 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
@@ -280,7 +278,7 @@ export function TestFlow() {
         </button>
 
         <p className="text-center text-sm text-gray-400">
-          지금까지 <span className="font-semibold text-emerald-600">2,847명</span>이 참여했어요
+          많은 학부모님이 참여하고 있어요
         </p>
       </div>
     );

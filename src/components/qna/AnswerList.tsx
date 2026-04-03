@@ -1,6 +1,6 @@
 'use client';
 
-import { Loader2 } from 'lucide-react';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import type { Answer } from '@/types/community';
 import { useAuthStore } from '@/stores/authStore';
 import { toggleUpvote, deleteAnswer } from '@/lib/supabase/answers';

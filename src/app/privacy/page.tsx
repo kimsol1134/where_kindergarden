@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen font-sans">
-      <header className="fixed top-0 z-50 w-full px-4 pt-3">
+      <header className="fixed top-0 z-50 w-full px-4 pt-3 safe-area-top">
         <div className="brand-shell mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4">
             <Link
@@ -46,29 +46,29 @@ export default function PrivacyPage() {
 
       <main className="pt-24 pb-[calc(4rem+var(--total-bottom-offset,0px))]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">
+          <h1 className="text-3xl font-bold text-[var(--brand-ink)] mb-8">
             개인정보처리방침
           </h1>
 
           <div className="prose prose-gray max-w-none">
-            <p className="text-gray-600 mb-8">
+            <p className="text-[var(--brand-ink-soft)] mb-8">
               우리동네 유치원(이하 &quot;서비스&quot;)은 이용자의 개인정보를
               중요시하며, 개인정보 보호법, 정보통신망 이용촉진 및 정보보호 등에
               관한 법률을 준수하고 있습니다.
             </p>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 1. 수집하는 개인정보 항목 및 방법
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-[var(--brand-ink-soft)] mb-4">
                 서비스는 원활한 서비스 제공과 광고 게재를 위해 다음과 같은
                 정보를 수집할 수 있습니다.
               </p>
-              <h3 className="font-semibold text-gray-800 mb-2">
+              <h3 className="font-semibold text-[var(--brand-ink)] mb-2">
                 가. 필수적 수집 항목 (앱 기능)
               </h3>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-4">
+              <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2 mb-4">
                 <li>
                   <strong>위치 정보 (GPS 좌표)</strong>: 사용자 주변의 유치원을
                   검색하고 거리를 계산하기 위해 사용됩니다.
@@ -76,10 +76,10 @@ export default function PrivacyPage() {
                   전송되거나 저장되지 않습니다.
                 </li>
               </ul>
-              <h3 className="font-semibold text-gray-800 mb-2">
+              <h3 className="font-semibold text-[var(--brand-ink)] mb-2">
                 나. 자동 수집 항목 (타사 광고 및 분석)
               </h3>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+              <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2">
                 <li>
                   <strong>기기 식별자 (Device ID, Advertising ID)</strong>:
                   맞춤형 광고 제공 및 앱 이용 분석을 위해 타사(Google)에 의해
@@ -97,10 +97,10 @@ export default function PrivacyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 2. 개인정보의 수집 및 이용 목적
               </h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+              <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2">
                 <li>
                   <strong>위치 기반 서비스 제공</strong>: 현재 위치 주변 유치원
                   탐색 및 거리순 정렬
@@ -116,14 +116,14 @@ export default function PrivacyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 3. 개인정보의 보유 및 이용 기간
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[var(--brand-ink-soft)]">
                 원칙적으로 개인정보 수집 및 이용 목적이 달성된 후에는 해당
                 정보를 지체 없이 파기합니다.
               </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-2">
+              <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2 mt-2">
                 <li>
                   <strong>위치 정보</strong>: 앱 종료 시 즉시 파기 (서버 저장 안 함)
                 </li>
@@ -135,17 +135,17 @@ export default function PrivacyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 4. 개인정보의 제3자 제공
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[var(--brand-ink-soft)]">
                 서비스는 이용자의 동의 없이 개인정보를 외부에 제공하지 않습니다.
                 단, 맞춤형 광고 제공을 위해 아래와 같이 타사 서비스가 이용될 수
                 있습니다.
               </p>
-              <div className="mt-4 bg-gray-50 p-4 rounded-lg border border-gray-100">
-                <p className="font-semibold text-gray-800">Google AdMob</p>
-                <ul className="list-disc pl-6 text-gray-600 space-y-1 mt-2 text-sm">
+              <div className="mt-4 bg-[var(--brand-mist)] p-4 rounded-2xl border border-[rgba(203,188,174,0.12)]">
+                <p className="font-semibold text-[var(--brand-ink)]">Google AdMob</p>
+                <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-1 mt-2 text-sm">
                   <li>제공받는 자: Google LLC, Google Asia Pacific Pte. Ltd.</li>
                   <li>제공 목적: 맞춤형 광고 게재 및 광고 성과 분석</li>
                   <li>제공 항목: 기기 식별자(Advertising ID), 쿠키, 앱 이용 기록</li>
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
                       href="https://policies.google.com/technologies/ads"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-600 hover:underline ml-1"
+                      className="text-[var(--brand-leaf)] hover:underline ml-1"
                     >
                       Google 파트너의 데이터 사용 정책 참조
                     </a>
@@ -165,25 +165,25 @@ export default function PrivacyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 5. 이용자의 권리 및 행사 방법 (광고 철회)
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-[var(--brand-ink-soft)] mb-4">
                 이용자는 언제든지 맞춤형 광고 수신을 거부할 수 있습니다.
               </p>
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-gray-800 mb-1">
+                  <h3 className="font-semibold text-[var(--brand-ink)] mb-1">
                     iOS (iPhone/iPad)
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-[var(--brand-ink-soft)] text-sm">
                     설정 &gt; 개인정보 보호 및 보안 &gt; 추적 &gt; &#39;앱이
                     추적을 요청하도록 허용&#39; 끄기 또는 본 앱 선택 해제
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-800 mb-1">Android</h3>
-                  <p className="text-gray-600 text-sm">
+                  <h3 className="font-semibold text-[var(--brand-ink)] mb-1">Android</h3>
+                  <p className="text-[var(--brand-ink-soft)] text-sm">
                     설정 &gt; Google &gt; 광고 &gt; 광고 ID 삭제 또는
                     재설정
                   </p>
@@ -192,31 +192,31 @@ export default function PrivacyPage() {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 6. 문의처
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[var(--brand-ink-soft)]">
                 개인정보 관련 문의사항은 아래로 연락해주시기 바랍니다.
               </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2 mt-2">
+              <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2 mt-2">
                 <li>이메일: privacy@kindergarden.kr</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
                 7. 개인정보처리방침 변경
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[var(--brand-ink-soft)]">
                 이 개인정보처리방침은 2026년 1월 27일부터 적용됩니다.
               </p>
-              <p className="text-gray-500 text-sm mt-2">
+              <p className="text-[var(--brand-ink-soft)] text-sm mt-2">
                 공고일자: 2026년 1월 27일<br />
                 시행일자: 2026년 1월 27일
               </p>
             </section>
 
-            <p className="text-gray-500 text-sm mt-12">
+            <p className="text-[var(--brand-ink-soft)] text-sm mt-12">
               시행일: 2026년 1월 27일
             </p>
           </div>
