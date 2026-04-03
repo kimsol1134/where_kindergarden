@@ -1,4 +1,7 @@
-import { Award, Check, Search, Share2 } from 'lucide-react';
+import Award from 'lucide-react/dist/esm/icons/award';
+import Check from 'lucide-react/dist/esm/icons/check';
+import Search from 'lucide-react/dist/esm/icons/search';
+import Share2 from 'lucide-react/dist/esm/icons/share-2';
 import { PhoneFrame } from './PhoneFrame';
 
 export function Features() {
@@ -13,7 +16,7 @@ export function Features() {
           </h2>
         </div>
 
-        <div className="mb-28 grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="mb-20 grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(78,169,109,0.12)] px-3 py-1 text-sm font-semibold text-[var(--brand-leaf)]">
               <Search className="h-4 w-4" />
@@ -43,8 +46,8 @@ export function Features() {
                   <Check className="h-4 w-4 text-[var(--brand-ink)]" />
                 </div>
                 <span className="text-[var(--brand-ink-soft)]">
-                  <strong className="text-[var(--brand-ink)]">간편한 조건 설정:</strong> 반경, 셔틀, 공간,
-                  신축 여부 등 원하는 조건을 터치 한 번으로 설정
+                  <strong className="text-[var(--brand-ink)]">조건 설정:</strong> 거리 반경, 셔틀버스, 방과후,
+                  신설 여부 등 원하는 조건을 터치 한 번으로 설정
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -83,7 +86,7 @@ export function Features() {
               결과는 배우자에게 링크 하나로 바로 공유할 수 있어요.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="brand-card rounded-[1.8rem] p-5">
+              <div className="brand-card rounded-[1.75rem] p-5">
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-[rgba(78,169,109,0.14)]">
                   <Award className="h-5 w-5 text-[var(--brand-leaf)]" />
                 </div>
@@ -92,13 +95,13 @@ export function Features() {
                   거리, 면적, 셔틀 운영 등 결정에 도움이 되는 값을 먼저 보이게 합니다.
                 </p>
               </div>
-              <div className="brand-card rounded-[1.8rem] p-5">
+              <div className="brand-card rounded-[1.75rem] p-5">
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-2xl bg-[rgba(244,216,106,0.18)]">
                   <Share2 className="h-5 w-5 text-[var(--brand-ink)]" />
                 </div>
                 <h4 className="font-bold text-[var(--brand-ink)]">간편한 공유</h4>
                 <p className="mt-2 text-sm leading-6 text-[var(--brand-ink-soft)]">
-                  비교 결과를 웹과 iPhone 모두 같은 링크 구조로 바로 공유할 수 있습니다.
+                  비교 결과를 링크 하나로 배우자나 가족에게 바로 공유할 수 있습니다.
                 </p>
               </div>
             </div>

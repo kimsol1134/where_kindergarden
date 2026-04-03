@@ -56,11 +56,6 @@ export function Footer() {
                   비교하기
                 </Link>
               </li>
-              <li>
-                <Link href="/#faq" className="hover:text-[var(--brand-leaf)]">
-                  이용 가이드
-                </Link>
-              </li>
             </ul>
           </div>
           <div>
@@ -94,7 +89,7 @@ export function Footer() {
               height={40}
               className="h-auto w-16"
             />
-            <p className="text-[10px] leading-relaxed text-[var(--brand-ink-soft)]/60">
+            <p className="text-xs leading-relaxed text-[var(--brand-ink-soft)]/60">
               본 저작물은 &apos;교육부&apos;에서 &apos;2026년&apos; 작성하여 공공누리 제1유형으로 개방한
               &apos;전국유치원표준데이터&apos;를 이용하였으며, 해당 저작물은{' '}
               <a

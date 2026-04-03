@@ -8,7 +8,7 @@ export function CTA() {
       <div className="mx-auto max-w-4xl px-4 text-center">
         <div className="brand-shell rounded-[2.5rem] px-8 py-12">
           <h2 className="mb-6 text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)]">
-            아직 고민 중이라면, 늦기 전에
+            지금 바로 시작해보세요
           </h2>
           <p className="mb-10 text-[var(--brand-ink-soft)]">
             가입도, 로그인도 필요 없어요. 지금 바로 우리 동네 유치원을 확인해보세요.
@@ -16,7 +16,7 @@ export function CTA() {
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/search?mode=location"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-1"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_14px_28px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-0.5"
             >
               <Search className="h-5 w-5" />
               웹에서 바로 탐색하기

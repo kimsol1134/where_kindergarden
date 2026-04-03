@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import Menu from 'lucide-react/dist/esm/icons/menu';
 import { BrandMark } from '@/components/common/BrandMark';
 
 export function Header() {
@@ -25,9 +25,9 @@ export function Header() {
             href="/search?mode=location"
             className="hidden rounded-full bg-[var(--brand-leaf)] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(78,169,109,0.22)] md:inline-flex"
           >
-            바로 탐색
+            유치원 찾기
           </Link>
-          <button className="p-2 text-[var(--brand-ink-soft)] md:hidden">
+          <button aria-label="메뉴 열기" className="p-2 text-[var(--brand-ink-soft)] md:hidden">
             <Menu className="h-6 w-6" />
           </button>
         </div>

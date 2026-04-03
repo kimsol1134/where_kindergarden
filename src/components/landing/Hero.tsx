@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Sparkles } from 'lucide-react';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
 import { PhoneFrame } from './PhoneFrame';
 
 const APP_STORE_URL =
