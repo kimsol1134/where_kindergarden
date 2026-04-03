@@ -189,12 +189,12 @@ body.native-platform {
 
 /* Hero 섹션용 - safe area + 헤더 높이 고려 */
 .safe-pt-hero {
-  padding-top: calc(env(safe-area-inset-top, 0px) + clamp(2rem, 8vh, 5rem));
+  padding-top: calc(env(safe-area-inset-top, 0px) + clamp(5rem, 14vh, 7rem));
 }
 
 @media (min-width: 1024px) {
   .safe-pt-hero {
-    padding-top: calc(env(safe-area-inset-top, 0px) + clamp(3rem, 8vh, 6rem));
+    padding-top: calc(env(safe-area-inset-top, 0px) + clamp(5rem, 10vh, 7rem));
   }
 }
 
