@@ -56,25 +56,25 @@ export function Hero() {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-2xl border border-[rgba(203,188,174,0.24)] bg-white/72 px-4 py-3 shadow-[0_8px_20px_rgba(129,136,97,0.06)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(129,136,97,0.12)]"
+                className="inline-flex w-full items-center gap-3 rounded-2xl border border-[rgba(203,188,174,0.24)] bg-white/72 px-4 py-3 shadow-[0_8px_20px_rgba(129,136,97,0.06)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(129,136,97,0.12)]"
               >
                 <Image
                   src="/icon.png"
                   alt="우리동네 유치원 앱 아이콘"
-                  width={44}
-                  height={44}
-                  className="h-11 w-11 rounded-xl"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 shrink-0 rounded-xl"
                 />
-                <div>
-                  <p className="text-xs text-[var(--brand-ink-soft)]">App Store에서 무료 다운로드</p>
-                  <p className="text-sm font-semibold text-[var(--brand-ink)]">우리동네 유치원</p>
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-sm font-semibold text-[var(--brand-ink)]">우리동네 유치원</p>
+                  <p className="text-xs text-[var(--brand-ink-soft)]">App Store 무료 다운로드</p>
                 </div>
                 <Image
                   src="/images/app-store-badge.svg"
                   alt="Download on the App Store"
-                  width={100}
-                  height={33}
-                  className="ml-auto h-[32px] w-auto"
+                  width={120}
+                  height={40}
+                  className="h-[36px] w-auto shrink-0"
                 />
               </Link>
             </div>

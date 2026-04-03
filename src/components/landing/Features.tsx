@@ -6,7 +6,7 @@ export function Features() {
     <section id="features" className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 max-w-3xl">
-          <h2 className="text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)] md:text-5xl">
+          <h2 className="text-2xl font-bold tracking-[-0.04em] text-[var(--brand-ink)] sm:text-3xl md:text-5xl">
             맘카페 뒤지는 시간,
             <br />
             이제 끝내세요
@@ -19,12 +19,12 @@ export function Features() {
               <Search className="h-4 w-4" />
               스마트 검색
             </div>
-            <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
+            <h3 className="mt-5 text-2xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)] sm:text-3xl">
               집에서 가까운 유치원,
               <br />
               한눈에 보고 싶었죠?
             </h3>
-            <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
+            <p className="mt-4 text-base leading-7 text-[var(--brand-ink-soft)] sm:text-lg sm:leading-8">
               지도 앱, 맘카페, 기관 홈페이지를 따로 돌아다닐 필요 없어요.
               현재 위치에서 가까운 순으로 유치원을 보여드립니다.
             </p>
@@ -73,12 +73,12 @@ export function Features() {
               <Award className="h-4 w-4 text-[var(--brand-leaf)]" />
               한눈에 비교
             </div>
-            <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
-              여기가 나을까, 저기가 나을까
+            <h3 className="mt-5 text-2xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)] sm:text-3xl">
+              여기가 나을까, 저기가 나을까?
               <br />
-              이제 감이 아닌 데이터로
+              감 대신 데이터로 비교하세요
             </h3>
-            <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
+            <p className="mt-4 text-base leading-7 text-[var(--brand-ink-soft)] sm:text-lg sm:leading-8">
               후보 유치원을 나란히 놓고 거리, 면적, 셔틀, 급식까지 한번에 비교하세요.
               결과는 배우자에게 링크 하나로 바로 공유할 수 있어요.
             </p>
