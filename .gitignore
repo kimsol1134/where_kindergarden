@@ -53,17 +53,5 @@ scripts/data-output/*
 !scripts/data-output/review-verification-state.json
 !scripts/data-output/review-body-cache.json
 
-# Capacitor native platforms (generated web assets)
-ios/App/App/public/
-ios/App/Pods/
+# iOS native build artifacts
 ios/DerivedData/
-android/app/src/main/assets/public/
-android/.gradle/
-android/app/build/
-android/build/
-android/capacitor-cordova-android-plugins/build/
-
-# Android keystore (보안)
-*.keystore
-*.jks
-android/openjdk-21.jdk

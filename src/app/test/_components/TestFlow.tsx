@@ -17,8 +17,6 @@ import School from 'lucide-react/dist/esm/icons/school';
 import type { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { QUESTIONS, RESULTS, calculateResult, ResultType } from '../_lib/testData';
-import { isNative } from '@/lib/utils/platform';
-import { Share } from '@capacitor/share';
 
 type TestPhase = 'intro' | 'questions' | 'result';
 
@@ -130,20 +128,6 @@ export function TestFlow() {
 
     const shareUrl = 'https://where-kindergarden.vercel.app/test/';
     const shareTitle = `나는 ${result.name}!`;
-
-    if (isNative()) {
-      try {
-        await Share.share({
-          title: shareTitle,
-          text: `${shareTitle} - ${result.description}`,
-          url: shareUrl,
-          dialogTitle: '테스트 결과 공유',
-        });
-      } catch {
-        // 사용자가 공유 취소한 경우
-      }
-      return;
-    }
 
     const kakao = (window as unknown as { Kakao?: {
       isInitialized: () => boolean;
@@ -483,25 +467,15 @@ export function TestFlow() {
             다시 테스트하기
           </button>
 
-          {isNative() ? (
-            <Link
-              href="/search"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <School className="w-5 h-5" />
-              유치원 찾아보기
-            </Link>
-          ) : (
-            <a
-              href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <School className="w-5 h-5" />
-              앱에서 유치원 찾아보기
-            </a>
-          )}
+          <a
+            href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <School className="w-5 h-5" />
+            앱에서 유치원 찾아보기
+          </a>
         </div>
       </div>
     );
