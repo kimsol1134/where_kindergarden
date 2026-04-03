@@ -4,7 +4,7 @@
 import { Share } from '@capacitor/share';
 import type { KakaoShareFeedOptions } from '@/types/kakao.d';
 import { isNative } from '@/lib/utils/platform';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, TOTAL_KINDERGARTEN_COUNT, OG_IMAGE } from '@/lib/constants';
 
 interface ShareToKakaoParams {
   title: string;
@@ -37,7 +37,7 @@ export function shareToKakao({
   }
 
   const url = generateCompareShareUrl(compareIds);
-  const imageUrl = `${SITE_URL}/og-image.png`;
+  const imageUrl = `${SITE_URL}${OG_IMAGE.path}`;
 
   const options: KakaoShareFeedOptions = {
     objectType: 'feed',
@@ -45,15 +45,15 @@ export function shareToKakao({
       title,
       description,
       imageUrl,
-      imageWidth: 1200,
-      imageHeight: 630,
+      imageWidth: OG_IMAGE.width,
+      imageHeight: OG_IMAGE.height,
       link: {
         mobileWebUrl: url,
         webUrl: url,
       },
     },
     social: {
-      viewCount: 7950,
+      viewCount: TOTAL_KINDERGARTEN_COUNT,
     },
     buttons: [
       {

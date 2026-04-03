@@ -19,8 +19,6 @@ public enum KakaoShareService {
         ShareApi.isKakaoTalkSharingAvailable()
     }
 
-    private static let shareImageURL = URL(string: "https://where-kindergarden.vercel.app/og-image.png")!
-
     public static func shareCompare(
         names: [String],
         shareURL: URL
@@ -34,14 +32,14 @@ public enum KakaoShareService {
 
         let content = Content(
             title: "\(namesText) 비교 결과",
-            imageUrl: shareImageURL,
+            imageUrl: NativeAppConfiguration.defaultShareImageURL,
             imageWidth: 1200,
             imageHeight: 630,
-            description: "교육비, 교사 비율, 시설 등 한눈에 비교해봤어요!",
+            description: NativeAppConfiguration.shareDescription,
             link: link
         )
 
-        let social = Social(viewCount: 7950)
+        let social = Social(viewCount: NativeAppConfiguration.totalKindergartenCount)
 
         let feedTemplate = FeedTemplate(
             content: content,

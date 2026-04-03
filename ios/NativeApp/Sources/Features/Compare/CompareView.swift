@@ -192,14 +192,12 @@ public struct CompareView: View {
                             shareURL: shareURL
                         )
                     } label: {
-                        HStack {
-                            Label("카카오톡으로 보내기", systemImage: "message.fill")
-                            Spacer()
-                        }
-                        .foregroundStyle(inkBlack)
-                        .padding(.horizontal, 18)
-                        .padding(.vertical, 14)
-                        .background(kakaoYellow, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+                        Label("카카오톡으로 보내기", systemImage: "message.fill")
+                            .frame(maxWidth: .infinity)
+                            .foregroundStyle(inkBlack)
+                            .padding(.horizontal, 18)
+                            .padding(.vertical, 14)
+                            .background(sunYellow, in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                     }
                     .accessibilityIdentifier("compare.kakaoShareButton")
                     .buttonStyle(.plain)
@@ -209,16 +207,14 @@ public struct CompareView: View {
                 ShareLink(
                     item: shareURL,
                     subject: Text("유치원 비교"),
-                    message: Text(shareURL.absoluteString)
+                    message: Text(NativeAppConfiguration.shareDescription)
                 ) {
-                    HStack {
-                        Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
-                        Spacer()
-                    }
-                    .foregroundStyle(inkBlack)
-                    .padding(.horizontal, 18)
-                    .padding(.vertical, 14)
-                    .background(jadeGreen.opacity(0.24), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+                    Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
+                        .frame(maxWidth: .infinity)
+                        .foregroundStyle(inkBlack)
+                        .padding(.horizontal, 18)
+                        .padding(.vertical, 14)
+                        .background(jadeGreen.opacity(0.24), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
                 }
                 .accessibilityIdentifier("compare.shareButton")
                 .buttonStyle(.plain)

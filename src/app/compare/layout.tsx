@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_IMAGE } from '@/lib/constants';
 
 /**
  * 비교 페이지 SEO 메타데이터
@@ -18,9 +19,9 @@ export const metadata: Metadata = {
     url: '/compare',
     images: [
       {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
+        url: OG_IMAGE.path,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
         alt: '유치원 비교 - 우리동네 유치원',
       },
     ],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: '유치원 비교 - 우리동네 유치원',
     description:
       '선택한 유치원들을 한눈에 비교해보세요. 교육비, 교사 비율, 특수학급 등 상세 정보를 비교할 수 있습니다.',
-    images: ['/og-image.png'],
+    images: [OG_IMAGE.path],
   },
 };
 
