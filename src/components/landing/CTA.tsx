@@ -8,10 +8,10 @@ export function CTA() {
       <div className="mx-auto max-w-4xl px-4 text-center">
         <div className="brand-shell rounded-[2.5rem] px-8 py-12">
           <h2 className="mb-6 text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)]">
-            지금 바로 우리 아이 유치원을 찾아보세요
+            고민만 하기엔, 입학 시즌이 너무 빨라요
           </h2>
           <p className="mb-10 text-[var(--brand-ink-soft)]">
-            로그인 없이 바로 시작할 수 있습니다. iOS 앱에서는 더 빠르고 자연스러운 탐색을 경험할 수 있어요.
+            가입도, 로그인도 필요 없어요. 지금 바로 우리 동네 유치원을 확인해보세요.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

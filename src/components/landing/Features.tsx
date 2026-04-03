@@ -7,9 +7,9 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 max-w-3xl">
           <h2 className="text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)] md:text-5xl">
-            검색에서 결정까지,
+            맘카페 뒤지는 시간,
             <br />
-            한 흐름으로
+            이제 끝내세요
           </h2>
         </div>
 
@@ -20,13 +20,13 @@ export function Features() {
               스마트 검색
             </div>
             <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
-              복잡한 정보 검색은 줄이고,
+              집에서 가까운 유치원,
               <br />
-              필요한 정보는 더 빠르게
+              한눈에 보고 싶었죠?
             </h3>
             <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
-              지도 앱, 맘카페, 기관 홈페이지를 따로 돌지 않아도 됩니다. 위치 기준 탐색,
-              핵심 지표, 비교 진입이 한 화면 흐름 안에서 이어집니다.
+              지도 앱, 맘카페, 기관 홈페이지를 따로 돌아다닐 필요 없어요.
+              현재 위치에서 가까운 순으로 유치원을 보여드립니다.
             </p>
             <ul className="mt-8 space-y-4">
               <li className="flex items-start gap-3">
@@ -74,13 +74,13 @@ export function Features() {
               한눈에 비교
             </div>
             <h3 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.04em] text-[var(--brand-ink)]">
-              고민되는 후보들은
+              여기가 나을까, 저기가 나을까
               <br />
-              카드와 지표로 더 또렷하게
+              이제 감이 아닌 데이터로
             </h3>
             <p className="mt-5 text-lg leading-8 text-[var(--brand-ink-soft)]">
-              최대 3개 기관을 골라 거리, 면적, 셔틀, 방과후 등 핵심 지표를 빠르게 비교할 수
-              있습니다. 비교 결과는 링크 하나로 가족이나 배우자에게 바로 공유할 수 있습니다.
+              후보 유치원을 나란히 놓고 거리, 면적, 셔틀, 급식까지 한번에 비교하세요.
+              결과는 배우자에게 링크 하나로 바로 공유할 수 있어요.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="brand-card rounded-[1.8rem] p-5">

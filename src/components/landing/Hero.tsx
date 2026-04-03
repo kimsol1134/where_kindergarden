@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Sparkles } from 'lucide-react';
-import { BrandMark } from '@/components/common/BrandMark';
 import { PhoneFrame } from './PhoneFrame';
 
 export function Hero() {
@@ -16,23 +15,18 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
-            <div className="mt-6 animate-fade-up delay-100">
-              <BrandMark
-                className="mb-6"
-                labelClassName="text-2xl sm:text-3xl"
-                iconClassName="h-14 w-14"
-              />
+            <div className="animate-fade-up delay-100">
               <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] tracking-[-0.05em] text-[var(--brand-ink)] md:text-6xl">
                 우리 아이 첫 유치원,
                 <br className="hidden md:block" />
-                <span className="text-[var(--brand-leaf)]">안심되는 탐색 경험</span>으로
-                바꿉니다
+                <span className="text-[var(--brand-leaf)]">가장 쉽고 똑똑하게</span>{' '}
+                찾는 법
               </h1>
             </div>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--brand-ink-soft)] animate-fade-up delay-200">
-              현재 위치 기반으로 주변 유치원을 찾고, 비교하고, 학부모 후기까지
-              한번에 확인하세요. 전국 7,950개 이상의 유치원 정보를 제공합니다.
+              어떤 유치원이 우리 아이에게 맞을지, 어디가 가깝고 안전한지.
+              고민만 하던 시간을 줄이고 확신을 가질 수 있도록 도와드립니다.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 animate-fade-up delay-300 sm:flex-row">
