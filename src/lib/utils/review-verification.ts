@@ -5,6 +5,10 @@ import type {
   ReviewVerificationSignals,
   ReviewVerificationStatus,
 } from '@/types/review';
+import {
+  canonicalizeKnownReviewUrl,
+  extractSourceBindingEvidence,
+} from './review-acquisition';
 import type { ContentType } from './review-utils';
 import {
   SPAM_SNIPPET_PATTERNS,
@@ -39,6 +43,30 @@ export interface ReviewFallbackVerificationResult {
   confidence: number;
   reasons: string[];
   signals: ReviewVerificationSignals;
+}
+
+type ReviewEvidenceInput = Pick<ReviewLink, 'title' | 'snippet'> &
+  Partial<
+    Pick<
+      ReviewLink,
+      | 'summary'
+      | 'content'
+      | 'sourceName'
+      | 'source'
+      | 'accessMode'
+      | 'evidenceType'
+      | 'structuredFields'
+      | 'rating'
+    >
+  >;
+
+export interface ReviewEvidenceAnalysis {
+  combinedText: string;
+  supplementalText: string;
+  normalizedText: string;
+  signals: ReviewVerificationSignals;
+  sourceBinding: ReturnType<typeof extractSourceBindingEvidence>;
+  hasDirectInstitutionEvidence: boolean;
 }
 
 const GENERIC_CORE_NAMES = new Set([
@@ -160,7 +188,7 @@ export function normalizeReviewText(text: string): string {
 }
 
 export function normalizeReviewUrl(url: string): string {
-  return url
+  return canonicalizeKnownReviewUrl(url)
     .replace(/^https?:\/\//i, '')
     .replace(/\/$/, '')
     .toLowerCase();
@@ -217,7 +245,8 @@ function buildSignals(
   title: string,
   snippet: string,
   context: KindergartenVerificationContext,
-  textOverride?: string
+  textOverride?: string,
+  supplementalText = ''
 ): ReviewVerificationSignals {
   const text = textOverride ?? `${title} ${snippet}`;
   const normalizedText = normalizeReviewText(text);
@@ -236,7 +265,11 @@ function buildSignals(
     normalizedText.includes(coreNameNormalized);
   const genericCoreOnly = !directNameMatch && coreNameMatch && genericCoreName;
 
-  const contentType: ContentType = classifyContentType(title, snippet);
+  const contentType: ContentType = classifyContentType(
+    title,
+    snippet,
+    supplementalText
+  );
   const locationValidation = validateLocationMatch(
     text,
     context.sidoCode,
@@ -311,6 +344,60 @@ function buildSignals(
   };
 }
 
+export function buildReviewEvidenceText(
+  review: ReviewEvidenceInput,
+  bodyText?: string
+): { combinedText: string; supplementalText: string } {
+  const supplementalText = [
+    review.summary ?? '',
+    review.sourceName ?? '',
+    bodyText ?? review.content ?? '',
+  ]
+    .filter((segment) => segment.trim().length > 0)
+    .join(' ')
+    .trim();
+
+  return {
+    combinedText: [review.title, review.snippet, supplementalText]
+      .filter((segment) => segment.trim().length > 0)
+      .join(' ')
+      .trim(),
+    supplementalText,
+  };
+}
+
+export function analyzeReviewEvidence(
+  review: ReviewEvidenceInput,
+  context: KindergartenVerificationContext,
+  bodyText?: string
+): ReviewEvidenceAnalysis {
+  const { combinedText, supplementalText } = buildReviewEvidenceText(
+    review,
+    bodyText
+  );
+  const signals = buildSignals(
+    review.title,
+    review.snippet,
+    context,
+    combinedText,
+    supplementalText
+  );
+  const sourceBinding = extractSourceBindingEvidence(
+    review,
+    context.kindergartenName
+  );
+
+  return {
+    combinedText,
+    supplementalText,
+    normalizedText: normalizeReviewText(combinedText),
+    signals,
+    sourceBinding,
+    hasDirectInstitutionEvidence:
+      signals.directNameMatch || sourceBinding.exactInstitutionMatch,
+  };
+}
+
 function buildRejectedMetadata(
   signals: ReviewVerificationSignals,
   preliminaryStatus: ReviewRejectedStatus,
@@ -358,31 +445,58 @@ function buildFlagReasons(signals: ReviewVerificationSignals): string[] {
 }
 
 export function assessReviewMetadata(
-  review: Pick<ReviewLink, 'title' | 'snippet'>,
+  review: ReviewEvidenceInput,
   context: KindergartenVerificationContext
 ): ReviewVerificationMetadata {
-  const signals = buildSignals(review.title, review.snippet, context);
+  const analysis = analyzeReviewEvidence(review, context);
+  const signals = analysis.signals;
   const whyFlagged = buildFlagReasons(signals);
   const hasConcreteReviewSignals =
     signals.reviewIndicators.length > 0 ||
     signals.firstHandIndicators.length > 0 ||
     signals.schoolDetailIndicators.length > 0;
+  const strictLongformVerified =
+    review.evidenceType === 'longform_post'
+      ? signals.firstHandIndicators.length > 0 &&
+        signals.schoolDetailIndicators.length > 0
+      : true;
+  const sourceBinding = analysis.sourceBinding;
 
   if (
-    !signals.locationValid &&
-    signals.otherInstitutionMentions.length > 0 &&
-    !signals.directNameMatch
+    review.evidenceType === 'structured_list_row' ||
+    review.evidenceType === 'native_review_page'
   ) {
-    return buildRejectedMetadata(
-      signals,
-      'mismatch',
-      [
-        `지역 불일치: ${signals.locationReason ?? '다른 지역 언급'}`,
-        '타겟 외 기관명이 함께 확인됨',
-      ],
-      whyFlagged,
-      0.9
-    );
+    if (
+      sourceBinding.boundInstitutionName.length > 0 &&
+      !sourceBinding.exactInstitutionMatch
+    ) {
+      return buildRejectedMetadata(
+        signals,
+        'mismatch',
+        [`구조화 리뷰 소스의 기관명이 타겟과 다름: ${sourceBinding.boundInstitutionName}`],
+        whyFlagged,
+        0.98
+      );
+    }
+
+    if (
+      sourceBinding.exactInstitutionMatch &&
+      sourceBinding.hasReviewTitle &&
+      (sourceBinding.hasRating || review.evidenceType === 'native_review_page')
+    ) {
+      return {
+        decision: 'verified',
+        preliminaryStatus: 'verified',
+        confidence: review.evidenceType === 'native_review_page' ? 0.98 : 0.96,
+        reasons: [
+          review.evidenceType === 'native_review_page'
+            ? '기관 전용 리뷰 페이지에서 타겟 유치원과 리뷰 바인딩이 직접 확인됨'
+            : '구조화 리뷰 목록에서 기관명/리뷰제목/평점이 함께 확인됨',
+        ],
+        whyFlagged,
+        signals,
+      };
+    }
   }
 
   if (signals.advertorialIndicators.length > 0) {
@@ -411,11 +525,43 @@ export function assessReviewMetadata(
   }
 
   if (
+    signals.institutionMentions.length >= 3 &&
+    !signals.directNameMatch &&
+    signals.firstHandIndicators.length === 0
+  ) {
+    return buildRejectedMetadata(
+      signals,
+      'generic_info',
+      ['여러 유치원을 나열하는 비교/정보글로 보임'],
+      whyFlagged,
+      0.87
+    );
+  }
+
+  if (
+    !signals.locationValid &&
+    signals.otherInstitutionMentions.length > 0 &&
+    !signals.directNameMatch
+  ) {
+    return buildRejectedMetadata(
+      signals,
+      'mismatch',
+      [
+        `지역 불일치: ${signals.locationReason ?? '다른 지역 언급'}`,
+        '타겟 외 기관명이 함께 확인됨',
+      ],
+      whyFlagged,
+      0.9
+    );
+  }
+
+  if (
     signals.locationValid &&
     hasConcreteReviewSignals &&
     signals.otherInstitutionMentions.length === 0 &&
     (signals.directNameMatch ||
-      (signals.coreNameMatch && !signals.genericCoreOnly))
+      (signals.coreNameMatch && !signals.genericCoreOnly)) &&
+    strictLongformVerified
   ) {
     return {
       decision: 'verified',
@@ -438,25 +584,39 @@ export function assessReviewMetadata(
 }
 
 export function assessReviewBody(
-  review: Pick<ReviewLink, 'title' | 'snippet'> & { bodyText: string },
+  review: ReviewEvidenceInput & { bodyText: string },
   context: KindergartenVerificationContext
 ): ReviewBodyVerificationResult {
-  const combinedText = `${review.title} ${review.snippet} ${review.bodyText}`;
-  const signals = buildSignals(
-    review.title,
-    review.snippet,
-    context,
-    combinedText
-  );
+  const analysis = analyzeReviewEvidence(review, context, review.bodyText);
+  const signals = analysis.signals;
   const bodyLength = review.bodyText.trim().length;
   const hasConcreteReviewSignals =
     signals.reviewIndicators.length > 0 ||
     signals.firstHandIndicators.length > 0 ||
     signals.schoolDetailIndicators.length >= 2;
+  const strictLongformVerified =
+    review.evidenceType === 'longform_post'
+      ? signals.firstHandIndicators.length > 0 &&
+        signals.schoolDetailIndicators.length > 0
+      : true;
   const inaccessibleIndicators = collectPatternLabels(
     review.bodyText,
     INACCESSIBLE_BODY_PATTERNS
   );
+  const sourceBinding = analysis.sourceBinding;
+
+  if (
+    review.evidenceType === 'native_review_page' &&
+    sourceBinding.exactInstitutionMatch &&
+    (sourceBinding.hasRating || Object.keys(sourceBinding.structuredFields).length > 0)
+  ) {
+    return {
+      finalStatus: 'verified',
+      confidence: 0.98,
+      reasons: ['기관 전용 리뷰 페이지의 구조화 정보로 타겟 리뷰임이 확인됨'],
+      signals,
+    };
+  }
 
   if (inaccessibleIndicators.length > 0) {
     return {
@@ -519,10 +679,24 @@ export function assessReviewBody(
   }
 
   if (
+    signals.institutionMentions.length >= 3 &&
+    !signals.directNameMatch &&
+    signals.firstHandIndicators.length === 0
+  ) {
+    return {
+      finalStatus: 'generic_info',
+      confidence: 0.82,
+      reasons: ['본문이 여러 유치원을 나열하는 비교/정보글 성격임'],
+      signals,
+    };
+  }
+
+  if (
     hasConcreteReviewSignals &&
     signals.locationValid &&
     (signals.directNameMatch ||
-      (signals.coreNameMatch && !signals.genericCoreOnly))
+      (signals.coreNameMatch && !signals.genericCoreOnly)) &&
+    strictLongformVerified
   ) {
     return {
       finalStatus: 'verified',
@@ -563,11 +737,12 @@ export function assessReviewBody(
 }
 
 export function assessReviewFallback(
-  review: Pick<ReviewLink, 'title' | 'snippet'>,
+  review: ReviewEvidenceInput,
   context: KindergartenVerificationContext
 ): ReviewFallbackVerificationResult {
-  const signals = buildSignals(review.title, review.snippet, context);
-  const text = `${review.title} ${review.snippet}`;
+  const analysis = analyzeReviewEvidence(review, context);
+  const signals = analysis.signals;
+  const text = analysis.combinedText;
   const verifiedIndicators = collectPatternLabels(text, FALLBACK_VERIFIED_PATTERNS);
   const genericIndicators = collectPatternLabels(text, FALLBACK_GENERIC_INFO_PATTERNS);
   const advertorialIndicators = collectPatternLabels(
@@ -575,6 +750,34 @@ export function assessReviewFallback(
     FALLBACK_ADVERTORIAL_PATTERNS
   );
   const mismatchIndicators = collectPatternLabels(text, FALLBACK_MISMATCH_PATTERNS);
+  const sourceBinding = analysis.sourceBinding;
+
+  if (
+    review.evidenceType === 'structured_list_row' &&
+    sourceBinding.exactInstitutionMatch &&
+    sourceBinding.hasReviewTitle &&
+    sourceBinding.hasRating
+  ) {
+    return {
+      finalStatus: 'verified',
+      confidence: 0.95,
+      reasons: ['구조화 리뷰 목록에서 기관명/리뷰제목/평점 결합이 확인됨'],
+      signals,
+    };
+  }
+
+  if (
+    review.evidenceType === 'native_review_page' &&
+    sourceBinding.exactInstitutionMatch &&
+    (sourceBinding.hasRating || Object.keys(sourceBinding.structuredFields).length > 0)
+  ) {
+    return {
+      finalStatus: 'verified',
+      confidence: 0.97,
+      reasons: ['기관 전용 리뷰 페이지의 구조화 필드로 타겟 리뷰임이 확인됨'],
+      signals,
+    };
+  }
 
   if (advertorialIndicators.length > 0) {
     return {
@@ -587,6 +790,7 @@ export function assessReviewFallback(
 
   if (
     genericIndicators.length > 0 ||
+    (signals.institutionMentions.length >= 3 && !signals.directNameMatch) ||
     (signals.otherInstitutionMentions.length >= 2 && !signals.directNameMatch)
   ) {
     return {
@@ -641,6 +845,116 @@ export function assessReviewFallback(
     reasons: ['fallback에서도 확정하기 어려움'],
     signals,
   };
+}
+
+export interface UncertainReviewResolution {
+  status: ReviewVerificationStatus;
+  confidence: number;
+  reason?: string;
+}
+
+export function resolveUncertainReviewStatus(
+  status: ReviewVerificationStatus,
+  signals: ReviewVerificationSignals,
+  reasons: readonly string[]
+): UncertainReviewResolution {
+  if (status !== 'uncertain') {
+    return { status, confidence: 0 };
+  }
+
+  const accessWallOnly = reasons.some((reason) =>
+    /접근 제한|로그인 화면|카페 로그인/.test(reason)
+  );
+
+  if (
+    accessWallOnly &&
+    signals.advertorialIndicators.length === 0 &&
+    signals.genericInfoIndicators.length === 0 &&
+    signals.otherInstitutionMentions.length === 0 &&
+    signals.locationValid
+  ) {
+    return { status: 'uncertain', confidence: 0 };
+  }
+
+  if (signals.advertorialIndicators.length > 0) {
+    return {
+      status: 'advertorial',
+      confidence: 0.82,
+      reason: 'uncertain 상태지만 광고/상업 신호가 남아 있어 제거 대상으로 승격',
+    };
+  }
+
+  if (
+    signals.genericInfoIndicators.length > 0 ||
+    signals.contentType === 'question' ||
+    signals.contentType === 'info_list' ||
+    (signals.institutionMentions.length >= 3 && !signals.directNameMatch)
+  ) {
+    return {
+      status: 'generic_info',
+      confidence: 0.78,
+      reason: 'uncertain 상태지만 질문/안내/리스트 성격이 강해 일반 정보글로 정리',
+    };
+  }
+
+  if (
+    !signals.locationValid ||
+    (!signals.directNameMatch && signals.otherInstitutionMentions.length > 0)
+  ) {
+    return {
+      status: 'mismatch',
+      confidence: 0.76,
+      reason: 'uncertain 상태지만 타기관/타지역 신호가 남아 잘못 연결된 리뷰로 정리',
+    };
+  }
+
+  return { status: 'uncertain', confidence: 0 };
+}
+
+export function classifyReviewWithoutBody(
+  review: ReviewEvidenceInput,
+  context: KindergartenVerificationContext
+): ReviewFallbackVerificationResult {
+  const metadata = assessReviewMetadata(review, context);
+
+  if (metadata.decision === 'verified') {
+    return {
+      finalStatus: 'verified',
+      confidence: metadata.confidence,
+      reasons: metadata.reasons,
+      signals: metadata.signals,
+    };
+  }
+
+  if (metadata.decision === 'reject') {
+    return {
+      finalStatus: metadata.preliminaryStatus,
+      confidence: metadata.confidence,
+      reasons: metadata.reasons,
+      signals: metadata.signals,
+    };
+  }
+
+  const fallback = assessReviewFallback(review, context);
+  const unresolved = resolveUncertainReviewStatus(
+    fallback.finalStatus,
+    fallback.signals,
+    fallback.reasons
+  );
+
+  if (unresolved.status !== fallback.finalStatus) {
+    return {
+      finalStatus: unresolved.status,
+      confidence: unresolved.confidence,
+      reasons: [
+        ...fallback.reasons,
+        unresolved.reason ?? 'uncertain 상태를 shipped-safe 상태로 정리',
+      ],
+      signals: fallback.signals,
+    };
+  }
+
+  return fallback;
 }
 
 export function shouldKeepReviewAfterVerification(

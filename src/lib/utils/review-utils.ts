@@ -598,6 +598,19 @@ const INFO_LIST_PATTERNS = [
   /리스트.*정리/i,
   /한눈에\s*보기/i,
   /일람표/i,
+  /입학\s*가이드/i,
+  /모집요강/i,
+  /우선모집/i,
+  /선발결과/i,
+  /접수기간/i,
+  /등록방법/i,
+  /처음학교로/i,
+  /입학관리시스템/i,
+  /안내문/i,
+  /일정\s*정리/i,
+  /일정\s*공유/i,
+  /설명회\s*일정/i,
+  /명단\s*공개/i,
 ];
 
 /** 타이틀에 강한 후기 지표가 있는지 확인 (카페 등업 양식에 포함된 실제 후기 보호) */
@@ -618,21 +631,27 @@ function hasTitleReviewIndicator(title: string): boolean {
  * 타이틀에 "후기", "다녀보니" 등 강한 리뷰 지표가 있으면
  * snippet의 포럼 양식에도 불구하고 template로 판별하지 않음.
  */
-export function classifyContentType(title: string, snippet: string): ContentType {
+export function classifyContentType(
+  title: string,
+  snippet: string,
+  supplementalText = ''
+): ContentType {
+  const auxiliaryText = `${snippet} ${supplementalText}`.trim();
+
   // 질문글 — title 기준 (질문글은 리뷰 지표 여부와 무관하게 판별)
   for (const p of QUESTION_PATTERNS) {
-    if (p.test(title)) return 'question';
+    if (p.test(title) || p.test(auxiliaryText)) return 'question';
   }
 
   // 정보 나열 — title 기준
   for (const p of INFO_LIST_PATTERNS) {
-    if (p.test(title)) return 'info_list';
+    if (p.test(title) || p.test(auxiliaryText)) return 'info_list';
   }
 
   // 포럼 템플릿 — snippet 기준 (타이틀에 후기 지표 있으면 skip)
   if (!hasTitleReviewIndicator(title)) {
     for (const p of TEMPLATE_PATTERNS) {
-      if (p.test(snippet)) return 'template';
+      if (p.test(auxiliaryText)) return 'template';
     }
   }
 
@@ -643,7 +662,19 @@ export function classifyContentType(title: string, snippet: string): ContentType
  * 스팸 리뷰 여부를 title + snippet으로 종합 판단
  * filter-reviews.ts, curate-reviews.ts, verify-all-reviews.ts에서 공통 사용
  */
-export function isSpamReview(review: { title: string; snippet: string }): { isSpam: boolean; reason: string } {
+export function isSpamReview(review: {
+  title: string;
+  snippet: string;
+  summary?: string;
+  sourceName?: string;
+  content?: string;
+}): { isSpam: boolean; reason: string } {
+  const supplementalText = [
+    review.summary ?? '',
+    review.sourceName ?? '',
+    review.content ?? '',
+  ].join(' ');
+
   // 1. 타이틀 패턴 검사
   for (const pattern of UNIFIED_SPAM_TITLE_PATTERNS) {
     if (pattern.test(review.title)) {
@@ -659,7 +690,11 @@ export function isSpamReview(review: { title: string; snippet: string }): { isSp
   }
 
   // 3. 콘텐츠 유형 검사
-  const contentType = classifyContentType(review.title, review.snippet);
+  const contentType = classifyContentType(
+    review.title,
+    review.snippet,
+    supplementalText
+  );
   if (contentType === 'template') {
     return { isSpam: true, reason: `콘텐츠 유형: ${contentType}` };
   }
