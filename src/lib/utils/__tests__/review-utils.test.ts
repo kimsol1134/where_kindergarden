@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { stripHtml, formatNaverDate, extractRegionName, calculateRelevanceScore } from '../review-utils';
+import {
+  calculateRelevanceScore,
+  classifyContentType,
+  extractRegionName,
+  formatNaverDate,
+  stripHtml,
+} from '../review-utils';
 
 describe('stripHtml', () => {
   it('should remove HTML tags', () => {
@@ -164,5 +170,26 @@ describe('calculateRelevanceScore', () => {
       '꽃 전시회 다녀왔습니다.'
     );
     expect(score).toBeLessThan(0);
+  });
+});
+
+describe('classifyContentType', () => {
+  it('supplemental text에서 모집요강/우선모집 패턴을 읽어 info_list로 분류한다', () => {
+    expect(
+      classifyContentType(
+        '선양유치원 입학설명회 후기',
+        '설명회 다녀왔어요.',
+        '모집요강 우선모집 선발결과 접수기간 정리'
+      )
+    ).toBe('info_list');
+  });
+
+  it('타이틀에 후기 지표가 없고 snippet이 등업 양식이면 template로 분류한다', () => {
+    expect(
+      classifyContentType(
+        '유치원 고민이에요',
+        '양식에 맞지 않으면 등업이 되지 않습니다.'
+      )
+    ).toBe('question');
   });
 });

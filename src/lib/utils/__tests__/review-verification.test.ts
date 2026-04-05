@@ -5,7 +5,9 @@ import {
   assessReviewFallback,
   assessReviewMetadata,
   buildKindergartenCoreName,
+  classifyReviewWithoutBody,
   isGenericCoreName,
+  resolveUncertainReviewStatus,
 } from '@/lib/utils/review-verification';
 
 const baseContext = {
@@ -18,6 +20,60 @@ const baseContext = {
 };
 
 describe('review verification metadata', () => {
+  it('구조화된 Studyholic 리뷰 row 는 source evidence 만으로 verified 처리한다', () => {
+    const result = assessReviewMetadata(
+      {
+        title: '계성유치원 리뷰',
+        snippet: '인성을 중요시하는 유치원 | 서울 용산구 | 별점 ★★★★★',
+        source: 'studyholic',
+        evidenceType: 'structured_list_row',
+        rating: 5,
+        structuredFields: {
+          institutionName: '계성유치원',
+          reviewTitle: '인성을 중요시하는 유치원',
+          region: '서울',
+          sigungu: '용산구',
+          rating: 5,
+        },
+      },
+      {
+        ...baseContext,
+        kindergartenName: '계성유치원',
+        kindergartenAddress: '서울특별시 용산구 산천동 1',
+        sigunguCode: '11170',
+        coreNameFrequency: 1,
+      }
+    );
+
+    expect(result.decision).toBe('verified');
+    expect(result.reasons[0]).toContain('구조화 리뷰 목록');
+  });
+
+  it('구조화된 row 의 기관명이 다르면 mismatch reject 한다', () => {
+    const result = assessReviewMetadata(
+      {
+        title: '행복한유치원 리뷰',
+        snippet: '좋은 유치원',
+        source: 'studyholic',
+        evidenceType: 'structured_list_row',
+        rating: 5,
+        structuredFields: {
+          institutionName: '무지개유치원',
+          reviewTitle: '좋은 유치원',
+          rating: 5,
+        },
+      },
+      {
+        ...baseContext,
+        kindergartenName: '행복한유치원',
+        coreNameFrequency: 1,
+      }
+    );
+
+    expect(result.decision).toBe('reject');
+    expect(result.preliminaryStatus).toBe('mismatch');
+  });
+
   it('정식명과 후기 신호가 있으면 metadata만으로 verified 처리한다', () => {
     const result = assessReviewMetadata(
       {
@@ -33,6 +89,26 @@ describe('review verification metadata', () => {
     expect(result.decision).toBe('verified');
     expect(result.preliminaryStatus).toBe('verified');
     expect(result.signals.directNameMatch).toBe(true);
+  });
+
+  it('longform_post 는 1인칭 경험과 학교 상세가 없으면 자동 verified 하지 않는다', () => {
+    const result = assessReviewMetadata(
+      {
+        title: '옥인유치원 행사 후기',
+        snippet: '옥인유치원으로 찾아가는 공연 후기입니다.',
+        source: 'naver_blog',
+        evidenceType: 'longform_post',
+      },
+      {
+        ...baseContext,
+        kindergartenName: '옥인유치원',
+        kindergartenAddress: '서울특별시 종로구 자하문로 69',
+        sigunguCode: '11110',
+        coreNameFrequency: 1,
+      }
+    );
+
+    expect(result.decision).toBe('needs_body_check');
   });
 
   it('generic core name만 보이면 body check 대상으로 남긴다', () => {
@@ -55,6 +131,24 @@ describe('review verification metadata', () => {
         snippet: '추천해주세요. 모집요강과 지원금 정보를 모았습니다.',
       },
       baseContext
+    );
+
+    expect(result.decision).toBe('reject');
+    expect(result.preliminaryStatus).toBe('generic_info');
+  });
+
+  it('여러 유치원을 나열하는 비교글은 generic_info로 reject 한다', () => {
+    const result = assessReviewMetadata(
+      {
+        title: '안양 유치원 비교',
+        snippet:
+          '비산성모유치원 / 아이비유치원 / 창의나라유치원 / 안양유치원 설명회 일정을 정리했어요.',
+      },
+      {
+        ...baseContext,
+        kindergartenName: '행복한유치원',
+        coreNameFrequency: 1,
+      }
     );
 
     expect(result.decision).toBe('reject');
@@ -107,6 +201,35 @@ describe('review verification body', () => {
 });
 
 describe('review verification fallback', () => {
+  it('기관 전용 리뷰 페이지는 본문이 막혀도 fallback verified 처리한다', () => {
+    const result = assessReviewFallback(
+      {
+        title: '[계성유치원 리뷰] 인성을 중요시하는 유치원',
+        snippet: '지역: 서울 용산구 | 시설유무: 실외놀이터, 강당 | 전체만족도: ★★★★★',
+        source: 'studyholic',
+        evidenceType: 'native_review_page',
+        rating: 5,
+        structuredFields: {
+          institutionName: '계성유치원',
+          reviewTitle: '인성을 중요시하는 유치원',
+          region: '서울 용산구',
+          rating: 5,
+          시설유무: '실외놀이터, 강당',
+        },
+      },
+      {
+        ...baseContext,
+        kindergartenName: '계성유치원',
+        kindergartenAddress: '서울특별시 용산구 산천동 1',
+        sigunguCode: '11170',
+        coreNameFrequency: 1,
+      }
+    );
+
+    expect(result.finalStatus).toBe('verified');
+    expect(result.reasons[0]).toContain('기관 전용 리뷰 페이지');
+  });
+
   it('접근 제한 카페글도 제목/snippet이 명확하면 verified 처리한다', () => {
     const result = assessReviewFallback(
       {
@@ -142,6 +265,23 @@ describe('review verification fallback', () => {
     expect(result.finalStatus).toBe('generic_info');
   });
 
+  it('본문 없이도 비교/정보글은 shipped-safe generic_info로 분류한다', () => {
+    const result = classifyReviewWithoutBody(
+      {
+        title: '안양 유치원 입학 가이드',
+        snippet:
+          '비산성모유치원 / 아이비유치원 / 창의나라유치원 / 안양유치원 우선모집 일정을 정리합니다.',
+      },
+      {
+        ...baseContext,
+        kindergartenName: '행복한유치원',
+        coreNameFrequency: 1,
+      }
+    );
+
+    expect(result.finalStatus).toBe('generic_info');
+  });
+
   it('부동산 실거주 글은 advertorial 처리한다', () => {
     const result = assessReviewFallback(
       {
@@ -153,6 +293,56 @@ describe('review verification fallback', () => {
     );
 
     expect(result.finalStatus).toBe('advertorial');
+  });
+});
+
+describe('review verification uncertain resolution', () => {
+  it('access wall only uncertain은 유지한다', () => {
+    const resolution = resolveUncertainReviewStatus(
+      'uncertain',
+      {
+        directNameMatch: true,
+        coreNameMatch: true,
+        genericCoreOnly: false,
+        genericCoreName: false,
+        locationValid: true,
+        contentType: 'unknown',
+        reviewIndicators: [],
+        firstHandIndicators: [],
+        schoolDetailIndicators: [],
+        genericInfoIndicators: [],
+        advertorialIndicators: [],
+        institutionMentions: ['행복한유치원'],
+        otherInstitutionMentions: [],
+      },
+      ['본문 접근 제한/카페 로그인 화면: 로그인필요']
+    );
+
+    expect(resolution.status).toBe('uncertain');
+  });
+
+  it('negative evidence가 남은 uncertain은 remove 상태로 승격한다', () => {
+    const resolution = resolveUncertainReviewStatus(
+      'uncertain',
+      {
+        directNameMatch: false,
+        coreNameMatch: true,
+        genericCoreOnly: true,
+        genericCoreName: true,
+        locationValid: true,
+        contentType: 'info_list',
+        reviewIndicators: [],
+        firstHandIndicators: [],
+        schoolDetailIndicators: [],
+        genericInfoIndicators: ['info_list'],
+        advertorialIndicators: [],
+        institutionMentions: ['행복한유치원', '무지개유치원', '창의나라유치원'],
+        otherInstitutionMentions: ['무지개유치원', '창의나라유치원'],
+      },
+      ['fallback에서도 확정하기 어려움']
+    );
+
+    expect(resolution.status).toBe('generic_info');
   });
 });
 

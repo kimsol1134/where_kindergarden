@@ -5,7 +5,12 @@ import type {
   ReviewsData,
   ReviewVerificationRecord,
 } from '../../src/types/review';
-import { buildKindergartenCoreName } from '../../src/lib/utils/review-verification';
+import {
+  analyzeReviewEvidence,
+  buildKindergartenCoreName,
+  normalizeReviewText,
+  normalizeReviewUrl,
+} from '../../src/lib/utils/review-verification';
 
 export interface KindergartenEntry {
   kindercode: string;
@@ -21,9 +26,39 @@ export interface LoadedReviewEntry {
   sidoCode: string;
 }
 
+export interface ReviewCollisionResolution {
+  reviewId: string;
+  kindergartenId: string;
+  normalizedUrl: string;
+  groupSize: number;
+  directNameEvidence: boolean;
+  sameSigunguEvidence: boolean;
+  explicitRetainedEvidence: boolean;
+  shouldRemove: boolean;
+  reason: string;
+}
+
+export const DEFAULT_REVIEW_SIDO_CODES = [
+  '11',
+  '26',
+  '27',
+  '28',
+  '29',
+  '30',
+  '31',
+  '36',
+  '41',
+  '43',
+  '44',
+  '46',
+  '47',
+  '48',
+  '50',
+] as const;
+
 export function parseSidoCodes(
   value: string | undefined,
-  fallback: string[] = ['11', '41']
+  fallback: string[] = [...DEFAULT_REVIEW_SIDO_CODES]
 ): string[] {
   if (!value) {
     return fallback;
@@ -118,6 +153,97 @@ export function loadTargetReviewEntries(
   return entries;
 }
 
+function buildVerificationContext(
+  kindergarten: KindergartenEntry,
+  coreNameFrequencies: Map<string, number>
+): {
+  kindergartenId: string;
+  kindergartenName: string;
+  kindergartenAddress: string;
+  sidoCode: string;
+  sigunguCode: string;
+  coreNameFrequency: number;
+} {
+  const coreName = buildKindergartenCoreName(kindergarten.name);
+
+  return {
+    kindergartenId: kindergarten.kindercode,
+    kindergartenName: kindergarten.name,
+    kindergartenAddress: kindergarten.address,
+    sidoCode: kindergarten.sido_code,
+    sigunguCode: kindergarten.sigungu_code,
+    coreNameFrequency: coreNameFrequencies.get(coreName) ?? 1,
+  };
+}
+
+function extractSigunguEvidenceTokens(address: string): string[] {
+  const parts = address
+    .split(/\s+/)
+    .map((part) => part.trim())
+    .filter((part) => part.length > 0);
+  const sigungu = parts[1] ?? '';
+  const eupMyeonDong = parts[2] ?? '';
+
+  return [sigungu, sigungu.replace(/[시군구]$/u, ''), eupMyeonDong]
+    .filter((token) => token.length >= 2)
+    .filter((token, index, array) => array.indexOf(token) === index);
+}
+
+export function buildReviewCollisionResolutionMap(
+  entries: readonly LoadedReviewEntry[],
+  coreNameFrequencies: Map<string, number>,
+  threshold = 3
+): Map<string, ReviewCollisionResolution> {
+  const byNormalizedUrl = new Map<string, LoadedReviewEntry[]>();
+
+  for (const entry of entries) {
+    const normalizedUrl = normalizeReviewUrl(entry.review.url);
+    const bucket = byNormalizedUrl.get(normalizedUrl) ?? [];
+    bucket.push(entry);
+    byNormalizedUrl.set(normalizedUrl, bucket);
+  }
+
+  const resolutions = new Map<string, ReviewCollisionResolution>();
+
+  for (const [normalizedUrl, bucket] of byNormalizedUrl.entries()) {
+    if (bucket.length <= threshold) {
+      continue;
+    }
+
+    for (const entry of bucket) {
+      const context = buildVerificationContext(
+        entry.kindergarten,
+        coreNameFrequencies
+      );
+      const analysis = analyzeReviewEvidence(entry.review, context);
+      const sameSigunguEvidence = extractSigunguEvidenceTokens(
+        entry.kindergarten.address
+      ).some((token) =>
+        analysis.normalizedText.includes(normalizeReviewText(token))
+      );
+      const directNameEvidence = analysis.hasDirectInstitutionEvidence;
+      const explicitRetainedEvidence =
+        directNameEvidence || sameSigunguEvidence;
+
+      resolutions.set(entry.review.id, {
+        reviewId: entry.review.id,
+        kindergartenId: entry.kindergarten.kindercode,
+        normalizedUrl,
+        groupSize: bucket.length,
+        directNameEvidence,
+        sameSigunguEvidence,
+        explicitRetainedEvidence,
+        shouldRemove: !explicitRetainedEvidence,
+        reason: explicitRetainedEvidence
+          ? 'global URL collision 유지: 직접 기관명 또는 동일 시군구 증거 확인'
+          : 'global URL collision 제거: 직접 기관명/동일 시군구 증거 없음',
+      });
+    }
+  }
+
+  return resolutions;
+}
+
 export function summarizeRecords(
   records: ReviewVerificationRecord[]
 ): Record<string, number> {
@@ -143,14 +269,17 @@ export function rebuildCombinedReviews(
     const data = readJsonFile<ReviewsData>(path.join(reviewsDir, fileName));
     for (const [kindergartenId, reviews] of Object.entries(data.reviews)) {
       const bucket = mergedReviews[kindergartenId] ?? [];
-      const existingUrls = new Set(bucket.map((review) => review.url));
+      const existingUrls = new Set(
+        bucket.map((review) => normalizeReviewUrl(review.url))
+      );
 
       for (const review of reviews) {
-        if (existingUrls.has(review.url)) {
+        const normalizedUrl = normalizeReviewUrl(review.url);
+        if (existingUrls.has(normalizedUrl)) {
           continue;
         }
 
-        existingUrls.add(review.url);
+        existingUrls.add(normalizedUrl);
         bucket.push(review);
         totalCount += 1;
       }
