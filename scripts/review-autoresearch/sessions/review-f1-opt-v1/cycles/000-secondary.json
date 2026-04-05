@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-04-05T14:07:24.022Z",
+  "goldPath": "/Users/solkim/Dev/where_kindergarden/.claude/worktrees/agile-forging-lagoon/scripts/evals/review-quality-gold-v1.jsonl",
+  "reviewsPath": "/Users/solkim/Dev/where_kindergarden/.claude/worktrees/agile-forging-lagoon/public/data/reviews.json",
+  "totalSamples": 480,
+  "binaryKeepRemove": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "tp": 160,
+    "fp": 0,
+    "fn": 0,
+    "tn": 320
+  },
+  "removePrecision": 1,
+  "perClass": {
+    "verified": {
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "support": 160,
+      "predicted": 160,
+      "correct": 160
+    },
+    "mismatch": {
+      "precision": 1,
+      "recall": 0.716667,
+      "f1": 0.834952,
+      "support": 120,
+      "predicted": 86,
+      "correct": 86
+    },
+    "advertorial": {
+      "precision": 0.96,
+      "recall": 1,
+      "f1": 0.979592,
+      "support": 120,
+      "predicted": 125,
+      "correct": 120
+    },
+    "generic_info": {
+      "precision": 0.733945,
+      "recall": 1,
+      "f1": 0.846561,
+      "support": 80,
+      "predicted": 109,
+      "correct": 80
+    }
+  },
+  "predictedPresentCount": 160,
+  "expectedPresentCount": 160,
+  "contaminationKpis": {
+    "collisionGroupsOverThreshold": 56,
+    "unresolvedCollisionGroups": 0,
+    "unresolvedCollisionRows": 0
+  }
+}

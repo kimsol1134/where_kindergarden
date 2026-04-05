@@ -374,6 +374,7 @@ export interface ReviewAuditApplySummary {
   removedUnaudited: number;
   removedMissingAudit: number;
   keptVerified: number;
+  recoveredFromAudit: number;
 }
 
 export interface ReviewAuditApplyReport {

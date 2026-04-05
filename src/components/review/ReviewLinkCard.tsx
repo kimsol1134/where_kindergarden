@@ -9,6 +9,8 @@ const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> 
   learns: { label: '런즈', className: 'text-violet-700 bg-violet-100' },
   naver_blog: { label: '블로그', className: 'text-green-700 bg-green-100' },
   naver_cafe: { label: '카페', className: 'text-blue-700 bg-blue-100' },
+  studyholic: { label: '스터디홀릭', className: 'text-sky-700 bg-sky-100' },
+  learns: { label: '런즈', className: 'text-violet-700 bg-violet-100' },
   google: { label: '웹', className: 'text-yellow-700 bg-yellow-100' },
   other: { label: '기타', className: 'text-gray-700 bg-gray-100' },
 };

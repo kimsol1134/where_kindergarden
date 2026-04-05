@@ -44,15 +44,17 @@ function main(): void {
     removedUnaudited: 0,
     removedMissingAudit: 0,
     keptVerified: 0,
+    recoveredFromAudit: 0,
   };
 
   for (const sidoCode of DEFAULT_REVIEW_SIDO_CODES) {
     const sourceData = loadReviewsData(sidoCode);
-    const applied = applyReviewAuditToRegionData(sourceData, entries);
+    const applied = applyReviewAuditToRegionData(sourceData, entries, sidoCode);
     summary.removedInvalid += applied.summary.removedInvalid;
     summary.removedUnaudited += applied.summary.removedUnaudited;
     summary.removedMissingAudit += applied.summary.removedMissingAudit;
     summary.keptVerified += applied.summary.keptVerified;
+    summary.recoveredFromAudit += applied.summary.recoveredFromAudit;
 
     if (!dryRun) {
       writeJsonFile(

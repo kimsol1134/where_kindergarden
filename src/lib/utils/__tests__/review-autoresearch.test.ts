@@ -43,7 +43,8 @@ function createStats(
 }
 
 function createSecondaryReport(
-  f1 = 0.99
+  f1 = 0.99,
+  precision = 0.99
 ): ReviewQualityEvaluationReport {
   return {
     generatedAt: '2026-04-05T00:00:00.000Z',
@@ -51,7 +52,7 @@ function createSecondaryReport(
     reviewsPath: '/tmp/reviews.json',
     totalSamples: 480,
     binaryKeepRemove: {
-      precision: 0.99,
+      precision,
       recall: 0.99,
       f1,
       tp: 1,
@@ -77,82 +78,126 @@ function createSecondaryReport(
 }
 
 describe('review autoresearch loop helpers', () => {
-  it('visible precision이 오르면 keep 한다', () => {
-    const decision = decideReviewAutoresearchCycle(createStats({
-      visiblePrecision: 0.95,
-      invalidVisibleCount: 200,
-    }), {
-      bestVisiblePrecision: 0.9,
-      bestInvalidVisibleCount: 400,
+  describe('decideReviewAutoresearchCycle', () => {
+    it('binary F1이 오르고 precision floor 이상이면 keep 한다', () => {
+      const decision = decideReviewAutoresearchCycle(
+        createStats(),
+        { bestSecondaryBinaryF1: 0.85, bestSecondaryBinaryPrecision: 0.98 },
+        0.92,
+        0.98
+      );
+
+      expect(decision.improved).toBe(true);
+      expect(decision.reason).toContain('F1 improved');
     });
 
-    expect(decision.improved).toBe(true);
-    expect(decision.reason).toContain('visible precision');
+    it('binary F1이 올라도 precision floor 미달이면 reject 한다', () => {
+      const decision = decideReviewAutoresearchCycle(
+        createStats(),
+        { bestSecondaryBinaryF1: 0.85, bestSecondaryBinaryPrecision: 0.98 },
+        0.92,
+        0.95
+      );
+
+      expect(decision.improved).toBe(false);
+      expect(decision.reason).toContain('below floor');
+    });
+
+    it('F1 동률이면 precision이 더 높을 때만 keep 한다', () => {
+      expect(
+        decideReviewAutoresearchCycle(
+          createStats(),
+          { bestSecondaryBinaryF1: 0.92, bestSecondaryBinaryPrecision: 0.97 },
+          0.92,
+          0.99
+        ).improved
+      ).toBe(true);
+
+      expect(
+        decideReviewAutoresearchCycle(
+          createStats(),
+          { bestSecondaryBinaryF1: 0.92, bestSecondaryBinaryPrecision: 0.99 },
+          0.92,
+          0.99
+        ).improved
+      ).toBe(false);
+    });
+
+    it('F1이 내려가면 reject 한다', () => {
+      const decision = decideReviewAutoresearchCycle(
+        createStats(),
+        { bestSecondaryBinaryF1: 0.95, bestSecondaryBinaryPrecision: 0.99 },
+        0.93,
+        0.99
+      );
+
+      expect(decision.improved).toBe(false);
+    });
   });
 
-  it('precision 동률이면 invalid visible count 감소시에만 keep 한다', () => {
-    expect(
-      decideReviewAutoresearchCycle(createStats({
-        visiblePrecision: 0.9,
-        invalidVisibleCount: 300,
-      }), {
-        bestVisiblePrecision: 0.9,
-        bestInvalidVisibleCount: 400,
-      }).improved
-    ).toBe(true);
+  describe('shouldStopReviewAutoresearch', () => {
+    it('전수 audit이 끝나기 전에는 F1이 높아도 stop 하지 않는다', () => {
+      expect(
+        shouldStopReviewAutoresearch(
+          createStats({ auditedCount: 4200 }),
+          { auditUniverseCount: 4277, consecutiveNoImprovement: 0 },
+          0.96,
+          0.99
+        )
+      ).toBe(false);
+    });
 
-    expect(
-      decideReviewAutoresearchCycle(createStats({
-        visiblePrecision: 0.9,
-        invalidVisibleCount: 400,
-      }), {
-        bestVisiblePrecision: 0.9,
-        bestInvalidVisibleCount: 400,
-      }).improved
-    ).toBe(false);
+    it('전수 audit 완료 + F1 >= 0.95 + precision >= 0.97이면 stop 한다', () => {
+      expect(
+        shouldStopReviewAutoresearch(
+          createStats({ auditedCount: 4277, remainingCount: 0 }),
+          { auditUniverseCount: 4277, consecutiveNoImprovement: 0 },
+          0.96,
+          0.98
+        )
+      ).toBe(true);
+    });
+
+    it('F1이 0.95 미만이면 stop 하지 않는다', () => {
+      expect(
+        shouldStopReviewAutoresearch(
+          createStats({ auditedCount: 4277, remainingCount: 0 }),
+          { auditUniverseCount: 4277, consecutiveNoImprovement: 0 },
+          0.94,
+          0.99
+        )
+      ).toBe(false);
+    });
+
+    it('연속 5회 개선 없으면 stop 한다', () => {
+      expect(
+        shouldStopReviewAutoresearch(
+          createStats({ auditedCount: 4277, remainingCount: 0 }),
+          { auditUniverseCount: 4277, consecutiveNoImprovement: 5 },
+          0.85,
+          0.99
+        )
+      ).toBe(true);
+    });
   });
 
-  it('전수 audit이 끝나기 전에는 precision이 높아도 stop 하지 않는다', () => {
-    expect(
-      shouldStopReviewAutoresearch(createStats({
-        auditedCount: 4200,
-        visiblePrecision: 0.99,
-        invalidVisibleCount: 0,
-      }), {
-        auditUniverseCount: 4277,
-        consecutiveNoImprovement: 0,
-      })
-    ).toBe(false);
-  });
+  describe('buildInitialReviewAutoresearchState', () => {
+    it('audit universe와 secondary F1/precision을 함께 저장한다', () => {
+      const state = buildInitialReviewAutoresearchState(
+        'tag-1',
+        '/tmp/primary.json',
+        '/tmp/secondary.json',
+        {
+          generatedAt: '2026-04-05T00:00:00.000Z',
+          primaryStats: createStats(),
+          secondaryReport: createSecondaryReport(0.987, 0.995),
+        }
+      );
 
-  it('전수 audit 완료 + threshold 달성 + invalid 0이면 stop 한다', () => {
-    expect(
-      shouldStopReviewAutoresearch(createStats({
-        auditedCount: 4277,
-        remainingCount: 0,
-        visiblePrecision: 0.96,
-        invalidVisibleCount: 0,
-      }), {
-        auditUniverseCount: 4277,
-        consecutiveNoImprovement: 0,
-      })
-    ).toBe(true);
-  });
-
-  it('initial state는 audit universe와 secondary F1을 함께 저장한다', () => {
-    const state = buildInitialReviewAutoresearchState(
-      'tag-1',
-      '/tmp/primary.json',
-      '/tmp/secondary.json',
-      {
-        generatedAt: '2026-04-05T00:00:00.000Z',
-        primaryStats: createStats(),
-        secondaryReport: createSecondaryReport(0.987),
-      }
-    );
-
-    expect(state.auditUniverseCount).toBe(4277);
-    expect(state.bestVisiblePrecision).toBe(0.9);
-    expect(state.bestSecondaryBinaryF1).toBe(0.987);
+      expect(state.auditUniverseCount).toBe(4277);
+      expect(state.bestVisiblePrecision).toBe(0.9);
+      expect(state.bestSecondaryBinaryF1).toBe(0.987);
+      expect(state.bestSecondaryBinaryPrecision).toBe(0.995);
+    });
   });
 });
