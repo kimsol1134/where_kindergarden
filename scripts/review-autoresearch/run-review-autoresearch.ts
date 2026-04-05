@@ -27,6 +27,7 @@ const ALLOWED_POLICY_SURFACES = [
   'src/lib/utils/review-utils.ts',
   'src/lib/utils/review-verification.ts',
   'scripts/lib/review-verification-pipeline.ts',
+  'scripts/evals/review-audit-autofill.ts',
 ] as const;
 
 function getArgValue(args: string[], flag: string): string | undefined {
@@ -224,7 +225,9 @@ function main(): void {
 
   const decision = decideReviewAutoresearchCycle(
     cycleReport.primaryStats,
-    state
+    state,
+    cycleReport.secondaryReport.binaryKeepRemove.f1,
+    cycleReport.secondaryReport.binaryKeepRemove.precision
   );
   const improved = decision.improved;
   const shouldRestoreBest = hasFlag(args, '--restore-best') && !improved;
@@ -239,6 +242,8 @@ function main(): void {
     state.bestPrimaryReportPath = primaryReportPath;
     state.bestSecondaryBinaryF1 =
       cycleReport.secondaryReport.binaryKeepRemove.f1;
+    state.bestSecondaryBinaryPrecision =
+      cycleReport.secondaryReport.binaryKeepRemove.precision;
     state.bestSecondaryReportPath = secondaryReportPath;
     state.consecutiveNoImprovement = 0;
   } else {
@@ -268,7 +273,9 @@ function main(): void {
 
   const shouldStop = shouldStopReviewAutoresearch(
     cycleReport.primaryStats,
-    state
+    state,
+    cycleReport.secondaryReport.binaryKeepRemove.f1,
+    cycleReport.secondaryReport.binaryKeepRemove.precision
   );
 
   process.stdout.write(

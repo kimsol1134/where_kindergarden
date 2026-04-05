@@ -488,21 +488,40 @@ function buildEmptyApplySummary(): ReviewAuditApplySummary {
     removedUnaudited: 0,
     removedMissingAudit: 0,
     keptVerified: 0,
+    recoveredFromAudit: 0,
+  };
+}
+
+function auditEntryToReviewLink(entry: ReviewAuditEntry): ReviewLink {
+  return {
+    id: entry.reviewId,
+    kindergartenId: entry.kindergartenId,
+    title: entry.title,
+    url: entry.url,
+    source: entry.source,
+    sourceName: entry.sourceName,
+    snippet: entry.snippet,
+    summary: entry.summary,
+    date: entry.date,
+    collectedAt: entry.collectedAt,
   };
 }
 
 export function applyReviewAuditToRegionData(
   regionData: ReviewsData,
-  auditEntries: readonly ReviewAuditEntry[]
+  auditEntries: readonly ReviewAuditEntry[],
+  regionSidoCode?: string
 ): ApplyReviewAuditToRegionResult {
   const auditEntryMap = buildReviewAuditEntryMap(auditEntries);
   const summary = buildEmptyApplySummary();
   const nextReviews: ReviewsData['reviews'] = {};
+  const existingKeys = new Set<string>();
 
   for (const [kindergartenId, reviews] of Object.entries(regionData.reviews)) {
     const kept = reviews.filter((review) => {
-      const auditEntry =
-        auditEntryMap.get(buildReviewAuditKey(kindergartenId, review.id)) ?? null;
+      const key = buildReviewAuditKey(kindergartenId, review.id);
+      existingKeys.add(key);
+      const auditEntry = auditEntryMap.get(key) ?? null;
 
       if (!auditEntry) {
         summary.removedMissingAudit += 1;
@@ -526,6 +545,27 @@ export function applyReviewAuditToRegionData(
     if (kept.length > 0) {
       nextReviews[kindergartenId] = kept;
     }
+  }
+
+  for (const entry of auditEntries) {
+    if (entry.finalAuditStatus !== 'verified') {
+      continue;
+    }
+
+    if (regionSidoCode && entry.sidoCode !== regionSidoCode) {
+      continue;
+    }
+
+    const key = buildReviewAuditKey(entry.kindergartenId, entry.reviewId);
+    if (existingKeys.has(key)) {
+      continue;
+    }
+
+    if (!nextReviews[entry.kindergartenId]) {
+      nextReviews[entry.kindergartenId] = [];
+    }
+    nextReviews[entry.kindergartenId].push(auditEntryToReviewLink(entry));
+    summary.recoveredFromAudit += 1;
   }
 
   return {

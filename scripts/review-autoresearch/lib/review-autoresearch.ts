@@ -13,6 +13,7 @@ export interface ReviewAutoresearchState {
   bestAuditedCount: number;
   bestPrimaryReportPath: string;
   bestSecondaryBinaryF1: number;
+  bestSecondaryBinaryPrecision: number;
   bestSecondaryReportPath: string;
   consecutiveNoImprovement: number;
   lastUpdatedAt: string;
@@ -23,48 +24,58 @@ export interface ReviewAutoresearchCycleDecision {
   reason: string;
 }
 
+const PRECISION_FLOOR = 0.97;
+
 export function decideReviewAutoresearchCycle(
   currentStats: ReviewAuditStats,
   state: Pick<
     ReviewAutoresearchState,
-    'bestVisiblePrecision' | 'bestInvalidVisibleCount'
-  >
+    'bestSecondaryBinaryF1' | 'bestSecondaryBinaryPrecision'
+  >,
+  currentBinaryF1: number,
+  currentBinaryPrecision: number
 ): ReviewAutoresearchCycleDecision {
-  if (currentStats.visiblePrecision > state.bestVisiblePrecision) {
+  if (currentBinaryPrecision < PRECISION_FLOOR) {
+    return {
+      improved: false,
+      reason: `binary precision ${currentBinaryPrecision.toFixed(4)} below floor ${PRECISION_FLOOR}`,
+    };
+  }
+
+  if (currentBinaryF1 > state.bestSecondaryBinaryF1) {
     return {
       improved: true,
-      reason: 'visible precision improved',
+      reason: `binary F1 improved: ${state.bestSecondaryBinaryF1.toFixed(4)} → ${currentBinaryF1.toFixed(4)}`,
     };
   }
 
   if (
-    currentStats.visiblePrecision === state.bestVisiblePrecision &&
-    currentStats.invalidVisibleCount < state.bestInvalidVisibleCount
+    currentBinaryF1 === state.bestSecondaryBinaryF1 &&
+    currentBinaryPrecision > state.bestSecondaryBinaryPrecision
   ) {
     return {
       improved: true,
-      reason: 'visible precision tied and invalid visible count decreased',
+      reason: 'binary F1 tied, precision improved',
     };
   }
 
   return {
     improved: false,
-    reason: 'no precision gain or invalid visible reduction',
+    reason: `no F1 gain (current ${currentBinaryF1.toFixed(4)} vs best ${state.bestSecondaryBinaryF1.toFixed(4)})`,
   };
 }
 
 export function shouldStopReviewAutoresearch(
   currentStats: ReviewAuditStats,
-  state: Pick<ReviewAutoresearchState, 'auditUniverseCount' | 'consecutiveNoImprovement'>
+  state: Pick<ReviewAutoresearchState, 'auditUniverseCount' | 'consecutiveNoImprovement'>,
+  currentBinaryF1: number,
+  currentBinaryPrecision: number
 ): boolean {
   if (currentStats.auditedCount < state.auditUniverseCount) {
     return false;
   }
 
-  if (
-    currentStats.visiblePrecision >= 0.95 &&
-    currentStats.invalidVisibleCount === 0
-  ) {
+  if (currentBinaryF1 >= 0.95 && currentBinaryPrecision >= PRECISION_FLOOR) {
     return true;
   }
 
@@ -93,6 +104,7 @@ export function buildInitialReviewAutoresearchState(
     bestAuditedCount: cycleReport.primaryStats.auditedCount,
     bestPrimaryReportPath: primaryReportPath,
     bestSecondaryBinaryF1: cycleReport.secondaryReport.binaryKeepRemove.f1,
+    bestSecondaryBinaryPrecision: cycleReport.secondaryReport.binaryKeepRemove.precision,
     bestSecondaryReportPath: secondaryReportPath,
     consecutiveNoImprovement: 0,
     lastUpdatedAt: new Date().toISOString(),
