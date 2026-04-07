@@ -179,6 +179,61 @@ async function scrapeNaverPlaceReviews(
   }
 }
 
+function persistCollectedReviews(
+  collectedReviews: Map<string, ReviewLink[]>,
+  targets: Array<{ kindercode: string; placeId: string; kindergarten: KindergartenEntry }>,
+  sidos: string[]
+): number {
+  let totalAdded = 0;
+  for (const sidoCode of sidos) {
+    const sidoReviewPath = path.resolve(`public/data/reviews/${sidoCode}.json`);
+    let sidoData: ReviewsData;
+
+    if (fs.existsSync(sidoReviewPath)) {
+      sidoData = JSON.parse(fs.readFileSync(sidoReviewPath, 'utf-8'));
+    } else {
+      sidoData = {
+        version: new Date().toISOString().split('T')[0],
+        totalCount: 0,
+        kindergartenCount: 0,
+        reviews: {},
+      };
+    }
+
+    const sidoKindergartens = targets.filter(
+      (t) => t.kindergarten.sido_code === sidoCode
+    );
+
+    let addedCount = 0;
+    for (const target of sidoKindergartens) {
+      const newReviews = collectedReviews.get(target.kindercode);
+      if (!newReviews || newReviews.length === 0) continue;
+
+      const existing = sidoData.reviews[target.kindercode] ?? [];
+      const existingUrls = new Set(existing.map((r) => r.url));
+      const uniqueNew = newReviews.filter((r) => !existingUrls.has(r.url));
+
+      if (uniqueNew.length > 0) {
+        sidoData.reviews[target.kindercode] = [...existing, ...uniqueNew];
+        addedCount += uniqueNew.length;
+      }
+    }
+
+    if (addedCount > 0) {
+      sidoData.version = new Date().toISOString().split('T')[0];
+      sidoData.totalCount = Object.values(sidoData.reviews).reduce(
+        (sum, reviews) => sum + reviews.length,
+        0
+      );
+      sidoData.kindergartenCount = Object.keys(sidoData.reviews).length;
+      ensureDirectory(path.dirname(sidoReviewPath));
+      fs.writeFileSync(sidoReviewPath, JSON.stringify(sidoData, null, 2));
+      totalAdded += addedCount;
+    }
+  }
+  return totalAdded;
+}
+
 function buildReviewLink(
   kindergartenId: string,
   placeId: string,
@@ -334,6 +389,15 @@ async function main(): Promise<void> {
       }
     }
 
+    // 50배치마다 증분 저장 (IP 차단 등으로 중단되어도 데이터 보존)
+    if (!dryRun && (i / BATCH_SIZE + 1) % 50 === 0 && collectedReviews.size > 0) {
+      const saved = persistCollectedReviews(collectedReviews, targets, sidos);
+      if (saved > 0) {
+        writeLine(`  [SAVE] 증분 저장: ${saved}건 (누적 ${totalCollected}건)`);
+      }
+      collectedReviews.clear();
+    }
+
     await randomDelay(MIN_DELAY, MAX_DELAY);
   }
 
@@ -346,58 +410,13 @@ async function main(): Promise<void> {
     return;
   }
 
-  if (totalCollected === 0) {
-    writeLine('수집된 리뷰 없음');
+  if (collectedReviews.size === 0) {
+    writeLine('남은 미저장 리뷰 없음');
     return;
   }
 
-  // 기존 리뷰 파일에 병합
-  for (const sidoCode of sidos) {
-    const sidoReviewPath = path.resolve(`public/data/reviews/${sidoCode}.json`);
-    let sidoData: ReviewsData;
-
-    if (fs.existsSync(sidoReviewPath)) {
-      sidoData = JSON.parse(fs.readFileSync(sidoReviewPath, 'utf-8'));
-    } else {
-      sidoData = {
-        version: new Date().toISOString().split('T')[0],
-        totalCount: 0,
-        kindergartenCount: 0,
-        reviews: {},
-      };
-    }
-
-    const sidoKindergartens = targets.filter(
-      (t) => t.kindergarten.sido_code === sidoCode
-    );
-
-    let addedCount = 0;
-    for (const target of sidoKindergartens) {
-      const newReviews = collectedReviews.get(target.kindercode);
-      if (!newReviews || newReviews.length === 0) continue;
-
-      const existing = sidoData.reviews[target.kindercode] ?? [];
-      const existingUrls = new Set(existing.map((r) => r.url));
-      const uniqueNew = newReviews.filter((r) => !existingUrls.has(r.url));
-
-      if (uniqueNew.length > 0) {
-        sidoData.reviews[target.kindercode] = [...existing, ...uniqueNew];
-        addedCount += uniqueNew.length;
-      }
-    }
-
-    if (addedCount > 0) {
-      sidoData.version = new Date().toISOString().split('T')[0];
-      sidoData.totalCount = Object.values(sidoData.reviews).reduce(
-        (sum, reviews) => sum + reviews.length,
-        0
-      );
-      sidoData.kindergartenCount = Object.keys(sidoData.reviews).length;
-      ensureDirectory(path.dirname(sidoReviewPath));
-      fs.writeFileSync(sidoReviewPath, JSON.stringify(sidoData, null, 2));
-      writeLine(`${sidoCode}.json: ${addedCount}건 추가 (총 ${sidoData.totalCount}건)`);
-    }
-  }
+  const finalSaved = persistCollectedReviews(collectedReviews, targets, sidos);
+  writeLine(`최종 저장: ${finalSaved}건`);
 }
 
 main().catch((error) => {
