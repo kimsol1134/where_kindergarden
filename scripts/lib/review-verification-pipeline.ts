@@ -54,6 +54,10 @@ export const DEFAULT_REVIEW_SIDO_CODES = [
   '47',
   '48',
   '50',
+  // 네이버 플레이스 추가본(PR #62)에서 새로 등장한 시도 코드 — apply 단계가
+  // 이들 파일을 누락하지 않도록 기본 목록에 포함합니다.
+  '51',
+  '52',
 ] as const;
 
 export function parseSidoCodes(
