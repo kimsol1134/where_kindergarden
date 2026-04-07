@@ -47,7 +47,12 @@
     "collect:all": "tsx scripts/collect-and-curate.ts",
     "extract:all": "tsx scripts/batch-extract-urls.ts",
     "scrape:batch": "tsx scripts/batch-scrape-content.ts",
-    "enrich:all": "tsx scripts/batch-enrich.ts"
+    "enrich:all": "tsx scripts/batch-enrich.ts",
+    "verify:review-haiku": "tsx scripts/validate-reviews-haiku.ts",
+    "build:naver-place-mapping": "tsx scripts/build-naver-place-mapping.ts",
+    "collect:naver-place": "tsx scripts/collect-naver-place-reviews.ts",
+    "build:starteacher-mapping": "tsx scripts/build-starteacher-mapping.ts",
+    "collect:starteacher": "tsx scripts/collect-starteacher-reviews.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.0",
@@ -64,6 +69,7 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/postcss": "^4",
     "@testing-library/dom": "^10.4.0",

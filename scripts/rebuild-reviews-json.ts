@@ -17,7 +17,15 @@ interface ReviewLink {
   kindergartenId: string;
   title: string;
   url: string;
-  source: 'naver_blog' | 'naver_cafe' | 'google' | 'other';
+  source:
+    | 'studyholic'
+    | 'learns'
+    | 'naver_blog'
+    | 'naver_cafe'
+    | 'google'
+    | 'naver_place'
+    | 'starteacher'
+    | 'other';
   sourceName: string;
   snippet: string;
   summary?: string;
@@ -75,14 +83,18 @@ function main() {
       if (!allReviews[kid]) {
         allReviews[kid] = [];
       }
-      // URL 중복은 kindergartenId별로 관리
-      const existingUrls = new Set(
-        allReviews[kid].map(r => r.url.replace(/^https?:\/\//, '').replace(/\/$/, ''))
-      );
+      // 중복 키: naver_place는 같은 URL을 공유하므로 ID로 구분, 그 외는 URL 기반
+      const buildKey = (r: ReviewLink): string => {
+        if (r.source === 'naver_place' || r.source === 'starteacher') {
+          return r.id;
+        }
+        return r.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+      };
+      const existingKeys = new Set(allReviews[kid].map(buildKey));
       for (const review of reviews) {
-        const normalizedUrl = review.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
-        if (!existingUrls.has(normalizedUrl)) {
-          existingUrls.add(normalizedUrl);
+        const key = buildKey(review);
+        if (!existingKeys.has(key)) {
+          existingKeys.add(key);
           allReviews[kid].push(review);
           regionCount++;
           totalCount++;

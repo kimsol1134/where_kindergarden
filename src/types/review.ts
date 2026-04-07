@@ -4,6 +4,8 @@ export type ReviewSource =
   | 'naver_blog'
   | 'naver_cafe'
   | 'google'
+  | 'naver_place'
+  | 'starteacher'
   | 'other';
 
 export type ReviewAccessMode = 'public' | 'login' | 'partner';

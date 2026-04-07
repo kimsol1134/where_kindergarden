@@ -10,6 +10,8 @@ const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> 
   naver_blog: { label: '블로그', className: 'text-green-700 bg-green-100' },
   naver_cafe: { label: '카페', className: 'text-blue-700 bg-blue-100' },
   google: { label: '웹', className: 'text-yellow-700 bg-yellow-100' },
+  naver_place: { label: '플레이스', className: 'text-emerald-700 bg-emerald-100' },
+  starteacher: { label: '별별선생', className: 'text-purple-700 bg-purple-100' },
   other: { label: '기타', className: 'text-gray-700 bg-gray-100' },
 };
 
