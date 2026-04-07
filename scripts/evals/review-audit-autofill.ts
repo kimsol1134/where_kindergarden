@@ -8,6 +8,8 @@ import type {
 import {
   buildReviewAuditBatch,
   buildReviewAuditStats,
+  classifyNaverPlaceReview,
+  detectMismappedNaverPlaceKindergartens,
   parseReviewAuditJsonl,
   serializeReviewAuditJsonl,
 } from './lib/review-audit';
@@ -26,8 +28,28 @@ function getArgValue(args: string[], flag: string): string | undefined {
 }
 
 function inferFinalStatus(
-  entry: ReturnType<typeof buildReviewAuditBatch>[number]
+  entry: ReturnType<typeof buildReviewAuditBatch>[number],
+  context: { mismappedKindergartenIds: Set<string> }
 ): { status: ReviewAuditDecisionStatus; reason: string } {
+  if (entry.source === 'naver_place') {
+    const classification = classifyNaverPlaceReview(
+      {
+        snippet: entry.snippet,
+        title: entry.title,
+        summary: entry.summary,
+      },
+      {
+        mismappedKindergarten: context.mismappedKindergartenIds.has(
+          entry.kindergartenId
+        ),
+      }
+    );
+    return {
+      status: classification.status,
+      reason: classification.reason,
+    };
+  }
+
   if (entry.autoStatus !== 'verified') {
     return {
       status: entry.autoStatus,
@@ -119,6 +141,7 @@ function main(): void {
   );
   const preserveReviewed = !args.includes('--overwrite-reviewed');
   const reviewedBy = getArgValue(args, '--reviewed-by') ?? 'autofill';
+  const sourceFilter = getArgValue(args, '--source') ?? null;
 
   const entries = parseReviewAuditJsonl(fs.readFileSync(auditPath, 'utf-8'));
   const kindergartens = loadKindergartens();
@@ -132,12 +155,28 @@ function main(): void {
     batchSize: entries.length,
     includeReviewed: true,
   });
+  // 매핑 오류 탐지는 audit queue 전체(현재 visible 여부 무관)를 기준으로 합니다.
+  const mismappedKindergartenIds = detectMismappedNaverPlaceKindergartens(
+    entries.map((entry) => ({
+      kindergartenId: entry.kindergartenId,
+      source: entry.source,
+      snippet: entry.snippet,
+      title: entry.title,
+      summary: entry.summary,
+    }))
+  );
+  const inferContext = { mismappedKindergartenIds };
+  let touched = 0;
   const nextEntries = scoredEntries.map<ReviewAuditEntry>((entry) => {
+    if (sourceFilter !== null && entry.source !== sourceFilter) {
+      return entry;
+    }
     if (preserveReviewed && entry.finalAuditStatus !== null) {
       return entry;
     }
 
-    const decision = inferFinalStatus(entry);
+    const decision = inferFinalStatus(entry, inferContext);
+    touched += 1;
     return {
       ...entry,
       finalAuditStatus: decision.status,
@@ -156,6 +195,9 @@ function main(): void {
         auditPath,
         total: stats.totalCount,
         audited: stats.auditedCount,
+        touched,
+        sourceFilter: sourceFilter ?? 'all',
+        mismappedNaverPlaceKindergartens: mismappedKindergartenIds.size,
         visiblePrecision: stats.visiblePrecision,
         invalidVisibleCount: stats.invalidVisibleCount,
       },
