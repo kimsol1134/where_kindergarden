@@ -64,7 +64,8 @@ function generateReviewId(placeId: string, index: number): string {
 
 async function scrapeNaverPlaceReviews(
   page: Page,
-  placeId: string
+  placeId: string,
+  timeoutMs = 15000
 ): Promise<NaverPlaceReview[]> {
   const url = `https://m.place.naver.com/place/${placeId}/review/visitor`;
 
@@ -78,7 +79,7 @@ async function scrapeNaverPlaceReviews(
       void route.continue();
     });
 
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 15000 });
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: timeoutMs });
 
     // 리뷰 영역이 로드될 때까지 대기
     await page.waitForSelector('li.place_apply_pui, [class*="pui__"]', { timeout: 5000 }).catch(() => {});
@@ -206,6 +207,18 @@ async function main(): Promise<void> {
   const sidos = parseSidoCodes(getArgValue(args, '--sido'), ['28']);
   const testMode = hasFlag(args, '--test');
   const dryRun = hasFlag(args, '--dry-run');
+  const slow = hasFlag(args, '--slow');
+  const skipExisting = hasFlag(args, '--skip-existing');
+  const limitArg = getArgValue(args, '--limit');
+  const offsetArg = getArgValue(args, '--offset');
+  const limit = limitArg ? Number.parseInt(limitArg, 10) : 0;
+  const offset = offsetArg ? Number.parseInt(offsetArg, 10) : 0;
+
+  // 보수적 모드 (IP 차단 회피용)
+  const BATCH_SIZE = slow ? 1 : 3;
+  const TIMEOUT_MS = slow ? 25000 : 15000;
+  const MIN_DELAY = slow ? 5000 : 2000;
+  const MAX_DELAY = slow ? 10000 : 5000;
 
   const mapping = loadPlatformMapping('naver_place');
   if (mapping.size === 0) {
@@ -216,17 +229,42 @@ async function main(): Promise<void> {
   const kindergartens = loadKindergartens() as Array<KindergartenEntry & { lat: number | null; lng: number | null }>;
   const kindergartenMap = new Map(kindergartens.map((k) => [k.kindercode, k]));
 
+  // 이미 수집된 유치원 ID 집합 (skip-existing 용)
+  const existingKindergartenIds = new Set<string>();
+  if (skipExisting) {
+    for (const sidoCode of sidos) {
+      const sidoReviewPath = path.resolve(`public/data/reviews/${sidoCode}.json`);
+      if (!fs.existsSync(sidoReviewPath)) continue;
+      const sidoData: ReviewsData = JSON.parse(fs.readFileSync(sidoReviewPath, 'utf-8'));
+      for (const [kgId, reviews] of Object.entries(sidoData.reviews)) {
+        if (reviews.some((r) => r.source === 'naver_place')) {
+          existingKindergartenIds.add(kgId);
+        }
+      }
+    }
+    writeLine(`기존 수집 유치원: ${existingKindergartenIds.size}개 (스킵)`);
+  }
+
   // 대상 시도에 해당하는 매핑된 유치원 필터링
   const targets: Array<{ kindercode: string; placeId: string; kindergarten: KindergartenEntry }> = [];
   for (const [kindercode, placeId] of mapping) {
     const kindergarten = kindergartenMap.get(kindercode);
     if (!kindergarten) continue;
     if (!sidos.includes(kindergarten.sido_code)) continue;
+    if (skipExisting && existingKindergartenIds.has(kindercode)) continue;
     targets.push({ kindercode, placeId, kindergarten });
   }
 
   if (testMode) {
     targets.splice(5);
+  }
+
+  // offset / limit 적용
+  if (offset > 0 || limit > 0) {
+    const end = limit > 0 ? offset + limit : targets.length;
+    targets.splice(0, offset);
+    targets.splice(limit > 0 ? limit : targets.length);
+    writeLine(`범위: offset ${offset}, limit ${limit || '전체'} → ${targets.length}개`);
   }
 
   writeLine(`대상: ${targets.length}개 유치원 (시도: ${sidos.join(',')})`);
@@ -246,13 +284,12 @@ async function main(): Promise<void> {
   const collectedReviews: Map<string, ReviewLink[]> = new Map();
   let totalCollected = 0;
   let placesWithReviews = 0;
-
-  const BATCH_SIZE = 3;
+  let consecutiveErrors = 0;
 
   for (let i = 0; i < targets.length; i += BATCH_SIZE) {
     const batch = targets.slice(i, i + BATCH_SIZE);
 
-    if ((i + 1) % 30 === 0 || i === 0) {
+    if ((i + 1) % 10 === 0 || i === 0) {
       writeLine(
         `[${i + 1}/${targets.length}] 수집 중... (리뷰: ${totalCollected}, 유치원: ${placesWithReviews})`
       );
@@ -261,11 +298,24 @@ async function main(): Promise<void> {
     const batchResults = await Promise.all(
       batch.map(async (target) => {
         const page = await context.newPage();
-        const reviews = await scrapeNaverPlaceReviews(page, target.placeId);
+        const reviews = await scrapeNaverPlaceReviews(page, target.placeId, TIMEOUT_MS);
         await page.close();
         return { target, reviews };
       })
     );
+
+    // 연속 에러 감지: 모두 실패한 배치가 연달아 발생하면 백오프
+    const batchHasResult = batchResults.some((r) => r.reviews.length > 0);
+    if (!batchHasResult && batch.length > 0) {
+      consecutiveErrors++;
+      if (consecutiveErrors >= 5) {
+        writeLine(`  [WARN] 연속 ${consecutiveErrors}배치 실패 — 60초 백오프`);
+        await delay(60000);
+        consecutiveErrors = 0;
+      }
+    } else {
+      consecutiveErrors = 0;
+    }
 
     for (const { target, reviews } of batchResults) {
       if (reviews.length === 0) continue;
@@ -284,7 +334,7 @@ async function main(): Promise<void> {
       }
     }
 
-    await randomDelay(2000, 5000);
+    await randomDelay(MIN_DELAY, MAX_DELAY);
   }
 
   await browser.close();
