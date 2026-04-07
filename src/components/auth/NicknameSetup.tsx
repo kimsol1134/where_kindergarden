@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { User, Loader2 } from 'lucide-react';
+import User from 'lucide-react/dist/esm/icons/user';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import { useAuthStore } from '@/stores/authStore';
 
 interface NicknameSetupProps {

@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
-import { AlertCircle, RefreshCw, Home } from 'lucide-react';
+import AlertCircle from 'lucide-react/dist/esm/icons/alert-circle';
+import RefreshCw from 'lucide-react/dist/esm/icons/refresh-cw';
+import Home from 'lucide-react/dist/esm/icons/home';
 import Link from 'next/link';
 
 interface ErrorPageProps {

@@ -22,9 +22,11 @@ import type {
 import { buildTextExcerpt, extractReadableTextFromHtml } from '../src/lib/utils/review-html';
 import {
   assessReviewBody,
+  classifyReviewWithoutBody,
   assessReviewFallback,
   assessReviewMetadata,
   resolveUncertainWithLlm,
+  resolveUncertainReviewStatus,
   summarizeVerificationStatuses,
 } from '../src/lib/utils/review-verification';
 import {
@@ -45,8 +47,10 @@ import {
 } from '../src/lib/utils/review-verification-incremental';
 import { applyReviewVerificationDecisions } from './lib/review-verification-apply';
 import {
+  buildReviewCollisionResolutionMap,
   buildCoreNameFrequencyMap,
   buildSidoTag,
+  DEFAULT_REVIEW_SIDO_CODES,
   ensureDirectory,
   loadKindergartens,
   loadTargetReviewEntries,
@@ -129,6 +133,8 @@ interface PreparedReviewItem {
   candidateReason: IncrementalReviewDecisionReason;
   reusedFromState: boolean;
   reusableStateEntry: ReviewVerificationStateEntry | null;
+  collisionReason: string | null;
+  collisionShouldRemove: boolean;
 }
 
 interface BootstrapStateResult {
@@ -547,6 +553,7 @@ function finalizeBodyDecision(
   let finalStatus: ReviewVerificationStatus;
   let finalConfidence: number;
   let finalReasons: string[];
+  let finalSignals = record.metadata.signals;
 
   if (bodyResult && bodyResult.status === 'success') {
     const bodyAssessment = assessReviewBody(
@@ -561,6 +568,7 @@ function finalizeBodyDecision(
     finalStatus = bodyAssessment.finalStatus;
     finalConfidence = bodyAssessment.confidence;
     finalReasons = bodyAssessment.reasons;
+    finalSignals = bodyAssessment.signals;
 
     if (finalStatus === 'uncertain') {
       const fallbackAssessment = assessReviewFallback(
@@ -575,14 +583,30 @@ function finalizeBodyDecision(
         finalStatus = fallbackAssessment.finalStatus;
         finalConfidence = fallbackAssessment.confidence;
         finalReasons = fallbackAssessment.reasons;
+        finalSignals = fallbackAssessment.signals;
       }
     }
   } else {
-    finalStatus = 'uncertain';
-    finalConfidence = 0.3;
+    const fallbackAssessment = classifyReviewWithoutBody(
+      {
+        title: record.title,
+        snippet: record.snippet,
+        source: record.source,
+        sourceName: record.sourceName,
+        accessMode: record.accessMode,
+        evidenceType: record.evidenceType,
+        structuredFields: record.structuredFields,
+        rating: record.rating,
+      },
+      context
+    );
+
+    finalStatus = fallbackAssessment.finalStatus;
+    finalConfidence = fallbackAssessment.confidence;
     finalReasons = bodyResult?.error
-      ? [`본문 스크래핑 실패: ${bodyResult.error}`]
-      : ['본문 스크래핑 결과가 없어 자동 판정 보류'];
+      ? [`본문 스크래핑 실패: ${bodyResult.error}`, ...fallbackAssessment.reasons]
+      : fallbackAssessment.reasons;
+    finalSignals = fallbackAssessment.signals;
   }
 
   if (llmDecision) {
@@ -600,6 +624,20 @@ function finalizeBodyDecision(
         `LLM 검토 반영: ${llmDecision.reason}`,
       ];
     }
+  }
+
+  const uncertainResolution = resolveUncertainReviewStatus(
+    finalStatus,
+    finalSignals,
+    finalReasons
+  );
+  if (uncertainResolution.status !== finalStatus) {
+    finalStatus = uncertainResolution.status;
+    finalConfidence = Math.max(finalConfidence, uncertainResolution.confidence);
+    finalReasons = [
+      ...finalReasons,
+      uncertainResolution.reason ?? 'uncertain 상태를 shipped-safe 상태로 정리',
+    ];
   }
 
   return {
@@ -627,9 +665,33 @@ function buildRunReportItem(record: FinalizedReviewRecord): ReviewVerificationRu
   };
 }
 
+function applyCollisionOverride(
+  status: ReviewVerificationStatus,
+  confidence: number,
+  reasons: string[],
+  shouldRemove: boolean,
+  reason: string | null
+): {
+  status: ReviewVerificationStatus;
+  confidence: number;
+  reasons: string[];
+} {
+  if (!shouldRemove || !reason) {
+    return { status, confidence, reasons };
+  }
+
+  return {
+    status: 'mismatch',
+    confidence: Math.max(confidence, 0.94),
+    reasons: [...reasons, reason],
+  };
+}
+
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
-  const sidos = parseSidoCodes(getArgValue(args, '--sido'), ['11', '41']);
+  const sidos = parseSidoCodes(getArgValue(args, '--sido'), [
+    ...DEFAULT_REVIEW_SIDO_CODES,
+  ]);
   const outputDir = path.resolve(
     getArgValue(args, '--output-dir') ?? 'scripts/data-output'
   );
@@ -665,6 +727,10 @@ async function main(): Promise<void> {
   if (limit > 0) {
     loadedEntries = loadedEntries.slice(0, limit);
   }
+  const collisionResolutionMap = buildReviewCollisionResolutionMap(
+    loadedEntries,
+    coreNameFrequencies
+  );
   const entryMapByReviewId = buildEntryMapByReviewId(loadedEntries);
 
   const stateBootstrap = loadVerificationState(paths.statePath, paths.resultsPath);
@@ -719,6 +785,9 @@ async function main(): Promise<void> {
           },
         }
       : assessReviewMetadata(entry.review, context);
+    const currentWithoutBodyStatus = isStructurallyLinked
+      ? 'verified'
+      : classifyReviewWithoutBody(entry.review, context).finalStatus;
     const action = decideIncrementalReviewAction(stateLookup, {
       reviewId: entry.review.id,
       kindergartenId: entry.kindergarten.kindercode,
@@ -726,6 +795,8 @@ async function main(): Promise<void> {
       title: entry.review.title,
       snippet: entry.review.snippet,
     });
+    const collisionResolution =
+      collisionResolutionMap.get(entry.review.id) ?? null;
 
     const metadataRecord: IncrementalMetadataRecord = {
       reviewId: entry.review.id,
@@ -738,8 +809,19 @@ async function main(): Promise<void> {
       title: entry.review.title,
       snippet: entry.review.snippet,
       source: entry.review.source,
+      sourceName: entry.review.sourceName,
       date: entry.review.date,
       collectedAt: entry.review.collectedAt,
+      accessMode: entry.review.accessMode,
+      evidenceType: entry.review.evidenceType,
+      extractionMethod: entry.review.extractionMethod,
+      evidenceChecksum: entry.review.evidenceChecksum,
+      rating: entry.review.rating,
+      structuredFields: entry.review.structuredFields,
+      evidence: entry.review.evidence,
+      approvalStatus: entry.review.approvalStatus,
+      approvedAt: entry.review.approvedAt,
+      approvedBy: entry.review.approvedBy,
       metadata,
       normalizedUrl: action.normalizedUrl,
       reviewFingerprint: action.reviewFingerprint,
@@ -757,11 +839,20 @@ async function main(): Promise<void> {
       previousStatus: action.previousStatus,
       matchedBy: action.matchedBy,
       candidateReason: action.reason,
-      reusedFromState: !action.needsEvaluation,
+      reusedFromState:
+        !action.needsEvaluation &&
+        !(collisionResolution?.shouldRemove ?? false) &&
+        currentWithoutBodyStatus === 'verified',
       reusableStateEntry: action.matchedEntry,
+      collisionReason: collisionResolution?.reason ?? null,
+      collisionShouldRemove: collisionResolution?.shouldRemove ?? false,
     });
 
-    if (action.needsEvaluation && metadata.decision === 'needs_body_check') {
+    if (
+      action.needsEvaluation &&
+      metadata.decision === 'needs_body_check' &&
+      !(collisionResolution?.shouldRemove ?? false)
+    ) {
       const cacheEntry = findReusableBodyCacheEntry(
         bodyCacheLookup,
         action.normalizedUrl,
@@ -906,11 +997,18 @@ async function main(): Promise<void> {
     }
 
     if (prepared.metadataRecord.metadata.decision === 'verified') {
+      const collisionAdjusted = applyCollisionOverride(
+        'verified',
+        prepared.metadataRecord.metadata.confidence,
+        prepared.metadataRecord.metadata.reasons,
+        prepared.collisionShouldRemove,
+        prepared.collisionReason
+      );
       const finalizedRecord: FinalizedReviewRecord = {
         ...prepared.metadataRecord,
-        finalStatus: 'verified',
-        finalConfidence: prepared.metadataRecord.metadata.confidence,
-        finalReasons: prepared.metadataRecord.metadata.reasons,
+        finalStatus: collisionAdjusted.status,
+        finalConfidence: collisionAdjusted.confidence,
+        finalReasons: collisionAdjusted.reasons,
         reviewedAt,
         reusedFromState: false,
       };
@@ -936,11 +1034,18 @@ async function main(): Promise<void> {
 
     if (prepared.metadataRecord.metadata.decision === 'reject') {
       const finalStatus = prepared.metadataRecord.metadata.preliminaryStatus;
+      const collisionAdjusted = applyCollisionOverride(
+        finalStatus,
+        prepared.metadataRecord.metadata.confidence,
+        prepared.metadataRecord.metadata.reasons,
+        prepared.collisionShouldRemove,
+        prepared.collisionReason
+      );
       const finalizedRecord: FinalizedReviewRecord = {
         ...prepared.metadataRecord,
-        finalStatus,
-        finalConfidence: prepared.metadataRecord.metadata.confidence,
-        finalReasons: prepared.metadataRecord.metadata.reasons,
+        finalStatus: collisionAdjusted.status,
+        finalConfidence: collisionAdjusted.confidence,
+        finalReasons: collisionAdjusted.reasons,
         reviewedAt,
         reusedFromState: false,
       };
@@ -1001,9 +1106,19 @@ async function main(): Promise<void> {
       llmThreshold,
       context
     );
+    const collisionAdjusted = applyCollisionOverride(
+      finalDecision.finalStatus,
+      finalDecision.finalConfidence,
+      finalDecision.finalReasons,
+      prepared.collisionShouldRemove,
+      prepared.collisionReason
+    );
     const finalizedRecord: FinalizedReviewRecord = {
       ...prepared.metadataRecord,
       ...finalDecision,
+      finalStatus: collisionAdjusted.status,
+      finalConfidence: collisionAdjusted.confidence,
+      finalReasons: collisionAdjusted.reasons,
       reviewedAt,
       reusedFromState: false,
     };

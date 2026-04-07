@@ -172,31 +172,9 @@ Supabase 대시보드에서 확인하세요:
 https://supabase.com/dashboard/project/qektqbhrfynnwixsewqs/editor/table/review_suggestions
       `.trim();
 
-    // Use Supabase Edge Function or external email service
-    // For now, we'll use a simple webhook approach with Supabase's built-in email
-    // You can replace this with your preferred email service (SendGrid, Resend, etc.)
-    
-    // Option: Use Supabase's database webhook to trigger email
-    // For MVP, we'll log the notification and use Supabase's built-in notifications
-    console.log(`📧 Email notification to ${ADMIN_EMAIL}:`);
-    console.log(`Subject: ${subject}`);
-    console.log(`Body: ${bodyText}`);
-    
-    // TODO: Integrate with actual email service
-    // Example with Resend:
-    // await fetch('https://api.resend.com/emails', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     from: 'noreply@where-kindergarden.com',
-    //     to: ADMIN_EMAIL,
-    //     subject,
-    //     text: bodyText,
-    //   }),
-    // });
+    // Email integration placeholder — connect to email service (e.g. Resend) when ready
+    void subject;
+    void bodyText;
     
   } catch (emailError) {
     // Don't fail the request if email fails

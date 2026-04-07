@@ -31,8 +31,8 @@ import { ReviewPreview } from '@/components/review/ReviewPreview';
 function ChartSkeleton() {
   return (
     <div className="flex flex-col items-center justify-center h-[200px]">
-      <Loader2 className="w-6 h-6 animate-spin text-gray-300" />
-      <span className="text-xs text-gray-400 mt-2">정보를 불러오는 중...</span>
+      <Loader2 className="w-6 h-6 animate-spin text-[var(--brand-ink-soft)]/60" />
+      <span className="text-xs text-[var(--brand-ink-soft)]/60 mt-2">정보를 불러오는 중...</span>
     </div>
   );
 }
@@ -48,9 +48,9 @@ const RatioBarChart = dynamic(
 );
 
 const TYPE_STYLES = {
-  public: { label: '국공립', className: 'text-emerald-600 bg-emerald-50' },
+  public: { label: '국공립', className: 'text-[var(--brand-leaf)] bg-[rgba(78,169,109,0.06)]' },
   private: { label: '사립', className: 'text-indigo-600 bg-indigo-50' },
-  home: { label: '가정', className: 'text-gray-600 bg-gray-100' },
+  home: { label: '가정', className: 'text-[var(--brand-ink-soft)] bg-[var(--brand-mist-strong)]' },
 } as const;
 
 const MEAL_LABELS = {
@@ -92,12 +92,12 @@ function InfoRow({
   valueClassName?: string;
 }) {
   return (
-    <div className="flex items-center justify-between py-2.5 border-b border-gray-100 last:border-b-0">
-      <span className="text-sm text-gray-600 flex items-center gap-2">
+    <div className="flex items-center justify-between py-2.5 border-b border-[rgba(203,188,174,0.12)] last:border-b-0">
+      <span className="text-sm text-[var(--brand-ink-soft)] flex items-center gap-2">
         {icon}
         {label}
       </span>
-      <span className={`text-sm font-medium ${valueClassName ?? 'text-gray-900'}`}>
+      <span className={`text-sm font-medium ${valueClassName ?? 'text-[var(--brand-ink)]'}`}>
         {value}
       </span>
     </div>
@@ -226,30 +226,30 @@ export function KindergartenDetailPanel({
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b-0 bg-white/80 backdrop-blur-md sticky top-0 z-10">
-          <h2 className="text-lg font-bold text-gray-900">상세 정보</h2>
+          <h2 className="text-lg font-bold text-[var(--brand-ink)]">상세 정보</h2>
           <button
             onClick={onClose}
-            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-gray-100 text-gray-500 transition-colors"
+            className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-[var(--brand-mist-strong)] text-[var(--brand-ink-soft)] transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Tab Bar */}
-        <div className="flex border-b border-gray-200 bg-white sticky top-[60px] z-10" role="tablist">
+        <div className="flex border-b border-[rgba(203,188,174,0.18)] bg-white sticky top-[60px] z-10" role="tablist">
           <button
             onClick={() => setActiveTab('info')}
             role="tab"
             aria-selected={activeTab === 'info'}
             className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative ${
               activeTab === 'info'
-                ? 'text-emerald-600'
-                : 'text-gray-500 hover:text-gray-700'
+                ? 'text-[var(--brand-leaf)]'
+                : 'text-[var(--brand-ink-soft)] hover:text-[var(--brand-ink)]'
             }`}
           >
             기본정보
             {activeTab === 'info' && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--brand-leaf)]" />
             )}
           </button>
           <button
@@ -258,8 +258,8 @@ export function KindergartenDetailPanel({
             aria-selected={activeTab === 'reviews'}
             className={`flex-1 py-4 text-sm font-medium text-center transition-colors relative flex items-center justify-center gap-1.5 ${
               activeTab === 'reviews'
-                ? 'text-emerald-600'
-                : 'text-gray-500 hover:text-gray-700'
+                ? 'text-[var(--brand-leaf)]'
+                : 'text-[var(--brand-ink-soft)] hover:text-[var(--brand-ink)]'
             }`}
           >
             <Newspaper className="w-4 h-4" />
@@ -267,46 +267,46 @@ export function KindergartenDetailPanel({
             {reviewCount > 0 && (
               <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold ${
                 activeTab === 'reviews'
-                  ? 'bg-emerald-100 text-emerald-700'
+                  ? 'bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf-deep)]'
                   : 'bg-amber-500 text-white'
               }`}>
                 {reviewCount}
               </span>
             )}
             {activeTab === 'reviews' && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-emerald-500" />
+              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--brand-leaf)]" />
             )}
           </button>
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto bg-gray-50" role="tabpanel">
+        <div className="flex-1 overflow-y-auto bg-[var(--brand-mist)]" role="tabpanel">
           {activeTab === 'reviews' ? (
             <ReviewLinkList kindergartenId={kindergarten.kindercode} />
           ) : (
           <>
           {/* 기관 기본 정보 */}
-          <div className="p-6 bg-white border-b border-gray-100 mb-2">
+          <div className="p-6 bg-white border-b border-[rgba(203,188,174,0.12)] mb-2">
             <div className="flex items-center gap-2 mb-2">
               <span className={`text-xs font-bold px-2 py-1 rounded ${typeStyle.className}`}>
                 {typeStyle.label}
               </span>
-              <span className="text-xs text-gray-500">{kindergarten.distance.toFixed(1)}km</span>
+              <span className="text-xs text-[var(--brand-ink-soft)]">{kindergarten.distance.toFixed(1)}km</span>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{kindergarten.name}</h3>
+            <h3 className="text-2xl font-bold text-[var(--brand-ink)] mb-4">{kindergarten.name}</h3>
 
             <div className="space-y-2.5">
-              <div className="flex items-start gap-3 text-sm text-gray-600">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-gray-400" />
+              <div className="flex items-start gap-3 text-sm text-[var(--brand-ink-soft)]">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-[var(--brand-ink-soft)]/60" />
                 <span>{kindergarten.address}</span>
               </div>
 
               {kindergarten.phone && (
                 <div className="flex items-center gap-3 text-sm">
-                  <Phone className="w-4 h-4 text-gray-400" />
+                  <Phone className="w-4 h-4 text-[var(--brand-ink-soft)]/60" />
                   <a
                     href={`tel:${kindergarten.phone}`}
-                    className="text-gray-900 hover:text-emerald-600 font-medium transition-colors"
+                    className="text-[var(--brand-ink)] hover:text-[var(--brand-leaf)] font-medium transition-colors"
                   >
                     {kindergarten.phone}
                   </a>
@@ -315,12 +315,12 @@ export function KindergartenDetailPanel({
 
               {kindergarten.homepage && (
                 <div className="flex items-center gap-3 text-sm">
-                  <Globe className="w-4 h-4 text-gray-400" />
+                  <Globe className="w-4 h-4 text-[var(--brand-ink-soft)]/60" />
                   <a
                     href={kindergarten.homepage.startsWith('http') ? kindergarten.homepage : `http://${kindergarten.homepage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-600 hover:underline font-medium"
+                    className="text-[var(--brand-leaf)] hover:underline font-medium"
                   >
                     유치원 홈페이지
                   </a>
@@ -328,12 +328,12 @@ export function KindergartenDetailPanel({
               )}
               
               <div className="flex flex-wrap gap-2 pt-1">
-                <div className="flex items-center gap-2 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+                <div className="flex items-center gap-2 text-xs text-[var(--brand-ink-soft)] bg-[var(--brand-mist)] px-2 py-1 rounded">
                   <Calendar className="w-3.5 h-3.5" />
                   설립일: {formatEstablishDate(kindergarten.establishDate)}
                 </div>
                 {kindergarten.operationHours && (
-                  <div className="flex items-center gap-2 text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+                  <div className="flex items-center gap-2 text-xs text-[var(--brand-ink-soft)] bg-[var(--brand-mist)] px-2 py-1 rounded">
                     <Clock className="w-3.5 h-3.5" />
                     {kindergarten.operationHours}
                   </div>
@@ -343,9 +343,9 @@ export function KindergartenDetailPanel({
           </div>
 
           {/* 학급/아동 시각화 */}
-          <div className="p-6 bg-white border-b border-gray-100 mb-2">
-            <h4 className="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <span className="w-1 h-6 bg-emerald-500 rounded-full"></span>
+          <div className="p-6 bg-white border-b border-[rgba(203,188,174,0.12)] mb-2">
+            <h4 className="text-lg font-bold text-[var(--brand-ink)] mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-[var(--brand-leaf)] rounded-full"></span>
               학급/아동
             </h4>
             
@@ -391,35 +391,35 @@ export function KindergartenDetailPanel({
             {(() => {
               const enrollmentPercent = (kindergarten.currentCount / Math.max(1, kindergarten.capacity)) * 100;
               return (
-            <div className="mt-6 p-4 bg-gray-50 rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="mt-6 p-4 bg-[var(--brand-mist)] rounded-xl flex flex-col md:flex-row items-center justify-between gap-4">
                <div className="flex items-center gap-8">
                  <div className="text-center">
-                   <div className="text-sm text-gray-500 mb-1">전체 정원</div>
-                   <div className="text-xl font-bold text-gray-900">{kindergarten.capacity}명</div>
+                   <div className="text-sm text-[var(--brand-ink-soft)] mb-1">전체 정원</div>
+                   <div className="text-xl font-bold text-[var(--brand-ink)]">{kindergarten.capacity}명</div>
                  </div>
-                 <div className="w-px h-8 bg-gray-300"></div>
+                 <div className="w-px h-8 bg-[rgba(203,188,174,0.24)]"></div>
                  <div className="text-center">
-                   <div className="text-sm text-gray-500 mb-1">현재 원아수</div>
-                   <div className="text-xl font-bold text-emerald-600">{kindergarten.currentCount}명</div>
+                   <div className="text-sm text-[var(--brand-ink-soft)] mb-1">현재 원아수</div>
+                   <div className="text-xl font-bold text-[var(--brand-leaf)]">{kindergarten.currentCount}명</div>
                  </div>
                </div>
 
                <div className="flex-1 w-full md:w-auto max-w-xs">
                   <div className="flex justify-between text-xs mb-1.5">
-                    <span className="text-gray-600">모집 현황</span>
-                    <span className="font-bold text-emerald-700">
+                    <span className="text-[var(--brand-ink-soft)]">모집 현황</span>
+                    <span className="font-bold text-[var(--brand-leaf-deep)]">
                       {Math.round(enrollmentPercent)}%
                     </span>
                   </div>
-                  <div className="h-2.5 bg-gray-200 rounded-full overflow-hidden">
+                  <div className="h-2.5 bg-[rgba(203,188,174,0.18)] rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-emerald-500 rounded-full transition-all"
+                      className="h-full bg-[var(--brand-leaf)] rounded-full transition-all"
                       style={{
                         width: `${Math.min(100, enrollmentPercent)}%`,
                       }}
                     />
                   </div>
-                  <div className="text-right text-xs text-gray-400 mt-1">
+                  <div className="text-right text-xs text-[var(--brand-ink-soft)]/60 mt-1">
                     여유 정원 {Math.max(0, kindergarten.capacity - kindergarten.currentCount)}명
                   </div>
                </div>
@@ -470,9 +470,9 @@ export function KindergartenDetailPanel({
           </div>
 
           {/* 교사 현황 시각화 */}
-          <div className="p-6 bg-white border-b border-gray-100 mb-2">
-            <h4 className="text-lg font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <span className="w-1 h-6 bg-emerald-500 rounded-full"></span>
+          <div className="p-6 bg-white border-b border-[rgba(203,188,174,0.12)] mb-2">
+            <h4 className="text-lg font-bold text-[var(--brand-ink)] mb-6 flex items-center gap-2">
+              <span className="w-1 h-6 bg-[var(--brand-leaf)] rounded-full"></span>
               교사현황
             </h4>
             
@@ -494,9 +494,9 @@ export function KindergartenDetailPanel({
           </div>
 
           {/* 시설 정보 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <Building className="w-4 h-4 text-emerald-600" />
+          <div className="p-5 border-b border-[rgba(203,188,174,0.12)]">
+            <h4 className="text-sm font-bold text-[var(--brand-ink)] mb-3 flex items-center gap-2">
+              <Building className="w-4 h-4 text-[var(--brand-leaf)]" />
               시설 정보
             </h4>
 
@@ -504,12 +504,12 @@ export function KindergartenDetailPanel({
               <InfoRow
                 label="총 학급 수"
                 value={`${totalClassCount}학급`}
-                icon={<SquareStack className="w-4 h-4 text-gray-400" />}
+                icon={<SquareStack className="w-4 h-4 text-[var(--brand-ink-soft)]/60" />}
               />
               <InfoRow
                 label="1인당 면적"
                 value={`${kindergarten.areaPerChild.toFixed(1)} ㎡`}
-                icon={<Home className="w-4 h-4 text-gray-400" />}
+                icon={<Home className="w-4 h-4 text-[var(--brand-ink-soft)]/60" />}
               />
               <InfoRow
                 label="교실 면적"
@@ -518,7 +518,7 @@ export function KindergartenDetailPanel({
               <InfoRow
                 label="실내놀이터"
                 value={kindergarten.indoorPlaygroundArea > 0 ? `${kindergarten.indoorPlaygroundArea.toFixed(1)} ㎡` : '없음'}
-                valueClassName={kindergarten.indoorPlaygroundArea > 0 ? 'text-emerald-600' : 'text-gray-400'}
+                valueClassName={kindergarten.indoorPlaygroundArea > 0 ? 'text-[var(--brand-leaf)]' : 'text-[var(--brand-ink-soft)]/60'}
               />
               <InfoRow
                 label="실외놀이터"
@@ -530,8 +530,8 @@ export function KindergartenDetailPanel({
                 icon={<Leaf className="w-4 h-4 text-green-500" />}
                 valueClassName={
                   kindergarten.hasPlayground && kindergarten.outdoorPlaygroundArea > 0
-                    ? 'text-emerald-600'
-                    : 'text-gray-400'
+                    ? 'text-[var(--brand-leaf)]'
+                    : 'text-[var(--brand-ink-soft)]/60'
                 }
               />
               {kindergarten.buildingYear && (
@@ -550,9 +550,9 @@ export function KindergartenDetailPanel({
           </div>
 
           {/* 운영 정보 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <Clock className="w-4 h-4 text-emerald-600" />
+          <div className="p-5 border-b border-[rgba(203,188,174,0.12)]">
+            <h4 className="text-sm font-bold text-[var(--brand-ink)] mb-3 flex items-center gap-2">
+              <Clock className="w-4 h-4 text-[var(--brand-leaf)]" />
               운영 정보
             </h4>
             <div>
@@ -560,30 +560,30 @@ export function KindergartenDetailPanel({
                 label="셔틀버스"
                 value={kindergarten.hasBus ? `운행 (${kindergarten.busCount}대)` : '미운행'}
                 icon={<Bus className="w-4 h-4 text-blue-500" />}
-                valueClassName={kindergarten.hasBus ? 'text-emerald-600' : 'text-gray-400'}
+                valueClassName={kindergarten.hasBus ? 'text-[var(--brand-leaf)]' : 'text-[var(--brand-ink-soft)]/60'}
               />
               <InfoRow
                 label="방과후 과정"
                 value={kindergarten.hasAfterSchool ? '운영' : '미운영'}
-                valueClassName={kindergarten.hasAfterSchool ? 'text-emerald-600' : 'text-gray-400'}
+                valueClassName={kindergarten.hasAfterSchool ? 'text-[var(--brand-leaf)]' : 'text-[var(--brand-ink-soft)]/60'}
               />
               <InfoRow
                 label="급식 운영"
                 value={MEAL_LABELS[kindergarten.mealType]}
                 icon={<Utensils className="w-4 h-4 text-orange-500" />}
-                valueClassName={kindergarten.mealType !== 'none' ? 'text-emerald-600' : 'text-gray-400'}
+                valueClassName={kindergarten.mealType !== 'none' ? 'text-[var(--brand-leaf)]' : 'text-[var(--brand-ink-soft)]/60'}
               />
             </div>
           </div>
 
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <UserCheck className="w-4 h-4 text-emerald-600" />
+          <div className="p-5 border-b border-[rgba(203,188,174,0.12)]">
+            <h4 className="text-sm font-bold text-[var(--brand-ink)] mb-3 flex items-center gap-2">
+              <UserCheck className="w-4 h-4 text-[var(--brand-leaf)]" />
               공식 결원정보
             </h4>
 
             {isVacancyLoading && !isVacancyLoaded ? (
-              <div className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-5 text-sm text-gray-500">
+              <div className="rounded-xl border border-[rgba(203,188,174,0.18)] bg-[var(--brand-mist)] px-4 py-5 text-sm text-[var(--brand-ink-soft)]">
                 빈 자리 확인 중...
               </div>
             ) : vacancyError ? (
@@ -616,12 +616,12 @@ export function KindergartenDetailPanel({
                     {vacancySummary.detail.map((detail) => (
                       <div
                         key={`${detail.rowNo}-${detail.age}-${detail.course}`}
-                        className="rounded-xl border border-gray-100 bg-white px-4 py-3"
+                        className="rounded-xl border border-[rgba(203,188,174,0.12)] bg-white px-4 py-3"
                       >
                         <div className="flex items-center justify-between gap-3">
                           <div>
-                            <div className="text-sm font-semibold text-gray-900">{detail.age}</div>
-                            <div className="text-xs text-gray-500 mt-1">{detail.course}</div>
+                            <div className="text-sm font-semibold text-[var(--brand-ink)]">{detail.age}</div>
+                            <div className="text-xs text-[var(--brand-ink-soft)] mt-1">{detail.course}</div>
                           </div>
                           <div className="text-sm font-bold text-rose-600">
                             결원 {detail.vacancyCount}명
@@ -633,22 +633,22 @@ export function KindergartenDetailPanel({
                 )}
               </div>
             ) : vacancySummary ? (
-              <div className="rounded-xl border border-emerald-100 bg-emerald-50 px-4 py-5">
-                <div className="text-sm font-semibold text-emerald-700">
+              <div className="rounded-xl border border-[rgba(78,169,109,0.12)] bg-[rgba(78,169,109,0.06)] px-4 py-5">
+                <div className="text-sm font-semibold text-[var(--brand-leaf-deep)]">
                   현재 빈 자리가 없어요
                 </div>
-                <div className="text-xs text-emerald-600 mt-1">
+                <div className="text-xs text-[var(--brand-leaf)] mt-1">
                   {formattedVacancyUpdatedAt
                     ? `최종 변경일 ${formattedVacancyUpdatedAt}`
                     : '이 유치원에 현재 빈 자리가 없어요'}
                 </div>
               </div>
             ) : (
-              <div className="rounded-xl border border-gray-200 bg-gray-50 px-4 py-5">
+              <div className="rounded-xl border border-[rgba(203,188,174,0.18)] bg-[var(--brand-mist)] px-4 py-5">
                 <div className="text-sm font-semibold text-gray-700">
                   공식 결원 등록 정보가 없습니다.
                 </div>
-                <div className="text-xs text-gray-500 mt-1">
+                <div className="text-xs text-[var(--brand-ink-soft)] mt-1">
                   빈 자리 정보를 제공하지 않는 유치원이에요. 직접 전화로 확인해보세요.
                 </div>
               </div>
@@ -656,29 +656,29 @@ export function KindergartenDetailPanel({
           </div>
 
           {/* 안전 정보 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <Shield className="w-4 h-4 text-emerald-600" />
+          <div className="p-5 border-b border-[rgba(203,188,174,0.12)]">
+            <h4 className="text-sm font-bold text-[var(--brand-ink)] mb-3 flex items-center gap-2">
+              <Shield className="w-4 h-4 text-[var(--brand-leaf)]" />
               안전 정보
             </h4>
-            <div className="bg-blue-50 rounded-lg p-4 flex items-center justify-between">
+            <div className="bg-[var(--brand-mist)] rounded-lg p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-blue-600" />
+                <div className="w-10 h-10 bg-[rgba(78,169,109,0.12)] rounded-full flex items-center justify-center">
+                  <Shield className="w-5 h-5 text-[var(--brand-leaf)]" />
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-gray-900">CCTV 설치</div>
-                  <div className="text-xs text-gray-500">원내 안전 관리</div>
+                  <div className="text-sm font-medium text-[var(--brand-ink)]">CCTV 설치</div>
+                  <div className="text-xs text-[var(--brand-ink-soft)]">원내 안전 관리</div>
                 </div>
               </div>
-              <div className="text-2xl font-bold text-blue-600">{kindergarten.cctvCount}대</div>
+              <div className="text-2xl font-bold text-[var(--brand-leaf)]">{kindergarten.cctvCount}대</div>
             </div>
           </div>
 
           {/* 교육비용 정보 (외부 링크) - 디자인 개선 */}
-          <div className="p-5 border-b border-gray-100">
-            <h4 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <Coins className="w-4 h-4 text-emerald-600" />
+          <div className="p-5 border-b border-[rgba(203,188,174,0.12)]">
+            <h4 className="text-sm font-bold text-[var(--brand-ink)] mb-3 flex items-center gap-2">
+              <Coins className="w-4 h-4 text-[var(--brand-leaf)]" />
               교육비용 정보
             </h4>
             <a
@@ -689,19 +689,19 @@ export function KindergartenDetailPanel({
               })}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white border border-gray-200 hover:border-emerald-200 hover:shadow-md rounded-xl p-4 transition-all group"
+              className="block bg-white border border-[rgba(203,188,174,0.18)] hover:border-emerald-200 hover:shadow-md rounded-xl p-4 transition-all group"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 bg-gray-50 group-hover:bg-emerald-50 rounded-full flex items-center justify-center transition-colors">
-                    <Coins className="w-5 h-5 text-gray-600 group-hover:text-emerald-600" />
+                  <div className="w-10 h-10 bg-[var(--brand-mist)] group-hover:bg-[rgba(78,169,109,0.06)] rounded-full flex items-center justify-center transition-colors">
+                    <Coins className="w-5 h-5 text-[var(--brand-ink-soft)] group-hover:text-[var(--brand-leaf)]" />
                   </div>
                   <div>
-                    <div className="text-base font-semibold text-gray-900 flex items-center gap-1 group-hover:text-emerald-700 transition-colors">
+                    <div className="text-base font-semibold text-[var(--brand-ink)] flex items-center gap-1 group-hover:text-[var(--brand-leaf-deep)] transition-colors">
                       교육비용 확인하기
-                      <ExternalLink className="w-3.5 h-3.5 text-gray-400 group-hover:text-emerald-500" />
+                      <ExternalLink className="w-3.5 h-3.5 text-[var(--brand-ink-soft)]/60 group-hover:text-emerald-500" />
                     </div>
-                    <div className="text-xs text-gray-500 mt-0.5">
+                    <div className="text-xs text-[var(--brand-ink-soft)] mt-0.5">
                       유치원 알리미에서 상세 확인 가능
                     </div>
                   </div>
@@ -720,7 +720,7 @@ export function KindergartenDetailPanel({
         </div>
 
         {/* Footer - CompareFloatingBar가 있을 때 하단 여백 추가 */}
-        <div className="p-5 border-t border-gray-200 bg-white" style={{ paddingBottom: hasCompareBar ? 'calc(var(--compare-bar-height, 0px) + 8px)' : 'calc(env(safe-area-inset-bottom, 0px) + 20px)' }}>
+        <div className="p-5 border-t border-[rgba(203,188,174,0.18)] bg-white" style={{ paddingBottom: hasCompareBar ? 'calc(var(--compare-bar-height, 0px) + 8px)' : 'calc(env(safe-area-inset-bottom, 0px) + 20px)' }}>
           <div className="flex gap-3">
             {/* 찜하기 버튼 */}
             <button
@@ -728,7 +728,7 @@ export function KindergartenDetailPanel({
               className={`flex-shrink-0 w-14 h-12 rounded-xl flex items-center justify-center transition-all border ${
                 isFav
                   ? 'bg-red-50 border-red-200 text-red-500 hover:bg-red-100'
-                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:bg-gray-100 hover:text-red-500'
+                  : 'bg-[var(--brand-mist)] border-[rgba(203,188,174,0.18)] text-[var(--brand-ink-soft)]/60 hover:bg-[var(--brand-mist-strong)] hover:text-red-500'
               }`}
               title={isFav ? '찜 해제' : '찜하기'}
             >
@@ -741,10 +741,10 @@ export function KindergartenDetailPanel({
               disabled={!isInCompare && !canAddToCompare}
               className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all active:scale-[0.98] ${
                 isInCompare
-                  ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
+                  ? 'bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf-deep)] hover:bg-[rgba(78,169,109,0.18)]'
                   : canAddToCompare
-                  ? 'bg-emerald-500 text-white hover:bg-emerald-600'
-                  : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  ? 'bg-[var(--brand-leaf)] text-white hover:bg-[var(--brand-leaf-deep)]'
+                  : 'bg-[rgba(203,188,174,0.18)] text-[var(--brand-ink-soft)]/60 cursor-not-allowed'
               }`}
             >
               {isInCompare ? '✓ 비교 목록에서 빼기' : '+ 비교 목록에 추가'}

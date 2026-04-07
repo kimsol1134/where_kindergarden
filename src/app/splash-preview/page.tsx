@@ -1,5 +1,8 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+
+export const metadata: Metadata = { robots: { index: false, follow: false } };
 
 export default function SplashPreviewIndex() {
   const previews = [

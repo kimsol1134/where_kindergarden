@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageCircle } from 'lucide-react';
+import MessageCircle from 'lucide-react/dist/esm/icons/message-circle';
 import type { Question } from '@/types/community';
 import { CATEGORY_LABELS } from '@/types/community';
 

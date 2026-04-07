@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-04-05T12:51:03.458Z",
+  "goldPath": "/Users/solkim/Dev/where_kindergarden/scripts/evals/review-quality-gold-v1.jsonl",
+  "reviewsPath": "/Users/solkim/Dev/where_kindergarden/public/data/reviews.json",
+  "totalSamples": 480,
+  "binaryKeepRemove": {
+    "precision": 0.993789,
+    "recall": 1,
+    "f1": 0.996885,
+    "tp": 160,
+    "fp": 1,
+    "fn": 0,
+    "tn": 319
+  },
+  "removePrecision": 1,
+  "perClass": {
+    "verified": {
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "support": 160,
+      "predicted": 160,
+      "correct": 160
+    },
+    "mismatch": {
+      "precision": 1,
+      "recall": 0.716667,
+      "f1": 0.834952,
+      "support": 120,
+      "predicted": 86,
+      "correct": 86
+    },
+    "advertorial": {
+      "precision": 0.96,
+      "recall": 1,
+      "f1": 0.979592,
+      "support": 120,
+      "predicted": 125,
+      "correct": 120
+    },
+    "generic_info": {
+      "precision": 0.733945,
+      "recall": 1,
+      "f1": 0.846561,
+      "support": 80,
+      "predicted": 109,
+      "correct": 80
+    }
+  },
+  "predictedPresentCount": 161,
+  "expectedPresentCount": 160,
+  "contaminationKpis": {
+    "collisionGroupsOverThreshold": 187,
+    "unresolvedCollisionGroups": 0,
+    "unresolvedCollisionRows": 0
+  }
+}

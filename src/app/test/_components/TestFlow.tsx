@@ -1,26 +1,22 @@
 'use client';
 
 import { useState } from 'react';
-import {
-  Users,
-  Palette,
-  BookOpen,
-  Home,
-  Check,
-  GraduationCap,
-  Bus,
-  Users2,
-  Sparkles,
-  Heart,
-  Star,
-  Clock,
-  School,
-  type LucideIcon,
-} from 'lucide-react';
+import Users from 'lucide-react/dist/esm/icons/users';
+import Palette from 'lucide-react/dist/esm/icons/palette';
+import BookOpen from 'lucide-react/dist/esm/icons/book-open';
+import Home from 'lucide-react/dist/esm/icons/home';
+import Check from 'lucide-react/dist/esm/icons/check';
+import GraduationCap from 'lucide-react/dist/esm/icons/graduation-cap';
+import Bus from 'lucide-react/dist/esm/icons/bus';
+import Users2 from 'lucide-react/dist/esm/icons/users-2';
+import Sparkles from 'lucide-react/dist/esm/icons/sparkles';
+import Heart from 'lucide-react/dist/esm/icons/heart';
+import Star from 'lucide-react/dist/esm/icons/star';
+import Clock from 'lucide-react/dist/esm/icons/clock';
+import School from 'lucide-react/dist/esm/icons/school';
+import type { LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { QUESTIONS, RESULTS, calculateResult, ResultType } from '../_lib/testData';
-import { isNative } from '@/lib/utils/platform';
-import { Share } from '@capacitor/share';
 
 type TestPhase = 'intro' | 'questions' | 'result';
 
@@ -133,20 +129,6 @@ export function TestFlow() {
     const shareUrl = 'https://where-kindergarden.vercel.app/test/';
     const shareTitle = `나는 ${result.name}!`;
 
-    if (isNative()) {
-      try {
-        await Share.share({
-          title: shareTitle,
-          text: `${shareTitle} - ${result.description}`,
-          url: shareUrl,
-          dialogTitle: '테스트 결과 공유',
-        });
-      } catch {
-        // 사용자가 공유 취소한 경우
-      }
-      return;
-    }
-
     const kakao = (window as unknown as { Kakao?: {
       isInitialized: () => boolean;
       Share: {
@@ -212,7 +194,7 @@ export function TestFlow() {
         <div className="text-center pt-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-6">
             <BookOpen className="w-4 h-4" />
-            아동심리 전문가 연구 기반
+            교육부 유치원 데이터 기반
           </div>
 
           <h1 className="text-3xl font-bold text-gray-900 mb-4 leading-tight">
@@ -280,7 +262,7 @@ export function TestFlow() {
         </button>
 
         <p className="text-center text-sm text-gray-400">
-          지금까지 <span className="font-semibold text-emerald-600">2,847명</span>이 참여했어요
+          많은 학부모님이 참여하고 있어요
         </p>
       </div>
     );
@@ -485,25 +467,15 @@ export function TestFlow() {
             다시 테스트하기
           </button>
 
-          {isNative() ? (
-            <Link
-              href="/search"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <School className="w-5 h-5" />
-              유치원 찾아보기
-            </Link>
-          ) : (
-            <a
-              href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <School className="w-5 h-5" />
-              앱에서 유치원 찾아보기
-            </a>
-          )}
+          <a
+            href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold py-4 px-4 rounded-xl shadow-lg shadow-emerald-200 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <School className="w-5 h-5" />
+            앱에서 유치원 찾아보기
+          </a>
         </div>
       </div>
     );

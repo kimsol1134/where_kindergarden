@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback, useRef, Suspense } from 'react';
-import { X } from 'lucide-react';
+import X from 'lucide-react/dist/esm/icons/x';
 import { SearchHeader } from '@/components/search/SearchHeader';
 import { KindergartenList } from '@/components/search/KindergartenList';
 import { MapView } from '@/components/search/MapView';

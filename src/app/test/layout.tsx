@@ -3,9 +3,10 @@ import Link from 'next/link';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: '우리 아이 성향 테스트 | 우리동네 유치원',
   description:
-    '아동심리 전문가 연구 기반! 7가지 질문으로 알아보는 우리 아이 성향과 맞춤 유치원 추천. 유아 MBTI, 아이 성향 분석, 유치원 추천 테스트.',
+    '7가지 질문으로 알아보는 우리 아이 성향과 맞춤 유치원 추천. 유아 MBTI, 아이 성향 분석, 유치원 추천 테스트.',
   keywords: [
     '아이 성향 테스트',
     '유아 성향 분석',
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '우리 아이 성향 테스트 | 7가지 질문으로 알아보는 맞춤 유치원',
     description:
-      '아이 성향에 맞는 유치원 유형은? 아동심리 전문가 연구 기반 테스트로 지금 알아보세요!',
+      '아이 성향에 맞는 유치원 유형은? 지금 테스트로 알아보세요!',
     images: [
       {
         url: '/og-test.png',

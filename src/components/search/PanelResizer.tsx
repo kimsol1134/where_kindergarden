@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useState, useRef } from 'react';
-import { GripVertical } from 'lucide-react';
+import GripVertical from 'lucide-react/dist/esm/icons/grip-vertical';
 
 interface PanelResizerProps {
   onResize: (width: number) => void;

@@ -208,9 +208,6 @@ const DEFAULT_CENTER: Coordinates = { lat: 37.5665, lng: 126.978 }; // 서울시
 const DEFAULT_LEVEL = 5;
 const SDK_LOAD_TIMEOUT_MS = 10000; // SDK 로드 타임아웃 (10초)
 
-// iOS 디버깅 플래그 (Safari Web Inspector에서 확인용)
-const DEBUG_KAKAO_MAPS = false;
-
 /** 마커 색상 상수 */
 const MARKER_COLORS = {
   default: '#10B981',      // 에메랄드
@@ -301,34 +298,8 @@ export function useKakaoMap(
 
   // SDK 스크립트 로드
   useEffect(() => {
-    // 디버그 로깅 함수
-    const debugLog = (message: string, data?: Record<string, unknown>) => {
-      if (DEBUG_KAKAO_MAPS) {
-        const prefix = '[KakaoMap Debug]';
-        if (data) {
-          console.log(prefix, message, data);
-        } else {
-          console.log(prefix, message);
-        }
-      }
-    };
-
-    // 초기 환경 정보 로깅
-    debugLog('=== Kakao Maps SDK 로드 시작 ===');
-    debugLog('환경 정보', {
-      origin: window.location.origin,
-      href: window.location.href,
-      protocol: window.location.protocol,
-      hostname: window.location.hostname,
-      referrer: document.referrer || '(없음)',
-      userAgent: navigator.userAgent,
-      apiKeyExists: !!process.env.NEXT_PUBLIC_KAKAO_JS_KEY,
-      apiKeyPrefix: process.env.NEXT_PUBLIC_KAKAO_JS_KEY?.substring(0, 8) + '...',
-    });
-
     // API 키 체크
     if (!process.env.NEXT_PUBLIC_KAKAO_JS_KEY) {
-      debugLog('❌ API 키 없음');
       // eslint-disable-next-line react-hooks/set-state-in-effect -- SDK 로드 실패 시 상태 업데이트 필요
       setState({
         isLoaded: false,
@@ -345,10 +316,6 @@ export function useKakaoMap(
       if (isResolved) return;
       isResolved = true;
       if (timeoutId) clearTimeout(timeoutId);
-      debugLog('✅ SDK 로드 성공', {
-        kakaoExists: !!window.kakao,
-        kakaoMapsExists: !!window.kakao?.maps,
-      });
       setState({ isLoaded: true, isError: false, errorMessage: null });
     };
 
@@ -356,22 +323,12 @@ export function useKakaoMap(
       if (isResolved) return;
       isResolved = true;
       if (timeoutId) clearTimeout(timeoutId);
-      debugLog('❌ SDK 로드 실패', {
-        message,
-        kakaoExists: !!window.kakao,
-        kakaoMapsExists: !!window.kakao?.maps,
-        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
-      });
       setState({ isLoaded: false, isError: true, errorMessage: message });
     };
 
     const existingScript = document.getElementById('kakao-maps-sdk');
 
     if (existingScript) {
-      debugLog('기존 스크립트 발견', {
-        kakaoExists: !!window.kakao,
-        kakaoMapsExists: !!window.kakao?.maps,
-      });
       // 이미 로드된 경우
       if (window.kakao?.maps) {
         window.kakao.maps.load(resolveSuccess);
@@ -383,13 +340,7 @@ export function useKakaoMap(
     }
 
     // 타임아웃 설정 (SDK 로드가 조용히 실패하는 경우 대응)
-    debugLog('스크립트 로드 시작, 타임아웃: ' + SDK_LOAD_TIMEOUT_MS + 'ms');
     timeoutId = setTimeout(() => {
-      debugLog('⏱️ 타임아웃 발생', {
-        kakaoExists: !!window.kakao,
-        kakaoMapsExists: !!window.kakao?.maps,
-        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
-      });
       resolveError('지도 로딩 시간이 초과되었습니다. 네트워크 연결을 확인해주세요.');
     }, SDK_LOAD_TIMEOUT_MS);
 
@@ -399,35 +350,20 @@ export function useKakaoMap(
     script.async = true;
 
     script.onload = () => {
-      debugLog('스크립트 onload 이벤트', {
-        kakaoExists: !!window.kakao,
-        kakaoMapsExists: !!window.kakao?.maps,
-        kakaoKeys: window.kakao ? Object.keys(window.kakao) : [],
-        kakaoType: typeof window.kakao,
-      });
-
       if (window.kakao?.maps) {
-        debugLog('kakao.maps.load() 호출');
         window.kakao.maps.load(() => {
-          debugLog('kakao.maps.load() 콜백 실행');
           resolveSuccess();
         });
       } else {
-        debugLog('❌ window.kakao.maps 없음 - 도메인 검증 실패 가능성');
         resolveError('Kakao Maps SDK가 로드되었지만 초기화에 실패했습니다.');
       }
     };
 
-    script.onerror = (error) => {
-      debugLog('❌ 스크립트 onerror 이벤트', {
-        error: String(error),
-        errorType: typeof error,
-      });
+    script.onerror = () => {
       resolveError('Kakao Maps SDK 로드에 실패했습니다. 네트워크 연결을 확인해주세요.');
     };
 
     document.head.appendChild(script);
-    debugLog('스크립트 태그 추가됨');
 
     return () => {
       if (timeoutId) clearTimeout(timeoutId);

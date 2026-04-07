@@ -1032,89 +1032,95 @@ private struct SearchResultCard: View {
         return items
     }
 
+    @State private var isPressed = false
+
     var body: some View {
-        Button(action: onTap) {
-            HStack(alignment: .top, spacing: 14) {
-                VStack(alignment: .leading, spacing: 10) {
-                    HStack(alignment: .top) {
-                        HStack(spacing: 8) {
-                            ForEach(statusBadges, id: \.title) { item in
-                                NativeBadge(item.title, tone: item.tone)
-                            }
+        HStack(alignment: .top, spacing: 14) {
+            VStack(alignment: .leading, spacing: 10) {
+                HStack(alignment: .top) {
+                    HStack(spacing: 8) {
+                        ForEach(statusBadges, id: \.title) { item in
+                            NativeBadge(item.title, tone: item.tone)
                         }
-                        Spacer(minLength: 12)
-                        Text(distanceText)
-                            .font(.caption.weight(.semibold))
+                    }
+                    Spacer(minLength: 12)
+                    Text(distanceText)
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(slateBlue)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 6)
+                        .background(slateBlue.opacity(0.08), in: Capsule())
+                }
+
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(kindergarten.name)
+                        .font(.headline.weight(.bold))
+                        .foregroundStyle(inkBlack)
+                        .lineLimit(2)
+
+                    if vacancyCount > 0 {
+                        (Text("여유 \(vacancyCount)명")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(jadeDeep)
+                         + Text(" · \(kindergarten.address)")
+                            .font(.footnote)
+                            .foregroundStyle(slateBlue))
+                        .lineLimit(1)
+                    } else {
+                        Text(supportLine)
+                            .font(.footnote)
                             .foregroundStyle(slateBlue)
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 6)
-                            .background(slateBlue.opacity(0.08), in: Capsule())
-                    }
-
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text(kindergarten.name)
-                            .font(.headline.weight(.bold))
-                            .foregroundStyle(inkBlack)
                             .lineLimit(2)
-
-                        if vacancyCount > 0 {
-                            (Text("여유 \(vacancyCount)명")
-                                .font(.footnote.weight(.semibold))
-                                .foregroundStyle(jadeDeep)
-                             + Text(" · \(kindergarten.address)")
-                                .font(.footnote)
-                                .foregroundStyle(slateBlue))
-                            .lineLimit(1)
-                        } else {
-                            Text(supportLine)
-                                .font(.footnote)
-                                .foregroundStyle(slateBlue)
-                                .lineLimit(2)
-                        }
                     }
-
-                    SpecBarView(specs: specItems)
                 }
 
-                VStack(spacing: 12) {
-                    Button(action: onToggleCompare) {
-                        Image(systemName: isCompared ? "checkmark" : "plus")
-                            .font(.system(size: 14, weight: .black))
-                            .foregroundStyle(isCompared ? inkBlack : jadeDeep)
-                            .frame(width: 44, height: 44)
-                            .background(
-                                Circle()
-                                    .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
-                            )
-                    }
-                    .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
-                    .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
-                    .buttonStyle(.borderless)
-                    .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
-                    .contentTransition(.symbolEffect(.replace))
-
-                    Button(action: onToggleFavorite) {
-                        Image(systemName: isFavorite ? "heart.fill" : "heart")
-                            .font(.system(size: 14, weight: .black))
-                            .foregroundStyle(isFavorite ? inkBlack : slateBlue)
-                            .frame(width: 44, height: 44)
-                            .background(
-                                Circle()
-                                    .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
-                            )
-                    }
-                    .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
-                    .buttonStyle(.borderless)
-                    .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
-                    .contentTransition(.symbolEffect(.replace))
-                }
+                SpecBarView(specs: specItems)
             }
-            .padding(cardPadding)
+
+            VStack(spacing: 12) {
+                Button(action: onToggleCompare) {
+                    Image(systemName: isCompared ? "checkmark" : "plus")
+                        .font(.system(size: 14, weight: .black))
+                        .foregroundStyle(isCompared ? inkBlack : jadeDeep)
+                        .frame(width: 44, height: 44)
+                        .background(
+                            Circle()
+                                .fill(isCompared ? jadeGreen.opacity(0.90) : jadeGreen.opacity(0.16))
+                        )
+                }
+                .accessibilityIdentifier("search.compareToggle.\(kindergarten.kindercode)")
+                .accessibilityLabel(isCompared ? "비교에서 빼기" : "비교에 담기")
+                .buttonStyle(.plain)
+                .sensoryFeedback(.impact(flexibility: .soft), trigger: isCompared)
+                .contentTransition(.symbolEffect(.replace))
+
+                Button(action: onToggleFavorite) {
+                    Image(systemName: isFavorite ? "heart.fill" : "heart")
+                        .font(.system(size: 14, weight: .black))
+                        .foregroundStyle(isFavorite ? inkBlack : slateBlue)
+                        .frame(width: 44, height: 44)
+                        .background(
+                            Circle()
+                                .fill(isFavorite ? sunYellow.opacity(0.92) : warmSand.opacity(0.50))
+                        )
+                }
+                .accessibilityLabel(isFavorite ? "찜 취소" : "찜하기")
+                .buttonStyle(.plain)
+                .sensoryFeedback(.impact(flexibility: .solid, intensity: 0.6), trigger: isFavorite)
+                .contentTransition(.symbolEffect(.replace))
+            }
         }
-        .buttonStyle(PressableCardStyle())
+        .padding(cardPadding)
+        .scaleEffect(isPressed ? 0.97 : 1.0)
+        .opacity(isPressed ? 0.92 : 1.0)
+        .animation(.spring(duration: 0.2), value: isPressed)
         .solidPanel(cornerRadius: CornerRadius.large, tint: paperWhite.opacity(0.95))
+        .contentShape(RoundedRectangle(cornerRadius: CornerRadius.large, style: .continuous))
+        .onTapGesture { onTap() }
+        .onLongPressGesture(minimumDuration: .infinity, pressing: { pressing in isPressed = pressing }, perform: {})
         .accessibilityIdentifier("search.resultCard.\(kindergarten.kindercode)")
         .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isButton)
     }
 }
 

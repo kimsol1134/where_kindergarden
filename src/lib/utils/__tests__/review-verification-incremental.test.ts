@@ -11,6 +11,7 @@ import {
   findReusableBodyCacheEntry,
   pickRandomSamples,
 } from '@/lib/utils/review-verification-incremental';
+import { normalizeReviewUrl } from '@/lib/utils/review-verification';
 import type { ReviewVerificationRunReportItem } from '@/types/review';
 
 describe('review verification incremental fingerprint', () => {
@@ -153,14 +154,14 @@ describe('review verification body cache', () => {
     expect(
       findReusableBodyCacheEntry(
         lookup,
-        'blog.naver.com/post/1',
+        normalizeReviewUrl('https://blog.naver.com/post/1'),
         matchingFingerprint
       )
     ).not.toBeNull();
     expect(
       findReusableBodyCacheEntry(
         lookup,
-        'blog.naver.com/post/1',
+        normalizeReviewUrl('https://blog.naver.com/post/1'),
         buildReviewFingerprint({
           kindergartenId: 'kid-1',
           title: '행복한유치원 설명회 후기',

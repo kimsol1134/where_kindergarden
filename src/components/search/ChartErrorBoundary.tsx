@@ -1,7 +1,7 @@
 'use client';
 
 import { Component, type ReactNode } from 'react';
-import { RotateCw } from 'lucide-react';
+import RotateCw from 'lucide-react/dist/esm/icons/rotate-cw';
 
 interface ChartErrorBoundaryProps {
   children: ReactNode;

@@ -4,7 +4,6 @@ import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { AdContainer } from '@/components/ads/AdContainer';
-import { BottomTabBar } from '@/components/navigation/BottomTabBar';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -49,26 +48,21 @@ export const metadata: Metadata = {
     title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
     description:
       '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 전국 7,950개 이상의 유치원 정보를 한눈에 확인할 수 있습니다.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
     description:
       '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요.',
-    images: ['/og-image.png'],
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-icon.png',
-    shortcut: '/icon-small.png',
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
   },
   verification: {
     google: '9xdRn2UOPOTpBwDt2oILqTEvY-X27sQbcy20V4p7yb4',
@@ -110,7 +104,6 @@ export default function RootLayout({
         <WebsiteJsonLd />
         <OrganizationJsonLd />
         <AdContainer />
-        <BottomTabBar />
         <Analytics />
       </body>
     </html>

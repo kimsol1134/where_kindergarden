@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Search } from 'lucide-react';
+import Image from 'next/image';
+import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 
 export function CTA() {
   return (
@@ -7,18 +8,34 @@ export function CTA() {
       <div className="mx-auto max-w-4xl px-4 text-center">
         <div className="brand-shell rounded-[2.5rem] px-8 py-12">
           <h2 className="mb-6 text-3xl font-bold tracking-[-0.04em] text-[var(--brand-ink)]">
-            지금 바로 우리 아이 유치원을 찾아보세요
+            지금 바로 시작해보세요
           </h2>
           <p className="mb-10 text-[var(--brand-ink-soft)]">
-            로그인 없이 바로 시작할 수 있고, iPhone 네이티브 앱 경험도 함께 준비 중입니다.
+            가입도, 로그인도 필요 없어요. 지금 바로 우리 동네 유치원을 확인해보세요.
           </p>
-          <Link
-            href="/search?mode=location"
-            className="mx-auto flex w-fit items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-1"
-          >
-            <Search className="h-5 w-5" />
-            무료로 시작하기
-          </Link>
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/search?mode=location"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_14px_28px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-0.5"
+            >
+              <MapPin className="h-5 w-5" />
+              내 주변 유치원 찾기
+            </Link>
+            <Link
+              href="https://apps.apple.com/us/app/%EC%9C%A0%EC%B9%98%EC%9B%90-%EC%95%8C%EB%A6%AC%EB%AF%B8-%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4-%EC%9C%A0%EC%B9%98%EC%9B%90/id6758149645"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block transition-opacity hover:opacity-80"
+            >
+              <Image
+                src="/images/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={160}
+                height={53}
+                className="h-[52px] w-auto"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

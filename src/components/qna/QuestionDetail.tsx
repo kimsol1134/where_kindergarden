@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { ArrowLeft, Loader2, Trash2 } from 'lucide-react';
+import ArrowLeft from 'lucide-react/dist/esm/icons/arrow-left';
+import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
+import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
 import type { Question } from '@/types/community';
 import { CATEGORY_LABELS } from '@/types/community';
 import { useAuthStore } from '@/stores/authStore';
