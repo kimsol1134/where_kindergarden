@@ -280,8 +280,8 @@ struct KindergartenDetailSheet: View {
             // A3: Decision Metrics (3-column)
             LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
                 NativeMetricTile(
-                    label: vacancySummary != nil ? "빈자리" : "정원 여유",
-                    value: "\(vacancyCount)명",
+                    label: "현원 / 정원",
+                    value: "\(kindergarten.currentCount) / \(kindergarten.capacity)명",
                     accent: vacancyCount > 0 ? jadeGreen : coralRed
                 )
                 NativeMetricTile(
