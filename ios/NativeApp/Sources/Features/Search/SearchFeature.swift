@@ -978,22 +978,6 @@ private struct SearchResultCard: View {
         kindergarten.distance >= 0 ? String(format: "%.1fkm", kindergarten.distance) : "거리 확인 전"
     }
 
-    private var supportLine: String {
-        var items: [String] = []
-
-        items.append(kindergarten.address)
-
-        if vacancyCount > 0 {
-            items.append("정원 여유 \(vacancyCount)명")
-        }
-
-        if kindergarten.areaPerChild > 0 {
-            items.append(String(format: "1인당 %.1f㎡", kindergarten.areaPerChild))
-        }
-
-        return items.prefix(3).joined(separator: " · ")
-    }
-
     private var specItems: [SpecBarView.Spec] {
         [
             .init(id: "bus", icon: "bus.fill", label: "셔틀",
@@ -1058,20 +1042,16 @@ private struct SearchResultCard: View {
                         .foregroundStyle(inkBlack)
                         .lineLimit(2)
 
-                    if vacancyCount > 0 {
-                        (Text("여유 \(vacancyCount)명")
-                            .font(.footnote.weight(.semibold))
-                            .foregroundStyle(jadeDeep)
-                         + Text(" · \(kindergarten.address)")
-                            .font(.footnote)
-                            .foregroundStyle(slateBlue))
-                        .lineLimit(1)
-                    } else {
-                        Text(supportLine)
-                            .font(.footnote)
-                            .foregroundStyle(slateBlue)
-                            .lineLimit(2)
-                    }
+                    (Text("현원 \(kindergarten.currentCount)/\(kindergarten.capacity)명")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(inkBlack)
+                     + Text(vacancyCount > 0 ? " · 여유 \(vacancyCount)명" : "")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(jadeDeep)
+                     + Text(" · \(kindergarten.address)")
+                        .font(.footnote)
+                        .foregroundStyle(slateBlue))
+                    .lineLimit(1)
                 }
 
                 SpecBarView(specs: specItems)
