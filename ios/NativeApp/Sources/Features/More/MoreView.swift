@@ -5,21 +5,17 @@ import UIKit
 #endif
 
 public struct MoreView: View {
-    @ObservedObject private var model: NativeAppModel
+    var viewModel: SearchViewModel
     #if DEBUG
     @AppStorage("native.debugMode") private var isDebugModeActive = false
     #endif
 
-    public init(model: NativeAppModel) {
-        self.model = model
-    }
-
-    @MainActor public init() {
-        self.model = .preview()
+    public init(viewModel: SearchViewModel) {
+        self.viewModel = viewModel
     }
 
     private var reviewVersionText: String {
-        model.reviewsData?.version ?? "확인 중"
+        viewModel.reviewsData?.version ?? "확인 중"
     }
 
     private var appVersionText: String {
@@ -62,9 +58,9 @@ public struct MoreView: View {
                         url: URL(string: "itms-apps://apps.apple.com/app/id6758149645")!
                     )
                     StatRow(title: "앱 버전", value: appVersionText)
-                    StatRow(title: "위치 권한", value: model.locationPermissionStatusText)
+                    StatRow(title: "위치 권한", value: viewModel.locationPermissionStatusText)
                     #if canImport(UIKit)
-                    if model.shouldShowLocationSettingsCTA, let settingsURL = URL(string: UIApplication.openSettingsURLString) {
+                    if viewModel.shouldShowLocationSettingsCTA, let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                         SettingsRow(
                             title: "위치 권한 설정 열기",
                             systemImage: "location.slash",
@@ -144,20 +140,20 @@ public struct MoreView: View {
                 #if DEBUG
                 if isDebugModeActive {
                     Section {
-                        StatRow(title: "검색 기준 위치", value: model.locationLabel)
+                        StatRow(title: "검색 기준 위치", value: viewModel.locationLabel)
                         StatRow(title: "실제 기기 위치", value: {
-                            if let loc = model.currentDeviceLocation {
+                            if let loc = viewModel.currentDeviceLocation {
                                 return String(format: "%.4f, %.4f", loc.lat, loc.lng)
                             }
                             return "아직 요청되지 않음"
                         }())
-                        StatRow(title: "Kakao 지도 키", value: model.configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
-                        StatRow(title: "Kakao Local 키", value: model.configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
-                        StatRow(title: "Kakao 키 소스", value: model.configuration.kakaoConfigurationSourceDescription)
+                        StatRow(title: "Kakao 지도 키", value: viewModel.configuration.hasKakaoMapKey ? "설정됨" : "키 없음")
+                        StatRow(title: "Kakao Local 키", value: viewModel.configuration.hasKakaoRESTAPIKey ? "설정됨" : "키 없음")
+                        StatRow(title: "Kakao 키 소스", value: viewModel.configuration.kakaoConfigurationSourceDescription)
                         StatRow(title: "딥링크", value: "wherekindergarten://compare?ids=...")
-                        StatRow(title: "찜한 기관", value: "\(model.favorites.count)곳")
-                        StatRow(title: "최근 검색", value: "\(model.recentSearches.count)건")
-                        StatRow(title: "비교 목록", value: "\(model.compareSelection.ids.count)곳")
+                        StatRow(title: "찜한 기관", value: "\(viewModel.favorites.count)곳")
+                        StatRow(title: "최근 검색", value: "\(viewModel.recentSearches.count)건")
+                        StatRow(title: "비교 목록", value: "\(viewModel.compareSelectionIDs.count)곳")
                     } header: {
                         MoreSectionHeader(title: "디버그")
                     }
@@ -170,7 +166,7 @@ public struct MoreView: View {
             .navigationTitle("더보기")
             .navigationBarTitleDisplayMode(.large)
             .task {
-                model.refreshLocationPermissionState()
+                viewModel.refreshLocationPermissionState()
             }
         }
     }

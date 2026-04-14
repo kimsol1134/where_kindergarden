@@ -152,6 +152,20 @@ public final class SearchViewModel {
         searchSuggestionTask?.cancel()
     }
 
+    // MARK: - Exposed Repo/Router State
+
+    public var reviewsData: ReviewsData? { reviewRepo.reviewsData }
+    public var compareSelectionIDs: [String] { compareRepo.selection.ids }
+    public var favorites: [FavoriteItem] { favoriteRepo.favorites }
+    public var recentSearches: [RecentSearch] { recentSearchRepo.recentSearches }
+    public var isSearchTabActive: Bool { router.activeTab == .search }
+    public var toast: CompareToast? { router.toast }
+
+    public func dismissToast() { router.dismissToast() }
+    public func navigateToSearch() { router.activeTab = .search }
+    public func navigateToCompare() { router.activeTab = .compare }
+    public func clearRecentSearches() { _ = recentSearchRepo.deleteAll() }
+
     // MARK: - Computed Properties
 
     public var recentSearchSuggestions: [SearchSuggestion] {

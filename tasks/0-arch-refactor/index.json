@@ -47,8 +47,11 @@
     {
       "phase": 5,
       "name": "view-rewire",
-      "status": "pending",
-      "timeout": 1200
+      "status": "completed",
+      "timeout": 1200,
+      "started_at": "2026-04-14T12:16:45+0900",
+      "completed_at": "2026-04-14T12:40:00+0900",
+      "note": "All views rewired to new ViewModels. NativeAppModel.swift deleted. NativeRootView DI assembly rewritten. No Swift compilation errors. Pre-existing AppIcon asset error (legacy Capacitor) only."
     },
     {
       "phase": 6,

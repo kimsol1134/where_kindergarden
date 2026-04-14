@@ -55,7 +55,16 @@ public final class CompareViewModel {
         compareUseCase.winnerSummary(items: comparedKindergartens, scores: scores)
     }
 
+    public var adMobBannerUnitID: String { configuration.adMobBannerUnitID }
+
+    public func navigateToSearch() { router.activeTab = .search }
+
     // MARK: - Actions
+
+    public func removeKindergarten(_ kindergarten: Kindergarten) {
+        guard let index = compareRepo.selection.ids.firstIndex(of: kindergarten.kindercode) else { return }
+        remove(at: index)
+    }
 
     public func remove(at index: Int) {
         let ids = compareRepo.selection.ids

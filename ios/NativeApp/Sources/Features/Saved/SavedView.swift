@@ -5,46 +5,42 @@ import UIKit
 #endif
 
 public struct SavedView: View {
-    @ObservedObject private var model: NativeAppModel
+    var viewModel: SavedViewModel
     @Environment(\.openURL) private var openURL
     @State private var pendingUndo: SavedUndoState?
     @State private var isRecentClearConfirmationPresented = false
     @State private var selectedKindergarten: Kindergarten?
     @AppStorage("native.hasSeenSwipeHint") private var hasSeenSwipeHint = false
 
-    public init(model: NativeAppModel) {
-        self.model = model
-    }
-
-    @MainActor public init() {
-        self.model = .preview()
+    public init(viewModel: SavedViewModel) {
+        self.viewModel = viewModel
     }
 
     public var body: some View {
         NavigationStack {
             List {
                     Section {
-                        if model.favorites.isEmpty {
+                        if viewModel.favorites.isEmpty {
                             EmptyStateView(
                                 icon: "heart",
                                 title: "찜한곳이 아직 없어요",
                                 message: "마음에 드는 유치원을 저장해 두면 여기서 다시 볼 수 있어요.",
                                 ctaLabel: "유치원 찾아보기",
-                                ctaAction: { model.selectedTab = .search }
+                                ctaAction: { viewModel.navigateToSearch() }
                             )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                         } else {
-                            let favoriteItems = model.favoriteKindergartens()
+                            let favoriteItems = viewModel.favoriteKindergartens
                             ForEach(favoriteItems) { kindergarten in
-                                let isCompared = model.isCompared(kindergarten)
+                                let isCompared = viewModel.isCompared(kindergarten)
                                 Button {
                                     selectedKindergarten = kindergarten
                                 } label: {
                                     FavoriteSavedCard(
                                         kindergarten: kindergarten,
-                                        reviewCount: model.reviews(for: kindergarten.kindercode).count,
+                                        reviewCount: viewModel.reviews(for: kindergarten.kindercode).count,
                                         onCall: kindergarten.phone.map { phone in
                                             {
                                                 if let url = URL(string: "tel://\(phone.filter(\.isNumber))") {
@@ -73,7 +69,7 @@ public struct SavedView: View {
                                 }
                                 .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                     Button {
-                                        model.toggleCompare(for: kindergarten)
+                                        viewModel.toggleCompare(for: kindergarten)
                                     } label: {
                                         Label(
                                             isCompared ? "비교 빼기" : "비교 추가",
@@ -84,7 +80,7 @@ public struct SavedView: View {
                                 }
                                 .swipeActions {
                                     Button(role: .destructive) {
-                                        guard let removed = model.takeFavorite(kindercode: kindergarten.kindercode) else {
+                                        guard let removed = viewModel.takeFavorite(kindercode: kindergarten.kindercode) else {
                                             return
                                         }
                                         stageUndo(.favorites([removed]))
@@ -100,7 +96,7 @@ public struct SavedView: View {
                                     }
 
                                     Button {
-                                        model.toggleCompare(for: kindergarten)
+                                        viewModel.toggleCompare(for: kindergarten)
                                     } label: {
                                         Label(
                                             isCompared ? "비교에서 빼기" : "비교에 추가",
@@ -129,7 +125,7 @@ public struct SavedView: View {
                                     Divider()
 
                                     Button(role: .destructive) {
-                                        guard let removed = model.takeFavorite(kindercode: kindergarten.kindercode) else { return }
+                                        guard let removed = viewModel.takeFavorite(kindercode: kindergarten.kindercode) else { return }
                                         stageUndo(.favorites([removed]))
                                     } label: {
                                         Label("삭제", systemImage: "trash")
@@ -138,25 +134,25 @@ public struct SavedView: View {
                             }
                         }
                     } header: {
-                        SavedSectionHeader(title: "\(model.favorites.count)곳 저장됨", subtitle: "")
+                        SavedSectionHeader(title: "\(viewModel.favorites.count)곳 저장됨", subtitle: "")
                     }
 
                     Section {
-                        if model.recentSearches.isEmpty {
+                        if viewModel.recentSearches.isEmpty {
                             EmptyStateView(
                                 icon: "clock.arrow.circlepath",
                                 title: "최근 찾은 곳이 없어요",
                                 message: "동네 이름이나 현재 위치로 찾으면 여기에 남아요.",
                                 ctaLabel: "유치원 찾아보기",
-                                ctaAction: { model.selectedTab = .search }
+                                ctaAction: { viewModel.navigateToSearch() }
                             )
                             .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
                         } else {
-                            ForEach(model.recentSearches) { item in
+                            ForEach(viewModel.recentSearches) { item in
                                 Button {
-                                    model.restoreRecentSearch(item)
+                                    viewModel.restoreRecentSearch(item)
                                 } label: {
                                     RecentSavedCard(item: item)
                                 }
@@ -167,7 +163,7 @@ public struct SavedView: View {
                                 .accessibilityLabel("\(item.label), \(item.resolvedDisplayName)")
                                 .swipeActions {
                                     Button(role: .destructive) {
-                                        guard let removed = model.takeRecentSearch(item) else {
+                                        guard let removed = viewModel.takeRecentSearch(item) else {
                                             return
                                         }
                                         stageUndo(.recents([removed]))
@@ -179,9 +175,9 @@ public struct SavedView: View {
                         }
                     } header: {
                         HStack {
-                            SavedSectionHeader(title: "최근 검색", subtitle: "\(model.recentSearches.count)건")
+                            SavedSectionHeader(title: "최근 검색", subtitle: "\(viewModel.recentSearches.count)건")
                             Spacer()
-                            if !model.recentSearches.isEmpty {
+                            if !viewModel.recentSearches.isEmpty {
                                 Button("전체 삭제", role: .destructive) {
                                     isRecentClearConfirmationPresented = true
                                 }
@@ -196,13 +192,16 @@ public struct SavedView: View {
             .navigationTitle("찜한곳")
             .navigationBarTitleDisplayMode(.large)
             .sheet(item: $selectedKindergarten) { kindergarten in
-                model.makeDetailSheet(for: kindergarten)
+                viewModel.makeDetailSheet(for: kindergarten)
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
                     .toast(
-                        isPresented: model.compareToastBinding,
-                        message: model.compareToast?.message ?? "",
-                        icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+                        isPresented: Binding(
+                            get: { viewModel.toast != nil },
+                            set: { if !$0 { viewModel.dismissToast() } }
+                        ),
+                        message: viewModel.toast?.message ?? "",
+                        icon: viewModel.toast?.icon ?? "checkmark.circle.fill"
                     )
             }
             .confirmationDialog(
@@ -211,7 +210,7 @@ public struct SavedView: View {
                 titleVisibility: .visible
             ) {
                 Button("전체 삭제", role: .destructive) {
-                    let removed = model.takeAllRecentSearches()
+                    let removed = viewModel.takeAllRecentSearches()
                     stageUndo(.recents(removed))
                 }
                 Button("취소", role: .cancel) {}
@@ -221,7 +220,7 @@ public struct SavedView: View {
             .safeAreaInset(edge: .bottom) {
                 if let pendingUndo {
                     UndoBanner(message: pendingUndo.message) {
-                        pendingUndo.restore(model)
+                        pendingUndo.restore(viewModel)
                         self.pendingUndo = nil
                     } onDismiss: {
                         self.pendingUndo = nil
@@ -424,21 +423,21 @@ private struct RecentSavedCard: View {
 private struct SavedUndoState: Identifiable {
     let id = UUID()
     let message: String
-    let restore: @MainActor (NativeAppModel) -> Void
+    let restore: @MainActor (SavedViewModel) -> Void
 
     static func favorites(_ items: [IndexedFavoriteItem]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
         let message = items.count == 1 ? "찜한곳을 삭제했어요." : "찜한곳 \(items.count)곳을 삭제했어요."
-        return SavedUndoState(message: message) { model in
-            model.restoreFavorites(items)
+        return SavedUndoState(message: message) { viewModel in
+            viewModel.restoreFavorites(items)
         }
     }
 
     static func recents(_ items: [IndexedRecentSearch]) -> SavedUndoState? {
         guard !items.isEmpty else { return nil }
         let message = items.count == 1 ? "최근 검색을 삭제했어요." : "최근 검색 \(items.count)건을 삭제했어요."
-        return SavedUndoState(message: message) { model in
-            model.restoreRecentSearches(items)
+        return SavedUndoState(message: message) { viewModel in
+            viewModel.restoreRecentSearches(items)
         }
     }
 }

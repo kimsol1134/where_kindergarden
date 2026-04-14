@@ -3,6 +3,7 @@ import Foundation
 import Models
 import Observation
 import Services
+import SwiftUI
 
 @Observable
 @MainActor
@@ -12,6 +13,7 @@ public final class SavedViewModel {
     private let kindergartenRepo: any KindergartenProviding
     private let compareRepo: any CompareStoring
     private let reviewRepo: any ReviewProviding
+    private let vacancyRepo: (any VacancyProviding)?
     private let analytics: AnalyticsTracking?
     private let router: AppRouter
 
@@ -25,6 +27,7 @@ public final class SavedViewModel {
         kindergartenRepo: any KindergartenProviding,
         compareRepo: any CompareStoring,
         reviewRepo: any ReviewProviding,
+        vacancyRepo: (any VacancyProviding)? = nil,
         analytics: AnalyticsTracking? = nil,
         router: AppRouter
     ) {
@@ -33,8 +36,45 @@ public final class SavedViewModel {
         self.kindergartenRepo = kindergartenRepo
         self.compareRepo = compareRepo
         self.reviewRepo = reviewRepo
+        self.vacancyRepo = vacancyRepo
         self.analytics = analytics
         self.router = router
+    }
+
+    // MARK: - Exposed Repo/Router State
+
+    public var favorites: [FavoriteItem] { favoriteRepo.favorites }
+    public var recentSearches: [RecentSearch] { recentSearchRepo.recentSearches }
+    public var toast: CompareToast? { router.toast }
+
+    public func dismissToast() { router.dismissToast() }
+    public func navigateToSearch() { router.activeTab = .search }
+
+    public func isCompared(_ kindergarten: Kindergarten) -> Bool {
+        compareRepo.contains(kindergarten.kindercode)
+    }
+
+    public func reviews(for kindercode: String) -> [ReviewLink] {
+        reviewRepo.reviews(for: kindercode)
+    }
+
+    // MARK: - Detail Sheet
+
+    func makeDetailSheet(for kindergarten: Kindergarten) -> KindergartenDetailSheet {
+        KindergartenDetailSheet(
+            kindergarten: kindergarten,
+            reviews: reviewRepo.reviews(for: kindergarten.kindercode),
+            reviewsVersion: reviewRepo.reviewsData?.version,
+            vacancySummary: vacancyRepo?.vacancy(for: kindergarten.kindercode),
+            vacancyDatasetVersion: vacancyRepo?.vacancyData?.version,
+            isVacancyLoading: vacancyRepo?.isLoading ?? false,
+            vacancyError: vacancyRepo?.error,
+            isCompared: compareRepo.contains(kindergarten.kindercode),
+            isFavorite: favoriteRepo.isFavorite(kindergarten.kindercode),
+            fitReasons: [],
+            onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+        )
     }
 
     // MARK: - Computed Properties
@@ -88,6 +128,34 @@ public final class SavedViewModel {
         case .limitReached:
             router.showToast(.warning("비교는 최대 3곳까지 가능해요"))
         }
+    }
+
+    public func takeFavorite(kindercode: String) -> IndexedFavoriteItem? {
+        guard let index = favoriteRepo.favorites.firstIndex(where: { $0.kindercode == kindercode }) else {
+            return nil
+        }
+        return favoriteRepo.delete(atOffsets: IndexSet(integer: index)).first
+    }
+
+    public func restoreFavorites(_ items: [IndexedFavoriteItem]) {
+        favoriteRepo.restore(items)
+    }
+
+    public func restoreRecentSearches(_ items: [IndexedRecentSearch]) {
+        recentSearchRepo.restore(items)
+    }
+
+    public func takeRecentSearch(_ search: RecentSearch) -> IndexedRecentSearch? {
+        guard let index = recentSearchRepo.recentSearches.firstIndex(where: {
+            $0.id == search.id || ($0.label == search.label && $0.coordinates == search.coordinates)
+        }) else {
+            return nil
+        }
+        return recentSearchRepo.delete(atOffsets: IndexSet(integer: index)).first
+    }
+
+    public func takeAllRecentSearches() -> [IndexedRecentSearch] {
+        recentSearchRepo.deleteAll()
     }
 
     // MARK: - Recent Search Actions
