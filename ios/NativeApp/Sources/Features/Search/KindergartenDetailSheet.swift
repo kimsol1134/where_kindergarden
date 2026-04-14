@@ -1,3 +1,4 @@
+import Domain
 import Models
 import SwiftUI
 
@@ -271,7 +272,7 @@ struct KindergartenDetailSheet: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         ForEach(fitReasons) { reason in
-                            NativeBadge(reason.title, tone: reason.tone)
+                            NativeBadge(reason.text, tone: fitReasonTone(reason.icon))
                         }
                     }
                 }
@@ -521,6 +522,15 @@ struct KindergartenDetailSheet: View {
             return dateOnly
         }
         return isoString
+    }
+}
+
+private func fitReasonTone(_ icon: String) -> NativeBadge.Tone {
+    switch icon {
+    case "jade": return .jade
+    case "sun": return .sun
+    case "sand": return .sand
+    default: return .slate
     }
 }
 

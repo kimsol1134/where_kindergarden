@@ -70,7 +70,7 @@ let package = Package(
         ),
         .testTarget(
             name: "NativeAppTests",
-            dependencies: ["Models", "Services", "Features"]
+            dependencies: ["Models", "Domain", "Services", "Features"]
         ),
     ]
 )

@@ -1,16 +1,25 @@
+import Foundation
 import Models
-import SwiftUI
 
-struct KindergartenFitReason: Identifiable, Hashable {
-    let title: String
-    let tone: NativeBadge.Tone
-    let priority: Int
+public struct KindergartenFitReason: Identifiable, Hashable, Sendable {
+    public let icon: String
+    public let text: String
+    public let priority: Int
 
-    var id: String { title }
+    public var id: String { text }
+
+    public init(icon: String, text: String, priority: Int) {
+        self.icon = icon
+        self.text = text
+        self.priority = priority
+    }
 }
 
-enum KindergartenFitSummaryBuilder {
-    static func reasons(
+public struct FitReasonBuilder: Sendable {
+
+    public init() {}
+
+    public func reasons(
         for kindergarten: Kindergarten,
         filters: SearchFilters,
         reviewCount: Int,
@@ -25,8 +34,8 @@ enum KindergartenFitSummaryBuilder {
         if vacancyCount > 0 {
             reasons.append(
                 KindergartenFitReason(
-                    title: "정원여유",
-                    tone: .sun,
+                    icon: "sun",
+                    text: "정원여유",
                     priority: boosted(76, when: filters.hasVacancy == true)
                 )
             )
@@ -35,8 +44,8 @@ enum KindergartenFitSummaryBuilder {
         if kindergarten.hasBus {
             reasons.append(
                 KindergartenFitReason(
-                    title: "셔틀",
-                    tone: .jade,
+                    icon: "jade",
+                    text: "셔틀",
                     priority: boosted(80, when: filters.hasBus == true)
                 )
             )
@@ -45,8 +54,8 @@ enum KindergartenFitSummaryBuilder {
         if kindergarten.hasAfterSchool {
             reasons.append(
                 KindergartenFitReason(
-                    title: "방과후",
-                    tone: .slate,
+                    icon: "slate",
+                    text: "방과후",
                     priority: boosted(82, when: filters.hasAfterSchool == true)
                 )
             )
@@ -55,8 +64,8 @@ enum KindergartenFitSummaryBuilder {
         if kindergarten.areaPerChild >= 5 {
             reasons.append(
                 KindergartenFitReason(
-                    title: "넓은공간",
-                    tone: .sun,
+                    icon: "sun",
+                    text: "넓은공간",
                     priority: boosted(74, when: filters.hasLargeSpace == true)
                 )
             )
@@ -65,8 +74,8 @@ enum KindergartenFitSummaryBuilder {
         if reviewCount > 0 {
             reasons.append(
                 KindergartenFitReason(
-                    title: "후기 있음",
-                    tone: .sand,
+                    icon: "sand",
+                    text: "후기 있음",
                     priority: 72
                 )
             )
@@ -75,8 +84,8 @@ enum KindergartenFitSummaryBuilder {
         if kindergarten.distance >= 0, kindergarten.distance <= 1 {
             reasons.append(
                 KindergartenFitReason(
-                    title: "거리 가까움",
-                    tone: .slate,
+                    icon: "slate",
+                    text: "거리 가까움",
                     priority: 64
                 )
             )
@@ -86,16 +95,16 @@ enum KindergartenFitSummaryBuilder {
         case .public:
             reasons.append(
                 KindergartenFitReason(
-                    title: "국공립",
-                    tone: .jade,
+                    icon: "jade",
+                    text: "국공립",
                     priority: boosted(58, when: filters.type == .public)
                 )
             )
         case .private:
             reasons.append(
                 KindergartenFitReason(
-                    title: "사립",
-                    tone: .sand,
+                    icon: "sand",
+                    text: "사립",
                     priority: boosted(58, when: filters.type == .private)
                 )
             )
@@ -106,11 +115,29 @@ enum KindergartenFitSummaryBuilder {
         return reasons
             .sorted { lhs, rhs in
                 if lhs.priority == rhs.priority {
-                    return lhs.title < rhs.title
+                    return lhs.text < rhs.text
                 }
                 return lhs.priority > rhs.priority
             }
             .prefix(3)
             .map { $0 }
     }
+
+    /// Static convenience for backward compatibility
+    public static func reasons(
+        for kindergarten: Kindergarten,
+        filters: SearchFilters,
+        reviewCount: Int,
+        vacancyCount: Int
+    ) -> [KindergartenFitReason] {
+        FitReasonBuilder().reasons(
+            for: kindergarten,
+            filters: filters,
+            reviewCount: reviewCount,
+            vacancyCount: vacancyCount
+        )
+    }
 }
+
+/// Backward compatibility alias
+public typealias KindergartenFitSummaryBuilder = FitReasonBuilder

@@ -1,4 +1,5 @@
 import XCTest
+@testable import Domain
 @testable import Features
 @testable import Models
 @testable import Services
@@ -121,7 +122,7 @@ final class NativeSearchTests: XCTestCase {
 
         let reasons = model.fitReasons(for: kindergarten)
 
-        XCTAssertEqual(reasons.first?.title, "셔틀")
+        XCTAssertEqual(reasons.first?.text, "셔틀")
     }
 
     func testKakaoAddressResponseDecodesRoadAddressAndCoordinates() throws {
