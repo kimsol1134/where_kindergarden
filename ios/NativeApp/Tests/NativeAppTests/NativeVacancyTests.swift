@@ -4,6 +4,7 @@ import XCTest
 @testable import Services
 
 final class NativeVacancyTests: XCTestCase {
+    @MainActor
     func testVacancyRepositoryFallsBackToLocalDataWhenRemoteFails() async throws {
         let localJSON = """
         {
@@ -40,7 +41,8 @@ final class NativeVacancyTests: XCTestCase {
             }
         )
 
-        let dataset = try await repository.load()
+        await repository.load()
+        let dataset = try XCTUnwrap(repository.vacancyData)
 
         XCTAssertEqual(dataset.version, "2026-03-19")
         XCTAssertEqual(dataset.items["A001"]?.vacancyCount, 2)
@@ -91,7 +93,7 @@ final class NativeVacancyTests: XCTestCase {
         )
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(client: KakaoLocalAPIClient(apiKey: nil)),
             locationProvider: PreviewLocationProvider(coordinates: Coordinates(lat: 37.4981, lng: 127.0276)),

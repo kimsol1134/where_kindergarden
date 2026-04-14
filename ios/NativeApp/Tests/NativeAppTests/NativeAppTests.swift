@@ -186,6 +186,7 @@ final class NativeAppTests: XCTestCase {
         XCTAssertEqual(selection.ids, ["A001", "A002", "A003"])
     }
 
+    @MainActor
     func testReviewRepositoryFallsBackToBundledDataWhenRemoteFails() async throws {
         let bundled = """
         {
@@ -216,7 +217,8 @@ final class NativeAppTests: XCTestCase {
             localLoader: { Data(bundled.utf8) }
         )
 
-        let reviews = try await repository.load()
+        await repository.load()
+        let reviews = try XCTUnwrap(repository.reviewsData)
 
         XCTAssertEqual(reviews.totalCount, 1)
         XCTAssertEqual(reviews.reviews["A001"]?.count, 1)
@@ -313,7 +315,7 @@ final class NativeAppTests: XCTestCase {
         let store = InMemoryNativeAppStore()
         let persistence = NativeAppPersistence(store: store)
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -351,7 +353,7 @@ final class NativeAppTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
         let catalogData = try JSONEncoder().encode(NativePreviewFixtures.kindergartens)
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { catalogData },
+            kindergartenRepository: KindergartenRepository { catalogData },
             reviewRepository: ReviewRepository(localLoader: { Data("{\"version\":\"2026-03-17\",\"totalCount\":0,\"kindergartenCount\":0,\"reviews\":{}}".utf8) }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -500,7 +502,7 @@ final class NativeAppTests: XCTestCase {
         )
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -537,7 +539,7 @@ final class NativeAppTests: XCTestCase {
         )
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -592,7 +594,7 @@ final class NativeAppTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -706,7 +708,7 @@ final class NativeAppTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -723,7 +725,7 @@ final class NativeAppTests: XCTestCase {
         XCTAssertFalse(model.isFirstLaunch)
 
         let model2 = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -743,7 +745,7 @@ final class NativeAppTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -768,7 +770,7 @@ final class NativeAppTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
 
         let model = NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: KakaoLocalSuggestionService(
                 client: KakaoLocalAPIClient(apiKey: nil)
@@ -838,7 +840,7 @@ private func makeNativeAppModel() -> NativeAppModel {
     let persistence = NativeAppPersistence(store: store)
 
     let model = NativeAppModel(
-        kindergartenRepository: KindergartenJSONRepository { Data() },
+        kindergartenRepository: KindergartenRepository { Data() },
         reviewRepository: ReviewRepository(localLoader: { Data() }),
         remoteSearchService: KakaoLocalSuggestionService(
             client: KakaoLocalAPIClient(apiKey: nil)

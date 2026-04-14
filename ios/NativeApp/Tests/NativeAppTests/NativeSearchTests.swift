@@ -460,7 +460,7 @@ final class NativeSearchTests: XCTestCase {
         let persistence = NativeAppPersistence(store: store)
 
         return NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository { Data() },
+            kindergartenRepository: KindergartenRepository { Data() },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
             remoteSearchService: remoteSearchService,
             locationProvider: locationProvider,

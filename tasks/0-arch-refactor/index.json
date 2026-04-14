@@ -30,7 +30,10 @@
     {
       "phase": 3,
       "name": "repositories",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-04-14T11:09:52+0900",
+      "completed_at": "2026-04-14T11:21:00+0900",
+      "note": "6 @Observable Repository classes created. Old struct repos deleted (SearchServices.swift, VacancyService.swift). NativeAppModel minimally updated for new repo APIs. All 60 tests pass. WhereKindergartenNative scheme has pre-existing AppIcon asset error (legacy Capacitor ios/App/) unrelated to this phase."
     },
     {
       "phase": 4,

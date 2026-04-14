@@ -54,7 +54,7 @@ public final class NativeAppModel: ObservableObject {
 
     public let configuration: NativeAppConfiguration
 
-    private let kindergartenRepository: KindergartenJSONRepository
+    private let kindergartenRepository: KindergartenRepository
     private let reviewRepository: ReviewRepository
     private let vacancyRepository: VacancyRepository
     private let searchEngine: KindergartenSearchEngine
@@ -75,7 +75,7 @@ public final class NativeAppModel: ObservableObject {
     private var currentDeviceLocationTaskID = 0
 
     public init(
-        kindergartenRepository: KindergartenJSONRepository,
+        kindergartenRepository: KindergartenRepository,
         reviewRepository: ReviewRepository,
         vacancyRepository: VacancyRepository = .empty,
         searchEngine: KindergartenSearchEngine = KindergartenSearchEngine(),
@@ -222,7 +222,7 @@ public final class NativeAppModel: ObservableObject {
         let bundledLoader = BundledJSONResourceLoader(bundle: bundle)
         let remoteLoader = RemoteJSONLoader(session: session)
 
-        let kindergartenRepository = KindergartenJSONRepository {
+        let kindergartenRepository = KindergartenRepository {
             try bundledLoader.data(named: configuration.kindergartensResourceName)
         }
 
@@ -347,7 +347,7 @@ public final class NativeAppModel: ObservableObject {
         )
 
         return NativeAppModel(
-            kindergartenRepository: KindergartenJSONRepository {
+            kindergartenRepository: KindergartenRepository {
                 Data()
             },
             reviewRepository: ReviewRepository(localLoader: { Data() }),
@@ -381,10 +381,14 @@ public final class NativeAppModel: ObservableObject {
         catalogError = nil
         defer { isCatalogLoading = false }
 
-        do {
-            let loaded = try await kindergartenRepository.load()
-            allKindergartens = loaded
-            kindergartenLookup = Dictionary(uniqueKeysWithValues: loaded.map { ($0.kindercode, $0) })
+        await kindergartenRepository.load()
+
+        if let repoError = kindergartenRepository.error {
+            catalogError = repoError
+            results = []
+        } else {
+            allKindergartens = kindergartenRepository.kindergartens
+            kindergartenLookup = kindergartenRepository.lookup
             refresh()
             refreshSearchSuggestions()
 
@@ -392,9 +396,6 @@ public final class NativeAppModel: ObservableObject {
                 self.pendingSearchDeepLinkQuery = nil
                 applySearchDeepLink(query: pendingSearchDeepLinkQuery)
             }
-        } catch {
-            catalogError = error.localizedDescription
-            results = []
         }
     }
 
@@ -404,10 +405,12 @@ public final class NativeAppModel: ObservableObject {
         reviewsError = nil
         defer { isReviewsLoading = false }
 
-        do {
-            reviewsData = try await reviewRepository.load()
-        } catch {
-            reviewsError = error.localizedDescription
+        await reviewRepository.load()
+
+        if let repoError = reviewRepository.error {
+            reviewsError = repoError
+        } else {
+            reviewsData = reviewRepository.reviewsData
         }
     }
 
@@ -417,10 +420,12 @@ public final class NativeAppModel: ObservableObject {
         vacancyError = nil
         defer { isVacancyLoading = false }
 
-        do {
-            vacancyData = try await vacancyRepository.load()
-        } catch {
-            vacancyError = error.localizedDescription
+        await vacancyRepository.load()
+
+        if let repoError = vacancyRepository.error {
+            vacancyError = repoError
+        } else {
+            vacancyData = vacancyRepository.vacancyData
         }
     }
 
