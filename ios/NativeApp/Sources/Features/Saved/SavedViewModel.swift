@@ -1,0 +1,109 @@
+import Domain
+import Foundation
+import Models
+import Observation
+import Services
+
+@Observable
+@MainActor
+public final class SavedViewModel {
+    private let favoriteRepo: any FavoriteStoring
+    private let recentSearchRepo: any RecentSearchStoring
+    private let kindergartenRepo: any KindergartenProviding
+    private let compareRepo: any CompareStoring
+    private let reviewRepo: any ReviewProviding
+    private let analytics: AnalyticsTracking?
+    private let router: AppRouter
+
+    // Undo state (local to this ViewModel)
+    public var favoriteUndoItems: [IndexedFavoriteItem]?
+    public var recentSearchUndoItems: [IndexedRecentSearch]?
+
+    public init(
+        favoriteRepo: any FavoriteStoring,
+        recentSearchRepo: any RecentSearchStoring,
+        kindergartenRepo: any KindergartenProviding,
+        compareRepo: any CompareStoring,
+        reviewRepo: any ReviewProviding,
+        analytics: AnalyticsTracking? = nil,
+        router: AppRouter
+    ) {
+        self.favoriteRepo = favoriteRepo
+        self.recentSearchRepo = recentSearchRepo
+        self.kindergartenRepo = kindergartenRepo
+        self.compareRepo = compareRepo
+        self.reviewRepo = reviewRepo
+        self.analytics = analytics
+        self.router = router
+    }
+
+    // MARK: - Computed Properties
+
+    public var favoriteKindergartens: [Kindergarten] {
+        let lookup = Dictionary(
+            uniqueKeysWithValues: kindergartenRepo.kindergartens.map { ($0.kindercode, $0) }
+        )
+        return favoriteRepo.favorites.compactMap { item in
+            lookup[item.kindercode].map { Kindergarten(raw: $0, distance: -1) }
+        }
+    }
+
+    // MARK: - Favorite Actions
+
+    public func deleteFavorite(atOffsets offsets: IndexSet) {
+        let removed = favoriteRepo.delete(atOffsets: offsets)
+        guard !removed.isEmpty else { return }
+        favoriteUndoItems = removed
+    }
+
+    public func undoFavoriteDelete() {
+        guard let items = favoriteUndoItems else { return }
+        favoriteRepo.restore(items)
+        favoriteUndoItems = nil
+    }
+
+    public func toggleFavorite(for kindergarten: Kindergarten) {
+        let wasFavorite = favoriteRepo.isFavorite(kindergarten.kindercode)
+        analytics?.track(event: .favoriteToggled, properties: [
+            "kindercode": kindergarten.kindercode, "favorited": "\(!wasFavorite)",
+        ])
+        favoriteRepo.toggle(for: kindergarten)
+    }
+
+    // MARK: - Compare Actions
+
+    public func toggleCompare(for kindergarten: Kindergarten) {
+        let result = compareRepo.toggle(id: kindergarten.kindercode)
+        switch result {
+        case .added:
+            analytics?.track(event: .compareToggled, properties: [
+                "kindercode": kindergarten.kindercode, "selected": "true",
+            ])
+            router.showToast(.success("비교에 담았어요"))
+        case .removed:
+            analytics?.track(event: .compareToggled, properties: [
+                "kindercode": kindergarten.kindercode, "selected": "false",
+            ])
+            router.showToast(.success("비교에서 뺐어요"))
+        case .limitReached:
+            router.showToast(.warning("비교는 최대 3곳까지 가능해요"))
+        }
+    }
+
+    // MARK: - Recent Search Actions
+
+    public func deleteRecentSearch(_ search: RecentSearch) {
+        guard let index = recentSearchRepo.recentSearches.firstIndex(where: {
+            $0.id == search.id || ($0.label == search.label && $0.coordinates == search.coordinates)
+        }) else { return }
+        let removed = recentSearchRepo.delete(atOffsets: IndexSet(integer: index))
+        guard !removed.isEmpty else { return }
+        recentSearchUndoItems = removed
+    }
+
+    public func restoreRecentSearch(_ search: RecentSearch) {
+        guard let items = recentSearchUndoItems else { return }
+        recentSearchRepo.restore(items)
+        recentSearchUndoItems = nil
+    }
+}
