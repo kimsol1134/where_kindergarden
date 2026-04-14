@@ -1,0 +1,2426 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where Kindergarten iOS Liquid Glass Mockup</title>
+    <style>
+      :root {
+        --bg-top: #dff2ff;
+        --bg-mid: #eef7f2;
+        --bg-bottom: #fff8ec;
+        --screen-top: #eaf5ff;
+        --screen-mid: #f4f7fa;
+        --screen-bottom: #fff9ef;
+        --ink-strong: #10233c;
+        --ink: #27405f;
+        --ink-soft: #62758f;
+        --trust-rgb: 37 94 143;
+        --sage-rgb: 94 160 110;
+        --gold-rgb: 239 198 107;
+        --accent-sky-rgb: 73 141 255;
+        --accent-leaf-rgb: 100 186 132;
+        --accent-sun-rgb: 255 208 120;
+        --line-soft: rgba(255, 255, 255, 0.58);
+        --line-strong: rgba(255, 255, 255, 0.82);
+        --glass-fill: rgba(255, 255, 255, 0.5);
+        --glass-strong: rgba(255, 255, 255, 0.72);
+        --glass-shadow: 0 24px 80px rgba(42, 74, 104, 0.18);
+        --sage: #5ea06e;
+        --sage-deep: #396f52;
+        --trust: #255e8f;
+        --trust-soft: #d8ecff;
+        --sand: #d7c5a7;
+        --sand-deep: #b49e7f;
+        --gold: #efc66b;
+        --coral: #f18873;
+        --brand-top: #255e8f;
+        --brand-bottom: #1d4b75;
+        --sage-top: #63af7b;
+        --sage-bottom: #37724f;
+        --warm-ink: #8b6522;
+        --solid-card: rgba(255, 255, 255, 0.94);
+        --solid-card-alt: #f4f8fc;
+        --solid-warm: #fff8ef;
+        --radius-xl: 34px;
+        --radius-lg: 26px;
+        --radius-md: 20px;
+        --radius-sm: 14px;
+        --phone-width: 344px;
+        --phone-height: 744px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        font-family:
+          "SF Pro Display",
+          "SF Pro Text",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Apple SD Gothic Neo",
+          "Pretendard",
+          sans-serif;
+        color: var(--ink-strong);
+        background: var(--bg-mid);
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      .ambient {
+        position: fixed;
+        inset: auto;
+        pointer-events: none;
+        filter: blur(12px);
+        opacity: 0.9;
+      }
+
+      .ambient.one {
+        top: 110px;
+        left: -70px;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: rgb(var(--accent-leaf-rgb) / 0.18);
+      }
+
+      .ambient.two {
+        right: -40px;
+        top: 420px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: rgb(var(--accent-sky-rgb) / 0.17);
+      }
+
+      .ambient.three {
+        left: 24%;
+        bottom: -80px;
+        width: 340px;
+        height: 200px;
+        border-radius: 999px;
+        background: rgb(var(--accent-sun-rgb) / 0.18);
+      }
+
+      .page {
+        position: relative;
+        max-width: 1520px;
+        margin: 0 auto;
+        padding: 36px 28px 48px;
+      }
+
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.58);
+        border: 1px solid var(--line-soft);
+        box-shadow: var(--glass-shadow);
+        backdrop-filter: blur(28px) saturate(160%);
+        -webkit-backdrop-filter: blur(28px) saturate(160%);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 34px;
+        border-radius: 36px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -90px;
+        right: -60px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: rgb(var(--accent-sky-rgb) / 0.16);
+      }
+
+      .hero-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.7);
+        color: var(--trust);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--sage);
+        box-shadow: 0 0 0 6px rgb(var(--sage-rgb) / 0.12);
+      }
+
+      h1 {
+        margin: 20px 0 12px;
+        font-size: clamp(2rem, 4vw, 3.9rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+      }
+
+      .hero-copy p {
+        margin: 0;
+        max-width: 760px;
+        color: var(--ink);
+        font-size: 18px;
+        line-height: 1.62;
+      }
+
+      .hero-points {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .hero-points span,
+      .top-note span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.66);
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .hero-points span::before,
+      .top-note span::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--sage);
+      }
+
+      .summary-stack {
+        display: grid;
+        gap: 14px;
+      }
+
+      .summary-card {
+        padding: 18px 18px 20px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.62);
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        backdrop-filter: blur(24px) saturate(150%);
+        -webkit-backdrop-filter: blur(24px) saturate(150%);
+      }
+
+      .summary-card .label {
+        color: var(--ink-soft);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .summary-card strong {
+        display: block;
+        margin-top: 10px;
+        font-size: 22px;
+        line-height: 1.25;
+        letter-spacing: -0.03em;
+      }
+
+      .summary-card p {
+        margin: 10px 0 0;
+        color: var(--ink);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .workspace {
+        display: grid;
+        grid-template-columns: 340px minmax(0, 1fr);
+        gap: 24px;
+        margin-top: 24px;
+      }
+
+      .review-panel {
+        position: sticky;
+        top: 24px;
+        align-self: start;
+        padding: 22px;
+        border-radius: 32px;
+      }
+
+      .review-panel h2 {
+        margin: 8px 0 10px;
+        font-size: 28px;
+        letter-spacing: -0.05em;
+      }
+
+      .review-panel > p {
+        margin: 0 0 18px;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+
+      .meta-group {
+        display: grid;
+        gap: 12px;
+      }
+
+      .meta-card {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.58);
+        border: 1px solid rgba(255, 255, 255, 0.72);
+      }
+
+      .meta-card .meta-label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 11px;
+        font-weight: 800;
+        color: var(--ink-soft);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .meta-card p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--ink-strong);
+      }
+
+      .scenario-tabs {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .scenario-tab {
+        width: 100%;
+        padding: 14px 16px;
+        border: 0;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.48);
+        color: var(--ink-strong);
+        text-align: left;
+        font: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .scenario-tab:hover,
+      .scenario-tab:focus-visible {
+        transform: translateY(-1px);
+        background: rgba(255, 255, 255, 0.68);
+        box-shadow: 0 12px 30px rgb(var(--trust-rgb) / 0.12);
+        outline: none;
+      }
+
+      .scenario-tab.active {
+        background: var(--trust);
+        color: white;
+        box-shadow: 0 18px 32px rgb(var(--trust-rgb) / 0.24);
+      }
+
+      .scenario-tab small {
+        display: block;
+        margin-top: 4px;
+        opacity: 0.82;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .stage {
+        min-width: 0;
+        padding: 24px;
+        border-radius: 32px;
+      }
+
+      .stage-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 18px;
+      }
+
+      .stage-head h3 {
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: -0.05em;
+      }
+
+      .stage-head p {
+        margin: 6px 0 0;
+        color: var(--ink);
+        font-size: 15px;
+      }
+
+      .top-note {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .screen-group {
+        display: none;
+        animation: fade-up 280ms ease;
+      }
+
+      .screen-group.active {
+        display: block;
+      }
+
+      .screen-group.preview-active {
+        display: block;
+      }
+
+      .phones {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 22px;
+      }
+
+      .phone-wrap {
+        width: min(var(--phone-width), 100%);
+      }
+
+      .phone-caption {
+        margin-bottom: 10px;
+      }
+
+      .phone-caption strong {
+        display: block;
+        font-size: 18px;
+        letter-spacing: -0.04em;
+      }
+
+      .phone-caption p {
+        margin: 4px 0 0;
+        font-size: 13px;
+        line-height: 1.55;
+        color: var(--ink);
+      }
+
+      .device {
+        position: relative;
+        width: var(--phone-width);
+        height: var(--phone-height);
+        padding: 12px;
+        border-radius: 44px;
+        background: #101822;
+        box-shadow:
+          0 30px 80px rgba(22, 34, 48, 0.28),
+          inset 0 2px 2px rgba(255, 255, 255, 0.08),
+          inset 0 -2px 8px rgba(0, 0, 0, 0.35);
+      }
+
+      .device::before {
+        content: "";
+        position: absolute;
+        inset: 9px;
+        border-radius: 36px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        pointer-events: none;
+      }
+
+      .screen {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 34px;
+        background: var(--screen-mid);
+      }
+
+      .statusbar {
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        right: 20px;
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(16, 35, 60, 0.92);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .island {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        z-index: 21;
+        width: 124px;
+        height: 30px;
+        transform: translateX(-50%);
+        border-radius: 999px;
+        background: #0a0e16;
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+      }
+
+      .screen-inner {
+        position: relative;
+        height: 100%;
+        padding: 54px 14px 18px;
+      }
+
+      .map-surface {
+        position: absolute;
+        inset: 0;
+        background: var(--screen-top);
+      }
+
+      .map-surface::before,
+      .map-surface::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      .map-surface::before {
+        background: none;
+        opacity: 0;
+      }
+
+      .map-surface::after {
+        background: none;
+      }
+
+      .map-pin {
+        position: absolute;
+        z-index: 4;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 42px;
+        height: 42px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 18px 24px rgba(31, 69, 105, 0.16);
+        color: var(--trust);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .map-pin.primary {
+        background: var(--sage);
+        color: white;
+      }
+
+      .map-pin.small {
+        min-width: 34px;
+        height: 34px;
+        padding: 0 12px;
+        font-size: 12px;
+      }
+
+      .glass-bar,
+      .glass-card {
+        border: 1px solid var(--line-strong);
+        background: rgba(255, 255, 255, 0.68);
+        backdrop-filter: blur(28px) saturate(160%);
+        -webkit-backdrop-filter: blur(28px) saturate(160%);
+        box-shadow: 0 18px 30px rgb(var(--trust-rgb) / 0.12);
+      }
+
+      .glass-bar {
+        border-radius: 28px;
+      }
+
+      .glass-card {
+        border-radius: 24px;
+      }
+
+      .search-shell {
+        position: relative;
+        z-index: 8;
+        padding: 14px;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .spread {
+        justify-content: space-between;
+      }
+
+      .mini-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--ink);
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .mini-pill .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--sage);
+      }
+
+      .location-stack strong {
+        display: block;
+        font-size: 13px;
+        letter-spacing: -0.03em;
+      }
+
+      .location-stack span {
+        display: block;
+        margin-top: 2px;
+        color: var(--ink-soft);
+        font-size: 11px;
+      }
+
+      .search-input {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 12px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.62);
+      }
+
+      .search-icon {
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--trust);
+        border-radius: 50%;
+        position: relative;
+        opacity: 0.9;
+      }
+
+      .search-icon::after {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--trust);
+        right: -5px;
+        bottom: -2px;
+        transform: rotate(42deg);
+      }
+
+      .search-input span {
+        color: rgba(39, 64, 95, 0.78);
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .filter-rail {
+        position: relative;
+        z-index: 8;
+        display: flex;
+        gap: 8px;
+        overflow: hidden;
+        margin: 12px 2px 0;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.78);
+        color: var(--ink);
+        font-size: 11px;
+        font-weight: 800;
+        white-space: nowrap;
+        box-shadow: 0 12px 24px rgb(var(--trust-rgb) / 0.08);
+      }
+
+      .chip.active {
+        background: var(--trust);
+        color: white;
+      }
+
+      .sheet {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 82px;
+        z-index: 7;
+        padding: 12px 12px 14px;
+        border-radius: 30px 30px 0 0;
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(28px) saturate(165%);
+        -webkit-backdrop-filter: blur(28px) saturate(165%);
+        border-top: 1px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 -18px 34px rgba(42, 67, 97, 0.12);
+      }
+
+      .sheet-handle {
+        width: 42px;
+        height: 5px;
+        margin: 0 auto 12px;
+        border-radius: 999px;
+        background: rgba(75, 101, 132, 0.2);
+      }
+
+      .sheet h4,
+      .section-title {
+        margin: 0;
+        font-size: 17px;
+        letter-spacing: -0.04em;
+      }
+
+      .sheet-sub {
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 12px;
+      }
+
+      .recommend-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgb(var(--trust-rgb) / 0.11);
+        color: var(--trust);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .recommend-badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--trust);
+      }
+
+      .solid-card {
+        padding: 14px;
+        border-radius: 22px;
+        background: var(--solid-card);
+        box-shadow: 0 16px 24px rgba(45, 70, 102, 0.08);
+      }
+
+      .solid-card + .solid-card {
+        margin-top: 10px;
+      }
+
+      .school-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .school-header strong {
+        display: block;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+      }
+
+      .school-header span {
+        display: block;
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 11px;
+      }
+
+      .distance-pill {
+        flex-shrink: 0;
+        align-self: flex-start;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(38, 101, 157, 0.11);
+        color: var(--trust);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .badge-row,
+      .metric-row,
+      .stack-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .soft-badge {
+        padding: 7px 9px;
+        border-radius: 999px;
+        background: var(--trust-soft);
+        color: var(--trust);
+        font-size: 10px;
+        font-weight: 900;
+      }
+
+      .soft-badge.sage {
+        background: rgb(var(--sage-rgb) / 0.13);
+        color: var(--sage-deep);
+      }
+
+      .soft-badge.gold {
+        background: rgb(var(--gold-rgb) / 0.18);
+        color: var(--warm-ink);
+      }
+
+      .trust-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+        color: var(--ink-soft);
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .trust-line span {
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: #f5f8fb;
+      }
+
+      .compare-bar {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 104px;
+        z-index: 8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 16px;
+      }
+
+      .compare-bar strong {
+        display: block;
+        font-size: 13px;
+        letter-spacing: -0.03em;
+      }
+
+      .compare-bar span {
+        display: block;
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 10px;
+      }
+
+      .compare-count {
+        padding: 9px 11px;
+        border-radius: 999px;
+        background: var(--trust);
+        color: white;
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .tabbar {
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 10px 8px 16px;
+        border-radius: 26px;
+      }
+
+      .tab-item {
+        text-align: center;
+        color: rgba(39, 64, 95, 0.72);
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      .tab-item .tab-dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 auto 6px;
+        border-radius: 50%;
+        background: rgb(var(--trust-rgb) / 0.3);
+      }
+
+      .tab-item.active {
+        color: var(--trust);
+      }
+
+      .tab-item.active .tab-dot {
+        background: var(--sage);
+      }
+
+      .dim-layer {
+        position: absolute;
+        inset: 0;
+        background: rgba(9, 20, 34, 0.18);
+        z-index: 5;
+      }
+
+      .large-sheet {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 72%;
+        z-index: 9;
+        padding: 12px 14px 22px;
+        border-radius: 34px 34px 0 0;
+        background: rgba(255, 255, 255, 0.93);
+        backdrop-filter: blur(30px) saturate(165%);
+        -webkit-backdrop-filter: blur(30px) saturate(165%);
+        border-top: 1px solid rgba(255, 255, 255, 0.95);
+      }
+
+      .filter-section {
+        margin-top: 14px;
+        padding: 14px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .section-kicker {
+        margin-bottom: 10px;
+        color: var(--ink-soft);
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .segmented,
+      .choice-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .segmented span,
+      .choice-grid span {
+        padding: 10px 12px;
+        border-radius: 15px;
+        background: #eff4fa;
+        color: var(--ink);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .segmented span.active,
+      .choice-grid span.active {
+        background: var(--trust);
+        color: white;
+      }
+
+      .toggle-row {
+        display: grid;
+        gap: 10px;
+      }
+
+      .toggle-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 14px;
+        border-radius: 18px;
+        background: #f5f8fc;
+      }
+
+      .toggle-item strong {
+        display: block;
+        font-size: 13px;
+      }
+
+      .toggle-item span {
+        display: block;
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 11px;
+      }
+
+      .toggle {
+        position: relative;
+        width: 46px;
+        height: 28px;
+        border-radius: 999px;
+        background: rgba(39, 64, 95, 0.16);
+      }
+
+      .toggle::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      }
+
+      .toggle.on {
+        background: var(--sage);
+      }
+
+      .toggle.on::after {
+        left: 21px;
+      }
+
+      .primary-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 20px;
+        background: var(--trust);
+        color: white;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        box-shadow: 0 20px 30px rgb(var(--trust-rgb) / 0.24);
+      }
+
+      .detail-top {
+        position: absolute;
+        inset: 0 0 auto;
+        height: 250px;
+        background: var(--screen-top);
+      }
+
+      .detail-top::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: none;
+      }
+
+      .floating-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 9px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.76);
+        color: var(--ink);
+        font-size: 11px;
+        font-weight: 900;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .metric {
+        padding: 12px 10px;
+        border-radius: 18px;
+        background: #f5f8fc;
+      }
+
+      .metric .meta-label {
+        margin-bottom: 6px;
+        font-size: 10px;
+        font-weight: 900;
+        color: var(--ink-soft);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 14px;
+        letter-spacing: -0.03em;
+      }
+
+      .cta-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .cta {
+        padding: 13px 10px;
+        border-radius: 18px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .cta.solid {
+        background: var(--sage);
+        color: white;
+      }
+
+      .cta.soft {
+        background: #f2f6fb;
+        color: var(--ink);
+      }
+
+      .summary-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .summary-list .item,
+      .mini-section {
+        padding: 14px;
+        border-radius: 20px;
+        background: var(--solid-card);
+      }
+
+      .summary-list strong,
+      .mini-section strong {
+        display: block;
+        font-size: 13px;
+        letter-spacing: -0.03em;
+      }
+
+      .summary-list p,
+      .mini-section p,
+      .mini-section li {
+        margin: 6px 0 0;
+        color: var(--ink);
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      .mini-section ul {
+        margin: 8px 0 0;
+        padding-left: 16px;
+      }
+
+      .compare-screen {
+        background: var(--screen-top);
+      }
+
+      .compare-stack {
+        display: grid;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .ranking-card {
+        padding: 16px;
+        border-radius: 24px;
+        background: var(--trust);
+        color: white;
+        box-shadow: 0 20px 28px rgb(var(--trust-rgb) / 0.22);
+      }
+
+      .ranking-card strong {
+        display: block;
+        margin-top: 6px;
+        font-size: 20px;
+        letter-spacing: -0.05em;
+      }
+
+      .ranking-card p {
+        margin: 8px 0 0;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .compare-table {
+        padding: 12px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.92);
+      }
+
+      .compare-columns {
+        display: grid;
+        grid-template-columns: 96px repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .column-head,
+      .cell {
+        padding: 10px 8px;
+        border-radius: 16px;
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .column-head {
+        background: #f0f5fb;
+        color: var(--ink);
+        font-weight: 900;
+      }
+
+      .cell {
+        background: #f7fafc;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .cell.label {
+        background: transparent;
+        color: var(--ink-soft);
+        font-weight: 900;
+        padding-left: 0;
+      }
+
+      .cell.highlight {
+        background: rgb(var(--sage-rgb) / 0.14);
+        color: var(--sage-deep);
+      }
+
+      .board {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .stage-card {
+        padding: 14px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .stage-card header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .stage-card header strong {
+        font-size: 14px;
+      }
+
+      .tiny-tag {
+        padding: 6px 8px;
+        border-radius: 999px;
+        background: var(--trust-soft);
+        color: var(--trust);
+        font-size: 10px;
+        font-weight: 900;
+      }
+
+      .mini-school {
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 18px;
+        background: #f7fafc;
+      }
+
+      .mini-school strong {
+        display: block;
+        font-size: 13px;
+      }
+
+      .mini-school span {
+        display: block;
+        margin-top: 4px;
+        color: var(--ink-soft);
+        font-size: 11px;
+      }
+
+      .trust-screen {
+        background: var(--screen-mid);
+      }
+
+      .trust-stack {
+        display: grid;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .trust-card {
+        padding: 14px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.9);
+      }
+
+      .trust-card strong {
+        display: block;
+        font-size: 14px;
+      }
+
+      .trust-card p {
+        margin: 6px 0 0;
+        color: var(--ink);
+        font-size: 12px;
+        line-height: 1.58;
+      }
+
+      .trust-card.emphasis {
+        background: var(--trust);
+        color: white;
+      }
+
+      .trust-card.emphasis p,
+      .trust-card.emphasis .muted {
+        color: rgba(255, 255, 255, 0.84);
+      }
+
+      .footer-note {
+        margin-top: 24px;
+        padding: 20px 24px;
+        border-radius: 28px;
+      }
+
+      .footer-note strong {
+        display: block;
+        font-size: 18px;
+        letter-spacing: -0.04em;
+      }
+
+      .footer-note p {
+        margin: 8px 0 0;
+        color: var(--ink);
+        line-height: 1.66;
+      }
+
+      body.is-preview {
+        overflow: hidden;
+      }
+
+      body.is-preview .ambient,
+      body.is-preview .hero,
+      body.is-preview .review-panel,
+      body.is-preview .footer-note,
+      body.is-preview .stage-head {
+        display: none;
+      }
+
+      body.is-preview .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      body.is-preview .workspace {
+        display: block;
+        margin-top: 0;
+      }
+
+      body.is-preview .stage {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      body.is-preview .phone-caption {
+        display: none;
+      }
+
+      body.is-preview .phones {
+        justify-content: center;
+        gap: 0;
+      }
+
+      body.is-preview .phone-wrap {
+        width: 360px;
+      }
+
+      body.is-preview .device {
+        width: 360px;
+        height: 780px;
+        margin: 0 auto;
+        transform: scale(0.9);
+        transform-origin: top center;
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 1220px) {
+        .hero-grid,
+        .workspace {
+          grid-template-columns: 1fr;
+        }
+
+        .review-panel {
+          position: static;
+        }
+      }
+
+      @media (max-width: 780px) {
+        .page {
+          padding: 20px 14px 32px;
+        }
+
+        .hero,
+        .stage,
+        .review-panel,
+        .footer-note {
+          padding: 18px;
+        }
+
+        .stage-head {
+          display: block;
+        }
+
+        .top-note {
+          justify-content: flex-start;
+          margin-top: 12px;
+        }
+
+        .device {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 344 / 744;
+        }
+
+        .phone-wrap,
+        .device {
+          max-width: 100%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ambient one"></div>
+    <div class="ambient two"></div>
+    <div class="ambient three"></div>
+    <div class="page">
+      <header class="hero glass-panel">
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <span class="eyebrow">Parent-first iOS redesign review</span>
+            <h1>학부모가 믿고 빠르게 고를 수 있는<br />Liquid Glass 기반 네이티브 앱 목업</h1>
+            <p>
+              귀엽고 가벼운 육아 앱보다, 차분하고 전문적인 의사결정 도구에 가깝게 설계했습니다.
+              글래스는 조작 레이어에만 쓰고, 실제 읽어야 하는 데이터와 후기 영역은 솔리드 표면으로
+              분리했습니다.
+            </p>
+            <div class="hero-points">
+              <span>검색, 위치, 필터를 한 레이어로 통합</span>
+              <span>공식 데이터와 후기 신뢰 신호 전면 배치</span>
+              <span>바쁜 부모를 위한 3초 요약 중심 구성</span>
+              <span>보관함을 의사결정 보드로 재정의</span>
+            </div>
+          </section>
+          <section class="summary-stack">
+            <article class="summary-card">
+              <span class="label">Design Tone</span>
+              <strong>차분한 세이지, 깊은 블루, 따뜻한 샌드로 신뢰감 강화</strong>
+              <p>젊은 부모 취향을 고려해 세련되고 부드럽지만, 장난스럽지 않은 톤으로 맞췄습니다.</p>
+            </article>
+            <article class="summary-card">
+              <span class="label">Liquid Glass Rule</span>
+              <strong>탭 바, 검색 바, 비교 CTA만 글래스. 본문과 수치는 솔리드.</strong>
+              <p>유리 효과를 전면에 쓰지 않고, 조작 계층만 떠 있게 만들어 시선 우선순위를 분명히 했습니다.</p>
+            </article>
+            <article class="summary-card">
+              <span class="label">Parent UX Rule</span>
+              <strong>“가깝나, 안심되나, 생활이 편한가, 후기가 있나”를 첫 화면에서 답변</strong>
+              <p>거리, 셔틀, 방과후, 놀이공간, 후기, 업데이트 주기를 핵심 신호로 올렸습니다.</p>
+            </article>
+          </section>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="review-panel glass-panel">
+          <span class="eyebrow">Scenario navigator</span>
+          <h2 id="scenario-title">탐색 홈</h2>
+          <p id="scenario-description">
+            지도를 배경으로 두되, 부모가 실제로 조작하는 핵심 도구는 상단 검색 캡슐과 하단 추천 시트에
+            압축했습니다.
+          </p>
+
+          <div class="meta-group">
+            <div class="meta-card">
+              <span class="meta-label">Parent Need</span>
+              <p id="scenario-need">첫 진입 10초 안에 “우리 집 주변에서 어디부터 봐야 하는지” 감을 잡아야 합니다.</p>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">What Changed</span>
+              <p id="scenario-change">검색, 위치, 필터를 흩뿌리지 않고 하나의 유리 캡슐과 한 장의 결과 시트로 정리했습니다.</p>
+            </div>
+            <div class="meta-card">
+              <span class="meta-label">Glass Rule</span>
+              <p id="scenario-glass">조작 레이어만 떠 있고, 결과 카드는 약한 솔리드 카드로 읽기 쉽게 유지합니다.</p>
+            </div>
+          </div>
+
+          <div class="scenario-tabs" role="tablist" aria-label="Mockup scenarios">
+            <button class="scenario-tab active" data-target="explore" type="button">
+              탐색 홈
+              <small>검색, 추천 카드, 비교 CTA</small>
+            </button>
+            <button class="scenario-tab" data-target="filters" type="button">
+              필터 시트
+              <small>거리, 유형, 생활편의, 신뢰 신호</small>
+            </button>
+            <button class="scenario-tab" data-target="detail" type="button">
+              상세 보기
+              <small>3초 요약, 운영, 후기, 액션</small>
+            </button>
+            <button class="scenario-tab" data-target="compare" type="button">
+              비교 화면
+              <small>우리 집 기준 추천 + 비교표</small>
+            </button>
+            <button class="scenario-tab" data-target="saved" type="button">
+              보관함
+              <small>결정 단계별로 묶는 보드형 구조</small>
+            </button>
+            <button class="scenario-tab" data-target="trust" type="button">
+              신뢰센터
+              <small>데이터 출처, 위치, 광고, 접근성</small>
+            </button>
+          </div>
+        </aside>
+
+        <section class="stage glass-panel">
+          <div class="stage-head">
+            <div>
+              <h3>Liquid Glass Mockup Review</h3>
+              <p>화면군 버튼을 눌러 각 시나리오를 전환해 보세요.</p>
+            </div>
+            <div class="top-note">
+              <span>검색은 빠르게</span>
+              <span>결정은 안심되게</span>
+              <span>표현은 iOS답게</span>
+            </div>
+          </div>
+
+          <div class="screen-group active" data-screen="explore">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>탐색 홈</strong>
+                  <p>지도는 배경 역할에 집중하고, 상단 검색 캡슐과 하단 추천 시트가 실제 의사결정 레이어를 맡습니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen">
+                    <div class="map-surface"></div>
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="search-shell glass-bar">
+                        <div class="row spread">
+                          <div class="location-stack">
+                            <strong>역삼동 기준 탐색</strong>
+                            <span>오늘 오전 9시 기준 · 회원가입 없이 바로 보기</span>
+                          </div>
+                          <div class="mini-pill"><span class="dot"></span>현위치</div>
+                        </div>
+                        <div class="search-input">
+                          <span class="search-icon"></span>
+                          <span>주소, 유치원명, 장소명을 입력하세요</span>
+                        </div>
+                      </div>
+
+                      <div class="filter-rail">
+                        <div class="chip active">반경 2km</div>
+                        <div class="chip">국공립 우선</div>
+                        <div class="chip">셔틀 있음</div>
+                        <div class="chip">방과후</div>
+                        <div class="chip">필터 4</div>
+                      </div>
+
+                      <div class="map-pin primary" style="top: 190px; left: 74px;">1</div>
+                      <div class="map-pin small" style="top: 250px; left: 210px;">2</div>
+                      <div class="map-pin small" style="top: 318px; left: 118px;">3</div>
+                      <div class="map-pin small" style="top: 212px; left: 252px;">후기</div>
+
+                      <div class="compare-bar glass-card">
+                        <div>
+                          <strong>비교 중 2곳</strong>
+                          <span>해솔누리유치원 · 숲마루유치원</span>
+                        </div>
+                        <div class="compare-count">비교 보기</div>
+                      </div>
+
+                      <div class="sheet">
+                        <div class="sheet-handle"></div>
+                        <div class="recommend-badge">3초 추천</div>
+                        <h4>역삼동에서 먼저 볼 3곳</h4>
+                        <div class="sheet-sub">가까움, 생활 편의, 공식 데이터 안정성, 후기 신호를 함께 반영</div>
+
+                        <div class="solid-card">
+                          <div class="school-header">
+                            <div>
+                              <strong>해솔누리유치원</strong>
+                              <span>역삼동 · 공식 웹사이트 있음</span>
+                            </div>
+                            <div class="distance-pill">도보 8분</div>
+                          </div>
+                          <div class="badge-row">
+                            <span class="soft-badge sage">국공립</span>
+                            <span class="soft-badge sage">셔틀 있음</span>
+                            <span class="soft-badge sage">방과후 운영</span>
+                            <span class="soft-badge gold">후기 12</span>
+                          </div>
+                          <div class="trust-line">
+                            <span>공식 데이터</span>
+                            <span>업데이트 3일 전</span>
+                            <span>실내놀이 184㎡</span>
+                          </div>
+                        </div>
+
+                        <div class="solid-card">
+                          <div class="school-header">
+                            <div>
+                              <strong>숲마루유치원</strong>
+                              <span>차량 6분 · 부모 후기 반응 좋음</span>
+                            </div>
+                            <div class="distance-pill">1.4km</div>
+                          </div>
+                          <div class="badge-row">
+                            <span class="soft-badge">사립</span>
+                            <span class="soft-badge sage">셔틀 있음</span>
+                            <span class="soft-badge">현원 여유</span>
+                            <span class="soft-badge gold">후기 9</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tabbar glass-bar">
+                        <div class="tab-item active"><div class="tab-dot"></div>탐색</div>
+                        <div class="tab-item"><div class="tab-dot"></div>비교</div>
+                        <div class="tab-item"><div class="tab-dot"></div>보관함</div>
+                        <div class="tab-item"><div class="tab-dot"></div>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>탐색 홈 확장 상태</strong>
+                  <p>추천 결과를 무작정 길게 나열하지 않고, “왜 이곳을 먼저 봐야 하는지”를 짧은 근거로 보여줍니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen">
+                    <div class="map-surface"></div>
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="search-shell glass-bar">
+                        <div class="row spread">
+                          <div class="location-stack">
+                            <strong>우리 집에 맞는 곳부터 보기</strong>
+                            <span>주소 저장 안 함 · 검색 기준 위치만 사용</span>
+                          </div>
+                          <div class="mini-pill"><span class="dot"></span>신뢰 우선</div>
+                        </div>
+                        <div class="search-input">
+                          <span class="search-icon"></span>
+                          <span>“유치원, 셔틀, 방과후” 같이 입력해도 됩니다</span>
+                        </div>
+                      </div>
+
+                      <div class="map-pin primary" style="top: 176px; left: 92px;">추천</div>
+                      <div class="map-pin small" style="top: 226px; left: 235px;">후기↑</div>
+                      <div class="map-pin small" style="top: 286px; left: 150px;">신축</div>
+
+                      <div class="sheet" style="bottom: 78px; padding-bottom: 18px;">
+                        <div class="sheet-handle"></div>
+                        <div class="recommend-badge">왜 이곳을 먼저 보나요</div>
+                        <h4>해솔누리유치원이 1순위인 이유</h4>
+                        <div class="sheet-sub">생활 편의와 안심 신호를 함께 충족</div>
+
+                        <div class="solid-card" style="background: var(--solid-warm);">
+                          <div class="stack-row" style="margin-top: 0;">
+                            <span class="soft-badge gold">도보 8분</span>
+                            <span class="soft-badge gold">셔틀 2대</span>
+                            <span class="soft-badge gold">후기 12건</span>
+                          </div>
+                          <div class="summary-list">
+                            <div class="item">
+                              <strong>맞벌이 부모에게 유리</strong>
+                              <p>셔틀과 방과후가 함께 운영되어 등하원 동선 부담이 낮습니다.</p>
+                            </div>
+                            <div class="item">
+                              <strong>안심 신호가 선명함</strong>
+                              <p>공식 홈페이지, 최신 업데이트, 후기 출처가 모두 확인됩니다.</p>
+                            </div>
+                            <div class="item">
+                              <strong>아이 활동 공간이 넉넉함</strong>
+                              <p>실내 놀이공간과 1인당 면적이 인근 평균보다 높게 보입니다.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tabbar glass-bar">
+                        <div class="tab-item active"><div class="tab-dot"></div>탐색</div>
+                        <div class="tab-item"><div class="tab-dot"></div>비교</div>
+                        <div class="tab-item"><div class="tab-dot"></div>보관함</div>
+                        <div class="tab-item"><div class="tab-dot"></div>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-group" data-screen="filters">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>필터 바텀 시트</strong>
+                  <p>칩을 화면 위에 늘어놓지 않고, 거리·유형·생활편의·신뢰 신호로 묶어 빠르게 조정할 수 있게 했습니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen">
+                    <div class="map-surface"></div>
+                    <div class="dim-layer"></div>
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="search-shell glass-bar">
+                        <div class="row spread">
+                          <div class="location-stack">
+                            <strong>필터 6개 선택됨</strong>
+                            <span>결과 14곳 · 너무 넓으면 바로 좁힐 수 있음</span>
+                          </div>
+                          <div class="mini-pill"><span class="dot"></span>초기화</div>
+                        </div>
+                      </div>
+
+                      <div class="large-sheet">
+                        <div class="sheet-handle"></div>
+                        <h4>우리 집 기준으로 더 좁히기</h4>
+                        <div class="sheet-sub">바쁜 부모에게 의미 있는 조건만 우선 노출</div>
+
+                        <section class="filter-section">
+                          <div class="section-kicker">거리와 유형</div>
+                          <div class="segmented">
+                            <span>1km</span>
+                            <span class="active">2km</span>
+                            <span>5km</span>
+                            <span>10km</span>
+                          </div>
+                          <div class="choice-grid" style="margin-top: 10px;">
+                            <span class="active">국공립</span>
+                            <span>사립</span>
+                            <span>가정</span>
+                            <span>전체</span>
+                          </div>
+                        </section>
+
+                        <section class="filter-section">
+                          <div class="section-kicker">생활 편의</div>
+                          <div class="toggle-row">
+                            <div class="toggle-item">
+                              <div>
+                                <strong>셔틀 운영</strong>
+                                <span>등하원 동선이 중요한 가정용</span>
+                              </div>
+                              <div class="toggle on"></div>
+                            </div>
+                            <div class="toggle-item">
+                              <div>
+                                <strong>방과후 운영</strong>
+                                <span>퇴근 시간 여유 확보</span>
+                              </div>
+                              <div class="toggle on"></div>
+                            </div>
+                            <div class="toggle-item">
+                              <div>
+                                <strong>실내 놀이공간</strong>
+                                <span>계절과 날씨 영향 적음</span>
+                              </div>
+                              <div class="toggle"></div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="filter-section">
+                          <div class="section-kicker">부모 신뢰 신호</div>
+                          <div class="toggle-row">
+                            <div class="toggle-item">
+                              <div>
+                                <strong>후기 많은 곳 우선</strong>
+                                <span>맘카페·블로그 후기 존재 여부 반영</span>
+                              </div>
+                              <div class="toggle on"></div>
+                            </div>
+                            <div class="toggle-item">
+                              <div>
+                                <strong>공식 웹사이트 있음</strong>
+                                <span>전화·홈페이지 확인이 쉬운 곳</span>
+                              </div>
+                              <div class="toggle on"></div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="filter-section">
+                          <div class="section-kicker">정렬</div>
+                          <div class="segmented">
+                            <span class="active">거리순</span>
+                            <span>생활 적합도</span>
+                            <span>공간 여유</span>
+                          </div>
+                        </section>
+
+                        <div class="primary-button">조건 적용하고 8곳 보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-group" data-screen="detail">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>상세 시트</strong>
+                  <p>수치 나열보다 “왜 봐야 하는지”를 먼저 알려주고, 운영 정보와 후기, 행동 버튼을 그 다음에 배치했습니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen">
+                    <div class="detail-top"></div>
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner" style="padding-bottom: 22px;">
+                      <div class="row" style="position: relative; z-index: 2; gap: 8px;">
+                        <div class="floating-tag">공식 데이터</div>
+                        <div class="floating-tag">후기 12건</div>
+                        <div class="floating-tag">업데이트 3일 전</div>
+                      </div>
+
+                      <div class="large-sheet" style="height: calc(100% - 120px);">
+                        <div class="sheet-handle"></div>
+                        <h4>해솔누리유치원</h4>
+                        <div class="sheet-sub">서울 강남구 역삼동 · 도보 8분 · 국공립</div>
+
+                        <div class="metric-grid">
+                          <div class="metric">
+                            <div class="meta-label">통학</div>
+                            <strong>8분</strong>
+                          </div>
+                          <div class="metric">
+                            <div class="meta-label">후기</div>
+                            <strong>12건</strong>
+                          </div>
+                          <div class="metric">
+                            <div class="meta-label">셔틀</div>
+                            <strong>2대</strong>
+                          </div>
+                          <div class="metric">
+                            <div class="meta-label">방과후</div>
+                            <strong>운영</strong>
+                          </div>
+                        </div>
+
+                        <div class="cta-row">
+                          <div class="cta soft">찜하기</div>
+                          <div class="cta solid">비교 추가</div>
+                          <div class="cta soft">전화</div>
+                        </div>
+
+                        <div class="summary-list">
+                          <div class="item" style="background: var(--solid-warm);">
+                            <strong>왜 먼저 볼 만한가</strong>
+                            <p>맞벌이 가정에 유리한 셔틀과 방과후 조합, 확인 가능한 공식 채널, 비교적 많은 후기 신호가 함께 있습니다.</p>
+                          </div>
+                          <div class="item">
+                            <strong>생활 리듬</strong>
+                            <p>운영시간 08:30-17:30, 셔틀 2대, 방과후 운영. 퇴근 동선과 등하원 부담을 함께 고려하기 좋습니다.</p>
+                          </div>
+                          <div class="item">
+                            <strong>공간과 시설</strong>
+                            <p>1인당 면적 5.8㎡, 실내 놀이 184㎡, CCTV 18대, 건물 2018년 준공.</p>
+                          </div>
+                        </div>
+
+                        <div class="mini-section">
+                          <strong>부모 후기에서 자주 언급된 점</strong>
+                          <ul>
+                            <li>등하원 응대가 안정적이고 셔틀 커뮤니케이션이 빠름</li>
+                            <li>실내 활동 프로그램이 많아 날씨 영향이 적음</li>
+                            <li>행사 안내가 체계적이라는 언급이 반복됨</li>
+                          </ul>
+                        </div>
+
+                        <div class="mini-section">
+                          <strong>바로 할 수 있는 확인</strong>
+                          <p>공식 홈페이지, 지도 보기, 전화하기, 비교 추가를 한 줄 액션으로 제공해 탐색 맥락을 끊지 않습니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-group" data-screen="compare">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>비교 화면</strong>
+                  <p>표만 보는 화면이 아니라, “우리 집 기준 어느 곳이 더 맞아 보이는지”를 먼저 제안하는 비교 화면입니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen compare-screen">
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="row spread">
+                        <div class="location-stack">
+                          <strong>우리 집 비교</strong>
+                          <span>최대 3곳 · 지금은 3곳 비교 중</span>
+                        </div>
+                        <div class="mini-pill"><span class="dot"></span>공유</div>
+                      </div>
+
+                      <div class="compare-stack">
+                        <div class="ranking-card">
+                          <span class="section-kicker" style="color: rgba(255,255,255,0.72); margin-bottom: 0;">best fit</span>
+                          <strong>해솔누리유치원이 1순위</strong>
+                          <p>거리, 공식 정보, 후기 수, 생활 편의가 가장 균형 있게 맞습니다. 맞벌이 가정 기준으로는 숲마루보다 한 단계 안정적입니다.</p>
+                        </div>
+
+                        <div class="compare-table">
+                          <h4>핵심 비교</h4>
+                          <div class="compare-columns">
+                            <div class="column-head"></div>
+                            <div class="column-head">해솔누리</div>
+                            <div class="column-head">숲마루</div>
+                            <div class="column-head">채움별</div>
+
+                            <div class="cell label">통학</div>
+                            <div class="cell highlight">도보 8분</div>
+                            <div class="cell">차량 6분</div>
+                            <div class="cell">차량 11분</div>
+
+                            <div class="cell label">셔틀</div>
+                            <div class="cell highlight">2대</div>
+                            <div class="cell highlight">2대</div>
+                            <div class="cell">없음</div>
+
+                            <div class="cell label">방과후</div>
+                            <div class="cell highlight">운영</div>
+                            <div class="cell highlight">운영</div>
+                            <div class="cell">미운영</div>
+
+                            <div class="cell label">후기</div>
+                            <div class="cell highlight">12건</div>
+                            <div class="cell">9건</div>
+                            <div class="cell">3건</div>
+
+                            <div class="cell label">공간</div>
+                            <div class="cell">5.8㎡</div>
+                            <div class="cell highlight">6.1㎡</div>
+                            <div class="cell">4.7㎡</div>
+                          </div>
+                        </div>
+
+                        <div class="mini-section">
+                          <strong>한 줄 판단</strong>
+                          <p>통학과 후기 신뢰가 중요하면 해솔누리, 넓은 공간을 더 우선하면 숲마루가 대안입니다.</p>
+                        </div>
+                      </div>
+
+                      <div class="tabbar glass-bar">
+                        <div class="tab-item"><div class="tab-dot"></div>탐색</div>
+                        <div class="tab-item active"><div class="tab-dot"></div>비교</div>
+                        <div class="tab-item"><div class="tab-dot"></div>보관함</div>
+                        <div class="tab-item"><div class="tab-dot"></div>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-group" data-screen="saved">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>보관함을 결정 보드로 전환</strong>
+                  <p>그냥 저장 리스트가 아니라, “이번 주 볼 곳”, “상담 예정”, “최종 비교” 단계로 옮겨가며 판단을 정리합니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen">
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="row spread">
+                        <div class="location-stack">
+                          <strong>결정 보드</strong>
+                          <span>보관함 6곳 · 이번 주 우선 검토 2곳</span>
+                        </div>
+                        <div class="mini-pill"><span class="dot"></span>정리 추천</div>
+                      </div>
+
+                      <div class="board">
+                        <div class="stage-card">
+                          <header>
+                            <strong>이번 주 먼저 볼 곳</strong>
+                            <span class="tiny-tag">2곳</span>
+                          </header>
+                          <div class="mini-school">
+                            <strong>해솔누리유치원</strong>
+                            <span>도보 8분 · 후기 12건 · 공식 홈페이지 있음</span>
+                          </div>
+                          <div class="mini-school">
+                            <strong>숲마루유치원</strong>
+                            <span>차량 6분 · 셔틀 2대 · 실내놀이 넓음</span>
+                          </div>
+                        </div>
+
+                        <div class="stage-card">
+                          <header>
+                            <strong>상담 예정</strong>
+                            <span class="tiny-tag">1곳</span>
+                          </header>
+                          <div class="mini-school">
+                            <strong>채움별유치원</strong>
+                            <span>전화 상담 메모 필요 · 후기 적음</span>
+                          </div>
+                        </div>
+
+                        <div class="stage-card">
+                          <header>
+                            <strong>최종 비교 후보</strong>
+                            <span class="tiny-tag">2곳</span>
+                          </header>
+                          <div class="mini-school">
+                            <strong>해솔누리 vs 숲마루</strong>
+                            <span>통학 안정성 대 공간 여유 비교 중</span>
+                          </div>
+                        </div>
+
+                        <div class="mini-section">
+                          <strong>최근 검색 다시 보기</strong>
+                          <p>역삼동, 도곡동, 대치동 기준 탐색을 원탭으로 복원할 수 있게 유지합니다.</p>
+                        </div>
+                      </div>
+
+                      <div class="tabbar glass-bar">
+                        <div class="tab-item"><div class="tab-dot"></div>탐색</div>
+                        <div class="tab-item"><div class="tab-dot"></div>비교</div>
+                        <div class="tab-item active"><div class="tab-dot"></div>보관함</div>
+                        <div class="tab-item"><div class="tab-dot"></div>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-group" data-screen="trust">
+            <div class="phones">
+              <div class="phone-wrap">
+                <div class="phone-caption">
+                  <strong>신뢰센터</strong>
+                  <p>기존 더보기를 부모용 신뢰센터로 바꿔, 데이터 출처와 위치 처리 기준, 접근성, 문의 경로를 전면에 둡니다.</p>
+                </div>
+                <div class="device">
+                  <div class="screen trust-screen">
+                    <div class="island"></div>
+                    <div class="statusbar"><span>9:41</span><span>5G 82%</span></div>
+                    <div class="screen-inner">
+                      <div class="row spread">
+                        <div class="location-stack">
+                          <strong>신뢰센터</strong>
+                          <span>데이터와 개인정보 처리 기준을 한눈에 확인</span>
+                        </div>
+                        <div class="mini-pill"><span class="dot"></span>문의</div>
+                      </div>
+
+                      <div class="trust-stack">
+                        <div class="trust-card emphasis">
+                          <strong>공식 교육부 데이터 기반</strong>
+                          <p>전국 7,950여 개 기관 정보를 공공 데이터 기준으로 반영하고, 최근 업데이트 시점을 함께 표시합니다.</p>
+                        </div>
+
+                        <div class="trust-card">
+                          <strong>위치 정보는 저장하지 않음</strong>
+                          <p>검색 기준 위치만 사용하고, 회원가입 없이 바로 탐색할 수 있습니다.</p>
+                        </div>
+
+                        <div class="trust-card">
+                          <strong>광고와 추적 안내를 명확히</strong>
+                          <p>광고가 들어가는 경우에도 탐색 데이터와 분리된다는 점, 사용자가 끌 수 있는 권한 안내를 함께 제공합니다.</p>
+                        </div>
+
+                        <div class="trust-card">
+                          <strong>접근성</strong>
+                          <p>더 큰 텍스트, 충분한 대비, VoiceOver 라벨, 탭 대상 최소 크기를 명시해 부모 누구나 편하게 보게 합니다.</p>
+                        </div>
+
+                        <div class="trust-card">
+                          <strong>자주 묻는 질문</strong>
+                          <p class="muted">후기는 어디서 오나요? 데이터는 언제 갱신되나요? 위치 권한이 없어도 쓸 수 있나요?</p>
+                        </div>
+                      </div>
+
+                      <div class="tabbar glass-bar">
+                        <div class="tab-item"><div class="tab-dot"></div>탐색</div>
+                        <div class="tab-item"><div class="tab-dot"></div>비교</div>
+                        <div class="tab-item"><div class="tab-dot"></div>보관함</div>
+                        <div class="tab-item active"><div class="tab-dot"></div>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer-note glass-panel">
+        <strong>검토 포인트</strong>
+        <p>
+          이 목업은 실제 구현 전 단계의 시각 검토용입니다. 방향이 맞다면 다음에는 이 파일을 기준으로
+          SwiftUI 디자인 토큰, 화면별 컴포넌트 구조, iOS 26 `glassEffect` 적용 범위까지 바로 이어서 정리할 수 있습니다.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      const paletteMeta = {
+        "icon-mint": {
+          label: "Icon Mint",
+          vars: {
+            "--bg-top": "#EAF7F2",
+            "--bg-mid": "#F4FBF8",
+            "--bg-bottom": "#FFF9EE",
+            "--screen-top": "#ECF9F4",
+            "--screen-mid": "#F6FBF9",
+            "--screen-bottom": "#FFF9EE",
+            "--ink-strong": "#143334",
+            "--ink": "#29505A",
+            "--ink-soft": "#6B8790",
+            "--trust-rgb": "37 96 108",
+            "--sage-rgb": "48 191 138",
+            "--gold-rgb": "223 190 121",
+            "--accent-sky-rgb": "121 195 214",
+            "--accent-leaf-rgb": "72 213 162",
+            "--accent-sun-rgb": "241 209 145",
+            "--sage": "#2FC08A",
+            "--sage-deep": "#1B7E62",
+            "--trust": "#25606C",
+            "--trust-soft": "#DDF1F0",
+            "--sand": "#D9C9AB",
+            "--sand-deep": "#B59D78",
+            "--gold": "#DFBE79",
+            "--coral": "#EEA08A",
+            "--brand-top": "#25606C",
+            "--brand-bottom": "#1B4953",
+            "--sage-top": "#46D59E",
+            "--sage-bottom": "#24A978",
+            "--warm-ink": "#8A6A2D",
+            "--solid-card-alt": "#EFF8F7",
+            "--solid-warm": "#FFF7EB",
+          },
+        },
+        "jade-harbor": {
+          label: "Jade Harbor",
+          vars: {
+            "--bg-top": "#E7F3F7",
+            "--bg-mid": "#F0F8F6",
+            "--bg-bottom": "#FFF8EF",
+            "--screen-top": "#E9F5F8",
+            "--screen-mid": "#F4FAF8",
+            "--screen-bottom": "#FFF8EF",
+            "--ink-strong": "#132B39",
+            "--ink": "#284A60",
+            "--ink-soft": "#667E90",
+            "--trust-rgb": "42 93 143",
+            "--sage-rgb": "46 182 141",
+            "--gold-rgb": "226 190 126",
+            "--accent-sky-rgb": "93 164 225",
+            "--accent-leaf-rgb": "75 209 166",
+            "--accent-sun-rgb": "241 214 154",
+            "--sage": "#2EB68D",
+            "--sage-deep": "#1E7965",
+            "--trust": "#2A5D8F",
+            "--trust-soft": "#DCEBFA",
+            "--sand": "#D9C8AB",
+            "--sand-deep": "#B2966C",
+            "--gold": "#E2BE7E",
+            "--coral": "#E59786",
+            "--brand-top": "#2A5D8F",
+            "--brand-bottom": "#203F67",
+            "--sage-top": "#56D4A9",
+            "--sage-bottom": "#27A880",
+            "--warm-ink": "#896420",
+            "--solid-card-alt": "#EEF5FC",
+            "--solid-warm": "#FFF7EC",
+          },
+        },
+        "sea-glass-linen": {
+          label: "Sea Glass Linen",
+          vars: {
+            "--bg-top": "#E9F7F4",
+            "--bg-mid": "#F7FBF8",
+            "--bg-bottom": "#FBF5EC",
+            "--screen-top": "#ECF8F5",
+            "--screen-mid": "#F9FCFA",
+            "--screen-bottom": "#FBF6EE",
+            "--ink-strong": "#183036",
+            "--ink": "#35535C",
+            "--ink-soft": "#758790",
+            "--trust-rgb": "31 95 105",
+            "--sage-rgb": "79 200 160",
+            "--gold-rgb": "212 179 129",
+            "--accent-sky-rgb": "146 205 212",
+            "--accent-leaf-rgb": "100 214 176",
+            "--accent-sun-rgb": "232 207 162",
+            "--sage": "#4FC8A0",
+            "--sage-deep": "#297A66",
+            "--trust": "#1F5F69",
+            "--trust-soft": "#DDF1EE",
+            "--sand": "#D7C7AE",
+            "--sand-deep": "#A98E73",
+            "--gold": "#D4B381",
+            "--coral": "#DBA28E",
+            "--brand-top": "#1F5F69",
+            "--brand-bottom": "#184A52",
+            "--sage-top": "#6AD7B2",
+            "--sage-bottom": "#37AE87",
+            "--warm-ink": "#7C6232",
+            "--solid-card-alt": "#EDF8F4",
+            "--solid-warm": "#FDF7EE",
+          },
+        },
+        "mint-quartz": {
+          label: "Mint Quartz",
+          vars: {
+            "--bg-top": "#F0F8F5",
+            "--bg-mid": "#F8FCFA",
+            "--bg-bottom": "#FFF9F3",
+            "--screen-top": "#F2F9F6",
+            "--screen-mid": "#FBFDFC",
+            "--screen-bottom": "#FFF9F3",
+            "--ink-strong": "#183339",
+            "--ink": "#37535A",
+            "--ink-soft": "#788891",
+            "--trust-rgb": "53 111 120",
+            "--sage-rgb": "90 205 170",
+            "--gold-rgb": "225 196 150",
+            "--accent-sky-rgb": "186 216 218",
+            "--accent-leaf-rgb": "117 221 186",
+            "--accent-sun-rgb": "240 219 185",
+            "--sage": "#5ACDAA",
+            "--sage-deep": "#2B7E6B",
+            "--trust": "#356F78",
+            "--trust-soft": "#E5F3F2",
+            "--sand": "#E1D0B7",
+            "--sand-deep": "#B59A78",
+            "--gold": "#E1C496",
+            "--coral": "#E6B3A6",
+            "--brand-top": "#356F78",
+            "--brand-bottom": "#255159",
+            "--sage-top": "#78DCBC",
+            "--sage-bottom": "#42B38E",
+            "--warm-ink": "#876B3D",
+            "--solid-card-alt": "#F1F8F7",
+            "--solid-warm": "#FFF8F0",
+          },
+        },
+        "deep-jade": {
+          label: "Deep Jade",
+          vars: {
+            "--bg-top": "#E8F5F1",
+            "--bg-mid": "#F3FAF7",
+            "--bg-bottom": "#FFF8ED",
+            "--screen-top": "#EAF6F2",
+            "--screen-mid": "#F5FBF8",
+            "--screen-bottom": "#FFF8ED",
+            "--ink-strong": "#112E31",
+            "--ink": "#254A50",
+            "--ink-soft": "#697F86",
+            "--trust-rgb": "27 73 83",
+            "--sage-rgb": "37 169 120",
+            "--gold-rgb": "209 178 112",
+            "--accent-sky-rgb": "103 170 181",
+            "--accent-leaf-rgb": "55 194 144",
+            "--accent-sun-rgb": "228 198 135",
+            "--sage": "#25A978",
+            "--sage-deep": "#16654D",
+            "--trust": "#1B4953",
+            "--trust-soft": "#D9ECE9",
+            "--sand": "#D4C2A0",
+            "--sand-deep": "#9F8561",
+            "--gold": "#D1B270",
+            "--coral": "#D48D79",
+            "--brand-top": "#1B4953",
+            "--brand-bottom": "#12373F",
+            "--sage-top": "#37C290",
+            "--sage-bottom": "#1E8E67",
+            "--warm-ink": "#755722",
+            "--solid-card-alt": "#ECF6F4",
+            "--solid-warm": "#FDF5E9",
+          },
+        },
+      };
+
+      const scenarioMeta = {
+        explore: {
+          title: "탐색 홈",
+          description:
+            "지도를 배경으로 두되, 부모가 실제로 조작하는 핵심 도구는 상단 검색 캡슐과 하단 추천 시트에 압축했습니다.",
+          need: "첫 진입 10초 안에 '우리 집 주변에서 어디부터 봐야 하는지' 감을 잡아야 합니다.",
+          change: "검색, 위치, 필터를 흩뿌리지 않고 하나의 유리 캡슐과 한 장의 결과 시트로 정리했습니다.",
+          glass: "조작 레이어만 떠 있고, 결과 카드는 약한 솔리드 카드로 읽기 쉽게 유지합니다.",
+        },
+        filters: {
+          title: "필터 시트",
+          description:
+            "필터 칩을 계속 스캔하게 만들지 않고, 바쁜 부모가 이해하기 쉬운 그룹형 바텀 시트로 재구성했습니다.",
+          need: "조건이 많아도 '무엇을 먼저 만져야 하는지' 바로 알아야 피로가 줄어듭니다.",
+          change: "거리, 유형, 생활 편의, 신뢰 신호를 분리하고 각 토글의 의미를 짧은 문장으로 붙였습니다.",
+          glass: "시트 전체는 글래스지만, 각 선택 블록은 솔리드 표면으로 나눠 가독성을 확보합니다.",
+        },
+        detail: {
+          title: "상세 보기",
+          description:
+            "시설 항목을 나열하기 전에 '왜 먼저 볼 만한지'와 생활 적합도를 짧게 요약하는 구조입니다.",
+          need: "상세 화면은 정보가 많아도, 부모는 가장 먼저 '우리 집에 맞나'를 알고 싶어 합니다.",
+          change: "3초 요약, 생활 리듬, 공간과 시설, 후기 근거, 행동 버튼 순으로 재정렬했습니다.",
+          glass: "히어로 영역은 가볍게 떠 있고, 실제 정보 블록은 솔리드 카드 위에서 읽게 했습니다.",
+        },
+        compare: {
+          title: "비교 화면",
+          description:
+            "숫자표 중심이 아니라, 비교 결과를 한 줄 판단과 추천 순위로 먼저 읽게 설계했습니다.",
+          need: "부모는 '어느 항목이 우세한지'보다 '그래서 어디가 더 맞는지'를 먼저 원합니다.",
+          change: "상단 추천 카드와 한 줄 판단을 추가하고, 비교표는 핵심 지표만 남겼습니다.",
+          glass: "비교는 읽기 중심이라 전체를 솔리드 쪽으로 두고, 하단 탭 바만 글래스로 유지했습니다.",
+        },
+        saved: {
+          title: "보관함",
+          description:
+            "저장 리스트를 결정 과정 보드로 바꿔, 부모가 실제 판단 단계를 자연스럽게 따라가게 했습니다.",
+          need: "후보가 늘어날수록 저장보다 정리가 더 중요합니다.",
+          change: "이번 주 볼 곳, 상담 예정, 최종 비교 후보로 나누어 행동 맥락을 만들었습니다.",
+          glass: "보관함은 정리와 분류가 목적이므로 카드와 보드 구조를 솔리드하게 두었습니다.",
+        },
+        trust: {
+          title: "신뢰센터",
+          description:
+            "기존의 운영자성 정보 화면 대신, 부모가 확인해야 할 데이터 출처와 프라이버시 기준을 전면에 둔 화면입니다.",
+          need: "젊은 부모는 편리함만큼 '믿을 수 있는지'를 빠르게 확인하고 싶어 합니다.",
+          change: "공식 데이터, 위치 저장 안 함, 광고/추적 안내, 접근성, FAQ를 중심축으로 재배치했습니다.",
+          glass: "신뢰센터는 과장된 효과보다 차분한 여백과 안정감이 중요해 최소한의 글래스만 사용합니다.",
+        },
+      };
+
+      const tabs = document.querySelectorAll(".scenario-tab");
+      const groups = document.querySelectorAll(".screen-group");
+      const title = document.getElementById("scenario-title");
+      const description = document.getElementById("scenario-description");
+      const need = document.getElementById("scenario-need");
+      const change = document.getElementById("scenario-change");
+      const glass = document.getElementById("scenario-glass");
+      const params = new URLSearchParams(window.location.search);
+      const previewMode = params.get("mode") === "palette-preview";
+      const requestedScenario = params.get("scenario") || "explore";
+      const requestedPalette = params.get("palette") || "icon-mint";
+
+      function applyPalette(key) {
+        const palette = paletteMeta[key] || paletteMeta["icon-mint"];
+
+        Object.entries(palette.vars).forEach(([name, value]) => {
+          document.documentElement.style.setProperty(name, value);
+        });
+
+        document.documentElement.dataset.palette = key;
+        document.title = `Where Kindergarten iOS Liquid Glass Mockup · ${palette.label}`;
+      }
+
+      function activateScenario(key) {
+        tabs.forEach((tab) => {
+          tab.classList.toggle("active", tab.dataset.target === key);
+        });
+
+        groups.forEach((group) => {
+          const isMatch = group.dataset.screen === key;
+          group.classList.toggle("active", isMatch && !previewMode);
+          group.classList.toggle("preview-active", isMatch && previewMode);
+        });
+
+        const meta = scenarioMeta[key];
+        title.textContent = meta.title;
+        description.textContent = meta.description;
+        need.textContent = meta.need;
+        change.textContent = meta.change;
+        glass.textContent = meta.glass;
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => activateScenario(tab.dataset.target));
+      });
+
+      if (previewMode) {
+        document.body.classList.add("is-preview");
+      }
+
+      applyPalette(requestedPalette);
+      activateScenario(requestedScenario);
+    </script>
+  </body>
+</html>
