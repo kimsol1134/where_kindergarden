@@ -1,0 +1,79 @@
+{
+  "lifestyle": {
+    "description": "라이프스타일 이미지 - 부모가 유치원 검색 앱 사용 중인 장면",
+    "variants": [
+      {
+        "id": "lifestyle-v1",
+        "scene": "소파에서",
+        "prompt": "A warm, natural-light photograph of a Korean mother in her early 30s sitting on a cozy beige linen sofa in a bright living room. She is casually holding an iPhone 15 in her right hand, tilted slightly toward the camera, with a COMPLETELY BLANK WHITE SCREEN on the phone. She has a calm, focused expression as if browsing something helpful. The living room has soft sage green and cream tones: a knitted throw blanket in muted green draped over the sofa arm, a small wooden side table with a warm cup of tea, and a potted monstera plant nearby. Warm morning sunlight streams through sheer white curtains creating soft shadows. A few children's picture books and wooden educational toys are casually placed on the coffee table. The overall mood is serene, organized, and optimistic. Shot on a 50mm lens with shallow depth of field, portrait orientation 9:16 aspect ratio, photorealistic, editorial quality.",
+        "negative_prompt": "text, watermark, logo, brand name, app interface on phone screen, dark lighting, cold tones, messy room, clutter, artificial lighting, flash photography, overly saturated colors, cartoon, illustration, 3D render"
+      },
+      {
+        "id": "lifestyle-v2",
+        "scene": "식탁에서",
+        "prompt": "A bright, airy photograph of a Korean father in his mid-30s sitting at a clean wooden dining table in a modern Korean apartment kitchen. He holds an iPhone 15 in one hand with a COMPLETELY BLANK WHITE SCREEN visible, and rests his chin lightly on the other hand, looking thoughtfully at the phone. On the table nearby sits a small pastel-colored children's backpack with a cute animal patch, a child's water bottle, and a few kindergarten enrollment papers partially visible. The kitchen background features light wood cabinets, a small herb pot on the windowsill, and soft natural light from a large window. Color palette is warm cream, sage green, and natural wood tones. The atmosphere is calm and domestic, conveying a parent carefully researching for their child's education. Shot on a 35mm lens, natural window light, portrait orientation 9:16 aspect ratio, photorealistic, lifestyle editorial style.",
+        "negative_prompt": "text, watermark, logo, brand name, app interface on phone screen, dark lighting, cold tones, dirty dishes, messy kitchen, artificial lighting, flash, overly posed, stock photo feel, cartoon, illustration, 3D render"
+      },
+      {
+        "id": "lifestyle-v3",
+        "scene": "아이와 함께",
+        "prompt": "A heartwarming, candid photograph of a Korean mother sitting cross-legged on a soft cream-colored rug in a bright playroom floor. She holds an iPhone 15 with a COMPLETELY BLANK WHITE SCREEN in one hand while smiling gently. In the slightly blurred foreground, a 4-year-old child is happily stacking colorful wooden blocks, creating a small tower. The room has warm natural light, pale sage green walls, and a low wooden bookshelf filled with children's books and soft toys in the background. A few scattered crayons and a drawing pad add life to the scene. The mother wears a comfortable cream knit sweater. The overall tone is warm, nurturing, and full of gentle domesticity. The composition places the mother and phone in the middle-third with the child in the lower foreground. Shot on a 50mm lens with natural light, shallow depth of field on the child, portrait orientation 9:16 aspect ratio, photorealistic, editorial family photography.",
+        "negative_prompt": "text, watermark, logo, brand name, app interface on phone screen, dark lighting, cold tones, messy room, plastic toys, bright neon colors, artificial lighting, flash, overly staged, stock photo aesthetic, cartoon, illustration, 3D render, child's face fully visible and identifiable"
+      }
+    ]
+  },
+  "fullscreen_overlay": {
+    "description": "전체화면 UI 오버레이 설정 (Agent 5가 참조)",
+    "screens": [
+      {
+        "id": "02-search-map",
+        "file": "02-search-results.png",
+        "headline": "내 주변 유치원을\n한눈에 찾아보세요",
+        "subtext": "GPS 기반 1/2/5km 반경 검색"
+      },
+      {
+        "id": "03-search-results",
+        "file": "03-compare.png",
+        "headline": "최대 3곳까지\n한 번에 비교해요",
+        "subtext": "정원, 교사 비율, 급식, 통학 차량"
+      },
+      {
+        "id": "04-compare",
+        "file": "03-compare.png",
+        "headline": "비교표로 한눈에\n차이를 확인하세요",
+        "subtext": "어떤 유치원이 우리 아이에게 맞을까?"
+      },
+      {
+        "id": "05-detail",
+        "file": "04-detail.png",
+        "headline": "상세 정보를\n꼼꼼하게 확인하세요",
+        "subtext": "빈자리, 운영시간, 학부모 후기까지"
+      }
+    ],
+    "overlay_config": {
+      "background_color": "#EDF1EC",
+      "text_color": "#18222C",
+      "accent_color": "#66B774",
+      "secondary_text_color": "#516A75",
+      "card_color": "#F6F4ED",
+      "font": "SF Pro Display",
+      "font_weight_headline": "Bold",
+      "font_weight_subtext": "Regular",
+      "headline_size_pt": 28,
+      "subtext_size_pt": 16,
+      "text_position": "top",
+      "band_height_ratio": 0.15,
+      "phone_mockup": {
+        "frame_style": "iPhone 15 Pro",
+        "corner_radius": 50,
+        "shadow": "0 20px 60px rgba(24,34,44,0.15)",
+        "scale": 0.72,
+        "vertical_offset": 0.18
+      },
+      "padding": {
+        "top": 80,
+        "horizontal": 40
+      }
+    }
+  }
+}

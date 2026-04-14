@@ -1,0 +1,20 @@
+{
+	"appId": "com.solkim.kindergarden",
+	"appName": "우리동네 유치원",
+	"webDir": "out",
+	"server": {
+		"androidScheme": "http",
+		"iosScheme": "https"
+	},
+	"plugins": {
+		"SplashScreen": {
+			"backgroundColor": "#ffffff",
+			"launchShowDuration": 2000,
+			"launchAutoHide": true,
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false,
+			"splashFullScreen": true,
+			"splashImmersive": true
+		}
+	}
+}

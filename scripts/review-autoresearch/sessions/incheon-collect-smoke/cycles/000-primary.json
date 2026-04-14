@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-04-07T13:57:41.771Z",
+  "auditPath": "/Users/solkim/Dev/where_kindergarden/scripts/evals/review-audit-v1.jsonl",
+  "totalCount": 8495,
+  "auditedCount": 8495,
+  "remainingCount": 0,
+  "visibleCount": 1932,
+  "visibleVerifiedCount": 1932,
+  "invalidVisibleCount": 0,
+  "visiblePrecision": 1,
+  "byFinalStatus": {
+    "verified": 1932,
+    "mismatch": 472,
+    "advertorial": 0,
+    "generic_info": 4928,
+    "uncertain": 1163,
+    "unaudited": 0
+  },
+  "visibleByFinalStatus": {
+    "verified": 1932,
+    "mismatch": 0,
+    "advertorial": 0,
+    "generic_info": 0,
+    "uncertain": 0,
+    "unaudited": 0
+  }
+}

@@ -1,0 +1,111 @@
+[05:54:11.074] Server  LOG     ✓ Compiled in 5.2s
+[05:54:11.189] Browser ERROR   ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module '@jridgewell/resolve-uri'
+Require stack:
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+gen-mapping@0.3.13/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+remapping@2.3.5/node_modules/@jridgewell/remapping/dist/remapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@tailwindcss+node@4.1.18/node_modules/@tailwindcss/node/dist/index.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@tailwindcss+postcss@4.1.18/node_modules/@tailwindcss/postcss/dist/index.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/chunks/[root-of-the-server]__4f1037f1._.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/chunks/[turbopack]_runtime.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/postcss.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:322:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    [at /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js:3:21]
+    [at Object.<anonymous> (/Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js:17:3)]
+
+Import trace:
+  Client Component Browser:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/globals.css [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+[05:54:11.189] Browser ERROR   ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs:1:1
+Module not found: Can't resolve 'iceberg-js'
+> 1 | import { IcebergRestCatalog } from "iceberg-js";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | //#region src/lib/errors.ts
+  4 | var StorageError = class extends Error {
+
+Import traces:
+  Client Component Browser:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+supabase-js@2.91.0/node_modules/@supabase/supabase-js/dist/index.mjs [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/lib/supabase/client.ts [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/stores/authStore.ts [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Server Component]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+supabase-js@2.91.0/node_modules/@supabase/supabase-js/dist/index.mjs [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/lib/supabase/client.ts [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/stores/authStore.ts [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Server Component]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[05:54:11.189] Browser ERROR   ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module '@jridgewell/resolve-uri'
+Require stack:
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+gen-mapping@0.3.13/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+remapping@2.3.5/node_modules/@jridgewell/remapping/dist/remapping.umd.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@tailwindcss+node@4.1.18/node_modules/@tailwindcss/node/dist/index.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@tailwindcss+postcss@4.1.18/node_modules/@tailwindcss/postcss/dist/index.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/chunks/[root-of-the-server]__4f1037f1._.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/chunks/[turbopack]_runtime.js
+- /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/.next/dev/build/postcss.js
+    [at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)]
+    [at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)]
+    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)]
+    [at Function._load (node:internal/modules/cjs/loader:1192:37)]
+    [at TracingChannel.traceSync (node:diagnostics_channel:322:14)]
+    [at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)]
+    [at Module.require (node:internal/modules/cjs/loader:1463:12)]
+    [at require (node:internal/modules/helpers:147:16)]
+    [at /Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js:3:21]
+    [at Object.<anonymous> (/Users/solkim/Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js:17:3)]
+
+Import trace:
+  Client Component Browser:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/globals.css [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+[05:54:11.189] Browser ERROR   ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs:1:1
+Module not found: Can't resolve 'iceberg-js'
+> 1 | import { IcebergRestCatalog } from "iceberg-js";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | //#region src/lib/errors.ts
+  4 | var StorageError = class extends Error {
+
+Import traces:
+  Client Component Browser:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+supabase-js@2.91.0/node_modules/@supabase/supabase-js/dist/index.mjs [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/lib/supabase/client.ts [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/stores/authStore.ts [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Client Component Browser]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Server Component]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+storage-js@2.91.0/node_modules/@supabase/storage-js/dist/index.mjs [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/node_modules/.pnpm/@supabase+supabase-js@2.91.0/node_modules/@supabase/supabase-js/dist/index.mjs [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/lib/supabase/client.ts [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/stores/authStore.ts [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Client Component SSR]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/components/GlobalProviders.tsx [Server Component]
+    ./Dev/where_kindergarden/.claude/worktrees/clever-yawning-coral/src/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
