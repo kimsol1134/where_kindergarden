@@ -4,12 +4,45 @@
   "prompt": "3-tier layered architecture (Presentation/Logic/Data) 리팩토링. God ViewModel(NativeAppModel 1,265줄) 분해, Domain 레이어 신설, @Observable Repository 도입.",
   "totalPhases": 7,
   "phases": [
-    { "phase": 0, "name": "docs-update", "status": "pending" },
-    { "phase": 1, "name": "foundation", "status": "pending" },
-    { "phase": 2, "name": "domain-logic", "status": "pending" },
-    { "phase": 3, "name": "repositories", "status": "pending" },
-    { "phase": 4, "name": "viewmodels", "status": "pending", "timeout": 1200 },
-    { "phase": 5, "name": "view-rewire", "status": "pending", "timeout": 1200 },
-    { "phase": 6, "name": "tests", "status": "pending" }
-  ]
+    {
+      "phase": 0,
+      "name": "docs-update",
+      "status": "completed",
+      "started_at": "2026-04-14T10:44:24+0900",
+      "completed_at": "2026-04-14T11:00:00+0900"
+    },
+    {
+      "phase": 1,
+      "name": "foundation",
+      "status": "pending"
+    },
+    {
+      "phase": 2,
+      "name": "domain-logic",
+      "status": "pending"
+    },
+    {
+      "phase": 3,
+      "name": "repositories",
+      "status": "pending"
+    },
+    {
+      "phase": 4,
+      "name": "viewmodels",
+      "status": "pending",
+      "timeout": 1200
+    },
+    {
+      "phase": 5,
+      "name": "view-rewire",
+      "status": "pending",
+      "timeout": 1200
+    },
+    {
+      "phase": 6,
+      "name": "tests",
+      "status": "pending"
+    }
+  ],
+  "created_at": "2026-04-14T10:44:24+0900"
 }

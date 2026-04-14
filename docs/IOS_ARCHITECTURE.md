@@ -23,7 +23,7 @@
 
 | 항목 | 값 |
 |------|-----|
-| Swift 파일 | 34개 |
+| Swift 파일 | 35개 |
 | 총 코드 | ~9,900줄 |
 | SPM 타겟 | 4개 (Models, Services, Features, AppShell) |
 | 테스트 파일 | 3개 |
