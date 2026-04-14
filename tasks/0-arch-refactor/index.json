@@ -56,8 +56,12 @@
     {
       "phase": 6,
       "name": "tests",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-04-14T12:38:18+0900",
+      "completed_at": "2026-04-14T13:05:00+0900",
+      "note": "DomainTests (CompareUseCase, SearchUseCase, FitReasonBuilder, DeepLinkUseCase) + NativeAppTests all pass. TEST SUCCEEDED."
     }
   ],
-  "created_at": "2026-04-14T10:44:24+0900"
+  "created_at": "2026-04-14T10:44:24+0900",
+  "completed_at": "2026-04-14T13:05:00+0900"
 }
