@@ -14,7 +14,10 @@
     {
       "phase": 1,
       "name": "foundation",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-04-14T10:46:41+0900",
+      "completed_at": "2026-04-14T10:56:00+0900",
+      "note": "All SPM targets (Models, Domain, Services, Features, AppShell) build clean. 59 NativeAppTests pass. WhereKindergartenNative scheme has pre-existing AppIcon asset error (legacy Capacitor ios/App/App/Assets.xcassets) unrelated to this phase."
     },
     {
       "phase": 2,
