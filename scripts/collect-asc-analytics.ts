@@ -436,9 +436,15 @@ export function saveResult(result: AscCollectionResult, outputDir: string): void
 
 function loadConfig(): AscApiConfig {
   const keyId = process.env.APP_STORE_CONNECT_API_KEY_ID ?? '';
-  const issuerId = process.env.APP_STORE_CONNECT_API_KEY_ISSUER_ID ?? '';
-  const keyPath = process.env.APP_STORE_CONNECT_API_KEY_PATH ?? '';
-  const appId = process.env.APP_STORE_APP_ID ?? '';
+  const issuerId =
+    process.env.APP_STORE_CONNECT_API_ISSUER_ID ??
+    process.env.APP_STORE_CONNECT_API_KEY_ISSUER_ID ??
+    '';
+  const keyPath =
+    process.env.APP_STORE_CONNECT_API_KEY_FILEPATH ??
+    process.env.APP_STORE_CONNECT_API_KEY_PATH ??
+    '';
+  const appId = process.env.APP_STORE_APP_ID ?? process.env.APP_IDENTIFIER ?? '';
 
   if (!keyId || !issuerId || !keyPath || !appId) {
     return { keyId, issuerId, privateKey: '', appId };
@@ -466,6 +472,7 @@ interface CliArgs {
   printJwt: boolean;
   useAnalytics: boolean;
   month: string | null; // YYYY-MM
+  appIdOverride: string | null;
 }
 
 function parseArgs(argv: string[]): CliArgs {
@@ -474,6 +481,7 @@ function parseArgs(argv: string[]): CliArgs {
     printJwt: false,
     useAnalytics: false,
     month: null,
+    appIdOverride: null,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -486,6 +494,9 @@ function parseArgs(argv: string[]): CliArgs {
       args.useAnalytics = true;
     } else if (arg === '--month' && argv[i + 1]) {
       args.month = argv[i + 1];
+      i++;
+    } else if (arg === '--app-id' && argv[i + 1]) {
+      args.appIdOverride = argv[i + 1];
       i++;
     }
   }
@@ -501,15 +512,18 @@ export async function main(): Promise<void> {
   const argv = process.argv.slice(2);
   const args = parseArgs(argv);
 
-  const ascConfig = loadConfig();
+  const loadedConfig = loadConfig();
+  const ascConfig: AscApiConfig = args.appIdOverride
+    ? { ...loadedConfig, appId: args.appIdOverride }
+    : loadedConfig;
 
   // --dry-run: JWT 구성까지만 확인하고 종료
   if (args.dryRun) {
     log('[dry-run] Config loaded:');
     log(`  keyId      = ${ascConfig.keyId || '(missing APP_STORE_CONNECT_API_KEY_ID)'}`);
-    log(`  issuerId   = ${ascConfig.issuerId || '(missing APP_STORE_CONNECT_API_KEY_ISSUER_ID)'}`);
-    log(`  appId      = ${ascConfig.appId || '(missing APP_STORE_APP_ID)'}`);
-    log(`  privateKey = ${ascConfig.privateKey ? '[loaded]' : '(missing APP_STORE_CONNECT_API_KEY_PATH or file not found)'}`);
+    log(`  issuerId   = ${ascConfig.issuerId || '(missing APP_STORE_CONNECT_API_ISSUER_ID)'}`);
+    log(`  appId      = ${ascConfig.appId || '(missing APP_STORE_APP_ID or --app-id flag)'}`);
+    log(`  privateKey = ${ascConfig.privateKey ? '[loaded]' : '(missing APP_STORE_CONNECT_API_KEY_FILEPATH or file not found)'}`);
 
     if (ascConfig.privateKey && ascConfig.keyId && ascConfig.issuerId) {
       const token = generateJwt(ascConfig);
@@ -529,9 +543,9 @@ export async function main(): Promise<void> {
   // 실제 수집 모드 — 환경변수 필수
   const missing: string[] = [];
   if (!ascConfig.keyId) missing.push('APP_STORE_CONNECT_API_KEY_ID');
-  if (!ascConfig.issuerId) missing.push('APP_STORE_CONNECT_API_KEY_ISSUER_ID');
-  if (!ascConfig.privateKey) missing.push('APP_STORE_CONNECT_API_KEY_PATH (or file not found)');
-  if (!ascConfig.appId) missing.push('APP_STORE_APP_ID');
+  if (!ascConfig.issuerId) missing.push('APP_STORE_CONNECT_API_ISSUER_ID');
+  if (!ascConfig.privateKey) missing.push('APP_STORE_CONNECT_API_KEY_FILEPATH (or file not found)');
+  if (!ascConfig.appId) missing.push('APP_STORE_APP_ID (or --app-id CLI flag)');
 
   if (missing.length > 0) {
     logError(`Missing required environment variables:\n  ${missing.join('\n  ')}`);

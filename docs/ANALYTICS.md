@@ -80,7 +80,7 @@
 | 이벤트명 (raw value) | Swift enum case | 발생 시점 | Required Properties | Optional Properties |
 |---------------------|-----------------|-----------|---------------------|---------------------|
 | `App Launched` | `appLaunched` | `bootstrapIfNeeded()` 진입 시 (앱 포그라운드 최초 진입) | - | - |
-| `Search Executed` | `searchExecuted` | 검색 결과가 갱신될 때마다 | `radius: Int`, `result_count: Int`, `has_results: Bool` | `sigungu_code: String` |
+| `Search Executed` | `searchExecuted` | 검색 결과가 갱신될 때마다 | `radius: Int`, `result_count: Int`, `has_results: Bool`, `query_length: Int`, `search_query: String`, `query_type: String` | `sigungu_code: String` |
 | `Empty State Shown` | `emptyStateShown` | 검색 결과가 0건으로 전환 시 | `radius: Int` | `sigungu_code: String` |
 | `Result Tapped` | `resultTapped` | 검색 결과 목록에서 유치원 항목 선택 시 | `kindercode: String` | - |
 | `Detail Opened` | `detailOpened` | 상세 시트가 완전히 표시된 시점(`onAppear`) | `kindercode: String`, `kindergarten_type: String` | - |
@@ -112,6 +112,9 @@
 | `compare_count` | Number (Int) | 조건부 | `2` | 비교 목록 내 유치원 수. `Compare Viewed`, `Compare Shared`에서 필수 |
 | `method` | String | `Compare Shared`에서 필수 | `"kakao"` | 공유 방식. `kakao` 또는 `system` |
 | `sort` | String | `Filter Applied`에서 필수 | `"distance"` | 정렬 기준. `distance` / `name` 등 SortOption rawValue |
+| `search_query` | String | `Search Executed`에서 필수 | `"강남"`, `"서울 ##"` | 검색어 원문(정제). `sanitizedSearchQuery()`로 숫자 연속 토큰은 `##` 마스킹, 30자 제한. 위치 기반 검색 시 빈 문자열 |
+| `query_length` | Number (Int) | `Search Executed`에서 필수 | `2`, `0` | 정제 전 검색어 글자 수. 0이면 위치 검색, 짧을수록 지역명 탐색 |
+| `query_type` | String | `Search Executed`에서 필수 | `"keyword"` / `"location"` | 검색 방식 구분. 빈 쿼리는 `location`, 그 외는 `keyword` |
 | `from_tab` | String | `Tab Changed`에서 필수 | `"search"` | 이전 탭. `search` / `compare` / `saved` / `more` |
 | `to_tab` | String | `Tab Changed`에서 필수 | `"compare"` | 이동한 탭. `search` / `compare` / `saved` / `more` |
 
@@ -185,16 +188,21 @@ Lexicon은 팀 전체가 이벤트를 일관되게 이해하기 위한 데이터
 
 ### 등록 절차
 
-1. Mixpanel 프로젝트 접속 → 좌측 메뉴 **Lexicon** → **Events** 탭
-2. 각 이벤트 이름 클릭 → **Edit** → **Description** 입력 (Section 4 Data Dictionary 내용 복사)
-3. 이벤트 내 각 Property 선택 → **Type** 지정:
-   - `radius`, `result_count`, `compare_count`: **Number**
-   - `has_results`: **Boolean**
-   - `is_testflight`: **Boolean** (Super Property)
-   - `days_since_install`: **Number** (Super Property)
+레포지토리 루트의 `docs/mixpanel-lexicon-events.csv` / `docs/mixpanel-lexicon-properties.csv`를
+참조 데이터로 사용한다. (스크립트로 수정 후 수동 복제하는 것이 현재 권장 흐름 — Mixpanel
+Lexicon 공식 bulk-import API는 아직 공개 안 됨.)
+
+1. Mixpanel 프로젝트 접속 → 좌측 메뉴 **Data Management** → **Lexicon** → **Events** 탭
+2. 각 이벤트 이름 클릭 → **Edit** → `docs/mixpanel-lexicon-events.csv`의 해당 행에서
+   `display_name` / `description` / `category`를 그대로 복사해 입력.
+3. **Properties** 탭으로 이동 → `docs/mixpanel-lexicon-properties.csv`의 각 행을 보며
+   `display_name` / `type` / `description` 입력. 특히 **type**:
+   - `radius`, `result_count`, `compare_count`, `query_length`, `days_since_install`: **Number**
+   - `has_results`, `is_testflight`: **Boolean**
    - 나머지: **String**
 4. Hidden 이벤트 지정: `trackAutomaticEvents=false`이므로 불필요. 모든 이벤트가 명시적.
 5. **Prod 프로젝트**에만 Lexicon 등록. Dev 프로젝트는 생략 가능.
+6. CSV 파일은 코드와 동기화 — 이벤트 변경 시 두 CSV 갱신을 PR에 포함.
 
 ### 등록 우선순위
 

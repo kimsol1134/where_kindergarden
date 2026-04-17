@@ -1,0 +1,14 @@
+event_name,display_name,description,category
+App Launched,앱 실행,앱이 포그라운드로 진입하여 bootstrapIfNeeded()가 호출된 시점. 최초 설치 후 첫 실행 여부는 days_since_install로 판별.,Lifecycle
+Search Executed,검색 실행,사용자가 조건을 바꿔 결과 목록이 갱신된 시점. 반경/키워드/위치 변경 포함.,Search
+Empty State Shown,빈 결과 화면 표시,검색 결과가 0건으로 전환된 시점. 직전에는 결과가 있었던 경우에만 발화.,Search
+Result Tapped,결과 탭,검색 결과 목록에서 유치원 카드를 탭한 시점.,Navigation
+Detail Opened,상세 화면 오픈,유치원 상세 시트가 표시된 시점. Result Tapped 직후 동반 발생.,Navigation
+Favorite Added,즐겨찾기 추가,유치원을 즐겨찾기에 추가한 시점.,Engagement
+Favorite Removed,즐겨찾기 제거,유치원을 즐겨찾기에서 제거한 시점.,Engagement
+Comparison Added,비교 추가,유치원을 비교 목록에 추가한 시점.,Compare
+Comparison Removed,비교 제거,유치원을 비교 목록에서 제거한 시점.,Compare
+Compare Viewed,비교 탭 진입,비교 탭의 onAppear 시점. compare_count가 0일 수도 있음 (빈 상태 포함).,Compare
+Compare Shared,비교표 공유,비교표를 카카오톡 또는 시스템 공유시트로 전송한 시점.,Compare
+Filter Applied,필터 적용,반경/정렬 등 필터가 변경된 후 500ms debounce가 끝나 실제로 적용된 시점.,Search
+Tab Changed,탭 전환,하단 탭바에서 탭을 전환한 시점.,Navigation

@@ -699,6 +699,9 @@ public final class SearchViewModel {
             "result_count": .int(baseResults.count),
             "has_results": .bool(!baseResults.isEmpty),
             "radius": .int(Int(filters.radiusKM)),
+            "query_length": .int(resultQuery.count),
+            "search_query": .string(Self.sanitizedSearchQuery(resultQuery)),
+            "query_type": .string(resultQuery.isEmpty ? "location" : "keyword"),
         ])
         requestATTIfFirstResults(baseResults)
         if baseResults.isEmpty && previouslyHadResults {
@@ -720,6 +723,18 @@ public final class SearchViewModel {
         guard let selectedID = selectedKindergarten?.kindercode else { return }
         selectedKindergarten = results.first(where: { $0.kindercode == selectedID })
             ?? kindergartenLookup[selectedID].map(makeKindergarten(from:))
+    }
+
+    /// 검색어를 분석용으로 정제: 앞뒤 공백 제거, 30자 제한, 숫자 연속 토큰(상세주소 가능성)을 ##로 마스킹.
+    static func sanitizedSearchQuery(_ raw: String) -> String {
+        let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return "" }
+        let masked = trimmed.replacingOccurrences(
+            of: #"\d{2,}(-\d+)?"#,
+            with: "##",
+            options: .regularExpression
+        )
+        return masked.count > 30 ? String(masked.prefix(30)) : masked
     }
 
     private func makeKindergarten(from raw: KindergartenRaw) -> Kindergarten {

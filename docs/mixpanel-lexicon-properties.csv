@@ -1,0 +1,23 @@
+property_name,display_name,type,scope,description,example
+app_version,앱 버전,string,super,CFBundleShortVersionString. 모든 이벤트에 자동 부착.,2.1.0
+build_number,빌드 번호,string,super,CFBundleVersion. 같은 버전 내 빌드 구분.,42
+os_version,iOS 버전,string,super,UIDevice.current.systemVersion.,26.4
+device_model,기기 모델,string,super,hw.machine sysctl 식별자 (예: iPhone16 2). UIDevice.current.model 보다 정확.,iPhone16 2
+locale,로캘,string,super,Locale.current.identifier. 지역/언어 분포 분석용.,ko_KR
+is_testflight,TestFlight 여부,boolean,super,sandbox receipt 검출로 TestFlight/Dev 빌드 구분. 프로덕션 사용자만 필터링 시 사용.,false
+days_since_install,설치 후 경과일,number,super,first_launch_at 기준 정수일. 코호트 분석의 기본 축.,3
+session_id,세션 ID,string,super,UUID. applicationDidBecomeActive 시점에 30분 inactive 만료 시 갱신.,3F613727-D3ED-40C2-9C15-A2E547D7AF12
+radius,검색 반경,number,event,검색 반경 km. Search Executed / Empty State Shown / Filter Applied에서 사용.,2
+result_count,결과 수,number,event,Search Executed 이벤트의 결과 유치원 수.,15
+has_results,결과 존재 여부,boolean,event,result_count > 0 을 boolean으로 노출. 퍼널에서 빠른 필터용.,true
+query_length,쿼리 길이,number,event,정제 전 검색어 글자 수. 0이면 위치 검색 경로.,2
+search_query,검색어(정제),string,event,Search Executed의 검색어 원문. 숫자 연속 토큰은 ##로 마스킹 후 30자 제한.,강남
+query_type,검색 방식,string,event,location 또는 keyword. 빈 검색어는 location으로 분류.,keyword
+sigungu_code,시군구 코드,string,event,선택적으로 부착되는 5자리 행정구역 코드. 지역별 분석 시 사용.,11110
+kindercode,유치원 코드,string,event,유치원 고유 코드. Result/Detail/Favorite/Comparison 관련 이벤트에서 필수.,D100000001
+kindergarten_type,유치원 유형,string,event,Detail Opened에서 부착. public / private / home 중 하나.,private
+compare_count,비교 수,number,event,Compare Viewed / Compare Shared 발생 시 목록의 유치원 수. 0 가능.,2
+method,공유 방식,string,event,Compare Shared에서 사용. kakao 또는 system.,kakao
+sort,정렬 기준,string,event,Filter Applied의 정렬 옵션 (SortOption rawValue). distance / name 등.,distance
+from_tab,이전 탭,string,event,Tab Changed 직전에 활성화되어 있던 탭 이름.,search
+to_tab,이후 탭,string,event,Tab Changed로 새로 활성화된 탭 이름.,compare
