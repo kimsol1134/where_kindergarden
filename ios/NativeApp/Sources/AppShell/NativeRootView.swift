@@ -49,7 +49,9 @@ public struct NativeRootView: View {
         let remoteSearch = KakaoLocalSuggestionService(
             client: KakaoLocalAPIClient(apiKey: config.kakaoRESTAPIKey, session: .shared)
         )
-        let analytics = OSLogAnalytics()
+        let analytics: any AnalyticsTracking = config.mixpanelToken != nil
+            ? MixpanelAnalytics.shared
+            : OSLogAnalytics()
         let router = AppRouter()
 
         // Store config for service init
