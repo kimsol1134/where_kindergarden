@@ -6,8 +6,14 @@ import type {
 import {
   buildInitialReviewAutoresearchState,
   decideReviewAutoresearchCycle,
+  decideReviewCollectionAutoresearchCycle,
   shouldStopReviewAutoresearch,
+  shouldStopReviewCollectionAutoresearch,
 } from '../../../../scripts/review-autoresearch/lib/review-autoresearch';
+import type {
+  ReviewCollectionGateResult,
+  ReviewCollectionMetrics,
+} from '../../../../scripts/review-autoresearch/lib/collection-policy';
 
 function createStats(
   overrides: Partial<ReviewAuditStats> = {}
@@ -74,6 +80,51 @@ function createSecondaryReport(
       unresolvedCollisionGroups: 0,
       unresolvedCollisionRows: 0,
     },
+  };
+}
+
+function createCollectionMetrics(
+  overrides: Partial<ReviewCollectionMetrics> = {}
+): ReviewCollectionMetrics {
+  return {
+    targetSidoCode: '28',
+    targetKindergartenCount: 390,
+    incheonVisibleReviewCount: 105,
+    incheonCoverageAt1Count: 60,
+    incheonCoverageAt1Ratio: 0.1538,
+    incheonCoverageAt3Count: 8,
+    incheonCoverageAt3Ratio: 0.0205,
+    incheonVerifiedLinkCount: 90,
+    incheonQnaCompleteCount: 3,
+    addedLinkCount: 10,
+    addedLinkVerifiedCount: 10,
+    addedLinkVerifiedRate: 1,
+    crossKindergartenErrorCount: 0,
+    qnaSummaryCompleteness: 1,
+    researchScore: 1071.85,
+    diagnostics: {
+      kindergartensSearched: 20,
+      candidatesFound: 80,
+      candidatesOpened: 30,
+      acceptedLinks: 10,
+      duplicateRejections: 5,
+      officialSourceRejections: 3,
+      wrongLinkRejections: 12,
+      blogReadSuccessRate: 0.9,
+      cafeReadSuccessRate: 0.8,
+      questionPostAcceptRate: 0.5,
+    },
+    ...overrides,
+  };
+}
+
+function createGateResult(
+  passed = true,
+  failures: string[] = []
+): ReviewCollectionGateResult {
+  return {
+    passed,
+    failures,
   };
 }
 
@@ -198,6 +249,56 @@ describe('review autoresearch loop helpers', () => {
       expect(state.bestVisiblePrecision).toBe(0.9);
       expect(state.bestSecondaryBinaryF1).toBe(0.987);
       expect(state.bestSecondaryBinaryPrecision).toBe(0.995);
+    });
+  });
+
+  describe('decideReviewCollectionAutoresearchCycle', () => {
+    it('gate를 통과하고 research score가 오르면 keep 한다', () => {
+      const decision = decideReviewCollectionAutoresearchCycle(
+        createCollectionMetrics({ researchScore: 1200 }),
+        { bestResearchScore: 1100 },
+        createSecondaryReport(0.997, 0.995),
+        createGateResult(true)
+      );
+
+      expect(decision.improved).toBe(true);
+      expect(decision.gatePassed).toBe(true);
+      expect(decision.reason).toContain('research score improved');
+    });
+
+    it('gate 실패면 score와 무관하게 discard 한다', () => {
+      const decision = decideReviewCollectionAutoresearchCycle(
+        createCollectionMetrics({ researchScore: 1200 }),
+        { bestResearchScore: 1100 },
+        createSecondaryReport(0.997, 0.995),
+        createGateResult(false, ['global binary precision below 0.99'])
+      );
+
+      expect(decision.improved).toBe(false);
+      expect(decision.gatePassed).toBe(false);
+      expect(decision.reason).toContain('below 0.99');
+    });
+  });
+
+  describe('shouldStopReviewCollectionAutoresearch', () => {
+    it('Coverage@1이 1이고 gate를 통과하면 stop 한다', () => {
+      expect(
+        shouldStopReviewCollectionAutoresearch(
+          createCollectionMetrics({ incheonCoverageAt1Ratio: 1 }),
+          { consecutiveNoImprovement: 0 },
+          createGateResult(true)
+        )
+      ).toBe(true);
+    });
+
+    it('연속 5회 개선 없으면 stop 한다', () => {
+      expect(
+        shouldStopReviewCollectionAutoresearch(
+          createCollectionMetrics({ incheonCoverageAt1Ratio: 0.4 }),
+          { consecutiveNoImprovement: 5 },
+          createGateResult(false, ['no improvement'])
+        )
+      ).toBe(true);
     });
   });
 });
