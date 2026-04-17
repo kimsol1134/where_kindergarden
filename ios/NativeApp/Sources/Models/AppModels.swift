@@ -5,6 +5,15 @@ public enum NativeTab: Hashable {
     case compare
     case saved
     case more
+
+    public var analyticsName: String {
+        switch self {
+        case .search: return "search"
+        case .compare: return "compare"
+        case .saved: return "saved"
+        case .more: return "more"
+        }
+    }
 }
 
 public struct CompareToast: Equatable {

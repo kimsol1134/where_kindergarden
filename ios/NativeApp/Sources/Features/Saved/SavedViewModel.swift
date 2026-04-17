@@ -104,9 +104,15 @@ public final class SavedViewModel {
 
     public func toggleFavorite(for kindergarten: Kindergarten) {
         let wasFavorite = favoriteRepo.isFavorite(kindergarten.kindercode)
-        analytics?.track(event: .favoriteToggled, properties: [
-            "kindercode": kindergarten.kindercode, "favorited": "\(!wasFavorite)",
-        ])
+        if wasFavorite {
+            analytics?.track(event: .favoriteRemoved, properties: [
+                "kindercode": .string(kindergarten.kindercode),
+            ])
+        } else {
+            analytics?.track(event: .favoriteAdded, properties: [
+                "kindercode": .string(kindergarten.kindercode),
+            ])
+        }
         favoriteRepo.toggle(for: kindergarten)
     }
 
@@ -116,13 +122,13 @@ public final class SavedViewModel {
         let result = compareRepo.toggle(id: kindergarten.kindercode)
         switch result {
         case .added:
-            analytics?.track(event: .compareToggled, properties: [
-                "kindercode": kindergarten.kindercode, "selected": "true",
+            analytics?.track(event: .comparisonAdded, properties: [
+                "kindercode": .string(kindergarten.kindercode),
             ])
             router.showToast(.success("비교에 담았어요"))
         case .removed:
-            analytics?.track(event: .compareToggled, properties: [
-                "kindercode": kindergarten.kindercode, "selected": "false",
+            analytics?.track(event: .comparisonRemoved, properties: [
+                "kindercode": .string(kindergarten.kindercode),
             ])
             router.showToast(.success("비교에서 뺐어요"))
         case .limitReached:

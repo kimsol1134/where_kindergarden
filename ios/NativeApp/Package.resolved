@@ -1,5 +1,5 @@
 {
-  "originHash" : "1188b0d54681a33fdc0bee974714859a7edf82c6b25cfd23d1bfe0c4504b0806",
+  "originHash" : "174f5351f0d6a9d21b03d309b4b559561bfb97ae12c220e0b994de7e159060ff",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -24,8 +24,16 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git",
       "state" : {
-        "branch" : "master",
         "revision" : "cc073a32729b7f545cca49f96d0b859fa3a0d5db"
+      }
+    },
+    {
+      "identity" : "mixpanel-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mixpanel/mixpanel-swift",
+      "state" : {
+        "revision" : "6302088440efba7c12e19ed2280f34af288d6e04",
+        "version" : "4.3.1"
       }
     },
     {

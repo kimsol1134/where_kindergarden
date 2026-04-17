@@ -71,11 +71,37 @@ public final class CompareViewModel {
         guard ids.indices.contains(index) else { return }
         let id = ids[index]
         compareRepo.remove(at: index)
-        analytics?.track(event: .compareToggled, properties: ["kindercode": id, "selected": "false"])
+        analytics?.track(event: .comparisonRemoved, properties: [
+            "kindercode": .string(id),
+        ])
     }
 
     public func shareURL() -> URL? {
         compareUseCase.shareURL(ids: compareRepo.selection.ids, baseURL: configuration.compareShareBaseURL)
+    }
+
+    public func trackCompareViewed() {
+        analytics?.track(event: .compareViewed, properties: [
+            "compare_count": .int(comparedKindergartens.count),
+        ])
+    }
+
+    public func shareKakao(names: [String]) -> URL? {
+        guard let url = shareURL() else { return nil }
+        analytics?.track(event: .compareShared, properties: [
+            "method": .string("kakao"),
+            "compare_count": .int(comparedKindergartens.count),
+        ])
+        return url
+    }
+
+    public func shareSystem() -> URL? {
+        guard let url = shareURL() else { return nil }
+        analytics?.track(event: .compareShared, properties: [
+            "method": .string("system"),
+            "compare_count": .int(comparedKindergartens.count),
+        ])
+        return url
     }
 
     public func reviews(for kindercode: String) -> [ReviewLink] {

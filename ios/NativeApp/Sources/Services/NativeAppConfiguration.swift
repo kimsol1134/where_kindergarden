@@ -42,6 +42,7 @@ public struct NativeAppConfiguration: Sendable {
     public let kakaoRESTAPIKey: String?
     public let kakaoConfigurationSource: KakaoConfigurationSource?
     public let adMobBannerUnitID: String
+    public let mixpanelToken: String?
     public let reviewsRemoteURL: URL
     public let vacancyRemoteURL: URL
     public let compareShareBaseURL: URL
@@ -54,6 +55,7 @@ public struct NativeAppConfiguration: Sendable {
         kakaoRESTAPIKey: String? = nil,
         kakaoConfigurationSource: String? = nil,
         adMobBannerUnitID: String = NativeAppConfiguration.defaultAdMobBannerUnitID,
+        mixpanelToken: String? = nil,
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
         compareShareBaseURL: URL = NativeAppConfiguration.defaultCompareShareBaseURL,
@@ -66,6 +68,7 @@ public struct NativeAppConfiguration: Sendable {
         self.kakaoConfigurationSource = Self.normalizedValue(kakaoConfigurationSource)
             .flatMap(KakaoConfigurationSource.init(rawValue:))
         self.adMobBannerUnitID = adMobBannerUnitID
+        self.mixpanelToken = Self.normalizedValue(mixpanelToken)
         self.reviewsRemoteURL = reviewsRemoteURL
         self.vacancyRemoteURL = vacancyRemoteURL
         self.compareShareBaseURL = compareShareBaseURL
@@ -80,7 +83,8 @@ public struct NativeAppConfiguration: Sendable {
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
             kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String,
             kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String,
-            adMobBannerUnitID: adMobID ?? Self.defaultAdMobBannerUnitID
+            adMobBannerUnitID: adMobID ?? Self.defaultAdMobBannerUnitID,
+            mixpanelToken: bundle.object(forInfoDictionaryKey: "MIXPANEL_TOKEN") as? String
         )
     }
 

@@ -22,7 +22,7 @@ public final class SearchViewModel {
 
     public var filters: SearchFilters {
         didSet {
-            analytics?.track(event: .filterChanged, properties: ["radius": "\(filters.radiusKM)", "sort": filters.sort.rawValue])
+            scheduleFilterAppliedTracking()
             refresh()
         }
     }
@@ -76,6 +76,7 @@ public final class SearchViewModel {
     private var pendingSearchDeepLinkQuery: String?
     nonisolated(unsafe) private var searchDeepLinkTask: Task<Void, Never>?
     nonisolated(unsafe) private var searchSuggestionTask: Task<Void, Never>?
+    nonisolated(unsafe) private var filterAppliedTask: Task<Void, Never>?
     private var resultQuery: String
     private var currentDeviceLocationTask: Task<Coordinates, Error>?
     private var currentDeviceLocationTaskID = 0
@@ -150,6 +151,7 @@ public final class SearchViewModel {
     deinit {
         searchDeepLinkTask?.cancel()
         searchSuggestionTask?.cancel()
+        filterAppliedTask?.cancel()
     }
 
     // MARK: - Exposed Repo/Router State
@@ -463,8 +465,22 @@ public final class SearchViewModel {
     // MARK: - Selection & Detail
 
     public func select(kindergarten: Kindergarten) {
-        analytics?.track(event: .resultTapped, properties: ["kindercode": kindergarten.kindercode])
+        analytics?.track(event: .resultTapped, properties: [
+            "kindercode": .string(kindergarten.kindercode),
+        ])
+        analytics?.track(event: .detailOpened, properties: [
+            "kindercode": .string(kindergarten.kindercode),
+            "kindergarten_type": .string(kindergarten.type.rawValue),
+        ])
         selectedKindergarten = kindergarten
+    }
+
+    public func trackTabChanged(from previous: NativeTab, to next: NativeTab) {
+        guard previous != next else { return }
+        analytics?.track(event: .tabChanged, properties: [
+            "from_tab": .string(previous.analyticsName),
+            "to_tab": .string(next.analyticsName),
+        ])
     }
 
     public func dismissDetail() {
@@ -494,14 +510,14 @@ public final class SearchViewModel {
         let result = compareRepo.toggle(id: kindergarten.kindercode)
         switch result {
         case .added:
-            analytics?.track(event: .compareToggled, properties: [
-                "kindercode": kindergarten.kindercode, "selected": "true",
+            analytics?.track(event: .comparisonAdded, properties: [
+                "kindercode": .string(kindergarten.kindercode),
             ])
             refreshSelectedKindergarten()
             router.showToast(.success("비교에 담았어요"))
         case .removed:
-            analytics?.track(event: .compareToggled, properties: [
-                "kindercode": kindergarten.kindercode, "selected": "false",
+            analytics?.track(event: .comparisonRemoved, properties: [
+                "kindercode": .string(kindergarten.kindercode),
             ])
             refreshSelectedKindergarten()
             router.showToast(.success("비교에서 뺐어요"))
@@ -512,9 +528,15 @@ public final class SearchViewModel {
 
     public func toggleFavorite(for kindergarten: Kindergarten) {
         let wasFavorite = favoriteRepo.isFavorite(kindergarten.kindercode)
-        analytics?.track(event: .favoriteToggled, properties: [
-            "kindercode": kindergarten.kindercode, "favorited": "\(!wasFavorite)",
-        ])
+        if wasFavorite {
+            analytics?.track(event: .favoriteRemoved, properties: [
+                "kindercode": .string(kindergarten.kindercode),
+            ])
+        } else {
+            analytics?.track(event: .favoriteAdded, properties: [
+                "kindercode": .string(kindergarten.kindercode),
+            ])
+        }
         favoriteRepo.toggle(for: kindergarten)
     }
 
@@ -635,6 +657,27 @@ public final class SearchViewModel {
 
     // MARK: - Private Helpers
 
+    private func scheduleFilterAppliedTracking() {
+        filterAppliedTask?.cancel()
+        let radius = Int(filters.radiusKM)
+        let sort = filters.sort.rawValue
+        filterAppliedTask = Task { [weak self] in
+            do {
+                try await Task.sleep(for: .milliseconds(500))
+            } catch {
+                return
+            }
+            guard !Task.isCancelled else { return }
+            await MainActor.run {
+                guard let self else { return }
+                self.analytics?.track(event: .filterApplied, properties: [
+                    "radius": .int(radius),
+                    "sort": .string(sort),
+                ])
+            }
+        }
+    }
+
     private func refresh() {
         let catalog = kindergartenRepo.kindergartens
         guard !catalog.isEmpty else {
@@ -652,7 +695,11 @@ public final class SearchViewModel {
 
         let previouslyHadResults = !results.isEmpty
         results = baseResults
-        analytics?.track(event: .searchExecuted, properties: ["resultCount": "\(baseResults.count)"])
+        analytics?.track(event: .searchExecuted, properties: [
+            "result_count": .int(baseResults.count),
+            "has_results": .bool(!baseResults.isEmpty),
+            "radius": .int(Int(filters.radiusKM)),
+        ])
         requestATTIfFirstResults(baseResults)
         if baseResults.isEmpty && previouslyHadResults {
             analytics?.track(event: .emptyStateShown)

@@ -185,6 +185,9 @@ public struct NativeRootView: View {
                 hasSeenOnboarding = true
             }
         }
+        .onChange(of: router.activeTab) { oldTab, newTab in
+            searchVM.trackTabChanged(from: oldTab, to: newTab)
+        }
     }
 
     private func initializeServices() async {
