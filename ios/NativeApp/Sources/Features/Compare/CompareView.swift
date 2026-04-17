@@ -1,6 +1,9 @@
 import Models
 import Services
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 private let compareBestTint = Color.blue.opacity(0.10)
 private let compareBestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
@@ -113,20 +116,25 @@ public struct CompareView: View {
                         .glassPanel(cornerRadius: 0)
                 }
             }
+            .onAppear {
+                viewModel.trackCompareViewed()
+            }
         }
     }
 
     @ViewBuilder
     private var shareActions: some View {
-        if let shareURL = viewModel.shareURL() {
+        if viewModel.shareURL() != nil {
             VStack(spacing: 12) {
                 #if canImport(KakaoSDKShare)
                 if KakaoShareService.isKakaoTalkAvailable {
                     Button {
-                        KakaoShareService.shareCompare(
-                            names: items.map(\.name),
-                            shareURL: shareURL
-                        )
+                        if let url = viewModel.shareKakao(names: items.map(\.name)) {
+                            KakaoShareService.shareCompare(
+                                names: items.map(\.name),
+                                shareURL: url
+                            )
+                        }
                     } label: {
                         Label("카카오톡으로 보내기", systemImage: "message.fill")
                             .frame(maxWidth: .infinity)
@@ -140,11 +148,11 @@ public struct CompareView: View {
                 }
                 #endif
 
-                ShareLink(
-                    item: shareURL,
-                    subject: Text("유치원 비교"),
-                    message: Text(NativeAppConfiguration.shareDescription)
-                ) {
+                Button {
+                    if let url = viewModel.shareSystem() {
+                        presentSystemShare(url: url)
+                    }
+                } label: {
                     Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(inkBlack)
@@ -161,6 +169,36 @@ public struct CompareView: View {
                 .padding(.vertical, 14)
                 .foregroundStyle(slateSoft)
         }
+    }
+
+    private func presentSystemShare(url: URL) {
+        #if canImport(UIKit)
+        let activityVC = UIActivityViewController(
+            activityItems: [url, NativeAppConfiguration.shareDescription],
+            applicationActivities: nil
+        )
+        guard let rootVC = UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene })
+            .flatMap({ $0.windows })
+            .first(where: { $0.isKeyWindow })?
+            .rootViewController
+        else { return }
+        var presenter: UIViewController = rootVC
+        while let presented = presenter.presentedViewController {
+            presenter = presented
+        }
+        if let popover = activityVC.popoverPresentationController {
+            popover.sourceView = presenter.view
+            popover.sourceRect = CGRect(
+                x: presenter.view.bounds.midX,
+                y: presenter.view.bounds.midY,
+                width: 0,
+                height: 0
+            )
+            popover.permittedArrowDirections = []
+        }
+        presenter.present(activityVC, animated: true)
+        #endif
     }
 
 // MARK: - CompareHeaderCard

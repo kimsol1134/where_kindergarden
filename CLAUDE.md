@@ -651,6 +651,28 @@ NEXT_PUBLIC_VERCEL_ANALYTICS_ID=
 
 ---
 
+## 분석 도구 (Mixpanel + ASC)
+
+### Mixpanel iOS SDK
+
+- **SDK**: Mixpanel Swift SPM (`ios/NativeApp/Package.swift`)
+- **초기화**: `WhereKindergartenNativeHostApp.init()`에서 `MixpanelAnalytics.shared.configure(token:)` 1회 호출
+- **토큰 관리**: `ios/WhereKindergartenNative/Config/WhereKindergartenNative.xcconfig`에서 Debug/Release 분기
+  - `WK_MIXPANEL_TOKEN_DEBUG`: Dev 프로젝트 토큰 (로컬 xcconfig override)
+  - `WK_MIXPANEL_TOKEN_RELEASE`: Prod 프로젝트 토큰 (로컬 xcconfig override)
+- **이벤트 스펙**: `docs/ANALYTICS.md` 참조 (Super Properties, 13개 이벤트, Data Dictionary)
+- **중복 초기화 금지**: `NativeRootView` body 내에서 `MixpanelAnalytics` 인스턴스를 다시 생성하지 마세요.
+
+### ASC Analytics 수집
+
+- **스크립트**: `scripts/collect-asc-analytics.ts`
+- **실행**: `pnpm collect:asc-analytics -- --month YYYY-MM`
+- **환경변수**: `.env.testflight.local`에서 ASC API Key (`APPSTORE_API_KEY_ID`, `APPSTORE_ISSUER_ID`, `APPSTORE_API_KEY_PATH`) 로드
+- **출력**: `scripts/data-output/asc-analytics-YYYY-MM.json`
+- **교차 분석**: `docs/ANALYTICS.md` 섹션 6 "Cohort 기반 교차 분석" + 섹션 9 "ASC Analytics 수집 운영 가이드" 참조
+
+---
+
 ## 외부 API 참고
 
 - [유치원 알리미 Open API](https://e-childschoolinfo.moe.go.kr/)

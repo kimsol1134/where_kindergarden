@@ -17,6 +17,7 @@ let package = Package(
         .package(url: "https://github.com/kakao-mapsSDK/KakaoMapsSDK-SPM.git", revision: "cc073a32729b7f545cca49f96d0b859fa3a0d5db"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "12.0.0"),
         .package(url: "https://github.com/kakao/kakao-ios-sdk.git", from: "2.25.0"),
+        .package(url: "https://github.com/mixpanel/mixpanel-swift", .upToNextMinor(from: "4.3.0")),
     ],
     targets: [
         // Layer 0: 순수 데이터 모델
@@ -38,6 +39,7 @@ let package = Package(
                 .product(name: "KakaoSDKCommon", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKShare", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKTemplate", package: "kakao-ios-sdk"),
+                .product(name: "Mixpanel", package: "mixpanel-swift"),
             ]
         ),
 
@@ -70,7 +72,13 @@ let package = Package(
         ),
         .testTarget(
             name: "NativeAppTests",
-            dependencies: ["Models", "Domain", "Services", "Features"]
+            dependencies: [
+                "Models",
+                "Domain",
+                "Services",
+                "Features",
+                .product(name: "Mixpanel", package: "mixpanel-swift"),
+            ]
         ),
     ]
 )

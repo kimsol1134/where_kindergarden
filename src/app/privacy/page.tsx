@@ -94,6 +94,39 @@ export default function PrivacyPage() {
                   등 편의 기능을 위해 사용됩니다.
                 </li>
               </ul>
+              <h3 className="font-semibold text-[var(--brand-ink)] mb-2 mt-6">
+                다. 분석 서비스 (Mixpanel)
+              </h3>
+              <div className="bg-[var(--brand-mist)] p-4 rounded-2xl border border-[rgba(203,188,174,0.12)]">
+                <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2 text-sm">
+                  <li>
+                    <strong>수집 항목</strong>: 앱 사용 행동 데이터(화면 이동,
+                    검색, 비교 기능 사용 등), 기기 정보(iOS 버전, 앱 버전, 기기
+                    모델), 익명 식별자(IDFV — 앱 재설치 시 갱신되는 기기 고유 ID)
+                  </li>
+                  <li>
+                    <strong>수집 목적</strong>: 앱 사용성 개선 및 서비스 품질 향상
+                  </li>
+                  <li>
+                    <strong>보존 기간</strong>: 5년
+                  </li>
+                  <li>
+                    <strong>제3자 제공</strong>: Mixpanel Inc. (미국) —
+                    <a
+                      href="https://mixpanel.com/legal/privacy-policy/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--brand-leaf)] hover:underline ml-1"
+                    >
+                      Mixpanel 개인정보처리방침
+                    </a>
+                  </li>
+                  <li>
+                    <strong>개인 식별 불가</strong>: 수집되는 식별자(IDFV)는
+                    실명/연락처와 연결되지 않습니다.
+                  </li>
+                </ul>
+              </div>
             </section>
 
             <section className="mb-8">
