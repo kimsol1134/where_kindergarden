@@ -47,6 +47,11 @@ describe('ReviewLinkCard', () => {
     expect(screen.getByText('카페')).toBeInTheDocument();
   });
 
+  it('should render source badge for studyholic', () => {
+    render(<ReviewLinkCard review={createMockReview({ source: 'studyholic' })} />);
+    expect(screen.getByText('스터디홀릭')).toBeInTheDocument();
+  });
+
   it('should render source badge for google', () => {
     render(<ReviewLinkCard review={createMockReview({ source: 'google' })} />);
     expect(screen.getByText('웹')).toBeInTheDocument();

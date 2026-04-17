@@ -9,6 +9,8 @@ import X from 'lucide-react/dist/esm/icons/x';
 import type { ReviewSource, ReviewSuggestion } from '@/types';
 
 const SOURCE_OPTIONS: { value: ReviewSource; label: string }[] = [
+  { value: 'studyholic', label: '스터디홀릭' },
+  { value: 'learns', label: '런즈' },
   { value: 'naver_blog', label: '네이버 블로그' },
   { value: 'naver_cafe', label: '네이버 카페' },
   { value: 'google', label: '웹사이트' },

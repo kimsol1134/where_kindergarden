@@ -1,0 +1,67 @@
+{
+  "project": "우리동네 유치원",
+  "task": "arch-refactor",
+  "prompt": "3-tier layered architecture (Presentation/Logic/Data) 리팩토링. God ViewModel(NativeAppModel 1,265줄) 분해, Domain 레이어 신설, @Observable Repository 도입.",
+  "totalPhases": 7,
+  "phases": [
+    {
+      "phase": 0,
+      "name": "docs-update",
+      "status": "completed",
+      "started_at": "2026-04-14T10:44:24+0900",
+      "completed_at": "2026-04-14T10:46:36+0900"
+    },
+    {
+      "phase": 1,
+      "name": "foundation",
+      "status": "completed",
+      "started_at": "2026-04-14T10:46:41+0900",
+      "completed_at": "2026-04-14T10:55:48+0900",
+      "note": "All SPM targets (Models, Domain, Services, Features, AppShell) build clean. 59 NativeAppTests pass. WhereKindergartenNative scheme has pre-existing AppIcon asset error (legacy Capacitor ios/App/App/Assets.xcassets) unrelated to this phase."
+    },
+    {
+      "phase": 2,
+      "name": "domain-logic",
+      "status": "completed",
+      "started_at": "2026-04-14T10:55:49+0900",
+      "completed_at": "2026-04-14T11:09:52+0900",
+      "note": "All SPM targets build clean. 60 tests pass (DomainTests 1, NativeAppTests 37, NativeSearchTests 20, NativeVacancyTests 2). WhereKindergartenNative scheme has pre-existing AppIcon asset error (legacy Capacitor ios/App/) unrelated to this phase."
+    },
+    {
+      "phase": 3,
+      "name": "repositories",
+      "status": "completed",
+      "started_at": "2026-04-14T11:09:52+0900",
+      "completed_at": "2026-04-14T11:21:59+0900",
+      "note": "6 @Observable Repository classes created. Old struct repos deleted (SearchServices.swift, VacancyService.swift). NativeAppModel minimally updated for new repo APIs. All 60 tests pass. WhereKindergartenNative scheme has pre-existing AppIcon asset error (legacy Capacitor ios/App/) unrelated to this phase."
+    },
+    {
+      "phase": 4,
+      "name": "viewmodels",
+      "status": "completed",
+      "timeout": 1200,
+      "started_at": "2026-04-14T12:03:15+0900",
+      "completed_at": "2026-04-14T12:16:45+0900",
+      "note": "4 files created: AppRouter, SearchViewModel, CompareViewModel, SavedViewModel. ReviewProviding/VacancyProviding protocols extended with error property. NativeAppModel preserved (coexists). All 60 tests pass (DomainTests 1, NativeAppTests 37, NativeSearchTests 20, NativeVacancyTests 2). Only build error is pre-existing AppIcon asset in legacy ios/App/."
+    },
+    {
+      "phase": 5,
+      "name": "view-rewire",
+      "status": "completed",
+      "timeout": 1200,
+      "started_at": "2026-04-14T12:16:45+0900",
+      "completed_at": "2026-04-14T12:40:00+0900",
+      "note": "All views rewired to new ViewModels. NativeAppModel.swift deleted. NativeRootView DI assembly rewritten. No Swift compilation errors. Pre-existing AppIcon asset error (legacy Capacitor) only."
+    },
+    {
+      "phase": 6,
+      "name": "tests",
+      "status": "completed",
+      "started_at": "2026-04-14T12:38:18+0900",
+      "completed_at": "2026-04-14T13:05:00+0900",
+      "note": "DomainTests (CompareUseCase, SearchUseCase, FitReasonBuilder, DeepLinkUseCase) + NativeAppTests all pass. TEST SUCCEEDED."
+    }
+  ],
+  "created_at": "2026-04-14T10:44:24+0900",
+  "completed_at": "2026-04-14T13:05:00+0900"
+}

@@ -6,22 +6,18 @@ private let compareBestTint = Color.blue.opacity(0.10)
 private let compareBestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
 
 public struct CompareView: View {
-    @ObservedObject private var model: NativeAppModel
+    var viewModel: CompareViewModel
 
-    public init(model: NativeAppModel) {
-        self.model = model
-    }
-
-    @MainActor public init() {
-        self.model = .preview()
+    public init(viewModel: CompareViewModel) {
+        self.viewModel = viewModel
     }
 
     private var items: [Kindergarten] {
-        model.comparedKindergartens()
+        viewModel.comparedKindergartens
     }
 
     public var body: some View {
-        let scores = items.count >= 2 ? calculateScores() : []
+        let scores = items.count >= 2 ? viewModel.scores : []
 
         NavigationStack {
             VStack(spacing: 0) {
@@ -29,7 +25,7 @@ public struct CompareView: View {
                     CompareNameBar(
                         items: items,
                         scores: scores,
-                        onRemove: { item in model.toggleCompare(for: item) }
+                        onRemove: { item in viewModel.removeKindergarten(item) }
                     )
                 }
 
@@ -41,17 +37,17 @@ public struct CompareView: View {
                                 title: "비교할 곳이 아직 없어요",
                                 message: "탐색에서 비교 버튼을 누르면 여기에 모여요.",
                                 ctaLabel: "탐색하러 가기",
-                                ctaAction: { model.selectedTab = .search }
+                                ctaAction: { viewModel.navigateToSearch() }
                             )
                             .accessibilityIdentifier("compare.emptyState")
                         } else if items.count == 1 {
                             HStack(spacing: 8) {
                                 CompareHeaderCard(item: items[0], score: 0) {
-                                    model.toggleCompare(for: items[0])
+                                    viewModel.removeKindergarten(items[0])
                                 }
 
                                 Button {
-                                    model.selectedTab = .search
+                                    viewModel.navigateToSearch()
                                 } label: {
                                     VStack(spacing: 6) {
                                         Image(systemName: "plus.circle")
@@ -71,10 +67,10 @@ public struct CompareView: View {
                                 .buttonStyle(.plain)
                             }
                         } else {
-                            let reviewCounts = items.map { model.reviews(for: $0.kindercode).count }
-                            let vacancyCounts = items.map { model.vacancyCount(for: $0.kindercode) }
+                            let reviewCounts = items.map { viewModel.reviews(for: $0.kindercode).count }
+                            let vacancyCounts = items.map { viewModel.vacancyCount(for: $0.kindercode) }
 
-                            if let summary = winnerSummary(scores: scores) {
+                            if let summary = viewModel.winnerSummary {
                                 Label(summary, systemImage: "crown.fill")
                                     .font(.subheadline.weight(.semibold))
                                     .foregroundStyle(Color(red: 0.55, green: 0.40, blue: 0.05))
@@ -92,7 +88,7 @@ public struct CompareView: View {
                         }
 
                         #if canImport(GoogleMobileAds)
-                        NativeAdBanner(adUnitID: model.configuration.adMobBannerUnitID)
+                        NativeAdBanner(adUnitID: viewModel.adMobBannerUnitID)
                             .padding(.top, 8)
                         #endif
                     }
@@ -120,69 +116,9 @@ public struct CompareView: View {
         }
     }
 
-    // MARK: - Winner summary
-
-    private func winnerSummary(scores: [Int]) -> String? {
-        guard let maxScore = scores.max(), maxScore > 0 else { return nil }
-        let winnerIndexes = scores.enumerated().filter { $0.element == maxScore }
-        guard winnerIndexes.count == 1, let winner = winnerIndexes.first else { return nil }
-        return "\(items[winner.offset].name)이 \(maxScore)개 항목에서 우세"
-    }
-
-    // MARK: - Score calculation
-
-    private func calculateScores() -> [Int] {
-        guard items.count >= 2 else { return Array(repeating: 0, count: items.count) }
-        var scores = Array(repeating: 0, count: items.count)
-
-        // Teacher ratio: lower is better
-        let ratios = items.map { $0.teacherCount > 0 ? Double($0.currentCount) / Double($0.teacherCount) : Double.infinity }
-        if let minRatio = ratios.filter({ $0.isFinite }).min(), ratios.filter({ $0 == minRatio }).count < items.count {
-            for (i, r) in ratios.enumerated() where r == minRatio { scores[i] += 1 }
-        }
-
-        // Area per child: higher is better
-        let areas = items.map(\.areaPerChild)
-        if let maxArea = areas.max(), maxArea > 0, Set(areas).count > 1 {
-            for (i, item) in items.enumerated() where item.areaPerChild == maxArea { scores[i] += 1 }
-        }
-
-        // CCTV: more is better
-        let cctvs = items.map(\.cctvCount)
-        if let maxCctv = cctvs.max(), maxCctv > 0, Set(cctvs).count > 1 {
-            for (i, item) in items.enumerated() where item.cctvCount == maxCctv { scores[i] += 1 }
-        }
-
-        // After school: having it is better (only when not all same)
-        let afterSchools = items.map(\.hasAfterSchool)
-        if Set(afterSchools).count > 1 {
-            for (i, item) in items.enumerated() where item.hasAfterSchool { scores[i] += 1 }
-        }
-
-        // Playground: having it is better
-        let playgrounds = items.map(\.hasPlayground)
-        if Set(playgrounds).count > 1 {
-            for (i, item) in items.enumerated() where item.hasPlayground { scores[i] += 1 }
-        }
-
-        // Meal: direct is better
-        let meals = items.map(\.mealType)
-        if Set(meals).count > 1 {
-            for (i, item) in items.enumerated() where item.mealType == .direct { scores[i] += 1 }
-        }
-
-        // Bus: most is better (only when not all same)
-        let buses = items.map { $0.hasBus ? $0.busCount : 0 }
-        if let maxBus = buses.max(), maxBus > 0, Set(buses).count > 1 {
-            for (i, b) in buses.enumerated() where b == maxBus { scores[i] += 1 }
-        }
-
-        return scores
-    }
-
     @ViewBuilder
     private var shareActions: some View {
-        if let shareURL = model.compareShareURL() {
+        if let shareURL = viewModel.shareURL() {
             VStack(spacing: 12) {
                 #if canImport(KakaoSDKShare)
                 if KakaoShareService.isKakaoTalkAvailable {

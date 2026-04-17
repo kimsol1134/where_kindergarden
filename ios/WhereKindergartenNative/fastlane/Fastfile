@@ -46,7 +46,7 @@ platform :ios do
     )
 
     # Read version from package.json
-    package_json = JSON.parse(File.read("../../package.json"))
+    package_json = JSON.parse(File.read("../../../package.json"))
     app_version = package_json["version"]
 
     # Temporarily rename name.txt to avoid app name conflicts

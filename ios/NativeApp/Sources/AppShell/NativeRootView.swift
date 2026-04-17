@@ -1,19 +1,98 @@
+import Domain
 import Features
+import Models
 import Services
 import SwiftUI
 
+@MainActor
 public struct NativeRootView: View {
-    @StateObject private var model: NativeAppModel
+    @State private var router: AppRouter
+    @State private var searchVM: SearchViewModel
+    @State private var compareVM: CompareViewModel
+    @State private var savedVM: SavedViewModel
     @State private var showSplash = true
     @State private var showOnboarding = false
     @AppStorage("native.hasSeenOnboarding") private var hasSeenOnboarding = false
 
-    public init(model: NativeAppModel) {
-        _model = StateObject(wrappedValue: model)
-    }
+    private let configuration: NativeAppConfiguration
 
-    @MainActor public init() {
-        _model = StateObject(wrappedValue: .live())
+    public init() {
+        // --- DI Assembly ---
+        let config = NativeAppConfiguration.live(bundle: .main)
+        let persistence = NativeAppPersistence(store: UserDefaults.standard)
+        let bundledLoader = BundledJSONResourceLoader(bundle: .main)
+        let remoteLoader = RemoteJSONLoader(session: .shared)
+
+        // Repositories (shared instances)
+        let kindergartenRepo = KindergartenRepository(loader: {
+            try bundledLoader.data(named: config.kindergartensResourceName)
+        })
+        let reviewRepo = ReviewRepository(
+            remoteLoader: { try await remoteLoader.data(from: config.reviewsRemoteURL) },
+            localLoader: { try bundledLoader.data(named: config.reviewsResourceName) }
+        )
+        let vacancyRepo = VacancyRepository(
+            remoteLoader: { try await remoteLoader.data(from: config.vacancyRemoteURL) },
+            localLoader: { try bundledLoader.data(named: config.vacancyResourceName) }
+        )
+        let compareRepo = CompareRepository(persistence: persistence)
+        let favoriteRepo = FavoriteRepository(persistence: persistence)
+        let recentSearchRepo = RecentSearchRepository(persistence: persistence)
+
+        // UseCases
+        let searchUseCase = SearchUseCase()
+        let compareUseCase = CompareUseCase()
+        let fitReasonBuilder = FitReasonBuilder()
+
+        // Services
+        let locationProvider = CurrentLocationService()
+        let remoteSearch = KakaoLocalSuggestionService(
+            client: KakaoLocalAPIClient(apiKey: config.kakaoRESTAPIKey, session: .shared)
+        )
+        let analytics = OSLogAnalytics()
+        let router = AppRouter()
+
+        // Store config for service init
+        self.configuration = config
+
+        // ViewModels
+        _router = State(initialValue: router)
+        _searchVM = State(initialValue: SearchViewModel(
+            kindergartenRepo: kindergartenRepo,
+            reviewRepo: reviewRepo,
+            vacancyRepo: vacancyRepo,
+            compareRepo: compareRepo,
+            favoriteRepo: favoriteRepo,
+            recentSearchRepo: recentSearchRepo,
+            searchUseCase: searchUseCase,
+            fitReasonBuilder: fitReasonBuilder,
+            locationProvider: locationProvider,
+            remoteSearchService: remoteSearch,
+            analytics: analytics,
+            router: router,
+            persistence: persistence,
+            configuration: config
+        ))
+        _compareVM = State(initialValue: CompareViewModel(
+            compareRepo: compareRepo,
+            kindergartenRepo: kindergartenRepo,
+            reviewRepo: reviewRepo,
+            vacancyRepo: vacancyRepo,
+            compareUseCase: compareUseCase,
+            analytics: analytics,
+            router: router,
+            configuration: config
+        ))
+        _savedVM = State(initialValue: SavedViewModel(
+            favoriteRepo: favoriteRepo,
+            recentSearchRepo: recentSearchRepo,
+            kindergartenRepo: kindergartenRepo,
+            compareRepo: compareRepo,
+            reviewRepo: reviewRepo,
+            vacancyRepo: vacancyRepo,
+            analytics: analytics,
+            router: router
+        ))
     }
 
     public var body: some View {
@@ -21,26 +100,26 @@ public struct NativeRootView: View {
             mistWhite
                 .ignoresSafeArea()
 
-            TabView(selection: $model.selectedTab) {
-                SearchHomeView(model: model)
+            TabView(selection: $router.activeTab) {
+                SearchHomeView(viewModel: searchVM)
                     .tabItem {
                         Label("탐색", systemImage: "magnifyingglass")
                     }
                     .tag(NativeTab.search)
 
-                CompareView(model: model)
+                CompareView(viewModel: compareVM)
                     .tabItem {
                         Label("비교", systemImage: "square.split.2x2")
                     }
                     .tag(NativeTab.compare)
 
-                SavedView(model: model)
+                SavedView(viewModel: savedVM)
                     .tabItem {
                         Label("찜한곳", systemImage: "heart")
                     }
                     .tag(NativeTab.saved)
 
-                MoreView(model: model)
+                MoreView(viewModel: searchVM)
                     .tabItem {
                         Label("더보기", systemImage: "ellipsis.circle")
                     }
@@ -49,7 +128,7 @@ public struct NativeRootView: View {
         }
         .task {
             async let services: Void = initializeServices()
-            async let bootstrap: Void = model.bootstrapIfNeeded()
+            async let bootstrap: Void = searchVM.bootstrapIfNeeded()
             _ = await (services, bootstrap)
         }
         .onAppear {
@@ -63,21 +142,24 @@ public struct NativeRootView: View {
                 return
             }
             #endif
-            model.applyDeepLink(url)
+            searchVM.applyDeepLink(url)
         }
         .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
-            model.applyUniversalLink(userActivity)
+            searchVM.applyUniversalLink(userActivity)
         }
         .tint(leafGreen)
         .preferredColorScheme(.light)
         .toast(
-            isPresented: model.compareToastBinding,
-            message: model.compareToast?.message ?? "",
-            icon: model.compareToast?.icon ?? "checkmark.circle.fill"
+            isPresented: Binding(
+                get: { router.toast != nil },
+                set: { if !$0 { router.dismissToast() } }
+            ),
+            message: router.toast?.message ?? "",
+            icon: router.toast?.icon ?? "checkmark.circle.fill"
         )
         .sensoryFeedback(
-            model.compareToast?.isWarning == true ? .warning : .success,
-            trigger: model.compareToast?.id
+            router.toast?.isWarning == true ? .warning : .success,
+            trigger: router.toast?.id
         )
         .overlay {
             if showSplash {
@@ -111,7 +193,7 @@ public struct NativeRootView: View {
         #endif
 
         #if canImport(KakaoSDKShare)
-        if let appKey = model.configuration.kakaoAppKey {
+        if let appKey = configuration.kakaoAppKey {
             KakaoShareService.initializeSDK(appKey: appKey)
         }
         #endif

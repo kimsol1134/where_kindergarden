@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-04-07T13:57:41.876Z",
+  "primaryStats": {
+    "generatedAt": "2026-04-07T13:57:41.771Z",
+    "auditPath": "/Users/solkim/Dev/where_kindergarden/scripts/evals/review-audit-v1.jsonl",
+    "totalCount": 8495,
+    "auditedCount": 8495,
+    "remainingCount": 0,
+    "visibleCount": 1932,
+    "visibleVerifiedCount": 1932,
+    "invalidVisibleCount": 0,
+    "visiblePrecision": 1,
+    "byFinalStatus": {
+      "verified": 1932,
+      "mismatch": 472,
+      "advertorial": 0,
+      "generic_info": 4928,
+      "uncertain": 1163,
+      "unaudited": 0
+    },
+    "visibleByFinalStatus": {
+      "verified": 1932,
+      "mismatch": 0,
+      "advertorial": 0,
+      "generic_info": 0,
+      "uncertain": 0,
+      "unaudited": 0
+    }
+  },
+  "secondaryReport": {
+    "generatedAt": "2026-04-07T13:57:41.868Z",
+    "goldPath": "/Users/solkim/Dev/where_kindergarden/scripts/evals/review-quality-gold-v1.jsonl",
+    "reviewsPath": "/Users/solkim/Dev/where_kindergarden/scripts/review-autoresearch/sessions/incheon-collect-smoke/working/public/data/reviews.json",
+    "totalSamples": 480,
+    "binaryKeepRemove": {
+      "precision": 1,
+      "recall": 0.7625,
+      "f1": 0.865248,
+      "tp": 122,
+      "fp": 0,
+      "fn": 38,
+      "tn": 320
+    },
+    "removePrecision": 0.893855,
+    "perClass": {
+      "verified": {
+        "precision": 1,
+        "recall": 1,
+        "f1": 1,
+        "support": 160,
+        "predicted": 160,
+        "correct": 160
+      },
+      "mismatch": {
+        "precision": 1,
+        "recall": 0.716667,
+        "f1": 0.834952,
+        "support": 120,
+        "predicted": 86,
+        "correct": 86
+      },
+      "advertorial": {
+        "precision": 0.96,
+        "recall": 1,
+        "f1": 0.979592,
+        "support": 120,
+        "predicted": 125,
+        "correct": 120
+      },
+      "generic_info": {
+        "precision": 0.733945,
+        "recall": 1,
+        "f1": 0.846561,
+        "support": 80,
+        "predicted": 109,
+        "correct": 80
+      }
+    },
+    "predictedPresentCount": 122,
+    "expectedPresentCount": 160,
+    "contaminationKpis": {
+      "collisionGroupsOverThreshold": 35,
+      "unresolvedCollisionGroups": 22,
+      "unresolvedCollisionRows": 128
+    }
+  },
+  "collectionMetrics": {
+    "targetSidoCode": "28",
+    "targetKindergartenCount": 390,
+    "incheonVisibleReviewCount": 105,
+    "incheonCoverageAt1Count": 60,
+    "incheonCoverageAt1Ratio": 0.153846,
+    "incheonCoverageAt3Count": 8,
+    "incheonCoverageAt3Ratio": 0.020513,
+    "incheonVerifiedLinkCount": 70,
+    "incheonQnaCompleteCount": 0,
+    "addedLinkCount": 0,
+    "addedLinkVerifiedCount": 0,
+    "addedLinkVerifiedRate": 0,
+    "crossKindergartenErrorCount": 0,
+    "qnaSummaryCompleteness": 1,
+    "researchScore": 855.8973,
+    "diagnostics": {
+      "kindergartensSearched": 0,
+      "candidatesFound": 0,
+      "candidatesOpened": 0,
+      "acceptedLinks": 0,
+      "duplicateRejections": 0,
+      "officialSourceRejections": 0,
+      "wrongLinkRejections": 0,
+      "blogReadSuccessRate": 0,
+      "cafeReadSuccessRate": 0,
+      "questionPostAcceptRate": 0
+    }
+  },
+  "gateResult": {
+    "passed": false,
+    "failures": [
+      "global binary f1 0.865248 below 0.995"
+    ]
+  }
+}

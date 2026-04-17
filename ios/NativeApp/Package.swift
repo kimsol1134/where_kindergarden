@@ -8,6 +8,7 @@ let package = Package(
     ],
     products: [
         .library(name: "Models", targets: ["Models"]),
+        .library(name: "Domain", targets: ["Domain"]),
         .library(name: "Services", targets: ["Services"]),
         .library(name: "Features", targets: ["Features"]),
         .library(name: "AppShell", targets: ["AppShell"]),
@@ -18,23 +19,34 @@ let package = Package(
         .package(url: "https://github.com/kakao/kakao-ios-sdk.git", from: "2.25.0"),
     ],
     targets: [
+        // Layer 0: 순수 데이터 모델
+        .target(name: "Models"),
+
+        // Layer 1: 비즈니스 로직 (Models만 의존)
         .target(
-            name: "Models"
+            name: "Domain",
+            dependencies: ["Models"]
         ),
+
+        // Layer 2: 데이터 소스 + 외부 서비스 (Models, Domain 의존)
         .target(
             name: "Services",
             dependencies: [
                 "Models",
+                "Domain",
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
                 .product(name: "KakaoSDKCommon", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKShare", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKTemplate", package: "kakao-ios-sdk"),
             ]
         ),
+
+        // Layer 3: UI (Models, Domain, Services 의존)
         .target(
             name: "Features",
             dependencies: [
                 "Models",
+                "Domain",
                 "Services",
                 .product(
                     name: "KakaoMapsSDK-SPM",
@@ -44,13 +56,21 @@ let package = Package(
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
             ]
         ),
+
+        // App Shell: 조립 + 진입점
         .target(
             name: "AppShell",
-            dependencies: ["Models", "Services", "Features"]
+            dependencies: ["Models", "Domain", "Services", "Features"]
+        ),
+
+        // 테스트
+        .testTarget(
+            name: "DomainTests",
+            dependencies: ["Models", "Domain"]
         ),
         .testTarget(
             name: "NativeAppTests",
-            dependencies: ["Models", "Services", "Features"]
+            dependencies: ["Models", "Domain", "Services", "Features"]
         ),
     ]
 )
