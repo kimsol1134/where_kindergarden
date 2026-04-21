@@ -1,0 +1,113 @@
+name: Daily ASC Analytics Collection
+
+on:
+  workflow_dispatch:
+    inputs:
+      month:
+        description: 'Collect a specific month (YYYY-MM). Empty = current month.'
+        required: false
+        type: string
+      use_analytics_api:
+        description: 'Use Analytics Reports API instead of Sales Reports'
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # 08:10 KST daily (GitHub Actions cron uses UTC) — ASC data has ~T-2 day lag
+    - cron: '10 23 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-asc-analytics-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Materialize ASC .p8 key
+        env:
+          P8_B64: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8_B64 }}
+        run: |
+          if [ -z "$P8_B64" ]; then
+            echo "::error title=Missing secret::APP_STORE_CONNECT_API_KEY_P8_B64 is not set"
+            exit 1
+          fi
+
+          KEY_DIR="$RUNNER_TEMP/asc-key"
+          KEY_PATH="$KEY_DIR/AuthKey.p8"
+          mkdir -p "$KEY_DIR"
+          chmod 700 "$KEY_DIR"
+          printf '%s' "$P8_B64" | base64 --decode > "$KEY_PATH"
+          chmod 600 "$KEY_PATH"
+
+          echo "APP_STORE_CONNECT_API_KEY_FILEPATH=$KEY_PATH" >> "$GITHUB_ENV"
+
+      - name: Collect ASC analytics
+        env:
+          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          APP_STORE_CONNECT_API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
+          APP_STORE_APP_ID: ${{ secrets.APP_STORE_APP_ID }}
+          MONTH_INPUT: ${{ inputs.month }}
+          USE_ANALYTICS: ${{ inputs.use_analytics_api }}
+        run: |
+          ARGS=()
+          if [ -n "$MONTH_INPUT" ]; then
+            ARGS+=(--month "$MONTH_INPUT")
+          fi
+          if [ "$USE_ANALYTICS" = "true" ]; then
+            ARGS+=(--analytics)
+          fi
+
+          pnpm collect:asc-analytics -- "${ARGS[@]}"
+
+      - name: Summarize output
+        if: always()
+        run: |
+          OUTPUT_DIR="scripts/data-output"
+          if [ ! -d "$OUTPUT_DIR" ]; then
+            echo "::warning title=No output directory::$OUTPUT_DIR missing"
+            exit 0
+          fi
+
+          echo "## ASC Analytics Collection" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| File | Size | Metrics |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|------|------|---------|" >> "$GITHUB_STEP_SUMMARY"
+
+          shopt -s nullglob
+          for file in "$OUTPUT_DIR"/asc-analytics-*.json; do
+            size=$(wc -c < "$file")
+            count=$(node -e "const d=require('./$file'); console.log(d.metrics?.length ?? 0)")
+            echo "| \`$(basename "$file")\` | ${size}B | $count |" >> "$GITHUB_STEP_SUMMARY"
+          done
+
+      - name: Upload ASC analytics artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: asc-analytics-${{ github.run_id }}
+          path: scripts/data-output/asc-analytics-*.json
+          if-no-files-found: warn
+          retention-days: 90
