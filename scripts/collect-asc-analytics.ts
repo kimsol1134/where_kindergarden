@@ -192,7 +192,7 @@ export async function fetchSalesReport(
 
   if (!response.ok) {
     const text = await response.text();
-    throw new Error(`Sales Report API error ${response.status}: ${text.slice(0, 200)}`);
+    throw new Error(`Sales Report API error ${response.status}: ${text.slice(0, 1500)}`);
   }
 
   const text = await readMaybeGzippedText(response);
