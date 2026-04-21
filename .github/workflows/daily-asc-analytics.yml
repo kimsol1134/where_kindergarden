@@ -69,6 +69,7 @@ jobs:
           APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
           APP_STORE_CONNECT_API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
           APP_STORE_APP_ID: ${{ secrets.APP_STORE_APP_ID }}
+          APP_STORE_VENDOR_NUMBER: ${{ secrets.APP_STORE_VENDOR_NUMBER }}
           MONTH_INPUT: ${{ inputs.month }}
           USE_ANALYTICS: ${{ inputs.use_analytics_api }}
         run: |

@@ -13,14 +13,19 @@ App Store Connect 분석 데이터를 매일 자동으로 수집하는 GitHub Ac
 
 ## 필요한 GitHub Secrets
 
-Repo Settings → Secrets and variables → Actions에 아래 4개 등록:
+Repo Settings → Secrets and variables → Actions에 아래 5개 등록:
 
 | 이름 | 설명 | 예시 |
 |------|------|------|
 | `APP_STORE_CONNECT_API_KEY_ID` | ASC API Key ID | `TW3Y8S4M9V` |
 | `APP_STORE_CONNECT_API_ISSUER_ID` | ASC Issuer ID | `f4843e26-5b1f-4b00-bd4a-d24ca4539774` |
 | `APP_STORE_CONNECT_API_KEY_P8_B64` | .p8 파일 내용을 base64로 인코딩한 문자열 | (아래 참조) |
-| `APP_STORE_APP_ID` | Apple App ID (숫자) | `6737649116` |
+| `APP_STORE_APP_ID` | Apple App ID (숫자, CSV Apple Identifier 필터용) | `6737649116` |
+| `APP_STORE_VENDOR_NUMBER` | ASC Vendor Number (Sales Reports API 필수, 계정 레벨 식별자) | `405788798` |
+
+> **주의**: `APP_STORE_APP_ID`와 `APP_STORE_VENDOR_NUMBER`는 서로 다른 값입니다.
+> - **App ID**: 앱 단위 식별자, App Store URL에 노출됨 (`6737649116`)
+> - **Vendor Number**: 계정 레벨 식별자, ASC → Sales and Trends 우측 상단 계정 메뉴에서 확인 (`solkim|405788798|1` 형식)
 
 ### .p8 파일 base64 인코딩
 
