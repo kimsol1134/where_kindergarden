@@ -21,6 +21,7 @@
 import { config } from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as zlib from 'zlib';
 import jwt from 'jsonwebtoken';
 
 // .env.testflight.local 우선, .env.local fallback
@@ -136,15 +137,27 @@ export function generateJwt(config: AscApiConfig): string {
 
 async function ascFetch(
   jwtToken: string,
-  url: string
+  url: string,
+  acceptOverride?: string
 ): Promise<Response> {
   await delay(500);
   return fetch(url, {
     headers: {
       Authorization: `Bearer ${jwtToken}`,
-      Accept: 'application/json',
+      Accept: acceptOverride ?? 'application/json',
     },
   });
+}
+
+// Sales Report 응답은 gzip 바이너리. Content-Encoding: gzip이면 fetch가 자동 decompress하지만,
+// Apple은 Content-Type: application/a-gzip으로 raw gzip을 보내는 경우가 있어 수동 처리.
+async function readMaybeGzippedText(response: Response): Promise<string> {
+  const buf = Buffer.from(await response.arrayBuffer());
+  const isGzipMagic = buf.length >= 2 && buf[0] === 0x1f && buf[1] === 0x8b;
+  if (isGzipMagic) {
+    return zlib.gunzipSync(buf).toString('utf-8');
+  }
+  return buf.toString('utf-8');
 }
 
 // ============================================================================
@@ -173,14 +186,14 @@ export async function fetchSalesReport(
   const url = `https://api.appstoreconnect.apple.com/v1/salesReports?${params.toString()}`;
   log(`[ASC] Fetching Sales Report: ${url}`);
 
-  const response = await ascFetch(jwtToken, url);
+  const response = await ascFetch(jwtToken, url, 'application/a-gzip');
 
   if (!response.ok) {
     const text = await response.text();
     throw new Error(`Sales Report API error ${response.status}: ${text.slice(0, 200)}`);
   }
 
-  const text = await response.text();
+  const text = await readMaybeGzippedText(response);
   return parseSalesReportCsv(text, config.appId);
 }
 
