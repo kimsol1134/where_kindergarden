@@ -53,7 +53,8 @@
     "collect:naver-place": "tsx scripts/collect-naver-place-reviews.ts",
     "build:starteacher-mapping": "tsx scripts/build-starteacher-mapping.ts",
     "collect:starteacher": "tsx scripts/collect-starteacher-reviews.ts",
-    "collect:asc-analytics": "tsx scripts/collect-asc-analytics.ts"
+    "collect:asc-analytics": "tsx scripts/collect-asc-analytics.ts",
+    "gen:mixpanel-lexicon": "tsx scripts/generate-mixpanel-lexicon.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.0",
