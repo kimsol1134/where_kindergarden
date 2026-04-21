@@ -59,6 +59,7 @@ describe('generateJwt', () => {
       issuerId: 'test-issuer-uuid',
       privateKey: testPrivateKey,
       appId: '1234567890',
+      vendorNumber: '987654321',
     };
 
     const token = generateJwt(config);
@@ -106,6 +107,7 @@ describe('generateJwt', () => {
       issuerId: 'issuer-1',
       privateKey: testPrivateKey,
       appId: '111',
+      vendorNumber: '222',
     };
 
     const before = Math.floor(Date.now() / 1000);

@@ -15,7 +15,8 @@
  *   APP_STORE_CONNECT_API_KEY_ID      — API Key ID (예: TW3Y8S4M9V)
  *   APP_STORE_CONNECT_API_KEY_ISSUER_ID — Issuer ID
  *   APP_STORE_CONNECT_API_KEY_PATH    — .p8 파일 절대 경로
- *   APP_STORE_APP_ID                  — Apple App ID (숫자)
+ *   APP_STORE_APP_ID                  — Apple App ID (숫자, CSV 행 필터에 사용)
+ *   APP_STORE_VENDOR_NUMBER           — ASC Vendor Number (Sales Reports API filter[vendorNumber])
  */
 
 import { config } from 'dotenv';
@@ -34,10 +35,11 @@ config();
 // ============================================================================
 
 export interface AscApiConfig {
-  keyId: string;       // APP_STORE_CONNECT_API_KEY_ID
-  issuerId: string;    // APP_STORE_CONNECT_API_KEY_ISSUER_ID
-  privateKey: string;  // .p8 파일 내용
-  appId: string;       // APP_STORE_APP_ID
+  keyId: string;         // APP_STORE_CONNECT_API_KEY_ID
+  issuerId: string;      // APP_STORE_CONNECT_API_KEY_ISSUER_ID
+  privateKey: string;    // .p8 파일 내용
+  appId: string;         // APP_STORE_APP_ID (Apple Identifier, CSV 행 필터)
+  vendorNumber: string;  // APP_STORE_VENDOR_NUMBER (Sales Reports API 필수, appId와 별개)
 }
 
 export interface AscDailyMetric {
@@ -179,7 +181,7 @@ export async function fetchSalesReport(
     'filter[frequency]': 'MONTHLY',
     'filter[reportType]': 'SALES',
     'filter[reportSubType]': 'SUMMARY',
-    'filter[vendorNumber]': config.appId,
+    'filter[vendorNumber]': config.vendorNumber,
     'filter[reportDate]': reportDate,
   });
 
@@ -458,9 +460,10 @@ function loadConfig(): AscApiConfig {
     process.env.APP_STORE_CONNECT_API_KEY_PATH ??
     '';
   const appId = process.env.APP_STORE_APP_ID ?? process.env.APP_IDENTIFIER ?? '';
+  const vendorNumber = process.env.APP_STORE_VENDOR_NUMBER ?? '';
 
   if (!keyId || !issuerId || !keyPath || !appId) {
-    return { keyId, issuerId, privateKey: '', appId };
+    return { keyId, issuerId, privateKey: '', appId, vendorNumber };
   }
 
   const expandedPath = keyPath.startsWith('~')
@@ -469,11 +472,11 @@ function loadConfig(): AscApiConfig {
 
   if (!fs.existsSync(expandedPath)) {
     logWarn(`Private key file not found: ${expandedPath}`);
-    return { keyId, issuerId, privateKey: '', appId };
+    return { keyId, issuerId, privateKey: '', appId, vendorNumber };
   }
 
   const privateKey = fs.readFileSync(expandedPath, 'utf-8');
-  return { keyId, issuerId, privateKey, appId };
+  return { keyId, issuerId, privateKey, appId, vendorNumber };
 }
 
 // ============================================================================
@@ -533,10 +536,11 @@ export async function main(): Promise<void> {
   // --dry-run: JWT 구성까지만 확인하고 종료
   if (args.dryRun) {
     log('[dry-run] Config loaded:');
-    log(`  keyId      = ${ascConfig.keyId || '(missing APP_STORE_CONNECT_API_KEY_ID)'}`);
-    log(`  issuerId   = ${ascConfig.issuerId || '(missing APP_STORE_CONNECT_API_ISSUER_ID)'}`);
-    log(`  appId      = ${ascConfig.appId || '(missing APP_STORE_APP_ID or --app-id flag)'}`);
-    log(`  privateKey = ${ascConfig.privateKey ? '[loaded]' : '(missing APP_STORE_CONNECT_API_KEY_FILEPATH or file not found)'}`);
+    log(`  keyId        = ${ascConfig.keyId || '(missing APP_STORE_CONNECT_API_KEY_ID)'}`);
+    log(`  issuerId     = ${ascConfig.issuerId || '(missing APP_STORE_CONNECT_API_ISSUER_ID)'}`);
+    log(`  appId        = ${ascConfig.appId || '(missing APP_STORE_APP_ID or --app-id flag)'}`);
+    log(`  vendorNumber = ${ascConfig.vendorNumber || '(missing APP_STORE_VENDOR_NUMBER — required for Sales Reports)'}`);
+    log(`  privateKey   = ${ascConfig.privateKey ? '[loaded]' : '(missing APP_STORE_CONNECT_API_KEY_FILEPATH or file not found)'}`);
 
     if (ascConfig.privateKey && ascConfig.keyId && ascConfig.issuerId) {
       const token = generateJwt(ascConfig);
@@ -559,6 +563,9 @@ export async function main(): Promise<void> {
   if (!ascConfig.issuerId) missing.push('APP_STORE_CONNECT_API_ISSUER_ID');
   if (!ascConfig.privateKey) missing.push('APP_STORE_CONNECT_API_KEY_FILEPATH (or file not found)');
   if (!ascConfig.appId) missing.push('APP_STORE_APP_ID (or --app-id CLI flag)');
+  if (!args.useAnalytics && !ascConfig.vendorNumber) {
+    missing.push('APP_STORE_VENDOR_NUMBER (required for Sales Reports API)');
+  }
 
   if (missing.length > 0) {
     logError(`Missing required environment variables:\n  ${missing.join('\n  ')}`);
