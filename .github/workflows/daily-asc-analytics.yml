@@ -3,8 +3,12 @@ name: Daily ASC Analytics Collection
 on:
   workflow_dispatch:
     inputs:
+      day:
+        description: 'Collect a specific day (YYYY-MM-DD). Empty = T-2 (UTC).'
+        required: false
+        type: string
       month:
-        description: 'Collect a specific month (YYYY-MM). Empty = current month.'
+        description: 'Backfill a completed month (YYYY-MM, MONTHLY). Overrides "day".'
         required: false
         type: string
       use_analytics_api:
@@ -13,7 +17,7 @@ on:
         default: false
         type: boolean
   schedule:
-    # 08:10 KST daily (GitHub Actions cron uses UTC) — ASC data has ~T-2 day lag
+    # 08:10 KST daily (GitHub Actions cron uses UTC) — collects T-2 day DAILY report
     - cron: '10 23 * * *'
 
 permissions:
@@ -70,12 +74,16 @@ jobs:
           APP_STORE_CONNECT_API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
           APP_STORE_APP_ID: ${{ secrets.APP_STORE_APP_ID }}
           APP_STORE_VENDOR_NUMBER: ${{ secrets.APP_STORE_VENDOR_NUMBER }}
+          DAY_INPUT: ${{ inputs.day }}
           MONTH_INPUT: ${{ inputs.month }}
           USE_ANALYTICS: ${{ inputs.use_analytics_api }}
         run: |
           ARGS=()
+          # --month wins over --day; if neither, script defaults to T-2 day DAILY
           if [ -n "$MONTH_INPUT" ]; then
             ARGS+=(--month "$MONTH_INPUT")
+          elif [ -n "$DAY_INPUT" ]; then
+            ARGS+=(--day "$DAY_INPUT")
           fi
           if [ "$USE_ANALYTICS" = "true" ]; then
             ARGS+=(--analytics)

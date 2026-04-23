@@ -5,11 +5,15 @@
  * Mixpanel の日次データと date (YYYY-MM-DD) をJOINキーとして教差分析に使用します。
  *
  * 사용법:
- *   pnpm collect:asc-analytics                       # 当月データ収集
- *   pnpm collect:asc-analytics -- --month 2025-03    # 특정 월 수집
- *   pnpm collect:asc-analytics -- --dry-run          # JWT 구성 확인 (API 호출 없음)
- *   pnpm collect:asc-analytics -- --dry-run --print-jwt  # JWT 출력 후 종료
- *   pnpm collect:asc-analytics -- --analytics        # Analytics Reports API 사용 (비동기 3단계)
+ *   pnpm collect:asc-analytics                          # 기본: T-2 일자 DAILY 수집 (cron용)
+ *   pnpm collect:asc-analytics -- --day 2026-04-21      # 특정 일자 수집 (DAILY)
+ *   pnpm collect:asc-analytics -- --month 2025-03       # 완료된 월 수집 (MONTHLY, backfill)
+ *   pnpm collect:asc-analytics -- --dry-run             # JWT 구성 확인 (API 호출 없음)
+ *   pnpm collect:asc-analytics -- --dry-run --print-jwt # JWT 출력 후 종료
+ *   pnpm collect:asc-analytics -- --analytics           # Analytics Reports API (비동기 3단계)
+ *
+ * 결과는 scripts/data-output/asc-analytics-YYYY-MM.json에 저장되며,
+ * DAILY 수집을 매일 돌리면 같은 월 파일에 dedupe 후 누적된다.
  *
  * 환경 변수 (.env.testflight.local 또는 .env.local):
  *   APP_STORE_CONNECT_API_KEY_ID      — API Key ID (예: TW3Y8S4M9V)
@@ -165,30 +169,52 @@ async function readMaybeGzippedText(response: Response): Promise<string> {
 // ============================================================================
 // Sales Reports API (Primary)
 // GET /v1/salesReports?filter[reportType]=SALES&filter[reportSubType]=SUMMARY
-// 동기 응답, 전일/전월 데이터. Units 컬럼을 installs 근사치로 사용.
+// 동기 응답. Units 컬럼을 installs 근사치로 사용.
+//   - DAILY:   reportDate = YYYY-MM-DD (단일 일자, T-2 lag)
+//   - MONTHLY: reportDate = YYYY-MM    (완료된 월만 가능)
+// 404 NOT_FOUND ("no sales for the date specified")는 정상 응답이며 빈 배열을 반환한다.
 // ============================================================================
+
+export type SalesReportRequest =
+  | { frequency: 'DAILY'; reportDate: string /* YYYY-MM-DD */ }
+  | { frequency: 'MONTHLY'; reportDate: string /* YYYY-MM */ };
+
+export interface SalesReportResult {
+  metrics: AscDailyMetric[];
+  noData: boolean; // Apple이 404 NOT_FOUND를 반환한 경우 true
+}
 
 export async function fetchSalesReport(
   config: AscApiConfig,
-  year: number,
-  month: number
-): Promise<AscDailyMetric[]> {
+  request: SalesReportRequest
+): Promise<SalesReportResult> {
   const jwtToken = generateJwt(config);
-  const monthStr = String(month).padStart(2, '0');
-  const reportDate = `${year}-${monthStr}`;
+  const sourceTag =
+    request.frequency === 'DAILY' ? 'asc_sales_report_daily' : 'asc_sales_report_monthly';
 
   const params = new URLSearchParams({
-    'filter[frequency]': 'MONTHLY',
+    'filter[frequency]': request.frequency,
     'filter[reportType]': 'SALES',
     'filter[reportSubType]': 'SUMMARY',
     'filter[vendorNumber]': config.vendorNumber,
-    'filter[reportDate]': reportDate,
+    'filter[reportDate]': request.reportDate,
   });
 
   const url = `https://api.appstoreconnect.apple.com/v1/salesReports?${params.toString()}`;
-  log(`[ASC] Fetching Sales Report: ${url}`);
+  log(`[ASC] Fetching Sales Report (${request.frequency} ${request.reportDate}): ${url}`);
 
   const response = await ascFetch(jwtToken, url, 'application/a-gzip');
+
+  if (response.status === 404) {
+    const text = await response.text();
+    if (text.includes('NOT_FOUND') || /no sales/i.test(text)) {
+      logWarn(
+        `Sales Report ${request.frequency} ${request.reportDate}: no data yet (404 NOT_FOUND). Treating as empty.`
+      );
+      return { metrics: [], noData: true };
+    }
+    throw new Error(`Sales Report API error 404: ${text.slice(0, 1500)}`);
+  }
 
   if (!response.ok) {
     const text = await response.text();
@@ -196,14 +222,19 @@ export async function fetchSalesReport(
   }
 
   const text = await readMaybeGzippedText(response);
-  return parseSalesReportCsv(text, config.appId);
+  const metrics = parseSalesReportCsv(text, config.appId, sourceTag);
+  return { metrics, noData: metrics.length === 0 };
 }
 
 // ============================================================================
 // Sales Report TSV/CSV 파싱 → AscDailyMetric[]
 // ============================================================================
 
-export function parseSalesReportCsv(tsvContent: string, appId: string): AscDailyMetric[] {
+export function parseSalesReportCsv(
+  tsvContent: string,
+  appId: string,
+  source: string = 'asc_sales_report_daily'
+): AscDailyMetric[] {
   const lines = tsvContent.split('\n').filter((line) => line.trim().length > 0);
   if (lines.length < 2) {
     return [];
@@ -253,7 +284,7 @@ export function parseSalesReportCsv(tsvContent: string, appId: string): AscDaily
       cohort_date: date,
       metric_name: 'installs',
       value: units,
-      source: 'asc_sales_report',
+      source,
     });
   }
 
@@ -431,18 +462,59 @@ function parseAnalyticsReportData(
 }
 
 // ============================================================================
-// 결과 저장
+// 결과 저장 (월별 파일에 dedupe 후 누적)
+// 키: date|metric_name|source — 같은 날짜·소스를 다시 수집하면 새 값으로 갱신.
+// DAILY 수집을 매일 돌리면 같은 월 파일에 자연스럽게 누적된다.
 // ============================================================================
 
-export function saveResult(result: AscCollectionResult, outputDir: string): void {
+export function mergeAndSave(result: AscCollectionResult, outputDir: string): void {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
 
-  const filename = `asc-analytics-${result.period.start.slice(0, 7)}.json`;
+  const monthKey = result.period.start.slice(0, 7); // YYYY-MM
+  const filename = `asc-analytics-${monthKey}.json`;
   const outputPath = path.join(outputDir, filename);
-  fs.writeFileSync(outputPath, JSON.stringify(result, null, 2), 'utf-8');
-  log(`[ASC] Saved to: ${outputPath}`);
+
+  let existingMetrics: AscDailyMetric[] = [];
+  if (fs.existsSync(outputPath)) {
+    try {
+      const parsed = JSON.parse(fs.readFileSync(outputPath, 'utf-8')) as AscCollectionResult;
+      existingMetrics = Array.isArray(parsed.metrics) ? parsed.metrics : [];
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      logWarn(`Existing file corrupt, overwriting: ${outputPath} (${message})`);
+    }
+  }
+
+  const dedupe = new Map<string, AscDailyMetric>();
+  for (const m of existingMetrics) {
+    dedupe.set(`${m.date}|${m.metric_name}|${m.source}`, m);
+  }
+  for (const m of result.metrics) {
+    dedupe.set(`${m.date}|${m.metric_name}|${m.source}`, m);
+  }
+
+  const merged = Array.from(dedupe.values()).sort((a, b) => {
+    if (a.date !== b.date) return a.date.localeCompare(b.date);
+    if (a.metric_name !== b.metric_name) return a.metric_name.localeCompare(b.metric_name);
+    return a.source.localeCompare(b.source);
+  });
+
+  const dates = merged.map((m) => m.date).sort();
+  const finalResult: AscCollectionResult = {
+    collected_at: result.collected_at,
+    period: {
+      start: dates[0] ?? result.period.start,
+      end: dates[dates.length - 1] ?? result.period.end,
+    },
+    metrics: merged,
+  };
+
+  fs.writeFileSync(outputPath, JSON.stringify(finalResult, null, 2), 'utf-8');
+  log(
+    `[ASC] Saved to: ${outputPath} (added ${result.metrics.length}, total ${merged.length}, period ${finalResult.period.start} ~ ${finalResult.period.end})`
+  );
 }
 
 // ============================================================================
@@ -487,7 +559,8 @@ interface CliArgs {
   dryRun: boolean;
   printJwt: boolean;
   useAnalytics: boolean;
-  month: string | null; // YYYY-MM
+  month: string | null; // YYYY-MM (MONTHLY backfill)
+  day: string | null;   // YYYY-MM-DD (DAILY single-day collection)
   appIdOverride: string | null;
 }
 
@@ -497,6 +570,7 @@ function parseArgs(argv: string[]): CliArgs {
     printJwt: false,
     useAnalytics: false,
     month: null,
+    day: null,
     appIdOverride: null,
   };
 
@@ -511,6 +585,9 @@ function parseArgs(argv: string[]): CliArgs {
     } else if (arg === '--month' && argv[i + 1]) {
       args.month = argv[i + 1];
       i++;
+    } else if (arg === '--day' && argv[i + 1]) {
+      args.day = argv[i + 1];
+      i++;
     } else if (arg === '--app-id' && argv[i + 1]) {
       args.appIdOverride = argv[i + 1];
       i++;
@@ -518,6 +595,16 @@ function parseArgs(argv: string[]): CliArgs {
   }
 
   return args;
+}
+
+/**
+ * UTC 기준 N일 전 날짜를 YYYY-MM-DD로 반환.
+ * Apple ASC daily report는 보통 T-2 일자가 안정적으로 제공됨.
+ */
+export function computeDefaultReportDate(now: Date = new Date(), lagDays: number = 2): string {
+  const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  d.setUTCDate(d.getUTCDate() - lagDays);
+  return d.toISOString().slice(0, 10);
 }
 
 // ============================================================================
@@ -573,40 +660,68 @@ export async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // 수집 대상 월 결정
-  const now = new Date();
-  let year: number;
-  let month: number;
+  // 수집 대상 결정: --month > --day > 기본값(T-2 DAILY)
+  let startDate: string;
+  let endDate: string;
+  let metrics: AscDailyMetric[] = [];
 
-  if (args.month) {
+  if (args.useAnalytics) {
+    // Analytics Reports API는 기존대로 월 단위
+    const now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth() + 1;
+    if (args.month) {
+      const match = /^(\d{4})-(\d{2})$/.exec(args.month);
+      if (!match) {
+        logError(`Invalid --month format: ${args.month}. Use YYYY-MM.`);
+        process.exit(1);
+      }
+      year = parseInt(match[1], 10);
+      month = parseInt(match[2], 10);
+    }
+    const monthStr = String(month).padStart(2, '0');
+    startDate = `${year}-${monthStr}-01`;
+    const lastDay = new Date(year, month, 0).getDate();
+    endDate = `${year}-${monthStr}-${String(lastDay).padStart(2, '0')}`;
+    log(`[ASC] Collecting (Analytics Reports) ${startDate} ~ ${endDate}`);
+    metrics = await fetchAnalyticsReport(ascConfig, startDate, endDate);
+  } else if (args.month) {
+    // 완료된 월 backfill — MONTHLY frequency
     const match = /^(\d{4})-(\d{2})$/.exec(args.month);
     if (!match) {
       logError(`Invalid --month format: ${args.month}. Use YYYY-MM.`);
       process.exit(1);
     }
-    year = parseInt(match[1], 10);
-    month = parseInt(match[2], 10);
+    const year = parseInt(match[1], 10);
+    const month = parseInt(match[2], 10);
+    const monthStr = String(month).padStart(2, '0');
+    startDate = `${year}-${monthStr}-01`;
+    const lastDay = new Date(year, month, 0).getDate();
+    endDate = `${year}-${monthStr}-${String(lastDay).padStart(2, '0')}`;
+    log(`[ASC] Collecting (Sales Reports MONTHLY) ${args.month}`);
+    const result = await fetchSalesReport(ascConfig, {
+      frequency: 'MONTHLY',
+      reportDate: args.month,
+    });
+    metrics = result.metrics;
   } else {
-    year = now.getFullYear();
-    month = now.getMonth() + 1;
-  }
-
-  const monthStr = String(month).padStart(2, '0');
-  const startDate = `${year}-${monthStr}-01`;
-  // 해당 월의 마지막 날
-  const lastDay = new Date(year, month, 0).getDate();
-  const endDate = `${year}-${monthStr}-${String(lastDay).padStart(2, '0')}`;
-
-  log(`[ASC] Collecting data for period: ${startDate} ~ ${endDate}`);
-
-  let metrics: AscDailyMetric[];
-
-  if (args.useAnalytics) {
-    log('[ASC] Using Analytics Reports API (async 3-step flow)...');
-    metrics = await fetchAnalyticsReport(ascConfig, startDate, endDate);
-  } else {
-    log('[ASC] Using Sales Reports API (primary)...');
-    metrics = await fetchSalesReport(ascConfig, year, month);
+    // 기본 흐름: T-2 일자 DAILY 수집 (cron 용)
+    const reportDay = args.day ?? computeDefaultReportDate();
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(reportDay)) {
+      logError(`Invalid --day format: ${reportDay}. Use YYYY-MM-DD.`);
+      process.exit(1);
+    }
+    startDate = reportDay;
+    endDate = reportDay;
+    log(`[ASC] Collecting (Sales Reports DAILY) ${reportDay}`);
+    const result = await fetchSalesReport(ascConfig, {
+      frequency: 'DAILY',
+      reportDate: reportDay,
+    });
+    metrics = result.metrics;
+    if (result.noData) {
+      log(`[ASC] No data for ${reportDay} yet — file will not be modified for this date.`);
+    }
   }
 
   const result: AscCollectionResult = {
@@ -616,9 +731,9 @@ export async function main(): Promise<void> {
   };
 
   const outputDir = path.resolve('scripts/data-output');
-  saveResult(result, outputDir);
+  mergeAndSave(result, outputDir);
 
-  log(`[ASC] Collection complete. Total metrics: ${metrics.length}`);
+  log(`[ASC] Collection complete. New metrics this run: ${metrics.length}`);
 }
 
 // スクリプトとして直接実行された場合のみmainを呼ぶ
