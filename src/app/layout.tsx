@@ -7,8 +7,13 @@ import { AdContainer } from '@/components/ads/AdContainer';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
+const SITE_URL = 'https://where-kindergarden.vercel.app';
+const OG_IMAGE_URL = `${SITE_URL}/og-image.png`;
+const OG_IMAGE_ALT =
+  '우리동네 유치원 - 내 주변 유치원을 찾고 한눈에 비교하세요';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://where-kindergarden.vercel.app'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
     template: '%s | 우리동네 유치원',
@@ -43,25 +48,45 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://where-kindergarden.vercel.app',
+    url: SITE_URL,
     siteName: '우리동네 유치원',
     title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
     description:
       '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 전국 7,950개 이상의 유치원 정보를 한눈에 확인할 수 있습니다.',
+    images: [
+      {
+        url: OG_IMAGE_URL,
+        width: 1200,
+        height: 630,
+        alt: OG_IMAGE_ALT,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
     description:
       '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요.',
+    images: [
+      {
+        url: OG_IMAGE_URL,
+        width: 1200,
+        height: 630,
+        alt: OG_IMAGE_ALT,
+      },
+    ],
   },
   icons: {
+    shortcut: [{ url: `${SITE_URL}/favicon.ico`, type: 'image/x-icon' }],
     icon: [
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico', sizes: '16x16' },
+      { url: `${SITE_URL}/favicon.ico`, sizes: 'any', type: 'image/x-icon' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' },
+      {
+        url: `${SITE_URL}/apple-touch-icon.png`,
+        sizes: '180x180',
+        type: 'image/png',
+      },
     ],
   },
   verification: {
@@ -74,9 +99,7 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: 'black-translucent',
     title: '우리동네 유치원',
-    startupImage: [
-      '/startup.png',
-    ],
+    startupImage: ['/startup.png'],
   },
 };
 
