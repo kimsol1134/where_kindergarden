@@ -116,6 +116,41 @@ describe('review collision resolution', () => {
     expect(resolutionMap.get('rev-3')?.shouldRemove).toBe(true);
     expect(resolutionMap.get('rev-4')?.shouldRemove).toBe(true);
   });
+
+  it('같은 유치원의 네이버 플레이스 리뷰 여러 건은 URL collision으로 보지 않는다', () => {
+    const kindergarten: KindergartenEntry = {
+      kindercode: 'kid-place',
+      name: '강변유치원',
+      address: '서울특별시 용산구 이촌로84길 9-7',
+      sido_code: '11',
+      sigungu_code: '11170',
+    };
+    const entries: LoadedReviewEntry[] = Array.from(
+      { length: 5 },
+      (_, index) => ({
+        kindergarten,
+        sidoCode: '11',
+        review: {
+          id: `rev-np-${index}`,
+          kindergartenId: kindergarten.kindercode,
+          title: `네이버 플레이스 리뷰 ${index}`,
+          url: 'https://m.place.naver.com/place/18726525/review/visitor',
+          source: 'naver_place',
+          sourceName: 'naver_place',
+          snippet: '아이들이 즐겁게 다니고 선생님들이 친절합니다.',
+          date: null,
+          collectedAt: '2026-04-05T00:00:00.000Z',
+        },
+      })
+    );
+
+    const resolutionMap = buildReviewCollisionResolutionMap(
+      entries,
+      buildCoreNameFrequencyMap([kindergarten])
+    );
+
+    expect(resolutionMap.size).toBe(0);
+  });
 });
 
 describe('review quality evaluator', () => {

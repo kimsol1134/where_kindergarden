@@ -210,7 +210,11 @@ export function buildReviewCollisionResolutionMap(
   const resolutions = new Map<string, ReviewCollisionResolution>();
 
   for (const [normalizedUrl, bucket] of byNormalizedUrl.entries()) {
-    if (bucket.length <= threshold) {
+    const uniqueKindergartenIds = new Set(
+      bucket.map((entry) => entry.kindergarten.kindercode)
+    );
+
+    if (bucket.length <= threshold || uniqueKindergartenIds.size <= 1) {
       continue;
     }
 
@@ -338,6 +342,11 @@ export function splitReviewsBySigungu(
 
   const outputDir = path.join(outputBaseDir, sidoCode);
   ensureDirectory(outputDir);
+  for (const fileName of fs.readdirSync(outputDir)) {
+    if (/^\d{5}\.json$/.test(fileName)) {
+      fs.unlinkSync(path.join(outputDir, fileName));
+    }
+  }
 
   const results: Record<string, ReviewsData> = {};
   for (const [sigunguCode, reviews] of splitData.entries()) {

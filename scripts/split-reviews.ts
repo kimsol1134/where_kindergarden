@@ -142,6 +142,11 @@ function main() {
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
+  for (const fileName of fs.readdirSync(outputDir)) {
+    if (/^\d{5}\.json$/.test(fileName)) {
+      fs.unlinkSync(path.join(outputDir, fileName));
+    }
+  }
   
   console.log(`\n=== 분할 결과 ===`);
   
