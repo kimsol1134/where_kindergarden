@@ -8,7 +8,8 @@ import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
 const SITE_URL = 'https://where-kindergarden.vercel.app';
-const OG_IMAGE_URL = `${SITE_URL}/og-image.png`;
+const FAVICON_URL = `${SITE_URL}/favicon-20260612.png`;
+const OG_IMAGE_URL = `${SITE_URL}/og-image-20260612.png`;
 const OG_IMAGE_ALT =
   '우리동네 유치원 - 내 주변 유치원을 찾고 한눈에 비교하세요';
 
@@ -77,8 +78,9 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    shortcut: [{ url: `${SITE_URL}/favicon.ico`, type: 'image/x-icon' }],
+    shortcut: [{ url: FAVICON_URL, sizes: '48x48', type: 'image/png' }],
     icon: [
+      { url: FAVICON_URL, sizes: '48x48', type: 'image/png' },
       { url: `${SITE_URL}/favicon.ico`, sizes: 'any', type: 'image/x-icon' },
     ],
     apple: [
