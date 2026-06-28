@@ -74,13 +74,12 @@ public final class SearchViewModel {
     private var hasBootstrapped: Bool
     private var kindergartenLookup: [String: KindergartenRaw]
     private var pendingSearchDeepLinkQuery: String?
-    nonisolated(unsafe) private var searchDeepLinkTask: Task<Void, Never>?
-    nonisolated(unsafe) private var searchSuggestionTask: Task<Void, Never>?
-    nonisolated(unsafe) private var filterAppliedTask: Task<Void, Never>?
+    @ObservationIgnored nonisolated(unsafe) private var searchDeepLinkTask: Task<Void, Never>?
+    @ObservationIgnored nonisolated(unsafe) private var searchSuggestionTask: Task<Void, Never>?
+    @ObservationIgnored nonisolated(unsafe) private var filterAppliedTask: Task<Void, Never>?
     private var resultQuery: String
     private var currentDeviceLocationTask: Task<Coordinates, Error>?
     private var currentDeviceLocationTaskID = 0
-    private var didRequestATT = false
 
     // MARK: - Init
 
@@ -165,7 +164,10 @@ public final class SearchViewModel {
 
     public func dismissToast() { router.dismissToast() }
     public func navigateToSearch() { router.activeTab = .search }
-    public func navigateToCompare() { router.activeTab = .compare }
+    public func navigateToCompare() {
+        selectedKindergarten = nil
+        router.activeTab = .compare
+    }
     public func clearRecentSearches() { _ = recentSearchRepo.deleteAll() }
 
     // MARK: - Computed Properties
@@ -464,14 +466,18 @@ public final class SearchViewModel {
 
     // MARK: - Selection & Detail
 
-    public func select(kindergarten: Kindergarten) {
-        analytics?.track(event: .resultTapped, properties: [
-            "kindercode": .string(kindergarten.kindercode),
-        ])
-        analytics?.track(event: .detailOpened, properties: [
-            "kindercode": .string(kindergarten.kindercode),
-            "kindergarten_type": .string(kindergarten.type.rawValue),
-        ])
+    public func select(
+        kindergarten: Kindergarten,
+        source: String = "result",
+        rankPosition: Int? = nil
+    ) {
+        let properties = kindergartenAnalyticsProperties(
+            for: kindergarten,
+            source: source,
+            rankPosition: rankPosition
+        )
+        analytics?.track(event: .resultTapped, properties: properties)
+        analytics?.track(event: .detailOpened, properties: properties)
         selectedKindergarten = kindergarten
     }
 
@@ -498,26 +504,34 @@ public final class SearchViewModel {
             vacancyError: vacancyError,
             isCompared: isCompared(kindergarten),
             isFavorite: isFavorite(kindergarten),
+            compareCount: compareRepo.selection.ids.count,
             fitReasons: fitReasons(for: kindergarten),
-            onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
-            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+            onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten, source: "detail") },
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten, source: "detail") },
+            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() }
         )
     }
 
     // MARK: - Compare & Favorite
 
-    public func toggleCompare(for kindergarten: Kindergarten) {
+    public func toggleCompare(for kindergarten: Kindergarten, source: String = "search") {
         let result = compareRepo.toggle(id: kindergarten.kindercode)
         switch result {
         case .added:
             analytics?.track(event: .comparisonAdded, properties: [
+                "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
+                "source": .string(source),
+                "compare_count": .int(compareRepo.selection.ids.count),
             ])
             refreshSelectedKindergarten()
             router.showToast(.success("비교에 담았어요"))
         case .removed:
             analytics?.track(event: .comparisonRemoved, properties: [
+                "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
+                "source": .string(source),
+                "compare_count": .int(compareRepo.selection.ids.count),
             ])
             refreshSelectedKindergarten()
             router.showToast(.success("비교에서 뺐어요"))
@@ -526,18 +540,21 @@ public final class SearchViewModel {
         }
     }
 
-    public func toggleFavorite(for kindergarten: Kindergarten) {
+    public func toggleFavorite(for kindergarten: Kindergarten, source: String = "search") {
         let wasFavorite = favoriteRepo.isFavorite(kindergarten.kindercode)
-        if wasFavorite {
-            analytics?.track(event: .favoriteRemoved, properties: [
-                "kindercode": .string(kindergarten.kindercode),
-            ])
-        } else {
-            analytics?.track(event: .favoriteAdded, properties: [
-                "kindercode": .string(kindergarten.kindercode),
-            ])
-        }
         favoriteRepo.toggle(for: kindergarten)
+
+        let properties: AnalyticsProperties = [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string(source),
+            "favorite_count": .int(favoriteRepo.favorites.count),
+        ]
+        if wasFavorite {
+            analytics?.track(event: .favoriteRemoved, properties: properties)
+        } else {
+            analytics?.track(event: .favoriteAdded, properties: properties)
+        }
     }
 
     public func isCompared(_ kindergarten: Kindergarten) -> Bool {
@@ -550,6 +567,11 @@ public final class SearchViewModel {
 
     public func compareOrder(for kindercode: String) -> Int? {
         compareRepo.order(for: kindercode)
+    }
+
+    private func navigateFromDetailToCompare() {
+        selectedKindergarten = nil
+        router.activeTab = .compare
     }
 
     // MARK: - Data Accessors
@@ -699,24 +721,47 @@ public final class SearchViewModel {
             "result_count": .int(baseResults.count),
             "has_results": .bool(!baseResults.isEmpty),
             "radius": .int(Int(filters.radiusKM)),
+            "sort": .string(filters.sort.rawValue),
+            "filter_count": .int(activeAdvancedFilterCount),
             "query_length": .int(resultQuery.count),
             "search_query": .string(Self.sanitizedSearchQuery(resultQuery)),
             "query_type": .string(resultQuery.isEmpty ? "location" : "keyword"),
         ])
-        requestATTIfFirstResults(baseResults)
         if baseResults.isEmpty && previouslyHadResults {
-            analytics?.track(event: .emptyStateShown)
+            analytics?.track(event: .emptyStateShown, properties: [
+                "radius": .int(Int(filters.radiusKM)),
+                "sort": .string(filters.sort.rawValue),
+                "filter_count": .int(activeAdvancedFilterCount),
+                "query_length": .int(resultQuery.count),
+                "search_query": .string(Self.sanitizedSearchQuery(resultQuery)),
+                "query_type": .string(resultQuery.isEmpty ? "location" : "keyword"),
+            ])
         }
         refreshSelectedKindergarten()
     }
 
-    private func requestATTIfFirstResults(_ results: [Kindergarten]) {
-        guard !didRequestATT, !results.isEmpty else { return }
-        didRequestATT = true
-        Task {
-            try? await Task.sleep(for: .seconds(1.5))
-            _ = await TrackingTransparencyService.requestIfNeeded()
+    private func kindergartenAnalyticsProperties(
+        for kindergarten: Kindergarten,
+        source: String,
+        rankPosition: Int?
+    ) -> AnalyticsProperties {
+        var properties: AnalyticsProperties = [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "kindergarten_type": .string(kindergarten.type.rawValue),
+            "source": .string(source),
+            "result_count": .int(results.count),
+            "has_reviews": .bool(!reviews(for: kindergarten.kindercode).isEmpty),
+            "has_vacancy": .bool(vacancyCount(for: kindergarten.kindercode) > 0),
+        ]
+
+        let resolvedRank = rankPosition
+            ?? results.firstIndex(where: { $0.kindercode == kindergarten.kindercode }).map { $0 + 1 }
+        if let resolvedRank {
+            properties["rank_position"] = .int(resolvedRank)
         }
+
+        return properties
     }
 
     private func refreshSelectedKindergarten() {

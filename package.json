@@ -1,6 +1,6 @@
 {
   "name": "where-kindergarden",
-  "version": "2.1.0",
+  "version": "2.2.2",
   "private": true,
   "engines": {
     "node": ">=20.9.0"
@@ -21,6 +21,9 @@
     "sync:vacancy": "tsx scripts/sync-vacancy.ts",
     "collect:reviews": "tsx scripts/collect-reviews.ts",
     "collect:reviews:v3": "tsx scripts/collect-reviews-v3.ts",
+    "collect:insane-reviews": "tsx scripts/collect-insane-reviews.ts",
+    "run:insane-review-batches": "tsx scripts/run-insane-review-batches.ts",
+    "merge:insane-reviews": "tsx scripts/merge-insane-reviews.ts",
     "curate:reviews": "tsx scripts/curate-reviews.ts",
     "filter:reviews": "tsx scripts/filter-reviews.ts",
     "split:reviews": "tsx scripts/split-reviews.ts",

@@ -23,6 +23,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Build and upload to TestFlight (API Key)
 
+### ios release_with_api_key
+
+```sh
+[bundle exec] fastlane ios release_with_api_key
+```
+
+Build, upload metadata/binary, and submit a new App Store version for review (API Key)
+
 ### ios build_only
 
 ```sh

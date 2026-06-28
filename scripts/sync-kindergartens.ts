@@ -220,6 +220,8 @@ interface KindergartenRecord {
 // ============================================================================
 
 const API_BASE_URL = 'https://e-childschoolinfo.moe.go.kr/api/notice';
+const DISCLOSURE_TIMING = '20261';
+const DATA_VERSION = '2026년 1차';
 
 // 수집할 엔드포인트 (13개 중 12개 - basicInfo 제외, basicInfo2 사용)
 const ENDPOINTS = {
@@ -285,7 +287,9 @@ async function fetchJsonData<T>(
   sggCode: string,
   apiKey: string
 ): Promise<T[]> {
-  const url = `${API_BASE_URL}/${endpoint}.do?key=${apiKey}&sidoCode=${eduSidoCode}&sggCode=${sggCode}`;
+  const url =
+    `${API_BASE_URL}/${endpoint}.do?key=${apiKey}` +
+    `&sidoCode=${eduSidoCode}&sggCode=${sggCode}&timing=${DISCLOSURE_TIMING}`;
 
   try {
     const response = await fetch(url, {
@@ -591,13 +595,10 @@ async function main(): Promise<void> {
   const supabase =
     supabaseUrl && supabaseServiceKey ? createClient(supabaseUrl, supabaseServiceKey) : null;
 
-  // 데이터 버전 (현재 학기)
-  const now = new Date();
-  const year = now.getFullYear();
-  const semester = now.getMonth() < 7 ? 1 : 2;
-  const dataVersion = `${year}-${semester}학기`;
+  // 데이터 버전 (공식 공시차수)
+  const dataVersion = DATA_VERSION;
 
-  log(`Data version: ${dataVersion}`);
+  log(`Data version: ${dataVersion} (${DISCLOSURE_TIMING})`);
 
   // 테스트 모드면 서울 종로구만
   const sigunguList = isTestMode

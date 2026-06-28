@@ -30,18 +30,10 @@ public struct NativeAppConfiguration: Sendable {
     public static let defaultShareImageURL = URL(string: "https://where-kindergarden.vercel.app/og-image.png")!
     public static let totalKindergartenCount = 7950
     public static let shareDescription = "교육비, 교사 비율, 시설 등 한눈에 비교해봤어요!"
-    public static let defaultAdMobBannerUnitID: String = {
-        #if DEBUG
-        return "ca-app-pub-3940256099942544/2435281174"
-        #else
-        return "ca-app-pub-5648788643644962/5397823299"
-        #endif
-    }()
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
     public let kakaoConfigurationSource: KakaoConfigurationSource?
-    public let adMobBannerUnitID: String
     public let mixpanelToken: String?
     public let reviewsRemoteURL: URL
     public let vacancyRemoteURL: URL
@@ -54,7 +46,6 @@ public struct NativeAppConfiguration: Sendable {
         kakaoAppKey: String?,
         kakaoRESTAPIKey: String? = nil,
         kakaoConfigurationSource: String? = nil,
-        adMobBannerUnitID: String = NativeAppConfiguration.defaultAdMobBannerUnitID,
         mixpanelToken: String? = nil,
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
@@ -67,7 +58,6 @@ public struct NativeAppConfiguration: Sendable {
         self.kakaoRESTAPIKey = Self.normalizedValue(kakaoRESTAPIKey)
         self.kakaoConfigurationSource = Self.normalizedValue(kakaoConfigurationSource)
             .flatMap(KakaoConfigurationSource.init(rawValue:))
-        self.adMobBannerUnitID = adMobBannerUnitID
         self.mixpanelToken = Self.normalizedValue(mixpanelToken)
         self.reviewsRemoteURL = reviewsRemoteURL
         self.vacancyRemoteURL = vacancyRemoteURL
@@ -78,12 +68,10 @@ public struct NativeAppConfiguration: Sendable {
     }
 
     public static func live(bundle: Bundle = .main) -> NativeAppConfiguration {
-        let adMobID = normalizedValue(bundle.object(forInfoDictionaryKey: "ADMOB_BANNER_UNIT_ID") as? String)
         return NativeAppConfiguration(
             kakaoAppKey: bundle.object(forInfoDictionaryKey: "KAKAO_NATIVE_APP_KEY") as? String,
             kakaoRESTAPIKey: bundle.object(forInfoDictionaryKey: "KAKAO_REST_API_KEY") as? String,
             kakaoConfigurationSource: bundle.object(forInfoDictionaryKey: Self.kakaoConfigSourceInfoKey) as? String,
-            adMobBannerUnitID: adMobID ?? Self.defaultAdMobBannerUnitID,
             mixpanelToken: bundle.object(forInfoDictionaryKey: "MIXPANEL_TOKEN") as? String
         )
     }

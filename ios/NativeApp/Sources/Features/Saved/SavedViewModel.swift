@@ -71,9 +71,11 @@ public final class SavedViewModel {
             vacancyError: vacancyRepo?.error,
             isCompared: compareRepo.contains(kindergarten.kindercode),
             isFavorite: favoriteRepo.isFavorite(kindergarten.kindercode),
+            compareCount: compareRepo.selection.ids.count,
             fitReasons: [],
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
-            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) },
+            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() }
         )
     }
 
@@ -86,6 +88,10 @@ public final class SavedViewModel {
         return favoriteRepo.favorites.compactMap { item in
             lookup[item.kindercode].map { Kindergarten(raw: $0, distance: -1) }
         }
+    }
+
+    private func navigateFromDetailToCompare() {
+        router.activeTab = .compare
     }
 
     // MARK: - Favorite Actions
@@ -104,16 +110,19 @@ public final class SavedViewModel {
 
     public func toggleFavorite(for kindergarten: Kindergarten) {
         let wasFavorite = favoriteRepo.isFavorite(kindergarten.kindercode)
-        if wasFavorite {
-            analytics?.track(event: .favoriteRemoved, properties: [
-                "kindercode": .string(kindergarten.kindercode),
-            ])
-        } else {
-            analytics?.track(event: .favoriteAdded, properties: [
-                "kindercode": .string(kindergarten.kindercode),
-            ])
-        }
         favoriteRepo.toggle(for: kindergarten)
+
+        let properties: AnalyticsProperties = [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string("saved"),
+            "favorite_count": .int(favoriteRepo.favorites.count),
+        ]
+        if wasFavorite {
+            analytics?.track(event: .favoriteRemoved, properties: properties)
+        } else {
+            analytics?.track(event: .favoriteAdded, properties: properties)
+        }
     }
 
     // MARK: - Compare Actions
@@ -123,12 +132,18 @@ public final class SavedViewModel {
         switch result {
         case .added:
             analytics?.track(event: .comparisonAdded, properties: [
+                "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
+                "source": .string("saved"),
+                "compare_count": .int(compareRepo.selection.ids.count),
             ])
             router.showToast(.success("비교에 담았어요"))
         case .removed:
             analytics?.track(event: .comparisonRemoved, properties: [
+                "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
+                "source": .string("saved"),
+                "compare_count": .int(compareRepo.selection.ids.count),
             ])
             router.showToast(.success("비교에서 뺐어요"))
         case .limitReached:

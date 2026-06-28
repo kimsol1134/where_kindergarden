@@ -55,8 +55,6 @@ public final class CompareViewModel {
         compareUseCase.winnerSummary(items: comparedKindergartens, scores: scores)
     }
 
-    public var adMobBannerUnitID: String { configuration.adMobBannerUnitID }
-
     public func navigateToSearch() { router.activeTab = .search }
 
     // MARK: - Actions
@@ -72,7 +70,10 @@ public final class CompareViewModel {
         let id = ids[index]
         compareRepo.remove(at: index)
         analytics?.track(event: .comparisonRemoved, properties: [
+            "kindergarten_id": .string(id),
             "kindercode": .string(id),
+            "source": .string("compare"),
+            "compare_count": .int(compareRepo.selection.ids.count),
         ])
     }
 
@@ -91,17 +92,23 @@ public final class CompareViewModel {
         analytics?.track(event: .compareShared, properties: [
             "method": .string("kakao"),
             "compare_count": .int(comparedKindergartens.count),
+            "result": .string("initiated"),
         ])
         return url
     }
 
     public func shareSystem() -> URL? {
         guard let url = shareURL() else { return nil }
+        trackSystemShareInitiated()
+        return url
+    }
+
+    public func trackSystemShareInitiated() {
         analytics?.track(event: .compareShared, properties: [
             "method": .string("system"),
             "compare_count": .int(comparedKindergartens.count),
+            "result": .string("initiated"),
         ])
-        return url
     }
 
     public func reviews(for kindercode: String) -> [ReviewLink] {

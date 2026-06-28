@@ -1,0 +1,46 @@
+{
+  "id": "mixpanel-asc-analytics",
+  "name": "mixpanel-asc-analytics",
+  "status": "pending",
+  "run_id": "2026-04-17-1339-mixpanel-appstore-analytics",
+  "prompt": "유저행동플로우를 믹스패널로 구축하고 싶어. 앱스토어 데이터도 같이 모아서 분석한다음 앱을 개선하고 싶어.",
+  "phases": [
+    {
+      "phase": 0,
+      "name": "analytics-design-doc",
+      "status": "pending"
+    },
+    {
+      "phase": 1,
+      "name": "analytics-properties-type",
+      "status": "pending"
+    },
+    {
+      "phase": 2,
+      "name": "session-tracker-superprops",
+      "status": "pending"
+    },
+    {
+      "phase": 3,
+      "name": "mixpanel-sdk-integration",
+      "status": "pending"
+    },
+    {
+      "phase": 4,
+      "name": "event-taxonomy-callsites",
+      "status": "pending"
+    },
+    {
+      "phase": 5,
+      "name": "asc-analytics-script",
+      "status": "pending"
+    },
+    {
+      "phase": 6,
+      "name": "operations-privacy-handoff",
+      "status": "pending"
+    }
+  ],
+  "created_at": "2026-04-17T15:10:00+09:00",
+  "updated_at": "2026-04-17T15:10:00+09:00"
+}

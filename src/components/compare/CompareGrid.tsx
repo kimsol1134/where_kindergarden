@@ -2,6 +2,10 @@
 
 import XCircle from 'lucide-react/dist/esm/icons/x-circle';
 import { useCompareStore } from '@/stores';
+import {
+  getCompareCandidateInsights,
+  getConsultationQuestions,
+} from '@/lib/utils/compare-insights';
 import type { Kindergarten, InstitutionType, MealType } from '@/types';
 
 const TYPE_STYLES: Record<InstitutionType, { label: string; className: string }> = {
@@ -32,11 +36,54 @@ export function CompareGrid({ items }: CompareGridProps) {
   // 베스트 조건 계산
   const maxArea = Math.max(...items.map((i) => i.areaPerChild));
   const maxBusCount = Math.max(...items.map((i) => (i.hasBus ? i.busCount : 0)));
+  const candidateInsights = getCompareCandidateInsights(items);
+  const consultationQuestions = getConsultationQuestions(items);
 
   const highlightClass = 'bg-[rgba(78,169,109,0.12)] text-[var(--brand-leaf-deep)] font-bold';
 
   return (
     <div className="relative">
+      <div className="mx-4 mb-4 mt-4 grid gap-3 md:grid-cols-[1fr_0.8fr]">
+        <section className="rounded-2xl border border-[rgba(203,188,174,0.2)] bg-white p-4 shadow-[0_12px_30px_rgba(129,136,97,0.06)]">
+          <h2 className="text-sm font-bold text-[var(--brand-ink)]">먼저 볼 판단 포인트</h2>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {candidateInsights.map((insight) => (
+              <div key={insight.kindercode} className="rounded-xl bg-[var(--brand-mist)]/35 p-3">
+                <h3 className="line-clamp-1 text-sm font-bold text-[var(--brand-ink)]" title={insight.name}>
+                  {insight.name}
+                </h3>
+                <ul className="mt-2 space-y-1">
+                  {(insight.reasons.length > 0 ? insight.reasons : ['기관 상세 정보 확인 필요']).map((reason) => (
+                    <li key={reason} className="text-xs font-medium text-[var(--brand-leaf-deep)]">
+                      {reason}
+                    </li>
+                  ))}
+                </ul>
+                {insight.cautions.length > 0 && (
+                  <p className="mt-2 line-clamp-2 text-[11px] text-amber-700">
+                    확인: {insight.cautions.join(', ')}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-4">
+          <h2 className="text-sm font-bold text-amber-900">상담 때 확인할 질문</h2>
+          <ol className="mt-3 space-y-2">
+            {consultationQuestions.map((question, index) => (
+              <li key={question} className="flex gap-2 text-xs leading-relaxed text-amber-900">
+                <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-white text-[11px] font-bold text-amber-700">
+                  {index + 1}
+                </span>
+                <span>{question}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      </div>
+
       <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
       <div className="min-w-[360px]">
         {/* 헤더: 기관 카드들 */}

@@ -4,10 +4,6 @@
 KAKAO_NATIVE_APP_KEY = $(WK_KAKAO_NATIVE_APP_KEY)
 KAKAO_REST_API_KEY = $(WK_KAKAO_REST_API_KEY)
 
-// AdMob
-WK_ADMOB_BANNER_UNIT_ID = ca-app-pub-5648788643644962/5397823299
-ADMOB_BANNER_UNIT_ID = $(WK_ADMOB_BANNER_UNIT_ID)
-
 // Mixpanel — Debug(개발)/Release(프로덕션) 프로젝트 토큰 분리.
 // 실제 값은 KakaoKeys.local.xcconfig (#include?로 로드)에서 주입.
 // 여기에 빈 기본값 선언을 두면 include된 값을 덮어쓰므로 절대 추가 금지.

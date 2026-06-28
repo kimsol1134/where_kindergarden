@@ -136,7 +136,7 @@ Models(데이터)와 Services(인프라)는 분리되어 있지만, 비즈니스
 │                                                                 │
 │  External Services:                                             │
 │  LocationService, KakaoLocalSearchService, KakaoShareService,   │
-│  AdMobService, Analytics, TrackingTransparency                  │
+│  Analytics                                                      │
 │                                                                 │
 │  Infrastructure:                                                │
 │  NativeAppConfiguration, NativeAppPersistence,                  │
@@ -209,8 +209,6 @@ let package = Package(
             dependencies: [
                 "Models",
                 "Domain",
-                .product(name: "GoogleMobileAds",
-                         package: "swift-package-manager-google-mobile-ads"),
                 .product(name: "KakaoSDKCommon", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKShare", package: "kakao-ios-sdk"),
                 .product(name: "KakaoSDKTemplate", package: "kakao-ios-sdk"),
@@ -226,8 +224,6 @@ let package = Package(
                 "Services",
                 .product(name: "KakaoMapsSDK-SPM", package: "KakaoMapsSDK-SPM",
                          condition: .when(platforms: [.iOS])),
-                .product(name: "GoogleMobileAds",
-                         package: "swift-package-manager-google-mobile-ads"),
             ]
         ),
 
@@ -769,9 +765,7 @@ Sources/Services/
 │   ├── LocationService.swift           (기존 유지)
 │   ├── KakaoLocalSearchService.swift   (기존 유지)
 │   ├── KakaoShareService.swift         (기존 유지)
-│   ├── AdMobService.swift              (기존 유지)
-│   ├── Analytics.swift                 (기존 유지)
-│   └── TrackingTransparencyService.swift (기존 유지)
+│   └── Analytics.swift                 (기존 유지)
 └── Infrastructure/
     ├── NativeAppConfiguration.swift    (기존 유지)
     ├── NativeAppPersistence.swift      (기존 유지)
@@ -1193,9 +1187,7 @@ public struct NativeRootView: View {
 | `Services/LocationService.swift` |
 | `Services/KakaoLocalSearchService.swift` |
 | `Services/KakaoShareService.swift` |
-| `Services/AdMobService.swift` |
 | `Services/Analytics.swift` |
-| `Services/TrackingTransparencyService.swift` |
 | `Services/NativeAppConfiguration.swift` |
 | `Services/NativeAppPersistence.swift` |
 | `Services/VacancyService.swift` |

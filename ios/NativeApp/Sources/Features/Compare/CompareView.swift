@@ -10,6 +10,7 @@ private let compareBestForeground = Color(red: 0.18, green: 0.38, blue: 0.68)
 
 public struct CompareView: View {
     var viewModel: CompareViewModel
+    @State private var systemShareItem: SystemShareItem?
 
     public init(viewModel: CompareViewModel) {
         self.viewModel = viewModel
@@ -90,10 +91,6 @@ public struct CompareView: View {
                             )
                         }
 
-                        #if canImport(GoogleMobileAds)
-                        NativeAdBanner(adUnitID: viewModel.adMobBannerUnitID)
-                            .padding(.top, 8)
-                        #endif
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 12)
@@ -119,12 +116,18 @@ public struct CompareView: View {
             .onAppear {
                 viewModel.trackCompareViewed()
             }
+            .sheet(item: $systemShareItem) { item in
+                SystemShareSheet(activityItems: [
+                    item.url,
+                    NativeAppConfiguration.shareDescription,
+                ])
+            }
         }
     }
 
     @ViewBuilder
     private var shareActions: some View {
-        if viewModel.shareURL() != nil {
+        if let url = viewModel.shareURL() {
             VStack(spacing: 12) {
                 #if canImport(KakaoSDKShare)
                 if KakaoShareService.isKakaoTalkAvailable {
@@ -149,11 +152,10 @@ public struct CompareView: View {
                 #endif
 
                 Button {
-                    if let url = viewModel.shareSystem() {
-                        presentSystemShare(url: url)
-                    }
+                    viewModel.trackSystemShareInitiated()
+                    systemShareItem = SystemShareItem(url: url)
                 } label: {
-                    Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
+                    Label("가족에게 비교표 보내기", systemImage: "square.and.arrow.up.fill")
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(inkBlack)
                         .padding(.horizontal, 18)
@@ -164,44 +166,39 @@ public struct CompareView: View {
                 .buttonStyle(.plain)
             }
         } else {
-            Label("비교 링크 공유", systemImage: "square.and.arrow.up.fill")
+            Label("가족에게 비교표 보내기", systemImage: "square.and.arrow.up.fill")
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 14)
                 .foregroundStyle(slateSoft)
         }
     }
 
-    private func presentSystemShare(url: URL) {
-        #if canImport(UIKit)
-        let activityVC = UIActivityViewController(
-            activityItems: [url, NativeAppConfiguration.shareDescription],
-            applicationActivities: nil
-        )
-        guard let rootVC = UIApplication.shared.connectedScenes
-            .compactMap({ $0 as? UIWindowScene })
-            .flatMap({ $0.windows })
-            .first(where: { $0.isKeyWindow })?
-            .rootViewController
-        else { return }
-        var presenter: UIViewController = rootVC
-        while let presented = presenter.presentedViewController {
-            presenter = presented
-        }
-        if let popover = activityVC.popoverPresentationController {
-            popover.sourceView = presenter.view
-            popover.sourceRect = CGRect(
-                x: presenter.view.bounds.midX,
-                y: presenter.view.bounds.midY,
-                width: 0,
-                height: 0
-            )
-            popover.permittedArrowDirections = []
-        }
-        presenter.present(activityVC, animated: true)
-        #endif
+// MARK: - CompareHeaderCard
+
+private struct SystemShareItem: Identifiable {
+    let id = UUID()
+    let url: URL
+}
+
+#if canImport(UIKit)
+private struct SystemShareSheet: UIViewControllerRepresentable {
+    let activityItems: [Any]
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        return UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
     }
 
-// MARK: - CompareHeaderCard
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
+}
+#else
+private struct SystemShareSheet: View {
+    let activityItems: [Any]
+
+    var body: some View {
+        EmptyView()
+    }
+}
+#endif
 
 private struct CompareHeaderCard: View {
     let item: Kindergarten

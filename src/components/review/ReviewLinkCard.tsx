@@ -2,6 +2,7 @@
 
 import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
 import Trash2 from 'lucide-react/dist/esm/icons/trash-2';
+import { getReviewInsights, type ReviewInsightTone } from '@/lib/utils/review-insights';
 import type { ReviewLink, ReviewSource } from '@/types';
 
 const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> = {
@@ -15,6 +16,14 @@ const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> 
   other: { label: '기타', className: 'text-gray-700 bg-gray-100' },
 };
 
+const INSIGHT_STYLES: Record<ReviewInsightTone, string> = {
+  positive: 'bg-emerald-50 text-emerald-700 border-emerald-100',
+  caution: 'bg-rose-50 text-rose-700 border-rose-100',
+  check: 'bg-amber-50 text-amber-700 border-amber-100',
+  recent: 'bg-sky-50 text-sky-700 border-sky-100',
+  trust: 'bg-slate-50 text-slate-700 border-slate-100',
+};
+
 interface ReviewLinkCardProps {
   review: ReviewLink;
   onDeleteSuggestion?: (reviewId: string, reviewTitle: string) => void;
@@ -22,6 +31,7 @@ interface ReviewLinkCardProps {
 
 export function ReviewLinkCard({ review, onDeleteSuggestion }: ReviewLinkCardProps) {
   const sourceStyle = SOURCE_STYLES[review.source];
+  const insights = getReviewInsights(review);
 
   const handleDeleteClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -53,6 +63,19 @@ export function ReviewLinkCard({ review, onDeleteSuggestion }: ReviewLinkCardPro
                 </div>
               )}
             </div>
+
+            {insights.length > 0 && (
+              <div className="mb-2 flex flex-wrap gap-1.5">
+                {insights.map((insight) => (
+                  <span
+                    key={insight.label}
+                    className={`rounded-full border px-2 py-0.5 text-[10px] font-semibold ${INSIGHT_STYLES[insight.tone]}`}
+                  >
+                    {insight.label}
+                  </span>
+                ))}
+              </div>
+            )}
             
             <h5 className="text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors line-clamp-2 mb-1">
               {review.title}

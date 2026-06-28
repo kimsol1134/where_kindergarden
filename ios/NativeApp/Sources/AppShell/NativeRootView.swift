@@ -193,10 +193,6 @@ public struct NativeRootView: View {
     }
 
     private func initializeServices() async {
-        #if canImport(GoogleMobileAds)
-        AdMobService.configure()
-        #endif
-
         #if canImport(KakaoSDKShare)
         if let appKey = configuration.kakaoAppKey {
             KakaoShareService.initializeSDK(appKey: appKey)

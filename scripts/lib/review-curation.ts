@@ -75,7 +75,44 @@ export function readJsonFile<T>(filePath: string): T {
 
 export function writeJsonFile(filePath: string, value: unknown): void {
   ensureDirectory(path.dirname(filePath));
-  fs.writeFileSync(filePath, JSON.stringify(value, null, 2));
+  fs.writeFileSync(filePath, JSON.stringify(sanitizeJsonValue(value), null, 2));
+}
+
+function sanitizeStringForJson(value: string): string {
+  let sanitized = '';
+
+  for (let index = 0; index < value.length; index += 1) {
+    const code = value.charCodeAt(index);
+    if (code >= 0xd800 && code <= 0xdbff) {
+      const next = value.charCodeAt(index + 1);
+      if (next >= 0xdc00 && next <= 0xdfff) {
+        sanitized += value[index] + value[index + 1];
+        index += 1;
+      }
+      continue;
+    }
+    if (code >= 0xdc00 && code <= 0xdfff) {
+      continue;
+    }
+    sanitized += value[index];
+  }
+
+  return sanitized;
+}
+
+function sanitizeJsonValue(value: unknown): unknown {
+  if (typeof value === 'string') {
+    return sanitizeStringForJson(value);
+  }
+  if (Array.isArray(value)) {
+    return value.map((item) => sanitizeJsonValue(item));
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, entry]) => [key, sanitizeJsonValue(entry)])
+    );
+  }
+  return value;
 }
 
 export function buildKindergartenSidoMap(

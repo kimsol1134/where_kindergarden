@@ -62,8 +62,8 @@ export default function PrivacyPage() {
                 1. 수집하는 개인정보 항목 및 방법
               </h2>
               <p className="text-[var(--brand-ink-soft)] mb-4">
-                서비스는 원활한 서비스 제공과 광고 게재를 위해 다음과 같은
-                정보를 수집할 수 있습니다.
+                서비스는 원활한 서비스 제공과 품질 개선을 위해 다음과 같은 정보를
+                수집할 수 있습니다.
               </p>
               <h3 className="font-semibold text-[var(--brand-ink)] mb-2">
                 가. 필수적 수집 항목 (앱 기능)
@@ -77,17 +77,16 @@ export default function PrivacyPage() {
                 </li>
               </ul>
               <h3 className="font-semibold text-[var(--brand-ink)] mb-2">
-                나. 자동 수집 항목 (타사 광고 및 분석)
+                나. 자동 수집 항목 (분석)
               </h3>
               <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-2">
                 <li>
-                  <strong>기기 식별자 (Device ID, Advertising ID)</strong>:
-                  맞춤형 광고 제공 및 앱 이용 분석을 위해 타사(Google)에 의해
-                  수집될 수 있습니다.
+                  <strong>익명 기기 식별자</strong>: 앱 이용 분석과 오류 개선을
+                  위해 개인을 식별할 수 없는 형태로 수집될 수 있습니다.
                 </li>
                 <li>
-                  <strong>앱 이용 기록</strong>: 광고 노출, 클릭, 앱 내 상호작용
-                  데이터가 수집될 수 있습니다.
+                  <strong>앱 이용 기록</strong>: 검색, 비교, 공유 등 앱 내
+                  상호작용 데이터가 수집될 수 있습니다.
                 </li>
                 <li>
                   <strong>쿠키(Cookie) 및 로컬 스토리지</strong>: 검색 설정 저장
@@ -139,10 +138,6 @@ export default function PrivacyPage() {
                   탐색 및 거리순 정렬
                 </li>
                 <li>
-                  <strong>광고 게재</strong>: Google AdMob을 통한 맞춤형 광고
-                  제공 (개인 식별 불가한 형태)
-                </li>
-                <li>
                   <strong>서비스 개선</strong>: 앱 이용 통계 분석 및 버그 수정
                 </li>
               </ul>
@@ -160,10 +155,6 @@ export default function PrivacyPage() {
                 <li>
                   <strong>위치 정보</strong>: 앱 종료 시 즉시 파기 (서버 저장 안 함)
                 </li>
-                <li>
-                  <strong>광고 식별자</strong>: Google의 광고 데이터 처리 방침에
-                  따라 관리됨
-                </li>
               </ul>
             </section>
 
@@ -173,36 +164,17 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-[var(--brand-ink-soft)]">
                 서비스는 이용자의 동의 없이 개인정보를 외부에 제공하지 않습니다.
-                단, 맞춤형 광고 제공을 위해 아래와 같이 타사 서비스가 이용될 수
-                있습니다.
+                서비스 개선을 위한 통계 분석은 개인을 식별할 수 없는 형태로
+                처리됩니다.
               </p>
-              <div className="mt-4 bg-[var(--brand-mist)] p-4 rounded-2xl border border-[rgba(203,188,174,0.12)]">
-                <p className="font-semibold text-[var(--brand-ink)]">Google AdMob</p>
-                <ul className="list-disc pl-6 text-[var(--brand-ink-soft)] space-y-1 mt-2 text-sm">
-                  <li>제공받는 자: Google LLC, Google Asia Pacific Pte. Ltd.</li>
-                  <li>제공 목적: 맞춤형 광고 게재 및 광고 성과 분석</li>
-                  <li>제공 항목: 기기 식별자(Advertising ID), 쿠키, 앱 이용 기록</li>
-                  <li>
-                    보유 및 이용 기간:
-                    <a
-                      href="https://policies.google.com/technologies/ads"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[var(--brand-leaf)] hover:underline ml-1"
-                    >
-                      Google 파트너의 데이터 사용 정책 참조
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </section>
 
             <section className="mb-8">
               <h2 className="text-xl font-bold text-[var(--brand-ink)] mb-4">
-                5. 이용자의 권리 및 행사 방법 (광고 철회)
+                5. 이용자의 권리 및 행사 방법
               </h2>
               <p className="text-[var(--brand-ink-soft)] mb-4">
-                이용자는 언제든지 맞춤형 광고 수신을 거부할 수 있습니다.
+                이용자는 언제든지 위치 권한을 철회할 수 있습니다.
               </p>
               <div className="space-y-4">
                 <div>
@@ -210,15 +182,15 @@ export default function PrivacyPage() {
                     iOS (iPhone/iPad)
                   </h3>
                   <p className="text-[var(--brand-ink-soft)] text-sm">
-                    설정 &gt; 개인정보 보호 및 보안 &gt; 추적 &gt; &#39;앱이
-                    추적을 요청하도록 허용&#39; 끄기 또는 본 앱 선택 해제
+                    설정 &gt; 개인정보 보호 및 보안 &gt; 위치 서비스에서 본 앱의
+                    위치 접근 권한 변경
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-[var(--brand-ink)] mb-1">Android</h3>
                   <p className="text-[var(--brand-ink-soft)] text-sm">
-                    설정 &gt; Google &gt; 광고 &gt; 광고 ID 삭제 또는
-                    재설정
+                    설정 &gt; 앱 &gt; 우리동네 유치원 &gt; 권한에서 위치 접근
+                    권한 변경
                   </p>
                 </div>
               </div>

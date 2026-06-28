@@ -2,6 +2,7 @@
 
 import Newspaper from 'lucide-react/dist/esm/icons/newspaper';
 import { useReviewStore } from '@/stores';
+import { getReviewInsights } from '@/lib/utils/review-insights';
 import type { ReviewLink } from '@/types';
 
 interface ReviewPreviewProps {
@@ -10,6 +11,8 @@ interface ReviewPreviewProps {
 }
 
 function PreviewCard({ review }: { review: ReviewLink }) {
+  const primaryInsight = getReviewInsights(review)[0];
+
   return (
     <a
       href={review.url}
@@ -20,6 +23,11 @@ function PreviewCard({ review }: { review: ReviewLink }) {
       <h5 className="text-sm font-semibold text-gray-900 group-hover:text-amber-800 line-clamp-1 mb-1">
         {review.title}
       </h5>
+      {primaryInsight && (
+        <span className="mb-1 inline-flex rounded-full bg-white px-2 py-0.5 text-[10px] font-bold text-amber-700">
+          {primaryInsight.label}
+        </span>
+      )}
       {review.snippet && (
         <p className="text-xs text-gray-500 line-clamp-1">{review.snippet}</p>
       )}

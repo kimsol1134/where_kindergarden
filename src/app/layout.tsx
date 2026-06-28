@@ -3,7 +3,6 @@ import './globals.css';
 import { GlobalProviders } from '@/components/GlobalProviders';
 import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
-import { AdContainer } from '@/components/ads/AdContainer';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
 
@@ -11,16 +10,16 @@ const SITE_URL = 'https://where-kindergarden.vercel.app';
 const FAVICON_URL = `${SITE_URL}/favicon-20260612.png`;
 const OG_IMAGE_URL = `${SITE_URL}/og-image-20260612.png`;
 const OG_IMAGE_ALT =
-  '우리동네 유치원 - 내 주변 유치원을 찾고 한눈에 비교하세요';
+  '유치원 알리미 - 우리동네 유치원, 내 주변 유치원을 찾고 한눈에 비교하세요';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
-    template: '%s | 우리동네 유치원',
+    default: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
+    template: '%s | 유치원 알리미 - 우리동네 유치원',
   },
   description:
-    '내 주변 국공립, 사립 유치원을 찾고 계신가요? 우리동네 유치원에서 거리순, 비용순으로 비교하고 아이에게 딱 맞는 유치원을 발견하세요.',
+    '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하세요. 내 주변 유치원을 거리순으로 찾고 통학버스, 급식, 방과후 과정을 비교할 수 있습니다.',
   keywords: [
     '유치원',
     '유치원 검색',
@@ -50,10 +49,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: SITE_URL,
-    siteName: '우리동네 유치원',
-    title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
+    siteName: '유치원 알리미 - 우리동네 유치원',
+    title: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
     description:
-      '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 전국 7,950개 이상의 유치원 정보를 한눈에 확인할 수 있습니다.',
+      '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하고, 주변 유치원을 한눈에 비교해보세요.',
     images: [
       {
         url: OG_IMAGE_URL,
@@ -65,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
+    title: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
     description:
-      '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요.',
+      '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하세요.',
     images: [
       {
         url: OG_IMAGE_URL,
@@ -128,7 +127,6 @@ export default function RootLayout({
         </GlobalProviders>
         <WebsiteJsonLd />
         <OrganizationJsonLd />
-        <AdContainer />
         <Analytics />
       </body>
     </html>

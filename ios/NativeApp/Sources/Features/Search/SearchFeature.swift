@@ -179,7 +179,7 @@ public struct SearchHomeView: View {
                         return
                     }
                     updateResultsDetent(.mid)
-                    viewModel.select(kindergarten: kindergarten)
+                    viewModel.select(kindergarten: kindergarten, source: "map_marker")
                 }
                 .ignoresSafeArea()
 
@@ -245,8 +245,7 @@ public struct SearchHomeView: View {
                             viewModel: viewModel,
                             summaryText: resultSummaryText,
                             degradedMessage: resultDegradedMessage,
-                            trimmedSearchQuery: trimmedSearchQuery,
-                            adUnitID: viewModel.configuration.adMobBannerUnitID
+                            trimmedSearchQuery: trimmedSearchQuery
                         )
                     }
                     .transition(.move(edge: .bottom).combined(with: .opacity))
@@ -757,7 +756,6 @@ private struct SearchResultsSheetContainer: View {
     let summaryText: String
     let degradedMessage: String?
     let trimmedSearchQuery: String
-    let adUnitID: String
 
     private var topContentInset: CGFloat {
         viewModel.compareSelectionIDs.isEmpty ? 18 : 10
@@ -779,8 +777,7 @@ private struct SearchResultsSheetContainer: View {
                 viewModel: viewModel,
                 summaryText: summaryText,
                 degradedMessage: degradedMessage,
-                trimmedSearchQuery: trimmedSearchQuery,
-                adUnitID: adUnitID
+                trimmedSearchQuery: trimmedSearchQuery
             )
         }
         .padding(.top, topContentInset)
@@ -792,7 +789,6 @@ private struct ResultSheet: View {
     let summaryText: String
     let degradedMessage: String?
     let trimmedSearchQuery: String
-    let adUnitID: String
 
     private var results: [Kindergarten] { viewModel.results }
     private var isLoading: Bool { viewModel.isCatalogLoading || viewModel.isReviewsLoading }
@@ -934,17 +930,16 @@ private struct ResultSheet: View {
                                     isFavorite: favoriteIDs.contains(kindergarten.kindercode),
                                     vacancyCount: viewModel.vacancyCount(for: kindergarten.kindercode),
                                     reviewCount: viewModel.reviews(for: kindergarten.kindercode).count,
-                                    onTap: { viewModel.select(kindergarten: kindergarten) },
-                                    onToggleCompare: { viewModel.toggleCompare(for: kindergarten) },
-                                    onToggleFavorite: { viewModel.toggleFavorite(for: kindergarten) }
+                                    onTap: {
+                                        viewModel.select(
+                                            kindergarten: kindergarten,
+                                            source: "result_card",
+                                            rankPosition: index + 1
+                                        )
+                                    },
+                                    onToggleCompare: { viewModel.toggleCompare(for: kindergarten, source: "result_card") },
+                                    onToggleFavorite: { viewModel.toggleFavorite(for: kindergarten, source: "result_card") }
                                 )
-
-                                #if canImport(GoogleMobileAds)
-                                if index == 4, results.count > 5 {
-                                    NativeAdBanner(adUnitID: adUnitID)
-                                        .padding(.vertical, 4)
-                                }
-                                #endif
                             }
                         }
                     }

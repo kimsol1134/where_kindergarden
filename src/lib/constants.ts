@@ -17,9 +17,6 @@ export const DATA_VERSION = {
   updatedAt: '2026-01-21',
 } as const;
 
-/** AdMob 배너 높이 (px) */
-export const AD_BANNER_HEIGHT = 50;
-
 /** localStorage 키: 위치 권한 사전 안내 표시 여부 */
 export const LOCATION_PERMISSION_KEY = 'location-permission-shown';
 

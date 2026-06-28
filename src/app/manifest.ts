@@ -4,10 +4,10 @@ export const dynamic = 'force-static';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: '우리동네 유치원',
+    name: '유치원 알리미 - 우리동네 유치원',
     short_name: '우리동네 유치원',
     description:
-      '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 앱 아이콘과 동일한 브랜드 언어로 웹과 iPhone 앱을 함께 제공합니다.',
+      '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하고, 내 주변 유치원을 비교하세요.',
     start_url: '/',
     display: 'standalone',
     background_color: '#f6f5ef',

@@ -14,9 +14,11 @@ struct KindergartenDetailSheet: View {
     let vacancyError: String?
     let isCompared: Bool
     let isFavorite: Bool
+    let compareCount: Int
     let fitReasons: [KindergartenFitReason]
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
+    let onNavigateToCompare: () -> Void
 
     // MARK: - Computed Properties
 
@@ -300,7 +302,7 @@ struct KindergartenDetailSheet: View {
             // A4: Action buttons — 비교가 주요 CTA, 저장/전화는 아이콘
             HStack(spacing: 10) {
                 DetailActionButton(
-                    title: isCompared ? "비교 빼기" : "비교 담기",
+                    title: isCompared ? "비교함 담김" : "비교 후보 담기",
                     systemImage: isCompared ? "checkmark.circle.fill" : "plus.circle.fill",
                     tone: .jade,
                     action: onToggleCompare
@@ -330,6 +332,15 @@ struct KindergartenDetailSheet: View {
                     .accessibilityLabel("전화")
                 }
             }
+
+            DetailComparePrompt(
+                count: compareCount,
+                isCurrentItemCompared: isCompared,
+                onNavigateToCompare: {
+                    dismiss()
+                    onNavigateToCompare()
+                }
+            )
         }
         .padding(22)
         .solidPanel(cornerRadius: CornerRadius.xlarge, tint: paperWhite.opacity(0.98))
@@ -713,6 +724,70 @@ private struct DetailActionButtonLabel: View {
         case .sand:
             return warmSand.opacity(0.36)
         }
+    }
+}
+
+private struct DetailComparePrompt: View {
+    let count: Int
+    let isCurrentItemCompared: Bool
+    let onNavigateToCompare: () -> Void
+
+    private var canCompare: Bool { count >= 2 }
+
+    private var message: String {
+        if canCompare {
+            return "비교함 \(count)/\(CompareSelection.limit)곳이 준비됐어요."
+        }
+        if isCurrentItemCompared {
+            return "한 곳만 더 담으면 후보를 나란히 볼 수 있어요."
+        }
+        return "후보로 담아두면 다른 유치원과 바로 비교할 수 있어요."
+    }
+
+    var body: some View {
+        HStack(spacing: 12) {
+            ZStack {
+                Circle()
+                    .fill(jadeGreen.opacity(0.16))
+                    .frame(width: 34, height: 34)
+                Image(systemName: "square.split.2x2.fill")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(jadeDeep)
+            }
+
+            VStack(alignment: .leading, spacing: 3) {
+                Text("비교함 \(count)/\(CompareSelection.limit)")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(inkBlack)
+                Text(message)
+                    .font(.caption)
+                    .foregroundStyle(slateBlue)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            Spacer(minLength: 8)
+
+            Button(action: onNavigateToCompare) {
+                Image(systemName: "arrow.right")
+                    .font(.caption.weight(.black))
+                    .foregroundStyle(inkBlack.opacity(canCompare ? 1 : 0.38))
+                    .frame(width: 34, height: 34)
+                    .background(
+                        canCompare ? jadeGreen : slateBlue.opacity(0.08),
+                        in: Circle()
+                    )
+            }
+            .buttonStyle(.plain)
+            .disabled(!canCompare)
+            .accessibilityLabel("비교표 보기")
+        }
+        .padding(12)
+        .background(jadeGreen.opacity(0.08), in: RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                .stroke(jadeGreen.opacity(0.16), lineWidth: 1)
+        )
+        .accessibilityElement(children: .combine)
     }
 }
 

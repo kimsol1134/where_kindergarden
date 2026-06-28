@@ -302,7 +302,7 @@ Mixpanel SDK 탑재 빌드를 App Store Connect에 제출하기 전, App Privacy
 
 - **Mixpanel 데이터 보존 정책**: Mixpanel 기본 설정은 5년. 프로젝트 Settings → Data Retention에서 단축 가능.
 - **GDPR/개인정보보호법**: 현재 국내 서비스 전용. EU 서버(api-eu.mixpanel.com) 미사용, 기본 엔드포인트 `api.mixpanel.com` 사용.
-- **ATT(App Tracking Transparency)**: IDFA는 수집하지 않음. IDFV만 수집하므로 ATT 프롬프트와 무관하나, 광고 SDK(AdMob)에서 이미 ATT를 요청하므로 기존 플로우 유지.
+- **ATT(App Tracking Transparency)**: IDFA는 수집하지 않고 광고 SDK를 사용하지 않으므로 ATT 프롬프트를 요청하지 않는다.
 - **오픈소스 / 제3자 제공**: Mixpanel Swift SPM(MIT License) 사용. 제3자 제공 처리자는 Mixpanel Inc. (미국).
 
 ### 크로스체크

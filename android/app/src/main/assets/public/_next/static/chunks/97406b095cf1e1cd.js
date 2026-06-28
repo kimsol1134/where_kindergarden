@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,35065,i=>{"use strict";i.s(["isAndroid",0,()=>!1,"isIOS",0,()=>!1,"isNative",0,()=>!1,"isWeb",0,()=>!0])}]);
