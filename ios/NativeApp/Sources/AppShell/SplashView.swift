@@ -1,5 +1,8 @@
 import Features
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 private let splashBackground = Color(red: 0.98, green: 0.992, blue: 0.973)
 private let deepGreen = Color(red: 0.176, green: 0.353, blue: 0.239)
@@ -44,12 +47,7 @@ struct SplashView: View {
             VStack(spacing: 0) {
                 // Icon with scan sweep
                 ZStack {
-                    Image("BrandGlyph")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 112, height: 112)
-                        .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
-                        .shadow(color: leafGreen.opacity(0.16), radius: 24, y: 16)
+                    SplashBrandGlyph()
 
                     // Scan sweep light
                     ScanSweep()
@@ -105,6 +103,27 @@ struct SplashView: View {
                     onFinished()
                 }
             }
+        }
+    }
+}
+
+private struct SplashBrandGlyph: View {
+    var body: some View {
+        Group {
+            #if canImport(UIKit)
+            if UIImage(named: "BrandGlyph") != nil {
+                Image("BrandGlyph", bundle: .main)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 112, height: 112)
+                    .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
+                    .shadow(color: leafGreen.opacity(0.16), radius: 24, y: 16)
+            } else {
+                BrandGlyphView(size: 112, cornerRadius: 32)
+            }
+            #else
+            BrandGlyphView(size: 112, cornerRadius: 32)
+            #endif
         }
     }
 }
