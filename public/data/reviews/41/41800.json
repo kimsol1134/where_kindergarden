@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 6,
+  "totalCount": 7,
   "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-f38f-b044-e053-0a32095ab044": [
@@ -270,7 +270,45 @@
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search",
         "kindergartenName": "한여울유치원"
+      },
+      {
+        "id": "rev-sns-wave723-b64bef98",
+        "kindergartenId": "1ecec08c-f882-b044-e053-0a32095ab044",
+        "title": "연천 한여울유치원 어린이 미술관 자란다 견학 기록",
+        "url": "https://www.instagram.com/reel/DZTX-Rqyd77/",
+        "source": "other",
+        "sourceName": "Instagram · 한여울유치원",
+        "snippet": "한여울유치원 친구들이 파주 어린이 미술관 자란다에서 고흐와 그림 목욕탕 전시를 둘러본 릴스입니다.",
+        "summary": "유아들이 어린이 미술관에서 작가와 작품을 주제로 한 전시를 감상한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "children-art-museum",
+          "exhibition",
+          "field-trip",
+          "yeoncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-b64bef98",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZTX-Rqyd77/",
+          "normalizedUrl": "instagram.com/reel/dztx-rqyd77",
+          "normalizedText": "한여울유치원 파주 어린이 미술관 자란다 고흐와 그림 목욕탕",
+          "htmlSnapshotHash": "sns-wave723-b64bef98",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZTX-Rqyd77/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

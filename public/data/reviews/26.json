@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 343,
+  "totalCount": 344,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -13591,6 +13591,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave722"
+      },
+      {
+        "id": "rev-sns-wave723-ff781471",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "title": "부산 신평 하늘유치원 부산현대미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DO4y6BEifxo/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "신평 하늘유치원 친구들이 부산현대미술관을 찾아 전시 관람 활동을 한 릴스입니다.",
+        "summary": "유아들이 현대미술관 공간에서 작품을 감상하며 문화예술 경험을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "exhibition",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-ff781471",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO4y6BEifxo/",
+          "normalizedUrl": "instagram.com/reel/do4y6beifxo",
+          "normalizedText": "신평하늘유치원 부산현대미술관 견학 전시 관람",
+          "htmlSnapshotHash": "sns-wave723-ff781471",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DO4y6BEifxo/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08c-f160-b044-e053-0a32095ab044": [

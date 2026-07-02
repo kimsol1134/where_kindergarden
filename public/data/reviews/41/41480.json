@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 37,
+  "totalCount": 38,
   "kindergartenCount": 17,
   "reviews": {
     "eb9b3ba7-83e9-4eb1-b025-502b89668be8": [
@@ -377,6 +377,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave723-2fcf90b6",
+        "kindergartenId": "1ecec08c-f844-b044-e053-0a32095ab044",
+        "title": "파주 유정유치원 현대책미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DN71PVtk4V2/",
+        "source": "other",
+        "sourceName": "Instagram · 파주유정유치원",
+        "snippet": "파주 유정유치원 친구들이 현대책미술관 견학에서 책과 그림이 만나는 전시를 관람한 릴스입니다.",
+        "summary": "유아들이 책미술관에서 전시를 살펴보고 창의적 표현을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "book-art-museum",
+          "exhibition",
+          "field-trip",
+          "paju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-2fcf90b6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN71PVtk4V2/",
+          "normalizedUrl": "instagram.com/reel/dn71pvtk4v2",
+          "normalizedText": "파주유정유치원 현대책미술관 견학 전시 관람",
+          "htmlSnapshotHash": "sns-wave723-2fcf90b6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DN71PVtk4V2/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08d-0c4d-b044-e053-0a32095ab044": [
@@ -1516,5 +1553,6 @@
         "approvedBy": "codex-manual-sns-wave700"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

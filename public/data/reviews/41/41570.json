@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 135,
+  "totalCount": 137,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -4329,6 +4329,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave723-afda4dac",
+        "kindergartenId": "abea1f9f-597c-4905-87aa-d8aceebb0a6b",
+        "title": "김포 가현도담유치원 아트빌리지 견학 기록",
+        "url": "https://www.instagram.com/reel/DZoOwvcS_zn/",
+        "source": "other",
+        "sourceName": "Instagram · 가현도담유치원",
+        "snippet": "가현도담유치원 친구들이 아트빌리지에서 그림 속으로 들어간 듯한 전시 공간을 둘러본 릴스입니다.",
+        "summary": "유아들이 아트빌리지에서 전시 관람과 예술 감상 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-village",
+          "exhibition",
+          "field-trip",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-afda4dac",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZoOwvcS_zn/",
+          "normalizedUrl": "instagram.com/reel/dzoowvcs_zn",
+          "normalizedText": "가현도담유치원 아트빌리지 견학 그림 전시 관람",
+          "htmlSnapshotHash": "sns-wave723-afda4dac",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZoOwvcS_zn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "c603910a-ee56-4b27-883d-9913b0d28f4b": [
@@ -5224,6 +5261,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T20:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave723-52a0ceed",
+        "kindergartenId": "1ecec08c-f2f0-b044-e053-0a32095ab044",
+        "title": "김포 프라임유치원 미디어아트센터 견학 기록",
+        "url": "https://www.instagram.com/p/DOpwqRBiYWB/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임유치원",
+        "snippet": "김포 프라임유치원 친구들이 김포 미디어아트센터에서 빛과 색채의 전시를 관람한 게시물입니다.",
+        "summary": "유아들이 미디어아트 전시를 통해 시각 예술과 체험형 관람을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "media-art",
+          "exhibition",
+          "field-trip",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-52a0ceed",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOpwqRBiYWB/",
+          "normalizedUrl": "instagram.com/p/dopwqrbiywb",
+          "normalizedText": "프라임유치원 김포 미디어아트센터 빛 색채 전시 관람",
+          "htmlSnapshotHash": "sns-wave723-52a0ceed",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DOpwqRBiYWB/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08c-f080-b044-e053-0a32095ab044": [

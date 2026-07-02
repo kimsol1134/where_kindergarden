@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 57,
+  "totalCount": 58,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-fe8b-b044-e053-0a32095ab044": [
@@ -171,6 +171,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave718"
+      },
+      {
+        "id": "rev-sns-wave723-17da13d4",
+        "kindergartenId": "1ecec08c-fe8b-b044-e053-0a32095ab044",
+        "title": "용인 프렌즈유치원 아트스페이스 광교 견학 기록",
+        "url": "https://www.instagram.com/reel/DZrcmPdRe4f/",
+        "source": "other",
+        "sourceName": "Instagram · 프렌즈유치원",
+        "snippet": "용인 프렌즈유치원 친구들이 아트스페이스 광교에서 전시를 관람한 릴스입니다.",
+        "summary": "유아들이 미술 전시 공간에서 작품을 살펴보며 예술 감상 활동을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-space",
+          "exhibition",
+          "field-trip",
+          "yongin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-17da13d4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZrcmPdRe4f/",
+          "normalizedUrl": "instagram.com/reel/dzrcmpdre4f",
+          "normalizedText": "프렌즈유치원 용인 흥덕 아트스페이스 광교 하나 쌓고 하나 빼기 전시",
+          "htmlSnapshotHash": "sns-wave723-17da13d4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZrcmPdRe4f/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08d-0b90-b044-e053-0a32095ab044": [

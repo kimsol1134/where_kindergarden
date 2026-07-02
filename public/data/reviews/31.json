@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 127,
+  "totalCount": 128,
   "kindergartenCount": 43,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -1066,6 +1066,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave723-d3677b34",
+        "kindergartenId": "1ecec08c-f4a1-b044-e053-0a32095ab044",
+        "title": "울산 금비유치원 시립미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DaMi8wXPQUJ/",
+        "source": "other",
+        "sourceName": "Instagram · 금비유치원",
+        "snippet": "금비유치원 친구들이 시립미술관 전시를 관람하며 작품을 감상한 릴스입니다.",
+        "summary": "유아들이 미술관에서 전시 작품을 감상하고 예술 경험을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "exhibition",
+          "field-trip",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-d3677b34",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMi8wXPQUJ/",
+          "normalizedUrl": "instagram.com/reel/dami8wxpquj",
+          "normalizedText": "금비유치원 시립미술관 견학 전시 관람 작품 감상",
+          "htmlSnapshotHash": "sns-wave723-d3677b34",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaMi8wXPQUJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08d-0212-b044-e053-0a32095ab044": [

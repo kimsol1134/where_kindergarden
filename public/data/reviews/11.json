@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 689,
+  "totalCount": 690,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1219,6 +1219,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave723-14e3adef",
+        "kindergartenId": "1ecec08d-062f-b044-e053-0a32095ab044",
+        "title": "서울 루이유치원 전시 관람 기록",
+        "url": "https://www.instagram.com/p/DZWvwCxFLNE/",
+        "source": "other",
+        "sourceName": "Instagram · 루이유치원",
+        "snippet": "루이유치원 친구들이 전시 관람과 체험 활동을 통해 작품을 살펴본 게시물입니다.",
+        "summary": "유아들이 전시 공간에서 예술 작품을 관찰하고 체험 활동을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "exhibition",
+          "art-experience",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-14e3adef",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZWvwCxFLNE/",
+          "normalizedUrl": "instagram.com/p/dzwvwcxflne",
+          "normalizedText": "루이유치원 전시 관람 체험 작품 감상",
+          "htmlSnapshotHash": "sns-wave723-14e3adef",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZWvwCxFLNE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "1ecec08d-06b6-b044-e053-0a32095ab044": [

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 53,
-  "kindergartenCount": 31,
+  "totalCount": 56,
+  "kindergartenCount": 33,
   "reviews": {
     "1ecec08d-050a-b044-e053-0a32095ab044": [
       {
@@ -981,55 +981,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-dda7b680",
-        "kindergartenId": "1ecec08d-033b-b044-e053-0a32095ab044",
-        "title": "경기 평택 중앙유치원 2026학년도 입학설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DQCObQhE-An/",
-        "source": "other",
-        "sourceName": "Instagram · 중앙유치원 리그램",
-        "snippet": "daechi_sam_block_math_official 계정의 리그램 문맥에서 jungangkids 출처의 2026학년도 평택 중앙유치원 입학설명회와 학부모 초대 내용이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission",
-          "briefing"
-        ],
-        "date": "2025-10-20",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "3c8a76cf",
-        "structuredFields": {
-          "kindergartenName": "중앙유치원",
-          "kindergartenAddress": "경기도 평택시 포승장안로 55-48",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQCObQhE-An%22+%22jungangkids%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQCObQhE-An/",
-          "normalizedUrl": "www.instagram.com/reel/dqcobqhe-an",
-          "normalizedText": "경기 평택 중앙유치원 2026학년도 입학설명회 instagram daechi_sam_block_math_official 계정의 리그램 문맥에서 jungangkids 출처의 2026학년도 평택 중앙유치원 입학설명회와 학부모 초대 내용이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "3c8a76cf",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "중앙유치원",
-            "kindergartenAddress": "경기도 평택시 포승장안로 55-48",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQCObQhE-An%22+%22jungangkids%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "656f3c99-81bd-4a37-9a4a-d06a316ad449": [
@@ -1849,6 +1800,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T14:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave715-3c3e667d",
+        "kindergartenId": "cb532942-fa3c-4ec8-ab28-43b3cb079180",
+        "title": "평택 풀꽃향기유치원 플리마켓 기록",
+        "url": "https://www.instagram.com/p/DZMN4NKGuXN/",
+        "source": "other",
+        "sourceName": "Instagram · 풀꽃향기유치원",
+        "snippet": "청북 풀꽃향기유치원 플리마켓에서 아이가 물건을 고르고 돈을 넣는 경험을 기록한 게시물입니다.",
+        "summary": "유아가 플리마켓 활동을 통해 물건 선택과 결제 과정을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "flea-market",
+          "market-play",
+          "parent-record",
+          "pyeongtaek"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-3c3e667d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMN4NKGuXN/",
+          "normalizedUrl": "instagram.com/p/dzmn4nkguxn",
+          "normalizedText": "풀꽃향기유치원 청북풀꽃향기유치원 첫 플리마켓 참가 좋은경험",
+          "htmlSnapshotHash": "sns-wave715-3c3e667d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZMN4NKGuXN/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ],
     "1ecec08d-0cd2-b044-e053-0a32095ab044": [
@@ -2015,8 +2003,144 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave723-fa2693d5",
+        "kindergartenId": "1ecec08d-0008-b044-e053-0a32095ab044",
+        "title": "평택해군유치원 MM아트홀 미술관 견학 기록",
+        "url": "https://www.instagram.com/p/CvBg6TxRKy0/",
+        "source": "other",
+        "sourceName": "Instagram · 평택해군유치원",
+        "snippet": "평택해군유치원 친구들이 MM아트홀 미술관 견학에서 관람 약속을 알아보고 그림을 감상한 게시물입니다.",
+        "summary": "유아들이 미술관에서 관람 예절과 작품 감상을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "exhibition",
+          "field-trip",
+          "pyeongtaek"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-fa2693d5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CvBg6TxRKy0/",
+          "normalizedUrl": "instagram.com/p/cvbg6txrky0",
+          "normalizedText": "평택해군유치원 미술관견학 MM아트홀 관람 약속 그림 감상",
+          "htmlSnapshotHash": "sns-wave723-fa2693d5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/CvBg6TxRKy0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
+      }
+    ],
+    "870af03d-17b6-44ff-9e40-73c40b90cd8d": [
+      {
+        "id": "rev-46d88d3f",
+        "kindergartenId": "870af03d-17b6-44ff-9e40-73c40b90cd8d",
+        "title": "군문유치원 그림동화 스마트카드북 Instagram Post",
+        "url": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+        "source": "other",
+        "sourceName": "Instagram · 군문유치원",
+        "snippet": "검색 결과에서 평택시 공립단설 군문유치원, 책 읽어주는 로봇 고양이, 그림동화 스마트카드북 도입 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "46d88d3f",
+        "structuredFields": {
+          "kindergartenName": "군문유치원",
+          "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+          "normalizedUrl": "instagram.com/p/da-z8kap9ab",
+          "normalizedText": "군문유치원 그림동화 스마트카드북 instagram post 검색 결과에서 평택시 공립단설 군문유치원 책 읽어주는 로봇 고양이 그림동화 스마트카드북 도입 단서가 확인된다.",
+          "htmlSnapshotHash": "46d88d3f",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "군문유치원",
+            "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-efba-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4dc293c1",
+        "kindergartenId": "1ecec08c-efba-b044-e053-0a32095ab044",
+        "title": "소사벌초등학교병설유치원 6월 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DY58wpQHUZQ/",
+        "source": "other",
+        "sourceName": "Instagram · 소사벌초등학교병설유치원",
+        "snippet": "검색 결과에서 소사벌초등학교병설유치원의 6월 교육활동과 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "june-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4dc293c1",
+        "structuredFields": {
+          "kindergartenName": "소사벌초등학교병설유치원",
+          "kindergartenAddress": "경기도 평택시 동부공원로 59",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY58wpQHUZQ%22%20%22%EC%86%8C%EC%82%AC%EB%B2%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "소사벌초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY58wpQHUZQ/",
+          "normalizedUrl": "instagram.com/p/dy58wpqhuzq",
+          "normalizedText": "소사벌초등학교병설유치원 6월 현장체험학습 instagram post 검색 결과에서 소사벌초등학교병설유치원의 6월 교육활동과 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "4dc293c1",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

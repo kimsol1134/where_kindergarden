@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 32,
+  "totalCount": 33,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
@@ -536,6 +536,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave722"
+      },
+      {
+        "id": "rev-sns-wave723-ff781471",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "title": "부산 신평 하늘유치원 부산현대미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DO4y6BEifxo/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "신평 하늘유치원 친구들이 부산현대미술관을 찾아 전시 관람 활동을 한 릴스입니다.",
+        "summary": "유아들이 현대미술관 공간에서 작품을 감상하며 문화예술 경험을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "exhibition",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave723-ff781471",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO4y6BEifxo/",
+          "normalizedUrl": "instagram.com/reel/do4y6beifxo",
+          "normalizedText": "신평하늘유치원 부산현대미술관 견학 전시 관람",
+          "htmlSnapshotHash": "sns-wave723-ff781471",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DO4y6BEifxo/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave723"
       }
     ],
     "36627649-3e14-4655-b961-d249c0207cf8": [
@@ -1401,97 +1438,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "abd1dd2d-e965-4e96-865f-661d34966498": [
-      {
-        "id": "rev-sns-wave706-b6dd8d79",
-        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
-        "title": "부산 지산유치원 찾아오는 구강교육 기록",
-        "url": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
-        "source": "other",
-        "sourceName": "Instagram · 지산유치원",
-        "snippet": "지산유치원이 사하구 보건소와 함께 아이들을 위한 구강교육과 불소도포 활동을 진행한 릴스입니다.",
-        "summary": "유아들이 보건소 교육을 통해 치아 관리와 바른 양치 태도를 배운 활동 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "oral-health",
-          "toothbrushing",
-          "dental-health",
-          "busan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave706-b6dd8d79",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
-          "normalizedUrl": "instagram.com/reel/dyjqijbtaoz",
-          "normalizedText": "지산유치원 사하구 보건소 구강교육 불소도포 바른 양치",
-          "htmlSnapshotHash": "sns-wave706-b6dd8d79",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave706"
-      },
-      {
-        "id": "rev-a5cacba9",
-        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
-        "title": "부산 지산유치원 현장체험학습 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DZdvDTyzWPq/",
-        "source": "other",
-        "sourceName": "Instagram · 지산유치원",
-        "snippet": "검색 결과에서 지산유치원, 유치원소풍, 유치원체험학습, 현장체험학습 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "field-trip",
-          "picnic"
-        ],
-        "date": "2026-06-12",
-        "collectedAt": "2026-07-03T16:55:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a5cacba9",
-        "structuredFields": {
-          "kindergartenName": "지산유치원",
-          "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZdvDTyzWPq/",
-          "normalizedUrl": "instagram.com/reel/dzdvdtyzwpq",
-          "normalizedText": "부산 지산유치원 현장체험학습 instagram reel 검색 결과에서 지산유치원 유치원소풍 유치원체험학습 현장체험학습 단서가 확인된다.",
-          "htmlSnapshotHash": "a5cacba9",
-          "extractedAt": "2026-07-03T16:55:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "지산유치원",
-            "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T16:55:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
     "7503d277-da3d-4087-83e8-21f5f0d0d815": [
       {
         "id": "rev-e5aa07cc",
@@ -1544,6 +1490,97 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "abd1dd2d-e965-4e96-865f-661d34966498": [
+      {
+        "id": "rev-a5cacba9",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "검색 결과에서 지산유치원, 유치원소풍, 유치원체험학습, 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "picnic"
+        ],
+        "date": "2026-06-12",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a5cacba9",
+        "structuredFields": {
+          "kindergartenName": "지산유치원",
+          "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+          "normalizedUrl": "instagram.com/reel/dzdvdtyzwpq",
+          "normalizedText": "부산 지산유치원 현장체험학습 instagram reel 검색 결과에서 지산유치원 유치원소풍 유치원체험학습 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "a5cacba9",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "지산유치원",
+            "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave706-b6dd8d79",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 찾아오는 구강교육 기록",
+        "url": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "지산유치원이 사하구 보건소와 함께 아이들을 위한 구강교육과 불소도포 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 보건소 교육을 통해 치아 관리와 바른 양치 태도를 배운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing",
+          "dental-health",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave706-b6dd8d79",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
+          "normalizedUrl": "instagram.com/reel/dyjqijbtaoz",
+          "normalizedText": "지산유치원 사하구 보건소 구강교육 불소도포 바른 양치",
+          "htmlSnapshotHash": "sns-wave706-b6dd8d79",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave706"
       }
     ]
   },
