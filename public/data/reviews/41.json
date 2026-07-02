@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1237,
-  "kindergartenCount": 482,
+  "totalCount": 1238,
+  "kindergartenCount": 483,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -49236,7 +49236,45 @@
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
       }
+    ],
+    "1ecec08c-f234-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave672-231be7a8",
+        "kindergartenId": "1ecec08c-f234-b044-e053-0a32095ab044",
+        "title": "파주국제유치원 미니 운동회 기록",
+        "url": "https://www.instagram.com/p/DZZOnYcTCBZ/",
+        "source": "other",
+        "sourceName": "Instagram · 파주국제유치원",
+        "snippet": "파주국제유치원이 줄다리기와 체육활동으로 구성한 미니 운동회를 소개한 공개 게시물입니다.",
+        "summary": "강당에서 진행된 미니 운동회와 협동 체육활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play",
+          "tug-of-war"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-231be7a8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZZOnYcTCBZ/",
+          "normalizedUrl": "instagram.com/p/dzzonyctcbz",
+          "normalizedText": "파주국제유치원 미니 운동회 줄다리기 체육활동",
+          "htmlSnapshotHash": "sns-wave672-231be7a8",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZZOnYcTCBZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T19:20:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
 }

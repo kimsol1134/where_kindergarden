@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 346,
+  "totalCount": 347,
   "kindergartenCount": 74,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -15192,6 +15192,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave672-02a5bc51",
+        "kindergartenId": "1ecec08c-fe6c-b044-e053-0a32095ab044",
+        "title": "용운유치원 주간 체육활동 기록",
+        "url": "https://www.instagram.com/p/DMHqZK5SNHl/",
+        "source": "other",
+        "sourceName": "Instagram · 용운유치원",
+        "snippet": "용운유치원이 매주 진행하는 신나는 체육활동과 놀이중심 활동을 소개한 공개 게시물입니다.",
+        "summary": "정기 체육활동과 놀이중심 움직임 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "weekly-activity",
+          "play-based"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-02a5bc51",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMHqZK5SNHl/",
+          "normalizedUrl": "instagram.com/p/dmhqzk5snhl",
+          "normalizedText": "용운유치원 체육활동 놀이중심유치원 대전동구",
+          "htmlSnapshotHash": "sns-wave672-02a5bc51",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMHqZK5SNHl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
       }
     ],
     "1ecec08c-edb6-b044-e053-0a32095ab044": [
@@ -16177,5 +16213,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T19:20:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
 }

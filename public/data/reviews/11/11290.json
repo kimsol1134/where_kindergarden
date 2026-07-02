@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 93,
+  "version": "2026-07-03",
+  "totalCount": 95,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0269-b044-e053-0a32095ab044": [
@@ -378,6 +378,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave672-bc46e17b",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "우촌유치원 운동회 기록",
+        "url": "https://www.instagram.com/reel/DY3xtspSDh9/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 건강하고 안전하게 운동회를 마친 모습을 소개한 공개 릴스입니다.",
+        "summary": "아이들이 끝까지 포기하지 않고 참여한 운동회 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play",
+          "teamwork"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-bc46e17b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY3xtspSDh9/",
+          "normalizedUrl": "instagram.com/reel/dy3xtspsdh9",
+          "normalizedText": "우촌유치원 운동회 건강 안전 즐거운 체육활동",
+          "htmlSnapshotHash": "sns-wave672-bc46e17b",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY3xtspSDh9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -3602,6 +3638,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ee678706",
+        "kindergartenId": "1ecec08c-ef05-b044-e053-0a32095ab044",
+        "title": "두산효자유치원 가족운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CyyBc3wLGZ_/",
+        "source": "other",
+        "sourceName": "Instagram · hyoja_k",
+        "snippet": "검색 결과에서 즐거웠던 효자가족 운동회, 유치원운동회, 효자유치원, 두산효자유치원, 노원구와 성북구 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T04:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ee678706",
+        "structuredFields": {
+          "kindergartenName": "두산효자유치원",
+          "kindergartenAddress": "서울특별시 성북구 화랑로48길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyyBc3wLGZ_%22%20%22hyoja_k%22%20%22%EB%91%90%EC%82%B0%ED%9A%A8%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "두산효자유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CyyBc3wLGZ_/",
+          "normalizedUrl": "instagram.com/reel/cyybc3wlgz_",
+          "normalizedText": "두산효자유치원 가족운동회 instagram reel 검색 결과에서 즐거웠던 효자가족 운동회, 유치원운동회, 효자유치원, 두산효자유치원, 노원구와 성북구 단서가 확인된다.",
+          "htmlSnapshotHash": "ee678706",
+          "extractedAt": "2026-07-03T04:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "두산효자유치원",
+            "kindergartenAddress": "서울특별시 성북구 화랑로48길 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyyBc3wLGZ_%22%20%22hyoja_k%22%20%22%EB%91%90%EC%82%B0%ED%9A%A8%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "두산효자유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T04:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0ae6-b044-e053-0a32095ab044": [
@@ -3753,6 +3840,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

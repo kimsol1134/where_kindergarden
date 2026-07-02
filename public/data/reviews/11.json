@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 668,
+  "totalCount": 669,
   "kindergartenCount": 245,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1282,6 +1282,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave672-bc46e17b",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "우촌유치원 운동회 기록",
+        "url": "https://www.instagram.com/reel/DY3xtspSDh9/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 건강하고 안전하게 운동회를 마친 모습을 소개한 공개 릴스입니다.",
+        "summary": "아이들이 끝까지 포기하지 않고 참여한 운동회 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play",
+          "teamwork"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-bc46e17b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY3xtspSDh9/",
+          "normalizedUrl": "instagram.com/reel/dy3xtspsdh9",
+          "normalizedText": "우촌유치원 운동회 건강 안전 즐거운 체육활동",
+          "htmlSnapshotHash": "sns-wave672-bc46e17b",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY3xtspSDh9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -25123,5 +25159,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T19:45:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
 }

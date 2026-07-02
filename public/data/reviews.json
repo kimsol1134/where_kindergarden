@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 5089,
-  "kindergartenCount": 1675,
+  "totalCount": 5093,
+  "kindergartenCount": 1677,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -1282,6 +1282,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave672-bc46e17b",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "우촌유치원 운동회 기록",
+        "url": "https://www.instagram.com/reel/DY3xtspSDh9/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 건강하고 안전하게 운동회를 마친 모습을 소개한 공개 릴스입니다.",
+        "summary": "아이들이 끝까지 포기하지 않고 참여한 운동회 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play",
+          "teamwork"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-bc46e17b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY3xtspSDh9/",
+          "normalizedUrl": "instagram.com/reel/dy3xtspsdh9",
+          "normalizedText": "우촌유치원 운동회 건강 안전 즐거운 체육활동",
+          "htmlSnapshotHash": "sns-wave672-bc46e17b",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY3xtspSDh9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -203131,6 +203167,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave672-02a5bc51",
+        "kindergartenId": "1ecec08c-fe6c-b044-e053-0a32095ab044",
+        "title": "용운유치원 주간 체육활동 기록",
+        "url": "https://www.instagram.com/p/DMHqZK5SNHl/",
+        "source": "other",
+        "sourceName": "Instagram · 용운유치원",
+        "snippet": "용운유치원이 매주 진행하는 신나는 체육활동과 놀이중심 활동을 소개한 공개 게시물입니다.",
+        "summary": "정기 체육활동과 놀이중심 움직임 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "weekly-activity",
+          "play-based"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-02a5bc51",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMHqZK5SNHl/",
+          "normalizedUrl": "instagram.com/p/dmhqzk5snhl",
+          "normalizedText": "용운유치원 체육활동 놀이중심유치원 대전동구",
+          "htmlSnapshotHash": "sns-wave672-02a5bc51",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMHqZK5SNHl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
       }
     ],
     "1ecec08c-fa44-b044-e053-0a32095ab044": [
@@ -218512,7 +218584,83 @@
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
       }
+    ],
+    "1ecec08c-f234-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave672-231be7a8",
+        "kindergartenId": "1ecec08c-f234-b044-e053-0a32095ab044",
+        "title": "파주국제유치원 미니 운동회 기록",
+        "url": "https://www.instagram.com/p/DZZOnYcTCBZ/",
+        "source": "other",
+        "sourceName": "Instagram · 파주국제유치원",
+        "snippet": "파주국제유치원이 줄다리기와 체육활동으로 구성한 미니 운동회를 소개한 공개 게시물입니다.",
+        "summary": "강당에서 진행된 미니 운동회와 협동 체육활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play",
+          "tug-of-war"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-231be7a8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZZOnYcTCBZ/",
+          "normalizedUrl": "instagram.com/p/dzzonyctcbz",
+          "normalizedText": "파주국제유치원 미니 운동회 줄다리기 체육활동",
+          "htmlSnapshotHash": "sns-wave672-231be7a8",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZZOnYcTCBZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
+      }
+    ],
+    "1ecec08c-f59d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave672-e040c44e",
+        "kindergartenId": "1ecec08c-f59d-b044-e053-0a32095ab044",
+        "title": "최정유치원 가족운동회 기록",
+        "url": "https://www.instagram.com/p/DaCu_lCyO7y/",
+        "source": "other",
+        "sourceName": "Instagram · 최정유치원",
+        "snippet": "최정유치원이 가족운동회에서 달리기와 응원전을 진행한 모습을 소개한 공개 게시물입니다.",
+        "summary": "친구들과 협동하며 도전한 가족운동회 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "running"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave672-e040c44e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaCu_lCyO7y/",
+          "normalizedUrl": "instagram.com/p/dacu_lcyo7y",
+          "normalizedText": "최정유치원 가족운동회 달리기 응원전 협동",
+          "htmlSnapshotHash": "sns-wave672-e040c44e",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaCu_lCyO7y/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "codex-manual-sns-wave672"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T19:45:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
 }
