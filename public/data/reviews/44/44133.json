@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 87,
-  "kindergartenCount": 15,
+  "totalCount": 88,
+  "kindergartenCount": 16,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
       {
@@ -4050,6 +4050,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f4e7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave722-96f65e92",
+        "kindergartenId": "1ecec08c-f4e7-b044-e053-0a32095ab044",
+        "title": "천안 동화유치원 엉클브룩스쥬 실내동물원 견학 기록",
+        "url": "https://www.instagram.com/reel/DEzk1VATcUO/",
+        "source": "other",
+        "sourceName": "Instagram · 동화유치원",
+        "snippet": "직산 동화유치원 친구들이 엉클브룩스쥬 실내동물원 견학을 다녀온 릴스입니다.",
+        "summary": "유아들이 실내동물원에서 동물 관찰과 체험 활동을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "zoo",
+          "indoor-zoo",
+          "field-trip",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-96f65e92",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DEzk1VATcUO/",
+          "normalizedUrl": "instagram.com/reel/dezk1vatcuo",
+          "normalizedText": "동화유치원 직산유치원 엉클브룩스쥬 실내동물원 동물원견학",
+          "htmlSnapshotHash": "sns-wave722-96f65e92",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DEzk1VATcUO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ]
   },

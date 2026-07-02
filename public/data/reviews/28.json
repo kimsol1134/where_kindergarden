@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 373,
-  "kindergartenCount": 114,
+  "totalCount": 375,
+  "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -5428,6 +5428,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:54.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave722-1449b6ff",
+        "kindergartenId": "0c403998-490f-4067-87f8-51a11625e05f",
+        "title": "인천 동구 예원유치원 쥬라리움 견학 기록",
+        "url": "https://www.instagram.com/reel/DY0RA9PzA1E/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 동구 예원유치원",
+        "snippet": "인천 동구 예원유치원 희망찬반 친구들이 실내동물원 쥬라리움 견학을 다녀온 릴스입니다.",
+        "summary": "유아들이 쥬라리움에서 동물 관찰을 통해 프로젝트 학습을 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "zoo",
+          "indoor-zoo",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-1449b6ff",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY0RA9PzA1E/",
+          "normalizedUrl": "instagram.com/reel/dy0ra9pza1e",
+          "normalizedText": "인천동구예원유치원 희망찬반 쥬라리움 실내동물원 견학",
+          "htmlSnapshotHash": "sns-wave722-1449b6ff",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY0RA9PzA1E/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "1ecec08d-01a5-b044-e053-0a32095ab044": [
@@ -14605,6 +14642,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave712"
+      }
+    ],
+    "1ecec08d-068e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave722-f69e1db0",
+        "kindergartenId": "1ecec08d-068e-b044-e053-0a32095ab044",
+        "title": "인천 산새소리유치원 서울대공원 동물원 기록",
+        "url": "https://www.instagram.com/reel/DZe62D0hvP_/",
+        "source": "other",
+        "sourceName": "Instagram · 산새소리유치원",
+        "snippet": "송림동 산새소리유치원 친구들이 서울대공원 동물원에 다녀온 릴스입니다.",
+        "summary": "유아들이 동물원 나들이를 통해 동물 관찰 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "zoo",
+          "animals",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-f69e1db0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZe62D0hvP_/",
+          "normalizedUrl": "instagram.com/reel/dze62d0hvp_",
+          "normalizedText": "산새소리유치원 송림동유치원 생태유치원 동물원 서울대공원",
+          "htmlSnapshotHash": "sns-wave722-f69e1db0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZe62D0hvP_/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ]
   },

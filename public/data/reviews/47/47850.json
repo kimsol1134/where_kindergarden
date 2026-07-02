@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 16,
+  "totalCount": 17,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-fbb3-b044-e053-0a32095ab044": [
@@ -361,6 +361,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T09:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave722-8bbfbc57",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "칠곡 무지개유치원 양떼목장 참여행사 기록",
+        "url": "https://www.instagram.com/p/DX6-O8fkaro/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개유치원",
+        "snippet": "경북 무지개유치원 친구들이 칠곡양떼목장에서 양떼목장 견학과 참여행사를 진행한 게시물입니다.",
+        "summary": "유아와 가족이 목장에서 동물과 교감하는 체험형 행사를 기록한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm",
+          "animals",
+          "field-trip",
+          "chilgok"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-8bbfbc57",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX6-O8fkaro/",
+          "normalizedUrl": "instagram.com/p/dx6-o8fkaro",
+          "normalizedText": "무지개유치원 경북 칠곡양떼목장 학부모참여행사 양떼목장견학",
+          "htmlSnapshotHash": "sns-wave722-8bbfbc57",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DX6-O8fkaro/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "1ecec08d-075c-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 27,
+  "totalCount": 28,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0925-b044-e053-0a32095ab044": [
@@ -432,6 +432,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave722-ebcb1336",
+        "kindergartenId": "1ecec08c-f0b9-b044-e053-0a32095ab044",
+        "title": "진주 초원유치원 진양호 동물원 견학 기록",
+        "url": "https://www.instagram.com/reel/DYN1F-Ezstg/",
+        "source": "other",
+        "sourceName": "Instagram · 진주초원유치원",
+        "snippet": "진주 초원유치원 5살 친구들이 진양호 동물원 견학을 다녀온 릴스입니다.",
+        "summary": "유아들이 동물원에서 다양한 동물을 관찰하며 현장체험을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "zoo",
+          "animals",
+          "field-trip",
+          "jinju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-ebcb1336",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYN1F-Ezstg/",
+          "normalizedUrl": "instagram.com/reel/dyn1f-ezstg",
+          "normalizedText": "진주초원유치원 초원유치원 진주진양호 동물원견학 5살",
+          "htmlSnapshotHash": "sns-wave722-ebcb1336",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYN1F-Ezstg/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "1ecec08d-0e8f-b044-e053-0a32095ab044": [
@@ -1328,5 +1365,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

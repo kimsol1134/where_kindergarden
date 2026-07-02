@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 18,
+  "totalCount": 19,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f7c2-b044-e053-0a32095ab044": [
@@ -287,6 +287,43 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-sns-wave722-4ec31600",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "경기 광주 성모유치원 은아목장 봄소풍 기록",
+        "url": "https://www.instagram.com/p/DX-66NwAcgs/",
+        "source": "other",
+        "sourceName": "Instagram · 경기광주성모유치원",
+        "snippet": "경기 광주 성모유치원 친구들이 은아목장에서 동물 친구들을 만나고 목장 체험을 한 게시물입니다.",
+        "summary": "유아들이 목장에서 동물 먹이주기와 자연 체험을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm",
+          "animals",
+          "field-trip",
+          "gwangju-gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-4ec31600",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX-66NwAcgs/",
+          "normalizedUrl": "instagram.com/p/dx-66nwacgs",
+          "normalizedText": "경기광주성모유치원 성모유치원 은아목장 봄소풍 목장체험 동물친구",
+          "htmlSnapshotHash": "sns-wave722-4ec31600",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DX-66NwAcgs/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "1ecec08d-0e8d-b044-e053-0a32095ab044": [
@@ -800,5 +837,6 @@
         "approvedBy": "codex-manual-sns-wave670"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

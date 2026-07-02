@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 31,
+  "totalCount": 32,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
@@ -499,6 +499,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave720"
+      },
+      {
+        "id": "rev-sns-wave722-0ff7d9fc",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "title": "부산 신평 하늘유치원 쥬니멀 동물체험 기록",
+        "url": "https://www.instagram.com/reel/DWBECATjjPW/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "신평 하늘유치원 친구들이 쥬니멀 동물원 체험으로 여러 동물 친구들을 만난 릴스입니다.",
+        "summary": "유아들이 동물 체험 활동을 통해 생명과 자연을 가까이에서 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "animals",
+          "animal-experience",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-0ff7d9fc",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWBECATjjPW/",
+          "normalizedUrl": "instagram.com/reel/dwbecatjjpw",
+          "normalizedText": "하늘유치원 신평하늘유치원 사하구유치원 쥬니멀동물원 쥬니멀 동물체험",
+          "htmlSnapshotHash": "sns-wave722-0ff7d9fc",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWBECATjjPW/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "36627649-3e14-4655-b961-d249c0207cf8": [

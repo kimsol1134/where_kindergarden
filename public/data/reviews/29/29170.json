@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 42,
+  "totalCount": 43,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -343,6 +343,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.997Z",
         "approvedBy": "codex-manual-sns-wave700"
+      },
+      {
+        "id": "rev-sns-wave722-852f4ebb",
+        "kindergartenId": "1ecec08d-06b8-b044-e053-0a32095ab044",
+        "title": "광주 선일유치원 찾아가는 동물체험 기록",
+        "url": "https://www.instagram.com/p/DNfR_6czK5l/",
+        "source": "other",
+        "sourceName": "Instagram · 선일유치원",
+        "snippet": "선일유치원 친구들이 찾아가는 동물체험 시간에 여러 동물을 가까이에서 관찰한 게시물입니다.",
+        "summary": "유아들이 다양한 동물과 교감하며 생명존중 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "animals",
+          "animal-experience",
+          "field-trip",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-852f4ebb",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNfR_6czK5l/",
+          "normalizedUrl": "instagram.com/p/dnfr_6czk5l",
+          "normalizedText": "선일유치원 찾아가는 동물체험 레오파드 게코 이구아나 공비단뱀 육지거북 앵무새",
+          "htmlSnapshotHash": "sns-wave722-852f4ebb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DNfR_6czK5l/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
       }
     ],
     "1ecec08d-0c2b-b044-e053-0a32095ab044": [
@@ -1737,5 +1774,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
