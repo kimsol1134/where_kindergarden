@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 50,
+  "totalCount": 51,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-04a0-b044-e053-0a32095ab044": [
@@ -1713,6 +1713,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:56.000Z",
         "approvedBy": "codex-manual-sns-wave687"
+      },
+      {
+        "id": "rev-sns-wave721-d58a23e4",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "서울 정원유치원 시민안전체험관 견학 기록",
+        "url": "https://www.instagram.com/p/DKytGrzhTc7/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "동대문구 정원유치원 친구들이 시민안전체험관에서 안전 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 시민안전체험관에서 체험 중심 안전교육을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "safety-experience",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-d58a23e4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKytGrzhTc7/",
+          "normalizedUrl": "instagram.com/p/dkytgrzhtc7",
+          "normalizedText": "정원유치원 동대문구 장안동 시민안전체험관 7세 6세 5세",
+          "htmlSnapshotHash": "sns-wave721-d58a23e4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DKytGrzhTc7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08c-ed83-b044-e053-0a32095ab044": [
@@ -1930,5 +1967,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

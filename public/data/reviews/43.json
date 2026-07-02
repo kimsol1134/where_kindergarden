@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 117,
+  "totalCount": 118,
   "kindergartenCount": 30,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -1136,6 +1136,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
         "approvedBy": "codex-manual-sns-wave671"
+      },
+      {
+        "id": "rev-sns-wave721-00aeafb2",
+        "kindergartenId": "1ecec08d-028c-b044-e053-0a32095ab044",
+        "title": "제천 성모유치원 소방서 견학 기록",
+        "url": "https://www.instagram.com/p/DaRSNEKyUIA/",
+        "source": "other",
+        "sourceName": "Instagram · 제천성모유치원",
+        "snippet": "제천 성모유치원 친구들이 소방서 견학에서 안전교육과 소방관 체험 활동을 한 게시물입니다.",
+        "summary": "유아들이 소방서 공간과 안전 활동을 직접 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-station",
+          "field-trip",
+          "jecheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-00aeafb2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaRSNEKyUIA/",
+          "normalizedUrl": "instagram.com/p/darsnekyuia",
+          "normalizedText": "제천성모유치원 소방서견학 안전교육 소방관체험 현장체험학습",
+          "htmlSnapshotHash": "sns-wave721-00aeafb2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaRSNEKyUIA/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08c-f699-b044-e053-0a32095ab044": [

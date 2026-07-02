@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 205,
+  "totalCount": 206,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -4860,6 +4860,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.996Z",
         "approvedBy": "codex-manual-sns-wave699"
+      },
+      {
+        "id": "rev-sns-wave721-98ebc9f8",
+        "kindergartenId": "1ecec08c-ee38-b044-e053-0a32095ab044",
+        "title": "천안 젤라유치원 북부체험교육원 안전체험 기록",
+        "url": "https://www.instagram.com/reel/DKKP_QovPpD/",
+        "source": "other",
+        "sourceName": "Instagram · 젤라유치원",
+        "snippet": "젤라유치원 친구들이 북부체험교육원에서 소화기와 화재 대피 안전 활동에 참여한 릴스입니다.",
+        "summary": "유아들이 체험교육원에서 생활 속 안전 행동을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "safety-experience",
+          "field-trip",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-98ebc9f8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKKP_QovPpD/",
+          "normalizedUrl": "instagram.com/reel/dkkp_qovppd",
+          "normalizedText": "젤라유치원 북부체험교육원 안전 체험 소화기 화재 대피",
+          "htmlSnapshotHash": "sns-wave721-98ebc9f8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DKKP_QovPpD/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08d-06c9-b044-e053-0a32095ab044": [

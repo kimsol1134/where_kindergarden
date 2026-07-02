@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 8,
+  "totalCount": 9,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08c-fdce-b044-e053-0a32095ab044": [
@@ -158,6 +158,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave721-52321fbb",
+        "kindergartenId": "1ecec08d-0352-b044-e053-0a32095ab044",
+        "title": "밀양 삼양사금강유치원 소방 안전 체험 기록",
+        "url": "https://www.instagram.com/reel/DXTz35DFEvJ/",
+        "source": "other",
+        "sourceName": "Instagram · 삼양사금강유치원",
+        "snippet": "삼양사금강유치원 친구들이 밀양소방서 산불대응훈련과 소방 안전 체험에 참여한 릴스입니다.",
+        "summary": "유아들이 소방 안전 활동을 통해 화재 대응 과정을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-safety",
+          "field-trip",
+          "miryang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-52321fbb",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/",
+          "normalizedUrl": "instagram.com/reel/dxtz35dfevj",
+          "normalizedText": "삼양사금강유치원 안전유치원 밀양소방서 산불대응훈련 소방체험",
+          "htmlSnapshotHash": "sns-wave721-52321fbb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "cd612c2b-47e2-4361-a1ca-57322651de96": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 4,
+  "totalCount": 7,
   "kindergartenCount": 1,
   "reviews": {
     "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2": [
@@ -164,6 +164,147 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave709"
+      },
+      {
+        "id": "rev-sns-wave721-d174dc55",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 119 안전체험관 현장체험 기록",
+        "url": "https://www.instagram.com/p/DXBzhwgk1I1/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "임실둥지유치원 친구들이 119 안전체험관에서 지진, 화재 대피, 산악, 태풍 안전을 배운 게시물입니다.",
+        "summary": "유아들이 안전체험관에서 여러 재난 상황을 몸으로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "119-safety",
+          "field-trip",
+          "imsil"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-d174dc55",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXBzhwgk1I1/",
+          "normalizedUrl": "instagram.com/p/dxbzhwgk1i1",
+          "normalizedText": "임실둥지유치원 119 안전체험관 현장체험 지진 화재 대피 산악 태풍 안전",
+          "htmlSnapshotHash": "sns-wave721-d174dc55",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXBzhwgk1I1/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
+      },
+      {
+        "id": "rev-2acb4c74",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWVsLK8khoV/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "검색 결과에서 임실둥지유치원의 교통안전교육과 안전 수칙 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T13:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2acb4c74",
+        "structuredFields": {
+          "kindergartenName": "임실둥지유치원",
+          "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWVsLK8khoV%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWVsLK8khoV/",
+          "normalizedUrl": "instagram.com/p/dwvslk8khov",
+          "normalizedText": "임실둥지유치원 교통안전교육 instagram post 검색 결과에서 임실둥지유치원의 교통안전교육과 안전 수칙 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "2acb4c74",
+          "extractedAt": "2026-07-03T13:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "임실둥지유치원",
+            "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWVsLK8khoV%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T13:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3e695981",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 어린이 교통안전 문화축제 Instagram Post",
+        "url": "https://www.instagram.com/p/DQ8LDG0E7iF/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "검색 결과에서 임실둥지유치원, 어린이 교통안전 문화축제, 교통안전교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3e695981",
+        "structuredFields": {
+          "kindergartenName": "임실둥지유치원",
+          "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQ8LDG0E7iF%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 교육 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQ8LDG0E7iF/",
+          "normalizedUrl": "instagram.com/p/dq8ldg0e7if",
+          "normalizedText": "임실둥지유치원 어린이 교통안전 문화축제 instagram post 검색 결과에서 임실둥지유치원 어린이 교통안전 문화축제 교통안전교육 단서가 확인된다.",
+          "htmlSnapshotHash": "3e695981",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "임실둥지유치원",
+            "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQ8LDG0E7iF%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 교육 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 36,
+  "totalCount": 37,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-037b-b044-e053-0a32095ab044": [
@@ -107,6 +107,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave721-f9e33b90",
+        "kindergartenId": "1ecec08d-085f-b044-e053-0a32095ab044",
+        "title": "전주 다솔유치원 119 안전체험센터 견학 기록",
+        "url": "https://www.instagram.com/reel/DS3vk51CaCm/",
+        "source": "other",
+        "sourceName": "Instagram · 다솔유치원",
+        "snippet": "전주 다솔유치원 친구들이 119 안전체험센터 견학을 다녀온 릴스입니다.",
+        "summary": "유아들이 재난 상황에 대비하는 안전 체험을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "119-safety",
+          "field-trip",
+          "jeonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-f9e33b90",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DS3vk51CaCm/",
+          "normalizedUrl": "instagram.com/reel/ds3vk51cacm",
+          "normalizedText": "다솔유치원 전주유치원 견학 119안전체험센터",
+          "htmlSnapshotHash": "sns-wave721-f9e33b90",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DS3vk51CaCm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08d-0c95-b044-e053-0a32095ab044": [

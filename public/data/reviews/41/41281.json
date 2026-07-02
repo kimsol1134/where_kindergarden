@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 58,
+  "totalCount": 59,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0815-b044-e053-0a32095ab044": [
@@ -924,6 +924,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave721-9e3ff0bb",
+        "kindergartenId": "1ecec08c-f692-b044-e053-0a32095ab044",
+        "title": "고양 성실유치원 원당소방서 견학 기록",
+        "url": "https://www.instagram.com/p/DZkYtrXPOLp/",
+        "source": "other",
+        "sourceName": "Instagram · 성실유치원",
+        "snippet": "성실유치원 친구들이 원당소방서에서 소화기, 지진, 화재 대피 등 안전 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 소방서 견학을 통해 재난 상황별 안전 체험을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-station",
+          "field-trip",
+          "goyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-9e3ff0bb",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZkYtrXPOLp/",
+          "normalizedUrl": "instagram.com/p/dzkytrxpolp",
+          "normalizedText": "성실유치원 원당소방서 견학 소화기 지진 화재 대피 안전 체험",
+          "htmlSnapshotHash": "sns-wave721-9e3ff0bb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZkYtrXPOLp/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08d-01f2-b044-e053-0a32095ab044": [

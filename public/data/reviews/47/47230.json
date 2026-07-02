@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 10,
+  "totalCount": 11,
   "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-024b-b044-e053-0a32095ab044": [
@@ -414,6 +414,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave721-8e1ffd31",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "title": "영천 샛별유치원 영천동부소방서 견학 기록",
+        "url": "https://www.instagram.com/reel/DaNXL9YhzTy/",
+        "source": "other",
+        "sourceName": "Instagram · 영천 샛별유치원",
+        "snippet": "영천 샛별유치원 친구들이 영천동부소방서에서 소방차와 구급차를 살펴본 릴스입니다.",
+        "summary": "유아들이 소방서 견학을 통해 소방 장비와 구조 활동을 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-station",
+          "field-trip",
+          "yeongcheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-8e1ffd31",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaNXL9YhzTy/",
+          "normalizedUrl": "instagram.com/reel/danxl9yhzty",
+          "normalizedText": "영천 샛별유치원 영천동부소방서 견학 소방차 구급차 소방관",
+          "htmlSnapshotHash": "sns-wave721-8e1ffd31",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaNXL9YhzTy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08c-f06f-b044-e053-0a32095ab044": [
@@ -454,5 +491,6 @@
         "approvedBy": "codex-manual-sns-wave667"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 368,
+  "totalCount": 369,
   "kindergartenCount": 77,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -2878,6 +2878,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave721-07e99f5c",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 옥스퍼드키즈유치원 종합안전체험랜드 기록",
+        "url": "https://www.instagram.com/p/DV0Fj3YkhrO/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "옥스퍼드키즈유치원 친구들이 종합안전체험랜드에서 디지털 안전체험 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 체험형 안전교육 프로그램을 통해 안전 행동을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "safety-experience",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-07e99f5c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV0Fj3YkhrO/",
+          "normalizedUrl": "instagram.com/p/dv0fj3ykhro",
+          "normalizedText": "옥스퍼드키즈유치원 대덕구유치원 종합안전체험랜드 디지털 안전체험",
+          "htmlSnapshotHash": "sns-wave721-07e99f5c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DV0Fj3YkhrO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
       }
     ],
     "1ecec08c-f56f-b044-e053-0a32095ab044": [
