@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 334,
-  "kindergartenCount": 112,
+  "totalCount": 335,
+  "kindergartenCount": 113,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -15457,7 +15457,45 @@
         "approvedAt": "2026-07-03T17:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave667"
       }
+    ],
+    "1ecec08d-0490-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave668-9e2070aa",
+        "kindergartenId": "1ecec08d-0490-b044-e053-0a32095ab044",
+        "title": "양북초등학교병설유치원 공룡 도넛 요리체험 기록",
+        "url": "https://www.instagram.com/p/DXgFswxmcPF/",
+        "source": "other",
+        "sourceName": "Instagram · 양북초등학교병설유치원",
+        "snippet": "양북초등학교병설유치원이 공룡 도넛 만들기와 찾아오는 요리체험을 소개한 공개 게시물입니다.",
+        "summary": "도넛 만들기 요리체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "donut-making"
+        ],
+        "date": "2026-04-23",
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-9e2070aa",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXgFswxmcPF/",
+          "normalizedUrl": "instagram.com/p/dxgfswxmcpf",
+          "normalizedText": "양북초등학교병설유치원 공룡 도넛 만들기 찾아오는 요리 체험",
+          "htmlSnapshotHash": "sns-wave668-9e2070aa",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXgFswxmcPF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T18:25:00.000Z"
 }

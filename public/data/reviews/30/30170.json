@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 114,
+  "version": "2026-07-03",
+  "totalCount": 122,
   "kindergartenCount": 29,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
@@ -606,6 +606,101 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T20:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9d6acc7c",
+        "kindergartenId": "1ecec08c-f3c4-b044-e053-0a32095ab044",
+        "title": "대전도마초등학교병설유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+        "source": "other",
+        "sourceName": "Instagram · 도마병설유치원",
+        "snippet": "검색 결과에서 도마병설유치원, 시장놀이, 대전도마초등학교 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9d6acc7c",
+        "structuredFields": {
+          "kindergartenName": "대전도마초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+          "normalizedUrl": "instagram.com/reel/damzy4zhopl",
+          "normalizedText": "대전도마초등학교병설유치원 시장놀이 instagram reel 검색 결과에서 도마병설유치원 시장놀이 대전도마초등학교 단서가 확인된다.",
+          "htmlSnapshotHash": "9d6acc7c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전도마초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-04be4b47",
+        "kindergartenId": "1ecec08c-f3c4-b044-e053-0a32095ab044",
+        "title": "대전도마초등학교병설유치원 유아과학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNPNn7PBWn9/",
+        "source": "other",
+        "sourceName": "Instagram · 대전도마초등학교병설유치원",
+        "snippet": "검색 결과에서 대전도마초등학교병설유치원, 방과후과정, 특성화활동, 유아과학, 실험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "experiment"
+        ],
+        "date": "2025-08-11",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "04be4b47",
+        "structuredFields": {
+          "kindergartenName": "대전도마초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNPNn7PBWn9%22%20%22%EB%8C%80%EC%A0%84%EB%8F%84%EB%A7%88%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%95%84%EA%B3%BC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전도마초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNPNn7PBWn9/",
+          "normalizedUrl": "instagram.com/reel/dnpnn7pbwn9",
+          "normalizedText": "대전도마초등학교병설유치원 유아과학 instagram reel 검색 결과에서 대전도마초등학교병설유치원 방과후과정 특성화활동 유아과학 실험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "04be4b47",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0a64-b044-e053-0a32095ab044": [
@@ -861,6 +956,110 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5a071354",
+        "kindergartenId": "1ecec08c-f56f-b044-e053-0a32095ab044",
+        "title": "대전갈마유치원 제26회 수료 및 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUpAk6Qk3cl/",
+        "source": "other",
+        "sourceName": "Instagram · galma__kinder",
+        "snippet": "검색 결과에서 2025학년도 대전갈마유치원 제26회 수료 및 졸업식, 아이들이 또 한 걸음 자란 시간이라는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "completion"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a071354",
+        "structuredFields": {
+          "kindergartenName": "대전갈마유치원",
+          "kindergartenAddress": "대전광역시 서구 월평동로 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUpAk6Qk3cl%22%20%22galma__kinder%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전갈마유치원은 로컬 원장부에서 단일 명칭이며 계정명과 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUpAk6Qk3cl/",
+          "normalizedUrl": "instagram.com/reel/dupak6qk3cl",
+          "normalizedText": "대전갈마유치원 제26회 수료 및 졸업식 instagram reel 검색 결과에서 2025학년도 대전갈마유치원 제26회 수료 및 졸업식, 아이들이 또 한 걸음 자란 시간이라는 단서가 확인된다.",
+          "htmlSnapshotHash": "5a071354",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전갈마유치원",
+            "kindergartenAddress": "대전광역시 서구 월평동로 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUpAk6Qk3cl%22%20%22galma__kinder%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전갈마유치원은 로컬 원장부에서 단일 명칭이며 계정명과 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-485ed201",
+        "kindergartenId": "1ecec08c-f56f-b044-e053-0a32095ab044",
+        "title": "대전갈마유치원 유치원 도서관 Instagram Post",
+        "url": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+        "source": "other",
+        "sourceName": "Instagram · 대전갈마유치원",
+        "snippet": "검색 결과에서 대전갈마유치원, 유치원 도서관, 돌봄 교실 이용 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "485ed201",
+        "structuredFields": {
+          "kindergartenName": "대전갈마유치원",
+          "kindergartenAddress": "대전광역시 서구 월평동로 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+          "normalizedUrl": "instagram.com/p/dv-tb9vaxkk",
+          "normalizedText": "대전갈마유치원 유치원 도서관 instagram post 검색 결과에서 대전갈마유치원 유치원 도서관 돌봄 교실 이용 단서가 확인된다.",
+          "htmlSnapshotHash": "485ed201",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전갈마유치원",
+            "kindergartenAddress": "대전광역시 서구 월평동로 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2505,6 +2704,69 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-d9f2dcf8",
+        "kindergartenId": "1ecec08d-0604-b044-e053-0a32095ab044",
+        "kindergartenName": "한양유치원",
+        "title": "대전 탄방동 한양유치원 주말지낸이야기 Reel",
+        "url": "https://www.instagram.com/reel/DV7QUIZj9wQ/",
+        "source": "other",
+        "sourceName": "Instagram · 한양유치원",
+        "snippet": "Instagram 검색 결과에서 hanyang19960624 계정의 한양유치원 주말지낸이야기와 대전·탄방동유치원 문맥이 확인되는 릴.",
+        "date": "2026-03-15",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "한양유치원",
+          "kindergartenAddress": "대전광역시 서구 계룡로571번길 65",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DV7QUIZj9wQ%22+%22%ED%95%9C%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%83%84%EB%B0%A9%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DV7QUIZj9wQ/",
+          "regionEvidence": [
+            "hanyang19960624",
+            "한양유치원",
+            "대전",
+            "탄방동유치원"
+          ]
+        },
+        "evidenceChecksum": "d2e1f483",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DV7QUIZj9wQ/",
+          "normalizedUrl": "instagram.com/shortcode/dv7quizj9wq",
+          "normalizedText": "대전 탄방동 한양유치원 주말지낸이야기 reel instagram 검색 결과에서 hanyang19960624 계정의 한양유치원 주말지낸이야기와 대전·탄방동유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "5640876e",
+          "extractedAt": "2026-07-02T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한양유치원",
+            "kindergartenAddress": "대전광역시 서구 계룡로571번길 65",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DV7QUIZj9wQ%22+%22%ED%95%9C%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%83%84%EB%B0%A9%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DV7QUIZj9wQ/",
+            "regionEvidence": [
+              "hanyang19960624",
+              "한양유치원",
+              "대전",
+              "탄방동유치원"
+            ]
+          }
+        }
+      },
+      {
         "id": "rev-cda74b9e",
         "kindergartenId": "1ecec08d-0604-b044-e053-0a32095ab044",
         "kindergartenName": "한양유치원",
@@ -3236,6 +3498,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T19:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-668564ee",
+        "kindergartenId": "1ecec08c-f57e-b044-e053-0a32095ab044",
+        "title": "대전 혜천유치원 구강교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWTQvLbEXjT/",
+        "source": "other",
+        "sourceName": "Instagram · 혜천유치원",
+        "snippet": "검색 결과에서 혜천유치원의 대학 연계 치위생과 구강교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "community-linked-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "668564ee",
+        "structuredFields": {
+          "kindergartenName": "혜천유치원",
+          "kindergartenAddress": "대전광역시 서구 혜천로 100",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWTQvLbEXjT%22%20%22%ED%98%9C%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "혜천유치원은 로컬 원장부 단일 정확 명칭이며 대전 단서와 로컬 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWTQvLbEXjT/",
+          "normalizedUrl": "instagram.com/p/dwtqvlbexjt",
+          "normalizedText": "대전 혜천유치원 구강교육 instagram post 검색 결과에서 혜천유치원의 대학 연계 치위생과 구강교육 단서가 확인된다.",
+          "htmlSnapshotHash": "668564ee",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "혜천유치원",
+            "kindergartenAddress": "대전광역시 서구 혜천로 100",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWTQvLbEXjT%22%20%22%ED%98%9C%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "혜천유치원은 로컬 원장부 단일 정확 명칭이며 대전 단서와 로컬 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -4248,6 +4562,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave668-0dfb3f12",
+        "kindergartenId": "1ecec08c-f232-b044-e053-0a32095ab044",
+        "title": "대전성천초등학교병설유치원 제철 음식 요리활동 기록",
+        "url": "https://www.instagram.com/p/DZ_54c3sUng/",
+        "source": "other",
+        "sourceName": "Instagram · 대전성천초등학교병설유치원",
+        "snippet": "대전성천초등학교병설유치원이 놀이주제와 제철 음식에 맞춘 요리활동을 소개한 공개 게시물입니다.",
+        "summary": "제철 음식과 놀이주제를 연결한 요리활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "seasonal-food"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-0dfb3f12",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_54c3sUng/",
+          "normalizedUrl": "instagram.com/p/dz_54c3sung",
+          "normalizedText": "대전성천초등학교병설유치원 제철 음식 요리활동 딸기산도",
+          "htmlSnapshotHash": "sns-wave668-0dfb3f12",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_54c3sUng/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
       }
     ],
     "1ecec08c-ffb8-b044-e053-0a32095ab044": [
@@ -4699,6 +5049,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f882fe7",
+        "kindergartenId": "1ecec08c-ffb8-b044-e053-0a32095ab044",
+        "title": "대전 나은유치원 악기연주 음악활동 Instagram Post",
+        "url": "https://www.instagram.com/p/ClGXSF0jfpO/",
+        "source": "other",
+        "sourceName": "Instagram · 나은유치원",
+        "snippet": "검색 결과에서 나은유치원의 여러 악기 연주 활동과 대전유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "instrument-play",
+          "music-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f882fe7",
+        "structuredFields": {
+          "kindergartenName": "나은유치원",
+          "kindergartenAddress": "대전광역시 서구 관저북로 92",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22ClGXSF0jfpO%22%20%22%EB%82%98%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "나은유치원은 로컬 원장부 단일 정확 명칭이며 대전 단서와 로컬 대전 서구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/ClGXSF0jfpO/",
+          "normalizedUrl": "instagram.com/p/clgxsf0jfpo",
+          "normalizedText": "대전 나은유치원 악기연주 음악활동 instagram post 검색 결과에서 나은유치원의 여러 악기 연주 활동과 대전유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "0f882fe7",
+          "extractedAt": "2026-07-03T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "나은유치원",
+            "kindergartenAddress": "대전광역시 서구 관저북로 92",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22ClGXSF0jfpO%22%20%22%EB%82%98%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "나은유치원은 로컬 원장부 단일 정확 명칭이며 대전 단서와 로컬 대전 서구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -5606,6 +6008,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 100,
-  "kindergartenCount": 23,
+  "totalCount": 112,
+  "kindergartenCount": 27,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
       {
@@ -1046,6 +1046,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d906f434",
+        "kindergartenId": "1ecec08d-028c-b044-e053-0a32095ab044",
+        "kindergartenName": "성모유치원",
+        "title": "제천 성모유치원 성모시장놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DLZVaiiJLoQ/",
+        "source": "other",
+        "sourceName": "Instagram · 제천성모유치원",
+        "snippet": "제천성모유치원 계정의 성모시장 시장놀이 게시물 검색 결과에서 유치원 시장놀이와 경제놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economic-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "26e06e45",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "충청북도 제천시 의병대로18길 21-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLZVaiiJLoQ%22%20%22%EC%A0%9C%EC%B2%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "제천성모유치원 계정명과 제천 지역 단서가 로컬 제천 성모유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLZVaiiJLoQ/",
+          "normalizedUrl": "www.instagram.com/p/dlzvaiijloq",
+          "normalizedText": "제천 성모유치원 성모시장놀이 instagram post 제천성모유치원 계정의 성모시장 시장놀이 게시물 검색 결과에서 유치원 시장놀이와 경제놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "26e06e45",
+          "extractedAt": "2026-07-02T17:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "충청북도 제천시 의병대로18길 21-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLZVaiiJLoQ%22%20%22%EC%A0%9C%EC%B2%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "제천성모유치원 계정명과 제천 지역 단서가 로컬 제천 성모유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2444,6 +2497,57 @@
         "evidenceChecksum": "98d5fa07"
       },
       {
+        "id": "rev-8da8d10f",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "청주 진흥초등학교병설유치원 딸기 요리 Instagram Post",
+        "url": "https://www.instagram.com/p/DDwJDAaP7N0/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "진흥초등학교병설유치원 계정에서 청주유치원, 복대동유치원과 딸기 요리 활동 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "328dab88",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDwJDAaP7N0%22+%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%AD%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명이 있으나 청주와 복대동 지역 단서가 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDwJDAaP7N0/",
+          "normalizedUrl": "www.instagram.com/p/ddwjdaap7n0",
+          "normalizedText": "청주 진흥초등학교병설유치원 딸기 요리 instagram post 진흥초등학교병설유치원 계정에서 청주유치원, 복대동유치원과 딸기 요리 활동 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "328dab88",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDwJDAaP7N0%22+%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%AD%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명이 있으나 청주와 복대동 지역 단서가 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
         "id": "rev-082eb3df",
         "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
         "title": "진흥초등학교병설유치원 우리 동네 부모참여수업 Instagram Reel",
@@ -3207,6 +3311,164 @@
           ]
         },
         "evidenceChecksum": "de85c9c8"
+      },
+      {
+        "id": "rev-2b4083c1",
+        "kindergartenId": "1ecec08c-f69c-b044-e053-0a32095ab044",
+        "kindergartenName": "유동유치원",
+        "title": "청주 유동유치원 메추리알 꼬치 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DJ9SDcqP4W3/",
+        "source": "other",
+        "sourceName": "Instagram · 유동유치원",
+        "snippet": "유동유치원 계정의 5월 요리활동 게시물 검색 결과에서 메추리알 꼬치 만들기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "abeb7e14",
+        "structuredFields": {
+          "kindergartenName": "유동유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJ9SDcqP4W3%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A9%94%EC%B6%94%EB%A6%AC%EC%95%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "유동유치원은 로컬 원장부 단일 매칭이며 계정명과 요리활동 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJ9SDcqP4W3/",
+          "normalizedUrl": "www.instagram.com/p/dj9sdcqp4w3",
+          "normalizedText": "청주 유동유치원 메추리알 꼬치 요리활동 instagram post 유동유치원 계정의 5월 요리활동 게시물 검색 결과에서 메추리알 꼬치 만들기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "abeb7e14",
+          "extractedAt": "2026-07-02T17:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "유동유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJ9SDcqP4W3%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A9%94%EC%B6%94%EB%A6%AC%EC%95%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "유동유치원은 로컬 원장부 단일 매칭이며 계정명과 요리활동 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ae3f7476",
+        "kindergartenId": "1ecec08c-f69c-b044-e053-0a32095ab044",
+        "kindergartenName": "유동유치원",
+        "title": "청주 유동유치원 화재대피훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLPLXuDyL1t/",
+        "source": "other",
+        "sourceName": "Instagram · 유동유치원",
+        "snippet": "유동유치원 계정의 화재대피훈련 게시물 검색 결과에서 불이 났을 때 안전하게 대피하는 방법을 익힌 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f21667ad",
+        "structuredFields": {
+          "kindergartenName": "유동유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLPLXuDyL1t%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "유동유치원은 로컬 원장부 단일 매칭이며 청주·유동유치원 계정 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLPLXuDyL1t/",
+          "normalizedUrl": "www.instagram.com/reel/dlplxudyl1t",
+          "normalizedText": "청주 유동유치원 화재대피훈련 instagram reel 유동유치원 계정의 화재대피훈련 게시물 검색 결과에서 불이 났을 때 안전하게 대피하는 방법을 익힌 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f21667ad",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "유동유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLPLXuDyL1t%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "유동유치원은 로컬 원장부 단일 매칭이며 청주·유동유치원 계정 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3a8987d9",
+        "kindergartenId": "1ecec08c-f69c-b044-e053-0a32095ab044",
+        "kindergartenName": "유동유치원",
+        "title": "청주 유동유치원 한마음 운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DPzx6mhE5vl/",
+        "source": "other",
+        "sourceName": "Instagram · 유동유치원",
+        "snippet": "유동유치원 계정 게시물 검색 결과에서 청주, 청주유동유치원, 봉명동유치원 단서와 한마음 운동회 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3a8987d9",
+        "structuredFields": {
+          "kindergartenName": "유동유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPzx6mhE5vl%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "청주, 봉명동, 유동유치원 단서와 로컬 청주 유동유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPzx6mhE5vl/",
+          "normalizedUrl": "www.instagram.com/reel/dpzx6mhe5vl",
+          "normalizedText": "청주 유동유치원 한마음 운동회 instagram reel 유동유치원 계정 게시물 검색 결과에서 청주, 청주유동유치원, 봉명동유치원 단서와 한마음 운동회 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "3a8987d9",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "유동유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 직지대로581번길 33-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPzx6mhE5vl%22%20%22%EC%9C%A0%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "청주, 봉명동, 유동유치원 단서와 로컬 청주 유동유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-03b5-b044-e053-0a32095ab044": [
@@ -3917,6 +4179,108 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d5aff9df",
+        "kindergartenId": "1ecec08d-06ae-b044-e053-0a32095ab044",
+        "title": "충주 초록유치원 떡메치기 Instagram Post",
+        "url": "https://www.instagram.com/p/DAVbOGyPNRF/",
+        "source": "other",
+        "sourceName": "Instagram · 충주초록유치원",
+        "snippet": "충주초록유치원 해시태그와 추석을 맞아 떡메치기를 직접 경험한 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "tteokme"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "78bb8320",
+        "structuredFields": {
+          "kindergartenName": "초록유치원",
+          "kindergartenAddress": "충청북도 충주시 연수로 7-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAVbOGyPNRF%22+%22%EC%B6%A9%EC%A3%BC%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%96%A1%EB%A9%94%EC%B9%98%EA%B8%B0",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초록유치원 동명이 있으나 게시물 검색 결과에 충주초록유치원 단서가 확인되어 충주 로컬 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAVbOGyPNRF/",
+          "normalizedUrl": "www.instagram.com/p/davbogypnrf",
+          "normalizedText": "충주 초록유치원 떡메치기 instagram post 충주초록유치원 해시태그와 추석을 맞아 떡메치기를 직접 경험한 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "78bb8320",
+          "extractedAt": "2026-07-02T17:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초록유치원",
+            "kindergartenAddress": "충청북도 충주시 연수로 7-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAVbOGyPNRF%22+%22%EC%B6%A9%EC%A3%BC%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%96%A1%EB%A9%94%EC%B9%98%EA%B8%B0",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초록유치원 동명이 있으나 게시물 검색 결과에 충주초록유치원 단서가 확인되어 충주 로컬 기관으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ed46eccc",
+        "kindergartenId": "1ecec08d-06ae-b044-e053-0a32095ab044",
+        "title": "충주 초록유치원 스승의날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJqv9EHzXYc/",
+        "source": "other",
+        "sourceName": "Instagram · 충주 초록유치원",
+        "snippet": "초록유치원 계정에서 스승의 날 감사와 사랑 인사 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "teachers-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2cdd2b67",
+        "structuredFields": {
+          "kindergartenName": "초록유치원",
+          "kindergartenAddress": "충청북도 충주시 연수로 7-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJqv9EHzXYc%22+%22chorok_kindergarten%22+%22%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8A%A4%EC%8A%B9%EC%9D%98+%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초록유치원 동명이 있으나 chorok_kindergarten 및 충주 초록유치원 단서가 기존 충주 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJqv9EHzXYc/",
+          "normalizedUrl": "www.instagram.com/reel/djqv9ehzxyc",
+          "normalizedText": "충주 초록유치원 스승의날 instagram reel 초록유치원 계정에서 스승의 날 감사와 사랑 인사 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "2cdd2b67",
+          "extractedAt": "2026-07-02T19:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초록유치원",
+            "kindergartenAddress": "충청북도 충주시 연수로 7-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJqv9EHzXYc%22+%22chorok_kindergarten%22+%22%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8A%A4%EC%8A%B9%EC%9D%98+%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초록유치원 동명이 있으나 chorok_kindergarten 및 충주 초록유치원 단서가 기존 충주 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0cc6-b044-e053-0a32095ab044": [
@@ -4249,8 +4613,262 @@
           ]
         },
         "evidenceChecksum": "2b1f21f6"
+      },
+      {
+        "id": "rev-f493060f",
+        "kindergartenId": "aa2dd695-8eaa-418b-a9bc-172555393fae",
+        "title": "청주 동명푸른솔유치원 비눗방울 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/CHzK6v2g3Gd/",
+        "source": "other",
+        "sourceName": "Instagram · 동명푸른솔유치원",
+        "snippet": "동명푸른솔유치원 계정에서 비눗방울 놀이와 생태놀이, 청주유치원 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T08:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cfad3cb1",
+        "structuredFields": {
+          "kindergartenName": "동명푸른솔유치원",
+          "kindergartenAddress": "충청북도 청주시 상당구 목련로 106-70",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CHzK6v2g3Gd%22+%22%EB%8F%99%EB%AA%85%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동명푸른솔유치원은 로컬 원장부에서 유일한 이름이라 공식 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CHzK6v2g3Gd/",
+          "normalizedUrl": "www.instagram.com/p/chzk6v2g3gd",
+          "normalizedText": "청주 동명푸른솔유치원 비눗방울 생태놀이 instagram post 동명푸른솔유치원 계정에서 비눗방울 놀이와 생태놀이, 청주유치원 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "cfad3cb1",
+          "extractedAt": "2026-07-02T08:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동명푸른솔유치원",
+            "kindergartenAddress": "충청북도 청주시 상당구 목련로 106-70",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CHzK6v2g3Gd%22+%22%EB%8F%99%EB%AA%85%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동명푸른솔유치원은 로컬 원장부에서 유일한 이름이라 공식 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T08:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fb89-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-fc72cf22",
+        "kindergartenId": "1ecec08c-fb89-b044-e053-0a32095ab044",
+        "kindergartenName": "장엄유치원",
+        "title": "제천 장엄유치원 김장담그기 깍두기 Instagram Post",
+        "url": "https://www.instagram.com/p/ClNrudfvjmY/",
+        "source": "other",
+        "sourceName": "Instagram · 장엄유치원",
+        "snippet": "장엄유치원 계정의 김장담그기 게시물 검색 결과에서 아이들이 직접 키운 무로 깍두기를 만든 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making",
+          "cooking-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "51f973e3",
+        "structuredFields": {
+          "kindergartenName": "장엄유치원",
+          "kindergartenAddress": "충청북도 제천시 의림대로25길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22ClNrudfvjmY%22%20%22%EC%9E%A5%EC%97%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B9%8D%EB%91%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "장엄유치원은 로컬 원장부 단일 매칭이며 기관명과 깍두기 김장 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/ClNrudfvjmY/",
+          "normalizedUrl": "www.instagram.com/p/clnrudfvjmy",
+          "normalizedText": "제천 장엄유치원 김장담그기 깍두기 instagram post 장엄유치원 계정의 김장담그기 게시물 검색 결과에서 아이들이 직접 키운 무로 깍두기를 만든 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "51f973e3",
+          "extractedAt": "2026-07-02T20:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "장엄유치원",
+            "kindergartenAddress": "충청북도 제천시 의림대로25길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22ClNrudfvjmY%22%20%22%EC%9E%A5%EC%97%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B9%8D%EB%91%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "장엄유치원은 로컬 원장부 단일 매칭이며 기관명과 깍두기 김장 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "2029d18e-acd8-4ea6-87ee-1d83813b981f": [
+      {
+        "id": "rev-d805ff9a",
+        "kindergartenId": "2029d18e-acd8-4ea6-87ee-1d83813b981f",
+        "kindergartenName": "율봉유치원",
+        "title": "청주 율봉유치원 알뜰시장 운영 X Post",
+        "url": "https://x.com/EduYonhap/status/1857686172354621742",
+        "source": "other",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "교육연합신문 X 검색 결과에서 청주 율봉유치원이 알뜰시장을 운영하며 이웃사랑을 실천한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "flea-market",
+          "community-sharing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d805ff9a",
+        "structuredFields": {
+          "kindergartenName": "율봉유치원",
+          "kindergartenAddress": "충청북도 청주시 청원구 율봉로285번길 15",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221857686172354621742%22%20%22%EC%9C%A8%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%8C%EB%9C%B0%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "청주 율봉유치원 명시와 로컬 청주 원장부의 단일 기관명을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1857686172354621742",
+          "normalizedUrl": "x.com/eduyonhap/status/1857686172354621742",
+          "normalizedText": "청주 율봉유치원 알뜰시장 운영 x post 교육연합신문 x 검색 결과에서 청주 율봉유치원이 알뜰시장을 운영하며 이웃사랑을 실천한 단서가 확인된다.",
+          "htmlSnapshotHash": "d805ff9a",
+          "extractedAt": "2026-07-02T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "율봉유치원",
+            "kindergartenAddress": "충청북도 청주시 청원구 율봉로285번길 15",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221857686172354621742%22%20%22%EC%9C%A8%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%8C%EB%9C%B0%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "청주 율봉유치원 명시와 로컬 청주 원장부의 단일 기관명을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-03b6-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-c1abc2df",
+        "kindergartenId": "1ecec08d-03b6-b044-e053-0a32095ab044",
+        "kindergartenName": "즐거운숲유치원",
+        "title": "청주 즐거운숲유치원 동화체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DBxzUwPveXN/",
+        "source": "other",
+        "sourceName": "Instagram · 즐거운숲유치원",
+        "snippet": "즐거운숲유치원 계정 게시물 검색 결과에서 동화체험, 청주시유치원, 분평동유치원, 서원구유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "story-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:51.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c1abc2df",
+        "structuredFields": {
+          "kindergartenName": "즐거운숲유치원",
+          "kindergartenAddress": "충청북도 청주시 서원구 안뜸로47번길 26",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBxzUwPveXN%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%99%ED%99%94%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "청주시, 분평동, 서원구 단서와 로컬 즐거운숲유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBxzUwPveXN/",
+          "normalizedUrl": "www.instagram.com/p/dbxzuwpvexn",
+          "normalizedText": "청주 즐거운숲유치원 동화체험 instagram post 즐거운숲유치원 계정 게시물 검색 결과에서 동화체험, 청주시유치원, 분평동유치원, 서원구유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "c1abc2df",
+          "extractedAt": "2026-07-02T23:59:51.000Z",
+          "structuredFields": {
+            "kindergartenName": "즐거운숲유치원",
+            "kindergartenAddress": "충청북도 청주시 서원구 안뜸로47번길 26",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBxzUwPveXN%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%99%ED%99%94%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "청주시, 분평동, 서원구 단서와 로컬 즐거운숲유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:51.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-edd8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave668-275c79b0",
+        "kindergartenId": "1ecec08c-edd8-b044-e053-0a32095ab044",
+        "title": "보광초등학교병설유치원 과일타르트 요리체험 기록",
+        "url": "https://www.instagram.com/p/DZy9UygGLT0/",
+        "source": "other",
+        "sourceName": "Instagram · 보광초등학교병설유치원",
+        "snippet": "괴산 보광초등학교병설유치원 아이들이 과일타르트를 만들어 본 공개 게시물입니다.",
+        "summary": "과일타르트 만들기 요리체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "fruit-tart"
+        ],
+        "date": "2026-06-19",
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-275c79b0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZy9UygGLT0/",
+          "normalizedUrl": "instagram.com/p/dzy9uygglt0",
+          "normalizedText": "괴산 보광초등학교병설유치원 과일타르트 만들기 요리체험",
+          "htmlSnapshotHash": "sns-wave668-275c79b0",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZy9UygGLT0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T18:25:00.000Z"
 }

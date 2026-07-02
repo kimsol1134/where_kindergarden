@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 28,
+  "version": "2026-07-03",
+  "totalCount": 35,
   "kindergartenCount": 16,
   "reviews": {
     "eb9b3ba7-83e9-4eb1-b025-502b89668be8": [
@@ -27,6 +27,58 @@
         "date": "2025-06-27",
         "collectedAt": "2026-02-18T06:13:58.339Z",
         "relevanceScore": 1
+      },
+      {
+        "id": "rev-9b26736c",
+        "kindergartenId": "eb9b3ba7-83e9-4eb1-b025-502b89668be8",
+        "title": "동패유치원 학부모 공개수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DMEorFHhIib/",
+        "source": "other",
+        "sourceName": "Instagram · 동패유치원",
+        "snippet": "검색 결과에서 동패유치원, 국공립유치원, 공립단설유치원, 학부모 공개수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9b26736c",
+        "structuredFields": {
+          "kindergartenName": "동패유치원",
+          "kindergartenAddress": "경기도 파주시 교하로 272",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMEorFHhIib%22%20%22%EB%8F%99%ED%8C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동패유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 공개수업 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMEorFHhIib/",
+          "normalizedUrl": "instagram.com/reel/dmeorfhhiib",
+          "normalizedText": "동패유치원 학부모 공개수업 instagram reel 검색 결과에서 동패유치원 국공립유치원 공립단설유치원 학부모 공개수업 단서가 확인된다.",
+          "htmlSnapshotHash": "9b26736c",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동패유치원",
+            "kindergartenAddress": "경기도 파주시 교하로 272",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMEorFHhIib%22%20%22%EB%8F%99%ED%8C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동패유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 공개수업 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "bedc871d-4b30-4b24-bf7a-a38077eb1ea8": [
@@ -827,6 +879,298 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-27cc4413",
+        "kindergartenId": "1ecec08d-02ce-b044-e053-0a32095ab044",
+        "kindergartenName": "금릉초등학교병설유치원",
+        "title": "파주 금릉초등학교병설유치원 화요체험 마술공연 Instagram Post",
+        "url": "https://www.instagram.com/p/CzVOoWRSwBp/",
+        "source": "other",
+        "sourceName": "Instagram · 금릉초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 금릉초등학교병설유치원의 화요체험의날 퍼포먼스쇼와 마술공연 관람 문맥이 확인되는 게시물.",
+        "date": "2023-11-07",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "금릉초등학교병설유치원",
+          "kindergartenAddress": "경기도 파주시 후곡로 56",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CzVOoWRSwBp%22+%22%EA%B8%88%EB%A6%89%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CzVOoWRSwBp/",
+          "regionEvidence": [
+            "금릉초등학교병설유치원",
+            "파주",
+            "화요체험의날",
+            "마술공연"
+          ]
+        },
+        "evidenceChecksum": "002e1aea",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CzVOoWRSwBp/",
+          "normalizedUrl": "www.instagram.com/p/czvoowrswbp",
+          "normalizedText": "파주 금릉초등학교병설유치원 화요체험 마술공연 instagram post instagram 검색 결과에서 금릉초등학교병설유치원의 화요체험의날 퍼포먼스쇼와 마술공연 관람 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "8fa04943",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금릉초등학교병설유치원",
+            "kindergartenAddress": "경기도 파주시 후곡로 56",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CzVOoWRSwBp%22+%22%EA%B8%88%EB%A6%89%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/CzVOoWRSwBp/",
+            "regionEvidence": [
+              "금릉초등학교병설유치원",
+              "파주",
+              "화요체험의날",
+              "마술공연"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-b62be892",
+        "kindergartenId": "1ecec08d-02ce-b044-e053-0a32095ab044",
+        "kindergartenName": "금릉초등학교병설유치원",
+        "title": "파주 금릉초등학교병설유치원 비눗방울 공연 Instagram Post",
+        "url": "https://www.instagram.com/p/CuWTLbZyXJ8/",
+        "source": "other",
+        "sourceName": "Instagram · 금릉초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 geum_neung 계정의 화요체험의날 비눗방울 공연과 파주·금촌·금릉유치원 문맥이 확인되는 게시물.",
+        "date": "2023-07-06",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "bubble-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "금릉초등학교병설유치원",
+          "kindergartenAddress": "경기도 파주시 후곡로 56",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CuWTLbZyXJ8%22+%22%ED%99%94%EC%9A%94%EC%B2%B4%ED%97%98%EC%9D%98%EB%82%A0%22+%22%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CuWTLbZyXJ8/",
+          "regionEvidence": [
+            "geum_neung",
+            "파주유치원",
+            "금촌유치원",
+            "금릉유치원"
+          ]
+        },
+        "evidenceChecksum": "7184c636",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CuWTLbZyXJ8/",
+          "normalizedUrl": "www.instagram.com/p/cuwtlbzyxj8",
+          "normalizedText": "파주 금릉초등학교병설유치원 비눗방울 공연 instagram post instagram 검색 결과에서 geum_neung 계정의 화요체험의날 비눗방울 공연과 파주·금촌·금릉유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2bb7ba06",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금릉초등학교병설유치원",
+            "kindergartenAddress": "경기도 파주시 후곡로 56",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CuWTLbZyXJ8%22+%22%ED%99%94%EC%9A%94%EC%B2%B4%ED%97%98%EC%9D%98%EB%82%A0%22+%22%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/CuWTLbZyXJ8/",
+            "regionEvidence": [
+              "geum_neung",
+              "파주유치원",
+              "금촌유치원",
+              "금릉유치원"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-af1355e5",
+        "kindergartenId": "1ecec08d-02ce-b044-e053-0a32095ab044",
+        "kindergartenName": "금릉초등학교병설유치원",
+        "title": "파주 금릉초등학교병설유치원 샌드아트 공연 Instagram Post",
+        "url": "https://www.instagram.com/p/CqU2rdySXEm/",
+        "source": "other",
+        "sourceName": "Instagram · 금릉초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 파주·금촌·금릉 병설유치원의 찾아오는 샌드아트 공연 및 체험 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sand-art",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "금릉초등학교병설유치원",
+          "kindergartenAddress": "경기도 파주시 후곡로 56",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CqU2rdySXEm%22+%22%EA%B8%88%EB%A6%89%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22+%22%ED%8C%8C%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CqU2rdySXEm/",
+          "regionEvidence": [
+            "파주",
+            "금촌",
+            "금릉",
+            "샌드아트공연"
+          ]
+        },
+        "evidenceChecksum": "9f24a653",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CqU2rdySXEm/",
+          "normalizedUrl": "instagram.com/shortcode/cqu2rdysxem",
+          "normalizedText": "파주 금릉초등학교병설유치원 샌드아트 공연 instagram post instagram 검색 결과에서 파주·금촌·금릉 병설유치원의 찾아오는 샌드아트 공연 및 체험 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "cf3bf3f1",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금릉초등학교병설유치원",
+            "kindergartenAddress": "경기도 파주시 후곡로 56",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CqU2rdySXEm%22+%22%EA%B8%88%EB%A6%89%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22+%22%ED%8C%8C%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/CqU2rdySXEm/",
+            "regionEvidence": [
+              "파주",
+              "금촌",
+              "금릉",
+              "샌드아트공연"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-b4f13bcf",
+        "kindergartenId": "1ecec08d-02ce-b044-e053-0a32095ab044",
+        "kindergartenName": "금릉초등학교병설유치원",
+        "title": "파주 금릉초등학교병설유치원 전통놀이체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CxXGW-Yhzzf/",
+        "source": "other",
+        "sourceName": "Instagram · 금릉초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 geum_neung 계정의 옛날민속촌 전통놀이체험, 우리나라 상징과 놀이 활동 문맥이 확인되는 게시물.",
+        "date": "2023-09-18",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "traditional-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "금릉초등학교병설유치원",
+          "kindergartenAddress": "경기도 파주시 후곡로 56",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxXGW-Yhzzf%22+%22%EC%A0%84%ED%86%B5%EB%86%80%EC%9D%B4%EC%B2%B4%ED%97%98%22+%22%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CxXGW-Yhzzf/",
+          "regionEvidence": [
+            "geum_neung",
+            "전통놀이체험",
+            "우리나라",
+            "금릉유치원"
+          ]
+        },
+        "evidenceChecksum": "738ed467",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxXGW-Yhzzf/",
+          "normalizedUrl": "instagram.com/shortcode/cxxgw-yhzzf",
+          "normalizedText": "파주 금릉초등학교병설유치원 전통놀이체험 instagram post instagram 검색 결과에서 geum_neung 계정의 옛날민속촌 전통놀이체험, 우리나라 상징과 놀이 활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "fd50669e",
+          "extractedAt": "2026-07-02T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금릉초등학교병설유치원",
+            "kindergartenAddress": "경기도 파주시 후곡로 56",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxXGW-Yhzzf%22+%22%EC%A0%84%ED%86%B5%EB%86%80%EC%9D%B4%EC%B2%B4%ED%97%98%22+%22%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/CxXGW-Yhzzf/",
+            "regionEvidence": [
+              "geum_neung",
+              "전통놀이체험",
+              "우리나라",
+              "금릉유치원"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-sns-wave668-1419e449",
+        "kindergartenId": "1ecec08d-02ce-b044-e053-0a32095ab044",
+        "title": "금릉초등학교병설유치원 과일타르트 요리활동 기록",
+        "url": "https://www.instagram.com/p/DYyfKiqkZET/",
+        "source": "other",
+        "sourceName": "Instagram · 금릉초등학교병설유치원",
+        "snippet": "금릉초등학교병설유치원이 찾아오는 체험활동으로 과일타르트 요리활동을 소개한 공개 게시물입니다.",
+        "summary": "과일타르트 만들기 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "fruit-tart"
+        ],
+        "date": "2026-05-25",
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-1419e449",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYyfKiqkZET/",
+          "normalizedUrl": "instagram.com/p/dyyfkiqkzet",
+          "normalizedText": "금릉초등학교병설유치원 찾아오는체험활동 요리활동 과일타르트",
+          "htmlSnapshotHash": "sns-wave668-1419e449",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYyfKiqkZET/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
       }
     ],
     "1ecec08c-edc2-b044-e053-0a32095ab044": [
@@ -989,6 +1333,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:52.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bb214f13",
+        "kindergartenId": "1ecec08c-fcf1-b044-e053-0a32095ab044",
+        "title": "문산중앙유치원 숲놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DII7KvBJwfv/",
+        "source": "other",
+        "sourceName": "Instagram · 문산중앙유치원",
+        "snippet": "검색 결과에서 문산중앙유치원의 늘봄&가람반 숲놀이 활동과 문산중앙유치원 계정 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "kindergarten-life"
+        ],
+        "date": "2026-03-26",
+        "collectedAt": "2026-07-03T09:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bb214f13",
+        "structuredFields": {
+          "kindergartenName": "문산중앙유치원",
+          "kindergartenAddress": "경기도 파주시 장승배기로 54-22",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DII7KvBJwfv%22%20%22%EB%AC%B8%EC%82%B0%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "문산중앙유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DII7KvBJwfv/",
+          "normalizedUrl": "instagram.com/reel/dii7kvbjwfv",
+          "normalizedText": "문산중앙유치원 숲놀이 instagram reel 검색 결과에서 문산중앙유치원의 늘봄&가람반 숲놀이 활동과 문산중앙유치원 계정 단서가 확인된다.",
+          "htmlSnapshotHash": "bb214f13",
+          "extractedAt": "2026-07-03T09:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "문산중앙유치원",
+            "kindergartenAddress": "경기도 파주시 장승배기로 54-22",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DII7KvBJwfv%22%20%22%EB%AC%B8%EC%82%B0%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "문산중앙유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

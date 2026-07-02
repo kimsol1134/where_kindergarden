@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 342,
+  "totalCount": 343,
   "kindergartenCount": 74,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -13551,6 +13551,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave668-0dfb3f12",
+        "kindergartenId": "1ecec08c-f232-b044-e053-0a32095ab044",
+        "title": "대전성천초등학교병설유치원 제철 음식 요리활동 기록",
+        "url": "https://www.instagram.com/p/DZ_54c3sUng/",
+        "source": "other",
+        "sourceName": "Instagram · 대전성천초등학교병설유치원",
+        "snippet": "대전성천초등학교병설유치원이 놀이주제와 제철 음식에 맞춘 요리활동을 소개한 공개 게시물입니다.",
+        "summary": "제철 음식과 놀이주제를 연결한 요리활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "seasonal-food"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-0dfb3f12",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_54c3sUng/",
+          "normalizedUrl": "instagram.com/p/dz_54c3sung",
+          "normalizedText": "대전성천초등학교병설유치원 제철 음식 요리활동 딸기산도",
+          "htmlSnapshotHash": "sns-wave668-0dfb3f12",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_54c3sUng/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
       }
     ],
     "1ecec08c-ffb8-b044-e053-0a32095ab044": [
@@ -16033,5 +16069,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T18:25:00.000Z"
 }

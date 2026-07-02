@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 40,
-  "kindergartenCount": 8,
+  "version": "2026-07-03",
+  "totalCount": 43,
+  "kindergartenCount": 11,
   "reviews": {
     "1ecec08c-eefa-b044-e053-0a32095ab044": [
       {
@@ -1898,7 +1898,152 @@
         },
         "evidenceChecksum": "cd1ed921"
       }
+    ],
+    "1ecec08d-0087-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f922d41a",
+        "kindergartenId": "1ecec08d-0087-b044-e053-0a32095ab044",
+        "title": "황남초등학교병설유치원 그림책 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+        "source": "other",
+        "sourceName": "Instagram · 책방그린",
+        "snippet": "검색 결과에서 황남초병설유치원, 곰선생님, 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f922d41a",
+        "structuredFields": {
+          "kindergartenName": "황남초등학교병설유치원",
+          "kindergartenAddress": "경상북도 경주시 광중2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+          "normalizedUrl": "instagram.com/reel/dzeivjzzjym",
+          "normalizedText": "황남초등학교병설유치원 그림책 활동 instagram reel 검색 결과에서 황남초병설유치원 곰선생님 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f922d41a",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "황남초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 광중2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-001f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a86a74ab",
+        "kindergartenId": "1ecec08d-001f-b044-e053-0a32095ab044",
+        "title": "금장초등학교병설유치원 그림책 오감놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DTdO1cikvGa/",
+        "source": "other",
+        "sourceName": "Instagram · 책방그린",
+        "snippet": "검색 결과에서 금장초등학교 병설유치원, 팥죽할멈과 호랑이, 그림책 독서 및 오감놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": "2026-01-13",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a86a74ab",
+        "structuredFields": {
+          "kindergartenName": "금장초등학교병설유치원",
+          "kindergartenAddress": "경상북도 경주시 등나무길 18-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTdO1cikvGa%22%20%22%EA%B8%88%EC%9E%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금장초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTdO1cikvGa/",
+          "normalizedUrl": "instagram.com/reel/dtdo1cikvga",
+          "normalizedText": "금장초등학교병설유치원 그림책 오감놀이 instagram reel 검색 결과에서 금장초등학교 병설유치원 팥죽할멈과 호랑이 그림책 독서 및 오감놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "a86a74ab",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금장초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 등나무길 18-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTdO1cikvGa%22%20%22%EA%B8%88%EC%9E%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금장초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0490-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave668-9e2070aa",
+        "kindergartenId": "1ecec08d-0490-b044-e053-0a32095ab044",
+        "title": "양북초등학교병설유치원 공룡 도넛 요리체험 기록",
+        "url": "https://www.instagram.com/p/DXgFswxmcPF/",
+        "source": "other",
+        "sourceName": "Instagram · 양북초등학교병설유치원",
+        "snippet": "양북초등학교병설유치원이 공룡 도넛 만들기와 찾아오는 요리체험을 소개한 공개 게시물입니다.",
+        "summary": "도넛 만들기 요리체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking",
+          "food-education",
+          "donut-making"
+        ],
+        "date": "2026-04-23",
+        "collectedAt": "2026-07-03T18:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave668-9e2070aa",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXgFswxmcPF/",
+          "normalizedUrl": "instagram.com/p/dxgfswxmcpf",
+          "normalizedText": "양북초등학교병설유치원 공룡 도넛 만들기 찾아오는 요리 체험",
+          "htmlSnapshotHash": "sns-wave668-9e2070aa",
+          "extractedAt": "2026-07-03T18:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXgFswxmcPF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave668"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
