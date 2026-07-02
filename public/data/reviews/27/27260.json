@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 112,
+  "totalCount": 113,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0def-b044-e053-0a32095ab044": [
@@ -3770,6 +3770,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave708-2c57165c",
+        "kindergartenId": "1ecec08c-f284-b044-e053-0a32095ab044",
+        "title": "대구 동영유치원 지속가능 푸드아트 기록",
+        "url": "https://www.instagram.com/p/DIfz7WmSX6V/",
+        "source": "other",
+        "sourceName": "Instagram · 동영유치원",
+        "snippet": "동영유치원이 직접 기른 식물을 활용해 지속가능발전교육 관점의 푸드아트 활동을 소개한 게시물입니다.",
+        "summary": "유아들이 식물 재배와 식재료 표현을 연결해 자연과 음식의 관계를 배운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-art",
+          "sustainability",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave708-2c57165c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIfz7WmSX6V/",
+          "normalizedUrl": "instagram.com/p/difz7wmsx6v",
+          "normalizedText": "동영유치원 푸드아트 자연을 요리하다 지속가능발전교육 식물 재배",
+          "htmlSnapshotHash": "sns-wave708-2c57165c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DIfz7WmSX6V/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave708"
       }
     ],
     "1ecec08c-fcd2-b044-e053-0a32095ab044": [
@@ -4984,5 +5021,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

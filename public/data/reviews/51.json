@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 166,
+  "totalCount": 167,
   "kindergartenCount": 46,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -1122,6 +1122,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.996Z",
         "approvedBy": "codex-manual-sns-wave699"
+      },
+      {
+        "id": "rev-sns-wave708-70ce8237",
+        "kindergartenId": "496ad00b-0b28-4a27-bf54-8e81c76c8ea4",
+        "title": "원주 프라임상상유치원 오렌지청 요리활동 기록",
+        "url": "https://www.instagram.com/reel/DYkZkRlTvyh/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임상상유치원",
+        "snippet": "프라임상상유치원이 아이들과 오렌지청을 만들며 유아 요리활동을 진행한 릴스입니다.",
+        "summary": "유아들이 과일을 관찰하고 손으로 만들어 보며 오감과 생활 경험을 넓힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "sensory-play",
+          "food-education",
+          "wonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave708-70ce8237",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYkZkRlTvyh/",
+          "normalizedUrl": "instagram.com/reel/dykzkrltvyh",
+          "normalizedText": "프라임상상유치원 오렌지청 유아요리활동 아이성장기록 체험활동",
+          "htmlSnapshotHash": "sns-wave708-70ce8237",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYkZkRlTvyh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave708"
       }
     ],
     "44618f52-e0f9-4903-89a3-bf21071678e7": [

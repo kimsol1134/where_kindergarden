@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 22,
-  "kindergartenCount": 9,
+  "totalCount": 23,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0224-b044-e053-0a32095ab044": [
       {
@@ -902,6 +902,46 @@
         "approvedAt": "2026-07-02T15:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "a5357ad5-3b57-48d9-82fc-444f70bb2976": [
+      {
+        "id": "rev-sns-wave708-a21509de",
+        "kindergartenId": "a5357ad5-3b57-48d9-82fc-444f70bb2976",
+        "title": "양산 글로벌유치원 푸드아트 활동 기록",
+        "url": "https://www.instagram.com/p/DXwYL1Bj6Gi/",
+        "source": "other",
+        "sourceName": "Instagram · 글로벌유치원",
+        "snippet": "양산글로벌유치원이 동화책을 읽고 아이들과 4월 푸드아트 활동을 진행한 게시물입니다.",
+        "summary": "유아들이 이야기와 식재료를 연결해 표현해 보는 푸드아트 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-art",
+          "sensory-play",
+          "yangsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave708-a21509de",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXwYL1Bj6Gi/",
+          "normalizedUrl": "instagram.com/p/dxwyl1bj6gi",
+          "normalizedText": "양산글로벌유치원 글로벌유치원 푸드이음 푸드아트 동화책 식재료 표현",
+          "htmlSnapshotHash": "sns-wave708-a21509de",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXwYL1Bj6Gi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave708"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

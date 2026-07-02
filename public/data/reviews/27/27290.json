@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 144,
+  "totalCount": 145,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -1452,6 +1452,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T14:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave708-a7d82488",
+        "kindergartenId": "1ecec08c-f16a-b044-e053-0a32095ab044",
+        "title": "대구 키즈존유치원 푸드아트 수업 기록",
+        "url": "https://www.instagram.com/p/CfSuuHkrPEs/",
+        "source": "other",
+        "sourceName": "Instagram · 키즈존유치원",
+        "snippet": "키즈존유치원이 달서구 유치원 문맥에서 푸드아트 수업과 칼라데이 활동을 안내한 게시물입니다.",
+        "summary": "유아들이 색과 식재료를 연결해 감각적으로 표현하는 푸드아트 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-art",
+          "color-day",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave708-a7d82488",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CfSuuHkrPEs/",
+          "normalizedUrl": "instagram.com/p/cfsuuhkrpes",
+          "normalizedText": "키즈존유치원 달서구유치원 푸드아트 수업 칼라데이",
+          "htmlSnapshotHash": "sns-wave708-a7d82488",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/CfSuuHkrPEs/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave708"
       }
     ],
     "1ecec08c-f898-b044-e053-0a32095ab044": [

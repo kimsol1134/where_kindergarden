@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 683,
+  "totalCount": 684,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -25128,6 +25128,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave708-8d675b96",
+        "kindergartenId": "1ecec08d-03f7-b044-e053-0a32095ab044",
+        "title": "서울 아이파크예원유치원 푸드아트 기록",
+        "url": "https://www.instagram.com/reel/DJ1UFpwTy9v/",
+        "source": "other",
+        "sourceName": "Instagram · 아이파크예원유치원",
+        "snippet": "아이파크예원유치원이 푸드아트와 유치원 요리 활동을 소개한 릴스입니다.",
+        "summary": "유아들이 식재료를 활용해 구성하고 표현하는 요리형 미술 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-art",
+          "sensory-play",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave708-8d675b96",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJ1UFpwTy9v/",
+          "normalizedUrl": "instagram.com/reel/dj1ufpwty9v",
+          "normalizedText": "아이파크예원유치원 푸드아트 유치원 요리 식재료 표현",
+          "htmlSnapshotHash": "sns-wave708-8d675b96",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DJ1UFpwTy9v/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave708"
       }
     ],
     "1ecec08c-f447-b044-e053-0a32095ab044": [
