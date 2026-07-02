@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 126,
+  "totalCount": 127,
   "kindergartenCount": 43,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -1029,6 +1029,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave714-b0d05996",
+        "kindergartenId": "1ecec08c-f4a1-b044-e053-0a32095ab044",
+        "title": "울산 금비유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DYi7wcRxj6V/",
+        "source": "other",
+        "sourceName": "Instagram · 금비유치원",
+        "snippet": "금비유치원이 실제 상황처럼 불이 났을 때의 행동과 운동장 대피 과정을 연습한 릴스입니다.",
+        "summary": "유아들이 화재 상황 대피 순서를 몸으로 익힌 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-b0d05996",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYi7wcRxj6V/",
+          "normalizedUrl": "instagram.com/reel/dyi7wcrxj6v",
+          "normalizedText": "금비유치원 소방대피훈련 실제 상황 불이야 코와 입을 막고 운동장 대피",
+          "htmlSnapshotHash": "sns-wave714-b0d05996",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYi7wcRxj6V/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08d-0212-b044-e053-0a32095ab044": [
@@ -5907,6 +5944,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

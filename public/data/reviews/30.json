@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 366,
+  "totalCount": 367,
   "kindergartenCount": 76,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -5687,6 +5687,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.500Z",
         "approvedBy": "codex-manual-sns-wave691"
+      },
+      {
+        "id": "rev-sns-wave714-8ba0c1fd",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DTrUDa_lxhs/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원이 안전은 연습에서 시작된다는 메시지와 함께 아이들의 화재 대피 훈련을 소개한 릴스입니다.",
+        "summary": "유아들이 반복 훈련으로 화재 상황 대피 요령을 익힌 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-8ba0c1fd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTrUDa_lxhs/",
+          "normalizedUrl": "instagram.com/reel/dtruda_lxhs",
+          "normalizedText": "꿈내리유치원 안전은 연습에서 시작 화재 대피 훈련 어린이",
+          "htmlSnapshotHash": "sns-wave714-8ba0c1fd",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTrUDa_lxhs/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08d-0c2f-b044-e053-0a32095ab044": [
@@ -16903,6 +16940,5 @@
         "approvedBy": "codex-manual-sns-wave712"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

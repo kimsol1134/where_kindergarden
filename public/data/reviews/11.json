@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 686,
+  "totalCount": 687,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -8149,6 +8149,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave714-6233f84b",
+        "kindergartenId": "1ecec08c-ef9c-b044-e053-0a32095ab044",
+        "title": "서울 강서 선미유치원 지진대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DZ87iJQSlyG/",
+        "source": "other",
+        "sourceName": "Instagram · 선미유치원",
+        "snippet": "서울 강서구 선미유치원이 학기별 재난대피 활동으로 지진대피훈련을 소개한 릴스입니다.",
+        "summary": "유아들이 지진 발생 상황을 가정해 안전한 대피 방법을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "earthquake-drill",
+          "evacuation-drill",
+          "gangseo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-6233f84b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ87iJQSlyG/",
+          "normalizedUrl": "instagram.com/reel/dz87ijqslyg",
+          "normalizedText": "선미유치원 서울 강서구 지진대피훈련 학기별 재난대피 활동",
+          "htmlSnapshotHash": "sns-wave714-6233f84b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ87iJQSlyG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08d-08be-b044-e053-0a32095ab044": [
@@ -25779,6 +25816,5 @@
         "approvedBy": "codex-manual-sns-wave689"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

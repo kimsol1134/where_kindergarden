@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 203,
+  "totalCount": 204,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -6354,6 +6354,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave714-9e094df1",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/p/DWgb40vgTVL/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "아산 일심유치원이 화재대피훈련을 통해 아이들이 침착하게 대피하는 방법을 익힌 게시물입니다.",
+        "summary": "유아들이 화재 상황에서 안전하게 이동하는 절차를 연습한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-9e094df1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWgb40vgTVL/",
+          "normalizedUrl": "instagram.com/p/dwgb40vgtvl",
+          "normalizedText": "일심유치원 아산유치원 화재대피훈련 실제상황 침착하게 대피 안전교육",
+          "htmlSnapshotHash": "sns-wave714-9e094df1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWgb40vgTVL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "dabf8c6f-c731-4460-a7a1-f561c52925b5": [
@@ -9207,6 +9244,5 @@
         "approvedBy": "codex-manual-sns-wave667"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 352,
+  "totalCount": 353,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -7384,6 +7384,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave703"
+      },
+      {
+        "id": "rev-sns-wave714-c16d621a",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 4월 지진대피훈련 기록",
+        "url": "https://www.instagram.com/p/DH_TyYcSsEK/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "경산유치원이 2025학년도 4월 지진대피훈련을 실시하고 재난재해 대비 안전교육 계획을 소개한 게시물입니다.",
+        "summary": "유아들이 지진 상황을 가정해 대피 방법을 익힌 재난안전 교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "earthquake-drill",
+          "evacuation-drill",
+          "gyeongsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-c16d621a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DH_TyYcSsEK/",
+          "normalizedUrl": "instagram.com/p/dh_tyycssek",
+          "normalizedText": "경산유치원 2025학년도 4월 지진대피훈련 재난재해 안전교육 대피훈련",
+          "htmlSnapshotHash": "sns-wave714-c16d621a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DH_TyYcSsEK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08c-f71c-b044-e053-0a32095ab044": [
@@ -16115,6 +16152,5 @@
         "approvedBy": "codex-manual-sns-wave670"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 10,
+  "totalCount": 11,
   "kindergartenCount": 8,
   "reviews": {
     "e0593e15-f26f-4162-9fde-82f2dbf27242": [
@@ -496,6 +496,57 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-c7a1c4c0",
+        "kindergartenId": "8d35b04e-be4e-4317-8011-188148d417cb",
+        "title": "세종 두루유치원 놀이체험주간 흙놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C8mL0n6SLpB/",
+        "source": "other",
+        "sourceName": "Instagram · 두루유치원",
+        "snippet": "두루유치원 계정에서 놀이체험주간, 흙놀이, 생태교육, 세종시 유아교육 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "soil-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a6db4364",
+        "structuredFields": {
+          "kindergartenName": "두루유치원",
+          "kindergartenAddress": "세종특별자치시 만남로 223",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8mL0n6SLpB%22+%22%EB%91%90%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%9D%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "두루유치원은 로컬 원장부에서 유일한 이름이고 세종시 지역 단서가 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C8mL0n6SLpB/",
+          "normalizedUrl": "www.instagram.com/reel/c8ml0n6slpb",
+          "normalizedText": "세종 두루유치원 놀이체험주간 흙놀이 instagram reel 두루유치원 계정에서 놀이체험주간, 흙놀이, 생태교육, 세종시 유아교육 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "a6db4364",
+          "extractedAt": "2026-07-02T10:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "두루유치원",
+            "kindergartenAddress": "세종특별자치시 만남로 223",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8mL0n6SLpB%22+%22%EB%91%90%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%9D%99%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "두루유치원은 로컬 원장부에서 유일한 이름이고 세종시 지역 단서가 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }
