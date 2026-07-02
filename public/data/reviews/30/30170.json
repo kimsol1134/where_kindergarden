@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 126,
+  "totalCount": 127,
   "kindergartenCount": 30,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
@@ -267,6 +267,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      },
+      {
+        "id": "rev-sns-wave685-0184d33a",
+        "kindergartenId": "1ecec08c-f161-b044-e053-0a32095ab044",
+        "title": "제나킨더유치원 길 표현 조형활동 기록",
+        "url": "https://www.instagram.com/p/DZt3XZJkswh/",
+        "source": "other",
+        "sourceName": "Instagram · 제나킨더유치원",
+        "snippet": "제나킨더유치원이 다양한 재료를 활용해 길을 표현하고 평면에서 입체로 확장하는 조형활동을 소개한 공개 게시물입니다.",
+        "summary": "관찰과 재구성을 통해 표현력과 사고력을 기르는 조형 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "formative-activity",
+          "art-activity",
+          "spatial-expression"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:50.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave685-0184d33a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZt3XZJkswh/",
+          "normalizedUrl": "instagram.com/p/dzt3xzjkswh",
+          "normalizedText": "제나킨더유치원 길 표현 조형활동 평면 입체 관찰 재구성",
+          "htmlSnapshotHash": "sns-wave685-0184d33a",
+          "extractedAt": "2026-07-03T23:59:50.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZt3XZJkswh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:50.000Z",
+        "approvedBy": "codex-manual-sns-wave685"
       }
     ],
     "1ecec08d-06cd-b044-e053-0a32095ab044": [

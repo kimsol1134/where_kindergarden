@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 513,
+  "totalCount": 514,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -22500,8 +22500,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:15:00.000Z",
         "approvedBy": "codex-manual-sns-wave677"
+      },
+      {
+        "id": "rev-sns-wave685-c1ea4eaa",
+        "kindergartenId": "1ecec08c-ee1a-b044-e053-0a32095ab044",
+        "title": "청보리숲유치원 겨울나무 조형활동 기록",
+        "url": "https://www.instagram.com/p/DC82fOlzRnl/",
+        "source": "other",
+        "sourceName": "Instagram · 청보리숲유치원",
+        "snippet": "청보리숲유치원이 겨울나무 조형활동을 하며 아이들이 색과 생각을 조율하고 협업하는 모습을 소개한 공개 게시물입니다.",
+        "summary": "자연 주제 조형활동과 협업 과정을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "formative-activity",
+          "winter-tree",
+          "collaboration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:50.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave685-c1ea4eaa",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DC82fOlzRnl/",
+          "normalizedUrl": "instagram.com/p/dc82folzrnl",
+          "normalizedText": "청보리숲유치원 겨울나무 조형활동 서변동 협업",
+          "htmlSnapshotHash": "sns-wave685-c1ea4eaa",
+          "extractedAt": "2026-07-03T23:59:50.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DC82fOlzRnl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:50.000Z",
+        "approvedBy": "codex-manual-sns-wave685"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:45.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:50.000Z"
 }

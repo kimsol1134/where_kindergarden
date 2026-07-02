@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 329,
+  "totalCount": 330,
   "kindergartenCount": 93,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -292,6 +292,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave685-2796ee3d",
+        "kindergartenId": "1ecec08c-fca9-b044-e053-0a32095ab044",
+        "title": "반도보라유치원 원장선생님 미술 활동 기록",
+        "url": "https://www.instagram.com/reel/DYMCB2PhFua/",
+        "source": "other",
+        "sourceName": "Instagram · 반도보라유치원",
+        "snippet": "반도보라유치원이 원장선생님과 함께한 미술 활동을 소개한 공개 릴스입니다.",
+        "summary": "유치원 내 미술 활동 장면과 교사 참여형 활동 분위기를 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "teacher-led",
+          "class-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:50.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave685-2796ee3d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYMCB2PhFua/",
+          "normalizedUrl": "instagram.com/reel/dymcb2phfua",
+          "normalizedText": "반도보라유치원 원장선생님 미술 활동",
+          "htmlSnapshotHash": "sns-wave685-2796ee3d",
+          "extractedAt": "2026-07-03T23:59:50.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYMCB2PhFua/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:50.000Z",
+        "approvedBy": "codex-manual-sns-wave685"
       }
     ],
     "1ecec08c-faf0-b044-e053-0a32095ab044": [
@@ -15738,5 +15774,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:30.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:50.000Z"
 }
