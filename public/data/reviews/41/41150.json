@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 89,
+  "totalCount": 90,
   "kindergartenCount": 23,
   "reviews": {
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -1325,6 +1325,42 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave694-094846b7",
+        "kindergartenId": "1ecec08d-02b6-b044-e053-0a32095ab044",
+        "title": "의정부 세종유치원 5월 생일 축하 기록",
+        "url": "https://www.instagram.com/p/DZO5nS4H_YS/",
+        "source": "other",
+        "sourceName": "Instagram · 세종유치원",
+        "snippet": "의정부 세종유치원이 5월에 생일을 맞은 친구들을 함께 축하한 공개 게시물입니다.",
+        "summary": "유아들이 친구들의 생일을 함께 기념하며 공동체 안에서 축하와 배려를 경험한 유치원 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "celebration",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-094846b7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZO5nS4H_YS/",
+          "normalizedUrl": "instagram.com/p/dzo5ns4h_ys",
+          "normalizedText": "의정부 세종유치원 5월 생일 축하 세종천사",
+          "htmlSnapshotHash": "sns-wave694-094846b7",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZO5nS4H_YS/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ],
     "1ecec08c-f8c6-b044-e053-0a32095ab044": [

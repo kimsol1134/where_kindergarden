@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 13,
+  "version": "2026-07-03",
+  "totalCount": 14,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-fbb3-b044-e053-0a32095ab044": [
@@ -662,6 +662,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave694-a489a46b",
+        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
+        "title": "칠곡 신비유치원 생일밥상 기록",
+        "url": "https://www.instagram.com/p/DVnQ0Ocktsi/",
+        "source": "other",
+        "sourceName": "Instagram · 신비유치원",
+        "snippet": "신비유치원이 생일을 맞은 유아를 위해 생일밥상을 준비한 모습을 담은 공개 게시물입니다.",
+        "summary": "생일상과 식사 시간을 통해 아이의 특별한 날을 기념하는 유치원 생활 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "meal",
+          "chilgok"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-a489a46b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/",
+          "normalizedUrl": "instagram.com/p/dvnq0ocktsi",
+          "normalizedText": "신비유치원 경북 칠곡 생일밥상 생일 축하",
+          "htmlSnapshotHash": "sns-wave694-a489a46b",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ]
   },

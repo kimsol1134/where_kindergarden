@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 359,
+  "totalCount": 360,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -83,6 +83,42 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave694-6db83d5e",
+        "kindergartenId": "1ecec08d-0915-b044-e053-0a32095ab044",
+        "title": "대전 푸른나라유치원 생일파티 기록",
+        "url": "https://www.instagram.com/reel/C_sYLJqyw3S/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른나라유치원",
+        "snippet": "푸른나라유치원이 생일을 맞은 친구들을 위해 다 함께 노래하고 마음을 나눈 생일파티 공개 릴스입니다.",
+        "summary": "친구들이 함께 축하하며 따뜻한 공동체 분위기 속에서 생일 행사를 경험한 유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "celebration",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-6db83d5e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_sYLJqyw3S/",
+          "normalizedUrl": "instagram.com/reel/c_syljqyw3s",
+          "normalizedText": "푸른나라유치원 대전 생일파티 생일 친구 축하 노래",
+          "htmlSnapshotHash": "sns-wave694-6db83d5e",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C_sYLJqyw3S/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ],
     "1ecec08c-ff4a-b044-e053-0a32095ab044": [
@@ -16647,5 +16683,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.950Z"
 }

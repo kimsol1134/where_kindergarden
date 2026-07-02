@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 29,
+  "totalCount": 30,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08d-0168-b044-e053-0a32095ab044": [
@@ -844,6 +844,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.000Z",
         "approvedBy": "codex-manual-sns-wave690"
+      },
+      {
+        "id": "rev-sns-wave694-2d2763c7",
+        "kindergartenId": "1ecec08c-f4ac-b044-e053-0a32095ab044",
+        "title": "고양 다솜유치원 월별 생일파티 기록",
+        "url": "https://www.instagram.com/p/DViUYO1lJP-/",
+        "source": "other",
+        "sourceName": "Instagram · 다솜유치원",
+        "snippet": "다솜유치원이 매달 생일파티를 통해 아이들의 성장과 특별한 순간을 함께 축하한 공개 게시물입니다.",
+        "summary": "월별 생일행사로 아이들의 성장을 기념하고 친구들과 추억을 만드는 유치원 일상 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "growth",
+          "goyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-2d2763c7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DViUYO1lJP-/",
+          "normalizedUrl": "instagram.com/p/dviuyo1ljp-",
+          "normalizedText": "다솜유치원 일산 고양시 월별 생일파티 성장 특별한 순간",
+          "htmlSnapshotHash": "sns-wave694-2d2763c7",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DViUYO1lJP-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ],
     "1ecec08d-02ee-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 264,
+  "totalCount": 265,
   "kindergartenCount": 97,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -6554,6 +6554,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.970Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave694-8a773b05",
+        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
+        "title": "창원 현대예닮유치원 세계여행 생일파티 기록",
+        "url": "https://www.instagram.com/reel/DWlC8FBCSiF/",
+        "source": "other",
+        "sourceName": "Instagram · 현대예닮유치원",
+        "snippet": "현대예닮유치원이 3월 생일을 맞은 친구들과 세계여행 놀이 주제로 생일파티를 진행한 공개 릴스입니다.",
+        "summary": "생일 축하와 역할놀이를 결합해 아이들이 여행 콘셉트 안에서 특별한 하루를 경험한 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "role-play",
+          "changwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-8a773b05",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/",
+          "normalizedUrl": "instagram.com/reel/dwlc8fbcsif",
+          "normalizedText": "현대예닮유치원 3월 생일파티 세계여행 놀이 일본여행",
+          "htmlSnapshotHash": "sns-wave694-8a773b05",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ],
     "1ecec08c-f992-b044-e053-0a32095ab044": [
@@ -12547,5 +12583,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.800Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.950Z"
 }

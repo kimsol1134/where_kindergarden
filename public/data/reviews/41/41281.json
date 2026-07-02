@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 55,
+  "version": "2026-07-03",
+  "totalCount": 56,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0815-b044-e053-0a32095ab044": [
@@ -1797,6 +1797,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave694-76dafa9d",
+        "kindergartenId": "1ecec08c-fb00-b044-e053-0a32095ab044",
+        "title": "고양 엄지유치원 5월 생일잔치 기록",
+        "url": "https://www.instagram.com/p/DZw0QPZjzaL/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "엄지유치원이 5월에 태어난 친구들을 함께 축하한 생일잔치 공개 게시물입니다.",
+        "summary": "친구들과 선생님이 함께 축하 노래와 박수로 아이들의 특별한 날을 기념한 유치원 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "celebration",
+          "goyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-76dafa9d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZw0QPZjzaL/",
+          "normalizedUrl": "instagram.com/p/dzw0qpzjzal",
+          "normalizedText": "엄지유치원 행신 고양시 5월 생일잔치 친구 축하",
+          "htmlSnapshotHash": "sns-wave694-76dafa9d",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZw0QPZjzaL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
       }
     ],
     "0e7cf345-6e38-47af-98f2-fda6ea276b89": [
