@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 38,
-  "kindergartenCount": 17,
+  "totalCount": 43,
+  "kindergartenCount": 18,
   "reviews": {
     "1ecec08d-06ca-b044-e053-0a32095ab044": [
       {
@@ -1217,6 +1217,80 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave714-9e094df1",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/p/DWgb40vgTVL/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "아산 일심유치원이 화재대피훈련을 통해 아이들이 침착하게 대피하는 방법을 익힌 게시물입니다.",
+        "summary": "유아들이 화재 상황에서 안전하게 이동하는 절차를 연습한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-9e094df1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWgb40vgTVL/",
+          "normalizedUrl": "instagram.com/p/dwgb40vgtvl",
+          "normalizedText": "일심유치원 아산유치원 화재대피훈련 실제상황 침착하게 대피 안전교육",
+          "htmlSnapshotHash": "sns-wave714-9e094df1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWgb40vgTVL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave715-78b53939",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 아나바다 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "일심유치원이 아나바다 시장놀이를 진행하며 아이들이 가게와 장터 역할을 경험한 릴스입니다.",
+        "summary": "유아들이 물건을 사고팔며 경제활동과 나눔을 놀이로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada",
+          "role-play",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-78b53939",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+          "normalizedUrl": "instagram.com/reel/dac_9j5bz2n",
+          "normalizedText": "일심유치원 아산유치원 아나바다 시장놀이 우리동네 장터",
+          "htmlSnapshotHash": "sns-wave715-78b53939",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ],
     "1ecec08c-fb38-b044-e053-0a32095ab044": [
@@ -1685,6 +1759,58 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-2dd38f9d",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "title": "아산 삼성샛별유치원 식단 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWyoo0ACev5/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성샛별유치원",
+        "snippet": "검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "school-meal",
+          "meal-plan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2dd38f9d",
+        "structuredFields": {
+          "kindergartenName": "삼성샛별유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWyoo0ACev5/",
+          "normalizedUrl": "instagram.com/reel/dwyoo0acev5",
+          "normalizedText": "아산 삼성샛별유치원 식단 instagram reel 검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+          "htmlSnapshotHash": "2dd38f9d",
+          "extractedAt": "2026-07-03T11:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성샛별유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f7e8-b044-e053-0a32095ab044": [
@@ -1738,6 +1864,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-212d4572",
+        "kindergartenId": "1ecec08c-f7e8-b044-e053-0a32095ab044",
+        "title": "아산 온양제일유치원 충남과학교육원 체험 기록",
+        "url": "https://www.instagram.com/reel/C_fidsJB6uv/",
+        "source": "other",
+        "sourceName": "Instagram · 온양제일유치원",
+        "snippet": "온양제일유치원 친구들이 충남과학교육원에서 로봇 공연과 유아과학관 체험을 경험한 릴스입니다.",
+        "summary": "유아들이 로봇과 과학 전시를 직접 보며 과학적 호기심을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-education",
+          "field-trip",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-212d4572",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_fidsJB6uv/",
+          "normalizedUrl": "instagram.com/reel/c_fidsjb6uv",
+          "normalizedText": "온양제일유치원 충남과학교육원 유아과학관 로봇댄스",
+          "htmlSnapshotHash": "sns-wave717-212d4572",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C_fidsJB6uv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08c-f569-b044-e053-0a32095ab044": [
@@ -1793,7 +1955,45 @@
         "approvedAt": "2026-07-02T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "a098bfca-72c1-479b-91cb-785727f91fd1": [
+      {
+        "id": "rev-sns-wave717-02a5766d",
+        "kindergartenId": "a098bfca-72c1-479b-91cb-785727f91fd1",
+        "title": "아산 큰곰유치원 충남과학교육원 견학 기록",
+        "url": "https://www.instagram.com/reel/DXY5tLwEa4w/",
+        "source": "other",
+        "sourceName": "Instagram · 큰곰유치원",
+        "snippet": "큰곰유치원 친구들이 충남과학교육원에 다녀오며 연령별 반 친구들과 과학 체험을 한 릴스입니다.",
+        "summary": "유아들이 과학교육원 체험을 통해 탐구 활동과 관찰 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-education",
+          "field-trip",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-02a5766d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXY5tLwEa4w/",
+          "normalizedUrl": "instagram.com/reel/dxy5tlwea4w",
+          "normalizedText": "큰곰유치원 충남과학교육원 3세 4세 5세 과학 체험",
+          "htmlSnapshotHash": "sns-wave717-02a5766d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXY5tLwEa4w/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T01:50:44.500Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

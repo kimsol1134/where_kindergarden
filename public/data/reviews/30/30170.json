@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 132,
-  "kindergartenCount": 31,
+  "totalCount": 134,
+  "kindergartenCount": 32,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
       {
@@ -3563,6 +3563,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-3d9a3c77",
+        "kindergartenId": "1ecec08d-0b4f-b044-e053-0a32095ab044",
+        "title": "대전 노란풍차유치원 교육과학관 견학 기록",
+        "url": "https://www.instagram.com/p/C-jSApaSIA4/",
+        "source": "other",
+        "sourceName": "Instagram · 노란풍차유치원",
+        "snippet": "노란풍차유치원 친구들이 교육과학관을 찾아 직접 보고 만지며 과학 체험을 한 게시물입니다.",
+        "summary": "유아들이 과학 체험물을 통해 탐구와 관찰 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-3d9a3c77",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C-jSApaSIA4/",
+          "normalizedUrl": "instagram.com/p/c-jsapasia4",
+          "normalizedText": "노란풍차유치원 교육과학관 견학 직접 보고 만지고 체험",
+          "htmlSnapshotHash": "sns-wave717-3d9a3c77",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C-jSApaSIA4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08c-f57e-b044-e053-0a32095ab044": [
@@ -6371,6 +6407,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave712"
+      }
+    ],
+    "1ecec08d-0fa1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave715-2b9b0212",
+        "kindergartenId": "1ecec08d-0fa1-b044-e053-0a32095ab044",
+        "title": "대전 은빛유치원 플리마켓 기록",
+        "url": "https://www.instagram.com/p/DOkUv6BEUv7/",
+        "source": "other",
+        "sourceName": "Instagram · 은빛유치원",
+        "snippet": "은빛유치원이 플리마켓을 열고 아이들의 꿈과 희망을 담은 공간으로 변신한 모습을 소개한 게시물입니다.",
+        "summary": "유아들이 플리마켓 행사를 통해 나눔과 시장 역할을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "flea-market",
+          "market-play",
+          "event",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-2b9b0212",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOkUv6BEUv7/",
+          "normalizedUrl": "instagram.com/p/dokuv6beuv7",
+          "normalizedText": "은빛유치원 플리마켓 무지개 유치원의 변신 아이들의 꿈 희망",
+          "htmlSnapshotHash": "sns-wave715-2b9b0212",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DOkUv6BEUv7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ]
   },

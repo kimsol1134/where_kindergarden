@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 81,
+  "totalCount": 83,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
@@ -658,6 +658,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-55a155a2",
+        "kindergartenId": "1ecec08c-fcf9-b044-e053-0a32095ab044",
+        "title": "대구 환타랜드유치원 국립기상과학관 견학 기록",
+        "url": "https://www.instagram.com/p/C0yayYuPNu7/",
+        "source": "other",
+        "sourceName": "Instagram · 환타랜드유치원",
+        "snippet": "환타랜드유치원 6세 친구들이 국립기상과학관을 찾아 기후 변화와 날씨 전시를 경험한 게시물입니다.",
+        "summary": "유아들이 기상과 기후 주제를 전시 관람으로 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-55a155a2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0yayYuPNu7/",
+          "normalizedUrl": "instagram.com/p/c0yayyupnu7",
+          "normalizedText": "환타랜드유치원 6세 국립기상과학관 기후 변화 견학",
+          "htmlSnapshotHash": "sns-wave717-55a155a2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C0yayYuPNu7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08c-fd03-b044-e053-0a32095ab044": [
@@ -3582,6 +3618,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T09:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-b7c59b3a",
+        "kindergartenId": "1ecec08d-08e7-b044-e053-0a32095ab044",
+        "title": "대구 삼성유치원 기상과학관 견학 기록",
+        "url": "https://www.instagram.com/p/C0JJSqPyeR-/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성유치원",
+        "snippet": "삼성유치원 일곱살 친구들이 기상과학관을 찾아 다양한 날씨 관련 체험을 한 게시물입니다.",
+        "summary": "유아들이 기상과학관에서 날씨와 자연 현상을 탐색한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-b7c59b3a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0JJSqPyeR-/",
+          "normalizedUrl": "instagram.com/p/c0jjsqpyer-",
+          "normalizedText": "삼성유치원 일곱살 기상과학관 견학 날씨 체험",
+          "htmlSnapshotHash": "sns-wave717-b7c59b3a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C0JJSqPyeR-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08d-0131-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 97,
+  "totalCount": 98,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0269-b044-e053-0a32095ab044": [
@@ -3910,7 +3910,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-c4f68616",
+        "kindergartenId": "1ecec08c-fb95-b044-e053-0a32095ab044",
+        "title": "서울 영재유치원 국립어린이과학관 견학 기록",
+        "url": "https://www.instagram.com/p/C00eR-rp79Z/",
+        "source": "other",
+        "sourceName": "Instagram · 영재유치원",
+        "snippet": "종암동 영재유치원 7세 친구들이 국립어린이과학관을 찾아 여러 과학 체험을 즐긴 게시물입니다.",
+        "summary": "유아들이 과학에 대한 관심을 전시 관람과 체험 활동으로 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-c4f68616",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C00eR-rp79Z/",
+          "normalizedUrl": "instagram.com/p/c00er-rp79z",
+          "normalizedText": "영재유치원 종암동영재유치원 7세 국립어린이과학관 견학",
+          "htmlSnapshotHash": "sns-wave717-c4f68616",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C00eR-rp79Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

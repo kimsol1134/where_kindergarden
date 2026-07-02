@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 20,
-  "kindergartenCount": 13,
+  "totalCount": 25,
+  "kindergartenCount": 14,
   "reviews": {
     "39519266-aeae-4f84-b2b5-a42038a61cae": [
       {
@@ -302,6 +302,95 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0cec2378",
+        "kindergartenId": "1ecec08c-f4a1-b044-e053-0a32095ab044",
+        "title": "금비유치원 소방합동 훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DJjB3YnyWAz/",
+        "source": "other",
+        "sourceName": "Instagram · 금비유치원",
+        "snippet": "검색 결과에서 금비유치원, 소방합동 훈련, 대처방법, 소화기 사용방법 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0cec2378",
+        "structuredFields": {
+          "kindergartenName": "금비유치원",
+          "kindergartenAddress": "울산광역시 북구 송내13길 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJjB3YnyWAz%22%20%22%EA%B8%88%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%95%A9%EB%8F%99%20%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금비유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJjB3YnyWAz/",
+          "normalizedUrl": "instagram.com/p/djjb3ynywaz",
+          "normalizedText": "금비유치원 소방합동 훈련 instagram post 검색 결과에서 금비유치원 소방합동 훈련 대처방법 소화기 사용방법 단서가 확인된다.",
+          "htmlSnapshotHash": "0cec2378",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금비유치원",
+            "kindergartenAddress": "울산광역시 북구 송내13길 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJjB3YnyWAz%22%20%22%EA%B8%88%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%95%A9%EB%8F%99%20%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금비유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave714-b0d05996",
+        "kindergartenId": "1ecec08c-f4a1-b044-e053-0a32095ab044",
+        "title": "울산 금비유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DYi7wcRxj6V/",
+        "source": "other",
+        "sourceName": "Instagram · 금비유치원",
+        "snippet": "금비유치원이 실제 상황처럼 불이 났을 때의 행동과 운동장 대피 과정을 연습한 릴스입니다.",
+        "summary": "유아들이 화재 상황 대피 순서를 몸으로 익힌 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-b0d05996",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYi7wcRxj6V/",
+          "normalizedUrl": "instagram.com/reel/dyi7wcrxj6v",
+          "normalizedText": "금비유치원 소방대피훈련 실제 상황 불이야 코와 입을 막고 운동장 대피",
+          "htmlSnapshotHash": "sns-wave714-b0d05996",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYi7wcRxj6V/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "f633c6e2-7d47-47a3-bc93-09247649c623": [
@@ -726,6 +815,101 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.980Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cc20bac0",
+        "kindergartenId": "1e984b83-973a-40a7-8859-f281c40d307e",
+        "title": "상안유치원 악기로 만나는 세상 Instagram Post",
+        "url": "https://www.instagram.com/p/DLmMX5kvQwH/",
+        "source": "other",
+        "sourceName": "Instagram · 상안유치원",
+        "snippet": "검색 결과에서 상안유치원, 공립단설유치원, 악기로 만나는 세상, 음악교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-activity",
+          "instrument-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cc20bac0",
+        "structuredFields": {
+          "kindergartenName": "상안유치원",
+          "kindergartenAddress": "울산광역시 북구 양지길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLmMX5kvQwH%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%85%EA%B8%B0%EB%A1%9C%20%EB%A7%8C%EB%82%98%EB%8A%94%20%EC%84%B8%EC%83%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악교육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLmMX5kvQwH/",
+          "normalizedUrl": "instagram.com/p/dlmmx5kvqwh",
+          "normalizedText": "상안유치원 악기로 만나는 세상 instagram post 검색 결과에서 상안유치원 공립단설유치원 악기로 만나는 세상 음악교육 단서가 확인된다.",
+          "htmlSnapshotHash": "cc20bac0",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "상안유치원",
+            "kindergartenAddress": "울산광역시 북구 양지길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLmMX5kvQwH%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%85%EA%B8%B0%EB%A1%9C%20%EB%A7%8C%EB%82%98%EB%8A%94%20%EC%84%B8%EC%83%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악교육 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3bb21f58",
+        "kindergartenId": "1e984b83-973a-40a7-8859-f281c40d307e",
+        "title": "상안유치원 행복나들이 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DS40HIlE5Wh/",
+        "source": "other",
+        "sourceName": "Instagram · 상안유치원",
+        "snippet": "검색 결과에서 상안유치원 행복나들이 현장체험학습과 울산사랑교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "local-learning"
+        ],
+        "date": "2025-12-30",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3bb21f58",
+        "structuredFields": {
+          "kindergartenName": "상안유치원",
+          "kindergartenAddress": "울산광역시 북구 양지길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DS40HIlE5Wh%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DS40HIlE5Wh/",
+          "normalizedUrl": "instagram.com/p/ds40hile5wh",
+          "normalizedText": "상안유치원 행복나들이 현장체험학습 instagram post 검색 결과에서 상안유치원 행복나들이 현장체험학습과 울산사랑교육 단서가 확인된다.",
+          "htmlSnapshotHash": "3bb21f58",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0d4c-b044-e053-0a32095ab044": [
@@ -988,6 +1172,45 @@
         "approvedAt": "2026-07-02T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f3d2-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave717-16121b8a",
+        "kindergartenId": "1ecec08c-f3d2-b044-e053-0a32095ab044",
+        "title": "울산 새싹유치원 울산과학관 체험 기록",
+        "url": "https://www.instagram.com/reel/DW8JEunEfQu/",
+        "source": "other",
+        "sourceName": "Instagram · 새싹유치원",
+        "snippet": "울산 새싹유치원 친구들이 울산과학관에서 댄싱 로봇과 여러 과학 체험을 경험한 릴스입니다.",
+        "summary": "유아들이 과학관 체험 공간을 통해 로봇과 과학 활동을 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-16121b8a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW8JEunEfQu/",
+          "normalizedUrl": "instagram.com/reel/dw8jeunefqu",
+          "normalizedText": "울산 새싹유치원 울산과학관 체험 댄싱로봇 과학 체험",
+          "htmlSnapshotHash": "sns-wave717-16121b8a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DW8JEunEfQu/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

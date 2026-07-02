@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 31,
+  "totalCount": 32,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0a30-b044-e053-0a32095ab044": [
@@ -15,6 +15,42 @@
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.241Z",
         "relevanceScore": 3
+      },
+      {
+        "id": "rev-sns-wave717-3469e869",
+        "kindergartenId": "1ecec08d-0a30-b044-e053-0a32095ab044",
+        "title": "인천 건영유치원 어린이과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DU5ASXEkVQo/",
+        "source": "other",
+        "sourceName": "Instagram · 건영유치원",
+        "snippet": "건영유치원 버클리반 친구들이 인천어린이과학관을 찾아 과학 전시와 체험 공간을 둘러본 릴스입니다.",
+        "summary": "유아들이 어린이과학관에서 과학 원리를 놀이와 관찰로 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-3469e869",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DU5ASXEkVQo/",
+          "normalizedUrl": "instagram.com/reel/du5asxekvqo",
+          "normalizedText": "건영유치원 버클리반 어린이 과학관 견학 인천어린이 과학관",
+          "htmlSnapshotHash": "sns-wave717-3469e869",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DU5ASXEkVQo/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08d-0117-b044-e053-0a32095ab044": [
@@ -1301,5 +1337,6 @@
         "approvedBy": "codex-manual-sns-wave684"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

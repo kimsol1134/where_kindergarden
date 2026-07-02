@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 38,
-  "kindergartenCount": 9,
+  "totalCount": 41,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0887-b044-e053-0a32095ab044": [
       {
@@ -943,6 +943,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave717-10602c3f",
+        "kindergartenId": "1ecec08c-ee40-b044-e053-0a32095ab044",
+        "title": "천안 세중아유치원 충남과학교육원 견학 기록",
+        "url": "https://www.instagram.com/reel/DYdPXWdT_R0/",
+        "source": "other",
+        "sourceName": "Instagram · 세중아유치원",
+        "snippet": "세중아유치원이 충남과학교육원을 찾아 기상과 과학 체험 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 과학교육원에서 실험과 관찰 중심의 과학 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-education",
+          "field-trip",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave717-10602c3f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYdPXWdT_R0/",
+          "normalizedUrl": "instagram.com/reel/dydpxwdt_r0",
+          "normalizedText": "세중아유치원 충남과학교육원 천안유치원 유치원견학",
+          "htmlSnapshotHash": "sns-wave717-10602c3f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYdPXWdT_R0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08c-f2ab-b044-e053-0a32095ab044": [
@@ -1803,7 +1839,114 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ab744a3d",
+        "kindergartenId": "1ecec08c-f996-b044-e053-0a32095ab044",
+        "title": "천안일봉유치원 동아리 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DPBaXy5j14b/",
+        "source": "other",
+        "sourceName": "Instagram · 천안일봉유치원",
+        "snippet": "검색 결과에서 천안일봉유치원, 공립단설, 동남구유치원, 동아리 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "club-presentation"
+        ],
+        "date": "2025-09-25",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ab744a3d",
+        "structuredFields": {
+          "kindergartenName": "천안일봉유치원",
+          "kindergartenAddress": "충청남도 천안시 동남구 다가2길 3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPBaXy5j14b%22%20%22%EC%B2%9C%EC%95%88%EC%9D%BC%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "천안일봉유치원은 로컬 원장부 단일 정확 명칭이며 동남구 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPBaXy5j14b/",
+          "normalizedUrl": "instagram.com/reel/dpbaxy5j14b",
+          "normalizedText": "천안일봉유치원 동아리 발표회 instagram reel 검색 결과에서 천안일봉유치원 공립단설 동남구유치원 동아리 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "ab744a3d",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "천안일봉유치원",
+            "kindergartenAddress": "충청남도 천안시 동남구 다가2길 3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPBaXy5j14b%22%20%22%EC%B2%9C%EC%95%88%EC%9D%BC%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "천안일봉유치원은 로컬 원장부 단일 정확 명칭이며 동남구 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fddf-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d7ac4746",
+        "kindergartenId": "1ecec08c-fddf-b044-e053-0a32095ab044",
+        "title": "풍세초등학교병설유치원 찾아가는 어린이 음악회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXAygcnCSU-/",
+        "source": "other",
+        "sourceName": "Instagram · 하랑",
+        "snippet": "검색 결과에서 풍세초등학교병설유치원, 찾아가는 어린이 음악회, 유초이음교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d7ac4746",
+        "structuredFields": {
+          "kindergartenName": "풍세초등학교병설유치원",
+          "kindergartenAddress": "충청남도 천안시 동남구 풍세2길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXAygcnCSU-%22%20%22%ED%92%8D%EC%84%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "풍세초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악회 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXAygcnCSU-/",
+          "normalizedUrl": "instagram.com/reel/dxaygcncsu-",
+          "normalizedText": "풍세초등학교병설유치원 찾아가는 어린이 음악회 instagram reel 검색 결과에서 풍세초등학교병설유치원 찾아가는 어린이 음악회 유초이음교육 단서가 확인된다.",
+          "htmlSnapshotHash": "d7ac4746",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "풍세초등학교병설유치원",
+            "kindergartenAddress": "충청남도 천안시 동남구 풍세2길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXAygcnCSU-%22%20%22%ED%92%8D%EC%84%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "풍세초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악회 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
