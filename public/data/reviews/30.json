@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 356,
+  "totalCount": 358,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -5578,6 +5578,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:56.000Z",
         "approvedBy": "codex-manual-sns-wave687"
+      },
+      {
+        "id": "rev-sns-wave691-92625376",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 화재 대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DQ-33osjbN1/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 중구 꿈내리유치원이 소방관과 함께 화재 대피훈련을 진행하며 안전하게 이동하는 방법을 익힌 공개 릴스입니다.",
+        "summary": "소방 연계 화재 대피훈련과 유아 안전교육 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-92625376",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQ-33osjbN1/",
+          "normalizedUrl": "instagram.com/reel/dq-33osjbn1",
+          "normalizedText": "대전 중구 꿈내리유치원 화재 대피훈련 소방관 안전교육",
+          "htmlSnapshotHash": "sns-wave691-92625376",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQ-33osjbN1/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08d-0c2f-b044-e053-0a32095ab044": [
@@ -6197,6 +6233,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      },
+      {
+        "id": "rev-sns-wave691-bce6f712",
+        "kindergartenId": "1ecec08d-02ca-b044-e053-0a32095ab044",
+        "title": "대전두리초등학교병설유치원 국립중앙과학관 현장 안전교육 기록",
+        "url": "https://www.instagram.com/p/DY54Z2gj6ET/",
+        "source": "other",
+        "sourceName": "Instagram · 대전두리초등학교병설유치원",
+        "snippet": "대전두리초등학교병설유치원이 국립중앙과학관 현장체험학습에서 안전하게 이동하고 활동한 모습을 소개한 공개 게시물입니다.",
+        "summary": "현장체험학습과 함께 진행된 이동 안전 지도와 유아 활동 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-bce6f712",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY54Z2gj6ET/",
+          "normalizedUrl": "instagram.com/p/dy54z2gj6et",
+          "normalizedText": "대전두리초병설유치원 안전교육 국립중앙과학관 현장체험학습",
+          "htmlSnapshotHash": "sns-wave691-bce6f712",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY54Z2gj6ET/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08d-0604-b044-e053-0a32095ab044": [
@@ -16539,5 +16611,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 101,
+  "totalCount": 102,
   "kindergartenCount": 19,
   "reviews": {
     "2dc0d75e-793f-42f2-97ee-dd37d3a84e86": [
@@ -1017,6 +1017,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      },
+      {
+        "id": "rev-sns-wave691-bce6f712",
+        "kindergartenId": "1ecec08d-02ca-b044-e053-0a32095ab044",
+        "title": "대전두리초등학교병설유치원 국립중앙과학관 현장 안전교육 기록",
+        "url": "https://www.instagram.com/p/DY54Z2gj6ET/",
+        "source": "other",
+        "sourceName": "Instagram · 대전두리초등학교병설유치원",
+        "snippet": "대전두리초등학교병설유치원이 국립중앙과학관 현장체험학습에서 안전하게 이동하고 활동한 모습을 소개한 공개 게시물입니다.",
+        "summary": "현장체험학습과 함께 진행된 이동 안전 지도와 유아 활동 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-bce6f712",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY54Z2gj6ET/",
+          "normalizedUrl": "instagram.com/p/dy54z2gj6et",
+          "normalizedText": "대전두리초병설유치원 안전교육 국립중앙과학관 현장체험학습",
+          "htmlSnapshotHash": "sns-wave691-bce6f712",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY54Z2gj6ET/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08d-0fb0-b044-e053-0a32095ab044": [

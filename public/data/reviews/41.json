@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1257,
+  "totalCount": 1258,
   "kindergartenCount": 488,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -40313,6 +40313,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:54.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave691-cc0ad1b6",
+        "kindergartenId": "1ecec08c-f039-b044-e053-0a32095ab044",
+        "title": "안성 리더스유치원 소방안전 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DaNCF0vJB49/",
+        "source": "other",
+        "sourceName": "Instagram · 안성리더스유치원",
+        "snippet": "안성 리더스유치원이 대피와 소화기 사용, 응급상황 대응을 익히는 안전교육과 대피훈련을 진행한 공개 게시물입니다.",
+        "summary": "반복 안전교육과 대피훈련으로 유아들이 위급 상황에서 스스로를 지키는 방법을 익히는 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "anseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-cc0ad1b6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaNCF0vJB49/",
+          "normalizedUrl": "instagram.com/p/dancf0vjb49",
+          "normalizedText": "안성리더스유치원 안전교육 대피훈련 소화기 응급상황",
+          "htmlSnapshotHash": "sns-wave691-cc0ad1b6",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaNCF0vJB49/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08c-f069-b044-e053-0a32095ab044": [
@@ -49970,5 +50006,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
 }

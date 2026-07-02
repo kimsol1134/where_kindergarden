@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 199,
+  "totalCount": 200,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -3194,6 +3194,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T07:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave691-1fa0eebf",
+        "kindergartenId": "86d9f494-609c-4bfe-a2b2-3739219e3667",
+        "title": "천안 백석유치원 소방합동훈련 기록",
+        "url": "https://www.instagram.com/reel/DZteKOWzK5P/",
+        "source": "other",
+        "sourceName": "Instagram · 백석유치원",
+        "snippet": "천안 백석유치원이 강당 화재 상황을 가정해 사이렌과 안내 방송에 맞춰 신속히 대피하는 소방합동훈련을 진행한 공개 릴스입니다.",
+        "summary": "화재 상황을 가정한 대피 절차와 정기 안전교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "evacuation",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-1fa0eebf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZteKOWzK5P/",
+          "normalizedUrl": "instagram.com/reel/dztekowzk5p",
+          "normalizedText": "백석유치원 소방합동훈련 화재 상황 대피 사이렌 안전교육",
+          "htmlSnapshotHash": "sns-wave691-1fa0eebf",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZteKOWzK5P/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "7bd3563c-ce2b-4161-ae7e-3a43a150bba5": [
@@ -9064,5 +9100,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:30.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 344,
+  "totalCount": 345,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -5949,6 +5949,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave665"
+      },
+      {
+        "id": "rev-sns-wave691-682a856d",
+        "kindergartenId": "1ecec08c-fba6-b044-e053-0a32095ab044",
+        "title": "포항 창포초등학교병설유치원 지진대피 안전교육 기록",
+        "url": "https://www.instagram.com/reel/DZtQSUmTrXz/",
+        "source": "other",
+        "sourceName": "Instagram · 창포초등학교병설유치원",
+        "snippet": "창포초등학교병설유치원이 지진대피훈련과 안전교육을 통해 유아들이 평소 대피 행동을 익힌 공개 릴스입니다.",
+        "summary": "지진 상황을 가정한 대피훈련과 정기 안전교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "earthquake-drill",
+          "safety-education",
+          "pohang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-682a856d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZtQSUmTrXz/",
+          "normalizedUrl": "instagram.com/reel/dztqsumtrxz",
+          "normalizedText": "창포초등학교병설유치원 지진대피훈련 안전교육 대피 행동",
+          "htmlSnapshotHash": "sns-wave691-682a856d",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZtQSUmTrXz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -15825,5 +15861,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:30:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
 }

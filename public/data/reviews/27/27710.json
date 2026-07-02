@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 57,
+  "totalCount": 58,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -1365,6 +1365,42 @@
           ]
         },
         "evidenceChecksum": "07a11b2f"
+      },
+      {
+        "id": "rev-sns-wave691-b264547c",
+        "kindergartenId": "1ecec08c-f8a0-b044-e053-0a32095ab044",
+        "title": "대구 서재성모유치원 돌발상황 대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DZ4aWL7xKi-/",
+        "source": "other",
+        "sourceName": "Instagram · 서재성모유치원",
+        "snippet": "서재성모유치원이 돌발상황에서 안전하게 대피하는 방법을 익히는 훈련을 진행한 공개 릴스입니다.",
+        "summary": "대피 행동 요령과 유아 안전습관 형성을 위한 훈련 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "evacuation-drill",
+          "safety-education",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.500Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave691-b264547c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4aWL7xKi-/",
+          "normalizedUrl": "instagram.com/reel/dz4awl7xki-",
+          "normalizedText": "서재성모유치원 돌발상황 대피훈련 안전교육 대피 행동",
+          "htmlSnapshotHash": "sns-wave691-b264547c",
+          "extractedAt": "2026-07-03T23:59:59.500Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ4aWL7xKi-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.500Z",
+        "approvedBy": "codex-manual-sns-wave691"
       }
     ],
     "1ecec08d-0c22-b044-e053-0a32095ab044": [
