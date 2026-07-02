@@ -6,6 +6,7 @@ import Search from 'lucide-react/dist/esm/icons/search';
 import X from 'lucide-react/dist/esm/icons/x';
 import Heart from 'lucide-react/dist/esm/icons/heart';
 import ChevronDown from 'lucide-react/dist/esm/icons/chevron-down';
+import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
 import Bus from 'lucide-react/dist/esm/icons/bus';
 import MapPin from 'lucide-react/dist/esm/icons/map-pin';
 import UserCheck from 'lucide-react/dist/esm/icons/user-check';
@@ -381,7 +382,15 @@ export function SearchHeader() {
           )}
         </div>
 
-        {/* Header Actions - 모바일: 찜목록만 표시 */}
+        {/* Header Actions - 모바일 */}
+        <Link
+          href="/reviews/all"
+          className="flex-shrink-0 rounded-2xl p-2 text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)] md:hidden"
+          aria-label="후기 원문 전체 확인"
+          title="후기 원문 전체 확인"
+        >
+          <ExternalLink className="w-5 h-5" />
+        </Link>
         <button
           onClick={() => setFavoritesPanelOpen(true)}
           className="relative flex-shrink-0 rounded-2xl p-2 text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)] md:hidden"
@@ -396,6 +405,13 @@ export function SearchHeader() {
 
         {/* Header Actions - 데스크톱에서만 표시 */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
+          <Link
+            href="/reviews/all"
+            className="flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
+          >
+            <ExternalLink className="w-4 h-4" />
+            후기 원문
+          </Link>
           <button
             onClick={() => setFavoritesPanelOpen(true)}
             className="relative flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"

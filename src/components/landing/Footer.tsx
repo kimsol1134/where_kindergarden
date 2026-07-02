@@ -57,8 +57,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/reviews" className="hover:text-[var(--brand-leaf)]">
-                  후기 전체 확인
+                <Link href="/reviews/all" className="hover:text-[var(--brand-leaf)]">
+                  후기 원문 전체 확인
                 </Link>
               </li>
             </ul>
