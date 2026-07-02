@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getReviewLinkPageCount } from '@/lib/review-link-index';
 
 // 정적 빌드(output: 'export')를 위한 설정
 export const dynamic = 'force-static';
@@ -12,6 +13,7 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://where-kindergarden.vercel.app';
   const currentDate = new Date();
+  const reviewPageCount = getReviewLinkPageCount();
 
   return [
     {
@@ -44,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 0.7,
     },
+    ...Array.from({ length: Math.max(0, reviewPageCount - 1) }, (_, index) => ({
+      url: `${baseUrl}/reviews/all/page/${index + 2}`,
+      lastModified: currentDate,
+      changeFrequency: 'daily' as const,
+      priority: 0.65,
+    })),
     {
       url: `${baseUrl}/test`,
       lastModified: currentDate,
