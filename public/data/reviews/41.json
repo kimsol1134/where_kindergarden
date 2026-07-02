@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1228,
-  "kindergartenCount": 479,
+  "totalCount": 1230,
+  "kindergartenCount": 481,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -48908,7 +48908,82 @@
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave665"
       }
+    ],
+    "1ecec08c-f3b0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave666-5c72924e",
+        "kindergartenId": "1ecec08c-f3b0-b044-e053-0a32095ab044",
+        "title": "수원금곡초등학교병설유치원 미니도서관 기록",
+        "url": "https://www.instagram.com/p/DVfAheOk4tT/",
+        "source": "other",
+        "sourceName": "Instagram · 수원금곡초등학교병설유치원",
+        "snippet": "수원금곡초등학교병설유치원이 미니도서관 공간을 소개한 공개 게시물입니다.",
+        "summary": "유치원 안의 책 읽기 환경을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book"
+        ],
+        "date": "2026-03-04",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-5c72924e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVfAheOk4tT/",
+          "normalizedUrl": "instagram.com/p/dvfaheok4tt",
+          "normalizedText": "수원금곡초등학교병설유치원 미니도서관 수원유치원 병설유치원",
+          "htmlSnapshotHash": "sns-wave666-5c72924e",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVfAheOk4tT/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
+      }
+    ],
+    "1ecec08c-ff47-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave666-556441ec",
+        "kindergartenId": "1ecec08c-ff47-b044-e053-0a32095ab044",
+        "title": "원곡초등학교병설유치원 도서관나들이 기록",
+        "url": "https://www.instagram.com/p/DZd6qHUEjB0/",
+        "source": "other",
+        "sourceName": "Instagram · 원곡초등학교병설유치원",
+        "snippet": "원곡초등학교병설유치원 친구들이 도서관나들이에서 책을 보고 도서관 공간을 둘러본 공개 게시물입니다.",
+        "summary": "도서관나들이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "library-visit"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-556441ec",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZd6qHUEjB0/",
+          "normalizedUrl": "instagram.com/p/dzd6qhuejb0",
+          "normalizedText": "원곡초등학교병설유치원 도서관나들이 책 그림책",
+          "htmlSnapshotHash": "sns-wave666-556441ec",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZd6qHUEjB0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T16:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T17:25:00.000Z"
 }

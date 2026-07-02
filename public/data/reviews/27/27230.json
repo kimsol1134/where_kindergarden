@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 67,
-  "kindergartenCount": 21,
+  "version": "2026-07-03",
+  "totalCount": 75,
+  "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
       {
@@ -283,6 +283,70 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-2eb8e80e",
+        "kindergartenId": "2e7cb379-a526-4b2c-9eae-48ef46313409",
+        "kindergartenName": "메이플유치원",
+        "title": "대구 메이플유치원 마음성장 샌드아트 Reel",
+        "url": "https://www.instagram.com/reel/DBuzu-NplNw/",
+        "source": "other",
+        "sourceName": "Instagram · 메이플유치원",
+        "snippet": "Instagram 검색 결과에서 maple_kindergarten 계정의 메이플유치원 마음성장프로젝트 샌드아트 활동과 칠곡유치원 문맥이 확인되는 릴.",
+        "date": "2024-10-29",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sand-art",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "메이플유치원",
+          "kindergartenAddress": "대구광역시 북구 영송로 71",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBuzu-NplNw%22+%22%EB%A9%94%EC%9D%B4%ED%94%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22+%22%EC%B9%A0%EA%B3%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DBuzu-NplNw/",
+          "regionEvidence": [
+            "maple_kindergarten",
+            "메이플유치원",
+            "칠곡유치원",
+            "샌드아트"
+          ]
+        },
+        "evidenceChecksum": "ae748c47",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBuzu-NplNw/",
+          "normalizedUrl": "instagram.com/shortcode/dbuzu-nplnw",
+          "normalizedText": "대구 메이플유치원 마음성장 샌드아트 reel instagram 검색 결과에서 maple_kindergarten 계정의 메이플유치원 마음성장프로젝트 샌드아트 활동과 칠곡유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "38a9a81d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "메이플유치원",
+            "kindergartenAddress": "대구광역시 북구 영송로 71",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBuzu-NplNw%22+%22%EB%A9%94%EC%9D%B4%ED%94%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22+%22%EC%B9%A0%EA%B3%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DBuzu-NplNw/",
+            "regionEvidence": [
+              "maple_kindergarten",
+              "메이플유치원",
+              "칠곡유치원",
+              "샌드아트"
+            ]
+          }
+        }
       }
     ],
     "1ecec08c-efa3-b044-e053-0a32095ab044": [
@@ -307,6 +371,57 @@
         "snippet": "리뷰 4 21회 한림유치원 전시회 만족 합니다. 전시회 관람 시간이 넘 촉박 한것 같애요 체험을 맘놓고 할 수 없어서 너무 아쉬웠습니다. 1번째 방문",
         "date": "2020-12-12",
         "collectedAt": "2026-04-05T14:19:46.444Z"
+      },
+      {
+        "id": "rev-b9a0e660",
+        "kindergartenId": "1ecec08c-efa3-b044-e053-0a32095ab044",
+        "title": "대구 한림유치원 제25회 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGngcBnyqlu/",
+        "source": "other",
+        "sourceName": "Instagram · hanlim_kids",
+        "snippet": "검색 결과에서 한림유치원 제25회 졸업식, 어린이들의 졸업 축하, 대구한림유치원 및 대구유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b9a0e660",
+        "structuredFields": {
+          "kindergartenName": "한림유치원",
+          "kindergartenAddress": "대구광역시 북구 대천로 101",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGngcBnyqlu%22%20%22%ED%95%9C%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%ED%95%9C%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한림유치원은 동명이 있으나 대구한림유치원 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGngcBnyqlu/",
+          "normalizedUrl": "instagram.com/reel/dgngcbnyqlu",
+          "normalizedText": "대구 한림유치원 제25회 졸업식 instagram reel 검색 결과에서 한림유치원 제25회 졸업식, 어린이들의 졸업 축하, 대구한림유치원 및 대구유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "b9a0e660",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한림유치원",
+            "kindergartenAddress": "대구광역시 북구 대천로 101",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGngcBnyqlu%22%20%22%ED%95%9C%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%ED%95%9C%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한림유치원은 동명이 있으나 대구한림유치원 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fcf8-b044-e053-0a32095ab044": [
@@ -793,6 +908,110 @@
           ]
         },
         "evidenceChecksum": "d9218377"
+      },
+      {
+        "id": "rev-af6676f4",
+        "kindergartenId": "1ecec08c-fd03-b044-e053-0a32095ab044",
+        "title": "대구 칠곡 옥스포드유치원 소운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DQX4pYhkhRk/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스포드유치원",
+        "snippet": "검색 결과에서 칠곡3지구 옥스포드유치원 소운동회와 대구유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "af6676f4",
+        "structuredFields": {
+          "kindergartenName": "옥스포드유치원",
+          "kindergartenAddress": "대구광역시 북구 구리로 169",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQX4pYhkhRk%22%20%22%EC%98%A5%EC%8A%A4%ED%8F%AC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "옥스포드유치원은 로컬 원장부 단일 정확 명칭이며 칠곡3지구/대구 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQX4pYhkhRk/",
+          "normalizedUrl": "instagram.com/reel/dqx4pyhkhrk",
+          "normalizedText": "대구 칠곡 옥스포드유치원 소운동회 instagram reel 검색 결과에서 칠곡3지구 옥스포드유치원 소운동회와 대구유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "af6676f4",
+          "extractedAt": "2026-07-03T10:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "옥스포드유치원",
+            "kindergartenAddress": "대구광역시 북구 구리로 169",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQX4pYhkhRk%22%20%22%EC%98%A5%EC%8A%A4%ED%8F%AC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "옥스포드유치원은 로컬 원장부 단일 정확 명칭이며 칠곡3지구/대구 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-62a385d0",
+        "kindergartenId": "1ecec08c-fd03-b044-e053-0a32095ab044",
+        "title": "대구 칠곡 옥스포드유치원 푸드아트 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DN2pDIc4sjp/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스포드유치원",
+        "snippet": "검색 결과에서 옥스포드유치원 푸드아트 활동과 칠곡유치원, 칠곡3지구, 대구유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "food-art",
+          "classroom-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "62a385d0",
+        "structuredFields": {
+          "kindergartenName": "옥스포드유치원",
+          "kindergartenAddress": "대구광역시 북구 구리로 169",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DN2pDIc4sjp%22%20%22%EC%98%A5%EC%8A%A4%ED%8F%AC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "옥스포드유치원은 로컬 원장부 단일 정확 명칭이며 칠곡3지구/대구 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN2pDIc4sjp/",
+          "normalizedUrl": "instagram.com/reel/dn2pdic4sjp",
+          "normalizedText": "대구 칠곡 옥스포드유치원 푸드아트 instagram reel 검색 결과에서 옥스포드유치원 푸드아트 활동과 칠곡유치원, 칠곡3지구, 대구유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "62a385d0",
+          "extractedAt": "2026-07-03T10:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "옥스포드유치원",
+            "kindergartenAddress": "대구광역시 북구 구리로 169",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DN2pDIc4sjp%22%20%22%EC%98%A5%EC%8A%A4%ED%8F%AC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "옥스포드유치원은 로컬 원장부 단일 정확 명칭이며 칠곡3지구/대구 단서와 대구 북구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-012e-b044-e053-0a32095ab044": [
@@ -2466,6 +2685,110 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-41fc3122",
+        "kindergartenId": "1ecec08d-0b77-b044-e053-0a32095ab044",
+        "title": "대구 침산ing유치원 과학의 날 실험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C6YEVW8SSuf/",
+        "source": "other",
+        "sourceName": "Instagram · 침산ing유치원",
+        "snippet": "검색 결과에서 침산ing유치원의 과학의 날, Science Day, 과학실험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-day",
+          "science-experiment"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "41fc3122",
+        "structuredFields": {
+          "kindergartenName": "침산ing유치원",
+          "kindergartenAddress": "대구광역시 북구 침산남로37길 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C6YEVW8SSuf%22%20%22%EC%B9%A8%EC%82%B0ing%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "침산ing유치원은 로컬 원장부 단일 정확 명칭이며 침산동 단서와 로컬 대구 북구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C6YEVW8SSuf/",
+          "normalizedUrl": "instagram.com/reel/c6yevw8ssuf",
+          "normalizedText": "대구 침산ing유치원 과학의 날 실험 instagram reel 검색 결과에서 침산ing유치원의 과학의 날, science day, 과학실험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "41fc3122",
+          "extractedAt": "2026-07-03T15:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "침산ing유치원",
+            "kindergartenAddress": "대구광역시 북구 침산남로37길 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C6YEVW8SSuf%22%20%22%EC%B9%A8%EC%82%B0ing%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "침산ing유치원은 로컬 원장부 단일 정확 명칭이며 침산동 단서와 로컬 대구 북구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e2ccf52a",
+        "kindergartenId": "1ecec08d-0b77-b044-e053-0a32095ab044",
+        "title": "대구 침산ing유치원 구강건강관리 Instagram Post",
+        "url": "https://www.instagram.com/p/Cil4oQZvqI4/",
+        "source": "other",
+        "sourceName": "Instagram · 침산ing유치원",
+        "snippet": "검색 결과에서 침산ing유치원의 구강건강관리 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e2ccf52a",
+        "structuredFields": {
+          "kindergartenName": "침산ing유치원",
+          "kindergartenAddress": "대구광역시 북구 침산남로37길 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cil4oQZvqI4%22%20%22%EC%B9%A8%EC%82%B0ing%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "침산ing유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cil4oQZvqI4/",
+          "normalizedUrl": "instagram.com/p/cil4oqzvqi4",
+          "normalizedText": "대구 침산ing유치원 구강건강관리 instagram post 검색 결과에서 침산ing유치원의 구강건강관리 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e2ccf52a",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "침산ing유치원",
+            "kindergartenAddress": "대구광역시 북구 침산남로37길 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cil4oQZvqI4%22%20%22%EC%B9%A8%EC%82%B0ing%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "침산ing유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f6f9-b044-e053-0a32095ab044": [
@@ -3098,6 +3421,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-51bab5f4",
+        "kindergartenId": "1ecec08d-08e7-b044-e053-0a32095ab044",
+        "title": "대구 북구 삼성유치원 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/C6vscN_Seuj/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성유치원",
+        "snippet": "검색 결과에서 삼성유치원 계정 sskid326_4300의 요리활동 게시물과, 같은 계정의 대구광역시 북구 동암로 21-19 삼성유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "kindergarten-life"
+        ],
+        "date": "2024-05-09",
+        "collectedAt": "2026-07-03T09:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "51bab5f4",
+        "structuredFields": {
+          "kindergartenName": "삼성유치원",
+          "kindergartenAddress": "대구광역시 북구 동암로 21-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C6vscN_Seuj%22%20%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "게시물 계정 sskid326_4300 및 같은 계정의 공개 검색 결과가 대구 북구 동암로 21-19 삼성유치원과 연결되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C6vscN_Seuj/",
+          "normalizedUrl": "instagram.com/p/c6vscn_seuj",
+          "normalizedText": "대구 북구 삼성유치원 요리활동 instagram post 검색 결과에서 삼성유치원 계정 sskid326_4300의 요리활동 게시물과, 같은 계정의 대구광역시 북구 동암로 21-19 삼성유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "51bab5f4",
+          "extractedAt": "2026-07-03T09:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성유치원",
+            "kindergartenAddress": "대구광역시 북구 동암로 21-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C6vscN_Seuj%22%20%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "게시물 계정 sskid326_4300 및 같은 계정의 공개 검색 결과가 대구 북구 동암로 21-19 삼성유치원과 연결되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0131-b044-e053-0a32095ab044": [
@@ -3207,7 +3582,44 @@
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-09b3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave666-99669cc9",
+        "kindergartenId": "1ecec08d-09b3-b044-e053-0a32095ab044",
+        "title": "대구학정초등학교병설유치원 그림책 창의융합예술수업 기록",
+        "url": "https://www.instagram.com/p/DZ8yvKRGF-y/",
+        "source": "other",
+        "sourceName": "Instagram · 대구학정초등학교병설유치원",
+        "snippet": "대구학정초등학교병설유치원이 그림책 창의융합예술수업을 소개한 공개 게시물입니다.",
+        "summary": "그림책 기반 예술수업 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "art-class"
+        ],
+        "date": "2026-06-23",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-99669cc9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ8yvKRGF-y/",
+          "normalizedUrl": "instagram.com/p/dz8yvkrgf-y",
+          "normalizedText": "대구학정초등학교병설유치원 그림책 창의융합예술수업",
+          "htmlSnapshotHash": "sns-wave666-99669cc9",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ8yvKRGF-y/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

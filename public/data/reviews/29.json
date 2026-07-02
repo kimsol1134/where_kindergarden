@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 145,
-  "kindergartenCount": 46,
+  "totalCount": 171,
+  "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
       {
@@ -428,6 +428,108 @@
           ]
         },
         "evidenceChecksum": "e6ac89fa"
+      },
+      {
+        "id": "rev-09bca98a",
+        "kindergartenId": "58acbeb2-e3ed-40d3-80ec-25ad4ba8dd02",
+        "title": "광주 큰빛자연생태유치원 고구마캐기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBsU7INBAA0/",
+        "source": "other",
+        "sourceName": "Instagram · 큰빛자연생태유치원",
+        "snippet": "큰빛자연생태유치원 계정에서 텃밭, 고구마캐기, 광주숲유치원 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sweet-potato-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cfefd8fd",
+        "structuredFields": {
+          "kindergartenName": "큰빛자연생태유치원",
+          "kindergartenAddress": "광주광역시 광산구 박뫼길 11-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBsU7INBAA0%22+%22%ED%81%B0%EB%B9%9B%EC%9E%90%EC%97%B0%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "큰빛자연생태유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBsU7INBAA0/",
+          "normalizedUrl": "www.instagram.com/reel/dbsu7inbaa0",
+          "normalizedText": "광주 큰빛자연생태유치원 고구마캐기 instagram reel 큰빛자연생태유치원 계정에서 텃밭, 고구마캐기, 광주숲유치원 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "cfefd8fd",
+          "extractedAt": "2026-07-02T11:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "큰빛자연생태유치원",
+            "kindergartenAddress": "광주광역시 광산구 박뫼길 11-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBsU7INBAA0%22+%22%ED%81%B0%EB%B9%9B%EC%9E%90%EC%97%B0%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "큰빛자연생태유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5ba8626b",
+        "kindergartenId": "58acbeb2-e3ed-40d3-80ec-25ad4ba8dd02",
+        "title": "광주 큰빛자연생태유치원 크리스마스 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DD88v7-Bixs/",
+        "source": "other",
+        "sourceName": "Instagram · 큰빛자연생태유치원",
+        "snippet": "큰빛자연생태유치원 계정에서 크리스마스에 산타할아버지가 찾아온 문맥과 광주·광산구유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "christmas"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a6b93666",
+        "structuredFields": {
+          "kindergartenName": "큰빛자연생태유치원",
+          "kindergartenAddress": "광주광역시 광산구 박뫼길 11-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DD88v7-Bixs%22+%22%ED%81%B0%EB%B9%9B%EC%9E%90%EC%97%B0%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "큰빛 계정 단서와 자연생태유치원·광산구유치원 단서가 광주 큰빛자연생태유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DD88v7-Bixs/",
+          "normalizedUrl": "www.instagram.com/reel/dd88v7-bixs",
+          "normalizedText": "광주 큰빛자연생태유치원 크리스마스 instagram reel 큰빛자연생태유치원 계정에서 크리스마스에 산타할아버지가 찾아온 문맥과 광주·광산구유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "a6b93666",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "큰빛자연생태유치원",
+            "kindergartenAddress": "광주광역시 광산구 박뫼길 11-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DD88v7-Bixs%22+%22%ED%81%B0%EB%B9%9B%EC%9E%90%EC%97%B0%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "큰빛 계정 단서와 자연생태유치원·광산구유치원 단서가 광주 큰빛자연생태유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0d98-b044-e053-0a32095ab044": [
@@ -1500,6 +1602,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-29f1c5d9",
+        "kindergartenId": "1ecec08d-092c-b044-e053-0a32095ab044",
+        "title": "광주 예닮몬테소리유치원 딸기 농장 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DK1feHcppL0/",
+        "source": "other",
+        "sourceName": "Instagram · 예닮몬테소리유치원",
+        "snippet": "예닮몬테소리유치원 계정에서 봄을 맞아 딸기 농장에 다녀온 문맥과 풍암동유치원·주월동 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "845268f3",
+        "structuredFields": {
+          "kindergartenName": "예닮몬테소리유치원",
+          "kindergartenAddress": "광주광역시 서구 풍암중앙로91번길 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DK1feHcppL0%22+%22%EC%98%88%EB%8B%AE%EB%AA%AC%ED%85%8C%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0+%EB%86%8D%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "예닮몬테소리유치원은 로컬 원장부 단일 매칭이며 풍암동·주월동 단서가 광주 서구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DK1feHcppL0/",
+          "normalizedUrl": "www.instagram.com/p/dk1fehcppl0",
+          "normalizedText": "광주 예닮몬테소리유치원 딸기 농장 체험 instagram post 예닮몬테소리유치원 계정에서 봄을 맞아 딸기 농장에 다녀온 문맥과 풍암동유치원·주월동 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "845268f3",
+          "extractedAt": "2026-07-03T00:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예닮몬테소리유치원",
+            "kindergartenAddress": "광주광역시 서구 풍암중앙로91번길 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DK1feHcppL0%22+%22%EC%98%88%EB%8B%AE%EB%AA%AC%ED%85%8C%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0+%EB%86%8D%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "예닮몬테소리유치원은 로컬 원장부 단일 매칭이며 풍암동·주월동 단서가 광주 서구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1fd6777e-151a-e0b0-e053-0a32095ae0b0": [
@@ -1751,6 +1904,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9f0a0e82",
+        "kindergartenId": "f19a34b6-b80b-417e-9a89-c03973af2379",
+        "title": "광주 사랑숲유치원 유아숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DB0AKNcBs9w/",
+        "source": "other",
+        "sourceName": "Instagram · 사랑숲유치원",
+        "snippet": "사랑숲유치원, 광주유치원, 남구유치원, 동구유치원 문맥과 5세 유아숲체험이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f4e41df5",
+        "structuredFields": {
+          "kindergartenName": "사랑숲유치원",
+          "kindergartenAddress": "광주광역시 동구 화산로238번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DB0AKNcBs9w%22+%22%EC%82%AC%EB%9E%91%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "사랑숲유치원 동명이 있어 광주, 남구, 동구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DB0AKNcBs9w/",
+          "normalizedUrl": "www.instagram.com/reel/db0akncbS9w",
+          "normalizedText": "광주 사랑숲유치원 유아숲체험 instagram reel 사랑숲유치원, 광주유치원, 남구유치원, 동구유치원 문맥과 5세 유아숲체험이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "f4e41df5",
+          "extractedAt": "2026-07-02T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사랑숲유치원",
+            "kindergartenAddress": "광주광역시 동구 화산로238번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DB0AKNcBs9w%22+%22%EC%82%AC%EB%9E%91%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "사랑숲유치원 동명이 있어 광주, 남구, 동구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T07:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2447,6 +2651,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T18:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-00966ab7",
+        "kindergartenId": "1ecec08c-fc1e-b044-e053-0a32095ab044",
+        "title": "광주 버클리유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DVBfhkoEl6I/",
+        "source": "other",
+        "sourceName": "Instagram · 양또",
+        "snippet": "2026년 유치원 졸업식과 버클리유치원 해시태그가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T03:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "553774ca",
+        "structuredFields": {
+          "kindergartenName": "버클리유치원",
+          "kindergartenAddress": "광주광역시 광산구 왕버들로 113-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp%2F+%22%EB%B2%84%ED%81%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "버클리유치원은 로컬 원장부에서 유일한 이름이라 게시물 해시태그 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVBfhkoEl6I/",
+          "normalizedUrl": "www.instagram.com/p/dvbfhkoel6i",
+          "normalizedText": "광주 버클리유치원 졸업식 instagram post 2026년 유치원 졸업식과 버클리유치원 해시태그가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "553774ca",
+          "extractedAt": "2026-07-02T03:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버클리유치원",
+            "kindergartenAddress": "광주광역시 광산구 왕버들로 113-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp%2F+%22%EB%B2%84%ED%81%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "버클리유치원은 로컬 원장부에서 유일한 이름이라 게시물 해시태그 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T03:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f553-b044-e053-0a32095ab044": [
@@ -2899,6 +3154,59 @@
           ]
         },
         "evidenceChecksum": "af1dfafc"
+      },
+      {
+        "id": "rev-5c56495a",
+        "kindergartenId": "1ecec08d-06ba-b044-e053-0a32095ab044",
+        "kindergartenName": "슈에뜨유치원",
+        "title": "광주 슈에뜨유치원 공항출국길 체험 Day Instagram Post",
+        "url": "https://www.instagram.com/p/DWi04ldETKw/",
+        "source": "other",
+        "sourceName": "Instagram · 광주 슈에뜨유치원",
+        "snippet": "광주 슈에뜨유치원 계정 게시물 검색 결과에서 공항출국길 체험 Day, 슈에뜨유치원, 광주유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "transportation",
+          "airport-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5c56495a",
+        "structuredFields": {
+          "kindergartenName": "슈에뜨유치원",
+          "kindergartenAddress": "광주광역시 남구 봉주7길 30",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWi04ldETKw%22%20%22%EC%8A%88%EC%97%90%EB%9C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "슈에뜨유치원은 로컬 원장부에서 단일 명칭이며 광주유치원 단서와 광주 남구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWi04ldETKw/",
+          "normalizedUrl": "www.instagram.com/p/dwi04ldetkw",
+          "normalizedText": "광주 슈에뜨유치원 공항출국길 체험 day instagram post 광주 슈에뜨유치원 계정 게시물 검색 결과에서 공항출국길 체험 day, 슈에뜨유치원, 광주유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "5c56495a",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "슈에뜨유치원",
+            "kindergartenAddress": "광주광역시 남구 봉주7길 30",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWi04ldETKw%22%20%22%EC%8A%88%EC%97%90%EB%9C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "슈에뜨유치원은 로컬 원장부에서 단일 명칭이며 광주유치원 단서와 광주 남구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa04-b044-e053-0a32095ab044": [
@@ -3309,6 +3617,110 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fc4b1b32",
+        "kindergartenId": "1ecec08d-04bb-b044-e053-0a32095ab044",
+        "title": "광주 그랜드유치원 119 안전센터 소방합동훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DXW2BzxDwST/",
+        "source": "other",
+        "sourceName": "Instagram · 그랜드유치원",
+        "snippet": "그랜드유치원 계정에서 119 안전센터 소방합동훈련과 안전을 배우는 특별한 하루 문맥, 수완지구유치원·광산구유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-station-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "03169156",
+        "structuredFields": {
+          "kindergartenName": "그랜드유치원",
+          "kindergartenAddress": "광주광역시 광산구 왕버들로 93",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXW2BzxDwST%22+%22%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22119+%EC%95%88%EC%A0%84%EC%84%BC%ED%84%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "그랜드유치원은 로컬 원장부 단일 매칭이며 수완지구·광산구 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXW2BzxDwST/",
+          "normalizedUrl": "www.instagram.com/p/dxw2bzxdwst",
+          "normalizedText": "광주 그랜드유치원 119 안전센터 소방합동훈련 instagram post 그랜드유치원 계정에서 119 안전센터 소방합동훈련과 안전을 배우는 특별한 하루 문맥, 수완지구유치원·광산구유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "03169156",
+          "extractedAt": "2026-07-03T00:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "그랜드유치원",
+            "kindergartenAddress": "광주광역시 광산구 왕버들로 93",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXW2BzxDwST%22+%22%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22119+%EC%95%88%EC%A0%84%EC%84%BC%ED%84%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "그랜드유치원은 로컬 원장부 단일 매칭이며 수완지구·광산구 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e0148c39",
+        "kindergartenId": "1ecec08d-04bb-b044-e053-0a32095ab044",
+        "kindergartenName": "그랜드유치원",
+        "title": "광주 그랜드유치원 찾아가는 안전체험활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/Cn3LB5PrQdG/",
+        "source": "other",
+        "sourceName": "Instagram · 그랜드유치원",
+        "snippet": "그랜드유치원 계정 게시물 검색 결과에서 찾아가는 안전체험활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "in-school-program"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e0148c39",
+        "structuredFields": {
+          "kindergartenName": "그랜드유치원",
+          "kindergartenAddress": "광주광역시 광산구 왕버들로 93",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cn3LB5PrQdG%22%20%22%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "그랜드유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/Cn3LB5PrQdG/",
+          "normalizedUrl": "www.instagram.com/reel/cn3lb5prqdg",
+          "normalizedText": "광주 그랜드유치원 찾아가는 안전체험활동 instagram reel 그랜드유치원 계정 게시물 검색 결과에서 찾아가는 안전체험활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e0148c39",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "그랜드유치원",
+            "kindergartenAddress": "광주광역시 광산구 왕버들로 93",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cn3LB5PrQdG%22%20%22%EA%B7%B8%EB%9E%9C%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "그랜드유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fc20-b044-e053-0a32095ab044": [
@@ -3684,6 +4096,161 @@
           ]
         },
         "evidenceChecksum": "b409775c"
+      },
+      {
+        "id": "rev-8979ca89",
+        "kindergartenId": "1ecec08c-fc20-b044-e053-0a32095ab044",
+        "title": "광주 아이베스트유치원 딸기체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIAPw8-z8tP/",
+        "source": "other",
+        "sourceName": "Instagram · 아이베스트유치원",
+        "snippet": "아이베스트유치원 계정에서 딸기 체험과 아이베스트유치원 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a5c84b77",
+        "structuredFields": {
+          "kindergartenName": "아이베스트유치원",
+          "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIAPw8-z8tP%22+%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이베스트유치원은 로컬 원장부에서 유일한 정확 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIAPw8-z8tP/",
+          "normalizedUrl": "www.instagram.com/reel/diapw8-z8tp",
+          "normalizedText": "광주 아이베스트유치원 딸기체험 instagram reel 아이베스트유치원 계정에서 딸기 체험과 아이베스트유치원 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "a5c84b77",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이베스트유치원",
+            "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIAPw8-z8tP%22+%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이베스트유치원은 로컬 원장부에서 유일한 정확 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-14f9b368",
+        "kindergartenId": "1ecec08c-fc20-b044-e053-0a32095ab044",
+        "title": "광주 아이베스트유치원 어린이박물관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DCxY6aEz241/",
+        "source": "other",
+        "sourceName": "Instagram · 아이베스트유치원",
+        "snippet": "아이베스트유치원 계정에서 어린이 박물관 견학을 다녀온 문맥과 아이베스트유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "56451a50",
+        "structuredFields": {
+          "kindergartenName": "아이베스트유치원",
+          "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCxY6aEz241%22+%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4+%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이베스트유치원은 로컬 원장부 단일 매칭이며 어린이박물관 견학 문맥이 유치원 활동으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DCxY6aEz241/",
+          "normalizedUrl": "www.instagram.com/reel/dcxy6aez241",
+          "normalizedText": "광주 아이베스트유치원 어린이박물관 견학 instagram reel 아이베스트유치원 계정에서 어린이 박물관 견학을 다녀온 문맥과 아이베스트유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "56451a50",
+          "extractedAt": "2026-07-02T23:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이베스트유치원",
+            "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCxY6aEz241%22+%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4+%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이베스트유치원은 로컬 원장부 단일 매칭이며 어린이박물관 견학 문맥이 유치원 활동으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7b61c5ea",
+        "kindergartenId": "1ecec08c-fc20-b044-e053-0a32095ab044",
+        "kindergartenName": "아이베스트유치원",
+        "title": "광주 아이베스트유치원 음악 특별활동 Instagram Post",
+        "url": "https://www.instagram.com/p/C65rj8VBIqu/",
+        "source": "other",
+        "sourceName": "Instagram · 아이베스트유치원",
+        "snippet": "아이베스트유치원 계정 검색 결과에서 음악 특별활동과 유치원 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "instrument"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:53.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7b61c5ea",
+        "structuredFields": {
+          "kindergartenName": "아이베스트유치원",
+          "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C65rj8VBIqu%22%20%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%22%20%22%EC%9D%8C%EC%95%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이베스트유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C65rj8VBIqu/",
+          "normalizedUrl": "www.instagram.com/p/c65rj8vbiqu",
+          "normalizedText": "광주 아이베스트유치원 음악 특별활동 instagram post 아이베스트유치원 계정 검색 결과에서 음악 특별활동과 유치원 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "7b61c5ea",
+          "extractedAt": "2026-07-02T23:59:53.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이베스트유치원",
+            "kindergartenAddress": "광주광역시 북구 하백로29번길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C65rj8VBIqu%22%20%22%EC%95%84%EC%9D%B4%EB%B2%A0%EC%8A%A4%ED%8A%B8%22%20%22%EC%9D%8C%EC%95%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이베스트유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:53.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-07ba-b044-e053-0a32095ab044": [
@@ -4675,6 +5242,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-982b50de",
+        "kindergartenId": "1ecec08c-f864-b044-e053-0a32095ab044",
+        "kindergartenName": "천사유치원",
+        "title": "광주 천사유치원 재난안전교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DHqBzzBhEgD/",
+        "source": "other",
+        "sourceName": "Instagram · 천사유치원",
+        "snippet": "광주 서구 쌍촌동 천사유치원 계정의 재난안전교육 릴 검색 결과에서 소방안전과 안전체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "disaster-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a7c4c40a",
+        "structuredFields": {
+          "kindergartenName": "천사유치원",
+          "kindergartenAddress": "광주광역시 서구 내방로251번길 10-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHqBzzBhEgD%22%20%22%EC%B2%9C%EC%82%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%AC%EB%82%9C%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22%20%22%EA%B4%91%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "광주유치원·서구유치원·쌍촌동유치원 계정 단서가 로컬 광주 서구 천사유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DHqBzzBhEgD/",
+          "normalizedUrl": "www.instagram.com/reel/dhqbzzbhegd",
+          "normalizedText": "광주 천사유치원 재난안전교육 instagram reel 광주 서구 쌍촌동 천사유치원 계정의 재난안전교육 릴 검색 결과에서 소방안전과 안전체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "a7c4c40a",
+          "extractedAt": "2026-07-02T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "천사유치원",
+            "kindergartenAddress": "광주광역시 서구 내방로251번길 10-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHqBzzBhEgD%22%20%22%EC%B2%9C%EC%82%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%AC%EB%82%9C%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22%20%22%EA%B4%91%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "광주유치원·서구유치원·쌍촌동유치원 계정 단서가 로컬 광주 서구 천사유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -6161,6 +6781,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-24f4e44e",
+        "kindergartenId": "1ecec08d-0b29-b044-e053-0a32095ab044",
+        "title": "광주 운암유치원 사과따기 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CzvdTlahmki/",
+        "source": "other",
+        "sourceName": "Instagram · 운암유치원",
+        "snippet": "운암유치원 계정에서 장성 사과 농장 사과 따기체험과 광주유치원 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "apple-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T13:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b5be617d",
+        "structuredFields": {
+          "kindergartenName": "운암유치원",
+          "kindergartenAddress": "광주광역시 북구 서강로 79-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CzvdTlahmki%22+%22%EC%9A%B4%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%AC%EA%B3%BC%EB%94%B0%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운암유치원 동명이 있으나 광주유치원 단서가 광주 북구 운암유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CzvdTlahmki/",
+          "normalizedUrl": "www.instagram.com/p/czvdtlahmki",
+          "normalizedText": "광주 운암유치원 사과따기 체험 instagram post 운암유치원 계정에서 장성 사과 농장 사과 따기체험과 광주유치원 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "b5be617d",
+          "extractedAt": "2026-07-02T13:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암유치원",
+            "kindergartenAddress": "광주광역시 북구 서강로 79-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CzvdTlahmki%22+%22%EC%9A%B4%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%AC%EA%B3%BC%EB%94%B0%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운암유치원 동명이 있으나 광주유치원 단서가 광주 북구 운암유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T13:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-01ab-b044-e053-0a32095ab044": [
@@ -6468,7 +7139,688 @@
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0d54-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99bbd47a",
+        "kindergartenId": "1ecec08d-0d54-b044-e053-0a32095ab044",
+        "title": "광주 세한유치원 유아숲체험 Instagram Post",
+        "url": "https://www.instagram.com/p/Cqcv-OZSJ_V/",
+        "source": "other",
+        "sourceName": "Instagram · 세한유치원",
+        "snippet": "세한유치원, 광주광산구유치원, 송산 물빛 유아숲체험장 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a1d4bae2",
+        "structuredFields": {
+          "kindergartenName": "세한유치원",
+          "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cqcv-OZSJ_V%22+%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9C%A0%EC%95%84%EC%88%B2%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세한유치원은 로컬 원장부에서 유일한 이름이라 게시물 해시태그 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cqcv-OZSJ_V/",
+          "normalizedUrl": "www.instagram.com/p/cqcv-ozsj_v",
+          "normalizedText": "광주 세한유치원 유아숲체험 instagram post 세한유치원, 광주광산구유치원, 송산 물빛 유아숲체험장 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "a1d4bae2",
+          "extractedAt": "2026-07-02T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세한유치원",
+            "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cqcv-OZSJ_V%22+%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9C%A0%EC%95%84%EC%88%B2%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세한유치원은 로컬 원장부에서 유일한 이름이라 게시물 해시태그 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T07:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2ca4ce63",
+        "kindergartenId": "1ecec08d-0d54-b044-e053-0a32095ab044",
+        "title": "광주 세한유치원 교통공원 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/ClH4WADDLP_/",
+        "source": "other",
+        "sourceName": "Instagram · 세한유치원",
+        "snippet": "세한유치원 계정에서 교통공원 견학과 광주유치원·세한유치원·광주광산구 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "579d2a69",
+        "structuredFields": {
+          "kindergartenName": "세한유치원",
+          "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22ClH4WADDLP%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세한유치원 단일 매칭이며 광주광산구 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/ClH4WADDLP_/",
+          "normalizedUrl": "www.instagram.com/reel/clh4waddlp_",
+          "normalizedText": "광주 세한유치원 교통공원 견학 instagram reel 세한유치원 계정에서 교통공원 견학과 광주유치원·세한유치원·광주광산구 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "579d2a69",
+          "extractedAt": "2026-07-02T12:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세한유치원",
+            "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22ClH4WADDLP%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세한유치원 단일 매칭이며 광주광산구 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3cb34356",
+        "kindergartenId": "1ecec08d-0d54-b044-e053-0a32095ab044",
+        "kindergartenName": "세한유치원",
+        "title": "광주 세한유치원 국립광주어린이박물관 역사체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CodwsV-ykZN/",
+        "source": "other",
+        "sourceName": "Instagram · 세한유치원",
+        "snippet": "세한유치원 계정의 국립광주어린이박물관 역사체험여행 게시물 검색 결과에서 광주 운남동 유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "history-experience",
+          "museum-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3171771a",
+        "structuredFields": {
+          "kindergartenName": "세한유치원",
+          "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CodwsV-ykZN%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EA%B4%91%EC%A3%BC%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세한유치원 단일 매칭이며 광주·운남동 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CodwsV-ykZN/",
+          "normalizedUrl": "www.instagram.com/p/codwsv-ykzn",
+          "normalizedText": "광주 세한유치원 국립광주어린이박물관 역사체험 instagram post 세한유치원 계정의 국립광주어린이박물관 역사체험여행 게시물 검색 결과에서 광주 운남동 유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "3171771a",
+          "extractedAt": "2026-07-02T15:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세한유치원",
+            "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CodwsV-ykZN%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EA%B4%91%EC%A3%BC%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세한유치원 단일 매칭이며 광주·운남동 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4b63e89d",
+        "kindergartenId": "1ecec08d-0d54-b044-e053-0a32095ab044",
+        "kindergartenName": "세한유치원",
+        "title": "광주 세한유치원 아나바다 운동 Instagram Post",
+        "url": "https://www.instagram.com/p/CwSCrBsyKUs/",
+        "source": "other",
+        "sourceName": "Instagram · 세한유치원",
+        "snippet": "세한유치원 계정 게시물 검색 결과에서 광주세한유치원, 광산구, 운남동유치원, 아나바다 운동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "sharing-market"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b63e89d",
+        "structuredFields": {
+          "kindergartenName": "세한유치원",
+          "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CwSCrBsyKUs%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "광주, 광산구, 운남동 단서와 로컬 세한유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CwSCrBsyKUs/",
+          "normalizedUrl": "www.instagram.com/p/cwscrbsykus",
+          "normalizedText": "광주 세한유치원 아나바다 운동 instagram post 세한유치원 계정 게시물 검색 결과에서 광주세한유치원, 광산구, 운남동유치원, 아나바다 운동 단서가 확인된다.",
+          "htmlSnapshotHash": "4b63e89d",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "세한유치원",
+            "kindergartenAddress": "광주광역시 광산구 목련로 192-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CwSCrBsyKUs%22%20%22%EC%84%B8%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "광주, 광산구, 운남동 단서와 로컬 세한유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "d40d3e54-1d1a-4ad3-ab0d-69ea109b1825": [
+      {
+        "id": "rev-05d9159e",
+        "kindergartenId": "d40d3e54-1d1a-4ad3-ab0d-69ea109b1825",
+        "title": "광주 레인보우유치원 오감놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIQlGxdPwsn/",
+        "source": "other",
+        "sourceName": "Instagram · 레인보우유치원",
+        "snippet": "레인보우유치원 계정에서 광산구유치원, 신창동유치원, 오감놀이수업 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sensory-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T09:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b901a190",
+        "structuredFields": {
+          "kindergartenName": "레인보우유치원",
+          "kindergartenAddress": "광주광역시 광산구 장신로 306",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIQlGxdPwsn%22+%22%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%82%B0%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "레인보우유치원 동명이 있으나 광산구와 신창동 지역 단서가 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIQlGxdPwsn/",
+          "normalizedUrl": "www.instagram.com/reel/diqlgxdpwsn",
+          "normalizedText": "광주 레인보우유치원 오감놀이 instagram reel 레인보우유치원 계정에서 광산구유치원, 신창동유치원, 오감놀이수업 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "b901a190",
+          "extractedAt": "2026-07-02T09:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "레인보우유치원",
+            "kindergartenAddress": "광주광역시 광산구 장신로 306",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIQlGxdPwsn%22+%22%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B4%91%EC%82%B0%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "레인보우유치원 동명이 있으나 광산구와 신창동 지역 단서가 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T09:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-04ba-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a859746b",
+        "kindergartenId": "1ecec08d-04ba-b044-e053-0a32095ab044",
+        "kindergartenName": "파란나라유치원",
+        "title": "광주 파란나라유치원 한국잡월드 직업체험 Instagram Post",
+        "url": "https://www.instagram.com/p/C2erq4Jr2it/",
+        "source": "other",
+        "sourceName": "Instagram · 파란나라유치원",
+        "snippet": "파란나라유치원 계정의 한국잡월드 직업체험 게시물 검색 결과에서 6, 7세 유아의 다양한 직업 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "career-experience",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aeb2988b",
+        "structuredFields": {
+          "kindergartenName": "파란나라유치원",
+          "kindergartenAddress": "광주광역시 광산구 사암로92번길 69-15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2erq4Jr2it%22%20%22%ED%8C%8C%EB%9E%80%EB%82%98%EB%9D%BC%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EA%B5%AD%20%EC%9E%A1%EC%9B%94%EB%93%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "parannarakids 계정 프로필과 광주 광산구 주소 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C2erq4Jr2it/",
+          "normalizedUrl": "www.instagram.com/p/c2erq4jr2it",
+          "normalizedText": "광주 파란나라유치원 한국잡월드 직업체험 instagram post 파란나라유치원 계정의 한국잡월드 직업체험 게시물 검색 결과에서 6, 7세 유아의 다양한 직업 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "aeb2988b",
+          "extractedAt": "2026-07-02T15:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "파란나라유치원",
+            "kindergartenAddress": "광주광역시 광산구 사암로92번길 69-15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C2erq4Jr2it%22%20%22%ED%8C%8C%EB%9E%80%EB%82%98%EB%9D%BC%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EA%B5%AD%20%EC%9E%A1%EC%9B%94%EB%93%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "parannarakids 계정 프로필과 광주 광산구 주소 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-385644a6",
+        "kindergartenId": "1ecec08d-04ba-b044-e053-0a32095ab044",
+        "kindergartenName": "파란나라유치원",
+        "title": "광주 파란나라유치원 오케스트라 공연관람 Instagram Post",
+        "url": "https://www.instagram.com/p/C0yUajzLKsV/",
+        "source": "other",
+        "sourceName": "Instagram · 파란나라유치원",
+        "snippet": "파란나라유치원 계정의 음악이 내리는 어느 날 오케스트라 공연 관람 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "music"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6e2cec38",
+        "structuredFields": {
+          "kindergartenName": "파란나라유치원",
+          "kindergartenAddress": "광주광역시 광산구 사암로92번길 69-15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0yUajzLKsV%22%20%22%ED%8C%8C%EB%9E%80%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%98%A4%EC%BC%80%EC%8A%A4%ED%8A%B8%EB%9D%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "parannarakids 계정 프로필과 광주 광산구 주소 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0yUajzLKsV/",
+          "normalizedUrl": "www.instagram.com/p/c0yuajzlksv",
+          "normalizedText": "광주 파란나라유치원 오케스트라 공연관람 instagram post 파란나라유치원 계정의 음악이 내리는 어느 날 오케스트라 공연 관람 게시물 검색 결과.",
+          "htmlSnapshotHash": "6e2cec38",
+          "extractedAt": "2026-07-02T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "파란나라유치원",
+            "kindergartenAddress": "광주광역시 광산구 사암로92번길 69-15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0yUajzLKsV%22%20%22%ED%8C%8C%EB%9E%80%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%98%A4%EC%BC%80%EC%8A%A4%ED%8A%B8%EB%9D%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "parannarakids 계정 프로필과 광주 광산구 주소 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1fc6dd86-ccd0-d1d2-e053-0a32095ad1d2": [
+      {
+        "id": "rev-59317cd7",
+        "kindergartenId": "1fc6dd86-ccd0-d1d2-e053-0a32095ad1d2",
+        "kindergartenName": "라예송유치원",
+        "title": "광주 라예송유치원 제페토의 작업실 공연관람 Instagram Post",
+        "url": "https://www.instagram.com/p/DZEodjUE85J/",
+        "source": "other",
+        "sourceName": "Instagram · 광주 라예송 유치원",
+        "snippet": "광주 라예송유치원 계정의 제페토의 작업실 공연관람 게시물 검색 결과에서 친구들과 함께 ACC 공연을 관람한 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "be158c6e",
+        "structuredFields": {
+          "kindergartenName": "라예송유치원",
+          "kindergartenAddress": "광주광역시 북구 면앙로133번길 83-2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZEodjUE85J%22%20%22%EA%B4%91%EC%A3%BC%20%EB%9D%BC%EC%98%88%EC%86%A1%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EC%97%B0%EA%B4%80%EB%9E%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "광주 라예송 유치원 계정 단서가 광주 북구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZEodjUE85J/",
+          "normalizedUrl": "www.instagram.com/p/dzeodjue85j",
+          "normalizedText": "광주 라예송유치원 제페토의 작업실 공연관람 instagram post 광주 라예송유치원 계정의 제페토의 작업실 공연관람 게시물 검색 결과에서 친구들과 함께 acc 공연을 관람한 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "be158c6e",
+          "extractedAt": "2026-07-02T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "라예송유치원",
+            "kindergartenAddress": "광주광역시 북구 면앙로133번길 83-2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZEodjUE85J%22%20%22%EA%B4%91%EC%A3%BC%20%EB%9D%BC%EC%98%88%EC%86%A1%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EC%97%B0%EA%B4%80%EB%9E%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "광주 라예송 유치원 계정 단서가 광주 북구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f9e3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a7c0fa4e",
+        "kindergartenId": "1ecec08c-f9e3-b044-e053-0a32095ab044",
+        "kindergartenName": "소향유치원",
+        "title": "광주 소향유치원 찾아오는 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DHnYJpAB6ID/",
+        "source": "other",
+        "sourceName": "Instagram · 소향유치원",
+        "snippet": "소향유치원에 교통안전 선생님들이 찾아와 골목길 보행안전과 화재안전을 함께 교육한 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b56109a9",
+        "structuredFields": {
+          "kindergartenName": "소향유치원",
+          "kindergartenAddress": "광주광역시 서구 풍암순환로 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHnYJpAB6ID%22%20%22%EC%86%8C%ED%96%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "소향유치원은 로컬 원장부 단일 매칭이며 계정명과 교통안전교육 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHnYJpAB6ID/",
+          "normalizedUrl": "www.instagram.com/p/dhnyjpab6id",
+          "normalizedText": "광주 소향유치원 찾아오는 교통안전교육 instagram post 소향유치원에 교통안전 선생님들이 찾아와 골목길 보행안전과 화재안전을 함께 교육한 게시물 검색 결과.",
+          "htmlSnapshotHash": "b56109a9",
+          "extractedAt": "2026-07-02T17:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "소향유치원",
+            "kindergartenAddress": "광주광역시 서구 풍암순환로 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHnYJpAB6ID%22%20%22%EC%86%8C%ED%96%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "소향유치원은 로컬 원장부 단일 매칭이며 계정명과 교통안전교육 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0c28-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-61443c13",
+        "kindergartenId": "1ecec08d-0c28-b044-e053-0a32095ab044",
+        "kindergartenName": "한나래유치원",
+        "title": "광주 한나래유치원 인라인 스케이트 Instagram Post",
+        "url": "https://www.instagram.com/p/CvrQCRBPGJo/",
+        "source": "other",
+        "sourceName": "Instagram · 한나래유치원",
+        "snippet": "한나래유치원 계정의 게시물 검색 결과에서 원아들이 인라인 스케이트를 안전하게 탈 수 있다는 체육활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "skating",
+          "physical-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:30.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "61443c13",
+        "structuredFields": {
+          "kindergartenName": "한나래유치원",
+          "kindergartenAddress": "광주광역시 북구 연제외촌길 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CvrQCRBPGJo%22%20%22%ED%95%9C%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EB%9D%BC%EC%9D%B8%20%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%8A%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "광주 지역 한나래유치원 계정 단서와 로컬 광주 북구 한나래유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CvrQCRBPGJo/",
+          "normalizedUrl": "www.instagram.com/p/cvrqcrbpgjo",
+          "normalizedText": "광주 한나래유치원 인라인 스케이트 instagram post 한나래유치원 계정의 게시물 검색 결과에서 원아들이 인라인 스케이트를 안전하게 탈 수 있다는 체육활동 단서가 확인된다.",
+          "htmlSnapshotHash": "61443c13",
+          "extractedAt": "2026-07-02T23:59:30.000Z",
+          "structuredFields": {
+            "kindergartenName": "한나래유치원",
+            "kindergartenAddress": "광주광역시 북구 연제외촌길 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CvrQCRBPGJo%22%20%22%ED%95%9C%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EB%9D%BC%EC%9D%B8%20%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%8A%B8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "광주 지역 한나래유치원 계정 단서와 로컬 광주 북구 한나래유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:30.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fd77-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3f23ab5f",
+        "kindergartenId": "1ecec08c-fd77-b044-e053-0a32095ab044",
+        "kindergartenName": "모모유치원",
+        "title": "광주 모모유치원 과학체험행사 Instagram Post",
+        "url": "https://www.instagram.com/p/BUBYaq-FNeo/",
+        "source": "other",
+        "sourceName": "Instagram · 모모유치원",
+        "snippet": "모모유치원 관련 게시물 검색 결과에서 과학체험행사, 아빠와 함께하는 즐거운 시간, 과학 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science",
+          "science-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:52.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3f23ab5f",
+        "structuredFields": {
+          "kindergartenName": "모모유치원",
+          "kindergartenAddress": "광주광역시 광산구 월계로 117-32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22BUBYaq-FNeo%22%20%22%EB%AA%A8%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "모모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/BUBYaq-FNeo/",
+          "normalizedUrl": "www.instagram.com/p/bubyaq-fneo",
+          "normalizedText": "광주 모모유치원 과학체험행사 instagram post 모모유치원 관련 게시물 검색 결과에서 과학체험행사, 아빠와 함께하는 즐거운 시간, 과학 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "3f23ab5f",
+          "extractedAt": "2026-07-02T23:59:52.000Z",
+          "structuredFields": {
+            "kindergartenName": "모모유치원",
+            "kindergartenAddress": "광주광역시 광산구 월계로 117-32",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22BUBYaq-FNeo%22%20%22%EB%AA%A8%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "모모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:52.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fd75-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4a0f10cb",
+        "kindergartenId": "1ecec08c-fd75-b044-e053-0a32095ab044",
+        "kindergartenName": "마재초등학교병설유치원",
+        "title": "광주 마재초등학교병설유치원 문화의숲도서관 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY8dcg6zt3P/",
+        "source": "other",
+        "sourceName": "Instagram · 김영수도서관",
+        "snippet": "김영수도서관 계정 게시물 검색 결과에서 문화의숲도서관, RePlay ESG프로젝트, 마재초병설유치원, 도서관체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:54.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4a0f10cb",
+        "structuredFields": {
+          "kindergartenName": "마재초등학교병설유치원",
+          "kindergartenAddress": "광주광역시 서구 마재로 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY8dcg6zt3P%22%20%22%EB%A7%88%EC%9E%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "마재초등학교병설유치원은 로컬 원장부에서 단일 명칭이며 문화의숲도서관·마재초병설유치원 단서와 광주 서구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY8dcg6zt3P/",
+          "normalizedUrl": "www.instagram.com/reel/dy8dcg6zt3p",
+          "normalizedText": "광주 마재초등학교병설유치원 문화의숲도서관 체험 instagram reel 김영수도서관 계정 게시물 검색 결과에서 문화의숲도서관, replay esg프로젝트, 마재초병설유치원, 도서관체험 단서가 확인된다.",
+          "htmlSnapshotHash": "4a0f10cb",
+          "extractedAt": "2026-07-02T23:59:54.000Z",
+          "structuredFields": {
+            "kindergartenName": "마재초등학교병설유치원",
+            "kindergartenAddress": "광주광역시 서구 마재로 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY8dcg6zt3P%22%20%22%EB%A7%88%EC%9E%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "마재초등학교병설유치원은 로컬 원장부에서 단일 명칭이며 문화의숲도서관·마재초병설유치원 단서와 광주 서구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:54.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave666-5650de25",
+        "kindergartenId": "1ecec08c-fd75-b044-e053-0a32095ab044",
+        "title": "마재초등학교병설유치원 도서관 그림책 활동 기록",
+        "url": "https://www.instagram.com/p/DZElGZZE8li/",
+        "source": "other",
+        "sourceName": "Instagram · 문화의숲도서관",
+        "snippet": "문화의숲도서관이 마재초등학교병설유치원 어린이들의 도서관 방문과 그림책 활동을 소개한 공개 게시물입니다.",
+        "summary": "도서관 방문과 그림책 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "library-visit"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-5650de25",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZElGZZE8li/",
+          "normalizedUrl": "instagram.com/p/dzelgzze8li",
+          "normalizedText": "문화의숲도서관 마재초등학교병설유치원 도서관 그림책 활동",
+          "htmlSnapshotHash": "sns-wave666-5650de25",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZElGZZE8li/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T17:25:00.000Z"
 }

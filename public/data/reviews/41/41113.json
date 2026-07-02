@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 28,
-  "kindergartenCount": 16,
+  "version": "2026-07-03",
+  "totalCount": 32,
+  "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-09da-b044-e053-0a32095ab044": [
       {
@@ -107,6 +107,58 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-4ad02111",
+        "kindergartenId": "4502c027-9527-4513-a53b-d31a604c44d2",
+        "title": "수원금호초등학교병설유치원 생존수영 Instagram Post",
+        "url": "https://www.instagram.com/p/DMhNSnNykPV/",
+        "source": "other",
+        "sourceName": "Instagram · 수원금호초등학교병설유치원",
+        "snippet": "검색 결과에서 수원 금호초 병설유치원, 물놀이 안전, 생존 수영 수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-safety",
+          "swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4ad02111",
+        "structuredFields": {
+          "kindergartenName": "수원금호초등학교병설유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMhNSnNykPV/",
+          "normalizedUrl": "instagram.com/p/dmhnsnnykpv",
+          "normalizedText": "수원금호초등학교병설유치원 생존수영 instagram post 검색 결과에서 수원 금호초 병설유치원 물놀이 안전 생존 수영 수업 단서가 확인된다.",
+          "htmlSnapshotHash": "4ad02111",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수원금호초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "6e9537b7-a67b-46e7-83f9-a66ecfb72cf4": [
@@ -889,6 +941,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T13:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4b7f584f",
+        "kindergartenId": "1ecec08c-f342-b044-e053-0a32095ab044",
+        "title": "수원 세림유치원 졸업발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/C0gcdyvpAi4/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 유치원 졸업발표회, #세림유치원 #수원유치원 #숲유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "presentation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T08:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b7f584f",
+        "structuredFields": {
+          "kindergartenName": "세림유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 권선로694번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0gcdyvpAi4%22%20%22%EC%84%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세림유치원은 로컬 원장부에서 단일 정확 명칭이며 수원유치원 단서와 주소가 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0gcdyvpAi4/",
+          "normalizedUrl": "instagram.com/p/c0gcdyvpai4",
+          "normalizedText": "수원 세림유치원 졸업발표회 instagram post 검색 결과에서 유치원 졸업발표회, #세림유치원 #수원유치원 #숲유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "4b7f584f",
+          "extractedAt": "2026-07-03T08:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세림유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 권선로694번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0gcdyvpAi4%22%20%22%EC%84%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세림유치원은 로컬 원장부에서 단일 정확 명칭이며 수원유치원 단서와 주소가 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T08:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f9f3-b044-e053-0a32095ab044": [
@@ -1048,8 +1152,96 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0b37cca9",
+        "kindergartenId": "1ecec08c-ff64-b044-e053-0a32095ab044",
+        "title": "수원 은정유치원 발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/DUB3zVcE4kQ/",
+        "source": "other",
+        "sourceName": "Instagram · 수원은정유치원",
+        "snippet": "검색 결과에서 2026년 1월 27일 은정유치원 발표회, 수원은정유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "presentation"
+        ],
+        "date": "2026-01-27",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0b37cca9",
+        "structuredFields": {
+          "kindergartenName": "은정유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 경수대로302번길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUB3zVcE4kQ%22%20%22%EC%88%98%EC%9B%90%EC%9D%80%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "은정유치원 동명 후보가 있으나 검색 결과의 수원은정유치원 단서가 로컬 경기 수원시 권선구 은정유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUB3zVcE4kQ/",
+          "normalizedUrl": "instagram.com/p/dub3zvce4kq",
+          "normalizedText": "수원 은정유치원 발표회 instagram post 검색 결과에서 2026년 1월 27일 은정유치원 발표회 수원은정유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "0b37cca9",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "은정유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 경수대로302번길 29",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUB3zVcE4kQ%22%20%22%EC%88%98%EC%9B%90%EC%9D%80%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "은정유치원 동명 후보가 있으나 검색 결과의 수원은정유치원 단서가 로컬 경기 수원시 권선구 은정유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f3b0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave666-5c72924e",
+        "kindergartenId": "1ecec08c-f3b0-b044-e053-0a32095ab044",
+        "title": "수원금곡초등학교병설유치원 미니도서관 기록",
+        "url": "https://www.instagram.com/p/DVfAheOk4tT/",
+        "source": "other",
+        "sourceName": "Instagram · 수원금곡초등학교병설유치원",
+        "snippet": "수원금곡초등학교병설유치원이 미니도서관 공간을 소개한 공개 게시물입니다.",
+        "summary": "유치원 안의 책 읽기 환경을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book"
+        ],
+        "date": "2026-03-04",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-5c72924e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVfAheOk4tT/",
+          "normalizedUrl": "instagram.com/p/dvfaheok4tt",
+          "normalizedText": "수원금곡초등학교병설유치원 미니도서관 수원유치원 병설유치원",
+          "htmlSnapshotHash": "sns-wave666-5c72924e",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVfAheOk4tT/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

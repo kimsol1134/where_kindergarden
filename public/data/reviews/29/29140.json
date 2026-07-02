@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 40,
+  "version": "2026-07-03",
+  "totalCount": 44,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-092c-b044-e053-0a32095ab044": [
@@ -715,6 +715,122 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-38746cef",
+        "kindergartenId": "1ecec08c-fe39-b044-e053-0a32095ab044",
+        "kindergartenName": "신나는유치원",
+        "title": "광주 신나는유치원 유초이음 민속놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DTRTlxjkw9v/",
+        "source": "other",
+        "sourceName": "Instagram · 신나는유치원",
+        "snippet": "Instagram 검색 결과에서 snn.kinder 계정의 SNN Kindergarten 예비초등 유초이음 활동, 치평초등학교 방문과 민속놀이 문맥이 확인되는 게시물.",
+        "date": "2026-01-08",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "folk-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "신나는유치원",
+          "kindergartenAddress": "광주광역시 서구 치평로 73",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTRTlxjkw9v%22+%22%EC%8B%A0%EB%82%98%EB%8A%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%AF%BC%EC%86%8D%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DTRTlxjkw9v/",
+          "regionEvidence": [
+            "snn.kinder",
+            "신나는유치원",
+            "치평초등학교",
+            "민속놀이"
+          ]
+        },
+        "evidenceChecksum": "7483942c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTRTlxjkw9v/",
+          "normalizedUrl": "instagram.com/shortcode/dtrtlxjkw9v",
+          "normalizedText": "광주 신나는유치원 유초이음 민속놀이 instagram post instagram 검색 결과에서 snn.kinder 계정의 snn kindergarten 예비초등 유초이음 활동, 치평초등학교 방문과 민속놀이 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "f92f1cbf",
+          "extractedAt": "2026-07-02T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신나는유치원",
+            "kindergartenAddress": "광주광역시 서구 치평로 73",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTRTlxjkw9v%22+%22%EC%8B%A0%EB%82%98%EB%8A%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%AF%BC%EC%86%8D%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DTRTlxjkw9v/",
+            "regionEvidence": [
+              "snn.kinder",
+              "신나는유치원",
+              "치평초등학교",
+              "민속놀이"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-579ea54e",
+        "kindergartenId": "1ecec08c-fe39-b044-e053-0a32095ab044",
+        "title": "광주 신나는유치원 로봇과학 코딩데이 Instagram Post",
+        "url": "https://www.instagram.com/p/CgTqEZrrDqW/",
+        "source": "other",
+        "sourceName": "Instagram · 신나는유치원",
+        "snippet": "검색 결과에서 신나는유치원의 로봇과학, 스페셜 코딩데이, 광주 서구유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "robot-science",
+          "coding"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "579ea54e",
+        "structuredFields": {
+          "kindergartenName": "신나는유치원",
+          "kindergartenAddress": "광주광역시 서구 치평로 73",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CgTqEZrrDqW%22%20%22%EC%8B%A0%EB%82%98%EB%8A%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A1%9C%EB%B4%87%EA%B3%BC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "신나는유치원은 로컬 원장부 단일 정확 명칭이며 광주 서구 단서와 로컬 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CgTqEZrrDqW/",
+          "normalizedUrl": "instagram.com/p/cgtqezrrdqw",
+          "normalizedText": "광주 신나는유치원 로봇과학 코딩데이 instagram post 검색 결과에서 신나는유치원의 로봇과학, 스페셜 코딩데이, 광주 서구유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "579ea54e",
+          "extractedAt": "2026-07-03T15:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신나는유치원",
+            "kindergartenAddress": "광주광역시 서구 치평로 73",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CgTqEZrrDqW%22%20%22%EC%8B%A0%EB%82%98%EB%8A%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A1%9C%EB%B4%87%EA%B3%BC%ED%95%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "신나는유치원은 로컬 원장부 단일 정확 명칭이며 광주 서구 단서와 로컬 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1518,6 +1634,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-11fdc24a",
+        "kindergartenId": "1ecec08c-f9ff-b044-e053-0a32095ab044",
+        "title": "워싱턴유치원 2024학년도 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGe-9mahRuW/",
+        "source": "other",
+        "sourceName": "Instagram · washington_kindergarten",
+        "snippet": "검색 결과에서 워싱턴유치원 친구들의 2024학년도 졸업식 모습과 졸업 축하 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "11fdc24a",
+        "structuredFields": {
+          "kindergartenName": "워싱턴유치원",
+          "kindergartenAddress": "광주광역시 서구 칠성로 21-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGe-9mahRuW%22%20%22washington_kindergarten%22%20%22%EC%9B%8C%EC%8B%B1%ED%84%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "워싱턴유치원은 로컬 원장부에서 단일 명칭이며 계정명과 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGe-9mahRuW/",
+          "normalizedUrl": "instagram.com/reel/dge-9mahruw",
+          "normalizedText": "워싱턴유치원 2024학년도 졸업식 instagram reel 검색 결과에서 워싱턴유치원 친구들의 2024학년도 졸업식 모습과 졸업 축하 단서가 확인된다.",
+          "htmlSnapshotHash": "11fdc24a",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "워싱턴유치원",
+            "kindergartenAddress": "광주광역시 서구 칠성로 21-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGe-9mahRuW%22%20%22washington_kindergarten%22%20%22%EC%9B%8C%EC%8B%B1%ED%84%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "워싱턴유치원은 로컬 원장부에서 단일 명칭이며 계정명과 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ef79-b044-e053-0a32095ab044": [
@@ -1974,8 +2141,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:54.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave666-5650de25",
+        "kindergartenId": "1ecec08c-fd75-b044-e053-0a32095ab044",
+        "title": "마재초등학교병설유치원 도서관 그림책 활동 기록",
+        "url": "https://www.instagram.com/p/DZElGZZE8li/",
+        "source": "other",
+        "sourceName": "Instagram · 문화의숲도서관",
+        "snippet": "문화의숲도서관이 마재초등학교병설유치원 어린이들의 도서관 방문과 그림책 활동을 소개한 공개 게시물입니다.",
+        "summary": "도서관 방문과 그림책 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "library-visit"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave666-5650de25",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZElGZZE8li/",
+          "normalizedUrl": "instagram.com/p/dzelgzze8li",
+          "normalizedText": "문화의숲도서관 마재초등학교병설유치원 도서관 그림책 활동",
+          "htmlSnapshotHash": "sns-wave666-5650de25",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZElGZZE8li/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave666"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
