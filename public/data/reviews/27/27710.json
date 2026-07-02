@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 56,
+  "totalCount": 57,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -2022,6 +2022,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:40:00.000Z",
         "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
+        "id": "rev-sns-wave684-90587acf",
+        "kindergartenId": "1ecec08d-038c-b044-e053-0a32095ab044",
+        "title": "해피키즈유치원 자연 속 과학 탐구 기록",
+        "url": "https://www.instagram.com/reel/DW-XHWXEms4/",
+        "source": "other",
+        "sourceName": "Instagram · 해피키즈유치원",
+        "snippet": "해피키즈유치원 7세반이 자연 속 숨은 과학을 찾으며 단풍씨가 돌며 내려오는 이유를 함께 탐구한 공개 릴스입니다.",
+        "summary": "자연 관찰을 과학 질문으로 확장한 탐구 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-activity",
+          "inquiry",
+          "nature-science"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:45.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave684-90587acf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW-XHWXEms4/",
+          "normalizedUrl": "instagram.com/reel/dw-xhwxems4",
+          "normalizedText": "해피키즈유치원 7세 자연 속 과학 단풍씨 탐구 과학실험체험",
+          "htmlSnapshotHash": "sns-wave684-90587acf",
+          "extractedAt": "2026-07-03T23:59:45.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DW-XHWXEms4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:45.000Z",
+        "approvedBy": "codex-manual-sns-wave684"
       }
     ],
     "b879d256-bab2-4ccc-b5ab-9bc5c7aeab6d": [

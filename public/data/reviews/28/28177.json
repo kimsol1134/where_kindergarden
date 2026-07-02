@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 29,
+  "version": "2026-07-03",
+  "totalCount": 31,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0a30-b044-e053-0a32095ab044": [
@@ -76,6 +76,70 @@
         "snippet": "pa61213 리뷰 48사진 58팔로워 4 큰아이 작은아이 둘다 보내고있어요 선생님들께서 친절하셔서 믿고보내요^^ 1번째 방문",
         "date": "2024-05-02",
         "collectedAt": "2026-04-05T15:17:53.966Z"
+      },
+      {
+        "id": "rev-a0a93d96",
+        "kindergartenId": "1ecec08c-f0f2-b044-e053-0a32095ab044",
+        "kindergartenName": "미주유치원",
+        "title": "인천 미주유치원 설날 민속놀이 Reel",
+        "url": "https://www.instagram.com/reel/DUu4elLkbVx/",
+        "source": "other",
+        "sourceName": "Instagram · 미주유치원",
+        "snippet": "Instagram 검색 결과에서 미주유치원, 인천유치원, 주안유치원, 도화동유치원 문맥과 설날행사 민속놀이 활동이 확인되는 릴.",
+        "date": "2026-02-12",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "folk-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "미주유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 석정로461번길 19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUu4elLkbVx%22+%22%EB%AF%B8%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DUu4elLkbVx/",
+          "regionEvidence": [
+            "미주유치원",
+            "인천유치원",
+            "주안유치원",
+            "도화동유치원"
+          ]
+        },
+        "evidenceChecksum": "0ae0628c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUu4elLkbVx/",
+          "normalizedUrl": "instagram.com/shortcode/duu4ellkbvx",
+          "normalizedText": "인천 미주유치원 설날 민속놀이 reel instagram 검색 결과에서 미주유치원, 인천유치원, 주안유치원, 도화동유치원 문맥과 설날행사 민속놀이 활동이 확인되는 릴.",
+          "htmlSnapshotHash": "70f6714c",
+          "extractedAt": "2026-07-02T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "미주유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 석정로461번길 19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUu4elLkbVx%22+%22%EB%AF%B8%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DUu4elLkbVx/",
+            "regionEvidence": [
+              "미주유치원",
+              "인천유치원",
+              "주안유치원",
+              "도화동유치원"
+            ]
+          }
+        }
       }
     ],
     "1ecec08c-f523-b044-e053-0a32095ab044": [
@@ -1199,8 +1263,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:57.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave684-bc9b7566",
+        "kindergartenId": "1ecec08c-f5cc-b044-e053-0a32095ab044",
+        "title": "유원유치원 과학의 날 놀이 기록",
+        "url": "https://www.instagram.com/p/DIlNNCbRLJL/",
+        "source": "other",
+        "sourceName": "Instagram · 유원유치원",
+        "snippet": "인천 미추홀구 유원유치원이 과학의 날을 맞아 커피점토 놀이, 토네이도 만들기, 낙하산 만들기 등을 진행한 공개 게시물입니다.",
+        "summary": "여러 과학 놀이를 체험형으로 운영한 과학의 날 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-day",
+          "science-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:45.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave684-bc9b7566",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIlNNCbRLJL/",
+          "normalizedUrl": "instagram.com/p/dilnncbrljl",
+          "normalizedText": "유원유치원 미추홀구 과학의날 커피점토 토네이도 비닐낙하산",
+          "htmlSnapshotHash": "sns-wave684-bc9b7566",
+          "extractedAt": "2026-07-03T23:59:45.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DIlNNCbRLJL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:45.000Z",
+        "approvedBy": "codex-manual-sns-wave684"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T01:44:50.794Z"
+  }
 }

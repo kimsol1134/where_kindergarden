@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 39,
+  "totalCount": 40,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -407,6 +407,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave669"
+      },
+      {
+        "id": "rev-sns-wave684-b8bf772f",
+        "kindergartenId": "1ecec08c-fa81-b044-e053-0a32095ab044",
+        "title": "이화정원유치원 과학의 날 실험놀이 기록",
+        "url": "https://www.instagram.com/p/DXYz42Fn2H4/",
+        "source": "other",
+        "sourceName": "Instagram · 이화정원유치원",
+        "snippet": "이화정원유치원이 과학의 날을 맞아 화석 만들기와 공룡 놀이를 연결한 실험놀이 활동을 소개한 공개 게시물입니다.",
+        "summary": "유아가 직접 만들고 찾아보는 과학 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-day",
+          "science-play",
+          "experiment"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:45.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave684-b8bf772f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXYz42Fn2H4/",
+          "normalizedUrl": "instagram.com/p/dxyz42fn2h4",
+          "normalizedText": "이화정원유치원 과학의 날 과학놀이 화석 공룡 실험놀이",
+          "htmlSnapshotHash": "sns-wave684-b8bf772f",
+          "extractedAt": "2026-07-03T23:59:45.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXYz42Fn2H4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:45.000Z",
+        "approvedBy": "codex-manual-sns-wave684"
       }
     ],
     "1ecec08c-f02e-b044-e053-0a32095ab044": [

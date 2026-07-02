@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 359,
+  "totalCount": 360,
   "kindergartenCount": 112,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -13884,6 +13884,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:57.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave684-bc9b7566",
+        "kindergartenId": "1ecec08c-f5cc-b044-e053-0a32095ab044",
+        "title": "유원유치원 과학의 날 놀이 기록",
+        "url": "https://www.instagram.com/p/DIlNNCbRLJL/",
+        "source": "other",
+        "sourceName": "Instagram · 유원유치원",
+        "snippet": "인천 미추홀구 유원유치원이 과학의 날을 맞아 커피점토 놀이, 토네이도 만들기, 낙하산 만들기 등을 진행한 공개 게시물입니다.",
+        "summary": "여러 과학 놀이를 체험형으로 운영한 과학의 날 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-day",
+          "science-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:45.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave684-bc9b7566",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIlNNCbRLJL/",
+          "normalizedUrl": "instagram.com/p/dilnncbrljl",
+          "normalizedText": "유원유치원 미추홀구 과학의날 커피점토 토네이도 비닐낙하산",
+          "htmlSnapshotHash": "sns-wave684-bc9b7566",
+          "extractedAt": "2026-07-03T23:59:45.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DIlNNCbRLJL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:45.000Z",
+        "approvedBy": "codex-manual-sns-wave684"
       }
     ],
     "1ecec08d-0a17-b044-e053-0a32095ab044": [
@@ -14094,5 +14130,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:45.000Z"
 }
