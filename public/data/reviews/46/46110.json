@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 6,
+  "version": "2026-07-03",
+  "totalCount": 7,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
@@ -112,6 +112,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-a765c09e",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 고구마심기 텃밭놀이 기록",
+        "url": "https://www.instagram.com/reel/DYg_CckRLuG/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "목포 해바라기유치원이 유치원 텃밭에서 감자와 고구마를 심어본 자연놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "씨감자와 고구마 줄기를 살펴보며 작물의 성장을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "planting"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-a765c09e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYg_CckRLuG/",
+          "normalizedUrl": "instagram.com/reel/dyg_cckrlug",
+          "normalizedText": "목포해바라기유치원 자연놀이 고구마심기 텃밭놀이 감자심기",
+          "htmlSnapshotHash": "sns-wave673-a765c09e",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYg_CckRLuG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-ff14-b044-e053-0a32095ab044": [

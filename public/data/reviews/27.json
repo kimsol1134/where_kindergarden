@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 506,
+  "totalCount": 507,
   "kindergartenCount": 122,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -16860,6 +16860,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-69a6896c",
+        "kindergartenId": "1ecec08c-f9c8-b044-e053-0a32095ab044",
+        "title": "아이러브유치원 텃밭 이야기 기록",
+        "url": "https://www.instagram.com/reel/DZtKS3mIaFA/",
+        "source": "other",
+        "sourceName": "Instagram · 아이러브유치원",
+        "snippet": "아이러브유치원이 아이들이 정성껏 가꾸는 텃밭과 식물 관찰 활동을 소개한 공개 릴스입니다.",
+        "summary": "자연의 소중함과 기다림을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "plant-observation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-69a6896c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZtKS3mIaFA/",
+          "normalizedUrl": "instagram.com/reel/dztks3miafa",
+          "normalizedText": "아이러브유치원 텃밭 이야기 자연 생명 식물 관찰",
+          "htmlSnapshotHash": "sns-wave673-69a6896c",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZtKS3mIaFA/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-f6fc-b044-e053-0a32095ab044": [
@@ -22249,5 +22285,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
 }

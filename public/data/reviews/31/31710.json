@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 5,
+  "version": "2026-07-03",
+  "totalCount": 7,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08d-07ab-b044-e053-0a32095ab044": [
@@ -142,6 +142,78 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-9b0f87d8",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "연세자연유치원 간절곶 숲놀이 기록",
+        "url": "https://www.instagram.com/p/DWYhUSIE5lz/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 5세 아이들과 간절곶에서 숲놀이를 다녀온 공개 게시물입니다.",
+        "summary": "넓은 들판에서 몸을 움직이고 자연을 탐색한 숲놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "forest-play",
+          "field-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-9b0f87d8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWYhUSIE5lz/",
+          "normalizedUrl": "instagram.com/p/dwyhusie5lz",
+          "normalizedText": "연세자연유치원 5세 간절곶 숲놀이 자연놀이",
+          "htmlSnapshotHash": "sns-wave673-9b0f87d8",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWYhUSIE5lz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
+      },
+      {
+        "id": "rev-sns-wave673-e00fa774",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "연세자연유치원 솔방울 보물찾기 숲체험 기록",
+        "url": "https://www.instagram.com/p/DWTgAS_Ey1Z/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 6세 아이들과 간절곶 숲체험에서 솔방울 보물찾기를 한 공개 게시물입니다.",
+        "summary": "숲에서 자연물을 찾고 관찰하는 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "forest-play",
+          "pinecone"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-e00fa774",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWTgAS_Ey1Z/",
+          "normalizedUrl": "instagram.com/p/dwtgas_ey1z",
+          "normalizedText": "연세자연유치원 6세 간절곶 숲놀이 솔방울 보물찾기",
+          "htmlSnapshotHash": "sns-wave673-e00fa774",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWTgAS_Ey1Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-f5c4-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 26,
+  "version": "2026-07-03",
+  "totalCount": 28,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08d-0168-b044-e053-0a32095ab044": [
@@ -208,6 +208,58 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-cdf1ac9e",
+        "kindergartenId": "1ecec08c-f832-b044-e053-0a32095ab044",
+        "title": "고양 일산 한솔유치원 합주연습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRKL2IaEslo/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "검색 결과에서 한솔유치원의 합주 시간과 합주연습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ensemble",
+          "music-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cdf1ac9e",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "경기도 고양시 일산동구 백석로 119",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRKL2IaEslo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%A9%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한솔유치원은 동명 후보가 많으나 일산 계정 단서가 로컬 경기도 고양시 일산동구 한솔유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRKL2IaEslo/",
+          "normalizedUrl": "instagram.com/reel/drkl2iaeslo",
+          "normalizedText": "고양 일산 한솔유치원 합주연습 instagram reel 검색 결과에서 한솔유치원의 합주 시간과 합주연습 단서가 확인된다.",
+          "htmlSnapshotHash": "cdf1ac9e",
+          "extractedAt": "2026-07-03T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "경기도 고양시 일산동구 백석로 119",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRKL2IaEslo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%A9%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한솔유치원은 동명 후보가 많으나 일산 계정 단서가 로컬 경기도 고양시 일산동구 한솔유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "010a357e-2309-429e-9230-bd1fe76981fd": [
@@ -720,6 +772,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-39e6c4f7",
+        "kindergartenId": "1ecec08c-f4ac-b044-e053-0a32095ab044",
+        "title": "일산 다솜유치원 수피아 텃밭 상추 수확 기록",
+        "url": "https://www.instagram.com/reel/DZZPf65zQZq/",
+        "source": "other",
+        "sourceName": "Instagram · 일산 다솜유치원",
+        "snippet": "일산 다솜유치원이 수피아 텃밭에서 상추를 수확하고 관찰한 공개 릴스입니다.",
+        "summary": "잎채소를 직접 수확하며 식물 성장을 관찰한 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "harvest"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-39e6c4f7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZPf65zQZq/",
+          "normalizedUrl": "instagram.com/reel/dzzpf65zqzq",
+          "normalizedText": "일산 다솜유치원 수피아 텃밭 상추 수확 관찰 자연놀이",
+          "htmlSnapshotHash": "sns-wave673-39e6c4f7",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZZPf65zQZq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08d-02ee-b044-e053-0a32095ab044": [

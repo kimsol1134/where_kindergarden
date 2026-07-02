@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 5093,
+  "totalCount": 5098,
   "kindergartenCount": 1677,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -55355,6 +55355,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-69a6896c",
+        "kindergartenId": "1ecec08c-f9c8-b044-e053-0a32095ab044",
+        "title": "아이러브유치원 텃밭 이야기 기록",
+        "url": "https://www.instagram.com/reel/DZtKS3mIaFA/",
+        "source": "other",
+        "sourceName": "Instagram · 아이러브유치원",
+        "snippet": "아이러브유치원이 아이들이 정성껏 가꾸는 텃밭과 식물 관찰 활동을 소개한 공개 릴스입니다.",
+        "summary": "자연의 소중함과 기다림을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "plant-observation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-69a6896c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZtKS3mIaFA/",
+          "normalizedUrl": "instagram.com/reel/dztks3miafa",
+          "normalizedText": "아이러브유치원 텃밭 이야기 자연 생명 식물 관찰",
+          "htmlSnapshotHash": "sns-wave673-69a6896c",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZtKS3mIaFA/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-f6fc-b044-e053-0a32095ab044": [
@@ -97809,6 +97845,78 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-9b0f87d8",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "연세자연유치원 간절곶 숲놀이 기록",
+        "url": "https://www.instagram.com/p/DWYhUSIE5lz/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 5세 아이들과 간절곶에서 숲놀이를 다녀온 공개 게시물입니다.",
+        "summary": "넓은 들판에서 몸을 움직이고 자연을 탐색한 숲놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "forest-play",
+          "field-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-9b0f87d8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWYhUSIE5lz/",
+          "normalizedUrl": "instagram.com/p/dwyhusie5lz",
+          "normalizedText": "연세자연유치원 5세 간절곶 숲놀이 자연놀이",
+          "htmlSnapshotHash": "sns-wave673-9b0f87d8",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWYhUSIE5lz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
+      },
+      {
+        "id": "rev-sns-wave673-e00fa774",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "연세자연유치원 솔방울 보물찾기 숲체험 기록",
+        "url": "https://www.instagram.com/p/DWTgAS_Ey1Z/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 6세 아이들과 간절곶 숲체험에서 솔방울 보물찾기를 한 공개 게시물입니다.",
+        "summary": "숲에서 자연물을 찾고 관찰하는 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "forest-play",
+          "pinecone"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-e00fa774",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWTgAS_Ey1Z/",
+          "normalizedUrl": "instagram.com/p/dwtgas_ey1z",
+          "normalizedText": "연세자연유치원 6세 간절곶 숲놀이 솔방울 보물찾기",
+          "htmlSnapshotHash": "sns-wave673-e00fa774",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWTgAS_Ey1Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-fe75-b044-e053-0a32095ab044": [
@@ -129940,6 +130048,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-39e6c4f7",
+        "kindergartenId": "1ecec08c-f4ac-b044-e053-0a32095ab044",
+        "title": "일산 다솜유치원 수피아 텃밭 상추 수확 기록",
+        "url": "https://www.instagram.com/reel/DZZPf65zQZq/",
+        "source": "other",
+        "sourceName": "Instagram · 일산 다솜유치원",
+        "snippet": "일산 다솜유치원이 수피아 텃밭에서 상추를 수확하고 관찰한 공개 릴스입니다.",
+        "summary": "잎채소를 직접 수확하며 식물 성장을 관찰한 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "harvest"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-39e6c4f7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZPf65zQZq/",
+          "normalizedUrl": "instagram.com/reel/dzzpf65zqzq",
+          "normalizedText": "일산 다솜유치원 수피아 텃밭 상추 수확 관찰 자연놀이",
+          "htmlSnapshotHash": "sns-wave673-39e6c4f7",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZZPf65zQZq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08d-0d01-b044-e053-0a32095ab044": [
@@ -156421,6 +156565,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-a765c09e",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 고구마심기 텃밭놀이 기록",
+        "url": "https://www.instagram.com/reel/DYg_CckRLuG/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "목포 해바라기유치원이 유치원 텃밭에서 감자와 고구마를 심어본 자연놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "씨감자와 고구마 줄기를 살펴보며 작물의 성장을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "planting"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-a765c09e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYg_CckRLuG/",
+          "normalizedUrl": "instagram.com/reel/dyg_cckrlug",
+          "normalizedText": "목포해바라기유치원 자연놀이 고구마심기 텃밭놀이 감자심기",
+          "htmlSnapshotHash": "sns-wave673-a765c09e",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYg_CckRLuG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-fee2-b044-e053-0a32095ab044": [
@@ -218662,5 +218842,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T20:10:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
 }

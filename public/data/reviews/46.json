@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 96,
-  "kindergartenCount": 33,
+  "totalCount": 99,
+  "kindergartenCount": 34,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -112,6 +112,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave673-a765c09e",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 고구마심기 텃밭놀이 기록",
+        "url": "https://www.instagram.com/reel/DYg_CckRLuG/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "목포 해바라기유치원이 유치원 텃밭에서 감자와 고구마를 심어본 자연놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "씨감자와 고구마 줄기를 살펴보며 작물의 성장을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "planting"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-a765c09e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYg_CckRLuG/",
+          "normalizedUrl": "instagram.com/reel/dyg_cckrlug",
+          "normalizedText": "목포해바라기유치원 자연놀이 고구마심기 텃밭놀이 감자심기",
+          "htmlSnapshotHash": "sns-wave673-a765c09e",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYg_CckRLuG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
       }
     ],
     "1ecec08c-fee2-b044-e053-0a32095ab044": [
@@ -1867,6 +1903,59 @@
           ]
         },
         "evidenceChecksum": "077974bf"
+      },
+      {
+        "id": "rev-1ed4d721",
+        "kindergartenId": "1ecec08d-07ea-b044-e053-0a32095ab044",
+        "kindergartenName": "혜화유치원",
+        "title": "광양 혜화유치원 중마도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/C2yxASTPH_I/",
+        "source": "other",
+        "sourceName": "Instagram · 혜화유치원",
+        "snippet": "혜화유치원 계정 게시물 검색 결과에서 한글 주제활동으로 중마도서관에 견학을 다녀온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-required",
+          "instagram",
+          "library",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1ed4d721",
+        "structuredFields": {
+          "kindergartenName": "혜화유치원",
+          "kindergartenAddress": "전라남도 광양시 영수길 94",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2yxASTPH_I%22%20%22%ED%98%9C%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A4%91%EB%A7%88%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true,
+          "snippetCaveat": "중마도서관 단서로 로컬 광양 혜화유치원과 수동 매칭했다. 동명 유치원이 있어 주소 검토를 함께 남겼다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C2yxASTPH_I/",
+          "normalizedUrl": "www.instagram.com/p/c2yxastph_i",
+          "normalizedText": "광양 혜화유치원 중마도서관 견학 instagram post 혜화유치원 계정 게시물 검색 결과에서 한글 주제활동으로 중마도서관에 견학을 다녀온 단서가 확인된다.",
+          "htmlSnapshotHash": "1ed4d721",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "혜화유치원",
+            "kindergartenAddress": "전라남도 광양시 영수길 94",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C2yxASTPH_I%22%20%22%ED%98%9C%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A4%91%EB%A7%88%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true,
+            "snippetCaveat": "중마도서관 단서로 로컬 광양 혜화유치원과 수동 매칭했다. 동명 유치원이 있어 주소 검토를 함께 남겼다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f76e-b044-e053-0a32095ab044": [
@@ -4412,6 +4501,59 @@
         "evidenceChecksum": "c61bbe0a"
       }
     ],
+    "1ecec08d-00e7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dd2ac29b",
+        "kindergartenId": "1ecec08d-00e7-b044-e053-0a32095ab044",
+        "title": "곡성유치원 논생태체험 손모내기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZWxdl5uLcO/",
+        "source": "other",
+        "sourceName": "Instagram · 곡성군",
+        "snippet": "곡성유치원 아이들과 함께하는 논생태체험교육과 손모내기 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "47ae8a97",
+        "structuredFields": {
+          "kindergartenName": "곡성유치원",
+          "kindergartenAddress": "전라남도 곡성군 학교로 41-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZWxdl5uLcO%22%20%22%EA%B3%A1%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%85%BC%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "곡성유치원 단일 매칭이며 곡성군 논생태체험교육 문맥이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZWxdl5uLcO/",
+          "normalizedUrl": "www.instagram.com/reel/dzwxdl5ulco",
+          "normalizedText": "곡성유치원 논생태체험 손모내기 instagram reel 곡성유치원 아이들과 함께하는 논생태체험교육과 손모내기 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "47ae8a97",
+          "extractedAt": "2026-07-02T12:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "곡성유치원",
+            "kindergartenAddress": "전라남도 곡성군 학교로 41-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZWxdl5uLcO%22%20%22%EA%B3%A1%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%85%BC%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "곡성유치원 단일 매칭이며 곡성군 논생태체험교육 문맥이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08c-ff92-b044-e053-0a32095ab044": [
       {
         "id": "rev-fc7e272e",
@@ -4512,5 +4654,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
 }
