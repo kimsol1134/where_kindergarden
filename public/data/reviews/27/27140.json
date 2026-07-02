@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 71,
-  "kindergartenCount": 18,
+  "totalCount": 74,
+  "kindergartenCount": 19,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
       {
@@ -1122,6 +1122,70 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e1ba0d44",
+        "kindergartenId": "1ecec08d-0c8f-b044-e053-0a32095ab044",
+        "kindergartenName": "강남유치원",
+        "title": "대구 강남유치원 어린이날 기념 Instagram Post",
+        "url": "https://www.instagram.com/p/DJYyySISyQc/",
+        "source": "other",
+        "sourceName": "Instagram · 대구 강남유치원",
+        "snippet": "Instagram 검색 결과에서 대구 강남유치원의 어린이날 기념 활동과 대구강남유치원 문맥이 확인되는 게시물.",
+        "date": "2025-05-04",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "children-day",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "강남유치원",
+          "kindergartenAddress": "대구광역시 동구 신암로18길 19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJYyySISyQc%22+%22%EB%8C%80%EA%B5%AC+%EA%B0%95%EB%82%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DJYyySISyQc/",
+          "regionEvidence": [
+            "대구",
+            "강남유치원",
+            "대구강남유치원",
+            "어린이날"
+          ]
+        },
+        "evidenceChecksum": "213e8b67",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJYyySISyQc/",
+          "normalizedUrl": "instagram.com/shortcode/djyyysisyqc",
+          "normalizedText": "대구 강남유치원 어린이날 기념 instagram post instagram 검색 결과에서 대구 강남유치원의 어린이날 기념 활동과 대구강남유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c944f741",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "강남유치원",
+            "kindergartenAddress": "대구광역시 동구 신암로18길 19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJYyySISyQc%22+%22%EB%8C%80%EA%B5%AC+%EA%B0%95%EB%82%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DJYyySISyQc/",
+            "regionEvidence": [
+              "대구",
+              "강남유치원",
+              "대구강남유치원",
+              "어린이날"
+            ]
+          }
+        }
       }
     ],
     "1ecec08d-07a2-b044-e053-0a32095ab044": [
@@ -2699,6 +2763,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T20:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave720-74ed5693",
+        "kindergartenId": "1ecec08c-ee17-b044-e053-0a32095ab044",
+        "title": "대구 호수유치원 2.28도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DaCKTCoSaNm/",
+        "source": "other",
+        "sourceName": "Instagram · 호수유치원",
+        "snippet": "호수유치원 친구들이 2.28도서관에서 책과 도서관 공간을 경험한 릴스입니다.",
+        "summary": "유아들이 도서관에서 책을 읽고 독서 공간을 둘러본 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-74ed5693",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCKTCoSaNm/",
+          "normalizedUrl": "instagram.com/reel/dacktcosanm",
+          "normalizedText": "호수유치원 228도서관 도서관 책 읽기 책은내친구",
+          "htmlSnapshotHash": "sns-wave720-74ed5693",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCKTCoSaNm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ],
     "1ecec08c-f1c3-b044-e053-0a32095ab044": [
@@ -3016,7 +3117,61 @@
         "approvedAt": "2026-07-02T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-025f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0ce780e5",
+        "kindergartenId": "1ecec08d-025f-b044-e053-0a32095ab044",
+        "title": "대구율빛유치원 부모교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DZwvA9DGB-e/",
+        "source": "other",
+        "sourceName": "Instagram · 대구율빛유치원",
+        "snippet": "검색 결과에서 공립단설 대구율빛유치원, 부모교육, 그림책부모교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-education",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0ce780e5",
+        "structuredFields": {
+          "kindergartenName": "대구율빛유치원",
+          "kindergartenAddress": "대구광역시 동구 율하서로3길 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZwvA9DGB-e%22%20%22%EB%8C%80%EA%B5%AC%EC%9C%A8%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 대구율빛유치원 기관명과 로컬 대구 동구 대구율빛유치원이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZwvA9DGB-e/",
+          "normalizedUrl": "instagram.com/p/dzwva9dgb-e",
+          "normalizedText": "대구율빛유치원 부모교육 instagram post 검색 결과에서 공립단설 대구율빛유치원 부모교육 그림책부모교육 단서가 확인된다.",
+          "htmlSnapshotHash": "0ce780e5",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대구율빛유치원",
+            "kindergartenAddress": "대구광역시 동구 율하서로3길 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZwvA9DGB-e%22%20%22%EB%8C%80%EA%B5%AC%EC%9C%A8%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 대구율빛유치원 기관명과 로컬 대구 동구 대구율빛유치원이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

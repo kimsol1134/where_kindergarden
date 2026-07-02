@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 134,
+  "totalCount": 135,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -3261,6 +3261,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave705"
+      },
+      {
+        "id": "rev-sns-wave720-9b35b466",
+        "kindergartenId": "60923d50-7593-4371-88e2-adcb12d56393",
+        "title": "김포 해솔유치원 통진도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DRRiS07E7Tj/",
+        "source": "other",
+        "sourceName": "Instagram · 해솔유치원",
+        "snippet": "해솔유치원 7살 친구들이 통진도서관에서 책 찾는 방법과 도서관 약속을 알아본 게시물입니다.",
+        "summary": "유아들이 도서관 이용 방법과 책 찾기 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "field-trip",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-9b35b466",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRRiS07E7Tj/",
+          "normalizedUrl": "instagram.com/p/drris07e7tj",
+          "normalizedText": "해솔유치원 통진도서관 견학 7살 책 찾기 도서관 약속",
+          "htmlSnapshotHash": "sns-wave720-9b35b466",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DRRiS07E7Tj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ],
     "2ca14d7b-3689-4597-9d8a-2d27b61dc13e": [

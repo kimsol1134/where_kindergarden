@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 35,
-  "kindergartenCount": 12,
+  "totalCount": 36,
+  "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-037b-b044-e053-0a32095ab044": [
       {
@@ -1629,6 +1629,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      }
+    ],
+    "1ecec08c-fae2-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave720-04c706cf",
+        "kindergartenId": "1ecec08c-fae2-b044-e053-0a32095ab044",
+        "title": "전주 송림유치원 또래어린이서점 견학 기록",
+        "url": "https://www.instagram.com/p/DXI1a5GEZr0/",
+        "source": "other",
+        "sourceName": "Instagram · 또래어린이서점",
+        "snippet": "송림유치원 7세반 친구들이 또래어린이서점에서 책을 둘러본 게시물입니다.",
+        "summary": "유아들이 어린이서점에서 책을 살펴보고 독서 공간을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "bookstore",
+          "reading",
+          "field-trip",
+          "jeonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-04c706cf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXI1a5GEZr0/",
+          "normalizedUrl": "instagram.com/p/dxi1a5gezr0",
+          "normalizedText": "송림유치원 7세반 또래어린이서점 전주 지역 서점 견학",
+          "htmlSnapshotHash": "sns-wave720-04c706cf",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXI1a5GEZr0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ]
   },

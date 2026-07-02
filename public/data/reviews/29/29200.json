@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 66,
+  "totalCount": 67,
   "kindergartenCount": 21,
   "reviews": {
     "58acbeb2-e3ed-40d3-80ec-25ad4ba8dd02": [
@@ -2235,6 +2235,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave720-0a3bf64a",
+        "kindergartenId": "1ecec08c-eda1-b044-e053-0a32095ab044",
+        "title": "광주 리틀윌링스유치원 도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DYQ-5FVRFZw/",
+        "source": "other",
+        "sourceName": "Instagram · 리틀윌링스유치원",
+        "snippet": "리틀윌링스유치원 미리내반 친구들이 도서관에서 동화를 듣고 책 빌리는 방법을 배운 릴스입니다.",
+        "summary": "유아들이 도서관에서 동화 감상과 대출 과정을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "field-trip",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-0a3bf64a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYQ-5FVRFZw/",
+          "normalizedUrl": "instagram.com/reel/dyq-5fvrfzw",
+          "normalizedText": "리틀윌링스유치원 미리내반 도서관 견학 동화 책 빌리는 방법",
+          "htmlSnapshotHash": "sns-wave720-0a3bf64a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYQ-5FVRFZw/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ],
     "1ecec08d-0b1d-b044-e053-0a32095ab044": [

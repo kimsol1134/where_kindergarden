@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 28,
-  "kindergartenCount": 13,
+  "totalCount": 31,
+  "kindergartenCount": 14,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
       {
@@ -462,6 +462,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave720-0b414b2f",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "title": "부산 하늘유치원 교보문고 견학 기록",
+        "url": "https://www.instagram.com/reel/DZuICO2yFBH/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "사하구 신평 하늘유치원 친구들이 교보문고에서 책과 서점 공간을 둘러본 릴스입니다.",
+        "summary": "유아들이 서점에서 책을 살펴보고 독서 흥미를 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "bookstore",
+          "reading",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-0b414b2f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZuICO2yFBH/",
+          "normalizedUrl": "instagram.com/reel/dzuico2yfbh",
+          "normalizedText": "하늘유치원 사하구유치원 신평하늘유치원 교보문고 교보문고견학",
+          "htmlSnapshotHash": "sns-wave720-0b414b2f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZuICO2yFBH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ],
     "36627649-3e14-4655-b961-d249c0207cf8": [
@@ -1364,6 +1401,112 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      },
+      {
+        "id": "rev-a5cacba9",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "검색 결과에서 지산유치원, 유치원소풍, 유치원체험학습, 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "picnic"
+        ],
+        "date": "2026-06-12",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a5cacba9",
+        "structuredFields": {
+          "kindergartenName": "지산유치원",
+          "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+          "normalizedUrl": "instagram.com/reel/dzdvdtyzwpq",
+          "normalizedText": "부산 지산유치원 현장체험학습 instagram reel 검색 결과에서 지산유치원 유치원소풍 유치원체험학습 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "a5cacba9",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "지산유치원",
+            "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "7503d277-da3d-4087-83e8-21f5f0d0d815": [
+      {
+        "id": "rev-e5aa07cc",
+        "kindergartenId": "7503d277-da3d-4087-83e8-21f5f0d0d815",
+        "title": "하단초등학교병설유치원 유아교육진흥원 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DZUQ716kvP0/",
+        "source": "other",
+        "sourceName": "Instagram · 하단초등학교병설유치원",
+        "snippet": "검색 결과에서 하단초등학교병설유치원, 유아교육진흥원 현장체험학습, 부산유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": "2026-05-07",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e5aa07cc",
+        "structuredFields": {
+          "kindergartenName": "하단초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 사하구 하신중앙로 321",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZUQ716kvP0%22%20%22%ED%95%98%EB%8B%A8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 하단초등학교병설유치원 및 부산 단서가 로컬 부산 사하구 하단초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZUQ716kvP0/",
+          "normalizedUrl": "instagram.com/p/dzuq716kvp0",
+          "normalizedText": "하단초등학교병설유치원 유아교육진흥원 현장체험학습 instagram post 검색 결과에서 하단초등학교병설유치원 유아교육진흥원 현장체험학습 부산유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "e5aa07cc",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "하단초등학교병설유치원",
+            "kindergartenAddress": "부산광역시 사하구 하신중앙로 321",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZUQ716kvP0%22%20%22%ED%95%98%EB%8B%A8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 하단초등학교병설유치원 및 부산 단서가 로컬 부산 사하구 하단초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 98,
+  "totalCount": 99,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0269-b044-e053-0a32095ab044": [
@@ -315,6 +315,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave720-dbfce1a9",
+        "kindergartenId": "1ecec08d-062f-b044-e053-0a32095ab044",
+        "title": "서울 루이유치원 도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DWdPOmwEr78/",
+        "source": "other",
+        "sourceName": "Instagram · 루이유치원",
+        "snippet": "루이유치원 친구들이 도서관 견학 프로그램에서 책과 가까워지는 시간을 보낸 게시물입니다.",
+        "summary": "유아들이 도서관 프로그램을 통해 책 읽기와 공간 이용을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-dbfce1a9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWdPOmwEr78/",
+          "normalizedUrl": "instagram.com/p/dwdpomwer78",
+          "normalizedText": "루이유치원 도서관 견학 프로그램 책과 가까워지는 시간",
+          "htmlSnapshotHash": "sns-wave720-dbfce1a9",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWdPOmwEr78/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
       }
     ],
     "1ecec08d-06b6-b044-e053-0a32095ab044": [

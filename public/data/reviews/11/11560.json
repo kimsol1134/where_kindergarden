@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 40,
-  "kindergartenCount": 9,
+  "totalCount": 41,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-f497-b044-e053-0a32095ab044": [
       {
@@ -1737,7 +1737,46 @@
         "approvedAt": "2026-07-02T13:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f600-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave720-1a6c5205",
+        "kindergartenId": "1ecec08c-f600-b044-e053-0a32095ab044",
+        "title": "서울 살레시오성미유치원 신길도서관 책놀이 기록",
+        "url": "https://www.instagram.com/reel/DaJsnMmToAZ/",
+        "source": "other",
+        "sourceName": "Instagram · 신길도서관 책놀이",
+        "snippet": "성미유치원 친구들이 신길도서관 책놀이 수업에서 그림책 장면을 따라 활동한 릴스입니다.",
+        "summary": "유아들이 도서관 책놀이 수업으로 그림책을 듣고 표현 활동을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "book-play",
+          "reading",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave720-1a6c5205",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaJsnMmToAZ/",
+          "normalizedUrl": "instagram.com/reel/dajsnmmtoaz",
+          "normalizedText": "성미유치원 신길도서관 책놀이 그림책 단체 수업",
+          "htmlSnapshotHash": "sns-wave720-1a6c5205",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaJsnMmToAZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave720"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
