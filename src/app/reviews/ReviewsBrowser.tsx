@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ChevronLeft from 'lucide-react/dist/esm/icons/chevron-left';
 import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right';
 import ExternalLink from 'lucide-react/dist/esm/icons/external-link';
+import LinkIcon from 'lucide-react/dist/esm/icons/link';
 import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
 import Search from 'lucide-react/dist/esm/icons/search';
@@ -123,6 +124,15 @@ function getTimeValue(review: ReviewLink): number {
 
 function includesText(value: string | null | undefined, needle: string) {
   return value?.toLowerCase().includes(needle) ?? false;
+}
+
+function getDisplayUrl(url: string): string {
+  try {
+    const parsedUrl = new URL(url);
+    return `${parsedUrl.hostname.replace(/^www\./, '')}${parsedUrl.pathname}`;
+  } catch {
+    return url;
+  }
 }
 
 interface ReviewsBrowserProps {
@@ -497,6 +507,17 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
           {review.snippet && (
             <p className="mt-2 line-clamp-2 text-sm leading-6 text-gray-600">{review.snippet}</p>
           )}
+
+          <a
+            href={review.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex max-w-full items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-xs font-medium text-gray-600 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+            title={review.url}
+          >
+            <LinkIcon className="h-3.5 w-3.5 flex-shrink-0" />
+            <span className="truncate">{getDisplayUrl(review.url)}</span>
+          </a>
         </div>
 
         <div className="md:w-72 md:text-right">
@@ -507,6 +528,15 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
           <div className="mt-2 truncate text-xs text-gray-400" title={review.sourceName}>
             {review.sourceName || review.url}
           </div>
+          <a
+            href={review.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+          >
+            원문 열기
+            <ExternalLink className="h-4 w-4" />
+          </a>
         </div>
       </div>
     </article>

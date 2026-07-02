@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 289,
+  "totalCount": 290,
   "kindergartenCount": 99,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -13242,6 +13242,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-06c8e64d",
+        "kindergartenId": "1c02626d-1a65-4e1d-b906-675902bb5a27",
+        "title": "초곡초등학교병설유치원 가족 한마음 운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DVGLYlwknlu/",
+        "source": "other",
+        "sourceName": "Instagram · 초곡초등학교병설유치원",
+        "snippet": "검색 결과에서 초곡초등학교병설유치원, 포항, 가족 한마음 운동회 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "06c8e64d",
+        "structuredFields": {
+          "kindergartenName": "초곡초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 흥해읍 초곡지구로58번길 56",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVGLYlwknlu%22%20%22%EC%B4%88%EA%B3%A1%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초곡초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 운동회 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVGLYlwknlu/",
+          "normalizedUrl": "instagram.com/reel/dvglylwknlu",
+          "normalizedText": "초곡초등학교병설유치원 가족 한마음 운동회 instagram reel 검색 결과에서 초곡초등학교병설유치원 포항 가족 한마음 운동회 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "06c8e64d",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

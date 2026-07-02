@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1065,
+  "totalCount": 1066,
   "kindergartenCount": 447,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -7160,6 +7160,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4aca84e7",
+        "kindergartenId": "8a0707f1-2450-4dac-8146-60c5e8d9d514",
+        "title": "오산숲유치원 유아체육 수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DYyvzBVEywL/",
+        "source": "other",
+        "sourceName": "Instagram · 오산숲유치원",
+        "snippet": "검색 결과에서 오산숲유치원, 공립단설유치원, 유아체육 수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "after-school"
+        ],
+        "date": "2026-05-26",
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4aca84e7",
+        "structuredFields": {
+          "kindergartenName": "오산숲유치원",
+          "kindergartenAddress": "경기도 오산시 부산동길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYyvzBVEywL%22%20%22%EC%98%A4%EC%82%B0%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "오산숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 유아체육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYyvzBVEywL/",
+          "normalizedUrl": "instagram.com/p/dyyvzbveywl",
+          "normalizedText": "오산숲유치원 유아체육 수업 instagram post 검색 결과에서 오산숲유치원 공립단설유치원 유아체육 수업 단서가 확인된다.",
+          "htmlSnapshotHash": "4aca84e7",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
