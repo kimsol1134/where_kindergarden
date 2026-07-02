@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 11,
-  "kindergartenCount": 4,
+  "version": "2026-07-03",
+  "totalCount": 17,
+  "kindergartenCount": 5,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -168,6 +168,218 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3a8d994a",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "인천 박문유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DLZcca6xe2S/",
+        "source": "other",
+        "sourceName": "Instagram · 박문유치원",
+        "snippet": "검색 결과에서 박문유치원 7세 산들반의 율목도서관 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3a8d994a",
+        "structuredFields": {
+          "kindergartenName": "박문유치원",
+          "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLZcca6xe2S%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 견학 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLZcca6xe2S/",
+          "normalizedUrl": "instagram.com/p/dlzcca6xe2s",
+          "normalizedText": "인천 박문유치원 율목도서관 견학 instagram post 검색 결과에서 박문유치원 7세 산들반의 율목도서관 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "3a8d994a",
+          "extractedAt": "2026-07-03T14:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "박문유치원",
+            "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLZcca6xe2S%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 견학 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f1839200",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DNzVKAVZBew/",
+        "source": "other",
+        "sourceName": "Instagram · 박문유치원",
+        "snippet": "검색 결과에서 박문유치원, 율목 도서관 견학, 이야기할머니와 그림책 읽기 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f1839200",
+        "structuredFields": {
+          "kindergartenName": "박문유치원",
+          "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNzVKAVZBew/",
+          "normalizedUrl": "instagram.com/p/dnzvkavzbew",
+          "normalizedText": "박문유치원 율목도서관 견학 instagram post 검색 결과에서 박문유치원 율목 도서관 견학 이야기할머니와 그림책 읽기 단서가 확인된다.",
+          "htmlSnapshotHash": "f1839200",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "박문유치원",
+            "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave675-26f6270c",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 꿈벗도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DZtoCG1CUBi/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈벗도서관 · 박문유치원",
+        "snippet": "박문유치원 친구들이 꿈벗도서관 견학에서 책 읽기와 북스타트 활동에 참여한 공개 게시물입니다.",
+        "summary": "도서관 이용과 그림책 읽기, 만들기 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "bookstart",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-26f6270c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZtoCG1CUBi/",
+          "normalizedUrl": "instagram.com/p/dztocg1cubi",
+          "normalizedText": "박문유치원 꿈벗도서관 견학 북스타트 책 읽기",
+          "htmlSnapshotHash": "sns-wave675-26f6270c",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZtoCG1CUBi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-2541187e",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 그림책 활동 기록",
+        "url": "https://www.instagram.com/p/DZMDHWpmj6t/",
+        "source": "other",
+        "sourceName": "Instagram · 율목도서관 · 박문유치원",
+        "snippet": "박문유치원 바다반 친구들이 율목도서관에서 그림책을 읽고 노래 활동을 한 공개 게시물입니다.",
+        "summary": "도서관 선생님과 함께 그림책을 읽고 이야기를 나누는 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "storytime"
+        ],
+        "date": "2026-06-04",
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-2541187e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMDHWpmj6t/",
+          "normalizedUrl": "instagram.com/p/dzmdhwpmj6t",
+          "normalizedText": "박문유치원 율목도서관 바다반 그림책 노래 활동",
+          "htmlSnapshotHash": "sns-wave675-2541187e",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZMDHWpmj6t/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-71b23906",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 독후활동 기록",
+        "url": "https://www.instagram.com/p/DXL6gOHkTiq/",
+        "source": "other",
+        "sourceName": "Instagram · 율목도서관 · 박문유치원",
+        "snippet": "박문유치원 친구들이 율목도서관에서 그림책을 읽고 독후활동을 한 공개 게시물입니다.",
+        "summary": "그림책을 들은 뒤 나만의 머리를 꾸미는 독후활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "after-reading"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-71b23906",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXL6gOHkTiq/",
+          "normalizedUrl": "instagram.com/p/dxl6gohktiq",
+          "normalizedText": "박문유치원 율목도서관 그림책 독후활동 괜찮아 아저씨",
+          "htmlSnapshotHash": "sns-wave675-71b23906",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXL6gOHkTiq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
       }
     ],
     "b622e687-c041-43eb-b64c-ee331bb88d39": [
@@ -466,6 +678,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "f61d8682-54be-450c-9ce3-61e77345ad38": [
+      {
+        "id": "rev-553304c1",
+        "kindergartenId": "f61d8682-54be-450c-9ce3-61e77345ad38",
+        "title": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 X Post",
+        "url": "https://x.com/EduYonhap/status/1863851601636757648",
+        "source": "other",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "검색 결과에서 인천별빛초병설유치원, 꼬마저자 그림책 전시회, 읽걷쓰 꼬마저자 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "553304c1",
+        "structuredFields": {
+          "kindergartenName": "인천별빛초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 중구 은하수로 402",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1863851601636757648",
+          "normalizedUrl": "x.com/eduyonhap/status/1863851601636757648",
+          "normalizedText": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 x post 검색 결과에서 인천별빛초병설유치원 꼬마저자 그림책 전시회 읽걷쓰 꼬마저자 단서가 확인된다.",
+          "htmlSnapshotHash": "553304c1",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천별빛초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 중구 은하수로 402",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

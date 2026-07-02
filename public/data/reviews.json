@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 5104,
+  "totalCount": 5110,
   "kindergartenCount": 1677,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -58805,6 +58805,114 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave675-26f6270c",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 꿈벗도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DZtoCG1CUBi/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈벗도서관 · 박문유치원",
+        "snippet": "박문유치원 친구들이 꿈벗도서관 견학에서 책 읽기와 북스타트 활동에 참여한 공개 게시물입니다.",
+        "summary": "도서관 이용과 그림책 읽기, 만들기 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "bookstart",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-26f6270c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZtoCG1CUBi/",
+          "normalizedUrl": "instagram.com/p/dztocg1cubi",
+          "normalizedText": "박문유치원 꿈벗도서관 견학 북스타트 책 읽기",
+          "htmlSnapshotHash": "sns-wave675-26f6270c",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZtoCG1CUBi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-2541187e",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 그림책 활동 기록",
+        "url": "https://www.instagram.com/p/DZMDHWpmj6t/",
+        "source": "other",
+        "sourceName": "Instagram · 율목도서관 · 박문유치원",
+        "snippet": "박문유치원 바다반 친구들이 율목도서관에서 그림책을 읽고 노래 활동을 한 공개 게시물입니다.",
+        "summary": "도서관 선생님과 함께 그림책을 읽고 이야기를 나누는 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "picture-book",
+          "storytime"
+        ],
+        "date": "2026-06-04",
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-2541187e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMDHWpmj6t/",
+          "normalizedUrl": "instagram.com/p/dzmdhwpmj6t",
+          "normalizedText": "박문유치원 율목도서관 바다반 그림책 노래 활동",
+          "htmlSnapshotHash": "sns-wave675-2541187e",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZMDHWpmj6t/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-71b23906",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 독후활동 기록",
+        "url": "https://www.instagram.com/p/DXL6gOHkTiq/",
+        "source": "other",
+        "sourceName": "Instagram · 율목도서관 · 박문유치원",
+        "snippet": "박문유치원 친구들이 율목도서관에서 그림책을 읽고 독후활동을 한 공개 게시물입니다.",
+        "summary": "그림책을 들은 뒤 나만의 머리를 꾸미는 독후활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading",
+          "after-reading"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-71b23906",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXL6gOHkTiq/",
+          "normalizedUrl": "instagram.com/p/dxl6gohktiq",
+          "normalizedText": "박문유치원 율목도서관 그림책 독후활동 괜찮아 아저씨",
+          "htmlSnapshotHash": "sns-wave675-71b23906",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXL6gOHkTiq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
       }
     ],
     "1ecec08d-0b8c-b044-e053-0a32095ab044": [
@@ -60217,6 +60325,114 @@
           ]
         },
         "evidenceChecksum": "78958caa"
+      },
+      {
+        "id": "rev-sns-wave675-db95974b",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "수피아유치원 인천도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DZXMLaszUvO/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원이 인천도서관에서 책과 놀이의 만남을 경험한 공개 릴스입니다.",
+        "summary": "도서관 견학에서 그림책을 듣고 책놀이를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "book-play",
+          "field-trip"
+        ],
+        "date": "2026-06-09",
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-db95974b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZXMLaszUvO/",
+          "normalizedUrl": "instagram.com/reel/dzxmlaszuvo",
+          "normalizedText": "수피아유치원 인천도서관 견학 책과 놀이의 만남",
+          "htmlSnapshotHash": "sns-wave675-db95974b",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZXMLaszUvO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-1cb73a04",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "수피아유치원 인천도서관 내가 팽이라면 책놀이 기록",
+        "url": "https://www.instagram.com/p/DWN3w5Ck-vK/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원이 인천도서관 견학에서 그림책과 놀이를 연결한 공개 게시물입니다.",
+        "summary": "그림책을 듣고 주제 놀이로 확장한 도서관 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "book-play",
+          "picture-book"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-1cb73a04",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWN3w5Ck-vK/",
+          "normalizedUrl": "instagram.com/p/dwn3w5ck-vk",
+          "normalizedText": "수피아유치원 인천도서관 견학 내가 팽이라면 책놀이",
+          "htmlSnapshotHash": "sns-wave675-1cb73a04",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWN3w5Ck-vK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave675-174b3ccf",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "수피아유치원 동생들에게 책 읽어주기 기록",
+        "url": "https://www.instagram.com/reel/DUXy1E2E3ns/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원이 동생들에게 책을 읽어 주고 영어 그림책을 살펴본 활동을 소개한 공개 릴스입니다.",
+        "summary": "책을 골라 읽고 나누는 독서 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading",
+          "picture-book",
+          "peer-reading"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:25:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave675-174b3ccf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUXy1E2E3ns/",
+          "normalizedUrl": "instagram.com/reel/duxy1e2e3ns",
+          "normalizedText": "수피아유치원 동생들에게 책 읽어주기 영어 그림책 독서",
+          "htmlSnapshotHash": "sns-wave675-174b3ccf",
+          "extractedAt": "2026-07-03T21:25:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUXy1E2E3ns/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:25:00.000Z",
+        "approvedBy": "codex-manual-sns-wave675"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [
@@ -219058,5 +219274,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T21:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T21:25:00.000Z"
 }
