@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 104,
+  "totalCount": 105,
   "kindergartenCount": 19,
   "reviews": {
     "2dc0d75e-793f-42f2-97ee-dd37d3a84e86": [
@@ -3501,6 +3501,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave711-b82f60b5",
+        "kindergartenId": "1ecec08c-ef82-b044-e053-0a32095ab044",
+        "title": "대전 정원유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DZ6-_5nTSjS/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "대전 정원유치원이 5세 친구들과 여름캠프로 체험과 물놀이를 진행한 릴스입니다.",
+        "summary": "유아들이 여름캠프에서 체험활동과 물놀이를 함께하며 더운 계절을 즐긴 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "field-experience",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-b82f60b5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ6-_5nTSjS/",
+          "normalizedUrl": "instagram.com/reel/dz6-_5ntsjs",
+          "normalizedText": "정원유치원 대전유치원 5세 여름캠프 체험 물놀이",
+          "htmlSnapshotHash": "sns-wave711-b82f60b5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ6-_5nTSjS/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       }
     ],
     "1ecec08d-0dde-b044-e053-0a32095ab044": [

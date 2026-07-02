@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 55,
+  "totalCount": 56,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-0579-b044-e053-0a32095ab044": [
@@ -1145,6 +1145,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave711-069b9f82",
+        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
+        "title": "인천 엄지유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/p/DMzxsw1S2v6/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "인천 엄지유치원이 여름캠프에서 준비운동 후 친구들과 물놀이를 즐긴 게시물입니다.",
+        "summary": "유아들이 준비운동과 함께 물놀이 규칙을 익히며 여름활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "warm-up",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-069b9f82",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMzxsw1S2v6/",
+          "normalizedUrl": "instagram.com/p/dmzxsw1s2v6",
+          "normalizedText": "엄지유치원 인천 여름캠프 물놀이 준비운동 친구들",
+          "htmlSnapshotHash": "sns-wave711-069b9f82",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMzxsw1S2v6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       }
     ],
     "1ecec08d-0e79-b044-e053-0a32095ab044": [

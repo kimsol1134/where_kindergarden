@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 38,
+  "totalCount": 39,
   "kindergartenCount": 14,
   "reviews": {
     "90accaf4-0b0f-42a0-bf14-dabb5c82db9f": [
@@ -1229,6 +1229,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave711-4c6b9787",
+        "kindergartenId": "1ecec08c-ee11-b044-e053-0a32095ab044",
+        "title": "서울 행복한유치원 여름캠프 물놀이 준비 기록",
+        "url": "https://www.instagram.com/reel/DZ_uVHTTsZy/",
+        "source": "other",
+        "sourceName": "Instagram · 행복한유치원",
+        "snippet": "도봉구 행복한유치원이 여름캠프 물놀이 전 준비체조 장면을 공개한 릴스입니다.",
+        "summary": "유아들이 물놀이 전 몸을 풀며 여름캠프 활동을 준비한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "warm-up",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-4c6b9787",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ_uVHTTsZy/",
+          "normalizedUrl": "instagram.com/reel/dz_uvhttszy",
+          "normalizedText": "행복한유치원 도봉구 여름캠프 물놀이 준비체조",
+          "htmlSnapshotHash": "sns-wave711-4c6b9787",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ_uVHTTsZy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       }
     ],
     "1ecec08c-eecf-b044-e053-0a32095ab044": [
@@ -1509,5 +1546,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

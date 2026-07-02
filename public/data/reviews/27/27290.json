@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 146,
+  "totalCount": 147,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -4862,6 +4862,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.990Z",
         "approvedBy": "codex-manual-sns-wave697"
+      },
+      {
+        "id": "rev-sns-wave711-d04bf62e",
+        "kindergartenId": "1ecec08c-f5a9-b044-e053-0a32095ab044",
+        "title": "대구 솔리유치원 6월 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DZt1u1NTSaz/",
+        "source": "other",
+        "sourceName": "Instagram · 솔리유치원",
+        "snippet": "솔리유치원이 만4세반 친구들과 유치원 마당에서 물풍선, 물총 등 6월 물놀이를 진행한 릴스입니다.",
+        "summary": "유아들이 더운 계절에 친구와 함께 안전하게 물놀이를 즐긴 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer",
+          "outdoor-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-d04bf62e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZt1u1NTSaz/",
+          "normalizedUrl": "instagram.com/reel/dzt1u1ntsaz",
+          "normalizedText": "솔리유치원 만4세반 6월 물놀이 유치원 마당 물풍선 물총",
+          "htmlSnapshotHash": "sns-wave711-d04bf62e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZt1u1NTSaz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       }
     ],
     "1ecec08c-ed9a-b044-e053-0a32095ab044": [

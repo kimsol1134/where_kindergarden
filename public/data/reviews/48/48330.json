@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 23,
+  "totalCount": 24,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0224-b044-e053-0a32095ab044": [
@@ -616,6 +616,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave711-e5d5f859",
+        "kindergartenId": "1ecec08c-f4f7-b044-e053-0a32095ab044",
+        "title": "양산 다인유치원 워터파크 물놀이 기록",
+        "url": "https://www.instagram.com/p/DMKRveSBzif/",
+        "source": "other",
+        "sourceName": "Instagram · 양산다인유치원",
+        "snippet": "양산다인유치원이 유치원이 워터파크처럼 변한 물놀이 시간과 다인 친구들의 웃음소리를 전한 게시물입니다.",
+        "summary": "유아들이 원내 물놀이 환경에서 함께 뛰놀며 여름 활동을 즐긴 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "water-park",
+          "summer",
+          "yangsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-e5d5f859",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMKRveSBzif/",
+          "normalizedUrl": "instagram.com/p/dmkrvesbzif",
+          "normalizedText": "양산다인유치원 워터파크 첨벙첨벙 물놀이 다인 친구들",
+          "htmlSnapshotHash": "sns-wave711-e5d5f859",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMKRveSBzif/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       }
     ],
     "1ecec08d-01b3-b044-e053-0a32095ab044": [

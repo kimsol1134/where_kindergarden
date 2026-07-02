@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "totalCount": 2,
+  "kindergartenCount": 2,
   "reviews": {
     "1ecec08d-003b-b044-e053-0a32095ab044": [
       {
@@ -16,6 +16,46 @@
         "collectedAt": "2026-02-18T06:13:58.470Z",
         "relevanceScore": 6
       }
+    ],
+    "1ecec08d-0d0f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave711-9a8a0655",
+        "kindergartenId": "1ecec08d-0d0f-b044-e053-0a32095ab044",
+        "title": "전남 장성성모유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DL7AbS6zWz6/",
+        "source": "other",
+        "sourceName": "Instagram · 장성성모유치원",
+        "snippet": "장성성모유치원이 여름캠프에서 물총과 물장구를 곁들인 물놀이 활동을 소개한 릴스입니다.",
+        "summary": "유아들이 친구들과 시원한 물놀이를 하며 여름캠프 추억을 만든 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "water-gun",
+          "jangseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave711-9a8a0655",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL7AbS6zWz6/",
+          "normalizedUrl": "instagram.com/reel/dl7abs6zwz6",
+          "normalizedText": "장성성모유치원 여름캠프 물놀이 물총 물장구",
+          "htmlSnapshotHash": "sns-wave711-9a8a0655",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DL7AbS6zWz6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
