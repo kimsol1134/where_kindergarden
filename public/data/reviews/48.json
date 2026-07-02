@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 276,
+  "totalCount": 277,
   "kindergartenCount": 100,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -8420,6 +8420,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.996Z",
         "approvedBy": "codex-manual-sns-wave699"
+      },
+      {
+        "id": "rev-sns-wave713-40777bed",
+        "kindergartenId": "1ecec08d-04f6-b044-e053-0a32095ab044",
+        "title": "거제 이솝유치원 오디세이 작품전시회 기록",
+        "url": "https://www.instagram.com/reel/DY_weKoTWtC/",
+        "source": "other",
+        "sourceName": "Instagram · 이솝유치원",
+        "snippet": "이솝유치원이 오디세이 작품전시회에서 요리, 선풍기, 열기구 만들기 등 아이들의 작품 활동을 소개한 릴스입니다.",
+        "summary": "유아들이 여러 매체로 만든 결과물을 전시하며 창의적 표현을 나눈 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-exhibition",
+          "creative-making",
+          "project",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave713-40777bed",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY_weKoTWtC/",
+          "normalizedUrl": "instagram.com/reel/dy_wekotwtc",
+          "normalizedText": "이솝유치원 오디세이 작품전시회 요리 선풍기 열기구 만들기",
+          "htmlSnapshotHash": "sns-wave713-40777bed",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY_weKoTWtC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave713"
       }
     ],
     "1ecec08d-0c79-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 339,
+  "totalCount": 340,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -9944,6 +9944,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave713-a3921f19",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "부산 금곡나래유치원 숫자 프로젝트 전시회 기록",
+        "url": "https://www.instagram.com/reel/DPLVK5kgZxL/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "금곡나래유치원이 사랑, 행복동이 친구들의 숫자 바다 프로젝트 전시회를 소개한 릴스입니다.",
+        "summary": "유아들이 숫자를 주제로 탐구한 내용을 전시로 구성해 나눈 프로젝트 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "project-exhibition",
+          "number-project",
+          "art-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave713-a3921f19",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPLVK5kgZxL/",
+          "normalizedUrl": "instagram.com/reel/dplvk5kgzxl",
+          "normalizedText": "금곡나래유치원 금곡동유치원 숫자 바다 프로젝트 전시회 사랑 행복동이",
+          "htmlSnapshotHash": "sns-wave713-a3921f19",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPLVK5kgZxL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave713"
       }
     ],
     "1ecec08c-f1a6-b044-e053-0a32095ab044": [

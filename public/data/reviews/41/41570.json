@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 133,
+  "totalCount": 134,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -336,6 +336,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.000Z",
         "approvedBy": "codex-manual-sns-wave690"
+      },
+      {
+        "id": "rev-sns-wave713-03a58d45",
+        "kindergartenId": "1ecec08d-07be-b044-e053-0a32095ab044",
+        "title": "김포 드림유치원 프로젝트 전시회 기록",
+        "url": "https://www.instagram.com/p/CxYKXTXRBux/",
+        "source": "other",
+        "sourceName": "Instagram · 드림유치원",
+        "snippet": "김포 드림유치원이 만3세 아이스크림, 만4세 공룡 등 학년별 프로젝트 전시회를 소개한 게시물입니다.",
+        "summary": "유아들이 주제별 탐구 결과를 전시물로 구성한 프로젝트 전시회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "project-exhibition",
+          "creative-making",
+          "kindergarten-project",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave713-03a58d45",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxYKXTXRBux/",
+          "normalizedUrl": "instagram.com/p/cxykxtxrbux",
+          "normalizedText": "김포 드림유치원 프로젝트 전시회 만3세 아이스크림 만4세 공룡 한강신도시",
+          "htmlSnapshotHash": "sns-wave713-03a58d45",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/CxYKXTXRBux/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave713"
       }
     ],
     "1ecec08d-0fd8-b044-e053-0a32095ab044": [

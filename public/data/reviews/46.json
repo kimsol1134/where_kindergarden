@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 102,
-  "kindergartenCount": 36,
+  "totalCount": 103,
+  "kindergartenCount": 37,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -4764,6 +4764,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave711"
+      }
+    ],
+    "1ecec08d-03d5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave713-64d10e9f",
+        "kindergartenId": "1ecec08d-03d5-b044-e053-0a32095ab044",
+        "title": "순천 제일유치원 러브앤조이 미술 전시회 기록",
+        "url": "https://www.instagram.com/reel/DFv4B1AzlMM/",
+        "source": "other",
+        "sourceName": "Instagram · 제일유치원",
+        "snippet": "순천 제일유치원이 5, 6, 7세 친구들의 기질미술 작품을 러브앤조이 미술 전시회로 소개한 릴스입니다.",
+        "summary": "유아들이 자신만의 표현을 작품으로 만들고 전시 경험까지 확장한 미술활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-exhibition",
+          "art-activity",
+          "project",
+          "suncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave713-64d10e9f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DFv4B1AzlMM/",
+          "normalizedUrl": "instagram.com/reel/dfv4b1azlmm",
+          "normalizedText": "순천 제일유치원 러브앤조이 미술 전시회 5세 6세 7세 기질미술 작품",
+          "htmlSnapshotHash": "sns-wave713-64d10e9f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DFv4B1AzlMM/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave713"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 7,
+  "totalCount": 8,
   "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-066b-b044-e053-0a32095ab044": [
@@ -249,6 +249,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave713-aec54253",
+        "kindergartenId": "1ecec08c-f5a4-b044-e053-0a32095ab044",
+        "title": "정읍 보영유치원 그림 전시회 체험 기록",
+        "url": "https://www.instagram.com/reel/DYdtsoROpKH/",
+        "source": "other",
+        "sourceName": "Instagram · 보영유치원",
+        "snippet": "보영유치원이 김효정 작가의 개인전 그림 전시회를 다녀온 하루를 소개한 릴스입니다.",
+        "summary": "유아들이 전시 관람을 통해 먹빛과 작품 분위기를 감상한 문화예술 체험 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-exhibition",
+          "gallery-visit",
+          "arts-education",
+          "jeongeup"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave713-aec54253",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYdtsoROpKH/",
+          "normalizedUrl": "instagram.com/reel/dydtsoropkh",
+          "normalizedText": "보영유치원 그림전시회 김효정 작가 개인전 현의 여백 전시 관람",
+          "htmlSnapshotHash": "sns-wave713-aec54253",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYdtsoROpKH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave713"
       }
     ],
     "1ecec08d-0c5f-b044-e053-0a32095ab044": [
@@ -339,5 +376,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
