@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 675,
-  "kindergartenCount": 246,
+  "totalCount": 676,
+  "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -25375,7 +25375,45 @@
         "approvedAt": "2026-07-03T23:59:55.000Z",
         "approvedBy": "codex-manual-sns-wave686"
       }
+    ],
+    "1ecec08d-0e37-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave689-d1184f10",
+        "kindergartenId": "1ecec08d-0e37-b044-e053-0a32095ab044",
+        "title": "서울 노원 청원유치원 쿠킹룸 요리활동 기록",
+        "url": "https://www.instagram.com/reel/DZUAZVsRyVd/",
+        "source": "other",
+        "sourceName": "Instagram · 청원유치원",
+        "snippet": "청원유치원이 쿠킹룸에서 유아들이 함께 도넛강정을 만드는 요리활동을 진행한 공개 릴스입니다.",
+        "summary": "유치원 쿠킹룸에서 진행한 영양 연계 요리시간과 실습 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-room",
+          "food-education",
+          "nowon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:58.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave689-d1184f10",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZUAZVsRyVd/",
+          "normalizedUrl": "instagram.com/reel/dzuazvsryvd",
+          "normalizedText": "청원유치원 쿠킹룸 요리활동 도넛강정 영양 연계",
+          "htmlSnapshotHash": "sns-wave689-d1184f10",
+          "extractedAt": "2026-07-03T23:59:58.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZUAZVsRyVd/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:58.000Z",
+        "approvedBy": "codex-manual-sns-wave689"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:56.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:58.000Z"
 }

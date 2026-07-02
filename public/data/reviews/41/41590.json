@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 127,
-  "kindergartenCount": 31,
+  "totalCount": 128,
+  "kindergartenCount": 32,
   "reviews": {
     "1ecec08d-0098-b044-e053-0a32095ab044": [
       {
@@ -5673,6 +5673,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "e97f7833-b9b1-4f92-af26-6dacca41b859": [
+      {
+        "id": "rev-sns-wave689-fb5c0553",
+        "kindergartenId": "e97f7833-b9b1-4f92-af26-6dacca41b859",
+        "title": "동탄 인성유치원 오이소박이 요리수업 기록",
+        "url": "https://www.instagram.com/p/DLE0TOzy0os/",
+        "source": "other",
+        "sourceName": "Instagram · 동탄인성유치원",
+        "snippet": "동탄 인성유치원이 쿠킹룸에서 제철 재료인 오이로 오이소박이를 만드는 요리수업을 진행한 공개 게시물입니다.",
+        "summary": "제철 식재료를 활용한 요리수업과 쿠킹룸 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-class",
+          "seasonal-food",
+          "dongtan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:58.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave689-fb5c0553",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLE0TOzy0os/",
+          "normalizedUrl": "instagram.com/p/dle0tozy0os",
+          "normalizedText": "동탄인성유치원 요리수업 오이소박이 쿠킹룸 제철 재료",
+          "htmlSnapshotHash": "sns-wave689-fb5c0553",
+          "extractedAt": "2026-07-03T23:59:58.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DLE0TOzy0os/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:58.000Z",
+        "approvedBy": "codex-manual-sns-wave689"
       }
     ]
   }

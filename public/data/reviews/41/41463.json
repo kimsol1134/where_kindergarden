@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 54,
+  "totalCount": 55,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-fe8b-b044-e053-0a32095ab044": [
@@ -1939,6 +1939,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T09:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave689-eab5cbbe",
+        "kindergartenId": "1ecec08d-0710-b044-e053-0a32095ab044",
+        "title": "용인 강남유치원 텃밭의 만찬 기록",
+        "url": "https://www.instagram.com/reel/DZLuyhTBxWx/",
+        "source": "other",
+        "sourceName": "Instagram · 용인 강남유치원",
+        "snippet": "용인 강남유치원이 씨앗을 심고 수확한 채소를 맛보며 비빔밥 활동으로 이어지는 식생활 프로젝트를 소개한 공개 릴스입니다.",
+        "summary": "텃밭 수확과 요리로 이어지는 자연친화 식생활 교육 과정을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-harvest",
+          "food-education",
+          "yongin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:58.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave689-eab5cbbe",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZLuyhTBxWx/",
+          "normalizedUrl": "instagram.com/reel/dzluyhtbxwx",
+          "normalizedText": "용인 강남유치원 텃밭 수확 채소 맛보기 비빔밥 식생활 프로젝트",
+          "htmlSnapshotHash": "sns-wave689-eab5cbbe",
+          "extractedAt": "2026-07-03T23:59:58.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZLuyhTBxWx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:58.000Z",
+        "approvedBy": "codex-manual-sns-wave689"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 32,
-  "kindergartenCount": 8,
+  "totalCount": 33,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0dd0-b044-e053-0a32095ab044": [
       {
@@ -1654,6 +1654,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fe6b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave689-b2c9418d",
+        "kindergartenId": "1ecec08c-fe6b-b044-e053-0a32095ab044",
+        "title": "부산 동래 스펀지유치원 달콤한 요리활동 기록",
+        "url": "https://www.instagram.com/p/DW_JE0ckd8N/",
+        "source": "other",
+        "sourceName": "Instagram · 스펀지유치원",
+        "snippet": "부산 동래 스펀지유치원이 유아들이 집중해 하트 모양을 만들며 달콤한 요리활동을 진행한 공개 게시물입니다.",
+        "summary": "오감을 자극하는 유아 요리활동과 성취감 중심 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "sensory-play",
+          "dongnae"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:58.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave689-b2c9418d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW_JE0ckd8N/",
+          "normalizedUrl": "instagram.com/p/dw_je0ckd8n",
+          "normalizedText": "스펀지유치원 동래구 요리활동 하트 만들기 오감 성취감",
+          "htmlSnapshotHash": "sns-wave689-b2c9418d",
+          "extractedAt": "2026-07-03T23:59:58.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW_JE0ckd8N/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:58.000Z",
+        "approvedBy": "codex-manual-sns-wave689"
       }
     ]
   }
