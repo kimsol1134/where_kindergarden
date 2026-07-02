@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 335,
+  "totalCount": 336,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -15832,6 +15832,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave706-b6dd8d79",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 찾아오는 구강교육 기록",
+        "url": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "지산유치원이 사하구 보건소와 함께 아이들을 위한 구강교육과 불소도포 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 보건소 교육을 통해 치아 관리와 바른 양치 태도를 배운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing",
+          "dental-health",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave706-b6dd8d79",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/",
+          "normalizedUrl": "instagram.com/reel/dyjqijbtaoz",
+          "normalizedText": "지산유치원 사하구 보건소 구강교육 불소도포 바른 양치",
+          "htmlSnapshotHash": "sns-wave706-b6dd8d79",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYjQIJbTaoZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave706"
       }
     ],
     "82f20b40-6aac-477b-83fe-637a7b9fde82": [

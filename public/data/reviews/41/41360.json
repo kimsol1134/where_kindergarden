@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 52,
-  "kindergartenCount": 23,
+  "totalCount": 53,
+  "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0dbb-b044-e053-0a32095ab044": [
       {
@@ -2319,6 +2319,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.980Z",
         "approvedBy": "codex-manual-sns-wave696"
+      }
+    ],
+    "d31ba437-bd21-47e1-99b7-a7a5c1c17948": [
+      {
+        "id": "rev-sns-wave706-49c9cbdd",
+        "kindergartenId": "d31ba437-bd21-47e1-99b7-a7a5c1c17948",
+        "title": "남양주 다산한강유치원 치아건강 체험교실 기록",
+        "url": "https://www.instagram.com/p/DW05L8NS4XS/",
+        "source": "other",
+        "sourceName": "Instagram · 다산한강유치원",
+        "snippet": "다산한강유치원이 치아건강 체험교실을 열고 아이들과 건강한 치아 관리 방법을 알아본 게시물입니다.",
+        "summary": "유아들이 체험 활동을 통해 올바른 양치 습관과 치아 건강의 중요성을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing",
+          "dental-health",
+          "namyangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave706-49c9cbdd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW05L8NS4XS/",
+          "normalizedUrl": "instagram.com/p/dw05l8ns4xs",
+          "normalizedText": "다산한강유치원 치아건강 체험교실 치아 관리 양치 습관",
+          "htmlSnapshotHash": "sns-wave706-49c9cbdd",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW05L8NS4XS/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave706"
       }
     ]
   },

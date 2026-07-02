@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 80,
+  "totalCount": 81,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
@@ -1048,6 +1048,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.990Z",
         "approvedBy": "codex-manual-sns-wave697"
+      },
+      {
+        "id": "rev-sns-wave706-6e7c7bb3",
+        "kindergartenId": "1ecec08c-fd03-b044-e053-0a32095ab044",
+        "title": "대구 옥스포드유치원 구강교육 기록",
+        "url": "https://www.instagram.com/reel/DN7_244EWPF/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스포드유치원",
+        "snippet": "옥스포드유치원이 아이들과 노래에 맞춰 즐겁게 양치 방법을 익힌 구강교육 릴스입니다.",
+        "summary": "유아들이 올바른 양치 습관과 치아 관리 방법을 놀이처럼 배운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing",
+          "dental-health",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave706-6e7c7bb3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN7_244EWPF/",
+          "normalizedUrl": "instagram.com/reel/dn7_244ewpf",
+          "normalizedText": "옥스포드유치원 구강교육 노래 양치 방법 치아 관리",
+          "htmlSnapshotHash": "sns-wave706-6e7c7bb3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DN7_244EWPF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave706"
       }
     ],
     "1ecec08d-012e-b044-e053-0a32095ab044": [
@@ -3805,5 +3842,6 @@
         "approvedBy": "codex-manual-sns-wave685"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

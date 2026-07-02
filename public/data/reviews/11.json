@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 681,
+  "totalCount": 682,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -17945,6 +17945,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave706-ac58dc0c",
+        "kindergartenId": "1ecec08c-f5f4-b044-e053-0a32095ab044",
+        "title": "서울 까치유치원 올바른 양치 활동 기록",
+        "url": "https://www.instagram.com/p/DaKmoLUCfyH/",
+        "source": "other",
+        "sourceName": "Instagram · 까치유치원",
+        "snippet": "노원구 단서가 있는 까치유치원이 아이들과 건강한 치아를 위해 올바른 양치 방법을 배운 게시물입니다.",
+        "summary": "유아들이 치아 건강의 중요성과 바른 양치 습관을 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing",
+          "dental-health",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave706-ac58dc0c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaKmoLUCfyH/",
+          "normalizedUrl": "instagram.com/p/dakmolucfyh",
+          "normalizedText": "까치유치원 노원구 중계동 올바른 양치 방법 치아 건강",
+          "htmlSnapshotHash": "sns-wave706-ac58dc0c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaKmoLUCfyH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave706"
       }
     ],
     "89ed1bdc-67a2-4124-a077-bc925d6a901a": [
