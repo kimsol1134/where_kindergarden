@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 20,
+  "version": "2026-07-03",
+  "totalCount": 22,
   "kindergartenCount": 11,
   "reviews": {
     "28a9b124-1204-4b4e-a734-e8bd09ba275b": [
@@ -666,6 +666,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T01:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c629b014",
+        "kindergartenId": "1ecec08c-f5ab-b044-e053-0a32095ab044",
+        "title": "시흥 해오름유치원 학급 오리엔테이션 Instagram Post",
+        "url": "https://www.instagram.com/p/DG7fqpYpnCu/",
+        "source": "other",
+        "sourceName": "Instagram · 해오름유치원",
+        "snippet": "검색 결과에서 시흥 해오름유치원의 학급 오리엔테이션 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orientation",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c629b014",
+        "structuredFields": {
+          "kindergartenName": "해오름유치원",
+          "kindergartenAddress": "경기도 시흥시 신현로38번길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DG7fqpYpnCu%22%20%22%ED%95%B4%EC%98%A4%EB%A6%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%ED%9D%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "해오름유치원은 동명 후보가 있으나 시흥 단서가 로컬 경기도 시흥시 해오름유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DG7fqpYpnCu/",
+          "normalizedUrl": "instagram.com/p/dg7fqpypncu",
+          "normalizedText": "시흥 해오름유치원 학급 오리엔테이션 instagram post 검색 결과에서 시흥 해오름유치원의 학급 오리엔테이션 단서가 확인된다.",
+          "htmlSnapshotHash": "c629b014",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해오름유치원",
+            "kindergartenAddress": "경기도 시흥시 신현로38번길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DG7fqpYpnCu%22%20%22%ED%95%B4%EC%98%A4%EB%A6%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%ED%9D%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "해오름유치원은 동명 후보가 있으나 시흥 단서가 로컬 경기도 시흥시 해오름유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-eec4-b044-e053-0a32095ab044": [
@@ -965,8 +1017,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave679-16c287d0",
+        "kindergartenId": "1ecec08d-091c-b044-e053-0a32095ab044",
+        "title": "궁전유치원 시흥 중앙공원 민속놀이 체험 기록",
+        "url": "https://www.instagram.com/reel/DP0Ig1kj7-Z/",
+        "source": "other",
+        "sourceName": "Instagram · 궁전유치원",
+        "snippet": "궁전유치원이 시흥 중앙공원에서 아이들과 함께 민속놀이 체험을 진행한 공개 릴스입니다.",
+        "summary": "전통 놀이 도구와 야외 활동을 통해 민속놀이를 경험한 유치원 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traditional-play",
+          "folk-play",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave679-16c287d0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DP0Ig1kj7-Z/",
+          "normalizedUrl": "instagram.com/reel/dp0ig1kj7-z",
+          "normalizedText": "궁전유치원 시흥 중앙공원 민속놀이 체험",
+          "htmlSnapshotHash": "sns-wave679-16c287d0",
+          "extractedAt": "2026-07-03T23:05:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DP0Ig1kj7-Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "codex-manual-sns-wave679"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

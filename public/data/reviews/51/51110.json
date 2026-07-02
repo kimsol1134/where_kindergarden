@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 65,
+  "totalCount": 66,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -319,6 +319,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
+      },
+      {
+        "id": "rev-sns-wave679-839a74b0",
+        "kindergartenId": "7b8827db-706c-4ee2-a327-73af24ca111a",
+        "title": "후평숲속유치원 추석 전통놀이 기록",
+        "url": "https://www.instagram.com/reel/DPToKPXEyfY/",
+        "source": "other",
+        "sourceName": "Instagram · 후평숲속유치원",
+        "snippet": "후평숲속유치원이 추석행사로 잔디마당에서 투호놀이, 윷놀이, 사방치기, 강강술래 등을 진행한 공개 릴스입니다.",
+        "summary": "연령별로 다양한 전통놀이를 즐긴 추석행사 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traditional-play",
+          "chuseok",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave679-839a74b0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPToKPXEyfY/",
+          "normalizedUrl": "instagram.com/reel/dptokpxeyfy",
+          "normalizedText": "후평숲속유치원 추석행사 투호놀이 윷놀이 사방치기 강강술래",
+          "htmlSnapshotHash": "sns-wave679-839a74b0",
+          "extractedAt": "2026-07-03T23:05:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPToKPXEyfY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "codex-manual-sns-wave679"
       }
     ],
     "601a8869-27d3-4aa8-82c6-ee95c7f3644b": [
