@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 58,
-  "kindergartenCount": 17,
+  "version": "2026-07-03",
+  "totalCount": 67,
+  "kindergartenCount": 22,
   "reviews": {
     "1fc6dd86-ccbf-d1d2-e053-0a32095ad1d2": [
       {
@@ -974,6 +974,71 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-24ff2da4",
+        "kindergartenId": "1ecec08c-f71c-b044-e053-0a32095ab044",
+        "kindergartenName": "산동숲유치원",
+        "title": "구미 산동숲유치원 어린이날 매직 버블쇼 Instagram Post",
+        "url": "https://www.instagram.com/p/DJB0GVGBiir/",
+        "source": "other",
+        "sourceName": "Instagram · 산동숲유치원",
+        "snippet": "Instagram 검색 결과에서 sandongkinder 계정의 산동숲유치원 어린이날 매직&버블쇼 활동과 2026학년도 입학 문맥이 확인되는 게시물.",
+        "date": "2025-04-29",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "bubble-show",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "산동숲유치원",
+          "kindergartenAddress": "경상북도 구미시 산동읍 강동로 816-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJB0GVGBiir%22+%22%EC%82%B0%EB%8F%99%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DJB0GVGBiir/",
+          "regionEvidence": [
+            "sandongkinder",
+            "산동숲유치원",
+            "구미",
+            "매직&버블쇼"
+          ]
+        },
+        "evidenceChecksum": "11245ebf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJB0GVGBiir/",
+          "normalizedUrl": "www.instagram.com/p/djb0gvgbiir",
+          "normalizedText": "구미 산동숲유치원 어린이날 매직 버블쇼 instagram post instagram 검색 결과에서 sandongkinder 계정의 산동숲유치원 어린이날 매직&버블쇼 활동과 2026학년도 입학 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "e93e8c81",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "산동숲유치원",
+            "kindergartenAddress": "경상북도 구미시 산동읍 강동로 816-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJB0GVGBiir%22+%22%EC%82%B0%EB%8F%99%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DJB0GVGBiir/",
+            "regionEvidence": [
+              "sandongkinder",
+              "산동숲유치원",
+              "구미",
+              "매직&버블쇼"
+            ]
+          }
+        }
       }
     ],
     "1ecec08c-fee8-b044-e053-0a32095ab044": [
@@ -1572,6 +1637,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1632d087",
+        "kindergartenId": "1ecec08c-fc0f-b044-e053-0a32095ab044",
+        "title": "구미 상모유치원 구미유아교육체험센터 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRJU4a8Ex8v/",
+        "source": "other",
+        "sourceName": "Instagram · 상모유치원",
+        "snippet": "검색 결과에서 공립단설 상모유치원, 현장체험학습, 구미유아교육체험센터 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": "2025-11-16",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1632d087",
+        "structuredFields": {
+          "kindergartenName": "상모유치원",
+          "kindergartenAddress": "경상북도 구미시 상모로 71",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRJU4a8Ex8v%22%20%22%EC%83%81%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 공립단설 상모유치원 및 구미유아교육체험센터 단서가 로컬 경북 구미시 상모유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRJU4a8Ex8v/",
+          "normalizedUrl": "instagram.com/reel/drju4a8ex8v",
+          "normalizedText": "구미 상모유치원 구미유아교육체험센터 현장체험학습 instagram reel 검색 결과에서 공립단설 상모유치원 현장체험학습 구미유아교육체험센터 단서가 확인된다.",
+          "htmlSnapshotHash": "1632d087",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "상모유치원",
+            "kindergartenAddress": "경상북도 구미시 상모로 71",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRJU4a8Ex8v%22%20%22%EC%83%81%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 공립단설 상모유치원 및 구미유아교육체험센터 단서가 로컬 경북 구미시 상모유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2470,7 +2587,336 @@
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f613-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-6151f67d",
+        "kindergartenId": "1ecec08c-f613-b044-e053-0a32095ab044",
+        "title": "구미 문장유치원 봄소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIdpaxhRI9h/",
+        "source": "other",
+        "sourceName": "Instagram · 구미 문장유치원",
+        "snippet": "검색 결과에서 #문장유치원 #봄소풍 및 구미 문장유치원 계정 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "spring-picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6151f67d",
+        "structuredFields": {
+          "kindergartenName": "문장유치원",
+          "kindergartenAddress": "경상북도 구미시 문장로23길 22-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIdpaxhRI9h%22%20%22%EB%AC%B8%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "문장유치원은 로컬 원장부에서 단일 정확 명칭이며 검색 결과의 구미 문장유치원 단서와 주소가 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIdpaxhRI9h/",
+          "normalizedUrl": "instagram.com/reel/didpaxhri9h",
+          "normalizedText": "구미 문장유치원 봄소풍 instagram reel 검색 결과에서 #문장유치원 #봄소풍 및 구미 문장유치원 계정 단서가 확인된다.",
+          "htmlSnapshotHash": "6151f67d",
+          "extractedAt": "2026-07-03T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "문장유치원",
+            "kindergartenAddress": "경상북도 구미시 문장로23길 22-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIdpaxhRI9h%22%20%22%EB%AC%B8%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "문장유치원은 로컬 원장부에서 단일 정확 명칭이며 검색 결과의 구미 문장유치원 단서와 주소가 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a36f1133-c92f-4802-9077-06f69b8dbb0d": [
+      {
+        "id": "rev-083c9f0c",
+        "kindergartenId": "a36f1133-c92f-4802-9077-06f69b8dbb0d",
+        "title": "구미원당초등학교병설유치원 체육대회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYDuetJq1KV/",
+        "source": "other",
+        "sourceName": "Instagram · 구미원당초등학교병설유치원",
+        "snippet": "검색 결과에서 구미원당초등학교병설유치원의 체육대회와 운동회 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-07",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "083c9f0c",
+        "structuredFields": {
+          "kindergartenName": "구미원당초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 옥계신당로9길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EA%B5%AC%EB%AF%B8%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 구미원당초등학교병설유치원 기관명과 로컬 원장부의 경북 구미시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYDuetJq1KV/",
+          "normalizedUrl": "instagram.com/reel/dyduetjq1kv",
+          "normalizedText": "구미원당초등학교병설유치원 체육대회 instagram reel 검색 결과에서 구미원당초등학교병설유치원의 체육대회와 운동회 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "083c9f0c",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구미원당초등학교병설유치원",
+            "kindergartenAddress": "경상북도 구미시 옥계신당로9길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EA%B5%AC%EB%AF%B8%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 구미원당초등학교병설유치원 기관명과 로컬 원장부의 경북 구미시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0cef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3b5190b2",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZYrNTBBjoI/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산초등학교병설유치원",
+        "snippet": "검색 결과에서 구미왕산병설유치원, 숲체험, 숲놀이, 생태교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "ecology-play"
+        ],
+        "date": "2026-06-09",
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3b5190b2",
+        "structuredFields": {
+          "kindergartenName": "구미왕산초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 왕산로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZYrNTBBjoI%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미왕산병설유치원 단서가 로컬 경북 구미 구미왕산초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZYrNTBBjoI/",
+          "normalizedUrl": "instagram.com/reel/dzyrntbbjoi",
+          "normalizedText": "구미왕산초등학교병설유치원 숲체험 instagram reel 검색 결과에서 구미왕산병설유치원 숲체험 숲놀이 생태교육 단서가 확인된다.",
+          "htmlSnapshotHash": "3b5190b2",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구미왕산초등학교병설유치원",
+            "kindergartenAddress": "경상북도 구미시 왕산로 32",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZYrNTBBjoI%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구미왕산병설유치원 단서가 로컬 경북 구미 구미왕산초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4eb17afd",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 구미 과학관 Instagram Post",
+        "url": "https://www.instagram.com/p/C3DLBWwy9Fb/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산초등학교병설유치원",
+        "snippet": "검색 결과에서 구미왕산초등학교 병설유치원, 구미 과학관, 기초과학과 첨단 과학 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4eb17afd",
+        "structuredFields": {
+          "kindergartenName": "구미왕산초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 왕산로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C3DLBWwy9Fb%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미왕산초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학관 체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C3DLBWwy9Fb/",
+          "normalizedUrl": "instagram.com/p/c3dlbwwy9fb",
+          "normalizedText": "구미왕산초등학교병설유치원 구미 과학관 instagram post 검색 결과에서 구미왕산초등학교 병설유치원 구미 과학관 기초과학과 첨단 과학 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "4eb17afd",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-511e89db",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 대구과학박물관 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZMVqNzhedp/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산초등학교병설유치원",
+        "snippet": "검색 결과에서 구미왕산초등학교병설유치원, 대구과학박물관 체험, 신기한 과학의 세계 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "511e89db",
+        "structuredFields": {
+          "kindergartenName": "구미왕산초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 왕산로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMVqNzhedp%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미왕산초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학박물관 체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZMVqNzhedp/",
+          "normalizedUrl": "instagram.com/reel/dzmvqnzhedp",
+          "normalizedText": "구미왕산초등학교병설유치원 대구과학박물관 체험 instagram reel 검색 결과에서 구미왕산초등학교병설유치원 대구과학박물관 체험 신기한 과학의 세계 단서가 확인된다.",
+          "htmlSnapshotHash": "511e89db",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0cde-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-861bd984",
+        "kindergartenId": "1ecec08d-0cde-b044-e053-0a32095ab044",
+        "title": "구미 인동초등학교병설유치원 샌드아트 Instagram Post",
+        "url": "https://www.instagram.com/p/DZ_pak7Ep_v/",
+        "source": "other",
+        "sourceName": "Instagram · 샌드톡",
+        "snippet": "검색 결과에서 구미 인동초병설유치원, 샌드아트 공연과 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sand-art",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "861bd984",
+        "structuredFields": {
+          "kindergartenName": "인동초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 여헌로3길 34",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ_pak7Ep_v%22%20%22%EA%B5%AC%EB%AF%B8%22%20%22%EC%9D%B8%EB%8F%99%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인동초등학교병설유치원 동명 후보가 있으나 구미 단서가 로컬 경북 구미 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_pak7Ep_v/",
+          "normalizedUrl": "instagram.com/p/dz_pak7ep_v",
+          "normalizedText": "구미 인동초등학교병설유치원 샌드아트 instagram post 검색 결과에서 구미 인동초병설유치원 샌드아트 공연과 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "861bd984",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "53e93c6d-b8ab-42c7-b88f-7a124823438e": [
+      {
+        "id": "rev-sns-wave665-b71ea5e4",
+        "kindergartenId": "53e93c6d-b8ab-42c7-b88f-7a124823438e",
+        "title": "구미신당초등학교병설유치원 안전체험 기록",
+        "url": "https://www.instagram.com/p/DO-rxcsEm41/",
+        "source": "other",
+        "sourceName": "Instagram · 구미신당초등학교병설유치원",
+        "snippet": "구미신당초등학교병설유치원이 교통안전·재난안전·생활안전 체험을 소개한 공개 게시물입니다.",
+        "summary": "여러 안전체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-b71ea5e4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DO-rxcsEm41/",
+          "normalizedUrl": "instagram.com/p/do-rxcsem41",
+          "normalizedText": "구미신당초등학교병설유치원 안전체험 교통안전 재난안전 생활안전",
+          "htmlSnapshotHash": "sns-wave665-b71ea5e4",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DO-rxcsEm41/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

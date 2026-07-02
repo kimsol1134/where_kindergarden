@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 297,
-  "kindergartenCount": 100,
+  "totalCount": 329,
+  "kindergartenCount": 109,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -899,6 +899,59 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-6544a8e1",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "kindergartenName": "한성유치원",
+        "title": "영천 한성유치원 대구아쿠아리움 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXRATtECq8r/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "한성유치원 계정 게시물 검색 결과에서 영천유치원, 영천사립유치원, 아쿠아리움 체험학습, 해양생물, 대구 아쿠아리움 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6544a8e1",
+        "structuredFields": {
+          "kindergartenName": "한성유치원",
+          "kindergartenAddress": "경상북도 영천시 향군로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXRATtECq8r%22%20%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%22%20%22%EC%98%81%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한성유치원은 동명이 있으나 영천유치원·영천사립유치원 단서와 영천시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXRATtECq8r/",
+          "normalizedUrl": "www.instagram.com/reel/dxrattecq8r",
+          "normalizedText": "영천 한성유치원 대구아쿠아리움 견학 instagram reel 한성유치원 계정 게시물 검색 결과에서 영천유치원, 영천사립유치원, 아쿠아리움 체험학습, 해양생물, 대구 아쿠아리움 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "6544a8e1",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "한성유치원",
+            "kindergartenAddress": "경상북도 영천시 향군로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXRATtECq8r%22%20%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%22%20%22%EC%98%81%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한성유치원은 동명이 있으나 영천유치원·영천사립유치원 단서와 영천시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-083f-b044-e053-0a32095ab044": [
@@ -1067,6 +1120,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d7c22b6e",
+        "kindergartenId": "1ecec08d-083f-b044-e053-0a32095ab044",
+        "title": "상주 파티마유치원 경찰서 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DYemMV0EopW/",
+        "source": "other",
+        "sourceName": "Instagram · 파티마유치원",
+        "snippet": "파티마유치원 계정에서 경찰서 견학을 다녀온 문맥과 경찰관의 하루를 만난 활동 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "police-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cbb0eafb",
+        "structuredFields": {
+          "kindergartenName": "파티마유치원",
+          "kindergartenAddress": "경상북도 상주시 동수1길 106",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYemMV0EopW%22+%22%ED%8C%8C%ED%8B%B0%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%B0%B0%EC%84%9C+%EA%B2%AC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "파티마유치원은 로컬 원장부 단일 매칭이며 기관 계정의 경찰서 견학 문맥과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYemMV0EopW/",
+          "normalizedUrl": "www.instagram.com/p/dyemmv0eopw",
+          "normalizedText": "상주 파티마유치원 경찰서 견학 instagram post 파티마유치원 계정에서 경찰서 견학을 다녀온 문맥과 경찰관의 하루를 만난 활동 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "cbb0eafb",
+          "extractedAt": "2026-07-03T00:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "파티마유치원",
+            "kindergartenAddress": "경상북도 상주시 동수1길 106",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYemMV0EopW%22+%22%ED%8C%8C%ED%8B%B0%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%B0%B0%EC%84%9C+%EA%B2%AC%ED%95%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "파티마유치원은 로컬 원장부 단일 매칭이며 기관 계정의 경찰서 견학 문맥과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1751,6 +1855,110 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-fb9437ae",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "title": "영천 샛별유치원 금호도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/CxhNUK-hs_u/",
+        "source": "other",
+        "sourceName": "Instagram · 샛별유치원",
+        "snippet": "샛별유치원 계정에서 금호도서관 견학과 영천샛별·영천유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c0ba9ffb",
+        "structuredFields": {
+          "kindergartenName": "샛별유치원",
+          "kindergartenAddress": "경상북도 영천시 최무선로 236",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxhNUK-hs_u%22+%22%EC%98%81%EC%B2%9C%22+%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B8%88%ED%98%B8%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "샛별유치원 동명이 있으나 영천샛별·영천유치원 단서가 영천 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxhNUK-hs_u/",
+          "normalizedUrl": "www.instagram.com/p/cxhnuk-hs_u",
+          "normalizedText": "영천 샛별유치원 금호도서관 견학 instagram post 샛별유치원 계정에서 금호도서관 견학과 영천샛별·영천유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "c0ba9ffb",
+          "extractedAt": "2026-07-02T23:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "샛별유치원",
+            "kindergartenAddress": "경상북도 영천시 최무선로 236",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxhNUK-hs_u%22+%22%EC%98%81%EC%B2%9C%22+%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B8%88%ED%98%B8%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "샛별유치원 동명이 있으나 영천샛별·영천유치원 단서가 영천 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9587db5b",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "kindergartenName": "샛별유치원",
+        "title": "영천 샛별유치원 화재대피훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C_0YXpiS55p/",
+        "source": "other",
+        "sourceName": "Instagram · 영천 샛별유치원",
+        "snippet": "영천 샛별유치원 계정의 화재 대피훈련 릴 검색 결과에서 손수건에 물을 묻혀 대피하는 훈련 문맥이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "76ddc589",
+        "structuredFields": {
+          "kindergartenName": "샛별유치원",
+          "kindergartenAddress": "경상북도 영천시 최무선로 236",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C_0YXpiS55p%22%20%22%EC%98%81%EC%B2%9C%20%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%20%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영천 샛별유치원 계정 단서가 로컬 영천 샛별유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_0YXpiS55p/",
+          "normalizedUrl": "www.instagram.com/reel/c_0yxpis55p",
+          "normalizedText": "영천 샛별유치원 화재대피훈련 instagram reel 영천 샛별유치원 계정의 화재 대피훈련 릴 검색 결과에서 손수건에 물을 묻혀 대피하는 훈련 문맥이 확인된다.",
+          "htmlSnapshotHash": "76ddc589",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "샛별유치원",
+            "kindergartenAddress": "경상북도 영천시 최무선로 236",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C_0YXpiS55p%22%20%22%EC%98%81%EC%B2%9C%20%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%20%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영천 샛별유치원 계정 단서가 로컬 영천 샛별유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f2ac-b044-e053-0a32095ab044": [
@@ -4019,6 +4227,57 @@
           ]
         },
         "evidenceChecksum": "ee4a20d2"
+      },
+      {
+        "id": "rev-8c205586",
+        "kindergartenId": "1ecec08c-ed57-b044-e053-0a32095ab044",
+        "title": "포항제일유치원 유치원텃밭 감자캐기 Instagram Post",
+        "url": "https://www.instagram.com/p/CfqvhUfhTqQ/",
+        "source": "other",
+        "sourceName": "Instagram · 포항제일유치원",
+        "snippet": "포항제일유치원 계정에서 유치원 텃밭 감자캐기와 수확한 감자를 간식으로 먹는 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "potato-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "77e3b724",
+        "structuredFields": {
+          "kindergartenName": "포항제일유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 새마을로 172",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CfqvhUfhTqQ%22+%22%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%90%EC%9E%90%EC%BA%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항제일유치원은 로컬 원장부에서 유일한 정확 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CfqvhUfhTqQ/",
+          "normalizedUrl": "www.instagram.com/p/cfqvhufhtqq",
+          "normalizedText": "포항제일유치원 유치원텃밭 감자캐기 instagram post 포항제일유치원 계정에서 유치원 텃밭 감자캐기와 수확한 감자를 간식으로 먹는 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "77e3b724",
+          "extractedAt": "2026-07-02T11:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "포항제일유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 새마을로 172",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CfqvhUfhTqQ%22+%22%ED%8F%AC%ED%95%AD%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%90%EC%9E%90%EC%BA%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "포항제일유치원은 로컬 원장부에서 유일한 정확 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f2e1-b044-e053-0a32095ab044": [
@@ -5107,6 +5366,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ce80d2fe",
+        "kindergartenId": "1ecec08c-fba5-b044-e053-0a32095ab044",
+        "title": "포항 중앙유치원 감자캐기 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaKFoIzxNOR/",
+        "source": "other",
+        "sourceName": "Instagram · 포항중앙유치원",
+        "snippet": "포항중앙유치원 계정에서 중앙이들의 감자캐기 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "potato-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3e3bfa34",
+        "structuredFields": {
+          "kindergartenName": "중앙유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 중흥로241번길 30-2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaKFoIzxNOR%22+%22%ED%8F%AC%ED%95%AD%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%90%EC%9E%90%EC%BA%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "중앙유치원 동명이 많으나 포항중앙유치원 계정명과 포항 지역 단서가 확인되어 포항 중앙유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaKFoIzxNOR/",
+          "normalizedUrl": "www.instagram.com/reel/dakfoizxnor",
+          "normalizedText": "포항 중앙유치원 감자캐기 체험 instagram reel 포항중앙유치원 계정에서 중앙이들의 감자캐기 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "3e3bfa34",
+          "extractedAt": "2026-07-02T11:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "중앙유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 중흥로241번길 30-2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaKFoIzxNOR%22+%22%ED%8F%AC%ED%95%AD%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%90%EC%9E%90%EC%BA%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "중앙유치원 동명이 많으나 포항중앙유치원 계정명과 포항 지역 단서가 확인되어 포항 중앙유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fba6-b044-e053-0a32095ab044": [
@@ -5460,6 +5770,41 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave665-f8964190",
+        "kindergartenId": "1ecec08c-fba6-b044-e053-0a32095ab044",
+        "title": "창포초등학교병설유치원 화재·지진 대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DK0pX51PrQh/",
+        "source": "other",
+        "sourceName": "Instagram · 창포초등학교병설유치원",
+        "snippet": "창포초등학교병설유치원이 화재대피훈련과 지진대피훈련을 소개한 공개 릴스입니다.",
+        "summary": "재난 대피훈련 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "evacuation-drill"
+        ],
+        "date": "2025-06-12",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-f8964190",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DK0pX51PrQh/",
+          "normalizedUrl": "instagram.com/reel/dk0px51prqh",
+          "normalizedText": "창포초등학교병설유치원 화재대피훈련 지진대피훈련 안전한유치원",
+          "htmlSnapshotHash": "sns-wave665-f8964190",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DK0pX51PrQh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
       }
     ],
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -5514,6 +5859,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T18:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-07a153c4",
+        "kindergartenId": "1ecec08d-0f35-b044-e053-0a32095ab044",
+        "title": "경북 영주유치원 유아숲놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DQ8IBbEE_mB/",
+        "source": "other",
+        "sourceName": "Instagram · 영주유치원",
+        "snippet": "영주유치원 계정에서 숲체험, 유아숲놀이, 유치원생활, 국유림 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "99fa4e48",
+        "structuredFields": {
+          "kindergartenName": "영주유치원",
+          "kindergartenAddress": "경상북도 영주시 숫골길 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQ8IBbEE_mB%22+%22%EC%98%81%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9C%A0%EC%95%84%EC%88%B2%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정확한 기관명 영주유치원은 로컬 원장부에서 1건이라 공식 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQ8IBbEE_mB/",
+          "normalizedUrl": "www.instagram.com/p/dq8ibbee_mb",
+          "normalizedText": "경북 영주유치원 유아숲놀이 instagram post 영주유치원 계정에서 숲체험, 유아숲놀이, 유치원생활, 국유림 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "99fa4e48",
+          "extractedAt": "2026-07-02T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "영주유치원",
+            "kindergartenAddress": "경상북도 영주시 숫골길 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQ8IBbEE_mB%22+%22%EC%98%81%EC%A3%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9C%A0%EC%95%84%EC%88%B2%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정확한 기관명 영주유치원은 로컬 원장부에서 1건이라 공식 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T07:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -5726,6 +6122,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f6199ddd",
+        "kindergartenId": "1ecec08c-ed6d-b044-e053-0a32095ab044",
+        "title": "구미 동아유치원 난 토마토 절대 안 먹어 뮤지컬 관람 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C557pLfy0dG/",
+        "source": "other",
+        "sourceName": "Instagram · 구미 동아유치원",
+        "snippet": "구미 동아유치원 계정에서 난 토마토 절대 안 먹어 뮤지컬 관람과 구미문화예술회관 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "musical-viewing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9310dc27",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "경상북도 구미시 형곡로 211-9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C557pLfy0dG%22%20%22%EA%B5%AC%EB%AF%B8%20%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동아유치원 동명이 많으나 구미동아유치원·구미문화예술회관 단서가 구미 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C557pLfy0dG/",
+          "normalizedUrl": "www.instagram.com/reel/c557plfy0dg",
+          "normalizedText": "구미 동아유치원 난 토마토 절대 안 먹어 뮤지컬 관람 instagram reel 구미 동아유치원 계정에서 난 토마토 절대 안 먹어 뮤지컬 관람과 구미문화예술회관 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "9310dc27",
+          "extractedAt": "2026-07-02T11:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "경상북도 구미시 형곡로 211-9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C557pLfy0dG%22%20%22%EA%B5%AC%EB%AF%B8%20%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동아유치원 동명이 많으나 구미동아유치원·구미문화예술회관 단서가 구미 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -6276,6 +6723,110 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-58065322",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 초록품 자연놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIFwUvfy_iR/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "경산유치원 계정에서 초록품 자연놀이와 숲 이야기, 공립단설유치원, 경상북도교육청 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T08:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b33d581",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIFwUvfy_iR%22+%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%90%EC%97%B0%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부에서 유일한 이름이라 공식 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIFwUvfy_iR/",
+          "normalizedUrl": "www.instagram.com/reel/difwuvfy_ir",
+          "normalizedText": "경산유치원 초록품 자연놀이 instagram reel 경산유치원 계정에서 초록품 자연놀이와 숲 이야기, 공립단설유치원, 경상북도교육청 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "4b33d581",
+          "extractedAt": "2026-07-02T08:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIFwUvfy_iR%22+%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%90%EC%97%B0%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원은 로컬 원장부에서 유일한 이름이라 공식 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T08:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1a2d9355",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "kindergartenName": "경산유치원",
+        "title": "경산유치원 화재대피훈련 소방안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DT_kTcOlXy8/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "경산유치원 전체 유아 대상 화재대피훈련과 소방안전교육 안내문 검색 결과에서 안전교육 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7f1b22f7",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DT_kTcOlXy8%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 매칭이며 기관명과 화재대피훈련 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DT_kTcOlXy8/",
+          "normalizedUrl": "www.instagram.com/p/dt_ktcolxy8",
+          "normalizedText": "경산유치원 화재대피훈련 소방안전교육 instagram post 경산유치원 전체 유아 대상 화재대피훈련과 소방안전교육 안내문 검색 결과에서 안전교육 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "7f1b22f7",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DT_kTcOlXy8%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원은 로컬 원장부 단일 매칭이며 기관명과 화재대피훈련 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -7227,6 +7778,59 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a23ea227",
+        "kindergartenId": "1ecec08d-043e-b044-e053-0a32095ab044",
+        "kindergartenName": "우리유치원",
+        "title": "포항 우리유치원 경찰서 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C3eTwNlBZA2/",
+        "source": "other",
+        "sourceName": "Instagram · 우리유치원",
+        "snippet": "우리유치원 계정 게시물 검색 결과에서 포항, 오천, 문덕, 경찰서 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "police-station",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a23ea227",
+        "structuredFields": {
+          "kindergartenName": "우리유치원",
+          "kindergartenAddress": "경상북도 포항시 남구 정몽주로 731-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C3eTwNlBZA2%22%20%22%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%BD%EC%B0%B0%EC%84%9C%20%EA%B2%AC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "우리유치원은 동명이 있으나 포항·오천·문덕 단서와 포항 남구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C3eTwNlBZA2/",
+          "normalizedUrl": "www.instagram.com/reel/c3etwnlbza2",
+          "normalizedText": "포항 우리유치원 경찰서 견학 instagram reel 우리유치원 계정 게시물 검색 결과에서 포항, 오천, 문덕, 경찰서 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "a23ea227",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "우리유치원",
+            "kindergartenAddress": "경상북도 포항시 남구 정몽주로 731-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C3eTwNlBZA2%22%20%22%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%BD%EC%B0%B0%EC%84%9C%20%EA%B2%AC%ED%95%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "우리유치원은 동명이 있으나 포항·오천·문덕 단서와 포항 남구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fd3a-b044-e053-0a32095ab044": [
@@ -7372,6 +7976,59 @@
           ]
         },
         "evidenceChecksum": "f5fe37bd"
+      },
+      {
+        "id": "rev-a2fbb711",
+        "kindergartenId": "1ecec08c-fc0c-b044-e053-0a32095ab044",
+        "kindergartenName": "가야유치원",
+        "title": "구미 옥계 가야유치원 마켓데이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIkT-S8ygq5/",
+        "source": "other",
+        "sourceName": "Instagram · 가야유치원",
+        "snippet": "가야유치원 계정 게시물 검색 결과에서 산동유치원, 옥계동유치원, 확장단지유치원, 마켓데이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economy-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a2fbb711",
+        "structuredFields": {
+          "kindergartenName": "가야유치원",
+          "kindergartenAddress": "경상북도 구미시 옥계2공단로 264-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIkT-S8ygq5%22%20%22%EA%B0%80%EC%95%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%98%A5%EA%B3%84%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "옥계동, 산동, 확장단지 단서와 로컬 구미 가야유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIkT-S8ygq5/",
+          "normalizedUrl": "www.instagram.com/reel/dikt-s8ygq5",
+          "normalizedText": "구미 옥계 가야유치원 마켓데이 instagram reel 가야유치원 계정 게시물 검색 결과에서 산동유치원, 옥계동유치원, 확장단지유치원, 마켓데이 단서가 확인된다.",
+          "htmlSnapshotHash": "a2fbb711",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "가야유치원",
+            "kindergartenAddress": "경상북도 구미시 옥계2공단로 264-11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIkT-S8ygq5%22%20%22%EA%B0%80%EC%95%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%98%A5%EA%B3%84%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "옥계동, 산동, 확장단지 단서와 로컬 구미 가야유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-045e-b044-e053-0a32095ab044": [
@@ -9650,6 +10307,59 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-beae0bf0",
+        "kindergartenId": "ec81f57c-aff2-4478-a43b-89e664a63e06",
+        "kindergartenName": "민들레유치원",
+        "title": "경산 민들레유치원 불소도포 치아관리 Instagram Post",
+        "url": "https://www.instagram.com/p/DZWnQn1kyGu/",
+        "source": "other",
+        "sourceName": "Instagram · 민들레유치원",
+        "snippet": "경산 사동 민들레유치원 치아관리 게시물 검색 결과에서 불소도포와 충치예방 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental-health",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "246ad3df",
+        "structuredFields": {
+          "kindergartenName": "민들레유치원",
+          "kindergartenAddress": "경상북도 경산시 원효로40길 60",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZWnQn1kyGu%22%20%22%EB%AF%BC%EB%93%A4%EB%A0%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%88%EC%86%8C%EB%8F%84%ED%8F%AC%22%20%22%EA%B2%BD%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산사동·경산유치원추천·민들레유치원 단서가 로컬 경산 민들레유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZWnQn1kyGu/",
+          "normalizedUrl": "www.instagram.com/p/dzwnqn1kygu",
+          "normalizedText": "경산 민들레유치원 불소도포 치아관리 instagram post 경산 사동 민들레유치원 치아관리 게시물 검색 결과에서 불소도포와 충치예방 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "246ad3df",
+          "extractedAt": "2026-07-02T19:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "민들레유치원",
+            "kindergartenAddress": "경상북도 경산시 원효로40길 60",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZWnQn1kyGu%22%20%22%EB%AF%BC%EB%93%A4%EB%A0%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%88%EC%86%8C%EB%8F%84%ED%8F%AC%22%20%22%EA%B2%BD%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산사동·경산유치원추천·민들레유치원 단서가 로컬 경산 민들레유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fb69-b044-e053-0a32095ab044": [
@@ -9946,6 +10656,59 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1788d09a",
+        "kindergartenId": "1ecec08c-fb69-b044-e053-0a32095ab044",
+        "kindergartenName": "계명유치원",
+        "title": "구미 계명유치원 인공지능 로봇 리쿠 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CxUvAwERvUR/",
+        "source": "other",
+        "sourceName": "Instagram · 구미 계명유치원",
+        "snippet": "구미 계명유치원 계정의 릴 검색 결과에서 계명유치원에 인공지능 로봇 리쿠가 온 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "robotics",
+          "ai-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1788d09a",
+        "structuredFields": {
+          "kindergartenName": "계명유치원",
+          "kindergartenAddress": "경상북도 구미시 봉곡서로 100",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxUvAwERvUR%22%20%22%EA%B5%AC%EB%AF%B8%20%EA%B3%84%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%A1%9C%EB%B4%87%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미 계명유치원 계정명과 로컬 구미 계명유치원 원장부 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CxUvAwERvUR/",
+          "normalizedUrl": "www.instagram.com/reel/cxuvawervur",
+          "normalizedText": "구미 계명유치원 인공지능 로봇 리쿠 instagram reel 구미 계명유치원 계정의 릴 검색 결과에서 계명유치원에 인공지능 로봇 리쿠가 온 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "1788d09a",
+          "extractedAt": "2026-07-02T23:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "계명유치원",
+            "kindergartenAddress": "경상북도 구미시 봉곡서로 100",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxUvAwERvUR%22%20%22%EA%B5%AC%EB%AF%B8%20%EA%B3%84%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%A1%9C%EB%B4%87%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구미 계명유치원 계정명과 로컬 구미 계명유치원 원장부 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f6bd-b044-e053-0a32095ab044": [
@@ -10237,6 +11000,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-77d9ac27",
+        "kindergartenId": "1ecec08c-ee7b-b044-e053-0a32095ab044",
+        "title": "포항서머힐유치원 죽도시장 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DII4CswxhBS/",
+        "source": "other",
+        "sourceName": "Instagram · 포항서머힐유치원",
+        "snippet": "포항서머힐유치원 계정에서 죽도시장견학과 포항유치원·유치원탐구활동 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "40d4f5b6",
+        "structuredFields": {
+          "kindergartenName": "포항서머힐유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 학전로 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DII4CswxhBS%22%20%22%ED%8F%AC%ED%95%AD%EC%84%9C%EB%A8%B8%ED%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A3%BD%EB%8F%84%EC%8B%9C%EC%9E%A5%EA%B2%AC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "서머힐유치원 동명이 있으나 포항서머힐유치원·죽도시장 단서가 포항 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DII4CswxhBS/",
+          "normalizedUrl": "www.instagram.com/reel/dii4cswxhbs",
+          "normalizedText": "포항서머힐유치원 죽도시장 견학 instagram reel 포항서머힐유치원 계정에서 죽도시장견학과 포항유치원·유치원탐구활동 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "40d4f5b6",
+          "extractedAt": "2026-07-02T10:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "포항서머힐유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 학전로 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DII4CswxhBS%22%20%22%ED%8F%AC%ED%95%AD%EC%84%9C%EB%A8%B8%ED%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A3%BD%EB%8F%84%EC%8B%9C%EC%9E%A5%EA%B2%AC%ED%95%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "서머힐유치원 동명이 있으나 포항서머힐유치원·죽도시장 단서가 포항 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -10862,6 +11676,59 @@
         "evidenceChecksum": "5ea62a96"
       },
       {
+        "id": "rev-90cdeb45",
+        "kindergartenId": "1ecec08d-0bdf-b044-e053-0a32095ab044",
+        "kindergartenName": "포항동부초등학교병설유치원",
+        "title": "포항동부초등학교병설유치원 전통놀이 윷놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DPS7Jg_khpu/",
+        "source": "other",
+        "sourceName": "Instagram · 포항동부초등학교병설유치원",
+        "snippet": "포항동부초등학교병설유치원 계정 검색 결과에서 아이신나 놀이주간, 전통놀이, 한복입고 윷놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traditional-play",
+          "yutnori"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:54.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "90cdeb45",
+        "structuredFields": {
+          "kindergartenName": "포항동부초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 삼호로 273",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPS7Jg_khpu%22%20%22%ED%8F%AC%ED%95%AD%EB%8F%99%EB%B6%80%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%B7%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항동부초등학교병설유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPS7Jg_khpu/",
+          "normalizedUrl": "www.instagram.com/p/dps7jg_khpu",
+          "normalizedText": "포항동부초등학교병설유치원 전통놀이 윷놀이 instagram post 포항동부초등학교병설유치원 계정 검색 결과에서 아이신나 놀이주간, 전통놀이, 한복입고 윷놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "90cdeb45",
+          "extractedAt": "2026-07-02T23:59:54.000Z",
+          "structuredFields": {
+            "kindergartenName": "포항동부초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 삼호로 273",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPS7Jg_khpu%22%20%22%ED%8F%AC%ED%95%AD%EB%8F%99%EB%B6%80%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%B7%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "포항동부초등학교병설유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:54.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
         "id": "rev-4a55dbdc",
         "kindergartenId": "1ecec08d-0bdf-b044-e053-0a32095ab044",
         "title": "포항동부초등학교병설유치원 교통안전교육 Instagram Reel",
@@ -10912,6 +11779,41 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave665-3d292b1e",
+        "kindergartenId": "1ecec08d-0bdf-b044-e053-0a32095ab044",
+        "title": "포항동부초등학교병설유치원 교통안전 놀이 기록",
+        "url": "https://www.instagram.com/reel/DYL1_eZPeR8/",
+        "source": "other",
+        "sourceName": "Instagram · 포항동부초등학교병설유치원",
+        "snippet": "포항동부초등학교병설유치원이 신호등과 길 건너기 교통안전 놀이를 소개한 공개 릴스입니다.",
+        "summary": "교통안전 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-3d292b1e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYL1_eZPeR8/",
+          "normalizedUrl": "instagram.com/reel/dyl1_ezper8",
+          "normalizedText": "포항동부초등학교병설유치원 교통안전교육 안전교육 신호등",
+          "htmlSnapshotHash": "sns-wave665-3d292b1e",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYL1_eZPeR8/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
       }
     ],
     "1ecec08d-075c-b044-e053-0a32095ab044": [
@@ -11011,6 +11913,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-234d66fa",
+        "kindergartenId": "1ecec08d-075c-b044-e053-0a32095ab044",
+        "title": "칠곡 바움유치원 배수확체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CyNfbQbRLLe/",
+        "source": "other",
+        "sourceName": "Instagram · 바움유치원_석적",
+        "snippet": "바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "pear-picking"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5331ba02",
+        "structuredFields": {
+          "kindergartenName": "바움유치원",
+          "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyNfbQbRLLe/",
+          "normalizedUrl": "www.instagram.com/p/cynfbqbrlle",
+          "normalizedText": "칠곡 바움유치원 배수확체험 instagram post 바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "5331ba02",
+          "extractedAt": "2026-07-02T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "바움유치원",
+            "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T14:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -11252,6 +12205,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-954da1fc",
+        "kindergartenId": "1ecec08c-f8e4-b044-e053-0a32095ab044",
+        "kindergartenName": "문화유치원",
+        "title": "구미 문화유치원 대구시민안전테마파크 소방안전체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DX_pkAGidXC/",
+        "source": "other",
+        "sourceName": "Instagram · 문화유치원",
+        "snippet": "문화유치원 계정 게시물 검색 결과에서 대구소방 교통사고 안전체험장, 문화유치원 방문, 소방안전체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "954da1fc",
+        "structuredFields": {
+          "kindergartenName": "문화유치원",
+          "kindergartenAddress": "경상북도 구미시 도봉로 57-2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX_pkAGidXC%22%20%22%EB%AC%B8%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "문화유치원은 동명이 있으나 계정·검색 결과에서 구미 문화유치원 단서가 확인되어 구미시 주소와 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX_pkAGidXC/",
+          "normalizedUrl": "www.instagram.com/p/dx_pkagidxc",
+          "normalizedText": "구미 문화유치원 대구시민안전테마파크 소방안전체험 instagram post 문화유치원 계정 게시물 검색 결과에서 대구소방 교통사고 안전체험장, 문화유치원 방문, 소방안전체험 단서가 확인된다.",
+          "htmlSnapshotHash": "954da1fc",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "문화유치원",
+            "kindergartenAddress": "경상북도 구미시 도봉로 57-2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX_pkAGidXC%22%20%22%EB%AC%B8%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "문화유치원은 동명이 있으나 계정·검색 결과에서 구미 문화유치원 단서가 확인되어 구미시 주소와 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -12832,6 +13838,599 @@
         "evidenceChecksum": "1d18de0c"
       }
     ],
+    "1ecec08d-043f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3cbda2c4",
+        "kindergartenId": "1ecec08d-043f-b044-e053-0a32095ab044",
+        "title": "포항 난나유치원 세배와 민속놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/Cnoreh6JIr_/",
+        "source": "other",
+        "sourceName": "Instagram · 난나유치원",
+        "snippet": "난나유치원 계정에서 세배와 민속놀이, 포항, 난나유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traditional-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T16:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9087d3b5",
+        "structuredFields": {
+          "kindergartenName": "난나유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 창흥로36번길 8-15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cnoreh6JIr_%22+%22%EB%82%9C%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%AC%ED%95%AD%22+%22%EB%AF%BC%EC%86%8D%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/Cnoreh6JIr_/",
+          "normalizedUrl": "www.instagram.com/reel/cnoreh6jir_",
+          "normalizedText": "포항 난나유치원 세배와 민속놀이 instagram reel 난나유치원 계정에서 세배와 민속놀이, 포항, 난나유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "9087d3b5",
+          "extractedAt": "2026-07-02T16:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "난나유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 창흥로36번길 8-15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cnoreh6JIr_%22+%22%EB%82%9C%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%AC%ED%95%AD%22+%22%EB%AF%BC%EC%86%8D%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T16:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0680-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-758ebade",
+        "kindergartenId": "1ecec08d-0680-b044-e053-0a32095ab044",
+        "title": "포항 동해초등학교병설유치원 어버이날 비밀편지 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYEWBwsOUWo/",
+        "source": "other",
+        "sourceName": "Instagram · 포항 동해초등학교병설유치원",
+        "snippet": "동해초등학교병설유치원 계정에서 어버이날 비밀편지와 부모님께 감사와 사랑을 전하는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parents-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e46893ab",
+        "structuredFields": {
+          "kindergartenName": "동해초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 남구 일월로 78",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYEWBwsOUWo%22+%22%EB%8F%99%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%AC%ED%95%AD%22+%22%EC%96%B4%EB%B2%84%EC%9D%B4%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동해초등학교병설유치원 동명이 있으나 Instagram 프로필의 포항 단서가 포항 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYEWBwsOUWo/",
+          "normalizedUrl": "www.instagram.com/reel/dyewbwsouwo",
+          "normalizedText": "포항 동해초등학교병설유치원 어버이날 비밀편지 instagram reel 동해초등학교병설유치원 계정에서 어버이날 비밀편지와 부모님께 감사와 사랑을 전하는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "e46893ab",
+          "extractedAt": "2026-07-02T19:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동해초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 남구 일월로 78",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYEWBwsOUWo%22+%22%EB%8F%99%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%AC%ED%95%AD%22+%22%EC%96%B4%EB%B2%84%EC%9D%B4%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동해초등학교병설유치원 동명이 있으나 Instagram 프로필의 포항 단서가 포항 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "25808db5-8e82-4b44-988c-db2e59b34bb3": [
+      {
+        "id": "rev-17c38b81",
+        "kindergartenId": "25808db5-8e82-4b44-988c-db2e59b34bb3",
+        "kindergartenName": "책놀이숲놀이유치원",
+        "title": "경산 책놀이숲놀이유치원 대구대학교 박물관 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DYygNFWmemV/",
+        "source": "other",
+        "sourceName": "Instagram · 대구대학교 중앙박물관",
+        "snippet": "대구대 박물관 계정의 박물관스케치 게시물 검색 결과에서 책놀이숲놀이유치원 친구들이 박물관에 체험을 와 교육사 설명을 따라 점자 관련 전시를 살펴본 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "book-play",
+          "museum-visit"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "17c38b81",
+        "structuredFields": {
+          "kindergartenName": "책놀이숲놀이유치원",
+          "kindergartenAddress": "경상북도 경산시 남매로6길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYygNFWmemV%22%20%22%EC%B1%85%EB%86%80%EC%9D%B4%EC%88%B2%EB%86%80%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%EB%8C%80%20%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "게시물 검색 결과의 책놀이숲놀이유치원 명시와 로컬 경산 원장부의 동일 명칭을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYygNFWmemV/",
+          "normalizedUrl": "www.instagram.com/p/dyygnfwmemv",
+          "normalizedText": "경산 책놀이숲놀이유치원 대구대학교 박물관 체험 instagram post 대구대 박물관 계정의 박물관스케치 게시물 검색 결과에서 책놀이숲놀이유치원 친구들이 박물관에 체험을 와 교육사 설명을 따라 점자 관련 전시를 살펴본 단서가 확인된다.",
+          "htmlSnapshotHash": "17c38b81",
+          "extractedAt": "2026-07-02T20:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "책놀이숲놀이유치원",
+            "kindergartenAddress": "경상북도 경산시 남매로6길 29",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYygNFWmemV%22%20%22%EC%B1%85%EB%86%80%EC%9D%B4%EC%88%B2%EB%86%80%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%EB%8C%80%20%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "게시물 검색 결과의 책놀이숲놀이유치원 명시와 로컬 경산 원장부의 동일 명칭을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fc0e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e8830e57",
+        "kindergartenId": "1ecec08c-fc0e-b044-e053-0a32095ab044",
+        "kindergartenName": "아람유치원",
+        "title": "칠곡 아람유치원 경북 119소방동요경연 X Post",
+        "url": "https://x.com/chilgok119/status/877348668973633536",
+        "source": "other",
+        "sourceName": "X · 칠곡소방서",
+        "snippet": "칠곡소방서 X 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "fire-safety",
+          "public-safety-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e8830e57",
+        "structuredFields": {
+          "kindergartenName": "아람유치원",
+          "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/chilgok119/status/877348668973633536",
+          "normalizedUrl": "x.com/chilgok119/status/877348668973633536",
+          "normalizedText": "칠곡 아람유치원 경북 119소방동요경연 x post 칠곡소방서 x 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
+          "htmlSnapshotHash": "e8830e57",
+          "extractedAt": "2026-07-02T21:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아람유치원",
+            "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0aee-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-52886209",
+        "kindergartenId": "1ecec08d-0aee-b044-e053-0a32095ab044",
+        "kindergartenName": "고려유치원",
+        "title": "포항 고려유치원 119 안전체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CfqtV9rvq_b/",
+        "source": "other",
+        "sourceName": "Instagram · 고려유치원",
+        "snippet": "고려유치원 계정 게시물 검색 결과에서 포항고려유치원 해시태그와 119 안전체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:50.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "52886209",
+        "structuredFields": {
+          "kindergartenName": "고려유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CfqtV9rvq_b%22%20%22%ED%8F%AC%ED%95%AD%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항고려유치원 단서와 로컬 포항 고려유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CfqtV9rvq_b/",
+          "normalizedUrl": "www.instagram.com/p/cfqtv9rvq_b",
+          "normalizedText": "포항 고려유치원 119 안전체험 instagram post 고려유치원 계정 게시물 검색 결과에서 포항고려유치원 해시태그와 119 안전체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "52886209",
+          "extractedAt": "2026-07-02T23:59:50.000Z",
+          "structuredFields": {
+            "kindergartenName": "고려유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CfqtV9rvq_b%22%20%22%ED%8F%AC%ED%95%AD%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "포항고려유치원 단서와 로컬 포항 고려유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:50.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c955c14e",
+        "kindergartenId": "1ecec08d-0aee-b044-e053-0a32095ab044",
+        "kindergartenName": "고려유치원",
+        "title": "포항 고려유치원 지진 화재 비상시 행동요령 Instagram Post",
+        "url": "https://www.instagram.com/p/CfqtPwyvq6F/",
+        "source": "other",
+        "sourceName": "Instagram · 고려유치원",
+        "snippet": "고려유치원 계정 게시물 검색 결과에서 119 안전체험활동과 지진, 화재, 비상시 행동요령 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "emergency-training"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:50.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c955c14e",
+        "structuredFields": {
+          "kindergartenName": "고려유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CfqtPwyvq6F%22%20%22%ED%8F%AC%ED%95%AD%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항고려유치원 단서와 로컬 포항 고려유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CfqtPwyvq6F/",
+          "normalizedUrl": "www.instagram.com/p/cfqtpwyvq6f",
+          "normalizedText": "포항 고려유치원 지진 화재 비상시 행동요령 instagram post 고려유치원 계정 게시물 검색 결과에서 119 안전체험활동과 지진, 화재, 비상시 행동요령 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "c955c14e",
+          "extractedAt": "2026-07-02T23:59:50.000Z",
+          "structuredFields": {
+            "kindergartenName": "고려유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CfqtPwyvq6F%22%20%22%ED%8F%AC%ED%95%AD%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "포항고려유치원 단서와 로컬 포항 고려유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:50.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cda5e5d0",
+        "kindergartenId": "1ecec08d-0aee-b044-e053-0a32095ab044",
+        "kindergartenName": "고려유치원",
+        "title": "포항 고려유치원 물놀이 캠프 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CujTEMchsFI/",
+        "source": "other",
+        "sourceName": "Instagram · 고려유치원",
+        "snippet": "고려유치원 계정 게시물 검색 결과에서 친구들과 다양한 물놀이 기구를 타며 즐긴 캠프 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer-camp",
+          "water-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:56.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cda5e5d0",
+        "structuredFields": {
+          "kindergartenName": "고려유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CujTEMchsFI%22%20%22%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%BA%A0%ED%94%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "고려유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CujTEMchsFI/",
+          "normalizedUrl": "www.instagram.com/reel/cujtemchsfi",
+          "normalizedText": "포항 고려유치원 물놀이 캠프 instagram reel 고려유치원 계정 게시물 검색 결과에서 친구들과 다양한 물놀이 기구를 타며 즐긴 캠프 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "cda5e5d0",
+          "extractedAt": "2026-07-02T23:59:56.000Z",
+          "structuredFields": {
+            "kindergartenName": "고려유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 선착로 54",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CujTEMchsFI%22%20%22%EA%B3%A0%EB%A0%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%BA%A0%ED%94%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "고려유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0823-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7b3dfb44",
+        "kindergartenId": "1ecec08d-0823-b044-e053-0a32095ab044",
+        "kindergartenName": "선재유치원",
+        "title": "고령 선재유치원 다산도서관 실감형 동화체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGca7CssAVa/",
+        "source": "other",
+        "sourceName": "Instagram · 고령군",
+        "snippet": "고령군 Instagram 검색 결과에서 다산도서관 실감형 동화체험관과 선재유치원 친구들이 함께한 동화 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "story-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7b3dfb44",
+        "structuredFields": {
+          "kindergartenName": "선재유치원",
+          "kindergartenAddress": "경상북도 고령군 주산순환길 147",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGca7CssAVa%22%20%22%EC%84%A0%EC%9E%AC%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EB%A0%B9%EA%B5%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "고령군 단서와 로컬 고령 선재유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGca7CssAVa/",
+          "normalizedUrl": "www.instagram.com/reel/dgca7cssava",
+          "normalizedText": "고령 선재유치원 다산도서관 실감형 동화체험 instagram reel 고령군 instagram 검색 결과에서 다산도서관 실감형 동화체험관과 선재유치원 친구들이 함께한 동화 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "7b3dfb44",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "선재유치원",
+            "kindergartenAddress": "경상북도 고령군 주산순환길 147",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGca7CssAVa%22%20%22%EC%84%A0%EC%9E%AC%20%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EB%A0%B9%EA%B5%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "고령군 단서와 로컬 고령 선재유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-807e470b",
+        "kindergartenId": "1ecec08d-0823-b044-e053-0a32095ab044",
+        "kindergartenName": "선재유치원",
+        "title": "고령 선재유치원 다산도서관 동화체험관 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DF9cwk9JsCS/",
+        "source": "other",
+        "sourceName": "Instagram · 고령 선재유치원",
+        "snippet": "고령 선재유치원 계정 검색 결과에서 다산도서관에서 촬영과 실감형 동화체험관을 다녀온 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "story-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "807e470b",
+        "structuredFields": {
+          "kindergartenName": "선재유치원",
+          "kindergartenAddress": "경상북도 고령군 주산순환길 147",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DF9cwk9JsCS%22%20%22%EA%B3%A0%EB%A0%B9%20%EC%84%A0%EC%9E%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%A4%EC%82%B0%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "고령 선재유치원 계정 단서와 로컬 고령 선재유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DF9cwk9JsCS/",
+          "normalizedUrl": "www.instagram.com/reel/df9cwk9jscs",
+          "normalizedText": "고령 선재유치원 다산도서관 동화체험관 instagram reel 고령 선재유치원 계정 검색 결과에서 다산도서관에서 촬영과 실감형 동화체험관을 다녀온 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "807e470b",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "선재유치원",
+            "kindergartenAddress": "경상북도 고령군 주산순환길 147",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DF9cwk9JsCS%22%20%22%EA%B3%A0%EB%A0%B9%20%EC%84%A0%EC%9E%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%A4%EC%82%B0%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "고령 선재유치원 계정 단서와 로컬 고령 선재유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fdf4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-1d69877f",
+        "kindergartenId": "1ecec08c-fdf4-b044-e053-0a32095ab044",
+        "kindergartenName": "영해초등학교병설유치원",
+        "title": "영덕 영해초등학교병설유치원 입학식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DVpjjA6kqv_/",
+        "source": "other",
+        "sourceName": "Instagram · 영해초등학교병설유치원",
+        "snippet": "영해초병설유치원 관련 게시물 검색 결과에서 영덕, 공립유치원, 유치원입학식, 입학을 축하한다는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-term"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1d69877f",
+        "structuredFields": {
+          "kindergartenName": "영해초등학교병설유치원",
+          "kindergartenAddress": "경상북도 영덕군 예주5길 22",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVpjjA6kqv_%22%20%22%EC%98%81%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영해초병설유치원 표기와 영덕 공립유치원 단서를 로컬 영해초등학교병설유치원과 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVpjjA6kqv_/",
+          "normalizedUrl": "www.instagram.com/reel/dvpjja6kqv_",
+          "normalizedText": "영덕 영해초등학교병설유치원 입학식 instagram reel 영해초병설유치원 관련 게시물 검색 결과에서 영덕, 공립유치원, 유치원입학식, 입학을 축하한다는 단서가 확인된다.",
+          "htmlSnapshotHash": "1d69877f",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "영해초등학교병설유치원",
+            "kindergartenAddress": "경상북도 영덕군 예주5길 22",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVpjjA6kqv_%22%20%22%EC%98%81%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영해초병설유치원 표기와 영덕 공립유치원 단서를 로컬 영해초등학교병설유치원과 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f272-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0a6db4ca",
+        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
+        "kindergartenName": "신비유치원",
+        "title": "칠곡 신비유치원 칠곡보건소 구강검진 Instagram Post",
+        "url": "https://www.instagram.com/p/DJN5y2ESEQ-/",
+        "source": "other",
+        "sourceName": "Instagram · 신비유치원",
+        "snippet": "신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental",
+          "health-check"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0a6db4ca",
+        "structuredFields": {
+          "kindergartenName": "신비유치원",
+          "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJN5y2ESEQ-/",
+          "normalizedUrl": "www.instagram.com/p/djn5y2eseq-",
+          "normalizedText": "칠곡 신비유치원 칠곡보건소 구강검진 instagram post 신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
+          "htmlSnapshotHash": "0a6db4ca",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "신비유치원",
+            "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08c-f613-b044-e053-0a32095ab044": [
       {
         "id": "rev-6151f67d",
@@ -13635,7 +15234,44 @@
         "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "53e93c6d-b8ab-42c7-b88f-7a124823438e": [
+      {
+        "id": "rev-sns-wave665-b71ea5e4",
+        "kindergartenId": "53e93c6d-b8ab-42c7-b88f-7a124823438e",
+        "title": "구미신당초등학교병설유치원 안전체험 기록",
+        "url": "https://www.instagram.com/p/DO-rxcsEm41/",
+        "source": "other",
+        "sourceName": "Instagram · 구미신당초등학교병설유치원",
+        "snippet": "구미신당초등학교병설유치원이 교통안전·재난안전·생활안전 체험을 소개한 공개 게시물입니다.",
+        "summary": "여러 안전체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-b71ea5e4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DO-rxcsEm41/",
+          "normalizedUrl": "instagram.com/p/do-rxcsem41",
+          "normalizedText": "구미신당초등학교병설유치원 안전체험 교통안전 재난안전 생활안전",
+          "htmlSnapshotHash": "sns-wave665-b71ea5e4",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DO-rxcsEm41/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T16:55:00.000Z"
 }

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 162,
-  "kindergartenCount": 52,
+  "totalCount": 184,
+  "kindergartenCount": 58,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
       {
@@ -2429,6 +2429,57 @@
           ]
         },
         "evidenceChecksum": "119fcc18"
+      },
+      {
+        "id": "rev-3e5170ae",
+        "kindergartenId": "1ecec08d-0cdb-b044-e053-0a32095ab044",
+        "title": "전주 덕일성유치원 어진박물관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DCB-ohCSQnX/",
+        "source": "other",
+        "sourceName": "Instagram · 덕일성유치원",
+        "snippet": "전주 덕일성유치원 계정에서 2026학년도 어진박물관 견학과 경기전·조선시대 왕 초상화 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a090e02b",
+        "structuredFields": {
+          "kindergartenName": "덕일성유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 덕진구 가리내로 384",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCB-ohCSQnX%22+%22%EB%8D%95%EC%9D%BC%EC%84%B1+%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EC%A7%84%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "덕일성유치원은 로컬 원장부 단일 매칭이며 전주 어진박물관·경기전 문맥이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCB-ohCSQnX/",
+          "normalizedUrl": "www.instagram.com/p/dcb-ohcsqnx",
+          "normalizedText": "전주 덕일성유치원 어진박물관 견학 instagram post 전주 덕일성유치원 계정에서 2026학년도 어진박물관 견학과 경기전·조선시대 왕 초상화 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "a090e02b",
+          "extractedAt": "2026-07-02T23:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "덕일성유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 덕진구 가리내로 384",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCB-ohCSQnX%22+%22%EB%8D%95%EC%9D%BC%EC%84%B1+%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EC%A7%84%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "덕일성유치원은 로컬 원장부 단일 매칭이며 전주 어진박물관·경기전 문맥이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-042f-b044-e053-0a32095ab044": [
@@ -4146,6 +4197,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-732b4b05",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 논산 딸기 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CrOFELMuP0A/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "17832add",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CrOFELMuP0A/",
+          "normalizedUrl": "www.instagram.com/p/crofelmup0a",
+          "normalizedText": "군산 동아유치원 논산 딸기 체험 instagram post 동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "17832add",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f3a-b044-e053-0a32095ab044": [
@@ -5042,6 +5144,59 @@
           ]
         },
         "evidenceChecksum": "8ca068a1"
+      },
+      {
+        "id": "rev-5d7a6c30",
+        "kindergartenId": "1ecec08c-f5a4-b044-e053-0a32095ab044",
+        "kindergartenName": "보영유치원",
+        "title": "정읍 보영유치원 안전체험마을 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJslwViB5I3/",
+        "source": "other",
+        "sourceName": "Instagram · 보영유치원",
+        "snippet": "보영유치원 계정 게시물 검색 결과에서 정읍 안전체험마을 방문과 안전체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5d7a6c30",
+        "structuredFields": {
+          "kindergartenName": "보영유치원",
+          "kindergartenAddress": "전북특별자치도 정읍시 수성3로 53-7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJslwViB5I3%22%20%22%EB%B3%B4%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EB%A7%88%EC%9D%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정읍 단서와 로컬 원장부의 단일 보영유치원을 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJslwViB5I3/",
+          "normalizedUrl": "www.instagram.com/reel/djslwvib5i3",
+          "normalizedText": "정읍 보영유치원 안전체험마을 instagram reel 보영유치원 계정 게시물 검색 결과에서 정읍 안전체험마을 방문과 안전체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "5d7a6c30",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "보영유치원",
+            "kindergartenAddress": "전북특별자치도 정읍시 수성3로 53-7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJslwViB5I3%22%20%22%EB%B3%B4%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EB%A7%88%EC%9D%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정읍 단서와 로컬 원장부의 단일 보영유치원을 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1fc6dd86-ccb4-d1d2-e053-0a32095ad1d2": [
@@ -5796,6 +5951,41 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave665-8ada2913",
+        "kindergartenId": "1ecec08d-0ae2-b044-e053-0a32095ab044",
+        "title": "전주용흥초등학교병설유치원 지진대피훈련 기록",
+        "url": "https://www.instagram.com/p/DaMxFvPj0OK/",
+        "source": "other",
+        "sourceName": "Instagram · 전주용흥초등학교병설유치원",
+        "snippet": "전주용흥초등학교병설유치원이 지진대피훈련과 재난안전 활동을 소개한 공개 게시물입니다.",
+        "summary": "재난안전 훈련 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "earthquake-drill"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-8ada2913",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMxFvPj0OK/",
+          "normalizedUrl": "instagram.com/p/damxfvpj0ok",
+          "normalizedText": "전주용흥초등학교병설유치원 지진대피훈련 재난안전 안전교육",
+          "htmlSnapshotHash": "sns-wave665-8ada2913",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMxFvPj0OK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
       }
     ],
     "eb43e817-e834-4036-a4ed-341bcd34f3d0": [
@@ -6099,6 +6289,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fc76b5b7",
+        "kindergartenId": "1ecec08d-06d3-b044-e053-0a32095ab044",
+        "title": "김제 성만유치원 ESG 환경교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXgID6Ykj-Z/",
+        "source": "other",
+        "sourceName": "Instagram · 성만유치원 원감선생님",
+        "snippet": "성만유치원 원감선생님 계정에서 ESG 환경교육과 줍킹 활동으로 깨끗한 지구를 만드는 방법을 알려주는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "environment"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0e9103fc",
+        "structuredFields": {
+          "kindergartenName": "성만유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgID6Ykj-Z%22+%22%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%99%98%EA%B2%BD%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성만유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 환경교육 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXgID6Ykj-Z/",
+          "normalizedUrl": "www.instagram.com/reel/dxgid6ykj-z",
+          "normalizedText": "김제 성만유치원 esg 환경교육 instagram reel 성만유치원 원감선생님 계정에서 esg 환경교육과 줍킹 활동으로 깨끗한 지구를 만드는 방법을 알려주는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "0e9103fc",
+          "extractedAt": "2026-07-02T23:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성만유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXgID6Ykj-Z%22+%22%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%99%98%EA%B2%BD%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성만유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 환경교육 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fe6a-b044-e053-0a32095ab044": [
@@ -6287,6 +6528,57 @@
           ]
         },
         "evidenceChecksum": "22c654fb"
+      },
+      {
+        "id": "rev-065bcd92",
+        "kindergartenId": "1ecec08c-fe6a-b044-e053-0a32095ab044",
+        "title": "익산 현대유치원 숲반 고구마캐기 Instagram Post",
+        "url": "https://www.instagram.com/p/CyVQSluSB6N/",
+        "source": "other",
+        "sourceName": "Instagram · 현대유치원",
+        "snippet": "현대유치원 계정에서 익산현대유치원, 익산, 고구마캐기 나들이 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sweet-potato-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e5f80728",
+        "structuredFields": {
+          "kindergartenName": "현대유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 배산로14길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyVQSluSB6N%22+%22%EC%9D%B5%EC%82%B0%ED%98%84%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현대유치원 동명이 있으나 익산현대유치원 지역 단서가 확인되어 익산 현대유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyVQSluSB6N/",
+          "normalizedUrl": "www.instagram.com/p/cyvqslusb6n",
+          "normalizedText": "익산 현대유치원 숲반 고구마캐기 instagram post 현대유치원 계정에서 익산현대유치원, 익산, 고구마캐기 나들이 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "e5f80728",
+          "extractedAt": "2026-07-02T11:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현대유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 배산로14길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyVQSluSB6N%22+%22%EC%9D%B5%EC%82%B0%ED%98%84%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현대유치원 동명이 있으나 익산현대유치원 지역 단서가 확인되어 익산 현대유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "dd49eb88-30bb-4527-b6a5-57dc0eaa2e71": [
@@ -6543,6 +6835,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cbaf5f80",
+        "kindergartenId": "1fd6777e-152f-e0b0-e053-0a32095ae0b0",
+        "title": "익산 아이빛유치원 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DWqeNuqFAOJ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이빛유치원",
+        "snippet": "아이빛유치원 계정에서 직접 뽑은 재료를 모아 짝꿍과 함께 즐거운 요리활동을 한 문맥과 아이빛유치원·신동 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b1d29cc6",
+        "structuredFields": {
+          "kindergartenName": "아이빛유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 인북로 334",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWqeNuqFAOJ%22+%22%EC%95%84%EC%9D%B4%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이빛유치원은 로컬 원장부 단일 매칭이며 신동 단서가 익산 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWqeNuqFAOJ/",
+          "normalizedUrl": "www.instagram.com/p/dwqenuqfaoj",
+          "normalizedText": "익산 아이빛유치원 요리활동 instagram post 아이빛유치원 계정에서 직접 뽑은 재료를 모아 짝꿍과 함께 즐거운 요리활동을 한 문맥과 아이빛유치원·신동 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "b1d29cc6",
+          "extractedAt": "2026-07-02T21:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이빛유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 인북로 334",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWqeNuqFAOJ%22+%22%EC%95%84%EC%9D%B4%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이빛유치원은 로컬 원장부 단일 매칭이며 신동 단서가 익산 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -6831,6 +7174,57 @@
           ]
         },
         "evidenceChecksum": "0b58057f"
+      },
+      {
+        "id": "rev-b22c6ffa",
+        "kindergartenId": "1ecec08d-06fd-b044-e053-0a32095ab044",
+        "title": "전주 인후유치원 호동골 코스모스 생태체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CjARaTiDYI0/",
+        "source": "other",
+        "sourceName": "Instagram · 인후유치원",
+        "snippet": "인후유치원 계정에서 호동골 코스모스 생태체험활동과 인후동유치원·아중리유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "dca73099",
+        "structuredFields": {
+          "kindergartenName": "인후유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 덕진구 진버들3길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CjARaTiDYI0%22%20%22%EC%9D%B8%ED%9B%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인후유치원 단일 매칭이며 인후동·아중리유치원 단서가 전주 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CjARaTiDYI0/",
+          "normalizedUrl": "www.instagram.com/reel/cjaratidyi0",
+          "normalizedText": "전주 인후유치원 호동골 코스모스 생태체험 instagram reel 인후유치원 계정에서 호동골 코스모스 생태체험활동과 인후동유치원·아중리유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "dca73099",
+          "extractedAt": "2026-07-02T12:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인후유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 덕진구 진버들3길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CjARaTiDYI0%22%20%22%EC%9D%B8%ED%9B%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인후유치원 단일 매칭이며 인후동·아중리유치원 단서가 전주 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa35-b044-e053-0a32095ab044": [
@@ -6874,6 +7268,162 @@
           ]
         },
         "evidenceChecksum": "5bb4cb7a"
+      },
+      {
+        "id": "rev-1506c8ea",
+        "kindergartenId": "1ecec08c-fa35-b044-e053-0a32095ab044",
+        "title": "익산 호반유치원 산타데이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DD_nogaPlPk/",
+        "source": "other",
+        "sourceName": "Instagram · 익산 호반유치원",
+        "snippet": "익산호반유치원 계정에서 메리크리스마스 호반유치원 산타데이와 작은발표회 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "christmas"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "dcc540f5",
+        "structuredFields": {
+          "kindergartenName": "호반유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DD_nogaPlPk%22+%22%EC%9D%B5%EC%82%B0%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "호반유치원 동명이 있으나 익산호반유치원 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DD_nogaPlPk/",
+          "normalizedUrl": "www.instagram.com/reel/dd_nogaplpk",
+          "normalizedText": "익산 호반유치원 산타데이 instagram reel 익산호반유치원 계정에서 메리크리스마스 호반유치원 산타데이와 작은발표회 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "dcc540f5",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호반유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DD_nogaPlPk%22+%22%EC%9D%B5%EC%82%B0%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "호반유치원 동명이 있으나 익산호반유치원 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-01158325",
+        "kindergartenId": "1ecec08c-fa35-b044-e053-0a32095ab044",
+        "title": "익산 호반유치원 김장체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DCYyplQP4ur/",
+        "source": "other",
+        "sourceName": "Instagram · 호반유치원",
+        "snippet": "호반유치원 계정에서 앞치마와 팔토시를 착용한 김장체험 문맥과 익산·부송동·호반유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-experience",
+          "kimchi-making"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ad8a3fc3",
+        "structuredFields": {
+          "kindergartenName": "호반유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCYyplQP4ur%22%20%22%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B5%EC%82%B0%22%20%22%EA%B9%80%EC%9E%A5%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "호반유치원 동명이 있으나 익산·부송동 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCYyplQP4ur/",
+          "normalizedUrl": "www.instagram.com/p/dcyyplqp4ur",
+          "normalizedText": "익산 호반유치원 김장체험 instagram post 호반유치원 계정에서 앞치마와 팔토시를 착용한 김장체험 문맥과 익산·부송동·호반유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "ad8a3fc3",
+          "extractedAt": "2026-07-02T10:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호반유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCYyplQP4ur%22%20%22%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B5%EC%82%B0%22%20%22%EA%B9%80%EC%9E%A5%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "호반유치원 동명이 있으나 익산·부송동 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-52e9328e",
+        "kindergartenId": "1ecec08c-fa35-b044-e053-0a32095ab044",
+        "kindergartenName": "호반유치원",
+        "title": "익산 호반유치원 한국도로공사수목원 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DCYjH82PCtM/",
+        "source": "other",
+        "sourceName": "Instagram · 호반유치원",
+        "snippet": "호반유치원 계정 게시물 검색 결과에서 샛별반 수목원견학, 익산, 부송동, 한국도로공사수목원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "arboretum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "52e9328e",
+        "structuredFields": {
+          "kindergartenName": "호반유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCYjH82PCtM%22%20%22%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EA%B5%AD%EB%8F%84%EB%A1%9C%EA%B3%B5%EC%82%AC%EC%88%98%EB%AA%A9%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "호반유치원은 동명이 있으나 익산·부송동 단서와 익산시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCYjH82PCtM/",
+          "normalizedUrl": "www.instagram.com/p/dcyjh82pctm",
+          "normalizedText": "익산 호반유치원 한국도로공사수목원 견학 instagram post 호반유치원 계정 게시물 검색 결과에서 샛별반 수목원견학, 익산, 부송동, 한국도로공사수목원 단서가 확인된다.",
+          "htmlSnapshotHash": "52e9328e",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "호반유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 선화로69길 59",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCYjH82PCtM%22%20%22%ED%98%B8%EB%B0%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EA%B5%AD%EB%8F%84%EB%A1%9C%EA%B3%B5%EC%82%AC%EC%88%98%EB%AA%A9%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "호반유치원은 동명이 있으나 익산·부송동 단서와 익산시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0faa-b044-e053-0a32095ab044": [
@@ -6917,9 +7467,538 @@
           ]
         },
         "evidenceChecksum": "471aa32c"
+      },
+      {
+        "id": "rev-158dcb89",
+        "kindergartenId": "1ecec08d-0faa-b044-e053-0a32095ab044",
+        "title": "익산 한솔유치원 유아숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CxCQ92FLJ_h/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "익산한솔유치원과 서동공원 유아숲체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5c15260e",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxCQ92FLJ_h%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한솔유치원 동명이 있어 익산한솔유치원 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CxCQ92FLJ_h/",
+          "normalizedUrl": "www.instagram.com/reel/cxcq92flj_h",
+          "normalizedText": "익산 한솔유치원 유아숲체험 instagram reel 익산한솔유치원과 서동공원 유아숲체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "5c15260e",
+          "extractedAt": "2026-07-02T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxCQ92FLJ_h%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한솔유치원 동명이 있어 익산한솔유치원 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T07:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b165faaf",
+        "kindergartenId": "1ecec08d-0faa-b044-e053-0a32095ab044",
+        "title": "익산 한솔유치원 고구마캐기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CyFD5i5SLjO/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "한솔유치원 계정에서 익산유치원, 익산한솔유치원, 고구마캐기 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sweet-potato-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9ae8bae6",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyFD5i5SLjO%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한솔유치원 동명이 많으나 익산한솔유치원 지역 단서가 확인되어 익산 한솔유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CyFD5i5SLjO/",
+          "normalizedUrl": "www.instagram.com/reel/cyfd5i5sljo",
+          "normalizedText": "익산 한솔유치원 고구마캐기 instagram reel 한솔유치원 계정에서 익산유치원, 익산한솔유치원, 고구마캐기 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "9ae8bae6",
+          "extractedAt": "2026-07-02T11:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyFD5i5SLjO%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%A0%EA%B5%AC%EB%A7%88%EC%BA%90%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한솔유치원 동명이 많으나 익산한솔유치원 지역 단서가 확인되어 익산 한솔유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3cd2cd7b",
+        "kindergartenId": "1ecec08d-0faa-b044-e053-0a32095ab044",
+        "title": "익산 한솔유치원 요리활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C6LWBYXS-aY/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "한솔유치원 계정에서 원감선생님과 함께한 요리활동 문맥과 익산한솔유치원·어양동유치원·부송동유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "368f17b2",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C6LWBYXS-aY%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한솔유치원 동명이 있으나 익산한솔유치원·어양동·부송동 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C6LWBYXS-aY/",
+          "normalizedUrl": "www.instagram.com/reel/c6lwbxs-ay",
+          "normalizedText": "익산 한솔유치원 요리활동 instagram reel 한솔유치원 계정에서 원감선생님과 함께한 요리활동 문맥과 익산한솔유치원·어양동유치원·부송동유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "368f17b2",
+          "extractedAt": "2026-07-02T21:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C6LWBYXS-aY%22+%22%EC%9D%B5%EC%82%B0%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한솔유치원 동명이 있으나 익산한솔유치원·어양동·부송동 단서가 익산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2fc35177",
+        "kindergartenId": "1ecec08d-0faa-b044-e053-0a32095ab044",
+        "kindergartenName": "한솔유치원",
+        "title": "익산 한솔유치원 1월 요리활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C2dmuSTy4eo/",
+        "source": "other",
+        "sourceName": "Instagram · 익산한솔유치원",
+        "snippet": "한솔유치원 계정의 릴 검색 결과에서 유치원 1월 활동으로 요리활동을 진행한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2fc35177",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2dmuSTy4eo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "익산한솔유치원 계정 단서와 기존 동일 계정의 익산 한솔유치원 매칭, 로컬 익산 원장부를 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C2dmuSTy4eo/",
+          "normalizedUrl": "www.instagram.com/reel/c2dmusty4eo",
+          "normalizedText": "익산 한솔유치원 1월 요리활동 instagram reel 한솔유치원 계정의 릴 검색 결과에서 유치원 1월 활동으로 요리활동을 진행한 단서가 확인된다.",
+          "htmlSnapshotHash": "2fc35177",
+          "extractedAt": "2026-07-02T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 부평2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C2dmuSTy4eo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%94%EB%A6%AC%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "익산한솔유치원 계정 단서와 기존 동일 계정의 익산 한솔유치원 매칭, 로컬 익산 원장부를 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "24968ec7-7471-4622-91c2-c50c68df8f2b": [
+      {
+        "id": "rev-202868eb",
+        "kindergartenId": "24968ec7-7471-4622-91c2-c50c68df8f2b",
+        "title": "전주 폴유치원 김장하는 날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DCniIBryWIF/",
+        "source": "other",
+        "sourceName": "Instagram · 폴유치원",
+        "snippet": "폴유치원 김장하는 날, 텃밭에서 배추와 무를 뽑아 김장한 문맥과 폴유치원, 폴유아학교 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "52f9241f",
+        "structuredFields": {
+          "kindergartenName": "폴유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 완산구 평화2길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCniIBryWIF%22+%22%ED%8F%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%B4%EC%9C%A0%EC%95%84%ED%95%99%EA%B5%90%22+%22%EA%B9%80%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "폴스유치원과 구분되는 폴유치원 명칭 후보이며, 로컬 원장부의 전주 폴유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DCniIBryWIF/",
+          "normalizedUrl": "www.instagram.com/reel/dcniibrywif",
+          "normalizedText": "전주 폴유치원 김장하는 날 instagram reel 폴유치원 김장하는 날, 텃밭에서 배추와 무를 뽑아 김장한 문맥과 폴유치원, 폴유아학교 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "52f9241f",
+          "extractedAt": "2026-07-02T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "폴유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 완산구 평화2길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCniIBryWIF%22+%22%ED%8F%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%8F%B4%EC%9C%A0%EC%95%84%ED%95%99%EA%B5%90%22+%22%EA%B9%80%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "폴스유치원과 구분되는 폴유치원 명칭 후보이며, 로컬 원장부의 전주 폴유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ee57-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e246109a",
+        "kindergartenId": "1ecec08c-ee57-b044-e053-0a32095ab044",
+        "title": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 Instagram Post",
+        "url": "https://www.instagram.com/p/DDJ1xRcBD6d/",
+        "source": "other",
+        "sourceName": "Instagram · WOODURI",
+        "snippet": "삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "musical-viewing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "15c1da33",
+        "structuredFields": {
+          "kindergartenName": "삼례중앙초등학교병설유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDJ1xRcBD6d/",
+          "normalizedUrl": "www.instagram.com/p/ddj1xrcbd6d",
+          "normalizedText": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 instagram post 삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "15c1da33",
+          "extractedAt": "2026-07-02T11:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼례중앙초등학교병설유치원",
+            "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f750-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e1f5642c",
+        "kindergartenId": "1ecec08c-f750-b044-e053-0a32095ab044",
+        "kindergartenName": "이리성심유치원",
+        "title": "익산 이리성심유치원 역사체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DYO46a_vLTV/",
+        "source": "other",
+        "sourceName": "Instagram · 이리성심유치원",
+        "snippet": "이리성심유치원 계정의 익산 역사와 문화를 배우는 역사체험 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "history-experience",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3ff9e8dd",
+        "structuredFields": {
+          "kindergartenName": "이리성심유치원",
+          "kindergartenAddress": "전북특별자치도 익산시 인북로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYO46a_vLTV%22%20%22%EC%9D%B4%EB%A6%AC%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%97%AD%EC%82%AC%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "이리성심유치원 단일 매칭이며 익산 역사체험 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYO46a_vLTV/",
+          "normalizedUrl": "www.instagram.com/p/dyo46a_vltv",
+          "normalizedText": "익산 이리성심유치원 역사체험 instagram post 이리성심유치원 계정의 익산 역사와 문화를 배우는 역사체험 게시물 검색 결과.",
+          "htmlSnapshotHash": "3ff9e8dd",
+          "extractedAt": "2026-07-02T15:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "이리성심유치원",
+            "kindergartenAddress": "전북특별자치도 익산시 인북로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYO46a_vLTV%22%20%22%EC%9D%B4%EB%A6%AC%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%97%AD%EC%82%AC%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "이리성심유치원 단일 매칭이며 익산 역사체험 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f505-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-c56accb2",
+        "kindergartenId": "1ecec08c-f505-b044-e053-0a32095ab044",
+        "kindergartenName": "자연아이숲유치원",
+        "title": "전주 자연아이숲유치원 딸기 수확체험 Instagram Post",
+        "url": "https://www.instagram.com/p/C8DmcVaygy3/",
+        "source": "other",
+        "sourceName": "Instagram · 자연아이숲유치원",
+        "snippet": "자연아이숲유치원 계정의 딸기 수확 체험 게시물 검색 결과에서 현장체험학습과 딸기밭 방문 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest-experience",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4562e292",
+        "structuredFields": {
+          "kindergartenName": "자연아이숲유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 완산구 외칠봉1길 11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8DmcVaygy3%22%20%22%EC%9E%90%EC%97%B0%EC%95%84%EC%9D%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "자연아이숲유치원은 로컬 원장부 단일 매칭이며 계정명과 딸기 수확 체험 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C8DmcVaygy3/",
+          "normalizedUrl": "www.instagram.com/p/c8dmcvaygy3",
+          "normalizedText": "전주 자연아이숲유치원 딸기 수확체험 instagram post 자연아이숲유치원 계정의 딸기 수확 체험 게시물 검색 결과에서 현장체험학습과 딸기밭 방문 단서가 확인된다.",
+          "htmlSnapshotHash": "4562e292",
+          "extractedAt": "2026-07-02T19:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "자연아이숲유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 완산구 외칠봉1길 11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8DmcVaygy3%22%20%22%EC%9E%90%EC%97%B0%EC%95%84%EC%9D%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "자연아이숲유치원은 로컬 원장부 단일 매칭이며 계정명과 딸기 수확 체험 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f654-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5f47bd2f",
+        "kindergartenId": "1ecec08c-f654-b044-e053-0a32095ab044",
+        "kindergartenName": "소망유치원",
+        "title": "전주 소망유치원 전주덕진소방서 119소방동요 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DHSJ1-zu6na/",
+        "source": "other",
+        "sourceName": "Instagram · 전주덕진소방서",
+        "snippet": "전주덕진소방서 계정의 릴 검색 결과에서 소망유치원이 전주덕진소방서 대표로 제24회 119소방동요 경연에 참여한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "public-safety-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5f47bd2f",
+        "structuredFields": {
+          "kindergartenName": "소망유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 덕진구 실리1길 26",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHSJ1-zu6na%22%20%22%EC%86%8C%EB%A7%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%EC%A3%BC%EB%8D%95%EC%A7%84%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "전주덕진소방서와 전주 로컬 원장부의 소망유치원 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DHSJ1-zu6na/",
+          "normalizedUrl": "www.instagram.com/reel/dhsj1-zu6na",
+          "normalizedText": "전주 소망유치원 전주덕진소방서 119소방동요 instagram reel 전주덕진소방서 계정의 릴 검색 결과에서 소망유치원이 전주덕진소방서 대표로 제24회 119소방동요 경연에 참여한 단서가 확인된다.",
+          "htmlSnapshotHash": "5f47bd2f",
+          "extractedAt": "2026-07-02T21:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "소망유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 덕진구 실리1길 26",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHSJ1-zu6na%22%20%22%EC%86%8C%EB%A7%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%EC%A3%BC%EB%8D%95%EC%A7%84%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "전주덕진소방서와 전주 로컬 원장부의 소망유치원 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f143-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-36337c6b",
+        "kindergartenId": "1ecec08c-f143-b044-e053-0a32095ab044",
+        "kindergartenName": "김제성모유치원",
+        "title": "김제성모유치원 빛과 소리 축제 Instagram Post",
+        "url": "https://www.instagram.com/p/DRmDlV5j0Gc/",
+        "source": "other",
+        "sourceName": "Instagram · 김제성모유치원",
+        "snippet": "김제성모유치원 계정 게시물 검색 결과에서 빛과소리, 빛축제, 놀이중심교육, 김제성모유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "light-shadow",
+          "play-based"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "36337c6b",
+        "structuredFields": {
+          "kindergartenName": "김제성모유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRmDlV5j0Gc%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김제성모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRmDlV5j0Gc/",
+          "normalizedUrl": "www.instagram.com/p/drmdlv5j0gc",
+          "normalizedText": "김제성모유치원 빛과 소리 축제 instagram post 김제성모유치원 계정 게시물 검색 결과에서 빛과소리, 빛축제, 놀이중심교육, 김제성모유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "36337c6b",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "김제성모유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRmDlV5j0Gc%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김제성모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-24952f69",
         "kindergartenId": "1ecec08c-f143-b044-e053-0a32095ab044",
@@ -7024,7 +8103,62 @@
         "approvedAt": "2026-07-03T10:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f5a6-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-55f4fcc8",
+        "kindergartenId": "1ecec08c-f5a6-b044-e053-0a32095ab044",
+        "kindergartenName": "무지개재능유치원",
+        "title": "완주 무지개재능유치원 국악 방과후수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C47tvkQrVWK/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개재능유치원",
+        "snippet": "무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "gugak"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:53.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "55f4fcc8",
+        "structuredFields": {
+          "kindergartenName": "무지개재능유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C47tvkQrVWK/",
+          "normalizedUrl": "www.instagram.com/reel/c47tvkqrvwk",
+          "normalizedText": "완주 무지개재능유치원 국악 방과후수업 instagram reel 무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "55f4fcc8",
+          "extractedAt": "2026-07-02T23:59:53.000Z",
+          "structuredFields": {
+            "kindergartenName": "무지개재능유치원",
+            "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:53.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T16:55:00.000Z"
 }

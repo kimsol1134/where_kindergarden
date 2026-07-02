@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 113,
-  "kindergartenCount": 36,
+  "version": "2026-07-03",
+  "totalCount": 122,
+  "kindergartenCount": 39,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
       {
@@ -1940,6 +1940,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-83f52718",
+        "kindergartenId": "1ecec08c-f3a6-b044-e053-0a32095ab044",
+        "title": "김포 다사랑유치원 오르프 음악활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DC0gafwz9_r/",
+        "source": "other",
+        "sourceName": "Instagram · 다사랑유치원",
+        "snippet": "검색 결과에서 다사랑유치원의 오르프 음악활동과 김포유치원, 검단유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orff",
+          "music-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "83f52718",
+        "structuredFields": {
+          "kindergartenName": "다사랑유치원",
+          "kindergartenAddress": "경기도 김포시 옹주물로 220",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DC0gafwz9_r%22%20%22%EB%8B%A4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%80%EB%8B%A8%EB%A7%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "다사랑유치원은 동명 후보가 있으나 김포유치원 및 검단 권역 단서가 로컬 경기도 김포시 다사랑유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DC0gafwz9_r/",
+          "normalizedUrl": "instagram.com/p/dc0gafwz9_r",
+          "normalizedText": "김포 다사랑유치원 오르프 음악활동 instagram post 검색 결과에서 다사랑유치원의 오르프 음악활동과 김포유치원, 검단유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "83f52718",
+          "extractedAt": "2026-07-03T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다사랑유치원",
+            "kindergartenAddress": "경기도 김포시 옹주물로 220",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DC0gafwz9_r%22%20%22%EB%8B%A4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%80%EB%8B%A8%EB%A7%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "다사랑유치원은 동명 후보가 있으나 김포유치원 및 검단 권역 단서가 로컬 경기도 김포시 다사랑유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ee89-b044-e053-0a32095ab044": [
@@ -3344,55 +3396,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a52e56bc",
-        "kindergartenId": "1ecec08c-edbd-b044-e053-0a32095ab044",
-        "title": "김포 양곡숲유치원 2026 교육설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DOIh92rEo9X/",
-        "source": "other",
-        "sourceName": "Instagram · 양곡숲유치원",
-        "snippet": "양곡숲유치원 2026학년도 신입생 모집 교육설명회와 홈페이지 신청 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission-info",
-          "info-session"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "a90f25a1",
-        "structuredFields": {
-          "kindergartenName": "양곡숲유치원",
-          "kindergartenAddress": "경기도 김포시 양곡3로 164",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DOIh92rEo9X%22+%22양곡숲유치원%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DOIh92rEo9X/",
-          "normalizedUrl": "www.instagram.com/reel/doih92reo9x",
-          "normalizedText": "김포 양곡숲유치원 2026 교육설명회 instagram 양곡숲유치원 2026학년도 신입생 모집 교육설명회와 홈페이지 신청 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "a90f25a1",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "양곡숲유치원",
-            "kindergartenAddress": "경기도 김포시 양곡3로 164",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DOIh92rEo9X%22+%22양곡숲유치원%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fdcc-b044-e053-0a32095ab044": [
@@ -3778,6 +3781,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c9006465",
+        "kindergartenId": "1ecec08d-0f07-b044-e053-0a32095ab044",
+        "title": "김포 푸른솔유치원 가족음악회 Instagram Post",
+        "url": "https://www.instagram.com/p/Cy2a2W0S0No/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른솔유치원",
+        "snippet": "검색 결과에서 공립단설 푸른솔유치원, 가족음악회, 유치원발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "family-concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c9006465",
+        "structuredFields": {
+          "kindergartenName": "푸른솔유치원",
+          "kindergartenAddress": "경기도 김포시 김포한강2로 306",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cy2a2W0S0No%22%20%22%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "푸른솔유치원은 정확 명칭 기준 로컬 원장부 단일 후보이며 공립단설 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cy2a2W0S0No/",
+          "normalizedUrl": "instagram.com/p/cy2a2w0s0no",
+          "normalizedText": "김포 푸른솔유치원 가족음악회 instagram post 검색 결과에서 공립단설 푸른솔유치원 가족음악회 유치원발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "c9006465",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른솔유치원",
+            "kindergartenAddress": "경기도 김포시 김포한강2로 306",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cy2a2W0S0No%22%20%22%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "푸른솔유치원은 정확 명칭 기준 로컬 원장부 단일 후보이며 공립단설 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "abea1f9f-597c-4905-87aa-d8aceebb0a6b": [
@@ -4151,6 +4206,70 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e804f320",
+        "kindergartenId": "1ecec08c-f4c4-b044-e053-0a32095ab044",
+        "kindergartenName": "글로벌리더유치원",
+        "title": "김포 글로벌리더유치원 새학기 버블쇼 Instagram Post",
+        "url": "https://www.instagram.com/p/DG-oHlwMsHS/",
+        "source": "other",
+        "sourceName": "Instagram · 글로벌리더유치원",
+        "snippet": "Instagram 검색 결과에서 글로벌리더유치원, 김포유치원, GLES 문맥과 새학기 버블쇼 활동이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "bubble-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "글로벌리더유치원",
+          "kindergartenAddress": "경기도 김포시 조강로56번길 116-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DG-oHlwMsHS%22+%22%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A6%AC%EB%8D%94+%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DG-oHlwMsHS/",
+          "regionEvidence": [
+            "글로벌리더유치원",
+            "김포유치원",
+            "GLES",
+            "버블쇼"
+          ]
+        },
+        "evidenceChecksum": "f6bf8065",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DG-oHlwMsHS/",
+          "normalizedUrl": "www.instagram.com/p/dg-ohlwmshs",
+          "normalizedText": "김포 글로벌리더유치원 새학기 버블쇼 instagram post instagram 검색 결과에서 글로벌리더유치원, 김포유치원, gles 문맥과 새학기 버블쇼 활동이 확인되는 게시물.",
+          "htmlSnapshotHash": "24ccec24",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "글로벌리더유치원",
+            "kindergartenAddress": "경기도 김포시 조강로56번길 116-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DG-oHlwMsHS%22+%22%EA%B8%80%EB%A1%9C%EB%B2%8C%EB%A6%AC%EB%8D%94+%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DG-oHlwMsHS/",
+            "regionEvidence": [
+              "글로벌리더유치원",
+              "김포유치원",
+              "GLES",
+              "버블쇼"
+            ]
+          }
+        }
       }
     ],
     "1ecec08c-f6ff-b044-e053-0a32095ab044": [
@@ -4370,6 +4489,163 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T21:15:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-93c3e382",
+        "kindergartenId": "1ecec08c-f6ff-b044-e053-0a32095ab044",
+        "title": "운유초등학교병설유치원 전문가 숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZXizDYvWc3/",
+        "source": "other",
+        "sourceName": "Instagram · 운유초등학교병설유치원",
+        "snippet": "검색 결과에서 운유초등학교병설유치원, 전문가와 함께하는 숲체험, 생태체험장 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "ecology-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "93c3e382",
+        "structuredFields": {
+          "kindergartenName": "운유초등학교병설유치원",
+          "kindergartenAddress": "경기도 김포시 김포한강2로 239",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZXizDYvWc3%22%20%22%EC%9A%B4%EC%9C%A0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운유초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZXizDYvWc3/",
+          "normalizedUrl": "instagram.com/reel/dzxizdyvwc3",
+          "normalizedText": "운유초등학교병설유치원 전문가 숲체험 instagram reel 검색 결과에서 운유초등학교병설유치원 전문가와 함께하는 숲체험 생태체험장 단서가 확인된다.",
+          "htmlSnapshotHash": "93c3e382",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운유초등학교병설유치원",
+            "kindergartenAddress": "경기도 김포시 김포한강2로 239",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZXizDYvWc3%22%20%22%EC%9A%B4%EC%9C%A0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운유초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave665-ece9a3ff",
+        "kindergartenId": "1ecec08c-f6ff-b044-e053-0a32095ab044",
+        "title": "운유초등학교병설유치원 교통안전 체험 기록",
+        "url": "https://www.instagram.com/p/C_NJTT_yWb5/",
+        "source": "other",
+        "sourceName": "Instagram · 운유초등학교병설유치원",
+        "snippet": "운유초등학교병설유치원이 교통안전 체험과 길 건너기 방법을 소개한 공개 게시물입니다.",
+        "summary": "교통안전 체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-ece9a3ff",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C_NJTT_yWb5/",
+          "normalizedUrl": "instagram.com/p/c_njtt_ywb5",
+          "normalizedText": "운유초등학교병설유치원 교통안전 체험 안전교육",
+          "htmlSnapshotHash": "sns-wave665-ece9a3ff",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C_NJTT_yWb5/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
+      },
+      {
+        "id": "rev-sns-wave665-fed45716",
+        "kindergartenId": "1ecec08c-f6ff-b044-e053-0a32095ab044",
+        "title": "운유초등학교병설유치원 소방안전체험 기록",
+        "url": "https://www.instagram.com/reel/DYd-MUdy57I/",
+        "source": "other",
+        "sourceName": "Instagram · 운유초등학교병설유치원",
+        "snippet": "운유초등학교병설유치원이 찾아오는 소방안전체험과 화재대피훈련을 소개한 공개 릴스입니다.",
+        "summary": "소방안전체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-fed45716",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYd-MUdy57I/",
+          "normalizedUrl": "instagram.com/reel/dyd-mudy57i",
+          "normalizedText": "운유초등학교병설유치원 소방안전체험 안전교육 화재대피훈련",
+          "htmlSnapshotHash": "sns-wave665-fed45716",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYd-MUdy57I/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
+      },
+      {
+        "id": "rev-sns-wave665-e259927e",
+        "kindergartenId": "1ecec08c-f6ff-b044-e053-0a32095ab044",
+        "title": "운유초등학교병설유치원 지진 안전교육 기록",
+        "url": "https://www.instagram.com/p/DZUK0JNEeyQ/",
+        "source": "other",
+        "sourceName": "Instagram · 운유초등학교병설유치원",
+        "snippet": "운유초등학교병설유치원이 지진 상황 대처와 재난안전 내용을 소개한 공개 게시물입니다.",
+        "summary": "지진 안전교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "earthquake-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-e259927e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZUK0JNEeyQ/",
+          "normalizedUrl": "instagram.com/p/dzuk0jneeyq",
+          "normalizedText": "운유초등학교병설유치원 지진 재난안전 안전교육",
+          "htmlSnapshotHash": "sns-wave665-e259927e",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZUK0JNEeyQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
       }
     ],
     "cffe391c-e027-463e-aa62-7652f7961067": [
@@ -4513,7 +4789,151 @@
         "approvedAt": "2026-07-02T20:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f080-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-63bd49b6",
+        "kindergartenId": "1ecec08c-f080-b044-e053-0a32095ab044",
+        "title": "고촌초등학교병설유치원 입학식 포토존 Threads Post",
+        "url": "https://www.threads.com/@_laraartballoon/post/DGqgUyrTRLW",
+        "source": "other",
+        "sourceName": "Threads · 고촌초등학교병설유치원",
+        "snippet": "검색 결과에서 고촌초 병설유치원 시청각실 입학식 풍선장식과 포토존 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "entrance-ceremony",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "63bd49b6",
+        "structuredFields": {
+          "kindergartenName": "고촌초등학교병설유치원",
+          "kindergartenAddress": "경기도 김포시 신곡로29번길 30",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%20%22%EA%B3%A0%EC%B4%8C%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%85%ED%95%99%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 고촌초 병설유치원 단서가 로컬 경기 김포시 고촌초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@_laraartballoon/post/DGqgUyrTRLW",
+          "normalizedUrl": "threads.com/@_laraartballoon/post/dgqguyrtrlw",
+          "normalizedText": "고촌초등학교병설유치원 입학식 포토존 threads post 검색 결과에서 고촌초 병설유치원 시청각실 입학식 풍선장식과 포토존 단서가 확인된다.",
+          "htmlSnapshotHash": "63bd49b6",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "고촌초등학교병설유치원",
+            "kindergartenAddress": "경기도 김포시 신곡로29번길 30",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%20%22%EA%B3%A0%EC%B4%8C%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%85%ED%95%99%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 고촌초 병설유치원 단서가 로컬 경기 김포시 고촌초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a39a3960-9110-4981-a223-4999e80587fc": [
+      {
+        "id": "rev-e3202834",
+        "kindergartenId": "a39a3960-9110-4981-a223-4999e80587fc",
+        "title": "김포가온유치원 여름 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DNhseeK0_xK/",
+        "source": "other",
+        "sourceName": "Instagram · 김포가온유치원",
+        "snippet": "검색 결과에서 김포가온유치원, 무더운 여름, 신나는 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e3202834",
+        "structuredFields": {
+          "kindergartenName": "김포가온유치원",
+          "kindergartenAddress": "경기도 김포시 태장로 845",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNhseeK0_xK/",
+          "normalizedUrl": "instagram.com/p/dnhseek0_xk",
+          "normalizedText": "김포가온유치원 여름 물놀이 instagram post 검색 결과에서 김포가온유치원 무더운 여름 신나는 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e3202834",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "김포가온유치원",
+            "kindergartenAddress": "경기도 김포시 태장로 845",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "bf9d0b05-1354-41fc-84d3-747bf9781a2c": [
+      {
+        "id": "rev-sns-wave665-07bc8946",
+        "kindergartenId": "bf9d0b05-1354-41fc-84d3-747bf9781a2c",
+        "title": "보름초등학교병설유치원 함께안전 프로젝트 기록",
+        "url": "https://www.instagram.com/p/DV8nT-2ES2g/",
+        "source": "other",
+        "sourceName": "Instagram · 보름초등학교병설유치원",
+        "snippet": "보름초등학교병설유치원이 함께안전 유치원 사업과 안전 프로젝트를 소개한 공개 게시물입니다.",
+        "summary": "유아 안전 프로젝트 운영 내용을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "safety-project"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave665-07bc8946",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV8nT-2ES2g/",
+          "normalizedUrl": "instagram.com/p/dv8nt-2es2g",
+          "normalizedText": "보름초등학교병설유치원 함께안전 유치원 안전 프로젝트",
+          "htmlSnapshotHash": "sns-wave665-07bc8946",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DV8nT-2ES2g/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave665"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
