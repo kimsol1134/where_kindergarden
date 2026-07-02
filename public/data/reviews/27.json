@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 521,
+  "totalCount": 522,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -2090,6 +2090,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "codex-manual-sns-wave679"
+      },
+      {
+        "id": "rev-sns-wave703-41cdf2be",
+        "kindergartenId": "1ecec08d-0e13-b044-e053-0a32095ab044",
+        "title": "대구 예현유치원 찾아가는 교통안전교육 기록",
+        "url": "https://www.instagram.com/reel/DaAJIhLzyEx/",
+        "source": "other",
+        "sourceName": "Instagram · 예현유치원",
+        "snippet": "예현유치원이 찾아가는 교통안전교육에서 교통표지판과 인도·차도 구분을 배운 릴스입니다.",
+        "summary": "아이들이 생활 속 보행 환경과 안전한 이동 약속을 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "road-signs",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave703-41cdf2be",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaAJIhLzyEx/",
+          "normalizedUrl": "instagram.com/reel/daajihlzyex",
+          "normalizedText": "예현유치원 대구 찾아가는 교통안전교육 교통표지판 인도 차도",
+          "htmlSnapshotHash": "sns-wave703-41cdf2be",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaAJIhLzyEx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave703"
       }
     ],
     "1ecec08c-f16a-b044-e053-0a32095ab044": [

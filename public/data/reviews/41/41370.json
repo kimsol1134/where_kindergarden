@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 64,
+  "totalCount": 65,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-edc7-b044-e053-0a32095ab044": [
@@ -1752,6 +1752,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave703-bc0f4281",
+        "kindergartenId": "1ecec08d-0882-b044-e053-0a32095ab044",
+        "title": "오산 오르다유치원 교통안전 캠페인 기록",
+        "url": "https://www.instagram.com/p/DUFoMyADx09/",
+        "source": "other",
+        "sourceName": "Instagram · 오르다유치원",
+        "snippet": "오르다유치원이 교통안전 캠페인에서 안전한 횡단보도 건너기 구호를 함께 외친 게시물입니다.",
+        "summary": "아이들이 보행 약속을 캠페인 활동으로 반복하며 교통안전 습관을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "crosswalk-practice",
+          "osan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave703-bc0f4281",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUFoMyADx09/",
+          "normalizedUrl": "instagram.com/p/dufomyadx09",
+          "normalizedText": "오르다유치원 오산 교통안전 캠페인 횡단보도 건너기",
+          "htmlSnapshotHash": "sns-wave703-bc0f4281",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUFoMyADx09/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave703"
       }
     ],
     "1ecec08c-f360-b044-e053-0a32095ab044": [
@@ -2870,5 +2906,6 @@
         "evidenceChecksum": "b0d2436d"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

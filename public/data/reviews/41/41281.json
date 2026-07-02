@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 57,
+  "totalCount": 58,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0815-b044-e053-0a32095ab044": [
@@ -1833,6 +1833,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.950Z",
         "approvedBy": "codex-manual-sns-wave694"
+      },
+      {
+        "id": "rev-sns-wave703-0def0eec",
+        "kindergartenId": "1ecec08c-fb00-b044-e053-0a32095ab044",
+        "title": "고양 엄지유치원 교통안전교육 기록",
+        "url": "https://www.instagram.com/reel/DQrDYhyEn7u/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "고양·행신 지역 단서가 있는 엄지유치원이 어린이 교통안전교육 장면을 공개한 릴스입니다.",
+        "summary": "유아들이 이동 중 지켜야 할 안전 수칙을 체험형 활동으로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "goyang",
+          "haengsin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave703-0def0eec",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQrDYhyEn7u/",
+          "normalizedUrl": "instagram.com/reel/dqrdyhyen7u",
+          "normalizedText": "엄지유치원 고양 행신 교통안전교육 유치원안전교육",
+          "htmlSnapshotHash": "sns-wave703-0def0eec",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQrDYhyEn7u/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave703"
       }
     ],
     "0e7cf345-6e38-47af-98f2-fda6ea276b89": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 51,
+  "totalCount": 52,
   "kindergartenCount": 23,
   "reviews": {
     "1ecec08d-0dbb-b044-e053-0a32095ab044": [
@@ -1645,6 +1645,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave703-e536ae51",
+        "kindergartenId": "1ecec08d-0e26-b044-e053-0a32095ab044",
+        "title": "남양주 묵향유치원 횡단보도 안전교육 기록",
+        "url": "https://www.instagram.com/p/DZml9QDlNDG/",
+        "source": "other",
+        "sourceName": "Instagram · 묵향유치원",
+        "snippet": "묵향유치원이 교통안전교육 시간에 횡단보도 건너기와 신호 약속을 배운 활동을 공개한 게시물입니다.",
+        "summary": "유아들이 보행 신호의 의미와 길 건너기 약속을 활동으로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "crosswalk-practice",
+          "namyangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave703-e536ae51",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZml9QDlNDG/",
+          "normalizedUrl": "instagram.com/p/dzml9qdlndg",
+          "normalizedText": "묵향유치원 남양주 교통안전교육 횡단보도 신호 약속",
+          "htmlSnapshotHash": "sns-wave703-e536ae51",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZml9QDlNDG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave703"
       }
     ],
     "1ecec08c-edbe-b044-e053-0a32095ab044": [
@@ -2286,5 +2322,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

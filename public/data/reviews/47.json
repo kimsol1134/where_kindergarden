@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 348,
+  "totalCount": 349,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -7348,6 +7348,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:50:00.000Z",
         "approvedBy": "codex-manual-sns-wave676"
+      },
+      {
+        "id": "rev-sns-wave703-ce78ecb7",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 찾아오는 교통안전교육 기록",
+        "url": "https://www.instagram.com/p/DXnV8v_kowj/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "경산유치원이 교통문화연수원과 함께 안전한 보행방법과 교통규칙을 배운 게시물입니다.",
+        "summary": "유아들이 교통규칙과 횡단보도 이용 방법을 체험하며 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "crosswalk-practice",
+          "gyeongsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave703-ce78ecb7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXnV8v_kowj/",
+          "normalizedUrl": "instagram.com/p/dxnv8v_kowj",
+          "normalizedText": "경산유치원 교통문화연수원 찾아오는 교통안전교육 보행방법 교통규칙",
+          "htmlSnapshotHash": "sns-wave703-ce78ecb7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXnV8v_kowj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave703"
       }
     ],
     "1ecec08c-f71c-b044-e053-0a32095ab044": [
@@ -15969,5 +16005,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
