@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 46,
-  "kindergartenCount": 17,
+  "version": "2026-07-03",
+  "totalCount": 54,
+  "kindergartenCount": 18,
   "reviews": {
     "1ecec08d-08d1-b044-e053-0a32095ab044": [
       {
@@ -324,6 +324,70 @@
               "2026학년도",
               "학부모오리엔테이션",
               "대해유치원 강당"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-9f504122",
+        "kindergartenId": "1ecec08d-0ce5-b044-e053-0a32095ab044",
+        "kindergartenName": "대해유치원",
+        "title": "경산 대해유치원 여름방학식 버블쇼 Reel",
+        "url": "https://www.instagram.com/reel/C93_8GtxGPK/",
+        "source": "other",
+        "sourceName": "Instagram · 대해유치원",
+        "snippet": "Instagram 검색 결과에서 daehae_kindergarten 계정의 대해유치원 여름방학식 버블쇼 활동 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "bubble-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "대해유치원",
+          "kindergartenAddress": "경상북도 경산시 성암로12길 17-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C93_8GtxGPK%22+%22%EB%8C%80%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/C93_8GtxGPK/",
+          "regionEvidence": [
+            "daehae_kindergarten",
+            "대해유치원",
+            "경산",
+            "여름방학식"
+          ]
+        },
+        "evidenceChecksum": "9c23eb5c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C93_8GtxGPK/",
+          "normalizedUrl": "www.instagram.com/reel/c93_8gtxgpk",
+          "normalizedText": "경산 대해유치원 여름방학식 버블쇼 reel instagram 검색 결과에서 daehae_kindergarten 계정의 대해유치원 여름방학식 버블쇼 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "e97ea49a",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대해유치원",
+            "kindergartenAddress": "경상북도 경산시 성암로12길 17-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C93_8GtxGPK%22+%22%EB%8C%80%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/C93_8GtxGPK/",
+            "regionEvidence": [
+              "daehae_kindergarten",
+              "대해유치원",
+              "경산",
+              "여름방학식"
             ]
           }
         }
@@ -731,6 +795,42 @@
           ]
         },
         "evidenceChecksum": "72b3350a"
+      },
+      {
+        "id": "rev-sns-wave671-973255c1",
+        "kindergartenId": "1ecec08c-eed4-b044-e053-0a32095ab044",
+        "title": "창파유치원 원어민과 함께하는 과학활동 기록",
+        "url": "https://www.instagram.com/reel/DUQLuqKEaiY/",
+        "source": "other",
+        "sourceName": "Instagram · 창파유치원",
+        "snippet": "창파유치원이 원어민과 함께 과학 주제 만들기 활동을 진행한 공개 릴스입니다.",
+        "summary": "만들기와 과학 원리 탐색을 결합한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science",
+          "making",
+          "inquiry"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave671-973255c1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUQLuqKEaiY/",
+          "normalizedUrl": "instagram.com/reel/duqluqkeaiy",
+          "normalizedText": "창파유치원 원어민 과학활동 과학 주제 만들기 활동",
+          "htmlSnapshotHash": "sns-wave671-973255c1",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUQLuqKEaiY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "codex-manual-sns-wave671"
       }
     ],
     "1ecec08d-006f-b044-e053-0a32095ab044": [
@@ -1365,6 +1465,238 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c5ddf354",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 2025학년도 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUs0oivEijQ/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 졸업생 친구들, 3년 동안 경산유치원을 믿고 함께해 준 학부모 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c5ddf354",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUs0oivEijQ%22%20%22ks_kinderg%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원 계정명과 기관명이 일치하고 로컬 원장부의 경산시 경산유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUs0oivEijQ/",
+          "normalizedUrl": "instagram.com/reel/dus0oiveijq",
+          "normalizedText": "경산유치원 2025학년도 졸업식 instagram reel 검색 결과에서 경산유치원 졸업생 친구들, 3년 동안 경산유치원을 믿고 함께해 준 학부모 단서가 확인된다.",
+          "htmlSnapshotHash": "c5ddf354",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUs0oivEijQ%22%20%22ks_kinderg%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원 계정명과 기관명이 일치하고 로컬 원장부의 경산시 경산유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1bf19691",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 약물오남용 예방교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DVsYzU1mGlw/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원의 찾아오는 약물오남용 예방교육과 건강한 생활 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "drug-prevention",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1bf19691",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVsYzU1mGlw%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%BD%EB%AC%BC%EC%98%A4%EB%82%A8%EC%9A%A9%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 동명 확장 후보가 있으나 공립단설 경산유치원 단서가 로컬 경북 경산시 경산유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVsYzU1mGlw/",
+          "normalizedUrl": "instagram.com/p/dvsyzu1mglw",
+          "normalizedText": "경산유치원 약물오남용 예방교육 instagram post 검색 결과에서 경산유치원의 찾아오는 약물오남용 예방교육과 건강한 생활 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "1bf19691",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVsYzU1mGlw%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%BD%EB%AC%BC%EC%98%A4%EB%82%A8%EC%9A%A9%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원은 동명 확장 후보가 있으나 공립단설 경산유치원 단서가 로컬 경북 경산시 경산유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9d6aa77e",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 자연 미술놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DOceBlBkq6c/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원, 공립단설, 자연 미술놀이, 버찌로 꾸미는 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "creative-play"
+        ],
+        "date": "2025-09-10",
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9d6aa77e",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOceBlBkq6c%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AF%B8%EC%88%A0%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 미술놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DOceBlBkq6c/",
+          "normalizedUrl": "instagram.com/reel/doceblbkq6c",
+          "normalizedText": "경산유치원 자연 미술놀이 instagram reel 검색 결과에서 경산유치원 공립단설 자연 미술놀이 버찌로 꾸미는 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "9d6aa77e",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3b370b92",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 봄소풍 Instagram Post",
+        "url": "https://www.instagram.com/p/DJKwlPrTiGE/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 친구들이 대구어린이세상으로 봄소풍을 다녀온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3b370b92",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJKwlPrTiGE%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 봄소풍 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJKwlPrTiGE/",
+          "normalizedUrl": "instagram.com/p/djkwlprtige",
+          "normalizedText": "경산유치원 봄소풍 instagram post 검색 결과에서 경산유치원 친구들이 대구어린이세상으로 봄소풍을 다녀온 단서가 확인된다.",
+          "htmlSnapshotHash": "3b370b92",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-756a6e88",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 별별 초록 장터 Instagram Post",
+        "url": "https://www.instagram.com/p/DLBXBMjyACK/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "green-market"
+        ],
+        "date": "2025-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "756a6e88",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLBXBMjyACK%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B4%88%EB%A1%9D%20%EC%9E%A5%ED%84%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 초록 장터 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLBXBMjyACK/",
+          "normalizedUrl": "instagram.com/p/dlbxbmjyack",
+          "normalizedText": "경산유치원 별별 초록 장터 instagram post 검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "756a6e88",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2049,7 +2381,60 @@
         "approvedAt": "2026-07-02T20:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0484-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d4872bbb",
+        "kindergartenId": "1ecec08d-0484-b044-e053-0a32095ab044",
+        "title": "하양유치원 텃밭의 만찬 오감놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIyWX9ATkiB/",
+        "source": "other",
+        "sourceName": "Instagram · 하양유치원",
+        "snippet": "검색 결과에서 하양유치원의 텃밭 주제 오감놀이와 상추 탐색 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "sensory-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d4872bbb",
+        "structuredFields": {
+          "kindergartenName": "하양유치원",
+          "kindergartenAddress": "경상북도 경산시 하양로 119-9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIyWX9ATkiB%22%20%22%ED%95%98%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "하양유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIyWX9ATkiB/",
+          "normalizedUrl": "instagram.com/reel/diywx9atkib",
+          "normalizedText": "하양유치원 텃밭의 만찬 오감놀이 instagram reel 검색 결과에서 하양유치원의 텃밭 주제 오감놀이와 상추 탐색 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "d4872bbb",
+          "extractedAt": "2026-07-03T11:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "하양유치원",
+            "kindergartenAddress": "경상북도 경산시 하양로 119-9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIyWX9ATkiB%22%20%22%ED%95%98%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "하양유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

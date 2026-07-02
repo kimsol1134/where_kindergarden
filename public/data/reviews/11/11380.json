@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 21,
+  "version": "2026-07-03",
+  "totalCount": 22,
   "kindergartenCount": 11,
   "reviews": {
     "1ecec08d-0ba5-b044-e053-0a32095ab044": [
@@ -558,6 +558,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T07:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave671-57802f9f",
+        "kindergartenId": "1ecec08c-f41e-b044-e053-0a32095ab044",
+        "title": "색동유치원 과학 참여수업 기록",
+        "url": "https://www.instagram.com/reel/DPLlyxNkzPD/",
+        "source": "other",
+        "sourceName": "Instagram · 색동유치원",
+        "snippet": "은평구 색동유치원이 과학아놀자 참여수업과 과학놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "학부모 참여수업 안에서 진행된 과학 행사와 실험놀이를 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science",
+          "experiment",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave671-57802f9f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPLlyxNkzPD/",
+          "normalizedUrl": "instagram.com/reel/dpllyxnkzpd",
+          "normalizedText": "은평구 색동유치원 과학아놀자 과학참여수업 과학실험놀이",
+          "htmlSnapshotHash": "sns-wave671-57802f9f",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPLlyxNkzPD/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "codex-manual-sns-wave671"
       }
     ],
     "1ecec08d-06b5-b044-e053-0a32095ab044": [
@@ -611,6 +647,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:52:39.064Z"
+  }
 }

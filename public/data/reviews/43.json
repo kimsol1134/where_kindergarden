@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 112,
+  "totalCount": 113,
   "kindergartenCount": 27,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -1100,6 +1100,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave671-444a7b96",
+        "kindergartenId": "1ecec08d-028c-b044-e053-0a32095ab044",
+        "title": "제천 성모유치원 과학놀이 실험 기록",
+        "url": "https://www.instagram.com/p/DQK9BPJEqBR/",
+        "source": "other",
+        "sourceName": "Instagram · 성모유치원",
+        "snippet": "제천 성모유치원이 유치원 둘러보기와 함께 과학놀이 실험을 진행한 공개 게시물입니다.",
+        "summary": "수·과학 활동으로 과학 원리를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science",
+          "experiment",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave671-444a7b96",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQK9BPJEqBR/",
+          "normalizedUrl": "instagram.com/p/dqk9bpjeqbr",
+          "normalizedText": "제천 성모유치원 과학놀이 실험 수과학 활동",
+          "htmlSnapshotHash": "sns-wave671-444a7b96",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQK9BPJEqBR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "codex-manual-sns-wave671"
       }
     ],
     "1ecec08c-f699-b044-e053-0a32095ab044": [
@@ -4870,5 +4906,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T18:25:00.000Z"
+  "lastUpdatedAt": "2026-07-03T19:45:00.000Z"
 }

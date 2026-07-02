@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 19,
+  "version": "2026-07-03",
+  "totalCount": 21,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-ffdc-b044-e053-0a32095ab044": [
@@ -544,6 +544,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave671-444a7b96",
+        "kindergartenId": "1ecec08d-028c-b044-e053-0a32095ab044",
+        "title": "제천 성모유치원 과학놀이 실험 기록",
+        "url": "https://www.instagram.com/p/DQK9BPJEqBR/",
+        "source": "other",
+        "sourceName": "Instagram · 성모유치원",
+        "snippet": "제천 성모유치원이 유치원 둘러보기와 함께 과학놀이 실험을 진행한 공개 게시물입니다.",
+        "summary": "수·과학 활동으로 과학 원리를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science",
+          "experiment",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave671-444a7b96",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQK9BPJEqBR/",
+          "normalizedUrl": "instagram.com/p/dqk9bpjeqbr",
+          "normalizedText": "제천 성모유치원 과학놀이 실험 수과학 활동",
+          "htmlSnapshotHash": "sns-wave671-444a7b96",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQK9BPJEqBR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "codex-manual-sns-wave671"
       }
     ],
     "1ecec08c-f699-b044-e053-0a32095ab044": [
@@ -755,6 +791,58 @@
           ]
         },
         "evidenceChecksum": "fac6afef"
+      },
+      {
+        "id": "rev-1b86ed4c",
+        "kindergartenId": "1ecec08d-0cc6-b044-e053-0a32095ab044",
+        "title": "제천 소화유치원 소방훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY4etWfyUdK/",
+        "source": "other",
+        "sourceName": "Instagram · 제천소화유치원",
+        "snippet": "검색 결과에서 제천소방서 소방훈련, #소화유치원 #제천유치원 #소방교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-drill"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1b86ed4c",
+        "structuredFields": {
+          "kindergartenName": "소화유치원",
+          "kindergartenAddress": "충청북도 제천시 명륜로13길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY4etWfyUdK%22%20%22%EC%86%8C%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%9C%EC%B2%9C%EC%86%8C%EB%B0%A9%EC%84%9C%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "소화유치원은 동명이 많으나 제천유치원 단서가 로컬 제천시 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY4etWfyUdK/",
+          "normalizedUrl": "instagram.com/reel/dy4etwfyudk",
+          "normalizedText": "제천 소화유치원 소방훈련 instagram reel 검색 결과에서 제천소방서 소방훈련, #소화유치원 #제천유치원 #소방교육 단서가 확인된다.",
+          "htmlSnapshotHash": "1b86ed4c",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "소화유치원",
+            "kindergartenAddress": "충청북도 제천시 명륜로13길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY4etWfyUdK%22%20%22%EC%86%8C%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%9C%EC%B2%9C%EC%86%8C%EB%B0%A9%EC%84%9C%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "소화유치원은 동명이 많으나 제천유치원 단서가 로컬 제천시 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0420-b044-e053-0a32095ab044": [
@@ -863,6 +951,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
