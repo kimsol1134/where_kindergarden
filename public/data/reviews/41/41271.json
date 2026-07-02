@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 14,
+  "version": "2026-07-03",
+  "totalCount": 15,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-049b-b044-e053-0a32095ab044": [
@@ -481,6 +481,42 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave696-bf2507c8",
+        "kindergartenId": "9ef0ced6-631c-4290-8a76-9f6d07e443db",
+        "title": "안산 시냇가푸른나무유치원 동요발표회 기록",
+        "url": "https://www.instagram.com/reel/DaM6z4SMT4Z/",
+        "source": "other",
+        "sourceName": "Instagram · 시냇가푸른나무유치원",
+        "snippet": "시냇가푸른나무유치원 유아가 친구들 앞에서 동요발표회 무대를 마친 모습을 담은 공개 릴스입니다.",
+        "summary": "아이들이 노래 발표를 통해 자신감과 표현력을 키우는 유치원 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "song-presentation",
+          "confidence",
+          "ansan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.980Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave696-bf2507c8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaM6z4SMT4Z/",
+          "normalizedUrl": "instagram.com/reel/dam6z4smt4z",
+          "normalizedText": "시냇가푸른나무유치원 안산 동요발표회 친구들 앞 노래 발표",
+          "htmlSnapshotHash": "sns-wave696-bf2507c8",
+          "extractedAt": "2026-07-03T23:59:59.980Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaM6z4SMT4Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.980Z",
+        "approvedBy": "codex-manual-sns-wave696"
       }
     ]
   }

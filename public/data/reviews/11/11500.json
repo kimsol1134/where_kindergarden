@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 43,
+  "version": "2026-07-03",
+  "totalCount": 44,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-08bd-b044-e053-0a32095ab044": [
@@ -1389,6 +1389,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave696-80adac1f",
+        "kindergartenId": "1ecec08d-0c02-b044-e053-0a32095ab044",
+        "title": "서울 미도유치원 작은음악회 기록",
+        "url": "https://www.instagram.com/reel/DE8hwDtBGHf/",
+        "source": "other",
+        "sourceName": "Instagram · 미도유치원",
+        "snippet": "미도유치원 유아들이 작은음악회 무대에서 준비한 발표를 선보인 공개 릴스입니다.",
+        "summary": "아이들이 음악회 무대를 통해 노래와 표현 활동을 경험한 유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "small-concert",
+          "stage",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.980Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave696-80adac1f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DE8hwDtBGHf/",
+          "normalizedUrl": "instagram.com/reel/de8hwdtbghf",
+          "normalizedText": "미도유치원 서울 강서 작은음악회 유아 무대 발표",
+          "htmlSnapshotHash": "sns-wave696-80adac1f",
+          "extractedAt": "2026-07-03T23:59:59.980Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DE8hwDtBGHf/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.980Z",
+        "approvedBy": "codex-manual-sns-wave696"
       }
     ],
     "1ecec08d-03f7-b044-e053-0a32095ab044": [

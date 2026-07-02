@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 63,
+  "totalCount": 64,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-edc7-b044-e053-0a32095ab044": [
@@ -1612,6 +1612,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T21:15:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave696-d5c52714",
+        "kindergartenId": "1ecec08c-f683-b044-e053-0a32095ab044",
+        "title": "오산 숲속다원유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/p/DUGP6ZjEQuz/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속다원유치원",
+        "snippet": "숲속다원유치원 유아들이 작은 음악회 무대에서 연주와 춤을 선보인 공개 게시물입니다.",
+        "summary": "아이들이 무대 경험을 통해 표현력과 성취감을 쌓은 유치원 음악회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "small-concert",
+          "stage",
+          "osan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.980Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave696-d5c52714",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUGP6ZjEQuz/",
+          "normalizedUrl": "instagram.com/p/dugp6zjequz",
+          "normalizedText": "숲속다원유치원 오산 작은 음악회 무대 연주 춤",
+          "htmlSnapshotHash": "sns-wave696-d5c52714",
+          "extractedAt": "2026-07-03T23:59:59.980Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUGP6ZjEQuz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.980Z",
+        "approvedBy": "codex-manual-sns-wave696"
       }
     ],
     "1ecec08d-0882-b044-e053-0a32095ab044": [

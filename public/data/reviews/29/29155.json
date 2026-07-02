@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 18,
+  "version": "2026-07-03",
+  "totalCount": 19,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08d-0d53-b044-e053-0a32095ab044": [
@@ -775,6 +775,42 @@
           ]
         },
         "evidenceChecksum": "be49f7c2"
+      },
+      {
+        "id": "rev-sns-wave696-11636b72",
+        "kindergartenId": "1fd6777e-1518-e0b0-e053-0a32095ae0b0",
+        "title": "광주 꿈드리유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DUeu0U0iMeT/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈드리유치원",
+        "snippet": "꿈드리유치원 6세 유아들이 작은 음악회에서 준비한 공연을 선보인 공개 릴스입니다.",
+        "summary": "연령별 무대 발표를 통해 아이들의 준비 과정과 표현 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "small-concert",
+          "presentation",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.980Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave696-11636b72",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUeu0U0iMeT/",
+          "normalizedUrl": "instagram.com/reel/dueu0u0imet",
+          "normalizedText": "꿈드리유치원 광주 작은 음악회 6세 공연 준비 발표",
+          "htmlSnapshotHash": "sns-wave696-11636b72",
+          "extractedAt": "2026-07-03T23:59:59.980Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUeu0U0iMeT/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.980Z",
+        "approvedBy": "codex-manual-sns-wave696"
       }
     ],
     "1ecec08c-ef71-b044-e053-0a32095ab044": [
