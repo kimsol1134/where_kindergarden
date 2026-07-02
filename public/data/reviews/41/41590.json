@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 131,
-  "kindergartenCount": 32,
+  "totalCount": 132,
+  "kindergartenCount": 33,
   "reviews": {
     "1ecec08d-0098-b044-e053-0a32095ab044": [
       {
@@ -5819,6 +5819,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:58.000Z",
         "approvedBy": "codex-manual-sns-wave689"
+      }
+    ],
+    "5bd28a4b-6aa7-4c78-aebb-8b1abc3b0359": [
+      {
+        "id": "rev-sns-wave705-02307fc8",
+        "kindergartenId": "5bd28a4b-6aa7-4c78-aebb-8b1abc3b0359",
+        "title": "화성 반디유치원 도서관데이 기록",
+        "url": "https://www.instagram.com/reel/DW8N2ZVEZdq/",
+        "source": "other",
+        "sourceName": "Instagram · 반디유치원",
+        "snippet": "반디유치원이 5·6세 친구들의 도서관데이 활동을 통해 책에 대한 긍정적 경험을 쌓은 릴스입니다.",
+        "summary": "아이들이 도서관에서 책을 고르고 읽는 경험을 놀이처럼 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity",
+          "hwaseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-02307fc8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW8N2ZVEZdq/",
+          "normalizedUrl": "instagram.com/reel/dw8n2zvezdq",
+          "normalizedText": "반디유치원 화성 5살 6살 도서관day 책 긍정적 경험",
+          "htmlSnapshotHash": "sns-wave705-02307fc8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DW8N2ZVEZdq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ]
   },

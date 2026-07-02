@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 30,
+  "totalCount": 31,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08d-0168-b044-e053-0a32095ab044": [
@@ -880,6 +880,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.950Z",
         "approvedBy": "codex-manual-sns-wave694"
+      },
+      {
+        "id": "rev-sns-wave705-eabdeb94",
+        "kindergartenId": "1ecec08c-f4ac-b044-e053-0a32095ab044",
+        "title": "고양 다솜유치원 도서관 활동 소개",
+        "url": "https://www.instagram.com/p/DL9SHMSPZ80/",
+        "source": "other",
+        "sourceName": "Instagram · 고양시 일산",
+        "snippet": "고양·일산 지역 단서가 있는 다솜유치원의 유아 전용 도서관과 독서 공간을 소개한 게시물입니다.",
+        "summary": "연령별 추천 도서와 그림책을 갖춘 유치원 도서관 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity",
+          "goyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-eabdeb94",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DL9SHMSPZ80/",
+          "normalizedUrl": "instagram.com/p/dl9shmspz80",
+          "normalizedText": "다솜유치원 일산 고양시 도서관 활동 유아 전용 독서 공간",
+          "htmlSnapshotHash": "sns-wave705-eabdeb94",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DL9SHMSPZ80/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ],
     "1ecec08d-02ee-b044-e053-0a32095ab044": [
@@ -937,5 +973,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

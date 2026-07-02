@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 5,
+  "version": "2026-07-03",
+  "totalCount": 6,
   "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-fddb-b044-e053-0a32095ab044": [
@@ -225,8 +225,44 @@
           ]
         },
         "evidenceChecksum": "ef59c536"
+      },
+      {
+        "id": "rev-sns-wave705-646ed183",
+        "kindergartenId": "1ecec08c-fd66-b044-e053-0a32095ab044",
+        "title": "사천 꽃나라유치원 강당 도서관 활동 기록",
+        "url": "https://www.instagram.com/p/DXv4yGySAbm/",
+        "source": "other",
+        "sourceName": "Instagram · 꽃나라유치원",
+        "snippet": "꽃나라유치원이 강당을 특별한 도서관으로 바꾸고 아이들이 가져온 책을 친구들과 나누어 본 게시물입니다.",
+        "summary": "유아들이 좋아하는 책을 소개하고 함께 읽으며 책과 친해지는 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity",
+          "sacheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-646ed183",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXv4yGySAbm/",
+          "normalizedUrl": "instagram.com/p/dxv4ygysabm",
+          "normalizedText": "꽃나라유치원 강당 특별한 도서관 좋아하는 책 친구들과 나누기",
+          "htmlSnapshotHash": "sns-wave705-646ed183",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXv4yGySAbm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

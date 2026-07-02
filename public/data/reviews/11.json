@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 680,
+  "totalCount": 681,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -25518,6 +25518,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:55.000Z",
         "approvedBy": "codex-manual-sns-wave686"
+      },
+      {
+        "id": "rev-sns-wave705-2148ef4c",
+        "kindergartenId": "1ecec08d-0376-b044-e053-0a32095ab044",
+        "title": "서울 수산유치원 중랑구립정보도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DRtqyh7AVwP/",
+        "source": "other",
+        "sourceName": "Instagram · 수산유치원",
+        "snippet": "수산유치원 믿음반 친구들이 중랑구립정보도서관을 방문해 도서 대출 방법과 이용 약속을 배운 릴스입니다.",
+        "summary": "도서관 견학을 통해 책 빌리기와 공공 공간 예절을 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-2148ef4c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRtqyh7AVwP/",
+          "normalizedUrl": "instagram.com/reel/drtqyh7avwp",
+          "normalizedText": "수산유치원 중랑구립정보도서관 도서 대출 방법 이용 약속",
+          "htmlSnapshotHash": "sns-wave705-2148ef4c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRtqyh7AVwP/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ],
     "1ecec08d-0e37-b044-e053-0a32095ab044": [
@@ -25559,5 +25595,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

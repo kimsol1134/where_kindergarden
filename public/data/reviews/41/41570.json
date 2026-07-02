@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 130,
+  "totalCount": 131,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -3188,6 +3188,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave705-c8913ca5",
+        "kindergartenId": "60923d50-7593-4371-88e2-adcb12d56393",
+        "title": "김포 해솔유치원 모담도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DZCapZjTMAB/",
+        "source": "other",
+        "sourceName": "Instagram · 해솔유치원",
+        "snippet": "해솔유치원이 모담도서관을 견학하며 도서관의 의미와 함께 쓰는 공간의 약속을 배운 릴스입니다.",
+        "summary": "유아들이 다양한 책을 자유롭게 탐색하고 도서관 이용 예절을 익힌 견학 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-activity",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-c8913ca5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZCapZjTMAB/",
+          "normalizedUrl": "instagram.com/reel/dzcapzjtmab",
+          "normalizedText": "해솔유치원 김포 모담도서관 견학 도서관 이용 약속 책 탐색",
+          "htmlSnapshotHash": "sns-wave705-c8913ca5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZCapZjTMAB/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ],
     "2ca14d7b-3689-4597-9d8a-2d27b61dc13e": [
@@ -5225,5 +5261,6 @@
         "approvedBy": "codex-manual-sns-wave685"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

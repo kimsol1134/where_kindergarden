@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 97,
+  "totalCount": 98,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08c-ff89-b044-e053-0a32095ab044": [
@@ -4408,6 +4408,42 @@
           ]
         },
         "evidenceChecksum": "17427c79"
+      },
+      {
+        "id": "rev-sns-wave705-f48ea560",
+        "kindergartenId": "1ecec08c-fab8-b044-e053-0a32095ab044",
+        "title": "거제 새들유치원 우리동네 도서관 프로젝트 기록",
+        "url": "https://www.instagram.com/reel/DaCYyyXxObe/",
+        "source": "other",
+        "sourceName": "Instagram · 새들유치원",
+        "snippet": "새들유치원이 7세 친구들과 함께 우리동네 도서관 프로젝트로 거제시립도서관을 견학한 릴스입니다.",
+        "summary": "아이들이 지역 도서관을 방문해 공간과 책을 탐색한 프로젝트형 견학 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "project-learning",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave705-f48ea560",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCYyyXxObe/",
+          "normalizedUrl": "instagram.com/reel/dacyyyxxobe",
+          "normalizedText": "새들유치원 거제시립도서관 우리동네 도서관 프로젝트 도서관견학",
+          "htmlSnapshotHash": "sns-wave705-f48ea560",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCYyyXxObe/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave705"
       }
     ],
     "1ecec08c-ee2a-b044-e053-0a32095ab044": [
@@ -4713,5 +4749,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
