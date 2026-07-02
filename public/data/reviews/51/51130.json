@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 74,
+  "totalCount": 75,
   "kindergartenCount": 18,
   "reviews": {
     "1ecec08d-08d8-b044-e053-0a32095ab044": [
@@ -660,6 +660,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:50.000Z",
         "approvedBy": "codex-manual-sns-wave685"
+      },
+      {
+        "id": "rev-sns-wave699-b75ae8bd",
+        "kindergartenId": "496ad00b-0b28-4a27-bf54-8e81c76c8ea4",
+        "title": "원주 프라임상상유치원 마티스 작품전시회 기록",
+        "url": "https://www.instagram.com/reel/DaIU8yHTPVZ/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임상상유치원",
+        "snippet": "프라임상상유치원이 유아들과 마티스 주제의 미술 작품전시회를 꾸민 공개 릴스입니다.",
+        "summary": "아이들이 색과 형태를 탐색하고 완성한 작품을 전시한 창의 미술 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-exhibition",
+          "matisse",
+          "wonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.996Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave699-b75ae8bd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaIU8yHTPVZ/",
+          "normalizedUrl": "instagram.com/reel/daiu8yhtpvz",
+          "normalizedText": "프라임상상유치원 원주 마티스 작품전시회 미술활동 유치원",
+          "htmlSnapshotHash": "sns-wave699-b75ae8bd",
+          "extractedAt": "2026-07-03T23:59:59.996Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaIU8yHTPVZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.996Z",
+        "approvedBy": "codex-manual-sns-wave699"
       }
     ],
     "44618f52-e0f9-4903-89a3-bf21071678e7": [

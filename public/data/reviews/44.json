@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 201,
+  "totalCount": 202,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -4788,6 +4788,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:30.000Z",
         "approvedBy": "codex-manual-sns-wave683"
+      },
+      {
+        "id": "rev-sns-wave699-8d09a6f7",
+        "kindergartenId": "1ecec08c-ee38-b044-e053-0a32095ab044",
+        "title": "천안 젤라유치원 PBL 프로젝트 전시회 기록",
+        "url": "https://www.instagram.com/reel/DQbTnyAD3gm/",
+        "source": "other",
+        "sourceName": "Instagram · 젤라유치원",
+        "snippet": "젤라유치원이 PBL 프로젝트 결과를 전시회 형태로 공개한 릴스입니다.",
+        "summary": "프로젝트 학습 과정과 유아들의 결과물을 함께 살펴볼 수 있는 전시 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "project-exhibition",
+          "pbl",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.996Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave699-8d09a6f7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQbTnyAD3gm/",
+          "normalizedUrl": "instagram.com/reel/dqbtnyad3gm",
+          "normalizedText": "젤라유치원 천안 PBL 프로젝트 전시회 유아 프로젝트",
+          "htmlSnapshotHash": "sns-wave699-8d09a6f7",
+          "extractedAt": "2026-07-03T23:59:59.996Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQbTnyAD3gm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.996Z",
+        "approvedBy": "codex-manual-sns-wave699"
       }
     ],
     "1ecec08d-06c9-b044-e053-0a32095ab044": [
@@ -9136,5 +9172,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.996Z"
 }

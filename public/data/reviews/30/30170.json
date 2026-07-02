@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 129,
+  "totalCount": 130,
   "kindergartenCount": 30,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
@@ -3114,6 +3114,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.900Z",
         "approvedBy": "codex-manual-sns-wave693"
+      },
+      {
+        "id": "rev-sns-wave699-601015ad",
+        "kindergartenId": "1ecec08d-0604-b044-e053-0a32095ab044",
+        "title": "대전 한양유치원 미술 작품 전시회 기록",
+        "url": "https://www.instagram.com/reel/DP0duSPD5am/",
+        "source": "other",
+        "sourceName": "Instagram · 한양유치원",
+        "snippet": "대전 한양유치원이 유아들의 미술 작품 전시회 모습을 담은 공개 릴스입니다.",
+        "summary": "아이들이 만든 작품을 한자리에 모아 보여 준 예술 표현 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-exhibition",
+          "creative-learning",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.996Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave699-601015ad",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DP0duSPD5am/",
+          "normalizedUrl": "instagram.com/reel/dp0duspd5am",
+          "normalizedText": "대전 한양유치원 미술 작품 전시회 예술활동",
+          "htmlSnapshotHash": "sns-wave699-601015ad",
+          "extractedAt": "2026-07-03T23:59:59.996Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DP0duSPD5am/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.996Z",
+        "approvedBy": "codex-manual-sns-wave699"
       }
     ],
     "1ecec08d-0b4f-b044-e053-0a32095ab044": [
