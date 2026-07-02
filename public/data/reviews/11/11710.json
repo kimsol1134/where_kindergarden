@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 47,
+  "version": "2026-07-03",
+  "totalCount": 48,
   "kindergartenCount": 18,
   "reviews": {
     "009c017d-43bd-4d9f-ac64-d217abdd570e": [
@@ -1465,6 +1465,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-79d43df0",
+        "kindergartenId": "1ecec08c-f20a-b044-e053-0a32095ab044",
+        "title": "석촌유치원 작은 음악회 준비 기록",
+        "url": "https://www.instagram.com/p/DUAQVa1D6tw/",
+        "source": "other",
+        "sourceName": "Instagram · 석촌유치원",
+        "snippet": "석촌유치원이 작은 음악회를 앞두고 아이들이 무대를 준비하는 분위기를 소개한 공개 게시물입니다.",
+        "summary": "유치원 작은 음악회 준비 과정과 음악 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "concert-prep",
+          "seokchon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-79d43df0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUAQVa1D6tw/",
+          "normalizedUrl": "instagram.com/p/duaqva1d6tw",
+          "normalizedText": "석촌유치원 작은음악회 음악회 준비",
+          "htmlSnapshotHash": "sns-wave686-79d43df0",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUAQVa1D6tw/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ]
   }

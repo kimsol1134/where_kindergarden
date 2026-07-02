@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 27,
-  "kindergartenCount": 8,
+  "version": "2026-07-03",
+  "totalCount": 29,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-057c-b044-e053-0a32095ab044": [
       {
@@ -345,6 +345,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T20:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d7241630",
+        "kindergartenId": "51d93fa8-5892-4343-a7ab-1fb53b0d7a30",
+        "title": "인천 계양유치원 만5세 안전교육·생존수영 Instagram Post",
+        "url": "https://www.instagram.com/p/Cp17lr5SPu7/",
+        "source": "other",
+        "sourceName": "Instagram · 계양유치원",
+        "snippet": "검색 결과에서 #계양유치원 #만5세특색수업 #안전교육 #생존수영 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "swimming-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d7241630",
+        "structuredFields": {
+          "kindergartenName": "계양유치원",
+          "kindergartenAddress": "인천광역시 계양구 계양산로193번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cp17lr5SPu7%22%20%22%EA%B3%84%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "계양유치원은 로컬 원장부에서 단일 정확 명칭이다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cp17lr5SPu7/",
+          "normalizedUrl": "instagram.com/p/cp17lr5spu7",
+          "normalizedText": "인천 계양유치원 만5세 안전교육·생존수영 instagram post 검색 결과에서 #계양유치원 #만5세특색수업 #안전교육 #생존수영 단서가 확인된다.",
+          "htmlSnapshotHash": "d7241630",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "계양유치원",
+            "kindergartenAddress": "인천광역시 계양구 계양산로193번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cp17lr5SPu7%22%20%22%EA%B3%84%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "계양유치원은 로컬 원장부에서 단일 정확 명칭이다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0baa-b044-e053-0a32095ab044": [
@@ -675,55 +727,6 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.990Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-c7dd86ac",
-        "kindergartenId": "1ecec08c-eff5-b044-e053-0a32095ab044",
-        "title": "인천귤현초등학교병설유치원 2026 입학 안내 Instagram",
-        "url": "https://www.instagram.com/reel/DWnlfGoiQRS/",
-        "source": "other",
-        "sourceName": "Instagram · 인천귤현초등학교병설유치원",
-        "snippet": "gyulhyeon_preschool 계정에서 계양구 인천귤현초등학교병설유치원 소개와 2026학년도 만3~5세 입학 가능 안내 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission",
-          "public-kindergarten"
-        ],
-        "date": "2026-04-01",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "d8f155d0",
-        "structuredFields": {
-          "kindergartenName": "인천귤현초등학교병설유치원",
-          "kindergartenAddress": "인천광역시 계양구 귤현길 15",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWnlfGoiQRS%22+%22gyulhyeon_preschool%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWnlfGoiQRS/",
-          "normalizedUrl": "www.instagram.com/reel/dwnlfgoiqrs",
-          "normalizedText": "인천귤현초등학교병설유치원 2026 입학 안내 instagram gyulhyeon_preschool 계정에서 계양구 인천귤현초등학교병설유치원 소개와 2026학년도 만3~5세 입학 가능 안내 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "d8f155d0",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "인천귤현초등학교병설유치원",
-            "kindergartenAddress": "인천광역시 계양구 귤현길 15",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWnlfGoiQRS%22+%22gyulhyeon_preschool%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1096,6 +1099,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-b4dcdb82",
+        "kindergartenId": "1ecec08c-efd1-b044-e053-0a32095ab044",
+        "title": "인천 보나유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DUkOXpjgk5P/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 보나유치원",
+        "snippet": "인천 계양구 보나유치원이 작은 음악회에서 아이들이 준비한 무대를 소개한 공개 릴스입니다.",
+        "summary": "유치원 음악회 준비와 발표 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-b4dcdb82",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUkOXpjgk5P/",
+          "normalizedUrl": "instagram.com/reel/dukoxpjgk5p",
+          "normalizedText": "인천 보나유치원 작은 음악회 계양구 무대",
+          "htmlSnapshotHash": "sns-wave686-b4dcdb82",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUkOXpjgk5P/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-feb4-b044-e053-0a32095ab044": [
@@ -1240,7 +1279,73 @@
         },
         "evidenceChecksum": "4c7fe1db"
       }
+    ],
+    "1ecec08c-f850-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dec6b498",
+        "kindergartenId": "1ecec08c-f850-b044-e053-0a32095ab044",
+        "kindergartenName": "보람유치원",
+        "title": "인천 계양 보람유치원 어린이날 참여형 연극 Reel",
+        "url": "https://www.instagram.com/reel/DX5Th15Tn9a/",
+        "source": "other",
+        "sourceName": "Instagram · 보람유치원",
+        "snippet": "Instagram 검색 결과에서 보람유치원 어린이날 행사, 병방동유치원·계양보람유치원 문맥과 참여형 연극 관람이 확인되는 릴.",
+        "date": "2026-05-07",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "theater",
+          "children-day",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "보람유치원",
+          "kindergartenAddress": "인천광역시 계양구 장제로928번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX5Th15Tn9a%22+%22%EB%B3%B4%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%97%B0%EA%B7%B9%22+%22%EB%B3%91%EB%B0%A9%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DX5Th15Tn9a/",
+          "regionEvidence": [
+            "병방동유치원",
+            "보람유치원",
+            "계양보람유치원",
+            "참여형 연극"
+          ]
+        },
+        "evidenceChecksum": "493da26b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DX5Th15Tn9a/",
+          "normalizedUrl": "instagram.com/shortcode/dx5th15tn9a",
+          "normalizedText": "인천 계양 보람유치원 어린이날 참여형 연극 reel instagram 검색 결과에서 보람유치원 어린이날 행사, 병방동유치원·계양보람유치원 문맥과 참여형 연극 관람이 확인되는 릴.",
+          "htmlSnapshotHash": "a7dff3cf",
+          "extractedAt": "2026-07-02T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "보람유치원",
+            "kindergartenAddress": "인천광역시 계양구 장제로928번길 23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX5Th15Tn9a%22+%22%EB%B3%B4%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%97%B0%EA%B7%B9%22+%22%EB%B3%91%EB%B0%A9%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DX5Th15Tn9a/",
+            "regionEvidence": [
+              "병방동유치원",
+              "보람유치원",
+              "계양보람유치원",
+              "참여형 연극"
+            ]
+          }
+        }
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

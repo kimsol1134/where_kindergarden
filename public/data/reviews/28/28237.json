@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 52,
+  "version": "2026-07-03",
+  "totalCount": 53,
   "kindergartenCount": 19,
   "reviews": {
     "1ecec08d-0579-b044-e053-0a32095ab044": [
@@ -543,6 +543,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-32cef72f",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "인천 숲속유치원 가을음악회 기록",
+        "url": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속유치원",
+        "snippet": "숲속유치원이 원적산공원 야외무대에서 가을음악회를 열고 클래식 공연 감상과 합창을 진행한 공개 릴스입니다.",
+        "summary": "야외무대 음악회와 합창 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "choir",
+          "outdoor-stage"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-32cef72f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+          "normalizedUrl": "instagram.com/reel/drreksle1pl",
+          "normalizedText": "숲속유치원 원적산공원 가을음악회 클래식음악공연 합창",
+          "htmlSnapshotHash": "sns-wave686-32cef72f",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-f37c-b044-e053-0a32095ab044": [

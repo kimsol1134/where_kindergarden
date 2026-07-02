@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 672,
-  "kindergartenCount": 245,
+  "totalCount": 674,
+  "kindergartenCount": 246,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -18517,6 +18517,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-79d43df0",
+        "kindergartenId": "1ecec08c-f20a-b044-e053-0a32095ab044",
+        "title": "석촌유치원 작은 음악회 준비 기록",
+        "url": "https://www.instagram.com/p/DUAQVa1D6tw/",
+        "source": "other",
+        "sourceName": "Instagram · 석촌유치원",
+        "snippet": "석촌유치원이 작은 음악회를 앞두고 아이들이 무대를 준비하는 분위기를 소개한 공개 게시물입니다.",
+        "summary": "유치원 작은 음악회 준비 과정과 음악 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "concert-prep",
+          "seokchon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-79d43df0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUAQVa1D6tw/",
+          "normalizedUrl": "instagram.com/p/duaqva1d6tw",
+          "normalizedText": "석촌유치원 작은음악회 음악회 준비",
+          "htmlSnapshotHash": "sns-wave686-79d43df0",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUAQVa1D6tw/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-ef38-b044-e053-0a32095ab044": [
@@ -25265,7 +25301,45 @@
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0376-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave686-beaaf668",
+        "kindergartenId": "1ecec08d-0376-b044-e053-0a32095ab044",
+        "title": "수산유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DTc-TyvAZiz/",
+        "source": "other",
+        "sourceName": "Instagram · 수산유치원",
+        "snippet": "수산유치원이 작은 음악회를 마무리하며 아이들이 무대에 선 모습을 소개한 공개 릴스입니다.",
+        "summary": "아이들이 음악회 무대에서 표현력과 자신감을 보여준 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance",
+          "class-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-beaaf668",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTc-TyvAZiz/",
+          "normalizedUrl": "instagram.com/reel/dtc-tyvaziz",
+          "normalizedText": "수산유치원 수산 작은 음악회 무대 아이들",
+          "htmlSnapshotHash": "sns-wave686-beaaf668",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTc-TyvAZiz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:30.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:55.000Z"
 }

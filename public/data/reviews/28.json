@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 360,
+  "totalCount": 362,
   "kindergartenCount": 112,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -7589,6 +7589,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-32cef72f",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "인천 숲속유치원 가을음악회 기록",
+        "url": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속유치원",
+        "snippet": "숲속유치원이 원적산공원 야외무대에서 가을음악회를 열고 클래식 공연 감상과 합창을 진행한 공개 릴스입니다.",
+        "summary": "야외무대 음악회와 합창 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "choir",
+          "outdoor-stage"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-32cef72f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+          "normalizedUrl": "instagram.com/reel/drreksle1pl",
+          "normalizedText": "숲속유치원 원적산공원 가을음악회 클래식음악공연 합창",
+          "htmlSnapshotHash": "sns-wave686-32cef72f",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-f37c-b044-e053-0a32095ab044": [
@@ -11151,6 +11187,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-b4dcdb82",
+        "kindergartenId": "1ecec08c-efd1-b044-e053-0a32095ab044",
+        "title": "인천 보나유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DUkOXpjgk5P/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 보나유치원",
+        "snippet": "인천 계양구 보나유치원이 작은 음악회에서 아이들이 준비한 무대를 소개한 공개 릴스입니다.",
+        "summary": "유치원 음악회 준비와 발표 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-b4dcdb82",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUkOXpjgk5P/",
+          "normalizedUrl": "instagram.com/reel/dukoxpjgk5p",
+          "normalizedText": "인천 보나유치원 작은 음악회 계양구 무대",
+          "htmlSnapshotHash": "sns-wave686-b4dcdb82",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUkOXpjgk5P/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-efe3-b044-e053-0a32095ab044": [
@@ -14130,5 +14202,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:45.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:55.000Z"
 }

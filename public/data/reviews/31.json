@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 121,
+  "totalCount": 122,
   "kindergartenCount": 43,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -4428,6 +4428,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave686-b6cc1de4",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DUH2u-JE_c5/",
+        "source": "other",
+        "sourceName": "Instagram · 울산 은성유치원",
+        "snippet": "울산 은성유치원이 작은 음악회 활동을 소개한 공개 릴스입니다.",
+        "summary": "울산 유치원의 음악회 발표 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-b6cc1de4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/",
+          "normalizedUrl": "instagram.com/reel/duh2u-je_c5",
+          "normalizedText": "은성유치원 울산유치원 울산은성유치원 작은음악회",
+          "htmlSnapshotHash": "sns-wave686-b6cc1de4",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
       }
     ],
     "1ecec08c-fd9f-b044-e053-0a32095ab044": [
@@ -5726,5 +5762,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T22:15:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:55.000Z"
 }
