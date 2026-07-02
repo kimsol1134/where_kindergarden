@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 287,
+  "totalCount": 289,
   "kindergartenCount": 99,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -12841,6 +12841,92 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4eb17afd",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 구미 과학관 Instagram Post",
+        "url": "https://www.instagram.com/p/C3DLBWwy9Fb/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산초등학교병설유치원",
+        "snippet": "검색 결과에서 구미왕산초등학교 병설유치원, 구미 과학관, 기초과학과 첨단 과학 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4eb17afd",
+        "structuredFields": {
+          "kindergartenName": "구미왕산초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 왕산로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C3DLBWwy9Fb%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미왕산초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학관 체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C3DLBWwy9Fb/",
+          "normalizedUrl": "instagram.com/p/c3dlbwwy9fb",
+          "normalizedText": "구미왕산초등학교병설유치원 구미 과학관 instagram post 검색 결과에서 구미왕산초등학교 병설유치원 구미 과학관 기초과학과 첨단 과학 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "4eb17afd",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-511e89db",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 대구과학박물관 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZMVqNzhedp/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산초등학교병설유치원",
+        "snippet": "검색 결과에서 구미왕산초등학교병설유치원, 대구과학박물관 체험, 신기한 과학의 세계 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "511e89db",
+        "structuredFields": {
+          "kindergartenName": "구미왕산초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 왕산로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMVqNzhedp%22%20%22%EA%B5%AC%EB%AF%B8%EC%99%95%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구미왕산초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학박물관 체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZMVqNzhedp/",
+          "normalizedUrl": "instagram.com/reel/dzmvqnzhedp",
+          "normalizedText": "구미왕산초등학교병설유치원 대구과학박물관 체험 instagram reel 검색 결과에서 구미왕산초등학교병설유치원 대구과학박물관 체험 신기한 과학의 세계 단서가 확인된다.",
+          "htmlSnapshotHash": "511e89db",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

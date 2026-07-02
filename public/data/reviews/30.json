@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 293,
+  "totalCount": 294,
   "kindergartenCount": 68,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -1783,6 +1783,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-04be4b47",
+        "kindergartenId": "1ecec08c-f3c4-b044-e053-0a32095ab044",
+        "title": "대전도마초등학교병설유치원 유아과학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNPNn7PBWn9/",
+        "source": "other",
+        "sourceName": "Instagram · 대전도마초등학교병설유치원",
+        "snippet": "검색 결과에서 대전도마초등학교병설유치원, 방과후과정, 특성화활동, 유아과학, 실험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "experiment"
+        ],
+        "date": "2025-08-11",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "04be4b47",
+        "structuredFields": {
+          "kindergartenName": "대전도마초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNPNn7PBWn9%22%20%22%EB%8C%80%EC%A0%84%EB%8F%84%EB%A7%88%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%95%84%EA%B3%BC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전도마초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNPNn7PBWn9/",
+          "normalizedUrl": "instagram.com/reel/dnpnn7pbwn9",
+          "normalizedText": "대전도마초등학교병설유치원 유아과학 instagram reel 검색 결과에서 대전도마초등학교병설유치원 방과후과정 특성화활동 유아과학 실험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "04be4b47",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

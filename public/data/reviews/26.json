@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 281,
+  "totalCount": 286,
   "kindergartenCount": 86,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -9014,6 +9014,92 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e773d638",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 너나들이놀이터 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DWxWBzcDe7s/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 너나들이놀이터 과학놀이, 비밀 그림 그리기와 색혼합 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "creative-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e773d638",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWxWBzcDe7s%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금곡나래유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxWBzcDe7s/",
+          "normalizedUrl": "instagram.com/p/dwxwbzcde7s",
+          "normalizedText": "금곡나래유치원 너나들이놀이터 과학놀이 instagram post 검색 결과에서 금곡나래유치원 너나들이놀이터 과학놀이 비밀 그림 그리기와 색혼합 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "e773d638",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e1b7e5a0",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 물 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/C2t63i4PXBq/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 물과 관련된 과학 원리, 코인티슈 애벌레와 종이꽃 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "creative-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e1b7e5a0",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2t63i4PXBq%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%20%EC%9B%90%EB%A6%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금곡나래유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학 원리 놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C2t63i4PXBq/",
+          "normalizedUrl": "instagram.com/p/c2t63i4pxbq",
+          "normalizedText": "금곡나래유치원 물 과학놀이 instagram post 검색 결과에서 금곡나래유치원 물과 관련된 과학 원리 코인티슈 애벌레와 종이꽃 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "e1b7e5a0",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f1a6-b044-e053-0a32095ab044": [
@@ -9837,6 +9923,135 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c117f588",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 방과후 특성화 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DXgds2XEbts/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 공립단설 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": "2026-04-24",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c117f588",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgds2XEbts%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXgds2XEbts/",
+          "normalizedUrl": "instagram.com/p/dxgds2xebts",
+          "normalizedText": "영일유치원 방과후 특성화 과학놀이 instagram post 검색 결과에서 공립단설 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "c117f588",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ee88736b",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DY6J_MzETqu/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ee88736b",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6J_MzETqu%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6J_MzETqu/",
+          "normalizedUrl": "instagram.com/p/dy6j_mzetqu",
+          "normalizedText": "영일유치원 과학놀이 instagram post 검색 결과에서 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "ee88736b",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d2c54449",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 특성화 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DA2xeBvyGme/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 특성화 과학놀이, 유치원과 가정 연계 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d2c54449",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA2xeBvyGme%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8A%B9%EC%84%B1%ED%99%94%20%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA2xeBvyGme/",
+          "normalizedUrl": "instagram.com/p/da2xebvygme",
+          "normalizedText": "영일유치원 특성화 과학놀이 instagram post 검색 결과에서 영일유치원 특성화 과학놀이 유치원과 가정 연계 단서가 확인된다.",
+          "htmlSnapshotHash": "d2c54449",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

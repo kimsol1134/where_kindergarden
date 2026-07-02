@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1064,
+  "totalCount": 1065,
   "kindergartenCount": 447,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -15966,6 +15966,49 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-ae6d2b1b",
+        "kindergartenId": "1ecec08c-f5ba-b044-e053-0a32095ab044",
+        "title": "광명 광문초등학교병설유치원 찾아오는 과학체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DSFdyjRASjQ/",
+        "source": "other",
+        "sourceName": "Instagram · 과학체험",
+        "snippet": "검색 결과에서 광명 광문초 병설유치원, 찾아오는 과학체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-experience",
+          "science-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ae6d2b1b",
+        "structuredFields": {
+          "kindergartenName": "광문초등학교병설유치원",
+          "kindergartenAddress": "경기도 광명시 덕단이로 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSFdyjRASjQ%22%20%22%EA%B4%91%EB%AA%85%22%20%22%EA%B4%91%EB%AC%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "광문초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 광명 단서와 과학체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSFdyjRASjQ/",
+          "normalizedUrl": "instagram.com/reel/dsfdyjrasjq",
+          "normalizedText": "광명 광문초등학교병설유치원 찾아오는 과학체험 instagram reel 검색 결과에서 광명 광문초 병설유치원 찾아오는 과학체험 단서가 확인된다.",
+          "htmlSnapshotHash": "ae6d2b1b",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f8da-b044-e053-0a32095ab044": [
