@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 90,
+  "totalCount": 91,
   "kindergartenCount": 23,
   "reviews": {
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -1226,6 +1226,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:53.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave704-dc54382e",
+        "kindergartenId": "1ecec08c-f573-b044-e053-0a32095ab044",
+        "title": "의정부 산내들유치원 만 3·4세 수료식 기록",
+        "url": "https://www.instagram.com/reel/DVGDzXoEzwq/",
+        "source": "other",
+        "sourceName": "Instagram · 산내들유치원",
+        "snippet": "의정부 산내들유치원이 만 3·4세 친구들의 수료식 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 한 해의 유치원 생활을 마무리하며 다음 반으로 올라가는 수료식 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "completion",
+          "ceremony",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-dc54382e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVGDzXoEzwq/",
+          "normalizedUrl": "instagram.com/reel/dvgdzxoezwq",
+          "normalizedText": "산내들유치원 의정부산내들유치원 수료식 만3세 만4세",
+          "htmlSnapshotHash": "sns-wave704-dc54382e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVGDzXoEzwq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
       }
     ],
     "1ecec08c-f693-b044-e053-0a32095ab044": [
@@ -3213,5 +3249,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

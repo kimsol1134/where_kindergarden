@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 333,
+  "totalCount": 335,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -3201,6 +3201,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:30.000Z",
         "approvedBy": "codex-manual-sns-wave683"
+      },
+      {
+        "id": "rev-sns-wave704-8b5579c8",
+        "kindergartenId": "53e8d261-a4bc-4ed3-a025-57d515cb03e1",
+        "title": "부산 새부산유치원 7세 졸업식 기록",
+        "url": "https://www.instagram.com/reel/DVItHZwk63U/",
+        "source": "other",
+        "sourceName": "Instagram · 새부산유치원",
+        "snippet": "부산 남구·대연동 단서가 있는 새부산유치원이 7세 친구들의 졸업을 축하한 릴스입니다.",
+        "summary": "만 5세 유아들이 유치원 생활을 마무리하고 초등 전환을 앞둔 졸업식 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-8b5579c8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVItHZwk63U/",
+          "normalizedUrl": "instagram.com/reel/dvithzwk63u",
+          "normalizedText": "새부산유치원 부산 남구 대연동 7살 졸업 졸업식",
+          "htmlSnapshotHash": "sns-wave704-8b5579c8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVItHZwk63U/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
       }
     ],
     "1ecec08d-0959-b044-e053-0a32095ab044": [
@@ -13058,6 +13094,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave704-4dbd3f8e",
+        "kindergartenId": "1ecec08d-06f4-b044-e053-0a32095ab044",
+        "title": "부산 백조명문유치원 수료식 기록",
+        "url": "https://www.instagram.com/reel/DVLa8sjkccO/",
+        "source": "other",
+        "sourceName": "Instagram · 백조명문유치원",
+        "snippet": "부산 북구 백조명문유치원이 5·6세 친구들의 수료식 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 꽃길 입장과 함께 한 해의 마무리를 축하한 수료식 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "completion",
+          "ceremony",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-4dbd3f8e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVLa8sjkccO/",
+          "normalizedUrl": "instagram.com/reel/dvla8sjkcco",
+          "normalizedText": "부산 북구 백조명문유치원 수료식 축하 5세 6세",
+          "htmlSnapshotHash": "sns-wave704-4dbd3f8e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVLa8sjkccO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
       }
     ],
     "1ecec08d-0f9f-b044-e053-0a32095ab044": [
@@ -15884,5 +15956,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.990Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

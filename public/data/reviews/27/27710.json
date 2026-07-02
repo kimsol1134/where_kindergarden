@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 59,
+  "totalCount": 60,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -1602,6 +1602,42 @@
           ]
         },
         "evidenceChecksum": "cfd3b00b"
+      },
+      {
+        "id": "rev-sns-wave704-9926be8b",
+        "kindergartenId": "1ecec08d-0c22-b044-e053-0a32095ab044",
+        "title": "대구 늘푸른유치원 수료식 기록",
+        "url": "https://www.instagram.com/reel/DVI0Ip2D8tG/",
+        "source": "other",
+        "sourceName": "Instagram · 늘푸른유치원",
+        "snippet": "대구 달성군 단서가 있는 늘푸른유치원이 한 해 동안의 추억을 돌아보는 수료식 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 친구들과 함께한 시간을 마무리하고 다음 학년을 준비하는 수료식 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "completion",
+          "ceremony",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-9926be8b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVI0Ip2D8tG/",
+          "normalizedUrl": "instagram.com/reel/dvi0ip2d8tg",
+          "normalizedText": "대구 달성군 늘푸른유치원 제25회 수료식 친구들과 추억",
+          "htmlSnapshotHash": "sns-wave704-9926be8b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVI0Ip2D8tG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
       }
     ],
     "1ecec08c-fa47-b044-e053-0a32095ab044": [
@@ -2273,5 +2309,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

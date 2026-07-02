@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 23,
-  "kindergartenCount": 11,
+  "totalCount": 24,
+  "kindergartenCount": 12,
   "reviews": {
     "28a9b124-1204-4b4e-a734-e8bd09ba275b": [
       {
@@ -1090,6 +1090,45 @@
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "codex-manual-sns-wave679"
       }
+    ],
+    "1ecec08d-0e8c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave704-4f34a73b",
+        "kindergartenId": "1ecec08d-0e8c-b044-e053-0a32095ab044",
+        "title": "시흥 진영유치원 수료식 기록",
+        "url": "https://www.instagram.com/reel/DU41sKZE4ju/",
+        "source": "other",
+        "sourceName": "Instagram · 진영유치원",
+        "snippet": "시흥 지역 단서가 있는 진영유치원이 친구들의 수료를 축하하는 수료행사 릴스를 공개했습니다.",
+        "summary": "유아들이 한 학년의 배움을 마치고 성장의 다음 단계로 가는 수료식 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "completion",
+          "ceremony",
+          "siheung"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-4f34a73b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DU41sKZE4ju/",
+          "normalizedUrl": "instagram.com/reel/du41skze4ju",
+          "normalizedText": "진영유치원 시흥 진영 친구들 수료식 수료행사",
+          "htmlSnapshotHash": "sns-wave704-4f34a73b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DU41sKZE4ju/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

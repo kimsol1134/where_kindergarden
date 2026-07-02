@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 130,
+  "totalCount": 131,
   "kindergartenCount": 32,
   "reviews": {
     "1ecec08d-0098-b044-e053-0a32095ab044": [
@@ -2389,6 +2389,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave704-8afa81ca",
+        "kindergartenId": "1ecec08d-04cf-b044-e053-0a32095ab044",
+        "title": "화성 아이들세상유치원 졸업식 기록",
+        "url": "https://www.instagram.com/reel/C3mLeMmvy5r/",
+        "source": "other",
+        "sourceName": "Instagram · 아이들세상유치원",
+        "snippet": "병점 지역 단서가 있는 아이들세상유치원이 유치원 생활을 마무리하는 졸업식 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 유치원 생활을 마치며 새로운 시작을 맞는 졸업식 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "hwaseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave704-8afa81ca",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C3mLeMmvy5r/",
+          "normalizedUrl": "instagram.com/reel/c3mlemmvy5r",
+          "normalizedText": "아이들세상유치원 병점 유치원졸업식 졸업식",
+          "htmlSnapshotHash": "sns-wave704-8afa81ca",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C3mLeMmvy5r/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave704"
       }
     ],
     "1ecec08d-0513-b044-e053-0a32095ab044": [
@@ -5785,5 +5821,6 @@
         "approvedBy": "codex-manual-sns-wave689"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
