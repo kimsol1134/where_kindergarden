@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 358,
+  "totalCount": 359,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -7879,6 +7879,42 @@
           ]
         },
         "evidenceChecksum": "9792fb4a"
+      },
+      {
+        "id": "rev-sns-wave693-6beaa947",
+        "kindergartenId": "1ecec08d-0604-b044-e053-0a32095ab044",
+        "title": "대전 한양유치원 물장구와 워터슬라이드 탐색 기록",
+        "url": "https://www.instagram.com/p/DaRTEqbBmYO/",
+        "source": "other",
+        "sourceName": "Instagram · 한양유치원",
+        "snippet": "대전 한양유치원이 날씨에 맞춰 물장구와 워터슬라이드 탐색을 진행한 공개 게시물입니다.",
+        "summary": "유아들이 물과 친해지는 준비 활동을 통해 여름 물놀이를 단계적으로 경험한 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer",
+          "water-play",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.900Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave693-6beaa947",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaRTEqbBmYO/",
+          "normalizedUrl": "instagram.com/p/darteqbbmyo",
+          "normalizedText": "한양유치원 대전 탄방동 물장구 워터슬라이드 탐색 여름",
+          "htmlSnapshotHash": "sns-wave693-6beaa947",
+          "extractedAt": "2026-07-03T23:59:59.900Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaRTEqbBmYO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.900Z",
+        "approvedBy": "codex-manual-sns-wave693"
       }
     ],
     "1ecec08d-0fb0-b044-e053-0a32095ab044": [
@@ -16611,5 +16647,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 161,
+  "totalCount": 162,
   "kindergartenCount": 46,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -355,6 +355,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "codex-manual-sns-wave679"
+      },
+      {
+        "id": "rev-sns-wave693-d69c1776",
+        "kindergartenId": "7b8827db-706c-4ee2-a327-73af24ca111a",
+        "title": "춘천 후평숲속유치원 워터슬라이드 활동 기록",
+        "url": "https://www.instagram.com/reel/DaPLQWMzSjF/",
+        "source": "other",
+        "sourceName": "Instagram · 후평숲속유치원",
+        "snippet": "후평숲속유치원이 여름날 유치원 공간에서 워터슬라이드와 물놀이 활동을 진행한 공개 릴스입니다.",
+        "summary": "넓은 원내 공간을 활용한 계절 놀이와 여름 신체활동 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer",
+          "water-slide",
+          "chuncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.900Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave693-d69c1776",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaPLQWMzSjF/",
+          "normalizedUrl": "instagram.com/reel/daplqwmzsjf",
+          "normalizedText": "후평숲속유치원 춘천 여름 워터슬라이드 물놀이 원내 공간",
+          "htmlSnapshotHash": "sns-wave693-d69c1776",
+          "extractedAt": "2026-07-03T23:59:59.900Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaPLQWMzSjF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.900Z",
+        "approvedBy": "codex-manual-sns-wave693"
       }
     ],
     "601a8869-27d3-4aa8-82c6-ee95c7f3644b": [
@@ -7316,5 +7352,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:57.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
 }

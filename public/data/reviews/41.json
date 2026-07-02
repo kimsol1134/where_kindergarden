@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1259,
+  "totalCount": 1260,
   "kindergartenCount": 488,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -31425,6 +31425,42 @@
           ]
         },
         "evidenceChecksum": "9768decb"
+      },
+      {
+        "id": "rev-sns-wave693-c881e5a8",
+        "kindergartenId": "1ecec08d-0d01-b044-e053-0a32095ab044",
+        "title": "의정부 코코유치원 여름 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DL68ZFQyHNY/",
+        "source": "other",
+        "sourceName": "Instagram · 코코유치원",
+        "snippet": "코코유치원이 여름철마다 진행하는 물놀이에서 유아들이 시원하게 활동한 공개 릴스입니다.",
+        "summary": "계절 행사로 운영되는 원내 물놀이와 유아들의 여름 활동 분위기를 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer",
+          "water-play",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.900Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave693-c881e5a8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL68ZFQyHNY/",
+          "normalizedUrl": "instagram.com/reel/dl68zfqyhny",
+          "normalizedText": "코코유치원 친구들 여름철 물놀이 유치원 활동",
+          "htmlSnapshotHash": "sns-wave693-c881e5a8",
+          "extractedAt": "2026-07-03T23:59:59.900Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DL68ZFQyHNY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.900Z",
+        "approvedBy": "codex-manual-sns-wave693"
       }
     ],
     "1ecec08c-fd6f-b044-e053-0a32095ab044": [
@@ -50042,5 +50078,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.800Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
 }

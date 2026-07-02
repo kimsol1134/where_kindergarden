@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 516,
+  "totalCount": 517,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -4085,6 +4085,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave693-4c1652fa",
+        "kindergartenId": "1ecec08c-fcf7-b044-e053-0a32095ab044",
+        "title": "대구 자연과학유치원 옥상 워터파크 기록",
+        "url": "https://www.instagram.com/reel/DNknObAz6OY/",
+        "source": "other",
+        "sourceName": "Instagram · 자연과학유치원",
+        "snippet": "자연과학유치원이 옥상 워터파크에서 물놀이와 거품놀이를 함께 진행한 공개 릴스입니다.",
+        "summary": "옥상 공간을 활용해 시원한 물놀이와 감각 놀이를 함께 제공한 유치원 여름 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer",
+          "water-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.900Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave693-4c1652fa",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNknObAz6OY/",
+          "normalizedUrl": "instagram.com/reel/dnknobaz6oy",
+          "normalizedText": "자연과학유치원 옥상 워터파크 물놀이 거품놀이 여름",
+          "htmlSnapshotHash": "sns-wave693-4c1652fa",
+          "extractedAt": "2026-07-03T23:59:59.900Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DNknObAz6OY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.900Z",
+        "approvedBy": "codex-manual-sns-wave693"
       }
     ],
     "1ecec08c-f280-b044-e053-0a32095ab044": [
@@ -22611,5 +22647,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.800Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
 }

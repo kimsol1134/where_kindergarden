@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 37,
+  "version": "2026-07-03",
+  "totalCount": 38,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0887-b044-e053-0a32095ab044": [
@@ -1616,6 +1616,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave693-7c643b6a",
+        "kindergartenId": "1ecec08d-0e58-b044-e053-0a32095ab044",
+        "title": "천안 세실유치원 여름 물놀이 기록",
+        "url": "https://www.instagram.com/reel/C9TenAZBmqg/",
+        "source": "other",
+        "sourceName": "Instagram · 세실유치원",
+        "snippet": "세실유치원이 유아들과 함께 시원한 물놀이를 즐긴 하루를 소개한 공개 릴스입니다.",
+        "summary": "유치원 안에서 친구들과 물놀이를 하며 여름 계절 활동을 경험한 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer",
+          "water-play",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.900Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave693-7c643b6a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C9TenAZBmqg/",
+          "normalizedUrl": "instagram.com/reel/c9tenazbmqg",
+          "normalizedText": "세실유치원 친구들 여름 물놀이 즐거운 하루 신방동",
+          "htmlSnapshotHash": "sns-wave693-7c643b6a",
+          "extractedAt": "2026-07-03T23:59:59.900Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C9TenAZBmqg/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.900Z",
+        "approvedBy": "codex-manual-sns-wave693"
       }
     ],
     "1ecec08c-fd37-b044-e053-0a32095ab044": [
