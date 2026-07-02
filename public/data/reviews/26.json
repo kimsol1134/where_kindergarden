@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 271,
+  "totalCount": 272,
   "kindergartenCount": 85,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -7787,6 +7787,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-873c597a",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "금샘누리유치원 화재대피훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DP5hyYMkqzj/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "검색 결과에서 금샘누리유치원, 공립단설유치원, 부산유치원, 화재대피훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "873c597a",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DP5hyYMkqzj%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 부산 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DP5hyYMkqzj/",
+          "normalizedUrl": "instagram.com/p/dp5hyymkqzj",
+          "normalizedText": "금샘누리유치원 화재대피훈련 instagram post 검색 결과에서 금샘누리유치원 공립단설유치원 부산유치원 화재대피훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "873c597a",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DP5hyYMkqzj%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 부산 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

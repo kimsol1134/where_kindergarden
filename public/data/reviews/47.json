@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 276,
-  "kindergartenCount": 90,
+  "totalCount": 278,
+  "kindergartenCount": 91,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -5322,6 +5322,58 @@
           ]
         },
         "evidenceChecksum": "b9ed93f0"
+      },
+      {
+        "id": "rev-a21eb563",
+        "kindergartenId": "1ecec08c-fba6-b044-e053-0a32095ab044",
+        "title": "창포초등학교병설유치원 화재대피훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXOPvPHj2Ny/",
+        "source": "other",
+        "sourceName": "Instagram · 창포초등학교병설유치원",
+        "snippet": "검색 결과에서 창포초등학교병설유치원, 화재대피훈련, 안전교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a21eb563",
+        "structuredFields": {
+          "kindergartenName": "창포초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 새천년대로1075번길 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXOPvPHj2Ny%22%20%22%EC%B0%BD%ED%8F%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "창포초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 포항 주소권역과 검색 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOPvPHj2Ny/",
+          "normalizedUrl": "instagram.com/reel/dxopvphj2ny",
+          "normalizedText": "창포초등학교병설유치원 화재대피훈련 instagram reel 검색 결과에서 창포초등학교병설유치원 화재대피훈련 안전교육 단서가 확인된다.",
+          "htmlSnapshotHash": "a21eb563",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "창포초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 새천년대로1075번길 32",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXOPvPHj2Ny%22%20%22%EC%B0%BD%ED%8F%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "창포초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 포항 주소권역과 검색 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -12638,6 +12690,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f753-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5a410fff",
+        "kindergartenId": "1ecec08c-f753-b044-e053-0a32095ab044",
+        "title": "포항 오천초등학교병설유치원 소방훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZZbVpDoZL6/",
+        "source": "other",
+        "sourceName": "Instagram · 오천초등학교병설유치원",
+        "snippet": "검색 결과에서 포항, 오천초병설유치원, 소방훈련, 지역 소방서 연계 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a410fff",
+        "structuredFields": {
+          "kindergartenName": "오천초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 남구 정몽주로 572",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZZbVpDoZL6%22%20%22%EC%98%A4%EC%B2%9C%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8F%AC%ED%95%AD%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "오천초등학교병설유치원 동명 후보가 있으나 포항 단서가 로컬 경북 포항시 남구 오천초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZbVpDoZL6/",
+          "normalizedUrl": "instagram.com/reel/dzzbvpdozl6",
+          "normalizedText": "포항 오천초등학교병설유치원 소방훈련 instagram reel 검색 결과에서 포항 오천초병설유치원 소방훈련 지역 소방서 연계 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "5a410fff",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "오천초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 남구 정몽주로 572",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZZbVpDoZL6%22%20%22%EC%98%A4%EC%B2%9C%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8F%AC%ED%95%AD%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "오천초등학교병설유치원 동명 후보가 있으나 포항 단서가 로컬 경북 포항시 남구 오천초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

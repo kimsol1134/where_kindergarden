@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1052,
+  "totalCount": 1054,
   "kindergartenCount": 442,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -27953,6 +27953,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1ee5c1ea",
+        "kindergartenId": "d259f081-0bac-4baf-9a0c-ac707ad62850",
+        "title": "동탄유치원 화재대피훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DIA1zakSURw/",
+        "source": "other",
+        "sourceName": "Instagram · 동탄유치원",
+        "snippet": "검색 결과에서 공립 동탄유치원, 공립단설유치원, 화성동탄유치원, 화재대피훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1ee5c1ea",
+        "structuredFields": {
+          "kindergartenName": "동탄유치원",
+          "kindergartenAddress": "경기도 화성시 동탄기흥로353번길 17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIA1zakSURw%22%20%22%EB%8F%99%ED%83%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동탄유치원은 로컬 원장부 단일 정확 명칭이며 화성동탄 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIA1zakSURw/",
+          "normalizedUrl": "instagram.com/p/dia1zaksurw",
+          "normalizedText": "동탄유치원 화재대피훈련 instagram post 검색 결과에서 공립 동탄유치원 공립단설유치원 화성동탄유치원 화재대피훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "1ee5c1ea",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동탄유치원",
+            "kindergartenAddress": "경기도 화성시 동탄기흥로353번길 17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIA1zakSURw%22%20%22%EB%8F%99%ED%83%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동탄유치원은 로컬 원장부 단일 정확 명칭이며 화성동탄 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-02ee-b044-e053-0a32095ab044": [
@@ -36223,6 +36275,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5fe7c723",
+        "kindergartenId": "daa8fdfd-6b7a-4bd7-885e-914ee07e54e8",
+        "title": "화도은솔유치원 소방 대피 훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DXqzX4AkQvP/",
+        "source": "other",
+        "sourceName": "Instagram · 화도은솔유치원",
+        "snippet": "검색 결과에서 화도은솔유치원, 안전주간, 화재 시 대피 방법, 소방 대피 훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5fe7c723",
+        "structuredFields": {
+          "kindergartenName": "화도은솔유치원",
+          "kindergartenAddress": "경기도 남양주시 경춘보학2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXqzX4AkQvP%22%20%22%ED%99%94%EB%8F%84%EC%9D%80%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%20%EB%8C%80%ED%94%BC%20%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "화도은솔유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXqzX4AkQvP/",
+          "normalizedUrl": "instagram.com/p/dxqzx4akqvp",
+          "normalizedText": "화도은솔유치원 소방 대피 훈련 instagram post 검색 결과에서 화도은솔유치원 안전주간 화재 시 대피 방법 소방 대피 훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "5fe7c723",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "화도은솔유치원",
+            "kindergartenAddress": "경기도 남양주시 경춘보학2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXqzX4AkQvP%22%20%22%ED%99%94%EB%8F%84%EC%9D%80%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%20%EB%8C%80%ED%94%BC%20%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "화도은솔유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

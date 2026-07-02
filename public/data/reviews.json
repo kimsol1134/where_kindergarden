@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 4958,
-  "kindergartenCount": 1630,
+  "totalCount": 4964,
+  "kindergartenCount": 1631,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -32007,6 +32007,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-873c597a",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "금샘누리유치원 화재대피훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DP5hyYMkqzj/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "검색 결과에서 금샘누리유치원, 공립단설유치원, 부산유치원, 화재대피훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "873c597a",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DP5hyYMkqzj%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 부산 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DP5hyYMkqzj/",
+          "normalizedUrl": "instagram.com/p/dp5hyymkqzj",
+          "normalizedText": "금샘누리유치원 화재대피훈련 instagram post 검색 결과에서 금샘누리유치원 공립단설유치원 부산유치원 화재대피훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "873c597a",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DP5hyYMkqzj%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 부산 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -92729,6 +92781,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0cec2378",
+        "kindergartenId": "1ecec08c-f4a1-b044-e053-0a32095ab044",
+        "title": "금비유치원 소방합동 훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DJjB3YnyWAz/",
+        "source": "other",
+        "sourceName": "Instagram · 금비유치원",
+        "snippet": "검색 결과에서 금비유치원, 소방합동 훈련, 대처방법, 소화기 사용방법 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0cec2378",
+        "structuredFields": {
+          "kindergartenName": "금비유치원",
+          "kindergartenAddress": "울산광역시 북구 송내13길 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJjB3YnyWAz%22%20%22%EA%B8%88%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%95%A9%EB%8F%99%20%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금비유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJjB3YnyWAz/",
+          "normalizedUrl": "instagram.com/p/djjb3ynywaz",
+          "normalizedText": "금비유치원 소방합동 훈련 instagram post 검색 결과에서 금비유치원 소방합동 훈련 대처방법 소화기 사용방법 단서가 확인된다.",
+          "htmlSnapshotHash": "0cec2378",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금비유치원",
+            "kindergartenAddress": "울산광역시 북구 송내13길 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJjB3YnyWAz%22%20%22%EA%B8%88%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%95%A9%EB%8F%99%20%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금비유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0212-b044-e053-0a32095ab044": [
@@ -129215,6 +129319,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1ee5c1ea",
+        "kindergartenId": "d259f081-0bac-4baf-9a0c-ac707ad62850",
+        "title": "동탄유치원 화재대피훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DIA1zakSURw/",
+        "source": "other",
+        "sourceName": "Instagram · 동탄유치원",
+        "snippet": "검색 결과에서 공립 동탄유치원, 공립단설유치원, 화성동탄유치원, 화재대피훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1ee5c1ea",
+        "structuredFields": {
+          "kindergartenName": "동탄유치원",
+          "kindergartenAddress": "경기도 화성시 동탄기흥로353번길 17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIA1zakSURw%22%20%22%EB%8F%99%ED%83%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동탄유치원은 로컬 원장부 단일 정확 명칭이며 화성동탄 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIA1zakSURw/",
+          "normalizedUrl": "instagram.com/p/dia1zaksurw",
+          "normalizedText": "동탄유치원 화재대피훈련 instagram post 검색 결과에서 공립 동탄유치원 공립단설유치원 화성동탄유치원 화재대피훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "1ee5c1ea",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동탄유치원",
+            "kindergartenAddress": "경기도 화성시 동탄기흥로353번길 17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIA1zakSURw%22%20%22%EB%8F%99%ED%83%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동탄유치원은 로컬 원장부 단일 정확 명칭이며 화성동탄 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-02ee-b044-e053-0a32095ab044": [
@@ -138676,6 +138832,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5fe7c723",
+        "kindergartenId": "daa8fdfd-6b7a-4bd7-885e-914ee07e54e8",
+        "title": "화도은솔유치원 소방 대피 훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DXqzX4AkQvP/",
+        "source": "other",
+        "sourceName": "Instagram · 화도은솔유치원",
+        "snippet": "검색 결과에서 화도은솔유치원, 안전주간, 화재 시 대피 방법, 소방 대피 훈련 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5fe7c723",
+        "structuredFields": {
+          "kindergartenName": "화도은솔유치원",
+          "kindergartenAddress": "경기도 남양주시 경춘보학2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXqzX4AkQvP%22%20%22%ED%99%94%EB%8F%84%EC%9D%80%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%20%EB%8C%80%ED%94%BC%20%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "화도은솔유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXqzX4AkQvP/",
+          "normalizedUrl": "instagram.com/p/dxqzx4akqvp",
+          "normalizedText": "화도은솔유치원 소방 대피 훈련 instagram post 검색 결과에서 화도은솔유치원 안전주간 화재 시 대피 방법 소방 대피 훈련 단서가 확인된다.",
+          "htmlSnapshotHash": "5fe7c723",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "화도은솔유치원",
+            "kindergartenAddress": "경기도 남양주시 경춘보학2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXqzX4AkQvP%22%20%22%ED%99%94%EB%8F%84%EC%9D%80%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%20%EB%8C%80%ED%94%BC%20%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "화도은솔유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 훈련 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -163964,6 +164172,58 @@
           ]
         },
         "evidenceChecksum": "b9ed93f0"
+      },
+      {
+        "id": "rev-a21eb563",
+        "kindergartenId": "1ecec08c-fba6-b044-e053-0a32095ab044",
+        "title": "창포초등학교병설유치원 화재대피훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXOPvPHj2Ny/",
+        "source": "other",
+        "sourceName": "Instagram · 창포초등학교병설유치원",
+        "snippet": "검색 결과에서 창포초등학교병설유치원, 화재대피훈련, 안전교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a21eb563",
+        "structuredFields": {
+          "kindergartenName": "창포초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 새천년대로1075번길 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXOPvPHj2Ny%22%20%22%EC%B0%BD%ED%8F%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "창포초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 포항 주소권역과 검색 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOPvPHj2Ny/",
+          "normalizedUrl": "instagram.com/reel/dxopvphj2ny",
+          "normalizedText": "창포초등학교병설유치원 화재대피훈련 instagram reel 검색 결과에서 창포초등학교병설유치원 화재대피훈련 안전교육 단서가 확인된다.",
+          "htmlSnapshotHash": "a21eb563",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "창포초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 새천년대로1075번길 32",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXOPvPHj2Ny%22%20%22%EC%B0%BD%ED%8F%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "창포초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 포항 주소권역과 검색 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -212771,6 +213031,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f753-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5a410fff",
+        "kindergartenId": "1ecec08c-f753-b044-e053-0a32095ab044",
+        "title": "포항 오천초등학교병설유치원 소방훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZZbVpDoZL6/",
+        "source": "other",
+        "sourceName": "Instagram · 오천초등학교병설유치원",
+        "snippet": "검색 결과에서 포항, 오천초병설유치원, 소방훈련, 지역 소방서 연계 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a410fff",
+        "structuredFields": {
+          "kindergartenName": "오천초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 남구 정몽주로 572",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZZbVpDoZL6%22%20%22%EC%98%A4%EC%B2%9C%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8F%AC%ED%95%AD%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "오천초등학교병설유치원 동명 후보가 있으나 포항 단서가 로컬 경북 포항시 남구 오천초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZbVpDoZL6/",
+          "normalizedUrl": "instagram.com/reel/dzzbvpdozl6",
+          "normalizedText": "포항 오천초등학교병설유치원 소방훈련 instagram reel 검색 결과에서 포항 오천초병설유치원 소방훈련 지역 소방서 연계 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "5a410fff",
+          "extractedAt": "2026-07-03T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "오천초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 남구 정몽주로 572",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZZbVpDoZL6%22%20%22%EC%98%A4%EC%B2%9C%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8F%AC%ED%95%AD%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "오천초등학교병설유치원 동명 후보가 있으나 포항 단서가 로컬 경북 포항시 남구 오천초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
