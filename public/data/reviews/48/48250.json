@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 26,
-  "kindergartenCount": 15,
+  "totalCount": 27,
+  "kindergartenCount": 16,
   "reviews": {
     "1ecec08d-0ac6-b044-e053-0a32095ab044": [
       {
@@ -1115,6 +1115,46 @@
         "approvedAt": "2026-07-03T22:15:00.000Z",
         "approvedBy": "codex-manual-sns-wave677"
       }
+    ],
+    "1ecec08d-0413-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave716-2100d998",
+        "kindergartenId": "1ecec08d-0413-b044-e053-0a32095ab044",
+        "title": "김해 맘에든유치원 김해한글박물관 방문 기록",
+        "url": "https://www.instagram.com/p/DUKw29eEdXR/",
+        "source": "other",
+        "sourceName": "Instagram · 맘에든유치원",
+        "snippet": "맘에든유치원 친구들이 김해한글박물관을 방문해 한글 전시를 둘러보고 문자 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 한글과 문자 문화를 박물관 전시로 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "field-trip",
+          "hangul",
+          "gimhae"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-2100d998",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUKw29eEdXR/",
+          "normalizedUrl": "instagram.com/p/dukw29eedxr",
+          "normalizedText": "맘에든유치원 김해한글박물관 방문 한글 재미",
+          "htmlSnapshotHash": "sns-wave716-2100d998",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUKw29eEdXR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 14,
-  "kindergartenCount": 6,
+  "totalCount": 16,
+  "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-fbb3-b044-e053-0a32095ab044": [
       {
@@ -311,52 +311,55 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-94300d21",
+        "id": "rev-fbf816e9",
         "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
-        "title": "경북 칠곡 무지개유치원 비누코딩 활동 Instagram",
-        "url": "https://www.instagram.com/reel/DQtErPBDzxp/",
+        "title": "칠곡 석적 무지개유치원 통학버스 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DHNxZTUReGJ/",
         "source": "other",
         "sourceName": "Instagram · 무지개유치원",
-        "snippet": "무지개유치원·석적·경북칠곡 문맥에서 비누코딩 활동이 확인되는 Instagram 릴.",
+        "snippet": "검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "coding-activity",
-          "classroom-activity"
+          "instagram",
+          "safety",
+          "school-bus"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "collectedAt": "2026-07-03T09:10:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "9917dd21",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fbf816e9",
         "structuredFields": {
           "kindergartenName": "무지개유치원",
           "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQtErPBDzxp%22+%22무지개유치원%22+%22석적%22",
+          "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": true,
+          "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQtErPBDzxp/",
-          "normalizedUrl": "www.instagram.com/reel/dqterpbdzxp",
-          "normalizedText": "경북 칠곡 무지개유치원 비누코딩 활동 instagram 무지개유치원·석적·경북칠곡 문맥에서 비누코딩 활동이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "9917dd21",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DHNxZTUReGJ/",
+          "normalizedUrl": "instagram.com/p/dhnxzturegj",
+          "normalizedText": "칠곡 석적 무지개유치원 통학버스 안전교육 instagram post 검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "fbf816e9",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
           "structuredFields": {
             "kindergartenName": "무지개유치원",
             "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQtErPBDzxp%22+%22무지개유치원%22+%22석적%22",
+            "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": true,
+            "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -552,6 +555,58 @@
           ]
         },
         "evidenceChecksum": "148b3e99"
+      },
+      {
+        "id": "rev-ce29bdb9",
+        "kindergartenId": "1ecec08d-0cc9-b044-e053-0a32095ab044",
+        "title": "칠곡 북삼초등학교병설유치원 체육대회 Instagram Post",
+        "url": "https://www.instagram.com/p/DYBorVgkqx0/",
+        "source": "other",
+        "sourceName": "Instagram · 북삼초등학교병설유치원",
+        "snippet": "검색 결과에서 칠곡북삼맘, 북삼병설유치원, 병설유치원 체육대회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-06",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ce29bdb9",
+        "structuredFields": {
+          "kindergartenName": "북삼초등학교병설유치원",
+          "kindergartenAddress": "경상북도 칠곡군 인평중앙로 43",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%B9%A0%EA%B3%A1%EB%B6%81%EC%82%BC%EB%A7%98%22%20%22%EB%B6%81%EC%82%BC%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 칠곡북삼맘 및 북삼병설유치원 단서가 로컬 경북 칠곡군 북삼초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYBorVgkqx0/",
+          "normalizedUrl": "instagram.com/p/dyborvgkqx0",
+          "normalizedText": "칠곡 북삼초등학교병설유치원 체육대회 instagram post 검색 결과에서 칠곡북삼맘 북삼병설유치원 병설유치원 체육대회 단서가 확인된다.",
+          "htmlSnapshotHash": "ce29bdb9",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "북삼초등학교병설유치원",
+            "kindergartenAddress": "경상북도 칠곡군 인평중앙로 43",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%B9%A0%EA%B3%A1%EB%B6%81%EC%82%BC%EB%A7%98%22%20%22%EB%B6%81%EC%82%BC%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 칠곡북삼맘 및 북삼병설유치원 단서가 로컬 경북 칠곡군 북삼초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fc0e-b044-e053-0a32095ab044": [
@@ -699,7 +754,46 @@
         "approvedAt": "2026-07-03T23:59:59.950Z",
         "approvedBy": "codex-manual-sns-wave694"
       }
+    ],
+    "1ecec08d-03ec-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave716-50401c32",
+        "kindergartenId": "1ecec08d-03ec-b044-e053-0a32095ab044",
+        "title": "칠곡 순심유치원 예태미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DYl_WCxu0wC/",
+        "source": "other",
+        "sourceName": "Instagram · 순심유치원",
+        "snippet": "순심유치원이 예태미술관 견학에서 인상주의 화가와 작품을 주제로 감상 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 미술관에서 작가와 작품을 관찰하며 감상 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "field-trip",
+          "art-appreciation",
+          "chilgok"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-50401c32",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYl_WCxu0wC/",
+          "normalizedUrl": "instagram.com/reel/dyl_wcxu0wc",
+          "normalizedText": "순심유치원 예태미술관 인상주의화가들 미술관견학",
+          "htmlSnapshotHash": "sns-wave716-50401c32",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYl_WCxu0wC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

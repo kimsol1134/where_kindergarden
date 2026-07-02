@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 18,
+  "totalCount": 19,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-09aa-b044-e053-0a32095ab044": [
@@ -577,6 +577,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave716-055538c4",
+        "kindergartenId": "1ecec08c-fb78-b044-e053-0a32095ab044",
+        "title": "중랑 동일유치원 국회박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DZZ2bg2JW-2/",
+        "source": "other",
+        "sourceName": "Instagram · 동일유치원",
+        "snippet": "중랑구 동일유치원 빛나는반이 국회박물관을 찾아 선거 프로젝트와 연결된 현장학습을 진행한 릴스입니다.",
+        "summary": "유아들이 국회박물관에서 민주주의와 선거 주제를 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "field-trip",
+          "civic-learning",
+          "jungnang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-055538c4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZ2bg2JW-2/",
+          "normalizedUrl": "instagram.com/reel/dzz2bg2jw-2",
+          "normalizedText": "동일유치원 중랑구 빛나는반 국회박물관 선거 프로젝트",
+          "htmlSnapshotHash": "sns-wave716-055538c4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZZ2bg2JW-2/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08c-ed85-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 55,
+  "totalCount": 56,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-fe8b-b044-e053-0a32095ab044": [
@@ -98,6 +98,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave716-67a81d54",
+        "kindergartenId": "1ecec08c-fe8b-b044-e053-0a32095ab044",
+        "title": "용인 프렌즈유치원 경기도 어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DaCvVCtxCRx/",
+        "source": "other",
+        "sourceName": "Instagram · 프렌즈유치원",
+        "snippet": "프렌즈유치원 5살 친구들이 경기도 어린이박물관에서 다양한 체험을 하며 놀이로 배우는 시간을 보낸 릴스입니다.",
+        "summary": "유아들이 어린이박물관 체험 전시를 통해 탐색과 표현 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "field-trip",
+          "children-museum",
+          "yongin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-67a81d54",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCvVCtxCRx/",
+          "normalizedUrl": "instagram.com/reel/dacvvctxcrx",
+          "normalizedText": "프렌즈유치원 5살 경기도 어린이박물관 특별한 현장 체험",
+          "htmlSnapshotHash": "sns-wave716-67a81d54",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCvVCtxCRx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08d-0b90-b044-e053-0a32095ab044": [
@@ -1977,5 +2014,6 @@
         "approvedBy": "codex-manual-sns-wave689"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

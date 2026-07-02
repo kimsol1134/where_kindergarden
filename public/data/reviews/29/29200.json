@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 65,
+  "totalCount": 66,
   "kindergartenCount": 21,
   "reviews": {
     "58acbeb2-e3ed-40d3-80ec-25ad4ba8dd02": [
@@ -1198,6 +1198,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T03:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave716-8d08d1f0",
+        "kindergartenId": "1ecec08c-fc1e-b044-e053-0a32095ab044",
+        "title": "광주 버클리유치원 어린이 미술관 견학 기록",
+        "url": "https://www.instagram.com/reel/DZ9YujjJVqu/",
+        "source": "other",
+        "sourceName": "Instagram · 버클리유치원",
+        "snippet": "버클리유치원 5세 반 친구들이 어린이 미술관을 찾아 다채로운 색감과 다양한 형태의 작품을 감상한 릴스입니다.",
+        "summary": "유아들이 미술관에서 색과 형태를 관찰하며 예술 감상을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "field-trip",
+          "children-art",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-8d08d1f0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ9YujjJVqu/",
+          "normalizedUrl": "instagram.com/reel/dz9yujjjvqu",
+          "normalizedText": "버클리유치원 5세 어린이 미술관 견학 색감 형태 작품 감상",
+          "htmlSnapshotHash": "sns-wave716-8d08d1f0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ9YujjJVqu/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08c-f553-b044-e053-0a32095ab044": [
@@ -2975,5 +3012,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

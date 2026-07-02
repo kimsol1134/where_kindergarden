@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 74,
+  "totalCount": 75,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -711,6 +711,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      },
+      {
+        "id": "rev-sns-wave716-228ad509",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 국립문자박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DUUxsPak9__/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원이 국립문자박물관 견학을 다녀오며 세계 문자와 전시 공간을 둘러본 릴스입니다.",
+        "summary": "유아들이 문자와 문화 다양성을 박물관 체험으로 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "field-trip",
+          "letters",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-228ad509",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUUxsPak9__/",
+          "normalizedUrl": "instagram.com/reel/duuxspak9__",
+          "normalizedText": "수피아유치원 국립문자박물관 견학 숲유치원 송도",
+          "htmlSnapshotHash": "sns-wave716-228ad509",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUUxsPak9__/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [

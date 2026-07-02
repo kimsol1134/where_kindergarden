@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 114,
-  "kindergartenCount": 24,
+  "totalCount": 115,
+  "kindergartenCount": 25,
   "reviews": {
     "1ecec08d-0def-b044-e053-0a32095ab044": [
       {
@@ -5056,6 +5056,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fe1a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave716-5614d332",
+        "kindergartenId": "1ecec08c-fe1a-b044-e053-0a32095ab044",
+        "title": "대구 고운유치원 대구박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DQq1ulBk9Bh/",
+        "source": "other",
+        "sourceName": "Instagram · 고운유치원",
+        "snippet": "고운유치원 5, 6세 친구들이 대구박물관을 찾아 옛 물건을 관람하고 어린이 박물관 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 박물관 전시와 체험 공간을 통해 역사와 생활문화를 살핀 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "field-trip",
+          "history",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-5614d332",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQq1ulBk9Bh/",
+          "normalizedUrl": "instagram.com/p/dqq1ulbk9bh",
+          "normalizedText": "고운유치원 5 6세 대구박물관 견학 어린이 박물관 활동",
+          "htmlSnapshotHash": "sns-wave716-5614d332",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQq1ulBk9Bh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ]
   },

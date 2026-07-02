@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 89,
+  "totalCount": 90,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-08d5-b044-e053-0a32095ab044": [
@@ -2056,6 +2056,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave716-a3c16667",
+        "kindergartenId": "1ecec08d-0353-b044-e053-0a32095ab044",
+        "title": "포항대학교부속유치원 포항시립미술관 견학 기록",
+        "url": "https://www.instagram.com/p/DL3enAmB-ug/",
+        "source": "other",
+        "sourceName": "Instagram · 포항대학교부속유치원",
+        "snippet": "포항대학교부속유치원 만3세 친구들이 포항시립미술관을 찾아 작품을 보고 놀이 중심 활동과 연결한 게시물입니다.",
+        "summary": "유아들이 미술관 관람을 통해 예술 감상과 표현 경험을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "field-trip",
+          "art-appreciation",
+          "pohang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-a3c16667",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DL3enAmB-ug/",
+          "normalizedUrl": "instagram.com/p/dl3enamb-ug",
+          "normalizedText": "포항대학교부속유치원 만3세 포항시립미술관 견학 놀이중심",
+          "htmlSnapshotHash": "sns-wave716-a3c16667",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DL3enAmB-ug/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08c-f510-b044-e053-0a32095ab044": [

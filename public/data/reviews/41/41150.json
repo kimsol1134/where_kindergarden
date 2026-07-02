@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 91,
-  "kindergartenCount": 23,
+  "totalCount": 94,
+  "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-05af-b044-e053-0a32095ab044": [
       {
@@ -868,6 +868,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave716-0deb491b",
+        "kindergartenId": "1ecec08d-0d8e-b044-e053-0a32095ab044",
+        "title": "의정부 유정유치원 민복진 미술관 견학 기록",
+        "url": "https://www.instagram.com/p/C7Q61TROD_9/",
+        "source": "other",
+        "sourceName": "Instagram · 의정부유정유치원",
+        "snippet": "의정부유정유치원 유아2학년 친구들이 민복진 미술관으로 견학을 다녀와 작품을 함께 감상한 게시물입니다.",
+        "summary": "유아들이 미술관에서 조형 작품을 살피며 감상 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "field-trip",
+          "art-appreciation",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-0deb491b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C7Q61TROD_9/",
+          "normalizedUrl": "instagram.com/p/c7q61trod_9",
+          "normalizedText": "유정유치원 의정부유정유치원 유아2학년 민복진 미술관 미술관견학 작품감상",
+          "htmlSnapshotHash": "sns-wave716-0deb491b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C7Q61TROD_9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "a00b345b-b56f-4af7-b9e7-8e92b4b723bd": [
@@ -3193,6 +3230,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave716-38a52d1f",
+        "kindergartenId": "1ecec08d-06d1-b044-e053-0a32095ab044",
+        "title": "의정부 예린유치원 아프리카예술박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DZ4QwgUEeT-/",
+        "source": "other",
+        "sourceName": "Instagram · 예린유치원",
+        "snippet": "예린유치원 만4세 친구들이 아프리카예술박물관을 둘러보며 다양한 문화와 예술 작품을 감상한 게시물입니다.",
+        "summary": "유아들이 박물관 전시를 통해 세계 문화와 예술 표현을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum",
+          "field-trip",
+          "culture",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave716-38a52d1f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ4QwgUEeT-/",
+          "normalizedUrl": "instagram.com/p/dz4qwgueet-",
+          "normalizedText": "예린유치원 만4세 아프리카예술박물관 문화 예술 작품 감상",
+          "htmlSnapshotHash": "sns-wave716-38a52d1f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ4QwgUEeT-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave716"
       }
     ],
     "1ecec08c-fec9-b044-e053-0a32095ab044": [
@@ -3245,6 +3319,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f603-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3ca6cce9",
+        "kindergartenId": "1ecec08c-f603-b044-e053-0a32095ab044",
+        "title": "의정부초등학교병설유치원 졸업식 포토존 Threads Post",
+        "url": "https://www.threads.com/@monkey__balloonstudio/post/DEuQjZbz_Nw",
+        "source": "other",
+        "sourceName": "Threads · 의정부초등학교병설유치원",
+        "snippet": "검색 결과에서 의정부초병설유치원 졸업, 졸업식 포토존, 병설유치원 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "graduation",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3ca6cce9",
+        "structuredFields": {
+          "kindergartenName": "의정부초등학교병설유치원",
+          "kindergartenAddress": "경기도 의정부시 동일로522번길 30",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DEuQjZbz_Nw%22%20%22%EC%9D%98%EC%A0%95%EB%B6%80%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 의정부초병설유치원 단서가 로컬 경기 의정부시 의정부초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@monkey__balloonstudio/post/DEuQjZbz_Nw",
+          "normalizedUrl": "threads.com/@monkey__balloonstudio/post/deuqjzbz_nw",
+          "normalizedText": "의정부초등학교병설유치원 졸업식 포토존 threads post 검색 결과에서 의정부초병설유치원 졸업 졸업식 포토존 병설유치원 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "3ca6cce9",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "의정부초등학교병설유치원",
+            "kindergartenAddress": "경기도 의정부시 동일로522번길 30",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DEuQjZbz_Nw%22%20%22%EC%9D%98%EC%A0%95%EB%B6%80%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 의정부초병설유치원 단서가 로컬 경기 의정부시 의정부초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
