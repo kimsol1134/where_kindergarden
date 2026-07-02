@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 44,
+  "totalCount": 45,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-ffa1-b044-e053-0a32095ab044": [
@@ -748,6 +748,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave683-c477be68",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 북구 햇빛유치원 원어민 영어 시간 기록",
+        "url": "https://www.instagram.com/p/DIySc8JyE7l/",
+        "source": "other",
+        "sourceName": "Instagram · 부산 북구 햇빛유치원",
+        "snippet": "부산 북구 햇빛유치원이 원어민 선생님과 함께 다양한 단어를 배우는 영어 시간을 소개한 공개 게시물입니다.",
+        "summary": "유아들이 원어민과 함께 영어 단어와 표현을 익히는 특성화 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english-activity",
+          "native-english",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:30.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave683-c477be68",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIySc8JyE7l/",
+          "normalizedUrl": "instagram.com/p/diysc8jye7l",
+          "normalizedText": "부산 북구 햇빛유치원 원어민 영어 시간 단어 활동",
+          "htmlSnapshotHash": "sns-wave683-c477be68",
+          "extractedAt": "2026-07-03T23:59:30.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DIySc8JyE7l/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:30.000Z",
+        "approvedBy": "codex-manual-sns-wave683"
       }
     ],
     "8f3f48a5-f2b6-40f6-be06-b1f8369a1b2c": [

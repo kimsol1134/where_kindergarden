@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 48,
+  "version": "2026-07-03",
+  "totalCount": 50,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0c19-b044-e053-0a32095ab044": [
@@ -365,6 +365,42 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-sns-wave683-e70170be",
+        "kindergartenId": "d4536502-7276-4a01-8002-79d80777bfcc",
+        "title": "롯데캐슬레전드유치원 원어민 영어 수업 기록",
+        "url": "https://www.instagram.com/reel/DWfbkeFE8yK/",
+        "source": "other",
+        "sourceName": "Instagram · 롯데캐슬레전드유치원",
+        "snippet": "롯데캐슬레전드유치원이 아이들이 자연스럽게 듣고 말하고 표현하는 원어민 영어 수업을 소개한 공개 릴스입니다.",
+        "summary": "부산 유치원의 특성화 원어민 영어 수업 장면을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english-activity",
+          "native-english",
+          "special-program"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:30.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave683-e70170be",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWfbkeFE8yK/",
+          "normalizedUrl": "instagram.com/reel/dwfbkefe8yk",
+          "normalizedText": "롯데캐슬레전드유치원 부산 특성화수업 원어민영어 영어 자신감",
+          "htmlSnapshotHash": "sns-wave683-e70170be",
+          "extractedAt": "2026-07-03T23:59:30.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWfbkeFE8yK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:30.000Z",
+        "approvedBy": "codex-manual-sns-wave683"
       }
     ],
     "1fc6dd86-ccc8-d1d2-e053-0a32095ad1d2": [
@@ -1225,6 +1261,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T20:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave683-84b08fbf",
+        "kindergartenId": "53e8d261-a4bc-4ed3-a025-57d515cb03e1",
+        "title": "새부산유치원 원어민 영어 놀이시간 기록",
+        "url": "https://www.instagram.com/reel/DPQ0ZXHk4CJ/",
+        "source": "other",
+        "sourceName": "Instagram · 새부산유치원",
+        "snippet": "새부산유치원이 원어민 선생님과 영어로 대화하고 놀이하며 자연스럽게 배우는 영어 시간을 소개한 공개 릴스입니다.",
+        "summary": "원어민과의 대화와 놀이 중심 영어 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english-play",
+          "native-english",
+          "conversation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:30.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave683-84b08fbf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPQ0ZXHk4CJ/",
+          "normalizedUrl": "instagram.com/reel/dpq0zxhk4cj",
+          "normalizedText": "새부산유치원 원어민 선생님 영어 대화 놀이 영어시간",
+          "htmlSnapshotHash": "sns-wave683-84b08fbf",
+          "extractedAt": "2026-07-03T23:59:30.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPQ0ZXHk4CJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:30.000Z",
+        "approvedBy": "codex-manual-sns-wave683"
       }
     ],
     "1ecec08d-0fae-b044-e053-0a32095ab044": [
@@ -2362,6 +2434,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

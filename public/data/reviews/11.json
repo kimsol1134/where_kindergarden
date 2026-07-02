@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 670,
+  "totalCount": 672,
   "kindergartenCount": 245,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1318,6 +1318,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "codex-manual-sns-wave672"
+      },
+      {
+        "id": "rev-sns-wave683-fa42ffda",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "우촌유치원 원어민 영어 수업 기록",
+        "url": "https://www.instagram.com/reel/DZ_SIrGyXDC/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 원어민과 한국인 교사가 함께하는 영어 수업을 소개한 공개 릴스입니다.",
+        "summary": "만 3세반의 원어민 영어 수업 분위기와 유아 영어 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english-activity",
+          "native-english",
+          "class-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:30.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave683-fa42ffda",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ_SIrGyXDC/",
+          "normalizedUrl": "instagram.com/reel/dz_sirgyxdc",
+          "normalizedText": "우촌유치원 원어민 한국인 영어수업 유아영어 원어민수업",
+          "htmlSnapshotHash": "sns-wave683-fa42ffda",
+          "extractedAt": "2026-07-03T23:59:30.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ_SIrGyXDC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:30.000Z",
+        "approvedBy": "codex-manual-sns-wave683"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -11359,6 +11395,42 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave683-3ae002da",
+        "kindergartenId": "1ecec08d-0428-b044-e053-0a32095ab044",
+        "title": "서울성북초등학교병설유치원 원어민 영어 놀이 기록",
+        "url": "https://www.instagram.com/p/DDG6QHextEj/",
+        "source": "other",
+        "sourceName": "Instagram · 서울성북초등학교병설유치원",
+        "snippet": "서울성북초등학교병설유치원이 원어민 선생님과 함께 영어로 놀이하는 다문화교육 활동을 소개한 공개 게시물입니다.",
+        "summary": "원어민 영어 놀이를 통해 가족 표현 등을 배우는 병설유치원 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english-play",
+          "native-english",
+          "multicultural-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:30.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave683-3ae002da",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDG6QHextEj/",
+          "normalizedUrl": "instagram.com/p/ddg6qhextej",
+          "normalizedText": "서울성북초등학교병설유치원 다문화교육 원어민 영어 놀이 가족 표현",
+          "htmlSnapshotHash": "sns-wave683-3ae002da",
+          "extractedAt": "2026-07-03T23:59:30.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DDG6QHextEj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:30.000Z",
+        "approvedBy": "codex-manual-sns-wave683"
       }
     ],
     "1ecec08d-084d-b044-e053-0a32095ab044": [
@@ -25195,5 +25267,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:30.000Z"
 }
