@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 691,
+  "totalCount": 693,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1149,6 +1149,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave726-8f625ea9",
+        "kindergartenId": "1ecec08d-0269-b044-e053-0a32095ab044",
+        "title": "성북 반디유치원 천문 우주과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DTR8fm3EZKt/",
+        "source": "other",
+        "sourceName": "Instagram · 반디유치원",
+        "snippet": "반디유치원 6살 친구들이 천문과 우주과학관 견학을 다녀온 게시물입니다.",
+        "summary": "유아들이 우주와 천문 주제 전시를 통해 세계와 우주에 대한 호기심을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "astronomy",
+          "space-science",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-8f625ea9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTR8fm3EZKt/",
+          "normalizedUrl": "instagram.com/p/dtr8fm3ezkt",
+          "normalizedText": "성북 반디유치원 천문 우주과학관 견학 세계여러나라 우주",
+          "htmlSnapshotHash": "sns-wave726-8f625ea9",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DTR8fm3EZKt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-062f-b044-e053-0a32095ab044": [
@@ -5216,6 +5254,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave726-5550074d",
+        "kindergartenId": "1ecec08c-f3eb-b044-e053-0a32095ab044",
+        "title": "사당동 동그라미유치원 과천과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DXvkov-kqgF/",
+        "source": "other",
+        "sourceName": "Instagram · 동그라미유치원",
+        "snippet": "동그라미유치원 유치반 친구들이 과천과학관에서 과학 전시를 탐험한 게시물입니다.",
+        "summary": "유아들이 국립과천과학관에서 다양한 전시를 관찰하며 과학 탐구 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "science-exploration",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-5550074d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXvkov-kqgF/",
+          "normalizedUrl": "instagram.com/p/dxvkov-kqgf",
+          "normalizedText": "사당동 동그라미유치원 과천과학관 견학 과학 탐험",
+          "htmlSnapshotHash": "sns-wave726-5550074d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXvkov-kqgF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-031c-b044-e053-0a32095ab044": [

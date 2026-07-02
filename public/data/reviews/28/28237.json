@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 56,
-  "kindergartenCount": 20,
+  "totalCount": 57,
+  "kindergartenCount": 21,
   "reviews": {
     "1ecec08d-0579-b044-e053-0a32095ab044": [
       {
@@ -2013,6 +2013,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      }
+    ],
+    "1ecec08d-0e43-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave726-4606277e",
+        "kindergartenId": "1ecec08d-0e43-b044-e053-0a32095ab044",
+        "title": "인천 햇살유치원 인천어린이과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
+        "source": "other",
+        "sourceName": "Instagram · 햇살유치원",
+        "snippet": "인천 햇살유치원 친구들이 인천어린이과학관에서 과학 전시를 체험한 릴스입니다.",
+        "summary": "유아들이 어린이과학관에서 생활 속 과학 원리를 직접 보고 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "children-science",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-4606277e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
+          "normalizedUrl": "instagram.com/reel/darciugtv0y",
+          "normalizedText": "인천 햇살유치원 인천어린이과학관 견학 과학체험",
+          "htmlSnapshotHash": "sns-wave726-4606277e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ]
   },

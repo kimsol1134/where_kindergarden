@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 116,
+  "totalCount": 117,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0def-b044-e053-0a32095ab044": [
@@ -4735,6 +4735,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave726-447510c3",
+        "kindergartenId": "1ecec08d-09b1-b044-e053-0a32095ab044",
+        "title": "대구 비안네유치원 기상과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/C2Mqzo9PVW8/",
+        "source": "other",
+        "sourceName": "Instagram · 비안네유치원",
+        "snippet": "대구 비안네유치원 친구들이 기상과학관에서 날씨를 보고 느끼며 체험한 릴스입니다.",
+        "summary": "유아들이 기상과학관에서 날씨와 기상 변화를 놀이처럼 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "science-museum",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-447510c3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C2Mqzo9PVW8/",
+          "normalizedUrl": "instagram.com/reel/c2mqzo9pvw8",
+          "normalizedText": "대구 수성구 비안네유치원 기상과학관 날씨 체험",
+          "htmlSnapshotHash": "sns-wave726-447510c3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C2Mqzo9PVW8/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-0750-b044-e053-0a32095ab044": [

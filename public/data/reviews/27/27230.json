@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 83,
+  "totalCount": 84,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
@@ -1121,6 +1121,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      },
+      {
+        "id": "rev-sns-wave726-e1fed845",
+        "kindergartenId": "1ecec08c-fd03-b044-e053-0a32095ab044",
+        "title": "대구 옥스포드유치원 국립대구기상과학관 체험 기록",
+        "url": "https://www.instagram.com/reel/DPGE1jzkRj7/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스포드유치원",
+        "snippet": "옥스포드유치원 친구들이 국립대구기상과학관에서 구름, 비, 바람의 원리를 배운 릴스입니다.",
+        "summary": "유아들이 기상과학관에서 날씨 원리를 체험하고 기상 주제 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "science-museum",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-e1fed845",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPGE1jzkRj7/",
+          "normalizedUrl": "instagram.com/reel/dpge1jzkrj7",
+          "normalizedText": "대구 옥스포드유치원 국립대구기상과학관 구름 비 바람 원리",
+          "htmlSnapshotHash": "sns-wave726-e1fed845",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPGE1jzkRj7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-012e-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 148,
+  "totalCount": 149,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -3325,6 +3325,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      },
+      {
+        "id": "rev-sns-wave726-d096053c",
+        "kindergartenId": "1ecec08d-0919-b044-e053-0a32095ab044",
+        "title": "대구 사랑마을유치원 기상과학관 체험 기록",
+        "url": "https://www.instagram.com/p/C_zyGTlykBk/",
+        "source": "other",
+        "sourceName": "Instagram · 사랑마을유치원",
+        "snippet": "달서구 사랑마을유치원 친구들이 기상과학관에서 날씨와 기상 주제를 체험한 게시물입니다.",
+        "summary": "유아들이 기상과학관에서 날씨 변화와 기상 현상을 체험 중심으로 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "science-museum",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-d096053c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C_zyGTlykBk/",
+          "normalizedUrl": "instagram.com/p/c_zygtlykbk",
+          "normalizedText": "대구 달서구 사랑마을유치원 기상과학관 날씨 기상 체험",
+          "htmlSnapshotHash": "sns-wave726-d096053c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C_zyGTlykBk/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-0810-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 34,
+  "totalCount": 35,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0dd0-b044-e053-0a32095ab044": [
@@ -111,6 +111,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave725"
+      },
+      {
+        "id": "rev-sns-wave726-6d821276",
+        "kindergartenId": "1ecec08d-0dd0-b044-e053-0a32095ab044",
+        "title": "부산 동래유치원 국립부산과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DZ3hgShvRmZ/",
+        "source": "other",
+        "sourceName": "Instagram · 동래유치원",
+        "snippet": "동래유치원 친구들이 국립부산과학관에서 과학 원리를 살펴본 현장체험학습 게시물입니다.",
+        "summary": "유아들이 국립부산과학관 전시를 통해 과학 원리를 놀이와 관찰로 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "science-principles",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-6d821276",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ3hgShvRmZ/",
+          "normalizedUrl": "instagram.com/p/dz3hgshvrmz",
+          "normalizedText": "동래유치원 국립부산과학관 과학원리 현장체험학습 놀이교육",
+          "htmlSnapshotHash": "sns-wave726-6d821276",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ3hgShvRmZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08c-f39f-b044-e053-0a32095ab044": [

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 13,
-  "kindergartenCount": 4,
+  "totalCount": 14,
+  "kindergartenCount": 5,
   "reviews": {
     "1ecec08c-edd6-b044-e053-0a32095ab044": [
       {
@@ -588,6 +588,47 @@
         "approvedAt": "2026-07-02T19:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-ee74-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave726-818fdf91",
+        "kindergartenId": "1ecec08c-ee74-b044-e053-0a32095ab044",
+        "title": "충주 동심예능유치원 충주기상과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DSZcUnkCcgb/",
+        "source": "other",
+        "sourceName": "Instagram · 동심예능유치원",
+        "snippet": "동심예능유치원 친구들이 충주기상과학관에서 다양한 기상 현상을 체험한 릴스입니다.",
+        "summary": "유아들이 기상 현상과 날씨 변화를 직접 보고 느끼며 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "weather-science",
+          "science-museum",
+          "field-trip",
+          "chungju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-818fdf91",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSZcUnkCcgb/",
+          "normalizedUrl": "instagram.com/reel/dszcunkccgb",
+          "normalizedText": "충주 동심예능유치원 충주기상과학관 기상현상 체험",
+          "htmlSnapshotHash": "sns-wave726-818fdf91",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSZcUnkCcgb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

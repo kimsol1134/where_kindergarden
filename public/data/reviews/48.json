@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 286,
-  "kindergartenCount": 103,
+  "totalCount": 287,
+  "kindergartenCount": 104,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -13363,6 +13363,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave725"
+      }
+    ],
+    "1ecec08c-fd72-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave726-6149cd55",
+        "kindergartenId": "1ecec08c-fd72-b044-e053-0a32095ab044",
+        "title": "김해 숲속해바라기유치원 창원과학체험관 견학 기록",
+        "url": "https://www.instagram.com/p/DT32XIgEnGn/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속해바라기유치원",
+        "snippet": "숲속해바라기유치원 6살 친구들이 창원과학체험관에서 다양한 과학 활동을 체험한 게시물입니다.",
+        "summary": "유아들이 창원과학체험관에서 여러 과학 활동을 직접 경험하며 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-experience-center",
+          "science-activity",
+          "field-trip",
+          "gimhae"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-6149cd55",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DT32XIgEnGn/",
+          "normalizedUrl": "instagram.com/p/dt32xigengn",
+          "normalizedText": "김해 숲속해바라기유치원 창원과학체험관 과학 활동 체험",
+          "htmlSnapshotHash": "sns-wave726-6149cd55",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DT32XIgEnGn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ]
   }

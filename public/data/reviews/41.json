@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1310,
+  "totalCount": 1311,
   "kindergartenCount": 495,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -29409,6 +29409,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave704"
+      },
+      {
+        "id": "rev-sns-wave726-d685c6e3",
+        "kindergartenId": "1ecec08d-04cf-b044-e053-0a32095ab044",
+        "title": "병점 아이들세상유치원 국립과천과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DZzR02VlICj/",
+        "source": "other",
+        "sourceName": "Instagram · 아이들세상유치원",
+        "snippet": "병점 아이들세상유치원 소망반 친구들이 국립과천과학관에서 과학 탐험을 진행한 게시물입니다.",
+        "summary": "유아들이 국립과천과학관 전시를 둘러보며 과학 체험과 탐구 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-museum",
+          "science-exploration",
+          "field-trip",
+          "hwaseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave726-d685c6e3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZzR02VlICj/",
+          "normalizedUrl": "instagram.com/p/dzzr02vlicj",
+          "normalizedText": "병점 아이들세상유치원 국립과천과학관 소망반 과학 탐험",
+          "htmlSnapshotHash": "sns-wave726-d685c6e3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZzR02VlICj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-0513-b044-e053-0a32095ab044": [
