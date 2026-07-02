@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 46,
+  "version": "2026-07-03",
+  "totalCount": 48,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-03c0-b044-e053-0a32095ab044": [
@@ -440,6 +440,94 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ae85a596",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산새싹유치원 우리 동네 시장 체험 Threads Post",
+        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+        "source": "other",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "검색 결과에서 군산새싹유치원, 우리 동네 시장 체험, 역전시장 방문 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ae85a596",
+        "structuredFields": {
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+          "normalizedUrl": "threads.com/@saessak_kindergarten_kunsan/post/dz1zdy_d1lz",
+          "normalizedText": "군산새싹유치원 우리 동네 시장 체험 threads post 검색 결과에서 군산새싹유치원 우리 동네 시장 체험 역전시장 방문 단서가 확인된다.",
+          "htmlSnapshotHash": "ae85a596",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave680-f2187f67",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산 새싹유치원 물총놀이 소방관 활동 기록",
+        "url": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+        "source": "other",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "군산 새싹유치원이 물총으로 불을 꺼보는 역할놀이와 나무에 물 주기 활동을 진행한 공개 Threads 게시물입니다.",
+        "summary": "물총놀이를 통해 소방관 역할과 물을 활용한 바깥놀이를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "water-play",
+          "role-play",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:30:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave680-f2187f67",
+        "evidence": {
+          "canonicalUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+          "normalizedUrl": "threads.net/%40saessak_kindergarten_kunsan/post/dcjkoxqtzd3",
+          "normalizedText": "군산새싹유치원 물총놀이 소방관 역할 나무에 물 주기",
+          "htmlSnapshotHash": "sns-wave680-f2187f67",
+          "extractedAt": "2026-07-03T23:30:00.000Z",
+          "sourcePageUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:30:00.000Z",
+        "approvedBy": "codex-manual-sns-wave680"
       }
     ],
     "1ecec08c-f1e9-b044-e053-0a32095ab044": [
@@ -1907,6 +1995,5 @@
         "evidenceChecksum": "8ffb05af"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:46:37.503Z"
+  }
 }

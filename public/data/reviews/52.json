@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 185,
-  "kindergartenCount": 58,
+  "totalCount": 187,
+  "kindergartenCount": 59,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
       {
@@ -2685,6 +2685,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave680-f2187f67",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산 새싹유치원 물총놀이 소방관 활동 기록",
+        "url": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+        "source": "other",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "군산 새싹유치원이 물총으로 불을 꺼보는 역할놀이와 나무에 물 주기 활동을 진행한 공개 Threads 게시물입니다.",
+        "summary": "물총놀이를 통해 소방관 역할과 물을 활용한 바깥놀이를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "water-play",
+          "role-play",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:30:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave680-f2187f67",
+        "evidence": {
+          "canonicalUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+          "normalizedUrl": "threads.net/%40saessak_kindergarten_kunsan/post/dcjkoxqtzd3",
+          "normalizedText": "군산새싹유치원 물총놀이 소방관 역할 나무에 물 주기",
+          "htmlSnapshotHash": "sns-wave680-f2187f67",
+          "extractedAt": "2026-07-03T23:30:00.000Z",
+          "sourcePageUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:30:00.000Z",
+        "approvedBy": "codex-manual-sns-wave680"
       }
     ],
     "1ecec08c-f1e9-b044-e053-0a32095ab044": [
@@ -8194,7 +8230,45 @@
         "approvedAt": "2026-07-02T23:59:53.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0b68-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave680-f87a3afd",
+        "kindergartenId": "1ecec08d-0b68-b044-e053-0a32095ab044",
+        "title": "우석대학교부설유치원 여름 물놀이 기록",
+        "url": "https://www.instagram.com/p/DN4ZLTMEi6R/",
+        "source": "other",
+        "sourceName": "Instagram · 우석대학교부설유치원",
+        "snippet": "우석대학교부설유치원이 여름 물놀이 활동을 진행한 공개 게시물입니다.",
+        "summary": "유치원에서 진행한 여름 물놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer",
+          "campus-kindergarten"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:30:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave680-f87a3afd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DN4ZLTMEi6R/",
+          "normalizedUrl": "instagram.com/p/dn4zltmei6r",
+          "normalizedText": "우석대학교부설유치원 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave680-f87a3afd",
+          "extractedAt": "2026-07-03T23:30:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DN4ZLTMEi6R/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:30:00.000Z",
+        "approvedBy": "codex-manual-sns-wave680"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:30:00.000Z"
 }
