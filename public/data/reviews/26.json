@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 291,
-  "kindergartenCount": 86,
+  "totalCount": 323,
+  "kindergartenCount": 92,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -1222,6 +1222,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bb76ce3a",
+        "kindergartenId": "1ecec08c-f5ed-b044-e053-0a32095ab044",
+        "kindergartenName": "더푸른유치원",
+        "title": "부산 더푸른유치원 해운대어린이치과 구강검진 Instagram Post",
+        "url": "https://www.instagram.com/p/C9Tj5g-hrCr/",
+        "source": "other",
+        "sourceName": "Instagram · 해운대어린이치과",
+        "snippet": "해운대어린이치과 계정 게시물 검색 결과에서 더푸른유치원 6세 친구들이 구강검진과 치과 견학을 한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bb76ce3a",
+        "structuredFields": {
+          "kindergartenName": "더푸른유치원",
+          "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9Tj5g-hrCr%22%20%22%EB%8D%94%20%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%B9%98%EA%B3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "더푸른유치원은 로컬 원장부에서 단일 명칭이며 해운대 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C9Tj5g-hrCr/",
+          "normalizedUrl": "www.instagram.com/p/c9tj5g-hrcr",
+          "normalizedText": "부산 더푸른유치원 해운대어린이치과 구강검진 instagram post 해운대어린이치과 계정 게시물 검색 결과에서 더푸른유치원 6세 친구들이 구강검진과 치과 견학을 한 단서가 확인된다.",
+          "htmlSnapshotHash": "bb76ce3a",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "더푸른유치원",
+            "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9Tj5g-hrCr%22%20%22%EB%8D%94%20%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%B9%98%EA%B3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "더푸른유치원은 로컬 원장부에서 단일 명칭이며 해운대 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -2917,6 +2970,57 @@
           ]
         },
         "evidenceChecksum": "369590de"
+      },
+      {
+        "id": "rev-59893fe3",
+        "kindergartenId": "53e8d261-a4bc-4ed3-a025-57d515cb03e1",
+        "title": "부산 새부산유치원 산타행사 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DD9YheGTlK0/",
+        "source": "other",
+        "sourceName": "Instagram · 새부산유치원",
+        "snippet": "새부산유치원 계정에서 산타할아버지가 찾아온 산타행사와 크리스마스축제 문맥, 대연동·남구유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "christmas"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8230436b",
+        "structuredFields": {
+          "kindergartenName": "새부산유치원",
+          "kindergartenAddress": "부산광역시 남구 황령대로319번나길 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DD9YheGTlK0%22+%22%EC%83%88%EB%B6%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새부산유치원은 로컬 원장부 단일 매칭이며 대연동·남구 단서가 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DD9YheGTlK0/",
+          "normalizedUrl": "www.instagram.com/reel/dd9yhegtlk0",
+          "normalizedText": "부산 새부산유치원 산타행사 instagram reel 새부산유치원 계정에서 산타할아버지가 찾아온 산타행사와 크리스마스축제 문맥, 대연동·남구유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "8230436b",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새부산유치원",
+            "kindergartenAddress": "부산광역시 남구 황령대로319번나길 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DD9YheGTlK0%22+%22%EC%83%88%EB%B6%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새부산유치원은 로컬 원장부 단일 매칭이며 대연동·남구 단서가 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0959-b044-e053-0a32095ab044": [
@@ -3990,6 +4094,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b5c7827c",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "kindergartenName": "햇빛유치원",
+        "title": "부산 화명동 햇빛유치원 구포도서관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJ_plTCy28F/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "햇빛유치원 계정 게시물 검색 결과에서 화명동 유치원 친구들이 구포도서관에 견학을 다녀온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b5c7827c",
+        "structuredFields": {
+          "kindergartenName": "햇빛유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로 117",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJ_plTCy28F%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%EA%B5%AC%ED%8F%AC%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "화명동 단서로 로컬 부산 북구 햇빛유치원과 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJ_plTCy28F/",
+          "normalizedUrl": "www.instagram.com/reel/dj_pltcy28f",
+          "normalizedText": "부산 화명동 햇빛유치원 구포도서관 견학 instagram reel 햇빛유치원 계정 게시물 검색 결과에서 화명동 유치원 친구들이 구포도서관에 견학을 다녀온 단서가 확인된다.",
+          "htmlSnapshotHash": "b5c7827c",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "햇빛유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로 117",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJ_plTCy28F%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%EA%B5%AC%ED%8F%AC%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "화명동 단서로 로컬 부산 북구 햇빛유치원과 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -5760,6 +5917,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2d9d7303",
+        "kindergartenId": "1ecec08d-0fae-b044-e053-0a32095ab044",
+        "title": "부산 남구 솔유치원 봄 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DE1FwqjPZAw/",
+        "source": "other",
+        "sourceName": "Instagram · 솔유치원",
+        "snippet": "솔유치원 계정에서 봄 숲놀이와 생태놀이, 자연놀이 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T08:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4ed683dc",
+        "structuredFields": {
+          "kindergartenName": "솔유치원",
+          "kindergartenAddress": "부산광역시 남구 용호로231번길 128",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DE1FwqjPZAw%22+%22%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정확한 기관명 솔유치원은 로컬 원장부에서 1건이며, 같은 계정의 부산 남구 솔유치원 후보와 묶어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DE1FwqjPZAw/",
+          "normalizedUrl": "www.instagram.com/p/de1fwqjpzaw",
+          "normalizedText": "부산 남구 솔유치원 봄 생태놀이 instagram post 솔유치원 계정에서 봄 숲놀이와 생태놀이, 자연놀이 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "4ed683dc",
+          "extractedAt": "2026-07-02T08:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "솔유치원",
+            "kindergartenAddress": "부산광역시 남구 용호로231번길 128",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DE1FwqjPZAw%22+%22%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정확한 기관명 솔유치원은 로컬 원장부에서 1건이며, 같은 계정의 부산 남구 솔유치원 후보와 묶어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T08:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0ec7-b044-e053-0a32095ab044": [
@@ -6133,6 +6341,59 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.993Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d8d64614",
+        "kindergartenId": "1ecec08d-0ec7-b044-e053-0a32095ab044",
+        "kindergartenName": "부산대연유치원",
+        "title": "부산대연유치원 성소치과 견학 프로그램 Instagram Post",
+        "url": "https://www.instagram.com/p/DLWHfj5ylM-/",
+        "source": "other",
+        "sourceName": "Instagram · 성소치과",
+        "snippet": "성소치과 계정 게시물 검색 결과에서 대연유치원 친구들이 치과 견학 프로그램에 참여한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d8d64614",
+        "structuredFields": {
+          "kindergartenName": "부산대연유치원",
+          "kindergartenAddress": "부산광역시 남구 진남로165번길 4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLWHfj5ylM-%22%20%22%EB%8C%80%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%84%B1%EC%86%8C%EC%B9%98%EA%B3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "부산 남구 성소치과와 대연동 단서로 로컬 부산대연유치원을 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLWHfj5ylM-/",
+          "normalizedUrl": "www.instagram.com/p/dlwhfj5ylm-",
+          "normalizedText": "부산대연유치원 성소치과 견학 프로그램 instagram post 성소치과 계정 게시물 검색 결과에서 대연유치원 친구들이 치과 견학 프로그램에 참여한 단서가 확인된다.",
+          "htmlSnapshotHash": "d8d64614",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "부산대연유치원",
+            "kindergartenAddress": "부산광역시 남구 진남로165번길 4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLWHfj5ylM-%22%20%22%EB%8C%80%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%84%B1%EC%86%8C%EC%B9%98%EA%B3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "부산 남구 성소치과와 대연동 단서로 로컬 부산대연유치원을 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0256-b044-e053-0a32095ab044": [
@@ -6236,6 +6497,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a62244e6",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 구포 어린이 교통공원 현장체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DC3Q8AaSa5D/",
+        "source": "other",
+        "sourceName": "Instagram · 공립단설 남명유치원",
+        "snippet": "공립단설 남명유치원 계정에서 만3세 가람·가온반의 구포 어린이 교통공원 현장체험학습 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f91bbe7e",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DC3Q8AaSa5D%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%ED%8F%AC%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원 단일 매칭이며 구포 어린이 교통공원 현장체험 문맥이 부산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DC3Q8AaSa5D/",
+          "normalizedUrl": "www.instagram.com/p/dc3q8aasa5d",
+          "normalizedText": "부산 남명유치원 구포 어린이 교통공원 현장체험 instagram post 공립단설 남명유치원 계정에서 만3세 가람·가온반의 구포 어린이 교통공원 현장체험학습 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "f91bbe7e",
+          "extractedAt": "2026-07-02T12:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DC3Q8AaSa5D%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%ED%8F%AC%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원 단일 매칭이며 구포 어린이 교통공원 현장체험 문맥이 부산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -7506,6 +7818,161 @@
           ]
         },
         "evidenceChecksum": "ac25a289"
+      },
+      {
+        "id": "rev-e5a5a85b",
+        "kindergartenId": "1ecec08d-08ce-b044-e053-0a32095ab044",
+        "title": "부산 수안유치원 김장 담그기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DDXOUcfyFUT/",
+        "source": "other",
+        "sourceName": "Instagram · 수안유치원",
+        "snippet": "부산 동래구 수안유치원에서 김장 담그기 체험이 이루어진 문맥과 기관 주소 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7b9cfaf4",
+        "structuredFields": {
+          "kindergartenName": "수안유치원",
+          "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDXOUcfyFUT%22+%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22+%22%EA%B9%80%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDXOUcfyFUT/",
+          "normalizedUrl": "www.instagram.com/reel/ddxoucfyfut",
+          "normalizedText": "부산 수안유치원 김장 담그기 instagram reel 부산 동래구 수안유치원에서 김장 담그기 체험이 이루어진 문맥과 기관 주소 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "7b9cfaf4",
+          "extractedAt": "2026-07-02T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수안유치원",
+            "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDXOUcfyFUT%22+%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22+%22%EA%B9%80%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7e897bc7",
+        "kindergartenId": "1ecec08d-08ce-b044-e053-0a32095ab044",
+        "kindergartenName": "수안유치원",
+        "title": "부산 동래구 수안유치원 환경지킴이 플로깅 Instagram Post",
+        "url": "https://www.instagram.com/p/CyxB-tmPsSV/",
+        "source": "other",
+        "sourceName": "Instagram · 수안유치원",
+        "snippet": "수안유치원 계정 게시물 검색 결과에서 환경지킴이, 플로깅, 유치원 주변 환경과 지구를 지키는 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "environment-education",
+          "plogging"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7e897bc7",
+        "structuredFields": {
+          "kindergartenName": "수안유치원",
+          "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyxB-tmPsSV%22%20%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%94%8C%EB%A1%9C%EA%B9%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "수안유치원 계정명과 로컬 부산 동래구 수안유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyxB-tmPsSV/",
+          "normalizedUrl": "www.instagram.com/p/cyxb-tmpssv",
+          "normalizedText": "부산 동래구 수안유치원 환경지킴이 플로깅 instagram post 수안유치원 계정 게시물 검색 결과에서 환경지킴이, 플로깅, 유치원 주변 환경과 지구를 지키는 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "7e897bc7",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "수안유치원",
+            "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyxB-tmPsSV%22%20%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%94%8C%EB%A1%9C%EA%B9%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "수안유치원 계정명과 로컬 부산 동래구 수안유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e3b88ce5",
+        "kindergartenId": "1ecec08d-08ce-b044-e053-0a32095ab044",
+        "kindergartenName": "수안유치원",
+        "title": "부산 수안유치원 부산119안전체험관 교통안전 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DDrhmBApX7L/",
+        "source": "other",
+        "sourceName": "Instagram · 수안유치원",
+        "snippet": "수안유치원 계정 게시물 검색 결과에서 부산 119안전체험관 현장체험학습, 교통안전과 재난안전 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-center"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e3b88ce5",
+        "structuredFields": {
+          "kindergartenName": "수안유치원",
+          "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDrhmBApX7L%22%20%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22119%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "수안유치원은 로컬 원장부에서 단일 명칭이며 부산 119안전체험관 단서와 부산 동래구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDrhmBApX7L/",
+          "normalizedUrl": "www.instagram.com/p/ddrhmbapx7l",
+          "normalizedText": "부산 수안유치원 부산119안전체험관 교통안전 체험 instagram post 수안유치원 계정 게시물 검색 결과에서 부산 119안전체험관 현장체험학습, 교통안전과 재난안전 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "e3b88ce5",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "수안유치원",
+            "kindergartenAddress": "부산광역시 동래구 충렬대로237번길 57",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDrhmBApX7L%22%20%22%EC%88%98%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22119%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "수안유치원은 로컬 원장부에서 단일 명칭이며 부산 119안전체험관 단서와 부산 동래구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-04a2-b044-e053-0a32095ab044": [
@@ -7891,6 +8358,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e9568734",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 딸기체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DX9DfdUkr5d/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "금샘누리유치원 계정에서 딸기농장에 딸기를 수확하러 다녀온 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1545f24b",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX9DfdUkr5d%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부에서 유일한 이름이고 부산 금정구 계정 단서가 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX9DfdUkr5d/",
+          "normalizedUrl": "www.instagram.com/p/dx9dfdukr5d",
+          "normalizedText": "부산 금샘누리유치원 딸기체험 instagram post 금샘누리유치원 계정에서 딸기농장에 딸기를 수확하러 다녀온 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "1545f24b",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX9DfdUkr5d%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부에서 유일한 이름이고 부산 금정구 계정 단서가 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -9203,6 +9721,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f3c82887",
+        "kindergartenId": "1ecec08c-f1a6-b044-e053-0a32095ab044",
+        "title": "부산 메이플유치원 어린이 교통공원 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DCsfgp2SNMw/",
+        "source": "other",
+        "sourceName": "Instagram · 메이플유치원 부산 사하구",
+        "snippet": "메이플유치원 부산 사하구 계정에서 막내 리베반 어린이 교통공원 견학과 교통기관 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c4570d73",
+        "structuredFields": {
+          "kindergartenName": "메이플유치원",
+          "kindergartenAddress": "부산광역시 사하구 다대로 620",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCsfgp2SNMw%22%20%22%EB%A9%94%EC%9D%B4%ED%94%8C%EC%9C%A0%EC%B9%98%EC%9B%90%20%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%22%20%22%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "메이플유치원 동명이 있으나 부산 사하구 계정 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCsfgp2SNMw/",
+          "normalizedUrl": "www.instagram.com/p/dcsfgp2snmw",
+          "normalizedText": "부산 메이플유치원 어린이 교통공원 견학 instagram post 메이플유치원 부산 사하구 계정에서 막내 리베반 어린이 교통공원 견학과 교통기관 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "c4570d73",
+          "extractedAt": "2026-07-02T12:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "메이플유치원",
+            "kindergartenAddress": "부산광역시 사하구 다대로 620",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCsfgp2SNMw%22%20%22%EB%A9%94%EC%9D%B4%ED%94%8C%EC%9C%A0%EC%B9%98%EC%9B%90%20%EB%B6%80%EC%82%B0%20%EC%82%AC%ED%95%98%EA%B5%AC%22%20%22%EA%B5%90%ED%86%B5%EA%B3%B5%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "메이플유치원 동명이 있으나 부산 사하구 계정 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -10789,6 +11358,108 @@
           ]
         },
         "evidenceChecksum": "6a0782b9"
+      },
+      {
+        "id": "rev-457d5843",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 사상구 초록유치원 정월대보름 Instagram Post",
+        "url": "https://www.instagram.com/p/DF7c2D4Tsh_/",
+        "source": "other",
+        "sourceName": "Instagram · 부산 사상구 초록유치원",
+        "snippet": "부산 사상구 모라동 초록유치원 계정에서 정월대보름을 알아보고 앞마당에서 대보름 놀이를 한 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "jeongwol-daeboreum"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7d2f5114",
+        "structuredFields": {
+          "kindergartenName": "초록유치원",
+          "kindergartenAddress": "부산광역시 사상구 백양대로 880",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DF7c2D4Tsh_%22+%22%EB%B6%80%EC%82%B0+%EC%82%AC%EC%83%81%EA%B5%AC%22+%22%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A0%95%EC%9B%94%EB%8C%80%EB%B3%B4%EB%A6%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초록유치원 동명이 있으나 부산 사상구 모라동 단서가 사상구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DF7c2D4Tsh_/",
+          "normalizedUrl": "www.instagram.com/p/df7c2d4tsh_",
+          "normalizedText": "부산 사상구 초록유치원 정월대보름 instagram post 부산 사상구 모라동 초록유치원 계정에서 정월대보름을 알아보고 앞마당에서 대보름 놀이를 한 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "7d2f5114",
+          "extractedAt": "2026-07-02T18:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초록유치원",
+            "kindergartenAddress": "부산광역시 사상구 백양대로 880",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DF7c2D4Tsh_%22+%22%EB%B6%80%EC%82%B0+%EC%82%AC%EC%83%81%EA%B5%AC%22+%22%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A0%95%EC%9B%94%EB%8C%80%EB%B3%B4%EB%A6%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초록유치원 동명이 있으나 부산 사상구 모라동 단서가 사상구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b57f9edb",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 모라 초록유치원 크리스마스 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DD5mOJazWz0/",
+        "source": "other",
+        "sourceName": "Instagram · 부산 초록유치원",
+        "snippet": "모라초록유치원 계정에서 크리스마스 행사와 크리스마스 파티 문맥, 모라동·사상구유치원 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "christmas"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ccedc565",
+        "structuredFields": {
+          "kindergartenName": "초록유치원",
+          "kindergartenAddress": "부산광역시 사상구 백양대로 880",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DD5mOJazWz0%22+%22%EB%AA%A8%EB%9D%BC%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초록유치원 동명이 있으나 모라초록유치원·사상구 단서가 부산 사상구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DD5mOJazWz0/",
+          "normalizedUrl": "www.instagram.com/reel/dd5mojazwz0",
+          "normalizedText": "부산 모라 초록유치원 크리스마스 instagram reel 모라초록유치원 계정에서 크리스마스 행사와 크리스마스 파티 문맥, 모라동·사상구유치원 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "ccedc565",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초록유치원",
+            "kindergartenAddress": "부산광역시 사상구 백양대로 880",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DD5mOJazWz0%22+%22%EB%AA%A8%EB%9D%BC%EC%B4%88%EB%A1%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초록유치원 동명이 있으나 모라초록유치원·사상구 단서가 부산 사상구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa79-b044-e053-0a32095ab044": [
@@ -11944,6 +12615,146 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7a008bc8",
+        "kindergartenId": "1ecec08d-03ed-b044-e053-0a32095ab044",
+        "title": "부산 현대여울림유치원 생존수영 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYojF6zz-gJ/",
+        "source": "other",
+        "sourceName": "Instagram · 현대여울림유치원",
+        "snippet": "현대여울림유치원 계정에서 생존수영·어린이수영·물놀이·체험중심 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "survival-swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T13:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b166a8b0",
+        "structuredFields": {
+          "kindergartenName": "현대여울림유치원",
+          "kindergartenAddress": "부산광역시 북구 백양대로 1003",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYojF6zz-gJ%22%20%22%ED%98%84%EB%8C%80%EC%97%AC%EC%9A%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현대여울림유치원 단일 매칭이며 부산 북구 계정 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYojF6zz-gJ/",
+          "normalizedUrl": "www.instagram.com/reel/dyojf6zz-gj",
+          "normalizedText": "부산 현대여울림유치원 생존수영 체험 instagram reel 현대여울림유치원 계정에서 생존수영·어린이수영·물놀이·체험중심 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "b166a8b0",
+          "extractedAt": "2026-07-02T13:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현대여울림유치원",
+            "kindergartenAddress": "부산광역시 북구 백양대로 1003",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYojF6zz-gJ%22%20%22%ED%98%84%EB%8C%80%EC%97%AC%EC%9A%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현대여울림유치원 단일 매칭이며 부산 북구 계정 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T13:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3ef29521",
+        "kindergartenId": "1ecec08d-03ed-b044-e053-0a32095ab044",
+        "title": "부산 현대여울림유치원 어린이 생존수영 안전교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaAGwLXzNcs/",
+        "source": "other",
+        "sourceName": "Instagram · 현대여울림유치원",
+        "snippet": "현대여울림유치원 계정에서 북구·현대여울림유치원·어린이생존수영·안전 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "survival-swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T13:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "08995df5",
+        "structuredFields": {
+          "kindergartenName": "현대여울림유치원",
+          "kindergartenAddress": "부산광역시 북구 백양대로 1003",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaAGwLXzNcs%22%20%22%ED%98%84%EB%8C%80%EC%97%AC%EC%9A%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현대여울림유치원 단일 매칭이며 북구 단서가 부산 북구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaAGwLXzNcs/",
+          "normalizedUrl": "www.instagram.com/reel/daagwlxzncs",
+          "normalizedText": "부산 현대여울림유치원 어린이 생존수영 안전교육 instagram reel 현대여울림유치원 계정에서 북구·현대여울림유치원·어린이생존수영·안전 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "08995df5",
+          "extractedAt": "2026-07-02T13:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현대여울림유치원",
+            "kindergartenAddress": "부산광역시 북구 백양대로 1003",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaAGwLXzNcs%22%20%22%ED%98%84%EB%8C%80%EC%97%AC%EC%9A%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현대여울림유치원 단일 매칭이며 북구 단서가 부산 북구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T13:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave669-06dd1b01",
+        "kindergartenId": "1ecec08d-03ed-b044-e053-0a32095ab044",
+        "title": "현대여울림유치원 코앤코 음악놀이 활동 기록",
+        "url": "https://www.instagram.com/p/DV-f_gpk5JV/",
+        "source": "other",
+        "sourceName": "Instagram · 현대여울림유치원",
+        "snippet": "현대여울림유치원이 코앤코 음악놀이와 다양한 악기연주 활동을 소개한 공개 게시물입니다.",
+        "summary": "악기연주와 리듬놀이 중심의 음악 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "instruments",
+          "rhythm-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave669-06dd1b01",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV-f_gpk5JV/",
+          "normalizedUrl": "instagram.com/p/dv-f_gpk5jv",
+          "normalizedText": "현대여울림유치원 코앤코 음악놀이 악기연주 리베뮤직",
+          "htmlSnapshotHash": "sns-wave669-06dd1b01",
+          "extractedAt": "2026-07-03T18:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DV-f_gpk5JV/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave669"
       }
     ],
     "1ecec08d-06f4-b044-e053-0a32095ab044": [
@@ -12144,6 +12955,59 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4b579025",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "kindergartenName": "하늘유치원",
+        "title": "부산 사하구 하늘유치원 이야기주머니 인형극 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C9SN6w0SUWM/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "하늘유치원 계정 게시물 검색 결과에서 부산, 하늘유치원, 이야기주머니 인형극단 초청 관람 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "puppet-show",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b579025",
+        "structuredFields": {
+          "kindergartenName": "하늘유치원",
+          "kindergartenAddress": "부산광역시 사하구 하신중앙로 170",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9SN6w0SUWM%22%20%22%EB%B6%80%EC%82%B0%22%20%22%ED%95%98%EB%8A%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "부산 하늘유치원 단서와 로컬 부산 사하구 하늘유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C9SN6w0SUWM/",
+          "normalizedUrl": "www.instagram.com/reel/c9sn6w0suwm",
+          "normalizedText": "부산 사하구 하늘유치원 이야기주머니 인형극 instagram reel 하늘유치원 계정 게시물 검색 결과에서 부산, 하늘유치원, 이야기주머니 인형극단 초청 관람 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "4b579025",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "하늘유치원",
+            "kindergartenAddress": "부산광역시 사하구 하신중앙로 170",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9SN6w0SUWM%22%20%22%EB%B6%80%EC%82%B0%22%20%22%ED%95%98%EB%8A%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "부산 하늘유치원 단서와 로컬 부산 사하구 하늘유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f160-b044-e053-0a32095ab044": [
@@ -12343,6 +13207,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-73b72087",
+        "kindergartenId": "36627649-3e14-4655-b961-d249c0207cf8",
+        "kindergartenName": "바다유치원",
+        "title": "부산 사하구 바다유치원 해양박물관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIczU95yRfo/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "바다유치원 계정 게시물 검색 결과에서 장림동유치원, 해양박물관, 상어와 가오리 등 바다생물 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "marine-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "73b72087",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "부산광역시 사하구 다송로68번길 30",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIczU95yRfo%22%20%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%B4%EC%96%91%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "바다유치원은 동명이 있으나 장림동유치원 단서와 부산 사하구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIczU95yRfo/",
+          "normalizedUrl": "www.instagram.com/reel/diczu95yrfo",
+          "normalizedText": "부산 사하구 바다유치원 해양박물관 견학 instagram reel 바다유치원 계정 게시물 검색 결과에서 장림동유치원, 해양박물관, 상어와 가오리 등 바다생물 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "73b72087",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "부산광역시 사하구 다송로68번길 30",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIczU95yRfo%22%20%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%B4%EC%96%91%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "바다유치원은 동명이 있으나 장림동유치원 단서와 부산 사하구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -12941,6 +13859,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a7b95836",
+        "kindergartenId": "1ecec08c-fe11-b044-e053-0a32095ab044",
+        "title": "부산 예종유치원 가족숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZO8FBENse4/",
+        "source": "other",
+        "sourceName": "Instagram · 예종유치원",
+        "snippet": "예종유치원 계정에서 예종 가족숲체험이 시작되었다는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6563f93c",
+        "structuredFields": {
+          "kindergartenName": "예종유치원",
+          "kindergartenAddress": "부산광역시 부산진구 성지로 116",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZO8FBENse4%22%20%22%EC%98%88%EC%A2%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%80%EC%A1%B1%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "예종유치원 동명이 있으나 예종유치원 계정의 가족숲체험 문맥과 부산 로컬 기관 단서를 함께 수동 확인했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZO8FBENse4/",
+          "normalizedUrl": "www.instagram.com/reel/dzo8fbense4",
+          "normalizedText": "부산 예종유치원 가족숲체험 instagram reel 예종유치원 계정에서 예종 가족숲체험이 시작되었다는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "6563f93c",
+          "extractedAt": "2026-07-02T10:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예종유치원",
+            "kindergartenAddress": "부산광역시 부산진구 성지로 116",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZO8FBENse4%22%20%22%EC%98%88%EC%A2%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%80%EC%A1%B1%EC%88%B2%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "예종유치원 동명이 있으나 예종유치원 계정의 가족숲체험 문맥과 부산 로컬 기관 단서를 함께 수동 확인했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f14d-b044-e053-0a32095ab044": [
@@ -13040,6 +14009,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-69213f10",
+        "kindergartenId": "1ecec08c-f14d-b044-e053-0a32095ab044",
+        "title": "부산 참사랑유치원 딸기 수확 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DHvTVgYynaF/",
+        "source": "other",
+        "sourceName": "Instagram · 참사랑유치원",
+        "snippet": "참사랑유치원 계정에서 가족 대상 딸기 수확 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e46927b2",
+        "structuredFields": {
+          "kindergartenName": "참사랑유치원",
+          "kindergartenAddress": "부산광역시 사하구 다대로 52",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHvTVgYynaF%22+%22%EC%B0%B8%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "참사랑유치원 동명이 있으나 부산 계정 문맥과 로컬 홈페이지 권역이 일치해 부산 사하구 참사랑유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHvTVgYynaF/",
+          "normalizedUrl": "www.instagram.com/p/dhvtvgyynaf",
+          "normalizedText": "부산 참사랑유치원 딸기 수확 체험 instagram post 참사랑유치원 계정에서 가족 대상 딸기 수확 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "e46927b2",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "참사랑유치원",
+            "kindergartenAddress": "부산광역시 사하구 다대로 52",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHvTVgYynaF%22+%22%EC%B0%B8%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "참사랑유치원 동명이 있으나 부산 계정 문맥과 로컬 홈페이지 권역이 일치해 부산 사하구 참사랑유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -13194,6 +14214,165 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ec4689c2",
+        "kindergartenId": "1ecec08c-f379-b044-e053-0a32095ab044",
+        "kindergartenName": "신익유치원",
+        "title": "부산 사하구 신익유치원 도예체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C1b0eOoS2__/",
+        "source": "other",
+        "sourceName": "Instagram · 신익유치원",
+        "snippet": "신익유치원 계정 검색 결과에서 신익이들의 도예체험, 흙으로 그릇을 만드는 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "ceramics"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:52.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ec4689c2",
+        "structuredFields": {
+          "kindergartenName": "신익유치원",
+          "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C1b0eOoS2__%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C1b0eOoS2__/",
+          "normalizedUrl": "www.instagram.com/reel/c1b0eoos2__",
+          "normalizedText": "부산 사하구 신익유치원 도예체험 instagram reel 신익유치원 계정 검색 결과에서 신익이들의 도예체험, 흙으로 그릇을 만드는 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ec4689c2",
+          "extractedAt": "2026-07-02T23:59:52.000Z",
+          "structuredFields": {
+            "kindergartenName": "신익유치원",
+            "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C1b0eOoS2__%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:52.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c36444fc",
+        "kindergartenId": "1ecec08c-f379-b044-e053-0a32095ab044",
+        "kindergartenName": "신익유치원",
+        "title": "부산 사하구 신익유치원 을숙도 들락날락 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/C0siqukyizn/",
+        "source": "other",
+        "sourceName": "Instagram · 신익유치원",
+        "snippet": "신익유치원 계정 게시물 검색 결과에서 을숙도 들락날락 견학, 부산 들락날락 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:51.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c36444fc",
+        "structuredFields": {
+          "kindergartenName": "신익유치원",
+          "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0siqukyizn%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%93%A4%EB%9D%BD%EB%82%A0%EB%9D%BD%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0siqukyizn/",
+          "normalizedUrl": "www.instagram.com/p/c0siqukyizn",
+          "normalizedText": "부산 사하구 신익유치원 을숙도 들락날락 견학 instagram post 신익유치원 계정 게시물 검색 결과에서 을숙도 들락날락 견학, 부산 들락날락 단서가 확인된다.",
+          "htmlSnapshotHash": "c36444fc",
+          "extractedAt": "2026-07-02T23:59:51.000Z",
+          "structuredFields": {
+            "kindergartenName": "신익유치원",
+            "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0siqukyizn%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%93%A4%EB%9D%BD%EB%82%A0%EB%9D%BD%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:51.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-160d269d",
+        "kindergartenId": "1ecec08c-f379-b044-e053-0a32095ab044",
+        "kindergartenName": "신익유치원",
+        "title": "부산 신익유치원 신평골목시장 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/Cz-7QvxynCw/",
+        "source": "other",
+        "sourceName": "Instagram · 신익유치원",
+        "snippet": "신익유치원 계정 게시물 검색 결과에서 신평골목시장 견학과 어린이 그림대회 참여 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "160d269d",
+        "structuredFields": {
+          "kindergartenName": "신익유치원",
+          "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cz-7QvxynCw%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%A0%ED%8F%89%EA%B3%A8%EB%AA%A9%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cz-7QvxynCw/",
+          "normalizedUrl": "www.instagram.com/p/cz-7qvxyncw",
+          "normalizedText": "부산 신익유치원 신평골목시장 견학 instagram post 신익유치원 계정 게시물 검색 결과에서 신평골목시장 견학과 어린이 그림대회 참여 단서가 확인된다.",
+          "htmlSnapshotHash": "160d269d",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "신익유치원",
+            "kindergartenAddress": "부산광역시 사하구 비봉로 36",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cz-7QvxynCw%22%20%22%EC%8B%A0%EC%9D%B5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%A0%ED%8F%89%EA%B3%A8%EB%AA%A9%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "신익유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0d76-b044-e053-0a32095ab044": [
@@ -13244,6 +14423,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-46ed6753",
+        "kindergartenId": "1ecec08d-0d76-b044-e053-0a32095ab044",
+        "kindergartenName": "개림초등학교병설유치원",
+        "title": "부산 개림초등학교병설유치원 칼림바 악기연주 Instagram Post",
+        "url": "https://www.instagram.com/p/CxcU0WMySVE/",
+        "source": "other",
+        "sourceName": "Instagram · 개림초등학교병설유치원",
+        "snippet": "개림초등학교병설유치원 계정 검색 결과에서 방과후 시간 칼림바 악기연주, 음악적 능력과 미적감각 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "instrument"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:53.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "46ed6753",
+        "structuredFields": {
+          "kindergartenName": "개림초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 부산진구 백양대로320번길 40",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxcU0WMySVE%22%20%22%EA%B0%9C%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%BC%EB%A6%BC%EB%B0%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "개림초등학교병설유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxcU0WMySVE/",
+          "normalizedUrl": "www.instagram.com/p/cxcu0wmysve",
+          "normalizedText": "부산 개림초등학교병설유치원 칼림바 악기연주 instagram post 개림초등학교병설유치원 계정 검색 결과에서 방과후 시간 칼림바 악기연주, 음악적 능력과 미적감각 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "46ed6753",
+          "extractedAt": "2026-07-02T23:59:53.000Z",
+          "structuredFields": {
+            "kindergartenName": "개림초등학교병설유치원",
+            "kindergartenAddress": "부산광역시 부산진구 백양대로320번길 40",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxcU0WMySVE%22%20%22%EA%B0%9C%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%BC%EB%A6%BC%EB%B0%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "개림초등학교병설유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:53.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -13708,6 +14940,432 @@
         "evidenceChecksum": "9aa57e57"
       }
     ],
+    "1ecec08d-0f46-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a2b2af6b",
+        "kindergartenId": "1ecec08d-0f46-b044-e053-0a32095ab044",
+        "title": "부산 안성자연유치원 단오행사 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DKZshCFSezH/",
+        "source": "other",
+        "sourceName": "Instagram · 안성자연유치원",
+        "snippet": "안성자연유치원 계정에서 단오 행사, 창포물에 머리 감기와 손수건 활동 등 전통문화 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dano"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5309f61c",
+        "structuredFields": {
+          "kindergartenName": "안성자연유치원",
+          "kindergartenAddress": "부산광역시 동래구 명안로77번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKZshCFSezH%22+%22%EC%95%88%EC%84%B1%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "안성자연유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKZshCFSezH/",
+          "normalizedUrl": "www.instagram.com/reel/dkzshcfsezh",
+          "normalizedText": "부산 안성자연유치원 단오행사 instagram reel 안성자연유치원 계정에서 단오 행사, 창포물에 머리 감기와 손수건 활동 등 전통문화 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "5309f61c",
+          "extractedAt": "2026-07-02T17:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안성자연유치원",
+            "kindergartenAddress": "부산광역시 동래구 명안로77번길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKZshCFSezH%22+%22%EC%95%88%EC%84%B1%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "안성자연유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f595-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-398a301a",
+        "kindergartenId": "1ecec08c-f595-b044-e053-0a32095ab044",
+        "title": "부산 정관유치원 단오 수릿날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZyabOAvdMu/",
+        "source": "other",
+        "sourceName": "Instagram · 정관유치원",
+        "snippet": "정관유치원 계정에서 단오, 수릿날, 창포물, 씨름대회 등 단오 행사 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dano"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "91efe81a",
+        "structuredFields": {
+          "kindergartenName": "정관유치원",
+          "kindergartenAddress": "부산광역시 기장군 정관로 530",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZyabOAvdMu%22+%22%EC%A0%95%EA%B4%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정관유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZyabOAvdMu/",
+          "normalizedUrl": "www.instagram.com/reel/dzyaboavdmu",
+          "normalizedText": "부산 정관유치원 단오 수릿날 instagram reel 정관유치원 계정에서 단오, 수릿날, 창포물, 씨름대회 등 단오 행사 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "91efe81a",
+          "extractedAt": "2026-07-02T17:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "정관유치원",
+            "kindergartenAddress": "부산광역시 기장군 정관로 530",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZyabOAvdMu%22+%22%EC%A0%95%EA%B4%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정관유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0b5a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b5a02112",
+        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
+        "title": "부산 영도 꿈나무유치원 단오활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DZwz-AhiRt5/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈나무유치원",
+        "snippet": "영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dano"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1dc5c40e",
+        "structuredFields": {
+          "kindergartenName": "꿈나무유치원",
+          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZwz-AhiRt5/",
+          "normalizedUrl": "www.instagram.com/p/dzwz-ahirt5",
+          "normalizedText": "부산 영도 꿈나무유치원 단오활동 instagram post 영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "1dc5c40e",
+          "extractedAt": "2026-07-02T17:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈나무유치원",
+            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-13637eea",
+        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
+        "kindergartenName": "꿈나무유치원",
+        "title": "부산 영도 꿈나무유치원 소방안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWVzA13iXwN/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈나무유치원",
+        "snippet": "영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9dc15ae9",
+        "structuredFields": {
+          "kindergartenName": "꿈나무유치원",
+          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWVzA13iXwN/",
+          "normalizedUrl": "www.instagram.com/p/dwvza13ixwn",
+          "normalizedText": "부산 영도 꿈나무유치원 소방안전교육 instagram post 영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "9dc15ae9",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈나무유치원",
+            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-00c9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-c913b0a8",
+        "kindergartenId": "1ecec08d-00c9-b044-e053-0a32095ab044",
+        "title": "부산 자비유치원 국립 수산과학관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DBY78DbzGmF/",
+        "source": "other",
+        "sourceName": "Instagram · 자비유치원",
+        "snippet": "자비유치원 계정에서 부산 기장 국립 수산과학관 견학 문맥과 부산시교육청·유초연계 이음학기 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e6f14921",
+        "structuredFields": {
+          "kindergartenName": "자비유치원",
+          "kindergartenAddress": "부산광역시 영도구 일산봉로 49",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBY78DbzGmF%22+%22%EC%9E%90%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%AD%EB%A6%BD+%EC%88%98%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "자비유치원은 로컬 원장부 단일 매칭이며 부산 기장 국립 수산과학관 견학 문맥이 부산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBY78DbzGmF/",
+          "normalizedUrl": "www.instagram.com/p/dby78dbzgmf",
+          "normalizedText": "부산 자비유치원 국립 수산과학관 견학 instagram post 자비유치원 계정에서 부산 기장 국립 수산과학관 견학 문맥과 부산시교육청·유초연계 이음학기 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "e6f14921",
+          "extractedAt": "2026-07-03T00:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "자비유치원",
+            "kindergartenAddress": "부산광역시 영도구 일산봉로 49",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBY78DbzGmF%22+%22%EC%9E%90%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%AD%EB%A6%BD+%EC%88%98%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "자비유치원은 로컬 원장부 단일 매칭이며 부산 기장 국립 수산과학관 견학 문맥이 부산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ef42-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-994e0a89",
+        "kindergartenId": "1ecec08c-ef42-b044-e053-0a32095ab044",
+        "title": "부산 봉우리유치원 119소방안전체험관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DN40B77EScC/",
+        "source": "other",
+        "sourceName": "Instagram · 봉우리유치원",
+        "snippet": "봉우리유치원 계정에서 꽃잎향기반·밝은햇살반 친구들이 119소방안전체험관 견학을 다녀온 문맥과 부산·신평·사하구 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-station-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "afbba32b",
+        "structuredFields": {
+          "kindergartenName": "봉우리유치원",
+          "kindergartenAddress": "부산광역시 사하구 신산북로43번길 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DN40B77EScC%22+%22%EB%B4%89%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22119%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "봉우리유치원은 로컬 원장부 단일 매칭이며 부산·신평·사하구 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DN40B77EScC/",
+          "normalizedUrl": "www.instagram.com/p/dn40b77escc",
+          "normalizedText": "부산 봉우리유치원 119소방안전체험관 견학 instagram post 봉우리유치원 계정에서 꽃잎향기반·밝은햇살반 친구들이 119소방안전체험관 견학을 다녀온 문맥과 부산·신평·사하구 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "afbba32b",
+          "extractedAt": "2026-07-03T00:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "봉우리유치원",
+            "kindergartenAddress": "부산광역시 사하구 신산북로43번길 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DN40B77EScC%22+%22%EB%B4%89%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22119%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "봉우리유치원은 로컬 원장부 단일 매칭이며 부산·신평·사하구 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2be27df4",
+        "kindergartenId": "1ecec08c-ef42-b044-e053-0a32095ab044",
+        "kindergartenName": "봉우리유치원",
+        "title": "부산 봉우리유치원 사하소방서 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/CdkUSkcr7Lb/",
+        "source": "other",
+        "sourceName": "Instagram · 써니",
+        "snippet": "Instagram 검색 결과에서 봉우리유치원, 사하소방서견학, 숲체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-station",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2be27df4",
+        "structuredFields": {
+          "kindergartenName": "봉우리유치원",
+          "kindergartenAddress": "부산광역시 사하구 신산북로43번길 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CdkUSkcr7Lb%22%20%22%EB%B4%89%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%82%AC%ED%95%98%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "봉우리유치원은 로컬 원장부에서 단일 명칭이며 사하소방서 단서와 부산 사하구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CdkUSkcr7Lb/",
+          "normalizedUrl": "www.instagram.com/p/cdkuskcr7lb",
+          "normalizedText": "부산 봉우리유치원 사하소방서 견학 instagram post instagram 검색 결과에서 봉우리유치원, 사하소방서견학, 숲체험 단서가 확인된다.",
+          "htmlSnapshotHash": "2be27df4",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "봉우리유치원",
+            "kindergartenAddress": "부산광역시 사하구 신산북로43번길 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CdkUSkcr7Lb%22%20%22%EB%B4%89%EC%9A%B0%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%82%AC%ED%95%98%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "봉우리유치원은 로컬 원장부에서 단일 명칭이며 사하소방서 단서와 부산 사하구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0bb5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ae8f5a2d",
+        "kindergartenId": "1ecec08d-0bb5-b044-e053-0a32095ab044",
+        "kindergartenName": "동부산대학교부속유치원",
+        "title": "부산 동부산대학교부속유치원 도자기체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DDMaFl-SuqE/",
+        "source": "other",
+        "sourceName": "Instagram · 동부산대학교부속유치원",
+        "snippet": "동부산대학교부속유치원 계정의 도자기체험 릴스 검색 결과에서 부산 해운대구 반송동 지역 단서와 도자기 체험 활동이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ceramics",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T14:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d4e68826",
+        "structuredFields": {
+          "kindergartenName": "동부산대학교부속유치원",
+          "kindergartenAddress": "부산광역시 해운대구 운봉길 60",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDMaFl-SuqE%22%20%22%EB%8F%99%EB%B6%80%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%9E%90%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동부산대학교부속유치원 단일 매칭이며 부산 해운대구·반송동 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDMaFl-SuqE/",
+          "normalizedUrl": "www.instagram.com/reel/ddmafl-suqe",
+          "normalizedText": "부산 동부산대학교부속유치원 도자기체험 instagram reel 동부산대학교부속유치원 계정의 도자기체험 릴스 검색 결과에서 부산 해운대구 반송동 지역 단서와 도자기 체험 활동이 확인된다.",
+          "htmlSnapshotHash": "d4e68826",
+          "extractedAt": "2026-07-02T14:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동부산대학교부속유치원",
+            "kindergartenAddress": "부산광역시 해운대구 운봉길 60",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDMaFl-SuqE%22%20%22%EB%8F%99%EB%B6%80%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%9E%90%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동부산대학교부속유치원 단일 매칭이며 부산 해운대구·반송동 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T14:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "7503d277-da3d-4087-83e8-21f5f0d0d815": [
       {
         "id": "rev-e5aa07cc",
@@ -13862,5 +15520,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T18:55:00.000Z"
 }

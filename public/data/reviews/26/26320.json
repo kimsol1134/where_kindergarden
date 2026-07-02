@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 37,
-  "kindergartenCount": 9,
+  "version": "2026-07-03",
+  "totalCount": 44,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-ffa1-b044-e053-0a32095ab044": [
       {
@@ -696,6 +696,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5b737af3",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 화명동 햇빛유치원 학부모 참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DZ_9pojkybk/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "검색 결과에서 햇빛유치원, 화명동유치원, 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5b737af3",
+        "structuredFields": {
+          "kindergartenName": "햇빛유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로 117",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ_9pojkybk%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "햇빛유치원 동명 후보가 있으나 화명동유치원 단서가 로컬 부산 북구 햇빛유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_9pojkybk/",
+          "normalizedUrl": "instagram.com/p/dz_9pojkybk",
+          "normalizedText": "부산 화명동 햇빛유치원 학부모 참여수업 instagram post 검색 결과에서 햇빛유치원 화명동유치원 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "5b737af3",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "햇빛유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로 117",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ_9pojkybk%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "햇빛유치원 동명 후보가 있으나 화명동유치원 단서가 로컬 부산 북구 햇빛유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "8f3f48a5-f2b6-40f6-be06-b1f8369a1b2c": [
@@ -1206,6 +1258,68 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-b5417fe6",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "kindergartenName": "금곡나래유치원",
+        "title": "부산 금곡나래유치원 샌드아트 공연 Reel",
+        "url": "https://www.instagram.com/reel/DDrSTw_SvA2/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "Instagram 검색 결과에서 금곡나래유치원 샌드아트 공연 활동과 유아의 장래꿈 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sand-art",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDrSTw_SvA2%22+%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DDrSTw_SvA2/",
+          "regionEvidence": [
+            "금곡나래유치원",
+            "부산",
+            "샌드아트 공연"
+          ]
+        },
+        "evidenceChecksum": "40320088",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDrSTw_SvA2/",
+          "normalizedUrl": "instagram.com/shortcode/ddrstw_sva2",
+          "normalizedText": "부산 금곡나래유치원 샌드아트 공연 reel instagram 검색 결과에서 금곡나래유치원 샌드아트 공연 활동과 유아의 장래꿈 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "753b63f2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금곡나래유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDrSTw_SvA2%22+%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DDrSTw_SvA2/",
+            "regionEvidence": [
+              "금곡나래유치원",
+              "부산",
+              "샌드아트 공연"
+            ]
+          }
+        }
+      },
+      {
         "id": "rev-65453d85",
         "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
         "kindergartenName": "금곡나래유치원",
@@ -1287,6 +1401,144 @@
           ]
         },
         "evidenceChecksum": "447c6c7d"
+      },
+      {
+        "id": "rev-6a97587b",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 동화 동요 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNSBbyNpLXP/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 공립단설유치원, 동화 동요 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "music-recital"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6a97587b",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNSBbyNpLXP%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 금곡나래유치원 및 금곡동유치원 단서가 로컬 부산 북구 금곡나래유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNSBbyNpLXP/",
+          "normalizedUrl": "instagram.com/reel/dnsbbynplxp",
+          "normalizedText": "금곡나래유치원 동화 동요 발표회 instagram reel 검색 결과에서 금곡나래유치원 공립단설유치원 동화 동요 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "6a97587b",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금곡나래유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNSBbyNpLXP%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 금곡나래유치원 및 금곡동유치원 단서가 로컬 부산 북구 금곡나래유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e773d638",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 너나들이놀이터 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DWxWBzcDe7s/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 너나들이놀이터 과학놀이, 비밀 그림 그리기와 색혼합 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "creative-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e773d638",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWxWBzcDe7s%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금곡나래유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxWBzcDe7s/",
+          "normalizedUrl": "instagram.com/p/dwxwbzcde7s",
+          "normalizedText": "금곡나래유치원 너나들이놀이터 과학놀이 instagram post 검색 결과에서 금곡나래유치원 너나들이놀이터 과학놀이 비밀 그림 그리기와 색혼합 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "e773d638",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e1b7e5a0",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 물 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/C2t63i4PXBq/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 물과 관련된 과학 원리, 코인티슈 애벌레와 종이꽃 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "creative-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e1b7e5a0",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2t63i4PXBq%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%20%EC%9B%90%EB%A6%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금곡나래유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학 원리 놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C2t63i4PXBq/",
+          "normalizedUrl": "instagram.com/p/c2t63i4pxbq",
+          "normalizedText": "금곡나래유치원 물 과학놀이 instagram post 검색 결과에서 금곡나래유치원 물과 관련된 과학 원리 코인티슈 애벌레와 종이꽃 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "e1b7e5a0",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0329-b044-e053-0a32095ab044": [
@@ -1741,6 +1993,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T13:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave669-06dd1b01",
+        "kindergartenId": "1ecec08d-03ed-b044-e053-0a32095ab044",
+        "title": "현대여울림유치원 코앤코 음악놀이 활동 기록",
+        "url": "https://www.instagram.com/p/DV-f_gpk5JV/",
+        "source": "other",
+        "sourceName": "Instagram · 현대여울림유치원",
+        "snippet": "현대여울림유치원이 코앤코 음악놀이와 다양한 악기연주 활동을 소개한 공개 게시물입니다.",
+        "summary": "악기연주와 리듬놀이 중심의 음악 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "instruments",
+          "rhythm-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave669-06dd1b01",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV-f_gpk5JV/",
+          "normalizedUrl": "instagram.com/p/dv-f_gpk5jv",
+          "normalizedText": "현대여울림유치원 코앤코 음악놀이 악기연주 리베뮤직",
+          "htmlSnapshotHash": "sns-wave669-06dd1b01",
+          "extractedAt": "2026-07-03T18:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DV-f_gpk5JV/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave669"
       }
     ],
     "1ecec08d-06f4-b044-e053-0a32095ab044": [
@@ -1793,7 +2081,51 @@
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "82f20b40-6aac-477b-83fe-637a7b9fde82": [
+      {
+        "id": "rev-109a5c00",
+        "kindergartenId": "82f20b40-6aac-477b-83fe-637a7b9fde82",
+        "title": "부산 덕성초등학교병설유치원 샌드아트 Instagram Post",
+        "url": "https://www.instagram.com/p/DPEiRX1ATKz/",
+        "source": "other",
+        "sourceName": "Instagram · 샌드톡",
+        "snippet": "검색 결과에서 부산 덕성초 병설유치원, 샌드아트 미니 공연과 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sand-art",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "109a5c00",
+        "structuredFields": {
+          "kindergartenName": "덕성초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 북구 만덕대로39번길 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPEiRX1ATKz%22%20%22%EB%B6%80%EC%82%B0%20%EB%8D%95%EC%84%B1%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "덕성초등학교병설유치원 동명 후보가 있으나 부산 단서가 로컬 부산 북구 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPEiRX1ATKz/",
+          "normalizedUrl": "instagram.com/p/dpeirx1atkz",
+          "normalizedText": "부산 덕성초등학교병설유치원 샌드아트 instagram post 검색 결과에서 부산 덕성초 병설유치원 샌드아트 미니 공연과 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "109a5c00",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

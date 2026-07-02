@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 75,
-  "kindergartenCount": 22,
+  "totalCount": 76,
+  "kindergartenCount": 23,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
       {
@@ -3619,6 +3619,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:25:00.000Z",
         "approvedBy": "codex-manual-sns-wave666"
+      }
+    ],
+    "f8e4203d-a7dd-4bd6-a2f8-4c303acdba6b": [
+      {
+        "id": "rev-sns-wave669-ff16fb0a",
+        "kindergartenId": "f8e4203d-a7dd-4bd6-a2f8-4c303acdba6b",
+        "title": "대구삼영유치원 북클래식 콘서트 기록",
+        "url": "https://www.instagram.com/p/DUDdKw_ExTG/",
+        "source": "other",
+        "sourceName": "Instagram · 대구삼영유치원",
+        "snippet": "대구삼영유치원과 삼영초 저학년이 함께한 북클래식 콘서트 현장을 소개한 공개 게시물입니다.",
+        "summary": "국악과 책 이야기를 결합한 음악 공연 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "performance",
+          "book-concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave669-ff16fb0a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUDdKw_ExTG/",
+          "normalizedUrl": "instagram.com/p/duddkw_extg",
+          "normalizedText": "대구삼영유치원 삼영초 저학년 북클래식 콘서트 국악 음악공연",
+          "htmlSnapshotHash": "sns-wave669-ff16fb0a",
+          "extractedAt": "2026-07-03T18:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUDdKw_ExTG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave669"
       }
     ]
   }

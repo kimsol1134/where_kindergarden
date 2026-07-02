@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 171,
+  "totalCount": 172,
   "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -371,6 +371,42 @@
         "date": "2025-08-11",
         "collectedAt": "2026-02-18T06:13:58.409Z",
         "relevanceScore": 6
+      },
+      {
+        "id": "rev-sns-wave669-62295162",
+        "kindergartenId": "1ecec08c-fa81-b044-e053-0a32095ab044",
+        "title": "이화정원유치원 음악회 무대 기록",
+        "url": "https://www.instagram.com/p/DSKKOtSj2pF/",
+        "source": "other",
+        "sourceName": "Instagram · 이화정원유치원",
+        "snippet": "이화정원유치원이 음악회 무대와 아이들의 공연 준비 모습을 소개한 공개 게시물입니다.",
+        "summary": "유치원 음악회와 무대 경험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "performance",
+          "concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave669-62295162",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSKKOtSj2pF/",
+          "normalizedUrl": "instagram.com/p/dskkotsj2pf",
+          "normalizedText": "이화정원유치원 음악회 무대 공연 준비",
+          "htmlSnapshotHash": "sns-wave669-62295162",
+          "extractedAt": "2026-07-03T18:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSKKOtSj2pF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave669"
       }
     ],
     "58acbeb2-e3ed-40d3-80ec-25ad4ba8dd02": [
@@ -7822,5 +7858,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:25:00.000Z"
+  "lastUpdatedAt": "2026-07-03T18:55:00.000Z"
 }

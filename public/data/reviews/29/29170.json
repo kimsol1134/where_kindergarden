@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 37,
+  "version": "2026-07-03",
+  "totalCount": 39,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -264,6 +264,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-50eb8559",
+        "kindergartenId": "1ecec08d-06b8-b044-e053-0a32095ab044",
+        "title": "선일유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+        "source": "other",
+        "sourceName": "Instagram · 선일유치원",
+        "snippet": "검색 결과에서 선일유치원 친구들의 시장놀이, 광주 북구 운암동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "50eb8559",
+        "structuredFields": {
+          "kindergartenName": "선일유치원",
+          "kindergartenAddress": "광주광역시 북구 서강로54번길 50",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLQ0T02zCtf%22%20%22%EC%84%A0%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%81%EA%B5%AC%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 선일유치원과 광주 북구 운암동 단서를 함께 보여 동명 후보 중 광주 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+          "normalizedUrl": "instagram.com/reel/dlq0t02zctf",
+          "normalizedText": "선일유치원 시장놀이 instagram reel 검색 결과에서 선일유치원 친구들의 시장놀이 광주 북구 운암동 단서가 확인된다.",
+          "htmlSnapshotHash": "50eb8559",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0c2b-b044-e053-0a32095ab044": [
@@ -328,6 +371,42 @@
         "date": "2025-08-11",
         "collectedAt": "2026-02-18T06:13:58.409Z",
         "relevanceScore": 6
+      },
+      {
+        "id": "rev-sns-wave669-62295162",
+        "kindergartenId": "1ecec08c-fa81-b044-e053-0a32095ab044",
+        "title": "이화정원유치원 음악회 무대 기록",
+        "url": "https://www.instagram.com/p/DSKKOtSj2pF/",
+        "source": "other",
+        "sourceName": "Instagram · 이화정원유치원",
+        "snippet": "이화정원유치원이 음악회 무대와 아이들의 공연 준비 모습을 소개한 공개 게시물입니다.",
+        "summary": "유치원 음악회와 무대 경험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "performance",
+          "concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave669-62295162",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSKKOtSj2pF/",
+          "normalizedUrl": "instagram.com/p/dskkotsj2pf",
+          "normalizedText": "이화정원유치원 음악회 무대 공연 준비",
+          "htmlSnapshotHash": "sns-wave669-62295162",
+          "extractedAt": "2026-07-03T18:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSKKOtSj2pF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave669"
       }
     ],
     "1ecec08c-f02e-b044-e053-0a32095ab044": [
@@ -1550,6 +1629,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
