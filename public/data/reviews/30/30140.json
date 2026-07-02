@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 83,
+  "totalCount": 85,
   "kindergartenCount": 11,
   "reviews": {
     "1ecec08c-ff4a-b044-e053-0a32095ab044": [
@@ -2682,6 +2682,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.500Z",
         "approvedBy": "codex-manual-sns-wave691"
+      },
+      {
+        "id": "rev-sns-wave714-8ba0c1fd",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DTrUDa_lxhs/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원이 안전은 연습에서 시작된다는 메시지와 함께 아이들의 화재 대피 훈련을 소개한 릴스입니다.",
+        "summary": "유아들이 반복 훈련으로 화재 상황 대피 요령을 익힌 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-8ba0c1fd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTrUDa_lxhs/",
+          "normalizedUrl": "instagram.com/reel/dtruda_lxhs",
+          "normalizedText": "꿈내리유치원 안전은 연습에서 시작 화재 대피 훈련 어린이",
+          "htmlSnapshotHash": "sns-wave714-8ba0c1fd",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTrUDa_lxhs/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08c-ff4d-b044-e053-0a32095ab044": [
@@ -3647,7 +3684,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave718-68ea501b",
+        "kindergartenId": "1ecec08d-02ba-b044-e053-0a32095ab044",
+        "title": "대전 동양유치원 대전아쿠아리움 견학 기록",
+        "url": "https://www.instagram.com/p/DNeWahKSmMi/",
+        "source": "other",
+        "sourceName": "Instagram · 동양유치원",
+        "snippet": "대전 동양유치원 5세 친구들이 대전아쿠아리움에서 여러 바다 생물을 관찰한 게시물입니다.",
+        "summary": "유아들이 아쿠아리움 전시를 보며 해양 생물에 대한 관심을 넓힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-68ea501b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNeWahKSmMi/",
+          "normalizedUrl": "instagram.com/p/dnewahksmmi",
+          "normalizedText": "동양유치원 태평동유치원 선화동유치원 대전아쿠아리움 5세 견학",
+          "htmlSnapshotHash": "sns-wave718-68ea501b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DNeWahKSmMi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

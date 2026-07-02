@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 43,
+  "totalCount": 48,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08d-083c-b044-e053-0a32095ab044": [
@@ -850,6 +850,58 @@
           ]
         },
         "evidenceChecksum": "9aaa1dbb"
+      },
+      {
+        "id": "rev-917ea989",
+        "kindergartenId": "1ecec08c-ff6a-b044-e053-0a32095ab044",
+        "title": "청주 지웰시티유치원 원내 봄소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIVIwZKyDrZ/",
+        "source": "other",
+        "sourceName": "Instagram · 지웰시티유치원",
+        "snippet": "검색 결과에서 지웰시티유치원의 원내 봄소풍, 펀펀데이, 에어바운스 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "spring-picnic",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "917ea989",
+        "structuredFields": {
+          "kindergartenName": "지웰시티유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 대농로 42-46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIVIwZKyDrZ%22%20%22%EC%A7%80%EC%9B%B0%EC%8B%9C%ED%8B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "지웰시티유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIVIwZKyDrZ/",
+          "normalizedUrl": "instagram.com/reel/diviwzkydrz",
+          "normalizedText": "청주 지웰시티유치원 원내 봄소풍 instagram reel 검색 결과에서 지웰시티유치원의 원내 봄소풍, 펀펀데이, 에어바운스 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "917ea989",
+          "extractedAt": "2026-07-03T10:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "지웰시티유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 대농로 42-46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIVIwZKyDrZ%22%20%22%EC%A7%80%EC%9B%B0%EC%8B%9C%ED%8B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "지웰시티유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0bfb-b044-e053-0a32095ab044": [
@@ -1241,6 +1293,162 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-082eb3df",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 우리 동네 부모참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 우리 동네 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "082eb3df",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+          "normalizedUrl": "instagram.com/reel/dz0osxltspn",
+          "normalizedText": "진흥초등학교병설유치원 우리 동네 부모참여수업 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 우리 동네 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "082eb3df",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2c8b011a",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 꽃누리 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 꽃누리 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2c8b011a",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+          "normalizedUrl": "instagram.com/reel/dz7chgox2r_",
+          "normalizedText": "진흥초등학교병설유치원 꽃누리 시장놀이 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 꽃누리 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "2c8b011a",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ea5dd855",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DMMxFGdPWeY/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 청주유치원, 복대동유치원, 진흥초병설유치원, 텃밭, 애호박전 요리활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "cooking-activity"
+        ],
+        "date": "2025-07-16",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ea5dd855",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMMxFGdPWeY/",
+          "normalizedUrl": "instagram.com/p/dmmxfgdpwey",
+          "normalizedText": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 instagram post 검색 결과에서 청주유치원 복대동유치원 진흥초병설유치원 텃밭 애호박전 요리활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ea5dd855",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -2009,6 +2217,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave718-e74c4eda",
+        "kindergartenId": "1ecec08c-f69c-b044-e053-0a32095ab044",
+        "title": "청주 유동유치원 아쿠아리움 나들이 기록",
+        "url": "https://www.instagram.com/reel/DTrhtC3EVm_/",
+        "source": "other",
+        "sourceName": "Instagram · 유동유치원",
+        "snippet": "유동유치원 친구들이 아쿠아리움에서 물고기와 가오리를 보고 수중 공연을 관람한 릴스입니다.",
+        "summary": "유아들이 아쿠아리움에서 바다 생물을 관찰하며 체험학습을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip",
+          "cheongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-e74c4eda",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTrhtC3EVm_/",
+          "normalizedUrl": "instagram.com/reel/dtrhtc3evm_",
+          "normalizedText": "유동유치원 아쿠아리움 물고기 가오리 수중 공연 견학",
+          "htmlSnapshotHash": "sns-wave718-e74c4eda",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTrhtC3EVm_/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "1ecec08c-f248-b044-e053-0a32095ab044": [
@@ -2104,5 +2348,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

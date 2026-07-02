@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 34,
-  "kindergartenCount": 12,
+  "totalCount": 36,
+  "kindergartenCount": 13,
   "reviews": {
     "1e1cd35b-d484-4ba4-a527-cdcc7d4a798f": [
       {
@@ -1159,6 +1159,43 @@
           ]
         },
         "evidenceChecksum": "4ec5a0c2"
+      },
+      {
+        "id": "rev-sns-wave714-6da15f90",
+        "kindergartenId": "1ecec08c-f07c-b044-e053-0a32095ab044",
+        "title": "안양 모심유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DYbvPihSNhw/",
+        "source": "other",
+        "sourceName": "Instagram · 모심유치원",
+        "snippet": "모심유치원이 소방훈련을 진행하며 아이들이 화재 시 올바른 대피 방법을 익힌 릴스입니다.",
+        "summary": "유아들이 화재 안전과 대피 절차를 체험한 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "anyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-6da15f90",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYbvPihSNhw/",
+          "normalizedUrl": "instagram.com/reel/dybvpihsnhw",
+          "normalizedText": "모심유치원 화재대피훈련 소방훈련 올바른 대피방법 안전제일",
+          "htmlSnapshotHash": "sns-wave714-6da15f90",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYbvPihSNhw/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
       }
     ],
     "1ecec08d-05a0-b044-e053-0a32095ab044": [
@@ -1215,7 +1252,45 @@
         "approvedAt": "2026-06-30T23:59:30.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-edb1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave718-d5aefed4",
+        "kindergartenId": "1ecec08c-edb1-b044-e053-0a32095ab044",
+        "title": "안양 건영무궁화유치원 아쿠아플라넷 견학 기록",
+        "url": "https://www.instagram.com/reel/DMILFslzu5k/",
+        "source": "other",
+        "sourceName": "Instagram · 건영무궁화유치원",
+        "snippet": "건영무궁화유치원 친구들이 아쿠아플라넷에서 해파리와 상어, 가오리 등을 관찰한 릴스입니다.",
+        "summary": "유아들이 아쿠아플라넷에서 다양한 해양 생물을 관찰한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip",
+          "anyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-d5aefed4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMILFslzu5k/",
+          "normalizedUrl": "instagram.com/reel/dmilfslzu5k",
+          "normalizedText": "건영무궁화유치원 아쿠아플라넷 견학 해파리 상어 가오리",
+          "htmlSnapshotHash": "sns-wave718-d5aefed4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMILFslzu5k/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

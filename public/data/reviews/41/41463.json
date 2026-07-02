@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 56,
+  "totalCount": 57,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-fe8b-b044-e053-0a32095ab044": [
@@ -135,6 +135,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave716"
+      },
+      {
+        "id": "rev-sns-wave718-e2565b4a",
+        "kindergartenId": "1ecec08c-fe8b-b044-e053-0a32095ab044",
+        "title": "용인 프렌즈유치원 광교 아쿠아리움 견학 기록",
+        "url": "https://www.instagram.com/reel/DMPkARMSm-j/",
+        "source": "other",
+        "sourceName": "Instagram · 프렌즈유치원",
+        "snippet": "프렌즈유치원 친구들이 광교 아쿠아리움에서 바다 생물과 전시를 만난 릴스입니다.",
+        "summary": "유아들이 아쿠아리움 견학을 통해 해양 생물을 관찰한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip",
+          "yongin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-e2565b4a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMPkARMSm-j/",
+          "normalizedUrl": "instagram.com/reel/dmpkarmsm-j",
+          "normalizedText": "프렌즈유치원 광교아쿠아리움 아쿠아플라넷 견학 용인",
+          "htmlSnapshotHash": "sns-wave718-e2565b4a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMPkARMSm-j/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "1ecec08d-0b90-b044-e053-0a32095ab044": [

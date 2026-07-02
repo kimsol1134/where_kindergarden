@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 24,
-  "kindergartenCount": 10,
+  "totalCount": 26,
+  "kindergartenCount": 11,
   "reviews": {
     "1ecec08d-0224-b044-e053-0a32095ab044": [
       {
@@ -288,6 +288,42 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave718-43d53eb5",
+        "kindergartenId": "99eb3c2e-97eb-47c8-9607-2a4a376bb7be",
+        "title": "양산 국제사바나유치원 부산국립해양박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DRmNpR1D3Wv/",
+        "source": "other",
+        "sourceName": "Instagram · 국제사바나유치원",
+        "snippet": "국제사바나유치원 친구들이 부산국립해양박물관에서 해양 전시와 체험 공간을 둘러본 릴스입니다.",
+        "summary": "유아들이 해양박물관 견학을 통해 바다와 관련된 전시를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "marine-museum",
+          "field-trip",
+          "yangsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-43d53eb5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRmNpR1D3Wv/",
+          "normalizedUrl": "instagram.com/reel/drmnpr1d3wv",
+          "normalizedText": "국제사바나유치원 양산유치원 사바나유치원 부산국립해양박물관",
+          "htmlSnapshotHash": "sns-wave718-43d53eb5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRmNpR1D3Wv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "84a4b416-cd14-442e-ad8e-c2f422040366": [
@@ -977,6 +1013,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave708"
+      }
+    ],
+    "1ecec08c-f0b8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave715-d15a6b26",
+        "kindergartenId": "1ecec08c-f0b8-b044-e053-0a32095ab044",
+        "title": "양산 청어람유치원 청어람 플리마켓 기록",
+        "url": "https://www.instagram.com/reel/DaDUFAjqCu4/",
+        "source": "other",
+        "sourceName": "Instagram · 청어람유치원",
+        "snippet": "청어람유치원이 재미반과 웃음반 친구들이 함께 청어람 플리마켓을 열고 7살 형님들을 초대한 릴스입니다.",
+        "summary": "유아들이 반별 협력으로 플리마켓을 준비하고 운영한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "flea-market",
+          "market-play",
+          "collaboration",
+          "yangsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-d15a6b26",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaDUFAjqCu4/",
+          "normalizedUrl": "instagram.com/reel/dadufajqcu4",
+          "normalizedText": "청어람유치원 재미반 웃음반 청어람 플리마켓 7살 형님 초대",
+          "htmlSnapshotHash": "sns-wave715-d15a6b26",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaDUFAjqCu4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ]
   },

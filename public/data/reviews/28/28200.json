@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 75,
+  "totalCount": 76,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -2622,6 +2622,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      },
+      {
+        "id": "rev-sns-wave718-7530f29e",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "title": "인천 아삽유치원 국립해양박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DZr-x3_ic5J/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "아삽유치원 친구들이 국립해양박물관을 찾아 큰 수조와 해양 전시를 둘러본 게시물입니다.",
+        "summary": "유아들이 해양박물관 전시 관람을 통해 바다 생물과 해양 문화를 접한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "marine-museum",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-7530f29e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZr-x3_ic5J/",
+          "normalizedUrl": "instagram.com/p/dzr-x3_ic5j",
+          "normalizedText": "아삽유치원 구월동유치원 만수동유치원 국립해양박물관 견학",
+          "htmlSnapshotHash": "sns-wave718-7530f29e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZr-x3_ic5J/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "1ecec08c-f528-b044-e053-0a32095ab044": [

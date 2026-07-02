@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 24,
-  "kindergartenCount": 12,
+  "totalCount": 25,
+  "kindergartenCount": 13,
   "reviews": {
     "28a9b124-1204-4b4e-a734-e8bd09ba275b": [
       {
@@ -1127,6 +1127,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave704"
+      }
+    ],
+    "1ecec08c-f3bc-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave718-b785c771",
+        "kindergartenId": "1ecec08c-f3bc-b044-e053-0a32095ab044",
+        "title": "시흥 예일유치원 일산 아쿠아플라넷 견학 기록",
+        "url": "https://www.instagram.com/reel/DLgkaK2pe5N/",
+        "source": "other",
+        "sourceName": "Instagram · 예일유치원",
+        "snippet": "시흥 예일유치원 친구들이 일산 아쿠아플라넷에서 여러 해양 생물을 관찰한 릴스입니다.",
+        "summary": "유아들이 아쿠아플라넷 견학으로 바다 생물과 전시를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip",
+          "siheung"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave718-b785c771",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLgkaK2pe5N/",
+          "normalizedUrl": "instagram.com/reel/dlgkak2pe5n",
+          "normalizedText": "시흥예일유치원 일산 아쿠아플라넷 해양 생물 견학",
+          "htmlSnapshotHash": "sns-wave718-b785c771",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DLgkaK2pe5N/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave718"
       }
     ]
   },
