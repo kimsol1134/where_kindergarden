@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 79,
+  "totalCount": 80,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
@@ -1012,6 +1012,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T10:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave697-9cec35d7",
+        "kindergartenId": "1ecec08c-fd03-b044-e053-0a32095ab044",
+        "title": "대구 옥스포드유치원 입학식과 풍선 데이 기록",
+        "url": "https://www.instagram.com/reel/DVfCh39AcfU/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스포드유치원",
+        "snippet": "옥스포드유치원이 신입 유아들의 입학식과 풍선 데이를 함께 진행한 공개 릴스입니다.",
+        "summary": "입학식 축하와 놀이형 환영 활동을 함께 보여 주는 유치원 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission",
+          "welcome-activity",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.990Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave697-9cec35d7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVfCh39AcfU/",
+          "normalizedUrl": "instagram.com/reel/dvfch39acfu",
+          "normalizedText": "옥스포드유치원 대구 북구 입학식 신입 유아 풍선 데이",
+          "htmlSnapshotHash": "sns-wave697-9cec35d7",
+          "extractedAt": "2026-07-03T23:59:59.990Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVfCh39AcfU/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.990Z",
+        "approvedBy": "codex-manual-sns-wave697"
       }
     ],
     "1ecec08d-012e-b044-e053-0a32095ab044": [

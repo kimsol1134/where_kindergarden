@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 32,
+  "totalCount": 33,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-f862-b044-e053-0a32095ab044": [
@@ -1240,6 +1240,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T20:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave697-c933344f",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 초록유치원 5세 입학식 기록",
+        "url": "https://www.instagram.com/reel/DVbDr4jEmgJ/",
+        "source": "other",
+        "sourceName": "Instagram · 모라초록유치원",
+        "snippet": "모라초록유치원이 5세 신입 유아들의 첫 입학식을 축하하고 유치원 생활의 시작을 응원한 공개 릴스입니다.",
+        "summary": "새 학기 첫 출발과 등원 분위기를 확인할 수 있는 부산 초록유치원 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission",
+          "first-day",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.990Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave697-c933344f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVbDr4jEmgJ/",
+          "normalizedUrl": "instagram.com/reel/dvbdr4jemgj",
+          "normalizedText": "모라초록유치원 부산 사상 5세 입학식 첫 등원 새 학기",
+          "htmlSnapshotHash": "sns-wave697-c933344f",
+          "extractedAt": "2026-07-03T23:59:59.990Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVbDr4jEmgJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.990Z",
+        "approvedBy": "codex-manual-sns-wave697"
       }
     ],
     "1ecec08d-0da6-b044-e053-0a32095ab044": [

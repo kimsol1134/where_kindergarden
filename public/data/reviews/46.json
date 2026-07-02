@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 100,
-  "kindergartenCount": 34,
+  "totalCount": 101,
+  "kindergartenCount": 35,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -4688,7 +4688,45 @@
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-fe38-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave697-6957c326",
+        "kindergartenId": "1ecec08c-fe38-b044-e053-0a32095ab044",
+        "title": "광양중진초등학교병설유치원 입학식 안내 기록",
+        "url": "https://www.instagram.com/p/DUX4m7zAb__/",
+        "source": "other",
+        "sourceName": "Instagram · 광양중진초등학교병설유치원",
+        "snippet": "광양중진초등학교병설유치원이 체육관에서 진행하는 입학식과 첫 만남 일정을 안내한 공개 게시물입니다.",
+        "summary": "신입 유아와 가족이 입학식 흐름과 첫 만남을 확인할 수 있는 병설유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission",
+          "first-day",
+          "gwangyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.990Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave697-6957c326",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUX4m7zAb__/",
+          "normalizedUrl": "instagram.com/p/dux4m7zab__",
+          "normalizedText": "광양중진초등학교병설유치원 입학식 체육관 신입 유아 첫 만남",
+          "htmlSnapshotHash": "sns-wave697-6957c326",
+          "extractedAt": "2026-07-03T23:59:59.990Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUX4m7zAb__/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.990Z",
+        "approvedBy": "codex-manual-sns-wave697"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:57.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.990Z"
 }

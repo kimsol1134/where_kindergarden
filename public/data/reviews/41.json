@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1269,
+  "totalCount": 1270,
   "kindergartenCount": 489,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -28877,6 +28877,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T17:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave697-27ce90f0",
+        "kindergartenId": "1ecec08d-0513-b044-e053-0a32095ab044",
+        "title": "화성 동산숲유치원 입학식 기록",
+        "url": "https://www.instagram.com/p/DVgfFLuCQzw/",
+        "source": "other",
+        "sourceName": "Instagram · 동산숲유치원",
+        "snippet": "동산숲유치원이 향남 지역 새 학기 입학식 모습을 해시태그와 함께 공유한 공개 게시물입니다.",
+        "summary": "신입 유아의 첫 유치원 생활 시작을 확인할 수 있는 화성 동산숲유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission",
+          "first-day",
+          "hwaseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.990Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave697-27ce90f0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVgfFLuCQzw/",
+          "normalizedUrl": "instagram.com/p/dvgfflucqzw",
+          "normalizedText": "동산숲유치원 화성 향남 입학식 새 학기 첫 유치원 생활",
+          "htmlSnapshotHash": "sns-wave697-27ce90f0",
+          "extractedAt": "2026-07-03T23:59:59.990Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVgfFLuCQzw/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.990Z",
+        "approvedBy": "codex-manual-sns-wave697"
       }
     ],
     "1ecec08d-0f07-b044-e053-0a32095ab044": [
@@ -50404,5 +50440,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.980Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.990Z"
 }
