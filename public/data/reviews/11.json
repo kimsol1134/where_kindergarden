@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 676,
+  "totalCount": 677,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1666,6 +1666,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave690-11e0ef71",
+        "kindergartenId": "1ecec08d-024f-b044-e053-0a32095ab044",
+        "title": "서울 강북 화계유치원 서울교육박물관 봄나들이 기록",
+        "url": "https://www.instagram.com/p/DZ_5OOME6oH/",
+        "source": "other",
+        "sourceName": "Instagram · 화계유치원",
+        "snippet": "화계유치원이 서울교육박물관 봄나들이에서 옛 교육 문화와 생활 문화를 살펴본 공개 게시물입니다.",
+        "summary": "서울교육박물관 견학과 체험 게임을 포함한 봄 현장학습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "education-museum",
+          "gangbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave690-11e0ef71",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_5OOME6oH/",
+          "normalizedUrl": "instagram.com/p/dz_5oome6oh",
+          "normalizedText": "화계유치원 서울교육박물관 봄나들이 교육 문화 현장학습",
+          "htmlSnapshotHash": "sns-wave690-11e0ef71",
+          "extractedAt": "2026-07-03T23:59:59.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_5OOME6oH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.000Z",
+        "approvedBy": "codex-manual-sns-wave690"
       }
     ],
     "1ecec08d-0169-b044-e053-0a32095ab044": [
@@ -25415,5 +25451,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:58.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.000Z"
 }

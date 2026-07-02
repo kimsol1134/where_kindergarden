@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 100,
+  "totalCount": 101,
   "kindergartenCount": 19,
   "reviews": {
     "2dc0d75e-793f-42f2-97ee-dd37d3a84e86": [
@@ -3828,6 +3828,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave690-6fe8f31f",
+        "kindergartenId": "1ecec08d-0402-b044-e053-0a32095ab044",
+        "title": "대전 예일유치원 어린이회관 현장체험학습 기록",
+        "url": "https://www.instagram.com/reel/DY1r291AgZ1/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 예일유치원",
+        "snippet": "대전 예일유치원이 5세 유아들과 어린이회관에서 다양한 체험을 하며 놀이로 배우는 현장체험학습을 진행한 공개 릴스입니다.",
+        "summary": "어린이회관 견학과 놀이 중심 체험학습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "children-center",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave690-6fe8f31f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY1r291AgZ1/",
+          "normalizedUrl": "instagram.com/reel/dy1r291agz1",
+          "normalizedText": "대전 예일유치원 어린이회관 현장체험학습 5세 놀이 체험",
+          "htmlSnapshotHash": "sns-wave690-6fe8f31f",
+          "extractedAt": "2026-07-03T23:59:59.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY1r291AgZ1/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.000Z",
+        "approvedBy": "codex-manual-sns-wave690"
       }
     ],
     "1ecec08d-0eb8-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 127,
+  "totalCount": 128,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -264,6 +264,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave690-453fa67b",
+        "kindergartenId": "1ecec08d-07be-b044-e053-0a32095ab044",
+        "title": "김포 드림유치원 국립항공박물관 현장체험학습 기록",
+        "url": "https://www.instagram.com/p/CxdgFoRSFRK/",
+        "source": "other",
+        "sourceName": "Instagram · 김포 드림유치원",
+        "snippet": "김포 드림유치원이 국립항공박물관에서 하늘을 나는 탈것과 공항 관련 직업을 배우는 현장체험학습을 진행한 공개 게시물입니다.",
+        "summary": "국립항공박물관 견학과 어린이공항 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "aviation-museum",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave690-453fa67b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxdgFoRSFRK/",
+          "normalizedUrl": "instagram.com/p/cxdgforsfrk",
+          "normalizedText": "김포 드림유치원 현장체험학습 국립항공박물관 어린이공항체험",
+          "htmlSnapshotHash": "sns-wave690-453fa67b",
+          "extractedAt": "2026-07-03T23:59:59.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/CxdgFoRSFRK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.000Z",
+        "approvedBy": "codex-manual-sns-wave690"
       }
     ],
     "1ecec08d-0fd8-b044-e053-0a32095ab044": [
