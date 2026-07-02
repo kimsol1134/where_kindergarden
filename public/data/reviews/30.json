@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 292,
+  "totalCount": 293,
   "kindergartenCount": 68,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -2597,6 +2597,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-485ed201",
+        "kindergartenId": "1ecec08c-f56f-b044-e053-0a32095ab044",
+        "title": "대전갈마유치원 유치원 도서관 Instagram Post",
+        "url": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+        "source": "other",
+        "sourceName": "Instagram · 대전갈마유치원",
+        "snippet": "검색 결과에서 대전갈마유치원, 유치원 도서관, 돌봄 교실 이용 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "485ed201",
+        "structuredFields": {
+          "kindergartenName": "대전갈마유치원",
+          "kindergartenAddress": "대전광역시 서구 월평동로 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+          "normalizedUrl": "instagram.com/p/dv-tb9vaxkk",
+          "normalizedText": "대전갈마유치원 유치원 도서관 instagram post 검색 결과에서 대전갈마유치원 유치원 도서관 돌봄 교실 이용 단서가 확인된다.",
+          "htmlSnapshotHash": "485ed201",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전갈마유치원",
+            "kindergartenAddress": "대전광역시 서구 월평동로 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

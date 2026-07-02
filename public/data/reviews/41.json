@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1060,
-  "kindergartenCount": 444,
+  "totalCount": 1061,
+  "kindergartenCount": 445,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -40264,6 +40264,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "870af03d-17b6-44ff-9e40-73c40b90cd8d": [
+      {
+        "id": "rev-46d88d3f",
+        "kindergartenId": "870af03d-17b6-44ff-9e40-73c40b90cd8d",
+        "title": "군문유치원 그림동화 스마트카드북 Instagram Post",
+        "url": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+        "source": "other",
+        "sourceName": "Instagram · 군문유치원",
+        "snippet": "검색 결과에서 평택시 공립단설 군문유치원, 책 읽어주는 로봇 고양이, 그림동화 스마트카드북 도입 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "46d88d3f",
+        "structuredFields": {
+          "kindergartenName": "군문유치원",
+          "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+          "normalizedUrl": "instagram.com/p/da-z8kap9ab",
+          "normalizedText": "군문유치원 그림동화 스마트카드북 instagram post 검색 결과에서 평택시 공립단설 군문유치원 책 읽어주는 로봇 고양이 그림동화 스마트카드북 도입 단서가 확인된다.",
+          "htmlSnapshotHash": "46d88d3f",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "군문유치원",
+            "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

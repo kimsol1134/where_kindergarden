@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 201,
+  "totalCount": 202,
   "kindergartenCount": 82,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -8122,6 +8122,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-48451773",
+        "kindergartenId": "c3254968-a4ff-45a7-89cd-dc755eec6021",
+        "title": "사등유치원 거제도서관 현장체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DYgHCnMkiEe/",
+        "source": "other",
+        "sourceName": "Instagram · 사등유치원",
+        "snippet": "검색 결과에서 사등유치원, 거제도서관, 독서교육, 도서관 예절 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": "2026-05-18",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "48451773",
+        "structuredFields": {
+          "kindergartenName": "사등유치원",
+          "kindergartenAddress": "경상남도 거제시 언양로 555",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYgHCnMkiEe/",
+          "normalizedUrl": "instagram.com/p/dyghcnmkiee",
+          "normalizedText": "사등유치원 거제도서관 현장체험 instagram post 검색 결과에서 사등유치원 거제도서관 독서교육 도서관 예절 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "48451773",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사등유치원",
+            "kindergartenAddress": "경상남도 거제시 언양로 555",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

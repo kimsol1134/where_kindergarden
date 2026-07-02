@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 305,
-  "kindergartenCount": 103,
+  "totalCount": 307,
+  "kindergartenCount": 104,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -66,6 +66,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T14:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f1839200",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DNzVKAVZBew/",
+        "source": "other",
+        "sourceName": "Instagram · 박문유치원",
+        "snippet": "검색 결과에서 박문유치원, 율목 도서관 견학, 이야기할머니와 그림책 읽기 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f1839200",
+        "structuredFields": {
+          "kindergartenName": "박문유치원",
+          "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNzVKAVZBew/",
+          "normalizedUrl": "instagram.com/p/dnzvkavzbew",
+          "normalizedText": "박문유치원 율목도서관 견학 instagram post 검색 결과에서 박문유치원 율목 도서관 견학 이야기할머니와 그림책 읽기 단서가 확인된다.",
+          "htmlSnapshotHash": "f1839200",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "박문유치원",
+            "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -11423,6 +11475,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "f61d8682-54be-450c-9ce3-61e77345ad38": [
+      {
+        "id": "rev-553304c1",
+        "kindergartenId": "f61d8682-54be-450c-9ce3-61e77345ad38",
+        "title": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 X Post",
+        "url": "https://x.com/EduYonhap/status/1863851601636757648",
+        "source": "other",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "검색 결과에서 인천별빛초병설유치원, 꼬마저자 그림책 전시회, 읽걷쓰 꼬마저자 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "553304c1",
+        "structuredFields": {
+          "kindergartenName": "인천별빛초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 중구 은하수로 402",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1863851601636757648",
+          "normalizedUrl": "x.com/eduyonhap/status/1863851601636757648",
+          "normalizedText": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 x post 검색 결과에서 인천별빛초병설유치원 꼬마저자 그림책 전시회 읽걷쓰 꼬마저자 단서가 확인된다.",
+          "htmlSnapshotHash": "553304c1",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천별빛초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 중구 은하수로 402",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 4983,
-  "kindergartenCount": 1637,
+  "totalCount": 4991,
+  "kindergartenCount": 1642,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -58023,6 +58023,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T14:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f1839200",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "박문유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DNzVKAVZBew/",
+        "source": "other",
+        "sourceName": "Instagram · 박문유치원",
+        "snippet": "검색 결과에서 박문유치원, 율목 도서관 견학, 이야기할머니와 그림책 읽기 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f1839200",
+        "structuredFields": {
+          "kindergartenName": "박문유치원",
+          "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNzVKAVZBew/",
+          "normalizedUrl": "instagram.com/p/dnzvkavzbew",
+          "normalizedText": "박문유치원 율목도서관 견학 instagram post 검색 결과에서 박문유치원 율목 도서관 견학 이야기할머니와 그림책 읽기 단서가 확인된다.",
+          "htmlSnapshotHash": "f1839200",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "박문유치원",
+            "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNzVKAVZBew%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 율목도서관 견학 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b8c-b044-e053-0a32095ab044": [
@@ -80523,6 +80575,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-485ed201",
+        "kindergartenId": "1ecec08c-f56f-b044-e053-0a32095ab044",
+        "title": "대전갈마유치원 유치원 도서관 Instagram Post",
+        "url": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+        "source": "other",
+        "sourceName": "Instagram · 대전갈마유치원",
+        "snippet": "검색 결과에서 대전갈마유치원, 유치원 도서관, 돌봄 교실 이용 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "485ed201",
+        "structuredFields": {
+          "kindergartenName": "대전갈마유치원",
+          "kindergartenAddress": "대전광역시 서구 월평동로 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV-Tb9vAXKK/",
+          "normalizedUrl": "instagram.com/p/dv-tb9vaxkk",
+          "normalizedText": "대전갈마유치원 유치원 도서관 instagram post 검색 결과에서 대전갈마유치원 유치원 도서관 돌봄 교실 이용 단서가 확인된다.",
+          "htmlSnapshotHash": "485ed201",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전갈마유치원",
+            "kindergartenAddress": "대전광역시 서구 월평동로 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DV-Tb9vAXKK%22%20%22%EB%8C%80%EC%A0%84%EA%B0%88%EB%A7%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전갈마유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -181997,6 +182101,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T21:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-48451773",
+        "kindergartenId": "c3254968-a4ff-45a7-89cd-dc755eec6021",
+        "title": "사등유치원 거제도서관 현장체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DYgHCnMkiEe/",
+        "source": "other",
+        "sourceName": "Instagram · 사등유치원",
+        "snippet": "검색 결과에서 사등유치원, 거제도서관, 독서교육, 도서관 예절 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": "2026-05-18",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "48451773",
+        "structuredFields": {
+          "kindergartenName": "사등유치원",
+          "kindergartenAddress": "경상남도 거제시 언양로 555",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYgHCnMkiEe/",
+          "normalizedUrl": "instagram.com/p/dyghcnmkiee",
+          "normalizedText": "사등유치원 거제도서관 현장체험 instagram post 검색 결과에서 사등유치원 거제도서관 독서교육 도서관 예절 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "48451773",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사등유치원",
+            "kindergartenAddress": "경상남도 거제시 언양로 555",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ef3a-b044-e053-0a32095ab044": [
@@ -214085,6 +214241,276 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0087-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f922d41a",
+        "kindergartenId": "1ecec08d-0087-b044-e053-0a32095ab044",
+        "title": "황남초등학교병설유치원 그림책 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+        "source": "other",
+        "sourceName": "Instagram · 책방그린",
+        "snippet": "검색 결과에서 황남초병설유치원, 곰선생님, 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f922d41a",
+        "structuredFields": {
+          "kindergartenName": "황남초등학교병설유치원",
+          "kindergartenAddress": "경상북도 경주시 광중2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+          "normalizedUrl": "instagram.com/reel/dzeivjzzjym",
+          "normalizedText": "황남초등학교병설유치원 그림책 활동 instagram reel 검색 결과에서 황남초병설유치원 곰선생님 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f922d41a",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "황남초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 광중2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "f61d8682-54be-450c-9ce3-61e77345ad38": [
+      {
+        "id": "rev-553304c1",
+        "kindergartenId": "f61d8682-54be-450c-9ce3-61e77345ad38",
+        "title": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 X Post",
+        "url": "https://x.com/EduYonhap/status/1863851601636757648",
+        "source": "other",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "검색 결과에서 인천별빛초병설유치원, 꼬마저자 그림책 전시회, 읽걷쓰 꼬마저자 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "553304c1",
+        "structuredFields": {
+          "kindergartenName": "인천별빛초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 중구 은하수로 402",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1863851601636757648",
+          "normalizedUrl": "x.com/eduyonhap/status/1863851601636757648",
+          "normalizedText": "인천별빛초등학교병설유치원 꼬마저자 그림책 전시 x post 검색 결과에서 인천별빛초병설유치원 꼬마저자 그림책 전시회 읽걷쓰 꼬마저자 단서가 확인된다.",
+          "htmlSnapshotHash": "553304c1",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천별빛초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 중구 은하수로 402",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221863851601636757648%22%20%22%EC%9D%B8%EC%B2%9C%EB%B3%84%EB%B9%9B%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%BC%AC%EB%A7%88%EC%A0%80%EC%9E%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인천별빛초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 전시 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a51e9939-6d3e-487b-87d7-e29f8bba46b4": [
+      {
+        "id": "rev-19670027",
+        "kindergartenId": "a51e9939-6d3e-487b-87d7-e29f8bba46b4",
+        "title": "두호초등학교병설유치원 그림책놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWqNJ2WkRu_/",
+        "source": "other",
+        "sourceName": "Instagram · 두호초등학교병설유치원",
+        "snippet": "검색 결과에서 두호초등학교병설유치원, 유초이음, 그림책놀이, 벚꽃팝콘놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": "2026-04-02",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "19670027",
+        "structuredFields": {
+          "kindergartenName": "두호초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 창흥로36번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWqNJ2WkRu_%22%20%22%EB%91%90%ED%98%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "두호초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWqNJ2WkRu_/",
+          "normalizedUrl": "instagram.com/reel/dwqnj2wkru_",
+          "normalizedText": "두호초등학교병설유치원 그림책놀이 instagram reel 검색 결과에서 두호초등학교병설유치원 유초이음 그림책놀이 벚꽃팝콘놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "19670027",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "두호초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 창흥로36번길 23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWqNJ2WkRu_%22%20%22%EB%91%90%ED%98%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "두호초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-001f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a86a74ab",
+        "kindergartenId": "1ecec08d-001f-b044-e053-0a32095ab044",
+        "title": "금장초등학교병설유치원 그림책 오감놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DTdO1cikvGa/",
+        "source": "other",
+        "sourceName": "Instagram · 책방그린",
+        "snippet": "검색 결과에서 금장초등학교 병설유치원, 팥죽할멈과 호랑이, 그림책 독서 및 오감놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": "2026-01-13",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a86a74ab",
+        "structuredFields": {
+          "kindergartenName": "금장초등학교병설유치원",
+          "kindergartenAddress": "경상북도 경주시 등나무길 18-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTdO1cikvGa%22%20%22%EA%B8%88%EC%9E%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금장초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTdO1cikvGa/",
+          "normalizedUrl": "instagram.com/reel/dtdo1cikvga",
+          "normalizedText": "금장초등학교병설유치원 그림책 오감놀이 instagram reel 검색 결과에서 금장초등학교 병설유치원 팥죽할멈과 호랑이 그림책 독서 및 오감놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "a86a74ab",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금장초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 등나무길 18-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTdO1cikvGa%22%20%22%EA%B8%88%EC%9E%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금장초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "870af03d-17b6-44ff-9e40-73c40b90cd8d": [
+      {
+        "id": "rev-46d88d3f",
+        "kindergartenId": "870af03d-17b6-44ff-9e40-73c40b90cd8d",
+        "title": "군문유치원 그림동화 스마트카드북 Instagram Post",
+        "url": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+        "source": "other",
+        "sourceName": "Instagram · 군문유치원",
+        "snippet": "검색 결과에서 평택시 공립단설 군문유치원, 책 읽어주는 로봇 고양이, 그림동화 스마트카드북 도입 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "46d88d3f",
+        "structuredFields": {
+          "kindergartenName": "군문유치원",
+          "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA-Z8kaP9Ab/",
+          "normalizedUrl": "instagram.com/p/da-z8kap9ab",
+          "normalizedText": "군문유치원 그림동화 스마트카드북 instagram post 검색 결과에서 평택시 공립단설 군문유치원 책 읽어주는 로봇 고양이 그림동화 스마트카드북 도입 단서가 확인된다.",
+          "htmlSnapshotHash": "46d88d3f",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "군문유치원",
+            "kindergartenAddress": "경기도 평택시 군문1길 12-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA-Z8kaP9Ab%22%20%22%EA%B5%B0%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B1%85%20%EC%9D%BD%EC%96%B4%EC%A3%BC%EB%8A%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "군문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 평택시 공립단설 군문유치원과 그림동화 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
