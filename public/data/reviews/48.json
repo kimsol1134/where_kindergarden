@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 259,
-  "kindergartenCount": 96,
+  "totalCount": 261,
+  "kindergartenCount": 97,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -8204,6 +8204,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-c5bbdf5f",
+        "kindergartenId": "1ecec08d-04f6-b044-e053-0a32095ab044",
+        "title": "이솝유치원 감자캐기 체험 기록",
+        "url": "https://www.instagram.com/reel/DZbsaGGB23a/",
+        "source": "other",
+        "sourceName": "Instagram · 이솝유치원",
+        "snippet": "이솝유치원이 감자 캐기 체험에서 수확한 감자를 옮기고 관찰하는 활동을 소개한 공개 릴스입니다.",
+        "summary": "감자 캐기 체험 속에서 신체활동과 의사소통을 함께 경험한 생태활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "potato",
+          "farm-experience",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-c5bbdf5f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZbsaGGB23a/",
+          "normalizedUrl": "instagram.com/reel/dzbsaggb23a",
+          "normalizedText": "이솝유치원 감자캐기 체험 수확 감자 관찰",
+          "htmlSnapshotHash": "sns-wave678-c5bbdf5f",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZbsaGGB23a/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "1ecec08d-0c79-b044-e053-0a32095ab044": [
@@ -12363,7 +12399,45 @@
         "approvedAt": "2026-07-03T22:15:00.000Z",
         "approvedBy": "codex-manual-sns-wave677"
       }
+    ],
+    "cd612c2b-47e2-4361-a1ca-57322651de96": [
+      {
+        "id": "rev-sns-wave678-a4f0853f",
+        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
+        "title": "밀양유치원 토마토와 감자 수확 체험 기록",
+        "url": "https://www.instagram.com/reel/DaMza8ahx6c/",
+        "source": "other",
+        "sourceName": "Instagram · 밀양유치원",
+        "snippet": "밀양유치원이 유아들과 토마토와 감자를 수확하며 흙과 풀을 만져 본 공개 릴스입니다.",
+        "summary": "공립유치원 교육과정 안에서 토마토와 감자 수확을 경험한 현장체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "farm-experience",
+          "public-kindergarten"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-a4f0853f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMza8ahx6c/",
+          "normalizedUrl": "instagram.com/reel/damza8ahx6c",
+          "normalizedText": "밀양유치원 토마토 감자 수확 현장체험 교육과정",
+          "htmlSnapshotHash": "sns-wave678-a4f0853f",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaMza8ahx6c/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T22:15:00.000Z"
+  "lastUpdatedAt": "2026-07-03T22:40:00.000Z"
 }

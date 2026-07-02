@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 172,
+  "totalCount": 173,
   "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -5432,6 +5432,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-981bd38b",
+        "kindergartenId": "1ecec08c-fa01-b044-e053-0a32095ab044",
+        "title": "선창유치원 감자캐기 텃밭체험 기록",
+        "url": "https://www.instagram.com/reel/DZwx7p_t3vz/",
+        "source": "other",
+        "sourceName": "Instagram · 선창유치원",
+        "snippet": "선창유치원이 아이들과 감자캐기 텃밭체험을 진행하며 흙을 만지고 수확의 기쁨을 느낀 공개 릴스입니다.",
+        "summary": "감자를 직접 캐고 바구니에 담으며 농부의 수고와 자연의 소중함을 배운 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "potato",
+          "harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-981bd38b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZwx7p_t3vz/",
+          "normalizedUrl": "instagram.com/reel/dzwx7p_t3vz",
+          "normalizedText": "선창유치원 감자캐기 텃밭체험 수확",
+          "htmlSnapshotHash": "sns-wave678-981bd38b",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZwx7p_t3vz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "1ecec08c-faf9-b044-e053-0a32095ab044": [
@@ -7858,5 +7894,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T18:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T22:40:00.000Z"
 }

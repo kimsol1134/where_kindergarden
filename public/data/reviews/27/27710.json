@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 52,
+  "version": "2026-07-03",
+  "totalCount": 56,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -312,6 +312,58 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-7e9148c4",
+        "kindergartenId": "1ecec08c-f281-b044-e053-0a32095ab044",
+        "title": "대구 달성 드림아이유치원 통학버스 등원 V-log Instagram Reel",
+        "url": "https://www.instagram.com/reel/DH2_aEHSUdJ/",
+        "source": "other",
+        "sourceName": "Instagram · 드림아이유치원",
+        "snippet": "검색 결과에서 드림아이유치원 통학버스 등원 V-log와 #대구달성군유치원, #다사드림아이유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "commute",
+          "school-bus"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T08:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7e9148c4",
+        "structuredFields": {
+          "kindergartenName": "드림아이유치원",
+          "kindergartenAddress": "대구광역시 달성군 매곡로 92",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DH2_aEHSUdJ%22%20%22dreami2832001%22%20%22%EB%93%9C%EB%A6%BC%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "드림아이유치원은 동명이 있으나 계정의 대구달성군/다사 단서가 로컬 대구 달성군 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DH2_aEHSUdJ/",
+          "normalizedUrl": "instagram.com/reel/dh2_aehsudj",
+          "normalizedText": "대구 달성 드림아이유치원 통학버스 등원 v-log instagram reel 검색 결과에서 드림아이유치원 통학버스 등원 v-log와 #대구달성군유치원, #다사드림아이유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "7e9148c4",
+          "extractedAt": "2026-07-03T08:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "드림아이유치원",
+            "kindergartenAddress": "대구광역시 달성군 매곡로 92",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DH2_aEHSUdJ%22%20%22dreami2832001%22%20%22%EB%93%9C%EB%A6%BC%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "드림아이유치원은 동명이 있으나 계정의 대구달성군/다사 단서가 로컬 대구 달성군 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T08:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0d5b-b044-e053-0a32095ab044": [
@@ -758,6 +810,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e9321ad9",
+        "kindergartenId": "1ecec08d-0d5b-b044-e053-0a32095ab044",
+        "title": "대구 숲속예은유치원 독서이벤트 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DHDMctzhpys/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속예은유치원",
+        "snippet": "검색 결과에서 숲속예은유치원의 독서이벤트와 5살 이야기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading",
+          "book-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e9321ad9",
+        "structuredFields": {
+          "kindergartenName": "숲속예은유치원",
+          "kindergartenAddress": "대구광역시 달성군 죽곡2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHDMctzhpys%22%20%22%EC%88%B2%EC%86%8D%EC%98%88%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "숲속예은유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DHDMctzhpys/",
+          "normalizedUrl": "instagram.com/reel/dhdmctzhpys",
+          "normalizedText": "대구 숲속예은유치원 독서이벤트 instagram reel 검색 결과에서 숲속예은유치원의 독서이벤트와 5살 이야기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e9321ad9",
+          "extractedAt": "2026-07-03T14:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "숲속예은유치원",
+            "kindergartenAddress": "대구광역시 달성군 죽곡2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHDMctzhpys%22%20%22%EC%88%B2%EC%86%8D%EC%98%88%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "숲속예은유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1513,6 +1617,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-37f46160",
+        "kindergartenId": "1ecec08c-fa47-b044-e053-0a32095ab044",
+        "title": "대구 달성군 화원유치원 텃밭 김장 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRmAZpXE-am/",
+        "source": "other",
+        "sourceName": "Instagram · 화원유치원",
+        "snippet": "검색 결과에서 화원유치원의 유치원 텃밭 배추 수확과 김장 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "cooking-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "37f46160",
+        "structuredFields": {
+          "kindergartenName": "화원유치원",
+          "kindergartenAddress": "대구광역시 달성군 비슬로525길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRmAZpXE-am%22%20%22%ED%99%94%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%AC%EC%84%B1%EA%B5%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "화원유치원은 동명 후보가 있으나 달성군 및 화원읍 단서가 로컬 대구 달성군 화원유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRmAZpXE-am/",
+          "normalizedUrl": "instagram.com/reel/drmazpxe-am",
+          "normalizedText": "대구 달성군 화원유치원 텃밭 김장 활동 instagram reel 검색 결과에서 화원유치원의 유치원 텃밭 배추 수확과 김장 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "37f46160",
+          "extractedAt": "2026-07-03T11:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "화원유치원",
+            "kindergartenAddress": "대구광역시 달성군 비슬로525길 46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRmAZpXE-am%22%20%22%ED%99%94%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%AC%EC%84%B1%EA%B5%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "화원유치원은 동명 후보가 있으나 달성군 및 화원읍 단서가 로컬 대구 달성군 화원유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-038c-b044-e053-0a32095ab044": [
@@ -1830,6 +1986,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T09:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-81dc824c",
+        "kindergartenId": "1ecec08d-038c-b044-e053-0a32095ab044",
+        "title": "해피키즈유치원 텃밭 채소 수확 기록",
+        "url": "https://www.instagram.com/p/DaNkx0BktDU/",
+        "source": "other",
+        "sourceName": "Instagram · 해피키즈유치원",
+        "snippet": "해피키즈유치원이 아이들과 함께 농장과 텃밭에서 호박, 고추, 상추, 가지를 수확한 공개 게시물입니다.",
+        "summary": "유치원 텃밭에서 직접 기른 채소를 관찰하고 수확한 생태교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "harvest",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-81dc824c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaNkx0BktDU/",
+          "normalizedUrl": "instagram.com/p/dankx0bktdu",
+          "normalizedText": "해피키즈유치원 텃밭 채소 수확 호박 고추 상추 가지",
+          "htmlSnapshotHash": "sns-wave678-81dc824c",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaNkx0BktDU/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "b879d256-bab2-4ccc-b5ab-9bc5c7aeab6d": [
@@ -1973,6 +2165,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

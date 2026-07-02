@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 86,
-  "kindergartenCount": 19,
+  "version": "2026-07-03",
+  "totalCount": 91,
+  "kindergartenCount": 20,
   "reviews": {
     "1ecec08c-ff89-b044-e053-0a32095ab044": [
       {
@@ -1421,6 +1421,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c344146a",
+        "kindergartenId": "1ecec08d-01b1-b044-e053-0a32095ab044",
+        "title": "해달별유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZrq5x2T6kJ/",
+        "source": "other",
+        "sourceName": "Instagram · 해달별유치원",
+        "snippet": "검색 결과에서 해달별유치원의 시장놀이와 경제교육 단서가 확인되고, 계정 단서가 거제 해달별유치원과 연결된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economy-education"
+        ],
+        "date": "2026-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c344146a",
+        "structuredFields": {
+          "kindergartenName": "해달별유치원",
+          "kindergartenAddress": "경상남도 거제시 문동4길 15-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZrq5x2T6kJ%22%20%22%ED%95%B4%EB%8B%AC%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동명 기관이 있으나 검색 결과의 계정 단서가 거제 해달별유치원으로 확인되어 거제 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZrq5x2T6kJ/",
+          "normalizedUrl": "instagram.com/reel/dzrq5x2t6kj",
+          "normalizedText": "해달별유치원 시장놀이 instagram reel 검색 결과에서 해달별유치원의 시장놀이와 경제교육 단서가 확인되고 계정 단서가 거제 해달별유치원과 연결된다.",
+          "htmlSnapshotHash": "c344146a",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f4f6-b044-e053-0a32095ab044": [
@@ -2832,6 +2875,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-c5bbdf5f",
+        "kindergartenId": "1ecec08d-04f6-b044-e053-0a32095ab044",
+        "title": "이솝유치원 감자캐기 체험 기록",
+        "url": "https://www.instagram.com/reel/DZbsaGGB23a/",
+        "source": "other",
+        "sourceName": "Instagram · 이솝유치원",
+        "snippet": "이솝유치원이 감자 캐기 체험에서 수확한 감자를 옮기고 관찰하는 활동을 소개한 공개 릴스입니다.",
+        "summary": "감자 캐기 체험 속에서 신체활동과 의사소통을 함께 경험한 생태활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "potato",
+          "farm-experience",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-c5bbdf5f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZbsaGGB23a/",
+          "normalizedUrl": "instagram.com/reel/dzbsaggb23a",
+          "normalizedText": "이솝유치원 감자캐기 체험 수확 감자 관찰",
+          "htmlSnapshotHash": "sns-wave678-c5bbdf5f",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZbsaGGB23a/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "1ecec08d-0e8a-b044-e053-0a32095ab044": [
@@ -3295,6 +3374,188 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T21:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-48451773",
+        "kindergartenId": "c3254968-a4ff-45a7-89cd-dc755eec6021",
+        "title": "사등유치원 거제도서관 현장체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DYgHCnMkiEe/",
+        "source": "other",
+        "sourceName": "Instagram · 사등유치원",
+        "snippet": "검색 결과에서 사등유치원, 거제도서관, 독서교육, 도서관 예절 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading-activity"
+        ],
+        "date": "2026-05-18",
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "48451773",
+        "structuredFields": {
+          "kindergartenName": "사등유치원",
+          "kindergartenAddress": "경상남도 거제시 언양로 555",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYgHCnMkiEe/",
+          "normalizedUrl": "instagram.com/p/dyghcnmkiee",
+          "normalizedText": "사등유치원 거제도서관 현장체험 instagram post 검색 결과에서 사등유치원 거제도서관 독서교육 도서관 예절 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "48451773",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사등유치원",
+            "kindergartenAddress": "경상남도 거제시 언양로 555",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYgHCnMkiEe%22%20%22%EC%82%AC%EB%93%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B1%B0%EC%A0%9C%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "사등유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 거제도서관 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f0ca-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2b4095d4",
+        "kindergartenId": "1ecec08c-f0ca-b044-e053-0a32095ab044",
+        "kindergartenName": "윤슬유치원",
+        "title": "거제 윤슬유치원 크리스마스 마술공연 Reel",
+        "url": "https://www.instagram.com/reel/DD6EBTAPxsV/",
+        "source": "other",
+        "sourceName": "Instagram · 윤슬유치원",
+        "snippet": "Instagram 검색 결과에서 yunseul_kindergarten 계정의 윤슬유치원 거제유치원 문맥과 크리스마스 마술공연 활동이 확인되는 릴.",
+        "date": "2024-12-22",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "윤슬유치원",
+          "kindergartenAddress": "경상남도 거제시 문동4길 35-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DD6EBTAPxsV%22+%22%EC%9C%A4%EC%8A%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%EA%B3%B5%EC%97%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DD6EBTAPxsV/",
+          "regionEvidence": [
+            "yunseul_kindergarten",
+            "윤슬유치원",
+            "거제유치원",
+            "마술공연"
+          ]
+        },
+        "evidenceChecksum": "267167ed",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DD6EBTAPxsV/",
+          "normalizedUrl": "www.instagram.com/reel/dd6ebtapxsv",
+          "normalizedText": "거제 윤슬유치원 크리스마스 마술공연 reel instagram 검색 결과에서 yunseul_kindergarten 계정의 윤슬유치원 거제유치원 문맥과 크리스마스 마술공연 활동이 확인되는 릴.",
+          "htmlSnapshotHash": "89fff1ba",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "윤슬유치원",
+            "kindergartenAddress": "경상남도 거제시 문동4길 35-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DD6EBTAPxsV%22+%22%EC%9C%A4%EC%8A%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%EA%B3%B5%EC%97%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DD6EBTAPxsV/",
+            "regionEvidence": [
+              "yunseul_kindergarten",
+              "윤슬유치원",
+              "거제유치원",
+              "마술공연"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-3ab9b210",
+        "kindergartenId": "1ecec08c-f0ca-b044-e053-0a32095ab044",
+        "kindergartenName": "윤슬유치원",
+        "title": "거제 윤슬유치원 어린이날 마술공연 Reel",
+        "url": "https://www.instagram.com/reel/DJBAsnPPyQ9/",
+        "source": "other",
+        "sourceName": "Instagram · 윤슬유치원",
+        "snippet": "Instagram 검색 결과에서 yoonseul_kindergarten 계정의 윤슬유치원 거제유치원 문맥과 어린이날 마술공연 활동이 확인되는 릴.",
+        "date": "2025-04-28",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "윤슬유치원",
+          "kindergartenAddress": "경상남도 거제시 문동4길 35-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJBAsnPPyQ9%22+%22yoonseul_kindergarten%22+%22%EA%B1%B0%EC%A0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DJBAsnPPyQ9/",
+          "regionEvidence": [
+            "yoonseul_kindergarten",
+            "윤슬유치원",
+            "거제유치원",
+            "마술공연"
+          ]
+        },
+        "evidenceChecksum": "036b9781",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJBAsnPPyQ9/",
+          "normalizedUrl": "www.instagram.com/reel/djbasnppyq9",
+          "normalizedText": "거제 윤슬유치원 어린이날 마술공연 reel instagram 검색 결과에서 yoonseul_kindergarten 계정의 윤슬유치원 거제유치원 문맥과 어린이날 마술공연 활동이 확인되는 릴.",
+          "htmlSnapshotHash": "17832065",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "윤슬유치원",
+            "kindergartenAddress": "경상남도 거제시 문동4길 35-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJBAsnPPyQ9%22+%22yoonseul_kindergarten%22+%22%EA%B1%B0%EC%A0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DJBAsnPPyQ9/",
+            "regionEvidence": [
+              "yoonseul_kindergarten",
+              "윤슬유치원",
+              "거제유치원",
+              "마술공연"
+            ]
+          }
+        }
       }
     ],
     "1ecec08c-f46e-b044-e053-0a32095ab044": [
@@ -4236,6 +4497,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

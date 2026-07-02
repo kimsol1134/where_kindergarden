@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 65,
+  "totalCount": 66,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -778,6 +778,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
+      },
+      {
+        "id": "rev-sns-wave678-2423170c",
+        "kindergartenId": "1ecec08c-f187-b044-e053-0a32095ab044",
+        "title": "기암유치원 유치원 텃밭 감자캐기 기록",
+        "url": "https://www.instagram.com/reel/C9UMz4Uvtcv/",
+        "source": "other",
+        "sourceName": "Instagram · 기암유치원",
+        "snippet": "기암유치원이 유치원 텃밭에서 감자를 캐며 자연의 소중함과 수확의 기쁨을 경험한 공개 릴스입니다.",
+        "summary": "호미로 흙을 파고 감자를 찾아보는 텃밭 수확 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "potato",
+          "nature"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-2423170c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C9UMz4Uvtcv/",
+          "normalizedUrl": "instagram.com/reel/c9umz4uvtcv",
+          "normalizedText": "기암유치원 감자캐기 유치원 텃밭 수확",
+          "htmlSnapshotHash": "sns-wave678-2423170c",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C9UMz4Uvtcv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "1ecec08c-fa67-b044-e053-0a32095ab044": [

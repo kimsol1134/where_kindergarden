@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 20,
+  "version": "2026-07-03",
+  "totalCount": 21,
   "kindergartenCount": 6,
   "reviews": {
     "1fc6dd86-ccc1-d1d2-e053-0a32095ad1d2": [
@@ -939,6 +939,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T17:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-a51716a3",
+        "kindergartenId": "1ecec08c-f595-b044-e053-0a32095ab044",
+        "title": "정관유치원 양파 수확 텃밭활동 기록",
+        "url": "https://www.instagram.com/p/DZ4wQ7VEj3B/",
+        "source": "other",
+        "sourceName": "Instagram · 정관유치원",
+        "snippet": "정관유치원이 유치원 텃밭에서 아이들과 양파를 수확한 공개 게시물입니다.",
+        "summary": "아이들이 손길을 보탠 텃밭에서 양파를 직접 수확한 생태활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "onion",
+          "harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-a51716a3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ4wQ7VEj3B/",
+          "normalizedUrl": "instagram.com/p/dz4wq7vej3b",
+          "normalizedText": "정관유치원 텃밭 양파 수확",
+          "htmlSnapshotHash": "sns-wave678-a51716a3",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ4wQ7VEj3B/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ]
   }

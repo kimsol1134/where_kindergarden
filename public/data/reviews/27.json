@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 509,
+  "totalCount": 510,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -20392,6 +20392,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T09:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave678-81dc824c",
+        "kindergartenId": "1ecec08d-038c-b044-e053-0a32095ab044",
+        "title": "해피키즈유치원 텃밭 채소 수확 기록",
+        "url": "https://www.instagram.com/p/DaNkx0BktDU/",
+        "source": "other",
+        "sourceName": "Instagram · 해피키즈유치원",
+        "snippet": "해피키즈유치원이 아이들과 함께 농장과 텃밭에서 호박, 고추, 상추, 가지를 수확한 공개 게시물입니다.",
+        "summary": "유치원 텃밭에서 직접 기른 채소를 관찰하고 수확한 생태교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "harvest",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-81dc824c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaNkx0BktDU/",
+          "normalizedUrl": "instagram.com/p/dankx0bktdu",
+          "normalizedText": "해피키즈유치원 텃밭 채소 수확 호박 고추 상추 가지",
+          "htmlSnapshotHash": "sns-wave678-81dc824c",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaNkx0BktDU/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
       }
     ],
     "1ecec08d-0750-b044-e053-0a32095ab044": [
@@ -22359,5 +22395,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T22:15:00.000Z"
+  "lastUpdatedAt": "2026-07-03T22:40:00.000Z"
 }
