@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 197,
+  "totalCount": 198,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -4680,6 +4680,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T14:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave670-9d13d271",
+        "kindergartenId": "1ecec08c-ee38-b044-e053-0a32095ab044",
+        "title": "젤라유치원 도자기 만들기 체험 기록",
+        "url": "https://www.instagram.com/p/DaPCq7apf-V/",
+        "source": "other",
+        "sourceName": "Instagram · 젤라유치원",
+        "snippet": "천안 젤라유치원 아이들이 도자기 만들기 체험을 진행한 모습을 소개한 공개 게시물입니다.",
+        "summary": "흙의 촉감과 작품 완성을 경험하는 도예 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "clay",
+          "ceramics"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave670-9d13d271",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaPCq7apf-V/",
+          "normalizedUrl": "instagram.com/p/dapcq7apf-v",
+          "normalizedText": "천안 젤라유치원 도자기 만들기 체험 도예체험",
+          "htmlSnapshotHash": "sns-wave670-9d13d271",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaPCq7apf-V/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "codex-manual-sns-wave670"
       }
     ],
     "1ecec08d-06c9-b044-e053-0a32095ab044": [
@@ -8992,5 +9028,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T19:20:00.000Z"
 }

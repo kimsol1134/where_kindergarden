@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 58,
-  "kindergartenCount": 20,
+  "version": "2026-07-03",
+  "totalCount": 62,
+  "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
       {
@@ -634,6 +634,42 @@
         "snippet": "히스테리공주0 리뷰 1,123사진 161 아이들 케어 잘해주세요 표정을 눌러 반응을 남겨 보세요! 1번째 방문",
         "date": "2022-06-02",
         "collectedAt": "2026-04-05T15:21:45.101Z"
+      },
+      {
+        "id": "rev-sns-wave670-213ec61d",
+        "kindergartenId": "1ecec08c-f187-b044-e053-0a32095ab044",
+        "title": "기암유치원 조물조물 도자기 만들기 체험 기록",
+        "url": "https://www.instagram.com/p/DONqG3kko4H/",
+        "source": "other",
+        "sourceName": "Instagram · 기암유치원",
+        "snippet": "기암유치원이 조물조물 도자기 만들기 체험을 소개한 공개 게시물입니다.",
+        "summary": "손으로 흙을 빚는 도예 체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "clay",
+          "ceramics"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave670-213ec61d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DONqG3kko4H/",
+          "normalizedUrl": "instagram.com/p/donqg3kko4h",
+          "normalizedText": "기암유치원 도예체험 조물조물 도자기 만들기",
+          "htmlSnapshotHash": "sns-wave670-213ec61d",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DONqG3kko4H/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "codex-manual-sns-wave670"
       }
     ],
     "1ecec08c-fa67-b044-e053-0a32095ab044": [
@@ -2322,6 +2358,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-97aa50fb",
+        "kindergartenId": "1ecec08d-05c4-b044-e053-0a32095ab044",
+        "title": "인천 복자유치원 딸기 농장 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DX6K7hpkjIk/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 복자유치원",
+        "snippet": "검색 결과에서 인천 복자유치원 계정, 6세 딸기 농장 견학, 복자유치원 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "farm-experience"
+        ],
+        "date": "2026-05-04",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "97aa50fb",
+        "structuredFields": {
+          "kindergartenName": "복자유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX6K7hpkjIk%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EB%86%8D%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "복자유치원 동명 후보가 있으나 검색 결과의 인천 복자유치원 계정 단서가 로컬 인천 남동구 복자유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX6K7hpkjIk/",
+          "normalizedUrl": "instagram.com/p/dx6k7hpkjik",
+          "normalizedText": "인천 복자유치원 딸기 농장 견학 instagram post 검색 결과에서 인천 복자유치원 계정 6세 딸기 농장 견학 복자유치원 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "97aa50fb",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "복자유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX6K7hpkjIk%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EB%86%8D%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "복자유치원 동명 후보가 있으나 검색 결과의 인천 복자유치원 계정 단서가 로컬 인천 남동구 복자유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0dc5-b044-e053-0a32095ab044": [
@@ -2422,7 +2510,105 @@
         "approvedAt": "2026-07-02T10:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0a17-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8d4acc74",
+        "kindergartenId": "1ecec08d-0a17-b044-e053-0a32095ab044",
+        "title": "인천 청담숲유치원 예술 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUhyRxqCrtw/",
+        "source": "other",
+        "sourceName": "Instagram · 청담숲유치원",
+        "snippet": "검색 결과에서 청담숲유치원 예술 발표회와 유아 공연 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "arts-presentation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8d4acc74",
+        "structuredFields": {
+          "kindergartenName": "청담숲유치원",
+          "kindergartenAddress": "인천광역시 남동구 만경로8번길 33",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUhyRxqCrtw%22%20%22%EC%B2%AD%EB%8B%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "청담숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUhyRxqCrtw/",
+          "normalizedUrl": "instagram.com/reel/duhyrxqcrtw",
+          "normalizedText": "인천 청담숲유치원 예술 발표회 instagram reel 검색 결과에서 청담숲유치원 예술 발표회와 유아 공연 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "8d4acc74",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "청담숲유치원",
+            "kindergartenAddress": "인천광역시 남동구 만경로8번길 33",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUhyRxqCrtw%22%20%22%EC%B2%AD%EB%8B%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "청담숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ef6b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-69a8caef",
+        "kindergartenId": "1ecec08c-ef6b-b044-e053-0a32095ab044",
+        "title": "논현유치원 협력수업 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZoCFgIThSc/",
+        "source": "other",
+        "sourceName": "Instagram · 논현유치원",
+        "snippet": "검색 결과에서 인천금융고와 논현유치원의 협력수업, 시장놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "collaboration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "69a8caef",
+        "structuredFields": {
+          "kindergartenName": "논현유치원",
+          "kindergartenAddress": "인천광역시 남동구 은봉로 177",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZoCFgIThSc%22%20%22%EB%85%BC%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "논현유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 시장놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZoCFgIThSc/",
+          "normalizedUrl": "instagram.com/reel/dzocfgithsc",
+          "normalizedText": "논현유치원 협력수업 시장놀이 instagram reel 검색 결과에서 인천금융고와 논현유치원의 협력수업 시장놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "69a8caef",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 153,
+  "totalCount": 154,
   "kindergartenCount": 46,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -283,6 +283,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T07:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave670-44ab213c",
+        "kindergartenId": "7b8827db-706c-4ee2-a327-73af24ca111a",
+        "title": "후평숲속유치원 구름다리 작품전시회 기록",
+        "url": "https://www.instagram.com/reel/DQW1GeEk6NF/",
+        "source": "other",
+        "sourceName": "Instagram · 후평숲속유치원",
+        "snippet": "춘천 후평숲속유치원이 자연 속 구름다리 작품전시회를 소개한 공개 릴스입니다.",
+        "summary": "아이들이 표현한 작품을 전시한 미술 프로젝트를 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "exhibition",
+          "project"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave670-44ab213c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQW1GeEk6NF/",
+          "normalizedUrl": "instagram.com/reel/dqw1geek6nf",
+          "normalizedText": "춘천 후평숲속유치원 구름다리 작품전시회 미술 프로젝트",
+          "htmlSnapshotHash": "sns-wave670-44ab213c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQW1GeEk6NF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "codex-manual-sns-wave670"
       }
     ],
     "601a8869-27d3-4aa8-82c6-ee95c7f3644b": [
@@ -7028,5 +7064,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T17:55:00.000Z"
+  "lastUpdatedAt": "2026-07-03T19:20:00.000Z"
 }

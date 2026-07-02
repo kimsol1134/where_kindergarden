@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 15,
-  "kindergartenCount": 6,
+  "version": "2026-07-03",
+  "totalCount": 17,
+  "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f7c2-b044-e053-0a32095ab044": [
       {
@@ -670,6 +670,98 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T21:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ee84-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b0d66a5b",
+        "kindergartenId": "1ecec08c-ee84-b044-e053-0a32095ab044",
+        "title": "초월한솔유치원 아나바다 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+        "source": "other",
+        "sourceName": "Instagram · 초월한솔유치원",
+        "snippet": "검색 결과에서 초월한솔유치원, 아나바다시장놀이, 경기광주유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b0d66a5b",
+        "structuredFields": {
+          "kindergartenName": "초월한솔유치원",
+          "kindergartenAddress": "경기도 광주시 현산로 96",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+          "normalizedUrl": "instagram.com/reel/dyaxx6tt1ds",
+          "normalizedText": "초월한솔유치원 아나바다 시장놀이 instagram reel 검색 결과에서 초월한솔유치원 아나바다시장놀이 경기광주유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "b0d66a5b",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초월한솔유치원",
+            "kindergartenAddress": "경기도 광주시 현산로 96",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fcfa-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave670-256393ef",
+        "kindergartenId": "1ecec08c-fcfa-b044-e053-0a32095ab044",
+        "title": "태전초등학교병설유치원 물레체험 밥그릇 만들기 기록",
+        "url": "https://www.instagram.com/p/DUSMxtHkpjv/",
+        "source": "other",
+        "sourceName": "Instagram · 태전초등학교병설유치원",
+        "snippet": "광주시 태전초등학교병설유치원이 물레체험으로 밥그릇 만들기를 한 공개 게시물입니다.",
+        "summary": "물레와 흙을 활용한 도자기 공예 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "clay",
+          "wheel-throwing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave670-256393ef",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUSMxtHkpjv/",
+          "normalizedUrl": "instagram.com/p/dusmxthkpjv",
+          "normalizedText": "태전초등학교병설유치원 물레체험 밥그릇 만들기 도자기공예",
+          "htmlSnapshotHash": "sns-wave670-256393ef",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUSMxtHkpjv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "codex-manual-sns-wave670"
       }
     ]
   }

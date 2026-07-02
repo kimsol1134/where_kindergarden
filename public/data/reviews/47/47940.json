@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "totalCount": 2,
+  "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-ede0-b044-e053-0a32095ab044": [
       {
@@ -39,6 +39,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:25:00.000Z",
         "approvedBy": "codex-manual-sns-wave666"
+      }
+    ],
+    "1ecec08c-f257-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave670-b51ea38a",
+        "kindergartenId": "1ecec08c-f257-b044-e053-0a32095ab044",
+        "title": "천부초등학교병설유치원 도자기공예 체험 기록",
+        "url": "https://www.instagram.com/p/DSkN4W_ESlu/",
+        "source": "other",
+        "sourceName": "Instagram · 천부초등학교병설유치원",
+        "snippet": "천부병설유치원 아이들이 도자기공예 체험에 참여한 모습을 소개한 공개 게시물입니다.",
+        "summary": "흙을 만지고 도자기 작품을 완성하는 공예 체험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art",
+          "clay",
+          "ceramics"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave670-b51ea38a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSkN4W_ESlu/",
+          "normalizedUrl": "instagram.com/p/dskn4w_eslu",
+          "normalizedText": "천부초등학교병설유치원 도자기공예 체험 유아도예체험",
+          "htmlSnapshotHash": "sns-wave670-b51ea38a",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSkN4W_ESlu/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "codex-manual-sns-wave670"
       }
     ]
   }
