@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 193,
-  "kindergartenCount": 79,
+  "version": "2026-07-03",
+  "totalCount": 199,
+  "kindergartenCount": 81,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -24,6 +24,58 @@
           "선생님",
           "활동"
         ]
+      },
+      {
+        "id": "rev-b7ba7bd0",
+        "kindergartenId": "1ecec08c-f4d1-b044-e053-0a32095ab044",
+        "title": "창원 성모유치원 신학기 오리엔테이션 Instagram Post",
+        "url": "https://www.instagram.com/p/DVK7c2WEggx/",
+        "source": "other",
+        "sourceName": "Instagram · 창원 성모유치원",
+        "snippet": "검색 결과에서 창원 성모유치원의 신학기 오리엔테이션 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orientation",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b7ba7bd0",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경상남도 창원시 의창구 우곡로 177",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVK7c2WEggx%22%20%22%EC%B0%BD%EC%9B%90%20%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성모유치원은 동명 후보가 많으나 창원 계정 단서가 로컬 창원시 의창구 성모유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVK7c2WEggx/",
+          "normalizedUrl": "instagram.com/p/dvk7c2weggx",
+          "normalizedText": "창원 성모유치원 신학기 오리엔테이션 instagram post 검색 결과에서 창원 성모유치원의 신학기 오리엔테이션 단서가 확인된다.",
+          "htmlSnapshotHash": "b7ba7bd0",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경상남도 창원시 의창구 우곡로 177",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVK7c2WEggx%22%20%22%EC%B0%BD%EC%9B%90%20%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성모유치원은 동명 후보가 많으나 창원 계정 단서가 로컬 창원시 의창구 성모유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f6e8-b044-e053-0a32095ab044": [
@@ -504,6 +556,58 @@
           ]
         },
         "evidenceChecksum": "32b630ee"
+      },
+      {
+        "id": "rev-f0a33596",
+        "kindergartenId": "1ecec08d-0224-b044-e053-0a32095ab044",
+        "title": "양산 중앙유치원 종합안전체험랜드 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DJa_M7pTZk-/",
+        "source": "other",
+        "sourceName": "Instagram · 양산 중앙유치원",
+        "snippet": "검색 결과에서 종합안전체험랜드 현장체험학습, 6세반, #양산중앙유치원 #중앙유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f0a33596",
+        "structuredFields": {
+          "kindergartenName": "중앙유치원",
+          "kindergartenAddress": "경상남도 양산시 서남1길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJa_M7pTZk%22%20%22%EC%96%91%EC%82%B0%20%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A2%85%ED%95%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EB%9E%9C%EB%93%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "중앙유치원은 동명이 많으나 joongang_k 계정 및 양산중앙유치원 단서가 로컬 양산시 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJa_M7pTZk-/",
+          "normalizedUrl": "instagram.com/p/dja_m7ptzk-",
+          "normalizedText": "양산 중앙유치원 종합안전체험랜드 현장체험학습 instagram post 검색 결과에서 종합안전체험랜드 현장체험학습, 6세반, #양산중앙유치원 #중앙유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "f0a33596",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "중앙유치원",
+            "kindergartenAddress": "경상남도 양산시 서남1길 46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJa_M7pTZk%22%20%22%EC%96%91%EC%82%B0%20%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A2%85%ED%95%A9%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EB%9E%9C%EB%93%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "중앙유치원은 동명이 많으나 joongang_k 계정 및 양산중앙유치원 단서가 로컬 양산시 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-065a-b044-e053-0a32095ab044": [
@@ -4513,6 +4617,58 @@
           ]
         },
         "evidenceChecksum": "1e4695d4"
+      },
+      {
+        "id": "rev-c8e6d9bb",
+        "kindergartenId": "1ecec08c-f4dc-b044-e053-0a32095ab044",
+        "title": "통영 성민유치원 입학설명회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBggi-8P17R/",
+        "source": "other",
+        "sourceName": "Instagram · 통영 성민유치원",
+        "snippet": "검색 결과에서 통영 성민유치원의 입학설명회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c8e6d9bb",
+        "structuredFields": {
+          "kindergartenName": "성민유치원",
+          "kindergartenAddress": "경상남도 통영시 데메4길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBggi-8P17R%22%20%22%ED%86%B5%EC%98%81%20%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성민유치원은 동명 후보가 있으나 통영 단서가 로컬 경남 통영시 성민유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBggi-8P17R/",
+          "normalizedUrl": "instagram.com/reel/dbggi-8p17r",
+          "normalizedText": "통영 성민유치원 입학설명회 instagram reel 검색 결과에서 통영 성민유치원의 입학설명회 단서가 확인된다.",
+          "htmlSnapshotHash": "c8e6d9bb",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성민유치원",
+            "kindergartenAddress": "경상남도 통영시 데메4길 46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBggi-8P17R%22%20%22%ED%86%B5%EC%98%81%20%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성민유치원은 동명 후보가 있으나 통영 단서가 로컬 경남 통영시 성민유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f277-b044-e053-0a32095ab044": [
@@ -8060,6 +8216,58 @@
           ]
         },
         "evidenceChecksum": "8506f440"
+      },
+      {
+        "id": "rev-684d3f6b",
+        "kindergartenId": "1ecec08c-ef3a-b044-e053-0a32095ab044",
+        "title": "양산 웅상유치원 독서 프로그램 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C0LjJXZPkAR/",
+        "source": "other",
+        "sourceName": "Instagram · 웅상유치원",
+        "snippet": "검색 결과에서 웅상유치원의 1학기 독서 프로그램 영상 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading-program",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "684d3f6b",
+        "structuredFields": {
+          "kindergartenName": "웅상유치원",
+          "kindergartenAddress": "경상남도 양산시 번영로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0LjJXZPkAR%22%20%22%EC%9B%85%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%85%EC%84%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "웅상유치원은 병설 후보가 있으나 계정의 소개 문구와 로컬 사립 웅상유치원 명칭이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C0LjJXZPkAR/",
+          "normalizedUrl": "instagram.com/reel/c0ljjxzpkar",
+          "normalizedText": "양산 웅상유치원 독서 프로그램 instagram reel 검색 결과에서 웅상유치원의 1학기 독서 프로그램 영상 단서가 확인된다.",
+          "htmlSnapshotHash": "684d3f6b",
+          "extractedAt": "2026-07-03T14:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "웅상유치원",
+            "kindergartenAddress": "경상남도 양산시 번영로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0LjJXZPkAR%22%20%22%EC%9B%85%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%85%EC%84%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "웅상유치원은 병설 후보가 있으나 계정의 소개 문구와 로컬 사립 웅상유치원 명칭이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "fb3ac7a9-d959-498e-82a0-b4abd1a017b6": [
@@ -8943,6 +9151,113 @@
           ]
         },
         "evidenceChecksum": "17427c79"
+      }
+    ],
+    "1ecec08d-0d27-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7eb3f5aa",
+        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044",
+        "title": "창원 토월유치원 입학식 써클활동 X Post",
+        "url": "https://x.com/EduYonhap/status/1897538432139682031",
+        "source": "other",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "entrance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T05:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7eb3f5aa",
+        "structuredFields": {
+          "kindergartenName": "토월유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1897538432139682031",
+          "normalizedUrl": "x.com/eduyonhap/status/1897538432139682031",
+          "normalizedText": "창원 토월유치원 입학식 써클활동 x post 검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
+          "htmlSnapshotHash": "7eb3f5aa",
+          "extractedAt": "2026-07-03T05:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "토월유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T05:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-07ff-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a47a575c",
+        "kindergartenId": "1ecec08d-07ff-b044-e053-0a32095ab044",
+        "title": "남해유치원 소방훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRlSJ8ijwrn/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 남해유치원에서 소방훈련 중이며 소방차와 소방대원이 왔다는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-drill"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a47a575c",
+        "structuredFields": {
+          "kindergartenName": "남해유치원",
+          "kindergartenAddress": "경상남도 남해군 망운로61번길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRlSJ8ijwrn%22%20%22%EB%82%A8%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남해유치원 정확 명칭과 남해 지역 단서가 로컬 원장부의 경남 남해군 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRlSJ8ijwrn/",
+          "normalizedUrl": "instagram.com/reel/drlsj8ijwrn",
+          "normalizedText": "남해유치원 소방훈련 instagram reel 검색 결과에서 남해유치원에서 소방훈련 중이며 소방차와 소방대원이 왔다는 단서가 확인된다.",
+          "htmlSnapshotHash": "a47a575c",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남해유치원",
+            "kindergartenAddress": "경상남도 남해군 망운로61번길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRlSJ8ijwrn%22%20%22%EB%82%A8%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남해유치원 정확 명칭과 남해 지역 단서가 로컬 원장부의 경남 남해군 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

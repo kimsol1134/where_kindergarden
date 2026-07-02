@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 96,
+  "version": "2026-07-03",
+  "totalCount": 97,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -4181,6 +4181,58 @@
           ]
         },
         "evidenceChecksum": "ea4cc9a4"
+      },
+      {
+        "id": "rev-926bb87f",
+        "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
+        "title": "울산 현대동부유치원 롯데월드 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DZJQPnmjzfd/",
+        "source": "other",
+        "sourceName": "Instagram · 현대동부유치원",
+        "snippet": "검색 결과에서 현대동부유치원 7세, 롯데월드, 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "926bb87f",
+        "structuredFields": {
+          "kindergartenName": "현대동부유치원",
+          "kindergartenAddress": "울산광역시 동구 안산로 50-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZJQPnmjzfd%22%20%22%ED%98%84%EB%8C%80%EB%8F%99%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현대동부유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZJQPnmjzfd/",
+          "normalizedUrl": "instagram.com/p/dzjqpnmjzfd",
+          "normalizedText": "울산 현대동부유치원 롯데월드 현장체험학습 instagram post 검색 결과에서 현대동부유치원 7세 롯데월드 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "926bb87f",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현대동부유치원",
+            "kindergartenAddress": "울산광역시 동구 안산로 50-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZJQPnmjzfd%22%20%22%ED%98%84%EB%8C%80%EB%8F%99%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현대동부유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f5c4-b044-e053-0a32095ab044": [

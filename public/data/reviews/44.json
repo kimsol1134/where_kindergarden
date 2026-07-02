@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 158,
+  "version": "2026-07-03",
+  "totalCount": 162,
   "kindergartenCount": 53,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -2722,6 +2722,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f13d514",
+        "kindergartenId": "86d9f494-609c-4bfe-a2b2-3739219e3667",
+        "title": "천안 백석유치원 급식모니터링·배식 Instagram Post",
+        "url": "https://www.instagram.com/p/DaMohw_pG8Z/",
+        "source": "other",
+        "sourceName": "Instagram · 백석유치원",
+        "snippet": "검색 결과에서 급식모니터링 및 배식, #백석유치원 #천안백석유치원 #백석동유치원 #성성동유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "meal",
+          "parent-monitoring"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f13d514",
+        "structuredFields": {
+          "kindergartenName": "백석유치원",
+          "kindergartenAddress": "충청남도 천안시 서북구 한들2로 34-42",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaMohw_pG8Z%22%20%22%EB%B0%B1%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%9C%EC%95%88%EB%B0%B1%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "백석유치원은 로컬 원장부에서 단일 정확 명칭이며 천안/백석동/성성동 단서가 주소와 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMohw_pG8Z/",
+          "normalizedUrl": "instagram.com/p/damohw_pg8z",
+          "normalizedText": "천안 백석유치원 급식모니터링·배식 instagram post 검색 결과에서 급식모니터링 및 배식, #백석유치원 #천안백석유치원 #백석동유치원 #성성동유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "0f13d514",
+          "extractedAt": "2026-07-03T07:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "백석유치원",
+            "kindergartenAddress": "충청남도 천안시 서북구 한들2로 34-42",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaMohw_pG8Z%22%20%22%EB%B0%B1%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%9C%EC%95%88%EB%B0%B1%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "백석유치원은 로컬 원장부에서 단일 정확 명칭이며 천안/백석동/성성동 단서가 주소와 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "7bd3563c-ce2b-4161-ae7e-3a43a150bba5": [
@@ -4600,6 +4652,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9066b8d6",
+        "kindergartenId": "1ecec08d-0893-b044-e053-0a32095ab044",
+        "title": "천안 대한유치원 보호자 참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ4VL4duEN9/",
+        "source": "other",
+        "sourceName": "Instagram · 천안 대한유치원",
+        "snippet": "검색 결과에서 천안 대한유치원 계정, 보호자 참여수업, 특성화 공개수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9066b8d6",
+        "structuredFields": {
+          "kindergartenName": "대한유치원",
+          "kindergartenAddress": "충청남도 천안시 서북구 동서대로 110-24",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ4VL4duEN9%22%20%22%EB%8C%80%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%ED%98%B8%EC%9E%90%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대한유치원 동명 후보가 있으나 천안 대한유치원 계정 단서가 로컬 충남 천안시 서북구 대한유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4VL4duEN9/",
+          "normalizedUrl": "instagram.com/reel/dz4vl4duen9",
+          "normalizedText": "천안 대한유치원 보호자 참여수업 instagram reel 검색 결과에서 천안 대한유치원 계정 보호자 참여수업 특성화 공개수업 단서가 확인된다.",
+          "htmlSnapshotHash": "9066b8d6",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대한유치원",
+            "kindergartenAddress": "충청남도 천안시 서북구 동서대로 110-24",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ4VL4duEN9%22%20%22%EB%8C%80%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%ED%98%B8%EC%9E%90%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대한유치원 동명 후보가 있으나 천안 대한유치원 계정 단서가 로컬 충남 천안시 서북구 대한유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f725-b044-e053-0a32095ab044": [
@@ -6098,6 +6202,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ab744a3d",
+        "kindergartenId": "1ecec08c-f996-b044-e053-0a32095ab044",
+        "title": "천안일봉유치원 동아리 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DPBaXy5j14b/",
+        "source": "other",
+        "sourceName": "Instagram · 천안일봉유치원",
+        "snippet": "검색 결과에서 천안일봉유치원, 공립단설, 동남구유치원, 동아리 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "club-presentation"
+        ],
+        "date": "2025-09-25",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ab744a3d",
+        "structuredFields": {
+          "kindergartenName": "천안일봉유치원",
+          "kindergartenAddress": "충청남도 천안시 동남구 다가2길 3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPBaXy5j14b%22%20%22%EC%B2%9C%EC%95%88%EC%9D%BC%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "천안일봉유치원은 로컬 원장부 단일 정확 명칭이며 동남구 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPBaXy5j14b/",
+          "normalizedUrl": "instagram.com/reel/dpbaxy5j14b",
+          "normalizedText": "천안일봉유치원 동아리 발표회 instagram reel 검색 결과에서 천안일봉유치원 공립단설 동남구유치원 동아리 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "ab744a3d",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "천안일봉유치원",
+            "kindergartenAddress": "충청남도 천안시 동남구 다가2길 3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPBaXy5j14b%22%20%22%EC%B2%9C%EC%95%88%EC%9D%BC%EB%B4%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "천안일봉유치원은 로컬 원장부 단일 정확 명칭이며 동남구 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "79b9ccee-bdfe-4f5f-95b2-d7a779e750a1": [
@@ -6970,6 +7126,58 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-2dd38f9d",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "title": "아산 삼성샛별유치원 식단 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWyoo0ACev5/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성샛별유치원",
+        "snippet": "검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "school-meal",
+          "meal-plan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2dd38f9d",
+        "structuredFields": {
+          "kindergartenName": "삼성샛별유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWyoo0ACev5/",
+          "normalizedUrl": "instagram.com/reel/dwyoo0acev5",
+          "normalizedText": "아산 삼성샛별유치원 식단 instagram reel 검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+          "htmlSnapshotHash": "2dd38f9d",
+          "extractedAt": "2026-07-03T11:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성샛별유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

@@ -125,7 +125,11 @@ function includesText(value: string | null | undefined, needle: string) {
   return value?.toLowerCase().includes(needle) ?? false;
 }
 
-export function ReviewsBrowser() {
+interface ReviewsBrowserProps {
+  variant?: 'search' | 'links';
+}
+
+export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
   const [reviewsData, setReviewsData] = useState<ReviewsData | null>(null);
   const [kindergartens, setKindergartens] = useState<KindergartenLookupItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -285,18 +289,29 @@ export function ReviewsBrowser() {
               우리동네 유치원
             </Link>
             <h1 className="text-2xl font-bold tracking-normal text-[var(--brand-ink)] sm:text-3xl">
-              후기 전체 확인
+              {variant === 'links' ? '전체 후기 원문 링크' : '후기 전체 확인'}
             </h1>
             <p className="mt-2 text-sm text-[var(--brand-ink-soft)]">
-              수집된 후기의 원문 링크를 한 화면에서 검색하고 열어볼 수 있습니다.
+              {variant === 'links'
+                ? '수집된 모든 후기 원문을 페이지 단위로 확인하고 열어볼 수 있습니다.'
+                : '수집된 후기의 원문 링크를 한 화면에서 검색하고 열어볼 수 있습니다.'}
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              <Link
-                href="/reviews/all"
-                className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
-              >
-                전체 링크 보기
-              </Link>
+              {variant === 'links' ? (
+                <Link
+                  href="/reviews"
+                  className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
+                >
+                  후기 검색으로 돌아가기
+                </Link>
+              ) : (
+                <Link
+                  href="/reviews/all"
+                  className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
+                >
+                  전체 링크 보기
+                </Link>
+              )}
               <a
                 href="/data/reviews.json"
                 target="_blank"

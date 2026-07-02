@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 264,
-  "kindergartenCount": 83,
+  "version": "2026-07-03",
+  "totalCount": 271,
+  "kindergartenCount": 85,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -1222,6 +1222,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aaab0fa9",
+        "kindergartenId": "1ecec08c-f5ed-b044-e053-0a32095ab044",
+        "title": "부산 해운대 더푸른유치원 입학설명회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBTYjpevweW/",
+        "source": "other",
+        "sourceName": "Instagram · 더푸른유치원",
+        "snippet": "검색 결과에서 더푸른유치원의 유치원 입학설명회와 해운대유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aaab0fa9",
+        "structuredFields": {
+          "kindergartenName": "더푸른유치원",
+          "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBTYjpevweW%22%20%22%EB%8D%94%ED%91%B8%EB%A5%B8%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "더푸른유치원은 로컬 원장부 단일 정확 명칭이며 해운대 단서와 로컬 해운대구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBTYjpevweW/",
+          "normalizedUrl": "instagram.com/reel/dbtyjpevwew",
+          "normalizedText": "부산 해운대 더푸른유치원 입학설명회 instagram reel 검색 결과에서 더푸른유치원의 유치원 입학설명회와 해운대유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "aaab0fa9",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "더푸른유치원",
+            "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBTYjpevweW%22%20%22%EB%8D%94%ED%91%B8%EB%A5%B8%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "더푸른유치원은 로컬 원장부 단일 정확 명칭이며 해운대 단서와 로컬 해운대구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -3939,6 +3991,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5b737af3",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 화명동 햇빛유치원 학부모 참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DZ_9pojkybk/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "검색 결과에서 햇빛유치원, 화명동유치원, 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5b737af3",
+        "structuredFields": {
+          "kindergartenName": "햇빛유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로 117",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ_9pojkybk%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "햇빛유치원 동명 후보가 있으나 화명동유치원 단서가 로컬 부산 북구 햇빛유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_9pojkybk/",
+          "normalizedUrl": "instagram.com/p/dz_9pojkybk",
+          "normalizedText": "부산 화명동 햇빛유치원 학부모 참여수업 instagram post 검색 결과에서 햇빛유치원 화명동유치원 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "5b737af3",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "햇빛유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로 117",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ_9pojkybk%22%20%22%ED%96%87%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EB%AA%85%EB%8F%99%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "햇빛유치원 동명 후보가 있으나 화명동유치원 단서가 로컬 부산 북구 햇빛유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0096-b044-e053-0a32095ab044": [
@@ -6132,6 +6236,110 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f3986e8",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 인성동요 발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/DY6I1zGiYFH/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 남명유치원, 명지오션시티, 부산명지, 인성동요 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "music-recital"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f3986e8",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6I1zGiYFH%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EC%84%B1%EB%8F%99%EC%9A%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6I1zGiYFH/",
+          "normalizedUrl": "instagram.com/p/dy6i1zgiyfh",
+          "normalizedText": "부산 남명유치원 인성동요 발표회 instagram post 검색 결과에서 남명유치원 명지오션시티 부산명지 인성동요 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "0f3986e8",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6I1zGiYFH%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EC%84%B1%EB%8F%99%EC%9A%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f1192d3",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 명지 남명유치원 학부모 참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DY3E2drkxG1/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 부산명지, 명지오션시티, 남명유치원, 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": "2026-05-27",
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f1192d3",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY3E2drkxG1%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 및 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY3E2drkxG1/",
+          "normalizedUrl": "instagram.com/p/dy3e2drkxg1",
+          "normalizedText": "부산 명지 남명유치원 학부모 참여수업 instagram post 검색 결과에서 부산명지 명지오션시티 남명유치원 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "0f1192d3",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY3E2drkxG1%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 및 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -8494,6 +8702,58 @@
           ]
         },
         "evidenceChecksum": "447c6c7d"
+      },
+      {
+        "id": "rev-6a97587b",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "금곡나래유치원 동화 동요 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNSBbyNpLXP/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "검색 결과에서 금곡나래유치원, 공립단설유치원, 동화 동요 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "music-recital"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6a97587b",
+        "structuredFields": {
+          "kindergartenName": "금곡나래유치원",
+          "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNSBbyNpLXP%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 금곡나래유치원 및 금곡동유치원 단서가 로컬 부산 북구 금곡나래유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNSBbyNpLXP/",
+          "normalizedUrl": "instagram.com/reel/dnsbbynplxp",
+          "normalizedText": "금곡나래유치원 동화 동요 발표회 instagram reel 검색 결과에서 금곡나래유치원 공립단설유치원 동화 동요 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "6a97587b",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금곡나래유치원",
+            "kindergartenAddress": "부산광역시 북구 효열로220번길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNSBbyNpLXP%22%20%22%EA%B8%88%EA%B3%A1%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 금곡나래유치원 및 금곡동유치원 단서가 로컬 부산 북구 금곡나래유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f1a6-b044-e053-0a32095ab044": [
@@ -12548,6 +12808,114 @@
           ]
         },
         "evidenceChecksum": "9aa57e57"
+      }
+    ],
+    "7503d277-da3d-4087-83e8-21f5f0d0d815": [
+      {
+        "id": "rev-e5aa07cc",
+        "kindergartenId": "7503d277-da3d-4087-83e8-21f5f0d0d815",
+        "title": "하단초등학교병설유치원 유아교육진흥원 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DZUQ716kvP0/",
+        "source": "other",
+        "sourceName": "Instagram · 하단초등학교병설유치원",
+        "snippet": "검색 결과에서 하단초등학교병설유치원, 유아교육진흥원 현장체험학습, 부산유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": "2026-05-07",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e5aa07cc",
+        "structuredFields": {
+          "kindergartenName": "하단초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 사하구 하신중앙로 321",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZUQ716kvP0%22%20%22%ED%95%98%EB%8B%A8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 하단초등학교병설유치원 및 부산 단서가 로컬 부산 사하구 하단초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZUQ716kvP0/",
+          "normalizedUrl": "instagram.com/p/dzuq716kvp0",
+          "normalizedText": "하단초등학교병설유치원 유아교육진흥원 현장체험학습 instagram post 검색 결과에서 하단초등학교병설유치원 유아교육진흥원 현장체험학습 부산유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "e5aa07cc",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "하단초등학교병설유치원",
+            "kindergartenAddress": "부산광역시 사하구 하신중앙로 321",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZUQ716kvP0%22%20%22%ED%95%98%EB%8B%A8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 하단초등학교병설유치원 및 부산 단서가 로컬 부산 사하구 하단초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "abd1dd2d-e965-4e96-865f-661d34966498": [
+      {
+        "id": "rev-a5cacba9",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "검색 결과에서 지산유치원, 유치원소풍, 유치원체험학습, 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "picnic"
+        ],
+        "date": "2026-06-12",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a5cacba9",
+        "structuredFields": {
+          "kindergartenName": "지산유치원",
+          "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZdvDTyzWPq/",
+          "normalizedUrl": "instagram.com/reel/dzdvdtyzwpq",
+          "normalizedText": "부산 지산유치원 현장체험학습 instagram reel 검색 결과에서 지산유치원 유치원소풍 유치원체험학습 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "a5cacba9",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "지산유치원",
+            "kindergartenAddress": "부산광역시 사하구 장평로 117-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZdvDTyzWPq%22%20%22%EC%A7%80%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "지산유치원은 동명 후보 없이 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

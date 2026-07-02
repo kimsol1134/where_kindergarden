@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 9,
+  "version": "2026-07-03",
+  "totalCount": 10,
   "kindergartenCount": 8,
   "reviews": {
     "e0593e15-f26f-4162-9fde-82f2dbf27242": [
@@ -276,6 +276,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-14b6978c",
+        "kindergartenId": "c877eb16-1847-497e-a442-d28ea839419b",
+        "title": "세종 종촌유치원 급식모니터링 Instagram Post",
+        "url": "https://www.instagram.com/p/BS_MgdwAc4G/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 #종촌유치원 #급식모니터링 및 급식이 맛있다는 학부모 기록 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "meal",
+          "parent-monitoring"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "14b6978c",
+        "structuredFields": {
+          "kindergartenName": "종촌유치원",
+          "kindergartenAddress": "세종특별자치시  도움1로 164",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22BS_MgdwAc4G%22%20%22%EC%A2%85%EC%B4%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "종촌유치원은 로컬 원장부에서 단일 정확 명칭이며 게시물 해시태그가 급식모니터링을 직접 가리킨다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/BS_MgdwAc4G/",
+          "normalizedUrl": "instagram.com/p/bs_mgdwac4g",
+          "normalizedText": "세종 종촌유치원 급식모니터링 instagram post 검색 결과에서 #종촌유치원 #급식모니터링 및 급식이 맛있다는 학부모 기록 단서가 확인된다.",
+          "htmlSnapshotHash": "14b6978c",
+          "extractedAt": "2026-07-03T07:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "종촌유치원",
+            "kindergartenAddress": "세종특별자치시  도움1로 164",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22BS_MgdwAc4G%22%20%22%EC%A2%85%EC%B4%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "종촌유치원은 로컬 원장부에서 단일 정확 명칭이며 게시물 해시태그가 급식모니터링을 직접 가리킨다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

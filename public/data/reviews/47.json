@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 267,
-  "kindergartenCount": 87,
+  "version": "2026-07-03",
+  "totalCount": 275,
+  "kindergartenCount": 90,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -3371,6 +3371,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fbf816e9",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "칠곡 석적 무지개유치원 통학버스 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DHNxZTUReGJ/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개유치원",
+        "snippet": "검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "school-bus"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fbf816e9",
+        "structuredFields": {
+          "kindergartenName": "무지개유치원",
+          "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHNxZTUReGJ/",
+          "normalizedUrl": "instagram.com/p/dhnxzturegj",
+          "normalizedText": "칠곡 석적 무지개유치원 통학버스 안전교육 instagram post 검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "fbf816e9",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "무지개유치원",
+            "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ed57-b044-e053-0a32095ab044": [
@@ -6087,6 +6139,109 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c5ddf354",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 2025학년도 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUs0oivEijQ/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 졸업생 친구들, 3년 동안 경산유치원을 믿고 함께해 준 학부모 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c5ddf354",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUs0oivEijQ%22%20%22ks_kinderg%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원 계정명과 기관명이 일치하고 로컬 원장부의 경산시 경산유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUs0oivEijQ/",
+          "normalizedUrl": "instagram.com/reel/dus0oiveijq",
+          "normalizedText": "경산유치원 2025학년도 졸업식 instagram reel 검색 결과에서 경산유치원 졸업생 친구들, 3년 동안 경산유치원을 믿고 함께해 준 학부모 단서가 확인된다.",
+          "htmlSnapshotHash": "c5ddf354",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUs0oivEijQ%22%20%22ks_kinderg%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원 계정명과 기관명이 일치하고 로컬 원장부의 경산시 경산유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1bf19691",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 약물오남용 예방교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DVsYzU1mGlw/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원의 찾아오는 약물오남용 예방교육과 건강한 생활 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "drug-prevention",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1bf19691",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVsYzU1mGlw%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%BD%EB%AC%BC%EC%98%A4%EB%82%A8%EC%9A%A9%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 동명 확장 후보가 있으나 공립단설 경산유치원 단서가 로컬 경북 경산시 경산유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVsYzU1mGlw/",
+          "normalizedUrl": "instagram.com/p/dvsyzu1mglw",
+          "normalizedText": "경산유치원 약물오남용 예방교육 instagram post 검색 결과에서 경산유치원의 찾아오는 약물오남용 예방교육과 건강한 생활 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "1bf19691",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경산유치원",
+            "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVsYzU1mGlw%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%BD%EB%AC%BC%EC%98%A4%EB%82%A8%EC%9A%A9%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "경산유치원은 동명 확장 후보가 있으나 공립단설 경산유치원 단서가 로컬 경북 경산시 경산유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f71c-b044-e053-0a32095ab044": [
@@ -8366,6 +8521,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1632d087",
+        "kindergartenId": "1ecec08c-fc0f-b044-e053-0a32095ab044",
+        "title": "구미 상모유치원 구미유아교육체험센터 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRJU4a8Ex8v/",
+        "source": "other",
+        "sourceName": "Instagram · 상모유치원",
+        "snippet": "검색 결과에서 공립단설 상모유치원, 현장체험학습, 구미유아교육체험센터 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": "2025-11-16",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1632d087",
+        "structuredFields": {
+          "kindergartenName": "상모유치원",
+          "kindergartenAddress": "경상북도 구미시 상모로 71",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRJU4a8Ex8v%22%20%22%EC%83%81%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 공립단설 상모유치원 및 구미유아교육체험센터 단서가 로컬 경북 구미시 상모유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRJU4a8Ex8v/",
+          "normalizedUrl": "instagram.com/reel/drju4a8ex8v",
+          "normalizedText": "구미 상모유치원 구미유아교육체험센터 현장체험학습 instagram reel 검색 결과에서 공립단설 상모유치원 현장체험학습 구미유아교육체험센터 단서가 확인된다.",
+          "htmlSnapshotHash": "1632d087",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "상모유치원",
+            "kindergartenAddress": "경상북도 구미시 상모로 71",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRJU4a8Ex8v%22%20%22%EC%83%81%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 공립단설 상모유치원 및 구미유아교육체험센터 단서가 로컬 경북 구미시 상모유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -11911,6 +12118,58 @@
           ]
         },
         "evidenceChecksum": "148b3e99"
+      },
+      {
+        "id": "rev-ce29bdb9",
+        "kindergartenId": "1ecec08d-0cc9-b044-e053-0a32095ab044",
+        "title": "칠곡 북삼초등학교병설유치원 체육대회 Instagram Post",
+        "url": "https://www.instagram.com/p/DYBorVgkqx0/",
+        "source": "other",
+        "sourceName": "Instagram · 북삼초등학교병설유치원",
+        "snippet": "검색 결과에서 칠곡북삼맘, 북삼병설유치원, 병설유치원 체육대회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-06",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ce29bdb9",
+        "structuredFields": {
+          "kindergartenName": "북삼초등학교병설유치원",
+          "kindergartenAddress": "경상북도 칠곡군 인평중앙로 43",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%B9%A0%EA%B3%A1%EB%B6%81%EC%82%BC%EB%A7%98%22%20%22%EB%B6%81%EC%82%BC%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 칠곡북삼맘 및 북삼병설유치원 단서가 로컬 경북 칠곡군 북삼초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYBorVgkqx0/",
+          "normalizedUrl": "instagram.com/p/dyborvgkqx0",
+          "normalizedText": "칠곡 북삼초등학교병설유치원 체육대회 instagram post 검색 결과에서 칠곡북삼맘 북삼병설유치원 병설유치원 체육대회 단서가 확인된다.",
+          "htmlSnapshotHash": "ce29bdb9",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "북삼초등학교병설유치원",
+            "kindergartenAddress": "경상북도 칠곡군 인평중앙로 43",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%B9%A0%EA%B3%A1%EB%B6%81%EC%82%BC%EB%A7%98%22%20%22%EB%B6%81%EC%82%BC%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 칠곡북삼맘 및 북삼병설유치원 단서가 로컬 경북 칠곡군 북삼초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fb3d-b044-e053-0a32095ab044": [
@@ -12166,6 +12425,168 @@
           ]
         },
         "evidenceChecksum": "1d18de0c"
+      }
+    ],
+    "1ecec08c-f613-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-6151f67d",
+        "kindergartenId": "1ecec08c-f613-b044-e053-0a32095ab044",
+        "title": "구미 문장유치원 봄소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIdpaxhRI9h/",
+        "source": "other",
+        "sourceName": "Instagram · 구미 문장유치원",
+        "snippet": "검색 결과에서 #문장유치원 #봄소풍 및 구미 문장유치원 계정 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "spring-picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6151f67d",
+        "structuredFields": {
+          "kindergartenName": "문장유치원",
+          "kindergartenAddress": "경상북도 구미시 문장로23길 22-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIdpaxhRI9h%22%20%22%EB%AC%B8%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "문장유치원은 로컬 원장부에서 단일 정확 명칭이며 검색 결과의 구미 문장유치원 단서와 주소가 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIdpaxhRI9h/",
+          "normalizedUrl": "instagram.com/reel/didpaxhri9h",
+          "normalizedText": "구미 문장유치원 봄소풍 instagram reel 검색 결과에서 #문장유치원 #봄소풍 및 구미 문장유치원 계정 단서가 확인된다.",
+          "htmlSnapshotHash": "6151f67d",
+          "extractedAt": "2026-07-03T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "문장유치원",
+            "kindergartenAddress": "경상북도 구미시 문장로23길 22-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIdpaxhRI9h%22%20%22%EB%AC%B8%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "문장유치원은 로컬 원장부에서 단일 정확 명칭이며 검색 결과의 구미 문장유치원 단서와 주소가 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0484-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d4872bbb",
+        "kindergartenId": "1ecec08d-0484-b044-e053-0a32095ab044",
+        "title": "하양유치원 텃밭의 만찬 오감놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIyWX9ATkiB/",
+        "source": "other",
+        "sourceName": "Instagram · 하양유치원",
+        "snippet": "검색 결과에서 하양유치원의 텃밭 주제 오감놀이와 상추 탐색 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "sensory-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d4872bbb",
+        "structuredFields": {
+          "kindergartenName": "하양유치원",
+          "kindergartenAddress": "경상북도 경산시 하양로 119-9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIyWX9ATkiB%22%20%22%ED%95%98%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "하양유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIyWX9ATkiB/",
+          "normalizedUrl": "instagram.com/reel/diywx9atkib",
+          "normalizedText": "하양유치원 텃밭의 만찬 오감놀이 instagram reel 검색 결과에서 하양유치원의 텃밭 주제 오감놀이와 상추 탐색 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "d4872bbb",
+          "extractedAt": "2026-07-03T11:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "하양유치원",
+            "kindergartenAddress": "경상북도 경산시 하양로 119-9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIyWX9ATkiB%22%20%22%ED%95%98%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "하양유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a36f1133-c92f-4802-9077-06f69b8dbb0d": [
+      {
+        "id": "rev-083c9f0c",
+        "kindergartenId": "a36f1133-c92f-4802-9077-06f69b8dbb0d",
+        "title": "구미원당초등학교병설유치원 체육대회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYDuetJq1KV/",
+        "source": "other",
+        "sourceName": "Instagram · 구미원당초등학교병설유치원",
+        "snippet": "검색 결과에서 구미원당초등학교병설유치원의 체육대회와 운동회 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-07",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "083c9f0c",
+        "structuredFields": {
+          "kindergartenName": "구미원당초등학교병설유치원",
+          "kindergartenAddress": "경상북도 구미시 옥계신당로9길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EA%B5%AC%EB%AF%B8%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 구미원당초등학교병설유치원 기관명과 로컬 원장부의 경북 구미시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYDuetJq1KV/",
+          "normalizedUrl": "instagram.com/reel/dyduetjq1kv",
+          "normalizedText": "구미원당초등학교병설유치원 체육대회 instagram reel 검색 결과에서 구미원당초등학교병설유치원의 체육대회와 운동회 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "083c9f0c",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구미원당초등학교병설유치원",
+            "kindergartenAddress": "경상북도 구미시 옥계신당로9길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EA%B5%AC%EB%AF%B8%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 구미원당초등학교병설유치원 기관명과 로컬 원장부의 경북 구미시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

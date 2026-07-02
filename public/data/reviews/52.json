@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 155,
-  "kindergartenCount": 51,
+  "version": "2026-07-03",
+  "totalCount": 159,
+  "kindergartenCount": 52,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
       {
@@ -1401,6 +1401,58 @@
           ]
         },
         "evidenceChecksum": "23402f44"
+      },
+      {
+        "id": "rev-2acb4c74",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWVsLK8khoV/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "검색 결과에서 임실둥지유치원의 교통안전교육과 안전 수칙 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T13:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2acb4c74",
+        "structuredFields": {
+          "kindergartenName": "임실둥지유치원",
+          "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWVsLK8khoV%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWVsLK8khoV/",
+          "normalizedUrl": "instagram.com/p/dwvslk8khov",
+          "normalizedText": "임실둥지유치원 교통안전교육 instagram post 검색 결과에서 임실둥지유치원의 교통안전교육과 안전 수칙 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "2acb4c74",
+          "extractedAt": "2026-07-03T13:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "임실둥지유치원",
+            "kindergartenAddress": "전북특별자치도 임실군 봉황7길 15-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWVsLK8khoV%22%20%22%EC%9E%84%EC%8B%A4%EB%91%A5%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "임실둥지유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T13:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f9b2-b044-e053-0a32095ab044": [
@@ -2987,6 +3039,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cac54195",
+        "kindergartenId": "1fd6777e-153d-e0b0-e053-0a32095ae0b0",
+        "title": "전주 우성유치원 구강교육 Instagram Post",
+        "url": "https://www.instagram.com/p/C9mP-v4Sa5b/",
+        "source": "other",
+        "sourceName": "Instagram · 전주우성유치원",
+        "snippet": "검색 결과에서 전주우성유치원의 덕진보건소 구강교육과 전주전일초 권역 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "public-health-center"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cac54195",
+        "structuredFields": {
+          "kindergartenName": "우성유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 덕진구 숲정이4길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9mP-v4Sa5b%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "우성유치원은 동명 후보가 있으나 전주우성유치원 및 덕진보건소 단서가 로컬 전주 덕진구 우성유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C9mP-v4Sa5b/",
+          "normalizedUrl": "instagram.com/p/c9mp-v4sa5b",
+          "normalizedText": "전주 우성유치원 구강교육 instagram post 검색 결과에서 전주우성유치원의 덕진보건소 구강교육과 전주전일초 권역 단서가 확인된다.",
+          "htmlSnapshotHash": "cac54195",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "우성유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 덕진구 숲정이4길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9mP-v4Sa5b%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "우성유치원은 동명 후보가 있으나 전주우성유치원 및 덕진보건소 단서가 로컬 전주 덕진구 우성유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -6666,6 +6770,112 @@
           ]
         },
         "evidenceChecksum": "471aa32c"
+      }
+    ],
+    "1ecec08c-f143-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-24952f69",
+        "kindergartenId": "1ecec08c-f143-b044-e053-0a32095ab044",
+        "title": "김제성모유치원 실종아동예방 동요대회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYO5Fubv4no/",
+        "source": "other",
+        "sourceName": "Instagram · 김제성모유치원",
+        "snippet": "검색 결과에서 김제성모유치원 7세 친구들이 실종아동예방 동요대회에 참여한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "song-contest",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "24952f69",
+        "structuredFields": {
+          "kindergartenName": "김제성모유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYO5Fubv4no%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김제성모유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYO5Fubv4no/",
+          "normalizedUrl": "instagram.com/reel/dyo5fubv4no",
+          "normalizedText": "김제성모유치원 실종아동예방 동요대회 instagram reel 검색 결과에서 김제성모유치원 7세 친구들이 실종아동예방 동요대회에 참여한 단서가 확인된다.",
+          "htmlSnapshotHash": "24952f69",
+          "extractedAt": "2026-07-03T10:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "김제성모유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYO5Fubv4no%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김제성모유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f5e42e72",
+        "kindergartenId": "1ecec08c-f143-b044-e053-0a32095ab044",
+        "title": "김제성모유치원 지구의날 참여 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXbHn4ND2dl/",
+        "source": "other",
+        "sourceName": "Instagram · 김제성모유치원",
+        "snippet": "검색 결과에서 김제성모유치원이 지구의날 전등 소등 참여를 안내한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "earth-day",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f5e42e72",
+        "structuredFields": {
+          "kindergartenName": "김제성모유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXbHn4ND2dl%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A7%80%EA%B5%AC%EC%9D%98%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김제성모유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXbHn4ND2dl/",
+          "normalizedUrl": "instagram.com/reel/dxbhn4nd2dl",
+          "normalizedText": "김제성모유치원 지구의날 참여 instagram reel 검색 결과에서 김제성모유치원이 지구의날 전등 소등 참여를 안내한 단서가 확인된다.",
+          "htmlSnapshotHash": "f5e42e72",
+          "extractedAt": "2026-07-03T10:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "김제성모유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXbHn4ND2dl%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A7%80%EA%B5%AC%EC%9D%98%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김제성모유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

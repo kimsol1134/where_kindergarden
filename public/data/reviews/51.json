@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 129,
-  "kindergartenCount": 38,
+  "version": "2026-07-03",
+  "totalCount": 135,
+  "kindergartenCount": 39,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
       {
@@ -230,6 +230,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T04:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-db129d08",
+        "kindergartenId": "7b8827db-706c-4ee2-a327-73af24ca111a",
+        "title": "춘천 후평숲속유치원 만5세 봄소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJsdQp5zIO3/",
+        "source": "other",
+        "sourceName": "Instagram · 후평숲속유치원",
+        "snippet": "검색 결과에서 춘천 후평숲속유치원 만5세가 무궁화수목원으로 봄소풍을 다녀온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "spring-picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "db129d08",
+        "structuredFields": {
+          "kindergartenName": "후평숲속유치원",
+          "kindergartenAddress": "강원특별자치도 춘천시 후만로 129",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJsdQp5zIO3%22%20%22%ED%9B%84%ED%8F%89%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "후평숲속유치원은 로컬 원장부의 정확 명칭이며 검색 결과의 춘천 단서와 주소가 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJsdQp5zIO3/",
+          "normalizedUrl": "instagram.com/reel/djsdqp5zio3",
+          "normalizedText": "춘천 후평숲속유치원 만5세 봄소풍 instagram reel 검색 결과에서 춘천 후평숲속유치원 만5세가 무궁화수목원으로 봄소풍을 다녀온 단서가 확인된다.",
+          "htmlSnapshotHash": "db129d08",
+          "extractedAt": "2026-07-03T07:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "후평숲속유치원",
+            "kindergartenAddress": "강원특별자치도 춘천시 후만로 129",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJsdQp5zIO3%22%20%22%ED%9B%84%ED%8F%89%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "후평숲속유치원은 로컬 원장부의 정확 명칭이며 검색 결과의 춘천 단서와 주소가 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -623,6 +675,58 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-8cda6db3",
+        "kindergartenId": "44618f52-e0f9-4903-89a3-bf21071678e7",
+        "title": "반곡드림유치원 가족 한마음 체육대회 Instagram Post",
+        "url": "https://www.instagram.com/p/DZVzDfeExVI/",
+        "source": "other",
+        "sourceName": "Instagram · 반곡드림유치원",
+        "snippet": "검색 결과에서 반곡 가족 한마음 체육대회와 반곡드림 친구들 체육대회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8cda6db3",
+        "structuredFields": {
+          "kindergartenName": "반곡드림유치원",
+          "kindergartenAddress": "강원특별자치도 원주시 반곡길 133",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZVzDfeExVI%22%20%22%EB%B0%98%EA%B3%A1%EB%93%9C%EB%A6%BC%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 반곡드림 기관명과 로컬 강원 원주시 반곡드림유치원이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZVzDfeExVI/",
+          "normalizedUrl": "instagram.com/p/dzvzdfeexvi",
+          "normalizedText": "반곡드림유치원 가족 한마음 체육대회 instagram post 검색 결과에서 반곡 가족 한마음 체육대회와 반곡드림 친구들 체육대회 단서가 확인된다.",
+          "htmlSnapshotHash": "8cda6db3",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "반곡드림유치원",
+            "kindergartenAddress": "강원특별자치도 원주시 반곡길 133",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZVzDfeExVI%22%20%22%EB%B0%98%EA%B3%A1%EB%93%9C%EB%A6%BC%22%20%22%EC%B2%B4%EC%9C%A1%EB%8C%80%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 반곡드림 기관명과 로컬 강원 원주시 반곡드림유치원이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "2d0f4f28-b5cc-4a7e-961f-307fcf4503ed": [
@@ -4927,6 +5031,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-842a592a",
+        "kindergartenId": "1ecec08c-ff1a-b044-e053-0a32095ab044",
+        "title": "춘천 미래숲유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DY6z1lGk-jy/",
+        "source": "other",
+        "sourceName": "Instagram · 미래숲유치원",
+        "snippet": "검색 결과에서 미래숲유치원의 찾아오는 교통안전교육과 춘천유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T13:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "842a592a",
+        "structuredFields": {
+          "kindergartenName": "미래숲유치원",
+          "kindergartenAddress": "강원특별자치도 춘천시 신샘밭로 159",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6z1lGk-jy%22%20%22%EB%AF%B8%EB%9E%98%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B6%98%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "미래숲유치원은 동명 후보가 있으나 춘천 단서가 로컬 강원 춘천시 미래숲유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6z1lGk-jy/",
+          "normalizedUrl": "instagram.com/p/dy6z1lgk-jy",
+          "normalizedText": "춘천 미래숲유치원 교통안전교육 instagram post 검색 결과에서 미래숲유치원의 찾아오는 교통안전교육과 춘천유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "842a592a",
+          "extractedAt": "2026-07-03T13:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "미래숲유치원",
+            "kindergartenAddress": "강원특별자치도 춘천시 신샘밭로 159",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6z1lGk-jy%22%20%22%EB%AF%B8%EB%9E%98%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B6%98%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "미래숲유치원은 동명 후보가 있으나 춘천 단서가 로컬 강원 춘천시 미래숲유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T13:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0606-b044-e053-0a32095ab044": [
@@ -4977,6 +5133,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cb932530",
+        "kindergartenId": "1ecec08d-0606-b044-e053-0a32095ab044",
+        "title": "푸른자연유치원 가을운동회 Instagram Post",
+        "url": "https://www.instagram.com/p/DB2uu2lz57-/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른자연유치원",
+        "snippet": "검색 결과에서 유치원 첫번째 운동회 참여, 즐겁게 참여하는 모습, 푸른자연유치원, 가을운동회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T04:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cb932530",
+        "structuredFields": {
+          "kindergartenName": "푸른자연유치원",
+          "kindergartenAddress": "강원특별자치도 원주시 무실본동길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DB2uu2lz57%22%20%22%ED%91%B8%EB%A5%B8%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "푸른자연유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DB2uu2lz57-/",
+          "normalizedUrl": "instagram.com/p/db2uu2lz57-",
+          "normalizedText": "푸른자연유치원 가을운동회 instagram post 검색 결과에서 유치원 첫번째 운동회 참여, 즐겁게 참여하는 모습, 푸른자연유치원, 가을운동회 단서가 확인된다.",
+          "htmlSnapshotHash": "cb932530",
+          "extractedAt": "2026-07-03T04:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른자연유치원",
+            "kindergartenAddress": "강원특별자치도 원주시 무실본동길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DB2uu2lz57%22%20%22%ED%91%B8%EB%A5%B8%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "푸른자연유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T04:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -5787,6 +5994,112 @@
           ]
         },
         "evidenceChecksum": "bfa04f8f"
+      },
+      {
+        "id": "rev-bd867e44",
+        "kindergartenId": "1ecec08c-fc11-b044-e053-0a32095ab044",
+        "title": "원주 황둔초등학교병설유치원 졸업식 및 수료식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CYJEwoIgy5a/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 황둔병설유치원 졸업식 및 수료식, 총 인원 7명과 유치원이 재미있다는 학부모성 기록 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "completion"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T08:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bd867e44",
+        "structuredFields": {
+          "kindergartenName": "황둔초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 원주시 신림황둔로 1185",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CYJEwoIgy5a%22%20%22%ED%99%A9%EB%91%94%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "황둔병설유치원은 로컬 원장부의 황둔초등학교병설유치원과 동일 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CYJEwoIgy5a/",
+          "normalizedUrl": "instagram.com/reel/cyjewoigy5a",
+          "normalizedText": "원주 황둔초등학교병설유치원 졸업식 및 수료식 instagram reel 검색 결과에서 황둔병설유치원 졸업식 및 수료식, 총 인원 7명과 유치원이 재미있다는 학부모성 기록 단서가 확인된다.",
+          "htmlSnapshotHash": "bd867e44",
+          "extractedAt": "2026-07-03T08:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "황둔초등학교병설유치원",
+            "kindergartenAddress": "강원특별자치도 원주시 신림황둔로 1185",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CYJEwoIgy5a%22%20%22%ED%99%A9%EB%91%94%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "황둔병설유치원은 로컬 원장부의 황둔초등학교병설유치원과 동일 기관으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T08:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "ea6e6262-048d-452d-a82f-0702aa5f2075": [
+      {
+        "id": "rev-1ce8b334",
+        "kindergartenId": "ea6e6262-048d-452d-a82f-0702aa5f2075",
+        "title": "원주 신평초등학교병설유치원 운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYWG5SRTH6I/",
+        "source": "other",
+        "sourceName": "Instagram · 신평초등학교병설유치원",
+        "snippet": "검색 결과에서 원주, 기업도시, 지정면, 신평초등학교 병설유치원 운동회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-14",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1ce8b334",
+        "structuredFields": {
+          "kindergartenName": "신평초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 원주시 지정면 신무로 336",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%23%EC%9B%90%EC%A3%BC%22%20%22%EC%8B%A0%ED%8F%89%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 원주, 지정면, 신평초등학교 병설유치원 단서가 로컬 강원 원주시 신평초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYWG5SRTH6I/",
+          "normalizedUrl": "instagram.com/reel/dywg5srth6i",
+          "normalizedText": "원주 신평초등학교병설유치원 운동회 instagram reel 검색 결과에서 원주 기업도시 지정면 신평초등학교 병설유치원 운동회 단서가 확인된다.",
+          "htmlSnapshotHash": "1ce8b334",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신평초등학교병설유치원",
+            "kindergartenAddress": "강원특별자치도 원주시 지정면 신무로 336",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%23%EC%9B%90%EC%A3%BC%22%20%22%EC%8B%A0%ED%8F%89%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 원주, 지정면, 신평초등학교 병설유치원 단서가 로컬 강원 원주시 신평초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

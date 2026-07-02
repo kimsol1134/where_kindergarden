@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 1026,
-  "kindergartenCount": 433,
+  "version": "2026-07-03",
+  "totalCount": 1048,
+  "kindergartenCount": 440,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -1965,6 +1965,58 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-2a291960",
+        "kindergartenId": "1ecec08c-effc-b044-e053-0a32095ab044",
+        "title": "분당 즐거운유치원 방과후합창 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJJokUkSrz-/",
+        "source": "other",
+        "sourceName": "Instagram · 방과후 합창 수업",
+        "snippet": "검색 결과에서 즐거운유치원 방과후합창 수업 단서가 확인되고, 같은 수업 계정의 분당 즐거운유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-evidence",
+          "instagram",
+          "choir",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:20:00.000Z",
+        "relevanceScore": 1,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2a291960",
+        "structuredFields": {
+          "kindergartenName": "즐거운유치원",
+          "kindergartenAddress": "경기도 성남시 분당구 미금로 215",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJJokUkSrz%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true,
+          "snippetCaveat": "즐거운유치원은 동명 원이 있으나 같은 수업 계정의 공개 검색 결과에 분당 즐거운유치원 단서가 있어 성남 분당 원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJJokUkSrz-/",
+          "normalizedUrl": "instagram.com/reel/djjokuksrz-",
+          "normalizedText": "분당 즐거운유치원 방과후합창 instagram reel 검색 결과에서 즐거운유치원 방과후합창 수업 단서가 확인되고, 같은 수업 계정의 분당 즐거운유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "2a291960",
+          "extractedAt": "2026-07-03T10:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "즐거운유치원",
+            "kindergartenAddress": "경기도 성남시 분당구 미금로 215",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJJokUkSrz%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true,
+            "snippetCaveat": "즐거운유치원은 동명 원이 있으나 같은 수업 계정의 공개 검색 결과에 분당 즐거운유치원 단서가 있어 성남 분당 원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f28f-b044-e053-0a32095ab044": [
@@ -7952,6 +8004,58 @@
         "date": "2025-06-27",
         "collectedAt": "2026-02-18T06:13:58.339Z",
         "relevanceScore": 1
+      },
+      {
+        "id": "rev-9b26736c",
+        "kindergartenId": "eb9b3ba7-83e9-4eb1-b025-502b89668be8",
+        "title": "동패유치원 학부모 공개수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DMEorFHhIib/",
+        "source": "other",
+        "sourceName": "Instagram · 동패유치원",
+        "snippet": "검색 결과에서 동패유치원, 국공립유치원, 공립단설유치원, 학부모 공개수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9b26736c",
+        "structuredFields": {
+          "kindergartenName": "동패유치원",
+          "kindergartenAddress": "경기도 파주시 교하로 272",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMEorFHhIib%22%20%22%EB%8F%99%ED%8C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동패유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 공개수업 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMEorFHhIib/",
+          "normalizedUrl": "instagram.com/reel/dmeorfhhiib",
+          "normalizedText": "동패유치원 학부모 공개수업 instagram reel 검색 결과에서 동패유치원 국공립유치원 공립단설유치원 학부모 공개수업 단서가 확인된다.",
+          "htmlSnapshotHash": "9b26736c",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동패유치원",
+            "kindergartenAddress": "경기도 파주시 교하로 272",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMEorFHhIib%22%20%22%EB%8F%99%ED%8C%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동패유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 공개수업 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "bedc871d-4b30-4b24-bf7a-a38077eb1ea8": [
@@ -9845,6 +9949,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-83f52718",
+        "kindergartenId": "1ecec08c-f3a6-b044-e053-0a32095ab044",
+        "title": "김포 다사랑유치원 오르프 음악활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DC0gafwz9_r/",
+        "source": "other",
+        "sourceName": "Instagram · 다사랑유치원",
+        "snippet": "검색 결과에서 다사랑유치원의 오르프 음악활동과 김포유치원, 검단유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orff",
+          "music-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "83f52718",
+        "structuredFields": {
+          "kindergartenName": "다사랑유치원",
+          "kindergartenAddress": "경기도 김포시 옹주물로 220",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DC0gafwz9_r%22%20%22%EB%8B%A4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%80%EB%8B%A8%EB%A7%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "다사랑유치원은 동명 후보가 있으나 김포유치원 및 검단 권역 단서가 로컬 경기도 김포시 다사랑유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DC0gafwz9_r/",
+          "normalizedUrl": "instagram.com/p/dc0gafwz9_r",
+          "normalizedText": "김포 다사랑유치원 오르프 음악활동 instagram post 검색 결과에서 다사랑유치원의 오르프 음악활동과 김포유치원, 검단유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "83f52718",
+          "extractedAt": "2026-07-03T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다사랑유치원",
+            "kindergartenAddress": "경기도 김포시 옹주물로 220",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DC0gafwz9_r%22%20%22%EB%8B%A4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%80%EB%8B%A8%EB%A7%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "다사랑유치원은 동명 후보가 있으나 김포유치원 및 검단 권역 단서가 로컬 경기도 김포시 다사랑유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ee89-b044-e053-0a32095ab044": [
@@ -11374,6 +11530,58 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-cdf1ac9e",
+        "kindergartenId": "1ecec08c-f832-b044-e053-0a32095ab044",
+        "title": "고양 일산 한솔유치원 합주연습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRKL2IaEslo/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "검색 결과에서 한솔유치원의 합주 시간과 합주연습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ensemble",
+          "music-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cdf1ac9e",
+        "structuredFields": {
+          "kindergartenName": "한솔유치원",
+          "kindergartenAddress": "경기도 고양시 일산동구 백석로 119",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRKL2IaEslo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%A9%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한솔유치원은 동명 후보가 많으나 일산 계정 단서가 로컬 경기도 고양시 일산동구 한솔유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRKL2IaEslo/",
+          "normalizedUrl": "instagram.com/reel/drkl2iaeslo",
+          "normalizedText": "고양 일산 한솔유치원 합주연습 instagram reel 검색 결과에서 한솔유치원의 합주 시간과 합주연습 단서가 확인된다.",
+          "htmlSnapshotHash": "cdf1ac9e",
+          "extractedAt": "2026-07-03T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한솔유치원",
+            "kindergartenAddress": "경기도 고양시 일산동구 백석로 119",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRKL2IaEslo%22%20%22%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%A9%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한솔유치원은 동명 후보가 많으나 일산 계정 단서가 로컬 경기도 고양시 일산동구 한솔유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0dfd-b044-e053-0a32095ab044": [
@@ -18227,6 +18435,58 @@
           ]
         },
         "evidenceChecksum": "8404d078"
+      },
+      {
+        "id": "rev-ab65aaff",
+        "kindergartenId": "1ecec08c-ef57-b044-e053-0a32095ab044",
+        "title": "일산 해나라유치원 학부모 참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZo_S0vKApF/",
+        "source": "other",
+        "sourceName": "Instagram · 일산해나라유치원",
+        "snippet": "검색 결과에서 일산해나라유치원과 1학기 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": "2026-06-16",
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ab65aaff",
+        "structuredFields": {
+          "kindergartenName": "해나라유치원",
+          "kindergartenAddress": "경기도 고양시 일산서구 일산로 487",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZo_S0vKApF%22%20%22%EC%9D%BC%EC%82%B0%ED%95%B4%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%20%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "해나라유치원 동명 후보가 있으나 일산해나라유치원 단서가 로컬 경기 고양시 일산서구 해나라유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZo_S0vKApF/",
+          "normalizedUrl": "instagram.com/reel/dzo_s0vkapf",
+          "normalizedText": "일산 해나라유치원 학부모 참여수업 instagram reel 검색 결과에서 일산해나라유치원과 1학기 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "ab65aaff",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해나라유치원",
+            "kindergartenAddress": "경기도 고양시 일산서구 일산로 487",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZo_S0vKApF%22%20%22%EC%9D%BC%EC%82%B0%ED%95%B4%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%20%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "해나라유치원 동명 후보가 있으나 일산해나라유치원 단서가 로컬 경기 고양시 일산서구 해나라유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa4c-b044-e053-0a32095ab044": [
@@ -19400,6 +19660,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.900Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e596f5d3",
+        "kindergartenId": "1ecec08c-fb15-b044-e053-0a32095ab044",
+        "title": "화산성민유치원 2024학년도 졸업식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGSXkVozrwP/",
+        "source": "other",
+        "sourceName": "Instagram · 화산성민유치원",
+        "snippet": "검색 결과에서 2024학년도 화산성민유치원 졸업식, 친절반 학부모님들, 아이들과 함께했던 시간에 대한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T03:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e596f5d3",
+        "structuredFields": {
+          "kindergartenName": "화산성민유치원",
+          "kindergartenAddress": "경기도 용인시 처인구 화산남로80번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGSXkVozrwP%22%20%22%ED%99%94%EC%82%B0%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "화산성민유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGSXkVozrwP/",
+          "normalizedUrl": "instagram.com/reel/dgsxkvozrwp",
+          "normalizedText": "화산성민유치원 2024학년도 졸업식 instagram reel 검색 결과에서 2024학년도 화산성민유치원 졸업식, 친절반 학부모님들, 아이들과 함께했던 시간에 대한 단서가 확인된다.",
+          "htmlSnapshotHash": "e596f5d3",
+          "extractedAt": "2026-07-03T03:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "화산성민유치원",
+            "kindergartenAddress": "경기도 용인시 처인구 화산남로80번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGSXkVozrwP%22%20%22%ED%99%94%EC%82%B0%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "화산성민유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T03:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -24050,6 +24361,58 @@
           ]
         },
         "evidenceChecksum": "ad4774ed"
+      },
+      {
+        "id": "rev-29002213",
+        "kindergartenId": "1ecec08c-f623-b044-e053-0a32095ab044",
+        "title": "용인 푸른유치원 수활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIQTBs5p-JS/",
+        "source": "other",
+        "sourceName": "Instagram · 용인푸른유치원",
+        "snippet": "검색 결과에서 용인푸른유치원 계정의 푸른유치원 수활동 게시물 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "math-activity",
+          "classroom-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "29002213",
+        "structuredFields": {
+          "kindergartenName": "푸른유치원",
+          "kindergartenAddress": "경기도 용인시 기흥구 용인향교로20번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIQTBs5p-JS%22%20%22%EC%9A%A9%EC%9D%B8%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "푸른유치원은 동명 원이 많으나 검색 결과의 용인푸른유치원 계정 단서가 로컬 용인시 기흥구 푸른유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIQTBs5p-JS/",
+          "normalizedUrl": "instagram.com/reel/diqtbs5p-js",
+          "normalizedText": "용인 푸른유치원 수활동 instagram reel 검색 결과에서 용인푸른유치원 계정의 푸른유치원 수활동 게시물 단서가 확인된다.",
+          "htmlSnapshotHash": "29002213",
+          "extractedAt": "2026-07-03T09:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른유치원",
+            "kindergartenAddress": "경기도 용인시 기흥구 용인향교로20번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIQTBs5p-JS%22%20%22%EC%9A%A9%EC%9D%B8%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "푸른유치원은 동명 원이 많으나 검색 결과의 용인푸른유치원 계정 단서가 로컬 용인시 기흥구 푸른유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-04cf-b044-e053-0a32095ab044": [
@@ -24660,6 +25023,58 @@
           ]
         },
         "evidenceChecksum": "b18fb9e4"
+      },
+      {
+        "id": "rev-593e22e5",
+        "kindergartenId": "1ecec08d-04cf-b044-e053-0a32095ab044",
+        "title": "병점 아이들세상유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DVFt68IAVfS/",
+        "source": "other",
+        "sourceName": "Instagram · 아이들세상유치원",
+        "snippet": "검색 결과에서 아이들세상유치원, 병점유치원, 병점역유치원, 유치원 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "593e22e5",
+        "structuredFields": {
+          "kindergartenName": "아이들세상유치원",
+          "kindergartenAddress": "경기도 화성시 병점3로 144",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVFt68IAVfS%22%20%22%EC%95%84%EC%9D%B4%EB%93%A4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%91%EC%A0%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이들세상유치원 동명 후보가 있으나 병점 및 병점역 단서가 로컬 경기 화성시 아이들세상유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVFt68IAVfS/",
+          "normalizedUrl": "instagram.com/p/dvft68iavfs",
+          "normalizedText": "병점 아이들세상유치원 졸업식 instagram post 검색 결과에서 아이들세상유치원 병점유치원 병점역유치원 유치원 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "593e22e5",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이들세상유치원",
+            "kindergartenAddress": "경기도 화성시 병점3로 144",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVFt68IAVfS%22%20%22%EC%95%84%EC%9D%B4%EB%93%A4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%91%EC%A0%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이들세상유치원 동명 후보가 있으나 병점 및 병점역 단서가 로컬 경기 화성시 아이들세상유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0513-b044-e053-0a32095ab044": [
@@ -24768,6 +25183,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T17:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c9006465",
+        "kindergartenId": "1ecec08d-0f07-b044-e053-0a32095ab044",
+        "title": "김포 푸른솔유치원 가족음악회 Instagram Post",
+        "url": "https://www.instagram.com/p/Cy2a2W0S0No/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른솔유치원",
+        "snippet": "검색 결과에서 공립단설 푸른솔유치원, 가족음악회, 유치원발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "family-concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c9006465",
+        "structuredFields": {
+          "kindergartenName": "푸른솔유치원",
+          "kindergartenAddress": "경기도 김포시 김포한강2로 306",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cy2a2W0S0No%22%20%22%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "푸른솔유치원은 정확 명칭 기준 로컬 원장부 단일 후보이며 공립단설 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cy2a2W0S0No/",
+          "normalizedUrl": "instagram.com/p/cy2a2w0s0no",
+          "normalizedText": "김포 푸른솔유치원 가족음악회 instagram post 검색 결과에서 공립단설 푸른솔유치원 가족음악회 유치원발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "c9006465",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른솔유치원",
+            "kindergartenAddress": "경기도 김포시 김포한강2로 306",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cy2a2W0S0No%22%20%22%ED%91%B8%EB%A5%B8%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "푸른솔유치원은 정확 명칭 기준 로컬 원장부 단일 후보이며 공립단설 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -33965,6 +34432,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5a617b71",
+        "kindergartenId": "776d3a99-7546-4af8-950a-5e22b7c7755c",
+        "title": "광명 주원유치원 승강기 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/CSwKGXgpVoo/",
+        "source": "other",
+        "sourceName": "Instagram · 주원유치원",
+        "snippet": "검색 결과에서 #주원유치원 #승강기교육 #안전교육 #유아안전교육 단서가 확인되며 계정 프로필에서 #광명 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "elevator-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a617b71",
+        "structuredFields": {
+          "kindergartenName": "주원유치원",
+          "kindergartenAddress": "경기도 광명시 목감로 96",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CSwKGXgpVoo%22%20%22%EC%A3%BC%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "주원유치원은 동명이 있으나 juwon_kindergarten 프로필의 광명 단서와 로컬 광명 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CSwKGXgpVoo/",
+          "normalizedUrl": "instagram.com/p/cswkgxgpvoo",
+          "normalizedText": "광명 주원유치원 승강기 안전교육 instagram post 검색 결과에서 #주원유치원 #승강기교육 #안전교육 #유아안전교육 단서가 확인되며 계정 프로필에서 #광명 단서가 확인된다.",
+          "htmlSnapshotHash": "5a617b71",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "주원유치원",
+            "kindergartenAddress": "경기도 광명시 목감로 96",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CSwKGXgpVoo%22%20%22%EC%A3%BC%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "주원유치원은 동명이 있으나 juwon_kindergarten 프로필의 광명 단서와 로컬 광명 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-edcd-b044-e053-0a32095ab044": [
@@ -35814,6 +36333,58 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-c629b014",
+        "kindergartenId": "1ecec08c-f5ab-b044-e053-0a32095ab044",
+        "title": "시흥 해오름유치원 학급 오리엔테이션 Instagram Post",
+        "url": "https://www.instagram.com/p/DG7fqpYpnCu/",
+        "source": "other",
+        "sourceName": "Instagram · 해오름유치원",
+        "snippet": "검색 결과에서 시흥 해오름유치원의 학급 오리엔테이션 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orientation",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c629b014",
+        "structuredFields": {
+          "kindergartenName": "해오름유치원",
+          "kindergartenAddress": "경기도 시흥시 신현로38번길 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DG7fqpYpnCu%22%20%22%ED%95%B4%EC%98%A4%EB%A6%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%ED%9D%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "해오름유치원은 동명 후보가 있으나 시흥 단서가 로컬 경기도 시흥시 해오름유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DG7fqpYpnCu/",
+          "normalizedUrl": "instagram.com/p/dg7fqpypncu",
+          "normalizedText": "시흥 해오름유치원 학급 오리엔테이션 instagram post 검색 결과에서 시흥 해오름유치원의 학급 오리엔테이션 단서가 확인된다.",
+          "htmlSnapshotHash": "c629b014",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해오름유치원",
+            "kindergartenAddress": "경기도 시흥시 신현로38번길 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DG7fqpYpnCu%22%20%22%ED%95%B4%EC%98%A4%EB%A6%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%ED%9D%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "해오름유치원은 동명 후보가 있으나 시흥 단서가 로컬 경기도 시흥시 해오름유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b14-b044-e053-0a32095ab044": [
@@ -37692,6 +38263,162 @@
           ]
         },
         "evidenceChecksum": "dca8eaa2"
+      },
+      {
+        "id": "rev-43ca32e6",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "오산 운암초등학교병설유치원 디폼블럭 작품활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DFrCeT_Bo3z/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 운암초병설유치원의 작품 완성과 디폼블럭 활동, 오산유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "creative-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T13:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "43ca32e6",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DFrCeT_Bo3z%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운암초등학교병설유치원은 동명 후보가 있으나 오산유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DFrCeT_Bo3z/",
+          "normalizedUrl": "instagram.com/reel/dfrcet_bo3z",
+          "normalizedText": "오산 운암초등학교병설유치원 디폼블럭 작품활동 instagram reel 검색 결과에서 운암초병설유치원의 작품 완성과 디폼블럭 활동, 오산유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "43ca32e6",
+          "extractedAt": "2026-07-03T13:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암초등학교병설유치원",
+            "kindergartenAddress": "경기도 오산시 원동로 63",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DFrCeT_Bo3z%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운암초등학교병설유치원은 동명 후보가 있으나 오산유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T13:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f7d25c95",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "오산 운암초등학교병설유치원 사랑의 편지 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DHmhqaUBc_b/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 운암초병설유치원의 사랑의 편지 활동과 오산유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "creative-writing",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T13:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f7d25c95",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHmhqaUBc_b%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운암초등학교병설유치원은 동명 후보가 있으나 오산유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DHmhqaUBc_b/",
+          "normalizedUrl": "instagram.com/reel/dhmhqaubc_b",
+          "normalizedText": "오산 운암초등학교병설유치원 사랑의 편지 활동 instagram reel 검색 결과에서 운암초병설유치원의 사랑의 편지 활동과 오산유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "f7d25c95",
+          "extractedAt": "2026-07-03T13:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암초등학교병설유치원",
+            "kindergartenAddress": "경기도 오산시 원동로 63",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHmhqaUBc_b%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운암초등학교병설유치원은 동명 후보가 있으나 오산유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T13:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-28179057",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "오산 운암초등학교병설유치원 체육대회 Instagram Post",
+        "url": "https://www.instagram.com/p/DXvOJ4MR4Sg/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 오산유치원, 운암초병설유치원, 협동심과 스포츠맨쉽을 배운 체육대회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "cooperation"
+        ],
+        "date": "2026-04-29",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "28179057",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%23%EC%98%A4%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%23%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 오산유치원 및 운암초병설유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXvOJ4MR4Sg/",
+          "normalizedUrl": "instagram.com/p/dxvoj4mr4sg",
+          "normalizedText": "오산 운암초등학교병설유치원 체육대회 instagram post 검색 결과에서 오산유치원 운암초병설유치원 협동심과 스포츠맨쉽을 배운 체육대회 단서가 확인된다.",
+          "htmlSnapshotHash": "28179057",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암초등학교병설유치원",
+            "kindergartenAddress": "경기도 오산시 원동로 63",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%23%EC%98%A4%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%23%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 오산유치원 및 운암초병설유치원 단서가 로컬 경기도 오산시 운암초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f93-b044-e053-0a32095ab044": [
@@ -38432,6 +39159,58 @@
           ]
         },
         "evidenceChecksum": "e01b70e7"
+      },
+      {
+        "id": "rev-4b7f584f",
+        "kindergartenId": "1ecec08c-f342-b044-e053-0a32095ab044",
+        "title": "수원 세림유치원 졸업발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/C0gcdyvpAi4/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 유치원 졸업발표회, #세림유치원 #수원유치원 #숲유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "presentation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T08:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b7f584f",
+        "structuredFields": {
+          "kindergartenName": "세림유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 권선로694번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0gcdyvpAi4%22%20%22%EC%84%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세림유치원은 로컬 원장부에서 단일 정확 명칭이며 수원유치원 단서와 주소가 일치한다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0gcdyvpAi4/",
+          "normalizedUrl": "instagram.com/p/c0gcdyvpai4",
+          "normalizedText": "수원 세림유치원 졸업발표회 instagram post 검색 결과에서 유치원 졸업발표회, #세림유치원 #수원유치원 #숲유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "4b7f584f",
+          "extractedAt": "2026-07-03T08:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세림유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 권선로694번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0gcdyvpAi4%22%20%22%EC%84%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세림유치원은 로컬 원장부에서 단일 정확 명칭이며 수원유치원 단서와 주소가 일치한다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T08:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f3ff-b044-e053-0a32095ab044": [
@@ -38476,6 +39255,384 @@
           ]
         },
         "evidenceChecksum": "f588e14e"
+      }
+    ],
+    "1ecec08c-fcf1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-bb214f13",
+        "kindergartenId": "1ecec08c-fcf1-b044-e053-0a32095ab044",
+        "title": "문산중앙유치원 숲놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DII7KvBJwfv/",
+        "source": "other",
+        "sourceName": "Instagram · 문산중앙유치원",
+        "snippet": "검색 결과에서 문산중앙유치원의 늘봄&가람반 숲놀이 활동과 문산중앙유치원 계정 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "kindergarten-life"
+        ],
+        "date": "2026-03-26",
+        "collectedAt": "2026-07-03T09:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bb214f13",
+        "structuredFields": {
+          "kindergartenName": "문산중앙유치원",
+          "kindergartenAddress": "경기도 파주시 장승배기로 54-22",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DII7KvBJwfv%22%20%22%EB%AC%B8%EC%82%B0%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "문산중앙유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DII7KvBJwfv/",
+          "normalizedUrl": "instagram.com/reel/dii7kvbjwfv",
+          "normalizedText": "문산중앙유치원 숲놀이 instagram reel 검색 결과에서 문산중앙유치원의 늘봄&가람반 숲놀이 활동과 문산중앙유치원 계정 단서가 확인된다.",
+          "htmlSnapshotHash": "bb214f13",
+          "extractedAt": "2026-07-03T09:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "문산중앙유치원",
+            "kindergartenAddress": "경기도 파주시 장승배기로 54-22",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DII7KvBJwfv%22%20%22%EB%AC%B8%EC%82%B0%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "문산중앙유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a4a16313-5a67-44ea-9483-a52f9dc0240c": [
+      {
+        "id": "rev-929bfd25",
+        "kindergartenId": "a4a16313-5a67-44ea-9483-a52f9dc0240c",
+        "title": "별내 예닮유치원 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIL9HOlz-ei/",
+        "source": "other",
+        "sourceName": "Instagram · 별내 예닮유치원",
+        "snippet": "검색 결과에서 별내 예닮유치원의 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T10:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "929bfd25",
+        "structuredFields": {
+          "kindergartenName": "예닮유치원",
+          "kindergartenAddress": "경기도 남양주시 송산로 663-43",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIL9HOlz-ei%22%20%22%EB%B3%84%EB%82%B4%20%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "예닮유치원은 동명 후보가 있으나 별내 단서가 남양주시 별내권 원장부 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIL9HOlz-ei/",
+          "normalizedUrl": "instagram.com/reel/dil9holz-ei",
+          "normalizedText": "별내 예닮유치원 현장체험학습 instagram reel 검색 결과에서 별내 예닮유치원의 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "929bfd25",
+          "extractedAt": "2026-07-03T10:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예닮유치원",
+            "kindergartenAddress": "경기도 남양주시 송산로 663-43",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIL9HOlz-ei%22%20%22%EB%B3%84%EB%82%B4%20%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "예닮유치원은 동명 후보가 있으나 별내 단서가 남양주시 별내권 원장부 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ff64-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0b37cca9",
+        "kindergartenId": "1ecec08c-ff64-b044-e053-0a32095ab044",
+        "title": "수원 은정유치원 발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/DUB3zVcE4kQ/",
+        "source": "other",
+        "sourceName": "Instagram · 수원은정유치원",
+        "snippet": "검색 결과에서 2026년 1월 27일 은정유치원 발표회, 수원은정유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "presentation"
+        ],
+        "date": "2026-01-27",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0b37cca9",
+        "structuredFields": {
+          "kindergartenName": "은정유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 경수대로302번길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUB3zVcE4kQ%22%20%22%EC%88%98%EC%9B%90%EC%9D%80%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "은정유치원 동명 후보가 있으나 검색 결과의 수원은정유치원 단서가 로컬 경기 수원시 권선구 은정유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUB3zVcE4kQ/",
+          "normalizedUrl": "instagram.com/p/dub3zvce4kq",
+          "normalizedText": "수원 은정유치원 발표회 instagram post 검색 결과에서 2026년 1월 27일 은정유치원 발표회 수원은정유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "0b37cca9",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "은정유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 경수대로302번길 29",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUB3zVcE4kQ%22%20%22%EC%88%98%EC%9B%90%EC%9D%80%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "은정유치원 동명 후보가 있으나 검색 결과의 수원은정유치원 단서가 로컬 경기 수원시 권선구 은정유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "e751ba71-87c3-4c53-8c68-1db689754cc1": [
+      {
+        "id": "rev-a416be99",
+        "kindergartenId": "e751ba71-87c3-4c53-8c68-1db689754cc1",
+        "title": "안산나루유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DZRPo_wj52y/",
+        "source": "other",
+        "sourceName": "Instagram · 안산나루유치원",
+        "snippet": "검색 결과에서 안산나루유치원, 공립단설, 유치원 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a416be99",
+        "structuredFields": {
+          "kindergartenName": "안산나루유치원",
+          "kindergartenAddress": "경기도 안산시 단원구 신길로 91",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZRPo_wj52y%22%20%22%EC%95%88%EC%82%B0%EB%82%98%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 안산나루유치원 및 공립단설 단서가 로컬 경기 안산시 안산나루유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZRPo_wj52y/",
+          "normalizedUrl": "instagram.com/p/dzrpo_wj52y",
+          "normalizedText": "안산나루유치원 졸업식 instagram post 검색 결과에서 안산나루유치원 공립단설 유치원 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "a416be99",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안산나루유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 신길로 91",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZRPo_wj52y%22%20%22%EC%95%88%EC%82%B0%EB%82%98%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 안산나루유치원 및 공립단설 단서가 로컬 경기 안산시 안산나루유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f603-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3ca6cce9",
+        "kindergartenId": "1ecec08c-f603-b044-e053-0a32095ab044",
+        "title": "의정부초등학교병설유치원 졸업식 포토존 Threads Post",
+        "url": "https://www.threads.com/@monkey__balloonstudio/post/DEuQjZbz_Nw",
+        "source": "other",
+        "sourceName": "Threads · 의정부초등학교병설유치원",
+        "snippet": "검색 결과에서 의정부초병설유치원 졸업, 졸업식 포토존, 병설유치원 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "graduation",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3ca6cce9",
+        "structuredFields": {
+          "kindergartenName": "의정부초등학교병설유치원",
+          "kindergartenAddress": "경기도 의정부시 동일로522번길 30",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DEuQjZbz_Nw%22%20%22%EC%9D%98%EC%A0%95%EB%B6%80%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 의정부초병설유치원 단서가 로컬 경기 의정부시 의정부초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@monkey__balloonstudio/post/DEuQjZbz_Nw",
+          "normalizedUrl": "threads.com/@monkey__balloonstudio/post/deuqjzbz_nw",
+          "normalizedText": "의정부초등학교병설유치원 졸업식 포토존 threads post 검색 결과에서 의정부초병설유치원 졸업 졸업식 포토존 병설유치원 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "3ca6cce9",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "의정부초등학교병설유치원",
+            "kindergartenAddress": "경기도 의정부시 동일로522번길 30",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DEuQjZbz_Nw%22%20%22%EC%9D%98%EC%A0%95%EB%B6%80%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 의정부초병설유치원 단서가 로컬 경기 의정부시 의정부초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f080-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-63bd49b6",
+        "kindergartenId": "1ecec08c-f080-b044-e053-0a32095ab044",
+        "title": "고촌초등학교병설유치원 입학식 포토존 Threads Post",
+        "url": "https://www.threads.com/@_laraartballoon/post/DGqgUyrTRLW",
+        "source": "other",
+        "sourceName": "Threads · 고촌초등학교병설유치원",
+        "snippet": "검색 결과에서 고촌초 병설유치원 시청각실 입학식 풍선장식과 포토존 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "entrance-ceremony",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "63bd49b6",
+        "structuredFields": {
+          "kindergartenName": "고촌초등학교병설유치원",
+          "kindergartenAddress": "경기도 김포시 신곡로29번길 30",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%20%22%EA%B3%A0%EC%B4%8C%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%85%ED%95%99%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 고촌초 병설유치원 단서가 로컬 경기 김포시 고촌초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@_laraartballoon/post/DGqgUyrTRLW",
+          "normalizedUrl": "threads.com/@_laraartballoon/post/dgqguyrtrlw",
+          "normalizedText": "고촌초등학교병설유치원 입학식 포토존 threads post 검색 결과에서 고촌초 병설유치원 시청각실 입학식 풍선장식과 포토존 단서가 확인된다.",
+          "htmlSnapshotHash": "63bd49b6",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "고촌초등학교병설유치원",
+            "kindergartenAddress": "경기도 김포시 신곡로29번길 30",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%20%22%EA%B3%A0%EC%B4%8C%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%85%ED%95%99%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 고촌초 병설유치원 단서가 로컬 경기 김포시 고촌초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-096c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8fb173ad",
+        "kindergartenId": "1ecec08d-096c-b044-e053-0a32095ab044",
+        "title": "안산신길초등학교병설유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DTshkoSEtug/",
+        "source": "other",
+        "sourceName": "Instagram · 안산신길초등학교병설유치원",
+        "snippet": "검색 결과에서 안산신길초병설유치원 졸업장식과 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony-decoration"
+        ],
+        "date": "2026-01-19",
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8fb173ad",
+        "structuredFields": {
+          "kindergartenName": "신길초등학교병설유치원",
+          "kindergartenAddress": "경기도 안산시 단원구 새뿔길 100",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%8B%A0%EA%B8%B8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 안산신길초병설유치원 단서가 로컬 경기 안산시 신길초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTshkoSEtug/",
+          "normalizedUrl": "instagram.com/p/dtshkosetug",
+          "normalizedText": "안산신길초등학교병설유치원 졸업식 instagram post 검색 결과에서 안산신길초병설유치원 졸업장식과 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "8fb173ad",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신길초등학교병설유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 새뿔길 100",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%8B%A0%EA%B8%B8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 안산신길초병설유치원 단서가 로컬 경기 안산시 신길초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

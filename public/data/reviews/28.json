@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 298,
-  "kindergartenCount": 100,
+  "version": "2026-07-03",
+  "totalCount": 304,
+  "kindergartenCount": 102,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -15,6 +15,58 @@
         "date": "2023-11-02",
         "collectedAt": "2026-02-18T06:13:58.240Z",
         "relevanceScore": 4
+      },
+      {
+        "id": "rev-3a8d994a",
+        "kindergartenId": "1ecec08d-0682-b044-e053-0a32095ab044",
+        "title": "인천 박문유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DLZcca6xe2S/",
+        "source": "other",
+        "sourceName": "Instagram · 박문유치원",
+        "snippet": "검색 결과에서 박문유치원 7세 산들반의 율목도서관 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T14:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3a8d994a",
+        "structuredFields": {
+          "kindergartenName": "박문유치원",
+          "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLZcca6xe2S%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 견학 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLZcca6xe2S/",
+          "normalizedUrl": "instagram.com/p/dlzcca6xe2s",
+          "normalizedText": "인천 박문유치원 율목도서관 견학 instagram post 검색 결과에서 박문유치원 7세 산들반의 율목도서관 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "3a8d994a",
+          "extractedAt": "2026-07-03T14:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "박문유치원",
+            "kindergartenAddress": "인천광역시 중구 우현로50번길 2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLZcca6xe2S%22%20%22%EB%B0%95%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "박문유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 도서관 견학 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T14:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b8c-b044-e053-0a32095ab044": [
@@ -2034,6 +2086,58 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-d7241630",
+        "kindergartenId": "51d93fa8-5892-4343-a7ab-1fb53b0d7a30",
+        "title": "인천 계양유치원 만5세 안전교육·생존수영 Instagram Post",
+        "url": "https://www.instagram.com/p/Cp17lr5SPu7/",
+        "source": "other",
+        "sourceName": "Instagram · 계양유치원",
+        "snippet": "검색 결과에서 #계양유치원 #만5세특색수업 #안전교육 #생존수영 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "swimming-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d7241630",
+        "structuredFields": {
+          "kindergartenName": "계양유치원",
+          "kindergartenAddress": "인천광역시 계양구 계양산로193번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cp17lr5SPu7%22%20%22%EA%B3%84%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "계양유치원은 로컬 원장부에서 단일 정확 명칭이다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cp17lr5SPu7/",
+          "normalizedUrl": "instagram.com/p/cp17lr5spu7",
+          "normalizedText": "인천 계양유치원 만5세 안전교육·생존수영 instagram post 검색 결과에서 #계양유치원 #만5세특색수업 #안전교육 #생존수영 단서가 확인된다.",
+          "htmlSnapshotHash": "d7241630",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "계양유치원",
+            "kindergartenAddress": "인천광역시 계양구 계양산로193번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cp17lr5SPu7%22%20%22%EA%B3%84%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "계양유치원은 로컬 원장부에서 단일 정확 명칭이다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0c86-b044-e053-0a32095ab044": [
@@ -2578,6 +2682,58 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-65ef1774",
+        "kindergartenId": "1ecec08c-f407-b044-e053-0a32095ab044",
+        "title": "인천 명문유치원 구강교육 Instagram Post",
+        "url": "https://www.instagram.com/p/CqCzhNFSsbZ/",
+        "source": "other",
+        "sourceName": "Instagram · 명문유치원",
+        "snippet": "검색 결과에서 인천 명문유치원의 구강교육과 잇솔질 교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "65ef1774",
+        "structuredFields": {
+          "kindergartenName": "명문유치원",
+          "kindergartenAddress": "인천광역시 서구 고산로 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CqCzhNFSsbZ%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "명문유치원은 동명 후보가 있으나 인천 명문유치원 단서가 로컬 인천 서구 명문유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CqCzhNFSsbZ/",
+          "normalizedUrl": "instagram.com/p/cqczhnfssbz",
+          "normalizedText": "인천 명문유치원 구강교육 instagram post 검색 결과에서 인천 명문유치원의 구강교육과 잇솔질 교육 단서가 확인된다.",
+          "htmlSnapshotHash": "65ef1774",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "명문유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CqCzhNFSsbZ%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "명문유치원은 동명 후보가 있으나 인천 명문유치원 단서가 로컬 인천 서구 명문유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f027-b044-e053-0a32095ab044": [
@@ -10801,6 +10957,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-97aa50fb",
+        "kindergartenId": "1ecec08d-05c4-b044-e053-0a32095ab044",
+        "title": "인천 복자유치원 딸기 농장 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DX6K7hpkjIk/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 복자유치원",
+        "snippet": "검색 결과에서 인천 복자유치원 계정, 6세 딸기 농장 견학, 복자유치원 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "farm-experience"
+        ],
+        "date": "2026-05-04",
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "97aa50fb",
+        "structuredFields": {
+          "kindergartenName": "복자유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX6K7hpkjIk%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EB%86%8D%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "복자유치원 동명 후보가 있으나 검색 결과의 인천 복자유치원 계정 단서가 로컬 인천 남동구 복자유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX6K7hpkjIk/",
+          "normalizedUrl": "instagram.com/p/dx6k7hpkjik",
+          "normalizedText": "인천 복자유치원 딸기 농장 견학 instagram post 검색 결과에서 인천 복자유치원 계정 6세 딸기 농장 견학 복자유치원 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "97aa50fb",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "복자유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX6K7hpkjIk%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%20%EB%86%8D%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "복자유치원 동명 후보가 있으나 검색 결과의 인천 복자유치원 계정 단서가 로컬 인천 남동구 복자유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-095f-b044-e053-0a32095ab044": [
@@ -11054,6 +11262,114 @@
           ]
         },
         "evidenceChecksum": "35f94485"
+      }
+    ],
+    "1ecec08d-0a17-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8d4acc74",
+        "kindergartenId": "1ecec08d-0a17-b044-e053-0a32095ab044",
+        "title": "인천 청담숲유치원 예술 발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUhyRxqCrtw/",
+        "source": "other",
+        "sourceName": "Instagram · 청담숲유치원",
+        "snippet": "검색 결과에서 청담숲유치원 예술 발표회와 유아 공연 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "arts-presentation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8d4acc74",
+        "structuredFields": {
+          "kindergartenName": "청담숲유치원",
+          "kindergartenAddress": "인천광역시 남동구 만경로8번길 33",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUhyRxqCrtw%22%20%22%EC%B2%AD%EB%8B%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "청담숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUhyRxqCrtw/",
+          "normalizedUrl": "instagram.com/reel/duhyrxqcrtw",
+          "normalizedText": "인천 청담숲유치원 예술 발표회 instagram reel 검색 결과에서 청담숲유치원 예술 발표회와 유아 공연 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "8d4acc74",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "청담숲유치원",
+            "kindergartenAddress": "인천광역시 남동구 만경로8번길 33",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUhyRxqCrtw%22%20%22%EC%B2%AD%EB%8B%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B0%9C%ED%91%9C%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "청담숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "bda5136a-12ec-46e5-b477-5117f76624b1": [
+      {
+        "id": "rev-5c643aa2",
+        "kindergartenId": "bda5136a-12ec-46e5-b477-5117f76624b1",
+        "title": "인천아람초등학교병설유치원 졸업식 포토존 Threads Post",
+        "url": "https://www.threads.com/@attirance_party_balloon/post/DEXXzVVSnkL",
+        "source": "other",
+        "sourceName": "Threads · 인천아람초등학교병설유치원",
+        "snippet": "검색 결과에서 아람초등학교 병설유치원 졸업식, 검단, 병설유치원 풍선장식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "graduation",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5c643aa2",
+        "structuredFields": {
+          "kindergartenName": "인천아람초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 서구 이음1로 289",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DEXXzVVSnkL%22%20%22%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아람초등학교병설유치원 동명 후보가 있으나 검단 단서가 로컬 인천 서구 인천아람초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@attirance_party_balloon/post/DEXXzVVSnkL",
+          "normalizedUrl": "threads.com/@attirance_party_balloon/post/dexxzvvsnkl",
+          "normalizedText": "인천아람초등학교병설유치원 졸업식 포토존 threads post 검색 결과에서 아람초등학교 병설유치원 졸업식 검단 병설유치원 풍선장식 단서가 확인된다.",
+          "htmlSnapshotHash": "5c643aa2",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천아람초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 서구 이음1로 289",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DEXXzVVSnkL%22%20%22%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아람초등학교병설유치원 동명 후보가 있으나 검단 단서가 로컬 인천 서구 인천아람초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

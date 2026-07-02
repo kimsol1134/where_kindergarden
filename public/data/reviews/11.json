@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 604,
-  "kindergartenCount": 231,
+  "version": "2026-07-03",
+  "totalCount": 610,
+  "kindergartenCount": 234,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -4761,6 +4761,58 @@
           ]
         },
         "evidenceChecksum": "76e81854"
+      },
+      {
+        "id": "rev-8ba7e90f",
+        "kindergartenId": "e159acab-0ebe-4c07-b7cf-ba082e163456",
+        "title": "서울 강동 아이원유치원 첫입학식 Instagram Post",
+        "url": "https://www.instagram.com/p/DIK_yi9zh2Z/",
+        "source": "other",
+        "sourceName": "Instagram · 아이원유치원",
+        "snippet": "검색 결과에서 아이원유치원의 첫입학식에 학부모가 참석한 단서와 강동구, 둔촌동, 아이원유치원 계정 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8ba7e90f",
+        "structuredFields": {
+          "kindergartenName": "아이원유치원",
+          "kindergartenAddress": "서울특별시 강동구 성안로31마길 8",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIK_yi9zh2Z%22%20%22%EC%95%84%EC%9D%B4%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아이원유치원은 동명 원이 있으나 검색 결과의 강동구/둔촌동 단서와 아이원유치원 계정 주소가 서울 강동구 원장부와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIK_yi9zh2Z/",
+          "normalizedUrl": "instagram.com/p/dik_yi9zh2z",
+          "normalizedText": "서울 강동 아이원유치원 첫입학식 instagram post 검색 결과에서 아이원유치원의 첫입학식에 학부모가 참석한 단서와 강동구, 둔촌동, 아이원유치원 계정 단서가 확인된다.",
+          "htmlSnapshotHash": "8ba7e90f",
+          "extractedAt": "2026-07-03T09:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이원유치원",
+            "kindergartenAddress": "서울특별시 강동구 성안로31마길 8",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIK_yi9zh2Z%22%20%22%EC%95%84%EC%9D%B4%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아이원유치원은 동명 원이 있으나 검색 결과의 강동구/둔촌동 단서와 아이원유치원 계정 주소가 서울 강동구 원장부와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-042b-b044-e053-0a32095ab044": [
@@ -13246,6 +13298,57 @@
           ]
         },
         "evidenceChecksum": "55b3c96b"
+      },
+      {
+        "id": "rev-8625a6a1",
+        "kindergartenId": "1ecec08c-f64c-b044-e053-0a32095ab044",
+        "title": "성산아트유치원 졸업 축하 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGenWVnT4Vc/",
+        "source": "other",
+        "sourceName": "Instagram · 성산아트유치원",
+        "snippet": "검색 결과에서 성산아트유치원 졸업생 친구들의 새로운 시작을 응원하는 졸업 축하 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation"
+        ],
+        "date": "2025-02-24",
+        "collectedAt": "2026-07-03T10:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8625a6a1",
+        "structuredFields": {
+          "kindergartenName": "성산아트유치원",
+          "kindergartenAddress": "서울특별시 마포구 새터산2길 34",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGenWVnT4Vc%22%20%22%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성산아트유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGenWVnT4Vc/",
+          "normalizedUrl": "instagram.com/reel/dgenwvnt4vc",
+          "normalizedText": "성산아트유치원 졸업 축하 instagram reel 검색 결과에서 성산아트유치원 졸업생 친구들의 새로운 시작을 응원하는 졸업 축하 단서가 확인된다.",
+          "htmlSnapshotHash": "8625a6a1",
+          "extractedAt": "2026-07-03T10:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성산아트유치원",
+            "kindergartenAddress": "서울특별시 마포구 새터산2길 34",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGenWVnT4Vc%22%20%22%EC%84%B1%EC%82%B0%EC%95%84%ED%8A%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성산아트유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T10:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f27c-b044-e053-0a32095ab044": [
@@ -21236,6 +21339,57 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ee678706",
+        "kindergartenId": "1ecec08c-ef05-b044-e053-0a32095ab044",
+        "title": "두산효자유치원 가족운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CyyBc3wLGZ_/",
+        "source": "other",
+        "sourceName": "Instagram · hyoja_k",
+        "snippet": "검색 결과에서 즐거웠던 효자가족 운동회, 유치원운동회, 효자유치원, 두산효자유치원, 노원구와 성북구 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T04:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ee678706",
+        "structuredFields": {
+          "kindergartenName": "두산효자유치원",
+          "kindergartenAddress": "서울특별시 성북구 화랑로48길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyyBc3wLGZ_%22%20%22hyoja_k%22%20%22%EB%91%90%EC%82%B0%ED%9A%A8%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "두산효자유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CyyBc3wLGZ_/",
+          "normalizedUrl": "instagram.com/reel/cyybc3wlgz_",
+          "normalizedText": "두산효자유치원 가족운동회 instagram reel 검색 결과에서 즐거웠던 효자가족 운동회, 유치원운동회, 효자유치원, 두산효자유치원, 노원구와 성북구 단서가 확인된다.",
+          "htmlSnapshotHash": "ee678706",
+          "extractedAt": "2026-07-03T04:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "두산효자유치원",
+            "kindergartenAddress": "서울특별시 성북구 화랑로48길 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyyBc3wLGZ_%22%20%22hyoja_k%22%20%22%EB%91%90%EC%82%B0%ED%9A%A8%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "두산효자유치원은 로컬 원장부에서 단일 명칭이며 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T04:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ed85-b044-e053-0a32095ab044": [
@@ -21797,6 +21951,167 @@
           ]
         },
         "evidenceChecksum": "142a84fe"
+      }
+    ],
+    "1ecec08c-f5d3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d238839a",
+        "kindergartenId": "1ecec08c-f5d3-b044-e053-0a32095ab044",
+        "title": "서울 강남 남부유치원 학부모참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/Bx1xWEwBR7A/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 #남부유치원 #학부모참여수업 및 유치원 적응 관련 학부모 기록 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T06:35:00.000Z",
+        "relevanceScore": 1,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d238839a",
+        "structuredFields": {
+          "kindergartenName": "남부유치원",
+          "kindergartenAddress": "서울특별시 강남구 언주로 123",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Bx1xWEwBR7A%22%20%22%EB%82%A8%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남부유치원은 로컬 원장부에서 단일 정확 명칭이며, 게시물 해시태그가 남부유치원 학부모참여수업을 직접 가리켜 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Bx1xWEwBR7A/",
+          "normalizedUrl": "instagram.com/p/bx1xwewbr7a",
+          "normalizedText": "서울 강남 남부유치원 학부모참여수업 instagram post 검색 결과에서 #남부유치원 #학부모참여수업 및 유치원 적응 관련 학부모 기록 단서가 확인된다.",
+          "htmlSnapshotHash": "d238839a",
+          "extractedAt": "2026-07-03T06:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남부유치원",
+            "kindergartenAddress": "서울특별시 강남구 언주로 123",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Bx1xWEwBR7A%22%20%22%EB%82%A8%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남부유치원은 로컬 원장부에서 단일 정확 명칭이며, 게시물 해시태그가 남부유치원 학부모참여수업을 직접 가리켜 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T06:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ed83-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f79e38db",
+        "kindergartenId": "1ecec08c-ed83-b044-e053-0a32095ab044",
+        "title": "서울 동대문구 새일문유치원 치아건강 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CnQ0nIBD-re/",
+        "source": "other",
+        "sourceName": "Instagram · 새일문유치원",
+        "snippet": "검색 결과에서 새일문유치원의 유아 치아건강과 양치 후 건강한 치아 관리 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f79e38db",
+        "structuredFields": {
+          "kindergartenName": "새일문유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CnQ0nIBD-re%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새일문유치원은 로컬 원장부 단일 정확 명칭이며 동대문구/장안동 단서와 로컬 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CnQ0nIBD-re/",
+          "normalizedUrl": "instagram.com/reel/cnq0nibd-re",
+          "normalizedText": "서울 동대문구 새일문유치원 치아건강 활동 instagram reel 검색 결과에서 새일문유치원의 유아 치아건강과 양치 후 건강한 치아 관리 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f79e38db",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새일문유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CnQ0nIBD-re%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새일문유치원은 로컬 원장부 단일 정확 명칭이며 동대문구/장안동 단서와 로컬 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-08dd-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e5161b43",
+        "kindergartenId": "1ecec08d-08dd-b044-e053-0a32095ab044",
+        "title": "서울선린초등학교병설유치원 명랑 운동회 Instagram Post",
+        "url": "https://www.instagram.com/p/DZWUg1UE8Dz/",
+        "source": "other",
+        "sourceName": "Instagram · 서울선린초등학교병설유치원",
+        "snippet": "검색 결과에서 선린초 병설 유치원 명랑 운동회와 가족 참여 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e5161b43",
+        "structuredFields": {
+          "kindergartenName": "서울선린초등학교병설유치원",
+          "kindergartenAddress": "서울특별시 강동구 진황도로61길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZWUg1UE8Dz%22%20%22%EC%84%A0%EB%A6%B0%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "로컬 원장부에서 선린초등학교병설유치원은 서울선린초등학교병설유치원으로 확인되며 검색 결과의 선린초 병설 유치원 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZWUg1UE8Dz/",
+          "normalizedUrl": "instagram.com/p/dzwug1ue8dz",
+          "normalizedText": "서울선린초등학교병설유치원 명랑 운동회 instagram post 검색 결과에서 선린초 병설 유치원 명랑 운동회와 가족 참여 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e5161b43",
+          "extractedAt": "2026-07-03T16:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "서울선린초등학교병설유치원",
+            "kindergartenAddress": "서울특별시 강동구 진황도로61길 29",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZWUg1UE8Dz%22%20%22%EC%84%A0%EB%A6%B0%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "로컬 원장부에서 선린초등학교병설유치원은 서울선린초등학교병설유치원으로 확인되며 검색 결과의 선린초 병설 유치원 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },

@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 92,
-  "kindergartenCount": 31,
+  "version": "2026-07-03",
+  "totalCount": 95,
+  "kindergartenCount": 32,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -3712,6 +3712,110 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a6f06d6a",
+        "kindergartenId": "1ecec08c-f307-b044-e053-0a32095ab044",
+        "title": "순천율산유치원 급식 메뉴 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DW5dECjEwtP/",
+        "source": "other",
+        "sourceName": "Instagram · 순천율산유치원",
+        "snippet": "검색 결과에서 순천율산유치원과 유치원 급식 메뉴 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "school-meal",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a6f06d6a",
+        "structuredFields": {
+          "kindergartenName": "순천율산유치원",
+          "kindergartenAddress": "전라남도 순천시 도장길 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW5dECjEwtP%22%20%22%EC%88%9C%EC%B2%9C%EC%9C%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "순천율산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW5dECjEwtP/",
+          "normalizedUrl": "instagram.com/reel/dw5decyjewtp",
+          "normalizedText": "순천율산유치원 급식 메뉴 instagram reel 검색 결과에서 순천율산유치원과 유치원 급식 메뉴 단서가 확인된다.",
+          "htmlSnapshotHash": "a6f06d6a",
+          "extractedAt": "2026-07-03T11:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "순천율산유치원",
+            "kindergartenAddress": "전라남도 순천시 도장길 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW5dECjEwtP%22%20%22%EC%88%9C%EC%B2%9C%EC%9C%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "순천율산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-dfbe468b",
+        "kindergartenId": "1ecec08c-f307-b044-e053-0a32095ab044",
+        "title": "순천율산유치원 급식 잔반정리 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXn2zZOE8it/",
+        "source": "other",
+        "sourceName": "Instagram · 순천율산유치원",
+        "snippet": "검색 결과에서 순천율산유치원과 유치원 급식, 아이들과 함께한 식사 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "school-meal",
+          "kindergarten-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "dfbe468b",
+        "structuredFields": {
+          "kindergartenName": "순천율산유치원",
+          "kindergartenAddress": "전라남도 순천시 도장길 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXn2zZOE8it%22%20%22%EC%88%9C%EC%B2%9C%EC%9C%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "순천율산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXn2zZOE8it/",
+          "normalizedUrl": "instagram.com/reel/dxn2zzoe8it",
+          "normalizedText": "순천율산유치원 급식 잔반정리 instagram reel 검색 결과에서 순천율산유치원과 유치원 급식, 아이들과 함께한 식사 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "dfbe468b",
+          "extractedAt": "2026-07-03T11:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "순천율산유치원",
+            "kindergartenAddress": "전라남도 순천시 도장길 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXn2zZOE8it%22%20%22%EC%88%9C%EC%B2%9C%EC%9C%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "순천율산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T11:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0c7c-b044-e053-0a32095ab044": [
@@ -4306,6 +4410,60 @@
           ]
         },
         "evidenceChecksum": "c61bbe0a"
+      }
+    ],
+    "1ecec08c-ff92-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-fc7e272e",
+        "kindergartenId": "1ecec08c-ff92-b044-e053-0a32095ab044",
+        "title": "무안 현경초등학교병설유치원 학부모참관수업 급식공개 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DAWtn6HIU3B/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 #현경초병설유치원 #학부모참관수업 #현경초급식공개 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "meal",
+          "parent-observation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fc7e272e",
+        "structuredFields": {
+          "kindergartenName": "현경초등학교병설유치원",
+          "kindergartenAddress": "전라남도 무안군 황토길 17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAWtn6HIU3B%22%20%22%ED%98%84%EA%B2%BD%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EA%B3%B5%EA%B0%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 현경초병설유치원 해시태그와 로컬 원장부의 현경초등학교병설유치원이 같은 기관으로 판단되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DAWtn6HIU3B/",
+          "normalizedUrl": "instagram.com/reel/dawtn6hiu3b",
+          "normalizedText": "무안 현경초등학교병설유치원 학부모참관수업 급식공개 instagram reel 검색 결과에서 #현경초병설유치원 #학부모참관수업 #현경초급식공개 단서가 확인된다.",
+          "htmlSnapshotHash": "fc7e272e",
+          "extractedAt": "2026-07-03T07:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현경초등학교병설유치원",
+            "kindergartenAddress": "전라남도 무안군 황토길 17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAWtn6HIU3B%22%20%22%ED%98%84%EA%B2%BD%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EA%B3%B5%EA%B0%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 현경초병설유치원 해시태그와 로컬 원장부의 현경초등학교병설유치원이 같은 기관으로 판단되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },
