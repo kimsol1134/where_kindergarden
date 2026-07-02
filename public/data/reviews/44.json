@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 204,
+  "totalCount": 205,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -6391,6 +6391,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave715-78b53939",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 아나바다 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "일심유치원이 아나바다 시장놀이를 진행하며 아이들이 가게와 장터 역할을 경험한 릴스입니다.",
+        "summary": "유아들이 물건을 사고팔며 경제활동과 나눔을 놀이로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada",
+          "role-play",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-78b53939",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+          "normalizedUrl": "instagram.com/reel/dac_9j5bz2n",
+          "normalizedText": "일심유치원 아산유치원 아나바다 시장놀이 우리동네 장터",
+          "htmlSnapshotHash": "sns-wave715-78b53939",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ],
     "dabf8c6f-c731-4460-a7a1-f561c52925b5": [

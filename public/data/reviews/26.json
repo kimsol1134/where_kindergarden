@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 340,
+  "totalCount": 342,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -11859,6 +11859,80 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.990Z",
         "approvedBy": "codex-manual-sns-wave697"
+      },
+      {
+        "id": "rev-sns-wave715-37b5817f",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 초록유치원 초록플리마켓 기록",
+        "url": "https://www.instagram.com/p/DY8azyhzXoI/",
+        "source": "other",
+        "sourceName": "Instagram · 초록유치원",
+        "snippet": "초록유치원이 부산 플리마켓과 아나바다 활동을 함께 진행한 공개 게시물입니다.",
+        "summary": "유아들이 플리마켓 현장에서 물건을 고르고 나눔을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "flea-market",
+          "anabada",
+          "market-play",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-37b5817f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY8azyhzXoI/",
+          "normalizedUrl": "instagram.com/p/dy8azyhzxoi",
+          "normalizedText": "초록유치원 초록플리마켓 부산플리마켓 아나바다",
+          "htmlSnapshotHash": "sns-wave715-37b5817f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY8azyhzXoI/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
+      },
+      {
+        "id": "rev-sns-wave715-b84207a5",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 초록유치원 플리마켓 행사 기록",
+        "url": "https://www.instagram.com/p/DY8btuTBHqQ/",
+        "source": "other",
+        "sourceName": "Instagram · 초록유치원",
+        "snippet": "초록유치원이 초록플리마켓 행사에서 아이들이 아나바다 활동을 즐긴 모습을 담은 게시물입니다.",
+        "summary": "유아들이 플리마켓을 통해 물건의 쓰임과 나눔을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "flea-market",
+          "anabada",
+          "market-play",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-b84207a5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY8btuTBHqQ/",
+          "normalizedUrl": "instagram.com/p/dy8btutbhqq",
+          "normalizedText": "초록유치원 초록플리마켓 플리마켓 아나바다 부산플리마켓",
+          "htmlSnapshotHash": "sns-wave715-b84207a5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY8btuTBHqQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       }
     ],
     "1ecec08c-fa79-b044-e053-0a32095ab044": [
@@ -16140,6 +16214,5 @@
         "approvedBy": "codex-manual-sns-wave689"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }
