@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 25,
-  "kindergartenCount": 13,
+  "totalCount": 26,
+  "kindergartenCount": 14,
   "reviews": {
     "28a9b124-1204-4b4e-a734-e8bd09ba275b": [
       {
@@ -1165,6 +1165,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave718"
+      }
+    ],
+    "1ecec08c-ff8f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave725-94145ed1",
+        "kindergartenId": "1ecec08c-ff8f-b044-e053-0a32095ab044",
+        "title": "시화리라유치원 해양생태과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DRoLP2iga6x/",
+        "source": "other",
+        "sourceName": "Instagram · 시화리라유치원",
+        "snippet": "시화리라유치원 친구들이 해양생태과학관에서 다양한 물고기와 바다 생물을 관찰한 게시물입니다.",
+        "summary": "유아들이 해양생태과학관 견학을 통해 바다 생물과 해양 환경을 살펴본 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "marine-ecology-center",
+          "marine-life",
+          "field-trip",
+          "siheung"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-94145ed1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRoLP2iga6x/",
+          "normalizedUrl": "instagram.com/p/drolp2iga6x",
+          "normalizedText": "시화리라유치원 해양생태과학관 견학 물고기 바다생물",
+          "htmlSnapshotHash": "sns-wave725-94145ed1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DRoLP2iga6x/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ]
   },

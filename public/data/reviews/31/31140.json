@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 35,
-  "kindergartenCount": 12,
+  "totalCount": 36,
+  "kindergartenCount": 13,
   "reviews": {
     "1ecec08c-f945-b044-e053-0a32095ab044": [
       {
@@ -1574,6 +1574,47 @@
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-fd99-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave725-68690b52",
+        "kindergartenId": "1ecec08c-fd99-b044-e053-0a32095ab044",
+        "title": "울산 아름유치원 국립수산과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DWsMMeOEwRa/",
+        "source": "other",
+        "sourceName": "Instagram · 울산아름유치원",
+        "snippet": "울산 아름유치원 친구들이 국립수산과학관에서 바다 생물을 살펴본 릴스입니다.",
+        "summary": "유아들이 과학관 전시를 통해 해양 생물과 수산 자원을 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fisheries-science-museum",
+          "marine-life",
+          "field-trip",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-68690b52",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWsMMeOEwRa/",
+          "normalizedUrl": "instagram.com/reel/dwsmmeoewra",
+          "normalizedText": "울산아름유치원 국립수산과학관 견학 바다생물 현장체험",
+          "htmlSnapshotHash": "sns-wave725-68690b52",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWsMMeOEwRa/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

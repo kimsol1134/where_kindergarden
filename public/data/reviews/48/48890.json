@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 2,
+  "totalCount": 3,
   "kindergartenCount": 2,
   "reviews": {
     "1ecec08d-0ac7-b044-e053-0a32095ab044": [
@@ -93,6 +93,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-sns-wave725-1623313a",
+        "kindergartenId": "1ecec08c-f097-b044-e053-0a32095ab044",
+        "title": "합천 성모유치원 갯벌체험 기록",
+        "url": "https://www.instagram.com/reel/DaAFzG5APxx/",
+        "source": "other",
+        "sourceName": "Instagram · 합천성모유치원",
+        "snippet": "합천성모유치원 친구들이 갯벌체험을 즐긴 현장 릴스입니다.",
+        "summary": "유아들이 갯벌 환경에서 자연물을 살펴보고 해양 생태를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mudflat",
+          "marine-ecology",
+          "field-trip",
+          "hapcheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-1623313a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaAFzG5APxx/",
+          "normalizedUrl": "instagram.com/reel/daafzg5apxx",
+          "normalizedText": "합천성모유치원 갯벌체험 자연체험 해양생태",
+          "htmlSnapshotHash": "sns-wave725-1623313a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaAFzG5APxx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ]
   },

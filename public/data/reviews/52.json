@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 195,
-  "kindergartenCount": 60,
+  "totalCount": 196,
+  "kindergartenCount": 61,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
       {
@@ -8563,6 +8563,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave681"
+      }
+    ],
+    "1ecec08c-fba1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave725-42e7cbf4",
+        "kindergartenId": "1ecec08c-fba1-b044-e053-0a32095ab044",
+        "title": "익산 비사벌유치원 가족 갯벌체험 기록",
+        "url": "https://www.instagram.com/reel/DLEnKX2y5mG/",
+        "source": "other",
+        "sourceName": "Instagram · 가경주어촌체험마을",
+        "snippet": "익산 비사벌유치원 가족들이 어촌체험마을에서 갯벌체험을 진행한 릴스입니다.",
+        "summary": "유아와 가족이 갯벌 현장에서 해양 생태와 어촌 활동을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mudflat",
+          "fishing-village",
+          "family-activity",
+          "iksan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-42e7cbf4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLEnKX2y5mG/",
+          "normalizedUrl": "instagram.com/reel/dlenkx2y5mg",
+          "normalizedText": "익산 비사벌유치원 가족 갯벌체험 어촌체험마을",
+          "htmlSnapshotHash": "sns-wave725-42e7cbf4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DLEnKX2y5mG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 34,
+  "totalCount": 35,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
@@ -813,6 +813,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave725-0acbb960",
+        "kindergartenId": "36627649-3e14-4655-b961-d249c0207cf8",
+        "title": "부산 바다유치원 해양박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DN7Wx8Xkmeq/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "부산 바다유치원 친구들이 해양박물관에서 여러 해양생물을 만나고 돌아온 릴스입니다.",
+        "summary": "유아들이 해양박물관 견학을 통해 바다 생물 관찰 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "marine-museum",
+          "marine-life",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-0acbb960",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN7Wx8Xkmeq/",
+          "normalizedUrl": "instagram.com/reel/dn7wx8xkmeq",
+          "normalizedText": "부산바다유치원 해양박물관 해양생물 견학",
+          "htmlSnapshotHash": "sns-wave725-0acbb960",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DN7Wx8Xkmeq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ],
     "1ecec08c-f14e-b044-e053-0a32095ab044": [

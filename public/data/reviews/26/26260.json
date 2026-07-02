@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 33,
+  "totalCount": 34,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0dd0-b044-e053-0a32095ab044": [
@@ -73,6 +73,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:40:00.000Z",
         "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
+        "id": "rev-sns-wave725-5d90c8a1",
+        "kindergartenId": "1ecec08d-0dd0-b044-e053-0a32095ab044",
+        "title": "부산 동래유치원 국립수산과학관 견학 기록",
+        "url": "https://www.instagram.com/p/DZ6GO89D97t/",
+        "source": "other",
+        "sourceName": "Instagram · 동래유치원",
+        "snippet": "동래유치원 친구들이 국립수산과학관에서 해양생물 현장체험학습을 진행한 게시물입니다.",
+        "summary": "유아들이 해양생물 전시를 관찰하며 바다 생태를 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fisheries-science-museum",
+          "marine-life",
+          "field-trip",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-5d90c8a1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ6GO89D97t/",
+          "normalizedUrl": "instagram.com/p/dz6go89d97t",
+          "normalizedText": "동래유치원 국립수산과학관 해양생물 현장체험학습 놀이교육",
+          "htmlSnapshotHash": "sns-wave725-5d90c8a1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ6GO89D97t/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ],
     "1ecec08c-f39f-b044-e053-0a32095ab044": [
@@ -1694,5 +1732,6 @@
         "approvedBy": "codex-manual-sns-wave689"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

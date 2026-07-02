@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 207,
+  "totalCount": 208,
   "kindergartenCount": 63,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -8807,6 +8807,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T11:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave725-331c4c89",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "title": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 기록",
+        "url": "https://www.instagram.com/p/DQQOwITgZEn/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성샛별유치원",
+        "snippet": "삼성샛별유치원 친구들이 왕산어촌체험마을에서 갯벌을 걷고 바지락을 캐 본 게시물입니다.",
+        "summary": "유아와 가족이 어촌체험마을에서 갯벌 생태와 수산 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mudflat",
+          "fishing-village",
+          "family-activity",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-331c4c89",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQQOwITgZEn/",
+          "normalizedUrl": "instagram.com/p/dqqowitgzen",
+          "normalizedText": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 바지락",
+          "htmlSnapshotHash": "sns-wave725-331c4c89",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQQOwITgZEn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
       }
     ],
     "1ecec08c-f7e8-b044-e053-0a32095ab044": [
