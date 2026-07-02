@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 693,
+  "totalCount": 694,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -25194,6 +25194,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave727-7442570d",
+        "kindergartenId": "1ecec08c-fb95-b044-e053-0a32095ab044",
+        "title": "성북 영재유치원 7세 생존수영 기록",
+        "url": "https://www.instagram.com/p/C_rHYYrhGpL/",
+        "source": "other",
+        "sourceName": "Instagram · 영재유치원",
+        "snippet": "성북구 영재유치원 7세 친구들이 유아 생존수영 활동에 참여한 게시물입니다.",
+        "summary": "유아들이 생존수영을 통해 물 적응과 신체 활동 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-7442570d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C_rHYYrhGpL/",
+          "normalizedUrl": "instagram.com/p/c_rhyyrhgpl",
+          "normalizedText": "성북구 영재유치원 7세 생존수영 유아 물적응",
+          "htmlSnapshotHash": "sns-wave727-7442570d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C_rHYYrhGpL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08d-0f8c-b044-e053-0a32095ab044": [

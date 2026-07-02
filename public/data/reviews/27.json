@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 535,
+  "totalCount": 537,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -5198,6 +5198,44 @@
           ]
         },
         "evidenceChecksum": "2282c09d"
+      },
+      {
+        "id": "rev-sns-wave727-edc8e7ea",
+        "kindergartenId": "1ecec08c-ff35-b044-e053-0a32095ab044",
+        "title": "대구 아이캔유치원 정기 수영수업 기록",
+        "url": "https://www.instagram.com/p/DWxgz90k57m/",
+        "source": "other",
+        "sourceName": "Instagram · 아이캔유치원",
+        "snippet": "아이캔유치원 원아들이 유치원 전용 수영장에서 정기 수영수업과 안전교육을 진행한 게시물입니다.",
+        "summary": "유아들이 반복적인 수영 활동을 통해 물 적응과 안전 습관을 기른 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "swimming-class",
+          "water-safety",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-edc8e7ea",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxgz90k57m/",
+          "normalizedUrl": "instagram.com/p/dwxgz90k57m",
+          "normalizedText": "대구 아이캔유치원 전용 수영장 정기 수영수업 안전교육",
+          "htmlSnapshotHash": "sns-wave727-edc8e7ea",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWxgz90k57m/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08c-ff38-b044-e053-0a32095ab044": [
@@ -15049,6 +15087,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T16:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave727-a6a7cdeb",
+        "kindergartenId": "1ecec08d-032b-b044-e053-0a32095ab044",
+        "title": "대구 개미유치원 생존수영 체험학습 기록",
+        "url": "https://www.instagram.com/p/DaKqEhmkbIv/",
+        "source": "other",
+        "sourceName": "Instagram · 개미유치원",
+        "snippet": "개미유치원 7세 친구들이 생존수영 체험학습에서 물놀이 안전수칙과 수중 활동을 경험한 게시물입니다.",
+        "summary": "유아들이 생존수영 체험학습을 통해 물에서의 안전 행동을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-a6a7cdeb",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaKqEhmkbIv/",
+          "normalizedUrl": "instagram.com/p/dakqehmkbiv",
+          "normalizedText": "대구 개미유치원 생존수영 체험학습 물놀이 안전수칙 수중활동",
+          "htmlSnapshotHash": "sns-wave727-a6a7cdeb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaKqEhmkbIv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08d-0d5a-b044-e053-0a32095ab044": [

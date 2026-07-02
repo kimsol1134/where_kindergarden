@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 369,
+  "totalCount": 370,
   "kindergartenCount": 77,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -10562,6 +10562,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T05:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave727-55c66fdc",
+        "kindergartenId": "120dced0-9471-4ae6-9e57-9236ed9496ac",
+        "title": "대전 토들러유치원 7세 생존수영 교육 기록",
+        "url": "https://www.instagram.com/reel/DLBnswfSNdy/",
+        "source": "other",
+        "sourceName": "Instagram · 토들러유치원",
+        "snippet": "토들러유치원 7세 친구들이 진잠체육관 수영장에서 생존수영 교육을 진행한 릴스입니다.",
+        "summary": "유아들이 수영장 현장에서 생존수영의 기본을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-55c66fdc",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLBnswfSNdy/",
+          "normalizedUrl": "instagram.com/reel/dlbnswfsndy",
+          "normalizedText": "대전 토들러유치원 7세 진잠체육관 생존수영 교육",
+          "htmlSnapshotHash": "sns-wave727-55c66fdc",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DLBnswfSNdy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08c-fb0a-b044-e053-0a32095ab044": [

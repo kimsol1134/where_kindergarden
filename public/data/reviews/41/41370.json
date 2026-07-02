@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 66,
+  "totalCount": 67,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08c-edc7-b044-e053-0a32095ab044": [
@@ -1825,6 +1825,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave703"
+      },
+      {
+        "id": "rev-sns-wave727-c3bf5349",
+        "kindergartenId": "1ecec08d-0882-b044-e053-0a32095ab044",
+        "title": "오산 오르다유치원 생존수영 첫날 기록",
+        "url": "https://www.instagram.com/reel/DWpc1I6E_Af/",
+        "source": "other",
+        "sourceName": "Instagram · 오르다유치원",
+        "snippet": "오르다유치원 친구들이 수영장에서 안전교육과 함께 생존수영 첫 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 친구들과 함께 수영장에서 안전하게 물 적응 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "osan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-c3bf5349",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWpc1I6E_Af/",
+          "normalizedUrl": "instagram.com/reel/dwpc1i6e_af",
+          "normalizedText": "오산 오르다유치원 생존수영 첫날 수영장 안전교육",
+          "htmlSnapshotHash": "sns-wave727-c3bf5349",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWpc1I6E_Af/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08c-f360-b044-e053-0a32095ab044": [

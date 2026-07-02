@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 80,
+  "totalCount": 81,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08d-0c86-b044-e053-0a32095ab044": [
@@ -64,6 +64,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave727-91c17531",
+        "kindergartenId": "1ecec08d-0c86-b044-e053-0a32095ab044",
+        "title": "인천 경서유치원 생존수영 활동 기록",
+        "url": "https://www.instagram.com/p/DSBaxbnElE6/",
+        "source": "other",
+        "sourceName": "Instagram · 경서유치원",
+        "snippet": "경서유치원 친구들이 생존수영 활동에 참여하며 물에 대한 호기심과 안전 감각을 키운 게시물입니다.",
+        "summary": "유아들이 수영장에서 생존수영을 경험하며 수상 안전을 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-91c17531",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSBaxbnElE6/",
+          "normalizedUrl": "instagram.com/p/dsbaxbnele6",
+          "normalizedText": "인천 경서유치원 생존수영 수영장 수상안전",
+          "htmlSnapshotHash": "sns-wave727-91c17531",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSBaxbnElE6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08d-0a31-b044-e053-0a32095ab044": [

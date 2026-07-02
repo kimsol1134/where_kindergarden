@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 94,
+  "totalCount": 95,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -2529,6 +2529,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.900Z",
         "approvedBy": "codex-manual-sns-wave693"
+      },
+      {
+        "id": "rev-sns-wave727-8289492a",
+        "kindergartenId": "1ecec08d-0d01-b044-e053-0a32095ab044",
+        "title": "의정부 코코유치원 7세 생존수영 수업 기록",
+        "url": "https://www.instagram.com/reel/DL69NaNy2Kx/",
+        "source": "other",
+        "sourceName": "Instagram · 코코유치원",
+        "snippet": "코코유치원 7세 친구들이 물속 안전 자세와 위기 상황 대처를 익힌 생존수영 릴스입니다.",
+        "summary": "유아들이 생존수영 수업에서 물속에서 스스로를 지키는 방법을 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "survival-swimming",
+          "water-safety",
+          "field-trip",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave727-8289492a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL69NaNy2Kx/",
+          "normalizedUrl": "instagram.com/reel/dl69nany2kx",
+          "normalizedText": "의정부 코코유치원 7세 생존수영 물속 안전 자세 위기상황",
+          "htmlSnapshotHash": "sns-wave727-8289492a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DL69NaNy2Kx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave727"
       }
     ],
     "1ecec08c-f8ef-b044-e053-0a32095ab044": [
