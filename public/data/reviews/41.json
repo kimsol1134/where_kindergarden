@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1061,
-  "kindergartenCount": 445,
+  "totalCount": 1063,
+  "kindergartenCount": 447,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -40318,6 +40318,114 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0590-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3d57a3c9",
+        "kindergartenId": "1ecec08d-0590-b044-e053-0a32095ab044",
+        "title": "성남정자초등학교병설유치원 찾아가는 음악회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DQRqHYHAf_N/",
+        "source": "other",
+        "sourceName": "Instagram · 인뮤직협동조합",
+        "snippet": "검색 결과에서 성남, 정자초병설유치원, 유치원으로 찾아가는 음악회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance"
+        ],
+        "date": "2024-05-14",
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3d57a3c9",
+        "structuredFields": {
+          "kindergartenName": "성남정자초등학교병설유치원",
+          "kindergartenAddress": "경기도 성남시 분당구 분당수서로 442",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQRqHYHAf_N%22%20%22%EC%A0%95%EC%9E%90%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%84%B1%EB%82%A8%22%20%22%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정자초병설유치원 동명 후보가 있으나 성남 단서가 로컬 경기 성남정자초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQRqHYHAf_N/",
+          "normalizedUrl": "instagram.com/reel/dqrqhyhaf_n",
+          "normalizedText": "성남정자초등학교병설유치원 찾아가는 음악회 instagram reel 검색 결과에서 성남 정자초병설유치원 유치원으로 찾아가는 음악회 단서가 확인된다.",
+          "htmlSnapshotHash": "3d57a3c9",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성남정자초등학교병설유치원",
+            "kindergartenAddress": "경기도 성남시 분당구 분당수서로 442",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQRqHYHAf_N%22%20%22%EC%A0%95%EC%9E%90%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%84%B1%EB%82%A8%22%20%22%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정자초병설유치원 동명 후보가 있으나 성남 단서가 로컬 경기 성남정자초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0e3f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-88025060",
+        "kindergartenId": "1ecec08d-0e3f-b044-e053-0a32095ab044",
+        "title": "양주 덕계초등학교병설유치원 작은음악회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DX4BOfrxDiA/",
+        "source": "other",
+        "sourceName": "Instagram · 찾아가는음악회",
+        "snippet": "검색 결과에서 경기도 양주, 덕계초 병설유치원, 작은음악회 수업 준비 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "88025060",
+        "structuredFields": {
+          "kindergartenName": "덕계초등학교병설유치원",
+          "kindergartenAddress": "경기도 양주시 평화로1489번길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX4BOfrxDiA%22%20%22%EB%8D%95%EA%B3%84%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "덕계초등학교병설유치원 동명 후보가 있으나 경기도 양주 단서가 로컬 경기 양주시 덕계초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DX4BOfrxDiA/",
+          "normalizedUrl": "instagram.com/reel/dx4bofrxdia",
+          "normalizedText": "양주 덕계초등학교병설유치원 작은음악회 instagram reel 검색 결과에서 경기도 양주 덕계초 병설유치원 작은음악회 수업 준비 단서가 확인된다.",
+          "htmlSnapshotHash": "88025060",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "덕계초등학교병설유치원",
+            "kindergartenAddress": "경기도 양주시 평화로1489번길 29",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX4BOfrxDiA%22%20%22%EB%8D%95%EA%B3%84%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "덕계초등학교병설유치원 동명 후보가 있으나 경기도 양주 단서가 로컬 경기 양주시 덕계초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 98,
+  "totalCount": 99,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -2168,6 +2168,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.980Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cc20bac0",
+        "kindergartenId": "1e984b83-973a-40a7-8859-f281c40d307e",
+        "title": "상안유치원 악기로 만나는 세상 Instagram Post",
+        "url": "https://www.instagram.com/p/DLmMX5kvQwH/",
+        "source": "other",
+        "sourceName": "Instagram · 상안유치원",
+        "snippet": "검색 결과에서 상안유치원, 공립단설유치원, 악기로 만나는 세상, 음악교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-activity",
+          "instrument-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cc20bac0",
+        "structuredFields": {
+          "kindergartenName": "상안유치원",
+          "kindergartenAddress": "울산광역시 북구 양지길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLmMX5kvQwH%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%85%EA%B8%B0%EB%A1%9C%20%EB%A7%8C%EB%82%98%EB%8A%94%20%EC%84%B8%EC%83%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악교육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLmMX5kvQwH/",
+          "normalizedUrl": "instagram.com/p/dlmmx5kvqwh",
+          "normalizedText": "상안유치원 악기로 만나는 세상 instagram post 검색 결과에서 상안유치원 공립단설유치원 악기로 만나는 세상 음악교육 단서가 확인된다.",
+          "htmlSnapshotHash": "cc20bac0",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "상안유치원",
+            "kindergartenAddress": "울산광역시 북구 양지길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLmMX5kvQwH%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%85%EA%B8%B0%EB%A1%9C%20%EB%A7%8C%EB%82%98%EB%8A%94%20%EC%84%B8%EC%83%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악교육 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

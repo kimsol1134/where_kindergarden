@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 162,
-  "kindergartenCount": 53,
+  "totalCount": 163,
+  "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
       {
@@ -7177,6 +7177,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T11:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fddf-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d7ac4746",
+        "kindergartenId": "1ecec08c-fddf-b044-e053-0a32095ab044",
+        "title": "풍세초등학교병설유치원 찾아가는 어린이 음악회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXAygcnCSU-/",
+        "source": "other",
+        "sourceName": "Instagram · 하랑",
+        "snippet": "검색 결과에서 풍세초등학교병설유치원, 찾아가는 어린이 음악회, 유초이음교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d7ac4746",
+        "structuredFields": {
+          "kindergartenName": "풍세초등학교병설유치원",
+          "kindergartenAddress": "충청남도 천안시 동남구 풍세2길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXAygcnCSU-%22%20%22%ED%92%8D%EC%84%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "풍세초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악회 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXAygcnCSU-/",
+          "normalizedUrl": "instagram.com/reel/dxaygcncsu-",
+          "normalizedText": "풍세초등학교병설유치원 찾아가는 어린이 음악회 instagram reel 검색 결과에서 풍세초등학교병설유치원 찾아가는 어린이 음악회 유초이음교육 단서가 확인된다.",
+          "htmlSnapshotHash": "d7ac4746",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "풍세초등학교병설유치원",
+            "kindergartenAddress": "충청남도 천안시 동남구 풍세2길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXAygcnCSU-%22%20%22%ED%92%8D%EC%84%B8%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B0%BE%EC%95%84%EA%B0%80%EB%8A%94%20%EC%96%B4%EB%A6%B0%EC%9D%B4%20%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "풍세초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 음악회 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

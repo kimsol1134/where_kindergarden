@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 283,
-  "kindergartenCount": 96,
+  "totalCount": 284,
+  "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -13014,6 +13014,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-089d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ab79e37d",
+        "kindergartenId": "1ecec08d-089d-b044-e053-0a32095ab044",
+        "title": "석보초등학교병설유치원 국악한마당 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYUGpf4hP8k/",
+        "source": "other",
+        "sourceName": "Instagram · pocomusic2",
+        "snippet": "검색 결과에서 석보초등학교 병설유치원, 신나는 국악한마당, 군밤타령 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ab79e37d",
+        "structuredFields": {
+          "kindergartenName": "석보초등학교병설유치원",
+          "kindergartenAddress": "경상북도 영양군 원리길 3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYUGpf4hP8k%22%20%22%EC%84%9D%EB%B3%B4%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22%20%22%EA%B5%AD%EC%95%85%ED%95%9C%EB%A7%88%EB%8B%B9%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "석보초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 국악 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYUGpf4hP8k/",
+          "normalizedUrl": "instagram.com/reel/dyugpf4hp8k",
+          "normalizedText": "석보초등학교병설유치원 국악한마당 instagram reel 검색 결과에서 석보초등학교 병설유치원 신나는 국악한마당 군밤타령 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ab79e37d",
+          "extractedAt": "2026-07-03T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "석보초등학교병설유치원",
+            "kindergartenAddress": "경상북도 영양군 원리길 3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYUGpf4hP8k%22%20%22%EC%84%9D%EB%B3%B4%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22%20%22%EA%B5%AD%EC%95%85%ED%95%9C%EB%A7%88%EB%8B%B9%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "석보초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 국악 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
