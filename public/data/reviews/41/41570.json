@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 132,
+  "totalCount": 133,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -3612,6 +3612,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:56.000Z",
         "approvedBy": "codex-manual-sns-wave687"
+      },
+      {
+        "id": "rev-sns-wave710-c3b5bb26",
+        "kindergartenId": "1ecec08c-edbd-b044-e053-0a32095ab044",
+        "title": "김포 양곡숲유치원 감자심기 텃밭활동 기록",
+        "url": "https://www.instagram.com/reel/DWkWbeyk18N/",
+        "source": "other",
+        "sourceName": "Instagram · 양곡숲유치원",
+        "snippet": "양곡숲유치원이 바깥놀이와 함께 감자심기 텃밭활동을 이어간 릴스입니다.",
+        "summary": "유아들이 흙을 만지고 작물을 심으며 생명의 성장을 관찰하는 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "potato",
+          "outdoor-play",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave710-c3b5bb26",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWkWbeyk18N/",
+          "normalizedUrl": "instagram.com/reel/dwkwbeyk18n",
+          "normalizedText": "양곡숲유치원 감자심기 텃밭활동 바깥놀이 작물 성장",
+          "htmlSnapshotHash": "sns-wave710-c3b5bb26",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWkWbeyk18N/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave710"
       }
     ],
     "1ecec08c-fdcc-b044-e053-0a32095ab044": [

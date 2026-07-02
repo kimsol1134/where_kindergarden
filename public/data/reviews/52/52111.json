@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 34,
+  "totalCount": 35,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-037b-b044-e053-0a32095ab044": [
@@ -963,6 +963,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.992Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave710-85dbe6d8",
+        "kindergartenId": "1ecec08d-0f3a-b044-e053-0a32095ab044",
+        "title": "전주 알프스유치원 쑥과 꽃 자연놀이 기록",
+        "url": "https://www.instagram.com/p/DZeno9XEecQ/",
+        "source": "other",
+        "sourceName": "Instagram · 알프스유치원",
+        "snippet": "알프스유치원이 유치원 텃밭에서 만난 쑥과 꽃으로 다양한 모양을 만들어 본 자연놀이 게시물입니다.",
+        "summary": "유아들이 텃밭의 자연물을 직접 만지고 관찰하며 표현 활동으로 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "nature-play",
+          "ecology",
+          "jeonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave710-85dbe6d8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZeno9XEecQ/",
+          "normalizedUrl": "instagram.com/p/dzeno9xeecq",
+          "normalizedText": "알프스유치원 유치원 텃밭 쑥 꽃 자연놀이 생태활동",
+          "htmlSnapshotHash": "sns-wave710-85dbe6d8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZeno9XEecQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave710"
       }
     ],
     "1ecec08d-0a42-b044-e053-0a32095ab044": [
@@ -1594,5 +1631,6 @@
         "approvedBy": "codex-manual-sns-wave680"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

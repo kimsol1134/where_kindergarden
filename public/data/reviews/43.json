@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 116,
+  "totalCount": 117,
   "kindergartenCount": 30,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -4461,6 +4461,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T09:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave710-a5e4842d",
+        "kindergartenId": "1ecec08d-0cc6-b044-e053-0a32095ab044",
+        "title": "제천 소화유치원 상추키우기 텃밭활동 기록",
+        "url": "https://www.instagram.com/p/DY6r1o7SjHI/",
+        "source": "other",
+        "sourceName": "Instagram · 소화유치원",
+        "snippet": "제천 소화유치원이 상추를 키우고 텃밭활동을 진행한 교육활동 게시물입니다.",
+        "summary": "유아들이 상추를 가꾸며 생장 과정을 살피고 수확을 기다리는 경험을 남긴 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "lettuce",
+          "food-education",
+          "jecheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave710-a5e4842d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6r1o7SjHI/",
+          "normalizedUrl": "instagram.com/p/dy6r1o7sjhi",
+          "normalizedText": "제천유치원 소화유치원 텃밭활동 상추키우기 교육활동",
+          "htmlSnapshotHash": "sns-wave710-a5e4842d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY6r1o7SjHI/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave710"
       }
     ],
     "1ecec08d-0420-b044-e053-0a32095ab044": [
@@ -5020,5 +5057,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.900Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

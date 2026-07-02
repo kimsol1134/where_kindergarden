@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 145,
+  "totalCount": 146,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -5526,6 +5526,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave710-cb1019c6",
+        "kindergartenId": "1ecec08c-ed9a-b044-e053-0a32095ab044",
+        "title": "대구 태양유치원 텃밭 씨앗 뿌리기 기록",
+        "url": "https://www.instagram.com/p/DW9BtnxFD5G/",
+        "source": "other",
+        "sourceName": "Instagram · 대구 태양유치원",
+        "snippet": "대구 태양유치원이 식생활교육 프로젝트로 상추, 치커리, 쑥갓 씨앗을 알아보고 텃밭 체험을 시작한 게시물입니다.",
+        "summary": "유아들이 씨앗과 채소를 관찰하며 식생활교육과 텃밭 체험을 연결한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "seed-planting",
+          "food-education",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave710-cb1019c6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW9BtnxFD5G/",
+          "normalizedUrl": "instagram.com/p/dw9btnxfd5g",
+          "normalizedText": "대구 태양유치원 식생활교육 텃밭 체험 상추 치커리 쑥갓 씨앗",
+          "htmlSnapshotHash": "sns-wave710-cb1019c6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW9BtnxFD5G/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave710"
       }
     ],
     "1ecec08d-032b-b044-e053-0a32095ab044": [

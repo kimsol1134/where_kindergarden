@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 124,
+  "totalCount": 125,
   "kindergartenCount": 43,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -4749,6 +4749,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:57.000Z",
         "approvedBy": "codex-manual-sns-wave688"
+      },
+      {
+        "id": "rev-sns-wave710-d79962b6",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "울산 연세자연유치원 주키니호박 수확 기록",
+        "url": "https://www.instagram.com/p/DaHzxk6TjFn/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 봄부터 관찰하며 키운 주키니호박을 텃밭에서 수확한 게시물입니다.",
+        "summary": "유아들이 작물의 생장 과정을 지켜보고 직접 수확하며 자연의 변화를 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "harvest",
+          "zucchini",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave710-d79962b6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaHzxk6TjFn/",
+          "normalizedUrl": "instagram.com/p/dahzxk6tjfn",
+          "normalizedText": "연세자연유치원 텃밭 주키니호박 수확 봄 관찰 작물 성장",
+          "htmlSnapshotHash": "sns-wave710-d79962b6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaHzxk6TjFn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave710"
       }
     ],
     "1ecec08c-fe75-b044-e053-0a32095ab044": [
@@ -5834,5 +5871,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:57.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
