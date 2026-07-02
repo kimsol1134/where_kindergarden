@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 339,
+  "totalCount": 341,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -2821,6 +2821,78 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
         "approvedBy": "codex-manual-sns-wave671"
+      },
+      {
+        "id": "rev-sns-wave674-39f88cc6",
+        "kindergartenId": "1ecec08c-eed4-b044-e053-0a32095ab044",
+        "title": "창파유치원 인디언 마을 극장 영어캠프 기록",
+        "url": "https://www.instagram.com/reel/DZehKiEz5C3/",
+        "source": "other",
+        "sourceName": "Instagram · 창파유치원",
+        "snippet": "창파유치원이 인디언 마을 극장으로 변신한 영어캠프 활동을 소개한 공개 릴스입니다.",
+        "summary": "역할놀이와 극장 활동을 결합한 영어캠프 경험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english",
+          "camp",
+          "role-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:00:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave674-39f88cc6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZehKiEz5C3/",
+          "normalizedUrl": "instagram.com/reel/dzehkiez5c3",
+          "normalizedText": "창파유치원 인디언 마을 극장 영어캠프 역할놀이",
+          "htmlSnapshotHash": "sns-wave674-39f88cc6",
+          "extractedAt": "2026-07-03T21:00:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZehKiEz5C3/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:00:00.000Z",
+        "approvedBy": "codex-manual-sns-wave674"
+      },
+      {
+        "id": "rev-sns-wave674-9ef24d3c",
+        "kindergartenId": "1ecec08c-eed4-b044-e053-0a32095ab044",
+        "title": "창파유치원 레인보우데이 영어수업 기록",
+        "url": "https://www.instagram.com/reel/DYWg0NOzLAZ/",
+        "source": "other",
+        "sourceName": "Instagram · 창파유치원",
+        "snippet": "창파유치원이 레인보우데이 활동과 함께 영어수업 등 다양한 경험을 소개한 공개 릴스입니다.",
+        "summary": "색과 놀이를 연결한 특별활동 속 영어수업 경험을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "english",
+          "rainbow-day",
+          "special-activity"
+        ],
+        "date": "2026-05-15",
+        "collectedAt": "2026-07-03T21:00:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave674-9ef24d3c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYWg0NOzLAZ/",
+          "normalizedUrl": "instagram.com/reel/dywg0nozlaz",
+          "normalizedText": "창파유치원 레인보우데이 영어수업 특별활동",
+          "htmlSnapshotHash": "sns-wave674-9ef24d3c",
+          "extractedAt": "2026-07-03T21:00:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYWg0NOzLAZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:00:00.000Z",
+        "approvedBy": "codex-manual-sns-wave674"
       }
     ],
     "1ecec08d-006f-b044-e053-0a32095ab044": [
@@ -15645,5 +15717,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T19:45:00.000Z"
+  "lastUpdatedAt": "2026-07-03T21:00:00.000Z"
 }
