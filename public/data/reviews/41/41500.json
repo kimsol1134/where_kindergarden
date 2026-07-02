@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 11,
-  "kindergartenCount": 6,
+  "version": "2026-07-03",
+  "totalCount": 12,
+  "kindergartenCount": 7,
   "reviews": {
     "106e9bc8-880d-4c77-a71e-7fb3792f02d4": [
       {
@@ -358,6 +358,44 @@
             "accessMode": "public"
           }
         }
+      }
+    ],
+    "1ecec08c-fc68-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave687-37225f50",
+        "kindergartenId": "1ecec08c-fc68-b044-e053-0a32095ab044",
+        "title": "이천 이화유치원 어린이날 미니운동회 기록",
+        "url": "https://www.instagram.com/p/DYBhCa2EXKP/",
+        "source": "other",
+        "sourceName": "Instagram · 이천 이화유치원",
+        "snippet": "이천 이화유치원이 어린이날을 맞아 젤리 찾아먹기 등 여러 종목으로 미니운동회를 진행한 공개 게시물입니다.",
+        "summary": "어린이날 미니운동회와 놀이형 체육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mini-sports-day",
+          "children-day",
+          "icheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-37225f50",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYBhCa2EXKP/",
+          "normalizedUrl": "instagram.com/p/dybhca2exkp",
+          "normalizedText": "이천 이화유치원 어린이날 미니운동회 젤리 찾아먹기",
+          "htmlSnapshotHash": "sns-wave687-37225f50",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYBhCa2EXKP/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
       }
     ]
   }

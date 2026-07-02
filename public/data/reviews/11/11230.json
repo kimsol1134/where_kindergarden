@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 48,
+  "version": "2026-07-03",
+  "totalCount": 50,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-04a0-b044-e053-0a32095ab044": [
@@ -1677,6 +1677,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave687-ecd218ba",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "동대문구 정원유치원 체육놀이 기록",
+        "url": "https://www.instagram.com/reel/DZYf8wdBZ-s/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "동대문구 장안동 정원유치원이 즐거움이 넘치는 체육놀이로 건강, 협동심, 사회성을 기르는 모습을 소개한 공개 릴스입니다.",
+        "summary": "친구들과 함께하는 체육놀이와 협동 중심 신체 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "cooperation",
+          "dongdaemun"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-ecd218ba",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZYf8wdBZ-s/",
+          "normalizedUrl": "instagram.com/reel/dzyf8wdbz-s",
+          "normalizedText": "동대문구유치원 장안동유치원 정원유치원 체육놀이 건강 협동심 사회성",
+          "htmlSnapshotHash": "sns-wave687-ecd218ba",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZYf8wdBZ-s/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
       }
     ],
     "1ecec08c-ed83-b044-e053-0a32095ab044": [
@@ -1784,6 +1820,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f79e38db",
+        "kindergartenId": "1ecec08c-ed83-b044-e053-0a32095ab044",
+        "title": "서울 동대문구 새일문유치원 치아건강 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CnQ0nIBD-re/",
+        "source": "other",
+        "sourceName": "Instagram · 새일문유치원",
+        "snippet": "검색 결과에서 새일문유치원의 유아 치아건강과 양치 후 건강한 치아 관리 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f79e38db",
+        "structuredFields": {
+          "kindergartenName": "새일문유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CnQ0nIBD-re%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새일문유치원은 로컬 원장부 단일 정확 명칭이며 동대문구/장안동 단서와 로컬 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CnQ0nIBD-re/",
+          "normalizedUrl": "instagram.com/reel/cnq0nibd-re",
+          "normalizedText": "서울 동대문구 새일문유치원 치아건강 활동 instagram reel 검색 결과에서 새일문유치원의 유아 치아건강과 양치 후 건강한 치아 관리 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f79e38db",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새일문유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CnQ0nIBD-re%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새일문유치원은 로컬 원장부 단일 정확 명칭이며 동대문구/장안동 단서와 로컬 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

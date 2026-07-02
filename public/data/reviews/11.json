@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 674,
+  "totalCount": 675,
   "kindergartenCount": 246,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -19836,6 +19836,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave687-ecd218ba",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "동대문구 정원유치원 체육놀이 기록",
+        "url": "https://www.instagram.com/reel/DZYf8wdBZ-s/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "동대문구 장안동 정원유치원이 즐거움이 넘치는 체육놀이로 건강, 협동심, 사회성을 기르는 모습을 소개한 공개 릴스입니다.",
+        "summary": "친구들과 함께하는 체육놀이와 협동 중심 신체 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "cooperation",
+          "dongdaemun"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-ecd218ba",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZYf8wdBZ-s/",
+          "normalizedUrl": "instagram.com/reel/dzyf8wdbz-s",
+          "normalizedText": "동대문구유치원 장안동유치원 정원유치원 체육놀이 건강 협동심 사회성",
+          "htmlSnapshotHash": "sns-wave687-ecd218ba",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZYf8wdBZ-s/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
       }
     ],
     "1ecec08d-0603-b044-e053-0a32095ab044": [
@@ -25341,5 +25377,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:55.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:56.000Z"
 }

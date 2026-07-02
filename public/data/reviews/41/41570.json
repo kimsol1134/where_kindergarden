@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 125,
+  "totalCount": 126,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -3396,6 +3396,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave687-a4827e95",
+        "kindergartenId": "1ecec08c-edbd-b044-e053-0a32095ab044",
+        "title": "양곡숲유치원 미니운동회 기록",
+        "url": "https://www.instagram.com/reel/DYrVTjVgFC3/",
+        "source": "other",
+        "sourceName": "Instagram · 양곡숲유치원",
+        "snippet": "양곡숲유치원이 아이들이 기대하던 미니운동회를 진행한 모습을 소개한 공개 릴스입니다.",
+        "summary": "미니운동회로 친구들과 함께 뛰고 즐긴 신체 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mini-sports-day",
+          "physical-activity",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-a4827e95",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYrVTjVgFC3/",
+          "normalizedUrl": "instagram.com/reel/dyrvtjvgfc3",
+          "normalizedText": "양곡숲유치원 미니운동회 기대 신체활동",
+          "htmlSnapshotHash": "sns-wave687-a4827e95",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYrVTjVgFC3/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
       }
     ],
     "1ecec08c-fdcc-b044-e053-0a32095ab044": [

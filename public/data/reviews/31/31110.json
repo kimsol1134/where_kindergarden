@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 32,
+  "totalCount": 33,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -1526,6 +1526,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:55.000Z",
         "approvedBy": "codex-manual-sns-wave686"
+      },
+      {
+        "id": "rev-sns-wave687-e9893cb7",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 유초이음 체육놀이 기록",
+        "url": "https://www.instagram.com/reel/DYL8vwcSwUt/",
+        "source": "other",
+        "sourceName": "Instagram · 울산 은성유치원",
+        "snippet": "울산 은성유치원이 유치원과 초등학교가 함께하는 유초이음 체육놀이 활동과 단계별 체육 교육을 소개한 공개 릴스입니다.",
+        "summary": "유초이음 체육놀이와 매일 이어지는 신체 활동 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-education",
+          "sports-play",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-e9893cb7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/",
+          "normalizedUrl": "instagram.com/reel/dyl8vwcswut",
+          "normalizedText": "은성유치원 울산은성유치원 울산중구유치원 유초이음 체육놀이 체육활동",
+          "htmlSnapshotHash": "sns-wave687-e9893cb7",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
       }
     ]
   }
