@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 266,
+  "totalCount": 267,
   "kindergartenCount": 98,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -2861,6 +2861,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:57.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave698-96615ba4",
+        "kindergartenId": "1ecec08c-ff89-b044-e053-0a32095ab044",
+        "title": "거제 통큰아이유치원 가을 숲놀이 기록",
+        "url": "https://www.instagram.com/reel/DRgykPaAVm4/",
+        "source": "other",
+        "sourceName": "Instagram · 통큰아이유치원",
+        "snippet": "통큰아이유치원이 아이들과 가을빛을 온몸으로 느끼며 숲놀이 시간을 보낸 공개 릴스입니다.",
+        "summary": "유아들이 계절 변화를 느끼고 자연 속에서 움직이며 배운 바깥놀이 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "seasonal-play",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-96615ba4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRgykPaAVm4/",
+          "normalizedUrl": "instagram.com/reel/drgykpaavm4",
+          "normalizedText": "통큰아이유치원 거제 양정동 수양동 가을빛 숲놀이 바깥놀이",
+          "htmlSnapshotHash": "sns-wave698-96615ba4",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRgykPaAVm4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
       }
     ],
     "1ecec08d-0764-b044-e053-0a32095ab044": [
@@ -12621,5 +12657,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.990Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.995Z"
 }

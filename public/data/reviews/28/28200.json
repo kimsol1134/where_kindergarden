@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 69,
+  "totalCount": 71,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -602,6 +602,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:25:00.000Z",
         "approvedBy": "codex-manual-sns-wave675"
+      },
+      {
+        "id": "rev-sns-wave698-869fcb7e",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 여름 숲 자연물놀이 기록",
+        "url": "https://www.instagram.com/reel/DZ4RwyiTVf0/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원이 인천 숲에서 유아들과 자연물을 만지고 탐색한 자연물놀이 공개 릴스입니다.",
+        "summary": "아이들이 숲에서 자연물을 관찰하며 오감으로 배우는 숲유치원 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-869fcb7e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4RwyiTVf0/",
+          "normalizedUrl": "instagram.com/reel/dz4rwyitvf0",
+          "normalizedText": "수피아유치원 인천 구월동 숲유치원 자연물놀이 숲에서놀아요",
+          "htmlSnapshotHash": "sns-wave698-869fcb7e",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ4RwyiTVf0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [
@@ -959,6 +995,42 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave698-6829114e",
+        "kindergartenId": "1ecec08d-068d-b044-e053-0a32095ab044",
+        "title": "인천 미예뜰유치원 숲산책 자연놀이 기록",
+        "url": "https://www.instagram.com/reel/DVptCV8iWDy/",
+        "source": "other",
+        "sourceName": "Instagram · 미예뜰유치원",
+        "snippet": "미예뜰유치원이 유치원 뒤 숲을 산책하며 자연놀이터를 경험한 아이들의 모습을 담은 공개 릴스입니다.",
+        "summary": "가까운 숲산책으로 유아들이 자연을 만나고 성장하는 과정을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-walk",
+          "nature-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-6829114e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVptCV8iWDy/",
+          "normalizedUrl": "instagram.com/reel/dvptcv8iwdy",
+          "normalizedText": "미예뜰유치원 인천 숲산책 자연놀이터 유치원일상 자연놀이",
+          "htmlSnapshotHash": "sns-wave698-6829114e",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVptCV8iWDy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
       }
     ],
     "1ecec08d-020e-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 346,
+  "totalCount": 347,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -9496,6 +9496,42 @@
           ]
         },
         "evidenceChecksum": "acc45bc8"
+      },
+      {
+        "id": "rev-sns-wave698-ab8c21c9",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 7세 숲놀이 기록",
+        "url": "https://www.instagram.com/reel/DYE5O8XxFGC/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "불국유치원 7세 유아들이 경주 숲에서 처음 숲 활동을 하며 자연을 만난 공개 릴스입니다.",
+        "summary": "숲체험과 바깥놀이를 통해 아이들이 계절 자연을 관찰한 유치원 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "outdoor-learning",
+          "gyeongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-ab8c21c9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/",
+          "normalizedUrl": "instagram.com/reel/dye5o8xxfgc",
+          "normalizedText": "불국유치원 경주 7세 숲체험 숲놀이 자연 관찰",
+          "htmlSnapshotHash": "sns-wave698-ab8c21c9",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
       }
     ],
     "1ecec08c-ff98-b044-e053-0a32095ab044": [
@@ -15897,5 +15933,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.950Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.995Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 141,
+  "totalCount": 142,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -3179,6 +3179,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T20:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave698-8a168335",
+        "kindergartenId": "1ecec08d-0919-b044-e053-0a32095ab044",
+        "title": "대구 사랑마을유치원 사정공원 숲놀이터 기록",
+        "url": "https://www.instagram.com/reel/DXvmq1EBcpi/",
+        "source": "other",
+        "sourceName": "Instagram · 사랑마을유치원",
+        "snippet": "사랑마을유치원 5세 유아들이 사정공원 숲놀이터에서 자연을 만난 공개 릴스입니다.",
+        "summary": "공원 숲놀이터에서 아이들이 몸을 움직이고 자연을 관찰한 여름 숲체험 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "park-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-8a168335",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXvmq1EBcpi/",
+          "normalizedUrl": "instagram.com/reel/dxvmq1ebcpi",
+          "normalizedText": "사랑마을유치원 대구 진천동 사정공원 숲놀이터 여름 숲체험",
+          "htmlSnapshotHash": "sns-wave698-8a168335",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXvmq1EBcpi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
       }
     ],
     "1ecec08d-0810-b044-e053-0a32095ab044": [
