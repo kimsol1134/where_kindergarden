@@ -135,6 +135,39 @@ function getDisplayUrl(url: string): string {
   }
 }
 
+function getStringField(value: unknown): string | null {
+  return typeof value === 'string' && value.trim().length > 0 ? value : null;
+}
+
+function normalizeUrlForCompare(url: string | null): string | null {
+  if (!url) return null;
+  try {
+    const parsedUrl = new URL(url);
+    return `${parsedUrl.hostname.replace(/^www\./, '')}${parsedUrl.pathname}`.replace(/\/$/, '').toLowerCase();
+  } catch {
+    return url.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '').toLowerCase();
+  }
+}
+
+function getEvidenceUrl(review: ReviewLink): string | null {
+  const sourcePageUrl = getStringField(review.evidence?.sourcePageUrl);
+  const structuredSearchUrl = getStringField(review.structuredFields?.searchUrl);
+  const evidenceSearchUrl = getStringField(review.evidence?.structuredFields?.searchUrl);
+  const evidenceUrl = sourcePageUrl ?? structuredSearchUrl ?? evidenceSearchUrl;
+
+  if (!evidenceUrl || normalizeUrlForCompare(evidenceUrl) === normalizeUrlForCompare(review.url)) {
+    return null;
+  }
+
+  return evidenceUrl;
+}
+
+function getAccessLabel(review: ReviewLink): string {
+  if (review.accessMode === 'login') return '로그인 필요';
+  if (review.accessMode === 'partner') return '제휴/권한';
+  return '공개 웹';
+}
+
 interface ReviewsBrowserProps {
   variant?: 'search' | 'links';
 }
@@ -436,9 +469,13 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
             </div>
 
             <section className="grid gap-3">
-              {pageItems.map((item) => (
-                <ReviewResultRow key={item.review.id} item={item} />
-              ))}
+              {variant === 'links' ? (
+                <ReviewLinksTable items={pageItems} startIndex={(currentPage - 1) * PAGE_SIZE} />
+              ) : (
+                pageItems.map((item) => (
+                  <ReviewResultRow key={`${item.review.kindergartenId}-${item.review.id}-${item.review.url}`} item={item} />
+                ))
+              )}
             </section>
 
             {filteredReviews.length === 0 && (
@@ -474,9 +511,107 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
   );
 }
 
+function ReviewLinksTable({ items, startIndex }: { items: FlatReview[]; startIndex: number }) {
+  return (
+    <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+      <div className="hidden grid-cols-[72px_minmax(180px,1fr)_minmax(260px,1.5fr)_170px_190px] border-b border-gray-200 bg-gray-50 px-4 py-3 text-xs font-bold text-gray-500 md:grid">
+        <div>번호</div>
+        <div>유치원</div>
+        <div>후기</div>
+        <div>출처</div>
+        <div className="text-right">웹 확인</div>
+      </div>
+      <div className="divide-y divide-gray-100">
+        {items.map((item, index) => (
+          <ReviewLinkRow
+            key={`${item.review.kindergartenId}-${item.review.id}-${item.review.url}`}
+            item={item}
+            rowNumber={startIndex + index + 1}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ReviewLinkRow({ item, rowNumber }: { item: FlatReview; rowNumber: number }) {
+  const { review, kindergarten, platform } = item;
+  const evidenceUrl = getEvidenceUrl(review);
+  const regionLabel = kindergarten?.sido_code ? SIDO_LABELS[kindergarten.sido_code] ?? kindergarten.sido_code : '지역 미상';
+
+  return (
+    <article className="grid gap-3 px-4 py-4 md:grid-cols-[72px_minmax(180px,1fr)_minmax(260px,1.5fr)_170px_190px] md:items-center">
+      <div className="flex items-center gap-2 text-xs font-semibold text-gray-400 md:block">
+        <span className="md:hidden">번호</span>
+        <span>{rowNumber.toLocaleString()}</span>
+      </div>
+
+      <div className="min-w-0">
+        <div className="truncate text-sm font-bold text-gray-950" title={kindergarten?.name ?? review.kindergartenId}>
+          {kindergarten?.name ?? '유치원 정보 없음'}
+        </div>
+        <div className="mt-1 line-clamp-2 text-xs leading-5 text-gray-500">
+          {kindergarten?.address ?? review.kindergartenId}
+        </div>
+      </div>
+
+      <div className="min-w-0">
+        <a
+          href={review.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex max-w-full items-start gap-2 text-sm font-semibold text-gray-900 hover:text-[var(--brand-leaf-deep)]"
+        >
+          <span className="line-clamp-2">{review.title}</span>
+          <ExternalLink className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-300 group-hover:text-[var(--brand-leaf)]" />
+        </a>
+        <div className="mt-1 truncate text-xs text-gray-400" title={review.url}>
+          {getDisplayUrl(review.url)}
+        </div>
+      </div>
+
+      <div className="flex min-w-0 flex-wrap items-center gap-2 md:block">
+        <span className={`inline-flex rounded-full border px-2 py-0.5 text-xs font-bold ${PLATFORM_CLASSES[platform]}`}>
+          {PLATFORM_LABELS[platform]}
+        </span>
+        <div className="mt-0 truncate text-xs text-gray-500 md:mt-2" title={review.sourceName}>
+          {review.sourceName || regionLabel}
+        </div>
+        <div className="text-xs text-gray-400">{getAccessLabel(review)}</div>
+      </div>
+
+      <div className="flex flex-wrap justify-start gap-2 md:justify-end">
+        <a
+          href={review.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+          title={review.url}
+        >
+          원문
+          <ExternalLink className="h-4 w-4" />
+        </a>
+        {evidenceUrl && (
+          <a
+            href={evidenceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-gray-50 px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+            title={evidenceUrl}
+          >
+            근거
+            <LinkIcon className="h-4 w-4" />
+          </a>
+        )}
+      </div>
+    </article>
+  );
+}
+
 function ReviewResultRow({ item }: { item: FlatReview }) {
   const { review, kindergarten, platform } = item;
   const regionLabel = kindergarten?.sido_code ? SIDO_LABELS[kindergarten.sido_code] ?? kindergarten.sido_code : '지역 미상';
+  const evidenceUrl = getEvidenceUrl(review);
 
   return (
     <article className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-[rgba(78,169,109,0.4)]">
@@ -518,6 +653,18 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
             <LinkIcon className="h-3.5 w-3.5 flex-shrink-0" />
             <span className="truncate">{getDisplayUrl(review.url)}</span>
           </a>
+          {evidenceUrl && (
+            <a
+              href={evidenceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 mt-3 inline-flex max-w-full items-center gap-1.5 rounded-md border border-gray-200 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-600 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+              title={evidenceUrl}
+            >
+              <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" />
+              근거 링크
+            </a>
+          )}
         </div>
 
         <div className="md:w-72 md:text-right">
