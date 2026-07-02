@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1272,
+  "totalCount": 1274,
   "kindergartenCount": 490,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -3700,6 +3700,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave701-4b5f583a",
+        "kindergartenId": "1ecec08c-fe3a-b044-e053-0a32095ab044",
+        "title": "분당 한국유치원 스페셜데이 물놀이 기록",
+        "url": "https://www.instagram.com/p/DaR56PpGiPR/",
+        "source": "other",
+        "sourceName": "Instagram · 한국유치원",
+        "snippet": "분당 한국유치원이 어린이들의 스페셜데이 물놀이 활동을 공개한 게시물입니다.",
+        "summary": "아이들이 특별 활동으로 신나는 물놀이를 이어 간 유치원 여름 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "special-day",
+          "bundang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-4b5f583a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaR56PpGiPR/",
+          "normalizedUrl": "instagram.com/p/dar56ppgipr",
+          "normalizedText": "한국유치원 분당 야탑 벌말로 special day 신나는 물놀이",
+          "htmlSnapshotHash": "sns-wave701-4b5f583a",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaR56PpGiPR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -19388,6 +19424,42 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave701-7e81dd54",
+        "kindergartenId": "2457b20f-db2e-4fed-bea7-1196b32559d8",
+        "title": "안산 본오예원유치원 워터슬라이드 기록",
+        "url": "https://www.instagram.com/reel/DNAUv2pz6V-/",
+        "source": "other",
+        "sourceName": "Instagram · 본오예원유치원",
+        "snippet": "본오예원유치원이 유치원 마당에 워터슬라이드를 마련한 여름 행사 릴스입니다.",
+        "summary": "아이들이 워터슬라이드와 물놀이로 여름을 체험한 유치원 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-slide",
+          "summer-festival",
+          "ansan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-7e81dd54",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNAUv2pz6V-/",
+          "normalizedUrl": "instagram.com/reel/dnauv2pz6v-",
+          "normalizedText": "본오예원유치원 본오동 안산 워터슬라이드 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave701-7e81dd54",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DNAUv2pz6V-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "9ef0ced6-631c-4290-8a76-9f6d07e443db": [
@@ -50514,5 +50586,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
 }

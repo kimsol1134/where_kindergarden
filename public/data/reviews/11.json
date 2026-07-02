@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 679,
+  "totalCount": 680,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -23961,6 +23961,42 @@
           ]
         },
         "evidenceChecksum": "6416505d"
+      },
+      {
+        "id": "rev-sns-wave701-117986be",
+        "kindergartenId": "1ecec08d-0e2d-b044-e053-0a32095ab044",
+        "title": "도봉 나래유치원 여름 물놀이 기록",
+        "url": "https://www.instagram.com/p/DaMbHZHkcNp/",
+        "source": "other",
+        "sourceName": "Instagram · 나래유치원",
+        "snippet": "도봉구 나래유치원이 여름을 맞아 유치원에서 물놀이를 즐긴 모습을 공개한 게시물입니다.",
+        "summary": "유아들이 유치원 공간에서 시원하게 뛰놀며 여름 계절 놀이를 경험한 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play",
+          "dobong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-117986be",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMbHZHkcNp/",
+          "normalizedUrl": "instagram.com/p/dambhzhkcnp",
+          "normalizedText": "나래유치원 도봉구 방학동 도봉역 신나는물놀이 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave701-117986be",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMbHZHkcNp/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "1ecec08c-ed30-b044-e053-0a32095ab044": [
@@ -25523,5 +25559,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.980Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
 }

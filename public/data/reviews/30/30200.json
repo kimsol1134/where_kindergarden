@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 102,
+  "totalCount": 103,
   "kindergartenCount": 19,
   "reviews": {
     "2dc0d75e-793f-42f2-97ee-dd37d3a84e86": [
@@ -3900,6 +3900,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.000Z",
         "approvedBy": "codex-manual-sns-wave690"
+      },
+      {
+        "id": "rev-sns-wave701-e634b660",
+        "kindergartenId": "1ecec08d-0402-b044-e053-0a32095ab044",
+        "title": "대전 예일유치원 물총 물풍선 놀이 기록",
+        "url": "https://www.instagram.com/reel/DL7BuxGyjpe/",
+        "source": "other",
+        "sourceName": "Instagram · 예일유치원",
+        "snippet": "대전 예일유치원이 여름 물총과 물풍선 놀이를 진행한 공개 릴스입니다.",
+        "summary": "유아들이 물총과 물풍선으로 친구들과 함께 여름 놀이를 즐긴 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "water-balloon",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-e634b660",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL7BuxGyjpe/",
+          "normalizedUrl": "instagram.com/reel/dl7buxgyjpe",
+          "normalizedText": "예일유치원 대전 유성구 교촌동 관저동 물총 물풍선 놀이",
+          "htmlSnapshotHash": "sns-wave701-e634b660",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DL7BuxGyjpe/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "1ecec08d-0eb8-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 6,
+  "totalCount": 7,
   "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-066b-b044-e053-0a32095ab044": [
@@ -300,8 +300,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave701-d7035b8c",
+        "kindergartenId": "1ecec08d-0c5f-b044-e053-0a32095ab044",
+        "title": "정읍 크레용유치원 만3세 물총놀이 기록",
+        "url": "https://www.instagram.com/reel/DMXYcP3RaII/",
+        "source": "other",
+        "sourceName": "Instagram · 크레용유치원",
+        "snippet": "크레용유치원이 만3세 유아들의 물총놀이 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 물총놀이로 몸을 움직이며 여름 놀이를 경험한 유치원 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "water-gun-play",
+          "jeongeup"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-d7035b8c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMXYcP3RaII/",
+          "normalizedUrl": "instagram.com/reel/dmxycp3raii",
+          "normalizedText": "크레용유치원 정읍 만3세 유치원물놀이 물총놀이",
+          "htmlSnapshotHash": "sns-wave701-d7035b8c",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMXYcP3RaII/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
 }

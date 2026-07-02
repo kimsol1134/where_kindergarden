@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 15,
+  "totalCount": 16,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-049b-b044-e053-0a32095ab044": [
@@ -343,6 +343,42 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave701-7e81dd54",
+        "kindergartenId": "2457b20f-db2e-4fed-bea7-1196b32559d8",
+        "title": "안산 본오예원유치원 워터슬라이드 기록",
+        "url": "https://www.instagram.com/reel/DNAUv2pz6V-/",
+        "source": "other",
+        "sourceName": "Instagram · 본오예원유치원",
+        "snippet": "본오예원유치원이 유치원 마당에 워터슬라이드를 마련한 여름 행사 릴스입니다.",
+        "summary": "아이들이 워터슬라이드와 물놀이로 여름을 체험한 유치원 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-slide",
+          "summer-festival",
+          "ansan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-7e81dd54",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNAUv2pz6V-/",
+          "normalizedUrl": "instagram.com/reel/dnauv2pz6v-",
+          "normalizedText": "본오예원유치원 본오동 안산 워터슬라이드 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave701-7e81dd54",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DNAUv2pz6V-/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "9ef0ced6-631c-4290-8a76-9f6d07e443db": [

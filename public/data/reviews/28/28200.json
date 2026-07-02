@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 71,
+  "totalCount": 72,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -638,6 +638,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.995Z",
         "approvedBy": "codex-manual-sns-wave698"
+      },
+      {
+        "id": "rev-sns-wave701-637ffbf0",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 숲 물총놀이 기록",
+        "url": "https://www.instagram.com/reel/DaKkNZgT9kI/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "인천 수피아유치원이 숲에서 물총을 만들어 물놀이를 한 장면을 공개한 릴스입니다.",
+        "summary": "숲놀이와 여름 물놀이를 결합해 아이들이 자연 속에서 탐색하고 움직인 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "forest-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.998Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave701-637ffbf0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaKkNZgT9kI/",
+          "normalizedUrl": "instagram.com/reel/dakknzgt9ki",
+          "normalizedText": "수피아유치원 인천숲유치원 숲에서놀아요 여름 물총놀이",
+          "htmlSnapshotHash": "sns-wave701-637ffbf0",
+          "extractedAt": "2026-07-03T23:59:59.998Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaKkNZgT9kI/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.998Z",
+        "approvedBy": "codex-manual-sns-wave701"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [
