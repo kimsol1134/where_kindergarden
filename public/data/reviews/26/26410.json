@@ -1,71 +1,633 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 5,
-  "kindergartenCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 12,
+  "kindergartenCount": 5,
   "reviews": {
-    "1ecec08d-04a4-b044-e053-0a32095ab044": [
+    "1ecec08d-0967-b044-e053-0a32095ab044": [
       {
-        "id": "rev-9901-mikj",
-        "kindergartenId": "1ecec08d-04a4-b044-e053-0a32095ab044",
-        "title": "2. 리틀빗 수업일기",
-        "url": "https://blog.naver.com/littlebit2023/223356469901",
-        "source": "naver_blog",
-        "sourceName": "littlebithouse",
-        "snippet": "구서파랑새유치원 #구서아람유치원 #남산동아인유치원 #프로크리에이트 #일러스트 #캐릭터 #토끼 #육아교육법 #육아법 #7세교육 #부산영어놀이터 #부산놀이영어 #금정구영어놀이 #금정구놀이영어...",
-        "date": "2024-02-17",
-        "collectedAt": "2026-02-18T06:13:58.391Z",
-        "relevanceScore": 7
+        "id": "rev-a4021ad3",
+        "kindergartenId": "1ecec08d-0967-b044-e053-0a32095ab044",
+        "title": "부산 꾸미랑유치원 입학설명회·학부모참여수업 SNS",
+        "url": "https://www.instagram.com/p/CzDQvMXvx5q/",
+        "source": "other",
+        "sourceName": "Instagram · 꾸미랑유치원",
+        "snippet": "꾸미랑유치원 입학설명회, 학부모참여수업, 금정구·부곡동유치원 해시태그가 확인되는 Instagram 검색 결과.",
+        "summary": "부산 금정구 꾸미랑유치원의 입학설명회와 학부모참여수업 관련 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "꾸미랑유치원 입학설명회, 학부모참여수업, 금정구·부곡동유치원 해시태그가 확인되는 Instagram 검색 결과. 공식 행사 공유 성격이지만 예비·재원 학부모 참여 정보를 보강하는 자료로 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "217e467c",
+        "structuredFields": {
+          "kindergartenName": "꾸미랑유치원",
+          "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CzDQvMXvx5q%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금정구·부곡동 해시태그와 원장부 주소가 일치해 부산 금정구 꾸미랑유치원에 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CzDQvMXvx5q/",
+          "normalizedUrl": "www.instagram.com/p/czdqvmxvx5q",
+          "normalizedText": "부산 꾸미랑유치원 입학설명회·학부모참여수업 sns 꾸미랑유치원 입학설명회, 학부모참여수업, 금정구·부곡동유치원 해시태그가 확인되는 instagram 검색 결과. 부산 금정구 꾸미랑유치원의 입학설명회와 학부모참여수업 관련 instagram 검색 결과.",
+          "htmlSnapshotHash": "217e467c",
+          "extractedAt": "2026-06-30T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꾸미랑유치원",
+            "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CzDQvMXvx5q%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금정구·부곡동 해시태그와 원장부 주소가 일치해 부산 금정구 꾸미랑유치원에 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-7252-yve2",
-        "kindergartenId": "1ecec08d-04a4-b044-e053-0a32095ab044",
-        "title": "[교육] 파랑새유치원 범어사성보박물관 교육 후기2",
-        "url": "https://blog.naver.com/beomeosa_museum/224114267252",
-        "source": "naver_blog",
-        "sourceName": "범어사 성보박물관",
-        "snippet": "범어사성보박물관입니다:) 오늘도 파랑새유치원에서 깜찍한 아이들이 교육을 하러 온 이야기를... 범어사 성보박물관 오시는 길 부산광역시 금정구 범어사로 296 [상세 주소] 부산광역시 금정구 범어사로 296...",
-        "date": "2025-12-18",
-        "collectedAt": "2026-02-18T06:13:58.391Z",
-        "relevanceScore": 6
+        "id": "rev-8cf59b5f",
+        "kindergartenId": "1ecec08d-0967-b044-e053-0a32095ab044",
+        "title": "부산 꾸미랑유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DIsHZrzyH3Y/",
+        "source": "other",
+        "sourceName": "Instagram · 꾸미랑유치원",
+        "snippet": "꾸미랑유치원 2026학년도 입학설명회와 부산 금정구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "부산 금정구 꾸미랑유치원의 2026학년도 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "꾸미랑유치원 2026학년도 입학설명회와 부산 금정구 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 부산 금정구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1ed8bb29",
+        "structuredFields": {
+          "kindergartenName": "꾸미랑유치원",
+          "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIsHZrzyH3Y%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 금정구 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIsHZrzyH3Y/",
+          "normalizedUrl": "www.instagram.com/p/dishzrzyh3y",
+          "normalizedText": "부산 꾸미랑유치원 입학설명회 sns 꾸미랑유치원 2026학년도 입학설명회와 부산 금정구 문맥이 확인되는 instagram 검색 결과. 부산 금정구 꾸미랑유치원의 2026학년도 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "1ed8bb29",
+          "extractedAt": "2026-06-30T23:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꾸미랑유치원",
+            "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIsHZrzyH3Y%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 금정구 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-2940-oscm",
-        "kindergartenId": "1ecec08d-04a4-b044-e053-0a32095ab044",
-        "title": "[교육] 파랑새유치원 범어사성보박물관 교육 후기",
-        "url": "https://blog.naver.com/beomeosa_museum/224109202940",
-        "source": "naver_blog",
-        "sourceName": "범어사 성보박물관",
-        "snippet": "파랑새유치원 친구들과 함께한 오늘, 정말 특별하고 소중한 하루였습니다! 범어사 성보박물관 오시는 길 부산광역시 금정구 범어사로 296 [상세 주소] 부산광역시 금정구 범어사로 296 (양방 통행로...",
-        "date": "2025-12-14",
-        "collectedAt": "2026-02-18T06:13:58.391Z",
-        "relevanceScore": 6
+        "id": "rev-92697387",
+        "kindergartenId": "1ecec08d-0967-b044-e053-0a32095ab044",
+        "title": "부산 금정구 꾸미랑유치원 특강 공개수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZgWSHbSDYz/",
+        "source": "other",
+        "sourceName": "Instagram · 꾸미랑유치원",
+        "snippet": "Instagram 검색 결과에서 꾸미랑유치원 특강 공개수업과 금정구, 부곡동, 동래구 유치원 지역 단서가 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "4f39469b",
+        "structuredFields": {
+          "kindergartenName": "꾸미랑유치원",
+          "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZgWSHbSDYz%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZgWSHbSDYz/",
+          "normalizedUrl": "www.instagram.com/reel/dzgwshbsdyz",
+          "normalizedText": "부산 금정구 꾸미랑유치원 특강 공개수업 instagram reel instagram 검색 결과에서 꾸미랑유치원 특강 공개수업과 금정구, 부곡동, 동래구 유치원 지역 단서가 확인되는 릴.",
+          "htmlSnapshotHash": "4f39469b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꾸미랑유치원",
+            "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZgWSHbSDYz%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B3%B5%EA%B0%9C%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-39906062",
+        "kindergartenId": "1ecec08d-0967-b044-e053-0a32095ab044",
+        "kindergartenName": "꾸미랑유치원",
+        "title": "부산 금정 꾸미랑유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/Cwh5e8qr32X/",
+        "source": "other",
+        "sourceName": "Instagram · 꾸미랑유치원",
+        "snippet": "Instagram 검색 결과에서 kkumirangreal 계정의 꾸미랑유치원 교통안전교육과 부산 금정구 부곡동 지역 단서가 확인되는 게시물.",
+        "date": "2023-08-29",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "traffic-safety",
+          "safety-education",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "꾸미랑유치원",
+          "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cwh5e8qr32X%22+%22kkumirangreal%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/Cwh5e8qr32X/",
+          "regionEvidence": [
+            "kkumirangreal",
+            "꾸미랑유치원",
+            "부산 금정구",
+            "부곡동",
+            "교통안전교육"
+          ]
+        },
+        "evidenceChecksum": "c3aa11bf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cwh5e8qr32X/",
+          "normalizedUrl": "www.instagram.com/p/cwh5e8qr32x",
+          "normalizedText": "부산 금정 꾸미랑유치원 교통안전교육 instagram post instagram 검색 결과에서 kkumirangreal 계정의 꾸미랑유치원 교통안전교육과 부산 금정구 부곡동 지역 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "c3aa11bf",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꾸미랑유치원",
+            "kindergartenAddress": "부산광역시 금정구 서동로34번길 25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cwh5e8qr32X%22+%22kkumirangreal%22+%22%EA%BE%B8%EB%AF%B8%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/Cwh5e8qr32X/",
+            "regionEvidence": [
+              "kkumirangreal",
+              "꾸미랑유치원",
+              "부산 금정구",
+              "부곡동",
+              "교통안전교육"
+            ]
+          }
+        }
       }
     ],
-    "1ecec08d-04a3-b044-e053-0a32095ab044": [
+    "300dbb5e-98b0-4c8f-bec7-004c14439664": [
       {
-        "id": "rev-9901-rbka",
-        "kindergartenId": "1ecec08d-04a3-b044-e053-0a32095ab044",
-        "title": "2. 리틀빗 수업일기",
-        "url": "https://blog.naver.com/littlebit2023/223356469901",
-        "source": "naver_blog",
-        "sourceName": "littlebithouse",
-        "snippet": "구서아람유치원 #남산동아인유치원 #프로크리에이트 #일러스트 #캐릭터 #토끼 #육아교육법 #육아법 #7세교육 #부산영어놀이터 #부산놀이영어 #금정구영어놀이 #금정구놀이영어 #구서동영어놀이 #구서동놀이영어...",
-        "date": "2024-02-17",
-        "collectedAt": "2026-02-18T06:13:58.391Z",
-        "relevanceScore": 7
+        "id": "rev-99fb9a42",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/CyDJRwaOTCl/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "금샘누리유치원 입학설명회와 부산 금정구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "부산 금정구 금샘누리유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "금샘누리유치원 입학설명회와 부산 금정구 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 부산 금정구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "037fe5f6",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyDJRwaOTCl%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 금정구 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyDJRwaOTCl/",
+          "normalizedUrl": "www.instagram.com/p/cydjrwaotcl",
+          "normalizedText": "부산 금샘누리유치원 입학설명회 sns 금샘누리유치원 입학설명회와 부산 금정구 문맥이 확인되는 instagram 검색 결과. 부산 금정구 금샘누리유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "037fe5f6",
+          "extractedAt": "2026-06-30T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyDJRwaOTCl%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 금정구 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-4970-rbi3",
-        "kindergartenId": "1ecec08d-04a3-b044-e053-0a32095ab044",
-        "title": "구서 필아트미술 가을 야외 스케치",
-        "url": "https://blog.naver.com/yhl7410/223292374970",
-        "source": "naver_blog",
-        "sourceName": "구서동 필아트미술",
-        "snippet": "스케치 후기였어요^^ 담에 더 멋진 작품들로 소식 전해 볼게요~ 상담 예약 후 방문하시면 편하게... 금정구이마트#구서동롯데캐슬#두실초#장서초#아람유치원#구서국공립어린이집#금정문화회관#부산예중#부산예고...",
-        "date": "2023-12-14",
-        "collectedAt": "2026-02-18T06:13:58.391Z",
-        "relevanceScore": 6
+        "id": "rev-5a476e4e",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 학부모 참여수업 Instagram",
+        "url": "https://www.instagram.com/p/CxKJnRvyH4H/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "Instagram 검색 결과에서 금샘누리유치원 방과후과정 특성화프로그램 학부모 참여수업과 부산 금정구 공립단설유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "3edc5bad",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxKJnRvyH4H%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxKJnRvyH4H/",
+          "normalizedUrl": "www.instagram.com/p/cxkjnrvyh4h",
+          "normalizedText": "부산 금샘누리유치원 학부모 참여수업 instagram instagram 검색 결과에서 금샘누리유치원 방과후과정 특성화프로그램 학부모 참여수업과 부산 금정구 공립단설유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "3edc5bad",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxKJnRvyH4H%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-85e9a674",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 입학 소식 Instagram",
+        "url": "https://www.instagram.com/p/DHDE8nmSh-k/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "Instagram 검색 결과에서 금샘누리유치원 입학식과 2026학년도 입학설명회 신청 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "orientation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "55cfb28f",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHDE8nmSh-k%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHDE8nmSh-k/",
+          "normalizedUrl": "www.instagram.com/p/dhde8nmsh-k",
+          "normalizedText": "부산 금샘누리유치원 입학 소식 instagram instagram 검색 결과에서 금샘누리유치원 입학식과 2026학년도 입학설명회 신청 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "55cfb28f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHDE8nmSh-k%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1f7dd97a",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금정 금샘누리유치원 유아모집 일정 Instagram",
+        "url": "https://www.instagram.com/p/CyiImmLSNZ3/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "Instagram 검색 결과에서 금샘누리유치원, 2024학년도 처음학교로 유아모집 일정, 부산 공립단설 유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "181550d3",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyiImmLSNZ3%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyiImmLSNZ3/",
+          "normalizedUrl": "www.instagram.com/p/cyiimmlsnz3",
+          "normalizedText": "부산 금정 금샘누리유치원 유아모집 일정 instagram instagram 검색 결과에서 금샘누리유치원, 2024학년도 처음학교로 유아모집 일정, 부산 공립단설 유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "181550d3",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyiImmLSNZ3%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e9568734",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 딸기체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DX9DfdUkr5d/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "금샘누리유치원 계정에서 딸기농장에 딸기를 수확하러 다녀온 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1545f24b",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX9DfdUkr5d%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부에서 유일한 이름이고 부산 금정구 계정 단서가 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX9DfdUkr5d/",
+          "normalizedUrl": "www.instagram.com/p/dx9dfdukr5d",
+          "normalizedText": "부산 금샘누리유치원 딸기체험 instagram post 금샘누리유치원 계정에서 딸기농장에 딸기를 수확하러 다녀온 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "1545f24b",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX9DfdUkr5d%22+%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부에서 유일한 이름이고 부산 금정구 계정 단서가 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-051b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-21352d7f",
+        "kindergartenId": "1ecec08d-051b-b044-e053-0a32095ab044",
+        "title": "부산 하나유치원 SNS 프로필",
+        "url": "https://www.instagram.com/hana_kindergarten_/",
+        "source": "other",
+        "sourceName": "Instagram · 하나유치원",
+        "snippet": "부산 하나유치원 프로필에서 전화 051-581-9792 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "부산 금정구 하나유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "부산 하나유치원 프로필에서 전화 051-581-9792 문맥이 확인되는 Instagram 검색 결과다. 하나유치원 동명이 있어 부산 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:30.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c337555c",
+        "structuredFields": {
+          "kindergartenName": "하나유치원",
+          "kindergartenAddress": "부산광역시 금정구 동현로 106",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22051-581-9792%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 부산 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/hana_kindergarten_/",
+          "normalizedUrl": "www.instagram.com/hana_kindergarten_",
+          "normalizedText": "부산 하나유치원 sns 프로필 부산 하나유치원 프로필에서 전화 051-581-9792 문맥이 확인되는 instagram 검색 결과. 부산 금정구 하나유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "c337555c",
+          "extractedAt": "2026-06-30T23:59:30.000Z",
+          "structuredFields": {
+            "kindergartenName": "하나유치원",
+            "kindergartenAddress": "부산광역시 금정구 동현로 106",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22051-581-9792%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 부산 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:30.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1fd6777e-1537-e0b0-e053-0a32095ae0b0": [
+      {
+        "id": "rev-3e1fb56f",
+        "kindergartenId": "1fd6777e-1537-e0b0-e053-0a32095ae0b0",
+        "title": "부산 금정 구서초등학교병설유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DPfl8C0kvUb/",
+        "source": "other",
+        "sourceName": "Instagram · 구서초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 구서초등학교병설유치원, 2026학년도 입학설명회 개최와 신청 안내 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "dc2330ee",
+        "structuredFields": {
+          "kindergartenName": "구서초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 금정구 구서중앙로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPfl8C0kvUb%22+%22%EA%B5%AC%EC%84%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPfl8C0kvUb/",
+          "normalizedUrl": "www.instagram.com/p/dpfl8c0kvub",
+          "normalizedText": "부산 금정 구서초등학교병설유치원 입학설명회 instagram instagram 검색 결과에서 구서초등학교병설유치원, 2026학년도 입학설명회 개최와 신청 안내 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "dc2330ee",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구서초등학교병설유치원",
+            "kindergartenAddress": "부산광역시 금정구 구서중앙로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPfl8C0kvUb%22+%22%EA%B5%AC%EC%84%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fc97-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-105df283",
+        "kindergartenId": "1ecec08c-fc97-b044-e053-0a32095ab044",
+        "kindergartenName": "한신유치원",
+        "title": "부산 금정 한신유치원 화명 생태공원 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DQsbEqbEueH/",
+        "source": "other",
+        "sourceName": "Instagram · 부산 금정구 한신유치원",
+        "snippet": "Instagram 검색 결과에서 부산 금정구 한신유치원 화명 생태공원 현장체험학습 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "한신유치원",
+          "kindergartenAddress": "부산광역시 금정구 중앙대로1685번길 24",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQsbEqbEueH%22+%22%EB%B6%80%EC%82%B0+%EA%B8%88%EC%A0%95%EA%B5%AC+%ED%95%9C%EC%8B%A0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DQsbEqbEueH/",
+          "regionEvidence": [
+            "부산 금정구 한신유치원",
+            "부산광역시 금정구 중앙대로1685번길 24"
+          ]
+        },
+        "evidenceChecksum": "443d5132"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

@@ -1,36 +1,8 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 4,
+  "version": "2026-07-01",
+  "totalCount": 11,
   "kindergartenCount": 4,
   "reviews": {
-    "1ecec08c-f734-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-07/4-rnvr",
-        "kindergartenId": "1ecec08c-f734-b044-e053-0a32095ab044",
-        "title": "가명유치원",
-        "url": "http://cafe.naver.com/kindergarten0107/4",
-        "source": "naver_cafe",
-        "sourceName": "유치원나라-유치원, 어린이집 정보 공...",
-        "snippet": "유치원명 : 가명유치원 2. 설립구분 : 사립(법인) 3. 설립(개원)년도 : 1956.04.15. 4. 운영시간 : 평일기준 09:00~14:00 5. 전화번호 : 02-362-7593 6. 주소 : 서울특별시 중구 청파로 447-1 ※유치원의 정보나 후기를...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.256Z",
-        "relevanceScore": 6
-      }
-    ],
-    "1ecec08c-f735-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-/114-7jst",
-        "kindergartenId": "1ecec08c-f735-b044-e053-0a32095ab044",
-        "title": "근화유치원",
-        "url": "http://cafe.naver.com/kindergarten0107/114",
-        "source": "naver_cafe",
-        "sourceName": "유치원나라-유치원, 어린이집 정보 공...",
-        "snippet": "유치원명 : 근화유치원 2. 설립구분 : 사립(법인) 3. 설립(개원)년도 : 1954-04-05 4. 운영시간 : 09 : 00 ~ 17 : 00 5. 전화번호 : 02-2237-1684 6. 주소 : 서울특별시 중구 동호로20길 24 ※유치원의 정보나 후기를...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.256Z",
-        "relevanceScore": 6
-      }
-    ],
     "1ecec08c-ffe5-b044-e053-0a32095ab044": [
       {
         "id": "rev-6959-noff",
@@ -43,21 +15,513 @@
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.256Z",
         "relevanceScore": 9
+      },
+      {
+        "id": "rev-374c03ac",
+        "kindergartenId": "1ecec08c-ffe5-b044-e053-0a32095ab044",
+        "title": "서울 리라유치원 모집요강 SNS",
+        "url": "https://www.instagram.com/p/DQ_Zq4-kwSu/",
+        "source": "other",
+        "sourceName": "Instagram · 서울 리라유치원",
+        "snippet": "리라유치원 2026학년도 유아모집요강과 대표전화 02-753-7751 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 리라유치원의 유아모집요강 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "리라유치원 2026학년도 유아모집요강과 대표전화 02-753-7751 문맥이 확인되는 Instagram 검색 결과다. 전화번호와 원장부 주소를 기준으로 서울 중구 리라유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T18:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e08d75d2",
+        "structuredFields": {
+          "kindergartenName": "리라유치원",
+          "kindergartenAddress": "서울특별시 중구 소파로2길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQ_Zq4-kwSu%22+%22%EB%A6%AC%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%2202-753-7751%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQ_Zq4-kwSu/",
+          "normalizedUrl": "www.instagram.com/p/dq_zq4-kwsu",
+          "normalizedText": "서울 리라유치원 모집요강 sns 리라유치원 2026학년도 유아모집요강과 대표전화 02-753-7751 문맥이 확인되는 instagram 검색 결과. 서울 중구 리라유치원의 유아모집요강 sns 정보.",
+          "htmlSnapshotHash": "e08d75d2",
+          "extractedAt": "2026-06-30T18:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "리라유치원",
+            "kindergartenAddress": "서울특별시 중구 소파로2길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQ_Zq4-kwSu%22+%22%EB%A6%AC%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%2202-753-7751%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T18:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-01a1-b044-e053-0a32095ab044": [
+    "1ecec08d-0e84-b044-e053-0a32095ab044": [
       {
-        "id": "rev-5539-cwsv",
-        "kindergartenId": "1ecec08d-01a1-b044-e053-0a32095ab044",
-        "title": "중구 신당동 동아 약수하이츠 아파트 현장 후기ㅣ단지 내 부터...",
-        "url": "https://blog.naver.com/designspace801/223510435539",
-        "source": "naver_blog",
-        "sourceName": "디자인스페이스801",
-        "snippet": ":-) 오늘은 막 따끈하게 완공된 중구 약수하이츠 현장의 주변 시설들을 소개해 드리려고 합니다.... :-) 상가에서부터 내부로 쭉 들어오면 약수유치원이 보입니다. 자녀를 키우고 계신 입주민 분들에겐 더할 나위...",
-        "date": "2024-07-12",
-        "collectedAt": "2026-02-18T06:13:58.256Z",
-        "relevanceScore": 3
+        "id": "rev-b4106160",
+        "kindergartenId": "1ecec08d-0e84-b044-e053-0a32095ab044",
+        "title": "RE수암유치원 내부 프로그램도 좋고 선생님들도 좋고 정말 강추예요! 지금은 아이가 초딩이지만 유치원 시절이 최고 좋았다며 아직도 기억",
+        "url": "https://cafe.naver.com/sjmoms/2155295?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InNqbW9tcyIsImFydGljbGVJZCI6MjE1NTI5NSwiaXNzdWVkQXQiOjE3ODI0NTY3NTY4MzV9.G_wwd3-yelwzRIags2ZdtYhVUIgtFenVFwj66NDoYec",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "성동구중구엄마들의모임2025.10.31.Keep에 저장Keep에 바로가기수암유치원 3년 다닌 후기그래서 저도 짧게 나마 후기를 남겨봅니다. (찾아보니 작년에 수암유치원 활동에 대해 자세히 써주신 글이 있어서 저는 가볍게 써볼게요^^;) 먼저 제가 생각하는 장점은 1. 다양한 야외 활동 (도보 기준). 제일 좋은 건 중구에서 지원해주는 숲 체험 프로그램에 참여 하는 것이고 가까운 공원이나 아파트 단지 내 놀이터에서의 야외 놀이...",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T06:52:37.394Z",
+        "relevanceScore": 14,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "13e43f75",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/sjmoms/2155295?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InNqbW9tcyIsImFydGljbGVJZCI6MjE1NTI5NSwiaXNzdWVkQXQiOjE3ODI0NTY3NTY4MzV9.G_wwd3-yelwzRIags2ZdtYhVUIgtFenVFwj66NDoYec",
+          "normalizedUrl": "cafe.naver.com/sjmoms/2155295?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6innqbw9tcyisimfydgljbgvjzci6mje1nti5nswiaxnzdwvkqxqioje3odi0nty3nty4mzv9.g_wwd3-yelwzriags2zdtyhvuigtfenvfwj66ndoyec",
+          "normalizedText": "re수암유치원 내부 프로그램도 좋고 선생님들도 좋고 정말 강추예요! 지금은 아이가 초딩이지만 유치원 시절이 최고 좋았다며 아직도 기억 re수암유치원 내부 프로그램도 좋고 선생님들도 좋고 정말 강추예요! 지금은 아이가 초딩이지만 유치원 시절이 최고 좋았다며 아직도 기억 성동구중구엄마들의모임2025.10.31.keep에 저장keep에 바로가기수암유치원 3년 다닌 후기그래서 저도 짧게 나마 후기를 남겨봅니다. (찾아보니 작년에 수암유치원 활동에 대해 자세히 써주신 글이 있어서 저는 가볍게 써볼게요^^;) 먼저 제가 생각하는 장점은 1. 다양한 야외 활동 (도보 기준). 제일 좋은 건 중구에서 지원해주는 숲 체험 프로그램에 참여 하는 것이고 가까운 공원이나 아파트 단지 내 놀이터에서의 야외 놀이...",
+          "htmlSnapshotHash": "13e43f75",
+          "extractedAt": "2026-06-26T06:52:37.394Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%88%98%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "수암유치원",
+            "kindergartenAddress": "서울특별시 중구 다산로 32",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%88%98%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0603-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e21b9291",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 공식 SNS",
+        "url": "https://www.instagram.com/hanilkindergarten/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 공식 계정에서 서울 중구 주소, 놀이중심 유치원 운영, 입학문의 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 공식 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "한일유치원 공식 계정에서 서울 중구 주소, 놀이중심 유치원 운영, 입학문의 문맥이 확인되는 Instagram 검색 결과. 한일유치원 동명이 있어 중구 원장부 주소와 맞는 기관으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b2915bd4",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22hanilkindergarten%22+%22%ED%95%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A4%91%EA%B5%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한일유치원 동명이 있어 중구 공식 계정 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/hanilkindergarten/",
+          "normalizedUrl": "www.instagram.com/hanilkindergarten",
+          "normalizedText": "서울 중구 한일유치원 공식 sns 한일유치원 공식 계정에서 서울 중구 주소, 놀이중심 유치원 운영, 입학문의 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 공식 instagram 검색 결과.",
+          "htmlSnapshotHash": "b2915bd4",
+          "extractedAt": "2026-06-30T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22hanilkindergarten%22+%22%ED%95%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A4%91%EA%B5%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한일유치원 동명이 있어 중구 공식 계정 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a8143beb",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DPwEsclExL3/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 2026학년도 입학설명회 신청 안내와 공식 계정 hanil_kids 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 2026학년도 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "한일유치원 2026학년도 입학설명회 신청 안내와 공식 계정 hanil_kids 문맥이 확인되는 Instagram 검색 결과다. 계정명과 원장부 주소·전화번호를 기준으로 서울 중구 한일유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T21:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e94b8474",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPwEsclExL3%22+%22hanil_kids%22+%22%ED%95%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPwEsclExL3/",
+          "normalizedUrl": "www.instagram.com/p/dpwesclexl3",
+          "normalizedText": "서울 중구 한일유치원 입학설명회 sns 한일유치원 2026학년도 입학설명회 신청 안내와 공식 계정 hanil_kids 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 2026학년도 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "e94b8474",
+          "extractedAt": "2026-06-30T21:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPwEsclExL3%22+%22hanil_kids%22+%22%ED%95%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T21:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-95b3da14",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 입학안내 SNS",
+        "url": "https://www.instagram.com/p/DPgtp9pk9Vs/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 계정의 입학안내 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 입학안내 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "한일유치원 계정의 입학안내 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과다. 같은 이름의 광진구 유치원이 있어 전화 02-2235-0016과 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.996Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "32255d4e",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPgtp9pk9Vs%22+%22hanilkindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPgtp9pk9Vs/",
+          "normalizedUrl": "www.instagram.com/p/dpgtp9pk9vs",
+          "normalizedText": "서울 중구 한일유치원 입학안내 sns 한일유치원 계정의 입학안내 게시물과 서울 중구 한일유치원 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 입학안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "32255d4e",
+          "extractedAt": "2026-06-30T23:59:59.996Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPgtp9pk9Vs%22+%22hanilkindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.996Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-47149385",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DPvn5Etk68G/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 계정의 원아모집 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 원아모집 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "한일유치원 계정의 원아모집 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과다. 전화 02-2235-0016과 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.996Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "deb7ebb9",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPvn5Etk68G%22+%22hanilkindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPvn5Etk68G/",
+          "normalizedUrl": "www.instagram.com/p/dpvn5etk68g",
+          "normalizedText": "서울 중구 한일유치원 원아모집 sns 한일유치원 계정의 원아모집 게시물과 서울 중구 한일유치원 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 원아모집 instagram 검색 결과.",
+          "htmlSnapshotHash": "deb7ebb9",
+          "extractedAt": "2026-06-30T23:59:59.996Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPvn5Etk68G%22+%22hanilkindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.996Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f9e9341d",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 활동 SNS",
+        "url": "https://www.instagram.com/p/DPY-FNtk7lw/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 계정의 유치원 활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "한일유치원 계정의 유치원 활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.996Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d8989aa7",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPY-FNtk7lw%22+%22hanilkindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPY-FNtk7lw/",
+          "normalizedUrl": "www.instagram.com/p/dpy-fntk7lw",
+          "normalizedText": "서울 중구 한일유치원 활동 sns 한일유치원 계정의 유치원 활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "d8989aa7",
+          "extractedAt": "2026-06-30T23:59:59.996Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPY-FNtk7lw%22+%22hanilkindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.996Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-8aa1a5cd",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 체험활동 SNS",
+        "url": "https://www.instagram.com/p/DPyTEEnE7aE/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 계정의 체험활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 체험활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "한일유치원 계정의 체험활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.996Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ffeb9d57",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPyTEEnE7aE%22+%22hanilkindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPyTEEnE7aE/",
+          "normalizedUrl": "www.instagram.com/p/dpyteene7ae",
+          "normalizedText": "서울 중구 한일유치원 체험활동 sns 한일유치원 계정의 체험활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 체험활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "ffeb9d57",
+          "extractedAt": "2026-06-30T23:59:59.996Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPyTEEnE7aE%22+%22hanilkindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.996Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0a21f6ce",
+        "kindergartenId": "1ecec08d-0603-b044-e053-0a32095ab044",
+        "title": "서울 중구 한일유치원 놀이 SNS",
+        "url": "https://www.instagram.com/p/DY1VFMpTuXl/",
+        "source": "other",
+        "sourceName": "Instagram · 한일유치원",
+        "snippet": "한일유치원 계정의 놀이활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 중구 한일유치원의 놀이활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "한일유치원 계정의 놀이활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.996Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e812d734",
+        "structuredFields": {
+          "kindergartenName": "한일유치원",
+          "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY1VFMpTuXl%22+%22hanilkindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY1VFMpTuXl/",
+          "normalizedUrl": "www.instagram.com/p/dy1vfmptuxl",
+          "normalizedText": "서울 중구 한일유치원 놀이 sns 한일유치원 계정의 놀이활동 게시물과 서울 중구 한일유치원 문맥이 확인되는 instagram 검색 결과. 서울 중구 한일유치원의 놀이활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "e812d734",
+          "extractedAt": "2026-06-30T23:59:59.996Z",
+          "structuredFields": {
+            "kindergartenName": "한일유치원",
+            "kindergartenAddress": "서울특별시 중구 퇴계로88다길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY1VFMpTuXl%22+%22hanilkindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.996Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-05d4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f3c58e9d",
+        "kindergartenId": "1ecec08d-05d4-b044-e053-0a32095ab044",
+        "kindergartenName": "신일유치원",
+        "title": "서울 약수동 신일유치원 숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY4Eb8TvC0N/",
+        "source": "other",
+        "sourceName": "Instagram · 신일유치원",
+        "snippet": "Instagram 검색 결과에서 신일유치원, 약수동유치원, 숲체험, 오감놀이 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest-experience",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "신일유치원",
+          "kindergartenAddress": "서울특별시 중구 동호로10길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY4Eb8TvC0N%22+%22%EC%8B%A0%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%BD%EC%88%98%EB%8F%99%22+%22%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DY4Eb8TvC0N/",
+          "regionEvidence": [
+            "신일유치원",
+            "약수동유치원",
+            "서울특별시 중구 동호로10길 27"
+          ]
+        },
+        "evidenceChecksum": "63e78bf6"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

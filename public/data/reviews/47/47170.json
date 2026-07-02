@@ -1,7 +1,7 @@
 {
-  "version": "2026-06-26",
-  "totalCount": 10,
-  "kindergartenCount": 6,
+  "version": "2026-07-01",
+  "totalCount": 11,
+  "kindergartenCount": 4,
   "reviews": {
     "1ecec08d-025a-b044-e053-0a32095ab044": [
       {
@@ -15,125 +15,518 @@
         "date": "2023-05-29",
         "collectedAt": "2026-02-18T06:13:58.477Z",
         "relevanceScore": 8
-      }
-    ],
-    "1ecec08d-0a75-b044-e053-0a32095ab044": [
+      },
       {
-        "id": "rev-5941-g6va",
-        "kindergartenId": "1ecec08d-0a75-b044-e053-0a32095ab044",
-        "title": "안동유치원 어때요?",
-        "url": "http://cafe.naver.com/andongmom/655941",
-        "source": "naver_cafe",
-        "sourceName": "안동맘수다방",
-        "snippet": "아이 안동유치원 보내는 맘 있으실까요?? 후기 궁금해서요~",
+        "id": "rev-bba7bda8",
+        "kindergartenId": "1ecec08d-025a-b044-e053-0a32095ab044",
+        "title": "안동 동산유치원 교육활동 SNS",
+        "url": "https://www.instagram.com/reel/DII34f9R4XV/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 동산유치원",
+        "snippet": "동산유치원(안동) 아이들의 시드밤 만들기 교육활동이 확인되는 Instagram 검색 결과.",
+        "summary": "경북 안동시 동산유치원의 교육활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "education-activity"
+        ],
+        "content": "동산유치원(안동) 아이들의 시드밤 만들기 교육활동이 확인되는 Instagram 검색 결과. 동산유치원 동명이 있어 안동 문맥과 원장부 주소를 기준으로 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 6
-      }
-    ],
-    "3412129f-e92a-4315-9d77-bf2fd6eca7fb": [
-      {
-        "id": "rev-1523-e36i",
-        "kindergartenId": "3412129f-e92a-4315-9d77-bf2fd6eca7fb",
-        "title": "안동테라리움 안동집들이선물 린다플랜트 테라리움 원데이클래스",
-        "url": "https://blog.naver.com/lsb2980/223248551523",
-        "source": "naver_blog",
-        "sourceName": "Homo viator; 여행하는 인간",
-        "snippet": "오늘은 안동이색체험 으로 추천하는 테라리움 클래스 다녀온 후기를 포스팅하려고 한다... 안동개업선물 안동집들이선물 찾으시는 분들에게도 좋은 선물이 될 것 같다 린다플랜트 는 풍풍초와 꿈빛유치원...",
-        "date": "2023-10-27",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 7
+        "collectedAt": "2026-06-30T23:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fc4ae682",
+        "structuredFields": {
+          "kindergartenName": "동산유치원",
+          "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DII34f9R4XV%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동산유치원 동명이 있어 안동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DII34f9R4XV/",
+          "normalizedUrl": "www.instagram.com/reel/dii34f9r4xv",
+          "normalizedText": "안동 동산유치원 교육활동 sns 동산유치원(안동) 아이들의 시드밤 만들기 교육활동이 확인되는 instagram 검색 결과. 경북 안동시 동산유치원의 교육활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "fc4ae682",
+          "extractedAt": "2026-06-30T23:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동산유치원",
+            "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DII34f9R4XV%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동산유치원 동명이 있어 안동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-0701-gxcm",
-        "kindergartenId": "3412129f-e92a-4315-9d77-bf2fd6eca7fb",
-        "title": "안동 풍천면 공방: 린다플랜트 안동테라리움 안동원데이클래스...",
-        "url": "https://blog.naver.com/limxji/223353040701",
-        "source": "naver_blog",
-        "sourceName": "지영쌤 미소꽃피자 ღ'ᴗ'ღ",
-        "snippet": "안동테라리움 원데이클래스 후기를 알려드릴게요. 린다플랜트 안동 풍천면 테라리움 원데이클래스... 풍천풍서초등학교, 꿈빛유치원 사이에 위치하고 있어요. 인도로 들어오셔도 되고, 앞쪽으로 들어오셔도...",
-        "date": "2024-02-14",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 6
+        "id": "rev-8c1dea66",
+        "kindergartenId": "1ecec08d-025a-b044-e053-0a32095ab044",
+        "title": "안동 동산유치원 특별활동 Instagram",
+        "url": "https://www.instagram.com/reel/DNSG59lxMot/",
+        "source": "other",
+        "sourceName": "Instagram · 동산유치원(안동)",
+        "snippet": "Instagram 검색 결과에서 동산유치원(안동) 공식 계정의 특별활동 소개와 안동돌봄유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "institution-overview"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "276f99fb",
+        "structuredFields": {
+          "kindergartenName": "동산유치원",
+          "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNSG59lxMot%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNSG59lxMot/",
+          "normalizedUrl": "www.instagram.com/reel/dnsg59lxmot",
+          "normalizedText": "안동 동산유치원 특별활동 instagram instagram 검색 결과에서 동산유치원(안동) 공식 계정의 특별활동 소개와 안동돌봄유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "276f99fb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동산유치원",
+            "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNSG59lxMot%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-1981-9n6r",
-        "kindergartenId": "3412129f-e92a-4315-9d77-bf2fd6eca7fb",
-        "title": "안동 이색체험 린다플랜트... 테라리움 원데이클래스 후기",
-        "url": "https://blog.naver.com/shine0783/223648171981",
-        "source": "naver_blog",
-        "sourceName": "키 큰언니의 맛있는 일상",
-        "snippet": "체험한 후기를 포스팅해 보려고 합니다. 집에 반려 식물을 하나 들이고 싶었는데 마침 좋은 원 데이 클래스가 있어 다녀오게 되었어요. 풍천풍서초등학교와 꿈빛유치원 사이 위치 영업시간 월 - 금 09:30 - 20:00...",
-        "date": "2024-11-05",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 6
+        "id": "rev-943a8139",
+        "kindergartenId": "1ecec08d-025a-b044-e053-0a32095ab044",
+        "title": "안동 동산유치원 바깥활동 Instagram",
+        "url": "https://www.instagram.com/reel/DJnTpL5zddd/",
+        "source": "other",
+        "sourceName": "Instagram · 동산유치원(안동)",
+        "snippet": "Instagram 검색 결과에서 동산유치원(안동) 공식 계정의 나간데이 바깥활동과 유치원 생활 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "cd7a4531",
+        "structuredFields": {
+          "kindergartenName": "동산유치원",
+          "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJnTpL5zddd%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJnTpL5zddd/",
+          "normalizedUrl": "www.instagram.com/reel/djntpl5zddd",
+          "normalizedText": "안동 동산유치원 바깥활동 instagram instagram 검색 결과에서 동산유치원(안동) 공식 계정의 나간데이 바깥활동과 유치원 생활 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "cd7a4531",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동산유치원",
+            "kindergartenAddress": "경상북도 안동시 송하2길 51-13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJnTpL5zddd%22+%22%EB%8F%99%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f0e7-b044-e053-0a32095ab044": [
+    "1ecec08c-ee81-b044-e053-0a32095ab044": [
       {
-        "id": "rev-8376-nked",
-        "kindergartenId": "1ecec08c-f0e7-b044-e053-0a32095ab044",
-        "title": "스마일 커피   쥬스 / 안동복주초등학교병설유치원_수료 및...",
-        "url": "https://blog.naver.com/smile_cafe/223545088376",
-        "source": "naver_blog",
-        "sourceName": "스마일커피&쥬스 푸드트럭",
-        "snippet": "안동복주초등학교병설유치원 졸업 및 수료식 이벤트 15종 라인업 현수막 컵홀더스티커 * 디자인의뢰... 들고간 생수 얼었다는 후기까지.. 호호 그래도 마무리 잘 해주셨다고해요! 아래 후기 사진 봐주세요!!...",
-        "date": "2024-08-12",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 7
+        "id": "rev-3475ffd2",
+        "kindergartenId": "1ecec08c-ee81-b044-e053-0a32095ab044",
+        "title": "안동자연유치원 가을걷이 활동 Instagram",
+        "url": "https://www.instagram.com/reel/CzLv1aQvw91/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 자연유치원",
+        "snippet": "Instagram 검색 결과에서 안동자연유치원 가을걷이 활동과 경북·안동·자연유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "c2472be7",
+        "structuredFields": {
+          "kindergartenName": "안동자연유치원",
+          "kindergartenAddress": "경상북도 안동시 운동장길 175",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CzLv1aQvw91%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CzLv1aQvw91/",
+          "normalizedUrl": "www.instagram.com/reel/czlv1aqvw91",
+          "normalizedText": "안동자연유치원 가을걷이 활동 instagram instagram 검색 결과에서 안동자연유치원 가을걷이 활동과 경북·안동·자연유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "c2472be7",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동자연유치원",
+            "kindergartenAddress": "경상북도 안동시 운동장길 175",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CzLv1aQvw91%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-039a0069",
+        "kindergartenId": "1ecec08c-ee81-b044-e053-0a32095ab044",
+        "title": "안동자연유치원 겨울 간식 활동 Instagram",
+        "url": "https://www.instagram.com/reel/C0oVRMNSla5/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 자연유치원",
+        "snippet": "Instagram 검색 결과에서 안동 자연유치원 겨울 간식 활동과 경상북도·안동·안동자연유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "food-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "140daf07",
+        "structuredFields": {
+          "kindergartenName": "안동자연유치원",
+          "kindergartenAddress": "경상북도 안동시 운동장길 175",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0oVRMNSla5%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C0oVRMNSla5/",
+          "normalizedUrl": "www.instagram.com/reel/c0ovrmnsla5",
+          "normalizedText": "안동자연유치원 겨울 간식 활동 instagram instagram 검색 결과에서 안동 자연유치원 겨울 간식 활동과 경상북도·안동·안동자연유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "140daf07",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동자연유치원",
+            "kindergartenAddress": "경상북도 안동시 운동장길 175",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0oVRMNSla5%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-71de697d",
+        "kindergartenId": "1ecec08c-ee81-b044-e053-0a32095ab044",
+        "title": "안동자연유치원 겨울 영화관 놀이 Instagram",
+        "url": "https://www.instagram.com/reel/C0oU2G3yi6n/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 자연유치원",
+        "snippet": "Instagram 검색 결과에서 안동자연유치원 자연 영화관 놀이와 경북·안동·유치원활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "01f4ce56",
+        "structuredFields": {
+          "kindergartenName": "안동자연유치원",
+          "kindergartenAddress": "경상북도 안동시 운동장길 175",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0oU2G3yi6n%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C0oU2G3yi6n/",
+          "normalizedUrl": "www.instagram.com/reel/c0ou2g3yi6n",
+          "normalizedText": "안동자연유치원 겨울 영화관 놀이 instagram instagram 검색 결과에서 안동자연유치원 자연 영화관 놀이와 경북·안동·유치원활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "01f4ce56",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동자연유치원",
+            "kindergartenAddress": "경상북도 안동시 운동장길 175",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0oU2G3yi6n%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e83476e9",
+        "kindergartenId": "1ecec08c-ee81-b044-e053-0a32095ab044",
+        "title": "안동자연유치원 악기지도 Instagram",
+        "url": "https://www.instagram.com/p/CuJeZN_v1KB/",
+        "source": "other",
+        "sourceName": "Instagram · 안동자연유치원",
+        "snippet": "Instagram 검색 결과에서 경북 안동자연유치원 악기 지도와 입학설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "music-activity",
+          "admissions"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "85f7105b",
+        "structuredFields": {
+          "kindergartenName": "안동자연유치원",
+          "kindergartenAddress": "경상북도 안동시 운동장길 175",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CuJeZN_v1KB%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CuJeZN_v1KB/",
+          "normalizedUrl": "www.instagram.com/p/cujezn_v1kb",
+          "normalizedText": "안동자연유치원 악기지도 instagram instagram 검색 결과에서 경북 안동자연유치원 악기 지도와 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "85f7105b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동자연유치원",
+            "kindergartenAddress": "경상북도 안동시 운동장길 175",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CuJeZN_v1KB%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-77d96cfa",
+        "kindergartenId": "1ecec08c-ee81-b044-e053-0a32095ab044",
+        "title": "안동자연유치원 텃밭활동 Instagram",
+        "url": "https://www.instagram.com/p/CyQbaLdx-9H/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 자연유치원",
+        "snippet": "Instagram 검색 결과에서 안동 자연유치원 텃밭활동과 입학설명회·신입생모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "nature-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "67d40ed9",
+        "structuredFields": {
+          "kindergartenName": "안동자연유치원",
+          "kindergartenAddress": "경상북도 안동시 운동장길 175",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyQbaLdx-9H%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyQbaLdx-9H/",
+          "normalizedUrl": "www.instagram.com/p/cyqbaldx-9h",
+          "normalizedText": "안동자연유치원 텃밭활동 instagram instagram 검색 결과에서 안동 자연유치원 텃밭활동과 입학설명회·신입생모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "67d40ed9",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동자연유치원",
+            "kindergartenAddress": "경상북도 안동시 운동장길 175",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyQbaLdx-9H%22+%22%EC%95%88%EB%8F%99%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f517-b044-e053-0a32095ab044": [
       {
-        "id": "rev-3282-egwy",
+        "id": "rev-b4cdc15d",
         "kindergartenId": "1ecec08c-f517-b044-e053-0a32095ab044",
-        "title": "내가 선택한 상도동 강남유치원에 대해",
-        "url": "https://blog.naver.com/tldmsdl0910/224106243282",
-        "source": "naver_blog",
-        "sourceName": "Hello,U-see's blog",
-        "snippet": "그런데 들어가기도 힘들다고 하고 무엇보다 둘째를 데리고 다녀하는데 적응하기까지 거리를 감안해서... 우리는 고민 끝에 강남 유치원을 선택했다 . 지나보니 거의 적응하기까지 6개월이 걸렸는데 주변에서...",
-        "date": "2025-12-11",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 4
-      },
-      {
-        "id": "rev-0025-mseg",
-        "kindergartenId": "1ecec08c-f517-b044-e053-0a32095ab044",
-        "title": "강남영어유치부 펀웨이 어학원 FUNWAY 방문 후기",
-        "url": "https://blog.naver.com/dreamandloves/224076220025",
-        "source": "naver_blog",
-        "sourceName": "트트트 | 트레이너협회 | 전북 전남 대전 세종",
-        "snippet": "필자가 매우 자식처럼 아끼는 조카라서 강남유치원 펀웨이학원에 방문해봄 요즘 7살을 앞두고있어서... 학원을 다녀보며 상담받아보고있는데 제일 만족스러웠던 곳임 아무래도 사는곳이 강남이다보니...",
-        "date": "2025-11-15",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 4
-      },
-      {
-        "id": "rev-1091-9xsp",
-        "kindergartenId": "1ecec08c-f517-b044-e053-0a32095ab044",
-        "title": "그림아트스튜디오 동대구원 '애니어그램' 아동성향검사 안내...",
-        "url": "https://blog.naver.com/grimmart_ddg/223660691091",
-        "source": "naver_blog",
-        "sourceName": "국내 최초 어린이를 위한 현대미술, 그림아트 동대구",
-        "snippet": "[동대구더센트로데시앙 미술 강남유치원 미술] 안녕하세요. 그림아트스튜디오 동대구원입니다.... 그림아트스튜디오 동대구원에서는 재원생을 대상으로 애니어그램 성향검사(30만원상당)을 무료로...",
-        "date": "2024-11-14",
-        "collectedAt": "2026-02-18T06:13:58.477Z"
+        "title": "안동 강남유치원 교통안전교육 Reel",
+        "url": "https://www.instagram.com/reel/DW5La61EUhe/",
+        "source": "other",
+        "sourceName": "Instagram · 안동 강남유치원",
+        "snippet": "Instagram Reels 검색 결과에서 안동 강남유치원, 교통안전교육 DAY, 멈춘다 살핀다 건넌다 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "safety-education",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "e8c79d64",
+        "structuredFields": {
+          "kindergartenName": "강남유치원",
+          "kindergartenAddress": "경상북도 안동시 강남로 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW5La61EUhe%22+%22%EC%95%88%EB%8F%99+%EA%B0%95%EB%82%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW5La61EUhe/",
+          "normalizedUrl": "www.instagram.com/reel/dw5la61euhe",
+          "normalizedText": "안동 강남유치원 교통안전교육 reel instagram reels 검색 결과에서 안동 강남유치원, 교통안전교육 day, 멈춘다 살핀다 건넌다 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "e8c79d64",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "강남유치원",
+            "kindergartenAddress": "경상북도 안동시 강남로 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW5La61EUhe%22+%22%EC%95%88%EB%8F%99+%EA%B0%95%EB%82%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-fc0d-b044-e053-0a32095ab044": [
+    "1ecec08c-f001-b044-e053-0a32095ab044": [
       {
-        "id": "rev-0315-6zjy",
-        "kindergartenId": "1ecec08c-fc0d-b044-e053-0a32095ab044",
-        "title": "별별우주놀이 행사란? 방송촬영 행사 만족도",
-        "url": "https://blog.naver.com/misoeureka/223625450315",
-        "source": "naver_blog",
-        "sourceName": "어린이를 위한 찾아가는 모든것 어흥이벤트",
-        "snippet": "이루어졌다 는 후기를 남기기도 했어요. 참여한 어린이들의 소감 행사에 참여한 어린이들은  정말... (https://jc-one.co.kr/jc-news/?kboard_content_redirect=4821) [3] 경북온뉴스 - 안동강남초등학교병설유치원...",
-        "date": "2024-10-19",
-        "collectedAt": "2026-02-18T06:13:58.477Z",
-        "relevanceScore": 3
+        "kindergartenId": "1ecec08c-f001-b044-e053-0a32095ab044",
+        "kindergartenName": "안동오상유치원",
+        "title": "안동오상유치원 2026 운동회 Instagram Post",
+        "url": "https://www.instagram.com/p/DXi_izbmQP8/",
+        "source": "other",
+        "sourceName": "Instagram · 이우종",
+        "snippet": "Instagram 검색 결과에서 2026년 오상유치원 운동회에 가족이 참여한 문맥이 확인되는 게시물.",
+        "date": "2026-04-25",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "sports-day",
+          "family-event"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "안동오상유치원",
+          "kindergartenAddress": "경상북도 안동시 옹정골길 152",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXi_izbmQP8%22+%22%EC%98%A4%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DXi_izbmQP8/",
+          "regionEvidence": [
+            "오상유치원",
+            "안동오상유치원"
+          ]
+        },
+        "id": "rev-bf5d5c28",
+        "evidenceChecksum": "56248de9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXi_izbmQP8/",
+          "normalizedUrl": "www.instagram.com/p/dxi_izbmqp8",
+          "normalizedText": "안동오상유치원 2026 운동회 instagram post instagram 검색 결과에서 2026년 오상유치원 운동회에 가족이 참여한 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "56248de9",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안동오상유치원",
+            "kindergartenAddress": "경상북도 안동시 옹정골길 152",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXi_izbmQP8%22+%22%EC%98%A4%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DXi_izbmQP8/",
+            "regionEvidence": [
+              "오상유치원",
+              "안동오상유치원"
+            ]
+          }
+        }
       }
     ]
-  },
-  "lastCuratedAt": "2026-06-26T08:56:13.413Z"
+  }
 }

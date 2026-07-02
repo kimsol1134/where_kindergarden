@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 13,
-  "kindergartenCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 79,
+  "kindergartenCount": 11,
   "reviews": {
     "1ecec08c-ff4a-b044-e053-0a32095ab044": [
       {
@@ -26,21 +26,60 @@
         "snippet": "리뷰 315사진 5 선생님이 정말 자상하고 친절하고 밝으시고 아이들을 참 예뻐하세요 1번째 방문",
         "date": "2020-07-27",
         "collectedAt": "2026-04-05T13:53:35.658Z"
+      },
+      {
+        "id": "rev-ca77af2f",
+        "kindergartenId": "1ecec08c-ff4a-b044-e053-0a32095ab044",
+        "title": "대전 오즈킨더유치원 어린이날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYEIkq_ysgB/",
+        "source": "other",
+        "sourceName": "Instagram · 오즈킨더유치원",
+        "snippet": "오즈킨더유치원 계정에서 어린이날을 축하하고 부모님의 영상편지와 놀이 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "childrens-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2ecf1cce",
+        "structuredFields": {
+          "kindergartenName": "오즈킨더유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로41번길 24",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYEIkq_ysgB%22+%22%EC%98%A4%EC%A6%88%ED%82%A8%EB%8D%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "오즈킨더유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYEIkq_ysgB/",
+          "normalizedUrl": "www.instagram.com/reel/dyeikq_ysgb",
+          "normalizedText": "대전 오즈킨더유치원 어린이날 instagram reel 오즈킨더유치원 계정에서 어린이날을 축하하고 부모님의 영상편지와 놀이 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "2ecf1cce",
+          "extractedAt": "2026-07-02T19:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "오즈킨더유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로41번길 24",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYEIkq_ysgB%22+%22%EC%98%A4%EC%A6%88%ED%82%A8%EB%8D%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "오즈킨더유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0753-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-7365-kxrg",
-        "kindergartenId": "1ecec08d-0753-b044-e053-0a32095ab044",
-        "title": "태평동 태평유치원",
-        "url": "http://cafe.naver.com/happy1555/27365",
-        "source": "naver_cafe",
-        "sourceName": "대세top / 대전,세종학군 사교육 사립...",
-        "snippet": "장소첨부 대전 중구 태평아파트 내 태평유치원 ★ 오렌지등업용글 책추천은 실제사진첨부2장이상 ★ ★ 학습지 후기도 장소첨부 필수 ★ (예 : 대전 별나라학습지 둔산점 검색 / 본인집주소아님 / 학습지도 제목...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.411Z",
-        "relevanceScore": 5
-      },
       {
         "id": "rev-np-2650-0-tnul",
         "kindergartenId": "1ecec08d-0753-b044-e053-0a32095ab044",
@@ -150,7 +189,3306 @@
         "snippet": "리뷰 39사진 46 태평유치원 완전 추천해요 ! 조카가 다니면서 너무 추천을 받았지만 솔직히 집가까운 유치원으로 보낼까 생각했어요. 그런데 태평유치원 입학설명회를 가자마자 홀렸어요,,자신감 넘치시는 원장선생님을 보자마자 ‘아 여기다’ 싶더라구요! 지금은 3년째 다니며 벌써 내년에 학교들어가네요 ..태평유치원으로 보내길 정말 잘한거같아요!! 아이도 적응잘하며",
         "date": "2025-10-16",
         "collectedAt": "2026-04-05T13:53:53.406Z"
+      },
+      {
+        "id": "rev-4a0ebf1f",
+        "kindergartenId": "1ecec08d-0753-b044-e053-0a32095ab044",
+        "kindergartenName": "태평유치원",
+        "title": "대전 태평유치원 태평전통시장 장보기 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DCxl4JWsg-k/",
+        "source": "other",
+        "sourceName": "Instagram · 태평유치원",
+        "snippet": "태평유치원 계정 게시물 검색 결과에서 태평전통시장에서 장보기 체험을 한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market",
+          "shopping-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4a0ebf1f",
+        "structuredFields": {
+          "kindergartenName": "태평유치원",
+          "kindergartenAddress": "대전광역시 중구 평촌로 111",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCxl4JWsg-k%22%20%22%ED%83%9C%ED%8F%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%83%9C%ED%8F%89%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "태평유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCxl4JWsg-k/",
+          "normalizedUrl": "www.instagram.com/p/dcxl4jwsg-k",
+          "normalizedText": "대전 태평유치원 태평전통시장 장보기 체험 instagram post 태평유치원 계정 게시물 검색 결과에서 태평전통시장에서 장보기 체험을 한 단서가 확인된다.",
+          "htmlSnapshotHash": "4a0ebf1f",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "태평유치원",
+            "kindergartenAddress": "대전광역시 중구 평촌로 111",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCxl4JWsg-k%22%20%22%ED%83%9C%ED%8F%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%83%9C%ED%8F%89%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "태평유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fa0b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dd03c50d",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전중구유치원 성심유치원 우리 아이의 즐거운 하루 우선모집시작",
+        "url": "https://blog.naver.com/PostView.naver?blogId=jh0926yp&logNo=224061441229",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요~ 별별맘이에요 :)요즘 첫째가 유치원 생활에 푹 빠져 있어요.오늘은 첫째가 다니는 대전중구유치원 성심유치원 이야기를 해보려구요~ 대전 성심유치원 얼마전에 첫째유치원에서 가을장터가 열렸거든요.장터놀이하는 날 공지사항에복장안내는 레트로(추억의) 스타일 자유복장이었구요.준비물은 장바구니와 선행목록표를 지켜서 모은 5,000원이었어요.첫째도 기다리고 저도 기다렸던 날이었네요. 마당에 펼쳐...",
+        "summary": "안녕하세요~ 별별맘이에요 :)요즘 첫째가 유치원 생활에 푹 빠져 있어요.오늘은 첫째가 다니는 대전중구유치원 성심유치원 이야기를 해보려구요~ 대전 성심유치원 얼마전에 첫째유치원에서 가을장터가 열렸거든요.장터놀이하는 날 공지사항에복장안내는 레트로(추억의) 스타일 자유복장이었구요.준비물은 장바구니와 선행목록표를 지켜서 모은 5,000원이었어요.첫째도 기다리고 저도 기다렸던 날이었네요. 마당에 펼쳐진 에어바운스 대전중구유치원 성심유치원 마당에 들어서자마자규모에 엄청 놀랬어요.에어바운스존이 있다고는 했는데 이렇게까지 클줄이야.둘째 친구중에 유치원입학을 고민하는 엄마에게 사진을 보내주니 엄청 놀래더라구요.첫째가 신나서 바로 놀기시작했답니다.장터놀이...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T08:38:40.192Z",
+        "relevanceScore": 8,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a485a0bd",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=jh0926yp&logNo=224061441229",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=jh0926yp&logno=224061441229",
+          "normalizedText": "대전중구유치원 성심유치원 우리 아이의 즐거운 하루 우선모집시작 32 안녕하세요~ 별별맘이에요 :)요즘 첫째가 유치원 생활에 푹 빠져 있어요.오늘은 첫째가 다니는 대전중구유치원 성심유치원 이야기를 해보려구요~ 대전 성심유치원 얼마전에 첫째유치원에서 가을장터가 열렸거든요.장터놀이하는 날 공지사항에복장안내는 레트로(추억의) 스타일 자유복장이었구요.준비물은 장바구니와 선행목록표를 지켜서 모은 5,000원이었어요.첫째도 기다리고 저도 기다렸던 날이었네요. 마당에 펼쳐... 안녕하세요~ 별별맘이에요 :)요즘 첫째가 유치원 생활에 푹 빠져 있어요.오늘은 첫째가 다니는 대전중구유치원 성심유치원 이야기를 해보려구요~ 대전 성심유치원 얼마전에 첫째유치원에서 가을장터가 열렸거든요.장터놀이하는 날 공지사항에복장안내는 레트로(추억의) 스타일 자유복장이었구요.준비물은 장바구니와 선행목록표를 지켜서 모은 5,000원이었어요.첫째도 기다리고 저도 기다렸던 날이었네요. 마당에 펼쳐진 에어바운스 대전중구유치원 성심유치원 마당에 들어서자마자규모에 엄청 놀랬어요.에어바운스존이 있다고는 했는데 이렇게까지 클줄이야.둘째 친구중에 유치원입학을 고민하는 엄마에게 사진을 보내주니 엄청 놀래더라구요.첫째가 신나서 바로 놀기시작했답니다.장터놀이... 안녕하세요~ 별별맘이에요 :)요즘 첫째가 유치원 생활에 푹 빠져 있어요.오늘은 첫째가 다니는 대전중구유치원 성심유치원 이야기를 해보려구요~ 대전 성심유치원 얼마전에 첫째유치원에서 가을장터가 열렸거든요.장터놀이하는 날 공지사항에복장안내는 레트로(추억의) 스타일 자유복장이었구요.준비물은 장바구니와 선행목록표를 지켜서 모은 5,000원이었어요.첫째도 기다리고 저도 기다렸던 날이었네요. 마당에 펼쳐진 에어바운스 대전중구유치원 성심유치원 마당에 들어서자마자규모에 엄청 놀랬어요.에어바운스존이 있다고는 했는데 이렇게까지 클줄이야.둘째 친구중에 유치원입학을 고민하는 엄마에게 사진을 보내주니 엄청 놀래더라구요.첫째가 신나서 바로 놀기시작했답니다.장터놀이를 즐기기 위해 동전교환소에 가봅니다. 동전교환소 여기서 코인으로 바꿔서 장터놀이를 해야해요.첫째가 열심히 모아놓은 돈을 가지고 가서 코인 10개로 바꿨어요.장터놀이를 본격적으로 즐겨봅니다. 장터놀이 대전중구유치원 성심유치원 아이들이 집에서 안쓰는 장난감,물건, 먹을것, 문구 등등 직접 포장해서 이름과 500원이라고 써서 물건을 냈거든요.다 500원이에요.옛날 과자는 2개에 코인1개야채,과일가게도 너무 좋았어요.저희는 코인1개로 귤을 샀어요^^먹거리장터는 11시부터 시작해서 미리 사진을 찍었더니요리가 나와있지 않았어요.그래도 보여드릴게요~ 먹거리장터 다방 보이시나요?너무 귀여웠어요. 물, 아메리카노,라떼, 음료 다 코인1개에요.첫째에게 \"엄마 라떼 하나만 사줘~\"라고 했더니 흔쾌히 사주더라구요^^너무 고마워서 나중에 제돈으로 코인바꿔서 줬더니엄청 좋아하더라구요 하하하하영상으로 전체적으로 보여드릴게요~ 다양하게 준비해주셔서 정말 감사했어요.첫째가 좋아할만 한 환경이었구나 싶더라구요.원장님, 선생님들 모두 자 친절하시고 아이들을 사랑하는게 느껴졌어요.원장님이 아이들 성향과 마음을 잘 알아주시더라구요^^ 슬기반교실이 복고방으로 변신 1층에 슬기반교실이 있어요.오늘만큼은 복고방으로 변신했더라구요.사진찍을수 있는곳이 있었는데 코인1개가 필요했어요.첫째가 바로 코인1개 내더라구요~1층 들어간김에 화장실하고 복도 찍어봤어요. 1층내부모습 2026학년도 유치원입학 신청시기가 다가왔어요.모집요강조회는 10/31(금) 18:00~ 우선모집기간은 11/3(월) 09:00~11/5일(수) 23:59자격증빙 서류확인 11/6(목)~ 11/7(금)추첨 및 결과발표 11/10(월) 모바일 15:00 pc15:10선발유아 유치원등록 11/11(화) 09:00~11/12(수) 18:00둘째도 우선모집으로 접수 합니다~ previous image next image 사진남기기 장터놀이를 열심히 즐기다보니 12:00가 되었어요.이제는 우리가 헤어져야 할시간~ 음악이 나오면서 선택한 하원 방법으로 각자 자리로 돌아갔어요.첫째가 정말 재밌었다면서 좋아하더라구요.저도 뿌듯했어요.이렇게 준비해주신 원장님과 선생님들께 정말 감사하더라구요.대전중구유치원 성심유치원에대해 알아보는 만큼 특성화프로그램도 알려드릴게요.5세는 영어,블록,오르프,발레(키즈요가),놀이체육, 한글&수,언어전달(한글)6세 영어,체스,오르프,발레(키즈댄스),놀이체육,한글&수,언어전달(한글,영어)7세 영어,체스,국악,발레(키즈댄스),놀이체육,그림일기,한글&수,언어전달(한글,영어)사실 저는 프로그램 보지 않고 인성교육에 중점을 둔 성심교육에 더 마음이 가서선택을 한거였는데요.둘째 입학상담을 하면서 첫째가 많이 변했다는점 즐거워하고 있다는것꼬마선생님역할을 잘해주고 있다는것다 정말 감사한 이야기였어요.어디에 있는지 알려드릴게요~☎️ 입학 및 교육상담 042-583-4714 성심유치원 대전광역시 중구 계백로1630번길 20 이 블로그의 체크인 이 장소의 다른 글 대전중구유치원 고민하고 계시다면?아이 유치원 어디 보낼지 고민하고 계시다면?성심유치원 상담 받아보세요.아이들이 행복한 따뜻한 유치원으로 보내보세요^^지금까지 아이가 즐거운 유치원생활이야기였습니다.다음에도 별별맘의 즐거운 생활이야기로 돌아올게요.다음에 또 만나요^^",
+          "htmlSnapshotHash": "a485a0bd",
+          "extractedAt": "2026-06-29T08:38:40.192Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8C%80%EC%A0%84+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8C%80%EC%A0%84+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-5504f86c",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 중구 성심유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/reel/DPPldLEEnON/",
+        "source": "other",
+        "sourceName": "Instagram · 성심유치원",
+        "snippet": "Instagram 검색 결과에서 대전 중구 유천동 성심유치원의 2026학년도 원아모집과 유치원 소개 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "institution-overview"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "6782096c",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPPldLEEnON%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22+%22%EC%9C%A0%EC%B2%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPPldLEEnON/",
+          "normalizedUrl": "www.instagram.com/reel/dppldleenon",
+          "normalizedText": "대전 중구 성심유치원 원아모집 instagram instagram 검색 결과에서 대전 중구 유천동 성심유치원의 2026학년도 원아모집과 유치원 소개 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "6782096c",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPPldLEEnON%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22+%22%EC%9C%A0%EC%B2%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-44f3c314",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 성심유치원 가을숲길 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DCk9mQ_S-sc/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 성심유치원",
+        "snippet": "Instagram 검색 결과에서 대전 성심유치원 2024 성심가족 가을숲길, 부모참여수업, 중구유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "aa0c0709",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCk9mQ_S-sc%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DCk9mQ_S-sc/",
+          "normalizedUrl": "www.instagram.com/reel/dck9mq_s-sc",
+          "normalizedText": "대전 성심유치원 가을숲길 부모참여수업 instagram instagram 검색 결과에서 대전 성심유치원 2024 성심가족 가을숲길, 부모참여수업, 중구유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "aa0c0709",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCk9mQ_S-sc%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bc66f26c",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 중구 성심유치원 3월 이야기 Instagram",
+        "url": "https://www.instagram.com/p/C5VsILBS42T/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 성심유치원",
+        "snippet": "Instagram 검색 결과에서 대전 성심유치원, 중구 유천동 유치원, 3월 놀이 활동, 원아모집과 특성화 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "a2a1abd3",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C5VsILBS42T%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C5VsILBS42T/",
+          "normalizedUrl": "www.instagram.com/p/c5vsilbs42t",
+          "normalizedText": "대전 중구 성심유치원 3월 이야기 instagram instagram 검색 결과에서 대전 성심유치원, 중구 유천동 유치원, 3월 놀이 활동, 원아모집과 특성화 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "a2a1abd3",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C5VsILBS42T%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1b0ed734",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 중구 성심유치원 민속놀이 Instagram",
+        "url": "https://www.instagram.com/p/DBdZ6aoSY7_/",
+        "source": "other",
+        "sourceName": "Instagram · sungsim_kinder",
+        "snippet": "Instagram 검색 결과에서 성심유치원, 대전 중구 유천동, 민속놀이 한마당, 원아모집과 입학설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "culture-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "c0049a4e",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBdZ6aoSY7_%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBdZ6aoSY7_/",
+          "normalizedUrl": "www.instagram.com/p/dbdz6aosy7_",
+          "normalizedText": "대전 중구 성심유치원 민속놀이 instagram instagram 검색 결과에서 성심유치원, 대전 중구 유천동, 민속놀이 한마당, 원아모집과 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c0049a4e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBdZ6aoSY7_%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-17cf071e",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 중구 성심유치원 신입원아모집 Instagram",
+        "url": "https://www.instagram.com/p/DB7sog7ycp4/",
+        "source": "other",
+        "sourceName": "Instagram · 성심유치원",
+        "snippet": "Instagram 검색 결과에서 성심유치원, 대전, 중구, 유천동, 신입원아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "e7d5a4b3",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DB7sog7ycp4%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DB7sog7ycp4/",
+          "normalizedUrl": "www.instagram.com/p/db7sog7ycp4",
+          "normalizedText": "대전 중구 성심유치원 신입원아모집 instagram instagram 검색 결과에서 성심유치원, 대전, 중구, 유천동, 신입원아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "e7d5a4b3",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DB7sog7ycp4%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-43014752",
+        "kindergartenId": "1ecec08c-fa0b-b044-e053-0a32095ab044",
+        "title": "대전 중구 성심유치원 신입원아모집 Reel",
+        "url": "https://www.instagram.com/reel/DBIP9CtSjN9/",
+        "source": "other",
+        "sourceName": "Instagram · 성심유치원",
+        "snippet": "Instagram Reels 검색 결과에서 성심유치원, 대전, 중구, 유천동, 태평동, 신입원아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "d05626a2",
+        "structuredFields": {
+          "kindergartenName": "성심유치원",
+          "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBIP9CtSjN9%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBIP9CtSjN9/",
+          "normalizedUrl": "www.instagram.com/reel/dbip9ctsjn9",
+          "normalizedText": "대전 중구 성심유치원 신입원아모집 reel instagram reels 검색 결과에서 성심유치원, 대전, 중구, 유천동, 태평동, 신입원아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "d05626a2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "대전광역시 중구 계백로1630번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBIP9CtSjN9%22+%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0eaf-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-1084f0a4",
+        "kindergartenId": "1ecec08d-0eaf-b044-e053-0a32095ab044",
+        "title": "대전 삼부유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DGMzb3rP1Vb/",
+        "source": "other",
+        "sourceName": "Instagram · 삼부유치원",
+        "snippet": "삼부유치원 원아모집과 대전 중구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 삼부유치원의 원아모집 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "삼부유치원 원아모집과 대전 중구 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 대전 중구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3c37db8f",
+        "structuredFields": {
+          "kindergartenName": "삼부유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 77",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGMzb3rP1Vb%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DGMzb3rP1Vb/",
+          "normalizedUrl": "www.instagram.com/p/dgmzb3rp1vb",
+          "normalizedText": "대전 삼부유치원 원아모집 sns 삼부유치원 원아모집과 대전 중구 문맥이 확인되는 instagram 검색 결과. 대전 중구 삼부유치원의 원아모집 instagram 검색 결과.",
+          "htmlSnapshotHash": "3c37db8f",
+          "extractedAt": "2026-07-01T00:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼부유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 77",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGMzb3rP1Vb%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2037a02e",
+        "kindergartenId": "1ecec08d-0eaf-b044-e053-0a32095ab044",
+        "title": "대전 삼부유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DPveFVbABck/",
+        "source": "other",
+        "sourceName": "Instagram · 삼부유치원",
+        "snippet": "삼부유치원 2026학년도 원아모집과 전화 042-525-8000 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 삼부유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "삼부유치원 2026학년도 원아모집과 전화 042-525-8000 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 대전 중구 삼부유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:30.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "881626ef",
+        "structuredFields": {
+          "kindergartenName": "삼부유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 77",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPveFVbABck%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-525-8000%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPveFVbABck/",
+          "normalizedUrl": "www.instagram.com/p/dpvefvbabck",
+          "normalizedText": "대전 삼부유치원 원아모집 sns 삼부유치원 2026학년도 원아모집과 전화 042-525-8000 문맥이 확인되는 instagram 검색 결과. 대전 중구 삼부유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "881626ef",
+          "extractedAt": "2026-06-30T23:59:30.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼부유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 77",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPveFVbABck%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-525-8000%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:30.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3f0b1a90",
+        "kindergartenId": "1ecec08d-0eaf-b044-e053-0a32095ab044",
+        "title": "대전 삼부유치원 크리스마스 뮤지컬 관람 Reel",
+        "url": "https://www.instagram.com/reel/DDYy6IMvz4t/",
+        "source": "other",
+        "sourceName": "Instagram · 삼부유치원",
+        "snippet": "Instagram Reels 검색 결과에서 삼부유치원, 크리스마스 주제 뮤지컬 관람, 2026학년도 원아모집 계정 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "performance",
+          "musical"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "ffd92af0",
+        "structuredFields": {
+          "kindergartenName": "삼부유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 77",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDYy6IMvz4t%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDYy6IMvz4t/",
+          "normalizedUrl": "www.instagram.com/reel/ddyy6imvz4t",
+          "normalizedText": "대전 삼부유치원 크리스마스 뮤지컬 관람 reel instagram reels 검색 결과에서 삼부유치원, 크리스마스 주제 뮤지컬 관람, 2026학년도 원아모집 계정 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "ffd92af0",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼부유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 77",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDYy6IMvz4t%22+%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-97e82555",
+        "kindergartenId": "1ecec08d-0eaf-b044-e053-0a32095ab044",
+        "kindergartenName": "삼부유치원",
+        "title": "대전 삼부유치원 한밭수목원 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DIs6j3YSNZI/",
+        "source": "other",
+        "sourceName": "Instagram · 삼부유치원",
+        "snippet": "삼부유치원 계정 게시물 검색 결과에서 한밭수목원 견학, 종이컵챌린지, 놀이중심유치원, 유치원현장학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "arboretum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "97e82555",
+        "structuredFields": {
+          "kindergartenName": "삼부유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 77",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIs6j3YSNZI%22%20%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EB%B0%AD%EC%88%98%EB%AA%A9%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼부유치원은 로컬 원장부에서 단일 명칭이며 대전 한밭수목원 현장학습 단서와 대전 중구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIs6j3YSNZI/",
+          "normalizedUrl": "www.instagram.com/p/dis6j3ysnzi",
+          "normalizedText": "대전 삼부유치원 한밭수목원 견학 instagram post 삼부유치원 계정 게시물 검색 결과에서 한밭수목원 견학, 종이컵챌린지, 놀이중심유치원, 유치원현장학습 단서가 확인된다.",
+          "htmlSnapshotHash": "97e82555",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼부유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 77",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIs6j3YSNZI%22%20%22%EC%82%BC%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%9C%EB%B0%AD%EC%88%98%EB%AA%A9%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼부유치원은 로컬 원장부에서 단일 명칭이며 대전 한밭수목원 현장학습 단서와 대전 중구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-eda2-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2627bc63",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 꿈내리유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DOptSMODk3c/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 꿈내리유치원 2026학년도 입학설명회와 교육상담 전화 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 꿈내리유치원의 입학설명회 및 교육상담 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "대전 꿈내리유치원 2026학년도 입학설명회와 교육상담 전화 문맥이 확인되는 Instagram 검색 결과다. 전화번호 042-584-6000 문맥으로 대전 중구 원장부 항목에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T16:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7f93c202",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOptSMODk3c%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-584-6000%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOptSMODk3c/",
+          "normalizedUrl": "www.instagram.com/p/doptsmodk3c",
+          "normalizedText": "대전 꿈내리유치원 입학설명회 sns 대전 꿈내리유치원 2026학년도 입학설명회와 교육상담 전화 문맥이 확인되는 instagram 검색 결과. 대전 중구 꿈내리유치원의 입학설명회 및 교육상담 sns 정보.",
+          "htmlSnapshotHash": "7f93c202",
+          "extractedAt": "2026-06-30T16:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOptSMODk3c%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-584-6000%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T16:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-207785f8",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 꿈내리유치원 입학절차 추가 SNS",
+        "url": "https://www.instagram.com/reel/DPbPl0cjx6U/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 2026학년도 입학 절차와 전화 042-584-6000, 상담 예약 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 꿈내리유치원의 2026학년도 입학 절차 추가 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "꿈내리유치원 2026학년도 입학 절차와 전화 042-584-6000, 상담 예약 문맥이 확인되는 Instagram 검색 결과다. 기존 입학설명회 URL과 다른 입학 절차 안내 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T19:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "544f5d52",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPbPl0cjx6U%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-584-6000%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPbPl0cjx6U/",
+          "normalizedUrl": "www.instagram.com/reel/dpbpl0cjx6u",
+          "normalizedText": "대전 꿈내리유치원 입학절차 추가 sns 꿈내리유치원 2026학년도 입학 절차와 전화 042-584-6000, 상담 예약 문맥이 확인되는 instagram 검색 결과. 대전 중구 꿈내리유치원의 2026학년도 입학 절차 추가 sns 정보.",
+          "htmlSnapshotHash": "544f5d52",
+          "extractedAt": "2026-06-30T19:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPbPl0cjx6U%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-584-6000%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T19:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f8a96102",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 꿈내리유치원 만3세 교육활동 SNS",
+        "url": "https://www.threads.com/@kkumneri_kindergarten/post/DA7bkyWPcID/",
+        "source": "other",
+        "sourceName": "Threads · 꿈내리유치원",
+        "snippet": "꿈내리유치원 만3세 어린이 활동과 놀이 중심 교육 문맥이 확인되는 Threads 검색 결과.",
+        "summary": "대전 중구 꿈내리유치원의 만3세 놀이 중심 교육활동 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "education-activity"
+        ],
+        "content": "꿈내리유치원 만3세 어린이 활동과 놀이 중심 교육 문맥이 확인되는 Threads 검색 결과다. 공식 계정명 kkumneri_kindergarten과 기존 전화번호 매칭 문맥을 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T19:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fee9d0d2",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DA7bkyWPcID%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 기존 전화번호 매칭 문맥을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@kkumneri_kindergarten/post/DA7bkyWPcID/",
+          "normalizedUrl": "www.threads.com/@kkumneri_kindergarten/post/da7bkywpcid",
+          "normalizedText": "대전 꿈내리유치원 만3세 교육활동 sns 꿈내리유치원 만3세 어린이 활동과 놀이 중심 교육 문맥이 확인되는 threads 검색 결과. 대전 중구 꿈내리유치원의 만3세 놀이 중심 교육활동 sns 정보.",
+          "htmlSnapshotHash": "fee9d0d2",
+          "extractedAt": "2026-06-30T19:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DA7bkyWPcID%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 기존 전화번호 매칭 문맥을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T19:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-90af028d",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 꿈내리유치원 입학상담 추가 SNS",
+        "url": "https://www.instagram.com/p/DQDirhNDsBp/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 입학상담, 처음학교로, 입학 절차 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 꿈내리유치원의 입학상담 및 처음학교로 안내 추가 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "꿈내리유치원 입학상담, 처음학교로, 입학 절차 문맥이 확인되는 Instagram 검색 결과다. 기존 꿈내리유치원 공식 계정 문맥과 전화번호 매칭을 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T19:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b1a53500",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQDirhNDsBp%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%98%EC%9D%8C%ED%95%99%EA%B5%90%EB%A1%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정 문맥과 기존 전화번호 매칭을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQDirhNDsBp/",
+          "normalizedUrl": "www.instagram.com/p/dqdirhndsbp",
+          "normalizedText": "대전 꿈내리유치원 입학상담 추가 sns 꿈내리유치원 입학상담, 처음학교로, 입학 절차 문맥이 확인되는 instagram 검색 결과. 대전 중구 꿈내리유치원의 입학상담 및 처음학교로 안내 추가 sns 정보.",
+          "htmlSnapshotHash": "b1a53500",
+          "extractedAt": "2026-06-30T19:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQDirhNDsBp%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%98%EC%9D%8C%ED%95%99%EA%B5%90%EB%A1%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정 문맥과 기존 전화번호 매칭을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T19:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-03a13364",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 꿈내리유치원 교육활동 추가 SNS",
+        "url": "https://www.instagram.com/reel/DXLc9eFjAuZ/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 친구들의 활동과 교육활동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 꿈내리유치원의 교육활동 추가 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "education-activity"
+        ],
+        "content": "꿈내리유치원 친구들의 활동과 교육활동 문맥이 확인되는 Instagram 검색 결과다. 기존 꿈내리유치원 공식 계정 문맥과 원장부 주소를 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T19:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7cc5b55a",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXLc9eFjAuZ%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXLc9eFjAuZ/",
+          "normalizedUrl": "www.instagram.com/reel/dxlc9efjauz",
+          "normalizedText": "대전 꿈내리유치원 교육활동 추가 sns 꿈내리유치원 친구들의 활동과 교육활동 문맥이 확인되는 instagram 검색 결과. 대전 중구 꿈내리유치원의 교육활동 추가 sns 정보.",
+          "htmlSnapshotHash": "7cc5b55a",
+          "extractedAt": "2026-06-30T19:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXLc9eFjAuZ%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T19:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5f245317",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 신입생 첫 만남 Instagram",
+        "url": "https://www.instagram.com/reel/DSJjQxDCW3B/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 2026학년도 신입생과 학부모의 첫 만남, 오리엔테이션, 유치원 방문과 적응 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "orientation"
+        ],
+        "date": "2025-12-11",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "1a13c64a",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSJjQxDCW3B%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSJjQxDCW3B/",
+          "normalizedUrl": "www.instagram.com/reel/dsjjqxdcw3b",
+          "normalizedText": "대전 중구 꿈내리유치원 신입생 첫 만남 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 2026학년도 신입생과 학부모의 첫 만남, 오리엔테이션, 유치원 방문과 적응 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "1a13c64a",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSJjQxDCW3B%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-be64bb96",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 원어민 영어·음악회 Threads",
+        "url": "https://www.threads.com/%40kkumneri_kindergarten/post/DClFajRylDj",
+        "source": "other",
+        "sourceName": "Threads · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten Threads 게시물에서 꿈내리유치원 원아들의 원어민 영어, 무대, 발표, 음악회 문맥이 확인됨.",
+        "tags": [
+          "sns",
+          "threads",
+          "address-not-required",
+          "english",
+          "music"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:threads-og-meta",
+        "evidenceChecksum": "df698c27",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%2F%40+kkumneri_kindergarten+%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/%40kkumneri_kindergarten/post/DClFajRylDj",
+          "normalizedUrl": "www.threads.com/%40kkumneri_kindergarten/post/dclfajryldj",
+          "normalizedText": "대전 중구 꿈내리유치원 원어민 영어·음악회 threads kkumneri_kindergarten threads 게시물에서 꿈내리유치원 원아들의 원어민 영어, 무대, 발표, 음악회 문맥이 확인됨.",
+          "htmlSnapshotHash": "df698c27",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=site%3Athreads.com%2F%40+kkumneri_kindergarten+%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7259dca2",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 등원 이벤트 Threads",
+        "url": "https://www.threads.com/%40kkumneri_kindergarten/post/DCf8mmWPYpF",
+        "source": "other",
+        "sourceName": "Threads · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten Threads 게시물에서 꿈내리유치원 등원 시간 삐에로 이벤트와 처음학교로 일반모집, 대전꿈내리유치원 문맥이 확인됨.",
+        "tags": [
+          "sns",
+          "threads",
+          "address-not-required",
+          "admission",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:threads-og-meta",
+        "evidenceChecksum": "2dad1252",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DCf8mmWPYpF%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/%40kkumneri_kindergarten/post/DCf8mmWPYpF",
+          "normalizedUrl": "www.threads.com/%40kkumneri_kindergarten/post/dcf8mmwpypf",
+          "normalizedText": "대전 중구 꿈내리유치원 등원 이벤트 threads kkumneri_kindergarten threads 게시물에서 꿈내리유치원 등원 시간 삐에로 이벤트와 처음학교로 일반모집, 대전꿈내리유치원 문맥이 확인됨.",
+          "htmlSnapshotHash": "2dad1252",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DCf8mmWPYpF%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-57fcc712",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 푸드아트 요리활동 Instagram",
+        "url": "https://www.instagram.com/reel/DXOHyT6j_C2/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 먹을 수 있는 재료로 생각을 표현하는 푸드아트 요리 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "cooking",
+          "activity"
+        ],
+        "date": "2026-04-16",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "0b9d40f2",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXOHyT6j_C2%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOHyT6j_C2/",
+          "normalizedUrl": "www.instagram.com/reel/dxohyt6j_c2",
+          "normalizedText": "대전 중구 꿈내리유치원 푸드아트 요리활동 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 먹을 수 있는 재료로 생각을 표현하는 푸드아트 요리 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "0b9d40f2",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXOHyT6j_C2%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-88ed5f45",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 화재 대피 훈련 Instagram",
+        "url": "https://www.instagram.com/reel/DWNmuZJiVPA/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 2026년 3월 23일 화재 대피 훈련을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "safety",
+          "fire-drill"
+        ],
+        "date": "2026-03-22",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "e4d60c97",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWNmuZJiVPA%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWNmuZJiVPA/",
+          "normalizedUrl": "www.instagram.com/reel/dwnmuzjivpa",
+          "normalizedText": "대전 중구 꿈내리유치원 화재 대피 훈련 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 2026년 3월 23일 화재 대피 훈련을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "e4d60c97",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWNmuZJiVPA%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9ff4e0ea",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 국립중앙과학관 체험학습 Instagram",
+        "url": "https://www.instagram.com/reel/DaCR6ymPHVu/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 5세 원아들이 국립중앙과학관 어린이과학관으로 체험학습을 다녀온 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "science",
+          "field-trip"
+        ],
+        "date": "2026-06-25",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "07b447c7",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaCR6ymPHVu%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCR6ymPHVu/",
+          "normalizedUrl": "www.instagram.com/reel/dacr6ymphvu",
+          "normalizedText": "대전 중구 꿈내리유치원 국립중앙과학관 체험학습 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 5세 원아들이 국립중앙과학관 어린이과학관으로 체험학습을 다녀온 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "07b447c7",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaCR6ymPHVu%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-465439aa",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 대전선사박물관 견학 Instagram",
+        "url": "https://www.instagram.com/reel/DWGDdQTD5gv/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 2026학년도 첫 견학으로 대전 선사 박물관 체험학습을 다녀온 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "museum",
+          "field-trip"
+        ],
+        "date": "2026-03-19",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "21b4f9d3",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWGDdQTD5gv%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWGDdQTD5gv/",
+          "normalizedUrl": "www.instagram.com/reel/dwgddqtd5gv",
+          "normalizedText": "대전 중구 꿈내리유치원 대전선사박물관 견학 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 2026학년도 첫 견학으로 대전 선사 박물관 체험학습을 다녀온 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "21b4f9d3",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWGDdQTD5gv%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-59eadb25",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 바깥놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DWnbqlODa-K/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 바깥놀이와 놀이터 활동을 하며 즐겁게 성장하는 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-play",
+          "activity"
+        ],
+        "date": "2026-04-01",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "0ba7b9e5",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWnbqlODa-K%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWnbqlODa-K/",
+          "normalizedUrl": "www.instagram.com/reel/dwnbqloda-k",
+          "normalizedText": "대전 중구 꿈내리유치원 바깥놀이 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 바깥놀이와 놀이터 활동을 하며 즐겁게 성장하는 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "0ba7b9e5",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWnbqlODa-K%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d95d78f5",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 줄넘기 체육활동 Instagram",
+        "url": "https://www.instagram.com/reel/DZ9J8ZnPxfa/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 줄넘기를 배우고 아스코를 활용해 건너는 체육 활동을 하며 건강하게 뛰어노는 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-activity",
+          "class-activity"
+        ],
+        "date": "2026-06-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "a6322653",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ9J8ZnPxfa%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ9J8ZnPxfa/",
+          "normalizedUrl": "www.instagram.com/reel/dz9j8znpxfa",
+          "normalizedText": "대전 중구 꿈내리유치원 줄넘기 체육활동 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 줄넘기를 배우고 아스코를 활용해 건너는 체육 활동을 하며 건강하게 뛰어노는 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "a6322653",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ9J8ZnPxfa%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-944ac619",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 도전 체육수업 Instagram",
+        "url": "https://www.instagram.com/reel/DYjAwSxN75h/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 체육시간이 새로운 활동을 통해 자신감, 도전 정신, 또래 상호작용과 배려를 배우는 시간이라고 소개된 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-activity",
+          "class-activity"
+        ],
+        "date": "2026-05-19",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "fb241dc8",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYjAwSxN75h%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYjAwSxN75h/",
+          "normalizedUrl": "www.instagram.com/reel/dyjawsxn75h",
+          "normalizedText": "대전 중구 꿈내리유치원 도전 체육수업 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 체육시간이 새로운 활동을 통해 자신감, 도전 정신, 또래 상호작용과 배려를 배우는 시간이라고 소개된 instagram 릴.",
+          "htmlSnapshotHash": "fb241dc8",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYjAwSxN75h%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e56cdac4",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 나물 뷔페 급식 Instagram",
+        "url": "https://www.instagram.com/reel/DUpP0ApjrpF/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 어린이들이 나물 뷔페로 비빔밥 점심 식사를 한 유치원 급식 활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "meal",
+          "class-activity"
+        ],
+        "date": "2026-02-11",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "d02ff74e",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUpP0ApjrpF%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUpP0ApjrpF/",
+          "normalizedUrl": "www.instagram.com/reel/dupp0apjrpf",
+          "normalizedText": "대전 중구 꿈내리유치원 나물 뷔페 급식 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 어린이들이 나물 뷔페로 비빔밥 점심 식사를 한 유치원 급식 활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "d02ff74e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUpP0ApjrpF%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b4c175b2",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 한마음 가족운동회 Instagram",
+        "url": "https://www.instagram.com/reel/DYbJ6X_tjQM/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 한마음 가족운동회에 부모, 조부모, 친척이 함께 참여해 뛰고 달리며 배려와 협동을 배운 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sports-day",
+          "family-event"
+        ],
+        "date": "2026-05-16",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "ec05aaa2",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYbJ6X_tjQM%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYbJ6X_tjQM/",
+          "normalizedUrl": "www.instagram.com/reel/dybj6x_tjqm",
+          "normalizedText": "대전 중구 꿈내리유치원 한마음 가족운동회 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 한마음 가족운동회에 부모, 조부모, 친척이 함께 참여해 뛰고 달리며 배려와 협동을 배운 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "ec05aaa2",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYbJ6X_tjQM%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ab337861",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 비 오는 날 실내 일상 Instagram",
+        "url": "https://www.instagram.com/reel/DW5cG3niR0n/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 비가 내려 바깥놀이가 어려운 날 꿈내리유치원이 송아트, 원어민영어, 중국어, 한글, 다비수 등 일과를 소개한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "daily-life",
+          "curriculum"
+        ],
+        "date": "2026-04-08",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "9e41f60e",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW5cG3niR0n%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW5cG3niR0n/",
+          "normalizedUrl": "www.instagram.com/reel/dw5cg3nir0n",
+          "normalizedText": "대전 중구 꿈내리유치원 비 오는 날 실내 일상 instagram kkumneri_kindergarten 계정에서 비가 내려 바깥놀이가 어려운 날 꿈내리유치원이 송아트, 원어민영어, 중국어, 한글, 다비수 등 일과를 소개한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "9e41f60e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW5cG3niR0n%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-60b6e72c",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 신입생 오리엔테이션 Instagram",
+        "url": "https://www.instagram.com/reel/DTwdGaQjyhu/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 2026학년도 신입생 2차 오리엔테이션을 앞두고 환영 댄스를 공개한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "orientation"
+        ],
+        "date": "2026-01-20",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2b86b042",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTwdGaQjyhu%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTwdGaQjyhu/",
+          "normalizedUrl": "www.instagram.com/reel/dtwdgaqjyhu",
+          "normalizedText": "대전 중구 꿈내리유치원 신입생 오리엔테이션 instagram kkumneri_kindergarten 계정에서 2026학년도 신입생 2차 오리엔테이션을 앞두고 환영 댄스를 공개한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2b86b042",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTwdGaQjyhu%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f7a9d13e",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 월드킹 키즈카페 Instagram",
+        "url": "https://www.instagram.com/reel/DSbO_eoGHAX/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 월드킹 실내놀이터와 키즈카페로 놀러가 놀이중심 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kids-cafe",
+          "play-based"
+        ],
+        "date": "2025-12-18",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "f4fba565",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSbO_eoGHAX%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSbO_eoGHAX/",
+          "normalizedUrl": "www.instagram.com/reel/dsbo_eoghax",
+          "normalizedText": "대전 중구 꿈내리유치원 월드킹 키즈카페 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 월드킹 실내놀이터와 키즈카페로 놀러가 놀이중심 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "f4fba565",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSbO_eoGHAX%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-55a3462b",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 등원 첫날 화재대피훈련 Instagram",
+        "url": "https://www.instagram.com/reel/DVclyoIDTy0/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 2026학년도 등원 첫날 원아들이 화재 대피 훈련을 하며 안전교육을 진행한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "safety",
+          "fire-drill"
+        ],
+        "date": "2026-03-03",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "dcd50958",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVclyoIDTy0%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVclyoIDTy0/",
+          "normalizedUrl": "www.instagram.com/reel/dvclyoidty0",
+          "normalizedText": "대전 중구 꿈내리유치원 등원 첫날 화재대피훈련 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 2026학년도 등원 첫날 원아들이 화재 대피 훈련을 하며 안전교육을 진행한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "dcd50958",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVclyoIDTy0%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a3c22773",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 치유의 숲 체험학습 Instagram",
+        "url": "https://www.instagram.com/reel/DXgKXGIiRJ0/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 7세 원아들이 대전 치유의 숲에서 민들레, 올챙이, 봄꽃 등을 관찰하며 숲 유치원 체험학습을 진행한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest",
+          "field-trip"
+        ],
+        "date": "2026-04-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "14b204fc",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgKXGIiRJ0%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXgKXGIiRJ0/",
+          "normalizedUrl": "www.instagram.com/reel/dxgkxgiirj0",
+          "normalizedText": "대전 중구 꿈내리유치원 치유의 숲 체험학습 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 7세 원아들이 대전 치유의 숲에서 민들레, 올챙이, 봄꽃 등을 관찰하며 숲 유치원 체험학습을 진행한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "14b204fc",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXgKXGIiRJ0%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7b377de1",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 무주 반디랜드 봄소풍 Instagram",
+        "url": "https://www.instagram.com/reel/DW7mmxyDhKR/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 무주 반디랜드 곤충박물관으로 봄소풍을 떠난 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "spring-picnic",
+          "field-trip"
+        ],
+        "date": "2026-04-09",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "96a3715d",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW7mmxyDhKR%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW7mmxyDhKR/",
+          "normalizedUrl": "www.instagram.com/reel/dw7mmxydhkr",
+          "normalizedText": "대전 중구 꿈내리유치원 무주 반디랜드 봄소풍 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 무주 반디랜드 곤충박물관으로 봄소풍을 떠난 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "96a3715d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW7mmxyDhKR%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-112107a2",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 훌라후프 체육활동 Instagram",
+        "url": "https://www.instagram.com/reel/DW2xZbAkWtF/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 훌라후프 활동으로 집중력과 근력을 기르는 체육활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-education",
+          "classroom-activity"
+        ],
+        "date": "2026-04-07",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "1baaa794",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW2xZbAkWtF%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW2xZbAkWtF/",
+          "normalizedUrl": "www.instagram.com/reel/dw2xzbakwtf",
+          "normalizedText": "대전 중구 꿈내리유치원 훌라후프 체육활동 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 훌라후프 활동으로 집중력과 근력을 기르는 체육활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "1baaa794",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW2xZbAkWtF%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fc4b5853",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 월드컵 프로젝트 Instagram",
+        "url": "https://www.instagram.com/reel/DZJnpCIO9Vl/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 축구 관심에서 시작한 월드컵 프로젝트로 AI 플래카드를 만들고 응원 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "project-learning",
+          "physical-education"
+        ],
+        "date": "2026-06-03",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "21daf6b9",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZJnpCIO9Vl%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZJnpCIO9Vl/",
+          "normalizedUrl": "www.instagram.com/reel/dzjnpcio9vl",
+          "normalizedText": "대전 중구 꿈내리유치원 월드컵 프로젝트 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 축구 관심에서 시작한 월드컵 프로젝트로 ai 플래카드를 만들고 응원 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "21daf6b9",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZJnpCIO9Vl%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-834eacfc",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 피터팬 뮤지컬 관람 Instagram",
+        "url": "https://www.instagram.com/reel/DYoNRwUPet5/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 대전평생체육관에서 피터팬 뮤지컬을 관람한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "musical",
+          "field-trip"
+        ],
+        "date": "2026-05-21",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "50427966",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYoNRwUPet5%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYoNRwUPet5/",
+          "normalizedUrl": "www.instagram.com/reel/dyonrwupet5",
+          "normalizedText": "대전 중구 꿈내리유치원 피터팬 뮤지컬 관람 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 대전평생체육관에서 피터팬 뮤지컬을 관람한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "50427966",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYoNRwUPet5%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-79ff7d70",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 목공 놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DYln4iJJRn_/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 원목을 활용해 목공풀로 붙이고 망치로 조립하는 목공 놀이를 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "woodworking",
+          "classroom-activity"
+        ],
+        "date": "2026-05-20",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "aebacaf4",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYln4iJJRn_%22+%22kkumneri_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYln4iJJRn_/",
+          "normalizedUrl": "www.instagram.com/reel/dyln4ijjrn_",
+          "normalizedText": "대전 중구 꿈내리유치원 목공 놀이 instagram kkumneri_kindergarten 계정에서 꿈내리유치원 원아들이 원목을 활용해 목공풀로 붙이고 망치로 조립하는 목공 놀이를 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "aebacaf4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYln4iJJRn_%22+%22kkumneri_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aba14165",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 체육시간 Instagram",
+        "url": "https://www.instagram.com/reel/DXa2Hx7EXAJ/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 중구 꿈내리유치원 문맥에서 원아들이 체육시간에 뛰고 움직이는 활동을 한 내용이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-education",
+          "classroom-activity"
+        ],
+        "date": "2026-04-21",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "6ca4edb1",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXa2Hx7EXAJ%22+%22꿈내리유치원%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXa2Hx7EXAJ/",
+          "normalizedUrl": "www.instagram.com/reel/dxa2hx7exaj",
+          "normalizedText": "대전 중구 꿈내리유치원 체육시간 instagram 대전 중구 꿈내리유치원 문맥에서 원아들이 체육시간에 뛰고 움직이는 활동을 한 내용이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "6ca4edb1",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXa2Hx7EXAJ%22+%22꿈내리유치원%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-43b8866d",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 생일잔치 Instagram",
+        "url": "https://www.instagram.com/reel/DY3mF8LMsWt/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 계정에서 원아들의 생일잔치와 축하 활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "birthday-party",
+          "classroom-activity"
+        ],
+        "date": "2026-05-27",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "d4419d76",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY3mF8LMsWt%22+%22꿈내리유치원%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY3mF8LMsWt/",
+          "normalizedUrl": "www.instagram.com/reel/dy3mf8lmswt",
+          "normalizedText": "대전 중구 꿈내리유치원 생일잔치 instagram 꿈내리유치원 계정에서 원아들의 생일잔치와 축하 활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "d4419d76",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY3mF8LMsWt%22+%22꿈내리유치원%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a3e2bb56",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 뮤지컬 관람 Instagram",
+        "url": "https://www.instagram.com/reel/DQVGL4xE9RA/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 어린이들이 대전평생체육관에서 뮤지컬을 관람한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "performance",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "eceb7db1",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQVGL4xE9RA%22+%22꿈내리유치원%22+%22대전꿈내리%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQVGL4xE9RA/",
+          "normalizedUrl": "www.instagram.com/reel/dqvgl4xe9ra",
+          "normalizedText": "대전 중구 꿈내리유치원 뮤지컬 관람 instagram 꿈내리유치원 어린이들이 대전평생체육관에서 뮤지컬을 관람한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "eceb7db1",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQVGL4xE9RA%22+%22꿈내리유치원%22+%22대전꿈내리%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-108be76d",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 우선모집 Instagram",
+        "url": "https://www.instagram.com/reel/DQ3hQ8NFDBp/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "Instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 2026학년도 우선모집, 일반모집, 처음학교로와 유치원입학 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "orientation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "d27e300b",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQ3hQ8NFDBp%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQ3hQ8NFDBp/",
+          "normalizedUrl": "www.instagram.com/reel/dq3hq8nfdbp",
+          "normalizedText": "대전 중구 꿈내리유치원 우선모집 instagram instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 2026학년도 우선모집, 일반모집, 처음학교로와 유치원입학 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "d27e300b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQ3hQ8NFDBp%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-05df6d43",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 체험활동 Instagram",
+        "url": "https://www.instagram.com/reel/DZ4H6xXJdO9/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "Instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 유치원입학, 과학관 체험학습 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-life",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "62e82c00",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ4H6xXJdO9%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4H6xXJdO9/",
+          "normalizedUrl": "www.instagram.com/reel/dz4h6xxjdo9",
+          "normalizedText": "대전 중구 꿈내리유치원 체험활동 instagram instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 유치원입학, 과학관 체험학습 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "62e82c00",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ4H6xXJdO9%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cefc8537",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 신입생 상담 Instagram",
+        "url": "https://www.instagram.com/p/DAH7UtKv-RB/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "Instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 2025 신입생 입학 상담 안내 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "official-info"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "88a4d66d",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAH7UtKv-RB%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAH7UtKv-RB/",
+          "normalizedUrl": "www.instagram.com/p/dah7utkv-rb",
+          "normalizedText": "대전 중구 꿈내리유치원 신입생 상담 instagram instagram 검색 결과에서 꿈내리유치원, 대전꿈내리, 2025 신입생 입학 상담 안내 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "88a4d66d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAH7UtKv-RB%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4a0e4580",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 스윙보드 체육활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRyWzfojxQU/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "Instagram 검색 결과에서 꿈내리유치원 원아들의 스윙보드 체육 시간과 대전꿈내리 지역 단서가 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "physical-education",
+          "class-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "33b4285c",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRyWzfojxQU%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%B4%EC%9C%A1+%EC%8B%9C%EA%B0%84%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRyWzfojxQU/",
+          "normalizedUrl": "www.instagram.com/reel/drywzfojxqu",
+          "normalizedText": "대전 중구 꿈내리유치원 스윙보드 체육활동 instagram reel instagram 검색 결과에서 꿈내리유치원 원아들의 스윙보드 체육 시간과 대전꿈내리 지역 단서가 확인되는 릴.",
+          "htmlSnapshotHash": "33b4285c",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRyWzfojxQU%22+%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B2%B4%EC%9C%A1+%EC%8B%9C%EA%B0%84%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-260355f3",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 뽀로로 뮤지컬 관람 Instagram Post",
+        "url": "https://www.instagram.com/p/DZSK1e4AXnR/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "꿈내리유치원 계정에서 뽀로로 뮤지컬 관람과 대전꿈내리·꿈내리유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "musical-viewing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "51a6d174",
+        "structuredFields": {
+          "kindergartenName": "꿈내리유치원",
+          "kindergartenAddress": "대전광역시 중구 당디로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZSK1e4AXnR%22%20%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "꿈내리유치원 동명이 있으나 계정 프로필의 대전 중구 단서와 대전꿈내리 단서가 중구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZSK1e4AXnR/",
+          "normalizedUrl": "www.instagram.com/p/dzsk1e4axnr",
+          "normalizedText": "대전 중구 꿈내리유치원 뽀로로 뮤지컬 관람 instagram post 꿈내리유치원 계정에서 뽀로로 뮤지컬 관람과 대전꿈내리·꿈내리유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "51a6d174",
+          "extractedAt": "2026-07-02T11:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈내리유치원",
+            "kindergartenAddress": "대전광역시 중구 당디로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZSK1e4AXnR%22%20%22%EA%BF%88%EB%82%B4%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%EA%BF%88%EB%82%B4%EB%A6%AC%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "꿈내리유치원 동명이 있으나 계정 프로필의 대전 중구 단서와 대전꿈내리 단서가 중구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ff4d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-32d5eebc",
+        "kindergartenId": "1ecec08c-ff4d-b044-e053-0a32095ab044",
+        "title": "대전 문화유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DONZcmkkeMQ/",
+        "source": "other",
+        "sourceName": "Instagram · 대전문화유치원",
+        "snippet": "대전문화유치원 2026학년도 원아모집 안내와 문화유치원 공식 계정 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 문화유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "대전문화유치원 2026학년도 원아모집 안내와 문화유치원 공식 계정 문맥이 확인되는 Instagram 검색 결과다. 대전문화유치원 계정명과 원장부 전화번호 042-585-6035 및 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T21:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "dc3d4725",
+        "structuredFields": {
+          "kindergartenName": "문화유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 209-13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DONZcmkkeMQ%22+%22%EB%8C%80%EC%A0%84%EB%AC%B8%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-585-6035%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대전 지역 문맥과 원장부 전화번호·주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DONZcmkkeMQ/",
+          "normalizedUrl": "www.instagram.com/p/donzcmkkemq",
+          "normalizedText": "대전 문화유치원 원아모집 sns 대전문화유치원 2026학년도 원아모집 안내와 문화유치원 공식 계정 문맥이 확인되는 instagram 검색 결과. 대전 중구 문화유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "dc3d4725",
+          "extractedAt": "2026-06-30T21:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "문화유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 209-13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DONZcmkkeMQ%22+%22%EB%8C%80%EC%A0%84%EB%AC%B8%ED%99%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-585-6035%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대전 지역 문맥과 원장부 전화번호·주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T21:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fe66-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-c615712f",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 바다의별유치원 SNS 프로필",
+        "url": "https://www.instagram.com/bada.1341/",
+        "source": "other",
+        "sourceName": "Instagram · 바다의별유치원",
+        "snippet": "바다의별유치원 프로필에서 전화 042-581-1341 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 중구 바다의별유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "바다의별유치원 프로필에서 전화 042-581-1341 문맥이 확인되는 Instagram 검색 결과다. 바다의별유치원 동명이 있어 대전 중구 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8341abee",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22bada.1341%22+%22%EB%B0%94%EB%8B%A4%EC%9D%98%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-581-1341%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대전 중구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/bada.1341/",
+          "normalizedUrl": "www.instagram.com/bada.1341",
+          "normalizedText": "대전 바다의별유치원 sns 프로필 바다의별유치원 프로필에서 전화 042-581-1341 문맥이 확인되는 instagram 검색 결과. 대전 중구 바다의별유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "8341abee",
+          "extractedAt": "2026-06-30T23:59:59.950Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22bada.1341%22+%22%EB%B0%94%EB%8B%A4%EC%9D%98%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-581-1341%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대전 중구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.950Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6e1f29bc",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 바다의별유치원 한자시험 Instagram",
+        "url": "https://www.instagram.com/p/DTz1odwE7Gn/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 바다의별유치원",
+        "snippet": "bada.1341 계정에서 바다의별유치원 한자시험과 대전 산성동 유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "db53a179",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp+%22bada.1341%22+%22%EB%B0%94%EB%8B%A4%EC%9D%98%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTz1odwE7Gn/",
+          "normalizedUrl": "www.instagram.com/p/dtz1odwe7gn",
+          "normalizedText": "대전 바다의별유치원 한자시험 instagram bada.1341 계정에서 바다의별유치원 한자시험과 대전 산성동 유치원 문맥이 확인되는 instagram 검색 결과.",
+          "htmlSnapshotHash": "db53a179",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp+%22bada.1341%22+%22%EB%B0%94%EB%8B%A4%EC%9D%98%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f53d544b",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 바다의별유치원 숲체험 Instagram",
+        "url": "https://www.instagram.com/p/DH8ewHkzaKf/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 바다의별유치원",
+        "snippet": "bada.1341 계정에서 바다의별유치원 산서체험학습장 활동과 대전 산성동 문맥이 확인되는 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3f6fa538",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DH8ewHkzaKf%22+%22bada.1341%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DH8ewHkzaKf/",
+          "normalizedUrl": "www.instagram.com/p/dh8ewhkzakf",
+          "normalizedText": "대전 바다의별유치원 숲체험 instagram bada.1341 계정에서 바다의별유치원 산서체험학습장 활동과 대전 산성동 문맥이 확인되는 instagram 검색 결과.",
+          "htmlSnapshotHash": "3f6fa538",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DH8ewHkzaKf%22+%22bada.1341%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-268886dd",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 바다의별유치원 물놀이 Instagram",
+        "url": "https://www.instagram.com/p/DaCzPjIxJxJ/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 바다의별유치원",
+        "snippet": "bada.1341 계정에서 바다의별유치원 산서체험학습장 물놀이 활동 문맥이 확인되는 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "61b19930",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaCzPjIxJxJ%22+%22bada.1341%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaCzPjIxJxJ/",
+          "normalizedUrl": "www.instagram.com/p/daczpjixjxj",
+          "normalizedText": "대전 바다의별유치원 물놀이 instagram bada.1341 계정에서 바다의별유치원 산서체험학습장 물놀이 활동 문맥이 확인되는 instagram 검색 결과.",
+          "htmlSnapshotHash": "61b19930",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaCzPjIxJxJ%22+%22bada.1341%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e0e39940",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 바다의별유치원 프로젝트수업 Instagram",
+        "url": "https://www.instagram.com/p/DaHlwlkRlEL/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 바다의별유치원",
+        "snippet": "bada.1341 계정에서 바다의별유치원 월드컵 프로젝트수업과 대전유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cd989553",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaHlwlkRlEL%22+%22bada.1341%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaHlwlkRlEL/",
+          "normalizedUrl": "www.instagram.com/p/dahlwlkrlel",
+          "normalizedText": "대전 바다의별유치원 프로젝트수업 instagram bada.1341 계정에서 바다의별유치원 월드컵 프로젝트수업과 대전유치원 문맥이 확인되는 instagram 검색 결과.",
+          "htmlSnapshotHash": "cd989553",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaHlwlkRlEL%22+%22bada.1341%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f5456fad",
+        "kindergartenId": "1ecec08c-fe66-b044-e053-0a32095ab044",
+        "title": "대전 중구 바다의별유치원 신입생 오리엔테이션 Instagram",
+        "url": "https://www.instagram.com/reel/DT6pM1Bk3wx/",
+        "source": "other",
+        "sourceName": "Instagram · 바다의별유치원",
+        "snippet": "bada.1341 계정에서 바다의별유치원 신입생 오리엔테이션과 대전 산성동·도마동 유치원 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "orientation"
+        ],
+        "date": "2026-01-24",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "20f3da1f",
+        "structuredFields": {
+          "kindergartenName": "바다의별유치원",
+          "kindergartenAddress": "대전광역시 중구 보문산로 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DT6pM1Bk3wx%22+%22bada.1341%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DT6pM1Bk3wx/",
+          "normalizedUrl": "www.instagram.com/reel/dt6pm1bk3wx",
+          "normalizedText": "대전 중구 바다의별유치원 신입생 오리엔테이션 instagram bada.1341 계정에서 바다의별유치원 신입생 오리엔테이션과 대전 산성동·도마동 유치원 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "20f3da1f",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "바다의별유치원",
+            "kindergartenAddress": "대전광역시 중구 보문산로 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DT6pM1Bk3wx%22+%22bada.1341%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f57c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-03cd0389",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 중구 버드내유치원 엄마선생님 점심시간 Instagram",
+        "url": "https://www.instagram.com/reel/DZ8xsaTTCnO/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "budnae_kindergarten 계정에서 버드내유치원 학부모들이 엄마선생님과 함께하는 점심시간에 참여해 급식 운영 안내, 조리실과 급식시설, 교실 배식과 식사시간을 살펴본 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "meal",
+          "parent-participation"
+        ],
+        "date": "2026-06-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "d63f1bb4",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ8xsaTTCnO%22+%22budnae_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ8xsaTTCnO/",
+          "normalizedUrl": "www.instagram.com/reel/dz8xsattcno",
+          "normalizedText": "대전 중구 버드내유치원 엄마선생님 점심시간 instagram budnae_kindergarten 계정에서 버드내유치원 학부모들이 엄마선생님과 함께하는 점심시간에 참여해 급식 운영 안내, 조리실과 급식시설, 교실 배식과 식사시간을 살펴본 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "d63f1bb4",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ8xsaTTCnO%22+%22budnae_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3c674070",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 중구 버드내유치원 생존수영 첫날 Instagram",
+        "url": "https://www.instagram.com/reel/C_PAPhuy98I/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "budnae_kindergarten 계정에서 버드내유치원 빨강반과 연두반 원아들이 생존수영 첫날 활동을 마치고 즐거워한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "survival-swimming"
+        ],
+        "date": "2024-08-28",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "b79107bc",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C_PAPhuy98I%22+%22budnae_kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_PAPhuy98I/",
+          "normalizedUrl": "www.instagram.com/reel/c_paphuy98i",
+          "normalizedText": "대전 중구 버드내유치원 생존수영 첫날 instagram budnae_kindergarten 계정에서 버드내유치원 빨강반과 연두반 원아들이 생존수영 첫날 활동을 마치고 즐거워한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "b79107bc",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C_PAPhuy98I%22+%22budnae_kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3a250173",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 버드내유치원 유아교육진흥원 체험 Instagram",
+        "url": "https://www.instagram.com/reel/DXOg1odEo2V/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "Instagram 검색 결과에서 버드내유치원, 대전 중구 태평동 유치원, 유아교육진흥원 햇살마당 체험과 참여수업 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "728a0410",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXOg1odEo2V%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOg1odEo2V/",
+          "normalizedUrl": "www.instagram.com/reel/dxog1odeo2v",
+          "normalizedText": "대전 버드내유치원 유아교육진흥원 체험 instagram instagram 검색 결과에서 버드내유치원, 대전 중구 태평동 유치원, 유아교육진흥원 햇살마당 체험과 참여수업 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "728a0410",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXOg1odEo2V%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9c7b9d0d",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 버드내유치원 방과후 영어활동 Instagram",
+        "url": "https://www.instagram.com/p/DJ_fZ1jzpl_/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "Instagram 검색 결과에서 버드내유치원 방과후 영어활동, 연령과 발달을 고려한 영어 중점 활동 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "english-activity",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "733942ba",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJ_fZ1jzpl_%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJ_fZ1jzpl_/",
+          "normalizedUrl": "www.instagram.com/p/dj_fz1jzpl_",
+          "normalizedText": "대전 버드내유치원 방과후 영어활동 instagram instagram 검색 결과에서 버드내유치원 방과후 영어활동, 연령과 발달을 고려한 영어 중점 활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "733942ba",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJ_fZ1jzpl_%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b9e5f761",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 중구 버드내유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/CsiU_qPy_N-/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "Instagram 검색 결과에서 5월 안전대행진 부모참여수업, 대전유치원, 태평동유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "302e2d7f",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CsiU_qPy_N-%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CsiU_qPy_N-/",
+          "normalizedUrl": "www.instagram.com/p/csiu_qpy_n-",
+          "normalizedText": "대전 중구 버드내유치원 부모참여수업 instagram instagram 검색 결과에서 5월 안전대행진 부모참여수업, 대전유치원, 태평동유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "302e2d7f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CsiU_qPy_N-%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-865f315b",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "title": "대전 중구 버드내유치원 도서관 나들이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DKTD7_8Tjiq/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "Instagram 검색 결과에서 버드내유치원의 도서관 나들이와 대전 중구, 산성어린이도서관 체험 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "library",
+          "field-trip",
+          "reading"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "0a9e85c3",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKTD7_8Tjiq%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKTD7_8Tjiq/",
+          "normalizedUrl": "www.instagram.com/reel/dktd7_8tjiq",
+          "normalizedText": "대전 중구 버드내유치원 도서관 나들이 instagram reel instagram 검색 결과에서 버드내유치원의 도서관 나들이와 대전 중구, 산성어린이도서관 체험 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "0a9e85c3",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "버드내유치원",
+            "kindergartenAddress": "대전광역시 중구 태평로 15",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKTD7_8Tjiq%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f4ee4ee9",
+        "kindergartenId": "1ecec08c-f57c-b044-e053-0a32095ab044",
+        "kindergartenName": "버드내유치원",
+        "title": "대전 중구 버드내유치원 스승의날 Reel",
+        "url": "https://www.instagram.com/reel/C7CExWLSuig/",
+        "source": "other",
+        "sourceName": "Instagram · 버드내유치원",
+        "snippet": "Instagram 검색 결과에서 버드내유치원, 대전 중구 유치원, 태평동 유치원 및 스승의날 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "teachers-day",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "버드내유치원",
+          "kindergartenAddress": "대전광역시 중구 태평로 15",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C7CExWLSuig%22+%22%EB%B2%84%EB%93%9C%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84+%EC%A4%91%EA%B5%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/C7CExWLSuig/",
+          "regionEvidence": [
+            "버드내유치원",
+            "대전 중구 유치원",
+            "태평동 유치원",
+            "스승의날"
+          ]
+        },
+        "evidenceChecksum": "ba77a6ac"
+      }
+    ],
+    "1ecec08d-0f8d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-976031c2",
+        "kindergartenId": "1ecec08d-0f8d-b044-e053-0a32095ab044",
+        "title": "대전 호수유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/C9sEEPKyoYn/",
+        "source": "other",
+        "sourceName": "Instagram · 대전호수유치원",
+        "snippet": "Instagram 검색 결과에서 대전호수유치원, 중구 호수유치원, 가족 초대 부모참여수업과 다양한 활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "school-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "5921af6f",
+        "structuredFields": {
+          "kindergartenName": "호수유치원",
+          "kindergartenAddress": "대전광역시 중구 동서대로1365번길 19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9sEEPKyoYn%22+%22%EB%8C%80%EC%A0%84%ED%98%B8%EC%88%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C9sEEPKyoYn/",
+          "normalizedUrl": "www.instagram.com/reel/c9seepkyoyn",
+          "normalizedText": "대전 호수유치원 부모참여수업 instagram instagram 검색 결과에서 대전호수유치원, 중구 호수유치원, 가족 초대 부모참여수업과 다양한 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "5921af6f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호수유치원",
+            "kindergartenAddress": "대전광역시 중구 동서대로1365번길 19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9sEEPKyoYn%22+%22%EB%8C%80%EC%A0%84%ED%98%B8%EC%88%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0539-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-c4b329b7",
+        "kindergartenId": "1ecec08d-0539-b044-e053-0a32095ab044",
+        "title": "대전문창유치원 학부모연수 Instagram",
+        "url": "https://www.instagram.com/p/DYT0DuwjoCa/",
+        "source": "other",
+        "sourceName": "Instagram · 대전문창유치원",
+        "snippet": "Instagram 검색 결과에서 대전문창유치원 학부모연수 프로그램과 핸들트레이 클래스 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "parent-program"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2ed2e84b",
+        "structuredFields": {
+          "kindergartenName": "대전문창유치원",
+          "kindergartenAddress": "대전광역시 중구 문창로 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYT0DuwjoCa%22+%22%EB%8C%80%EC%A0%84%EB%AC%B8%EC%B0%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYT0DuwjoCa/",
+          "normalizedUrl": "www.instagram.com/p/dyt0duwjoca",
+          "normalizedText": "대전문창유치원 학부모연수 instagram instagram 검색 결과에서 대전문창유치원 학부모연수 프로그램과 핸들트레이 클래스 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2ed2e84b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전문창유치원",
+            "kindergartenAddress": "대전광역시 중구 문창로 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYT0DuwjoCa%22+%22%EB%8C%80%EC%A0%84%EB%AC%B8%EC%B0%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-02ba-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ff9726e3",
+        "kindergartenId": "1ecec08d-02ba-b044-e053-0a32095ab044",
+        "title": "대전 동양유치원 워터슬라이드 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/C-E8kEmy-3C/",
+        "source": "other",
+        "sourceName": "Instagram · 동양유치원",
+        "snippet": "Instagram 검색 결과에서 워터슬라이드 물놀이 문맥과 대전유치원, 태평동유치원, 유천동유치원, 문화동유치원 해시태그가 함께 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "water-play",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "c8614f34",
+        "structuredFields": {
+          "kindergartenName": "동양유치원",
+          "kindergartenAddress": "대전광역시 중구 평촌로 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C-E8kEmy-3C%22+%22%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C-E8kEmy-3C/",
+          "normalizedUrl": "www.instagram.com/p/c-e8kemy-3c",
+          "normalizedText": "대전 동양유치원 워터슬라이드 물놀이 instagram post instagram 검색 결과에서 워터슬라이드 물놀이 문맥과 대전유치원, 태평동유치원, 유천동유치원, 문화동유치원 해시태그가 함께 확인되는 게시물.",
+          "htmlSnapshotHash": "c8614f34",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동양유치원",
+            "kindergartenAddress": "대전광역시 중구 평촌로 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C-E8kEmy-3C%22+%22%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7c7c6ab6",
+        "kindergartenId": "1ecec08d-02ba-b044-e053-0a32095ab044",
+        "kindergartenName": "동양유치원",
+        "title": "대전 동양유치원 서울 롯데월드 졸업여행 Instagram Post",
+        "url": "https://www.instagram.com/p/DDQkekLS9aE/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 동양유치원",
+        "snippet": "Instagram 검색 결과에서 동양유치원, 중구유치원, 대전유치원, 7살 졸업여행, 서울 롯데월드 단서가 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "graduation-trip",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "동양유치원",
+          "kindergartenAddress": "대전광역시 중구 평촌로 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDQkekLS9aE%22+%22%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22+%22%EC%A1%B8%EC%97%85%EC%97%AC%ED%96%89%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DDQkekLS9aE/",
+          "regionEvidence": [
+            "대전",
+            "중구유치원",
+            "동양유치원",
+            "서울 롯데월드"
+          ]
+        },
+        "evidenceChecksum": "f583b526",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDQkekLS9aE/",
+          "normalizedUrl": "www.instagram.com/p/ddqkekls9ae",
+          "normalizedText": "대전 동양유치원 서울 롯데월드 졸업여행 instagram post instagram 검색 결과에서 동양유치원, 중구유치원, 대전유치원, 7살 졸업여행, 서울 롯데월드 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "c9238463",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동양유치원",
+            "kindergartenAddress": "대전광역시 중구 평촌로 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDQkekLS9aE%22+%22%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22+%22%EC%A1%B8%EC%97%85%EC%97%AC%ED%96%89%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DDQkekLS9aE/",
+            "regionEvidence": [
+              "대전",
+              "중구유치원",
+              "동양유치원",
+              "서울 롯데월드"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-7a57b889",
+        "kindergartenId": "1ecec08d-02ba-b044-e053-0a32095ab044",
+        "kindergartenName": "동양유치원",
+        "title": "대전 동양유치원 태평시장 시장놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DMWTdO0Sa3Q/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 동양유치원",
+        "snippet": "대전 동양유치원 계정의 태평시장 시장놀이 게시물 검색 결과에서 경제교육과 직접 장보기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economic-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f3ae4deb",
+        "structuredFields": {
+          "kindergartenName": "동양유치원",
+          "kindergartenAddress": "대전광역시 중구 평촌로 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMWTdO0Sa3Q%22%20%22%EB%8C%80%EC%A0%84%20%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전 동양유치원 계정명과 대전유치원·태평동 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMWTdO0Sa3Q/",
+          "normalizedUrl": "www.instagram.com/p/dmwtdo0sa3q",
+          "normalizedText": "대전 동양유치원 태평시장 시장놀이 instagram post 대전 동양유치원 계정의 태평시장 시장놀이 게시물 검색 결과에서 경제교육과 직접 장보기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f3ae4deb",
+          "extractedAt": "2026-07-02T17:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동양유치원",
+            "kindergartenAddress": "대전광역시 중구 평촌로 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMWTdO0Sa3Q%22%20%22%EB%8C%80%EC%A0%84%20%EB%8F%99%EC%96%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전 동양유치원 계정명과 대전유치원·태평동 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:52:39.064Z"
 }

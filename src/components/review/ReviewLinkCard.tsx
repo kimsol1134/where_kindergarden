@@ -13,6 +13,10 @@ const SOURCE_STYLES: Record<ReviewSource, { label: string; className: string }> 
   google: { label: '웹', className: 'text-yellow-700 bg-yellow-100' },
   naver_place: { label: '플레이스', className: 'text-emerald-700 bg-emerald-100' },
   starteacher: { label: '별별선생', className: 'text-purple-700 bg-purple-100' },
+  instagram: { label: '인스타그램', className: 'text-pink-700 bg-pink-100' },
+  threads: { label: '스레드', className: 'text-neutral-800 bg-neutral-100' },
+  x: { label: 'X', className: 'text-slate-800 bg-slate-100' },
+  facebook: { label: '페이스북', className: 'text-blue-700 bg-blue-100' },
   other: { label: '기타', className: 'text-gray-700 bg-gray-100' },
 };
 
@@ -30,7 +34,7 @@ interface ReviewLinkCardProps {
 }
 
 export function ReviewLinkCard({ review, onDeleteSuggestion }: ReviewLinkCardProps) {
-  const sourceStyle = SOURCE_STYLES[review.source];
+  const sourceStyle = SOURCE_STYLES[review.source] ?? SOURCE_STYLES.other;
   const insights = getReviewInsights(review);
 
   const handleDeleteClick = (e: React.MouseEvent) => {

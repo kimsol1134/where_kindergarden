@@ -1,47 +1,9 @@
 {
-  "version": "2026-06-26",
-  "totalCount": 15,
-  "kindergartenCount": 8,
+  "version": "2026-07-01",
+  "totalCount": 48,
+  "kindergartenCount": 13,
   "reviews": {
-    "1ecec08d-0d38-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-7/39-olqi",
-        "kindergartenId": "1ecec08d-0d38-b044-e053-0a32095ab044",
-        "title": "경희유치원",
-        "url": "http://cafe.naver.com/kindergarten0107/39",
-        "source": "naver_cafe",
-        "sourceName": "유치원나라-유치원, 어린이집 정보 공...",
-        "snippet": "유치원명 : 경희유치원 2. 설립구분 : 사립(법인) 3. 설립(개원)년도 : 1961-03-24 4. 운영시간 : 09 : 00 ~ 18 : 00 5. 전화번호 : 02-967-0907 6. 주소 : 서울특별시 동대문구 경희대로 26 ※유치원의 정보나 후기를...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.259Z",
-        "relevanceScore": 6
-      },
-      {
-        "id": "rev-7/27-1s05",
-        "kindergartenId": "1ecec08d-0d38-b044-e053-0a32095ab044",
-        "title": "경희유치원",
-        "url": "http://cafe.naver.com/kindergarten0107/27",
-        "source": "naver_cafe",
-        "sourceName": "유치원나라-유치원, 어린이집 정보 공...",
-        "snippet": "경희유치원 2. 설립구분 : 사립(법인) 3. 설립(개원)년도 : 1961.03.24. 4. 운영시간 : 평일기준 09:00~18:00 5. 전화번호 : 02-967-0907 6. 주소 : 서울특별시 동대문구 경희대로 26 ※유치원의 정보나 후기를...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.259Z",
-        "relevanceScore": 6
-      }
-    ],
     "1ecec08d-04a0-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-/112-wdix",
-        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
-        "title": "그림유치원",
-        "url": "http://cafe.naver.com/kindergarten0107/112",
-        "source": "naver_cafe",
-        "sourceName": "유치원나라-유치원, 어린이집 정보 공...",
-        "snippet": "그림유치원 2. 설립구분 : 사립(사인) 3. 설립(개원)년도 : 2001-03-01 4. 운영시간 : 09 : 00 ~ 19 : 00 5. 전화번호 : 02-3394-6254 6. 주소 : 서울특별시 동대문구 답십리로56길 21 ※유치원의 정보나 후기를...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.260Z",
-        "relevanceScore": 6
-      },
       {
         "id": "rev-np-3630-0-32ja",
         "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
@@ -52,6 +14,309 @@
         "snippet": "쩡4933 리뷰 1,687사진 74팔로워 11 2024학년도 입학설명회 예약 1번째 방문",
         "date": "2023-11-11",
         "collectedAt": "2026-04-06T14:26:16.797Z"
+      },
+      {
+        "id": "rev-8b16e1bc",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "title": "서울 그림유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DOVXvGuiUm7/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "그림유치원 2026학년도 신입생 입학설명회와 서울 동대문구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 동대문구 그림유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "그림유치원 2026학년도 신입생 입학설명회와 서울 동대문구 문맥이 확인되는 Instagram 검색 결과. 그림유치원 동명이 있어 서울 동대문구 원장부 주소를 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b34be416",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOVXvGuiUm7%22+%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "그림유치원 동명이 있어 서울 동대문구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOVXvGuiUm7/",
+          "normalizedUrl": "www.instagram.com/p/dovxvguium7",
+          "normalizedText": "서울 그림유치원 입학설명회 sns 그림유치원 2026학년도 신입생 입학설명회와 서울 동대문구 문맥이 확인되는 instagram 검색 결과. 서울 동대문구 그림유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "b34be416",
+          "extractedAt": "2026-07-01T00:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOVXvGuiUm7%22+%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "그림유치원 동명이 있어 서울 동대문구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-176bc563",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "title": "서울 그림유치원 크리스마스 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DSpF9oLCS12/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "greem_kiz 계정에서 그림유치원 GREEM Christmas Log와 원아 크리스마스 활동 문맥이 확인되는 Instagram 릴스.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "617e34c4",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp+OR+site%3Ainstagram.com%2Freel+%22greem_kiz%22+%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSpF9oLCS12/",
+          "normalizedUrl": "www.instagram.com/reel/dspf9olcs12",
+          "normalizedText": "서울 그림유치원 크리스마스 활동 instagram greem_kiz 계정에서 그림유치원 greem christmas log와 원아 크리스마스 활동 문맥이 확인되는 instagram 릴스.",
+          "htmlSnapshotHash": "617e34c4",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp+OR+site%3Ainstagram.com%2Freel+%22greem_kiz%22+%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9bbdf283",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "title": "서울 그림유치원 방과후 그림영어 Instagram",
+        "url": "https://www.instagram.com/p/DViHQaZifwN/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "greem_kiz 계정에서 그림유치원 방과후 특강 그림영어와 레지오유치원 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2f4865e8",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DViHQaZifwN%22+%22greem_kiz%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DViHQaZifwN/",
+          "normalizedUrl": "www.instagram.com/p/dvihqazifwn",
+          "normalizedText": "서울 그림유치원 방과후 그림영어 instagram greem_kiz 계정에서 그림유치원 방과후 특강 그림영어와 레지오유치원 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "2f4865e8",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DViHQaZifwN%22+%22greem_kiz%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-10a02528",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "title": "서울 그림유치원 종이 프로젝트 Instagram",
+        "url": "https://www.instagram.com/reel/DO78__PCWXR/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "greem_kiz 계정에서 바다반 종이 프로젝트 마지막 합동 작품 만들기와 동대문 유치원 문맥이 확인되는 Instagram 릴스.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "curriculum",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8a559169",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DO78__PCWXR%22+%22greem_kiz%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO78__PCWXR/",
+          "normalizedUrl": "www.instagram.com/reel/do78__pcwxr",
+          "normalizedText": "서울 그림유치원 종이 프로젝트 instagram greem_kiz 계정에서 바다반 종이 프로젝트 마지막 합동 작품 만들기와 동대문 유치원 문맥이 확인되는 instagram 릴스.",
+          "htmlSnapshotHash": "8a559169",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DO78__PCWXR%22+%22greem_kiz%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-92098ac6",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "title": "서울 그림유치원 부모 대상 유치원 생활 방송 Instagram",
+        "url": "https://www.instagram.com/p/CEbfImHDtqB/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "greem_kiz 계정에서 김창숙 원장 선생님의 '우리 아이 행복하게 유치원 보내는 법' 생방송 안내와 그림유치원 부모 소통 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-info"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "73868a87",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CEbfImHDtqB%22+%22greem_kiz%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CEbfImHDtqB/",
+          "normalizedUrl": "www.instagram.com/p/cebfimhdtqb",
+          "normalizedText": "서울 그림유치원 부모 대상 유치원 생활 방송 instagram greem_kiz 계정에서 김창숙 원장 선생님의 '우리 아이 행복하게 유치원 보내는 법' 생방송 안내와 그림유치원 부모 소통 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "73868a87",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CEbfImHDtqB%22+%22greem_kiz%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-77ffb74c",
+        "kindergartenId": "1ecec08d-04a0-b044-e053-0a32095ab044",
+        "kindergartenName": "그림유치원",
+        "title": "서울 답십리 그림유치원 소방안전대피훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/CPsYboVDUzp/",
+        "source": "other",
+        "sourceName": "Instagram · 그림유치원",
+        "snippet": "답십리 그림유치원 계정의 소방안전대피훈련 게시물 검색 결과에서 유치원 소방안전교육 문맥이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5bd45f54",
+        "structuredFields": {
+          "kindergartenName": "그림유치원",
+          "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CPsYboVDUzp%22%20%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "답십리·그림유치원 단서가 로컬 서울 동대문구 그림유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CPsYboVDUzp/",
+          "normalizedUrl": "www.instagram.com/p/cpsybovduzp",
+          "normalizedText": "서울 답십리 그림유치원 소방안전대피훈련 instagram post 답십리 그림유치원 계정의 소방안전대피훈련 게시물 검색 결과에서 유치원 소방안전교육 문맥이 확인된다.",
+          "htmlSnapshotHash": "5bd45f54",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "그림유치원",
+            "kindergartenAddress": "서울특별시 동대문구 답십리로56길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CPsYboVDUzp%22%20%22%EA%B7%B8%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "답십리·그림유치원 단서가 로컬 서울 동대문구 그림유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f054-b044-e053-0a32095ab044": [
@@ -121,6 +386,40 @@
         "snippet": "희수랭이19 리뷰 48사진 139팔로워 1 2025학년도 삼성유치원 입학설명회 설명회 듣고 선생님들 열정과 아이들을 사랑하는 따듯함을 느꼈습니다. 현장학습 같은 외부활동도 많이 하는 거 같고 좋은 인연이 되어 우리 아이도 다닐 수 있었으면 좋겠네요. ^^ 더보기 1번째 방문 삼성유치원 안녕하십니까 사랑합니다! 저희 삼성유치원을 좋게 봐주시고 이렇게 따뜻한 ",
         "date": "2024-10-26",
         "collectedAt": "2026-04-06T14:26:48.032Z"
+      },
+      {
+        "id": "rev-32ee8f5d",
+        "kindergartenId": "1ecec08c-f054-b044-e053-0a32095ab044",
+        "title": "[삼성유치원] 심도있는 교육과정의 유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=21babypapa&logNo=223640866508",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:30 평일기준오늘은 10월 26일(토)에 동대문구 래미안크래시티 단지 내에 있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는 유치원 중 하나입니다....",
+        "summary": "주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:30 평일기준오늘은 10월 26일(토)에 동대문구 래미안크래시티 단지 내에 있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는 유치원 중 하나입니다. 출처 : 네이버 지도 실제로 작년에는 대기 번호 100번 이상까지도 이어졌다고 하네요.아무래도 다른 유치원들에 비해 상대적으로 신식(?)이고, 대규모 아파트 단지들 사이에 있다보니 그런 것 같다는 생각이구요.https://naver.me/xH2FKq1...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:06:19.417Z",
+        "relevanceScore": 3,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "6bcf45b9",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=21babypapa&logNo=223640866508",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=21babypapa&logno=223640866508",
+          "normalizedText": "[삼성유치원] 심도있는 교육과정의 유치원 2024.10.31.있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는... 있다보니 그런 것 같다는 생각이구요. https://naver.me/xh2fkq1r 삼성유치원은 특징이 있어요. 어제 그림유치원은 미술 부분에 특화되어 있다고 말씀 드렸었는데요. 삼성유치원은... 주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:30 평일기준오늘은 10월 26일(토)에 동대문구 래미안크래시티 단지 내에 있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는 유치원 중 하나입니다.... 주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:30 평일기준오늘은 10월 26일(토)에 동대문구 래미안크래시티 단지 내에 있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는 유치원 중 하나입니다. 출처 : 네이버 지도 실제로 작년에는 대기 번호 100번 이상까지도 이어졌다고 하네요.아무래도 다른 유치원들에 비해 상대적으로 신식(?)이고, 대규모 아파트 단지들 사이에 있다보니 그런 것 같다는 생각이구요.https://naver.me/xh2fkq1... 주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:30 평일기준오늘은 10월 26일(토)에 동대문구 래미안크래시티 단지 내에 있는 삼성유치원의 입학설명회에 다녀온 저희 아기 엄마의 후기입니다. 출처 : 네이버맵 삼성유치원은 저희 아빠들이 사는 아파트 단지에서 가장 가깝고, 인기가 있는 유치원 중 하나입니다. 출처 : 네이버 지도 실제로 작년에는 대기 번호 100번 이상까지도 이어졌다고 하네요.아무래도 다른 유치원들에 비해 상대적으로 신식(?)이고, 대규모 아파트 단지들 사이에 있다보니 그런 것 같다는 생각이구요.https://naver.me/xh2fkq1r 삼성유치원 : 네이버 방문자리뷰 1 · 블로그리뷰 4 naver.me 삼성유치원은 특징이 있어요. 어제 그림유치원은 미술 부분에 특화되어 있다고 말씀 드렸었는데요.삼성유치원은 학년별로(만 3세, 4세, 5세) 원어민 영어선생님이 계시고 1주일에 한 클래스씩 들어오세요.그리고 간단한 영어 수업은 매일 짧게 진행한다고 하구요. 그래서 뭔가 내년에 한국 나이로 5세가 되는 아이들에게는 큰 부담없이 영어 공부를 이렇게 간단히 시키는 것으로 흥미를 유도하면 어떨까 하는 생각을 합니다.이렇게 간단히 삼성유치원에 대해서 알아보았습니다! https://blog.naver.com/21babypapa/223637972502 동대문구/ 유명 유치원 비교/ 그림유치원 vs 삼성유치원 vs 새소리유치원[feat. 유치원 알리미] 이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까... blog.naver.com",
+          "htmlSnapshotHash": "6bcf45b9",
+          "extractedAt": "2026-06-26T07:06:19.417Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "삼성유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 65",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "f10d3393-f828-460a-a5ed-0a134f8ddd34": [
@@ -174,6 +473,40 @@
         "snippet": "리뷰 83사진 30 파스텔유치원 2026학년도 입학설명회 들었던 유치원 설명회중 가장 만족스러워요. 안내서도 잘정리되어있고 필요한정보만 설명해주셔서 가장좋았습니다. 1번째 방문",
         "date": "2025-11-01",
         "collectedAt": "2026-04-06T14:26:29.233Z"
+      },
+      {
+        "id": "rev-444304b5",
+        "kindergartenId": "1ecec08c-fcf3-b044-e053-0a32095ab044",
+        "title": "동대문구 유치원 설명회 #1 삼성유치원 (원비, 프로그램, 모집인원 등)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=prettylady16&logNo=224094225917",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요.그래서 동대문구에 유명한 유치원들 설명회를 예약해서투어를 싹 해보았습니다.(삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, CNC, 폴리, ECC, 킨더레스트 등 엄청 다녔네요)검색해보니유치원 정보가 생각보다 많지가 않아서,내년에 보내실 분들이 좀 도움이 되었으면 싶기도하고 저도 다녀온 곳에...",
+        "summary": "안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요.그래서 동대문구에 유명한 유치원들 설명회를 예약해서투어를 싹 해보았습니다.(삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, CNC, 폴리, ECC, 킨더레스트 등 엄청 다녔네요)검색해보니유치원 정보가 생각보다 많지가 않아서,내년에 보내실 분들이 좀 도움이 되었으면 싶기도하고 저도 다녀온 곳에 대해 기록해놓고 싶기도해서 정리해봅니다. 보고 듣긴 한거지만, 오류가 있을 수 있으니그냥 참고만 하시고,해당 유치원에 관심이 있으시다면무조건 직접 가서 둘러보시고 설명 들으시길추천합니다!<삼성 유치원> 삼성유치원 서울특별시 동대문구 사가정로 65 이...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:05:24.662Z",
+        "relevanceScore": 8,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "93d8171f",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=prettylady16&logNo=224094225917",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=prettylady16&logno=224094225917",
+          "normalizedText": "동대문구 유치원 설명회 #1 삼성유치원 (원비, 프로그램, 모집인원 등) 그래서 동대문구에 유명한 유치원들 설명회를 예약해서 투어를 싹 해보았습니다. (삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, cnc, 폴리, ecc, 킨더레스트 등... 박물관, 서울숲, 카자니아,클라이밍, 생존수영(한달), 유초이음과정 등) -현장학습 비용 별도 부담 x (대신 그만큼 원비가...) -주 5회 abc egg수업 / kiva kids 이중언어교육 등 영어 신경... 안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요.그래서 동대문구에 유명한 유치원들 설명회를 예약해서투어를 싹 해보았습니다.(삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, cnc, 폴리, ecc, 킨더레스트 등 엄청 다녔네요)검색해보니유치원 정보가 생각보다 많지가 않아서,내년에 보내실 분들이 좀 도움이 되었으면 싶기도하고 저도 다녀온 곳에... 안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요.그래서 동대문구에 유명한 유치원들 설명회를 예약해서투어를 싹 해보았습니다.(삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, cnc, 폴리, ecc, 킨더레스트 등 엄청 다녔네요)검색해보니유치원 정보가 생각보다 많지가 않아서,내년에 보내실 분들이 좀 도움이 되었으면 싶기도하고 저도 다녀온 곳에 대해 기록해놓고 싶기도해서 정리해봅니다. 보고 듣긴 한거지만, 오류가 있을 수 있으니그냥 참고만 하시고,해당 유치원에 관심이 있으시다면무조건 직접 가서 둘러보시고 설명 들으시길추천합니다!<삼성 유치원> 삼성유치원 서울특별시 동대문구 사가정로 65 이... 안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요.그래서 동대문구에 유명한 유치원들 설명회를 예약해서투어를 싹 해보았습니다.(삼성유치원, 그림유치원, 파스텔유치원, 새소리유치원, 라온유치원, cnc, 폴리, ecc, 킨더레스트 등 엄청 다녔네요)검색해보니유치원 정보가 생각보다 많지가 않아서,내년에 보내실 분들이 좀 도움이 되었으면 싶기도하고 저도 다녀온 곳에 대해 기록해놓고 싶기도해서 정리해봅니다. 보고 듣긴 한거지만, 오류가 있을 수 있으니그냥 참고만 하시고,해당 유치원에 관심이 있으시다면무조건 직접 가서 둘러보시고 설명 들으시길추천합니다!<삼성 유치원> 삼성유치원 서울특별시 동대문구 사가정로 65 이 블로그의 체크인 이 장소의 다른 글 -대단지 아파트들 사이에 위치(아파트 놀이터 사용 용이)-한 학급에 선생님 2명 배치(3세반 3개, 4세반 3개, 5세반 2개)-오후 2시까지 정규수업 (놀이-경험-배움)ex) 3세 : 미니 프로젝트 / 4세 : 문학접 접근 / 5세 : 프로젝트-유치원 자체도 단독 건물에 큰 편(딱 우리가 생각하는 이상적인 유치원 모양새)-수업 10시 시작-방과후는 2시~ 6시 30분-활동이 다양한 편ex) 3세(숲체험, 딸기농장, 뮤지컬, 동네마트, 펀노리터, 드로잉월 등)4세(뮤지컬, 자전거체험, 도서관 견학, 수제캔디체험, 승마연6회, 마라톤 등)5세(뮤지컬, 박물관, 서울숲, 카자니아,클라이밍, 생존수영(한달), 유초이음과정 등)-현장학습 비용 별도 부담 x (대신 그만큼 원비가...)-주 5회 abc egg수업 / kiva kids 이중언어교육 등 영어 신경 많이 씀 (근데 원어민 교사는 주1회)-이외에도 체육, 음률활동, 요리, 영양교육, 세계문화체험, 한자수업(6,7세), 수놀이, 도서대여, 독후활동 등-방과후 (종이접기, 창의블록, 놀이한글, 명화활동, 이야기할머니, 코딩, 클레이아트 등 선택)-뭔가 젊은 선생님들이 많으셔서 타 원과 비슷한 활동도 더 잘 꾸며서 프레젠테이션 하는 느낌+행사를 해도 뭔가 더 젊은 감각으로 만들어서 규모있게 행사한다는 느낌 1. cctv올해에도 맘카페나 오픈챗방 엄마들 사이에서 가장 말이 많았던 이슈.cctv는 있으나 녹화가 되지 않는다고 함.문제가 없는 날들이 많겠지만, 문제가 생겼을 때는 cctv가 결정적인 역할을 하기에 고민해볼 필요가 있음.2. 만 5세 학급수만3,4세는 20명 초중반인데, 갑자기 만5세는 31~33명 정도로 늘어남.(*근데 이건 대부분의 유치원이 이러한 듯)3. 서울 시립 도서관 공사지금은 해당부지에 큰 꽃밭이 있어 산책하기에도 활동하기에도 좋아보임.(유치원에서도 꽤 활용하는 것 같음) 그러나 2026년말(?)부터 도서관 공사가 예정되어 있어서 해당 부지 사용은 어렵게 될 듯. 주변 환경도 좀 어지러울 수 있음. 이 외에도 고민되는 부분이 있지만, 나머지는 엄마의 교육관마다 다를 수 있기에 블로그에는 적지 않겠음.이건 그냥 기록이니, 혹시 고민하고 있다면 설명회는 무조건 참석해서 판단해 보는게 좋겠다 싶음!! 설명회는, 25년 기준 10/25(토)에 했고, 네이버로 예약함.(10시 / 12시 / 2시) 이렇게 3회 진행함. 기타 정보 우선 모집(55명) 이후 일반모집으로 이월된 인원 수 비용 위의 내용으로 보았을 때 ,교육과정+방과후+특성화까지하나도 안빼고 모든걸 다 한다고 쳐서 최대로 잡으면632,000원 정도일 것으로 예상 모든 자료는 25년 만3세를 기준으로 알아봄.점점 정부 지원비도 확대되고 있으니,매 해 가격이 달라짐 주의 :) 조사하다보니 동대문구가 인근 구에 비해유치원비가 비싼 편인것 같다는 생각을 했습니다.설명회 다녀온 모든 유치원이 다 좋았습니다.그러나 부모님마다 중요하게 생각하시는 점이 다르니직접 둘러보고, 설명회도 가보고가장 교육관에 맞는 곳으로 보내시면 좋을 것 같습니다.*결국 뽑아주는 곳에 가야함 주의* 모두들 우선모집에서 원하는 곳에 가시길 바라요!!",
+          "htmlSnapshotHash": "93d8171f",
+          "extractedAt": "2026-06-26T07:05:24.662Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%8C%8C%EC%8A%A4%ED%85%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "파스텔유치원",
+            "kindergartenAddress": "서울특별시 동대문구 전농로10길 20",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%8C%8C%EC%8A%A4%ED%85%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08c-fb7b-b044-e053-0a32095ab044": [
@@ -188,7 +521,1326 @@
         "date": "2026-02-08",
         "collectedAt": "2026-04-06T14:26:29.233Z"
       }
+    ],
+    "1ecec08d-0c05-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-14ace716",
+        "kindergartenId": "1ecec08d-0c05-b044-e053-0a32095ab044",
+        "title": "동대문구 유치원 설명회 #2 새소리유치원 (모집인원, 원비 등)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=prettylady16&logNo=224095661802",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요! 일상의 기록입니다. 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인새소리 유치원 정보를 나눠보려고해요.25년 기준으로 10월에 설명회가 있었고,소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요!근데 막상 가보니 소그룹 절대 아니고,수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! 새소리유치원 서울특별시 동대문구 사가정로 148 단지내 새소리유치원 이 블로그의 체크인...",
+        "summary": "안녕하세요! 일상의 기록입니다. 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인새소리 유치원 정보를 나눠보려고해요.25년 기준으로 10월에 설명회가 있었고,소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요!근데 막상 가보니 소그룹 절대 아니고,수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! 새소리유치원 서울특별시 동대문구 사가정로 148 단지내 새소리유치원 이 블로그의 체크인 이 장소의 다른 글 - 첫 느낌은 막 필드에서 일하시다 오신 느낌의 원장 선생님이어서 좋았던 것 같아요. (보통 타 유치원은 우아하게? 곱게? 차려입으신 원장님이 몇마디 하시다가 젊은 선생님들께 넘기는 곳이 많으신데, 여기는 직접 다 관여하고 관리한...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:03:56.681Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "24324633",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=prettylady16&logNo=224095661802",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=prettylady16&logno=224095661802",
+          "normalizedText": "동대문구 유치원 설명회 #2 새소리유치원 (모집인원, 원비 등) 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인 새소리 유치원 정보를 나눠보려고해요. 25년 기준으로 10월에 설명회가 있었고, 소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요! 근데 막상 가보니 소그룹 절대 아니고, 수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! - 첫 느낌은 막 필드에서 일하시다 오신 느낌의 원장... 안녕하세요! 일상의 기록입니다. 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인새소리 유치원 정보를 나눠보려고해요.25년 기준으로 10월에 설명회가 있었고,소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요!근데 막상 가보니 소그룹 절대 아니고,수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! 새소리유치원 서울특별시 동대문구 사가정로 148 단지내 새소리유치원 이 블로그의 체크인... 안녕하세요! 일상의 기록입니다. 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인새소리 유치원 정보를 나눠보려고해요.25년 기준으로 10월에 설명회가 있었고,소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요!근데 막상 가보니 소그룹 절대 아니고,수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! 새소리유치원 서울특별시 동대문구 사가정로 148 단지내 새소리유치원 이 블로그의 체크인 이 장소의 다른 글 - 첫 느낌은 막 필드에서 일하시다 오신 느낌의 원장 선생님이어서 좋았던 것 같아요. (보통 타 유치원은 우아하게? 곱게? 차려입으신 원장님이 몇마디 하시다가 젊은 선생님들께 넘기는 곳이 많으신데, 여기는 직접 다 관여하고 관리한... 안녕하세요! 일상의 기록입니다. 오늘도 동대문구에서 인기가 많은 유치원 중 한 곳인새소리 유치원 정보를 나눠보려고해요.25년 기준으로 10월에 설명회가 있었고,소그룹으로 20회 이상 하신다고 번호 남겨달라고 하셨어요!근데 막상 가보니 소그룹 절대 아니고,수십명 정도(?) 엄청 많이들 오셔서 들으시더라구요! 새소리유치원 서울특별시 동대문구 사가정로 148 단지내 새소리유치원 이 블로그의 체크인 이 장소의 다른 글 - 첫 느낌은 막 필드에서 일하시다 오신 느낌의 원장 선생님이어서 좋았던 것 같아요. (보통 타 유치원은 우아하게? 곱게? 차려입으신 원장님이 몇마디 하시다가 젊은 선생님들께 넘기는 곳이 많으신데, 여기는 직접 다 관여하고 관리한다는 느낌이 있었어요)타 유치원은 어떤 식으로 프로젝트 수업을 하는지가 설명회 내용을 정말 크게 차지하는데, 새소리는 교구가 강점이라 가지고 있는 교구 위주로 설명해주셨어요. (설명회 시간 대부분이 보유하고 있는 교구 설명 위주)enchanted playgrandflakmanpicssudocusolitaredusybajubalance treeworld balance롤러코스터 엔지니어링k-nex nlockabel challenge등등 다 적을 수도 없게 많아요.수많은 교구를 직구 하실 정도로 이 부분에 관심이 많음!-교구 엄청 다양-아트 철사 등 미술 도구도 충분히 공급-도서대여 1일1권씩-한글, 수학, 주산 등도 함- 앞에 작게 놀이터가 있음 (한반이 다 놀기에는 작아보임)-방학은 여름 6일, 겨울6일-8:10~6:30-cctv 있음 -교구 집중그래서 바깥활동은 조금 아쉬울 수 있음(작년 설명회에서 바깥 활동이 부족하다는 평이 많아서 올 해에는 숲체험 같은 것도 추가된 듯. 그래도 타 원에 비해서는 실내활동 위주로 보임.)- 만3, 4세 한 반에 인원수가 20명 후반으로 꽤 많음.(다른 원은 보통 만 3,4세가 한반에 20명 초반)-인원수가 많은 것에 비해 교실 넓이가 넓은편은 아닌듯(복도나 이런 공간은 넓은데 아쉬움) 일반모집으로 이월된 인원 수 비용 해당 내용 기준으로 보았을 때교육과정+방과후+특성화 모두 최대치로 잡으면474,467원으로 예상됩니다.그러나 유치원에서 나누어준 유인물에 나온 내역만 살펴보면 419000원 정도로 보입니다.(실제 다니는 학부모님들도 40만원 초반대라고 얘기하셨어요!)25년 만3세 기준이고,앞으로 정부지원금이 계속 많아질것이기 때문에원비는 점점 내려갈 것으로 보입니다. 교구라는 확실한 특색이 있는 곳입니다.관심이 있으신 분은 꼭 설명회 참석해서 둘러보시길 추천드려요!!! 다른 유치원 글도 보고싶다면...!!https://blog.naver.com/prettylady16/224094225917 동대문구 유치원 설명회 #1 삼성유치원 (원비, 프로그램, 모집인원 등) 안녕하세요! 일상의 기록입니다. 오늘은 콩이가 벌써 유치원에 들어갈 나이가 되었어요. 그래서 동대문구에... blog.naver.com",
+          "htmlSnapshotHash": "24324633",
+          "extractedAt": "2026-06-26T07:03:56.681Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "새소리유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 148",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-bae074f6",
+        "kindergartenId": "1ecec08d-0c05-b044-e053-0a32095ab044",
+        "title": "동대문구/ 유명 유치원 비교/ 그림유치원 vs 삼성유치원 vs 새소리유치원[feat. 유치원 알리미]",
+        "url": "https://blog.naver.com/PostView.naver?blogId=21babypapa&logNo=223637972502",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까우니까 해서 유치원을 다닌거 같은데...지금은 자연친화적이다, 놀이식이다 , 영어수업을 잘하는곳이다, 예술및 감각을 특성화 된 유치원이다....여러가지 선택의 폭이 너무 넓고 당연히 내 아이니까, 고민도 많이 하시는거 같더라구요. 저희 파파들도 이번주 저번주 내내 유치원 설명회에 끌려다니며,...",
+        "summary": "이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까우니까 해서 유치원을 다닌거 같은데...지금은 자연친화적이다, 놀이식이다 , 영어수업을 잘하는곳이다, 예술및 감각을 특성화 된 유치원이다....여러가지 선택의 폭이 너무 넓고 당연히 내 아이니까, 고민도 많이 하시는거 같더라구요. 저희 파파들도 이번주 저번주 내내 유치원 설명회에 끌려다니며, 아주 힘들지만 알찬 시간들을 보냈습니다.두둥!! 동대문구에서 가장 핫한? 저희 동네만 그런가. ㅎㅎ 그래도 엄마들 입에 자주 오르내리는 유치원들 비교를 해봤습니다. 사적인 감정은 배제한채 순수한 고시되어 있는 정보로만 비교 해 보겠습니다.주로 엄빠들...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:03:59.813Z",
+        "relevanceScore": 12,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "b40aadd4",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=21babypapa&logNo=223637972502",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=21babypapa&logno=223637972502",
+          "normalizedText": "동대문구/ 유명 유치원 비교/ 그림유치원 vs 삼성유치원 vs 새소리유치원[feat. 유치원 알리미] 2024.10.29.그림유치원 삼성유치원 새소리유치원 5세기준 [만나이3세] 학급수 2학급 44명 3학급 / 58명 2학급 / 53명 방과후과정운영여부 운영 운영 운영 교직원수[교사] 15명 17명 16명 평균근속수[비율수] 1년이상 2년미만 1년이상 2년미만 2년이상 4년미만 원비[수업료] 380,000원 330,000원 200,000원 방과후 과정교육비용 70,000원 75,000원 70,000원 특성화 활동비 5과목 합 160... 이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까우니까 해서 유치원을 다닌거 같은데...지금은 자연친화적이다, 놀이식이다 , 영어수업을 잘하는곳이다, 예술및 감각을 특성화 된 유치원이다....여러가지 선택의 폭이 너무 넓고 당연히 내 아이니까, 고민도 많이 하시는거 같더라구요. 저희 파파들도 이번주 저번주 내내 유치원 설명회에 끌려다니며,... 이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까우니까 해서 유치원을 다닌거 같은데...지금은 자연친화적이다, 놀이식이다 , 영어수업을 잘하는곳이다, 예술및 감각을 특성화 된 유치원이다....여러가지 선택의 폭이 너무 넓고 당연히 내 아이니까, 고민도 많이 하시는거 같더라구요. 저희 파파들도 이번주 저번주 내내 유치원 설명회에 끌려다니며, 아주 힘들지만 알찬 시간들을 보냈습니다.두둥!! 동대문구에서 가장 핫한? 저희 동네만 그런가. ㅎㅎ 그래도 엄마들 입에 자주 오르내리는 유치원들 비교를 해봤습니다. 사적인 감정은 배제한채 순수한 고시되어 있는 정보로만 비교 해 보겠습니다.주로 엄빠들... 이렇게 유치원 보내기가 힘든지 몰랐습니다. 아빠 엄마들 세대는 흔희 옆집형 누나가 다니니까, 집이 가까우니까 해서 유치원을 다닌거 같은데...지금은 자연친화적이다, 놀이식이다 , 영어수업을 잘하는곳이다, 예술및 감각을 특성화 된 유치원이다....여러가지 선택의 폭이 너무 넓고 당연히 내 아이니까, 고민도 많이 하시는거 같더라구요. 저희 파파들도 이번주 저번주 내내 유치원 설명회에 끌려다니며, 아주 힘들지만 알찬 시간들을 보냈습니다.두둥!! 동대문구에서 가장 핫한? 저희 동네만 그런가. ㅎㅎ 그래도 엄마들 입에 자주 오르내리는 유치원들 비교를 해봤습니다. 사적인 감정은 배제한채 순수한 고시되어 있는 정보로만 비교 해 보겠습니다.주로 엄빠들이 궁금한사항만 비교했고. 더 이상의 정보는 유치원알리미에서 검색후 확인할수 있습니다. 유치원 알리미 유아 · 교직원 현황, 유치원 회계 현황, 환경위생 및 안전관리 사항 등 유치원의 주요 정보 e-childschoolinfo.moe.go.kr 그림유치원 삼성유치원 새소리유치원 5세기준 [만나이3세] 학급수 2학급 44명 3학급 / 58명 2학급 / 53명 방과후과정운영여부 운영 운영 운영 교직원수[교사] 15명 17명 16명 평균근속수[비율수] 1년이상 2년미만 1년이상 2년미만 2년이상 4년미만 원비[수업료] 380,000원 330,000원 200,000원 방과후 과정교육비용 70,000원 75,000원 70,000원 특성화 활동비 5과목 합 160,000원 6과목 합 224,000원 7과목 합 150,800원 공시사항[위반내용] 없음 없음 없음 가장 기본적인 내용만 비교 해 봤습니다.아이들의 성향이나 부모들의 성향에 따라 호불호가 달리겠지만, 설명회를 들어보면 다들 교육에 진심이고 다들 아이들을 정말 사랑하는 교사분들이구나 라고 느낄수 있었습니다.다들 좋은 선택하여 아이들의 행복한 유년기를 보낼수 있도록 도와줍시다!!오늘도 일이며 육아며 고군분투 하는 우리 아빠들 화이팅!! https://blog.naver.com/21babypapa/223639829515 [그림유치원] 동대문구 그림유치원 입학설명회 후기 주소 : 서울특별시 동대문구 답십리로56길 21 전화 : 02-3394-6254 설립 : 2000년 11월 30일 운영 : 08:00~... blog.naver.com https://blog.naver.com/21babypapa/223640866508 [삼성유치원] 동대문구 삼성유치원 입학설명회 후기 주소 : 서울특별시 동대문구 사가정로 65 전화 : 02-2213-0080 설립 : 2013년 11월 25일 운영 : 08:00~18:3... blog.naver.com",
+          "htmlSnapshotHash": "b40aadd4",
+          "extractedAt": "2026-06-26T07:03:59.814Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "새소리유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 148",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-b59976c8",
+        "kindergartenId": "1ecec08d-0c05-b044-e053-0a32095ab044",
+        "title": "동대문구 유치원 입학설명회 후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=skyus87&logNo=223647488921",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "내가 잊지 않기 위해 정리해두는 후기.20년생 내년 6세 딸래미의 유치원 준비지금은 파스텔유치원 다닙니다.입학설명회 시즌이 되니 글 보고 댓글 주시는 분들이 계서서 내용 추가 합니다. 아이가 유치원가길 기다리고 선생님들도 좋으시고, 모든 피드백이 잘 되는 편이어서 만족하고 보냅니다!다녀보니 유치원 느낌마다 엄마들이 선택한 이유도 조금씩 다른데,파스텔은 다들 원장 원감님이 따듯해보이시고 원 분...",
+        "summary": "내가 잊지 않기 위해 정리해두는 후기.20년생 내년 6세 딸래미의 유치원 준비지금은 파스텔유치원 다닙니다.입학설명회 시즌이 되니 글 보고 댓글 주시는 분들이 계서서 내용 추가 합니다. 아이가 유치원가길 기다리고 선생님들도 좋으시고, 모든 피드백이 잘 되는 편이어서 만족하고 보냅니다!다녀보니 유치원 느낌마다 엄마들이 선택한 이유도 조금씩 다른데,파스텔은 다들 원장 원감님이 따듯해보이시고 원 분위기도 우리가 어릴적 다니던 그런 전통적인 유치원 느낌이 좋아서 선택한 엄마들이 많은 것 같아요저도 그래서 선택했고, 9개월째 보내면서 만족하고 있습니다~ 1. 그림 유치원처음으로 설명회 갔던 곳.미리 준비도 철저하게 되어 있고 아이들 활동한 자료에...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:04:01.247Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "f6954ec8",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=skyus87&logNo=223647488921",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=skyus87&logno=223647488921",
+          "normalizedText": "동대문구 유치원 입학설명회 후기 수학 유치원 이후 학습활동은 지양 풀무원 식재료. 식단 카페 게시 2023부터 급식비 지원(안냄) (연간행사) 입학식, 4월... 오르프코리아 음악 우쿠렐레 아워홈 식자재 제공(구청식단) 100명미만은 동대문구청 식단으로 진행 점심식사 12시 간식 3시... 새소리 유치원 가기 전까지 교실이 작다는 후기에 내기준 가장 메리트가 없었던 곳인데 가보고 원아가 많은 곳에는... 내가 잊지 않기 위해 정리해두는 후기.20년생 내년 6세 딸래미의 유치원 준비지금은 파스텔유치원 다닙니다.입학설명회 시즌이 되니 글 보고 댓글 주시는 분들이 계서서 내용 추가 합니다. 아이가 유치원가길 기다리고 선생님들도 좋으시고, 모든 피드백이 잘 되는 편이어서 만족하고 보냅니다!다녀보니 유치원 느낌마다 엄마들이 선택한 이유도 조금씩 다른데,파스텔은 다들 원장 원감님이 따듯해보이시고 원 분... 내가 잊지 않기 위해 정리해두는 후기.20년생 내년 6세 딸래미의 유치원 준비지금은 파스텔유치원 다닙니다.입학설명회 시즌이 되니 글 보고 댓글 주시는 분들이 계서서 내용 추가 합니다. 아이가 유치원가길 기다리고 선생님들도 좋으시고, 모든 피드백이 잘 되는 편이어서 만족하고 보냅니다!다녀보니 유치원 느낌마다 엄마들이 선택한 이유도 조금씩 다른데,파스텔은 다들 원장 원감님이 따듯해보이시고 원 분위기도 우리가 어릴적 다니던 그런 전통적인 유치원 느낌이 좋아서 선택한 엄마들이 많은 것 같아요저도 그래서 선택했고, 9개월째 보내면서 만족하고 있습니다~ 1. 그림 유치원처음으로 설명회 갔던 곳.미리 준비도 철저하게 되어 있고 아이들 활동한 자료에... 내가 잊지 않기 위해 정리해두는 후기.20년생 내년 6세 딸래미의 유치원 준비지금은 파스텔유치원 다닙니다.입학설명회 시즌이 되니 글 보고 댓글 주시는 분들이 계서서 내용 추가 합니다. 아이가 유치원가길 기다리고 선생님들도 좋으시고, 모든 피드백이 잘 되는 편이어서 만족하고 보냅니다!다녀보니 유치원 느낌마다 엄마들이 선택한 이유도 조금씩 다른데,파스텔은 다들 원장 원감님이 따듯해보이시고 원 분위기도 우리가 어릴적 다니던 그런 전통적인 유치원 느낌이 좋아서 선택한 엄마들이 많은 것 같아요저도 그래서 선택했고, 9개월째 보내면서 만족하고 있습니다~ 1. 그림 유치원처음으로 설명회 갔던 곳.미리 준비도 철저하게 되어 있고 아이들 활동한 자료에 대한 책자도 구비되어 있고 가장 철저하게 준비한 모습이 많이 보임앞마당에 다양한 교구들이 있고 숲속에 있는 느낌이 많이 들었고 유치원 분위기 자체가 되게 좋았다.인기있는 유치원이다 보니 원장님 포스, 자부심도 장난아니고 선생님들 느낌도 다들 세련된 느낌장점 : - 건물이나 내부 교실구성, 교구들이 가장 맘에 든다 (여아 기준)- 생일파티 예쁘게 해줌- 근거리 - 남자 선생님들도 계셔서 다양한 활동이 가능할 것 같음 (단점이 될 수도)- 이 근방 유치원 중에서 가장 핫함 - 20시까지 하원 가능단점 : -가장 비쌈 (월 60중후반 - 70만 수준)-교실이 크긴하나 한반에 32명이 있음남자선생님 4명, 영양사 조리사 상주영유아 시범학교8시부터 등원 가능기본 14시하원종일제+방과후 특별활동담임교사와 16시까지16-17 하원17-20 돌봄 및 도보하원유치원에 미리연락6세영어 (주5회.30분)아뜰리에 (주1회. 미술활동)imagination playground뮤직테라피숲체험(배봉산 홍릉 답십리) : 월2회방과후그림랭기지 (주4회), 액션 잉글리시, 수학유치원 이후 학습활동은 지양풀무원 식재료. 식단 카페 게시2023부터 급식비 지원(안냄)(연간행사)입학식, 4월 현장학습, 어린이날 행사플레이데이 에어바운스, 물총놀이프로젝트 공유회(부모초대?)민속놀이 대잔치, 마술 버블쇼파자마파티, 버블공연, 산타잔치아뜰리에 전시회 2월, 졸업식 다양한 현장학습 (1달1회 이상?)2층사랑반 햇살반 (4세)32명씩 2반투담임 2. 세하 유치원교실이 넓고 선생님들이 같은 활동복(유니폼)을 입고 계신 모습이 인상적이었음부원장님? 원감님이 설명회 해주셨는데 궁금한거 위주보다 대학강의식의 설명 위주여서 설명회 자체는 아쉬움이 있었음.엄마들이 실질적으로 궁금한거 위주로 알려주시면 좋을 것 같음원비는 특활포함 50중후반 수준인 것 같음장점 : -교실이 넓고 외부활동이 다양하게 많다-자체 놀이터 및 외부 놀이 공간이 잘 꾸며져 있음-차량코스는 융통성있게 맞춰준다고 함-자체하원 시 주차 공간이 있고 부지가 넓은 편-세종초 연계교육-블로그 유튜브를 통해 아이들 활동 모습을 다양하게 볼 수 있따.단점 : -답십리에서 조금 거리가 있음, 추후 초등학교 갈때 친구문제..?-왜그런지 모르지만 평판이 그닥이고... 그래서인지 정원이 다 차지 않았음-유치원 바로 앞에 동부간선도로 지하화 공사를 위한 수직구 공사중..8-9시 등원 국수영 유초 이음교육 , 유아독서교육 10분 책읽기, 단계별 독서교육, 독서대여 연계, 전문 이야기선생님 수업동화표현활동극, 세종초 독서 이음교육, 독서교육 위주숲체험 교육(한달 한번)매주 역량데이 수학 과학 강화교육공연관람 견학 예술 창작체험파자마파티 병아리캠핑 예절교육세하 동요대회 진행 바다킨더교육(주5일, 오전 2타임 영어교육 진행)방과후과정2-4 방과후진행4-18:30 귀가6세 방과후 특활다양코딩 중국어 스포츠 등오후 영어교육 주1회 방과후방과후 체육 프로그램전문조리사 상주, 키즈노트로 식단표, 급식실에서 식사한학급 22명 내외봄소풍등 활동비 추가될 수 있음차량운행 2-4 특성화 수업 , 간식유치원1타임 30분방학 1주일씩식판 신청 월 1만원 수준생활영어2시까지 정규반 선생님4시까지는 방과후 선생님9:30에는 차량 도착오전 간식 없고 오후에만 간식 지급 3. 파스텔 유치원원장님이 따듯해 보이셨고, 원감님이 티키타카가 잘 되심 (엄마들이 궁금해하는거 위주로 속시원하게 궁금증 해소시켜주심)작년에 원장님 바뀌면서 새로 열심히 하시는 곳 같은데, 일단 원장님 변경 전까지 애들 다 빠지고 폐원 직전까지 갔던 곳이라 복불복..으로 예상유치원 자체의 분위기는 따듯하고 좋았음.장점 : -상대적으로 저렴한 원비 (40만원 대 수준)-교실이 넓어 활동공간 여유있음-원장님이 따듯해보이셨고, 원감님이 질문에 답변을 시원시원하게 잘해주심-집에서 가까운 편-유치원 휴대폰이 있어 문자로도 소통가능단점 : -현재 다니고 있는 아이들이 적고, 일단 폐원 직전의 원을 새로 빌드업하는 상황이라 복불복일 수 있음 (원장님이 적극적인 노력중이신것 같아.. 장점이 될 수 도 있는 부분)-부모 초대해서 하는 체육대회가 없다 (남편은 안하는게 좋다고함ㅋㅋㅋ)한달에 한번 동물체험 도입8:30-9:30 차량등원하원차 16:20부터문화예술 교육, 과학교육숲체험 매주진행옥상 하늘공원 텃밭활동, 현장체험(뮤지컬 박물관 서울숲 등)방과후과정반에서는 휴식 및 간식 편안한 환경 제공특성화활동 영어 정글비트 원어민 1주일1회 한국인교사 1주2회 매일 교사가 영어 영상지도체육 라이언키즈발레 아미고공주발레미술 빈센트놀이미술코딩 브링로우 파이보츠??오르프코리아 음악 우쿠렐레아워홈 식자재 제공(구청식단)100명미만은 동대문구청 식단으로 진행점심식사 12시 간식 3시봄소풍 개별 생일축하(당일 케익 사서 보내야함, 생일선물 주고받기)학부모참여수업 연2회원내 물놀이 동요대회 가을소풍 음악회(부모초청) 스케이트 강습금요일마다 홈페이지에 사진 올림방학 여름 겨울 1주일20명이 넘어가면 선생님2식사는 교실에서 진행 (식판스토리 월1만원)물통만 들고다니면 됌인원수 1:12 정도외부활동은 별도비용통학차 코스2번, 한차가 두번 나가는거임홈페이지에 사진 한번씩유치원 폰으로 소통가능기타 현장학습은 한달에 한두번 내외미디어 동화 한번씩 보는 시간은 있음영어 미디어노출 매일 10-15분개별하원 마지막시간 7시 4. 새소리 유치원가기 전까지 교실이 작다는 후기에 내기준 가장 메리트가 없었던 곳인데 가보고 원아가 많은 곳에는 이유가 있다라는 것을 알게 되었다.소그룹으로 설명회하는데 실질적으로 엄마들이 궁금한거 위주로 설명해주셔서 좋았음.교구가 정말 화려하고 다양해서 사실 교구를 보고 마음이 확 갔던곳!!어디 글에서인가 그*유치원 프로그램이랑 비슷하다고 하던데 확실히 그런 느낌이 있었음.(교실 구성이나, 미술 활동 등)프로그램은 비슷한데 원비는 절반 수준이라 원생이 많은듯 함.장점 : -교구가 엄청 다양하다! 여아 기준, 그리고 내딸 기준 엄청 메리트가 있을듯. -미술좋아하는 아이들이 진짜 좋아할듯 -원아가 많다보니 왠만한 학원차는 다오는 듯-우리아파트에 셔틀 들어오는 시간도 딱 합리적-원비 엄청 합리적!! 다 합쳐서 40 수준단점 :-아이가 많아 교실이 좁을 수 있음. 이것은 장점이자 단점 / 그러나 한반에 22~24명인 것을 고려하고 방이 큰 원의 정원이 32~4명인 것을 고려하면 아주 좁은 수준은 아닐 것으로 보임. 지금 다니는 어린이집 방이 워낙 작아서 그러려니 싶어졌음-외부활동보다는 교실에서 하는 활동이 많아보임-체육대회 없음 (남편에게는 장점)-생일파티 없음 (생일선물 주고받을 필요x, 파티 자체를 안함)-방학 평일 기준 6일씩(여름,겨울), 다른 곳은 대부분 5일-원복없음 (원복있는 유치원도 대부분 사복입고 다녀서.. 이건 장점도 되고 단점도 되는듯)-개별하원 시 주차공간이 난해함사진 카페에 올린다식판스토리 물통만소풍 도시락 안쌈소통은 유치원 전화 (선생님들 개인 휴대폰 번호 오픈한다고 하는데.. 원장님이 이부분은 개선해주시는게 좋을듯, 학부모 입장에서도 개인폰번호는 죄송스럽고 부담스럽다)개별 마지막 하원 18:30차량 탑승 마지막 시간 5시에 나감종일반 4시 종료교실에서 식사오전간식 우유, 요구르트결론적으로 나의 결정은새소리 유치원, 파스텔 유치원, 그림 유치원 신청했음!",
+          "htmlSnapshotHash": "f6954ec8",
+          "extractedAt": "2026-06-26T07:04:01.247Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "structuredFields": {
+            "kindergartenName": "새소리유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 148",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-ff1f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dd029938",
+        "kindergartenId": "1ecec08c-ff1f-b044-e053-0a32095ab044",
+        "title": "22년생 5세 아기 일반유치원 입학설명회 후기 - 성동구 에덴유치원, 동대문구 신동아유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=envely11&logNo=224087640037",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "일반유치원 입학설명회 후기- 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥지금 다니는 어린이집도 만족스럽지만내년에는 5살이 되고,이사도 가야하기 때문에 적극적으로 유치원을 알아봤다!참고로 일반유치원 우선모집은 11월이기 때문에,일유 입학설명회는 10월에 있으므로사전에 일정 체크체크 필요!희망하는 영유나 놀이학교의 경우에도9월부터는 전화해서 연락처를 남겨놓아야입학설명회 관련 안내를...",
+        "summary": "일반유치원 입학설명회 후기- 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥지금 다니는 어린이집도 만족스럽지만내년에는 5살이 되고,이사도 가야하기 때문에 적극적으로 유치원을 알아봤다!참고로 일반유치원 우선모집은 11월이기 때문에,일유 입학설명회는 10월에 있으므로사전에 일정 체크체크 필요!희망하는 영유나 놀이학교의 경우에도9월부터는 전화해서 연락처를 남겨놓아야입학설명회 관련 안내를 받을 수 있다!내가 참석한 일반유치원 설명회는 두군데였는데,행당동 에덴유치원,동대문구에 있는 신동아유치원이다.(설명회는 평일에 있어서 설명회로연차를 많이 소진함 ㅠㅠ) 신동아유치원 신동아유치원 서울특별시 동대문구 무학로26길 30 신동아유치원 이 블로...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:05:17.179Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "8952fda4",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=envely11&logNo=224087640037",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=envely11&logno=224087640037",
+          "normalizedText": "22년생 5세 아기 일반유치원 입학설명회 후기 - 성동구 에덴유치원, 동대문구 신동아유치원 2025.11.25.일반유치원 입학설명회 후기 - 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥ 지금 다니는 어린이집도 만족스럽지만 내년에는 5살이 되고, 이사도 가야하기 때문에 적극적으로... 내가 참석한 일반유치원 설명회는 두군데였는데, 행당동 에덴유치원, 동대문구에 있는 신동아유치원이다. (설명회는 평일에 있어서 설명회로 연차를 많이 소진함 ㅠㅠ) 신동아유치원... 일반유치원 입학설명회 후기- 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥지금 다니는 어린이집도 만족스럽지만내년에는 5살이 되고,이사도 가야하기 때문에 적극적으로 유치원을 알아봤다!참고로 일반유치원 우선모집은 11월이기 때문에,일유 입학설명회는 10월에 있으므로사전에 일정 체크체크 필요!희망하는 영유나 놀이학교의 경우에도9월부터는 전화해서 연락처를 남겨놓아야입학설명회 관련 안내를... 일반유치원 입학설명회 후기- 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥지금 다니는 어린이집도 만족스럽지만내년에는 5살이 되고,이사도 가야하기 때문에 적극적으로 유치원을 알아봤다!참고로 일반유치원 우선모집은 11월이기 때문에,일유 입학설명회는 10월에 있으므로사전에 일정 체크체크 필요!희망하는 영유나 놀이학교의 경우에도9월부터는 전화해서 연락처를 남겨놓아야입학설명회 관련 안내를 받을 수 있다!내가 참석한 일반유치원 설명회는 두군데였는데,행당동 에덴유치원,동대문구에 있는 신동아유치원이다.(설명회는 평일에 있어서 설명회로연차를 많이 소진함 ㅠㅠ) 신동아유치원 신동아유치원 서울특별시 동대문구 무학로26길 30 신동아유치원 이 블로... 일반유치원 입학설명회 후기- 에덴유치원, 신동아유치원 - 22년 12월생인 울애기 ♥지금 다니는 어린이집도 만족스럽지만내년에는 5살이 되고,이사도 가야하기 때문에 적극적으로 유치원을 알아봤다!참고로 일반유치원 우선모집은 11월이기 때문에,일유 입학설명회는 10월에 있으므로사전에 일정 체크체크 필요!희망하는 영유나 놀이학교의 경우에도9월부터는 전화해서 연락처를 남겨놓아야입학설명회 관련 안내를 받을 수 있다!내가 참석한 일반유치원 설명회는 두군데였는데,행당동 에덴유치원,동대문구에 있는 신동아유치원이다.(설명회는 평일에 있어서 설명회로연차를 많이 소진함 ㅠㅠ) 신동아유치원 신동아유치원 서울특별시 동대문구 무학로26길 30 신동아유치원 이 블로그의 체크인 이 장소의 다른 글 처음에는 몰랐던 유치원이지만,셔틀도 오고 우선모집 요건에 '맞벌이'가 있어서알게된 유치원이다. 설명회는 몇 타임씩 쪼개서 한다고 했는데,네이버예약으로 간단히 할 수 있어서 좋았다! 단독 건물에 셔틀시간도 짧고, 등하원 시간이 넉넉해서 맞벌이에게 좋은 것 같았지만,일반유치원이라 한 반에 인원이 많은게 아쉬웠고,시설이 살짝 낡았다는 점도 마음에 걸렸음솔직히 1지망으로는 안끌렸..다 ㅜㅜ 에덴유치원 에덴유치원 서울특별시 성동구 행당로 79 단지내 에덴유치원 이 블로그의 체크인 이 장소의 다른 글 임신했을때 에덴유치원 바로 앞에 살았었는데 ㅠㅠ그땐 별 관심이 없었지만 완전 괜춘했네 ㅠㅠ!! 이젠 셔틀을 타야하지만 그래도 비교적 가깝고,단독 건물인데 생각보다 넓고 커서 마음에 들었다!등하원시간도 맞벌이에게 친화적이고,(9시~5시30분)역시나 우선모집 요건에 '맞벌이'가 있어서 다행! 설명회는 강당에서 한번에 모아서 했는데이 넓은 강당이 꽉꽉 찬걸 보고 완존 걱정이 되었음!100% 추첨인데 다 떨어지면 어쩌지 하는 걱정 ㅋㅋ 내부는 애기들 얼굴이 있어서 촬영금지라체육활동 하는 곳만 찍었는데 널찍하니 좋았다!일반유치원을 보낸다면 여기가 괜찮다 싶었는데,역시나 한 반에 20명이 넘는다는 점이 마음에 걸림 우선지원 가능요건 + 셔틀 o + 등하원시간다 충족하는 유치원이 2개밖에 없어서2개 밖에 지원을 못했는데,다행히도 다 합격함!!그치만 막상 합격하고 나니 일반유치원이 아닌다른 교육기관이 더 끌려서 엄청 고민중이다 ㅠㅠ",
+          "htmlSnapshotHash": "8952fda4",
+          "extractedAt": "2026-06-26T07:05:17.179Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "신동아유치원",
+            "kindergartenAddress": "서울특별시 동대문구 무학로26길 30",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-f8dc-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0ee5d371",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "세하유치원 숲체험 이야기: 배봉산에서 자연과 함께 자란 아이들 🌳✨",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sehakids&logNo=224312912412",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "세하유치원 어린이들이 매주 배봉산을 찾아 숲체험 활동을 이어가며자연 속에서 소중한 배움과 성장을 경험하고 있습니다. 🌳💚 🌼 봄 향기를 만났어요! 아카시아꽃 탐색 따스한 봄바람이 불어오는 배봉산에서 아이들은 아카시아꽃을 가까이 관찰하며 향기를 맡고“향기로워~!”라고 감탄했습니다. 🌸🥰직접 맛을 보며 “배추 맛 같아요!”라고 표현하는 모습은오감을 활용해 자연을 탐색하는 즐거움을 보여주...",
+        "summary": "세하유치원 어린이들이 매주 배봉산을 찾아 숲체험 활동을 이어가며자연 속에서 소중한 배움과 성장을 경험하고 있습니다. 🌳💚 🌼 봄 향기를 만났어요! 아카시아꽃 탐색 따스한 봄바람이 불어오는 배봉산에서 아이들은 아카시아꽃을 가까이 관찰하며 향기를 맡고“향기로워~!”라고 감탄했습니다. 🌸🥰직접 맛을 보며 “배추 맛 같아요!”라고 표현하는 모습은오감을 활용해 자연을 탐색하는 즐거움을 보여주었습니다. 🍃 🐛 배고픈 애벌레를 도와주었어요! 아이들은 애벌레에게 나뭇잎을 먹여주는 놀이를 하며 성장 과정을 이해하고,구멍 난 나뭇잎 사이로 보이는 파란 하늘을 바라보며 자연이 만들어낸 신비로운 모습을 관찰했습니다. 🔍 ✨ 숲속 마법! 나뭇가지...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:05:50.435Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "832fec5e",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sehakids&logNo=224312912412",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sehakids&logno=224312912412",
+          "normalizedText": "세하유치원 숲체험 이야기: 배봉산에서 자연과 함께 자란 아이들 🌳✨ 2주 전보고, 듣고, 만지고, 냄새 맡고, 느끼며 다양한 경험을 쌓아간 세하 어린이들은 자연과 함께 건강한 몸과 마음을 키워 나갔습니다. #세하유치원 #배봉산숲체험 #숲놀이 #유아숲체험 #자연놀이 #생태교육 #유아교육 #자연체험 #숲에서자라요 #행복한유치원 #유아교육명문 #사립유치원 #동대문구유치원 #장안동유치원 #장안벚꽃로유치원 #그래서세하는오늘도참재미있다 세하유치원 어린이들이 매주 배봉산을 찾아 숲체험 활동을 이어가며자연 속에서 소중한 배움과 성장을 경험하고 있습니다. 🌳💚 🌼 봄 향기를 만났어요! 아카시아꽃 탐색 따스한 봄바람이 불어오는 배봉산에서 아이들은 아카시아꽃을 가까이 관찰하며 향기를 맡고“향기로워~!”라고 감탄했습니다. 🌸🥰직접 맛을 보며 “배추 맛 같아요!”라고 표현하는 모습은오감을 활용해 자연을 탐색하는 즐거움을 보여주... 세하유치원 어린이들이 매주 배봉산을 찾아 숲체험 활동을 이어가며자연 속에서 소중한 배움과 성장을 경험하고 있습니다. 🌳💚 🌼 봄 향기를 만났어요! 아카시아꽃 탐색 따스한 봄바람이 불어오는 배봉산에서 아이들은 아카시아꽃을 가까이 관찰하며 향기를 맡고“향기로워~!”라고 감탄했습니다. 🌸🥰직접 맛을 보며 “배추 맛 같아요!”라고 표현하는 모습은오감을 활용해 자연을 탐색하는 즐거움을 보여주었습니다. 🍃 🐛 배고픈 애벌레를 도와주었어요! 아이들은 애벌레에게 나뭇잎을 먹여주는 놀이를 하며 성장 과정을 이해하고,구멍 난 나뭇잎 사이로 보이는 파란 하늘을 바라보며 자연이 만들어낸 신비로운 모습을 관찰했습니다. 🔍 ✨ 숲속 마법! 나뭇가지... 세하유치원 어린이들이 매주 배봉산을 찾아 숲체험 활동을 이어가며자연 속에서 소중한 배움과 성장을 경험하고 있습니다. 🌳💚 🌼 봄 향기를 만났어요! 아카시아꽃 탐색 따스한 봄바람이 불어오는 배봉산에서 아이들은 아카시아꽃을 가까이 관찰하며 향기를 맡고“향기로워~!”라고 감탄했습니다. 🌸🥰직접 맛을 보며 “배추 맛 같아요!”라고 표현하는 모습은오감을 활용해 자연을 탐색하는 즐거움을 보여주었습니다. 🍃 🐛 배고픈 애벌레를 도와주었어요! 아이들은 애벌레에게 나뭇잎을 먹여주는 놀이를 하며 성장 과정을 이해하고,구멍 난 나뭇잎 사이로 보이는 파란 하늘을 바라보며 자연이 만들어낸 신비로운 모습을 관찰했습니다. 🔍 ✨ 숲속 마법! 나뭇가지 비눗방울 놀이 숲에서 발견한 나뭇가지를 활용해 비눗방울을 불어보며 창의적인 놀이를 즐겼습니다. 🌿아이들은 반짝이는 비눗방울을 바라보며 탐구심을 키우고,놀이 방법을 스스로 찾아가며 즐거운 시간을 보냈습니다. 😲💖 🐸 개구리는 어떻게 자랄까요? 아이들은 개구리알을 관찰하며 생명의 신비를 느끼고,종이접기를 통해 개구리처럼 점프하는 놀이를 하며 몸으로 개구리의 움직임을 표현했습니다. 🐸또한 🐍 뱀으로부터 개구리를 지키는 게임을 하며 친구들과 협력하고 즐겁게 뛰어놀았습니다. 😊💚 🌲 숲속 놀이터에서 놀았어요! 숲속 놀이터에서 친구들과 함께 뛰고 오르며 몸과 마음을 건강하게 키우는 시간을 보냈습니다. 🤸♀️💚햇살과 바람을 느끼며 숲이 주는 특별한 행복을 마음껏 경험했습니다. ☀️🍃💫 😊 자연에서 배우고 자라는 세하 어린이들💚 배봉산 숲은 아이들에게 단순한 놀이 공간이 아니라 살아있는 배움터가 되었습니다. 🌳📖보고, 듣고, 만지고, 냄새 맡고, 느끼며 다양한 경험을 쌓아간 세하 어린이들은자연과 함께 건강한 몸과 마음을 키워 나갔습니다. 🌱💚🌟 세하유치원 서울특별시 동대문구 장안벚꽃로 107 이 블로그의 체크인 이 장소의 다른 글 #세하유치원 #배봉산숲체험 #숲놀이 #유아숲체험 #자연놀이 #생태교육 #유아교육 #자연체험 #숲에서자라요 #행복한유치원 #유아교육명문 #사립유치원 #동대문구유치원 #장안동유치원 #장안벚꽃로유치원 #그래서세하는오늘도참재미있다",
+          "htmlSnapshotHash": "832fec5e",
+          "extractedAt": "2026-06-26T07:05:50.435Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-1b92aab5",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "🌈 세하유치원 아이들의 우편체험관 탐방기 – 우편의 역사와 미래를 배우다 ✨",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sehakids&logNo=223569951184",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "세하유치원 아이들은 💌 우편체험관을 방문하여 특별한 하루를 보냈습니다.편지와 우표의 역사부터 📜 최신 우편 서비스까지, 다양한 전시와 체험을 통해 우편의 과거와 현재, 그리고 미래를 직접 경험할 수 있었어요.아이들은 실제 우편 배달 과정을 🚲 체험하며, 우리가 일상에서 받아보는 편지와 소포가 얼마나 많은 사람들의 노력과 체계적인 시스템을 통해 전달되는지 깨닫는 시간을 가졌습니다.영상 속...",
+        "summary": "세하유치원 아이들은 💌 우편체험관을 방문하여 특별한 하루를 보냈습니다.편지와 우표의 역사부터 📜 최신 우편 서비스까지, 다양한 전시와 체험을 통해 우편의 과거와 현재, 그리고 미래를 직접 경험할 수 있었어요.아이들은 실제 우편 배달 과정을 🚲 체험하며, 우리가 일상에서 받아보는 편지와 소포가 얼마나 많은 사람들의 노력과 체계적인 시스템을 통해 전달되는지 깨닫는 시간을 가졌습니다.영상 속에는 🎥 아이들이 즐겁게 참여한 모습과 전시관의 주요 공간이 담겨 있습니다.이번 탐방은 🌿 아이들에게 우편의 소중함을 배우고, 협력과 감사의 마음을 느낄 수 있는 뜻깊은 시간이었습니다.#우편체험관 #세하유치원 #아이들과함께 #체험학습 #우편역사 #...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:05:50.667Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "4c3fa5e6",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sehakids&logNo=223569951184",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sehakids&logno=223569951184",
+          "normalizedText": "🌈 세하유치원 아이들의 우편체험관 탐방기 – 우편의 역사와 미래를 배우다 ✨ 이번 탐방은 아이들에게 우편의 소중함을 배우고, 협력과 감사의 마음을 느낄 수 있는 뜻깊은 시간이었습니다. #우편체험관 #세하유치원 #아이들과함께 #체험학습 #우편역사 #즐거운추억 #서울체험 #유아교육명문 #명문사립유치원 #동대문구유치원후기 #장안동유치원후기 #동대문구유치원 #장안동유치원 #중랑벚꽃길 #벚꽃길유치원 #그래서세하는오늘도참재미있다 세하유치원 아이들은 💌 우편체험관을 방문하여 특별한 하루를 보냈습니다.편지와 우표의 역사부터 📜 최신 우편 서비스까지, 다양한 전시와 체험을 통해 우편의 과거와 현재, 그리고 미래를 직접 경험할 수 있었어요.아이들은 실제 우편 배달 과정을 🚲 체험하며, 우리가 일상에서 받아보는 편지와 소포가 얼마나 많은 사람들의 노력과 체계적인 시스템을 통해 전달되는지 깨닫는 시간을 가졌습니다.영상 속... 세하유치원 아이들은 💌 우편체험관을 방문하여 특별한 하루를 보냈습니다.편지와 우표의 역사부터 📜 최신 우편 서비스까지, 다양한 전시와 체험을 통해 우편의 과거와 현재, 그리고 미래를 직접 경험할 수 있었어요.아이들은 실제 우편 배달 과정을 🚲 체험하며, 우리가 일상에서 받아보는 편지와 소포가 얼마나 많은 사람들의 노력과 체계적인 시스템을 통해 전달되는지 깨닫는 시간을 가졌습니다.영상 속에는 🎥 아이들이 즐겁게 참여한 모습과 전시관의 주요 공간이 담겨 있습니다.이번 탐방은 🌿 아이들에게 우편의 소중함을 배우고, 협력과 감사의 마음을 느낄 수 있는 뜻깊은 시간이었습니다.#우편체험관 #세하유치원 #아이들과함께 #체험학습 #우편역사 #... 세하유치원 아이들은 💌 우편체험관을 방문하여 특별한 하루를 보냈습니다.편지와 우표의 역사부터 📜 최신 우편 서비스까지, 다양한 전시와 체험을 통해 우편의 과거와 현재, 그리고 미래를 직접 경험할 수 있었어요.아이들은 실제 우편 배달 과정을 🚲 체험하며, 우리가 일상에서 받아보는 편지와 소포가 얼마나 많은 사람들의 노력과 체계적인 시스템을 통해 전달되는지 깨닫는 시간을 가졌습니다.영상 속에는 🎥 아이들이 즐겁게 참여한 모습과 전시관의 주요 공간이 담겨 있습니다.이번 탐방은 🌿 아이들에게 우편의 소중함을 배우고, 협력과 감사의 마음을 느낄 수 있는 뜻깊은 시간이었습니다.#우편체험관 #세하유치원 #아이들과함께 #체험학습 #우편역사 #즐거운추억 #서울체험 #유아교육명문 #명문사립유치원 #동대문구유치원후기 #장안동유치원후기 #동대문구유치원 #장안동유치원 #중랑벚꽃길 #벚꽃길유치원 #그래서세하는오늘도참재미있다",
+          "htmlSnapshotHash": "4c3fa5e6",
+          "extractedAt": "2026-06-26T07:05:50.667Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-c5a96b92",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 세하유치원 신입생 교육설명회 SNS",
+        "url": "https://www.instagram.com/p/DQV461dEvYv/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "세하유치원 2026학년도 3차 신입생 교육설명회 예약 안내가 확인되는 Instagram 검색 결과.",
+        "summary": "서울 동대문구 세하유치원의 2026학년도 신입생 교육설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "세하유치원 2026학년도 3차 신입생 교육설명회 예약 안내가 확인되는 Instagram 검색 결과. 원명이 고유하고 서울 동대문구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8983eca2",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQV461dEvYv%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQV461dEvYv/",
+          "normalizedUrl": "www.instagram.com/p/dqv461devyv",
+          "normalizedText": "서울 세하유치원 신입생 교육설명회 sns 세하유치원 2026학년도 3차 신입생 교육설명회 예약 안내가 확인되는 instagram 검색 결과. 서울 동대문구 세하유치원의 2026학년도 신입생 교육설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "8983eca2",
+          "extractedAt": "2026-06-30T22:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQV461dEvYv%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-25875b1d",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 초등 이음교육 견학 Instagram",
+        "url": "https://www.instagram.com/reel/DUU_pEOATyB/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원과 세종초등학교가 함께한 이음교육 견학, 배움과 우정의 기록, 동대문구·장안동 유치원 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "curriculum",
+          "field-trip"
+        ],
+        "date": "2026-02-03",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "6a03d877",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+seha_1983+%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUU_pEOATyB/",
+          "normalizedUrl": "www.instagram.com/reel/duu_peoatyb",
+          "normalizedText": "서울 동대문 세하유치원 초등 이음교육 견학 instagram seha_1983 계정에서 세하유치원과 세종초등학교가 함께한 이음교육 견학, 배움과 우정의 기록, 동대문구·장안동 유치원 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "6a03d877",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+seha_1983+%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5febcb93",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 첫눈 자연놀이 Instagram",
+        "url": "https://www.instagram.com/p/DR33O0tgWuZ/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 첫눈을 맞으며 뛰놀고 자연과 함께하는 배움을 경험한 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "nature",
+          "activity"
+        ],
+        "date": "2025-12-04",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "3a5b97c5",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DR33O0tgWuZ%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DR33O0tgWuZ/",
+          "normalizedUrl": "www.instagram.com/p/dr33o0tgwuz",
+          "normalizedText": "서울 동대문 세하유치원 첫눈 자연놀이 instagram seha_1983 계정에서 세하유치원 원아들이 첫눈을 맞으며 뛰놀고 자연과 함께하는 배움을 경험한 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "3a5b97c5",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DR33O0tgWuZ%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c229b81e",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 한복 예절교육 Instagram",
+        "url": "https://www.instagram.com/reel/DXGpgSrO9T8/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 한복을 입고 전문 예절 교수와 함께 인성예절교육을 진행한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "curriculum",
+          "character-education"
+        ],
+        "date": "2026-04-14",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "4c3dbc33",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXGpgSrO9T8%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXGpgSrO9T8/",
+          "normalizedUrl": "www.instagram.com/reel/dxgpgsro9t8",
+          "normalizedText": "서울 동대문 세하유치원 한복 예절교육 instagram seha_1983 계정에서 세하유치원 원아들이 한복을 입고 전문 예절 교수와 함께 인성예절교육을 진행한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "4c3dbc33",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXGpgSrO9T8%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-06239b75",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 놀이체험 Instagram",
+        "url": "https://www.instagram.com/reel/DXtjO2VgR_P/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 놀이체험을 다녀와 함께 뛰고 만들고 느끼며 추억을 쌓은 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "activity"
+        ],
+        "date": "2026-04-29",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "3d4bc964",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXtjO2VgR_P%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXtjO2VgR_P/",
+          "normalizedUrl": "www.instagram.com/reel/dxtjo2vgr_p",
+          "normalizedText": "서울 동대문 세하유치원 놀이체험 instagram seha_1983 계정에서 세하유치원 원아들이 놀이체험을 다녀와 함께 뛰고 만들고 느끼며 추억을 쌓은 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "3d4bc964",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXtjO2VgR_P%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b6e52527",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 음악놀이와 모험놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DYMCe0PBOKq/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 음악놀이와 모험놀이 체험을 통해 리듬, 용기, 협동심을 배운 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "curriculum",
+          "activity"
+        ],
+        "date": "2026-05-10",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2de46c88",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYMCe0PBOKq%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYMCe0PBOKq/",
+          "normalizedUrl": "www.instagram.com/reel/dymce0pbokq",
+          "normalizedText": "서울 동대문 세하유치원 음악놀이와 모험놀이 instagram seha_1983 계정에서 세하유치원 원아들이 음악놀이와 모험놀이 체험을 통해 리듬, 용기, 협동심을 배운 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2de46c88",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYMCe0PBOKq%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-737f465c",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 한마음 가족운동회 Instagram",
+        "url": "https://www.instagram.com/reel/DYRogwnBQld/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 한마음 가족운동회가 열려 아이들과 부모가 함께 뛰고 응원했다는 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "event",
+          "activity"
+        ],
+        "date": "2026-05-13",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2af761f1",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYRogwnBQld%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYRogwnBQld/",
+          "normalizedUrl": "www.instagram.com/reel/dyrogwnbqld",
+          "normalizedText": "서울 동대문 세하유치원 한마음 가족운동회 instagram seha_1983 계정에서 세하유치원 한마음 가족운동회가 열려 아이들과 부모가 함께 뛰고 응원했다는 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2af761f1",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYRogwnBQld%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4f8d7baa",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 부모교육 특강 Instagram",
+        "url": "https://www.instagram.com/reel/DUkcBUuAUPB/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원과 세종초등학교 이음교육 연계 속 부모교육 특강이 진행됐고 부모와 자녀가 함께 성장하는 길을 다룬 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "curriculum"
+        ],
+        "date": "2026-02-09",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "3a4063da",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUkcBUuAUPB%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUkcBUuAUPB/",
+          "normalizedUrl": "www.instagram.com/reel/dukcbuuaupb",
+          "normalizedText": "서울 동대문 세하유치원 부모교육 특강 instagram seha_1983 계정에서 세하유치원과 세종초등학교 이음교육 연계 속 부모교육 특강이 진행됐고 부모와 자녀가 함께 성장하는 길을 다룬 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "3a4063da",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUkcBUuAUPB%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-66cc6225",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 부모성장 아카데미 Instagram",
+        "url": "https://www.instagram.com/reel/DY3_FxeBt5E/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원이 부모성장 아카데미를 통해 미래교육 방향과 교육공동체 소통을 나눈 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "curriculum"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "c71b6dec",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY3_FxeBt5E%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY3_FxeBt5E/",
+          "normalizedUrl": "www.instagram.com/reel/dy3_fxebt5e",
+          "normalizedText": "서울 동대문 세하유치원 부모성장 아카데미 instagram seha_1983 계정에서 세하유치원이 부모성장 아카데미를 통해 미래교육 방향과 교육공동체 소통을 나눈 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "c71b6dec",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY3_FxeBt5E%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-59263c4d",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 수도박물관 탐방 Instagram",
+        "url": "https://www.instagram.com/reel/DXgQWFNOOv4/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 수도박물관 탐방으로 즐겁게 배우고 체험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "curriculum"
+        ],
+        "date": "2026-04-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "873ea55f",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgQWFNOOv4%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXgQWFNOOv4/",
+          "normalizedUrl": "www.instagram.com/reel/dxgqwfnoov4",
+          "normalizedText": "서울 동대문 세하유치원 수도박물관 탐방 instagram seha_1983 계정에서 세하유치원 원아들이 수도박물관 탐방으로 즐겁게 배우고 체험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "873ea55f",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXgQWFNOOv4%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-778aee3b",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 식목일 자연교육 Instagram",
+        "url": "https://www.instagram.com/reel/DXGpTznO1y_/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 원아들이 식목일을 맞아 모종 심기와 씨앗 뿌리기를 하며 자연의 소중함을 배운 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "nature",
+          "curriculum"
+        ],
+        "date": "2026-04-14",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "20c226e6",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXGpTznO1y_%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXGpTznO1y_/",
+          "normalizedUrl": "www.instagram.com/reel/dxgptzno1y_",
+          "normalizedText": "서울 동대문 세하유치원 식목일 자연교육 instagram seha_1983 계정에서 세하유치원 원아들이 식목일을 맞아 모종 심기와 씨앗 뿌리기를 하며 자연의 소중함을 배운 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "20c226e6",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXGpTznO1y_%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4b006242",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문 세하유치원 뮤직놀이 음악교육 Instagram",
+        "url": "https://www.instagram.com/p/DRheSPugWEG/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원 뮤직놀이 음악교육이 창의력, 협동심, 자기표현력, 집중력, 사회성, 정서 안정을 기르는 활동으로 소개되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "music",
+          "curriculum"
+        ],
+        "date": "2025-11-26",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "becfc200",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRheSPugWEG%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRheSPugWEG/",
+          "normalizedUrl": "www.instagram.com/p/drhespugweg",
+          "normalizedText": "서울 동대문 세하유치원 뮤직놀이 음악교육 instagram seha_1983 계정에서 세하유치원 뮤직놀이 음악교육이 창의력, 협동심, 자기표현력, 집중력, 사회성, 정서 안정을 기르는 활동으로 소개되는 instagram 게시물.",
+          "htmlSnapshotHash": "becfc200",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRheSPugWEG%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-98a6fd91",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 동대문구 세하유치원 부모성장 아카데미 Instagram",
+        "url": "https://www.instagram.com/reel/DYMZtNuB-w8/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "seha_1983 계정에서 세하유치원이 부모성장 아카데미 1기 부모교육 지원 프로그램을 운영하며 미래교육 방향과 핵심 역량을 다룬 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education"
+        ],
+        "date": "2026-05-11",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "8978624b",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYMZtNuB-w8%22+%22seha_1983%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYMZtNuB-w8/",
+          "normalizedUrl": "www.instagram.com/reel/dymztnub-w8",
+          "normalizedText": "서울 동대문구 세하유치원 부모성장 아카데미 instagram seha_1983 계정에서 세하유치원이 부모성장 아카데미 1기 부모교육 지원 프로그램을 운영하며 미래교육 방향과 핵심 역량을 다룬 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "8978624b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYMZtNuB-w8%22+%22seha_1983%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f2074762",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 세하유치원 부모성장 아카데미 Instagram Post",
+        "url": "https://www.instagram.com/p/DWHB0aYmt3j/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "Instagram 검색 결과에서 세하유치원, 부모성장 아카데미, 미래역량 중심 교육과 부모교육 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "451f0d51",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWHB0aYmt3j%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8%EC%84%B1%EC%9E%A5+%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWHB0aYmt3j/",
+          "normalizedUrl": "www.instagram.com/p/dwhb0aymt3j",
+          "normalizedText": "서울 세하유치원 부모성장 아카데미 instagram post instagram 검색 결과에서 세하유치원, 부모성장 아카데미, 미래역량 중심 교육과 부모교육 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "451f0d51",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWHB0aYmt3j%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8%EC%84%B1%EC%9E%A5+%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-abd900ff",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 세하유치원 크리스마스 산타 Instagram Post",
+        "url": "https://www.instagram.com/p/DSozwBVAdGG/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "세하유치원 계정에서 크리스마스에 산타할아버지가 직접 찾아와 선물을 나눠준 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "christmas"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a4098d12",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSozwBVAdGG%22+%22seha_1983%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세하유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSozwBVAdGG/",
+          "normalizedUrl": "www.instagram.com/p/dsozwbvadgg",
+          "normalizedText": "서울 세하유치원 크리스마스 산타 instagram post 세하유치원 계정에서 크리스마스에 산타할아버지가 직접 찾아와 선물을 나눠준 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "a4098d12",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSozwBVAdGG%22+%22seha_1983%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세하유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f081a4e8",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "title": "서울 세하유치원 인공지능 예술 감성 아트 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY6ZTS8BeCV/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "세하유치원 계정에서 친구들이 작품을 감상하고 움직임과 상상력을 표현하는 인공지능 예술 감성 아트 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-museum-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "12359bdd",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6ZTS8BeCV%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5+%EC%98%88%EC%88%A0+%EA%B0%90%EC%84%B1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세하유치원은 로컬 원장부 단일 매칭이며 기관 계정의 예술 감성 아트 체험 문맥이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6ZTS8BeCV/",
+          "normalizedUrl": "www.instagram.com/reel/dy6zts8becv",
+          "normalizedText": "서울 세하유치원 인공지능 예술 감성 아트 체험 instagram reel 세하유치원 계정에서 친구들이 작품을 감상하고 움직임과 상상력을 표현하는 인공지능 예술 감성 아트 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "12359bdd",
+          "extractedAt": "2026-07-02T23:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6ZTS8BeCV%22+%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5+%EC%98%88%EC%88%A0+%EA%B0%90%EC%84%B1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세하유치원은 로컬 원장부 단일 매칭이며 기관 계정의 예술 감성 아트 체험 문맥이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-dee8d3b2",
+        "kindergartenId": "1ecec08c-f8dc-b044-e053-0a32095ab044",
+        "kindergartenName": "세하유치원",
+        "title": "서울 세하유치원 교통안전체험관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DFKlC-cSeDv/",
+        "source": "other",
+        "sourceName": "Instagram · 세하유치원",
+        "snippet": "세하유치원 계정 게시물 검색 결과에서 교통안전체험관 견학, 동대문구유치원, 장안동유치원, 장안벚꽃로유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "dee8d3b2",
+        "structuredFields": {
+          "kindergartenName": "세하유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DFKlC-cSeDv%22%20%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "세하유치원은 로컬 원장부에서 단일 명칭이며 동대문구·장안동·장안벚꽃로 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DFKlC-cSeDv/",
+          "normalizedUrl": "www.instagram.com/p/dfklc-csedv",
+          "normalizedText": "서울 세하유치원 교통안전체험관 견학 instagram post 세하유치원 계정 게시물 검색 결과에서 교통안전체험관 견학, 동대문구유치원, 장안동유치원, 장안벚꽃로유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "dee8d3b2",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "세하유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장안벚꽃로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DFKlC-cSeDv%22%20%22%EC%84%B8%ED%95%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EC%B2%B4%ED%97%98%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "세하유치원은 로컬 원장부에서 단일 명칭이며 동대문구·장안동·장안벚꽃로 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1": [
+      {
+        "id": "rev-1ba27b22",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "서울 동대문 정원유치원 부모참여수업 SNS",
+        "url": "https://www.instagram.com/reel/DZ4oOZQIr0U/",
+        "source": "other",
+        "sourceName": "Instagram · 동대문 정원유치원",
+        "snippet": "정원유치원 부모참여수업과 동대문구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 동대문구 정원유치원의 부모참여수업 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "정원유치원 부모참여수업과 동대문구 문맥이 확인되는 Instagram 검색 결과. 정원유치원 동명이 있어 서울 동대문구 원장부 주소와 맞는 기관으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ffc61976",
+        "structuredFields": {
+          "kindergartenName": "정원유치원",
+          "kindergartenAddress": "서울특별시 동대문구 사가정로 276-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ4oOZQIr0U%22+%22%EC%A0%95%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%99%EB%8C%80%EB%AC%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "정원유치원 동명이 있어 동대문구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4oOZQIr0U/",
+          "normalizedUrl": "www.instagram.com/reel/dz4oozqir0u",
+          "normalizedText": "서울 동대문 정원유치원 부모참여수업 sns 정원유치원 부모참여수업과 동대문구 문맥이 확인되는 instagram 검색 결과. 서울 동대문구 정원유치원의 부모참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "ffc61976",
+          "extractedAt": "2026-06-30T22:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "정원유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 276-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ4oOZQIr0U%22+%22%EC%A0%95%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%99%EB%8C%80%EB%AC%B8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "정원유치원 동명이 있어 동대문구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-abe66af3",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "서울 동대문구 정원유치원 상추쌈밥 요리활동 Instagram",
+        "url": "https://www.instagram.com/reel/DYxjEB-zXaR/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "jungone_kinder 계정에서 동대문구 장안동 정원유치원 원아들이 상추쌈밥 요리활동을 진행한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "cooking",
+          "classroom-activity"
+        ],
+        "date": "2026-05-25",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "6a0d8d66",
+        "structuredFields": {
+          "kindergartenName": "정원유치원",
+          "kindergartenAddress": "서울특별시 동대문구 사가정로 276-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYxjEB-zXaR%22+%22jungone_kinder%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYxjEB-zXaR/",
+          "normalizedUrl": "www.instagram.com/reel/dyxjeb-zxar",
+          "normalizedText": "서울 동대문구 정원유치원 상추쌈밥 요리활동 instagram jungone_kinder 계정에서 동대문구 장안동 정원유치원 원아들이 상추쌈밥 요리활동을 진행한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "6a0d8d66",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "정원유치원",
+            "kindergartenAddress": "서울특별시 동대문구 사가정로 276-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYxjEB-zXaR%22+%22jungone_kinder%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ed83-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7fddd3d0",
+        "kindergartenId": "1ecec08c-ed83-b044-e053-0a32095ab044",
+        "kindergartenName": "새일문유치원",
+        "title": "서울 동대문 새일문유치원 치아건강 Instagram Post",
+        "url": "https://www.instagram.com/p/DBgAgcaPKix/",
+        "source": "other",
+        "sourceName": "Instagram · 새일문유치원",
+        "snippet": "새일문유치원 계정의 치아건강 게시물 검색 결과에서 점심식사와 양치 후 자일리톨로 건강한 치아를 유지하는 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental-health",
+          "health-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "96651fd6",
+        "structuredFields": {
+          "kindergartenName": "새일문유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBgAgcaPKix%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새일문유치원은 로컬 원장부 단일 매칭이며 동대문구·장안동 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBgAgcaPKix/",
+          "normalizedUrl": "www.instagram.com/p/dbgagcapkix",
+          "normalizedText": "서울 동대문 새일문유치원 치아건강 instagram post 새일문유치원 계정의 치아건강 게시물 검색 결과에서 점심식사와 양치 후 자일리톨로 건강한 치아를 유지하는 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "96651fd6",
+          "extractedAt": "2026-07-02T19:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새일문유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBgAgcaPKix%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%98%EC%95%84%EA%B1%B4%EA%B0%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새일문유치원은 로컬 원장부 단일 매칭이며 동대문구·장안동 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2d8114ae",
+        "kindergartenId": "1ecec08c-ed83-b044-e053-0a32095ab044",
+        "kindergartenName": "새일문유치원",
+        "title": "서울 새일문유치원 물놀이 여름캠프 Instagram Post",
+        "url": "https://www.instagram.com/p/CgvXJnMvshB/",
+        "source": "other",
+        "sourceName": "Instagram · 새일문유치원",
+        "snippet": "새일문유치원 계정 게시물 검색 결과에서 여름방학 전 물놀이 여름캠프 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "summer-camp",
+          "water-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:56.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2d8114ae",
+        "structuredFields": {
+          "kindergartenName": "새일문유치원",
+          "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CgvXJnMvshB%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%97%AC%EB%A6%84%EC%BA%A0%ED%94%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새일문유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CgvXJnMvshB/",
+          "normalizedUrl": "www.instagram.com/p/cgvxjnmvshb",
+          "normalizedText": "서울 새일문유치원 물놀이 여름캠프 instagram post 새일문유치원 계정 게시물 검색 결과에서 여름방학 전 물놀이 여름캠프 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "2d8114ae",
+          "extractedAt": "2026-07-02T23:59:56.000Z",
+          "structuredFields": {
+            "kindergartenName": "새일문유치원",
+            "kindergartenAddress": "서울특별시 동대문구 장한로 165",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CgvXJnMvshB%22%20%22%EC%83%88%EC%9D%BC%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%97%AC%EB%A6%84%EC%BA%A0%ED%94%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새일문유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0d38-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e3ccfd69",
+        "kindergartenId": "1ecec08d-0d38-b044-e053-0a32095ab044",
+        "kindergartenName": "경희유치원",
+        "title": "서울 경희유치원 봄봄동물병원 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/Biv9NrhBU6G/",
+        "source": "other",
+        "sourceName": "Instagram · 봄봄동물병원",
+        "snippet": "봄봄동물병원 계정 게시물 검색 결과에서 회기 경희유치원 아이들이 동물병원 견학을 온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "animal-hospital",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:54.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e3ccfd69",
+        "structuredFields": {
+          "kindergartenName": "경희유치원",
+          "kindergartenAddress": "서울특별시 동대문구 경희대로 26",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Biv9NrhBU6G%22%20%22%EA%B2%BD%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EB%B4%84%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "회기 단서로 로컬 서울 동대문구 경희유치원과 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Biv9NrhBU6G/",
+          "normalizedUrl": "www.instagram.com/p/biv9nrhbu6g",
+          "normalizedText": "서울 경희유치원 봄봄동물병원 견학 instagram post 봄봄동물병원 계정 게시물 검색 결과에서 회기 경희유치원 아이들이 동물병원 견학을 온 단서가 확인된다.",
+          "htmlSnapshotHash": "e3ccfd69",
+          "extractedAt": "2026-07-02T23:59:54.000Z",
+          "structuredFields": {
+            "kindergartenName": "경희유치원",
+            "kindergartenAddress": "서울특별시 동대문구 경희대로 26",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Biv9NrhBU6G%22%20%22%EA%B2%BD%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EB%B4%84%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "회기 단서로 로컬 서울 동대문구 경희유치원과 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:54.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastCuratedAt": "2026-06-26T08:56:13.301Z"
+  }
 }

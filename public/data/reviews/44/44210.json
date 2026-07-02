@@ -1,90 +1,219 @@
 {
-  "version": "2026-06-26",
-  "totalCount": 6,
-  "kindergartenCount": 5,
+  "version": "2026-07-01",
+  "totalCount": 4,
+  "kindergartenCount": 4,
   "reviews": {
-    "1ecec08d-0f8a-b044-e053-0a32095ab044": [
+    "1ecec08c-fb8b-b044-e053-0a32095ab044": [
       {
-        "id": "rev-1000-fjk4",
-        "kindergartenId": "1ecec08d-0f8a-b044-e053-0a32095ab044",
-        "title": "서산 장애인식개선교육♬샌드아트 샌드안나와 함께",
-        "url": "https://blog.naver.com/sandanna/223589101000",
-        "source": "naver_blog",
-        "sourceName": "모래에 담긴 감성♡샌드아트 샌드안나",
-        "snippet": "안녕하세요~~~ 전국 방방곡곡을 누비는 샌드아트 작가 샌드안나입니다~~ ^^ 이번엔 서산에 다녀온 공연후기! 돌고돌아 들어가는 휴게소. 행담도휴게소 한번 찍고~~~♬ 서산 늘푸른 유치원에 도착했습니다!...",
-        "date": "2024-09-19",
-        "collectedAt": "2026-02-18T06:13:58.462Z",
-        "relevanceScore": 6
+        "id": "rev-bca524f8",
+        "kindergartenId": "1ecec08c-fb8b-b044-e053-0a32095ab044",
+        "title": "서산 서정유치원 학부모 연수 SNS",
+        "url": "https://www.instagram.com/p/DZd6jqCzI4x/",
+        "source": "other",
+        "sourceName": "Instagram · 서정유치원",
+        "snippet": "서정유치원 학부모 연수와 원명 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서산 서정유치원의 학부모 연수 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "서정유치원 학부모 연수와 원명 문맥이 확인되는 Instagram 검색 결과. 학부모 대상 연수 정보로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T20:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4df27b20",
+        "structuredFields": {
+          "kindergartenName": "서정유치원",
+          "kindergartenAddress": "충청남도 서산시 부춘3로 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZd6jqCzI4x%22+%22%EC%84%9C%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "서정유치원 원명과 서산 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZd6jqCzI4x/",
+          "normalizedUrl": "www.instagram.com/p/dzd6jqczi4x",
+          "normalizedText": "서산 서정유치원 학부모 연수 sns 서정유치원 학부모 연수와 원명 문맥이 확인되는 instagram 검색 결과. 서산 서정유치원의 학부모 연수 instagram 검색 결과.",
+          "htmlSnapshotHash": "4df27b20",
+          "extractedAt": "2026-06-30T20:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "서정유치원",
+            "kindergartenAddress": "충청남도 서산시 부춘3로 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZd6jqCzI4x%22+%22%EC%84%9C%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "서정유치원 원명과 서산 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fbf1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ac21868f",
+        "kindergartenId": "1ecec08c-fbf1-b044-e053-0a32095ab044",
+        "title": "서산 삼성유치원 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/C8dQl_Ky992/",
+        "source": "other",
+        "sourceName": "Instagram · 서산 삼성유치원",
+        "snippet": "Instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2389ed28",
+        "structuredFields": {
+          "kindergartenName": "삼성유치원",
+          "kindergartenAddress": "충청남도 서산시 남부순환로 767",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C8dQl_Ky992/",
+          "normalizedUrl": "www.instagram.com/p/c8dql_ky992",
+          "normalizedText": "서산 삼성유치원 학부모참여수업 instagram instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2389ed28",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성유치원",
+            "kindergartenAddress": "충청남도 서산시 남부순환로 767",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fbef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a7cb1141",
+        "kindergartenId": "1ecec08c-fbef-b044-e053-0a32095ab044",
+        "title": "서산 대장유치원 블루베리농장 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZcbr6wzS98/",
+        "source": "other",
+        "sourceName": "Instagram · 대장유치원",
+        "snippet": "대장유치원 계정에서 블루베리체험, 자연체험, 블루베리 농장 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "blueberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2dd24bea",
+        "structuredFields": {
+          "kindergartenName": "대장유치원",
+          "kindergartenAddress": "충청남도 서산시 탑성골2길 33",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZcbr6wzS98%22+%22%EB%8C%80%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대장유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZcbr6wzS98/",
+          "normalizedUrl": "www.instagram.com/reel/dzcbr6wzs98",
+          "normalizedText": "서산 대장유치원 블루베리농장 체험 instagram reel 대장유치원 계정에서 블루베리체험, 자연체험, 블루베리 농장 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "2dd24bea",
+          "extractedAt": "2026-07-02T12:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대장유치원",
+            "kindergartenAddress": "충청남도 서산시 탑성골2길 33",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZcbr6wzS98%22+%22%EB%8C%80%EC%9E%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대장유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0174-b044-e053-0a32095ab044": [
       {
-        "id": "rev-5320-efcq",
+        "id": "rev-36f0d5b3",
         "kindergartenId": "1ecec08d-0174-b044-e053-0a32095ab044",
-        "title": "서산 해맑은 유치원으로 배송된 예쁜 식탁, 소파 이야기~♥",
-        "url": "http://cafe.naver.com/seosanmom/1075320",
-        "source": "naver_cafe",
-        "sourceName": "★서산 엄마들의 모임★",
-        "snippet": "얼마전 서산 해맑은 유치원으로 배송된 가구들 이야기를 해볼까 합니다. 서산 엄마맘 회원님들 중에서도... 최용준가구갤러리의 다양한 배송후기와 소식들을 확인해보세요~ 최용준가구갤러리 서산 가구점...",
+        "title": "서산 해맑은유치원 발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/CvABprQRmZD/",
+        "source": "other",
+        "sourceName": "Instagram · 김보경",
+        "snippet": "학부모 게시물에서 유치원 첫 발표회 준비와 참여 경험 문맥, 서산·해맑은유치원·해맑은유치원발표회 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "presentation"
+        ],
         "date": null,
-        "collectedAt": "2026-02-18T06:13:58.463Z",
-        "relevanceScore": 4
-      }
-    ],
-    "1ecec08c-f1ef-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-6501-i0sd",
-        "kindergartenId": "1ecec08c-f1ef-b044-e053-0a32095ab044",
-        "title": "서산초등학교 병설유치원 버블매직쇼 후기 버블타이거와...",
-        "url": "https://blog.naver.com/mcrstar/223927746501",
-        "source": "naver_blog",
-        "sourceName": "퍼니키즈컴퍼니",
-        "snippet": "서산초 병설유치원의 강당은 그날 하루 내내 웃음과 행복이 피어나는 공간이었습니다. 비눗방울은 사라졌지만 웃음은 남았다 비눗방울은 바람 속에서 스치듯 사라졌지만, 그날 서산초등학교 병설유치원에서...",
-        "date": "2025-07-10",
-        "collectedAt": "2026-02-18T06:13:58.463Z",
-        "relevanceScore": 3
-      }
-    ],
-    "1ecec08c-fb8b-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-3447-pxx7",
-        "kindergartenId": "1ecec08c-fb8b-b044-e053-0a32095ab044",
-        "title": "서산 디저트 구움찰떡 건강한 쌀디저트로어버이날...",
-        "url": "https://blog.naver.com/twosong_/223094273447",
-        "source": "naver_blog",
-        "sourceName": "착한여우 투쏭 소담한 일상",
-        "snippet": "앞- 서산 서정유치원 옆  010.****.**** 안녕하세요 : ) 오늘은 제가 옛날에 살았던 동네에 놀러 왔는데... 맛후기도 밑에 써놓을겠습니당 ~!!!! 쌀로혜윰사장님 인스타 쌀로혜윰SNS에요 ~ 참고해서 봐주세요 구움찰떡...",
-        "date": "2023-05-05",
-        "collectedAt": "2026-02-18T06:13:58.463Z",
-        "relevanceScore": 6
-      }
-    ],
-    "c5917931-4f5d-4132-bfe4-f8a7c254004a": [
-      {
-        "id": "rev-8525-xybc",
-        "kindergartenId": "c5917931-4f5d-4132-bfe4-f8a7c254004a",
-        "title": "해피와 함께한 특별한 하루! 서산 예천새뜰유치원 공연 후기",
-        "url": "https://blog.naver.com/giplay/224014108525",
-        "source": "naver_blog",
-        "sourceName": "전통공연 합굿마을",
-        "snippet": "오늘은 충남 서산 예천새뜰유치원 공연 진행 후기를 말씀드려요  2025년 9월 18일 오전 9시  충남 서산 예천새뜰유치원 야외 마당에서 펼쳐진 풍물마당놀이 이날은 정말 특별한 하루였어요! 예천새뜰유치원...",
-        "date": "2025-09-19",
-        "collectedAt": "2026-02-18T06:13:58.463Z",
-        "relevanceScore": 7
-      },
-      {
-        "id": "rev-1926-w37l",
-        "kindergartenId": "c5917931-4f5d-4132-bfe4-f8a7c254004a",
-        "title": "서산 예천새뜰유치원 입학설명회 행사 선물 답례떡",
-        "url": "https://blog.naver.com/daldalhye_cake/223702511926",
-        "source": "naver_blog",
-        "sourceName": "달달혜케이크",
-        "snippet": "만족스럽다는 후기로 가득한 달달혜케이크의 후기를 보고 싶으시다면 아래 링크를 눌러 주세요.!... 서산잔치떡 #서산예천새뜰유치원입학설명회 #서산입학설명회선물 #서산떡맞춤 #서산떡예약...",
-        "date": "2024-12-23",
-        "collectedAt": "2026-02-18T06:13:58.463Z",
-        "relevanceScore": 7
+        "collectedAt": "2026-07-02T21:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9cc636a5",
+        "structuredFields": {
+          "kindergartenName": "해맑은유치원",
+          "kindergartenAddress": "충청남도 서산시 석남2로 18-13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CvABprQRmZD%22+%22%EC%84%9C%EC%82%B0%22+%22%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "해맑은유치원 동명이 있으나 서산·해맑은유치원발표회 단서가 서산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CvABprQRmZD/",
+          "normalizedUrl": "www.instagram.com/p/cvabprqrmzd",
+          "normalizedText": "서산 해맑은유치원 발표회 instagram post 학부모 게시물에서 유치원 첫 발표회 준비와 참여 경험 문맥, 서산·해맑은유치원·해맑은유치원발표회 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "9cc636a5",
+          "extractedAt": "2026-07-02T21:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해맑은유치원",
+            "kindergartenAddress": "충청남도 서산시 석남2로 18-13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CvABprQRmZD%22+%22%EC%84%9C%EC%82%B0%22+%22%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "해맑은유치원 동명이 있으나 서산·해맑은유치원발표회 단서가 서산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastCuratedAt": "2026-06-26T08:56:13.406Z"
+  }
 }

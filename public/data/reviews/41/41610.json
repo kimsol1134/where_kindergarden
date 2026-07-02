@@ -1,86 +1,675 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 6,
-  "kindergartenCount": 4,
+  "version": "2026-07-01",
+  "totalCount": 15,
+  "kindergartenCount": 6,
   "reviews": {
-    "1ecec08d-070e-b044-e053-0a32095ab044": [
+    "1ecec08c-f7c2-b044-e053-0a32095ab044": [
       {
-        "id": "rev-8527-qkag",
-        "kindergartenId": "1ecec08d-070e-b044-e053-0a32095ab044",
-        "title": "2025 대한민국 STN 사회공헌대상 -미래교육혁신상 수상 하은",
-        "url": "https://blog.naver.com/manageu5/224095678527",
+        "id": "rev-6cbfdcde",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "친구아이가 다니고있어 추천받아서 입학했는데 몬테소리수업이나 모래놀이등 좋은점이 많아서 잘다니고 있어요 ~ 내년한해남았는데 아쉬워요~~",
+        "url": "https://cafe.naver.com/moviecoffee/6406?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo2NDA2LCJpc3N1ZWRBdCI6MTc4MjQ1OTA0Mzk3NX0.dgnXSPCg3utlgaYVJKiJDUGyWWJrUejOBb4fgNnOym8",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.05.22.Keep에 저장Keep에 바로가기경기광주성모유치원에 다녀요경기도 광주 성모 유치원 보내고 있어요",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:30:44.586Z",
+        "relevanceScore": 8,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "1b89049d",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/moviecoffee/6406?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo2NDA2LCJpc3N1ZWRBdCI6MTc4MjQ1OTA0Mzk3NX0.dgnXSPCg3utlgaYVJKiJDUGyWWJrUejOBb4fgNnOym8",
+          "normalizedUrl": "cafe.naver.com/moviecoffee/6406?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6im1vdmlly29mzmvliiwiyxj0awnszulkijo2nda2lcjpc3n1zwrbdci6mtc4mjq1ota0mzk3nx0.dgnxspcg3utlgayvjkijdugywwjruejobb4fgnnoym8",
+          "normalizedText": "친구아이가 다니고있어 추천받아서 입학했는데 몬테소리수업이나 모래놀이등 좋은점이 많아서 잘다니고 있어요 ~ 내년한해남았는데 아쉬워요~~ 친구아이가 다니고있어 추천받아서 입학했는데 몬테소리수업이나 모래놀이등 좋은점이 많아서 잘다니고 있어요 ~ 내년한해남았는데 아쉬워요~~ 경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.05.22.keep에 저장keep에 바로가기경기광주성모유치원에 다녀요경기도 광주 성모 유치원 보내고 있어요",
+          "htmlSnapshotHash": "1b89049d",
+          "extractedAt": "2026-06-26T07:30:44.586Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
+      },
+      {
+        "id": "rev-c3b27691",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "경기도 광주 성모 유치원 보내고 있어요",
+        "url": "https://cafe.naver.com/moviecoffee/5595?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo1NTk1LCJpc3N1ZWRBdCI6MTc4MjQ1OTA0Mzk3NX0.X_m_hj-jcr-Aqde4vOdp-EuFcNF8g6YeMkUHK9TOoZI",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.05.22.Keep에 저장Keep에 바로가기경기광주성모유치원에 다녀요친구아이가 다니고있어 추천받아서 입학했는데 몬테소리수업이나 모래놀이등 좋은점이 많아서 잘다니고 있어요 ~ 내년한해남았는데 아쉬워요~~",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:30:45.017Z",
+        "relevanceScore": 8,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "aecc7a6c",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/moviecoffee/5595?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo1NTk1LCJpc3N1ZWRBdCI6MTc4MjQ1OTA0Mzk3NX0.X_m_hj-jcr-Aqde4vOdp-EuFcNF8g6YeMkUHK9TOoZI",
+          "normalizedUrl": "cafe.naver.com/moviecoffee/5595?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6im1vdmlly29mzmvliiwiyxj0awnszulkijo1ntk1lcjpc3n1zwrbdci6mtc4mjq1ota0mzk3nx0.x_m_hj-jcr-aqde4vodp-eufcnf8g6yemkuhk9toozi",
+          "normalizedText": "경기도 광주 성모 유치원 보내고 있어요 경기도 광주 성모 유치원 보내고 있어요 경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.05.22.keep에 저장keep에 바로가기경기광주성모유치원에 다녀요친구아이가 다니고있어 추천받아서 입학했는데 몬테소리수업이나 모래놀이등 좋은점이 많아서 잘다니고 있어요 ~ 내년한해남았는데 아쉬워요~~",
+          "htmlSnapshotHash": "aecc7a6c",
+          "extractedAt": "2026-06-26T07:30:45.017Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
+      },
+      {
+        "id": "rev-282690bd",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "경기 광주 성모유치원 학부모 참여수업 SNS",
+        "url": "https://www.instagram.com/reel/DZoMvMdAR1g/",
+        "source": "other",
+        "sourceName": "Instagram · 경기 광주 성모유치원",
+        "snippet": "경기 광주 성모유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경기 광주 성모유치원의 학부모 참여수업 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "경기 광주 성모유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과. 성모유치원 동명이 많아 경기 광주 지역 문맥과 원장부 주소가 맞는 기관으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T21:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c417a2cc",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경기도 광주시 경안안길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZoMvMdAR1g%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성모유치원 동명이 많아 경기 광주 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZoMvMdAR1g/",
+          "normalizedUrl": "www.instagram.com/reel/dzomvmdar1g",
+          "normalizedText": "경기 광주 성모유치원 학부모 참여수업 sns 경기 광주 성모유치원 학부모 참여수업 문맥이 확인되는 instagram 검색 결과. 경기 광주 성모유치원의 학부모 참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "c417a2cc",
+          "extractedAt": "2026-06-30T21:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZoMvMdAR1g%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성모유치원 동명이 많아 경기 광주 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T21:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ba9be1e5",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "경기 광주 성모유치원 가을산책 Instagram",
+        "url": "https://www.instagram.com/p/DAnDRGvSHh3/",
+        "source": "other",
+        "sourceName": "Instagram · 경기광주성모유치원",
+        "snippet": "Instagram 검색 결과에서 경기광주성모유치원, 경기광주유치원, 경안동, 가을산책, 원아모집중 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "226a9860",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경기도 광주시 경안안길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAnDRGvSHh3%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAnDRGvSHh3/",
+          "normalizedUrl": "www.instagram.com/p/dandrgvshh3",
+          "normalizedText": "경기 광주 성모유치원 가을산책 instagram instagram 검색 결과에서 경기광주성모유치원, 경기광주유치원, 경안동, 가을산책, 원아모집중 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "226a9860",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAnDRGvSHh3%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-192e8c22",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "title": "경기 광주 성모유치원 한글날 활동 Instagram",
+        "url": "https://www.instagram.com/p/DA95StayBFY/",
+        "source": "other",
+        "sourceName": "Instagram · 경기광주성모유치원",
+        "snippet": "Instagram 검색 결과에서 경기광주성모유치원, 경기광주유치원, 한글날, 원아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "language-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "bd520648",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경기도 광주시 경안안길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA95StayBFY%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA95StayBFY/",
+          "normalizedUrl": "www.instagram.com/p/da95staybfy",
+          "normalizedText": "경기 광주 성모유치원 한글날 활동 instagram instagram 검색 결과에서 경기광주성모유치원, 경기광주유치원, 한글날, 원아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "bd520648",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA95StayBFY%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-eaae1ad5",
+        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
+        "kindergartenName": "성모유치원",
+        "title": "경기광주 성모유치원 7세 졸업여행 Instagram Post",
+        "url": "https://www.instagram.com/p/DEmQxOtSEhY/",
+        "source": "other",
+        "sourceName": "Instagram · 경기광주성모유치원",
+        "snippet": "Instagram 검색 결과에서 경기광주성모유치원, 7세 졸업여행, 경기도안전체험관, 송암스페이스센터, 천문대 단서가 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "graduation-trip",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경기도 광주시 경안안길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DEmQxOtSEhY%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%97%AC%ED%96%89%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DEmQxOtSEhY/",
+          "regionEvidence": [
+            "경기광주성모유치원",
+            "경기도 광주시 경안안길 44",
+            "졸업여행"
+          ]
+        },
+        "evidenceChecksum": "5a72763f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DEmQxOtSEhY/",
+          "normalizedUrl": "www.instagram.com/p/demqxotsehy",
+          "normalizedText": "경기광주 성모유치원 7세 졸업여행 instagram post instagram 검색 결과에서 경기광주성모유치원, 7세 졸업여행, 경기도안전체험관, 송암스페이스센터, 천문대 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "0281f63d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경기도 광주시 경안안길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DEmQxOtSEhY%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%97%AC%ED%96%89%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DEmQxOtSEhY/",
+            "regionEvidence": [
+              "경기광주성모유치원",
+              "경기도 광주시 경안안길 44",
+              "졸업여행"
+            ]
+          }
+        }
+      }
+    ],
+    "1ecec08d-0e8d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f0802967",
+        "kindergartenId": "1ecec08d-0e8d-b044-e053-0a32095ab044",
+        "title": "태전동에서 고산동으로 이전한 태전한솔유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=jinha1106&logNo=224264218828",
         "source": "naver_blog",
-        "sourceName": "엠유 공식 블로그 ⎮ All That Personal brand MU",
-        "snippet": "경기 광주 하은유치원의 하은 원장이 ‘미래교육혁신상’ 수상자로 선정되었습니다. 2025 STN... 시상식 현장은 추후 상세 후기로도 전해드릴 예정이니, 하은 원장이 열어갈 미래 유아교육의 다음 페이지에...",
-        "date": "2025-12-02",
-        "collectedAt": "2026-02-18T06:13:58.350Z",
-        "relevanceScore": 1
+        "sourceName": "네이버 블로그",
+        "snippet": "새로운 유치원 키즈카페 같은 실내놀이터 복도만 봐도 ㅎㄷㄷ 소강당엔 에어바운스 뛰느라 힘들지만 아이들은 기운이 넘쳐 한층에 교실이 여덟개라니.. 유치원 마당에서 즐기는 군고구마~ #경기광주유치원 #태전동고산동유치원 #숲유치원 #한솔유치원 #태전한솔유치원#군고구마",
+        "summary": "새로운 유치원 키즈카페 같은 실내놀이터 복도만 봐도 ㅎㄷㄷ 소강당엔 에어바운스 뛰느라 힘들지만 아이들은 기운이 넘쳐 한층에 교실이 여덟개라니.. 유치원 마당에서 즐기는 군고구마~ #경기광주유치원 #태전동고산동유치원 #숲유치원 #한솔유치원 #태전한솔유치원#군고구마",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:27:05.016Z",
+        "relevanceScore": 4,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a5c1ac1d",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=jinha1106&logNo=224264218828",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=jinha1106&logno=224264218828",
+          "normalizedText": "태전동에서 고산동으로 이전한 태전한솔유치원 10 새로운 유치원 키즈카페 같은 실내놀이터 복도만 봐도 ㅎㄷㄷ 소강당엔 에어바운스 뛰느라 힘들지만 아이들은 기운이 넘쳐 한층에 교실이 여덟개라니.. 유치원 마당에서 즐기는 군고구마~ #경기광주유치원 #태전동고산동유치원 #숲유치원 #한솔유치원 #태전한솔유치원#군고구마 새로운 유치원 키즈카페 같은 실내놀이터 복도만 봐도 ㅎㄷㄷ 소강당엔 에어바운스 뛰느라 힘들지만 아이들은 기운이 넘쳐 한층에 교실이 여덟개라니.. 유치원 마당에서 즐기는 군고구마~ #경기광주유치원 #태전동고산동유치원 #숲유치원 #한솔유치원 #태전한솔유치원#군고구마 새로운 유치원 키즈카페 같은 실내놀이터 복도만 봐도 ㅎㄷㄷ 소강당엔 에어바운스 뛰느라 힘들지만 아이들은 기운이 넘쳐 한층에 교실이 여덟개라니.. 유치원 마당에서 즐기는 군고구마~ #경기광주유치원 #태전동고산동유치원 #숲유치원 #한솔유치원 #태전한솔유치원#군고구마",
+          "htmlSnapshotHash": "a5c1ac1d",
+          "extractedAt": "2026-06-26T07:27:05.016Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%83%9C%EC%A0%84%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "태전한솔유치원",
+            "kindergartenAddress": "경기도 광주시 태봉로42번길 34",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%83%9C%EC%A0%84%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "168cbafe-5ffe-4e9f-8b66-97b7695b8ec7": [
+      {
+        "id": "rev-3dc27699",
+        "kindergartenId": "168cbafe-5ffe-4e9f-8b66-97b7695b8ec7",
+        "title": "경기도 광주 좋은친구들유치원 보내고 있습니다 선생님들이 워낙 정이 많으시고 잘 챙겨주셔서 아이가 문제없이 무럭무럭 잘 자라고 있네요 자주 소통하고 싶어요 ~",
+        "url": "https://cafe.naver.com/moviecoffee/5206?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo1MjA2LCJpc3N1ZWRBdCI6MTc4MjQ1ODkzODI0OX0.VqVj15OtWQ-JYXOkDKl-WD-R5PibII2Xq714AvU1s_0",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.03.17.Keep에 저장Keep에 바로가기경기도 광주 좋은친구들유치원 다녀요",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:28:58.832Z",
+        "relevanceScore": 5,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "6f9d9343",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/moviecoffee/5206?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6Im1vdmllY29mZmVlIiwiYXJ0aWNsZUlkIjo1MjA2LCJpc3N1ZWRBdCI6MTc4MjQ1ODkzODI0OX0.VqVj15OtWQ-JYXOkDKl-WD-R5PibII2Xq714AvU1s_0",
+          "normalizedUrl": "cafe.naver.com/moviecoffee/5206?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6im1vdmlly29mzmvliiwiyxj0awnszulkijo1mja2lcjpc3n1zwrbdci6mtc4mjq1odkzodi0ox0.vqvj15otwq-jyxokdkl-wd-r5pibii2xq714avu1s_0",
+          "normalizedText": "경기도 광주 좋은친구들유치원 보내고 있습니다 선생님들이 워낙 정이 많으시고 잘 챙겨주셔서 아이가 문제없이 무럭무럭 잘 자라고 있네요 자주 소통하고 싶어요 ~ 경기도 광주 좋은친구들유치원 보내고 있습니다 선생님들이 워낙 정이 많으시고 잘 챙겨주셔서 아이가 문제없이 무럭무럭 잘 자라고 있네요 자주 소통하고 싶어요 ~ 경기광주피플 (교육 육아 맛집 공동구매 학원 병원 동호회 행사)2025.03.17.keep에 저장keep에 바로가기경기도 광주 좋은친구들유치원 다녀요",
+          "htmlSnapshotHash": "6f9d9343",
+          "extractedAt": "2026-06-26T07:28:58.832Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%A2%8B%EC%9D%80%EC%B9%9C%EA%B5%AC%EB%93%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "좋은친구들유치원",
+            "kindergartenAddress": "경기도 광주시 경충대로1461번길 33",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%A2%8B%EC%9D%80%EC%B9%9C%EA%B5%AC%EB%93%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
+      },
+      {
+        "id": "rev-5f06a1fe",
+        "kindergartenId": "168cbafe-5ffe-4e9f-8b66-97b7695b8ec7",
+        "title": "경기 광주 좋은친구들유치원 유아모집 Instagram",
+        "url": "https://www.instagram.com/p/DLUczBax2RL/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은친구들유치원",
+        "snippet": "Instagram 검색 결과에서 좋은친구들유치원, 경기광주유치원, 유아모집과 유초 이음학교 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "elementary-transition"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "e7ed1035",
+        "structuredFields": {
+          "kindergartenName": "좋은친구들유치원",
+          "kindergartenAddress": "경기도 광주시 경충대로1461번길 33",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLUczBax2RL%22+%22%EC%A2%8B%EC%9D%80%EC%B9%9C%EA%B5%AC%EB%93%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLUczBax2RL/",
+          "normalizedUrl": "www.instagram.com/p/dluczbax2rl",
+          "normalizedText": "경기 광주 좋은친구들유치원 유아모집 instagram instagram 검색 결과에서 좋은친구들유치원, 경기광주유치원, 유아모집과 유초 이음학교 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "e7ed1035",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "좋은친구들유치원",
+            "kindergartenAddress": "경기도 광주시 경충대로1461번길 33",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLUczBax2RL%22+%22%EC%A2%8B%EC%9D%80%EC%B9%9C%EA%B5%AC%EB%93%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f16e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-848f3d62",
+        "kindergartenId": "1ecec08c-f16e-b044-e053-0a32095ab044",
+        "title": "[역동 유치원 추천] 믿고 맡기는 든든한 셔틀과 안전 보육 양벌한솔 유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=seok88ok&logNo=224237023659",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "역동 주변에서 유치원을 선택하실 때 부모님들이 가장 중요하게 생각하시는 부분 중 하나가 바로 통학의 편리함과 안전이 아닐까 싶어요^^ 아무리 교육 환경이 좋아도 아이가 오가는 길이 불안하거나 너무 멀면 망설여지게 마련이잖아요ㅎㅎ 그래서 역동까지 구석구석 안전한 셔틀버스를 운행하며 부모님들의 발이 되어주고 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님...",
+        "summary": "역동 주변에서 유치원을 선택하실 때 부모님들이 가장 중요하게 생각하시는 부분 중 하나가 바로 통학의 편리함과 안전이 아닐까 싶어요^^ 아무리 교육 환경이 좋아도 아이가 오가는 길이 불안하거나 너무 멀면 망설여지게 마련이잖아요ㅎㅎ 그래서 역동까지 구석구석 안전한 셔틀버스를 운행하며 부모님들의 발이 되어주고 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님 반 아이들이 씩씩하게 사회성을 기르기에 이보다 더 안전하고 포근한 곳은 없거든요~~ 이곳은 아이들이 안전한 환경 속에서 마음껏 에너지를 발산할 수 있도록 설계된 공간이 정말 돋보이는 곳이에요!! 역동에서 오는 아이들을 위해 매일 정해진 시간에 정확하...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:29:51.294Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a6a57939",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=seok88ok&logNo=224237023659",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=seok88ok&logno=224237023659",
+          "normalizedText": "[역동 유치원 추천] 믿고 맡기는 든든한 셔틀과 안전 보육 양벌한솔 유치원 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님 반 아이들이 씩씩하게 사회성을... 끼워보시길 바래요^^ 유치원 방문 상담을 통해 아이가 생활할 공간을 직접 살펴보시면 마음이 훨씬 편안해지실 겁니다!! 주소: 경기도 광주시 양벌로 145-10 전화문의: 031-763-7005 역동 주변에서 유치원을 선택하실 때 부모님들이 가장 중요하게 생각하시는 부분 중 하나가 바로 통학의 편리함과 안전이 아닐까 싶어요^^ 아무리 교육 환경이 좋아도 아이가 오가는 길이 불안하거나 너무 멀면 망설여지게 마련이잖아요ㅎㅎ 그래서 역동까지 구석구석 안전한 셔틀버스를 운행하며 부모님들의 발이 되어주고 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님... 역동 주변에서 유치원을 선택하실 때 부모님들이 가장 중요하게 생각하시는 부분 중 하나가 바로 통학의 편리함과 안전이 아닐까 싶어요^^ 아무리 교육 환경이 좋아도 아이가 오가는 길이 불안하거나 너무 멀면 망설여지게 마련이잖아요ㅎㅎ 그래서 역동까지 구석구석 안전한 셔틀버스를 운행하며 부모님들의 발이 되어주고 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님 반 아이들이 씩씩하게 사회성을 기르기에 이보다 더 안전하고 포근한 곳은 없거든요~~ 이곳은 아이들이 안전한 환경 속에서 마음껏 에너지를 발산할 수 있도록 설계된 공간이 정말 돋보이는 곳이에요!! 역동에서 오는 아이들을 위해 매일 정해진 시간에 정확하... 역동 주변에서 유치원을 선택하실 때 부모님들이 가장 중요하게 생각하시는 부분 중 하나가 바로 통학의 편리함과 안전이 아닐까 싶어요^^ 아무리 교육 환경이 좋아도 아이가 오가는 길이 불안하거나 너무 멀면 망설여지게 마련이잖아요ㅎㅎ 그래서 역동까지 구석구석 안전한 셔틀버스를 운행하며 부모님들의 발이 되어주고 있는 양벌한솔 유치원을 저희가 강력하게 추천해 드리려고 합니다!! 5세부터 7세까지 형님 반 아이들이 씩씩하게 사회성을 기르기에 이보다 더 안전하고 포근한 곳은 없거든요~~ 이곳은 아이들이 안전한 환경 속에서 마음껏 에너지를 발산할 수 있도록 설계된 공간이 정말 돋보이는 곳이에요!! 역동에서 오는 아이들을 위해 매일 정해진 시간에 정확하게 셔틀이 운영되고 있으며 버스 정류장이 유치원 바로 앞에 위치해 있어 접근성도 아주 훌륭하답니다ㅋㅋ 층간 소음 걱정 없는 넓은 활동실과 아이들의 눈높이에 맞춘 안전 시설물들을 보고 있으면 원장님께서 아이들을 위해 얼마나 세심하게 신경 쓰셨는지 그대로 느껴지실 거예요ㅎㅎ 낯가림이 심하거나 단체 생활을 걱정하던 아이들도 선생님들의 따뜻한 사랑과 칭찬 속에서 금세 적응해 나간답니다^^ 특히나 이곳의 가장 큰 메리트는 자연주의 교육 철학을 통해 아이들의 정서적 안정을 꾀한다는 점이에요~~ 매주 전용 숲으로 떠나 자연의 생명력을 느끼고 맑은 공기를 마시며 뛰노는 시간은 역동 도심에서는 쉽게 경험하기 힘든 아주 귀한 가치를 선물해 주거든요!! 실내 교실에서 벗어나 숲속에서 친구들과 어울리며 호연지기를 기르는 아이들의 모습은 그 자체로 감동이랍니다ㅠㅠ 억지스러운 주입식 교육이 아니라 아이 스스로 배움의 즐거움을 찾을 수 있도록 환경을 만들어주는 것이 이곳의 핵심이에요ㅋㅋ 우리 아이에게 평생 잊지 못할 반짝이는 유아 시절의 추억을 만들어주고 싶으신 역동 부모님들이라면 이제 고민을 멈추셔도 좋습니다~~ 든든한 셔틀 서비스부터 수준 높은 자연 친화적 교육까지 무엇 하나 빠지지 않는 이곳에서 우리 아이의 첫 단추를 제대로 끼워보시길 바래요^^ 유치원 방문 상담을 통해 아이가 생활할 공간을 직접 살펴보시면 마음이 훨씬 편안해지실 겁니다!! 양벌한솔유치원 경기도 광주시 양벌로 145-10 이 블로그의 체크인 이 장소의 다른 글 주소: 경기도 광주시 양벌로 145-10전화문의: 031-763-7005 <본 포스팅은 업체로부터 소정의 원고료를 지원받고 작성되었습니다.>",
+          "htmlSnapshotHash": "a6a57939",
+          "extractedAt": "2026-06-26T07:29:51.294Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "양벌한솔유치원",
+            "kindergartenAddress": "경기도 광주시 양벌로 145-10",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-c27ccc38",
+        "kindergartenId": "1ecec08c-f16e-b044-e053-0a32095ab044",
+        "title": "[고산동 유치원 추천] 다채로운 프로그램으로 아이의 잠재력을 깨우는 양벌한솔 유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=seok88ok&logNo=224237008364",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "고산동 일대에서 우리 아이의 첫 사회생활을 어디서 시작해야 할지 맘카페를 뒤지며 밤잠 설치시는 부모님들의 고민을 저희가 싹 해결해 드리겠습니다ㅠㅠ 5세부터 7세까지는 인지 발달과 정서 성장이 폭발적으로 일어나는 시기인 만큼 어떤 교육 프로그램을 접하느냐가 아이의 평생 습관을 좌우하게 되거든요ㅎㅎ 획일화된 수업 대신 아이들의 다양한 관심사를 충족시켜 주고 잠재력을 무한대로 끌어내 주는 양벌한솔...",
+        "summary": "고산동 일대에서 우리 아이의 첫 사회생활을 어디서 시작해야 할지 맘카페를 뒤지며 밤잠 설치시는 부모님들의 고민을 저희가 싹 해결해 드리겠습니다ㅠㅠ 5세부터 7세까지는 인지 발달과 정서 성장이 폭발적으로 일어나는 시기인 만큼 어떤 교육 프로그램을 접하느냐가 아이의 평생 습관을 좌우하게 되거든요ㅎㅎ 획일화된 수업 대신 아이들의 다양한 관심사를 충족시켜 주고 잠재력을 무한대로 끌어내 주는 양벌한솔 유치원의 알찬 일상을 꼼꼼하게 알려드릴게요!! 이곳은 자연주의 교육을 기본 바탕으로 하면서도 아이들이 지루할 틈이 없도록 매주 새롭고 흥미진진한 특별 활동들이 빵빵하게 채워져 있어요ㅋㅋ 가만히 앉아서 듣기만 하는 수업이 아니라 아이들이 직접 몸으로...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:29:51.559Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "f2cd6142",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=seok88ok&logNo=224237008364",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=seok88ok&logno=224237008364",
+          "normalizedText": "[고산동 유치원 추천] 다채로운 프로그램으로 아이의 잠재력을 깨우는 양벌한솔 유치원 [고산동 유치원 추천] 다채로운 프로그램으로 아이의 잠재력을 깨우는 양벌한솔 유치원 고산동 일대에서 우리 아이의 첫 사회생활을 어디서 시작해야 할지 맘카페를 뒤지며 밤잠 설치시는 부모님들의 고민을 저희가 싹 해결해 드리겠습니다ㅠㅠ 5세부터 7세까지는 인지 발달과 정서 성장이 폭발적으로 일어나는 시기인 만큼 어떤 교육 프로그램을 접하느냐가 아이의 평생 습관을 좌우하게 되거든요ㅎㅎ 획일화된 수업 대신 아이들의 다양한 관심사를 충족시켜 주고 잠재력을 무한대로 끌어내 주는 양벌한솔... 고산동 일대에서 우리 아이의 첫 사회생활을 어디서 시작해야 할지 맘카페를 뒤지며 밤잠 설치시는 부모님들의 고민을 저희가 싹 해결해 드리겠습니다ㅠㅠ 5세부터 7세까지는 인지 발달과 정서 성장이 폭발적으로 일어나는 시기인 만큼 어떤 교육 프로그램을 접하느냐가 아이의 평생 습관을 좌우하게 되거든요ㅎㅎ 획일화된 수업 대신 아이들의 다양한 관심사를 충족시켜 주고 잠재력을 무한대로 끌어내 주는 양벌한솔 유치원의 알찬 일상을 꼼꼼하게 알려드릴게요!! 이곳은 자연주의 교육을 기본 바탕으로 하면서도 아이들이 지루할 틈이 없도록 매주 새롭고 흥미진진한 특별 활동들이 빵빵하게 채워져 있어요ㅋㅋ 가만히 앉아서 듣기만 하는 수업이 아니라 아이들이 직접 몸으로... 고산동 일대에서 우리 아이의 첫 사회생활을 어디서 시작해야 할지 맘카페를 뒤지며 밤잠 설치시는 부모님들의 고민을 저희가 싹 해결해 드리겠습니다ㅠㅠ 5세부터 7세까지는 인지 발달과 정서 성장이 폭발적으로 일어나는 시기인 만큼 어떤 교육 프로그램을 접하느냐가 아이의 평생 습관을 좌우하게 되거든요ㅎㅎ 획일화된 수업 대신 아이들의 다양한 관심사를 충족시켜 주고 잠재력을 무한대로 끌어내 주는 양벌한솔 유치원의 알찬 일상을 꼼꼼하게 알려드릴게요!! 이곳은 자연주의 교육을 기본 바탕으로 하면서도 아이들이 지루할 틈이 없도록 매주 새롭고 흥미진진한 특별 활동들이 빵빵하게 채워져 있어요ㅋㅋ 가만히 앉아서 듣기만 하는 수업이 아니라 아이들이 직접 몸으로 부딪히며 경험하는 놀이 중심의 교육이 실천되고 있답니다~~ 다양한 교구를 활용한 창의력 수업부터 신체 조절 능력을 키워주는 활동까지 커리큘럼의 짜임새가 워낙 훌륭해서 아이들이 아침마다 유치원 가는 시간을 손꼽아 기다리게 돼요^^ 친구들과 함께 프로젝트를 수행하며 양보와 배려를 배우는 모습은 부모님들이 보시기에 정말 대견하실 거예요ㅎㅎ 고산동 지역까지 안전하게 셔틀버스가 운행되고 있어서 맞벌이 부모님들도 안심하고 아이를 맡기실 수 있는 든든한 교육 환경을 자랑한답니다~~ 셔틀 선생님께서도 아이들의 컨디션을 세심하게 살펴주시고 원장님의 확고한 교육 철학 아래 모든 교직원이 아이 한 명 한 명에게 집중하고 있어요!! 시설 관리 또한 매일 철저하게 이루어지고 있어서 청결과 위생에 예민하신 부모님들도 만족도가 매우 높은 편이랍니다ㅋㅋ 우리 아이가 단순히 시간만 보내는 것이 아니라 매일 한 뼘씩 성장하며 자신감 넘치는 모습으로 자라나길 원하신다면 주저하지 마세요~~ 아이들의 웃음소리가 끊이지 않는 유치원 환경을 직접 눈으로 확인해 보시면 왜 고산동 부모님들이 이곳을 믿고 선택하시는지 단번에 알 수 있으실 겁니다!! 상담 예약은 언제나 열려 있으니 편하게 연락하셔서 우리 아이의 밝은 미래를 함께 계획해 보시길 바랄게요^^ 양벌한솔유치원 경기도 광주시 양벌로 145-10 이 블로그의 체크인 이 장소의 다른 글 주소: 경기도 광주시 양벌로 145-10전화문의: 031-763-7005 <본 포스팅은 업체로부터 소정의 원고료를 지원받고 작성되었습니다.>",
+          "htmlSnapshotHash": "f2cd6142",
+          "extractedAt": "2026-06-26T07:29:51.559Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "양벌한솔유치원",
+            "kindergartenAddress": "경기도 광주시 양벌로 145-10",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B4%91%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-807db56b",
+        "kindergartenId": "1ecec08c-f16e-b044-e053-0a32095ab044",
+        "title": "양벌한솔유치원 vs 초월한솔유치원 한솔가족 운동회 후기 및 이어달리기 출전 후기🏃‍♂️🔥",
+        "url": "https://blog.naver.com/PostView.naver?blogId=ddar--&logNo=224280159002",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "양벌한솔유치원 vs 초월한솔유치원오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀,초월한솔유치원은 청팀으로 나뉘어 진행됐는데두 유치원이 함께해서 그런지 규모도 생각보다 훨씬 컸고사람도 정말 많았습니다. 이 운동회는 2년에 한 번 열리는 행사라고 하니더 의미 있게 느껴졌던 것 같습니다.햇빛은 꽤 강했지만하늘은...",
+        "summary": "양벌한솔유치원 vs 초월한솔유치원오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀,초월한솔유치원은 청팀으로 나뉘어 진행됐는데두 유치원이 함께해서 그런지 규모도 생각보다 훨씬 컸고사람도 정말 많았습니다. 이 운동회는 2년에 한 번 열리는 행사라고 하니더 의미 있게 느껴졌던 것 같습니다.햇빛은 꽤 강했지만하늘은 맑고 날씨도 정말 좋았습니다☀️오전 9시에 시작해서11시가 조금 넘어서 마무리됐는데진행이 워낙 매끄러워서 시간 가는 줄 몰랐네요 ㅎㅎ특히 오늘 진행을 맡으신 MC분이 분위기를 정말 잘 살리셨습니다.개회식을 시작으로아이들 달리기,에어봉릴레이, 에펠탑쌓...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:29:54.815Z",
+        "relevanceScore": 4,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "f8559fa7",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=ddar--&logNo=224280159002",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=ddar--&logno=224280159002",
+          "normalizedText": "양벌한솔유치원 vs 초월한솔유치원 한솔가족 운동회 후기 및 이어달리기 출전 후기🏃♂️🔥 양벌한솔유치원 vs 초월한솔유치원 오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀, 초월한솔유치원은 청팀으로 나뉘어 진행됐는데 두 유치원이... 오랜만에 전력질주를 해보니 옛날 감성이 살아났습니다 ㅋㅋ 아이들이 웃고 뛰어다니는 모습을 보면서 결국 이런 기억들이... 양벌한솔유치원 vs 초월한솔유치원오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀,초월한솔유치원은 청팀으로 나뉘어 진행됐는데두 유치원이 함께해서 그런지 규모도 생각보다 훨씬 컸고사람도 정말 많았습니다. 이 운동회는 2년에 한 번 열리는 행사라고 하니더 의미 있게 느껴졌던 것 같습니다.햇빛은 꽤 강했지만하늘은... 양벌한솔유치원 vs 초월한솔유치원오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀,초월한솔유치원은 청팀으로 나뉘어 진행됐는데두 유치원이 함께해서 그런지 규모도 생각보다 훨씬 컸고사람도 정말 많았습니다. 이 운동회는 2년에 한 번 열리는 행사라고 하니더 의미 있게 느껴졌던 것 같습니다.햇빛은 꽤 강했지만하늘은 맑고 날씨도 정말 좋았습니다☀️오전 9시에 시작해서11시가 조금 넘어서 마무리됐는데진행이 워낙 매끄러워서 시간 가는 줄 몰랐네요 ㅎㅎ특히 오늘 진행을 맡으신 mc분이 분위기를 정말 잘 살리셨습니다.개회식을 시작으로아이들 달리기,에어봉릴레이, 에펠탑쌓... 양벌한솔유치원 vs 초월한솔유치원오늘은 딸이 다니는 양벌한솔유치원과 초월한솔유치원이 함께 진행한 '사랑가득 한솔가족 운동회’가 있는 날이었습니다. 양벌한솔유치원은 백팀,초월한솔유치원은 청팀으로 나뉘어 진행됐는데두 유치원이 함께해서 그런지 규모도 생각보다 훨씬 컸고사람도 정말 많았습니다. 이 운동회는 2년에 한 번 열리는 행사라고 하니더 의미 있게 느껴졌던 것 같습니다.햇빛은 꽤 강했지만하늘은 맑고 날씨도 정말 좋았습니다☀️오전 9시에 시작해서11시가 조금 넘어서 마무리됐는데진행이 워낙 매끄러워서 시간 가는 줄 몰랐네요 ㅎㅎ특히 오늘 진행을 맡으신 mc분이 분위기를 정말 잘 살리셨습니다.개회식을 시작으로아이들 달리기,에어봉릴레이, 에펠탑쌓기, 단체 게임, 응원전 등 다양한 프로그램들이 이어졌고생각보다 재미있었습니다. 저도 직접 달리기 선수로 참여했는데요😂평소 운동을 해둔 덕분인지생각보다 몸이 잘 움직여서 다행이었습니다.오랜만에 전력질주를 해보니옛날 감성이 살아났습니다 ㅋㅋ 아이들이 웃고 뛰어다니는 모습을 보면서결국 이런 기억들이 오래 남겠구나 싶었습니다. 행사 하나를 위해수많은 준비를 했을 선생님들, 스텝분들, 원장님들께괜히 더 감사한 마음도 들었습니다.사실 이런 큰 규모 행사는안전사고 없이 끝나는 게 가장 중요한데오늘은 큰 사고 없이 무사히 잘 마무리되어그 부분이 무엇보다 다행이고 감사했습니다.",
+          "htmlSnapshotHash": "f8559fa7",
+          "extractedAt": "2026-06-26T07:29:54.815Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "양벌한솔유치원",
+            "kindergartenAddress": "경기도 광주시 양벌로 145-10",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%96%91%EB%B2%8C%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08d-0e07-b044-e053-0a32095ab044": [
       {
-        "id": "rev-7079-3r0v",
+        "id": "rev-2ff90871",
         "kindergartenId": "1ecec08d-0e07-b044-e053-0a32095ab044",
-        "title": "[광주 마륵동 참치] #광주참치",
-        "url": "https://blog.naver.com/as0380/223542237079",
-        "source": "naver_blog",
-        "sourceName": "로log",
-        "snippet": "참치] #광주참치 [광주 마륵동 참치] #광주참치위치 마륵동 희망가아파트 인근 문정누리 유치원... 참치로 W+300Day 데이트 야무지게 하고 온 #광주마륵동참치 #마륵동참치 #광주상무지구참치 #마륵동광주참치 후기 끝!",
-        "date": "2024-08-09",
-        "collectedAt": "2026-02-18T06:13:58.449Z",
-        "relevanceScore": 4
-      },
-      {
-        "id": "rev-7503-edk5",
-        "kindergartenId": "1ecec08d-0e07-b044-e053-0a32095ab044",
-        "title": "[용인 수지] 2025년 공립단설 수지누리유치원...",
-        "url": "https://blog.naver.com/lph5004/223639647503",
-        "source": "naver_blog",
-        "sourceName": "Busy as Working Mom",
-        "snippet": "오늘은 다녀온 곳은 공립단설 수지 누리유치원입니다. 수지 누리유치원 주소: 경기도 용인시 수지구... 적었는데 방문해보니 더욱 만족스러웠어요. #수지공립유치원 #수지누리유치원설명회 #수지누리유치원",
-        "date": "2024-10-31",
-        "collectedAt": "2026-02-18T06:13:58.449Z",
-        "relevanceScore": 3
-      }
-    ],
-    "abee8f5d-108c-49f8-83c0-b53eca80eabb": [
-      {
-        "id": "rev-0319-uen5",
-        "kindergartenId": "abee8f5d-108c-49f8-83c0-b53eca80eabb",
-        "title": "-전라.광주-9월1일 세차벙개 후기입니닷",
-        "url": "http://cafe.naver.com/gls888/790319",
-        "source": "naver_cafe",
-        "sourceName": "클럽 렉스턴스포츠★쌍용자동차 공식동...",
-        "snippet": "치킨과 15년묵은 인삼주를 쏘신 광주팀장.아기자기님~~ 잘먹었습니다.^^ㅋ 참석해주신 광주 몸빵형님 광주 유치원일진 광주 광견님 광주 피바스님 광주 영진이님과 여친님! 나주 막내유주님 광주팀장 아기자기님...",
+        "title": "경기 광주 누리유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DOsR8qvE5wQ/",
+        "source": "other",
+        "sourceName": "Instagram · 누리유치원",
+        "snippet": "누리유치원 2026학년도 원아모집과 전화 031-763-9085 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경기 광주시 누리유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "누리유치원 2026학년도 원아모집과 전화 031-763-9085 문맥이 확인되는 Instagram 검색 결과다. 누리유치원 동명이 있어 경기 광주 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-02-18T06:13:58.350Z",
-        "relevanceScore": 1
+        "collectedAt": "2026-06-30T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cc08aa78",
+        "structuredFields": {
+          "kindergartenName": "누리유치원",
+          "kindergartenAddress": "경기도 광주시 벌원길 82",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOsR8qvE5wQ%22+%22%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-763-9085%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 경기 광주 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOsR8qvE5wQ/",
+          "normalizedUrl": "www.instagram.com/p/dosr8qve5wq",
+          "normalizedText": "경기 광주 누리유치원 원아모집 sns 누리유치원 2026학년도 원아모집과 전화 031-763-9085 문맥이 확인되는 instagram 검색 결과. 경기 광주시 누리유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "cc08aa78",
+          "extractedAt": "2026-06-30T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "누리유치원",
+            "kindergartenAddress": "경기도 광주시 벌원길 82",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOsR8qvE5wQ%22+%22%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-763-9085%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 경기 광주 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-6408-pjhn",
-        "kindergartenId": "abee8f5d-108c-49f8-83c0-b53eca80eabb",
-        "title": "아기와 주말 광주아기영어 광주유아영어 광주맘앤미수업...",
-        "url": "https://blog.naver.com/misu0049/224051736408",
-        "source": "naver_blog",
-        "sourceName": "Bella's Life",
-        "snippet": "아이들이 할로윈키즈의 문화를 체험하고, 'Trick or treat'도 체험할수있는 기회 기존 재원생외에도... 광주초등부영어 #광주유치원영어 #광주키즈영어 #광주원어민수업 #클라이도키즈 #광주클라이도키즈...",
-        "date": "2025-10-24",
-        "collectedAt": "2026-02-18T06:13:58.449Z",
-        "relevanceScore": 9
+        "id": "rev-67dca935",
+        "kindergartenId": "1ecec08d-0e07-b044-e053-0a32095ab044",
+        "title": "경기광주 누리유치원 작은음악회 Reel",
+        "url": "https://www.instagram.com/reel/DT1_6AHEw2O/",
+        "source": "other",
+        "sourceName": "Instagram · 누리유치원",
+        "snippet": "Instagram Reels 검색 결과에서 경기광주 누리유치원, 2025학년도 누리 작은음악회, 유아 학년 발표 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "music-concert"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "c53aaf77",
+        "structuredFields": {
+          "kindergartenName": "누리유치원",
+          "kindergartenAddress": "경기도 광주시 벌원길 82",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DT1_6AHEw2O%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%22+%22%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DT1_6AHEw2O/",
+          "normalizedUrl": "www.instagram.com/reel/dt1_6ahew2o",
+          "normalizedText": "경기광주 누리유치원 작은음악회 reel instagram reels 검색 결과에서 경기광주 누리유치원, 2025학년도 누리 작은음악회, 유아 학년 발표 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c53aaf77",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "누리유치원",
+            "kindergartenAddress": "경기도 광주시 벌원길 82",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DT1_6AHEw2O%22+%22%EA%B2%BD%EA%B8%B0%EA%B4%91%EC%A3%BC%22+%22%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f7c2-b044-e053-0a32095ab044": [
+    "1ecec08d-0fbe-b044-e053-0a32095ab044": [
       {
-        "id": "rev-8112-fu2x",
-        "kindergartenId": "1ecec08c-f7c2-b044-e053-0a32095ab044",
-        "title": "예산성당",
-        "url": "https://blog.naver.com/sockjung/223876668112",
-        "source": "naver_blog",
-        "sourceName": "산들애길 문화여행.",
-        "snippet": "조선 후기에 천주교가 전해하였지만 박해를 받은 아픔을 간직한 예산지역 천주교를 잇는... 63년에는 성모유치원을 신축했다. 이후에도 더더욱 교세가 확장되면서 60~80년대에 걸쳐 삽교본당...",
-        "date": "2025-06-02",
-        "collectedAt": "2026-02-18T06:13:58.350Z",
-        "relevanceScore": 1
+        "id": "rev-de7266ed",
+        "kindergartenId": "1ecec08d-0fbe-b044-e053-0a32095ab044",
+        "title": "경기 광주 양실유치원 부모참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DYZK3Akk3HT/",
+        "source": "other",
+        "sourceName": "Instagram · 이루다",
+        "snippet": "양실유치원 부모참여수업을 두 번째 해본 학부모 경험 문맥과 양실유치원·부모참여수업 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6d8041ff",
+        "structuredFields": {
+          "kindergartenName": "양실유치원",
+          "kindergartenAddress": "경기도 광주시 대석동길61번길 47-17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYZK3Akk3HT%22+%22%EC%96%91%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "양실유치원은 로컬 원장부 단일 매칭이며 게시물의 기관명과 부모참여수업 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYZK3Akk3HT/",
+          "normalizedUrl": "www.instagram.com/p/dyzk3akk3ht",
+          "normalizedText": "경기 광주 양실유치원 부모참여수업 instagram post 양실유치원 부모참여수업을 두 번째 해본 학부모 경험 문맥과 양실유치원·부모참여수업 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "6d8041ff",
+          "extractedAt": "2026-07-02T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "양실유치원",
+            "kindergartenAddress": "경기도 광주시 대석동길61번길 47-17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYZK3Akk3HT%22+%22%EC%96%91%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "양실유치원은 로컬 원장부 단일 매칭이며 게시물의 기관명과 부모참여수업 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

@@ -1,48 +1,163 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 3,
   "kindergartenCount": 2,
   "reviews": {
-    "cd612c2b-47e2-4361-a1ca-57322651de96": [
-      {
-        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
-        "kindergartenName": "밀양유치원",
-        "title": "어우러진 환상적인 순간! 밀양 유치원 레이저 매직쇼 공연 후기",
-        "url": "https://blog.naver.com/jamjamcompany/224058650178",
-        "source": "naver_blog",
-        "sourceName": "이벤트 연구소",
-        "snippet": "이번에는 밀양 유치원 친구들과 함께한 레이저 매직쇼 소식을 전해드리려고 합니다. 아이들의 웃음소리와 반짝이는 눈빛이 가득했던 현장이라 저희도 공연을 진행하며 큰 보람을 느낄 수 있었던 하루였습니다....",
-        "date": "2025-10-30",
-        "collectedAt": "2026-01-30T03:12:39.871Z",
-        "relevanceScore": 6,
-        "id": "rev-4xzu-venr",
-        "summary": "안녕하세요, 나무엔터테인먼트입니다.이번에는 밀양 유치원 친구들과 함께한 레이저 매직쇼 소식을 전해드리려고 합니다. 아이들의 웃음소리와 반짝이는 눈빛이 가득했던 현장이라 저희도 공연을 진행하며 큰 보람을 느낄 수 있었던 하루였습니다. 이번 공연은 단순한 마술쇼를 넘어, 빛과 색, 음악이 조화된 레이저 퍼포먼스를 중심으로 진행되었습니다.무대가 어두워지고, 강렬한 레이저가 교차되는 순간 아이들은 “우와!” 하는 탄성을 내질렀습니다. 공연 내내 아이들의 시선을 사로잡은 화려한 빛의 향연은, 단순한 볼거리 이상의 감동을 전해주었습니다.나무엔...",
-        "pros": [],
-        "cons": [],
-        "sentiment": "positive",
-        "tags": [
-          "선생님"
-        ]
-      }
-    ],
     "1ecec08c-fdce-b044-e053-0a32095ab044": [
       {
+        "id": "rev-05b658c2",
+        "kindergartenId": "1ecec08c-fdce-b044-e053-0a32095ab044",
+        "title": "밀양 성모성심유치원 오리엔테이션 Reel",
+        "url": "https://www.instagram.com/reel/DVNetSbkxr_/",
+        "source": "other",
+        "sourceName": "Instagram · 성모성심유치원",
+        "snippet": "Instagram Reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "05a883b4",
+        "structuredFields": {
+          "kindergartenName": "성모성심유치원",
+          "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVNetSbkxr_/",
+          "normalizedUrl": "www.instagram.com/reel/dvnetsbkxr_",
+          "normalizedText": "밀양 성모성심유치원 오리엔테이션 reel instagram reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "05a883b4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모성심유치원",
+            "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f888d80a",
         "kindergartenId": "1ecec08c-fdce-b044-e053-0a32095ab044",
         "kindergartenName": "성모성심유치원",
-        "title": "2014.1.8",
-        "url": "https://blog.naver.com/lastid79/20202833455",
-        "source": "naver_blog",
-        "sourceName": "Aisha's",
-        "snippet": "조선시대 후기의 대표적인 목조 건물 밀양 영남루. 영남루는 신라 경덕왕(742~765)때 이 자리에 있었던... 난 낭랑18세와 신라의 달밤을 안다.내려오면 밀양전통시장. 5살때 여기 안에 있는 성모성심유치원...",
-        "date": "2014-01-10",
-        "collectedAt": "2026-01-30T03:12:35.929Z",
-        "relevanceScore": 6,
-        "id": "rev-lyrl-aq1n",
-        "summary": "밀양시내는 밀양강을 경계로내일동 내이동과 삼문동 가곡동으로 나뉜다.밀양강에 있는 아랑각과 영남루와 박시춘 생가를다녀왔다.밀양은 아랑전설과 4월에 열리는 아랑제라는 축제가 유명하다.매년 아랑을 뽑는다.그리고 그림 서예 등 대회도 열린다.아랑 집앞 나무가 탐났다.아랑사(경남 지정 문화재자료 제26호)아랑각은 언제 건립되었는지 정확히 알 수 없으나,1878년(고종15년)에 밀양부사로 재임한 연서 신석균의 영남루 제영에 노승원과 열녀사라는 단편적인 기록이 전해지고 있어 그 이전부터 지역민들이 아랑의 억울한 죽음을 애도하며,영남루 아래 죽림...",
-        "pros": [],
-        "cons": [],
-        "sentiment": "positive",
-        "tags": []
+        "title": "밀양 성모성심유치원 국립부산과학관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYgRnZ3T5gD/",
+        "source": "other",
+        "sourceName": "Instagram · 성모성심유치원",
+        "snippet": "성모성심유치원 계정 게시물 검색 결과에서 밀양사립유치원, 유치원견학, 국립부산과학관 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f888d80a",
+        "structuredFields": {
+          "kindergartenName": "성모성심유치원",
+          "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYgRnZ3T5gD%22%20%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EB%B6%80%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성모성심유치원은 로컬 원장부에서 단일 명칭이며 밀양사립유치원 단서와 밀양시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYgRnZ3T5gD/",
+          "normalizedUrl": "www.instagram.com/reel/dygrnz3t5gd",
+          "normalizedText": "밀양 성모성심유치원 국립부산과학관 견학 instagram reel 성모성심유치원 계정 게시물 검색 결과에서 밀양사립유치원, 유치원견학, 국립부산과학관 단서가 확인된다.",
+          "htmlSnapshotHash": "f888d80a",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모성심유치원",
+            "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYgRnZ3T5gD%22%20%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EB%B6%80%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성모성심유치원은 로컬 원장부에서 단일 명칭이며 밀양사립유치원 단서와 밀양시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0352-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5b0dad75",
+        "kindergartenId": "1ecec08d-0352-b044-e053-0a32095ab044",
+        "title": "밀양 삼양사금강유치원 동지팥죽 Instagram Post",
+        "url": "https://www.instagram.com/p/CXxy-0uJr07/",
+        "source": "other",
+        "sourceName": "Instagram · 삼양사금강유치원",
+        "snippet": "삼양사금강유치원 계정에서 동지팥죽을 만든 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dongji"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ac139862",
+        "structuredFields": {
+          "kindergartenName": "삼양사금강유치원",
+          "kindergartenAddress": "경상남도 밀양시 밀양대로 2083-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CXxy-0uJr07%22+%22%EC%82%BC%EC%96%91%EC%82%AC%EA%B8%88%EA%B0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%99%EC%A7%80%ED%8C%A5%EC%A3%BD%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼양사금강유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CXxy-0uJr07/",
+          "normalizedUrl": "www.instagram.com/p/cxxy-0ujr07",
+          "normalizedText": "밀양 삼양사금강유치원 동지팥죽 instagram post 삼양사금강유치원 계정에서 동지팥죽을 만든 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "ac139862",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼양사금강유치원",
+            "kindergartenAddress": "경상남도 밀양시 밀양대로 2083-11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CXxy-0uJr07%22+%22%EC%82%BC%EC%96%91%EC%82%AC%EA%B8%88%EA%B0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%99%EC%A7%80%ED%8C%A5%EC%A3%BD%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼양사금강유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

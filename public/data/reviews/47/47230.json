@@ -1,21 +1,9 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 3,
+  "version": "2026-07-01",
+  "totalCount": 8,
   "kindergartenCount": 2,
   "reviews": {
     "1ecec08d-024b-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-9492-e2gn",
-        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
-        "title": "[노원]중계동 유치원 한성유아학교 2026 입학설명회 후기",
-        "url": "https://blog.naver.com/ccc_studio/224055919492",
-        "source": "naver_blog",
-        "sourceName": "류니콘",
-        "snippet": "한성 유치원에 들어간 순간 부모 3명씩 짝을 이루어 선생님 한 분이 투어를 시켜주었습니다. 보통... 재원생동생 18명 우선 선발로 총 54명 중 46명을 우선 모집 예정입니다. 나머지 8명은 일반모집으로 뽑는다는...",
-        "date": "2025-10-28",
-        "collectedAt": "2026-02-18T06:13:58.479Z",
-        "relevanceScore": 9
-      },
       {
         "id": "rev-0966-00j4",
         "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
@@ -27,19 +15,369 @@
         "date": "2025-11-06",
         "collectedAt": "2026-02-18T06:13:58.479Z",
         "relevanceScore": 7
+      },
+      {
+        "id": "rev-313b2263",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "title": "영천 한성유치원 입학설명회 SNS 소식",
+        "url": "https://www.instagram.com/p/DQv78Wck_Og/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "한성유치원이 학부모들과 함께한 입학설명회를 마쳤다는 SNS 검색 결과.",
+        "summary": "영천 한성유치원 입학설명회 진행과 학부모 참여를 보여주는 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "한성유치원이 학부모들과 함께한 입학설명회를 마쳤다는 Instagram 검색 결과. 공식 소식이지만, 학부모 참여가 확인되는 설명회 운영 자료로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T17:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "86067810",
+        "structuredFields": {
+          "kindergartenName": "한성유치원",
+          "kindergartenAddress": "경상북도 영천시 향군로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQv78Wck_Og%22+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%98%81%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동명 한성유치원이 있으나 검색 문맥의 영천 한성유치원으로 수동 매칭했다. 공식 설명회 소식이다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQv78Wck_Og/",
+          "normalizedUrl": "www.instagram.com/p/dqv78wck_og",
+          "normalizedText": "영천 한성유치원 입학설명회 sns 소식 한성유치원이 학부모들과 함께한 입학설명회를 마쳤다는 sns 검색 결과. 영천 한성유치원 입학설명회 진행과 학부모 참여를 보여주는 instagram 검색 결과.",
+          "htmlSnapshotHash": "86067810",
+          "extractedAt": "2026-06-30T17:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한성유치원",
+            "kindergartenAddress": "경상북도 영천시 향군로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQv78Wck_Og%22+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%98%81%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동명 한성유치원이 있으나 검색 문맥의 영천 한성유치원으로 수동 매칭했다. 공식 설명회 소식이다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T17:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-df3dc8a4",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "title": "영천 한성유치원 SNS 프로필",
+        "url": "https://www.instagram.com/hansung_preschool/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "한성유치원 프로필에서 전화 054-331-3711 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경북 영천시 한성유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "한성유치원 프로필에서 전화 054-331-3711 문맥이 확인되는 Instagram 검색 결과다. 한성유치원 동명이 있어 영천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:45.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b96db00",
+        "structuredFields": {
+          "kindergartenName": "한성유치원",
+          "kindergartenAddress": "경상북도 영천시 향군로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22054-331-3711%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 영천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/hansung_preschool/",
+          "normalizedUrl": "www.instagram.com/hansung_preschool",
+          "normalizedText": "영천 한성유치원 sns 프로필 한성유치원 프로필에서 전화 054-331-3711 문맥이 확인되는 instagram 검색 결과. 경북 영천시 한성유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "4b96db00",
+          "extractedAt": "2026-06-30T23:59:45.000Z",
+          "structuredFields": {
+            "kindergartenName": "한성유치원",
+            "kindergartenAddress": "경상북도 영천시 향군로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22054-331-3711%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 영천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:45.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-896e79f7",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "kindergartenName": "한성유치원",
+        "title": "영천 한성유치원 2026학년도 중간 입학 안내 Instagram Post",
+        "url": "https://www.instagram.com/p/DW2lT6LEkx7/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "Instagram 검색 결과에서 한성유치원, 2026학년도 중간 입학 가능, 영천 지역 단서가 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "new-student-recruitment"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "한성유치원",
+          "kindergartenAddress": "경상북도 영천시 향군로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW2lT6LEkx7%22+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%98%81%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DW2lT6LEkx7/",
+          "regionEvidence": [
+            "한성유치원",
+            "영천",
+            "2026학년도",
+            "중간 입학 가능"
+          ]
+        },
+        "evidenceChecksum": "9dac2a85",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW2lT6LEkx7/",
+          "normalizedUrl": "www.instagram.com/p/dw2lt6lekx7",
+          "normalizedText": "영천 한성유치원 2026학년도 중간 입학 안내 instagram post instagram 검색 결과에서 한성유치원, 2026학년도 중간 입학 가능, 영천 지역 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "5021f689",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한성유치원",
+            "kindergartenAddress": "경상북도 영천시 향군로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW2lT6LEkx7%22+%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%98%81%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DW2lT6LEkx7/",
+            "regionEvidence": [
+              "한성유치원",
+              "영천",
+              "2026학년도",
+              "중간 입학 가능"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-6544a8e1",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "kindergartenName": "한성유치원",
+        "title": "영천 한성유치원 대구아쿠아리움 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXRATtECq8r/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "한성유치원 계정 게시물 검색 결과에서 영천유치원, 영천사립유치원, 아쿠아리움 체험학습, 해양생물, 대구 아쿠아리움 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "aquarium",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6544a8e1",
+        "structuredFields": {
+          "kindergartenName": "한성유치원",
+          "kindergartenAddress": "경상북도 영천시 향군로 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXRATtECq8r%22%20%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%22%20%22%EC%98%81%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한성유치원은 동명이 있으나 영천유치원·영천사립유치원 단서와 영천시 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXRATtECq8r/",
+          "normalizedUrl": "www.instagram.com/reel/dxrattecq8r",
+          "normalizedText": "영천 한성유치원 대구아쿠아리움 견학 instagram reel 한성유치원 계정 게시물 검색 결과에서 영천유치원, 영천사립유치원, 아쿠아리움 체험학습, 해양생물, 대구 아쿠아리움 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "6544a8e1",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "한성유치원",
+            "kindergartenAddress": "경상북도 영천시 향군로 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXRATtECq8r%22%20%22%ED%95%9C%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EA%B5%AC%20%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9B%80%22%20%22%EC%98%81%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한성유치원은 동명이 있으나 영천유치원·영천사립유치원 단서와 영천시 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-0a87-b044-e053-0a32095ab044": [
+    "1ecec08c-f06e-b044-e053-0a32095ab044": [
       {
-        "id": "rev-4333-peja",
-        "kindergartenId": "1ecec08d-0a87-b044-e053-0a32095ab044",
-        "title": "[투투맘 육아일기]51개월, 5세 아이 언어치료 이야기 시리즈 정리",
-        "url": "https://blog.naver.com/tjdans814/223906494333",
+        "id": "rev-a9dc91db",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "title": "영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이",
+        "url": "https://blog.naver.com/PostView.naver?blogId=wnghks732&logNo=224058267565",
         "source": "naver_blog",
-        "sourceName": "투투맘의 성장스토리",
-        "snippet": "어느날, 영천 중앙 유치원을 통해서 ‘언어치료’라는 권유를 받게 되었어요. '다자녀라서 국가에서... 언어치료 시리즈 모음 말이 느린 우리 아이, 영천 엘리스 아동심리발달센터 첫 방문 후기  글 보러가기...",
-        "date": "2025-06-21",
-        "collectedAt": "2026-02-18T06:13:58.479Z"
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요 ! 전공자였지만 우리 아이를키우는 것에 대해선 전공자도똑같은 엄마란 것을 깨달은육아 인플루언서 챈맘히야입니다드디어 챈이도 빠빰,만 3세로 올라갈 날이머지않았습니다이 시기에 엄마들은 고민하죠바로 어디 유치원에 갈 것인가?오늘은 저희 이웃들을 위해서정보가 없어도 너~~~무 없어서기록으로 남겨보겠습니다 영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 영천 유치원 중앙 샛별 입학설명회...",
+        "summary": "안녕하세요 ! 전공자였지만 우리 아이를키우는 것에 대해선 전공자도똑같은 엄마란 것을 깨달은육아 인플루언서 챈맘히야입니다드디어 챈이도 빠빰,만 3세로 올라갈 날이머지않았습니다이 시기에 엄마들은 고민하죠바로 어디 유치원에 갈 것인가?오늘은 저희 이웃들을 위해서정보가 없어도 너~~~무 없어서기록으로 남겨보겠습니다 영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 영천 유치원 중앙 샛별 입학설명회단설 사립의 차이 일단 이 지역에는고를 수 있는 선택지가 많이 없습니다그러니 다들 친하게 지내시길..저는 총 4곳을 방문했는데요그중에서 단설 중앙유치원과사립 샛별유치원을보여드리도록 할게요아마 이 글을 읽는 분들은엄마들이시겠지만 원장님, 선생님도 계실...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T19:15:02.800Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "f0b44509",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=wnghks732&logNo=224058267565",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=wnghks732&logno=224058267565",
+          "normalizedText": "영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 25 안녕하세요 ! 전공자였지만 우리 아이를키우는 것에 대해선 전공자도똑같은 엄마란 것을 깨달은육아 인플루언서 챈맘히야입니다드디어 챈이도 빠빰,만 3세로 올라갈 날이머지않았습니다이 시기에 엄마들은 고민하죠바로 어디 유치원에 갈 것인가?오늘은 저희 이웃들을 위해서정보가 없어도 너~~~무 없어서기록으로 남겨보겠습니다 영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 영천 유치원 중앙 샛별 입학설명회... 안녕하세요 ! 전공자였지만 우리 아이를키우는 것에 대해선 전공자도똑같은 엄마란 것을 깨달은육아 인플루언서 챈맘히야입니다드디어 챈이도 빠빰,만 3세로 올라갈 날이머지않았습니다이 시기에 엄마들은 고민하죠바로 어디 유치원에 갈 것인가?오늘은 저희 이웃들을 위해서정보가 없어도 너~~~무 없어서기록으로 남겨보겠습니다 영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 영천 유치원 중앙 샛별 입학설명회단설 사립의 차이 일단 이 지역에는고를 수 있는 선택지가 많이 없습니다그러니 다들 친하게 지내시길..저는 총 4곳을 방문했는데요그중에서 단설 중앙유치원과사립 샛별유치원을보여드리도록 할게요아마 이 글을 읽는 분들은엄마들이시겠지만 원장님, 선생님도 계실... 안녕하세요 ! 전공자였지만 우리 아이를키우는 것에 대해선 전공자도똑같은 엄마란 것을 깨달은육아 인플루언서 챈맘히야입니다드디어 챈이도 빠빰,만 3세로 올라갈 날이머지않았습니다이 시기에 엄마들은 고민하죠바로 어디 유치원에 갈 것인가?오늘은 저희 이웃들을 위해서정보가 없어도 너~~~무 없어서기록으로 남겨보겠습니다 영천 유치원 중앙 샛별 입학설명회 단설 사립의 차이 영천 유치원 중앙 샛별 입학설명회단설 사립의 차이 일단 이 지역에는고를 수 있는 선택지가 많이 없습니다그러니 다들 친하게 지내시길..저는 총 4곳을 방문했는데요그중에서 단설 중앙유치원과사립 샛별유치원을보여드리도록 할게요아마 이 글을 읽는 분들은엄마들이시겠지만 원장님, 선생님도 계실 거라고 믿어요저는 선량한 시민이며 엄마입니다진솔된 정보를 나누기 위함이니깐요,개인 의견이 들어있음을 알려드립니다 일단 이곳은 먼저!앞쪽 성당을 공사하고 있어서주차장이 따로 없으며 강변에 주차하고 올라와야 합니다강변 주차 후, 천국의 계단 수준의높이가 좀 있는 계단을 오르고 나면이렇게 원이 보이기 시작하는데요25년 11월에 공사가 끝이 날 예정이라앞으로 더 이용하지 않는다는데공사 마무리가 빠르게 되면 좋겠습니다 공사 중이라서 아직까진놀이터 주변이 어지러운 느낌살짝 있어요 마무리가 된다면깔끔하게 운영하실 원장님 성향이 보였습니다 영천 유치원 입학설명회: 사립 샛별 일단 이곳은 원 입구가 아닌아래쪽에 계단을 내려와서지하 강당으로 가야 하는데계단을 좋아하시는 것 같습니다계단 오르기는 몸에 좋죠 소개 책자와 함께 포트폴리오가 함께 놓여있었는데포트폴리오는 들고 가는 것 아님입구 자리는 추웠으니추위 많이 타시면 안쪽으로 앉으시고이곳은 수녀님이 원장님이시고종교가 있는 곳이다 보니까호불호가 있기도 합니다정통 몬테소리를 실천하고 있으며반은 총 6개 혼합반으로 운영됩니다찐으로 5,6,7세 혼합반으로 구성이 되어있으니 참고해 주세요 이곳은 기후 위기 동참 행사에적극적인 참여를 하고 있으며저염식 day, 채식 day국 없는 날, 채식만 하는 날이렇게 실천하고 있는데요원장님의 이야기를 들어보니개인적인 느낌으로는아이들의 편식 개선을 위해 열심히!지도해 주시려는 느낌이 들었습니다추가로 원을 둘러보는 시간을 가졌으나아이들이 있던 시간이었기에눈으로만 담고 왔으며 아이들이 의젓하게 작업에 몰두하고조용한 분위기였습니다 영천 유치원 입학설명회 : 단설 중앙 다음으로 방문한 곳은단설인 곳인데요,큰 강당에서 연령 관계없이모든 학부모님들이 방문하여들을 수 있도록 세팅해놓으셨어요예약 또한 필요 없습니다콜 포비아 맘에겐이 점이 참 좋았어요 그리고 이곳은 자신 있게이야기하던 부분 중 하나가바로 보건교사가 상주하고 있으며자차로 등원하는 친구들은드라이브스루처럼 차량을 원 앞으로 올 수 있다는 점이었습니다 교실 전경 이곳은 4시에 시작해서아이들이 없어서 교실을 오픈하여자유롭게 볼 수 있도록 해주었는데요26년에는 1층은 5세 만 3세2층은 6세, 7세가 쓸 예정입니다 학교에 있는 곳이라서학교처럼 딱딱한 곳이면 어쩌지?싶었는데 제가 다녔던 원과 동일하게아기자기하게 꾸며놓으시고책상 또한 똑같았어요장난감들이 화려하거나 종류가 우와~할 정도로 많은 건 아니지만딱 필요한 종류와 개수 깔끔하게 제공하고 있었습니다화장실 또한 교실 사이에 있어서아이들이 이용하기에 편리해 보였어요 작은 도서관 여기는 2층에 작은 도서관을운영하고 있는데 크기도 넓고챈이처럼 책 좋아하는 친구들에게딱 좋은 공간이었습니다 급식 공간 이곳은 2층에 바로급식 공간이 따로 있는데요,의자가 테이블과 붙어있어서꺼내면 자동으로 들어가는시스템이었어요 신기했습니다5세는 1층에 있어서 2층으로 올라와서식사를 해야 하니 계단을 올라갑니다젊은 친구들이니 운동 열심히 해야죠 원 앞에는 모래 놀이터가함께 있어서 바깥놀이도 충분히 즐길 수 있는 곳이었답니다 단설과 사립의 차이 여기서 이제 영천 유치원 입학설명회에서들었던 단설과 사립의 차이를살짝 알려드리고 끝내보겠습니다단설 중앙유치원 : 공립, 교사 = 공무원, 교육청 관리 감독을 받음교육비 정부 지원, 누리과정 중심 + 특화 활동까지원장님이 있음, 차량 운행, 생존 수영 시범 원신청 없이 설명회 들을 수 있음25년 학급 기준 5개 (단일 연령) 사립 샛별유치원 : 개인이 운영하는 곳 정부 지원 늘어나고 있으나 일부 운영비 o,몬테소리 + 누리과정 중심 + 특화 활동까지, 차량 운행예약 후 설명회 들을 수 있음25년 학급 기준 6개 (혼합반) 영천 유치원 입학설명회들을수록 더 고민이다 이제 곧 우리 아이가 3년을꾸준하게 다닐 원을 정해야 하는시기가 오고 있는데요,들으면 들을수록 고민이 많이 됩니다다음에는 한성 vs 영천초2개의 원을 알아보는 시간을가져보도록 할게요,궁금하신 점이 있는 분들은비밀댓글을 달아주세요!이상 찐 정보를 나누는육아 인플루언서 챈맘히야였습니다 영천중앙초등학교영천중앙유치원 경상북도 영천시 조양길 71 샛별유치원 경상북도 영천시 최무선로 236 이 블로그의 체크인",
+          "htmlSnapshotHash": "f0b44509",
+          "extractedAt": "2026-06-29T19:15:02.800Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%98%81%EC%B2%9C+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "샛별유치원",
+            "kindergartenAddress": "경상북도 영천시 최무선로 236",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%98%81%EC%B2%9C+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-fb9437ae",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "title": "영천 샛별유치원 금호도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/CxhNUK-hs_u/",
+        "source": "other",
+        "sourceName": "Instagram · 샛별유치원",
+        "snippet": "샛별유치원 계정에서 금호도서관 견학과 영천샛별·영천유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c0ba9ffb",
+        "structuredFields": {
+          "kindergartenName": "샛별유치원",
+          "kindergartenAddress": "경상북도 영천시 최무선로 236",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxhNUK-hs_u%22+%22%EC%98%81%EC%B2%9C%22+%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B8%88%ED%98%B8%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "샛별유치원 동명이 있으나 영천샛별·영천유치원 단서가 영천 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CxhNUK-hs_u/",
+          "normalizedUrl": "www.instagram.com/p/cxhnuk-hs_u",
+          "normalizedText": "영천 샛별유치원 금호도서관 견학 instagram post 샛별유치원 계정에서 금호도서관 견학과 영천샛별·영천유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "c0ba9ffb",
+          "extractedAt": "2026-07-02T23:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "샛별유치원",
+            "kindergartenAddress": "경상북도 영천시 최무선로 236",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CxhNUK-hs_u%22+%22%EC%98%81%EC%B2%9C%22+%22%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B8%88%ED%98%B8%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "샛별유치원 동명이 있으나 영천샛별·영천유치원 단서가 영천 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9587db5b",
+        "kindergartenId": "1ecec08c-f06e-b044-e053-0a32095ab044",
+        "kindergartenName": "샛별유치원",
+        "title": "영천 샛별유치원 화재대피훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C_0YXpiS55p/",
+        "source": "other",
+        "sourceName": "Instagram · 영천 샛별유치원",
+        "snippet": "영천 샛별유치원 계정의 화재 대피훈련 릴 검색 결과에서 손수건에 물을 묻혀 대피하는 훈련 문맥이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "76ddc589",
+        "structuredFields": {
+          "kindergartenName": "샛별유치원",
+          "kindergartenAddress": "경상북도 영천시 최무선로 236",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C_0YXpiS55p%22%20%22%EC%98%81%EC%B2%9C%20%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%20%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영천 샛별유치원 계정 단서가 로컬 영천 샛별유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_0YXpiS55p/",
+          "normalizedUrl": "www.instagram.com/reel/c_0yxpis55p",
+          "normalizedText": "영천 샛별유치원 화재대피훈련 instagram reel 영천 샛별유치원 계정의 화재 대피훈련 릴 검색 결과에서 손수건에 물을 묻혀 대피하는 훈련 문맥이 확인된다.",
+          "htmlSnapshotHash": "76ddc589",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "샛별유치원",
+            "kindergartenAddress": "경상북도 영천시 최무선로 236",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C_0YXpiS55p%22%20%22%EC%98%81%EC%B2%9C%20%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%99%94%EC%9E%AC%20%EB%8C%80%ED%94%BC%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영천 샛별유치원 계정 단서가 로컬 영천 샛별유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

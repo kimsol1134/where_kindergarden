@@ -6,6 +6,10 @@ export type ReviewSource =
   | 'google'
   | 'naver_place'
   | 'starteacher'
+  | 'instagram'
+  | 'threads'
+  | 'x'
+  | 'facebook'
   | 'other';
 
 export type ReviewAccessMode = 'public' | 'login' | 'partner';

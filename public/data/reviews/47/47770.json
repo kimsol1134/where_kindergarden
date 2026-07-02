@@ -1,0 +1,62 @@
+{
+  "version": "2026-07-02",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-fdf4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-1d69877f",
+        "kindergartenId": "1ecec08c-fdf4-b044-e053-0a32095ab044",
+        "kindergartenName": "영해초등학교병설유치원",
+        "title": "영덕 영해초등학교병설유치원 입학식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DVpjjA6kqv_/",
+        "source": "other",
+        "sourceName": "Instagram · 영해초등학교병설유치원",
+        "snippet": "영해초병설유치원 관련 게시물 검색 결과에서 영덕, 공립유치원, 유치원입학식, 입학을 축하한다는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-term"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1d69877f",
+        "structuredFields": {
+          "kindergartenName": "영해초등학교병설유치원",
+          "kindergartenAddress": "경상북도 영덕군 예주5길 22",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVpjjA6kqv_%22%20%22%EC%98%81%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영해초병설유치원 표기와 영덕 공립유치원 단서를 로컬 영해초등학교병설유치원과 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVpjjA6kqv_/",
+          "normalizedUrl": "www.instagram.com/reel/dvpjja6kqv_",
+          "normalizedText": "영덕 영해초등학교병설유치원 입학식 instagram reel 영해초병설유치원 관련 게시물 검색 결과에서 영덕, 공립유치원, 유치원입학식, 입학을 축하한다는 단서가 확인된다.",
+          "htmlSnapshotHash": "1d69877f",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "영해초등학교병설유치원",
+            "kindergartenAddress": "경상북도 영덕군 예주5길 22",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVpjjA6kqv_%22%20%22%EC%98%81%ED%95%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영해초병설유치원 표기와 영덕 공립유치원 단서를 로컬 영해초등학교병설유치원과 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

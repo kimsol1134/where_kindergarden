@@ -1,46 +1,693 @@
 {
-  "version": "2026-04-07",
-  "totalCount": 3,
-  "kindergartenCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 13,
+  "kindergartenCount": 6,
   "reviews": {
-    "1c9f9d0e-c985-454f-a4d9-3c97baaa48eb": [
+    "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
-        "id": "rev-5291-mx4s",
-        "kindergartenId": "1c9f9d0e-c985-454f-a4d9-3c97baaa48eb",
-        "title": "240513 '신의 직장' 한전 어쩌다… 희망퇴직 러시",
-        "url": "https://blog.naver.com/dambau6210/223444305291",
-        "source": "naver_blog",
-        "sourceName": "dambau6210님의 블로그",
-        "snippet": "행사 개막 온라인 커뮤니티와 사회관계망서비스(SNS)에 게재된 후기에서 해당 메뉴 가격들이... 제주도평초등학교 병설유치원 청솔반 이로열..... 자주달개비 남원로 527번길.... 서원대로 찔레꽃........",
-        "date": "2024-05-12",
-        "collectedAt": "2026-02-18T06:13:58.367Z",
-        "relevanceScore": 3
+        "id": "rev-56ba4d8a",
+        "kindergartenId": "1ecec08c-f9cb-b044-e053-0a32095ab044",
+        "title": "서귀포 남원유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DZMvf6yJOw_/",
+        "source": "other",
+        "sourceName": "Instagram · 남원유치원",
+        "snippet": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주 서귀포시 남원유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 제주 서귀포시 남원유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "29a52f34",
+        "structuredFields": {
+          "kindergartenName": "남원유치원",
+          "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMvf6yJOw_/",
+          "normalizedUrl": "www.instagram.com/p/dzmvf6yjow_",
+          "normalizedText": "서귀포 남원유치원 원아모집 sns 남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 instagram 검색 결과. 제주 서귀포시 남원유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "29a52f34",
+          "extractedAt": "2026-06-30T23:59:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남원유치원",
+            "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f51e-b044-e053-0a32095ab044": [
+    "1ecec08d-0ead-b044-e053-0a32095ab044": [
       {
-        "id": "rev-0235-0evm",
-        "kindergartenId": "1ecec08c-f51e-b044-e053-0a32095ab044",
-        "title": "“은총의 선물”",
-        "url": "https://blog.naver.com/eastgg/224063880235",
-        "source": "naver_blog",
-        "sourceName": "개암나무",
-        "snippet": "올해 2월에는 벽돌성당 부설 성모유치원을 졸업했고, 3월에는 금빛초등학교 1학년으로 입학했습니다.... 「다음 주 화요일 오전 10시에 금빛초등학교에서 「2018학년도 교육과정 설명회」와 ‘수업 공개’가...",
-        "date": "2025-11-04",
-        "collectedAt": "2026-02-18T06:13:58.368Z",
-        "relevanceScore": 6
+        "id": "rev-cc836dab",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 SNS 프로필",
+        "url": "https://www.instagram.com/ymcachild._.jeju/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 프로필에서 제주 기관명과 전화 064-758-6844 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "제주YMCA유치원 프로필에서 제주 기관명과 전화 064-758-6844 문맥이 확인되는 Instagram 검색 결과다. 원장부의 제주시 관덕로2길 주소와 전화번호를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f276bb1a",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22ymcachild._.jeju%22+%22%EC%A0%9C%EC%A3%BCYMCA%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/ymcachild._.jeju/",
+          "normalizedUrl": "www.instagram.com/ymcachild._.jeju",
+          "normalizedText": "제주ymca유치원 sns 프로필 제주ymca유치원 프로필에서 제주 기관명과 전화 064-758-6844 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "f276bb1a",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22ymcachild._.jeju%22+%22%EC%A0%9C%EC%A3%BCYMCA%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-2007-afas",
-        "kindergartenId": "1ecec08c-f51e-b044-e053-0a32095ab044",
-        "title": "지우 기록_39개월",
-        "url": "https://blog.naver.com/j_joo90/224058562007",
-        "source": "naver_blog",
-        "sourceName": "make it count !",
-        "snippet": "오늘 공룡수목원 다녀온 지우. ㄱㄱㅇ.. 포즈도 취할 줄 아는 나는야 4살 엉아! 10월 16일 목요일, +1205일... ❤️ 컨디션이 좋지 않아 오빠가 대신 성모유치원 입학설명회를 다녀왔다. 정적인 프로그램이 많은 것...",
-        "date": "2025-10-30",
-        "collectedAt": "2026-02-18T06:13:58.368Z",
-        "relevanceScore": 5
+        "id": "rev-6278997c",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 생일잔치 SNS",
+        "url": "https://www.instagram.com/reel/DPLREmZkx4z/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 생일잔치 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 생일잔치 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "제주YMCA유치원 계정의 생일잔치 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "288bd2b1",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPLREmZkx4z%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPLREmZkx4z/",
+          "normalizedUrl": "www.instagram.com/reel/dplremzkx4z",
+          "normalizedText": "제주ymca유치원 생일잔치 sns 제주ymca유치원 계정의 생일잔치 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 생일잔치 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "288bd2b1",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPLREmZkx4z%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-04222703",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 놀이활동 SNS",
+        "url": "https://www.instagram.com/reel/DYE5umvzImZ/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 놀이활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 놀이활동 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "제주YMCA유치원 계정의 놀이활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bc6ef1a7",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYE5umvzImZ%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYE5umvzImZ/",
+          "normalizedUrl": "www.instagram.com/reel/dye5umvzimz",
+          "normalizedText": "제주ymca유치원 놀이활동 sns 제주ymca유치원 계정의 놀이활동 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 놀이활동 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "bc6ef1a7",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYE5umvzImZ%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1068ba0f",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 체험활동 SNS",
+        "url": "https://www.instagram.com/reel/DYENeAWTjrK/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 체험활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 체험활동 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "제주YMCA유치원 계정의 체험활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0d0c10e7",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYENeAWTjrK%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYENeAWTjrK/",
+          "normalizedUrl": "www.instagram.com/reel/dyeneawtjrk",
+          "normalizedText": "제주ymca유치원 체험활동 sns 제주ymca유치원 계정의 체험활동 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 체험활동 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "0d0c10e7",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYENeAWTjrK%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0af26aac",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 교육활동 SNS",
+        "url": "https://www.instagram.com/reel/DYOxQKzzzyr/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 교육활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 교육활동 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "제주YMCA유치원 계정의 교육활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6390cca6",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYOxQKzzzyr%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYOxQKzzzyr/",
+          "normalizedUrl": "www.instagram.com/reel/dyoxqkzzzyr",
+          "normalizedText": "제주ymca유치원 교육활동 sns 제주ymca유치원 계정의 교육활동 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 교육활동 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "6390cca6",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYOxQKzzzyr%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-75135db4",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 바깥놀이 SNS",
+        "url": "https://www.instagram.com/reel/DY9NlX_TBI4/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 바깥놀이 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 바깥놀이 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "outdoor-play"
+        ],
+        "content": "제주YMCA유치원 계정의 바깥놀이 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c4a41aaf",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY9NlX_TBI4%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY9NlX_TBI4/",
+          "normalizedUrl": "www.instagram.com/reel/dy9nlx_tbi4",
+          "normalizedText": "제주ymca유치원 바깥놀이 sns 제주ymca유치원 계정의 바깥놀이 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 바깥놀이 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "c4a41aaf",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY9NlX_TBI4%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0923a918",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 신체활동 SNS",
+        "url": "https://www.instagram.com/reel/DZwJOHEzOIb/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "제주YMCA유치원 계정의 신체활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주시 제주YMCA유치원의 신체활동 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "제주YMCA유치원 계정의 신체활동 릴스와 제주YMCA유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.995Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bbb4108b",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZwJOHEzOIb%22+%22ymcachild._.jeju%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZwJOHEzOIb/",
+          "normalizedUrl": "www.instagram.com/reel/dzwjohezoib",
+          "normalizedText": "제주ymca유치원 신체활동 sns 제주ymca유치원 계정의 신체활동 릴스와 제주ymca유치원 문맥이 확인되는 instagram 검색 결과. 제주시 제주ymca유치원의 신체활동 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "bbb4108b",
+          "extractedAt": "2026-06-30T23:59:59.995Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZwJOHEzOIb%22+%22ymcachild._.jeju%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.995Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-75fc8c5c",
+        "kindergartenId": "1ecec08d-0ead-b044-e053-0a32095ab044",
+        "title": "제주YMCA유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DSGo6iakqVG/",
+        "source": "other",
+        "sourceName": "Instagram · 제주YMCA유치원",
+        "snippet": "Instagram 검색 결과에서 제주 YMCA 유치원 활동과 2026 입학설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "b48ea2c4",
+        "structuredFields": {
+          "kindergartenName": "제주YMCA유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSGo6iakqVG%22+%22%EC%A0%9C%EC%A3%BCYMCA%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSGo6iakqVG/",
+          "normalizedUrl": "www.instagram.com/p/dsgo6iakqvg",
+          "normalizedText": "제주ymca유치원 입학설명회 instagram instagram 검색 결과에서 제주 ymca 유치원 활동과 2026 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b48ea2c4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "제주YMCA유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 관덕로2길 1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSGo6iakqVG%22+%22%EC%A0%9C%EC%A3%BCYMCA%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-01c0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a0da0b61",
+        "kindergartenId": "1ecec08d-01c0-b044-e053-0a32095ab044",
+        "title": "제주 영평초등학교병설유치원 학부모연수 Instagram",
+        "url": "https://www.instagram.com/p/DZUM__Kkocl/",
+        "source": "other",
+        "sourceName": "Instagram · 영평초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 영평초 병설유치원 학부모연수와 제주 학부모 교육 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "parent-program"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "b6549475",
+        "structuredFields": {
+          "kindergartenName": "영평초등학교병설유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 아봉로 225",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZUM__Kkocl%22+%22%EC%98%81%ED%8F%89%EC%B4%88+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZUM__Kkocl/",
+          "normalizedUrl": "www.instagram.com/p/dzum__kkocl",
+          "normalizedText": "제주 영평초등학교병설유치원 학부모연수 instagram instagram 검색 결과에서 영평초 병설유치원 학부모연수와 제주 학부모 교육 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b6549475",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "영평초등학교병설유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 아봉로 225",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZUM__Kkocl%22+%22%EC%98%81%ED%8F%89%EC%B4%88+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f92c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4b2d3df6",
+        "kindergartenId": "1ecec08c-f92c-b044-e053-0a32095ab044",
+        "title": "제주까리따스유치원 졸업행사 Instagram",
+        "url": "https://www.instagram.com/p/DU-X3C3Epma/",
+        "source": "other",
+        "sourceName": "Instagram · 제주까리따스유치원",
+        "snippet": "Instagram 검색 결과에서 제주 까리따스 유치원 졸업 행사 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "graduation",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "10075278",
+        "structuredFields": {
+          "kindergartenName": "제주까리따스유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 인다10길 19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DU-X3C3Epma%22+%22%EC%A0%9C%EC%A3%BC%EA%B9%8C%EB%A6%AC%EB%94%B0%EC%8A%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DU-X3C3Epma/",
+          "normalizedUrl": "www.instagram.com/p/du-x3c3epma",
+          "normalizedText": "제주까리따스유치원 졸업행사 instagram instagram 검색 결과에서 제주 까리따스 유치원 졸업 행사 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "10075278",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "제주까리따스유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 인다10길 19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DU-X3C3Epma%22+%22%EC%A0%9C%EC%A3%BC%EA%B9%8C%EB%A6%AC%EB%94%B0%EC%8A%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0ad7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-91bde546",
+        "kindergartenId": "1ecec08d-0ad7-b044-e053-0a32095ab044",
+        "title": "제주중앙초등학교병설유치원 샌드아트 Instagram",
+        "url": "https://www.instagram.com/p/DaKPch5GuXD/",
+        "source": "other",
+        "sourceName": "Instagram · 제주중앙초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 제주중앙초등학교 병설유치원 샌드아트 체험 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "public-kindergarten"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "6b584952",
+        "structuredFields": {
+          "kindergartenName": "제주중앙초등학교병설유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 서사로18길 40",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaKPch5GuXD%22+%22%EC%A0%9C%EC%A3%BC%EC%A4%91%EC%95%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaKPch5GuXD/",
+          "normalizedUrl": "www.instagram.com/p/dakpch5guxd",
+          "normalizedText": "제주중앙초등학교병설유치원 샌드아트 instagram instagram 검색 결과에서 제주중앙초등학교 병설유치원 샌드아트 체험 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "6b584952",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "제주중앙초등학교병설유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 서사로18길 40",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaKPch5GuXD%22+%22%EC%A0%9C%EC%A3%BC%EC%A4%91%EC%95%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-023f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4c2a48ef",
+        "kindergartenId": "1ecec08d-023f-b044-e053-0a32095ab044",
+        "title": "제주 금호유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/Bxtt4OUDg-1/",
+        "source": "other",
+        "sourceName": "Instagram · 제주금호유치원",
+        "snippet": "Instagram 검색 결과에서 제주금호유치원, 부모참여수업, 우리할아버지 프로젝트 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "91dc0597",
+        "structuredFields": {
+          "kindergartenName": "금호유치원",
+          "kindergartenAddress": "제주특별자치도 제주시 진군남2길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Bxtt4OUDg-1%22+%22%EC%A0%9C%EC%A3%BC%EA%B8%88%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Bxtt4OUDg-1/",
+          "normalizedUrl": "www.instagram.com/p/bxtt4oudg-1",
+          "normalizedText": "제주 금호유치원 부모참여수업 instagram instagram 검색 결과에서 제주금호유치원, 부모참여수업, 우리할아버지 프로젝트 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "91dc0597",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금호유치원",
+            "kindergartenAddress": "제주특별자치도 제주시 진군남2길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Bxtt4OUDg-1%22+%22%EC%A0%9C%EC%A3%BC%EA%B8%88%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

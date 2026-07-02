@@ -1,0 +1,59 @@
+{
+  "version": "2026-07-01",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-f117-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5fe2c359",
+        "kindergartenId": "1ecec08c-f117-b044-e053-0a32095ab044",
+        "title": "강원 태백 태사랑유치원 미니운동회 Instagram",
+        "url": "https://www.instagram.com/p/ClqNqvLvBmu/",
+        "source": "other",
+        "sourceName": "Instagram · 태사랑유치원",
+        "snippet": "Instagram 검색 결과에서 태사랑유치원, 미니운동회, 좋은유치원, 원아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "sports-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "76be4cdb",
+        "structuredFields": {
+          "kindergartenName": "태사랑유치원",
+          "kindergartenAddress": "강원특별자치도 태백시 태백로 802",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22ClqNqvLvBmu%22+%22%ED%83%9C%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/ClqNqvLvBmu/",
+          "normalizedUrl": "www.instagram.com/p/clqnqvlvbmu",
+          "normalizedText": "강원 태백 태사랑유치원 미니운동회 instagram instagram 검색 결과에서 태사랑유치원, 미니운동회, 좋은유치원, 원아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "76be4cdb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "태사랑유치원",
+            "kindergartenAddress": "강원특별자치도 태백시 태백로 802",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22ClqNqvLvBmu%22+%22%ED%83%9C%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

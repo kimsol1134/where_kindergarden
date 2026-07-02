@@ -1,0 +1,52 @@
+{
+  "version": "2026-07-02",
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-f938-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-87096a12",
+        "kindergartenId": "1ecec08c-f938-b044-e053-0a32095ab044",
+        "kindergartenName": "하늘내린유치원",
+        "title": "인제 하늘내린유치원 추석놀이체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CxgC_i-xF54/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘내린유치원",
+        "snippet": "Instagram 검색 결과에서 하늘내린유치원 추억의놀이, 추석놀이체험, 추석대회와 전래놀이 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "traditional-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "하늘내린유치원",
+          "kindergartenAddress": "강원특별자치도 인제군 인제로219번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CxgC_i-xF54%22+%22%ED%95%98%EB%8A%98%EB%82%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B6%94%EC%84%9D%EB%86%80%EC%9D%B4%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/CxgC_i-xF54/",
+          "regionEvidence": [
+            "하늘내린유치원",
+            "추석놀이체험",
+            "추석대회",
+            "전래놀이"
+          ]
+        },
+        "evidenceChecksum": "fd51822d"
+      }
+    ]
+  }
+}

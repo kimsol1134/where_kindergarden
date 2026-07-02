@@ -1,34 +1,8 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 3,
-  "kindergartenCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 16,
+  "kindergartenCount": 6,
   "reviews": {
-    "1ecec08d-0752-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-2339-1wiw",
-        "kindergartenId": "1ecec08d-0752-b044-e053-0a32095ab044",
-        "title": "롯데리조트부여 패밀리(캐릭터) 말랑카우 빼빼로방‼️5월...",
-        "url": "https://blog.naver.com/ne1012/223090812339",
-        "source": "naver_blog",
-        "sourceName": "Love Above ALL",
-        "snippet": "장미유치원은 쉬라고 하면 항상 늘 계속 쉽니다..... ... 좋냐? ㅋㅋㅋ 선생님 사랑해요  어느 선생님... 저희가 무려 2월 마지막 주에 미리(?) 다녀 온 #롯데리조트부여 #빼빼로방 #말랑카우 방 보여드립니다....",
-        "date": "2023-05-02",
-        "collectedAt": "2026-02-18T06:13:58.415Z",
-        "relevanceScore": 4
-      },
-      {
-        "id": "rev-5060-wlem",
-        "kindergartenId": "1ecec08d-0752-b044-e053-0a32095ab044",
-        "title": "어릴 때 엄마가...",
-        "url": "https://blog.naver.com/jegreenk/223585345060",
-        "source": "naver_blog",
-        "sourceName": "아직은(YET) -지금은(知金垠) - 金知垠(김지은)",
-        "snippet": "그런데 엄마가 너 찾으로 가 보니 사람들 사이에서 잘 놀고 있어서 그냥 지켜보다가 데려왔다더라. 그말... 마치 범어2동 장미유치원 가는 길에 판자 슬래터 집들이 대부분이고 골목에 구루마 하나 지나갈 정도고...",
-        "date": "2024-09-15",
-        "collectedAt": "2026-02-18T06:13:58.415Z",
-        "relevanceScore": 3
-      }
-    ],
     "1ecec08c-f486-b044-e053-0a32095ab044": [
       {
         "id": "rev-np-5298-0-9ee4",
@@ -41,6 +15,757 @@
         "date": "2024-11-26",
         "collectedAt": "2026-04-05T14:02:25.330Z"
       }
+    ],
+    "1ecec08c-faa1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4f5e0b9c",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 옥스퍼드키즈유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DPvYXIjD7CN/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "옥스퍼드키즈유치원 입학설명회와 대덕구·송촌동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 옥스퍼드키즈유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "옥스퍼드키즈유치원 입학설명회와 대덕구·송촌동 문맥이 확인되는 Instagram 검색 결과. 대전 대덕구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T20:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ca898a70",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPvYXIjD7CN%22+%22%EC%98%A5%EC%8A%A4%ED%8D%BC%EB%93%9C%ED%82%A4%EC%A6%88%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대덕구·송촌동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPvYXIjD7CN/",
+          "normalizedUrl": "www.instagram.com/p/dpvyxijd7cn",
+          "normalizedText": "대전 옥스퍼드키즈유치원 입학설명회 sns 옥스퍼드키즈유치원 입학설명회와 대덕구·송촌동 문맥이 확인되는 instagram 검색 결과. 대전 옥스퍼드키즈유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "ca898a70",
+          "extractedAt": "2026-06-30T20:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPvYXIjD7CN%22+%22%EC%98%A5%EC%8A%A4%ED%8D%BC%EB%93%9C%ED%82%A4%EC%A6%88%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 대덕구·송촌동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T20:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6e7bc04f",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 옥스퍼드키즈유치원 SNS 프로필",
+        "url": "https://www.instagram.com/oxfordkids_kindergarten_1995/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "옥스퍼드키즈유치원 프로필에서 전화 042-623-0009 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "대전 대덕구 옥스퍼드키즈유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "옥스퍼드키즈유치원 프로필에서 전화 042-623-0009 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b1a39231",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22oxfordkids_kindergarten_1995%22+%22%EC%98%A5%EC%8A%A4%ED%8D%BC%EB%93%9C%ED%82%A4%EC%A6%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-623-0009%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/oxfordkids_kindergarten_1995/",
+          "normalizedUrl": "www.instagram.com/oxfordkids_kindergarten_1995",
+          "normalizedText": "대전 옥스퍼드키즈유치원 sns 프로필 옥스퍼드키즈유치원 프로필에서 전화 042-623-0009 문맥이 확인되는 instagram 검색 결과. 대전 대덕구 옥스퍼드키즈유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "b1a39231",
+          "extractedAt": "2026-06-30T23:59:59.950Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22oxfordkids_kindergarten_1995%22+%22%EC%98%A5%EC%8A%A4%ED%8D%BC%EB%93%9C%ED%82%A4%EC%A6%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22042-623-0009%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.950Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-25dff8ec",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕 옥스퍼드키즈유치원 유아숲체험원 Instagram",
+        "url": "https://www.instagram.com/reel/DW3s2-PD8RB/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 7세반이 미호동 유아숲체험원에서 자연물을 활용한 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "nature",
+          "field-trip"
+        ],
+        "date": "2026-04-08",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "7b1d0e95",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW3s2-PD8RB%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW3s2-PD8RB/",
+          "normalizedUrl": "www.instagram.com/reel/dw3s2-pd8rb",
+          "normalizedText": "대전 대덕 옥스퍼드키즈유치원 유아숲체험원 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 7세반이 미호동 유아숲체험원에서 자연물을 활용한 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "7b1d0e95",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW3s2-PD8RB%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5f69ddb0",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕구 옥스퍼드키즈유치원 인형극 Instagram",
+        "url": "https://www.instagram.com/reel/DWIkeHXj9gt/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 미운 아기 오리 인형극을 관람하고 내용에 대해 생각해 본 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "puppet-show",
+          "class-activity"
+        ],
+        "date": "2026-03-20",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "bc1a0f5e",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWIkeHXj9gt%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWIkeHXj9gt/",
+          "normalizedUrl": "www.instagram.com/reel/dwikehxj9gt",
+          "normalizedText": "대전 대덕구 옥스퍼드키즈유치원 인형극 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 미운 아기 오리 인형극을 관람하고 내용에 대해 생각해 본 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "bc1a0f5e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWIkeHXj9gt%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c43f388e",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕구 옥스퍼드키즈유치원 형님동생 어울림 캠프 Instagram",
+        "url": "https://www.instagram.com/reel/DYozY5GPu8y/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 형님반과 동생반이 함께 놀이하며 서로 돕고 어울린 형님 동생 어울림 CAMP 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "camp",
+          "class-activity"
+        ],
+        "date": "2026-05-22",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "94dde510",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYozY5GPu8y%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYozY5GPu8y/",
+          "normalizedUrl": "www.instagram.com/reel/dyozy5gpu8y",
+          "normalizedText": "대전 대덕구 옥스퍼드키즈유치원 형님동생 어울림 캠프 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 형님반과 동생반이 함께 놀이하며 서로 돕고 어울린 형님 동생 어울림 camp 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "94dde510",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYozY5GPu8y%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5abbc4d1",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕구 옥스퍼드키즈유치원 어린이감성체험장 Instagram",
+        "url": "https://www.instagram.com/reel/DY85enKvcd2/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 계룡 어린이감성체험장에 다녀와 오감놀이와 체험 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "sensory-play"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "b4030a51",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY85enKvcd2%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY85enKvcd2/",
+          "normalizedUrl": "www.instagram.com/reel/dy85enkvcd2",
+          "normalizedText": "대전 대덕구 옥스퍼드키즈유치원 어린이감성체험장 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 계룡 어린이감성체험장에 다녀와 오감놀이와 체험 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "b4030a51",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY85enKvcd2%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-be986229",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕구 옥스퍼드키즈유치원 공주 나들이 Instagram",
+        "url": "https://www.instagram.com/reel/DYXKhoRPN8q/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 5월 나들이로 공주 웅진백제어린이체험관에서 백제 문화를 체험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "museum"
+        ],
+        "date": "2026-05-15",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "14ee2ebd",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYXKhoRPN8q%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYXKhoRPN8q/",
+          "normalizedUrl": "www.instagram.com/reel/dyxkhorpn8q",
+          "normalizedText": "대전 대덕구 옥스퍼드키즈유치원 공주 나들이 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 5월 나들이로 공주 웅진백제어린이체험관에서 백제 문화를 체험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "14ee2ebd",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYXKhoRPN8q%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-514e8404",
+        "kindergartenId": "1ecec08c-faa1-b044-e053-0a32095ab044",
+        "title": "대전 대덕구 옥스퍼드키즈유치원 손씻기 교육 Instagram",
+        "url": "https://www.instagram.com/reel/DWCChzdj_oc/",
+        "source": "other",
+        "sourceName": "Instagram · 옥스퍼드키즈유치원",
+        "snippet": "oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 올바른 손씻기와 손을 깨끗하게 씻어야 하는 이유를 배우는 시간을 가진 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "health-education",
+          "class-activity"
+        ],
+        "date": "2026-03-18",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "663add1e",
+        "structuredFields": {
+          "kindergartenName": "옥스퍼드키즈유치원",
+          "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWCChzdj_oc%22+%22oxfordkids_kindergarten_1995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWCChzdj_oc/",
+          "normalizedUrl": "www.instagram.com/reel/dwcchzdj_oc",
+          "normalizedText": "대전 대덕구 옥스퍼드키즈유치원 손씻기 교육 instagram oxfordkids_kindergarten_1995 계정에서 옥스퍼드키즈유치원 원아들이 올바른 손씻기와 손을 깨끗하게 씻어야 하는 이유를 배우는 시간을 가진 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "663add1e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "옥스퍼드키즈유치원",
+            "kindergartenAddress": "대전광역시 대덕구 동춘당로 160",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWCChzdj_oc%22+%22oxfordkids_kindergarten_1995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f136-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ad27614d",
+        "kindergartenId": "1ecec08c-f136-b044-e053-0a32095ab044",
+        "title": "대전와동초등학교병설유치원 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DIkbkcdyvCO/",
+        "source": "other",
+        "sourceName": "Instagram · 대전와동초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 대전와동초등학교병설유치원, 대덕구유치원, 와동유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "225d8a93",
+        "structuredFields": {
+          "kindergartenName": "와동초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 대덕구 신탄진로 189",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIkbkcdyvCO%22+%22%EB%8C%80%EC%A0%84%EC%99%80%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIkbkcdyvCO/",
+          "normalizedUrl": "www.instagram.com/p/dikbkcdyvco",
+          "normalizedText": "대전와동초등학교병설유치원 학부모참여수업 instagram instagram 검색 결과에서 대전와동초등학교병설유치원, 대덕구유치원, 와동유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "225d8a93",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "와동초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 대덕구 신탄진로 189",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIkbkcdyvCO%22+%22%EB%8C%80%EC%A0%84%EC%99%80%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-083ae01e",
+        "kindergartenId": "1ecec08c-f136-b044-e053-0a32095ab044",
+        "title": "대전 와동초등학교병설유치원 보호자 교육지원 Instagram",
+        "url": "https://www.instagram.com/p/DIslokVS2jK/",
+        "source": "other",
+        "sourceName": "Instagram · 대전와동초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 대전와동초등학교병설유치원, 대전광역시 유치원 보호자 교육지원 사업 선정 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-education",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "ca117294",
+        "structuredFields": {
+          "kindergartenName": "와동초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 대덕구 신탄진로 189",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIslokVS2jK%22+%22%EC%99%80%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIslokVS2jK/",
+          "normalizedUrl": "www.instagram.com/p/dislokvs2jk",
+          "normalizedText": "대전 와동초등학교병설유치원 보호자 교육지원 instagram instagram 검색 결과에서 대전와동초등학교병설유치원, 대전광역시 유치원 보호자 교육지원 사업 선정 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "ca117294",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "와동초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 대덕구 신탄진로 189",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIslokVS2jK%22+%22%EC%99%80%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8C%80%EC%A0%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fb60-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5d9d3468",
+        "kindergartenId": "1ecec08c-fb60-b044-e053-0a32095ab044",
+        "title": "대전 해맑은유치원 생태숲체험 Reel",
+        "url": "https://www.instagram.com/reel/DZ1PN3opsrp/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 해맑은유치원",
+        "snippet": "Instagram Reels 검색 결과에서 대전 해맑은유치원, 6월 생태숲체험, 유치원 생태 활동 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "forest-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "e2b1d974",
+        "structuredFields": {
+          "kindergartenName": "해맑은유치원",
+          "kindergartenAddress": "대전광역시 대덕구 계족로663번길 29-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ1PN3opsrp%22+%22%EB%8C%80%EC%A0%84+%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ1PN3opsrp/",
+          "normalizedUrl": "www.instagram.com/reel/dz1pn3opsrp",
+          "normalizedText": "대전 해맑은유치원 생태숲체험 reel instagram reels 검색 결과에서 대전 해맑은유치원, 6월 생태숲체험, 유치원 생태 활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "e2b1d974",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해맑은유치원",
+            "kindergartenAddress": "대전광역시 대덕구 계족로663번길 29-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ1PN3opsrp%22+%22%EB%8C%80%EC%A0%84+%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%ED%83%9C%EC%88%B2%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ab40eafa",
+        "kindergartenId": "1ecec08c-fb60-b044-e053-0a32095ab044",
+        "title": "대전 해맑은유치원 생일파티 Reel",
+        "url": "https://www.instagram.com/reel/DIbOcNXz-Ci/",
+        "source": "other",
+        "sourceName": "Instagram · 대전 해맑은유치원",
+        "snippet": "Instagram Reels 검색 결과에서 대전 해맑은유치원, 2025학년도 맑음이들의 생일파티 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "birthday-party"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "1ee7ced4",
+        "structuredFields": {
+          "kindergartenName": "해맑은유치원",
+          "kindergartenAddress": "대전광역시 대덕구 계족로663번길 29-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIbOcNXz-Ci%22+%22%EB%8C%80%EC%A0%84+%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIbOcNXz-Ci/",
+          "normalizedUrl": "www.instagram.com/reel/dibocnxz-ci",
+          "normalizedText": "대전 해맑은유치원 생일파티 reel instagram reels 검색 결과에서 대전 해맑은유치원, 2025학년도 맑음이들의 생일파티 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "1ee7ced4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해맑은유치원",
+            "kindergartenAddress": "대전광역시 대덕구 계족로663번길 29-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIbOcNXz-Ci%22+%22%EB%8C%80%EC%A0%84+%ED%95%B4%EB%A7%91%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0c30-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-fcd73867",
+        "kindergartenId": "1ecec08d-0c30-b044-e053-0a32095ab044",
+        "title": "대전중리초등학교병설유치원 시장놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DMKEJodRlTF/",
+        "source": "other",
+        "sourceName": "Instagram · 대전중리초등학교병설유치원",
+        "snippet": "Instagram 검색 결과에서 대전중리초등학교병설유치원, 즐거운 시장놀이, 장바구니 만들기와 물건 사고팔기 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "market-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "be68ec65",
+        "structuredFields": {
+          "kindergartenName": "대전중리초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 대덕구 중리북로 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMKEJodRlTF%22+%22%EB%8C%80%EC%A0%84%EC%A4%91%EB%A6%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMKEJodRlTF/",
+          "normalizedUrl": "www.instagram.com/p/dmkejodrltf",
+          "normalizedText": "대전중리초등학교병설유치원 시장놀이 instagram post instagram 검색 결과에서 대전중리초등학교병설유치원, 즐거운 시장놀이, 장바구니 만들기와 물건 사고팔기 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "be68ec65",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전중리초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 대덕구 중리북로 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMKEJodRlTF%22+%22%EB%8C%80%EC%A0%84%EC%A4%91%EB%A6%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-edb6-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7315a8e1",
+        "kindergartenId": "1ecec08c-edb6-b044-e053-0a32095ab044",
+        "kindergartenName": "덕암유치원",
+        "title": "덕암유치원 자연물 놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DUUunc0gav0/",
+        "source": "other",
+        "sourceName": "Instagram · 덕암유치원",
+        "snippet": "Instagram 검색 결과에서 덕암유치원, 자연물 이용 눈나라 꾸미기, 자연물 모으기, 숫자 만들기 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "덕암유치원",
+          "kindergartenAddress": "대전광역시 대덕구 덕암북로70번길 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUUunc0gav0%22+%22%EB%8D%95%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DUUunc0gav0/",
+          "regionEvidence": [
+            "덕암유치원",
+            "자연물 이용 눈나라 꾸미기",
+            "자연물 모으기",
+            "자연물 놀이"
+          ]
+        },
+        "evidenceChecksum": "aabf0d2a"
+      },
+      {
+        "id": "rev-ff612135",
+        "kindergartenId": "1ecec08c-edb6-b044-e053-0a32095ab044",
+        "kindergartenName": "덕암유치원",
+        "title": "대전 덕암유치원 대전교통문화연수원 현장학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DSCMSlbAbhR/",
+        "source": "other",
+        "sourceName": "Instagram · 덕암유치원",
+        "snippet": "덕암유치원 계정 게시물 검색 결과에서 대전교통문화연수원 현장학습, 교통안전체험, 신탄진유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ff612135",
+        "structuredFields": {
+          "kindergartenName": "덕암유치원",
+          "kindergartenAddress": "대전광역시 대덕구 덕암북로70번길 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSCMSlbAbhR%22%20%22%EB%8D%95%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%EA%B5%90%ED%86%B5%EB%AC%B8%ED%99%94%EC%97%B0%EC%88%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "덕암유치원은 로컬 원장부에서 단일 명칭이며 신탄진·대전교통문화연수원 단서와 대전 대덕구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSCMSlbAbhR/",
+          "normalizedUrl": "www.instagram.com/reel/dscmslbabhr",
+          "normalizedText": "대전 덕암유치원 대전교통문화연수원 현장학습 instagram reel 덕암유치원 계정 게시물 검색 결과에서 대전교통문화연수원 현장학습, 교통안전체험, 신탄진유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "ff612135",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "덕암유치원",
+            "kindergartenAddress": "대전광역시 대덕구 덕암북로70번길 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSCMSlbAbhR%22%20%22%EB%8D%95%EC%95%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8C%80%EC%A0%84%EA%B5%90%ED%86%B5%EB%AC%B8%ED%99%94%EC%97%B0%EC%88%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "덕암유치원은 로컬 원장부에서 단일 명칭이며 신탄진·대전교통문화연수원 단서와 대전 대덕구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 8,
-  "kindergartenCount": 6,
+  "version": "2026-07-01",
+  "totalCount": 29,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0a30-b044-e053-0a32095ab044": [
       {
@@ -15,20 +15,6 @@
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.241Z",
         "relevanceScore": 3
-      }
-    ],
-    "1ecec08c-ed0e-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-8560-dg6x",
-        "kindergartenId": "1ecec08c-ed0e-b044-e053-0a32095ab044",
-        "title": "간석동",
-        "url": "https://blog.naver.com/chaehyungseok1976/223113638560",
-        "source": "naver_blog",
-        "sourceName": "chaehyungseok1976님의블로그",
-        "snippet": "부속 시설로 용화유치원을 운영중에 있다. 원불교의 교당도 있다. 간석1동 끄트머리 남인천우체국 바로 옆 탑프라자빌딩 7층에 남동교당이 위치한다. 예수 그리스도 후기 성도 교회의 교회도 있다....",
-        "date": "2023-05-28",
-        "collectedAt": "2026-02-18T06:13:58.242Z",
-        "relevanceScore": 2
       }
     ],
     "1ecec08d-0117-b044-e053-0a32095ab044": [
@@ -103,7 +89,1118 @@
         "snippet": "yena yeji yeseo mam 리뷰 626사진 319 우리 우리 유치원~~~ 3번째 방문",
         "date": "2023-07-10",
         "collectedAt": "2026-04-05T15:18:11.877Z"
+      },
+      {
+        "id": "rev-cda532ab",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 입학 신청 SNS",
+        "url": "https://www.instagram.com/p/DBavXOuybYs/?img_index=2",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "동원유치원 2차 스타파티, 유치원 입학, 원서접수 문맥과 인천 미추홀구 주소가 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 동원유치원의 입학 신청 관련 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "동원유치원 2차 스타파티, 유치원 입학, 원서접수 문맥과 인천 미추홀구 주소가 확인되는 Instagram 검색 결과. 동원유치원 동명이 있어 인천 미추홀구 주소 문맥과 원장부 주소를 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6c0e4f4a",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBavXOuybYs%22+%22%EC%9D%B8%EC%B2%9C%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동원유치원 동명이 있어 인천 미추홀구 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBavXOuybYs/?img_index=2",
+          "normalizedUrl": "www.instagram.com/p/dbavxouybys/?img_index=2",
+          "normalizedText": "인천 동원유치원 입학 신청 sns 동원유치원 2차 스타파티, 유치원 입학, 원서접수 문맥과 인천 미추홀구 주소가 확인되는 instagram 검색 결과. 인천 미추홀구 동원유치원의 입학 신청 관련 instagram 검색 결과.",
+          "htmlSnapshotHash": "6c0e4f4a",
+          "extractedAt": "2026-06-30T23:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBavXOuybYs%22+%22%EC%9D%B8%EC%B2%9C%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동원유치원 동명이 있어 인천 미추홀구 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-93074112",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 체육활동 SNS",
+        "url": "https://www.instagram.com/reel/DAabPK2SIKB/",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "동원유치원 만5세 체육활동, 미추홀구청 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 동원유치원의 원내 교육활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "education-activity"
+        ],
+        "content": "동원유치원 만5세 체육활동, 미추홀구청 문맥이 확인되는 Instagram 검색 결과. 기존 입학 신청 게시물과 다른 원내 교육활동 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "97adbe67",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAabPK2SIKB%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동원유치원 동명이 있어 인천 미추홀구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DAabPK2SIKB/",
+          "normalizedUrl": "www.instagram.com/reel/daabpk2sikb",
+          "normalizedText": "인천 동원유치원 체육활동 sns 동원유치원 만5세 체육활동, 미추홀구청 문맥이 확인되는 instagram 검색 결과. 인천 미추홀구 동원유치원의 원내 교육활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "97adbe67",
+          "extractedAt": "2026-07-01T00:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAabPK2SIKB%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동원유치원 동명이 있어 인천 미추홀구 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ec6a5d43",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DUAVzhQgd8v/",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "동원유치원 2026학년도 원아모집과 전화 032-866-2657 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 동원유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "동원유치원 2026학년도 원아모집과 전화 032-866-2657 문맥이 확인되는 Instagram 검색 결과다. 동원유치원 동명이 있어 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:55.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1c94c41f",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUAVzhQgd8v%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-866-2657%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUAVzhQgd8v/",
+          "normalizedUrl": "www.instagram.com/p/duavzhqgd8v",
+          "normalizedText": "인천 동원유치원 원아모집 sns 동원유치원 2026학년도 원아모집과 전화 032-866-2657 문맥이 확인되는 instagram 검색 결과. 인천 미추홀구 동원유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "1c94c41f",
+          "extractedAt": "2026-06-30T23:59:55.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUAVzhQgd8v%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-866-2657%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:55.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-18d0cde8",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀구 동원유치원 생존수영 1일차 Instagram",
+        "url": "https://www.instagram.com/reel/DZ9qJUzBf2h/",
+        "source": "other",
+        "sourceName": "Instagram · 송도 박태환수영장",
+        "snippet": "pthaquatics 계정에서 동원유치원 원아들이 송도 박태환수영장에서 생존수영 1일차 수업으로 안전교육, 구명조끼 착용, 물 적응 활동을 진행한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "survival-swimming",
+          "safety"
+        ],
+        "date": "2026-06-24",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "a4eda2e8",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ9qJUzBf2h%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%A1%EB%8F%84%EB%B0%95%ED%83%9C%ED%99%98%EC%88%98%EC%98%81%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ9qJUzBf2h/",
+          "normalizedUrl": "www.instagram.com/reel/dz9qjuzbf2h",
+          "normalizedText": "인천 미추홀구 동원유치원 생존수영 1일차 instagram pthaquatics 계정에서 동원유치원 원아들이 송도 박태환수영장에서 생존수영 1일차 수업으로 안전교육, 구명조끼 착용, 물 적응 활동을 진행한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "a4eda2e8",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ9qJUzBf2h%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%A1%EB%8F%84%EB%B0%95%ED%83%9C%ED%99%98%EC%88%98%EC%98%81%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5aa23c77",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀구 동원유치원 물 적응 생존수영 Instagram",
+        "url": "https://www.instagram.com/reel/DL63H1xTAZQ/",
+        "source": "other",
+        "sourceName": "Instagram · 송도 박태환수영장",
+        "snippet": "pthaquatics 계정에서 동원유치원 원아들이 송도 박태환수영장에서 첫 주차 생존수영 수업을 하며 물 적응과 호주식 수영 방법을 경험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "survival-swimming",
+          "safety"
+        ],
+        "date": "2025-07-10",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "f30a8b92",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DL63H1xTAZQ%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%A1%EB%8F%84%EB%B0%95%ED%83%9C%ED%99%98%EC%88%98%EC%98%81%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL63H1xTAZQ/",
+          "normalizedUrl": "www.instagram.com/reel/dl63h1xtazq",
+          "normalizedText": "인천 미추홀구 동원유치원 물 적응 생존수영 instagram pthaquatics 계정에서 동원유치원 원아들이 송도 박태환수영장에서 첫 주차 생존수영 수업을 하며 물 적응과 호주식 수영 방법을 경험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "f30a8b92",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DL63H1xTAZQ%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%A1%EB%8F%84%EB%B0%95%ED%83%9C%ED%99%98%EC%88%98%EC%98%81%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-93bf5680",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 유아교육진흥원 견학 Instagram",
+        "url": "https://www.instagram.com/reel/CobYxcbtsAY/",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "Instagram 검색 결과에서 인천유아교육진흥원, 동원유치원, 견학 현장학습 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "classroom-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "f038b134",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CobYxcbtsAY%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CobYxcbtsAY/",
+          "normalizedUrl": "www.instagram.com/reel/cobyxcbtsay",
+          "normalizedText": "인천 동원유치원 유아교육진흥원 견학 instagram instagram 검색 결과에서 인천유아교육진흥원, 동원유치원, 견학 현장학습 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "f038b134",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CobYxcbtsAY%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-01050a0c",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 겨울 활동 Instagram",
+        "url": "https://www.instagram.com/p/DDyyZiLS1rL/",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "Instagram 검색 결과에서 동원유치원 산타 행사와 인천명문유치원, 성품교육 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-life",
+          "event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "5f50cb7f",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDyyZiLS1rL%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDyyZiLS1rL/",
+          "normalizedUrl": "www.instagram.com/p/ddyyzils1rl",
+          "normalizedText": "인천 동원유치원 겨울 활동 instagram instagram 검색 결과에서 동원유치원 산타 행사와 인천명문유치원, 성품교육 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "5f50cb7f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDyyZiLS1rL%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cece3493",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 학부모 참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DBK4DPzya2z/",
+        "source": "other",
+        "sourceName": "Instagram · 동원유치원",
+        "snippet": "Instagram 검색 결과에서 동원유치원 오픈하우스 2학기 학부모 참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "7ed27409",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBK4DPzya2z%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8+%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBK4DPzya2z/",
+          "normalizedUrl": "www.instagram.com/p/dbk4dpzya2z",
+          "normalizedText": "인천 동원유치원 학부모 참여수업 instagram instagram 검색 결과에서 동원유치원 오픈하우스 2학기 학부모 참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "7ed27409",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBK4DPzya2z%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8+%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-91348d41",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀 동원유치원 처음학교로 Reel",
+        "url": "https://www.instagram.com/reel/CVPTCHOl2Ys/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram Reels 검색 결과에서 좋은나무성품학교 동원유치원, 인천동원유치원, 처음학교로와 신입생 모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "116ad0e1",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CVPTCHOl2Ys%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CVPTCHOl2Ys/",
+          "normalizedUrl": "www.instagram.com/reel/cvptchol2ys",
+          "normalizedText": "인천 미추홀 동원유치원 처음학교로 reel instagram reels 검색 결과에서 좋은나무성품학교 동원유치원, 인천동원유치원, 처음학교로와 신입생 모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "116ad0e1",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CVPTCHOl2Ys%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9fa13966",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀 동원유치원 추가모집 Instagram",
+        "url": "https://www.instagram.com/p/DBLCB8Kyoo5/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram 검색 결과에서 좋은나무성품학교 동원유치원, 인천 미추홀 주소 단서, 2026학년도 추가모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "53b93f6d",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBLCB8Kyoo5%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%222026%ED%95%99%EB%85%84%EB%8F%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBLCB8Kyoo5/",
+          "normalizedUrl": "www.instagram.com/p/dblcb8kyoo5",
+          "normalizedText": "인천 미추홀 동원유치원 추가모집 instagram instagram 검색 결과에서 좋은나무성품학교 동원유치원, 인천 미추홀 주소 단서, 2026학년도 추가모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "53b93f6d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBLCB8Kyoo5%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%222026%ED%95%99%EB%85%84%EB%8F%84%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f7194ca2",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 동원유치원 소방동요대회 Instagram Post",
+        "url": "https://www.instagram.com/p/DAaSYBhSUTm/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram 검색 결과에서 동원유치원 소방동요대회 문맥이 확인되고, 동일 검색 결과에서 인천 미추홀구 인하로235번길 27 동원유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "music-activity",
+          "competition"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "0c65dcf3",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAaSYBhSUTm%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%ED%95%98%EB%A1%9C235%EB%B2%88%EA%B8%B8+27%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAaSYBhSUTm/",
+          "normalizedUrl": "www.instagram.com/p/daasybhsutm",
+          "normalizedText": "인천 동원유치원 소방동요대회 instagram post instagram 검색 결과에서 동원유치원 소방동요대회 문맥이 확인되고, 동일 검색 결과에서 인천 미추홀구 인하로235번길 27 동원유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "0c65dcf3",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAaSYBhSUTm%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%ED%95%98%EB%A1%9C235%EB%B2%88%EA%B8%B8+27%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-de10c046",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀구 동원유치원 졸업사진 프로필 촬영 Instagram Post",
+        "url": "https://www.instagram.com/p/CWXatf2l_di/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram 검색 결과에서 좋은나무성품학교 동원유치원 공식 계정의 졸업사진과 프로필촬영 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "graduation",
+          "profile-photo"
+        ],
+        "date": "2021-11-16",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "5f816802",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CWXatf2l_di%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CWXatf2l_di/",
+          "normalizedUrl": "www.instagram.com/p/cwxatf2l_di",
+          "normalizedText": "인천 미추홀구 동원유치원 졸업사진 프로필 촬영 instagram post instagram 검색 결과에서 좋은나무성품학교 동원유치원 공식 계정의 졸업사진과 프로필촬영 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "5f816802",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CWXatf2l_di%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-73146452",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "title": "인천 미추홀구 동원유치원 생존수영 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CuEy3_RsHd2/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram 검색 결과에서 좋은나무성품학교 동원유치원 7세 친구들의 생존수영강습과 미추홀구유치원 지역 단서가 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "safety-education",
+          "swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "25ab2084",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CuEy3_RsHd2%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CuEy3_RsHd2/",
+          "normalizedUrl": "www.instagram.com/reel/cuey3_rshd2",
+          "normalizedText": "인천 미추홀구 동원유치원 생존수영 instagram reel instagram 검색 결과에서 좋은나무성품학교 동원유치원 7세 친구들의 생존수영강습과 미추홀구유치원 지역 단서가 확인되는 릴.",
+          "htmlSnapshotHash": "25ab2084",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CuEy3_RsHd2%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2afb0ff5",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "kindergartenName": "동원유치원",
+        "title": "인천 미추홀 동원유치원 여름캠프 Instagram Post",
+        "url": "https://www.instagram.com/p/CueTLsEvRPb/",
+        "source": "other",
+        "sourceName": "Instagram · 좋은나무성품학교 동원유치원",
+        "snippet": "Instagram 검색 결과에서 좋은나무성품학교 동원유치원의 여름캠프와 물놀이 활동 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "summer-camp",
+          "water-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CueTLsEvRPb%22+%22%EC%A2%8B%EC%9D%80%EB%82%98%EB%AC%B4%EC%84%B1%ED%92%88%ED%95%99%EA%B5%90%22+%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CueTLsEvRPb/",
+          "regionEvidence": [
+            "좋은나무성품학교 동원유치원",
+            "인천광역시 미추홀구",
+            "여름캠프",
+            "물놀이"
+          ]
+        },
+        "evidenceChecksum": "581f650e"
+      },
+      {
+        "id": "rev-94efc8f5",
+        "kindergartenId": "1ecec08c-f523-b044-e053-0a32095ab044",
+        "kindergartenName": "동원유치원",
+        "title": "인천 동원유치원 율목도서관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DKdVq2szFbl/",
+        "source": "other",
+        "sourceName": "Instagram · 율목도서관",
+        "snippet": "율목도서관 계정 게시물 검색 결과에서 동원유치원 6세 친구들이 도서관 이용 규칙을 배우고 견학한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-required",
+          "instagram",
+          "library",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:58.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "94efc8f5",
+        "structuredFields": {
+          "kindergartenName": "동원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKdVq2szFbl%22%20%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true,
+          "snippetCaveat": "율목도서관 단서를 인천권 동원유치원과 수동 매칭했다. 동명 유치원이 있어 주소 검토를 함께 남겼다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKdVq2szFbl/",
+          "normalizedUrl": "www.instagram.com/p/dkdvq2szfbl",
+          "normalizedText": "인천 동원유치원 율목도서관 견학 instagram post 율목도서관 계정 게시물 검색 결과에서 동원유치원 6세 친구들이 도서관 이용 규칙을 배우고 견학한 단서가 확인된다.",
+          "htmlSnapshotHash": "94efc8f5",
+          "extractedAt": "2026-07-02T23:59:58.000Z",
+          "structuredFields": {
+            "kindergartenName": "동원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 인하로235번길 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKdVq2szFbl%22%20%22%EB%8F%99%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A8%EB%AA%A9%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true,
+            "snippetCaveat": "율목도서관 단서를 인천권 동원유치원과 수동 매칭했다. 동명 유치원이 있어 주소 검토를 함께 남겼다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:58.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f9cf-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a7adc68e",
+        "kindergartenId": "1ecec08c-f9cf-b044-e053-0a32095ab044",
+        "title": "인천 신동아유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DQIXHCSE9EH/",
+        "source": "other",
+        "sourceName": "Instagram · 신동아유치원",
+        "snippet": "신동아유치원 2026학년도 원아모집과 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 신동아유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "신동아유치원 2026학년도 원아모집과 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과다. 신동아유치원 동명이 있어 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:30.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5560f8c5",
+        "structuredFields": {
+          "kindergartenName": "신동아유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQIXHCSE9EH%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQIXHCSE9EH/",
+          "normalizedUrl": "www.instagram.com/p/dqixhcse9eh",
+          "normalizedText": "인천 신동아유치원 원아모집 sns 신동아유치원 2026학년도 원아모집과 전화 032-872-4348 문맥이 확인되는 instagram 검색 결과. 인천 미추홀구 신동아유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "5560f8c5",
+          "extractedAt": "2026-06-30T23:59:30.000Z",
+          "structuredFields": {
+            "kindergartenName": "신동아유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQIXHCSE9EH%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 지역 문맥과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:30.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4e154710",
+        "kindergartenId": "1ecec08c-f9cf-b044-e053-0a32095ab044",
+        "title": "인천 신동아유치원 SNS 프로필",
+        "url": "https://www.instagram.com/sin_donga92/",
+        "source": "other",
+        "sourceName": "Instagram · 신동아유치원",
+        "snippet": "신동아유치원 프로필에서 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 신동아유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "신동아유치원 프로필에서 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과다. 신동아유치원 동명이 있어 인천 미추홀구 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.990Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4fb8e0db",
+        "structuredFields": {
+          "kindergartenName": "신동아유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22sin_donga92%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 미추홀구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/sin_donga92/",
+          "normalizedUrl": "www.instagram.com/sin_donga92",
+          "normalizedText": "인천 신동아유치원 sns 프로필 신동아유치원 프로필에서 전화 032-872-4348 문맥이 확인되는 instagram 검색 결과. 인천 미추홀구 신동아유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "4fb8e0db",
+          "extractedAt": "2026-06-30T23:59:59.990Z",
+          "structuredFields": {
+            "kindergartenName": "신동아유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22sin_donga92%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 미추홀구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.990Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3c3f9cab",
+        "kindergartenId": "1ecec08c-f9cf-b044-e053-0a32095ab044",
+        "title": "인천 신동아유치원 활동 SNS",
+        "url": "https://www.instagram.com/p/DKMGknWzOPv/",
+        "source": "other",
+        "sourceName": "Instagram · 신동아유치원",
+        "snippet": "신동아유치원 활동 게시물과 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 미추홀구 신동아유치원의 활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "신동아유치원 활동 게시물과 전화 032-872-4348 문맥이 확인되는 Instagram 검색 결과다. 기존 프로필과 다른 게시물 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.990Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e20fb973",
+        "structuredFields": {
+          "kindergartenName": "신동아유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKMGknWzOPv%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKMGknWzOPv/",
+          "normalizedUrl": "www.instagram.com/p/dkmgknwzopv",
+          "normalizedText": "인천 신동아유치원 활동 sns 신동아유치원 활동 게시물과 전화 032-872-4348 문맥이 확인되는 instagram 검색 결과. 인천 미추홀구 신동아유치원의 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "e20fb973",
+          "extractedAt": "2026-06-30T23:59:59.990Z",
+          "structuredFields": {
+            "kindergartenName": "신동아유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 매소홀로475번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKMGknWzOPv%22+%22%EC%8B%A0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-872-4348%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.990Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-095f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7921899d",
+        "kindergartenId": "1ecec08d-095f-b044-e053-0a32095ab044",
+        "title": "인천 미추홀 솔샘유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/p/Cx9ob-sy3Zh/",
+        "source": "other",
+        "sourceName": "Instagram · 솔샘유치원",
+        "snippet": "Instagram 검색 결과에서 솔샘유치원 원아모집, 인천유치원, 주안유치원, 인천솔샘유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "b40d3a37",
+        "structuredFields": {
+          "kindergartenName": "솔샘유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 석산로 38",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cx9ob-sy3Zh%22+%22%EC%86%94%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cx9ob-sy3Zh/",
+          "normalizedUrl": "www.instagram.com/p/cx9ob-sy3zh",
+          "normalizedText": "인천 미추홀 솔샘유치원 원아모집 instagram instagram 검색 결과에서 솔샘유치원 원아모집, 인천유치원, 주안유치원, 인천솔샘유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b40d3a37",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "솔샘유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 석산로 38",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cx9ob-sy3Zh%22+%22%EC%86%94%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2abc2446",
+        "kindergartenId": "1ecec08d-095f-b044-e053-0a32095ab044",
+        "kindergartenName": "솔샘유치원",
+        "title": "인천 미추홀구 솔샘유치원 동지이야기 인형극 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C1GY3iAyEL7/",
+        "source": "other",
+        "sourceName": "Instagram · 인천솔샘유치원",
+        "snippet": "인천솔샘유치원 계정 게시물 검색 결과에서 인천, 주안, 솔샘유치원 단서와 동지이야기 인형극 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "puppet-show",
+          "seasonal-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2abc2446",
+        "structuredFields": {
+          "kindergartenName": "솔샘유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 석산로 38",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C1GY3iAyEL7%22%20%22%EC%9D%B8%EC%B2%9C%EC%86%94%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인천, 주안 단서와 로컬 인천 미추홀구 솔샘유치원 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C1GY3iAyEL7/",
+          "normalizedUrl": "www.instagram.com/reel/c1gy3iayel7",
+          "normalizedText": "인천 미추홀구 솔샘유치원 동지이야기 인형극 instagram reel 인천솔샘유치원 계정 게시물 검색 결과에서 인천, 주안, 솔샘유치원 단서와 동지이야기 인형극 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "2abc2446",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "솔샘유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 석산로 38",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C1GY3iAyEL7%22%20%22%EC%9D%B8%EC%B2%9C%EC%86%94%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인천, 주안 단서와 로컬 인천 미추홀구 솔샘유치원 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0efa-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e1d31007",
+        "kindergartenId": "1ecec08d-0efa-b044-e053-0a32095ab044",
+        "kindergartenName": "인천도화초등학교병설유치원",
+        "title": "인천도화초등학교병설유치원 학부모 공개 및 참여 수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DQfqis6Etog/",
+        "source": "other",
+        "sourceName": "Instagram · 인천도화초등학교병설유치원 태그 게시물",
+        "snippet": "Instagram 검색 결과에서 2026학년도 학부모 공개 및 참여 수업과 인천도화초등학교병설유치원 꽃향기반 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-open-class",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "인천도화초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 경인로 242",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQfqis6Etog%22+%22%EC%9D%B8%EC%B2%9C%EB%8F%84%ED%99%94%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8+%EA%B3%B5%EA%B0%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DQfqis6Etog/",
+          "regionEvidence": [
+            "인천도화초등학교병설유치원",
+            "꽃향기반",
+            "인천",
+            "미추홀구",
+            "학부모 공개 및 참여 수업"
+          ]
+        },
+        "evidenceChecksum": "cfcbbc07"
+      }
+    ],
+    "1ecec08c-f5cc-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8cdffae5",
+        "kindergartenId": "1ecec08c-f5cc-b044-e053-0a32095ab044",
+        "kindergartenName": "유원유치원",
+        "title": "인천 유원유치원 가을소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBI35XCs-j0/",
+        "source": "other",
+        "sourceName": "Instagram · 유원유치원",
+        "snippet": "유원유치원 계정 게시물 검색 결과에서 가을소풍, 용현동유치원, 미추홀구유치원, 에버랜드 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picnic",
+          "fall-picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:57.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8cdffae5",
+        "structuredFields": {
+          "kindergartenName": "유원유치원",
+          "kindergartenAddress": "인천광역시 미추홀구 낙섬중로 102",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBI35XCs-j0%22%20%22%EC%9C%A0%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%80%EC%9D%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "용현동, 미추홀구 단서를 로컬 유원유치원 주소와 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBI35XCs-j0/",
+          "normalizedUrl": "www.instagram.com/reel/dbi35xcs-j0",
+          "normalizedText": "인천 유원유치원 가을소풍 instagram reel 유원유치원 계정 게시물 검색 결과에서 가을소풍, 용현동유치원, 미추홀구유치원, 에버랜드 단서가 확인된다.",
+          "htmlSnapshotHash": "8cdffae5",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
+          "structuredFields": {
+            "kindergartenName": "유원유치원",
+            "kindergartenAddress": "인천광역시 미추홀구 낙섬중로 102",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBI35XCs-j0%22%20%22%EC%9C%A0%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%80%EC%9D%84%EC%86%8C%ED%92%8D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "용현동, 미추홀구 단서를 로컬 유원유치원 주소와 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T01:44:50.794Z"
 }

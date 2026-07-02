@@ -1,22 +1,8 @@
 {
-  "version": "2026-06-26",
-  "totalCount": 7,
+  "version": "2026-07-01",
+  "totalCount": 8,
   "kindergartenCount": 5,
   "reviews": {
-    "1ecec08d-099c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-8377-uy3k",
-        "kindergartenId": "1ecec08d-099c-b044-e053-0a32095ab044",
-        "title": "1년이 지난 사립초 지원 스토리 Part.2 _ 동광초 설명회...",
-        "url": "https://blog.naver.com/yoozingzing/223816148377",
-        "source": "naver_blog",
-        "sourceName": "여유를 꿈꾸는 워킹맘의 소소한 기록",
-        "snippet": "지난번 사립초 지원 스토리에 이어 이번에는 설명회에 다녀온 기록을 남기고자 한다. 시간은 지났지만... - 동일유치원, 동일여중고, 매그넷고 등 같은 재단 학교들이 같이 모여있음. - 교실 전자칠판으로...",
-        "date": "2025-03-31",
-        "collectedAt": "2026-02-18T06:13:58.279Z",
-        "relevanceScore": 5
-      }
-    ],
     "1ecec08d-0140-b044-e053-0a32095ab044": [
       {
         "id": "rev-6621-vyx2",
@@ -29,6 +15,57 @@
         "date": "2025-10-30",
         "collectedAt": "2026-02-18T06:13:58.279Z",
         "relevanceScore": 7
+      },
+      {
+        "id": "rev-51f0bec1",
+        "kindergartenId": "1ecec08d-0140-b044-e053-0a32095ab044",
+        "title": "서울 금천구 예림유치원 음악발표회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DFuHjbqJ6-S/",
+        "source": "other",
+        "sourceName": "Instagram · 예림유치원",
+        "snippet": "24학년도 예림유치원 음악 발표회 예고편과 금천구유치원, 시흥동유치원 해시태그가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T03:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1d9279ea",
+        "structuredFields": {
+          "kindergartenName": "예림유치원",
+          "kindergartenAddress": "서울특별시 금천구 금하로 793",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22%EC%98%88%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%8C%EC%95%85+%EB%B0%9C%ED%91%9C%ED%9A%8C%22+%22%EA%B8%88%EC%B2%9C%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "예림유치원 동명이 있어 금천구와 시흥동 문맥을 기준으로 서울 금천구 원장부 주소에 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DFuHjbqJ6-S/",
+          "normalizedUrl": "www.instagram.com/reel/dfuhjbqj6-s",
+          "normalizedText": "서울 금천구 예림유치원 음악발표회 instagram reel 24학년도 예림유치원 음악 발표회 예고편과 금천구유치원, 시흥동유치원 해시태그가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "1d9279ea",
+          "extractedAt": "2026-07-02T03:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예림유치원",
+            "kindergartenAddress": "서울특별시 금천구 금하로 793",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22%EC%98%88%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%8C%EC%95%85+%EB%B0%9C%ED%91%9C%ED%9A%8C%22+%22%EA%B8%88%EC%B2%9C%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "예림유치원 동명이 있어 금천구와 시흥동 문맥을 기준으로 서울 금천구 원장부 주소에 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T03:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fea7-b044-e053-0a32095ab044": [
@@ -45,42 +82,53 @@
         "relevanceScore": 7
       },
       {
-        "id": "rev-6470-ozif",
+        "id": "rev-616a3b84",
         "kindergartenId": "1ecec08c-fea7-b044-e053-0a32095ab044",
-        "title": "[내돈내산] 서울 금천구 아이민스튜디오 50일 촬영 후기",
-        "url": "https://blog.naver.com/happygb777/224023256470",
-        "source": "naver_blog",
-        "sourceName": "호빵이맘 김배추의 육아 아카이브",
-        "snippet": "[내돈내산] 서울 금천구 아이민스튜디오 50일 촬영 후기  촬영일: 2025년 2월 20일  장소: 서울 금천구... 건물 찾는데 좀 헤맸는데, 사진 속 저 노란 건물  동산유치원 이 보이면 잘 온 겁니다.  아이민 스튜디오...",
-        "date": "2025-09-27",
-        "collectedAt": "2026-02-18T06:13:58.279Z",
-        "relevanceScore": 4
-      }
-    ],
-    "1ecec08c-fcfe-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-4546-jg52",
-        "kindergartenId": "1ecec08c-fcfe-b044-e053-0a32095ab044",
-        "title": "시내유치원,광명slp,가베,오르다,하바",
-        "url": "http://cafe.naver.com/imsanbu/11524546",
-        "source": "naver_cafe",
-        "sourceName": "맘스홀릭 베이비 (330만 엄마들의 임신...",
-        "snippet": "시내유치원(전화:서울 금천구 가산동 153-3 두산아파트단지내 시내유치원. TEL : 02-858-1436홈페이지http://seenae.... 그래도 오래 다녀서 후기가 제일 기네요.. ^^ 방과후 특강으론 미술(일주일에2회),영어(일주에2회),발레(금요일)...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.279Z",
-        "relevanceScore": 5
-      },
-      {
-        "id": "rev-6879-iqz1",
-        "kindergartenId": "1ecec08c-fcfe-b044-e053-0a32095ab044",
-        "title": "시내유치원,광명slp,오르다,가베,하바",
-        "url": "http://cafe.naver.com/raemianxi3/6879",
-        "source": "naver_cafe",
-        "sourceName": "명품 철산래미안자이 입주자 동호회",
-        "snippet": "시내유치원(전화:서울 금천구 가산동 153-3 두산아파트단지내 시내유치원. TEL : 02-858-1436홈페이지http://seenae.... 그래도 오래 다녀서 후기가 제일 기네요.. ^^ 방과후 특강으론 미술(일주일에2회),영어(일주에2회),발레(금요일)...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.279Z",
-        "relevanceScore": 5
+        "title": "서울 금천구 동산유치원 굿데이 시장 Instagram",
+        "url": "https://www.instagram.com/reel/DUnMJRjEcqs/",
+        "source": "other",
+        "sourceName": "Instagram · 동산유치원",
+        "snippet": "dongsan_kinder 계정과 독산동 동산유치원 문맥에서 칭찬 스티커를 화폐로 바꾸는 굿데이 시장 활동이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "market-play",
+          "economic-education"
+        ],
+        "date": "2026-02-11",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "91eaf829",
+        "structuredFields": {
+          "kindergartenName": "동산유치원",
+          "kindergartenAddress": "서울특별시 금천구 시흥대로152길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUnMJRjEcqs%22+%22dongsan_kinder%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUnMJRjEcqs/",
+          "normalizedUrl": "www.instagram.com/reel/dunmjrjecqs",
+          "normalizedText": "서울 금천구 동산유치원 굿데이 시장 instagram dongsan_kinder 계정과 독산동 동산유치원 문맥에서 칭찬 스티커를 화폐로 바꾸는 굿데이 시장 활동이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "91eaf829",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동산유치원",
+            "kindergartenAddress": "서울특별시 금천구 시흥대로152길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUnMJRjEcqs%22+%22dongsan_kinder%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "2672c35e-e02a-45c9-87e0-9c05a67cc230": [
@@ -95,7 +143,164 @@
         "date": "2022-04-13",
         "collectedAt": "2026-04-06T14:41:30.208Z"
       }
+    ],
+    "1ecec08d-099d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a9f20a59",
+        "kindergartenId": "1ecec08d-099d-b044-e053-0a32095ab044",
+        "title": "서울 금천 럭키유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/C-wpa8JSkcm/",
+        "source": "other",
+        "sourceName": "Instagram · 금천 럭키유치원",
+        "snippet": "럭키유치원 입학설명회와 금천구 시흥동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "서울 금천구 럭키유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "럭키유치원 입학설명회와 금천구 시흥동 문맥이 확인되는 Instagram 검색 결과. 럭키유치원 동명이 있어 금천구 원장부 주소와 맞는 기관으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fbf45fcc",
+        "structuredFields": {
+          "kindergartenName": "럭키유치원",
+          "kindergartenAddress": "서울특별시 금천구 시흥대로47길 43",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C-wpa8JSkcm%22+%22%EA%B8%88%EC%B2%9C%EA%B5%AC%22+%22%EB%9F%AD%ED%82%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "럭키유치원 동명이 있어 금천구 시흥동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C-wpa8JSkcm/",
+          "normalizedUrl": "www.instagram.com/p/c-wpa8jskcm",
+          "normalizedText": "서울 금천 럭키유치원 입학설명회 sns 럭키유치원 입학설명회와 금천구 시흥동 문맥이 확인되는 instagram 검색 결과. 서울 금천구 럭키유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "fbf45fcc",
+          "extractedAt": "2026-06-30T22:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "럭키유치원",
+            "kindergartenAddress": "서울특별시 금천구 시흥대로47길 43",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C-wpa8JSkcm%22+%22%EA%B8%88%EC%B2%9C%EA%B5%AC%22+%22%EB%9F%AD%ED%82%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "럭키유치원 동명이 있어 금천구 시흥동 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aec41db3",
+        "kindergartenId": "1ecec08d-099d-b044-e053-0a32095ab044",
+        "title": "서울 금천 럭키유치원 신입유아 모집 Instagram",
+        "url": "https://www.instagram.com/p/CyhPNtsSnm2/",
+        "source": "other",
+        "sourceName": "Instagram · 럭키유치원",
+        "snippet": "Instagram 검색 결과에서 럭키유치원, 금천구유치원, 시흥동유치원, 신입유아 모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "bdd240fb",
+        "structuredFields": {
+          "kindergartenName": "럭키유치원",
+          "kindergartenAddress": "서울특별시 금천구 시흥대로47길 43",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyhPNtsSnm2%22+%22%EB%9F%AD%ED%82%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%ED%9D%A5%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyhPNtsSnm2/",
+          "normalizedUrl": "www.instagram.com/p/cyhpntssnm2",
+          "normalizedText": "서울 금천 럭키유치원 신입유아 모집 instagram instagram 검색 결과에서 럭키유치원, 금천구유치원, 시흥동유치원, 신입유아 모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "bdd240fb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "럭키유치원",
+            "kindergartenAddress": "서울특별시 금천구 시흥대로47길 43",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyhPNtsSnm2%22+%22%EB%9F%AD%ED%82%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%ED%9D%A5%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0f8c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7d608958",
+        "kindergartenId": "1ecec08d-0f8c-b044-e053-0a32095ab044",
+        "title": "서울독산초등학교병설유치원 김장수업 Instagram Post",
+        "url": "https://www.instagram.com/p/C10KPu6BR2B/",
+        "source": "other",
+        "sourceName": "Instagram · 베이커리야놀자",
+        "snippet": "독산초병설유치원 김장수업과 깍두기 만들기 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-experience",
+          "kimchi-making"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "996bec11",
+        "structuredFields": {
+          "kindergartenName": "서울독산초등학교병설유치원",
+          "kindergartenAddress": "서울특별시 금천구 시흥대로104길 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C10KPu6BR2B%22%20%22%EB%8F%85%EC%82%B0%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B9%80%EC%9E%A5%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "독산초병설유치원 명칭이 서울독산초등학교병설유치원 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C10KPu6BR2B/",
+          "normalizedUrl": "www.instagram.com/p/c10kpu6br2b",
+          "normalizedText": "서울독산초등학교병설유치원 김장수업 instagram post 독산초병설유치원 김장수업과 깍두기 만들기 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "996bec11",
+          "extractedAt": "2026-07-02T10:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "서울독산초등학교병설유치원",
+            "kindergartenAddress": "서울특별시 금천구 시흥대로104길 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C10KPu6BR2B%22%20%22%EB%8F%85%EC%82%B0%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B9%80%EC%9E%A5%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "독산초병설유치원 명칭이 서울독산초등학교병설유치원 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastCuratedAt": "2026-06-26T08:56:13.303Z"
+  }
 }

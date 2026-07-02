@@ -1,0 +1,62 @@
+{
+  "version": "2026-07-02",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-fbee-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-eafc356b",
+        "kindergartenId": "1ecec08c-fbee-b044-e053-0a32095ab044",
+        "kindergartenName": "진부초등학교병설유치원",
+        "title": "평창 진부초등학교병설유치원 경찰서 견학 X Post",
+        "url": "https://x.com/pyeongchangpol/status/869742772785250304",
+        "source": "other",
+        "sourceName": "X · 평창경찰서",
+        "snippet": "평창경찰서 X 검색 결과에서 진부초 병설유치원 원생들이 경찰서 견학을 한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "police",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:56.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "eafc356b",
+        "structuredFields": {
+          "kindergartenName": "진부초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 평창군 진부새싹길 52",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%22869742772785250304%22%20%22%EC%A7%84%EB%B6%80%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%BD%EC%B0%B0%EC%84%9C%20%EA%B2%AC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진부초 병설유치원 명칭을 로컬 진부초등학교병설유치원과 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/pyeongchangpol/status/869742772785250304",
+          "normalizedUrl": "x.com/pyeongchangpol/status/869742772785250304",
+          "normalizedText": "평창 진부초등학교병설유치원 경찰서 견학 x post 평창경찰서 x 검색 결과에서 진부초 병설유치원 원생들이 경찰서 견학을 한 단서가 확인된다.",
+          "htmlSnapshotHash": "eafc356b",
+          "extractedAt": "2026-07-02T23:59:56.000Z",
+          "structuredFields": {
+            "kindergartenName": "진부초등학교병설유치원",
+            "kindergartenAddress": "강원특별자치도 평창군 진부새싹길 52",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%22869742772785250304%22%20%22%EC%A7%84%EB%B6%80%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%BD%EC%B0%B0%EC%84%9C%20%EA%B2%AC%ED%95%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진부초 병설유치원 명칭을 로컬 진부초등학교병설유치원과 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

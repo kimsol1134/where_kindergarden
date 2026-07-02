@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 6,
-  "kindergartenCount": 3,
+  "version": "2026-07-02",
+  "totalCount": 19,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0224-b044-e053-0a32095ab044": [
       {
@@ -46,29 +46,98 @@
           "선생님",
           "활동"
         ]
-      }
-    ],
-    "1ecec08d-0e88-b044-e053-0a32095ab044": [
+      },
       {
-        "kindergartenId": "1ecec08d-0e88-b044-e053-0a32095ab044",
-        "kindergartenName": "누리유치원",
-        "title": "21주임신부일상/ 유치원입학설명회/유치원체험/집들이",
-        "url": "https://blog.naver.com/daummy__/224065447180",
-        "source": "naver_blog",
-        "sourceName": "Daulog♥️",
-        "snippet": "나쁘지는 않았음 당일 바로 3번째 입학설명회 누리유치원 ㅋㅋㅋ 아 여기는 우리집 본가 바로 위쪽인데... 다유가 좋아할거같은 소수정예의 안락한 분위기 ㅋㅋㅋㅋㅋㅋㅋㅋ 설명회가 생각보다 너무 길어져서...",
-        "date": "2025-11-05",
-        "collectedAt": "2026-01-30T03:12:51.313Z",
-        "relevanceScore": 4,
-        "id": "rev-lsh6-l88n",
-        "summary": "후후 갑자기 지연이한테 받은 사진으로 업로드원본인데 신부찬스로 잘 나옴귀여운 박따유씨",
-        "pros": [],
-        "cons": [],
-        "sentiment": "negative",
+        "id": "rev-11f05d5d",
+        "kindergartenId": "1ecec08d-0224-b044-e053-0a32095ab044",
+        "kindergartenName": "중앙유치원",
+        "title": "양산 중앙유치원 1학기 학부모참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DKyeBzEzc3I/",
+        "source": "other",
+        "sourceName": "Instagram · 양산중앙유치원",
+        "snippet": "Instagram 검색 결과에서 양산중앙유치원 1학기 학부모참여수업 초대와 중앙유치원 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
         "tags": [
-          "급식",
-          "활동"
-        ]
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation-class",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "중앙유치원",
+          "kindergartenAddress": "경상남도 양산시 서남1길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKyeBzEzc3I%22+%22%EC%96%91%EC%82%B0%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DKyeBzEzc3I/",
+          "regionEvidence": [
+            "양산중앙유치원",
+            "중앙유치원",
+            "경상남도 양산시 서남1길 46"
+          ]
+        },
+        "evidenceChecksum": "32b630ee"
+      },
+      {
+        "id": "rev-dadaff8a",
+        "kindergartenId": "1ecec08d-0224-b044-e053-0a32095ab044",
+        "title": "양산 중앙유치원 식목일 꽃씨심기 Instagram Post",
+        "url": "https://www.instagram.com/p/DWxlL7cE90D/",
+        "source": "other",
+        "sourceName": "Instagram · 양산 중앙유치원",
+        "snippet": "양산중앙유치원 계정에서 식목일을 맞아 꽃씨심기와 유아생태전환교육 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "arbor-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fb1f4d46",
+        "structuredFields": {
+          "kindergartenName": "중앙유치원",
+          "kindergartenAddress": "경상남도 양산시 서남1길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWxlL7cE90D%22+%22%EC%96%91%EC%82%B0+%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "중앙유치원 동명이 있으나 양산중앙유치원 단서가 양산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxlL7cE90D/",
+          "normalizedUrl": "www.instagram.com/p/dwxll7ce90d",
+          "normalizedText": "양산 중앙유치원 식목일 꽃씨심기 instagram post 양산중앙유치원 계정에서 식목일을 맞아 꽃씨심기와 유아생태전환교육 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "fb1f4d46",
+          "extractedAt": "2026-07-02T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "중앙유치원",
+            "kindergartenAddress": "경상남도 양산시 서남1길 46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWxlL7cE90D%22+%22%EC%96%91%EC%82%B0+%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "중앙유치원 동명이 있으나 양산중앙유치원 단서가 양산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-065a-b044-e053-0a32095ab044": [
@@ -132,6 +201,568 @@
           "활동"
         ]
       }
+    ],
+    "99eb3c2e-97eb-47c8-9607-2a4a376bb7be": [
+      {
+        "id": "rev-821548f2",
+        "kindergartenId": "99eb3c2e-97eb-47c8-9607-2a4a376bb7be",
+        "title": "즐거웠던 양산 국제사바나유치원 오리엔테이션",
+        "url": "https://blog.naver.com/PostView.naver?blogId=ssonmo0716&logNo=224159130726",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "이제 올해 유치원에 입학하게 된딸😍 9월에 양산으로 이사오면서김해에서 다니던 어린이집에서옮겨야 하나 고민이였는데아이가 다니던 곳에서졸업하고 싶어해서 그동안은 김해까지 왔다갔다힘들었어요 양산에서 유치원을 알아보다꼭 보내고 싶은 곳을 발견해선택하게 된 곳이‘국제 사바나유치원’ 원복이 너무 예쁘지 않나요?슬프게도 올해부터는 원복이 없어졌다고 해요ㅜㅜ그러나 오리엔테이션에서 플리마켓으로 입었던 원복...",
+        "summary": "이제 올해 유치원에 입학하게 된딸😍 9월에 양산으로 이사오면서김해에서 다니던 어린이집에서옮겨야 하나 고민이였는데아이가 다니던 곳에서졸업하고 싶어해서 그동안은 김해까지 왔다갔다힘들었어요 양산에서 유치원을 알아보다꼭 보내고 싶은 곳을 발견해선택하게 된 곳이‘국제 사바나유치원’ 원복이 너무 예쁘지 않나요?슬프게도 올해부터는 원복이 없어졌다고 해요ㅜㅜ그러나 오리엔테이션에서 플리마켓으로 입었던 원복들을무료로 나눠주셔서저는 사진으로 남기고 싶어받아왔답니다>ㅁ< 이번주 토요일아이와 함께 다녀왔던국제사바나유치원 오리엔테이션! 규모가 큰 유치원답게팀이 배정되어 다른 팀들과 수업을 번갈아가며들었어요:) 첫번째 수업은 코딩수업을 들었는데아이가 직접 지시하...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T22:27:55.181Z",
+        "relevanceScore": 8,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a023729e",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=ssonmo0716&logNo=224159130726",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=ssonmo0716&logno=224159130726",
+          "normalizedText": "즐거웠던 양산 국제사바나유치원 오리엔테이션 22 이제 올해 유치원에 입학하게 된딸😍 9월에 양산으로 이사오면서김해에서 다니던 어린이집에서옮겨야 하나 고민이였는데아이가 다니던 곳에서졸업하고 싶어해서 그동안은 김해까지 왔다갔다힘들었어요 양산에서 유치원을 알아보다꼭 보내고 싶은 곳을 발견해선택하게 된 곳이‘국제 사바나유치원’ 원복이 너무 예쁘지 않나요?슬프게도 올해부터는 원복이 없어졌다고 해요ㅜㅜ그러나 오리엔테이션에서 플리마켓으로 입었던 원복... 이제 올해 유치원에 입학하게 된딸😍 9월에 양산으로 이사오면서김해에서 다니던 어린이집에서옮겨야 하나 고민이였는데아이가 다니던 곳에서졸업하고 싶어해서 그동안은 김해까지 왔다갔다힘들었어요 양산에서 유치원을 알아보다꼭 보내고 싶은 곳을 발견해선택하게 된 곳이‘국제 사바나유치원’ 원복이 너무 예쁘지 않나요?슬프게도 올해부터는 원복이 없어졌다고 해요ㅜㅜ그러나 오리엔테이션에서 플리마켓으로 입었던 원복들을무료로 나눠주셔서저는 사진으로 남기고 싶어받아왔답니다>ㅁ< 이번주 토요일아이와 함께 다녀왔던국제사바나유치원 오리엔테이션! 규모가 큰 유치원답게팀이 배정되어 다른 팀들과 수업을 번갈아가며들었어요:) 첫번째 수업은 코딩수업을 들었는데아이가 직접 지시하... 이제 올해 유치원에 입학하게 된딸😍 9월에 양산으로 이사오면서김해에서 다니던 어린이집에서옮겨야 하나 고민이였는데아이가 다니던 곳에서졸업하고 싶어해서 그동안은 김해까지 왔다갔다힘들었어요 양산에서 유치원을 알아보다꼭 보내고 싶은 곳을 발견해선택하게 된 곳이‘국제 사바나유치원’ 원복이 너무 예쁘지 않나요?슬프게도 올해부터는 원복이 없어졌다고 해요ㅜㅜ그러나 오리엔테이션에서 플리마켓으로 입었던 원복들을무료로 나눠주셔서저는 사진으로 남기고 싶어받아왔답니다>ㅁ< 이번주 토요일아이와 함께 다녀왔던국제사바나유치원 오리엔테이션! 규모가 큰 유치원답게팀이 배정되어 다른 팀들과 수업을 번갈아가며들었어요:) 첫번째 수업은 코딩수업을 들었는데아이가 직접 지시하고 움직이는걸 경험하더니 너무 재밌어하더라구요ㅎㅎ오늘 뭐가 제일 재밌었어?물어보니 코딩이였다고 답할정도😘 두번째 시간은 코앤코 음악수업!피터팬으로 변신해서 신나는 음악과 함께 이야기도 들어보며 체험하는 시간이였어요~ 역시 이런 의상을 입고 하니까아이들이 훨씬 귀여운거 있죠>ㅁ< 10분 동안 주어진 놀이시간🫶🏻쿠키마을로 꾸며진 컨셉이였는데탈것도 있고,부직포로 된 케이크와 쿠키도 꾸며볼 수 있고,과자의 집도 있어서아이가 시간 가는 줄 모르고 놀았어요 오리엔테이션을 이렇게 재밌게 준비해주시다니노력에 감사하면서앞으로 아이 유치원 생활이너무 기대되는 순간이였답니다👍🏻 중간중간 반에 계신 선생님들께서아이와 함께 놀아주시며모르는건 설명도 해주셨어요!모두들 너무나 친절하셔서 감동🥹 배고픈 아이들을 위해 간식타임도 준비되어 있었답니다:)",
+          "htmlSnapshotHash": "a023729e",
+          "extractedAt": "2026-06-29T22:27:55.181Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%AD%EC%A0%9C%EC%82%AC%EB%B0%94%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%96%91%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "국제사바나유치원",
+            "kindergartenAddress": "경상남도 양산시 금오6길 24",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%AD%EC%A0%9C%EC%82%AC%EB%B0%94%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%96%91%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "84a4b416-cd14-442e-ad8e-c2f422040366": [
+      {
+        "id": "rev-74019562",
+        "kindergartenId": "84a4b416-cd14-442e-ad8e-c2f422040366",
+        "title": "[양산증산/물금] 유치원 추천(가촌초등학교 병설유치원)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=hhnek&logNo=224056765479",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요 :)11월이면 유아모집 접수기간이라 어디 유치원에 보내면 좋을지 고민 중이신 학부모님들이 많으실 것 같아서,제가 사는 지역에 계신 분께 조금이나마 도움이 되었으면해서 포스팅을 합니다 :)저는 아이들을 가촌초등학교 병설유치원에 보내고 있는데,매우 만족하고 있어서 추천드리고자 합니다.일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면,- 국가에서 전액지원유...",
+        "summary": "안녕하세요 :)11월이면 유아모집 접수기간이라 어디 유치원에 보내면 좋을지 고민 중이신 학부모님들이 많으실 것 같아서,제가 사는 지역에 계신 분께 조금이나마 도움이 되었으면해서 포스팅을 합니다 :)저는 아이들을 가촌초등학교 병설유치원에 보내고 있는데,매우 만족하고 있어서 추천드리고자 합니다.일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면,- 국가에서 전액지원유치원을 보낼 때 원비를 고려 안할 수가 없습니다.아이가 하나이어도 원비가 비싸면 부담이지만,2명 이상이 되면 두 배, 세 배가 되기 때문에 매월 지출해야하는 원비가 부담이 되기도 합니다.최근에는 경남지역은 사립유치원도 무상지원이 되긴 하지만,가촌초등학...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T22:28:11.155Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "d21c112f",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=hhnek&logNo=224056765479",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=hhnek&logno=224056765479",
+          "normalizedText": "[양산증산/물금] 유치원 추천(가촌초등학교 병설유치원) 아이들을 가촌초등학교 병설유치원에 보내고 있는데, 매우 만족하고 있어서 추천드리고자 합니다. 일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면... 작년에는 모든 특성화활동에 대해 학부모 참여수업으로 진행을 해주셔서 가보았는데, 다양한 수업을 아이들과 함께 배워보니 다양한 활동을 하는 것이 좋은 것 같았습니다. - 바깥놀이... 안녕하세요 :)11월이면 유아모집 접수기간이라 어디 유치원에 보내면 좋을지 고민 중이신 학부모님들이 많으실 것 같아서,제가 사는 지역에 계신 분께 조금이나마 도움이 되었으면해서 포스팅을 합니다 :)저는 아이들을 가촌초등학교 병설유치원에 보내고 있는데,매우 만족하고 있어서 추천드리고자 합니다.일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면,- 국가에서 전액지원유... 안녕하세요 :)11월이면 유아모집 접수기간이라 어디 유치원에 보내면 좋을지 고민 중이신 학부모님들이 많으실 것 같아서,제가 사는 지역에 계신 분께 조금이나마 도움이 되었으면해서 포스팅을 합니다 :)저는 아이들을 가촌초등학교 병설유치원에 보내고 있는데,매우 만족하고 있어서 추천드리고자 합니다.일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면,- 국가에서 전액지원유치원을 보낼 때 원비를 고려 안할 수가 없습니다.아이가 하나이어도 원비가 비싸면 부담이지만,2명 이상이 되면 두 배, 세 배가 되기 때문에 매월 지출해야하는 원비가 부담이 되기도 합니다.최근에는 경남지역은 사립유치원도 무상지원이 되긴 하지만,가촌초등학... 안녕하세요 :)11월이면 유아모집 접수기간이라 어디 유치원에 보내면 좋을지 고민 중이신 학부모님들이 많으실 것 같아서,제가 사는 지역에 계신 분께 조금이나마 도움이 되었으면해서 포스팅을 합니다 :)저는 아이들을 가촌초등학교 병설유치원에 보내고 있는데,매우 만족하고 있어서 추천드리고자 합니다.일단 제가 유치원을 보내면서 만족하는게 많은 부분이 있지만 몇 가지 말씀드리자면,- 국가에서 전액지원유치원을 보낼 때 원비를 고려 안할 수가 없습니다.아이가 하나이어도 원비가 비싸면 부담이지만,2명 이상이 되면 두 배, 세 배가 되기 때문에 매월 지출해야하는 원비가 부담이 되기도 합니다.최근에는 경남지역은 사립유치원도 무상지원이 되긴 하지만,가촌초등학교 병설유치원은 국가에서 전액지원이 되기 때문에입학금, 수업료, 현장체험학습, 급식, 간식, 특성화교육, 원복, 가방, 학습준비물, 행사비 등모~~~~~~~~~~~~~~두 지원이 됩니다(이때까지 유치원에 지출한 금액은 0원입니다)그리고 아이들이 자유놀이 시간에 디폼블럭이나 다양한 재료들로 만들기, 색종이접기를 할 수 있도록많은 학습준비물들을 직접 구비해놓으셔서 이 점도 좋았습니다.방과후 과정에 수에 대해 공부를 시작하면서 넘버블럭스 교구도 구비해놓으신 것 같더라구요 :)자칫 공부가 되면 아이들의 흥미가 떨어질 수도 있는데, 관련된 교구를 준비해주시고즐겁게 진행해주시는 점에 대해 늘 감사한 마음입니다!- 다채로운 특성화교육(방과후과정)전 병설유치원을 선택한 이유가 많이 놀게하려고 선택했는데,요새는 병설유치원도 다양한 교육을 많이하시더라구요 ^^;처음 제가 보낸 의도와는 다르지만, 아이들은 많은 활동을 하고 배워오니 좋은 것 같습니다.영어, 미술, 음악, 체육을 비롯하여 한글 및 숫자공부도 같이 진행해주셔서,아이들이 이름을 쓰는 법도 직접 배워오고, 숫자를 읽는 법도 배울 수 있어서 유익하더라구요.파이는 언어에 관심이 많은데 한글 공부도 하고 영어 공부도 하니 좋았고,찰떡이는 숫자에 관심이 많은데 수에 대해서도 가르쳐주시니 너무 좋더라구요.작년에는 모든 특성화활동에 대해 학부모 참여수업으로 진행을 해주셔서 가보았는데,다양한 수업을 아이들과 함께 배워보니 다양한 활동을 하는 것이 좋은 것 같았습니다.- 바깥놀이, 생태놀이(월 1회)제가 병설유치원을 선택한 이유는 위에도 언급했듯이 많이 놀았으면 하는 바람이었는데,바깥놀이도 매일 나가주시고 특히 모래놀이터가 바로 앞에 있어서 너무 좋더라구요.아이들이 친구들과 함께 상상력을 펼쳐서 만들어보기도 하고,자전거를 탈 수 있는 공간도 있고, 바닥에 그림을 그릴 수도 있고,아이들이 놀 수 있는 공간이 많이 제공되는 점이 너무 좋았습니다.그리고 월 1회 외부 강사님을 초빙하여서 생태놀이를 진행합니다.아이들이 주변을 다니면서 풀과 꽃 이름도 배워보고, 곤충에 대해서도 배워보고,자연과 친밀해지는 것이 너무 좋더라구요.또한 아이들과 함께 텃밭을 기르면서 아이들이 식물이 자라는 것을 보고,같이 씨앗을 심고 물을 주고 키워서 수확해서 먹는 기쁨도 느낄 수 있도록 해주셨습니다.모래놀이터에는 원감선생님께서 텃밭 뿐 아니라 항상 꽃을 예쁘게 심어주시고 화단을 가꿔주셔서,꽃을 좋아하는 저희 둘째는 종종 저에게 꽃구경도 시켜주곤 합니다 :)- 아침 돌봄, 저녁 돌봄아침돌봄은 7시 30분부터, 저녁돌봄은 18시까지 운영됩니다.교육과정은 9시부터 13시까지, 방과후과정은 13시부터 17시까지입니다.(참고로 교육과정+방과후과정으로 전체 지원이 되기 때문에보통 9시부터 16시 or 17시까지 아이들이 있는 것 같습니다.)맞벌이로 일찍 출근하시는 분들에게 부담을 덜어주실 수 있을 정도로 일찍 문을 열어주십니다.- 방학이 없어요병설유치원이라고 하면 초등학교 안에 있기 때문에 방학이 길다고 생각하실 수 있는데,절대 그렇지 않습니다~올해는 있던 여름방학도 아예 없애주실 정도로(^^;) 배려해주시더라구요.요새는 맞벌이 부부가 많기 때문에 방학이 되면 부모님들이 돌아가면서 연차를 쓰거나,조부모님이나 다른 분들의 도움을 받아야하는데 그런 걱정이 필요가 없습니다.- 맛있는 급식, 든든한 간식제가 먹어보진 않았지만, 아이들(유치원, 초등학교)과 선생님들의 평이 급식이 엄청 맛있다고 하더라구요.식단표도 보면 늘 정성껏 짜임새 있게 짜주셔서 감사한 마음입니다 :)간식도 늘 든든하게 잘 챙겨주셔서 아이들이 배부르게 먹고 오는 것 같습니다.급식실에 가는 것이 마음에 걸리실 수도 있는데,5세 아이들의 경우 선생님들께서 배식을 도와주셔서 염려 없습니다 :)- 생일파티(월 1회)유치원에서는 월 1회 생일파티도 진행해줍니다.케이크, 간식, 답례품 등 전혀 준비하실 필요가 없습니다.마음 편히 아이들만 보내면 되더라구요.원에서 케이크 및 아이 선물까지 준비해주셔서 감사한 마음입니다 :)- 상세한 피드백특이사항이 있거나 하면 교과과정 선생님, 방과후과정 선생님께 연락이 옵니다.하원할 때는 방과후과정 선생님을 만나기 때문에 또 상세히 피드백을 받을 수 있어서 좋더라구요.늘 꼼꼼하게 아이들을 체크해주시고 피드백해주셔서 믿고 보낼 수 있습니다 :)- 교과과정 선생님과 방과후과정 선생님 두 분이 계신 점제가 병설유치원으로 보내기로 마음 먹었던 이유 중 하나는교과과정 선생님과 방과후과정 선생님 두 분께서 아이들을 봐주신다는 점이었습니다.가끔 제 아이지만 저도 보기 벅찰 수도 있는데,선생님들께서 아이들을 보시는 시간이 절반이기 때문에 더 집중해서 잘 봐주실 수 있을 것 같더라구요.뭐든지 로드가 많이 걸리면 힘들기 마련인데 선생님께서 두 분이시니 더 좋을 것 같았습니다.두 분이시라 소통이 안될 것 같지만 소통이 안 되는 점은 전혀 없었고,오히려 두 분이셔서 아이에 대해 더 다양한 의견도 들어볼 수 있어서 좋았습니다.그리고 만나뵈었던 선생님들 모두 다 친절하시고 아이들을 사랑해주시는게 느껴져서 더 좋았습니다.(저보다 더 제 아이의 마음을 헤아려주시기도 하더라구요 ^^;)- 유초연계 과정(적응이 오래 걸리는 아이에게 좋음)저희 아이들은 새로운 환경에 적응하는 시간이 좀 걸리는데,유치원을 병설유치원으로 다니다보니 초등학교에도 익숙해지겠더라구요.초등학교에 있는 도서관도 이용을 하고, 운동장도 이용하고, 강당도 이용하니 공간 자체가 익숙해질 수밖에 없는 느낌이었습니다.어른들도 낯선 곳에 처음 가면 어색하고 어렵듯이, 아이들도 마찬가지일겁니다.하지만 병설유치원에 다니다가 초등학교를 다니게 되면 다니던 곳이라 편한 느낌으로 잘 적응할 수 있을 것 같았습니다.또한 유치원에서 유초연계과정을 진행해주셔서 초등학생들과 직접 만나보는 시간도 갖고,학부모님들을 대상으로 초등학교에 대한 설명회도 해주시는 등 유초연계과정도 잘 되어있었습니다 :)그 외에도- 유아놀이중심교육과정 운영- 인성교육, 기본 생활습관을 중요시하며 지도해주심- 임용고시로 선발된 우수한 선생님들- 주기적으로 가는 현장체험학습- 초등학교 형제자매가 있다면 같이 등교/등원할 수 있음 등이 있습니다.제 인생에 셋째는 없지만 셋째가 있었다면 가촌초등학교 병설유치원을 보낼 정도로너무너무 만족하며 다니고 있습니다.혹시 궁금하신 점이 있으실 경우 댓글 달아주시면 답변 드릴게요 :)",
+          "htmlSnapshotHash": "d21c112f",
+          "extractedAt": "2026-06-29T22:28:11.155Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B0%80%EC%B4%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "가촌초등학교병설유치원",
+            "kindergartenAddress": "경상남도 양산시 물금로 139",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B0%80%EC%B4%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-fdec-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-9f3c7f3c",
+        "kindergartenId": "1ecec08c-fdec-b044-e053-0a32095ab044",
+        "title": "양산 에듀웰명문유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DBJjU63yKYI/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀웰명문유치원",
+        "snippet": "Instagram 검색 결과에서 에듀웰명문유치원 2025 입학설명회와 양산·몬테소리 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "6d6c4da7",
+        "structuredFields": {
+          "kindergartenName": "에듀웰명문유치원",
+          "kindergartenAddress": "경상남도 양산시 곡리4길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBJjU63yKYI%22+%22%EC%97%90%EB%93%80%EC%9B%B0%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBJjU63yKYI/",
+          "normalizedUrl": "www.instagram.com/p/dbjju63ykyi",
+          "normalizedText": "양산 에듀웰명문유치원 입학설명회 instagram instagram 검색 결과에서 에듀웰명문유치원 2025 입학설명회와 양산·몬테소리 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "6d6c4da7",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀웰명문유치원",
+            "kindergartenAddress": "경상남도 양산시 곡리4길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBJjU63yKYI%22+%22%EC%97%90%EB%93%80%EC%9B%B0%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-07aa044f",
+        "kindergartenId": "1ecec08c-fdec-b044-e053-0a32095ab044",
+        "title": "경남 양산 에듀웰명문유치원 입학상담 Reel",
+        "url": "https://www.instagram.com/reel/DI1Fub1y2zH/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀웰명문유치원",
+        "snippet": "Instagram Reels 검색 결과에서 양산, 에듀웰명문유치원, 석산유치원추천, 신입모집, 유치원원아모집과 입학상담 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "01c0622b",
+        "structuredFields": {
+          "kindergartenName": "에듀웰명문유치원",
+          "kindergartenAddress": "경상남도 양산시 곡리4길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DI1Fub1y2zH%22+%22%EC%97%90%EB%93%80%EC%9B%B0%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DI1Fub1y2zH/",
+          "normalizedUrl": "www.instagram.com/reel/di1fub1y2zh",
+          "normalizedText": "경남 양산 에듀웰명문유치원 입학상담 reel instagram reels 검색 결과에서 양산, 에듀웰명문유치원, 석산유치원추천, 신입모집, 유치원원아모집과 입학상담 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "01c0622b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀웰명문유치원",
+            "kindergartenAddress": "경상남도 양산시 곡리4길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DI1Fub1y2zH%22+%22%EC%97%90%EB%93%80%EC%9B%B0%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-777b3329",
+        "kindergartenId": "1ecec08c-fdec-b044-e053-0a32095ab044",
+        "kindergartenName": "에듀웰명문유치원",
+        "title": "에듀웰명문유치원 가족운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DK6EUKjR2Vi/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀웰명문유치원",
+        "snippet": "Instagram 검색 결과에서 에듀웰명문유치원 가족 운동회, 엄마·아빠가 함께한 즐거운 양산 유치원 행사 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sports-day",
+          "family-event",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "에듀웰명문유치원",
+          "kindergartenAddress": "경상남도 양산시 곡리4길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DK6EUKjR2Vi%22+%22%EC%97%90%EB%93%80%EC%9B%B0%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1+%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DK6EUKjR2Vi/",
+          "regionEvidence": [
+            "에듀웰명문유치원",
+            "양산",
+            "가족 운동회"
+          ]
+        },
+        "evidenceChecksum": "a013c02b"
+      }
+    ],
+    "1ecec08c-f4f7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d19c76e4",
+        "kindergartenId": "1ecec08c-f4f7-b044-e053-0a32095ab044",
+        "title": "양산 다인유치원 신입생모집 Instagram",
+        "url": "https://www.instagram.com/p/DHvZCXIBXiA/",
+        "source": "other",
+        "sourceName": "Instagram · 양산 다인유치원",
+        "snippet": "Instagram 검색 결과에서 양산다인유치원, 소주동유치원, 입학설명회, 2026학년도 신입생모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "da536a98",
+        "structuredFields": {
+          "kindergartenName": "다인유치원",
+          "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHvZCXIBXiA%22+%22%EC%96%91%EC%82%B0%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHvZCXIBXiA/",
+          "normalizedUrl": "www.instagram.com/p/dhvzcxibxia",
+          "normalizedText": "양산 다인유치원 신입생모집 instagram instagram 검색 결과에서 양산다인유치원, 소주동유치원, 입학설명회, 2026학년도 신입생모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "da536a98",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다인유치원",
+            "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHvZCXIBXiA%22+%22%EC%96%91%EC%82%B0%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-45fef85b",
+        "kindergartenId": "1ecec08c-f4f7-b044-e053-0a32095ab044",
+        "title": "양산 다인유치원 해양환경이동교실 Instagram",
+        "url": "https://www.instagram.com/p/DH5lYxGzMjx/",
+        "source": "other",
+        "sourceName": "Instagram · 양산 다인유치원",
+        "snippet": "Instagram 검색 결과에서 양산다인유치원, 해양환경이동교실, 입학설명회와 신입생모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "86276d95",
+        "structuredFields": {
+          "kindergartenName": "다인유치원",
+          "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DH5lYxGzMjx%22+%22%EC%96%91%EC%82%B0%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DH5lYxGzMjx/",
+          "normalizedUrl": "www.instagram.com/p/dh5lyxgzmjx",
+          "normalizedText": "양산 다인유치원 해양환경이동교실 instagram instagram 검색 결과에서 양산다인유치원, 해양환경이동교실, 입학설명회와 신입생모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "86276d95",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다인유치원",
+            "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DH5lYxGzMjx%22+%22%EC%96%91%EC%82%B0%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-91bea153",
+        "kindergartenId": "1ecec08c-f4f7-b044-e053-0a32095ab044",
+        "title": "양산 다인유치원 졸업식 Reel",
+        "url": "https://www.instagram.com/reel/DGMfVpmzUQ7/",
+        "source": "other",
+        "sourceName": "Instagram · 다인유치원",
+        "snippet": "Instagram Reels 검색 결과에서 소주동유치원, 다인유치원, 양산다인유치원과 졸업식 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "3d4273b6",
+        "structuredFields": {
+          "kindergartenName": "다인유치원",
+          "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGMfVpmzUQ7%22+%22%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%91%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGMfVpmzUQ7/",
+          "normalizedUrl": "www.instagram.com/reel/dgmfvpmzuq7",
+          "normalizedText": "양산 다인유치원 졸업식 reel instagram reels 검색 결과에서 소주동유치원, 다인유치원, 양산다인유치원과 졸업식 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "3d4273b6",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다인유치원",
+            "kindergartenAddress": "경상남도 양산시 소주로 181-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGMfVpmzUQ7%22+%22%EB%8B%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%91%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-01b3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a7ef954d",
+        "kindergartenId": "1ecec08d-01b3-b044-e053-0a32095ab044",
+        "title": "양산 해바라기유치원 입학상담 Instagram",
+        "url": "https://www.instagram.com/p/CU6ZSEbBZ8v/",
+        "source": "other",
+        "sourceName": "Instagram · 양산 해바라기유치원",
+        "snippet": "Instagram 검색 결과에서 양산 해바라기유치원, 물금유치원, 입학설명회와 입학상담 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "c3635929",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "경상남도 양산시 초장길 22-17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CU6ZSEbBZ8v%22+%22%EC%96%91%EC%82%B0%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CU6ZSEbBZ8v/",
+          "normalizedUrl": "www.instagram.com/p/cu6zsebbz8v",
+          "normalizedText": "양산 해바라기유치원 입학상담 instagram instagram 검색 결과에서 양산 해바라기유치원, 물금유치원, 입학설명회와 입학상담 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c3635929",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "경상남도 양산시 초장길 22-17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CU6ZSEbBZ8v%22+%22%EC%96%91%EC%82%B0%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ef3a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-7fe2a267",
+        "kindergartenId": "1ecec08c-ef3a-b044-e053-0a32095ab044",
+        "title": "양산 웅상유치원 어린이날 Instagram Post",
+        "url": "https://www.instagram.com/p/DJQkp9MyfwF/",
+        "source": "other",
+        "sourceName": "Instagram · 웅상유치원",
+        "snippet": "Instagram 검색 결과에서 웅상유치원, 웅상이들의 어린이날, 어린이날 선물 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "children-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "37aaec97",
+        "structuredFields": {
+          "kindergartenName": "웅상유치원",
+          "kindergartenAddress": "경상남도 양산시 번영로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJQkp9MyfwF%22+%22%EC%9B%85%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJQkp9MyfwF/",
+          "normalizedUrl": "www.instagram.com/p/djqkp9myfwf",
+          "normalizedText": "양산 웅상유치원 어린이날 instagram post instagram 검색 결과에서 웅상유치원, 웅상이들의 어린이날, 어린이날 선물 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "37aaec97",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "웅상유치원",
+            "kindergartenAddress": "경상남도 양산시 번영로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJQkp9MyfwF%22+%22%EC%9B%85%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-38baf872",
+        "kindergartenId": "1ecec08c-ef3a-b044-e053-0a32095ab044",
+        "kindergartenName": "웅상유치원",
+        "title": "양산 웅상유치원 추석 강강술래 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CUVARfIBNZQ/",
+        "source": "other",
+        "sourceName": "Instagram · 웅상유치원",
+        "snippet": "Instagram 검색 결과에서 웅상유치원 추석 강강술래와 웅상유치원 상상 숲 놀이터 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "traditional-play",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "웅상유치원",
+          "kindergartenAddress": "경상남도 양산시 번영로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CUVARfIBNZQ%22+%22%EC%9B%85%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B6%94%EC%84%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/CUVARfIBNZQ/",
+          "regionEvidence": [
+            "웅상유치원",
+            "추석",
+            "강강술래",
+            "상상 숲 놀이터"
+          ]
+        },
+        "evidenceChecksum": "8506f440"
+      }
+    ],
+    "1ecec08c-f0c8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b31525e9",
+        "kindergartenId": "1ecec08c-f0c8-b044-e053-0a32095ab044",
+        "title": "양산 사랑유치원 벼수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DCYRGEVyJes/",
+        "source": "other",
+        "sourceName": "Instagram · 양산사랑유치원",
+        "snippet": "텃밭프로젝트 모심기활동 후 벼수확, 추수활동 문맥과 양산사랑유치원, 양산어곡사랑유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "rice-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "40fc31d5",
+        "structuredFields": {
+          "kindergartenName": "사랑유치원",
+          "kindergartenAddress": "경상남도 양산시 두전길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCYRGEVyJes%22+%22%EC%96%91%EC%82%B0%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EA%B3%A1%22+%22%EB%B2%BC%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "계정·해시태그는 양산사랑유치원/양산어곡사랑유치원으로 표기되지만 로컬 원장부 등록명은 양산시 사랑유치원이며 어곡 지역 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCYRGEVyJes/",
+          "normalizedUrl": "www.instagram.com/p/dcyrgevyjes",
+          "normalizedText": "양산 사랑유치원 벼수확 instagram post 텃밭프로젝트 모심기활동 후 벼수확, 추수활동 문맥과 양산사랑유치원, 양산어곡사랑유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "40fc31d5",
+          "extractedAt": "2026-07-02T15:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사랑유치원",
+            "kindergartenAddress": "경상남도 양산시 두전길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCYRGEVyJes%22+%22%EC%96%91%EC%82%B0%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EA%B3%A1%22+%22%EB%B2%BC%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "계정·해시태그는 양산사랑유치원/양산어곡사랑유치원으로 표기되지만 로컬 원장부 등록명은 양산시 사랑유치원이며 어곡 지역 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

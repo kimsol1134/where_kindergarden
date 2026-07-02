@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "version": "2026-07-01",
+  "totalCount": 5,
+  "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-fddb-b044-e053-0a32095ab044": [
       {
@@ -23,7 +23,210 @@
         "tags": [
           "등하원"
         ]
+      },
+      {
+        "id": "rev-b020a64e",
+        "kindergartenId": "1ecec08c-fddb-b044-e053-0a32095ab044",
+        "title": "사천 열린유치원 SNS 프로필",
+        "url": "https://www.instagram.com/yeolin_kindergarten/",
+        "source": "other",
+        "sourceName": "Instagram · 열린유치원",
+        "snippet": "열린유치원 프로필에서 사천과 전화 055-853-1133 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경남 사천시 열린유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "열린유치원 프로필에서 사천과 전화 055-853-1133 문맥이 확인되는 Instagram 검색 결과다. 열린유치원 동명이 있어 사천 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f2ac710c",
+        "structuredFields": {
+          "kindergartenName": "열린유치원",
+          "kindergartenAddress": "경상남도 사천시 고읍길 151",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22yeolin_kindergarten%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 사천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/yeolin_kindergarten/",
+          "normalizedUrl": "www.instagram.com/yeolin_kindergarten",
+          "normalizedText": "사천 열린유치원 sns 프로필 열린유치원 프로필에서 사천과 전화 055-853-1133 문맥이 확인되는 instagram 검색 결과. 경남 사천시 열린유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "f2ac710c",
+          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "structuredFields": {
+            "kindergartenName": "열린유치원",
+            "kindergartenAddress": "경상남도 사천시 고읍길 151",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22yeolin_kindergarten%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 사천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e03d756c",
+        "kindergartenId": "1ecec08c-fddb-b044-e053-0a32095ab044",
+        "title": "사천 열린유치원 입학안내 SNS",
+        "url": "https://www.instagram.com/p/DRMYdb9kgMM/",
+        "source": "other",
+        "sourceName": "Instagram · 열린유치원",
+        "snippet": "열린유치원 입학안내와 사천 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경남 사천시 열린유치원의 입학안내 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "열린유치원 입학안내와 사천 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c4e4f084",
+        "structuredFields": {
+          "kindergartenName": "열린유치원",
+          "kindergartenAddress": "경상남도 사천시 고읍길 151",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRMYdb9kgMM%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRMYdb9kgMM/",
+          "normalizedUrl": "www.instagram.com/p/drmydb9kgmm",
+          "normalizedText": "사천 열린유치원 입학안내 sns 열린유치원 입학안내와 사천 문맥이 확인되는 instagram 검색 결과. 경남 사천시 열린유치원의 입학안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "c4e4f084",
+          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "structuredFields": {
+            "kindergartenName": "열린유치원",
+            "kindergartenAddress": "경상남도 사천시 고읍길 151",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRMYdb9kgMM%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0e9ba925",
+        "kindergartenId": "1ecec08c-fddb-b044-e053-0a32095ab044",
+        "title": "사천 열린유치원 추가 활동 SNS",
+        "url": "https://www.instagram.com/p/DQd-3Hrklx7/",
+        "source": "other",
+        "sourceName": "Instagram · 열린유치원",
+        "snippet": "열린유치원 계정의 추가 활동 게시물과 사천 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경남 사천시 열린유치원의 추가 활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "열린유치원 계정의 추가 활동 게시물과 사천 문맥이 확인되는 Instagram 검색 결과다. 기존 열린유치원 SNS와 다른 게시물 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0bad5d34",
+        "structuredFields": {
+          "kindergartenName": "열린유치원",
+          "kindergartenAddress": "경상남도 사천시 고읍길 151",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQd-3Hrklx7%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQd-3Hrklx7/",
+          "normalizedUrl": "www.instagram.com/p/dqd-3hrklx7",
+          "normalizedText": "사천 열린유치원 추가 활동 sns 열린유치원 계정의 추가 활동 게시물과 사천 문맥이 확인되는 instagram 검색 결과. 경남 사천시 열린유치원의 추가 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "0bad5d34",
+          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "structuredFields": {
+            "kindergartenName": "열린유치원",
+            "kindergartenAddress": "경상남도 사천시 고읍길 151",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQd-3Hrklx7%22+%22%EC%97%B4%EB%A6%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-853-1133%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fd66-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2d17901d",
+        "kindergartenId": "1ecec08c-fd66-b044-e053-0a32095ab044",
+        "kindergartenName": "꽃나라유치원",
+        "title": "사천 꽃나라유치원 찾아가는 도서관 공연 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DI5_dd5R4BY/",
+        "source": "other",
+        "sourceName": "Instagram · 경상남도교육청 삼천포도서관",
+        "snippet": "Instagram 검색 결과에서 삼천포도서관이 꽃나라유치원으로 찾아가는 공연을 진행한 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "library",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "꽃나라유치원",
+          "kindergartenAddress": "경상남도 사천시 벌리8길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DI5_dd5R4BY%22+%22%EA%BD%83%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%BC%EC%B2%9C%ED%8F%AC%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DI5_dd5R4BY/",
+          "regionEvidence": [
+            "꽃나라유치원",
+            "삼천포도서관",
+            "경상남도 사천시 벌리8길 12"
+          ]
+        },
+        "evidenceChecksum": "ef59c536"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

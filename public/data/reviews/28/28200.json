@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 16,
-  "kindergartenCount": 9,
+  "version": "2026-07-01",
+  "totalCount": 58,
+  "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
       {
@@ -59,35 +59,480 @@
         "snippet": "코카콜라70 리뷰 1,133사진 7 아이들이 행복하게 지낼 수 있는 유치원입니다~ 3번째 방문",
         "date": "2023-09-22",
         "collectedAt": "2026-04-05T15:20:24.369Z"
+      },
+      {
+        "id": "rev-f59195f6",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 남동구 수피아유치원 교통안전교육 Instagram",
+        "url": "https://www.instagram.com/reel/DOYE4vbE13Q/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "soopia.kinder 계정에서 수피아유치원 원아들이 찾아오는 교통안전교육으로 안전하게 건너는 방법을 배운 문맥이 확인되며 인천유치원, 구월동유치원 해시태그가 함께 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": "2025-09-09",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "a3fd263f",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOYE4vbE13Q%22+%22soopia.kinder%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DOYE4vbE13Q/",
+          "normalizedUrl": "www.instagram.com/reel/doye4vbe13q",
+          "normalizedText": "인천 남동구 수피아유치원 교통안전교육 instagram soopia.kinder 계정에서 수피아유치원 원아들이 찾아오는 교통안전교육으로 안전하게 건너는 방법을 배운 문맥이 확인되며 인천유치원, 구월동유치원 해시태그가 함께 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "a3fd263f",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOYE4vbE13Q%22+%22soopia.kinder%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-31c779de",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 남동구 수피아유치원 숲 플로깅 Instagram",
+        "url": "https://www.instagram.com/reel/DYgxBNVTqlc/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "soopia.kinder 계정에서 수피아유치원 원아들이 숲 플로깅 활동을 통해 지구를 지키는 작은 습관과 숲유치원 활동을 경험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest",
+          "nature"
+        ],
+        "date": "2026-05-19",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "ffe3c2c1",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYgxBNVTqlc%22+%22soopia.kinder%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYgxBNVTqlc/",
+          "normalizedUrl": "www.instagram.com/reel/dygxbnvtqlc",
+          "normalizedText": "인천 남동구 수피아유치원 숲 플로깅 instagram soopia.kinder 계정에서 수피아유치원 원아들이 숲 플로깅 활동을 통해 지구를 지키는 작은 습관과 숲유치원 활동을 경험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "ffe3c2c1",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYgxBNVTqlc%22+%22soopia.kinder%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3f656943",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 남동구 수피아유치원 숲 신체활동 Instagram",
+        "url": "https://www.instagram.com/reel/DYO9GKwzYu8/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "soopia.kinder 계정에서 수피아유치원 원아들이 숲 수업 중 개미처럼 움직이는 신체활동을 한 문맥과 인천숲유치원 해시태그가 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest-experience",
+          "physical-education"
+        ],
+        "date": "2026-05-12",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2feecf0c",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYO9GKwzYu8%22+%22soopia.kinder%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYO9GKwzYu8/",
+          "normalizedUrl": "www.instagram.com/reel/dyo9gkwzyu8",
+          "normalizedText": "인천 남동구 수피아유치원 숲 신체활동 instagram soopia.kinder 계정에서 수피아유치원 원아들이 숲 수업 중 개미처럼 움직이는 신체활동을 한 문맥과 인천숲유치원 해시태그가 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2feecf0c",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYO9GKwzYu8%22+%22soopia.kinder%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-152dc869",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 수피아 참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DKJcjqITsaf/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 수피아유치원 머루반 수피아 참여수업, 숲유치원, 인천숲유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "forest-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "8c04b884",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKJcjqITsaf%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKJcjqITsaf/",
+          "normalizedUrl": "www.instagram.com/reel/dkjcjqitsaf",
+          "normalizedText": "인천 수피아유치원 수피아 참여수업 instagram instagram 검색 결과에서 수피아유치원 머루반 수피아 참여수업, 숲유치원, 인천숲유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "8c04b884",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKJcjqITsaf%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-22f5e5ed",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 숲 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DKtx3yVzH-6/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 숲과 함께 자라나는 아이들, 수피아유치원, 인천숲유치원, 수산동, 숲에서 노는 활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "cc1dd54f",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKtx3yVzH-6%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKtx3yVzH-6/",
+          "normalizedUrl": "www.instagram.com/reel/dktx3yvzh-6",
+          "normalizedText": "인천 수피아유치원 숲 활동 instagram instagram 검색 결과에서 숲과 함께 자라나는 아이들, 수피아유치원, 인천숲유치원, 수산동, 숲에서 노는 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "cc1dd54f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKtx3yVzH-6%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-04582575",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 새 친구 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DG2MN60z22T/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 수피아유치원 새 친구 활동, 인천숲유치원, 인천유치원, 학부모 참여수업 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-life",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "3913cce0",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DG2MN60z22T%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DG2MN60z22T/",
+          "normalizedUrl": "www.instagram.com/reel/dg2mn60z22t",
+          "normalizedText": "인천 수피아유치원 새 친구 활동 instagram instagram 검색 결과에서 수피아유치원 새 친구 활동, 인천숲유치원, 인천유치원, 학부모 참여수업 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "3913cce0",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DG2MN60z22T%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-8717e61d",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 숲유치원 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DZeaiEBzq69/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 인천숲유치원, 수피아유치원, 인천유치원, 수산동, 구월동유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "b22b112d",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZeaiEBzq69%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZeaiEBzq69/",
+          "normalizedUrl": "www.instagram.com/reel/dzeaiebzq69",
+          "normalizedText": "인천 수피아유치원 숲유치원 활동 instagram instagram 검색 결과에서 인천숲유치원, 수피아유치원, 인천유치원, 수산동, 구월동유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "b22b112d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZeaiEBzq69%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-885a42da",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 숲에서 놀아요 Instagram",
+        "url": "https://www.instagram.com/reel/DXokBV0Ew9S/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 수피아유치원, 인천숲유치원, 숲유치원, 숲에서놀아요 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "forest-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "849ff326",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXokBV0Ew9S%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXokBV0Ew9S/",
+          "normalizedUrl": "www.instagram.com/reel/dxokbv0ew9s",
+          "normalizedText": "인천 수피아유치원 숲에서 놀아요 instagram instagram 검색 결과에서 수피아유치원, 인천숲유치원, 숲유치원, 숲에서놀아요 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "849ff326",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXokBV0Ew9S%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-eccff964",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "kindergartenName": "수피아유치원",
+        "title": "수피아유치원 자연놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DaEf7pdPoyH/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "Instagram 검색 결과에서 수피아유치원, 숲유치원, 인천유치원, 구월동, 나뭇잎 부채 활동 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "수피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 찬우물로29번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaEf7pdPoyH%22+%22%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%AC%EC%9B%94%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DaEf7pdPoyH/",
+          "regionEvidence": [
+            "수피아유치원",
+            "인천유치원",
+            "구월동",
+            "숲유치원",
+            "자연놀이"
+          ]
+        },
+        "evidenceChecksum": "78958caa"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [
       {
-        "id": "rev-2148-9a92",
+        "id": "rev-df35136e",
         "kindergartenId": "1ecec08d-063c-b044-e053-0a32095ab044",
-        "title": "기질육아법  인천 남동구 서창동 제니스 유치원 후기 | 인천...",
-        "url": "https://blog.naver.com/doori_bom/223666052148",
+        "title": "인천 남동구 - 제니스 유치원 부속 놀이터",
+        "url": "https://blog.naver.com/PostView.naver?blogId=shhan2020&logNo=223887033058",
         "source": "naver_blog",
-        "sourceName": "두리봄심리상담센터 & 교육코칭연구소",
-        "snippet": "25 시간: 19시~21시 장소: 인천 제니스유치원 강사: 두리봄심리상담센터 대표 권두리 박사(Ph.D)... 아버지들의 교육 후기 감사드립니다. 그중 재미있고 인상적이었던 아버지의 후기가 있었는데요. 프로 의식!! 굳!!...",
-        "date": "2024-11-19",
-        "collectedAt": "2026-02-18T06:13:58.246Z",
-        "relevanceScore": 1
+        "sourceName": "네이버 블로그",
+        "snippet": "제니스유치원 인천광역시 남동구 서창방산로 99 이 블로그의 체크인 이 장소의 다른 글 큰 유치원에 걸맞는큰 놀이터 4층 정도 되어보이는 큰 유치원 앞에 위치한 놀이터다. 규모가 큰 유치원인만큼 놀이터도 아이들이 뛰어놀기에 충분했다. 뱃머리 구멍 사이로 왔다갔다 좁은 구멍을 통과하는 재미를 무한 반복 아이들이 떨어지지 않도록 촘촘하고 튼튼한 난간이 설치됐다. 이 정도의 좁은 틈새는 아무리 비집...",
+        "summary": "제니스유치원 인천광역시 남동구 서창방산로 99 이 블로그의 체크인 이 장소의 다른 글 큰 유치원에 걸맞는큰 놀이터 4층 정도 되어보이는 큰 유치원 앞에 위치한 놀이터다. 규모가 큰 유치원인만큼 놀이터도 아이들이 뛰어놀기에 충분했다. 뱃머리 구멍 사이로 왔다갔다 좁은 구멍을 통과하는 재미를 무한 반복 아이들이 떨어지지 않도록 촘촘하고 튼튼한 난간이 설치됐다. 이 정도의 좁은 틈새는 아무리 비집고 들어가도 절대 안 떨어질듯.아이들이 어디에 있는지 잘 보이도록 군데군데 투명한 플라스틱으로 시공이 되어 있다.어느 놀이터는 투명하지 않은 재질로만 시공되어 아이들이 어딨는지 궁금하게 만드는 곳도 있는데 여기는 섬세하게 신경쓴 모습이다. 그네는 없지...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:07:12.698Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "38b4752e",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=shhan2020&logNo=223887033058",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=shhan2020&logno=223887033058",
+          "normalizedText": "인천 남동구 - 제니스 유치원 부속 놀이터 13 제니스유치원 인천광역시 남동구 서창방산로 99 이 블로그의 체크인 이 장소의 다른 글 큰 유치원에 걸맞는큰 놀이터 4층 정도 되어보이는 큰 유치원 앞에 위치한 놀이터다. 규모가 큰 유치원인만큼 놀이터도 아이들이 뛰어놀기에 충분했다. 뱃머리 구멍 사이로 왔다갔다 좁은 구멍을 통과하는 재미를 무한 반복 아이들이 떨어지지 않도록 촘촘하고 튼튼한 난간이 설치됐다. 이 정도의 좁은 틈새는 아무리 비집... 제니스유치원 인천광역시 남동구 서창방산로 99 이 블로그의 체크인 이 장소의 다른 글 큰 유치원에 걸맞는큰 놀이터 4층 정도 되어보이는 큰 유치원 앞에 위치한 놀이터다. 규모가 큰 유치원인만큼 놀이터도 아이들이 뛰어놀기에 충분했다. 뱃머리 구멍 사이로 왔다갔다 좁은 구멍을 통과하는 재미를 무한 반복 아이들이 떨어지지 않도록 촘촘하고 튼튼한 난간이 설치됐다. 이 정도의 좁은 틈새는 아무리 비집고 들어가도 절대 안 떨어질듯.아이들이 어디에 있는지 잘 보이도록 군데군데 투명한 플라스틱으로 시공이 되어 있다.어느 놀이터는 투명하지 않은 재질로만 시공되어 아이들이 어딨는지 궁금하게 만드는 곳도 있는데 여기는 섬세하게 신경쓴 모습이다. 그네는 없지... 제니스유치원 인천광역시 남동구 서창방산로 99 이 블로그의 체크인 이 장소의 다른 글 큰 유치원에 걸맞는큰 놀이터 4층 정도 되어보이는 큰 유치원 앞에 위치한 놀이터다. 규모가 큰 유치원인만큼 놀이터도 아이들이 뛰어놀기에 충분했다. 뱃머리 구멍 사이로 왔다갔다 좁은 구멍을 통과하는 재미를 무한 반복 아이들이 떨어지지 않도록 촘촘하고 튼튼한 난간이 설치됐다. 이 정도의 좁은 틈새는 아무리 비집고 들어가도 절대 안 떨어질듯.아이들이 어디에 있는지 잘 보이도록 군데군데 투명한 플라스틱으로 시공이 되어 있다.어느 놀이터는 투명하지 않은 재질로만 시공되어 아이들이 어딨는지 궁금하게 만드는 곳도 있는데 여기는 섬세하게 신경쓴 모습이다. 그네는 없지만 시소와 흔들의자가 여럿 설치되어 있다. 그네가 없는 놀이터는 오랜만이네. 놀이터 뒤쪽은 산책로로 구성되어 있다. 아이와 놀이를 마친 후 가벼운 산책 시간으로 활용해도 좋을듯 싶다. 유치원생 놀이시간과겹치지는 말아야 할듯 유치원 부속 놀이터라 아무래도 유치원에서 놀이터 사용을 우선시 할것 같다.아이들이 하원 후에는 붐비지 않으니 저녁 먹기 전후에 종종 들러야겠다.",
+          "htmlSnapshotHash": "38b4752e",
+          "extractedAt": "2026-06-26T07:07:12.698Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%A0%9C%EB%8B%88%EC%8A%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "제니스유치원",
+            "kindergartenAddress": "인천광역시 남동구 서창방산로 99",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%A0%9C%EB%8B%88%EC%8A%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08d-0afe-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-2559-ullz",
-        "kindergartenId": "1ecec08d-0afe-b044-e053-0a32095ab044",
-        "title": "유-보 이음교육 찾아가는 학부모연수 강의 후기...",
-        "url": "https://blog.naver.com/ekh1104/223945432559",
-        "source": "naver_blog",
-        "sourceName": "아노아 우리아이행복연구소|강사 교육.상담.기질검사",
-        "snippet": "강의 후기  아노아우리아이행복연구소 손지수 안녕하세요~^^ 그림책 육아멘토 #아노아우리아이행복연구소 대표 #손지수소장 입니다. 오늘 오전에는 인천 남동구에 위치한 브레인 유치원에 출강하였어요~^^ 이번...",
-        "date": "2025-07-24",
-        "collectedAt": "2026-02-18T06:13:58.246Z",
-        "relevanceScore": 2
-      },
       {
         "id": "rev-4539-rzpp",
         "kindergartenId": "1ecec08d-0afe-b044-e053-0a32095ab044",
@@ -113,32 +558,6 @@
         "date": "2025-11-07",
         "collectedAt": "2026-02-18T06:13:58.246Z",
         "relevanceScore": 2
-      },
-      {
-        "id": "rev-2890-670z",
-        "kindergartenId": "1ecec08d-0ef8-b044-e053-0a32095ab044",
-        "title": "인천논현 한우정 부드러운 갈비탕 어른 모시고 식사하기 좋은 곳",
-        "url": "https://blog.naver.com/hyeeun434/223004582890",
-        "source": "naver_blog",
-        "sourceName": "주니주니_Life Story",
-        "snippet": "엄청 맛있고 예다원유치원 근처라고 위치까지 말하고 다니는 통에 제가 소문 내지 않아도 이 녀석이 여기저기 말하고 다녀 금방 지인들이 모두 다 알게 될 거 같아요. 주니맘은 갈비탕은 한우정에...",
-        "date": "2023-02-04",
-        "collectedAt": "2026-02-18T06:13:58.374Z",
-        "relevanceScore": 5
-      }
-    ],
-    "1fc6dd86-ccc9-d1d2-e053-0a32095ad1d2": [
-      {
-        "id": "rev-6266-cwsl",
-        "kindergartenId": "1fc6dd86-ccc9-d1d2-e053-0a32095ad1d2",
-        "title": "인천 자연발도르프유치원에서... 진행 후기 | 두리봄심리상담센...",
-        "url": "https://blog.naver.com/doori_bom/223624226266",
-        "source": "naver_blog",
-        "sourceName": "두리봄심리상담센터 & 교육코칭연구소",
-        "snippet": "첫 포문을 연 인천 남동구에 위치한 자연발도르프 유치원에서 어머니들과 정말 즐겁고 환상의... 두리봄심리상담센터(010-****-****) 담당자 선생님께서 사진과 후기들도 보내주셨어요. 덕분에 5점 만점에...",
-        "date": "2024-10-18",
-        "collectedAt": "2026-02-18T06:13:58.246Z",
-        "relevanceScore": 2
       }
     ],
     "1ecec08d-00f2-b044-e053-0a32095ab044": [
@@ -153,6 +572,55 @@
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.246Z",
         "relevanceScore": 1
+      },
+      {
+        "id": "rev-dd13092a",
+        "kindergartenId": "1ecec08d-00f2-b044-e053-0a32095ab044",
+        "title": "인천 샤인유치원 벼수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DBjCbCxy-MX/",
+        "source": "other",
+        "sourceName": "Instagram · 샤인유치원",
+        "snippet": "친구들과 함께 벼 수확을 해보고 쌀이 되는 과정을 나누었으며 인천, 논현동유치원, 샤인유치원, 남동구 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "rice-harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T15:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1074514a",
+        "structuredFields": {
+          "kindergartenName": "샤인유치원",
+          "kindergartenAddress": "인천광역시 남동구 은봉로375번길 108",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBjCbCxy-MX%22+%22%EC%83%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22+%22%EB%B2%BC%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBjCbCxy-MX/",
+          "normalizedUrl": "www.instagram.com/p/dbjcbcxy-mx",
+          "normalizedText": "인천 샤인유치원 벼수확 instagram post 친구들과 함께 벼 수확을 해보고 쌀이 되는 과정을 나누었으며 인천, 논현동유치원, 샤인유치원, 남동구 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "1074514a",
+          "extractedAt": "2026-07-02T15:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "샤인유치원",
+            "kindergartenAddress": "인천광역시 남동구 은봉로375번길 108",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBjCbCxy-MX%22+%22%EC%83%A4%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22+%22%EB%B2%BC%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T15:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f187-b044-e053-0a32095ab044": [
@@ -166,17 +634,6 @@
         "snippet": "히스테리공주0 리뷰 1,123사진 161 아이들 케어 잘해주세요 표정을 눌러 반응을 남겨 보세요! 1번째 방문",
         "date": "2022-06-02",
         "collectedAt": "2026-04-05T15:21:45.101Z"
-      },
-      {
-        "id": "rev-5188-69g9",
-        "kindergartenId": "1ecec08c-f187-b044-e053-0a32095ab044",
-        "title": "쉐도우수 자전거길:[산자락] 인천 천왕산~원적산 야산들 기슭길  23.0820/0909",
-        "url": "http://cafe.naver.com/bikecity/2875188",
-        "source": "naver_cafe",
-        "sourceName": "자출사 \"자전거로 출퇴근하는 사람들\"",
-        "snippet": "동인천고교/좌-주택가골목길(숭덕여중)-포레스트@/노랑신호등3우-만수산자락/만월쉼터(약수터입구)-기암유치원3우-놀이터3직-벽산@단지(관통)-정문3(청산찜질방)우-예전중앙교회/갈림길좌-만월산동편자락길...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.246Z"
       }
     ],
     "1ecec08c-fa67-b044-e053-0a32095ab044": [
@@ -190,6 +647,55 @@
         "snippet": "발타요발타요 리뷰 2,156사진 11 사랑이 넘치는 좋은 유치원이에요 13번째 방문",
         "date": "2024-12-16",
         "collectedAt": "2026-04-05T15:22:17.350Z"
+      },
+      {
+        "id": "rev-4cc0c363",
+        "kindergartenId": "1ecec08c-fa67-b044-e053-0a32095ab044",
+        "title": "인천 남동 행복한유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/p/DOyVtAaiTPA/",
+        "source": "other",
+        "sourceName": "Instagram · 행복한유치원",
+        "snippet": "Instagram 검색 결과에서 행복한유치원, 인천 남동구 포구로, 인천유치원, 원아모집, 교육설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "fff26269",
+        "structuredFields": {
+          "kindergartenName": "행복한유치원",
+          "kindergartenAddress": "인천광역시 남동구 포구로 64 -14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOyVtAaiTPA%22+%22%ED%96%89%EB%B3%B5%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOyVtAaiTPA/",
+          "normalizedUrl": "www.instagram.com/p/doyvtaaitpa",
+          "normalizedText": "인천 남동 행복한유치원 원아모집 instagram instagram 검색 결과에서 행복한유치원, 인천 남동구 포구로, 인천유치원, 원아모집, 교육설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "fff26269",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "행복한유치원",
+            "kindergartenAddress": "인천광역시 남동구 포구로 64 -14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOyVtAaiTPA%22+%22%ED%96%89%EB%B3%B5%ED%95%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ed9e-b044-e053-0a32095ab044": [
@@ -204,6 +710,1719 @@
         "date": "2019-10-25",
         "collectedAt": "2026-04-05T15:21:27.875Z"
       }
+    ],
+    "1ecec08d-068d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a54f34f2",
+        "kindergartenId": "1ecec08d-068d-b044-e053-0a32095ab044",
+        "title": "인천 남동구 미예뜰 유치원의 겨울활동 눈꽃놀이 현장!",
+        "url": "https://blog.naver.com/PostView.naver?blogId=miyedeul_kindergarte&logNo=224107318479",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "미예뜰에서는 단순히 계절 체험으로 끝나지 않고, 성품과 생활 주제를 자연스럽게 연결해 ‘겨울을 어떻게 경험하면 좋을까?’라는 고민 속에서 준비됩니다. 1. 미예뜰의 겨울놀이 이벤트 데이라는 이름이 들어가면 흔히 ‘재미있는 하루’ 정도로 떠올리지만 저희 유치원에서는 조금 다르게 풀어가요.놀이를 먼저 정해놓는 게 아니라, 아이들이 배우고 있는 성품·생활주제와 연결해 체계적으로 활동을 구성합니다....",
+        "summary": "미예뜰에서는 단순히 계절 체험으로 끝나지 않고, 성품과 생활 주제를 자연스럽게 연결해 ‘겨울을 어떻게 경험하면 좋을까?’라는 고민 속에서 준비됩니다. 1. 미예뜰의 겨울놀이 이벤트 데이라는 이름이 들어가면 흔히 ‘재미있는 하루’ 정도로 떠올리지만 저희 유치원에서는 조금 다르게 풀어가요.놀이를 먼저 정해놓는 게 아니라, 아이들이 배우고 있는 성품·생활주제와 연결해 체계적으로 활동을 구성합니다. 그래서 ‘감사’ 성품이 자연스럽게 스며들도록 눈꽃축제라는 형태로 이야기를 만들었고, 아이들은 겨울을 만나는 순간순간마다 “고마워요”“좋아요”“재밌어요” 같은 감정을 마음껏 표현할 수 있었어요. 2. 겨울에만 만날 수 있는 특별한 놀이들 눈꽃축제 날,...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:07:30.619Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a1c3ab03",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=miyedeul_kindergarte&logNo=224107318479",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=miyedeul_kindergarte&logno=224107318479",
+          "normalizedText": "인천 남동구 미예뜰 유치원의 겨울활동 눈꽃놀이 현장! 15 미예뜰에서는 단순히 계절 체험으로 끝나지 않고, 성품과 생활 주제를 자연스럽게 연결해 ‘겨울을 어떻게 경험하면 좋을까?’라는 고민 속에서 준비됩니다. 1. 미예뜰의 겨울놀이 이벤트 데이라는 이름이 들어가면 흔히 ‘재미있는 하루’ 정도로 떠올리지만 저희 유치원에서는 조금 다르게 풀어가요.놀이를 먼저 정해놓는 게 아니라, 아이들이 배우고 있는 성품·생활주제와 연결해 체계적으로 활동을 구성합니다.... 미예뜰에서는 단순히 계절 체험으로 끝나지 않고, 성품과 생활 주제를 자연스럽게 연결해 ‘겨울을 어떻게 경험하면 좋을까?’라는 고민 속에서 준비됩니다. 1. 미예뜰의 겨울놀이 이벤트 데이라는 이름이 들어가면 흔히 ‘재미있는 하루’ 정도로 떠올리지만 저희 유치원에서는 조금 다르게 풀어가요.놀이를 먼저 정해놓는 게 아니라, 아이들이 배우고 있는 성품·생활주제와 연결해 체계적으로 활동을 구성합니다. 그래서 ‘감사’ 성품이 자연스럽게 스며들도록 눈꽃축제라는 형태로 이야기를 만들었고, 아이들은 겨울을 만나는 순간순간마다 “고마워요”“좋아요”“재밌어요” 같은 감정을 마음껏 표현할 수 있었어요. 2. 겨울에만 만날 수 있는 특별한 놀이들 눈꽃축제 날,... 미예뜰에서는 단순히 계절 체험으로 끝나지 않고, 성품과 생활 주제를 자연스럽게 연결해 ‘겨울을 어떻게 경험하면 좋을까?’라는 고민 속에서 준비됩니다. 1. 미예뜰의 겨울놀이 이벤트 데이라는 이름이 들어가면 흔히 ‘재미있는 하루’ 정도로 떠올리지만 저희 유치원에서는 조금 다르게 풀어가요.놀이를 먼저 정해놓는 게 아니라, 아이들이 배우고 있는 성품·생활주제와 연결해 체계적으로 활동을 구성합니다. 그래서 ‘감사’ 성품이 자연스럽게 스며들도록 눈꽃축제라는 형태로 이야기를 만들었고, 아이들은 겨울을 만나는 순간순간마다 “고마워요”“좋아요”“재밌어요” 같은 감정을 마음껏 표현할 수 있었어요. 2. 겨울에만 만날 수 있는 특별한 놀이들 눈꽃축제 날, 교실과 놀이공간은 아이들이 좋아할 만한 겨울 분위기로 가득했어요. 아이들은 공간 속을 돌아다니며 스스로 겨울을 발견하고 체험했습니다. 산타할아버지를 만난 순간, 아이들의 얼굴에는 금세 설렘이 번졌어요.작은 손으로 선물을 받아 들고는 서로 눈을 맞추며 “산타가 왔어!” 하며 깔깔거리는데, 그 목소리만으로도 겨울의 따뜻함이 느껴지는 순간이었죠. 눈을 흩날려보는 활동에서는 눈송이가 떨어지는 모습을 눈앞에서 바라보며 신기해하는 모습이 참 귀여웠습니다. 커다란 눈사람 앞에 서면 아이들은 자연스럽게 인사부터 건넸어요.“안녕 눈사람아!” 하고 말을 걸고, 눈사람 팔을 잡아보거나 볼을 톡 건드려보며 친구처럼 사진을 찍는 모습에 웃음이 절로 났습니다. 굴러보고, 엎드려보고~ 몸 전체로 겨울을 탐색하는 시간을 가졌습니다. 눈 위에서 움직일 때의 느낌이 신기했는지 아이들은 자신의 방식대로 마음껏 겨울을 만나고 있었어요. 아이들은 놀이 하나하나를 즐기면서 ‘지금 이 순간에 함께할 수 있어서 감사하다’는 마음을 자연스럽게 느꼈답니다. 3. 12월이 더 따뜻해진 이유 행사를 마무리할 때쯤, 아이들이 서로에게 “고마워”, “같이 놀아서 좋았어” 같은 말을 건네는 모습들이 곳곳에서 보였어요.12월이라는 감성적인 시기와 ‘감사 성품’이 잘 맞아떨어져 하루가 끝날 때까지 마음이 촉촉하게 따뜻해졌던 날이었습니다. 단순히 춥고 눈 오는 계절이 아니라 마음을 나누고 감정을 배우는 계절이 될 수 있다는 것, 미예뜰이 겨울을 보내는 방식이었습니다. 아이들과 함께하는 겨울은 언제나 특별합니다. 놀이와 성품이 자연스럽게 연결된 감사의 계절이었어요.올해도 그 다음해에도 아이들이 더 따뜻한 마음으로 겨울을 느낄 수 있도록 정성껏 준비해 보겠습니다.",
+          "htmlSnapshotHash": "a1c3ab03",
+          "extractedAt": "2026-06-26T07:07:30.619Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%AF%B8%EC%98%88%EB%9C%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "미예뜰유치원",
+            "kindergartenAddress": "인천광역시 남동구 경신로 42",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%AF%B8%EC%98%88%EB%9C%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-e6025ecf",
+        "kindergartenId": "1ecec08d-068d-b044-e053-0a32095ab044",
+        "title": "구월동 옆 미예뜰유치원 유기농 텃밭에서 무를 수확했어요",
+        "url": "https://blog.naver.com/PostView.naver?blogId=miyedeul_kindergarte&logNo=224077483773",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "가을 바람이 산뜻하게 불어오던 날, 구월동 옆에 있는 저희 미예뜰 유치원 텃밭에서도 한 해의 결실을 맞이했습니다. 아이들이 지난 계절 동안 정성껏 가꾸어 온 무가 드디어 수확할 만큼 잘 자라주었지요.오늘은 아이들이 자연 속에서 경험한 이 귀한 배움의 시간을 학부모님들에게도 나눠봅니다. 1. 아이들의 노력 아침 햇살 속에서 텃밭을 바라보는 눈빛은 참 따뜻했습니다. “선생님, 이만큼 컸어요!”라...",
+        "summary": "가을 바람이 산뜻하게 불어오던 날, 구월동 옆에 있는 저희 미예뜰 유치원 텃밭에서도 한 해의 결실을 맞이했습니다. 아이들이 지난 계절 동안 정성껏 가꾸어 온 무가 드디어 수확할 만큼 잘 자라주었지요.오늘은 아이들이 자연 속에서 경험한 이 귀한 배움의 시간을 학부모님들에게도 나눠봅니다. 1. 아이들의 노력 아침 햇살 속에서 텃밭을 바라보는 눈빛은 참 따뜻했습니다. “선생님, 이만큼 컸어요!”라고 이야기하는 모습에, 얼마나 애정을 가지고 돌보았는지가 고스란히 느껴졌습니다.저희 구월동 옆 미예뜰 유치원 텃밭에서 자란 작물들은 모양이 조금 삐뚤어도 자연 그대로의 건강함이 담겨 있습니다. 2. 수확과 협동 무가 쉽게 뽑히지 않자 친구가 다가와 작...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:07:30.879Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a2fffe78",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=miyedeul_kindergarte&logNo=224077483773",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=miyedeul_kindergarte&logno=224077483773",
+          "normalizedText": "구월동 옆 미예뜰유치원 유기농 텃밭에서 무를 수확했어요 구월동 옆 미예뜰유치원 유기농 텃밭에서 무를 수확했어요 가을 바람이 산뜻하게 불어오던 날, 구월동 옆에 있는 저희 미예뜰 유치원 텃밭에서도 한 해의 결실을 맞이했습니다. 아이들이 지난 계절 동안 정성껏 가꾸어 온 무가 드디어 수확할 만큼 잘 자라주었지요.오늘은 아이들이 자연 속에서 경험한 이 귀한 배움의 시간을 학부모님들에게도 나눠봅니다. 1. 아이들의 노력 아침 햇살 속에서 텃밭을 바라보는 눈빛은 참 따뜻했습니다. “선생님, 이만큼 컸어요!”라... 가을 바람이 산뜻하게 불어오던 날, 구월동 옆에 있는 저희 미예뜰 유치원 텃밭에서도 한 해의 결실을 맞이했습니다. 아이들이 지난 계절 동안 정성껏 가꾸어 온 무가 드디어 수확할 만큼 잘 자라주었지요.오늘은 아이들이 자연 속에서 경험한 이 귀한 배움의 시간을 학부모님들에게도 나눠봅니다. 1. 아이들의 노력 아침 햇살 속에서 텃밭을 바라보는 눈빛은 참 따뜻했습니다. “선생님, 이만큼 컸어요!”라고 이야기하는 모습에, 얼마나 애정을 가지고 돌보았는지가 고스란히 느껴졌습니다.저희 구월동 옆 미예뜰 유치원 텃밭에서 자란 작물들은 모양이 조금 삐뚤어도 자연 그대로의 건강함이 담겨 있습니다. 2. 수확과 협동 무가 쉽게 뽑히지 않자 친구가 다가와 작... 가을 바람이 산뜻하게 불어오던 날, 구월동 옆에 있는 저희 미예뜰 유치원 텃밭에서도 한 해의 결실을 맞이했습니다. 아이들이 지난 계절 동안 정성껏 가꾸어 온 무가 드디어 수확할 만큼 잘 자라주었지요.오늘은 아이들이 자연 속에서 경험한 이 귀한 배움의 시간을 학부모님들에게도 나눠봅니다. 1. 아이들의 노력 아침 햇살 속에서 텃밭을 바라보는 눈빛은 참 따뜻했습니다. “선생님, 이만큼 컸어요!”라고 이야기하는 모습에, 얼마나 애정을 가지고 돌보았는지가 고스란히 느껴졌습니다.저희 구월동 옆 미예뜰 유치원 텃밭에서 자란 작물들은 모양이 조금 삐뚤어도 자연 그대로의 건강함이 담겨 있습니다. 2. 수확과 협동 무가 쉽게 뽑히지 않자 친구가 다가와 작은 손으로 힘을 보태며 함께 기뻐하는 모습은 교실 속에서는 보기 어려운 서로 돕는 순간이었습니다.이렇게 자연 속에서 배우는 경험은 아이들에게 오랫동안 소중하게 남습니다. 3. 자연에서 배우는 살아 있는 교육 구월동 옆, 근처에 있는 미예뜰 유치원. 저희가 직접 가꾸는 텃밭은 단순히 작물을 키우는 공간이 아닙니다.아이들은 계절의 흐름에 따라 식물이 어떻게 자라고 변해가는지를 몸으로 느끼며 배웁니다. 기다림과 정성을 들여 키운 작물은 가정에서도 함께 나누실 수 있도록 소중히 챙겨드렸습니다.가족과 함께 먹는 시간이 또 하나의 교육이 되길 바라는 마음입니다. 아이들이 텃밭에서 보고 느끼고 경험한 것들이 가정에서도 따뜻하게 이어지길 바랍니다.함께 수확한 무를 식탁에서 나누며 아이의 성장을 격려하는 11월이 되면 좋겠네요 ^^앞으로도 구월동 미예뜰 유치원은 자연 속에서 아이들이 단단히 성장할 수 있도록 늘 곁에서 함께하겠습니다!",
+          "htmlSnapshotHash": "a2fffe78",
+          "extractedAt": "2026-06-26T07:07:30.879Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%AF%B8%EC%98%88%EB%9C%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "미예뜰유치원",
+            "kindergartenAddress": "인천광역시 남동구 경신로 42",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%AF%B8%EC%98%88%EB%9C%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-020e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a2eaa999",
+        "kindergartenId": "1ecec08d-020e-b044-e053-0a32095ab044",
+        "title": "인천 논현 사립유치원 에이스화인유치원 입학설명회 후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=joodream_&logNo=224072806332",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "늦은 후기이지만 일반모집 전형에 도움이 되고자 씁니다. 에이스화인유치원 인천광역시 남동구 에코중앙로84번길 9 이 블로그의 체크인 이 장소의 다른 글 유치원 옆 소방서도 있고 소방서 앞에는 공원도 있어환경적인 면에서는 제가 다녀본 유치원 중에서는 탑 오브 탑 강당에서 입학설명회를 시작하였으며 주전부리와 메모지도 야무 따지게 준비되어 있어서 먼가 고급 진 느낌의 유치원 길고 긴 자랑을 과 마지...",
+        "summary": "늦은 후기이지만 일반모집 전형에 도움이 되고자 씁니다. 에이스화인유치원 인천광역시 남동구 에코중앙로84번길 9 이 블로그의 체크인 이 장소의 다른 글 유치원 옆 소방서도 있고 소방서 앞에는 공원도 있어환경적인 면에서는 제가 다녀본 유치원 중에서는 탑 오브 탑 강당에서 입학설명회를 시작하였으며 주전부리와 메모지도 야무 따지게 준비되어 있어서 먼가 고급 진 느낌의 유치원 길고 긴 자랑을 과 마지막 원장님의 노래교실까지 하고 힘든 시간을 끝으로 유치원에 대해 설명을 원감님이 해주셨으며 원장님의 철학인 품격 있는 아이를 만들자는그 철학과 맞아떨어지게 정말 다양한 프로그램이 있었으며 다비수라는 수 놀이 교구부터 로봇, 코딩 등다양한 교구로 수업을...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:10:34.830Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "992f1ed2",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=joodream_&logNo=224072806332",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=joodream_&logno=224072806332",
+          "normalizedText": "인천 논현 사립유치원 에이스화인유치원 입학설명회 후기 2025.11.11.주말에 에이스 화인 유치원 체험까지 알차게 다녀와 보니 다양한 주제로 놀이도 진행하며 퀄리티가 남다른 공사장에서 즐거운 시간도 가지고 다정한 원어민 선생님과 함께... 타와보고 에이스 화인의 자랑인 vr도 써보고 화성도 구경하고 제일 좋아할 줄 알았던 로봇도 조종과 코딩도 배워보았지만 아직 익숙하지 않은 첫찌는 잠깐 만지작거리고 나왔으며 제일 오랜 시간... 늦은 후기이지만 일반모집 전형에 도움이 되고자 씁니다. 에이스화인유치원 인천광역시 남동구 에코중앙로84번길 9 이 블로그의 체크인 이 장소의 다른 글 유치원 옆 소방서도 있고 소방서 앞에는 공원도 있어환경적인 면에서는 제가 다녀본 유치원 중에서는 탑 오브 탑 강당에서 입학설명회를 시작하였으며 주전부리와 메모지도 야무 따지게 준비되어 있어서 먼가 고급 진 느낌의 유치원 길고 긴 자랑을 과 마지... 늦은 후기이지만 일반모집 전형에 도움이 되고자 씁니다. 에이스화인유치원 인천광역시 남동구 에코중앙로84번길 9 이 블로그의 체크인 이 장소의 다른 글 유치원 옆 소방서도 있고 소방서 앞에는 공원도 있어환경적인 면에서는 제가 다녀본 유치원 중에서는 탑 오브 탑 강당에서 입학설명회를 시작하였으며 주전부리와 메모지도 야무 따지게 준비되어 있어서 먼가 고급 진 느낌의 유치원 길고 긴 자랑을 과 마지막 원장님의 노래교실까지 하고 힘든 시간을 끝으로 유치원에 대해 설명을 원감님이 해주셨으며 원장님의 철학인 품격 있는 아이를 만들자는그 철학과 맞아떨어지게 정말 다양한 프로그램이 있었으며 다비수라는 수 놀이 교구부터 로봇, 코딩 등다양한 교구로 수업을... 늦은 후기이지만 일반모집 전형에 도움이 되고자 씁니다. 에이스화인유치원 인천광역시 남동구 에코중앙로84번길 9 이 블로그의 체크인 이 장소의 다른 글 유치원 옆 소방서도 있고 소방서 앞에는 공원도 있어환경적인 면에서는 제가 다녀본 유치원 중에서는 탑 오브 탑 강당에서 입학설명회를 시작하였으며 주전부리와 메모지도 야무 따지게 준비되어 있어서 먼가 고급 진 느낌의 유치원 길고 긴 자랑을 과 마지막 원장님의 노래교실까지 하고 힘든 시간을 끝으로 유치원에 대해 설명을 원감님이 해주셨으며 원장님의 철학인 품격 있는 아이를 만들자는그 철학과 맞아떨어지게 정말 다양한 프로그램이 있었으며 다비수라는 수 놀이 교구부터 로봇, 코딩 등다양한 교구로 수업을 진행을 한다하니 눈이 번쩍 띄면서 여기다 싶더라고요. 또한 에이스화인유치원 소유 농장도 있어서 매 학기마다 체험도 다니고 다양한 체육 퍼포먼스도 하니 정말 눈이 띠용 😮 한글 공부도 체계적으로 준비가 되어 있어서 사립의 끝판왕을 보여주었으며 방과후 수업까지 프로그램이 다른곳에 비해 다양하게 있어서 아이들이 지루하지 않게 배울수 있어좋아 보였어요. ✔ 유치원 수업 시간누리과정 8:00 - 14:00방과 후 과정 14:00 - 15:40✔ 하원 시간차량 이용 시 ~17:00도보로 하원시 ~19:002025년 기준 금액이며 현재 예정은 3세는 5만 원 지원 4세는 11만 원 지원하여 위 금액에서 다운이 될 수 있다 하며 확정은 2026년 2월 정도에 난데요. 우선 모집 기간은 끝났으니 일반 모집으로 준비 잘하셔서 아이에 맞는 유치원 잘 고르시길 바라며 끝으로 맨 오른쪽에 있는 활동복은 필수로 사야 하지만 원복은 잘 입는 날이 없어서 자율구매 가능하며구매하지 않는 분들이 대부분이라 했어요. 주말에 에이스 화인 유치원 체험까지 알차게 다녀와 보니다양한 주제로 놀이도 진행하며 퀄리티가 남다른 공사장에서 즐거운 시간도 가지고 다정한 원어민 선생님과 함께 축구놀이도 하고 캄캄한 공간에서 야간 돌과 색칠하면 반짝이는 야광 색칠놀이도 하며 오감놀이도 하고 작지만 소박한 게임도 즐기면서 상품도 타와보고 에이스 화인의 자랑인 vr도 써보고 화성도 구경하고 제일 좋아할 줄 알았던 로봇도 조종과 코딩도 배워보았지만 아직 익숙하지 않은 첫찌는 잠깐 만지작거리고 나왔으며 제일 오랜 시간 머물렀던 개구리알 놀이실에서 옮겨 담기와 그만의 음식을 만들었으며 자연을 주제로 한 곳에서 낙엽으로 바람개비도 만들었지만 앉아있는 게 지루한 첫찌는 대충 만들고 뛰쳐나가 야외에 마련된 블록놀이실에서 한 곳 한 곳 둘러보며오랜 시간을 머물러 놀았으며 이쁘게 차려진 곳에서 엄마는 잠시 쉼을 쉬며유치원을 어디를 보낼까 고민도 해보면서 옥상에는 미니 놀이시설이 마련이 되어있어 자전거도 타고 미니 바이킹도 타면서 콧바람 좀 쐬다가 다시 1층으로 나와 선생님들 만든 아기자기 귀여운 놀이 박스에서 즐겁게 놀다가 나왔습니다. 제가 느낀 에이스화인은 유치원은 교육적인 부분을 많이 내세웠으며 특히나 원어민 선생님이 계셔서 영어 교육 부분과 코딩 ai 로봇 등 미래지향적인 학습을 많이 어필하셨어요.그렇지만 막상 체험해 보며 느낀 저의 소감은 만 3세인 첫찌에게는 그런 교육적은 측면보다는 모래 놀이터나 놀이터에서 뛰어놀고 뽀로로처럼 노는 게 제일 좋은 아이더라고요. 분명 공부 쪽으로 원하시는 부모님들에게는 놀이를 통해서 공부를 깊이 있게 할 수 있어서 좋은 곳이기는 하나 저의 기준에는 맞지 않는 것 같아서 아쉽지만 체험으로만 끝냈어요.",
+          "htmlSnapshotHash": "992f1ed2",
+          "extractedAt": "2026-06-26T07:10:34.830Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%97%90%EC%9D%B4%EC%8A%A4%ED%99%94%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "에이스화인유치원",
+            "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%97%90%EC%9D%B4%EC%8A%A4%ED%99%94%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-2b68856a",
+        "kindergartenId": "1ecec08d-020e-b044-e053-0a32095ab044",
+        "title": "인천 남동구 에이스화인유치원 3세 참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DZ8pu7Vsprx/",
+        "source": "other",
+        "sourceName": "Instagram · 에이스화인유치원",
+        "snippet": "acefine_kids 계정에서 에이스화인유치원 3세 프로젝트 행복한 음식점 참여수업과 조형, 게임, 영어마을 체험 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "project"
+        ],
+        "date": "2026-06-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "4ae4c1ce",
+        "structuredFields": {
+          "kindergartenName": "에이스화인유치원",
+          "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ8pu7Vsprx%22+%22acefine_kids%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ8pu7Vsprx/",
+          "normalizedUrl": "www.instagram.com/reel/dz8pu7vsprx",
+          "normalizedText": "인천 남동구 에이스화인유치원 3세 참여수업 instagram acefine_kids 계정에서 에이스화인유치원 3세 프로젝트 행복한 음식점 참여수업과 조형, 게임, 영어마을 체험 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "4ae4c1ce",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "에이스화인유치원",
+            "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ8pu7Vsprx%22+%22acefine_kids%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-810aca97",
+        "kindergartenId": "1ecec08d-020e-b044-e053-0a32095ab044",
+        "title": "인천 남동구 에이스화인유치원 여행 프로젝트 Instagram",
+        "url": "https://www.instagram.com/reel/DZmGmBas_wt/",
+        "source": "other",
+        "sourceName": "Instagram · 에이스화인유치원",
+        "snippet": "acefine_kids 계정에서 에이스화인유치원 5세 친구들이 여행 프로젝트로 여행지, 문화, 교통수단, 준비물을 알아보고 그림을 모아 영상으로 제작한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "project",
+          "class-activity"
+        ],
+        "date": "2026-06-14",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "d2acc37e",
+        "structuredFields": {
+          "kindergartenName": "에이스화인유치원",
+          "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZmGmBas_wt%22+%22acefine_kids%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZmGmBas_wt/",
+          "normalizedUrl": "www.instagram.com/reel/dzmgmbas_wt",
+          "normalizedText": "인천 남동구 에이스화인유치원 여행 프로젝트 instagram acefine_kids 계정에서 에이스화인유치원 5세 친구들이 여행 프로젝트로 여행지, 문화, 교통수단, 준비물을 알아보고 그림을 모아 영상으로 제작한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "d2acc37e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "에이스화인유치원",
+            "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZmGmBas_wt%22+%22acefine_kids%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5cda563f",
+        "kindergartenId": "1ecec08d-020e-b044-e053-0a32095ab044",
+        "title": "인천 남동구 에이스화인유치원 5세 여행 참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DZ8m4gGsEkj/",
+        "source": "other",
+        "sourceName": "Instagram · 에이스화인유치원",
+        "snippet": "acefine_kids 계정에서 에이스화인유치원 5세 여행 프로젝트 참여수업으로 가족과 탑승 수속, 교통수단, 나라 탐험 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "project"
+        ],
+        "date": "2026-06-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "14259103",
+        "structuredFields": {
+          "kindergartenName": "에이스화인유치원",
+          "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ8m4gGsEkj%22+%22acefine_kids%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ8m4gGsEkj/",
+          "normalizedUrl": "www.instagram.com/reel/dz8m4ggsekj",
+          "normalizedText": "인천 남동구 에이스화인유치원 5세 여행 참여수업 instagram acefine_kids 계정에서 에이스화인유치원 5세 여행 프로젝트 참여수업으로 가족과 탑승 수속, 교통수단, 나라 탐험 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "14259103",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "에이스화인유치원",
+            "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ8m4gGsEkj%22+%22acefine_kids%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bc2e59d4",
+        "kindergartenId": "1ecec08d-020e-b044-e053-0a32095ab044",
+        "kindergartenName": "에이스화인유치원",
+        "title": "에이스화인유치원 텃밭체험 Instagram Post",
+        "url": "https://www.instagram.com/p/DaAnggylMEz/",
+        "source": "other",
+        "sourceName": "Instagram · 에이스화인유치원",
+        "snippet": "Instagram 검색 결과에서 에이스화인유치원, 감자수확, 텃밭체험, 오감놀이, 자연체험 프로젝트수업 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "에이스화인유치원",
+          "kindergartenAddress": "인천광역시 남동구 에코중앙로84번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaAnggylMEz%22+%22%EC%97%90%EC%9D%B4%EC%8A%A4%ED%99%94%EC%9D%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%85%83%EB%B0%AD%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DaAnggylMEz/",
+          "regionEvidence": [
+            "에이스화인유치원",
+            "감자수확",
+            "텃밭체험",
+            "오감놀이",
+            "자연체험 프로젝트수업"
+          ]
+        },
+        "evidenceChecksum": "609770c8"
+      }
+    ],
+    "1ecec08c-f019-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8818a6d4",
+        "kindergartenId": "1ecec08c-f019-b044-e053-0a32095ab044",
+        "title": "동심유치원 특별 활동 (인천 남동구/미추홀구 소재 유치원 )",
+        "url": "https://blog.naver.com/PostView.naver?blogId=dongsim88&logNo=224017356610",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "#인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (Garden Based-Education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은 정원기반교육 (Garden...",
+        "summary": "#인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (Garden Based-Education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은 정원기반교육 (Garden Based-Education) 외에도 다양한 특별활동을 합니다. [ 전자칠판을 활용한 다양한 활동 ] [ 한글활동 ] - 가정과 연계하는 컨텐츠 활용 수업 [스토리텔링 언어와 수학]- 정원 활동을 연계한 스토리텔링 언어 & 수학 [수학활동]연령별 수...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:11:24.396Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "10b8839f",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=dongsim88&logNo=224017356610",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=dongsim88&logno=224017356610",
+          "normalizedText": "동심유치원 특별 활동 (인천 남동구/미추홀구 소재 유치원 ) #인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은... #인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은 정원기반교육 (garden... #인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. [ 전자칠판을 활용한 다양한 활동 ] [ 한글활동 ] - 가정과 연계하는 컨텐츠 활용 수업 [스토리텔링 언어와 수학]- 정원 활동을 연계한 스토리텔링 언어 & 수학 [수학활동]연령별 수... #인천 # 구월동 # 남동구 # 미추홀구 # 유치원 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. 특별활동 시간은 우리 아이들의 새로운 경험을 통해 자신감을 얻고 즐겁게 배우는 성장의 시간이 된답니다. 앞으로의 아이들의 빛나는 가능성을 키우도록 돕는 동심유치원의 특별활동에는 어떤 것들이 있을까요? 동심유치원은 정원기반교육 (garden based-education) 외에도 다양한 특별활동을 합니다. [ 전자칠판을 활용한 다양한 활동 ] [ 한글활동 ] - 가정과 연계하는 컨텐츠 활용 수업 [스토리텔링 언어와 수학]- 정원 활동을 연계한 스토리텔링 언어 & 수학 [수학활동]연령별 수준에 따른 수학 교재 & 교구 활용 수업 [영어활동]5,6세 영어 7세 영어(초등연계) [코딩활동]6세 코딩활동 7세 코딩활동 [음악-드럼활동] [스마트 활동] [모션플레이 활동] [독서 활동] [창의 블럭 활동] [ 다효수업 ]- 예절수업- 다도수업 [리더쉽 교육]",
+          "htmlSnapshotHash": "10b8839f",
+          "extractedAt": "2026-06-26T07:11:24.396Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "동심유치원",
+            "kindergartenAddress": "인천광역시 남동구 성말로35번길 61",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-f196-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-6b6c5a5d",
+        "kindergartenId": "1ecec08c-f196-b044-e053-0a32095ab044",
+        "title": "남동구유치원 아이의 꿈과 행복을 키워가는 해돋이유치원 이야기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=hie2222460&logNo=223970879026",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요? 오늘은 제가 아이와 함께 경험한 해돋이유치원에 대해 이야기해보려 합니다 해돋이유치원은 이름 그대로 아이들에게 꿈과 행복을 가득 채워주는 곳이었어요 처음에는 작은 발걸음을 내딛는 것도 망설이던 우리 아이가 이제는 자랑스럽게 유치원에 가고 싶다고 말하는 걸 보면 왠지 모르게 뿌듯해집니다 이 유치원에서는 다양한 연령별로 맞춤 교육을 제공하더라고요 그래서 그런지 우리 아이가 매일매일 조...",
+        "summary": "안녕하세요? 오늘은 제가 아이와 함께 경험한 해돋이유치원에 대해 이야기해보려 합니다 해돋이유치원은 이름 그대로 아이들에게 꿈과 행복을 가득 채워주는 곳이었어요 처음에는 작은 발걸음을 내딛는 것도 망설이던 우리 아이가 이제는 자랑스럽게 유치원에 가고 싶다고 말하는 걸 보면 왠지 모르게 뿌듯해집니다 이 유치원에서는 다양한 연령별로 맞춤 교육을 제공하더라고요 그래서 그런지 우리 아이가 매일매일 조금씩 변하는 모습을 보며 감동받고 있어요 창의력을 키우는 수업 덕분인지 색다른 그림을 그리거나 상상력 가득한 이야기를 만들어내는 걸 보면 정말 놀랍습니다 당시 저는 이게 가능한 일인가 싶었죠 그리고 무엇보다 중요한 건 인성교육이에요 여기서는 아이들이...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:11:52.188Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "048e5bcc",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=hie2222460&logNo=223970879026",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=hie2222460&logno=223970879026",
+          "normalizedText": "남동구유치원 아이의 꿈과 행복을 키워가는 해돋이유치원 이야기 하는 것 같아 안심되네요 아이에게 가장 기본적인 인성은 물론이고 희망과 꿈을 가르쳐주는 해돋이유치원, 정말 기대 이상입니다 참, 혹시 유치원을 알아보고 계신 부모님들이 있다면, 해돋이유치원 꼭 한 번 고려해보세요 아이의 즐거움과 성장, 무엇보다도 행복을 경험할 수 있을 겁니다 032-435-7505 #간석동유치원 #인천유치원 #구월동유치원 #남동구유치원 #만수동유치원 안녕하세요? 오늘은 제가 아이와 함께 경험한 해돋이유치원에 대해 이야기해보려 합니다 해돋이유치원은 이름 그대로 아이들에게 꿈과 행복을 가득 채워주는 곳이었어요 처음에는 작은 발걸음을 내딛는 것도 망설이던 우리 아이가 이제는 자랑스럽게 유치원에 가고 싶다고 말하는 걸 보면 왠지 모르게 뿌듯해집니다 이 유치원에서는 다양한 연령별로 맞춤 교육을 제공하더라고요 그래서 그런지 우리 아이가 매일매일 조... 안녕하세요? 오늘은 제가 아이와 함께 경험한 해돋이유치원에 대해 이야기해보려 합니다 해돋이유치원은 이름 그대로 아이들에게 꿈과 행복을 가득 채워주는 곳이었어요 처음에는 작은 발걸음을 내딛는 것도 망설이던 우리 아이가 이제는 자랑스럽게 유치원에 가고 싶다고 말하는 걸 보면 왠지 모르게 뿌듯해집니다 이 유치원에서는 다양한 연령별로 맞춤 교육을 제공하더라고요 그래서 그런지 우리 아이가 매일매일 조금씩 변하는 모습을 보며 감동받고 있어요 창의력을 키우는 수업 덕분인지 색다른 그림을 그리거나 상상력 가득한 이야기를 만들어내는 걸 보면 정말 놀랍습니다 당시 저는 이게 가능한 일인가 싶었죠 그리고 무엇보다 중요한 건 인성교육이에요 여기서는 아이들이... 안녕하세요? 오늘은 제가 아이와 함께 경험한 해돋이유치원에 대해 이야기해보려 합니다 해돋이유치원은 이름 그대로 아이들에게 꿈과 행복을 가득 채워주는 곳이었어요 처음에는 작은 발걸음을 내딛는 것도 망설이던 우리 아이가 이제는 자랑스럽게 유치원에 가고 싶다고 말하는 걸 보면 왠지 모르게 뿌듯해집니다 이 유치원에서는 다양한 연령별로 맞춤 교육을 제공하더라고요 그래서 그런지 우리 아이가 매일매일 조금씩 변하는 모습을 보며 감동받고 있어요 창의력을 키우는 수업 덕분인지 색다른 그림을 그리거나 상상력 가득한 이야기를 만들어내는 걸 보면 정말 놀랍습니다 당시 저는 이게 가능한 일인가 싶었죠 그리고 무엇보다 중요한 건 인성교육이에요 여기서는 아이들이 다른 사람을 배려하는 법, 예의를 지키는 법을 자연스럽게 배울 수 있도록 해주더라고요 처음엔 조금 어렵게 느껴질 수도 있겠지만, 우리 아이가 친구 앞에서 나도 모르게 고개를 숙이며 인사할 때는 정말 뿌듯했어요 마음이 따뜻하고 자존감이 높은 아이로 성장하는 과정을 지켜보면서 해돋이유치원을 선택하길 잘했다는 생각이 들었습니다 이곳의 교사들은 우리 아이들이 가지고 있는 가능성과 감성을 최대한 이끌어내기 위해 늘 노력하더라고요 덕분에 우리 아이도 점점 자라 미래의 주인공이 될 준비를 하는 것 같아 안심되네요 아이에게 가장 기본적인 인성은 물론이고 희망과 꿈을 가르쳐주는 해돋이유치원, 정말 기대 이상입니다 참, 혹시 유치원을 알아보고 계신 부모님들이 있다면, 해돋이유치원 꼭 한 번 고려해보세요 아이의 즐거움과 성장, 무엇보다도 행복을 경험할 수 있을 겁니다 032-435-7505#간석동유치원 #인천유치원 #구월동유치원 #남동구유치원 #만수동유치원 해돋이유치원 인천광역시 남동구 간석3동 8-1 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "048e5bcc",
+          "extractedAt": "2026-06-26T07:11:52.188Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%95%B4%EB%8F%8B%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "해돋이유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로281번길 3",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%95%B4%EB%8F%8B%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%82%A8%EB%8F%99%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "e64421da-365c-4536-807c-a75bd6a666e0": [
+      {
+        "id": "rev-5ab396cf",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 에듀피아유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DAaEQqCvOMQ/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "에듀피아유치원 입학설명회와 인천 서창동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 남동구 에듀피아유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "에듀피아유치원 입학설명회와 인천 서창동 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 인천 남동구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "12b29523",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAaEQqCvOMQ%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서창동 문맥을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAaEQqCvOMQ/",
+          "normalizedUrl": "www.instagram.com/p/daaeqqcvomq",
+          "normalizedText": "인천 에듀피아유치원 입학설명회 sns 에듀피아유치원 입학설명회와 인천 서창동 문맥이 확인되는 instagram 검색 결과. 인천 남동구 에듀피아유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "12b29523",
+          "extractedAt": "2026-06-30T23:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAaEQqCvOMQ%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서창동 문맥을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4f850d67",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 에듀피아유치원 입학설명회 추가 SNS",
+        "url": "https://www.instagram.com/p/DA7a5l7vyRa/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "에듀피아유치원 2025학년도 원아모집을 위한 신입생 입학설명회 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 남동구 에듀피아유치원의 신입생 입학설명회 Instagram 추가 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "에듀피아유치원 2025학년도 원아모집을 위한 신입생 입학설명회 문맥이 확인되는 Instagram 검색 결과. 기존 입학설명회 게시물과 다른 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bc995190",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA7a5l7vyRa%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA7a5l7vyRa/",
+          "normalizedUrl": "www.instagram.com/p/da7a5l7vyra",
+          "normalizedText": "인천 에듀피아유치원 입학설명회 추가 sns 에듀피아유치원 2025학년도 원아모집을 위한 신입생 입학설명회 문맥이 확인되는 instagram 검색 결과. 인천 남동구 에듀피아유치원의 신입생 입학설명회 instagram 추가 검색 결과.",
+          "htmlSnapshotHash": "bc995190",
+          "extractedAt": "2026-07-01T00:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA7a5l7vyRa%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-87dd9a8e",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 남동 에듀피아유치원 Instagram 프로필",
+        "url": "https://www.instagram.com/edupiakinder/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "에듀피아유치원 공식 Instagram 계정과 인천 남동구 기관명, 전화 032-471-0022 문맥이 확인되는 SNS 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "08e67487",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22edupiakinder%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-471-0022%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/edupiakinder/",
+          "normalizedUrl": "www.instagram.com/edupiakinder",
+          "normalizedText": "인천 남동 에듀피아유치원 instagram 프로필 에듀피아유치원 공식 instagram 계정과 인천 남동구 기관명, 전화 032-471-0022 문맥이 확인되는 sns 검색 결과.",
+          "htmlSnapshotHash": "08e67487",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22edupiakinder%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-471-0022%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-22348cd1",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 에듀피아유치원 하와이안 페스티벌 Instagram",
+        "url": "https://www.instagram.com/reel/DLRZXS1vqZX/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "Instagram 검색 결과에서 에듀피아유치원 하와이안 페스티벌과 인천유치원, 서창동유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-event",
+          "culture-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "1967aa21",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLRZXS1vqZX%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLRZXS1vqZX/",
+          "normalizedUrl": "www.instagram.com/reel/dlrzxs1vqzx",
+          "normalizedText": "인천 에듀피아유치원 하와이안 페스티벌 instagram instagram 검색 결과에서 에듀피아유치원 하와이안 페스티벌과 인천유치원, 서창동유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "1967aa21",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLRZXS1vqZX%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b1b31eee",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 서창동 에듀피아유치원 시장놀이 Reel",
+        "url": "https://www.instagram.com/reel/C8wBH7XyAAb/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "Instagram Reels 검색 결과에서 서창동유치원, 에듀피아유치원, 우리 동네 주제 시장놀이 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "market-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "3dca28e2",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8wBH7XyAAb%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C8wBH7XyAAb/",
+          "normalizedUrl": "www.instagram.com/reel/c8wbh7xyaab",
+          "normalizedText": "인천 서창동 에듀피아유치원 시장놀이 reel instagram reels 검색 결과에서 서창동유치원, 에듀피아유치원, 우리 동네 주제 시장놀이 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "3dca28e2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8wBH7XyAAb%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ed9cda69",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 에듀피아유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/C7v3K2AyEPi/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "Instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 교통안전교육과 올바른 보행습관 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "safety-education",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "c7fc2653",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C7v3K2AyEPi%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C7v3K2AyEPi/",
+          "normalizedUrl": "www.instagram.com/p/c7v3k2ayepi",
+          "normalizedText": "인천 에듀피아유치원 교통안전교육 instagram post instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 교통안전교육과 올바른 보행습관 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c7fc2653",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C7v3K2AyEPi%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9564a521",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "kindergartenName": "에듀피아유치원",
+        "title": "인천 에듀피아유치원 적응기념 마술공연 Instagram Post",
+        "url": "https://www.instagram.com/p/DHnLsdRPByb/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "Instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 마술공연과 적응기념파티 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHnLsdRPByb%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%EA%B3%B5%EC%97%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DHnLsdRPByb/",
+          "regionEvidence": [
+            "에듀피아유치원",
+            "서창동유치원",
+            "남동구",
+            "마술공연"
+          ]
+        },
+        "evidenceChecksum": "2a6d25c6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHnLsdRPByb/",
+          "normalizedUrl": "www.instagram.com/p/dhnlsdrpbyb",
+          "normalizedText": "인천 에듀피아유치원 적응기념 마술공연 instagram post instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 마술공연과 적응기념파티 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "825ca5e0",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHnLsdRPByb%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%EA%B3%B5%EC%97%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DHnLsdRPByb/",
+            "regionEvidence": [
+              "에듀피아유치원",
+              "서창동유치원",
+              "남동구",
+              "마술공연"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-1987cc33",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "kindergartenName": "에듀피아유치원",
+        "title": "인천 에듀피아유치원 새학기 마술공연 Instagram Post",
+        "url": "https://www.instagram.com/p/CpwSqLGSCcq/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "Instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 남동구 문맥과 새학기 마술공연 활동이 확인되는 게시물.",
+        "date": "2023-03-13",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "magic-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CpwSqLGSCcq%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CpwSqLGSCcq/",
+          "regionEvidence": [
+            "에듀피아유치원",
+            "서창동유치원",
+            "남동구",
+            "마술쇼"
+          ]
+        },
+        "evidenceChecksum": "2db70c40",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CpwSqLGSCcq/",
+          "normalizedUrl": "www.instagram.com/p/cpwsqlgsccq",
+          "normalizedText": "인천 에듀피아유치원 새학기 마술공연 instagram post instagram 검색 결과에서 에듀피아유치원, 서창동유치원, 남동구 문맥과 새학기 마술공연 활동이 확인되는 게시물.",
+          "htmlSnapshotHash": "a7e375fa",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CpwSqLGSCcq%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%A7%88%EC%88%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/CpwSqLGSCcq/",
+            "regionEvidence": [
+              "에듀피아유치원",
+              "서창동유치원",
+              "남동구",
+              "마술쇼"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-852d26b8",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "title": "인천 에듀피아유치원 가을 밤줍기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DCN6gpCvra7/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "에듀피아유치원 계정에서 가을맞이 스페셜데이 자연체험장 밤줍기와 포토존 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "chestnut-picking"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T13:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cf4334c7",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCN6gpCvra7%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%A4%EC%A4%8D%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "에듀피아유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DCN6gpCvra7/",
+          "normalizedUrl": "www.instagram.com/reel/dcn6gpcvra7",
+          "normalizedText": "인천 에듀피아유치원 가을 밤줍기 instagram reel 에듀피아유치원 계정에서 가을맞이 스페셜데이 자연체험장 밤줍기와 포토존 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "cf4334c7",
+          "extractedAt": "2026-07-02T13:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCN6gpCvra7%22+%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%A4%EC%A4%8D%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "에듀피아유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T13:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-12852924",
+        "kindergartenId": "e64421da-365c-4536-807c-a75bd6a666e0",
+        "kindergartenName": "에듀피아유치원",
+        "title": "인천 서창동 에듀피아유치원 국립인천해양어린이박물관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DItGEx3vyJ1/",
+        "source": "other",
+        "sourceName": "Instagram · 에듀피아유치원",
+        "snippet": "에듀피아유치원 계정 게시물 검색 결과에서 인천유치원, 서창동유치원, 국립인천해양어린이박물관 견학, 꼬마항해사 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "marine-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "12852924",
+        "structuredFields": {
+          "kindergartenName": "에듀피아유치원",
+          "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DItGEx3vyJ1%22%20%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EC%9D%B8%EC%B2%9C%ED%95%B4%EC%96%91%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "에듀피아유치원은 로컬 원장부에서 단일 명칭이며 서창동·인천 단서와 남동구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DItGEx3vyJ1/",
+          "normalizedUrl": "www.instagram.com/reel/ditgex3vyj1",
+          "normalizedText": "인천 서창동 에듀피아유치원 국립인천해양어린이박물관 견학 instagram reel 에듀피아유치원 계정 게시물 검색 결과에서 인천유치원, 서창동유치원, 국립인천해양어린이박물관 견학, 꼬마항해사 단서가 확인된다.",
+          "htmlSnapshotHash": "12852924",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "에듀피아유치원",
+            "kindergartenAddress": "인천광역시 남동구 장아산로232번길 16-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DItGEx3vyJ1%22%20%22%EC%97%90%EB%93%80%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EB%A6%BD%EC%9D%B8%EC%B2%9C%ED%95%B4%EC%96%91%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "에듀피아유치원은 로컬 원장부에서 단일 명칭이며 서창동·인천 단서와 남동구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f3fc-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-9a836666",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 남동구 간석유치원 열매반 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DY6wRyUuzTC/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "kskg_4676446 계정에서 간석유치원 열매반 부모참여수업과 인천유치원, 구월동포레나유치원 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "class-activity"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "f198600b",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6wRyUuzTC%22+%22kskg_4676446%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6wRyUuzTC/",
+          "normalizedUrl": "www.instagram.com/reel/dy6wryuuztc",
+          "normalizedText": "인천 남동구 간석유치원 열매반 부모참여수업 instagram kskg_4676446 계정에서 간석유치원 열매반 부모참여수업과 인천유치원, 구월동포레나유치원 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "f198600b",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6wRyUuzTC%22+%22kskg_4676446%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-944b8ac8",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 남동구 간석유치원 새싹반 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/DY67MR2Pb3M/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "kskg_4676446 계정에서 간석유치원 새싹반 부모참여수업과 구월동유치원, 인천유치원, 남동구유치원 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "class-activity"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "19b37fda",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY67MR2Pb3M%22+%22kskg_4676446%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY67MR2Pb3M/",
+          "normalizedUrl": "www.instagram.com/reel/dy67mr2pb3m",
+          "normalizedText": "인천 남동구 간석유치원 새싹반 부모참여수업 instagram kskg_4676446 계정에서 간석유치원 새싹반 부모참여수업과 구월동유치원, 인천유치원, 남동구유치원 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "19b37fda",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY67MR2Pb3M%22+%22kskg_4676446%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5d730e46",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 간석유치원 100일 파티 Instagram",
+        "url": "https://www.instagram.com/reel/DZcLQ4jB-fn/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "Instagram 검색 결과에서 인천 간석유치원 100일 파티, 구월동유치원, 남동구유치원, 부모참여수업 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-event",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "8d372bde",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZcLQ4jB-fn%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZcLQ4jB-fn/",
+          "normalizedUrl": "www.instagram.com/reel/dzclq4jb-fn",
+          "normalizedText": "인천 간석유치원 100일 파티 instagram instagram 검색 결과에서 인천 간석유치원 100일 파티, 구월동유치원, 남동구유치원, 부모참여수업 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "8d372bde",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZcLQ4jB-fn%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e1d35060",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 간석유치원 인천향교 봄나들이 Instagram",
+        "url": "https://www.instagram.com/reel/DJtV_g7yHUi/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "Instagram 검색 결과에서 간석유치원 인천향교 봄나들이, 인천유치원, 남동구유치원, 부모참여수업 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "8144e8db",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJtV_g7yHUi%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJtV_g7yHUi/",
+          "normalizedUrl": "www.instagram.com/reel/djtv_g7yhui",
+          "normalizedText": "인천 간석유치원 인천향교 봄나들이 instagram instagram 검색 결과에서 간석유치원 인천향교 봄나들이, 인천유치원, 남동구유치원, 부모참여수업 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "8144e8db",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJtV_g7yHUi%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7a63a4ae",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 간석유치원 과학데이 Instagram",
+        "url": "https://www.instagram.com/reel/DFUYgOUyvBX/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "Instagram 검색 결과에서 인천 간석유치원 과학데이, 과학놀이, 물질의 성질, 팝콘 활동과 참여수업 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "science-activity",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "6d1bd8dc",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DFUYgOUyvBX%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DFUYgOUyvBX/",
+          "normalizedUrl": "www.instagram.com/reel/dfuygouyvbx",
+          "normalizedText": "인천 간석유치원 과학데이 instagram instagram 검색 결과에서 인천 간석유치원 과학데이, 과학놀이, 물질의 성질, 팝콘 활동과 참여수업 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "6d1bd8dc",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DFUYgOUyvBX%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f37f3159",
+        "kindergartenId": "1ecec08c-f3fc-b044-e053-0a32095ab044",
+        "title": "인천 남동구 간석유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DBs71ReyuYZ/",
+        "source": "other",
+        "sourceName": "Instagram · 간석유치원",
+        "snippet": "Instagram 검색 결과에서 간석유치원 열매반 부모참여수업, 인천유치원, 남동구유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "0db6a7df",
+        "structuredFields": {
+          "kindergartenName": "간석유치원",
+          "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBs71ReyuYZ%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBs71ReyuYZ/",
+          "normalizedUrl": "www.instagram.com/p/dbs71reyuyz",
+          "normalizedText": "인천 남동구 간석유치원 부모참여수업 instagram instagram 검색 결과에서 간석유치원 열매반 부모참여수업, 인천유치원, 남동구유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "0db6a7df",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "간석유치원",
+            "kindergartenAddress": "인천광역시 남동구 석산로220번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBs71ReyuYZ%22+%22%EA%B0%84%EC%84%9D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fb54-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8d468c58",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "title": "인천 남동구 아삽유치원 만두 빚기 요리활동 Instagram",
+        "url": "https://www.instagram.com/reel/DUQSu_5gcH-/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "asaph_1004 계정에서 아삽유치원 원아들이 2026년 새해를 맞아 만두 빚기 요리활동을 하며 전통 음식, 오감놀이, 소근육 활동을 경험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "cooking",
+          "traditional-food"
+        ],
+        "date": "2026-02-02",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "96756aee",
+        "structuredFields": {
+          "kindergartenName": "아삽유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUQSu_5gcH-%22+%22asaph_1004%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUQSu_5gcH-/",
+          "normalizedUrl": "www.instagram.com/reel/duqsu_5gch-",
+          "normalizedText": "인천 남동구 아삽유치원 만두 빚기 요리활동 instagram asaph_1004 계정에서 아삽유치원 원아들이 2026년 새해를 맞아 만두 빚기 요리활동을 하며 전통 음식, 오감놀이, 소근육 활동을 경험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "96756aee",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아삽유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUQSu_5gcH-%22+%22asaph_1004%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-4ec4c81a",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "title": "인천 남동 아삽유치원 여름활동 Reel",
+        "url": "https://www.instagram.com/reel/DNPnG1GyCoh/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "Instagram Reels 검색 결과에서 아삽유치원, 남동구유치원, 구월동유치원, 만수동유치원과 유치원행사 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "b33e41f4",
+        "structuredFields": {
+          "kindergartenName": "아삽유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNPnG1GyCoh%22+%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNPnG1GyCoh/",
+          "normalizedUrl": "www.instagram.com/reel/dnpng1gycoh",
+          "normalizedText": "인천 남동 아삽유치원 여름활동 reel instagram reels 검색 결과에서 아삽유치원, 남동구유치원, 구월동유치원, 만수동유치원과 유치원행사 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b33e41f4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아삽유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNPnG1GyCoh%22+%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-de5404a0",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "kindergartenName": "아삽유치원",
+        "title": "인천 아삽유치원 승마체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DR1v6JugZ6j/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "아삽유치원 계정의 자연 속 승마체험 릴스 검색 결과에서 인천·만수동·구월동 지역 단서와 유아 승마 체험 문맥이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "horse-riding",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T14:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e5e5fd2f",
+        "structuredFields": {
+          "kindergartenName": "아삽유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DR1v6JugZ6j%22%20%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8A%B9%EB%A7%88%EC%B2%B4%ED%97%98%22%20%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아삽유치원 단일 매칭이며 인천·만수동·구월동 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DR1v6JugZ6j/",
+          "normalizedUrl": "www.instagram.com/reel/dr1v6jugz6j",
+          "normalizedText": "인천 아삽유치원 승마체험 instagram reel 아삽유치원 계정의 자연 속 승마체험 릴스 검색 결과에서 인천·만수동·구월동 지역 단서와 유아 승마 체험 문맥이 확인된다.",
+          "htmlSnapshotHash": "e5e5fd2f",
+          "extractedAt": "2026-07-02T14:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아삽유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DR1v6JugZ6j%22%20%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8A%B9%EB%A7%88%EC%B2%B4%ED%97%98%22%20%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아삽유치원 단일 매칭이며 인천·만수동·구월동 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T14:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-72b62a93",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "kindergartenName": "아삽유치원",
+        "title": "인천 남동 아삽유치원 유아숲체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZR4TC3hNGu/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "아삽유치원 친구들이 숲체험에서 벌에 대해 이야기 나누고 자연 활동을 한 Instagram 릴 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "nature-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T16:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7acd80b1",
+        "structuredFields": {
+          "kindergartenName": "아삽유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZR4TC3hNGu%22%20%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EC%88%B2%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아삽유치원은 로컬 원장부 단일 매칭이며 기존 아삽유치원 SNS 계정 문맥과 숲체험 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZR4TC3hNGu/",
+          "normalizedUrl": "www.instagram.com/reel/dzr4tc3hngu",
+          "normalizedText": "인천 남동 아삽유치원 유아숲체험 instagram reel 아삽유치원 친구들이 숲체험에서 벌에 대해 이야기 나누고 자연 활동을 한 instagram 릴 검색 결과.",
+          "htmlSnapshotHash": "7acd80b1",
+          "extractedAt": "2026-07-02T16:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아삽유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 58",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZR4TC3hNGu%22%20%22%EC%95%84%EC%82%BD%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9C%A0%EC%B9%98%EC%9B%90%EC%88%B2%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아삽유치원은 로컬 원장부 단일 매칭이며 기존 아삽유치원 SNS 계정 문맥과 숲체험 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T16:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f528-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5926c9d3",
+        "kindergartenId": "1ecec08c-f528-b044-e053-0a32095ab044",
+        "title": "인천 남동구 참조은유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/reel/DO_Bs84kvI0/",
+        "source": "other",
+        "sourceName": "Instagram · 참조은유치원",
+        "snippet": "Instagram 검색 결과에서 참조은유치원 입학설명회 정보와 간석동유치원, 남동구유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission-info",
+          "school-info"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2417816e",
+        "structuredFields": {
+          "kindergartenName": "참조은유치원",
+          "kindergartenAddress": "인천광역시 남동구 구월로137번길 65",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DO_Bs84kvI0%22+%22%EA%B0%84%EC%84%9D%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B0%B8%EC%A1%B0%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO_Bs84kvI0/",
+          "normalizedUrl": "www.instagram.com/reel/do_bs84kvi0",
+          "normalizedText": "인천 남동구 참조은유치원 입학설명회 instagram instagram 검색 결과에서 참조은유치원 입학설명회 정보와 간석동유치원, 남동구유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "2417816e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "참조은유치원",
+            "kindergartenAddress": "인천광역시 남동구 구월로137번길 65",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DO_Bs84kvI0%22+%22%EA%B0%84%EC%84%9D%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B0%B8%EC%A1%B0%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1fd6777e-14fb-e0b0-e053-0a32095ae0b0": [
+      {
+        "id": "rev-e5deab87",
+        "kindergartenId": "1fd6777e-14fb-e0b0-e053-0a32095ae0b0",
+        "title": "인천 남동구 프라임명지유치원 2026 입학설명회 Instagram",
+        "url": "https://www.instagram.com/reel/DQ1K78pEuR4/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임명지유치원",
+        "snippet": "Instagram 검색 결과에서 2026학년도 입학설명회 참석 감사 문맥과 간석역, 인천유치원, 프라임명지유치원, 간석동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission-info",
+          "school-info"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "991bf8c2",
+        "structuredFields": {
+          "kindergartenName": "프라임명지유치원",
+          "kindergartenAddress": "인천광역시 남동구 방축로 482",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQ1K78pEuR4%22+%22%ED%94%84%EB%9D%BC%EC%9E%84%EB%AA%85%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQ1K78pEuR4/",
+          "normalizedUrl": "www.instagram.com/reel/dq1k78peur4",
+          "normalizedText": "인천 남동구 프라임명지유치원 2026 입학설명회 instagram instagram 검색 결과에서 2026학년도 입학설명회 참석 감사 문맥과 간석역, 인천유치원, 프라임명지유치원, 간석동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "991bf8c2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "프라임명지유치원",
+            "kindergartenAddress": "인천광역시 남동구 방축로 482",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQ1K78pEuR4%22+%22%ED%94%84%EB%9D%BC%EC%9E%84%EB%AA%85%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-05c4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8b835244",
+        "kindergartenId": "1ecec08d-05c4-b044-e053-0a32095ab044",
+        "title": "인천 남동 복자유치원 소방안전교육 Instagram",
+        "url": "https://www.instagram.com/p/DIvJKjRSEpf/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 복자유치원",
+        "snippet": "Instagram 검색 결과에서 인천 복자유치원, 남동소방서 합동소방훈련, 소방안전교육 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-life",
+          "safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "9a12c10f",
+        "structuredFields": {
+          "kindergartenName": "복자유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIvJKjRSEpf%22+%22%EC%9D%B8%EC%B2%9C+%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIvJKjRSEpf/",
+          "normalizedUrl": "www.instagram.com/p/divjkjrsepf",
+          "normalizedText": "인천 남동 복자유치원 소방안전교육 instagram instagram 검색 결과에서 인천 복자유치원, 남동소방서 합동소방훈련, 소방안전교육 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "9a12c10f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "복자유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIvJKjRSEpf%22+%22%EC%9D%B8%EC%B2%9C+%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d9dad5dd",
+        "kindergartenId": "1ecec08d-05c4-b044-e053-0a32095ab044",
+        "kindergartenName": "복자유치원",
+        "title": "인천 남동구 복자유치원 어린이박물관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/Cz-uqM-ydHX/",
+        "source": "other",
+        "sourceName": "Instagram · 인천 복자유치원",
+        "snippet": "인천 복자유치원 계정 게시물 검색 결과에서 5세 어린이 박물관 견학, 만수동유치원, 간석동유치원, 남동구 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum",
+          "children-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d9dad5dd",
+        "structuredFields": {
+          "kindergartenName": "복자유치원",
+          "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cz-uqM-ydHX%22%20%22%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A7%8C%EC%88%98%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "복자유치원은 동명이 있으나 인천·만수동·간석동·남동구 단서와 인천 남동구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Cz-uqM-ydHX/",
+          "normalizedUrl": "www.instagram.com/p/cz-uqm-ydhx",
+          "normalizedText": "인천 남동구 복자유치원 어린이박물관 견학 instagram post 인천 복자유치원 계정 게시물 검색 결과에서 5세 어린이 박물관 견학, 만수동유치원, 간석동유치원, 남동구 단서가 확인된다.",
+          "htmlSnapshotHash": "d9dad5dd",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "복자유치원",
+            "kindergartenAddress": "인천광역시 남동구 백범로247번길 47-23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cz-uqM-ydHX%22%20%22%EB%B3%B5%EC%9E%90%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A7%8C%EC%88%98%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "복자유치원은 동명이 있으나 인천·만수동·간석동·남동구 단서와 인천 남동구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0dc5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-60ba1e44",
+        "kindergartenId": "1ecec08d-0dc5-b044-e053-0a32095ab044",
+        "kindergartenName": "삼성유치원",
+        "title": "인천 남동 삼성유치원 2026학년도 오리엔테이션 Instagram Post",
+        "url": "https://www.instagram.com/p/DVFoTY4ElsL/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성유치원",
+        "snippet": "Instagram 검색 결과에서 삼성유치원 2월 25일 오리엔테이션과 구월동·간석동·만수동 지역 문맥이 확인되는 게시물.",
+        "date": "2026-02-22",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "orientation",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "삼성유치원",
+          "kindergartenAddress": "인천광역시 남동구 용천로 49",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVFoTY4ElsL%22+%22%EA%B5%AC%EC%9B%94%EB%8F%99%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%98%A4%EB%A6%AC%EC%97%94%ED%85%8C%EC%9D%B4%EC%85%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DVFoTY4ElsL/",
+          "regionEvidence": [
+            "삼성유치원",
+            "samsung_kindergarten__",
+            "구월동",
+            "간석동",
+            "만수동",
+            "오리엔테이션"
+          ]
+        },
+        "evidenceChecksum": "fca75d68"
+      }
+    ],
+    "1ecec08c-f198-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-1232dc1a",
+        "kindergartenId": "1ecec08c-f198-b044-e053-0a32095ab044",
+        "title": "인천 프라임예지유치원 조물조물 흙놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C9UPPk2SH4K/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임예지유치원",
+        "snippet": "프라임예지유치원 계정에서 인천논현동유치원, 논현유치원, 흙놀이 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "soil-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "db841306",
+        "structuredFields": {
+          "kindergartenName": "프라임예지유치원",
+          "kindergartenAddress": "인천광역시 남동구 에코중앙로 192",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9UPPk2SH4K%22+%22%ED%94%84%EB%9D%BC%EC%9E%84%EC%98%88%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "프라임예지유치원은 로컬 원장부에서 유일한 정확 이름이고 인천 논현동 지역 단서가 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C9UPPk2SH4K/",
+          "normalizedUrl": "www.instagram.com/reel/c9uppk2sh4k",
+          "normalizedText": "인천 프라임예지유치원 조물조물 흙놀이 instagram reel 프라임예지유치원 계정에서 인천논현동유치원, 논현유치원, 흙놀이 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "db841306",
+          "extractedAt": "2026-07-02T10:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "프라임예지유치원",
+            "kindergartenAddress": "인천광역시 남동구 에코중앙로 192",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9UPPk2SH4K%22+%22%ED%94%84%EB%9D%BC%EC%9E%84%EC%98%88%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%EB%8F%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "프라임예지유치원은 로컬 원장부에서 유일한 정확 이름이고 인천 논현동 지역 단서가 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

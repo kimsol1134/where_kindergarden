@@ -1,0 +1,61 @@
+{
+  "version": "2026-07-02",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-fb34-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b91809c3",
+        "kindergartenId": "1ecec08c-fb34-b044-e053-0a32095ab044",
+        "title": "홍천유치원 스승의날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYWNckbpKBI/",
+        "source": "other",
+        "sourceName": "Instagram · 홍천유치원",
+        "snippet": "홍천유치원 계정에서 스승의 날을 축하하고 선생님들께 감사하는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "teachers-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "196d4896",
+        "structuredFields": {
+          "kindergartenName": "홍천유치원",
+          "kindergartenAddress": "강원특별자치도 홍천군 꽃뫼로 119",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYWNckbpKBI%22+%22%ED%99%8D%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8A%A4%EC%8A%B9%EC%9D%98+%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "홍천유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYWNckbpKBI/",
+          "normalizedUrl": "www.instagram.com/reel/dywnckbpkbi",
+          "normalizedText": "홍천유치원 스승의날 instagram reel 홍천유치원 계정에서 스승의 날을 축하하고 선생님들께 감사하는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "196d4896",
+          "extractedAt": "2026-07-02T19:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "홍천유치원",
+            "kindergartenAddress": "강원특별자치도 홍천군 꽃뫼로 119",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYWNckbpKBI%22+%22%ED%99%8D%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8A%A4%EC%8A%B9%EC%9D%98+%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "홍천유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  },
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+}

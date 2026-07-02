@@ -1,52 +1,165 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 2,
-  "kindergartenCount": 2,
+  "version": "2026-07-01",
+  "totalCount": 3,
+  "kindergartenCount": 3,
   "reviews": {
-    "d12544fc-972b-432d-9565-f99ac86cdbe1": [
+    "1ecec08c-f9d4-b044-e053-0a32095ab044": [
       {
-        "kindergartenId": "d12544fc-972b-432d-9565-f99ac86cdbe1",
-        "kindergartenName": "현동숲유치원",
-        "title": "2025년 한국어린이미디어학회 추계학술대회 후기",
-        "url": "https://blog.naver.com/hyeju7435/224123499801",
-        "source": "naver_blog",
-        "sourceName": "연꽃 핀 호수",
-        "snippet": "(국립창원대학교), 박선정교사(현동숲유치원)의  유아와 자연, 그리고 디지털: 유아의 예술적 만남과... 유아교육학회후기#학술대회후기 #교사전문성#유아교육연구#에듀테크#AI와유아교육#디지털놀이...",
-        "date": "2025-12-26",
-        "collectedAt": "2026-01-30T03:11:42.194Z",
-        "relevanceScore": 7,
-        "id": "rev-2489-g97j",
-        "summary": "2025년 12월 13일(토) 덕성여자대학교 아트홀에서 한국어린이미디어학회 추계학술대회가 있었습니다!눈과 비가 내린다는 일기예보에 걱정 반, 긴장 반의 마음으로 아침을 맞이했지만, 덕성여자대학교 아트홀은 이른 시간부터 차분한 공기 속에 잔잔한 설렘과 따뜻한 긴장감으로 채워져 있었습니다.'미디어 페다고지의 실천: 영유아의 창의적 표현과 예술적 감수성의 확장'이라는 주제는, 지금 우리가 아이들과 함께 서 있는 교육의 자리와 앞으로 나아가야 할 방향을 조용하지만 단단하게 비추고 있었어요. 이번 학회는 260여명의 참가자들과 함께 김윤희회...",
-        "pros": [],
-        "cons": [],
-        "sentiment": "negative",
+        "id": "rev-7aca059c",
+        "kindergartenId": "1ecec08c-f9d4-b044-e053-0a32095ab044",
+        "title": "경남 창원 월영초등학교병설유치원 거점형 유치원 Instagram",
+        "url": "https://www.instagram.com/p/DAsRWgzzRls/",
+        "source": "other",
+        "sourceName": "Instagram · 경상남도교육청",
+        "snippet": "Instagram 검색 결과에서 경남 최초 거점형 유치원, 월영초등학교병설유치원, 월영초병설유치원, 경남교육청 문맥이 확인되는 게시물.",
         "tags": [
-          "급식",
-          "선생님",
-          "활동"
-        ]
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "education-office"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "8a4d195b",
+        "structuredFields": {
+          "kindergartenName": "월영초등학교병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 반월북1길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAsRWgzzRls%22+%22%EC%9B%94%EC%98%81%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAsRWgzzRls/",
+          "normalizedUrl": "www.instagram.com/p/dasrwgzzrls",
+          "normalizedText": "경남 창원 월영초등학교병설유치원 거점형 유치원 instagram instagram 검색 결과에서 경남 최초 거점형 유치원, 월영초등학교병설유치원, 월영초병설유치원, 경남교육청 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "8a4d195b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "월영초등학교병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 반월북1길 41",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAsRWgzzRls%22+%22%EC%9B%94%EC%98%81%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-018a-b044-e053-0a32095ab044": [
+    "1ecec08c-f013-b044-e053-0a32095ab044": [
       {
-        "kindergartenId": "1ecec08d-018a-b044-e053-0a32095ab044",
-        "kindergartenName": "월포초등학교병설유치원",
-        "title": "경남 창원 아동흡연예방교육 강사들의 스킬업 스터디",
-        "url": "https://blog.naver.com/ghbb9310/221214920789",
-        "source": "naver_blog",
-        "sourceName": "교육의메카, 강사들의요람 다누리인재교육컨설팅",
-        "snippet": "| 블로그 http://naver.me/5uBcjsV7 (진해 해군 군부대와 국방과학연구소 금연금주 지도 강의 후기) 멀리... 경남 창원 아동흡연예방교육 마산보건소와 함께하는 월포초등학교 병설 유치원 출처 : 교육컨설팅.....",
-        "date": "2018-02-23",
-        "collectedAt": "2026-01-30T03:11:45.866Z",
-        "relevanceScore": 3,
-        "id": "rev-q7ad-vglx",
-        "summary": "_님로그아웃 네이버 멤버쉽 알림을 모두 삭제하시겠습니까? 다누리인재교육컨설팅 경남 창원 아동흡연예방교육 강사들의 스킬업 스터디 다누리대표이현정 ・ 2018. 2. 23. 14:27 URL 복사 이웃추가 본문 기타 기능 공유하기 신고하기 위치다누리스마일컴퍼니 강사들의 요람 #다누리스마일컴퍼니경남 창원 아동흡연예방교육 강사들의 스킬업 스터디교구를 활용하여 아동 청소년들에게 더 다가가며 시각적교육 촉각적 교육을 할려고 준비 합니다. 폐모양 교구들도 만들어서 폐활량 직접 테스트도 해볼수 있도록 스킬업 스터디 진행 2018년 아동 청소년흡연...",
-        "pros": [],
-        "cons": [],
-        "sentiment": "positive",
+        "id": "rev-bc3d2f60",
+        "kindergartenId": "1ecec08c-f013-b044-e053-0a32095ab044",
+        "title": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIyiswhzY-w/",
+        "source": "other",
+        "sourceName": "Instagram · 창원 유아숲체험원",
+        "snippet": "현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
         "tags": [
-          "활동"
-        ]
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "73112fbc",
+        "structuredFields": {
+          "kindergartenName": "현동초등학교병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIyiswhzY-w/",
+          "normalizedUrl": "www.instagram.com/reel/diyiswhzy-w",
+          "normalizedText": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 instagram reel 현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "73112fbc",
+          "extractedAt": "2026-07-02T10:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현동초등학교병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "6d50129b-4a91-45b8-87f6-a6ce32b643e4": [
+      {
+        "id": "rev-b4d5d60e",
+        "kindergartenId": "6d50129b-4a91-45b8-87f6-a6ce32b643e4",
+        "kindergartenName": "현동세종유치원",
+        "title": "창원 현동세종유치원 유치원 농장 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DHszAYoy_f1/",
+        "source": "other",
+        "sourceName": "Instagram · 현동세종유치원",
+        "snippet": "현동세종유치원 계정 게시물 검색 결과에서 유치원 농장 소풍 온 세상, 봄꽃 관찰, 현동근린공원 첫 견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm-field-trip",
+          "nature-observation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b4d5d60e",
+        "structuredFields": {
+          "kindergartenName": "현동세종유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 현동5길 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHszAYoy_f1%22%20%22%ED%98%84%EB%8F%99%EC%84%B8%EC%A2%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%86%8D%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현동세종유치원은 로컬 원장부에서 단일 명칭이며 창원 마산합포구 현동 주소와 기관명 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHszAYoy_f1/",
+          "normalizedUrl": "www.instagram.com/p/dhszayoy_f1",
+          "normalizedText": "창원 현동세종유치원 유치원 농장 견학 instagram post 현동세종유치원 계정 게시물 검색 결과에서 유치원 농장 소풍 온 세상, 봄꽃 관찰, 현동근린공원 첫 견학 단서가 확인된다.",
+          "htmlSnapshotHash": "b4d5d60e",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "현동세종유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 현동5길 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHszAYoy_f1%22%20%22%ED%98%84%EB%8F%99%EC%84%B8%EC%A2%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%86%8D%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현동세종유치원은 로컬 원장부에서 단일 명칭이며 창원 마산합포구 현동 주소와 기관명 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
-  "version": "2026-06-26",
-  "totalCount": 29,
-  "kindergartenCount": 17,
+  "version": "2026-07-01",
+  "totalCount": 78,
+  "kindergartenCount": 25,
   "reviews": {
     "1ecec08d-0c86-b044-e053-0a32095ab044": [
       {
@@ -15,20 +15,55 @@
         "date": "2024-11-05",
         "collectedAt": "2026-02-18T06:13:58.247Z",
         "relevanceScore": 2
-      }
-    ],
-    "1ecec08d-0b9b-b044-e053-0a32095ab044": [
+      },
       {
-        "id": "rev-7155-dfdm",
-        "kindergartenId": "1ecec08d-0b9b-b044-e053-0a32095ab044",
-        "title": "외국인 영어전담 선생님들이 있는 꿈드림 유치원,킨더이스쿨 같이 다닐 친구 없나요?",
-        "url": "http://cafe.naver.com/baby8/697155",
-        "source": "naver_cafe",
-        "sourceName": "인천맘톡 (인천맘 소중한인연)",
-        "snippet": "꿈드림유치원 032)565-6600 ***-****-**** 제가 이글을 올리는 이유는요. 유치원 위치가 서구 가좌동이라서 (자차로... 저희가 가좌동에서 간석 금호 어울림으로 이사를 갔거든요.인천시청 인근 지역에 사시는분들중...",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.248Z",
-        "relevanceScore": 1
+        "id": "rev-549ff951",
+        "kindergartenId": "1ecec08d-0c86-b044-e053-0a32095ab044",
+        "title": "인천 서구 경서유치원 생존수영 Instagram",
+        "url": "https://www.instagram.com/reel/DSBaxbnElE6/",
+        "source": "other",
+        "sourceName": "Instagram · 스카이스위밍앤키즈",
+        "snippet": "skyswimming22 계정에서 경서유치원 원아들이 생존수영 수업에 참여하며 물에 대한 호기심과 기대감을 보인 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "survival-swimming",
+          "safety"
+        ],
+        "date": "2025-12-08",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "0faaa60b",
+        "structuredFields": {
+          "kindergartenName": "경서유치원",
+          "kindergartenAddress": "인천광역시 서구 경서로56번길 7-2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSBaxbnElE6%22+%22%EA%B2%BD%EC%84%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSBaxbnElE6/",
+          "normalizedUrl": "www.instagram.com/reel/dsbaxbnele6",
+          "normalizedText": "인천 서구 경서유치원 생존수영 instagram skyswimming22 계정에서 경서유치원 원아들이 생존수영 수업에 참여하며 물에 대한 호기심과 기대감을 보인 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "0faaa60b",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "경서유치원",
+            "kindergartenAddress": "인천광역시 서구 경서로56번길 7-2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSBaxbnElE6%22+%22%EA%B2%BD%EC%84%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0a31-b044-e053-0a32095ab044": [
@@ -57,6 +92,338 @@
         "date": "2024-11-07",
         "collectedAt": "2026-02-18T06:13:58.248Z",
         "relevanceScore": 2
+      },
+      {
+        "id": "rev-7d5de38f",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천서구 유치원 설명회 후기 (한샘,세라,다은)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=minna0725&logNo=224081160998",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "내년 26학년도 5살이 되는 달콩이에게 어린이집에서 유치원으로 옮길지 선택의 시기가 왔다.10월 중순부터 슬슬 유치원 설명회에 대한 계획이 세워지기 때문에설명회에 직접가길 원한다면 미리 관심이 있는 유치원에 전화를 해서 설명회 일정을 문의해야 한다.홈페이지에 공지가 되는 경우도 있지만 매번 일정을 확인하기 어렵기 때문에유치원에 전화하여 학생 정보와 전화번호를 남기면입학설명회 일정이 나올때 쯤...",
+        "summary": "내년 26학년도 5살이 되는 달콩이에게 어린이집에서 유치원으로 옮길지 선택의 시기가 왔다.10월 중순부터 슬슬 유치원 설명회에 대한 계획이 세워지기 때문에설명회에 직접가길 원한다면 미리 관심이 있는 유치원에 전화를 해서 설명회 일정을 문의해야 한다.홈페이지에 공지가 되는 경우도 있지만 매번 일정을 확인하기 어렵기 때문에유치원에 전화하여 학생 정보와 전화번호를 남기면입학설명회 일정이 나올때 쯤 문자로 연락이 온다.이번에 알았지만 각 유치원마다 적게는 30명~50명이 되는 인원을 모아 설명회를 하는데 이게 한 번이 아니라 2~4번에 걸쳐서 하는데 엄마들의 유치원 선택 열정이 대단하구나~~라는걸 다시한번 느꼈다. 사실 현재 어린이집에도 만족을...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:30:12.793Z",
+        "relevanceScore": 8,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "8de39366",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=minna0725&logNo=224081160998",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=minna0725&logno=224081160998",
+          "normalizedText": "인천서구 유치원 설명회 후기 (한샘,세라,다은) 26 내년 26학년도 5살이 되는 달콩이에게 어린이집에서 유치원으로 옮길지 선택의 시기가 왔다.10월 중순부터 슬슬 유치원 설명회에 대한 계획이 세워지기 때문에설명회에 직접가길 원한다면 미리 관심이 있는 유치원에 전화를 해서 설명회 일정을 문의해야 한다.홈페이지에 공지가 되는 경우도 있지만 매번 일정을 확인하기 어렵기 때문에유치원에 전화하여 학생 정보와 전화번호를 남기면입학설명회 일정이 나올때 쯤... 내년 26학년도 5살이 되는 달콩이에게 어린이집에서 유치원으로 옮길지 선택의 시기가 왔다.10월 중순부터 슬슬 유치원 설명회에 대한 계획이 세워지기 때문에설명회에 직접가길 원한다면 미리 관심이 있는 유치원에 전화를 해서 설명회 일정을 문의해야 한다.홈페이지에 공지가 되는 경우도 있지만 매번 일정을 확인하기 어렵기 때문에유치원에 전화하여 학생 정보와 전화번호를 남기면입학설명회 일정이 나올때 쯤 문자로 연락이 온다.이번에 알았지만 각 유치원마다 적게는 30명~50명이 되는 인원을 모아 설명회를 하는데 이게 한 번이 아니라 2~4번에 걸쳐서 하는데 엄마들의 유치원 선택 열정이 대단하구나~~라는걸 다시한번 느꼈다. 사실 현재 어린이집에도 만족을... 내년 26학년도 5살이 되는 달콩이에게 어린이집에서 유치원으로 옮길지 선택의 시기가 왔다.10월 중순부터 슬슬 유치원 설명회에 대한 계획이 세워지기 때문에설명회에 직접가길 원한다면 미리 관심이 있는 유치원에 전화를 해서 설명회 일정을 문의해야 한다.홈페이지에 공지가 되는 경우도 있지만 매번 일정을 확인하기 어렵기 때문에유치원에 전화하여 학생 정보와 전화번호를 남기면입학설명회 일정이 나올때 쯤 문자로 연락이 온다.이번에 알았지만 각 유치원마다 적게는 30명~50명이 되는 인원을 모아 설명회를 하는데 이게 한 번이 아니라 2~4번에 걸쳐서 하는데 엄마들의 유치원 선택 열정이 대단하구나~~라는걸 다시한번 느꼈다. 사실 현재 어린이집에도 만족을 하고 있기 때문에 (가깝다는 것이 매우 큰 장점)유치원은 어떤곳인가 하는 궁금증이 컸고, 설명회 일정이 가능했던 한샘, 세라, 다은유치원 세 곳을 다녀왔다.다녀온 순으로 소개 한샘유치원 ▶인천 서구 신현동 위치▶원신근린공원이 걸어서 2분컷! 숲선생님이 유치원에 상주해 계시고 주 2회 공원에 나가는 수업이 있다고 한다.최근에 원신근린공원을 산책한 적이 있는데 공원이 너무 잘되어있다고 생각했는데 유치원 외부 놀이터는 없어도 공원을 곁에 두고 있는게 큰 장점이라고 생각되었다.▶현장체험학습은 한달에 1번 정도 ▶놀이 중심, 인성중심 교육5~7세 연계수업을 자세히 소개해 주셨는데 주입식 교육이 아니라 아이들이 즐겁게 배울수 있도록 신경쓰고 있다는 느낌을 받았다.한글 교육의 경우 친구들에게 편지쓰기. 처음에는 이름만 따라 그리기, 학년이 높아질 수록 내용도 첨가하는 방식직접 우체통에 편지를 넣어 전해주기도 하고, 아이들이 먼저 하고싶게 만드는 활동을 만드는 것이 원장의 능력이고 교사의 업무라고 하셨다.▶오전간식 있음 :우유, 요구르트, 과일, 젤라또▶하루 한권 동화책 읽어주기, 책이 읽고 싶게 꾸며진 도서관▶요리수업 주1회▶장난감소개를 통한 발표수업, 자신감증진효과▶모블로코딩▶특성화활동 (만3세)잉글리시버스 튼튼영어(교구 중심 영어)펀아트펀토리뮤직방송댄스유아체육▶특별활동 : 모블로코딩▶교실과 화장실이 좀 작다는 느낌을 받았고, 계단이 좁음, 지하에 강당을 놀이터처럼 꾸며 놓아서 아이들이놀기 좋아보였음. 한샘유치원 인천광역시 서구 율도로15번길 26-9 바우빌딩 이 블로그의 체크인 이 장소의 다른 글 세라유치원 ▶경서동에 위치 경서동에 있는 세라, 경서, 예빛 세 유치원이 인기가 많은 편인데루원시티, 청라, 검암일부까지도 차량 운행을 하기 때문에 경쟁률이 세지 않을깨 하는 생각이 든다. 차량을 타는 시간이 길다는게 단점▶스스로 생각하고 탐구하는 힘을 키우는 교육행사를 계획할때도 아이들의 의견을 생각을 들어주고 의견을 반영하여 결정함▶테블릿pc수업 지양. 코딩이나 드론수업도 하지 않는다고 함▶놀이중심 원장님께서 자유놀이의 중요성을 이야기 해주었는데 아이들이 만들어온 작품을 엄마들이 바로 쓰레기통에 버리는 경우가 있는데 (나도 몇 번 버린걸 들킨적 있어서 뜨끔했음 ㅋㅋ)아이들의 자존감은 주입식으로 배운다고 생기는 것이 아니라 부모와의 교류, 생활 속에서 얻어지는 것이다는 말에 공감되었다.▶주변에 큰 공원이 없다는 게 아쉬움. 바깥놀이는 매일x바로 옆에 있는 골프장이 공원이였으면 얼마나 좋았을까~~평소에는 주변에 가까운 공원에 걸어가거나 유치원차량을 타고 공원에 간다고 함▶주 1회 수영수업(7세는 2주에 한 번) 지하1층에 수영장이 바로 연결되어 있고 바닥 난방을 하기때문에 탈의실 내부가 따뜻해서 좋았다. ▶송아트 미술활동, 그림책 활동이 좋아보였음▶방과후특성화활동(만3세기준) 영어: 놀이영어 ,파닉스영어, 컨텐츠영어음악활동(유리드믹스) 예술활동(오감 퍼포먼스) 놀이수확활동(플레이팩토)창의사고력활동(클라임블록)▶오전간식x(유치원은 대부분 오전간식이 제공되지 않는 듯 하다.)점심급식에 밥, 국, 3찬 + 과일 제공 세라유치원 인천광역시 서구 경서로 80 이 블로그의 체크인 이 장소의 다른 글 다은유치원 ▶21세기는 인공지능시대 ai의 발달로 초불확실성시대이다.아이들에게 필요한 능력은 -적응력, 실패회복탄력성, 깊이있게 사고할 수 있는 능력▶독서강조-키독 한달에 1권 위인전읽기&연계도서▶*언어중점교육-그림한자, 쓰기노트, 한글북수학-주사위놀이, 수학활동북오르다▶원어민선생님 상주, 주4회 영어매일 오전 원어민선생님 영어방송(10분간)▶체육, 오감수업▶미술-관찰하고 그림으로 표현하기▶크레카(6,7세 해당)- 교재없이 최소한의 재료로 미션을 협동해서 해결하는 수▶수업중이라 교실 내부는 볼 수 없었지만 강당 크기도 넓고 건물도 크고 깔끔했다.▶외부 놀이터는 없지만 바로 옆에 바람꽃공원이 있음. 다은유치원 인천광역시 서구 청중로478번길 9 이 블로그의 체크인 이 장소의 다른 글 설명회를 다녀온 곳 외에도 많은 유치원들이 있고, 설명회를 다녀왔다고해서 유치원을 다 아는 것도 아니기 때문에 고민은 진행중이다.문제는 원하는 유치원에 뽑힐 수 있느냐~~~~~원하는 유치원 모두 합격하길 바래요~~#한샘유치원 #세라유치원 #다은유치언 #유치원설명회 #처음학교로 #인천서구유치원 #가정동유치원 #루원시티유치원 #청라유치원 #루원시티사립유치원 #인천유치원일반모집 # 청라사립유치원 #가정동추천유치원 #루원시티추천유치원",
+          "htmlSnapshotHash": "8de39366",
+          "extractedAt": "2026-06-26T07:30:12.793Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-2cf4481e",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 다은유치원 신입생 모집 SNS",
+        "url": "https://www.instagram.com/p/DO-TPqGgT7u/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "다은유치원 2026학년도 신입생 모집과 전화 032-565-9995 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 다은유치원의 2026학년도 신입생 모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "다은유치원 2026학년도 신입생 모집과 전화 032-565-9995 문맥이 확인되는 Instagram 검색 결과다. 전화번호와 원장부 주소를 기준으로 인천 서구 다은유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8d564b8e",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DO-TPqGgT7u%22+%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-565-9995%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DO-TPqGgT7u/",
+          "normalizedUrl": "www.instagram.com/p/do-tpqggt7u",
+          "normalizedText": "인천 다은유치원 신입생 모집 sns 다은유치원 2026학년도 신입생 모집과 전화 032-565-9995 문맥이 확인되는 instagram 검색 결과. 인천 서구 다은유치원의 2026학년도 신입생 모집 sns 정보.",
+          "htmlSnapshotHash": "8d564b8e",
+          "extractedAt": "2026-06-30T22:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DO-TPqGgT7u%22+%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-565-9995%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d061588a",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 서구 다은유치원 2026학년도 입학설명회 Instagram",
+        "url": "https://www.instagram.com/reel/DO-TPqGgT7u/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "daeun_cheongna 계정에서 2026학년도 다은유치원 입학설명회 안내와 교육 철학 및 프로그램을 직접 확인할 수 있다는 모집 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "info-session"
+        ],
+        "date": "2025-09-23",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "28cd61ca",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+daeun_cheongna+%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO-TPqGgT7u/",
+          "normalizedUrl": "www.instagram.com/reel/do-tpqggt7u",
+          "normalizedText": "인천 서구 다은유치원 2026학년도 입학설명회 instagram daeun_cheongna 계정에서 2026학년도 다은유치원 입학설명회 안내와 교육 철학 및 프로그램을 직접 확인할 수 있다는 모집 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "28cd61ca",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+daeun_cheongna+%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6821b150",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 서구 다은유치원 입학식 Instagram",
+        "url": "https://www.instagram.com/reel/DVd4Oxeic2e/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "daeun_cheongna 계정에서 2026년 3월 다은유치원 입학식이 열렸고 새로운 시작을 알리는 행사였다는 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "event"
+        ],
+        "date": "2026-03-04",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "dc40e552",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVd4Oxeic2e%22+%22daeun_cheongna%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVd4Oxeic2e/",
+          "normalizedUrl": "www.instagram.com/reel/dvd4oxeic2e",
+          "normalizedText": "인천 서구 다은유치원 입학식 instagram daeun_cheongna 계정에서 2026년 3월 다은유치원 입학식이 열렸고 새로운 시작을 알리는 행사였다는 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "dc40e552",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVd4Oxeic2e%22+%22daeun_cheongna%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-afa20e72",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 서구 다은유치원 봄소풍 Instagram",
+        "url": "https://www.instagram.com/reel/DYjxwQBBD1z/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "daeun_cheongna 계정에서 즐거웠던 다은 봄소풍 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "activity"
+        ],
+        "date": "2026-05-20",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "6166f93b",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYjxwQBBD1z%22+%22daeun_cheongna%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYjxwQBBD1z/",
+          "normalizedUrl": "www.instagram.com/reel/dyjxwqbbd1z",
+          "normalizedText": "인천 서구 다은유치원 봄소풍 instagram daeun_cheongna 계정에서 즐거웠던 다은 봄소풍 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "6166f93b",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYjxwQBBD1z%22+%22daeun_cheongna%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fd095374",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 서구 다은유치원 국립해양박물관 견학 Instagram",
+        "url": "https://www.instagram.com/reel/DJ50iPPzJSm/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "daeun_cheongna 계정에서 다은유치원 존중2반 원아들이 국립해양박물관에서 과거·현재·미래 바다 모험과 다양한 체험 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "curriculum"
+        ],
+        "date": "2025-05-20",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "1e64db33",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJ50iPPzJSm%22+%22daeun_cheongna%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJ50iPPzJSm/",
+          "normalizedUrl": "www.instagram.com/reel/dj50ippzjsm",
+          "normalizedText": "인천 서구 다은유치원 국립해양박물관 견학 instagram daeun_cheongna 계정에서 다은유치원 존중2반 원아들이 국립해양박물관에서 과거·현재·미래 바다 모험과 다양한 체험 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "1e64db33",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJ50iPPzJSm%22+%22daeun_cheongna%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d6790e3a",
+        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
+        "title": "인천 서구 다은유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DPLAXVUCbZ_/",
+        "source": "other",
+        "sourceName": "Instagram · 다은유치원",
+        "snippet": "Instagram 검색 결과에서 다은유치원, 2026학년도 입학설명회 안내와 인천 서구 청라 지역 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "27549bfa",
+        "structuredFields": {
+          "kindergartenName": "다은유치원",
+          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPLAXVUCbZ_%22+%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPLAXVUCbZ_/",
+          "normalizedUrl": "www.instagram.com/p/dplaxvucbz_",
+          "normalizedText": "인천 서구 다은유치원 입학설명회 instagram instagram 검색 결과에서 다은유치원, 2026학년도 입학설명회 안내와 인천 서구 청라 지역 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "27549bfa",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "다은유치원",
+            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPLAXVUCbZ_%22+%22%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0383-b044-e053-0a32095ab044": [
@@ -97,6 +464,40 @@
         "date": "2024-10-11",
         "collectedAt": "2026-02-18T06:13:58.248Z",
         "relevanceScore": 4
+      },
+      {
+        "id": "rev-b5535731",
+        "kindergartenId": "887f8c27-2101-4844-a3ef-5ed134ba529b",
+        "title": "2024학년도-유치원 설명회 후기/처음학교로-일반접수/청라 사립유치원(드림, 세라, 경서), 호정숲속어린이집",
+        "url": "https://blog.naver.com/PostView.naver?blogId=allothers2&logNo=223273669783",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "2024학년도 만 3세 유치원 입학을 앞둔 학부모입니다..(아니벌써내가)처음 학교로 일반모집 선발 결과를 약 2시간 앞둔 시점.입이 바짝바짝 타네요..유치원 참 이게 뭐라고^^^3지망까지 모두 선발 안되면 어쩌죠..갑자기 종교라도 만들고...청라유치원도 너무 보내고싶었는데 모집인원 1명..? 힘드네요.. 9월 말 10월 초에는 유치원 설명회 일정 파악하고, 신랑이랑 시간 맞춰서 유치원 설명회...",
+        "summary": "2024학년도 만 3세 유치원 입학을 앞둔 학부모입니다..(아니벌써내가)처음 학교로 일반모집 선발 결과를 약 2시간 앞둔 시점.입이 바짝바짝 타네요..유치원 참 이게 뭐라고^^^3지망까지 모두 선발 안되면 어쩌죠..갑자기 종교라도 만들고...청라유치원도 너무 보내고싶었는데 모집인원 1명..? 힘드네요.. 9월 말 10월 초에는 유치원 설명회 일정 파악하고, 신랑이랑 시간 맞춰서 유치원 설명회 곳곳에 참여하고, 일반모집 접수..까지 근 두 달간 간만에 머리 시끄럽게, 또 플래너도 꽉 채우며 살았네요. 아이 낳고 이렇게 계획적이었던 적도 없는데(전엔 있었나..)웃기면서, 이런 현실이 살짝 서글픈.. 아이들은 많고 유치원 모집 인원은 한계가...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:32:52.705Z",
+        "relevanceScore": 4,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "21486fc1",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=allothers2&logNo=223273669783",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=allothers2&logno=223273669783",
+          "normalizedText": "2024학년도-유치원 설명회 후기/처음학교로-일반접수/청라 사립유치원(드림, 세라, 경서), 호정숲속어린이집 2023.11.24.유치원 접수 앞두고 아무 정보 없는 저와 비슷한 분들에게 조금의..도움이 되기를.. 저는 블로그, 카페 돌아다니면서 선배맘(?) 분들께 정보 많이 얻었거든요ㅠㅠ도움 많이 받았어요.... 인천 서구 경서동 수영장이 있는 유치원이라 무조건 설명회 들어보고 싶었던 유치원. 설명회의 후기부터 말하자면... 엄마 강의 듣고 온 느낌. 마치 엄마 힐링캠프.. 원장님의... 2024학년도 만 3세 유치원 입학을 앞둔 학부모입니다..(아니벌써내가)처음 학교로 일반모집 선발 결과를 약 2시간 앞둔 시점.입이 바짝바짝 타네요..유치원 참 이게 뭐라고^^^3지망까지 모두 선발 안되면 어쩌죠..갑자기 종교라도 만들고...청라유치원도 너무 보내고싶었는데 모집인원 1명..? 힘드네요.. 9월 말 10월 초에는 유치원 설명회 일정 파악하고, 신랑이랑 시간 맞춰서 유치원 설명회... 2024학년도 만 3세 유치원 입학을 앞둔 학부모입니다..(아니벌써내가)처음 학교로 일반모집 선발 결과를 약 2시간 앞둔 시점.입이 바짝바짝 타네요..유치원 참 이게 뭐라고^^^3지망까지 모두 선발 안되면 어쩌죠..갑자기 종교라도 만들고...청라유치원도 너무 보내고싶었는데 모집인원 1명..? 힘드네요.. 9월 말 10월 초에는 유치원 설명회 일정 파악하고, 신랑이랑 시간 맞춰서 유치원 설명회 곳곳에 참여하고, 일반모집 접수..까지 근 두 달간 간만에 머리 시끄럽게, 또 플래너도 꽉 채우며 살았네요. 아이 낳고 이렇게 계획적이었던 적도 없는데(전엔 있었나..)웃기면서, 이런 현실이 살짝 서글픈.. 아이들은 많고 유치원 모집 인원은 한계가... 2024학년도 만 3세 유치원 입학을 앞둔 학부모입니다..(아니벌써내가)처음 학교로 일반모집 선발 결과를 약 2시간 앞둔 시점.입이 바짝바짝 타네요..유치원 참 이게 뭐라고^^^3지망까지 모두 선발 안되면 어쩌죠..갑자기 종교라도 만들고...청라유치원도 너무 보내고싶었는데 모집인원 1명..? 힘드네요.. 9월 말 10월 초에는 유치원 설명회 일정 파악하고, 신랑이랑 시간 맞춰서 유치원 설명회 곳곳에 참여하고, 일반모집 접수..까지 근 두 달간 간만에 머리 시끄럽게, 또 플래너도 꽉 채우며 살았네요. 아이 낳고 이렇게 계획적이었던 적도 없는데(전엔 있었나..)웃기면서, 이런 현실이 살짝 서글픈.. 아이들은 많고 유치원 모집 인원은 한계가 있으니까요..뭐 신도시 한정이지만.. 유치원 설명회 참석한 후기를 짧게 씩 남겨볼게요. 대체적으로 장점만 나열 될거에요. 저는 주로 장점만 보그든요..그게 조크든여..뭐 단점은 다녀보면서^^^ 보이지않을가요.유치원 접수 앞두고 아무 정보 없는 저와 비슷한 분들에게 조금의..도움이 되기를.. 저는 블로그, 카페 돌아다니면서 선배맘(?) 분들께 정보 많이 얻었거든요ㅠㅠ도움 많이 받았어요. 놀이터 맘님들께도요 ㅋㅋㅋ궁금한게 많은 저에게 친절히 답해주신 분들도 감사해요.. 인천 서구 청라동 <드림유치원> 청라 4단지에 위치한 드림유치원. 3단지 차량 삽가넝...뭐 엄마들의 드림이다 해서 드림유치원이라는 말도 돈담서요..그 말이 재미있었는데 접수 해놓고 생각하니 재미없다..내 아이가 다녀야 재미있을 것 같어요^^^.. 드림유치원 인천광역시 서구 청라커낼로223번길 13 이 블로그의 체크인 이 장소의 다른 글 설명회에서 원장님, 원감님의 프레젠테이션은 드림에 대한 pride 가 정말 강하게 느껴졌어요.✔️특히 마음에 들었던 부분은 자율 속 질서를 통해 성장하도록 길을 잡아준다는 거였어요. 원장님은 체육수업을 강조하시더라구요. 이 부분이 많이 와닿았어요.왜냐..몸을 써야 머리를 쓸 수 있거든요. 이 교육관은 저와 정말 잘 맞았어요!교육목표는 아래와 같아요.(시설이 궁금하다면 사진은 따로 보내드릴게요.)• 교육목표: 독립심(자율성, 자기 주도성), 집중력, 문제해결능력 -건강한 어린이/발표력 향상/독서습관/영어로 말하기영어, 체육, 몬테소리 외 ai 코딩 수업, 쿠킹클래스, 놀이체육, 특성화 영어수업, 창의놀이 등 다양하게 구성되어 있어요.방과후는..해당 사항이 아니라 ppt 사진만 찍었어요, 궁금하신 분은 따로 보내드릴게요:)유치원 마당이 넓어 다양하게 활용/활동 가능하며, 뒷문으로 나가면 놀이터가 있어요.✔️✔️방문한 유치원 중 가장 맘에 드는 부분이었어요. 인천 서구 경서동 <세라유치원> 세라유치원 인천광역시 서구 경서로 80 이 블로그의 체크인 이 장소의 다른 글 수영장이 있는 유치원이라 무조건 설명회 들어보고 싶었던 유치원.설명회의 후기부터 말하자면... 엄마 강의 듣고 온 느낌. 마치 엄마 힐링캠프.. 원장님의 교육 가치관이 굳건하다면 선생님들, 또 아이들에게 고스란히 전해지는 것 같아요. 개인적으로 원장님께 배우고 싶은 마음이..•자율, 공감 능력, 창의력, 사고 활동 활발하도록 방향 제시•프로젝트 수업-놀이식(반별로 다름)•행사 계획, 진행도 아이들 토론 및 의견 반영•엄마 독서모임•주체적인 자유놀이-’유치원 자체가 놀이터‘ 라는 마인드로 영어, 기구체육, 축구(옥상에 축구장), 농구, 골프, 뮤지컬, 수영, 푸드 창의활동, 키자니아데이, 파자마데이 등..역시 다양합니다.ㅋㅋㅋ아 소풍에 도시락 없대요^^^자체 준비 하신답니닼ㅋㅋㅋㅋ갑자기 또 끌리죠...?ㅋㅋㅋㅋ아! 교실이 정말 넓어요. 아이가 이곳에서 생활한다면 너무 좋겠더라구요.역시 교육과정반 만 참여하는 아이라 방과후 정보는 따로 드릴게요:)시설 사진도 원하시면 보내드릴게요:)하 이렇게 다시 보니까 너무 보내고 싶은 유치원이에요..헌데 모집인원 보고 좌절했습니다ㅠㅠㅠㅠㅠㅠㅠㅠ..갈 수 있을가요..? 인천 서구 경서동 <호정숲어린이집> 호정숲속어린이집 인천광역시 서구 경서로14번길 52 이 블로그의 체크인 이 장소의 다른 글 이곳 또한 청라, 루원시티 근방에서도 유명한 청라 숲어린이집이죠.가져갈 수 있게 ppt 자료를 주셔서 좋았어요:)집에서 신랑이랑 같이 보며 얘기하니까 좋더라구요. 우선 후기를 말하자면..설명이 제일 짧겠어요ㅠㅠㅋㅋ저는 그저 호 호 호 였거든요.. 다 좋더라구요.✔️누리과정을 숲과 연계하여 활동할 수 있는 부분이 가장 큰 장점입니다.특성화 수업도 다양하게 있고, 놀이터 구애받지 않고 활동할 수 있는 부분이 역시나 큰 장점이에요. 교실도 넓고 지하 식당도 있어서 아이들 생활에 정말 좋겠더라구요.학교가면 급식실을 이용할테니까요?어린이집 건물 뒤로 이어진 숲의 규모를 보고 정말 놀랐어요.숲 사진이 더 있으니 따로 공유드릴게요:) 추가로 경서동 경서유치원은 지인에게 추천받았어요:)자세한 정보는 없지만 일반 모집인원이 36명이었다는 거...감사합니다...ㅠㅠㅠ이상...글을 마치며.... 일출 사진 보고 좋은 기운 받기......'◡'♡",
+          "htmlSnapshotHash": "21486fc1",
+          "extractedAt": "2026-06-26T07:32:52.705Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%EB%A7%98%EC%B9%B4%ED%8E%98&where=article",
+          "structuredFields": {
+            "kindergartenName": "세라유치원",
+            "kindergartenAddress": "인천광역시 서구 경서로 80",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B8%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%EB%A7%98%EC%B9%B4%ED%8E%98&where=article",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08d-0e7b-b044-e053-0a32095ab044": [
@@ -111,6 +512,40 @@
         "date": "2023-11-04",
         "collectedAt": "2026-02-18T06:13:58.248Z",
         "relevanceScore": 1
+      },
+      {
+        "id": "rev-ffd5776c",
+        "kindergartenId": "1ecec08d-0e7b-b044-e053-0a32095ab044",
+        "title": "26학년도 인천 서구 루원시티 유치원설명회(아이사랑/연희/산새소리/청라새싹/아림유치원)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=rkdwndus939&logNo=224074562006",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "내년에 벌써 유치원으로 옮겨야하는ㅠㅠ 루원시티 유치원설명회를 다니는데 다닐수록 다 괜찮고 고르기가 넘 힘든과정이였다ㅜ (아직도 진행중..)맞벌이라 7시까지 하는곳은 필수고 (만3세때까진 학원은 보내기싫어서ㅜ)차량과 거리.. 다 충족하는 곳이 없다니ㅜㅜ 맞벌이만 아니면 쉽게 선택할 것 같은데ㅜ 연희유치원 2008년부터 원장선생님 계셨음. (원장님이 젊음)교사들 이직 크지x. 10년정도 됨타학교...",
+        "summary": "내년에 벌써 유치원으로 옮겨야하는ㅠㅠ 루원시티 유치원설명회를 다니는데 다닐수록 다 괜찮고 고르기가 넘 힘든과정이였다ㅜ (아직도 진행중..)맞벌이라 7시까지 하는곳은 필수고 (만3세때까진 학원은 보내기싫어서ㅜ)차량과 거리.. 다 충족하는 곳이 없다니ㅜㅜ 맞벌이만 아니면 쉽게 선택할 것 같은데ㅜ 연희유치원 2008년부터 원장선생님 계셨음. (원장님이 젊음)교사들 이직 크지x. 10년정도 됨타학교들 실습생들 많음8시~19시 연장반시 늦은 오후간식 주 2~3번 - 맞벌이들 한테 넘 좋은것 같음디지털 수업, 1:1패드 ( 일찍 노출하긴 싫지만, 초등학교부터 이미 패드로 수업한다고 수업이 들어간것같은데 부모들 개인차 있을것같음. )IB교육 -요즘...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:34:32.606Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "5538842d",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=rkdwndus939&logNo=224074562006",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=rkdwndus939&logno=224074562006",
+          "normalizedText": "26학년도 인천 서구 루원시티 유치원설명회(아이사랑/연희/산새소리/청라새싹/아림유치원) 39 내년에 벌써 유치원으로 옮겨야하는ㅠㅠ 루원시티 유치원설명회를 다니는데 다닐수록 다 괜찮고 고르기가 넘 힘든과정이였다ㅜ (아직도 진행중..)맞벌이라 7시까지 하는곳은 필수고 (만3세때까진 학원은 보내기싫어서ㅜ)차량과 거리.. 다 충족하는 곳이 없다니ㅜㅜ 맞벌이만 아니면 쉽게 선택할 것 같은데ㅜ 연희유치원 2008년부터 원장선생님 계셨음. (원장님이 젊음)교사들 이직 크지x. 10년정도 됨타학교... 내년에 벌써 유치원으로 옮겨야하는ㅠㅠ 루원시티 유치원설명회를 다니는데 다닐수록 다 괜찮고 고르기가 넘 힘든과정이였다ㅜ (아직도 진행중..)맞벌이라 7시까지 하는곳은 필수고 (만3세때까진 학원은 보내기싫어서ㅜ)차량과 거리.. 다 충족하는 곳이 없다니ㅜㅜ 맞벌이만 아니면 쉽게 선택할 것 같은데ㅜ 연희유치원 2008년부터 원장선생님 계셨음. (원장님이 젊음)교사들 이직 크지x. 10년정도 됨타학교들 실습생들 많음8시~19시 연장반시 늦은 오후간식 주 2~3번 - 맞벌이들 한테 넘 좋은것 같음디지털 수업, 1:1패드 ( 일찍 노출하긴 싫지만, 초등학교부터 이미 패드로 수업한다고 수업이 들어간것같은데 부모들 개인차 있을것같음. )ib교육 -요즘... 내년에 벌써 유치원으로 옮겨야하는ㅠㅠ 루원시티 유치원설명회를 다니는데 다닐수록 다 괜찮고 고르기가 넘 힘든과정이였다ㅜ (아직도 진행중..)맞벌이라 7시까지 하는곳은 필수고 (만3세때까진 학원은 보내기싫어서ㅜ)차량과 거리.. 다 충족하는 곳이 없다니ㅜㅜ 맞벌이만 아니면 쉽게 선택할 것 같은데ㅜ 연희유치원 2008년부터 원장선생님 계셨음. (원장님이 젊음)교사들 이직 크지x. 10년정도 됨타학교들 실습생들 많음8시~19시 연장반시 늦은 오후간식 주 2~3번 - 맞벌이들 한테 넘 좋은것 같음디지털 수업, 1:1패드 ( 일찍 노출하긴 싫지만, 초등학교부터 이미 패드로 수업한다고 수업이 들어간것같은데 부모들 개인차 있을것같음. )ib교육 -요즘 대부분 유치원이 ib교육하는것같음다양한 활동들. (그중 농장체험을 강조)발표회 있음 34명뽑음. 다른원들에 비해 적게뽑음시설이 좀 낡긴했음. 개인적으로 너무 조금 뽑고, 건물이 좀 오래됬고, 디지털 수업때문에 조금 망설이게 됨. 원 안에 놀이터도 작긴했음 아이사랑 유치원 개인적으로 너무 맘에 들었지만. 맞벌이는 거리도 중요해서ㅜㅜ 참 고민ㅜㅜ 그래도 넘 맘에 들었음! 검암동 유일한 사립유치원초등으로 가기위한 준비강조pbl교육과정(프로젝트접근법수업)주5일영어(원어민주2회)유치원내에 정원있음교실넓음/ 본관 별관 있음물놀이 주2회(7/8월)7:30~7시 (맞벌이 최적)부담임 있음(2:24)급식 풀무원사용 방학:여름겨울 일주일씩(선생님들 연차붙이기도)3:30까지 수업 차량 물품비 특별화활동비용없음 개인적으로 교실이 너무 맘에들었음.. 7살들은 초등학교 적응을 위해 책상을 학교처럼 배치해뒀는데, 다른유치원들은 이런곳을 못봄딱보자마자 넘 이끌렸던. 그리고 또 좋았던건 모래교실..!!단순히 모래놀이가 아니라 심리상담때도 하는 모래교실이다..! 원장님이 자격증이 있으시다고..! 산새소리유치원 루원시티 숲유치원 중 산새소리유치원! 예전부터 산새소리를 보내고 싶었지만,, 산새소리가 6:30까지밖에 안해서.. 못보내는.8시~6:30 오전에 숲체험활동 오후에 방과후활동교실이 좁음 아림유치원 아침 8시~7시오전엔 매일 밖에서 활동아침에 바로 교실로 등원이 아닌 유치원마당에서 만나서 인사하고 생활하다가 들어감. 교실이 넓음 선생님들이 친절했던 기억 아림유치원 밖에 모습이였는데, 정말 넓고 놀기 좋게되어있었음. 아이들이 좋아할만한 공간.. ㅎ 저희애가 저랑 분리가 안되는데, 이날은 저 설명회 듣는다니까 선생님이 다가오니 나가서 논다고..ㅎ 끝까지 잘 놀아주시고 이름도 외워주셨다..셔틀만 와준다면 보내고 싶었던 곳. 청라새싹유치원 8시~7시까지 운영원이 컸음. 안에 키카처럼 놀이터 되어있음한학급당 100명이 넘어가니 아이들이 많았음. 단점이 될 수 있을것 같은 느낌이 들었음프로그램이랑 교실은 넓고 좋았음.여러군데 서구 루원시티 유치원 설명회를 다녀왔는데 안좋은 유치원은 솔직히 없는듯하다.집하고 가까운 곳을 지원하는게 맞는것 같기도 하고 아이의 성향을 고려하는것도 맞는것 같고.. 어려운 유치원 고르기ㅋㅋ 그러던중 알게된 어린이집...😉근로복지공단 인천어린이집이 맞벌이한테도, 어린이집이지만 유치원프로그램이랑 같고 프로그램도 다양하게 하고 소수 인원이고,셔틀도 오고!! 무엇보다 7:30까지고 늦게 남아있는 아이들 많고! 여기가야겠...🫢",
+          "htmlSnapshotHash": "5538842d",
+          "extractedAt": "2026-06-26T07:34:32.606Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%82%B0%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "산새소리유치원",
+            "kindergartenAddress": "인천광역시 서구 서달로 198",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%82%B0%EC%83%88%EC%86%8C%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08c-f407-b044-e053-0a32095ab044": [
@@ -127,16 +562,38 @@
         "relevanceScore": 2
       },
       {
-        "id": "rev-8001-294j",
+        "id": "rev-35a378ea",
         "kindergartenId": "1ecec08c-f407-b044-e053-0a32095ab044",
-        "title": "몇번째지",
-        "url": "https://blog.naver.com/mathematicalauthor/224145598001",
+        "title": "10",
+        "url": "https://blog.naver.com/PostView.naver?blogId=pretty7222&logNo=223647035539",
         "source": "naver_blog",
-        "sourceName": "수학블로그인척하는소설블이지만어쩌면수학블일수도?",
-        "snippet": "기껏 도서관 제한구역 바로 앞까지 다녀와서 생활 점수가 깎일 뻔했는데 제대로 좀 할래?!  그녀의... 우리 급수족은 어렸을 때부터 산수기본원리를 배우고 명문 유치원에 간단 말이야! 됐고, 선생님에게 말하면...",
-        "date": "2026-01-13",
-        "collectedAt": "2026-02-18T06:13:58.248Z",
-        "relevanceScore": 1
+        "sourceName": "네이버 블로그",
+        "snippet": "나의 예쁜 쿠키 만들기2024.11.05.Keep에 저장Keep에 바로가기인천 서구 검단신도시 사립유치원 정보 입학설명회 후기모두 원하는 기관에 보내시기를 바라며 원비가 궁금하신 분들은 공감 후 댓글로 문의주시면 답변 드리겠습니다 :) #검단신도시 #검단유치원 #검단신도시유치원 #원당동유치원 #검단사립유치원 #인천서구유치원 #인천서구사립유치원 #사랑샘유치원 #인천사랑샘유치원 #명문유치원 #일영유치원 #해나라유치원 #검단해나라유...",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:35:49.705Z",
+        "relevanceScore": 8,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "2b9b4beb",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=pretty7222&logNo=223647035539",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=pretty7222&logno=223647035539",
+          "normalizedText": "10 10 나의 예쁜 쿠키 만들기2024.11.05.keep에 저장keep에 바로가기인천 서구 검단신도시 사립유치원 정보 입학설명회 후기모두 원하는 기관에 보내시기를 바라며 원비가 궁금하신 분들은 공감 후 댓글로 문의주시면 답변 드리겠습니다 :) #검단신도시 #검단유치원 #검단신도시유치원 #원당동유치원 #검단사립유치원 #인천서구유치원 #인천서구사립유치원 #사랑샘유치원 #인천사랑샘유치원 #명문유치원 #일영유치원 #해나라유치원 #검단해나라유...",
+          "htmlSnapshotHash": "2b9b4beb",
+          "extractedAt": "2026-06-26T07:35:49.705Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "명문유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로 16",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
       }
     ],
     "1ecec08c-f027-b044-e053-0a32095ab044": [
@@ -163,6 +620,93 @@
         "date": "2024-11-05",
         "collectedAt": "2026-02-18T06:13:58.249Z",
         "relevanceScore": 2
+      },
+      {
+        "id": "rev-5f90c366",
+        "kindergartenId": "1ecec08c-f027-b044-e053-0a32095ab044",
+        "title": "인천 서구 사랑샘 유치원 프로젝트 2학기 참여수업",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sweetjo&logNo=222914737341",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "육아인플루언서 글향기린의 육아공감입니다. 아름다운 가을, 아이와 함께하는 행복한 시간 다둥이네 2호 둘째가 다니고 있는 교육기관 실외 숲놀이터에는 알록달록 가을이 찾아왔다. 그리고 아이가 정말 기대하고 기다리던 엄마 아빠와 함께 하는 2학기 참여수업이 돌아왔다. 인천 서구 사랑샘 유치원 정말 자랑하고 싶은 교육환경이다. 사계절 변하는 자연 속에서 우리 아이가 자랄 수 있다는 것은 축복이다....",
+        "summary": "육아인플루언서 글향기린의 육아공감입니다. 아름다운 가을, 아이와 함께하는 행복한 시간 다둥이네 2호 둘째가 다니고 있는 교육기관 실외 숲놀이터에는 알록달록 가을이 찾아왔다. 그리고 아이가 정말 기대하고 기다리던 엄마 아빠와 함께 하는 2학기 참여수업이 돌아왔다. 인천 서구 사랑샘 유치원 정말 자랑하고 싶은 교육환경이다. 사계절 변하는 자연 속에서 우리 아이가 자랄 수 있다는 것은 축복이다. 가을 낙엽도 밟아보고 가을 국화를 탐색하며 성장한다. 숲놀이터로 향하는 현관 배놀이터 유치원 2학기 참여수업 왜 하는걸까?-교육과정을 경험하고 유치원의 교육 이해하기-자녀의 발달단계과 성장 이해하고 경험하기 가을 오후의 음악회 즐기기아이들에게 질성적...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:36:48.534Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "e997414b",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sweetjo&logNo=222914737341",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sweetjo&logno=222914737341",
+          "normalizedText": "인천 서구 사랑샘 유치원 프로젝트 2학기 참여수업 2022.10.30.숲놀이터로 향하는 현관 배놀이터 유치원 2학기 참여수업 왜 하는걸까? -교육과정을 경험하고 유치원의 교육 이해하기 -자녀의 발달단계과 성장 이해하고 경험하기 가을 오후의 음악회... 알버트와 분리수거하기 토키, 로이 로봇 오조봇 길 따라가기 사랑샘 숲에서 즐기는 신체놀이 인천 서구 사랑샘 유치원 프로젝트 활동을 풀어감에 있어서 실외 놀이터가 큰 역할을 한다.... 육아인플루언서 글향기린의 육아공감입니다. 아름다운 가을, 아이와 함께하는 행복한 시간 다둥이네 2호 둘째가 다니고 있는 교육기관 실외 숲놀이터에는 알록달록 가을이 찾아왔다. 그리고 아이가 정말 기대하고 기다리던 엄마 아빠와 함께 하는 2학기 참여수업이 돌아왔다. 인천 서구 사랑샘 유치원 정말 자랑하고 싶은 교육환경이다. 사계절 변하는 자연 속에서 우리 아이가 자랄 수 있다는 것은 축복이다.... 육아인플루언서 글향기린의 육아공감입니다. 아름다운 가을, 아이와 함께하는 행복한 시간 다둥이네 2호 둘째가 다니고 있는 교육기관 실외 숲놀이터에는 알록달록 가을이 찾아왔다. 그리고 아이가 정말 기대하고 기다리던 엄마 아빠와 함께 하는 2학기 참여수업이 돌아왔다. 인천 서구 사랑샘 유치원 정말 자랑하고 싶은 교육환경이다. 사계절 변하는 자연 속에서 우리 아이가 자랄 수 있다는 것은 축복이다. 가을 낙엽도 밟아보고 가을 국화를 탐색하며 성장한다. 숲놀이터로 향하는 현관 배놀이터 유치원 2학기 참여수업 왜 하는걸까?-교육과정을 경험하고 유치원의 교육 이해하기-자녀의 발달단계과 성장 이해하고 경험하기 가을 오후의 음악회 즐기기아이들에게 질성적... 육아인플루언서 글향기린의 육아공감입니다. 아름다운 가을, 아이와 함께하는 행복한 시간 다둥이네 2호 둘째가 다니고 있는 교육기관 실외 숲놀이터에는 알록달록 가을이 찾아왔다. 그리고 아이가 정말 기대하고 기다리던 엄마 아빠와 함께 하는 2학기 참여수업이 돌아왔다. 인천 서구 사랑샘 유치원 정말 자랑하고 싶은 교육환경이다. 사계절 변하는 자연 속에서 우리 아이가 자랄 수 있다는 것은 축복이다. 가을 낙엽도 밟아보고 가을 국화를 탐색하며 성장한다. 숲놀이터로 향하는 현관 배놀이터 유치원 2학기 참여수업 왜 하는걸까?-교육과정을 경험하고 유치원의 교육 이해하기-자녀의 발달단계과 성장 이해하고 경험하기 가을 오후의 음악회 즐기기아이들에게 질성적 경험을 전해주려는 원장님의 마음이 느껴지는 시간! 아이들과 음악회라니! 전자 바이올리니스트 도은혜 선생님과 함께 아름다운 음악, 신나는 동요까지 즐겼다. 가을 음악회 2학기 참여수업 하이라이트 어느순간 아이들과 선생님, 부모까지 앞으로 나와 자율적으로 댄스파티처럼 즐기는 예술경험의 시간들. 흥 많은 다둥이네 2호 3호는 가장 처음 무대로 나가 무대를 삼켜드셨다고 한다. 축제 한마당 다둥이네 아이들도 댄스타임 창의과학놀이 활동에 푹 빠지다!입장료 내고 관람하는 미디어 아트전이 강당에 구성되어 아이들이 수업으로 자연스럽게 경험하니, 우리 아이들은 미래사회 필요한 문제해결, 공감, 소통, 협력의 능력을 채워가고 있다. 미디어아트 활동 건강한 바다 속 탐험 '지구를 살리자' 프로젝트를 진행중인 다섯살 아이들과 건강 바다 속 다양한 생물에 대해 이야기 나누고 바다를 깨끗하게 보호하기 위한 실천에 대해 그동안 배운 것들을 회상하기도 했다. 바람개비 만들기 3d 프린팅 펜 창의과학 자유놀이 그 외에도 과학적인 원리를 이해하며 스스로 만드는 방법을 이해하고 도전하고 완성된 결과물에 성취감을 얻을 수 있는 다양한 만들기, 탐색하기 활동을 자유놀이처럼 선택하여 활동해보았다.다양한 로봇과 코딩 기기와의 만남!인천 서구 사랑샘 유치원 프로젝트 활동 이외에도 연계된 확장 활동으로 다양한 로봇을 활용한 코딩 수업이 활발하게 진행되고 있다. 알버트, 엠타이니, 로이, 오조봇 등 다양한 기기를 정규과정 수업 중에 만나게 된다. 코딩원리 이해하기 '지구를 살리자' 프로젝트 확장활동으로 로봇과 함께 분리수거를 하기 위해서 리모콘 혹은 코딩의 언어를 이해해서 문제해결하는 과정을 시행착오도 겪으며 즐기는 모습을 통해 참 많이 성장했음을 느꼈다. 알버트와 분리수거하기 토키, 로이 로봇 오조봇 길 따라가기 사랑샘 숲에서 즐기는 신체놀이인천 서구 사랑샘 유치원 프로젝트 활동을 풀어감에 있어서 실외 놀이터가 큰 역할을 한다. 숲놀이터, 배놀이터, 로켓놀이터, 모래놀이터 종류도 다양하고 공간이 넓어서 아이들이 뛰어 놀기에 참 좋은 환경이다. 배놀이터에서 신체놀이 한마당 숲놀이터 곳곳 준비되어 있는 다양하고 재미있는 활동을 자유놀이로 선택하여 경험하였는데 역시 다둥이네 2호는 활발한 에너자이저 답게 몸으로 하는 신체 활동에 관심이 많았다. 추억의 간식 룰렛 돌리기 다양한 신체운동 추억의 뽑기 게임 그리고 매년 참여수업마다 기대가 되는 이유 중 하나는 바로 간식코너 먹거리이다! 지난 1학기에는 부침개와 동동주를 맛있게 준비해주셨는데 쌀쌀해진 날씨에 맞춰 뜨끈한 어묵과 국물, 달콤매콤한 떡볶이, 차한잔까지 맛있게 먹으며 쉬어갈 수 있었다. 간식코너 먹거리 간식코너 떡볶이 어묵 맛집 연령별 놀이 중심 프로젝트 활동인천 서구 사랑샘 유치원 프로젝트는 유아교육의 꽃이다. 만3세 다섯살 '지구를 살리자' 프로젝트 확장활동으로 북극곰에게 처한 위기 상황, 오염된 바다를 깨끗하게 해주는 미션 활동이 이루어졌다. 만3세 놀이중심 프로젝트 오염된 바다를 살리자 북극곰에게 먹이 주기 북극곰아 아프지마! 북극으로 놀러간 아이들! 신나는 폼폼이 눈놀이를 즐기고 북극곰에게 그림편지도 작성해보았다. 지구와 환경 주제에 얼마나 몰입하고 있는지 흥미를 가지고 참여하는지 알 수 있었던 소중한 시간이다. 북극에서 눈놀이 2학기 참여수업에 참여하는 부모 육아꿀팁-참여하는 복장은 최대한 편안하게!-구두, 짧은 치마는 비추천 (활동 가능한 옷)-아이와 함께 자세를 낮추고 즐기기-궁금한 점은 체크해두고 추후 상담하기-부모와 함께 해서 어리광을 부리거나 부모에게 기대서 활동을 제대로 참여하기도 하니 기다려주기-행사 마치면 원장님, 선생님께 아이와 함께 감사인사하고 귀가하기 아이가 좋은 기관을 만난다는 건축복이다 자연, 창의, 놀이인천 서구 사랑샘 유치원이 추구하는 교육을 이해하고 아이와 함께 풍성한 환경에서 놀이하고 부모로서 양육자로서 어떻게 놀아줘야하는지, 상호작용해야할지 이해하는 시간이기도 했다. 둘째도 참 많이 성장했다! 2022년 잊지못할 가을 늦은 오후 꽉찬 2시간30분이었다. 사실 이날 많은 부모들이 뻗었다고 한다. ㅎㅎ 교육에 자부심을 가지고 함께 경험하기 위해 아낌없이 지원해주신 원장님과 모든 과정 준비로 애쓴 선생님들께 감사하다. 앞으로의 아이의 성장 이야기가 기대된다! 글향기린의 육아공감 놀러오세요 :)",
+          "htmlSnapshotHash": "e997414b",
+          "extractedAt": "2026-06-26T07:36:48.534Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%82%AC%EB%9E%91%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "사랑샘유치원",
+            "kindergartenAddress": "인천광역시 서구 원당대로820번2길 5",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%82%AC%EB%9E%91%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-01249a59",
+        "kindergartenId": "1ecec08c-f027-b044-e053-0a32095ab044",
+        "title": "인천 사랑샘유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DPLXjdKgQmU/",
+        "source": "other",
+        "sourceName": "Instagram · 사랑샘유치원",
+        "snippet": "사랑샘유치원 2026학년도 원아모집과 인천 사랑샘유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 사랑샘유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "사랑샘유치원 2026학년도 원아모집과 인천 사랑샘유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 인천 서구 사랑샘유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b3cfdcef",
+        "structuredFields": {
+          "kindergartenName": "사랑샘유치원",
+          "kindergartenAddress": "인천광역시 서구 원당대로820번2길 5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPLXjdKgQmU%22+%22%EC%82%AC%EB%9E%91%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPLXjdKgQmU/",
+          "normalizedUrl": "www.instagram.com/p/dplxjdkgqmu",
+          "normalizedText": "인천 사랑샘유치원 원아모집 sns 사랑샘유치원 2026학년도 원아모집과 인천 사랑샘유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 사랑샘유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "b3cfdcef",
+          "extractedAt": "2026-06-30T23:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사랑샘유치원",
+            "kindergartenAddress": "인천광역시 서구 원당대로820번2길 5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPLXjdKgQmU%22+%22%EC%82%AC%EB%9E%91%EC%83%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ed21-b044-e053-0a32095ab044": [
@@ -214,6 +758,163 @@
         "snippet": "고고닉닉 리뷰 546사진 52 선생님들 너무 친절하시고 원장님도 너무 친절하세요! 1번째 방문",
         "date": "2022-03-08",
         "collectedAt": "2026-04-05T15:29:28.146Z"
+      },
+      {
+        "id": "rev-0ca7105f",
+        "kindergartenId": "1ecec08d-00d6-b044-e053-0a32095ab044",
+        "title": "인천 연희유치원 식목일 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWu6L0Hk7u_/",
+        "source": "other",
+        "sourceName": "Instagram · 연희유치원",
+        "snippet": "연희유치원 계정에서 4월 5일 식목일과 나무의 소중함을 떠올리는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "arbor-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "016f8721",
+        "structuredFields": {
+          "kindergartenName": "연희유치원",
+          "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWu6L0Hk7u_%22+%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "연희유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWu6L0Hk7u_/",
+          "normalizedUrl": "www.instagram.com/reel/dwu6l0hk7u_",
+          "normalizedText": "인천 연희유치원 식목일 instagram reel 연희유치원 계정에서 4월 5일 식목일과 나무의 소중함을 떠올리는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "016f8721",
+          "extractedAt": "2026-07-02T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "연희유치원",
+            "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWu6L0Hk7u_%22+%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "연희유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 기관명이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-63c0a28a",
+        "kindergartenId": "1ecec08d-00d6-b044-e053-0a32095ab044",
+        "kindergartenName": "연희유치원",
+        "title": "인천 서구 연희유치원 농장견학 무뽑기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/CWnNoN2FDt4/",
+        "source": "other",
+        "sourceName": "Instagram · 연희유치원",
+        "snippet": "연희유치원 계정 게시물 검색 결과에서 2022 연희유치원 농장견학, 무뽑기, 유치원 농장에서 직접 뽑아온 무로 깍두기 만들기 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm-field-trip",
+          "harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "63c0a28a",
+        "structuredFields": {
+          "kindergartenName": "연희유치원",
+          "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CWnNoN2FDt4%22%20%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%B4%EB%BD%91%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "연희유치원은 로컬 원장부에서 단일 명칭이며 인천 서구 탁옥로 계정 프로필 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/CWnNoN2FDt4/",
+          "normalizedUrl": "www.instagram.com/reel/cwnnon2fdt4",
+          "normalizedText": "인천 서구 연희유치원 농장견학 무뽑기 instagram reel 연희유치원 계정 게시물 검색 결과에서 2022 연희유치원 농장견학, 무뽑기, 유치원 농장에서 직접 뽑아온 무로 깍두기 만들기 단서가 확인된다.",
+          "htmlSnapshotHash": "63c0a28a",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "연희유치원",
+            "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CWnNoN2FDt4%22%20%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%B4%EB%BD%91%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "연희유치원은 로컬 원장부에서 단일 명칭이며 인천 서구 탁옥로 계정 프로필 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7cb08ad1",
+        "kindergartenId": "1ecec08d-00d6-b044-e053-0a32095ab044",
+        "kindergartenName": "연희유치원",
+        "title": "인천 서구 연희유치원 농장견학 상추뽑기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DILQwqUTXZq/",
+        "source": "other",
+        "sourceName": "Instagram · 연희유치원",
+        "snippet": "연희유치원 계정 게시물 검색 결과에서 5살 소망반 첫 견학 활동, 유치원 농장 상추뽑기 농장견학 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm-field-trip",
+          "harvest"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7cb08ad1",
+        "structuredFields": {
+          "kindergartenName": "연희유치원",
+          "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DILQwqUTXZq%22%20%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EB%BD%91%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "연희유치원은 로컬 원장부에서 단일 명칭이며 인천 서구 탁옥로 계정 프로필 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DILQwqUTXZq/",
+          "normalizedUrl": "www.instagram.com/reel/dilqwqutxzq",
+          "normalizedText": "인천 서구 연희유치원 농장견학 상추뽑기 instagram reel 연희유치원 계정 게시물 검색 결과에서 5살 소망반 첫 견학 활동, 유치원 농장 상추뽑기 농장견학 단서가 확인된다.",
+          "htmlSnapshotHash": "7cb08ad1",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "연희유치원",
+            "kindergartenAddress": "인천광역시 서구 탁옥로85번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DILQwqUTXZq%22%20%22%EC%97%B0%ED%9D%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EB%BD%91%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "연희유치원은 로컬 원장부에서 단일 명칭이며 인천 서구 탁옥로 계정 프로필 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fc7d-b044-e053-0a32095ab044": [
@@ -228,21 +929,243 @@
         "date": "2025-12-29",
         "collectedAt": "2026-02-18T06:13:58.249Z",
         "relevanceScore": 2
+      },
+      {
+        "id": "rev-03145bb2",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "인천 서구 아림유치원 5살 수료식",
+        "url": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224192381240",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "형님반에 간다네 노래를 열심히 부르더니수료식에서 때창부르는 5살 형님들 귀여워❤️아가들 유치원에 온다고 형아인 내가 아기들 지켜줄 꺼라는 로니ㅋㅋㅋ기엽다 ㅋㅋㅋ 책 소독도 척척하는 형아들 “친구야 여기너무 이뻐 앉아봐!”엄마 사진찍어주세요!하는 로니 어린이집 부터 5살 6살 반도 같이된 자매둥이 로니가 정말 좋아하는 친구들이라 다행인가 싶고로니랑 같은반 안되서 서운해 하는 친구들도 있고서로...",
+        "summary": "형님반에 간다네 노래를 열심히 부르더니수료식에서 때창부르는 5살 형님들 귀여워❤️아가들 유치원에 온다고 형아인 내가 아기들 지켜줄 꺼라는 로니ㅋㅋㅋ기엽다 ㅋㅋㅋ 책 소독도 척척하는 형아들 “친구야 여기너무 이뻐 앉아봐!”엄마 사진찍어주세요!하는 로니 어린이집 부터 5살 6살 반도 같이된 자매둥이 로니가 정말 좋아하는 친구들이라 다행인가 싶고로니랑 같은반 안되서 서운해 하는 친구들도 있고서로 아쉬워하는 귀요미들이다 사는 지역끼리 반편성이 되면 3년 내내 같은친구들이라이번에는 아예 반평성이 뒤바뀌어 버렸다고 한다 수료식이 끝나고 새로운 반으로 척척 가서 새로운 담임 선생님이랑 이야기도 하고 로니는 아림유치원 선생님을 다 알고있는데전 형님 은...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:39:37.303Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "59950b66",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224192381240",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=love105124&logno=224192381240",
+          "normalizedText": "인천 서구 아림유치원 5살 수료식 조기품절 이슈 팔이 얇은아이라 뉴발 토시가 죽죽내려가서 거부 쿨링 얇는 긴팔위에 반팔 입혀보내면 모기도 안물리고 딱좋다 뉴발530을 너무 좋아하는 아이라 매년 사이즈 업 해서 사주는데 바로 더러워져서 감당불가라 두켤래 사서 번갈아 신겨 보내는중 #인천서구아림유치원 #인천아림유치원 #아림유치원수료식 #6살아림유치원 #인천아림유치원활동 #인천유치원 형님반에 간다네 노래를 열심히 부르더니수료식에서 때창부르는 5살 형님들 귀여워❤️아가들 유치원에 온다고 형아인 내가 아기들 지켜줄 꺼라는 로니ㅋㅋㅋ기엽다 ㅋㅋㅋ 책 소독도 척척하는 형아들 “친구야 여기너무 이뻐 앉아봐!”엄마 사진찍어주세요!하는 로니 어린이집 부터 5살 6살 반도 같이된 자매둥이 로니가 정말 좋아하는 친구들이라 다행인가 싶고로니랑 같은반 안되서 서운해 하는 친구들도 있고서로... 형님반에 간다네 노래를 열심히 부르더니수료식에서 때창부르는 5살 형님들 귀여워❤️아가들 유치원에 온다고 형아인 내가 아기들 지켜줄 꺼라는 로니ㅋㅋㅋ기엽다 ㅋㅋㅋ 책 소독도 척척하는 형아들 “친구야 여기너무 이뻐 앉아봐!”엄마 사진찍어주세요!하는 로니 어린이집 부터 5살 6살 반도 같이된 자매둥이 로니가 정말 좋아하는 친구들이라 다행인가 싶고로니랑 같은반 안되서 서운해 하는 친구들도 있고서로 아쉬워하는 귀요미들이다 사는 지역끼리 반편성이 되면 3년 내내 같은친구들이라이번에는 아예 반평성이 뒤바뀌어 버렸다고 한다 수료식이 끝나고 새로운 반으로 척척 가서 새로운 담임 선생님이랑 이야기도 하고 로니는 아림유치원 선생님을 다 알고있는데전 형님 은... 형님반에 간다네 노래를 열심히 부르더니수료식에서 때창부르는 5살 형님들 귀여워❤️아가들 유치원에 온다고 형아인 내가 아기들 지켜줄 꺼라는 로니ㅋㅋㅋ기엽다 ㅋㅋㅋ 책 소독도 척척하는 형아들 “친구야 여기너무 이뻐 앉아봐!”엄마 사진찍어주세요!하는 로니 어린이집 부터 5살 6살 반도 같이된 자매둥이 로니가 정말 좋아하는 친구들이라 다행인가 싶고로니랑 같은반 안되서 서운해 하는 친구들도 있고서로 아쉬워하는 귀요미들이다 사는 지역끼리 반편성이 되면 3년 내내 같은친구들이라이번에는 아예 반평성이 뒤바뀌어 버렸다고 한다 수료식이 끝나고 새로운 반으로 척척 가서 새로운 담임 선생님이랑 이야기도 하고 로니는 아림유치원 선생님을 다 알고있는데전 형님 은하수반 선생님이 꽃내음반 담임 선생님이 되었다고 하니 좋다고한다🤭 2층 형님반으로 가는길 형님반 화장실 깨끗 ❤️1년동안 예의범절 혼자 스스로 할수 잇었던건나도 아이가 스스로 할수 있도록 노력을 많이했고 유치원에서 스스로 할수있어요 모토가 가장 큰것같다😊입학 초기땐 처음엔 정말 힘들었는데1년을 다녀보니 장점이 더 많은 유치원😊이제 봄이니 여름대비 블랙야크 쿨링긴팔 미리 쟁여놔야겠다 여름에 절대못삼 조기품절 이슈팔이 얇은아이라 뉴발 토시가 죽죽내려가서 거부쿨링 얇는 긴팔위에 반팔 입혀보내면 모기도 안물리고 딱좋다😊뉴발530을 너무 좋아하는 아이라 매년 사이즈 업 해서 사주는데 바로 더러워져서 감당불가라 두켤래 사서 번갈아 신겨 보내는중🥰#인천서구아림유치원 #인천아림유치원 #아림유치원수료식#6살아림유치원 #인천아림유치원활동 #인천유치원",
+          "htmlSnapshotHash": "59950b66",
+          "extractedAt": "2026-06-26T07:39:37.303Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-dc273a9c",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "인천 서구 아림 유치원 일상",
+        "url": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224050324173",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "드디어 가을이 왔다🍂🍁🪾🍂🍁덥지 않아서 야외 활동이 너무 좋은 아들❤️아이들을 안전하게 인솔해 주시는 담임 선생님🥹밴드에 사진이 올라오는 날은 정해져 있지 않다입학하기 전 유치원은 사진이 없다고 해서 아쉬웠는데우리 아림 유치원은 숲 활동 자연학습장일상 사진을 올려주시는데 얼마나 감사한지😙아이들 생일날에는 친구들의 선물 전달식 사진 또는 생일인 친구 단독으로 정성스럽게 사진을 찍어...",
+        "summary": "드디어 가을이 왔다🍂🍁🪾🍂🍁덥지 않아서 야외 활동이 너무 좋은 아들❤️아이들을 안전하게 인솔해 주시는 담임 선생님🥹밴드에 사진이 올라오는 날은 정해져 있지 않다입학하기 전 유치원은 사진이 없다고 해서 아쉬웠는데우리 아림 유치원은 숲 활동 자연학습장일상 사진을 올려주시는데 얼마나 감사한지😙아이들 생일날에는 친구들의 선물 전달식 사진 또는 생일인 친구 단독으로 정성스럽게 사진을 찍어서 올려주신다아침에는 맨투맨 플리스+조끼가 딱 적당한 듯춥다고 해서 오리털 입혀 보냈더니등 하원 셔틀버스 너무 덥다고 해서 내일은 솜 패딩 입혀보내기🤭#아림유치원일상 #인천서구아림유치원#아림유치원일상 #아림유치원인천 #다섯살유치원 #다섯살아림유치원",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:39:37.530Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "d19e7b7f",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224050324173",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=love105124&logno=224050324173",
+          "normalizedText": "인천 서구 아림 유치원 일상 인천 서구 아림 유치원 일상 드디어 가을이 왔다🍂🍁🪾🍂🍁덥지 않아서 야외 활동이 너무 좋은 아들❤️아이들을 안전하게 인솔해 주시는 담임 선생님🥹밴드에 사진이 올라오는 날은 정해져 있지 않다입학하기 전 유치원은 사진이 없다고 해서 아쉬웠는데우리 아림 유치원은 숲 활동 자연학습장일상 사진을 올려주시는데 얼마나 감사한지😙아이들 생일날에는 친구들의 선물 전달식 사진 또는 생일인 친구 단독으로 정성스럽게 사진을 찍어... 드디어 가을이 왔다🍂🍁🪾🍂🍁덥지 않아서 야외 활동이 너무 좋은 아들❤️아이들을 안전하게 인솔해 주시는 담임 선생님🥹밴드에 사진이 올라오는 날은 정해져 있지 않다입학하기 전 유치원은 사진이 없다고 해서 아쉬웠는데우리 아림 유치원은 숲 활동 자연학습장일상 사진을 올려주시는데 얼마나 감사한지😙아이들 생일날에는 친구들의 선물 전달식 사진 또는 생일인 친구 단독으로 정성스럽게 사진을 찍어서 올려주신다아침에는 맨투맨 플리스+조끼가 딱 적당한 듯춥다고 해서 오리털 입혀 보냈더니등 하원 셔틀버스 너무 덥다고 해서 내일은 솜 패딩 입혀보내기🤭#아림유치원일상 #인천서구아림유치원#아림유치원일상 #아림유치원인천 #다섯살유치원 #다섯살아림유치원 드디어 가을이 왔다🍂🍁🪾🍂🍁덥지 않아서 야외 활동이 너무 좋은 아들❤️아이들을 안전하게 인솔해 주시는 담임 선생님🥹밴드에 사진이 올라오는 날은 정해져 있지 않다입학하기 전 유치원은 사진이 없다고 해서 아쉬웠는데우리 아림 유치원은 숲 활동 자연학습장일상 사진을 올려주시는데 얼마나 감사한지😙아이들 생일날에는 친구들의 선물 전달식 사진 또는 생일인 친구 단독으로 정성스럽게 사진을 찍어서 올려주신다아침에는 맨투맨 플리스+조끼가 딱 적당한 듯춥다고 해서 오리털 입혀 보냈더니등 하원 셔틀버스 너무 덥다고 해서 내일은 솜 패딩 입혀보내기🤭#아림유치원일상 #인천서구아림유치원#아림유치원일상 #아림유치원인천 #다섯살유치원 #다섯살아림유치원",
+          "htmlSnapshotHash": "d19e7b7f",
+          "extractedAt": "2026-06-26T07:39:37.530Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-1a3af438",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "아림숲유치원 유치원 설명회 및 5세 솔직후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=gyerong&logNo=224017544025",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요 아림유치원에 21년생 5세반(만3세) 다니고 있는 학부모입니다어느새 전쟁같았던 24년 10월이 1년지나서 22년생 아이들이 유치원에 갈 시기더라구요작년 2025년도 인천 서구 유치원 설명회를 5군데정도 갔었는데정말 완벽하게 제 맘에 들었던곳은 여기 딱 한군데였고다행히 최초합해서 지금 너무 잘 다니고있습니다!서울에서 루원시티로 온거라 유치원정보는 정말주변 엄마들에게 듣는것 뿐이었는데...",
+        "summary": "안녕하세요 아림유치원에 21년생 5세반(만3세) 다니고 있는 학부모입니다어느새 전쟁같았던 24년 10월이 1년지나서 22년생 아이들이 유치원에 갈 시기더라구요작년 2025년도 인천 서구 유치원 설명회를 5군데정도 갔었는데정말 완벽하게 제 맘에 들었던곳은 여기 딱 한군데였고다행히 최초합해서 지금 너무 잘 다니고있습니다!서울에서 루원시티로 온거라 유치원정보는 정말주변 엄마들에게 듣는것 뿐이었는데실제로 설명회를 다녀와보니 워킹맘인 저의 출퇴근상황과 도시락 등 고려했을때너무 마음에 들었던 곳이에요!저는 서구청쪽에서 7세까지 가능한 어린이집을 보내고있었는데유치원으로 진학시키고싶어서예빛, 세라, 드림, 산새소리, 새싹, 연희,다은, 한샘,경서등 정...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:39:40.640Z",
+        "relevanceScore": 14,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "b3bf381c",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=gyerong&logNo=224017544025",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=gyerong&logno=224017544025",
+          "normalizedText": "아림숲유치원 유치원 설명회 및 5세 솔직후기 42 안녕하세요 아림유치원에 21년생 5세반(만3세) 다니고 있는 학부모입니다어느새 전쟁같았던 24년 10월이 1년지나서 22년생 아이들이 유치원에 갈 시기더라구요작년 2025년도 인천 서구 유치원 설명회를 5군데정도 갔었는데정말 완벽하게 제 맘에 들었던곳은 여기 딱 한군데였고다행히 최초합해서 지금 너무 잘 다니고있습니다!서울에서 루원시티로 온거라 유치원정보는 정말주변 엄마들에게 듣는것 뿐이었는데... 안녕하세요 아림유치원에 21년생 5세반(만3세) 다니고 있는 학부모입니다어느새 전쟁같았던 24년 10월이 1년지나서 22년생 아이들이 유치원에 갈 시기더라구요작년 2025년도 인천 서구 유치원 설명회를 5군데정도 갔었는데정말 완벽하게 제 맘에 들었던곳은 여기 딱 한군데였고다행히 최초합해서 지금 너무 잘 다니고있습니다!서울에서 루원시티로 온거라 유치원정보는 정말주변 엄마들에게 듣는것 뿐이었는데실제로 설명회를 다녀와보니 워킹맘인 저의 출퇴근상황과 도시락 등 고려했을때너무 마음에 들었던 곳이에요!저는 서구청쪽에서 7세까지 가능한 어린이집을 보내고있었는데유치원으로 진학시키고싶어서예빛, 세라, 드림, 산새소리, 새싹, 연희,다은, 한샘,경서등 정... 안녕하세요 아림유치원에 21년생 5세반(만3세) 다니고 있는 학부모입니다어느새 전쟁같았던 24년 10월이 1년지나서 22년생 아이들이 유치원에 갈 시기더라구요작년 2025년도 인천 서구 유치원 설명회를 5군데정도 갔었는데정말 완벽하게 제 맘에 들었던곳은 여기 딱 한군데였고다행히 최초합해서 지금 너무 잘 다니고있습니다!서울에서 루원시티로 온거라 유치원정보는 정말주변 엄마들에게 듣는것 뿐이었는데실제로 설명회를 다녀와보니 워킹맘인 저의 출퇴근상황과 도시락 등 고려했을때너무 마음에 들었던 곳이에요!저는 서구청쪽에서 7세까지 가능한 어린이집을 보내고있었는데유치원으로 진학시키고싶어서예빛, 세라, 드림, 산새소리, 새싹, 연희,다은, 한샘,경서등 정말 많이 알아봤어요 유치원정보공개사이트에서 일일히 찾아보고위치 알아보고 우리단지 셔틀시간, 장점등 다 고려해놓고급 아림을 알게되어 가볍게 가봤던 입학설명회에서여기다! 내아이가 즐겁게 웃으며 뛰어놀곳!하며 1순위로 입학신청위임장 제출했었습니다 루원시티에서 봉오대로 기준으로 남쪽인 단지(sk1,2차, 린,대성,푸르지오 등)는 셔틀이 다니는데 북쪽인 프라디움,포레나는 25년에는개별등하원외에는 안되는것으로 알아요제 지인이 프라디움에서 지원했는데 셔틀이안되어 포기했거든요이부분은 미리 유치원에 전화해서 물어보셔야할것같아요자차로 갈때는 저희단지기준 15분정도 걸리는데셔틀버스는 각 단지를 들르기도하고 어린이보호차량은 고속도로를 못타서 일반도로로다니기때문에 30분은 잡아야할것같아요청라나 경서동으로 가는 곳도 막히면 꽤나 걸려서루원시티에서 제일 가까운곳으로 가려면다은,산새소리인것같아요!전 우선모집대상 해당되는게 없어서 사립만 알아봤습니다 아림숲유치원은 이름자체가아이들의숲이라고 하더라구요!숲유치원이라고 하고선 주1~2회만 가는곳이 아닌주5일 오전에는 모두 밖에서 활동합니다5세의 경우 체력이 부족해서주2회정도 숲을가고 3회는 자연학습장에서 활동해요6,7세로가면 더 많이 나가요!처음 들어갔을때 10월31일인데도 햇볕이 쫙 들어서 너무 따뜻한 느낌이었어요!오래된 건물이라 올드한 느낌이 있긴하지만제가 1년동안 다녀보니 원장님이여기저기 지원사업 많이 지원하셔서예산받아서 보수공사도 많이 하시더라구요!그리고 체험학습의 경우에도 지원금 받으셔서전부 무료로 다니고 있습니다! 이부분은 사실 호불호가 조금 갈리긴했어요돈을 내고서라도 뽀로로, 워터파크를 가길 원하는 분들도계셨는데 저는 저게 원장님이 바라시는 방향이구나생각했어요사실...전 놀이시설은 부모님이 아이 1대1로 케어해도눈만 떼면 다칠수있기에 단체로가면아무래도 좀 불안한감이 있더라구요전에 비와서 작은 놀이공원겸 동물원을 못간적이 있는데그곳도 사전예약으로 소규모만 받아서안전하게 우리아이들만 놀수있다고해서 기대했었는데비가 너무 쏟아져서 못갔어요 ㅠㅠ 아쉽 숲전문가 자격증을 가진 선생님들이 오랜시간 근무해오신점도 장점이었어요제가 알아봤던 유치원중 하나는1년~3년미만 근무자가 많아서 제외했거든요5세반은 1반2담임구조이고유아교육과 대학생들이 실습으로 올때도 있어서몇주정도는 1반을 3분의 선생님이 계실때도 있었어요그선생님 떠나실때 아이가 울었어요 ㅠㅠㅠ 리플렛속에 보이는 그대로 아이들이 활동하고갤러리에서 그림공부도 하는데아이입에서 앙리마티스 얘기가 나올땐너무 신기했어요 ㅋㅋㅋ복도에 계속 그림전시가 바뀌면서 보여주신다고해요 25학년도 기준이어서 26학년도 모집인원은 다를 수 있습니다 사진속 아이들의 얼굴이 참 밝죠?이모습에 반했어요 ㅎㅎㅎ사진도 진짜 잘찍어주십니다어린이집에서는 키즈노트를 썼는데유치원에서는 네이버밴드로 사진과 알림장을공유받고있어요 원장님 댁이 유치원 뒤래요그래서 여름엔 새벽부터 자연학습장에에어바운스 설치하시고 물을 틀어놓으셔요 ㅋㅋㅋ솔직히 물놀이는 수족구때문에 걱정되는데올해 무사히 넘어갔습니다!위생관리 잘해주신것같아요~~4층에 수영장이 있다고 들었는데거기서는 안놀고 야외에서 놀아요! 아이돌봄이 있어서 맞벌이인 집은7시30분에 데려다주면되고저희단지는 등원 8시10분, 9시25분하원 4시50분으로 맞벌이하기에 시간대가 좋은편이에요!유치원 대부분 9시대라 출근시간과 맞지않아서어린이집 어쩔수없이 보내는분들도 계시고매년 시간대는 달라질 수 있지만지금의 시간대는 너무 만족스러웠습니다!이곳의 위치가 인천 서구 가좌동이다 보니같은 서구여도 청라쪽으로 학원을 다니기에는셔틀이 오지않아요그래서 직접 라이딩을 해야하기에교육적인 부분때문에 학원을 멀리 보내시는분들은다른곳 고려해보시는것도 좋을것같아요 방과후에는 메타한글, 영어, 미술및갤러리, 요리, 과학,체육등다양한 활동을해요!예전에는 숲반 공부반으로 나누었는데지금은 전부 숲반이라고하더라구요공부위주인 유치원들도 있는데 그친구들 하원하고 놀이터에서 엄청 놀다가 가더라구요아무래도 에너지해소의 시간이 더 필요한것같았어요 ㅋㅋ그렇다고 아림다니는 애들이 집에 간다는 소리는 아닙니다..얘네도 놀이터에서 또 놀다가 집가요 ㅋㅋㅋ 이사진이 되게 감동적인 사진이었는데우비입고 정말 신나게 놀아요저희 아이도 마찬가지구요!비예보가 있을때에는 항상우비와 장화를 신겨보냅니다.아림유치원에는 나쁜날씨는 없대요비가오면 비가와서 즐겁고햇빛나면 따뜻해서 즐겁고그런 모토를 원감선생님이 설명해주셨기에더욱 보내고싶었답니다! 학사일정은 이렇게 되어있고여름방학은 평일기준 6일이었고겨울방학은 아직 안해봐서 모르겠어요 긴급보육은 없어서 보낼수없어요 생일파티는 학기초에생일 당일에 할건지 월1회 친구들과 함께할건지답례품여부, 금액대,케이크등을 투표하는데올해 저희반은생일 당일, 답례품x, 5천원이하선물, 케이크준비로 하고있어요생일 당일에 하다보니한주에 2~3번 케이크를 먹을때도있어서선물도 그만큼 갑자기 준비할때도 있었어요 ㅋㅋㅋ그래도 소규모인 어린이집 다니다가유치원으로 가니 선물을 20개넘게 받아오니아이가 너무 행복해했답니다! 급식은 무상급식이고어린이집처럼 오전간식이 죽이나 빵같은건 아니어서아침에 간단히 먹이고 보내고있어요음식맛있다고 아주 싹싹 다긁어먹고 온대요ㅋㅋㅋ식판세척비없고 원에서 자체세척하시고차량비도 없습니다 24년도기준 버스노선표인데저희단지에오는 나무차는 전기버스여서에어컨 아주 빵빵하게 틀어주셔요 굿~~ 2025년도 기준아림유치원 원비는 매월 교육비 31만원을 납부하고있어요그외에 추가적으로 나가는 금액은 없고이음카드사용시 5+5%캐시백됩니다 작년도 우선모집 참고하시구요저는 올해 둘째가 태어나서 나중에 졸업생동생으로 우선모집에 가능합니다 ㅎㅎ 자연학습장의 모습이에요주로 5세아이들이 여기서놀아요해가 참 잘들어요!지금은 저기에 그늘막도 쳐져있어요지원사업으로 공사하셨다고 들었어요 ㅎㅎ 다양한 공간이 있는데다람쥐도 있고 토끼도 있어요여기가 길고 넓어서 눈오기만 기대하고있어요 ㅋㅋㅋ 여기! 진짜 좋아하더라구요 ㅋㅋㅋㅋ미니 클라이밍장그위에도 장난감들이 쭉 있어서놀거리가 정말 다양하고 많아요 필수 준비물로챙이넓은 모자, 장갑,팔토시 등이 있는데장갑은 비싼거말고 600원짜리 면장갑 어린이용으로사면 정말 신나게 놀다옵니다~~삽이랑 갈퀴같은것도 미리 사뒀는데5세는 아직 가져오라고 안하셨어요~~ 아림유치원 가방은 이렇게 생겼구요수납공간 정말 많고 가벼워요! 저희아이가 너무너무 좋아하는 아림숲유치원숲유치원에 관심이 있으시다면 꼭 설명회 가보세요작년에는 경쟁률이 엄청 치열해서같이 넣은 엄마들 많이 떨어졌었는데2월까지 기다리니 된분들도 있었어요22년생들 화이팅입니당~~~",
+          "htmlSnapshotHash": "b3bf381c",
+          "extractedAt": "2026-06-26T07:39:40.640Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-72c8835b",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "인천 서구 아림유치원 활동",
+        "url": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224059071069",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "가을 캠핑시즌 엄마 여기에서 마시 멜로우 구어먹었어요! 스스로 처음으로 구어먹는 첫 마시멜로 자연에서 얻은 자연물로 만들기 놀이중인 아드님 버스 안전 교육 제대로 받은 5살 형아알아서 척척 안전 벨트도 잘 하구요위험할때 엉덩이로 경적울리기차에 갇혔을때 버튼누르기안전 위주로 교육을 많이 해주셔서너~무 만족 합니다^^*!셔틀 버스는 나무차 기린차 햇님차 총 3 대 운영중😀집에 가는길 횡단보도...",
+        "summary": "가을 캠핑시즌 엄마 여기에서 마시 멜로우 구어먹었어요! 스스로 처음으로 구어먹는 첫 마시멜로 자연에서 얻은 자연물로 만들기 놀이중인 아드님 버스 안전 교육 제대로 받은 5살 형아알아서 척척 안전 벨트도 잘 하구요위험할때 엉덩이로 경적울리기차에 갇혔을때 버튼누르기안전 위주로 교육을 많이 해주셔서너~무 만족 합니다^^*!셔틀 버스는 나무차 기린차 햇님차 총 3 대 운영중😀집에 가는길 횡단보도 초록불 우회전 신호 자동차에 몇번을 치일뻔한 사고가 날뻔해서 도저히 안되겠다 싶었다..반복 학습 스타트몇달을 초록불로 바뀔때 마다 하나 둘 셋 넷 다섯을 외치고 건너기 연습이젠 자동으로 엄마!숫자세고 건너야지!라는 형님너무 너무 좋은 유치원 ❤️#아림...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:39:41.995Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "c9721eb9",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=love105124&logNo=224059071069",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=love105124&logno=224059071069",
+          "normalizedText": "인천 서구 아림유치원 활동 인천 서구 아림유치원 활동 가을 캠핑시즌 엄마 여기에서 마시 멜로우 구어먹었어요! 스스로 처음으로 구어먹는 첫 마시멜로 자연에서 얻은 자연물로 만들기 놀이중인 아드님 버스 안전 교육 제대로 받은 5살 형아알아서 척척 안전 벨트도 잘 하구요위험할때 엉덩이로 경적울리기차에 갇혔을때 버튼누르기안전 위주로 교육을 많이 해주셔서너~무 만족 합니다^^*!셔틀 버스는 나무차 기린차 햇님차 총 3 대 운영중😀집에 가는길 횡단보도... 가을 캠핑시즌 엄마 여기에서 마시 멜로우 구어먹었어요! 스스로 처음으로 구어먹는 첫 마시멜로 자연에서 얻은 자연물로 만들기 놀이중인 아드님 버스 안전 교육 제대로 받은 5살 형아알아서 척척 안전 벨트도 잘 하구요위험할때 엉덩이로 경적울리기차에 갇혔을때 버튼누르기안전 위주로 교육을 많이 해주셔서너~무 만족 합니다^^*!셔틀 버스는 나무차 기린차 햇님차 총 3 대 운영중😀집에 가는길 횡단보도 초록불 우회전 신호 자동차에 몇번을 치일뻔한 사고가 날뻔해서 도저히 안되겠다 싶었다..반복 학습 스타트몇달을 초록불로 바뀔때 마다 하나 둘 셋 넷 다섯을 외치고 건너기 연습이젠 자동으로 엄마!숫자세고 건너야지!라는 형님너무 너무 좋은 유치원 ❤️#아림... 가을 캠핑시즌 엄마 여기에서 마시 멜로우 구어먹었어요! 스스로 처음으로 구어먹는 첫 마시멜로 자연에서 얻은 자연물로 만들기 놀이중인 아드님 버스 안전 교육 제대로 받은 5살 형아알아서 척척 안전 벨트도 잘 하구요위험할때 엉덩이로 경적울리기차에 갇혔을때 버튼누르기안전 위주로 교육을 많이 해주셔서너~무 만족 합니다^^*!셔틀 버스는 나무차 기린차 햇님차 총 3 대 운영중😀집에 가는길 횡단보도 초록불 우회전 신호 자동차에 몇번을 치일뻔한 사고가 날뻔해서 도저히 안되겠다 싶었다..반복 학습 스타트몇달을 초록불로 바뀔때 마다 하나 둘 셋 넷 다섯을 외치고 건너기 연습이젠 자동으로 엄마!숫자세고 건너야지!라는 형님너무 너무 좋은 유치원 ❤️#아림유치원 #인천아림유치원 #인천서구아림유치원#숲유치원 #아림숲유치원",
+          "htmlSnapshotHash": "c9721eb9",
+          "extractedAt": "2026-06-26T07:39:41.995Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-ed6c73f3",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "인천 서구 아림유치원 26학년도 입학설명회 Instagram",
+        "url": "https://www.instagram.com/reel/DQTmJNKifin/",
+        "source": "other",
+        "sourceName": "Instagram · 아림유치원",
+        "snippet": "arimkids 계정에서 26학년도 아림유치원 입학설명회 홍보영상과 인천 가좌동, 숲유치원, 놀이로 자라는 아이들 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "info-session"
+        ],
+        "date": "2025-10-27",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "72cd23f0",
+        "structuredFields": {
+          "kindergartenName": "아림유치원",
+          "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+arimkids+%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQTmJNKifin/",
+          "normalizedUrl": "www.instagram.com/reel/dqtmjnkifin",
+          "normalizedText": "인천 서구 아림유치원 26학년도 입학설명회 instagram arimkids 계정에서 26학년도 아림유치원 입학설명회 홍보영상과 인천 가좌동, 숲유치원, 놀이로 자라는 아이들 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "72cd23f0",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+arimkids+%EC%95%84%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6f45fb3b",
+        "kindergartenId": "1ecec08c-fc7d-b044-e053-0a32095ab044",
+        "title": "인천 서구 아림유치원 입학설명회 안내 Instagram",
+        "url": "https://www.instagram.com/reel/DPNcHCJD7N1/",
+        "source": "other",
+        "sourceName": "Instagram · 아림유치원",
+        "snippet": "arimkids 계정에서 아림유치원으로 어서오라는 입학설명회 안내와 가좌동유치원·숲유치원 해시태그가 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "info-session"
+        ],
+        "date": "2025-09-29",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "47b49caf",
+        "structuredFields": {
+          "kindergartenName": "아림유치원",
+          "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPNcHCJD7N1%22+%22arimkids%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPNcHCJD7N1/",
+          "normalizedUrl": "www.instagram.com/reel/dpnchcjd7n1",
+          "normalizedText": "인천 서구 아림유치원 입학설명회 안내 instagram arimkids 계정에서 아림유치원으로 어서오라는 입학설명회 안내와 가좌동유치원·숲유치원 해시태그가 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "47b49caf",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "아림유치원",
+            "kindergartenAddress": "인천광역시 서구 장고개로 375-11",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPNcHCJD7N1%22+%22arimkids%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f915-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-3617-59sv",
-        "kindergartenId": "1ecec08c-f915-b044-e053-0a32095ab044",
-        "title": "인천 청라 유치원 졸업식장식, 아이들의 첫 무대를 디자인하다...",
-        "url": "https://blog.naver.com/metajoy_balloon/224138313617",
-        "source": "naver_blog",
-        "sourceName": "메타파티의 블로그",
-        "snippet": "#졸업식장식 #유치원졸업식 #청라유치원졸업식 #인천서구파티 #청라메타파티 #인천파티장식... 담당자 분들의 후기 “아이들이 너무 좋아했어요. 풍선 장식이 정말 고급스럽고 깔끔했어요.”...",
-        "date": "2026-01-07",
-        "collectedAt": "2026-02-18T06:13:58.249Z",
-        "relevanceScore": 2
-      },
       {
         "id": "rev-0748-5520",
         "kindergartenId": "1ecec08c-f915-b044-e053-0a32095ab044",
@@ -290,6 +1213,47 @@
         "snippet": "솔향기1761 리뷰 853사진 13 선생님들 친절하고 아이들 잘보살펴주고 아주좋아요. 1번째 방문",
         "date": "2022-09-30",
         "collectedAt": "2026-04-05T15:28:31.981Z"
+      },
+      {
+        "id": "rev-74dc00f9",
+        "kindergartenId": "1ecec08c-f461-b044-e053-0a32095ab044",
+        "kindergartenName": "아이사랑유치원",
+        "title": "인천 검암 아이사랑유치원 미니 도서관 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DSWziCeicf4/",
+        "source": "other",
+        "sourceName": "Instagram · 검암아이사랑유치원",
+        "snippet": "Instagram 검색 결과에서 검암아이사랑유치원 미니 도서관과 검암동 지역 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "library",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "아이사랑유치원",
+          "kindergartenAddress": "인천광역시 서구 도요지로201번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSWziCeicf4%22+%22%EA%B2%80%EC%95%94%EC%95%84%EC%9D%B4%EC%82%AC%EB%9E%91%22+%22%EB%AF%B8%EB%8B%88+%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DSWziCeicf4/",
+          "regionEvidence": [
+            "검암아이사랑",
+            "검암동",
+            "인천광역시 서구 도요지로201번길 12"
+          ]
+        },
+        "evidenceChecksum": "9f475842"
       }
     ],
     "1ecec08d-0159-b044-e053-0a32095ab044": [
@@ -325,6 +1289,40 @@
         "snippet": "리뷰 1,905팔로워 1 1번째 방문 예지유치원 감사합니다^^ 좋은 하루 보내세요^^",
         "date": "2021-08-15",
         "collectedAt": "2026-04-05T15:29:16.737Z"
+      },
+      {
+        "id": "rev-21528082",
+        "kindergartenId": "1ecec08d-0159-b044-e053-0a32095ab044",
+        "title": "인천 서구 검단 예지유치원 볼풀놀이",
+        "url": "https://blog.naver.com/PostView.naver?blogId=lcikdy&logNo=223512546231",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "아이들이 기다려온 스페셜데이!이번 달에는 볼풀놀이를 즐겼어요.유아기에 사회성, 신체발달과 함께우정이 깊어가는 친구들!사랑하는 선생님! 함께 뒹굴고 놀이하며신나고 즐거운 시간을 보냈어요.아이들이 볼풀놀이에 몰입하며시간 가는 줄 모르고즐기는 영상을 올립니다!",
+        "summary": "아이들이 기다려온 스페셜데이!이번 달에는 볼풀놀이를 즐겼어요.유아기에 사회성, 신체발달과 함께우정이 깊어가는 친구들!사랑하는 선생님! 함께 뒹굴고 놀이하며신나고 즐거운 시간을 보냈어요.아이들이 볼풀놀이에 몰입하며시간 가는 줄 모르고즐기는 영상을 올립니다!",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:38:05.232Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "1eb19b28",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=lcikdy&logNo=223512546231",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=lcikdy&logno=223512546231",
+          "normalizedText": "인천 서구 검단 예지유치원 볼풀놀이 아이들이 기다려온 스페셜데이! 이번 달에는 볼풀놀이를 즐겼어요. 유아기에 사회성, 신체발달과 함께 우정이 깊어가는 친구들! 사랑하는 선생님! 함께 뒹굴고 놀이하며 신나고 즐거운 시간을 보냈어요. 아이들이 볼풀놀이에 몰입하며 시간 가는 줄 모르고 즐기는 영상을 올립니다! 아이들이 기다려온 스페셜데이!이번 달에는 볼풀놀이를 즐겼어요.유아기에 사회성, 신체발달과 함께우정이 깊어가는 친구들!사랑하는 선생님! 함께 뒹굴고 놀이하며신나고 즐거운 시간을 보냈어요.아이들이 볼풀놀이에 몰입하며시간 가는 줄 모르고즐기는 영상을 올립니다! 아이들이 기다려온 스페셜데이!이번 달에는 볼풀놀이를 즐겼어요.유아기에 사회성, 신체발달과 함께우정이 깊어가는 친구들!사랑하는 선생님! 함께 뒹굴고 놀이하며신나고 즐거운 시간을 보냈어요.아이들이 볼풀놀이에 몰입하며시간 가는 줄 모르고즐기는 영상을 올립니다! 아이들이 기다려온 스페셜데이!이번 달에는 볼풀놀이를 즐겼어요.유아기에 사회성, 신체발달과 함께우정이 깊어가는 친구들!사랑하는 선생님! 함께 뒹굴고 놀이하며신나고 즐거운 시간을 보냈어요.아이들이 볼풀놀이에 몰입하며시간 가는 줄 모르고즐기는 영상을 올립니다!",
+          "htmlSnapshotHash": "1eb19b28",
+          "extractedAt": "2026-06-26T07:38:05.232Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%98%88%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "예지유치원",
+            "kindergartenAddress": "인천광역시 서구 검단로 836",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%98%88%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
     "1ecec08c-f3a1-b044-e053-0a32095ab044": [
@@ -371,8 +1369,1407 @@
         "snippet": "리뷰 4 아이를 맡기기 전 여러 곳을 둘러봤는데, 바다유치원은 교실이 정말 환하고 선생님들께서 아이 한 명 한 명에게 애정을 쏟아주시는 게 느껴졌어요. 놀이 중심 교육이 아이의 흥미를 끌면서 자연스럽게 배움으로 이어지도록 돕는 점이 좋았습니다. 더보기 3.27.금 1번째 방문",
         "date": "2026-03-27",
         "collectedAt": "2026-04-05T15:28:39.034Z"
+      },
+      {
+        "id": "rev-eee1d46d",
+        "kindergartenId": "1ecec08c-f3a1-b044-e053-0a32095ab044",
+        "title": "인천 바다유치원 SNS 프로필",
+        "url": "https://www.instagram.com/badakindergarten/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "바다유치원 프로필에서 전화 032-583-0091 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 바다유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "바다유치원 프로필에서 전화 032-583-0091 문맥이 확인되는 Instagram 검색 결과다. 바다유치원 동명이 있어 인천 서구 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.990Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "eac98bac",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22badakindergarten%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 서구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/badakindergarten/",
+          "normalizedUrl": "www.instagram.com/badakindergarten",
+          "normalizedText": "인천 바다유치원 sns 프로필 바다유치원 프로필에서 전화 032-583-0091 문맥이 확인되는 instagram 검색 결과. 인천 서구 바다유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "eac98bac",
+          "extractedAt": "2026-06-30T23:59:59.990Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22badakindergarten%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 서구 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.990Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e29358ef",
+        "kindergartenId": "1ecec08c-f3a1-b044-e053-0a32095ab044",
+        "title": "인천 바다유치원 입학안내 SNS",
+        "url": "https://www.instagram.com/p/DPuyrkgkphK/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "바다유치원 입학안내와 전화 032-583-0091 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 바다유치원의 입학안내 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "바다유치원 입학안내와 전화 032-583-0091 문맥이 확인되는 Instagram 검색 결과다. 기존 프로필과 다른 게시물 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.990Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cdb3a937",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPuyrkgkphK%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPuyrkgkphK/",
+          "normalizedUrl": "www.instagram.com/p/dpuyrkgkphk",
+          "normalizedText": "인천 바다유치원 입학안내 sns 바다유치원 입학안내와 전화 032-583-0091 문맥이 확인되는 instagram 검색 결과. 인천 서구 바다유치원의 입학안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "cdb3a937",
+          "extractedAt": "2026-06-30T23:59:59.990Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPuyrkgkphK%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.990Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a73ae3f6",
+        "kindergartenId": "1ecec08c-f3a1-b044-e053-0a32095ab044",
+        "title": "인천 바다유치원 활동 SNS",
+        "url": "https://www.instagram.com/p/DA7y9tJy7Is/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "바다유치원 계정의 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 바다유치원의 활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "바다유치원 계정의 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과다. 인천 서구 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.990Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "156dbe8d",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DA7y9tJy7Is%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DA7y9tJy7Is/",
+          "normalizedUrl": "www.instagram.com/p/da7y9tjy7is",
+          "normalizedText": "인천 바다유치원 활동 sns 바다유치원 계정의 활동 게시물과 기관명 문맥이 확인되는 instagram 검색 결과. 인천 서구 바다유치원의 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "156dbe8d",
+          "extractedAt": "2026-06-30T23:59:59.990Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DA7y9tJy7Is%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-583-0091%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.990Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cf9439d1",
+        "kindergartenId": "1ecec08c-f3a1-b044-e053-0a32095ab044",
+        "title": "인천 루원시티 바다유치원 독서유치원 Reel",
+        "url": "https://www.instagram.com/reel/DLd2renSUUh/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "Instagram Reels 검색 결과에서 바다유치원, 루원시티, 독서유치원과 책과 사랑에 빠지는 첫 순간 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "reading-activity",
+          "literacy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "c2523b5c",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLd2renSUUh%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%85%EC%84%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLd2renSUUh/",
+          "normalizedUrl": "www.instagram.com/reel/dld2rensuuh",
+          "normalizedText": "인천 루원시티 바다유치원 독서유치원 reel instagram reels 검색 결과에서 바다유치원, 루원시티, 독서유치원과 책과 사랑에 빠지는 첫 순간 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c2523b5c",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLd2renSUUh%22+%22%EB%B0%94%EB%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8F%85%EC%84%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-37e7dd65",
+        "kindergartenId": "1ecec08c-f3a1-b044-e053-0a32095ab044",
+        "title": "인천 서구 바다유치원 독서왕 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DDo5q2PSCbW/",
+        "source": "other",
+        "sourceName": "Instagram · 바다유치원",
+        "snippet": "Instagram 검색 결과에서 badakindergarten 계정의 바다유치원 독서왕 활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "reading",
+          "literacy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "f5365a0c",
+        "structuredFields": {
+          "kindergartenName": "바다유치원",
+          "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDo5q2PSCbW%22+%22badakindergarten%22+%22%EB%8F%85%EC%84%9C%EC%99%95%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDo5q2PSCbW/",
+          "normalizedUrl": "www.instagram.com/reel/ddo5q2pscbw",
+          "normalizedText": "인천 서구 바다유치원 독서왕 instagram reel instagram 검색 결과에서 badakindergarten 계정의 바다유치원 독서왕 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "f5365a0c",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "바다유치원",
+            "kindergartenAddress": "인천광역시 서구 염곡로311번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDo5q2PSCbW%22+%22badakindergarten%22+%22%EB%8F%85%EC%84%9C%EC%99%95%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-07a7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0619cd93",
+        "kindergartenId": "1ecec08d-07a7-b044-e053-0a32095ab044",
+        "title": "인천 희망찬유치원 5세반 여름 현장학습 이야기❤",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sina1310&logNo=223984479146",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "인천 서구 희망찬유치원5세(만3세반)현장학습 분위기와신나는 여름 물놀이 사진♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리에오 ( •◡-)✧오늘 포스팅은 오랜만에 우리 꼬맹이가 다니고있는희망찬유치원 견학 이야기를 해볼까 합니다♥벌써 여름 방학이 끝나고,2학기가 시작되었어요하아 여름방학 2주,, 너무 길었습니다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ참고로 희망찬유치원...",
+        "summary": "인천 서구 희망찬유치원5세(만3세반)현장학습 분위기와신나는 여름 물놀이 사진♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리에오 ( •◡-)✧오늘 포스팅은 오랜만에 우리 꼬맹이가 다니고있는희망찬유치원 견학 이야기를 해볼까 합니다♥벌써 여름 방학이 끝나고,2학기가 시작되었어요하아 여름방학 2주,, 너무 길었습니다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ참고로 희망찬유치원 여름방학은 2주 이며한 주는 완전히 쉬고,나머지 한 주는 돌봄 가능!하지만 차량은 지원 안 해요 바로 어제 다녀온, 따끈따끈한 유치원 현장학습 사진♥우리 쪼꼬미와 키위반 친구들은부평 꿈나무 교통나라에서교통규칙을 배워보는 시간을 가졌어요!현장학습, 견학...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:30:20.694Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "07145f81",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sina1310&logNo=223984479146",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sina1310&logno=223984479146",
+          "normalizedText": "인천 희망찬유치원 5세반 여름 현장학습 이야기❤ 28 인천 서구 희망찬유치원5세(만3세반)현장학습 분위기와신나는 여름 물놀이 사진♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리에오 ( •◡-)✧오늘 포스팅은 오랜만에 우리 꼬맹이가 다니고있는희망찬유치원 견학 이야기를 해볼까 합니다♥벌써 여름 방학이 끝나고,2학기가 시작되었어요하아 여름방학 2주,, 너무 길었습니다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ참고로 희망찬유치원... 인천 서구 희망찬유치원5세(만3세반)현장학습 분위기와신나는 여름 물놀이 사진♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리에오 ( •◡-)✧오늘 포스팅은 오랜만에 우리 꼬맹이가 다니고있는희망찬유치원 견학 이야기를 해볼까 합니다♥벌써 여름 방학이 끝나고,2학기가 시작되었어요하아 여름방학 2주,, 너무 길었습니다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ참고로 희망찬유치원 여름방학은 2주 이며한 주는 완전히 쉬고,나머지 한 주는 돌봄 가능!하지만 차량은 지원 안 해요 바로 어제 다녀온, 따끈따끈한 유치원 현장학습 사진♥우리 쪼꼬미와 키위반 친구들은부평 꿈나무 교통나라에서교통규칙을 배워보는 시간을 가졌어요!현장학습, 견학... 인천 서구 희망찬유치원5세(만3세반)현장학습 분위기와신나는 여름 물놀이 사진♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리에오 ( •◡-)✧오늘 포스팅은 오랜만에 우리 꼬맹이가 다니고있는희망찬유치원 견학 이야기를 해볼까 합니다♥벌써 여름 방학이 끝나고,2학기가 시작되었어요하아 여름방학 2주,, 너무 길었습니다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ참고로 희망찬유치원 여름방학은 2주 이며한 주는 완전히 쉬고,나머지 한 주는 돌봄 가능!하지만 차량은 지원 안 해요 바로 어제 다녀온, 따끈따끈한 유치원 현장학습 사진♥우리 쪼꼬미와 키위반 친구들은부평 꿈나무 교통나라에서교통규칙을 배워보는 시간을 가졌어요!현장학습, 견학, 물놀이 등 이벤트가 있는 날엔담임 선생님이 유치원 카페에바로바로 올려주시는데사진 구경하는 재미가 아주 쏠쏠합니다 카메라 의식하는 우리집 쪼꼬미앞을 보거라!ㅋㅋㅋㅋㅋㅋㅋㅋㅋ 자세가 아주 거만하셔서사진을 보자마자 뿜었음ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ선생님,첫 사랑 이야기 좀 해주시죠!라고 할 것 같음 집중하는 사진도 있음♥ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 유치원에서 물놀이도 참 많이 했어요!우리 쪼꼬미가 아침 마다 오늘은 수영복 안 입고 가냐며또 물놀이 하고싶다고 징징징 - 했을 정도ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 푹푹찌는 여름이 오기전 다녀온현장학습 사진인데키위반 여자친구들 단체사진너무너무너무 귀엽 ( ͡o ͜ʖ ͡o)♥짧막짧막한 종아리들이완전 킬포. 아직 나에겐 작고 소중한 5짤인데밖에서는 나름 언니처럼 잘 생활하는 모습에엄마는 뿌듯하구나ㅋㅋㅋㅋㅋ 삐에로 모자쓰고 표정은 매우 근엄ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 모자이크 처리 하느라 힘들어서 손가락 하나 잃을 뻔 했어요 이 사진은 유치원 강당에서마술을 하던 날 인 것 같은데집으로 돌아와 마술 이야기를 엄청 많이했어요..귀에서 피날뻔 했어요 이 날은 벌레를 많이봤다며너무 싫어했음ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 현장학습 가는날, 도시락을 싸야하는 날이 한 번 있었는데엄마표 김밥을 너무나 맛있게 잘 먹는 사진 발견♥♥ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 아침 마다 신나게 유치원 가는 모습♥이 모습을 찍으려고유치원 버스문에 팔이 낀적도 있는나란 엄마 극성 엄마 ٩(ꔷ̑◡ꔷ̑ )و..ㅋㅋㅋㅋㅋㅋㅋㅋㅋ이렇게 유치원 생활 사진을 모아보니처음 입학했을때 모습 보다아이들이 많이 성장했음을 느끼네요 함께보면 좋은 포스팅희망찬유치원 2차 오티 인천 희망찬유치원 만 3세반 입학 2차 오티 다녀왔어요 우리 쪼꼬미 어린이집에서 유치원으로 레벨업! 인천 희망찬유치원 입학식♥ 안녕하세요 네이버 인플루언서 ... blog.naver.com",
+          "htmlSnapshotHash": "07145f81",
+          "extractedAt": "2026-06-26T07:30:20.694Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "희망찬유치원",
+            "kindergartenAddress": "인천광역시 서구 단봉로139번길 3-2",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-f232fdbc",
+        "kindergartenId": "1ecec08d-07a7-b044-e053-0a32095ab044",
+        "title": "인천 희망찬유치원 만 3세반 입학 2차 오티 다녀왔어요",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sina1310&logNo=223777213481",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "우리 쪼꼬미 어린이집에서유치원으로 레벨업!인천 희망찬유치원 입학식♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리 입니다 ( •◡-)✧ 오늘 신블리의 포스팅은요우리 쪼꼬미가 3월 부터 다니게될인천 서구 희망찬유치원 2차 오티에 다녀왔어요!원하던 유치원은 전부 미끄러져서추가모집 하는 유치원을 열심히 알아보다그 중 가장 마음에 들었던희망찬유치원으로 입학을하게 되었습니다♥(몬테...",
+        "summary": "우리 쪼꼬미 어린이집에서유치원으로 레벨업!인천 희망찬유치원 입학식♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리 입니다 ( •◡-)✧ 오늘 신블리의 포스팅은요우리 쪼꼬미가 3월 부터 다니게될인천 서구 희망찬유치원 2차 오티에 다녀왔어요!원하던 유치원은 전부 미끄러져서추가모집 하는 유치원을 열심히 알아보다그 중 가장 마음에 들었던희망찬유치원으로 입학을하게 되었습니다♥(몬테소리, 패드수업이 없다는게가장 마음에 들었고우리 아파트는 직통버스가 있다는것도 매우 좋았음) 여기가 바로 희망찬유치원 입니다!알록달록 누가봐도 유치원 건물 ㅋㅋㅋ 우리집 쪼꼬미신나게 유치원으로 들어가는 모습♥ 유치원 앞 마당은 넓은 편이고모래놀이하는...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:30:20.936Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "5557d2ef",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sina1310&logNo=223777213481",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sina1310&logno=223777213481",
+          "normalizedText": "인천 희망찬유치원 만 3세반 입학 2차 오티 다녀왔어요 인천 희망찬유치원 만 3세반 입학 2차 오티 다녀왔어요 우리 쪼꼬미 어린이집에서유치원으로 레벨업!인천 희망찬유치원 입학식♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리 입니다 ( •◡-)✧ 오늘 신블리의 포스팅은요우리 쪼꼬미가 3월 부터 다니게될인천 서구 희망찬유치원 2차 오티에 다녀왔어요!원하던 유치원은 전부 미끄러져서추가모집 하는 유치원을 열심히 알아보다그 중 가장 마음에 들었던희망찬유치원으로 입학을하게 되었습니다♥(몬테... 우리 쪼꼬미 어린이집에서유치원으로 레벨업!인천 희망찬유치원 입학식♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리 입니다 ( •◡-)✧ 오늘 신블리의 포스팅은요우리 쪼꼬미가 3월 부터 다니게될인천 서구 희망찬유치원 2차 오티에 다녀왔어요!원하던 유치원은 전부 미끄러져서추가모집 하는 유치원을 열심히 알아보다그 중 가장 마음에 들었던희망찬유치원으로 입학을하게 되었습니다♥(몬테소리, 패드수업이 없다는게가장 마음에 들었고우리 아파트는 직통버스가 있다는것도 매우 좋았음) 여기가 바로 희망찬유치원 입니다!알록달록 누가봐도 유치원 건물 ㅋㅋㅋ 우리집 쪼꼬미신나게 유치원으로 들어가는 모습♥ 유치원 앞 마당은 넓은 편이고모래놀이하는... 우리 쪼꼬미 어린이집에서유치원으로 레벨업!인천 희망찬유치원 입학식♥ 신블리의 러블리한 블로그 안녕하세요 네이버 인플루언서블로거 신블리 입니다 ( •◡-)✧ 오늘 신블리의 포스팅은요우리 쪼꼬미가 3월 부터 다니게될인천 서구 희망찬유치원 2차 오티에 다녀왔어요!원하던 유치원은 전부 미끄러져서추가모집 하는 유치원을 열심히 알아보다그 중 가장 마음에 들었던희망찬유치원으로 입학을하게 되었습니다♥(몬테소리, 패드수업이 없다는게가장 마음에 들었고우리 아파트는 직통버스가 있다는것도 매우 좋았음) 여기가 바로 희망찬유치원 입니다!알록달록 누가봐도 유치원 건물 ㅋㅋㅋ 우리집 쪼꼬미신나게 유치원으로 들어가는 모습♥ 유치원 앞 마당은 넓은 편이고모래놀이하는 공간도 따로 있더라구요!오티가 1시부터 시작이였는데조금 일찍 도착해 놀이터에서 단짝친구와 신나게 놀기ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 친구랑 신나게 유치원 구경도하고~♥ 여기는 우리 쪼꼬미가 1년 동안 지낼 달콤키위반 교실! 어린이집을 함께 졸업한 친구와함께 입학을 하니 서로를 알뜰살뜰 잘 챙기는 모습♥ㅋㅋㅋㅋㅋㅋㅋㅋㅋ유치원에 입학하면 제일 걱정인게아이들의 적응인데친한 친구와 함께여서 서로 의지도 되고 적응도 빠를것같아희망찬유치원에서의 생활이 기대가 됩니다 각자의 이름표를 받고, 달콤 키위반으로 배정되었다는걸 알게됨이제는 연두반이 아니고 키위반이네!! 하면서들뜬 모습을 보였어요 ㅋㅋㅋㅋ운이 좋게도 단짝 친구와 같은반이 되었네요♥ 부모님들의 오티를 위해선생님, 친구들과 함께 교실로 향하는 모습!엄마 안녕~! 다녀올께 하고씩씩하게 줄서서 이동함ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ언제 이렇게 컷지?너무나 기특하다 ( ᵕ_ᵕ̩̩ )♥♥ 2차오티는 한 시간 반 정도 진행이되었고마지막은 질문을 받는 시간을 갖으며 마무리 했답니다!우리 공주님들유치원에서도 3년동안 잘 지내보자 ٩(◕ᗜ◕)۶꼬맹이들의 즐겁고 행복한유치원 생활을 기대하며 포스팅 끝♥ 함께보면 좋은 포스팅희망찬유치원 등원버스편 인천 왕길동 희망찬유치원 입학 적응기 등원버스편 인천 희망찬유치원 입학! 새학기 적응기록 등원버스편♥ 안녕하세요 네이버 인플루언서 블로거 신블리 입니... blog.naver.com 희망찬유치원 인천광역시 서구 왕길동 403-2 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "5557d2ef",
+          "extractedAt": "2026-06-26T07:30:20.936Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "희망찬유치원",
+            "kindergartenAddress": "인천광역시 서구 단봉로139번길 3-2",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-a54e98bd",
+        "kindergartenId": "1ecec08d-07a7-b044-e053-0a32095ab044",
+        "kindergartenName": "희망찬유치원",
+        "title": "인천 희망찬유치원 단봉늘봄도서관 독서활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DI0hidAB0Go/",
+        "source": "other",
+        "sourceName": "Instagram · 희망찬유치원",
+        "snippet": "희망찬유치원 계정 게시물 검색 결과에서 단봉늘봄도서관과 그림책 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library",
+          "reading"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:54.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a54e98bd",
+        "structuredFields": {
+          "kindergartenName": "희망찬유치원",
+          "kindergartenAddress": "인천광역시 서구 단봉로139길 3-2",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DI0hidAB0Go%22%20%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%A8%EB%B4%89%EB%8A%98%EB%B4%84%EB%8F%84%EC%84%9C%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "희망찬유치원은 동명이 있으나 단봉늘봄도서관·단봉로 단서와 인천 서구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DI0hidAB0Go/",
+          "normalizedUrl": "www.instagram.com/p/di0hidab0go",
+          "normalizedText": "인천 희망찬유치원 단봉늘봄도서관 독서활동 instagram post 희망찬유치원 계정 게시물 검색 결과에서 단봉늘봄도서관과 그림책 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "a54e98bd",
+          "extractedAt": "2026-07-02T23:59:54.000Z",
+          "structuredFields": {
+            "kindergartenName": "희망찬유치원",
+            "kindergartenAddress": "인천광역시 서구 단봉로139길 3-2",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DI0hidAB0Go%22%20%22%ED%9D%AC%EB%A7%9D%EC%B0%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8B%A8%EB%B4%89%EB%8A%98%EB%B4%84%EB%8F%84%EC%84%9C%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "희망찬유치원은 동명이 있으나 단봉늘봄도서관·단봉로 단서와 인천 서구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:54.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "b4404be1-1beb-4154-8ada-4f8c37cb749e": [
+      {
+        "id": "rev-b18cb7e5",
+        "kindergartenId": "b4404be1-1beb-4154-8ada-4f8c37cb749e",
+        "title": "아라꿈 유치원 3년 재원 후 졸업 후기.",
+        "url": "https://blog.naver.com/PostView.naver?blogId=bomddalki90&logNo=224079507020",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "검단신도시 최대규모 국공립유치원 #아라꿈유치원규모가 크다보니 선발아이 명수도 많음. 인천아라꿈유치원 인천광역시 서구 당하동 산42-2 이 블로그의 체크인 이 장소의 다른 글 난 3년동안 입학하고 졸업시키기까지맞벌이 엄마로써 매우 만족한 유치원.인천 검단 내 꿈 유치원중에는 제일 큰 규모.학교종이 앱 사용.주1회 아이사진 1장 올라옴+사립 유치원들은 카페며 어플이며 사진 갯수며얘기해주시던데여기...",
+        "summary": "검단신도시 최대규모 국공립유치원 #아라꿈유치원규모가 크다보니 선발아이 명수도 많음. 인천아라꿈유치원 인천광역시 서구 당하동 산42-2 이 블로그의 체크인 이 장소의 다른 글 난 3년동안 입학하고 졸업시키기까지맞벌이 엄마로써 매우 만족한 유치원.인천 검단 내 꿈 유치원중에는 제일 큰 규모.학교종이 앱 사용.주1회 아이사진 1장 올라옴+사립 유치원들은 카페며 어플이며 사진 갯수며얘기해주시던데여기는 그냥 주 1회 딱 한장. 교과과정(담임)-방과후 선생님으로 이루어져정규과정은 담임 선생님 위주로그 이후 시간은 방과후 선생님 위주로.방학때는 방과후 선생님과 지냄우선 규모가 제일 크다 보니내부 실내시설 너무 만족💚책 공간 - 강당- 실내놀이터 교...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:32:14.999Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "90668758",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=bomddalki90&logNo=224079507020",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=bomddalki90&logno=224079507020",
+          "normalizedText": "아라꿈 유치원 3년 재원 후 졸업 후기. 2025.11.18.검단신도시 최대규모 국공립유치원 #아라꿈유치원 규모가 크다보니 선발아이 명수도 많음. 난 3년동안 입학하고... 인천 검단 내 꿈 유치원중에는 제일 큰 규모. 학교종이 앱 사용. 주1회 아이사진 1장 올라옴 +사립 유치원들은 카페며 어플이며... 워낙 재원생 아이들이 많아 방학때든 대체공휴일이든 아이들이 많이 나오는 편. 첫 아이가 입학했을때 1회라서 후기도 없고 5세... 검단신도시 최대규모 국공립유치원 #아라꿈유치원규모가 크다보니 선발아이 명수도 많음. 인천아라꿈유치원 인천광역시 서구 당하동 산42-2 이 블로그의 체크인 이 장소의 다른 글 난 3년동안 입학하고 졸업시키기까지맞벌이 엄마로써 매우 만족한 유치원.인천 검단 내 꿈 유치원중에는 제일 큰 규모.학교종이 앱 사용.주1회 아이사진 1장 올라옴+사립 유치원들은 카페며 어플이며 사진 갯수며얘기해주시던데여기... 검단신도시 최대규모 국공립유치원 #아라꿈유치원규모가 크다보니 선발아이 명수도 많음. 인천아라꿈유치원 인천광역시 서구 당하동 산42-2 이 블로그의 체크인 이 장소의 다른 글 난 3년동안 입학하고 졸업시키기까지맞벌이 엄마로써 매우 만족한 유치원.인천 검단 내 꿈 유치원중에는 제일 큰 규모.학교종이 앱 사용.주1회 아이사진 1장 올라옴+사립 유치원들은 카페며 어플이며 사진 갯수며얘기해주시던데여기는 그냥 주 1회 딱 한장. 교과과정(담임)-방과후 선생님으로 이루어져정규과정은 담임 선생님 위주로그 이후 시간은 방과후 선생님 위주로.방학때는 방과후 선생님과 지냄우선 규모가 제일 크다 보니내부 실내시설 너무 만족💚책 공간 - 강당- 실내놀이터 교... 검단신도시 최대규모 국공립유치원 #아라꿈유치원규모가 크다보니 선발아이 명수도 많음. 인천아라꿈유치원 인천광역시 서구 당하동 산42-2 이 블로그의 체크인 이 장소의 다른 글 난 3년동안 입학하고 졸업시키기까지맞벌이 엄마로써 매우 만족한 유치원.인천 검단 내 꿈 유치원중에는 제일 큰 규모.학교종이 앱 사용.주1회 아이사진 1장 올라옴+사립 유치원들은 카페며 어플이며 사진 갯수며얘기해주시던데여기는 그냥 주 1회 딱 한장. 교과과정(담임)-방과후 선생님으로 이루어져정규과정은 담임 선생님 위주로그 이후 시간은 방과후 선생님 위주로.방학때는 방과후 선생님과 지냄우선 규모가 제일 크다 보니내부 실내시설 너무 만족💚책 공간 - 강당- 실내놀이터 교실 두개 사이에 아이 화장실이 위치.실외소풍은 연 2회정도.근처 공원 산책도 나감.생일선물을 주고 받지 않지만 생일 액자 만들어주심.공식적인 상담은 학기별방문 또는 전화상담.담임선생님을 개별하원 1시쯤 가능한데개별하원 하지 않는다면등하원 차량도 등하원 선생님이 따로 계셔서담임선생님을 거의 만날일이 없음….아이등하원시 주차장이 없어 주정차 매우 불편.(잠깐은 괜찮다고 함)급간식이 너무 잘 나와서 매우 만족주기별로 학부모 모니터링이 따로 있었음.보건실도 따로 있음.국공립이라 정규과정은 비용없음.아무래도 사립에 비해 영어나 프로그램은 적음.원어민 선생님 수업은 없었음.우리 아이 재원 할 당시에는 만들기 책 뛰어놀기 위주라서아이가 유치원 가는걸 배우러 가기 보단놀러간다는 생각이라 너무 개인적으로는 좋아함놀이식이다 보니 부모숙제 및 아이 숙제가 거의 없음연1회 학부모 참여수업(도마만들기/놀이체험)체육대회 등이 있었음. 사립유치원 입학설명회도 다녔지만사립에 비해 시설도 좋고한 반 인원수도 적은편.그리고 교실도 사립에비해 넓음.작년 졸업식에 기억이 남는건 유치원서 불러주셨던 푸드트럭과졸업선물로 캉골 메신저백을모든 아이들을 위해 준비해주셨던..생각해보니입학할때 색연필 사인펜 크레파스 보온병에아이들 이름표까지 학부모가 개별 준비할게 그닥 없었음, 그리고 소풍 도시락을 준비하지 않음.대형키즈카페도 가고 소풍으로 이곳저곳 갔지만현장에서 돈까스등으로 대체되어서따로 도시락 준비❌소풍 갈때도 각각 반마다선생님 두분은 5세-7세까지 동일.실무선생님까지 계시다보니아무래도 좀 더 안심하고 보낼수 있었던.앗, 재량휴업일도 있곤 하지만미리 수요조사서를 주심. 돌봄도 가능함.아이수가 적으면 합반으로 돌봄한다함.아이 재원기준으로 맞벌이 엄마분들은 보내시는 분도 있었음.워낙 재원생 아이들이 많아방학때든 대체공휴일이든 아이들이 많이 나오는 편. 첫 아이가 입학했을때 1회라서후기도 없고 5세 아이가 이렇게 큰곳에서학교같은 곳에서 적응할수 있을까 싶어 발걸음이 떨어지지 않았던 ㅠㅠ막상 지내보니 아이가 학습식이나 output도 중요하겠지만우리 아이 성향에는 다시 선택해도 아라꿈일것 같은.그래서 둘째는 집에서 거리가 있음에도 불구 지원.어린이집과 온도차가 매우 있었지만나는 불만족한 부분없이너무 잘 보내고 만족도 굉장히 좋았음.시설도 아이들 눈높이에서캠핑존이며 공룡존이며 단장되어 가는 모습보며감탄 했었다는!!!혹시 질문 있으시면댓 주세요 :아는선에선 늦어도 답 드릴께요!",
+          "htmlSnapshotHash": "90668758",
+          "extractedAt": "2026-06-26T07:32:14.999Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B8%EC%B2%9C%EC%95%84%EB%9D%BC%EA%BF%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "인천아라꿈유치원",
+            "kindergartenAddress": "인천광역시 서구 서로2로 28",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B8%EC%B2%9C%EC%95%84%EB%9D%BC%EA%BF%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-f659-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-80916f1c",
+        "kindergartenId": "1ecec08c-f659-b044-e053-0a32095ab044",
+        "title": "검단신도시 유치원 입학설명회 우선모집요강 비교 확인",
+        "url": "https://blog.naver.com/PostView.naver?blogId=landmark-blog&logNo=224063033621",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "우선 모집일정 : 2025년 11월 3일(월) 9:00 ~ 11월 5일(수) 23:59결과 발표: 2025년 11월 10일(월) 15:00 (모바일 기준) 2025년 11월 10일(월) 15:10 (PC 기준)유치원 등록: 2025년 11월 11일(화) 09:00 ~ 11월 12일(수) 18:00자세한 정보: 처음학교로 유보통합포털(유치원 입학)에서 확인 유치원 알리미 유아 · 교직원 현황,...",
+        "summary": "우선 모집일정 : 2025년 11월 3일(월) 9:00 ~ 11월 5일(수) 23:59결과 발표: 2025년 11월 10일(월) 15:00 (모바일 기준) 2025년 11월 10일(월) 15:10 (PC 기준)유치원 등록: 2025년 11월 11일(화) 09:00 ~ 11월 12일(수) 18:00자세한 정보: 처음학교로 유보통합포털(유치원 입학)에서 확인 유치원 알리미 유아 · 교직원 현황, 유치원 회계 현황, 환경위생 및 안전관리 사항 등 유치원의 주요 정보 e-childschoolinfo.moe.go.kr 일반모집사전접수: 2025년 11월 17일(월) 09:00 ~23:59(인천광역시)본 접수: 2025년 11월 19일(수) 09:...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:34:56.490Z",
+        "relevanceScore": 4,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "0e2ddb78",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=landmark-blog&logNo=224063033621",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=landmark-blog&logno=224063033621",
+          "normalizedText": "검단신도시 유치원 입학설명회 우선모집요강 비교 확인 17 우선 모집일정 : 2025년 11월 3일(월) 9:00 ~ 11월 5일(수) 23:59결과 발표: 2025년 11월 10일(월) 15:00 (모바일 기준) 2025년 11월 10일(월) 15:10 (pc 기준)유치원 등록: 2025년 11월 11일(화) 09:00 ~ 11월 12일(수) 18:00자세한 정보: 처음학교로 유보통합포털(유치원 입학)에서 확인 유치원 알리미 유아 · 교직원 현황,... 우선 모집일정 : 2025년 11월 3일(월) 9:00 ~ 11월 5일(수) 23:59결과 발표: 2025년 11월 10일(월) 15:00 (모바일 기준) 2025년 11월 10일(월) 15:10 (pc 기준)유치원 등록: 2025년 11월 11일(화) 09:00 ~ 11월 12일(수) 18:00자세한 정보: 처음학교로 유보통합포털(유치원 입학)에서 확인 유치원 알리미 유아 · 교직원 현황, 유치원 회계 현황, 환경위생 및 안전관리 사항 등 유치원의 주요 정보 e-childschoolinfo.moe.go.kr 일반모집사전접수: 2025년 11월 17일(월) 09:00 ~23:59(인천광역시)본 접수: 2025년 11월 19일(수) 09:... 우선 모집일정 : 2025년 11월 3일(월) 9:00 ~ 11월 5일(수) 23:59결과 발표: 2025년 11월 10일(월) 15:00 (모바일 기준) 2025년 11월 10일(월) 15:10 (pc 기준)유치원 등록: 2025년 11월 11일(화) 09:00 ~ 11월 12일(수) 18:00자세한 정보: 처음학교로 유보통합포털(유치원 입학)에서 확인 유치원 알리미 유아 · 교직원 현황, 유치원 회계 현황, 환경위생 및 안전관리 사항 등 유치원의 주요 정보 e-childschoolinfo.moe.go.kr 일반모집사전접수: 2025년 11월 17일(월) 09:00 ~23:59(인천광역시)본 접수: 2025년 11월 19일(수) 09:00 ~11월 21일(금) 18:00결과발표: 2025년 11월 26일(수)15:00 (모바일 기준) 2025년 11월 26일(수) 15:10 (pc 기준) 1. 리라 유치원 교육과정 운영시간 09:30 - 14:30교육과정 및 방과후 과정 운영시간 09:30 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 리라 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 30명 12명 8명 정원 30명 44명 66명 학급수 2(15명/15명) 2(22명/22명) 3(22명/22명/22명) 인천 서구 검단·김포 리라유치원 입학설명회 후기 및 정보 리라유치원 2024년 11월 1일 오전 입학설명회 다녀온 후 작성하는 따끈따끈한 후기와 정보입니다. ✔ 창의... blog.naver.com 첨부파일 2026학년도+리라유치원+입학안내.pdf 파일 다운로드 2. 명문유치원 교육과정 운영시간 09:30 - 13:00교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음)오전 8시부터 등원 가능 명문 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 48명 3명 1명 정원 48명 25명 26명 학급수 2 1 1 3. 사랑샘유치원 교육과정 운영시간 09:30 - 13:30교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 사랑샘 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 125명 57명 0명 정원 125명 156명 182명 학급수 5 6 6 김포·검단 사랑샘유치원 입학설명회 후기 사랑샘 유치원 인천 원당동에 1,000평 규모의 사랑샘유치원은 원장님께서 유아교육의 한 길만 바라보고 40... blog.naver.com 4. 예지유치원 교육과정 운영시간 07:50 - 13:30교육과정 및 방과후 과정 운영시간 07:50 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 예지 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 57명 17명 5명 정원 57명 71명 50명 학급수 3 3 2 예지유치원,검단신도시,불로동,아라동,불로대곡동 : 네이버 블로그 인천 서구 검단신도시 불로동(불로대곡동)에 위치하며 아라동에 접해있는 예지유치원이예요. 누리과정,특성화활동(영어,미술,음악,체육), 특색활동,스페셜데이,숲체험, 코딩_인공지능,씽커토이등 다양한 교육과정을 편성 운영하며 만5세는 무상교육입니다. blog.naver.com 첨부파일 예지유치원입학안내.pdf 파일 다운로드 5. 예인유치원 교육과정 운영시간 08:30 - 13:00교육과정 및 방과후 과정 운영시간 08:30 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 예인 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 60명 62명 17명 정원 60명 120명 104명 학급수 3 5 4 6. 은하유치원 교육과정 운영시간 09:00 - 14:00교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 은하 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 75명 2명 1명 정원 75명 54명 56명 학급수 3 2 2 7. 일영유치원 교육과정 운영시간 09:00 - 14:30교육과정 및 방과후 과정 운영시간 09:00 - 19:00 8:00 부터 등원 가능(희망 유아 모두 가능 하며 별도 자격조건 없음) 일영 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 50명 2명 5명 정원 50명 52명 81명 학급수 2 2 3 인천 검단신도시 일영유치원 입학설명회 일영유치원 인천 서구 검단에 위치한 일영유치원은 2015년에 개원하여 원복이 예쁜 유치원으로 유명했으며 ... blog.naver.com 8. 큰사랑 유치원 교육과정 운영시간 09:00 - 13:30교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 큰사랑 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 75명 9명 4명 정원 75명 78명 56명 학급수 3 3 2 큰사랑유치원 큰사랑유치원 홈페이지에 오신것을 환영합니다. www.keunsarang.net 9. 해나라유치원 교육과정 운영시간 09:00 - 13:30교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 해나라 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 100명 0명 4명 정원 100명 109명 101명 학급수 5 4 4 인천 검단 몬테소리 해나라유치원 입학설명회 해나라유치원 인천 서구 검단에 위치한 해나라 유치원은 몬테소리 교육의 준비된 환경과 다중지능 프로젝트... blog.naver.com 첨부파일 해나라브로셔3.pdf 파일 다운로드 10. 산들유치원 교육과정 운영시간 09:00 - 14:00교육과정 및 방과후 과정 운영시간 09:00 - 19:00 (희망 유아 모두 가능 하며 별도 자격조건 없음) 산들 3세(22년생) 4세(21년생) 5세(20년생) 우선모집 인원 52명 5명 6명 정원 52명 55명 58명 학급수 2 2 2 첨부파일 산들유치원.pdf 파일 다운로드 인천·김포 검단 산들유치원 입학설명회 찐후기 산들유치원 2024년 10월 25일 입학설명회 선착순으로 신청하여 다녀왔으며 김포 인천 검단 숲놀이터의 산들... blog.naver.com 이외 국공립 인천검단꿈유치원인천검단나래유치원인천검단호수초등학교병설유치원인천아라꿈유치원인천아라초등학교병설유치원인천아람초등학교병설유치원인천원당초등학교병설유치원인천이음초등학교병설유치원인천해든초등학교병설유치원 이 글은 애줌마 리블리가 유치원 우선모집에 대하여 메모한 것이며, 정확한 정보가 아닐 수 있습니다.정확한 정보는 해당 웹페이지를 참고하시길 바랍니다. 유치원입학 유치원입학 도우미 원서접수에 도움이 되는 정보를 바로가기로 빠르게 확인하실 수 있습니다. 이용안내 모집일정 안내 동영상 블로그 유치원입학 일정안내 일정을 한눈에 확인할 수 있습니다. step 01 우선모집 원서접수 추첨·발표 등록 step 02 일반모집 원서접수 추첨·발표 등록 대기자관리 step 03 추가모집 접수등록 2025년 11월03일 월요일 우선모집 접수 기간입니다. 상세 일정확인하기 www.go-firstschool.go.kr 도움 되셨다면 좋아요 눌러주세요☞ 포스팅 쓰는데 힘이납니다.♥",
+          "htmlSnapshotHash": "0e2ddb78",
+          "extractedAt": "2026-06-26T07:34:56.490Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B8%EC%B2%9C%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "인천원당초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 서구 원당대로820번길 16",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B8%EC%B2%9C%EC%9B%90%EB%8B%B9%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EC%84%9C%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08c-f468-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-0676cdd5",
+        "kindergartenId": "1ecec08c-f468-b044-e053-0a32095ab044",
+        "title": "인천청일초등학교병설유치원 학부모 공개수업 X",
+        "url": "https://x.com/EduYonhap/status/1928045981817327954",
+        "source": "other",
+        "sourceName": "X · EduYonhap",
+        "snippet": "인천청일초등학교병설유치원 학부모 공개수업 문맥이 확인되는 X 검색 결과.",
+        "summary": "인천청일초등학교병설유치원의 학부모 공개수업 X 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "official-info"
+        ],
+        "content": "인천청일초등학교병설유치원 학부모 공개수업 문맥이 확인되는 X 검색 결과. 원명이 고유하고 인천 서구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T20:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5f3bf888",
+        "structuredFields": {
+          "kindergartenName": "인천청일초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 서구 크리스탈로 46",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221928045981817327954%22+%22%EC%B2%AD%EC%9D%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서구 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/EduYonhap/status/1928045981817327954",
+          "normalizedUrl": "x.com/eduyonhap/status/1928045981817327954",
+          "normalizedText": "인천청일초등학교병설유치원 학부모 공개수업 x 인천청일초등학교병설유치원 학부모 공개수업 문맥이 확인되는 x 검색 결과. 인천청일초등학교병설유치원의 학부모 공개수업 x 검색 결과.",
+          "htmlSnapshotHash": "5f3bf888",
+          "extractedAt": "2026-06-30T20:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천청일초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 서구 크리스탈로 46",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221928045981817327954%22+%22%EC%B2%AD%EC%9D%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서구 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T20:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-feb5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-10906681",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 신입생 모집 SNS",
+        "url": "https://www.instagram.com/reel/DJQi4p3yj-9/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 2학기 신입생 모집과 인천 서구 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 신입생 모집 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "재은유치원 2학기 신입생 모집과 인천 서구 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 인천 서구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "75908bf1",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJQi4p3yj-9%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서구 문맥을 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJQi4p3yj-9/",
+          "normalizedUrl": "www.instagram.com/reel/djqi4p3yj-9",
+          "normalizedText": "인천 재은유치원 신입생 모집 sns 재은유치원 2학기 신입생 모집과 인천 서구 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 신입생 모집 instagram 검색 결과.",
+          "htmlSnapshotHash": "75908bf1",
+          "extractedAt": "2026-06-30T23:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJQi4p3yj-9%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 인천 서구 문맥을 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b4a1eed5",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DPsVm5wEp0q/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 2026학년도 입학설명회와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 2026학년도 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "재은유치원 2026학년도 입학설명회와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 인천 서구 재은유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "473a251b",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPsVm5wEp0q%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPsVm5wEp0q/",
+          "normalizedUrl": "www.instagram.com/p/dpsvm5wep0q",
+          "normalizedText": "인천 재은유치원 입학설명회 sns 재은유치원 2026학년도 입학설명회와 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 2026학년도 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "473a251b",
+          "extractedAt": "2026-06-30T23:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPsVm5wEp0q%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-693ff015",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 SNS 프로필",
+        "url": "https://www.instagram.com/jaeeun_7272/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 프로필에서 인천 기관명과 전화 032-566-7272 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "재은유치원 프로필에서 인천 기관명과 전화 032-566-7272 문맥이 확인되는 Instagram 검색 결과다. 원장부의 인천 서구 완정로34번길 주소와 전화번호를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a8dfd4c7",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22jaeeun_7272%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-566-7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/jaeeun_7272/",
+          "normalizedUrl": "www.instagram.com/jaeeun_7272",
+          "normalizedText": "인천 재은유치원 sns 프로필 재은유치원 프로필에서 인천 기관명과 전화 032-566-7272 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "a8dfd4c7",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22jaeeun_7272%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-566-7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-51a87212",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 교육활동 SNS",
+        "url": "https://www.instagram.com/p/DY8_sIxyGt5/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정의 교육활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 교육활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "재은유치원 계정의 교육활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9e5a2f63",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY8_sIxyGt5%22+%22jaeeun_7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY8_sIxyGt5/",
+          "normalizedUrl": "www.instagram.com/p/dy8_sixygt5",
+          "normalizedText": "인천 재은유치원 교육활동 sns 재은유치원 계정의 교육활동 게시물과 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 교육활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "9e5a2f63",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY8_sIxyGt5%22+%22jaeeun_7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-be71cad9",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 놀이활동 SNS",
+        "url": "https://www.instagram.com/p/DPsThBwkjgX/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정의 놀이활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 놀이활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "재은유치원 계정의 놀이활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2df4e5e6",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPsThBwkjgX%22+%22jaeeun_7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPsThBwkjgX/",
+          "normalizedUrl": "www.instagram.com/p/dpsthbwkjgx",
+          "normalizedText": "인천 재은유치원 놀이활동 sns 재은유치원 계정의 놀이활동 게시물과 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 놀이활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "2df4e5e6",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPsThBwkjgX%22+%22jaeeun_7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9beb8572",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 체험활동 SNS",
+        "url": "https://www.instagram.com/p/DJI-5YMS8nf/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정의 체험활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 체험활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "재은유치원 계정의 체험활동 게시물과 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f0e3812e",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJI-5YMS8nf%22+%22jaeeun_7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJI-5YMS8nf/",
+          "normalizedUrl": "www.instagram.com/p/dji-5yms8nf",
+          "normalizedText": "인천 재은유치원 체험활동 sns 재은유치원 계정의 체험활동 게시물과 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 체험활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "f0e3812e",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJI-5YMS8nf%22+%22jaeeun_7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-227814c0",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 일상활동 SNS",
+        "url": "https://www.instagram.com/reel/DKyh4R0SI9K/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정의 일상활동 릴스와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 일상활동 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "daily-routine"
+        ],
+        "content": "재은유치원 계정의 일상활동 릴스와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "48bc0ebb",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKyh4R0SI9K%22+%22jaeeun_7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKyh4R0SI9K/",
+          "normalizedUrl": "www.instagram.com/reel/dkyh4r0si9k",
+          "normalizedText": "인천 재은유치원 일상활동 sns 재은유치원 계정의 일상활동 릴스와 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 일상활동 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "48bc0ebb",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKyh4R0SI9K%22+%22jaeeun_7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b35e8f0d",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 행사 SNS",
+        "url": "https://www.instagram.com/reel/DTxn4ncAS8b/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정의 유치원 행사 릴스와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 재은유치원의 행사 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reel",
+          "activity"
+        ],
+        "content": "재은유치원 계정의 유치원 행사 릴스와 인천 재은유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "342e707e",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTxn4ncAS8b%22+%22jaeeun_7272%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTxn4ncAS8b/",
+          "normalizedUrl": "www.instagram.com/reel/dtxn4ncas8b",
+          "normalizedText": "인천 재은유치원 행사 sns 재은유치원 계정의 유치원 행사 릴스와 인천 재은유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 재은유치원의 행사 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "342e707e",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTxn4ncAS8b%22+%22jaeeun_7272%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ca1f3988",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 서구 재은유치원 오감놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DYyhSwZjaK9/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "인천 서구 재은유치원 해시태그와 오감놀이 활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sensory-play",
+          "classroom-activity"
+        ],
+        "date": "2026-05-23",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "106ba9c8",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYyhSwZjaK9%22+%22재은유치원%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYyhSwZjaK9/",
+          "normalizedUrl": "www.instagram.com/reel/dyyhswzjak9",
+          "normalizedText": "인천 서구 재은유치원 오감놀이 instagram 인천 서구 재은유치원 해시태그와 오감놀이 활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "106ba9c8",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYyhSwZjaK9%22+%22재은유치원%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-83fad631",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "kindergartenName": "재은유치원",
+        "title": "재은유치원 여름캠프 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaNUUJTS05r/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "Instagram 검색 결과에서 재은유치원, 재은 여름캠프, 수도국산박물관, 시간 여행 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "camp",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaNUUJTS05r%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%97%AC%EB%A6%84%EC%BA%A0%ED%94%84%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DaNUUJTS05r/",
+          "regionEvidence": [
+            "재은유치원",
+            "재은 여름캠프",
+            "수도국산박물관",
+            "시간 여행"
+          ]
+        },
+        "evidenceChecksum": "130a247e"
+      },
+      {
+        "id": "rev-942c3fd6",
+        "kindergartenId": "1ecec08c-feb5-b044-e053-0a32095ab044",
+        "title": "인천 재은유치원 어린이과학관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DIQvvGsCCWv/",
+        "source": "other",
+        "sourceName": "Instagram · 재은유치원",
+        "snippet": "재은유치원 계정에서 어린이과학관 견학 영상 문맥과 재은유치원 단서가 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T00:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "65253b21",
+        "structuredFields": {
+          "kindergartenName": "재은유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIQvvGsCCWv%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "재은유치원은 로컬 원장부 단일 매칭이며 기관 계정의 어린이과학관 견학 문맥과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIQvvGsCCWv/",
+          "normalizedUrl": "www.instagram.com/p/diqvvgsccwv",
+          "normalizedText": "인천 재은유치원 어린이과학관 견학 instagram post 재은유치원 계정에서 어린이과학관 견학 영상 문맥과 재은유치원 단서가 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "65253b21",
+          "extractedAt": "2026-07-03T00:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "재은유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로34번길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIQvvGsCCWv%22+%22%EC%9E%AC%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EA%B3%BC%ED%95%99%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "재은유치원은 로컬 원장부 단일 매칭이며 기관 계정의 어린이과학관 견학 문맥과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T00:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0d9c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-df5bd7f9",
+        "kindergartenId": "1ecec08d-0d9c-b044-e053-0a32095ab044",
+        "title": "인천 큰사랑유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DP3fLiuifQM/",
+        "source": "other",
+        "sourceName": "Instagram · 큰사랑유치원",
+        "snippet": "큰사랑유치원 2026학년도 입학설명회와 인천 큰사랑유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 큰사랑유치원의 2026학년도 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "큰사랑유치원 2026학년도 입학설명회와 인천 큰사랑유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 인천 서구 큰사랑유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d9f13cc9",
+        "structuredFields": {
+          "kindergartenName": "큰사랑유치원",
+          "kindergartenAddress": "인천광역시 서구 완정로64번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DP3fLiuifQM%22+%22%ED%81%B0%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DP3fLiuifQM/",
+          "normalizedUrl": "www.instagram.com/p/dp3fliuifqm",
+          "normalizedText": "인천 큰사랑유치원 입학설명회 sns 큰사랑유치원 2026학년도 입학설명회와 인천 큰사랑유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 큰사랑유치원의 2026학년도 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "d9f13cc9",
+          "extractedAt": "2026-06-30T23:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "큰사랑유치원",
+            "kindergartenAddress": "인천광역시 서구 완정로64번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DP3fLiuifQM%22+%22%ED%81%B0%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "53264948-e537-4c39-a5b7-780729b8c3dd": [
+      {
+        "id": "rev-86826d97",
+        "kindergartenId": "53264948-e537-4c39-a5b7-780729b8c3dd",
+        "title": "인천 일영유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DQfy6kzk-99/",
+        "source": "other",
+        "sourceName": "Instagram · 일영유치원",
+        "snippet": "일영유치원 2026학년도 입학설명회와 인천 일영유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 서구 일영유치원의 2026학년도 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "일영유치원 2026학년도 입학설명회와 인천 일영유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 인천 서구 일영유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8a31d906",
+        "structuredFields": {
+          "kindergartenName": "일영유치원",
+          "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQfy6kzk-99%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQfy6kzk-99/",
+          "normalizedUrl": "www.instagram.com/p/dqfy6kzk-99",
+          "normalizedText": "인천 일영유치원 입학설명회 sns 일영유치원 2026학년도 입학설명회와 인천 일영유치원 문맥이 확인되는 instagram 검색 결과. 인천 서구 일영유치원의 2026학년도 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "8a31d906",
+          "extractedAt": "2026-06-30T23:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "일영유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQfy6kzk-99%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d2d567b5",
+        "kindergartenId": "53264948-e537-4c39-a5b7-780729b8c3dd",
+        "title": "인천 일영유치원 가족운동회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYDvHKWTdHE/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "일영유치원 가족운동회와 어린이 이어달리기상 OCR 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T05:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f998b38f",
+        "structuredFields": {
+          "kindergartenName": "일영유치원",
+          "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYDvHKWTdHE%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "일영유치원은 로컬 원장부에서 유일한 이름이라 게시물 OCR 유치원명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYDvHKWTdHE/",
+          "normalizedUrl": "www.instagram.com/reel/dydvhkwtdhe",
+          "normalizedText": "인천 일영유치원 가족운동회 instagram reel 일영유치원 가족운동회와 어린이 이어달리기상 ocr 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "f998b38f",
+          "extractedAt": "2026-07-02T05:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "일영유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYDvHKWTdHE%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%EC%9A%B4%EB%8F%99%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "일영유치원은 로컬 원장부에서 유일한 이름이라 게시물 OCR 유치원명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T05:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3867272d",
+        "kindergartenId": "53264948-e537-4c39-a5b7-780729b8c3dd",
+        "title": "인천 일영유치원 Maker Space 흙놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DDJFqkeT4VZ/",
+        "source": "other",
+        "sourceName": "Instagram · 일영유치원",
+        "snippet": "일영유치원 계정에서 Maker space 교실과 흙 놀이 활동, 생태교육 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "soil-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5dd5753f",
+        "structuredFields": {
+          "kindergartenName": "일영유치원",
+          "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDJFqkeT4VZ%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%9D%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "일영유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDJFqkeT4VZ/",
+          "normalizedUrl": "www.instagram.com/reel/ddjfqket4vz",
+          "normalizedText": "인천 일영유치원 maker space 흙놀이 instagram reel 일영유치원 계정에서 maker space 교실과 흙 놀이 활동, 생태교육 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "5dd5753f",
+          "extractedAt": "2026-07-02T10:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "일영유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로45번길 4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDJFqkeT4VZ%22+%22%EC%9D%BC%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%9D%99%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "일영유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "301ce14b-30aa-4d2d-be5c-7f417f2791c8": [
+      {
+        "id": "rev-aa3ec99d",
+        "kindergartenId": "301ce14b-30aa-4d2d-be5c-7f417f2791c8",
+        "kindergartenName": "예빛유치원",
+        "title": "인천 예빛유치원 함지논 모내기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DKgfvclMsnn/",
+        "source": "other",
+        "sourceName": "Instagram · 예빛유치원",
+        "snippet": "예빛유치원 계정의 잔디운동장 함지논 모내기 릴스 검색 결과에서 모가 자라는 과정을 관찰하는 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "rice-planting",
+          "farm-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T13:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3f25d0c4",
+        "structuredFields": {
+          "kindergartenName": "예빛유치원",
+          "kindergartenAddress": "인천광역시 서구 경서로32번길 18",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKgfvclMsnn%22%20%22%EC%98%88%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AA%A8%EB%82%B4%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "예빛유치원 단일 매칭이며 계정·함지논·모내기 단서가 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKgfvclMsnn/",
+          "normalizedUrl": "www.instagram.com/reel/dkgfvclmsnn",
+          "normalizedText": "인천 예빛유치원 함지논 모내기 instagram reel 예빛유치원 계정의 잔디운동장 함지논 모내기 릴스 검색 결과에서 모가 자라는 과정을 관찰하는 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "3f25d0c4",
+          "extractedAt": "2026-07-02T13:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예빛유치원",
+            "kindergartenAddress": "인천광역시 서구 경서로32번길 18",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKgfvclMsnn%22%20%22%EC%98%88%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AA%A8%EB%82%B4%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "예빛유치원 단일 매칭이며 계정·함지논·모내기 단서가 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T13:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "bda5136a-12ec-46e5-b477-5117f76624b1": [
+      {
+        "id": "rev-415dff62",
+        "kindergartenId": "bda5136a-12ec-46e5-b477-5117f76624b1",
+        "kindergartenName": "인천아람초등학교병설유치원",
+        "title": "인천아람초등학교병설유치원 캐릭터 자개거울 공예 Instagram Post",
+        "url": "https://www.instagram.com/p/DUVD-Wwki2c/",
+        "source": "other",
+        "sourceName": "Instagram · 공예 출강",
+        "snippet": "공예 출강 게시물 검색 결과에서 인천 아람초등학교 병설유치원 63명 원아와 캐릭터 자개거울 만들기 수업을 진행한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "craft-activity",
+          "art-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "415dff62",
+        "structuredFields": {
+          "kindergartenName": "인천아람초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 서구 이음1로 289",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUVD-Wwki2c%22%20%22%EC%9D%B8%EC%B2%9C%20%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EC%98%88%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "인천 아람초등학교 병설유치원 명시와 로컬 인천아람초등학교병설유치원 원장부 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUVD-Wwki2c/",
+          "normalizedUrl": "www.instagram.com/p/duvd-wwki2c",
+          "normalizedText": "인천아람초등학교병설유치원 캐릭터 자개거울 공예 instagram post 공예 출강 게시물 검색 결과에서 인천 아람초등학교 병설유치원 63명 원아와 캐릭터 자개거울 만들기 수업을 진행한 단서가 확인된다.",
+          "htmlSnapshotHash": "415dff62",
+          "extractedAt": "2026-07-02T23:59:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천아람초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 서구 이음1로 289",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUVD-Wwki2c%22%20%22%EC%9D%B8%EC%B2%9C%20%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%B5%EC%98%88%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "인천 아람초등학교 병설유치원 명시와 로컬 인천아람초등학교병설유치원 원장부 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },
-  "lastCuratedAt": "2026-06-26T08:58:48.483Z"
+  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
 }

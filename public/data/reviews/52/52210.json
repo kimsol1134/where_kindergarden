@@ -1,7 +1,7 @@
 {
-  "version": "2026-05-29",
-  "totalCount": 10,
-  "kindergartenCount": 1,
+  "version": "2026-07-01",
+  "totalCount": 13,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08c-f6ec-b044-e053-0a32095ab044": [
       {
@@ -113,6 +113,163 @@
         "snippet": "김지수661 리뷰 59사진 2 김제중앙유치원 상담 아이가 유치원은 너무 좋아해서 매번 잘 등원하고 있어요. 좋으신 원장님과 아이들을 잘 케어하는 선생님들과 함께 해서 안심하고 보내고 있어요! 원 분위기도 따듯하고 마중갈 때마다 웃고 있는 아이를 보면 보내길 잘했다는 생각이 들어요 ㅎㅎ 더보기 3.3.화 1번째 방문",
         "date": "2026-03-03",
         "collectedAt": "2026-04-06T13:31:34.702Z"
+      }
+    ],
+    "1ecec08d-06d3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d3065faa",
+        "kindergartenId": "1ecec08d-06d3-b044-e053-0a32095ab044",
+        "title": "전북 김제 성만유치원 신입원아모집 Instagram",
+        "url": "https://www.instagram.com/p/C3Xx2hZvYDd/",
+        "source": "other",
+        "sourceName": "Instagram · preschool_sungman",
+        "snippet": "Instagram 검색 결과에서 김제성만유치원, 23년 전통유치원, 2024 신입원아모집, 전북 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "cf167ee0",
+        "structuredFields": {
+          "kindergartenName": "성만유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C3Xx2hZvYDd%22+%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C3Xx2hZvYDd/",
+          "normalizedUrl": "www.instagram.com/p/c3xx2hzvydd",
+          "normalizedText": "전북 김제 성만유치원 신입원아모집 instagram instagram 검색 결과에서 김제성만유치원, 23년 전통유치원, 2024 신입원아모집, 전북 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "cf167ee0",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성만유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C3Xx2hZvYDd%22+%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fc76b5b7",
+        "kindergartenId": "1ecec08d-06d3-b044-e053-0a32095ab044",
+        "title": "김제 성만유치원 ESG 환경교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXgID6Ykj-Z/",
+        "source": "other",
+        "sourceName": "Instagram · 성만유치원 원감선생님",
+        "snippet": "성만유치원 원감선생님 계정에서 ESG 환경교육과 줍킹 활동으로 깨끗한 지구를 만드는 방법을 알려주는 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "environment"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0e9103fc",
+        "structuredFields": {
+          "kindergartenName": "성만유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgID6Ykj-Z%22+%22%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%99%98%EA%B2%BD%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성만유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 환경교육 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXgID6Ykj-Z/",
+          "normalizedUrl": "www.instagram.com/reel/dxgid6ykj-z",
+          "normalizedText": "김제 성만유치원 esg 환경교육 instagram reel 성만유치원 원감선생님 계정에서 esg 환경교육과 줍킹 활동으로 깨끗한 지구를 만드는 방법을 알려주는 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "0e9103fc",
+          "extractedAt": "2026-07-02T23:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성만유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 요촌동1길 43-4",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXgID6Ykj-Z%22+%22%EC%84%B1%EB%A7%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%99%98%EA%B2%BD%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성만유치원은 로컬 원장부 단일 매칭이며 게시물 계정명과 환경교육 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f143-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-36337c6b",
+        "kindergartenId": "1ecec08c-f143-b044-e053-0a32095ab044",
+        "kindergartenName": "김제성모유치원",
+        "title": "김제성모유치원 빛과 소리 축제 Instagram Post",
+        "url": "https://www.instagram.com/p/DRmDlV5j0Gc/",
+        "source": "other",
+        "sourceName": "Instagram · 김제성모유치원",
+        "snippet": "김제성모유치원 계정 게시물 검색 결과에서 빛과소리, 빛축제, 놀이중심교육, 김제성모유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "light-shadow",
+          "play-based"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "36337c6b",
+        "structuredFields": {
+          "kindergartenName": "김제성모유치원",
+          "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRmDlV5j0Gc%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김제성모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRmDlV5j0Gc/",
+          "normalizedUrl": "www.instagram.com/p/drmdlv5j0gc",
+          "normalizedText": "김제성모유치원 빛과 소리 축제 instagram post 김제성모유치원 계정 게시물 검색 결과에서 빛과소리, 빛축제, 놀이중심교육, 김제성모유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "36337c6b",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "김제성모유치원",
+            "kindergartenAddress": "전북특별자치도 김제시 신풍길 253-16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRmDlV5j0Gc%22%20%22%EA%B9%80%EC%A0%9C%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김제성모유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }
