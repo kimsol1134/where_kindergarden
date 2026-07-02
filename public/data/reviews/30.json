@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 362,
+  "totalCount": 363,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -12873,6 +12873,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave702-17f66135",
+        "kindergartenId": "1ecec08c-f146-b044-e053-0a32095ab044",
+        "title": "대전 대자연유치원 시장놀이 기록",
+        "url": "https://www.instagram.com/p/C8vycxMSyEY/",
+        "source": "other",
+        "sourceName": "Instagram · 대자연유치원",
+        "snippet": "대자연유치원이 강당을 볼거리와 먹거리가 있는 시장으로 꾸민 활동을 공개한 게시물입니다.",
+        "summary": "아이들을 위해 준비한 시장놀이를 통해 유아들이 다양한 역할과 거래 경험을 해 본 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-17f66135",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C8vycxMSyEY/",
+          "normalizedUrl": "instagram.com/p/c8vycxmsyey",
+          "normalizedText": "대자연유치원 대전 관저동 대자연 시장놀이 강당 시장",
+          "htmlSnapshotHash": "sns-wave702-17f66135",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C8vycxMSyEY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
       }
     ],
     "1ecec08c-f147-b044-e053-0a32095ab044": [
@@ -16755,5 +16791,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

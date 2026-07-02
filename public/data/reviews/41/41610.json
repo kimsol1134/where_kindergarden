@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 17,
+  "totalCount": 18,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f7c2-b044-e053-0a32095ab044": [
@@ -724,6 +724,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave702-25d28802",
+        "kindergartenId": "1ecec08c-ee84-b044-e053-0a32095ab044",
+        "title": "경기광주 초월한솔유치원 아나바다 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/DaExdnjyOlx/",
+        "source": "other",
+        "sourceName": "Instagram · 초월한솔유치원",
+        "snippet": "초월한솔유치원이 아나바다 시장놀이를 통해 유아들의 가게놀이를 공개한 릴스입니다.",
+        "summary": "아이들이 물건의 쓰임과 교환을 놀이로 경험하며 생활 속 경제 활동을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada",
+          "gwangju-gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-25d28802",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaExdnjyOlx/",
+          "normalizedUrl": "instagram.com/reel/daexdnjyolx",
+          "normalizedText": "초월한솔유치원 경기광주 아나바다시장놀이 유치원활동 숲유치원",
+          "htmlSnapshotHash": "sns-wave702-25d28802",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaExdnjyOlx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
       }
     ],
     "1ecec08c-fcfa-b044-e053-0a32095ab044": [

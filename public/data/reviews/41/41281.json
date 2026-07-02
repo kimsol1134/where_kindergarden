@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 56,
+  "totalCount": 57,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0815-b044-e053-0a32095ab044": [
@@ -2273,8 +2273,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave702-be56f9f6",
+        "kindergartenId": "1ecec08d-0fc8-b044-e053-0a32095ab044",
+        "title": "고양 무원유치원 안뜰시장 프로젝트 기록",
+        "url": "https://www.instagram.com/reel/DZUaL5ry5pO/",
+        "source": "other",
+        "sourceName": "Instagram · 무원유치원",
+        "snippet": "무원유치원이 6세 우리동네 프로젝트 마무리로 안뜰시장 활동을 공개한 릴스입니다.",
+        "summary": "프로젝트 학습과 시장놀이를 연결해 유아들이 나눔과 교환을 경험한 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "project-learning",
+          "goyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-be56f9f6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZUaL5ry5pO/",
+          "normalizedUrl": "instagram.com/reel/dzual5ry5po",
+          "normalizedText": "무원유치원 고양 행신동 우리동네 프로젝트 안뜰시장 아나바다",
+          "htmlSnapshotHash": "sns-wave702-be56f9f6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZUaL5ry5pO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

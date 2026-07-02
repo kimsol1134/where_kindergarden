@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 13,
-  "kindergartenCount": 8,
+  "totalCount": 14,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-07f1-b044-e053-0a32095ab044": [
       {
@@ -630,7 +630,45 @@
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-fdeb-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave702-1f88e328",
+        "kindergartenId": "1ecec08c-fdeb-b044-e053-0a32095ab044",
+        "title": "창원 글로리아유치원 솔잎시장 놀이 기록",
+        "url": "https://www.instagram.com/reel/DaNASikB5KV/",
+        "source": "other",
+        "sourceName": "Instagram · 글로리아유치원",
+        "snippet": "글로리아유치원이 솔잎시장이라는 이름으로 유아들의 시장놀이를 공개한 릴스입니다.",
+        "summary": "우리 동네 가게를 놀이로 재현하며 아이들이 선택과 교환 경험을 쌓은 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "neighborhood-play",
+          "changwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-1f88e328",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaNASikB5KV/",
+          "normalizedUrl": "instagram.com/reel/danasikb5kv",
+          "normalizedText": "글로리아유치원 창원 진해 솔잎시장 시장놀이 우리동네",
+          "htmlSnapshotHash": "sns-wave702-1f88e328",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaNASikB5KV/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
+      }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T02:51:38.994Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

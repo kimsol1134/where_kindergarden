@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 58,
+  "totalCount": 59,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -1705,6 +1705,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T11:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave702-64262a4e",
+        "kindergartenId": "1ecec08c-fa47-b044-e053-0a32095ab044",
+        "title": "대구 화원유치원 마켓 놀이 기록",
+        "url": "https://www.instagram.com/reel/DaM9X8AT8RM/",
+        "source": "other",
+        "sourceName": "Instagram · 화원유치원",
+        "snippet": "화원유치원이 유치원 마켓을 열고 아이들의 시장놀이 모습을 공개한 릴스입니다.",
+        "summary": "유아들이 물건을 사고파는 역할놀이로 의사소통과 사회성을 경험한 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-64262a4e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaM9X8AT8RM/",
+          "normalizedUrl": "instagram.com/reel/dam9x8at8rm",
+          "normalizedText": "화원유치원 대구 달성군 화원 market 시장놀이 유치원",
+          "htmlSnapshotHash": "sns-wave702-64262a4e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaM9X8AT8RM/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
       }
     ],
     "1ecec08d-038c-b044-e053-0a32095ab044": [

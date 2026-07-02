@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 43,
+  "totalCount": 44,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08d-0bf9-b044-e053-0a32095ab044": [
@@ -1006,6 +1006,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave702-4fbf4b71",
+        "kindergartenId": "1ecec08c-f61c-b044-e053-0a32095ab044",
+        "title": "안성 혜윰유치원 골목시장 놀이 기록",
+        "url": "https://www.instagram.com/reel/DaCsamtvycy/",
+        "source": "other",
+        "sourceName": "Instagram · 혜윰유치원",
+        "snippet": "혜윰유치원이 골목시장 주제로 유아들의 시장놀이 장면을 공개한 릴스입니다.",
+        "summary": "아이들이 가게와 손님 역할을 나누며 생활 속 경제 개념을 놀이로 익힌 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play",
+          "anseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave702-4fbf4b71",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCsamtvycy/",
+          "normalizedUrl": "instagram.com/reel/dacsamtvycy",
+          "normalizedText": "혜윰유치원 안성 골목시장 시장놀이 유치원",
+          "htmlSnapshotHash": "sns-wave702-4fbf4b71",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCsamtvycy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave702"
       }
     ],
     "1ecec08c-ff12-b044-e053-0a32095ab044": [
