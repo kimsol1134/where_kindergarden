@@ -9,6 +9,7 @@ import LinkIcon from 'lucide-react/dist/esm/icons/link';
 import Loader2 from 'lucide-react/dist/esm/icons/loader-2';
 import RotateCcw from 'lucide-react/dist/esm/icons/rotate-ccw';
 import Search from 'lucide-react/dist/esm/icons/search';
+import Download from 'lucide-react/dist/esm/icons/download';
 import type { ReviewLink, ReviewsData } from '@/types/review';
 
 interface KindergartenLookupItem {
@@ -135,6 +136,15 @@ function getDisplayUrl(url: string): string {
   }
 }
 
+function isWebUrl(url: string): boolean {
+  try {
+    const parsedUrl = new URL(url);
+    return parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
 function getStringField(value: unknown): string | null {
   return typeof value === 'string' && value.trim().length > 0 ? value : null;
 }
@@ -166,6 +176,33 @@ function getAccessLabel(review: ReviewLink): string {
   if (review.accessMode === 'login') return '로그인 필요';
   if (review.accessMode === 'partner') return '제휴/권한';
   return '공개 웹';
+}
+
+function escapeCsvCell(value: string | number | null | undefined): string {
+  const text = String(value ?? '');
+  if (!/[",\n\r]/.test(text)) {
+    return text;
+  }
+  return `"${text.replaceAll('"', '""')}"`;
+}
+
+function buildReviewLinksCsv(items: FlatReview[]): string {
+  const rows = [
+    ['번호', '유치원', '주소', '출처', '제목', '원문 URL', '근거 URL', '접근', '날짜'],
+    ...items.map((item, index) => [
+      String(index + 1),
+      item.kindergarten?.name ?? item.review.kindergartenId,
+      item.kindergarten?.address ?? '',
+      PLATFORM_LABELS[item.platform],
+      item.review.title,
+      item.review.url,
+      getEvidenceUrl(item.review) ?? '',
+      getAccessLabel(item.review),
+      item.review.date ?? '',
+    ]),
+  ];
+
+  return rows.map((row) => row.map(escapeCsvCell).join(',')).join('\n');
 }
 
 interface ReviewsBrowserProps {
@@ -253,6 +290,9 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
   }, [flatReviews]);
 
   const totalReviewCount = flatReviews.length || reviewsData?.totalCount || 0;
+  const webReviewCount = useMemo(() => {
+    return flatReviews.filter((item) => isWebUrl(item.review.url)).length;
+  }, [flatReviews]);
 
   const regionOptions = useMemo(() => {
     const codes = new Set<string>();
@@ -320,6 +360,19 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
     setSort('newest');
   };
 
+  const downloadAllReviewLinks = () => {
+    const csv = buildReviewLinksCsv(filteredReviews);
+    const blob = new Blob([`\uFEFF${csv}`], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = `kindergarten-review-links-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.append(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <main className="min-h-screen bg-[var(--brand-page)] px-4 py-6 text-[var(--brand-ink)] sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-5">
@@ -363,12 +416,25 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
               >
                 JSON 열기
               </a>
+              <button
+                type="button"
+                onClick={downloadAllReviewLinks}
+                disabled={filteredReviews.length === 0}
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                <Download className="h-4 w-4" />
+                CSV 받기
+              </button>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2 text-center sm:min-w-80">
+          <div className="grid grid-cols-2 gap-2 text-center sm:min-w-96 sm:grid-cols-4">
             <div className="rounded-lg border border-[rgba(203,188,174,0.45)] bg-white/80 px-3 py-2">
               <div className="text-lg font-bold">{totalReviewCount ? totalReviewCount.toLocaleString() : '-'}</div>
               <div className="text-xs text-[var(--brand-ink-soft)]">전체 후기</div>
+            </div>
+            <div className="rounded-lg border border-[rgba(203,188,174,0.45)] bg-white/80 px-3 py-2">
+              <div className="text-lg font-bold">{webReviewCount ? webReviewCount.toLocaleString() : '-'}</div>
+              <div className="text-xs text-[var(--brand-ink-soft)]">웹 확인</div>
             </div>
             <div className="rounded-lg border border-[rgba(203,188,174,0.45)] bg-white/80 px-3 py-2">
               <div className="text-lg font-bold">{reviewsData?.kindergartenCount.toLocaleString() ?? '-'}</div>
@@ -537,6 +603,7 @@ function ReviewLinksTable({ items, startIndex }: { items: FlatReview[]; startInd
 function ReviewLinkRow({ item, rowNumber }: { item: FlatReview; rowNumber: number }) {
   const { review, kindergarten, platform } = item;
   const evidenceUrl = getEvidenceUrl(review);
+  const hasWebUrl = isWebUrl(review.url);
   const regionLabel = kindergarten?.sido_code ? SIDO_LABELS[kindergarten.sido_code] ?? kindergarten.sido_code : '지역 미상';
 
   return (
@@ -556,15 +623,19 @@ function ReviewLinkRow({ item, rowNumber }: { item: FlatReview; rowNumber: numbe
       </div>
 
       <div className="min-w-0">
-        <a
-          href={review.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex max-w-full items-start gap-2 text-sm font-semibold text-gray-900 hover:text-[var(--brand-leaf-deep)]"
-        >
-          <span className="line-clamp-2">{review.title}</span>
-          <ExternalLink className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-300 group-hover:text-[var(--brand-leaf)]" />
-        </a>
+        {hasWebUrl ? (
+          <a
+            href={review.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex max-w-full items-start gap-2 text-sm font-semibold text-gray-900 hover:text-[var(--brand-leaf-deep)]"
+          >
+            <span className="line-clamp-2">{review.title}</span>
+            <ExternalLink className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-300 group-hover:text-[var(--brand-leaf)]" />
+          </a>
+        ) : (
+          <div className="line-clamp-2 text-sm font-semibold text-gray-900">{review.title}</div>
+        )}
         <div className="mt-1 truncate text-xs text-gray-400" title={review.url}>
           {getDisplayUrl(review.url)}
         </div>
@@ -581,16 +652,22 @@ function ReviewLinkRow({ item, rowNumber }: { item: FlatReview; rowNumber: numbe
       </div>
 
       <div className="flex flex-wrap justify-start gap-2 md:justify-end">
-        <a
-          href={review.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
-          title={review.url}
-        >
-          원문
-          <ExternalLink className="h-4 w-4" />
-        </a>
+        {hasWebUrl ? (
+          <a
+            href={review.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 items-center justify-center gap-1.5 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+            title={review.url}
+          >
+            원문
+            <ExternalLink className="h-4 w-4" />
+          </a>
+        ) : (
+          <span className="inline-flex h-9 items-center justify-center rounded-lg border border-amber-200 bg-amber-50 px-3 text-sm font-semibold text-amber-700">
+            URL 확인 필요
+          </span>
+        )}
         {evidenceUrl && (
           <a
             href={evidenceUrl}
@@ -612,6 +689,7 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
   const { review, kindergarten, platform } = item;
   const regionLabel = kindergarten?.sido_code ? SIDO_LABELS[kindergarten.sido_code] ?? kindergarten.sido_code : '지역 미상';
   const evidenceUrl = getEvidenceUrl(review);
+  const hasWebUrl = isWebUrl(review.url);
 
   return (
     <article className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition hover:border-[rgba(78,169,109,0.4)]">
@@ -629,30 +707,40 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
             )}
           </div>
 
-          <a
-            href={review.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/title inline-flex max-w-full items-start gap-2 text-base font-bold text-gray-950 hover:text-[var(--brand-leaf-deep)]"
-          >
-            <span className="line-clamp-2">{review.title}</span>
-            <ExternalLink className="mt-1 h-4 w-4 flex-shrink-0 text-gray-400 group-hover/title:text-[var(--brand-leaf)]" />
-          </a>
+          {hasWebUrl ? (
+            <a
+              href={review.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/title inline-flex max-w-full items-start gap-2 text-base font-bold text-gray-950 hover:text-[var(--brand-leaf-deep)]"
+            >
+              <span className="line-clamp-2">{review.title}</span>
+              <ExternalLink className="mt-1 h-4 w-4 flex-shrink-0 text-gray-400 group-hover/title:text-[var(--brand-leaf)]" />
+            </a>
+          ) : (
+            <div className="line-clamp-2 text-base font-bold text-gray-950">{review.title}</div>
+          )}
 
           {review.snippet && (
             <p className="mt-2 line-clamp-2 text-sm leading-6 text-gray-600">{review.snippet}</p>
           )}
 
-          <a
-            href={review.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex max-w-full items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-xs font-medium text-gray-600 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
-            title={review.url}
-          >
-            <LinkIcon className="h-3.5 w-3.5 flex-shrink-0" />
-            <span className="truncate">{getDisplayUrl(review.url)}</span>
-          </a>
+          {hasWebUrl ? (
+            <a
+              href={review.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex max-w-full items-center gap-1.5 rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1.5 text-xs font-medium text-gray-600 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+              title={review.url}
+            >
+              <LinkIcon className="h-3.5 w-3.5 flex-shrink-0" />
+              <span className="truncate">{getDisplayUrl(review.url)}</span>
+            </a>
+          ) : (
+            <span className="mt-3 inline-flex rounded-md border border-amber-200 bg-amber-50 px-2.5 py-1.5 text-xs font-semibold text-amber-700">
+              URL 확인 필요
+            </span>
+          )}
           {evidenceUrl && (
             <a
               href={evidenceUrl}
@@ -675,15 +763,21 @@ function ReviewResultRow({ item }: { item: FlatReview }) {
           <div className="mt-2 truncate text-xs text-gray-400" title={review.sourceName}>
             {review.sourceName || review.url}
           </div>
-          <a
-            href={review.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
-          >
-            원문 열기
-            <ExternalLink className="h-4 w-4" />
-          </a>
+          {hasWebUrl ? (
+            <a
+              href={review.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:border-[var(--brand-leaf)] hover:bg-[rgba(78,169,109,0.06)] hover:text-[var(--brand-leaf-deep)]"
+            >
+              원문 열기
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          ) : (
+            <span className="mt-3 inline-flex h-9 items-center justify-center rounded-lg border border-amber-200 bg-amber-50 px-3 text-sm font-semibold text-amber-700">
+              URL 확인 필요
+            </span>
+          )}
         </div>
       </div>
     </article>
