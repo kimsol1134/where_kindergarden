@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
+  "version": "2026-07-03",
   "totalCount": 12,
-  "kindergartenCount": 2,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-0959-b044-e053-0a32095ab044": [
       {
@@ -55,55 +55,6 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T17:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-7ffd275c",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 연제 거성유치원 2026학년도 입학설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DQT_2btjxN3/",
-        "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "geosunglove 계정에서 2026학년도 거성유치원 입학설명회 초대와 꿈과 사랑이 넘치는 유치원이라는 모집 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission",
-          "info-session"
-        ],
-        "date": "2025-10-27",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "0c81e579",
-        "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+geosunglove+%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQT_2btjxN3/",
-          "normalizedUrl": "www.instagram.com/reel/dqt_2btjxn3",
-          "normalizedText": "부산 연제 거성유치원 2026학년도 입학설명회 instagram geosunglove 계정에서 2026학년도 거성유치원 입학설명회 초대와 꿈과 사랑이 넘치는 유치원이라는 모집 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "0c81e579",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+geosunglove+%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -602,7 +553,44 @@
         },
         "evidenceChecksum": "adab095c"
       }
+    ],
+    "1ecec08d-00ee-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave681-2b02e7d4",
+        "kindergartenId": "1ecec08d-00ee-b044-e053-0a32095ab044",
+        "title": "과정유치원 금강공원 숲생태 활동 기록",
+        "url": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
+        "source": "other",
+        "sourceName": "Instagram · 과정유치원",
+        "snippet": "과정유치원이 금강공원에서 연령별 숲생태 활동을 이어가는 모습을 소개한 공개 릴스입니다.",
+        "summary": "금강공원에서 숲놀이와 숲생태 활동을 꾸준히 진행하는 유치원 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "ecology",
+          "park-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave681-2b02e7d4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
+          "normalizedUrl": "instagram.com/reel/dwn1hdqez7n",
+          "normalizedText": "과정유치원 금강공원 숲생태 숲놀이",
+          "htmlSnapshotHash": "sns-wave681-2b02e7d4",
+          "extractedAt": "2026-07-03T23:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave681"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T01:50:44.541Z"
+  }
 }
