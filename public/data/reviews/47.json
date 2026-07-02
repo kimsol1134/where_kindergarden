@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 349,
+  "totalCount": 351,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -10567,6 +10567,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave707-d409924e",
+        "kindergartenId": "1ecec08c-f9bc-b044-e053-0a32095ab044",
+        "title": "포항 대한유치원 교실 속 자연물놀이 기록",
+        "url": "https://www.instagram.com/reel/DRRZWLMkQAH/",
+        "source": "other",
+        "sourceName": "Instagram · 대한유치원",
+        "snippet": "포항대한유치원이 두호동 지역 단서와 함께 나뭇잎, 꽃잎, 솔방울 등 자연물놀이를 소개한 릴스입니다.",
+        "summary": "유아들이 자연 재료를 만지고 느끼며 생태 감수성을 키운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-materials",
+          "outdoor-learning",
+          "pohang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-d409924e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRRZWLMkQAH/",
+          "normalizedUrl": "instagram.com/reel/drrzwlmkqah",
+          "normalizedText": "대한유치원 포항대한유치원 두호동 자연물놀이 나뭇잎 솔방울",
+          "htmlSnapshotHash": "sns-wave707-d409924e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRRZWLMkQAH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
       }
     ],
     "ec81f57c-aff2-4478-a43b-89e664a63e06": [
@@ -15253,6 +15290,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave667"
+      },
+      {
+        "id": "rev-sns-wave707-95aaf156",
+        "kindergartenId": "1ecec08d-0cef-b044-e053-0a32095ab044",
+        "title": "구미왕산초등학교병설유치원 숲유치원 활동 기록",
+        "url": "https://www.instagram.com/p/DQc84aoE1ZW/",
+        "source": "other",
+        "sourceName": "Instagram · 구미왕산병설유치원",
+        "snippet": "구미왕산병설유치원이 탐색과 발견, 놀이와 협동이 어우러진 숲유치원 활동을 소개한 게시물입니다.",
+        "summary": "유아들이 자연체험과 생태놀이를 통해 숲속교실에서 배운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "outdoor-learning",
+          "gumi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-95aaf156",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQc84aoE1ZW/",
+          "normalizedUrl": "instagram.com/p/dqc84aoe1zw",
+          "normalizedText": "구미왕산병설유치원 구미유치원 숲체험 숲놀이 숲교육 자연체험",
+          "htmlSnapshotHash": "sns-wave707-95aaf156",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQc84aoE1ZW/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
       }
     ],
     "1ecec08d-0836-b044-e053-0a32095ab044": [

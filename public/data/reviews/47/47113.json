@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 88,
+  "totalCount": 89,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-08d5-b044-e053-0a32095ab044": [
@@ -2714,6 +2714,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave707-d409924e",
+        "kindergartenId": "1ecec08c-f9bc-b044-e053-0a32095ab044",
+        "title": "포항 대한유치원 교실 속 자연물놀이 기록",
+        "url": "https://www.instagram.com/reel/DRRZWLMkQAH/",
+        "source": "other",
+        "sourceName": "Instagram · 대한유치원",
+        "snippet": "포항대한유치원이 두호동 지역 단서와 함께 나뭇잎, 꽃잎, 솔방울 등 자연물놀이를 소개한 릴스입니다.",
+        "summary": "유아들이 자연 재료를 만지고 느끼며 생태 감수성을 키운 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-materials",
+          "outdoor-learning",
+          "pohang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-d409924e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRRZWLMkQAH/",
+          "normalizedUrl": "instagram.com/reel/drrzwlmkqah",
+          "normalizedText": "대한유치원 포항대한유치원 두호동 자연물놀이 나뭇잎 솔방울",
+          "htmlSnapshotHash": "sns-wave707-d409924e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRRZWLMkQAH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
       }
     ],
     "1ecec08c-ee7b-b044-e053-0a32095ab044": [
@@ -4113,5 +4150,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

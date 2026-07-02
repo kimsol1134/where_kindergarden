@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 53,
-  "kindergartenCount": 19,
+  "totalCount": 54,
+  "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-0579-b044-e053-0a32095ab044": [
       {
@@ -1901,6 +1901,46 @@
         "approvedAt": "2026-07-02T03:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-00ef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave707-9390ed45",
+        "kindergartenId": "1ecec08d-00ef-b044-e053-0a32095ab044",
+        "title": "인천 예원유치원 숲놀이 프로젝트 기록",
+        "url": "https://www.instagram.com/p/DRbqHlHj-lQ/",
+        "source": "other",
+        "sourceName": "Instagram · 예원유치원",
+        "snippet": "부평구·삼산동 단서가 있는 예원유치원이 숲놀이 프로젝트를 소개한 게시물입니다.",
+        "summary": "유아들이 숲놀이를 통해 자연 속 프로젝트 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "project-learning",
+          "outdoor-learning",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-9390ed45",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/",
+          "normalizedUrl": "instagram.com/p/drbqhlhj-lq",
+          "normalizedText": "예원유치원 부평구 삼산동 숲놀이유치원 프로젝트",
+          "htmlSnapshotHash": "sns-wave707-9390ed45",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

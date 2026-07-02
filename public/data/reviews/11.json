@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 682,
+  "totalCount": 683,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -17982,6 +17982,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      },
+      {
+        "id": "rev-sns-wave707-eebde110",
+        "kindergartenId": "1ecec08c-f5f4-b044-e053-0a32095ab044",
+        "title": "서울 까치유치원 광주시립수목원 자연체험 기록",
+        "url": "https://www.instagram.com/p/DZoe-wJkUdd/",
+        "source": "other",
+        "sourceName": "Instagram · 까치유치원",
+        "snippet": "노원구 단서가 있는 까치유치원이 광주시립수목원에서 도심 속 자연체험을 한 게시물입니다.",
+        "summary": "유아들이 수목원에서 자연을 관찰하고 숲놀이와 현장체험을 함께한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature-visit",
+          "forest-play",
+          "outdoor-learning",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-eebde110",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZoe-wJkUdd/",
+          "normalizedUrl": "instagram.com/p/dzoe-wjkudd",
+          "normalizedText": "까치유치원 노원구 중계동 광주시립수목원 자연체험 숲놀이",
+          "htmlSnapshotHash": "sns-wave707-eebde110",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZoe-wJkUdd/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
       }
     ],
     "89ed1bdc-67a2-4124-a077-bc925d6a901a": [
