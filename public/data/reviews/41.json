@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1063,
+  "totalCount": 1064,
   "kindergartenCount": 447,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -7118,6 +7118,49 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-abdc9d51",
+        "kindergartenId": "8a0707f1-2450-4dac-8146-60c5e8d9d514",
+        "title": "오산숲유치원 문화예술 미술퍼포먼스 Instagram Post",
+        "url": "https://www.instagram.com/p/DYyv5kxkyLI/",
+        "source": "other",
+        "sourceName": "Instagram · 오산숲유치원",
+        "snippet": "검색 결과에서 오산숲유치원, 공립단설, 창의융합, 문화예술교육, 미술퍼포먼스 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "creative-play"
+        ],
+        "date": "2026-05-26",
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "abdc9d51",
+        "structuredFields": {
+          "kindergartenName": "오산숲유치원",
+          "kindergartenAddress": "경기도 오산시 부산동길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYyv5kxkyLI%22%20%22%EC%98%A4%EC%82%B0%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "오산숲유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 미술퍼포먼스 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYyv5kxkyLI/",
+          "normalizedUrl": "instagram.com/p/dyyv5kxkyli",
+          "normalizedText": "오산숲유치원 문화예술 미술퍼포먼스 instagram post 검색 결과에서 오산숲유치원 공립단설 창의융합 문화예술교육 미술퍼포먼스 단서가 확인된다.",
+          "htmlSnapshotHash": "abdc9d51",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-02c4-b044-e053-0a32095ab044": [

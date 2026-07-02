@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 136,
-  "kindergartenCount": 40,
+  "totalCount": 137,
+  "kindergartenCount": 41,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
       {
@@ -6153,6 +6153,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-047b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3557b9f5",
+        "kindergartenId": "1ecec08d-047b-b044-e053-0a32095ab044",
+        "title": "춘천교동초등학교병설유치원 미술관가는길 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXVgyU9E2bD/",
+        "source": "other",
+        "sourceName": "Instagram · hyowonpark_michael",
+        "snippet": "검색 결과에서 춘천교동초병설유치원, 장애인식개선교육, 미술관가는길 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "museum-education"
+        ],
+        "date": "2026-04-19",
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3557b9f5",
+        "structuredFields": {
+          "kindergartenName": "교동초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 춘천시 교동길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXVgyU9E2bD%22%20%22%EC%B6%98%EC%B2%9C%EA%B5%90%EB%8F%99%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AF%B8%EC%88%A0%EA%B4%80%EA%B0%80%EB%8A%94%EA%B8%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "교동초등학교병설유치원 동명 후보가 있으나 춘천교동초병설유치원 단서가 로컬 춘천 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXVgyU9E2bD/",
+          "normalizedUrl": "instagram.com/reel/dxvgyu9e2bd",
+          "normalizedText": "춘천교동초등학교병설유치원 미술관가는길 instagram reel 검색 결과에서 춘천교동초병설유치원 장애인식개선교육 미술관가는길 단서가 확인된다.",
+          "htmlSnapshotHash": "3557b9f5",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

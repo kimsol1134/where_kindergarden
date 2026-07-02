@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 95,
-  "kindergartenCount": 32,
+  "totalCount": 96,
+  "kindergartenCount": 33,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -4463,6 +4463,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T07:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f4f3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-aecf5130",
+        "kindergartenId": "1ecec08c-f4f3-b044-e053-0a32095ab044",
+        "title": "손불초등학교병설유치원 미술관 교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZcgbUJBPEs/",
+        "source": "other",
+        "sourceName": "Instagram · 미술관 교육",
+        "snippet": "검색 결과에서 손불초등학교와 손불초 병설유치원 어린이를 대상으로 한 미술관 연계 교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum-education",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aecf5130",
+        "structuredFields": {
+          "kindergartenName": "손불초등학교병설유치원",
+          "kindergartenAddress": "전라남도 함평군 손불중앙길 121",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZcgbUJBPEs%22%20%22%EC%86%90%EB%B6%88%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AF%B8%EC%88%A0%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "손불초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 미술관 교육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZcgbUJBPEs/",
+          "normalizedUrl": "instagram.com/reel/dzcgbujbpes",
+          "normalizedText": "손불초등학교병설유치원 미술관 교육 instagram reel 검색 결과에서 손불초등학교와 손불초 병설유치원 어린이를 대상으로 한 미술관 연계 교육 단서가 확인된다.",
+          "htmlSnapshotHash": "aecf5130",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

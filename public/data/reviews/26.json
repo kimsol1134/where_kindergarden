@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 280,
-  "kindergartenCount": 85,
+  "totalCount": 281,
+  "kindergartenCount": 86,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -13383,6 +13383,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "82f20b40-6aac-477b-83fe-637a7b9fde82": [
+      {
+        "id": "rev-109a5c00",
+        "kindergartenId": "82f20b40-6aac-477b-83fe-637a7b9fde82",
+        "title": "부산 덕성초등학교병설유치원 샌드아트 Instagram Post",
+        "url": "https://www.instagram.com/p/DPEiRX1ATKz/",
+        "source": "other",
+        "sourceName": "Instagram · 샌드톡",
+        "snippet": "검색 결과에서 부산 덕성초 병설유치원, 샌드아트 미니 공연과 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sand-art",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "109a5c00",
+        "structuredFields": {
+          "kindergartenName": "덕성초등학교병설유치원",
+          "kindergartenAddress": "부산광역시 북구 만덕대로39번길 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPEiRX1ATKz%22%20%22%EB%B6%80%EC%82%B0%20%EB%8D%95%EC%84%B1%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%8C%EB%93%9C%EC%95%84%ED%8A%B8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "덕성초등학교병설유치원 동명 후보가 있으나 부산 단서가 로컬 부산 북구 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPEiRX1ATKz/",
+          "normalizedUrl": "instagram.com/p/dpeirx1atkz",
+          "normalizedText": "부산 덕성초등학교병설유치원 샌드아트 instagram post 검색 결과에서 부산 덕성초 병설유치원 샌드아트 미니 공연과 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "109a5c00",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

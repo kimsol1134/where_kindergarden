@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 611,
-  "kindergartenCount": 235,
+  "totalCount": 612,
+  "kindergartenCount": 236,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -22165,6 +22165,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "7e0ce4f2-8d6e-4568-9e83-17a353fee72b": [
+      {
+        "id": "rev-733768c5",
+        "kindergartenId": "7e0ce4f2-8d6e-4568-9e83-17a353fee72b",
+        "title": "서울송천초등학교병설유치원 벽화 활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DRWoqbmEi-t/",
+        "source": "other",
+        "sourceName": "Instagram · 벽화 활동",
+        "snippet": "검색 결과에서 서울 강북구 송천초와 병설유치원 친구들이 함께 벽화를 그린 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "mural"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "733768c5",
+        "structuredFields": {
+          "kindergartenName": "서울송천초등학교병설유치원",
+          "kindergartenAddress": "서울특별시 강북구 삼양로20길 29",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRWoqbmEi-t%22%20%22%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%B6%81%EA%B5%AC%20%EC%86%A1%EC%B2%9C%EC%B4%88%22%20%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B2%BD%ED%99%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "송천초등학교병설유치원 동명 후보가 있으나 서울 강북구 단서가 로컬 서울송천초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRWoqbmEi-t/",
+          "normalizedUrl": "instagram.com/p/drwoqbmei-t",
+          "normalizedText": "서울송천초등학교병설유치원 벽화 활동 instagram post 검색 결과에서 서울 강북구 송천초와 병설유치원 친구들이 함께 벽화를 그린 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "733768c5",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
