@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 40,
+  "totalCount": 41,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -1553,6 +1553,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave695-e6d7bb1d",
+        "kindergartenId": "1ecec08c-fd74-b044-e053-0a32095ab044",
+        "title": "광주 양산리라유치원 7세 부모참여수업 기록",
+        "url": "https://www.instagram.com/reel/DMKbFvBSqcr/",
+        "source": "other",
+        "sourceName": "Instagram · 양산리라유치원",
+        "snippet": "양산리라유치원이 7세 유아들과 부모님이 함께하는 부모참여수업을 진행한 공개 릴스입니다.",
+        "summary": "가족과 함께 수업에 참여하며 유아의 발표와 활동 과정을 공유한 유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.970Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave695-e6d7bb1d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMKbFvBSqcr/",
+          "normalizedUrl": "instagram.com/reel/dmkbfvbsqcr",
+          "normalizedText": "양산리라유치원 광주 7세 부모참여수업 가족 수업",
+          "htmlSnapshotHash": "sns-wave695-e6d7bb1d",
+          "extractedAt": "2026-07-03T23:59:59.970Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMKbFvBSqcr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.970Z",
+        "approvedBy": "codex-manual-sns-wave695"
       }
     ],
     "1fc6dd86-ccd0-d1d2-e053-0a32095ad1d2": [

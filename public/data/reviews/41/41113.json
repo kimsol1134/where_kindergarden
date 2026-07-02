@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 34,
+  "totalCount": 35,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-09da-b044-e053-0a32095ab044": [
@@ -845,6 +845,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave695-38ef2770",
+        "kindergartenId": "1ecec08d-0de2-b044-e053-0a32095ab044",
+        "title": "수원 다사랑유치원 부모 참여 수업 기록",
+        "url": "https://www.instagram.com/p/DKV2-T-TCHx/",
+        "source": "other",
+        "sourceName": "Instagram · 다사랑유치원",
+        "snippet": "다사랑유치원이 아이들이 기다리던 부모님과 함께하는 참여 수업을 진행한 공개 게시물입니다.",
+        "summary": "원내 놀이와 만들기 활동을 가족과 함께 경험하며 아이들의 일상 배움을 공유한 유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "suwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.970Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave695-38ef2770",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKV2-T-TCHx/",
+          "normalizedUrl": "instagram.com/p/dkv2-t-tchx",
+          "normalizedText": "다사랑유치원 부모 참여 수업 놀이 만들기 가족 활동",
+          "htmlSnapshotHash": "sns-wave695-38ef2770",
+          "extractedAt": "2026-07-03T23:59:59.970Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DKV2-T-TCHx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.970Z",
+        "approvedBy": "codex-manual-sns-wave695"
       }
     ],
     "1ecec08c-f342-b044-e053-0a32095ab044": [

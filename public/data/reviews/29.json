@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 174,
+  "totalCount": 176,
   "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -909,6 +909,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave695-4cb3282b",
+        "kindergartenId": "1ecec08d-0d98-b044-e053-0a32095ab044",
+        "title": "광주 유앤미유치원 부모참여수업 기록",
+        "url": "https://www.instagram.com/reel/DZCcOv5NR3f/",
+        "source": "other",
+        "sourceName": "Instagram · 유앤미유치원",
+        "snippet": "유앤미유치원이 부모님과 함께 웃고 만들며 즐거운 시간을 보낸 부모참여수업 공개 릴스입니다.",
+        "summary": "가족과 교실 활동을 함께 나누며 유아의 원 생활과 배움 과정을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.970Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave695-4cb3282b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZCcOv5NR3f/",
+          "normalizedUrl": "instagram.com/reel/dzccov5nr3f",
+          "normalizedText": "유앤미유치원 광산구 수완지구 부모참여수업 함께 웃고 만들기",
+          "htmlSnapshotHash": "sns-wave695-4cb3282b",
+          "extractedAt": "2026-07-03T23:59:59.970Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZCcOv5NR3f/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.970Z",
+        "approvedBy": "codex-manual-sns-wave695"
       }
     ],
     "1ecec08c-ef72-b044-e053-0a32095ab044": [
@@ -7093,6 +7129,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave695-e6d7bb1d",
+        "kindergartenId": "1ecec08c-fd74-b044-e053-0a32095ab044",
+        "title": "광주 양산리라유치원 7세 부모참여수업 기록",
+        "url": "https://www.instagram.com/reel/DMKbFvBSqcr/",
+        "source": "other",
+        "sourceName": "Instagram · 양산리라유치원",
+        "snippet": "양산리라유치원이 7세 유아들과 부모님이 함께하는 부모참여수업을 진행한 공개 릴스입니다.",
+        "summary": "가족과 함께 수업에 참여하며 유아의 발표와 활동 과정을 공유한 유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.970Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave695-e6d7bb1d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMKbFvBSqcr/",
+          "normalizedUrl": "instagram.com/reel/dmkbfvbsqcr",
+          "normalizedText": "양산리라유치원 광주 7세 부모참여수업 가족 수업",
+          "htmlSnapshotHash": "sns-wave695-e6d7bb1d",
+          "extractedAt": "2026-07-03T23:59:59.970Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMKbFvBSqcr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.970Z",
+        "approvedBy": "codex-manual-sns-wave695"
       }
     ],
     "1ecec08c-ef71-b044-e053-0a32095ab044": [
@@ -7930,5 +8002,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:45.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.970Z"
 }

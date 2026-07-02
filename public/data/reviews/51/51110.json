@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 68,
+  "totalCount": 69,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -1613,6 +1613,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave695-dbc0c2e1",
+        "kindergartenId": "1ecec08d-0a68-b044-e053-0a32095ab044",
+        "title": "춘천 두란노유치원 부모참여수업 준비 기록",
+        "url": "https://www.instagram.com/reel/DPvhjx3EUR8/",
+        "source": "other",
+        "sourceName": "Instagram · 두란노유치원",
+        "snippet": "두란노유치원이 부모참여수업에서 확인할 활동 조각들을 소개한 공개 릴스입니다.",
+        "summary": "가족과 함께 볼 수업 활동을 준비하며 유아 활동 과정을 보여 준 유치원 참여수업 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "chuncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.970Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave695-dbc0c2e1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPvhjx3EUR8/",
+          "normalizedUrl": "instagram.com/reel/dpvhjx3eur8",
+          "normalizedText": "두란노유치원 춘천 부모참여수업 활동 조각 준비",
+          "htmlSnapshotHash": "sns-wave695-dbc0c2e1",
+          "extractedAt": "2026-07-03T23:59:59.970Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPvhjx3EUR8/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.970Z",
+        "approvedBy": "codex-manual-sns-wave695"
       }
     ],
     "2b744e1d-f4fc-404a-894a-fe371fb83fb9": [
