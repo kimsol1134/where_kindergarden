@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "version": "2026-07-03",
+  "totalCount": 2,
+  "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-fbee-b044-e053-0a32095ab044": [
       {
@@ -56,6 +56,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f7ab-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave667-a82cdb98",
+        "kindergartenId": "1ecec08c-f7ab-b044-e053-0a32095ab044",
+        "title": "평창초등학교병설유치원 자연체험 기록",
+        "url": "https://www.instagram.com/reel/DZ9z35tyZ6d/",
+        "source": "other",
+        "sourceName": "Instagram · 평창초등학교병설유치원",
+        "snippet": "평창초등학교 병설유치원 어린이들이 뗏목마을을 방문해 자연체험을 한 공개 릴스입니다.",
+        "summary": "지역 자연체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "field-experience"
+        ],
+        "date": "2026-06-24",
+        "collectedAt": "2026-07-03T17:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave667-a82cdb98",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ9z35tyZ6d/",
+          "normalizedUrl": "instagram.com/reel/dz9z35tyz6d",
+          "normalizedText": "평창초등학교병설유치원 자연체험 뗏목마을 방문",
+          "htmlSnapshotHash": "sns-wave667-a82cdb98",
+          "extractedAt": "2026-07-03T17:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ9z35tyZ6d/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave667"
       }
     ]
   }

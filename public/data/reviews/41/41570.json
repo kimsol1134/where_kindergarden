@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 122,
+  "totalCount": 123,
   "kindergartenCount": 39,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -4646,6 +4646,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave665"
+      },
+      {
+        "id": "rev-sns-wave667-bae8a044",
+        "kindergartenId": "1ecec08c-f6ff-b044-e053-0a32095ab044",
+        "title": "운유초등학교병설유치원 전문가와 함께한 숲체험 기록",
+        "url": "https://www.instagram.com/p/DZcUokmk94g/",
+        "source": "other",
+        "sourceName": "Instagram · 운유초등학교병설유치원",
+        "snippet": "운유초등학교병설유치원이 전문가와 함께한 숲체험과 생태체험장 활동을 소개한 공개 게시물입니다.",
+        "summary": "전문가 연계 숲체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T17:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave667-bae8a044",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZcUokmk94g/",
+          "normalizedUrl": "instagram.com/p/dzcuokmk94g",
+          "normalizedText": "운유초등학교병설유치원 전문가 숲체험 생태체험장",
+          "htmlSnapshotHash": "sns-wave667-bae8a044",
+          "extractedAt": "2026-07-03T17:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZcUokmk94g/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave667"
       }
     ],
     "cffe391c-e027-463e-aa62-7652f7961067": [

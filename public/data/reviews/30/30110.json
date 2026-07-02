@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 24,
-  "kindergartenCount": 8,
+  "version": "2026-07-03",
+  "totalCount": 26,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
       {
@@ -1142,8 +1142,97 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave667-2441db10",
+        "kindergartenId": "1ecec08c-f487-b044-e053-0a32095ab044",
+        "title": "산흥초등학교병설유치원 봄 숲체험 기록",
+        "url": "https://www.instagram.com/p/DXEjuEbGDTK/",
+        "source": "other",
+        "sourceName": "Instagram · 산흥초등학교병설유치원",
+        "snippet": "산흥초등학교병설유치원이 플로깅, 쑥 캐기, 숲체험 등 봄 테마 활동을 소개한 공개 게시물입니다.",
+        "summary": "봄 생태놀이와 숲체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "spring-theme"
+        ],
+        "date": "2026-04-13",
+        "collectedAt": "2026-07-03T17:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave667-2441db10",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXEjuEbGDTK/",
+          "normalizedUrl": "instagram.com/p/dxejuebgdtk",
+          "normalizedText": "산흥초등학교병설유치원 봄테마학습주간 플로깅 쑥 캐기 숲체험",
+          "htmlSnapshotHash": "sns-wave667-2441db10",
+          "extractedAt": "2026-07-03T17:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXEjuEbGDTK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave667"
+      }
+    ],
+    "1ecec08c-ffab-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-96cac3f3",
+        "kindergartenId": "1ecec08c-ffab-b044-e053-0a32095ab044",
+        "title": "대전 산내유치원 로봇과학 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DI05GUkzLso/",
+        "source": "other",
+        "sourceName": "Instagram · 산내유치원",
+        "snippet": "검색 결과에서 산내유치원의 로봇과학, 순서도와 움직이는 로봇 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "robot-science",
+          "coding"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "96cac3f3",
+        "structuredFields": {
+          "kindergartenName": "산내유치원",
+          "kindergartenAddress": "대전광역시 동구 산내로 1292",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DI05GUkzLso%22%20%22%EC%82%B0%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A1%9C%EB%B4%87%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "산내유치원은 동명 확장 후보가 있으나 산내유치원 정확 명칭이 로컬 대전 동구 산내유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DI05GUkzLso/",
+          "normalizedUrl": "instagram.com/reel/di05gukzlso",
+          "normalizedText": "대전 산내유치원 로봇과학 활동 instagram reel 검색 결과에서 산내유치원의 로봇과학, 순서도와 움직이는 로봇 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "96cac3f3",
+          "extractedAt": "2026-07-03T15:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "산내유치원",
+            "kindergartenAddress": "대전광역시 동구 산내로 1292",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DI05GUkzLso%22%20%22%EC%82%B0%EB%82%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%A1%9C%EB%B4%87%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "산내유치원은 동명 확장 후보가 있으나 산내유치원 정확 명칭이 로컬 대전 동구 산내유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

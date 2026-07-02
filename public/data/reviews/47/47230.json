@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 8,
-  "kindergartenCount": 2,
+  "version": "2026-07-03",
+  "totalCount": 9,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-024b-b044-e053-0a32095ab044": [
       {
@@ -378,6 +378,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f06f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave667-26d6f8c5",
+        "kindergartenId": "1ecec08c-f06f-b044-e053-0a32095ab044",
+        "title": "영천 영화초등학교병설유치원 찾아가는 숲교육 기록",
+        "url": "https://www.instagram.com/reel/DaBw8wbzhOo/",
+        "source": "other",
+        "sourceName": "Instagram · 영화초등학교병설유치원",
+        "snippet": "영천 영화초등학교 병설유치원 친구들이 학교숲에서 찾아가는 숲교육을 함께한 공개 릴스입니다.",
+        "summary": "학교숲과 그림책을 연결한 숲교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "forest-education"
+        ],
+        "date": "2026-06-25",
+        "collectedAt": "2026-07-03T17:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave667-26d6f8c5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaBw8wbzhOo/",
+          "normalizedUrl": "instagram.com/reel/dabw8wbzhoo",
+          "normalizedText": "영천 영화초등학교병설유치원 찾아가는 숲교육 학교숲",
+          "htmlSnapshotHash": "sns-wave667-26d6f8c5",
+          "extractedAt": "2026-07-03T17:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaBw8wbzhOo/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave667"
       }
     ]
   }
