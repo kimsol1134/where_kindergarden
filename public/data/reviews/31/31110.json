@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 33,
+  "totalCount": 34,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -151,6 +151,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave712-950f8f18",
+        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
+        "title": "울산 약사가온유치원 방문 클래식 음악회 기록",
+        "url": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+        "source": "other",
+        "sourceName": "Instagram · 울산교육 소식",
+        "snippet": "울산 중구 약사가온유치원이 유아들에게 클래식과 다양한 장르의 음악을 들려주는 방문 클래식 음악회를 운영한 게시물입니다.",
+        "summary": "유아들이 클래식과 여러 음악 장르를 가까이 접한 문화예술 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "classic-concert",
+          "music-concert",
+          "arts-education",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-950f8f18",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+          "normalizedUrl": "instagram.com/p/dkepyflt3zz",
+          "normalizedText": "약사가온유치원 울산 중구 방문 클래식 음악회 다양한 장르 음악",
+          "htmlSnapshotHash": "sns-wave712-950f8f18",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08c-f5c5-b044-e053-0a32095ab044": [
@@ -1564,5 +1601,6 @@
         "approvedBy": "codex-manual-sns-wave687"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

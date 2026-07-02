@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 23,
+  "totalCount": 24,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f27b-b044-e053-0a32095ab044": [
@@ -817,6 +817,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T22:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave712-6d85509d",
+        "kindergartenId": "1ecec08c-f64c-b044-e053-0a32095ab044",
+        "title": "서울 성산아트유치원 합창제 기록",
+        "url": "https://www.instagram.com/reel/DUhLpFhDznX/",
+        "source": "other",
+        "sourceName": "Instagram · 성산아트유치원",
+        "snippet": "마포구 성산아트유치원이 성산아트 합창제에서 아이들이 함께 부른 노래를 소개한 릴스입니다.",
+        "summary": "유아들이 한 목소리로 노래하며 공동체와 표현의 즐거움을 경험한 합창제 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "choir",
+          "music-concert",
+          "stage-performance",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-6d85509d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUhLpFhDznX/",
+          "normalizedUrl": "instagram.com/reel/duhlpfhdznx",
+          "normalizedText": "성산아트유치원 마포구유치원 성산아트 합창제 함께 부른 노래",
+          "htmlSnapshotHash": "sns-wave712-6d85509d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUhLpFhDznX/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08c-f27c-b044-e053-0a32095ab044": [
@@ -1018,5 +1055,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

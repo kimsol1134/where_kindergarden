@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 529,
+  "totalCount": 530,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -7820,6 +7820,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:50:00.000Z",
         "approvedBy": "codex-manual-sns-wave676"
+      },
+      {
+        "id": "rev-sns-wave712-f1d406b0",
+        "kindergartenId": "1ecec08d-0bc5-b044-e053-0a32095ab044",
+        "title": "대구 한국예술유치원 가족 클래식 음악축제 기록",
+        "url": "https://www.instagram.com/reel/DU_7jDXEiYD/",
+        "source": "other",
+        "sourceName": "Instagram · 한국예술유치원",
+        "snippet": "대구 수성구 한국예술유치원이 가족 클래식 음악축제 무대와 아이들의 참여 장면을 소개한 릴스입니다.",
+        "summary": "유아들이 가족과 함께 클래식 음악축제를 경험하며 무대 표현을 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "classic-concert",
+          "family-event",
+          "stage-performance",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-f1d406b0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DU_7jDXEiYD/",
+          "normalizedUrl": "instagram.com/reel/du_7jdxeiyd",
+          "normalizedText": "한국예술유치원 대구 수성구 가족 클래식 음악축제 무대 참여",
+          "htmlSnapshotHash": "sns-wave712-f1d406b0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DU_7jDXEiYD/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08d-03fc-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 77,
+  "totalCount": 78,
   "kindergartenCount": 31,
   "reviews": {
     "1ecec08d-0dbe-b044-e053-0a32095ab044": [
@@ -1303,6 +1303,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.998Z",
         "approvedBy": "codex-manual-sns-wave701"
+      },
+      {
+        "id": "rev-sns-wave712-2b93781d",
+        "kindergartenId": "1ecec08c-fe3a-b044-e053-0a32095ab044",
+        "title": "분당 한국유치원 어린이 작은 음악회 기록",
+        "url": "https://www.instagram.com/p/DaRhRWYOqjF/",
+        "source": "other",
+        "sourceName": "Instagram · 한국유치원",
+        "snippet": "분당 한국유치원이 어린이들이 친구들과 함께 배운 노래를 무대에서 발표한 작은 음악회 게시물입니다.",
+        "summary": "유아들이 음악 발표를 통해 자신감과 표현 경험을 쌓은 음악회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "song",
+          "bundang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-2b93781d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaRhRWYOqjF/",
+          "normalizedUrl": "instagram.com/p/darhrwyoqjf",
+          "normalizedText": "한국유치원 분당구 벌말로 작은 음악회 배운 노래 무대 발표",
+          "htmlSnapshotHash": "sns-wave712-2b93781d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaRhRWYOqjF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08d-0466-b044-e053-0a32095ab044": [
@@ -3391,5 +3428,6 @@
         "approvedBy": "codex-manual-sns-wave700"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

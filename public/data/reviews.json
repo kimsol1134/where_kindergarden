@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 5316,
-  "kindergartenCount": 1706,
+  "totalCount": 5322,
+  "kindergartenCount": 1708,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -15083,6 +15083,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T10:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave712-6d85509d",
+        "kindergartenId": "1ecec08c-f64c-b044-e053-0a32095ab044",
+        "title": "서울 성산아트유치원 합창제 기록",
+        "url": "https://www.instagram.com/reel/DUhLpFhDznX/",
+        "source": "other",
+        "sourceName": "Instagram · 성산아트유치원",
+        "snippet": "마포구 성산아트유치원이 성산아트 합창제에서 아이들이 함께 부른 노래를 소개한 릴스입니다.",
+        "summary": "유아들이 한 목소리로 노래하며 공동체와 표현의 즐거움을 경험한 합창제 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "choir",
+          "music-concert",
+          "stage-performance",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-6d85509d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUhLpFhDznX/",
+          "normalizedUrl": "instagram.com/reel/duhlpfhdznx",
+          "normalizedText": "성산아트유치원 마포구유치원 성산아트 합창제 함께 부른 노래",
+          "htmlSnapshotHash": "sns-wave712-6d85509d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUhLpFhDznX/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08c-f27c-b044-e053-0a32095ab044": [
@@ -47185,6 +47222,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:50:00.000Z",
         "approvedBy": "codex-manual-sns-wave676"
+      },
+      {
+        "id": "rev-sns-wave712-f1d406b0",
+        "kindergartenId": "1ecec08d-0bc5-b044-e053-0a32095ab044",
+        "title": "대구 한국예술유치원 가족 클래식 음악축제 기록",
+        "url": "https://www.instagram.com/reel/DU_7jDXEiYD/",
+        "source": "other",
+        "sourceName": "Instagram · 한국예술유치원",
+        "snippet": "대구 수성구 한국예술유치원이 가족 클래식 음악축제 무대와 아이들의 참여 장면을 소개한 릴스입니다.",
+        "summary": "유아들이 가족과 함께 클래식 음악축제를 경험하며 무대 표현을 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "classic-concert",
+          "family-event",
+          "stage-performance",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-f1d406b0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DU_7jDXEiYD/",
+          "normalizedUrl": "instagram.com/reel/du_7jdxeiyd",
+          "normalizedText": "한국예술유치원 대구 수성구 가족 클래식 음악축제 무대 참여",
+          "htmlSnapshotHash": "sns-wave712-f1d406b0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DU_7jDXEiYD/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08d-03fc-b044-e053-0a32095ab044": [
@@ -96885,6 +96959,43 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave712-950f8f18",
+        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
+        "title": "울산 약사가온유치원 방문 클래식 음악회 기록",
+        "url": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+        "source": "other",
+        "sourceName": "Instagram · 울산교육 소식",
+        "snippet": "울산 중구 약사가온유치원이 유아들에게 클래식과 다양한 장르의 음악을 들려주는 방문 클래식 음악회를 운영한 게시물입니다.",
+        "summary": "유아들이 클래식과 여러 음악 장르를 가까이 접한 문화예술 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "classic-concert",
+          "music-concert",
+          "arts-education",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-950f8f18",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+          "normalizedUrl": "instagram.com/p/dkepyflt3zz",
+          "normalizedText": "약사가온유치원 울산 중구 방문 클래식 음악회 다양한 장르 음악",
+          "htmlSnapshotHash": "sns-wave712-950f8f18",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08c-f5c5-b044-e053-0a32095ab044": [
@@ -106342,6 +106453,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.998Z",
         "approvedBy": "codex-manual-sns-wave701"
+      },
+      {
+        "id": "rev-sns-wave712-2b93781d",
+        "kindergartenId": "1ecec08c-fe3a-b044-e053-0a32095ab044",
+        "title": "분당 한국유치원 어린이 작은 음악회 기록",
+        "url": "https://www.instagram.com/p/DaRhRWYOqjF/",
+        "source": "other",
+        "sourceName": "Instagram · 한국유치원",
+        "snippet": "분당 한국유치원이 어린이들이 친구들과 함께 배운 노래를 무대에서 발표한 작은 음악회 게시물입니다.",
+        "summary": "유아들이 음악 발표를 통해 자신감과 표현 경험을 쌓은 음악회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "song",
+          "bundang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-2b93781d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaRhRWYOqjF/",
+          "normalizedUrl": "instagram.com/p/darhrwyoqjf",
+          "normalizedText": "한국유치원 분당구 벌말로 작은 음악회 배운 노래 무대 발표",
+          "htmlSnapshotHash": "sns-wave712-2b93781d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaRhRWYOqjF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ],
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -226781,6 +226929,84 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave711"
+      }
+    ],
+    "1ecec08c-f163-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave712-07644e6d",
+        "kindergartenId": "1ecec08c-f163-b044-e053-0a32095ab044",
+        "title": "대전 서구 꿈내리유치원 제35회 음악회 기록",
+        "url": "https://www.instagram.com/reel/DR3oXzlDbx6/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 서구 꿈내리유치원이 제35회 꿈내리 음악회를 앞두고 어린이들의 무대 열정과 도전을 소개한 릴스입니다.",
+        "summary": "유아들이 음악회 무대를 준비하며 협동과 표현을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "festival",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-07644e6d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DR3oXzlDbx6/",
+          "normalizedUrl": "instagram.com/reel/dr3oxzldbx6",
+          "normalizedText": "꿈내리유치원 대전 서구 제35회 음악회 어린이 무대 열정 도전",
+          "htmlSnapshotHash": "sns-wave712-07644e6d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DR3oXzlDbx6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
+      }
+    ],
+    "1ecec08d-038e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave712-17aba493",
+        "kindergartenId": "1ecec08d-038e-b044-e053-0a32095ab044",
+        "title": "인천 참아름유치원 열린음악회 기록",
+        "url": "https://www.instagram.com/p/DStzx3YEVOb/",
+        "source": "other",
+        "sourceName": "Instagram · 참아름유치원",
+        "snippet": "참아름유치원이 열린음악회에서 친구들이 음악 무대를 선보인 장면을 담은 게시물입니다.",
+        "summary": "유아들이 열린음악회 무대에서 노래와 표현 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "open-concert",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-17aba493",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DStzx3YEVOb/",
+          "normalizedUrl": "instagram.com/p/dstzx3yevob",
+          "normalizedText": "참아름유치원 열린음악회 우리우리의 음악회 무대",
+          "htmlSnapshotHash": "sns-wave712-17aba493",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DStzx3YEVOb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ]
   },

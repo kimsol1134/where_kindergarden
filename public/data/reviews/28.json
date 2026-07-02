@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 372,
-  "kindergartenCount": 113,
+  "totalCount": 373,
+  "kindergartenCount": 114,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -14566,6 +14566,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      }
+    ],
+    "1ecec08d-038e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave712-17aba493",
+        "kindergartenId": "1ecec08d-038e-b044-e053-0a32095ab044",
+        "title": "인천 참아름유치원 열린음악회 기록",
+        "url": "https://www.instagram.com/p/DStzx3YEVOb/",
+        "source": "other",
+        "sourceName": "Instagram · 참아름유치원",
+        "snippet": "참아름유치원이 열린음악회에서 친구들이 음악 무대를 선보인 장면을 담은 게시물입니다.",
+        "summary": "유아들이 열린음악회 무대에서 노래와 표현 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "open-concert",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-17aba493",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DStzx3YEVOb/",
+          "normalizedUrl": "instagram.com/p/dstzx3yevob",
+          "normalizedText": "참아름유치원 열린음악회 우리우리의 음악회 무대",
+          "htmlSnapshotHash": "sns-wave712-17aba493",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DStzx3YEVOb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ]
   },

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 365,
-  "kindergartenCount": 75,
+  "totalCount": 366,
+  "kindergartenCount": 76,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
       {
@@ -16862,6 +16862,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      }
+    ],
+    "1ecec08c-f163-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave712-07644e6d",
+        "kindergartenId": "1ecec08c-f163-b044-e053-0a32095ab044",
+        "title": "대전 서구 꿈내리유치원 제35회 음악회 기록",
+        "url": "https://www.instagram.com/reel/DR3oXzlDbx6/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 서구 꿈내리유치원이 제35회 꿈내리 음악회를 앞두고 어린이들의 무대 열정과 도전을 소개한 릴스입니다.",
+        "summary": "유아들이 음악회 무대를 준비하며 협동과 표현을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "stage-performance",
+          "festival",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave712-07644e6d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DR3oXzlDbx6/",
+          "normalizedUrl": "instagram.com/reel/dr3oxzldbx6",
+          "normalizedText": "꿈내리유치원 대전 서구 제35회 음악회 어린이 무대 열정 도전",
+          "htmlSnapshotHash": "sns-wave712-07644e6d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DR3oXzlDbx6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave712"
       }
     ]
   },
