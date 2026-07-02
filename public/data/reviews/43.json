@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 99,
+  "totalCount": 100,
   "kindergartenCount": 23,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -2545,6 +2545,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ea5dd855",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DMMxFGdPWeY/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 청주유치원, 복대동유치원, 진흥초병설유치원, 텃밭, 애호박전 요리활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "cooking-activity"
+        ],
+        "date": "2025-07-16",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ea5dd855",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMMxFGdPWeY/",
+          "normalizedUrl": "instagram.com/p/dmmxfgdpwey",
+          "normalizedText": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 instagram post 검색 결과에서 청주유치원 복대동유치원 진흥초병설유치원 텃밭 애호박전 요리활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ea5dd855",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

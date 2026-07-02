@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1058,
+  "totalCount": 1060,
   "kindergartenCount": 444,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -33487,6 +33487,58 @@
           ]
         },
         "evidenceChecksum": "ba2cada0"
+      },
+      {
+        "id": "rev-207d368a",
+        "kindergartenId": "1ecec08d-00f7-b044-e053-0a32095ab044",
+        "title": "동실유치원 감자수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DaJpOq6AWLP/",
+        "source": "other",
+        "sourceName": "Instagram · 동실유치원",
+        "snippet": "검색 결과에서 동실유치원, 감자수확, 유치원 텃밭, 감자캐기, 자연체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "nature-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "207d368a",
+        "structuredFields": {
+          "kindergartenName": "동실유치원",
+          "kindergartenAddress": "경기도 화성시 병점동로 45-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaJpOq6AWLP%22%20%22%EB%8F%99%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동실유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 수확 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaJpOq6AWLP/",
+          "normalizedUrl": "instagram.com/p/dajpoq6awlp",
+          "normalizedText": "동실유치원 감자수확 instagram post 검색 결과에서 동실유치원 감자수확 유치원 텃밭 감자캐기 자연체험 단서가 확인된다.",
+          "htmlSnapshotHash": "207d368a",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동실유치원",
+            "kindergartenAddress": "경기도 화성시 병점동로 45-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaJpOq6AWLP%22%20%22%EB%8F%99%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동실유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 수확 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0545-b044-e053-0a32095ab044": [
@@ -38730,6 +38782,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3a26bc34",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "오산 운암초등학교병설유치원 상추 수확 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYRcDdjRiao/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 운암초병설유치원, 오산유치원, 꼬마농부, 상추수확 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "little-farmer"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3a26bc34",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYRcDdjRiao%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운암초등학교병설유치원 동명 후보가 있으나 오산유치원 단서가 로컬 경기 오산 운암초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYRcDdjRiao/",
+          "normalizedUrl": "instagram.com/reel/dyrcddjriao",
+          "normalizedText": "오산 운암초등학교병설유치원 상추 수확 instagram reel 검색 결과에서 운암초병설유치원 오산유치원 꼬마농부 상추수확 단서가 확인된다.",
+          "htmlSnapshotHash": "3a26bc34",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암초등학교병설유치원",
+            "kindergartenAddress": "경기도 오산시 원동로 63",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYRcDdjRiao%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운암초등학교병설유치원 동명 후보가 있으나 오산유치원 단서가 로컬 경기 오산 운암초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 4977,
-  "kindergartenCount": 1636,
+  "totalCount": 4983,
+  "kindergartenCount": 1637,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -83463,6 +83463,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e7984e86",
+        "kindergartenId": "1ecec08d-02ca-b044-e053-0a32095ab044",
+        "title": "대전두리초등학교병설유치원 감자 수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DaJqtYKD_G9/",
+        "source": "other",
+        "sourceName": "Instagram · 대전두리초등학교병설유치원",
+        "snippet": "검색 결과에서 대전두리초병설유치원, 두리생태교육, 감자 수확 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "ecology-education"
+        ],
+        "date": "2026-06-28",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e7984e86",
+        "structuredFields": {
+          "kindergartenName": "대전두리초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 유성구 와룡로 37",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaJqtYKD_G9%22%20%22%EB%8C%80%EC%A0%84%EB%91%90%EB%A6%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%20%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전두리초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 대전두리초병설유치원 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaJqtYKD_G9/",
+          "normalizedUrl": "instagram.com/p/dajqtykd_g9",
+          "normalizedText": "대전두리초등학교병설유치원 감자 수확 instagram post 검색 결과에서 대전두리초병설유치원 두리생태교육 감자 수확 단서가 확인된다.",
+          "htmlSnapshotHash": "e7984e86",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전두리초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 유성구 와룡로 37",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaJqtYKD_G9%22%20%22%EB%8C%80%EC%A0%84%EB%91%90%EB%A6%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%20%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전두리초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 대전두리초병설유치원 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0604-b044-e053-0a32095ab044": [
@@ -135735,6 +135787,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-207d368a",
+        "kindergartenId": "1ecec08d-00f7-b044-e053-0a32095ab044",
+        "title": "동실유치원 감자수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DaJpOq6AWLP/",
+        "source": "other",
+        "sourceName": "Instagram · 동실유치원",
+        "snippet": "검색 결과에서 동실유치원, 감자수확, 유치원 텃밭, 감자캐기, 자연체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "nature-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "207d368a",
+        "structuredFields": {
+          "kindergartenName": "동실유치원",
+          "kindergartenAddress": "경기도 화성시 병점동로 45-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaJpOq6AWLP%22%20%22%EB%8F%99%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동실유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 수확 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaJpOq6AWLP/",
+          "normalizedUrl": "instagram.com/p/dajpoq6awlp",
+          "normalizedText": "동실유치원 감자수확 instagram post 검색 결과에서 동실유치원 감자수확 유치원 텃밭 감자캐기 자연체험 단서가 확인된다.",
+          "htmlSnapshotHash": "207d368a",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동실유치원",
+            "kindergartenAddress": "경기도 화성시 병점동로 45-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaJpOq6AWLP%22%20%22%EB%8F%99%EC%8B%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동실유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 수확 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0545-b044-e053-0a32095ab044": [
@@ -144370,6 +144474,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ea5dd855",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DMMxFGdPWeY/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 청주유치원, 복대동유치원, 진흥초병설유치원, 텃밭, 애호박전 요리활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "cooking-activity"
+        ],
+        "date": "2025-07-16",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ea5dd855",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMMxFGdPWeY/",
+          "normalizedUrl": "instagram.com/p/dmmxfgdpwey",
+          "normalizedText": "진흥초등학교병설유치원 텃밭 애호박전 요리활동 instagram post 검색 결과에서 청주유치원 복대동유치원 진흥초병설유치원 텃밭 애호박전 요리활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ea5dd855",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMMxFGdPWeY%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22%20%22%EC%B2%AD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 청주 및 복대동 단서가 로컬 충북 청주 진흥초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -197905,6 +198061,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3a26bc34",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "오산 운암초등학교병설유치원 상추 수확 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYRcDdjRiao/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 운암초병설유치원, 오산유치원, 꼬마농부, 상추수확 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "little-farmer"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3a26bc34",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYRcDdjRiao%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "운암초등학교병설유치원 동명 후보가 있으나 오산유치원 단서가 로컬 경기 오산 운암초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYRcDdjRiao/",
+          "normalizedUrl": "instagram.com/reel/dyrcddjriao",
+          "normalizedText": "오산 운암초등학교병설유치원 상추 수확 instagram reel 검색 결과에서 운암초병설유치원 오산유치원 꼬마농부 상추수확 단서가 확인된다.",
+          "htmlSnapshotHash": "3a26bc34",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "운암초등학교병설유치원",
+            "kindergartenAddress": "경기도 오산시 원동로 63",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYRcDdjRiao%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%81%EC%B6%94%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "운암초등학교병설유치원 동명 후보가 있으나 오산유치원 단서가 로컬 경기 오산 운암초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f93-b044-e053-0a32095ab044": [
@@ -213771,6 +213979,112 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0800-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-25c93859",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 텃밭활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY6y88DBtHv/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구산초등학교구서분교장병설유치원, 현동유치원, 마산유치원, 텃밭활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "outdoor-play"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "25c93859",
+        "structuredFields": {
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6y88DBtHv/",
+          "normalizedUrl": "instagram.com/reel/dy6y88dbthv",
+          "normalizedText": "구산초등학교구서분교장병설유치원 텃밭활동 instagram reel 검색 결과에서 구산초등학교구서분교장병설유치원 현동유치원 마산유치원 텃밭활동 단서가 확인된다.",
+          "htmlSnapshotHash": "25c93859",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a134a60d",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 Instagram Post",
+        "url": "https://www.instagram.com/p/DaAbP91Abye/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구서분교장병설유치원, 마산유치원, 공립유치원, 텃밭, 꼬마농부 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "little-farmer"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a134a60d",
+        "structuredFields": {
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaAbP91Abye/",
+          "normalizedUrl": "instagram.com/p/daabp91abye",
+          "normalizedText": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 instagram post 검색 결과에서 구서분교장병설유치원 마산유치원 공립유치원 텃밭 꼬마농부 단서가 확인된다.",
+          "htmlSnapshotHash": "a134a60d",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

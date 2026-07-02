@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 291,
+  "totalCount": 292,
   "kindergartenCount": 68,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -5275,6 +5275,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e7984e86",
+        "kindergartenId": "1ecec08d-02ca-b044-e053-0a32095ab044",
+        "title": "대전두리초등학교병설유치원 감자 수확 Instagram Post",
+        "url": "https://www.instagram.com/p/DaJqtYKD_G9/",
+        "source": "other",
+        "sourceName": "Instagram · 대전두리초등학교병설유치원",
+        "snippet": "검색 결과에서 대전두리초병설유치원, 두리생태교육, 감자 수확 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "ecology-education"
+        ],
+        "date": "2026-06-28",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e7984e86",
+        "structuredFields": {
+          "kindergartenName": "대전두리초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 유성구 와룡로 37",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaJqtYKD_G9%22%20%22%EB%8C%80%EC%A0%84%EB%91%90%EB%A6%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%20%EC%88%98%ED%99%95%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "대전두리초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 대전두리초병설유치원 단서와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaJqtYKD_G9/",
+          "normalizedUrl": "instagram.com/p/dajqtykd_g9",
+          "normalizedText": "대전두리초등학교병설유치원 감자 수확 instagram post 검색 결과에서 대전두리초병설유치원 두리생태교육 감자 수확 단서가 확인된다.",
+          "htmlSnapshotHash": "e7984e86",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전두리초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 유성구 와룡로 37",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaJqtYKD_G9%22%20%22%EB%8C%80%EC%A0%84%EB%91%90%EB%A6%AC%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B0%90%EC%9E%90%20%EC%88%98%ED%99%95%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "대전두리초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 대전두리초병설유치원 단서와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

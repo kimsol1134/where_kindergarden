@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 199,
-  "kindergartenCount": 81,
+  "totalCount": 201,
+  "kindergartenCount": 82,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -9257,6 +9257,112 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0800-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-25c93859",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 텃밭활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY6y88DBtHv/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구산초등학교구서분교장병설유치원, 현동유치원, 마산유치원, 텃밭활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "outdoor-play"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "25c93859",
+        "structuredFields": {
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6y88DBtHv/",
+          "normalizedUrl": "instagram.com/reel/dy6y88dbthv",
+          "normalizedText": "구산초등학교구서분교장병설유치원 텃밭활동 instagram reel 검색 결과에서 구산초등학교구서분교장병설유치원 현동유치원 마산유치원 텃밭활동 단서가 확인된다.",
+          "htmlSnapshotHash": "25c93859",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a134a60d",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 Instagram Post",
+        "url": "https://www.instagram.com/p/DaAbP91Abye/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구서분교장병설유치원, 마산유치원, 공립유치원, 텃밭, 꼬마농부 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "little-farmer"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a134a60d",
+        "structuredFields": {
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaAbP91Abye/",
+          "normalizedUrl": "instagram.com/p/daabp91abye",
+          "normalizedText": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 instagram post 검색 결과에서 구서분교장병설유치원 마산유치원 공립유치원 텃밭 꼬마농부 단서가 확인된다.",
+          "htmlSnapshotHash": "a134a60d",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
