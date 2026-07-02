@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 144,
+  "totalCount": 145,
   "kindergartenCount": 46,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -263,6 +263,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-50eb8559",
+        "kindergartenId": "1ecec08d-06b8-b044-e053-0a32095ab044",
+        "title": "선일유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+        "source": "other",
+        "sourceName": "Instagram · 선일유치원",
+        "snippet": "검색 결과에서 선일유치원 친구들의 시장놀이, 광주 북구 운암동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "50eb8559",
+        "structuredFields": {
+          "kindergartenName": "선일유치원",
+          "kindergartenAddress": "광주광역시 북구 서강로54번길 50",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLQ0T02zCtf%22%20%22%EC%84%A0%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%81%EA%B5%AC%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 선일유치원과 광주 북구 운암동 단서를 함께 보여 동명 후보 중 광주 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+          "normalizedUrl": "instagram.com/reel/dlq0t02zctf",
+          "normalizedText": "선일유치원 시장놀이 instagram reel 검색 결과에서 선일유치원 친구들의 시장놀이 광주 북구 운암동 단서가 확인된다.",
+          "htmlSnapshotHash": "50eb8559",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

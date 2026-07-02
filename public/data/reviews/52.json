@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 161,
+  "totalCount": 162,
   "kindergartenCount": 52,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -5752,6 +5752,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-95716daa",
+        "kindergartenId": "1ecec08d-0ae2-b044-e053-0a32095ab044",
+        "title": "전주용흥초등학교병설유치원 찾아오는 시장놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZbuZNKj7jH/",
+        "source": "other",
+        "sourceName": "Instagram · 전주용흥초등학교병설유치원",
+        "snippet": "검색 결과에서 전주용흥초등학교병설유치원의 찾아오는 원내 놀이체험과 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economy-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "95716daa",
+        "structuredFields": {
+          "kindergartenName": "전주용흥초등학교병설유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 완산구 삼천천변1길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZbuZNKj7jH%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%A9%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 전주용흥초등학교병설유치원 전체 명칭을 보여 동일 명칭 후보 중 전주 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZbuZNKj7jH/",
+          "normalizedUrl": "instagram.com/p/dzbuznkj7jh",
+          "normalizedText": "전주용흥초등학교병설유치원 찾아오는 시장놀이 instagram post 검색 결과에서 전주용흥초등학교병설유치원의 찾아오는 원내 놀이체험과 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "95716daa",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

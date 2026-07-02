@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 307,
-  "kindergartenCount": 104,
+  "totalCount": 308,
+  "kindergartenCount": 105,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -11529,6 +11529,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ef6b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-69a8caef",
+        "kindergartenId": "1ecec08c-ef6b-b044-e053-0a32095ab044",
+        "title": "논현유치원 협력수업 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZoCFgIThSc/",
+        "source": "other",
+        "sourceName": "Instagram · 논현유치원",
+        "snippet": "검색 결과에서 인천금융고와 논현유치원의 협력수업, 시장놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "collaboration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "69a8caef",
+        "structuredFields": {
+          "kindergartenName": "논현유치원",
+          "kindergartenAddress": "인천광역시 남동구 은봉로 177",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZoCFgIThSc%22%20%22%EB%85%BC%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "논현유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 시장놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZoCFgIThSc/",
+          "normalizedUrl": "instagram.com/reel/dzocfgithsc",
+          "normalizedText": "논현유치원 협력수업 시장놀이 instagram reel 검색 결과에서 인천금융고와 논현유치원의 협력수업 시장놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "69a8caef",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

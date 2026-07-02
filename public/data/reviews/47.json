@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 296,
+  "totalCount": 297,
   "kindergartenCount": 100,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -6465,6 +6465,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-756a6e88",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 별별 초록 장터 Instagram Post",
+        "url": "https://www.instagram.com/p/DLBXBMjyACK/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "green-market"
+        ],
+        "date": "2025-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "756a6e88",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLBXBMjyACK%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B4%88%EB%A1%9D%20%EC%9E%A5%ED%84%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 초록 장터 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLBXBMjyACK/",
+          "normalizedUrl": "instagram.com/p/dlbxbmjyack",
+          "normalizedText": "경산유치원 별별 초록 장터 instagram post 검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "756a6e88",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

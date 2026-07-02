@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 5032,
-  "kindergartenCount": 1655,
+  "totalCount": 5040,
+  "kindergartenCount": 1656,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -71473,6 +71473,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-50eb8559",
+        "kindergartenId": "1ecec08d-06b8-b044-e053-0a32095ab044",
+        "title": "선일유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+        "source": "other",
+        "sourceName": "Instagram · 선일유치원",
+        "snippet": "검색 결과에서 선일유치원 친구들의 시장놀이, 광주 북구 운암동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "role-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "50eb8559",
+        "structuredFields": {
+          "kindergartenName": "선일유치원",
+          "kindergartenAddress": "광주광역시 북구 서강로54번길 50",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLQ0T02zCtf%22%20%22%EC%84%A0%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%81%EA%B5%AC%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 선일유치원과 광주 북구 운암동 단서를 함께 보여 동명 후보 중 광주 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLQ0T02zCtf/",
+          "normalizedUrl": "instagram.com/reel/dlq0t02zctf",
+          "normalizedText": "선일유치원 시장놀이 instagram reel 검색 결과에서 선일유치원 친구들의 시장놀이 광주 북구 운암동 단서가 확인된다.",
+          "htmlSnapshotHash": "50eb8559",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0c2b-b044-e053-0a32095ab044": [
@@ -91710,6 +91753,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a3df7730",
+        "kindergartenId": "1ecec08c-f136-b044-e053-0a32095ab044",
+        "title": "와동초등학교병설유치원 우리 동네 경제활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZt1HwHNkmo/",
+        "source": "other",
+        "sourceName": "Instagram · 와동초등학교병설유치원",
+        "snippet": "검색 결과에서 와동초등학교병설유치원 친구들의 우리 동네 활동과 경제 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-community"
+        ],
+        "date": "2026-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a3df7730",
+        "structuredFields": {
+          "kindergartenName": "와동초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 대덕구 신탄진로 189",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZt1HwHNkmo%22%20%22%EC%99%80%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B2%BD%EC%A0%9C%20%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 와동초등학교병설유치원과 대전 공립유치원 단서를 함께 보여 대전 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZt1HwHNkmo/",
+          "normalizedUrl": "instagram.com/reel/dzt1hwhnkmo",
+          "normalizedText": "와동초등학교병설유치원 우리 동네 경제활동 instagram reel 검색 결과에서 와동초등학교병설유치원 친구들의 우리 동네 활동과 경제 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "a3df7730",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -167051,6 +167137,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-756a6e88",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 별별 초록 장터 Instagram Post",
+        "url": "https://www.instagram.com/p/DLBXBMjyACK/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "green-market"
+        ],
+        "date": "2025-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "756a6e88",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLBXBMjyACK%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B4%88%EB%A1%9D%20%EC%9E%A5%ED%84%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 초록 장터 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLBXBMjyACK/",
+          "normalizedUrl": "instagram.com/p/dlbxbmjyack",
+          "normalizedText": "경산유치원 별별 초록 장터 instagram post 검색 결과에서 경산유치원 별별 초록 장터와 지구환경 사랑 주간 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "756a6e88",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f71c-b044-e053-0a32095ab044": [
@@ -178070,6 +178199,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c344146a",
+        "kindergartenId": "1ecec08d-01b1-b044-e053-0a32095ab044",
+        "title": "해달별유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZrq5x2T6kJ/",
+        "source": "other",
+        "sourceName": "Instagram · 해달별유치원",
+        "snippet": "검색 결과에서 해달별유치원의 시장놀이와 경제교육 단서가 확인되고, 계정 단서가 거제 해달별유치원과 연결된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economy-education"
+        ],
+        "date": "2026-06-17",
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c344146a",
+        "structuredFields": {
+          "kindergartenName": "해달별유치원",
+          "kindergartenAddress": "경상남도 거제시 문동4길 15-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZrq5x2T6kJ%22%20%22%ED%95%B4%EB%8B%AC%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동명 기관이 있으나 검색 결과의 계정 단서가 거제 해달별유치원으로 확인되어 거제 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZrq5x2T6kJ/",
+          "normalizedUrl": "instagram.com/reel/dzrq5x2t6kj",
+          "normalizedText": "해달별유치원 시장놀이 instagram reel 검색 결과에서 해달별유치원의 시장놀이와 경제교육 단서가 확인되고 계정 단서가 거제 해달별유치원과 연결된다.",
+          "htmlSnapshotHash": "c344146a",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -196158,6 +196330,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-95716daa",
+        "kindergartenId": "1ecec08d-0ae2-b044-e053-0a32095ab044",
+        "title": "전주용흥초등학교병설유치원 찾아오는 시장놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZbuZNKj7jH/",
+        "source": "other",
+        "sourceName": "Instagram · 전주용흥초등학교병설유치원",
+        "snippet": "검색 결과에서 전주용흥초등학교병설유치원의 찾아오는 원내 놀이체험과 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "economy-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "95716daa",
+        "structuredFields": {
+          "kindergartenName": "전주용흥초등학교병설유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 완산구 삼천천변1길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZbuZNKj7jH%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%A9%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 전주용흥초등학교병설유치원 전체 명칭을 보여 동일 명칭 후보 중 전주 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZbuZNKj7jH/",
+          "normalizedUrl": "instagram.com/p/dzbuznkj7jh",
+          "normalizedText": "전주용흥초등학교병설유치원 찾아오는 시장놀이 instagram post 검색 결과에서 전주용흥초등학교병설유치원의 찾아오는 원내 놀이체험과 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "95716daa",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "eb43e817-e834-4036-a4ed-341bcd34f3d0": [
@@ -199379,6 +199594,92 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e82e9619",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "운암초등학교병설유치원 나눔시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DK06NJ6B4nw/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 나눔시장놀이와 오산 운암초등학교병설유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "sharing-market"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e82e9619",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DK06NJ6B4nw%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 운암초등학교병설유치원과 오산 단서를 함께 보여 동명 후보 중 오산 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DK06NJ6B4nw/",
+          "normalizedUrl": "instagram.com/reel/dk06nj6b4nw",
+          "normalizedText": "운암초등학교병설유치원 나눔시장놀이 instagram reel 검색 결과에서 나눔시장놀이와 오산 운암초등학교병설유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "e82e9619",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2570bd0a",
+        "kindergartenId": "1ecec08c-f8b3-b044-e053-0a32095ab044",
+        "title": "운암초등학교병설유치원 나눔시장 준비 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLBe6wzhr1u/",
+        "source": "other",
+        "sourceName": "Instagram · 운암초등학교병설유치원",
+        "snippet": "검색 결과에서 나눔시장 준비 활동과 오산 운암초등학교병설유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "sharing-market"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2570bd0a",
+        "structuredFields": {
+          "kindergartenName": "운암초등학교병설유치원",
+          "kindergartenAddress": "경기도 오산시 원동로 63",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLBe6wzhr1u%22%20%22%EC%9A%B4%EC%95%94%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%82%98%EB%88%94%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 운암초병설유치원과 오산 단서를 함께 보여 동명 후보 중 오산 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLBe6wzhr1u/",
+          "normalizedUrl": "instagram.com/reel/dlbe6wzhr1u",
+          "normalizedText": "운암초등학교병설유치원 나눔시장 준비 instagram reel 검색 결과에서 나눔시장 준비 활동과 오산 운암초등학교병설유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "2570bd0a",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -216372,6 +216673,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ef6b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-69a8caef",
+        "kindergartenId": "1ecec08c-ef6b-b044-e053-0a32095ab044",
+        "title": "논현유치원 협력수업 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZoCFgIThSc/",
+        "source": "other",
+        "sourceName": "Instagram · 논현유치원",
+        "snippet": "검색 결과에서 인천금융고와 논현유치원의 협력수업, 시장놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "collaboration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "69a8caef",
+        "structuredFields": {
+          "kindergartenName": "논현유치원",
+          "kindergartenAddress": "인천광역시 남동구 은봉로 177",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZoCFgIThSc%22%20%22%EB%85%BC%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "논현유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 시장놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZoCFgIThSc/",
+          "normalizedUrl": "instagram.com/reel/dzocfgithsc",
+          "normalizedText": "논현유치원 협력수업 시장놀이 instagram reel 검색 결과에서 인천금융고와 논현유치원의 협력수업 시장놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "69a8caef",
+          "extractedAt": "2026-07-03T16:20:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
