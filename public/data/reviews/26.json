@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 274,
+  "totalCount": 277,
   "kindergartenCount": 85,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -6393,6 +6393,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b833a8bc",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 숲 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZFCPhViRfU/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 공립단설 남명유치원, 숲 선생님, 숲 생태놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "ecology-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b833a8bc",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZFCPhViRfU%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZFCPhViRfU/",
+          "normalizedUrl": "instagram.com/p/dzfcphvirfu",
+          "normalizedText": "부산 남명유치원 숲 생태놀이 instagram post 검색 결과에서 공립단설 남명유치원 숲 선생님 숲 생태놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "b833a8bc",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZFCPhViRfU%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b60-b044-e053-0a32095ab044": [
@@ -7943,6 +7995,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a19d5214",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "금샘누리유치원 텃밭 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DP8Z7x6ko8_/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "검색 결과에서 금샘누리유치원, 텃밭, 꼬마농부, 생태놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-play",
+          "garden-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a19d5214",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DP8Z7x6ko8_%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 생태놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DP8Z7x6ko8_/",
+          "normalizedUrl": "instagram.com/p/dp8z7x6ko8_",
+          "normalizedText": "금샘누리유치원 텃밭 생태놀이 instagram post 검색 결과에서 금샘누리유치원 텃밭 꼬마농부 생태놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "a19d5214",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DP8Z7x6ko8_%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 생태놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -9525,6 +9629,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.993Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aae229df",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 씨앗폭탄 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DWxwvsHkVbE/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 공립단설 영일유치원, 씨앗폭탄, 자연 친화 생태놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-play",
+          "nature-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aae229df",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxwvsHkVbE/",
+          "normalizedUrl": "instagram.com/p/dwxwvshkvbe",
+          "normalizedText": "영일유치원 씨앗폭탄 생태놀이 instagram post 검색 결과에서 공립단설 영일유치원 씨앗폭탄 자연 친화 생태놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "aae229df",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "영일유치원",
+            "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
