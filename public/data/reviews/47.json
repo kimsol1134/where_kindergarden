@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 347,
+  "totalCount": 348,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -952,6 +952,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave700-84213384",
+        "kindergartenId": "1ecec08d-024b-b044-e053-0a32095ab044",
+        "title": "영천 한성유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/p/DNU8v-tSccW/",
+        "source": "other",
+        "sourceName": "Instagram · 한성유치원",
+        "snippet": "영천 한성유치원이 경보음에 맞춰 유아들이 안전한 장소로 이동한 훈련을 공개한 게시물입니다.",
+        "summary": "아이들이 줄을 서고 이동 순서를 지키며 재난 대비 행동을 익힌 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "yeongcheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-84213384",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNU8v-tSccW/",
+          "normalizedUrl": "instagram.com/p/dnu8v-tsccw",
+          "normalizedText": "한성유치원 영천 소방대피훈련 안전교육 질서정연",
+          "htmlSnapshotHash": "sns-wave700-84213384",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DNU8v-tSccW/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ],
     "1ecec08d-083f-b044-e053-0a32095ab044": [
@@ -15933,5 +15969,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.995Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
 }

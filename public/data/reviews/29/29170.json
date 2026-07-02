@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 41,
+  "totalCount": 42,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -307,6 +307,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave700-9c66522b",
+        "kindergartenId": "1ecec08d-06b8-b044-e053-0a32095ab044",
+        "title": "광주 선일유치원 강북소방서 안전배움 기록",
+        "url": "https://www.instagram.com/p/DaJ2wvcvXqC/",
+        "source": "other",
+        "sourceName": "Instagram · 선일유치원",
+        "snippet": "광주 북구 선일유치원이 강북소방서와 함께 연기 상황 속 대피 방법을 배운 공개 게시물입니다.",
+        "summary": "유아들이 낮은 자세와 이동 요령을 체험하며 안전 행동을 익힌 소방 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "safety-education",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-9c66522b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaJ2wvcvXqC/",
+          "normalizedUrl": "instagram.com/p/daj2wvcvxqc",
+          "normalizedText": "선일유치원 광주 북구 운암동 강북소방서 안전배움 소방대피훈련",
+          "htmlSnapshotHash": "sns-wave700-9c66522b",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaJ2wvcvXqC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ],
     "1ecec08d-0c2b-b044-e053-0a32095ab044": [

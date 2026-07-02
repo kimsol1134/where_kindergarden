@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 75,
-  "kindergartenCount": 30,
+  "totalCount": 76,
+  "kindergartenCount": 31,
   "reviews": {
     "1ecec08d-0dbe-b044-e053-0a32095ab044": [
       {
@@ -3315,6 +3315,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "codex-manual-sns-wave679"
+      }
+    ],
+    "1ecec08c-ef67-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave700-dc0421b2",
+        "kindergartenId": "1ecec08c-ef67-b044-e053-0a32095ab044",
+        "title": "성남 샘터유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DPOH4DKEUgF/",
+        "source": "other",
+        "sourceName": "Instagram · 샘터유치원",
+        "snippet": "분당 샘터유치원이 유아들과 소방대피훈련을 진행한 공개 릴스입니다.",
+        "summary": "아이들이 입과 코를 가리고 질서 있게 앞마당으로 이동한 안전 훈련 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-practice",
+          "seongnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-dc0421b2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPOH4DKEUgF/",
+          "normalizedUrl": "instagram.com/reel/dpoh4dkeugf",
+          "normalizedText": "샘터유치원 분당구 수내동 소방대피훈련 유치원소방대피훈련",
+          "htmlSnapshotHash": "sns-wave700-dc0421b2",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DPOH4DKEUgF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ]
   }

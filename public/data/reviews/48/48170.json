@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 26,
+  "totalCount": 27,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0925-b044-e053-0a32095ab044": [
@@ -1040,6 +1040,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T19:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave700-1bdf4021",
+        "kindergartenId": "1ecec08c-f98f-b044-e053-0a32095ab044",
+        "title": "진주 아이소크라테스유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DN7kKmQk5Kj/",
+        "source": "other",
+        "sourceName": "Instagram · 아이소크라테스유치원",
+        "snippet": "아이소크라테스유치원이 매달 진행하는 소방대피훈련 모습을 공개한 릴스입니다.",
+        "summary": "아이들이 신호에 맞춰 침착하게 이동하며 안전 습관을 익힌 훈련 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "jinju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-1bdf4021",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN7kKmQk5Kj/",
+          "normalizedUrl": "instagram.com/reel/dn7kkmqk5kj",
+          "normalizedText": "아이소크라테스유치원 진주 소방대피훈련 안전교육 유치원",
+          "htmlSnapshotHash": "sns-wave700-1bdf4021",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DN7kKmQk5Kj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ],
     "1ecec08d-0c79-b044-e053-0a32095ab044": [
@@ -1292,5 +1328,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.997Z"
 }

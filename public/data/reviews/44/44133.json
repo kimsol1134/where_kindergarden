@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 85,
+  "totalCount": 86,
   "kindergartenCount": 15,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -1399,6 +1399,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.500Z",
         "approvedBy": "codex-manual-sns-wave691"
+      },
+      {
+        "id": "rev-sns-wave700-5ddfdb9b",
+        "kindergartenId": "86d9f494-609c-4bfe-a2b2-3739219e3667",
+        "title": "천안 백석유치원 소방합동훈련 기록",
+        "url": "https://www.instagram.com/reel/DLzRwuzTuru/",
+        "source": "other",
+        "sourceName": "Instagram · 백석유치원",
+        "snippet": "백석유치원이 소방합동훈련을 진행하며 안전하게 대피하는 과정을 공개한 릴스입니다.",
+        "summary": "유아들이 실제 상황을 가정해 이동 순서와 안전 행동을 익힌 훈련 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "joint-drill",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-5ddfdb9b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLzRwuzTuru/",
+          "normalizedUrl": "instagram.com/reel/dlzrwuzturu",
+          "normalizedText": "백석유치원 천안 백석동 소방합동훈련 소방대피훈련",
+          "htmlSnapshotHash": "sns-wave700-5ddfdb9b",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DLzRwuzTuru/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ],
     "1ecec08c-ee38-b044-e053-0a32095ab044": [

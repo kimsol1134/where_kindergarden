@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 36,
+  "totalCount": 37,
   "kindergartenCount": 17,
   "reviews": {
     "eb9b3ba7-83e9-4eb1-b025-502b89668be8": [
@@ -1478,6 +1478,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "codex-manual-sns-wave672"
+      },
+      {
+        "id": "rev-sns-wave700-50bfbff7",
+        "kindergartenId": "1ecec08c-f234-b044-e053-0a32095ab044",
+        "title": "파주국제유치원 소방관과 함께한 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DYURELHzh7Z/",
+        "source": "other",
+        "sourceName": "Instagram · 파주국제유치원",
+        "snippet": "파주국제유치원이 실제 소방관과 함께 진행한 소방대피훈련 장면을 공개한 게시물입니다.",
+        "summary": "아이들이 안내에 따라 질서를 지키며 안전하게 이동한 합동 안전교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "paju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.997Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave700-50bfbff7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYURELHzh7Z/",
+          "normalizedUrl": "instagram.com/p/dyurelhzh7z",
+          "normalizedText": "파주국제유치원 파주 소방관 소방대피훈련 안전의날",
+          "htmlSnapshotHash": "sns-wave700-50bfbff7",
+          "extractedAt": "2026-07-03T23:59:59.997Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYURELHzh7Z/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.997Z",
+        "approvedBy": "codex-manual-sns-wave700"
       }
     ]
   }
