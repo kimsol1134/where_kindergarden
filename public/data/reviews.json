@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 4964,
-  "kindergartenCount": 1631,
+  "totalCount": 4970,
+  "kindergartenCount": 1634,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -30355,6 +30355,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cfdd847d",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DLjc3EKpZSu/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 공립단설 남명유치원, 부산 명지, 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": "2025-06-30",
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cfdd847d",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLjc3EKpZSu/",
+          "normalizedUrl": "instagram.com/p/dljc3ekpzsu",
+          "normalizedText": "부산 남명유치원 물놀이 instagram post 검색 결과에서 공립단설 남명유치원 부산 명지 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "cfdd847d",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b60-b044-e053-0a32095ab044": [
@@ -32059,6 +32111,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e9745825",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "금샘누리유치원 물놀이 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DCDzcVHyCAu/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "검색 결과에서 금샘누리유치원, 물놀이 안전교육, 준비운동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-safety",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e9745825",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCDzcVHyCAu%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 안전교육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCDzcVHyCAu/",
+          "normalizedUrl": "instagram.com/p/dcdzcvhycau",
+          "normalizedText": "금샘누리유치원 물놀이 안전교육 instagram post 검색 결과에서 금샘누리유치원 물놀이 안전교육 준비운동 단서가 확인된다.",
+          "htmlSnapshotHash": "e9745825",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCDzcVHyCAu%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 안전교육 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -98478,6 +98582,58 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-4ad02111",
+        "kindergartenId": "4502c027-9527-4513-a53b-d31a604c44d2",
+        "title": "수원금호초등학교병설유치원 생존수영 Instagram Post",
+        "url": "https://www.instagram.com/p/DMhNSnNykPV/",
+        "source": "other",
+        "sourceName": "Instagram · 수원금호초등학교병설유치원",
+        "snippet": "검색 결과에서 수원 금호초 병설유치원, 물놀이 안전, 생존 수영 수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-safety",
+          "swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4ad02111",
+        "structuredFields": {
+          "kindergartenName": "수원금호초등학교병설유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMhNSnNykPV/",
+          "normalizedUrl": "instagram.com/p/dmhnsnnykpv",
+          "normalizedText": "수원금호초등학교병설유치원 생존수영 instagram post 검색 결과에서 수원 금호초 병설유치원 물놀이 안전 생존 수영 수업 단서가 확인된다.",
+          "htmlSnapshotHash": "4ad02111",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수원금호초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "6e9537b7-a67b-46e7-83f9-a66ecfb72cf4": [
@@ -213085,6 +213241,168 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-04d0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-10b14412",
+        "kindergartenId": "1ecec08d-04d0-b044-e053-0a32095ab044",
+        "title": "별내초등학교병설유치원 물놀이 DAY Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaKdgMsR2rv/",
+        "source": "other",
+        "sourceName": "Instagram · 별내초등학교병설유치원",
+        "snippet": "검색 결과에서 별내초병설유치원, 물놀이 DAY, 물총놀이, 수영장 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "10b14412",
+        "structuredFields": {
+          "kindergartenName": "별내초등학교병설유치원",
+          "kindergartenAddress": "경기도 남양주시 청학로92번길 38",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaKdgMsR2rv%22%20%22%EB%B3%84%EB%82%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "별내초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaKdgMsR2rv/",
+          "normalizedUrl": "instagram.com/reel/dakdgmsr2rv",
+          "normalizedText": "별내초등학교병설유치원 물놀이 day instagram reel 검색 결과에서 별내초병설유치원 물놀이 day 물총놀이 수영장 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "10b14412",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "별내초등학교병설유치원",
+            "kindergartenAddress": "경기도 남양주시 청학로92번길 38",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaKdgMsR2rv%22%20%22%EB%B3%84%EB%82%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "별내초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a39a3960-9110-4981-a223-4999e80587fc": [
+      {
+        "id": "rev-e3202834",
+        "kindergartenId": "a39a3960-9110-4981-a223-4999e80587fc",
+        "title": "김포가온유치원 여름 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DNhseeK0_xK/",
+        "source": "other",
+        "sourceName": "Instagram · 김포가온유치원",
+        "snippet": "검색 결과에서 김포가온유치원, 무더운 여름, 신나는 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e3202834",
+        "structuredFields": {
+          "kindergartenName": "김포가온유치원",
+          "kindergartenAddress": "경기도 김포시 태장로 845",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNhseeK0_xK/",
+          "normalizedUrl": "instagram.com/p/dnhseek0_xk",
+          "normalizedText": "김포가온유치원 여름 물놀이 instagram post 검색 결과에서 김포가온유치원 무더운 여름 신나는 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e3202834",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "김포가온유치원",
+            "kindergartenAddress": "경기도 김포시 태장로 845",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-feb1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5a4126b1",
+        "kindergartenId": "1ecec08c-feb1-b044-e053-0a32095ab044",
+        "title": "서울남성초등학교병설유치원 여름 물놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNDKBSePxUE/",
+        "source": "other",
+        "sourceName": "Instagram · 서울남성초등학교병설유치원",
+        "snippet": "검색 결과에서 서울남성초 병설유치원, 여름 물놀이, 안전한 구성 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a4126b1",
+        "structuredFields": {
+          "kindergartenName": "서울남성초등학교병설유치원",
+          "kindergartenAddress": "서울특별시 동작구 사당로23길 57-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNDKBSePxUE%22%20%22%EC%84%9C%EC%9A%B8%EB%82%A8%EC%84%B1%EC%B4%88%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "서울남성초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNDKBSePxUE/",
+          "normalizedUrl": "instagram.com/reel/dndkbsepxue",
+          "normalizedText": "서울남성초등학교병설유치원 여름 물놀이 instagram reel 검색 결과에서 서울남성초 병설유치원 여름 물놀이 안전한 구성 단서가 확인된다.",
+          "htmlSnapshotHash": "5a4126b1",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "서울남성초등학교병설유치원",
+            "kindergartenAddress": "서울특별시 동작구 사당로23길 57-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNDKBSePxUE%22%20%22%EC%84%9C%EC%9A%B8%EB%82%A8%EC%84%B1%EC%B4%88%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "서울남성초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

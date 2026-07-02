@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 610,
-  "kindergartenCount": 234,
+  "totalCount": 611,
+  "kindergartenCount": 235,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -22111,6 +22111,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-feb1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5a4126b1",
+        "kindergartenId": "1ecec08c-feb1-b044-e053-0a32095ab044",
+        "title": "서울남성초등학교병설유치원 여름 물놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DNDKBSePxUE/",
+        "source": "other",
+        "sourceName": "Instagram · 서울남성초등학교병설유치원",
+        "snippet": "검색 결과에서 서울남성초 병설유치원, 여름 물놀이, 안전한 구성 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5a4126b1",
+        "structuredFields": {
+          "kindergartenName": "서울남성초등학교병설유치원",
+          "kindergartenAddress": "서울특별시 동작구 사당로23길 57-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNDKBSePxUE%22%20%22%EC%84%9C%EC%9A%B8%EB%82%A8%EC%84%B1%EC%B4%88%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "서울남성초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNDKBSePxUE/",
+          "normalizedUrl": "instagram.com/reel/dndkbsepxue",
+          "normalizedText": "서울남성초등학교병설유치원 여름 물놀이 instagram reel 검색 결과에서 서울남성초 병설유치원 여름 물놀이 안전한 구성 단서가 확인된다.",
+          "htmlSnapshotHash": "5a4126b1",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "서울남성초등학교병설유치원",
+            "kindergartenAddress": "서울특별시 동작구 사당로23길 57-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNDKBSePxUE%22%20%22%EC%84%9C%EC%9A%B8%EB%82%A8%EC%84%B1%EC%B4%88%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "서울남성초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

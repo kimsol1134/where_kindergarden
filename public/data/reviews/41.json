@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1054,
-  "kindergartenCount": 442,
+  "totalCount": 1057,
+  "kindergartenCount": 444,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -357,6 +357,58 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-4ad02111",
+        "kindergartenId": "4502c027-9527-4513-a53b-d31a604c44d2",
+        "title": "수원금호초등학교병설유치원 생존수영 Instagram Post",
+        "url": "https://www.instagram.com/p/DMhNSnNykPV/",
+        "source": "other",
+        "sourceName": "Instagram · 수원금호초등학교병설유치원",
+        "snippet": "검색 결과에서 수원 금호초 병설유치원, 물놀이 안전, 생존 수영 수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-safety",
+          "swimming"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4ad02111",
+        "structuredFields": {
+          "kindergartenName": "수원금호초등학교병설유치원",
+          "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMhNSnNykPV/",
+          "normalizedUrl": "instagram.com/p/dmhnsnnykpv",
+          "normalizedText": "수원금호초등학교병설유치원 생존수영 instagram post 검색 결과에서 수원 금호초 병설유치원 물놀이 안전 생존 수영 수업 단서가 확인된다.",
+          "htmlSnapshotHash": "4ad02111",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수원금호초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 권선구 칠보로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DMhNSnNykPV%22%20%22%EC%88%98%EC%9B%90%20%EA%B8%88%ED%98%B8%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%A1%B4%20%EC%88%98%EC%98%81%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금호초등학교병설유치원 동명 후보가 있으나 수원 금호초 단서가 로컬 수원금호초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "6e9537b7-a67b-46e7-83f9-a66ecfb72cf4": [
@@ -39948,6 +40000,114 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-04d0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-10b14412",
+        "kindergartenId": "1ecec08d-04d0-b044-e053-0a32095ab044",
+        "title": "별내초등학교병설유치원 물놀이 DAY Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaKdgMsR2rv/",
+        "source": "other",
+        "sourceName": "Instagram · 별내초등학교병설유치원",
+        "snippet": "검색 결과에서 별내초병설유치원, 물놀이 DAY, 물총놀이, 수영장 놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "10b14412",
+        "structuredFields": {
+          "kindergartenName": "별내초등학교병설유치원",
+          "kindergartenAddress": "경기도 남양주시 청학로92번길 38",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaKdgMsR2rv%22%20%22%EB%B3%84%EB%82%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "별내초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaKdgMsR2rv/",
+          "normalizedUrl": "instagram.com/reel/dakdgmsr2rv",
+          "normalizedText": "별내초등학교병설유치원 물놀이 day instagram reel 검색 결과에서 별내초병설유치원 물놀이 day 물총놀이 수영장 놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "10b14412",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "별내초등학교병설유치원",
+            "kindergartenAddress": "경기도 남양주시 청학로92번길 38",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaKdgMsR2rv%22%20%22%EB%B3%84%EB%82%B4%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "별내초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "a39a3960-9110-4981-a223-4999e80587fc": [
+      {
+        "id": "rev-e3202834",
+        "kindergartenId": "a39a3960-9110-4981-a223-4999e80587fc",
+        "title": "김포가온유치원 여름 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DNhseeK0_xK/",
+        "source": "other",
+        "sourceName": "Instagram · 김포가온유치원",
+        "snippet": "검색 결과에서 김포가온유치원, 무더운 여름, 신나는 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e3202834",
+        "structuredFields": {
+          "kindergartenName": "김포가온유치원",
+          "kindergartenAddress": "경기도 김포시 태장로 845",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DNhseeK0_xK/",
+          "normalizedUrl": "instagram.com/p/dnhseek0_xk",
+          "normalizedText": "김포가온유치원 여름 물놀이 instagram post 검색 결과에서 김포가온유치원 무더운 여름 신나는 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "e3202834",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "김포가온유치원",
+            "kindergartenAddress": "경기도 김포시 태장로 845",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNhseeK0_xK%22%20%22%EA%B9%80%ED%8F%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "김포가온유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 김포가온유치원과 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

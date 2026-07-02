@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 272,
+  "totalCount": 274,
   "kindergartenCount": 85,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -6341,6 +6341,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cfdd847d",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DLjc3EKpZSu/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 공립단설 남명유치원, 부산 명지, 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": "2025-06-30",
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cfdd847d",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLjc3EKpZSu/",
+          "normalizedUrl": "instagram.com/p/dljc3ekpzsu",
+          "normalizedText": "부산 남명유치원 물놀이 instagram post 검색 결과에서 공립단설 남명유치원 부산 명지 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "cfdd847d",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0b60-b044-e053-0a32095ab044": [
@@ -7839,6 +7891,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e9745825",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "금샘누리유치원 물놀이 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DCDzcVHyCAu/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "검색 결과에서 금샘누리유치원, 물놀이 안전교육, 준비운동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-safety",
+          "summer-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e9745825",
+        "structuredFields": {
+          "kindergartenName": "금샘누리유치원",
+          "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCDzcVHyCAu%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 안전교육 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCDzcVHyCAu/",
+          "normalizedUrl": "instagram.com/p/dcdzcvhycau",
+          "normalizedText": "금샘누리유치원 물놀이 안전교육 instagram post 검색 결과에서 금샘누리유치원 물놀이 안전교육 준비운동 단서가 확인된다.",
+          "htmlSnapshotHash": "e9745825",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "금샘누리유치원",
+            "kindergartenAddress": "부산광역시 금정구 금샘로 525",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DCDzcVHyCAu%22%20%22%EA%B8%88%EC%83%98%EB%88%84%EB%A6%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "금샘누리유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 물놀이 안전교육 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
