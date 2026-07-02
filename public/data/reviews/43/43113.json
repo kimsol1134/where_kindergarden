@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 48,
+  "totalCount": 49,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08d-083c-b044-e053-0a32095ab044": [
@@ -902,6 +902,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T10:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-8c3f1a18",
+        "kindergartenId": "1ecec08c-ff6a-b044-e053-0a32095ab044",
+        "title": "청주 지웰시티유치원 딸기밭 체험 기록",
+        "url": "https://www.instagram.com/reel/DWneoZLxPgF/",
+        "source": "other",
+        "sourceName": "Instagram · 지웰시티유치원",
+        "snippet": "지웰시티유치원 친구들이 딸기밭에서 딸기를 따고 맛보며 즐거워한 릴스입니다.",
+        "summary": "유아들이 딸기밭에서 수확의 즐거움을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "cheongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-8c3f1a18",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWneoZLxPgF/",
+          "normalizedUrl": "instagram.com/reel/dwneozlxpgf",
+          "normalizedText": "지웰시티유치원 딸기밭 체험 딸기 수확 체험",
+          "htmlSnapshotHash": "sns-wave719-8c3f1a18",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWneoZLxPgF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08d-0bfb-b044-e053-0a32095ab044": [

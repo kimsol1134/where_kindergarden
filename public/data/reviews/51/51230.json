@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 5,
+  "totalCount": 6,
   "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-fd93-b044-e053-0a32095ab044": [
@@ -45,6 +45,42 @@
           ]
         },
         "evidenceChecksum": "38decc99"
+      },
+      {
+        "id": "rev-sns-wave719-e0f46728",
+        "kindergartenId": "1ecec08c-fd93-b044-e053-0a32095ab044",
+        "title": "삼척 다솔유치원 방울토마토 수확 체험 기록",
+        "url": "https://www.instagram.com/p/DW2N6LvEnIS/",
+        "source": "other",
+        "sourceName": "Instagram · 다솔유치원",
+        "snippet": "삼척 다솔유치원 친구들이 방울토마토를 조심스럽게 따 보며 수확을 경험한 게시물입니다.",
+        "summary": "유아들이 방울토마토 수확을 통해 작물 관찰과 먹거리 체험을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "tomato-farm",
+          "field-trip",
+          "samcheok"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-e0f46728",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW2N6LvEnIS/",
+          "normalizedUrl": "instagram.com/p/dw2n6lvenis",
+          "normalizedText": "다솔유치원 삼척다솔유치원 삼척유치원 방울토마토 수확 체험",
+          "htmlSnapshotHash": "sns-wave719-e0f46728",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW2N6LvEnIS/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08d-0ebf-b044-e053-0a32095ab044": [
@@ -240,5 +276,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

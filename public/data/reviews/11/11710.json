@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 49,
+  "totalCount": 50,
   "kindergartenCount": 18,
   "reviews": {
     "009c017d-43bd-4d9f-ac64-d217abdd570e": [
@@ -1537,7 +1537,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.980Z",
         "approvedBy": "codex-manual-sns-wave696"
+      },
+      {
+        "id": "rev-sns-wave719-f3a9ff5f",
+        "kindergartenId": "1ecec08c-f20a-b044-e053-0a32095ab044",
+        "title": "서울 석촌유치원 딸기농장 체험 기록",
+        "url": "https://www.instagram.com/reel/DXOMSSbhmlV/",
+        "source": "other",
+        "sourceName": "Instagram · 석촌유치원",
+        "snippet": "석촌유치원 친구들이 딸기농장을 찾아 직접 딸기를 따고 맛보며 봄 체험을 한 릴스입니다.",
+        "summary": "유아들이 딸기농장에서 수확 방법을 배우고 자연물을 관찰한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-f3a9ff5f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOMSSbhmlV/",
+          "normalizedUrl": "instagram.com/reel/dxomssbhmlv",
+          "normalizedText": "석촌유치원 딸기농장 견학 딸기농장체험 봄 체험학습",
+          "htmlSnapshotHash": "sns-wave719-f3a9ff5f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXOMSSbhmlV/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

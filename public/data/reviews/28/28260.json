@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 78,
+  "totalCount": 80,
   "kindergartenCount": 25,
   "reviews": {
     "1ecec08d-0c86-b044-e053-0a32095ab044": [
@@ -178,55 +178,6 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T22:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-d061588a",
-        "kindergartenId": "1ecec08d-0806-b044-e053-0a32095ab044",
-        "title": "인천 서구 다은유치원 2026학년도 입학설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DO-TPqGgT7u/",
-        "source": "other",
-        "sourceName": "Instagram · 다은유치원",
-        "snippet": "daeun_cheongna 계정에서 2026학년도 다은유치원 입학설명회 안내와 교육 철학 및 프로그램을 직접 확인할 수 있다는 모집 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission",
-          "info-session"
-        ],
-        "date": "2025-09-23",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "28cd61ca",
-        "structuredFields": {
-          "kindergartenName": "다은유치원",
-          "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+daeun_cheongna+%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DO-TPqGgT7u/",
-          "normalizedUrl": "www.instagram.com/reel/do-tpqggt7u",
-          "normalizedText": "인천 서구 다은유치원 2026학년도 입학설명회 instagram daeun_cheongna 계정에서 2026학년도 다은유치원 입학설명회 안내와 교육 철학 및 프로그램을 직접 확인할 수 있다는 모집 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "28cd61ca",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "다은유치원",
-            "kindergartenAddress": "인천광역시 서구 청중로478번길 9",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+daeun_cheongna+%EB%8B%A4%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -594,6 +545,58 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-65ef1774",
+        "kindergartenId": "1ecec08c-f407-b044-e053-0a32095ab044",
+        "title": "인천 명문유치원 구강교육 Instagram Post",
+        "url": "https://www.instagram.com/p/CqCzhNFSsbZ/",
+        "source": "other",
+        "sourceName": "Instagram · 명문유치원",
+        "snippet": "검색 결과에서 인천 명문유치원의 구강교육과 잇솔질 교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "toothbrushing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "65ef1774",
+        "structuredFields": {
+          "kindergartenName": "명문유치원",
+          "kindergartenAddress": "인천광역시 서구 고산로 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CqCzhNFSsbZ%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "명문유치원은 동명 후보가 있으나 인천 명문유치원 단서가 로컬 인천 서구 명문유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CqCzhNFSsbZ/",
+          "normalizedUrl": "instagram.com/p/cqczhnfssbz",
+          "normalizedText": "인천 명문유치원 구강교육 instagram post 검색 결과에서 인천 명문유치원의 구강교육과 잇솔질 교육 단서가 확인된다.",
+          "htmlSnapshotHash": "65ef1774",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "명문유치원",
+            "kindergartenAddress": "인천광역시 서구 고산로 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CqCzhNFSsbZ%22%20%22%EC%9D%B8%EC%B2%9C%20%EB%AA%85%EB%AC%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "명문유치원은 동명 후보가 있으나 인천 명문유치원 단서가 로컬 인천 서구 명문유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f027-b044-e053-0a32095ab044": [
@@ -915,6 +918,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-6a5e7cf2",
+        "kindergartenId": "1ecec08d-00d6-b044-e053-0a32095ab044",
+        "title": "인천 연희유치원 포도 농장 견학 기록",
+        "url": "https://www.instagram.com/reel/DaIJxFWTfJa/",
+        "source": "other",
+        "sourceName": "Instagram · 연희유치원",
+        "snippet": "연희유치원 창의반 친구들이 포도 농장을 찾아 포도 봉지를 씌워보는 체험을 한 릴스입니다.",
+        "summary": "유아들이 포도 농장에서 작물이 자라는 과정을 관찰하고 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "grape-farm",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-6a5e7cf2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaIJxFWTfJa/",
+          "normalizedUrl": "instagram.com/reel/daijxfwtfja",
+          "normalizedText": "연희유치원 창의반 포도 봉지 씌우기 체험 포도농장견학",
+          "htmlSnapshotHash": "sns-wave719-6a5e7cf2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaIJxFWTfJa/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08c-fc7d-b044-e053-0a32095ab044": [
@@ -2768,8 +2807,60 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5c643aa2",
+        "kindergartenId": "bda5136a-12ec-46e5-b477-5117f76624b1",
+        "title": "인천아람초등학교병설유치원 졸업식 포토존 Threads Post",
+        "url": "https://www.threads.com/@attirance_party_balloon/post/DEXXzVVSnkL",
+        "source": "other",
+        "sourceName": "Threads · 인천아람초등학교병설유치원",
+        "snippet": "검색 결과에서 아람초등학교 병설유치원 졸업식, 검단, 병설유치원 풍선장식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "graduation",
+          "ceremony-decoration"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5c643aa2",
+        "structuredFields": {
+          "kindergartenName": "인천아람초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 서구 이음1로 289",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DEXXzVVSnkL%22%20%22%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아람초등학교병설유치원 동명 후보가 있으나 검단 단서가 로컬 인천 서구 인천아람초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@attirance_party_balloon/post/DEXXzVVSnkL",
+          "normalizedUrl": "threads.com/@attirance_party_balloon/post/dexxzvvsnkl",
+          "normalizedText": "인천아람초등학교병설유치원 졸업식 포토존 threads post 검색 결과에서 아람초등학교 병설유치원 졸업식 검단 병설유치원 풍선장식 단서가 확인된다.",
+          "htmlSnapshotHash": "5c643aa2",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "인천아람초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 서구 이음1로 289",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DEXXzVVSnkL%22%20%22%EC%95%84%EB%9E%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아람초등학교병설유치원 동명 후보가 있으나 검단 단서가 로컬 인천 서구 인천아람초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

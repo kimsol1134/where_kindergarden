@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 44,
+  "totalCount": 46,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -1240,6 +1240,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cac54195",
+        "kindergartenId": "1fd6777e-153d-e0b0-e053-0a32095ae0b0",
+        "title": "전주 우성유치원 구강교육 Instagram Post",
+        "url": "https://www.instagram.com/p/C9mP-v4Sa5b/",
+        "source": "other",
+        "sourceName": "Instagram · 전주우성유치원",
+        "snippet": "검색 결과에서 전주우성유치원의 덕진보건소 구강교육과 전주전일초 권역 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "oral-health",
+          "public-health-center"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cac54195",
+        "structuredFields": {
+          "kindergartenName": "우성유치원",
+          "kindergartenAddress": "전북특별자치도 전주시 덕진구 숲정이4길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9mP-v4Sa5b%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "우성유치원은 동명 후보가 있으나 전주우성유치원 및 덕진보건소 단서가 로컬 전주 덕진구 우성유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C9mP-v4Sa5b/",
+          "normalizedUrl": "instagram.com/p/c9mp-v4sa5b",
+          "normalizedText": "전주 우성유치원 구강교육 instagram post 검색 결과에서 전주우성유치원의 덕진보건소 구강교육과 전주전일초 권역 단서가 확인된다.",
+          "htmlSnapshotHash": "cac54195",
+          "extractedAt": "2026-07-03T15:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "우성유치원",
+            "kindergartenAddress": "전북특별자치도 전주시 덕진구 숲정이4길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9mP-v4Sa5b%22%20%22%EC%A0%84%EC%A3%BC%EC%9A%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AC%EA%B0%95%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "우성유치원은 동명 후보가 있으나 전주우성유치원 및 덕진보건소 단서가 로컬 전주 덕진구 우성유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-ee78-b044-e053-0a32095ab044": [
@@ -2024,8 +2076,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T21:15:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-ad73bc4c",
+        "kindergartenId": "1ecec08c-f654-b044-e053-0a32095ab044",
+        "title": "전주 소망유치원 블루베리 농장 체험 기록",
+        "url": "https://www.instagram.com/p/DZrbPFozgpA/",
+        "source": "other",
+        "sourceName": "Instagram · 소망유치원",
+        "snippet": "전주 소망유치원 친구들이 블루베리 농장에서 직접 보고 따고 맛보며 자연을 느낀 게시물입니다.",
+        "summary": "유아들이 블루베리 농장에서 수확과 자연 관찰을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "blueberry-farm",
+          "field-trip",
+          "jeonju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-ad73bc4c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZrbPFozgpA/",
+          "normalizedUrl": "instagram.com/p/dzrbpfozgpa",
+          "normalizedText": "전주소망유치원 전주반월동유치원 오맘스블루베리농장 블루베리체험",
+          "htmlSnapshotHash": "sns-wave719-ad73bc4c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZrbPFozgpA/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

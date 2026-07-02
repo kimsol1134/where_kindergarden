@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 115,
-  "kindergartenCount": 25,
+  "totalCount": 116,
+  "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0def-b044-e053-0a32095ab044": [
       {
@@ -5095,6 +5095,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave716"
+      }
+    ],
+    "1ecec08d-056c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave719-8430bd64",
+        "kindergartenId": "1ecec08d-056c-b044-e053-0a32095ab044",
+        "title": "대구 수성무지개유치원 딸기 농장 체험 기록",
+        "url": "https://www.instagram.com/p/C5xQEcSPi87/",
+        "source": "other",
+        "sourceName": "Instagram · 수성무지개유치원",
+        "snippet": "수성무지개유치원 친구들이 딸기 농장에서 직접 딴 딸기를 맛본 게시물입니다.",
+        "summary": "유아들이 딸기 농장에서 수확 활동과 미각 체험을 함께 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-8430bd64",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C5xQEcSPi87/",
+          "normalizedUrl": "instagram.com/p/c5xqecspi87",
+          "normalizedText": "수성무지개유치원 딸기 농장 직접 딴 딸기 체험",
+          "htmlSnapshotHash": "sns-wave719-8430bd64",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/C5xQEcSPi87/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ]
   },

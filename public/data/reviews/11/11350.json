@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 70,
+  "totalCount": 71,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0b2d-b044-e053-0a32095ab044": [
@@ -2246,6 +2246,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-d5c5f213",
+        "kindergartenId": "1ecec08c-f406-b044-e053-0a32095ab044",
+        "title": "서울 보배유치원 딸기농장 생태체험 기록",
+        "url": "https://www.instagram.com/reel/DYQsQHdJKod/",
+        "source": "other",
+        "sourceName": "Instagram · 보배유치원",
+        "snippet": "보배유치원 친구들이 딸기농장 생태체험에서 잘 익은 딸기를 찾아 따 본 릴스입니다.",
+        "summary": "유아들이 딸기농장에서 생태 관찰과 수확 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-d5c5f213",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYQsQHdJKod/",
+          "normalizedUrl": "instagram.com/reel/dyqsqhdjkod",
+          "normalizedText": "보배유치원 딸기농장 생태체험 노원구 보배",
+          "htmlSnapshotHash": "sns-wave719-d5c5f213",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYQsQHdJKod/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08c-f412-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 11,
+  "totalCount": 12,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-ee5f-b044-e053-0a32095ab044": [
@@ -78,6 +78,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-b5f73ca0",
+        "kindergartenId": "1ecec08c-f4bf-b044-e053-0a32095ab044",
+        "title": "안양 만안유치원 딸기농장 체험 기록",
+        "url": "https://www.instagram.com/p/DYz3ymamTwz/",
+        "source": "other",
+        "sourceName": "Instagram · 만안유치원",
+        "snippet": "만안유치원 친구들이 딸기농장 견학에서 딸기를 직접 따며 즐거운 시간을 보낸 게시물입니다.",
+        "summary": "유아들이 딸기농장에서 수확 체험과 자연 관찰을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "anyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-b5f73ca0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYz3ymamTwz/",
+          "normalizedUrl": "instagram.com/p/dyz3ymamtwz",
+          "normalizedText": "만안유치원 딸기농장 체험 견학 딸기 수확",
+          "htmlSnapshotHash": "sns-wave719-b5f73ca0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYz3ymamTwz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08c-f004-b044-e053-0a32095ab044": [
@@ -366,5 +402,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

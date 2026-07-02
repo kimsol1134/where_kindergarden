@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 4,
+  "totalCount": 5,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08c-fb8b-b044-e053-0a32095ab044": [
@@ -160,6 +160,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-56ee58cd",
+        "kindergartenId": "1ecec08c-fbef-b044-e053-0a32095ab044",
+        "title": "서산 대장유치원 블루베리 농장 체험 기록",
+        "url": "https://www.instagram.com/p/DZ8vXq7PVbY/",
+        "source": "other",
+        "sourceName": "Instagram · 대장유치원",
+        "snippet": "대장유치원 친구들이 블루베리 농장에서 잘 익은 열매를 찾으며 수확 체험을 한 게시물입니다.",
+        "summary": "유아들이 블루베리 농장에서 관찰력과 수확 경험을 키운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "blueberry-farm",
+          "field-trip",
+          "seosan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-56ee58cd",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ8vXq7PVbY/",
+          "normalizedUrl": "instagram.com/p/dz8vxq7pvby",
+          "normalizedText": "대장유치원 블루베리 농장 체험 블루베리 수확",
+          "htmlSnapshotHash": "sns-wave719-56ee58cd",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ8vXq7PVbY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08d-0174-b044-e053-0a32095ab044": [
@@ -215,5 +251,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

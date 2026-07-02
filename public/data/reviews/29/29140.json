@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 44,
+  "totalCount": 45,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-092c-b044-e053-0a32095ab044": [
@@ -460,6 +460,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:15:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave719-ed6a78dc",
+        "kindergartenId": "1ecec08d-092c-b044-e053-0a32095ab044",
+        "title": "광주 예닮몬테소리유치원 딸기농장 체험 기록",
+        "url": "https://www.instagram.com/reel/DQlfs2gEgWp/",
+        "source": "other",
+        "sourceName": "Instagram · 예닮몬테소리유치원",
+        "snippet": "예닮몬테소리유치원 친구들이 딸기농장에서 딸기 체험을 하며 봄소풍을 즐긴 릴스입니다.",
+        "summary": "유아들이 딸기농장에서 직접 보고 따고 맛보는 수확 체험을 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-farm",
+          "field-trip",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave719-ed6a78dc",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQlfs2gEgWp/",
+          "normalizedUrl": "instagram.com/reel/dqlfs2gegwp",
+          "normalizedText": "예닮몬테소리유치원 광주유치원 봄소풍 딸기농장 딸기체험",
+          "htmlSnapshotHash": "sns-wave719-ed6a78dc",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQlfs2gEgWp/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08c-fe39-b044-e053-0a32095ab044": [
@@ -2179,5 +2215,6 @@
         "approvedBy": "codex-manual-sns-wave666"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
