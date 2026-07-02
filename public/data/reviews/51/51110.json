@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 66,
+  "totalCount": 67,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -1005,6 +1005,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave688-544a6729",
+        "kindergartenId": "1ecec08d-0a67-b044-e053-0a32095ab044",
+        "title": "춘천 꿈에그린유치원 숲 체험 기록",
+        "url": "https://www.instagram.com/reel/DZ8ogoTTvK7/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈에그린유치원",
+        "snippet": "춘천 꿈에그린유치원이 숲에서 아이들이 다양한 자연물을 살펴보고 놀이한 모습을 소개한 공개 릴스입니다.",
+        "summary": "숲 체험과 자연물 탐색 중심의 유아 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "nature-observation",
+          "chuncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:57.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave688-544a6729",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ8ogoTTvK7/",
+          "normalizedUrl": "instagram.com/reel/dz8ogottvk7",
+          "normalizedText": "춘천 꿈에그린유치원 숲 체험 자연물 탐색 숲놀이",
+          "htmlSnapshotHash": "sns-wave688-544a6729",
+          "extractedAt": "2026-07-03T23:59:57.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ8ogoTTvK7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:57.000Z",
+        "approvedBy": "codex-manual-sns-wave688"
       }
     ],
     "1ecec08d-0a68-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1250,
+  "totalCount": 1252,
   "kindergartenCount": 487,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -11040,6 +11040,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave688-41a9b994",
+        "kindergartenId": "411b482b-242e-4fc9-8c94-3589471e7665",
+        "title": "김포 프라임운양유치원 봄 마당놀이 기록",
+        "url": "https://www.instagram.com/p/DIvFr4HRMbR/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임운양유치원",
+        "snippet": "김포 프라임운양유치원이 봄 햇살 아래 유치원 마당에서 아이들이 함께 뛰어노는 모습을 소개한 공개 게시물입니다.",
+        "summary": "마당에서 진행한 계절 바깥놀이와 또래 놀이 장면을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "outdoor-play",
+          "spring-play",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:57.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave688-41a9b994",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIvFr4HRMbR/",
+          "normalizedUrl": "instagram.com/p/divfr4hrmbr",
+          "normalizedText": "프라임운양유치원 김포 봄 햇살 마당놀이 바깥놀이",
+          "htmlSnapshotHash": "sns-wave688-41a9b994",
+          "extractedAt": "2026-07-03T23:59:57.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DIvFr4HRMbR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:57.000Z",
+        "approvedBy": "codex-manual-sns-wave688"
       }
     ],
     "2c078f2c-d95d-4f08-ba49-b81e21dd9678": [
@@ -21133,6 +21169,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave688-82eb9052",
+        "kindergartenId": "1ecec08c-ef57-b044-e053-0a32095ab044",
+        "title": "일산 해나라유치원 숲놀이 기록",
+        "url": "https://www.instagram.com/reel/DYRDGcaK5lX/",
+        "source": "other",
+        "sourceName": "Instagram · 해나라유치원",
+        "snippet": "일산 해나라유치원이 아이들과 숲에서 자연을 느끼며 놀이한 장면을 소개한 공개 릴스입니다.",
+        "summary": "숲에서 이루어진 자연 친화 놀이와 바깥 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-play",
+          "ilsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:57.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave688-82eb9052",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYRDGcaK5lX/",
+          "normalizedUrl": "instagram.com/reel/dyrdgcak5lx",
+          "normalizedText": "해나라유치원 일산 숲놀이 자연놀이 바깥활동",
+          "htmlSnapshotHash": "sns-wave688-82eb9052",
+          "extractedAt": "2026-07-03T23:59:57.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYRDGcaK5lX/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:57.000Z",
+        "approvedBy": "codex-manual-sns-wave688"
       }
     ],
     "1ecec08c-fa4c-b044-e053-0a32095ab044": [
@@ -49716,5 +49788,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:56.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:57.000Z"
 }

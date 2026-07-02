@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 352,
+  "totalCount": 353,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -8701,6 +8701,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T11:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave688-80ad25d0",
+        "kindergartenId": "1ecec08d-0fb0-b044-e053-0a32095ab044",
+        "title": "대전 아이캔유치원 숲놀이 기록",
+        "url": "https://www.instagram.com/p/DZ_9g0vgcti/",
+        "source": "other",
+        "sourceName": "Instagram · 아이캔유치원",
+        "snippet": "대전 노은 아이캔유치원이 아이들과 숲에서 자연을 관찰하고 즐겁게 놀이한 모습을 소개한 공개 게시물입니다.",
+        "summary": "숲놀이와 자연 관찰 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "nature-observation",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:57.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave688-80ad25d0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_9g0vgcti/",
+          "normalizedUrl": "instagram.com/p/dz_9g0vgcti",
+          "normalizedText": "대전 노은 아이캔유치원 숲놀이 자연 관찰 바깥놀이",
+          "htmlSnapshotHash": "sns-wave688-80ad25d0",
+          "extractedAt": "2026-07-03T23:59:57.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_9g0vgcti/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:57.000Z",
+        "approvedBy": "codex-manual-sns-wave688"
       }
     ],
     "1ecec08c-fe66-b044-e053-0a32095ab044": [
@@ -16395,5 +16431,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:56.000Z"
+  "lastUpdatedAt": "2026-07-03T23:59:57.000Z"
 }
