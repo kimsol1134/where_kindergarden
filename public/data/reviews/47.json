@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 275,
+  "totalCount": 276,
   "kindergartenCount": 90,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -10507,6 +10507,58 @@
           ]
         },
         "evidenceChecksum": "5ea62a96"
+      },
+      {
+        "id": "rev-4a55dbdc",
+        "kindergartenId": "1ecec08d-0bdf-b044-e053-0a32095ab044",
+        "title": "포항동부초등학교병설유치원 교통안전교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DW8bFU2CX_v/",
+        "source": "other",
+        "sourceName": "Instagram · 포항동부초등학교병설유치원",
+        "snippet": "검색 결과에서 포항동부초등학교병설유치원, 교통안전교육, 안전교육, 신호등 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-07-03T19:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4a55dbdc",
+        "structuredFields": {
+          "kindergartenName": "포항동부초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 삼호로 273",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW8bFU2CX_v%22%20%22%ED%8F%AC%ED%95%AD%EB%8F%99%EB%B6%80%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항동부초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 교육 주제가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW8bFU2CX_v/",
+          "normalizedUrl": "instagram.com/reel/dw8bfu2cx_v",
+          "normalizedText": "포항동부초등학교병설유치원 교통안전교육 instagram reel 검색 결과에서 포항동부초등학교병설유치원 교통안전교육 안전교육 신호등 단서가 확인된다.",
+          "htmlSnapshotHash": "4a55dbdc",
+          "extractedAt": "2026-07-03T19:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "포항동부초등학교병설유치원",
+            "kindergartenAddress": "경상북도 포항시 북구 삼호로 273",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW8bFU2CX_v%22%20%22%ED%8F%AC%ED%95%AD%EB%8F%99%EB%B6%80%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "포항동부초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 교육 주제가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-075c-b044-e053-0a32095ab044": [
