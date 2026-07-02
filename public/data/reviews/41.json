@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1240,
+  "totalCount": 1242,
   "kindergartenCount": 483,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -40344,6 +40344,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:53.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave677-da90fa57",
+        "kindergartenId": "1ecec08c-f069-b044-e053-0a32095ab044",
+        "title": "늘푸름유치원 고양어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DTtw295gfGt/",
+        "source": "other",
+        "sourceName": "Instagram · 늘푸름유치원",
+        "snippet": "늘푸름유치원이 고양어린이박물관에서 공공장소 예절과 전시 관람을 경험한 공개 게시물입니다.",
+        "summary": "어린이박물관 견학에서 전시를 관람하고 체험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "museum",
+          "experiential-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:15:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave677-da90fa57",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTtw295gfGt/",
+          "normalizedUrl": "instagram.com/p/dttw295gfgt",
+          "normalizedText": "늘푸름유치원 고양어린이박물관 유치원견학 공공장소 예절",
+          "htmlSnapshotHash": "sns-wave677-da90fa57",
+          "extractedAt": "2026-07-03T22:15:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DTtw295gfGt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:15:00.000Z",
+        "approvedBy": "codex-manual-sns-wave677"
       }
     ],
     "1ecec08c-fe8a-b044-e053-0a32095ab044": [
@@ -45935,6 +45971,42 @@
           ]
         },
         "evidenceChecksum": "67febc90"
+      },
+      {
+        "id": "rev-sns-wave677-0ea12dff",
+        "kindergartenId": "1ecec08c-fc44-b044-e053-0a32095ab044",
+        "title": "지은유치원 경기도어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DSl9rI_EhWV/",
+        "source": "other",
+        "sourceName": "Instagram · 지은유치원",
+        "snippet": "지은유치원 5세반이 경기도어린이박물관에서 다양한 전시와 체험 놀이에 참여한 공개 릴스입니다.",
+        "summary": "경기도어린이박물관 견학에서 전시와 체험 공간을 탐색한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "museum",
+          "play-based-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:15:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave677-0ea12dff",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSl9rI_EhWV/",
+          "normalizedUrl": "instagram.com/reel/dsl9ri_ehwv",
+          "normalizedText": "지은유치원 경기도어린이박물관 5세 견학 체험 놀이",
+          "htmlSnapshotHash": "sns-wave677-0ea12dff",
+          "extractedAt": "2026-07-03T22:15:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSl9rI_EhWV/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:15:00.000Z",
+        "approvedBy": "codex-manual-sns-wave677"
       }
     ],
     "1ecec08c-eec3-b044-e053-0a32095ab044": [
@@ -49348,5 +49420,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T21:50:00.000Z"
+  "lastUpdatedAt": "2026-07-03T22:15:00.000Z"
 }

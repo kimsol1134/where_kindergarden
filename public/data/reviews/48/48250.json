@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 25,
-  "kindergartenCount": 14,
+  "version": "2026-07-03",
+  "totalCount": 26,
+  "kindergartenCount": 15,
   "reviews": {
     "1ecec08d-0ac6-b044-e053-0a32095ab044": [
       {
@@ -1076,6 +1076,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f1d8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave677-92eaf02e",
+        "kindergartenId": "1ecec08c-f1d8-b044-e053-0a32095ab044",
+        "title": "김해 빛누리유치원 김해어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DaC9XxZEoos/",
+        "source": "other",
+        "sourceName": "Instagram · 김해 빛누리유치원",
+        "snippet": "김해 빛누리유치원 희망반이 김해어린이박물관에서 신나는 추억을 만든 공개 게시물입니다.",
+        "summary": "김해어린이박물관 견학에서 전시와 체험을 즐긴 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "museum",
+          "gimhae"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:15:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave677-92eaf02e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaC9XxZEoos/",
+          "normalizedUrl": "instagram.com/p/dac9xxzeoos",
+          "normalizedText": "김해 빛누리유치원 김해어린이박물관 희망반 견학",
+          "htmlSnapshotHash": "sns-wave677-92eaf02e",
+          "extractedAt": "2026-07-03T22:15:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaC9XxZEoos/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:15:00.000Z",
+        "approvedBy": "codex-manual-sns-wave677"
       }
     ]
   }

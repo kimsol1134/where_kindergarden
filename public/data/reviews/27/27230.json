@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 77,
-  "kindergartenCount": 23,
+  "totalCount": 78,
+  "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0d6f-b044-e053-0a32095ab044": [
       {
@@ -3693,6 +3693,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave669"
+      }
+    ],
+    "1ecec08c-ee1a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave677-66a9def3",
+        "kindergartenId": "1ecec08c-ee1a-b044-e053-0a32095ab044",
+        "title": "청보리숲유치원 국립대구박물관 어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DSJ2qnrk9oh/",
+        "source": "other",
+        "sourceName": "Instagram · 청보리숲유치원",
+        "snippet": "청보리숲유치원 친구들이 국립대구박물관 어린이박물관을 견학하며 전통문화와 전시를 체험한 공개 릴스입니다.",
+        "summary": "어린이박물관에서 전통 의복과 문화재를 살펴본 견학 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "museum",
+          "culture"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:15:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave677-66a9def3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSJ2qnrk9oh/",
+          "normalizedUrl": "instagram.com/reel/dsj2qnrk9oh",
+          "normalizedText": "청보리숲유치원 국립대구박물관 어린이박물관 견학 전통문화",
+          "htmlSnapshotHash": "sns-wave677-66a9def3",
+          "extractedAt": "2026-07-03T22:15:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSJ2qnrk9oh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:15:00.000Z",
+        "approvedBy": "codex-manual-sns-wave677"
       }
     ]
   }

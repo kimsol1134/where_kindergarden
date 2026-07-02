@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 39,
+  "version": "2026-07-03",
+  "totalCount": 41,
   "kindergartenCount": 11,
   "reviews": {
     "1b13dd28-5e23-4f82-8521-3bb1fe4b4776": [
@@ -848,6 +848,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ab65aaff",
+        "kindergartenId": "1ecec08c-ef57-b044-e053-0a32095ab044",
+        "title": "일산 해나라유치원 학부모 참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZo_S0vKApF/",
+        "source": "other",
+        "sourceName": "Instagram · 일산해나라유치원",
+        "snippet": "검색 결과에서 일산해나라유치원과 1학기 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": "2026-06-16",
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ab65aaff",
+        "structuredFields": {
+          "kindergartenName": "해나라유치원",
+          "kindergartenAddress": "경기도 고양시 일산서구 일산로 487",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZo_S0vKApF%22%20%22%EC%9D%BC%EC%82%B0%ED%95%B4%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%20%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "해나라유치원 동명 후보가 있으나 일산해나라유치원 단서가 로컬 경기 고양시 일산서구 해나라유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZo_S0vKApF/",
+          "normalizedUrl": "instagram.com/reel/dzo_s0vkapf",
+          "normalizedText": "일산 해나라유치원 학부모 참여수업 instagram reel 검색 결과에서 일산해나라유치원과 1학기 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "ab65aaff",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해나라유치원",
+            "kindergartenAddress": "경기도 고양시 일산서구 일산로 487",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZo_S0vKApF%22%20%22%EC%9D%BC%EC%82%B0%ED%95%B4%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%20%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "해나라유치원 동명 후보가 있으나 일산해나라유치원 단서가 로컬 경기 고양시 일산서구 해나라유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa4c-b044-e053-0a32095ab044": [
@@ -1330,6 +1382,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:53.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave677-da90fa57",
+        "kindergartenId": "1ecec08c-f069-b044-e053-0a32095ab044",
+        "title": "늘푸름유치원 고양어린이박물관 견학 기록",
+        "url": "https://www.instagram.com/p/DTtw295gfGt/",
+        "source": "other",
+        "sourceName": "Instagram · 늘푸름유치원",
+        "snippet": "늘푸름유치원이 고양어린이박물관에서 공공장소 예절과 전시 관람을 경험한 공개 게시물입니다.",
+        "summary": "어린이박물관 견학에서 전시를 관람하고 체험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "museum",
+          "experiential-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:15:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave677-da90fa57",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTtw295gfGt/",
+          "normalizedUrl": "instagram.com/p/dttw295gfgt",
+          "normalizedText": "늘푸름유치원 고양어린이박물관 유치원견학 공공장소 예절",
+          "htmlSnapshotHash": "sns-wave677-da90fa57",
+          "extractedAt": "2026-07-03T22:15:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DTtw295gfGt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:15:00.000Z",
+        "approvedBy": "codex-manual-sns-wave677"
       }
     ],
     "1ecec08c-fc81-b044-e053-0a32095ab044": [
@@ -1386,6 +1474,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }
