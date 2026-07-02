@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 507,
+  "totalCount": 508,
   "kindergartenCount": 122,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -7639,6 +7639,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave676-9bd090e0",
+        "kindergartenId": "1ecec08d-0bc5-b044-e053-0a32095ab044",
+        "title": "한국예술유치원 소방안전교육 및 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DSWSnFek7Cr/",
+        "source": "other",
+        "sourceName": "Instagram · 한국예술유치원",
+        "snippet": "한국예술유치원이 아이들의 안전한 생활을 위해 소방안전교육과 대피훈련을 진행한 공개 게시물입니다.",
+        "summary": "비상 상황을 가정한 소방안전교육과 대피훈련 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-safety",
+          "evacuation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:50:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave676-9bd090e0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSWSnFek7Cr/",
+          "normalizedUrl": "instagram.com/p/dswsnfek7cr",
+          "normalizedText": "한국예술유치원 소방안전교육 대피훈련",
+          "htmlSnapshotHash": "sns-wave676-9bd090e0",
+          "extractedAt": "2026-07-03T21:50:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSWSnFek7Cr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:50:00.000Z",
+        "approvedBy": "codex-manual-sns-wave676"
       }
     ],
     "1ecec08d-03fc-b044-e053-0a32095ab044": [
@@ -22285,5 +22321,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
+  "lastUpdatedAt": "2026-07-03T21:50:00.000Z"
 }

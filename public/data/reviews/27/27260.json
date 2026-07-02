@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 108,
-  "kindergartenCount": 23,
+  "version": "2026-07-03",
+  "totalCount": 112,
+  "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-0def-b044-e053-0a32095ab044": [
       {
@@ -2883,6 +2883,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave676-9bd090e0",
+        "kindergartenId": "1ecec08d-0bc5-b044-e053-0a32095ab044",
+        "title": "한국예술유치원 소방안전교육 및 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DSWSnFek7Cr/",
+        "source": "other",
+        "sourceName": "Instagram · 한국예술유치원",
+        "snippet": "한국예술유치원이 아이들의 안전한 생활을 위해 소방안전교육과 대피훈련을 진행한 공개 게시물입니다.",
+        "summary": "비상 상황을 가정한 소방안전교육과 대피훈련 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-safety",
+          "evacuation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:50:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave676-9bd090e0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSWSnFek7Cr/",
+          "normalizedUrl": "instagram.com/p/dswsnfek7cr",
+          "normalizedText": "한국예술유치원 소방안전교육 대피훈련",
+          "htmlSnapshotHash": "sns-wave676-9bd090e0",
+          "extractedAt": "2026-07-03T21:50:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSWSnFek7Cr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:50:00.000Z",
+        "approvedBy": "codex-manual-sns-wave676"
       }
     ],
     "1ecec08d-03fc-b044-e053-0a32095ab044": [
@@ -3630,6 +3666,110 @@
           ]
         },
         "evidenceChecksum": "54177663"
+      },
+      {
+        "id": "rev-4b6b75c8",
+        "kindergartenId": "1ecec08c-f284-b044-e053-0a32095ab044",
+        "title": "대구 동영유치원 자연물 놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZXBHx2mvNb/",
+        "source": "other",
+        "sourceName": "Instagram · 동영유치원",
+        "snippet": "검색 결과에서 동영유치원의 숲놀이, 자연물 놀이, 목화프로젝트, 생태교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature-learning",
+          "ecology"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b6b75c8",
+        "structuredFields": {
+          "kindergartenName": "동영유치원",
+          "kindergartenAddress": "대구광역시 수성구 파동로51길 80",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZXBHx2mvNb%22%20%22%EB%8F%99%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동영유치원은 로컬 원장부 단일 정확 명칭이며 대구숲유치원 계정 단서와 로컬 대구 수성구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZXBHx2mvNb/",
+          "normalizedUrl": "instagram.com/p/dzxbhx2mvnb",
+          "normalizedText": "대구 동영유치원 자연물 놀이 instagram post 검색 결과에서 동영유치원의 숲놀이, 자연물 놀이, 목화프로젝트, 생태교육 단서가 확인된다.",
+          "htmlSnapshotHash": "4b6b75c8",
+          "extractedAt": "2026-07-03T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동영유치원",
+            "kindergartenAddress": "대구광역시 수성구 파동로51길 80",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZXBHx2mvNb%22%20%22%EB%8F%99%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동영유치원은 로컬 원장부 단일 정확 명칭이며 대구숲유치원 계정 단서와 로컬 대구 수성구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ef225332",
+        "kindergartenId": "1ecec08c-f284-b044-e053-0a32095ab044",
+        "title": "대구 동영유치원 환경교육 자연물 표현 Instagram Post",
+        "url": "https://www.instagram.com/p/DYO23wAEXIc/",
+        "source": "other",
+        "sourceName": "Instagram · 동영유치원",
+        "snippet": "검색 결과에서 동영유치원의 환경교육과 자연물로 나를 표현하기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "environment-education",
+          "nature-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ef225332",
+        "structuredFields": {
+          "kindergartenName": "동영유치원",
+          "kindergartenAddress": "대구광역시 수성구 파동로51길 80",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYO23wAEXIc%22%20%22%EB%8F%99%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동영유치원은 로컬 원장부 단일 정확 명칭이며 대구숲유치원 계정 단서와 로컬 대구 수성구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYO23wAEXIc/",
+          "normalizedUrl": "instagram.com/p/dyo23waexic",
+          "normalizedText": "대구 동영유치원 환경교육 자연물 표현 instagram post 검색 결과에서 동영유치원의 환경교육과 자연물로 나를 표현하기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ef225332",
+          "extractedAt": "2026-07-03T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동영유치원",
+            "kindergartenAddress": "대구광역시 수성구 파동로51길 80",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYO23wAEXIc%22%20%22%EB%8F%99%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동영유치원은 로컬 원장부 단일 정확 명칭이며 대구숲유치원 계정 단서와 로컬 대구 수성구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fcd2-b044-e053-0a32095ab044": [
@@ -4523,6 +4663,73 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
+    "1ecec08d-0750-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-43f85d2b",
+        "kindergartenId": "1ecec08d-0750-b044-e053-0a32095ab044",
+        "kindergartenName": "수정유치원",
+        "title": "대구 수정유치원 어린이날 뮤지컬 청개구리 Instagram Post",
+        "url": "https://www.instagram.com/p/DJeaP36Tg4c/",
+        "source": "other",
+        "sourceName": "Instagram · 수정유치원",
+        "snippet": "Instagram 검색 결과에서 수정유치원, 수성구유치원, 시지수정유치원 문맥과 어린이날 뮤지컬 청개구리 활동이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "musical",
+          "children-day",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "수정유치원",
+          "kindergartenAddress": "대구광역시 수성구 달구벌대로650길 21",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJeaP36Tg4c%22+%22%EC%8B%9C%EC%A7%80%EC%88%98%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DJeaP36Tg4c/",
+          "regionEvidence": [
+            "수정유치원",
+            "수성구유치원",
+            "시지수정유치원",
+            "대구수정유치원"
+          ]
+        },
+        "evidenceChecksum": "60c902f4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJeaP36Tg4c/",
+          "normalizedUrl": "instagram.com/shortcode/djeap36tg4c",
+          "normalizedText": "대구 수정유치원 어린이날 뮤지컬 청개구리 instagram post instagram 검색 결과에서 수정유치원, 수성구유치원, 시지수정유치원 문맥과 어린이날 뮤지컬 청개구리 활동이 확인되는 게시물.",
+          "htmlSnapshotHash": "68993706",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "수정유치원",
+            "kindergartenAddress": "대구광역시 수성구 달구벌대로650길 21",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJeaP36Tg4c%22+%22%EC%8B%9C%EC%A7%80%EC%88%98%EC%A0%95%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DJeaP36Tg4c/",
+            "regionEvidence": [
+              "수정유치원",
+              "수성구유치원",
+              "시지수정유치원",
+              "대구수정유치원"
+            ]
+          }
+        }
+      }
+    ],
     "1ecec08c-fa9b-b044-e053-0a32095ab044": [
       {
         "id": "rev-7c9dcdbb",
@@ -4777,6 +4984,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

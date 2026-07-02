@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1239,
+  "totalCount": 1240,
   "kindergartenCount": 483,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -46689,6 +46689,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave676-6ce5f02d",
+        "kindergartenId": "9365cbcb-8a64-4a34-8a77-0af26f0a8c63",
+        "title": "별빛누리유치원 어린이 의약품 안전교육 기록",
+        "url": "https://x.com/anseongnews/status/2068087697839948110",
+        "source": "other",
+        "sourceName": "X · 안성뉴스 · 별빛누리유치원",
+        "snippet": "별빛누리유치원이 어린이 의약품 안전교육 프로그램을 운영했다는 공개 X 게시물입니다.",
+        "summary": "의약품 안전 사용 습관을 다룬 어린이 안전교육 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "safety",
+          "health-safety",
+          "medicine-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:50:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave676-6ce5f02d",
+        "evidence": {
+          "canonicalUrl": "https://x.com/anseongnews/status/2068087697839948110",
+          "normalizedUrl": "x.com/anseongnews/status/2068087697839948110",
+          "normalizedText": "별빛누리유치원 어린이 의약품 안전교육 프로그램 운영",
+          "htmlSnapshotHash": "sns-wave676-6ce5f02d",
+          "extractedAt": "2026-07-03T21:50:00.000Z",
+          "sourcePageUrl": "https://x.com/anseongnews/status/2068087697839948110"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:50:00.000Z",
+        "approvedBy": "codex-manual-sns-wave676"
       }
     ],
     "c01f487e-920f-4610-9714-b9a756c80fc2": [
@@ -49312,5 +49348,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
+  "lastUpdatedAt": "2026-07-03T21:50:00.000Z"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 119,
+  "totalCount": 120,
   "kindergartenCount": 43,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -3497,6 +3497,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave676-5834987f",
+        "kindergartenId": "1ecec08d-0704-b044-e053-0a32095ab044",
+        "title": "정지유치원 체험형 소방안전교육 기록",
+        "url": "https://www.instagram.com/p/DYg-aGuE6Ed/",
+        "source": "other",
+        "sourceName": "Instagram · 정지유치원",
+        "snippet": "정지유치원 원아들이 소방서 견학과 체험형 소방안전교육에 참여한 공개 게시물입니다.",
+        "summary": "소방서 견학과 체험형 안전교육으로 대피와 안전수칙을 익힌 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-safety",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:50:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave676-5834987f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYg-aGuE6Ed/",
+          "normalizedUrl": "instagram.com/p/dyg-ague6ed",
+          "normalizedText": "정지유치원 소방서 견학 체험형 소방안전교육",
+          "htmlSnapshotHash": "sns-wave676-5834987f",
+          "extractedAt": "2026-07-03T21:50:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYg-aGuE6Ed/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:50:00.000Z",
+        "approvedBy": "codex-manual-sns-wave676"
       }
     ],
     "2ed1a2eb-84fb-4dbf-b008-879be24df3ab": [
@@ -5654,5 +5690,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T20:35:00.000Z"
+  "lastUpdatedAt": "2026-07-03T21:50:00.000Z"
 }
