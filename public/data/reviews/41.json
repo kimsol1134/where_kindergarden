@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1066,
-  "kindergartenCount": 447,
+  "totalCount": 1067,
+  "kindergartenCount": 448,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -40555,6 +40555,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-efba-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4dc293c1",
+        "kindergartenId": "1ecec08c-efba-b044-e053-0a32095ab044",
+        "title": "소사벌초등학교병설유치원 6월 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DY58wpQHUZQ/",
+        "source": "other",
+        "sourceName": "Instagram · 소사벌초등학교병설유치원",
+        "snippet": "검색 결과에서 소사벌초등학교병설유치원의 6월 교육활동과 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "june-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4dc293c1",
+        "structuredFields": {
+          "kindergartenName": "소사벌초등학교병설유치원",
+          "kindergartenAddress": "경기도 평택시 동부공원로 59",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY58wpQHUZQ%22%20%22%EC%86%8C%EC%82%AC%EB%B2%8C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "소사벌초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY58wpQHUZQ/",
+          "normalizedUrl": "instagram.com/p/dy58wpqhuzq",
+          "normalizedText": "소사벌초등학교병설유치원 6월 현장체험학습 instagram post 검색 결과에서 소사벌초등학교병설유치원의 6월 교육활동과 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "4dc293c1",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

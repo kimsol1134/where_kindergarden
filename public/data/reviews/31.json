@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 99,
+  "totalCount": 100,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -2220,6 +2220,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3bb21f58",
+        "kindergartenId": "1e984b83-973a-40a7-8859-f281c40d307e",
+        "title": "상안유치원 행복나들이 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DS40HIlE5Wh/",
+        "source": "other",
+        "sourceName": "Instagram · 상안유치원",
+        "snippet": "검색 결과에서 상안유치원 행복나들이 현장체험학습과 울산사랑교육 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "local-learning"
+        ],
+        "date": "2025-12-30",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3bb21f58",
+        "structuredFields": {
+          "kindergartenName": "상안유치원",
+          "kindergartenAddress": "울산광역시 북구 양지길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DS40HIlE5Wh%22%20%22%EC%83%81%EC%95%88%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "상안유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DS40HIlE5Wh/",
+          "normalizedUrl": "instagram.com/p/ds40hile5wh",
+          "normalizedText": "상안유치원 행복나들이 현장체험학습 instagram post 검색 결과에서 상안유치원 행복나들이 현장체험학습과 울산사랑교육 단서가 확인된다.",
+          "htmlSnapshotHash": "3bb21f58",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

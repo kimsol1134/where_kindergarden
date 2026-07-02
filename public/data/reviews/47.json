@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 290,
-  "kindergartenCount": 99,
+  "totalCount": 296,
+  "kindergartenCount": 100,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -1515,6 +1515,49 @@
           ]
         },
         "evidenceChecksum": "cb9c8854"
+      },
+      {
+        "id": "rev-5ac18647",
+        "kindergartenId": "413e85ae-2a7a-45f5-bf05-cebf804eb990",
+        "title": "포항장량유치원 봄 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DYOsew3lDzq/",
+        "source": "other",
+        "sourceName": "Instagram · 포항장량유치원",
+        "snippet": "검색 결과에서 포항장량유치원 봄 현장체험학습 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "spring"
+        ],
+        "date": "2026-05-12",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5ac18647",
+        "structuredFields": {
+          "kindergartenName": "포항장량유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 장량로262번길 13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYOsew3lDzq%22%20%22%ED%8F%AC%ED%95%AD%EC%9E%A5%EB%9F%89%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "포항장량유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYOsew3lDzq/",
+          "normalizedUrl": "instagram.com/p/dyosew3ldzq",
+          "normalizedText": "포항장량유치원 봄 현장체험학습 instagram post 검색 결과에서 포항장량유치원 봄 현장체험학습 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "5ac18647",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f96c-b044-e053-0a32095ab044": [
@@ -5374,6 +5417,49 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-52500c55",
+        "kindergartenId": "1ecec08c-fba6-b044-e053-0a32095ab044",
+        "title": "창포초등학교병설유치원 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaALvFIvCu8/",
+        "source": "other",
+        "sourceName": "Instagram · 창포초등학교병설유치원",
+        "snippet": "검색 결과에서 창포둥이들의 현장체험학습, 포항, 견학, 유치원 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "outing"
+        ],
+        "date": "2026-06-25",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "52500c55",
+        "structuredFields": {
+          "kindergartenName": "창포초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 새천년대로1075번길 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaALvFIvCu8%22%20%22%EC%B0%BD%ED%8F%AC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "창포초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 현장체험학습 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaALvFIvCu8/",
+          "normalizedUrl": "instagram.com/reel/daalvfivcu8",
+          "normalizedText": "창포초등학교병설유치원 현장체험학습 instagram reel 검색 결과에서 창포둥이들의 현장체험학습 포항 견학 유치원 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "52500c55",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -6336,6 +6422,49 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-3b370b92",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경산유치원 봄소풍 Instagram Post",
+        "url": "https://www.instagram.com/p/DJKwlPrTiGE/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "검색 결과에서 경산유치원 친구들이 대구어린이세상으로 봄소풍을 다녀온 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "picnic"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3b370b92",
+        "structuredFields": {
+          "kindergartenName": "경산유치원",
+          "kindergartenAddress": "경상북도 경산시 삼풍로 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJKwlPrTiGE%22%20%22%EA%B2%BD%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "경산유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 봄소풍 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJKwlPrTiGE/",
+          "normalizedUrl": "instagram.com/p/djkwlprtige",
+          "normalizedText": "경산유치원 봄소풍 instagram post 검색 결과에서 경산유치원 친구들이 대구어린이세상으로 봄소풍을 다녀온 단서가 확인된다.",
+          "htmlSnapshotHash": "3b370b92",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -10215,6 +10344,92 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2c7c1178",
+        "kindergartenId": "1ecec08c-ed56-b044-e053-0a32095ab044",
+        "title": "포항영흥초등학교병설유치원 포니키즈 현장체험학습 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZeeRARzLrW/",
+        "source": "other",
+        "sourceName": "Instagram · 포항영흥초등학교병설유치원",
+        "snippet": "검색 결과에서 포항영흥초등학교병설유치원, 포니키즈 현장체험학습, 신나게 놀기 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2c7c1178",
+        "structuredFields": {
+          "kindergartenName": "포항영흥초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 중앙로212번길 6-7 . 포항영흥초등학교병설유치원 (죽도동)",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZeeRARzLrW%22%20%22%ED%8F%AC%ED%95%AD%EC%98%81%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 포항영흥초등학교병설유치원 전체 명칭과 포항 단서를 함께 보여 동일 명칭 후보 중 포항 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZeeRARzLrW/",
+          "normalizedUrl": "instagram.com/reel/dzeerarzlrw",
+          "normalizedText": "포항영흥초등학교병설유치원 포니키즈 현장체험학습 instagram reel 검색 결과에서 포항영흥초등학교병설유치원 포니키즈 현장체험학습 신나게 놀기 단서가 확인된다.",
+          "htmlSnapshotHash": "2c7c1178",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-336d7b3c",
+        "kindergartenId": "1ecec08c-ed56-b044-e053-0a32095ab044",
+        "title": "포항영흥초등학교병설유치원 딸기농장체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWyKlOFE0e_/",
+        "source": "other",
+        "sourceName": "Instagram · 포항영흥초등학교병설유치원",
+        "snippet": "검색 결과에서 포항영흥초등학교병설유치원, 포항공립유치원, 딸기농장체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "strawberry"
+        ],
+        "date": "2026-04-06",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "336d7b3c",
+        "structuredFields": {
+          "kindergartenName": "포항영흥초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 중앙로212번길 6-7 . 포항영흥초등학교병설유치원 (죽도동)",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWyKlOFE0e_%22%20%22%ED%8F%AC%ED%95%AD%EC%98%81%ED%9D%A5%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%EB%86%8D%EC%9E%A5%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과가 포항영흥초등학교병설유치원 전체 명칭과 포항 단서를 함께 보여 동일 명칭 후보 중 포항 원장부 기관으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWyKlOFE0e_/",
+          "normalizedUrl": "instagram.com/reel/dwyklofe0e_",
+          "normalizedText": "포항영흥초등학교병설유치원 딸기농장체험 instagram reel 검색 결과에서 포항영흥초등학교병설유치원 포항공립유치원 딸기농장체험 단서가 확인된다.",
+          "htmlSnapshotHash": "336d7b3c",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0bdf-b044-e053-0a32095ab044": [
@@ -13330,6 +13545,51 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f519-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-874eb4bf",
+        "kindergartenId": "1ecec08c-f519-b044-e053-0a32095ab044",
+        "title": "곡강초등학교병설유치원 딸기체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DW0V8yYx_6G/",
+        "source": "other",
+        "sourceName": "Instagram · 곡강초등학교병설유치원",
+        "snippet": "검색 결과에서 곡강초등학교병설유치원, 딸기청 만들기, 허브체험, 딸기체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "strawberry"
+        ],
+        "date": "2026-04-06",
+        "collectedAt": "2026-07-03T15:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "874eb4bf",
+        "structuredFields": {
+          "kindergartenName": "곡강초등학교병설유치원",
+          "kindergartenAddress": "경상북도 포항시 북구 칠포로 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW0V8yYx_6G%22%20%22%EA%B3%A1%EA%B0%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%94%B8%EA%B8%B0%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "곡강초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 딸기체험 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW0V8yYx_6G/",
+          "normalizedUrl": "instagram.com/reel/dw0v8yyx_6g",
+          "normalizedText": "곡강초등학교병설유치원 딸기체험 instagram reel 검색 결과에서 곡강초등학교병설유치원 딸기청 만들기 허브체험 딸기체험 단서가 확인된다.",
+          "htmlSnapshotHash": "874eb4bf",
+          "extractedAt": "2026-07-03T15:45:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]
