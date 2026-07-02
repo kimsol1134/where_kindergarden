@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 304,
-  "kindergartenCount": 102,
+  "totalCount": 305,
+  "kindergartenCount": 103,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
       {
@@ -11369,6 +11369,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0724-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4e13bd9c",
+        "kindergartenId": "1ecec08d-0724-b044-e053-0a32095ab044",
+        "title": "작은꽃예능유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLqpQ_RS3YT/",
+        "source": "other",
+        "sourceName": "Instagram · 작은꽃예능유치원",
+        "snippet": "검색 결과에서 작은꽃예능유치원 계정과 시장놀이 행사 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": "2025-07-03",
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4e13bd9c",
+        "structuredFields": {
+          "kindergartenName": "작은꽃예능유치원",
+          "kindergartenAddress": "인천광역시 연수구 먼우금로 123",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLqpQ_RS3YT%22%20%22%EC%9E%91%EC%9D%80%EA%BD%83%EC%98%88%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "작은꽃예능유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 행사 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLqpQ_RS3YT/",
+          "normalizedUrl": "instagram.com/reel/dlqpq_rs3yt",
+          "normalizedText": "작은꽃예능유치원 시장놀이 instagram reel 검색 결과에서 작은꽃예능유치원 계정과 시장놀이 행사 단서가 확인된다.",
+          "htmlSnapshotHash": "4e13bd9c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "작은꽃예능유치원",
+            "kindergartenAddress": "인천광역시 연수구 먼우금로 123",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLqpQ_RS3YT%22%20%22%EC%9E%91%EC%9D%80%EA%BD%83%EC%98%88%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "작은꽃예능유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 행사 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

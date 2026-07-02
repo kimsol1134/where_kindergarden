@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 289,
+  "totalCount": 290,
   "kindergartenCount": 68,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -1731,6 +1731,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T20:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9d6acc7c",
+        "kindergartenId": "1ecec08c-f3c4-b044-e053-0a32095ab044",
+        "title": "대전도마초등학교병설유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+        "source": "other",
+        "sourceName": "Instagram · 도마병설유치원",
+        "snippet": "검색 결과에서 도마병설유치원, 시장놀이, 대전도마초등학교 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9d6acc7c",
+        "structuredFields": {
+          "kindergartenName": "대전도마초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+          "normalizedUrl": "instagram.com/reel/damzy4zhopl",
+          "normalizedText": "대전도마초등학교병설유치원 시장놀이 instagram reel 검색 결과에서 도마병설유치원 시장놀이 대전도마초등학교 단서가 확인된다.",
+          "htmlSnapshotHash": "9d6acc7c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전도마초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

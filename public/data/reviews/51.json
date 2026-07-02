@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 135,
-  "kindergartenCount": 39,
+  "totalCount": 136,
+  "kindergartenCount": 40,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
       {
@@ -6099,6 +6099,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-047d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e496e599",
+        "kindergartenId": "1ecec08d-047d-b044-e053-0a32095ab044",
+        "title": "당림초등학교병설유치원 경제활동 놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZm-Gsokyzb/",
+        "source": "other",
+        "sourceName": "Instagram · 당림초등학교병설유치원",
+        "snippet": "검색 결과에서 당림초 병설유치원, 경제활동 놀이, 춘천 작은학교 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": "2026-06-11",
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e496e599",
+        "structuredFields": {
+          "kindergartenName": "당림초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 춘천시 당숲안길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZm-Gsokyzb%22%20%22%EB%8B%B9%EB%A6%BC%EC%B4%88%EB%B3%91%EC%84%A4%22%20%22%EA%B2%BD%EC%A0%9C%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "당림초 병설유치원 및 춘천 단서가 로컬 강원 춘천 당림초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZm-Gsokyzb/",
+          "normalizedUrl": "instagram.com/p/dzm-gsokyzb",
+          "normalizedText": "당림초등학교병설유치원 경제활동 놀이 instagram post 검색 결과에서 당림초 병설유치원 경제활동 놀이 춘천 작은학교 단서가 확인된다.",
+          "htmlSnapshotHash": "e496e599",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "당림초등학교병설유치원",
+            "kindergartenAddress": "강원특별자치도 춘천시 당숲안길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZm-Gsokyzb%22%20%22%EB%8B%B9%EB%A6%BC%EC%B4%88%EB%B3%91%EC%84%A4%22%20%22%EA%B2%BD%EC%A0%9C%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "당림초 병설유치원 및 춘천 단서가 로컬 강원 춘천 당림초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

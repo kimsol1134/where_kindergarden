@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 159,
+  "totalCount": 160,
   "kindergartenCount": 52,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -2529,6 +2529,58 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ae85a596",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산새싹유치원 우리 동네 시장 체험 Threads Post",
+        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+        "source": "other",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "검색 결과에서 군산새싹유치원, 우리 동네 시장 체험, 역전시장 방문 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ae85a596",
+        "structuredFields": {
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+          "normalizedUrl": "threads.com/@saessak_kindergarten_kunsan/post/dz1zdy_d1lz",
+          "normalizedText": "군산새싹유치원 우리 동네 시장 체험 threads post 검색 결과에서 군산새싹유치원 우리 동네 시장 체험 역전시장 방문 단서가 확인된다.",
+          "htmlSnapshotHash": "ae85a596",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],

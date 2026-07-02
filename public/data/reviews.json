@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 4946,
-  "kindergartenCount": 1626,
+  "totalCount": 4953,
+  "kindergartenCount": 1629,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -79346,6 +79346,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T20:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9d6acc7c",
+        "kindergartenId": "1ecec08c-f3c4-b044-e053-0a32095ab044",
+        "title": "대전도마초등학교병설유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+        "source": "other",
+        "sourceName": "Instagram · 도마병설유치원",
+        "snippet": "검색 결과에서 도마병설유치원, 시장놀이, 대전도마초등학교 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9d6acc7c",
+        "structuredFields": {
+          "kindergartenName": "대전도마초등학교병설유치원",
+          "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMzY4ZhOPl/",
+          "normalizedUrl": "instagram.com/reel/damzy4zhopl",
+          "normalizedText": "대전도마초등학교병설유치원 시장놀이 instagram reel 검색 결과에서 도마병설유치원 시장놀이 대전도마초등학교 단서가 확인된다.",
+          "htmlSnapshotHash": "9d6acc7c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "대전도마초등학교병설유치원",
+            "kindergartenAddress": "대전광역시 서구 배재로172번길 23",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaMzY4ZhOPl%22%20%22%EB%8F%84%EB%A7%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "도마병설유치원 및 대전도마초등학교 단서가 로컬 대전도마초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f812-b044-e053-0a32095ab044": [
@@ -143487,6 +143539,110 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-082eb3df",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 우리 동네 부모참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 우리 동네 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "082eb3df",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+          "normalizedUrl": "instagram.com/reel/dz0osxltspn",
+          "normalizedText": "진흥초등학교병설유치원 우리 동네 부모참여수업 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 우리 동네 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "082eb3df",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2c8b011a",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 꽃누리 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 꽃누리 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2c8b011a",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+          "normalizedUrl": "instagram.com/reel/dz7chgox2r_",
+          "normalizedText": "진흥초등학교병설유치원 꽃누리 시장놀이 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 꽃누리 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "2c8b011a",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f69c-b044-e053-0a32095ab044": [
@@ -190420,6 +190576,58 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ae85a596",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산새싹유치원 우리 동네 시장 체험 Threads Post",
+        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+        "source": "other",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "검색 결과에서 군산새싹유치원, 우리 동네 시장 체험, 역전시장 방문 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "market-play",
+          "local-economy"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ae85a596",
+        "structuredFields": {
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1ZDY_D1Lz/",
+          "normalizedUrl": "threads.com/@saessak_kindergarten_kunsan/post/dz1zdy_d1lz",
+          "normalizedText": "군산새싹유치원 우리 동네 시장 체험 threads post 검색 결과에서 군산새싹유치원 우리 동네 시장 체험 역전시장 방문 단서가 확인된다.",
+          "htmlSnapshotHash": "ae85a596",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DZ1ZDY_D1Lz%22%20%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "새싹유치원 동명 후보가 있으나 군산새싹유치원 계정 단서가 로컬 전북 군산 새싹유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f1e9-b044-e053-0a32095ab044": [
@@ -212139,6 +212347,168 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-047d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e496e599",
+        "kindergartenId": "1ecec08d-047d-b044-e053-0a32095ab044",
+        "title": "당림초등학교병설유치원 경제활동 놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZm-Gsokyzb/",
+        "source": "other",
+        "sourceName": "Instagram · 당림초등학교병설유치원",
+        "snippet": "검색 결과에서 당림초 병설유치원, 경제활동 놀이, 춘천 작은학교 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": "2026-06-11",
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e496e599",
+        "structuredFields": {
+          "kindergartenName": "당림초등학교병설유치원",
+          "kindergartenAddress": "강원특별자치도 춘천시 당숲안길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZm-Gsokyzb%22%20%22%EB%8B%B9%EB%A6%BC%EC%B4%88%EB%B3%91%EC%84%A4%22%20%22%EA%B2%BD%EC%A0%9C%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "당림초 병설유치원 및 춘천 단서가 로컬 강원 춘천 당림초등학교병설유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZm-Gsokyzb/",
+          "normalizedUrl": "instagram.com/p/dzm-gsokyzb",
+          "normalizedText": "당림초등학교병설유치원 경제활동 놀이 instagram post 검색 결과에서 당림초 병설유치원 경제활동 놀이 춘천 작은학교 단서가 확인된다.",
+          "htmlSnapshotHash": "e496e599",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "당림초등학교병설유치원",
+            "kindergartenAddress": "강원특별자치도 춘천시 당숲안길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZm-Gsokyzb%22%20%22%EB%8B%B9%EB%A6%BC%EC%B4%88%EB%B3%91%EC%84%A4%22%20%22%EA%B2%BD%EC%A0%9C%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "당림초 병설유치원 및 춘천 단서가 로컬 강원 춘천 당림초등학교병설유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0724-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4e13bd9c",
+        "kindergartenId": "1ecec08d-0724-b044-e053-0a32095ab044",
+        "title": "작은꽃예능유치원 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLqpQ_RS3YT/",
+        "source": "other",
+        "sourceName": "Instagram · 작은꽃예능유치원",
+        "snippet": "검색 결과에서 작은꽃예능유치원 계정과 시장놀이 행사 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "local-economy"
+        ],
+        "date": "2025-07-03",
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4e13bd9c",
+        "structuredFields": {
+          "kindergartenName": "작은꽃예능유치원",
+          "kindergartenAddress": "인천광역시 연수구 먼우금로 123",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLqpQ_RS3YT%22%20%22%EC%9E%91%EC%9D%80%EA%BD%83%EC%98%88%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "작은꽃예능유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 행사 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLqpQ_RS3YT/",
+          "normalizedUrl": "instagram.com/reel/dlqpq_rs3yt",
+          "normalizedText": "작은꽃예능유치원 시장놀이 instagram reel 검색 결과에서 작은꽃예능유치원 계정과 시장놀이 행사 단서가 확인된다.",
+          "htmlSnapshotHash": "4e13bd9c",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "작은꽃예능유치원",
+            "kindergartenAddress": "인천광역시 연수구 먼우금로 123",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLqpQ_RS3YT%22%20%22%EC%9E%91%EC%9D%80%EA%BD%83%EC%98%88%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "작은꽃예능유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 계정명과 행사 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ee84-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b0d66a5b",
+        "kindergartenId": "1ecec08c-ee84-b044-e053-0a32095ab044",
+        "title": "초월한솔유치원 아나바다 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+        "source": "other",
+        "sourceName": "Instagram · 초월한솔유치원",
+        "snippet": "검색 결과에서 초월한솔유치원, 아나바다시장놀이, 경기광주유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b0d66a5b",
+        "structuredFields": {
+          "kindergartenName": "초월한솔유치원",
+          "kindergartenAddress": "경기도 광주시 현산로 96",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+          "normalizedUrl": "instagram.com/reel/dyaxx6tt1ds",
+          "normalizedText": "초월한솔유치원 아나바다 시장놀이 instagram reel 검색 결과에서 초월한솔유치원 아나바다시장놀이 경기광주유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "b0d66a5b",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초월한솔유치원",
+            "kindergartenAddress": "경기도 광주시 현산로 96",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

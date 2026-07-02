@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1048,
-  "kindergartenCount": 440,
+  "totalCount": 1049,
+  "kindergartenCount": 441,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -39632,6 +39632,60 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ee84-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-b0d66a5b",
+        "kindergartenId": "1ecec08c-ee84-b044-e053-0a32095ab044",
+        "title": "초월한솔유치원 아나바다 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+        "source": "other",
+        "sourceName": "Instagram · 초월한솔유치원",
+        "snippet": "검색 결과에서 초월한솔유치원, 아나바다시장놀이, 경기광주유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b0d66a5b",
+        "structuredFields": {
+          "kindergartenName": "초월한솔유치원",
+          "kindergartenAddress": "경기도 광주시 현산로 96",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYaxX6tT1DS/",
+          "normalizedUrl": "instagram.com/reel/dyaxx6tt1ds",
+          "normalizedText": "초월한솔유치원 아나바다 시장놀이 instagram reel 검색 결과에서 초월한솔유치원 아나바다시장놀이 경기광주유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "b0d66a5b",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초월한솔유치원",
+            "kindergartenAddress": "경기도 광주시 현산로 96",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYaxX6tT1DS%22%20%22%EC%B4%88%EC%9B%94%ED%95%9C%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "초월한솔유치원은 로컬 원장부 단일 정확 명칭이며 경기광주 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

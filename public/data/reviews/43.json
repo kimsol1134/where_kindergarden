@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 97,
+  "totalCount": 99,
   "kindergartenCount": 23,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -2442,6 +2442,110 @@
           ]
         },
         "evidenceChecksum": "98d5fa07"
+      },
+      {
+        "id": "rev-082eb3df",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 우리 동네 부모참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 우리 동네 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "082eb3df",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ0oSXLTspN/",
+          "normalizedUrl": "instagram.com/reel/dz0osxltspn",
+          "normalizedText": "진흥초등학교병설유치원 우리 동네 부모참여수업 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 우리 동네 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "082eb3df",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ0oSXLTspN%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%8B%9C%EC%9E%A5%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2c8b011a",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "진흥초등학교병설유치원 꽃누리 시장놀이 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "검색 결과에서 진흥초병설유치원, 부모참여수업, 꽃누리 시장놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T19:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2c8b011a",
+        "structuredFields": {
+          "kindergartenName": "진흥초등학교병설유치원",
+          "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ7ChgOx2R_/",
+          "normalizedUrl": "instagram.com/reel/dz7chgox2r_",
+          "normalizedText": "진흥초등학교병설유치원 꽃누리 시장놀이 instagram reel 검색 결과에서 진흥초병설유치원 부모참여수업 꽃누리 시장놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "2c8b011a",
+          "extractedAt": "2026-07-03T19:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "진흥초등학교병설유치원",
+            "kindergartenAddress": "충청북도 청주시 흥덕구 증안로 107",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ7ChgOx2R_%22%20%22%EC%A7%84%ED%9D%A5%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "진흥초등학교병설유치원 동명 후보가 있으나 계정 위치 단서가 충북 청주 흥덕구 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T19:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f69c-b044-e053-0a32095ab044": [
