@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 128,
+  "totalCount": 129,
   "kindergartenCount": 32,
   "reviews": {
     "1ecec08d-0098-b044-e053-0a32095ab044": [
@@ -4898,6 +4898,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave681"
+      },
+      {
+        "id": "rev-sns-wave692-7ad74a99",
+        "kindergartenId": "1ecec08d-00f7-b044-e053-0a32095ab044",
+        "title": "화성 동실유치원 감자심기와 텃밭가꾸기 기록",
+        "url": "https://www.instagram.com/p/DWyQKBjAY2U/",
+        "source": "other",
+        "sourceName": "Instagram · 동실유치원",
+        "snippet": "동실유치원이 씨감자를 심고 흙을 덮으며 텃밭을 돌보는 활동을 소개한 공개 게시물입니다.",
+        "summary": "유아들이 작물이 자라는 과정을 직접 경험하며 생태와 먹거리 활동을 함께 배울 수 있는 텃밭 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "harvest",
+          "hwaseong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.800Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave692-7ad74a99",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWyQKBjAY2U/",
+          "normalizedUrl": "instagram.com/p/dwyqkbjay2u",
+          "normalizedText": "동실유치원 씨감자 심기 텃밭가꾸기 흙 작물 생태활동",
+          "htmlSnapshotHash": "sns-wave692-7ad74a99",
+          "extractedAt": "2026-07-03T23:59:59.800Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWyQKBjAY2U/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.800Z",
+        "approvedBy": "codex-manual-sns-wave692"
       }
     ],
     "1ecec08c-edcd-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 515,
+  "totalCount": 516,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -22498,6 +22498,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "codex-manual-sns-wave672"
+      },
+      {
+        "id": "rev-sns-wave692-813524a9",
+        "kindergartenId": "1ecec08c-f59d-b044-e053-0a32095ab044",
+        "title": "대구 최정유치원 텃밭 작물 재배와 수확 기록",
+        "url": "https://www.instagram.com/p/DOnnljSkRZ4/",
+        "source": "other",
+        "sourceName": "Instagram · 최정유치원",
+        "snippet": "최정유치원이 텃밭에서 감자와 고구마, 옥수수 등 다양한 작물을 기르고 수확한 활동을 소개한 공개 게시물입니다.",
+        "summary": "다양한 작물 재배와 수확을 통해 계절 변화와 먹거리 경험을 함께 다룬 유치원 생태활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden",
+          "harvest",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.800Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave692-813524a9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOnnljSkRZ4/",
+          "normalizedUrl": "instagram.com/p/donnljskrz4",
+          "normalizedText": "최정유치원 텃밭 감자 고구마 옥수수 작물 재배 수확",
+          "htmlSnapshotHash": "sns-wave692-813524a9",
+          "extractedAt": "2026-07-03T23:59:59.800Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DOnnljSkRZ4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.800Z",
+        "approvedBy": "codex-manual-sns-wave692"
       }
     ],
     "1ecec08c-ee1a-b044-e053-0a32095ab044": [
@@ -22575,5 +22611,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.500Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.800Z"
 }
