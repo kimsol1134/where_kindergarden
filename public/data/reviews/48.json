@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 282,
-  "kindergartenCount": 101,
+  "totalCount": 283,
+  "kindergartenCount": 102,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -13208,6 +13208,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave715"
+      }
+    ],
+    "1ecec08c-f097-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave724-3f28357d",
+        "kindergartenId": "1ecec08c-f097-b044-e053-0a32095ab044",
+        "title": "합천 성모유치원 대구공항과 기상과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DNp6pvIz_L9/",
+        "source": "other",
+        "sourceName": "Instagram · 합천성모유치원",
+        "snippet": "합천 성모유치원 아름드리반 친구들이 대구공항과 기상과학관을 견학한 릴스입니다.",
+        "summary": "유아들이 공항과 기상 관련 시설을 방문해 교통기관과 날씨를 함께 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "airport",
+          "weather-science",
+          "field-trip",
+          "hapcheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-3f28357d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNp6pvIz_L9/",
+          "normalizedUrl": "instagram.com/reel/dnp6pviz_l9",
+          "normalizedText": "합천성모유치원 아름드리반 대구공항 기상과학관 견학 교통기관",
+          "htmlSnapshotHash": "sns-wave724-3f28357d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DNp6pvIz_L9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ]
   }

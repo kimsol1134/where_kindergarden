@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 76,
+  "totalCount": 77,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -2658,6 +2658,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave718"
+      },
+      {
+        "id": "rev-sns-wave724-6268cbcf",
+        "kindergartenId": "1ecec08c-fb54-b044-e053-0a32095ab044",
+        "title": "인천 아삽유치원 교통안전공원 견학 기록",
+        "url": "https://www.instagram.com/reel/DZXeeZZyNYy/",
+        "source": "other",
+        "sourceName": "Instagram · 아삽유치원",
+        "snippet": "아삽유치원 친구들이 인천 교통안전공원 견학에서 교통안전 활동을 경험한 릴스입니다.",
+        "summary": "유아들이 교통안전공원에서 신호와 보행 안전을 직접 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "traffic-park",
+          "field-trip",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-6268cbcf",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZXeeZZyNYy/",
+          "normalizedUrl": "instagram.com/reel/dzxeezzynyy",
+          "normalizedText": "아삽유치원 인천 교통안전공원 견학 교통안전",
+          "htmlSnapshotHash": "sns-wave724-6268cbcf",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZXeeZZyNYy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ],
     "1ecec08c-f528-b044-e053-0a32095ab044": [

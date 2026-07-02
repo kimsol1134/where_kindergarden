@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 61,
+  "totalCount": 62,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -401,6 +401,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T08:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave724-0aa15f1b",
+        "kindergartenId": "1ecec08c-f281-b044-e053-0a32095ab044",
+        "title": "대구 드림아이유치원 인천공항 견학 기록",
+        "url": "https://www.instagram.com/reel/DaETbvCTOxv/",
+        "source": "other",
+        "sourceName": "Instagram · 드림아이유치원",
+        "snippet": "드림아이유치원 친구들이 인천공항 견학에서 공항에서 하는 일을 알아본 릴스입니다.",
+        "summary": "유아들이 공항 시설과 항공 교통기관의 역할을 직접 살펴본 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "airport",
+          "transportation",
+          "field-trip",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-0aa15f1b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaETbvCTOxv/",
+          "normalizedUrl": "instagram.com/reel/daetbvctoxv",
+          "normalizedText": "드림아이유치원 인천공항 견학 공항에서 하는 일 항공 교통기관",
+          "htmlSnapshotHash": "sns-wave724-0aa15f1b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaETbvCTOxv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ],
     "1ecec08d-0d5b-b044-e053-0a32095ab044": [

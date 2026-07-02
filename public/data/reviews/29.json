@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 179,
+  "totalCount": 180,
   "kindergartenCount": 54,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -3188,6 +3188,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T19:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave724-d502e224",
+        "kindergartenId": "1ecec08d-0275-b044-e053-0a32095ab044",
+        "title": "광주중앙유치원 찾아오는 공항 체험 기록",
+        "url": "https://www.instagram.com/reel/DXL8OJaCTD5/",
+        "source": "other",
+        "sourceName": "Instagram · 광주중앙유치원",
+        "snippet": "광주중앙유치원 친구들이 공항 체험전에서 승무원, 조종사, 승객 역할을 나누어 활동한 릴스입니다.",
+        "summary": "유아들이 공항 놀이와 역할 활동을 통해 항공 교통기관을 이해한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "airport",
+          "role-play",
+          "transportation",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-d502e224",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXL8OJaCTD5/",
+          "normalizedUrl": "instagram.com/reel/dxl8ojactd5",
+          "normalizedText": "광주중앙유치원 찾아오는 체험전 공항 승무원 조종사 승객 역할",
+          "htmlSnapshotHash": "sns-wave724-d502e224",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXL8OJaCTD5/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ],
     "1ecec08d-06ba-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 34,
+  "totalCount": 35,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -1599,6 +1599,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:56.000Z",
         "approvedBy": "codex-manual-sns-wave687"
+      },
+      {
+        "id": "rev-sns-wave724-8c173001",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 교통랜드 견학 기록",
+        "url": "https://www.instagram.com/p/DaMbfsAEcF2/",
+        "source": "other",
+        "sourceName": "Instagram · 은성유치원",
+        "snippet": "울산 은성유치원 친구들이 교통랜드에서 신호등과 교통안전 교육을 체험한 게시물입니다.",
+        "summary": "유아들이 교통랜드 견학을 통해 안전한 보행과 교통 규칙을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "traffic-land",
+          "field-trip",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-8c173001",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMbfsAEcF2/",
+          "normalizedUrl": "instagram.com/p/dambfsaecf2",
+          "normalizedText": "은성유치원 울산중구유치원 교통랜드 견학 교통안전 신호등",
+          "htmlSnapshotHash": "sns-wave724-8c173001",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMbfsAEcF2/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ]
   },

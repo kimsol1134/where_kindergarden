@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1307,
-  "kindergartenCount": 493,
+  "totalCount": 1309,
+  "kindergartenCount": 494,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -8279,6 +8279,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave724-c2f7133d",
+        "kindergartenId": "1ecec08c-edc7-b044-e053-0a32095ab044",
+        "title": "오산 지예뜰유치원 교통박물관 견학 기록",
+        "url": "https://www.instagram.com/reel/DN8ENYDEVB4/",
+        "source": "other",
+        "sourceName": "Instagram · 지예뜰유치원",
+        "snippet": "지예뜰유치원 친구들이 교통박물관 견학에서 교통교육과 안전교육을 경험한 릴스입니다.",
+        "summary": "유아들이 교통박물관에서 안전한 교통생활을 체험 중심으로 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-museum",
+          "traffic-safety",
+          "field-trip",
+          "osan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-c2f7133d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DN8ENYDEVB4/",
+          "normalizedUrl": "instagram.com/reel/dn8enydevb4",
+          "normalizedText": "지예뜰유치원 교통박물관 견학 교통교육 안전교육",
+          "htmlSnapshotHash": "sns-wave724-c2f7133d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DN8ENYDEVB4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ],
     "8a0707f1-2450-4dac-8146-60c5e8d9d514": [
@@ -51798,6 +51835,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      }
+    ],
+    "1ecec08c-fb4a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave724-b2431c6a",
+        "kindergartenId": "1ecec08c-fb4a-b044-e053-0a32095ab044",
+        "title": "수원 예랑유치원 삼성 모빌리티뮤지엄 견학 기록",
+        "url": "https://www.instagram.com/reel/DZL4WQNvxxb/",
+        "source": "other",
+        "sourceName": "Instagram · 예랑유치원",
+        "snippet": "수원 예랑유치원 친구들이 삼성 모빌리티뮤지엄 교통나라에서 교통안전 교육과 전시 체험을 한 릴스입니다.",
+        "summary": "유아들이 모빌리티 전시와 교통안전 교육을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "mobility-museum",
+          "traffic-safety",
+          "field-trip",
+          "suwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-b2431c6a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZL4WQNvxxb/",
+          "normalizedUrl": "instagram.com/reel/dzl4wqnvxxb",
+          "normalizedText": "예랑유치원 삼성 모빌리티뮤지엄 교통나라 교통안전 교육 전시 체험",
+          "htmlSnapshotHash": "sns-wave724-b2431c6a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZL4WQNvxxb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ]
   }

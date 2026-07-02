@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 690,
+  "totalCount": 691,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -7438,6 +7438,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave724-25709466",
+        "kindergartenId": "1ecec08d-0268-b044-e053-0a32095ab044",
+        "title": "서울 새삼선유치원 공항놀이 기록",
+        "url": "https://www.instagram.com/reel/Cuq6CRuszNt/",
+        "source": "other",
+        "sourceName": "Instagram · 새삼선유치원",
+        "snippet": "새삼선유치원 친구들이 공항놀이와 공항 패션 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 공항 상황을 놀이로 구성하며 항공 교통기관을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "airport",
+          "role-play",
+          "transportation",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-25709466",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/Cuq6CRuszNt/",
+          "normalizedUrl": "instagram.com/reel/cuq6crusznt",
+          "normalizedText": "새삼선유치원 공항놀이 공항패션 항공 교통기관 놀이",
+          "htmlSnapshotHash": "sns-wave724-25709466",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/Cuq6CRuszNt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ],
     "1ecec08c-efcc-b044-e053-0a32095ab044": [

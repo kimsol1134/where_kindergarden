@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 7,
+  "totalCount": 8,
   "kindergartenCount": 1,
   "reviews": {
     "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2": [
@@ -305,6 +305,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave724-959fb5c1",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 섬진강기차마을 견학 기록",
+        "url": "https://www.instagram.com/reel/DZC4LfsTCdf/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "임실둥지유치원 친구들이 섬진강기차마을에서 기차와 철도 문화를 체험한 릴스입니다.",
+        "summary": "유아들이 기차마을 견학을 통해 철도 교통기관과 현장체험을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "railway",
+          "train-village",
+          "field-trip",
+          "imsil"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-959fb5c1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZC4LfsTCdf/",
+          "normalizedUrl": "instagram.com/reel/dzc4lfstcdf",
+          "normalizedText": "임실둥지유치원 섬진강기차마을 기차 철도 현장체험",
+          "htmlSnapshotHash": "sns-wave724-959fb5c1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZC4LfsTCdf/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
       }
     ]
   },
