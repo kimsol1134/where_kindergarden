@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 48,
+  "totalCount": 49,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-ffa1-b044-e053-0a32095ab044": [
@@ -820,6 +820,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:30.000Z",
         "approvedBy": "codex-manual-sns-wave683"
+      },
+      {
+        "id": "rev-sns-wave709-69a379a2",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 햇빛유치원 화명동 가족운동회 기록",
+        "url": "https://www.instagram.com/p/DY4AENOkU-M/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "화명동 단서가 있는 햇빛유치원이 가족운동회와 부모참여행사를 진행한 게시물입니다.",
+        "summary": "유아와 보호자가 함께 참여한 가족 신체활동 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "parent-participation",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-69a379a2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY4AENOkU-M/",
+          "normalizedUrl": "instagram.com/p/dy4aenoku-m",
+          "normalizedText": "햇빛유치원 화명동유치원 가족운동회 부모참여행사",
+          "htmlSnapshotHash": "sns-wave709-69a379a2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY4AENOkU-M/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "8f3f48a5-f2b6-40f6-be06-b1f8369a1b2c": [

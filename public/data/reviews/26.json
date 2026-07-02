@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 337,
+  "totalCount": 339,
   "kindergartenCount": 94,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -4452,6 +4452,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:30.000Z",
         "approvedBy": "codex-manual-sns-wave683"
+      },
+      {
+        "id": "rev-sns-wave709-69a379a2",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 햇빛유치원 화명동 가족운동회 기록",
+        "url": "https://www.instagram.com/p/DY4AENOkU-M/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "화명동 단서가 있는 햇빛유치원이 가족운동회와 부모참여행사를 진행한 게시물입니다.",
+        "summary": "유아와 보호자가 함께 참여한 가족 신체활동 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "parent-participation",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-69a379a2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY4AENOkU-M/",
+          "normalizedUrl": "instagram.com/p/dy4aenoku-m",
+          "normalizedText": "햇빛유치원 화명동유치원 가족운동회 부모참여행사",
+          "htmlSnapshotHash": "sns-wave709-69a379a2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY4AENOkU-M/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08d-0096-b044-e053-0a32095ab044": [
@@ -8818,6 +8855,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave709-c4a27bb7",
+        "kindergartenId": "300dbb5e-98b0-4c8f-bec7-004c14439664",
+        "title": "부산 금샘누리유치원 가족운동회 기록",
+        "url": "https://www.instagram.com/p/DBDDyQkzBUW/",
+        "source": "other",
+        "sourceName": "Instagram · 금샘누리유치원",
+        "snippet": "금샘누리유치원이 가족운동회에서 몸풀기, 손터널, 점프 활동을 진행한 게시물입니다.",
+        "summary": "유아와 가족이 다양한 신체활동을 함께하며 협동과 즐거움을 나눈 운동회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "physical-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-c4a27bb7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBDDyQkzBUW/",
+          "normalizedUrl": "instagram.com/p/dbddyqkzbuw",
+          "normalizedText": "금샘누리유치원 가족운동회 개회식 몸풀기 손터널 점프",
+          "htmlSnapshotHash": "sns-wave709-c4a27bb7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DBDDyQkzBUW/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08c-f20b-b044-e053-0a32095ab044": [

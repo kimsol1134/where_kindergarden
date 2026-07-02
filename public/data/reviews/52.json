@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 189,
+  "totalCount": 190,
   "kindergartenCount": 60,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -1505,6 +1505,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave709-dd02d348",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "임실둥지유치원 한마음 가족운동회 기록",
+        "url": "https://www.instagram.com/p/DZj4_ehE2yb/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "임실둥지유치원이 한마음 가족운동회와 유치원 체육대회 장면을 소개한 게시물입니다.",
+        "summary": "유아와 가족이 함께 뛰고 응원하며 공동체 활동을 경험한 운동회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "physical-activity",
+          "imsil"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-dd02d348",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZj4_ehE2yb/",
+          "normalizedUrl": "instagram.com/p/dzj4_ehe2yb",
+          "normalizedText": "임실둥지유치원 한마음 가족운동회 유치원 체육대회 공립단설유치원",
+          "htmlSnapshotHash": "sns-wave709-dd02d348",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZj4_ehE2yb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08c-f9b2-b044-e053-0a32095ab044": [
@@ -8344,5 +8381,5 @@
       }
     ]
   },
-  "lastUpdatedAt": "2026-07-03T23:59:59.998Z"
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

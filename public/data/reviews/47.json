@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 351,
+  "totalCount": 352,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -15060,6 +15060,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave709-a4762ea2",
+        "kindergartenId": "a36f1133-c92f-4802-9077-06f69b8dbb0d",
+        "title": "구미원당초등학교병설유치원 체육대회 기록",
+        "url": "https://www.instagram.com/reel/DYRHuBFKbNu/",
+        "source": "other",
+        "sourceName": "Instagram · 구미원당초등학교병설유치원",
+        "snippet": "구미 원당초등학교 병설유치원이 줄다리기와 체육대회 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 줄다리기 등 함께하는 신체활동을 통해 도전과 협동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "tug-of-war",
+          "physical-activity",
+          "gumi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-a4762ea2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYRHuBFKbNu/",
+          "normalizedUrl": "instagram.com/reel/dyrhubfkbnu",
+          "normalizedText": "구미 원당초등학교 병설유치원 체육대회 줄다리기",
+          "htmlSnapshotHash": "sns-wave709-a4762ea2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYRHuBFKbNu/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08c-f753-b044-e053-0a32095ab044": [

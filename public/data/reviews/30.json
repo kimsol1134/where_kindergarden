@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 363,
+  "totalCount": 364,
   "kindergartenCount": 75,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -870,6 +870,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave709-0e7a3e18",
+        "kindergartenId": "1ecec08d-010e-b044-e053-0a32095ab044",
+        "title": "대전 새싹나라유치원 한마음 가족운동회 기록",
+        "url": "https://www.instagram.com/reel/DYhXz2GRVwd/",
+        "source": "other",
+        "sourceName": "Instagram · 새싹나라유치원",
+        "snippet": "새싹나라유치원이 온 가족이 함께 참여한 한마음 가족운동회 장면을 공개한 릴스입니다.",
+        "summary": "유아와 가족이 신체활동과 응원을 함께 즐긴 운동회 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "physical-activity",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-0e7a3e18",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYhXz2GRVwd/",
+          "normalizedUrl": "instagram.com/reel/dyhxz2grvwd",
+          "normalizedText": "새싹나라유치원 한마음 가족운동회 온 가족 함께 운동회",
+          "htmlSnapshotHash": "sns-wave709-0e7a3e18",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYhXz2GRVwd/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08c-f486-b044-e053-0a32095ab044": [

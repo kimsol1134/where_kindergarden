@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 54,
+  "totalCount": 55,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-0579-b044-e053-0a32095ab044": [
@@ -1745,6 +1745,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave709-0e0bd0b1",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 근산유치원 가족운동회 응원전 기록",
+        "url": "https://www.instagram.com/p/DZ69w0VEzpH/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "근산유치원 친구들이 가족운동회를 앞두고 청팀과 홍팀으로 나뉘어 응원 대항전을 펼친 게시물입니다.",
+        "summary": "유아들이 팀 응원과 운동회 준비 활동을 통해 협동과 소속감을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "team-cheering",
+          "physical-activity",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-0e0bd0b1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ69w0VEzpH/",
+          "normalizedUrl": "instagram.com/p/dz69w0vezph",
+          "normalizedText": "근산유치원 가족운동회 청팀 홍팀 응원 대항전",
+          "htmlSnapshotHash": "sns-wave709-0e0bd0b1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ69w0VEzpH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       }
     ],
     "1ecec08c-f8c1-b044-e053-0a32095ab044": [
