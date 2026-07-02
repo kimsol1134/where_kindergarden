@@ -101,7 +101,7 @@ function detectPlatform(review: ReviewLink): Exclude<PlatformKey, 'all'> {
   try {
     const host = new URL(review.url).hostname.toLowerCase();
     if (host.includes('instagram.com')) return 'instagram';
-    if (host.includes('threads.net')) return 'threads';
+    if (host.includes('threads.net') || host.includes('threads.com')) return 'threads';
     if (host === 'x.com' || host.endsWith('.x.com') || host.includes('twitter.com')) return 'x';
     if (host.includes('facebook.com')) return 'facebook';
     if (host.includes('blog.naver.com')) return 'naver_blog';
@@ -205,6 +205,8 @@ export function ReviewsBrowser() {
     return counts;
   }, [flatReviews]);
 
+  const totalReviewCount = flatReviews.length || reviewsData?.totalCount || 0;
+
   const regionOptions = useMemo(() => {
     const codes = new Set<string>();
     flatReviews.forEach((item) => {
@@ -288,10 +290,26 @@ export function ReviewsBrowser() {
             <p className="mt-2 text-sm text-[var(--brand-ink-soft)]">
               수집된 후기의 원문 링크를 한 화면에서 검색하고 열어볼 수 있습니다.
             </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link
+                href="/reviews/all"
+                className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
+              >
+                전체 링크 보기
+              </Link>
+              <a
+                href="/data/reviews.json"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
+              >
+                JSON 열기
+              </a>
+            </div>
           </div>
           <div className="grid grid-cols-3 gap-2 text-center sm:min-w-80">
             <div className="rounded-lg border border-[rgba(203,188,174,0.45)] bg-white/80 px-3 py-2">
-              <div className="text-lg font-bold">{reviewsData?.totalCount.toLocaleString() ?? '-'}</div>
+              <div className="text-lg font-bold">{totalReviewCount ? totalReviewCount.toLocaleString() : '-'}</div>
               <div className="text-xs text-[var(--brand-ink-soft)]">전체 후기</div>
             </div>
             <div className="rounded-lg border border-[rgba(203,188,174,0.45)] bg-white/80 px-3 py-2">
