@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 85,
+  "totalCount": 86,
   "kindergartenCount": 11,
   "reviews": {
     "1ecec08c-ff4a-b044-e053-0a32095ab044": [
@@ -2719,6 +2719,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave731-c6dcbfb2",
+        "kindergartenId": "1ecec08c-eda2-b044-e053-0a32095ab044",
+        "title": "대전 중구 꿈내리유치원 제35회 졸업식 기록",
+        "url": "https://www.instagram.com/reel/DU927gOF5nE/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈내리유치원",
+        "snippet": "대전 중구 꿈내리유치원 계정에서 제35회 졸업식과 어린이들의 마지막 추억을 담은 릴스입니다.",
+        "summary": "졸업생들의 장래희망과 유치원 생활의 마무리를 기록한 대전 중구 꿈내리유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-c6dcbfb2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DU927gOF5nE/",
+          "normalizedUrl": "instagram.com/reel/du927gof5ne",
+          "normalizedText": "대전 중구 꿈내리유치원 제35회 졸업식 졸업 축하",
+          "htmlSnapshotHash": "sns-wave731-c6dcbfb2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DU927gOF5nE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08c-ff4d-b044-e053-0a32095ab044": [

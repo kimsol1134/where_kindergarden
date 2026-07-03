@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 104,
+  "totalCount": 105,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0269-b044-e053-0a32095ab044": [
@@ -3544,6 +3544,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T06:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave731-9955abf8",
+        "kindergartenId": "1ecec08c-efee-b044-e053-0a32095ab044",
+        "title": "서울 성신유치원 제42회 졸업식 기록",
+        "url": "https://www.instagram.com/p/DUvCKh1kl5E/",
+        "source": "other",
+        "sourceName": "Instagram · 성신유치원",
+        "snippet": "성북구 성신유치원 제42회 졸업식에서 난초반과 장미반 어린이들의 졸업을 축하한 게시물입니다.",
+        "summary": "서울 성북구 성신유치원 졸업식에서 만 5세반 어린이들의 졸업을 기념한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-9955abf8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DUvCKh1kl5E/",
+          "normalizedUrl": "instagram.com/p/duvckh1kl5e",
+          "normalizedText": "서울 성북구 성신유치원 제42회 졸업식 난초반 장미반",
+          "htmlSnapshotHash": "sns-wave731-9955abf8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DUvCKh1kl5E/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08c-ee4e-b044-e053-0a32095ab044": [

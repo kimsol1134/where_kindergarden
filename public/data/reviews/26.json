@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 353,
+  "totalCount": 354,
   "kindergartenCount": 95,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -12085,6 +12085,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave715"
+      },
+      {
+        "id": "rev-sns-wave731-348744f6",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 초록유치원 수료식 준비 기록",
+        "url": "https://www.instagram.com/reel/DUXN3hhEgob/",
+        "source": "other",
+        "sourceName": "Instagram · 초록유치원",
+        "snippet": "부산 모라동 초록유치원에서 수료식을 앞두고 놀이 속 배움과 한 해 마무리를 담은 릴스입니다.",
+        "summary": "유아들이 수료식을 앞두고 유치원 생활을 돌아보는 부산 초록유치원 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "completion",
+          "ceremony",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-348744f6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUXN3hhEgob/",
+          "normalizedUrl": "instagram.com/reel/duxn3hhegob",
+          "normalizedText": "부산 모라동 초록유치원 수료식 놀이 속 배움",
+          "htmlSnapshotHash": "sns-wave731-348744f6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUXN3hhEgob/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08c-fa79-b044-e053-0a32095ab044": [

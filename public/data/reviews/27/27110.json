@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 24,
+  "totalCount": 25,
   "kindergartenCount": 4,
   "reviews": {
     "5beba53d-cc7b-48d8-b95b-ad44b811c735": [
@@ -1007,7 +1007,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave731-aa2850a4",
+        "kindergartenId": "1ecec08c-fed5-b044-e053-0a32095ab044",
+        "title": "대구 원만사유치원 제38회 졸업식 기록",
+        "url": "https://www.instagram.com/p/DGU9nHPyLPx/",
+        "source": "other",
+        "sourceName": "Instagram · 원만사유치원",
+        "snippet": "원만사유치원 제38회 졸업식을 마치며 친구들의 새로운 출발을 응원한 게시물입니다.",
+        "summary": "대구 중구 원만사유치원 졸업식 현장과 졸업생의 새 출발을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-aa2850a4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DGU9nHPyLPx/",
+          "normalizedUrl": "instagram.com/p/dgu9nhpylpx",
+          "normalizedText": "대구 중구 원만사유치원 제38회 졸업식 새 출발",
+          "htmlSnapshotHash": "sns-wave731-aa2850a4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DGU9nHPyLPx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

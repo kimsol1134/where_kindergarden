@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 381,
+  "totalCount": 382,
   "kindergartenCount": 117,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -4112,6 +4112,43 @@
         "snippet": "리뷰 106사진 33 최고의 유치원. 아이들이 행복한 유치원 늘 감사드려요 1번째 방문",
         "date": "2021-06-01",
         "collectedAt": "2026-04-05T15:19:54.257Z"
+      },
+      {
+        "id": "rev-sns-wave731-850212b8",
+        "kindergartenId": "1ecec08c-fa5f-b044-e053-0a32095ab044",
+        "title": "인천 미상지유치원 제20회 졸업식 기록",
+        "url": "https://www.instagram.com/reel/DUUB7nWk6LD/",
+        "source": "other",
+        "sourceName": "Instagram · 미상지유치원",
+        "snippet": "미상지유치원 제20회 졸업식에서 아이들의 첫 졸업 순간을 담은 릴스입니다.",
+        "summary": "유아들이 졸업식에서 유치원 생활을 마무리하고 가족과 추억을 나누는 현장을 보여주는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-850212b8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUUB7nWk6LD/",
+          "normalizedUrl": "instagram.com/reel/duub7nwk6ld",
+          "normalizedText": "인천 미상지유치원 제20회 졸업식 청학아트홀",
+          "htmlSnapshotHash": "sns-wave731-850212b8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUUB7nWk6LD/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08c-f187-b044-e053-0a32095ab044": [

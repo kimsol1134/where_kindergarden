@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 47,
+  "totalCount": 48,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08d-08bd-b044-e053-0a32095ab044": [
@@ -540,6 +540,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave731-5fdd0f2c",
+        "kindergartenId": "1ecec08d-05b9-b044-e053-0a32095ab044",
+        "title": "서울 등촌제일유치원 제48회 졸업식 기록",
+        "url": "https://www.instagram.com/p/DW859k_EpaY/",
+        "source": "other",
+        "sourceName": "Instagram · 등촌제일유치원",
+        "snippet": "등촌제일유치원 제48회 졸업식에서 졸업생들의 새 출발을 축하한 게시물입니다.",
+        "summary": "유아들이 유치원 생활을 마무리하고 초등학교 생활을 준비하는 졸업식 현장을 보여주는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-5fdd0f2c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW859k_EpaY/",
+          "normalizedUrl": "instagram.com/p/dw859k_epay",
+          "normalizedText": "서울 등촌제일유치원 제48회 졸업식 졸업 축하 새 출발",
+          "htmlSnapshotHash": "sns-wave731-5fdd0f2c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW859k_EpaY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08d-05b7-b044-e053-0a32095ab044": [

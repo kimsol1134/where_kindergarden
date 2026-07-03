@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 134,
+  "totalCount": 135,
   "kindergartenCount": 32,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
@@ -3803,6 +3803,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave731-761c6f72",
+        "kindergartenId": "1ecec08c-f57e-b044-e053-0a32095ab044",
+        "title": "대전 혜천유치원 제41회 졸업식 및 수료식 기록",
+        "url": "https://www.instagram.com/reel/DUsE5IEkSDi/",
+        "source": "other",
+        "sourceName": "Instagram · 혜천유치원",
+        "snippet": "혜천유치원 제41회 졸업식 및 수료식 일정과 졸업을 앞둔 아이들의 모습을 담은 릴스입니다.",
+        "summary": "졸업식과 수료식이 함께 열린 대전 혜천유치원의 학년 마무리 행사 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "completion",
+          "ceremony",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-761c6f72",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUsE5IEkSDi/",
+          "normalizedUrl": "instagram.com/reel/duse5ieksdi",
+          "normalizedText": "대전 혜천유치원 제41회 졸업식 수료식",
+          "htmlSnapshotHash": "sns-wave731-761c6f72",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUsE5IEkSDi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08d-01c8-b044-e053-0a32095ab044": [

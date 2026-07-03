@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 359,
+  "totalCount": 360,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -7495,6 +7495,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave731-75c6745b",
+        "kindergartenId": "1ecec08d-0d4a-b044-e053-0a32095ab044",
+        "title": "경북 경산유치원 제21회 졸업식 기록",
+        "url": "https://www.instagram.com/reel/DUsx-d7Enqc/",
+        "source": "other",
+        "sourceName": "Instagram · 경산유치원",
+        "snippet": "경산유치원 제21회 졸업식에서 동생들이 졸업생에게 마음을 전한 릴스입니다.",
+        "summary": "졸업생과 재원생이 함께 유치원 생활의 마무리를 나누는 졸업식 현장을 보여주는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave731-75c6745b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUsx-d7Enqc/",
+          "normalizedUrl": "instagram.com/reel/dusx-d7enqc",
+          "normalizedText": "경북 경산유치원 제21회 졸업식 동생 축하",
+          "htmlSnapshotHash": "sns-wave731-75c6745b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUsx-d7Enqc/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave731"
       }
     ],
     "1ecec08c-f71c-b044-e053-0a32095ab044": [
