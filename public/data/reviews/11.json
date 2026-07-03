@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 700,
+  "totalCount": 702,
   "kindergartenCount": 248,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -18430,6 +18430,80 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      },
+      {
+        "id": "rev-sns-wave734-bc19563b",
+        "kindergartenId": "1ecec08c-f5f4-b044-e053-0a32095ab044",
+        "title": "서울 노원구 까치유치원 1학기 부모참여수업 기록",
+        "url": "https://www.instagram.com/reel/DZPDbA6SLNK/",
+        "source": "other",
+        "sourceName": "Instagram · 까치유치원",
+        "snippet": "까치유치원 1학기 부모참여수업에서 유아들이 다양한 활동을 가족과 함께한 릴스입니다.",
+        "summary": "서울 노원구 까치유치원의 부모참여수업 분위기와 유아 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave734-bc19563b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZPDbA6SLNK/",
+          "normalizedUrl": "instagram.com/reel/dzpdba6slnk",
+          "normalizedText": "서울 노원구 까치유치원 1학기 부모참여수업 유치원생활",
+          "htmlSnapshotHash": "sns-wave734-bc19563b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZPDbA6SLNK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave734"
+      },
+      {
+        "id": "rev-sns-wave734-6738f34f",
+        "kindergartenId": "1ecec08c-f5f4-b044-e053-0a32095ab044",
+        "title": "서울 노원구 까치유치원 우드런 부모참여수업 기록",
+        "url": "https://www.instagram.com/reel/DY6B6iQTVNS/",
+        "source": "other",
+        "sourceName": "Instagram · 까치유치원",
+        "snippet": "까치유치원 부모참여수업에서 아이들이 손끝으로 작품을 만들고 우드런 활동을 한 릴스입니다.",
+        "summary": "가족과 함께 만든 작품과 수업 참여 장면을 통해 까치유치원의 활동형 수업을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave734-6738f34f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6B6iQTVNS/",
+          "normalizedUrl": "instagram.com/reel/dy6b6iqtvns",
+          "normalizedText": "서울 노원구 까치유치원 부모참여수업 우드런 작품 활동",
+          "htmlSnapshotHash": "sns-wave734-6738f34f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DY6B6iQTVNS/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave734"
       }
     ],
     "89ed1bdc-67a2-4124-a077-bc925d6a901a": [
@@ -26305,5 +26379,6 @@
         "approvedBy": "codex-manual-sns-wave732"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
