@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 209,
+  "totalCount": 210,
   "kindergartenCount": 63,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -6178,6 +6178,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave733-3209ad1a",
+        "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
+        "title": "아산 아이사랑유치원 태학산 유아숲체험 기록",
+        "url": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이사랑유치원",
+        "snippet": "아산 아이사랑유치원 숲학교가 태학산 유아숲체험원에서 물감놀이와 자연물 비눗방울 놀이를 진행한 릴스입니다.",
+        "summary": "유아들이 숲에서 미술과 자연물을 결합한 생태 놀이를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "nature-play",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave733-3209ad1a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
+          "normalizedUrl": "instagram.com/reel/dygxv_hs1cq",
+          "normalizedText": "아산 아이사랑유치원 태학산 유아숲체험원 숲학교 물감놀이 자연물 비눗방울",
+          "htmlSnapshotHash": "sns-wave733-3209ad1a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave733"
       }
     ],
     "fa7e3e5c-5921-4647-9fcc-4ec79c68420b": [
@@ -9433,5 +9470,6 @@
         "approvedBy": "codex-manual-sns-wave722"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }
