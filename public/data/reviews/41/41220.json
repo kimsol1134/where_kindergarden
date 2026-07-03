@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 56,
+  "totalCount": 57,
   "kindergartenCount": 33,
   "reviews": {
     "1ecec08d-050a-b044-e053-0a32095ab044": [
@@ -769,6 +769,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave730-11d158b3",
+        "kindergartenId": "1ecec08d-085b-b044-e053-0a32095ab044",
+        "title": "평택 한솔유치원 미니운동회 기록",
+        "url": "https://www.instagram.com/reel/DOlps-kiewE/",
+        "source": "other",
+        "sourceName": "Instagram · 한솔유치원",
+        "snippet": "평택 한솔유치원 친구들이 달리기, 판 뒤집기, 공 던지기 등 미니운동회를 진행한 릴스입니다.",
+        "summary": "유아들이 팀 응원과 다양한 신체 활동을 통해 협동과 도전을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "family-event",
+          "physical-activity",
+          "pyeongtaek"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-11d158b3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DOlps-kiewE/",
+          "normalizedUrl": "instagram.com/reel/dolps-kiewe",
+          "normalizedText": "평택 한솔유치원 미니운동회 달리기 판뒤집기 공던지기 응원",
+          "htmlSnapshotHash": "sns-wave730-11d158b3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DOlps-kiewE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "1ecec08d-0440-b044-e053-0a32095ab044": [

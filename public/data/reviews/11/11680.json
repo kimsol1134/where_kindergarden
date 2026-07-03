@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 36,
+  "totalCount": 37,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08d-0a98-b044-e053-0a32095ab044": [
@@ -321,6 +321,44 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave730-535ea076",
+        "kindergartenId": "1ecec08d-0b98-b044-e053-0a32095ab044",
+        "title": "서울 반디유치원 한마음가족운동회 기록",
+        "url": "https://www.instagram.com/reel/DYY-TrNteSc/",
+        "source": "other",
+        "sourceName": "Instagram · 반디유치원",
+        "snippet": "반디유치원 가족들이 한마음가족운동회에서 함께 웃고 뛰는 시간을 보낸 릴스입니다.",
+        "summary": "유아와 가족이 함께 참여하는 운동회 활동을 통해 공동체 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "family-sports-day",
+          "community-event",
+          "physical-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-535ea076",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYY-TrNteSc/",
+          "normalizedUrl": "instagram.com/reel/dyy-trntesc",
+          "normalizedText": "서울 반디유치원 한마음가족운동회 가족운동회 응원",
+          "htmlSnapshotHash": "sns-wave730-535ea076",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYY-TrNteSc/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "34140010-58e8-44b4-9e91-49d5eb6669e1": [
@@ -1312,5 +1350,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

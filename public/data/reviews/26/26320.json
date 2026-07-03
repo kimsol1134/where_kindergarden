@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 51,
+  "totalCount": 52,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-ffa1-b044-e053-0a32095ab044": [
@@ -857,6 +857,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave709"
+      },
+      {
+        "id": "rev-sns-wave730-0bd93a89",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 햇빛유치원 가족운동회 준비 기록",
+        "url": "https://www.instagram.com/reel/DYy1YGdp6Re/",
+        "source": "other",
+        "sourceName": "Instagram · 햇빛유치원",
+        "snippet": "화명동 햇빛유치원 친구들이 가족운동회를 앞두고 운동회 분위기를 담은 릴스입니다.",
+        "summary": "유치원 가족운동회를 준비하며 신체 활동과 참여 기대감을 나눈 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "family-sports-day",
+          "sports-day-prep",
+          "physical-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-0bd93a89",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYy1YGdp6Re/",
+          "normalizedUrl": "instagram.com/reel/dyy1ygdp6re",
+          "normalizedText": "부산 화명동 햇빛유치원 가족운동회 준비 운동회",
+          "htmlSnapshotHash": "sns-wave730-0bd93a89",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYy1YGdp6Re/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "8f3f48a5-f2b6-40f6-be06-b1f8369a1b2c": [

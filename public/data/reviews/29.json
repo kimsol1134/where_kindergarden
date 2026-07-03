@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 181,
-  "kindergartenCount": 54,
+  "totalCount": 182,
+  "kindergartenCount": 55,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
       {
@@ -8183,6 +8183,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:25:00.000Z",
         "approvedBy": "codex-manual-sns-wave666"
+      }
+    ],
+    "1ecec08c-f5f9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave730-8e4c6eae",
+        "kindergartenId": "1ecec08c-f5f9-b044-e053-0a32095ab044",
+        "title": "광주 해성유치원 가족사랑 운동회 기록",
+        "url": "https://www.instagram.com/reel/DaCBIUuzLu4/",
+        "source": "other",
+        "sourceName": "Instagram · 해성유치원",
+        "snippet": "광주 북구 해성유치원 가족들이 가족사랑 운동회에서 함께 뛰고 웃은 릴스입니다.",
+        "summary": "유아와 가족이 운동회에서 신체 활동과 응원을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "family-sports-day",
+          "family-event",
+          "physical-activity",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-8e4c6eae",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCBIUuzLu4/",
+          "normalizedUrl": "instagram.com/reel/dacbiuuzlu4",
+          "normalizedText": "광주 북구 해성유치원 가족사랑 운동회 함께 뛰고 웃기",
+          "htmlSnapshotHash": "sns-wave730-8e4c6eae",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCBIUuzLu4/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 695,
+  "totalCount": 697,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -1429,6 +1429,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:30.000Z",
         "approvedBy": "codex-manual-sns-wave683"
+      },
+      {
+        "id": "rev-sns-wave730-c09b28c7",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "서울 우촌유치원 체육대회 기록",
+        "url": "https://www.instagram.com/reel/DZhAmoqRNeK/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원 친구들이 운동회에서 끝까지 포기하지 않고 신체 활동에 참여한 릴스입니다.",
+        "summary": "유아들이 체육대회에서 도전과 협동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "physical-activity",
+          "perseverance",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-c09b28c7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZhAmoqRNeK/",
+          "normalizedUrl": "instagram.com/reel/dzhamoqrnek",
+          "normalizedText": "서울 우촌유치원 체육대회 운동회 포기하지 않는 신체활동",
+          "htmlSnapshotHash": "sns-wave730-c09b28c7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZhAmoqRNeK/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -8653,6 +8691,44 @@
             "accessMode": "public"
           }
         }
+      },
+      {
+        "id": "rev-sns-wave730-535ea076",
+        "kindergartenId": "1ecec08d-0b98-b044-e053-0a32095ab044",
+        "title": "서울 반디유치원 한마음가족운동회 기록",
+        "url": "https://www.instagram.com/reel/DYY-TrNteSc/",
+        "source": "other",
+        "sourceName": "Instagram · 반디유치원",
+        "snippet": "반디유치원 가족들이 한마음가족운동회에서 함께 웃고 뛰는 시간을 보낸 릴스입니다.",
+        "summary": "유아와 가족이 함께 참여하는 운동회 활동을 통해 공동체 경험을 쌓은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "family-sports-day",
+          "community-event",
+          "physical-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-535ea076",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYY-TrNteSc/",
+          "normalizedUrl": "instagram.com/reel/dyy-trntesc",
+          "normalizedText": "서울 반디유치원 한마음가족운동회 가족운동회 응원",
+          "htmlSnapshotHash": "sns-wave730-535ea076",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYY-TrNteSc/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "34140010-58e8-44b4-9e91-49d5eb6669e1": [

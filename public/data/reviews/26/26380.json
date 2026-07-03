@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 35,
+  "totalCount": 36,
   "kindergartenCount": 14,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
@@ -851,6 +851,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave725"
+      },
+      {
+        "id": "rev-sns-wave730-559d0020",
+        "kindergartenId": "36627649-3e14-4655-b961-d249c0207cf8",
+        "title": "부산 바다유치원 가족운동회 기록",
+        "url": "https://www.instagram.com/reel/DYbPo04SQSc/",
+        "source": "other",
+        "sourceName": "Instagram · 부산 바다유치원",
+        "snippet": "부산 바다유치원 친구들이 가족운동회에서 청팀과 홍팀으로 나뉘어 응원한 릴스입니다.",
+        "summary": "유아와 가족이 팀 응원과 신체 놀이를 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "family-sports-day",
+          "team-cheering",
+          "physical-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave730-559d0020",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYbPo04SQSc/",
+          "normalizedUrl": "instagram.com/reel/dybpo04sqsc",
+          "normalizedText": "부산 바다유치원 가족운동회 청팀 홍팀 응원 신체놀이",
+          "htmlSnapshotHash": "sns-wave730-559d0020",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYbPo04SQSc/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave730"
       }
     ],
     "1ecec08c-f14e-b044-e053-0a32095ab044": [
