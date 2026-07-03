@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 360,
+  "totalCount": 361,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -3476,6 +3476,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:30:00.000Z",
         "approvedBy": "codex-manual-sns-wave680"
+      },
+      {
+        "id": "rev-sns-wave735-1e441753",
+        "kindergartenId": "a7208d1f-879b-4bcc-9859-09466c8f7d10",
+        "title": "경북 구미 보눔유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DMhoT6Jx1u3/",
+        "source": "other",
+        "sourceName": "Instagram · 보눔유치원",
+        "snippet": "보눔유치원이 신나는 여름캠프 물놀이 활동을 소개한 릴스입니다.",
+        "summary": "경북 구미 보눔유치원의 여름캠프와 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-1e441753",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMhoT6Jx1u3/",
+          "normalizedUrl": "instagram.com/reel/dmhot6jx1u3",
+          "normalizedText": "경북 구미 보눔유치원 여름캠프 물놀이",
+          "htmlSnapshotHash": "sns-wave735-1e441753",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMhoT6Jx1u3/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
       }
     ],
     "1ecec08c-fbb3-b044-e053-0a32095ab044": [
@@ -16415,5 +16452,6 @@
         "approvedBy": "codex-manual-sns-wave670"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

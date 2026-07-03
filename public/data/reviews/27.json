@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 547,
+  "totalCount": 548,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -11803,6 +11803,43 @@
             ]
           }
         }
+      },
+      {
+        "id": "rev-sns-wave735-cceda373",
+        "kindergartenId": "1ecec08d-0c8f-b044-e053-0a32095ab044",
+        "title": "대구 동구 강남유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DMcZ8NXSDed/",
+        "source": "other",
+        "sourceName": "Instagram · 대구 강남유치원",
+        "snippet": "대구 강남유치원이 여름캠프 물놀이 활동을 소개한 릴스입니다.",
+        "summary": "대구 동구 강남유치원의 여름캠프와 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-cceda373",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMcZ8NXSDed/",
+          "normalizedUrl": "instagram.com/reel/dmcz8nxsded",
+          "normalizedText": "대구 동구 강남유치원 여름캠프 물놀이",
+          "htmlSnapshotHash": "sns-wave735-cceda373",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMcZ8NXSDed/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
       }
     ],
     "1ecec08c-f4cd-b044-e053-0a32095ab044": [

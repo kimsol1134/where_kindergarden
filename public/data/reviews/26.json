@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 358,
-  "kindergartenCount": 96,
+  "totalCount": 360,
+  "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -4640,6 +4640,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave730"
+      },
+      {
+        "id": "rev-sns-wave735-6bac05e4",
+        "kindergartenId": "1ecec08c-f6e3-b044-e053-0a32095ab044",
+        "title": "부산 북구 햇빛유치원 워터슬라이드 기록",
+        "url": "https://www.instagram.com/reel/DMP7WoYy5GR/",
+        "source": "other",
+        "sourceName": "Instagram · 북구 햇빛유치원",
+        "snippet": "북구 햇빛유치원 아이들이 워터슬라이드를 타며 여름 물놀이를 한 릴스입니다.",
+        "summary": "부산 북구 햇빛유치원의 워터슬라이드 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-6bac05e4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMP7WoYy5GR/",
+          "normalizedUrl": "instagram.com/reel/dmp7woyy5gr",
+          "normalizedText": "부산 북구 햇빛유치원 워터슬라이드 물놀이",
+          "htmlSnapshotHash": "sns-wave735-6bac05e4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DMP7WoYy5GR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
       }
     ],
     "1ecec08d-0096-b044-e053-0a32095ab044": [
@@ -16816,6 +16853,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave732"
+      }
+    ],
+    "1ecec08d-0fa0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave735-67e1b611",
+        "kindergartenId": "1ecec08d-0fa0-b044-e053-0a32095ab044",
+        "title": "부산 사하구 호산나유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DaJmxDUTRsL/",
+        "source": "other",
+        "sourceName": "Instagram · 호산나유치원",
+        "snippet": "호산나유치원이 여름캠프에서 친구들과 시원한 물놀이를 한 장면을 소개한 릴스입니다.",
+        "summary": "부산 사하구 호산나유치원의 여름캠프 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-67e1b611",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaJmxDUTRsL/",
+          "normalizedUrl": "instagram.com/reel/dajmxdutrsl",
+          "normalizedText": "부산 사하구 호산나유치원 여름캠프 물놀이",
+          "htmlSnapshotHash": "sns-wave735-67e1b611",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaJmxDUTRsL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
       }
     ]
   },

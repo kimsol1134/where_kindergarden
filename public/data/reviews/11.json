@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 702,
+  "totalCount": 703,
   "kindergartenCount": 248,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -23167,6 +23167,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave735-8b804c42",
+        "kindergartenId": "1ecec08c-fb78-b044-e053-0a32095ab044",
+        "title": "서울 중랑구 동일유치원 물놀이 시작 기록",
+        "url": "https://www.instagram.com/p/DaNbq4dxjcf/",
+        "source": "other",
+        "sourceName": "Instagram · 동일유치원",
+        "snippet": "서울 중랑구 동일유치원 빛나는반이 여름 물놀이와 수영장 활동을 시작한 게시물입니다.",
+        "summary": "유아들이 유치원에서 여름 물놀이를 경험하는 모습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-8b804c42",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaNbq4dxjcf/",
+          "normalizedUrl": "instagram.com/p/danbq4dxjcf",
+          "normalizedText": "서울 중랑구 동일유치원 빛나는반 물놀이 수영장",
+          "htmlSnapshotHash": "sns-wave735-8b804c42",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaNbq4dxjcf/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
       }
     ],
     "1ecec08c-fc24-b044-e053-0a32095ab044": [
