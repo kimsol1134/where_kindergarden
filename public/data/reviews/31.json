@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 130,
+  "totalCount": 131,
   "kindergartenCount": 44,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -5495,6 +5495,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave728-f323ec57",
+        "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
+        "title": "울산 현대동부유치원 한여름밤 캠프 기록",
+        "url": "https://www.instagram.com/p/DN2hlAc4pOx/",
+        "source": "other",
+        "sourceName": "Instagram · 현대동부유치원",
+        "snippet": "현대동부유치원 친구들이 한여름밤 캠프에서 협동 게임과 모험 놀이를 진행한 게시물입니다.",
+        "summary": "유아들이 캠프 활동을 통해 협동심과 모험심을 기른 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "summer-camp",
+          "cooperation",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-f323ec57",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DN2hlAc4pOx/",
+          "normalizedUrl": "instagram.com/p/dn2hlac4pox",
+          "normalizedText": "울산 현대동부유치원 한여름밤 캠프 협동게임 모험놀이",
+          "htmlSnapshotHash": "sns-wave728-f323ec57",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DN2hlAc4pOx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08c-f5c4-b044-e053-0a32095ab044": [

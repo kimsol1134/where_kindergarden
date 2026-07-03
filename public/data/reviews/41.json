@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1314,
+  "totalCount": 1315,
   "kindergartenCount": 495,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -34614,6 +34614,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:58.000Z",
         "approvedBy": "codex-manual-sns-wave689"
+      },
+      {
+        "id": "rev-sns-wave728-3377a8a7",
+        "kindergartenId": "1ecec08d-0710-b044-e053-0a32095ab044",
+        "title": "용인 강남유치원 1박 2일 원내캠프 기록",
+        "url": "https://www.instagram.com/reel/DNjzfDpymoa/",
+        "source": "other",
+        "sourceName": "Instagram · 용인 강남유치원",
+        "snippet": "용인 강남유치원 친구들이 1박 2일 원내캠프에서 깜깜데이와 댄스 활동을 즐긴 릴스입니다.",
+        "summary": "유아들이 유치원에서 하룻밤을 보내며 또래와 협동 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "kindergarten-camp",
+          "friendship",
+          "yongin"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-3377a8a7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNjzfDpymoa/",
+          "normalizedUrl": "instagram.com/reel/dnjzfdpymoa",
+          "normalizedText": "용인 강남유치원 1박 2일 원내캠프 깜깜데이 댄스파티",
+          "htmlSnapshotHash": "sns-wave728-3377a8a7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DNjzfDpymoa/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08d-0dc9-b044-e053-0a32095ab044": [

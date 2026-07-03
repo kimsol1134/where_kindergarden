@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 694,
+  "totalCount": 695,
   "kindergartenCount": 247,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -24508,6 +24508,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave728-53aec535",
+        "kindergartenId": "1ecec08d-09d0-b044-e053-0a32095ab044",
+        "title": "서울 원암유치원 원암캠프 1박 2일 기록",
+        "url": "https://www.instagram.com/reel/DO5dSiCEd55/",
+        "source": "other",
+        "sourceName": "Instagram · 원암유치원",
+        "snippet": "원암유치원 친구들이 원암캠프에서 함께 뛰놀고 캠프 활동을 경험한 릴스입니다.",
+        "summary": "유아들이 1박 2일 캠프에서 놀이와 공동생활을 통해 추억을 만든 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "kindergarten-camp",
+          "autumn-camp",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-53aec535",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO5dSiCEd55/",
+          "normalizedUrl": "instagram.com/reel/do5dsiced55",
+          "normalizedText": "서울 원암유치원 원암캠프 1박2일 가을캠프 추억",
+          "htmlSnapshotHash": "sns-wave728-53aec535",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DO5dSiCEd55/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08c-f9f6-b044-e053-0a32095ab044": [

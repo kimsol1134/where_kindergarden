@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 28,
+  "totalCount": 29,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -735,6 +735,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave728-e12d17d0",
+        "kindergartenId": "1ecec08c-fb0a-b044-e053-0a32095ab044",
+        "title": "대전 아이들세상유치원 1박 2일 썸머캠프 기록",
+        "url": "https://www.instagram.com/p/DMheoI3SWRF/",
+        "source": "other",
+        "sourceName": "Instagram · 아이들세상유치원",
+        "snippet": "대전 아이들세상유치원 친구들이 1박 2일 썸머캠프에서 여러 오후 활동을 진행한 게시물입니다.",
+        "summary": "유아들이 여름 캠프에서 만들기와 놀이 활동을 함께 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "summer-camp",
+          "play-activity",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-e12d17d0",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMheoI3SWRF/",
+          "normalizedUrl": "instagram.com/p/dmheoi3swrf",
+          "normalizedText": "대전 아이들세상유치원 1박2일 썸머캠프 오후활동 만들기 놀이",
+          "htmlSnapshotHash": "sns-wave728-e12d17d0",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMheoI3SWRF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08c-f045-b044-e053-0a32095ab044": [
@@ -1306,5 +1344,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

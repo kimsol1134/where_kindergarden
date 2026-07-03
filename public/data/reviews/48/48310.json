@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 99,
+  "totalCount": 101,
   "kindergartenCount": 20,
   "reviews": {
     "1ecec08c-ff89-b044-e053-0a32095ab044": [
@@ -2623,6 +2623,44 @@
         "approvedAt": "2026-06-30T19:05:00.000Z",
         "approvedBy": "manual-sns-web-search",
         "kindergartenName": "성균관유치원"
+      },
+      {
+        "id": "rev-sns-wave728-8287d77a",
+        "kindergartenId": "1ecec08c-fb42-b044-e053-0a32095ab044",
+        "title": "거제 성균관유치원 졸업여행 기록",
+        "url": "https://www.instagram.com/reel/DSXT09gk41l/",
+        "source": "other",
+        "sourceName": "Instagram · 거제성균관유치원",
+        "snippet": "거제 성균관유치원 친구들이 졸업 전 마지막 추억을 만들러 졸업여행을 떠난 릴스입니다.",
+        "summary": "유아들이 졸업을 앞두고 친구들과 함께 과학관과 여행 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation-trip",
+          "kindergarten-trip",
+          "friendship",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-8287d77a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSXT09gk41l/",
+          "normalizedUrl": "instagram.com/reel/dsxt09gk41l",
+          "normalizedText": "거제 성균관유치원 졸업여행 마지막 추억 과학관 여행",
+          "htmlSnapshotHash": "sns-wave728-8287d77a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSXT09gk41l/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08d-04f6-b044-e053-0a32095ab044": [
@@ -3971,6 +4009,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave728-c8c1016f",
+        "kindergartenId": "1ecec08c-f46e-b044-e053-0a32095ab044",
+        "title": "거제 세종유치원 한화바운스 1박 2일 캠프 기록",
+        "url": "https://www.instagram.com/reel/DTzXyjqCYOW/",
+        "source": "other",
+        "sourceName": "Instagram · 세종유치원",
+        "snippet": "거제 세종유치원 친구들이 한화바운스에서 1박 2일 캠프를 즐긴 릴스입니다.",
+        "summary": "유아들이 캠프 활동을 통해 친구들과 뛰고 놀며 즐거운 추억을 만든 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "play-camp",
+          "friendship",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-c8c1016f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTzXyjqCYOW/",
+          "normalizedUrl": "instagram.com/reel/dtzxyjqcyow",
+          "normalizedText": "거제 세종유치원 한화바운스 1박2일 캠프 즐거운 추억",
+          "htmlSnapshotHash": "sns-wave728-c8c1016f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTzXyjqCYOW/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08c-f989-b044-e053-0a32095ab044": [

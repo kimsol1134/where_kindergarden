@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 537,
+  "totalCount": 538,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -7932,6 +7932,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave712"
+      },
+      {
+        "id": "rev-sns-wave728-00998983",
+        "kindergartenId": "1ecec08d-0bc5-b044-e053-0a32095ab044",
+        "title": "대구 한국예술유치원 여름캠프 기록",
+        "url": "https://www.instagram.com/p/DZ48a7FE5q6/",
+        "source": "other",
+        "sourceName": "Instagram · 한국예술유치원",
+        "snippet": "한국예술유치원 친구들이 1박 2일 여름캠프에서 협동 활동과 도전 활동을 진행한 게시물입니다.",
+        "summary": "유아들이 캠프 활동을 통해 협동심과 자신감을 키운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "overnight-camp",
+          "summer-camp",
+          "cooperation",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-00998983",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ48a7FE5q6/",
+          "normalizedUrl": "instagram.com/p/dz48a7fe5q6",
+          "normalizedText": "대구 한국예술유치원 1박2일 여름캠프 협동심 도전과 성장",
+          "htmlSnapshotHash": "sns-wave728-00998983",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ48a7FE5q6/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08d-03fc-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 379,
+  "totalCount": 380,
   "kindergartenCount": 117,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -2009,6 +2009,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave707"
+      },
+      {
+        "id": "rev-sns-wave728-f81ac795",
+        "kindergartenId": "1ecec08d-03f2-b044-e053-0a32095ab044",
+        "title": "인천 수피아유치원 나눔의 숲 캠프 기록",
+        "url": "https://www.instagram.com/reel/DZwOAhoCJaA/",
+        "source": "other",
+        "sourceName": "Instagram · 수피아유치원",
+        "snippet": "수피아유치원 친구들이 국립대전숲체원 나눔의 숲 캠프에 참여한 릴스입니다.",
+        "summary": "유아들이 숲 캠프에서 자연을 만끽하며 생태 감수성을 기른 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-camp",
+          "nature-experience",
+          "overnight-camp",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-f81ac795",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZwOAhoCJaA/",
+          "normalizedUrl": "instagram.com/reel/dzwoahocjaa",
+          "normalizedText": "인천 수피아유치원 국립대전숲체원 나눔의 숲 캠프",
+          "htmlSnapshotHash": "sns-wave728-f81ac795",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZwOAhoCJaA/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
       }
     ],
     "1ecec08d-063c-b044-e053-0a32095ab044": [
