@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 196,
+  "totalCount": 197,
   "kindergartenCount": 61,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -14,6 +14,43 @@
         "snippet": "리뷰 60사진 34 친절하고 아이들이 행복해하는 최고 유치원입니다 1번째 방문",
         "date": "2020-08-20",
         "collectedAt": "2026-04-06T13:19:07.420Z"
+      },
+      {
+        "id": "rev-sns-wave736-29a8d100",
+        "kindergartenId": "1ecec08d-0fc5-b044-e053-0a32095ab044",
+        "title": "전북 전주 별초롱유치원 쿠킹클래스 기록",
+        "url": "https://www.instagram.com/reel/DTjD_DLE5_0/",
+        "source": "other",
+        "sourceName": "Instagram · 별초롱유치원",
+        "snippet": "별초롱유치원이 쿠킹클래스와 요리실습 활동을 소개한 릴스입니다.",
+        "summary": "전주 별초롱유치원의 유아 요리실습과 참여형 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-education",
+          "jeonbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave736-29a8d100",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DTjD_DLE5_0/",
+          "normalizedUrl": "instagram.com/reel/dtjd_dle5_0",
+          "normalizedText": "전북 전주 별초롱유치원 쿠킹클래스 요리실습",
+          "htmlSnapshotHash": "sns-wave736-29a8d100",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DTjD_DLE5_0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave736"
       }
     ],
     "1ecec08c-ed90-b044-e053-0a32095ab044": [
