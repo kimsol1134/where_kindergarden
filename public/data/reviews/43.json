@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 119,
+  "totalCount": 120,
   "kindergartenCount": 31,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -4535,6 +4535,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave710"
+      },
+      {
+        "id": "rev-sns-wave729-5b89d3f9",
+        "kindergartenId": "1ecec08d-0cc6-b044-e053-0a32095ab044",
+        "title": "제천 소화유치원 김밥 요리활동 기록",
+        "url": "https://www.instagram.com/reel/DSNC2ObEoW5/",
+        "source": "other",
+        "sourceName": "Instagram · 제천소화유치원",
+        "snippet": "제천 소화유치원 친구들이 김밥 만들기 요리활동을 진행한 릴스입니다.",
+        "summary": "유아들이 재료를 살펴보고 김밥을 직접 만들어 보는 식생활 체험 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-education",
+          "kimbap",
+          "jecheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-5b89d3f9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSNC2ObEoW5/",
+          "normalizedUrl": "instagram.com/reel/dsnc2obeow5",
+          "normalizedText": "제천소화유치원 요리활동 김밥 만들기 식생활 체험",
+          "htmlSnapshotHash": "sns-wave729-5b89d3f9",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSNC2ObEoW5/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08d-0420-b044-e053-0a32095ab044": [

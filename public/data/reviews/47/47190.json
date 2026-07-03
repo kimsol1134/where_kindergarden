@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 75,
+  "totalCount": 76,
   "kindergartenCount": 22,
   "reviews": {
     "1fc6dd86-ccbf-d1d2-e053-0a32095ad1d2": [
@@ -1166,6 +1166,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave729-816caff1",
+        "kindergartenId": "1ecec08c-fee8-b044-e053-0a32095ab044",
+        "title": "구미 태양유치원 귤 요리활동 기록",
+        "url": "https://www.instagram.com/reel/DRzvRXMj_xO/",
+        "source": "other",
+        "sourceName": "Instagram · 태양유치원",
+        "snippet": "구미 태양유치원 친구들이 귤을 활용한 간단한 요리활동을 진행한 릴스입니다.",
+        "summary": "유아들이 과일을 관찰하고 조리 활동에 참여하며 오감으로 식재료를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "fruit",
+          "food-education",
+          "gumi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-816caff1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRzvRXMj_xO/",
+          "normalizedUrl": "instagram.com/reel/drzvrxmj_xo",
+          "normalizedText": "구미 태양유치원 귤 요리활동 과일 오감 식재료 체험",
+          "htmlSnapshotHash": "sns-wave729-816caff1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRzvRXMj_xO/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08c-fc0c-b044-e053-0a32095ab044": [

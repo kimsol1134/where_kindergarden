@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 50,
+  "totalCount": 51,
   "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-ffa1-b044-e053-0a32095ab044": [
@@ -2212,6 +2212,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave708"
+      },
+      {
+        "id": "rev-sns-wave729-d73c9354",
+        "kindergartenId": "1ecec08d-03ed-b044-e053-0a32095ab044",
+        "title": "부산 현대여울림유치원 감자 수확 체험 기록",
+        "url": "https://www.instagram.com/reel/DZZuIotzyA2/",
+        "source": "other",
+        "sourceName": "Instagram · 현대여울림유치원",
+        "snippet": "현대여울림유치원 친구들이 감자를 수확하며 식재료와 친해지는 체험을 한 릴스입니다.",
+        "summary": "유아들이 식재료가 자라는 과정을 직접 경험한 식생활 교육 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "food-education",
+          "harvest",
+          "potato",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-d73c9354",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZZuIotzyA2/",
+          "normalizedUrl": "instagram.com/reel/dzzuiotzya2",
+          "normalizedText": "현대여울림유치원 감자 수확 식재료 체험 식생활교육",
+          "htmlSnapshotHash": "sns-wave729-d73c9354",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZZuIotzyA2/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08d-06f4-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 43,
+  "totalCount": 44,
   "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-06b8-b044-e053-0a32095ab044": [
@@ -1373,6 +1373,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave729-9c79acc3",
+        "kindergartenId": "1ecec08c-faf9-b044-e053-0a32095ab044",
+        "title": "광주 하나유치원 송편 만들기 기록",
+        "url": "https://www.instagram.com/reel/DP2sICCEkZN/",
+        "source": "other",
+        "sourceName": "Instagram · 하나유치원",
+        "snippet": "광주 북구 하나유치원 친구들이 한가위를 맞아 송편을 빚은 릴스입니다.",
+        "summary": "유아들이 송편 만들기를 통해 명절 음식과 전통문화를 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "songpyeon",
+          "traditional-food",
+          "food-education",
+          "gwangju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-9c79acc3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DP2sICCEkZN/",
+          "normalizedUrl": "instagram.com/reel/dp2siccekzn",
+          "normalizedText": "광주 북구 하나유치원 송편만들기 한가위 전통음식",
+          "htmlSnapshotHash": "sns-wave729-9c79acc3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DP2sICCEkZN/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1fc6dd86-ccce-d1d2-e053-0a32095ad1d2": [

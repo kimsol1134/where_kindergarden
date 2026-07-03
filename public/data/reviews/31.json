@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 131,
-  "kindergartenCount": 44,
+  "totalCount": 132,
+  "kindergartenCount": 45,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
       {
@@ -6094,6 +6094,46 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave725"
+      }
+    ],
+    "74d6896d-323c-450c-ba4e-06ed1736cd7a": [
+      {
+        "id": "rev-sns-wave729-2b05841d",
+        "kindergartenId": "74d6896d-323c-450c-ba4e-06ed1736cd7a",
+        "title": "울산 고헌유치원 텃밭 김장체험 기록",
+        "url": "https://www.instagram.com/p/DDLfCxABSf_/",
+        "source": "other",
+        "sourceName": "Instagram · 울산교육청",
+        "snippet": "고헌유치원 유아들이 텃밭에서 키운 배추와 무로 김장 체험을 진행한 게시물입니다.",
+        "summary": "유아들이 재배한 식재료로 김장 활동을 하며 식생활과 계절 문화를 연결해 배운 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making",
+          "garden-to-table",
+          "food-education",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-2b05841d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDLfCxABSf_/",
+          "normalizedUrl": "instagram.com/p/ddlfcxabsf_",
+          "normalizedText": "울산 고헌유치원 텃밭 배추 무 김장체험 식생활 계절문화",
+          "htmlSnapshotHash": "sns-wave729-2b05841d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DDLfCxABSf_/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 88,
+  "totalCount": 89,
   "kindergartenCount": 16,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -2798,6 +2798,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave721"
+      },
+      {
+        "id": "rev-sns-wave729-adb3c7ad",
+        "kindergartenId": "1ecec08c-ee38-b044-e053-0a32095ab044",
+        "title": "천안 젤라유치원 김장체험 기록",
+        "url": "https://www.instagram.com/reel/DRzfcIUj83K/",
+        "source": "other",
+        "sourceName": "Instagram · 젤라유치원",
+        "snippet": "젤라유치원 친구들이 무와 양념을 다루며 김장체험을 진행한 릴스입니다.",
+        "summary": "유아들이 재료를 썰고 버무리며 김장 과정을 직접 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making",
+          "traditional-food",
+          "food-education",
+          "cheonan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-adb3c7ad",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRzfcIUj83K/",
+          "normalizedUrl": "instagram.com/reel/drzfciuj83k",
+          "normalizedText": "천안 젤라유치원 김장체험 무 양념 김장 과정",
+          "htmlSnapshotHash": "sns-wave729-adb3c7ad",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRzfcIUj83K/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08d-0893-b044-e053-0a32095ab044": [

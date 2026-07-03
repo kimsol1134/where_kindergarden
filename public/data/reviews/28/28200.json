@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 78,
+  "totalCount": 79,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -998,6 +998,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:40:00.000Z",
         "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
+        "id": "rev-sns-wave729-7def01ef",
+        "kindergartenId": "1ecec08c-f187-b044-e053-0a32095ab044",
+        "title": "인천 기암유치원 김장체험 기록",
+        "url": "https://www.instagram.com/reel/DRTyJBmEuJC/",
+        "source": "other",
+        "sourceName": "Instagram · 기암유치원",
+        "snippet": "기암유치원 친구들이 김장체험의 날에 김치 만들기 활동을 진행한 릴스입니다.",
+        "summary": "유아들이 배추와 양념을 다루며 김장 문화를 체험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making",
+          "traditional-food",
+          "food-education",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-7def01ef",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRTyJBmEuJC/",
+          "normalizedUrl": "instagram.com/reel/drtyjbmeujc",
+          "normalizedText": "인천 기암유치원 김장체험 김치 만들기 전통 식문화",
+          "htmlSnapshotHash": "sns-wave729-7def01ef",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRTyJBmEuJC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08c-fa67-b044-e053-0a32095ab044": [

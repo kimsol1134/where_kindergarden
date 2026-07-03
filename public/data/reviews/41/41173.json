@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 36,
+  "totalCount": 37,
   "kindergartenCount": 13,
   "reviews": {
     "1e1cd35b-d484-4ba4-a527-cdcc7d4a798f": [
@@ -864,6 +864,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T19:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave729-10bc8d0d",
+        "kindergartenId": "1ecec08c-fd3b-b044-e053-0a32095ab044",
+        "title": "안양 창의나라유치원 김장하는 날 기록",
+        "url": "https://www.instagram.com/reel/DReoJTXkrlF/",
+        "source": "other",
+        "sourceName": "Instagram · 안양 창의나라유치원",
+        "snippet": "안양 창의나라유치원 친구들이 김장하는 날을 맞아 배추김치 만들기 활동을 한 릴스입니다.",
+        "summary": "유아들이 겨울 음식 문화를 배우며 김장 재료를 직접 다뤄 본 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "kimchi-making",
+          "traditional-food",
+          "food-education",
+          "anyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-10bc8d0d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DReoJTXkrlF/",
+          "normalizedUrl": "instagram.com/reel/dreojtxkrlf",
+          "normalizedText": "안양 창의나라유치원 김장하는 날 배추김치 만들기 겨울음식",
+          "htmlSnapshotHash": "sns-wave729-10bc8d0d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DReoJTXkrlF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08d-0a7e-b044-e053-0a32095ab044": [

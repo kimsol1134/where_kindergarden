@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 151,
+  "totalCount": 152,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -2816,6 +2816,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave727"
+      },
+      {
+        "id": "rev-sns-wave729-5c29d575",
+        "kindergartenId": "1ecec08c-ff35-b044-e053-0a32095ab044",
+        "title": "대구 아이캔유치원 송편 만들기 기록",
+        "url": "https://www.instagram.com/reel/DQnkviiAS5F/",
+        "source": "other",
+        "sourceName": "Instagram · 아이캔유치원",
+        "snippet": "아이캔유치원 친구들이 추석을 맞아 송편을 반죽하고 빚은 릴스입니다.",
+        "summary": "유아들이 명절 음식인 송편 만들기를 통해 전통문화를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "songpyeon",
+          "traditional-food",
+          "food-education",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave729-5c29d575",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQnkviiAS5F/",
+          "normalizedUrl": "instagram.com/reel/dqnkviias5f",
+          "normalizedText": "대구 아이캔유치원 추석 송편 만들기 반죽 전통문화",
+          "htmlSnapshotHash": "sns-wave729-5c29d575",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQnkviiAS5F/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave729"
       }
     ],
     "1ecec08d-0142-b044-e053-0a32095ab044": [
