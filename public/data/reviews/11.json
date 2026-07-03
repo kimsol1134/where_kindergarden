@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 699,
-  "kindergartenCount": 247,
+  "totalCount": 700,
+  "kindergartenCount": 248,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -26264,6 +26264,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:58.000Z",
         "approvedBy": "codex-manual-sns-wave689"
+      }
+    ],
+    "1ecec08d-0f6d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave732-9310f425",
+        "kindergartenId": "1ecec08d-0f6d-b044-e053-0a32095ab044",
+        "title": "서울신미림초등학교병설유치원 입학식 기록",
+        "url": "https://www.instagram.com/p/DVcRxY6Eg2E/",
+        "source": "other",
+        "sourceName": "Instagram · 아인스바움",
+        "snippet": "서울신미림초등학교병설유치원 입학식에서 식순 공연과 축하 공연이 진행된 게시물입니다.",
+        "summary": "서울신미림초등학교병설유치원의 입학식 행사 구성과 축하 공연 현장을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "school-affiliated-kindergarten",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-9310f425",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVcRxY6Eg2E/",
+          "normalizedUrl": "instagram.com/p/dvcrxy6eg2e",
+          "normalizedText": "서울신미림초등학교병설유치원 입학식 식순공연 축하공연",
+          "htmlSnapshotHash": "sns-wave732-9310f425",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVcRxY6Eg2E/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ]
   }

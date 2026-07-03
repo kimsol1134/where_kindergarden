@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 354,
-  "kindergartenCount": 95,
+  "totalCount": 356,
+  "kindergartenCount": 96,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -16666,6 +16666,82 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave730"
+      },
+      {
+        "id": "rev-sns-wave732-3065341e",
+        "kindergartenId": "1ecec08d-06f6-b044-e053-0a32095ab044",
+        "title": "부산 아이숲유치원 제13회 입학식 기록",
+        "url": "https://www.instagram.com/reel/DVfX6Oqk_Qb/",
+        "source": "other",
+        "sourceName": "Instagram · 아이숲유치원",
+        "snippet": "부산 동래구 아이숲유치원 제13회 입학식에서 아이들의 첫걸음을 축하한 릴스입니다.",
+        "summary": "부산 아이숲유치원 신입 원아들의 입학식과 새 학기 시작을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-school-year",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-3065341e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVfX6Oqk_Qb/",
+          "normalizedUrl": "instagram.com/reel/dvfx6oqk_qb",
+          "normalizedText": "부산 동래구 아이숲유치원 제13회 입학식 첫걸음",
+          "htmlSnapshotHash": "sns-wave732-3065341e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVfX6Oqk_Qb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
+      }
+    ],
+    "1ecec08c-fcab-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave732-eef01540",
+        "kindergartenId": "1ecec08c-fcab-b044-e053-0a32095ab044",
+        "title": "부산 새들유치원 입학 및 진급식 기록",
+        "url": "https://www.instagram.com/reel/DV6zXBPkyX7/",
+        "source": "other",
+        "sourceName": "Instagram · 새들유치원",
+        "snippet": "부산 북구 새들유치원 친구들의 입학과 진급을 축하한 릴스입니다.",
+        "summary": "부산 새들유치원 원아들이 새 학년을 시작하는 입학 및 진급식 분위기를 담은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "promotion-ceremony",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-eef01540",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DV6zXBPkyX7/",
+          "normalizedUrl": "instagram.com/reel/dv6zxbpkyx7",
+          "normalizedText": "부산 북구 새들유치원 입학식 진급식 축하",
+          "htmlSnapshotHash": "sns-wave732-eef01540",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DV6zXBPkyX7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ]
   }

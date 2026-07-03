@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 168,
+  "totalCount": 169,
   "kindergartenCount": 46,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -6306,6 +6306,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave732-13ed3342",
+        "kindergartenId": "1ecec08d-0ebd-b044-e053-0a32095ab044",
+        "title": "강원 춘천 예초유치원 입학 및 진급식 기록",
+        "url": "https://www.instagram.com/p/DVsBup2kmT7/",
+        "source": "other",
+        "sourceName": "Instagram · 예초유치원",
+        "snippet": "예초유치원 입학식과 진급식에서 부모님 손을 잡고 등원한 아이들의 모습을 담은 게시물입니다.",
+        "summary": "강원 춘천 예초유치원의 새 학기 입학 및 진급식 현장을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "promotion-ceremony",
+          "gangwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-13ed3342",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVsBup2kmT7/",
+          "normalizedUrl": "instagram.com/p/dvsbup2kmt7",
+          "normalizedText": "강원 춘천 예초유치원 입학식 진급식 새 학기",
+          "htmlSnapshotHash": "sns-wave732-13ed3342",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVsBup2kmT7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ],
     "1ecec08d-0289-b044-e053-0a32095ab044": [

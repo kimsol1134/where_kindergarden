@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 95,
+  "totalCount": 96,
   "kindergartenCount": 24,
   "reviews": {
     "1ecec08d-05af-b044-e053-0a32095ab044": [
@@ -510,6 +510,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave732-a44c62f7",
+        "kindergartenId": "1ecec08d-05af-b044-e053-0a32095ab044",
+        "title": "경기 의정부 귀복유치원 제31회 입학식 기록",
+        "url": "https://www.instagram.com/reel/DVdF7qlEimm/",
+        "source": "other",
+        "sourceName": "Instagram · 귀복유치원",
+        "snippet": "귀복유치원 제31회 입학식에서 신입 원아와 가족의 첫 만남을 담은 릴스입니다.",
+        "summary": "경기 의정부 귀복유치원의 입학식 분위기와 새 유치원 생활의 시작을 보여주는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-school-year",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-a44c62f7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVdF7qlEimm/",
+          "normalizedUrl": "instagram.com/reel/dvdf7qleimm",
+          "normalizedText": "경기 의정부 귀복유치원 제31회 입학식 첫 만남",
+          "htmlSnapshotHash": "sns-wave732-a44c62f7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVdF7qlEimm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ],
     "1ecec08d-0bbc-b044-e053-0a32095ab044": [

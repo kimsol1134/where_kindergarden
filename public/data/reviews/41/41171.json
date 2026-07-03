@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 13,
+  "totalCount": 14,
   "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-ee5f-b044-e053-0a32095ab044": [
@@ -114,6 +114,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave719"
+      },
+      {
+        "id": "rev-sns-wave732-ace25a9f",
+        "kindergartenId": "1ecec08c-f4bf-b044-e053-0a32095ab044",
+        "title": "경기 안양 만안유치원 제50회 입학 및 진급식 기록",
+        "url": "https://www.instagram.com/p/DV8ZZFuExO7/",
+        "source": "other",
+        "sourceName": "Instagram · 만안유치원",
+        "snippet": "만안유치원 제50회 입학식과 진급식에서 새 친구들과 첫 만남을 가진 게시물입니다.",
+        "summary": "경기 안양 만안유치원의 입학 및 진급식 현장과 새 학기 시작을 보여주는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "promotion-ceremony",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-ace25a9f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV8ZZFuExO7/",
+          "normalizedUrl": "instagram.com/p/dv8zzfuexo7",
+          "normalizedText": "경기 안양 만안유치원 제50회 입학식 진급식 첫 만남",
+          "htmlSnapshotHash": "sns-wave732-ace25a9f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DV8ZZFuExO7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ],
     "1ecec08c-f004-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 135,
+  "totalCount": 136,
   "kindergartenCount": 32,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
@@ -4738,6 +4738,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T19:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave732-8b01b66e",
+        "kindergartenId": "1ecec08c-f147-b044-e053-0a32095ab044",
+        "title": "대전 하이캠유치원 제29회 입학식 기록",
+        "url": "https://www.instagram.com/p/DVanPN0E_8s/",
+        "source": "other",
+        "sourceName": "Instagram · 하이캠유치원",
+        "snippet": "하이캠유치원 제29회 입학식에서 따뜻한 봄날 신입 원아를 맞이한 게시물입니다.",
+        "summary": "대전 하이캠유치원의 입학식 현장과 신입 원아의 유치원 생활 시작을 담은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-school-year",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-8b01b66e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVanPN0E_8s/",
+          "normalizedUrl": "instagram.com/p/dvanpn0e_8s",
+          "normalizedText": "대전 하이캠유치원 제29회 입학식 봄 신입 원아",
+          "htmlSnapshotHash": "sns-wave732-8b01b66e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVanPN0E_8s/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ],
     "1ecec08d-0a65-b044-e053-0a32095ab044": [

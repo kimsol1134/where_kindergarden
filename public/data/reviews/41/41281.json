@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 59,
+  "totalCount": 60,
   "kindergartenCount": 17,
   "reviews": {
     "1ecec08d-0815-b044-e053-0a32095ab044": [
@@ -1534,6 +1534,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T11:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave732-402afd19",
+        "kindergartenId": "1ecec08c-fcdf-b044-e053-0a32095ab044",
+        "title": "경기 고양 바움유치원 제10회 입학식 기록",
+        "url": "https://www.instagram.com/reel/DVh9OuFj5ng/",
+        "source": "other",
+        "sourceName": "Instagram · 바움유치원",
+        "snippet": "바움유치원 제10회 입학식에서 신입 원아들이 원가를 부르며 새 학기를 시작한 릴스입니다.",
+        "summary": "경기 고양 바움유치원의 입학식 현장과 유아들의 유치원 생활 시작을 담은 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "entrance-ceremony",
+          "new-school-year",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave732-402afd19",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVh9OuFj5ng/",
+          "normalizedUrl": "instagram.com/reel/dvh9oufj5ng",
+          "normalizedText": "경기 고양 바움유치원 제10회 입학식 유치원생활 새 출발",
+          "htmlSnapshotHash": "sns-wave732-402afd19",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVh9OuFj5ng/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave732"
       }
     ],
     "1ecec08c-fb00-b044-e053-0a32095ab044": [
