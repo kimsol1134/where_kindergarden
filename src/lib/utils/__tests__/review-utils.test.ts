@@ -4,6 +4,7 @@ import {
   classifyContentType,
   extractRegionName,
   formatNaverDate,
+  isSpamReview,
   stripHtml,
 } from '../review-utils';
 
@@ -191,5 +192,25 @@ describe('classifyContentType', () => {
         '양식에 맞지 않으면 등업이 되지 않습니다.'
       )
     ).toBe('question');
+  });
+});
+
+describe('isSpamReview', () => {
+  it('병설유치원 입학설명회 후기는 초등학교 입학 스팸으로 보지 않는다', () => {
+    expect(
+      isSpamReview({
+        title: '[울산 북구] 동대초등학교 병설유치원 입학설명회 솔직후기',
+        snippet: '동대초등학교병설유치원 설명회에 다녀와 시설과 방과후 과정을 정리했습니다.',
+      }).isSpam
+    ).toBe(false);
+  });
+
+  it('유치원 문맥이 없는 초등학교 입학 글은 계속 스팸으로 본다', () => {
+    expect(
+      isSpamReview({
+        title: '초등학교 입학 준비물과 예비초등 학원 추천',
+        snippet: '초등 입학 전 준비할 것들을 정리했습니다.',
+      }).isSpam
+    ).toBe(true);
   });
 });
