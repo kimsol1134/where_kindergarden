@@ -22,6 +22,7 @@
     "collect:reviews": "tsx scripts/collect-reviews.ts",
     "collect:reviews:v3": "tsx scripts/collect-reviews-v3.ts",
     "collect:insane-reviews": "tsx scripts/collect-insane-reviews.ts",
+    "collect:sns-reviews": "tsx scripts/collect-sns-reviews.ts",
     "run:insane-review-batches": "tsx scripts/run-insane-review-batches.ts",
     "merge:insane-reviews": "tsx scripts/merge-insane-reviews.ts",
     "curate:reviews": "tsx scripts/curate-reviews.ts",

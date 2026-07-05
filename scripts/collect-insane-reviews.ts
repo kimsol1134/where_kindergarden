@@ -520,6 +520,11 @@ function buildQueries(kindergarten: KindergartenEntry): Array<{ query: string; w
     { query: `${exactName} ${regionName} 맘카페 후기`, where: 'article' },
     { query: `${exactName} 재원생 맘카페`, where: 'article' },
     { query: `${exactName} 유치원 후기 인스타그램 OR threads OR x.com`, where: 'web' },
+    { query: `site:threads.net ${exactName} ${regionName} 유치원 후기`, where: 'web' },
+    { query: `site:x.com ${exactName} ${regionName} 유치원 후기`, where: 'web' },
+    { query: `site:twitter.com ${exactName} ${regionName} 유치원 후기`, where: 'web' },
+    { query: `site:instagram.com ${exactName} ${regionName} 유치원 후기`, where: 'web' },
+    { query: `site:facebook.com ${exactName} ${regionName} 유치원 후기`, where: 'web' },
   ];
 }
 

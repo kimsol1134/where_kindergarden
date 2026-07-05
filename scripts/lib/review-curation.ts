@@ -184,6 +184,26 @@ export function buildReviewLinkFromRaw(
   };
 }
 
+export function buildReviewDuplicateKey(
+  review: Pick<ReviewLink, 'kindergartenId' | 'url' | 'source' | 'tags' | 'id'>
+): string {
+  if (review.source === 'naver_place' || review.source === 'starteacher') {
+    return review.id;
+  }
+
+  const normalizedUrl = normalizeReviewUrl(review.url);
+  return review.tags?.includes('sns')
+    ? `${review.kindergartenId}|${normalizedUrl}`
+    : normalizedUrl;
+}
+
+export function buildRawReviewDuplicateKey(raw: RawReviewLink): string {
+  const normalizedUrl = normalizeReviewUrl(raw.url);
+  return raw.tags?.includes('sns')
+    ? `${raw.kindergartenId}|${normalizedUrl}`
+    : normalizedUrl;
+}
+
 export function collectGlobalNormalizedUrls(
   reviewsByKindergarten: Record<string, ReviewLink[]>
 ): Set<string> {
@@ -191,7 +211,7 @@ export function collectGlobalNormalizedUrls(
 
   for (const reviews of Object.values(reviewsByKindergarten)) {
     for (const review of reviews) {
-      urls.add(normalizeReviewUrl(review.url));
+      urls.add(buildReviewDuplicateKey(review));
     }
   }
 
@@ -227,10 +247,10 @@ export function mergeRawReviewsIntoRegionData(
   let rejectedCount = 0;
 
   for (const rawReview of rawReviews) {
-    const normalizedUrl = normalizeReviewUrl(rawReview.url);
+    const duplicateKey = buildRawReviewDuplicateKey(rawReview);
     if (
-      existingGlobalUrls.has(normalizedUrl) ||
-      existingRegionUrls.has(normalizedUrl)
+      existingGlobalUrls.has(duplicateKey) ||
+      existingRegionUrls.has(duplicateKey)
     ) {
       duplicateCount += 1;
       continue;
@@ -267,8 +287,8 @@ export function mergeRawReviewsIntoRegionData(
     bucket.push(review);
     mergedReviews[review.kindergartenId] = bucket;
 
-    existingGlobalUrls.add(normalizedUrl);
-    existingRegionUrls.add(normalizedUrl);
+    existingGlobalUrls.add(duplicateKey);
+    existingRegionUrls.add(duplicateKey);
     addedCount += 1;
   }
 

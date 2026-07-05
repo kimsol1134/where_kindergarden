@@ -11,6 +11,7 @@ import * as path from 'path';
 import type { ReviewsData } from '../src/types/review';
 import {
   buildKindergartenSidoMap,
+  buildReviewDuplicateKey,
   collectGlobalNormalizedUrls,
   mergeRawReviewsIntoRegionData,
   readJsonFile,
@@ -27,6 +28,7 @@ interface Args {
   inputs: string[];
   sidos: string[];
   dryRun: boolean;
+  filterSpam: boolean;
 }
 
 function getAllValues(args: string[], flag: string): string[] {
@@ -46,6 +48,7 @@ function parseArgs(): Args {
     inputs: getAllValues(args, '--input'),
     sidos: getAllValues(args, '--sido'),
     dryRun: args.includes('--dry-run'),
+    filterSpam: !args.includes('--no-filter-spam'),
   };
 }
 
@@ -91,10 +94,7 @@ function rebuildCombinedReviews(): ReviewsData {
     for (const [kindergartenId, reviews] of Object.entries(regionData.reviews)) {
       const bucket = combined[kindergartenId] ?? [];
       for (const review of reviews) {
-        const duplicateKey =
-          review.source === 'naver_place' || review.source === 'starteacher'
-            ? review.id
-            : review.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+        const duplicateKey = buildReviewDuplicateKey(review);
         if (globalUrls.has(duplicateKey)) {
           continue;
         }
@@ -164,7 +164,8 @@ function main(): void {
       : { version: new Date().toISOString().split('T')[0], totalCount: 0, kindergartenCount: 0, reviews: {} };
     const merged = mergeRawReviewsIntoRegionData(regionData, reviews, {
       existingGlobalNormalizedUrls: globalUrls,
-      filterSpam: true,
+      filterSpam: args.filterSpam,
+      preserveContent: reviews.some((review) => typeof review.content === 'string' && review.content.length > 0),
     });
 
     totalAdded += merged.addedCount;
