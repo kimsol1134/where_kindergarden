@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 8,
-  "kindergartenCount": 8,
+  "totalCount": 10,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
@@ -329,6 +329,84 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave757"
+      }
+    ],
+    "1ecec08c-f9a8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave759-0007bc19",
+        "kindergartenId": "1ecec08c-f9a8-b044-e053-0a32095ab044",
+        "title": "제주 보목초병설유치원 화재안전교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=10761",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "보목초등학교병설유치원이 찾아가는 화재안전 시민안전교육을 실시한 공개 기사입니다.",
+        "summary": "제주 보목초등학교병설유치원의 화재경보, 대피 방법, 옷에 불이 붙었을 때 대처 방법 교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "safety-education",
+          "fire-safety",
+          "jeju"
+        ],
+        "date": "2021-10-08",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave759-0007bc19",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=10761",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=10761",
+          "normalizedText": "제주 보목초등학교병설유치원 찾아오는 화재안전 시민안전교육 실시",
+          "htmlSnapshotHash": "sns-wave759-0007bc19",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=10761"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave759"
+      }
+    ],
+    "1ecec08d-0235-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave759-1b978f9d",
+        "kindergartenId": "1ecec08d-0235-b044-e053-0a32095ab044",
+        "title": "제주 성산초병설유치원 교통안전 시민안전교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=89207",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "성산초등학교병설유치원이 서귀포시청 안전총괄과 주관 찾아가는 시민안전교육을 실시한 공개 기사입니다.",
+        "summary": "제주 성산초등학교병설유치원의 통학버스 안전, 비 오는 날 안전 규칙, 횡단보도 보행 실습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "traffic-safety",
+          "safety-education",
+          "jeju"
+        ],
+        "date": "2025-04-29",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave759-1b978f9d",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=89207",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=89207",
+          "normalizedText": "제주 성산초등학교병설유치원 교통안전 교육 시민안전교육 통학버스 횡단보도",
+          "htmlSnapshotHash": "sns-wave759-1b978f9d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=89207"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave759"
       }
     ]
   },
