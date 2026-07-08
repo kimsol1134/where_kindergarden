@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 139,
+  "totalCount": 140,
   "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0dba-b044-e053-0a32095ab044": [
@@ -2137,6 +2137,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T14:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave744-9dbcf641",
+        "kindergartenId": "1ecec08c-f3a6-b044-e053-0a32095ab044",
+        "title": "김포 다사랑유치원 교통안전교육 기록",
+        "url": "https://www.instagram.com/reel/DaNQ-zVJoWm/",
+        "source": "other",
+        "sourceName": "Instagram · 김포 다사랑유치원",
+        "snippet": "김포 다사랑유치원이 지역 교통안전교육 활동을 소개한 공개 릴스입니다.",
+        "summary": "경기 김포시 다사랑유치원의 교통안전교육 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education",
+          "gimpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-9dbcf641",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaNQ-zVJoWm/",
+          "normalizedUrl": "instagram.com/reel/danq-zvjowm",
+          "normalizedText": "김포 다사랑유치원 교통안전교육",
+          "htmlSnapshotHash": "sns-wave744-9dbcf641",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaNQ-zVJoWm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08c-ee89-b044-e053-0a32095ab044": [

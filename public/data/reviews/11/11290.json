@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 105,
+  "totalCount": 106,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08d-0269-b044-e053-0a32095ab044": [
@@ -600,6 +600,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave730"
+      },
+      {
+        "id": "rev-sns-wave744-4e911644",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "서울 우촌유치원 화재·지진 대피교육 기록",
+        "url": "https://www.instagram.com/reel/DaMygMTP0SM/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 화재대피와 지진대피 상황을 비교하며 안전교육을 진행한 공개 릴스입니다.",
+        "summary": "서울 성북구 우촌유치원의 재난대피 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "disaster-drill",
+          "safety-education",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-4e911644",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMygMTP0SM/",
+          "normalizedUrl": "instagram.com/reel/damygmtp0sm",
+          "normalizedText": "우촌유치원 화재대피 지진대피 안전교육",
+          "htmlSnapshotHash": "sns-wave744-4e911644",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaMygMTP0SM/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [

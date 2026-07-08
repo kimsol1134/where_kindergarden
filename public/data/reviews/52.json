@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 201,
-  "kindergartenCount": 62,
+  "totalCount": 202,
+  "kindergartenCount": 63,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
       {
@@ -8790,6 +8790,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave738"
+      }
+    ],
+    "1ecec08d-04ff-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave744-1e76c455",
+        "kindergartenId": "1ecec08d-04ff-b044-e053-0a32095ab044",
+        "title": "익산 관행유치원 지진대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DQoyGn2EgPL/",
+        "source": "other",
+        "sourceName": "Instagram · 관행유치원",
+        "snippet": "관행유치원이 안전점검의 날에 원아들과 함께한 지진대피훈련을 소개한 공개 릴스입니다.",
+        "summary": "전북 익산시 관행유치원의 지진대피훈련과 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "earthquake-drill",
+          "safety-education",
+          "iksan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-1e76c455",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQoyGn2EgPL/",
+          "normalizedUrl": "instagram.com/reel/dqoygn2egpl",
+          "normalizedText": "관행유치원 안전점검의날 안전교육 지진대피훈련",
+          "htmlSnapshotHash": "sns-wave744-1e76c455",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQoyGn2EgPL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ]
   },

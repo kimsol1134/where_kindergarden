@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 373,
+  "totalCount": 374,
   "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -11648,6 +11648,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T15:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave744-1e63ab26",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "부산 영일유치원 지진해일 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DaMzdeeEQpz/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "영일유치원이 유아와 교직원이 함께한 지진해일 대피훈련을 소개한 공개 게시물입니다.",
+        "summary": "부산 영도구 영일유치원의 지진해일 대피훈련을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "disaster-drill",
+          "safety-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-1e63ab26",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMzdeeEQpz/",
+          "normalizedUrl": "instagram.com/p/damzdeeeqpz",
+          "normalizedText": "영일유치원 지진해일 대피훈련 유아 교직원",
+          "htmlSnapshotHash": "sns-wave744-1e63ab26",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMzdeeEQpz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08c-f5f5-b044-e053-0a32095ab044": [

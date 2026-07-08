@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 292,
+  "totalCount": 293,
   "kindergartenCount": 104,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -3398,6 +3398,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T22:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave744-3d911ef3",
+        "kindergartenId": "1ecec08d-0926-b044-e053-0a32095ab044",
+        "title": "진주 으뜸유치원 소방훈련 안전교육 기록",
+        "url": "https://www.instagram.com/p/DXvkSzJy3_e/",
+        "source": "other",
+        "sourceName": "Instagram · 진주 으뜸유치원",
+        "snippet": "진주 으뜸유치원이 소방서 합동 소방훈련과 안전교육 활동을 소개한 공개 게시물입니다.",
+        "summary": "경남 진주시 으뜸유치원의 소방훈련과 원아 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "jinju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-3d911ef3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXvkSzJy3_e/",
+          "normalizedUrl": "instagram.com/p/dxvkszjy3_e",
+          "normalizedText": "진주 으뜸유치원 소방서 합동 소방훈련 안전교육",
+          "htmlSnapshotHash": "sns-wave744-3d911ef3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DXvkSzJy3_e/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08d-0644-b044-e053-0a32095ab044": [

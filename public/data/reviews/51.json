@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 170,
+  "totalCount": 171,
   "kindergartenCount": 46,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -6685,6 +6685,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave744-ddd93127",
+        "kindergartenId": "1ecec08d-0372-b044-e053-0a32095ab044",
+        "title": "춘천 우리유치원 어린이 교통안전교육 기록",
+        "url": "https://www.instagram.com/p/DaeCjWph5s3/",
+        "source": "other",
+        "sourceName": "Instagram · 춘천 우리유치원",
+        "snippet": "춘천 우리유치원이 원아들과 함께한 어린이 교통안전교육 활동을 소개한 공개 게시물입니다.",
+        "summary": "강원 춘천시 우리유치원의 교통안전교육 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education",
+          "chuncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-ddd93127",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaeCjWph5s3/",
+          "normalizedUrl": "instagram.com/p/daecjwph5s3",
+          "normalizedText": "춘천 우리유치원 어린이 교통안전교육",
+          "htmlSnapshotHash": "sns-wave744-ddd93127",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaeCjWph5s3/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08c-fd93-b044-e053-0a32095ab044": [
