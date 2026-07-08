@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 63,
+  "totalCount": 64,
   "kindergartenCount": 16,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
@@ -992,6 +992,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T22:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave746-2657167d",
+        "kindergartenId": "1ecec08c-f817-b044-e053-0a32095ab044",
+        "title": "대구 삐아제유치원 학부모 참여수업 기록",
+        "url": "https://www.instagram.com/p/DacPsThNQVC/",
+        "source": "other",
+        "sourceName": "Instagram · 삐아제유치원",
+        "snippet": "삐아제유치원이 영아반 가족참여수업과 학부모 참여수업 활동을 소개한 공개 게시물입니다.",
+        "summary": "대구 달성군 삐아제유치원의 가족참여수업 운영을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "family-class",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave746-2657167d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DacPsThNQVC/",
+          "normalizedUrl": "instagram.com/p/dacpsthnqvc",
+          "normalizedText": "대구 삐아제유치원 가족참여수업 학부모참여수업",
+          "htmlSnapshotHash": "sns-wave746-2657167d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DacPsThNQVC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave746"
       }
     ],
     "1ecec08d-0260-b044-e053-0a32095ab044": [

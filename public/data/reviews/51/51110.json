@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 73,
+  "totalCount": 74,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -1077,6 +1077,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:57.000Z",
         "approvedBy": "codex-manual-sns-wave688"
+      },
+      {
+        "id": "rev-sns-wave746-9fb098e3",
+        "kindergartenId": "1ecec08d-0a67-b044-e053-0a32095ab044",
+        "title": "춘천 꿈에그린유치원 부모 참여수업 기록",
+        "url": "https://www.instagram.com/p/DaVGMpJScdn/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈에그린유치원",
+        "snippet": "춘천 꿈에그린유치원이 부모 참여수업과 참관수업 일정을 소개한 공개 게시물입니다.",
+        "summary": "강원 춘천시 꿈에그린유치원의 부모 참여수업 운영을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "chuncheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave746-9fb098e3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaVGMpJScdn/",
+          "normalizedUrl": "instagram.com/p/davgmpjscdn",
+          "normalizedText": "춘천 꿈에그린유치원 부모 참여수업 참관수업",
+          "htmlSnapshotHash": "sns-wave746-9fb098e3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaVGMpJScdn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave746"
       }
     ],
     "1ecec08d-0a68-b044-e053-0a32095ab044": [
