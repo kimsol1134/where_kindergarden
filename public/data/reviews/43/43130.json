@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 14,
-  "kindergartenCount": 5,
+  "totalCount": 15,
+  "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-edd6-b044-e053-0a32095ab044": [
       {
@@ -627,6 +627,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave726"
+      }
+    ],
+    "051b5abf-bada-4f0f-8def-6d4be57b5a45": [
+      {
+        "id": "rev-sns-wave751-3192a0cf",
+        "kindergartenId": "051b5abf-bada-4f0f-8def-6d4be57b5a45",
+        "title": "충주중앙탑초병설유치원 유초이음 병원놀이 기록",
+        "url": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578",
+        "source": "other",
+        "sourceName": "NBN뉴스",
+        "snippet": "중앙탑초등학교병설유치원이 유초이음 다함께놀이로 병원놀이를 진행했다는 공개 기사입니다.",
+        "summary": "충북 충주중앙탑초등학교병설유치원의 유초이음 다함께놀이와 병원놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "elementary-bridge",
+          "role-play",
+          "chungbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave751-3192a0cf",
+        "evidence": {
+          "canonicalUrl": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578",
+          "normalizedUrl": "nbnnews.co.kr/news/articleview.html?idxno=958578",
+          "normalizedText": "충주중앙탑초등학교병설유치원 유초이음 다함께놀이 병원놀이",
+          "htmlSnapshotHash": "sns-wave751-3192a0cf",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ]
   },

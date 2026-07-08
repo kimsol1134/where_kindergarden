@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 123,
-  "kindergartenCount": 31,
+  "totalCount": 125,
+  "kindergartenCount": 32,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
       {
@@ -2849,6 +2849,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave751-930d5de7",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "청주 진흥초병설유치원 이음교육주간 탐방 기록",
+        "url": "https://www.instagram.com/reel/DYhg49APuzq/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "진흥초등학교병설유치원이 유초이음교육과 이음교육주간, 초등학교 탐방 활동을 소개한 공개 릴스입니다.",
+        "summary": "충북 청주 진흥초등학교병설유치원의 유초이음교육 주간과 초등학교 탐방 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "school-tour",
+          "chungbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave751-930d5de7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYhg49APuzq/",
+          "normalizedUrl": "instagram.com/reel/dyhg49apuzq",
+          "normalizedText": "청주 진흥초등학교병설유치원 유초이음교육 이음교육주간 초등학교탐방",
+          "htmlSnapshotHash": "sns-wave751-930d5de7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYhg49APuzq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ],
     "1ecec08c-f69c-b044-e053-0a32095ab044": [
@@ -5280,6 +5317,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave726"
+      }
+    ],
+    "051b5abf-bada-4f0f-8def-6d4be57b5a45": [
+      {
+        "id": "rev-sns-wave751-3192a0cf",
+        "kindergartenId": "051b5abf-bada-4f0f-8def-6d4be57b5a45",
+        "title": "충주중앙탑초병설유치원 유초이음 병원놀이 기록",
+        "url": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578",
+        "source": "other",
+        "sourceName": "NBN뉴스",
+        "snippet": "중앙탑초등학교병설유치원이 유초이음 다함께놀이로 병원놀이를 진행했다는 공개 기사입니다.",
+        "summary": "충북 충주중앙탑초등학교병설유치원의 유초이음 다함께놀이와 병원놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "elementary-bridge",
+          "role-play",
+          "chungbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave751-3192a0cf",
+        "evidence": {
+          "canonicalUrl": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578",
+          "normalizedUrl": "nbnnews.co.kr/news/articleview.html?idxno=958578",
+          "normalizedText": "충주중앙탑초등학교병설유치원 유초이음 다함께놀이 병원놀이",
+          "htmlSnapshotHash": "sns-wave751-3192a0cf",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.nbnnews.co.kr/news/articleView.html?idxno=958578"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ]
   },

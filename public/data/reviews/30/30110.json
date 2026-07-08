@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 30,
+  "totalCount": 31,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -1325,6 +1325,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave667"
+      },
+      {
+        "id": "rev-sns-wave751-d1835982",
+        "kindergartenId": "1ecec08c-f487-b044-e053-0a32095ab044",
+        "title": "대전 산흥초병설유치원 유초이음교육 기록",
+        "url": "https://www.instagram.com/p/DW8LX04EeG0/",
+        "source": "other",
+        "sourceName": "Instagram · 산흥초등학교병설유치원",
+        "snippet": "산흥초등학교병설유치원이 유초이음교육 활동을 소개한 공개 게시물입니다.",
+        "summary": "대전 동구 산흥초등학교병설유치원의 유초이음교육 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave751-d1835982",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW8LX04EeG0/",
+          "normalizedUrl": "instagram.com/p/dw8lx04eeg0",
+          "normalizedText": "대전 산흥초등학교병설유치원 유초이음교육",
+          "htmlSnapshotHash": "sns-wave751-d1835982",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DW8LX04EeG0/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ],
     "1ecec08c-ffab-b044-e053-0a32095ab044": [

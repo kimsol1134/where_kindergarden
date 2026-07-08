@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "totalCount": 2,
+  "kindergartenCount": 2,
   "reviews": {
     "1ecec08c-ff84-b044-e053-0a32095ab044": [
       {
@@ -40,6 +40,46 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave750"
       }
+    ],
+    "1ecec08c-f265-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave751-78d7db35",
+        "kindergartenId": "1ecec08c-f265-b044-e053-0a32095ab044",
+        "title": "문경 모전초병설유치원 유초이음 보호자연수 기록",
+        "url": "https://www.instagram.com/reel/DYoL-Q6xNgb/",
+        "source": "other",
+        "sourceName": "Instagram · 문경 모전초등학교병설유치원",
+        "snippet": "문경 모전초등학교병설유치원이 그림책과 보드게임을 연결한 유초이음 보호자연수를 진행한 공개 릴스입니다.",
+        "summary": "경북 문경 모전초등학교병설유치원의 그림책 기반 유초이음 연수와 보호자 참여 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "picture-book",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave751-78d7db35",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYoL-Q6xNgb/",
+          "normalizedUrl": "instagram.com/reel/dyol-q6xngb",
+          "normalizedText": "문경 모전초등학교병설유치원 유초이음 보호자연수 그림책 보드게임",
+          "htmlSnapshotHash": "sns-wave751-78d7db35",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYoL-Q6xNgb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

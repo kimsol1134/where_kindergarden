@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 49,
+  "totalCount": 50,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08d-083c-b044-e053-0a32095ab044": [
@@ -1486,6 +1486,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave751-930d5de7",
+        "kindergartenId": "1ecec08c-f2af-b044-e053-0a32095ab044",
+        "title": "청주 진흥초병설유치원 이음교육주간 탐방 기록",
+        "url": "https://www.instagram.com/reel/DYhg49APuzq/",
+        "source": "other",
+        "sourceName": "Instagram · 진흥초등학교병설유치원",
+        "snippet": "진흥초등학교병설유치원이 유초이음교육과 이음교육주간, 초등학교 탐방 활동을 소개한 공개 릴스입니다.",
+        "summary": "충북 청주 진흥초등학교병설유치원의 유초이음교육 주간과 초등학교 탐방 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "school-tour",
+          "chungbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave751-930d5de7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYhg49APuzq/",
+          "normalizedUrl": "instagram.com/reel/dyhg49apuzq",
+          "normalizedText": "청주 진흥초등학교병설유치원 유초이음교육 이음교육주간 초등학교탐방",
+          "htmlSnapshotHash": "sns-wave751-930d5de7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYhg49APuzq/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ],
     "1ecec08c-f69c-b044-e053-0a32095ab044": [

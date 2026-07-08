@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1357,
-  "kindergartenCount": 498,
+  "totalCount": 1359,
+  "kindergartenCount": 500,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -53660,6 +53660,83 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave749"
+      }
+    ],
+    "1ecec08c-f8f9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave751-2a41da54",
+        "kindergartenId": "1ecec08c-f8f9-b044-e053-0a32095ab044",
+        "title": "포천 영북초병설유치원 유초이음 전래공연 기록",
+        "url": "https://www.instagram.com/p/Dae2vwhE0Sj/",
+        "source": "other",
+        "sourceName": "Instagram · 영북초등학교병설유치원",
+        "snippet": "영북초등학교병설유치원이 유아체험교육원에서 유초이음교육 전래공연을 관람한 공개 게시물입니다.",
+        "summary": "경기 포천 영북초등학교병설유치원의 유초이음교육과 전래공연 관람 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "traditional-performance",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave751-2a41da54",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Dae2vwhE0Sj/",
+          "normalizedUrl": "instagram.com/p/dae2vwhe0sj",
+          "normalizedText": "포천 영북초등학교병설유치원 유초이음교육 전래공연 관람",
+          "htmlSnapshotHash": "sns-wave751-2a41da54",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/Dae2vwhE0Sj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
+      }
+    ],
+    "1ecec08d-0949-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave751-d20458b1",
+        "kindergartenId": "1ecec08d-0949-b044-e053-0a32095ab044",
+        "title": "여주 오학초병설유치원 유초이음 성장 활동 기록",
+        "url": "https://www.yeojunews.co.kr/news/articleView.html?idxno=55863",
+        "source": "other",
+        "sourceName": "여주신문",
+        "snippet": "오학초등학교병설유치원이 유아의 성장과 발달을 지원하기 위해 유초이음 활동을 운영했다는 공개 기사입니다.",
+        "summary": "경기 여주 오학초등학교병설유치원의 유초이음 활동과 연령별 성장 지원 교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "elementary-bridge",
+          "growth-activity",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave751-d20458b1",
+        "evidence": {
+          "canonicalUrl": "https://www.yeojunews.co.kr/news/articleView.html?idxno=55863",
+          "normalizedUrl": "yeojunews.co.kr/news/articleview.html?idxno=55863",
+          "normalizedText": "여주 오학초등학교병설유치원 유초이음 성장 활동",
+          "htmlSnapshotHash": "sns-wave751-d20458b1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.yeojunews.co.kr/news/articleView.html?idxno=55863"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave751"
       }
     ]
   },
