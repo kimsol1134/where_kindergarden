@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 10,
-  "kindergartenCount": 10,
+  "totalCount": 13,
+  "kindergartenCount": 13,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
@@ -407,6 +407,123 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave759"
+      }
+    ],
+    "1ecec08d-0f2a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave760-a9f507a5",
+        "kindergartenId": "1ecec08d-0f2a-b044-e053-0a32095ab044",
+        "title": "제주 강정초병설유치원 가족 전래놀이 한마당 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "강정초병설유치원이 가족과 함께하는 전래놀이 한마당을 실시한 공개 기사입니다.",
+        "summary": "제주 강정초등학교병설유치원의 가족 참여 전래놀이 활동과 유치원-가정 연계 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "traditional-play",
+          "family-program",
+          "jeju"
+        ],
+        "date": "2025-10-28",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave760-a9f507a5",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=103703",
+          "normalizedText": "제주 강정초등학교병설유치원 가족과 함께하는 전래놀이 한마당 실시",
+          "htmlSnapshotHash": "sns-wave760-a9f507a5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave760"
+      }
+    ],
+    "ab4a9e5a-5f5d-4d8e-8919-e9b0a18cf2d4": [
+      {
+        "id": "rev-sns-wave760-2654bd29",
+        "kindergartenId": "ab4a9e5a-5f5d-4d8e-8919-e9b0a18cf2d4",
+        "title": "제주 중문초병설유치원 방과후 원예체험 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=56679",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "중문초등학교병설유치원이 방과후놀이배움터 사업으로 원예체험을 실시한 공개 기사입니다.",
+        "summary": "제주 중문초등학교병설유치원의 상추 모종, 메밀 씨앗, 김장 배추, 메리골드꽃 심기 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "garden-activity",
+          "after-school-play",
+          "jeju"
+        ],
+        "date": "2023-07-14",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave760-2654bd29",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=56679",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=56679",
+          "normalizedText": "제주 중문초등학교병설유치원 자연과 함께하는 방과후놀이배움터 원예체험",
+          "htmlSnapshotHash": "sns-wave760-2654bd29",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=56679"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave760"
+      }
+    ],
+    "1ecec08d-065f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave760-cae02804",
+        "kindergartenId": "1ecec08d-065f-b044-e053-0a32095ab044",
+        "title": "제주 동남초병설유치원 유초이음 전래놀이 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "동남초등학교병설유치원이 유초이음 사업으로 전래 놀이 프로그램을 실시한 공개 기사입니다.",
+        "summary": "제주 동남초등학교병설유치원의 길쌈놀이, 쥐구멍 놀이, 초등 1학년 연계 공동체 놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "traditional-play",
+          "elementary-bridge",
+          "jeju"
+        ],
+        "date": "2025-05-26",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave760-cae02804",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=91460",
+          "normalizedText": "제주 동남초등학교병설유치원 유초이음 활동 전래놀이 전래야 놀자 공동체 놀이",
+          "htmlSnapshotHash": "sns-wave760-cae02804",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave760"
       }
     ]
   },
