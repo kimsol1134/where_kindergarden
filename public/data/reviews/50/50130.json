@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 13,
+  "totalCount": 14,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
@@ -446,6 +446,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave760"
+      },
+      {
+        "id": "rev-sns-wave761-e9735ebb",
+        "kindergartenId": "1ecec08d-0f2a-b044-e053-0a32095ab044",
+        "title": "제주 강정초병설유치원 찾아오는 음악동화 공연 체험 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=93884",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "강정초등학교병설유치원이 찾아오는 음악동화 공연 관람 및 체험을 실시한 공개 기사입니다.",
+        "summary": "제주 강정초등학교병설유치원의 음악동화 케이트의 사라진 공, 노래와 악기 표현 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "music-story",
+          "performance",
+          "instrument-activity",
+          "jeju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave761-e9735ebb",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=93884",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=93884",
+          "normalizedText": "제주 강정초등학교병설유치원 찾아오는 음악동화 공연 체험 케이트의 사라진 공 노래 악기 표현",
+          "htmlSnapshotHash": "sns-wave761-e9735ebb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=93884"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave761"
       }
     ],
     "ab4a9e5a-5f5d-4d8e-8919-e9b0a18cf2d4": [
