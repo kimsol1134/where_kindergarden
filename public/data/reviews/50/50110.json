@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 15,
+  "totalCount": 16,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0ead-b044-e053-0a32095ab044": [
@@ -618,6 +618,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave750"
+      },
+      {
+        "id": "rev-sns-wave752-d0976901",
+        "kindergartenId": "1ecec08d-0ad7-b044-e053-0a32095ab044",
+        "title": "제주중앙초병설유치원 유초이음 학부모 연수 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=116314",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "제주중앙초등학교병설유치원이 2026 유초이음 학부모 연수를 진행한 공개 기사입니다.",
+        "summary": "제주중앙초등학교병설유치원의 그림책 기반 언어 발달 연수와 가정 연계 교육 방향을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "parent-program",
+          "jeju"
+        ],
+        "date": "2026-06-12",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-d0976901",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=116314",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=116314",
+          "normalizedText": "제주중앙초등학교병설유치원 2026 유초이음 학부모 연수 그림책 언어발달",
+          "htmlSnapshotHash": "sns-wave752-d0976901",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=116314"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
       }
     ],
     "1ecec08d-023f-b044-e053-0a32095ab044": [

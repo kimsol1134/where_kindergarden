@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 105,
-  "kindergartenCount": 39,
+  "totalCount": 106,
+  "kindergartenCount": 40,
   "reviews": {
     "1ecec08d-0c71-b044-e053-0a32095ab044": [
       {
@@ -4882,6 +4882,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave734"
+      }
+    ],
+    "e4065184-431e-47ff-b047-dbf9d4bd0ac1": [
+      {
+        "id": "rev-sns-wave752-8c6b5a35",
+        "kindergartenId": "e4065184-431e-47ff-b047-dbf9d4bd0ac1",
+        "title": "순천 신대초병설유치원 유초이음 첫걸음 기록",
+        "url": "https://www.jnedu.kr/news/articleView.html?idxno=112194",
+        "source": "other",
+        "sourceName": "전남교육통",
+        "snippet": "신대초등학교와 신대초등학교병설유치원이 초등 1학년과 유초 이음교육 첫 활동을 진행한 공개 기사입니다.",
+        "summary": "순천 신대초등학교병설유치원의 초등 1학년 연계 산책 활동과 관계 형성 과정을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "jeonnam",
+          "school-transition"
+        ],
+        "date": "2026-04-15",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-8c6b5a35",
+        "evidence": {
+          "canonicalUrl": "https://www.jnedu.kr/news/articleView.html?idxno=112194",
+          "normalizedUrl": "jnedu.kr/news/articleview.html?idxno=112194",
+          "normalizedText": "순천 신대초등학교병설유치원 초등 1학년 유초 이음교육 첫걸음 생태회랑로 산책",
+          "htmlSnapshotHash": "sns-wave752-8c6b5a35",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.jnedu.kr/news/articleView.html?idxno=112194"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
       }
     ]
   },

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 3,
-  "kindergartenCount": 2,
+  "totalCount": 4,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08c-fdf9-b044-e053-0a32095ab044": [
       {
@@ -142,6 +142,46 @@
         "approvedAt": "2026-06-30T23:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-060a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave752-5c01e041",
+        "kindergartenId": "1ecec08d-060a-b044-e053-0a32095ab044",
+        "title": "김천동부초병설유치원 유초이음 마술 활동 기록",
+        "url": "https://www.gcilbo.kr/news/articleView.html?idxno=96558",
+        "source": "other",
+        "sourceName": "김천일보",
+        "snippet": "김천동부초등학교병설유치원이 유초이음교육으로 마술 활동과 나눔 행사를 진행한 공개 기사입니다.",
+        "summary": "김천동부초등학교병설유치원의 유초이음 활동, 마술 체험, 초등 연계 분위기를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "magic-show",
+          "gimcheon"
+        ],
+        "date": "2026-06-11",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-5c01e041",
+        "evidence": {
+          "canonicalUrl": "https://www.gcilbo.kr/news/articleView.html?idxno=96558",
+          "normalizedUrl": "gcilbo.kr/news/articleview.html?idxno=96558",
+          "normalizedText": "김천동부초등학교병설유치원 유초이음교육 마술로 배우고 나누는 활동",
+          "htmlSnapshotHash": "sns-wave752-5c01e041",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.gcilbo.kr/news/articleView.html?idxno=96558"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

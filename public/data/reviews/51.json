@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 175,
+  "totalCount": 176,
   "kindergartenCount": 47,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -7669,6 +7669,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave752-c6b51f63",
+        "kindergartenId": "1ecec08d-047d-b044-e053-0a32095ab044",
+        "title": "당림초병설유치원 인형극 관람 공개 기록",
+        "url": "https://www.instagram.com/p/DYrsoapE0Dz/",
+        "source": "other",
+        "sourceName": "Instagram · danglim1004",
+        "snippet": "당림초등학교병설유치원이 2026년 병설유치원 인형극 관람을 기록한 공개 게시물입니다.",
+        "summary": "춘천 당림초등학교병설유치원의 인형극 관람 활동과 소규모 학교 유치원 운영 모습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "puppet-show",
+          "gangwon",
+          "culture-experience"
+        ],
+        "date": "2026-05-23",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-c6b51f63",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DYrsoapE0Dz/",
+          "normalizedUrl": "instagram.com/p/dyrsoape0dz",
+          "normalizedText": "당림초등학교병설유치원 2026 인형극 관람 춘천 작은학교",
+          "htmlSnapshotHash": "sns-wave752-c6b51f63",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DYrsoapE0Dz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
       }
     ],
     "1ecec08d-047b-b044-e053-0a32095ab044": [

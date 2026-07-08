@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 125,
-  "kindergartenCount": 32,
+  "totalCount": 126,
+  "kindergartenCount": 33,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
       {
@@ -5355,6 +5355,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave751"
+      }
+    ],
+    "1ecec08c-f738-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave752-18af1263",
+        "kindergartenId": "1ecec08c-f738-b044-e053-0a32095ab044",
+        "title": "제천 용두초병설유치원 숲교육 체험 기록",
+        "url": "https://v.daum.net/v/PuByfbNdry",
+        "source": "other",
+        "sourceName": "Daum · 중도일보",
+        "snippet": "용두초등학교병설유치원이 하소 유아 숲체험원에서 자연 체험 중심 숲교육을 운영한 공개 기사입니다.",
+        "summary": "제천 용두초등학교병설유치원의 숲 탐방, 식물 관찰, 신체 놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "forest-education",
+          "jecheon",
+          "nature-play"
+        ],
+        "date": "2026-04-29",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-18af1263",
+        "evidence": {
+          "canonicalUrl": "https://v.daum.net/v/PuByfbNdry",
+          "normalizedUrl": "v.daum.net/v/pubyfbndry",
+          "normalizedText": "제천 용두초등학교병설유치원 하소 유아 숲체험원 자연 체험 숲교육",
+          "htmlSnapshotHash": "sns-wave752-18af1263",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://v.daum.net/v/PuByfbNdry"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
       }
     ]
   },

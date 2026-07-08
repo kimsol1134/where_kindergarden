@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 7,
-  "kindergartenCount": 5,
+  "totalCount": 9,
+  "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
       {
@@ -322,6 +322,84 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave751"
+      }
+    ],
+    "1ecec08d-0246-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave752-956d7fa9",
+        "kindergartenId": "1ecec08d-0246-b044-e053-0a32095ab044",
+        "title": "영주남부초병설유치원 인형극 예방교육 기록",
+        "url": "https://www.imaeil.com/page/view/2026032615123138005",
+        "source": "other",
+        "sourceName": "매일신문",
+        "snippet": "영주남부초등학교병설유치원이 원아 대상 인형극으로 학교폭력 예방과 다양성 존중 교육을 진행한 공개 기사입니다.",
+        "summary": "영주남부초등학교병설유치원의 체험형 인형극 교육과 공감·배려 중심 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "puppet-show",
+          "safety-education",
+          "gyeongbuk"
+        ],
+        "date": "2026-03-26",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-956d7fa9",
+        "evidence": {
+          "canonicalUrl": "https://www.imaeil.com/page/view/2026032615123138005",
+          "normalizedUrl": "imaeil.com/page/view/2026032615123138005",
+          "normalizedText": "영주남부초등학교병설유치원 인형극 학교폭력 예방 다양성 존중 교육",
+          "htmlSnapshotHash": "sns-wave752-956d7fa9",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.imaeil.com/page/view/2026032615123138005"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
+      }
+    ],
+    "1ecec08c-f305-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave752-e1c145e8",
+        "kindergartenId": "1ecec08c-f305-b044-e053-0a32095ab044",
+        "title": "영주 남산초병설유치원 입학 100일 유초이음 기록",
+        "url": "https://www.yeongjunews.co.kr/front/news/view.do?articleId=ARTICLE_00042838",
+        "source": "other",
+        "sourceName": "영주신문",
+        "snippet": "남산초등학교병설유치원이 입학 100일을 맞아 초등 1학년과 짝꿍 미션 활동을 진행한 공개 기사입니다.",
+        "summary": "영주 남산초등학교병설유치원의 입학 100일 축하 행사와 유초 이음 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "anniversary",
+          "yeongju"
+        ],
+        "date": "2026-06-10",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave752-e1c145e8",
+        "evidence": {
+          "canonicalUrl": "https://www.yeongjunews.co.kr/front/news/view.do?articleId=ARTICLE_00042838",
+          "normalizedUrl": "yeongjunews.co.kr/front/news/view.do?articleid=article_00042838",
+          "normalizedText": "영주 남산초등학교병설유치원 입학 100일 유초 이음교육 백미션 활동",
+          "htmlSnapshotHash": "sns-wave752-e1c145e8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.yeongjunews.co.kr/front/news/view.do?articleId=ARTICLE_00042838"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave752"
       }
     ]
   },
