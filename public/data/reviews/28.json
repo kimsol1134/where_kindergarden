@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 390,
+  "totalCount": 391,
   "kindergartenCount": 117,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -5801,6 +5801,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave722"
+      },
+      {
+        "id": "rev-sns-wave737-a36537aa",
+        "kindergartenId": "0c403998-490f-4067-87f8-51a11625e05f",
+        "title": "인천 동구 예원유치원 어린이 영어도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DSjaoBagY-J/",
+        "source": "other",
+        "sourceName": "Instagram · 송현예원유치원",
+        "snippet": "송현예원유치원 친구들이 어린이 영어도서관을 견학한 릴스입니다.",
+        "summary": "인천 동구 예원유치원의 영어도서관 견학과 독서 체험을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-experience",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave737-a36537aa",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSjaoBagY-J/",
+          "normalizedUrl": "instagram.com/reel/dsjaobagy-j",
+          "normalizedText": "인천 동구 송현예원유치원 어린이 영어도서관 견학",
+          "htmlSnapshotHash": "sns-wave737-a36537aa",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DSjaoBagY-J/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave737"
       }
     ],
     "1ecec08d-01a5-b044-e053-0a32095ab044": [

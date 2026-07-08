@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 120,
+  "totalCount": 121,
   "kindergartenCount": 31,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -1173,6 +1173,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave721"
+      },
+      {
+        "id": "rev-sns-wave737-a6808264",
+        "kindergartenId": "1ecec08d-028c-b044-e053-0a32095ab044",
+        "title": "충북 제천 성모유치원 남부도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DZGswV9T6Nf/",
+        "source": "other",
+        "sourceName": "Instagram · 제천 성모유치원",
+        "snippet": "제천 성모유치원 친구들이 남부도서관을 견학하며 책과 도서관 공간을 탐색한 릴스입니다.",
+        "summary": "충북 제천 성모유치원의 남부도서관 견학 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-experience",
+          "chungbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave737-a6808264",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZGswV9T6Nf/",
+          "normalizedUrl": "instagram.com/reel/dzgswv9t6nf",
+          "normalizedText": "충북 제천 성모유치원 남부도서관 견학 책읽는아이들",
+          "htmlSnapshotHash": "sns-wave737-a6808264",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZGswV9T6Nf/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave737"
       }
     ],
     "1ecec08c-f699-b044-e053-0a32095ab044": [
