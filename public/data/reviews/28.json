@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 391,
+  "totalCount": 393,
   "kindergartenCount": 117,
   "reviews": {
     "1ecec08d-0682-b044-e053-0a32095ab044": [
@@ -852,6 +852,43 @@
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.241Z",
         "relevanceScore": 3
+      },
+      {
+        "id": "rev-sns-wave740-797acd10",
+        "kindergartenId": "1ecec08d-0a30-b044-e053-0a32095ab044",
+        "title": "인천 미추홀 건영유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DZ4RHoWprxU/",
+        "source": "other",
+        "sourceName": "Instagram · 건영유치원",
+        "snippet": "건영유치원이 여름캠프에서 물놀이를 하며 시원한 하루를 보낸 릴스입니다.",
+        "summary": "인천 미추홀구 건영유치원의 여름캠프와 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-797acd10",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4RHoWprxU/",
+          "normalizedUrl": "instagram.com/reel/dz4rhowprxu",
+          "normalizedText": "인천 미추홀 건영유치원 여름캠프 물놀이",
+          "htmlSnapshotHash": "sns-wave740-797acd10",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZ4RHoWprxU/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1ecec08c-ed9d-b044-e053-0a32095ab044": [
@@ -13495,6 +13532,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave740-dddf7c3a",
+        "kindergartenId": "1fd6777e-14fb-e0b0-e053-0a32095ae0b0",
+        "title": "인천 남동 프라임명지유치원 워터파크 활동 기록",
+        "url": "https://www.instagram.com/reel/DafXSeIgY_9/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임명지유치원",
+        "snippet": "프라임명지유치원이 여름캠프와 워터파크 활동으로 시원한 물놀이 시간을 보낸 릴스입니다.",
+        "summary": "인천 남동구 프라임명지유치원의 여름캠프 워터파크 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-dddf7c3a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DafXSeIgY_9/",
+          "normalizedUrl": "instagram.com/reel/dafxseigy_9",
+          "normalizedText": "인천 남동 프라임명지유치원 여름캠프 워터파크 물놀이",
+          "htmlSnapshotHash": "sns-wave740-dddf7c3a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DafXSeIgY_9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1ecec08c-feb4-b044-e053-0a32095ab044": [

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 213,
+  "totalCount": 214,
   "kindergartenCount": 64,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
@@ -5009,6 +5009,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave738"
+      },
+      {
+        "id": "rev-sns-wave740-45e3da9e",
+        "kindergartenId": "1ecec08c-ee38-b044-e053-0a32095ab044",
+        "title": "천안 젤라유치원 물총놀이 기록",
+        "url": "https://www.instagram.com/p/Dabw3U0PHoe/",
+        "source": "other",
+        "sourceName": "Instagram · 젤라유치원",
+        "snippet": "젤라유치원이 여름을 맞아 친구들과 함께 시원한 물총놀이를 즐기는 활동을 안내한 게시물입니다.",
+        "summary": "천안 젤라유치원의 여름 물총놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-45e3da9e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Dabw3U0PHoe/",
+          "normalizedUrl": "instagram.com/p/dabw3u0phoe",
+          "normalizedText": "천안 젤라유치원 물총놀이 여름축제",
+          "htmlSnapshotHash": "sns-wave740-45e3da9e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/Dabw3U0PHoe/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1ecec08d-06c9-b044-e053-0a32095ab044": [

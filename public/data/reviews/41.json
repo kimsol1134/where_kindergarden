@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1329,
+  "totalCount": 1331,
   "kindergartenCount": 495,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -45183,6 +45183,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave740-4906a139",
+        "kindergartenId": "1ecec08c-f422-b044-e053-0a32095ab044",
+        "title": "고양 해달별유치원 물놀이와 물총놀이 기록",
+        "url": "https://www.instagram.com/p/DaNL8wazB_H/",
+        "source": "other",
+        "sourceName": "Instagram · 해달별유치원",
+        "snippet": "해달별유치원이 유치원 일상 속 물놀이와 물총놀이를 소개한 게시물입니다.",
+        "summary": "고양 해달별유치원의 여름 물놀이와 놀이중심 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-4906a139",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaNL8wazB_H/",
+          "normalizedUrl": "instagram.com/p/danl8wazb_h",
+          "normalizedText": "고양 해달별유치원 물놀이 물총놀이 놀이중심",
+          "htmlSnapshotHash": "sns-wave740-4906a139",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaNL8wazB_H/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "810bec48-b175-47b2-864b-337bbea327f6": [
@@ -52585,6 +52622,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-sns-wave740-d5080c83",
+        "kindergartenId": "1ecec08c-fb4a-b044-e053-0a32095ab044",
+        "title": "수원 예랑유치원 물총놀이 기록",
+        "url": "https://www.instagram.com/p/DaUDZU7TBRY/",
+        "source": "other",
+        "sourceName": "Instagram · 예랑유치원",
+        "snippet": "예랑유치원이 더운 여름에 친구들과 신나는 물총놀이를 진행한 게시물입니다.",
+        "summary": "수원 예랑유치원의 여름 물총놀이와 놀이중심 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-d5080c83",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaUDZU7TBRY/",
+          "normalizedUrl": "instagram.com/p/daudzu7tbry",
+          "normalizedText": "수원 예랑유치원 물총놀이 여름놀이 놀이중심",
+          "htmlSnapshotHash": "sns-wave740-d5080c83",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaUDZU7TBRY/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1ecec08c-ff8f-b044-e053-0a32095ab044": [

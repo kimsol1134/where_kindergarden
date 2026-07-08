@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 367,
+  "totalCount": 368,
   "kindergartenCount": 115,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
@@ -3965,6 +3965,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave722"
+      },
+      {
+        "id": "rev-sns-wave740-0921300b",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "경북 칠곡 무지개유치원 물길놀이 기록",
+        "url": "https://www.instagram.com/reel/DaP8qz5JwUl/",
+        "source": "other",
+        "sourceName": "Instagram · 석적무지개유치원",
+        "snippet": "석적무지개유치원이 여름을 맞아 물길놀이와 야외 물놀이 활동을 진행한 릴스입니다.",
+        "summary": "경북 칠곡 무지개유치원의 여름 물길놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-0921300b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/",
+          "normalizedUrl": "instagram.com/reel/dap8qz5jwul",
+          "normalizedText": "경북 칠곡 석적무지개유치원 물길놀이 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave740-0921300b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1ecec08c-ed57-b044-e053-0a32095ab044": [
