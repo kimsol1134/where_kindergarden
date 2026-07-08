@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 122,
+  "totalCount": 123,
   "kindergartenCount": 31,
   "reviews": {
     "1ecec08c-f74e-b044-e053-0a32095ab044": [
@@ -5127,6 +5127,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:45.000Z",
         "approvedBy": "codex-manual-sns-wave684"
+      },
+      {
+        "id": "rev-sns-wave743-fd631ebc",
+        "kindergartenId": "1ecec08d-0f69-b044-e053-0a32095ab044",
+        "title": "제천 극동유치원 놀이독서 기록",
+        "url": "https://www.instagram.com/reel/DaUn7HihHe1/",
+        "source": "other",
+        "sourceName": "Instagram · 극동유치원",
+        "snippet": "극동유치원이 제천 유치원 태그와 함께 놀이독서, 유아독서, 책놀이를 소개한 공개 릴스입니다.",
+        "summary": "제천 극동유치원의 놀이독서와 책놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading-activity",
+          "book-play",
+          "jecheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave743-fd631ebc",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaUn7HihHe1/",
+          "normalizedUrl": "instagram.com/reel/daun7hihhe1",
+          "normalizedText": "제천 극동유치원 놀이독서 유아독서 책놀이 독서습관",
+          "htmlSnapshotHash": "sns-wave743-fd631ebc",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaUn7HihHe1/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave743"
       }
     ],
     "1ecec08c-f05b-b044-e053-0a32095ab044": [

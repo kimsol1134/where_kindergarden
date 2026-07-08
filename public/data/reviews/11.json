@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 711,
+  "totalCount": 712,
   "kindergartenCount": 250,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
@@ -26559,6 +26559,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave705"
+      },
+      {
+        "id": "rev-sns-wave743-84a9872d",
+        "kindergartenId": "1ecec08d-0376-b044-e053-0a32095ab044",
+        "title": "서울 중랑 수산유치원 책놀이터 활동 기록",
+        "url": "https://www.instagram.com/reel/DaQF3cJhJVh/",
+        "source": "other",
+        "sourceName": "Instagram · 수산유치원",
+        "snippet": "수산유치원이 책과 놀이를 연결하는 책놀이터 활동을 소개한 공개 릴스입니다.",
+        "summary": "서울 중랑구 수산유치원의 책놀이터와 책놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading-activity",
+          "book-play",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave743-84a9872d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaQF3cJhJVh/",
+          "normalizedUrl": "instagram.com/reel/daqf3cjhjvh",
+          "normalizedText": "서울 중랑 수산유치원 책놀이터 책과 놀이 책놀이",
+          "htmlSnapshotHash": "sns-wave743-84a9872d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaQF3cJhJVh/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave743"
       }
     ],
     "1ecec08d-0e37-b044-e053-0a32095ab044": [
