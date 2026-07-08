@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 3,
-  "kindergartenCount": 3,
+  "totalCount": 6,
+  "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
@@ -134,6 +134,123 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave753"
+      }
+    ],
+    "1ecec08c-f4ff-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave755-6f7b4244",
+        "kindergartenId": "1ecec08c-f4ff-b044-e053-0a32095ab044",
+        "title": "제주 대정초병설유치원 다문화교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=22791",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "대정초등학교병설유치원이 찾아오는 다문화 교실을 실시한 공개 기사입니다.",
+        "summary": "제주 대정초등학교병설유치원의 베트남 문화 소개, 전통의상, 전통놀이 중심 다문화교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "multicultural-education",
+          "jeju",
+          "culture-activity"
+        ],
+        "date": "2022-06-17",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave755-6f7b4244",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=22791",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=22791",
+          "normalizedText": "제주 대정초등학교병설유치원 찾아오는 다문화 교실 베트남 문화 전통 놀이",
+          "htmlSnapshotHash": "sns-wave755-6f7b4244",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=22791"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave755"
+      }
+    ],
+    "1ecec08d-0f2b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave755-080670a3",
+        "kindergartenId": "1ecec08d-0f2b-b044-e053-0a32095ab044",
+        "title": "제주 무릉초병설유치원 화조원 현장체험 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "무릉초등학교병설유치원이 화조원에서 유아교육 협력 네트워크 현장체험학습을 실시한 공개 기사입니다.",
+        "summary": "제주 무릉초등학교병설유치원의 화조원 방문과 자연 생명 체험 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "field-trip",
+          "nature-experience",
+          "jeju"
+        ],
+        "date": "2023-06-02",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave755-080670a3",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=47891",
+          "normalizedText": "제주 무릉초등학교병설유치원 화조원 현장체험학습 유아교육 협력 네트워크",
+          "htmlSnapshotHash": "sns-wave755-080670a3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave755"
+      }
+    ],
+    "1ecec08c-f9ca-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave755-5ff80d3f",
+        "kindergartenId": "1ecec08c-f9ca-b044-e053-0a32095ab044",
+        "title": "제주 흥산초병설유치원 반편견 다문화교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "흥산초등학교병설유치원이 찾아가는 반편견 교육 프로그램 다문화를 실시한 공개 기사입니다.",
+        "summary": "제주 흥산초등학교병설유치원의 반편견 다문화교육과 다양성 존중 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "multicultural-education",
+          "anti-bias",
+          "jeju"
+        ],
+        "date": "2022-05-11",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave755-5ff80d3f",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=20478",
+          "normalizedText": "제주 흥산초등학교병설유치원 찾아가는 반편견 교육 프로그램 다문화",
+          "htmlSnapshotHash": "sns-wave755-5ff80d3f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave755"
       }
     ]
   },
