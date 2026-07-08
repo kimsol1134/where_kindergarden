@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 367,
+  "totalCount": 368,
   "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -561,6 +561,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave726"
+      },
+      {
+        "id": "rev-sns-wave739-73f18184",
+        "kindergartenId": "1ecec08d-0dd0-b044-e053-0a32095ab044",
+        "title": "부산 동래유치원 상추와 토마토 텃밭활동 기록",
+        "url": "https://www.instagram.com/p/DZ_d8OAj_9D/",
+        "source": "other",
+        "sourceName": "Instagram · 동래유치원",
+        "snippet": "동래유치원이 상추와 토마토 수확을 중심으로 텃밭활동을 진행한 게시물입니다.",
+        "summary": "부산 동래유치원의 수확 중심 텃밭활동과 놀이교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave739-73f18184",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_d8OAj_9D/",
+          "normalizedUrl": "instagram.com/p/dz_d8oaj_9d",
+          "normalizedText": "부산 동래유치원 상추 토마토 수확 텃밭활동 놀이교육",
+          "htmlSnapshotHash": "sns-wave739-73f18184",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_d8OAj_9D/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave739"
       }
     ],
     "d4536502-7276-4a01-8002-79d80777bfcc": [

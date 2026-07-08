@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 211,
-  "kindergartenCount": 63,
+  "totalCount": 213,
+  "kindergartenCount": 64,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
       {
@@ -3266,6 +3266,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.997Z",
         "approvedBy": "codex-manual-sns-wave700"
+      },
+      {
+        "id": "rev-sns-wave739-584b66d6",
+        "kindergartenId": "86d9f494-609c-4bfe-a2b2-3739219e3667",
+        "title": "천안 백석유치원 꼬마 농부 텃밭활동 기록",
+        "url": "https://www.instagram.com/reel/DXgFcG3E-UT/",
+        "source": "other",
+        "sourceName": "Instagram · 백석유치원",
+        "snippet": "백석유치원이 자연학습장에서 꼬마 농부들의 텃밭 농사 시작을 소개한 릴스입니다.",
+        "summary": "천안 백석유치원의 자연학습장 텃밭활동과 작물 키우기 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-education",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave739-584b66d6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXgFcG3E-UT/",
+          "normalizedUrl": "instagram.com/reel/dxgfcg3e-ut",
+          "normalizedText": "천안 백석유치원 꼬마 농부 자연학습장 텃밭 농사 작물 키우기",
+          "htmlSnapshotHash": "sns-wave739-584b66d6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXgFcG3E-UT/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave739"
       }
     ],
     "7bd3563c-ce2b-4161-ae7e-3a43a150bba5": [
@@ -9505,6 +9542,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave722"
+      }
+    ],
+    "1ecec08d-0b36-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave739-e5b55fe8",
+        "kindergartenId": "1ecec08d-0b36-b044-e053-0a32095ab044",
+        "title": "충남 서산 우리유치원 고구마 텃밭활동 기록",
+        "url": "https://www.instagram.com/reel/DaCPraFxpaF/",
+        "source": "other",
+        "sourceName": "Instagram · 서산 우리유치원",
+        "snippet": "서산 우리유치원이 유치원 텃밭에서 고구마를 심고 흙을 만지는 자연 경험을 소개한 릴스입니다.",
+        "summary": "서산 우리유치원의 고구마 심기와 텃밭활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-education",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave739-e5b55fe8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCPraFxpaF/",
+          "normalizedUrl": "instagram.com/reel/dacprafxpaf",
+          "normalizedText": "충남 서산 우리유치원 고구마 심기 텃밭활동 자연경험",
+          "htmlSnapshotHash": "sns-wave739-e5b55fe8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCPraFxpaF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave739"
       }
     ]
   },
