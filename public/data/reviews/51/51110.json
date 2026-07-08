@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 75,
+  "totalCount": 76,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -2501,6 +2501,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave703"
+      },
+      {
+        "id": "rev-sns-wave750-6bc8b606",
+        "kindergartenId": "1ecec08c-ff1a-b044-e053-0a32095ab044",
+        "title": "춘천 미래숲유치원 어린이 교통안전교육 기록",
+        "url": "https://www.instagram.com/reel/DQ3NdskCVXP/",
+        "source": "other",
+        "sourceName": "Instagram · 미래숲유치원",
+        "snippet": "미래숲유치원이 춘천유치원 단서와 함께 어린이 교통안전 수칙을 익히는 활동을 소개한 공개 릴스입니다.",
+        "summary": "강원 춘천 미래숲유치원의 교통안전교육과 유아 안전 수칙 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "gangwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave750-6bc8b606",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQ3NdskCVXP/",
+          "normalizedUrl": "instagram.com/reel/dq3ndskcvxp",
+          "normalizedText": "강원 춘천 미래숲유치원 어린이 교통안전 수칙 교육",
+          "htmlSnapshotHash": "sns-wave750-6bc8b606",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DQ3NdskCVXP/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ],
     "1ecec08d-0ebd-b044-e053-0a32095ab044": [

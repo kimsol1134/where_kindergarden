@@ -1,0 +1,45 @@
+{
+  "version": "2026-07-03",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-ff84-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave750-e229211f",
+        "kindergartenId": "1ecec08c-ff84-b044-e053-0a32095ab044",
+        "title": "문경 가은초병설유치원 이동 소방안전체험 기록",
+        "url": "https://www.kbsm.net/news/view.php?idx=514244",
+        "source": "other",
+        "sourceName": "경북신문",
+        "snippet": "가은초등학교병설유치원이 유초 이음 이동 소방 안전 체험 교육을 실시했다는 공개 기사입니다.",
+        "summary": "경북 문경 가은초등학교병설유치원의 화재 대피, 비상 탈출, 소방 안전 체험을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "fire-safety",
+          "elementary-linked-activity",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave750-e229211f",
+        "evidence": {
+          "canonicalUrl": "https://www.kbsm.net/news/view.php?idx=514244",
+          "normalizedUrl": "kbsm.net/news/view.php?idx=514244",
+          "normalizedText": "문경 가은초등학교병설유치원 이동 소방 안전 체험 교육",
+          "htmlSnapshotHash": "sns-wave750-e229211f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.kbsm.net/news/view.php?idx=514244"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
+      }
+    ]
+  }
+}

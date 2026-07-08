@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 25,
-  "kindergartenCount": 8,
+  "totalCount": 26,
+  "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -1142,6 +1142,44 @@
           ]
         },
         "evidenceChecksum": "9767b059"
+      }
+    ],
+    "54a1abfc-3b36-48f7-a142-61ca9623888f": [
+      {
+        "id": "rev-sns-wave750-f445a594",
+        "kindergartenId": "54a1abfc-3b36-48f7-a142-61ca9623888f",
+        "title": "부산 개포초병설유치원 지진대피훈련 기록",
+        "url": "https://school.busanedu.net/gaepo-k/main.do",
+        "source": "other",
+        "sourceName": "개포초등학교병설유치원",
+        "snippet": "개포초등학교병설유치원 홈페이지 유치원행사에 7월 1일 지진대피훈련 실시가 공개된 자료입니다.",
+        "summary": "부산진구 개포초등학교병설유치원의 지진대피훈련과 안전 관련 유치원 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "school-homepage",
+          "address-not-required",
+          "earthquake-drill",
+          "safety-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:school-homepage-snippet",
+        "evidenceChecksum": "sns-wave750-f445a594",
+        "evidence": {
+          "canonicalUrl": "https://school.busanedu.net/gaepo-k/main.do",
+          "normalizedUrl": "school.busanedu.net/gaepo-k/main.do",
+          "normalizedText": "부산 개포초등학교병설유치원 7월 1일 지진대피훈련 실시",
+          "htmlSnapshotHash": "sns-wave750-f445a594",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://school.busanedu.net/gaepo-k/main.do"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ]
   },

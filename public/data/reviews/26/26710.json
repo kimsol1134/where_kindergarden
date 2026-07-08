@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 21,
+  "totalCount": 22,
   "kindergartenCount": 6,
   "reviews": {
     "1fc6dd86-ccc1-d1d2-e053-0a32095ad1d2": [
@@ -975,6 +975,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:40:00.000Z",
         "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
+        "id": "rev-sns-wave750-89a88c97",
+        "kindergartenId": "1ecec08c-f595-b044-e053-0a32095ab044",
+        "title": "부산 정관유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DWp4Ojhj_lm/",
+        "source": "other",
+        "sourceName": "Instagram · 정관유치원",
+        "snippet": "정관유치원이 화재 대피 훈련을 진행하며 질서 있는 대피 활동을 소개한 공개 릴스입니다.",
+        "summary": "부산 기장군 정관유치원의 화재대피훈련과 유아 안전 생활 교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave750-89a88c97",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWp4Ojhj_lm/",
+          "normalizedUrl": "instagram.com/reel/dwp4ojhj_lm",
+          "normalizedText": "부산 정관유치원 화재 대피 훈련 질서 안전교육",
+          "htmlSnapshotHash": "sns-wave750-89a88c97",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWp4Ojhj_lm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ]
   }

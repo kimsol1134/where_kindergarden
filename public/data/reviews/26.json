@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 375,
-  "kindergartenCount": 97,
+  "totalCount": 377,
+  "kindergartenCount": 98,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
       {
@@ -16558,6 +16558,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:40:00.000Z",
         "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
+        "id": "rev-sns-wave750-89a88c97",
+        "kindergartenId": "1ecec08c-f595-b044-e053-0a32095ab044",
+        "title": "부산 정관유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DWp4Ojhj_lm/",
+        "source": "other",
+        "sourceName": "Instagram · 정관유치원",
+        "snippet": "정관유치원이 화재 대피 훈련을 진행하며 질서 있는 대피 활동을 소개한 공개 릴스입니다.",
+        "summary": "부산 기장군 정관유치원의 화재대피훈련과 유아 안전 생활 교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave750-89a88c97",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWp4Ojhj_lm/",
+          "normalizedUrl": "instagram.com/reel/dwp4ojhj_lm",
+          "normalizedText": "부산 정관유치원 화재 대피 훈련 질서 안전교육",
+          "htmlSnapshotHash": "sns-wave750-89a88c97",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWp4Ojhj_lm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ],
     "1ecec08d-0b5a-b044-e053-0a32095ab044": [
@@ -17446,6 +17482,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave735"
+      }
+    ],
+    "54a1abfc-3b36-48f7-a142-61ca9623888f": [
+      {
+        "id": "rev-sns-wave750-f445a594",
+        "kindergartenId": "54a1abfc-3b36-48f7-a142-61ca9623888f",
+        "title": "부산 개포초병설유치원 지진대피훈련 기록",
+        "url": "https://school.busanedu.net/gaepo-k/main.do",
+        "source": "other",
+        "sourceName": "개포초등학교병설유치원",
+        "snippet": "개포초등학교병설유치원 홈페이지 유치원행사에 7월 1일 지진대피훈련 실시가 공개된 자료입니다.",
+        "summary": "부산진구 개포초등학교병설유치원의 지진대피훈련과 안전 관련 유치원 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "school-homepage",
+          "address-not-required",
+          "earthquake-drill",
+          "safety-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:school-homepage-snippet",
+        "evidenceChecksum": "sns-wave750-f445a594",
+        "evidence": {
+          "canonicalUrl": "https://school.busanedu.net/gaepo-k/main.do",
+          "normalizedUrl": "school.busanedu.net/gaepo-k/main.do",
+          "normalizedText": "부산 개포초등학교병설유치원 7월 1일 지진대피훈련 실시",
+          "htmlSnapshotHash": "sns-wave750-f445a594",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://school.busanedu.net/gaepo-k/main.do"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ]
   },
