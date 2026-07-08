@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 136,
+  "totalCount": 137,
   "kindergartenCount": 46,
   "reviews": {
     "1ecec08c-f174-b044-e053-0a32095ab044": [
@@ -4971,6 +4971,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave739"
+      },
+      {
+        "id": "rev-sns-wave747-575e6ec5",
+        "kindergartenId": "1ecec08c-fd9f-b044-e053-0a32095ab044",
+        "title": "울산 연세자연유치원 텃밭 주키니호박 수확 기록",
+        "url": "https://www.instagram.com/reel/DZUYXEuTiwE/",
+        "source": "other",
+        "sourceName": "Instagram · 연세자연유치원",
+        "snippet": "연세자연유치원이 텃밭에서 주키니호박을 수확한 소식을 소개한 공개 릴스입니다.",
+        "summary": "울산 울주군 연세자연유치원의 텃밭 수확 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-harvest",
+          "ecology-activity",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-575e6ec5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZUYXEuTiwE/",
+          "normalizedUrl": "instagram.com/reel/dzuyxeutiwe",
+          "normalizedText": "울산 연세자연유치원 텃밭 주키니호박 수확",
+          "htmlSnapshotHash": "sns-wave747-575e6ec5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZUYXEuTiwE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "1ecec08c-fe75-b044-e053-0a32095ab044": [

@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 18,
-  "kindergartenCount": 9,
+  "totalCount": 19,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0322-b044-e053-0a32095ab044": [
       {
@@ -732,6 +732,45 @@
         "approvedAt": "2026-07-02T21:15:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0303-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave747-b27a9edb",
+        "kindergartenId": "1ecec08d-0303-b044-e053-0a32095ab044",
+        "title": "광명동초병설유치원 감자 수확 기록",
+        "url": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622",
+        "source": "other",
+        "sourceName": "광명일보",
+        "snippet": "광명동초등학교병설유치원이 유치원 텃밭에서 감자 수확 체험을 진행했다는 공개 기사입니다.",
+        "summary": "경기 광명시 광명동초등학교병설유치원의 생태전환교육과 감자 수확 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "garden-harvest",
+          "ecology-activity",
+          "gwangmyeong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave747-b27a9edb",
+        "evidence": {
+          "canonicalUrl": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622",
+          "normalizedUrl": "gmilbo.co.kr/news/articleview.html?idxno=28622",
+          "normalizedText": "광명동초등학교병설유치원 꼬마농부 감자 수확 생태전환교육",
+          "htmlSnapshotHash": "sns-wave747-b27a9edb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

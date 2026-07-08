@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 13,
-  "kindergartenCount": 6,
+  "totalCount": 14,
+  "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0ead-b044-e053-0a32095ab044": [
       {
@@ -672,6 +672,45 @@
         "approvedAt": "2026-07-03T18:25:00.000Z",
         "approvedBy": "codex-manual-sns-wave668"
       }
+    ],
+    "1ecec08c-f0ec-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave747-20156a4d",
+        "kindergartenId": "1ecec08c-f0ec-b044-e053-0a32095ab044",
+        "title": "제주 노형초병설유치원 여름 텃밭 수확 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=117478",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "노형초등학교병설유치원이 자연과 함께 자라는 여름 텃밭 수확의 날을 운영했다는 공개 기사입니다.",
+        "summary": "제주 노형초등학교병설유치원의 텃밭 수확과 생태환경 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "garden-harvest",
+          "ecology-activity",
+          "jeju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave747-20156a4d",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=117478",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=117478",
+          "normalizedText": "제주 노형초등학교병설유치원 여름 텃밭 수확의 날 생태환경",
+          "htmlSnapshotHash": "sns-wave747-20156a4d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=117478"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

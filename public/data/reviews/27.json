@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 561,
+  "totalCount": 562,
   "kindergartenCount": 124,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -18190,6 +18190,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:35:00.000Z",
         "approvedBy": "codex-manual-sns-wave673"
+      },
+      {
+        "id": "rev-sns-wave747-5d021e38",
+        "kindergartenId": "1ecec08c-f9c8-b044-e053-0a32095ab044",
+        "title": "대구 아이러브유치원 텃밭 이야기 기록",
+        "url": "https://www.instagram.com/p/DaXw_OGE2CJ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이러브유치원",
+        "snippet": "아이러브유치원이 텃밭에서 고추, 가지, 오이, 토마토가 자라는 모습을 소개한 공개 게시물입니다.",
+        "summary": "대구 북구 아이러브유치원의 텃밭 가꾸기와 자연 관찰 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "nature-observation",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-5d021e38",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaXw_OGE2CJ/",
+          "normalizedUrl": "instagram.com/p/daxw_oge2cj",
+          "normalizedText": "대구 아이러브유치원 텃밭 고추 가지 오이 토마토 자연관찰",
+          "htmlSnapshotHash": "sns-wave747-5d021e38",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaXw_OGE2CJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "1ecec08c-f6fc-b044-e053-0a32095ab044": [

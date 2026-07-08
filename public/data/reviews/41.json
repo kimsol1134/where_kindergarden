@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1350,
-  "kindergartenCount": 496,
+  "totalCount": 1353,
+  "kindergartenCount": 497,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -18036,6 +18036,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave746"
+      },
+      {
+        "id": "rev-sns-wave747-92425bec",
+        "kindergartenId": "1ecec08d-0f92-b044-e053-0a32095ab044",
+        "title": "의정부 성모유치원 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/DaCw2BoJ8PE/",
+        "source": "other",
+        "sourceName": "Instagram · 성모유치원",
+        "snippet": "의정부 성모유치원이 물건을 사고파는 즐거움이 있는 시장놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "경기 의정부시 성모유치원의 시장놀이와 유치원 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "social-play",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-92425bec",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCw2BoJ8PE/",
+          "normalizedUrl": "instagram.com/reel/dacw2boj8pe",
+          "normalizedText": "의정부 성모유치원 시장놀이 물건 사고팔기",
+          "htmlSnapshotHash": "sns-wave747-92425bec",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCw2BoJ8PE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "1ecec08c-ee60-b044-e053-0a32095ab044": [
@@ -53401,6 +53438,81 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave746"
+      },
+      {
+        "id": "rev-sns-wave747-c8e47f6d",
+        "kindergartenId": "1ecec08c-f601-b044-e053-0a32095ab044",
+        "title": "의정부 예지유치원 시장놀이 기록",
+        "url": "https://www.instagram.com/p/DaUZP-bASuj/",
+        "source": "other",
+        "sourceName": "Instagram · 예지유치원",
+        "snippet": "예지유치원이 채소가게와 책방 등 다양한 상점으로 꾸민 시장놀이 현장을 소개한 공개 게시물입니다.",
+        "summary": "경기 의정부시 예지유치원의 시장놀이와 생활주제 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "social-play",
+          "uijeongbu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-c8e47f6d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaUZP-bASuj/",
+          "normalizedUrl": "instagram.com/p/dauzp-basuj",
+          "normalizedText": "의정부 예지유치원 시장놀이 채소가게 책방",
+          "htmlSnapshotHash": "sns-wave747-c8e47f6d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaUZP-bASuj/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
+      }
+    ],
+    "1ecec08d-0303-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave747-b27a9edb",
+        "kindergartenId": "1ecec08d-0303-b044-e053-0a32095ab044",
+        "title": "광명동초병설유치원 감자 수확 기록",
+        "url": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622",
+        "source": "other",
+        "sourceName": "광명일보",
+        "snippet": "광명동초등학교병설유치원이 유치원 텃밭에서 감자 수확 체험을 진행했다는 공개 기사입니다.",
+        "summary": "경기 광명시 광명동초등학교병설유치원의 생태전환교육과 감자 수확 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "garden-harvest",
+          "ecology-activity",
+          "gwangmyeong"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave747-b27a9edb",
+        "evidence": {
+          "canonicalUrl": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622",
+          "normalizedUrl": "gmilbo.co.kr/news/articleview.html?idxno=28622",
+          "normalizedText": "광명동초등학교병설유치원 꼬마농부 감자 수확 생태전환교육",
+          "htmlSnapshotHash": "sns-wave747-b27a9edb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.gmilbo.co.kr/news/articleView.html?idxno=28622"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ]
   },

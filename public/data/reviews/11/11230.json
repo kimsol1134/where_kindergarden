@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 51,
+  "totalCount": 52,
   "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-04a0-b044-e053-0a32095ab044": [
@@ -1750,6 +1750,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave721"
+      },
+      {
+        "id": "rev-sns-wave747-538e8a91",
+        "kindergartenId": "663b5e8a-86f7-433a-bedd-f46a8bd1c7b1",
+        "title": "서울 장안동 정원유치원 텃밭 모종심기 기록",
+        "url": "https://www.instagram.com/reel/DYLRi23B4Xi/",
+        "source": "other",
+        "sourceName": "Instagram · 정원유치원",
+        "snippet": "장안동 정원유치원이 텃밭에서 모종 이야기를 듣고 채소 모종을 심는 활동을 소개한 공개 릴스입니다.",
+        "summary": "서울 동대문구 정원유치원의 텃밭 채소 활동과 생태 프로젝트를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-538e8a91",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYLRi23B4Xi/",
+          "normalizedUrl": "instagram.com/reel/dylri23b4xi",
+          "normalizedText": "서울 장안동 정원유치원 텃밭 모종심기 꼬마농부 생태탐험",
+          "htmlSnapshotHash": "sns-wave747-538e8a91",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYLRi23B4Xi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "1ecec08c-ed83-b044-e053-0a32095ab044": [

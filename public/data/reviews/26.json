@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 374,
+  "totalCount": 375,
   "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -17096,6 +17096,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave706"
+      },
+      {
+        "id": "rev-sns-wave747-a08864ac",
+        "kindergartenId": "abd1dd2d-e965-4e96-865f-661d34966498",
+        "title": "부산 지산유치원 텃밭 근황 기록",
+        "url": "https://www.instagram.com/reel/DaR9wEVzMam/",
+        "source": "other",
+        "sourceName": "Instagram · 지산유치원",
+        "snippet": "지산유치원이 씨를 뿌리고 가꾸는 텃밭활동과 애플 수박이 자라는 모습을 소개한 공개 릴스입니다.",
+        "summary": "부산 사하구 지산유치원의 텃밭 가꾸기와 자연 탐색 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "nature-observation",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-a08864ac",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaR9wEVzMam/",
+          "normalizedUrl": "instagram.com/reel/dar9wevzmam",
+          "normalizedText": "부산 지산유치원 텃밭활동 애플수박 자연관찰",
+          "htmlSnapshotHash": "sns-wave747-a08864ac",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaR9wEVzMam/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "82f20b40-6aac-477b-83fe-637a7b9fde82": [

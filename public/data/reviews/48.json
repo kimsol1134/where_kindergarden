@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 294,
+  "totalCount": 295,
   "kindergartenCount": 104,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -12842,6 +12842,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave747-911e7fb2",
+        "kindergartenId": "1ecec08d-01a2-b044-e053-0a32095ab044",
+        "title": "거제 고현유치원 텃밭 수확 기록",
+        "url": "https://www.instagram.com/p/DZ4KoG_lCYm/",
+        "source": "other",
+        "sourceName": "Instagram · 고현유치원",
+        "snippet": "고현유치원이 유치원 텃밭에 찾아온 반가운 수확과 아이들이 함께 가꾼 작물 이야기를 소개한 공개 게시물입니다.",
+        "summary": "경남 거제시 고현유치원의 텃밭 수확과 생태 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-harvest",
+          "ecology-activity",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave747-911e7fb2",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ4KoG_lCYm/",
+          "normalizedUrl": "instagram.com/p/dz4kog_lcym",
+          "normalizedText": "거제 고현유치원 텃밭 수확 아이들과 가꾼 작물",
+          "htmlSnapshotHash": "sns-wave747-911e7fb2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ4KoG_lCYm/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ],
     "1ecec08c-f823-b044-e053-0a32095ab044": [

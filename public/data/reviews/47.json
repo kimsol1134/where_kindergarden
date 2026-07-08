@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 373,
-  "kindergartenCount": 115,
+  "totalCount": 374,
+  "kindergartenCount": 116,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -16893,6 +16893,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
+      }
+    ],
+    "1ecec08d-0479-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave747-90b6a2c5",
+        "kindergartenId": "1ecec08d-0479-b044-e053-0a32095ab044",
+        "title": "영주 봉현초병설유치원 유초이음 시장놀이 기록",
+        "url": "https://www.dkitnews.com/396237",
+        "source": "other",
+        "sourceName": "경북다경뉴스",
+        "snippet": "봉현초등학교병설유치원이 유치원과 1학년 학생들을 대상으로 시장놀이를 실시했다는 공개 기사입니다.",
+        "summary": "경북 영주시 봉현초등학교병설유치원의 유초이음 시장놀이 교육활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "market-play",
+          "elementary-linked-activity",
+          "yeongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave747-90b6a2c5",
+        "evidence": {
+          "canonicalUrl": "https://www.dkitnews.com/396237",
+          "normalizedUrl": "dkitnews.com/396237",
+          "normalizedText": "영주 봉현초등학교병설유치원 유초이음교육 시장놀이 실시",
+          "htmlSnapshotHash": "sns-wave747-90b6a2c5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dkitnews.com/396237"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave747"
       }
     ]
   },
