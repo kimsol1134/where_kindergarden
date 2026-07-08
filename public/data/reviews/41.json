@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1354,
-  "kindergartenCount": 497,
+  "totalCount": 1356,
+  "kindergartenCount": 498,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
       {
@@ -51459,6 +51459,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave749-dc3fbe0a",
+        "kindergartenId": "7becaeed-4a14-4d90-83de-95b9c6e33c44",
+        "title": "수원 매교초병설유치원 스마트팜 생태환경교육 기록",
+        "url": "https://www.edpl.co.kr/news/articleView.html?idxno=20716",
+        "source": "other",
+        "sourceName": "교육플러스",
+        "snippet": "매교초등학교병설유치원이 스마트팜과 업사이클링 체험을 결합한 생태환경교육 프로그램을 운영한다는 공개 기사입니다.",
+        "summary": "경기 수원 매교초등학교병설유치원의 방과후과정 특색프로그램과 오감 생태체험 운영을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "smart-farm",
+          "eco-education",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-dc3fbe0a",
+        "evidence": {
+          "canonicalUrl": "https://www.edpl.co.kr/news/articleView.html?idxno=20716",
+          "normalizedUrl": "edpl.co.kr/news/articleview.html?idxno=20716",
+          "normalizedText": "수원 매교초등학교병설유치원 스마트팜 오감 생태체험 환경교육",
+          "htmlSnapshotHash": "sns-wave749-dc3fbe0a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.edpl.co.kr/news/articleView.html?idxno=20716"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ],
     "1ecec08d-0789-b044-e053-0a32095ab044": [
@@ -53550,6 +53586,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave747"
+      }
+    ],
+    "1ecec08d-0180-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-f3366d66",
+        "kindergartenId": "1ecec08d-0180-b044-e053-0a32095ab044",
+        "title": "안산 대동초병설유치원 그린 스마트팜 체험 기록",
+        "url": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
+        "source": "other",
+        "sourceName": "투데이안산",
+        "snippet": "대동초등학교병설유치원이 그린 스마트팜에서 디지털 생태체험을 진행했다는 공개 기사입니다.",
+        "summary": "경기 안산 대동초등학교병설유치원의 유초 이음형 스마트팜 체험활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "smart-farm",
+          "digital-eco",
+          "gyeonggi"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-f3366d66",
+        "evidence": {
+          "canonicalUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
+          "normalizedUrl": "todayansan.co.kr/news/articleview.html?idxno=36670",
+          "normalizedText": "안산 대동초등학교병설유치원 그린 스마트팜 디지털 생태체험",
+          "htmlSnapshotHash": "sns-wave749-f3366d66",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 74,
+  "totalCount": 75,
   "kindergartenCount": 12,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
@@ -3121,6 +3121,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave749-d53ee3bb",
+        "kindergartenId": "1ecec08d-047b-b044-e053-0a32095ab044",
+        "title": "춘천 교동초병설유치원 환경교육 실천 기록",
+        "url": "https://www.ywmedia.kr/news/articleView.html?idxno=35127",
+        "source": "other",
+        "sourceName": "YW미디어",
+        "snippet": "춘천 교동초등학교병설유치원이 강원 환경교육 실천 학교 사업으로 지구의 날 캠페인 활동을 진행했다는 공개 기사입니다.",
+        "summary": "강원 춘천 교동초등학교병설유치원의 생태전환교육과 유초 이음 환경 캠페인을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "environment-education",
+          "campaign",
+          "gangwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-d53ee3bb",
+        "evidence": {
+          "canonicalUrl": "https://www.ywmedia.kr/news/articleView.html?idxno=35127",
+          "normalizedUrl": "ywmedia.kr/news/articleview.html?idxno=35127",
+          "normalizedText": "춘천 교동초등학교병설유치원 강원 환경교육 실천 학교 지구의 날 캠페인",
+          "htmlSnapshotHash": "sns-wave749-d53ee3bb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.ywmedia.kr/news/articleView.html?idxno=35127"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },

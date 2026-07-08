@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 215,
-  "kindergartenCount": 64,
+  "totalCount": 217,
+  "kindergartenCount": 65,
   "reviews": {
     "1ecec08d-0b32-b044-e053-0a32095ab044": [
       {
@@ -5684,6 +5684,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T18:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave749-1cdaee56",
+        "kindergartenId": "1ecec08d-0893-b044-e053-0a32095ab044",
+        "title": "천안 대한유치원 뮤지컬 관람 기록",
+        "url": "https://www.instagram.com/reel/DYzU7H9tSj1/",
+        "source": "other",
+        "sourceName": "Instagram · 천안 대한유치원",
+        "snippet": "천안 대한유치원이 소중한 나를 알려주는 뮤지컬 관람 활동을 소개한 공개 릴스입니다.",
+        "summary": "충남 천안 대한유치원의 인성교육 연계 뮤지컬 관람 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "musical-viewing",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave749-1cdaee56",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYzU7H9tSj1/",
+          "normalizedUrl": "instagram.com/reel/dyzu7h9tsj1",
+          "normalizedText": "천안 대한유치원 소중한 나를 알려주는 뮤지컬 관람",
+          "htmlSnapshotHash": "sns-wave749-1cdaee56",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYzU7H9tSj1/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ],
     "1ecec08c-f725-b044-e053-0a32095ab044": [
@@ -9655,6 +9691,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave739"
+      }
+    ],
+    "1ecec08d-0ac8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-3e7d40a2",
+        "kindergartenId": "1ecec08d-0ac8-b044-e053-0a32095ab044",
+        "title": "예산 용동초병설유치원 숲체험학습 기록",
+        "url": "https://v.daum.net/v/ygFkTYpXsX",
+        "source": "other",
+        "sourceName": "Daum 뉴스",
+        "snippet": "용동초등학교병설유치원이 예산 향천사 일원에서 숲체험학습을 진행했다는 공개 기사입니다.",
+        "summary": "충남 예산 용동초등학교병설유치원의 숲길 관찰, 오감 체험, 협동 놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "forest-activity",
+          "eco-education",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-3e7d40a2",
+        "evidence": {
+          "canonicalUrl": "https://v.daum.net/v/ygFkTYpXsX",
+          "normalizedUrl": "v.daum.net/v/ygfktypxsx",
+          "normalizedText": "예산 용동초등학교병설유치원 숲체험학습 향천사 오감 체험",
+          "htmlSnapshotHash": "sns-wave749-3e7d40a2",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://v.daum.net/v/ygFkTYpXsX"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },

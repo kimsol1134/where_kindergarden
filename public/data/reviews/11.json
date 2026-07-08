@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 719,
-  "kindergartenCount": 250,
+  "totalCount": 721,
+  "kindergartenCount": 251,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -1504,6 +1504,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave744"
+      },
+      {
+        "id": "rev-sns-wave749-99e07a83",
+        "kindergartenId": "1ecec08d-06b6-b044-e053-0a32095ab044",
+        "title": "서울 우촌유치원 운동회 기록",
+        "url": "https://www.instagram.com/p/DZ7uU91EnTB/",
+        "source": "other",
+        "sourceName": "Instagram · 우촌유치원",
+        "snippet": "우촌유치원이 운동회 활동을 소개한 공개 게시물입니다.",
+        "summary": "서울 성북구 우촌유치원의 2026년 운동회 활동과 가족 참여 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave749-99e07a83",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ7uU91EnTB/",
+          "normalizedUrl": "instagram.com/p/dz7uu91entb",
+          "normalizedText": "서울 우촌유치원 2026 유치원 운동회",
+          "htmlSnapshotHash": "sns-wave749-99e07a83",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ7uU91EnTB/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ],
     "1ecec08c-f9b9-b044-e053-0a32095ab044": [
@@ -27009,6 +27045,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave741"
+      }
+    ],
+    "1ecec08c-f3e4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-3a333f3d",
+        "kindergartenId": "1ecec08c-f3e4-b044-e053-0a32095ab044",
+        "title": "서울 새두산유치원 방문뮤지컬 관람 기록",
+        "url": "https://www.threads.com/@baram_play/post/DaHLP2ok8bk/",
+        "source": "other",
+        "sourceName": "Threads · 극단 바람",
+        "snippet": "극단 바람이 새두산유치원 방문 공연 후 시설과 선생님, 아이들의 관람 반응을 소개한 공개 Threads 게시물입니다.",
+        "summary": "서울 구로구 새두산유치원의 방문뮤지컬 관람 활동과 공연 참여 분위기를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "musical-performance",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave749-3a333f3d",
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@baram_play/post/DaHLP2ok8bk/",
+          "normalizedUrl": "threads.com/@baram_play/post/dahlp2ok8bk",
+          "normalizedText": "서울 새두산유치원 방문뮤지컬 시설 선생님 관람 반응",
+          "htmlSnapshotHash": "sns-wave749-3a333f3d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.threads.com/@baram_play/post/DaHLP2ok8bk/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },

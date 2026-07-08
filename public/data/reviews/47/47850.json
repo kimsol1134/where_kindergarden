@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 17,
-  "kindergartenCount": 7,
+  "totalCount": 18,
+  "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-fbb3-b044-e053-0a32095ab044": [
       {
@@ -829,6 +829,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave716"
+      }
+    ],
+    "1ecec08c-fb9b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-61d81c45",
+        "kindergartenId": "1ecec08c-fb9b-b044-e053-0a32095ab044",
+        "title": "칠곡 낙산초병설유치원 숲놀이 현장체험학습 기록",
+        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
+        "source": "other",
+        "sourceName": "경북일보",
+        "snippet": "낙산초등학교병설유치원이 국립칠곡숲체원에서 숲놀이 현장체험학습을 운영했다는 공개 기사입니다.",
+        "summary": "경북 칠곡 낙산초등학교병설유치원의 생태체험과 지속가능발전교육 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "forest-play",
+          "field-trip",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-61d81c45",
+        "evidence": {
+          "canonicalUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
+          "normalizedUrl": "kyongbuk.co.kr/news/articleview.html?idxno=4075120",
+          "normalizedText": "칠곡 낙산초등학교병설유치원 국립칠곡숲체원 숲놀이 현장체험학습",
+          "htmlSnapshotHash": "sns-wave749-61d81c45",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },

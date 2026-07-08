@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 374,
-  "kindergartenCount": 116,
+  "totalCount": 377,
+  "kindergartenCount": 119,
   "reviews": {
     "1ecec08d-0007-b044-e053-0a32095ab044": [
       {
@@ -16931,6 +16931,120 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave747"
+      }
+    ],
+    "1ecec08c-fb9b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-61d81c45",
+        "kindergartenId": "1ecec08c-fb9b-b044-e053-0a32095ab044",
+        "title": "칠곡 낙산초병설유치원 숲놀이 현장체험학습 기록",
+        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
+        "source": "other",
+        "sourceName": "경북일보",
+        "snippet": "낙산초등학교병설유치원이 국립칠곡숲체원에서 숲놀이 현장체험학습을 운영했다는 공개 기사입니다.",
+        "summary": "경북 칠곡 낙산초등학교병설유치원의 생태체험과 지속가능발전교육 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "forest-play",
+          "field-trip",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-61d81c45",
+        "evidence": {
+          "canonicalUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
+          "normalizedUrl": "kyongbuk.co.kr/news/articleview.html?idxno=4075120",
+          "normalizedText": "칠곡 낙산초등학교병설유치원 국립칠곡숲체원 숲놀이 현장체험학습",
+          "htmlSnapshotHash": "sns-wave749-61d81c45",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
+      }
+    ],
+    "1ecec08c-f73d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-3edaa54e",
+        "kindergartenId": "1ecec08c-f73d-b044-e053-0a32095ab044",
+        "title": "의성 도리원초병설유치원 스마트팜 딸기 체험 기록",
+        "url": "https://v.daum.net/v/20260407182232749",
+        "source": "other",
+        "sourceName": "Daum 뉴스 · 경북일보",
+        "snippet": "도리원초등학교병설유치원이 의성 지역 병설유치원과 함께 딸기 농장에서 스마트팜 체험활동을 운영했다는 공개 기사입니다.",
+        "summary": "경북 의성 도리원초등학교병설유치원의 공동교육과정과 스마트팜 농업 체험을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "smart-farm",
+          "strawberry-activity",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-3edaa54e",
+        "evidence": {
+          "canonicalUrl": "https://v.daum.net/v/20260407182232749",
+          "normalizedUrl": "v.daum.net/v/20260407182232749",
+          "normalizedText": "의성 도리원초등학교병설유치원 스마트팜 딸기 체험 공동교육과정",
+          "htmlSnapshotHash": "sns-wave749-3edaa54e",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://v.daum.net/v/20260407182232749"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
+      }
+    ],
+    "1ecec08d-0431-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave749-081ffd35",
+        "kindergartenId": "1ecec08d-0431-b044-e053-0a32095ab044",
+        "title": "의성 단촌초병설유치원 생태전환교육 기록",
+        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4074813",
+        "source": "other",
+        "sourceName": "경북일보",
+        "snippet": "단촌초등학교병설유치원이 점곡초병설유치원과 함께 산운생태공원에서 생태전환교육 현장체험학습을 진행했다는 공개 기사입니다.",
+        "summary": "경북 의성 단촌초등학교병설유치원의 탄소중립 실천, 텃밭 가꾸기, 반려화분 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "web",
+          "news",
+          "address-not-required",
+          "eco-transition",
+          "carbon-neutral",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-081ffd35",
+        "evidence": {
+          "canonicalUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4074813",
+          "normalizedUrl": "kyongbuk.co.kr/news/articleview.html?idxno=4074813",
+          "normalizedText": "의성 단촌초등학교병설유치원 생태전환교육 산운생태공원 탄소중립",
+          "htmlSnapshotHash": "sns-wave749-081ffd35",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4074813"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ]
   },
