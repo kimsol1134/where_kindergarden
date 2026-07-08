@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 29,
+  "totalCount": 30,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
@@ -1197,6 +1197,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T20:10:00.000Z",
         "approvedBy": "codex-manual-sns-wave672"
+      },
+      {
+        "id": "rev-sns-wave748-fb7f5aae",
+        "kindergartenId": "1ecec08c-fe6c-b044-e053-0a32095ab044",
+        "title": "대전 용운유치원 특별활동 코딩 기록",
+        "url": "https://www.instagram.com/reel/DO8CFUbCcqp/",
+        "source": "other",
+        "sourceName": "Instagram · 용운유치원",
+        "snippet": "용운유치원이 특별활동으로 코딩 활동을 소개한 공개 릴스입니다.",
+        "summary": "대전 동구 용운유치원의 코딩 특별활동과 디지털 교육 구성을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "coding-activity",
+          "special-activity",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave748-fb7f5aae",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DO8CFUbCcqp/",
+          "normalizedUrl": "instagram.com/reel/do8cfubccqp",
+          "normalizedText": "대전 용운유치원 특별활동 코딩 디지털 교육",
+          "htmlSnapshotHash": "sns-wave748-fb7f5aae",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DO8CFUbCcqp/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave748"
       }
     ],
     "1ecec08c-f487-b044-e053-0a32095ab044": [

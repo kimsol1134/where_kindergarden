@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 79,
+  "totalCount": 81,
   "kindergartenCount": 22,
   "reviews": {
     "1ecec08d-03f2-b044-e053-0a32095ab044": [
@@ -836,6 +836,43 @@
         "date": "2025-11-04",
         "collectedAt": "2026-02-18T06:13:58.374Z",
         "relevanceScore": 7
+      },
+      {
+        "id": "rev-sns-wave748-cd523dac",
+        "kindergartenId": "1ecec08d-0afe-b044-e053-0a32095ab044",
+        "title": "인천 논현동 브레인유치원 AI로봇체험 기록",
+        "url": "https://www.instagram.com/reel/DacmdYFh2hp/",
+        "source": "other",
+        "sourceName": "Instagram · 브레인유치원",
+        "snippet": "브레인유치원이 인천 논현동 단서와 함께 AI로봇체험 활동을 소개한 공개 릴스입니다.",
+        "summary": "인천 남동구 브레인유치원의 AI 로봇 체험과 유아 디지털 놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ai-robot",
+          "digital-play",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave748-cd523dac",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DacmdYFh2hp/",
+          "normalizedUrl": "instagram.com/reel/dacmdyfh2hp",
+          "normalizedText": "인천 논현동 브레인유치원 AI로봇체험 유아 디지털 놀이",
+          "htmlSnapshotHash": "sns-wave748-cd523dac",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DacmdYFh2hp/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave748"
       }
     ],
     "1ecec08d-0ef8-b044-e053-0a32095ab044": [
@@ -3129,6 +3166,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T10:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave748-ae65339d",
+        "kindergartenId": "1ecec08c-f198-b044-e053-0a32095ab044",
+        "title": "인천 프라임예지유치원 입학기념 로봇데이 기록",
+        "url": "https://www.instagram.com/p/DWF04aCk3gR/",
+        "source": "other",
+        "sourceName": "Instagram · 프라임예지유치원",
+        "snippet": "프라임예지유치원이 새 학기 첫 등원과 입학기념 로봇데이 활동을 소개한 공개 게시물입니다.",
+        "summary": "인천 남동구 프라임예지유치원의 입학기념 로봇 체험 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "robot-day",
+          "entrance-activity",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave748-ae65339d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWF04aCk3gR/",
+          "normalizedUrl": "instagram.com/p/dwf04ack3gr",
+          "normalizedText": "인천 프라임예지유치원 입학기념 로봇데이 새 학기 첫 등원",
+          "htmlSnapshotHash": "sns-wave748-ae65339d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWF04aCk3gR/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave748"
       }
     ],
     "1ecec08d-0a17-b044-e053-0a32095ab044": [

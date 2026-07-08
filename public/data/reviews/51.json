@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 172,
-  "kindergartenCount": 46,
+  "totalCount": 173,
+  "kindergartenCount": 47,
   "reviews": {
     "7b8827db-706c-4ee2-a327-73af24ca111a": [
       {
@@ -7716,6 +7716,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T17:55:00.000Z",
         "approvedBy": "codex-manual-sns-wave667"
+      }
+    ],
+    "1ecec08c-f939-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave748-172b565f",
+        "kindergartenId": "1ecec08c-f939-b044-e053-0a32095ab044",
+        "title": "강원 삼척누리유치원 AI 코딩 부모참여수업 기록",
+        "url": "https://www.instagram.com/p/DaMrEbLA34P/",
+        "source": "other",
+        "sourceName": "Instagram · 삼척누리유치원",
+        "snippet": "삼척누리유치원이 AI 코딩을 주제로 부모참여수업을 진행한 공개 게시물입니다.",
+        "summary": "강원 삼척누리유치원의 AI 코딩 기반 부모참여수업과 유아 디지털 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ai-coding",
+          "parent-participation",
+          "gangwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave748-172b565f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMrEbLA34P/",
+          "normalizedUrl": "instagram.com/p/damrebla34p",
+          "normalizedText": "강원 삼척누리유치원 AI 코딩 부모참여수업",
+          "htmlSnapshotHash": "sns-wave748-172b565f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMrEbLA34P/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave748"
       }
     ]
   },
