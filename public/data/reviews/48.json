@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 290,
+  "totalCount": 291,
   "kindergartenCount": 104,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -8034,6 +8034,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.997Z",
         "approvedBy": "codex-manual-sns-wave700"
+      },
+      {
+        "id": "rev-sns-wave738-d50bbcb4",
+        "kindergartenId": "1ecec08c-f98f-b044-e053-0a32095ab044",
+        "title": "진주 아이소크라테스유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DZWFMDbz6JZ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이소크라테스유치원",
+        "snippet": "아이소크라테스유치원이 평거119 안전센터와 함께 소방대피훈련을 진행한 릴스입니다.",
+        "summary": "진주 아이소크라테스유치원의 소방대피훈련과 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "gyeongnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave738-d50bbcb4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZWFMDbz6JZ/",
+          "normalizedUrl": "instagram.com/reel/dzwfmdbz6jz",
+          "normalizedText": "진주 아이소크라테스유치원 소방대피훈련 평거119 안전교육",
+          "htmlSnapshotHash": "sns-wave738-d50bbcb4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZWFMDbz6JZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave738"
       }
     ],
     "1ecec08d-0805-b044-e053-0a32095ab044": [
