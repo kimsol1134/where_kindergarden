@@ -1,7 +1,7 @@
 {
   "version": "2026-07-03",
-  "totalCount": 708,
-  "kindergartenCount": 248,
+  "totalCount": 710,
+  "kindergartenCount": 250,
   "reviews": {
     "754b5130-c93d-4df4-a9b9-526238f20cd2": [
       {
@@ -26599,6 +26599,83 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave732"
+      }
+    ],
+    "1ecec08d-01d7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave741-5d1c8164",
+        "kindergartenId": "1ecec08d-01d7-b044-e053-0a32095ab044",
+        "title": "서울 강동 은새유치원 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/Daanm7LJers/",
+        "source": "other",
+        "sourceName": "Instagram · 은새유치원",
+        "snippet": "은새유치원 시장놀이에서 아이가 장봐온 재료로 주말 카레 만들기를 이어간 공개 릴스입니다.",
+        "summary": "서울 강동구 은새유치원의 시장놀이 활동과 가정 연계 경험을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "home-link",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave741-5d1c8164",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/Daanm7LJers/",
+          "normalizedUrl": "instagram.com/reel/daanm7ljers",
+          "normalizedText": "서울 강동 은새유치원 시장놀이 장보기 재료 카레 만들기",
+          "htmlSnapshotHash": "sns-wave741-5d1c8164",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/Daanm7LJers/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave741"
+      }
+    ],
+    "1ecec08c-f332-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave741-2be3771f",
+        "kindergartenId": "1ecec08c-f332-b044-e053-0a32095ab044",
+        "title": "서울 광진 영화유치원 숲체험 기록",
+        "url": "https://www.instagram.com/reel/DX5fXO7M51W/",
+        "source": "other",
+        "sourceName": "Instagram · 영화유치원",
+        "snippet": "영화유치원이 광진구유치원 태그와 함께 수변 생태공원 숲체험을 소개한 공개 릴스입니다.",
+        "summary": "서울 광진구 영화유치원의 숲체험 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave741-2be3771f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DX5fXO7M51W/",
+          "normalizedUrl": "instagram.com/reel/dx5fxo7m51w",
+          "normalizedText": "서울 광진 영화유치원 숲체험 수변 생태공원",
+          "htmlSnapshotHash": "sns-wave741-2be3771f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DX5fXO7M51W/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave741"
       }
     ]
   },

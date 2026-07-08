@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 553,
+  "totalCount": 554,
   "kindergartenCount": 123,
   "reviews": {
     "c65d4ea9-67eb-4d44-80cb-04fb893a667b": [
@@ -22163,6 +22163,43 @@
           ]
         },
         "evidenceChecksum": "46847c42"
+      },
+      {
+        "id": "rev-sns-wave741-bec7ee8c",
+        "kindergartenId": "b879d256-bab2-4ccc-b5ab-9bc5c7aeab6d",
+        "title": "대구 달성 도담소리숲유치원 일상 기록",
+        "url": "https://www.instagram.com/reel/DWoLMZZTwYy/",
+        "source": "other",
+        "sourceName": "Instagram · 도담소리숲유치원",
+        "snippet": "도담소리숲유치원이 숲유치원, 대구유치원, 유치원일상 태그와 함께 올린 공개 릴스입니다.",
+        "summary": "대구 달성군 도담소리숲유치원의 유치원 일상과 숲 기반 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity",
+          "daily-activity",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave741-bec7ee8c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWoLMZZTwYy/",
+          "normalizedUrl": "instagram.com/reel/dwolmzztwyy",
+          "normalizedText": "대구 달성 도담소리숲유치원 숲유치원 유치원일상",
+          "htmlSnapshotHash": "sns-wave741-bec7ee8c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWoLMZZTwYy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave741"
       }
     ],
     "1ecec08c-fb5b-b044-e053-0a32095ab044": [
