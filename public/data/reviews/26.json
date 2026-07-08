@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 370,
+  "totalCount": 371,
   "kindergartenCount": 97,
   "reviews": {
     "1ecec08d-06d9-b044-e053-0a32095ab044": [
@@ -10392,6 +10392,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave740"
+      },
+      {
+        "id": "rev-sns-wave742-cb0561e5",
+        "kindergartenId": "babb3dd9-c483-41c3-8262-81d51655cc02",
+        "title": "부산 금곡나래유치원 첫 견학 기록",
+        "url": "https://www.instagram.com/p/DZtFwCogU1s/",
+        "source": "other",
+        "sourceName": "Instagram · 금곡나래유치원",
+        "snippet": "금곡동 공립단설 금곡나래유치원이 감자 캐기와 블루베리 체험을 포함한 첫 견학을 소개한 공개 게시물입니다.",
+        "summary": "부산 북구 금곡나래유치원의 현장체험학습과 첫 견학 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "farm-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave742-cb0561e5",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZtFwCogU1s/",
+          "normalizedUrl": "instagram.com/p/dztfwcogu1s",
+          "normalizedText": "부산 북구 금곡나래유치원 첫견학 감자캐기 블루베리 현장체험학습",
+          "htmlSnapshotHash": "sns-wave742-cb0561e5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZtFwCogU1s/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave742"
       }
     ],
     "1ecec08c-f1a6-b044-e053-0a32095ab044": [

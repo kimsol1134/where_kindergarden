@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 200,
+  "totalCount": 201,
   "kindergartenCount": 62,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -1690,6 +1690,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-sns-wave742-abb47217",
+        "kindergartenId": "1fc6dd86-ccbc-d1d2-e053-0a32095ad1d2",
+        "title": "전북 임실둥지유치원 키즈카페 현장체험 기록",
+        "url": "https://www.instagram.com/reel/DUnmedSk8-D/",
+        "source": "other",
+        "sourceName": "Instagram · 임실둥지유치원",
+        "snippet": "임실둥지유치원이 키즈카페 현장체험학습에서 아이들이 뛰고 오르며 신체놀이를 한 공개 릴스입니다.",
+        "summary": "전북 임실둥지유치원의 키즈카페 현장체험학습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "physical-play",
+          "imsil"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave742-abb47217",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUnmedSk8-D/",
+          "normalizedUrl": "instagram.com/reel/dunmedsk8-d",
+          "normalizedText": "전북 임실둥지유치원 키즈카페 현장체험학습 신체놀이",
+          "htmlSnapshotHash": "sns-wave742-abb47217",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUnmedSk8-D/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave742"
       }
     ],
     "1ecec08c-f9b2-b044-e053-0a32095ab044": [
