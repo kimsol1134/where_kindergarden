@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 1,
-  "kindergartenCount": 1,
+  "totalCount": 3,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
@@ -57,6 +57,85 @@
         "approvedAt": "2026-06-30T23:59:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f70e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave753-a7780ccd",
+        "kindergartenId": "1ecec08c-f70e-b044-e053-0a32095ab044",
+        "title": "의귀초병설유치원 재생종이 유초이음 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "의귀초등학교병설유치원이 지속가능발전을 위한 유초이음교육으로 재생종이 만들기를 실시한 공개 기사입니다.",
+        "summary": "의귀초등학교병설유치원의 환경교육과 초등 연계 재생종이 만들기 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "sustainability",
+          "jeju"
+        ],
+        "date": "2026-06-01",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-a7780ccd",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=115561",
+          "normalizedText": "의귀초등학교병설유치원 지속가능발전 유초이음교육 재생종이 만들기",
+          "htmlSnapshotHash": "sns-wave753-a7780ccd",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
+      }
+    ],
+    "1ecec08d-0261-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave753-253d072c",
+        "kindergartenId": "1ecec08d-0261-b044-e053-0a32095ab044",
+        "title": "제주 하원초병설유치원 우영팟 유초이음 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "하원초등학교병설유치원이 유초이음교육 우영팟 활동을 실시한 공개 기사입니다.",
+        "summary": "제주 하원초등학교병설유치원의 텃밭 기반 우영팟 활동과 유초이음 교육 과정을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "garden-activity",
+          "jeju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-253d072c",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=112543",
+          "normalizedText": "제주 하원초등학교병설유치원 유초이음교육 우영팟 활동",
+          "htmlSnapshotHash": "sns-wave753-253d072c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

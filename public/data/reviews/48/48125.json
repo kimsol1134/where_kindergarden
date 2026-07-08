@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 3,
-  "kindergartenCount": 3,
+  "totalCount": 4,
+  "kindergartenCount": 4,
   "reviews": {
     "1ecec08c-f9d4-b044-e053-0a32095ab044": [
       {
@@ -161,6 +161,46 @@
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0800-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave753-02512341",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초 구서분교장병설유치원 물모래놀이 공개 기록",
+        "url": "https://www.instagram.com/p/DafOEpEgeyL/",
+        "source": "other",
+        "sourceName": "Instagram · hello_gusan_kids",
+        "snippet": "구서분교장병설유치원이 물모래놀이와 물놀이 활동을 기록한 공개 게시물입니다.",
+        "summary": "마산 구산초등학교구서분교장병설유치원의 여름 물모래놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "sand-play",
+          "changwon"
+        ],
+        "date": "2026-07-07",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-02512341",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DafOEpEgeyL/",
+          "normalizedUrl": "instagram.com/p/dafoepegeyl",
+          "normalizedText": "구산초등학교구서분교장병설유치원 구서분교장 물모래놀이 물놀이 현동 마산",
+          "htmlSnapshotHash": "sns-wave753-02512341",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DafOEpEgeyL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
+      }
     ]
-  }
+  },
+  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
 }

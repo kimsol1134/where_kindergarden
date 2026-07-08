@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 204,
+  "totalCount": 205,
   "kindergartenCount": 63,
   "reviews": {
     "1ecec08d-0fc5-b044-e053-0a32095ab044": [
@@ -6502,6 +6502,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave752"
+      },
+      {
+        "id": "rev-sns-wave753-25605b0d",
+        "kindergartenId": "1ecec08d-0ae2-b044-e053-0a32095ab044",
+        "title": "전주용흥초병설유치원 100일 유초이음 공개 기록",
+        "url": "https://www.instagram.com/p/DZbu4VAD8m7/",
+        "source": "other",
+        "sourceName": "Instagram · 전주용흥초등학교병설유치원",
+        "snippet": "전주용흥초등학교병설유치원이 5세 이음과 유초이음 활동으로 유아들의 100일을 축하한 공개 게시물입니다.",
+        "summary": "전주용흥초등학교병설유치원의 유초이음 100일 축하 활동과 초등 연계 분위기를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "elementary-bridge",
+          "anniversary",
+          "jeonju"
+        ],
+        "date": "2026-06-10",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-25605b0d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZbu4VAD8m7/",
+          "normalizedUrl": "instagram.com/p/dzbu4vad8m7",
+          "normalizedText": "전주용흥초등학교병설유치원 5세이음 유초이음 100일 축하",
+          "htmlSnapshotHash": "sns-wave753-25605b0d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZbu4VAD8m7/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
       }
     ],
     "eb43e817-e834-4036-a4ed-341bcd34f3d0": [

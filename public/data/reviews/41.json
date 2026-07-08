@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 1361,
+  "totalCount": 1362,
   "kindergartenCount": 501,
   "reviews": {
     "1ecec08d-00ff-b044-e053-0a32095ab044": [
@@ -47639,6 +47639,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T22:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave753-7f74767d",
+        "kindergartenId": "1ecec08c-fbc1-b044-e053-0a32095ab044",
+        "title": "만정초병설유치원 입학 100일 백설기 행사 기록",
+        "url": "https://www.anseongnews.com/front/news/view.do?articleId=ARTICLE_00039925",
+        "source": "other",
+        "sourceName": "자치안성신문",
+        "snippet": "만정초등학교병설유치원이 입학 100일을 맞아 백.설.기 행사를 진행한 공개 기사입니다.",
+        "summary": "만정초등학교병설유치원의 입학 100일 축하 행사와 유아 성장 격려 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "anniversary",
+          "anseong",
+          "elementary-bridge"
+        ],
+        "date": "2026-06-09",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-7f74767d",
+        "evidence": {
+          "canonicalUrl": "https://www.anseongnews.com/front/news/view.do?articleId=ARTICLE_00039925",
+          "normalizedUrl": "anseongnews.com/front/news/view.do?articleid=article_00039925",
+          "normalizedText": "만정초등학교병설유치원 입학 100일 백설기 행사",
+          "htmlSnapshotHash": "sns-wave753-7f74767d",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.anseongnews.com/front/news/view.do?articleId=ARTICLE_00039925"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
       }
     ],
     "1ecec08c-fab3-b044-e053-0a32095ab044": [
