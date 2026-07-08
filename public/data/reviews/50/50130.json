@@ -1,7 +1,7 @@
 {
   "version": "2026-07-01",
-  "totalCount": 7,
-  "kindergartenCount": 7,
+  "totalCount": 8,
+  "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f9cb-b044-e053-0a32095ab044": [
       {
@@ -290,6 +290,45 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave756"
+      }
+    ],
+    "1ecec08c-f710-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave757-52822529",
+        "kindergartenId": "1ecec08c-f710-b044-e053-0a32095ab044",
+        "title": "제주 토평초병설유치원 탄소중립 환경교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=22239",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "토평초등학교병설유치원이 환경교육주간에 탄소중립 환경교육을 실시한 공개 기사입니다.",
+        "summary": "제주 토평초등학교병설유치원의 탄소중립 어린이 기후학교, 나무 심기, 이산화탄소 흡수 원리 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "eco-education",
+          "carbon-neutral",
+          "jeju"
+        ],
+        "date": "2022-06-08",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave757-52822529",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=22239",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=22239",
+          "normalizedText": "제주 토평초등학교병설유치원 깨끗한 지구가 좋아요 탄소중립 환경교육",
+          "htmlSnapshotHash": "sns-wave757-52822529",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=22239"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave757"
       }
     ]
   },
