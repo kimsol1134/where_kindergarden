@@ -1,6 +1,6 @@
 {
   "version": "2026-07-02",
-  "totalCount": 24,
+  "totalCount": 25,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-ef8c-b044-e053-0a32095ab044": [
@@ -1162,6 +1162,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave728"
+      },
+      {
+        "id": "rev-sns-wave745-a6cd2e74",
+        "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
+        "title": "울산 현대동부유치원 롯데월드 현장체험학습 기록",
+        "url": "https://www.instagram.com/p/DSXUwaWEcRv/",
+        "source": "other",
+        "sourceName": "Instagram · 현대동부유치원",
+        "snippet": "현대동부유치원이 7세 원아들의 롯데월드 현장체험학습과 유치원 일상을 소개한 공개 게시물입니다.",
+        "summary": "울산 동구 현대동부유치원의 현장체험학습 운영을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "kindergarten-daily",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave745-a6cd2e74",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DSXUwaWEcRv/",
+          "normalizedUrl": "instagram.com/p/dsxuwawecrv",
+          "normalizedText": "울산 현대동부유치원 롯데월드 현장체험학습 7세 유치원일상",
+          "htmlSnapshotHash": "sns-wave745-a6cd2e74",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DSXUwaWEcRv/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave745"
       }
     ]
   },

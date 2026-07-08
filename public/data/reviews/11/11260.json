@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 19,
+  "totalCount": 20,
   "kindergartenCount": 9,
   "reviews": {
     "1ecec08d-09aa-b044-e053-0a32095ab044": [
@@ -614,6 +614,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave716"
+      },
+      {
+        "id": "rev-sns-wave745-3cc391d3",
+        "kindergartenId": "1ecec08c-fb78-b044-e053-0a32095ab044",
+        "title": "서울 중랑구 동일유치원 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DaUjJArRB0l/",
+        "source": "other",
+        "sourceName": "Instagram · 동일유치원",
+        "snippet": "동일유치원이 빛나는반의 유치원 물놀이와 수영장 활동을 소개한 공개 릴스입니다.",
+        "summary": "서울 중랑구 면목동 동일유치원의 여름 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "seoul"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave745-3cc391d3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaUjJArRB0l/",
+          "normalizedUrl": "instagram.com/reel/daujjarrb0l",
+          "normalizedText": "서울 중랑구 면목동 동일유치원 빛나는반 물놀이 수영장",
+          "htmlSnapshotHash": "sns-wave745-3cc391d3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaUjJArRB0l/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave745"
       }
     ],
     "1ecec08c-ed85-b044-e053-0a32095ab044": [

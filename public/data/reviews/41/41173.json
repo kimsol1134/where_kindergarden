@@ -1,6 +1,6 @@
 {
   "version": "2026-07-01",
-  "totalCount": 37,
+  "totalCount": 38,
   "kindergartenCount": 13,
   "reviews": {
     "1e1cd35b-d484-4ba4-a527-cdcc7d4a798f": [
@@ -1234,6 +1234,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave745-aee1dac3",
+        "kindergartenId": "1ecec08c-f07c-b044-e053-0a32095ab044",
+        "title": "안양 모심유치원 숲체험의 날 기록",
+        "url": "https://www.instagram.com/p/DZ68KQeEvCr/",
+        "source": "other",
+        "sourceName": "Instagram · 모심유치원",
+        "snippet": "모심유치원이 유치원 숲 Day에서 개미 관찰과 자연 놀이를 진행한 공개 게시물입니다.",
+        "summary": "경기 안양시 모심유치원의 숲체험과 자연 탐색 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity",
+          "nature-play",
+          "anyang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave745-aee1dac3",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ68KQeEvCr/",
+          "normalizedUrl": "instagram.com/p/dz68kqeevcr",
+          "normalizedText": "안양 모심유치원 숲체험의날 개미관찰 자연놀이",
+          "htmlSnapshotHash": "sns-wave745-aee1dac3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ68KQeEvCr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave745"
       }
     ],
     "1ecec08d-05a0-b044-e053-0a32095ab044": [

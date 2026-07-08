@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 154,
+  "totalCount": 155,
   "kindergartenCount": 26,
   "reviews": {
     "1ecec08c-ffb4-b044-e053-0a32095ab044": [
@@ -6734,6 +6734,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave717"
+      },
+      {
+        "id": "rev-sns-wave745-f61e94ea",
+        "kindergartenId": "1ecec08d-0bb0-b044-e053-0a32095ab044",
+        "title": "대구 가야유치원 국립대구기상과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DW-gTxrnPab/",
+        "source": "other",
+        "sourceName": "Instagram · 가야유치원",
+        "snippet": "가야유치원이 국립대구기상과학관에서 기상캐스터 체험과 날씨 주제 견학을 진행한 공개 릴스입니다.",
+        "summary": "대구 달서구 가야유치원의 과학관 견학 및 현장학습 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "science-museum",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave745-f61e94ea",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW-gTxrnPab/",
+          "normalizedUrl": "instagram.com/reel/dw-gtxrnpab",
+          "normalizedText": "대구 가야유치원 국립대구기상과학관 유치원견학 현장학습",
+          "htmlSnapshotHash": "sns-wave745-f61e94ea",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DW-gTxrnPab/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave745"
       }
     ]
   },

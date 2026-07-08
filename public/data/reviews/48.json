@@ -1,6 +1,6 @@
 {
   "version": "2026-07-03",
-  "totalCount": 293,
+  "totalCount": 294,
   "kindergartenCount": 104,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
@@ -11880,6 +11880,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.800Z",
         "approvedBy": "codex-manual-sns-wave692"
+      },
+      {
+        "id": "rev-sns-wave745-49879fce",
+        "kindergartenId": "1ecec08c-f989-b044-e053-0a32095ab044",
+        "title": "거제 서강유치원 어린이날 견학 기록",
+        "url": "https://www.instagram.com/reel/DXvremJv_Lt/",
+        "source": "other",
+        "sourceName": "Instagram · 서강유치원",
+        "snippet": "서강유치원이 어린이날을 맞아 아이들과 함께한 즐거운 견학 활동을 소개한 공개 릴스입니다.",
+        "summary": "경남 거제시 서강유치원의 어린이날 견학 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "children-day",
+          "geoje"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave745-49879fce",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXvremJv_Lt/",
+          "normalizedUrl": "instagram.com/reel/dxvremjv_lt",
+          "normalizedText": "거제 서강유치원 어린이날 견학",
+          "htmlSnapshotHash": "sns-wave745-49879fce",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXvremJv_Lt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave745"
       }
     ],
     "1ecec08c-fd66-b044-e053-0a32095ab044": [
