@@ -17,7 +17,7 @@ source <(grep -v '^#' .env.testflight.local | grep -v '^$' | sed 's/^/export /')
 필수 환경변수:
 | 변수 | 설명 |
 |------|------|
-| `APP_STORE_CONNECT_API_KEY_ID` | API Key ID (`TW3Y8S4M9V`) |
+| `APP_STORE_CONNECT_API_KEY_ID` | API Key ID (`<ASC_API_KEY_ID>`) |
 | `APP_STORE_CONNECT_API_ISSUER_ID` | Issuer ID |
 | `APP_STORE_CONNECT_API_KEY_FILEPATH` | `.p8` 파일 경로 (기본: `~/.private_keys/AuthKey_{KEY_ID}.p8`) |
 | `APP_IDENTIFIER` | 앱 번들 ID (`com.solkim.kindergarden`) |
@@ -180,4 +180,4 @@ npx cap open ios
 - Deliverfile: `ios/App/fastlane/Deliverfile`
 - 연령 등급: `ios/App/fastlane/rating_config.json`
 - 환경변수: `.env.testflight.local` (gitignored)
-- API Key 파일: `~/.private_keys/AuthKey_TW3Y8S4M9V.p8`
+- API Key 파일: `~/.private_keys/AuthKey_<ASC_API_KEY_ID>.p8`

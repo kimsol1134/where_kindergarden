@@ -16,7 +16,7 @@
  * DAILY 수집을 매일 돌리면 같은 월 파일에 dedupe 후 누적된다.
  *
  * 환경 변수 (.env.testflight.local 또는 .env.local):
- *   APP_STORE_CONNECT_API_KEY_ID      — API Key ID (예: TW3Y8S4M9V)
+ *   APP_STORE_CONNECT_API_KEY_ID      — API Key ID (예: <ASC_API_KEY_ID>)
  *   APP_STORE_CONNECT_API_KEY_ISSUER_ID — Issuer ID
  *   APP_STORE_CONNECT_API_KEY_PATH    — .p8 파일 절대 경로
  *   APP_STORE_APP_ID                  — Apple App ID (숫자, CSV 행 필터에 사용)

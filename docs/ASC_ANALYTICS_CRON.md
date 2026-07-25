@@ -17,22 +17,22 @@ Repo Settings → Secrets and variables → Actions에 아래 5개 등록:
 
 | 이름 | 설명 | 예시 |
 |------|------|------|
-| `APP_STORE_CONNECT_API_KEY_ID` | ASC API Key ID | `TW3Y8S4M9V` |
-| `APP_STORE_CONNECT_API_ISSUER_ID` | ASC Issuer ID | `f4843e26-5b1f-4b00-bd4a-d24ca4539774` |
+| `APP_STORE_CONNECT_API_KEY_ID` | ASC API Key ID | `<ASC_API_KEY_ID>` |
+| `APP_STORE_CONNECT_API_ISSUER_ID` | ASC Issuer ID | `<ASC_ISSUER_ID>` |
 | `APP_STORE_CONNECT_API_KEY_P8_B64` | .p8 파일 내용을 base64로 인코딩한 문자열 | (아래 참조) |
 | `APP_STORE_APP_ID` | Apple App ID (숫자, CSV Apple Identifier 필터용) | `6737649116` |
-| `APP_STORE_VENDOR_NUMBER` | ASC Vendor Number (Sales Reports API 필수, 계정 레벨 식별자) | `405788798` |
+| `APP_STORE_VENDOR_NUMBER` | ASC Vendor Number (Sales Reports API 필수, 계정 레벨 식별자) | `<ASC_PROVIDER_NUMBER>` |
 
 > **주의**: `APP_STORE_APP_ID`와 `APP_STORE_VENDOR_NUMBER`는 서로 다른 값입니다.
 > - **App ID**: 앱 단위 식별자, App Store URL에 노출됨 (`6737649116`)
-> - **Vendor Number**: 계정 레벨 식별자, ASC → Sales and Trends 우측 상단 계정 메뉴에서 확인 (`solkim|405788798|1` 형식)
+> - **Vendor Number**: 계정 레벨 식별자, ASC → Sales and Trends 우측 상단 계정 메뉴에서 확인 (`solkim|<ASC_PROVIDER_NUMBER>|1` 형식)
 
 ### .p8 파일 base64 인코딩
 
 로컬에서 한 번만 실행:
 
 ```bash
-base64 -i /Users/solkim/.private_keys/AuthKey_TW3Y8S4M9V.p8 | tr -d '\n' | pbcopy
+base64 -i /Users/solkim/.private_keys/AuthKey_<ASC_API_KEY_ID>.p8 | tr -d '\n' | pbcopy
 ```
 
 클립보드에 복사된 값을 `APP_STORE_CONNECT_API_KEY_P8_B64` secret으로 등록.

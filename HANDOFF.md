@@ -12,8 +12,8 @@
 
 ### 핵심 발견: ASC 계정의 Vendor Number / App ID 재확인
 - **Vendor Number (`filter[vendorNumber]`)**:
-  - 잘못된 값: `405788798` (이건 top-right drawer의 **Provider Number** — 계정 레벨 식별자, Sales API는 거부)
-  - 올바른 값: **`93867732`** — ASC → 지불 및 재무 보고서 페이지의 "공급업체 #" (= Vendor/Supplier number)
+  - 잘못된 값: `<ASC_PROVIDER_NUMBER>` (이건 top-right drawer의 **Provider Number** — 계정 레벨 식별자, Sales API는 거부)
+  - 올바른 값: **`<ASC_VENDOR_NUMBER>`** — ASC → 지불 및 재무 보고서 페이지의 "공급업체 #" (= Vendor/Supplier number)
 - **App ID (`APP_STORE_APP_ID`, CSV Apple Identifier 필터)**:
   - 잘못된 값: `6737649116` (이 계정에 없음)
   - 올바른 값: **`6758149645`** — "유치원 알리미 - 우리동네 유치원" 앱의 Apple Identifier (ASC → 앱 목록에서 확인)
@@ -32,7 +32,7 @@
   - 그 시점 snapshot. 이후 이 세션에서 실제 원인 밝혀냄
 
 ### GitHub Secret 변경 이력 (이번 세션)
-- `APP_STORE_VENDOR_NUMBER`: `405788798` → `93867732` (공급업체 번호)
+- `APP_STORE_VENDOR_NUMBER`: `<ASC_PROVIDER_NUMBER>` → `<ASC_VENDOR_NUMBER>` (공급업체 번호)
 - `APP_STORE_APP_ID`: `6737649116` → `6758149645` (Apple Identifier)
 
 ---
@@ -41,17 +41,17 @@
 
 | 이름 | 값 | 의미 |
 |------|----|------|
-| `APP_STORE_CONNECT_API_KEY_ID` | `TW3Y8S4M9V` | ASC API Key ID (관리자 권한) |
-| `APP_STORE_CONNECT_API_ISSUER_ID` | `f4843e26-5b1f-4b00-bd4a-d24ca4539774` | Issuer ID |
-| `APP_STORE_CONNECT_API_KEY_P8_B64` | `/Users/solkim/.private_keys/AuthKey_TW3Y8S4M9V.p8` base64 | .p8 개인 키 |
+| `APP_STORE_CONNECT_API_KEY_ID` | `<ASC_API_KEY_ID>` | ASC API Key ID (관리자 권한) |
+| `APP_STORE_CONNECT_API_ISSUER_ID` | `<ASC_ISSUER_ID>` | Issuer ID |
+| `APP_STORE_CONNECT_API_KEY_P8_B64` | `/Users/solkim/.private_keys/AuthKey_<ASC_API_KEY_ID>.p8` base64 | .p8 개인 키 |
 | `APP_STORE_APP_ID` | **`6758149645`** | 유치원 알리미 앱의 Apple Identifier (CSV 필터) |
-| `APP_STORE_VENDOR_NUMBER` | **`93867732`** | 공급업체 #(Sales Reports API filter[vendorNumber]) |
+| `APP_STORE_VENDOR_NUMBER` | **`<ASC_VENDOR_NUMBER>`** | 공급업체 #(Sales Reports API filter[vendorNumber]) |
 
 ### 로컬 `.env.testflight.local` 동기화 필요 (선택)
 로컬에서 ASC 데이터 수집 실행하려면 아래 두 줄 추가:
 ```env
 APP_STORE_APP_ID=6758149645
-APP_STORE_VENDOR_NUMBER=93867732
+APP_STORE_VENDOR_NUMBER=<ASC_VENDOR_NUMBER>
 ```
 
 ---
@@ -101,7 +101,7 @@ APP_STORE_VENDOR_NUMBER=93867732
 - 1회차: 406 (fixed by PR #70)
 - 2회차: 400 PARAMETER_ERROR (appId를 vendorNumber로 사용 — PR #72로 수정)
 - 3회차: 409 RELATIONSHIP.INVALID (`--analytics` 플래그, 버그 B)
-- 4회차 (24729576895): 400 Invalid vendor number (`405788798`, 잘못된 값)
+- 4회차 (24729576895): 400 Invalid vendor number (`<ASC_PROVIDER_NUMBER>`, 잘못된 값)
 - 5회차 (24729655050): 400 같은 에러
 - 6회차 (24729752598): 400 같은 에러 — 전체 detail 확보
 - 7회차 (24729951853): 400 같은 에러 (clean secret 재등록해도 실패)
@@ -138,8 +138,8 @@ ls /tmp/asc-artifact
 ## 앱 레벨 메모
 - Bundle ID: `com.solkim.kindergarden`
 - App ID (Apple Identifier): **`6758149645`** (유치원 알리미 - 우리동네 유치원)
-- Vendor Number (공급업체 #): **`93867732`** (Sales Reports API용)
-- Provider Number (display only): `405788798` (top-right drawer의 `sol kim|405788798|1`)
+- Vendor Number (공급업체 #): **`<ASC_VENDOR_NUMBER>`** (Sales Reports API용)
+- Provider Number (display only): `<ASC_PROVIDER_NUMBER>` (top-right drawer의 `sol kim|<ASC_PROVIDER_NUMBER>|1`)
 - Mixpanel Project: `kindegarden` (ID 4014822, workspace 4510961)
 - iOS 네이티브 앱 시뮬레이터: iPhone 17 Pro (`87C67713-AC8B-48FC-AE92-397C04F5215E`)
 - Xcode 프로젝트: `ios/WhereKindergartenNative/WhereKindergartenNative.xcodeproj` (scheme: `WhereKindergartenNative`)

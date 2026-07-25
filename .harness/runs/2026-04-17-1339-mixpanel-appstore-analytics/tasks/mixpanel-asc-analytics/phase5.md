@@ -19,7 +19,7 @@ created_at: 2026-04-17T15:10:00+09:00
   - `.env.local` 파일 목록 확인 (직접 수정 금지, 참조만)
   - `CLAUDE.md` — "any 타입 사용 금지", "console.log 절대 남기지 않기", "API 키 하드코딩 금지", "새 기능에는 반드시 유닛 테스트"
 - 참조 artifact:
-  - `.harness/runs/2026-04-17-1339-mixpanel-appstore-analytics/01-clarify.md` — Q3=A(설치/세션/임프레션만), Q4=C(병렬 운영), 기존 API Key `TW3Y8S4M9V` 재사용 가능 (Admin 권한, `.env.testflight.local`)
+  - `.harness/runs/2026-04-17-1339-mixpanel-appstore-analytics/01-clarify.md` — Q3=A(설치/세션/임프레션만), Q4=C(병렬 운영), 기존 API Key `<ASC_API_KEY_ID>` 재사용 가능 (Admin 권한, `.env.testflight.local`)
 
 ## 지시
 
@@ -112,7 +112,7 @@ async function main(): Promise<void>
 - **출력 스키마**: `AscDailyMetric.date`가 JOIN key → Mixpanel Export CSV의 `time` 필드(YYYY-MM-DD)와 매칭 가능.
 - **저장 경로**: `scripts/data-output/asc-analytics-YYYY-MM.json`
 - **환경변수**: `.env.testflight.local` 또는 `.env.local`에서 로드:
-  - `APP_STORE_CONNECT_API_KEY_ID` (= `TW3Y8S4M9V`)
+  - `APP_STORE_CONNECT_API_KEY_ID` (= `<ASC_API_KEY_ID>`)
   - `APP_STORE_CONNECT_API_KEY_ISSUER_ID`
   - `APP_STORE_CONNECT_API_KEY_PATH` (.p8 파일 경로, 절대 경로)
   - `APP_STORE_APP_ID` (앱 ID)

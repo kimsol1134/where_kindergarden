@@ -46,7 +46,7 @@ downstream: [.harness/runs/2026-04-17-1339-mixpanel-appstore-analytics/02-plan.m
 - answer: A — iOS 네이티브 앱만. 웹은 Vercel Analytics로 유지.
 
 ### Q3. "앱스토어 데이터" 수집 범위
-- 맥락: App Store Connect는 Analytics API(설치/세션/임프레션/매출), Feedback API(리뷰 텍스트), Crashes API 등을 제공한다. 기존 ASC API Key(`TW3Y8S4M9V`)는 Admin 권한으로 이미 `.env.testflight.local`에 있어 재사용 가능하지만, 어떤 지표를 수집하고 어디에 저장/교차 분석할지를 결정해야 한다.
+- 맥락: App Store Connect는 Analytics API(설치/세션/임프레션/매출), Feedback API(리뷰 텍스트), Crashes API 등을 제공한다. 기존 ASC API Key(`<ASC_API_KEY_ID>`)는 Admin 권한으로 이미 `.env.testflight.local`에 있어 재사용 가능하지만, 어떤 지표를 수집하고 어디에 저장/교차 분석할지를 결정해야 한다.
 - 옵션:
   - A. **설치/세션/임프레션 지표만** (Analytics API) — 결과: Mixpanel에 없는 획득 퍼널(App Store 노출→설치→앱 내 행동) 연결 가능. 스크립트로 주기적 수집.
   - B. **A + App Store 리뷰 텍스트** (Feedback API) — 결과: 앱 내 후기 수집 파이프라인과 별도로, ASC 리뷰를 텍스트 분석용으로 저장. 별도 처리 로직 필요.
@@ -138,7 +138,7 @@ downstream: [.harness/runs/2026-04-17-1339-mixpanel-appstore-analytics/02-plan.m
   - **Phase 3**: (선택) 분석 설계 문서 — 퍼널 정의, Mixpanel 대시보드 설정 가이드
 - 의존성:
   - Mixpanel 계정 및 Project Token (사용자가 사전 생성 필요)
-  - ASC API Key는 기존 `.env.testflight.local`의 `APP_STORE_CONNECT_API_KEY_ID=TW3Y8S4M9V` 재사용 가능 (Admin 권한)
+  - ASC API Key는 기존 `.env.testflight.local`의 `APP_STORE_CONNECT_API_KEY_ID=<ASC_API_KEY_ID>` 재사용 가능 (Admin 권한)
 - 예상 테스트 범위:
   - `MixpanelAnalytics` 유닛 테스트 (MockMixpanel 주입 방식)
   - 기존 `MockAnalytics` 기반 ViewModel 이벤트 추적 테스트는 프로토콜 인터페이스가 바뀌지 않으면 그대로 유지
