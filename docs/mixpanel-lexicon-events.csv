@@ -12,3 +12,7 @@ Compare Viewed,비교 탭 진입,비교 탭의 onAppear 시점. compare_count가
 Compare Shared,비교표 공유,비교표를 카카오톡 또는 시스템 공유시트로 전송한 시점.,Compare
 Filter Applied,필터 적용,반경/정렬 등 필터가 변경된 후 500ms debounce가 끝나 실제로 적용된 시점.,Search
 Tab Changed,탭 전환,하단 탭바에서 탭을 전환한 시점.,Navigation
+Review Link Tapped,후기 링크 열람,상세 화면에서 외부 후기 링크(블로그/카페)를 눌러 앱 밖으로 이동한 시점. 후기가 실제 의사결정에 쓰이는지 판단하는 지표.,Review
+Review Submit Opened,후기 제보 폼 열람,후기 제보용 Google Form으로 이동한 시점. 유치원명/코드가 미리 채워진 상태로 열린다.,Review
+Review Prompt Triggered,앱스토어 리뷰 요청 발동,앱스토어 리뷰 요청을 시스템에 호출한 시점. iOS가 실제 노출 여부를 결정하므로 표시가 보장되지 않는다. 요청 성공이 아니라 트리거 도달로 해석할 것.,Review
+App Store Review Tapped,앱스토어 리뷰 링크 클릭,더보기 탭의 앱스토어 리뷰 작성 링크를 누른 시점.,Review

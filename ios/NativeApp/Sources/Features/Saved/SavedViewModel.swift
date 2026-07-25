@@ -73,10 +73,39 @@ public final class SavedViewModel {
             isFavorite: favoriteRepo.isFavorite(kindergarten.kindercode),
             compareCount: compareRepo.selection.ids.count,
             fitReasons: [],
+            reviewSubmissionURL: ReviewSubmissionLink.url(
+                kindergartenName: kindergarten.name,
+                kindercode: kindergarten.kindercode
+            ),
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) },
-            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() }
+            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() },
+            onReviewLinkTapped: { [weak self] review in
+                self?.trackReviewLinkTapped(review, for: kindergarten)
+            },
+            onSubmitReviewTapped: { [weak self] in
+                self?.trackReviewSubmitOpened(for: kindergarten)
+            }
         )
+    }
+
+    // MARK: - Review Engagement
+
+    func trackReviewLinkTapped(_ review: ReviewLink, for kindergarten: Kindergarten) {
+        analytics?.track(event: .reviewLinkTapped, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string(review.sourceName ?? review.source),
+            "review_count": .int(reviewRepo.reviews(for: kindergarten.kindercode).count),
+        ])
+    }
+
+    func trackReviewSubmitOpened(for kindergarten: Kindergarten) {
+        analytics?.track(event: .reviewSubmitOpened, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "review_count": .int(reviewRepo.reviews(for: kindergarten.kindercode).count),
+        ])
     }
 
     // MARK: - Computed Properties

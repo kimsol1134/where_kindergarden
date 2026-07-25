@@ -68,6 +68,8 @@ public final class SearchViewModel {
     private let router: AppRouter
     private let persistence: NativeAppPersistence
     private let searchDebounceDuration: Duration
+    private let searchAnalyticsDebounce: Duration
+    private let reviewPrompt: ReviewPromptCoordinator?
 
     // MARK: - Internal State
 
@@ -77,6 +79,9 @@ public final class SearchViewModel {
     @ObservationIgnored nonisolated(unsafe) private var searchDeepLinkTask: Task<Void, Never>?
     @ObservationIgnored nonisolated(unsafe) private var searchSuggestionTask: Task<Void, Never>?
     @ObservationIgnored nonisolated(unsafe) private var filterAppliedTask: Task<Void, Never>?
+    @ObservationIgnored nonisolated(unsafe) private var searchAnalyticsTask: Task<Void, Never>?
+    /// 직전에 계측으로 보고한 검색이 결과를 가지고 있었는지. 빈 결과 화면 "전환"을 판정하는 데 쓴다.
+    private var lastReportedSearchHadResults = false
     private var resultQuery: String
     private var currentDeviceLocationTask: Task<Coordinates, Error>?
     private var currentDeviceLocationTaskID = 0
@@ -101,7 +106,9 @@ public final class SearchViewModel {
         configuration: NativeAppConfiguration,
         searchText: String = "",
         filters: SearchFilters = SearchFilters(),
-        searchDebounceDuration: Duration = .milliseconds(300)
+        searchDebounceDuration: Duration = .milliseconds(300),
+        searchAnalyticsDebounce: Duration = .milliseconds(600),
+        reviewPrompt: ReviewPromptCoordinator? = nil
     ) {
         self.kindergartenRepo = kindergartenRepo
         self.reviewRepo = reviewRepo
@@ -119,11 +126,13 @@ public final class SearchViewModel {
         self.persistence = persistence
         self.configuration = configuration
         self.searchDebounceDuration = searchDebounceDuration
+        self.searchAnalyticsDebounce = searchAnalyticsDebounce
+        self.reviewPrompt = reviewPrompt
 
         self.hasBootstrapped = false
         self.kindergartenLookup = [:]
         self.searchText = searchText
-        self.resultQuery = searchText
+        self.resultQuery = SearchQueryPolicy.normalizedQuery(searchText)
         self.filters = filters
         self.localSearchSuggestions = []
         self.remoteSearchSuggestions = []
@@ -151,6 +160,7 @@ public final class SearchViewModel {
         searchDeepLinkTask?.cancel()
         searchSuggestionTask?.cancel()
         filterAppliedTask?.cancel()
+        searchAnalyticsTask?.cancel()
     }
 
     // MARK: - Exposed Repo/Router State
@@ -506,9 +516,19 @@ public final class SearchViewModel {
             isFavorite: isFavorite(kindergarten),
             compareCount: compareRepo.selection.ids.count,
             fitReasons: fitReasons(for: kindergarten),
+            reviewSubmissionURL: ReviewSubmissionLink.url(
+                kindergartenName: kindergarten.name,
+                kindercode: kindergarten.kindercode
+            ),
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten, source: "detail") },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten, source: "detail") },
-            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() }
+            onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() },
+            onReviewLinkTapped: { [weak self] review in
+                self?.trackReviewLinkTapped(review, for: kindergarten)
+            },
+            onSubmitReviewTapped: { [weak self] in
+                self?.trackReviewSubmitOpened(for: kindergarten)
+            }
         )
     }
 
@@ -554,6 +574,12 @@ public final class SearchViewModel {
             analytics?.track(event: .favoriteRemoved, properties: properties)
         } else {
             analytics?.track(event: .favoriteAdded, properties: properties)
+            // 후보를 2곳 이상 모은 시점 = 앱이 실제로 쓸모 있었던 순간. 비교까지 가지 않는
+            // 사용자를 담기 위한 보조 경로다.
+            reviewPrompt?.requestReviewIfEligible(
+                trigger: .favoriteMilestone,
+                count: favoriteRepo.favorites.count
+            )
         }
     }
 
@@ -578,6 +604,37 @@ public final class SearchViewModel {
 
     public func reviews(for kindercode: String) -> [ReviewLink] {
         reviewRepo.reviews(for: kindercode)
+    }
+
+    // MARK: - Review Engagement
+
+    /// 외부 후기 링크를 눌러 앱 밖으로 나가는 시점을 기록한다.
+    ///
+    /// 후기는 이 앱의 차별점이지만 지금까지 열람 여부를 측정한 적이 없어,
+    /// 후기가 실제로 의사결정에 쓰이는지 판단할 근거가 없었다.
+    public func trackReviewLinkTapped(_ review: ReviewLink, for kindergarten: Kindergarten) {
+        analytics?.track(event: .reviewLinkTapped, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string(review.sourceName ?? review.source),
+            "review_count": .int(reviews(for: kindergarten.kindercode).count),
+        ])
+    }
+
+    /// 더보기 탭의 앱스토어 리뷰 링크를 누른 시점을 기록한다.
+    public func trackAppStoreReviewTapped() {
+        analytics?.track(event: .appStoreReviewTapped, properties: [
+            "source": .string("more_tab"),
+        ])
+    }
+
+    /// 후기 제보 폼으로 이동하는 시점을 기록한다.
+    public func trackReviewSubmitOpened(for kindergarten: Kindergarten) {
+        analytics?.track(event: .reviewSubmitOpened, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "review_count": .int(reviews(for: kindergarten.kindercode).count),
+        ])
     }
 
     func fitReasons(for kindergarten: Kindergarten) -> [KindergartenFitReason] {
@@ -708,36 +765,77 @@ public final class SearchViewModel {
             return
         }
 
-        let baseResults = searchUseCase.search(
+        results = searchUseCase.search(
             catalog: catalog,
             location: userLocation,
             filters: filters,
             query: resultQuery
         )
 
-        let previouslyHadResults = !results.isEmpty
-        results = baseResults
-        analytics?.track(event: .searchExecuted, properties: [
-            "result_count": .int(baseResults.count),
-            "has_results": .bool(!baseResults.isEmpty),
-            "radius": .int(Int(filters.radiusKM)),
-            "sort": .string(filters.sort.rawValue),
-            "filter_count": .int(activeAdvancedFilterCount),
-            "query_length": .int(resultQuery.count),
-            "search_query": .string(Self.sanitizedSearchQuery(resultQuery)),
-            "query_type": .string(resultQuery.isEmpty ? "location" : "keyword"),
-        ])
-        if baseResults.isEmpty && previouslyHadResults {
-            analytics?.track(event: .emptyStateShown, properties: [
-                "radius": .int(Int(filters.radiusKM)),
-                "sort": .string(filters.sort.rawValue),
-                "filter_count": .int(activeAdvancedFilterCount),
-                "query_length": .int(resultQuery.count),
-                "search_query": .string(Self.sanitizedSearchQuery(resultQuery)),
-                "query_type": .string(resultQuery.isEmpty ? "location" : "keyword"),
-            ])
-        }
+        scheduleSearchAnalytics()
         refreshSelectedKindergarten()
+    }
+
+    /// 디바운스 대기 중 검색 조건이 또 바뀔 수 있으므로, 예약 시점의 값을 통째로 붙잡아 둔다.
+    private struct SearchAnalyticsSnapshot {
+        let resultCount: Int
+        let query: String
+        let radius: Int
+        let sort: String
+        let filterCount: Int
+    }
+
+    /// 검색 계측을 디바운스한다.
+    ///
+    /// 검색창은 글자가 바뀔 때마다 `refresh()`를 부른다. 디바운스가 없으면 "강남"을 입력하는 동안
+    /// `강`, `강ㄴ`, `강나`, `강남`이 각각 별개의 검색 실행으로 기록되어 이벤트 수가 부풀고,
+    /// 중간 상태의 0건 결과가 검색 실패로 잡힌다. 입력이 멎은 뒤 최종 상태만 한 번 보낸다.
+    private func scheduleSearchAnalytics() {
+        searchAnalyticsTask?.cancel()
+
+        let snapshot = SearchAnalyticsSnapshot(
+            resultCount: results.count,
+            query: resultQuery,
+            radius: Int(filters.radiusKM),
+            sort: filters.sort.rawValue,
+            filterCount: activeAdvancedFilterCount
+        )
+        let debounce = searchAnalyticsDebounce
+
+        searchAnalyticsTask = Task { [weak self] in
+            do {
+                try await Task.sleep(for: debounce)
+            } catch {
+                return
+            }
+            guard !Task.isCancelled else { return }
+            await MainActor.run {
+                self?.emitSearchAnalytics(snapshot)
+            }
+        }
+    }
+
+    private func emitSearchAnalytics(_ snapshot: SearchAnalyticsSnapshot) {
+        let hasResults = snapshot.resultCount > 0
+        let sharedProperties: AnalyticsProperties = [
+            "radius": .int(snapshot.radius),
+            "sort": .string(snapshot.sort),
+            "filter_count": .int(snapshot.filterCount),
+            "query_length": .int(snapshot.query.count),
+            "search_query": .string(Self.sanitizedSearchQuery(snapshot.query)),
+            "query_type": .string(snapshot.query.isEmpty ? "location" : "keyword"),
+        ]
+
+        var searchProperties = sharedProperties
+        searchProperties["result_count"] = .int(snapshot.resultCount)
+        searchProperties["has_results"] = .bool(hasResults)
+        analytics?.track(event: .searchExecuted, properties: searchProperties)
+
+        if !hasResults && lastReportedSearchHadResults {
+            analytics?.track(event: .emptyStateShown, properties: sharedProperties)
+        }
+
+        lastReportedSearchHadResults = hasResults
     }
 
     private func kindergartenAnalyticsProperties(
@@ -752,6 +850,8 @@ public final class SearchViewModel {
             "source": .string(source),
             "result_count": .int(results.count),
             "has_reviews": .bool(!reviews(for: kindergarten.kindercode).isEmpty),
+            // 후기 1건과 10건은 사용자 경험이 전혀 다르다. 유무만으로는 구분되지 않아 건수를 함께 보낸다.
+            "review_count": .int(reviews(for: kindergarten.kindercode).count),
             "has_vacancy": .bool(vacancyCount(for: kindergarten.kindercode) > 0),
         ]
 
@@ -788,7 +888,9 @@ public final class SearchViewModel {
 
     private func setSearchText(_ text: String, refreshSuggestions: Bool, applyAsResultQuery: Bool) {
         searchText = text
-        resultQuery = applyAsResultQuery ? text : ""
+        // 조합 중인 한글 자모(`강ㄴ`의 끝 `ㄴ`)를 떼고 검색한다. 떼지 않으면 타이핑 도중
+        // 결과가 0건이 되어 빈 결과 화면이 깜빡인다.
+        resultQuery = applyAsResultQuery ? SearchQueryPolicy.normalizedQuery(text) : ""
         refresh()
 
         if refreshSuggestions {

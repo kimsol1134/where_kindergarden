@@ -21,3 +21,6 @@ method,공유 방식,string,event,Compare Shared에서 사용. kakao 또는 syst
 sort,정렬 기준,string,event,Filter Applied의 정렬 옵션 (SortOption rawValue). distance / name 등.,distance
 from_tab,이전 탭,string,event,Tab Changed 직전에 활성화되어 있던 탭 이름.,search
 to_tab,이후 탭,string,event,Tab Changed로 새로 활성화된 탭 이름.,compare
+review_count,후기 건수,number,event,해당 유치원에 연결된 외부 후기 링크 수. has_reviews만으로는 후기 1건과 10건이 구분되지 않아 함께 수집한다.,5
+trigger,리뷰 요청 경로,string,event,Review Prompt Triggered를 유발한 행동. compare_viewed / favorite_milestone.,compare_viewed
+count,발동 시점 개수,number,event,Review Prompt Triggered 시점의 비교 중 유치원 수 또는 즐겨찾기 총 개수.,2

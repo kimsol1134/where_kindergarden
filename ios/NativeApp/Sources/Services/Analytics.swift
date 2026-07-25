@@ -24,6 +24,17 @@ public enum AnalyticsEvent: String, Sendable {
     case compareShared     = "Compare Shared"
     case filterApplied     = "Filter Applied"
     case tabChanged        = "Tab Changed"
+
+    // MARK: 후기 관련
+
+    /// 상세 화면에서 외부 후기 링크를 눌러 앱 밖으로 나간 시점.
+    case reviewLinkTapped  = "Review Link Tapped"
+    /// 후기가 없는 유치원에서 제보 폼으로 이동한 시점.
+    case reviewSubmitOpened = "Review Submit Opened"
+    /// 앱스토어 리뷰 요청을 시스템에 호출한 시점. 실제 노출 여부는 iOS가 결정하므로 보장되지 않는다.
+    case reviewPromptTriggered = "Review Prompt Triggered"
+    /// 더보기 탭에서 앱스토어 리뷰 작성 링크를 누른 시점.
+    case appStoreReviewTapped = "App Store Review Tapped"
 }
 
 public protocol AnalyticsTracking: AnyObject {
