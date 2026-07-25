@@ -15,6 +15,7 @@ public final class CompareViewModel {
     private let analytics: AnalyticsTracking?
     private let router: AppRouter
     private let configuration: NativeAppConfiguration
+    private let reviewPrompt: ReviewPromptCoordinator?
 
     public init(
         compareRepo: any CompareStoring,
@@ -24,7 +25,8 @@ public final class CompareViewModel {
         compareUseCase: CompareUseCase = CompareUseCase(),
         analytics: AnalyticsTracking? = nil,
         router: AppRouter,
-        configuration: NativeAppConfiguration
+        configuration: NativeAppConfiguration,
+        reviewPrompt: ReviewPromptCoordinator? = nil
     ) {
         self.compareRepo = compareRepo
         self.kindergartenRepo = kindergartenRepo
@@ -34,6 +36,7 @@ public final class CompareViewModel {
         self.analytics = analytics
         self.router = router
         self.configuration = configuration
+        self.reviewPrompt = reviewPrompt
     }
 
     // MARK: - Computed Properties
@@ -82,9 +85,14 @@ public final class CompareViewModel {
     }
 
     public func trackCompareViewed() {
+        let count = comparedKindergartens.count
         analytics?.track(event: .compareViewed, properties: [
-            "compare_count": .int(comparedKindergartens.count),
+            "compare_count": .int(count),
         ])
+
+        // 2곳 이상을 실제로 비교한 시점이 이 앱의 핵심 가치를 경험한 가장 강한 신호다.
+        // D1 재방문이 10% 미만이라 다음 세션을 기다릴 수 없으므로 여기서 요청한다.
+        reviewPrompt?.requestReviewIfEligible(trigger: .compareViewed, count: count)
     }
 
     public func shareKakao(names: [String]) -> URL? {

@@ -16,9 +16,13 @@ struct KindergartenDetailSheet: View {
     let isFavorite: Bool
     let compareCount: Int
     let fitReasons: [KindergartenFitReason]
+    /// 후기 제보 폼 주소. 폼이 아직 설정되지 않았으면 `nil`이고 제보 진입점은 숨긴다.
+    let reviewSubmissionURL: URL?
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
     let onNavigateToCompare: () -> Void
+    let onReviewLinkTapped: (ReviewLink) -> Void
+    let onSubmitReviewTapped: () -> Void
 
     // MARK: - Computed Properties
 
@@ -431,9 +435,7 @@ struct KindergartenDetailSheet: View {
         DetailSectionCard(title: reviews.isEmpty ? "후기" : "후기 (\(reviews.count)건)") {
             VStack(alignment: .leading, spacing: 10) {
                 if reviews.isEmpty {
-                    Text("아직 등록된 후기가 없어요.")
-                        .font(.subheadline)
-                        .foregroundStyle(slateBlue)
+                    reviewEmptyState
                 } else {
                     ForEach(showAllReviews ? reviews : Array(reviews.prefix(3))) { review in
                         if let url = URL(string: review.url) {
@@ -441,6 +443,9 @@ struct KindergartenDetailSheet: View {
                                 ReviewCard(review: review)
                             }
                             .buttonStyle(.plain)
+                            .simultaneousGesture(TapGesture().onEnded {
+                                onReviewLinkTapped(review)
+                            })
                         } else {
                             ReviewCard(review: review)
                         }
@@ -465,7 +470,63 @@ struct KindergartenDetailSheet: View {
                         .buttonStyle(.plain)
                     }
                 }
+
+                if !reviews.isEmpty {
+                    submitReviewLink(title: "다른 후기를 알고 계신가요?")
+                }
             }
+        }
+    }
+
+    /// 후기가 없을 때의 화면.
+    ///
+    /// 전국 유치원의 약 77%가 후기 0건이라 이 화면은 상세 시트에서 가장 자주 보이는 상태 중 하나다.
+    /// 안내 문구만 두고 끝내지 않고 제보 경로로 연결한다.
+    private var reviewEmptyState: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("아직 등록된 후기가 없어요.")
+                .font(.subheadline)
+                .foregroundStyle(slateBlue)
+
+            if reviewSubmissionURL != nil {
+                Text("이 유치원에 대해 쓴 블로그나 카페 글을 보신 적 있다면 링크를 알려주세요. 확인 후 다른 학부모에게도 보여드릴게요.")
+                    .font(.footnote)
+                    .foregroundStyle(slateSoft)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
+            submitReviewLink(title: "후기 링크 알려주기")
+        }
+    }
+
+    /// 제보 폼 진입점. 폼이 설정되지 않은 빌드에서는 아무것도 렌더링하지 않는다.
+    @ViewBuilder
+    private func submitReviewLink(title: String) -> some View {
+        if let reviewSubmissionURL {
+            Link(destination: reviewSubmissionURL) {
+                HStack(spacing: 8) {
+                    Image(systemName: "plus.bubble")
+                        .font(.footnote.weight(.semibold))
+                    Text(title)
+                        .font(.footnote.weight(.semibold))
+                    Spacer(minLength: 0)
+                    Image(systemName: "arrow.up.right")
+                        .font(.caption2.weight(.bold))
+                }
+                .foregroundStyle(jadeDeep)
+                .padding(.vertical, 11)
+                .padding(.horizontal, 14)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(
+                    RoundedRectangle(cornerRadius: CornerRadius.medium, style: .continuous)
+                        .fill(jadeGreen.opacity(0.12))
+                )
+            }
+            .buttonStyle(.plain)
+            .simultaneousGesture(TapGesture().onEnded {
+                onSubmitReviewTapped()
+            })
+            .accessibilityLabel(Text(title))
         }
     }
 
