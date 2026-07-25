@@ -83,6 +83,39 @@ const HANGUL = /[가-힣]/;
  * 매칭되는 오탐이 실제로 다수 있었다. 이름 바로 앞 글자가 한글이면
  * 다른 유치원 이름의 일부로 보고 제외한다.
  */
+/**
+ * 글에 언급된 지역이 이 유치원의 시군구와 맞는지 검사한다.
+ *
+ * 동명 유치원이 전국에 흔해서(예은·중앙·성심·혜화·명성·강남유치원 등) 시도 단위
+ * 검증만으로는 부족하다. 실제로 천안 동심유치원에 인천 부평 글이, 부산 명성유치원에
+ * 서울 관악구 글이, 의정부 예지유치원에 원주 글이 붙는 오매칭이 다수 발생했다.
+ *
+ * 글에 **다른** 시군구만 등장하고 이 유치원의 시군구는 없으면 다른 지역 글로 본다.
+ * 어떤 시군구도 언급되지 않은 글은 판단 근거가 없으므로 통과시키지 않는다.
+ */
+function districtMatches(text: string, address: string, allDistricts: Set<string>): boolean {
+  const parts = address.split(/\s+/);
+  if (parts.length < 2) return false;
+
+  // "경기도 성남시 분당구" → ["성남시","분당구"], "서울특별시 강남구" → ["강남구"]
+  const own = parts.slice(1, 3).filter((p) => /(시|군|구)$/.test(p));
+  if (own.length === 0) return false;
+
+  const flat = text.replace(/\s+/g, '');
+  // 접미사를 뗀 형태도 함께 본다 ("분당구" → "분당", "성남시" → "성남")
+  const ownForms = own.flatMap((d) => [d, d.replace(/(시|군|구)$/, '')]).filter((s) => s.length >= 2);
+  if (ownForms.some((f) => flat.includes(f))) return true;
+
+  // 자기 지역은 안 나오는데 다른 시군구가 나오면 다른 지역 글이다.
+  for (const other of allDistricts) {
+    if (ownForms.includes(other)) continue;
+    if (flat.includes(other)) return false;
+  }
+
+  // 어떤 지역 단서도 없으면 확신할 수 없으므로 통과시키지 않는다.
+  return false;
+}
+
 function nameAppearsStandalone(text: string, name: string): boolean {
   const hay = text.replace(/\s+/g, '');
   const needle = name.replace(/\s+/g, '');
@@ -128,6 +161,17 @@ function loadRaw(): Map<string, RawUrlEntry[]> {
 // ---------------------------------------------------------------------------
 
 const kindergartens = loadKindergartens();
+
+/** 전국 시군구 명칭 집합. 다른 지역 글을 가려내는 데 쓴다. */
+const ALL_DISTRICTS = new Set<string>();
+for (const { address } of kindergartens.values()) {
+  for (const part of address.split(/\s+/).slice(1, 3)) {
+    if (/(시|군|구)$/.test(part) && part.length >= 3) {
+      ALL_DISTRICTS.add(part);
+      ALL_DISTRICTS.add(part.replace(/(시|군|구)$/, ''));
+    }
+  }
+}
 const published = loadPublished();
 const rawBySido = loadRaw();
 
@@ -148,6 +192,7 @@ const stats = {
   regionMismatch: 0,
   nameNotInTitle: 0,
   noReviewIntent: 0,
+  districtMismatch: 0,
   accepted: 0,
 };
 
@@ -220,6 +265,12 @@ for (const [sido, entries] of rawBySido) {
       continue;
     }
 
+    // 동명 유치원 오매칭 차단. 시도 검증만으로는 부족하다.
+    if (!districtMatches(`${title} ${snippet}`, kg.address, ALL_DISTRICTS)) {
+      stats.districtMismatch++;
+      continue;
+    }
+
     seenUrls.add(e.url);
     stats.accepted++;
     if (!accepted.has(sido)) accepted.set(sido, []);
@@ -245,6 +296,7 @@ console.log(`  지역 불일치       ${stats.regionMismatch}`);
 console.log(`  점수 미달         ${stats.lowScore}`);
 console.log(`  제목에 유치원명 없음 ${stats.nameNotInTitle}`);
 console.log(`  후기 의도 없음    ${stats.noReviewIntent}`);
+console.log(`  시군구 불일치     ${stats.districtMismatch}`);
 console.log(`  ─────────────────────────`);
 console.log(`  통과              ${stats.accepted}\n`);
 
