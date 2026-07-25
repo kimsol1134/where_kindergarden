@@ -92,6 +92,42 @@
 | `Compare Shared` | `compareShared` | 공유 완료 시 | `method: String`, `compare_count: Int` | - |
 | `Filter Applied` | `filterApplied` | Apply 버튼 탭 또는 슬라이더 조작 완료(500ms debounce) 후 | `radius: Int`, `sort: String` | - |
 | `Tab Changed` | `tabChanged` | 탭 바에서 탭 전환 시 | `from_tab: String`, `to_tab: String` | - |
+| `Review Link Tapped` | `reviewLinkTapped` | 상세 화면에서 외부 후기 링크를 눌러 앱 밖으로 이동 시 | `kindergarten_id: String`, `kindercode: String`, `source: String`, `review_count: Int` | - |
+| `Review Submit Opened` | `reviewSubmitOpened` | 후기 제보 Google Form으로 이동 시 | `kindergarten_id: String`, `kindercode: String`, `review_count: Int` | - |
+| `Review Prompt Triggered` | `reviewPromptTriggered` | 앱스토어 리뷰 요청을 시스템에 호출한 시점 | `trigger: String`, `count: Int` | - |
+| `App Store Review Tapped` | `appStoreReviewTapped` | 더보기 탭의 앱스토어 리뷰 링크 탭 시 | `source: String` | - |
+
+### 4.1.1 검색 계측 디바운스 (중요)
+
+`Search Executed`와 `Empty State Shown`은 **입력이 멎은 뒤 600ms 후에 한 번만** 발생한다
+(`SearchViewModel.scheduleSearchAnalytics`).
+
+디바운스 이전에는 검색창이 글자마다 `refresh()`를 호출해 "강남"을 입력하는 동안
+`강` · `강ㄴ` · `강나` · `강남`이 각각 별개의 검색 실행으로 기록됐다. 그 결과 Mixpanel에서
+결과 없는 검색어 상위권이 `ㅇ` · `ㅅ` · `ㄱ` 같은 조합 중 자모로 채워졌다.
+
+**2026-07-25 이전 데이터는 이 왜곡을 포함하므로 그 이후 구간과 직접 비교하지 말 것.**
+디바운스 도입 후 `Search Executed` 건수는 크게 줄어드는 것이 정상이다.
+
+조합 중 자모는 `SearchQueryPolicy.normalizedQuery`가 잘라내므로 `search_query`에는
+확정된 검색어만 기록된다.
+
+### 4.1.2 앱스토어 리뷰 요청 정책
+
+D1 재방문율이 10% 미만이라 "설치 N일 후" 규칙은 대상자가 거의 남지 않는다.
+따라서 첫 세션 안의 가치 경험 시점에 요청한다 (`ReviewPromptPolicy`).
+
+| 항목 | 값 |
+|------|-----|
+| 발동 경로 | `compare_viewed` (비교 2곳 이상 조회), `favorite_milestone` (즐겨찾기 2곳째) |
+| 세션당 최대 | 1회 (두 경로 합산) |
+| 앱 버전당 최대 | 1회 |
+| 최소 재요청 간격 | 90일 |
+| 연간 최대 | 3회 (iOS 시스템 한도와 동일) |
+
+`Review Prompt Triggered`는 **호출**을 의미하며 실제 노출을 보장하지 않는다.
+iOS가 표시 여부를 결정하고 앱에 알려주지 않으므로, 이 이벤트를 리뷰 획득 수로 해석하면 안 된다.
+실제 성과는 App Store Connect의 평점 수로 확인한다.
 
 **기존 이벤트 변경 사항:**
 - `filterChanged` → `filterApplied` (슬라이더 드래그마다가 아닌 commit 시점에만 발생)
@@ -117,6 +153,9 @@
 | `query_type` | String | `Search Executed`에서 필수 | `"keyword"` / `"location"` | 검색 방식 구분. 빈 쿼리는 `location`, 그 외는 `keyword` |
 | `from_tab` | String | `Tab Changed`에서 필수 | `"search"` | 이전 탭. `search` / `compare` / `saved` / `more` |
 | `to_tab` | String | `Tab Changed`에서 필수 | `"compare"` | 이동한 탭. `search` / `compare` / `saved` / `more` |
+| `review_count` | Number (Int) | 조건부 | `5` | 해당 유치원의 외부 후기 링크 수. `has_reviews`만으로는 후기 1건과 10건이 구분되지 않아 함께 수집한다. `Detail Opened`, `Review Link Tapped`, `Review Submit Opened`에서 필수 |
+| `trigger` | String | `Review Prompt Triggered`에서 필수 | `"compare_viewed"` | 리뷰 요청을 유발한 행동. `compare_viewed` / `favorite_milestone` |
+| `count` | Number (Int) | `Review Prompt Triggered`에서 필수 | `2` | 발동 시점의 비교 중 유치원 수 또는 즐겨찾기 총 개수 |
 
 ---
 
@@ -215,7 +254,8 @@ Lexicon 공식 bulk-import API는 아직 공개 안 됨.)
 
 ### Lexicon 등록 후 체크리스트
 
-- [ ] Events 탭: 13개 이벤트(`App Launched`, `Search Executed`, `Empty State Shown`, `Result Tapped`, `Detail Opened`, `Favorite Added`, `Favorite Removed`, `Comparison Added`, `Comparison Removed`, `Compare Viewed`, `Compare Shared`, `Filter Applied`, `Tab Changed`) 모두 설명 입력 완료
+- [ ] Events 탭: 17개 이벤트(`App Launched`, `Search Executed`, `Empty State Shown`, `Result Tapped`, `Detail Opened`, `Favorite Added`, `Favorite Removed`, `Comparison Added`, `Comparison Removed`, `Compare Viewed`, `Compare Shared`, `Filter Applied`, `Tab Changed`, `Review Link Tapped`, `Review Submit Opened`, `Review Prompt Triggered`, `App Store Review Tapped`) 모두 설명 입력 완료
+- [ ] Properties 탭: `review_count`, `count`를 Number 타입으로 지정
 - [ ] Properties 탭: `result_count`, `compare_count`를 Number 타입으로 지정 (Numeric Aggregation 활성화 확인)
 - [ ] Properties 탭: `has_results`, `is_testflight`를 Boolean 타입으로 지정
 - [ ] Cohort Builder에서 `days_since_install` 기반 코호트 생성 예시 작성 — 예: "D0 cohort = `days_since_install = 0` AND `App Launched` 발생", "D7 retained = `App Launched` 발생 AND `days_since_install = 7`"

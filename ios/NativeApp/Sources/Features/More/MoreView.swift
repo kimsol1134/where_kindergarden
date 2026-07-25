@@ -27,6 +27,33 @@ public struct MoreView: View {
     public var body: some View {
         NavigationStack {
             List {
+                // 리뷰 진입점을 목록 맨 위에 둔다. 이전에는 세 번째 섹션에 있어서
+                // 스크롤하지 않으면 보이지 않았다.
+                Section {
+                    Link(destination: URL(string: "itms-apps://apps.apple.com/app/id6758149645?action=write-review")!) {
+                        HStack(spacing: 12) {
+                            Image(systemName: "star.fill")
+                                .font(.body.weight(.medium))
+                                .foregroundStyle(.white)
+                                .frame(width: 28, height: 28)
+                                .background(sunYellow, in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("앱스토어에 리뷰 남기기")
+                                    .font(.subheadline.weight(.medium))
+                                    .foregroundStyle(inkBlack)
+                                Text("한 줄 후기가 다른 학부모에게 큰 도움이 돼요")
+                                    .font(.caption)
+                                    .foregroundStyle(slateSoft)
+                            }
+                        }
+                    }
+                    .simultaneousGesture(TapGesture().onEnded {
+                        viewModel.trackAppStoreReviewTapped()
+                    })
+                    .accessibilityElement(children: .combine)
+                }
+
                 Section {
                     SettingsRow(
                         title: "문의하기",
@@ -72,22 +99,6 @@ public struct MoreView: View {
                     StatRow(title: "데이터 버전", value: reviewVersionText)
                 } header: {
                     MoreSectionHeader(title: "정보")
-                }
-
-                Section {
-                    Link(destination: URL(string: "itms-apps://apps.apple.com/app/id6758149645?action=write-review")!) {
-                        HStack(spacing: 8) {
-                            Image(systemName: "star.fill")
-                                .font(.subheadline)
-                                .foregroundStyle(sunYellow)
-                            Text("앱스토어에 리뷰 남기기")
-                                .font(.subheadline.weight(.medium))
-                                .foregroundStyle(jadeDeep)
-                        }
-                        .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.plain)
-                    .listRowBackground(sunYellow.opacity(0.08))
                 }
 
                 Section {

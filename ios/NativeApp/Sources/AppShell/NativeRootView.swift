@@ -53,6 +53,12 @@ public struct NativeRootView: View {
             ? MixpanelAnalytics.shared
             : OSLogAnalytics()
         let router = AppRouter()
+        // 검색·비교 두 경로가 같은 이력을 공유해야 세션당 한 번만 요청된다.
+        let reviewPrompt = ReviewPromptCoordinator(
+            prompter: StoreKitReviewPrompter(),
+            store: persistence,
+            analytics: analytics
+        )
 
         // Store config for service init
         self.configuration = config
@@ -73,7 +79,8 @@ public struct NativeRootView: View {
             analytics: analytics,
             router: router,
             persistence: persistence,
-            configuration: config
+            configuration: config,
+            reviewPrompt: reviewPrompt
         ))
         _compareVM = State(initialValue: CompareViewModel(
             compareRepo: compareRepo,
@@ -83,7 +90,8 @@ public struct NativeRootView: View {
             compareUseCase: compareUseCase,
             analytics: analytics,
             router: router,
-            configuration: config
+            configuration: config,
+            reviewPrompt: reviewPrompt
         ))
         _savedVM = State(initialValue: SavedViewModel(
             favoriteRepo: favoriteRepo,
