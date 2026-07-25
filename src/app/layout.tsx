@@ -5,25 +5,35 @@ import { KakaoSDKProvider } from '@/components/KakaoSDKProvider';
 import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
+import { OG_IMAGE } from '@/lib/constants';
 
 const SITE_URL = 'https://where-kindergarden.vercel.app';
 const FAVICON_URL = `${SITE_URL}/favicon-20260612.png`;
-const OG_IMAGE_URL = `${SITE_URL}/og-image-20260612.png`;
+const OG_IMAGE_URL = `${SITE_URL}${OG_IMAGE.path}`;
 const OG_IMAGE_ALT =
-  '유치원 알리미 - 우리동네 유치원, 내 주변 유치원을 찾고 한눈에 비교하세요';
+  '우리동네 유치원 - 내 주변 유치원 검색 및 비교';
+const HOME_SEO_TITLE = '내 주변 유치원 찾기 | 우리동네 유치원';
+const HOME_SEO_DESCRIPTION =
+  '현재 위치나 주소 기준으로 가까운 유치원을 찾고 지도, 거리, 정원, 셔틀버스, 방과후, 급식 정보를 한눈에 비교하세요.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
-    template: '%s | 유치원 알리미 - 우리동네 유치원',
+    default: HOME_SEO_TITLE,
+    template: '%s | 우리동네 유치원',
   },
-  description:
-    '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하세요. 내 주변 유치원을 거리순으로 찾고 통학버스, 급식, 방과후 과정을 비교할 수 있습니다.',
+  description: HOME_SEO_DESCRIPTION,
   keywords: [
     '유치원',
     '유치원 검색',
     '주변 유치원',
+    '주변 유치원 찾기',
+    '내 주변 유치원',
+    '내주변 유치원',
+    '가까운 유치원',
+    '유치원 위치',
+    '유치원 지도',
+    '유치원 거리비교',
     '유치원 비교',
     '우리동네 유치원',
     '유치원 찾기',
@@ -49,29 +59,27 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: SITE_URL,
-    siteName: '유치원 알리미 - 우리동네 유치원',
-    title: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
-    description:
-      '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하고, 주변 유치원을 한눈에 비교해보세요.',
+    siteName: '우리동네 유치원',
+    title: HOME_SEO_TITLE,
+    description: HOME_SEO_DESCRIPTION,
     images: [
       {
         url: OG_IMAGE_URL,
-        width: 1200,
-        height: 630,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
         alt: OG_IMAGE_ALT,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '유치원 알리미 - 우리동네 유치원, 찾기·비교·후기',
-    description:
-      '교육부 유치원 알리미 데이터와 학부모 후기를 광고 없이 확인하세요.',
+    title: HOME_SEO_TITLE,
+    description: HOME_SEO_DESCRIPTION,
     images: [
       {
         url: OG_IMAGE_URL,
-        width: 1200,
-        height: 630,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
         alt: OG_IMAGE_ALT,
       },
     ],

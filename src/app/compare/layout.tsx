@@ -6,16 +6,16 @@ import { OG_IMAGE } from '@/lib/constants';
  * https://searchadvisor.naver.com/guide/markup-content
  */
 export const metadata: Metadata = {
-  title: '유치원 비교',
+  title: '유치원 비교 - 거리·정원·셔틀 한눈에',
   description:
-    '선택한 유치원들을 한눈에 비교해보세요. 교육비, 교사 비율, 특수학급, 통학차량 등 상세 정보를 비교할 수 있습니다.',
+    '후보 유치원을 나란히 놓고 거리, 정원, 교사 현황, 특수학급, 셔틀버스, 급식 정보를 한눈에 비교하세요.',
   alternates: {
     canonical: '/compare',
   },
   openGraph: {
-    title: '유치원 비교 - 우리동네 유치원',
+    title: '유치원 비교 - 거리·정원·셔틀 한눈에 | 우리동네 유치원',
     description:
-      '선택한 유치원들을 한눈에 비교해보세요. 교육비, 교사 비율, 특수학급 등 상세 정보를 비교할 수 있습니다.',
+      '후보 유치원을 나란히 놓고 거리, 정원, 교사 현황, 특수학급, 셔틀버스, 급식 정보를 비교하세요.',
     url: '/compare',
     images: [
       {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '유치원 비교 - 우리동네 유치원',
+    title: '유치원 비교 - 거리·정원·셔틀 한눈에 | 우리동네 유치원',
     description:
-      '선택한 유치원들을 한눈에 비교해보세요. 교육비, 교사 비율, 특수학급 등 상세 정보를 비교할 수 있습니다.',
+      '후보 유치원을 나란히 놓고 거리, 정원, 교사 현황, 특수학급, 셔틀버스, 급식 정보를 비교하세요.',
     images: [OG_IMAGE.path],
   },
 };

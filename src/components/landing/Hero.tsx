@@ -22,16 +22,16 @@ export function Hero() {
           <div>
             <div className="animate-fade-up delay-100">
               <h1 className="text-[2.25rem] font-bold leading-[1.1] tracking-[-0.04em] text-[var(--brand-ink)] sm:text-5xl md:text-6xl">
-                우리 아이 첫 유치원,
+                내 주변 유치원 찾기,
                 <br />
-                <span className="text-[var(--brand-leaf)]">가장 쉽고 똑똑하게</span>{' '}
-                찾는 법
+                <span className="text-[var(--brand-leaf)]">지도에서 거리순으로</span>{' '}
+                비교
               </h1>
             </div>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-[var(--brand-ink-soft)] animate-fade-up delay-200 sm:text-lg sm:leading-8">
-              어떤 유치원이 우리 아이에게 맞을지, 어디가 가깝고 안전한지.
-              고민만 하던 시간을 줄이고 확신을 가질 수 있도록 도와드립니다.
+              현재 위치나 주소를 기준으로 가까운 유치원을 찾고, 정원,
+              셔틀버스, 방과후, 급식 정보를 부모가 보는 순서대로 확인하세요.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 animate-fade-up delay-300 sm:flex-row sm:gap-4">

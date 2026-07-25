@@ -56,3 +56,8 @@ scripts/data-output/*
 # iOS native build artifacts
 ios/DerivedData/
 .env*.local
+
+# App Store 심사 연락처 — 개인 휴대폰 번호이므로 저장소에 두지 않는다.
+# 실제 값은 App Store Connect에 이미 설정돼 있고, 이 파일이 없으면
+# fastlane deliver가 해당 필드를 건드리지 않고 ASC 값을 그대로 유지한다.
+ios/WhereKindergartenNative/fastlane/metadata/review_information/phone_number.txt
