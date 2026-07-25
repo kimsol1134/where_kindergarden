@@ -19,13 +19,13 @@ import Foundation
 public enum ReviewSubmissionLink {
 
     /// `https://docs.google.com/forms/d/e/<여기>/viewform` 의 폼 ID.
-    public static let formID = ""
+    public static let formID = "1FAIpQLSftp8Z2T2xUNCsZ2xRase-SxYJI2y9fgSga9dsjAhC89h8YeA"
 
-    /// 유치원명이 들어갈 질문의 `entry.` 번호. 예: `"entry.123456789"`
-    public static let kindergartenNameEntryID = ""
+    /// 유치원명이 들어갈 질문의 `entry.` 번호.
+    public static let kindergartenNameEntryID = "entry.1232816157"
 
     /// 유치원 코드가 들어갈 질문의 `entry.` 번호.
-    public static let kindercodeEntryID = ""
+    public static let kindercodeEntryID = "entry.927994217"
 
     /// 세 상수가 모두 채워졌을 때만 제보 진입점을 노출한다.
     public static var isConfigured: Bool {
