@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 136,
-  "kindergartenCount": 32,
+  "version": "2026-07-26",
+  "totalCount": 138,
+  "kindergartenCount": 34,
   "reviews": {
     "1ecec08c-ef28-b044-e053-0a32095ab044": [
       {
@@ -3563,42 +3563,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave717-3d9a3c77",
-        "kindergartenId": "1ecec08d-0b4f-b044-e053-0a32095ab044",
-        "title": "대전 노란풍차유치원 교육과학관 견학 기록",
-        "url": "https://www.instagram.com/p/C-jSApaSIA4/",
-        "source": "other",
-        "sourceName": "Instagram · 노란풍차유치원",
-        "snippet": "노란풍차유치원 친구들이 교육과학관을 찾아 직접 보고 만지며 과학 체험을 한 게시물입니다.",
-        "summary": "유아들이 과학 체험물을 통해 탐구와 관찰 경험을 쌓은 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "science-center",
-          "field-trip",
-          "daejeon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave717-3d9a3c77",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C-jSApaSIA4/",
-          "normalizedUrl": "instagram.com/p/c-jsapasia4",
-          "normalizedText": "노란풍차유치원 교육과학관 견학 직접 보고 만지고 체험",
-          "htmlSnapshotHash": "sns-wave717-3d9a3c77",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/C-jSApaSIA4/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave717"
       }
     ],
     "1ecec08c-f57e-b044-e053-0a32095ab044": [
@@ -6100,6 +6064,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T19:20:00.000Z",
         "approvedBy": "codex-manual-sns-wave670"
+      },
+      {
+        "id": "rev-sns-wave743-a3c769b8",
+        "kindergartenId": "1ecec08d-01ca-b044-e053-0a32095ab044",
+        "title": "대전 래미안유치원 내 모습 꾸미기 미술활동 기록",
+        "url": "https://www.instagram.com/p/DaO3c9xGGWx/",
+        "source": "other",
+        "sourceName": "Instagram · 래미안유치원",
+        "snippet": "래미안유치원이 가장동 유치원 태그와 함께 클레이와 종이 앞머리 자르기 등 내 모습 꾸미기 미술활동을 소개한 공개 게시물입니다.",
+        "summary": "대전 서구 래미안유치원의 내 모습 꾸미기 미술활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "art-activity",
+          "self-portrait",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave743-a3c769b8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaO3c9xGGWx/",
+          "normalizedUrl": "instagram.com/p/dao3c9xggwx",
+          "normalizedText": "대전 가장동 래미안유치원 미술활동 내모습꾸미기 클레이",
+          "htmlSnapshotHash": "sns-wave743-a3c769b8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaO3c9xGGWx/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave743"
       }
     ],
     "1ecec08c-f03d-b044-e053-0a32095ab044": [
@@ -6522,7 +6523,30 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave715"
       }
+    ],
+    "e2bff4db-b0ed-42c9-be4d-3df55fa0f5aa": [
+      {
+        "id": "rev-99852257",
+        "title": "유치원] 프렌즈유치원 / 키아... 국제어학원) 입학 설명회 후기",
+        "url": "https://blog.naver.com/joonaring_/224055268248",
+        "source": "naver_blog",
+        "sourceName": "summer breeze",
+        "snippet": "[용인 광교 유치원] 프렌즈유치원 / KHIA(코리아헤럴드 국제어학원) 입학 설명회 후기 아장아장 정민이가... 일단은 아이미래유치원은 10/31(금) 설명회 참석 예정이라, 10/25(토) 프렌즈유치원, 코리아헤럴드...",
+        "date": "2025-10-27",
+        "collectedAt": "2026-01-30T02:57:54.968Z"
+      }
+    ],
+    "1ecec08c-f57b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852258",
+        "title": "청아 유치원 입학설명회 방문 후기",
+        "url": "https://blog.naver.com/happy_siwoo22/224079861849",
+        "source": "naver_blog",
+        "sourceName": "꽃밭에는 꽃들이 살지요",
+        "snippet": "위치한 청아유치원 입학 설명회를 다녀왔어요. 전화번호 055-342-0342 경남 김해시 진영읍 하계로 40... 유치원 1층 탐방  엄마의 마음은 늘 고민 어린이집을 보내다가 유치원들을 차례로 견학해보니 시설 하나하나가...",
+        "date": "2025-11-18",
+        "collectedAt": "2026-01-30T02:58:02.741Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

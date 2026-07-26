@@ -1,0 +1,61 @@
+{
+  "version": "2026-07-26",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08d-07ff-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a47a575c",
+        "kindergartenId": "1ecec08d-07ff-b044-e053-0a32095ab044",
+        "title": "남해유치원 소방훈련 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRlSJ8ijwrn/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 남해유치원에서 소방훈련 중이며 소방차와 소방대원이 왔다는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-drill"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a47a575c",
+        "structuredFields": {
+          "kindergartenName": "남해유치원",
+          "kindergartenAddress": "경상남도 남해군 망운로61번길 44",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRlSJ8ijwrn%22%20%22%EB%82%A8%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남해유치원 정확 명칭과 남해 지역 단서가 로컬 원장부의 경남 남해군 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRlSJ8ijwrn/",
+          "normalizedUrl": "instagram.com/reel/drlsj8ijwrn",
+          "normalizedText": "남해유치원 소방훈련 instagram reel 검색 결과에서 남해유치원에서 소방훈련 중이며 소방차와 소방대원이 왔다는 단서가 확인된다.",
+          "htmlSnapshotHash": "a47a575c",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남해유치원",
+            "kindergartenAddress": "경상남도 남해군 망운로61번길 44",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRlSJ8ijwrn%22%20%22%EB%82%A8%ED%95%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남해유치원 정확 명칭과 남해 지역 단서가 로컬 원장부의 경남 남해군 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

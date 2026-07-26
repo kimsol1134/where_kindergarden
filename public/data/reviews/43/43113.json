@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 50,
-  "kindergartenCount": 6,
+  "version": "2026-07-26",
+  "totalCount": 51,
+  "kindergartenCount": 8,
   "reviews": {
     "1ecec08d-083c-b044-e053-0a32095ab044": [
       {
@@ -904,40 +904,14 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave719-8c3f1a18",
-        "kindergartenId": "1ecec08c-ff6a-b044-e053-0a32095ab044",
-        "title": "청주 지웰시티유치원 딸기밭 체험 기록",
-        "url": "https://www.instagram.com/reel/DWneoZLxPgF/",
-        "source": "other",
-        "sourceName": "Instagram · 지웰시티유치원",
-        "snippet": "지웰시티유치원 친구들이 딸기밭에서 딸기를 따고 맛보며 즐거워한 릴스입니다.",
-        "summary": "유아들이 딸기밭에서 수확의 즐거움을 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "strawberry-farm",
-          "field-trip",
-          "cheongju"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave719-8c3f1a18",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWneoZLxPgF/",
-          "normalizedUrl": "instagram.com/reel/dwneozlxpgf",
-          "normalizedText": "지웰시티유치원 딸기밭 체험 딸기 수확 체험",
-          "htmlSnapshotHash": "sns-wave719-8c3f1a18",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DWneoZLxPgF/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave719"
+        "id": "rev-99852381",
+        "title": "P.E.T.강의후기) 청주,지웰시티유치원에서 부모역할훈련 3차시...",
+        "url": "https://blog.naver.com/talkymommy/221272336792",
+        "source": "naver_blog",
+        "sourceName": "부모역할훈련소",
+        "snippet": "(청주, 지웰시티유치원은 흥덕구에 있더라고요. ^^) (첫 날 1차시 강의 전, 원장님께서 강사소개를 해주셨습니다. ^^) 봄날 아침, 오전 10시 30분부터 많은 엄마들이 모이셨습니다. 내 아이를 사랑으로 잘...",
+        "date": "2018-05-10",
+        "collectedAt": "2026-01-30T03:05:40.064Z"
       }
     ],
     "1ecec08d-0bfb-b044-e053-0a32095ab044": [
@@ -2290,42 +2264,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave718-e74c4eda",
-        "kindergartenId": "1ecec08c-f69c-b044-e053-0a32095ab044",
-        "title": "청주 유동유치원 아쿠아리움 나들이 기록",
-        "url": "https://www.instagram.com/reel/DTrhtC3EVm_/",
-        "source": "other",
-        "sourceName": "Instagram · 유동유치원",
-        "snippet": "유동유치원 친구들이 아쿠아리움에서 물고기와 가오리를 보고 수중 공연을 관람한 릴스입니다.",
-        "summary": "유아들이 아쿠아리움에서 바다 생물을 관찰하며 체험학습을 한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "aquarium",
-          "field-trip",
-          "cheongju"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave718-e74c4eda",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DTrhtC3EVm_/",
-          "normalizedUrl": "instagram.com/reel/dtrhtc3evm_",
-          "normalizedText": "유동유치원 아쿠아리움 물고기 가오리 수중 공연 견학",
-          "htmlSnapshotHash": "sns-wave718-e74c4eda",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DTrhtC3EVm_/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "1ecec08c-f248-b044-e053-0a32095ab044": [
@@ -2419,7 +2357,30 @@
         },
         "evidenceChecksum": "412f99d1"
       }
+    ],
+    "2c8c3c80-b3f3-477a-bb34-67c6d7603c01": [
+      {
+        "id": "rev-99852380",
+        "title": "[정보공유]오송 솔미유치원 2026학년도 입학서류 다운로드 및...",
+        "url": "https://blog.naver.com/nopigomcj/224112747954",
+        "source": "naver_blog",
+        "sourceName": "한솔노피곰 오송파라곤1차교실",
+        "snippet": "맞이하는 설명회날 홍보를 다녀오며! 26년도 신입생 제출서류 양식과 제출 방법 안내드립니다. 12월 24일까지 작성 후 오송솔미유치원에 제출하셔야 합니다! 첨부파일 2026. 오송솔미유치원 입학제출서류.hwp...",
+        "date": "2025-12-17",
+        "collectedAt": "2026-01-30T03:05:36.375Z"
+      }
+    ],
+    "1ecec08c-f63d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852382",
+        "title": "[복대동 유치원 설명회 후기] 지웰시티/아름드리/자연유치원",
+        "url": "https://blog.naver.com/dosimom_/224100733670",
+        "source": "naver_blog",
+        "sourceName": "도.시.맘의 맛집,육아,여행,일상 블로그",
+        "snippet": "애엄마가 되서 유치원 설명회 후기라니 감회가 새롭네요! 많관부 ~ ㅎㅎ 내년, 큰아이의 유치원 입학을 앞두고 생각보다 공개된 정보가 많지 않아 직접 입학설명회 가 본 경험을 바탕으로 도움이 될까 싶어...",
+        "date": "2025-12-07",
+        "collectedAt": "2026-01-30T03:05:40.064Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

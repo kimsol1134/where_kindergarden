@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 38,
-  "kindergartenCount": 14,
+  "version": "2026-07-26",
+  "totalCount": 45,
+  "kindergartenCount": 16,
   "reviews": {
     "1ecec08c-f585-b044-e053-0a32095ab044": [
       {
@@ -15,6 +15,16 @@
         "date": "2025-05-10",
         "collectedAt": "2026-02-18T06:13:58.391Z",
         "relevanceScore": 6
+      },
+      {
+        "id": "rev-99852205",
+        "title": "호돌유치원 후기 부산 사하구 당리동 절 정각사 5세 감동의...",
+        "url": "https://blog.naver.com/gusdk35486/221674411983",
+        "source": "naver_blog",
+        "sourceName": "같이의 가치를 아는 곳",
+        "snippet": "저희 온 가족 다 감동 받았거든요 일단 부산 사하구 당리동에 위치한 절 정각사 부설유치원인 호돌유치원은 산속에 있습니다. 그래서 보내고 싶어도 차량때문에 걱정이 되어서 고민하시는 어머님들이 많으시고...",
+        "date": "2019-10-11",
+        "collectedAt": "2026-01-30T02:53:57.820Z"
       }
     ],
     "1ecec08c-f354-b044-e053-0a32095ab044": [
@@ -464,43 +474,6 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave720-0b414b2f",
-        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
-        "title": "부산 하늘유치원 교보문고 견학 기록",
-        "url": "https://www.instagram.com/reel/DZuICO2yFBH/",
-        "source": "other",
-        "sourceName": "Instagram · 하늘유치원",
-        "snippet": "사하구 신평 하늘유치원 친구들이 교보문고에서 책과 서점 공간을 둘러본 릴스입니다.",
-        "summary": "유아들이 서점에서 책을 살펴보고 독서 흥미를 넓힌 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "bookstore",
-          "reading",
-          "field-trip",
-          "busan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave720-0b414b2f",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZuICO2yFBH/",
-          "normalizedUrl": "instagram.com/reel/dzuico2yfbh",
-          "normalizedText": "하늘유치원 사하구유치원 신평하늘유치원 교보문고 교보문고견학",
-          "htmlSnapshotHash": "sns-wave720-0b414b2f",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DZuICO2yFBH/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave720"
-      },
-      {
         "id": "rev-sns-wave722-0ff7d9fc",
         "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
         "title": "부산 신평 하늘유치원 쥬니멀 동물체험 기록",
@@ -610,6 +583,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-sns-wave737-14f5813a",
+        "kindergartenId": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+        "title": "부산 사하구 하늘유치원 하단도서관 견학 기록",
+        "url": "https://www.instagram.com/reel/DYQlT55AgCr/",
+        "source": "other",
+        "sourceName": "Instagram · 하늘유치원",
+        "snippet": "부산 하늘유치원이 하단도서관을 찾아 책 읽기와 도서관 공간 체험을 한 릴스입니다.",
+        "summary": "부산 사하구 하늘유치원의 하단도서관 견학 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-experience",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave737-14f5813a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYQlT55AgCr/",
+          "normalizedUrl": "instagram.com/reel/dyqlt55agcr",
+          "normalizedText": "부산 사하구 하늘유치원 하단도서관 견학 책읽기",
+          "htmlSnapshotHash": "sns-wave737-14f5813a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYQlT55AgCr/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave737"
       }
     ],
     "36627649-3e14-4655-b961-d249c0207cf8": [
@@ -889,6 +899,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave730"
+      },
+      {
+        "id": "rev-99852204",
+        "title": "2026 바다유치원 신입원아모집 안내",
+        "url": "https://blog.naver.com/badakid2016/224048428616",
+        "source": "naver_blog",
+        "sourceName": "부산 다대동 바다유치원",
+        "snippet": "내용은 사진을 참고해주시고, 바다유치원의 특성화 프로그램은 다음 게시물을 통해 자세히 확인해주세요! #유치원입학 #유보통합포털 #바다유치원 #교육은바다가잘합니다! #유치원입학설명회",
+        "date": "2025-10-21",
+        "collectedAt": "2026-01-30T02:53:54.029Z"
       }
     ],
     "1ecec08c-f14e-b044-e053-0a32095ab044": [
@@ -1351,6 +1371,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:57.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852519",
+        "title": "사하구 신평동 신익유치원 후기-시설이 낙후되어있고 선생님이 조아요",
+        "url": "http://cafe.naver.com/mkinno/13173",
+        "source": "naver_cafe",
+        "sourceName": "[ 부산맘스쿨 ] 학교 학원 병원 맛집 ...",
+        "snippet": "OO유치원 후기 - 시설이 좋고 방과후수업이 다양해요 2. 모든 항목을 *자세히* 작성해 주세요. ----------------------------------- [ 기본 정보 ] ▣ 교육기관명 : 신익유치원 ▣ 위치 : 부산광역시 사하구 비봉로 36 https://m.place....",
+        "date": null,
+        "collectedAt": "2026-07-26T08:29:21.020250"
       }
     ],
     "1ecec08c-ef10-b044-e053-0a32095ab044": [
@@ -1549,6 +1579,79 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave736-d6f5bd03",
+        "kindergartenId": "1ecec08c-ef42-b044-e053-0a32095ab044",
+        "title": "부산 사하구 봉우리유치원 부산 주제 요리활동 기록",
+        "url": "https://www.instagram.com/p/DaO4F1uhdRE/",
+        "source": "other",
+        "sourceName": "Instagram · 봉우리유치원",
+        "snippet": "봉우리유치원이 부산 주제를 마무리하며 지역 음식을 활용한 요리활동을 진행한 게시물입니다.",
+        "summary": "부산 봉우리유치원의 주제중심 요리활동과 지역 연계 수업을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave736-d6f5bd03",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaO4F1uhdRE/",
+          "normalizedUrl": "instagram.com/p/dao4f1uhdre",
+          "normalizedText": "부산 사하구 봉우리유치원 부산 주제 요리활동",
+          "htmlSnapshotHash": "sns-wave736-d6f5bd03",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaO4F1uhdRE/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave736"
+      },
+      {
+        "id": "rev-sns-wave743-9b4c6c9c",
+        "kindergartenId": "1ecec08c-ef42-b044-e053-0a32095ab044",
+        "title": "부산 봉우리유치원 요리활동 기록",
+        "url": "https://www.instagram.com/reel/DaK_ftkRuPF/",
+        "source": "other",
+        "sourceName": "Instagram · 봉우리유치원",
+        "snippet": "봉우리유치원이 유치원 요리활동의 즐거운 모습을 소개한 공개 릴스입니다.",
+        "summary": "부산 사하구 봉우리유치원의 요리활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave743-9b4c6c9c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaK_ftkRuPF/",
+          "normalizedUrl": "instagram.com/reel/dak_ftkrupf",
+          "normalizedText": "부산 봉우리유치원 요리활동 즐거워",
+          "htmlSnapshotHash": "sns-wave743-9b4c6c9c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaK_ftkRuPF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave743"
       }
     ],
     "7503d277-da3d-4087-83e8-21f5f0d0d815": [
@@ -1769,7 +1872,58 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave747"
       }
+    ],
+    "1ecec08d-0fa0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave735-67e1b611",
+        "kindergartenId": "1ecec08d-0fa0-b044-e053-0a32095ab044",
+        "title": "부산 사하구 호산나유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/reel/DaJmxDUTRsL/",
+        "source": "other",
+        "sourceName": "Instagram · 호산나유치원",
+        "snippet": "호산나유치원이 여름캠프에서 친구들과 시원한 물놀이를 한 장면을 소개한 릴스입니다.",
+        "summary": "부산 사하구 호산나유치원의 여름캠프 물놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-camp",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave735-67e1b611",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaJmxDUTRsL/",
+          "normalizedUrl": "instagram.com/reel/dajmxdutrsl",
+          "normalizedText": "부산 사하구 호산나유치원 여름캠프 물놀이",
+          "htmlSnapshotHash": "sns-wave735-67e1b611",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaJmxDUTRsL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave735"
+      }
+    ],
+    "9e91f2ec-5043-4927-a631-c55668c04c01": [
+      {
+        "id": "rev-eed20379",
+        "kindergartenId": "9e91f2ec-5043-4927-a631-c55668c04c01",
+        "title": "학부모 참관수업 당리초등학교 참석 후기",
+        "url": "https://blog.naver.com/lydiaej85/223675205550",
+        "source": "naver_blog",
+        "sourceName": "천사소녀은뎅 일상,여행이야기",
+        "snippet": "오늘은 한 달 전 방문했던 부산 사하구 당리초등학교 학부모 참관수업에 대한 후기를 남겨보려 합니다.... 당리초등학교 병설유치원 모집 팸플릿 당리초등학교 병설유치원 원생 모집 팸플릿도 함께 주셨습니다....",
+        "date": "2024-11-27",
+        "collectedAt": "2026-07-26T00:00:00.000Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

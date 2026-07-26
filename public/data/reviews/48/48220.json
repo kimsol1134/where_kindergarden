@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 11,
-  "kindergartenCount": 4,
+  "version": "2026-07-26",
+  "totalCount": 13,
+  "kindergartenCount": 5,
   "reviews": {
     "1ecec08c-fd6b-b044-e053-0a32095ab044": [
       {
@@ -357,6 +357,58 @@
           ]
         },
         "evidenceChecksum": "1e4695d4"
+      },
+      {
+        "id": "rev-c8e6d9bb",
+        "kindergartenId": "1ecec08c-f4dc-b044-e053-0a32095ab044",
+        "title": "통영 성민유치원 입학설명회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBggi-8P17R/",
+        "source": "other",
+        "sourceName": "Instagram · 통영 성민유치원",
+        "snippet": "검색 결과에서 통영 성민유치원의 입학설명회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c8e6d9bb",
+        "structuredFields": {
+          "kindergartenName": "성민유치원",
+          "kindergartenAddress": "경상남도 통영시 데메4길 46",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBggi-8P17R%22%20%22%ED%86%B5%EC%98%81%20%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성민유치원은 동명 후보가 있으나 통영 단서가 로컬 경남 통영시 성민유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBggi-8P17R/",
+          "normalizedUrl": "instagram.com/reel/dbggi-8p17r",
+          "normalizedText": "통영 성민유치원 입학설명회 instagram reel 검색 결과에서 통영 성민유치원의 입학설명회 단서가 확인된다.",
+          "htmlSnapshotHash": "c8e6d9bb",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성민유치원",
+            "kindergartenAddress": "경상남도 통영시 데메4길 46",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBggi-8P17R%22%20%22%ED%86%B5%EC%98%81%20%EC%84%B1%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성민유치원은 동명 후보가 있으나 통영 단서가 로컬 경남 통영시 성민유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-05df-b044-e053-0a32095ab044": [
@@ -496,7 +548,18 @@
         },
         "evidenceChecksum": "594f46e4"
       }
+    ],
+    "1ecec08c-eebe-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852449",
+        "title": "통영 유치원 성민 참여수업 뮬레 수업 참여 후기",
+        "url": "https://blog.naver.com/artn7720/223245931982",
+        "source": "naver_blog",
+        "sourceName": "아트앤하트 북신 미술교습소",
+        "snippet": "안녕하세요^-^ 오늘은 아트앤하트 선생님이 아닌~ 유아를 키우는 엄마로~ 통영 유치원 참여 수업 후기... 유치원은 통영에 성민 유치원과 중앙 유치원 두곳 밖에 없다고 하네요 저는 아이가 성민 유치원으로...",
+        "date": "2023-10-25",
+        "collectedAt": "2026-01-30T03:12:12.793Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

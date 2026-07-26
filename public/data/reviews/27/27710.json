@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 64,
-  "kindergartenCount": 16,
+  "version": "2026-07-26",
+  "totalCount": 67,
+  "kindergartenCount": 17,
   "reviews": {
     "68a61886-b22e-4146-a0cf-351920ab5b05": [
       {
@@ -438,6 +438,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-99852227",
+        "title": "드림아이유치원 신입생 입학설명회 , 비용 , 후기",
+        "url": "https://blog.naver.com/soheee5464/223607985488",
+        "source": "naver_blog",
+        "sourceName": "초보새댁의 알콩달콩한 공간",
+        "snippet": "안녕하세요 :) 드디어 처음학교로 우선접수 기간이 다가오면서 드림아이유치원 입학설명회나 원... 않아서 드림아이유치원 신입생교육설명회에서 좀 더 자세하게 들으시면 좋을 듯 합니다 유치원 입학하기 전...",
+        "date": "2024-10-05",
+        "collectedAt": "2026-01-30T02:55:21.975Z"
       }
     ],
     "1ecec08d-0d5b-b044-e053-0a32095ab044": [
@@ -2357,6 +2367,43 @@
           ]
         },
         "evidenceChecksum": "46847c42"
+      },
+      {
+        "id": "rev-sns-wave741-bec7ee8c",
+        "kindergartenId": "b879d256-bab2-4ccc-b5ab-9bc5c7aeab6d",
+        "title": "대구 달성 도담소리숲유치원 일상 기록",
+        "url": "https://www.instagram.com/reel/DWoLMZZTwYy/",
+        "source": "other",
+        "sourceName": "Instagram · 도담소리숲유치원",
+        "snippet": "도담소리숲유치원이 숲유치원, 대구유치원, 유치원일상 태그와 함께 올린 공개 릴스입니다.",
+        "summary": "대구 달성군 도담소리숲유치원의 유치원 일상과 숲 기반 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-activity",
+          "daily-activity",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave741-bec7ee8c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWoLMZZTwYy/",
+          "normalizedUrl": "instagram.com/reel/dwolmzztwyy",
+          "normalizedText": "대구 달성 도담소리숲유치원 숲유치원 유치원일상",
+          "htmlSnapshotHash": "sns-wave741-bec7ee8c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWoLMZZTwYy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave741"
       }
     ],
     "1ecec08c-fb5b-b044-e053-0a32095ab044": [
@@ -2456,7 +2503,18 @@
         "approvedAt": "2026-07-02T23:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "41afc7c3-cdfb-4c18-af1f-c2a9ac418567": [
+      {
+        "id": "rev-99852226",
+        "title": "유치원운동회 [비버컴퍼니] 대구 포산유치원 가을운동회 후기",
+        "url": "https://blog.naver.com/eunji6043/224029489148",
+        "source": "naver_blog",
+        "sourceName": "비버의 일상☎ 010-4808-9382",
+        "snippet": "현풍 운동회 달성군 운동회 안녕하세요 비버입니다. 오늘은 대구포산유치원 운동회를 다녀왔습니다. 개천절 추석 연휴를 앞두고 많은 곳에서 행사를 준비하고 있는데요 가을 하면 뭐니뭐니 해도 가을운동회!...",
+        "date": "2025-10-02",
+        "collectedAt": "2026-01-30T02:55:18.032Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

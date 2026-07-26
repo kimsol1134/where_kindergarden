@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 24,
-  "kindergartenCount": 9,
+  "version": "2026-07-26",
+  "totalCount": 31,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08c-fcba-b044-e053-0a32095ab044": [
       {
@@ -268,6 +268,88 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aaab0fa9",
+        "kindergartenId": "1ecec08c-f5ed-b044-e053-0a32095ab044",
+        "title": "부산 해운대 더푸른유치원 입학설명회 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DBTYjpevweW/",
+        "source": "other",
+        "sourceName": "Instagram · 더푸른유치원",
+        "snippet": "검색 결과에서 더푸른유치원의 유치원 입학설명회와 해운대유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aaab0fa9",
+        "structuredFields": {
+          "kindergartenName": "더푸른유치원",
+          "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBTYjpevweW%22%20%22%EB%8D%94%ED%91%B8%EB%A5%B8%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "더푸른유치원은 로컬 원장부 단일 정확 명칭이며 해운대 단서와 로컬 해운대구 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DBTYjpevweW/",
+          "normalizedUrl": "instagram.com/reel/dbtyjpevwew",
+          "normalizedText": "부산 해운대 더푸른유치원 입학설명회 instagram reel 검색 결과에서 더푸른유치원의 유치원 입학설명회와 해운대유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "aaab0fa9",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "더푸른유치원",
+            "kindergartenAddress": "부산광역시 해운대구 좌동순환로433번길 30-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBTYjpevweW%22%20%22%EB%8D%94%ED%91%B8%EB%A5%B8%22%20%22%ED%95%B4%EC%9A%B4%EB%8C%80%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "더푸른유치원은 로컬 원장부 단일 정확 명칭이며 해운대 단서와 로컬 해운대구 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852201",
+        "title": "유치원 설명회 (해운대자연유... 해성유치원,더푸른유치원...",
+        "url": "https://blog.naver.com/rendashop19/223256203509",
+        "source": "naver_blog",
+        "sourceName": "Renda",
+        "snippet": "입학 설명회 시즌이라서 내년 5세 어머니들은 머리가 아픈 시기시죠? 저역시 근처 유치원 설명회... (엄마들마다 호불호가 있을수 있음) ◆ 더푸른유치원 ◆ 장점 1. 유치원 내부에 들어갔을때, 지대가 높고...",
+        "date": "2023-11-05",
+        "collectedAt": "2026-01-30T02:53:50.431Z"
+      },
+      {
+        "id": "rev-99852202",
+        "title": "영어유치원 에밀의 숲 방문상담 후 등록후기 / 더푸른유치원",
+        "url": "https://blog.naver.com/88bluu_oo_/223261104566",
+        "source": "naver_blog",
+        "sourceName": "우ෆ빈 남매의 똑똑 육아일상",
+        "snippet": "더푸른유치원 해운대 더푸른 유치원 이에요 일반 유치원중 유일하게 방문상담 한 곳이에요 위치가 아주미 집 바로 코앞이기도 했고 워낙에 후기가 좋아서 궁금했어요 입학설명회 시즌은 지나버려서 따로...",
+        "date": "2023-11-10",
+        "collectedAt": "2026-01-30T02:53:50.431Z"
+      },
+      {
+        "id": "rev-99852592",
+        "title": "2025년 해운대유치원(좌동유치원) 입학설명회 『더푸른/푸른...",
+        "url": "https://blog.naver.com/pjjimin/223658851095",
+        "source": "naver_blog",
+        "sourceName": "Fun Fun!! 찌민이네ლ",
+        "snippet": "1.더푸른 유치원 입학설명회를 가장 먼저 시작한 유치원이 아닐까 싶어요 그래서 그런지 첫 타임... 그런지 입학금 있음 -점심시간 푸른 기자 활동 (자신감 향상) -자연드림 간식 더푸른유치원 원복 / 체육복...",
+        "date": "2024-11-13",
+        "collectedAt": "2026-07-26T08:54:20.537527"
       }
     ],
     "1ecec08c-f5f6-b044-e053-0a32095ab044": [
@@ -1051,6 +1133,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852200",
+        "title": "해뜨는유치원 2026년 입학설명회 (원비 등)",
+        "url": "https://blog.naver.com/19870525/224061083675",
+        "source": "naver_blog",
+        "sourceName": "봄날 블로그",
+        "snippet": "지인의 추천으로 알게된 해뜨는유치원 입학설명회에 다녀왔다. 가보기전에는 몇가지 선택지중 하나였는데, 다녀오고나서 완전 최애가 되어버린 유치원.. 중간에 일정이 있어서 설명회를 다 못듣고와서 너무...",
+        "date": "2025-11-01",
+        "collectedAt": "2026-01-30T02:53:46.460Z"
       }
     ],
     "1ecec08c-f7f2-b044-e053-0a32095ab044": [
@@ -1096,6 +1188,16 @@
           ]
         },
         "evidenceChecksum": "b053bb6f"
+      },
+      {
+        "id": "rev-99852203",
+        "title": "해운대 유치원 설명회 후기 2편(중일 유치원, 푸른 유치원)",
+        "url": "https://blog.naver.com/ian_gardener/224064359013",
+        "source": "naver_blog",
+        "sourceName": "이안가드너",
+        "snippet": "설명회 끝나고 질문하시는데 대부분 중일 유치원과 연계된 어학원에 관심이 많으시더라고요, 그런데 답변은 입학 후에 어학원 설명을 해주신다고 하셨어요. 유치원에서 운영하는 게 아니라서 그런 것...",
+        "date": "2025-11-04",
+        "collectedAt": "2026-01-30T02:53:50.431Z"
       }
     ],
     "1ecec08d-0bb5-b044-e053-0a32095ab044": [
@@ -1152,7 +1254,18 @@
         "approvedAt": "2026-07-02T14:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-fcc9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852518",
+        "title": "해운대구 반여동 풀꽃 유치원 후기- 자연과 함께 건강한 놀이문화가 정착된 유치원입니다",
+        "url": "http://cafe.naver.com/mkinno/3829",
+        "source": "naver_cafe",
+        "sourceName": "[ 부산맘스쿨 ] 학교 학원 병원 맛집 ...",
+        "snippet": "제목 예시) 부산 OO구 OO동 OO유치원 후기 - 시설이 좋고 방과후수업이 다양해요 ※ 모든 항목을 최대한 자세히 작성해주세요. ( 상, 좋음, 만족 등 단답형 답변 금지 ) [ 기본 정보 ] ▣ 교육기관명 : 풀꽃 유치원 ▣ 위치...",
+        "date": null,
+        "collectedAt": "2026-07-26T08:29:21.020248"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

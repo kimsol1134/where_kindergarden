@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 5,
-  "kindergartenCount": 4,
+  "version": "2026-07-26",
+  "totalCount": 6,
+  "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-fb8b-b044-e053-0a32095ab044": [
       {
@@ -160,42 +160,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave719-56ee58cd",
-        "kindergartenId": "1ecec08c-fbef-b044-e053-0a32095ab044",
-        "title": "서산 대장유치원 블루베리 농장 체험 기록",
-        "url": "https://www.instagram.com/p/DZ8vXq7PVbY/",
-        "source": "other",
-        "sourceName": "Instagram · 대장유치원",
-        "snippet": "대장유치원 친구들이 블루베리 농장에서 잘 익은 열매를 찾으며 수확 체험을 한 게시물입니다.",
-        "summary": "유아들이 블루베리 농장에서 관찰력과 수확 경험을 키운 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "blueberry-farm",
-          "field-trip",
-          "seosan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave719-56ee58cd",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZ8vXq7PVbY/",
-          "normalizedUrl": "instagram.com/p/dz8vxq7pvby",
-          "normalizedText": "대장유치원 블루베리 농장 체험 블루베리 수확",
-          "htmlSnapshotHash": "sns-wave719-56ee58cd",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DZ8vXq7PVbY/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave719"
       }
     ],
     "1ecec08d-0174-b044-e053-0a32095ab044": [
@@ -250,7 +214,57 @@
         "approvedAt": "2026-07-02T21:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08d-0b36-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave739-e5b55fe8",
+        "kindergartenId": "1ecec08d-0b36-b044-e053-0a32095ab044",
+        "title": "충남 서산 우리유치원 고구마 텃밭활동 기록",
+        "url": "https://www.instagram.com/reel/DaCPraFxpaF/",
+        "source": "other",
+        "sourceName": "Instagram · 서산 우리유치원",
+        "snippet": "서산 우리유치원이 유치원 텃밭에서 고구마를 심고 흙을 만지는 자연 경험을 소개한 릴스입니다.",
+        "summary": "서산 우리유치원의 고구마 심기와 텃밭활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-education",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave739-e5b55fe8",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaCPraFxpaF/",
+          "normalizedUrl": "instagram.com/reel/dacprafxpaf",
+          "normalizedText": "충남 서산 우리유치원 고구마 심기 텃밭활동 자연경험",
+          "htmlSnapshotHash": "sns-wave739-e5b55fe8",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaCPraFxpaF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave739"
+      }
+    ],
+    "1ecec08c-f1ef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852404",
+        "title": "서산초등학교 병설유치원 버블매직쇼 후기 버블타이거와...",
+        "url": "https://blog.naver.com/mcrstar/223927746501",
+        "source": "naver_blog",
+        "sourceName": "퍼니키즈컴퍼니",
+        "snippet": "서산초 병설유치원의 강당은 그날 하루 내내 웃음과 행복이 피어나는 공간이었습니다. 비눗방울은 사라졌지만 웃음은 남았다 비눗방울은 바람 속에서 스치듯 사라졌지만, 그날 서산초등학교 병설유치원에서...",
+        "date": "2025-07-10",
+        "collectedAt": "2026-01-30T03:07:15.999Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

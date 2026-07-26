@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 38,
-  "kindergartenCount": 10,
+  "version": "2026-07-26",
+  "totalCount": 42,
+  "kindergartenCount": 11,
   "reviews": {
     "1ecec08d-0dd0-b044-e053-0a32095ab044": [
       {
@@ -149,6 +149,53 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave726"
+      },
+      {
+        "id": "rev-sns-wave739-73f18184",
+        "kindergartenId": "1ecec08d-0dd0-b044-e053-0a32095ab044",
+        "title": "부산 동래유치원 상추와 토마토 텃밭활동 기록",
+        "url": "https://www.instagram.com/p/DZ_d8OAj_9D/",
+        "source": "other",
+        "sourceName": "Instagram · 동래유치원",
+        "snippet": "동래유치원이 상추와 토마토 수확을 중심으로 텃밭활동을 진행한 게시물입니다.",
+        "summary": "부산 동래유치원의 수확 중심 텃밭활동과 놀이교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "ecology-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave739-73f18184",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ_d8OAj_9D/",
+          "normalizedUrl": "instagram.com/p/dz_d8oaj_9d",
+          "normalizedText": "부산 동래유치원 상추 토마토 수확 텃밭활동 놀이교육",
+          "htmlSnapshotHash": "sns-wave739-73f18184",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ_d8OAj_9D/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave739"
+      },
+      {
+        "id": "rev-99852194",
+        "title": "동래유치원 4년 후회없는 후기 (동래구 수안동 명륜동 낙민동)",
+        "url": "https://blog.naver.com/dai1123/224046871923",
+        "source": "naver_blog",
+        "sourceName": "스텔라의 책 그리고 돈",
+        "snippet": "동래유치원 입학설명회 동래유치원을 졸업한 저희 첫째는 부끄러움이 워낙 많은 편이지만 초등학교에 입학하며 무던히 친구도 사귀고 지내고 있답니다. 12월생인 둘째는 워낙 에너지가 넘치는 편이고 아직...",
+        "date": "2025-10-20",
+        "collectedAt": "2026-01-30T02:53:27.585Z"
       }
     ],
     "1ecec08c-f39f-b044-e053-0a32095ab044": [
@@ -1715,6 +1762,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852196",
+        "title": "[이건창호-시공후기] 꿈과... 공간, 민들레유치원 l 2020 부산건...",
+        "url": "https://blog.naver.com/eagonmt/223355373878",
+        "source": "naver_blog",
+        "sourceName": "이건(EAGON) 공식 블로그",
+        "snippet": "시공후기를 자세히 소개해 드리겠습니다! 아이들의 꿈과 희망이 자라나는 행복한 자연 놀이터, 민들레유치원 아이들의 꿈과 희망이 자라는 푸른 숲을 닮은 놀이터, 민들레유치원. 부산 동래구에 위치한...",
+        "date": "2024-02-16",
+        "collectedAt": "2026-01-30T02:53:31.259Z"
       }
     ],
     "1ecec08d-0f46-b044-e053-0a32095ab044": [
@@ -1884,7 +1941,18 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave732"
       }
+    ],
+    "1ecec08c-febf-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852195",
+        "title": "(부제: 해솔유치원 다사랑유치원 입학설명회, 우선모집 결과)",
+        "url": "https://blog.naver.com/irene0601/224072506393",
+        "source": "naver_blog",
+        "sourceName": "Lovely, Suzanne!",
+        "snippet": "저에게는 곧 유치원입학을 앞둔 딸이 있답니다 26년도에 유치원입학을 알아보면서 느낀 저의 짧지만... 그 중 가장 인기가 많은 곳이 다사랑유치원 / 해솔유치원 인데요.. 이 두군데 설명회다녀온 후기 및...",
+        "date": "2025-11-11",
+        "collectedAt": "2026-01-30T02:53:31.259Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

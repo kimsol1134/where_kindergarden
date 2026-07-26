@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 13,
-  "kindergartenCount": 2,
+  "version": "2026-07-26",
+  "totalCount": 15,
+  "kindergartenCount": 3,
   "reviews": {
     "1ecec08d-0462-b044-e053-0a32095ab044": [
       {
@@ -165,6 +165,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852573",
+        "title": "보령에서 유치원을 고민... 직접 방문해본 제일유치원 후기",
+        "url": "https://blog.naver.com/hse729/224123567753",
+        "source": "naver_blog",
+        "sourceName": "뚜비뚜벅",
+        "snippet": "보령에서 유치원을 고민하고 계신다면 입학설명회를 통해 한 번쯤 직접 비교해보셔도 좋을 것 같아요. #제일유치원 #보령사립유치원 #보령유치원 #보령유아교육 #놀이중심교육 #유치원입학설명회 #보령맘 #보령육아",
+        "date": "2025-12-26",
+        "collectedAt": "2026-07-26T08:29:21.020385"
       }
     ],
     "1ecec08c-fda4-b044-e053-0a32095ab044": [
@@ -257,7 +267,51 @@
         },
         "evidenceChecksum": "a043488a"
       }
+    ],
+    "1ecec08c-fc5b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3dc54aa3",
+        "kindergartenId": "1ecec08c-fc5b-b044-e053-0a32095ab044",
+        "title": "보령 성주초등학교병설유치원 샌드아트 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaEq6QTSppa/",
+        "source": "other",
+        "sourceName": "Instagram · 샌드아트",
+        "snippet": "검색 결과에서 충남 보령 성주초등학교 병설유치원, 샌드아트 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sand-art",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3dc54aa3",
+        "structuredFields": {
+          "kindergartenName": "성주초등학교병설유치원",
+          "kindergartenAddress": "충청남도 보령시 성주초교길 8",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaEq6QTSppa%22%20%22%EC%84%B1%EC%A3%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성주초등학교병설유치원 동명 후보가 있으나 보령 단서가 로컬 충남 보령 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaEq6QTSppa/",
+          "normalizedUrl": "instagram.com/reel/daeq6qtsppa",
+          "normalizedText": "보령 성주초등학교병설유치원 샌드아트 체험 instagram reel 검색 결과에서 충남 보령 성주초등학교 병설유치원 샌드아트 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "3dc54aa3",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

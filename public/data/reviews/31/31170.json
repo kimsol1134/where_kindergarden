@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-02",
-  "totalCount": 25,
+  "version": "2026-07-26",
+  "totalCount": 27,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-ef8c-b044-e053-0a32095ab044": [
@@ -1126,6 +1126,58 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-926bb87f",
+        "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
+        "title": "울산 현대동부유치원 롯데월드 현장체험학습 Instagram Post",
+        "url": "https://www.instagram.com/p/DZJQPnmjzfd/",
+        "source": "other",
+        "sourceName": "Instagram · 현대동부유치원",
+        "snippet": "검색 결과에서 현대동부유치원 7세, 롯데월드, 현장체험학습 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "experiential-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T16:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "926bb87f",
+        "structuredFields": {
+          "kindergartenName": "현대동부유치원",
+          "kindergartenAddress": "울산광역시 동구 안산로 50-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZJQPnmjzfd%22%20%22%ED%98%84%EB%8C%80%EB%8F%99%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현대동부유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZJQPnmjzfd/",
+          "normalizedUrl": "instagram.com/p/dzjqpnmjzfd",
+          "normalizedText": "울산 현대동부유치원 롯데월드 현장체험학습 instagram post 검색 결과에서 현대동부유치원 7세 롯데월드 현장체험학습 단서가 확인된다.",
+          "htmlSnapshotHash": "926bb87f",
+          "extractedAt": "2026-07-03T16:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현대동부유치원",
+            "kindergartenAddress": "울산광역시 동구 안산로 50-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZJQPnmjzfd%22%20%22%ED%98%84%EB%8C%80%EB%8F%99%EB%B6%80%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EC%9E%A5%EC%B2%B4%ED%97%98%ED%95%99%EC%8A%B5%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현대동부유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T16:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
         "id": "rev-sns-wave728-f323ec57",
         "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
         "title": "울산 현대동부유치원 한여름밤 캠프 기록",
@@ -1162,6 +1214,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave728"
+      },
+      {
+        "id": "rev-sns-wave742-04be6202",
+        "kindergartenId": "1ecec08d-098d-b044-e053-0a32095ab044",
+        "title": "울산 현대동부유치원 대왕별아이누리 체험학습 기록",
+        "url": "https://www.instagram.com/p/DaIDxVzicjy/",
+        "source": "other",
+        "sourceName": "Instagram · 현대동부유치원",
+        "snippet": "현대동부유치원이 대왕암아이누리 현장체험학습과 5세 유치원일상을 소개한 공개 게시물입니다.",
+        "summary": "울산 동구 현대동부유치원의 대왕별아이누리 현장체험학습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "children-theme-park",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave742-04be6202",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaIDxVzicjy/",
+          "normalizedUrl": "instagram.com/p/daidxvzicjy",
+          "normalizedText": "울산 현대동부유치원 대왕별아이누리 현장체험학습 5세",
+          "htmlSnapshotHash": "sns-wave742-04be6202",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaIDxVzicjy/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave742"
       },
       {
         "id": "rev-sns-wave745-a6cd2e74",
@@ -1201,6 +1290,5 @@
         "approvedBy": "codex-manual-sns-wave745"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

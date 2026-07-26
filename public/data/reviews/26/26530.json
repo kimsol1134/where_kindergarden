@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 37,
+  "version": "2026-07-26",
+  "totalCount": 39,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08c-f862-b044-e053-0a32095ab044": [
@@ -847,6 +847,28 @@
           ]
         },
         "evidenceChecksum": "ff53840a"
+      },
+      {
+        "id": "rev-81c73bcb",
+        "kindergartenId": "1ecec08c-f3b6-b044-e053-0a32095ab044",
+        "title": "사상구 모덕 유치원 ‘5살 여름 물놀이’ 유치원 일기",
+        "url": "https://blog.naver.com/dudtla007/224009012097",
+        "source": "naver_blog",
+        "sourceName": "요가맘은 육아 나들이중",
+        "snippet": "요가맘입니다 오늘은 지난 달 우리 아들이 다니고 있는 #모덕유치원 의 재밌었던 물놀이 후기를 써보려... 놀았습니다~ #모덕유치원 #사상유치원 #부산사상구 #유치원물놀이 #사상중흥 #처음학교로 #부산유치원...",
+        "date": "2025-09-15",
+        "collectedAt": "2026-07-26T00:00:00.000Z"
+      },
+      {
+        "id": "rev-8395f4d4",
+        "kindergartenId": "1ecec08c-f3b6-b044-e053-0a32095ab044",
+        "title": "6살 모덕유치원 운동회 [모덕한마음가족운동회] 를 마치며",
+        "url": "https://blog.naver.com/dudtla007/224318059089",
+        "source": "naver_blog",
+        "sourceName": "요가맘은 육아 나들이중",
+        "snippet": "골인✨✨✨✨✨ 우리 청백팀 모든 날쌘돌이 잘했어요 •운동회를 마치고,, 학부모로서 지켜본 후기.... 성공 #모덕유치원 #사상구유치원 #모덕유치원부산 #유치원운동회 #모덕한마음운동회 #6세운동회...",
+        "date": "2026-06-16",
+        "collectedAt": "2026-07-26T00:00:00.000Z"
       }
     ],
     "1ecec08c-f387-b044-e053-0a32095ab044": [
@@ -1278,43 +1300,6 @@
         "approvedBy": "codex-manual-sns-wave697"
       },
       {
-        "id": "rev-sns-wave720-c8e31244",
-        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
-        "title": "부산 초록유치원 도서관 견학 기록",
-        "url": "https://www.instagram.com/reel/DY8x-ripchb/",
-        "source": "other",
-        "sourceName": "Instagram · 초록유치원",
-        "snippet": "모라초록유치원 친구들이 정기적으로 도서관을 찾아 책과 함께 시간을 보낸 릴스입니다.",
-        "summary": "유아들이 도서관 공간과 책 읽기 활동을 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "library",
-          "reading",
-          "field-trip",
-          "busan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave720-c8e31244",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DY8x-ripchb/",
-          "normalizedUrl": "instagram.com/reel/dy8x-ripchb",
-          "normalizedText": "모라초록유치원 도서관견학 도서관 정기 견학",
-          "htmlSnapshotHash": "sns-wave720-c8e31244",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DY8x-ripchb/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave720"
-      },
-      {
         "id": "rev-sns-wave715-37b5817f",
         "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
         "title": "부산 초록유치원 초록플리마켓 기록",
@@ -1424,6 +1409,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave731"
+      },
+      {
+        "id": "rev-sns-wave737-876cc7ca",
+        "kindergartenId": "1ecec08c-ef56-b044-e053-0a32095ab044",
+        "title": "부산 사상구 초록유치원 사상도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DZwli1aEtFC/",
+        "source": "other",
+        "sourceName": "Instagram · 모라초록유치원",
+        "snippet": "모라초록유치원 5세 친구들이 사상도서관에서 읽고 싶은 책을 고르며 견학한 게시물입니다.",
+        "summary": "부산 사상구 초록유치원의 도서관 견학과 책 고르기 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-experience",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave737-876cc7ca",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZwli1aEtFC/",
+          "normalizedUrl": "instagram.com/p/dzwli1aetfc",
+          "normalizedText": "부산 사상구 초록유치원 모라초록 사상도서관 견학 5세",
+          "htmlSnapshotHash": "sns-wave737-876cc7ca",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZwli1aEtFC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave737"
       }
     ],
     "1ecec08d-0da6-b044-e053-0a32095ab044": [
@@ -1477,6 +1499,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

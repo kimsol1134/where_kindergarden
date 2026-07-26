@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 21,
+  "version": "2026-07-26",
+  "totalCount": 20,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08c-ef43-b044-e053-0a32095ab044": [
@@ -956,44 +956,7 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:25:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave718-b4584a0b",
-        "kindergartenId": "1ecec08d-00c9-b044-e053-0a32095ab044",
-        "title": "부산 자비유치원 국립해양박물관 견학 기록",
-        "url": "https://www.instagram.com/p/DKmZ1Noh9gO/",
-        "source": "other",
-        "sourceName": "Instagram · 자비유치원",
-        "snippet": "자비유치원 친구들이 국립해양박물관을 찾아 바다와 해양 전시를 둘러본 게시물입니다.",
-        "summary": "유아들이 해양박물관에서 바다와 해양 문화를 접한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "marine-museum",
-          "field-trip",
-          "busan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave718-b4584a0b",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DKmZ1Noh9gO/",
-          "normalizedUrl": "instagram.com/p/dkmz1noh9go",
-          "normalizedText": "자비유치원 국립해양박물관 바다의날 견학",
-          "htmlSnapshotHash": "sns-wave718-b4584a0b",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DKmZ1Noh9gO/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave718"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

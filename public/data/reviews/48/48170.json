@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 29,
+  "version": "2026-07-26",
+  "totalCount": 31,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0925-b044-e053-0a32095ab044": [
@@ -1150,6 +1150,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.997Z",
         "approvedBy": "codex-manual-sns-wave700"
+      },
+      {
+        "id": "rev-sns-wave738-d50bbcb4",
+        "kindergartenId": "1ecec08c-f98f-b044-e053-0a32095ab044",
+        "title": "진주 아이소크라테스유치원 소방대피훈련 기록",
+        "url": "https://www.instagram.com/reel/DZWFMDbz6JZ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이소크라테스유치원",
+        "snippet": "아이소크라테스유치원이 평거119 안전센터와 함께 소방대피훈련을 진행한 릴스입니다.",
+        "summary": "진주 아이소크라테스유치원의 소방대피훈련과 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "gyeongnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave738-d50bbcb4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZWFMDbz6JZ/",
+          "normalizedUrl": "instagram.com/reel/dzwfmdbz6jz",
+          "normalizedText": "진주 아이소크라테스유치원 소방대피훈련 평거119 안전교육",
+          "htmlSnapshotHash": "sns-wave738-d50bbcb4",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZWFMDbz6JZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave738"
       }
     ],
     "1ecec08d-0c79-b044-e053-0a32095ab044": [
@@ -1348,6 +1385,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852448",
+        "title": "진주 초원유치원 1년 다닌 후기, 진주유치원 vs 어린이집",
+        "url": "https://blog.naver.com/xodnvos/224051095531",
+        "source": "naver_blog",
+        "sourceName": "패쓰랑보리랑, 범수네",
+        "snippet": "저도 진주 유치원 여기저기 후기도 많이 들어보고 전화 많이 해보고 고민 엄청 많이 했던 시기가... 울며 겨자먹기로 다니기 시작함 처음에는 입학만 하고 옮길까 했었는데 막상 다녀보니 좋은점이 너무 많아서...",
+        "date": "2025-10-23",
+        "collectedAt": "2026-01-30T03:12:01.469Z"
       }
     ],
     "afd7749b-9028-47c0-8a1f-ef7949614b86": [
@@ -1401,6 +1448,5 @@
         "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

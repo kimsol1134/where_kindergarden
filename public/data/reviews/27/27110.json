@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 26,
+  "version": "2026-07-26",
+  "totalCount": 28,
   "kindergartenCount": 4,
   "reviews": {
     "5beba53d-cc7b-48d8-b95b-ad44b811c735": [
@@ -619,6 +619,80 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-sns-wave733-43df9ff6",
+        "kindergartenId": "1ecec08c-f3d9-b044-e053-0a32095ab044",
+        "title": "대구 YMCA유치원 치유의 숲 체험 기록",
+        "url": "https://www.instagram.com/reel/DRi9tbsjT1I/",
+        "source": "other",
+        "sourceName": "Instagram · YMCA유치원",
+        "snippet": "대구 YMCA유치원 유아들이 치유의 숲에서 숲놀이와 오감 놀이를 경험한 릴스입니다.",
+        "summary": "유아들이 자연 속에서 감각 탐색과 생태 놀이를 한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "sensory-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave733-43df9ff6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRi9tbsjT1I/",
+          "normalizedUrl": "instagram.com/reel/dri9tbsjt1i",
+          "normalizedText": "대구 YMCA유치원 치유의 숲 숲체험 숲놀이 오감놀이",
+          "htmlSnapshotHash": "sns-wave733-43df9ff6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRi9tbsjT1I/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave733"
+      },
+      {
+        "id": "rev-sns-wave733-e9f1d75c",
+        "kindergartenId": "1ecec08c-f3d9-b044-e053-0a32095ab044",
+        "title": "대구 YMCA유치원 숲 소근육 놀이 기록",
+        "url": "https://www.instagram.com/reel/DZto11hhtjU/",
+        "source": "other",
+        "sourceName": "Instagram · YMCA유치원",
+        "snippet": "대구 YMCA유치원 아이들이 숲에서 손끝을 쓰는 소근육 놀이를 한 릴스입니다.",
+        "summary": "작은 손으로 자연물을 다루며 집중력과 감각을 확장한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "sensory-play",
+          "daegu"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave733-e9f1d75c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZto11hhtjU/",
+          "normalizedUrl": "instagram.com/reel/dzto11hhtju",
+          "normalizedText": "대구 YMCA유치원 숲 소근육 놀이 자연물 감각놀이",
+          "htmlSnapshotHash": "sns-wave733-e9f1d75c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZto11hhtjU/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave733"
+      },
+      {
         "id": "rev-sns-wave745-fd40099f",
         "kindergartenId": "1ecec08c-f3d9-b044-e053-0a32095ab044",
         "title": "대구 YMCA유치원 유아교육진흥원 견학 기록",
@@ -1083,6 +1157,5 @@
         "approvedBy": "codex-manual-sns-wave731"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

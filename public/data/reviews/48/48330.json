@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 27,
-  "kindergartenCount": 11,
+  "version": "2026-07-26",
+  "totalCount": 28,
+  "kindergartenCount": 13,
   "reviews": {
     "1ecec08d-0224-b044-e053-0a32095ab044": [
       {
@@ -288,42 +288,6 @@
             "accessMode": "public"
           }
         }
-      },
-      {
-        "id": "rev-sns-wave718-43d53eb5",
-        "kindergartenId": "99eb3c2e-97eb-47c8-9607-2a4a376bb7be",
-        "title": "양산 국제사바나유치원 부산국립해양박물관 견학 기록",
-        "url": "https://www.instagram.com/reel/DRmNpR1D3Wv/",
-        "source": "other",
-        "sourceName": "Instagram · 국제사바나유치원",
-        "snippet": "국제사바나유치원 친구들이 부산국립해양박물관에서 해양 전시와 체험 공간을 둘러본 릴스입니다.",
-        "summary": "유아들이 해양박물관 견학을 통해 바다와 관련된 전시를 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "marine-museum",
-          "field-trip",
-          "yangsan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave718-43d53eb5",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRmNpR1D3Wv/",
-          "normalizedUrl": "instagram.com/reel/drmnpr1d3wv",
-          "normalizedText": "국제사바나유치원 양산유치원 사바나유치원 부산국립해양박물관",
-          "htmlSnapshotHash": "sns-wave718-43d53eb5",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DRmNpR1D3Wv/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave718"
       }
     ],
     "84a4b416-cd14-442e-ad8e-c2f422040366": [
@@ -1091,7 +1055,30 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave725"
       }
+    ],
+    "1ecec08d-0825-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852457",
+        "title": "미림 유치원, 목원 유치원 설명회 일정 뜨다",
+        "url": "https://blog.naver.com/tikka/223619142509",
+        "source": "naver_blog",
+        "sourceName": "불가능한 꿈을 꿔라!!",
+        "snippet": "개봉동 유치원 입학 연령대는 주목",
+        "date": "2024-10-15",
+        "collectedAt": "2026-01-30T03:12:51.313Z"
+      }
+    ],
+    "1ecec08c-ed55-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852490",
+        "title": "곽망고의 2년 전, 동원유치원 이야기",
+        "url": "https://blog.naver.com/younmijin/223742787135",
+        "source": "naver_blog",
+        "sourceName": "모든 순간이 마지막인 것 처럼",
+        "snippet": "입학설명회에 다녀와서 좀 실망했던터라... 고민고민하다 동원유치원으로 보내게 되었다. 곽망고를 위한 선택 중 최고의 선택이 아니었나 싶다. 원래 7세반은 T.O가 많지 않아 들어가기 힘든데 곽망고 입학할...",
+        "date": "2025-01-31",
+        "collectedAt": "2026-07-26T08:27:42.550653"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

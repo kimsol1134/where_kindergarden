@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 9,
-  "kindergartenCount": 4,
+  "version": "2026-07-26",
+  "totalCount": 10,
+  "kindergartenCount": 5,
   "reviews": {
     "1ecec08c-fdce-b044-e053-0a32095ab044": [
       {
@@ -235,42 +235,6 @@
         "approvedBy": "codex-manual-sns-wave678"
       },
       {
-        "id": "rev-sns-wave718-2dda3a01",
-        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
-        "title": "밀양유치원 대구 아쿠아리움 현장체험 기록",
-        "url": "https://www.instagram.com/reel/DZeVZ2EhajU/",
-        "source": "other",
-        "sourceName": "Instagram · 밀양유치원",
-        "snippet": "밀양유치원 친구들이 기차를 이용해 대구 아쿠아리움을 방문하고 해양 생물 전시를 본 릴스입니다.",
-        "summary": "유아들이 대구 아쿠아리움에서 바다 생물을 관찰한 현장체험 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "aquarium",
-          "field-trip",
-          "miryang"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave718-2dda3a01",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZeVZ2EhajU/",
-          "normalizedUrl": "instagram.com/reel/dzevz2ehaju",
-          "normalizedText": "밀양유치원 밀양역 동대구역 대구 아쿠아리움 현장체험",
-          "htmlSnapshotHash": "sns-wave718-2dda3a01",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DZeVZ2EhajU/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave718"
-      },
-      {
         "id": "rev-sns-wave715-f3a15409",
         "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
         "title": "경남 밀양유치원 다정다감 플리마켓 기록",
@@ -343,6 +307,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave715"
+      },
+      {
+        "id": "rev-99852454",
+        "title": "어우러진 환상적인 순간! 밀양 유치원 레이저 매직쇼 공연 후기",
+        "url": "https://blog.naver.com/jamjamcompany/224058650178",
+        "source": "naver_blog",
+        "sourceName": "이벤트 연구소",
+        "snippet": "이번에는 밀양 유치원 친구들과 함께한 레이저 매직쇼 소식을 전해드리려고 합니다. 아이들의 웃음소리와 반짝이는 눈빛이 가득했던 현장이라 저희도 공연을 진행하며 큰 보람을 느낄 수 있었던 하루였습니다....",
+        "date": "2025-10-30",
+        "collectedAt": "2026-01-30T03:12:39.871Z"
       }
     ],
     "1ecec08c-f0a7-b044-e053-0a32095ab044": [
@@ -382,7 +356,18 @@
         "approvedAt": "2026-07-03T23:59:59.990Z",
         "approvedBy": "codex-manual-sns-wave697"
       }
+    ],
+    "1ecec08d-05e1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852453",
+        "title": "아랑유치원 2026년 입학설명회 (일과, 프로그램, 원비...",
+        "url": "https://blog.naver.com/19870525/224058896610",
+        "source": "naver_blog",
+        "sourceName": "봄날 블로그",
+        "snippet": "이름이 귀여운 아랑유치원 설명회에 다녀왔다. 뭐랄까... 설명회 초반에서부터 능력과 역량에 대해 설명해주시는데, 다른 원에 비해서 교육적인 면을 중요시한다면 만족할 수 있을 것 같았다. 종일반 신청한다면...",
+        "date": "2025-10-30",
+        "collectedAt": "2026-01-30T03:12:35.929Z"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-01",
+  "version": "2026-07-26",
   "totalCount": 21,
   "kindergartenCount": 7,
   "reviews": {
@@ -935,44 +935,17 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f3c3-b044-e053-0a32095ab044": [
+    "1ecec08c-faa2-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave718-5f65ebca",
-        "kindergartenId": "1ecec08c-f3c3-b044-e053-0a32095ab044",
-        "title": "대전 메이킨더유치원 대전 아쿠아리움 견학 기록",
-        "url": "https://www.instagram.com/p/DN0AHiV4uCT/",
-        "source": "other",
-        "sourceName": "Instagram · 메이킨더유치원",
-        "snippet": "메이킨더유치원 친구들이 대전 아쿠아리움을 찾아 물속 생물과 전시 공간을 둘러본 게시물입니다.",
-        "summary": "유아들이 아쿠아리움에서 해양 생물 관찰과 현장 체험을 한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "aquarium",
-          "field-trip",
-          "daejeon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave718-5f65ebca",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DN0AHiV4uCT/",
-          "normalizedUrl": "instagram.com/p/dn0ahiv4uct",
-          "normalizedText": "메이킨더유치원 대덕구유치원 대전 아쿠아리움 견학",
-          "htmlSnapshotHash": "sns-wave718-5f65ebca",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DN0AHiV4uCT/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave718"
+        "id": "rev-99852597",
+        "title": "혜원유치원 전국50대 교육과정 우수 대전",
+        "url": "https://blog.naver.com/kdcha4519/223622507911",
+        "source": "naver_blog",
+        "sourceName": "kdcha4519님의블로그",
+        "snippet": "대덕구 비래동에 있어요~~ 여기가 본원이고 관평동에도 있어요~ 테크노도 같은 재단이고 같이... 전국 50대 교육과정 우수유치원 어깨에 힘좀 줘도 되겄네잉!! 이런 곳이 대전에~ 그것도 우리동네에 있다니.....",
+        "date": "2024-10-17",
+        "collectedAt": "2026-07-26T08:54:20.537544"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

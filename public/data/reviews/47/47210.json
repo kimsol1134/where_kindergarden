@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 9,
+  "version": "2026-07-26",
+  "totalCount": 10,
   "kindergartenCount": 7,
   "reviews": {
     "1ecec08d-0f35-b044-e053-0a32095ab044": [
@@ -207,6 +207,70 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6e8e3041",
+        "kindergartenId": "1ecec08d-03e8-b044-e053-0a32095ab044",
+        "kindergartenName": "자연유치원",
+        "title": "영주 자연유치원 그림책 환상 축제 버블쇼 Instagram Post",
+        "url": "https://www.instagram.com/p/C9BfnsJSsfi/",
+        "source": "other",
+        "sourceName": "Instagram · 영주 자연유치원",
+        "snippet": "Instagram 검색 결과에서 영주 자연유치원의 한여름 밤 그림책 환상 축제와 버블쇼 활동 문맥이 확인되는 게시물.",
+        "date": "2024-07-04",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "bubble-show",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "자연유치원",
+          "kindergartenAddress": "경상북도 영주시 남간로71번길 55",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C9BfnsJSsfi%22+%22%EC%98%81%EC%A3%BC+%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/C9BfnsJSsfi/",
+          "regionEvidence": [
+            "영주 자연유치원",
+            "영주",
+            "그림책 환상 축제",
+            "버블쇼"
+          ]
+        },
+        "evidenceChecksum": "14ce4d2d",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C9BfnsJSsfi/",
+          "normalizedUrl": "www.instagram.com/p/c9bfnsjssfi",
+          "normalizedText": "영주 자연유치원 그림책 환상 축제 버블쇼 instagram post instagram 검색 결과에서 영주 자연유치원의 한여름 밤 그림책 환상 축제와 버블쇼 활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c5e59384",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "자연유치원",
+            "kindergartenAddress": "경상북도 영주시 남간로71번길 55",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C9BfnsJSsfi%22+%22%EC%98%81%EC%A3%BC+%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B2%84%EB%B8%94%EC%87%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/C9BfnsJSsfi/",
+            "regionEvidence": [
+              "영주 자연유치원",
+              "영주",
+              "그림책 환상 축제",
+              "버블쇼"
+            ]
+          }
+        }
       }
     ],
     "1ecec08d-0479-b044-e053-0a32095ab044": [
@@ -402,6 +466,5 @@
         "approvedBy": "codex-manual-sns-wave752"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

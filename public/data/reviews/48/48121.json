@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 8,
-  "kindergartenCount": 6,
+  "version": "2026-07-26",
+  "totalCount": 16,
+  "kindergartenCount": 8,
   "reviews": {
     "1ecec08c-f4d1-b044-e053-0a32095ab044": [
       {
@@ -24,6 +24,68 @@
           "선생님",
           "활동"
         ]
+      },
+      {
+        "id": "rev-b7ba7bd0",
+        "kindergartenId": "1ecec08c-f4d1-b044-e053-0a32095ab044",
+        "title": "창원 성모유치원 신학기 오리엔테이션 Instagram Post",
+        "url": "https://www.instagram.com/p/DVK7c2WEggx/",
+        "source": "other",
+        "sourceName": "Instagram · 창원 성모유치원",
+        "snippet": "검색 결과에서 창원 성모유치원의 신학기 오리엔테이션 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "orientation",
+          "parent-information"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T12:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b7ba7bd0",
+        "structuredFields": {
+          "kindergartenName": "성모유치원",
+          "kindergartenAddress": "경상남도 창원시 의창구 우곡로 177",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVK7c2WEggx%22%20%22%EC%B0%BD%EC%9B%90%20%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성모유치원은 동명 후보가 많으나 창원 계정 단서가 로컬 창원시 의창구 성모유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVK7c2WEggx/",
+          "normalizedUrl": "instagram.com/p/dvk7c2weggx",
+          "normalizedText": "창원 성모유치원 신학기 오리엔테이션 instagram post 검색 결과에서 창원 성모유치원의 신학기 오리엔테이션 단서가 확인된다.",
+          "htmlSnapshotHash": "b7ba7bd0",
+          "extractedAt": "2026-07-03T12:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모유치원",
+            "kindergartenAddress": "경상남도 창원시 의창구 우곡로 177",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVK7c2WEggx%22%20%22%EC%B0%BD%EC%9B%90%20%EC%84%B1%EB%AA%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "성모유치원은 동명 후보가 많으나 창원 계정 단서가 로컬 창원시 의창구 성모유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T12:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852441",
+        "title": "문신아트컬러링 단체 관람 및 체험 후기 : 성모유치원",
+        "url": "https://blog.naver.com/moonshin_art_museum/222583880656",
+        "source": "naver_blog",
+        "sourceName": "창원시립마산문신미술관 공식블로그",
+        "snippet": "문신아트컬러링 단체 관람 및 체험 후기 - 성모유치원 - 지난 금요일 문신미술관에... 경상남도 창원시 마산합포구 문신길 147 (추산동 51-1) 전화 | 055-225-7181 #문신미술관...",
+        "date": "2021-12-02",
+        "collectedAt": "2026-01-30T03:11:30.962Z"
       }
     ],
     "0bd2caf0-5d21-4ec7-95c8-e1e982b1edf5": [
@@ -149,6 +211,26 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T16:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852438",
+        "title": "창원 유치원 구조물 제작후기",
+        "url": "https://blog.naver.com/xyvy5248/224139262354",
+        "source": "naver_blog",
+        "sourceName": "경남출장용접전문",
+        "snippet": "이번 창원 유치원 구조물 현장은 출장용접, 현장용접, 알곤용접의 중요성을 다시 한번 느낄 수 있었던 작업이었습니다. 특히 유치원, 학교, 어린이시설처럼 안전이 최우선인 공간에서는 용접 방식 선택이 매우...",
+        "date": "2026-01-08",
+        "collectedAt": "2026-01-30T03:11:27.226Z"
+      },
+      {
+        "id": "rev-99852439",
+        "title": "창원유치원스티커 제작/급하게... 당일제작 후기(인쇄 시...",
+        "url": "https://blog.naver.com/jbc1421/223994893811",
+        "source": "naver_blog",
+        "sourceName": "복치의 My Own Design Studio",
+        "snippet": "이렇게 모든 주의사항을 다 설명해드려서 ok하는 경우 아니면 원래는 진행을 안해드려요ㅎㅎㅎ 오늘은 창원유치원스티커 제작 후기와 함께 스티커 제작 시 꼭 알아두셔야 할 밀림 현상과 테두리 디자인...",
+        "date": "2025-09-04",
+        "collectedAt": "2026-01-30T03:11:27.226Z"
       }
     ],
     "1ecec08d-05ce-b044-e053-0a32095ab044": [
@@ -253,6 +335,26 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:58.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852436",
+        "title": "고요숲속샘터 유치원 입학설명회 방문 후기",
+        "url": "https://blog.naver.com/happy_siwoo22/224067317514",
+        "source": "naver_blog",
+        "sourceName": "꽃밭에는 꽃들이 살지요",
+        "snippet": "정보 - 샘터 특성화 교육 교육 프로그램이나 방과후 활동 등 객관적인 교육 내용은 원에 문의해주세요. #고요숲속샘터유치원 #창원유치원 #숲유치원 #자연친화유치원 #입학설명회후기 #육아블로그 #아이성장기록",
+        "date": "2025-11-07",
+        "collectedAt": "2026-01-30T03:11:27.226Z"
+      },
+      {
+        "id": "rev-99852437",
+        "title": "고요숲속 샘터 유치원 부모 참여수업 후기",
+        "url": "https://blog.naver.com/angelaby22/223634731718",
+        "source": "naver_blog",
+        "sourceName": "아이맘 방충망의 일상 이야기",
+        "snippet": "오늘은 두딸을 보내고 있는 창원 고요숲속 샘터 유치원 이야기를 해보려 합니다. 첫째 딸 유치원을 알아보다 우연히 알게된 이곳은 입학 상담 한번으로 아 여기다. 라고 정하게 된 곳이예요. 그날 아직 어렸던...",
+        "date": "2024-10-26",
+        "collectedAt": "2026-01-30T03:11:27.226Z"
       }
     ],
     "1ecec08c-f4d2-b044-e053-0a32095ab044": [
@@ -357,6 +459,30 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-05cd-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852435",
+        "title": "[창원보건소] 음주.흡연폐해예방교육'바른나무 유치원' 교육 후기",
+        "url": "http://cafe.naver.com/ghbb0809/14643",
+        "source": "naver_cafe",
+        "sourceName": "다누리인재교육컨설팅",
+        "snippet": "✔️ 5~7세반 함께 했습니다 #창원시보건소 #유아흡연예방교육 #금연 #간접흡연 #바른나무유치원원 #유아보건교육 #평생건강습관 #음주흡연폐해예방교육 #간접흡연 #다누리인재교육컨설팅 #꿈피리지원단 #교육전문강사...",
+        "date": null,
+        "collectedAt": "2026-01-30T03:11:27.226Z"
+      }
+    ],
+    "c2a33217-04cc-4d1d-b2a1-85eda3fcee06": [
+      {
+        "id": "rev-99852440",
+        "title": "무동꿈유치원 입학설명회에 무동 기탄원장님과 다녀왔어요.",
+        "url": "https://blog.naver.com/gitan2016/224056828494",
+        "source": "naver_blog",
+        "sourceName": "기탄사고력교실 창원김해본부",
+        "snippet": "10월 28일 오늘은 무동꿈유치원 입학설명회가 있는 날 무동과 감계 지역에서 어머님, 아버님들 많이 들으러 오시네요 안녕하세요 무동 기탄사고력교실입니다! 무동 기탄사고력교실은 읽기·이해·쓰기·말하기...",
+        "date": "2025-10-28",
+        "collectedAt": "2026-01-30T03:11:27.226Z"
       }
     ]
   }

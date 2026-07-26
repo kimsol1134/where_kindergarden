@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 31,
-  "kindergartenCount": 9,
+  "version": "2026-07-26",
+  "totalCount": 34,
+  "kindergartenCount": 10,
   "reviews": {
     "1ecec08d-0915-b044-e053-0a32095ab044": [
       {
@@ -773,6 +773,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave728"
+      },
+      {
+        "id": "rev-sns-wave742-a8bf596a",
+        "kindergartenId": "1ecec08c-fb0a-b044-e053-0a32095ab044",
+        "title": "대전 아이들세상유치원 꿈아띠체험관 기록",
+        "url": "https://www.instagram.com/reel/DZYxDbiSI7s/",
+        "source": "other",
+        "sourceName": "Instagram · 아이들세상유치원",
+        "snippet": "대전 아이들세상유치원이 꿈아띠체험관 체험학습과 5세반 유치원 생활을 소개한 공개 릴스입니다.",
+        "summary": "대전 동구 아이들세상유치원의 체험학습과 유치원 생활을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "sensory-play",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave742-a8bf596a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZYxDbiSI7s/",
+          "normalizedUrl": "instagram.com/reel/dzyxdbisi7s",
+          "normalizedText": "대전 아이들세상유치원 꿈아띠체험관 체험학습 유치원생활",
+          "htmlSnapshotHash": "sns-wave742-a8bf596a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DZYxDbiSI7s/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave742"
       }
     ],
     "1ecec08c-f045-b044-e053-0a32095ab044": [
@@ -1199,6 +1236,43 @@
         "approvedBy": "codex-manual-sns-wave672"
       },
       {
+        "id": "rev-sns-wave743-9805346c",
+        "kindergartenId": "1ecec08c-fe6c-b044-e053-0a32095ab044",
+        "title": "대전 용운유치원 도서관 활동 기록",
+        "url": "https://www.instagram.com/reel/DVvIbVaidqX/",
+        "source": "other",
+        "sourceName": "Instagram · 용운유치원",
+        "snippet": "용운유치원이 매주 수요일 유아가 직접 책을 고르고 도서가방에 넣어 가정으로 가져가는 독서활동을 소개한 공개 릴스입니다.",
+        "summary": "대전 동구 용운유치원의 독서활동과 도서관 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "reading-activity",
+          "library-activity",
+          "daejeon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave743-9805346c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVvIbVaidqX/",
+          "normalizedUrl": "instagram.com/reel/dvvibvaidqx",
+          "normalizedText": "대전 용운유치원 독서활동 도서관 활동 매주 수요일 책대여",
+          "htmlSnapshotHash": "sns-wave743-9805346c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVvIbVaidqX/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave743"
+      },
+      {
         "id": "rev-sns-wave748-fb7f5aae",
         "kindergartenId": "1ecec08c-fe6c-b044-e053-0a32095ab044",
         "title": "대전 용운유치원 특별활동 코딩 기록",
@@ -1416,7 +1490,18 @@
         "approvedAt": "2026-07-03T15:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f80f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852521",
+        "title": "임산부 더바쁜 요즘 :) 대전지역 유치원 입학설명회 후기...",
+        "url": "https://blog.naver.com/pjeysj/221386806807",
+        "source": "naver_blog",
+        "sourceName": "어리&똥의 희희낙락:)",
+        "snippet": "그래도 동구, 대덕구에서는 꽤 알아주는 유치원 보이는 것처럼 잔디밭 놀이터가 엄청크다... 우송유치원도 33만원정도 -_- 그래도 시설이나 프로그램이 괜찮다고 하고, 엄마들 사이에서 꽤 만족도가 높다. 단...",
+        "date": "2018-10-28",
+        "collectedAt": "2026-07-26T08:29:21.020255"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

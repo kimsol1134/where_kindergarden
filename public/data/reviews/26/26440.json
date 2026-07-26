@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 14,
-  "kindergartenCount": 4,
+  "version": "2026-07-26",
+  "totalCount": 21,
+  "kindergartenCount": 5,
   "reviews": {
     "f4ef0604-d2bd-47f0-998c-288faebd41ee": [
       {
@@ -288,6 +288,288 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f3986e8",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 인성동요 발표회 Instagram Post",
+        "url": "https://www.instagram.com/p/DY6I1zGiYFH/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 남명유치원, 명지오션시티, 부산명지, 인성동요 발표회 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "performance",
+          "music-recital"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T17:25:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f3986e8",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6I1zGiYFH%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EC%84%B1%EB%8F%99%EC%9A%94%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6I1zGiYFH/",
+          "normalizedUrl": "instagram.com/p/dy6i1zgiyfh",
+          "normalizedText": "부산 남명유치원 인성동요 발표회 instagram post 검색 결과에서 남명유치원 명지오션시티 부산명지 인성동요 발표회 단서가 확인된다.",
+          "htmlSnapshotHash": "0f3986e8",
+          "extractedAt": "2026-07-03T17:25:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6I1zGiYFH%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9D%B8%EC%84%B1%EB%8F%99%EC%9A%94%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T17:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0f1192d3",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 명지 남명유치원 학부모 참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DY3E2drkxG1/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 부산명지, 명지오션시티, 남명유치원, 학부모 참여수업 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "open-class",
+          "parent-participation"
+        ],
+        "date": "2026-05-27",
+        "collectedAt": "2026-07-03T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "0f1192d3",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY3E2drkxG1%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 및 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY3E2drkxG1/",
+          "normalizedUrl": "instagram.com/p/dy3e2drkxg1",
+          "normalizedText": "부산 명지 남명유치원 학부모 참여수업 instagram post 검색 결과에서 부산명지 명지오션시티 남명유치원 학부모 참여수업 단서가 확인된다.",
+          "htmlSnapshotHash": "0f1192d3",
+          "extractedAt": "2026-07-03T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY3E2drkxG1%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%95%99%EB%B6%80%EB%AA%A8%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 및 명지오션시티 단서와 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-cfdd847d",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 물놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DLjc3EKpZSu/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 공립단설 남명유치원, 부산 명지, 물놀이 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-play"
+        ],
+        "date": "2025-06-30",
+        "collectedAt": "2026-07-03T20:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cfdd847d",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLjc3EKpZSu/",
+          "normalizedUrl": "instagram.com/p/dljc3ekpzsu",
+          "normalizedText": "부산 남명유치원 물놀이 instagram post 검색 결과에서 공립단설 남명유치원 부산 명지 물놀이 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "cfdd847d",
+          "extractedAt": "2026-07-03T20:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLjc3EKpZSu%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AC%BC%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 부산 명지 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:40:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b833a8bc",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 남명유치원 숲 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DZFCPhViRfU/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "검색 결과에서 공립단설 남명유치원, 숲 선생님, 숲 생태놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "ecology-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b833a8bc",
+        "structuredFields": {
+          "kindergartenName": "남명유치원",
+          "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZFCPhViRfU%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZFCPhViRfU/",
+          "normalizedUrl": "instagram.com/p/dzfcphvirfu",
+          "normalizedText": "부산 남명유치원 숲 생태놀이 instagram post 검색 결과에서 공립단설 남명유치원 숲 선생님 숲 생태놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "b833a8bc",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남명유치원",
+            "kindergartenAddress": "부산광역시 강서구 명지오션시티11로 132",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZFCPhViRfU%22%20%22%EB%82%A8%EB%AA%85%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%88%B2%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "남명유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave734-7d135e0b",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 강서구 남명유치원 3세 학부모 참여수업 기록",
+        "url": "https://www.instagram.com/p/DY3IwR_k_6p/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "남명유치원 3세 학급이 가족과 함께 이불 놀이와 순간포착 퀴즈를 진행한 학부모 참여수업 게시물입니다.",
+        "summary": "부산 남명유치원의 연령별 학부모 참여수업 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave734-7d135e0b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY3IwR_k_6p/",
+          "normalizedUrl": "instagram.com/p/dy3iwr_k_6p",
+          "normalizedText": "부산 강서구 남명유치원 3세 학부모 참여수업 이불 놀이 가족 활동",
+          "htmlSnapshotHash": "sns-wave734-7d135e0b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DY3IwR_k_6p/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave734"
+      },
+      {
+        "id": "rev-sns-wave740-3d216b7f",
+        "kindergartenId": "1ecec08d-0256-b044-e053-0a32095ab044",
+        "title": "부산 강서 남명유치원 물총놀이 기록",
+        "url": "https://www.instagram.com/p/DaeyJkPCQfC/",
+        "source": "other",
+        "sourceName": "Instagram · 남명유치원",
+        "snippet": "남명유치원이 물놀이장을 열고 물총놀이와 준비 체조를 진행한 게시물입니다.",
+        "summary": "부산 강서구 남명유치원의 여름 물놀이장과 물총놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-3d216b7f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaeyJkPCQfC/",
+          "normalizedUrl": "instagram.com/p/daeyjkpcqfc",
+          "normalizedText": "부산 강서 남명유치원 물놀이장 물총놀이 준비체조",
+          "htmlSnapshotHash": "sns-wave740-3d216b7f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaeyJkPCQfC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
       }
     ],
     "1fd6777e-152c-e0b0-e053-0a32095ae0b0": [
@@ -682,6 +964,18 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f1aa-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852206",
+        "title": "선교원   대저 유치원 원아 모집 추첨 후기(feat.명지자연유치원)",
+        "url": "https://blog.naver.com/dox202/220855522161",
+        "source": "naver_blog",
+        "sourceName": "거리에서",
+        "snippet": "부산 강서구 명지 2017 유치원 입학을 위해 5~7세 부모님들 고생이 많으신 걸로 알고 있습니다. 저도... 그리고 신호동 명지자연유치원도 입시 설명회 다녀왔는데 시설은 3곳 중에서 가장 최신건물이었습니다....",
+        "date": "2016-11-07",
+        "collectedAt": "2026-01-30T02:54:05.363Z"
       }
     ]
   }

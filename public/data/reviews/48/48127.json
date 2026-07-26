@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 24,
+  "version": "2026-07-26",
+  "totalCount": 26,
   "kindergartenCount": 6,
   "reviews": {
     "1ecec08c-f6e8-b044-e053-0a32095ab044": [
@@ -476,6 +476,16 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T13:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852446",
+        "title": "문신아트컬러링 단체 관람 및 체험 후기 : 삼계유치원",
+        "url": "https://blog.naver.com/moonshin_art_museum/222583880176",
+        "source": "naver_blog",
+        "sourceName": "창원시립마산문신미술관 공식블로그",
+        "snippet": "문신아트컬러링 단체 관람 및 체험 후기 - 삼계유치원 - 지난 수요일 문신미술관에... 경상남도 창원시 마산합포구 문신길 147 (추산동 51-1) 전화 | 055-225-7181 #문신미술관...",
+        "date": "2021-12-01",
+        "collectedAt": "2026-01-30T03:11:49.818Z"
       }
     ],
     "1ecec08c-f098-b044-e053-0a32095ab044": [
@@ -1037,6 +1047,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:54.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-sns-wave737-3d61fb66",
+        "kindergartenId": "b02911db-851b-4d25-ac5a-ff78d6296beb",
+        "title": "창원 마산회원구 가고파유치원 마산도서관 견학 기록",
+        "url": "https://www.instagram.com/p/DZCM8MZklnG/",
+        "source": "other",
+        "sourceName": "Instagram · 가고파유치원",
+        "snippet": "가고파유치원 아이들이 마산도서관을 찾아 동화책과 가까워지는 시간을 보낸 게시물입니다.",
+        "summary": "마산도서관 견학을 통해 유아들이 책과 도서관 이용을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "library-visit",
+          "reading-experience",
+          "gyeongnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave737-3d61fb66",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZCM8MZklnG/",
+          "normalizedUrl": "instagram.com/p/dzcm8mzklng",
+          "normalizedText": "창원 마산회원구 가고파유치원 마산도서관 견학 책읽기",
+          "htmlSnapshotHash": "sns-wave737-3d61fb66",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZCM8MZklnG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave737"
       }
     ],
     "1ecec08d-0f03-b044-e053-0a32095ab044": [

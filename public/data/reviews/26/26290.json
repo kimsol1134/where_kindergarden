@@ -1,7 +1,7 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 51,
-  "kindergartenCount": 10,
+  "version": "2026-07-26",
+  "totalCount": 56,
+  "kindergartenCount": 12,
   "reviews": {
     "1ecec08d-0c19-b044-e053-0a32095ab044": [
       {
@@ -1333,6 +1333,80 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave704"
+      },
+      {
+        "id": "rev-sns-wave734-85431319",
+        "kindergartenId": "53e8d261-a4bc-4ed3-a025-57d515cb03e1",
+        "title": "부산 남구 새부산유치원 학부모참여수업 기록",
+        "url": "https://www.instagram.com/p/DZqk4yLk0GZ/",
+        "source": "other",
+        "sourceName": "Instagram · 새부산유치원",
+        "snippet": "새부산유치원 학부모참여수업을 가족과 함께 경험한 게시물입니다.",
+        "summary": "부산 새부산유치원의 학부모참여수업 현장과 가족 참여 분위기를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation",
+          "open-class",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave734-85431319",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZqk4yLk0GZ/",
+          "normalizedUrl": "instagram.com/p/dzqk4ylk0gz",
+          "normalizedText": "부산 남구 새부산유치원 학부모참여수업 가족 참여",
+          "htmlSnapshotHash": "sns-wave734-85431319",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZqk4yLk0GZ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave734"
+      },
+      {
+        "id": "rev-sns-wave736-6431adce",
+        "kindergartenId": "53e8d261-a4bc-4ed3-a025-57d515cb03e1",
+        "title": "부산 남구 새부산유치원 피자 만들기 기록",
+        "url": "https://www.instagram.com/reel/C_Ag43iyjA9/",
+        "source": "other",
+        "sourceName": "Instagram · 새부산유치원",
+        "snippet": "새부산유치원 아이들이 피자 만들기 활동을 한 릴스입니다.",
+        "summary": "부산 새부산유치원의 유아 피자 만들기와 요리 체험을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "cooking-activity",
+          "food-education",
+          "busan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave736-6431adce",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_Ag43iyjA9/",
+          "normalizedUrl": "instagram.com/reel/c_ag43iyja9",
+          "normalizedText": "부산 남구 새부산유치원 피자 만들기 요리활동",
+          "htmlSnapshotHash": "sns-wave736-6431adce",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/C_Ag43iyjA9/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave736"
       }
     ],
     "1ecec08d-0fae-b044-e053-0a32095ab044": [
@@ -2469,7 +2543,40 @@
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "1ecec08c-f055-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852197",
+        "title": "대천유치원 입학 설명회 안내",
+        "url": "https://blog.naver.com/kindergarten5622/223604025122",
+        "source": "naver_blog",
+        "sourceName": "대천유치원",
+        "snippet": "입학! 시작을 앞두고 있는 많은 학부모님들께 중요한 소식을 전해드립니다.  설명회 일정  일시**: [2024년 10월 30일(수)]  장소**: 대천유치원  주소**: 부산시 남구 유엔평화로47번길 125 입학설명회...",
+        "date": "2024-10-02",
+        "collectedAt": "2026-01-30T02:53:35.083Z"
+      },
+      {
+        "id": "rev-99852198",
+        "title": "[대천유치원 입학설명회] 우리아이의 첫시작, 대천유치원입니다.",
+        "url": "https://blog.naver.com/kindergarten5622/224029573169",
+        "source": "naver_blog",
+        "sourceName": "대천유치원",
+        "snippet": "아이의 따뜻한 첫 출발, 대천유치원 입학설명회에 초대합니다 아이의 유치원 선택은 단순한 교육기관 선택이 아닙니다. 우리 아이의 성장 방향, 인생의 첫 배움, 사람을 대하는 태도까지 결정짓는 중요한...",
+        "date": "2025-10-02",
+        "collectedAt": "2026-01-30T02:53:35.083Z"
+      }
+    ],
+    "1ecec08d-0a6f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852579",
+        "title": "대연남구 대연동유치원들 입학설명회언제!? 아는정보공유...",
+        "url": "https://blog.naver.com/jilovewon/223609361340",
+        "source": "naver_blog",
+        "sourceName": "크리아트 대연클라센트 교육원",
+        "snippet": "가보니 파크푸르지오에서도 가깝구요~ 백합유치원 설명회는 2024.10.14부터 개별상담으로... 저곳 다녀보려합니다 우리 아이가 매일매일 가고 싶은 유치원 !! 우리모두 잘 선택해보자구요~~ *앞으로...",
+        "date": "2024-10-06",
+        "collectedAt": "2026-07-26T08:29:21.020398"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }
