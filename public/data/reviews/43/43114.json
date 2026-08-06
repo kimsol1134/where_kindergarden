@@ -1,113 +1,205 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 11,
   "kindergartenCount": 4,
   "reviews": {
-    "1ecec08d-03b5-b044-e053-0a32095ab044": [
+    "1ecec08c-f05b-b044-e053-0a32095ab044": [
       {
-        "id": "rev-61b95962",
-        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
-        "title": "청주 오창자연유치원 SNS 프로필",
-        "url": "https://www.instagram.com/jayeon_ochang/",
+        "id": "rev-sns-wave686-620be1ea",
+        "kindergartenId": "1ecec08c-f05b-b044-e053-0a32095ab044",
+        "title": "청주내덕초등학교병설유치원 어린이 음악회 기록",
+        "url": "https://www.instagram.com/p/DZtlNcJvF9p/",
         "source": "other",
-        "sourceName": "Instagram · 오창자연유치원",
-        "snippet": "오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충북 청주시 청원구 오창자연유치원의 Instagram 프로필 SNS 정보.",
+        "sourceName": "Instagram · 청주내덕초등학교병설유치원",
+        "snippet": "청주내덕초등학교병설유치원이 바이올린, 첼로, 피아노 연주와 함께 어린이 음악회를 즐긴 공개 게시물입니다.",
+        "summary": "병설유치원의 찾아가는 어린이 음악회와 감상 활동을 확인할 수 있는 SNS 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "profile"
+          "music-concert",
+          "instrumental-performance",
+          "cheongju"
         ],
-        "content": "오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 Instagram 검색 결과다. 원장부의 청주시 청원구 주소와 전화번호를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.998Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "acbfaafe",
+        "evidenceChecksum": "sns-wave686-620be1ea",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZtlNcJvF9p/",
+          "normalizedUrl": "instagram.com/p/dztlncjvf9p",
+          "normalizedText": "청주내덕초등학교병설유치원 찾아가는 어린이 음악회 바이올린 첼로 피아노",
+          "htmlSnapshotHash": "sns-wave686-620be1ea",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZtlNcJvF9p/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
+      }
+    ],
+    "1ecec08c-fe41-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852383",
+        "title": "남양주 다산지역 유치원 입학설명회 2 (무궁화유치원...",
+        "url": "https://blog.naver.com/cherry2309/223771029051",
+        "source": "naver_blog",
+        "sourceName": "여니의 행복한 일상♥️",
+        "snippet": "오늘은 입학설명회 다녀왔던 무지개유치원, 프랜시스파커 구리다산 캠퍼스, 알티오라 다산 캠퍼스 후기가 될 것 같아요. 무궁화유치원 (일반유치원) 무궁화 유치원은 메이플, 부영유치원과 함께 가장 많이 가는...",
+        "date": "2025-02-23",
+        "collectedAt": "2026-01-30T03:05:43.977Z",
+        "kindergartenId": "1ecec08c-fe41-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-03b5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-4a672748",
+        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
+        "title": "청주 오창자연유치원 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/C75nG50Sp2d/",
+        "source": "other",
+        "sourceName": "Instagram · 오창자연유치원",
+        "snippet": "Instagram 검색 결과에서 오창자연유치원, 학부모참여수업, 가족참여수업과 청주·충북유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "a1e9d644",
         "structuredFields": {
           "kindergartenName": "오창자연유치원",
           "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22043-241-9802%22+%22instagram%22",
+          "searchUrl": "https://www.google.com/search?q=%22C75nG50Sp2d%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/jayeon_ochang/",
-          "normalizedUrl": "www.instagram.com/jayeon_ochang",
-          "normalizedText": "청주 오창자연유치원 sns 프로필 오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 instagram 검색 결과. 충북 청주시 청원구 오창자연유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "acbfaafe",
-          "extractedAt": "2026-06-30T23:59:59.998Z",
+          "canonicalUrl": "https://www.instagram.com/p/C75nG50Sp2d/",
+          "normalizedUrl": "www.instagram.com/p/c75ng50sp2d",
+          "normalizedText": "청주 오창자연유치원 학부모참여수업 instagram instagram 검색 결과에서 오창자연유치원, 학부모참여수업, 가족참여수업과 청주·충북유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "a1e9d644",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "오창자연유치원",
             "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22043-241-9802%22+%22instagram%22",
+            "searchUrl": "https://www.google.com/search?q=%22C75nG50Sp2d%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.998Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-5e4f6391",
+        "id": "rev-4fdef43d",
         "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
-        "title": "청주 오창자연유치원 자연놀이 SNS",
-        "url": "https://www.instagram.com/p/C0b-5RLygSA/",
+        "title": "청주 오창자연유치원 유아교육진흥원 활동 Instagram",
+        "url": "https://www.instagram.com/p/C2JjpoQp_4k/",
         "source": "other",
         "sourceName": "Instagram · 오창자연유치원",
-        "snippet": "오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충북 청주시 청원구 오창자연유치원의 자연놀이 Instagram 검색 결과.",
+        "snippet": "Instagram 검색 결과에서 오창자연유치원, 유아교육진흥원 활동, 청주·충북유치원 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
-          "search-snippet",
-          "address-not-required",
           "instagram",
-          "outdoor-play"
+          "address-not-required",
+          "field-trip",
+          "nature-activity"
         ],
-        "content": "오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.998Z",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "7578f1d0",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "995b6212",
         "structuredFields": {
           "kindergartenName": "오창자연유치원",
           "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C0b-5RLygSA%22+%22jayeon_ochang%22",
+          "searchUrl": "https://www.google.com/search?q=%22C2JjpoQp_4k%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C0b-5RLygSA/",
-          "normalizedUrl": "www.instagram.com/p/c0b-5rlygsa",
-          "normalizedText": "청주 오창자연유치원 자연놀이 sns 오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 instagram 검색 결과. 충북 청주시 청원구 오창자연유치원의 자연놀이 instagram 검색 결과.",
-          "htmlSnapshotHash": "7578f1d0",
-          "extractedAt": "2026-06-30T23:59:59.998Z",
+          "canonicalUrl": "https://www.instagram.com/p/C2JjpoQp_4k/",
+          "normalizedUrl": "www.instagram.com/p/c2jjpoqp_4k",
+          "normalizedText": "청주 오창자연유치원 유아교육진흥원 활동 instagram instagram 검색 결과에서 오창자연유치원, 유아교육진흥원 활동, 청주·충북유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "995b6212",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "오창자연유치원",
             "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C0b-5RLygSA%22+%22jayeon_ochang%22",
+            "searchUrl": "https://www.google.com/search?q=%22C2JjpoQp_4k%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.998Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9e533a7e",
+        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
+        "title": "충북 청주 오창자연유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/p/CykVzdeJLby/",
+        "source": "other",
+        "sourceName": "Instagram · 오창자연유치원",
+        "snippet": "Instagram 검색 결과에서 2024 오창자연유치원 원아모집, 청주유치원, 오창유치원, 충북유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "c6daca00",
+        "structuredFields": {
+          "kindergartenName": "오창자연유치원",
+          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CykVzdeJLby%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CykVzdeJLby/",
+          "normalizedUrl": "www.instagram.com/p/cykvzdejlby",
+          "normalizedText": "충북 청주 오창자연유치원 원아모집 instagram instagram 검색 결과에서 2024 오창자연유치원 원아모집, 청주유치원, 오창유치원, 충북유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "c6daca00",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "오창자연유치원",
+            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CykVzdeJLby%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -217,6 +309,112 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-5e4f6391",
+        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
+        "title": "청주 오창자연유치원 자연놀이 SNS",
+        "url": "https://www.instagram.com/p/C0b-5RLygSA/",
+        "source": "other",
+        "sourceName": "Instagram · 오창자연유치원",
+        "snippet": "오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충북 청주시 청원구 오창자연유치원의 자연놀이 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "outdoor-play"
+        ],
+        "content": "오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.998Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7578f1d0",
+        "structuredFields": {
+          "kindergartenName": "오창자연유치원",
+          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0b-5RLygSA%22+%22jayeon_ochang%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C0b-5RLygSA/",
+          "normalizedUrl": "www.instagram.com/p/c0b-5rlygsa",
+          "normalizedText": "청주 오창자연유치원 자연놀이 sns 오창자연유치원 계정의 자연놀이 게시물과 오창자연유치원 문맥이 확인되는 instagram 검색 결과. 충북 청주시 청원구 오창자연유치원의 자연놀이 instagram 검색 결과.",
+          "htmlSnapshotHash": "7578f1d0",
+          "extractedAt": "2026-06-30T23:59:59.998Z",
+          "structuredFields": {
+            "kindergartenName": "오창자연유치원",
+            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0b-5RLygSA%22+%22jayeon_ochang%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.998Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-61b95962",
+        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
+        "title": "청주 오창자연유치원 SNS 프로필",
+        "url": "https://www.instagram.com/jayeon_ochang/",
+        "source": "other",
+        "sourceName": "Instagram · 오창자연유치원",
+        "snippet": "오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충북 청주시 청원구 오창자연유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 Instagram 검색 결과다. 원장부의 청주시 청원구 주소와 전화번호를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.998Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "acbfaafe",
+        "structuredFields": {
+          "kindergartenName": "오창자연유치원",
+          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22043-241-9802%22+%22instagram%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/jayeon_ochang/",
+          "normalizedUrl": "www.instagram.com/jayeon_ochang",
+          "normalizedText": "청주 오창자연유치원 sns 프로필 오창자연유치원 프로필에서 청주 오창 기관명과 전화 043-241-9802 문맥이 확인되는 instagram 검색 결과. 충북 청주시 청원구 오창자연유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "acbfaafe",
+          "extractedAt": "2026-06-30T23:59:59.998Z",
+          "structuredFields": {
+            "kindergartenName": "오창자연유치원",
+            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22043-241-9802%22+%22instagram%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.998Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
         "id": "rev-f2ef8c79",
         "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
         "title": "청주 오창자연유치원 놀이활동 SNS",
@@ -267,153 +465,6 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.998Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-4fdef43d",
-        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
-        "title": "청주 오창자연유치원 유아교육진흥원 활동 Instagram",
-        "url": "https://www.instagram.com/p/C2JjpoQp_4k/",
-        "source": "other",
-        "sourceName": "Instagram · 오창자연유치원",
-        "snippet": "Instagram 검색 결과에서 오창자연유치원, 유아교육진흥원 활동, 청주·충북유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "nature-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "995b6212",
-        "structuredFields": {
-          "kindergartenName": "오창자연유치원",
-          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C2JjpoQp_4k%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C2JjpoQp_4k/",
-          "normalizedUrl": "www.instagram.com/p/c2jjpoqp_4k",
-          "normalizedText": "청주 오창자연유치원 유아교육진흥원 활동 instagram instagram 검색 결과에서 오창자연유치원, 유아교육진흥원 활동, 청주·충북유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "995b6212",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "오창자연유치원",
-            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C2JjpoQp_4k%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-4a672748",
-        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
-        "title": "청주 오창자연유치원 학부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/C75nG50Sp2d/",
-        "source": "other",
-        "sourceName": "Instagram · 오창자연유치원",
-        "snippet": "Instagram 검색 결과에서 오창자연유치원, 학부모참여수업, 가족참여수업과 청주·충북유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "a1e9d644",
-        "structuredFields": {
-          "kindergartenName": "오창자연유치원",
-          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C75nG50Sp2d%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C75nG50Sp2d/",
-          "normalizedUrl": "www.instagram.com/p/c75ng50sp2d",
-          "normalizedText": "청주 오창자연유치원 학부모참여수업 instagram instagram 검색 결과에서 오창자연유치원, 학부모참여수업, 가족참여수업과 청주·충북유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "a1e9d644",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "오창자연유치원",
-            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C75nG50Sp2d%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9e533a7e",
-        "kindergartenId": "1ecec08d-03b5-b044-e053-0a32095ab044",
-        "title": "충북 청주 오창자연유치원 원아모집 Instagram",
-        "url": "https://www.instagram.com/p/CykVzdeJLby/",
-        "source": "other",
-        "sourceName": "Instagram · 오창자연유치원",
-        "snippet": "Instagram 검색 결과에서 2024 오창자연유치원 원아모집, 청주유치원, 오창유치원, 충북유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "c6daca00",
-        "structuredFields": {
-          "kindergartenName": "오창자연유치원",
-          "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CykVzdeJLby%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CykVzdeJLby/",
-          "normalizedUrl": "www.instagram.com/p/cykvzdejlby",
-          "normalizedText": "충북 청주 오창자연유치원 원아모집 instagram instagram 검색 결과에서 2024 오창자연유치원 원아모집, 청주유치원, 오창유치원, 충북유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "c6daca00",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "오창자연유치원",
-            "kindergartenAddress": "충청북도 청주시 청원구 성산질푼이길 12-3",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CykVzdeJLby%22+%22%EC%98%A4%EC%B0%BD%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -470,56 +521,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f05b-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave686-620be1ea",
-        "kindergartenId": "1ecec08c-f05b-b044-e053-0a32095ab044",
-        "title": "청주내덕초등학교병설유치원 어린이 음악회 기록",
-        "url": "https://www.instagram.com/p/DZtlNcJvF9p/",
-        "source": "other",
-        "sourceName": "Instagram · 청주내덕초등학교병설유치원",
-        "snippet": "청주내덕초등학교병설유치원이 바이올린, 첼로, 피아노 연주와 함께 어린이 음악회를 즐긴 공개 게시물입니다.",
-        "summary": "병설유치원의 찾아가는 어린이 음악회와 감상 활동을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "music-concert",
-          "instrumental-performance",
-          "cheongju"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:55.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave686-620be1ea",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZtlNcJvF9p/",
-          "normalizedUrl": "instagram.com/p/dztlncjvf9p",
-          "normalizedText": "청주내덕초등학교병설유치원 찾아가는 어린이 음악회 바이올린 첼로 피아노",
-          "htmlSnapshotHash": "sns-wave686-620be1ea",
-          "extractedAt": "2026-07-03T23:59:55.000Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DZtlNcJvF9p/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:55.000Z",
-        "approvedBy": "codex-manual-sns-wave686"
-      }
-    ],
-    "1ecec08c-fe41-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-99852383",
-        "title": "남양주 다산지역 유치원 입학설명회 2 (무궁화유치원...",
-        "url": "https://blog.naver.com/cherry2309/223771029051",
-        "source": "naver_blog",
-        "sourceName": "여니의 행복한 일상♥️",
-        "snippet": "오늘은 입학설명회 다녀왔던 무지개유치원, 프랜시스파커 구리다산 캠퍼스, 알티오라 다산 캠퍼스 후기가 될 것 같아요. 무궁화유치원 (일반유치원) 무궁화 유치원은 메이플, 부영유치원과 함께 가장 많이 가는...",
-        "date": "2025-02-23",
-        "collectedAt": "2026-01-30T03:05:43.977Z"
       }
     ]
   }

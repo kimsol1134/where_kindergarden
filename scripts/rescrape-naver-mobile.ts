@@ -54,7 +54,7 @@ const MOBILE_HEADERS = {
 /** blog.naver.com URL에서 blogId와 logNo를 뽑아 모바일 PostView 주소로 바꾼다. */
 function toMobileUrl(url: string): string | null {
   // https://blog.naver.com/{id}/{no}
-  let m = url.match(/blog\.naver\.com\/([^/?#]+)\/(\d+)/);
+  const m = url.match(/blog\.naver\.com\/([^/?#]+)\/(\d+)/);
   if (m) return `https://m.blog.naver.com/PostView.naver?blogId=${m[1]}&logNo=${m[2]}`;
 
   // https://blog.naver.com/PostView.naver?blogId={id}&logNo={no}

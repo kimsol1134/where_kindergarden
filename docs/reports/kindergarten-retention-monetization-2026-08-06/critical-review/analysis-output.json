@@ -1,0 +1,288 @@
+{
+  "snapshot_date": "2026-08-06",
+  "complete_data_through": "2026-08-05",
+  "behavior_signals": [
+    {
+      "behavior": "후보 2곳 도달",
+      "converted_users": 47,
+      "denominator_users": 124,
+      "conversion_rate": 0.379032,
+      "average_seconds": 375,
+      "definition": "Comparison Added with compare_count > 1",
+      "recomputed_rate": 0.3790322580645161
+    },
+    {
+      "behavior": "2곳 이상 실제 비교 보기",
+      "converted_users": 42,
+      "denominator_users": 124,
+      "conversion_rate": 0.33871,
+      "average_seconds": 646,
+      "definition": "Compare Viewed with compare_count > 1",
+      "recomputed_rate": 0.3387096774193548
+    },
+    {
+      "behavior": "외부 후기 열기",
+      "converted_users": 31,
+      "denominator_users": 124,
+      "conversion_rate": 0.25,
+      "average_seconds": 1148,
+      "definition": "Review Link Tapped",
+      "recomputed_rate": 0.25
+    },
+    {
+      "behavior": "즐겨찾기 2곳 도달",
+      "converted_users": 17,
+      "denominator_users": 124,
+      "conversion_rate": 0.137097,
+      "average_seconds": 881,
+      "definition": "Favorite Added with favorite_count > 1",
+      "recomputed_rate": 0.13709677419354838
+    },
+    {
+      "behavior": "비교 공유 시작",
+      "converted_users": 3,
+      "denominator_users": 124,
+      "conversion_rate": 0.024194,
+      "average_seconds": 284,
+      "definition": "legacy Compare Shared; all observed result=initiated",
+      "recomputed_rate": 0.024193548387096774
+    }
+  ],
+  "new_user_retention": [
+    {
+      "day": "D1",
+      "returned_users": 4,
+      "eligible_users": 168,
+      "rate": 0.0238095,
+      "matured_start": "2026-07-07",
+      "matured_end": "2026-08-04",
+      "recomputed_rate": 0.023809523809523808
+    },
+    {
+      "day": "D7",
+      "returned_users": 5,
+      "eligible_users": 132,
+      "rate": 0.0378788,
+      "matured_start": "2026-07-07",
+      "matured_end": "2026-07-29",
+      "recomputed_rate": 0.03787878787878788
+    },
+    {
+      "day": "D14",
+      "returned_users": 1,
+      "eligible_users": 31,
+      "rate": 0.0322581,
+      "matured_start": "2026-07-07",
+      "matured_end": "2026-07-22",
+      "recomputed_rate": 0.03225806451612903
+    },
+    {
+      "day": "D28",
+      "returned_users": 0,
+      "eligible_users": 8,
+      "rate": 0.0,
+      "matured_start": "2026-07-07",
+      "matured_end": "2026-07-08",
+      "recomputed_rate": 0.0
+    }
+  ],
+  "two_candidate_retention": [
+    {
+      "day": "D1",
+      "returned_users": 5,
+      "eligible_users": 69,
+      "rate": 0.0724638
+    },
+    {
+      "day": "D7",
+      "returned_users": 4,
+      "eligible_users": 52,
+      "rate": 0.0769231
+    },
+    {
+      "day": "D14",
+      "returned_users": 0,
+      "eligible_users": 12,
+      "rate": 0
+    }
+  ],
+  "acquisition_alignment": {
+    "asc_known_units": 106,
+    "mixpanel_new_launch_sum": 170,
+    "known_missing_asc_dates": [
+      "2026-07-21"
+    ],
+    "lag_diagnostics": [
+      {
+        "asc_date_shift_days": -2,
+        "matched_days": 17,
+        "pearson_r": 0.092975
+      },
+      {
+        "asc_date_shift_days": -1,
+        "matched_days": 18,
+        "pearson_r": 0.714678
+      },
+      {
+        "asc_date_shift_days": 0,
+        "matched_days": 19,
+        "pearson_r": 0.615671
+      },
+      {
+        "asc_date_shift_days": 1,
+        "matched_days": 19,
+        "pearson_r": 0.346743
+      },
+      {
+        "asc_date_shift_days": 2,
+        "matched_days": 18,
+        "pearson_r": 0.077581
+      }
+    ]
+  },
+  "economics_scenarios": [
+    {
+      "price_krw": 9900,
+      "eligible_purchase_rate": 0.03,
+      "estimated_purchases": 2.1,
+      "gross_revenue_krw": 20938,
+      "active_users_for_1m": 8883
+    },
+    {
+      "price_krw": 9900,
+      "eligible_purchase_rate": 0.05,
+      "estimated_purchases": 3.5,
+      "gross_revenue_krw": 34897,
+      "active_users_for_1m": 5330
+    },
+    {
+      "price_krw": 9900,
+      "eligible_purchase_rate": 0.1,
+      "estimated_purchases": 7.0,
+      "gross_revenue_krw": 69795,
+      "active_users_for_1m": 2665
+    },
+    {
+      "price_krw": 19900,
+      "eligible_purchase_rate": 0.03,
+      "estimated_purchases": 2.1,
+      "gross_revenue_krw": 42088,
+      "active_users_for_1m": 4419
+    },
+    {
+      "price_krw": 19900,
+      "eligible_purchase_rate": 0.05,
+      "estimated_purchases": 3.5,
+      "gross_revenue_krw": 70147,
+      "active_users_for_1m": 2652
+    },
+    {
+      "price_krw": 19900,
+      "eligible_purchase_rate": 0.1,
+      "estimated_purchases": 7.0,
+      "gross_revenue_krw": 140295,
+      "active_users_for_1m": 1326
+    }
+  ],
+  "public_data_quality": {
+    "kindergartens": {
+      "source_version": "20261",
+      "collected_at": "2026-08-06T02:29:14.399Z",
+      "total_count": 7152,
+      "registry_join_coverage": 1
+    },
+    "reviews": {
+      "version": "2026-08-06",
+      "generated_at": "2026-08-06T02:40:56.189Z",
+      "total_count": 6055,
+      "kindergarten_count": 1892,
+      "catalog_coverage": 0.2645413870246085,
+      "excluded_orphan_reviews": 194,
+      "deduplicated_reviews": 58
+    },
+    "vacancy": {
+      "version": "2026-08-06T02:48:39.629Z",
+      "total_count": 3032,
+      "positive_count": 2353,
+      "quality": {
+        "status": "complete",
+        "startedAt": "2026-08-06T02:29:29.613Z",
+        "completedAt": "2026-08-06T02:48:39.629Z",
+        "regionsRequested": 261,
+        "regionsSucceeded": 261,
+        "regionsFailed": 0,
+        "listCompleteness": 1,
+        "detailRequested": 2353,
+        "detailSucceeded": 2341,
+        "detailFailed": 12,
+        "detailCoverage": 0.9949001274968126,
+        "failures": [
+          {
+            "stage": "detail",
+            "key": "1ecec08d-042a-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-fd90-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08d-0840-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-f41c-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-faa4-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08d-0bb2-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08d-059a-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-f705-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-f657-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08d-01d7-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-edb1-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          },
+          {
+            "stage": "detail",
+            "key": "1ecec08c-fdfb-b044-e053-0a32095ab044",
+            "message": "No detail rows parsed"
+          }
+        ]
+      }
+    },
+    "region_codes": {
+      "checked_at": "2026-08-06T02:46:55.740Z",
+      "total_count": 261
+    }
+  }
+}

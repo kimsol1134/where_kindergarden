@@ -1,138 +1,106 @@
 /**
- * 행정안전부 시도코드 → 교육부 시도코드 매핑
+ * Kakao 행정구역 코드를 최신 유치원 공개 데이터의 시도 코드로 정규화한다.
  *
- * Kakao API는 행정안전부의 행정동 코드를 사용하고,
- * 유치원 알리미 API는 교육부의 시도교육청 코드를 사용합니다.
+ * 2026년 공개 코드표는 행정 시도 코드를 직접 사용한다. 2026년 개편 이전 응답이나
+ * 캐시도 검색이 끊기지 않도록 광주/전남, 강원, 전북의 구 코드를 별칭으로 유지한다.
  */
 
-/** 행정안전부 시도코드 → 교육부 시도코드 매핑 */
-const ADMIN_TO_EDU_SIDO_MAP: Record<string, string> = {
+const ADMIN_TO_PUBLIC_SIDO_MAP: Record<string, string> = {
   '11': '11', // 서울
-  '26': '21', // 부산
-  '27': '22', // 대구
-  '28': '23', // 인천
-  '29': '24', // 광주
-  '30': '25', // 대전
-  '31': '26', // 울산
-  '36': '29', // 세종
-  '41': '27', // 경기
-  '42': '28', // 강원특별자치도 (구 코드)
-  '51': '28', // 강원특별자치도 (신 코드)
-  '43': '34', // 충북
-  '44': '35', // 충남
-  '45': '36', // 전북특별자치도 (구 코드)
-  '52': '36', // 전북특별자치도 (신 코드)
-  '46': '37', // 전남
-  '47': '38', // 경북
-  '48': '39', // 경남
-  '50': '40', // 제주
+  '12': '12', // 전남광주통합특별시
+  '26': '26', // 부산
+  '27': '27', // 대구
+  '28': '28', // 인천
+  '29': '12', // 광주 구 코드
+  '30': '30', // 대전
+  '31': '31', // 울산
+  '36': '36', // 세종
+  '41': '41', // 경기
+  '42': '51', // 강원 구 코드
+  '51': '51', // 강원특별자치도
+  '43': '43', // 충북
+  '44': '44', // 충남
+  '45': '52', // 전북 구 코드
+  '52': '52', // 전북특별자치도
+  '46': '12', // 전남 구 코드
+  '47': '47', // 경북
+  '48': '48', // 경남
+  '50': '50', // 제주
 };
 
-/** 시도명 매핑 (시도코드 조회 실패시 fallback) */
-const SIDO_NAME_TO_EDU_CODE: Record<string, string> = {
+const SIDO_NAME_TO_PUBLIC_CODE: Record<string, string> = {
   '서울': '11',
   '서울특별시': '11',
-  '부산': '21',
-  '부산광역시': '21',
-  '대구': '22',
-  '대구광역시': '22',
-  '인천': '23',
-  '인천광역시': '23',
-  '광주': '24',
-  '광주광역시': '24',
-  '대전': '25',
-  '대전광역시': '25',
-  '울산': '26',
-  '울산광역시': '26',
-  '세종': '29',
-  '세종특별자치시': '29',
-  '경기': '27',
-  '경기도': '27',
-  '강원': '28',
-  '강원도': '28',
-  '강원특별자치도': '28',
-  '충북': '34',
-  '충청북도': '34',
-  '충남': '35',
-  '충청남도': '35',
-  '전북': '36',
-  '전라북도': '36',
-  '전북특별자치도': '36',
-  '전남': '37',
-  '전라남도': '37',
-  '경북': '38',
-  '경상북도': '38',
-  '경남': '39',
-  '경상남도': '39',
-  '제주': '40',
-  '제주특별자치도': '40',
+  '전남광주': '12',
+  '전남광주통합특별시': '12',
+  '광주': '12',
+  '광주광역시': '12',
+  '전남': '12',
+  '전라남도': '12',
+  '부산': '26',
+  '부산광역시': '26',
+  '대구': '27',
+  '대구광역시': '27',
+  '인천': '28',
+  '인천광역시': '28',
+  '대전': '30',
+  '대전광역시': '30',
+  '울산': '31',
+  '울산광역시': '31',
+  '세종': '36',
+  '세종특별자치시': '36',
+  '경기': '41',
+  '경기도': '41',
+  '강원': '51',
+  '강원도': '51',
+  '강원특별자치도': '51',
+  '충북': '43',
+  '충청북도': '43',
+  '충남': '44',
+  '충청남도': '44',
+  '전북': '52',
+  '전라북도': '52',
+  '전북특별자치도': '52',
+  '경북': '47',
+  '경상북도': '47',
+  '경남': '48',
+  '경상남도': '48',
+  '제주': '50',
+  '제주특별자치도': '50',
 };
 
 export interface RegionCodeConversionResult {
+  /** 이름은 하위 호환을 위해 유지하지만 값은 최신 공개 데이터의 시도 코드다. */
   eduSidoCode: string;
   sigunguName: string;
 }
 
-/**
- * 행정안전부 시도코드를 교육부 시도코드로 변환
- * @param adminSidoCode 행정안전부 시도코드 (예: "42")
- * @returns 교육부 시도코드 (예: "28") 또는 null
- */
 export function convertToEduSidoCode(adminSidoCode: string): string | null {
-  return ADMIN_TO_EDU_SIDO_MAP[adminSidoCode] ?? null;
+  return ADMIN_TO_PUBLIC_SIDO_MAP[adminSidoCode] ?? null;
 }
 
-/**
- * 시도명을 교육부 시도코드로 변환
- * @param sidoName 시도명 (예: "강원특별자치도")
- * @returns 교육부 시도코드 (예: "28") 또는 null
- */
 export function convertSidoNameToEduCode(sidoName: string): string | null {
-  return SIDO_NAME_TO_EDU_CODE[sidoName] ?? null;
+  return SIDO_NAME_TO_PUBLIC_CODE[sidoName] ?? null;
 }
 
-/**
- * 행정안전부 코드를 교육부 코드로 변환 (종합)
- * 시도코드 변환이 실패하면 시도명으로 재시도
- *
- * @param adminSidoCode 행정안전부 시도코드
- * @param sidoName 시도명 (fallback용)
- * @param sigunguName 시군구명 (필터링용)
- * @returns 변환 결과 또는 null
- */
 export function convertRegionCode(
   adminSidoCode: string,
   sidoName: string,
   sigunguName: string
 ): RegionCodeConversionResult | null {
-  // 먼저 시도코드로 변환 시도
-  let eduSidoCode = convertToEduSidoCode(adminSidoCode);
-
-  // 실패하면 시도명으로 재시도
-  if (!eduSidoCode) {
-    eduSidoCode = convertSidoNameToEduCode(sidoName);
-  }
-
-  if (!eduSidoCode) {
+  const publicSidoCode =
+    convertToEduSidoCode(adminSidoCode) ?? convertSidoNameToEduCode(sidoName);
+  if (!publicSidoCode) {
     return null;
   }
 
-  return {
-    eduSidoCode,
-    sigunguName,
-  };
+  return { eduSidoCode: publicSidoCode, sigunguName };
 }
 
-/**
- * 지원되는 모든 행정안전부 시도코드 목록
- */
 export function getSupportedAdminSidoCodes(): string[] {
-  return Object.keys(ADMIN_TO_EDU_SIDO_MAP);
+  return Object.keys(ADMIN_TO_PUBLIC_SIDO_MAP);
 }
 
-/**
- * 지원되는 모든 교육부 시도코드 목록
- */
 export function getSupportedEduSidoCodes(): string[] {
-  return [...new Set(Object.values(ADMIN_TO_EDU_SIDO_MAP))];
+  return [...new Set(Object.values(ADMIN_TO_PUBLIC_SIDO_MAP))];
 }

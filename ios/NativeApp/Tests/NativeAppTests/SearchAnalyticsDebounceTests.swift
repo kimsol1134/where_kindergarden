@@ -266,4 +266,30 @@ final class SearchAnalyticsDebounceTests: XCTestCase {
         XCTAssertEqual(last.properties["result_count"], .int(1))
         XCTAssertEqual(last.properties["query_type"], .string("keyword"))
     }
+
+    func testDetailOpenedIsRecordedOnlyAfterSheetPresentation() async throws {
+        let analytics = MockAnalytics()
+        let viewModel = makeViewModel(
+            kindergartens: [try makeKindergarten(kindercode: "A001", name: "강남유치원")],
+            analytics: analytics
+        )
+        try await waitForDebounce()
+        let kindergarten = try XCTUnwrap(viewModel.results.first)
+
+        viewModel.select(kindergarten: kindergarten, source: "result", rankPosition: 1)
+
+        XCTAssertEqual(analytics.events.filter { $0.event == .resultTapped }.count, 1)
+        XCTAssertEqual(
+            analytics.events.filter { $0.event == .detailOpened }.count,
+            0,
+            "선택만으로 상세 노출을 기록하면 안 된다"
+        )
+
+        let sheet = viewModel.makeDetailSheet(for: kindergarten)
+        sheet.onDetailPresented()
+
+        let detailEvent = try XCTUnwrap(analytics.events.last { $0.event == .detailOpened })
+        XCTAssertEqual(detailEvent.properties["kindercode"], .string("A001"))
+        XCTAssertEqual(detailEvent.properties["source"], .string("result"))
+    }
 }

@@ -1,683 +1,850 @@
 /**
- * 유치원 알리미 API 데이터 배치 동기화 스크립트
+ * 유치원알리미 공개 공시자료로 전국 유치원 데이터를 갱신한다.
  *
- * 전국 시군구별로 API를 호출하여 유치원 데이터를 수집하고
- * Supabase에 저장합니다.
+ * 인증키가 필요한 Open API 대신, 같은 기관이 제공하는 전국 공개 JSON과
+ * 공개 검색/상세 페이지를 결합한다. 식별자·누락 좌표까지 공식 원천만 사용한다.
  *
  * 사용법:
- *   pnpm sync:kindergartens                    # 전체 동기화
- *   pnpm sync:kindergartens -- --test          # 테스트 모드 (서울 종로구만)
- *   pnpm sync:kindergartens -- --save-json     # JSON 파일로 저장
+ *   pnpm sync:kindergartens
+ *   pnpm sync:kindergartens -- --dry-run
+ *   pnpm sync:kindergartens -- --timing 20261 --no-publish --output /tmp/kindergartens.json
  */
 
-import { createClient } from '@supabase/supabase-js';
-import { config } from 'dotenv';
-import * as fs from 'fs';
-import * as path from 'path';
-
-// .env.local 파일을 우선 로드
-config({ path: '.env.local' });
-config(); // .env 파일도 fallback으로 로드
-
+import { createHash } from 'node:crypto';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import { config as loadEnvironment } from 'dotenv';
 import { SIGUNGU_CODES, type SigunguCode } from './data/sigungu-codes';
 
-// ============================================================================
-// 타입 정의
-// ============================================================================
+loadEnvironment({ path: '.env.local', quiet: true });
+loadEnvironment({ quiet: true });
 
-interface BasicInfo2Row {
-  kindercode: string;
-  kindername: string;
-  establish: string;
-  addr: string;
-  telno: string;
-  hpaddr?: string;
-  opertime?: string;
-  clcnt3?: string;
-  clcnt4?: string;
-  clcnt5?: string;
-  mixclcnt?: string;
-  shclcnt?: string;
-  ppcnt3?: string;
-  ppcnt4?: string;
-  ppcnt5?: string;
-  mixppcnt?: string;
-  shppcnt?: string;
-  prmstfcnt?: string;
-  ag3fpcnt?: string;
-  ag4fpcnt?: string;
-  ag5fpcnt?: string;
-  mixfpcnt?: string;
-  spcnfpcnt?: string;
-  lttdcdnt?: string;
-  lngtcdnt?: string;
+const SITE_BASE_URL = 'https://e-childschoolinfo.moe.go.kr';
+const OPEN_DATA_PAGE_URL = `${SITE_BASE_URL}/openData.do`;
+const BULK_DOWNLOAD_URL = `${SITE_BASE_URL}/download/getTotalOpenData.do`;
+const DISCLOSURE_LIST_URL = (timing: string) =>
+  `${SITE_BASE_URL}/gongsi/${timing}/findGongsiList.do`;
+const REGISTRY_URL = `${SITE_BASE_URL}/kinderMt/combineFind.do`;
+const DETAIL_URL = `${SITE_BASE_URL}/kinderMt/kinderSummary.do`;
+const REQUEST_TIMEOUT_MS = 45_000;
+const MAX_ATTEMPTS = 3;
+const REGISTRY_PAGE_SIZE = 1_000;
+const MIN_RECORD_COUNT = 6_500;
+const MIN_COMPONENT_COVERAGE = 0.99;
+
+type Cell = string | number | boolean | null;
+
+interface BulkDataset {
+  header: string[];
+  body: Cell[][];
 }
 
-interface BuildingRow {
-  kindercode: string;
-  archyy?: string;
-  floorcnt?: string;
-  bldgprusarea?: string;
-  grottar?: string;
+interface SourceSpec {
+  code: string;
+  label: string;
+  requiredHeaders: string[];
 }
 
-interface TeachersInfoRow {
-  kindercode: string;
-  drcnt?: string;
-  adcnt?: string;
-  hdst_thcnt?: string;
-  asps_thcnt?: string;
-  gnrl_thcnt?: string;
-  spcn_thcnt?: string;
-  ntcnt?: string;
-  ntrt_thcnt?: string;
-  shcnt_thcnt?: string;
-  owcnt?: string;
-  hdst_tchr_qacnt?: string;
-  rgth_gd1_qacnt?: string;
-  rgth_gd2_qacnt?: string;
-  asth_qacnt?: string;
-  spsc_tchr_qacnt?: string;
-  nth_qacnt?: string;
-  ntth_qacnt?: string;
+interface RegistryRow {
+  id: string;
+  name: string;
+  address: string;
 }
 
-interface LessonDayRow {
-  kindercode: string;
-  ag3_lsn_dcnt?: string;
-  ag4_lsn_dcnt?: string;
-  ag5_lsn_dcnt?: string;
-  mix_age_lsn_dcnt?: string;
-  spcl_lsn_dcnt?: string;
-  afsc_pros_lsn_dcnt?: string;
-}
-
-interface SchoolBusRow {
-  kindercode: string;
-  vhcl_oprn_yn: string;
-  opra_vhcnt?: string;
-}
-
-interface SchoolMealRow {
-  kindercode: string;
-  mlsr_oprn_way_tp_cd?: string;
-}
-
-interface ClassAreaRow {
-  kindercode: string;
-  clsrarea?: string;
-  otsparea?: string;
-}
-
-interface YearOfWorkRow {
-  kindercode: string;
-  yy1_undr_thcnt?: string;
-  yy1_abv_yy2_undr_thcnt?: string;
-  yy2_abv_yy4_undr_thcnt?: string;
-  yy4_abv_yy6_undr_thcnt?: string;
-  yy6_abv_thcnt?: string;
-}
-
-interface EnvironmentHygieneRow {
-  kindercode: string;
-  mdst_chk_dt?: string;
-  mdst_chk_rslt_cd?: string;
-  ilmn_chk_dt?: string;
-  ilmn_chk_rslt_cd?: string;
-  fxtm_dsnf_trgt_yn?: string;
-  fxtm_dsnf_chk_dt?: string;
-  fxtm_dsnf_chk_rslt_tp_cd?: string;
-  arql_chk_dt?: string;
-  arql_chk_rslt_tp_cd?: string;
-}
-
-interface SafetyEduRow {
-  kindercode: string;
-  plyg_ck_yn?: string;
-  plyg_ck_dt?: string;
-  plyg_ck_rs_cd?: string;
-  cctv_ist_yn?: string;
-  cctv_ist_total?: string;
-  cctv_ist_in?: string;
-  cctv_ist_out?: string;
-  fire_avd_yn?: string;
-  fire_avd_dt?: string;
-  fire_safe_yn?: string;
-  fire_safe_dt?: string;
-  gas_ck_yn?: string;
-  gas_ck_dt?: string;
-  elect_ck_yn?: string;
-  elect_ck_dt?: string;
-}
-
-interface DeductionSocietyRow {
-  kindercode: string;
-  school_ds_yn?: string;
-  school_ds_en?: string;
-  educate_ds_yn?: string;
-  educate_ds_en?: string;
-}
-
-interface InsuranceRow {
-  kindercode: string;
-  insurance_nm?: string;
-  insurance_en?: string;
-  insurance_yn?: string;
-  company1?: string;
-  company2?: string;
-  company3?: string;
-}
-
-interface AfterSchoolRow {
-  kindercode: string;
-  inor_clcnt?: string;
-  pm_rrgn_clcnt?: string;
-  oper_time?: string;
+interface SyncOptions {
+  timing: string | null;
+  dryRun: boolean;
+  publishPublic: boolean;
+  outputPath: string | null;
 }
 
 interface KindergartenRecord {
   kindercode: string;
   name: string;
   address: string;
-  sido_code: string;
-  sigungu_code: string;
-  type: string;
-  capacity: number;
-  current_count: number;
-  has_bus: boolean;
-  bus_count: number;
-  meal_type: string | null;
-  has_after_school: boolean;
-  area_per_child: number;
+  lat: number;
+  lng: number;
+  type: 'public' | 'private';
   phone: string | null;
   homepage: string | null;
   operation_hours: string | null;
+  sido_code: string;
+  sigungu_code: string;
+  capacity: number;
+  current_count: number;
+  class_count_age3: number;
+  class_count_age4: number;
+  class_count_age5: number;
+  capacity_age3: number;
+  capacity_age4: number;
+  capacity_age5: number;
+  current_age3: number;
+  current_age4: number;
+  current_age5: number;
+  class_count_mix: number;
+  capacity_mix: number;
+  current_mix: number;
+  capacity_special: number;
+  current_special: number;
+  establish_date: string;
+  has_bus: boolean;
+  bus_count: number;
+  meal_type: 'direct' | 'outsourced' | null;
+  has_after_school: boolean;
+  area_per_child: number;
   has_playground: boolean;
-  lat: number | null;
-  lng: number | null;
-  batch_synced_at: string;
-  data_version: string;
-  // 추가 필드 (원시 데이터 포함)
-  raw_data: {
-    basicInfo2: BasicInfo2Row | null;
-    building: BuildingRow | null;
-    teachersInfo: TeachersInfoRow | null;
-    lessonDay: LessonDayRow | null;
-    schoolBus: SchoolBusRow | null;
-    schoolMeal: SchoolMealRow | null;
-    classArea: ClassAreaRow | null;
-    yearOfWork: YearOfWorkRow | null;
-    environmentHygiene: EnvironmentHygieneRow | null;
-    safetyEdu: SafetyEduRow | null;
-    deductionSociety: DeductionSocietyRow | null;
-    afterSchool: AfterSchoolRow | null;
-    insurance: InsuranceRow[];
+  building_year: number | null;
+  floor_info: string | null;
+  classroom_area: number;
+  indoor_playground_area: number;
+  outdoor_playground_area: number;
+  teacher_count: number;
+  senior_teacher_count: number;
+  cctv_count: number;
+}
+
+interface RegionResolution {
+  region: SigunguCode;
+  method: 'official-address' | 'current-reform-rule' | 'previous-address';
+}
+
+interface CoordinateResolution {
+  id: string;
+  lat: number;
+  lng: number;
+  method: 'official-detail' | 'previous' | 'kakao-address';
+}
+
+const SOURCE_SPECS: Record<string, SourceSpec> = {
+  general: {
+    code: '05',
+    label: '일반 현황',
+    requiredHeaders: ['교육청명', '유치원명', '설립유형', '주소', '인가총정원수', '위도', '경도'],
+  },
+  building: {
+    code: '042',
+    label: '건물 현황',
+    requiredHeaders: ['유치원명', '주소', '건축년도', '건물층수'],
+  },
+  classArea: {
+    code: '041',
+    label: '교실면적 현황',
+    requiredHeaders: ['유치원명', '주소', '교실면적', '실내체육장'],
+  },
+  teachers: {
+    code: '06',
+    label: '직위ㆍ자격별 교직원 현황',
+    requiredHeaders: ['유치원명', '주소', '일반 교사수', '정교사1급 자격수'],
+  },
+  tenure: {
+    code: '07',
+    label: '교사의 현 기관 근속연수',
+    requiredHeaders: ['유치원명', '주소', '4년이상6년미만교사수', '6년이상교사수'],
+  },
+  meal: {
+    code: '14',
+    label: '급식실시 현황',
+    requiredHeaders: ['유치원명', '주소', '급식운영방식구분'],
+  },
+  afterSchool: {
+    code: '111',
+    label: '방과후 과정 편성ㆍ운영에 관한 사항',
+    requiredHeaders: ['유치원명', '주소', '학급 계', '참여원아 계'],
+  },
+  bus: {
+    code: '19',
+    label: '통학차량 현황',
+    requiredHeaders: ['유치원명', '주소', '차량운영여부', '운행차량수'],
+  },
+  safety: {
+    code: '22',
+    label: '안전점검 현황',
+    requiredHeaders: ['유치원명', '주소', '놀이시설 안전검사 대상여부', 'CCTV 총 설치수'],
+  },
+};
+
+const BUCHEON_REGION_OVERRIDES: Record<string, string> = {
+  부천동초등학교병설유치원: '41192',
+  부천여월초등학교병설유치원: '41196',
+  상지초등학교병설유치원: '41192',
+  소새울유치원: '41194',
+  소안초등학교병설유치원: '41194',
+  약대초등학교병설유치원: '41192',
+  원종초등학교병설유치원: '41196',
+};
+
+function log(message: string): void {
+  process.stdout.write(`${new Date().toISOString()} ${message}\n`);
+}
+
+function warn(message: string): void {
+  process.stderr.write(`${new Date().toISOString()} WARN ${message}\n`);
+}
+
+function parseArgs(argv: string[]): SyncOptions {
+  const timingIndex = argv.indexOf('--timing');
+  const outputIndex = argv.indexOf('--output');
+  const isTest = argv.includes('--test');
+  const outputPath =
+    outputIndex >= 0 && argv[outputIndex + 1] ? path.resolve(argv[outputIndex + 1]) : null;
+  const dryRun = argv.includes('--dry-run') || (isTest && outputPath === null);
+
+  return {
+    timing: timingIndex >= 0 && argv[timingIndex + 1] ? argv[timingIndex + 1] : null,
+    dryRun,
+    publishPublic: !isTest && !argv.includes('--no-publish') && !dryRun,
+    outputPath,
   };
 }
 
-// ============================================================================
-// 상수 정의
-// ============================================================================
+function decodeHtml(value: string): string {
+  const named: Record<string, string> = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'",
+    '&nbsp;': ' ',
+  };
+  return value
+    .replace(/&amp;|&lt;|&gt;|&quot;|&#39;|&nbsp;/g, (entity) => named[entity] ?? entity)
+    .replace(/&#(\d+);/g, (_, code: string) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code: string) => String.fromCharCode(parseInt(code, 16)));
+}
 
-const API_BASE_URL = 'https://e-childschoolinfo.moe.go.kr/api/notice';
-const DISCLOSURE_TIMING = '20261';
-const DATA_VERSION = '2026년 1차';
+function cleanText(value: Cell | undefined): string {
+  return String(value ?? '').normalize('NFKC').replace(/\s+/g, ' ').trim();
+}
 
-// 수집할 엔드포인트 (13개 중 12개 - basicInfo 제외, basicInfo2 사용)
-const ENDPOINTS = {
-  basicInfo2: 'basicInfo2',
-  building: 'building',
-  classArea: 'classArea',
-  teachersInfo: 'teachersInfo',
-  lessonDay: 'lessonDay',
-  schoolMeal: 'schoolMeal',
-  schoolBus: 'schoolBus',
-  yearOfWork: 'yearOfWork',
-  environmentHygiene: 'environmentHygiene',
-  safetyEdu: 'safetyEdu',
-  deductionSociety: 'deductionSociety',
-  insurance: 'insurance',
-  afterSchoolPresent: 'afterSchoolPresent',
-} as const;
+function stripTags(value: string): string {
+  return cleanText(decodeHtml(value.replace(/<[^>]+>/g, ' ')));
+}
 
-// 요청 간 지연 시간 (ms)
-const REQUEST_DELAY = 300;
+function recordKey(name: Cell | undefined, address: Cell | undefined): string {
+  return `${cleanText(name)}\u0000${cleanText(address)}`;
+}
 
-// ============================================================================
-// 유틸리티 함수
-// ============================================================================
+function parseNumber(value: Cell | undefined): number {
+  if (typeof value === 'number') {
+    return Number.isFinite(value) ? value : 0;
+  }
+  const match = cleanText(value).replace(/,/g, '').match(/-?\d+(?:\.\d+)?/);
+  return match ? Number(match[0]) : 0;
+}
+
+function nullableText(value: Cell | undefined): string | null {
+  const cleaned = cleanText(value);
+  return cleaned && cleaned !== '-' ? cleaned : null;
+}
+
+function normalizeOperationHours(value: Cell | undefined): string | null {
+  const raw = cleanText(value);
+  if (!raw) return null;
+
+  const fourDigitTimes = raw.match(/\d{4}/g) ?? [];
+  if (fourDigitTimes.length >= 2) {
+    const start = fourDigitTimes[0];
+    const end = fourDigitTimes[fourDigitTimes.length - 1];
+    return `${start.slice(0, 2)}:${start.slice(2)}~${end.slice(0, 2)}:${end.slice(2)}`;
+  }
+
+  const clockTimes = Array.from(raw.matchAll(/(\d{1,2})\s*시\s*(\d{1,2})\s*분/g));
+  if (clockTimes.length >= 2) {
+    const format = (match: RegExpMatchArray) =>
+      `${match[1].padStart(2, '0')}:${match[2].padStart(2, '0')}`;
+    return `${format(clockTimes[0])}~${format(clockTimes[clockTimes.length - 1])}`;
+  }
+
+  return raw;
+}
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function log(message: string, level: 'info' | 'warn' | 'error' = 'info'): void {
-  const timestamp = new Date().toISOString();
-  const prefix = { info: '[INFO]', warn: '[WARN]', error: '[ERROR]' }[level];
-  const output = level === 'error' ? console.error : console.log;
-  output(`${timestamp} ${prefix} ${message}`);
+async function fetchWithRetry(
+  url: string,
+  init: RequestInit,
+  label: string
+): Promise<Response> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        ...init,
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      });
+      if (!response.ok) {
+        throw new Error(`${response.status} ${response.statusText}`);
+      }
+      return response;
+    } catch (error) {
+      lastError = error;
+      if (attempt === MAX_ATTEMPTS) break;
+      warn(`${label} attempt ${attempt}/${MAX_ATTEMPTS} failed; retrying`);
+      await sleep(500 * 2 ** (attempt - 1));
+    }
+  }
+  throw new Error(`${label} failed: ${lastError instanceof Error ? lastError.message : lastError}`);
 }
 
-function parseArea(areaStr: string | undefined): number {
-  if (!areaStr) return 0;
-  const match = String(areaStr).match(/[\d.]+/);
-  return match ? parseFloat(match[0]) : 0;
+async function discoverLatestTiming(): Promise<{ timing: string; label: string }> {
+  const response = await fetchWithRetry(OPEN_DATA_PAGE_URL, {}, 'disclosure timing discovery');
+  const html = await response.text();
+  const options = Array.from(
+    html.matchAll(/<option\s+value=["'](\d{5})["'][^>]*>([^<]+)<\/option>/gi),
+    (match) => ({ timing: match[1], label: cleanText(match[2]) })
+  ).sort((left, right) => Number(right.timing) - Number(left.timing));
+  if (options.length === 0) {
+    throw new Error('No disclosure periods found on the official download page');
+  }
+  return options[0];
 }
 
-function parseInstitutionType(establish: string): string {
-  if (establish.includes('공립')) return 'public';
-  if (establish.includes('사립') || establish.includes('법인')) return 'private';
-  return 'home';
+async function validateDisclosureCatalog(timing: string): Promise<void> {
+  const response = await fetchWithRetry(DISCLOSURE_LIST_URL(timing), {}, 'disclosure catalog');
+  const catalog = (await response.json()) as Record<string, string>;
+  const availableCodes = new Set(Object.values(catalog));
+  const missing = Object.values(SOURCE_SPECS)
+    .map((spec) => spec.code)
+    .filter((code) => !availableCodes.has(code));
+  if (missing.length > 0) {
+    throw new Error(`Disclosure ${timing} is missing source codes: ${missing.join(', ')}`);
+  }
 }
 
-function parseMealType(mlsrOprnWayTpCd: string | undefined): string | null {
-  if (!mlsrOprnWayTpCd) return null;
-  if (mlsrOprnWayTpCd.includes('직영')) return 'direct';
-  if (mlsrOprnWayTpCd.includes('위탁')) return 'outsourced';
+async function downloadBulkDataset(timing: string, spec: SourceSpec): Promise<BulkDataset> {
+  const params = new URLSearchParams({
+    combineSidoCode: '99',
+    combineSidoName: '전체 시/도',
+    timingListCode: timing,
+    gongsiListCode: spec.code,
+    safetyListCode: '',
+    ExcelCsv: '3',
+  });
+  const response = await fetchWithRetry(
+    `${BULK_DOWNLOAD_URL}?${params.toString()}`,
+    { headers: { Accept: 'application/json' } },
+    spec.label
+  );
+  const dataset = (await response.json()) as BulkDataset;
+  if (!Array.isArray(dataset.header) || !Array.isArray(dataset.body)) {
+    throw new Error(`${spec.label} returned an invalid JSON shape`);
+  }
+  const missingHeaders = spec.requiredHeaders.filter((header) => !dataset.header.includes(header));
+  if (missingHeaders.length > 0) {
+    throw new Error(`${spec.label} is missing headers: ${missingHeaders.join(', ')}`);
+  }
+  log(`downloaded ${spec.label}: ${dataset.body.length.toLocaleString('ko-KR')} rows`);
+  return dataset;
+}
+
+function registryRequestBody(pageIndex: number): URLSearchParams {
+  const body = new URLSearchParams({
+    tabNum: '2',
+    pageIndex: String(pageIndex),
+    pageCnt: String(REGISTRY_PAGE_SIZE),
+  });
+  for (const value of ['01', '02', '03', '04', '05']) {
+    body.append('kinderEstablishCB', value);
+  }
+  body.append('kinderStatusCB', 'KDSP_YN');
+  body.append('kinderStatusCB', 'KDCL_YN');
+  return body;
+}
+
+function parseRegistryPage(html: string): RegistryRow[] {
+  const records: RegistryRow[] = [];
+  const cardPattern =
+    /<li>[^]*?fn_detail\(document\.forms\['combineSearch'\],\s*'([^']+)',\s*'01',\s*'[^']*'\)[^]*?class=["']underline["']>([^<]+)<\/a>[^]*?<p>([^]*?)<\/p>[^]*?<\/li>/g;
+
+  for (const match of html.matchAll(cardPattern)) {
+    const summary = stripTags(match[3]);
+    const address = summary.split('·').at(-1)?.trim() ?? '';
+    records.push({ id: match[1], name: stripTags(match[2]), address });
+  }
+  return records;
+}
+
+async function downloadRegistry(): Promise<RegistryRow[]> {
+  const firstResponse = await fetchWithRetry(
+    REGISTRY_URL,
+    { method: 'POST', body: registryRequestBody(1) },
+    'registry page 1'
+  );
+  const firstHtml = await firstResponse.text();
+  const totalPages = Number(firstHtml.match(/var\s+totalPage\s*=\s*(\d+)/)?.[1] ?? 0);
+  if (totalPages < 1 || totalPages > 20) {
+    throw new Error(`Unexpected registry page count: ${totalPages}`);
+  }
+
+  const records = parseRegistryPage(firstHtml);
+  for (let page = 2; page <= totalPages; page += 1) {
+    const response = await fetchWithRetry(
+      REGISTRY_URL,
+      { method: 'POST', body: registryRequestBody(page) },
+      `registry page ${page}`
+    );
+    records.push(...parseRegistryPage(await response.text()));
+    await sleep(100);
+  }
+
+  const uniqueIDs = new Set(records.map((record) => record.id));
+  if (records.length < MIN_RECORD_COUNT || uniqueIDs.size !== records.length) {
+    throw new Error(`Registry quality failure: rows=${records.length}, uniqueIDs=${uniqueIDs.size}`);
+  }
+  log(`downloaded official identifier registry: ${records.length.toLocaleString('ko-KR')} rows`);
+  return records;
+}
+
+class OfficialTable {
+  readonly rowsByKey = new Map<string, Cell[]>();
+  private readonly indexByHeader: Map<string, number>;
+
+  constructor(readonly dataset: BulkDataset) {
+    this.indexByHeader = new Map(dataset.header.map((header, index) => [header, index]));
+    for (const row of dataset.body) {
+      const key = recordKey(this.get(row, '유치원명'), this.get(row, '주소'));
+      if (this.rowsByKey.has(key)) {
+        throw new Error(`Duplicate official row: ${key.replace('\u0000', ' / ')}`);
+      }
+      this.rowsByKey.set(key, row);
+    }
+  }
+
+  get(row: Cell[] | undefined, header: string): Cell | undefined {
+    if (!row) return undefined;
+    const index = this.indexByHeader.get(header);
+    return index === undefined ? undefined : row[index];
+  }
+}
+
+function findOfficialRegion(code: string): SigunguCode {
+  const region = SIGUNGU_CODES.find((candidate) => candidate.sggCode === code);
+  if (!region) throw new Error(`Unknown current sigungu code: ${code}`);
+  return region;
+}
+
+function reformRule(name: string, address: string): SigunguCode | null {
+  const bucheonCode = BUCHEON_REGION_OVERRIDES[name];
+  if (bucheonCode) return findOfficialRegion(bucheonCode);
+  if (address.includes('여주군')) return findOfficialRegion('41670');
+  if (!address.includes('화성시')) return null;
+  if (/동탄/.test(address)) return findOfficialRegion('41597');
+  if (/남양읍|향남읍|우정읍/.test(address) || name === '새솔유치원') {
+    return findOfficialRegion('41591');
+  }
+  if (/봉담읍|기안/.test(address)) return findOfficialRegion('41593');
+  if (/화산|안녕|병점/.test(address)) return findOfficialRegion('41595');
   return null;
 }
 
-// ============================================================================
-// API 호출 함수
-// ============================================================================
+function regionFromAddress(office: string, address: string): SigunguCode | null {
+  const currentSido = office.replace(/교육청$/, '');
+  const candidates = SIGUNGU_CODES.filter((region) => region.sidoName === currentSido);
+  if (candidates.length === 1) return candidates[0];
 
-async function fetchJsonData<T>(
-  endpoint: string,
-  eduSidoCode: string,
-  sggCode: string,
-  apiKey: string
-): Promise<T[]> {
-  const url =
-    `${API_BASE_URL}/${endpoint}.do?key=${apiKey}` +
-    `&sidoCode=${eduSidoCode}&sggCode=${sggCode}&timing=${DISCLOSURE_TIMING}`;
-
-  try {
-    const response = await fetch(url, {
-      headers: { Accept: 'application/json' },
-    });
-
-    if (!response.ok) {
-      log(`Failed to fetch ${endpoint} for sgg ${sggCode}: ${response.status}`, 'error');
-      return [];
-    }
-
-    const data = await response.json();
-    return data.kinderInfo || [];
-  } catch (error) {
-    log(`Error fetching ${endpoint} for sgg ${sggCode}: ${error}`, 'error');
-    return [];
-  }
+  const matches = candidates
+    .filter((region) => address.includes(region.sggName))
+    .sort((left, right) => right.sggName.length - left.sggName.length);
+  return matches[0] ?? null;
 }
 
-// ============================================================================
-// 데이터 수집 함수
-// ============================================================================
+function resolveRegion(
+  name: string,
+  office: string,
+  address: string,
+  previous: KindergartenRecord | undefined
+): RegionResolution {
+  const direct = regionFromAddress(office, address);
+  if (direct) return { region: direct, method: 'official-address' };
 
-interface CollectedData {
-  basicInfo2: BasicInfo2Row[];
-  building: BuildingRow[];
-  classArea: ClassAreaRow[];
-  teachersInfo: TeachersInfoRow[];
-  lessonDay: LessonDayRow[];
-  schoolMeal: SchoolMealRow[];
-  schoolBus: SchoolBusRow[];
-  yearOfWork: YearOfWorkRow[];
-  environmentHygiene: EnvironmentHygieneRow[];
-  safetyEdu: SafetyEduRow[];
-  deductionSociety: DeductionSocietyRow[];
-  insurance: InsuranceRow[];
-  afterSchool: AfterSchoolRow[];
-}
+  const currentReform = reformRule(name, address);
+  if (currentReform) return { region: currentReform, method: 'current-reform-rule' };
 
-async function collectSigunguData(
-  sigungu: SigunguCode,
-  apiKey: string
-): Promise<CollectedData> {
-  const { adminSidoCode, sggCode } = sigungu;
-
-  // 병렬로 13개 엔드포인트 데이터 수집
-  const [
-    basicInfo2,
-    building,
-    classArea,
-    teachersInfo,
-    lessonDay,
-    schoolMeal,
-    schoolBus,
-    yearOfWork,
-    environmentHygiene,
-    safetyEdu,
-    deductionSociety,
-    insurance,
-    afterSchool,
-  ] = await Promise.all([
-    fetchJsonData<BasicInfo2Row>(ENDPOINTS.basicInfo2, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<BuildingRow>(ENDPOINTS.building, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<ClassAreaRow>(ENDPOINTS.classArea, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<TeachersInfoRow>(ENDPOINTS.teachersInfo, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<LessonDayRow>(ENDPOINTS.lessonDay, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<SchoolMealRow>(ENDPOINTS.schoolMeal, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<SchoolBusRow>(ENDPOINTS.schoolBus, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<YearOfWorkRow>(ENDPOINTS.yearOfWork, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<EnvironmentHygieneRow>(ENDPOINTS.environmentHygiene, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<SafetyEduRow>(ENDPOINTS.safetyEdu, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<DeductionSocietyRow>(ENDPOINTS.deductionSociety, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<InsuranceRow>(ENDPOINTS.insurance, adminSidoCode, sggCode, apiKey),
-    fetchJsonData<AfterSchoolRow>(ENDPOINTS.afterSchoolPresent, adminSidoCode, sggCode, apiKey),
-  ]);
-
-  return {
-    basicInfo2,
-    building,
-    classArea,
-    teachersInfo,
-    lessonDay,
-    schoolMeal,
-    schoolBus,
-    yearOfWork,
-    environmentHygiene,
-    safetyEdu,
-    deductionSociety,
-    insurance,
-    afterSchool,
-  };
-}
-
-// ============================================================================
-// 데이터 변환 함수
-// ============================================================================
-
-function transformData(
-  sigungu: SigunguCode,
-  data: CollectedData,
-  dataVersion: string
-): KindergartenRecord[] {
-  // 각 데이터를 kindercode로 인덱싱
-  const buildingMap = new Map(data.building.map((item) => [item.kindercode, item]));
-  const classAreaMap = new Map(data.classArea.map((item) => [item.kindercode, item]));
-  const teachersInfoMap = new Map(data.teachersInfo.map((item) => [item.kindercode, item]));
-  const lessonDayMap = new Map(data.lessonDay.map((item) => [item.kindercode, item]));
-  const schoolMealMap = new Map(data.schoolMeal.map((item) => [item.kindercode, item]));
-  const schoolBusMap = new Map(data.schoolBus.map((item) => [item.kindercode, item]));
-  const yearOfWorkMap = new Map(data.yearOfWork.map((item) => [item.kindercode, item]));
-  const environmentHygieneMap = new Map(data.environmentHygiene.map((item) => [item.kindercode, item]));
-  const safetyEduMap = new Map(data.safetyEdu.map((item) => [item.kindercode, item]));
-  const deductionSocietyMap = new Map(data.deductionSociety.map((item) => [item.kindercode, item]));
-  const afterSchoolMap = new Map(data.afterSchool.map((item) => [item.kindercode, item]));
-
-  // insurance는 유치원당 여러 행이 있으므로 그룹화
-  const insuranceMap = new Map<string, InsuranceRow[]>();
-  for (const item of data.insurance) {
-    const existing = insuranceMap.get(item.kindercode) || [];
-    existing.push(item);
-    insuranceMap.set(item.kindercode, existing);
+  if (previous) {
+    const previousAddress = regionFromAddress(office, previous.address);
+    if (previousAddress) return { region: previousAddress, method: 'previous-address' };
   }
 
-  const now = new Date().toISOString();
-
-  return data.basicInfo2.map((basic) => {
-    const busData = schoolBusMap.get(basic.kindercode);
-    const mealData = schoolMealMap.get(basic.kindercode);
-    const areaData = classAreaMap.get(basic.kindercode);
-    const afterSchoolData = afterSchoolMap.get(basic.kindercode);
-
-    // 정원 계산: prmstfcnt(인가정원)와 연령별 합산 중 큰 값 사용
-    // (일부 유치원에서 prmstfcnt가 실제 연령별 정원 합보다 작은 데이터 오류 존재)
-    const prmstfcnt = basic.prmstfcnt ? parseInt(basic.prmstfcnt, 10) : 0;
-    const ageSum =
-      parseInt(basic.ag3fpcnt || '0', 10) +
-      parseInt(basic.ag4fpcnt || '0', 10) +
-      parseInt(basic.ag5fpcnt || '0', 10) +
-      parseInt(basic.mixfpcnt || '0', 10) +
-      parseInt(basic.spcnfpcnt || '0', 10);
-    const capacity = Math.max(prmstfcnt, ageSum);
-
-    // 현원 계산 (연령별 원아수 합산)
-    // ppcnt* = 원아수(현원), shppcnt = 특수학급 현원
-    const currentCount =
-      parseInt(basic.ppcnt3 || '0', 10) +
-      parseInt(basic.ppcnt4 || '0', 10) +
-      parseInt(basic.ppcnt5 || '0', 10) +
-      parseInt(basic.mixppcnt || '0', 10) +
-      parseInt(basic.shppcnt || '0', 10);
-
-    // 면적 계산
-    const totalArea = parseArea(areaData?.clsrarea);
-    const areaPerChild = capacity > 0 ? Math.round((totalArea / capacity) * 10) / 10 : 0;
-
-    // 실외 놀이터 여부
-    const outdoorArea = parseArea(areaData?.otsparea);
-    const hasPlayground = outdoorArea > 0;
-
-    // 방과후 과정 여부 (방과후 학급 또는 오후 돌봄 학급 존재)
-    const hasAfterSchool =
-      parseInt(afterSchoolData?.inor_clcnt || '0', 10) > 0 ||
-      parseInt(afterSchoolData?.pm_rrgn_clcnt || '0', 10) > 0;
-
-    // 면적 이상치 처리: 50㎡ 초과 시 0으로 처리 (비정상 데이터)
-    const normalizedAreaPerChild = areaPerChild > 50 ? 0 : areaPerChild;
-
-    // 좌표 파싱 (basicInfo2에서 제공)
-    const lat = basic.lttdcdnt ? parseFloat(basic.lttdcdnt) : null;
-    const lng = basic.lngtcdnt ? parseFloat(basic.lngtcdnt) : null;
-
-    return {
-      kindercode: basic.kindercode,
-      name: basic.kindername,
-      address: basic.addr,
-      sido_code: sigungu.adminSidoCode,
-      sigungu_code: sigungu.sggCode,
-      type: parseInstitutionType(basic.establish),
-      capacity,
-      current_count: currentCount,
-      has_bus: busData?.vhcl_oprn_yn === 'Y',
-      bus_count: parseInt(busData?.opra_vhcnt || '0', 10),
-      meal_type: parseMealType(mealData?.mlsr_oprn_way_tp_cd),
-      has_after_school: hasAfterSchool,
-      area_per_child: normalizedAreaPerChild,
-      phone: basic.telno || null,
-      homepage: basic.hpaddr || null,
-      operation_hours: basic.opertime || null,
-      has_playground: hasPlayground,
-      lat,
-      lng,
-      batch_synced_at: now,
-      data_version: dataVersion,
-      raw_data: {
-        basicInfo2: basic,
-        building: buildingMap.get(basic.kindercode) || null,
-        teachersInfo: teachersInfoMap.get(basic.kindercode) || null,
-        lessonDay: lessonDayMap.get(basic.kindercode) || null,
-        schoolBus: busData || null,
-        schoolMeal: mealData || null,
-        classArea: areaData || null,
-        yearOfWork: yearOfWorkMap.get(basic.kindercode) || null,
-        environmentHygiene: environmentHygieneMap.get(basic.kindercode) || null,
-        safetyEdu: safetyEduMap.get(basic.kindercode) || null,
-        deductionSociety: deductionSocietyMap.get(basic.kindercode) || null,
-        afterSchool: afterSchoolData || null,
-        insurance: insuranceMap.get(basic.kindercode) || [],
-      },
-    };
-  });
+  throw new Error(`Could not resolve current region for ${name}: ${address}`);
 }
 
-// ============================================================================
-// Supabase 저장 함수
-// ============================================================================
-
-async function upsertToSupabase(
-  supabase: ReturnType<typeof createClient>,
-  records: KindergartenRecord[]
-): Promise<number> {
-  if (records.length === 0) return 0;
-
-  // 배치 단위로 upsert (100개씩)
-  const BATCH_SIZE = 100;
-  let successCount = 0;
-
-  for (let i = 0; i < records.length; i += BATCH_SIZE) {
-    const batch = records.slice(i, i + BATCH_SIZE);
-
-    // raw_data 제외하고 저장 (DB 스키마에 맞게)
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const dbRecords = batch.map(({ raw_data: _raw_data, ...rest }) => rest);
-
-    const { error } = await supabase.from('kindergartens').upsert(dbRecords, {
-      onConflict: 'kindercode',
-      ignoreDuplicates: false,
-    });
-
-    if (error) {
-      log(`Upsert error: ${error.message}`, 'error');
-    } else {
-      successCount += batch.length;
-    }
-  }
-
-  return successCount;
+function validCoordinates(lat: number, lng: number): boolean {
+  return Number.isFinite(lat) && Number.isFinite(lng) && lat >= 32 && lat <= 39.5 && lng >= 124 && lng <= 132;
 }
 
-async function updateSyncMetadata(
-  supabase: ReturnType<typeof createClient>,
-  dataVersion: string,
-  recordCount: number
-): Promise<void> {
-  const { error } = await supabase.from('data_sync_metadata').upsert(
-    {
-      endpoint: 'all',
-      data_version: dataVersion,
-      record_count: recordCount,
-      synced_at: new Date().toISOString(),
-    },
-    { onConflict: 'endpoint,data_version' }
+async function detailCoordinates(id: string): Promise<{ lat: number; lng: number }> {
+  const response = await fetchWithRetry(
+    DETAIL_URL,
+    { method: 'POST', body: new URLSearchParams({ ittId: id }) },
+    `detail coordinates ${id}`
   );
-
-  if (error) {
-    log(`Failed to update sync metadata: ${error.message}`, 'warn');
+  const html = await response.text();
+  const match = html.match(/fn_daumMapInit\(\s*([0-9.]+)\s*,\s*([0-9.]+)\s*,/);
+  const lat = Number(match?.[1]);
+  const lng = Number(match?.[2]);
+  if (!validCoordinates(lat, lng)) {
+    throw new Error(`Official detail page has no valid coordinates for ${id}`);
   }
+  return { lat, lng };
 }
 
-// ============================================================================
-// 메인 함수
-// ============================================================================
+async function kakaoAddressCoordinates(address: string): Promise<{ lat: number; lng: number }> {
+  const apiKey = process.env.KAKAO_REST_API_KEY;
+  if (!apiKey) {
+    throw new Error('KAKAO_REST_API_KEY is unavailable');
+  }
+  const url = new URL('https://dapi.kakao.com/v2/local/search/address.json');
+  url.searchParams.set('query', address);
+  const response = await fetchWithRetry(
+    url.toString(),
+    { headers: { Authorization: `KakaoAK ${apiKey}` } },
+    `Kakao address lookup: ${address}`
+  );
+  const payload = (await response.json()) as {
+    documents?: Array<{ x?: string; y?: string }>;
+  };
+  const lat = Number(payload.documents?.[0]?.y);
+  const lng = Number(payload.documents?.[0]?.x);
+  if (!validCoordinates(lat, lng)) {
+    throw new Error(`Kakao address lookup returned no valid coordinates: ${address}`);
+  }
+  return { lat, lng };
+}
+
+async function resolveMissingCoordinates(
+  id: string,
+  address: string,
+  previous: KindergartenRecord | undefined
+): Promise<CoordinateResolution> {
+  try {
+    return { id, ...(await detailCoordinates(id)), method: 'official-detail' };
+  } catch {
+    warn(`${address}: official detail coordinates unavailable`);
+  }
+
+  if (previous && validCoordinates(previous.lat, previous.lng)) {
+    return { id, lat: previous.lat, lng: previous.lng, method: 'previous' };
+  }
+
+  return { id, ...(await kakaoAddressCoordinates(address)), method: 'kakao-address' };
+}
+
+async function mapWithConcurrency<T, R>(
+  items: T[],
+  concurrency: number,
+  operation: (item: T) => Promise<R>
+): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let cursor = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, items.length) }, async () => {
+      while (cursor < items.length) {
+        const index = cursor;
+        cursor += 1;
+        results[index] = await operation(items[index]);
+      }
+    })
+  );
+  return results;
+}
+
+function parseInstitutionType(value: Cell | undefined): 'public' | 'private' {
+  return cleanText(value).includes('사립') ? 'private' : 'public';
+}
+
+function parseMealType(value: Cell | undefined): 'direct' | 'outsourced' | null {
+  const text = cleanText(value);
+  if (text.includes('직영')) return 'direct';
+  if (text.includes('위탁')) return 'outsourced';
+  return null;
+}
+
+function sumFields(table: OfficialTable, row: Cell[] | undefined, headers: string[]): number {
+  return headers.reduce((sum, header) => sum + parseNumber(table.get(row, header)), 0);
+}
+
+function atomicWrite(targetPath: string, content: string): void {
+  fs.mkdirSync(path.dirname(targetPath), { recursive: true });
+  const temporaryPath = path.join(
+    path.dirname(targetPath),
+    `.${path.basename(targetPath)}.${process.pid}.${Date.now()}.tmp`
+  );
+  fs.writeFileSync(temporaryPath, content);
+  fs.renameSync(temporaryPath, targetPath);
+}
 
 async function main(): Promise<void> {
-  const args = process.argv.slice(2);
-  const isTestMode = args.includes('--test');
-  const saveToJson = args.includes('--save-json');
+  const options = parseArgs(process.argv.slice(2));
+  const discovered = await discoverLatestTiming();
+  const timing = options.timing ?? discovered.timing;
+  const timingLabel = timing === discovered.timing ? discovered.label : timing;
+  log(`starting kindergarten sync: ${timingLabel} (${timing}), publish=${options.publishPublic}`);
 
-  log('Starting kindergarten data sync...');
-  log(`Collecting data from ${Object.keys(ENDPOINTS).length} endpoints`);
-  if (isTestMode) {
-    log('Running in TEST MODE - only syncing Seoul Jongno-gu');
-  }
-  if (saveToJson) {
-    log('Will save results to JSON file');
-  }
-
-  // 환경 변수 확인
-  const apiKey = process.env.KINDERGARTEN_API_KEY;
-  const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-  if (!apiKey) {
-    log('KINDERGARTEN_API_KEY is not set', 'error');
-    process.exit(1);
+  await validateDisclosureCatalog(timing);
+  const registry = await downloadRegistry();
+  const downloaded: Record<string, BulkDataset> = {};
+  for (const [name, spec] of Object.entries(SOURCE_SPECS)) {
+    downloaded[name] = await downloadBulkDataset(timing, spec);
+    await sleep(100);
   }
 
-  if (!supabaseUrl || !supabaseServiceKey) {
-    log('SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not set', 'error');
-    log('Running in dry-run mode (no database save)');
+  const tables = Object.fromEntries(
+    Object.entries(downloaded).map(([name, dataset]) => [name, new OfficialTable(dataset)])
+  ) as Record<keyof typeof SOURCE_SPECS, OfficialTable>;
+  const general = tables.general;
+  if (general.dataset.body.length < MIN_RECORD_COUNT) {
+    throw new Error(`Official general dataset is unexpectedly small: ${general.dataset.body.length}`);
   }
 
-  // Supabase 클라이언트 생성 (있는 경우만)
-  const supabase =
-    supabaseUrl && supabaseServiceKey ? createClient(supabaseUrl, supabaseServiceKey) : null;
+  const registryByKey = new Map<string, RegistryRow>();
+  for (const row of registry) {
+    const key = recordKey(row.name, row.address);
+    if (registryByKey.has(key)) throw new Error(`Duplicate registry key: ${row.name} / ${row.address}`);
+    registryByKey.set(key, row);
+  }
 
-  // 데이터 버전 (공식 공시차수)
-  const dataVersion = DATA_VERSION;
+  const publicPath = path.join(process.cwd(), 'public', 'data', 'kindergartens.json');
+  const previousRecords = fs.existsSync(publicPath)
+    ? (JSON.parse(fs.readFileSync(publicPath, 'utf8')) as KindergartenRecord[])
+    : [];
+  const previousByID = new Map(previousRecords.map((record) => [record.kindercode, record]));
 
-  log(`Data version: ${dataVersion} (${DISCLOSURE_TIMING})`);
-
-  // 테스트 모드면 서울 종로구만
-  const sigunguList = isTestMode
-    ? SIGUNGU_CODES.filter((sgg) => sgg.sggCode === '11110')
-    : SIGUNGU_CODES;
-
-  log(`Total sigungu to process: ${sigunguList.length}`);
-
-  let totalRecords = 0;
-  let processedCount = 0;
-  const allRecords: KindergartenRecord[] = [];
-
-  // 각 시군구별 데이터 수집
-  for (const sigungu of sigunguList) {
-    processedCount++;
-    const progress = `[${processedCount}/${sigunguList.length}]`;
-
-    try {
-      log(`${progress} Processing ${sigungu.sidoName} ${sigungu.sggName} (${sigungu.sggCode})...`);
-
-      // 데이터 수집 (13개 엔드포인트 병렬 호출)
-      const collectedData = await collectSigunguData(sigungu, apiKey);
-
-      if (collectedData.basicInfo2.length === 0) {
-        log(`  No data found`, 'warn');
-        continue;
-      }
-
-      log(`  Found ${collectedData.basicInfo2.length} kindergartens`);
-
-      // 데이터 변환
-      const records = transformData(sigungu, collectedData, dataVersion);
-
-      // 전체 레코드에 추가 (JSON 저장용)
-      if (saveToJson) {
-        allRecords.push(...records);
-      }
-
-      // Supabase에 저장 (있는 경우만)
-      if (supabase) {
-        const savedCount = await upsertToSupabase(supabase, records);
-        totalRecords += savedCount;
-        log(`  Saved ${savedCount} records`);
-      } else {
-        totalRecords += records.length;
-        log(`  [DRY-RUN] Would save ${records.length} records`);
-      }
-
-      // Rate limiting 대응
-      await sleep(REQUEST_DELAY);
-    } catch (error) {
-      log(`Error processing ${sigungu.sggName}: ${error}`, 'error');
+  const joined = general.dataset.body.map((generalRow) => {
+    const key = recordKey(general.get(generalRow, '유치원명'), general.get(generalRow, '주소'));
+    const registryRow = registryByKey.get(key);
+    if (!registryRow) {
+      throw new Error(`Official identifier join failed: ${key.replace('\u0000', ' / ')}`);
     }
+    return { key, generalRow, registryRow };
+  });
+  if (new Set(joined.map((entry) => entry.registryRow.id)).size !== joined.length) {
+    throw new Error('Official identifier join produced duplicate IDs');
   }
 
-  // 동기화 메타데이터 업데이트
-  if (supabase) {
-    await updateSyncMetadata(supabase, dataVersion, totalRecords);
+  const coordinateFallbacks = joined.filter((entry) => {
+    const lat = parseNumber(general.get(entry.generalRow, '위도'));
+    const lng = parseNumber(general.get(entry.generalRow, '경도'));
+    return !validCoordinates(lat, lng);
+  });
+  const fallbackCoordinateRows = await mapWithConcurrency(
+    coordinateFallbacks,
+    5,
+    async (entry) =>
+      resolveMissingCoordinates(
+        entry.registryRow.id,
+        cleanText(general.get(entry.generalRow, '주소')),
+        previousByID.get(entry.registryRow.id)
+      )
+  );
+  const fallbackCoordinatesByID = new Map(
+    fallbackCoordinateRows.map((row) => [row.id, { lat: row.lat, lng: row.lng }])
+  );
+  const coordinateResolution = {
+    officialBulk: joined.length - fallbackCoordinateRows.length,
+    officialDetail: fallbackCoordinateRows.filter((row) => row.method === 'official-detail').length,
+    previous: fallbackCoordinateRows.filter((row) => row.method === 'previous').length,
+    kakaoAddress: fallbackCoordinateRows.filter((row) => row.method === 'kakao-address').length,
+  };
+  log(
+    `resolved ${fallbackCoordinateRows.length} blank coordinate rows: ` +
+      `detail=${coordinateResolution.officialDetail}, previous=${coordinateResolution.previous}, ` +
+      `address=${coordinateResolution.kakaoAddress}`
+  );
+
+  const regionMethodCounts: Record<RegionResolution['method'], number> = {
+    'official-address': 0,
+    'current-reform-rule': 0,
+    'previous-address': 0,
+  };
+
+  const records: KindergartenRecord[] = joined.map(({ key, generalRow, registryRow }) => {
+    const component = (name: keyof typeof SOURCE_SPECS) => tables[name].rowsByKey.get(key);
+    const buildingRow = component('building');
+    const classAreaRow = component('classArea');
+    const teacherRow = component('teachers');
+    const tenureRow = component('tenure');
+    const mealRow = component('meal');
+    const afterSchoolRow = component('afterSchool');
+    const busRow = component('bus');
+    const safetyRow = component('safety');
+
+    const name = cleanText(general.get(generalRow, '유치원명'));
+    const address = cleanText(general.get(generalRow, '주소'));
+    const office = cleanText(general.get(generalRow, '교육청명'));
+    const previous = previousByID.get(registryRow.id);
+    const resolvedRegion = resolveRegion(name, office, address, previous);
+    regionMethodCounts[resolvedRegion.method] += 1;
+
+    const capacityAge3 = parseNumber(general.get(generalRow, '3세정원수'));
+    const capacityAge4 = parseNumber(general.get(generalRow, '4세정원수'));
+    const capacityAge5 = parseNumber(general.get(generalRow, '5세정원수'));
+    const capacityMix = parseNumber(general.get(generalRow, '혼합정원수'));
+    const capacitySpecial = parseNumber(general.get(generalRow, '특수학급정원수'));
+    const authorizedCapacity = parseNumber(general.get(generalRow, '인가총정원수'));
+    const capacity = Math.max(
+      authorizedCapacity,
+      capacityAge3 + capacityAge4 + capacityAge5 + capacityMix + capacitySpecial
+    );
+    const currentAge3 = parseNumber(general.get(generalRow, '만3세원아수'));
+    const currentAge4 = parseNumber(general.get(generalRow, '만4세원아수'));
+    const currentAge5 = parseNumber(general.get(generalRow, '만5세원아수'));
+    const currentMix = parseNumber(general.get(generalRow, '혼합원아수'));
+    const currentSpecial = parseNumber(general.get(generalRow, '특수원아수'));
+    const classroomArea = parseNumber(tables.classArea.get(classAreaRow, '교실면적'));
+    const rawAreaPerChild = capacity > 0 ? classroomArea / capacity : 0;
+    const areaPerChild = rawAreaPerChild > 50 ? 0 : Math.round(rawAreaPerChild * 10) / 10;
+    const indoorPlaygroundArea = parseNumber(tables.classArea.get(classAreaRow, '실내체육장'));
+    const playgroundSafetyTarget = cleanText(
+      tables.safety.get(safetyRow, '놀이시설 안전검사 대상여부')
+    );
+
+    const bulkLat = parseNumber(general.get(generalRow, '위도'));
+    const bulkLng = parseNumber(general.get(generalRow, '경도'));
+    const detailLocation = fallbackCoordinatesByID.get(registryRow.id);
+    const lat = validCoordinates(bulkLat, bulkLng) ? bulkLat : detailLocation?.lat ?? 0;
+    const lng = validCoordinates(bulkLat, bulkLng) ? bulkLng : detailLocation?.lng ?? 0;
+    if (!validCoordinates(lat, lng)) throw new Error(`Invalid final coordinates for ${name}`);
+
+    return {
+      kindercode: registryRow.id,
+      name,
+      address,
+      lat,
+      lng,
+      type: parseInstitutionType(general.get(generalRow, '설립유형')),
+      phone: nullableText(general.get(generalRow, '전화번호')),
+      homepage: nullableText(general.get(generalRow, '홈페이지')),
+      operation_hours: normalizeOperationHours(general.get(generalRow, '운영시간')),
+      sido_code: resolvedRegion.region.adminSidoCode,
+      sigungu_code: resolvedRegion.region.sggCode,
+      capacity,
+      current_count: currentAge3 + currentAge4 + currentAge5 + currentMix + currentSpecial,
+      class_count_age3: parseNumber(general.get(generalRow, '만3세학급수')),
+      class_count_age4: parseNumber(general.get(generalRow, '만4세학급수')),
+      class_count_age5: parseNumber(general.get(generalRow, '만5세학급수')),
+      capacity_age3: capacityAge3,
+      capacity_age4: capacityAge4,
+      capacity_age5: capacityAge5,
+      current_age3: currentAge3,
+      current_age4: currentAge4,
+      current_age5: currentAge5,
+      class_count_mix: parseNumber(general.get(generalRow, '혼합학급수')),
+      capacity_mix: capacityMix,
+      current_mix: currentMix,
+      capacity_special: capacitySpecial,
+      current_special: currentSpecial,
+      establish_date: cleanText(general.get(generalRow, '설립일')),
+      has_bus: cleanText(tables.bus.get(busRow, '차량운영여부')) === '운영',
+      bus_count: parseNumber(tables.bus.get(busRow, '운행차량수')),
+      meal_type: parseMealType(tables.meal.get(mealRow, '급식운영방식구분')),
+      has_after_school:
+        parseNumber(tables.afterSchool.get(afterSchoolRow, '학급 계')) > 0 ||
+        parseNumber(tables.afterSchool.get(afterSchoolRow, '참여원아 계')) > 0,
+      area_per_child: areaPerChild,
+      has_playground:
+        indoorPlaygroundArea > 0 ||
+        (playgroundSafetyTarget !== '' &&
+          playgroundSafetyTarget !== '-' &&
+          !playgroundSafetyTarget.includes('미대상')),
+      building_year: (() => {
+        const year = parseNumber(tables.building.get(buildingRow, '건축년도'));
+        return year > 0 ? year : null;
+      })(),
+      floor_info: nullableText(tables.building.get(buildingRow, '건물층수')),
+      classroom_area: classroomArea,
+      indoor_playground_area: indoorPlaygroundArea,
+      // 2026 공개 교실면적 자료에는 실외놀이터 면적 항목이 없다. 과거 오매핑 값을 유지하지 않는다.
+      outdoor_playground_area: 0,
+      teacher_count: sumFields(tables.teachers, teacherRow, [
+        '수석 교사수',
+        '보직 교사수',
+        '일반 교사수',
+        '기간제일반교사수',
+        '기간제정원외일반교사수',
+        '특수 교사수',
+        '기간제특수교사수',
+        '기간제정원외특수교사수',
+      ]),
+      senior_teacher_count: sumFields(tables.tenure, tenureRow, [
+        '4년이상6년미만교사수',
+        '6년이상교사수',
+      ]),
+      cctv_count: parseNumber(tables.safety.get(safetyRow, 'CCTV 총 설치수')),
+    };
+  });
+
+  records.sort((left, right) => left.name.localeCompare(right.name, 'ko'));
+  const recordIDs = new Set(records.map((record) => record.kindercode));
+  if (recordIDs.size !== records.length || records.length !== general.dataset.body.length) {
+    throw new Error(`Final record quality failure: rows=${records.length}, IDs=${recordIDs.size}`);
   }
 
-  // JSON 파일로 저장
-  if (saveToJson && allRecords.length > 0) {
-    const outputDir = path.join(process.cwd(), 'scripts', 'data-output');
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    const timestamp = new Date().toISOString().slice(0, 10);
-    const outputPath = path.join(outputDir, `kindergartens-full-${timestamp}.json`);
-
-    fs.writeFileSync(outputPath, JSON.stringify(allRecords, null, 2));
-    log(`Saved ${allRecords.length} records to ${outputPath}`);
+  const componentCoverage = Object.fromEntries(
+    Object.entries(tables).map(([name, table]) => [name, table.rowsByKey.size / records.length])
+  );
+  const lowCoverage = Object.entries(componentCoverage).filter(
+    ([, coverage]) => coverage < MIN_COMPONENT_COVERAGE
+  );
+  if (lowCoverage.length > 0) {
+    throw new Error(
+      `Component coverage below ${(MIN_COMPONENT_COVERAGE * 100).toFixed(0)}%: ` +
+        lowCoverage.map(([name, coverage]) => `${name}=${(coverage * 100).toFixed(1)}%`).join(', ')
+    );
   }
 
-  log(`Sync completed. Total records: ${totalRecords}`);
+  const payload = `${JSON.stringify(records, null, 2)}\n`;
+  const currentIDs = new Set(records.map((record) => record.kindercode));
+  const previousIDs = new Set(previousRecords.map((record) => record.kindercode));
+  const metadata = {
+    schemaVersion: 1,
+    status: 'complete',
+    source: OPEN_DATA_PAGE_URL,
+    identifierSource: REGISTRY_URL,
+    sourceVersion: timing,
+    sourceLabel: timingLabel,
+    collectedAt: new Date().toISOString(),
+    totalCount: records.length,
+    registryCount: registry.length,
+    registryJoinCoverage: 1,
+    componentCoverage,
+    regionCodeCount: SIGUNGU_CODES.length,
+    regionResolution: regionMethodCounts,
+    coordinateResolution,
+    newSincePrevious: records.filter((record) => !previousIDs.has(record.kindercode)).length,
+    removedSincePrevious: previousRecords.filter((record) => !currentIDs.has(record.kindercode)).length,
+    checksumSha256: createHash('sha256').update(payload).digest('hex'),
+    fieldNotes: {
+      outdoor_playground_area:
+        '2026 공개 교실면적 자료에서 제공되지 않아 0으로 설정; 과거 조리실 면적 오매핑을 제거함',
+      has_playground: '실내체육장 또는 놀이시설 안전검사 대상 여부로 계산',
+    },
+  };
+  const metadataPayload = `${JSON.stringify(metadata, null, 2)}\n`;
+
+  if (options.dryRun) {
+    log(`dry-run passed; no files written (${records.length.toLocaleString('ko-KR')} records)`);
+    return;
+  }
+
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const snapshotPath =
+    options.outputPath ??
+    path.join(process.cwd(), 'scripts', 'data-output', `kindergartens-${timing}-${timestamp}.json`);
+  atomicWrite(snapshotPath, payload);
+  atomicWrite(snapshotPath.replace(/\.json$/, '.meta.json'), metadataPayload);
+  log(`wrote validated snapshot: ${snapshotPath}`);
+
+  if (options.publishPublic) {
+    atomicWrite(publicPath, payload);
+    atomicWrite(path.join(process.cwd(), 'public', 'data', 'kindergartens.meta.json'), metadataPayload);
+    log(`published current official dataset atomically: ${publicPath}`);
+  }
 }
 
-// 실행
 main().catch((error) => {
-  log(`Fatal error: ${error}`, 'error');
+  const message = error instanceof Error ? error.stack ?? error.message : String(error);
+  process.stderr.write(`Kindergarten sync failed: ${message}\n`);
   process.exit(1);
 });

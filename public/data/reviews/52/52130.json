@@ -1,9 +1,1200 @@
 {
-  "version": "2026-07-03",
+  "version": "2026-08-06",
   "totalCount": 49,
   "kindergartenCount": 14,
   "reviews": {
+    "1ecec08c-f1e9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f7544831",
+        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
+        "kindergartenName": "새나래유치원",
+        "title": "군산 새나래유치원 설날 세배하기 Instagram Post",
+        "url": "https://www.instagram.com/p/CZYBYiiPEWz/",
+        "source": "other",
+        "sourceName": "Instagram · 새나래유치원",
+        "snippet": "Instagram 검색 결과에서 군산 새나래유치원의 설날 세배하기 활동과 군산유치원 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "lunar-new-year",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "새나래유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CZYBYiiPEWz%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CZYBYiiPEWz/",
+          "regionEvidence": [
+            "군산",
+            "군산새나래유치원",
+            "새나래유치원",
+            "세배하기"
+          ]
+        },
+        "evidenceChecksum": "5c21fd34"
+      },
+      {
+        "id": "rev-a5b7158d",
+        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
+        "title": "전북 군산 새나래유치원 자연놀이 Instagram",
+        "url": "https://www.instagram.com/p/Ch1q-KWP8LJ/",
+        "source": "other",
+        "sourceName": "Instagram · 군산새나래유치원",
+        "snippet": "Instagram 검색 결과에서 군산새나래유치원, 군산유치원, 자연놀이유치원, 유치원원아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "214380eb",
+        "structuredFields": {
+          "kindergartenName": "새나래유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Ch1q-KWP8LJ%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/Ch1q-KWP8LJ/",
+          "normalizedUrl": "www.instagram.com/p/ch1q-kwp8lj",
+          "normalizedText": "전북 군산 새나래유치원 자연놀이 instagram instagram 검색 결과에서 군산새나래유치원, 군산유치원, 자연놀이유치원, 유치원원아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "214380eb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새나래유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Ch1q-KWP8LJ%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fa0de085",
+        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
+        "title": "군산 새나래유치원 신입원아모집 Reel",
+        "url": "https://www.instagram.com/reel/DXYkqG7CbUj/",
+        "source": "other",
+        "sourceName": "Instagram · 군산새나래유치원",
+        "snippet": "Instagram Reels 검색 결과에서 군산새나래유치원, 신입원아 모집과 교육설명회 일정 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "b02de87e",
+        "structuredFields": {
+          "kindergartenName": "새나래유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXYkqG7CbUj%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXYkqG7CbUj/",
+          "normalizedUrl": "www.instagram.com/reel/dxykqg7cbuj",
+          "normalizedText": "군산 새나래유치원 신입원아모집 reel instagram reels 검색 결과에서 군산새나래유치원, 신입원아 모집과 교육설명회 일정 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b02de87e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새나래유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXYkqG7CbUj%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9d5ae75a",
+        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
+        "title": "군산 새나래유치원 SNS 프로필",
+        "url": "https://www.instagram.com/saenaraejo/",
+        "source": "other",
+        "sourceName": "Instagram · 새나래유치원",
+        "snippet": "새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 새나래유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ce363624",
+        "structuredFields": {
+          "kindergartenName": "새나래유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22saenaraejo%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-461-7107%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/saenaraejo/",
+          "normalizedUrl": "www.instagram.com/saenaraejo",
+          "normalizedText": "군산 새나래유치원 sns 프로필 새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 instagram 검색 결과. 전북 군산시 새나래유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "ce363624",
+          "extractedAt": "2026-06-30T23:59:59.950Z",
+          "structuredFields": {
+            "kindergartenName": "새나래유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22saenaraejo%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-461-7107%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.950Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bcf87fad",
+        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
+        "title": "군산 새나래유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DQYuFepiaWA/",
+        "source": "other",
+        "sourceName": "Instagram · 새나래유치원",
+        "snippet": "새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 새나래유치원의 2026학년도 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 전북 군산시 새나래유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:30:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f6b3b5d3",
+        "structuredFields": {
+          "kindergartenName": "새나래유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQYuFepiaWA%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQYuFepiaWA/",
+          "normalizedUrl": "www.instagram.com/p/dqyufepiawa",
+          "normalizedText": "군산 새나래유치원 입학설명회 sns 새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 instagram 검색 결과. 전북 군산시 새나래유치원의 2026학년도 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "f6b3b5d3",
+          "extractedAt": "2026-06-30T23:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새나래유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQYuFepiaWA%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f91e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e677355d",
+        "kindergartenId": "1ecec08c-f91e-b044-e053-0a32095ab044",
+        "title": "전북 군산 초록빛유치원 숲 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DAV3bUDv-T7/",
+        "source": "other",
+        "sourceName": "Instagram · 군산초록빛유치원",
+        "snippet": "Instagram 검색 결과에서 군산초록빛유치원, 초록빛유치원, 숲유치원, 숲 부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class",
+          "forest-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "d3df8f85",
+        "structuredFields": {
+          "kindergartenName": "초록빛유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 나운5길 63-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAV3bUDv-T7%22+%22%EA%B5%B0%EC%82%B0%EC%B4%88%EB%A1%9D%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DAV3bUDv-T7/",
+          "normalizedUrl": "www.instagram.com/p/dav3budv-t7",
+          "normalizedText": "전북 군산 초록빛유치원 숲 부모참여수업 instagram instagram 검색 결과에서 군산초록빛유치원, 초록빛유치원, 숲유치원, 숲 부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "d3df8f85",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "초록빛유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 나운5길 63-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAV3bUDv-T7%22+%22%EA%B5%B0%EC%82%B0%EC%B4%88%EB%A1%9D%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f9b1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-206c125b",
+        "kindergartenId": "1ecec08c-f9b1-b044-e053-0a32095ab044",
+        "title": "군산 푸른숲유치원 숲데이 Instagram",
+        "url": "https://www.instagram.com/reel/DIQeTP_PDKR/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른숲유치원",
+        "snippet": "Instagram 검색 결과에서 푸른숲유치원 온종일 숲데이, 군산유치원추천, 전북유치원, 나운동유치원과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "nature-activity",
+          "admissions"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "3d4650e2",
+        "structuredFields": {
+          "kindergartenName": "푸른숲유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIQeTP_PDKR/",
+          "normalizedUrl": "www.instagram.com/reel/diqetp_pdkr",
+          "normalizedText": "군산 푸른숲유치원 숲데이 instagram instagram 검색 결과에서 푸른숲유치원 온종일 숲데이, 군산유치원추천, 전북유치원, 나운동유치원과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "3d4650e2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른숲유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-940ebf6a",
+        "kindergartenId": "1ecec08c-f9b1-b044-e053-0a32095ab044",
+        "title": "군산 푸른숲유치원 체험활동 Instagram",
+        "url": "https://www.instagram.com/reel/DIagqQIvIaa/",
+        "source": "other",
+        "sourceName": "Instagram · 푸른숲유치원",
+        "snippet": "Instagram 검색 결과에서 푸른숲유치원, 군산유치원, 숲유치원, 유아체험활동과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "nature-activity",
+          "admissions"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "25fdb665",
+        "structuredFields": {
+          "kindergartenName": "푸른숲유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIagqQIvIaa/",
+          "normalizedUrl": "www.instagram.com/reel/diagqqiviaa",
+          "normalizedText": "군산 푸른숲유치원 체험활동 instagram instagram 검색 결과에서 푸른숲유치원, 군산유치원, 숲유치원, 유아체험활동과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "25fdb665",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "푸른숲유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f9b2-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-099da94e",
+        "kindergartenId": "1ecec08c-f9b2-b044-e053-0a32095ab044",
+        "title": "군산 세움아이유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/reel/DAiG05DPKXg/",
+        "source": "other",
+        "sourceName": "Instagram · 세움아이유치원",
+        "snippet": "세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 세움아이유치원의 입학설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 군산 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "baa7bec2",
+        "structuredFields": {
+          "kindergartenName": "세움아이유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 용둔길 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAiG05DPKXg%22+%22%EC%84%B8%EC%9B%80%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DAiG05DPKXg/",
+          "normalizedUrl": "www.instagram.com/reel/daig05dpkxg",
+          "normalizedText": "군산 세움아이유치원 입학설명회 sns 세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 instagram 검색 결과. 전북 군산시 세움아이유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "baa7bec2",
+          "extractedAt": "2026-07-01T00:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "세움아이유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 용둔길 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAiG05DPKXg%22+%22%EC%84%B8%EC%9B%80%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fb90-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-732b4b05",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 논산 딸기 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CrOFELMuP0A/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "17832add",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CrOFELMuP0A/",
+          "normalizedUrl": "www.instagram.com/p/crofelmup0a",
+          "normalizedText": "군산 동아유치원 논산 딸기 체험 instagram post 동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "17832add",
+          "extractedAt": "2026-07-02T12:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-57fc7fa6",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 동대문놀이 Instagram",
+        "url": "https://www.instagram.com/p/DV8ABRIkub6/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "dong_a_kindergarden 계정에서 군산 동아유치원 만4세 동대문놀이 활동과 유치원 일상 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ad5ad6f8",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DV8ABRIkub6%22+%22dong_a_kindergarden%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DV8ABRIkub6/",
+          "normalizedUrl": "www.instagram.com/p/dv8abrikub6",
+          "normalizedText": "군산 동아유치원 동대문놀이 instagram dong_a_kindergarden 계정에서 군산 동아유치원 만4세 동대문놀이 활동과 유치원 일상 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "ad5ad6f8",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DV8ABRIkub6%22+%22dong_a_kindergarden%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-7752b714",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DQlgqPsEvcO/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "dong_a_kindergarden 계정에서 가족과 함께한 부모참여수업, 군산 동아유치원·원아모집 해시태그가 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4b94c636",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22dong_a_kindergarden%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQlgqPsEvcO/",
+          "normalizedUrl": "www.instagram.com/p/dqlgqpsevco",
+          "normalizedText": "군산 동아유치원 부모참여수업 instagram dong_a_kindergarden 계정에서 가족과 함께한 부모참여수업, 군산 동아유치원·원아모집 해시태그가 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "4b94c636",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22dong_a_kindergarden%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c9b7e3b7",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 체육시간 Instagram",
+        "url": "https://www.instagram.com/p/DX_OCi6JHcd/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "dong_a_kindergarden 계정에서 동아유치원 체육시간 배드민턴 활동이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1b5a3ef0",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DX_OCi6JHcd%22+%22dong_a_kindergarden%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX_OCi6JHcd/",
+          "normalizedUrl": "www.instagram.com/p/dx_oci6jhcd",
+          "normalizedText": "군산 동아유치원 체육시간 instagram dong_a_kindergarden 계정에서 동아유치원 체육시간 배드민턴 활동이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "1b5a3ef0",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DX_OCi6JHcd%22+%22dong_a_kindergarden%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bb46b346",
+        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
+        "title": "군산 동아유치원 SNS 프로필",
+        "url": "https://www.instagram.com/dong_a_kindergarden/",
+        "source": "other",
+        "sourceName": "Instagram · 동아유치원",
+        "snippet": "동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 동아유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 Instagram 검색 결과다. 동아유치원 동명이 있어 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "d0953364",
+        "structuredFields": {
+          "kindergartenName": "동아유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22dong_a_kindergarden%22+%22%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-465-6711%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/dong_a_kindergarden/",
+          "normalizedUrl": "www.instagram.com/dong_a_kindergarden",
+          "normalizedText": "군산 동아유치원 sns 프로필 동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 instagram 검색 결과. 전북 군산시 동아유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "d0953364",
+          "extractedAt": "2026-06-30T23:59:59.950Z",
+          "structuredFields": {
+            "kindergartenName": "동아유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22dong_a_kindergarden%22+%22%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-465-6711%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.950Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fd41-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave681-bba79e49",
+        "kindergartenId": "1ecec08c-fd41-b044-e053-0a32095ab044",
+        "title": "파란나무유치원 자연애 캠핑 활동 기록",
+        "url": "https://www.instagram.com/p/DZwtX8VFBUI/",
+        "source": "other",
+        "sourceName": "Instagram · 파란나무유치원",
+        "snippet": "파란나무유치원이 한 주 동안 자연애 캠핑 활동을 진행한 내용을 소개한 공개 게시물입니다.",
+        "summary": "자연과 가까운 캠핑형 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature-play",
+          "camping",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:55:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave681-bba79e49",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZwtX8VFBUI/",
+          "normalizedUrl": "instagram.com/p/dzwtx8vfbui",
+          "normalizedText": "파란나무유치원 자연애 캠핑 해봄 자연 활동",
+          "htmlSnapshotHash": "sns-wave681-bba79e49",
+          "extractedAt": "2026-07-03T23:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZwtX8VFBUI/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave681"
+      }
+    ],
+    "1ecec08c-ffeb-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f0558285",
+        "kindergartenId": "1ecec08c-ffeb-b044-e053-0a32095ab044",
+        "kindergartenName": "반야유치원",
+        "title": "군산 반야유치원 어버이날 Reel",
+        "url": "https://www.instagram.com/reel/C6uabxoyC6a/",
+        "source": "other",
+        "sourceName": "Instagram · banya_gunsan",
+        "snippet": "Instagram 검색 결과에서 군산 반야유치원의 어버이날 선물 활동 문맥이 확인되는 릴.",
+        "date": "2024-05-08",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parents-day",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "반야유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 동산길 25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C6uabxoyC6a%22+%22banya_gunsan%22+%22%EB%B0%98%EC%95%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/C6uabxoyC6a/",
+          "regionEvidence": [
+            "banya_gunsan",
+            "반야유치원",
+            "어버이날"
+          ]
+        },
+        "evidenceChecksum": "8ffb05af"
+      }
+    ],
+    "1ecec08d-01b0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5708cbb6",
+        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
+        "title": "군산 아이세상유치원 생일잔치 Instagram",
+        "url": "https://www.instagram.com/reel/DaBsOsvSvxN/",
+        "source": "other",
+        "sourceName": "Instagram · 아이세상유치원",
+        "snippet": "childworldg 계정에서 2026년 6월 생일잔치 활동이 확인되는 Instagram 릴스 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9bface45",
+        "structuredFields": {
+          "kindergartenName": "아이세상유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaBsOsvSvxN%22+%22childworldg%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaBsOsvSvxN/",
+          "normalizedUrl": "www.instagram.com/reel/dabsosvsvxn",
+          "normalizedText": "군산 아이세상유치원 생일잔치 instagram childworldg 계정에서 2026년 6월 생일잔치 활동이 확인되는 instagram 릴스 게시물.",
+          "htmlSnapshotHash": "9bface45",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "아이세상유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaBsOsvSvxN%22+%22childworldg%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-5ae4be66",
+        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
+        "title": "군산 아이세상유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DOFestnkuTY/",
+        "source": "other",
+        "sourceName": "Instagram · 아이세상유치원",
+        "snippet": "childworldg 계정에서 2026학년도 아이세상유치원 입학설명회 신청 안내와 인성·사고력·창의력 교육과정 소개가 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admissions",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c5fa3764",
+        "structuredFields": {
+          "kindergartenName": "아이세상유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOFestnkuTY/",
+          "normalizedUrl": "www.instagram.com/p/dofestnkuty",
+          "normalizedText": "군산 아이세상유치원 입학설명회 instagram childworldg 계정에서 2026학년도 아이세상유치원 입학설명회 신청 안내와 인성·사고력·창의력 교육과정 소개가 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "c5fa3764",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "아이세상유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-602248c5",
+        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
+        "title": "군산 아이세상유치원 실외체험 Instagram",
+        "url": "https://www.instagram.com/reel/DZ0Dz_LvGDZ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이세상유치원",
+        "snippet": "childworldg 계정에서 열매반 유아교육진흥원 실외체험 활동이 확인되는 Instagram 릴스 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9af21de7",
+        "structuredFields": {
+          "kindergartenName": "아이세상유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ0Dz_LvGDZ%22+%22childworldg%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZ0Dz_LvGDZ/",
+          "normalizedUrl": "www.instagram.com/reel/dz0dz_lvgdz",
+          "normalizedText": "군산 아이세상유치원 실외체험 instagram childworldg 계정에서 열매반 유아교육진흥원 실외체험 활동이 확인되는 instagram 릴스 게시물.",
+          "htmlSnapshotHash": "9af21de7",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "아이세상유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZ0Dz_LvGDZ%22+%22childworldg%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-0fa04477",
+        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
+        "title": "군산 아이세상유치원 SNS 프로필",
+        "url": "https://www.instagram.com/childworldg/",
+        "source": "other",
+        "sourceName": "Instagram · 아이세상유치원",
+        "snippet": "아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 아이세상유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 Instagram 검색 결과다. 아이세상유치원 동명이 있어 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fb04219a",
+        "structuredFields": {
+          "kindergartenName": "아이세상유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-467-7977%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/childworldg/",
+          "normalizedUrl": "www.instagram.com/childworldg",
+          "normalizedText": "군산 아이세상유치원 sns 프로필 아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 instagram 검색 결과. 전북 군산시 아이세상유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "fb04219a",
+          "extractedAt": "2026-06-30T23:59:59.950Z",
+          "structuredFields": {
+            "kindergartenName": "아이세상유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-467-7977%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.950Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-02e5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2b2067e7",
+        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
+        "title": "군산 호원대학교부속유치원 지구프로젝트 Instagram",
+        "url": "https://www.instagram.com/p/CPsskrmNiMI/",
+        "source": "other",
+        "sourceName": "Instagram · 호원대학교부속유치원",
+        "snippet": "Instagram 검색 결과에서 호원대학교부속유치원 유아 활동과 입학설명회 안내 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "170dfe7f",
+        "structuredFields": {
+          "kindergartenName": "호원대학교부속유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CPsskrmNiMI%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CPsskrmNiMI/",
+          "normalizedUrl": "www.instagram.com/p/cpsskrmnimi",
+          "normalizedText": "군산 호원대학교부속유치원 지구프로젝트 instagram instagram 검색 결과에서 호원대학교부속유치원 유아 활동과 입학설명회 안내 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "170dfe7f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호원대학교부속유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CPsskrmNiMI%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a0c0840a",
+        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
+        "title": "군산 호원대학교부속유치원 입학설명회 안내 Instagram",
+        "url": "https://www.instagram.com/p/DBYEYlzPNuc/",
+        "source": "other",
+        "sourceName": "Instagram · 호원대학교부속유치원",
+        "snippet": "Instagram 검색 결과에서 호원대부속유치원, 군산유치원, 입학설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "30378fef",
+        "structuredFields": {
+          "kindergartenName": "호원대학교부속유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBYEYlzPNuc%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBYEYlzPNuc/",
+          "normalizedUrl": "www.instagram.com/p/dbyeylzpnuc",
+          "normalizedText": "군산 호원대학교부속유치원 입학설명회 안내 instagram instagram 검색 결과에서 호원대부속유치원, 군산유치원, 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "30378fef",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호원대학교부속유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBYEYlzPNuc%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f7444625",
+        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
+        "title": "군산 호원대학교부속유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/CyDFP1Sv50o/",
+        "source": "other",
+        "sourceName": "Instagram · 호원대학교부속유치원",
+        "snippet": "Instagram 검색 결과에서 호원대학교부속유치원 입학설명회와 군산유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "8460ec48",
+        "structuredFields": {
+          "kindergartenName": "호원대학교부속유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyDFP1Sv50o%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyDFP1Sv50o/",
+          "normalizedUrl": "www.instagram.com/p/cydfp1sv50o",
+          "normalizedText": "군산 호원대학교부속유치원 입학설명회 instagram instagram 검색 결과에서 호원대학교부속유치원 입학설명회와 군산유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "8460ec48",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "호원대학교부속유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyDFP1Sv50o%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08d-03c0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-36a6976d",
+        "kindergartenId": "1ecec08d-03c0-b044-e053-0a32095ab044",
+        "title": "군산 오렌지동화나라유치원 동극공연 Instagram",
+        "url": "https://www.instagram.com/reel/DW2ftNgCfbZ/",
+        "source": "other",
+        "sourceName": "Instagram · 오렌지동화나라유치원",
+        "snippet": "orange.__.good 계정에서 오렌지동화나라유치원 동극공연 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "performance",
+          "classroom-activity"
+        ],
+        "date": "2026-04-07",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "b47d3312",
+        "structuredFields": {
+          "kindergartenName": "오렌지동화나라유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 상신5길 6-3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW2ftNgCfbZ%22+%22orange.__.good%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DW2ftNgCfbZ/",
+          "normalizedUrl": "www.instagram.com/reel/dw2ftngcfbz",
+          "normalizedText": "군산 오렌지동화나라유치원 동극공연 instagram orange.__.good 계정에서 오렌지동화나라유치원 동극공연 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "b47d3312",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "오렌지동화나라유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 상신5길 6-3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DW2ftNgCfbZ%22+%22orange.__.good%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-np-3458-0-u8uu",
         "kindergartenId": "1ecec08d-03c0-b044-e053-0a32095ab044",
@@ -113,333 +1304,44 @@
         "snippet": "나룽지02 리뷰 109사진 39 오렌지동화나라유치원 자연과 함께하는 활동이 많아 아이가 흥미롭게 배우는 모습이 보기 좋아요 !무엇보다 선생님들이 아이 하나하나 신경 써 주셔서 감사드립니다. 1번째 방문",
         "date": "2025-12-12",
         "collectedAt": "2026-04-06T13:20:41.809Z"
-      },
-      {
-        "id": "rev-36a6976d",
-        "kindergartenId": "1ecec08d-03c0-b044-e053-0a32095ab044",
-        "title": "군산 오렌지동화나라유치원 동극공연 Instagram",
-        "url": "https://www.instagram.com/reel/DW2ftNgCfbZ/",
-        "source": "other",
-        "sourceName": "Instagram · 오렌지동화나라유치원",
-        "snippet": "orange.__.good 계정에서 오렌지동화나라유치원 동극공연 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "performance",
-          "classroom-activity"
-        ],
-        "date": "2026-04-07",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "b47d3312",
-        "structuredFields": {
-          "kindergartenName": "오렌지동화나라유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 상신5길 6-3",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DW2ftNgCfbZ%22+%22orange.__.good%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DW2ftNgCfbZ/",
-          "normalizedUrl": "www.instagram.com/reel/dw2ftngcfbz",
-          "normalizedText": "군산 오렌지동화나라유치원 동극공연 instagram orange.__.good 계정에서 오렌지동화나라유치원 동극공연 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "b47d3312",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "오렌지동화나라유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 상신5길 6-3",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DW2ftNgCfbZ%22+%22orange.__.good%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "9ba25f4e-60b9-441c-87ab-3141eb36bf40": [
-      {
-        "id": "rev-d209e718",
-        "kindergartenId": "9ba25f4e-60b9-441c-87ab-3141eb36bf40",
-        "title": "이젠 안녕 2025.02.14 졸업식에 못간 도담유치원 졸업식",
-        "url": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223767221516",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가...",
-        "summary": "2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T01:21:14.047Z",
-        "relevanceScore": 8,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "90ed0471",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223767221516",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=msloveyl&logno=223767221516",
-          "normalizedText": "이젠 안녕 2025.02.14 졸업식에 못간 도담유치원 졸업식 많은 사랑을 받으며 아무 사고 없이 3년을 다닐수 있었던 도담유치원. 누군가 또 블로그를 보고 도담유치원 괜찮냐고 물어본다면 나는 다시 적극 추천해야겠다. 그동안 많은 사랑 주셔서 감사합니다 #군산도담유치원 #유치원특수반 #군산유치원통합수업 #장애아동유치원 #그날의온도 #유치원졸업식 #특교자유치원 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가... 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이... 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이젠 이별이다. 준혁이와 잘놀아 줬던 ㅁㅎ는 잊을수가 없을것 같다. 발닿는 곳곳이 놀이터였던 도담유치원2층 실내놀이터도,강당도 준혁이가 정말 좋아했던곳. 짜증낼때도 많았지만 웃음꽃이 많이 피었던 3년간의 추억과 함께 이젠 안녕. 4반 친구들과 준혁이를 온마음 다해 사랑해주셨던 선생님과도 안녕이다. 많이 챙겨주시고 성장에 도움주시려 노력하시고 애쓰시던 그 마음은 말로다 표현하기 힘들정도로 감사했다.많은 사랑을 받으며 아무 사고 없이 3년을 다닐수 있었던 도담유치원. 누군가 또 블로그를 보고 도담유치원 괜찮냐고 물어본다면 나는 다시 적극 추천해야겠다.그동안 많은 사랑 주셔서 감사합니다🙂 도담유치원 전북특별자치도 군산시 칠성1길 26 이 블로그의 체크인 이 장소의 다른 글 #군산도담유치원 #유치원특수반 #군산유치원통합수업 #장애아동유치원 #그날의온도 #유치원졸업식 #특교자유치원",
-          "htmlSnapshotHash": "90ed0471",
-          "extractedAt": "2026-06-30T01:21:14.047Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-          "structuredFields": {
-            "kindergartenName": "군산도담유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 칠성1길 26",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-f93e9c2f",
-        "kindergartenId": "9ba25f4e-60b9-441c-87ab-3141eb36bf40",
-        "title": "준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다)",
-        "url": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223627576592",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다...",
-        "summary": "준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T01:21:14.262Z",
-        "relevanceScore": 8,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "38f8ceb5",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223627576592",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=msloveyl&logno=223627576592",
-          "normalizedText": "준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다) 준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다) 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다... 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원... 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원했다 해서걱정했는데 정말 잘된듯~~예쁜 도담일상 기록 끝!#군산도담유치원 #군산특수학교 #군산명화학교 #준혁이일상 #흔한육아 #도담유치원일상 #꿈이있는거북이",
-          "htmlSnapshotHash": "38f8ceb5",
-          "extractedAt": "2026-06-30T01:21:14.262Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-          "structuredFields": {
-            "kindergartenName": "군산도담유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 칠성1길 26",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08c-f9b2-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-099da94e",
-        "kindergartenId": "1ecec08c-f9b2-b044-e053-0a32095ab044",
-        "title": "군산 세움아이유치원 입학설명회 SNS",
-        "url": "https://www.instagram.com/reel/DAiG05DPKXg/",
-        "source": "other",
-        "sourceName": "Instagram · 세움아이유치원",
-        "snippet": "세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 세움아이유치원의 입학설명회 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission-briefing"
-        ],
-        "content": "세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 군산 원장부 주소와 맞아 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-07-01T00:10:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "baa7bec2",
-        "structuredFields": {
-          "kindergartenName": "세움아이유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 용둔길 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DAiG05DPKXg%22+%22%EC%84%B8%EC%9B%80%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DAiG05DPKXg/",
-          "normalizedUrl": "www.instagram.com/reel/daig05dpkxg",
-          "normalizedText": "군산 세움아이유치원 입학설명회 sns 세움아이유치원 2025학년도 입학설명회와 군산 문맥이 확인되는 instagram 검색 결과. 전북 군산시 세움아이유치원의 입학설명회 instagram 검색 결과.",
-          "htmlSnapshotHash": "baa7bec2",
-          "extractedAt": "2026-07-01T00:10:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "세움아이유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 용둔길 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DAiG05DPKXg%22+%22%EC%84%B8%EC%9B%80%EC%95%84%EC%9D%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:10:00.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-042f-b044-e053-0a32095ab044": [
       {
-        "id": "rev-34ad33b1",
+        "id": "rev-sns-wave680-f2187f67",
         "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
-        "title": "군산새싹유치원 교육활동 SNS",
-        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DWc15nED5Jb/",
+        "title": "군산 새싹유치원 물총놀이 소방관 활동 기록",
+        "url": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
         "source": "other",
         "sourceName": "Threads · 군산새싹유치원",
-        "snippet": "군산새싹유치원 S.A.M Science, Arts, Mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 Threads 검색 결과.",
-        "summary": "전북 군산시 새싹유치원의 통합 융합 교육 및 도서관 체험활동 SNS 정보.",
+        "snippet": "군산 새싹유치원이 물총으로 불을 꺼보는 역할놀이와 나무에 물 주기 활동을 진행한 공개 Threads 게시물입니다.",
+        "summary": "물총놀이를 통해 소방관 역할과 물을 활용한 바깥놀이를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "threads",
-          "education-activity"
+          "water-play",
+          "role-play",
+          "outdoor-activity"
         ],
-        "content": "군산새싹유치원 S.A.M Science, Arts, Mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 Threads 검색 결과다. 공식 계정명과 군산 문맥, 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T17:30:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:30:00.000Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "7268c235",
-        "structuredFields": {
-          "kindergartenName": "새싹유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-          "platform": "Threads",
-          "searchUrl": "https://www.google.com/search?q=%22DWc15nED5Jb%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 지역 문맥 및 원장부 주소를 기준으로 수동 매칭했다."
-        },
+        "evidenceChecksum": "sns-wave680-f2187f67",
         "evidence": {
-          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DWc15nED5Jb/",
-          "normalizedUrl": "www.threads.com/@saessak_kindergarten_kunsan/post/dwc15ned5jb",
-          "normalizedText": "군산새싹유치원 교육활동 sns 군산새싹유치원 s.a.m science, arts, mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 threads 검색 결과. 전북 군산시 새싹유치원의 통합 융합 교육 및 도서관 체험활동 sns 정보.",
-          "htmlSnapshotHash": "7268c235",
-          "extractedAt": "2026-06-30T17:30:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "새싹유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-            "platform": "Threads",
-            "searchUrl": "https://www.google.com/search?q=%22DWc15nED5Jb%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 지역 문맥 및 원장부 주소를 기준으로 수동 매칭했다."
-          }
+          "canonicalUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+          "normalizedUrl": "threads.net/%40saessak_kindergarten_kunsan/post/dcjkoxqtzd3",
+          "normalizedText": "군산새싹유치원 물총놀이 소방관 역할 나무에 물 주기",
+          "htmlSnapshotHash": "sns-wave680-f2187f67",
+          "extractedAt": "2026-07-03T23:30:00.000Z",
+          "sourcePageUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3"
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T17:30:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-f5b59c53",
-        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
-        "title": "군산새싹유치원 교육활동 Threads",
-        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1YSbTD4-j/",
-        "source": "other",
-        "sourceName": "Threads · @saessak_kindergarten_kunsan",
-        "snippet": "군산새싹유치원 계정에서 S.A.M 자연 통합 융합교육과 유치원 교육활동 문맥이 확인되는 Threads 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "threads",
-          "activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a38d646b",
-        "structuredFields": {
-          "kindergartenName": "새싹유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-          "platform": "Threads",
-          "searchUrl": "https://www.google.com/search?q=%22DZ1YSbTD4-j%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1YSbTD4-j/",
-          "normalizedUrl": "www.threads.com/@saessak_kindergarten_kunsan/post/dz1ysbtd4-j",
-          "normalizedText": "군산새싹유치원 교육활동 threads 군산새싹유치원 계정에서 s.a.m 자연 통합 융합교육과 유치원 교육활동 문맥이 확인되는 threads 검색 결과.",
-          "htmlSnapshotHash": "a38d646b",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "새싹유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-            "platform": "Threads",
-            "searchUrl": "https://www.google.com/search?q=%22DZ1YSbTD4-j%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a92be5c5",
-        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
-        "title": "군산새싹유치원 SAM 자연통합 융합교육 Instagram",
-        "url": "https://www.instagram.com/reel/DXs-QEkD6ZD/",
-        "source": "other",
-        "sourceName": "Instagram · 군산새싹유치원",
-        "snippet": "saessak_kindergarten_kunsan 계정에서 군산새싹유치원의 Science, Arts, Mathematics 자연 통합 융합 교육과 율동 활동 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "steam",
-          "classroom-activity"
-        ],
-        "date": "2026-04-28",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "d3c5258d",
-        "structuredFields": {
-          "kindergartenName": "새싹유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXs-QEkD6ZD%22+%22saessak_kindergarten_kunsan%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXs-QEkD6ZD/",
-          "normalizedUrl": "www.instagram.com/reel/dxs-qekd6zd",
-          "normalizedText": "군산새싹유치원 sam 자연통합 융합교육 instagram saessak_kindergarten_kunsan 계정에서 군산새싹유치원의 science, arts, mathematics 자연 통합 융합 교육과 율동 활동 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "d3c5258d",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "새싹유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXs-QEkD6ZD%22+%22saessak_kindergarten_kunsan%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        "approvedAt": "2026-07-03T23:30:00.000Z",
+        "approvedBy": "codex-manual-sns-wave680"
       },
       {
         "id": "rev-ae85a596",
@@ -494,408 +1396,18 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave680-f2187f67",
+        "id": "rev-f5b59c53",
         "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
-        "title": "군산 새싹유치원 물총놀이 소방관 활동 기록",
-        "url": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
+        "title": "군산새싹유치원 교육활동 Threads",
+        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1YSbTD4-j/",
         "source": "other",
-        "sourceName": "Threads · 군산새싹유치원",
-        "snippet": "군산 새싹유치원이 물총으로 불을 꺼보는 역할놀이와 나무에 물 주기 활동을 진행한 공개 Threads 게시물입니다.",
-        "summary": "물총놀이를 통해 소방관 역할과 물을 활용한 바깥놀이를 경험한 활동을 확인할 수 있는 SNS 원문입니다.",
+        "sourceName": "Threads · @saessak_kindergarten_kunsan",
+        "snippet": "군산새싹유치원 계정에서 S.A.M 자연 통합 융합교육과 유치원 교육활동 문맥이 확인되는 Threads 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "threads",
-          "water-play",
-          "role-play",
-          "outdoor-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:30:00.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave680-f2187f67",
-        "evidence": {
-          "canonicalUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3",
-          "normalizedUrl": "threads.net/%40saessak_kindergarten_kunsan/post/dcjkoxqtzd3",
-          "normalizedText": "군산새싹유치원 물총놀이 소방관 역할 나무에 물 주기",
-          "htmlSnapshotHash": "sns-wave680-f2187f67",
-          "extractedAt": "2026-07-03T23:30:00.000Z",
-          "sourcePageUrl": "https://www.threads.net/%40saessak_kindergarten_kunsan/post/DCjKoxQTZd3"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:30:00.000Z",
-        "approvedBy": "codex-manual-sns-wave680"
-      }
-    ],
-    "1ecec08c-f1e9-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-bcf87fad",
-        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
-        "title": "군산 새나래유치원 입학설명회 SNS",
-        "url": "https://www.instagram.com/p/DQYuFepiaWA/",
-        "source": "other",
-        "sourceName": "Instagram · 새나래유치원",
-        "snippet": "새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 새나래유치원의 2026학년도 입학설명회 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission-briefing"
-        ],
-        "content": "새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 원장부 주소·전화번호를 기준으로 전북 군산시 새나래유치원에 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:30:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "f6b3b5d3",
-        "structuredFields": {
-          "kindergartenName": "새나래유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQYuFepiaWA%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQYuFepiaWA/",
-          "normalizedUrl": "www.instagram.com/p/dqyufepiawa",
-          "normalizedText": "군산 새나래유치원 입학설명회 sns 새나래유치원 2026학년도 입학설명회와 군산 새나래유치원 문맥이 확인되는 instagram 검색 결과. 전북 군산시 새나래유치원의 2026학년도 입학설명회 sns 정보.",
-          "htmlSnapshotHash": "f6b3b5d3",
-          "extractedAt": "2026-06-30T23:30:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "새나래유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQYuFepiaWA%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소·전화번호를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:30:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9d5ae75a",
-        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
-        "title": "군산 새나래유치원 SNS 프로필",
-        "url": "https://www.instagram.com/saenaraejo/",
-        "source": "other",
-        "sourceName": "Instagram · 새나래유치원",
-        "snippet": "새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 새나래유치원의 Instagram 프로필 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "profile"
-        ],
-        "content": "새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.950Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ce363624",
-        "structuredFields": {
-          "kindergartenName": "새나래유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22saenaraejo%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-461-7107%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/saenaraejo/",
-          "normalizedUrl": "www.instagram.com/saenaraejo",
-          "normalizedText": "군산 새나래유치원 sns 프로필 새나래유치원 프로필에서 군산과 전화 063-461-7107 문맥이 확인되는 instagram 검색 결과. 전북 군산시 새나래유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "ce363624",
-          "extractedAt": "2026-06-30T23:59:59.950Z",
-          "structuredFields": {
-            "kindergartenName": "새나래유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22saenaraejo%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-461-7107%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.950Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a5b7158d",
-        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
-        "title": "전북 군산 새나래유치원 자연놀이 Instagram",
-        "url": "https://www.instagram.com/p/Ch1q-KWP8LJ/",
-        "source": "other",
-        "sourceName": "Instagram · 군산새나래유치원",
-        "snippet": "Instagram 검색 결과에서 군산새나래유치원, 군산유치원, 자연놀이유치원, 유치원원아모집 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event",
-          "outdoor-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "214380eb",
-        "structuredFields": {
-          "kindergartenName": "새나래유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22Ch1q-KWP8LJ%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/Ch1q-KWP8LJ/",
-          "normalizedUrl": "www.instagram.com/p/ch1q-kwp8lj",
-          "normalizedText": "전북 군산 새나래유치원 자연놀이 instagram instagram 검색 결과에서 군산새나래유치원, 군산유치원, 자연놀이유치원, 유치원원아모집 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "214380eb",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "새나래유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22Ch1q-KWP8LJ%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-fa0de085",
-        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
-        "title": "군산 새나래유치원 신입원아모집 Reel",
-        "url": "https://www.instagram.com/reel/DXYkqG7CbUj/",
-        "source": "other",
-        "sourceName": "Instagram · 군산새나래유치원",
-        "snippet": "Instagram Reels 검색 결과에서 군산새나래유치원, 신입원아 모집과 교육설명회 일정 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "b02de87e",
-        "structuredFields": {
-          "kindergartenName": "새나래유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXYkqG7CbUj%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXYkqG7CbUj/",
-          "normalizedUrl": "www.instagram.com/reel/dxykqg7cbuj",
-          "normalizedText": "군산 새나래유치원 신입원아모집 reel instagram reels 검색 결과에서 군산새나래유치원, 신입원아 모집과 교육설명회 일정 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "b02de87e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "새나래유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXYkqG7CbUj%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-f7544831",
-        "kindergartenId": "1ecec08c-f1e9-b044-e053-0a32095ab044",
-        "kindergartenName": "새나래유치원",
-        "title": "군산 새나래유치원 설날 세배하기 Instagram Post",
-        "url": "https://www.instagram.com/p/CZYBYiiPEWz/",
-        "source": "other",
-        "sourceName": "Instagram · 새나래유치원",
-        "snippet": "Instagram 검색 결과에서 군산 새나래유치원의 설날 세배하기 활동과 군산유치원 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "lunar-new-year",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "새나래유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하신2길 19-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CZYBYiiPEWz%22+%22%EC%83%88%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/CZYBYiiPEWz/",
-          "regionEvidence": [
-            "군산",
-            "군산새나래유치원",
-            "새나래유치원",
-            "세배하기"
-          ]
-        },
-        "evidenceChecksum": "5c21fd34"
-      }
-    ],
-    "1ecec08d-01b0-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-0fa04477",
-        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
-        "title": "군산 아이세상유치원 SNS 프로필",
-        "url": "https://www.instagram.com/childworldg/",
-        "source": "other",
-        "sourceName": "Instagram · 아이세상유치원",
-        "snippet": "아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 아이세상유치원의 Instagram 프로필 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "profile"
-        ],
-        "content": "아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 Instagram 검색 결과다. 아이세상유치원 동명이 있어 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.950Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "fb04219a",
-        "structuredFields": {
-          "kindergartenName": "아이세상유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-467-7977%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/childworldg/",
-          "normalizedUrl": "www.instagram.com/childworldg",
-          "normalizedText": "군산 아이세상유치원 sns 프로필 아이세상유치원 프로필에서 군산과 전화 063-467-7977 문맥이 확인되는 instagram 검색 결과. 전북 군산시 아이세상유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "fb04219a",
-          "extractedAt": "2026-06-30T23:59:59.950Z",
-          "structuredFields": {
-            "kindergartenName": "아이세상유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-467-7977%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.950Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5ae4be66",
-        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
-        "title": "군산 아이세상유치원 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/DOFestnkuTY/",
-        "source": "other",
-        "sourceName": "Instagram · 아이세상유치원",
-        "snippet": "childworldg 계정에서 2026학년도 아이세상유치원 입학설명회 신청 안내와 인성·사고력·창의력 교육과정 소개가 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admissions",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "c5fa3764",
-        "structuredFields": {
-          "kindergartenName": "아이세상유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DOFestnkuTY/",
-          "normalizedUrl": "www.instagram.com/p/dofestnkuty",
-          "normalizedText": "군산 아이세상유치원 입학설명회 instagram childworldg 계정에서 2026학년도 아이세상유치원 입학설명회 신청 안내와 인성·사고력·창의력 교육과정 소개가 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "c5fa3764",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "아이세상유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22childworldg%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5708cbb6",
-        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
-        "title": "군산 아이세상유치원 생일잔치 Instagram",
-        "url": "https://www.instagram.com/reel/DaBsOsvSvxN/",
-        "source": "other",
-        "sourceName": "Instagram · 아이세상유치원",
-        "snippet": "childworldg 계정에서 2026년 6월 생일잔치 활동이 확인되는 Instagram 릴스 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
           "activity"
         ],
         "date": null,
@@ -904,26 +1416,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "9bface45",
+        "evidenceChecksum": "a38d646b",
         "structuredFields": {
-          "kindergartenName": "아이세상유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DaBsOsvSvxN%22+%22childworldg%22",
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DZ1YSbTD4-j%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaBsOsvSvxN/",
-          "normalizedUrl": "www.instagram.com/reel/dabsosvsvxn",
-          "normalizedText": "군산 아이세상유치원 생일잔치 instagram childworldg 계정에서 2026년 6월 생일잔치 활동이 확인되는 instagram 릴스 게시물.",
-          "htmlSnapshotHash": "9bface45",
+          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DZ1YSbTD4-j/",
+          "normalizedUrl": "www.threads.com/@saessak_kindergarten_kunsan/post/dz1ysbtd4-j",
+          "normalizedText": "군산새싹유치원 교육활동 threads 군산새싹유치원 계정에서 s.a.m 자연 통합 융합교육과 유치원 교육활동 문맥이 확인되는 threads 검색 결과.",
+          "htmlSnapshotHash": "a38d646b",
           "extractedAt": "2026-06-30T23:59:59.999Z",
           "structuredFields": {
-            "kindergartenName": "아이세상유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DaBsOsvSvxN%22+%22childworldg%22",
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DZ1YSbTD4-j%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -933,157 +1445,157 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-602248c5",
-        "kindergartenId": "1ecec08d-01b0-b044-e053-0a32095ab044",
-        "title": "군산 아이세상유치원 실외체험 Instagram",
-        "url": "https://www.instagram.com/reel/DZ0Dz_LvGDZ/",
+        "id": "rev-34ad33b1",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산새싹유치원 교육활동 SNS",
+        "url": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DWc15nED5Jb/",
         "source": "other",
-        "sourceName": "Instagram · 아이세상유치원",
-        "snippet": "childworldg 계정에서 열매반 유아교육진흥원 실외체험 활동이 확인되는 Instagram 릴스 게시물.",
+        "sourceName": "Threads · 군산새싹유치원",
+        "snippet": "군산새싹유치원 S.A.M Science, Arts, Mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 Threads 검색 결과.",
+        "summary": "전북 군산시 새싹유치원의 통합 융합 교육 및 도서관 체험활동 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
-          "instagram",
-          "field-trip"
+          "threads",
+          "education-activity"
         ],
+        "content": "군산새싹유치원 S.A.M Science, Arts, Mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 Threads 검색 결과다. 공식 계정명과 군산 문맥, 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "collectedAt": "2026-06-30T17:30:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "9af21de7",
+        "evidenceChecksum": "7268c235",
         "structuredFields": {
-          "kindergartenName": "아이세상유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZ0Dz_LvGDZ%22+%22childworldg%22",
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DWc15nED5Jb%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 지역 문맥 및 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZ0Dz_LvGDZ/",
-          "normalizedUrl": "www.instagram.com/reel/dz0dz_lvgdz",
-          "normalizedText": "군산 아이세상유치원 실외체험 instagram childworldg 계정에서 열매반 유아교육진흥원 실외체험 활동이 확인되는 instagram 릴스 게시물.",
-          "htmlSnapshotHash": "9af21de7",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "canonicalUrl": "https://www.threads.com/@saessak_kindergarten_kunsan/post/DWc15nED5Jb/",
+          "normalizedUrl": "www.threads.com/@saessak_kindergarten_kunsan/post/dwc15ned5jb",
+          "normalizedText": "군산새싹유치원 교육활동 sns 군산새싹유치원 s.a.m science, arts, mathematics 자연 통합 융합 교육과 도서관 체험 활동 문맥이 확인되는 threads 검색 결과. 전북 군산시 새싹유치원의 통합 융합 교육 및 도서관 체험활동 sns 정보.",
+          "htmlSnapshotHash": "7268c235",
+          "extractedAt": "2026-06-30T17:30:00.000Z",
           "structuredFields": {
-            "kindergartenName": "아이세상유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 하나운로 45",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZ0Dz_LvGDZ%22+%22childworldg%22",
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DWc15nED5Jb%22+%22%EA%B5%B0%EC%82%B0%EC%83%88%EC%8B%B9%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정명과 지역 문맥 및 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedAt": "2026-06-30T17:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a92be5c5",
+        "kindergartenId": "1ecec08d-042f-b044-e053-0a32095ab044",
+        "title": "군산새싹유치원 SAM 자연통합 융합교육 Instagram",
+        "url": "https://www.instagram.com/reel/DXs-QEkD6ZD/",
+        "source": "other",
+        "sourceName": "Instagram · 군산새싹유치원",
+        "snippet": "saessak_kindergarten_kunsan 계정에서 군산새싹유치원의 Science, Arts, Mathematics 자연 통합 융합 교육과 율동 활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "steam",
+          "classroom-activity"
+        ],
+        "date": "2026-04-28",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "d3c5258d",
+        "structuredFields": {
+          "kindergartenName": "새싹유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXs-QEkD6ZD%22+%22saessak_kindergarten_kunsan%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXs-QEkD6ZD/",
+          "normalizedUrl": "www.instagram.com/reel/dxs-qekd6zd",
+          "normalizedText": "군산새싹유치원 sam 자연통합 융합교육 instagram saessak_kindergarten_kunsan 계정에서 군산새싹유치원의 science, arts, mathematics 자연 통합 융합 교육과 율동 활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "d3c5258d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "새싹유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신촌남길 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXs-QEkD6ZD%22+%22saessak_kindergarten_kunsan%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-05e9-b044-e053-0a32095ab044": [
       {
-        "id": "rev-2b520a4f",
+        "id": "rev-3194081a",
         "kindergartenId": "1ecec08d-05e9-b044-e053-0a32095ab044",
-        "title": "군산유치원 SNS 프로필",
-        "url": "https://www.instagram.com/1210cg/",
+        "title": "전북 군산유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/CyM6rFavZgO/",
         "source": "other",
         "sourceName": "Instagram · 군산유치원",
-        "snippet": "군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 군산유치원의 Instagram 프로필 SNS 정보.",
+        "snippet": "Instagram 검색 결과에서 군산유치원 2024년도 입학설명회 일정, 군산 지역 유치원 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
-          "search-snippet",
-          "address-not-required",
           "instagram",
-          "profile"
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "orientation"
         ],
-        "content": "군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.950Z",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "d6519568",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "18dcabc8",
         "structuredFields": {
           "kindergartenName": "군산유치원",
           "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-462-3900%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/1210cg/",
-          "normalizedUrl": "www.instagram.com/1210cg",
-          "normalizedText": "군산유치원 sns 프로필 군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 instagram 검색 결과. 전북 군산시 군산유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "d6519568",
-          "extractedAt": "2026-06-30T23:59:59.950Z",
-          "structuredFields": {
-            "kindergartenName": "군산유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-462-3900%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.950Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-19f57485",
-        "kindergartenId": "1ecec08d-05e9-b044-e053-0a32095ab044",
-        "title": "군산유치원 환경 프로젝트 Instagram",
-        "url": "https://www.instagram.com/reel/DaILFoeJQRi/",
-        "source": "other",
-        "sourceName": "Instagram · 군산유치원",
-        "snippet": "1210cg 계정에서 군산유치원 환경 프로젝트, 플로깅·재활용놀이·업사이클링 활동 문맥이 확인되는 Instagram 릴스 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "d6709ad9",
-        "structuredFields": {
-          "kindergartenName": "군산유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22CyM6rFavZgO%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaILFoeJQRi/",
-          "normalizedUrl": "www.instagram.com/reel/dailfoejqri",
-          "normalizedText": "군산유치원 환경 프로젝트 instagram 1210cg 계정에서 군산유치원 환경 프로젝트, 플로깅·재활용놀이·업사이클링 활동 문맥이 확인되는 instagram 릴스 게시물.",
-          "htmlSnapshotHash": "d6709ad9",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "canonicalUrl": "https://www.instagram.com/p/CyM6rFavZgO/",
+          "normalizedUrl": "www.instagram.com/p/cym6rfavzgo",
+          "normalizedText": "전북 군산유치원 입학설명회 instagram instagram 검색 결과에서 군산유치원 2024년도 입학설명회 일정, 군산 지역 유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "18dcabc8",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "군산유치원",
             "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22CyM6rFavZgO%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -1137,19 +1649,20 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-e69b2366",
+        "id": "rev-19f57485",
         "kindergartenId": "1ecec08d-05e9-b044-e053-0a32095ab044",
-        "title": "군산유치원 등원 적응 안내 Instagram",
-        "url": "https://www.instagram.com/p/DZpdNbOCb3O/",
+        "title": "군산유치원 환경 프로젝트 Instagram",
+        "url": "https://www.instagram.com/reel/DaILFoeJQRi/",
         "source": "other",
         "sourceName": "Instagram · 군산유치원",
-        "snippet": "1210cg 계정에서 등원 시 분리불안과 보호자 대응법을 설명하는 군산유치원 학부모 안내 문맥이 확인되는 Instagram 게시물.",
+        "snippet": "1210cg 계정에서 군산유치원 환경 프로젝트, 플로깅·재활용놀이·업사이클링 활동 문맥이 확인되는 Instagram 릴스 게시물.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "parent-info"
+          "activity",
+          "curriculum"
         ],
         "date": null,
         "collectedAt": "2026-06-30T23:59:59.999Z",
@@ -1157,26 +1670,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "084c3ec7",
+        "evidenceChecksum": "d6709ad9",
         "structuredFields": {
           "kindergartenName": "군산유치원",
           "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZpdNbOCb3O%22+%221210cg%22",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZpdNbOCb3O/",
-          "normalizedUrl": "www.instagram.com/p/dzpdnbocb3o",
-          "normalizedText": "군산유치원 등원 적응 안내 instagram 1210cg 계정에서 등원 시 분리불안과 보호자 대응법을 설명하는 군산유치원 학부모 안내 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "084c3ec7",
+          "canonicalUrl": "https://www.instagram.com/reel/DaILFoeJQRi/",
+          "normalizedUrl": "www.instagram.com/reel/dailfoejqri",
+          "normalizedText": "군산유치원 환경 프로젝트 instagram 1210cg 계정에서 군산유치원 환경 프로젝트, 플로깅·재활용놀이·업사이클링 활동 문맥이 확인되는 instagram 릴스 게시물.",
+          "htmlSnapshotHash": "d6709ad9",
           "extractedAt": "2026-06-30T23:59:59.999Z",
           "structuredFields": {
             "kindergartenName": "군산유치원",
             "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZpdNbOCb3O%22+%221210cg%22",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1235,66 +1748,63 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-3194081a",
+        "id": "rev-e69b2366",
         "kindergartenId": "1ecec08d-05e9-b044-e053-0a32095ab044",
-        "title": "전북 군산유치원 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/CyM6rFavZgO/",
+        "title": "군산유치원 등원 적응 안내 Instagram",
+        "url": "https://www.instagram.com/p/DZpdNbOCb3O/",
         "source": "other",
         "sourceName": "Instagram · 군산유치원",
-        "snippet": "Instagram 검색 결과에서 군산유치원 2024년도 입학설명회 일정, 군산 지역 유치원 문맥이 확인되는 게시물.",
+        "snippet": "1210cg 계정에서 등원 시 분리불안과 보호자 대응법을 설명하는 군산유치원 학부모 안내 문맥이 확인되는 Instagram 게시물.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "admissions",
-          "kindergarten-event",
-          "orientation"
+          "instagram",
+          "parent-info"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "18dcabc8",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "084c3ec7",
         "structuredFields": {
           "kindergartenName": "군산유치원",
           "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CyM6rFavZgO%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
+          "searchUrl": "https://www.google.com/search?q=%22DZpdNbOCb3O%22+%221210cg%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CyM6rFavZgO/",
-          "normalizedUrl": "www.instagram.com/p/cym6rfavzgo",
-          "normalizedText": "전북 군산유치원 입학설명회 instagram instagram 검색 결과에서 군산유치원 2024년도 입학설명회 일정, 군산 지역 유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "18dcabc8",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DZpdNbOCb3O/",
+          "normalizedUrl": "www.instagram.com/p/dzpdnbocb3o",
+          "normalizedText": "군산유치원 등원 적응 안내 instagram 1210cg 계정에서 등원 시 분리불안과 보호자 대응법을 설명하는 군산유치원 학부모 안내 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "084c3ec7",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
           "structuredFields": {
             "kindergartenName": "군산유치원",
             "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CyM6rFavZgO%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9E%85%ED%95%99%EC%84%A4%EB%AA%85%ED%9A%8C%22",
+            "searchUrl": "https://www.google.com/search?q=%22DZpdNbOCb3O%22+%221210cg%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-fb90-b044-e053-0a32095ab044": [
+      },
       {
-        "id": "rev-bb46b346",
-        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
-        "title": "군산 동아유치원 SNS 프로필",
-        "url": "https://www.instagram.com/dong_a_kindergarden/",
+        "id": "rev-2b520a4f",
+        "kindergartenId": "1ecec08d-05e9-b044-e053-0a32095ab044",
+        "title": "군산유치원 SNS 프로필",
+        "url": "https://www.instagram.com/1210cg/",
         "source": "other",
-        "sourceName": "Instagram · 동아유치원",
-        "snippet": "동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 군산시 동아유치원의 Instagram 프로필 SNS 정보.",
+        "sourceName": "Instagram · 군산유치원",
+        "snippet": "군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 군산시 군산유치원의 Instagram 프로필 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
@@ -1302,239 +1812,41 @@
           "instagram",
           "profile"
         ],
-        "content": "동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 Instagram 검색 결과다. 동아유치원 동명이 있어 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "content": "군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
         "collectedAt": "2026-06-30T23:59:59.950Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "d0953364",
+        "evidenceChecksum": "d6519568",
         "structuredFields": {
-          "kindergartenName": "동아유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+          "kindergartenName": "군산유치원",
+          "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22dong_a_kindergarden%22+%22%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-465-6711%22",
+          "searchUrl": "https://www.google.com/search?q=%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-462-3900%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/dong_a_kindergarden/",
-          "normalizedUrl": "www.instagram.com/dong_a_kindergarden",
-          "normalizedText": "군산 동아유치원 sns 프로필 동아유치원 프로필에서 군산과 전화 063-465-6711 문맥이 확인되는 instagram 검색 결과. 전북 군산시 동아유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "d0953364",
+          "canonicalUrl": "https://www.instagram.com/1210cg/",
+          "normalizedUrl": "www.instagram.com/1210cg",
+          "normalizedText": "군산유치원 sns 프로필 군산유치원 프로필에서 전화 063-462-3900 문맥이 확인되는 instagram 검색 결과. 전북 군산시 군산유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "d6519568",
           "extractedAt": "2026-06-30T23:59:59.950Z",
           "structuredFields": {
-            "kindergartenName": "동아유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
+            "kindergartenName": "군산유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 신평길 16-13",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22dong_a_kindergarden%22+%22%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-465-6711%22",
+            "searchUrl": "https://www.google.com/search?q=%221210cg%22+%22%EA%B5%B0%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22063-462-3900%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 군산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.950Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-7752b714",
-        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
-        "title": "군산 동아유치원 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/DQlgqPsEvcO/",
-        "source": "other",
-        "sourceName": "Instagram · 동아유치원",
-        "snippet": "dong_a_kindergarden 계정에서 가족과 함께한 부모참여수업, 군산 동아유치원·원아모집 해시태그가 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "parent-participation"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "4b94c636",
-        "structuredFields": {
-          "kindergartenName": "동아유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22dong_a_kindergarden%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQlgqPsEvcO/",
-          "normalizedUrl": "www.instagram.com/p/dqlgqpsevco",
-          "normalizedText": "군산 동아유치원 부모참여수업 instagram dong_a_kindergarden 계정에서 가족과 함께한 부모참여수업, 군산 동아유치원·원아모집 해시태그가 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "4b94c636",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "동아유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22dong_a_kindergarden%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-57fc7fa6",
-        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
-        "title": "군산 동아유치원 동대문놀이 Instagram",
-        "url": "https://www.instagram.com/p/DV8ABRIkub6/",
-        "source": "other",
-        "sourceName": "Instagram · 동아유치원",
-        "snippet": "dong_a_kindergarden 계정에서 군산 동아유치원 만4세 동대문놀이 활동과 유치원 일상 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ad5ad6f8",
-        "structuredFields": {
-          "kindergartenName": "동아유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DV8ABRIkub6%22+%22dong_a_kindergarden%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DV8ABRIkub6/",
-          "normalizedUrl": "www.instagram.com/p/dv8abrikub6",
-          "normalizedText": "군산 동아유치원 동대문놀이 instagram dong_a_kindergarden 계정에서 군산 동아유치원 만4세 동대문놀이 활동과 유치원 일상 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "ad5ad6f8",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "동아유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DV8ABRIkub6%22+%22dong_a_kindergarden%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-c9b7e3b7",
-        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
-        "title": "군산 동아유치원 체육시간 Instagram",
-        "url": "https://www.instagram.com/p/DX_OCi6JHcd/",
-        "source": "other",
-        "sourceName": "Instagram · 동아유치원",
-        "snippet": "dong_a_kindergarden 계정에서 동아유치원 체육시간 배드민턴 활동이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "1b5a3ef0",
-        "structuredFields": {
-          "kindergartenName": "동아유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DX_OCi6JHcd%22+%22dong_a_kindergarden%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DX_OCi6JHcd/",
-          "normalizedUrl": "www.instagram.com/p/dx_oci6jhcd",
-          "normalizedText": "군산 동아유치원 체육시간 instagram dong_a_kindergarden 계정에서 동아유치원 체육시간 배드민턴 활동이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "1b5a3ef0",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "동아유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DX_OCi6JHcd%22+%22dong_a_kindergarden%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-732b4b05",
-        "kindergartenId": "1ecec08c-fb90-b044-e053-0a32095ab044",
-        "title": "군산 동아유치원 논산 딸기 체험 Instagram Post",
-        "url": "https://www.instagram.com/p/CrOFELMuP0A/",
-        "source": "other",
-        "sourceName": "Instagram · 동아유치원",
-        "snippet": "동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "strawberry-experience"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T12:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "17832add",
-        "structuredFields": {
-          "kindergartenName": "동아유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CrOFELMuP0A/",
-          "normalizedUrl": "www.instagram.com/p/crofelmup0a",
-          "normalizedText": "군산 동아유치원 논산 딸기 체험 instagram post 동아유치원 계정에서 군산동아유치원, 군산유치원, 논산 딸기 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "17832add",
-          "extractedAt": "2026-07-02T12:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "동아유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 동아로 154",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CrOFELMuP0A%22+%22%EA%B5%B0%EC%82%B0%EB%8F%99%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%94%B8%EA%B8%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "동아유치원 동명이 있으나 군산동아유치원과 군산유치원 단서가 확인되어 군산 동아유치원으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T12:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1651,386 +1963,74 @@
         }
       }
     ],
-    "1ecec08c-f9b1-b044-e053-0a32095ab044": [
+    "9ba25f4e-60b9-441c-87ab-3141eb36bf40": [
       {
-        "id": "rev-940ebf6a",
-        "kindergartenId": "1ecec08c-f9b1-b044-e053-0a32095ab044",
-        "title": "군산 푸른숲유치원 체험활동 Instagram",
-        "url": "https://www.instagram.com/reel/DIagqQIvIaa/",
-        "source": "other",
-        "sourceName": "Instagram · 푸른숲유치원",
-        "snippet": "Instagram 검색 결과에서 푸른숲유치원, 군산유치원, 숲유치원, 유아체험활동과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+        "id": "rev-f93e9c2f",
+        "kindergartenId": "9ba25f4e-60b9-441c-87ab-3141eb36bf40",
+        "title": "준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223627576592",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다...",
+        "summary": "준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원...",
         "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "nature-activity",
-          "admissions"
+          "public"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-06-30T01:21:14.262Z",
+        "relevanceScore": 8,
         "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "25fdb665",
-        "structuredFields": {
-          "kindergartenName": "푸른숲유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "38f8ceb5",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DIagqQIvIaa/",
-          "normalizedUrl": "www.instagram.com/reel/diagqqiviaa",
-          "normalizedText": "군산 푸른숲유치원 체험활동 instagram instagram 검색 결과에서 푸른숲유치원, 군산유치원, 숲유치원, 유아체험활동과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "25fdb665",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223627576592",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=msloveyl&logno=223627576592",
+          "normalizedText": "준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다) 준혁이에겐 즐거운 군산 도담유치원(명화학교 배정 됐습니다) 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다... 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원... 준혁이 유치원을 물어보시는 분들이 많아서 너무 좋다고 종종 자랑을 하기도 하고 보내 보시라고 오지랖을 부리기도 하는데 준혁이에겐 너무 즐거운 곳이지만 다른 아이들에겐 아닐수도 있겠다는 생각이 드는 요즘.모두 만족할수는 없겠지요.어찌 됐든 준혁이는 5살부터 3년차 큰 사건 사고 없이 잘다니고 있고 즐겁고~~ 웃음꽃 피어가며 다니고 있는곳~나도 종종 사소한 불만을 갖기도 하지만별탈없이 즐겁게 다니고 있다는거에참 감사한 군산 도담유치원사진은 좀 뒤죽박죽 이지만재미나게 생활하고 있는 유치원 일상 그리고 오늘 학교발표가 나왔는데준혁인 명화학교에 똬악 배정!걱정 많이 했는데 한시름 놨다ㅜㅜ명화학교는 군산에 하나뿐인특수학교로올해 명화학교에 많이 지원했다 해서걱정했는데 정말 잘된듯~~예쁜 도담일상 기록 끝!#군산도담유치원 #군산특수학교 #군산명화학교 #준혁이일상 #흔한육아 #도담유치원일상 #꿈이있는거북이",
+          "htmlSnapshotHash": "38f8ceb5",
+          "extractedAt": "2026-06-30T01:21:14.262Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
           "structuredFields": {
-            "kindergartenName": "푸른숲유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "kindergartenName": "군산도담유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 칠성1길 26",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
           }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        }
       },
       {
-        "id": "rev-206c125b",
-        "kindergartenId": "1ecec08c-f9b1-b044-e053-0a32095ab044",
-        "title": "군산 푸른숲유치원 숲데이 Instagram",
-        "url": "https://www.instagram.com/reel/DIQeTP_PDKR/",
-        "source": "other",
-        "sourceName": "Instagram · 푸른숲유치원",
-        "snippet": "Instagram 검색 결과에서 푸른숲유치원 온종일 숲데이, 군산유치원추천, 전북유치원, 나운동유치원과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
+        "id": "rev-d209e718",
+        "kindergartenId": "9ba25f4e-60b9-441c-87ab-3141eb36bf40",
+        "title": "이젠 안녕 2025.02.14 졸업식에 못간 도담유치원 졸업식",
+        "url": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223767221516",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가...",
+        "summary": "2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이...",
         "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "nature-activity",
-          "admissions"
+          "public"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-06-30T01:21:14.047Z",
+        "relevanceScore": 8,
         "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "3d4650e2",
-        "structuredFields": {
-          "kindergartenName": "푸른숲유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "90ed0471",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DIQeTP_PDKR/",
-          "normalizedUrl": "www.instagram.com/reel/diqetp_pdkr",
-          "normalizedText": "군산 푸른숲유치원 숲데이 instagram instagram 검색 결과에서 푸른숲유치원 온종일 숲데이, 군산유치원추천, 전북유치원, 나운동유치원과 2026학년도 신입원아모집 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "3d4650e2",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=msloveyl&logNo=223767221516",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=msloveyl&logno=223767221516",
+          "normalizedText": "이젠 안녕 2025.02.14 졸업식에 못간 도담유치원 졸업식 많은 사랑을 받으며 아무 사고 없이 3년을 다닐수 있었던 도담유치원. 누군가 또 블로그를 보고 도담유치원 괜찮냐고 물어본다면 나는 다시 적극 추천해야겠다. 그동안 많은 사랑 주셔서 감사합니다 #군산도담유치원 #유치원특수반 #군산유치원통합수업 #장애아동유치원 #그날의온도 #유치원졸업식 #특교자유치원 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가... 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이... 2월14일은 도담유치원의 졸업식이였다.준혁이는 10일부터 열이 나고 14일엔 설사가 심해서 유치원 졸업식에 참석하지 못했다.한번뿐인 유치원 졸업식도 못가고 친구들과 마지막 인사도 하지 못한채로 유치원과도 안녕하게 되었다. 도담유치원에서 졸업선물로 예쁜 가방을 주셨다. 이렇게 예쁜 가방을 선물로 주시다니😭😭😭 감사할 따름이다. 졸업앨범을 받았는데 내가 생각했던것보다 훨씬 예쁜 사진들이 가득해서 기분이 좋았다. 사진때문에 선생님들께서 많이 고생하셨을 생각을 하니 죄송하다가도 감사한 마음이 컸다. 이사진이 너무너무 마음에 드는데 머리 스타일도 찰떡이고 볼수록 웃음짓게 된다😆 3년동안 함께했던 ㅅㅇ.ㅁㅎ 와 1년간 함께했던 ㅅㅎ이와도 이젠 이별이다. 준혁이와 잘놀아 줬던 ㅁㅎ는 잊을수가 없을것 같다. 발닿는 곳곳이 놀이터였던 도담유치원2층 실내놀이터도,강당도 준혁이가 정말 좋아했던곳. 짜증낼때도 많았지만 웃음꽃이 많이 피었던 3년간의 추억과 함께 이젠 안녕. 4반 친구들과 준혁이를 온마음 다해 사랑해주셨던 선생님과도 안녕이다. 많이 챙겨주시고 성장에 도움주시려 노력하시고 애쓰시던 그 마음은 말로다 표현하기 힘들정도로 감사했다.많은 사랑을 받으며 아무 사고 없이 3년을 다닐수 있었던 도담유치원. 누군가 또 블로그를 보고 도담유치원 괜찮냐고 물어본다면 나는 다시 적극 추천해야겠다.그동안 많은 사랑 주셔서 감사합니다🙂 도담유치원 전북특별자치도 군산시 칠성1길 26 이 블로그의 체크인 이 장소의 다른 글 #군산도담유치원 #유치원특수반 #군산유치원통합수업 #장애아동유치원 #그날의온도 #유치원졸업식 #특교자유치원",
+          "htmlSnapshotHash": "90ed0471",
+          "extractedAt": "2026-06-30T01:21:14.047Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
           "structuredFields": {
-            "kindergartenName": "푸른숲유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 신설1길 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%222026%ED%95%99%EB%85%84%EB%8F%84%22+%22%EC%9B%90%EC%95%84%EB%AA%A8%EC%A7%91%22+%22%ED%91%B8%EB%A5%B8%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%B0%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "kindergartenName": "군산도담유치원",
+            "kindergartenAddress": "전북특별자치도 군산시 칠성1길 26",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B5%B0%EC%82%B0%EB%8F%84%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
           }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-02e5-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-f7444625",
-        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
-        "title": "군산 호원대학교부속유치원 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/CyDFP1Sv50o/",
-        "source": "other",
-        "sourceName": "Instagram · 호원대학교부속유치원",
-        "snippet": "Instagram 검색 결과에서 호원대학교부속유치원 입학설명회와 군산유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "8460ec48",
-        "structuredFields": {
-          "kindergartenName": "호원대학교부속유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CyDFP1Sv50o%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CyDFP1Sv50o/",
-          "normalizedUrl": "www.instagram.com/p/cydfp1sv50o",
-          "normalizedText": "군산 호원대학교부속유치원 입학설명회 instagram instagram 검색 결과에서 호원대학교부속유치원 입학설명회와 군산유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "8460ec48",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "호원대학교부속유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CyDFP1Sv50o%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a0c0840a",
-        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
-        "title": "군산 호원대학교부속유치원 입학설명회 안내 Instagram",
-        "url": "https://www.instagram.com/p/DBYEYlzPNuc/",
-        "source": "other",
-        "sourceName": "Instagram · 호원대학교부속유치원",
-        "snippet": "Instagram 검색 결과에서 호원대부속유치원, 군산유치원, 입학설명회 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "30378fef",
-        "structuredFields": {
-          "kindergartenName": "호원대학교부속유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DBYEYlzPNuc%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DBYEYlzPNuc/",
-          "normalizedUrl": "www.instagram.com/p/dbyeylzpnuc",
-          "normalizedText": "군산 호원대학교부속유치원 입학설명회 안내 instagram instagram 검색 결과에서 호원대부속유치원, 군산유치원, 입학설명회 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "30378fef",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "호원대학교부속유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DBYEYlzPNuc%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-2b2067e7",
-        "kindergartenId": "1ecec08d-02e5-b044-e053-0a32095ab044",
-        "title": "군산 호원대학교부속유치원 지구프로젝트 Instagram",
-        "url": "https://www.instagram.com/p/CPsskrmNiMI/",
-        "source": "other",
-        "sourceName": "Instagram · 호원대학교부속유치원",
-        "snippet": "Instagram 검색 결과에서 호원대학교부속유치원 유아 활동과 입학설명회 안내 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "170dfe7f",
-        "structuredFields": {
-          "kindergartenName": "호원대학교부속유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CPsskrmNiMI%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CPsskrmNiMI/",
-          "normalizedUrl": "www.instagram.com/p/cpsskrmnimi",
-          "normalizedText": "군산 호원대학교부속유치원 지구프로젝트 instagram instagram 검색 결과에서 호원대학교부속유치원 유아 활동과 입학설명회 안내 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "170dfe7f",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "호원대학교부속유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 월명2길 35",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CPsskrmNiMI%22+%22%ED%98%B8%EC%9B%90%EB%8C%80%ED%95%99%EA%B5%90%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f91e-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-e677355d",
-        "kindergartenId": "1ecec08c-f91e-b044-e053-0a32095ab044",
-        "title": "전북 군산 초록빛유치원 숲 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/DAV3bUDv-T7/",
-        "source": "other",
-        "sourceName": "Instagram · 군산초록빛유치원",
-        "snippet": "Instagram 검색 결과에서 군산초록빛유치원, 초록빛유치원, 숲유치원, 숲 부모참여수업 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class",
-          "forest-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "d3df8f85",
-        "structuredFields": {
-          "kindergartenName": "초록빛유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 나운5길 63-6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DAV3bUDv-T7%22+%22%EA%B5%B0%EC%82%B0%EC%B4%88%EB%A1%9D%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DAV3bUDv-T7/",
-          "normalizedUrl": "www.instagram.com/p/dav3budv-t7",
-          "normalizedText": "전북 군산 초록빛유치원 숲 부모참여수업 instagram instagram 검색 결과에서 군산초록빛유치원, 초록빛유치원, 숲유치원, 숲 부모참여수업 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "d3df8f85",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "초록빛유치원",
-            "kindergartenAddress": "전북특별자치도 군산시 나운5길 63-6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DAV3bUDv-T7%22+%22%EA%B5%B0%EC%82%B0%EC%B4%88%EB%A1%9D%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-ffeb-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-f0558285",
-        "kindergartenId": "1ecec08c-ffeb-b044-e053-0a32095ab044",
-        "kindergartenName": "반야유치원",
-        "title": "군산 반야유치원 어버이날 Reel",
-        "url": "https://www.instagram.com/reel/C6uabxoyC6a/",
-        "source": "other",
-        "sourceName": "Instagram · banya_gunsan",
-        "snippet": "Instagram 검색 결과에서 군산 반야유치원의 어버이날 선물 활동 문맥이 확인되는 릴.",
-        "date": "2024-05-08",
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parents-day",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "반야유치원",
-          "kindergartenAddress": "전북특별자치도 군산시 동산길 25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C6uabxoyC6a%22+%22banya_gunsan%22+%22%EB%B0%98%EC%95%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/C6uabxoyC6a/",
-          "regionEvidence": [
-            "banya_gunsan",
-            "반야유치원",
-            "어버이날"
-          ]
-        },
-        "evidenceChecksum": "8ffb05af"
-      }
-    ],
-    "1ecec08c-fd41-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave681-bba79e49",
-        "kindergartenId": "1ecec08c-fd41-b044-e053-0a32095ab044",
-        "title": "파란나무유치원 자연애 캠핑 활동 기록",
-        "url": "https://www.instagram.com/p/DZwtX8VFBUI/",
-        "source": "other",
-        "sourceName": "Instagram · 파란나무유치원",
-        "snippet": "파란나무유치원이 한 주 동안 자연애 캠핑 활동을 진행한 내용을 소개한 공개 게시물입니다.",
-        "summary": "자연과 가까운 캠핑형 놀이 활동을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "nature-play",
-          "camping",
-          "outdoor-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:55:00.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave681-bba79e49",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZwtX8VFBUI/",
-          "normalizedUrl": "instagram.com/p/dzwtx8vfbui",
-          "normalizedText": "파란나무유치원 자연애 캠핑 해봄 자연 활동",
-          "htmlSnapshotHash": "sns-wave681-bba79e49",
-          "extractedAt": "2026-07-03T23:55:00.000Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DZwtX8VFBUI/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:55:00.000Z",
-        "approvedBy": "codex-manual-sns-wave681"
+        }
       }
     ]
   }

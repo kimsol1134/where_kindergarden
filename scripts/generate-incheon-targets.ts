@@ -2,13 +2,29 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const kindergartensPath = path.resolve('public/data/kindergartens.json');
-const kindergartens = JSON.parse(fs.readFileSync(kindergartensPath, 'utf-8'));
-const incheon = kindergartens.filter((k: any) => k.sido_code === '28');
+interface KindergartenTarget {
+  kindercode: string;
+  name: string;
+  address: string;
+  sido_code: string;
+}
 
-const csv = incheon.map((k: any) => `"${k.name}","${k.kindercode}","${k.address}"`).join('\n');
+const kindergartensPath = path.resolve('public/data/kindergartens.json');
+const kindergartens = JSON.parse(
+  fs.readFileSync(kindergartensPath, 'utf-8')
+) as KindergartenTarget[];
+const incheon = kindergartens.filter((kindergarten) => kindergarten.sido_code === '28');
+
+const csv = incheon
+  .map(
+    (kindergarten) =>
+      `"${kindergarten.name}","${kindergarten.kindercode}","${kindergarten.address}"`
+  )
+  .join('\n');
 const header = 'Name,ID,Address\n';
 
-const outputPath = path.resolve('public/data/manual_collection_targets_incheon.csv');
+const outputDirectory = path.resolve('scripts/data-output');
+fs.mkdirSync(outputDirectory, { recursive: true });
+const outputPath = path.join(outputDirectory, 'manual-collection-targets-incheon.csv');
 fs.writeFileSync(outputPath, header + csv);
 console.log(`Exported ${incheon.length} kindergartens to ${outputPath}`);

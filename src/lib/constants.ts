@@ -1,8 +1,14 @@
+import kindergartenMetadata from '../../public/data/kindergartens.meta.json';
+import regionMetadata from '../../public/data/region-codes.meta.json';
+
 /** 프로덕션 사이트 URL */
 export const SITE_URL = 'https://where-kindergarden.vercel.app';
 
 /** 전국 유치원 수 (sync-kindergartens 기준) */
-export const TOTAL_KINDERGARTEN_COUNT = 7950;
+export const TOTAL_KINDERGARTEN_COUNT = kindergartenMetadata.totalCount;
+
+/** 최신 공식 코드표의 시/도 수 */
+export const TOTAL_SIDO_COUNT = regionMetadata.sidoCount;
 
 /** OG 공유 이미지 */
 export const OG_IMAGE = {
@@ -13,8 +19,9 @@ export const OG_IMAGE = {
 
 /** 데이터 버전 정보 */
 export const DATA_VERSION = {
-  label: '2026년 1학기',
-  updatedAt: '2026-01-21',
+  label: kindergartenMetadata.sourceLabel,
+  updatedAt: kindergartenMetadata.collectedAt.slice(0, 10),
+  year: kindergartenMetadata.sourceVersion.slice(0, 4),
 } as const;
 
 /** localStorage 키: 위치 권한 사전 안내 표시 여부 */

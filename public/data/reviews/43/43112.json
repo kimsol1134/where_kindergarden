@@ -1,22 +1,156 @@
 {
-  "version": "2026-07-26",
-  "totalCount": 17,
-  "kindergartenCount": 5,
+  "version": "2026-08-06",
+  "totalCount": 16,
+  "kindergartenCount": 4,
   "reviews": {
-    "1ecec08c-fb21-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-np-8349-0-askw",
-        "kindergartenId": "1ecec08c-fb21-b044-e053-0a32095ab044",
-        "title": "다이어트는 나의 의지 리뷰 22사진 20 2026학년도 예아뜨유치원 교육설명회 좋은 설명 ...",
-        "url": "https://m.place.naver.com/place/31668349/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "다이어트는 나의 의지 리뷰 22사진 20 2026학년도 예아뜨유치원 교육설명회 좋은 설명 활기차신 선생님 1번째 방문",
-        "date": "2025-10-20",
-        "collectedAt": "2026-04-05T14:44:04.485Z"
-      }
-    ],
     "1ecec08c-ee77-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-8f69d0a2",
+        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
+        "title": "충북 청주 죽림유치원 부모참여수업 감사 Instagram",
+        "url": "https://www.instagram.com/p/CssRoEwvbEQ/",
+        "source": "other",
+        "sourceName": "Instagram · 죽림유치원",
+        "snippet": "Instagram 검색 결과에서 죽림유치원 부모참여수업, 청주명품유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "be531853",
+        "structuredFields": {
+          "kindergartenName": "죽림유치원",
+          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CssRoEwvbEQ%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CssRoEwvbEQ/",
+          "normalizedUrl": "www.instagram.com/p/cssroewvbeq",
+          "normalizedText": "충북 청주 죽림유치원 부모참여수업 감사 instagram instagram 검색 결과에서 죽림유치원 부모참여수업, 청주명품유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "be531853",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "죽림유치원",
+            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CssRoEwvbEQ%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a4ae3ed8",
+        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
+        "title": "충북 청주 죽림유치원 자연활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRBTUaOkh5n/",
+        "source": "other",
+        "sourceName": "Instagram · 죽림유치원",
+        "snippet": "Instagram Reels 검색 결과에서 자연과 함께하는 죽림유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "nature-play"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "f5a7b745",
+        "structuredFields": {
+          "kindergartenName": "죽림유치원",
+          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRBTUaOkh5n%22+%22%EC%B2%AD%EC%A3%BC%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRBTUaOkh5n/",
+          "normalizedUrl": "www.instagram.com/reel/drbtuaokh5n",
+          "normalizedText": "충북 청주 죽림유치원 자연활동 instagram reel instagram reels 검색 결과에서 자연과 함께하는 죽림유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "f5a7b745",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "죽림유치원",
+            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRBTUaOkh5n%22+%22%EC%B2%AD%EC%A3%BC%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-af439f58",
+        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
+        "title": "충북 청주 죽림유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/CssQxS_Pj5u/",
+        "source": "other",
+        "sourceName": "Instagram · 죽림유치원",
+        "snippet": "Instagram 검색 결과에서 죽림유치원, 청주명품유치원, 청주유치원, 부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "26bd2a24",
+        "structuredFields": {
+          "kindergartenName": "죽림유치원",
+          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CssQxS_Pj5u%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CssQxS_Pj5u/",
+          "normalizedUrl": "www.instagram.com/p/cssqxs_pj5u",
+          "normalizedText": "충북 청주 죽림유치원 부모참여수업 instagram instagram 검색 결과에서 죽림유치원, 청주명품유치원, 청주유치원, 부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "26bd2a24",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "죽림유치원",
+            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CssQxS_Pj5u%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-np-8788-0-wpgr",
         "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
@@ -126,221 +260,6 @@
         "snippet": "aldk3352 리뷰 4사진 2 2025학년도 상담일정 합격했어요 ! 🥰 1번째 방문 죽림유치원 마지막날 상담 받고 가셔서 두친구 모두 합격!!! 축하드립니다. 열심히 준비 해서 3월에 뵐께요...",
         "date": "2024-10-31",
         "collectedAt": "2026-04-05T14:44:27.030Z"
-      },
-      {
-        "id": "rev-af439f58",
-        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
-        "title": "충북 청주 죽림유치원 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/CssQxS_Pj5u/",
-        "source": "other",
-        "sourceName": "Instagram · 죽림유치원",
-        "snippet": "Instagram 검색 결과에서 죽림유치원, 청주명품유치원, 청주유치원, 부모참여수업 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "26bd2a24",
-        "structuredFields": {
-          "kindergartenName": "죽림유치원",
-          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CssQxS_Pj5u%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CssQxS_Pj5u/",
-          "normalizedUrl": "www.instagram.com/p/cssqxs_pj5u",
-          "normalizedText": "충북 청주 죽림유치원 부모참여수업 instagram instagram 검색 결과에서 죽림유치원, 청주명품유치원, 청주유치원, 부모참여수업 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "26bd2a24",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "죽림유치원",
-            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CssQxS_Pj5u%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-8f69d0a2",
-        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
-        "title": "충북 청주 죽림유치원 부모참여수업 감사 Instagram",
-        "url": "https://www.instagram.com/p/CssRoEwvbEQ/",
-        "source": "other",
-        "sourceName": "Instagram · 죽림유치원",
-        "snippet": "Instagram 검색 결과에서 죽림유치원 부모참여수업, 청주명품유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "be531853",
-        "structuredFields": {
-          "kindergartenName": "죽림유치원",
-          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CssRoEwvbEQ%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CssRoEwvbEQ/",
-          "normalizedUrl": "www.instagram.com/p/cssroewvbeq",
-          "normalizedText": "충북 청주 죽림유치원 부모참여수업 감사 instagram instagram 검색 결과에서 죽림유치원 부모참여수업, 청주명품유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "be531853",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "죽림유치원",
-            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CssRoEwvbEQ%22+%22%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a4ae3ed8",
-        "kindergartenId": "1ecec08c-ee77-b044-e053-0a32095ab044",
-        "title": "충북 청주 죽림유치원 자연활동 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DRBTUaOkh5n/",
-        "source": "other",
-        "sourceName": "Instagram · 죽림유치원",
-        "snippet": "Instagram Reels 검색 결과에서 자연과 함께하는 죽림유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "kindergarten-event",
-          "nature-play"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "f5a7b745",
-        "structuredFields": {
-          "kindergartenName": "죽림유치원",
-          "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DRBTUaOkh5n%22+%22%EC%B2%AD%EC%A3%BC%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRBTUaOkh5n/",
-          "normalizedUrl": "www.instagram.com/reel/drbtuaokh5n",
-          "normalizedText": "충북 청주 죽림유치원 자연활동 instagram reel instagram reels 검색 결과에서 자연과 함께하는 죽림유치원, 청주죽림유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "f5a7b745",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "죽림유치원",
-            "kindergartenAddress": "충청북도 청주시 서원구 대림로 288",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DRBTUaOkh5n%22+%22%EC%B2%AD%EC%A3%BC%EC%A3%BD%EB%A6%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "61ac68c2-570a-40bc-9b57-f78ea773fedf": [
-      {
-        "id": "rev-np-6148-0-ompb",
-        "kindergartenId": "61ac68c2-570a-40bc-9b57-f78ea773fedf",
-        "title": "또로라리 리뷰 135사진 126팔로워 5테마 2 숲님반 선생님 선생님들 좋으시고 아이마음 ...",
-        "url": "https://m.place.naver.com/place/1915786148/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "또로라리 리뷰 135사진 126팔로워 5테마 2 숲님반 선생님 선생님들 좋으시고 아이마음 잘 살펴주세요. 생활습관, 존댓말, 친구 배려 등 외동이라 알려주기 힘든 것들, 제가 잘 알려주지 못했던 부분도 잘 배워와서 만족합니다. 아이들이 놀기에도 너무 좋은 환경이라 집이랑 꽤 거리가 있지만 보내고 있습니다. 아이도 유치원 너무 좋아해요.🥰🥰 더보기 2번째",
-        "date": "2025-11-12",
-        "collectedAt": "2026-04-05T14:44:27.030Z"
-      }
-    ],
-    "1ecec08d-03b6-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-c1abc2df",
-        "kindergartenId": "1ecec08d-03b6-b044-e053-0a32095ab044",
-        "kindergartenName": "즐거운숲유치원",
-        "title": "청주 즐거운숲유치원 동화체험 Instagram Post",
-        "url": "https://www.instagram.com/p/DBxzUwPveXN/",
-        "source": "other",
-        "sourceName": "Instagram · 즐거운숲유치원",
-        "snippet": "즐거운숲유치원 계정 게시물 검색 결과에서 동화체험, 청주시유치원, 분평동유치원, 서원구유치원 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "library",
-          "story-experience"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:51.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "c1abc2df",
-        "structuredFields": {
-          "kindergartenName": "즐거운숲유치원",
-          "kindergartenAddress": "충청북도 청주시 서원구 안뜸로47번길 26",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DBxzUwPveXN%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%99%ED%99%94%EC%B2%B4%ED%97%98%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "청주시, 분평동, 서원구 단서와 로컬 즐거운숲유치원 매칭을 기준으로 수동 반영했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DBxzUwPveXN/",
-          "normalizedUrl": "www.instagram.com/p/dbxzuwpvexn",
-          "normalizedText": "청주 즐거운숲유치원 동화체험 instagram post 즐거운숲유치원 계정 게시물 검색 결과에서 동화체험, 청주시유치원, 분평동유치원, 서원구유치원 단서가 확인된다.",
-          "htmlSnapshotHash": "c1abc2df",
-          "extractedAt": "2026-07-02T23:59:51.000Z",
-          "structuredFields": {
-            "kindergartenName": "즐거운숲유치원",
-            "kindergartenAddress": "충청북도 청주시 서원구 안뜸로47번길 26",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DBxzUwPveXN%22%20%22%EC%A6%90%EA%B1%B0%EC%9A%B4%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%8F%99%ED%99%94%EC%B2%B4%ED%97%98%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "청주시, 분평동, 서원구 단서와 로컬 즐거운숲유치원 매칭을 기준으로 수동 반영했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:51.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f249-b044-e053-0a32095ab044": [
@@ -379,6 +298,32 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.900Z",
         "approvedBy": "codex-manual-sns-wave693"
+      }
+    ],
+    "1ecec08c-fb21-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-np-8349-0-askw",
+        "kindergartenId": "1ecec08c-fb21-b044-e053-0a32095ab044",
+        "title": "다이어트는 나의 의지 리뷰 22사진 20 2026학년도 예아뜨유치원 교육설명회 좋은 설명 ...",
+        "url": "https://m.place.naver.com/place/31668349/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "다이어트는 나의 의지 리뷰 22사진 20 2026학년도 예아뜨유치원 교육설명회 좋은 설명 활기차신 선생님 1번째 방문",
+        "date": "2025-10-20",
+        "collectedAt": "2026-04-05T14:44:04.485Z"
+      }
+    ],
+    "61ac68c2-570a-40bc-9b57-f78ea773fedf": [
+      {
+        "id": "rev-np-6148-0-ompb",
+        "kindergartenId": "61ac68c2-570a-40bc-9b57-f78ea773fedf",
+        "title": "또로라리 리뷰 135사진 126팔로워 5테마 2 숲님반 선생님 선생님들 좋으시고 아이마음 ...",
+        "url": "https://m.place.naver.com/place/1915786148/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "또로라리 리뷰 135사진 126팔로워 5테마 2 숲님반 선생님 선생님들 좋으시고 아이마음 잘 살펴주세요. 생활습관, 존댓말, 친구 배려 등 외동이라 알려주기 힘든 것들, 제가 잘 알려주지 못했던 부분도 잘 배워와서 만족합니다. 아이들이 놀기에도 너무 좋은 환경이라 집이랑 꽤 거리가 있지만 보내고 있습니다. 아이도 유치원 너무 좋아해요.🥰🥰 더보기 2번째",
+        "date": "2025-11-12",
+        "collectedAt": "2026-04-05T14:44:27.030Z"
       }
     ]
   }

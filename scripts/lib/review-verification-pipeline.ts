@@ -40,17 +40,16 @@ export interface ReviewCollisionResolution {
 
 export const DEFAULT_REVIEW_SIDO_CODES = [
   '11',
+  '12',
   '26',
   '27',
   '28',
-  '29',
   '30',
   '31',
   '36',
   '41',
   '43',
   '44',
-  '46',
   '47',
   '48',
   '50',

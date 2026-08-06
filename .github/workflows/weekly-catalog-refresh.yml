@@ -1,0 +1,107 @@
+name: Weekly Official Catalog Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:20 KST every Monday (GitHub Actions cron uses UTC)
+    - cron: '20 21 * * 0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Sync official region codes
+        run: pnpm sync:region-codes
+
+      - name: Sync latest official kindergarten disclosure
+        run: pnpm sync:kindergartens
+
+      - name: Reconcile review shards with current catalog
+        run: pnpm sync:reviews-catalog
+
+      - name: Validate all public data and refresh manifest
+        run: pnpm validate:data -- --write-manifest
+
+      - name: Run tests and type-check
+        run: |
+          pnpm test
+          pnpm type-check
+
+      - name: Commit validated catalog changes
+        id: commit
+        shell: bash
+        run: |
+          git add -- \
+            scripts/data/sigungu-codes.ts \
+            scripts/data/retired-reviews.json \
+            public/data/region-codes.meta.json \
+            public/data/kindergartens.json \
+            public/data/kindergartens.meta.json \
+            public/data/reviews.json \
+            public/data/reviews.meta.json \
+            public/data/reviews \
+            public/data/freshness.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "where-kindergarten-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "data: sync latest official kindergarten catalog"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Verify production data publication
+        id: publication
+        if: steps.commit.outputs.changed == 'true'
+        run: pnpm verify:data:production
+
+      - name: Write refresh summary
+        if: always()
+        shell: bash
+        run: |
+          echo "## Weekly official catalog refresh" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f public/data/freshness.json ]; then
+            node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('public/data/freshness.json', 'utf8'));
+          console.log(`- overall: ${data.overallStatus}`);
+          console.log(`- kindergartens: ${data.sources.kindergartens.totalCount}`);
+          console.log(`- reviews: ${data.sources.reviews.totalCount}`);
+          console.log(`- regions: ${data.sources.regionCodes.totalCount}`);
+          NODE
+          fi
+          echo "- committed: ${{ steps.commit.outputs.changed || 'false' }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- production publication: ${{ steps.publication.outcome || 'not required' }}" >> "$GITHUB_STEP_SUMMARY"

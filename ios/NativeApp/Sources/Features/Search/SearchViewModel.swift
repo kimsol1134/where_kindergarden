@@ -83,6 +83,7 @@ public final class SearchViewModel {
     /// 직전에 계측으로 보고한 검색이 결과를 가지고 있었는지. 빈 결과 화면 "전환"을 판정하는 데 쓴다.
     private var lastReportedSearchHadResults = false
     private var resultQuery: String
+    private var pendingDetailAnalyticsProperties: AnalyticsProperties?
     private var currentDeviceLocationTask: Task<Coordinates, Error>?
     private var currentDeviceLocationTaskID = 0
 
@@ -133,6 +134,7 @@ public final class SearchViewModel {
         self.kindergartenLookup = [:]
         self.searchText = searchText
         self.resultQuery = SearchQueryPolicy.normalizedQuery(searchText)
+        self.pendingDetailAnalyticsProperties = nil
         self.filters = filters
         self.localSearchSuggestions = []
         self.remoteSearchSuggestions = []
@@ -487,7 +489,7 @@ public final class SearchViewModel {
             rankPosition: rankPosition
         )
         analytics?.track(event: .resultTapped, properties: properties)
-        analytics?.track(event: .detailOpened, properties: properties)
+        pendingDetailAnalyticsProperties = properties
         selectedKindergarten = kindergarten
     }
 
@@ -523,6 +525,12 @@ public final class SearchViewModel {
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten, source: "detail") },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten, source: "detail") },
             onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() },
+            onDetailPresented: { [weak self] in
+                self?.trackDetailPresented(for: kindergarten)
+            },
+            onVacancyViewed: { [weak self] in
+                self?.trackVacancyViewed(for: kindergarten, source: "search_detail")
+            },
             onReviewLinkTapped: { [weak self] review in
                 self?.trackReviewLinkTapped(review, for: kindergarten)
             },
@@ -530,6 +538,35 @@ public final class SearchViewModel {
                 self?.trackReviewSubmitOpened(for: kindergarten)
             }
         )
+    }
+
+    private func trackDetailPresented(for kindergarten: Kindergarten) {
+        let properties: AnalyticsProperties
+        if case .string(let pendingID) = pendingDetailAnalyticsProperties?["kindercode"],
+           pendingID == kindergarten.kindercode {
+            properties = pendingDetailAnalyticsProperties ?? [:]
+        } else {
+            properties = kindergartenAnalyticsProperties(
+                for: kindergarten,
+                source: "detail",
+                rankPosition: nil
+            )
+        }
+        pendingDetailAnalyticsProperties = nil
+        analytics?.track(event: .detailOpened, properties: properties)
+    }
+
+    private func trackVacancyViewed(for kindergarten: Kindergarten, source: String) {
+        let summary = vacancy(for: kindergarten.kindercode)
+        analytics?.track(event: .vacancyViewed, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string(source),
+            "vacancy_count": .int(summary?.vacancyCount ?? 0),
+            "has_vacancy": .bool((summary?.vacancyCount ?? 0) > 0),
+            "data_version": .string(vacancyRepo.vacancyData?.version ?? "unknown"),
+            "load_state": .string(isVacancyLoading ? "loading" : (vacancyError == nil ? "loaded" : "error")),
+        ])
     }
 
     // MARK: - Compare & Favorite

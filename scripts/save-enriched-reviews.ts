@@ -11,12 +11,12 @@ interface ReviewLink {
   id: string;
   url: string;
   content?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface ReviewsData {
   reviews: Record<string, ReviewLink[]>;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 async function main() {

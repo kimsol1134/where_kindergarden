@@ -1,60 +1,225 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 20,
   "kindergartenCount": 4,
   "reviews": {
     "1ecec08c-ef43-b044-e053-0a32095ab044": [
       {
-        "id": "rev-6ac8490e",
+        "id": "rev-sns-wave744-1e63ab26",
         "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "부산 영일유치원 입학설명회 SNS",
-        "url": "https://www.instagram.com/p/DO-4ZDGkgBE/",
+        "title": "부산 영일유치원 지진해일 대피훈련 기록",
+        "url": "https://www.instagram.com/p/DaMzdeeEQpz/",
         "source": "other",
         "sourceName": "Instagram · 영일유치원",
-        "snippet": "영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "부산 영도구 영일유치원의 신입원아 입학설명회 SNS 정보.",
+        "snippet": "영일유치원이 유아와 교직원이 함께한 지진해일 대피훈련을 소개한 공개 게시물입니다.",
+        "summary": "부산 영도구 영일유치원의 지진해일 대피훈련을 확인할 수 있는 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "admission-briefing"
+          "disaster-drill",
+          "safety-education",
+          "busan"
         ],
-        "content": "영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 부산 영도구 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T17:05:00.000Z",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave744-1e63ab26",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMzdeeEQpz/",
+          "normalizedUrl": "instagram.com/p/damzdeeeqpz",
+          "normalizedText": "영일유치원 지진해일 대피훈련 유아 교직원",
+          "htmlSnapshotHash": "sns-wave744-1e63ab26",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMzdeeEQpz/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave744"
+      },
+      {
+        "id": "rev-d2c54449",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 특성화 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DA2xeBvyGme/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 특성화 과학놀이, 유치원과 가정 연계 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:35:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "1833204b",
+        "evidenceChecksum": "d2c54449",
         "structuredFields": {
           "kindergartenName": "영일유치원",
           "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DO-4ZDGkgBE%22+%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
+          "searchUrl": "https://www.google.com/search?q=%22DA2xeBvyGme%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8A%B9%EC%84%B1%ED%99%94%20%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 지역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DO-4ZDGkgBE/",
-          "normalizedUrl": "www.instagram.com/p/do-4zdgkgbe",
-          "normalizedText": "부산 영일유치원 입학설명회 sns 영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 instagram 검색 결과. 부산 영도구 영일유치원의 신입원아 입학설명회 sns 정보.",
-          "htmlSnapshotHash": "1833204b",
-          "extractedAt": "2026-06-30T17:05:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DA2xeBvyGme/",
+          "normalizedUrl": "instagram.com/p/da2xebvygme",
+          "normalizedText": "영일유치원 특성화 과학놀이 instagram post 검색 결과에서 영일유치원 특성화 과학놀이 유치원과 가정 연계 단서가 확인된다.",
+          "htmlSnapshotHash": "d2c54449",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-aae229df",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 씨앗폭탄 생태놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DWxwvsHkVbE/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 공립단설 영일유치원, 씨앗폭탄, 자연 친화 생태놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-play",
+          "nature-learning"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "aae229df",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWxwvsHkVbE/",
+          "normalizedUrl": "instagram.com/p/dwxwvshkvbe",
+          "normalizedText": "영일유치원 씨앗폭탄 생태놀이 instagram post 검색 결과에서 공립단설 영일유치원 씨앗폭탄 자연 친화 생태놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "aae229df",
+          "extractedAt": "2026-07-03T21:05:00.000Z",
           "structuredFields": {
             "kindergartenName": "영일유치원",
             "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DO-4ZDGkgBE%22+%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
+            "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 지역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T17:05:00.000Z",
+        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2df2f988",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 짐볼 체육놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DTSLUTlEY1D/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 특성화 체육놀이, 짐볼 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "after-school"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "2df2f988",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTSLUTlEY1D%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTSLUTlEY1D/",
+          "normalizedUrl": "instagram.com/p/dtslutley1d",
+          "normalizedText": "영일유치원 짐볼 체육놀이 instagram post 검색 결과에서 영일유치원 특성화 체육놀이 짐볼 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "2df2f988",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f5c041d6",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 트램펄린 달리기 체육놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DMg4Q45y_Rj/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 체육놀이, 트램펄린 달리기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "gross-motor"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f5c041d6",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DMg4Q45y_Rj%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8A%B8%EB%9E%A8%ED%8E%84%EB%A6%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 트램펄린 체육놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DMg4Q45y_Rj/",
+          "normalizedUrl": "instagram.com/p/dmg4q45y_rj",
+          "normalizedText": "영일유치원 트램펄린 달리기 체육놀이 instagram post 검색 결과에서 영일유치원 체육놀이 트램펄린 달리기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f5c041d6",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -166,55 +331,99 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-aae229df",
+        "id": "rev-6ac8490e",
         "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 씨앗폭탄 생태놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DWxwvsHkVbE/",
+        "title": "부산 영일유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DO-4ZDGkgBE/",
         "source": "other",
         "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 공립단설 영일유치원, 씨앗폭탄, 자연 친화 생태놀이 단서가 확인된다.",
+        "snippet": "영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "부산 영도구 영일유치원의 신입원아 입학설명회 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "ecology-play",
-          "nature-learning"
+          "admission-briefing"
         ],
+        "content": "영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 Instagram 검색 결과다. 기관명과 부산 영도구 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-07-03T21:05:00.000Z",
+        "collectedAt": "2026-06-30T17:05:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "aae229df",
+        "evidenceChecksum": "1833204b",
         "structuredFields": {
           "kindergartenName": "영일유치원",
           "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+          "searchUrl": "https://www.google.com/search?q=%22DO-4ZDGkgBE%22+%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 지역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DWxwvsHkVbE/",
-          "normalizedUrl": "instagram.com/p/dwxwvshkvbe",
-          "normalizedText": "영일유치원 씨앗폭탄 생태놀이 instagram post 검색 결과에서 공립단설 영일유치원 씨앗폭탄 자연 친화 생태놀이 단서가 확인된다.",
-          "htmlSnapshotHash": "aae229df",
-          "extractedAt": "2026-07-03T21:05:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DO-4ZDGkgBE/",
+          "normalizedUrl": "www.instagram.com/p/do-4zdgkgbe",
+          "normalizedText": "부산 영일유치원 입학설명회 sns 영일유치원 2026학년도 신입원아 입학설명회, 부산유치원, 영도유치원 문맥이 확인되는 instagram 검색 결과. 부산 영도구 영일유치원의 신입원아 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "1833204b",
+          "extractedAt": "2026-06-30T17:05:00.000Z",
           "structuredFields": {
             "kindergartenName": "영일유치원",
             "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWxwvsHkVbE%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%ED%83%9C%EB%86%80%EC%9D%B4%22",
+            "searchUrl": "https://www.google.com/search?q=%22DO-4ZDGkgBE%22+%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 공립단설 및 생태놀이 단서가 일치해 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 지역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T21:05:00.000Z",
+        "approvedAt": "2026-06-30T17:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ee88736b",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DY6J_MzETqu/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": "2026-05-28",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ee88736b",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6J_MzETqu%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DY6J_MzETqu/",
+          "normalizedUrl": "instagram.com/p/dy6j_mzetqu",
+          "normalizedText": "영일유치원 과학놀이 instagram post 검색 결과에서 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "ee88736b",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -270,6 +479,49 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
+        "id": "rev-c117f588",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 방과후 특성화 과학놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DXgds2XEbts/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 공립단설 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-play",
+          "after-school"
+        ],
+        "date": "2026-04-24",
+        "collectedAt": "2026-07-03T23:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c117f588",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgds2XEbts%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXgds2XEbts/",
+          "normalizedUrl": "instagram.com/p/dxgds2xebts",
+          "normalizedText": "영일유치원 방과후 특성화 과학놀이 instagram post 검색 결과에서 공립단설 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "c117f588",
+          "extractedAt": "2026-07-03T23:35:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
         "id": "rev-37d9858f",
         "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
         "title": "영일유치원 방과후 특성화 음악놀이 Instagram Post",
@@ -319,6 +571,135 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-944ef008",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 방과후 특성화 체육놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DW8eMvWEffa/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 방과후 특성화 체육놀이 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "after-school"
+        ],
+        "date": "2026-04-10",
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "944ef008",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DW8eMvWEffa%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%86%80%EC%9D%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육놀이 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DW8eMvWEffa/",
+          "normalizedUrl": "instagram.com/p/dw8emvweffa",
+          "normalizedText": "영일유치원 방과후 특성화 체육놀이 instagram post 검색 결과에서 영일유치원 방과후 특성화 체육놀이 단서가 확인된다.",
+          "htmlSnapshotHash": "944ef008",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1e9b9a21",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 체육수업 Instagram Post",
+        "url": "https://www.instagram.com/p/DTKJar9kxMO/",
+        "source": "other",
+        "sourceName": "Instagram · 체육수업",
+        "snippet": "검색 결과에서 부산 유치원 체육수업, 영일유치원, 배움과 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "gross-motor"
+        ],
+        "date": "2026-01-05",
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1e9b9a21",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTKJar9kxMO%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육수업 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTKJar9kxMO/",
+          "normalizedUrl": "instagram.com/p/dtkjar9kxmo",
+          "normalizedText": "영일유치원 체육수업 instagram post 검색 결과에서 부산 유치원 체육수업 영일유치원 배움과 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "1e9b9a21",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-831487ce",
+        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
+        "title": "영일유치원 장애물넘기 체육놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DCeg1VmSOTj/",
+        "source": "other",
+        "sourceName": "Instagram · 영일유치원",
+        "snippet": "검색 결과에서 영일유치원, 체육놀이, 장애물넘기 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-play",
+          "gross-motor"
+        ],
+        "date": "2024-11-17",
+        "collectedAt": "2026-07-03T15:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "831487ce",
+        "structuredFields": {
+          "kindergartenName": "영일유치원",
+          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DCeg1VmSOTj%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%A5%EC%95%A0%EB%AC%BC%EB%84%98%EA%B8%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 장애물넘기 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DCeg1VmSOTj/",
+          "normalizedUrl": "instagram.com/p/dceg1vmsotj",
+          "normalizedText": "영일유치원 장애물넘기 체육놀이 instagram post 검색 결과에서 영일유치원 체육놀이 장애물넘기 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "831487ce",
+          "extractedAt": "2026-07-03T15:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T15:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -372,387 +753,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T22:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-c117f588",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 방과후 특성화 과학놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DXgds2XEbts/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 공립단설 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "science-play",
-          "after-school"
-        ],
-        "date": "2026-04-24",
-        "collectedAt": "2026-07-03T23:35:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "c117f588",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXgds2XEbts%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DXgds2XEbts/",
-          "normalizedUrl": "instagram.com/p/dxgds2xebts",
-          "normalizedText": "영일유치원 방과후 특성화 과학놀이 instagram post 검색 결과에서 공립단설 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
-          "htmlSnapshotHash": "c117f588",
-          "extractedAt": "2026-07-03T23:35:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-ee88736b",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 과학놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DY6J_MzETqu/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 방과후 특성화 과학놀이 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "science-play",
-          "after-school"
-        ],
-        "date": "2026-05-28",
-        "collectedAt": "2026-07-03T23:35:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ee88736b",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DY6J_MzETqu%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DY6J_MzETqu/",
-          "normalizedUrl": "instagram.com/p/dy6j_mzetqu",
-          "normalizedText": "영일유치원 과학놀이 instagram post 검색 결과에서 영일유치원 방과후 특성화 과학놀이 단서가 확인된다.",
-          "htmlSnapshotHash": "ee88736b",
-          "extractedAt": "2026-07-03T23:35:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-d2c54449",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 특성화 과학놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DA2xeBvyGme/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 특성화 과학놀이, 유치원과 가정 연계 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "science-play",
-          "after-school"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:35:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "d2c54449",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DA2xeBvyGme%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8A%B9%EC%84%B1%ED%99%94%20%EA%B3%BC%ED%95%99%EB%86%80%EC%9D%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 과학놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DA2xeBvyGme/",
-          "normalizedUrl": "instagram.com/p/da2xebvygme",
-          "normalizedText": "영일유치원 특성화 과학놀이 instagram post 검색 결과에서 영일유치원 특성화 과학놀이 유치원과 가정 연계 단서가 확인된다.",
-          "htmlSnapshotHash": "d2c54449",
-          "extractedAt": "2026-07-03T23:35:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-2df2f988",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 짐볼 체육놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DTSLUTlEY1D/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 특성화 체육놀이, 짐볼 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-play",
-          "after-school"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T15:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "2df2f988",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DTSLUTlEY1D%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%86%80%EC%9D%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DTSLUTlEY1D/",
-          "normalizedUrl": "instagram.com/p/dtslutley1d",
-          "normalizedText": "영일유치원 짐볼 체육놀이 instagram post 검색 결과에서 영일유치원 특성화 체육놀이 짐볼 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "2df2f988",
-          "extractedAt": "2026-07-03T15:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T15:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-831487ce",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 장애물넘기 체육놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DCeg1VmSOTj/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 체육놀이, 장애물넘기 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-play",
-          "gross-motor"
-        ],
-        "date": "2024-11-17",
-        "collectedAt": "2026-07-03T15:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "831487ce",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DCeg1VmSOTj%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9E%A5%EC%95%A0%EB%AC%BC%EB%84%98%EA%B8%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 장애물넘기 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DCeg1VmSOTj/",
-          "normalizedUrl": "instagram.com/p/dceg1vmsotj",
-          "normalizedText": "영일유치원 장애물넘기 체육놀이 instagram post 검색 결과에서 영일유치원 체육놀이 장애물넘기 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "831487ce",
-          "extractedAt": "2026-07-03T15:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T15:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-944ef008",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 방과후 특성화 체육놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DW8eMvWEffa/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 방과후 특성화 체육놀이 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-play",
-          "after-school"
-        ],
-        "date": "2026-04-10",
-        "collectedAt": "2026-07-03T15:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "944ef008",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DW8eMvWEffa%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EB%86%80%EC%9D%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DW8eMvWEffa/",
-          "normalizedUrl": "instagram.com/p/dw8emvweffa",
-          "normalizedText": "영일유치원 방과후 특성화 체육놀이 instagram post 검색 결과에서 영일유치원 방과후 특성화 체육놀이 단서가 확인된다.",
-          "htmlSnapshotHash": "944ef008",
-          "extractedAt": "2026-07-03T15:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T15:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-f5c041d6",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 트램펄린 달리기 체육놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DMg4Q45y_Rj/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "검색 결과에서 영일유치원, 체육놀이, 트램펄린 달리기 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-play",
-          "gross-motor"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T15:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "f5c041d6",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DMg4Q45y_Rj%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%8A%B8%EB%9E%A8%ED%8E%84%EB%A6%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 트램펄린 체육놀이 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DMg4Q45y_Rj/",
-          "normalizedUrl": "instagram.com/p/dmg4q45y_rj",
-          "normalizedText": "영일유치원 트램펄린 달리기 체육놀이 instagram post 검색 결과에서 영일유치원 체육놀이 트램펄린 달리기 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "f5c041d6",
-          "extractedAt": "2026-07-03T15:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T15:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-1e9b9a21",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "영일유치원 체육수업 Instagram Post",
-        "url": "https://www.instagram.com/p/DTKJar9kxMO/",
-        "source": "other",
-        "sourceName": "Instagram · 체육수업",
-        "snippet": "검색 결과에서 부산 유치원 체육수업, 영일유치원, 배움과 체험 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-play",
-          "gross-motor"
-        ],
-        "date": "2026-01-05",
-        "collectedAt": "2026-07-03T15:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "1e9b9a21",
-        "structuredFields": {
-          "kindergartenName": "영일유치원",
-          "kindergartenAddress": "부산광역시 영도구 꿈나무길 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DTKJar9kxMO%22%20%22%EC%98%81%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B2%B4%EC%9C%A1%EC%88%98%EC%97%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영일유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 체육수업 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DTKJar9kxMO/",
-          "normalizedUrl": "instagram.com/p/dtkjar9kxmo",
-          "normalizedText": "영일유치원 체육수업 instagram post 검색 결과에서 부산 유치원 체육수업 영일유치원 배움과 체험 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "1e9b9a21",
-          "extractedAt": "2026-07-03T15:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T15:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave744-1e63ab26",
-        "kindergartenId": "1ecec08c-ef43-b044-e053-0a32095ab044",
-        "title": "부산 영일유치원 지진해일 대피훈련 기록",
-        "url": "https://www.instagram.com/p/DaMzdeeEQpz/",
-        "source": "other",
-        "sourceName": "Instagram · 영일유치원",
-        "snippet": "영일유치원이 유아와 교직원이 함께한 지진해일 대피훈련을 소개한 공개 게시물입니다.",
-        "summary": "부산 영도구 영일유치원의 지진해일 대피훈련을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "disaster-drill",
-          "safety-education",
-          "busan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave744-1e63ab26",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DaMzdeeEQpz/",
-          "normalizedUrl": "instagram.com/p/damzdeeeqpz",
-          "normalizedText": "영일유치원 지진해일 대피훈련 유아 교직원",
-          "htmlSnapshotHash": "sns-wave744-1e63ab26",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DaMzdeeEQpz/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave744"
       }
     ],
     "1ecec08c-f827-b044-e053-0a32095ab044": [
@@ -797,112 +797,6 @@
           ]
         },
         "evidenceChecksum": "9aa57e57"
-      }
-    ],
-    "1ecec08d-0b5a-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-b5a02112",
-        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
-        "title": "부산 영도 꿈나무유치원 단오활동 Instagram Post",
-        "url": "https://www.instagram.com/p/DZwz-AhiRt5/",
-        "source": "other",
-        "sourceName": "Instagram · 꿈나무유치원",
-        "snippet": "영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "dano"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T17:40:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "1dc5c40e",
-        "structuredFields": {
-          "kindergartenName": "꿈나무유치원",
-          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZwz-AhiRt5/",
-          "normalizedUrl": "www.instagram.com/p/dzwz-ahirt5",
-          "normalizedText": "부산 영도 꿈나무유치원 단오활동 instagram post 영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "1dc5c40e",
-          "extractedAt": "2026-07-02T17:40:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "꿈나무유치원",
-            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T17:40:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-13637eea",
-        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
-        "kindergartenName": "꿈나무유치원",
-        "title": "부산 영도 꿈나무유치원 소방안전교육 Instagram Post",
-        "url": "https://www.instagram.com/p/DWVzA13iXwN/",
-        "source": "other",
-        "sourceName": "Instagram · 꿈나무유치원",
-        "snippet": "영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "fire-safety",
-          "safety-education"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T18:20:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "9dc15ae9",
-        "structuredFields": {
-          "kindergartenName": "꿈나무유치원",
-          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DWVzA13iXwN/",
-          "normalizedUrl": "www.instagram.com/p/dwvza13ixwn",
-          "normalizedText": "부산 영도 꿈나무유치원 소방안전교육 instagram post 영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "9dc15ae9",
-          "extractedAt": "2026-07-02T18:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "꿈나무유치원",
-            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T18:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-00c9-b044-e053-0a32095ab044": [
@@ -955,6 +849,112 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T00:25:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0b5a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-13637eea",
+        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
+        "kindergartenName": "꿈나무유치원",
+        "title": "부산 영도 꿈나무유치원 소방안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWVzA13iXwN/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈나무유치원",
+        "snippet": "영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T18:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "9dc15ae9",
+        "structuredFields": {
+          "kindergartenName": "꿈나무유치원",
+          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWVzA13iXwN/",
+          "normalizedUrl": "www.instagram.com/p/dwvza13ixwn",
+          "normalizedText": "부산 영도 꿈나무유치원 소방안전교육 instagram post 영도꿈나무유치원 계정의 소방안전교육 게시물 검색 결과에서 항만소방서와 함께 대처법을 알아본 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "9dc15ae9",
+          "extractedAt": "2026-07-02T18:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈나무유치원",
+            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWVzA13iXwN%22%20%22%EC%98%81%EB%8F%84%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "영도꿈나무유치원·영도유치원 단서가 로컬 부산 영도 꿈나무유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T18:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b5a02112",
+        "kindergartenId": "1ecec08d-0b5a-b044-e053-0a32095ab044",
+        "title": "부산 영도 꿈나무유치원 단오활동 Instagram Post",
+        "url": "https://www.instagram.com/p/DZwz-AhiRt5/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈나무유치원",
+        "snippet": "영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dano"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T17:40:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "1dc5c40e",
+        "structuredFields": {
+          "kindergartenName": "꿈나무유치원",
+          "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZwz-AhiRt5/",
+          "normalizedUrl": "www.instagram.com/p/dzwz-ahirt5",
+          "normalizedText": "부산 영도 꿈나무유치원 단오활동 instagram post 영도유치원, 꿈나무유치원 해시태그와 단오날 의미를 알고 연꽃 머리띠를 만드는 단오활동 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "1dc5c40e",
+          "extractedAt": "2026-07-02T17:40:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "꿈나무유치원",
+            "kindergartenAddress": "부산광역시 영도구 남항새싹길 81",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZwz-AhiRt5%22+%22%EC%98%81%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%BF%88%EB%82%98%EB%AC%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%8B%A8%EC%98%A4%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "꿈나무유치원 동명이 있으나 영도유치원 단서가 부산 영도구 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T17:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ]

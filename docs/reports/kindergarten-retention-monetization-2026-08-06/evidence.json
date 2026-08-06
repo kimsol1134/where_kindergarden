@@ -1,0 +1,157 @@
+{
+  "snapshot_date": "2026-08-06",
+  "timezone": "Asia/Seoul",
+  "decision": "유치원 탐색 시즌 유입을 반복 사용과 신뢰 기반 수익으로 전환하기 위한 12주 우선순위 결정",
+  "asc_sales_report": {
+    "definition": "App Store Connect Sales Report의 일별 Units를 설치 근사치로 사용",
+    "current_period": {
+      "start": "2026-07-25",
+      "end": "2026-08-03",
+      "days": 10,
+      "total": 69,
+      "mean": 6.9,
+      "median": 3.5,
+      "min": 1,
+      "max": 33,
+      "daily": [
+        {"date": "2026-07-25", "installs": 33},
+        {"date": "2026-07-26", "installs": 12},
+        {"date": "2026-07-27", "installs": 4},
+        {"date": "2026-07-28", "installs": 2},
+        {"date": "2026-07-29", "installs": 3},
+        {"date": "2026-07-30", "installs": 5},
+        {"date": "2026-07-31", "installs": 5},
+        {"date": "2026-08-01", "installs": 3},
+        {"date": "2026-08-02", "installs": 1},
+        {"date": "2026-08-03", "installs": 1}
+      ]
+    },
+    "comparison_period": {
+      "start": "2026-07-04",
+      "end": "2026-07-13",
+      "days": 10,
+      "total": 51,
+      "mean": 5.1,
+      "median": 2.0,
+      "min": 1,
+      "max": 31,
+      "daily": [
+        {"date": "2026-07-04", "installs": 4},
+        {"date": "2026-07-05", "installs": 1},
+        {"date": "2026-07-06", "installs": 1},
+        {"date": "2026-07-07", "installs": 31},
+        {"date": "2026-07-08", "installs": 3},
+        {"date": "2026-07-09", "installs": 1},
+        {"date": "2026-07-10", "installs": 2},
+        {"date": "2026-07-11", "installs": 2},
+        {"date": "2026-07-12", "installs": 4},
+        {"date": "2026-07-13", "installs": 2}
+      ]
+    },
+    "calculated_change": {
+      "total_pct": 35.2941176471,
+      "median_pct": 75.0
+    },
+    "quality_notes": [
+      "두 비교 구간은 각각 10일 연속 관측으로 완전하다.",
+      "각 구간에 하루 급증치 33건과 31건이 있어 합계만으로 지속 성장이라 단정하지 않는다.",
+      "2026-07-21부터 2026-07-23까지 자동 수집 실패가 있었으나 두 비교 구간에는 포함하지 않았다.",
+      "Sales Report Units는 순수 최초 설치와 재다운로드를 완전히 분리하지 못할 수 있다."
+    ]
+  },
+  "mixpanel_baseline": {
+    "source_date": "2026-06-28",
+    "window": "2026-05-29 to 2026-06-28",
+    "active_users": 50,
+    "funnel": [
+      {"step": "App Launched", "users": 51, "step_conversion_pct": 100.0},
+      {"step": "Search Executed", "users": 51, "step_conversion_pct": 100.0},
+      {"step": "Result Tapped", "users": 40, "step_conversion_pct": 78.43},
+      {"step": "Detail Opened", "users": 40, "step_conversion_pct": 100.0},
+      {"step": "Comparison Added", "users": 9, "step_conversion_pct": 22.5},
+      {"step": "Compare Viewed", "users": 8, "step_conversion_pct": 88.89},
+      {"step": "Compare Shared", "users": 0, "step_conversion_pct": 0.0}
+    ],
+    "current_discovery_on_2026_08_06": {
+      "project_id": "4014822",
+      "project_name": "kindegarden",
+      "workspace": "All Project Data",
+      "app_versions_seen": ["2.2.3", "2.2.4"],
+      "is_testflight_values": [false],
+      "events_confirmed": [
+        "App Launched",
+        "Search Executed",
+        "Result Tapped",
+        "Detail Opened",
+        "Favorite Added",
+        "Comparison Added",
+        "Compare Viewed",
+        "Compare Shared",
+        "Review Prompt Triggered"
+      ],
+      "live_query_status": "RateLimitError after schema and top-event discovery; no fresh full funnel or retention result used"
+    },
+    "quality_notes": [
+      "6월 퍼널은 방향을 잡는 기준선이며 8월 현재 성과를 나타내는 최신값은 아니다.",
+      "비교 공유 UI 오류는 6월 28일 수정됐으므로 당시 공유 0건을 현재 기능 실패로 해석하지 않는다.",
+      "Search Executed 디바운스가 2026-07-25 도입되어 전후 이벤트 총량은 직접 비교하지 않는다."
+    ]
+  },
+  "product_data": {
+    "kindergartens": 7950,
+    "reviews": {
+      "version": "2026-07-26",
+      "links": 6304,
+      "kindergartens_covered": 1972,
+      "coverage_pct": 24.8050314465
+    },
+    "vacancy": {
+      "version": "2026-03-17T13:05:32.010Z",
+      "source": "go-firstschool.go.kr/PAMS_SS",
+      "kindergartens_covered": 2753,
+      "coverage_pct": 34.6289308176,
+      "positive_vacancy_kindergartens": 2115,
+      "positive_coverage_pct": 26.6037735849
+    },
+    "released_capabilities": [
+      "로그인 없이 위치·주소 기반 검색",
+      "찜 및 최근 검색 로컬 영속 저장",
+      "최대 3곳 비교와 가족 공유",
+      "후기 링크 및 신뢰 신호",
+      "공식 결원 스냅샷 표시",
+      "비교표의 상담 확인 질문",
+      "가치 경험 뒤 App Store 리뷰 요청"
+    ],
+    "positioning": "광고 없음, 회원가입 없음, 공식 데이터와 출처가 있는 후기 중심"
+  },
+  "data_quality_assessment": [
+    {
+      "finding": "최근 설치 상승 신호",
+      "severity": "medium",
+      "confidence": "medium",
+      "decision_use": "유입 확대를 제품 실험 트래픽으로 활용 가능",
+      "constraint": "두 기간 모두 하루 급증치가 있어 지속 성장률 예측에는 부적합"
+    },
+    {
+      "finding": "최신 리텐션 기준선 부재",
+      "severity": "high",
+      "confidence": "high",
+      "decision_use": "수익화 출시 전 D7/W2 코호트 재측정 필요",
+      "constraint": "8월 전체 퍼널과 리텐션은 Mixpanel 속도 제한으로 이번 스냅샷에 포함하지 못함"
+    },
+    {
+      "finding": "결원 데이터 신선도 부족",
+      "severity": "critical_for_paid_alerts",
+      "confidence": "high",
+      "decision_use": "결원 알림은 데이터 갱신 SLA가 갖춰질 때까지 유료화 금지",
+      "constraint": "2026-03-17 버전으로 2026-08-06 시점의 실시간성을 보장하지 못함"
+    },
+    {
+      "finding": "후기 기관 커버리지 24.8%",
+      "severity": "medium",
+      "confidence": "high",
+      "decision_use": "전국 일괄 약속보다 후기 보유 지역·기관에서 가치 제안을 강화",
+      "constraint": "후기 링크 수와 후기 품질·최신성은 동일한 지표가 아님"
+    }
+  ]
+}

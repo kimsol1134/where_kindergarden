@@ -80,6 +80,12 @@ public final class SavedViewModel {
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
             onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) },
             onNavigateToCompare: { [weak self] in self?.navigateFromDetailToCompare() },
+            onDetailPresented: { [weak self] in
+                self?.trackDetailPresented(for: kindergarten)
+            },
+            onVacancyViewed: { [weak self] in
+                self?.trackVacancyViewed(for: kindergarten)
+            },
             onReviewLinkTapped: { [weak self] review in
                 self?.trackReviewLinkTapped(review, for: kindergarten)
             },
@@ -90,6 +96,31 @@ public final class SavedViewModel {
     }
 
     // MARK: - Review Engagement
+
+    private func trackDetailPresented(for kindergarten: Kindergarten) {
+        analytics?.track(event: .detailOpened, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "kindergarten_type": .string(kindergarten.type.rawValue),
+            "source": .string("saved"),
+            "has_reviews": .bool(!reviewRepo.reviews(for: kindergarten.kindercode).isEmpty),
+            "review_count": .int(reviewRepo.reviews(for: kindergarten.kindercode).count),
+            "has_vacancy": .bool((vacancyRepo?.vacancyCount(for: kindergarten.kindercode) ?? 0) > 0),
+        ])
+    }
+
+    private func trackVacancyViewed(for kindergarten: Kindergarten) {
+        let vacancyCount = vacancyRepo?.vacancyCount(for: kindergarten.kindercode) ?? 0
+        analytics?.track(event: .vacancyViewed, properties: [
+            "kindergarten_id": .string(kindergarten.kindercode),
+            "kindercode": .string(kindergarten.kindercode),
+            "source": .string("saved_detail"),
+            "vacancy_count": .int(vacancyCount),
+            "has_vacancy": .bool(vacancyCount > 0),
+            "data_version": .string(vacancyRepo?.vacancyData?.version ?? "unknown"),
+            "load_state": .string(vacancyRepo?.isLoading == true ? "loading" : (vacancyRepo?.error == nil ? "loaded" : "error")),
+        ])
+    }
 
     func trackReviewLinkTapped(_ review: ReviewLink, for kindergarten: Kindergarten) {
         analytics?.track(event: .reviewLinkTapped, properties: [

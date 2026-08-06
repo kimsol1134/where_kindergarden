@@ -1,0 +1,327 @@
+{
+  "version": "2026-08-06",
+  "totalCount": 8,
+  "kindergartenCount": 4,
+  "reviews": {
+    "1ecec08c-f0b5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-de187273",
+        "kindergartenId": "1ecec08c-f0b5-b044-e053-0a32095ab044",
+        "title": "목포 일오삼유치원 행사 Instagram",
+        "url": "https://www.instagram.com/p/DQftrOfEkMi/",
+        "source": "other",
+        "sourceName": "Instagram · 목포 일오삼유치원",
+        "snippet": "Instagram 검색 결과에서 목포유치원, 일오삼유치원, 유치원 행사 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "b81a1a8f",
+        "structuredFields": {
+          "kindergartenName": "일오삼유치원",
+          "kindergartenAddress": "전라남도 목포시 원산중앙로 110",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQftrOfEkMi%22+%22%EB%AA%A9%ED%8F%AC%EC%9D%BC%EC%98%A4%EC%82%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQftrOfEkMi/",
+          "normalizedUrl": "www.instagram.com/p/dqftrofekmi",
+          "normalizedText": "목포 일오삼유치원 행사 instagram instagram 검색 결과에서 목포유치원, 일오삼유치원, 유치원 행사 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "b81a1a8f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "일오삼유치원",
+            "kindergartenAddress": "전라남도 목포시 원산중앙로 110",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQftrOfEkMi%22+%22%EB%AA%A9%ED%8F%AC%EC%9D%BC%EC%98%A4%EC%82%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f260-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave688-98b5f555",
+        "kindergartenId": "1ecec08c-f260-b044-e053-0a32095ab044",
+        "title": "목포 한나숲유치원 자연 놀이 기록",
+        "url": "https://www.instagram.com/p/CcwkEkQrntb/",
+        "source": "other",
+        "sourceName": "Instagram · 한나숲유치원",
+        "snippet": "목포 한나숲유치원이 아이들의 자연 친화 활동과 바깥 놀이 장면을 소개한 공개 게시물입니다.",
+        "summary": "자연 친화 교육과 바깥 놀이 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature-play",
+          "outdoor-play",
+          "mokpo"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:57.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave688-98b5f555",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CcwkEkQrntb/",
+          "normalizedUrl": "instagram.com/p/ccwkekqrntb",
+          "normalizedText": "목포 한나숲유치원 자연 친화 활동 바깥놀이",
+          "htmlSnapshotHash": "sns-wave688-98b5f555",
+          "extractedAt": "2026-07-03T23:59:57.000Z",
+          "sourcePageUrl": "https://www.instagram.com/p/CcwkEkQrntb/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:57.000Z",
+        "approvedBy": "codex-manual-sns-wave688"
+      },
+      {
+        "id": "rev-452921cf",
+        "kindergartenId": "1ecec08c-f260-b044-e053-0a32095ab044",
+        "title": "목포 한나숲유치원 유치원 생활 Instagram",
+        "url": "https://www.instagram.com/p/DODoYO_D5dF/",
+        "source": "other",
+        "sourceName": "Instagram · 한나숲유치원",
+        "snippet": "Instagram 검색 결과에서 한나숲유치원 인형극 관람과 목포 숲유치원 생활 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-life",
+          "performance"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "53c37857",
+        "structuredFields": {
+          "kindergartenName": "한나숲유치원",
+          "kindergartenAddress": "전라남도 목포시 부흥로 102",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DODoYO_D5dF%22+%22%ED%95%9C%EB%82%98%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DODoYO_D5dF/",
+          "normalizedUrl": "www.instagram.com/p/dodoyo_d5df",
+          "normalizedText": "목포 한나숲유치원 유치원 생활 instagram instagram 검색 결과에서 한나숲유치원 인형극 관람과 목포 숲유치원 생활 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "53c37857",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한나숲유치원",
+            "kindergartenAddress": "전라남도 목포시 부흥로 102",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DODoYO_D5dF%22+%22%ED%95%9C%EB%82%98%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-ff14-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-9a1545c6",
+        "kindergartenId": "1ecec08c-ff14-b044-e053-0a32095ab044",
+        "title": "목포 남악 유치원 이지차일드 몬테소리 유치원상담",
+        "url": "https://blog.naver.com/PostView.naver?blogId=imgood_eng&logNo=223638906660",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "이지차일드유치원 전라남도 목포시 당가두로38번길 4 이지차일드유치원 이 블로그의 체크인 이 장소의 다른 글 #이지차일드유치원#목포몬테소리유치원#목포 노엘 유치원 ㅋㅋㅋㅋㅋㅋ우리 베이비 유치원 상담 하러 유치원 투어이지차일드 참여수업 신청해서 듣고 저번에 설명회 못들어서 설명회 들으러 왔답니다 ㅋㅋㅋ #브로드윅영어3세반 교재도 봐보고들을때 혹 했던ㅋㅋㅋ원어민 영어 유치부 ㅋㅋㅋㅋㅋㅋㅋㅋ이지를...",
+        "summary": "이지차일드유치원 전라남도 목포시 당가두로38번길 4 이지차일드유치원 이 블로그의 체크인 이 장소의 다른 글 #이지차일드유치원#목포몬테소리유치원#목포 노엘 유치원 ㅋㅋㅋㅋㅋㅋ우리 베이비 유치원 상담 하러 유치원 투어이지차일드 참여수업 신청해서 듣고 저번에 설명회 못들어서 설명회 들으러 왔답니다 ㅋㅋㅋ #브로드윅영어3세반 교재도 봐보고들을때 혹 했던ㅋㅋㅋ원어민 영어 유치부 ㅋㅋㅋㅋㅋㅋㅋㅋ이지를 보낸다면 원어민 보내고싶은 마음 …있음ㅋㅋㅋㅋㅋㅋㅋㅋ 엄마들이 많이 찍음 ㅋㅋㅋ교육비안내ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 그리고 급하게 다녀온 #몬테소리갈생각없었는데언니가 다 돌아다녀보라면서 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ#목포몬테소리유치원가자마자 건물도 좋고선생님들도...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T15:50:56.679Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "21a5996c",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=imgood_eng&logNo=223638906660",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=imgood_eng&logno=223638906660",
+          "normalizedText": "목포 남악 유치원 이지차일드 몬테소리 유치원상담 30 이지차일드유치원 전라남도 목포시 당가두로38번길 4 이지차일드유치원 이 블로그의 체크인 이 장소의 다른 글 #이지차일드유치원#목포몬테소리유치원#목포 노엘 유치원 ㅋㅋㅋㅋㅋㅋ우리 베이비 유치원 상담 하러 유치원 투어이지차일드 참여수업 신청해서 듣고 저번에 설명회 못들어서 설명회 들으러 왔답니다 ㅋㅋㅋ #브로드윅영어3세반 교재도 봐보고들을때 혹 했던ㅋㅋㅋ원어민 영어 유치부 ㅋㅋㅋㅋㅋㅋㅋㅋ이지를... 이지차일드유치원 전라남도 목포시 당가두로38번길 4 이지차일드유치원 이 블로그의 체크인 이 장소의 다른 글 #이지차일드유치원#목포몬테소리유치원#목포 노엘 유치원 ㅋㅋㅋㅋㅋㅋ우리 베이비 유치원 상담 하러 유치원 투어이지차일드 참여수업 신청해서 듣고 저번에 설명회 못들어서 설명회 들으러 왔답니다 ㅋㅋㅋ #브로드윅영어3세반 교재도 봐보고들을때 혹 했던ㅋㅋㅋ원어민 영어 유치부 ㅋㅋㅋㅋㅋㅋㅋㅋ이지를 보낸다면 원어민 보내고싶은 마음 …있음ㅋㅋㅋㅋㅋㅋㅋㅋ 엄마들이 많이 찍음 ㅋㅋㅋ교육비안내ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 그리고 급하게 다녀온 #몬테소리갈생각없었는데언니가 다 돌아다녀보라면서 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ#목포몬테소리유치원가자마자 건물도 좋고선생님들도... 이지차일드유치원 전라남도 목포시 당가두로38번길 4 이지차일드유치원 이 블로그의 체크인 이 장소의 다른 글 #이지차일드유치원#목포몬테소리유치원#목포 노엘 유치원 ㅋㅋㅋㅋㅋㅋ우리 베이비 유치원 상담 하러 유치원 투어이지차일드 참여수업 신청해서 듣고 저번에 설명회 못들어서 설명회 들으러 왔답니다 ㅋㅋㅋ #브로드윅영어3세반 교재도 봐보고들을때 혹 했던ㅋㅋㅋ원어민 영어 유치부 ㅋㅋㅋㅋㅋㅋㅋㅋ이지를 보낸다면 원어민 보내고싶은 마음 …있음ㅋㅋㅋㅋㅋㅋㅋㅋ 엄마들이 많이 찍음 ㅋㅋㅋ교육비안내ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 그리고 급하게 다녀온 #몬테소리갈생각없었는데언니가 다 돌아다녀보라면서 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ#목포몬테소리유치원가자마자 건물도 좋고선생님들도 너무 좋고또 혹헀다 ㅋㅋㅋㅋㅋㅋㅋㅋ들으면 다 혹함ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ저는 그냥 몬테소리는 ............안가기로 했다!ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ그래도 건물은 좋고 선생님들도 좋아요 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ그리고 노엘도 담날 갔는데넘 좋았다사진1도 안찍다니원장님 정말 좋았고아이들 사랑하는게 느껴짐 지금 베이비가 작은 원에 다녀서ㅠㅠ포기했습니다 ㅠㅠ아숩! ****유치원은 설명회 직접 들어보시고결정해주세요🙏🏻 저도 다 돌아보고 가장 마음에 드는곳결정!",
+          "htmlSnapshotHash": "21a5996c",
+          "extractedAt": "2026-06-29T15:50:56.679Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EC%A7%80%EC%B0%A8%EC%9D%BC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%AA%A9%ED%8F%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "이지차일드유치원",
+            "kindergartenAddress": "전라남도 목포시 당가두로38번길 4",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EC%A7%80%EC%B0%A8%EC%9D%BC%EB%93%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%AA%A9%ED%8F%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0c71-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave673-a765c09e",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 고구마심기 텃밭놀이 기록",
+        "url": "https://www.instagram.com/reel/DYg_CckRLuG/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "목포 해바라기유치원이 유치원 텃밭에서 감자와 고구마를 심어본 자연놀이 활동을 소개한 공개 릴스입니다.",
+        "summary": "씨감자와 고구마 줄기를 살펴보며 작물의 성장을 배우는 텃밭 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "nature",
+          "garden",
+          "planting"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T20:35:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave673-a765c09e",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYg_CckRLuG/",
+          "normalizedUrl": "instagram.com/reel/dyg_cckrlug",
+          "normalizedText": "목포해바라기유치원 자연놀이 고구마심기 텃밭놀이 감자심기",
+          "htmlSnapshotHash": "sns-wave673-a765c09e",
+          "extractedAt": "2026-07-03T20:35:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYg_CckRLuG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T20:35:00.000Z",
+        "approvedBy": "codex-manual-sns-wave673"
+      },
+      {
+        "id": "rev-535f171e",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DLgMMHPBcnA/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "Instagram 검색 결과에서 목포해바라기 유치원 부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "0984d15f",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "전라남도 목포시 양을로41번길 40",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLgMMHPBcnA%22+%22%EB%AA%A9%ED%8F%AC%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DLgMMHPBcnA/",
+          "normalizedUrl": "www.instagram.com/p/dlgmmhpbcna",
+          "normalizedText": "목포 해바라기유치원 부모참여수업 instagram instagram 검색 결과에서 목포해바라기 유치원 부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "0984d15f",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "전라남도 목포시 양을로41번길 40",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLgMMHPBcnA%22+%22%EB%AA%A9%ED%8F%AC%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a847c864",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "목포 해바라기유치원 행사 Instagram",
+        "url": "https://www.instagram.com/p/DL_fGGPh6BG/",
+        "source": "other",
+        "sourceName": "Instagram · 목포해바라기유치원",
+        "snippet": "Instagram 검색 결과에서 목포해바라기유치원과 교내 행사 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "084a3199",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "전라남도 목포시 양을로41번길 40",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DL_fGGPh6BG%22+%22%EB%AA%A9%ED%8F%AC%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DL_fGGPh6BG/",
+          "normalizedUrl": "www.instagram.com/p/dl_fggph6bg",
+          "normalizedText": "목포 해바라기유치원 행사 instagram instagram 검색 결과에서 목포해바라기유치원과 교내 행사 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "084a3199",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "전라남도 목포시 양을로41번길 40",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DL_fGGPh6BG%22+%22%EB%AA%A9%ED%8F%AC%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1326-qies",
+        "kindergartenId": "1ecec08d-0c71-b044-e053-0a32095ab044",
+        "title": "오늘과 내일을 함께 그리다/ 목포연산동해바라기유치원",
+        "url": "https://blog.naver.com/sunfloweredu/224049811326",
+        "source": "naver_blog",
+        "sourceName": "창의인성전문교육 목포 해바라기유치원",
+        "snippet": "상담후 후기 목포연산동해바라기유치원-학부모상담 해바라기유치원은 해바라기 꽃이다. 왜냐하면 밝고 긍정적인 에너지를 주는 아이들이 해바라기 유치원의 사랑, 교육을 듬뿍 받고 어느새 키도 해바라기 꽃과...",
+        "date": "2025-10-22",
+        "collectedAt": "2026-02-18T06:13:58.467Z",
+        "relevanceScore": 7
+      }
+    ]
+  }
+}

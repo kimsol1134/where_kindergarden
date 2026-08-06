@@ -1,8 +1,135 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 10,
-  "kindergartenCount": 8,
+  "version": "2026-08-06",
+  "totalCount": 14,
+  "kindergartenCount": 12,
   "reviews": {
+    "1ecec08c-eec3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e13e56e5",
+        "kindergartenId": "1ecec08c-eec3-b044-e053-0a32095ab044",
+        "kindergartenName": "사랑유치원",
+        "title": "안산 사랑유치원 별망어촌문화관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/DLAJCMiJHNT/",
+        "source": "other",
+        "sourceName": "Instagram · 안산사랑유치원",
+        "snippet": "Instagram 검색 결과에서 안산사랑유치원 안산별망어촌문화관 견학과 안산·선부동 지역 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "사랑유치원",
+          "kindergartenAddress": "경기도 안산시 단원구 선부광장북로 67",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLAJCMiJHNT%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EC%82%B0%EB%B3%84%EB%A7%9D%EC%96%B4%EC%B4%8C%EB%AC%B8%ED%99%94%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DLAJCMiJHNT/",
+          "regionEvidence": [
+            "안산유치원",
+            "선부동유치원",
+            "안산사랑유치원",
+            "경기도 안산시 단원구 선부광장북로 67"
+          ]
+        },
+        "evidenceChecksum": "d8140089"
+      }
+    ],
+    "1ecec08c-f17f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852324",
+        "title": "안산 원곡유치원 VR 체험 후기",
+        "url": "https://blog.naver.com/edu4meta/223665402745",
+        "source": "naver_blog",
+        "sourceName": "사람과미래연구소",
+        "snippet": "이번에 안산 원곡유치원에서 3 ~ 5세를 대상으로 진행된 VR 체험에 다녀왔습니다. 아이들이 상상의... 총평  안산 원곡유치원의 VR 체험은 정말 알차고 다양한 콘텐츠로 가득했어요. 아이들이 좋아하는 동물...",
+        "date": "2024-11-18",
+        "collectedAt": "2026-01-30T03:01:18.789Z",
+        "kindergartenId": "1ecec08c-f17f-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-f36f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5322284d",
+        "kindergartenId": "1ecec08c-f36f-b044-e053-0a32095ab044",
+        "title": "RE우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^",
+        "url": "https://cafe.naver.com/doorkong/3474020?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6ImRvb3Jrb25nIiwiYXJ0aWNsZUlkIjozNDc0MDIwLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk4MzI0Nn0.HXNFdDmnwM4vgvKRa7rJIdk7DManeeOqvNaYS3HPD4s",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "안산 시흥 맘 모여라2024.11.11.Keep에 저장Keep에 바로가기초지동 나래유치원,중앙유치원내년에 유치원에 보내야하는 입장인데 10월 중순에 둘째를 출산하게되어 입학설명회를 놓쳤네요.. 어머님들께 정보를 얻고자 글남겨 봅니다 활동량이 많은 남아 이구요.. 초지동 나래유치원과 중앙유치원 추천부탁드려요 놀이나 다양한 활동이 많았으면 좋겠어요 미리 감사합니다 :)RE저희 첫째, 둘째 아들 둘다 나래졸업했는데 견학이나 숲체험같...",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:13:03.809Z",
+        "relevanceScore": 10,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "70f5013f",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/doorkong/3474020?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6ImRvb3Jrb25nIiwiYXJ0aWNsZUlkIjozNDc0MDIwLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk4MzI0Nn0.HXNFdDmnwM4vgvKRa7rJIdk7DManeeOqvNaYS3HPD4s",
+          "normalizedUrl": "cafe.naver.com/doorkong/3474020?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6imrvb3jrb25niiwiyxj0awnszulkijozndc0mdiwlcjpc3n1zwrbdci6mtc4mjq1nzk4mzi0nn0.hxnfddmnwm4vgvkra7rjidk7dmaneeoqvnays3hpd4s",
+          "normalizedText": "re우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^ re우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^ 안산 시흥 맘 모여라2024.11.11.keep에 저장keep에 바로가기초지동 나래유치원,중앙유치원내년에 유치원에 보내야하는 입장인데 10월 중순에 둘째를 출산하게되어 입학설명회를 놓쳤네요.. 어머님들께 정보를 얻고자 글남겨 봅니다 활동량이 많은 남아 이구요.. 초지동 나래유치원과 중앙유치원 추천부탁드려요 놀이나 다양한 활동이 많았으면 좋겠어요 미리 감사합니다 :)re저희 첫째, 둘째 아들 둘다 나래졸업했는데 견학이나 숲체험같...",
+          "htmlSnapshotHash": "70f5013f",
+          "extractedAt": "2026-06-26T07:13:03.809Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "structuredFields": {
+            "kindergartenName": "나래유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 화정천서로 161",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "accessMode": "login"
+          }
+        }
+      },
+      {
+        "id": "rev-aced7ef5",
+        "kindergartenId": "1ecec08c-f36f-b044-e053-0a32095ab044",
+        "title": "안산 사동유치원 나래유치원 선택 이유 5가지",
+        "url": "https://blog.naver.com/PostView.naver?blogId=naraikid12&logNo=224003713620",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는...",
+        "summary": "안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:13:00.098Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "215e3f44",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=naraikid12&logNo=224003713620",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=naraikid12&logno=224003713620",
+          "normalizedText": "안산 사동유치원 나래유치원 선택 이유 5가지 나래유치원은 아이들이 즐겁게 다닌다는 후기가 많고 교사들이 따뜻하고 세심하다는 평을 받고 있습니다. 아이 한 명, 한 명을 존중하고 살펴주는 분위기 덕분에 사동뿐 아니라 인근 지역에서도 꾸준히 입소문이 나고 있습니다. 마무리 아이에게 맞는 유치원을 고르는 일은 부모님의 큰 고민이지만 안산 사동유치원 나래유치원은 안전한 통학, 다양한 프로그램, 놀이 중심... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와 cctv가 설치되어 있으며전담 교사가 탑승해 아이들을 꼼꼼히 챙겨줍니다.이 덕분에 부모님들은 안심할 수 있고아이들도 편리하게 유치원을 오갈 수 있습니다. 2. 다양한 특성화 수업나래유치원은 기본 교육과정 외에도아이들의 흥미와 재능을 키워주는 여러 특성화 활동을 운영합니다.이야기할머니 무릎교실에서는 전래동화와 옛이야기를 들으며상상력과 언어 감각을 기르고 정서적으로 따뜻함을 느낄 수 있습니다.뮤직테라피 수업은 음악을 듣고 몸으로 표현하거나 악기를 연주하면서창의성과 감수성을 풍부하게 키워 줍니다.또한 숲 체험 활동을 통해 자연과 교감하며계절의 변화를 직접 경험하고 탐구심을 기를 수 있습니다. 3. 놀이 중심 교육 철학나래유치원은 결과 위주의 주입식 교육보다놀이와 체험을 통해 배우는 과정을 중요하게 생각합니다.예를 들어 계절 주제를 정해 해바라기를 직접 심고 자라는 모습을 관찰하면서과학적 탐구심을 키우는 동시에 관련 미술과 노래 활동으로 자연스럽게 확장합니다.이런 수업 방식은 아이가 스스로 질문하고 탐구하는 힘을 길러 주며무엇보다 배우는 과정 자체가 즐겁게 느껴지도록 만듭니다. 4. 학부모와의 소통 강화부모님들이 가장 궁금해하는 것은“우리 아이가 유치원에서 잘 지내고 있을까?”라는 부분일 것입니다.나래유치원은 정기 상담을 통해 아이의 생활을 알려주고사진과 영상을 공유하여 학부모가 안심할 수 있도록 합니다.아이의 성향과 발달 과정을 세세히 피드백해 주기 때문에가정에서도 연계 교육이 가능하다는 장점이 있습니다. 5. 지역 학부모들의 신뢰무엇보다 중요한 건 학부모들의 실제 경험에서 비롯된 신뢰입니다.나래유치원은 아이들이 즐겁게 다닌다는 후기가 많고교사들이 따뜻하고 세심하다는 평을 받고 있습니다.아이 한 명, 한 명을 존중하고 살펴주는 분위기 덕분에사동뿐 아니라 인근 지역에서도 꾸준히 입소문이 나고 있습니다.마무리아이에게 맞는 유치원을 고르는 일은 부모님의 큰 고민이지만안산 사동유치원 나래유치원은 안전한 통학, 다양한 프로그램, 놀이 중심 철학,학부모와의 소통, 그리고 신뢰까지 다섯 가지 요소를 모두 갖춘 곳입니다.혹시 유치원을 찾고 계신다면 직접 방문하여아이의 눈빛과 반응을 살펴보시길 권해드립니다.아이 스스로 즐겁게 다니고 싶어 하는 곳이야말로가장 좋은 유치원이 될 테니까요. ✦ 본 글은 정보 제공을 위한 내용이며실제 모집 및 등록 관련 사항은 유치원에 직접 문의하시길 바랍니다. 나래유치원 경기도 안산시 단원구 화정천서로 161 나래유치원 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "215e3f44",
+          "extractedAt": "2026-06-26T07:13:00.098Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "나래유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 화정천서로 161",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
     "1ecec08c-fcb0-b044-e053-0a32095ab044": [
       {
         "id": "rev-b5740a6c",
@@ -34,76 +161,6 @@
             "kindergartenName": "은빛유치원",
             "kindergartenAddress": "경기도 안산시 단원구 광덕1로 80",
             "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%80%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08d-0a01-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-89436531",
-        "kindergartenId": "1ecec08d-0a01-b044-e053-0a32095ab044",
-        "title": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원",
-        "url": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223682522148",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한...",
-        "summary": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:10:37.525Z",
-        "relevanceScore": 5,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "e89c0ab3",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223682522148",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kj202320&logno=223682522148",
-          "normalizedText": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 14 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한... 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전... 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전하게 활동할 수 있는 환경이 마련되어 있습니다. 더불어 공작유치원은 안전 교육도 꾸준히 실시하고 있습니다. 정기적으로 소방훈련과 안전 교육을 진행하여 아이들이 위급 상황에서도 침착하게 대처할 수 있도록 돕고 있습니다.이러한 훈련은 단순히 교육에서 끝나는 것이 아니라, 실제 상황에서도 아이들이 안전하게 대응할 수 있는 능력을 길러주죠.유치원 내 안전관리 시스템도 체계적으로 운영되며, 사고가 발생하지 않도록 미리 예방하는 노력을 기울이고 있습니다. 특히, 공작유치원은 아이들의 등하원 시간에도 안전 관리를 철저히 합니다.유치원이 아파트 단지 내에 위치하고 있어 등하원 시의 안전이 보장되는 점이 부모님들 사이에서 큰 호응을 얻고 있습니다.통학로가 복잡하지 않아 사고에 대한 걱정이 적고, 셔틀버스를 이용하는 아이들도 안전하게 이동할 수 있도록 운행 구역이 잘 정해져 있어요.셔틀버스는 선부동을 비롯해 와동, 백운동, 원곡동, 초지동으로 운영중이며, 부모님들의 통학 걱정을 덜어줍니다. 이와 함께 공작유치원은 아이들이 체육 활동과 같은 신체 활동을 할 때도 항상 안전에 유의하고 있습니다.공작유치원에서는 매주 다양한 신체 활동 프로그램을 운영하는데,이때 안전 장비를 갖추고 체육 활동을 진행하며, 교사들이 항상 아이들의 옆에서 세심하게 지도합니다. 이런 세심한 관리 덕분에 아이들은 신나게 뛰어놀 수 있으면서도 안전하게 활동할 수 있죠. .마지막으로, 공작유치원은 교통 안전 교육도 강조합니다.아이들이 유치원에 등하원할 때, 그리고 유치원 내외에서 교통사고나 안전사고가 발생하지 않도록아이들에게 교통법규와 안전 규칙을 철저하게 가르치고 있습니다.이러한 교육은 아이들이 스스로 안전을 지키는 능력을 키울 수 있도록 도와줍니다.이처럼, 공작유치원은 아이들의 안전을 최우선으로 생각하며,부모님들이 안심하고 아이들을 맡길 수 있는 안전하고 쾌적한 교육 환경을 제공하고 있습니다. 선부동 공작유치원은 아이들이 마음껏 뛰어놀고 배우며항상 안전하게 보호받을 수 있도록 최선을 다하겠습니다.감사합니다. 공작유치원 경기도 안산시 단원구 선부로 166 선부동.공작한양아파트 129동앞 이 블로그의 체크인 이 장소의 다른 글",
-          "htmlSnapshotHash": "e89c0ab3",
-          "extractedAt": "2026-06-26T07:10:37.525Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "공작유치원",
-            "kindergartenAddress": "경기도 안산시 단원구 선부로 166",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-9407b2ae",
-        "kindergartenId": "1ecec08d-0a01-b044-e053-0a32095ab044",
-        "title": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원",
-        "url": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223620244569",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요...",
-        "summary": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:10:37.736Z",
-        "relevanceScore": 7,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "cad3bb04",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223620244569",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kj202320&logno=223620244569",
-          "normalizedText": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요... 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운... 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운영하고 있어요~아이들의 유치원 생활이 궁금한 부모님들을 위한 소통도 자주 하고 있는데요,전화와 키즈노트를 통해 아이들에 대한 세세한 사항을 알려드리고 있습니다! 공작유치원에는 연령별 수업이 있어요! 만 3세 ~ 만 5세의 아이들이 다니다보니 연령별로 다른 음악교육을 실행하고 있어요~!*3세 : 뮤직슐레매주 다른 음악을 듣고 신체로 표현하는 수업이에요~다양한 악기를 연주해보면서 음악적 감수성을 키울 수 있는 시간을 갖고있어요^^*4세 : 난타리듬과 박자를 배울 수 있어요!스트레스를 풀기에도 좋은 수업이랍니다~부모참여수업에서 어른들도 함께했는데 모두 만족해 하는 활동이에요!*5세 : 우쿠렐레작은기타를 연주하는 아이들의 모습이 요정들 같아요!초등학교 들어가기전에 음계를 익히고 연주를 할 수 있는 특별한 시간이에요!이렇게 나이대별로 음악활동을 진행하기때문에아이들은 다양한 음악을 일찍이 경험할 수 있답니다~ 공작유치원에서는 영어를 재밌게 배울 수 있어요! 공작유치원은 아이들이 영어를 어려워하지 않도록 흥미있는 수업들을 준비했어요!키바키즈 영어 특성화교육은 아이가 집에서도 단어, 문장을 말을 할 수있도록 매일 매일 영어를 반복적으로 교육해주고있어요!또한, 매주 금요일에 미션북을 가지고 문장을 말하는 모습을 볼수 있어서 유치원에서 무엇을 하는지 쉽게 알 수 있답니다~!또 다른 특별한 시간을 소개해 드리자면, 한달에 한번 세계 여러나라 축제를 테마로 영어교육을 하고 있어요!이 때에는 원어민 선생님과 함께하기 때문에 더 좋은 발음을 배워볼 수 있어요~ 주제에 맞는 퍼포먼스를 즐기며 상황극 영어회화를 해보는 시간인데요, 아이들이 참 재밌어한답니다^^그 밖에도 누리과정 교육을 진행하고 있는데요,놀이중심교육과정 및 프로젝트로 아이들의 흥미와 관심을 이끌어내는 교육과정이에요~ 아이들이 교육에 거부감이 없이 쉽게 다가갈 수 있도록 흥미 위주의 수업을 많이 진행하고있습니다! 공작유치원에서 함께해요! 공작유치원은 선부동에 위치해있어요~하지만 셔틀버스 운행으로 옆동네 친구들도 편히 올 수 있답니다~!셔틀 운행지역 : 선부1동, 선부2동, 선부3동, 와동, 백운동, 원곡동, 초지동또한, 오전 돌봄을 통해 맞벌이를 하시는 부모님들의 부담을 덜어드리고 있어요~오전돌봄 시간은 오전 7시 50분부터 시작되고교육과정은 오전 9시부터 오후 2시까지 진행하고있습니다.방과후 과정은 교육과정을 포함하여 오후 6시30분까지 진행되고 있어요~공작유치원 전체 운영시간 : 오전 7시 50분 ~ 오후 6시 30분공작유치원을 통해 아이들이 일상속에 소소한 행복과 즐거움을 함께 나누기를 바라는 마음이에요!서로 소통하고 성장하는 공간이 될 수있도록 항상 노력하고 같이 성장하는 선부동 공작유치원에서 우리 함께 만나요~ 문의사항은 연락 주시면 친절히 안내해드릴게요^^ 공작유치원 경기도 안산시 단원구 선부로 166 선부동.공작한양아파트 129동앞 이 블로그의 체크인 이 장소의 다른 글",
-          "htmlSnapshotHash": "cad3bb04",
-          "extractedAt": "2026-06-26T07:10:37.736Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "공작유치원",
-            "kindergartenAddress": "경기도 안산시 단원구 선부로 166",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
             "accessMode": "public"
           }
         }
@@ -145,74 +202,42 @@
         }
       }
     ],
-    "1ecec08c-f36f-b044-e053-0a32095ab044": [
+    "1ecec08d-0180-b044-e053-0a32095ab044": [
       {
-        "id": "rev-aced7ef5",
-        "kindergartenId": "1ecec08c-f36f-b044-e053-0a32095ab044",
-        "title": "안산 사동유치원 나래유치원 선택 이유 5가지",
-        "url": "https://blog.naver.com/PostView.naver?blogId=naraikid12&logNo=224003713620",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는...",
-        "summary": "안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와...",
+        "id": "rev-sns-wave749-f3366d66",
+        "kindergartenId": "1ecec08d-0180-b044-e053-0a32095ab044",
+        "title": "안산 대동초병설유치원 그린 스마트팜 체험 기록",
+        "url": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
+        "source": "other",
+        "sourceName": "투데이안산",
+        "snippet": "대동초등학교병설유치원이 그린 스마트팜에서 디지털 생태체험을 진행했다는 공개 기사입니다.",
+        "summary": "경기 안산 대동초등학교병설유치원의 유초 이음형 스마트팜 체험활동을 확인할 수 있는 원문입니다.",
         "tags": [
-          "public"
+          "web",
+          "news",
+          "address-not-required",
+          "smart-farm",
+          "digital-eco",
+          "gyeonggi"
         ],
         "date": null,
-        "collectedAt": "2026-06-26T07:13:00.098Z",
-        "relevanceScore": 9,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "215e3f44",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=naraikid12&logNo=224003713620",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=naraikid12&logno=224003713620",
-          "normalizedText": "안산 사동유치원 나래유치원 선택 이유 5가지 나래유치원은 아이들이 즐겁게 다닌다는 후기가 많고 교사들이 따뜻하고 세심하다는 평을 받고 있습니다. 아이 한 명, 한 명을 존중하고 살펴주는 분위기 덕분에 사동뿐 아니라 인근 지역에서도 꾸준히 입소문이 나고 있습니다. 마무리 아이에게 맞는 유치원을 고르는 일은 부모님의 큰 고민이지만 안산 사동유치원 나래유치원은 안전한 통학, 다양한 프로그램, 놀이 중심... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와... 안산 사동유치원 나래유치원 선택 이유 5가지아이의 첫 교육기관은 단순히 돌봄의 공간이 아니라 앞으로의 성격과 학습 태도에 큰 영향을 주는 곳입니다.그래서 부모님들께서는 유치원 선택에 신중할 수밖에 없습니다.특히 안산 단원구 사동과 초지동, 원곡동, 새솔동 인근에 거주하신다면안산 사동유치원 나래유치원은 꾸준히 선택받는 곳으로 잘 알려져 있습니다.오늘은 나래유치원이 많은 학부모님들에게 사랑받는 이유를 다섯 가지로 정리해 보았습니다. 1. 안전하고 편리한 통학 환경나래유치원은 아파트 단지 내에 위치해 있어 등·하원이 안전합니다.사동뿐 아니라 초지동, 원곡동, 새솔동 등 인근 지역에서도 통학이 가능하도록 셔틀버스를 운영합니다.차량에는 안전벨트와 cctv가 설치되어 있으며전담 교사가 탑승해 아이들을 꼼꼼히 챙겨줍니다.이 덕분에 부모님들은 안심할 수 있고아이들도 편리하게 유치원을 오갈 수 있습니다. 2. 다양한 특성화 수업나래유치원은 기본 교육과정 외에도아이들의 흥미와 재능을 키워주는 여러 특성화 활동을 운영합니다.이야기할머니 무릎교실에서는 전래동화와 옛이야기를 들으며상상력과 언어 감각을 기르고 정서적으로 따뜻함을 느낄 수 있습니다.뮤직테라피 수업은 음악을 듣고 몸으로 표현하거나 악기를 연주하면서창의성과 감수성을 풍부하게 키워 줍니다.또한 숲 체험 활동을 통해 자연과 교감하며계절의 변화를 직접 경험하고 탐구심을 기를 수 있습니다. 3. 놀이 중심 교육 철학나래유치원은 결과 위주의 주입식 교육보다놀이와 체험을 통해 배우는 과정을 중요하게 생각합니다.예를 들어 계절 주제를 정해 해바라기를 직접 심고 자라는 모습을 관찰하면서과학적 탐구심을 키우는 동시에 관련 미술과 노래 활동으로 자연스럽게 확장합니다.이런 수업 방식은 아이가 스스로 질문하고 탐구하는 힘을 길러 주며무엇보다 배우는 과정 자체가 즐겁게 느껴지도록 만듭니다. 4. 학부모와의 소통 강화부모님들이 가장 궁금해하는 것은“우리 아이가 유치원에서 잘 지내고 있을까?”라는 부분일 것입니다.나래유치원은 정기 상담을 통해 아이의 생활을 알려주고사진과 영상을 공유하여 학부모가 안심할 수 있도록 합니다.아이의 성향과 발달 과정을 세세히 피드백해 주기 때문에가정에서도 연계 교육이 가능하다는 장점이 있습니다. 5. 지역 학부모들의 신뢰무엇보다 중요한 건 학부모들의 실제 경험에서 비롯된 신뢰입니다.나래유치원은 아이들이 즐겁게 다닌다는 후기가 많고교사들이 따뜻하고 세심하다는 평을 받고 있습니다.아이 한 명, 한 명을 존중하고 살펴주는 분위기 덕분에사동뿐 아니라 인근 지역에서도 꾸준히 입소문이 나고 있습니다.마무리아이에게 맞는 유치원을 고르는 일은 부모님의 큰 고민이지만안산 사동유치원 나래유치원은 안전한 통학, 다양한 프로그램, 놀이 중심 철학,학부모와의 소통, 그리고 신뢰까지 다섯 가지 요소를 모두 갖춘 곳입니다.혹시 유치원을 찾고 계신다면 직접 방문하여아이의 눈빛과 반응을 살펴보시길 권해드립니다.아이 스스로 즐겁게 다니고 싶어 하는 곳이야말로가장 좋은 유치원이 될 테니까요. ✦ 본 글은 정보 제공을 위한 내용이며실제 모집 및 등록 관련 사항은 유치원에 직접 문의하시길 바랍니다. 나래유치원 경기도 안산시 단원구 화정천서로 161 나래유치원 이 블로그의 체크인 이 장소의 다른 글",
-          "htmlSnapshotHash": "215e3f44",
-          "extractedAt": "2026-06-26T07:13:00.098Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "나래유치원",
-            "kindergartenAddress": "경기도 안산시 단원구 화정천서로 161",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-5322284d",
-        "kindergartenId": "1ecec08c-f36f-b044-e053-0a32095ab044",
-        "title": "RE우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^",
-        "url": "https://cafe.naver.com/doorkong/3474020?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6ImRvb3Jrb25nIiwiYXJ0aWNsZUlkIjozNDc0MDIwLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk4MzI0Nn0.HXNFdDmnwM4vgvKRa7rJIdk7DManeeOqvNaYS3HPD4s",
-        "source": "naver_cafe",
-        "sourceName": "네이버 카페",
-        "snippet": "안산 시흥 맘 모여라2024.11.11.Keep에 저장Keep에 바로가기초지동 나래유치원,중앙유치원내년에 유치원에 보내야하는 입장인데 10월 중순에 둘째를 출산하게되어 입학설명회를 놓쳤네요.. 어머님들께 정보를 얻고자 글남겨 봅니다 활동량이 많은 남아 이구요.. 초지동 나래유치원과 중앙유치원 추천부탁드려요 놀이나 다양한 활동이 많았으면 좋겠어요 미리 감사합니다 :)RE저희 첫째, 둘째 아들 둘다 나래졸업했는데 견학이나 숲체험같...",
-        "tags": [
-          "login-required",
-          "search-snippet"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:13:03.809Z",
-        "relevanceScore": 10,
-        "accessMode": "login",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
-        "evidenceChecksum": "70f5013f",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-f3366d66",
         "evidence": {
-          "canonicalUrl": "https://cafe.naver.com/doorkong/3474020?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6ImRvb3Jrb25nIiwiYXJ0aWNsZUlkIjozNDc0MDIwLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk4MzI0Nn0.HXNFdDmnwM4vgvKRa7rJIdk7DManeeOqvNaYS3HPD4s",
-          "normalizedUrl": "cafe.naver.com/doorkong/3474020?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6imrvb3jrb25niiwiyxj0awnszulkijozndc0mdiwlcjpc3n1zwrbdci6mtc4mjq1nzk4mzi0nn0.hxnfddmnwm4vgvkra7rjidk7dmaneeoqvnays3hpd4s",
-          "normalizedText": "re우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^ re우리애도 나래졸업했어요 선생님들이나 원장님 참좋았던기억이나요^^ 안산 시흥 맘 모여라2024.11.11.keep에 저장keep에 바로가기초지동 나래유치원,중앙유치원내년에 유치원에 보내야하는 입장인데 10월 중순에 둘째를 출산하게되어 입학설명회를 놓쳤네요.. 어머님들께 정보를 얻고자 글남겨 봅니다 활동량이 많은 남아 이구요.. 초지동 나래유치원과 중앙유치원 추천부탁드려요 놀이나 다양한 활동이 많았으면 좋겠어요 미리 감사합니다 :)re저희 첫째, 둘째 아들 둘다 나래졸업했는데 견학이나 숲체험같...",
-          "htmlSnapshotHash": "70f5013f",
-          "extractedAt": "2026-06-26T07:13:03.809Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-          "structuredFields": {
-            "kindergartenName": "나래유치원",
-            "kindergartenAddress": "경기도 안산시 단원구 화정천서로 161",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%82%98%EB%9E%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-            "accessMode": "login"
-          }
-        }
+          "canonicalUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
+          "normalizedUrl": "todayansan.co.kr/news/articleview.html?idxno=36670",
+          "normalizedText": "안산 대동초등학교병설유치원 그린 스마트팜 디지털 생태체험",
+          "htmlSnapshotHash": "sns-wave749-f3366d66",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave749"
       }
     ],
     "1ecec08d-0497-b044-e053-0a32095ab044": [
@@ -267,50 +292,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T17:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-eec3-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-e13e56e5",
-        "kindergartenId": "1ecec08c-eec3-b044-e053-0a32095ab044",
-        "kindergartenName": "사랑유치원",
-        "title": "안산 사랑유치원 별망어촌문화관 견학 Instagram Post",
-        "url": "https://www.instagram.com/p/DLAJCMiJHNT/",
-        "source": "other",
-        "sourceName": "Instagram · 안산사랑유치원",
-        "snippet": "Instagram 검색 결과에서 안산사랑유치원 안산별망어촌문화관 견학과 안산·선부동 지역 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "사랑유치원",
-          "kindergartenAddress": "경기도 안산시 단원구 선부광장북로 67",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DLAJCMiJHNT%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%88%EC%82%B0%EB%B3%84%EB%A7%9D%EC%96%B4%EC%B4%8C%EB%AC%B8%ED%99%94%EA%B4%80%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/DLAJCMiJHNT/",
-          "regionEvidence": [
-            "안산유치원",
-            "선부동유치원",
-            "안산사랑유치원",
-            "경기도 안산시 단원구 선부광장북로 67"
-          ]
-        },
-        "evidenceChecksum": "d8140089"
       }
     ],
     "1ecec08d-04ea-b044-e053-0a32095ab044": [
@@ -368,44 +349,196 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-0180-b044-e053-0a32095ab044": [
+    "1ecec08d-096c-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave749-f3366d66",
-        "kindergartenId": "1ecec08d-0180-b044-e053-0a32095ab044",
-        "title": "안산 대동초병설유치원 그린 스마트팜 체험 기록",
-        "url": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
+        "id": "rev-8fb173ad",
+        "kindergartenId": "1ecec08d-096c-b044-e053-0a32095ab044",
+        "title": "안산신길초등학교병설유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DTshkoSEtug/",
         "source": "other",
-        "sourceName": "투데이안산",
-        "snippet": "대동초등학교병설유치원이 그린 스마트팜에서 디지털 생태체험을 진행했다는 공개 기사입니다.",
-        "summary": "경기 안산 대동초등학교병설유치원의 유초 이음형 스마트팜 체험활동을 확인할 수 있는 원문입니다.",
+        "sourceName": "Instagram · 안산신길초등학교병설유치원",
+        "snippet": "검색 결과에서 안산신길초병설유치원 졸업장식과 졸업식 단서가 확인된다.",
         "tags": [
-          "web",
-          "news",
+          "sns",
+          "search-snippet",
           "address-not-required",
-          "smart-farm",
-          "digital-eco",
-          "gyeonggi"
+          "instagram",
+          "graduation",
+          "ceremony-decoration"
         ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "date": "2026-01-19",
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "web-search:news-snippet",
-        "evidenceChecksum": "sns-wave749-f3366d66",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8fb173ad",
+        "structuredFields": {
+          "kindergartenName": "신길초등학교병설유치원",
+          "kindergartenAddress": "경기도 안산시 단원구 새뿔길 100",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%8B%A0%EA%B8%B8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 안산신길초병설유치원 단서가 로컬 경기 안산시 신길초등학교병설유치원과 일치해 수동 매칭했다."
+        },
         "evidence": {
-          "canonicalUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670",
-          "normalizedUrl": "todayansan.co.kr/news/articleview.html?idxno=36670",
-          "normalizedText": "안산 대동초등학교병설유치원 그린 스마트팜 디지털 생태체험",
-          "htmlSnapshotHash": "sns-wave749-f3366d66",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.todayansan.co.kr/news/articleView.html?idxno=36670"
+          "canonicalUrl": "https://www.instagram.com/p/DTshkoSEtug/",
+          "normalizedUrl": "instagram.com/p/dtshkosetug",
+          "normalizedText": "안산신길초등학교병설유치원 졸업식 instagram post 검색 결과에서 안산신길초병설유치원 졸업장식과 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "8fb173ad",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신길초등학교병설유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 새뿔길 100",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%20%22%EC%8B%A0%EA%B8%B8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 안산신길초병설유치원 단서가 로컬 경기 안산시 신길초등학교병설유치원과 일치해 수동 매칭했다."
+          }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave749"
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0a01-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-9407b2ae",
+        "kindergartenId": "1ecec08d-0a01-b044-e053-0a32095ab044",
+        "title": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223620244569",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요...",
+        "summary": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:10:37.736Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "cad3bb04",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223620244569",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kj202320&logno=223620244569",
+          "normalizedText": "선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요... 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운... 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 선부동 유치원 꿈꾸는 아이들의 행복이 가득한 안산 공작유치원 안녕하세요! 공작유치원 입니다^^요즘 참 맑고 화창한 날씨가 계속되고 있죠~?이런 날씨에는 야외 활동을 즐기기에 좋은데요,선부동 공작유치원은 아이들이 즐거운 야외활동을할 수 있도록 계절에 맞추어 준비하고 있답니다~아이들이 행복한 공간!선부동 공작유치원에 대해 소개해드릴께요~! 공작유치원은 따뜻해요! 공작유치원은 만 3세 ~ 만 5세의 친구들과 함께 하고있어요!원장님을 비롯한 모든 선생님들이 아이들을 환한 미소로 맞이한답니다~아이들을 향한 세심한 교육마인드로,모든것이 발달하고 성장하는 아이들에게 꼭 필요한 프로그램을 운영하고 있어요~아이들의 유치원 생활이 궁금한 부모님들을 위한 소통도 자주 하고 있는데요,전화와 키즈노트를 통해 아이들에 대한 세세한 사항을 알려드리고 있습니다! 공작유치원에는 연령별 수업이 있어요! 만 3세 ~ 만 5세의 아이들이 다니다보니 연령별로 다른 음악교육을 실행하고 있어요~!*3세 : 뮤직슐레매주 다른 음악을 듣고 신체로 표현하는 수업이에요~다양한 악기를 연주해보면서 음악적 감수성을 키울 수 있는 시간을 갖고있어요^^*4세 : 난타리듬과 박자를 배울 수 있어요!스트레스를 풀기에도 좋은 수업이랍니다~부모참여수업에서 어른들도 함께했는데 모두 만족해 하는 활동이에요!*5세 : 우쿠렐레작은기타를 연주하는 아이들의 모습이 요정들 같아요!초등학교 들어가기전에 음계를 익히고 연주를 할 수 있는 특별한 시간이에요!이렇게 나이대별로 음악활동을 진행하기때문에아이들은 다양한 음악을 일찍이 경험할 수 있답니다~ 공작유치원에서는 영어를 재밌게 배울 수 있어요! 공작유치원은 아이들이 영어를 어려워하지 않도록 흥미있는 수업들을 준비했어요!키바키즈 영어 특성화교육은 아이가 집에서도 단어, 문장을 말을 할 수있도록 매일 매일 영어를 반복적으로 교육해주고있어요!또한, 매주 금요일에 미션북을 가지고 문장을 말하는 모습을 볼수 있어서 유치원에서 무엇을 하는지 쉽게 알 수 있답니다~!또 다른 특별한 시간을 소개해 드리자면, 한달에 한번 세계 여러나라 축제를 테마로 영어교육을 하고 있어요!이 때에는 원어민 선생님과 함께하기 때문에 더 좋은 발음을 배워볼 수 있어요~ 주제에 맞는 퍼포먼스를 즐기며 상황극 영어회화를 해보는 시간인데요, 아이들이 참 재밌어한답니다^^그 밖에도 누리과정 교육을 진행하고 있는데요,놀이중심교육과정 및 프로젝트로 아이들의 흥미와 관심을 이끌어내는 교육과정이에요~ 아이들이 교육에 거부감이 없이 쉽게 다가갈 수 있도록 흥미 위주의 수업을 많이 진행하고있습니다! 공작유치원에서 함께해요! 공작유치원은 선부동에 위치해있어요~하지만 셔틀버스 운행으로 옆동네 친구들도 편히 올 수 있답니다~!셔틀 운행지역 : 선부1동, 선부2동, 선부3동, 와동, 백운동, 원곡동, 초지동또한, 오전 돌봄을 통해 맞벌이를 하시는 부모님들의 부담을 덜어드리고 있어요~오전돌봄 시간은 오전 7시 50분부터 시작되고교육과정은 오전 9시부터 오후 2시까지 진행하고있습니다.방과후 과정은 교육과정을 포함하여 오후 6시30분까지 진행되고 있어요~공작유치원 전체 운영시간 : 오전 7시 50분 ~ 오후 6시 30분공작유치원을 통해 아이들이 일상속에 소소한 행복과 즐거움을 함께 나누기를 바라는 마음이에요!서로 소통하고 성장하는 공간이 될 수있도록 항상 노력하고 같이 성장하는 선부동 공작유치원에서 우리 함께 만나요~ 문의사항은 연락 주시면 친절히 안내해드릴게요^^ 공작유치원 경기도 안산시 단원구 선부로 166 선부동.공작한양아파트 129동앞 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "cad3bb04",
+          "extractedAt": "2026-06-26T07:10:37.736Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "공작유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 선부로 166",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-89436531",
+        "kindergartenId": "1ecec08d-0a01-b044-e053-0a32095ab044",
+        "title": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223682522148",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한...",
+        "summary": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:10:37.525Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "e89c0ab3",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kj202320&logNo=223682522148",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kj202320&logno=223682522148",
+          "normalizedText": "선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 14 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한... 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전... 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원선부동 유치원 추천 아이와 부모 모두가 만족하는 공작유치원 아이를 유치원에 보내는 부모로서 가장 중요하게 생각하는 부분 중 하나가 바로 안전한 교육 환경입니다. 아이들이 매일 즐겁게 다니면서도, 안전하게 보호받을 수 있는 유치원을 찾는 건 모든 부모의 바람이겠죠.선부동에 위치한 공작유치원은 이런 부모님의 걱정을 덜어주기 위해 철저한 안전 관리와 더불어 따뜻하고 쾌적한 교육 환경을 제공합니다. 공작유치원은 아이들이 자유롭게 뛰어놀 수 있는 넓은 실내외 놀이 공간은 물론, 다양한 교구와 장비들이 잘 갖추어져 있어 아이들이 안전하게 활동할 수 있는 환경이 마련되어 있습니다. 더불어 공작유치원은 안전 교육도 꾸준히 실시하고 있습니다. 정기적으로 소방훈련과 안전 교육을 진행하여 아이들이 위급 상황에서도 침착하게 대처할 수 있도록 돕고 있습니다.이러한 훈련은 단순히 교육에서 끝나는 것이 아니라, 실제 상황에서도 아이들이 안전하게 대응할 수 있는 능력을 길러주죠.유치원 내 안전관리 시스템도 체계적으로 운영되며, 사고가 발생하지 않도록 미리 예방하는 노력을 기울이고 있습니다. 특히, 공작유치원은 아이들의 등하원 시간에도 안전 관리를 철저히 합니다.유치원이 아파트 단지 내에 위치하고 있어 등하원 시의 안전이 보장되는 점이 부모님들 사이에서 큰 호응을 얻고 있습니다.통학로가 복잡하지 않아 사고에 대한 걱정이 적고, 셔틀버스를 이용하는 아이들도 안전하게 이동할 수 있도록 운행 구역이 잘 정해져 있어요.셔틀버스는 선부동을 비롯해 와동, 백운동, 원곡동, 초지동으로 운영중이며, 부모님들의 통학 걱정을 덜어줍니다. 이와 함께 공작유치원은 아이들이 체육 활동과 같은 신체 활동을 할 때도 항상 안전에 유의하고 있습니다.공작유치원에서는 매주 다양한 신체 활동 프로그램을 운영하는데,이때 안전 장비를 갖추고 체육 활동을 진행하며, 교사들이 항상 아이들의 옆에서 세심하게 지도합니다. 이런 세심한 관리 덕분에 아이들은 신나게 뛰어놀 수 있으면서도 안전하게 활동할 수 있죠. .마지막으로, 공작유치원은 교통 안전 교육도 강조합니다.아이들이 유치원에 등하원할 때, 그리고 유치원 내외에서 교통사고나 안전사고가 발생하지 않도록아이들에게 교통법규와 안전 규칙을 철저하게 가르치고 있습니다.이러한 교육은 아이들이 스스로 안전을 지키는 능력을 키울 수 있도록 도와줍니다.이처럼, 공작유치원은 아이들의 안전을 최우선으로 생각하며,부모님들이 안심하고 아이들을 맡길 수 있는 안전하고 쾌적한 교육 환경을 제공하고 있습니다. 선부동 공작유치원은 아이들이 마음껏 뛰어놀고 배우며항상 안전하게 보호받을 수 있도록 최선을 다하겠습니다.감사합니다. 공작유치원 경기도 안산시 단원구 선부로 166 선부동.공작한양아파트 129동앞 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "e89c0ab3",
+          "extractedAt": "2026-06-26T07:10:37.525Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "공작유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 선부로 166",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%B5%EC%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%88%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0f7e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852603",
+        "title": "[선부동유치원]생각을키우는유치원, 생키, 선부동유치원추천",
+        "url": "https://blog.naver.com/mito530/223213730310",
+        "source": "naver_blog",
+        "sourceName": "마슈의블로그",
+        "snippet": "#선부동유치원 #유치원추천 #선부동생키 #생키 #생각을키우는유치원 #유치원일상 #선부동유치원추천 #원곡동유치원 #안산유치원추천 #와동유치원 #와동유치원추천 생각을키우는유치원 2분기 후기(?) 첫 유치원...",
+        "date": "2023-09-17",
+        "collectedAt": "2026-07-26T08:54:20.537562",
+        "kindergartenId": "1ecec08d-0f7e-b044-e053-0a32095ab044"
+      }
+    ],
+    "e751ba71-87c3-4c53-8c68-1db689754cc1": [
+      {
+        "id": "rev-a416be99",
+        "kindergartenId": "e751ba71-87c3-4c53-8c68-1db689754cc1",
+        "title": "안산나루유치원 졸업식 Instagram Post",
+        "url": "https://www.instagram.com/p/DZRPo_wj52y/",
+        "source": "other",
+        "sourceName": "Instagram · 안산나루유치원",
+        "snippet": "검색 결과에서 안산나루유치원, 공립단설, 유치원 졸업식 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "ceremony"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T18:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a416be99",
+        "structuredFields": {
+          "kindergartenName": "안산나루유치원",
+          "kindergartenAddress": "경기도 안산시 단원구 신길로 91",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZRPo_wj52y%22%20%22%EC%95%88%EC%82%B0%EB%82%98%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 안산나루유치원 및 공립단설 단서가 로컬 경기 안산시 안산나루유치원과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZRPo_wj52y/",
+          "normalizedUrl": "instagram.com/p/dzrpo_wj52y",
+          "normalizedText": "안산나루유치원 졸업식 instagram post 검색 결과에서 안산나루유치원 공립단설 유치원 졸업식 단서가 확인된다.",
+          "htmlSnapshotHash": "a416be99",
+          "extractedAt": "2026-07-03T18:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "안산나루유치원",
+            "kindergartenAddress": "경기도 안산시 단원구 신길로 91",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZRPo_wj52y%22%20%22%EC%95%88%EC%82%B0%EB%82%98%EB%A3%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 안산나루유치원 및 공립단설 단서가 로컬 경기 안산시 안산나루유치원과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T18:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

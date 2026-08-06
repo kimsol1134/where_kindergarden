@@ -21,7 +21,8 @@ public enum KakaoShareService {
 
     public static func shareCompare(
         names: [String],
-        shareURL: URL
+        shareURL: URL,
+        completion: @escaping (Bool) -> Void
     ) {
         let namesText = names.joined(separator: " vs ")
 
@@ -39,11 +40,9 @@ public enum KakaoShareService {
             link: link
         )
 
-        let social = Social(viewCount: NativeAppConfiguration.totalKindergartenCount)
-
         let feedTemplate = FeedTemplate(
             content: content,
-            social: social,
+            social: nil,
             buttons: [
                 Button(
                     title: "비교표 바로 보기",
@@ -54,17 +53,23 @@ public enum KakaoShareService {
 
         guard let templateData = try? SdkJSONEncoder.custom.encode(feedTemplate),
               let templateJSON = try? JSONSerialization.jsonObject(with: templateData) as? [String: Any] else {
+            completion(false)
             return
         }
 
         ShareApi.shared.shareDefault(templateObject: templateJSON) { sharingResult, error in
             if let error {
                 logger.error("Kakao share failed: \(error.localizedDescription, privacy: .public)")
+                completion(false)
                 return
             }
 
             if let sharingResult {
-                UIApplication.shared.open(sharingResult.url, options: [:])
+                UIApplication.shared.open(sharingResult.url, options: [:]) { opened in
+                    completion(opened)
+                }
+            } else {
+                completion(false)
             }
         }
     }

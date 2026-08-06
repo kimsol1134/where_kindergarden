@@ -49,6 +49,7 @@ export const REVIEW_PLATFORM_LABELS: Record<ReviewPlatformKey, string> = {
 
 export const SIDO_LABELS: Record<string, string> = {
   '11': '서울',
+  '12': '전남광주',
   '26': '부산',
   '27': '대구',
   '28': '인천',

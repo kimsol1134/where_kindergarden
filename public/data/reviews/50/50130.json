@@ -1,119 +1,26 @@
 {
-  "version": "2026-07-01",
+  "version": "2026-08-06",
   "totalCount": 18,
   "kindergartenCount": 15,
   "reviews": {
-    "1ecec08c-f9cb-b044-e053-0a32095ab044": [
+    "049ce303-cf2d-40c5-9ce1-1dd6851dab2e": [
       {
-        "id": "rev-56ba4d8a",
-        "kindergartenId": "1ecec08c-f9cb-b044-e053-0a32095ab044",
-        "title": "서귀포 남원유치원 원아모집 SNS",
-        "url": "https://www.instagram.com/p/DZMvf6yJOw_/",
-        "source": "other",
-        "sourceName": "Instagram · 남원유치원",
-        "snippet": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "제주 서귀포시 남원유치원의 2026학년도 원아모집 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission"
-        ],
-        "content": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 제주 서귀포시 남원유치원에 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "29a52f34",
-        "structuredFields": {
-          "kindergartenName": "남원유치원",
-          "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZMvf6yJOw_/",
-          "normalizedUrl": "www.instagram.com/p/dzmvf6yjow_",
-          "normalizedText": "서귀포 남원유치원 원아모집 sns 남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 instagram 검색 결과. 제주 서귀포시 남원유치원의 2026학년도 원아모집 sns 정보.",
-          "htmlSnapshotHash": "29a52f34",
-          "extractedAt": "2026-06-30T23:59:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "남원유치원",
-            "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f70e-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave753-a7780ccd",
-        "kindergartenId": "1ecec08c-f70e-b044-e053-0a32095ab044",
-        "title": "의귀초병설유치원 재생종이 유초이음 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
+        "id": "rev-sns-wave765-c3ff3ab8",
+        "kindergartenId": "049ce303-cf2d-40c5-9ce1-1dd6851dab2e",
+        "title": "제주 서귀포초병설유치원 아홉굿마을 자연생태 체험학습 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=48272",
         "source": "other",
         "sourceName": "DWBNEWS",
-        "snippet": "의귀초등학교병설유치원이 지속가능발전을 위한 유초이음교육으로 재생종이 만들기를 실시한 공개 기사입니다.",
-        "summary": "의귀초등학교병설유치원의 환경교육과 초등 연계 재생종이 만들기 활동을 확인할 수 있는 원문입니다.",
+        "snippet": "서귀포초등학교병설유치원이 유초이음교육으로 아홉굿마을 자연생태 체험학습을 실시한 공개 기사입니다.",
+        "summary": "제주 서귀포초등학교병설유치원의 유치원과 1학년 연계 자연생태 체험학습 활동을 확인할 수 있는 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "news",
-          "elementary-bridge",
-          "sustainability",
-          "jeju"
-        ],
-        "date": "2026-06-01",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave753-a7780ccd",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=115561",
-          "normalizedText": "의귀초등학교병설유치원 지속가능발전 유초이음교육 재생종이 만들기",
-          "htmlSnapshotHash": "sns-wave753-a7780ccd",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave753"
-      }
-    ],
-    "1ecec08d-0261-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave753-253d072c",
-        "kindergartenId": "1ecec08d-0261-b044-e053-0a32095ab044",
-        "title": "제주 하원초병설유치원 우영팟 유초이음 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "하원초등학교병설유치원이 유초이음교육 우영팟 활동을 실시한 공개 기사입니다.",
-        "summary": "제주 하원초등학교병설유치원의 텃밭 기반 우영팟 활동과 유초이음 교육 과정을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "elementary-bridge",
-          "garden-activity",
+          "field-trip",
+          "eco-education",
+          "elementary-transition",
           "jeju"
         ],
         "date": null,
@@ -122,18 +29,18 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave753-253d072c",
+        "evidenceChecksum": "sns-wave765-c3ff3ab8",
         "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=112543",
-          "normalizedText": "제주 하원초등학교병설유치원 유초이음교육 우영팟 활동",
-          "htmlSnapshotHash": "sns-wave753-253d072c",
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=48272",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=48272",
+          "normalizedText": "제주 서귀포초등학교병설유치원 유초이음교육 아홉굿마을 자연생태 체험학습 유치원 1학년 연계 활동",
+          "htmlSnapshotHash": "sns-wave765-c3ff3ab8",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543"
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=48272"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave753"
+        "approvedBy": "codex-manual-sns-wave765"
       }
     ],
     "1ecec08c-f4ff-b044-e053-0a32095ab044": [
@@ -175,121 +82,43 @@
         "approvedBy": "codex-manual-sns-wave755"
       }
     ],
-    "1ecec08d-0f2b-b044-e053-0a32095ab044": [
+    "1ecec08c-f70e-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave755-080670a3",
-        "kindergartenId": "1ecec08d-0f2b-b044-e053-0a32095ab044",
-        "title": "제주 무릉초병설유치원 화조원 현장체험 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
+        "id": "rev-sns-wave753-a7780ccd",
+        "kindergartenId": "1ecec08c-f70e-b044-e053-0a32095ab044",
+        "title": "의귀초병설유치원 재생종이 유초이음 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
         "source": "other",
         "sourceName": "DWBNEWS",
-        "snippet": "무릉초등학교병설유치원이 화조원에서 유아교육 협력 네트워크 현장체험학습을 실시한 공개 기사입니다.",
-        "summary": "제주 무릉초등학교병설유치원의 화조원 방문과 자연 생명 체험 활동을 확인할 수 있는 원문입니다.",
+        "snippet": "의귀초등학교병설유치원이 지속가능발전을 위한 유초이음교육으로 재생종이 만들기를 실시한 공개 기사입니다.",
+        "summary": "의귀초등학교병설유치원의 환경교육과 초등 연계 재생종이 만들기 활동을 확인할 수 있는 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "news",
-          "field-trip",
-          "nature-experience",
+          "elementary-bridge",
+          "sustainability",
           "jeju"
         ],
-        "date": "2023-06-02",
+        "date": "2026-06-01",
         "collectedAt": "2026-07-03T23:59:59.999Z",
         "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave755-080670a3",
+        "evidenceChecksum": "sns-wave753-a7780ccd",
         "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=47891",
-          "normalizedText": "제주 무릉초등학교병설유치원 화조원 현장체험학습 유아교육 협력 네트워크",
-          "htmlSnapshotHash": "sns-wave755-080670a3",
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=115561",
+          "normalizedText": "의귀초등학교병설유치원 지속가능발전 유초이음교육 재생종이 만들기",
+          "htmlSnapshotHash": "sns-wave753-a7780ccd",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891"
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=115561"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave755"
-      }
-    ],
-    "1ecec08c-f9ca-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave755-5ff80d3f",
-        "kindergartenId": "1ecec08c-f9ca-b044-e053-0a32095ab044",
-        "title": "제주 흥산초병설유치원 반편견 다문화교육 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "흥산초등학교병설유치원이 찾아가는 반편견 교육 프로그램 다문화를 실시한 공개 기사입니다.",
-        "summary": "제주 흥산초등학교병설유치원의 반편견 다문화교육과 다양성 존중 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "multicultural-education",
-          "anti-bias",
-          "jeju"
-        ],
-        "date": "2022-05-11",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave755-5ff80d3f",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=20478",
-          "normalizedText": "제주 흥산초등학교병설유치원 찾아가는 반편견 교육 프로그램 다문화",
-          "htmlSnapshotHash": "sns-wave755-5ff80d3f",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave755"
-      }
-    ],
-    "1ecec08d-0f4a-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave756-52ad890c",
-        "kindergartenId": "1ecec08d-0f4a-b044-e053-0a32095ab044",
-        "title": "제주 효돈초병설유치원 찾아오는 성교육 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=70008",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "효돈초등학교병설유치원이 굿네이버스 주관 찾아오는 성교육을 실시한 공개 기사입니다.",
-        "summary": "제주 효돈초등학교병설유치원의 몸의 소중함과 성폭력 예방 중심 안전교육을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "safety-education",
-          "health-education",
-          "jeju"
-        ],
-        "date": "2024-04-09",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave756-52ad890c",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=70008",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=70008",
-          "normalizedText": "제주 효돈초등학교병설유치원 찾아오는 성교육 굿네이버스 성폭력 예방",
-          "htmlSnapshotHash": "sns-wave756-52ad890c",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=70008"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave756"
+        "approvedBy": "codex-manual-sns-wave753"
       }
     ],
     "1ecec08c-f710-b044-e053-0a32095ab044": [
@@ -370,6 +199,100 @@
         "approvedBy": "codex-manual-sns-wave759"
       }
     ],
+    "1ecec08c-f9ca-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave755-5ff80d3f",
+        "kindergartenId": "1ecec08c-f9ca-b044-e053-0a32095ab044",
+        "title": "제주 흥산초병설유치원 반편견 다문화교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "흥산초등학교병설유치원이 찾아가는 반편견 교육 프로그램 다문화를 실시한 공개 기사입니다.",
+        "summary": "제주 흥산초등학교병설유치원의 반편견 다문화교육과 다양성 존중 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "multicultural-education",
+          "anti-bias",
+          "jeju"
+        ],
+        "date": "2022-05-11",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave755-5ff80d3f",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=20478",
+          "normalizedText": "제주 흥산초등학교병설유치원 찾아가는 반편견 교육 프로그램 다문화",
+          "htmlSnapshotHash": "sns-wave755-5ff80d3f",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=20478"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave755"
+      }
+    ],
+    "1ecec08c-f9cb-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-56ba4d8a",
+        "kindergartenId": "1ecec08c-f9cb-b044-e053-0a32095ab044",
+        "title": "서귀포 남원유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DZMvf6yJOw_/",
+        "source": "other",
+        "sourceName": "Instagram · 남원유치원",
+        "snippet": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "제주 서귀포시 남원유치원의 2026학년도 원아모집 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 제주 서귀포시 남원유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "29a52f34",
+        "structuredFields": {
+          "kindergartenName": "남원유치원",
+          "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMvf6yJOw_/",
+          "normalizedUrl": "www.instagram.com/p/dzmvf6yjow_",
+          "normalizedText": "서귀포 남원유치원 원아모집 sns 남원유치원 2026학년도 원아모집과 전화 064-764-0040 문맥이 확인되는 instagram 검색 결과. 제주 서귀포시 남원유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "29a52f34",
+          "extractedAt": "2026-06-30T23:59:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "남원유치원",
+            "kindergartenAddress": "제주특별자치도 서귀포시 남한로 27",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZMvf6yJOw_%22+%22%EB%82%A8%EC%9B%90%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22064-764-0040%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08d-0235-b044-e053-0a32095ab044": [
       {
         "id": "rev-sns-wave759-1b978f9d",
@@ -409,44 +332,125 @@
         "approvedBy": "codex-manual-sns-wave759"
       }
     ],
-    "1ecec08d-0f2a-b044-e053-0a32095ab044": [
+    "1ecec08d-0261-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave760-a9f507a5",
-        "kindergartenId": "1ecec08d-0f2a-b044-e053-0a32095ab044",
-        "title": "제주 강정초병설유치원 가족 전래놀이 한마당 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
+        "id": "rev-sns-wave753-253d072c",
+        "kindergartenId": "1ecec08d-0261-b044-e053-0a32095ab044",
+        "title": "제주 하원초병설유치원 우영팟 유초이음 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
         "source": "other",
         "sourceName": "DWBNEWS",
-        "snippet": "강정초병설유치원이 가족과 함께하는 전래놀이 한마당을 실시한 공개 기사입니다.",
-        "summary": "제주 강정초등학교병설유치원의 가족 참여 전래놀이 활동과 유치원-가정 연계 행사를 확인할 수 있는 원문입니다.",
+        "snippet": "하원초등학교병설유치원이 유초이음교육 우영팟 활동을 실시한 공개 기사입니다.",
+        "summary": "제주 하원초등학교병설유치원의 텃밭 기반 우영팟 활동과 유초이음 교육 과정을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "elementary-bridge",
+          "garden-activity",
+          "jeju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-253d072c",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=112543",
+          "normalizedText": "제주 하원초등학교병설유치원 유초이음교육 우영팟 활동",
+          "htmlSnapshotHash": "sns-wave753-253d072c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=112543"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
+      }
+    ],
+    "1ecec08d-065f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave760-cae02804",
+        "kindergartenId": "1ecec08d-065f-b044-e053-0a32095ab044",
+        "title": "제주 동남초병설유치원 유초이음 전래놀이 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "동남초등학교병설유치원이 유초이음 사업으로 전래 놀이 프로그램을 실시한 공개 기사입니다.",
+        "summary": "제주 동남초등학교병설유치원의 길쌈놀이, 쥐구멍 놀이, 초등 1학년 연계 공동체 놀이 활동을 확인할 수 있는 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "news",
           "traditional-play",
-          "family-program",
+          "elementary-bridge",
           "jeju"
         ],
-        "date": "2025-10-28",
+        "date": "2025-05-26",
         "collectedAt": "2026-07-03T23:59:59.999Z",
         "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave760-a9f507a5",
+        "evidenceChecksum": "sns-wave760-cae02804",
         "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=103703",
-          "normalizedText": "제주 강정초등학교병설유치원 가족과 함께하는 전래놀이 한마당 실시",
-          "htmlSnapshotHash": "sns-wave760-a9f507a5",
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=91460",
+          "normalizedText": "제주 동남초등학교병설유치원 유초이음 활동 전래놀이 전래야 놀자 공동체 놀이",
+          "htmlSnapshotHash": "sns-wave760-cae02804",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703"
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave760"
-      },
+      }
+    ],
+    "1ecec08d-0af2-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave766-f8d3dd04",
+        "kindergartenId": "1ecec08d-0af2-b044-e053-0a32095ab044",
+        "title": "서귀포 한마음초병설유치원 유초이음 직업체험의 날 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=100544",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "한마음초등학교병설유치원이 1·2학년 초등학생과 함께 유초이음 직업체험의 날을 운영한 공개 기사입니다.",
+        "summary": "한마음초등학교병설유치원의 과학수사, 과학자, 조향사, 소방관 부스와 지문 관찰, 실험, 소화기 사용법, 심폐소생술 실습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "career-play",
+          "elementary-transition",
+          "science-play",
+          "jeju"
+        ],
+        "date": "2025-09-18",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave766-f8d3dd04",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=100544",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=100544",
+          "normalizedText": "한마음초등학교병설유치원 유초이음 직업체험의 날 과학수사 과학자 조향사 소방관 지문 관찰 실험 소화기 사용법 심폐소생술",
+          "htmlSnapshotHash": "sns-wave766-f8d3dd04",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=100544"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave766"
+      }
+    ],
+    "1ecec08d-0f2a-b044-e053-0a32095ab044": [
       {
         "id": "rev-sns-wave761-e9735ebb",
         "kindergartenId": "1ecec08d-0f2a-b044-e053-0a32095ab044",
@@ -484,6 +488,43 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave761"
+      },
+      {
+        "id": "rev-sns-wave760-a9f507a5",
+        "kindergartenId": "1ecec08d-0f2a-b044-e053-0a32095ab044",
+        "title": "제주 강정초병설유치원 가족 전래놀이 한마당 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "강정초병설유치원이 가족과 함께하는 전래놀이 한마당을 실시한 공개 기사입니다.",
+        "summary": "제주 강정초등학교병설유치원의 가족 참여 전래놀이 활동과 유치원-가정 연계 행사를 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "traditional-play",
+          "family-program",
+          "jeju"
+        ],
+        "date": "2025-10-28",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave760-a9f507a5",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=103703",
+          "normalizedText": "제주 강정초등학교병설유치원 가족과 함께하는 전래놀이 한마당 실시",
+          "htmlSnapshotHash": "sns-wave760-a9f507a5",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=103703"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave760"
       },
       {
         "id": "rev-sns-wave765-590c7984",
@@ -562,6 +603,84 @@
         "approvedBy": "codex-manual-sns-wave765"
       }
     ],
+    "1ecec08d-0f2b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave755-080670a3",
+        "kindergartenId": "1ecec08d-0f2b-b044-e053-0a32095ab044",
+        "title": "제주 무릉초병설유치원 화조원 현장체험 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "무릉초등학교병설유치원이 화조원에서 유아교육 협력 네트워크 현장체험학습을 실시한 공개 기사입니다.",
+        "summary": "제주 무릉초등학교병설유치원의 화조원 방문과 자연 생명 체험 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "field-trip",
+          "nature-experience",
+          "jeju"
+        ],
+        "date": "2023-06-02",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave755-080670a3",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=47891",
+          "normalizedText": "제주 무릉초등학교병설유치원 화조원 현장체험학습 유아교육 협력 네트워크",
+          "htmlSnapshotHash": "sns-wave755-080670a3",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=47891"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave755"
+      }
+    ],
+    "1ecec08d-0f4a-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave756-52ad890c",
+        "kindergartenId": "1ecec08d-0f4a-b044-e053-0a32095ab044",
+        "title": "제주 효돈초병설유치원 찾아오는 성교육 기록",
+        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=70008",
+        "source": "other",
+        "sourceName": "DWBNEWS",
+        "snippet": "효돈초등학교병설유치원이 굿네이버스 주관 찾아오는 성교육을 실시한 공개 기사입니다.",
+        "summary": "제주 효돈초등학교병설유치원의 몸의 소중함과 성폭력 예방 중심 안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "news",
+          "safety-education",
+          "health-education",
+          "jeju"
+        ],
+        "date": "2024-04-09",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave756-52ad890c",
+        "evidence": {
+          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=70008",
+          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=70008",
+          "normalizedText": "제주 효돈초등학교병설유치원 찾아오는 성교육 굿네이버스 성폭력 예방",
+          "htmlSnapshotHash": "sns-wave756-52ad890c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=70008"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave756"
+      }
+    ],
     "ab4a9e5a-5f5d-4d8e-8919-e9b0a18cf2d4": [
       {
         "id": "rev-sns-wave760-2654bd29",
@@ -600,126 +719,6 @@
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave760"
       }
-    ],
-    "1ecec08d-065f-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave760-cae02804",
-        "kindergartenId": "1ecec08d-065f-b044-e053-0a32095ab044",
-        "title": "제주 동남초병설유치원 유초이음 전래놀이 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "동남초등학교병설유치원이 유초이음 사업으로 전래 놀이 프로그램을 실시한 공개 기사입니다.",
-        "summary": "제주 동남초등학교병설유치원의 길쌈놀이, 쥐구멍 놀이, 초등 1학년 연계 공동체 놀이 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "traditional-play",
-          "elementary-bridge",
-          "jeju"
-        ],
-        "date": "2025-05-26",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave760-cae02804",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=91460",
-          "normalizedText": "제주 동남초등학교병설유치원 유초이음 활동 전래놀이 전래야 놀자 공동체 놀이",
-          "htmlSnapshotHash": "sns-wave760-cae02804",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=91460"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave760"
-      }
-    ],
-    "049ce303-cf2d-40c5-9ce1-1dd6851dab2e": [
-      {
-        "id": "rev-sns-wave765-c3ff3ab8",
-        "kindergartenId": "049ce303-cf2d-40c5-9ce1-1dd6851dab2e",
-        "title": "제주 서귀포초병설유치원 아홉굿마을 자연생태 체험학습 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=48272",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "서귀포초등학교병설유치원이 유초이음교육으로 아홉굿마을 자연생태 체험학습을 실시한 공개 기사입니다.",
-        "summary": "제주 서귀포초등학교병설유치원의 유치원과 1학년 연계 자연생태 체험학습 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "field-trip",
-          "eco-education",
-          "elementary-transition",
-          "jeju"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave765-c3ff3ab8",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=48272",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=48272",
-          "normalizedText": "제주 서귀포초등학교병설유치원 유초이음교육 아홉굿마을 자연생태 체험학습 유치원 1학년 연계 활동",
-          "htmlSnapshotHash": "sns-wave765-c3ff3ab8",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=48272"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave765"
-      }
-    ],
-    "1ecec08d-0af2-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave766-f8d3dd04",
-        "kindergartenId": "1ecec08d-0af2-b044-e053-0a32095ab044",
-        "title": "서귀포 한마음초병설유치원 유초이음 직업체험의 날 기록",
-        "url": "https://www.dwbnews.kr/news/articleView.html?idxno=100544",
-        "source": "other",
-        "sourceName": "DWBNEWS",
-        "snippet": "한마음초등학교병설유치원이 1·2학년 초등학생과 함께 유초이음 직업체험의 날을 운영한 공개 기사입니다.",
-        "summary": "한마음초등학교병설유치원의 과학수사, 과학자, 조향사, 소방관 부스와 지문 관찰, 실험, 소화기 사용법, 심폐소생술 실습을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "news",
-          "career-play",
-          "elementary-transition",
-          "science-play",
-          "jeju"
-        ],
-        "date": "2025-09-18",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave766-f8d3dd04",
-        "evidence": {
-          "canonicalUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=100544",
-          "normalizedUrl": "dwbnews.kr/news/articleview.html?idxno=100544",
-          "normalizedText": "한마음초등학교병설유치원 유초이음 직업체험의 날 과학수사 과학자 조향사 소방관 지문 관찰 실험 소화기 사용법 심폐소생술",
-          "htmlSnapshotHash": "sns-wave766-f8d3dd04",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dwbnews.kr/news/articleView.html?idxno=100544"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave766"
-      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

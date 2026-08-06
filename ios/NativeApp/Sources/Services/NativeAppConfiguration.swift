@@ -24,17 +24,18 @@ public struct NativeAppConfiguration: Sendable {
     public static let kakaoRESTAPIKeyBuildSetting = "WK_KAKAO_REST_API_KEY"
     public static let kakaoConfigSourceInfoKey = "KAKAO_CONFIG_SOURCE"
 
+    public static let defaultKindergartensRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/kindergartens.json")!
     public static let defaultReviewsRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/reviews.json")!
     public static let defaultVacancyRemoteURL = URL(string: "https://where-kindergarden.vercel.app/data/vacancy.json")!
     public static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
     public static let defaultShareImageURL = URL(string: "https://where-kindergarden.vercel.app/og-image.png")!
-    public static let totalKindergartenCount = 7950
     public static let shareDescription = "교육비, 교사 비율, 시설 등 한눈에 비교해봤어요!"
 
     public let kakaoAppKey: String?
     public let kakaoRESTAPIKey: String?
     public let kakaoConfigurationSource: KakaoConfigurationSource?
     public let mixpanelToken: String?
+    public let kindergartensRemoteURL: URL
     public let reviewsRemoteURL: URL
     public let vacancyRemoteURL: URL
     public let compareShareBaseURL: URL
@@ -47,6 +48,7 @@ public struct NativeAppConfiguration: Sendable {
         kakaoRESTAPIKey: String? = nil,
         kakaoConfigurationSource: String? = nil,
         mixpanelToken: String? = nil,
+        kindergartensRemoteURL: URL = NativeAppConfiguration.defaultKindergartensRemoteURL,
         reviewsRemoteURL: URL = NativeAppConfiguration.defaultReviewsRemoteURL,
         vacancyRemoteURL: URL = NativeAppConfiguration.defaultVacancyRemoteURL,
         compareShareBaseURL: URL = NativeAppConfiguration.defaultCompareShareBaseURL,
@@ -59,6 +61,7 @@ public struct NativeAppConfiguration: Sendable {
         self.kakaoConfigurationSource = Self.normalizedValue(kakaoConfigurationSource)
             .flatMap(KakaoConfigurationSource.init(rawValue:))
         self.mixpanelToken = Self.normalizedValue(mixpanelToken)
+        self.kindergartensRemoteURL = kindergartensRemoteURL
         self.reviewsRemoteURL = reviewsRemoteURL
         self.vacancyRemoteURL = vacancyRemoteURL
         self.compareShareBaseURL = compareShareBaseURL

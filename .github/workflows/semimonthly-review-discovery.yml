@@ -1,0 +1,170 @@
+name: Semimonthly Review Candidate Discovery
+
+on:
+  workflow_dispatch:
+    inputs:
+      sido:
+        description: 'Optional comma-separated current sido codes'
+        required: false
+        default: ''
+        type: string
+      shard_index:
+        description: 'Zero-based catalog shard to collect'
+        required: false
+        default: 0
+        type: number
+      shard_count:
+        description: 'Number of stable catalog shards (use 1 for a full run)'
+        required: false
+        default: 2
+        type: number
+  schedule:
+    # 09:20 KST on the 1st and 15th (GitHub Actions cron uses UTC)
+    - cron: '20 0 1,15 * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: review-candidate-discovery-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+      NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Require review-discovery credentials
+        shell: bash
+        run: |
+          if [ -z "$NAVER_CLIENT_ID" ] || [ -z "$NAVER_CLIENT_SECRET" ]; then
+            echo "NAVER_CLIENT_ID and NAVER_CLIENT_SECRET repository secrets are required." >&2
+            exit 1
+          fi
+
+      - name: Collect strict candidates for current regions
+        shell: bash
+        env:
+          SIDO_INPUT: ${{ github.event_name == 'workflow_dispatch' && inputs.sido || '' }}
+          SHARD_INDEX_INPUT: ${{ github.event_name == 'workflow_dispatch' && format('{0}', inputs.shard_index) || '' }}
+          SHARD_COUNT_INPUT: ${{ github.event_name == 'workflow_dispatch' && format('{0}', inputs.shard_count) || '' }}
+        run: |
+          SIDO_LIST="${SIDO_INPUT:-11,12,26,27,28,30,31,36,41,43,44,47,48,50,51,52}"
+          SHARD_COUNT="${SHARD_COUNT_INPUT:-2}"
+          if [ -n "$SHARD_INDEX_INPUT" ]; then
+            SHARD_INDEX="$SHARD_INDEX_INPUT"
+          elif [ "$(date -u +%d)" = "15" ]; then
+            SHARD_INDEX=1
+          else
+            SHARD_INDEX=0
+          fi
+
+          if [[ ! "$SHARD_COUNT" =~ ^[1-9][0-9]*$ ]] || \
+             [[ ! "$SHARD_INDEX" =~ ^[0-9]+$ ]] || \
+             [ "$SHARD_INDEX" -ge "$SHARD_COUNT" ]; then
+            echo "Invalid shard configuration: $SHARD_INDEX/$SHARD_COUNT" >&2
+            exit 1
+          fi
+
+          echo "SHARD_INDEX=$SHARD_INDEX" >> "$GITHUB_ENV"
+          echo "SHARD_COUNT=$SHARD_COUNT" >> "$GITHUB_ENV"
+          IFS=',' read -ra SIDO_CODES <<< "$SIDO_LIST"
+
+          for raw_code in "${SIDO_CODES[@]}"; do
+            sido="$(printf '%s' "$raw_code" | tr -d '[:space:]')"
+            if [[ ! "$sido" =~ ^[0-9]{2}$ ]]; then
+              echo "Invalid sido code: $raw_code" >&2
+              exit 1
+            fi
+            pnpm collect:reviews:v3 -- --sido "$sido" --strict --max 5 \
+              --shard-index "$SHARD_INDEX" --shard-count "$SHARD_COUNT"
+          done
+
+      - name: Validate candidate artifacts
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const directory = 'scripts/data-output';
+          const today = new Date().toISOString().slice(0, 10);
+          const files = fs.readdirSync(directory)
+            .filter((name) => name.startsWith(`reviews-raw-v3-${today}-`) && name.endsWith('.json'));
+          if (files.length === 0) throw new Error('No review candidate artifact was generated');
+
+          let candidates = 0;
+          let targets = 0;
+          for (const file of files) {
+            const payload = JSON.parse(fs.readFileSync(path.join(directory, file), 'utf8'));
+            if (payload.version !== 'v3' || !Array.isArray(payload.reviews)) {
+              throw new Error(`Invalid candidate artifact: ${file}`);
+            }
+            if (payload.shardIndex !== Number(process.env.SHARD_INDEX) ||
+                payload.shardCount !== Number(process.env.SHARD_COUNT)) {
+              throw new Error(`Unexpected shard metadata: ${file}`);
+            }
+            candidates += payload.reviews.length;
+            targets += payload.shardTargetCount ?? 0;
+          }
+          console.log(
+            `Validated ${files.length} region artifacts, ${targets} targets, ` +
+            `and ${candidates} strict candidates for shard ` +
+            `${process.env.SHARD_INDEX}/${process.env.SHARD_COUNT}`
+          );
+          NODE
+
+      - name: Write discovery summary
+        if: always()
+        shell: bash
+        run: |
+          echo "## Review candidate discovery" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- These are candidates only; public review data is not changed." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Relevance removals remain human-approved." >> "$GITHUB_STEP_SUMMARY"
+          echo "- stable shard: ${SHARD_INDEX:-unknown}/${SHARD_COUNT:-unknown}" >> "$GITHUB_STEP_SUMMARY"
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs = require('fs');
+          const path = require('path');
+          const directory = 'scripts/data-output';
+          if (!fs.existsSync(directory)) process.exit(0);
+          const today = new Date().toISOString().slice(0, 10);
+          const files = fs.readdirSync(directory)
+            .filter((name) => name.startsWith(`reviews-raw-v3-${today}-`) && name.endsWith('.json'));
+          let candidates = 0;
+          for (const file of files) {
+            const payload = JSON.parse(fs.readFileSync(path.join(directory, file), 'utf8'));
+            candidates += Array.isArray(payload.reviews) ? payload.reviews.length : 0;
+          }
+          console.log(`- region artifacts: ${files.length}`);
+          console.log(`- strict candidates: ${candidates}`);
+          NODE
+
+      - name: Upload human-review candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-discovery-${{ github.run_id }}
+          path: scripts/data-output/reviews-raw-v3-*.json
+          if-no-files-found: error
+          retention-days: 30

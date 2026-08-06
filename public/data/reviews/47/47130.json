@@ -1,20 +1,814 @@
 {
-  "version": "2026-07-26",
-  "totalCount": 48,
-  "kindergartenCount": 13,
+  "version": "2026-08-06",
+  "totalCount": 46,
+  "kindergartenCount": 11,
   "reviews": {
+    "1ecec08c-eed9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave728-ce7825d6",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 일곱살 졸업여행 기록",
+        "url": "https://www.instagram.com/reel/DRE4sRNkoXt/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "불국유치원 일곱살 친구들이 졸업을 앞두고 추억 가득한 졸업여행을 다녀온 릴스입니다.",
+        "summary": "유아들이 졸업 전 친구들과 함께 특별한 여행 경험을 남긴 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation-trip",
+          "kindergarten-trip",
+          "friendship",
+          "gyeongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave728-ce7825d6",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRE4sRNkoXt/",
+          "normalizedUrl": "instagram.com/reel/dre4srnkoxt",
+          "normalizedText": "경주 불국유치원 일곱살 졸업여행 추억 여행",
+          "htmlSnapshotHash": "sns-wave728-ce7825d6",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRE4sRNkoXt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave728"
+      },
+      {
+        "id": "rev-sns-wave698-ab8c21c9",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 7세 숲놀이 기록",
+        "url": "https://www.instagram.com/reel/DYE5O8XxFGC/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "불국유치원 7세 유아들이 경주 숲에서 처음 숲 활동을 하며 자연을 만난 공개 릴스입니다.",
+        "summary": "숲체험과 바깥놀이를 통해 아이들이 계절 자연을 관찰한 유치원 활동 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "outdoor-learning",
+          "gyeongju"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave698-ab8c21c9",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/",
+          "normalizedUrl": "instagram.com/reel/dye5o8xxfgc",
+          "normalizedText": "불국유치원 경주 7세 숲체험 숲놀이 자연 관찰",
+          "htmlSnapshotHash": "sns-wave698-ab8c21c9",
+          "extractedAt": "2026-07-03T23:59:59.995Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.995Z",
+        "approvedBy": "codex-manual-sns-wave698"
+      },
+      {
+        "id": "rev-ca21a7b8",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "kindergartenName": "불국유치원",
+        "title": "경주 불국유치원 봄소풍 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DH8STerhRSh/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 봄소풍과 불국사 소풍사진 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DH8STerhRSh%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DH8STerhRSh/",
+          "regionEvidence": [
+            "경주",
+            "불국유치원",
+            "봄소풍",
+            "불국사 소풍사진"
+          ]
+        },
+        "evidenceChecksum": "acc45bc8"
+      },
+      {
+        "id": "rev-0adf5d18",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/C8UJcyyBRme/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주 불국유치원 7살 형님반 부모참여수업과 경주유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "83b07168",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8UJcyyBRme%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C8UJcyyBRme/",
+          "normalizedUrl": "www.instagram.com/reel/c8ujcyybrme",
+          "normalizedText": "경주 불국유치원 부모참여수업 instagram instagram 검색 결과에서 경주 불국유치원 7살 형님반 부모참여수업과 경주유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "83b07168",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8UJcyyBRme%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-54bb45bf",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 발표력대회 Instagram",
+        "url": "https://www.instagram.com/reel/DJjF-lzSfuO/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주 불국유치원 발표력대회와 자신감 향상 교육활동, 부모참여수업·유치원야시장 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "presentation-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "f6509b68",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJjF-lzSfuO%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJjF-lzSfuO/",
+          "normalizedUrl": "www.instagram.com/reel/djjf-lzsfuo",
+          "normalizedText": "경주 불국유치원 발표력대회 instagram instagram 검색 결과에서 경주 불국유치원 발표력대회와 자신감 향상 교육활동, 부모참여수업·유치원야시장 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "f6509b68",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJjF-lzSfuO%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-73907718",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 식목일 다육이심기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DICt3Hbzk0n/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주 불국유치원 식목일과 헌 신발을 활용한 다육이 심기 활동 단서가 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "garden",
+          "arbor-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "998a77bb",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DICt3Hbzk0n%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DICt3Hbzk0n/",
+          "normalizedUrl": "www.instagram.com/reel/dict3hbzk0n",
+          "normalizedText": "경주 불국유치원 식목일 다육이심기 instagram reel instagram 검색 결과에서 경주 불국유치원 식목일과 헌 신발을 활용한 다육이 심기 활동 단서가 확인되는 릴.",
+          "htmlSnapshotHash": "998a77bb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DICt3Hbzk0n%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9b3b7b30",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DHv4CFDS9GB/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 교통안전교육과 횡단보도 건너기 연습 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "safety-education",
+          "traffic-safety"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "a8a5b813",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHv4CFDS9GB%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHv4CFDS9GB/",
+          "normalizedUrl": "www.instagram.com/p/dhv4cfds9gb",
+          "normalizedText": "경주 불국유치원 교통안전교육 instagram post instagram 검색 결과에서 경주, 불국유치원, 교통안전교육과 횡단보도 건너기 연습 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "a8a5b813",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHv4CFDS9GB%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b0b252fc",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 졸업식 Reel",
+        "url": "https://www.instagram.com/reel/DGR5wcfSJzE/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram Reels 검색 결과에서 경주, 불국유치원, 졸업식 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "graduation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "97e1c97e",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGR5wcfSJzE%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGR5wcfSJzE/",
+          "normalizedUrl": "www.instagram.com/reel/dgr5wcfsjze",
+          "normalizedText": "경주 불국유치원 졸업식 reel instagram reels 검색 결과에서 경주, 불국유치원, 졸업식 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "97e1c97e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGR5wcfSJzE%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-c8cec769",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 교육설명회 Instagram",
+        "url": "https://www.instagram.com/p/CyVCXIgBVdQ/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 불국유치원입학설명회, 교육설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "5851a5a7",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyVCXIgBVdQ%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyVCXIgBVdQ/",
+          "normalizedUrl": "www.instagram.com/p/cyvcxigbvdq",
+          "normalizedText": "경주 불국유치원 교육설명회 instagram instagram 검색 결과에서 경주, 불국유치원, 불국유치원입학설명회, 교육설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "5851a5a7",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyVCXIgBVdQ%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-db6e26f1",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 요리 주제수업 Instagram",
+        "url": "https://www.instagram.com/reel/DInQftwSLyx/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주 불국유치원 주제수업·요리 활동과 부모참여수업·유치원야시장 문맥이 함께 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "0f6ec7ba",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DInQftwSLyx%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DInQftwSLyx/",
+          "normalizedUrl": "www.instagram.com/reel/dinqftwslyx",
+          "normalizedText": "경주 불국유치원 요리 주제수업 instagram instagram 검색 결과에서 경주 불국유치원 주제수업·요리 활동과 부모참여수업·유치원야시장 문맥이 함께 확인되는 릴.",
+          "htmlSnapshotHash": "0f6ec7ba",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DInQftwSLyx%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1952e42d",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 수료식 Instagram",
+        "url": "https://www.instagram.com/reel/DUx_ZuqEiPS/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 수료식과 새 학년 시작 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "graduation"
+        ],
+        "date": "2026-02-15",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "4cc99121",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUx_ZuqEiPS%22+%22bulguk__kinder_garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUx_ZuqEiPS/",
+          "normalizedUrl": "www.instagram.com/reel/dux_zuqeips",
+          "normalizedText": "경주 불국유치원 수료식 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 수료식과 새 학년 시작 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "4cc99121",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUx_ZuqEiPS%22+%22bulguk__kinder_garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-59f378c4",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 제45회 졸업식 Instagram",
+        "url": "https://www.instagram.com/reel/DUx_5yxEpLJ/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "bulguk__kinder_garten 계정에서 제45회 불국유치원 졸업식과 경주 불국유치원 해시태그 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "graduation"
+        ],
+        "date": "2026-02-15",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "18ef097e",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUx_5yxEpLJ%22+%22bulguk__kinder_garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUx_5yxEpLJ/",
+          "normalizedUrl": "www.instagram.com/reel/dux_5yxeplj",
+          "normalizedText": "경주 불국유치원 제45회 졸업식 instagram bulguk__kinder_garten 계정에서 제45회 불국유치원 졸업식과 경주 불국유치원 해시태그 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "18ef097e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DUx_5yxEpLJ%22+%22bulguk__kinder_garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-37a37211",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 여름 현장활동 Instagram",
+        "url": "https://www.instagram.com/reel/DNnQ5MdhpJ1/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 활동과 문무대왕릉 나들이 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "summer"
+        ],
+        "date": "2025-08-21",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "ddb1790e",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DNnQ5MdhpJ1%22+%22bulguk__kinder_garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DNnQ5MdhpJ1/",
+          "normalizedUrl": "www.instagram.com/reel/dnnq5mdhpj1",
+          "normalizedText": "경주 불국유치원 여름 현장활동 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 활동과 문무대왕릉 나들이 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "ddb1790e",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DNnQ5MdhpJ1%22+%22bulguk__kinder_garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-91aafbe5",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 여름 물놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DL9q3BYhI0p/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이와 분수튜브 준비 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "water-play",
+          "activity"
+        ],
+        "date": "2025-07-11",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "b3c7ce99",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DL9q3BYhI0p%22+%22bulguk__kinder_garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL9q3BYhI0p/",
+          "normalizedUrl": "www.instagram.com/reel/dl9q3byhi0p",
+          "normalizedText": "경주 불국유치원 여름 물놀이 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이와 분수튜브 준비 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "b3c7ce99",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DL9q3BYhI0p%22+%22bulguk__kinder_garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-fd56491c",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "title": "경주 불국유치원 여름 물놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DL9zvxVSSqA/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이 활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "water-play",
+          "activity"
+        ],
+        "date": "2025-07-11",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2cb97346",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DL9zvxVSSqA%22+%22bulguk__kinder_garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DL9zvxVSSqA/",
+          "normalizedUrl": "www.instagram.com/reel/dl9zvxvssqa",
+          "normalizedText": "경주 불국유치원 여름 물놀이 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이 활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2cb97346",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "불국유치원",
+            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DL9zvxVSSqA%22+%22bulguk__kinder_garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-76549cc3",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
+        "kindergartenName": "불국유치원",
+        "title": "경주 불국유치원 추석 달토끼 행사 Reel",
+        "url": "https://www.instagram.com/reel/C_h27U5SUSw/",
+        "source": "other",
+        "sourceName": "Instagram · 불국유치원",
+        "snippet": "Instagram 검색 결과에서 경주 불국유치원의 추석 행사와 달토끼 선생님 활동 문맥이 확인되는 릴.",
+        "date": "2024-09-05",
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "chuseok",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "불국유치원",
+          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C_h27U5SUSw%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B6%94%EC%84%9D%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/C_h27U5SUSw/",
+          "regionEvidence": [
+            "경주",
+            "불국유치원",
+            "추석",
+            "달토끼"
+          ]
+        },
+        "evidenceChecksum": "645a31e2"
+      },
+      {
+        "id": "rev-99852417",
+        "title": "불국유치원 교사교육 후기 '유아의 발달 및 행동 이해'",
+        "url": "https://blog.naver.com/maeya79/222705120982",
+        "source": "naver_blog",
+        "sourceName": "건강한 맘 연구소",
+        "snippet": "이번에는 경주에 있는 불국 유치원 선생님들과 지난주와 이번주 3회에 걸쳐 교사교육을 진행하였습니다. 연령별로 집중도 있게 진행하길 원하시는 원장님의 요청에 따라 5세, 6세, 7세 연령별로 따로...",
+        "date": "2022-04-19",
+        "collectedAt": "2026-01-30T03:09:52.596Z",
+        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044"
+      }
+    ],
     "1ecec08c-eefa-b044-e053-0a32095ab044": [
       {
-        "id": "rev-7498-e9z0",
+        "id": "rev-d8b702c7",
         "kindergartenId": "1ecec08c-eefa-b044-e053-0a32095ab044",
-        "title": "2023 경주 예송 유치원 발표회",
-        "url": "https://blog.naver.com/rkddufcjswo/223292907498",
-        "source": "naver_blog",
-        "sourceName": "글라스스토리 경주황성점",
-        "snippet": "오늘은 저희 첫째 아이가 다니고 있는 경주 예송유치원 발표회 후기 써봅니다. 원래 쓰려고 했었는데ㅋㅋ 발표회장 들어가는길에 박모 선생님이  아버님 블로그 잘 부탁드립니다  이러시길래 쓸까말까...",
-        "date": "2023-12-14",
-        "collectedAt": "2026-02-18T06:13:58.475Z",
-        "relevanceScore": 8
+        "title": "경주 예송유치원 소방관 견학 Instagram",
+        "url": "https://www.instagram.com/reel/DKgyePhSelP/",
+        "source": "other",
+        "sourceName": "Instagram · 예송유치원",
+        "snippet": "Instagram 검색 결과에서 경주 예송유치원 6·7세 119 안전센터 견학과 2026학년도 입학설명회 문맥이 함께 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "admissions"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "fe7221b4",
+        "structuredFields": {
+          "kindergartenName": "예송유치원",
+          "kindergartenAddress": "경상북도 경주시 유림로 69",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DKgyePhSelP%22+%22%EA%B2%BD%EC%A3%BC%EC%98%88%EC%86%A1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DKgyePhSelP/",
+          "normalizedUrl": "www.instagram.com/reel/dkgyephselp",
+          "normalizedText": "경주 예송유치원 소방관 견학 instagram instagram 검색 결과에서 경주 예송유치원 6·7세 119 안전센터 견학과 2026학년도 입학설명회 문맥이 함께 확인되는 릴.",
+          "htmlSnapshotHash": "fe7221b4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "예송유치원",
+            "kindergartenAddress": "경상북도 경주시 유림로 69",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DKgyePhSelP%22+%22%EA%B2%BD%EC%A3%BC%EC%98%88%EC%86%A1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
         "id": "rev-fd09af81",
@@ -66,212 +860,33 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-d8b702c7",
+        "id": "rev-7498-e9z0",
         "kindergartenId": "1ecec08c-eefa-b044-e053-0a32095ab044",
-        "title": "경주 예송유치원 소방관 견학 Instagram",
-        "url": "https://www.instagram.com/reel/DKgyePhSelP/",
-        "source": "other",
-        "sourceName": "Instagram · 예송유치원",
-        "snippet": "Instagram 검색 결과에서 경주 예송유치원 6·7세 119 안전센터 견학과 2026학년도 입학설명회 문맥이 함께 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "admissions"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "fe7221b4",
-        "structuredFields": {
-          "kindergartenName": "예송유치원",
-          "kindergartenAddress": "경상북도 경주시 유림로 69",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DKgyePhSelP%22+%22%EA%B2%BD%EC%A3%BC%EC%98%88%EC%86%A1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DKgyePhSelP/",
-          "normalizedUrl": "www.instagram.com/reel/dkgyephselp",
-          "normalizedText": "경주 예송유치원 소방관 견학 instagram instagram 검색 결과에서 경주 예송유치원 6·7세 119 안전센터 견학과 2026학년도 입학설명회 문맥이 함께 확인되는 릴.",
-          "htmlSnapshotHash": "fe7221b4",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "예송유치원",
-            "kindergartenAddress": "경상북도 경주시 유림로 69",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DKgyePhSelP%22+%22%EA%B2%BD%EC%A3%BC%EC%98%88%EC%86%A1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-fb3c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-a5681b69",
-        "kindergartenId": "1ecec08c-fb3c-b044-e053-0a32095ab044",
-        "title": "계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿)",
-        "url": "https://blog.naver.com/PostView.naver?blogId=loveefamily&logNo=223655581528",
+        "title": "2023 경주 예송 유치원 발표회",
+        "url": "https://blog.naver.com/rkddufcjswo/223292907498",
         "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시...",
-        "summary": "안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T18:25:12.955Z",
-        "relevanceScore": 5,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "1f92373f",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=loveefamily&logNo=223655581528",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=loveefamily&logno=223655581528",
-          "normalizedText": "계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿) 계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿) 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시... 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서... 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서 케어해주신 유치원 선생님들 덕분에 좀 더 빨리 하지 않았나 생각합니다^^ 입학 전 아무것도 모를 때어린이집은 애살있게 봐주는데 유치원은 안그렇다.초등학고랑 비슷하다.놀이활동 적다.무조건 스스로 다 해야한다.등등 조금은 걱정되는(?) 부분이 없지않아 있었는데..유치원 입학 후 지금은완~~~전 잘한 선택이었다 생각해요ㅎㅎ저 뿐 아니라 주변 엄마들이랑 얘기나누다보면보내고 만족한다고 공감 많이 해요^^!가끔 마주칠 때 보면진심으로 아이들 이뻐해주시고 사랑해주시는게 눈이 보이거든요.아이도 저랑 있다가도 선생님 보면\"선생님~\" 하며 달려가 안기면 말 다했죠 머...ㅎㅎ 봄되면 벚꽃구경, 꽃구경 가고여름엔 물놀이, 캠핑놀이 하고가을엔 숲체험,마을체험 하고겨울엔 김장 ,케이크 만들고그 외 어버이날엔 꽃바구니도 만들고,안전체험관,키즈카페, 동물원, 영화관,문화재관람도 가고유치원이라 활동이 적다고 생각했는데 돌이켜보면저보다 더 잘 다닌것 같아요 ㅋㅋㅋ 스스로 밥 먹을때가 많아 졌고,채소는 눈길 1도 안주고 한 입도 거부하던 아이가지금은 스스로 버섯넣어줘,파프리카넣어줘,멸치좋아해,나 오늘 채소해서 한입 먹었다!? 하며 자랑스럽게 얘기해주는 모습보며 진짜 놀랍습니다요 ㅋㅋㅋ 주변 언니들도 함께 감동 ㅋㅋ작년보다 올해에 참여 프로그램이 많아졌다 느꼈는데,알고보니 아이들에게 더 다양한 경험과 활동을 하게 해주기 위해 선생님들이 직접 공부하고 준비하고 애쓰신거더라구요 ㅠ덕분에 아이들이 많은 경험과 활동을 할수 있어 감사한 마음입니다🫶🏻 리플릿에 나와있는 사진 보면서아이랑 같이 자기는 어디있나~ 찾아보니 재밌더라구요 ㅎㅎ마음은 초등학교 안보내고 유치원 더 보내고 싶어요 ㅠㅠㅋㅋㅋㅋㅋ ㅋㅋㅋㅋㅋ이 모습 이대로 천천히 컸으면 좋겠어요 ㅠㅠ이 시간들이 아깝지않게 아이랑 하루하루 즐겁게잘 보내도록 할게요^^이웃님들도 늘 행복만 하세요❣️오늘도 화이팅~ 계림초등학교 병설유치원 경상북도 경주시 동문로43번길 16 이 블로그의 체크인 이 장소의 다른 글 #경주 #경주유치원 #경주병설유치원 #경주계림초등학교#경주계림초등학교병설유치원 #경주계림초병설 #경주계림초병설유치원 #경주시내 #경주시내유치원",
-          "htmlSnapshotHash": "1f92373f",
-          "extractedAt": "2026-06-29T18:25:12.955Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%84%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B2%BD%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "계림초등학교병설유치원",
-            "kindergartenAddress": "경상북도 경주시 동문로43번길 16",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%84%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B2%BD%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
+        "sourceName": "글라스스토리 경주황성점",
+        "snippet": "오늘은 저희 첫째 아이가 다니고 있는 경주 예송유치원 발표회 후기 써봅니다. 원래 쓰려고 했었는데ㅋㅋ 발표회장 들어가는길에 박모 선생님이  아버님 블로그 잘 부탁드립니다  이러시길래 쓸까말까...",
+        "date": "2023-12-14",
+        "collectedAt": "2026-02-18T06:13:58.475Z",
+        "relevanceScore": 8
       }
     ],
     "1ecec08c-f2e1-b044-e053-0a32095ab044": [
       {
-        "id": "rev-92357f94",
+        "id": "rev-0d67afc2",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 입학설명회 SNS",
-        "url": "https://www.instagram.com/p/DP3jeSLk5-1/",
+        "title": "경주 동도유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/CwP0GTEBzst/",
         "source": "other",
         "sourceName": "Instagram · 동도유치원",
-        "snippet": "2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경주여자정보고등학교병설동도유치원의 입학설명회 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "official-info"
-        ],
-        "content": "2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 Instagram 검색 결과. 원장부의 경주여자정보고등학교병설동도유치원과 기관명이 맞아 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T22:15:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "18ae7a15",
-        "structuredFields": {
-          "kindergartenName": "경주여자정보고등학교병설동도유치원",
-          "kindergartenAddress": "경상북도 경주시 시동로 90",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DP3jeSLk5-1%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 동도유치원 계정명과 경주 원장부 기관명을 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DP3jeSLk5-1/",
-          "normalizedUrl": "www.instagram.com/p/dp3jeslk5-1",
-          "normalizedText": "경주 동도유치원 입학설명회 sns 2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 instagram 검색 결과. 경주여자정보고등학교병설동도유치원의 입학설명회 instagram 검색 결과.",
-          "htmlSnapshotHash": "18ae7a15",
-          "extractedAt": "2026-06-30T22:15:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "경주여자정보고등학교병설동도유치원",
-            "kindergartenAddress": "경상북도 경주시 시동로 90",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DP3jeSLk5-1%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 동도유치원 계정명과 경주 원장부 기관명을 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T22:15:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5655d17b",
-        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 원아모집 SNS",
-        "url": "https://www.instagram.com/reel/Czn33K5hkbp/",
-        "source": "other",
-        "sourceName": "Instagram · 경주 동도유치원",
-        "snippet": "경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경북 경주시 경주여자정보고등학교병설동도유치원의 원아모집 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission"
-        ],
-        "content": "경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 Instagram 검색 결과. 기관명이 길어 게시물에서는 동도유치원으로 표기되며, 경주 문맥과 원장부 주소를 기준으로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:40:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "400bc156",
-        "structuredFields": {
-          "kindergartenName": "경주여자정보고등학교병설동도유치원",
-          "kindergartenAddress": "경상북도 경주시 시동로 90",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22Czn33K5hkbp%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "게시물의 동도유치원 표기를 경주여자정보고등학교병설동도유치원 원장부 주소와 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/Czn33K5hkbp/",
-          "normalizedUrl": "www.instagram.com/reel/czn33k5hkbp",
-          "normalizedText": "경주 동도유치원 원아모집 sns 경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 instagram 검색 결과. 경북 경주시 경주여자정보고등학교병설동도유치원의 원아모집 instagram 검색 결과.",
-          "htmlSnapshotHash": "400bc156",
-          "extractedAt": "2026-06-30T23:40:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "경주여자정보고등학교병설동도유치원",
-            "kindergartenAddress": "경상북도 경주시 시동로 90",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22Czn33K5hkbp%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "게시물의 동도유치원 표기를 경주여자정보고등학교병설동도유치원 원장부 주소와 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:40:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9caf2af8",
-        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 2026 입학설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DPvLSPHE4Wr/",
-        "source": "other",
-        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 2026학년도 경주여자정보고등학교 동도유치원 입학설명회 일시와 장소 문맥이 확인되는 릴.",
+        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원과 2026학년도 입학설명회 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "admission-info",
-          "school-info"
+          "admissions",
+          "orientation"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -279,75 +894,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "400dec55",
+        "evidenceChecksum": "4d0ec7bd",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPvLSPHE4Wr%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "searchUrl": "https://www.google.com/search?q=%22CwP0GTEBzst%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DPvLSPHE4Wr/",
-          "normalizedUrl": "www.instagram.com/reel/dpvlsphe4wr",
-          "normalizedText": "경주 동도유치원 2026 입학설명회 instagram instagram 검색 결과에서 2026학년도 경주여자정보고등학교 동도유치원 입학설명회 일시와 장소 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "400dec55",
+          "canonicalUrl": "https://www.instagram.com/p/CwP0GTEBzst/",
+          "normalizedUrl": "www.instagram.com/p/cwp0gtebzst",
+          "normalizedText": "경주 동도유치원 입학설명회 instagram instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원과 2026학년도 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "4d0ec7bd",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
             "kindergartenAddress": "경상북도 경주시 시동로 90",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPvLSPHE4Wr%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-d83f5ba7",
-        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 신입 원아모집 Instagram",
-        "url": "https://www.instagram.com/reel/DHsGiZ4zN5u/",
-        "source": "other",
-        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 2026학년도 경주여자정보고등학교병설 동도유치원 원아모집과 경주 거주 유아 신청 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission-info",
-          "school-info"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "d34df413",
-        "structuredFields": {
-          "kindergartenName": "경주여자정보고등학교병설동도유치원",
-          "kindergartenAddress": "경상북도 경주시 시동로 90",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DHsGiZ4zN5u/",
-          "normalizedUrl": "www.instagram.com/reel/dhsgiz4zn5u",
-          "normalizedText": "경주 동도유치원 신입 원아모집 instagram instagram 검색 결과에서 2026학년도 경주여자정보고등학교병설 동도유치원 원아모집과 경주 거주 유아 신청 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "d34df413",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "경주여자정보고등학교병설동도유치원",
-            "kindergartenAddress": "경상북도 경주시 시동로 90",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "searchUrl": "https://www.google.com/search?q=%22CwP0GTEBzst%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -390,6 +956,55 @@
           "normalizedUrl": "www.instagram.com/reel/do7yndhe-2u",
           "normalizedText": "경주 동도유치원 일상활동 instagram instagram 검색 결과에서 동도유치원, 경주여자정보고등학교병설동도유치원, 경주유치원추천 문맥과 원아 일상활동이 확인되는 릴.",
           "htmlSnapshotHash": "6b750354",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경주여자정보고등학교병설동도유치원",
+            "kindergartenAddress": "경상북도 경주시 시동로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-325cda36",
+        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
+        "title": "경주 동도유치원 물놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DMezAlHzFkg/",
+        "source": "other",
+        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
+        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설동도유치원, 동도유치원, 경주, 경주유치원, 물놀이, 수영장 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "0ed80548",
+        "structuredFields": {
+          "kindergartenName": "경주여자정보고등학교병설동도유치원",
+          "kindergartenAddress": "경상북도 경주시 시동로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DMezAlHzFkg/",
+          "normalizedUrl": "www.instagram.com/reel/dmezalhzfkg",
+          "normalizedText": "경주 동도유치원 물놀이 instagram instagram 검색 결과에서 경주여자정보고등학교병설동도유치원, 동도유치원, 경주, 경주유치원, 물놀이, 수영장 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "0ed80548",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
@@ -454,18 +1069,19 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-ee73b7e9",
+        "id": "rev-685b9353",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 어린이날 Instagram",
-        "url": "https://www.instagram.com/reel/DX6PUk_TEHU/",
+        "title": "경주 동도유치원 신입생 놀이 신청 Instagram",
+        "url": "https://www.instagram.com/reel/DH5E9UnzeBI/",
         "source": "other",
         "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 동도유치원 어린이날 활동과 경주여자정보고등학교병설동도유치원, 경주, 놀이중심 문맥이 확인되는 릴.",
+        "snippet": "Instagram 검색 결과에서 경주 거주 신입생을 대상으로 한 경주여자정보고등학교병설 동도유치원 놀이 신청 안내 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "school-life"
+          "admission-info",
+          "school-info"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -473,7 +1089,7 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "04c2ef5b",
+        "evidenceChecksum": "82fed5d4",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
@@ -483,58 +1099,10 @@
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DX6PUk_TEHU/",
-          "normalizedUrl": "www.instagram.com/reel/dx6puk_tehu",
-          "normalizedText": "경주 동도유치원 어린이날 instagram instagram 검색 결과에서 동도유치원 어린이날 활동과 경주여자정보고등학교병설동도유치원, 경주, 놀이중심 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "04c2ef5b",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "경주여자정보고등학교병설동도유치원",
-            "kindergartenAddress": "경상북도 경주시 시동로 90",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a122b367",
-        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 산타 행사 Instagram",
-        "url": "https://www.instagram.com/reel/DSou9x6k0hv/",
-        "source": "other",
-        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원 산타 행사와 2026학년도 원아모집 문맥이 함께 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "school-life"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "d5be5813",
-        "structuredFields": {
-          "kindergartenName": "경주여자정보고등학교병설동도유치원",
-          "kindergartenAddress": "경상북도 경주시 시동로 90",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DSou9x6k0hv/",
-          "normalizedUrl": "www.instagram.com/reel/dsou9x6k0hv",
-          "normalizedText": "경주 동도유치원 산타 행사 instagram instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원 산타 행사와 2026학년도 원아모집 문맥이 함께 확인되는 릴.",
-          "htmlSnapshotHash": "d5be5813",
+          "canonicalUrl": "https://www.instagram.com/reel/DH5E9UnzeBI/",
+          "normalizedUrl": "www.instagram.com/reel/dh5e9unzebi",
+          "normalizedText": "경주 동도유치원 신입생 놀이 신청 instagram instagram 검색 결과에서 경주 거주 신입생을 대상으로 한 경주여자정보고등학교병설 동도유치원 놀이 신청 안내 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "82fed5d4",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
@@ -647,18 +1215,66 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-325cda36",
+        "id": "rev-9caf2af8",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 물놀이 Instagram",
-        "url": "https://www.instagram.com/reel/DMezAlHzFkg/",
+        "title": "경주 동도유치원 2026 입학설명회 Instagram",
+        "url": "https://www.instagram.com/reel/DPvLSPHE4Wr/",
         "source": "other",
         "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설동도유치원, 동도유치원, 경주, 경주유치원, 물놀이, 수영장 문맥이 확인되는 릴.",
+        "snippet": "Instagram 검색 결과에서 2026학년도 경주여자정보고등학교 동도유치원 입학설명회 일시와 장소 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "outdoor-activity",
+          "admission-info",
+          "school-info"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "400dec55",
+        "structuredFields": {
+          "kindergartenName": "경주여자정보고등학교병설동도유치원",
+          "kindergartenAddress": "경상북도 경주시 시동로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPvLSPHE4Wr%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPvLSPHE4Wr/",
+          "normalizedUrl": "www.instagram.com/reel/dpvlsphe4wr",
+          "normalizedText": "경주 동도유치원 2026 입학설명회 instagram instagram 검색 결과에서 2026학년도 경주여자정보고등학교 동도유치원 입학설명회 일시와 장소 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "400dec55",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경주여자정보고등학교병설동도유치원",
+            "kindergartenAddress": "경상북도 경주시 시동로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPvLSPHE4Wr%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a122b367",
+        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
+        "title": "경주 동도유치원 산타 행사 Instagram",
+        "url": "https://www.instagram.com/reel/DSou9x6k0hv/",
+        "source": "other",
+        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
+        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원 산타 행사와 2026학년도 원아모집 문맥이 함께 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
           "school-life"
         ],
         "date": null,
@@ -667,7 +1283,7 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "0ed80548",
+        "evidenceChecksum": "d5be5813",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
@@ -677,10 +1293,10 @@
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DMezAlHzFkg/",
-          "normalizedUrl": "www.instagram.com/reel/dmezalhzfkg",
-          "normalizedText": "경주 동도유치원 물놀이 instagram instagram 검색 결과에서 경주여자정보고등학교병설동도유치원, 동도유치원, 경주, 경주유치원, 물놀이, 수영장 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "0ed80548",
+          "canonicalUrl": "https://www.instagram.com/reel/DSou9x6k0hv/",
+          "normalizedUrl": "www.instagram.com/reel/dsou9x6k0hv",
+          "normalizedText": "경주 동도유치원 산타 행사 instagram instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원 산타 행사와 2026학년도 원아모집 문맥이 함께 확인되는 릴.",
+          "htmlSnapshotHash": "d5be5813",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
@@ -696,13 +1312,111 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-685b9353",
+        "id": "rev-b54bf885",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 신입생 놀이 신청 Instagram",
-        "url": "https://www.instagram.com/reel/DH5E9UnzeBI/",
+        "title": "경주 동도유치원 발명체험교육관 활동 Instagram",
+        "url": "https://www.instagram.com/p/DGqHKskTqc8/",
+        "source": "other",
+        "sourceName": "Instagram · 동도유치원",
+        "snippet": "Instagram 검색 결과에서 동도유치원 친구들의 경북발명체험교육관 활동과 입학설명회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "science-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "274ee4ee",
+        "structuredFields": {
+          "kindergartenName": "경주여자정보고등학교병설동도유치원",
+          "kindergartenAddress": "경상북도 경주시 시동로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGqHKskTqc8%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DGqHKskTqc8/",
+          "normalizedUrl": "www.instagram.com/p/dgqhksktqc8",
+          "normalizedText": "경주 동도유치원 발명체험교육관 활동 instagram instagram 검색 결과에서 동도유치원 친구들의 경북발명체험교육관 활동과 입학설명회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "274ee4ee",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경주여자정보고등학교병설동도유치원",
+            "kindergartenAddress": "경상북도 경주시 시동로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGqHKskTqc8%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d270b24b",
+        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
+        "title": "경주 동도유치원 맨발걷기 활동 Reel",
+        "url": "https://www.instagram.com/reel/DJD9j6ozjOH/",
         "source": "other",
         "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram 검색 결과에서 경주 거주 신입생을 대상으로 한 경주여자정보고등학교병설 동도유치원 놀이 신청 안내 문맥이 확인되는 릴.",
+        "snippet": "Instagram Reels 검색 결과에서 경주여자정보고등학교병설 동도유치원, 경주, 유치원 놀이활동 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "d8c49d4b",
+        "structuredFields": {
+          "kindergartenName": "경주여자정보고등학교병설동도유치원",
+          "kindergartenAddress": "경상북도 경주시 시동로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJD9j6ozjOH%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJD9j6ozjOH/",
+          "normalizedUrl": "www.instagram.com/reel/djd9j6ozjoh",
+          "normalizedText": "경주 동도유치원 맨발걷기 활동 reel instagram reels 검색 결과에서 경주여자정보고등학교병설 동도유치원, 경주, 유치원 놀이활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "d8c49d4b",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경주여자정보고등학교병설동도유치원",
+            "kindergartenAddress": "경상북도 경주시 시동로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJD9j6ozjOH%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-d83f5ba7",
+        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
+        "title": "경주 동도유치원 신입 원아모집 Instagram",
+        "url": "https://www.instagram.com/reel/DHsGiZ4zN5u/",
+        "source": "other",
+        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
+        "snippet": "Instagram 검색 결과에서 2026학년도 경주여자정보고등학교병설 동도유치원 원아모집과 경주 거주 유아 신청 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
@@ -716,7 +1430,7 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "82fed5d4",
+        "evidenceChecksum": "d34df413",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
@@ -726,10 +1440,10 @@
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DH5E9UnzeBI/",
-          "normalizedUrl": "www.instagram.com/reel/dh5e9unzebi",
-          "normalizedText": "경주 동도유치원 신입생 놀이 신청 instagram instagram 검색 결과에서 경주 거주 신입생을 대상으로 한 경주여자정보고등학교병설 동도유치원 놀이 신청 안내 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "82fed5d4",
+          "canonicalUrl": "https://www.instagram.com/reel/DHsGiZ4zN5u/",
+          "normalizedUrl": "www.instagram.com/reel/dhsgiz4zn5u",
+          "normalizedText": "경주 동도유치원 신입 원아모집 instagram instagram 검색 결과에서 2026학년도 경주여자정보고등학교병설 동도유치원 원아모집과 경주 거주 유아 신청 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "d34df413",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
@@ -794,19 +1508,18 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-0d67afc2",
+        "id": "rev-ee73b7e9",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/CwP0GTEBzst/",
+        "title": "경주 동도유치원 어린이날 Instagram",
+        "url": "https://www.instagram.com/reel/DX6PUk_TEHU/",
         "source": "other",
-        "sourceName": "Instagram · 동도유치원",
-        "snippet": "Instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원과 2026학년도 입학설명회 문맥이 확인되는 게시물.",
+        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
+        "snippet": "Instagram 검색 결과에서 동도유치원 어린이날 활동과 경주여자정보고등학교병설동도유치원, 경주, 놀이중심 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "admissions",
-          "orientation"
+          "school-life"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -814,75 +1527,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "4d0ec7bd",
+        "evidenceChecksum": "04c2ef5b",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CwP0GTEBzst%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CwP0GTEBzst/",
-          "normalizedUrl": "www.instagram.com/p/cwp0gtebzst",
-          "normalizedText": "경주 동도유치원 입학설명회 instagram instagram 검색 결과에서 경주여자정보고등학교병설 동도유치원과 2026학년도 입학설명회 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "4d0ec7bd",
+          "canonicalUrl": "https://www.instagram.com/reel/DX6PUk_TEHU/",
+          "normalizedUrl": "www.instagram.com/reel/dx6puk_tehu",
+          "normalizedText": "경주 동도유치원 어린이날 instagram instagram 검색 결과에서 동도유치원 어린이날 활동과 경주여자정보고등학교병설동도유치원, 경주, 놀이중심 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "04c2ef5b",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
             "kindergartenAddress": "경상북도 경주시 시동로 90",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CwP0GTEBzst%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-b54bf885",
-        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 발명체험교육관 활동 Instagram",
-        "url": "https://www.instagram.com/p/DGqHKskTqc8/",
-        "source": "other",
-        "sourceName": "Instagram · 동도유치원",
-        "snippet": "Instagram 검색 결과에서 동도유치원 친구들의 경북발명체험교육관 활동과 입학설명회 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "science-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "274ee4ee",
-        "structuredFields": {
-          "kindergartenName": "경주여자정보고등학교병설동도유치원",
-          "kindergartenAddress": "경상북도 경주시 시동로 90",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DGqHKskTqc8%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DGqHKskTqc8/",
-          "normalizedUrl": "www.instagram.com/p/dgqhksktqc8",
-          "normalizedText": "경주 동도유치원 발명체험교육관 활동 instagram instagram 검색 결과에서 동도유치원 친구들의 경북발명체험교육관 활동과 입학설명회 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "274ee4ee",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "경주여자정보고등학교병설동도유치원",
-            "kindergartenAddress": "경상북도 경주시 시동로 90",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DGqHKskTqc8%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -941,812 +1605,154 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-d270b24b",
+        "id": "rev-5655d17b",
         "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
-        "title": "경주 동도유치원 맨발걷기 활동 Reel",
-        "url": "https://www.instagram.com/reel/DJD9j6ozjOH/",
+        "title": "경주 동도유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/reel/Czn33K5hkbp/",
         "source": "other",
-        "sourceName": "Instagram · 경주여자정보고등학교병설 동도유치원",
-        "snippet": "Instagram Reels 검색 결과에서 경주여자정보고등학교병설 동도유치원, 경주, 유치원 놀이활동 문맥이 확인되는 게시물.",
+        "sourceName": "Instagram · 경주 동도유치원",
+        "snippet": "경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경북 경주시 경주여자정보고등학교병설동도유치원의 원아모집 Instagram 검색 결과.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "kindergarten-event",
-          "outdoor-activity"
+          "instagram",
+          "admission"
         ],
+        "content": "경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 Instagram 검색 결과. 기관명이 길어 게시물에서는 동도유치원으로 표기되며, 경주 문맥과 원장부 주소를 기준으로 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "collectedAt": "2026-06-30T23:40:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "d8c49d4b",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "400bc156",
         "structuredFields": {
           "kindergartenName": "경주여자정보고등학교병설동도유치원",
           "kindergartenAddress": "경상북도 경주시 시동로 90",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJD9j6ozjOH%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+          "searchUrl": "https://www.google.com/search?q=%22Czn33K5hkbp%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": true,
+          "snippetCaveat": "게시물의 동도유치원 표기를 경주여자정보고등학교병설동도유치원 원장부 주소와 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DJD9j6ozjOH/",
-          "normalizedUrl": "www.instagram.com/reel/djd9j6ozjoh",
-          "normalizedText": "경주 동도유치원 맨발걷기 활동 reel instagram reels 검색 결과에서 경주여자정보고등학교병설 동도유치원, 경주, 유치원 놀이활동 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "d8c49d4b",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/Czn33K5hkbp/",
+          "normalizedUrl": "www.instagram.com/reel/czn33k5hkbp",
+          "normalizedText": "경주 동도유치원 원아모집 sns 경주여자정보고등학교병설 동도유치원 2026학년도 원아모집 안내와 동도유치원 교육활동 문맥이 확인되는 instagram 검색 결과. 경북 경주시 경주여자정보고등학교병설동도유치원의 원아모집 instagram 검색 결과.",
+          "htmlSnapshotHash": "400bc156",
+          "extractedAt": "2026-06-30T23:40:00.000Z",
           "structuredFields": {
             "kindergartenName": "경주여자정보고등학교병설동도유치원",
             "kindergartenAddress": "경상북도 경주시 시동로 90",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJD9j6ozjOH%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
+            "searchUrl": "https://www.google.com/search?q=%22Czn33K5hkbp%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": true,
+            "snippetCaveat": "게시물의 동도유치원 표기를 경주여자정보고등학교병설동도유치원 원장부 주소와 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-eed9-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-91aafbe5",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 여름 물놀이 Instagram",
-        "url": "https://www.instagram.com/reel/DL9q3BYhI0p/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이와 분수튜브 준비 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "water-play",
-          "activity"
-        ],
-        "date": "2025-07-11",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "b3c7ce99",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DL9q3BYhI0p%22+%22bulguk__kinder_garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DL9q3BYhI0p/",
-          "normalizedUrl": "www.instagram.com/reel/dl9q3byhi0p",
-          "normalizedText": "경주 불국유치원 여름 물놀이 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이와 분수튜브 준비 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "b3c7ce99",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DL9q3BYhI0p%22+%22bulguk__kinder_garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedAt": "2026-06-30T23:40:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-59f378c4",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 제45회 졸업식 Instagram",
-        "url": "https://www.instagram.com/reel/DUx_5yxEpLJ/",
+        "id": "rev-92357f94",
+        "kindergartenId": "1ecec08c-f2e1-b044-e053-0a32095ab044",
+        "title": "경주 동도유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DP3jeSLk5-1/",
         "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "bulguk__kinder_garten 계정에서 제45회 불국유치원 졸업식과 경주 불국유치원 해시태그 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "graduation"
-        ],
-        "date": "2026-02-15",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "18ef097e",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DUx_5yxEpLJ%22+%22bulguk__kinder_garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DUx_5yxEpLJ/",
-          "normalizedUrl": "www.instagram.com/reel/dux_5yxeplj",
-          "normalizedText": "경주 불국유치원 제45회 졸업식 instagram bulguk__kinder_garten 계정에서 제45회 불국유치원 졸업식과 경주 불국유치원 해시태그 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "18ef097e",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DUx_5yxEpLJ%22+%22bulguk__kinder_garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-1952e42d",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 수료식 Instagram",
-        "url": "https://www.instagram.com/reel/DUx_ZuqEiPS/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 수료식과 새 학년 시작 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "graduation"
-        ],
-        "date": "2026-02-15",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "4cc99121",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DUx_ZuqEiPS%22+%22bulguk__kinder_garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DUx_ZuqEiPS/",
-          "normalizedUrl": "www.instagram.com/reel/dux_zuqeips",
-          "normalizedText": "경주 불국유치원 수료식 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 수료식과 새 학년 시작 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "4cc99121",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DUx_ZuqEiPS%22+%22bulguk__kinder_garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-fd56491c",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 여름 물놀이 Instagram",
-        "url": "https://www.instagram.com/reel/DL9zvxVSSqA/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이 활동 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "water-play",
-          "activity"
-        ],
-        "date": "2025-07-11",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "2cb97346",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DL9zvxVSSqA%22+%22bulguk__kinder_garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DL9zvxVSSqA/",
-          "normalizedUrl": "www.instagram.com/reel/dl9zvxvssqa",
-          "normalizedText": "경주 불국유치원 여름 물놀이 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 물놀이 활동 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "2cb97346",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DL9zvxVSSqA%22+%22bulguk__kinder_garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-37a37211",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 여름 현장활동 Instagram",
-        "url": "https://www.instagram.com/reel/DNnQ5MdhpJ1/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "bulguk__kinder_garten 계정에서 경주 불국유치원 여름 활동과 문무대왕릉 나들이 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "summer"
-        ],
-        "date": "2025-08-21",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "ddb1790e",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DNnQ5MdhpJ1%22+%22bulguk__kinder_garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DNnQ5MdhpJ1/",
-          "normalizedUrl": "www.instagram.com/reel/dnnq5mdhpj1",
-          "normalizedText": "경주 불국유치원 여름 현장활동 instagram bulguk__kinder_garten 계정에서 경주 불국유치원 여름 활동과 문무대왕릉 나들이 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "ddb1790e",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DNnQ5MdhpJ1%22+%22bulguk__kinder_garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-0adf5d18",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/reel/C8UJcyyBRme/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주 불국유치원 7살 형님반 부모참여수업과 경주유치원 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "school-life"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "83b07168",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C8UJcyyBRme%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C8UJcyyBRme/",
-          "normalizedUrl": "www.instagram.com/reel/c8ujcyybrme",
-          "normalizedText": "경주 불국유치원 부모참여수업 instagram instagram 검색 결과에서 경주 불국유치원 7살 형님반 부모참여수업과 경주유치원 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "83b07168",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C8UJcyyBRme%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-db6e26f1",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 요리 주제수업 Instagram",
-        "url": "https://www.instagram.com/reel/DInQftwSLyx/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주 불국유치원 주제수업·요리 활동과 부모참여수업·유치원야시장 문맥이 함께 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "classroom-activity",
-          "parent-participation"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "0f6ec7ba",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DInQftwSLyx%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DInQftwSLyx/",
-          "normalizedUrl": "www.instagram.com/reel/dinqftwslyx",
-          "normalizedText": "경주 불국유치원 요리 주제수업 instagram instagram 검색 결과에서 경주 불국유치원 주제수업·요리 활동과 부모참여수업·유치원야시장 문맥이 함께 확인되는 릴.",
-          "htmlSnapshotHash": "0f6ec7ba",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DInQftwSLyx%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-54bb45bf",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 발표력대회 Instagram",
-        "url": "https://www.instagram.com/reel/DJjF-lzSfuO/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주 불국유치원 발표력대회와 자신감 향상 교육활동, 부모참여수업·유치원야시장 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "classroom-activity",
-          "presentation-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "f6509b68",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJjF-lzSfuO%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DJjF-lzSfuO/",
-          "normalizedUrl": "www.instagram.com/reel/djjf-lzsfuo",
-          "normalizedText": "경주 불국유치원 발표력대회 instagram instagram 검색 결과에서 경주 불국유치원 발표력대회와 자신감 향상 교육활동, 부모참여수업·유치원야시장 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "f6509b68",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJjF-lzSfuO%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-c8cec769",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 교육설명회 Instagram",
-        "url": "https://www.instagram.com/p/CyVCXIgBVdQ/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 불국유치원입학설명회, 교육설명회 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "5851a5a7",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CyVCXIgBVdQ%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CyVCXIgBVdQ/",
-          "normalizedUrl": "www.instagram.com/p/cyvcxigbvdq",
-          "normalizedText": "경주 불국유치원 교육설명회 instagram instagram 검색 결과에서 경주, 불국유치원, 불국유치원입학설명회, 교육설명회 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "5851a5a7",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CyVCXIgBVdQ%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%BD%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-b0b252fc",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 졸업식 Reel",
-        "url": "https://www.instagram.com/reel/DGR5wcfSJzE/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram Reels 검색 결과에서 경주, 불국유치원, 졸업식 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "kindergarten-event",
-          "graduation"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "97e1c97e",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DGR5wcfSJzE%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DGR5wcfSJzE/",
-          "normalizedUrl": "www.instagram.com/reel/dgr5wcfsjze",
-          "normalizedText": "경주 불국유치원 졸업식 reel instagram reels 검색 결과에서 경주, 불국유치원, 졸업식 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "97e1c97e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DGR5wcfSJzE%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%A1%B8%EC%97%85%EC%8B%9D%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9b3b7b30",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 교통안전교육 Instagram Post",
-        "url": "https://www.instagram.com/p/DHv4CFDS9GB/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 교통안전교육과 횡단보도 건너기 연습 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "safety-education",
-          "traffic-safety"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "evidenceChecksum": "a8a5b813",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DHv4CFDS9GB%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DHv4CFDS9GB/",
-          "normalizedUrl": "www.instagram.com/p/dhv4cfds9gb",
-          "normalizedText": "경주 불국유치원 교통안전교육 instagram post instagram 검색 결과에서 경주, 불국유치원, 교통안전교육과 횡단보도 건너기 연습 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "a8a5b813",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DHv4CFDS9GB%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-73907718",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 식목일 다육이심기 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DICt3Hbzk0n/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주 불국유치원 식목일과 헌 신발을 활용한 다육이 심기 활동 단서가 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "garden",
-          "arbor-day"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "998a77bb",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DICt3Hbzk0n%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DICt3Hbzk0n/",
-          "normalizedUrl": "www.instagram.com/reel/dict3hbzk0n",
-          "normalizedText": "경주 불국유치원 식목일 다육이심기 instagram reel instagram 검색 결과에서 경주 불국유치원 식목일과 헌 신발을 활용한 다육이 심기 활동 단서가 확인되는 릴.",
-          "htmlSnapshotHash": "998a77bb",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "불국유치원",
-            "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DICt3Hbzk0n%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%8B%9D%EB%AA%A9%EC%9D%BC%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-76549cc3",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "kindergartenName": "불국유치원",
-        "title": "경주 불국유치원 추석 달토끼 행사 Reel",
-        "url": "https://www.instagram.com/reel/C_h27U5SUSw/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주 불국유치원의 추석 행사와 달토끼 선생님 활동 문맥이 확인되는 릴.",
-        "date": "2024-09-05",
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "chuseok",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C_h27U5SUSw%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B6%94%EC%84%9D%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/C_h27U5SUSw/",
-          "regionEvidence": [
-            "경주",
-            "불국유치원",
-            "추석",
-            "달토끼"
-          ]
-        },
-        "evidenceChecksum": "645a31e2"
-      },
-      {
-        "id": "rev-ca21a7b8",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "kindergartenName": "불국유치원",
-        "title": "경주 불국유치원 봄소풍 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DH8STerhRSh/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "Instagram 검색 결과에서 경주, 불국유치원, 봄소풍과 불국사 소풍사진 문맥이 확인되는 릴스.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "불국유치원",
-          "kindergartenAddress": "경상북도 경주시 다불로 379-25",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DH8STerhRSh%22+%22%EB%B6%88%EA%B5%AD%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B4%84%EC%86%8C%ED%92%8D%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DH8STerhRSh/",
-          "regionEvidence": [
-            "경주",
-            "불국유치원",
-            "봄소풍",
-            "불국사 소풍사진"
-          ]
-        },
-        "evidenceChecksum": "acc45bc8"
-      },
-      {
-        "id": "rev-sns-wave698-ab8c21c9",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 7세 숲놀이 기록",
-        "url": "https://www.instagram.com/reel/DYE5O8XxFGC/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "불국유치원 7세 유아들이 경주 숲에서 처음 숲 활동을 하며 자연을 만난 공개 릴스입니다.",
-        "summary": "숲체험과 바깥놀이를 통해 아이들이 계절 자연을 관찰한 유치원 활동 원문입니다.",
+        "sourceName": "Instagram · 동도유치원",
+        "snippet": "2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경주여자정보고등학교병설동도유치원의 입학설명회 Instagram 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "forest-play",
-          "outdoor-learning",
-          "gyeongju"
+          "official-info"
         ],
+        "content": "2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 Instagram 검색 결과. 원장부의 경주여자정보고등학교병설동도유치원과 기관명이 맞아 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-07-03T23:59:59.995Z",
+        "collectedAt": "2026-06-30T22:15:00.000Z",
+        "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave698-ab8c21c9",
+        "evidenceChecksum": "18ae7a15",
+        "structuredFields": {
+          "kindergartenName": "경주여자정보고등학교병설동도유치원",
+          "kindergartenAddress": "경상북도 경주시 시동로 90",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DP3jeSLk5-1%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 동도유치원 계정명과 경주 원장부 기관명을 기준으로 수동 매칭했다."
+        },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/",
-          "normalizedUrl": "instagram.com/reel/dye5o8xxfgc",
-          "normalizedText": "불국유치원 경주 7세 숲체험 숲놀이 자연 관찰",
-          "htmlSnapshotHash": "sns-wave698-ab8c21c9",
-          "extractedAt": "2026-07-03T23:59:59.995Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DYE5O8XxFGC/"
+          "canonicalUrl": "https://www.instagram.com/p/DP3jeSLk5-1/",
+          "normalizedUrl": "www.instagram.com/p/dp3jeslk5-1",
+          "normalizedText": "경주 동도유치원 입학설명회 sns 2026학년도 동도유치원 입학설명회 안내 문맥이 확인되는 instagram 검색 결과. 경주여자정보고등학교병설동도유치원의 입학설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "18ae7a15",
+          "extractedAt": "2026-06-30T22:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "경주여자정보고등학교병설동도유치원",
+            "kindergartenAddress": "경상북도 경주시 시동로 90",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DP3jeSLk5-1%22+%22%EB%8F%99%EB%8F%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 동도유치원 계정명과 경주 원장부 기관명을 기준으로 수동 매칭했다."
+          }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.995Z",
-        "approvedBy": "codex-manual-sns-wave698"
-      },
-      {
-        "id": "rev-sns-wave728-ce7825d6",
-        "kindergartenId": "1ecec08c-eed9-b044-e053-0a32095ab044",
-        "title": "경주 불국유치원 일곱살 졸업여행 기록",
-        "url": "https://www.instagram.com/reel/DRE4sRNkoXt/",
-        "source": "other",
-        "sourceName": "Instagram · 불국유치원",
-        "snippet": "불국유치원 일곱살 친구들이 졸업을 앞두고 추억 가득한 졸업여행을 다녀온 릴스입니다.",
-        "summary": "유아들이 졸업 전 친구들과 함께 특별한 여행 경험을 남긴 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "graduation-trip",
-          "kindergarten-trip",
-          "friendship",
-          "gyeongju"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave728-ce7825d6",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRE4sRNkoXt/",
-          "normalizedUrl": "instagram.com/reel/dre4srnkoxt",
-          "normalizedText": "경주 불국유치원 일곱살 졸업여행 추억 여행",
-          "htmlSnapshotHash": "sns-wave728-ce7825d6",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DRE4sRNkoXt/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave728"
-      },
-      {
-        "id": "rev-99852417",
-        "title": "불국유치원 교사교육 후기 '유아의 발달 및 행동 이해'",
-        "url": "https://blog.naver.com/maeya79/222705120982",
-        "source": "naver_blog",
-        "sourceName": "건강한 맘 연구소",
-        "snippet": "이번에는 경주에 있는 불국 유치원 선생님들과 지난주와 이번주 3회에 걸쳐 교사교육을 진행하였습니다. 연령별로 집중도 있게 진행하길 원하시는 원장님의 요청에 따라 5세, 6세, 7세 연령별로 따로...",
-        "date": "2022-04-19",
-        "collectedAt": "2026-01-30T03:09:52.596Z"
+        "approvedAt": "2026-06-30T22:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-f6bd-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ed0328f6",
+        "kindergartenId": "1ecec08c-f6bd-b044-e053-0a32095ab044",
+        "kindergartenName": "동국대학교부속유치원",
+        "title": "경주 동국대학교부속유치원 설날 행사 Reel",
+        "url": "https://www.instagram.com/reel/DUuosq4D0DK/",
+        "source": "other",
+        "sourceName": "Instagram · 동국대학교부속유치원",
+        "snippet": "Instagram 검색 결과에서 동국대학교부속유치원의 설날 행사, 만두와 떡국떡 활동 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "lunar-new-year",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "동국대학교부속유치원",
+          "kindergartenAddress": "경상북도 경주시 동대로 159",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DUuosq4D0DK%22+%22%EB%8F%99%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90+%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%A4%EB%82%A0+%ED%96%89%EC%82%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DUuosq4D0DK/",
+          "regionEvidence": [
+            "동국대학교부속유치원",
+            "경주",
+            "설날 행사"
+          ]
+        },
+        "evidenceChecksum": "5de2805f"
+      },
       {
         "id": "rev-54e2683e",
         "kindergartenId": "1ecec08c-f6bd-b044-e053-0a32095ab044",
@@ -1795,150 +1801,42 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-ed0328f6",
-        "kindergartenId": "1ecec08c-f6bd-b044-e053-0a32095ab044",
-        "kindergartenName": "동국대학교부속유치원",
-        "title": "경주 동국대학교부속유치원 설날 행사 Reel",
-        "url": "https://www.instagram.com/reel/DUuosq4D0DK/",
-        "source": "other",
-        "sourceName": "Instagram · 동국대학교부속유치원",
-        "snippet": "Instagram 검색 결과에서 동국대학교부속유치원의 설날 행사, 만두와 떡국떡 활동 문맥이 확인되는 릴.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "lunar-new-year",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "동국대학교부속유치원",
-          "kindergartenAddress": "경상북도 경주시 동대로 159",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DUuosq4D0DK%22+%22%EB%8F%99%EA%B5%AD%EB%8C%80%ED%95%99%EA%B5%90+%EB%B6%80%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%A4%EB%82%A0+%ED%96%89%EC%82%AC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DUuosq4D0DK/",
-          "regionEvidence": [
-            "동국대학교부속유치원",
-            "경주",
-            "설날 행사"
-          ]
-        },
-        "evidenceChecksum": "5de2805f"
       }
     ],
-    "1ecec08d-0d61-b044-e053-0a32095ab044": [
+    "1ecec08c-fb3c-b044-e053-0a32095ab044": [
       {
-        "id": "rev-c7ca23bf",
-        "kindergartenId": "1ecec08d-0d61-b044-e053-0a32095ab044",
-        "title": "경주 중앙유치원 원아모집 홍보 Instagram",
-        "url": "https://www.instagram.com/reel/C0lU7RnqPnd/",
-        "source": "other",
-        "sourceName": "Instagram · 경주중앙유치원",
-        "snippet": "Instagram 검색 결과에서 경주시 경주중앙유치원·경주중앙숲유치원 홍보영상, 오시는 길, 원아모집 문맥이 확인되는 릴.",
+        "id": "rev-a5681b69",
+        "kindergartenId": "1ecec08c-fb3c-b044-e053-0a32095ab044",
+        "title": "계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=loveefamily&logNo=223655581528",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시...",
+        "summary": "안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서...",
         "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "institution-overview"
+          "public"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-06-29T18:25:12.955Z",
+        "relevanceScore": 5,
         "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2e8f38fb",
-        "structuredFields": {
-          "kindergartenName": "중앙유치원",
-          "kindergartenAddress": "경상북도 경주시 태종로 266-8",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C0lU7RnqPnd%22+%22%EA%B2%BD%EC%A3%BC%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "1f92373f",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C0lU7RnqPnd/",
-          "normalizedUrl": "www.instagram.com/reel/c0lu7rnqpnd",
-          "normalizedText": "경주 중앙유치원 원아모집 홍보 instagram instagram 검색 결과에서 경주시 경주중앙유치원·경주중앙숲유치원 홍보영상, 오시는 길, 원아모집 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "2e8f38fb",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=loveefamily&logNo=223655581528",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=loveefamily&logno=223655581528",
+          "normalizedText": "계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿) 계속 다니고 싶은... _경주 계림초병설유치원 (feat.계림초병설유치원리플릿) 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시... 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서... 안녕하세요^_^오늘은 또 새로운 한 주가 시작되는 월요일이네요.이웃님들 모두 주말 잘 보내셨나요?날씨도 점점 추워지고,벌써 11월이라니... 시간이 왜이리 빨리 지나가는것같죠 ㅜ유치원 모집신청기간이 된 걸 보니 벌써 한 해가 다 지나간 기분이에요.. 저희 아이가 다니는 유치원에서도 유아모집 리플릿이 올라왔기에 더 많은 분들에게 보여드리려고요 😊엄마 껌딱지이던 아이가입학때는 울고 불고등원 시키고도 걱정 한가득일 때가 엊그제 같은데..이제는 선생님, 친구들 보면 손 잡고 스스로 등원하는,엄마는 쿨하게 보내주는 아이가 되었거든요 ㅎㅎ시간이 흐르면서 자연스럽게 친구들과 친해져서 그런것도 있지만,좀 더 빠르고 편하게 적응 할 수 있도록가까이에서 케어해주신 유치원 선생님들 덕분에 좀 더 빨리 하지 않았나 생각합니다^^ 입학 전 아무것도 모를 때어린이집은 애살있게 봐주는데 유치원은 안그렇다.초등학고랑 비슷하다.놀이활동 적다.무조건 스스로 다 해야한다.등등 조금은 걱정되는(?) 부분이 없지않아 있었는데..유치원 입학 후 지금은완~~~전 잘한 선택이었다 생각해요ㅎㅎ저 뿐 아니라 주변 엄마들이랑 얘기나누다보면보내고 만족한다고 공감 많이 해요^^!가끔 마주칠 때 보면진심으로 아이들 이뻐해주시고 사랑해주시는게 눈이 보이거든요.아이도 저랑 있다가도 선생님 보면\"선생님~\" 하며 달려가 안기면 말 다했죠 머...ㅎㅎ 봄되면 벚꽃구경, 꽃구경 가고여름엔 물놀이, 캠핑놀이 하고가을엔 숲체험,마을체험 하고겨울엔 김장 ,케이크 만들고그 외 어버이날엔 꽃바구니도 만들고,안전체험관,키즈카페, 동물원, 영화관,문화재관람도 가고유치원이라 활동이 적다고 생각했는데 돌이켜보면저보다 더 잘 다닌것 같아요 ㅋㅋㅋ 스스로 밥 먹을때가 많아 졌고,채소는 눈길 1도 안주고 한 입도 거부하던 아이가지금은 스스로 버섯넣어줘,파프리카넣어줘,멸치좋아해,나 오늘 채소해서 한입 먹었다!? 하며 자랑스럽게 얘기해주는 모습보며 진짜 놀랍습니다요 ㅋㅋㅋ 주변 언니들도 함께 감동 ㅋㅋ작년보다 올해에 참여 프로그램이 많아졌다 느꼈는데,알고보니 아이들에게 더 다양한 경험과 활동을 하게 해주기 위해 선생님들이 직접 공부하고 준비하고 애쓰신거더라구요 ㅠ덕분에 아이들이 많은 경험과 활동을 할수 있어 감사한 마음입니다🫶🏻 리플릿에 나와있는 사진 보면서아이랑 같이 자기는 어디있나~ 찾아보니 재밌더라구요 ㅎㅎ마음은 초등학교 안보내고 유치원 더 보내고 싶어요 ㅠㅠㅋㅋㅋㅋㅋ ㅋㅋㅋㅋㅋ이 모습 이대로 천천히 컸으면 좋겠어요 ㅠㅠ이 시간들이 아깝지않게 아이랑 하루하루 즐겁게잘 보내도록 할게요^^이웃님들도 늘 행복만 하세요❣️오늘도 화이팅~ 계림초등학교 병설유치원 경상북도 경주시 동문로43번길 16 이 블로그의 체크인 이 장소의 다른 글 #경주 #경주유치원 #경주병설유치원 #경주계림초등학교#경주계림초등학교병설유치원 #경주계림초병설 #경주계림초병설유치원 #경주시내 #경주시내유치원",
+          "htmlSnapshotHash": "1f92373f",
+          "extractedAt": "2026-06-29T18:25:12.955Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%84%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B2%BD%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
           "structuredFields": {
-            "kindergartenName": "중앙유치원",
-            "kindergartenAddress": "경상북도 경주시 태종로 266-8",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C0lU7RnqPnd%22+%22%EA%B2%BD%EC%A3%BC%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "kindergartenName": "계림초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 동문로43번길 16",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%B3%84%EB%A6%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EA%B2%BD%EC%A3%BC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
           }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-eefc-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-eda49d1a",
-        "kindergartenId": "1ecec08c-eefc-b044-e053-0a32095ab044",
-        "title": "경주 의곡초등학교병설유치원 신입 원아모집 Reel",
-        "url": "https://www.instagram.com/reel/DQYiPxWE93F/",
-        "source": "other",
-        "sourceName": "Instagram · 의곡초등학교",
-        "snippet": "Instagram Reels 검색 결과에서 의곡초 병설유치원, 자연과 함께 자라는 신입 원아 모집과 초등학교 연계 교육 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event",
-          "outdoor-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "510fb6cd",
-        "structuredFields": {
-          "kindergartenName": "의곡초등학교병설유치원",
-          "kindergartenAddress": "경상북도 경주시 문복로 1798-6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQYiPxWE93F%22+%22%EC%9D%98%EA%B3%A1%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQYiPxWE93F/",
-          "normalizedUrl": "www.instagram.com/reel/dqyipxwe93f",
-          "normalizedText": "경주 의곡초등학교병설유치원 신입 원아모집 reel instagram reels 검색 결과에서 의곡초 병설유치원, 자연과 함께 자라는 신입 원아 모집과 초등학교 연계 교육 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "510fb6cd",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "의곡초등학교병설유치원",
-            "kindergartenAddress": "경상북도 경주시 문복로 1798-6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQYiPxWE93F%22+%22%EC%9D%98%EA%B3%A1%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        }
       }
     ],
     "1ecec08c-fb3d-b044-e053-0a32095ab044": [
@@ -1981,60 +1879,6 @@
           ]
         },
         "evidenceChecksum": "cd1ed921"
-      }
-    ],
-    "1ecec08d-0087-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-f922d41a",
-        "kindergartenId": "1ecec08d-0087-b044-e053-0a32095ab044",
-        "title": "황남초등학교병설유치원 그림책 활동 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DZEIVJzzJyM/",
-        "source": "other",
-        "sourceName": "Instagram · 책방그린",
-        "snippet": "검색 결과에서 황남초병설유치원, 곰선생님, 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "picture-book",
-          "reading-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T22:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "f922d41a",
-        "structuredFields": {
-          "kindergartenName": "황남초등학교병설유치원",
-          "kindergartenAddress": "경상북도 경주시 광중2길 28",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZEIVJzzJyM/",
-          "normalizedUrl": "instagram.com/reel/dzeivjzzjym",
-          "normalizedText": "황남초등학교병설유치원 그림책 활동 instagram reel 검색 결과에서 황남초병설유치원 곰선생님 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "f922d41a",
-          "extractedAt": "2026-07-03T22:05:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "황남초등학교병설유치원",
-            "kindergartenAddress": "경상북도 경주시 광중2길 28",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T22:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-001f-b044-e053-0a32095ab044": [
@@ -2084,6 +1928,60 @@
             "addressEvidenceRequired": false,
             "snippetOnly": true,
             "snippetCaveat": "금장초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0087-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-f922d41a",
+        "kindergartenId": "1ecec08d-0087-b044-e053-0a32095ab044",
+        "title": "황남초등학교병설유치원 그림책 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+        "source": "other",
+        "sourceName": "Instagram · 책방그린",
+        "snippet": "검색 결과에서 황남초병설유치원, 곰선생님, 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "picture-book",
+          "reading-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "f922d41a",
+        "structuredFields": {
+          "kindergartenName": "황남초등학교병설유치원",
+          "kindergartenAddress": "경상북도 경주시 광중2길 28",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZEIVJzzJyM/",
+          "normalizedUrl": "instagram.com/reel/dzeivjzzjym",
+          "normalizedText": "황남초등학교병설유치원 그림책 활동 instagram reel 검색 결과에서 황남초병설유치원 곰선생님 아이들에게 좋은 그림책을 경험하게 한 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "f922d41a",
+          "extractedAt": "2026-07-03T22:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "황남초등학교병설유치원",
+            "kindergartenAddress": "경상북도 경주시 광중2길 28",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZEIVJzzJyM%22%20%22%ED%99%A9%EB%82%A8%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B7%B8%EB%A6%BC%EC%B1%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "황남초등학교병설유치원은 로컬 원장부 단일 정확 명칭이며 검색 결과의 기관명과 그림책 활동 단서가 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
@@ -2167,16 +2065,55 @@
         "approvedBy": "codex-manual-sns-wave750"
       }
     ],
-    "1ecec08c-f2d2-b044-e053-0a32095ab044": [
+    "1ecec08d-0d61-b044-e053-0a32095ab044": [
       {
-        "id": "rev-99852418",
-        "title": "경주 유치원 레이저 마술쇼 후기 – 아이들과 함께한 신나는...",
-        "url": "https://blog.naver.com/dino-fam/224057170966",
-        "source": "naver_blog",
-        "sourceName": "공룡패밀리",
-        "snippet": "최근 경주 한 유치원에서 진행한 레이저 마술쇼가 성황리에 끝나, 공연 진행자로서 느낀 소감을... 이번 경주 유치원 레이저 마술쇼 또한 그 특별함을 충분히 느낄 수 있는 자리였어요. 앞으로도...",
-        "date": "2025-10-29",
-        "collectedAt": "2026-01-30T03:09:56.678Z"
+        "id": "rev-c7ca23bf",
+        "kindergartenId": "1ecec08d-0d61-b044-e053-0a32095ab044",
+        "title": "경주 중앙유치원 원아모집 홍보 Instagram",
+        "url": "https://www.instagram.com/reel/C0lU7RnqPnd/",
+        "source": "other",
+        "sourceName": "Instagram · 경주중앙유치원",
+        "snippet": "Instagram 검색 결과에서 경주시 경주중앙유치원·경주중앙숲유치원 홍보영상, 오시는 길, 원아모집 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "institution-overview"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2e8f38fb",
+        "structuredFields": {
+          "kindergartenName": "중앙유치원",
+          "kindergartenAddress": "경상북도 경주시 태종로 266-8",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0lU7RnqPnd%22+%22%EA%B2%BD%EC%A3%BC%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C0lU7RnqPnd/",
+          "normalizedUrl": "www.instagram.com/reel/c0lu7rnqpnd",
+          "normalizedText": "경주 중앙유치원 원아모집 홍보 instagram instagram 검색 결과에서 경주시 경주중앙유치원·경주중앙숲유치원 홍보영상, 오시는 길, 원아모집 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "2e8f38fb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "중앙유치원",
+            "kindergartenAddress": "경상북도 경주시 태종로 266-8",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0lU7RnqPnd%22+%22%EA%B2%BD%EC%A3%BC%EC%A4%91%EC%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

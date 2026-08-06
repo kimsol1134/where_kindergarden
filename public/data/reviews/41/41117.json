@@ -1,76 +1,81 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 26,
-  "kindergartenCount": 15,
+  "version": "2026-08-06",
+  "totalCount": 34,
+  "kindergartenCount": 21,
   "reviews": {
-    "1ecec08d-04c0-b044-e053-0a32095ab044": [
+    "1ecec08c-ef74-b044-e053-0a32095ab044": [
       {
-        "id": "rev-337c2115",
-        "kindergartenId": "1ecec08d-04c0-b044-e053-0a32095ab044",
-        "title": "[소개] 수원 선덕유치원을 소개합니다.",
-        "url": "https://blog.naver.com/PostView.naver?blogId=sd2158016&logNo=223841492285",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 ON) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설...",
-        "summary": "선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 ON) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상...",
+        "id": "rev-e410080c",
+        "kindergartenId": "1ecec08c-ef74-b044-e053-0a32095ab044",
+        "kindergartenName": "영덕초등학교병설유치원",
+        "title": "수원 영덕초등학교병설유치원 도서관 견학 X Post",
+        "url": "https://x.com/suwonytlib/status/913596148820017153",
+        "source": "other",
+        "sourceName": "X · 수원시 영통도서관",
+        "snippet": "X 검색 결과에서 영덕초등학교병설유치원 도서관 견학 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:x-snippet",
         "tags": [
-          "public"
+          "sns",
+          "x",
+          "address-not-required",
+          "field-trip",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "영덕초등학교병설유치원",
+          "kindergartenAddress": "경기도 수원시 영통구 영통로 438",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%22913596148820017153%22+%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%AC%ED%95%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://x.com/suwonytlib/status/913596148820017153",
+          "regionEvidence": [
+            "영덕초등학교병설유치원",
+            "수원시 영통도서관",
+            "경기도 수원시 영통구 영통로 438"
+          ]
+        },
+        "evidenceChecksum": "c9b1c579"
+      },
+      {
+        "id": "rev-d4a9f62d",
+        "kindergartenId": "1ecec08c-ef74-b044-e053-0a32095ab044",
+        "title": "영덕초 병설 & 신성초 병설 추천합니다",
+        "url": "https://cafe.naver.com/youngtongremodelin/460750?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwNzUwLCJpc3N1ZWRBdCI6MTc4MjQ1NzgwMjU5OX0.4NvlF2Zvs1ycj4zn3E0hO0VyCpdIWpN1dFzGz3hkQVE",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.10.23.Keep에 저장Keep에 바로가기영덕초등학교 병설유치원영덕초등학교병설유치원은 정보가많이 없는듯한데, 혹시 정보를 어디서 봐야할지 아실까요? 그리고 현재재원중이시면 어떤지 궁금합니다RE혹시 초등 방학 때 병설도 같이 방학하나요? 병설 TO가 있으면 옮기고 싶은 생각이 있는데 방학 때문에 좀 고민이 되어서 여쭤봅니다~~RE안녕하세요. 영통 영덕초등학교...",
+        "tags": [
+          "login-required",
+          "search-snippet"
         ],
         "date": null,
-        "collectedAt": "2026-06-26T07:06:14.417Z",
+        "collectedAt": "2026-06-26T07:10:03.221Z",
         "relevanceScore": 7,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "6ff64cc6",
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "7eb5cdd7",
         "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sd2158016&logNo=223841492285",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sd2158016&logno=223841492285",
-          "normalizedText": "[소개] 수원 선덕유치원을 소개합니다. \"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상을 배우고, '사랑'이라는 이름으로 자라나는 곳. 그게 바로 우리 선덕유치원의 하루랍니다. 천천히, 하지만 단단하게! 선덕 아이들의 이야기는 오늘도 계속됩니다. (그리고 그 이야기를 함께 써 내려갈 가족을 기다리고 있어요!) 선덕유치원에서 우리 함께 놀아요! 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설... 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상... 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상을 배우고, '사랑'이라는 이름으로 자라나는 곳. 그게 바로 우리 선덕유치원의 하루랍니다. 천천히, 하지만 단단하게! 선덕 아이들의 이야기는 오늘도 계속됩니다. (그리고 그 이야기를 함께 써 내려갈 가족을 기다리고 있어요!) 선덕유치원에서 우리 함께 놀아요!",
-          "htmlSnapshotHash": "6ff64cc6",
-          "extractedAt": "2026-06-26T07:06:14.417Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%A0%EB%8D%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/460750?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwNzUwLCJpc3N1ZWRBdCI6MTc4MjQ1NzgwMjU5OX0.4NvlF2Zvs1ycj4zn3E0hO0VyCpdIWpN1dFzGz3hkQVE",
+          "normalizedUrl": "cafe.naver.com/youngtongremodelin/460750?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndywnzuwlcjpc3n1zwrbdci6mtc4mjq1nzgwmju5ox0.4nvlf2zvs1ycj4zn3e0ho0vycpdiwpn1dfzgz3hkqve",
+          "normalizedText": "영덕초 병설 & 신성초 병설 추천합니다 영덕초 병설 & 신성초 병설 추천합니다 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.10.23.keep에 저장keep에 바로가기영덕초등학교 병설유치원영덕초등학교병설유치원은 정보가많이 없는듯한데, 혹시 정보를 어디서 봐야할지 아실까요? 그리고 현재재원중이시면 어떤지 궁금합니다re혹시 초등 방학 때 병설도 같이 방학하나요? 병설 to가 있으면 옮기고 싶은 생각이 있는데 방학 때문에 좀 고민이 되어서 여쭤봅니다~~re안녕하세요. 영통 영덕초등학교...",
+          "htmlSnapshotHash": "7eb5cdd7",
+          "extractedAt": "2026-06-26T07:10:03.221Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
           "structuredFields": {
-            "kindergartenName": "선덕유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 매영로 84",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%A0%EB%8D%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08d-07f9-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-dc2ec19d",
-        "kindergartenId": "1ecec08d-07f9-b044-e053-0a32095ab044",
-        "title": "수원 망포 영어유치원 ⑥ 진아 영어유치원 설명회 후기",
-        "url": "https://blog.naver.com/PostView.naver?blogId=khj5975&logNo=223664584001",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내...",
-        "summary": "안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:07:16.280Z",
-        "relevanceScore": 12,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "b1628db6",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=khj5975&logNo=223664584001",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=khj5975&logno=223664584001",
-          "normalizedText": "수원 망포 영어유치원 ⑥ 진아 영어유치원 설명회 후기 2024.11.18.기타 진아 유치원과 진아어학원은 같이 있으며 진아영어유치원의 장점은 일반유치원과 같은 시설을 사용하기에 유아 프렌들리한 놀이터 등 시설들이 많다는 것이에요... 셔틀이 안왔는데 내년부터 영통도 셔틀을 확장 운행한다고 하니 영통에 사시는분들에게도 좋을 것 같네요 영유 1년 다닌 후기 포스팅 했습니다 https://m.blog.naver.com/khj5975/224148677483 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내... 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성... 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성이 느껴졌습니다 운영시간 8:30분부터 18:30까지 이며방과후종일반까지 다하면 18시이나 상황에따라 18:30분까지 가능정규반은 9:30분부터 14:50분에 끝나고방과후특기적성반은 15:00~15:40분방과후종일반은 15:00~18:00까지 입니다 정규과목& 방과후 과목(+종일반) art, song&dance,science, special actiivity,phonics, sunshine readers, noori, music, gym, orda, musical, wonders,theme,1minute speech, livrary 등이 있습니다요즘 영유과목은 거의 10개는 기본으로 넘어가는것 같네요진아 영어유치원의 특징이라 본다면 누리과정이 주3회 있어요누리과정은 자격증을 보유하신 전문교사가 지도합니다뮤지컬은 1학기 1작품을 목표로 하며 주2회 정도 들어갑니다 theme은 누리교육을 영어로 진행하는것으로 theme은 요즘 여러 영유에서 하고있는것 같네요 예체능과 영어 등이 골고루 섞여있는 것 같습니다 방과후특기적성과정은 연령별로 다른데 각자 신청에 따라 변동이 있을수 있다했습니다 예씨에는 숙제도 들어있었는데 맞벌이에게 좋은 것 같았습니다방과후종일반과정에서는 누리놀이와 한글 수를 한다고했습니다 기타 진아 유치원과 진아어학원은 같이 있으며 진아영어유치원의 장점은 일반유치원과 같은 시설을 사용하기에 유아 프렌들리한 놀이터 등 시설들이 많다는 것이에요학원보다는 유치원에 많이 가까운 느낌이에요 설명회도 강당에서 진행되었는데 강당에 볼풀장도 있었고 여기 교재 놓인곳 뒤가 볼풀장이었어요 여러가지로 유치원느낌도 가져가고싶다 하시는분들에게 좋은 것 같네요 몇가지 기타사항으로는 1개월 1번씩 원어민과 전화를 하는 phone session이 있다고 했습니다 원하면 원에서 해도 되고 가정에서 하는게 기본인듯 했습니다1개월 1회 행사를 진행하며 내년여름 리모델링 예정이라했습니다만약 리모델링으로 여름방학이 길어지면 겨울방학을 조정한다고 하셨어요 숙제는 1개월에 1권씩 워크북이 소근육 발달위주로 나가며리딩시스템은 르네상스리딩을 사용합니다전반적으로 가격에서도 메리트가 아주 컸는데방과후종일반까지 모두한다는 가정하에 리틀씨즈와 제일 비슷했어요두 곳이 가성비가 너무 좋은 것 같아요이번에 영유 상담다니며 느낀것인데 작년금액보다 전반적으로 뛰어서 진짜 확확달라지던데 진아영어유치원이나 리틀씨즈는 그래도 가격적 메리트가 큰 것 같아요원래 영통은 셔틀이 안왔는데 내년부터 영통도 셔틀을 확장 운행한다고 하니 영통에 사시는분들에게도 좋을 것 같네요 영유 1년 다닌 후기 포스팅 했습니다https://m.blog.naver.com/khj5975/224148677483 수원 영어유치원 6세 1년차 1년 후기 안녕하세요 오랜만에 아이 유치원 글을 써보네요 1년전에 영어유치원 설명회 투어를 다니며 고민을 했던게 ... m.blog.naver.com",
-          "htmlSnapshotHash": "b1628db6",
-          "extractedAt": "2026-06-26T07:07:16.280Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%A7%84%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "진아유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 덕영대로1555번길 59",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%A7%84%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
+            "kindergartenName": "영덕초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 영통로 438",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "accessMode": "login"
           }
         }
       }
@@ -89,6 +94,81 @@
         "relevanceScore": 3
       }
     ],
+    "1ecec08c-f854-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-bfc06a22",
+        "kindergartenId": "1ecec08c-f854-b044-e053-0a32095ab044",
+        "title": "수원 배학유치원 아빠참여수업 Threads",
+        "url": "https://www.threads.com/@marinecrew5/post/DZoFCqkkwlz/",
+        "source": "other",
+        "sourceName": "Threads · @marinecrew5",
+        "snippet": "배학유치원 아빠참여수업과 학부모 참여 문맥이 확인되는 Threads 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "cbf9ee7a",
+        "structuredFields": {
+          "kindergartenName": "배학유치원",
+          "kindergartenAddress": "경기도 수원시 영통구 월드컵로 214-1",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DZoFCqkkwlz%22+%22%EB%B0%B0%ED%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@marinecrew5/post/DZoFCqkkwlz/",
+          "normalizedUrl": "www.threads.com/@marinecrew5/post/dzofcqkkwlz",
+          "normalizedText": "수원 배학유치원 아빠참여수업 threads 배학유치원 아빠참여수업과 학부모 참여 문맥이 확인되는 threads 검색 결과.",
+          "htmlSnapshotHash": "cbf9ee7a",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "배학유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 월드컵로 214-1",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DZoFCqkkwlz%22+%22%EB%B0%B0%ED%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852536",
+        "title": "[2026 광교중앙 유치원 설명회 후기] 설명회를 들으니 더더...",
+        "url": "https://blog.naver.com/denji85/224072050495",
+        "source": "naver_blog",
+        "sourceName": "애도 키우고, 일도 하고, 놀기도 하는",
+        "snippet": "단점 역사가 깊다보니 시설이 살짝 낡은 느낌. 집에서 조금 멀고, 주변이 일반 주택가라 하원길에 자차로 픽업가면 주차가 조금 어려울 것 같은 느낌. 배학유치원 장점 집에서 가깝다. 아주대 재단이라 근처에...",
+        "date": "2025-11-11",
+        "collectedAt": "2026-07-26T08:29:21.020294",
+        "kindergartenId": "1ecec08c-f854-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-f874-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852537",
+        "title": "수원 영통구 매탄동 리라유치원 후기 - 다양한 활동",
+        "url": "http://cafe.naver.com/suwonchild/11034",
+        "source": "naver_cafe",
+        "sourceName": "[ 수원맘스쿨 ] 영통맘 권선맘 장안맘...",
+        "snippet": "예) 수원 OO구 OO동 OO유치원 후기 - 시설이 좋고 방과후수업이 다양해요 2. 모든 항목을 *자세히* 작성해 주세요. ----------------------------------- [ 기본 정보 ] ▣ 교육기관명 : 매탄리라유치원 ▣ 위치 : ( 장소를 클릭하여...",
+        "date": null,
+        "collectedAt": "2026-07-26T08:29:21.020296",
+        "kindergartenId": "1ecec08c-f874-b044-e053-0a32095ab044"
+      }
+    ],
     "1ecec08c-fa37-b044-e053-0a32095ab044": [
       {
         "id": "rev-2748-zwzu",
@@ -103,66 +183,67 @@
         "relevanceScore": 2
       }
     ],
+    "1ecec08c-fbc7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852538",
+        "title": "[2026 광교중앙 유치원 설명회 후기] 설명회를 들으니 더더...",
+        "url": "https://blog.naver.com/denji85/224072050495",
+        "source": "naver_blog",
+        "sourceName": "애도 키우고, 일도 하고, 놀기도 하는",
+        "snippet": "광교는 영유도 좋은 곳이 많아서, 영유보내시는 가정도 많더라고요~ 제가 설명회를 다녀보니 중요도... 큰나래유치원 장점 집에서 가까운 국공립 유치원. 교육비도 매우 실속있고 합리적이다. 말 그대로 작은...",
+        "date": "2025-11-11",
+        "collectedAt": "2026-07-26T08:29:21.020297",
+        "kindergartenId": "1ecec08c-fbc7-b044-e053-0a32095ab044"
+      }
+    ],
     "1ecec08c-fc9c-b044-e053-0a32095ab044": [
       {
-        "id": "rev-6091-y94k",
+        "id": "rev-13dd13e5",
         "kindergartenId": "1ecec08c-fc9c-b044-e053-0a32095ab044",
-        "title": "수원 뽀뽀뽀유치원 새로운시작! 새학기를 시작했습니다!",
-        "url": "https://blog.naver.com/bbo9688/223424486091",
-        "source": "naver_blog",
-        "sourceName": "뽀뽀뽀유치원",
-        "snippet": "저희 수원 뽀뽀뽀 유치원은 30년 역사와 명성도 유명하지만 실제로 이번 입학설명회 때 학부모님들이 작성해 주신 설명회 후기에도 정말 좋은 칭찬들이 많았습니다 1. 탄탄하고 알찬 다양한 교육 프로그램 2....",
-        "date": "2024-04-23",
-        "collectedAt": "2026-02-18T06:13:58.308Z",
-        "relevanceScore": 4
-      },
-      {
-        "id": "rev-8bf69a8a",
-        "kindergartenId": "1ecec08c-fc9c-b044-e053-0a32095ab044",
-        "title": "수원 뽀뽀뽀유치원 SNS 프로필",
-        "url": "https://www.instagram.com/bbo2140109/",
+        "title": "수원 뽀뽀뽀유치원 추가 활동 SNS",
+        "url": "https://www.instagram.com/p/DNFm7qWSTDO/",
         "source": "other",
         "sourceName": "Instagram · 뽀뽀뽀유치원",
-        "snippet": "뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경기 수원시 영통구 뽀뽀뽀유치원의 Instagram 프로필 SNS 정보.",
+        "snippet": "뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경기 수원시 영통구 뽀뽀뽀유치원의 추가 활동 Instagram 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "profile"
+          "activity"
         ],
-        "content": "뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 Instagram 검색 결과다. 뽀뽀뽀유치원 동명이 있어 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "content": "뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과다. 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
         "collectedAt": "2026-06-30T23:59:59.990Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "1407bb02",
+        "evidenceChecksum": "6cc9db73",
         "structuredFields": {
           "kindergartenName": "뽀뽀뽀유치원",
           "kindergartenAddress": "경기도 수원시 영통구 동수원로514번길 33",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22bbo2140109%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
+          "searchUrl": "https://www.google.com/search?q=%22DNFm7qWSTDO%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/bbo2140109/",
-          "normalizedUrl": "www.instagram.com/bbo2140109",
-          "normalizedText": "수원 뽀뽀뽀유치원 sns 프로필 뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 instagram 검색 결과. 경기 수원시 영통구 뽀뽀뽀유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "1407bb02",
+          "canonicalUrl": "https://www.instagram.com/p/DNFm7qWSTDO/",
+          "normalizedUrl": "www.instagram.com/p/dnfm7qwstdo",
+          "normalizedText": "수원 뽀뽀뽀유치원 추가 활동 sns 뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 instagram 검색 결과. 경기 수원시 영통구 뽀뽀뽀유치원의 추가 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "6cc9db73",
           "extractedAt": "2026-06-30T23:59:59.990Z",
           "structuredFields": {
             "kindergartenName": "뽀뽀뽀유치원",
             "kindergartenAddress": "경기도 수원시 영통구 동수원로514번길 33",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22bbo2140109%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
+            "searchUrl": "https://www.google.com/search?q=%22DNFm7qWSTDO%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
@@ -223,52 +304,52 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-13dd13e5",
+        "id": "rev-8bf69a8a",
         "kindergartenId": "1ecec08c-fc9c-b044-e053-0a32095ab044",
-        "title": "수원 뽀뽀뽀유치원 추가 활동 SNS",
-        "url": "https://www.instagram.com/p/DNFm7qWSTDO/",
+        "title": "수원 뽀뽀뽀유치원 SNS 프로필",
+        "url": "https://www.instagram.com/bbo2140109/",
         "source": "other",
         "sourceName": "Instagram · 뽀뽀뽀유치원",
-        "snippet": "뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경기 수원시 영통구 뽀뽀뽀유치원의 추가 활동 Instagram 검색 결과.",
+        "snippet": "뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경기 수원시 영통구 뽀뽀뽀유치원의 Instagram 프로필 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "activity"
+          "profile"
         ],
-        "content": "뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 Instagram 검색 결과다. 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "content": "뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 Instagram 검색 결과다. 뽀뽀뽀유치원 동명이 있어 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
         "collectedAt": "2026-06-30T23:59:59.990Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "6cc9db73",
+        "evidenceChecksum": "1407bb02",
         "structuredFields": {
           "kindergartenName": "뽀뽀뽀유치원",
           "kindergartenAddress": "경기도 수원시 영통구 동수원로514번길 33",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DNFm7qWSTDO%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
+          "searchUrl": "https://www.google.com/search?q=%22bbo2140109%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DNFm7qWSTDO/",
-          "normalizedUrl": "www.instagram.com/p/dnfm7qwstdo",
-          "normalizedText": "수원 뽀뽀뽀유치원 추가 활동 sns 뽀뽀뽀유치원 계정의 추가 활동 게시물과 기관명 문맥이 확인되는 instagram 검색 결과. 경기 수원시 영통구 뽀뽀뽀유치원의 추가 활동 instagram 검색 결과.",
-          "htmlSnapshotHash": "6cc9db73",
+          "canonicalUrl": "https://www.instagram.com/bbo2140109/",
+          "normalizedUrl": "www.instagram.com/bbo2140109",
+          "normalizedText": "수원 뽀뽀뽀유치원 sns 프로필 뽀뽀뽀유치원 프로필에서 전화 031-214-0109 문맥이 확인되는 instagram 검색 결과. 경기 수원시 영통구 뽀뽀뽀유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "1407bb02",
           "extractedAt": "2026-06-30T23:59:59.990Z",
           "structuredFields": {
             "kindergartenName": "뽀뽀뽀유치원",
             "kindergartenAddress": "경기도 수원시 영통구 동수원로514번길 33",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DNFm7qWSTDO%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
+            "searchUrl": "https://www.google.com/search?q=%22bbo2140109%22+%22%EB%BD%80%EB%BD%80%EB%BD%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-214-0109%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 수원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
@@ -327,43 +408,199 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.990Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6091-y94k",
+        "kindergartenId": "1ecec08c-fc9c-b044-e053-0a32095ab044",
+        "title": "수원 뽀뽀뽀유치원 새로운시작! 새학기를 시작했습니다!",
+        "url": "https://blog.naver.com/bbo9688/223424486091",
+        "source": "naver_blog",
+        "sourceName": "뽀뽀뽀유치원",
+        "snippet": "저희 수원 뽀뽀뽀 유치원은 30년 역사와 명성도 유명하지만 실제로 이번 입학설명회 때 학부모님들이 작성해 주신 설명회 후기에도 정말 좋은 칭찬들이 많았습니다 1. 탄탄하고 알찬 다양한 교육 프로그램 2....",
+        "date": "2024-04-23",
+        "collectedAt": "2026-02-18T06:13:58.308Z",
+        "relevanceScore": 4
+      },
+      {
+        "id": "rev-99852278",
+        "title": "매탄동유치원. 뽀뽀뽀유치원. 부모님의 감사한 시장놀이 후기^.^",
+        "url": "https://blog.naver.com/bbo2140109/223147572726",
+        "source": "naver_blog",
+        "sourceName": "현명한 부모가 뽀뽀뽀유치원을 선택하는 이유!",
+        "snippet": "매탄시장에서 아이들이 직접 구입한 야채를 가정으로 보내드렸는데~~~ 우리 감사한 부모님들 ㅠㅠ 정성가득 후기를 남겨주셨답니다. 부모님들의 정성스런 사진과 따스한 말씀에 오늘도 힘내서...",
+        "date": "2023-07-05",
+        "collectedAt": "2026-01-30T02:59:48.311Z",
+        "kindergartenId": "1ecec08c-fc9c-b044-e053-0a32095ab044"
       }
     ],
-    "1ecec08d-051c-b044-e053-0a32095ab044": [
+    "1ecec08c-fe3f-b044-e053-0a32095ab044": [
       {
-        "id": "rev-ff520b1c",
-        "kindergartenId": "1ecec08d-051c-b044-e053-0a32095ab044",
-        "title": "RE큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요",
-        "url": "https://cafe.naver.com/youngtongremodelin/460077?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwMDc3LCJpc3N1ZWRBdCI6MTc4MjQ1NzU4NTc1N30.-FJaFBlO-HgTJMTskx_WoNxrOeE1GjOoV11uMGm5F0o",
+        "id": "rev-5d35b062",
+        "kindergartenId": "1ecec08c-fe3f-b044-e053-0a32095ab044",
+        "title": "저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교...",
+        "url": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0NTYxNn0.Gs053PJE0Z0HOTQJoKQ280aovRnGdgDDS0AMQJOeLf8",
         "source": "naver_cafe",
         "sourceName": "네이버 카페",
-        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.11.18.Keep에 저장Keep에 바로가기영덕초병설vs늘푸른유치원7세되는 여아입니다~ 기존에 유치원 다녔었고 푸르지오이사 예정이예요. 혹시 보내보신분들 어디가 나을지 추천 부탁드려요~RE병설은 방학이 길어서..늘푸른 유치원 너무 좋았습니다RE7세라 몇달 안다니고 졸업해서 바로 학교가는거라면 병설이요. 학교적응 미리하는거니 엄마도 아이도 좋을거 같아요.늘푸른...",
+        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.Keep에 저장Keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
         "tags": [
           "login-required",
           "search-snippet"
         ],
         "date": null,
-        "collectedAt": "2026-06-26T07:06:26.195Z",
-        "relevanceScore": 8,
+        "collectedAt": "2026-06-26T07:12:25.992Z",
+        "relevanceScore": 6,
         "accessMode": "login",
         "evidenceType": "structured_list_row",
         "extractionMethod": "insane-search:naver-search-snippet-login-wall",
-        "evidenceChecksum": "7d9282cb",
+        "evidenceChecksum": "79d82bf5",
         "evidence": {
-          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/460077?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwMDc3LCJpc3N1ZWRBdCI6MTc4MjQ1NzU4NTc1N30.-FJaFBlO-HgTJMTskx_WoNxrOeE1GjOoV11uMGm5F0o",
-          "normalizedUrl": "cafe.naver.com/youngtongremodelin/460077?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndywmdc3lcjpc3n1zwrbdci6mtc4mjq1nzu4ntc1n30.-fjafblo-hgtjmtskx_wonxroee1gjoov11umgm5f0o",
-          "normalizedText": "re큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요 re큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.11.18.keep에 저장keep에 바로가기영덕초병설vs늘푸른유치원7세되는 여아입니다~ 기존에 유치원 다녔었고 푸르지오이사 예정이예요. 혹시 보내보신분들 어디가 나을지 추천 부탁드려요~re병설은 방학이 길어서..늘푸른 유치원 너무 좋았습니다re7세라 몇달 안다니고 졸업해서 바로 학교가는거라면 병설이요. 학교적응 미리하는거니 엄마도 아이도 좋을거 같아요.늘푸른...",
-          "htmlSnapshotHash": "7d9282cb",
-          "extractedAt": "2026-06-26T07:06:26.195Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8A%98%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0NTYxNn0.Gs053PJE0Z0HOTQJoKQ280aovRnGdgDDS0AMQJOeLf8",
+          "normalizedUrl": "cafe.naver.com/youngtongremodelin/469492?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndy5ndkylcjpc3n1zwrbdci6mtc4mjq1nzk0ntyxnn0.gs053pje0z0hotqjokq280aovrngdgdds0amqjoelf8",
+          "normalizedText": "저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교... 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교... 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.keep에 저장keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
+          "htmlSnapshotHash": "79d82bf5",
+          "extractedAt": "2026-06-26T07:12:25.992Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
           "structuredFields": {
-            "kindergartenName": "늘푸른유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 청명로 142",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8A%98%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "kindergartenName": "청명초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 봉영로1744번길 41",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
             "accessMode": "login"
           }
         }
       },
+      {
+        "id": "rev-7c32345b",
+        "kindergartenId": "1ecec08c-fe3f-b044-e053-0a32095ab044",
+        "title": "시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)...",
+        "url": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0Mjg0MX0.TVRPJuIWCj4uApIJxl2DuqqAMLrVBE6n9OFeGfglucU",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.Keep에 저장Keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:12:23.476Z",
+        "relevanceScore": 8,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "d8c14822",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0Mjg0MX0.TVRPJuIWCj4uApIJxl2DuqqAMLrVBE6n9OFeGfglucU",
+          "normalizedUrl": "cafe.naver.com/youngtongremodelin/469492?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndy5ndkylcjpc3n1zwrbdci6mtc4mjq1nzk0mjg0mx0.tvrpjuiwcj4uapijxl2duqqamlrvbe6n9ofegfglucu",
+          "normalizedText": "시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)... 시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)... 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.keep에 저장keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
+          "htmlSnapshotHash": "d8c14822",
+          "extractedAt": "2026-06-26T07:12:23.476Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "청명초등학교병설유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 봉영로1744번길 41",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "login"
+          }
+        }
+      }
+    ],
+    "1ecec08c-fed3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852279",
+        "title": "중앙기독유치원 설명회 후기 - 기독유치원의 이상과 현실 사이",
+        "url": "https://blog.naver.com/1stprinciple_yuka/224063423608",
+        "source": "naver_blog",
+        "sourceName": "제일원리 육아노트",
+        "snippet": "#중앙기독유치원 #기독유치원 #기독유치원입학 #기독유치원설명회 #유치원후기 #유치원선택 #워킹맘의선택 #신앙교육 #기독교세계관 #제일원리육아노트 #아이발달과교육",
+        "date": "2025-11-03",
+        "collectedAt": "2026-01-30T02:59:48.311Z",
+        "kindergartenId": "1ecec08c-fed3-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-99852505",
+        "title": "중앙기독유치원이 여전히 좋은 유치원일까?",
+        "url": "https://blog.naver.com/working_mom_123/222980106323",
+        "source": "naver_blog",
+        "sourceName": "일하는 엄마의 일상 리뷰",
+        "snippet": "어린 나이 (4-5세)에는 선착순으로 설명회 신청과 입금전쟁을 해야 입학하고, 그 이후에는 아이 레벨에... #중앙기독유치원 #중기유 #중앙기독초등학교 #중기초 #원천교회 #사립초 #광교맘 #워킹맘 #영유 #CCA",
+        "date": "2023-01-10",
+        "collectedAt": "2026-07-26T08:27:42.550685",
+        "kindergartenId": "1ecec08c-fed3-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-99852280",
+        "title": "중앙기독유치원 입학과정",
+        "url": "https://blog.naver.com/working_mom_123/222978003556",
+        "source": "naver_blog",
+        "sourceName": "일하는 엄마의 일상 리뷰",
+        "snippet": "중앙기독유치원 정보를 찾아보는 분이라면 대부분 이 곳이 원천교회와 연계되어 있다는 것은 알고... 일단 3월에 입학 원서를 제출하고, 입학과정에 대한 설명회를 듣고, 그 뒤로는 부모의 교육기간이라고 보면...",
+        "date": "2023-01-08",
+        "collectedAt": "2026-01-30T02:59:48.311Z",
+        "kindergartenId": "1ecec08c-fed3-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-fee9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852539",
+        "title": "영통구 하동 꿈누리유치원 후기 - 숲 체험 특성화가 좋아요",
+        "url": "http://cafe.naver.com/suwonchild/7107",
+        "source": "naver_cafe",
+        "sourceName": "[ 수원맘스쿨 ] 영통맘 권선맘 장안맘...",
+        "snippet": "제목 예시) 수원 OO구 OO동 OO유치원 후기 - 시설이 좋고 방과후수업이 다양해요 ※ 모든 항목을 최대한 자세히 작성해주세요. ( 상, 좋음, 만족 등 단답형 답변 금지 ) [ 기본 정보 ] ▣ 교육기관명 : 꿈누리유치원 ▣ 위치...",
+        "date": null,
+        "collectedAt": "2026-07-26T08:29:21.020299",
+        "kindergartenId": "1ecec08c-fee9-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-00b9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852639",
+        "title": "수원 영통구 꿈꾸는아이들유치원 2026년도 입학설명회 후기",
+        "url": "https://blog.naver.com/ssss7020/224057312074",
+        "source": "naver_blog",
+        "sourceName": "루틴핑 | 밤밤이네 성장기록",
+        "snippet": "주관적인 후기입니다. 아이마다 맞는 환경이 다를 수 있으니 가볍게 참고만 해주세요!  꿈꾸는 아이들 유치원 ▪️주소 : 수원시 영통구 영일로 26 생각보다 큰 단독 건물의 유치원! 뒤쪽에는 상가주택들이...",
+        "date": "2025-10-29",
+        "collectedAt": "2026-07-26T09:50:12.570464",
+        "kindergartenId": "1ecec08d-00b9-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-04c0-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-337c2115",
+        "kindergartenId": "1ecec08d-04c0-b044-e053-0a32095ab044",
+        "title": "[소개] 수원 선덕유치원을 소개합니다.",
+        "url": "https://blog.naver.com/PostView.naver?blogId=sd2158016&logNo=223841492285",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 ON) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설...",
+        "summary": "선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 ON) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:06:14.417Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "6ff64cc6",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=sd2158016&logNo=223841492285",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=sd2158016&logno=223841492285",
+          "normalizedText": "[소개] 수원 선덕유치원을 소개합니다. \"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상을 배우고, '사랑'이라는 이름으로 자라나는 곳. 그게 바로 우리 선덕유치원의 하루랍니다. 천천히, 하지만 단단하게! 선덕 아이들의 이야기는 오늘도 계속됩니다. (그리고 그 이야기를 함께 써 내려갈 가족을 기다리고 있어요!) 선덕유치원에서 우리 함께 놀아요! 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설... 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상... 선덕유치원 경기도 수원시 영통구 매영로 84 이 블로그의 체크인 이 장소의 다른 글 아이들의 특별한 세상, 선덕유치원에 오신 걸 환영합니다. 선덕유치원은 매일매일 작은 기적이 일어나는 곳이에요. 오늘은 만3세 친구들이 씩씩하게 등원하며 또 하나의 기적을 선물해주었어요. (감동의 눈물 버튼 on) 처음보다 조금 더 익숙해진 교실, 선생님과 친구들이 함께 만들어가는 하루하루가 이제 아이들에겐 설렘 가득한 일상이 되어가고 있어요. 조금씩 익숙해지는 공간 속에서 아이들은 뛰어놀고, 상상하고, 때로는 엉뚱한 질문도 마음 놓고 던집니다. \"왜 하늘은 파란색이에요?\"같은 질문에도 진지하게 고민해주는 선생님들이 함께하니까요. '놀이'라는 이름으로 세상을 배우고, '사랑'이라는 이름으로 자라나는 곳. 그게 바로 우리 선덕유치원의 하루랍니다. 천천히, 하지만 단단하게! 선덕 아이들의 이야기는 오늘도 계속됩니다. (그리고 그 이야기를 함께 써 내려갈 가족을 기다리고 있어요!) 선덕유치원에서 우리 함께 놀아요!",
+          "htmlSnapshotHash": "6ff64cc6",
+          "extractedAt": "2026-06-26T07:06:14.417Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%A0%EB%8D%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "선덕유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 매영로 84",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%A0%EB%8D%95%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-051c-b044-e053-0a32095ab044": [
       {
         "id": "rev-3037b2b4",
         "kindergartenId": "1ecec08d-051c-b044-e053-0a32095ab044",
@@ -397,6 +634,53 @@
             "accessMode": "login"
           }
         }
+      },
+      {
+        "id": "rev-ff520b1c",
+        "kindergartenId": "1ecec08d-051c-b044-e053-0a32095ab044",
+        "title": "RE큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요",
+        "url": "https://cafe.naver.com/youngtongremodelin/460077?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwMDc3LCJpc3N1ZWRBdCI6MTc4MjQ1NzU4NTc1N30.-FJaFBlO-HgTJMTskx_WoNxrOeE1GjOoV11uMGm5F0o",
+        "source": "naver_cafe",
+        "sourceName": "네이버 카페",
+        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.11.18.Keep에 저장Keep에 바로가기영덕초병설vs늘푸른유치원7세되는 여아입니다~ 기존에 유치원 다녔었고 푸르지오이사 예정이예요. 혹시 보내보신분들 어디가 나을지 추천 부탁드려요~RE병설은 방학이 길어서..늘푸른 유치원 너무 좋았습니다RE7세라 몇달 안다니고 졸업해서 바로 학교가는거라면 병설이요. 학교적응 미리하는거니 엄마도 아이도 좋을거 같아요.늘푸른...",
+        "tags": [
+          "login-required",
+          "search-snippet"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:06:26.195Z",
+        "relevanceScore": 8,
+        "accessMode": "login",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
+        "evidenceChecksum": "7d9282cb",
+        "evidence": {
+          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/460077?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwMDc3LCJpc3N1ZWRBdCI6MTc4MjQ1NzU4NTc1N30.-FJaFBlO-HgTJMTskx_WoNxrOeE1GjOoV11uMGm5F0o",
+          "normalizedUrl": "cafe.naver.com/youngtongremodelin/460077?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndywmdc3lcjpc3n1zwrbdci6mtc4mjq1nzu4ntc1n30.-fjafblo-hgtjmtskx_wonxroee1gjoov11umgm5f0o",
+          "normalizedText": "re큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요 re큰아이는 병설 작은아인 늘푸른보냈는데 늘푸른만족이요 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.11.18.keep에 저장keep에 바로가기영덕초병설vs늘푸른유치원7세되는 여아입니다~ 기존에 유치원 다녔었고 푸르지오이사 예정이예요. 혹시 보내보신분들 어디가 나을지 추천 부탁드려요~re병설은 방학이 길어서..늘푸른 유치원 너무 좋았습니다re7세라 몇달 안다니고 졸업해서 바로 학교가는거라면 병설이요. 학교적응 미리하는거니 엄마도 아이도 좋을거 같아요.늘푸른...",
+          "htmlSnapshotHash": "7d9282cb",
+          "extractedAt": "2026-06-26T07:06:26.195Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8A%98%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "structuredFields": {
+            "kindergartenName": "늘푸른유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 청명로 142",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8A%98%ED%91%B8%EB%A5%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "accessMode": "login"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0594-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852606",
+        "title": "수원 영통구 우리/나라유치원 2026학년도 입학설명회 후기",
+        "url": "https://blog.naver.com/ssss7020/224054998222",
+        "source": "naver_blog",
+        "sourceName": "루틴핑 | 밤밤이네 성장기록",
+        "snippet": "주관적인 후기입니다. 아이마다 맞는 환경이 다를 수 있으니 가볍게 참고만 해주세요!  나라유치원 ▪️나라유치원 : 수원시 영통구 동탄원천로881번길 58 ▪️우리유치원 : 수원시 영통구 권선로803번길 32-7...",
+        "date": "2025-10-27",
+        "collectedAt": "2026-07-26T08:54:20.537569",
+        "kindergartenId": "1ecec08d-0594-b044-e053-0a32095ab044"
       }
     ],
     "1ecec08d-05a3-b044-e053-0a32095ab044": [
@@ -431,6 +715,42 @@
             "kindergartenAddress": "경기도 수원시 영통구 매탄로126번길 27",
             "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%9A%A8%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
             "accessMode": "login"
+          }
+        }
+      }
+    ],
+    "1ecec08d-07f9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dc2ec19d",
+        "kindergartenId": "1ecec08d-07f9-b044-e053-0a32095ab044",
+        "title": "수원 망포 영어유치원 ⑥ 진아 영어유치원 설명회 후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=khj5975&logNo=223664584001",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내...",
+        "summary": "안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:07:16.280Z",
+        "relevanceScore": 12,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "b1628db6",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=khj5975&logNo=223664584001",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=khj5975&logno=223664584001",
+          "normalizedText": "수원 망포 영어유치원 ⑥ 진아 영어유치원 설명회 후기 2024.11.18.기타 진아 유치원과 진아어학원은 같이 있으며 진아영어유치원의 장점은 일반유치원과 같은 시설을 사용하기에 유아 프렌들리한 놀이터 등 시설들이 많다는 것이에요... 셔틀이 안왔는데 내년부터 영통도 셔틀을 확장 운행한다고 하니 영통에 사시는분들에게도 좋을 것 같네요 영유 1년 다닌 후기 포스팅 했습니다 https://m.blog.naver.com/khj5975/224148677483 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내... 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성... 안녕하세요 영유 상담과 설명회도 이제 마무리 되어가고 있네요 10월,11월 열심히 다닌것 같아요 정말망포쪽에 진아 일반유치원과 영어유치부를 둘다 하는 곳이 있어 설명회 다녀왔습니다 진아어학원 경기도 수원시 영통구 덕영대로1555번길 59 진아어학원 (단독) 이 블로그의 체크인 이 장소의 다른 글 설명회 참여 방법 사전에 전화로 신청하면 번호로 설명회 신청 링크를 주세요거기에 신청하면관련 안내문자를 다시 줍니다* 설명회 엄마랑 아빠 둘다 참여가능해요* 유아 동반 가능해요( 설명회 공간과 연결되는 곳에 캠핑존을 만들어 아이들이 재밌게 놀 수 있게 해주셨어요 )유아 놀이공간을 이렇게 퀄리티 있게 준비해주신곳은 처음이었던 것 같네요 배려와 정성이 느껴졌습니다 운영시간 8:30분부터 18:30까지 이며방과후종일반까지 다하면 18시이나 상황에따라 18:30분까지 가능정규반은 9:30분부터 14:50분에 끝나고방과후특기적성반은 15:00~15:40분방과후종일반은 15:00~18:00까지 입니다 정규과목& 방과후 과목(+종일반) art, song&dance,science, special actiivity,phonics, sunshine readers, noori, music, gym, orda, musical, wonders,theme,1minute speech, livrary 등이 있습니다요즘 영유과목은 거의 10개는 기본으로 넘어가는것 같네요진아 영어유치원의 특징이라 본다면 누리과정이 주3회 있어요누리과정은 자격증을 보유하신 전문교사가 지도합니다뮤지컬은 1학기 1작품을 목표로 하며 주2회 정도 들어갑니다 theme은 누리교육을 영어로 진행하는것으로 theme은 요즘 여러 영유에서 하고있는것 같네요 예체능과 영어 등이 골고루 섞여있는 것 같습니다 방과후특기적성과정은 연령별로 다른데 각자 신청에 따라 변동이 있을수 있다했습니다 예씨에는 숙제도 들어있었는데 맞벌이에게 좋은 것 같았습니다방과후종일반과정에서는 누리놀이와 한글 수를 한다고했습니다 기타 진아 유치원과 진아어학원은 같이 있으며 진아영어유치원의 장점은 일반유치원과 같은 시설을 사용하기에 유아 프렌들리한 놀이터 등 시설들이 많다는 것이에요학원보다는 유치원에 많이 가까운 느낌이에요 설명회도 강당에서 진행되었는데 강당에 볼풀장도 있었고 여기 교재 놓인곳 뒤가 볼풀장이었어요 여러가지로 유치원느낌도 가져가고싶다 하시는분들에게 좋은 것 같네요 몇가지 기타사항으로는 1개월 1번씩 원어민과 전화를 하는 phone session이 있다고 했습니다 원하면 원에서 해도 되고 가정에서 하는게 기본인듯 했습니다1개월 1회 행사를 진행하며 내년여름 리모델링 예정이라했습니다만약 리모델링으로 여름방학이 길어지면 겨울방학을 조정한다고 하셨어요 숙제는 1개월에 1권씩 워크북이 소근육 발달위주로 나가며리딩시스템은 르네상스리딩을 사용합니다전반적으로 가격에서도 메리트가 아주 컸는데방과후종일반까지 모두한다는 가정하에 리틀씨즈와 제일 비슷했어요두 곳이 가성비가 너무 좋은 것 같아요이번에 영유 상담다니며 느낀것인데 작년금액보다 전반적으로 뛰어서 진짜 확확달라지던데 진아영어유치원이나 리틀씨즈는 그래도 가격적 메리트가 큰 것 같아요원래 영통은 셔틀이 안왔는데 내년부터 영통도 셔틀을 확장 운행한다고 하니 영통에 사시는분들에게도 좋을 것 같네요 영유 1년 다닌 후기 포스팅 했습니다https://m.blog.naver.com/khj5975/224148677483 수원 영어유치원 6세 1년차 1년 후기 안녕하세요 오랜만에 아이 유치원 글을 써보네요 1년전에 영어유치원 설명회 투어를 다니며 고민을 했던게 ... m.blog.naver.com",
+          "htmlSnapshotHash": "b1628db6",
+          "extractedAt": "2026-06-26T07:07:16.280Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%A7%84%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "진아유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 덕영대로1555번길 59",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%A7%84%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
           }
         }
       }
@@ -471,455 +791,56 @@
         }
       }
     ],
-    "1ecec08c-ef74-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-d4a9f62d",
-        "kindergartenId": "1ecec08c-ef74-b044-e053-0a32095ab044",
-        "title": "영덕초 병설 & 신성초 병설 추천합니다",
-        "url": "https://cafe.naver.com/youngtongremodelin/460750?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwNzUwLCJpc3N1ZWRBdCI6MTc4MjQ1NzgwMjU5OX0.4NvlF2Zvs1ycj4zn3E0hO0VyCpdIWpN1dFzGz3hkQVE",
-        "source": "naver_cafe",
-        "sourceName": "네이버 카페",
-        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.10.23.Keep에 저장Keep에 바로가기영덕초등학교 병설유치원영덕초등학교병설유치원은 정보가많이 없는듯한데, 혹시 정보를 어디서 봐야할지 아실까요? 그리고 현재재원중이시면 어떤지 궁금합니다RE혹시 초등 방학 때 병설도 같이 방학하나요? 병설 TO가 있으면 옮기고 싶은 생각이 있는데 방학 때문에 좀 고민이 되어서 여쭤봅니다~~RE안녕하세요. 영통 영덕초등학교...",
-        "tags": [
-          "login-required",
-          "search-snippet"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:10:03.221Z",
-        "relevanceScore": 7,
-        "accessMode": "login",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
-        "evidenceChecksum": "7eb5cdd7",
-        "evidence": {
-          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/460750?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDYwNzUwLCJpc3N1ZWRBdCI6MTc4MjQ1NzgwMjU5OX0.4NvlF2Zvs1ycj4zn3E0hO0VyCpdIWpN1dFzGz3hkQVE",
-          "normalizedUrl": "cafe.naver.com/youngtongremodelin/460750?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndywnzuwlcjpc3n1zwrbdci6mtc4mjq1nzgwmju5ox0.4nvlf2zvs1ycj4zn3e0ho0vycpdiwpn1dfzgz3hkqve",
-          "normalizedText": "영덕초 병설 & 신성초 병설 추천합니다 영덕초 병설 & 신성초 병설 추천합니다 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2024.10.23.keep에 저장keep에 바로가기영덕초등학교 병설유치원영덕초등학교병설유치원은 정보가많이 없는듯한데, 혹시 정보를 어디서 봐야할지 아실까요? 그리고 현재재원중이시면 어떤지 궁금합니다re혹시 초등 방학 때 병설도 같이 방학하나요? 병설 to가 있으면 옮기고 싶은 생각이 있는데 방학 때문에 좀 고민이 되어서 여쭤봅니다~~re안녕하세요. 영통 영덕초등학교...",
-          "htmlSnapshotHash": "7eb5cdd7",
-          "extractedAt": "2026-06-26T07:10:03.221Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-          "structuredFields": {
-            "kindergartenName": "영덕초등학교병설유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 영통로 438",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-            "accessMode": "login"
-          }
-        }
-      },
-      {
-        "id": "rev-e410080c",
-        "kindergartenId": "1ecec08c-ef74-b044-e053-0a32095ab044",
-        "kindergartenName": "영덕초등학교병설유치원",
-        "title": "수원 영덕초등학교병설유치원 도서관 견학 X Post",
-        "url": "https://x.com/suwonytlib/status/913596148820017153",
-        "source": "other",
-        "sourceName": "X · 수원시 영통도서관",
-        "snippet": "X 검색 결과에서 영덕초등학교병설유치원 도서관 견학 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:x-snippet",
-        "tags": [
-          "sns",
-          "x",
-          "address-not-required",
-          "field-trip",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "영덕초등학교병설유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 영통로 438",
-          "platform": "X",
-          "searchUrl": "https://www.google.com/search?q=%22913596148820017153%22+%22%EC%98%81%EB%8D%95%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90+%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%AC%ED%95%99%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://x.com/suwonytlib/status/913596148820017153",
-          "regionEvidence": [
-            "영덕초등학교병설유치원",
-            "수원시 영통도서관",
-            "경기도 수원시 영통구 영통로 438"
-          ]
-        },
-        "evidenceChecksum": "c9b1c579"
-      }
-    ],
-    "1ecec08c-fe3f-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-7c32345b",
-        "kindergartenId": "1ecec08c-fe3f-b044-e053-0a32095ab044",
-        "title": "시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)...",
-        "url": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0Mjg0MX0.TVRPJuIWCj4uApIJxl2DuqqAMLrVBE6n9OFeGfglucU",
-        "source": "naver_cafe",
-        "sourceName": "네이버 카페",
-        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.Keep에 저장Keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
-        "tags": [
-          "login-required",
-          "search-snippet"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:12:23.476Z",
-        "relevanceScore": 8,
-        "accessMode": "login",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
-        "evidenceChecksum": "d8c14822",
-        "evidence": {
-          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0Mjg0MX0.TVRPJuIWCj4uApIJxl2DuqqAMLrVBE6n9OFeGfglucU",
-          "normalizedUrl": "cafe.naver.com/youngtongremodelin/469492?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndy5ndkylcjpc3n1zwrbdci6mtc4mjq1nzk0mjg0mx0.tvrpjuiwcj4uapijxl2duqqamlrvbe6n9ofegfglucu",
-          "normalizedText": "시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)... 시설좋고 프로그램 훌륭한 청명초병설유치원을 소개합니다. 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교(유치원)... 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.keep에 저장keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
-          "htmlSnapshotHash": "d8c14822",
-          "extractedAt": "2026-06-26T07:12:23.476Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "청명초등학교병설유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 봉영로1744번길 41",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9E%AC%EC%9B%90%EC%83%9D+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "login"
-          }
-        }
-      },
-      {
-        "id": "rev-5d35b062",
-        "kindergartenId": "1ecec08c-fe3f-b044-e053-0a32095ab044",
-        "title": "저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교...",
-        "url": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0NTYxNn0.Gs053PJE0Z0HOTQJoKQ280aovRnGdgDDS0AMQJOeLf8",
-        "source": "naver_cafe",
-        "sourceName": "네이버 카페",
-        "snippet": "수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.Keep에 저장Keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
-        "tags": [
-          "login-required",
-          "search-snippet"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:12:25.992Z",
-        "relevanceScore": 6,
-        "accessMode": "login",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "insane-search:naver-search-snippet-login-wall",
-        "evidenceChecksum": "79d82bf5",
-        "evidence": {
-          "canonicalUrl": "https://cafe.naver.com/youngtongremodelin/469492?art=ZXh0ZXJuYWwtc2VydmljZS1uYXZlci1zZWFyY2gtY2FmZS1wcg.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjYWZlVHlwZSI6IkNBRkVfVVJMIiwiY2FmZVVybCI6InlvdW5ndG9uZ3JlbW9kZWxpbiIsImFydGljbGVJZCI6NDY5NDkyLCJpc3N1ZWRBdCI6MTc4MjQ1Nzk0NTYxNn0.Gs053PJE0Z0HOTQJoKQ280aovRnGdgDDS0AMQJOeLf8",
-          "normalizedUrl": "cafe.naver.com/youngtongremodelin/469492?art=zxh0zxjuywwtc2vydmljzs1uyxzlci1zzwfyy2gty2fmzs1wcg.eyjhbgcioijiuzi1niisinr5cci6ikpxvcj9.eyjjywzlvhlwzsi6iknbrkvfvvjmiiwiy2fmzvvybci6inlvdw5ndg9uz3jlbw9kzwxpbiisimfydgljbgvjzci6ndy5ndkylcjpc3n1zwrbdci6mtc4mjq1nzk0ntyxnn0.gs053pje0z0hotqjokq280aovrngdgdds0amqjoelf8",
-          "normalizedText": "저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교... 저는 용인에서 병설유치원에서 10년이상 근무하고 수원 청명초로 발령받은 담임교사에요. 이렇게 좋은 유치원에 자리가 있는것이 안타까워 홍보를 해요. 아직 유치원결정을 못하신분... (저에게 채팅이나 쪽지보내주셔도 확인가능합니다^^) 저는 만3,4,5세 경력이 다양하게있고 인성교육 시범유치원(마음이음유치원)운영, 방과후과정학급증설, 디지털및ai연구학교... 수원 영통구 모임터_광교맘,망포맘,매탄맘,영통맘,서천맘,흥덕맘2025.02.26.keep에 저장keep에 바로가기청명초등학교병설유치원을 소개합니다~~~^^ 5",
-          "htmlSnapshotHash": "79d82bf5",
-          "extractedAt": "2026-06-26T07:12:25.992Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-          "structuredFields": {
-            "kindergartenName": "청명초등학교병설유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 봉영로1744번길 41",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%AA%85%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%88%98%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
-            "accessMode": "login"
-          }
-        }
-      }
-    ],
-    "1ecec08d-0dc9-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-5869f33d",
-        "kindergartenId": "1ecec08d-0dc9-b044-e053-0a32095ab044",
-        "title": "수원 상은유치원 신입유아 모집 SNS",
-        "url": "https://www.instagram.com/p/DPnvy7ECQAG/",
-        "source": "other",
-        "sourceName": "Instagram · 상은유치원",
-        "snippet": "상은유치원 2026학년도 신입유아 모집과 전화 031-212-0726 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경기 수원시 영통구 상은유치원의 2026학년도 신입유아 모집 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission"
-        ],
-        "content": "상은유치원 2026학년도 신입유아 모집과 전화 031-212-0726 문맥이 확인되는 Instagram 검색 결과다. 전화번호와 원장부 주소를 기준으로 경기 수원시 영통구 상은유치원에 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T22:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "367727ab",
-        "structuredFields": {
-          "kindergartenName": "상은유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPnvy7ECQAG%22+%22%EC%83%81%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-212-0726%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DPnvy7ECQAG/",
-          "normalizedUrl": "www.instagram.com/p/dpnvy7ecqag",
-          "normalizedText": "수원 상은유치원 신입유아 모집 sns 상은유치원 2026학년도 신입유아 모집과 전화 031-212-0726 문맥이 확인되는 instagram 검색 결과. 경기 수원시 영통구 상은유치원의 2026학년도 신입유아 모집 sns 정보.",
-          "htmlSnapshotHash": "367727ab",
-          "extractedAt": "2026-06-30T22:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "상은유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPnvy7ECQAG%22+%22%EC%83%81%EC%9D%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22031-212-0726%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T22:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5205ec38",
-        "kindergartenId": "1ecec08d-0dc9-b044-e053-0a32095ab044",
-        "title": "수원 영통 상은유치원 졸업여행 Instagram",
-        "url": "https://www.instagram.com/reel/DQLo8ZTibDu/",
-        "source": "other",
-        "sourceName": "Instagram · 상은유치원",
-        "snippet": "sangeun_kids 계정에서 상은유치원 졸업여행과 원천동유치원 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "graduation",
-          "field-trip"
-        ],
-        "date": "2025-10-23",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "496d3294",
-        "structuredFields": {
-          "kindergartenName": "상은유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQLo8ZTibDu%22+%22sangeun_kids%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQLo8ZTibDu/",
-          "normalizedUrl": "www.instagram.com/reel/dqlo8ztibdu",
-          "normalizedText": "수원 영통 상은유치원 졸업여행 instagram sangeun_kids 계정에서 상은유치원 졸업여행과 원천동유치원 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "496d3294",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "상은유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQLo8ZTibDu%22+%22sangeun_kids%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-cb3dd7aa",
-        "kindergartenId": "1ecec08d-0dc9-b044-e053-0a32095ab044",
-        "title": "수원 영통 상은유치원 2026 입학설명회 Instagram",
-        "url": "https://www.instagram.com/reel/DPnvy7ECQAG/",
-        "source": "other",
-        "sourceName": "Instagram · 상은유치원",
-        "snippet": "상은유치원 2026학년도 입학설명회와 영통·원천동·수원 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission-info",
-          "info-session"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "e7415a96",
-        "structuredFields": {
-          "kindergartenName": "상은유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPnvy7ECQAG%22+%22상은유치원%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DPnvy7ECQAG/",
-          "normalizedUrl": "www.instagram.com/reel/dpnvy7ecqag",
-          "normalizedText": "수원 영통 상은유치원 2026 입학설명회 instagram 상은유치원 2026학년도 입학설명회와 영통·원천동·수원 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "e7415a96",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "상은유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 삼성로302번길 11",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPnvy7ECQAG%22+%22상은유치원%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f854-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-bfc06a22",
-        "kindergartenId": "1ecec08c-f854-b044-e053-0a32095ab044",
-        "title": "수원 배학유치원 아빠참여수업 Threads",
-        "url": "https://www.threads.com/@marinecrew5/post/DZoFCqkkwlz/",
-        "source": "other",
-        "sourceName": "Threads · @marinecrew5",
-        "snippet": "배학유치원 아빠참여수업과 학부모 참여 문맥이 확인되는 Threads 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "threads",
-          "parent-participation"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "cbf9ee7a",
-        "structuredFields": {
-          "kindergartenName": "배학유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 월드컵로 214-1",
-          "platform": "Threads",
-          "searchUrl": "https://www.google.com/search?q=%22DZoFCqkkwlz%22+%22%EB%B0%B0%ED%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.threads.com/@marinecrew5/post/DZoFCqkkwlz/",
-          "normalizedUrl": "www.threads.com/@marinecrew5/post/dzofcqkkwlz",
-          "normalizedText": "수원 배학유치원 아빠참여수업 threads 배학유치원 아빠참여수업과 학부모 참여 문맥이 확인되는 threads 검색 결과.",
-          "htmlSnapshotHash": "cbf9ee7a",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "배학유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 월드컵로 214-1",
-            "platform": "Threads",
-            "searchUrl": "https://www.google.com/search?q=%22DZoFCqkkwlz%22+%22%EB%B0%B0%ED%95%99%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "3a8c62de-246f-4af5-9dcb-6dcc9244e681": [
-      {
-        "id": "rev-fce1040b",
-        "kindergartenId": "3a8c62de-246f-4af5-9dcb-6dcc9244e681",
-        "title": "수원 망포유치원 봄운동회 Instagram",
-        "url": "https://www.instagram.com/reel/DXytDY1psXJ/",
-        "source": "other",
-        "sourceName": "Instagram · 망포유치원 봄운동회",
-        "snippet": "i_eye_sport 계정에서 망포유치원 봄운동회가 따뜻한 봄 햇살 속에 진행됐고 원아들이 적극적으로 참여한 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "sports-day",
-          "external-program"
-        ],
-        "date": "2026-05-01",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "608ceeea",
-        "structuredFields": {
-          "kindergartenName": "망포유치원",
-          "kindergartenAddress": "경기도 수원시 영통구 태장로7길 47",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXytDY1psXJ%22+%22%EB%A7%9D%ED%8F%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXytDY1psXJ/",
-          "normalizedUrl": "www.instagram.com/reel/dxytdy1psxj",
-          "normalizedText": "수원 망포유치원 봄운동회 instagram i_eye_sport 계정에서 망포유치원 봄운동회가 따뜻한 봄 햇살 속에 진행됐고 원아들이 적극적으로 참여한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "608ceeea",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "망포유치원",
-            "kindergartenAddress": "경기도 수원시 영통구 태장로7길 47",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXytDY1psXJ%22+%22%EB%A7%9D%ED%8F%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
     "1ecec08d-0b14-b044-e053-0a32095ab044": [
       {
-        "id": "rev-fca3acac",
+        "id": "rev-92f3fd18",
         "kindergartenId": "1ecec08d-0b14-b044-e053-0a32095ab044",
-        "title": "수원 영통 해밀유치원 산타행사 Instagram",
-        "url": "https://www.instagram.com/p/CrfNRxCS8Nh/",
+        "title": "수원 해밀유치원 산타행사 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRtXxC4kkdU/",
         "source": "other",
-        "sourceName": "Instagram · 해밀유치원",
-        "snippet": "Instagram 검색 결과에서 수원해밀유치원, 수원해밀숲유치원, 수원영통구와 산타행사 문맥이 확인되는 게시물.",
+        "sourceName": "Instagram · 수원 해밀유치원",
+        "snippet": "해밀유치원 계정에서 Merry Christmas Kids Fair, 산타할아버지가 찾아오는 산타행사 문맥과 수원원천동·수원영통구 단서가 확인되는 Instagram 릴스 검색 결과.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "kindergarten-event"
+          "instagram",
+          "christmas"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "collectedAt": "2026-07-02T20:20:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2f0ec8fd",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e672a9a0",
         "structuredFields": {
           "kindergartenName": "해밀유치원",
           "kindergartenAddress": "경기도 수원시 영통구 동탄원천로1109번길 42",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CrfNRxCS8Nh%22+%22%ED%95%B4%EB%B0%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%88%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DRtXxC4kkdU%22+%22%EC%88%98%EC%9B%90%ED%95%B4%EB%B0%80%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": true,
+          "snippetCaveat": "해밀유치원 동명이 있으나 수원원천동·수원영통구 단서가 수원 로컬 기관과 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CrfNRxCS8Nh/",
-          "normalizedUrl": "www.instagram.com/p/crfnrxcs8nh",
-          "normalizedText": "수원 영통 해밀유치원 산타행사 instagram instagram 검색 결과에서 수원해밀유치원, 수원해밀숲유치원, 수원영통구와 산타행사 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "2f0ec8fd",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DRtXxC4kkdU/",
+          "normalizedUrl": "www.instagram.com/reel/drtxxc4kkdu",
+          "normalizedText": "수원 해밀유치원 산타행사 instagram reel 해밀유치원 계정에서 merry christmas kids fair, 산타할아버지가 찾아오는 산타행사 문맥과 수원원천동·수원영통구 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "e672a9a0",
+          "extractedAt": "2026-07-02T20:20:00.000Z",
           "structuredFields": {
             "kindergartenName": "해밀유치원",
             "kindergartenAddress": "경기도 수원시 영통구 동탄원천로1109번길 42",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CrfNRxCS8Nh%22+%22%ED%95%B4%EB%B0%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%88%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22DRtXxC4kkdU%22+%22%EC%88%98%EC%9B%90%ED%95%B4%EB%B0%80%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": true,
+            "snippetCaveat": "해밀유치원 동명이 있으나 수원원천동·수원영통구 단서가 수원 로컬 기관과 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedAt": "2026-07-02T20:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -972,54 +893,51 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-92f3fd18",
+        "id": "rev-fca3acac",
         "kindergartenId": "1ecec08d-0b14-b044-e053-0a32095ab044",
-        "title": "수원 해밀유치원 산타행사 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DRtXxC4kkdU/",
+        "title": "수원 영통 해밀유치원 산타행사 Instagram",
+        "url": "https://www.instagram.com/p/CrfNRxCS8Nh/",
         "source": "other",
-        "sourceName": "Instagram · 수원 해밀유치원",
-        "snippet": "해밀유치원 계정에서 Merry Christmas Kids Fair, 산타할아버지가 찾아오는 산타행사 문맥과 수원원천동·수원영통구 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "sourceName": "Instagram · 해밀유치원",
+        "snippet": "Instagram 검색 결과에서 수원해밀유치원, 수원해밀숲유치원, 수원영통구와 산타행사 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
-          "search-snippet",
-          "address-not-required",
           "instagram",
-          "christmas"
+          "address-not-required",
+          "kindergarten-event"
         ],
         "date": null,
-        "collectedAt": "2026-07-02T20:20:00.000Z",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "e672a9a0",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2f0ec8fd",
         "structuredFields": {
           "kindergartenName": "해밀유치원",
           "kindergartenAddress": "경기도 수원시 영통구 동탄원천로1109번길 42",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DRtXxC4kkdU%22+%22%EC%88%98%EC%9B%90%ED%95%B4%EB%B0%80%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+          "searchUrl": "https://www.google.com/search?q=%22CrfNRxCS8Nh%22+%22%ED%95%B4%EB%B0%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%88%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "해밀유치원 동명이 있으나 수원원천동·수원영통구 단서가 수원 로컬 기관과 일치해 수동 매칭했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRtXxC4kkdU/",
-          "normalizedUrl": "www.instagram.com/reel/drtxxc4kkdu",
-          "normalizedText": "수원 해밀유치원 산타행사 instagram reel 해밀유치원 계정에서 merry christmas kids fair, 산타할아버지가 찾아오는 산타행사 문맥과 수원원천동·수원영통구 단서가 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "e672a9a0",
-          "extractedAt": "2026-07-02T20:20:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/CrfNRxCS8Nh/",
+          "normalizedUrl": "www.instagram.com/p/crfnrxcs8nh",
+          "normalizedText": "수원 영통 해밀유치원 산타행사 instagram instagram 검색 결과에서 수원해밀유치원, 수원해밀숲유치원, 수원영통구와 산타행사 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2f0ec8fd",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "해밀유치원",
             "kindergartenAddress": "경기도 수원시 영통구 동탄원천로1109번길 42",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DRtXxC4kkdU%22+%22%EC%88%98%EC%9B%90%ED%95%B4%EB%B0%80%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%ED%83%80%ED%96%89%EC%82%AC%22",
+            "searchUrl": "https://www.google.com/search?q=%22CrfNRxCS8Nh%22+%22%ED%95%B4%EB%B0%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%88%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "해밀유치원 동명이 있으나 수원원천동·수원영통구 단서가 수원 로컬 기관과 일치해 수동 매칭했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T20:20:00.000Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -1077,7 +995,70 @@
         "approvedAt": "2026-07-02T20:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
+    ],
+    "3a8c62de-246f-4af5-9dcb-6dcc9244e681": [
+      {
+        "id": "rev-fce1040b",
+        "kindergartenId": "3a8c62de-246f-4af5-9dcb-6dcc9244e681",
+        "title": "수원 망포유치원 봄운동회 Instagram",
+        "url": "https://www.instagram.com/reel/DXytDY1psXJ/",
+        "source": "other",
+        "sourceName": "Instagram · 망포유치원 봄운동회",
+        "snippet": "i_eye_sport 계정에서 망포유치원 봄운동회가 따뜻한 봄 햇살 속에 진행됐고 원아들이 적극적으로 참여한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "sports-day",
+          "external-program"
+        ],
+        "date": "2026-05-01",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "608ceeea",
+        "structuredFields": {
+          "kindergartenName": "망포유치원",
+          "kindergartenAddress": "경기도 수원시 영통구 태장로7길 47",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXytDY1psXJ%22+%22%EB%A7%9D%ED%8F%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXytDY1psXJ/",
+          "normalizedUrl": "www.instagram.com/reel/dxytdy1psxj",
+          "normalizedText": "수원 망포유치원 봄운동회 instagram i_eye_sport 계정에서 망포유치원 봄운동회가 따뜻한 봄 햇살 속에 진행됐고 원아들이 적극적으로 참여한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "608ceeea",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "망포유치원",
+            "kindergartenAddress": "경기도 수원시 영통구 태장로7길 47",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXytDY1psXJ%22+%22%EB%A7%9D%ED%8F%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "b93db3c2-2031-4258-8d26-ae7b4d538562": [
+      {
+        "id": "rev-99852523",
+        "title": "[2026 광교중앙 유치원 설명회 후기] 설명회를 들으니 더더...",
+        "url": "https://blog.naver.com/denji85/224072050495",
+        "source": "naver_blog",
+        "sourceName": "애도 키우고, 일도 하고, 놀기도 하는",
+        "snippet": "광교는 영유도 좋은 곳이 많아서, 영유보내시는 가정도 많더라고요~ 제가 설명회를 다녀보니 중요도... 해들유치원 장점 집에서 가장 가까움. 아이가 스스로 사고할 수 있도록 도와주는 레지오에밀리아 교육...",
+        "date": "2025-11-11",
+        "collectedAt": "2026-07-26T08:29:21.020261",
+        "kindergartenId": "b93db3c2-2031-4258-8d26-ae7b4d538562"
+      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

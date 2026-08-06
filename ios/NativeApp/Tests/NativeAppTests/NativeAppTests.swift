@@ -159,6 +159,37 @@ final class NativeAppTests: XCTestCase {
     }
 
     @MainActor
+    func testKindergartenRepositoryPrefersValidatedRemoteCatalog() async throws {
+        let remoteCatalog = Array(NativePreviewFixtures.kindergartens.prefix(2))
+        let localCatalog = Array(NativePreviewFixtures.kindergartens.prefix(1))
+        let repository = KindergartenRepository(
+            remoteLoader: { try JSONEncoder().encode(remoteCatalog) },
+            localLoader: { try JSONEncoder().encode(localCatalog) }
+        )
+
+        await repository.load()
+
+        XCTAssertEqual(repository.kindergartens.map(\.kindercode), remoteCatalog.map(\.kindercode))
+        XCTAssertEqual(repository.lookup.count, 2)
+        XCTAssertNil(repository.error)
+    }
+
+    @MainActor
+    func testKindergartenRepositoryFallsBackWhenRemoteCatalogIsEmpty() async throws {
+        let localCatalog = Array(NativePreviewFixtures.kindergartens.prefix(1))
+        let repository = KindergartenRepository(
+            remoteLoader: { Data("[]".utf8) },
+            localLoader: { try JSONEncoder().encode(localCatalog) }
+        )
+
+        await repository.load()
+
+        XCTAssertEqual(repository.kindergartens.map(\.kindercode), localCatalog.map(\.kindercode))
+        XCTAssertEqual(repository.lookup.count, 1)
+        XCTAssertNil(repository.error)
+    }
+
+    @MainActor
     func testReviewRepositoryFallsBackToBundledDataWhenRemoteFails() async throws {
         let bundled = """
         {
