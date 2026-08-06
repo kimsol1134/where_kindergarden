@@ -36,17 +36,17 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
           version: 10
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Resolve workflow parameters
@@ -85,7 +85,7 @@ jobs:
         run: pnpm exec playwright install --with-deps chromium
 
       - name: Restore verification cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: ${{ steps.params.outputs.cache_dir }}
           key: review-verification-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
@@ -217,7 +217,7 @@ jobs:
 
       - name: Upload review verification artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: review-verification-${{ steps.params.outputs.sido_tag }}-${{ github.run_id }}
           path: ${{ steps.params.outputs.output_dir }}/*.json
@@ -225,7 +225,7 @@ jobs:
 
       - name: Upload apply artifacts
         if: always() && steps.params.outputs.apply_changes == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: review-verification-apply-${{ steps.params.outputs.sido_tag }}-${{ github.run_id }}
           path: ${{ steps.params.outputs.output_dir }}/apply-artifacts
@@ -233,7 +233,7 @@ jobs:
 
       - name: Save verification cache
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: ${{ steps.params.outputs.cache_dir }}
           key: review-verification-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
