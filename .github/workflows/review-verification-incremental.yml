@@ -6,7 +6,7 @@ on:
       sido:
         description: 'Comma-separated sido codes'
         required: false
-        default: '11,41'
+        default: '11,12,26,27,28,30,31,36,41,43,44,47,48,50,51,52'
         type: string
       apply_changes:
         description: 'Apply verification results to review JSON files'
@@ -19,8 +19,8 @@ on:
         default: 5
         type: number
   schedule:
-    # 07:15 KST daily (GitHub Actions cron uses UTC)
-    - cron: '15 22 * * *'
+    # 08:30 KST every Monday, after catalog/vacancy refreshes (cron uses UTC)
+    - cron: '30 23 * * 0'
 
 permissions:
   contents: read
@@ -32,7 +32,7 @@ concurrency:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
 
     steps:
       - name: Checkout repository
@@ -57,7 +57,7 @@ jobs:
           QA_SAMPLE_INPUT="${{ github.event_name == 'workflow_dispatch' && inputs.qa_sample_size || '' }}"
           APPLY_INPUT="${{ github.event_name == 'workflow_dispatch' && inputs.apply_changes || 'false' }}"
 
-          SIDO="${SIDO_INPUT:-11,41}"
+          SIDO="${SIDO_INPUT:-11,12,26,27,28,30,31,36,41,43,44,47,48,50,51,52}"
           QA_SAMPLE_SIZE="${QA_SAMPLE_INPUT:-5}"
           APPLY_CHANGES="${APPLY_INPUT:-false}"
           MODE="review-only"
@@ -101,13 +101,21 @@ jobs:
           mkdir -p "$CACHE_DIR"
 
           if [ ! -f "$CACHE_DIR/review-verification-state.json" ]; then
-            cp scripts/data-output/review-verification-state.json \
-              "$CACHE_DIR/review-verification-state.json"
+            if [ -f scripts/data-output/review-verification-state.json ]; then
+              cp scripts/data-output/review-verification-state.json \
+                "$CACHE_DIR/review-verification-state.json"
+            else
+              echo "No seed verification state found; the incremental verifier will bootstrap an empty state."
+            fi
           fi
 
           if [ ! -f "$CACHE_DIR/review-body-cache.json" ]; then
-            cp scripts/data-output/review-body-cache.json \
-              "$CACHE_DIR/review-body-cache.json"
+            if [ -f scripts/data-output/review-body-cache.json ]; then
+              cp scripts/data-output/review-body-cache.json \
+                "$CACHE_DIR/review-body-cache.json"
+            else
+              echo "No seed body cache found; the incremental verifier will bootstrap an empty cache."
+            fi
           fi
 
       - name: Run incremental review verification

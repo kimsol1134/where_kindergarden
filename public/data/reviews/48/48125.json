@@ -1,8 +1,61 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 6,
   "kindergartenCount": 4,
   "reviews": {
+    "1ecec08c-f013-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-bc3d2f60",
+        "kindergartenId": "1ecec08c-f013-b044-e053-0a32095ab044",
+        "title": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DIyiswhzY-w/",
+        "source": "other",
+        "sourceName": "Instagram · 창원 유아숲체험원",
+        "snippet": "현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T10:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "73112fbc",
+        "structuredFields": {
+          "kindergartenName": "현동초등학교병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIyiswhzY-w/",
+          "normalizedUrl": "www.instagram.com/reel/diyiswhzy-w",
+          "normalizedText": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 instagram reel 현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "73112fbc",
+          "extractedAt": "2026-07-02T10:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현동초등학교병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T10:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08c-f9d4-b044-e053-0a32095ab044": [
       {
         "id": "rev-7aca059c",
@@ -54,56 +107,146 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f013-b044-e053-0a32095ab044": [
+    "1ecec08d-0800-b044-e053-0a32095ab044": [
       {
-        "id": "rev-bc3d2f60",
-        "kindergartenId": "1ecec08c-f013-b044-e053-0a32095ab044",
-        "title": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DIyiswhzY-w/",
+        "id": "rev-sns-wave753-02512341",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초 구서분교장병설유치원 물모래놀이 공개 기록",
+        "url": "https://www.instagram.com/p/DafOEpEgeyL/",
         "source": "other",
-        "sourceName": "Instagram · 창원 유아숲체험원",
-        "snippet": "현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "sourceName": "Instagram · hello_gusan_kids",
+        "snippet": "구서분교장병설유치원이 물모래놀이와 물놀이 활동을 기록한 공개 게시물입니다.",
+        "summary": "마산 구산초등학교구서분교장병설유치원의 여름 물모래놀이 활동을 확인할 수 있는 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "forest-experience"
+          "water-play",
+          "sand-play",
+          "changwon"
+        ],
+        "date": "2026-07-07",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-news-web-search-snippet",
+        "evidenceChecksum": "sns-wave753-02512341",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DafOEpEgeyL/",
+          "normalizedUrl": "instagram.com/p/dafoepegeyl",
+          "normalizedText": "구산초등학교구서분교장병설유치원 구서분교장 물모래놀이 물놀이 현동 마산",
+          "htmlSnapshotHash": "sns-wave753-02512341",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DafOEpEgeyL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave753"
+      },
+      {
+        "id": "rev-a134a60d",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 Instagram Post",
+        "url": "https://www.instagram.com/p/DaAbP91Abye/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구서분교장병설유치원, 마산유치원, 공립유치원, 텃밭, 꼬마농부 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "little-farmer"
         ],
         "date": null,
-        "collectedAt": "2026-07-02T10:10:00.000Z",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "73112fbc",
+        "evidenceChecksum": "a134a60d",
         "structuredFields": {
-          "kindergartenName": "현동초등학교병설유치원",
-          "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+          "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DIyiswhzY-w/",
-          "normalizedUrl": "www.instagram.com/reel/diyiswhzy-w",
-          "normalizedText": "창원 현동초등학교병설유치원 현동유아숲체험원 활동 instagram reel 현동유아숲체험원에서 현동초등학교병설유치원 단서와 씨앗 심기·숲놀이터 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "73112fbc",
-          "extractedAt": "2026-07-02T10:10:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DaAbP91Abye/",
+          "normalizedUrl": "instagram.com/p/daabp91abye",
+          "normalizedText": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 instagram post 검색 결과에서 구서분교장병설유치원 마산유치원 공립유치원 텃밭 꼬마농부 단서가 확인된다.",
+          "htmlSnapshotHash": "a134a60d",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
           "structuredFields": {
-            "kindergartenName": "현동초등학교병설유치원",
-            "kindergartenAddress": "경상남도 창원시 마산합포구 현동6길 12",
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DIyiswhzY-w%22%20%22%ED%98%84%EB%8F%99%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%98%84%EB%8F%99%EC%9C%A0%EC%95%84%EC%88%B2%EC%B2%B4%ED%97%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "현동초등학교병설유치원 단서와 현동유아숲체험원 활동명이 로컬 기관과 일치해 수동 매칭했다."
+            "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T10:10:00.000Z",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-25c93859",
+        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
+        "title": "구산초등학교구서분교장병설유치원 텃밭활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DY6y88DBtHv/",
+        "source": "other",
+        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
+        "snippet": "검색 결과에서 구산초등학교구서분교장병설유치원, 현동유치원, 마산유치원, 텃밭활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "garden-activity",
+          "outdoor-play"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-07-03T21:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "25c93859",
+        "structuredFields": {
+          "kindergartenName": "구산초등학교구서분교장병설유치원",
+          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6y88DBtHv/",
+          "normalizedUrl": "instagram.com/reel/dy6y88dbthv",
+          "normalizedText": "구산초등학교구서분교장병설유치원 텃밭활동 instagram reel 검색 결과에서 구산초등학교구서분교장병설유치원 현동유치원 마산유치원 텃밭활동 단서가 확인된다.",
+          "htmlSnapshotHash": "25c93859",
+          "extractedAt": "2026-07-03T21:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "구산초등학교구서분교장병설유치원",
+            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T21:35:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -160,149 +303,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-0800-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-25c93859",
-        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
-        "title": "구산초등학교구서분교장병설유치원 텃밭활동 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DY6y88DBtHv/",
-        "source": "other",
-        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
-        "snippet": "검색 결과에서 구산초등학교구서분교장병설유치원, 현동유치원, 마산유치원, 텃밭활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "garden-activity",
-          "outdoor-play"
-        ],
-        "date": "2026-05-29",
-        "collectedAt": "2026-07-03T21:35:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "25c93859",
-        "structuredFields": {
-          "kindergartenName": "구산초등학교구서분교장병설유치원",
-          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DY6y88DBtHv/",
-          "normalizedUrl": "instagram.com/reel/dy6y88dbthv",
-          "normalizedText": "구산초등학교구서분교장병설유치원 텃밭활동 instagram reel 검색 결과에서 구산초등학교구서분교장병설유치원 현동유치원 마산유치원 텃밭활동 단서가 확인된다.",
-          "htmlSnapshotHash": "25c93859",
-          "extractedAt": "2026-07-03T21:35:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "구산초등학교구서분교장병설유치원",
-            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DY6y88DBtHv%22%20%22%EA%B5%AC%EC%82%B0%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%ED%99%9C%EB%8F%99%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "구산초등학교구서분교장병설유치원은 로컬 원장부 단일 정확 명칭이며 현동 및 마산 단서가 주소권역과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T21:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a134a60d",
-        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
-        "title": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 Instagram Post",
-        "url": "https://www.instagram.com/p/DaAbP91Abye/",
-        "source": "other",
-        "sourceName": "Instagram · 구산초등학교구서분교장병설유치원",
-        "snippet": "검색 결과에서 구서분교장병설유치원, 마산유치원, 공립유치원, 텃밭, 꼬마농부 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "garden-activity",
-          "little-farmer"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T21:35:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a134a60d",
-        "structuredFields": {
-          "kindergartenName": "구산초등학교구서분교장병설유치원",
-          "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DaAbP91Abye/",
-          "normalizedUrl": "instagram.com/p/daabp91abye",
-          "normalizedText": "구산초등학교구서분교장병설유치원 꼬마농부 텃밭 instagram post 검색 결과에서 구서분교장병설유치원 마산유치원 공립유치원 텃밭 꼬마농부 단서가 확인된다.",
-          "htmlSnapshotHash": "a134a60d",
-          "extractedAt": "2026-07-03T21:35:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "구산초등학교구서분교장병설유치원",
-            "kindergartenAddress": "경상남도 창원시 마산합포구 해양관광로 739",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DaAbP91Abye%22%20%22%EA%B5%AC%EC%84%9C%EB%B6%84%EA%B5%90%EC%9E%A5%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%ED%85%83%EB%B0%AD%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "구서분교장병설유치원 및 마산 단서가 로컬 경남 창원 구산초등학교구서분교장병설유치원과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T21:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave753-02512341",
-        "kindergartenId": "1ecec08d-0800-b044-e053-0a32095ab044",
-        "title": "구산초 구서분교장병설유치원 물모래놀이 공개 기록",
-        "url": "https://www.instagram.com/p/DafOEpEgeyL/",
-        "source": "other",
-        "sourceName": "Instagram · hello_gusan_kids",
-        "snippet": "구서분교장병설유치원이 물모래놀이와 물놀이 활동을 기록한 공개 게시물입니다.",
-        "summary": "마산 구산초등학교구서분교장병설유치원의 여름 물모래놀이 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "water-play",
-          "sand-play",
-          "changwon"
-        ],
-        "date": "2026-07-07",
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-news-web-search-snippet",
-        "evidenceChecksum": "sns-wave753-02512341",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DafOEpEgeyL/",
-          "normalizedUrl": "instagram.com/p/dafoepegeyl",
-          "normalizedText": "구산초등학교구서분교장병설유치원 구서분교장 물모래놀이 물놀이 현동 마산",
-          "htmlSnapshotHash": "sns-wave753-02512341",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DafOEpEgeyL/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave753"
       }
     ]
   }

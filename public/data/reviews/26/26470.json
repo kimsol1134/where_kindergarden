@@ -1,310 +1,149 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 13,
   "kindergartenCount": 4,
   "reviews": {
-    "1ecec08d-0959-b044-e053-0a32095ab044": [
+    "1ecec08c-f578-b044-e053-0a32095ab044": [
       {
-        "id": "rev-b7fb72a2",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 거성유치원 입학설명회 SNS 안내",
-        "url": "https://www.instagram.com/p/DQT_2btjxN3/",
+        "id": "rev-99852207",
+        "title": "양지유치원 2차 설명회 안내",
+        "url": "https://blog.naver.com/ghyangji17/224022737011",
+        "source": "naver_blog",
+        "sourceName": "양지유치원",
+        "snippet": "지금부터는 설명회 2차 예약이 시작됩니다. 날 짜 : 10월 27일(월) 10시 30분 내 용 : 양지유치원 교육과정 안내 장 소 : 김해시 분성로3번길 245 문의 : 055 - 322- 4417~8 2차 설명회에서 우리 원의 철학이...",
+        "date": "2025-09-26",
+        "collectedAt": "2026-01-30T02:54:08.985Z",
+        "kindergartenId": "1ecec08c-f578-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-00ee-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave681-2b02e7d4",
+        "kindergartenId": "1ecec08d-00ee-b044-e053-0a32095ab044",
+        "title": "과정유치원 금강공원 숲생태 활동 기록",
+        "url": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
         "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 SNS 검색 결과.",
-        "summary": "부산 연제구 거성유치원 입학설명회 안내 Instagram 검색 결과.",
+        "sourceName": "Instagram · 과정유치원",
+        "snippet": "과정유치원이 금강공원에서 연령별 숲생태 활동을 이어가는 모습을 소개한 공개 릴스입니다.",
+        "summary": "금강공원에서 숲놀이와 숲생태 활동을 꾸준히 진행하는 유치원 활동을 확인할 수 있는 SNS 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "official-info"
+          "forest-play",
+          "ecology",
+          "park-activity"
         ],
-        "content": "거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 Instagram 검색 결과. 공식 안내 성격이므로 학부모 체험 후기는 아니지만, 설명회 정보 출처로 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T17:20:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:55:00.000Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a70b6389",
+        "evidenceChecksum": "sns-wave681-2b02e7d4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
+          "normalizedUrl": "instagram.com/reel/dwn1hdqez7n",
+          "normalizedText": "과정유치원 금강공원 숲생태 숲놀이",
+          "htmlSnapshotHash": "sns-wave681-2b02e7d4",
+          "extractedAt": "2026-07-03T23:55:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:55:00.000Z",
+        "approvedBy": "codex-manual-sns-wave681"
+      }
+    ],
+    "1ecec08d-06d7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-85fd0a73",
+        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
+        "kindergartenName": "토현유치원",
+        "title": "부산 토현유치원 학부모 참여수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DPnGYjuk8c6/",
+        "source": "other",
+        "sourceName": "Instagram · 토현유치원 태그 게시물",
+        "snippet": "Instagram 검색 결과에서 연산동·망미동 지역 태그와 토현유치원 학부모 참여수업 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation-class",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
         "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "kindergartenName": "토현유치원",
+          "kindergartenAddress": "부산광역시 연제구 토현로 32",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQT_2btjxN3%22+%22%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DPnGYjuk8c6%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8+%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "검색 결과의 원명으로 부산 연제구 거성유치원에 수동 매칭했다. 공식 모집·설명회 안내 성격이다."
+          "canonicalUrl": "https://www.instagram.com/reel/DPnGYjuk8c6/",
+          "regionEvidence": [
+            "토현유치원",
+            "연산동유치원",
+            "망미동유치원",
+            "학부모참여수업"
+          ]
         },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQT_2btjxN3/",
-          "normalizedUrl": "www.instagram.com/p/dqt_2btjxn3",
-          "normalizedText": "부산 거성유치원 입학설명회 sns 안내 거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 sns 검색 결과. 부산 연제구 거성유치원 입학설명회 안내 instagram 검색 결과.",
-          "htmlSnapshotHash": "a70b6389",
-          "extractedAt": "2026-06-30T17:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQT_2btjxN3%22+%22%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "검색 결과의 원명으로 부산 연제구 거성유치원에 수동 매칭했다. 공식 모집·설명회 안내 성격이다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T17:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        "evidenceChecksum": "adab095c"
       },
       {
-        "id": "rev-b2a98ebf",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 연제 거성유치원 찾아오는 동물원 Instagram",
-        "url": "https://www.instagram.com/reel/DPFypwGkuSJ/",
+        "id": "rev-e6197264",
+        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
+        "title": "부산 토현유치원 놀이중심 교육 Instagram",
+        "url": "https://www.instagram.com/reel/DQLkfuyCeNm/",
         "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "geosunglove 계정에서 거성유치원 원아들이 찾아오는 동물원 활동으로 다양한 동물을 관찰하고 먹이 주기와 교감 체험을 했다는 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "activity",
-          "nature"
-        ],
-        "date": "2025-09-26",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "e18ee986",
-        "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPFypwGkuSJ%22+%22geosunglove%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DPFypwGkuSJ/",
-          "normalizedUrl": "www.instagram.com/reel/dpfypwgkusj",
-          "normalizedText": "부산 연제 거성유치원 찾아오는 동물원 instagram geosunglove 계정에서 거성유치원 원아들이 찾아오는 동물원 활동으로 다양한 동물을 관찰하고 먹이 주기와 교감 체험을 했다는 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "e18ee986",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPFypwGkuSJ%22+%22geosunglove%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-2196de05",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 연제 거성유치원 붕붕카 정비소 스페셜데이 Instagram",
-        "url": "https://www.instagram.com/p/DPTsYjjj54k/",
-        "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "geosunglove 계정에서 거성유치원 스페셜데이로 붕붕카 정비소 놀이 활동이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "activity"
-        ],
-        "date": "2025-10-02",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "e5594f12",
-        "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPTsYjjj54k%22+%22geosunglove%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DPTsYjjj54k/",
-          "normalizedUrl": "www.instagram.com/p/dptsyjjj54k",
-          "normalizedText": "부산 연제 거성유치원 붕붕카 정비소 스페셜데이 instagram geosunglove 계정에서 거성유치원 스페셜데이로 붕붕카 정비소 놀이 활동이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "e5594f12",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPTsYjjj54k%22+%22geosunglove%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-e0f048ed",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 연제 거성유치원 동화야 놀자 Instagram",
-        "url": "https://www.instagram.com/reel/DOyEE6Dj_9E/",
-        "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "geosunglove 계정에서 거성유치원 원아들이 선생님의 동화 이야기를 듣고 따라 말하며 동화구연 놀이에 참여한 문맥이 확인되는 Instagram 릴.",
+        "sourceName": "Instagram · 토현유치원",
+        "snippet": "Instagram 검색 결과에서 토현유치원, 부산 연제구 유치원, 놀이중심, 숲유치원, 유아중심 교육 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
           "curriculum",
-          "activity"
+          "forest-activity"
         ],
-        "date": "2025-09-19",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "128d1725",
-        "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DOyEE6Dj_9E%22+%22geosunglove%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DOyEE6Dj_9E/",
-          "normalizedUrl": "www.instagram.com/reel/doyee6dj_9e",
-          "normalizedText": "부산 연제 거성유치원 동화야 놀자 instagram geosunglove 계정에서 거성유치원 원아들이 선생님의 동화 이야기를 듣고 따라 말하며 동화구연 놀이에 참여한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "128d1725",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DOyEE6Dj_9E%22+%22geosunglove%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-47754309",
-        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
-        "title": "부산 연제 거성유치원 요트체험 Instagram",
-        "url": "https://www.instagram.com/p/DQtwK_FDyVI/",
-        "source": "other",
-        "sourceName": "Instagram · 거성유치원",
-        "snippet": "geosunglove 계정에서 거성유치원 원아들이 날씨 좋은 날 바다로 요트체험을 다녀온 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "activity"
-        ],
-        "date": "2025-11-06",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "dbecd391",
-        "structuredFields": {
-          "kindergartenName": "거성유치원",
-          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQtwK_FDyVI%22+%22geosunglove%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQtwK_FDyVI/",
-          "normalizedUrl": "www.instagram.com/p/dqtwk_fdyvi",
-          "normalizedText": "부산 연제 거성유치원 요트체험 instagram geosunglove 계정에서 거성유치원 원아들이 날씨 좋은 날 바다로 요트체험을 다녀온 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "dbecd391",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "거성유치원",
-            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQtwK_FDyVI%22+%22geosunglove%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-06d7-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-762d90be",
-        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
-        "title": "부산 토현유치원 학부모 참여수업 SNS",
-        "url": "https://www.instagram.com/reel/DZUE5AozQr1/",
-        "source": "other",
-        "sourceName": "Instagram · 토현유치원",
-        "snippet": "토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "부산 토현유치원의 학부모 참여수업 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "official-info"
-        ],
-        "content": "토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 Instagram 검색 결과. 부산 연제구 원장부 주소와 맞아 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T20:50:00.000Z",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "069b4058",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "207fd640",
         "structuredFields": {
           "kindergartenName": "토현유치원",
           "kindergartenAddress": "부산광역시 연제구 토현로 32",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZUE5AozQr1%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DQLkfuyCeNm%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 연제구 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZUE5AozQr1/",
-          "normalizedUrl": "www.instagram.com/reel/dzue5aozqr1",
-          "normalizedText": "부산 토현유치원 학부모 참여수업 sns 토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 instagram 검색 결과. 부산 토현유치원의 학부모 참여수업 instagram 검색 결과.",
-          "htmlSnapshotHash": "069b4058",
-          "extractedAt": "2026-06-30T20:50:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DQLkfuyCeNm/",
+          "normalizedUrl": "www.instagram.com/reel/dqlkfuycenm",
+          "normalizedText": "부산 토현유치원 놀이중심 교육 instagram instagram 검색 결과에서 토현유치원, 부산 연제구 유치원, 놀이중심, 숲유치원, 유아중심 교육 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "207fd640",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "토현유치원",
             "kindergartenAddress": "부산광역시 연제구 토현로 32",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZUE5AozQr1%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22DQLkfuyCeNm%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 연제구 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T20:50:00.000Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -358,6 +197,59 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-762d90be",
+        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
+        "title": "부산 토현유치원 학부모 참여수업 SNS",
+        "url": "https://www.instagram.com/reel/DZUE5AozQr1/",
+        "source": "other",
+        "sourceName": "Instagram · 토현유치원",
+        "snippet": "토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "부산 토현유치원의 학부모 참여수업 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 Instagram 검색 결과. 부산 연제구 원장부 주소와 맞아 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T20:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "069b4058",
+        "structuredFields": {
+          "kindergartenName": "토현유치원",
+          "kindergartenAddress": "부산광역시 연제구 토현로 32",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZUE5AozQr1%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 연제구 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZUE5AozQr1/",
+          "normalizedUrl": "www.instagram.com/reel/dzue5aozqr1",
+          "normalizedText": "부산 토현유치원 학부모 참여수업 sns 토현유치원 2026학년도 학부모 참여수업과 #토현유치원 #학부모참여수업 문맥이 확인되는 instagram 검색 결과. 부산 토현유치원의 학부모 참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "069b4058",
+          "extractedAt": "2026-06-30T20:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "토현유치원",
+            "kindergartenAddress": "부산광역시 연제구 토현로 32",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZUE5AozQr1%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 부산 연제구 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T20:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -461,147 +353,256 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-e6197264",
-        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
-        "title": "부산 토현유치원 놀이중심 교육 Instagram",
-        "url": "https://www.instagram.com/reel/DQLkfuyCeNm/",
-        "source": "other",
-        "sourceName": "Instagram · 토현유치원",
-        "snippet": "Instagram 검색 결과에서 토현유치원, 부산 연제구 유치원, 놀이중심, 숲유치원, 유아중심 교육 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "curriculum",
-          "forest-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "207fd640",
-        "structuredFields": {
-          "kindergartenName": "토현유치원",
-          "kindergartenAddress": "부산광역시 연제구 토현로 32",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQLkfuyCeNm%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQLkfuyCeNm/",
-          "normalizedUrl": "www.instagram.com/reel/dqlkfuycenm",
-          "normalizedText": "부산 토현유치원 놀이중심 교육 instagram instagram 검색 결과에서 토현유치원, 부산 연제구 유치원, 놀이중심, 숲유치원, 유아중심 교육 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "207fd640",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "토현유치원",
-            "kindergartenAddress": "부산광역시 연제구 토현로 32",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQLkfuyCeNm%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-85fd0a73",
-        "kindergartenId": "1ecec08d-06d7-b044-e053-0a32095ab044",
-        "kindergartenName": "토현유치원",
-        "title": "부산 토현유치원 학부모 참여수업 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DPnGYjuk8c6/",
-        "source": "other",
-        "sourceName": "Instagram · 토현유치원 태그 게시물",
-        "snippet": "Instagram 검색 결과에서 연산동·망미동 지역 태그와 토현유치원 학부모 참여수업 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation-class",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "토현유치원",
-          "kindergartenAddress": "부산광역시 연제구 토현로 32",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPnGYjuk8c6%22+%22%ED%86%A0%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%ED%95%99%EB%B6%80%EB%AA%A8+%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DPnGYjuk8c6/",
-          "regionEvidence": [
-            "토현유치원",
-            "연산동유치원",
-            "망미동유치원",
-            "학부모참여수업"
-          ]
-        },
-        "evidenceChecksum": "adab095c"
       }
     ],
-    "1ecec08d-00ee-b044-e053-0a32095ab044": [
+    "1ecec08d-0959-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave681-2b02e7d4",
-        "kindergartenId": "1ecec08d-00ee-b044-e053-0a32095ab044",
-        "title": "과정유치원 금강공원 숲생태 활동 기록",
-        "url": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
+        "id": "rev-b7fb72a2",
+        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
+        "title": "부산 거성유치원 입학설명회 SNS 안내",
+        "url": "https://www.instagram.com/p/DQT_2btjxN3/",
         "source": "other",
-        "sourceName": "Instagram · 과정유치원",
-        "snippet": "과정유치원이 금강공원에서 연령별 숲생태 활동을 이어가는 모습을 소개한 공개 릴스입니다.",
-        "summary": "금강공원에서 숲놀이와 숲생태 활동을 꾸준히 진행하는 유치원 활동을 확인할 수 있는 SNS 원문입니다.",
+        "sourceName": "Instagram · 거성유치원",
+        "snippet": "거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 SNS 검색 결과.",
+        "summary": "부산 연제구 거성유치원 입학설명회 안내 Instagram 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "forest-play",
-          "ecology",
-          "park-activity"
+          "official-info"
         ],
+        "content": "거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 Instagram 검색 결과. 공식 안내 성격이므로 학부모 체험 후기는 아니지만, 설명회 정보 출처로 반영했다.",
         "date": null,
-        "collectedAt": "2026-07-03T23:55:00.000Z",
+        "collectedAt": "2026-06-30T17:20:00.000Z",
+        "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave681-2b02e7d4",
+        "evidenceChecksum": "a70b6389",
+        "structuredFields": {
+          "kindergartenName": "거성유치원",
+          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQT_2btjxN3%22+%22%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 원명으로 부산 연제구 거성유치원에 수동 매칭했다. 공식 모집·설명회 안내 성격이다."
+        },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/",
-          "normalizedUrl": "instagram.com/reel/dwn1hdqez7n",
-          "normalizedText": "과정유치원 금강공원 숲생태 숲놀이",
-          "htmlSnapshotHash": "sns-wave681-2b02e7d4",
-          "extractedAt": "2026-07-03T23:55:00.000Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DWn1HDQEZ7N/"
+          "canonicalUrl": "https://www.instagram.com/p/DQT_2btjxN3/",
+          "normalizedUrl": "www.instagram.com/p/dqt_2btjxn3",
+          "normalizedText": "부산 거성유치원 입학설명회 sns 안내 거성유치원 입학설명회와 2026학년도 신입생 모집 관련 안내가 포함된 sns 검색 결과. 부산 연제구 거성유치원 입학설명회 안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "a70b6389",
+          "extractedAt": "2026-06-30T17:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "거성유치원",
+            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQT_2btjxN3%22+%22%EA%B1%B0%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 원명으로 부산 연제구 거성유치원에 수동 매칭했다. 공식 모집·설명회 안내 성격이다."
+          }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:55:00.000Z",
-        "approvedBy": "codex-manual-sns-wave681"
-      }
-    ],
-    "1ecec08c-f578-b044-e053-0a32095ab044": [
+        "approvedAt": "2026-06-30T17:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
-        "id": "rev-99852207",
-        "title": "양지유치원 2차 설명회 안내",
-        "url": "https://blog.naver.com/ghyangji17/224022737011",
-        "source": "naver_blog",
-        "sourceName": "양지유치원",
-        "snippet": "지금부터는 설명회 2차 예약이 시작됩니다. 날 짜 : 10월 27일(월) 10시 30분 내 용 : 양지유치원 교육과정 안내 장 소 : 김해시 분성로3번길 245 문의 : 055 - 322- 4417~8 2차 설명회에서 우리 원의 철학이...",
+        "id": "rev-47754309",
+        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
+        "title": "부산 연제 거성유치원 요트체험 Instagram",
+        "url": "https://www.instagram.com/p/DQtwK_FDyVI/",
+        "source": "other",
+        "sourceName": "Instagram · 거성유치원",
+        "snippet": "geosunglove 계정에서 거성유치원 원아들이 날씨 좋은 날 바다로 요트체험을 다녀온 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "activity"
+        ],
+        "date": "2025-11-06",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "dbecd391",
+        "structuredFields": {
+          "kindergartenName": "거성유치원",
+          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQtwK_FDyVI%22+%22geosunglove%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQtwK_FDyVI/",
+          "normalizedUrl": "www.instagram.com/p/dqtwk_fdyvi",
+          "normalizedText": "부산 연제 거성유치원 요트체험 instagram geosunglove 계정에서 거성유치원 원아들이 날씨 좋은 날 바다로 요트체험을 다녀온 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "dbecd391",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "거성유치원",
+            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQtwK_FDyVI%22+%22geosunglove%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-2196de05",
+        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
+        "title": "부산 연제 거성유치원 붕붕카 정비소 스페셜데이 Instagram",
+        "url": "https://www.instagram.com/p/DPTsYjjj54k/",
+        "source": "other",
+        "sourceName": "Instagram · 거성유치원",
+        "snippet": "geosunglove 계정에서 거성유치원 스페셜데이로 붕붕카 정비소 놀이 활동이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "activity"
+        ],
+        "date": "2025-10-02",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "e5594f12",
+        "structuredFields": {
+          "kindergartenName": "거성유치원",
+          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPTsYjjj54k%22+%22geosunglove%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPTsYjjj54k/",
+          "normalizedUrl": "www.instagram.com/p/dptsyjjj54k",
+          "normalizedText": "부산 연제 거성유치원 붕붕카 정비소 스페셜데이 instagram geosunglove 계정에서 거성유치원 스페셜데이로 붕붕카 정비소 놀이 활동이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "e5594f12",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "거성유치원",
+            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPTsYjjj54k%22+%22geosunglove%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b2a98ebf",
+        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
+        "title": "부산 연제 거성유치원 찾아오는 동물원 Instagram",
+        "url": "https://www.instagram.com/reel/DPFypwGkuSJ/",
+        "source": "other",
+        "sourceName": "Instagram · 거성유치원",
+        "snippet": "geosunglove 계정에서 거성유치원 원아들이 찾아오는 동물원 활동으로 다양한 동물을 관찰하고 먹이 주기와 교감 체험을 했다는 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "activity",
+          "nature"
+        ],
         "date": "2025-09-26",
-        "collectedAt": "2026-01-30T02:54:08.985Z"
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "e18ee986",
+        "structuredFields": {
+          "kindergartenName": "거성유치원",
+          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPFypwGkuSJ%22+%22geosunglove%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPFypwGkuSJ/",
+          "normalizedUrl": "www.instagram.com/reel/dpfypwgkusj",
+          "normalizedText": "부산 연제 거성유치원 찾아오는 동물원 instagram geosunglove 계정에서 거성유치원 원아들이 찾아오는 동물원 활동으로 다양한 동물을 관찰하고 먹이 주기와 교감 체험을 했다는 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "e18ee986",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "거성유치원",
+            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPFypwGkuSJ%22+%22geosunglove%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e0f048ed",
+        "kindergartenId": "1ecec08d-0959-b044-e053-0a32095ab044",
+        "title": "부산 연제 거성유치원 동화야 놀자 Instagram",
+        "url": "https://www.instagram.com/reel/DOyEE6Dj_9E/",
+        "source": "other",
+        "sourceName": "Instagram · 거성유치원",
+        "snippet": "geosunglove 계정에서 거성유치원 원아들이 선생님의 동화 이야기를 듣고 따라 말하며 동화구연 놀이에 참여한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "curriculum",
+          "activity"
+        ],
+        "date": "2025-09-19",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "128d1725",
+        "structuredFields": {
+          "kindergartenName": "거성유치원",
+          "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOyEE6Dj_9E%22+%22geosunglove%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DOyEE6Dj_9E/",
+          "normalizedUrl": "www.instagram.com/reel/doyee6dj_9e",
+          "normalizedText": "부산 연제 거성유치원 동화야 놀자 instagram geosunglove 계정에서 거성유치원 원아들이 선생님의 동화 이야기를 듣고 따라 말하며 동화구연 놀이에 참여한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "128d1725",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "거성유치원",
+            "kindergartenAddress": "부산광역시 연제구 거제대로136번길 6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOyEE6Dj_9E%22+%22geosunglove%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

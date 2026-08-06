@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import type { ReactNode } from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { KindergartenDetailPanel } from '../KindergartenDetailPanel';
@@ -178,5 +178,31 @@ describe('KindergartenDetailPanel', () => {
     );
 
     expect(screen.getByText('공식 결원 등록 정보가 없습니다.')).toBeInTheDocument();
+  });
+
+  it('renders at the document body, focuses the close action, and closes on Escape', async () => {
+    seedVacancyStore(null);
+    const onClose = vi.fn();
+
+    render(
+      <div className="transform">
+        <KindergartenDetailPanel
+          kindergarten={mockKindergarten}
+          onClose={onClose}
+          onCompareToggle={() => undefined}
+          isInCompare={false}
+          canAddToCompare
+        />
+      </div>
+    );
+
+    const dialog = await screen.findByRole('dialog', { name: '강남유치원 상세 정보' });
+    const closeButton = screen.getByRole('button', { name: '상세 정보 닫기' });
+
+    expect(dialog.parentElement).toBe(document.body);
+    await waitFor(() => expect(closeButton).toHaveFocus());
+
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(onClose).toHaveBeenCalledOnce();
   });
 });

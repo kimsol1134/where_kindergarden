@@ -1,9 +1,197 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 15,
   "kindergartenCount": 3,
   "reviews": {
+    "1ecec08c-fc5b-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3dc54aa3",
+        "kindergartenId": "1ecec08c-fc5b-b044-e053-0a32095ab044",
+        "title": "보령 성주초등학교병설유치원 샌드아트 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DaEq6QTSppa/",
+        "source": "other",
+        "sourceName": "Instagram · 샌드아트",
+        "snippet": "검색 결과에서 충남 보령 성주초등학교 병설유치원, 샌드아트 체험 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sand-art",
+          "art-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "3dc54aa3",
+        "structuredFields": {
+          "kindergartenName": "성주초등학교병설유치원",
+          "kindergartenAddress": "충청남도 보령시 성주초교길 8",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaEq6QTSppa%22%20%22%EC%84%B1%EC%A3%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "성주초등학교병설유치원 동명 후보가 있으나 보령 단서가 로컬 충남 보령 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaEq6QTSppa/",
+          "normalizedUrl": "instagram.com/reel/daeq6qtsppa",
+          "normalizedText": "보령 성주초등학교병설유치원 샌드아트 체험 instagram reel 검색 결과에서 충남 보령 성주초등학교 병설유치원 샌드아트 체험 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "3dc54aa3",
+          "extractedAt": "2026-07-03T23:05:00.000Z"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fda4-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-acdfa54b",
+        "kindergartenId": "1ecec08c-fda4-b044-e053-0a32095ab044",
+        "kindergartenName": "상아유치원",
+        "title": "보령 상아유치원 여름캠프 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ4h2MjJwu7/",
+        "source": "other",
+        "sourceName": "Instagram · 상아유치원",
+        "snippet": "Instagram 검색 결과에서 보령상아유치원, 대천상아유치원, 여름캠프 시작 문맥이 확인되는 릴스.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "camp",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "상아유치원",
+          "kindergartenAddress": "충청남도 보령시 봉황로 91",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZ4h2MjJwu7%22+%22%EB%B3%B4%EB%A0%B9%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DZ4h2MjJwu7/",
+          "regionEvidence": [
+            "보령상아유치원",
+            "대천상아유치원",
+            "여름캠프"
+          ]
+        },
+        "evidenceChecksum": "a043488a"
+      },
+      {
+        "id": "rev-2add1d62",
+        "kindergartenId": "1ecec08c-fda4-b044-e053-0a32095ab044",
+        "title": "충남 보령 상아유치원 여름캠프 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZwudMOJXAZ/",
+        "source": "other",
+        "sourceName": "Instagram · 상아유치원",
+        "snippet": "Instagram 검색 결과에서 여름캠프 출발 문맥과 상아유치원, 보령상아유치원, 대천상아유치원 해시태그가 함께 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "summer-camp"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "4016d11e",
+        "structuredFields": {
+          "kindergartenName": "상아유치원",
+          "kindergartenAddress": "충청남도 보령시 봉황로 91",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZwudMOJXAZ%22+%22%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B3%B4%EB%A0%B9%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZwudMOJXAZ/",
+          "normalizedUrl": "www.instagram.com/reel/dzwudmojxaz",
+          "normalizedText": "충남 보령 상아유치원 여름캠프 instagram reel instagram 검색 결과에서 여름캠프 출발 문맥과 상아유치원, 보령상아유치원, 대천상아유치원 해시태그가 함께 확인되는 게시물.",
+          "htmlSnapshotHash": "4016d11e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "상아유치원",
+            "kindergartenAddress": "충청남도 보령시 봉황로 91",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZwudMOJXAZ%22+%22%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B3%B4%EB%A0%B9%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08d-0462-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2855ebcc",
+        "kindergartenId": "1ecec08d-0462-b044-e053-0a32095ab044",
+        "title": "보령 제일유치원 보령팜 딸기체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CbyzlFXrMBr/",
+        "source": "other",
+        "sourceName": "Instagram · 보령팜",
+        "snippet": "보령팜 계정에서 제일유치원 아이들과 함께한 딸기체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm-experience",
+          "strawberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "364d7e0f",
+        "structuredFields": {
+          "kindergartenName": "제일유치원",
+          "kindergartenAddress": "충청남도 보령시 대고로 20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CbyzlFXrMBr%22%20%22%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%ED%8C%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "제일유치원 동명이 많으나 보령팜 단서가 보령 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CbyzlFXrMBr/",
+          "normalizedUrl": "www.instagram.com/p/cbyzlfxrmbr",
+          "normalizedText": "보령 제일유치원 보령팜 딸기체험 instagram post 보령팜 계정에서 제일유치원 아이들과 함께한 딸기체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "364d7e0f",
+          "extractedAt": "2026-07-02T12:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "제일유치원",
+            "kindergartenAddress": "충청남도 보령시 대고로 20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CbyzlFXrMBr%22%20%22%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%ED%8C%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "제일유치원 동명이 많으나 보령팜 단서가 보령 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-np-5200-0-wm0w",
         "kindergartenId": "1ecec08d-0462-b044-e053-0a32095ab044",
@@ -14,6 +202,17 @@
         "snippet": "라미블리 리뷰 192사진 167 제일유치원 아이에게 스스로 정리하고 준비하는 습관이 생기는 모습이 눈에 보여서 정말 뿌듯합니다 선생님들의 세심한 지도 덕분인지 하루하루 성장하는 모습을 볼 수 있어 항상 감사드립니다! 더보기 1번째 방문",
         "date": "2025-12-31",
         "collectedAt": "2026-04-05T15:39:25.622Z"
+      },
+      {
+        "id": "rev-99852573",
+        "title": "보령에서 유치원을 고민... 직접 방문해본 제일유치원 후기",
+        "url": "https://blog.naver.com/hse729/224123567753",
+        "source": "naver_blog",
+        "sourceName": "뚜비뚜벅",
+        "snippet": "보령에서 유치원을 고민하고 계신다면 입학설명회를 통해 한 번쯤 직접 비교해보셔도 좋을 것 같아요. #제일유치원 #보령사립유치원 #보령유치원 #보령유아교육 #놀이중심교육 #유치원입학설명회 #보령맘 #보령육아",
+        "date": "2025-12-26",
+        "collectedAt": "2026-07-26T08:29:21.020385",
+        "kindergartenId": "1ecec08d-0462-b044-e053-0a32095ab044"
       },
       {
         "id": "rev-np-5200-1-yfu6",
@@ -113,204 +312,6 @@
         "snippet": "rucy0303 리뷰 126사진 41 제일유치원 입학 전에 많이 고민했는데 지금은 정말 잘 보냈다고 생각합니다 처음엔 낯설어했지만 선생님이 세심하게 챙겨주셔서 금방 적응했어요^^ 환경도 좋고 분위기도 따뜻해서 추천드리고 싶어요 더보기 1번째 방문",
         "date": "2025-11-27",
         "collectedAt": "2026-04-05T15:39:25.622Z"
-      },
-      {
-        "id": "rev-2855ebcc",
-        "kindergartenId": "1ecec08d-0462-b044-e053-0a32095ab044",
-        "title": "보령 제일유치원 보령팜 딸기체험 Instagram Post",
-        "url": "https://www.instagram.com/p/CbyzlFXrMBr/",
-        "source": "other",
-        "sourceName": "Instagram · 보령팜",
-        "snippet": "보령팜 계정에서 제일유치원 아이들과 함께한 딸기체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "farm-experience",
-          "strawberry-experience"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T12:20:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "364d7e0f",
-        "structuredFields": {
-          "kindergartenName": "제일유치원",
-          "kindergartenAddress": "충청남도 보령시 대고로 20",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CbyzlFXrMBr%22%20%22%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%ED%8C%9C%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "제일유치원 동명이 많으나 보령팜 단서가 보령 로컬 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CbyzlFXrMBr/",
-          "normalizedUrl": "www.instagram.com/p/cbyzlfxrmbr",
-          "normalizedText": "보령 제일유치원 보령팜 딸기체험 instagram post 보령팜 계정에서 제일유치원 아이들과 함께한 딸기체험 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "364d7e0f",
-          "extractedAt": "2026-07-02T12:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "제일유치원",
-            "kindergartenAddress": "충청남도 보령시 대고로 20",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CbyzlFXrMBr%22%20%22%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%ED%8C%9C%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "제일유치원 동명이 많으나 보령팜 단서가 보령 로컬 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T12:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-99852573",
-        "title": "보령에서 유치원을 고민... 직접 방문해본 제일유치원 후기",
-        "url": "https://blog.naver.com/hse729/224123567753",
-        "source": "naver_blog",
-        "sourceName": "뚜비뚜벅",
-        "snippet": "보령에서 유치원을 고민하고 계신다면 입학설명회를 통해 한 번쯤 직접 비교해보셔도 좋을 것 같아요. #제일유치원 #보령사립유치원 #보령유치원 #보령유아교육 #놀이중심교육 #유치원입학설명회 #보령맘 #보령육아",
-        "date": "2025-12-26",
-        "collectedAt": "2026-07-26T08:29:21.020385"
-      }
-    ],
-    "1ecec08c-fda4-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-2add1d62",
-        "kindergartenId": "1ecec08c-fda4-b044-e053-0a32095ab044",
-        "title": "충남 보령 상아유치원 여름캠프 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DZwudMOJXAZ/",
-        "source": "other",
-        "sourceName": "Instagram · 상아유치원",
-        "snippet": "Instagram 검색 결과에서 여름캠프 출발 문맥과 상아유치원, 보령상아유치원, 대천상아유치원 해시태그가 함께 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "summer-camp"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "4016d11e",
-        "structuredFields": {
-          "kindergartenName": "상아유치원",
-          "kindergartenAddress": "충청남도 보령시 봉황로 91",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZwudMOJXAZ%22+%22%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B3%B4%EB%A0%B9%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZwudMOJXAZ/",
-          "normalizedUrl": "www.instagram.com/reel/dzwudmojxaz",
-          "normalizedText": "충남 보령 상아유치원 여름캠프 instagram reel instagram 검색 결과에서 여름캠프 출발 문맥과 상아유치원, 보령상아유치원, 대천상아유치원 해시태그가 함께 확인되는 게시물.",
-          "htmlSnapshotHash": "4016d11e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "상아유치원",
-            "kindergartenAddress": "충청남도 보령시 봉황로 91",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZwudMOJXAZ%22+%22%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B3%B4%EB%A0%B9%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-acdfa54b",
-        "kindergartenId": "1ecec08c-fda4-b044-e053-0a32095ab044",
-        "kindergartenName": "상아유치원",
-        "title": "보령 상아유치원 여름캠프 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DZ4h2MjJwu7/",
-        "source": "other",
-        "sourceName": "Instagram · 상아유치원",
-        "snippet": "Instagram 검색 결과에서 보령상아유치원, 대천상아유치원, 여름캠프 시작 문맥이 확인되는 릴스.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "camp",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "상아유치원",
-          "kindergartenAddress": "충청남도 보령시 봉황로 91",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZ4h2MjJwu7%22+%22%EB%B3%B4%EB%A0%B9%EC%83%81%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DZ4h2MjJwu7/",
-          "regionEvidence": [
-            "보령상아유치원",
-            "대천상아유치원",
-            "여름캠프"
-          ]
-        },
-        "evidenceChecksum": "a043488a"
-      }
-    ],
-    "1ecec08c-fc5b-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-3dc54aa3",
-        "kindergartenId": "1ecec08c-fc5b-b044-e053-0a32095ab044",
-        "title": "보령 성주초등학교병설유치원 샌드아트 체험 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DaEq6QTSppa/",
-        "source": "other",
-        "sourceName": "Instagram · 샌드아트",
-        "snippet": "검색 결과에서 충남 보령 성주초등학교 병설유치원, 샌드아트 체험 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "sand-art",
-          "art-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "3dc54aa3",
-        "structuredFields": {
-          "kindergartenName": "성주초등학교병설유치원",
-          "kindergartenAddress": "충청남도 보령시 성주초교길 8",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DaEq6QTSppa%22%20%22%EC%84%B1%EC%A3%BC%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%B3%B4%EB%A0%B9%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "성주초등학교병설유치원 동명 후보가 있으나 보령 단서가 로컬 충남 보령 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaEq6QTSppa/",
-          "normalizedUrl": "instagram.com/reel/daeq6qtsppa",
-          "normalizedText": "보령 성주초등학교병설유치원 샌드아트 체험 instagram reel 검색 결과에서 충남 보령 성주초등학교 병설유치원 샌드아트 체험 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "3dc54aa3",
-          "extractedAt": "2026-07-03T23:05:00.000Z"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ]
   }

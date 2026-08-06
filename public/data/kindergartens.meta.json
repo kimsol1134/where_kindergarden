@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "source": "https://e-childschoolinfo.moe.go.kr/openData.do",
+  "identifierSource": "https://e-childschoolinfo.moe.go.kr/kinderMt/combineFind.do",
+  "sourceVersion": "20261",
+  "sourceLabel": "2026년 1차",
+  "collectedAt": "2026-08-06T02:29:14.399Z",
+  "totalCount": 7152,
+  "registryCount": 7223,
+  "registryJoinCoverage": 1,
+  "componentCoverage": {
+    "general": 1,
+    "building": 1,
+    "classArea": 1,
+    "teachers": 1,
+    "tenure": 1,
+    "meal": 1,
+    "afterSchool": 1,
+    "bus": 0.9998601789709173,
+    "safety": 1
+  },
+  "regionCodeCount": 261,
+  "regionResolution": {
+    "official-address": 7121,
+    "current-reform-rule": 31,
+    "previous-address": 0
+  },
+  "coordinateResolution": {
+    "officialBulk": 7121,
+    "officialDetail": 0,
+    "previous": 2,
+    "kakaoAddress": 29
+  },
+  "newSincePrevious": 147,
+  "removedSincePrevious": 945,
+  "checksumSha256": "e404310b391cd0b104ac332e019686817e18055ff2e2a9cbe208b89a5d4df756",
+  "fieldNotes": {
+    "outdoor_playground_area": "2026 공개 교실면적 자료에서 제공되지 않아 0으로 설정; 과거 조리실 면적 오매핑을 제거함",
+    "has_playground": "실내체육장 또는 놀이시설 안전검사 대상 여부로 계산"
+  }
+}

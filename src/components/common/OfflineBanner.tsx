@@ -1,10 +1,24 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import WifiOff from 'lucide-react/dist/esm/icons/wifi-off';
 
+function subscribeToConnectionStatus(onStoreChange: () => void) {
+  window.addEventListener('offline', onStoreChange);
+  window.addEventListener('online', onStoreChange);
+  return () => {
+    window.removeEventListener('offline', onStoreChange);
+    window.removeEventListener('online', onStoreChange);
+  };
+}
+
+function getOnlineSnapshot() {
+  return navigator.onLine;
+}
+
 export function OfflineBanner() {
-  const [isOffline, setIsOffline] = useState(false);
+  const isOnline = useSyncExternalStore(subscribeToConnectionStatus, getOnlineSnapshot, () => true);
+  const isOffline = !isOnline;
   const [showReconnected, setShowReconnected] = useState(false);
   const reconnectTimerRef = useRef<ReturnType<typeof setTimeout>>(null);
 
@@ -14,19 +28,13 @@ export function OfflineBanner() {
         clearTimeout(reconnectTimerRef.current);
         reconnectTimerRef.current = null;
       }
-      setIsOffline(true);
       setShowReconnected(false);
     };
 
     const handleOnline = () => {
-      setIsOffline(false);
       setShowReconnected(true);
       reconnectTimerRef.current = setTimeout(() => setShowReconnected(false), 3000);
     };
-
-    if (!navigator.onLine) {
-      setIsOffline(true);
-    }
 
     window.addEventListener('offline', handleOffline);
     window.addEventListener('online', handleOnline);

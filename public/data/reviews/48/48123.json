@@ -1,39 +1,423 @@
 {
-  "version": "2026-07-26",
-  "totalCount": 27,
+  "version": "2026-08-06",
+  "totalCount": 26,
   "kindergartenCount": 10,
   "reviews": {
+    "1ecec08c-f277-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3215539c",
+        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
+        "title": "창원 해바라기유치원 몬테소리 일상영역 Instagram",
+        "url": "https://www.instagram.com/p/DaCet4VE1gi/",
+        "source": "other",
+        "sourceName": "Instagram · 해바라기유치원",
+        "snippet": "sun.flower_kinder.garten 계정에서 해바라기유치원 몬테소리 일상영역, 소근육·독립심·자기조절력 발달 활동 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "4a89afac",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DaCet4VE1gi%22+%22sun.flower_kinder.garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaCet4VE1gi/",
+          "normalizedUrl": "www.instagram.com/p/dacet4ve1gi",
+          "normalizedText": "창원 해바라기유치원 몬테소리 일상영역 instagram sun.flower_kinder.garten 계정에서 해바라기유치원 몬테소리 일상영역, 소근육·독립심·자기조절력 발달 활동 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "4a89afac",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DaCet4VE1gi%22+%22sun.flower_kinder.garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-40fa60c8",
+        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
+        "title": "창원 해바라기유치원 신입 원아 모집 Instagram",
+        "url": "https://www.instagram.com/p/DPAvAvLk_gQ/",
+        "source": "other",
+        "sourceName": "Instagram · 해바라기유치원",
+        "snippet": "sun.flower_kinder.garten 계정에서 2026학년도 해바라기유치원 신입 원아 모집, 창원 성산구 대정로 위치와 몬테소리 교육 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admissions",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "c9bd9a72",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPAvAvLk_gQ/",
+          "normalizedUrl": "www.instagram.com/p/dpavavlk_gq",
+          "normalizedText": "창원 해바라기유치원 신입 원아 모집 instagram sun.flower_kinder.garten 계정에서 2026학년도 해바라기유치원 신입 원아 모집, 창원 성산구 대정로 위치와 몬테소리 교육 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "c9bd9a72",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-52f70376",
+        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
+        "title": "창원 해바라기유치원 수 영역 활동 Instagram",
+        "url": "https://www.instagram.com/p/DZMjC0UE0t0/",
+        "source": "other",
+        "sourceName": "Instagram · 해바라기유치원",
+        "snippet": "sun.flower_kinder.garten 계정에서 해바라기유치원 수 영역 활동, 수량·숫자 관계 탐색과 수학적 사고 기초 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "curriculum"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "803ed101",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMjC0UE0t0%22+%22sun.flower_kinder.garten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZMjC0UE0t0/",
+          "normalizedUrl": "www.instagram.com/p/dzmjc0ue0t0",
+          "normalizedText": "창원 해바라기유치원 수 영역 활동 instagram sun.flower_kinder.garten 계정에서 해바라기유치원 수 영역 활동, 수량·숫자 관계 탐색과 수학적 사고 기초 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "803ed101",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZMjC0UE0t0%22+%22sun.flower_kinder.garten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f9a726cc",
+        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
+        "title": "창원 해바라기유치원 SNS 프로필",
+        "url": "https://www.instagram.com/sun.flower_kinder.garten/",
+        "source": "other",
+        "sourceName": "Instagram · 해바라기유치원",
+        "snippet": "해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경남 창원시 성산구 해바라기유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 Instagram 검색 결과다. 해바라기유치원 동명이 있어 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8f852124",
+        "structuredFields": {
+          "kindergartenName": "해바라기유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-263-3964%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/sun.flower_kinder.garten/",
+          "normalizedUrl": "www.instagram.com/sun.flower_kinder.garten",
+          "normalizedText": "창원 해바라기유치원 sns 프로필 해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 instagram 검색 결과. 경남 창원시 성산구 해바라기유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "8f852124",
+          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "structuredFields": {
+            "kindergartenName": "해바라기유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-263-3964%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f6e5-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-921bebed",
+        "kindergartenId": "1ecec08c-f6e5-b044-e053-0a32095ab044",
+        "title": "창원 국제예술유치원 소방훈련 Instagram Post",
+        "url": "https://www.instagram.com/p/DIjHm8wyBEp/",
+        "source": "other",
+        "sourceName": "Instagram · 국제예술유치원",
+        "snippet": "국제예술유치원 계정에서 불조심 소방훈련·대피훈련·소방관 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-drill"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T22:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ba865d50",
+        "structuredFields": {
+          "kindergartenName": "국제예술유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 동산로 115",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIjHm8wyBEp%22+%22%EA%B5%AD%EC%A0%9C%EC%98%88%EC%88%A0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "국제예술유치원은 로컬 원장부 단일 매칭이며 게시물 기관명과 소방훈련 문맥이 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DIjHm8wyBEp/",
+          "normalizedUrl": "www.instagram.com/p/dijhm8wybep",
+          "normalizedText": "창원 국제예술유치원 소방훈련 instagram post 국제예술유치원 계정에서 불조심 소방훈련·대피훈련·소방관 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "ba865d50",
+          "extractedAt": "2026-07-02T22:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "국제예술유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 동산로 115",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIjHm8wyBEp%22+%22%EA%B5%AD%EC%A0%9C%EC%98%88%EC%88%A0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "국제예술유치원은 로컬 원장부 단일 매칭이며 게시물 기관명과 소방훈련 문맥이 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T22:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f6e7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave742-2825fbb7",
+        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
+        "title": "창원 현대예닮유치원 안전지킴이 체험학습 기록",
+        "url": "https://www.instagram.com/p/DKeGvZcTxld/",
+        "source": "other",
+        "sourceName": "Instagram · 현대예닮유치원",
+        "snippet": "현대예닮유치원이 반송동 유치원일상과 안전지킴이 체험학습을 소개한 공개 게시물입니다.",
+        "summary": "창원 성산구 현대예닮유치원의 안전 관련 체험학습을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip",
+          "safety-education",
+          "changwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave742-2825fbb7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DKeGvZcTxld/",
+          "normalizedUrl": "instagram.com/p/dkegvzctxld",
+          "normalizedText": "창원 반송동 현대예닮유치원 체험학습 안전지킴이",
+          "htmlSnapshotHash": "sns-wave742-2825fbb7",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DKeGvZcTxld/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave742"
+      },
+      {
+        "id": "rev-sns-wave694-8a773b05",
+        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
+        "title": "창원 현대예닮유치원 세계여행 생일파티 기록",
+        "url": "https://www.instagram.com/reel/DWlC8FBCSiF/",
+        "source": "other",
+        "sourceName": "Instagram · 현대예닮유치원",
+        "snippet": "현대예닮유치원이 3월 생일을 맞은 친구들과 세계여행 놀이 주제로 생일파티를 진행한 공개 릴스입니다.",
+        "summary": "생일 축하와 역할놀이를 결합해 아이들이 여행 콘셉트 안에서 특별한 하루를 경험한 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party",
+          "role-play",
+          "changwon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-8a773b05",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/",
+          "normalizedUrl": "instagram.com/reel/dwlc8fbcsif",
+          "normalizedText": "현대예닮유치원 3월 생일파티 세계여행 놀이 일본여행",
+          "htmlSnapshotHash": "sns-wave694-8a773b05",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
+      },
+      {
+        "id": "rev-56365d46",
+        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
+        "title": "창원 현대예닮유치원 입학안내 SNS",
+        "url": "https://www.instagram.com/p/DPnWjFHEzll/",
+        "source": "other",
+        "sourceName": "Instagram · 현대예닮유치원",
+        "snippet": "현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "경남 창원시 성산구 현대예닮유치원의 입학안내 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "05e7c44a",
+        "structuredFields": {
+          "kindergartenName": "현대예닮유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 반송로 159",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPnWjFHEzll%22+%22%ED%98%84%EB%8C%80%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-287-0407%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DPnWjFHEzll/",
+          "normalizedUrl": "www.instagram.com/p/dpnwjfhezll",
+          "normalizedText": "창원 현대예닮유치원 입학안내 sns 현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 instagram 검색 결과. 경남 창원시 성산구 현대예닮유치원의 입학안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "05e7c44a",
+          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "structuredFields": {
+            "kindergartenName": "현대예닮유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 반송로 159",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPnWjFHEzll%22+%22%ED%98%84%EB%8C%80%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-287-0407%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08d-019a-b044-e053-0a32095ab044": [
       {
-        "id": "rev-7e114772",
+        "id": "rev-945741b6",
         "kindergartenId": "1ecec08d-019a-b044-e053-0a32095ab044",
-        "title": "창원유치원))꽃무지풀무지유치원(구.석화)_에꼴다흐",
-        "url": "https://blog.naver.com/PostView.naver?blogId=dmlltajjeuya&logNo=223236088030",
+        "title": "창원 꽃무지풀무지유치원 2차 입학설명회 상세후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=cherido&logNo=223785709393",
         "source": "naver_blog",
         "sourceName": "네이버 블로그",
-        "snippet": "유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이...",
-        "summary": "유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와...",
+        "snippet": "입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는...",
+        "summary": "입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그...",
         "tags": [
           "public"
         ],
         "date": null,
-        "collectedAt": "2026-06-29T20:42:50.345Z",
-        "relevanceScore": 5,
+        "collectedAt": "2026-06-29T20:42:51.947Z",
+        "relevanceScore": 7,
         "accessMode": "public",
         "evidenceType": "longform_post",
         "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "19956b05",
+        "evidenceChecksum": "5541ea7d",
         "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=dmlltajjeuya&logNo=223236088030",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=dmlltajjeuya&logno=223236088030",
-          "normalizedText": "창원유치원))꽃무지풀무지유치원(구.석화)_에꼴다흐 2023.10.13.그러다보니 갑작스런 창원이사로 다시 이 전쟁통(?)에 들어서야한다는게 맘이 무거워졌다 또 다시 유치원 거부가 있음 어쩌지? 이제 엄마도 아침에 못와주는데 나 출근준비도... 그 어려운 유치원 합격 목걸이를 가지고 우리집 6세 쪼꼬맹이 다니고 있는 #창원꽃무지풀무지유치원 방과후 수업반(피아노, 미술 , 영어 등) 에꼴다흐반(오후 어학원) 창원꽃무지풀무지유치원은... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와 맞지 않았던 것이지같은 반 다른 친구들은 웃으면서 잘 다녔고,식단과 활동 모두 좋았던 곳!! 그러다보니 갑작스런 창원이사로다시 이 전쟁통(?)에 들어서야한다는게맘이 무거워졌다또 다시 유치원 거부가 있음 어쩌지?이제 엄마도 아침에 못와주는데나 출근준비도 해야하는데이 진상손님 달랠 방법이 없는데..? 기존 다니던 유치원이 있으면2지망까지만 접수 가능!! 고민하며 그래도 쪼꼬맹의 환경변화를 줄이기위해기존 유치원과 비슷한 분위기이고#영어수업 에 #원어민선생님 이 계시고매일 영어 수업이 있으며그게 아니라면 열심히 뛰어놀 수 있는유치원이 어디있는지를 열심히 찾았다하지만 기존 유치원 규모와 영어 수업, 방과후를커버해줄만한 유치원은 찾기가 어려웠고있어도 우리집까진 차량이 안오는 상황…🥲그리고 6세 추가모집은왜 다 인원수가 적은가😭😭열심히 고민하며 처음학교로 지원을 마친 뒤불안초조 …. 다행히 1지망에 합격!!쪼꼬맹 너 합격운은 있구나!!!!!!!만세다 만세!!!!!!그 어려운 유치원 합격 목걸이를 가지고우리집 6세 쪼꼬맹이 다니고 있는#창원꽃무지풀무지유치원 꽃무지풀무지유치원 경상남도 창원시 성산구 창이대로707번길 8-15 이 블로그의 체크인 이 장소의 다른 글 방과후 수업반(피아노, 미술 , 영어 등)에꼴다흐반(오후 어학원) 창원꽃무지풀무지유치원은구.석화유치원으로 장유에도 있는 그 곳 맞다.오래되기도 했고,원 환경도 기존 유치원과 비슷하며단독 건물에 단독 차량#몬테소리 기반 교육이며단독으로 쓰는 텃밭도 있으며,유치원 내 수영장도 있다.무엇보다 쪼꼬맹이 젤 좋아하는건#모래놀이터 🤭🤭 previous image next image 입학하면가방, 도시락 가방, 도시락, 도시락 매트,수저보관함, 물병(스텐물병+나들이용 2병)요롷게 주신다.다만 쪼꼬맹이 아직도 거부하는 한가지가 있으니 ..그것은 바로원.복 previous image next image 그렇다 사실 나도 원복때문에 접수를 망설엿단건안비밀이다만 혹시나 이 글을 보신다면원복 바꾸긴 어렵겠죠….??🥹….그래도 계속보면 귀엽고, 스머프 같고후드 쓰면 요정같고 생각보다 재질이 탄탄하다!!(쪼꼬맹은 전 유치원 원복을 3개 다 찢…)그리고 누가봐도내가 꽃무지풀무지다!!!!아이덴티티가 강해서애 잃어버릴 걱정은 없다🤣🤣유치원 합격하자마자 내가 한건유치원 전화해서 #에꼴다흐 신청!!!!꽃무지풀무지의 독보적인 이유!!반영유식으로 진행되는 에꼴다흐인데오전은 #누리교육 으로오후는 #영어어학원 으로#소수정예 수업으로 진행된다.그래서 학기초에 접수을 받으시는데접수 못할까봐 을매나 걱정했다구요🥹어학원 선생님들 모두 외부강사님이 아닌정규 선생님들이시다.원어민 선생님 2분,한국 선생님 5-6분 정도 였던 것 같다.처음엔 아이들이 원어민 선생님을 무서워하는데쪼꼬맹은 이전 유치원에서 원어민 선생님경험이 있어서 그런가 무난히 지나간 것 같다. 수업에 사용하는 책은 요롷게!!랑+여기에는 없는 다른 프로그램 영어도 있다🤫처음엔 생각보다 많은 책들로 수업해서애가 잘 따라갈까 …저걸 다 이해할까?? 걱정했는데 아이들은 진짜 스펀지가 맞다 새 책이 오고, 1-2주만 지나면저 책들 모두 줄줄줄 외워서 읽어준다🫢🫢🫢그렇다고 유치원에서 빡시게(?)가르치는 것도 아닌것 같은데-영어거부도 갱장히 심했던 쪼꼬맹이였음-금방 줄줄 읽고, 간단한 질문에포인팅이나 단어대답도 하고,집에 새로운 책이오면 신나서 읽어달라고 들고온다.수업이 끝난 책같은 경우는 집에서 보관하며자기전이나 주말에 읽어주면 👍 담임 선생님들은 모두 천사인가요 입학설명회가 끝나고 집 가기전아이들이 옹기종기 놀이터에서 놀고있으면선생님들과 이야기를 나눌 짬이 생기는데그때 본인 반 아이의 이름이 들리면어디선가 나타나셔서 아이들 특징, 기질,주의해야할 사항들을 굉장히 세심하게 들어주신다쪼꼬맹같은 경우는 유치원거부도 있었고안먹고, 예민하지만 익숙해지면조용히 사고치며 ….에너지 버튼이 눌러지면 흥분도가급상승해서 폭주하는 타입인데그런 부분 세심하게 들어주시고 체크해주셔서쪼꼬맹이 선생님한테 혼나고 온 날이라도유치원 가는걸 너무 좋아한다.2학기 시작하면서 쪼꼬맹이가사고를 한 건 했는데그 일에 대한 처리방법도 너무나 깔끔하셨다왠만하면 #스스로 할 수 있게하는데이게 #요즘엄마 에겐 처음엔 당황스러울 수 있으나지금보면 그 동안 내가 저 아이를얼마나 갓난쟁이로 봤는지 알 수 있다🫣🫣🫣 식사는 자역식 위주!!새로운 식재료 경험을 늘릴 수 있다 사실 하나도 쉬운게 없은 우리 쪼꼬맹 ..입도 짧고 #편식 도 독특한 쪼꼬맹 ..고기류는 즈얼대 안먹고 새로운 식재료는거들떠도 보지않는다.처음에 급식표 받고 사실 당황스러웠음#자연식 위주라이걸 아이들이 먹을까 ..?비트밥 ..? 치자밥 ..?이러다 굶고오는거 아냐?!😱싶었는데 고기 편식은 여전하지만-고기 편식 부분은 입학할 때부터담임선생님께 미리 전달드렸다.안먹을테니 굳이 신경 안쓰셔도 된다고그는 닭 오리 소 돼지 모두 잘먹지 않는다-스스로 파프리카 먹었다며 뿌듯해하고토마토 먹어봤다고 자기가 원하는 맛은 아니라고말하는 쪼꼬맹의 모습을 보면그래 이런 기회 아니면 난 얘에게시도하지 않았겠지 싶다!!파프리카 먹고 자랑하던 그 모습은선생님이 얼마나 칭찬해주셨는지내가 다 느껴질 정도였다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ워낙 정적이다, 애들 스스로 시킨다,예의를 중시한다하는 딱딱한 유치원이다라는이야기가 많아서 그랬나솔직히 처음 보낼땐 나도 걱정 아닌 걱정이많았던 것은 사실이다.그러나 그건 안보내본 사람들 이야기인 듯원복빼곤 애도 나도 만족하며 보내는이렇게 멋진 유치원 다니게 해줘서 고맙다고인사하는 쪼꼬맹을 볼 수 있게해주는 유치원!유치원 입학시즌모든 부모님들 1지망에 붙으시고우리 쪼꼬맹들 즐거운 유치원 행님이 되라구 +지극히 주관적이지만에꼴다흐의 꽃이라 불리는 영어발표회가 끝난 후적어본 에꼴다흐의 후기는아래로 와주세요!https://blog.naver.com/dmlltajjeuya/223633364178 창원유치원)) 반영유 에꼴다흐 1탄(feat.꽃무지풀무지유치원) 영어 레테 끝나고 적으려다가 .. 이제 한참 설명회하는 것 같아서 이르지만 적어보는 에꼴다흐 후기 우선 ... blog.naver.com #창원유치원 #창원유치원추천 #대원동유치원 #사파동유치원 #꽃무지풀무지유치원",
-          "htmlSnapshotHash": "19956b05",
-          "extractedAt": "2026-06-29T20:42:50.345Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=cherido&logNo=223785709393",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=cherido&logno=223785709393",
+          "normalizedText": "창원 꽃무지풀무지유치원 2차 입학설명회 상세후기 입학설명회 후기 창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그 시간 동안 아이들은 교실에서 선생님들과 적응시간도 갖고 놀이도하며 중간에 간식도 주셨답니다. 2차 입학설명회를 위해 입구에 들어서면 선생님들이 서 계셔서 아이 명찰표를 주십니다. 그리고 명찰표를 가슴에 달고 들어가면 되는데요, 저희 아이는 자기 이름이 적혀 있는 이 명찰표에 되게 으쓱해하더라구요.ㅎ 부모님들은 3층 강당으로 이동합니다. 각 테이블에 잔과 함께 간식인가요? ㅎㅎ 도시락통에 어떤 걸 준비해주셨는데요, 위에 놓인 것은 라텍스 장갑처럼 보이네요..ㅎㅎ 이 물건의 정체는 마지막에 공개해드리겠습니다. 아래부터는 편의상 문어체로 쓸게요...! j.dewey의 아동중심 교육 창원 꽃무지풀무지유치원은 현대 교육학의 아버지라고 불릴만한 존 듀이의 교육철학에 기반을 두고있다. 존 듀이의 교육사상의 주요 키워드는 크게 두가지로 ‘경험주의’, ‘민주주의’ 라고 볼 수있다. 존 듀이가 말하는 경험주의란 인간이 외부환경과 접할때 생기는 것은 모두 새로운 경험에서 시작되고, 이런 새로운 경험에서 우리는 새로운 문제를 마주치게 된다. 이런 새로운 문제를 해결하는 능력을 아이들에게 키워 주는 것이 존 듀이가 말하는 경험주의 교육이다. 이런 경험주의 교육은 인간과 인간이 생활하는 사회에서도 적용할 수 있는데, 그게 바로 상호 간의 의사소통을 중요시 하는 민주주의 사상으로 실현된다. 따라서 존 듀이는 훈육과 통제를 기반으로한 전통적인 교육 철학과는 반대로 민주주의를 상당히 강조한 현대 교육 철학자이다. 이런 존 듀이의 교육 철학을 바탕으로 꽃무지풀무지유치원에서는 민주적인 부모의 역할을 강조하셨다. 가령 아이가 물을 쏟았을 때 어떻게 행동해야 하는지 부모의 반응에 대해서 알려 주셨는데, 허용적인 부모는 아무 말 없이 물을 닦아 주고 권위적인 부모는 아이에게 핀잔을 주며 혼을 내지만, 민주적인 부모는 아이가 우선 괜찮은지 물어 보고 흘린 물을 보고 어떻게 할지 물어 본 뒤 아이가 스스로 해결할 수 있도록 유도를 한다.그날 메모한 것존 듀이∨ 아이들은 다 다른것이 맞다∨ 자기가 잘하는 것에서 출발해야 부족한 것들도 채워진다. ∨ 아이는 절대로 내려가는 일은 안한다.∨ 인적환경-또래 ∨ 물리적환경-교구 아이가 말할때 끼어들지 말고 천천히 듣고∨ 가르치지 말고 수긍만 하기\"아, 그러네 그렇게 했네?\" ∨실수 했을때 최고의 경험을 갖는다!∨ 실수 했을 때 박수쳐주기허용적인부모- 아무말 없이 그냥 걸레질 하는것 권위적부모- 보복 심리가 생김, 친구들 괴롭힘 권위, 허용이 아닌 민주적인 부모입장에서 키우기∨ 내가 아이하고 있는 시간에 녹음해보기∨ 아이가 말을 많이 할 수있는 환경 만들어주기∨ 백과사전 구매하기살면서 제일 중요한 것은,내가 알고 싶은것 내가 말하고 싶은 것을 말할 수 있는 능력감정, 생각, 의견 등...∨ 내 감정을 타인에게 말할 수있는 능력 키우기∨ 말과 행동이 일치하는 사람 만들기 ∨ 천천히 말해주기∨ 엄마와 자녀의 관계는 죽을때까지 인격적으로 대해주기 창원꽃무지풀무지 원훈설립 원장님께서는 이 날 꽃무지풀무지유치원의 원훈과 같은 아이로 키우려면 부모가 어떻게 해야 할 지 알려주셨습니다.1. 적극적인 어린이∨ 취침 시간은 9시 전후로∨ 기상 시간은 아이 혼자 일어나도록, ∨ 엄마는 1시간 먼저 일어날 것. ∨ 필수음식: 토마토, 달걀, 김, 파프리카, 두부∨ 엄마아빠가 큰소리로 말할 때→제일 무서워함∨ 조용하게 말하기∨ 부모간의 대화는 저녁에 따로할 것2. 창의적인 어린이∨ 아이와 계절에 맞는 요리하기3. 아름다운 어린이∨ 좋다는 표현 많이 할 것∨ 긍정적인 사고∨ 일관성 있는 부모가 될 것∨ 모든 인간은 본능적으로 인정욕구가 있다. 이것을 충족시켜줄 것. 창원꽃무지풀무지 유치원 원훈 창원꽃무지풀무지 유치원 활동1. 꽃당번 활동꽃을 따로 사지 말고, 다이소에서 씨앗 사서 심기.부추뿌리(3월제철), 쑥갓, 당근, 강낭콩 완두콩 등..2. 기자 활동글보다는 그림 위주로3. 알아왔어요비밀물건 준비해서 스무고개4. 친절이 활동그날의 선생님이 되어 활동해보는 것5. 생일축하회생일 일주일 전에 기록물_성장과정사진_가져오기 챙겨야 할 것1. 가방&행거가방과 함께 행거를 주는데 스스로 등하원시 가방 챙기게 할 것.2. 도시락 통밥용기, 수저집(수저, 칫솔), 물통3. 매주 금요일 주말활동지, 도서가방 그 이외 것선생님께 전달사항이 있을 경우 석화 톡톡톡! 메모장을 활용해서 아이를 통해 전달하면 된다. 저금통을 받아왔는데, 칭찬 할 일이 있을 때마다 동전을 주고 한달에 한번씩 꺼내는 활동하도록 주셨다. 아직 놀이책은 못 받았음... 창원 꽃무지풀무지 프로그램이란?사계절의 특징을 프로그램화 한 것 먹는 것으로 감각익히기설립 원장님께서 2시간 내내 가장 강조한 것이 바로 '음식'과 '요리'이었습니다. 사실 이부분에는 많은 엄마들의 의견차(?), 호불호(?)가 있을 수도 있을 것 같아요. 왜냐면 집에서도 실천할 것을 강조 하시거든요...;;ㅎㅎㅎ 그 부분은 차치하고, 꽃무지풀무지유치원에서는 계절에 맞는 식재료로 시각, 청각, 미각, 후각, 촉각이라는 오감을 배우게 합니다. 앞서 보여드린 강당에 준비된 도시락에 들어있는 음식들이었는데요. 이날 설명회를 마무리하면서 귤과 봄동 그리고 배추로 원장님의 교육방식에 따라 귤 껍질을 까보기도하고, 봄동을 찢어보기도 하고 찢은 재료들을 나열해보기도 하고 수 세기도 하면서 마지막으로 먹어보았거든요. 이런 과정이 어른들에게도 신선했었는데, 아이들에게는 더욱 즐겁고 색다르게 느껴질 것 같다는 생각이 들었습니다. 선생님 소개마지막으로 선생님 소개가 있었습니다. 정~~말 선생님들이 많으시더라구요. 경력이 많으신분부터 젊은 선생님들도 다양했습니다. 눈여겨볼 것은 꽃무지풀무지만의 어학원 에꼴다흐 선생님들은 모두 경력이 많으신 베테랑 선생님들이셨습니다. 아마 엄마들이 가장 궁금해 할 부분이기도 하죠 ㅎㅎ 외국인 선생님은 '욘디' , '라일라' 선생님 두 분과 한국인 선생님 5분이 계셨네요. 포스팅을 마치며...사실 큰 기대없이 입학설명회를 갔는데,내용은 사실 부모교육이나 다름없었어요..ㅎㅎㅎ그래서 뜻하지 않게 아이 입학설명회에서아이교육부터 식사법까지 다양하게 많은 것을 배워왔네요..ㅋㅋㅋ그러면서원에서 추구하는 바, 원의 분위기 등을 확실히 알 수 있었구요.제가 바라던 바와 잘 맞다는 생각이 들었습니다.또 다양한 활동들을 통해아이가 많은 경험을 할 수 있기를 바라는 기대도 생겼답니다.이제 막 새로운 환경에서 새로운 친구들과 새학기를 시작하는 3월!!등원한 지 이틀째인데요,아직까지 만족 중인것 같습니다.아이가 유치원에 좀 적응한 뒤에는 많이들 궁금해하시는꽃무지풀무지 에꼴다흐에 대해서포스팅해볼까합니다! 포스팅 내용이 도움되셨다면 공감 꾸욱@ 부탁드려요~ ^^",
+          "htmlSnapshotHash": "5541ea7d",
+          "extractedAt": "2026-06-29T20:42:51.947Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
           "structuredFields": {
             "kindergartenName": "꽃무지풀무지유치원",
             "kindergartenAddress": "경상남도 창원시 성산구 창이대로707번길 8-15",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
             "accessMode": "public"
           }
         }
@@ -73,35 +457,35 @@
         }
       },
       {
-        "id": "rev-945741b6",
+        "id": "rev-7e114772",
         "kindergartenId": "1ecec08d-019a-b044-e053-0a32095ab044",
-        "title": "창원 꽃무지풀무지유치원 2차 입학설명회 상세후기",
-        "url": "https://blog.naver.com/PostView.naver?blogId=cherido&logNo=223785709393",
+        "title": "창원유치원))꽃무지풀무지유치원(구.석화)_에꼴다흐",
+        "url": "https://blog.naver.com/PostView.naver?blogId=dmlltajjeuya&logNo=223236088030",
         "source": "naver_blog",
         "sourceName": "네이버 블로그",
-        "snippet": "입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는...",
-        "summary": "입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그...",
+        "snippet": "유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이...",
+        "summary": "유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와...",
         "tags": [
           "public"
         ],
         "date": null,
-        "collectedAt": "2026-06-29T20:42:51.947Z",
-        "relevanceScore": 7,
+        "collectedAt": "2026-06-29T20:42:50.345Z",
+        "relevanceScore": 5,
         "accessMode": "public",
         "evidenceType": "longform_post",
         "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "5541ea7d",
+        "evidenceChecksum": "19956b05",
         "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=cherido&logNo=223785709393",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=cherido&logno=223785709393",
-          "normalizedText": "창원 꽃무지풀무지유치원 2차 입학설명회 상세후기 입학설명회 후기 창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그... 입학설명회 후기창원 꽃무지풀무지 유치원 저희 집 넘버 원. 첫째가 유치원 전원을 했어요. 5세 때는 집 근처 병설유치원을 다니다가, 6세를 맞이하여 창원 사립 유치원으로 전원을 했는데요. 전원을 하게 된 건, 어떤 계기가 있어서라기보다 6세가 되면서 더 다양한 경험을 시켜보고자 사립유치원으로 전원을 결정했습니다. 결정 후 3월 입학까지 고민도 많았고 걱정도 많았지만 그래도 잘 적응해주고 있는 것 같아 다행이라는 생각이 듭니다.자, 그럼 사설은 여기까지 하고 창원 꽃무지풀무지 유치원 2차 입학설명회에 대하여 그날 제가 메모한 내용을 바탕으로 정리해보고자 합니다. 2차 입학설명회는 대략 2시간 정도 소요되었는데요, 창원 꽃무지풀무지유치원 그 시간 동안 아이들은 교실에서 선생님들과 적응시간도 갖고 놀이도하며 중간에 간식도 주셨답니다. 2차 입학설명회를 위해 입구에 들어서면 선생님들이 서 계셔서 아이 명찰표를 주십니다. 그리고 명찰표를 가슴에 달고 들어가면 되는데요, 저희 아이는 자기 이름이 적혀 있는 이 명찰표에 되게 으쓱해하더라구요.ㅎ 부모님들은 3층 강당으로 이동합니다. 각 테이블에 잔과 함께 간식인가요? ㅎㅎ 도시락통에 어떤 걸 준비해주셨는데요, 위에 놓인 것은 라텍스 장갑처럼 보이네요..ㅎㅎ 이 물건의 정체는 마지막에 공개해드리겠습니다. 아래부터는 편의상 문어체로 쓸게요...! j.dewey의 아동중심 교육 창원 꽃무지풀무지유치원은 현대 교육학의 아버지라고 불릴만한 존 듀이의 교육철학에 기반을 두고있다. 존 듀이의 교육사상의 주요 키워드는 크게 두가지로 ‘경험주의’, ‘민주주의’ 라고 볼 수있다. 존 듀이가 말하는 경험주의란 인간이 외부환경과 접할때 생기는 것은 모두 새로운 경험에서 시작되고, 이런 새로운 경험에서 우리는 새로운 문제를 마주치게 된다. 이런 새로운 문제를 해결하는 능력을 아이들에게 키워 주는 것이 존 듀이가 말하는 경험주의 교육이다. 이런 경험주의 교육은 인간과 인간이 생활하는 사회에서도 적용할 수 있는데, 그게 바로 상호 간의 의사소통을 중요시 하는 민주주의 사상으로 실현된다. 따라서 존 듀이는 훈육과 통제를 기반으로한 전통적인 교육 철학과는 반대로 민주주의를 상당히 강조한 현대 교육 철학자이다. 이런 존 듀이의 교육 철학을 바탕으로 꽃무지풀무지유치원에서는 민주적인 부모의 역할을 강조하셨다. 가령 아이가 물을 쏟았을 때 어떻게 행동해야 하는지 부모의 반응에 대해서 알려 주셨는데, 허용적인 부모는 아무 말 없이 물을 닦아 주고 권위적인 부모는 아이에게 핀잔을 주며 혼을 내지만, 민주적인 부모는 아이가 우선 괜찮은지 물어 보고 흘린 물을 보고 어떻게 할지 물어 본 뒤 아이가 스스로 해결할 수 있도록 유도를 한다.그날 메모한 것존 듀이∨ 아이들은 다 다른것이 맞다∨ 자기가 잘하는 것에서 출발해야 부족한 것들도 채워진다. ∨ 아이는 절대로 내려가는 일은 안한다.∨ 인적환경-또래 ∨ 물리적환경-교구 아이가 말할때 끼어들지 말고 천천히 듣고∨ 가르치지 말고 수긍만 하기\"아, 그러네 그렇게 했네?\" ∨실수 했을때 최고의 경험을 갖는다!∨ 실수 했을 때 박수쳐주기허용적인부모- 아무말 없이 그냥 걸레질 하는것 권위적부모- 보복 심리가 생김, 친구들 괴롭힘 권위, 허용이 아닌 민주적인 부모입장에서 키우기∨ 내가 아이하고 있는 시간에 녹음해보기∨ 아이가 말을 많이 할 수있는 환경 만들어주기∨ 백과사전 구매하기살면서 제일 중요한 것은,내가 알고 싶은것 내가 말하고 싶은 것을 말할 수 있는 능력감정, 생각, 의견 등...∨ 내 감정을 타인에게 말할 수있는 능력 키우기∨ 말과 행동이 일치하는 사람 만들기 ∨ 천천히 말해주기∨ 엄마와 자녀의 관계는 죽을때까지 인격적으로 대해주기 창원꽃무지풀무지 원훈설립 원장님께서는 이 날 꽃무지풀무지유치원의 원훈과 같은 아이로 키우려면 부모가 어떻게 해야 할 지 알려주셨습니다.1. 적극적인 어린이∨ 취침 시간은 9시 전후로∨ 기상 시간은 아이 혼자 일어나도록, ∨ 엄마는 1시간 먼저 일어날 것. ∨ 필수음식: 토마토, 달걀, 김, 파프리카, 두부∨ 엄마아빠가 큰소리로 말할 때→제일 무서워함∨ 조용하게 말하기∨ 부모간의 대화는 저녁에 따로할 것2. 창의적인 어린이∨ 아이와 계절에 맞는 요리하기3. 아름다운 어린이∨ 좋다는 표현 많이 할 것∨ 긍정적인 사고∨ 일관성 있는 부모가 될 것∨ 모든 인간은 본능적으로 인정욕구가 있다. 이것을 충족시켜줄 것. 창원꽃무지풀무지 유치원 원훈 창원꽃무지풀무지 유치원 활동1. 꽃당번 활동꽃을 따로 사지 말고, 다이소에서 씨앗 사서 심기.부추뿌리(3월제철), 쑥갓, 당근, 강낭콩 완두콩 등..2. 기자 활동글보다는 그림 위주로3. 알아왔어요비밀물건 준비해서 스무고개4. 친절이 활동그날의 선생님이 되어 활동해보는 것5. 생일축하회생일 일주일 전에 기록물_성장과정사진_가져오기 챙겨야 할 것1. 가방&행거가방과 함께 행거를 주는데 스스로 등하원시 가방 챙기게 할 것.2. 도시락 통밥용기, 수저집(수저, 칫솔), 물통3. 매주 금요일 주말활동지, 도서가방 그 이외 것선생님께 전달사항이 있을 경우 석화 톡톡톡! 메모장을 활용해서 아이를 통해 전달하면 된다. 저금통을 받아왔는데, 칭찬 할 일이 있을 때마다 동전을 주고 한달에 한번씩 꺼내는 활동하도록 주셨다. 아직 놀이책은 못 받았음... 창원 꽃무지풀무지 프로그램이란?사계절의 특징을 프로그램화 한 것 먹는 것으로 감각익히기설립 원장님께서 2시간 내내 가장 강조한 것이 바로 '음식'과 '요리'이었습니다. 사실 이부분에는 많은 엄마들의 의견차(?), 호불호(?)가 있을 수도 있을 것 같아요. 왜냐면 집에서도 실천할 것을 강조 하시거든요...;;ㅎㅎㅎ 그 부분은 차치하고, 꽃무지풀무지유치원에서는 계절에 맞는 식재료로 시각, 청각, 미각, 후각, 촉각이라는 오감을 배우게 합니다. 앞서 보여드린 강당에 준비된 도시락에 들어있는 음식들이었는데요. 이날 설명회를 마무리하면서 귤과 봄동 그리고 배추로 원장님의 교육방식에 따라 귤 껍질을 까보기도하고, 봄동을 찢어보기도 하고 찢은 재료들을 나열해보기도 하고 수 세기도 하면서 마지막으로 먹어보았거든요. 이런 과정이 어른들에게도 신선했었는데, 아이들에게는 더욱 즐겁고 색다르게 느껴질 것 같다는 생각이 들었습니다. 선생님 소개마지막으로 선생님 소개가 있었습니다. 정~~말 선생님들이 많으시더라구요. 경력이 많으신분부터 젊은 선생님들도 다양했습니다. 눈여겨볼 것은 꽃무지풀무지만의 어학원 에꼴다흐 선생님들은 모두 경력이 많으신 베테랑 선생님들이셨습니다. 아마 엄마들이 가장 궁금해 할 부분이기도 하죠 ㅎㅎ 외국인 선생님은 '욘디' , '라일라' 선생님 두 분과 한국인 선생님 5분이 계셨네요. 포스팅을 마치며...사실 큰 기대없이 입학설명회를 갔는데,내용은 사실 부모교육이나 다름없었어요..ㅎㅎㅎ그래서 뜻하지 않게 아이 입학설명회에서아이교육부터 식사법까지 다양하게 많은 것을 배워왔네요..ㅋㅋㅋ그러면서원에서 추구하는 바, 원의 분위기 등을 확실히 알 수 있었구요.제가 바라던 바와 잘 맞다는 생각이 들었습니다.또 다양한 활동들을 통해아이가 많은 경험을 할 수 있기를 바라는 기대도 생겼답니다.이제 막 새로운 환경에서 새로운 친구들과 새학기를 시작하는 3월!!등원한 지 이틀째인데요,아직까지 만족 중인것 같습니다.아이가 유치원에 좀 적응한 뒤에는 많이들 궁금해하시는꽃무지풀무지 에꼴다흐에 대해서포스팅해볼까합니다! 포스팅 내용이 도움되셨다면 공감 꾸욱@ 부탁드려요~ ^^",
-          "htmlSnapshotHash": "5541ea7d",
-          "extractedAt": "2026-06-29T20:42:51.947Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=dmlltajjeuya&logNo=223236088030",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=dmlltajjeuya&logno=223236088030",
+          "normalizedText": "창원유치원))꽃무지풀무지유치원(구.석화)_에꼴다흐 2023.10.13.그러다보니 갑작스런 창원이사로 다시 이 전쟁통(?)에 들어서야한다는게 맘이 무거워졌다 또 다시 유치원 거부가 있음 어쩌지? 이제 엄마도 아침에 못와주는데 나 출근준비도... 그 어려운 유치원 합격 목걸이를 가지고 우리집 6세 쪼꼬맹이 다니고 있는 #창원꽃무지풀무지유치원 방과후 수업반(피아노, 미술 , 영어 등) 에꼴다흐반(오후 어학원) 창원꽃무지풀무지유치원은... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와... 유치원 설명회시즌!!!작년 고민하던 나란 엄마, 잘했으 선생님 원복은 변경이 없겠죠 .. 창원으로 이사오기전마산에서 제 1의 입시전쟁이라는유치원 신청을 이미 겪은 우리집하 ….정말 #처음학교로 접수하기 전유치원 알아볼 때 얼마나 걱정되고 바쁘고발표날엔 나 대학발표보다 더 떨렸다구🥹그렇게 힘들게 보냈던 유치원!!!엄마는 만족스러운 유치원이였지만쪼꼬맹은 바뀐 환경들때문이였는지 ..긴 차량때문이였는지 ..쪼꼬맹은 사실 유치원 거부가 있었더랬다시댁가는 길에 항상 지나야했던 길이라“저기 쪼꼬맹 유치원이네!! 선생님 있는지 가볼까?”하면 뿌엥 울어버리고,주말이면 유치원 가기 싫다고 울다 잠드는 .. 물론 그 유치원도 훌륭했습니다.다만 저희 아이와 맞지 않았던 것이지같은 반 다른 친구들은 웃으면서 잘 다녔고,식단과 활동 모두 좋았던 곳!! 그러다보니 갑작스런 창원이사로다시 이 전쟁통(?)에 들어서야한다는게맘이 무거워졌다또 다시 유치원 거부가 있음 어쩌지?이제 엄마도 아침에 못와주는데나 출근준비도 해야하는데이 진상손님 달랠 방법이 없는데..? 기존 다니던 유치원이 있으면2지망까지만 접수 가능!! 고민하며 그래도 쪼꼬맹의 환경변화를 줄이기위해기존 유치원과 비슷한 분위기이고#영어수업 에 #원어민선생님 이 계시고매일 영어 수업이 있으며그게 아니라면 열심히 뛰어놀 수 있는유치원이 어디있는지를 열심히 찾았다하지만 기존 유치원 규모와 영어 수업, 방과후를커버해줄만한 유치원은 찾기가 어려웠고있어도 우리집까진 차량이 안오는 상황…🥲그리고 6세 추가모집은왜 다 인원수가 적은가😭😭열심히 고민하며 처음학교로 지원을 마친 뒤불안초조 …. 다행히 1지망에 합격!!쪼꼬맹 너 합격운은 있구나!!!!!!!만세다 만세!!!!!!그 어려운 유치원 합격 목걸이를 가지고우리집 6세 쪼꼬맹이 다니고 있는#창원꽃무지풀무지유치원 꽃무지풀무지유치원 경상남도 창원시 성산구 창이대로707번길 8-15 이 블로그의 체크인 이 장소의 다른 글 방과후 수업반(피아노, 미술 , 영어 등)에꼴다흐반(오후 어학원) 창원꽃무지풀무지유치원은구.석화유치원으로 장유에도 있는 그 곳 맞다.오래되기도 했고,원 환경도 기존 유치원과 비슷하며단독 건물에 단독 차량#몬테소리 기반 교육이며단독으로 쓰는 텃밭도 있으며,유치원 내 수영장도 있다.무엇보다 쪼꼬맹이 젤 좋아하는건#모래놀이터 🤭🤭 previous image next image 입학하면가방, 도시락 가방, 도시락, 도시락 매트,수저보관함, 물병(스텐물병+나들이용 2병)요롷게 주신다.다만 쪼꼬맹이 아직도 거부하는 한가지가 있으니 ..그것은 바로원.복 previous image next image 그렇다 사실 나도 원복때문에 접수를 망설엿단건안비밀이다만 혹시나 이 글을 보신다면원복 바꾸긴 어렵겠죠….??🥹….그래도 계속보면 귀엽고, 스머프 같고후드 쓰면 요정같고 생각보다 재질이 탄탄하다!!(쪼꼬맹은 전 유치원 원복을 3개 다 찢…)그리고 누가봐도내가 꽃무지풀무지다!!!!아이덴티티가 강해서애 잃어버릴 걱정은 없다🤣🤣유치원 합격하자마자 내가 한건유치원 전화해서 #에꼴다흐 신청!!!!꽃무지풀무지의 독보적인 이유!!반영유식으로 진행되는 에꼴다흐인데오전은 #누리교육 으로오후는 #영어어학원 으로#소수정예 수업으로 진행된다.그래서 학기초에 접수을 받으시는데접수 못할까봐 을매나 걱정했다구요🥹어학원 선생님들 모두 외부강사님이 아닌정규 선생님들이시다.원어민 선생님 2분,한국 선생님 5-6분 정도 였던 것 같다.처음엔 아이들이 원어민 선생님을 무서워하는데쪼꼬맹은 이전 유치원에서 원어민 선생님경험이 있어서 그런가 무난히 지나간 것 같다. 수업에 사용하는 책은 요롷게!!랑+여기에는 없는 다른 프로그램 영어도 있다🤫처음엔 생각보다 많은 책들로 수업해서애가 잘 따라갈까 …저걸 다 이해할까?? 걱정했는데 아이들은 진짜 스펀지가 맞다 새 책이 오고, 1-2주만 지나면저 책들 모두 줄줄줄 외워서 읽어준다🫢🫢🫢그렇다고 유치원에서 빡시게(?)가르치는 것도 아닌것 같은데-영어거부도 갱장히 심했던 쪼꼬맹이였음-금방 줄줄 읽고, 간단한 질문에포인팅이나 단어대답도 하고,집에 새로운 책이오면 신나서 읽어달라고 들고온다.수업이 끝난 책같은 경우는 집에서 보관하며자기전이나 주말에 읽어주면 👍 담임 선생님들은 모두 천사인가요 입학설명회가 끝나고 집 가기전아이들이 옹기종기 놀이터에서 놀고있으면선생님들과 이야기를 나눌 짬이 생기는데그때 본인 반 아이의 이름이 들리면어디선가 나타나셔서 아이들 특징, 기질,주의해야할 사항들을 굉장히 세심하게 들어주신다쪼꼬맹같은 경우는 유치원거부도 있었고안먹고, 예민하지만 익숙해지면조용히 사고치며 ….에너지 버튼이 눌러지면 흥분도가급상승해서 폭주하는 타입인데그런 부분 세심하게 들어주시고 체크해주셔서쪼꼬맹이 선생님한테 혼나고 온 날이라도유치원 가는걸 너무 좋아한다.2학기 시작하면서 쪼꼬맹이가사고를 한 건 했는데그 일에 대한 처리방법도 너무나 깔끔하셨다왠만하면 #스스로 할 수 있게하는데이게 #요즘엄마 에겐 처음엔 당황스러울 수 있으나지금보면 그 동안 내가 저 아이를얼마나 갓난쟁이로 봤는지 알 수 있다🫣🫣🫣 식사는 자역식 위주!!새로운 식재료 경험을 늘릴 수 있다 사실 하나도 쉬운게 없은 우리 쪼꼬맹 ..입도 짧고 #편식 도 독특한 쪼꼬맹 ..고기류는 즈얼대 안먹고 새로운 식재료는거들떠도 보지않는다.처음에 급식표 받고 사실 당황스러웠음#자연식 위주라이걸 아이들이 먹을까 ..?비트밥 ..? 치자밥 ..?이러다 굶고오는거 아냐?!😱싶었는데 고기 편식은 여전하지만-고기 편식 부분은 입학할 때부터담임선생님께 미리 전달드렸다.안먹을테니 굳이 신경 안쓰셔도 된다고그는 닭 오리 소 돼지 모두 잘먹지 않는다-스스로 파프리카 먹었다며 뿌듯해하고토마토 먹어봤다고 자기가 원하는 맛은 아니라고말하는 쪼꼬맹의 모습을 보면그래 이런 기회 아니면 난 얘에게시도하지 않았겠지 싶다!!파프리카 먹고 자랑하던 그 모습은선생님이 얼마나 칭찬해주셨는지내가 다 느껴질 정도였다ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ워낙 정적이다, 애들 스스로 시킨다,예의를 중시한다하는 딱딱한 유치원이다라는이야기가 많아서 그랬나솔직히 처음 보낼땐 나도 걱정 아닌 걱정이많았던 것은 사실이다.그러나 그건 안보내본 사람들 이야기인 듯원복빼곤 애도 나도 만족하며 보내는이렇게 멋진 유치원 다니게 해줘서 고맙다고인사하는 쪼꼬맹을 볼 수 있게해주는 유치원!유치원 입학시즌모든 부모님들 1지망에 붙으시고우리 쪼꼬맹들 즐거운 유치원 행님이 되라구 +지극히 주관적이지만에꼴다흐의 꽃이라 불리는 영어발표회가 끝난 후적어본 에꼴다흐의 후기는아래로 와주세요!https://blog.naver.com/dmlltajjeuya/223633364178 창원유치원)) 반영유 에꼴다흐 1탄(feat.꽃무지풀무지유치원) 영어 레테 끝나고 적으려다가 .. 이제 한참 설명회하는 것 같아서 이르지만 적어보는 에꼴다흐 후기 우선 ... blog.naver.com #창원유치원 #창원유치원추천 #대원동유치원 #사파동유치원 #꽃무지풀무지유치원",
+          "htmlSnapshotHash": "19956b05",
+          "extractedAt": "2026-06-29T20:42:50.345Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
           "structuredFields": {
             "kindergartenName": "꽃무지풀무지유치원",
             "kindergartenAddress": "경상남도 창원시 성산구 창이대로707번길 8-15",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%EB%A7%98%EC%B9%B4%ED%8E%98+%ED%9B%84%EA%B8%B0&where=article",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BD%83%EB%AC%B4%EC%A7%80%ED%92%80%EB%AC%B4%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
             "accessMode": "public"
           }
         }
@@ -116,205 +500,194 @@
         "snippet": "우선 꽃무지풀무지유치원에 대한 간략 후기는  요기로 와주시면 감사하겠습니다. (공손) 내 블로그의... 창원 유일이라고 볼 수 있는 반영유 형식의 에꼴다흐 어학원 꽃무지풀무지 방과후 영어 어학원 수업 에...",
         "date": "2024-10-25",
         "collectedAt": "2026-07-26T00:00:00.000Z"
-      },
-      {
-        "id": "rev-d8ca65a6",
-        "kindergartenId": "1ecec08d-019a-b044-e053-0a32095ab044",
-        "title": "창원유치원))꽃무지풀무지유치원(구.석화)_에꼴다흐",
-        "url": "https://blog.naver.com/dmlltajjeuya/223236088030",
-        "source": "naver_blog",
-        "sourceName": "Gi Yeok : ㄱ",
-        "snippet": "그 어려운 유치원 합격 목걸이를 가지고 우리집 6세 쪼꼬맹이 다니고 있는 #창원꽃무지풀무지유치원... 에꼴다흐의 후기는 아래로 와주세요! https://blog.naver.com/dmlltajjeuya/223633364178 #창원유치원 #창원유치원추천...",
-        "date": "2023-10-13",
-        "collectedAt": "2026-07-26T00:00:00.000Z"
       }
     ],
-    "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac": [
+    "1ecec08d-0805-b044-e053-0a32095ab044": [
       {
-        "id": "rev-3855b2d9",
-        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
-        "title": "유치원 재롱잔치 둘째의 사랑스러운 그날의 기록",
-        "url": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223656242211",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그...",
-        "summary": "육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T20:48:49.642Z",
-        "relevanceScore": 8,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "ae9c7141",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223656242211",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=lastkycool&logno=223656242211",
-          "normalizedText": "유치원 재롱잔치 둘째의 사랑스러운 그날의 기록 유치원 재롱잔치 둘째의 사랑스러운 그날의 기록 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그... 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ... 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ 올라가자마자 이렇게순서표를 나눠주시는데 위에는 상품추첨 번호가 적혀있어요저는 72번 ! 꺅 뭐라도 걸려라 걸려라 여튼, 창원 남산유치원에서는격년으로 운동회와 재롱잔치를돌아가면서 운영한다고 해요 올해는 이렇게 재롱발표회를 하는해그리고 내년에는 운동회를 진행하겠죠!꺅 /ㅅ/ 재밌겠다 우리 두찌 ㅋㅋㅋ 도착해서 강당으로 가는길에 복도에서저러고 대기를 하고 있더라구요 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 너무귀여워옷 뭐야 ㅠ_ ㅠ 엄마 보는데 울컥하는건 뭐람 강당에는 많은 학부모님들이모여있었어요 !+ㅁ+ ㅋㅋ 그리고 원장선생님, 원감선생님들의 말씀도 이어지고센스있는 원감선생님의 진행으로다가 ㅋㅋ 술술 - 행사가 시작되더라구요! ㅋㅋ 꺅 감사합니다, 이런 자리 마련해주셔서 시작과 동시에 엄마는 눈물이 줄줄 첫번째 순서대로 이렇게사물놀이를 준비한 우리 7세들커튼뒤에서 원감선생님이 \"친구들, 준비됐나요!\"했는데 ㅋㅋㅋㅋㅋㅋㅋ \"네네, 선생님\"이라고 대답하는 아이들 목소리를 듣자마자ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ눈물 터짐 .... 아 ........이 f엄마 진짜 어쩔꺼냐고요 내새꾸는 나오기도전에 눈물터졌다구요으엉엉., ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ이러고 눈물나오기있냐고요나만그래? ㅋㅋㅋㅋㅋㅋㅋ기특하기도하고 ㅠㅠㅠㅠㅠㅠ이거뭐 ㅠㅠㅠ 그리고 대망의 우리 5세들의 무대!우리 아들래미의 등장이예요아니 진짜 막내들의 무대가 시작되자마자난리도 아니었어요 ㅠ _ㅠ 너무 귀여운거예요 ............................아 진짜 심장폭행당했어요 똘똘이에서 나오는 하트앙이라는노래에 맞춰서 아이들이 율동을 했는데요진짜 .. 집에서 매번 ㅋㅋ 춤추는거 연습하는걸 보다가 무대에서 저러고 하는걸 보는데 .. 이 엄마 눈물샘이 마르질 않는다리 ..아 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 눈물이여 벌써 저만큼이나 컸나 싶고 ㅠ _ㅠ왜저러고 많이 컸나 싶고 .. 하 , ㅋㅋ 엄마는 진짜 유치원 재롱잔치를 보며생각에 잠겼어요 아주너무 사랑스러운 우리 5세반들의모습을 보면서, 하나같이 내새꾸들 같고 마음이 마구 ㅋㅋ 바운스 거리는데사랑터지는 무대였다구요 .. 엉덩이 마구마구 흔드는 부분에서는꺅 ! ㅋㅋㅋㅋ 소릴 안낼 수 없었답니다 요로코롬 ㅋㅋㅋㅋㅋㅋㅋ gif로다가움짤로 보여드리면 ㅋㅋ저러고 사랑스럽게 아가들이 춤을춰줬어요ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ이쁘지 않아요? ㅋㅋㅋㅋㅋ아 진짜 ㅠ_ ㅠ 너무 이뻐 꽃누리2반 녀석들창원 남산유치원의 귀여운 율동무대덕분에이렇게 행복한 무대들이 엄마들학부모들에게 행복한 시간들을 안겨줬던것 같아요 영상으로 기록하기 'ㅡ' 엉덩이 마구마구 흔드는 아들램ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ열심히 흔들기 고마와? 그리고 다음 무대를 위해서퇴장하는 아들램 찍어주기ㅋㅋㅋ 둘째의 이런 모습 보니까너무너무 큰것만 같고더이상 안컸으면 좋겠어요ㅠ _ㅠ제발, 그만 커라 아들아 형아누나들의 태권도무대와 발레무대도이어졌는데요 진짜, 아이들이 저런 무대들을준비해주면서 얼마나 오랜시간 고생했나 싶고 선생님들이 진짜 너무너무고생많으셨겠다 생각이 들었어요 선생님들 ㅠ_ㅠ 고생많으셨어요 진짜 우리 원감선생님의 센스있는 진행으로다가 ㅋㅋ 태권도 하다가 아이들이 격파를 못한 친구가 있었는데 그 아이들이 끝까지 격파 할 수 있도록기 안죽도록 다 마무리도 지어주셨답니다 센스쟁이 ! 그리고 두번째 무대가 시작됐는데요ㅋㅋㅋㅋㅋㅋㅋ 아니 이거보고 진짜 빵터짐탬버린 치면서 ㅋㅋㅋㅋㅋ아 진짜 너무 웃겼음 악기 공연이었는데요 ㅋㅋㅋㅋㅋㅋㅋㅋ애기들 너무 귀여운거예요 .. 근데 ..... 어딜가나 내 새꾸가 젤 문제 .. ㅋㅋㅋㅋㅋㅋㅋㅋ 저게 뭐래요내 새꾸만 집중못하고 모자 벗으려고 애쓰고 ...... 아주 딴짓하고 천장보고 ....지 차례 까먹고. ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ난리가 나버림 , 역시 내새꾸 .......어딜가나 내 새꾸가 젤문제 그래도 끝까지 뭐든 잘해준우리 꼬맹이들에게 박수박수 ! ㅋㅋㅋㅋㅋㅋ 너무 귀여운 아이들의 무대 덕분에 이모 뭉클, 엄마 뭉클, ㅋㅋ 진짜 유치원 재롱잔치를 보게되다니 .. 꿈을 다 이뤘다구요 .. 마지막 무대로 합창까지 ! 원가도 신나게 불러주고 멋지게 동요제창까지 하고 마무리된 창원 남산유치원의 재롱발표회진짜 .. 너무너무 감격스러운 그날의 무대 ! 증말로 . .이자리를 비로소 ㅠ _ㅠ 선생님들 고생너무 많으셨어요 이 꼬맹이들 연습시키느냐고얼마나 힘드셨을까요 ㅋㅋ 감동을주셔서 너무 감사드려요 정말 효도라는건 지금 시기가 최고라잖아요지금 이쁨을주고 행복을 주는 시기가아이들이 평생해주는 효도중에가장많이 하는 시기라고 하니 ㅋㅋㅋㅋㅋㅋㅋ지금의 효도를 마구 즐겼던 날입니다 진짜 아이들이 주는 행복이 이렇게도 크답니다 너무 사랑스러운 녀석의유치원 재롱잔치 #육아일기 기록으로 꼭꼭 남겨두기해요",
-          "htmlSnapshotHash": "ae9c7141",
-          "extractedAt": "2026-06-29T20:48:49.642Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "창원남산유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-637ae8eb",
-        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
-        "title": "창원 공립 단설 남산유치원 선택 후회없어요",
-        "url": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223628191493",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ...",
-        "summary": "창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T20:48:52.130Z",
-        "relevanceScore": 5,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "22256f15",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223628191493",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=lastkycool&logno=223628191493",
-          "normalizedText": "창원 공립 단설 남산유치원 선택 후회없어요 창원 공립 단설 남산유치원 선택 후회없어요 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ... 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집... 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집에서 똑 떨어졌고본래 전형에서도 똑 떨어졌고 대기 2번을 달고 있었답니다 그러던 와중에 창원 남산유치원을 알게됐어요#창원단설유치원 들중에서 토월과 남산중에서고민을 많이 하게 됐었거든요 우리 집이나 가게와 가까웠음 좋겠었고가게로 버스가 되면 좋겠다 생각했는데 이 두군데 모두가 상남동으로 버스가 온다는 사실에고민을 너무했거든요 이미, 숲은 계속 떨어지길래 맘속으로 인연이 아닌가보다하고 맘을 접었어요 그런데 말입니다 저 진짜 여기 남산유치원에 보내놓고는깜짝 놀랬어요! 진짜 너무 만족스러워서 말이죠 일단 원장, 원감 선생님들이 너무너무 좋으셨어요현재는 9월에 다른 원장님으로 바뀌셨지만또 또 더 좋은 원장님이 오시는바람에 또 좋으셔요거기다가 원감선생님도 너무 친근하게아이들을 맞아주시고 하나하나 자기 손주마냥 이뻐해주시고품어주시는데 이뻐해주시는게 너무 느껴지는 곳이예요사실, 단설을 한군데만 보내봐서 거기가 기준이 되었었는데둘째를 다른 단설로 보내보니 아 ㅋㅋ 이런곳도 있구나 싶었죠 남산을 보내보니 우리 아이들 창녕에 살때어린이집 보낼때 선생님들을 보는 그런 느낌이에요 그리고 특별활동이 무려 5개랍니다 .. 5세로 입학한 우리 둘째는미술, 음악, 과학, 체육, 놀이영어를 하고 있어요거기다가 남산초등학교와 함께 운동장을 쓰고있어서넓직한 활동이 가능해요자전거타기도 하고, 신나게 뛰놀고 모래놀이도 하고놀이터도 이용하죠 6세땐 체육시간에 발레를 배우고7세땐 태권도를 하고 줄넘기도 배운데요 장구도 배우고생존수영도하고 ! ㅋㅋㅋㅋㅋㅋㅋㅋ 세상에나 그런데도 공립 단설이기때문에 들어가는돈은 0원교육청에서 운영하는 유치원이기에 0원이라는게 엄청난 메리트가 있는 것 아닌가요!? 어느날, 대기번호 2번이있던 저에게둘째의 자리가 났다는 창원숲유치원의전화가 왔는데엄청나게 고민고민을 하다가 과감하게 포기를 하게 됩니다 첫째의 남은 기간이 반학기만 남았다는것도 컸고남산유치원의 메리트를 포기하기가 너무너무아까웠기 때문이었죠! 특성화 유치원인 숲은 엄청난 인기가 있는곳이예요대기가 어마어마하고 들어가고싶어서난리인 곳인데 ㅋㅋㅋㅋㅋ 제가 ㅁ ㅣ친거죠머다들 포기했다고하니 미쳤다고 아주 ㅋㅋ 난리가났어요그걸 왜 포기하냐고 다들 ;;;;;; 근데 충분히 포기할만큼 남산유치원도 매력있고 가치있는 곳임은 틀림없습니다 'ㅡ' 후회하지않아요 ! 참 좋은 선생님들도 많으시구 'ㅡ' 특성화 단설도 아니지만한달에 한번 생태선생님이 오시는것도 숲유치원과 빠지지 않는 활동중에 하나랍니다 밧줄놀이체험도 한달에 한번씩 진행중이예요!!! 여튼 그리고 틈틈히 이러고 재밌는행사들도 가득하답니다 'ㅡ' 이날은 아나바다 시장이 열리던날인데학부모 참여수업이 대체되어서 모든 학부모들이 함께 아이들과 시장놀이를 즐겼답니다 조만간 아이들의 재롱발표회도 있다고 하고격년으로 내년에는 운동회를 진행한다고 해요 'ㅡ' 재밌겠다 ! ㅋㅋㅋㅋㅋ 공립단설임에도 불구하고 진짜 다체로운활동들이 이루어지고 있기에 너무너무 만족스러워요 여튼 이날 아나바다 운동이 진행되던날엄마들이 더 재밌었던건 안비밀이라구요 창원 공립단설 많겠지만 저는 두 아이를 다른 두군데를 보내게 되었다보니두군데의 극명한 차이점들을 비교가 확실히 가능한것 같습니다 ~ 창원 인기 짱짱이라는숲유치원 , 그리고 다들 잘 모르는 사람도 많은남산유치원인데요남산이 숲에비해 조금 아쉬운점은 급식소 ! ㅋㅋㅋㅋㅋㅋ 초등학교의 급식소를 함께 쓰다보니 초딩 방학때 급식소도 쉬어서 도시락을먹어야한다는게 슬프답니다 ㅠ ㅠ그리고 계단을 오르내려야한다는 사실이 조금 슬프다는것!?ㅋㅋㅋㅋ 숲이 남산보다 더 좋은건 시설 ! 급식소 ! 여튼 너무너무 재밌게 잘 생활해주기도하고아이들을 너무 예ㅃㅓ해주시는선생님들이 느껴지는 이곳, 진짜 보내길 잘했다라고 느껴져요중간중간 방학기간에는 한글공부도 가르쳐주시더라구요그리고 매주 금요일마다유치원 도서관에서 책을 빌려오고있어요그리고 책선물도 한번씩 해오는데뭔가 항상 유치원에서 선물을 받아오는 기분이랄까 그런기분을 느끼는것 같아요 학부모들과 교직원 그리고 학생들뭔가 따스하게 뭉치려고하는 모습이 좋은것 같아서 참 좋으네요 'ㅡ' 여튼 공립 단설유치원창원에 꽤 많이 있지만 두군데를양쪽 다른곳으로 본의아니게 다른곳으로보내게 되어버린 엄마가 되엇지만후회는 없습니다 ^ㅡ^ 이제 조금있으면초등학교를 들어갈 우리 첫째!이 모든 선택들과 이 모든것들은 운명이려니하면서 ! ㅋㅋ 그 모든것들을 맡기며 살아가려고합니다 여튼 , ㅋㅋㅋ 둘찌가 형아를 2년 터울로 따라가다보니참, 많은 것들을 비교할 수 있게 되는것 같습니다 단설 !!!! 혹시 고민이라면저는 진짜 너무너무너무너무너무너무추천해드려요 +ㅁ+ ㅋㅋㅋㅋㅋ 창원남산유치원 경상남도 창원시 성산구 가음로83번길 7 창원남산초등학교 이 블로그의 체크인 이 장소의 다른 글",
-          "htmlSnapshotHash": "22256f15",
-          "extractedAt": "2026-06-29T20:48:52.130Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-          "structuredFields": {
-            "kindergartenName": "창원남산유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-82cf8fca",
-        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
-        "kindergartenName": "창원남산유치원",
-        "title": "창원남산유치원 교통안전교육 Instagram Reel",
-        "url": "https://www.instagram.com/reel/C_sERyEPckX/",
+        "id": "rev-3bac2968",
+        "kindergartenId": "1ecec08d-0805-b044-e053-0a32095ab044",
+        "title": "창원 행복가득동화유치원 도서관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZ6HNiHBPqD/",
         "source": "other",
-        "sourceName": "Instagram · 교통안전교육",
-        "snippet": "게시물 검색 결과에서 교통안전교육, 창원남산유치원, KoROAD 단서가 함께 확인된다.",
+        "sourceName": "Instagram · 행복가득동화유치원",
+        "snippet": "행복가득동화유치원 계정에서 도서관 견학과 실제 도서관 카드 만들기 문맥이 확인되는 Instagram 릴스 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "traffic-safety",
-          "safety-education"
+          "library-trip"
         ],
         "date": null,
-        "collectedAt": "2026-07-02T23:59:56.000Z",
+        "collectedAt": "2026-07-02T11:30:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "82cf8fca",
+        "evidenceChecksum": "a88cf92a",
         "structuredFields": {
-          "kindergartenName": "창원남산유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+          "kindergartenName": "행복가득동화유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C_sERyEPckX%22%20%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "searchUrl": "https://www.google.com/search?q=%22DZ6HNiHBPqD%22%20%22hbgd_donghwa_kinder%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%20%EA%B2%AC%ED%95%99%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "창원남산유치원과 교통안전교육 단서가 함께 확인되어 로컬 단일 명칭으로 수동 매칭했다."
+          "snippetCaveat": "계정 프로필의 행복가득동화유치원·창원 성산구 대정로 단서가 로컬 기관과 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C_sERyEPckX/",
-          "normalizedUrl": "www.instagram.com/reel/c_seryepckx",
-          "normalizedText": "창원남산유치원 교통안전교육 instagram reel 게시물 검색 결과에서 교통안전교육, 창원남산유치원, KoROAD 단서가 함께 확인된다.",
-          "htmlSnapshotHash": "82cf8fca",
-          "extractedAt": "2026-07-02T23:59:56.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DZ6HNiHBPqD/",
+          "normalizedUrl": "www.instagram.com/reel/dz6hnihbpqd",
+          "normalizedText": "창원 행복가득동화유치원 도서관 견학 instagram reel 행복가득동화유치원 계정에서 도서관 견학과 실제 도서관 카드 만들기 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "a88cf92a",
+          "extractedAt": "2026-07-02T11:30:00.000Z",
           "structuredFields": {
-            "kindergartenName": "창원남산유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+            "kindergartenName": "행복가득동화유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C_sERyEPckX%22%20%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "searchUrl": "https://www.google.com/search?q=%22DZ6HNiHBPqD%22%20%22hbgd_donghwa_kinder%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%20%EA%B2%AC%ED%95%99%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "창원남산유치원과 교통안전교육 단서가 함께 확인되어 로컬 단일 명칭으로 수동 매칭했다."
+            "snippetCaveat": "계정 프로필의 행복가득동화유치원·창원 성산구 대정로 단서가 로컬 기관과 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedAt": "2026-07-02T11:30:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-99852445",
-        "title": "[공연후기] 창원남산유치원 야외 클래식음악회가을 하늘 아래...",
-        "url": "https://blog.naver.com/luceartcompany/224050676102",
-        "source": "naver_blog",
-        "sourceName": "루체예술단 Luce Art Company",
-        "snippet": "맑은 가을 햇살과 선선한 바람이 어우러진 날, 창원남산유치원 운동장이 오늘은 야외 클래식 콘서트장으로 변신했습니다! 아이들이 줄지어 앉고, 선생님들의 미소 속에서 시작된 루체현악앙상블의 ‘가을...",
-        "date": "2025-10-23",
-        "collectedAt": "2026-01-30T03:11:42.194Z"
+        "id": "rev-e40b82d5",
+        "kindergartenId": "1ecec08d-0805-b044-e053-0a32095ab044",
+        "title": "창원 행복가득동화유치원 체육수업 Instagram",
+        "url": "https://www.instagram.com/p/DTeoKtOEf1g/",
+        "source": "other",
+        "sourceName": "Instagram · 행복가득동화유치원",
+        "snippet": "hbgd_donghwa_kinder 계정에서 행복가득동화유치원 유아체육 및 영어체육 수업 문맥이 확인되는 Instagram 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-education",
+          "classroom-activity"
+        ],
+        "date": "2026-01-14",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "f53657cb",
+        "structuredFields": {
+          "kindergartenName": "행복가득동화유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DTeoKtOEf1g%22+%22행복가득동화유치원%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DTeoKtOEf1g/",
+          "normalizedUrl": "www.instagram.com/p/dteoktoef1g",
+          "normalizedText": "창원 행복가득동화유치원 체육수업 instagram hbgd_donghwa_kinder 계정에서 행복가득동화유치원 유아체육 및 영어체육 수업 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "f53657cb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "행복가득동화유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DTeoKtOEf1g%22+%22행복가득동화유치원%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "71ab6d2e-591c-46cf-8ddf-d71eaed55045": [
+    "1ecec08d-0d27-b044-e053-0a32095ab044": [
       {
-        "id": "rev-82f93bc8",
-        "kindergartenId": "71ab6d2e-591c-46cf-8ddf-d71eaed55045",
-        "title": "창원 용호유치원 학부모참여수업 SNS",
-        "url": "https://www.instagram.com/p/DYZVzPgknU7/",
+        "id": "rev-7eb3f5aa",
+        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044",
+        "title": "창원 토월유치원 입학식 써클활동 X Post",
+        "url": "https://x.com/EduYonhap/status/1897538432139682031",
         "source": "other",
-        "sourceName": "Instagram · 용호유치원 학부모참여수업",
-        "snippet": "용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "창원 용호유치원의 학부모참여수업 Instagram 검색 결과.",
+        "sourceName": "X · 교육연합신문",
+        "snippet": "검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
-          "instagram",
-          "official-info"
+          "x",
+          "entrance"
         ],
-        "content": "용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 Instagram 검색 결과. 학부모 참여수업 운영 정보를 보여주는 SNS 자료로 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T19:50:00.000Z",
+        "collectedAt": "2026-07-03T05:20:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a3fdaeb0",
+        "evidenceChecksum": "7eb3f5aa",
         "structuredFields": {
-          "kindergartenName": "용호유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 용호로 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DYZVzPgknU7%22+%22%EC%9A%A9%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "kindergartenName": "토월유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "용호유치원 원명과 창원 지역 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DYZVzPgknU7/",
-          "normalizedUrl": "www.instagram.com/p/dyzvzpgknu7",
-          "normalizedText": "창원 용호유치원 학부모참여수업 sns 용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 instagram 검색 결과. 창원 용호유치원의 학부모참여수업 instagram 검색 결과.",
-          "htmlSnapshotHash": "a3fdaeb0",
-          "extractedAt": "2026-06-30T19:50:00.000Z",
+          "canonicalUrl": "https://x.com/EduYonhap/status/1897538432139682031",
+          "normalizedUrl": "x.com/eduyonhap/status/1897538432139682031",
+          "normalizedText": "창원 토월유치원 입학식 써클활동 x post 검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
+          "htmlSnapshotHash": "7eb3f5aa",
+          "extractedAt": "2026-07-03T05:20:00.000Z",
           "structuredFields": {
-            "kindergartenName": "용호유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 용호로 41",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DYZVzPgknU7%22+%22%EC%9A%A9%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "kindergartenName": "토월유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "용호유치원 원명과 창원 지역 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T19:50:00.000Z",
+        "approvedAt": "2026-07-03T05:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852443",
+        "title": "토월유치원 입학설명회 그리고 오리엔테이션",
+        "url": "https://blog.naver.com/ekdp9014/224115405222",
+        "source": "naver_blog",
+        "sourceName": "day.e blog",
+        "snippet": "유치원 입학설명회 시즌이였고ㅎ 이미 전화를 돌리면 마감인곳이 많아서 우선모집일까지 설명회에... 기타안내, 입학서류 받아오고 찐으로 입학하게 되었다. 벌써 유치원 간다니 이상하긴한데, 모쪼록...",
+        "date": "2025-12-19",
+        "collectedAt": "2026-01-30T03:11:34.727Z",
+        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-99852442",
+        "title": "토월유치원과 남산유치원 입학설명회 다녀온 후",
+        "url": "https://blog.naver.com/yulihani/224057898063",
+        "source": "naver_blog",
+        "sourceName": "주관적인 율리하니",
+        "snippet": "적어보았음 토월유치원은 내가 아이를 보내고 있는 곳이라서 설명회에서 사진은 찍지않았음.... 사실 토월유치원은 입학설명회 시작전 국민의례를 하고 시작했고 남산유치원은 원장선생님의 인사말로...",
+        "date": "2025-10-29",
+        "collectedAt": "2026-01-30T03:11:34.727Z",
+        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-99852511",
+        "title": "우리아이 유치원 어디 보낼까? (토월유치원)",
+        "url": "https://blog.naver.com/yulihani/224057802330",
+        "source": "naver_blog",
+        "sourceName": "주관적인 율리하니",
+        "snippet": "사실 블로그를 쓸 생각이 없어서 토월유치원 입학설명회 때 사진 찍을 생각도 안했었음 열악하지만... 내가 들고있는 팜플렛과 유치원갔을때 찍은 사진 몇 장 올려봄 도서관도 있고 도서대출되고 월말마다는...",
+        "date": "2025-10-29",
+        "collectedAt": "2026-07-26T08:27:42.550701",
+        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044"
       }
     ],
     "1ecec08d-0efb-b044-e053-0a32095ab044": [
@@ -373,586 +746,62 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-f277-b044-e053-0a32095ab044": [
+    "71ab6d2e-591c-46cf-8ddf-d71eaed55045": [
       {
-        "id": "rev-f9a726cc",
-        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
-        "title": "창원 해바라기유치원 SNS 프로필",
-        "url": "https://www.instagram.com/sun.flower_kinder.garten/",
+        "id": "rev-82f93bc8",
+        "kindergartenId": "71ab6d2e-591c-46cf-8ddf-d71eaed55045",
+        "title": "창원 용호유치원 학부모참여수업 SNS",
+        "url": "https://www.instagram.com/p/DYZVzPgknU7/",
         "source": "other",
-        "sourceName": "Instagram · 해바라기유치원",
-        "snippet": "해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경남 창원시 성산구 해바라기유치원의 Instagram 프로필 SNS 정보.",
+        "sourceName": "Instagram · 용호유치원 학부모참여수업",
+        "snippet": "용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "창원 용호유치원의 학부모참여수업 Instagram 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "profile"
+          "official-info"
         ],
-        "content": "해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 Instagram 검색 결과다. 해바라기유치원 동명이 있어 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "content": "용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 Instagram 검색 결과. 학부모 참여수업 운영 정보를 보여주는 SNS 자료로 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.970Z",
+        "collectedAt": "2026-06-30T19:50:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "8f852124",
+        "evidenceChecksum": "a3fdaeb0",
         "structuredFields": {
-          "kindergartenName": "해바라기유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+          "kindergartenName": "용호유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 용호로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-263-3964%22",
+          "searchUrl": "https://www.google.com/search?q=%22DYZVzPgknU7%22+%22%EC%9A%A9%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "용호유치원 원명과 창원 지역 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/sun.flower_kinder.garten/",
-          "normalizedUrl": "www.instagram.com/sun.flower_kinder.garten",
-          "normalizedText": "창원 해바라기유치원 sns 프로필 해바라기유치원 프로필에서 전화 055-263-3964 문맥이 확인되는 instagram 검색 결과. 경남 창원시 성산구 해바라기유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "8f852124",
-          "extractedAt": "2026-06-30T23:59:59.970Z",
+          "canonicalUrl": "https://www.instagram.com/p/DYZVzPgknU7/",
+          "normalizedUrl": "www.instagram.com/p/dyzvzpgknu7",
+          "normalizedText": "창원 용호유치원 학부모참여수업 sns 용호유치원 학부모참여수업과 아이들의 활동 문맥이 확인되는 instagram 검색 결과. 창원 용호유치원의 학부모참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "a3fdaeb0",
+          "extractedAt": "2026-06-30T19:50:00.000Z",
           "structuredFields": {
-            "kindergartenName": "해바라기유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
+            "kindergartenName": "용호유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 용호로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-263-3964%22",
+            "searchUrl": "https://www.google.com/search?q=%22DYZVzPgknU7%22+%22%EC%9A%A9%ED%98%B8%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 창원 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "용호유치원 원명과 창원 지역 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.970Z",
+        "approvedAt": "2026-06-30T19:50:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-40fa60c8",
-        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
-        "title": "창원 해바라기유치원 신입 원아 모집 Instagram",
-        "url": "https://www.instagram.com/p/DPAvAvLk_gQ/",
-        "source": "other",
-        "sourceName": "Instagram · 해바라기유치원",
-        "snippet": "sun.flower_kinder.garten 계정에서 2026학년도 해바라기유치원 신입 원아 모집, 창원 성산구 대정로 위치와 몬테소리 교육 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admissions",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "c9bd9a72",
-        "structuredFields": {
-          "kindergartenName": "해바라기유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DPAvAvLk_gQ/",
-          "normalizedUrl": "www.instagram.com/p/dpavavlk_gq",
-          "normalizedText": "창원 해바라기유치원 신입 원아 모집 instagram sun.flower_kinder.garten 계정에서 2026학년도 해바라기유치원 신입 원아 모집, 창원 성산구 대정로 위치와 몬테소리 교육 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "c9bd9a72",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "해바라기유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22sun.flower_kinder.garten%22+%22%ED%95%B4%EB%B0%94%EB%9D%BC%EA%B8%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-3215539c",
-        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
-        "title": "창원 해바라기유치원 몬테소리 일상영역 Instagram",
-        "url": "https://www.instagram.com/p/DaCet4VE1gi/",
-        "source": "other",
-        "sourceName": "Instagram · 해바라기유치원",
-        "snippet": "sun.flower_kinder.garten 계정에서 해바라기유치원 몬테소리 일상영역, 소근육·독립심·자기조절력 발달 활동 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "4a89afac",
-        "structuredFields": {
-          "kindergartenName": "해바라기유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DaCet4VE1gi%22+%22sun.flower_kinder.garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DaCet4VE1gi/",
-          "normalizedUrl": "www.instagram.com/p/dacet4ve1gi",
-          "normalizedText": "창원 해바라기유치원 몬테소리 일상영역 instagram sun.flower_kinder.garten 계정에서 해바라기유치원 몬테소리 일상영역, 소근육·독립심·자기조절력 발달 활동 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "4a89afac",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "해바라기유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DaCet4VE1gi%22+%22sun.flower_kinder.garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-52f70376",
-        "kindergartenId": "1ecec08c-f277-b044-e053-0a32095ab044",
-        "title": "창원 해바라기유치원 수 영역 활동 Instagram",
-        "url": "https://www.instagram.com/p/DZMjC0UE0t0/",
-        "source": "other",
-        "sourceName": "Instagram · 해바라기유치원",
-        "snippet": "sun.flower_kinder.garten 계정에서 해바라기유치원 수 영역 활동, 수량·숫자 관계 탐색과 수학적 사고 기초 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "803ed101",
-        "structuredFields": {
-          "kindergartenName": "해바라기유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZMjC0UE0t0%22+%22sun.flower_kinder.garten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZMjC0UE0t0/",
-          "normalizedUrl": "www.instagram.com/p/dzmjc0ue0t0",
-          "normalizedText": "창원 해바라기유치원 수 영역 활동 instagram sun.flower_kinder.garten 계정에서 해바라기유치원 수 영역 활동, 수량·숫자 관계 탐색과 수학적 사고 기초 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "803ed101",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "해바라기유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 142",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZMjC0UE0t0%22+%22sun.flower_kinder.garten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f6e7-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-56365d46",
-        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
-        "title": "창원 현대예닮유치원 입학안내 SNS",
-        "url": "https://www.instagram.com/p/DPnWjFHEzll/",
-        "source": "other",
-        "sourceName": "Instagram · 현대예닮유치원",
-        "snippet": "현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "경남 창원시 성산구 현대예닮유치원의 입학안내 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission"
-        ],
-        "content": "현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.970Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "05e7c44a",
-        "structuredFields": {
-          "kindergartenName": "현대예닮유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 반송로 159",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPnWjFHEzll%22+%22%ED%98%84%EB%8C%80%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-287-0407%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DPnWjFHEzll/",
-          "normalizedUrl": "www.instagram.com/p/dpnwjfhezll",
-          "normalizedText": "창원 현대예닮유치원 입학안내 sns 현대예닮유치원 입학안내와 전화 055-287-0407 문맥이 확인되는 instagram 검색 결과. 경남 창원시 성산구 현대예닮유치원의 입학안내 instagram 검색 결과.",
-          "htmlSnapshotHash": "05e7c44a",
-          "extractedAt": "2026-06-30T23:59:59.970Z",
-          "structuredFields": {
-            "kindergartenName": "현대예닮유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 반송로 159",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPnWjFHEzll%22+%22%ED%98%84%EB%8C%80%EC%98%88%EB%8B%AE%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22055-287-0407%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.970Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave694-8a773b05",
-        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
-        "title": "창원 현대예닮유치원 세계여행 생일파티 기록",
-        "url": "https://www.instagram.com/reel/DWlC8FBCSiF/",
-        "source": "other",
-        "sourceName": "Instagram · 현대예닮유치원",
-        "snippet": "현대예닮유치원이 3월 생일을 맞은 친구들과 세계여행 놀이 주제로 생일파티를 진행한 공개 릴스입니다.",
-        "summary": "생일 축하와 역할놀이를 결합해 아이들이 여행 콘셉트 안에서 특별한 하루를 경험한 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "birthday-party",
-          "role-play",
-          "changwon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.950Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave694-8a773b05",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/",
-          "normalizedUrl": "instagram.com/reel/dwlc8fbcsif",
-          "normalizedText": "현대예닮유치원 3월 생일파티 세계여행 놀이 일본여행",
-          "htmlSnapshotHash": "sns-wave694-8a773b05",
-          "extractedAt": "2026-07-03T23:59:59.950Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DWlC8FBCSiF/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.950Z",
-        "approvedBy": "codex-manual-sns-wave694"
-      },
-      {
-        "id": "rev-sns-wave742-2825fbb7",
-        "kindergartenId": "1ecec08c-f6e7-b044-e053-0a32095ab044",
-        "title": "창원 현대예닮유치원 안전지킴이 체험학습 기록",
-        "url": "https://www.instagram.com/p/DKeGvZcTxld/",
-        "source": "other",
-        "sourceName": "Instagram · 현대예닮유치원",
-        "snippet": "현대예닮유치원이 반송동 유치원일상과 안전지킴이 체험학습을 소개한 공개 게시물입니다.",
-        "summary": "창원 성산구 현대예닮유치원의 안전 관련 체험학습을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "field-trip",
-          "safety-education",
-          "changwon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave742-2825fbb7",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DKeGvZcTxld/",
-          "normalizedUrl": "instagram.com/p/dkegvzctxld",
-          "normalizedText": "창원 반송동 현대예닮유치원 체험학습 안전지킴이",
-          "htmlSnapshotHash": "sns-wave742-2825fbb7",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DKeGvZcTxld/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave742"
-      }
-    ],
-    "1ecec08d-0805-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-e40b82d5",
-        "kindergartenId": "1ecec08d-0805-b044-e053-0a32095ab044",
-        "title": "창원 행복가득동화유치원 체육수업 Instagram",
-        "url": "https://www.instagram.com/p/DTeoKtOEf1g/",
-        "source": "other",
-        "sourceName": "Instagram · 행복가득동화유치원",
-        "snippet": "hbgd_donghwa_kinder 계정에서 행복가득동화유치원 유아체육 및 영어체육 수업 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "physical-education",
-          "classroom-activity"
-        ],
-        "date": "2026-01-14",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "f53657cb",
-        "structuredFields": {
-          "kindergartenName": "행복가득동화유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DTeoKtOEf1g%22+%22행복가득동화유치원%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DTeoKtOEf1g/",
-          "normalizedUrl": "www.instagram.com/p/dteoktoef1g",
-          "normalizedText": "창원 행복가득동화유치원 체육수업 instagram hbgd_donghwa_kinder 계정에서 행복가득동화유치원 유아체육 및 영어체육 수업 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "f53657cb",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "행복가득동화유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DTeoKtOEf1g%22+%22행복가득동화유치원%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-3bac2968",
-        "kindergartenId": "1ecec08d-0805-b044-e053-0a32095ab044",
-        "title": "창원 행복가득동화유치원 도서관 견학 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DZ6HNiHBPqD/",
-        "source": "other",
-        "sourceName": "Instagram · 행복가득동화유치원",
-        "snippet": "행복가득동화유치원 계정에서 도서관 견학과 실제 도서관 카드 만들기 문맥이 확인되는 Instagram 릴스 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "library-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T11:30:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a88cf92a",
-        "structuredFields": {
-          "kindergartenName": "행복가득동화유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZ6HNiHBPqD%22%20%22hbgd_donghwa_kinder%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%20%EA%B2%AC%ED%95%99%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "계정 프로필의 행복가득동화유치원·창원 성산구 대정로 단서가 로컬 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZ6HNiHBPqD/",
-          "normalizedUrl": "www.instagram.com/reel/dz6hnihbpqd",
-          "normalizedText": "창원 행복가득동화유치원 도서관 견학 instagram reel 행복가득동화유치원 계정에서 도서관 견학과 실제 도서관 카드 만들기 문맥이 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "a88cf92a",
-          "extractedAt": "2026-07-02T11:30:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "행복가득동화유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 대정로 84",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZ6HNiHBPqD%22%20%22hbgd_donghwa_kinder%22%20%22%EB%8F%84%EC%84%9C%EA%B4%80%20%EA%B2%AC%ED%95%99%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "계정 프로필의 행복가득동화유치원·창원 성산구 대정로 단서가 로컬 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T11:30:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f6e5-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-921bebed",
-        "kindergartenId": "1ecec08c-f6e5-b044-e053-0a32095ab044",
-        "title": "창원 국제예술유치원 소방훈련 Instagram Post",
-        "url": "https://www.instagram.com/p/DIjHm8wyBEp/",
-        "source": "other",
-        "sourceName": "Instagram · 국제예술유치원",
-        "snippet": "국제예술유치원 계정에서 불조심 소방훈련·대피훈련·소방관 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "safety-drill"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T22:20:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ba865d50",
-        "structuredFields": {
-          "kindergartenName": "국제예술유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 동산로 115",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DIjHm8wyBEp%22+%22%EA%B5%AD%EC%A0%9C%EC%98%88%EC%88%A0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "국제예술유치원은 로컬 원장부 단일 매칭이며 게시물 기관명과 소방훈련 문맥이 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DIjHm8wyBEp/",
-          "normalizedUrl": "www.instagram.com/p/dijhm8wybep",
-          "normalizedText": "창원 국제예술유치원 소방훈련 instagram post 국제예술유치원 계정에서 불조심 소방훈련·대피훈련·소방관 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "ba865d50",
-          "extractedAt": "2026-07-02T22:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "국제예술유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 동산로 115",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DIjHm8wyBEp%22+%22%EA%B5%AD%EC%A0%9C%EC%98%88%EC%88%A0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%86%8C%EB%B0%A9%ED%9B%88%EB%A0%A8%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "국제예술유치원은 로컬 원장부 단일 매칭이며 게시물 기관명과 소방훈련 문맥이 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T22:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-0d27-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-7eb3f5aa",
-        "kindergartenId": "1ecec08d-0d27-b044-e053-0a32095ab044",
-        "title": "창원 토월유치원 입학식 써클활동 X Post",
-        "url": "https://x.com/EduYonhap/status/1897538432139682031",
-        "source": "other",
-        "sourceName": "X · 교육연합신문",
-        "snippet": "검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "x",
-          "entrance"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T05:20:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "7eb3f5aa",
-        "structuredFields": {
-          "kindergartenName": "토월유치원",
-          "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
-          "platform": "X",
-          "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://x.com/EduYonhap/status/1897538432139682031",
-          "normalizedUrl": "x.com/eduyonhap/status/1897538432139682031",
-          "normalizedText": "창원 토월유치원 입학식 써클활동 x post 검색 결과에서 창원 토월유치원 입학식 써클활동으로 학부모와 신뢰를 쌓았다는 단서가 확인된다.",
-          "htmlSnapshotHash": "7eb3f5aa",
-          "extractedAt": "2026-07-03T05:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "토월유치원",
-            "kindergartenAddress": "경상남도 창원시 성산구 비음로4번길 33-11",
-            "platform": "X",
-            "searchUrl": "https://www.google.com/search?q=%221897538432139682031%22%20%22%ED%86%A0%EC%9B%94%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "토월유치원은 동명 병설 후보가 있으나 창원토월유치원 단서와 창원시 성산구 주소가 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T05:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-99852442",
-        "title": "토월유치원과 남산유치원 입학설명회 다녀온 후",
-        "url": "https://blog.naver.com/yulihani/224057898063",
-        "source": "naver_blog",
-        "sourceName": "주관적인 율리하니",
-        "snippet": "적어보았음 토월유치원은 내가 아이를 보내고 있는 곳이라서 설명회에서 사진은 찍지않았음.... 사실 토월유치원은 입학설명회 시작전 국민의례를 하고 시작했고 남산유치원은 원장선생님의 인사말로...",
-        "date": "2025-10-29",
-        "collectedAt": "2026-01-30T03:11:34.727Z"
-      },
-      {
-        "id": "rev-99852443",
-        "title": "토월유치원 입학설명회 그리고 오리엔테이션",
-        "url": "https://blog.naver.com/ekdp9014/224115405222",
-        "source": "naver_blog",
-        "sourceName": "day.e blog",
-        "snippet": "유치원 입학설명회 시즌이였고ㅎ 이미 전화를 돌리면 마감인곳이 많아서 우선모집일까지 설명회에... 기타안내, 입학서류 받아오고 찐으로 입학하게 되었다. 벌써 유치원 간다니 이상하긴한데, 모쪼록...",
-        "date": "2025-12-19",
-        "collectedAt": "2026-01-30T03:11:34.727Z"
-      },
-      {
-        "id": "rev-99852511",
-        "title": "우리아이 유치원 어디 보낼까? (토월유치원)",
-        "url": "https://blog.naver.com/yulihani/224057802330",
-        "source": "naver_blog",
-        "sourceName": "주관적인 율리하니",
-        "snippet": "사실 블로그를 쓸 생각이 없어서 토월유치원 입학설명회 때 사진 찍을 생각도 안했었음 열악하지만... 내가 들고있는 팜플렛과 유치원갔을때 찍은 사진 몇 장 올려봄 도서관도 있고 도서대출되고 월말마다는...",
-        "date": "2025-10-29",
-        "collectedAt": "2026-07-26T08:27:42.550701"
       }
     ],
     "733c5e1c-5f66-4bd2-aad5-97a3c8218ec5": [
-      {
-        "id": "rev-99852444",
-        "title": "창원숲유치원 입학설명회 다녀온 후기 | 경쟁률 높은 이유...",
-        "url": "https://blog.naver.com/soobro_mom/224042499465",
-        "source": "naver_blog",
-        "sourceName": "댕청맘 daily :)",
-        "snippet": "창원숲유치원 ☎️ 입학 문의 : 홈페이지 #창원숲유치원 #창원유치원추천 #숲유치원 #유치원입학설명회 #창원맘 #창원육아 #자연교육 #유아교육 #창원유치원후기 #숲놀이교육 #창원숲유치원입학 ⸻",
-        "date": "2025-10-15",
-        "collectedAt": "2026-01-30T03:11:38.442Z"
-      },
       {
         "id": "rev-99852613",
         "title": "창원 성산구 유치원 입학설명회 후기-1: 국공립 창원숲유치원",
@@ -961,7 +810,153 @@
         "sourceName": "서울엄마 경상도살이",
         "snippet": "입학설명회 후기▼ 창원숲유치원 창원시 성산구 두대로197-45 055-285-5001 창원숲유치원은 지정일 하루 오전/오후 2회 입학설명회로 진행됐다 유치원공식정보를 통해 알 수 있는 정보 외에 직접 가서 현장에서...",
         "date": "2025-10-16",
-        "collectedAt": "2026-07-26T08:54:20.537618"
+        "collectedAt": "2026-07-26T08:54:20.537618",
+        "kindergartenId": "733c5e1c-5f66-4bd2-aad5-97a3c8218ec5"
+      },
+      {
+        "id": "rev-99852444",
+        "title": "창원숲유치원 입학설명회 다녀온 후기 | 경쟁률 높은 이유...",
+        "url": "https://blog.naver.com/soobro_mom/224042499465",
+        "source": "naver_blog",
+        "sourceName": "댕청맘 daily :)",
+        "snippet": "창원숲유치원 ☎️ 입학 문의 : 홈페이지 #창원숲유치원 #창원유치원추천 #숲유치원 #유치원입학설명회 #창원맘 #창원육아 #자연교육 #유아교육 #창원유치원후기 #숲놀이교육 #창원숲유치원입학 ⸻",
+        "date": "2025-10-15",
+        "collectedAt": "2026-01-30T03:11:38.442Z",
+        "kindergartenId": "733c5e1c-5f66-4bd2-aad5-97a3c8218ec5"
+      }
+    ],
+    "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac": [
+      {
+        "id": "rev-82cf8fca",
+        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
+        "kindergartenName": "창원남산유치원",
+        "title": "창원남산유치원 교통안전교육 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C_sERyEPckX/",
+        "source": "other",
+        "sourceName": "Instagram · 교통안전교육",
+        "snippet": "게시물 검색 결과에서 교통안전교육, 창원남산유치원, KoROAD 단서가 함께 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "safety-education"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:56.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "82cf8fca",
+        "structuredFields": {
+          "kindergartenName": "창원남산유치원",
+          "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C_sERyEPckX%22%20%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "창원남산유치원과 교통안전교육 단서가 함께 확인되어 로컬 단일 명칭으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C_sERyEPckX/",
+          "normalizedUrl": "www.instagram.com/reel/c_seryepckx",
+          "normalizedText": "창원남산유치원 교통안전교육 instagram reel 게시물 검색 결과에서 교통안전교육, 창원남산유치원, KoROAD 단서가 함께 확인된다.",
+          "htmlSnapshotHash": "82cf8fca",
+          "extractedAt": "2026-07-02T23:59:56.000Z",
+          "structuredFields": {
+            "kindergartenName": "창원남산유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C_sERyEPckX%22%20%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%90%ED%86%B5%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "창원남산유치원과 교통안전교육 단서가 함께 확인되어 로컬 단일 명칭으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:56.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-637ae8eb",
+        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
+        "title": "창원 공립 단설 남산유치원 선택 후회없어요",
+        "url": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223628191493",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ...",
+        "summary": "창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T20:48:52.130Z",
+        "relevanceScore": 5,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "22256f15",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223628191493",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=lastkycool&logno=223628191493",
+          "normalizedText": "창원 공립 단설 남산유치원 선택 후회없어요 창원 공립 단설 남산유치원 선택 후회없어요 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ... 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집... 창원 공립 단설유치원남산유치원 안녕하세요!많은 분들이 진짜 이제 슬슬처음학교로를 할 시기가 다가오나봐요 창원에 살고있는 어머님들이 많아서 그런가진짜 질문들이 폭팔하는 시기이기도 하네요많이 질문들이 늘어나기도하고 젤 많이 궁금해하시는걸 ㅋㅋㅋ설명해주고싶어서 이렇게 글을 쓰게 됐어요 #창원남산유치원 에 둘째를 보내게 된 이유그리고 #창원숲유치원 에서 큰애를 보내면서안보내는 이유 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ젤 많이 물어보더라구요 ㅋㅋ 우리 첫째는 5세때부터 지금 3년째창원숲유치원을 다니고 있어요저는 그덕분에 3년재 숲유치원 운영위원회에서부위원장, 위원장2년, 학부모회장2년차를 보내고있는데요숲유가 인기가 진짜 어마어마해요ㅠㅠ그러다보니 형제자매 우선모집에서 똑 떨어졌고본래 전형에서도 똑 떨어졌고 대기 2번을 달고 있었답니다 그러던 와중에 창원 남산유치원을 알게됐어요#창원단설유치원 들중에서 토월과 남산중에서고민을 많이 하게 됐었거든요 우리 집이나 가게와 가까웠음 좋겠었고가게로 버스가 되면 좋겠다 생각했는데 이 두군데 모두가 상남동으로 버스가 온다는 사실에고민을 너무했거든요 이미, 숲은 계속 떨어지길래 맘속으로 인연이 아닌가보다하고 맘을 접었어요 그런데 말입니다 저 진짜 여기 남산유치원에 보내놓고는깜짝 놀랬어요! 진짜 너무 만족스러워서 말이죠 일단 원장, 원감 선생님들이 너무너무 좋으셨어요현재는 9월에 다른 원장님으로 바뀌셨지만또 또 더 좋은 원장님이 오시는바람에 또 좋으셔요거기다가 원감선생님도 너무 친근하게아이들을 맞아주시고 하나하나 자기 손주마냥 이뻐해주시고품어주시는데 이뻐해주시는게 너무 느껴지는 곳이예요사실, 단설을 한군데만 보내봐서 거기가 기준이 되었었는데둘째를 다른 단설로 보내보니 아 ㅋㅋ 이런곳도 있구나 싶었죠 남산을 보내보니 우리 아이들 창녕에 살때어린이집 보낼때 선생님들을 보는 그런 느낌이에요 그리고 특별활동이 무려 5개랍니다 .. 5세로 입학한 우리 둘째는미술, 음악, 과학, 체육, 놀이영어를 하고 있어요거기다가 남산초등학교와 함께 운동장을 쓰고있어서넓직한 활동이 가능해요자전거타기도 하고, 신나게 뛰놀고 모래놀이도 하고놀이터도 이용하죠 6세땐 체육시간에 발레를 배우고7세땐 태권도를 하고 줄넘기도 배운데요 장구도 배우고생존수영도하고 ! ㅋㅋㅋㅋㅋㅋㅋㅋ 세상에나 그런데도 공립 단설이기때문에 들어가는돈은 0원교육청에서 운영하는 유치원이기에 0원이라는게 엄청난 메리트가 있는 것 아닌가요!? 어느날, 대기번호 2번이있던 저에게둘째의 자리가 났다는 창원숲유치원의전화가 왔는데엄청나게 고민고민을 하다가 과감하게 포기를 하게 됩니다 첫째의 남은 기간이 반학기만 남았다는것도 컸고남산유치원의 메리트를 포기하기가 너무너무아까웠기 때문이었죠! 특성화 유치원인 숲은 엄청난 인기가 있는곳이예요대기가 어마어마하고 들어가고싶어서난리인 곳인데 ㅋㅋㅋㅋㅋ 제가 ㅁ ㅣ친거죠머다들 포기했다고하니 미쳤다고 아주 ㅋㅋ 난리가났어요그걸 왜 포기하냐고 다들 ;;;;;; 근데 충분히 포기할만큼 남산유치원도 매력있고 가치있는 곳임은 틀림없습니다 'ㅡ' 후회하지않아요 ! 참 좋은 선생님들도 많으시구 'ㅡ' 특성화 단설도 아니지만한달에 한번 생태선생님이 오시는것도 숲유치원과 빠지지 않는 활동중에 하나랍니다 밧줄놀이체험도 한달에 한번씩 진행중이예요!!! 여튼 그리고 틈틈히 이러고 재밌는행사들도 가득하답니다 'ㅡ' 이날은 아나바다 시장이 열리던날인데학부모 참여수업이 대체되어서 모든 학부모들이 함께 아이들과 시장놀이를 즐겼답니다 조만간 아이들의 재롱발표회도 있다고 하고격년으로 내년에는 운동회를 진행한다고 해요 'ㅡ' 재밌겠다 ! ㅋㅋㅋㅋㅋ 공립단설임에도 불구하고 진짜 다체로운활동들이 이루어지고 있기에 너무너무 만족스러워요 여튼 이날 아나바다 운동이 진행되던날엄마들이 더 재밌었던건 안비밀이라구요 창원 공립단설 많겠지만 저는 두 아이를 다른 두군데를 보내게 되었다보니두군데의 극명한 차이점들을 비교가 확실히 가능한것 같습니다 ~ 창원 인기 짱짱이라는숲유치원 , 그리고 다들 잘 모르는 사람도 많은남산유치원인데요남산이 숲에비해 조금 아쉬운점은 급식소 ! ㅋㅋㅋㅋㅋㅋ 초등학교의 급식소를 함께 쓰다보니 초딩 방학때 급식소도 쉬어서 도시락을먹어야한다는게 슬프답니다 ㅠ ㅠ그리고 계단을 오르내려야한다는 사실이 조금 슬프다는것!?ㅋㅋㅋㅋ 숲이 남산보다 더 좋은건 시설 ! 급식소 ! 여튼 너무너무 재밌게 잘 생활해주기도하고아이들을 너무 예ㅃㅓ해주시는선생님들이 느껴지는 이곳, 진짜 보내길 잘했다라고 느껴져요중간중간 방학기간에는 한글공부도 가르쳐주시더라구요그리고 매주 금요일마다유치원 도서관에서 책을 빌려오고있어요그리고 책선물도 한번씩 해오는데뭔가 항상 유치원에서 선물을 받아오는 기분이랄까 그런기분을 느끼는것 같아요 학부모들과 교직원 그리고 학생들뭔가 따스하게 뭉치려고하는 모습이 좋은것 같아서 참 좋으네요 'ㅡ' 여튼 공립 단설유치원창원에 꽤 많이 있지만 두군데를양쪽 다른곳으로 본의아니게 다른곳으로보내게 되어버린 엄마가 되엇지만후회는 없습니다 ^ㅡ^ 이제 조금있으면초등학교를 들어갈 우리 첫째!이 모든 선택들과 이 모든것들은 운명이려니하면서 ! ㅋㅋ 그 모든것들을 맡기며 살아가려고합니다 여튼 , ㅋㅋㅋ 둘찌가 형아를 2년 터울로 따라가다보니참, 많은 것들을 비교할 수 있게 되는것 같습니다 단설 !!!! 혹시 고민이라면저는 진짜 너무너무너무너무너무너무추천해드려요 +ㅁ+ ㅋㅋㅋㅋㅋ 창원남산유치원 경상남도 창원시 성산구 가음로83번길 7 창원남산초등학교 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "22256f15",
+          "extractedAt": "2026-06-29T20:48:52.130Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+          "structuredFields": {
+            "kindergartenName": "창원남산유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EB%8B%A4%EB%85%80%EB%B3%B4%EB%8B%88&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-3855b2d9",
+        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac",
+        "title": "유치원 재롱잔치 둘째의 사랑스러운 그날의 기록",
+        "url": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223656242211",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그...",
+        "summary": "육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T20:48:49.642Z",
+        "relevanceScore": 8,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "ae9c7141",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=lastkycool&logNo=223656242211",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=lastkycool&logno=223656242211",
+          "normalizedText": "유치원 재롱잔치 둘째의 사랑스러운 그날의 기록 유치원 재롱잔치 둘째의 사랑스러운 그날의 기록 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그... 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ... 육아일기창원 남산유치원 안냐세용 'ㅡ' 우리 꼬맹이들은 코로나베이비들 .. 그렇다보니 어린이집을 거치고 유치원을 들어서면서 생각보다 원생활에서 큰 행사들이 잘 없었어요그런데 , 유치원을 들어가고나서#재롱발표회 를 갖게 됐답니다 ㅠ_ㅠ엄마 가기도전에 마구 울먹울먹마음이 마구 ㅋㅋㅋ 바운스 했다구요 #유치원재롱잔치 가 열리던날창원 남산유치원의 하늘은 비가 왔어요역시나 오랜 전통을 가진곳이라서 그런지이렇게 하루에 두타임으로 나뉘어서 하는데학부모들이 모두다 엉키지 않도록타임별로 진행이 되었고우리는 2부에 방문하게 됐답니다 도착했더니 ㅋㅋ 'ㅡ' 3층 강당에서 진행한다고 되었더라구요마구마구 떨려 ㅋㅋ 엄마는벌써부터 눈물이 마구.ㅋ ㅋㅋㅋㅋㅋㅋㅋㅋ 올라가자마자 이렇게순서표를 나눠주시는데 위에는 상품추첨 번호가 적혀있어요저는 72번 ! 꺅 뭐라도 걸려라 걸려라 여튼, 창원 남산유치원에서는격년으로 운동회와 재롱잔치를돌아가면서 운영한다고 해요 올해는 이렇게 재롱발표회를 하는해그리고 내년에는 운동회를 진행하겠죠!꺅 /ㅅ/ 재밌겠다 우리 두찌 ㅋㅋㅋ 도착해서 강당으로 가는길에 복도에서저러고 대기를 하고 있더라구요 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 너무귀여워옷 뭐야 ㅠ_ ㅠ 엄마 보는데 울컥하는건 뭐람 강당에는 많은 학부모님들이모여있었어요 !+ㅁ+ ㅋㅋ 그리고 원장선생님, 원감선생님들의 말씀도 이어지고센스있는 원감선생님의 진행으로다가 ㅋㅋ 술술 - 행사가 시작되더라구요! ㅋㅋ 꺅 감사합니다, 이런 자리 마련해주셔서 시작과 동시에 엄마는 눈물이 줄줄 첫번째 순서대로 이렇게사물놀이를 준비한 우리 7세들커튼뒤에서 원감선생님이 \"친구들, 준비됐나요!\"했는데 ㅋㅋㅋㅋㅋㅋㅋ \"네네, 선생님\"이라고 대답하는 아이들 목소리를 듣자마자ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ눈물 터짐 .... 아 ........이 f엄마 진짜 어쩔꺼냐고요 내새꾸는 나오기도전에 눈물터졌다구요으엉엉., ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ이러고 눈물나오기있냐고요나만그래? ㅋㅋㅋㅋㅋㅋㅋ기특하기도하고 ㅠㅠㅠㅠㅠㅠ이거뭐 ㅠㅠㅠ 그리고 대망의 우리 5세들의 무대!우리 아들래미의 등장이예요아니 진짜 막내들의 무대가 시작되자마자난리도 아니었어요 ㅠ _ㅠ 너무 귀여운거예요 ............................아 진짜 심장폭행당했어요 똘똘이에서 나오는 하트앙이라는노래에 맞춰서 아이들이 율동을 했는데요진짜 .. 집에서 매번 ㅋㅋ 춤추는거 연습하는걸 보다가 무대에서 저러고 하는걸 보는데 .. 이 엄마 눈물샘이 마르질 않는다리 ..아 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 눈물이여 벌써 저만큼이나 컸나 싶고 ㅠ _ㅠ왜저러고 많이 컸나 싶고 .. 하 , ㅋㅋ 엄마는 진짜 유치원 재롱잔치를 보며생각에 잠겼어요 아주너무 사랑스러운 우리 5세반들의모습을 보면서, 하나같이 내새꾸들 같고 마음이 마구 ㅋㅋ 바운스 거리는데사랑터지는 무대였다구요 .. 엉덩이 마구마구 흔드는 부분에서는꺅 ! ㅋㅋㅋㅋ 소릴 안낼 수 없었답니다 요로코롬 ㅋㅋㅋㅋㅋㅋㅋ gif로다가움짤로 보여드리면 ㅋㅋ저러고 사랑스럽게 아가들이 춤을춰줬어요ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ이쁘지 않아요? ㅋㅋㅋㅋㅋ아 진짜 ㅠ_ ㅠ 너무 이뻐 꽃누리2반 녀석들창원 남산유치원의 귀여운 율동무대덕분에이렇게 행복한 무대들이 엄마들학부모들에게 행복한 시간들을 안겨줬던것 같아요 영상으로 기록하기 'ㅡ' 엉덩이 마구마구 흔드는 아들램ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ열심히 흔들기 고마와? 그리고 다음 무대를 위해서퇴장하는 아들램 찍어주기ㅋㅋㅋ 둘째의 이런 모습 보니까너무너무 큰것만 같고더이상 안컸으면 좋겠어요ㅠ _ㅠ제발, 그만 커라 아들아 형아누나들의 태권도무대와 발레무대도이어졌는데요 진짜, 아이들이 저런 무대들을준비해주면서 얼마나 오랜시간 고생했나 싶고 선생님들이 진짜 너무너무고생많으셨겠다 생각이 들었어요 선생님들 ㅠ_ㅠ 고생많으셨어요 진짜 우리 원감선생님의 센스있는 진행으로다가 ㅋㅋ 태권도 하다가 아이들이 격파를 못한 친구가 있었는데 그 아이들이 끝까지 격파 할 수 있도록기 안죽도록 다 마무리도 지어주셨답니다 센스쟁이 ! 그리고 두번째 무대가 시작됐는데요ㅋㅋㅋㅋㅋㅋㅋ 아니 이거보고 진짜 빵터짐탬버린 치면서 ㅋㅋㅋㅋㅋ아 진짜 너무 웃겼음 악기 공연이었는데요 ㅋㅋㅋㅋㅋㅋㅋㅋ애기들 너무 귀여운거예요 .. 근데 ..... 어딜가나 내 새꾸가 젤 문제 .. ㅋㅋㅋㅋㅋㅋㅋㅋ 저게 뭐래요내 새꾸만 집중못하고 모자 벗으려고 애쓰고 ...... 아주 딴짓하고 천장보고 ....지 차례 까먹고. ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ난리가 나버림 , 역시 내새꾸 .......어딜가나 내 새꾸가 젤문제 그래도 끝까지 뭐든 잘해준우리 꼬맹이들에게 박수박수 ! ㅋㅋㅋㅋㅋㅋ 너무 귀여운 아이들의 무대 덕분에 이모 뭉클, 엄마 뭉클, ㅋㅋ 진짜 유치원 재롱잔치를 보게되다니 .. 꿈을 다 이뤘다구요 .. 마지막 무대로 합창까지 ! 원가도 신나게 불러주고 멋지게 동요제창까지 하고 마무리된 창원 남산유치원의 재롱발표회진짜 .. 너무너무 감격스러운 그날의 무대 ! 증말로 . .이자리를 비로소 ㅠ _ㅠ 선생님들 고생너무 많으셨어요 이 꼬맹이들 연습시키느냐고얼마나 힘드셨을까요 ㅋㅋ 감동을주셔서 너무 감사드려요 정말 효도라는건 지금 시기가 최고라잖아요지금 이쁨을주고 행복을 주는 시기가아이들이 평생해주는 효도중에가장많이 하는 시기라고 하니 ㅋㅋㅋㅋㅋㅋㅋ지금의 효도를 마구 즐겼던 날입니다 진짜 아이들이 주는 행복이 이렇게도 크답니다 너무 사랑스러운 녀석의유치원 재롱잔치 #육아일기 기록으로 꼭꼭 남겨두기해요",
+          "htmlSnapshotHash": "ae9c7141",
+          "extractedAt": "2026-06-29T20:48:49.642Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "창원남산유치원",
+            "kindergartenAddress": "경상남도 창원시 성산구 가음로83번길 7",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B0%BD%EC%9B%90%EB%82%A8%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%B0%BD%EC%9B%90+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-99852445",
+        "title": "[공연후기] 창원남산유치원 야외 클래식음악회가을 하늘 아래...",
+        "url": "https://blog.naver.com/luceartcompany/224050676102",
+        "source": "naver_blog",
+        "sourceName": "루체예술단 Luce Art Company",
+        "snippet": "맑은 가을 햇살과 선선한 바람이 어우러진 날, 창원남산유치원 운동장이 오늘은 야외 클래식 콘서트장으로 변신했습니다! 아이들이 줄지어 앉고, 선생님들의 미소 속에서 시작된 루체현악앙상블의 ‘가을...",
+        "date": "2025-10-23",
+        "collectedAt": "2026-01-30T03:11:42.194Z",
+        "kindergartenId": "f43b2f54-d1a6-4a8e-8ee6-19c199fac9ac"
       }
     ]
   }

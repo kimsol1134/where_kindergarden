@@ -152,7 +152,7 @@ describe('parseSalesReportCsv', () => {
     expect(first.cohort_date).toBe('2025-01-01');
     expect(first.metric_name).toBe('installs');
     expect(first.value).toBe(5);
-    expect(first.source).toBe('asc_sales_report');
+    expect(first.source).toBe('asc_sales_report_daily');
 
     const second = metrics[1];
     expect(second.date).toBe('2025-01-02');
@@ -200,7 +200,7 @@ describe('AscDailyMetric schema', () => {
       cohort_date: '2025-01-15',
       metric_name: 'installs',
       value: 10,
-      source: 'asc_sales_report',
+      source: 'asc_sales_report_daily',
     };
 
     // YYYY-MM-DD 형식 검증

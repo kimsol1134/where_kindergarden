@@ -1,0 +1,60 @@
+{
+  "version": "2026-08-06",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08d-00e7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-dd2ac29b",
+        "kindergartenId": "1ecec08d-00e7-b044-e053-0a32095ab044",
+        "title": "곡성유치원 논생태체험 손모내기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DZWxdl5uLcO/",
+        "source": "other",
+        "sourceName": "Instagram · 곡성군",
+        "snippet": "곡성유치원 아이들과 함께하는 논생태체험교육과 손모내기 체험 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "ecology-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "47ae8a97",
+        "structuredFields": {
+          "kindergartenName": "곡성유치원",
+          "kindergartenAddress": "전라남도 곡성군 학교로 41-6",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZWxdl5uLcO%22%20%22%EA%B3%A1%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%85%BC%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "곡성유치원 단일 매칭이며 곡성군 논생태체험교육 문맥이 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZWxdl5uLcO/",
+          "normalizedUrl": "www.instagram.com/reel/dzwxdl5ulco",
+          "normalizedText": "곡성유치원 논생태체험 손모내기 instagram reel 곡성유치원 아이들과 함께하는 논생태체험교육과 손모내기 체험 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "47ae8a97",
+          "extractedAt": "2026-07-02T12:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "곡성유치원",
+            "kindergartenAddress": "전라남도 곡성군 학교로 41-6",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZWxdl5uLcO%22%20%22%EA%B3%A1%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%85%BC%EC%83%9D%ED%83%9C%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "곡성유치원 단일 매칭이며 곡성군 논생태체험교육 문맥이 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

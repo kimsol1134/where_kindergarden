@@ -12,32 +12,32 @@ describe('convertToEduSidoCode', () => {
     expect(convertToEduSidoCode('11')).toBe('11');
   });
 
-  it('부산시 코드를 변환한다 (26 → 21)', () => {
-    expect(convertToEduSidoCode('26')).toBe('21');
+  it('부산시 코드를 최신 공개코드로 유지한다 (26 → 26)', () => {
+    expect(convertToEduSidoCode('26')).toBe('26');
   });
 
-  it('경기도 코드를 변환한다 (41 → 27)', () => {
-    expect(convertToEduSidoCode('41')).toBe('27');
+  it('경기도 코드를 최신 공개코드로 유지한다 (41 → 41)', () => {
+    expect(convertToEduSidoCode('41')).toBe('41');
   });
 
-  it('강원특별자치도 구 코드를 변환한다 (42 → 28)', () => {
-    expect(convertToEduSidoCode('42')).toBe('28');
+  it('강원특별자치도 구 코드를 변환한다 (42 → 51)', () => {
+    expect(convertToEduSidoCode('42')).toBe('51');
   });
 
-  it('강원특별자치도 신 코드를 변환한다 (51 → 28)', () => {
-    expect(convertToEduSidoCode('51')).toBe('28');
+  it('강원특별자치도 신 코드를 유지한다 (51 → 51)', () => {
+    expect(convertToEduSidoCode('51')).toBe('51');
   });
 
-  it('전북특별자치도 구 코드를 변환한다 (45 → 36)', () => {
-    expect(convertToEduSidoCode('45')).toBe('36');
+  it('전북특별자치도 구 코드를 변환한다 (45 → 52)', () => {
+    expect(convertToEduSidoCode('45')).toBe('52');
   });
 
-  it('전북특별자치도 신 코드를 변환한다 (52 → 36)', () => {
-    expect(convertToEduSidoCode('52')).toBe('36');
+  it('전북특별자치도 신 코드를 유지한다 (52 → 52)', () => {
+    expect(convertToEduSidoCode('52')).toBe('52');
   });
 
-  it('제주도 코드를 변환한다 (50 → 40)', () => {
-    expect(convertToEduSidoCode('50')).toBe('40');
+  it('제주도 코드를 최신 공개코드로 유지한다 (50 → 50)', () => {
+    expect(convertToEduSidoCode('50')).toBe('50');
   });
 
   it('존재하지 않는 코드는 null을 반환한다', () => {
@@ -53,15 +53,15 @@ describe('convertSidoNameToEduCode', () => {
   });
 
   it('강원특별자치도를 변환한다', () => {
-    expect(convertSidoNameToEduCode('강원')).toBe('28');
-    expect(convertSidoNameToEduCode('강원도')).toBe('28');
-    expect(convertSidoNameToEduCode('강원특별자치도')).toBe('28');
+    expect(convertSidoNameToEduCode('강원')).toBe('51');
+    expect(convertSidoNameToEduCode('강원도')).toBe('51');
+    expect(convertSidoNameToEduCode('강원특별자치도')).toBe('51');
   });
 
   it('전북특별자치도를 변환한다', () => {
-    expect(convertSidoNameToEduCode('전북')).toBe('36');
-    expect(convertSidoNameToEduCode('전라북도')).toBe('36');
-    expect(convertSidoNameToEduCode('전북특별자치도')).toBe('36');
+    expect(convertSidoNameToEduCode('전북')).toBe('52');
+    expect(convertSidoNameToEduCode('전라북도')).toBe('52');
+    expect(convertSidoNameToEduCode('전북특별자치도')).toBe('52');
   });
 
   it('존재하지 않는 이름은 null을 반환한다', () => {
@@ -75,7 +75,7 @@ describe('convertRegionCode', () => {
     const result = convertRegionCode('42', '강원특별자치도', '원주시');
 
     expect(result).toEqual({
-      eduSidoCode: '28',
+      eduSidoCode: '51',
       sigunguName: '원주시',
     });
   });
@@ -84,7 +84,7 @@ describe('convertRegionCode', () => {
     const result = convertRegionCode('99', '강원특별자치도', '원주시');
 
     expect(result).toEqual({
-      eduSidoCode: '28',
+      eduSidoCode: '51',
       sigunguName: '원주시',
     });
   });
@@ -121,9 +121,10 @@ describe('getSupportedEduSidoCodes', () => {
     const codes = getSupportedEduSidoCodes();
 
     expect(codes).toContain('11'); // 서울
-    expect(codes).toContain('28'); // 강원
-    expect(codes).toContain('36'); // 전북
-    // 중복 제거되어야 함 (강원 구/신코드는 모두 28)
-    expect(codes.filter((c) => c === '28').length).toBe(1);
+    expect(codes).toContain('51'); // 강원
+    expect(codes).toContain('52'); // 전북
+    expect(codes).toContain('12'); // 전남광주
+    // 중복 제거되어야 함 (강원 구/신코드는 모두 51)
+    expect(codes.filter((c) => c === '51').length).toBe(1);
   });
 });

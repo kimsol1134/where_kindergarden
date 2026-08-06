@@ -1,649 +1,58 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 50,
   "kindergartenCount": 19,
   "reviews": {
-    "1ecec08d-06ca-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-1445-ewc5",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "아산 아해랑유치원을 소개해요.",
-        "url": "https://blog.naver.com/poohhj2/224020461445",
-        "source": "naver_blog",
-        "sourceName": "너나들이",
-        "snippet": "글을 쓰는 이유는 작년에 검색하고 찾아보는데 정보가 없더라구요..실제 다니는 학부님 후기가 찐이니깐요❤️ 아해랑유치원은 아산 염치읍에 위치해 있어요. 은행나무길 쪽에 있다고 생각하심 될 것 같아요....",
-        "date": "2025-09-24",
-        "collectedAt": "2026-02-18T06:13:58.461Z",
-        "relevanceScore": 6
-      },
-      {
-        "id": "rev-8e0e4a89",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "아산 아해랑유치원 신정호 체험 Instagram",
-        "url": "https://www.instagram.com/reel/DIvGos-B_aM/",
-        "source": "other",
-        "sourceName": "Instagram · 아해랑유치원",
-        "snippet": "Instagram 검색 결과에서 아해랑유치원 친구들이 충남 1호 지방정원 신정호 개원식에 다녀온 체험활동 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "field-trip",
-          "nature-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "3b14f928",
-        "structuredFields": {
-          "kindergartenName": "아해랑유치원",
-          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DIvGos-B_aM%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DIvGos-B_aM/",
-          "normalizedUrl": "www.instagram.com/reel/divgos-b_am",
-          "normalizedText": "아산 아해랑유치원 신정호 체험 instagram instagram 검색 결과에서 아해랑유치원 친구들이 충남 1호 지방정원 신정호 개원식에 다녀온 체험활동 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "3b14f928",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아해랑유치원",
-            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DIvGos-B_aM%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-ef3e22d0",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "아산 아해랑유치원 도미노 협동놀이 Instagram",
-        "url": "https://www.instagram.com/reel/DEKPskuhr6s/",
-        "source": "other",
-        "sourceName": "Instagram · 아해랑유치원",
-        "snippet": "Instagram 검색 결과에서 아해랑유치원 친구들이 도미노대전 활동으로 배려와 협동을 경험한 문맥과 아산유치원 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "classroom-activity",
-          "school-life"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "1e97db05",
-        "structuredFields": {
-          "kindergartenName": "아해랑유치원",
-          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DEKPskuhr6s%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DEKPskuhr6s/",
-          "normalizedUrl": "www.instagram.com/reel/dekpskuhr6s",
-          "normalizedText": "아산 아해랑유치원 도미노 협동놀이 instagram instagram 검색 결과에서 아해랑유치원 친구들이 도미노대전 활동으로 배려와 협동을 경험한 문맥과 아산유치원 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "1e97db05",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아해랑유치원",
-            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DEKPskuhr6s%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-8ab41e9d",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "아산 아해랑유치원 윷놀이대회 Instagram",
-        "url": "https://www.instagram.com/reel/DFfRnpZhmhK/",
-        "source": "other",
-        "sourceName": "Instagram · 아해랑유치원",
-        "snippet": "Instagram 검색 결과에서 아해랑유치원 윷놀이 대회와 아산유치원, 천안아산유치원 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "culture-activity",
-          "classroom-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2b2407da",
-        "structuredFields": {
-          "kindergartenName": "아해랑유치원",
-          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DFfRnpZhmhK%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DFfRnpZhmhK/",
-          "normalizedUrl": "www.instagram.com/reel/dffrnpzhmhk",
-          "normalizedText": "아산 아해랑유치원 윷놀이대회 instagram instagram 검색 결과에서 아해랑유치원 윷놀이 대회와 아산유치원, 천안아산유치원 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "2b2407da",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아해랑유치원",
-            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DFfRnpZhmhK%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-e42437aa",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "충남 아산 아해랑유치원 원아모집 Instagram",
-        "url": "https://www.instagram.com/p/C2MFvywh0c9/",
-        "source": "other",
-        "sourceName": "Instagram · ahr_kindergarten",
-        "snippet": "Instagram 검색 결과에서 2024학년도 아해랑유치원 원아모집, 충남유치원, 아산 지역 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "d276e6ea",
-        "structuredFields": {
-          "kindergartenName": "아해랑유치원",
-          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C2MFvywh0c9%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C2MFvywh0c9/",
-          "normalizedUrl": "www.instagram.com/p/c2mfvywh0c9",
-          "normalizedText": "충남 아산 아해랑유치원 원아모집 instagram instagram 검색 결과에서 2024학년도 아해랑유치원 원아모집, 충남유치원, 아산 지역 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "d276e6ea",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아해랑유치원",
-            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C2MFvywh0c9%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-36065a44",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "kindergartenName": "아해랑유치원",
-        "title": "아산 아해랑유치원 졸업과 수료 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DGdDsozhahz/",
-        "source": "other",
-        "sourceName": "Instagram · 아해랑유치원",
-        "snippet": "아해랑유치원 계정 게시물 검색 결과에서 졸업과 수료를 맞이한 친구들의 새로운 시작을 축하하는 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "graduation",
-          "completion"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:54.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "36065a44",
-        "structuredFields": {
-          "kindergartenName": "아해랑유치원",
-          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DGdDsozhahz%22%20%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "아해랑유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DGdDsozhahz/",
-          "normalizedUrl": "www.instagram.com/reel/dgddsozhahz",
-          "normalizedText": "아산 아해랑유치원 졸업과 수료 instagram reel 아해랑유치원 계정 게시물 검색 결과에서 졸업과 수료를 맞이한 친구들의 새로운 시작을 축하하는 단서가 확인된다.",
-          "htmlSnapshotHash": "36065a44",
-          "extractedAt": "2026-07-02T23:59:54.000Z",
-          "structuredFields": {
-            "kindergartenName": "아해랑유치원",
-            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DGdDsozhahz%22%20%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "아해랑유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:54.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-333b9a87",
-        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
-        "title": "아산 아해랑유치원 6살, 우리 아이 성장기",
-        "url": "https://blog.naver.com/poohhj2/224264696639",
-        "source": "naver_blog",
-        "sourceName": "너나들이",
-        "snippet": "좋겠어요 :) #아산유치원 #아산유치원추천 #충남아산유치원 #아해랑유치원 #염치읍유치원 #아산어린이집유치원 #아산6살유치원 #아산유치원후기 #아산유치원선택 #체험활동유치원 #놀이중심유치원...",
-        "date": "2026-04-25",
-        "collectedAt": "2026-07-26T00:00:00.000Z"
-      }
-    ],
-    "1ecec08d-0b35-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-3057-oa43",
-        "kindergartenId": "1ecec08d-0b35-b044-e053-0a32095ab044",
-        "title": "뽐순이가 곧 졸업 할 아산 하늘유치원 후기",
-        "url": "https://blog.naver.com/bom222-/224055203057",
-        "source": "naver_blog",
-        "sourceName": "오늘도 행복한 뽐순이네",
-        "snippet": "곳이 아산 하늘유치원이였고 지금까지도 만족하며 잘 보내고 있음. 그래서 아산 하늘유치원에 보내면서 느꼈던 점을 포스팅 하려함. 참고로 지극히 주관적인 포스팅임. 하늘유치원 정문 그다지 넓지 않지만...",
-        "date": "2025-10-27",
-        "collectedAt": "2026-02-18T06:13:58.461Z",
-        "relevanceScore": 7
-      }
-    ],
-    "77522a5c-0ff4-4eb4-9648-33ebaf7740af": [
-      {
-        "id": "rev-0472-rje9",
-        "kindergartenId": "77522a5c-0ff4-4eb4-9648-33ebaf7740af",
-        "title": "아산 갈산초등학교 병설유치원 조카 졸업식",
-        "url": "https://blog.naver.com/naya4437/223303790472",
-        "source": "naver_blog",
-        "sourceName": "바람이 살랑살랑",
-        "snippet": "내 사랑 우리 이쁜 조카 졸업을 축하해  건강하게 쑥쑥 커줘서 고마워 여기까지 제1회 아산 갈산초등학교 병설유치원 졸업식 후기였습니다 :) 졸업식 앞둔 아가들 모두 축하하고 즐거운 연말 보내세요",
-        "date": "2023-12-26",
-        "collectedAt": "2026-02-18T06:13:58.461Z"
-      }
-    ],
-    "1ecec08d-0b34-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-06b339aa",
-        "kindergartenId": "1ecec08d-0b34-b044-e053-0a32095ab044",
-        "title": "26년도 아산 세종유치원 입학설명회 아주나 비교!",
-        "url": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224057573551",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m....",
-        "summary": "뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T14:32:47.600Z",
-        "relevanceScore": 7,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "1ad6af3e",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224057573551",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=nunulovemom&logno=224057573551",
-          "normalizedText": "26년도 아산 세종유치원 입학설명회 아주나 비교! 19 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.... 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치... 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치원보다 5세 (만3세) 가 한반 더 있었습니다 아산 세종유치원 5세반 내부환경 교구도 충분하고 반마다 세면대도 있었어요 층마다 위치된 1개의 화장실 아주나 유치원이랑 차이점은아주나 유치원은 2반 사이에 하나씩 화장실이 있어반마다 화장실이 연결되어 있었어요 세종유치원은 층마다 하나씩 화장실이 있어'똥 눌때 어떻하지 ...?''아이마다 선생님이 가주시나..?'라는 생각이 들었어요 하루 일과표가 있었는데 거기에 화장실 가는 시간이 따로 있긴했지만조금은 걱정이 될 수 있는 요소 였어요 물론 아이들을 키우다 보니 놀고 있거나 활동하고 있으면 참다가 화장실 가는 시간쯤단체로 가긴 하겠더라구요 ~ (어린이집 참관 활동시에도 화장실을 단체로 감)큰 문제가 되지 않을 수도 있지만중요하신 분들도 계실수 있기에 🫰 아산 세종유치원 6세반 교실 6세 교실 5세 교실 7세교실 제가 봤을때 아직 그단계의 아이들을 키우지 않아서 그런지 모르지만크게 차이를 잘 모르겠더라구요 15개월 아기와 함께 갔지만7세반에서도 잘 놀았습니다 😄 아산 세종유치원 7세반 교실 전반적으로 세종유치원이나 아주나 유치원이나인기있는 유치원임을 느낄수있게반구성이 깔끔하고 교육적이고좋다고 느껴졌어요 아산 세종 유치원 계단 주변분들에게 세종유치원의 단점을 들을때계단이 위험해서 선생님들에게아이가 자주 꾸지람을 듣게 된다는 점을듣기도 했었는데아이랑 걸어보니 양말을 신으면아이가 미끄러워지긴 하더라구요 😭구조를 개선하면 될꺼 같다는 생각이든 뉴뉴맘‼️ 아산 세종 유치원 강당 아산 세종 유치원 강당 강당은 4층에 위치되어 있고 아주나보단좀 좁은 느낌이 들긴 했어요하지만 7세는 바이올린을 배울수 있다는 ⭐️핫소식⭐️ 7세때 배우는 바이올린 악기를 따로 살 필요도 없이 다 준비가 되어있어 더 마음에 드는 뉴뉴맘이였죠 😘 아산 세종유치원 다도실 특별하게 ai 환경이 되어 있어다도도 배우고 테블릿교육도 한다고 하셨어요 (인당 1개씩 준비완료 되어있음) 아산 세종 유치원 특색교육 아산 세종유치원 특색교육 대표적으로 진행되는 특색교육은위와 같았고 아산 세종 유치원 하루일과표 방과후 특성 프로그램과 하루일과표는 위와 같았죠 ~~ 아산 세종 유치원 모집인원 아주나 유치원은 64명 만3세반(5세) 모집인원세종유치원은 77명의 모집인원을 두고 있었어요 아산 세종유치원 우선모집 대상자 생각보다 아주나 유치원이나 세종유치원이나우선모집에 해당되시는 분들이 많아서1지망이 아닌 우선모집으로 많은분들이신청할 예정이라고 하셨죠 ☺️이 블로그를 보시는 이웃님들의 성공적 유치원 입학을기원하며 🙏🙏🙏🙏유치원 입학소식 추후엔 5세 학원 추천등다양한 자료를 공유할테니이웃추가 부탁드려요 😍😍😍🙇♀️🙇♀️⬇️ 아주나유치원 입학설명회 26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 있었던 아... m.blog.naver.com ⬇️ 11월 3일에 진행된 우선모집 진행법! 오늘, 유치원 우선모집 시작! 놓치지 말아야할 요소들! 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 9:00부터 ... blog.naver.com ⬇️ 우선모집 합격여정 모든것 유치원 우선 모집 합격 후기 합격까지의 여정 안녕하세요 뉴뉴맘입니다😍 어제 유치원 우선 모집 합격 발표가 나고 오늘 등록 여부를 결정하는 날인데... blog.naver.com ⬇️ 우선모집 탈락시 일반모집 모든것!! 유치원 우선모집 탈락 후 일반모집 지원 일정 22년 11월 36개월을 맞이한 내년이면 5세가 되는 뉴뉴맘이에요 11월 부터 시작한 유치원 모집일정과 입학설... m.blog.naver.com ⬇️ 우선모집 합격후 진행한 설명회 후기(충격주의) 신학기 유치원 입학을 준비하는 5세맘 충격이야기 유치원 우선모집에 운 좋게 합격하고, 며칠 전엔 입학설명회도 다녀왔어요☺️ 솔직히 저는 “5살이면 당연... m.blog.naver.com ⬇️ 유치원 입학 한 달 후기 11월생 뉴뉴 유치원 입학 한 달 솔직 후기 | 내향적인 아이 적응기 안녕하세요 뉴뉴맘이에요 😊 뉴뉴가 유치원 입학한 지 벌써 한 달이 지났어요! 설레기도 하고 걱정도 많... m.blog.naver.com",
-          "htmlSnapshotHash": "1ad6af3e",
-          "extractedAt": "2026-06-29T14:32:47.600Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "아주나유치원",
-            "kindergartenAddress": "충청남도 아산시 용연동길 48",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-15a345dc",
-        "kindergartenId": "1ecec08d-0b34-b044-e053-0a32095ab044",
-        "title": "26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁",
-        "url": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224055857818",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입...",
-        "summary": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T14:32:47.905Z",
-        "relevanceScore": 7,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "38c26ef1",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224055857818",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=nunulovemom&logno=224055857818",
-          "normalizedText": "26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입... 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명... 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아이들에게 아낌없이 주는 나무가 되고 싶다고하셨죠아. 주. 나 유치원다닐까? 😘 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 유치원과 어린이집을 고민하면서 그냥 방문만 해볼까라고 생각했던 뉴뉴맘에게아주나 유치원의 환경은 여길 반드시 다녀야겠다 라는 마음을 들기에 충분했어요 3층에 위치한 놀이 공간 조리실과 놀이공간 ai 를 추가한 여러 장난감들과 코딩들 ai놀이터와 로봇!! 정글짐이 있는 유치원이라니....😍깨끗한 조리환경과 로봇ai 놀이터 그리고 대망의 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 수. 영. 장.수영장은 아이들이 여름철 물놀이를 하는 장소로 이용되고 7세부터 외부 수영장에서 수영을 배운다고 하셨는데 그래도 뭔가 엄마맘에 기대기대😍 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 주변에서 계단도 너무 많고 위험해서 아주나 유치원을 비추한 분도 계셨는데제가 보기엔5세(만 3세) 교실은 1층에 있고 강당에서는 활동을 할 때 모이는 거라선생님 지도하에 움직이면 충분히 안전하다고 생각이 들었어요 생각보다 정말 다양한 활동들이 진행되고 있고교실 환경에서 아이들의 행복이 묻어져 나오는 거 같아보는 엄마 마음에도 흡족했어요 5세반 교육실은 대체로 비슷했고5세 6세 7세 모두 쾌적하고 넓은 공간에서 생활할 수 있겠다는 생각이 들었어요 ~ ( 각 반마다 화장실이 붙어있어서그 점도 만족스러웠어요) 학급수와 정원 입학설명회가 시작되면서 q&a에 대한 이야기들이시작되었는데요 ~ 가장 먼저 학급수는 만3세 64명 만4세 105명 만5세 104명 이렇게 구성되어 있었고 선생님은 반별 1분씩과방과 후 교사 선생님 8분이 계시다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 그리고 아이와 동반하지 않는 걸 권유한 이유를설명해 주셨는데요유아 보육을 할 수 있지만 엄마와 떨어져서울게 되어 유치원의 첫 이미지를 안 좋게 될 수 있고,방문 후 가고 싶은데 못 가면 실망하고오래 강의를 할 수 없기에 그렇다고 하셨어요(급 납득...) ⬇️ 이전 세종유치원과 비교에서이 부분을 별로라고 했는데 좀 죄송해진 뉴뉴맘🤣 26년 신입학 아산 세종 유치원 아주나 유치원 입학설명회 신청 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 요즘 가장 뜨거... blog.naver.com 또, 입장과 동시에 빵을 제공해 주셔서호감도도 급상승하는 뉴뉴맘의 개인적인 마음이었죠 빵도 제공해 주신 설명회(따뜻하다) 다음 주 월요일 (25년 11월 3일)로 모집요강이부모가 볼 수 있게 유보통합사이트에 올라온다고 했는데요 intro > 유보통합 유보통합포털 입소·입학 신청사이트 들어가기 (통합 로그인) 통합 검색하기 enter.childinfo.go.kr 유치원 앱에 이 기간 동안 (유아 모집 기간)유치원 관련 정보를 볼 수 있게 회원가입을 승인해 주신다고 하셨어요👍🏻 아주나유치원 입학설명회에 다녀왔어요 ~ #빵 과 #안내문 을 제공받았고 #원내환경 을 둘러보았습니다 #강당 과 #ai놀이터 #로봇 #수영장 까지 👍👍 시설보면 꼭 다녀야 할것같은 #아주나유치원 자세한 글은 오늘 저녁 24:00블로그 글 올릴께요 😍 다자녀 혜택에 대한 모든것과 우선모집 꿀팁까지 !!! 이웃신청 부탁드려요 🙏🙏#아산유치원 #아산아주나유치원 m.blog.naver.com 아주나 유치원의 우선 모집에는 1. 다자녀2. 통학차량 미이용3. 통학차량 이용 등이 많은 분들이 속하는 내용으로 있었는데요~다자녀는 재학생의 동생을 뜻하며 만4세, 만5세를올라가는 6세 7세 형아나 누나를 둔 동생을의미했어요 (⭐️졸업생은 속하지 않는데요⭐️) 통학차량 미이용으로 지원하고 합격하면 졸업 시까지 이용하지 않는다는 서약서를 작성해야 하고통학차량은 현재 🔽 아파트를 돈다고 하셨어요 운영시간은 12:30 분까지가 정규시간이고 추가시간은 방과 후 시간으로 들어가며 아이들은 3:20분에 통학차량을 탄다고 하셨어요 ⬇️ 입학식 날 모든 엄마들이 챙기는 꽃다발 (젤저렴) 킨더조이 사탕 비누꽃다발, 블루, 1개 - 조화 | 쿠팡 현재 별점 4.7점, 리뷰 136개를 가진 킨더조이 사탕 비누꽃다발, 블루, 1개! 지금 쿠팡에서 더 저렴하고 다양한 조화 제품들을 확인해보세요. link.coupang.com 츄파춥스 캔디곰 사탕꽃다발 학예회 발표회 연주회 축하꽃다발 - 초콜릿/사탕 꽃다발 | 쿠팡 쿠팡에서 츄파춥스 캔디곰 사탕꽃다발 학예회 발표회 연주회 축하꽃다발 구매하고 더 많은 혜택을 받으세요! 지금 할인중인 다른 초콜릿/사탕 꽃다발 제품도 바로 쿠팡에서 확인할 수 있습니다. link.coupang.com 최대 저녁 6:30분까지 운영 중 입학금은 따로 없고 월 4만원이 부모 부담료전부라고 하셨죠 추가적으로 더 많은 말씀을 하셨는데~어머니들이 기본적으로 궁금해 할 사항을적어봤어요~ 더 궁금하신 부분은 댓글로 문의해 주시면 성실히답해드리겠습니다 ❤️ 아주나유치원 충청남도 아산시 배방읍 용연동길 48 이 블로그의 체크인 이 장소의 다른 글 이글 읽으신 모든분들아주나 유치원에 합격하시길진심으로 기도할께요!🙏🏻 ⬇️ 세종유치원 입학설명회 26년도 아산 세종유치원 입학설명회 아주나 비교! 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘🙋♀️ 세종유치원은 입학설명회 없이 유치원 원내환경공... m.blog.naver.com ⬇️ 26년도 유치원 우선모집 신청 방법 오늘, 유치원 우선모집 시작! 놓치지 말아야할 요소들! 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 9:00부터 ... blog.naver.com ⬇️ 우선모집 합격여정 모든것 유치원 우선 모집 합격 후기 합격까지의 여정 안녕하세요 뉴뉴맘입니다😍 어제 유치원 우선 모집 합격 발표가 나고 오늘 등록 여부를 결정하는 날인데... blog.naver.com ⬇️ 우선모집 탈락시 일반모집 모든것! 유치원 우선모집 탈락 후 일반모집 지원 일정 22년 11월 36개월을 맞이한 내년이면 5세가 되는 뉴뉴맘이에요 11월 부터 시작한 유치원 모집일정과 입학설... m.blog.naver.com ⬇️ 우선모집합격후 진행한 설명회(충격주의) 신학기 유치원 입학을 준비하는 5세맘 충격이야기 유치원 우선모집에 운 좋게 합격하고, 며칠 전엔 입학설명회도 다녀왔어요☺️ 솔직히 저는 “5살이면 당연... m.blog.naver.com ⬇️ 유치원 입학 한 달 후기 11월생 뉴뉴 유치원 입학 한 달 솔직 후기 | 내향적인 아이 적응기 안녕하세요 뉴뉴맘이에요 😊 뉴뉴가 유치원 입학한 지 벌써 한 달이 지났어요! 설레기도 하고 걱정도 많... m.blog.naver.com ⬇️ 하루전날까지 고민 유치원 vs 어린이집 차이 입학식전 2월 28일까지 고민했던 엄마의 솔직 후기 안녕하세요 뉴뉴맘이에요 😊 저 고백할게요. 저는 2월 28일까지 유치원이냐 어린이집이냐 고민했어요. 입... m.blog.naver.com",
-          "htmlSnapshotHash": "38c26ef1",
-          "extractedAt": "2026-06-29T14:32:47.905Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "아주나유치원",
-            "kindergartenAddress": "충청남도 아산시 용연동길 48",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08c-fd35-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-9b1edbf4",
-        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
-        "title": "배방 하나유치원 보내고 느낀 솔직후기",
-        "url": "https://blog.naver.com/PostView.naver?blogId=wlgus931026&logNo=224282944166",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/HANA_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향...",
-        "summary": "배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/HANA_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T14:45:33.520Z",
-        "relevanceScore": 9,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "4cb70611",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=wlgus931026&logNo=224282944166",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=wlgus931026&logno=224282944166",
-          "normalizedText": "배방 하나유치원 보내고 느낀 솔직후기 15 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향... 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래... 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래서 오늘은 제가 왜 하나유치원을 선택하게 되었는지,그 이유를 하나씩 자세히 소개해보려고 해요! 유치원 내부 모습 배방 하나유치원 내부 모습이에요.직접 촬영한 사진은 아니고, 검색했을 때 나오는 이미지를 참고했어요!작년에 리모델링을 해서 전체적으로 우드톤이라 분위기가 정말 따뜻하고,깔끔하고 쾌적한 느낌이 인상적이었어요.저는 상담 때문에 오전 11시쯤 방문했는데요,그 시간대에 햇살이 정말 잘 들어와서 공간이 더 밝고 온화하게 느껴지더라고요.덕분에 첫인상이 훨씬 좋았던 것 같아요.방문 예정이신 어머님들께는 오전 시간대 방문을 꼭 추천드리고 싶어요;)채광맛집 입니다ㅋㅋ 하나 유치원을 선택한 이유 본론으로 들어가서, 제가 배방 하나유치원을 선택한 이유!많이 궁금하셨쬬? 지금부터 이야기해볼게요 ☑️ 유치원이기 때문에 제가 가장 먼저 고민했던 부분은 바로 유치원 vs 어린이집 이었어요.요즘 유보통합이 진행되고 있긴 하지만, 아직까지는 유치원이 조금 더 '교육적인' 느낌이 강하다고 생각했어요실제로 큰 어린이집들도 여러 곳 직접 방문해서 상담도 받아보고 설명도 들어봤는데요, 전체적으로 교육보다는 보육 중심, 그리고 활동 위주의 프로그램이 많다는 인상을 받았어요.☑️아이들 수가 적당해서 좋아요저는 사람이 많은 환경보다는 적당한 규모를 더 선호하는 편이에요.대형 기관도 방문해봤는데, 보조교사 없이 한 반에15~19명씩, 그것도 여러반이 운영되다 보니전체적으로 너무 복잡하고 정신없는 느낌을 받았어요.반면 배방 하나유치원은 전체적으로 따뜻하고 안정적인 분위기였고, 아이들 수도 적당해서 훨씬 여유롭다는느낌이 들었습니다.\" 큰 기관을 보내야 사회성이 길러진다\"는 이야기도종종 듣지만, 저는 꼭 그렇다고 생각하지는 않아요.적당한 인원 속에서도 충분히 또래 관계를 배우고사회성을 기를 수 있다고 느꼈고, 그 점에서도 만족하고 있습니다.☑️아이 중심 교육이라 더 맘에 들어요제가 가장 중요하게 생각했던 부분이 바로 '아이중심' 이라는 점이었어요.배방 하나유치원은 재롱잔치나 과도한 부모참여행사가 많지 않은데요, 처음에는 이런 부분이아쉬울수도 있지만 오히려 저는 이 점이 더 좋았습니다.재롱잔치를 준비하면서 아이들이 반복 연습을 해야 하는경우가 많은데, 그 과정이 아이를 위한 것인지어른을 위한 것인지 고민이 되더라고요.이곳은 그런 형식적인 행사보다는 아이들이 실제로 즐겁고 좋아하는 활동 위주로 운영되고, 부모 입장에서도 부담이 적어 훨씬 만족스러웠습니다.아이의 하루가 '보여주기'가 아니라 '경험'중심이라는 느낌이에요.☑️ 선생님들과의 소통이 정말 좋아요\"유치원 생활의 8할은 담임선생님이다\" 라는 말, 많이 들어보셨죠?그만큼 선생님의 역할이 중요한데요, 이 부분은 정말 만족도가 높은 부분입니다.선생님들께서 아이의 작은 변화까지 세심하게 살펴주시고, 자주 연락도 주셔서 아이가 어떻게 지내는지 항상 알 수 있어요.저도 처음 엄마다 보니 어려운 점이 많았는데,양육에 대해 함께 고민해주시고 조언도 해주셔서 큰 도움이 됐습니다.무엇보다 아이를 진심으로 예뻐해주시는 게 느껴져서 안심이 되더라고요.부모와의 소통이 잘 되니 아이 상태를 빠르게 파악할수 있고, 필요한 부분도 함께 맞춰갈 수 있다는점이 큰 장점이라고 느꼈습니다.☑️ 비용 부담이 적어서 좋아요유치원 비용도 중요한 부분인데요,배방 하나유치원은 한 학기 24만원 외에는 추가 비용이 거의 없어요.차량 운행 비용도 따로 없고,불필요한 추가 비용이 발생하지 않아서 부담 없이 보낼 수 있다는 점도 큰 장점입니다.또 하나 좋았던 점은 생일선물이나 각종 준비물을 따로 챙길 필요가 없다는 점이에요.어린이집 다닐 때는 매달 생일선물 준비하는 것도 은근 부담이었는데, 여기서는 그런 문화가없어서 훨씬 편하고 좋았습니다. 전체적으로 느낀 점? 아이를 보내면서 가장 크게 느낀 건 '편안함'이었어요.아이도 즐겁고, 부모도 부담이 적고, 선생님과의 소통도 원활한 곳.화려하거나 보여주기식 프로그램보다, 아이가 안정적으로 잘 지낼 수 있는 환경을찾고 계신 분들께는 충분히 좋은 선택지가 될 수 있을 것 같아요 하나유치원 충청남도 아산시 배방읍 모산로126번길 17-5 하나유치원 이 블로그의 체크인 이 장소의 다른 글 #배방하나유치원 #배방유치원추천 #탕정유치원추천#배방유치원 #탕정유치원 #일상 #소통 #육아맘",
-          "htmlSnapshotHash": "4cb70611",
-          "extractedAt": "2026-06-29T14:45:33.520Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "하나유치원",
-            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-8f18c8a0",
-        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
-        "title": "아산 하나유치원 SNS 프로필",
-        "url": "https://www.instagram.com/hana_5320065/",
-        "source": "other",
-        "sourceName": "Instagram · 아산 하나유치원",
-        "snippet": "하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충남 아산시 하나유치원의 Instagram 프로필 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "profile"
-        ],
-        "content": "하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 하나유치원 동명이 있어 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.980Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "9ff94c96",
-        "structuredFields": {
-          "kindergartenName": "하나유치원",
-          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22hana_5320065%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/hana_5320065/",
-          "normalizedUrl": "www.instagram.com/hana_5320065",
-          "normalizedText": "아산 하나유치원 sns 프로필 하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "9ff94c96",
-          "extractedAt": "2026-06-30T23:59:59.980Z",
-          "structuredFields": {
-            "kindergartenName": "하나유치원",
-            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22hana_5320065%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.980Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a454a445",
-        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
-        "title": "아산 하나유치원 교육활동 SNS",
-        "url": "https://www.instagram.com/p/DOfLpqlkU4w/",
-        "source": "other",
-        "sourceName": "Instagram · 아산 하나유치원",
-        "snippet": "아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충남 아산시 하나유치원의 교육활동 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity"
-        ],
-        "content": "아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 기존 프로필과 다른 게시물 URL로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.980Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a0cec474",
-        "structuredFields": {
-          "kindergartenName": "하나유치원",
-          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DOfLpqlkU4w%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DOfLpqlkU4w/",
-          "normalizedUrl": "www.instagram.com/p/doflpqlku4w",
-          "normalizedText": "아산 하나유치원 교육활동 sns 아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 교육활동 instagram 검색 결과.",
-          "htmlSnapshotHash": "a0cec474",
-          "extractedAt": "2026-06-30T23:59:59.980Z",
-          "structuredFields": {
-            "kindergartenName": "하나유치원",
-            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DOfLpqlkU4w%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.980Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9ea68f23",
-        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
-        "title": "아산 하나유치원 입학안내 SNS",
-        "url": "https://www.instagram.com/reel/DPA-aN7EeTw/",
-        "source": "other",
-        "sourceName": "Instagram · 아산 하나유치원",
-        "snippet": "아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충남 아산시 하나유치원의 입학안내 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission"
-        ],
-        "content": "아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 기존 하나유치원 SNS와 다른 Reel URL로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.980Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "50503380",
-        "structuredFields": {
-          "kindergartenName": "하나유치원",
-          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DPA-aN7EeTw%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DPA-aN7EeTw/",
-          "normalizedUrl": "www.instagram.com/reel/dpa-an7eetw",
-          "normalizedText": "아산 하나유치원 입학안내 sns 아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 입학안내 instagram 검색 결과.",
-          "htmlSnapshotHash": "50503380",
-          "extractedAt": "2026-06-30T23:59:59.980Z",
-          "structuredFields": {
-            "kindergartenName": "하나유치원",
-            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DPA-aN7EeTw%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.980Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "7bd3563c-ce2b-4161-ae7e-3a43a150bba5": [
-      {
-        "id": "rev-ab51812f",
-        "kindergartenId": "7bd3563c-ce2b-4161-ae7e-3a43a150bba5",
-        "title": "아산 한들물빛유치원 보호자 공개수업 X 소식",
-        "url": "https://x.com/onasinmoon/status/2070400379473531139",
-        "source": "other",
-        "sourceName": "X · 온아신문",
-        "snippet": "한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 X 검색 결과.",
-        "summary": "아산 한들물빛유치원의 보호자 공개수업 X 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "x"
-        ],
-        "content": "한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 X 검색 결과. 학부모 참여 공개수업 정보로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T19:30:00.000Z",
-        "relevanceScore": 3,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "b99d9530",
-        "structuredFields": {
-          "kindergartenName": "한들물빛유치원",
-          "kindergartenAddress": "충청남도 아산시 탕정면 한들물빛1로 48",
-          "platform": "X",
-          "searchUrl": "https://www.google.com/search?q=%222070400379473531139%22+%22%ED%95%9C%EB%93%A4%EB%AC%BC%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "한들물빛유치원 원명이 고유하고 아산 탕정 원장부 주소와 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://x.com/onasinmoon/status/2070400379473531139",
-          "normalizedUrl": "x.com/onasinmoon/status/2070400379473531139",
-          "normalizedText": "아산 한들물빛유치원 보호자 공개수업 x 소식 한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 x 검색 결과. 아산 한들물빛유치원의 보호자 공개수업 x 검색 결과.",
-          "htmlSnapshotHash": "b99d9530",
-          "extractedAt": "2026-06-30T19:30:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "한들물빛유치원",
-            "kindergartenAddress": "충청남도 아산시 탕정면 한들물빛1로 48",
-            "platform": "X",
-            "searchUrl": "https://www.google.com/search?q=%222070400379473531139%22+%22%ED%95%9C%EB%93%A4%EB%AC%BC%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "한들물빛유치원 원명이 고유하고 아산 탕정 원장부 주소와 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T19:30:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-99852402",
-        "title": "한들물빛유치원, 2025학년도 교육과정 설명회 실시",
-        "url": "https://blog.naver.com/lyjsimon/223705821976",
-        "source": "naver_blog",
-        "sourceName": "아름다운 세상",
-        "snippet": "이날 교육과정 설명회는 2025학년도 한들물빛유치원 교육과정의 전반적인 운영에 대해 안내하는... 한들물빛유치원은 시설 참관의 날을 별도로 운영하여 입학 전 신입 유아들의 적응을 돕고 신입 학부모들...",
-        "date": "2024-12-26",
-        "collectedAt": "2026-01-30T03:07:00.678Z"
-      },
-      {
-        "id": "rev-99852403",
-        "title": "한들물빛유치원, 2025학년도 교육과정 설명회 실시",
-        "url": "https://blog.naver.com/asandailynew/223706757480",
-        "source": "naver_blog",
-        "sourceName": "아산데일리 [공식 뉴스]",
-        "snippet": "이날 교육과정 설명회는 2025학년도 한들물빛유치원 교육과정의 전반적인 운영에 대해 안내하는... 한들물빛유치원은 시설 참관의 날을 별도로 운영하여 입학 전 신입 유아들의 적응을 돕고 신입...",
-        "date": "2024-12-27",
-        "collectedAt": "2026-01-30T03:07:00.678Z"
-      }
-    ],
     "1ecec08c-ede8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ac61590a",
+        "kindergartenId": "1ecec08c-ede8-b044-e053-0a32095ab044",
+        "title": "아산 해와달유치원 부모참여수업 Threads",
+        "url": "https://www.threads.com/@rainbow.4342/post/DaKFWR-GD2I/",
+        "source": "other",
+        "sourceName": "Threads · @rainbow.4342",
+        "snippet": "해와달유치원 부모참여수업과 아산 유치원 활동 문맥이 확인되는 Threads 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "parent-participation"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "7687d4a5",
+        "structuredFields": {
+          "kindergartenName": "해와달유치원",
+          "kindergartenAddress": "충청남도 아산시 서부북로 956",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DaKFWR-GD2I%22+%22%ED%95%B4%EC%99%80%EB%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@rainbow.4342/post/DaKFWR-GD2I/",
+          "normalizedUrl": "www.threads.com/@rainbow.4342/post/dakfwr-gd2i",
+          "normalizedText": "아산 해와달유치원 부모참여수업 threads 해와달유치원 부모참여수업과 아산 유치원 활동 문맥이 확인되는 threads 검색 결과.",
+          "htmlSnapshotHash": "7687d4a5",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "해와달유치원",
+            "kindergartenAddress": "충청남도 아산시 서부북로 956",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DaKFWR-GD2I%22+%22%ED%95%B4%EC%99%80%EB%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-50ecd8a9",
         "kindergartenId": "1ecec08c-ede8-b044-e053-0a32095ab044",
@@ -696,133 +105,607 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T20:10:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-ac61590a",
-        "kindergartenId": "1ecec08c-ede8-b044-e053-0a32095ab044",
-        "title": "아산 해와달유치원 부모참여수업 Threads",
-        "url": "https://www.threads.com/@rainbow.4342/post/DaKFWR-GD2I/",
-        "source": "other",
-        "sourceName": "Threads · @rainbow.4342",
-        "snippet": "해와달유치원 부모참여수업과 아산 유치원 활동 문맥이 확인되는 Threads 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "threads",
-          "parent-participation"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "7687d4a5",
-        "structuredFields": {
-          "kindergartenName": "해와달유치원",
-          "kindergartenAddress": "충청남도 아산시 서부북로 956",
-          "platform": "Threads",
-          "searchUrl": "https://www.google.com/search?q=%22DaKFWR-GD2I%22+%22%ED%95%B4%EC%99%80%EB%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.threads.com/@rainbow.4342/post/DaKFWR-GD2I/",
-          "normalizedUrl": "www.threads.com/@rainbow.4342/post/dakfwr-gd2i",
-          "normalizedText": "아산 해와달유치원 부모참여수업 threads 해와달유치원 부모참여수업과 아산 유치원 활동 문맥이 확인되는 threads 검색 결과.",
-          "htmlSnapshotHash": "7687d4a5",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "해와달유치원",
-            "kindergartenAddress": "충청남도 아산시 서부북로 956",
-            "platform": "Threads",
-            "searchUrl": "https://www.google.com/search?q=%22DaKFWR-GD2I%22+%22%ED%95%B4%EC%99%80%EB%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-06c9-b044-e053-0a32095ab044": [
+    "1ecec08c-effe-b044-e053-0a32095ab044": [
       {
-        "id": "rev-bd13f1ab",
-        "kindergartenId": "1ecec08d-06c9-b044-e053-0a32095ab044",
-        "title": "아산 아이세상유치원 신입원아모집 SNS",
-        "url": "https://www.instagram.com/p/DCWGuS8yWG8/",
+        "id": "rev-sns-wave725-331c4c89",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "title": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 기록",
+        "url": "https://www.instagram.com/p/DQQOwITgZEn/",
         "source": "other",
-        "sourceName": "Instagram · 아이세상유치원",
-        "snippet": "아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "충남 아산시 아이세상유치원의 신입원아모집 SNS 정보.",
+        "sourceName": "Instagram · 삼성샛별유치원",
+        "snippet": "삼성샛별유치원 친구들이 왕산어촌체험마을에서 갯벌을 걷고 바지락을 캐 본 게시물입니다.",
+        "summary": "유아와 가족이 어촌체험마을에서 갯벌 생태와 수산 활동을 경험한 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "admission"
+          "mudflat",
+          "fishing-village",
+          "family-activity",
+          "asan"
         ],
-        "content": "아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 Instagram 검색 결과다. 아이세상유치원 동명이 있어 전화번호와 원장부 주소를 기준으로 충남 아산시 아이세상유치원에 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:45:00.000Z",
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave725-331c4c89",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQQOwITgZEn/",
+          "normalizedUrl": "instagram.com/p/dqqowitgzen",
+          "normalizedText": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 바지락",
+          "htmlSnapshotHash": "sns-wave725-331c4c89",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DQQOwITgZEn/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave725"
+      },
+      {
+        "id": "rev-2dd38f9d",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "title": "아산 삼성샛별유치원 식단 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DWyoo0ACev5/",
+        "source": "other",
+        "sourceName": "Instagram · 삼성샛별유치원",
+        "snippet": "검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "school-meal",
+          "meal-plan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T11:05:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "bc8973d6",
+        "evidenceChecksum": "2dd38f9d",
         "structuredFields": {
-          "kindergartenName": "아이세상유치원",
-          "kindergartenAddress": "충청남도 아산시 온천대로 1105-17",
+          "kindergartenName": "삼성샛별유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DCWGuS8yWG8%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0271%22",
+          "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DCWGuS8yWG8/",
-          "normalizedUrl": "www.instagram.com/p/dcwgus8ywg8",
-          "normalizedText": "아산 아이세상유치원 신입원아모집 sns 아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 instagram 검색 결과. 충남 아산시 아이세상유치원의 신입원아모집 sns 정보.",
-          "htmlSnapshotHash": "bc8973d6",
-          "extractedAt": "2026-06-30T23:45:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DWyoo0ACev5/",
+          "normalizedUrl": "instagram.com/reel/dwyoo0acev5",
+          "normalizedText": "아산 삼성샛별유치원 식단 instagram reel 검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
+          "htmlSnapshotHash": "2dd38f9d",
+          "extractedAt": "2026-07-03T11:05:00.000Z",
           "structuredFields": {
-            "kindergartenName": "아이세상유치원",
-            "kindergartenAddress": "충청남도 아산시 온천대로 1105-17",
+            "kindergartenName": "삼성샛별유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DCWGuS8yWG8%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0271%22",
+            "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:45:00.000Z",
+        "approvedAt": "2026-07-03T11:05:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-99852467",
-        "title": "아이세상유치원, 아산유치원에서 아이의 꿈을 키워요",
-        "url": "https://blog.naver.com/mnnm1r3nt52/224002543167",
-        "source": "naver_blog",
-        "sourceName": "민재카페일상",
-        "snippet": "저희도 다른 부모들의 후기나 소문을 듣고 선택하게 되었습니다! 기대 이상으로 아이가 안심하고... 저와 같은 부모님들 께 적극 추천합니다!  #아산유치원 #아산아이세상유치원 #아산득산동유치원 #아이세상유치원",
-        "date": "2025-09-10",
-        "collectedAt": "2026-07-26T08:27:42.550590"
+        "id": "rev-12449ea7",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "kindergartenName": "삼성샛별유치원",
+        "title": "아산 삼성샛별유치원 급식 메뉴 Instagram Post",
+        "url": "https://www.instagram.com/p/DXgnvRAiaDy/",
+        "source": "other",
+        "sourceName": "Instagram · 봄급식",
+        "snippet": "Instagram 검색 결과에서 급식 메뉴, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 OCR 단서가 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "meal",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "삼성샛별유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXgnvRAiaDy%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
+          "regionEvidence": [
+            "삼성샛별유치원",
+            "충청남도 아산시 탕정면로22번길 13",
+            "로컬 기관명 유일"
+          ]
+        },
+        "evidenceChecksum": "24d638ac",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
+          "normalizedUrl": "www.instagram.com/p/dxgnvraiady",
+          "normalizedText": "아산 삼성샛별유치원 급식 메뉴 instagram post instagram 검색 결과에서 급식 메뉴, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 ocr 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "e30dc6fb",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성샛별유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXgnvRAiaDy%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
+            "regionEvidence": [
+              "삼성샛별유치원",
+              "충청남도 아산시 탕정면로22번길 13",
+              "로컬 기관명 유일"
+            ]
+          }
+        }
       },
       {
-        "id": "rev-99852474",
-        "title": "아이세상유치원, 아산 아이세상 유치원에서의 행복한 첫 경험",
-        "url": "https://blog.naver.com/trerptiptm03022/224014224063",
-        "source": "naver_blog",
-        "sourceName": "몽실 s 일상기록",
-        "snippet": "평판과 후기 저도 유치원 선택에 앞서 많은 후기를 찾아보았는데요, 아산 아이세상 유치원에 대한 긍정적인 평가가 많았어요. 다른 부모님들이 아이들의 행복한 모습을 본받아 직접 이곳을 추천하는 이유도...",
-        "date": "2025-09-19",
-        "collectedAt": "2026-07-26T08:27:42.550609"
+        "id": "rev-86951227",
+        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
+        "kindergartenName": "삼성샛별유치원",
+        "title": "아산 삼성샛별유치원 2026학년도 급식 Instagram Post",
+        "url": "https://www.instagram.com/p/DVbBZM4koff/",
+        "source": "other",
+        "sourceName": "Instagram · 봄급식",
+        "snippet": "Instagram 검색 결과에서 2026학년도 시작, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 OCR 단서가 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "meal",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "삼성샛별유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVbBZM4koff%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
+          "regionEvidence": [
+            "삼성샛별유치원",
+            "충청남도 아산시 탕정면로22번길 13",
+            "로컬 기관명 유일"
+          ]
+        },
+        "evidenceChecksum": "a58a5142",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
+          "normalizedUrl": "www.instagram.com/p/dvbbzm4koff",
+          "normalizedText": "아산 삼성샛별유치원 2026학년도 급식 instagram post instagram 검색 결과에서 2026학년도 시작, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 ocr 단서가 확인되는 게시물.",
+          "htmlSnapshotHash": "5f69a14e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성샛별유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVbBZM4koff%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
+            "regionEvidence": [
+              "삼성샛별유치원",
+              "충청남도 아산시 탕정면로22번길 13",
+              "로컬 기관명 유일"
+            ]
+          }
+        }
+      }
+    ],
+    "1ecec08c-f25c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2410e089",
+        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
+        "title": "아산 자연유치원 어린이날 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DXtjuM8Ft2j/",
+        "source": "other",
+        "sourceName": "Instagram · 아산 자연유치원",
+        "snippet": "아산 자연유치원 계정에서 어린이날 D-1과 레인보우 벌룬 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "childrens-day"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T19:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "79bc485e",
+        "structuredFields": {
+          "kindergartenName": "자연유치원",
+          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXtjuM8Ft2j%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "자연유치원 동명이 있으나 아산 자연유치원 단서가 아산 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXtjuM8Ft2j/",
+          "normalizedUrl": "www.instagram.com/reel/dxtjum8ft2j",
+          "normalizedText": "아산 자연유치원 어린이날 instagram reel 아산 자연유치원 계정에서 어린이날 d-1과 레인보우 벌룬 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "79bc485e",
+          "extractedAt": "2026-07-02T19:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "자연유치원",
+            "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXtjuM8Ft2j%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "자연유치원 동명이 있으나 아산 자연유치원 단서가 아산 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T19:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-bee8a028",
+        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
+        "kindergartenName": "자연유치원",
+        "title": "아산 자연유치원 부모참여수업 준비 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C7n--W-RbYn/",
+        "source": "other",
+        "sourceName": "Instagram · 자연유치원 태그 게시물",
+        "snippet": "Instagram 검색 결과에서 아산·배방 자연유치원과 부모참여수업, 가족 참여수업 포토존 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "family-participation-class",
+          "parent-participation-class"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "자연유치원",
+          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C7n--W-RbYn%22+%22%EB%B0%B0%EB%B0%A9%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%22+%22%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/C7n--W-RbYn/",
+          "regionEvidence": [
+            "아산자연유치원",
+            "배방자연유치원",
+            "배방",
+            "가족 참여수업",
+            "포토존"
+          ]
+        },
+        "evidenceChecksum": "3b05c081"
+      },
+      {
+        "id": "rev-ecda0f5d",
+        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
+        "kindergartenName": "자연유치원",
+        "title": "아산 자연유치원 가족참여수업 Instagram Post",
+        "url": "https://www.instagram.com/p/Css18xUB1zH/",
+        "source": "other",
+        "sourceName": "Instagram · 자연유치원 태그 게시물",
+        "snippet": "Instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업과 숲놀이 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "family-participation-class",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "자연유치원",
+          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Css18xUB1zH%22+%22%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/Css18xUB1zH/",
+          "regionEvidence": [
+            "아산자연유치원",
+            "배방자연유치원",
+            "배방",
+            "가족참여수업",
+            "숲놀이"
+          ]
+        },
+        "evidenceChecksum": "57aef34e"
+      },
+      {
+        "id": "rev-4c5fdb40",
+        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
+        "title": "충남 아산 자연유치원 가족참여수업 Instagram",
+        "url": "https://www.instagram.com/p/C7n42uFRb08/",
+        "source": "other",
+        "sourceName": "Instagram · 아산자연유치원",
+        "snippet": "Instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업, 숲 놀이 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "family-participation",
+          "forest-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "4c2fb77d",
+        "structuredFields": {
+          "kindergartenName": "자연유치원",
+          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C7n42uFRb08%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C7n42uFRb08/",
+          "normalizedUrl": "www.instagram.com/p/c7n42ufrb08",
+          "normalizedText": "충남 아산 자연유치원 가족참여수업 instagram instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업, 숲 놀이 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "4c2fb77d",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "자연유치원",
+            "kindergartenAddress": "충청남도 아산시 공수길 120-14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C7n42uFRb08%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f569-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-6fde6469",
+        "kindergartenId": "1ecec08c-f569-b044-e053-0a32095ab044",
+        "kindergartenName": "아산흰돌유치원",
+        "title": "아산흰돌유치원 생일파티 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C0nAJa7BJtR/",
+        "source": "other",
+        "sourceName": "Instagram · Yes Yes Yes",
+        "snippet": "Instagram 검색 결과에서 아산흰돌유치원 고운꽃잎반 생일파티 해시태그와 유치원 생일파티 문맥이 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "birthday-party"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6fde6469",
+        "structuredFields": {
+          "kindergartenName": "아산흰돌유치원",
+          "kindergartenAddress": "충청남도 아산시 아산호로 229",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C0nAJa7BJtR%22%20%22%EC%95%84%EC%82%B0%ED%9D%B0%EB%8F%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아산흰돌유치원 해시태그와 로컬 원장부의 아산흰돌유치원 단일 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C0nAJa7BJtR/",
+          "normalizedUrl": "www.instagram.com/reel/c0naja7bjtr",
+          "normalizedText": "아산흰돌유치원 생일파티 instagram reel instagram 검색 결과에서 아산흰돌유치원 고운꽃잎반 생일파티 해시태그와 유치원 생일파티 문맥이 확인된다.",
+          "htmlSnapshotHash": "6fde6469",
+          "extractedAt": "2026-07-02T23:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아산흰돌유치원",
+            "kindergartenAddress": "충청남도 아산시 아산호로 229",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C0nAJa7BJtR%22%20%22%EC%95%84%EC%82%B0%ED%9D%B0%EB%8F%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아산흰돌유치원 해시태그와 로컬 원장부의 아산흰돌유치원 단일 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f7e8-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-2df7a25d",
+        "kindergartenId": "1ecec08c-f7e8-b044-e053-0a32095ab044",
+        "title": "아산 온양제일유치원 블루베리체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CuDn2BrBt72/",
+        "source": "other",
+        "sourceName": "Instagram · 온양제일유치원",
+        "snippet": "온양제일유치원 계정에서 무농약 블루베리따기와 블루베리 모찌 만들기 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "blueberry-experience"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T12:20:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "43a9a715",
+        "structuredFields": {
+          "kindergartenName": "온양제일유치원",
+          "kindergartenAddress": "충청남도 아산시 모종북로 17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CuDn2BrBt72%22+%22%EC%98%A8%EC%96%91%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "온양제일유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CuDn2BrBt72/",
+          "normalizedUrl": "www.instagram.com/p/cudn2brbt72",
+          "normalizedText": "아산 온양제일유치원 블루베리체험 instagram post 온양제일유치원 계정에서 무농약 블루베리따기와 블루베리 모찌 만들기 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "43a9a715",
+          "extractedAt": "2026-07-02T12:20:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "온양제일유치원",
+            "kindergartenAddress": "충청남도 아산시 모종북로 17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CuDn2BrBt72%22+%22%EC%98%A8%EC%96%91%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "온양제일유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T12:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fa12-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave733-3209ad1a",
+        "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
+        "title": "아산 아이사랑유치원 태학산 유아숲체험 기록",
+        "url": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
+        "source": "other",
+        "sourceName": "Instagram · 아이사랑유치원",
+        "snippet": "아산 아이사랑유치원 숲학교가 태학산 유아숲체험원에서 물감놀이와 자연물 비눗방울 놀이를 진행한 릴스입니다.",
+        "summary": "유아들이 숲에서 미술과 자연물을 결합한 생태 놀이를 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-experience",
+          "nature-play",
+          "chungnam"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave733-3209ad1a",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
+          "normalizedUrl": "instagram.com/reel/dygxv_hs1cq",
+          "normalizedText": "아산 아이사랑유치원 태학산 유아숲체험원 숲학교 물감놀이 자연물 비눗방울",
+          "htmlSnapshotHash": "sns-wave733-3209ad1a",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave733"
+      },
+      {
+        "id": "rev-83904877",
+        "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
+        "title": "아산 아이사랑유치원 추가 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/DQGe0bEEeiR/",
+        "source": "other",
+        "sourceName": "Instagram · 아이사랑유치원",
+        "snippet": "Instagram 검색 결과에서 2026학년도 아이사랑유치원 추가 입학설명회, 예비 학부모, 아산유치원, 유아모집 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "orientation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "efbb18fe",
+        "structuredFields": {
+          "kindergartenName": "아이사랑유치원",
+          "kindergartenAddress": "충청남도 아산시 남부로 321-19",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQGe0bEEeiR%22+%22%EC%95%84%EC%9D%B4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQGe0bEEeiR/",
+          "normalizedUrl": "www.instagram.com/p/dqge0beeeir",
+          "normalizedText": "아산 아이사랑유치원 추가 입학설명회 instagram instagram 검색 결과에서 2026학년도 아이사랑유치원 추가 입학설명회, 예비 학부모, 아산유치원, 유아모집 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "efbb18fe",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아이사랑유치원",
+            "kindergartenAddress": "충청남도 아산시 남부로 321-19",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQGe0bEEeiR%22+%22%EC%95%84%EC%9D%B4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-3f7589fc",
         "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
@@ -968,15 +851,17 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08c-fb38-b044-e053-0a32095ab044": [
       {
-        "id": "rev-83904877",
-        "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
-        "title": "아산 아이사랑유치원 추가 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/DQGe0bEEeiR/",
+        "id": "rev-09ad2479",
+        "kindergartenId": "1ecec08c-fb38-b044-e053-0a32095ab044",
+        "title": "아산 대명아이웰유치원 교육설명회 Instagram",
+        "url": "https://www.instagram.com/p/DQDl-ogkxz-/",
         "source": "other",
-        "sourceName": "Instagram · 아이사랑유치원",
-        "snippet": "Instagram 검색 결과에서 2026학년도 아이사랑유치원 추가 입학설명회, 예비 학부모, 아산유치원, 유아모집 문맥이 확인되는 게시물.",
+        "sourceName": "Instagram · 대명아이웰유치원",
+        "snippet": "Instagram 검색 결과에서 2026년도 대명아이웰유치원 교육설명회, 아산유치원, 용화동유치원 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
           "instagram",
@@ -990,26 +875,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "efbb18fe",
+        "evidenceChecksum": "559b8361",
         "structuredFields": {
-          "kindergartenName": "아이사랑유치원",
-          "kindergartenAddress": "충청남도 아산시 남부로 321-19",
+          "kindergartenName": "대명아이웰유치원",
+          "kindergartenAddress": "충청남도 아산시 시민로208번길 3-7",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQGe0bEEeiR%22+%22%EC%95%84%EC%9D%B4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EC%82%B0%22",
+          "searchUrl": "https://www.google.com/search?q=%22DQDl-ogkxz-%22+%22%EB%8C%80%EB%AA%85%EC%95%84%EC%9D%B4%EC%9B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQGe0bEEeiR/",
-          "normalizedUrl": "www.instagram.com/p/dqge0beeeir",
-          "normalizedText": "아산 아이사랑유치원 추가 입학설명회 instagram instagram 검색 결과에서 2026학년도 아이사랑유치원 추가 입학설명회, 예비 학부모, 아산유치원, 유아모집 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "efbb18fe",
+          "canonicalUrl": "https://www.instagram.com/p/DQDl-ogkxz-/",
+          "normalizedUrl": "www.instagram.com/p/dqdl-ogkxz-",
+          "normalizedText": "아산 대명아이웰유치원 교육설명회 instagram instagram 검색 결과에서 2026년도 대명아이웰유치원 교육설명회, 아산유치원, 용화동유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "559b8361",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "아이사랑유치원",
-            "kindergartenAddress": "충청남도 아산시 남부로 321-19",
+            "kindergartenName": "대명아이웰유치원",
+            "kindergartenAddress": "충청남도 아산시 시민로208번길 3-7",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQGe0bEEeiR%22+%22%EC%95%84%EC%9D%B4%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EC%82%B0%22",
+            "searchUrl": "https://www.google.com/search?q=%22DQDl-ogkxz-%22+%22%EB%8C%80%EB%AA%85%EC%95%84%EC%9D%B4%EC%9B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1017,185 +902,388 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08c-fd35-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave733-3209ad1a",
-        "kindergartenId": "1ecec08c-fa12-b044-e053-0a32095ab044",
-        "title": "아산 아이사랑유치원 태학산 유아숲체험 기록",
-        "url": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
+        "id": "rev-8f18c8a0",
+        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
+        "title": "아산 하나유치원 SNS 프로필",
+        "url": "https://www.instagram.com/hana_5320065/",
         "source": "other",
-        "sourceName": "Instagram · 아이사랑유치원",
-        "snippet": "아산 아이사랑유치원 숲학교가 태학산 유아숲체험원에서 물감놀이와 자연물 비눗방울 놀이를 진행한 릴스입니다.",
-        "summary": "유아들이 숲에서 미술과 자연물을 결합한 생태 놀이를 경험한 원문입니다.",
+        "sourceName": "Instagram · 아산 하나유치원",
+        "snippet": "하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충남 아산시 하나유치원의 Instagram 프로필 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "forest-experience",
-          "nature-play",
-          "chungnam"
+          "profile"
         ],
+        "content": "하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 하나유치원 동명이 있어 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "collectedAt": "2026-06-30T23:59:59.980Z",
+        "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave733-3209ad1a",
+        "evidenceChecksum": "9ff94c96",
+        "structuredFields": {
+          "kindergartenName": "하나유치원",
+          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22hana_5320065%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/",
-          "normalizedUrl": "instagram.com/reel/dygxv_hs1cq",
-          "normalizedText": "아산 아이사랑유치원 태학산 유아숲체험원 숲학교 물감놀이 자연물 비눗방울",
-          "htmlSnapshotHash": "sns-wave733-3209ad1a",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DYGxV_hS1CQ/"
+          "canonicalUrl": "https://www.instagram.com/hana_5320065/",
+          "normalizedUrl": "www.instagram.com/hana_5320065",
+          "normalizedText": "아산 하나유치원 sns 프로필 하나유치원 프로필에서 충남 아산시 배방읍과 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "9ff94c96",
+          "extractedAt": "2026-06-30T23:59:59.980Z",
+          "structuredFields": {
+            "kindergartenName": "하나유치원",
+            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22hana_5320065%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 아산 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave733"
+        "approvedAt": "2026-06-30T23:59:59.980Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9ea68f23",
+        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
+        "title": "아산 하나유치원 입학안내 SNS",
+        "url": "https://www.instagram.com/reel/DPA-aN7EeTw/",
+        "source": "other",
+        "sourceName": "Instagram · 아산 하나유치원",
+        "snippet": "아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충남 아산시 하나유치원의 입학안내 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "content": "아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 기존 하나유치원 SNS와 다른 Reel URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.980Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "50503380",
+        "structuredFields": {
+          "kindergartenName": "하나유치원",
+          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DPA-aN7EeTw%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DPA-aN7EeTw/",
+          "normalizedUrl": "www.instagram.com/reel/dpa-an7eetw",
+          "normalizedText": "아산 하나유치원 입학안내 sns 아산 하나유치원 입학안내와 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 입학안내 instagram 검색 결과.",
+          "htmlSnapshotHash": "50503380",
+          "extractedAt": "2026-06-30T23:59:59.980Z",
+          "structuredFields": {
+            "kindergartenName": "하나유치원",
+            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DPA-aN7EeTw%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.980Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-a454a445",
+        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
+        "title": "아산 하나유치원 교육활동 SNS",
+        "url": "https://www.instagram.com/p/DOfLpqlkU4w/",
+        "source": "other",
+        "sourceName": "Instagram · 아산 하나유치원",
+        "snippet": "아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충남 아산시 하나유치원의 교육활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 Instagram 검색 결과다. 기존 프로필과 다른 게시물 URL로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.980Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a0cec474",
+        "structuredFields": {
+          "kindergartenName": "하나유치원",
+          "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DOfLpqlkU4w%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DOfLpqlkU4w/",
+          "normalizedUrl": "www.instagram.com/p/doflpqlku4w",
+          "normalizedText": "아산 하나유치원 교육활동 sns 아산 하나유치원 교육활동 게시물과 전화 041-532-0065 문맥이 확인되는 instagram 검색 결과. 충남 아산시 하나유치원의 교육활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "a0cec474",
+          "extractedAt": "2026-06-30T23:59:59.980Z",
+          "structuredFields": {
+            "kindergartenName": "하나유치원",
+            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DOfLpqlkU4w%22+%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0065%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.980Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9b1edbf4",
+        "kindergartenId": "1ecec08c-fd35-b044-e053-0a32095ab044",
+        "title": "배방 하나유치원 보내고 느낀 솔직후기",
+        "url": "https://blog.naver.com/PostView.naver?blogId=wlgus931026&logNo=224282944166",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/HANA_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향...",
+        "summary": "배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/HANA_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T14:45:33.520Z",
+        "relevanceScore": 9,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "4cb70611",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=wlgus931026&logNo=224282944166",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=wlgus931026&logno=224282944166",
+          "normalizedText": "배방 하나유치원 보내고 느낀 솔직후기 15 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향... 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래... 배방 하나유치원 충남 아산시 배방읍 모산로126번길 17-5운영시간 7:30-19:30☎ 041-532-0065홈페이지https://www.instagram.com/hana_5320065 안녕하세요 투준마미 입니다. 너무 좋은 곳인데 아직 많이 알려지지 않은 것 같아서제가 직접 소문내러 왔어요!4세 아이를 둔 부모님들이라면한 번쯤 꼭 고민하게 되는 선택, 바로 유치원 vs 어린이집이죠큰 방향을 정했다고 해도 막상 세부적으로 어디를 보내야 할지 고민이 정말 많으실 거예요,저 역시 6살,5살 두 아이를 키우면서이 부분이 가장 큰 고민 중 하나였는데요,여러 고민 끝에 \" 배방 하나유치원\" 을 선택했고지금은 정말 만족하며 보내고 있습니다;)그래서 오늘은 제가 왜 하나유치원을 선택하게 되었는지,그 이유를 하나씩 자세히 소개해보려고 해요! 유치원 내부 모습 배방 하나유치원 내부 모습이에요.직접 촬영한 사진은 아니고, 검색했을 때 나오는 이미지를 참고했어요!작년에 리모델링을 해서 전체적으로 우드톤이라 분위기가 정말 따뜻하고,깔끔하고 쾌적한 느낌이 인상적이었어요.저는 상담 때문에 오전 11시쯤 방문했는데요,그 시간대에 햇살이 정말 잘 들어와서 공간이 더 밝고 온화하게 느껴지더라고요.덕분에 첫인상이 훨씬 좋았던 것 같아요.방문 예정이신 어머님들께는 오전 시간대 방문을 꼭 추천드리고 싶어요;)채광맛집 입니다ㅋㅋ 하나 유치원을 선택한 이유 본론으로 들어가서, 제가 배방 하나유치원을 선택한 이유!많이 궁금하셨쬬? 지금부터 이야기해볼게요 ☑️ 유치원이기 때문에 제가 가장 먼저 고민했던 부분은 바로 유치원 vs 어린이집 이었어요.요즘 유보통합이 진행되고 있긴 하지만, 아직까지는 유치원이 조금 더 '교육적인' 느낌이 강하다고 생각했어요실제로 큰 어린이집들도 여러 곳 직접 방문해서 상담도 받아보고 설명도 들어봤는데요, 전체적으로 교육보다는 보육 중심, 그리고 활동 위주의 프로그램이 많다는 인상을 받았어요.☑️아이들 수가 적당해서 좋아요저는 사람이 많은 환경보다는 적당한 규모를 더 선호하는 편이에요.대형 기관도 방문해봤는데, 보조교사 없이 한 반에15~19명씩, 그것도 여러반이 운영되다 보니전체적으로 너무 복잡하고 정신없는 느낌을 받았어요.반면 배방 하나유치원은 전체적으로 따뜻하고 안정적인 분위기였고, 아이들 수도 적당해서 훨씬 여유롭다는느낌이 들었습니다.\" 큰 기관을 보내야 사회성이 길러진다\"는 이야기도종종 듣지만, 저는 꼭 그렇다고 생각하지는 않아요.적당한 인원 속에서도 충분히 또래 관계를 배우고사회성을 기를 수 있다고 느꼈고, 그 점에서도 만족하고 있습니다.☑️아이 중심 교육이라 더 맘에 들어요제가 가장 중요하게 생각했던 부분이 바로 '아이중심' 이라는 점이었어요.배방 하나유치원은 재롱잔치나 과도한 부모참여행사가 많지 않은데요, 처음에는 이런 부분이아쉬울수도 있지만 오히려 저는 이 점이 더 좋았습니다.재롱잔치를 준비하면서 아이들이 반복 연습을 해야 하는경우가 많은데, 그 과정이 아이를 위한 것인지어른을 위한 것인지 고민이 되더라고요.이곳은 그런 형식적인 행사보다는 아이들이 실제로 즐겁고 좋아하는 활동 위주로 운영되고, 부모 입장에서도 부담이 적어 훨씬 만족스러웠습니다.아이의 하루가 '보여주기'가 아니라 '경험'중심이라는 느낌이에요.☑️ 선생님들과의 소통이 정말 좋아요\"유치원 생활의 8할은 담임선생님이다\" 라는 말, 많이 들어보셨죠?그만큼 선생님의 역할이 중요한데요, 이 부분은 정말 만족도가 높은 부분입니다.선생님들께서 아이의 작은 변화까지 세심하게 살펴주시고, 자주 연락도 주셔서 아이가 어떻게 지내는지 항상 알 수 있어요.저도 처음 엄마다 보니 어려운 점이 많았는데,양육에 대해 함께 고민해주시고 조언도 해주셔서 큰 도움이 됐습니다.무엇보다 아이를 진심으로 예뻐해주시는 게 느껴져서 안심이 되더라고요.부모와의 소통이 잘 되니 아이 상태를 빠르게 파악할수 있고, 필요한 부분도 함께 맞춰갈 수 있다는점이 큰 장점이라고 느꼈습니다.☑️ 비용 부담이 적어서 좋아요유치원 비용도 중요한 부분인데요,배방 하나유치원은 한 학기 24만원 외에는 추가 비용이 거의 없어요.차량 운행 비용도 따로 없고,불필요한 추가 비용이 발생하지 않아서 부담 없이 보낼 수 있다는 점도 큰 장점입니다.또 하나 좋았던 점은 생일선물이나 각종 준비물을 따로 챙길 필요가 없다는 점이에요.어린이집 다닐 때는 매달 생일선물 준비하는 것도 은근 부담이었는데, 여기서는 그런 문화가없어서 훨씬 편하고 좋았습니다. 전체적으로 느낀 점? 아이를 보내면서 가장 크게 느낀 건 '편안함'이었어요.아이도 즐겁고, 부모도 부담이 적고, 선생님과의 소통도 원활한 곳.화려하거나 보여주기식 프로그램보다, 아이가 안정적으로 잘 지낼 수 있는 환경을찾고 계신 분들께는 충분히 좋은 선택지가 될 수 있을 것 같아요 하나유치원 충청남도 아산시 배방읍 모산로126번길 17-5 하나유치원 이 블로그의 체크인 이 장소의 다른 글 #배방하나유치원 #배방유치원추천 #탕정유치원추천#배방유치원 #탕정유치원 #일상 #소통 #육아맘",
+          "htmlSnapshotHash": "4cb70611",
+          "extractedAt": "2026-06-29T14:45:33.520Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "하나유치원",
+            "kindergartenAddress": "충청남도 아산시 모산로126번길 17-7",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%ED%95%98%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ],
-    "fa7e3e5c-5921-4647-9fcc-4ec79c68420b": [
+    "1ecec08c-ff02-b044-e053-0a32095ab044": [
       {
-        "id": "rev-631c9476",
-        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
-        "title": "아산 일심유치원 입학식 Instagram",
-        "url": "https://www.instagram.com/reel/DVSTopaAXO-/",
+        "id": "rev-ea50feb2",
+        "kindergartenId": "1ecec08c-ff02-b044-e053-0a32095ab044",
+        "title": "룸비니 글로벌 유치원  1학기 부모참여수업  다녀온 후기!!",
+        "url": "https://blog.naver.com/a841024/224304154040",
+        "source": "naver_blog",
+        "sourceName": "북적북적 여섯식구의 아찔한 일상",
+        "snippet": "언제나 응원해 본다 더불어!!~ 진상님 너두 홧팅!!~~ # 아산 룸비니 글로벌 유치원 # 충남 제 1호 영유아 시범학교 # 아산 1등 유치원 # IB 프로젝트 교육중심 # 쉼이없는 유치원 / 초사동 숲 유치원",
+        "date": "2026-06-02",
+        "collectedAt": "2026-07-26T00:00:00.000Z"
+      }
+    ],
+    "1ecec08d-06c9-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-bd13f1ab",
+        "kindergartenId": "1ecec08d-06c9-b044-e053-0a32095ab044",
+        "title": "아산 아이세상유치원 신입원아모집 SNS",
+        "url": "https://www.instagram.com/p/DCWGuS8yWG8/",
         "source": "other",
-        "sourceName": "Instagram · 일심유치원",
-        "snippet": "ilsim_story 계정에서 일심유치원 입학식에서 원장선생님 동극공연, 신입생 참여, 담임선생님 원가 율동이 진행된 문맥이 확인되는 Instagram 릴.",
+        "sourceName": "Instagram · 아이세상유치원",
+        "snippet": "아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "충남 아산시 아이세상유치원의 신입원아모집 SNS 정보.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "admission",
-          "opening-ceremony"
+          "instagram",
+          "admission"
         ],
-        "date": "2026-02-27",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "content": "아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 Instagram 검색 결과다. 아이세상유치원 동명이 있어 전화번호와 원장부 주소를 기준으로 충남 아산시 아이세상유치원에 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:45:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "aecc2c90",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "bc8973d6",
         "structuredFields": {
-          "kindergartenName": "일심유치원",
-          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+          "kindergartenName": "아이세상유치원",
+          "kindergartenAddress": "충청남도 아산시 온천대로 1105-17",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DVSTopaAXO-%22+%22ilsim_story%22",
+          "searchUrl": "https://www.google.com/search?q=%22DCWGuS8yWG8%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0271%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": false
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DVSTopaAXO-/",
-          "normalizedUrl": "www.instagram.com/reel/dvstopaaxo-",
-          "normalizedText": "아산 일심유치원 입학식 instagram ilsim_story 계정에서 일심유치원 입학식에서 원장선생님 동극공연, 신입생 참여, 담임선생님 원가 율동이 진행된 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "aecc2c90",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DCWGuS8yWG8/",
+          "normalizedUrl": "www.instagram.com/p/dcwgus8ywg8",
+          "normalizedText": "아산 아이세상유치원 신입원아모집 sns 아이세상유치원 신입원아모집과 전화 041-532-0271 문맥이 확인되는 instagram 검색 결과. 충남 아산시 아이세상유치원의 신입원아모집 sns 정보.",
+          "htmlSnapshotHash": "bc8973d6",
+          "extractedAt": "2026-06-30T23:45:00.000Z",
           "structuredFields": {
-            "kindergartenName": "일심유치원",
-            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+            "kindergartenName": "아이세상유치원",
+            "kindergartenAddress": "충청남도 아산시 온천대로 1105-17",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DVSTopaAXO-%22+%22ilsim_story%22",
+            "searchUrl": "https://www.google.com/search?q=%22DCWGuS8yWG8%22+%22%EC%95%84%EC%9D%B4%EC%84%B8%EC%83%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22041-532-0271%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": false
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedAt": "2026-06-30T23:45:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-5c9078d0",
-        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
-        "title": "아산 일심유치원 도자기 활동 Instagram",
-        "url": "https://www.instagram.com/reel/DZKguACBwLm/",
+        "id": "rev-99852474",
+        "title": "아이세상유치원, 아산 아이세상 유치원에서의 행복한 첫 경험",
+        "url": "https://blog.naver.com/trerptiptm03022/224014224063",
+        "source": "naver_blog",
+        "sourceName": "몽실 s 일상기록",
+        "snippet": "평판과 후기 저도 유치원 선택에 앞서 많은 후기를 찾아보았는데요, 아산 아이세상 유치원에 대한 긍정적인 평가가 많았어요. 다른 부모님들이 아이들의 행복한 모습을 본받아 직접 이곳을 추천하는 이유도...",
+        "date": "2025-09-19",
+        "collectedAt": "2026-07-26T08:27:42.550609",
+        "kindergartenId": "1ecec08d-06c9-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-99852467",
+        "title": "아이세상유치원, 아산유치원에서 아이의 꿈을 키워요",
+        "url": "https://blog.naver.com/mnnm1r3nt52/224002543167",
+        "source": "naver_blog",
+        "sourceName": "민재카페일상",
+        "snippet": "저희도 다른 부모들의 후기나 소문을 듣고 선택하게 되었습니다! 기대 이상으로 아이가 안심하고... 저와 같은 부모님들 께 적극 추천합니다!  #아산유치원 #아산아이세상유치원 #아산득산동유치원 #아이세상유치원",
+        "date": "2025-09-10",
+        "collectedAt": "2026-07-26T08:27:42.550590",
+        "kindergartenId": "1ecec08d-06c9-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-06ca-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-36065a44",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "kindergartenName": "아해랑유치원",
+        "title": "아산 아해랑유치원 졸업과 수료 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DGdDsozhahz/",
         "source": "other",
-        "sourceName": "Instagram · 일심유치원",
-        "snippet": "ilsim_story 계정에서 일심유치원 원아들이 나만의 하나뿐인 도자기 활동을 한 문맥이 확인되는 Instagram 릴.",
+        "sourceName": "Instagram · 아해랑유치원",
+        "snippet": "아해랑유치원 계정 게시물 검색 결과에서 졸업과 수료를 맞이한 친구들의 새로운 시작을 축하하는 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "graduation",
+          "completion"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:54.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "36065a44",
+        "structuredFields": {
+          "kindergartenName": "아해랑유치원",
+          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGdDsozhahz%22%20%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "아해랑유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGdDsozhahz/",
+          "normalizedUrl": "www.instagram.com/reel/dgddsozhahz",
+          "normalizedText": "아산 아해랑유치원 졸업과 수료 instagram reel 아해랑유치원 계정 게시물 검색 결과에서 졸업과 수료를 맞이한 친구들의 새로운 시작을 축하하는 단서가 확인된다.",
+          "htmlSnapshotHash": "36065a44",
+          "extractedAt": "2026-07-02T23:59:54.000Z",
+          "structuredFields": {
+            "kindergartenName": "아해랑유치원",
+            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGdDsozhahz%22%20%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "아해랑유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:54.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-8ab41e9d",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "아산 아해랑유치원 윷놀이대회 Instagram",
+        "url": "https://www.instagram.com/reel/DFfRnpZhmhK/",
+        "source": "other",
+        "sourceName": "Instagram · 아해랑유치원",
+        "snippet": "Instagram 검색 결과에서 아해랑유치원 윷놀이 대회와 아산유치원, 천안아산유치원 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "ceramics",
+          "culture-activity",
           "classroom-activity"
         ],
-        "date": "2026-06-04",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "34f33fac",
-        "structuredFields": {
-          "kindergartenName": "일심유치원",
-          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZKguACBwLm%22+%22ilsim_story%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZKguACBwLm/",
-          "normalizedUrl": "www.instagram.com/reel/dzkguacbwlm",
-          "normalizedText": "아산 일심유치원 도자기 활동 instagram ilsim_story 계정에서 일심유치원 원아들이 나만의 하나뿐인 도자기 활동을 한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "34f33fac",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "일심유치원",
-            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZKguACBwLm%22+%22ilsim_story%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-24e05f65",
-        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
-        "title": "아산 일심유치원 농장 활동 Instagram",
-        "url": "https://www.instagram.com/reel/DYodXVGzBRP/",
-        "source": "other",
-        "sourceName": "Instagram · 일심유치원",
-        "snippet": "일심유치원 해시태그와 계정 문맥에서 4세 꽃초롱반 원아들이 첫 농장 활동을 한 내용이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "farm-activity",
-          "field-trip"
-        ],
-        "date": "2026-06-06",
+        "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "9e1e8143",
+        "evidenceChecksum": "2b2407da",
         "structuredFields": {
-          "kindergartenName": "일심유치원",
-          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+          "kindergartenName": "아해랑유치원",
+          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DYodXVGzBRP%22+%22일심유치원%22",
+          "searchUrl": "https://www.google.com/search?q=%22DFfRnpZhmhK%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYodXVGzBRP/",
-          "normalizedUrl": "www.instagram.com/reel/dyodxvgzbrp",
-          "normalizedText": "아산 일심유치원 농장 활동 instagram 일심유치원 해시태그와 계정 문맥에서 4세 꽃초롱반 원아들이 첫 농장 활동을 한 내용이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "9e1e8143",
+          "canonicalUrl": "https://www.instagram.com/reel/DFfRnpZhmhK/",
+          "normalizedUrl": "www.instagram.com/reel/dffrnpzhmhk",
+          "normalizedText": "아산 아해랑유치원 윷놀이대회 instagram instagram 검색 결과에서 아해랑유치원 윷놀이 대회와 아산유치원, 천안아산유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "2b2407da",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "일심유치원",
-            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+            "kindergartenName": "아해랑유치원",
+            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DYodXVGzBRP%22+%22일심유치원%22",
+            "searchUrl": "https://www.google.com/search?q=%22DFfRnpZhmhK%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1203,6 +1291,540 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-8e0e4a89",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "아산 아해랑유치원 신정호 체험 Instagram",
+        "url": "https://www.instagram.com/reel/DIvGos-B_aM/",
+        "source": "other",
+        "sourceName": "Instagram · 아해랑유치원",
+        "snippet": "Instagram 검색 결과에서 아해랑유치원 친구들이 충남 1호 지방정원 신정호 개원식에 다녀온 체험활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "field-trip",
+          "nature-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "3b14f928",
+        "structuredFields": {
+          "kindergartenName": "아해랑유치원",
+          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DIvGos-B_aM%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DIvGos-B_aM/",
+          "normalizedUrl": "www.instagram.com/reel/divgos-b_am",
+          "normalizedText": "아산 아해랑유치원 신정호 체험 instagram instagram 검색 결과에서 아해랑유치원 친구들이 충남 1호 지방정원 신정호 개원식에 다녀온 체험활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "3b14f928",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아해랑유치원",
+            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DIvGos-B_aM%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-e42437aa",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "충남 아산 아해랑유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/p/C2MFvywh0c9/",
+        "source": "other",
+        "sourceName": "Instagram · ahr_kindergarten",
+        "snippet": "Instagram 검색 결과에서 2024학년도 아해랑유치원 원아모집, 충남유치원, 아산 지역 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "d276e6ea",
+        "structuredFields": {
+          "kindergartenName": "아해랑유치원",
+          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C2MFvywh0c9%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C2MFvywh0c9/",
+          "normalizedUrl": "www.instagram.com/p/c2mfvywh0c9",
+          "normalizedText": "충남 아산 아해랑유치원 원아모집 instagram instagram 검색 결과에서 2024학년도 아해랑유치원 원아모집, 충남유치원, 아산 지역 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "d276e6ea",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아해랑유치원",
+            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C2MFvywh0c9%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-ef3e22d0",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "아산 아해랑유치원 도미노 협동놀이 Instagram",
+        "url": "https://www.instagram.com/reel/DEKPskuhr6s/",
+        "source": "other",
+        "sourceName": "Instagram · 아해랑유치원",
+        "snippet": "Instagram 검색 결과에서 아해랑유치원 친구들이 도미노대전 활동으로 배려와 협동을 경험한 문맥과 아산유치원 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "classroom-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "1e97db05",
+        "structuredFields": {
+          "kindergartenName": "아해랑유치원",
+          "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DEKPskuhr6s%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DEKPskuhr6s/",
+          "normalizedUrl": "www.instagram.com/reel/dekpskuhr6s",
+          "normalizedText": "아산 아해랑유치원 도미노 협동놀이 instagram instagram 검색 결과에서 아해랑유치원 친구들이 도미노대전 활동으로 배려와 협동을 경험한 문맥과 아산유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "1e97db05",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아해랑유치원",
+            "kindergartenAddress": "충청남도 아산시 송곡남길 82-5",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DEKPskuhr6s%22+%22%EC%95%84%ED%95%B4%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-333b9a87",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "아산 아해랑유치원 6살, 우리 아이 성장기",
+        "url": "https://blog.naver.com/poohhj2/224264696639",
+        "source": "naver_blog",
+        "sourceName": "너나들이",
+        "snippet": "좋겠어요 :) #아산유치원 #아산유치원추천 #충남아산유치원 #아해랑유치원 #염치읍유치원 #아산어린이집유치원 #아산6살유치원 #아산유치원후기 #아산유치원선택 #체험활동유치원 #놀이중심유치원...",
+        "date": "2026-04-25",
+        "collectedAt": "2026-07-26T00:00:00.000Z"
+      },
+      {
+        "id": "rev-1445-ewc5",
+        "kindergartenId": "1ecec08d-06ca-b044-e053-0a32095ab044",
+        "title": "아산 아해랑유치원을 소개해요.",
+        "url": "https://blog.naver.com/poohhj2/224020461445",
+        "source": "naver_blog",
+        "sourceName": "너나들이",
+        "snippet": "글을 쓰는 이유는 작년에 검색하고 찾아보는데 정보가 없더라구요..실제 다니는 학부님 후기가 찐이니깐요❤️ 아해랑유치원은 아산 염치읍에 위치해 있어요. 은행나무길 쪽에 있다고 생각하심 될 것 같아요....",
+        "date": "2025-09-24",
+        "collectedAt": "2026-02-18T06:13:58.461Z",
+        "relevanceScore": 6
+      }
+    ],
+    "1ecec08d-0b34-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-15a345dc",
+        "kindergartenId": "1ecec08d-0b34-b044-e053-0a32095ab044",
+        "title": "26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁",
+        "url": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224055857818",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입...",
+        "summary": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T14:32:47.905Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "38c26ef1",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224055857818",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=nunulovemom&logno=224055857818",
+          "normalizedText": "26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입... 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명... 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 오늘 있었던 아주나 유치원 입학설명회유치원 측에서는 입학설명회가 아니라유치원 환경을 둘러보는 시간이라고 하셨지만,많은 질문들이 있어 간단한 설명회를 준비했다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 지난주 목요일까지 예약한 사람들에게 진행된 입학설명회(?)를 다녀왔는데요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아주나 유치원의 이름부터 소개해 주셨는데뭔가 처음 유치원을 보내는 엄마로써뭉클한 시간이였어요~아주나 유치원은아낌없이 주는 나무의 줄임말이라고 하셨고 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 아이들에게 아낌없이 주는 나무가 되고 싶다고하셨죠아. 주. 나 유치원다닐까? 😘 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 유치원과 어린이집을 고민하면서 그냥 방문만 해볼까라고 생각했던 뉴뉴맘에게아주나 유치원의 환경은 여길 반드시 다녀야겠다 라는 마음을 들기에 충분했어요 3층에 위치한 놀이 공간 조리실과 놀이공간 ai 를 추가한 여러 장난감들과 코딩들 ai놀이터와 로봇!! 정글짐이 있는 유치원이라니....😍깨끗한 조리환경과 로봇ai 놀이터 그리고 대망의 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 수. 영. 장.수영장은 아이들이 여름철 물놀이를 하는 장소로 이용되고 7세부터 외부 수영장에서 수영을 배운다고 하셨는데 그래도 뭔가 엄마맘에 기대기대😍 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 주변에서 계단도 너무 많고 위험해서 아주나 유치원을 비추한 분도 계셨는데제가 보기엔5세(만 3세) 교실은 1층에 있고 강당에서는 활동을 할 때 모이는 거라선생님 지도하에 움직이면 충분히 안전하다고 생각이 들었어요 생각보다 정말 다양한 활동들이 진행되고 있고교실 환경에서 아이들의 행복이 묻어져 나오는 거 같아보는 엄마 마음에도 흡족했어요 5세반 교육실은 대체로 비슷했고5세 6세 7세 모두 쾌적하고 넓은 공간에서 생활할 수 있겠다는 생각이 들었어요 ~ ( 각 반마다 화장실이 붙어있어서그 점도 만족스러웠어요) 학급수와 정원 입학설명회가 시작되면서 q&a에 대한 이야기들이시작되었는데요 ~ 가장 먼저 학급수는 만3세 64명 만4세 105명 만5세 104명 이렇게 구성되어 있었고 선생님은 반별 1분씩과방과 후 교사 선생님 8분이 계시다고 하셨어요 아산 아주나 유치원 입학설명회 우선 모집 꿀팁 그리고 아이와 동반하지 않는 걸 권유한 이유를설명해 주셨는데요유아 보육을 할 수 있지만 엄마와 떨어져서울게 되어 유치원의 첫 이미지를 안 좋게 될 수 있고,방문 후 가고 싶은데 못 가면 실망하고오래 강의를 할 수 없기에 그렇다고 하셨어요(급 납득...) ⬇️ 이전 세종유치원과 비교에서이 부분을 별로라고 했는데 좀 죄송해진 뉴뉴맘🤣 26년 신입학 아산 세종 유치원 아주나 유치원 입학설명회 신청 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 요즘 가장 뜨거... blog.naver.com 또, 입장과 동시에 빵을 제공해 주셔서호감도도 급상승하는 뉴뉴맘의 개인적인 마음이었죠 빵도 제공해 주신 설명회(따뜻하다) 다음 주 월요일 (25년 11월 3일)로 모집요강이부모가 볼 수 있게 유보통합사이트에 올라온다고 했는데요 intro > 유보통합 유보통합포털 입소·입학 신청사이트 들어가기 (통합 로그인) 통합 검색하기 enter.childinfo.go.kr 유치원 앱에 이 기간 동안 (유아 모집 기간)유치원 관련 정보를 볼 수 있게 회원가입을 승인해 주신다고 하셨어요👍🏻 아주나유치원 입학설명회에 다녀왔어요 ~ #빵 과 #안내문 을 제공받았고 #원내환경 을 둘러보았습니다 #강당 과 #ai놀이터 #로봇 #수영장 까지 👍👍 시설보면 꼭 다녀야 할것같은 #아주나유치원 자세한 글은 오늘 저녁 24:00블로그 글 올릴께요 😍 다자녀 혜택에 대한 모든것과 우선모집 꿀팁까지 !!! 이웃신청 부탁드려요 🙏🙏#아산유치원 #아산아주나유치원 m.blog.naver.com 아주나 유치원의 우선 모집에는 1. 다자녀2. 통학차량 미이용3. 통학차량 이용 등이 많은 분들이 속하는 내용으로 있었는데요~다자녀는 재학생의 동생을 뜻하며 만4세, 만5세를올라가는 6세 7세 형아나 누나를 둔 동생을의미했어요 (⭐️졸업생은 속하지 않는데요⭐️) 통학차량 미이용으로 지원하고 합격하면 졸업 시까지 이용하지 않는다는 서약서를 작성해야 하고통학차량은 현재 🔽 아파트를 돈다고 하셨어요 운영시간은 12:30 분까지가 정규시간이고 추가시간은 방과 후 시간으로 들어가며 아이들은 3:20분에 통학차량을 탄다고 하셨어요 ⬇️ 입학식 날 모든 엄마들이 챙기는 꽃다발 (젤저렴) 킨더조이 사탕 비누꽃다발, 블루, 1개 - 조화 | 쿠팡 현재 별점 4.7점, 리뷰 136개를 가진 킨더조이 사탕 비누꽃다발, 블루, 1개! 지금 쿠팡에서 더 저렴하고 다양한 조화 제품들을 확인해보세요. link.coupang.com 츄파춥스 캔디곰 사탕꽃다발 학예회 발표회 연주회 축하꽃다발 - 초콜릿/사탕 꽃다발 | 쿠팡 쿠팡에서 츄파춥스 캔디곰 사탕꽃다발 학예회 발표회 연주회 축하꽃다발 구매하고 더 많은 혜택을 받으세요! 지금 할인중인 다른 초콜릿/사탕 꽃다발 제품도 바로 쿠팡에서 확인할 수 있습니다. link.coupang.com 최대 저녁 6:30분까지 운영 중 입학금은 따로 없고 월 4만원이 부모 부담료전부라고 하셨죠 추가적으로 더 많은 말씀을 하셨는데~어머니들이 기본적으로 궁금해 할 사항을적어봤어요~ 더 궁금하신 부분은 댓글로 문의해 주시면 성실히답해드리겠습니다 ❤️ 아주나유치원 충청남도 아산시 배방읍 용연동길 48 이 블로그의 체크인 이 장소의 다른 글 이글 읽으신 모든분들아주나 유치원에 합격하시길진심으로 기도할께요!🙏🏻 ⬇️ 세종유치원 입학설명회 26년도 아산 세종유치원 입학설명회 아주나 비교! 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘🙋♀️ 세종유치원은 입학설명회 없이 유치원 원내환경공... m.blog.naver.com ⬇️ 26년도 유치원 우선모집 신청 방법 오늘, 유치원 우선모집 시작! 놓치지 말아야할 요소들! 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 9:00부터 ... blog.naver.com ⬇️ 우선모집 합격여정 모든것 유치원 우선 모집 합격 후기 합격까지의 여정 안녕하세요 뉴뉴맘입니다😍 어제 유치원 우선 모집 합격 발표가 나고 오늘 등록 여부를 결정하는 날인데... blog.naver.com ⬇️ 우선모집 탈락시 일반모집 모든것! 유치원 우선모집 탈락 후 일반모집 지원 일정 22년 11월 36개월을 맞이한 내년이면 5세가 되는 뉴뉴맘이에요 11월 부터 시작한 유치원 모집일정과 입학설... m.blog.naver.com ⬇️ 우선모집합격후 진행한 설명회(충격주의) 신학기 유치원 입학을 준비하는 5세맘 충격이야기 유치원 우선모집에 운 좋게 합격하고, 며칠 전엔 입학설명회도 다녀왔어요☺️ 솔직히 저는 “5살이면 당연... m.blog.naver.com ⬇️ 유치원 입학 한 달 후기 11월생 뉴뉴 유치원 입학 한 달 솔직 후기 | 내향적인 아이 적응기 안녕하세요 뉴뉴맘이에요 😊 뉴뉴가 유치원 입학한 지 벌써 한 달이 지났어요! 설레기도 하고 걱정도 많... m.blog.naver.com ⬇️ 하루전날까지 고민 유치원 vs 어린이집 차이 입학식전 2월 28일까지 고민했던 엄마의 솔직 후기 안녕하세요 뉴뉴맘이에요 😊 저 고백할게요. 저는 2월 28일까지 유치원이냐 어린이집이냐 고민했어요. 입... m.blog.naver.com",
+          "htmlSnapshotHash": "38c26ef1",
+          "extractedAt": "2026-06-29T14:32:47.905Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "아주나유치원",
+            "kindergartenAddress": "충청남도 아산시 용연동길 48",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-06b339aa",
+        "kindergartenId": "1ecec08d-0b34-b044-e053-0a32095ab044",
+        "title": "26년도 아산 세종유치원 입학설명회 아주나 비교!",
+        "url": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224057573551",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m....",
+        "summary": "뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-29T14:32:47.600Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "1ad6af3e",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=nunulovemom&logNo=224057573551",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=nunulovemom&logno=224057573551",
+          "normalizedText": "26년도 아산 세종유치원 입학설명회 아주나 비교! 19 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.... 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치... 뜨거운 입학설명회?? 입학전방문을 마친 뉴뉴맘!세종유치원은 입학설명회 없이 유치원 원내환경공개를 해주셨어요 #아산세종유치원 입학설명회에 다녀왔어요 현재는 원내환경 공개만 하고 있는 사항인데 안내문과 방문한 아이들을 위한 반짝이는 반지를 준비해 주셨죠 #아주나유치원 과 차이점은 각 층별로 화장실이 하나씩있고 강당이 좀 작은 느낌 #실외놀이터 는 크고 외부 활동이 좀더 많다는 장점이있었어요 m.blog.naver.com 생각보다 많은 부모님이 찾아오셨고,아이동반 가능하다는 말에아이들도 정말 많이 참여했답니다 26년도 아산 세종유치원 입학설명회 세종유치원은 모집인원이 아주나 유치원보다 많았는데요 26년도 아산 세종유치원 입학설명회 아주나 유치원보다 5세 (만3세) 가 한반 더 있었습니다 아산 세종유치원 5세반 내부환경 교구도 충분하고 반마다 세면대도 있었어요 층마다 위치된 1개의 화장실 아주나 유치원이랑 차이점은아주나 유치원은 2반 사이에 하나씩 화장실이 있어반마다 화장실이 연결되어 있었어요 세종유치원은 층마다 하나씩 화장실이 있어'똥 눌때 어떻하지 ...?''아이마다 선생님이 가주시나..?'라는 생각이 들었어요 하루 일과표가 있었는데 거기에 화장실 가는 시간이 따로 있긴했지만조금은 걱정이 될 수 있는 요소 였어요 물론 아이들을 키우다 보니 놀고 있거나 활동하고 있으면 참다가 화장실 가는 시간쯤단체로 가긴 하겠더라구요 ~ (어린이집 참관 활동시에도 화장실을 단체로 감)큰 문제가 되지 않을 수도 있지만중요하신 분들도 계실수 있기에 🫰 아산 세종유치원 6세반 교실 6세 교실 5세 교실 7세교실 제가 봤을때 아직 그단계의 아이들을 키우지 않아서 그런지 모르지만크게 차이를 잘 모르겠더라구요 15개월 아기와 함께 갔지만7세반에서도 잘 놀았습니다 😄 아산 세종유치원 7세반 교실 전반적으로 세종유치원이나 아주나 유치원이나인기있는 유치원임을 느낄수있게반구성이 깔끔하고 교육적이고좋다고 느껴졌어요 아산 세종 유치원 계단 주변분들에게 세종유치원의 단점을 들을때계단이 위험해서 선생님들에게아이가 자주 꾸지람을 듣게 된다는 점을듣기도 했었는데아이랑 걸어보니 양말을 신으면아이가 미끄러워지긴 하더라구요 😭구조를 개선하면 될꺼 같다는 생각이든 뉴뉴맘‼️ 아산 세종 유치원 강당 아산 세종 유치원 강당 강당은 4층에 위치되어 있고 아주나보단좀 좁은 느낌이 들긴 했어요하지만 7세는 바이올린을 배울수 있다는 ⭐️핫소식⭐️ 7세때 배우는 바이올린 악기를 따로 살 필요도 없이 다 준비가 되어있어 더 마음에 드는 뉴뉴맘이였죠 😘 아산 세종유치원 다도실 특별하게 ai 환경이 되어 있어다도도 배우고 테블릿교육도 한다고 하셨어요 (인당 1개씩 준비완료 되어있음) 아산 세종 유치원 특색교육 아산 세종유치원 특색교육 대표적으로 진행되는 특색교육은위와 같았고 아산 세종 유치원 하루일과표 방과후 특성 프로그램과 하루일과표는 위와 같았죠 ~~ 아산 세종 유치원 모집인원 아주나 유치원은 64명 만3세반(5세) 모집인원세종유치원은 77명의 모집인원을 두고 있었어요 아산 세종유치원 우선모집 대상자 생각보다 아주나 유치원이나 세종유치원이나우선모집에 해당되시는 분들이 많아서1지망이 아닌 우선모집으로 많은분들이신청할 예정이라고 하셨죠 ☺️이 블로그를 보시는 이웃님들의 성공적 유치원 입학을기원하며 🙏🙏🙏🙏유치원 입학소식 추후엔 5세 학원 추천등다양한 자료를 공유할테니이웃추가 부탁드려요 😍😍😍🙇♀️🙇♀️⬇️ 아주나유치원 입학설명회 26년도 아산 아주나 유치원 입학설명회에서 들은 우선 모집 꿀팁 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 있었던 아... m.blog.naver.com ⬇️ 11월 3일에 진행된 우선모집 진행법! 오늘, 유치원 우선모집 시작! 놓치지 말아야할 요소들! 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 오늘 9:00부터 ... blog.naver.com ⬇️ 우선모집 합격여정 모든것 유치원 우선 모집 합격 후기 합격까지의 여정 안녕하세요 뉴뉴맘입니다😍 어제 유치원 우선 모집 합격 발표가 나고 오늘 등록 여부를 결정하는 날인데... blog.naver.com ⬇️ 우선모집 탈락시 일반모집 모든것!! 유치원 우선모집 탈락 후 일반모집 지원 일정 22년 11월 36개월을 맞이한 내년이면 5세가 되는 뉴뉴맘이에요 11월 부터 시작한 유치원 모집일정과 입학설... m.blog.naver.com ⬇️ 우선모집 합격후 진행한 설명회 후기(충격주의) 신학기 유치원 입학을 준비하는 5세맘 충격이야기 유치원 우선모집에 운 좋게 합격하고, 며칠 전엔 입학설명회도 다녀왔어요☺️ 솔직히 저는 “5살이면 당연... m.blog.naver.com ⬇️ 유치원 입학 한 달 후기 11월생 뉴뉴 유치원 입학 한 달 솔직 후기 | 내향적인 아이 적응기 안녕하세요 뉴뉴맘이에요 😊 뉴뉴가 유치원 입학한 지 벌써 한 달이 지났어요! 설레기도 하고 걱정도 많... m.blog.naver.com",
+          "htmlSnapshotHash": "1ad6af3e",
+          "extractedAt": "2026-06-29T14:32:47.600Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "아주나유치원",
+            "kindergartenAddress": "충청남도 아산시 용연동길 48",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%84%EC%A3%BC%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%95%84%EC%82%B0+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0b35-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-3057-oa43",
+        "kindergartenId": "1ecec08d-0b35-b044-e053-0a32095ab044",
+        "title": "뽐순이가 곧 졸업 할 아산 하늘유치원 후기",
+        "url": "https://blog.naver.com/bom222-/224055203057",
+        "source": "naver_blog",
+        "sourceName": "오늘도 행복한 뽐순이네",
+        "snippet": "곳이 아산 하늘유치원이였고 지금까지도 만족하며 잘 보내고 있음. 그래서 아산 하늘유치원에 보내면서 느꼈던 점을 포스팅 하려함. 참고로 지극히 주관적인 포스팅임. 하늘유치원 정문 그다지 넓지 않지만...",
+        "date": "2025-10-27",
+        "collectedAt": "2026-02-18T06:13:58.461Z",
+        "relevanceScore": 7
+      }
+    ],
+    "2ef67bb6-a387-427d-a273-3d101215e9a1": [
+      {
+        "id": "rev-99852527",
+        "title": "2025 아산 천안 세종, 아주나, 병설 유치원 입학 설명회 시즌...",
+        "url": "https://blog.naver.com/nunulovemom/224021034806",
+        "source": "naver_blog",
+        "sourceName": "HELLO❤️",
+        "snippet": "어린이집 같은 경우 첫째 때는 넓은 환경에 매료되어 선택했는데, 막상 다녀보니 또 부족한 부분이... ⬇️ 세종 유치원, 아주나 유치원 입학설명회 ⬇️ ♨️ 25년 10월 14일 부터 열리는 유치원 입학안내 내용...",
+        "date": "2025-09-25",
+        "collectedAt": "2026-07-26T08:29:21.020272",
+        "kindergartenId": "2ef67bb6-a387-427d-a273-3d101215e9a1"
+      }
+    ],
+    "374b81d9-547b-4c71-b289-13b3c277b753": [
+      {
+        "id": "rev-d85a1289",
+        "kindergartenId": "374b81d9-547b-4c71-b289-13b3c277b753",
+        "title": "충남 아산세교유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/CyQ202wP4CP/",
+        "source": "other",
+        "sourceName": "Instagram · 아산세교유치원",
+        "snippet": "Instagram 검색 결과에서 아산세교유치원, 부모참여수업, 의좋은형제 활동 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "972d0a08",
+        "structuredFields": {
+          "kindergartenName": "아산세교유치원",
+          "kindergartenAddress": "충청남도 아산시 배방읍 세교중앙1길 9",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyQ202wP4CP%22+%22%EC%95%84%EC%82%B0%EC%84%B8%EA%B5%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyQ202wP4CP/",
+          "normalizedUrl": "www.instagram.com/p/cyq202wp4cp",
+          "normalizedText": "충남 아산세교유치원 부모참여수업 instagram instagram 검색 결과에서 아산세교유치원, 부모참여수업, 의좋은형제 활동 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "972d0a08",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아산세교유치원",
+            "kindergartenAddress": "충청남도 아산시 배방읍 세교중앙1길 9",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyQ202wP4CP%22+%22%EC%95%84%EC%82%B0%EC%84%B8%EA%B5%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "77522a5c-0ff4-4eb4-9648-33ebaf7740af": [
+      {
+        "id": "rev-0472-rje9",
+        "kindergartenId": "77522a5c-0ff4-4eb4-9648-33ebaf7740af",
+        "title": "아산 갈산초등학교 병설유치원 조카 졸업식",
+        "url": "https://blog.naver.com/naya4437/223303790472",
+        "source": "naver_blog",
+        "sourceName": "바람이 살랑살랑",
+        "snippet": "내 사랑 우리 이쁜 조카 졸업을 축하해  건강하게 쑥쑥 커줘서 고마워 여기까지 제1회 아산 갈산초등학교 병설유치원 졸업식 후기였습니다 :) 졸업식 앞둔 아가들 모두 축하하고 즐거운 연말 보내세요",
+        "date": "2023-12-26",
+        "collectedAt": "2026-02-18T06:13:58.461Z"
+      }
+    ],
+    "7bd3563c-ce2b-4161-ae7e-3a43a150bba5": [
+      {
+        "id": "rev-ab51812f",
+        "kindergartenId": "7bd3563c-ce2b-4161-ae7e-3a43a150bba5",
+        "title": "아산 한들물빛유치원 보호자 공개수업 X 소식",
+        "url": "https://x.com/onasinmoon/status/2070400379473531139",
+        "source": "other",
+        "sourceName": "X · 온아신문",
+        "snippet": "한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 X 검색 결과.",
+        "summary": "아산 한들물빛유치원의 보호자 공개수업 X 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x"
+        ],
+        "content": "한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 X 검색 결과. 학부모 참여 공개수업 정보로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T19:30:00.000Z",
+        "relevanceScore": 3,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "b99d9530",
+        "structuredFields": {
+          "kindergartenName": "한들물빛유치원",
+          "kindergartenAddress": "충청남도 아산시 탕정면 한들물빛1로 48",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%222070400379473531139%22+%22%ED%95%9C%EB%93%A4%EB%AC%BC%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "한들물빛유치원 원명이 고유하고 아산 탕정 원장부 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/onasinmoon/status/2070400379473531139",
+          "normalizedUrl": "x.com/onasinmoon/status/2070400379473531139",
+          "normalizedText": "아산 한들물빛유치원 보호자 공개수업 x 소식 한들물빛유치원 보호자 공개수업과 학부모가 유아들의 배움 과정을 함께 봤다는 문맥이 확인되는 x 검색 결과. 아산 한들물빛유치원의 보호자 공개수업 x 검색 결과.",
+          "htmlSnapshotHash": "b99d9530",
+          "extractedAt": "2026-06-30T19:30:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "한들물빛유치원",
+            "kindergartenAddress": "충청남도 아산시 탕정면 한들물빛1로 48",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%222070400379473531139%22+%22%ED%95%9C%EB%93%A4%EB%AC%BC%EB%B9%9B%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "한들물빛유치원 원명이 고유하고 아산 탕정 원장부 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T19:30:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852403",
+        "title": "한들물빛유치원, 2025학년도 교육과정 설명회 실시",
+        "url": "https://blog.naver.com/asandailynew/223706757480",
+        "source": "naver_blog",
+        "sourceName": "아산데일리 [공식 뉴스]",
+        "snippet": "이날 교육과정 설명회는 2025학년도 한들물빛유치원 교육과정의 전반적인 운영에 대해 안내하는... 한들물빛유치원은 시설 참관의 날을 별도로 운영하여 입학 전 신입 유아들의 적응을 돕고 신입...",
+        "date": "2024-12-27",
+        "collectedAt": "2026-01-30T03:07:00.678Z",
+        "kindergartenId": "7bd3563c-ce2b-4161-ae7e-3a43a150bba5"
+      },
+      {
+        "id": "rev-99852402",
+        "title": "한들물빛유치원, 2025학년도 교육과정 설명회 실시",
+        "url": "https://blog.naver.com/lyjsimon/223705821976",
+        "source": "naver_blog",
+        "sourceName": "아름다운 세상",
+        "snippet": "이날 교육과정 설명회는 2025학년도 한들물빛유치원 교육과정의 전반적인 운영에 대해 안내하는... 한들물빛유치원은 시설 참관의 날을 별도로 운영하여 입학 전 신입 유아들의 적응을 돕고 신입 학부모들...",
+        "date": "2024-12-26",
+        "collectedAt": "2026-01-30T03:07:00.678Z",
+        "kindergartenId": "7bd3563c-ce2b-4161-ae7e-3a43a150bba5"
+      }
+    ],
+    "c4dd1f7f-2160-4a2a-9d56-760306322c1b": [
+      {
+        "id": "rev-0c20a5f7",
+        "kindergartenId": "c4dd1f7f-2160-4a2a-9d56-760306322c1b",
+        "title": "아산 사랑유치원 마트놀이 아나바다 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DLW6RTrTFA3/",
+        "source": "other",
+        "sourceName": "Instagram · 사랑유치원",
+        "snippet": "Instagram 검색 결과에서 사랑유치원 5세 마트놀이와 아나바다 활동 단서가 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "market-play",
+          "sharing-market"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "ebfc01c2",
+        "structuredFields": {
+          "kindergartenName": "사랑유치원",
+          "kindergartenAddress": "충청남도 아산시 아산밸리중앙로 36",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DLW6RTrTFA3%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DLW6RTrTFA3/",
+          "normalizedUrl": "www.instagram.com/reel/dlw6rtrtfa3",
+          "normalizedText": "아산 사랑유치원 마트놀이 아나바다 instagram reel instagram 검색 결과에서 사랑유치원 5세 마트놀이와 아나바다 활동 단서가 확인되는 릴.",
+          "htmlSnapshotHash": "ebfc01c2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "사랑유치원",
+            "kindergartenAddress": "충청남도 아산시 아산밸리중앙로 36",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DLW6RTrTFA3%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "fa7e3e5c-5921-4647-9fcc-4ec79c68420b": [
+      {
+        "id": "rev-sns-wave714-9e094df1",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 화재대피훈련 기록",
+        "url": "https://www.instagram.com/p/DWgb40vgTVL/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "아산 일심유치원이 화재대피훈련을 통해 아이들이 침착하게 대피하는 방법을 익힌 게시물입니다.",
+        "summary": "유아들이 화재 상황에서 안전하게 이동하는 절차를 연습한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety-education",
+          "fire-drill",
+          "evacuation-drill",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave714-9e094df1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DWgb40vgTVL/",
+          "normalizedUrl": "instagram.com/p/dwgb40vgtvl",
+          "normalizedText": "일심유치원 아산유치원 화재대피훈련 실제상황 침착하게 대피 안전교육",
+          "htmlSnapshotHash": "sns-wave714-9e094df1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DWgb40vgTVL/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave714"
+      },
+      {
+        "id": "rev-sns-wave715-78b53939",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 아나바다 시장놀이 기록",
+        "url": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+        "source": "other",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "일심유치원이 아나바다 시장놀이를 진행하며 아이들이 가게와 장터 역할을 경험한 릴스입니다.",
+        "summary": "유아들이 물건을 사고팔며 경제활동과 나눔을 놀이로 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "market-play",
+          "anabada",
+          "role-play",
+          "asan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave715-78b53939",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+          "normalizedUrl": "instagram.com/reel/dac_9j5bz2n",
+          "normalizedText": "일심유치원 아산유치원 아나바다 시장놀이 우리동네 장터",
+          "htmlSnapshotHash": "sns-wave715-78b53939",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave715"
       },
       {
         "id": "rev-3a0f7c7e",
@@ -1307,227 +1929,97 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave714-9e094df1",
+        "id": "rev-24e05f65",
         "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
-        "title": "아산 일심유치원 화재대피훈련 기록",
-        "url": "https://www.instagram.com/p/DWgb40vgTVL/",
+        "title": "아산 일심유치원 농장 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DYodXVGzBRP/",
         "source": "other",
         "sourceName": "Instagram · 일심유치원",
-        "snippet": "아산 일심유치원이 화재대피훈련을 통해 아이들이 침착하게 대피하는 방법을 익힌 게시물입니다.",
-        "summary": "유아들이 화재 상황에서 안전하게 이동하는 절차를 연습한 원문입니다.",
+        "snippet": "일심유치원 해시태그와 계정 문맥에서 4세 꽃초롱반 원아들이 첫 농장 활동을 한 내용이 확인되는 Instagram 릴.",
         "tags": [
           "sns",
-          "search-snippet",
-          "address-not-required",
           "instagram",
-          "safety-education",
-          "fire-drill",
-          "evacuation-drill",
-          "asan"
+          "address-not-required",
+          "farm-activity",
+          "field-trip"
         ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "date": "2026-06-06",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave714-9e094df1",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "9e1e8143",
+        "structuredFields": {
+          "kindergartenName": "일심유치원",
+          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYodXVGzBRP%22+%22일심유치원%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DWgb40vgTVL/",
-          "normalizedUrl": "instagram.com/p/dwgb40vgtvl",
-          "normalizedText": "일심유치원 아산유치원 화재대피훈련 실제상황 침착하게 대피 안전교육",
-          "htmlSnapshotHash": "sns-wave714-9e094df1",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DWgb40vgTVL/"
+          "canonicalUrl": "https://www.instagram.com/reel/DYodXVGzBRP/",
+          "normalizedUrl": "www.instagram.com/reel/dyodxvgzbrp",
+          "normalizedText": "아산 일심유치원 농장 활동 instagram 일심유치원 해시태그와 계정 문맥에서 4세 꽃초롱반 원아들이 첫 농장 활동을 한 내용이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "9e1e8143",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "일심유치원",
+            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYodXVGzBRP%22+%22일심유치원%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave714"
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave715-78b53939",
+        "id": "rev-5c9078d0",
         "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
-        "title": "아산 일심유치원 아나바다 시장놀이 기록",
-        "url": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
+        "title": "아산 일심유치원 도자기 활동 Instagram",
+        "url": "https://www.instagram.com/reel/DZKguACBwLm/",
         "source": "other",
         "sourceName": "Instagram · 일심유치원",
-        "snippet": "일심유치원이 아나바다 시장놀이를 진행하며 아이들이 가게와 장터 역할을 경험한 릴스입니다.",
-        "summary": "유아들이 물건을 사고팔며 경제활동과 나눔을 놀이로 익힌 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "market-play",
-          "anabada",
-          "role-play",
-          "asan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave715-78b53939",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/",
-          "normalizedUrl": "instagram.com/reel/dac_9j5bz2n",
-          "normalizedText": "일심유치원 아산유치원 아나바다 시장놀이 우리동네 장터",
-          "htmlSnapshotHash": "sns-wave715-78b53939",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DaC_9j5Bz2n/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave715"
-      }
-    ],
-    "1ecec08c-fb38-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-09ad2479",
-        "kindergartenId": "1ecec08c-fb38-b044-e053-0a32095ab044",
-        "title": "아산 대명아이웰유치원 교육설명회 Instagram",
-        "url": "https://www.instagram.com/p/DQDl-ogkxz-/",
-        "source": "other",
-        "sourceName": "Instagram · 대명아이웰유치원",
-        "snippet": "Instagram 검색 결과에서 2026년도 대명아이웰유치원 교육설명회, 아산유치원, 용화동유치원 문맥이 확인되는 게시물.",
+        "snippet": "ilsim_story 계정에서 일심유치원 원아들이 나만의 하나뿐인 도자기 활동을 한 문맥이 확인되는 Instagram 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "admissions",
-          "orientation"
+          "ceramics",
+          "classroom-activity"
         ],
-        "date": null,
+        "date": "2026-06-04",
         "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "559b8361",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "34f33fac",
         "structuredFields": {
-          "kindergartenName": "대명아이웰유치원",
-          "kindergartenAddress": "충청남도 아산시 시민로208번길 3-7",
+          "kindergartenName": "일심유치원",
+          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQDl-ogkxz-%22+%22%EB%8C%80%EB%AA%85%EC%95%84%EC%9D%B4%EC%9B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DZKguACBwLm%22+%22ilsim_story%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": false
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQDl-ogkxz-/",
-          "normalizedUrl": "www.instagram.com/p/dqdl-ogkxz-",
-          "normalizedText": "아산 대명아이웰유치원 교육설명회 instagram instagram 검색 결과에서 2026년도 대명아이웰유치원 교육설명회, 아산유치원, 용화동유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "559b8361",
+          "canonicalUrl": "https://www.instagram.com/reel/DZKguACBwLm/",
+          "normalizedUrl": "www.instagram.com/reel/dzkguacbwlm",
+          "normalizedText": "아산 일심유치원 도자기 활동 instagram ilsim_story 계정에서 일심유치원 원아들이 나만의 하나뿐인 도자기 활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "34f33fac",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "대명아이웰유치원",
-            "kindergartenAddress": "충청남도 아산시 시민로208번길 3-7",
+            "kindergartenName": "일심유치원",
+            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQDl-ogkxz-%22+%22%EB%8C%80%EB%AA%85%EC%95%84%EC%9D%B4%EC%9B%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22DZKguACBwLm%22+%22ilsim_story%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "374b81d9-547b-4c71-b289-13b3c277b753": [
-      {
-        "id": "rev-d85a1289",
-        "kindergartenId": "374b81d9-547b-4c71-b289-13b3c277b753",
-        "title": "충남 아산세교유치원 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/CyQ202wP4CP/",
-        "source": "other",
-        "sourceName": "Instagram · 아산세교유치원",
-        "snippet": "Instagram 검색 결과에서 아산세교유치원, 부모참여수업, 의좋은형제 활동 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "972d0a08",
-        "structuredFields": {
-          "kindergartenName": "아산세교유치원",
-          "kindergartenAddress": "충청남도 아산시 배방읍 세교중앙1길 9",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CyQ202wP4CP%22+%22%EC%95%84%EC%82%B0%EC%84%B8%EA%B5%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CyQ202wP4CP/",
-          "normalizedUrl": "www.instagram.com/p/cyq202wp4cp",
-          "normalizedText": "충남 아산세교유치원 부모참여수업 instagram instagram 검색 결과에서 아산세교유치원, 부모참여수업, 의좋은형제 활동 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "972d0a08",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아산세교유치원",
-            "kindergartenAddress": "충청남도 아산시 배방읍 세교중앙1길 9",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CyQ202wP4CP%22+%22%EC%95%84%EC%82%B0%EC%84%B8%EA%B5%90%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f25c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-4c5fdb40",
-        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
-        "title": "충남 아산 자연유치원 가족참여수업 Instagram",
-        "url": "https://www.instagram.com/p/C7n42uFRb08/",
-        "source": "other",
-        "sourceName": "Instagram · 아산자연유치원",
-        "snippet": "Instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업, 숲 놀이 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "family-participation",
-          "forest-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "4c2fb77d",
-        "structuredFields": {
-          "kindergartenName": "자연유치원",
-          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C7n42uFRb08%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C7n42uFRb08/",
-          "normalizedUrl": "www.instagram.com/p/c7n42ufrb08",
-          "normalizedText": "충남 아산 자연유치원 가족참여수업 instagram instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업, 숲 놀이 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "4c2fb77d",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "자연유치원",
-            "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C7n42uFRb08%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": false
           }
         },
         "approvalStatus": "approved",
@@ -1535,540 +2027,53 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-bee8a028",
-        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
-        "kindergartenName": "자연유치원",
-        "title": "아산 자연유치원 부모참여수업 준비 Instagram Reel",
-        "url": "https://www.instagram.com/reel/C7n--W-RbYn/",
+        "id": "rev-631c9476",
+        "kindergartenId": "fa7e3e5c-5921-4647-9fcc-4ec79c68420b",
+        "title": "아산 일심유치원 입학식 Instagram",
+        "url": "https://www.instagram.com/reel/DVSTopaAXO-/",
         "source": "other",
-        "sourceName": "Instagram · 자연유치원 태그 게시물",
-        "snippet": "Instagram 검색 결과에서 아산·배방 자연유치원과 부모참여수업, 가족 참여수업 포토존 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "sourceName": "Instagram · 일심유치원",
+        "snippet": "ilsim_story 계정에서 일심유치원 입학식에서 원장선생님 동극공연, 신입생 참여, 담임선생님 원가 율동이 진행된 문맥이 확인되는 Instagram 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "family-participation-class",
-          "parent-participation-class"
+          "admission",
+          "opening-ceremony"
         ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "자연유치원",
-          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C7n--W-RbYn%22+%22%EB%B0%B0%EB%B0%A9%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%22+%22%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/C7n--W-RbYn/",
-          "regionEvidence": [
-            "아산자연유치원",
-            "배방자연유치원",
-            "배방",
-            "가족 참여수업",
-            "포토존"
-          ]
-        },
-        "evidenceChecksum": "3b05c081"
-      },
-      {
-        "id": "rev-ecda0f5d",
-        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
-        "kindergartenName": "자연유치원",
-        "title": "아산 자연유치원 가족참여수업 Instagram Post",
-        "url": "https://www.instagram.com/p/Css18xUB1zH/",
-        "source": "other",
-        "sourceName": "Instagram · 자연유치원 태그 게시물",
-        "snippet": "Instagram 검색 결과에서 아산자연유치원, 배방자연유치원, 가족참여수업과 숲놀이 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "family-participation-class",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "자연유치원",
-          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22Css18xUB1zH%22+%22%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B0%80%EC%A1%B1%EC%B0%B8%EC%97%AC%EC%88%98%EC%97%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/Css18xUB1zH/",
-          "regionEvidence": [
-            "아산자연유치원",
-            "배방자연유치원",
-            "배방",
-            "가족참여수업",
-            "숲놀이"
-          ]
-        },
-        "evidenceChecksum": "57aef34e"
-      },
-      {
-        "id": "rev-2410e089",
-        "kindergartenId": "1ecec08c-f25c-b044-e053-0a32095ab044",
-        "title": "아산 자연유치원 어린이날 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DXtjuM8Ft2j/",
-        "source": "other",
-        "sourceName": "Instagram · 아산 자연유치원",
-        "snippet": "아산 자연유치원 계정에서 어린이날 D-1과 레인보우 벌룬 활동 문맥이 확인되는 Instagram 릴스 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "childrens-day"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T19:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "79bc485e",
-        "structuredFields": {
-          "kindergartenName": "자연유치원",
-          "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXtjuM8Ft2j%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "자연유치원 동명이 있으나 아산 자연유치원 단서가 아산 로컬 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXtjuM8Ft2j/",
-          "normalizedUrl": "www.instagram.com/reel/dxtjum8ft2j",
-          "normalizedText": "아산 자연유치원 어린이날 instagram reel 아산 자연유치원 계정에서 어린이날 d-1과 레인보우 벌룬 활동 문맥이 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "79bc485e",
-          "extractedAt": "2026-07-02T19:05:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "자연유치원",
-            "kindergartenAddress": "충청남도 아산시 공수길 120-14",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXtjuM8Ft2j%22+%22%EC%95%84%EC%82%B0%EC%9E%90%EC%97%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "자연유치원 동명이 있으나 아산 자연유치원 단서가 아산 로컬 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T19:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "c4dd1f7f-2160-4a2a-9d56-760306322c1b": [
-      {
-        "id": "rev-0c20a5f7",
-        "kindergartenId": "c4dd1f7f-2160-4a2a-9d56-760306322c1b",
-        "title": "아산 사랑유치원 마트놀이 아나바다 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DLW6RTrTFA3/",
-        "source": "other",
-        "sourceName": "Instagram · 사랑유치원",
-        "snippet": "Instagram 검색 결과에서 사랑유치원 5세 마트놀이와 아나바다 활동 단서가 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "market-play",
-          "sharing-market"
-        ],
-        "date": null,
+        "date": "2026-02-27",
         "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "ebfc01c2",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "aecc2c90",
         "structuredFields": {
-          "kindergartenName": "사랑유치원",
-          "kindergartenAddress": "충청남도 아산시 아산밸리중앙로 36",
+          "kindergartenName": "일심유치원",
+          "kindergartenAddress": "충청남도 아산시 봉강천로 171",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DLW6RTrTFA3%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true
+          "searchUrl": "https://www.google.com/search?q=%22DVSTopaAXO-%22+%22ilsim_story%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DLW6RTrTFA3/",
-          "normalizedUrl": "www.instagram.com/reel/dlw6rtrtfa3",
-          "normalizedText": "아산 사랑유치원 마트놀이 아나바다 instagram reel instagram 검색 결과에서 사랑유치원 5세 마트놀이와 아나바다 활동 단서가 확인되는 릴.",
-          "htmlSnapshotHash": "ebfc01c2",
+          "canonicalUrl": "https://www.instagram.com/reel/DVSTopaAXO-/",
+          "normalizedUrl": "www.instagram.com/reel/dvstopaaxo-",
+          "normalizedText": "아산 일심유치원 입학식 instagram ilsim_story 계정에서 일심유치원 입학식에서 원장선생님 동극공연, 신입생 참여, 담임선생님 원가 율동이 진행된 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "aecc2c90",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "사랑유치원",
-            "kindergartenAddress": "충청남도 아산시 아산밸리중앙로 36",
+            "kindergartenName": "일심유치원",
+            "kindergartenAddress": "충청남도 아산시 봉강천로 171",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DLW6RTrTFA3%22+%22%EC%82%AC%EB%9E%91%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%95%84%EB%82%98%EB%B0%94%EB%8B%A4%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true
+            "searchUrl": "https://www.google.com/search?q=%22DVSTopaAXO-%22+%22ilsim_story%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
           }
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-effe-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-86951227",
-        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
-        "kindergartenName": "삼성샛별유치원",
-        "title": "아산 삼성샛별유치원 2026학년도 급식 Instagram Post",
-        "url": "https://www.instagram.com/p/DVbBZM4koff/",
-        "source": "other",
-        "sourceName": "Instagram · 봄급식",
-        "snippet": "Instagram 검색 결과에서 2026학년도 시작, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 OCR 단서가 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "meal",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "삼성샛별유치원",
-          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DVbBZM4koff%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
-          "regionEvidence": [
-            "삼성샛별유치원",
-            "충청남도 아산시 탕정면로22번길 13",
-            "로컬 기관명 유일"
-          ]
-        },
-        "evidenceChecksum": "a58a5142",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
-          "normalizedUrl": "www.instagram.com/p/dvbbzm4koff",
-          "normalizedText": "아산 삼성샛별유치원 2026학년도 급식 instagram post instagram 검색 결과에서 2026학년도 시작, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 ocr 단서가 확인되는 게시물.",
-          "htmlSnapshotHash": "5f69a14e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "삼성샛별유치원",
-            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DVbBZM4koff%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "canonicalUrl": "https://www.instagram.com/p/DVbBZM4koff/",
-            "regionEvidence": [
-              "삼성샛별유치원",
-              "충청남도 아산시 탕정면로22번길 13",
-              "로컬 기관명 유일"
-            ]
-          }
-        }
-      },
-      {
-        "id": "rev-12449ea7",
-        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
-        "kindergartenName": "삼성샛별유치원",
-        "title": "아산 삼성샛별유치원 급식 메뉴 Instagram Post",
-        "url": "https://www.instagram.com/p/DXgnvRAiaDy/",
-        "source": "other",
-        "sourceName": "Instagram · 봄급식",
-        "snippet": "Instagram 검색 결과에서 급식 메뉴, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 OCR 단서가 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "meal",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "삼성샛별유치원",
-          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXgnvRAiaDy%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
-          "regionEvidence": [
-            "삼성샛별유치원",
-            "충청남도 아산시 탕정면로22번길 13",
-            "로컬 기관명 유일"
-          ]
-        },
-        "evidenceChecksum": "24d638ac",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
-          "normalizedUrl": "www.instagram.com/p/dxgnvraiady",
-          "normalizedText": "아산 삼성샛별유치원 급식 메뉴 instagram post instagram 검색 결과에서 급식 메뉴, 유치원급식, 영양사일상, 삼성샛별유치원, 월간 식단 ocr 단서가 확인되는 게시물.",
-          "htmlSnapshotHash": "e30dc6fb",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "삼성샛별유치원",
-            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXgnvRAiaDy%22+%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "canonicalUrl": "https://www.instagram.com/p/DXgnvRAiaDy/",
-            "regionEvidence": [
-              "삼성샛별유치원",
-              "충청남도 아산시 탕정면로22번길 13",
-              "로컬 기관명 유일"
-            ]
-          }
-        }
-      },
-      {
-        "id": "rev-2dd38f9d",
-        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
-        "title": "아산 삼성샛별유치원 식단 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DWyoo0ACev5/",
-        "source": "other",
-        "sourceName": "Instagram · 삼성샛별유치원",
-        "snippet": "검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "school-meal",
-          "meal-plan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T11:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "2dd38f9d",
-        "structuredFields": {
-          "kindergartenName": "삼성샛별유치원",
-          "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWyoo0ACev5/",
-          "normalizedUrl": "instagram.com/reel/dwyoo0acev5",
-          "normalizedText": "아산 삼성샛별유치원 식단 instagram reel 검색 결과에서 삼성샛별유치원과 유치원 급식, 식단 단서가 확인된다.",
-          "htmlSnapshotHash": "2dd38f9d",
-          "extractedAt": "2026-07-03T11:05:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "삼성샛별유치원",
-            "kindergartenAddress": "충청남도 아산시 탕정면로22번길 13",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWyoo0ACev5%22%20%22%EC%82%BC%EC%84%B1%EC%83%9B%EB%B3%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "삼성샛별유치원은 로컬 원장부 단일 정확 명칭이며 아산 탕정 주소 단서와 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T11:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave725-331c4c89",
-        "kindergartenId": "1ecec08c-effe-b044-e053-0a32095ab044",
-        "title": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 기록",
-        "url": "https://www.instagram.com/p/DQQOwITgZEn/",
-        "source": "other",
-        "sourceName": "Instagram · 삼성샛별유치원",
-        "snippet": "삼성샛별유치원 친구들이 왕산어촌체험마을에서 갯벌을 걷고 바지락을 캐 본 게시물입니다.",
-        "summary": "유아와 가족이 어촌체험마을에서 갯벌 생태와 수산 활동을 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "mudflat",
-          "fishing-village",
-          "family-activity",
-          "asan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave725-331c4c89",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQQOwITgZEn/",
-          "normalizedUrl": "instagram.com/p/dqqowitgzen",
-          "normalizedText": "삼성샛별유치원 왕산어촌체험마을 갯벌체험 바지락",
-          "htmlSnapshotHash": "sns-wave725-331c4c89",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DQQOwITgZEn/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave725"
-      }
-    ],
-    "1ecec08c-f7e8-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-2df7a25d",
-        "kindergartenId": "1ecec08c-f7e8-b044-e053-0a32095ab044",
-        "title": "아산 온양제일유치원 블루베리체험 Instagram Post",
-        "url": "https://www.instagram.com/p/CuDn2BrBt72/",
-        "source": "other",
-        "sourceName": "Instagram · 온양제일유치원",
-        "snippet": "온양제일유치원 계정에서 무농약 블루베리따기와 블루베리 모찌 만들기 체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "blueberry-experience"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T12:20:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "43a9a715",
-        "structuredFields": {
-          "kindergartenName": "온양제일유치원",
-          "kindergartenAddress": "충청남도 아산시 모종북로 17",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CuDn2BrBt72%22+%22%EC%98%A8%EC%96%91%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "온양제일유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CuDn2BrBt72/",
-          "normalizedUrl": "www.instagram.com/p/cudn2brbt72",
-          "normalizedText": "아산 온양제일유치원 블루베리체험 instagram post 온양제일유치원 계정에서 무농약 블루베리따기와 블루베리 모찌 만들기 체험 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "43a9a715",
-          "extractedAt": "2026-07-02T12:20:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "온양제일유치원",
-            "kindergartenAddress": "충청남도 아산시 모종북로 17",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CuDn2BrBt72%22+%22%EC%98%A8%EC%96%91%EC%A0%9C%EC%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B8%94%EB%A3%A8%EB%B2%A0%EB%A6%AC%EC%B2%B4%ED%97%98%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "온양제일유치원은 로컬 원장부에서 유일한 이름이라 계정명 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T12:20:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f569-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-6fde6469",
-        "kindergartenId": "1ecec08c-f569-b044-e053-0a32095ab044",
-        "kindergartenName": "아산흰돌유치원",
-        "title": "아산흰돌유치원 생일파티 Instagram Reel",
-        "url": "https://www.instagram.com/reel/C0nAJa7BJtR/",
-        "source": "other",
-        "sourceName": "Instagram · Yes Yes Yes",
-        "snippet": "Instagram 검색 결과에서 아산흰돌유치원 고운꽃잎반 생일파티 해시태그와 유치원 생일파티 문맥이 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "birthday-party"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:05:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "6fde6469",
-        "structuredFields": {
-          "kindergartenName": "아산흰돌유치원",
-          "kindergartenAddress": "충청남도 아산시 아산호로 229",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C0nAJa7BJtR%22%20%22%EC%95%84%EC%82%B0%ED%9D%B0%EB%8F%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "아산흰돌유치원 해시태그와 로컬 원장부의 아산흰돌유치원 단일 매칭을 기준으로 수동 반영했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C0nAJa7BJtR/",
-          "normalizedUrl": "www.instagram.com/reel/c0naja7bjtr",
-          "normalizedText": "아산흰돌유치원 생일파티 instagram reel instagram 검색 결과에서 아산흰돌유치원 고운꽃잎반 생일파티 해시태그와 유치원 생일파티 문맥이 확인된다.",
-          "htmlSnapshotHash": "6fde6469",
-          "extractedAt": "2026-07-02T23:05:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아산흰돌유치원",
-            "kindergartenAddress": "충청남도 아산시 아산호로 229",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C0nAJa7BJtR%22%20%22%EC%95%84%EC%82%B0%ED%9D%B0%EB%8F%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%83%9D%EC%9D%BC%ED%8C%8C%ED%8B%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "아산흰돌유치원 해시태그와 로컬 원장부의 아산흰돌유치원 단일 매칭을 기준으로 수동 반영했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:05:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "2ef67bb6-a387-427d-a273-3d101215e9a1": [
-      {
-        "id": "rev-99852527",
-        "title": "2025 아산 천안 세종, 아주나, 병설 유치원 입학 설명회 시즌...",
-        "url": "https://blog.naver.com/nunulovemom/224021034806",
-        "source": "naver_blog",
-        "sourceName": "HELLO❤️",
-        "snippet": "어린이집 같은 경우 첫째 때는 넓은 환경에 매료되어 선택했는데, 막상 다녀보니 또 부족한 부분이... ⬇️ 세종 유치원, 아주나 유치원 입학설명회 ⬇️ ♨️ 25년 10월 14일 부터 열리는 유치원 입학안내 내용...",
-        "date": "2025-09-25",
-        "collectedAt": "2026-07-26T08:29:21.020272"
-      }
-    ],
-    "1ecec08c-ff02-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-ea50feb2",
-        "kindergartenId": "1ecec08c-ff02-b044-e053-0a32095ab044",
-        "title": "룸비니 글로벌 유치원  1학기 부모참여수업  다녀온 후기!!",
-        "url": "https://blog.naver.com/a841024/224304154040",
-        "source": "naver_blog",
-        "sourceName": "북적북적 여섯식구의 아찔한 일상",
-        "snippet": "언제나 응원해 본다 더불어!!~ 진상님 너두 홧팅!!~~ # 아산 룸비니 글로벌 유치원 # 충남 제 1호 영유아 시범학교 # 아산 1등 유치원 # IB 프로젝트 교육중심 # 쉼이없는 유치원 / 초사동 숲 유치원",
-        "date": "2026-06-02",
-        "collectedAt": "2026-07-26T00:00:00.000Z"
       }
     ]
   }

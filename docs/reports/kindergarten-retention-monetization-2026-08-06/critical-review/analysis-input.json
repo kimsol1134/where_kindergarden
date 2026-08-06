@@ -1,0 +1,115 @@
+{
+  "snapshot_date": "2026-08-06",
+  "complete_data_through": "2026-08-05",
+  "timezone": "Asia/Seoul",
+  "mixpanel": {
+    "project_id": "4014822",
+    "workspace_id": 4510961,
+    "current_window": {
+      "start": "2026-07-25",
+      "end": "2026-08-05",
+      "days": 12,
+      "active_users": 124
+    },
+    "prior_window": {
+      "start": "2026-07-13",
+      "end": "2026-07-24",
+      "days": 12,
+      "active_users": 62
+    },
+    "rolling_30_day": {
+      "start": "2026-07-07",
+      "end": "2026-08-05",
+      "active_users": 186
+    },
+    "event_reach": [
+      {"event": "App Launched", "unique_users": 124, "total_events": 193},
+      {"event": "Search Executed", "unique_users": 123, "total_events": null},
+      {"event": "Result Tapped", "unique_users": 97, "total_events": null},
+      {"event": "Detail Opened", "unique_users": 97, "total_events": 470},
+      {"event": "Favorite Added", "unique_users": 30, "total_events": 73},
+      {"event": "Comparison Added", "unique_users": 56, "total_events": 162},
+      {"event": "Compare Viewed", "unique_users": 64, "total_events": 183},
+      {"event": "Compare Shared", "unique_users": 4, "total_events": 4},
+      {"event": "Review Link Tapped", "unique_users": 33, "total_events": 80}
+    ],
+    "one_day_behavior_funnels": [
+      {"behavior": "후보 2곳 도달", "converted_users": 47, "denominator_users": 124, "conversion_rate": 0.379032, "average_seconds": 375, "definition": "Comparison Added with compare_count > 1"},
+      {"behavior": "2곳 이상 실제 비교 보기", "converted_users": 42, "denominator_users": 124, "conversion_rate": 0.33871, "average_seconds": 646, "definition": "Compare Viewed with compare_count > 1"},
+      {"behavior": "외부 후기 열기", "converted_users": 31, "denominator_users": 124, "conversion_rate": 0.25, "average_seconds": 1148, "definition": "Review Link Tapped"},
+      {"behavior": "즐겨찾기 2곳 도달", "converted_users": 17, "denominator_users": 124, "conversion_rate": 0.137097, "average_seconds": 881, "definition": "Favorite Added with favorite_count > 1"},
+      {"behavior": "비교 공유 시작", "converted_users": 3, "denominator_users": 124, "conversion_rate": 0.024194, "average_seconds": 284, "definition": "legacy Compare Shared; all observed result=initiated"}
+    ],
+    "new_user_retention_30d_window": [
+      {"day": "D1", "returned_users": 4, "eligible_users": 168, "rate": 0.0238095, "matured_start": "2026-07-07", "matured_end": "2026-08-04"},
+      {"day": "D7", "returned_users": 5, "eligible_users": 132, "rate": 0.0378788, "matured_start": "2026-07-07", "matured_end": "2026-07-29"},
+      {"day": "D14", "returned_users": 1, "eligible_users": 31, "rate": 0.0322581, "matured_start": "2026-07-07", "matured_end": "2026-07-22"},
+      {"day": "D28", "returned_users": 0, "eligible_users": 8, "rate": 0, "matured_start": "2026-07-07", "matured_end": "2026-07-08"}
+    ],
+    "two_candidate_retention": [
+      {"day": "D1", "returned_users": 5, "eligible_users": 69, "rate": 0.0724638},
+      {"day": "D7", "returned_users": 4, "eligible_users": 52, "rate": 0.0769231},
+      {"day": "D14", "returned_users": 0, "eligible_users": 12, "rate": 0}
+    ],
+    "app_version_users": [
+      {"app_version": "2.2.4", "unique_users": 100},
+      {"app_version": "2.2.3", "unique_users": 30}
+    ],
+    "daily_new_launch_users": {
+      "2026-07-16": 2,
+      "2026-07-17": 2,
+      "2026-07-18": 2,
+      "2026-07-19": 2,
+      "2026-07-20": 4,
+      "2026-07-21": 1,
+      "2026-07-22": 2,
+      "2026-07-23": 5,
+      "2026-07-24": 30,
+      "2026-07-25": 26,
+      "2026-07-26": 16,
+      "2026-07-27": 11,
+      "2026-07-28": 9,
+      "2026-07-29": 4,
+      "2026-07-30": 4,
+      "2026-07-31": 4,
+      "2026-08-01": 2,
+      "2026-08-02": 4,
+      "2026-08-03": 5,
+      "2026-08-04": 17,
+      "2026-08-05": 18
+    }
+  },
+  "app_store_connect": {
+    "metric": "App Units",
+    "latest_complete_date": "2026-08-04",
+    "daily": {
+      "2026-07-16": 2,
+      "2026-07-17": 1,
+      "2026-07-18": 1,
+      "2026-07-19": 1,
+      "2026-07-20": 3,
+      "2026-07-22": 3,
+      "2026-07-23": 6,
+      "2026-07-24": 1,
+      "2026-07-25": 33,
+      "2026-07-26": 12,
+      "2026-07-27": 4,
+      "2026-07-28": 2,
+      "2026-07-29": 3,
+      "2026-07-30": 5,
+      "2026-07-31": 5,
+      "2026-08-01": 3,
+      "2026-08-02": 1,
+      "2026-08-03": 1,
+      "2026-08-04": 19
+    },
+    "known_missing_dates": ["2026-07-21"]
+  },
+  "economics": {
+    "eligible_rate": 0.379032,
+    "eligible_definition": "App Launched 후 1일 안에 compare_count > 1인 Comparison Added",
+    "prices_krw": [9900, 19900],
+    "eligible_purchase_rates": [0.03, 0.05, 0.1],
+    "gross_monthly_target_krw": 1000000
+  }
+}

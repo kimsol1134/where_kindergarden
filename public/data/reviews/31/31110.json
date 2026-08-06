@@ -1,20 +1,508 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 37,
   "kindergartenCount": 7,
   "reviews": {
+    "1ecec08c-eede-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a842209c",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "kindergartenName": "가나유치원",
+        "title": "울산 중구 가나유치원 울산과학관 견학 Instagram Post",
+        "url": "https://www.instagram.com/p/C7lsbR6xh3G/",
+        "source": "other",
+        "sourceName": "Instagram · 울산중구가나유치원",
+        "snippet": "울산중구가나유치원 계정 게시물 검색 결과에서 울산과학관 견학, 다양한 과학 지식 체험 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "science-center",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a842209c",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C7lsbR6xh3G%22%20%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "가나유치원은 동명이 있으나 울산중구가나유치원 단서와 울산 중구 유곡로 주소가 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C7lsbR6xh3G/",
+          "normalizedUrl": "www.instagram.com/p/c7lsbr6xh3g",
+          "normalizedText": "울산 중구 가나유치원 울산과학관 견학 instagram post 울산중구가나유치원 계정 게시물 검색 결과에서 울산과학관 견학, 다양한 과학 지식 체험 단서가 확인된다.",
+          "htmlSnapshotHash": "a842209c",
+          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C7lsbR6xh3G%22%20%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "가나유치원은 동명이 있으나 울산중구가나유치원 단서와 울산 중구 유곡로 주소가 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9987629a",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "kindergartenName": "가나유치원",
+        "title": "울산 가나유치원 부모상담 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DHVAzgUTL8L/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 가나 부모 상담, 울산가나유치원, 울산중구가나유치원 문맥이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-consultation",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHVAzgUTL8L%22+%22%EC%9A%B8%EC%82%B0%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8+%EC%83%81%EB%8B%B4%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DHVAzgUTL8L/",
+          "regionEvidence": [
+            "울산가나유치원",
+            "울산중구가나유치원",
+            "울산광역시 중구 유곡로 10"
+          ]
+        },
+        "evidenceChecksum": "3a5e2c3d"
+      },
+      {
+        "id": "rev-1c0fadd4",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 가나유치원 원어민 수업 Instagram",
+        "url": "https://www.instagram.com/reel/C937kuZRkLN/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 울산 중구 가나유치원 원어민 수업, Paper squishy 만들기, 영어 활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "english-activity",
+          "classroom-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "9940be07",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C937kuZRkLN%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C937kuZRkLN/",
+          "normalizedUrl": "www.instagram.com/reel/c937kuzrkln",
+          "normalizedText": "울산 가나유치원 원어민 수업 instagram instagram 검색 결과에서 울산 중구 가나유치원 원어민 수업, paper squishy 만들기, 영어 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "9940be07",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C937kuZRkLN%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-29a41df4",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 중구 가나유치원 울산과학관 체험활동 Instagram",
+        "url": "https://www.instagram.com/reel/DSty3Dzk7Z7/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "울산 중구 가나유치원 정보와 울산과학관 체험활동 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "science-museum",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "413acaad",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DSty3Dzk7Z7%22+%22가나유치원%22+%22울산과학관%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DSty3Dzk7Z7/",
+          "normalizedUrl": "www.instagram.com/reel/dsty3dzk7z7",
+          "normalizedText": "울산 중구 가나유치원 울산과학관 체험활동 instagram 울산 중구 가나유치원 정보와 울산과학관 체험활동 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "413acaad",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DSty3Dzk7Z7%22+%22가나유치원%22+%22울산과학관%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-8f1bb529",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 가나유치원 수료식 Reel",
+        "url": "https://www.instagram.com/reel/DGSzUePzNUq/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram Reels 검색 결과에서 울산 중구 가나유치원, 따뜻한 수료식과 아이들의 노력 격려 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "completion-ceremony"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "d2b2f9e5",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DGSzUePzNUq%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DGSzUePzNUq/",
+          "normalizedUrl": "www.instagram.com/reel/dgszuepznuq",
+          "normalizedText": "울산 가나유치원 수료식 reel instagram reels 검색 결과에서 울산 중구 가나유치원, 따뜻한 수료식과 아이들의 노력 격려 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "d2b2f9e5",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DGSzUePzNUq%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-9ce10f4b",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 중구 가나유치원 부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DFtyu5Xvdb3/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 울산중구가나유치원, 가나유치원, 울산가나유치원, 부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2f8aa516",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DFtyu5Xvdb3%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DFtyu5Xvdb3/",
+          "normalizedUrl": "www.instagram.com/p/dftyu5xvdb3",
+          "normalizedText": "울산 중구 가나유치원 부모참여수업 instagram instagram 검색 결과에서 울산중구가나유치원, 가나유치원, 울산가나유치원, 부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2f8aa516",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DFtyu5Xvdb3%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-b85ac5af",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 가나유치원 봄 산책 Instagram",
+        "url": "https://www.instagram.com/reel/DHKtRy-TtG-/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 울산 중구 가나유치원, 따뜻한 봄날 유치원 주변 산책, 자연 관찰 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "school-life"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "a788c494",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHKtRy-TtG-%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DHKtRy-TtG-/",
+          "normalizedUrl": "www.instagram.com/reel/dhktry-ttg-",
+          "normalizedText": "울산 가나유치원 봄 산책 instagram instagram 검색 결과에서 울산 중구 가나유치원, 따뜻한 봄날 유치원 주변 산책, 자연 관찰 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "a788c494",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHKtRy-TtG-%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "kindergartenName": "가나유치원",
+        "title": "울산 중구 가나유치원 로봇 강아지 체험 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DJbhdo3TMvK/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 울산중구가나유치원 계정의 로봇 강아지 체험 활동이 확인되는 릴.",
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "robot",
+          "field-trip"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJbhdo3TMvK%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
+          "regionEvidence": [
+            "울산중구가나유치원",
+            "울산 중구"
+          ]
+        },
+        "id": "rev-e7b5f256",
+        "evidenceChecksum": "9be6c6c4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
+          "normalizedUrl": "www.instagram.com/reel/djbhdo3tmvk",
+          "normalizedText": "울산 중구 가나유치원 로봇 강아지 체험 instagram reel instagram 검색 결과에서 울산중구가나유치원 계정의 로봇 강아지 체험 활동이 확인되는 릴.",
+          "htmlSnapshotHash": "9be6c6c4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJbhdo3TMvK%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true,
+            "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
+            "regionEvidence": [
+              "울산중구가나유치원",
+              "울산 중구"
+            ]
+          }
+        }
+      },
+      {
+        "id": "rev-ef78cb49",
+        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
+        "title": "울산 가나유치원 봄 소풍 Instagram Post",
+        "url": "https://www.instagram.com/p/DJJQeh7z3Lt/",
+        "source": "other",
+        "sourceName": "Instagram · 가나유치원",
+        "snippet": "Instagram 검색 결과에서 봄 소풍 문맥과 울산중구가나유치원, 울산가나유치원 해시태그가 함께 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "picnic",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "780d19fc",
+        "structuredFields": {
+          "kindergartenName": "가나유치원",
+          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DJJQeh7z3Lt%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DJJQeh7z3Lt/",
+          "normalizedUrl": "www.instagram.com/p/djjqeh7z3lt",
+          "normalizedText": "울산 가나유치원 봄 소풍 instagram post instagram 검색 결과에서 봄 소풍 문맥과 울산중구가나유치원, 울산가나유치원 해시태그가 함께 확인되는 게시물.",
+          "htmlSnapshotHash": "780d19fc",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "가나유치원",
+            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DJJQeh7z3Lt%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08c-f174-b044-e053-0a32095ab044": [
       {
-        "id": "rev-4424-f968",
+        "id": "rev-b147a8c5",
         "kindergartenId": "1ecec08c-f174-b044-e053-0a32095ab044",
-        "title": "김장을 해요",
-        "url": "https://blog.naver.com/prs2600/223704794424",
-        "source": "naver_blog",
-        "sourceName": "울산 파랑새생태유치원",
-        "snippet": "♥️ 아이들이 집으로 하나씩 가져간 깍두기 맛있다는 후기가 가득했답니다! :) 다가오는 2025년에도 신나고 재미있는 요리활동 기대해주세요♥️ #파랑새생태유치원 #유치원 #울산유치원 #울산중구유치원...",
-        "date": "2024-12-25",
-        "collectedAt": "2026-02-18T06:13:58.417Z",
-        "relevanceScore": 6
+        "title": "울산 중구 파랑새생태유치원 원아모집 Reel",
+        "url": "https://www.instagram.com/reel/Cj-Wo-IgNcn/",
+        "source": "other",
+        "sourceName": "Instagram · 파랑새생태유치원",
+        "snippet": "Instagram Reels 검색 결과에서 파랑새생태유치원, 반구동유치원, 학성동유치원, 원아모집과 원아상담 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event",
+          "outdoor-activity"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "23dca3d1",
+        "structuredFields": {
+          "kindergartenName": "파랑새생태유치원",
+          "kindergartenAddress": "울산광역시 중구 학성공원5길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22Cj-Wo-IgNcn%22+%22%ED%8C%8C%EB%9E%91%EC%83%88%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/Cj-Wo-IgNcn/",
+          "normalizedUrl": "www.instagram.com/reel/cj-wo-igncn",
+          "normalizedText": "울산 중구 파랑새생태유치원 원아모집 reel instagram reels 검색 결과에서 파랑새생태유치원, 반구동유치원, 학성동유치원, 원아모집과 원아상담 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "23dca3d1",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "파랑새생태유치원",
+            "kindergartenAddress": "울산광역시 중구 학성공원5길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22Cj-Wo-IgNcn%22+%22%ED%8C%8C%EB%9E%91%EC%83%88%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
         "id": "rev-d6242035",
@@ -67,127 +555,16 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-b147a8c5",
+        "id": "rev-4424-f968",
         "kindergartenId": "1ecec08c-f174-b044-e053-0a32095ab044",
-        "title": "울산 중구 파랑새생태유치원 원아모집 Reel",
-        "url": "https://www.instagram.com/reel/Cj-Wo-IgNcn/",
-        "source": "other",
-        "sourceName": "Instagram · 파랑새생태유치원",
-        "snippet": "Instagram Reels 검색 결과에서 파랑새생태유치원, 반구동유치원, 학성동유치원, 원아모집과 원아상담 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "kindergarten-event",
-          "outdoor-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "23dca3d1",
-        "structuredFields": {
-          "kindergartenName": "파랑새생태유치원",
-          "kindergartenAddress": "울산광역시 중구 학성공원5길 12",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22Cj-Wo-IgNcn%22+%22%ED%8C%8C%EB%9E%91%EC%83%88%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/Cj-Wo-IgNcn/",
-          "normalizedUrl": "www.instagram.com/reel/cj-wo-igncn",
-          "normalizedText": "울산 중구 파랑새생태유치원 원아모집 reel instagram reels 검색 결과에서 파랑새생태유치원, 반구동유치원, 학성동유치원, 원아모집과 원아상담 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "23dca3d1",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "파랑새생태유치원",
-            "kindergartenAddress": "울산광역시 중구 학성공원5길 12",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22Cj-Wo-IgNcn%22+%22%ED%8C%8C%EB%9E%91%EC%83%88%EC%83%9D%ED%83%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "ccd41ee5-10f4-42d5-a91d-57353b5e924d": [
-      {
-        "id": "rev-894110f5",
-        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
-        "title": "울산 약사가온유치원 입학설명회 기록 20251021",
-        "url": "https://blog.naver.com/PostView.naver?blogId=aram9295&logNo=224048073264",
+        "title": "김장을 해요",
+        "url": "https://blog.naver.com/prs2600/223704794424",
         "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체...",
-        "summary": "내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-29T07:50:09.390Z",
-        "relevanceScore": 6,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "a3f162ff",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=aram9295&logNo=224048073264",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=aram9295&logno=224048073264",
-          "normalizedText": "울산 약사가온유치원 입학설명회 기록 20251021 26 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체... 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔... 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔끔했어요 . 손씼는 공간도 있어요 프로그램 / 방과후 활동-음악: 뮤직팡팡-체육: 펀플렉스-영어: 정글비트 등 학급 정원 3세반 14명으로 3반 4세반 18명 3반5세반 20명 3반국공립이라 학급 정원 14명으로 작은게 제일 맘에 드네요 공립은 우선모집 60% 뽑고사립은 우선모집 100% 차이점이라고 하더라고요 -1층 3세반/2층 4세반 / 3층 5세반-엘리베이터 o-초등학교 축소판느낌으로 급식실, 양호실, 교무실 있는게 좀 놀랬음-저녁 돌봄 19시30분까지 가능-방학 :총 4주 급식o, 차량 o 그 4주 중 1주는 진짜 방학 급식o, 차량x (맞벌이 아니더라도 신청하면 돌봄 가능)-4시부터 하원 차량 운행-현장 체험 월 1회-원어민 x-주1회씩 특활 수업 -비용 x (일체 돈 내는게 없다함)-특수반이 있음-선생님들이 4년에 한번씩 로테이션",
-          "htmlSnapshotHash": "a3f162ff",
-          "extractedAt": "2026-06-29T07:50:09.390Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%BD%EC%82%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9A%B8%EC%82%B0+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "약사가온유치원",
-            "kindergartenAddress": "울산광역시 중구 평산4길 10",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%BD%EC%82%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9A%B8%EC%82%B0+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-sns-wave712-950f8f18",
-        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
-        "title": "울산 약사가온유치원 방문 클래식 음악회 기록",
-        "url": "https://www.instagram.com/p/DKEPYFlT3Zz/",
-        "source": "other",
-        "sourceName": "Instagram · 울산교육 소식",
-        "snippet": "울산 중구 약사가온유치원이 유아들에게 클래식과 다양한 장르의 음악을 들려주는 방문 클래식 음악회를 운영한 게시물입니다.",
-        "summary": "유아들이 클래식과 여러 음악 장르를 가까이 접한 문화예술 활동 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "classic-concert",
-          "music-concert",
-          "arts-education",
-          "ulsan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave712-950f8f18",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/",
-          "normalizedUrl": "instagram.com/p/dkepyflt3zz",
-          "normalizedText": "약사가온유치원 울산 중구 방문 클래식 음악회 다양한 장르 음악",
-          "htmlSnapshotHash": "sns-wave712-950f8f18",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave712"
+        "sourceName": "울산 파랑새생태유치원",
+        "snippet": "♥️ 아이들이 집으로 하나씩 가져간 깍두기 맛있다는 후기가 가득했답니다! :) 다가오는 2025년에도 신나고 재미있는 요리활동 기대해주세요♥️ #파랑새생태유치원 #유치원 #울산유치원 #울산중구유치원...",
+        "date": "2024-12-25",
+        "collectedAt": "2026-02-18T06:13:58.417Z",
+        "relevanceScore": 6
       }
     ],
     "1ecec08c-f5c5-b044-e053-0a32095ab044": [
@@ -239,121 +616,125 @@
     ],
     "1ecec08c-f87f-b044-e053-0a32095ab044": [
       {
-        "id": "rev-9325fc41",
+        "id": "rev-ff5b3ebc",
         "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "title": "울산 라온수피아유치원 학부모 참여수업 SNS",
-        "url": "https://www.instagram.com/reel/DAxx6EMPWP1/",
+        "kindergartenName": "라온수피아유치원",
+        "title": "울산 라온수피아유치원 전통시장 체험 Instagram Post",
+        "url": "https://www.instagram.com/p/C7qnimGRV0h/",
         "source": "other",
         "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "라온수피아유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "울산 중구 라온수피아유치원의 학부모 참여수업 Instagram 검색 결과.",
+        "snippet": "라온수피아유치원 계정 게시물 검색 결과에서 신나는 전통시장 체험활동 단서가 확인된다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "official-info"
+          "market",
+          "field-trip"
         ],
-        "content": "라온수피아유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 울산 중구 원장부 주소와 맞아 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-06-30T21:55:00.000Z",
+        "collectedAt": "2026-07-02T23:59:57.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "07661ce5",
+        "evidenceChecksum": "ff5b3ebc",
         "structuredFields": {
           "kindergartenName": "라온수피아유치원",
           "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DAxx6EMPWP1%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22C7qnimGRV0h%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DAxx6EMPWP1/",
-          "normalizedUrl": "www.instagram.com/reel/daxx6empwp1",
-          "normalizedText": "울산 라온수피아유치원 학부모 참여수업 sns 라온수피아유치원 학부모 참여수업 문맥이 확인되는 instagram 검색 결과. 울산 중구 라온수피아유치원의 학부모 참여수업 instagram 검색 결과.",
-          "htmlSnapshotHash": "07661ce5",
-          "extractedAt": "2026-06-30T21:55:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/C7qnimGRV0h/",
+          "normalizedUrl": "www.instagram.com/p/c7qnimgrv0h",
+          "normalizedText": "울산 라온수피아유치원 전통시장 체험 instagram post 라온수피아유치원 계정 게시물 검색 결과에서 신나는 전통시장 체험활동 단서가 확인된다.",
+          "htmlSnapshotHash": "ff5b3ebc",
+          "extractedAt": "2026-07-02T23:59:57.000Z",
           "structuredFields": {
             "kindergartenName": "라온수피아유치원",
             "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DAxx6EMPWP1%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22C7qnimGRV0h%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T21:55:00.000Z",
+        "approvedAt": "2026-07-02T23:59:57.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-ee8a9de3",
+        "id": "rev-51546035",
         "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "title": "울산 라온수피아유치원 English Village 학부모참여수업 Instagram",
-        "url": "https://www.instagram.com/reel/CzD1UmZrHNe/",
+        "kindergartenName": "라온수피아유치원",
+        "title": "울산 라온수피아유치원 텃밭 고구마 캐기 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DCbvhOiSrvR/",
         "source": "other",
         "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "Instagram 검색 결과에서 라온수피아유치원 English Village town, 2학기 학부모참여수업, 울산중구영어유치원 문맥이 확인되는 릴.",
+        "snippet": "라온수피아유치원 계정 게시물 검색 결과에서 유치원 옆 텃밭에서 고구마를 캐고 고구마 줄기 놀이를 한 단서가 확인된다.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "parent-participation",
-          "english-activity"
+          "instagram",
+          "harvest",
+          "garden"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "collectedAt": "2026-07-02T23:59:56.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "0897b416",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "51546035",
         "structuredFields": {
           "kindergartenName": "라온수피아유치원",
           "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CzD1UmZrHNe%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "searchUrl": "https://www.google.com/search?q=%22DCbvhOiSrvR%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EA%B5%AC%EB%A7%88%20%EC%BA%90%EA%B8%B0%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true
+          "snippetOnly": true,
+          "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭이며 울산 중구 주소와 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/CzD1UmZrHNe/",
-          "normalizedUrl": "www.instagram.com/reel/czd1umzrhne",
-          "normalizedText": "울산 라온수피아유치원 english village 학부모참여수업 instagram instagram 검색 결과에서 라온수피아유치원 english village town, 2학기 학부모참여수업, 울산중구영어유치원 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "0897b416",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DCbvhOiSrvR/",
+          "normalizedUrl": "www.instagram.com/reel/dcbvhoisrvr",
+          "normalizedText": "울산 라온수피아유치원 텃밭 고구마 캐기 instagram reel 라온수피아유치원 계정 게시물 검색 결과에서 유치원 옆 텃밭에서 고구마를 캐고 고구마 줄기 놀이를 한 단서가 확인된다.",
+          "htmlSnapshotHash": "51546035",
+          "extractedAt": "2026-07-02T23:59:56.000Z",
           "structuredFields": {
             "kindergartenName": "라온수피아유치원",
             "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CzD1UmZrHNe%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "searchUrl": "https://www.google.com/search?q=%22DCbvhOiSrvR%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EA%B5%AC%EB%A7%88%20%EC%BA%90%EA%B8%B0%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true
+            "snippetOnly": true,
+            "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭이며 울산 중구 주소와 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedAt": "2026-07-02T23:59:56.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-68b46165",
+        "id": "rev-120b0e16",
         "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "title": "울산 라온수피아유치원 숲아로프놀이 학부모참여수업 Instagram",
-        "url": "https://www.instagram.com/reel/CtDtyvugJDq/",
+        "title": "울산 중구 라온수피아유치원 학부모 참여수업 Instagram",
+        "url": "https://www.instagram.com/p/DJnC_FtzZNY/",
         "source": "other",
         "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "Instagram 검색 결과에서 라온수피아유치원 숲아로프놀이데이, 학부모참여수업, 울산중구유치원 문맥이 확인되는 릴.",
+        "snippet": "Instagram 검색 결과에서 라온수피아유치원 2025학년도 1학기 학부모 참여 및 참관 수업, 울산중구유치원 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
           "parent-participation",
-          "forest-activity"
+          "open-class"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -361,26 +742,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "b8a1afa8",
+        "evidenceChecksum": "f5608d9b",
         "structuredFields": {
           "kindergartenName": "라온수피아유치원",
           "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CtDtyvugJDq%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "searchUrl": "https://www.google.com/search?q=%22DJnC_FtzZNY%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/CtDtyvugJDq/",
-          "normalizedUrl": "www.instagram.com/reel/ctdtyvugjdq",
-          "normalizedText": "울산 라온수피아유치원 숲아로프놀이 학부모참여수업 instagram instagram 검색 결과에서 라온수피아유치원 숲아로프놀이데이, 학부모참여수업, 울산중구유치원 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "b8a1afa8",
+          "canonicalUrl": "https://www.instagram.com/p/DJnC_FtzZNY/",
+          "normalizedUrl": "www.instagram.com/p/djnc_ftzzny",
+          "normalizedText": "울산 중구 라온수피아유치원 학부모 참여수업 instagram instagram 검색 결과에서 라온수피아유치원 2025학년도 1학기 학부모 참여 및 참관 수업, 울산중구유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "f5608d9b",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "라온수피아유치원",
             "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CtDtyvugJDq%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "searchUrl": "https://www.google.com/search?q=%22DJnC_FtzZNY%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -490,19 +871,19 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-120b0e16",
+        "id": "rev-68b46165",
         "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "title": "울산 중구 라온수피아유치원 학부모 참여수업 Instagram",
-        "url": "https://www.instagram.com/p/DJnC_FtzZNY/",
+        "title": "울산 라온수피아유치원 숲아로프놀이 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/CtDtyvugJDq/",
         "source": "other",
         "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "Instagram 검색 결과에서 라온수피아유치원 2025학년도 1학기 학부모 참여 및 참관 수업, 울산중구유치원 문맥이 확인되는 게시물.",
+        "snippet": "Instagram 검색 결과에서 라온수피아유치원 숲아로프놀이데이, 학부모참여수업, 울산중구유치원 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
           "parent-participation",
-          "open-class"
+          "forest-activity"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -510,26 +891,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "f5608d9b",
+        "evidenceChecksum": "b8a1afa8",
         "structuredFields": {
           "kindergartenName": "라온수피아유치원",
           "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJnC_FtzZNY%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22CtDtyvugJDq%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DJnC_FtzZNY/",
-          "normalizedUrl": "www.instagram.com/p/djnc_ftzzny",
-          "normalizedText": "울산 중구 라온수피아유치원 학부모 참여수업 instagram instagram 검색 결과에서 라온수피아유치원 2025학년도 1학기 학부모 참여 및 참관 수업, 울산중구유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "f5608d9b",
+          "canonicalUrl": "https://www.instagram.com/reel/CtDtyvugJDq/",
+          "normalizedUrl": "www.instagram.com/reel/ctdtyvugjdq",
+          "normalizedText": "울산 라온수피아유치원 숲아로프놀이 학부모참여수업 instagram instagram 검색 결과에서 라온수피아유치원 숲아로프놀이데이, 학부모참여수업, 울산중구유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "b8a1afa8",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "라온수피아유치원",
             "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJnC_FtzZNY%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22CtDtyvugJDq%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -539,423 +920,19 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-ff5b3ebc",
+        "id": "rev-ee8a9de3",
         "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "kindergartenName": "라온수피아유치원",
-        "title": "울산 라온수피아유치원 전통시장 체험 Instagram Post",
-        "url": "https://www.instagram.com/p/C7qnimGRV0h/",
+        "title": "울산 라온수피아유치원 English Village 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/CzD1UmZrHNe/",
         "source": "other",
         "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "라온수피아유치원 계정 게시물 검색 결과에서 신나는 전통시장 체험활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "market",
-          "field-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:57.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ff5b3ebc",
-        "structuredFields": {
-          "kindergartenName": "라온수피아유치원",
-          "kindergartenAddress": "울산광역시 중구 병영로 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C7qnimGRV0h%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C7qnimGRV0h/",
-          "normalizedUrl": "www.instagram.com/p/c7qnimgrv0h",
-          "normalizedText": "울산 라온수피아유치원 전통시장 체험 instagram post 라온수피아유치원 계정 게시물 검색 결과에서 신나는 전통시장 체험활동 단서가 확인된다.",
-          "htmlSnapshotHash": "ff5b3ebc",
-          "extractedAt": "2026-07-02T23:59:57.000Z",
-          "structuredFields": {
-            "kindergartenName": "라온수피아유치원",
-            "kindergartenAddress": "울산광역시 중구 병영로 41",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C7qnimGRV0h%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%A0%84%ED%86%B5%EC%8B%9C%EC%9E%A5%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:57.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-51546035",
-        "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
-        "kindergartenName": "라온수피아유치원",
-        "title": "울산 라온수피아유치원 텃밭 고구마 캐기 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DCbvhOiSrvR/",
-        "source": "other",
-        "sourceName": "Instagram · 라온수피아유치원",
-        "snippet": "라온수피아유치원 계정 게시물 검색 결과에서 유치원 옆 텃밭에서 고구마를 캐고 고구마 줄기 놀이를 한 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "harvest",
-          "garden"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:56.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "51546035",
-        "structuredFields": {
-          "kindergartenName": "라온수피아유치원",
-          "kindergartenAddress": "울산광역시 중구 병영로 41",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DCbvhOiSrvR%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EA%B5%AC%EB%A7%88%20%EC%BA%90%EA%B8%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭이며 울산 중구 주소와 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DCbvhOiSrvR/",
-          "normalizedUrl": "www.instagram.com/reel/dcbvhoisrvr",
-          "normalizedText": "울산 라온수피아유치원 텃밭 고구마 캐기 instagram reel 라온수피아유치원 계정 게시물 검색 결과에서 유치원 옆 텃밭에서 고구마를 캐고 고구마 줄기 놀이를 한 단서가 확인된다.",
-          "htmlSnapshotHash": "51546035",
-          "extractedAt": "2026-07-02T23:59:56.000Z",
-          "structuredFields": {
-            "kindergartenName": "라온수피아유치원",
-            "kindergartenAddress": "울산광역시 중구 병영로 41",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DCbvhOiSrvR%22%20%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B3%A0%EA%B5%AC%EB%A7%88%20%EC%BA%90%EA%B8%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "라온수피아유치원은 로컬 원장부에서 단일 명칭이며 울산 중구 주소와 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:56.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "2ed1a2eb-84fb-4dbf-b008-879be24df3ab": [
-      {
-        "id": "rev-db433b39",
-        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
-        "title": "울산 중구 아리솔유치원 봄소풍 Instagram",
-        "url": "https://www.instagram.com/reel/DXOQt17km9d/",
-        "source": "other",
-        "sourceName": "Instagram · 아리솔유치원",
-        "snippet": "arisol___kindergarten 계정 프로필에서 울산 아리솔유치원임이 확인되며, 2026년 4월 따뜻하고 행복했던 봄소풍 모습을 담은 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "spring-picnic",
-          "field-trip"
-        ],
-        "date": "2026-04-16",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "9e01a468",
-        "structuredFields": {
-          "kindergartenName": "아리솔유치원",
-          "kindergartenAddress": "울산광역시 중구 종가5길 31",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22arisol___kindergarten%22+%22%EC%95%84%EB%A6%AC%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXOQt17km9d/",
-          "normalizedUrl": "www.instagram.com/reel/dxoqt17km9d",
-          "normalizedText": "울산 중구 아리솔유치원 봄소풍 instagram arisol___kindergarten 계정 프로필에서 울산 아리솔유치원임이 확인되며, 2026년 4월 따뜻하고 행복했던 봄소풍 모습을 담은 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "9e01a468",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아리솔유치원",
-            "kindergartenAddress": "울산광역시 중구 종가5길 31",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22arisol___kindergarten%22+%22%EC%95%84%EB%A6%AC%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5d4960f7",
-        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
-        "title": "울산 중구 아리솔유치원 구강보건교육 Instagram",
-        "url": "https://www.instagram.com/reel/DY6tqeiyj6R/",
-        "source": "other",
-        "sourceName": "Instagram · 아리솔유치원",
-        "snippet": "arisol___kindergarten 계정에서 아리솔유치원이 울산중구보건소와 연계해 구강보건교육을 진행하고 올바른 양치 방법과 생활습관을 배운 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "health-education",
-          "safety-education"
-        ],
-        "date": "2026-05-29",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "5940855e",
-        "structuredFields": {
-          "kindergartenName": "아리솔유치원",
-          "kindergartenAddress": "울산광역시 중구 종가5길 31",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DY6tqeiyj6R%22+%22arisol___kindergarten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DY6tqeiyj6R/",
-          "normalizedUrl": "www.instagram.com/reel/dy6tqeiyj6r",
-          "normalizedText": "울산 중구 아리솔유치원 구강보건교육 instagram arisol___kindergarten 계정에서 아리솔유치원이 울산중구보건소와 연계해 구강보건교육을 진행하고 올바른 양치 방법과 생활습관을 배운 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "5940855e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아리솔유치원",
-            "kindergartenAddress": "울산광역시 중구 종가5길 31",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DY6tqeiyj6R%22+%22arisol___kindergarten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-5d1d3ab7",
-        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
-        "title": "울산 중구 아리솔유치원 월드컵 프로젝트 Instagram",
-        "url": "https://www.instagram.com/reel/DZmGDHnS33J/",
-        "source": "other",
-        "sourceName": "Instagram · 아리솔유치원",
-        "snippet": "arisol___kindergarten 계정에서 아리솔유치원이 신체운동 능력 향상과 체력 단련을 위해 축구수업을 진행하고 2026 월드컵 프로젝트 교실활동을 한 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "physical-education",
-          "project-learning"
-        ],
-        "date": "2026-06-14",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "bb904a57",
-        "structuredFields": {
-          "kindergartenName": "아리솔유치원",
-          "kindergartenAddress": "울산광역시 중구 종가5길 31",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZmGDHnS33J%22+%22arisol___kindergarten%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZmGDHnS33J/",
-          "normalizedUrl": "www.instagram.com/reel/dzmgdhns33j",
-          "normalizedText": "울산 중구 아리솔유치원 월드컵 프로젝트 instagram arisol___kindergarten 계정에서 아리솔유치원이 신체운동 능력 향상과 체력 단련을 위해 축구수업을 진행하고 2026 월드컵 프로젝트 교실활동을 한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "bb904a57",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아리솔유치원",
-            "kindergartenAddress": "울산광역시 중구 종가5길 31",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZmGDHnS33J%22+%22arisol___kindergarten%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-eede-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-29a41df4",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 중구 가나유치원 울산과학관 체험활동 Instagram",
-        "url": "https://www.instagram.com/reel/DSty3Dzk7Z7/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "울산 중구 가나유치원 정보와 울산과학관 체험활동 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "science-museum",
-          "field-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "413acaad",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DSty3Dzk7Z7%22+%22가나유치원%22+%22울산과학관%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DSty3Dzk7Z7/",
-          "normalizedUrl": "www.instagram.com/reel/dsty3dzk7z7",
-          "normalizedText": "울산 중구 가나유치원 울산과학관 체험활동 instagram 울산 중구 가나유치원 정보와 울산과학관 체험활동 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "413acaad",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DSty3Dzk7Z7%22+%22가나유치원%22+%22울산과학관%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-b85ac5af",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 가나유치원 봄 산책 Instagram",
-        "url": "https://www.instagram.com/reel/DHKtRy-TtG-/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 울산 중구 가나유치원, 따뜻한 봄날 유치원 주변 산책, 자연 관찰 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "outdoor-activity",
-          "school-life"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "a788c494",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DHKtRy-TtG-%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DHKtRy-TtG-/",
-          "normalizedUrl": "www.instagram.com/reel/dhktry-ttg-",
-          "normalizedText": "울산 가나유치원 봄 산책 instagram instagram 검색 결과에서 울산 중구 가나유치원, 따뜻한 봄날 유치원 주변 산책, 자연 관찰 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "a788c494",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DHKtRy-TtG-%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-1c0fadd4",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 가나유치원 원어민 수업 Instagram",
-        "url": "https://www.instagram.com/reel/C937kuZRkLN/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 울산 중구 가나유치원 원어민 수업, Paper squishy 만들기, 영어 활동 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "english-activity",
-          "classroom-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "9940be07",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C937kuZRkLN%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C937kuZRkLN/",
-          "normalizedUrl": "www.instagram.com/reel/c937kuzrkln",
-          "normalizedText": "울산 가나유치원 원어민 수업 instagram instagram 검색 결과에서 울산 중구 가나유치원 원어민 수업, paper squishy 만들기, 영어 활동 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "9940be07",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C937kuZRkLN%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9ce10f4b",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 중구 가나유치원 부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/DFtyu5Xvdb3/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 울산중구가나유치원, 가나유치원, 울산가나유치원, 부모참여수업 문맥이 확인되는 게시물.",
+        "snippet": "Instagram 검색 결과에서 라온수피아유치원 English Village town, 2학기 학부모참여수업, 울산중구영어유치원 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
           "parent-participation",
-          "open-class"
+          "english-activity"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -963,26 +940,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2f8aa516",
+        "evidenceChecksum": "0897b416",
         "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "kindergartenName": "라온수피아유치원",
+          "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DFtyu5Xvdb3%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "searchUrl": "https://www.google.com/search?q=%22CzD1UmZrHNe%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DFtyu5Xvdb3/",
-          "normalizedUrl": "www.instagram.com/p/dftyu5xvdb3",
-          "normalizedText": "울산 중구 가나유치원 부모참여수업 instagram instagram 검색 결과에서 울산중구가나유치원, 가나유치원, 울산가나유치원, 부모참여수업 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "2f8aa516",
+          "canonicalUrl": "https://www.instagram.com/reel/CzD1UmZrHNe/",
+          "normalizedUrl": "www.instagram.com/reel/czd1umzrhne",
+          "normalizedText": "울산 라온수피아유치원 english village 학부모참여수업 instagram instagram 검색 결과에서 라온수피아유치원 english village town, 2학기 학부모참여수업, 울산중구영어유치원 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "0897b416",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "kindergartenName": "라온수피아유치원",
+            "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DFtyu5Xvdb3%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "searchUrl": "https://www.google.com/search?q=%22CzD1UmZrHNe%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -992,273 +969,219 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-8f1bb529",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 가나유치원 수료식 Reel",
-        "url": "https://www.instagram.com/reel/DGSzUePzNUq/",
+        "id": "rev-9325fc41",
+        "kindergartenId": "1ecec08c-f87f-b044-e053-0a32095ab044",
+        "title": "울산 라온수피아유치원 학부모 참여수업 SNS",
+        "url": "https://www.instagram.com/reel/DAxx6EMPWP1/",
         "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram Reels 검색 결과에서 울산 중구 가나유치원, 따뜻한 수료식과 아이들의 노력 격려 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "kindergarten-event",
-          "completion-ceremony"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "d2b2f9e5",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DGSzUePzNUq%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DGSzUePzNUq/",
-          "normalizedUrl": "www.instagram.com/reel/dgszuepznuq",
-          "normalizedText": "울산 가나유치원 수료식 reel instagram reels 검색 결과에서 울산 중구 가나유치원, 따뜻한 수료식과 아이들의 노력 격려 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "d2b2f9e5",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DGSzUePzNUq%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-ef78cb49",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "title": "울산 가나유치원 봄 소풍 Instagram Post",
-        "url": "https://www.instagram.com/p/DJJQeh7z3Lt/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 봄 소풍 문맥과 울산중구가나유치원, 울산가나유치원 해시태그가 함께 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "picnic",
-          "field-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "evidenceChecksum": "780d19fc",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJJQeh7z3Lt%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DJJQeh7z3Lt/",
-          "normalizedUrl": "www.instagram.com/p/djjqeh7z3lt",
-          "normalizedText": "울산 가나유치원 봄 소풍 instagram post instagram 검색 결과에서 봄 소풍 문맥과 울산중구가나유치원, 울산가나유치원 해시태그가 함께 확인되는 게시물.",
-          "htmlSnapshotHash": "780d19fc",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJJQeh7z3Lt%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "kindergartenName": "가나유치원",
-        "title": "울산 중구 가나유치원 로봇 강아지 체험 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DJbhdo3TMvK/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 울산중구가나유치원 계정의 로봇 강아지 체험 활동이 확인되는 릴.",
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "robot",
-          "field-trip"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJbhdo3TMvK%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
-          "regionEvidence": [
-            "울산중구가나유치원",
-            "울산 중구"
-          ]
-        },
-        "id": "rev-e7b5f256",
-        "evidenceChecksum": "9be6c6c4",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
-          "normalizedUrl": "www.instagram.com/reel/djbhdo3tmvk",
-          "normalizedText": "울산 중구 가나유치원 로봇 강아지 체험 instagram reel instagram 검색 결과에서 울산중구가나유치원 계정의 로봇 강아지 체험 활동이 확인되는 릴.",
-          "htmlSnapshotHash": "9be6c6c4",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJbhdo3TMvK%22+%22%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true,
-            "canonicalUrl": "https://www.instagram.com/reel/DJbhdo3TMvK/",
-            "regionEvidence": [
-              "울산중구가나유치원",
-              "울산 중구"
-            ]
-          }
-        }
-      },
-      {
-        "id": "rev-9987629a",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "kindergartenName": "가나유치원",
-        "title": "울산 가나유치원 부모상담 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DHVAzgUTL8L/",
-        "source": "other",
-        "sourceName": "Instagram · 가나유치원",
-        "snippet": "Instagram 검색 결과에서 가나 부모 상담, 울산가나유치원, 울산중구가나유치원 문맥이 확인되는 릴.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-consultation",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DHVAzgUTL8L%22+%22%EC%9A%B8%EC%82%B0%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EB%AA%A8+%EC%83%81%EB%8B%B4%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/reel/DHVAzgUTL8L/",
-          "regionEvidence": [
-            "울산가나유치원",
-            "울산중구가나유치원",
-            "울산광역시 중구 유곡로 10"
-          ]
-        },
-        "evidenceChecksum": "3a5e2c3d"
-      },
-      {
-        "id": "rev-a842209c",
-        "kindergartenId": "1ecec08c-eede-b044-e053-0a32095ab044",
-        "kindergartenName": "가나유치원",
-        "title": "울산 중구 가나유치원 울산과학관 견학 Instagram Post",
-        "url": "https://www.instagram.com/p/C7lsbR6xh3G/",
-        "source": "other",
-        "sourceName": "Instagram · 울산중구가나유치원",
-        "snippet": "울산중구가나유치원 계정 게시물 검색 결과에서 울산과학관 견학, 다양한 과학 지식 체험 단서가 확인된다.",
+        "sourceName": "Instagram · 라온수피아유치원",
+        "snippet": "라온수피아유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "울산 중구 라온수피아유치원의 학부모 참여수업 Instagram 검색 결과.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "science-center",
-          "field-trip"
+          "official-info"
         ],
+        "content": "라온수피아유치원 학부모 참여수업 문맥이 확인되는 Instagram 검색 결과. 원명이 고유하고 울산 중구 원장부 주소와 맞아 수동 반영했다.",
         "date": null,
-        "collectedAt": "2026-07-02T23:59:59.000Z",
+        "collectedAt": "2026-06-30T21:55:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a842209c",
+        "evidenceChecksum": "07661ce5",
         "structuredFields": {
-          "kindergartenName": "가나유치원",
-          "kindergartenAddress": "울산광역시 중구 유곡로 10",
+          "kindergartenName": "라온수피아유치원",
+          "kindergartenAddress": "울산광역시 중구 병영로 41",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C7lsbR6xh3G%22%20%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+          "searchUrl": "https://www.google.com/search?q=%22DAxx6EMPWP1%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "가나유치원은 동명이 있으나 울산중구가나유치원 단서와 울산 중구 유곡로 주소가 일치해 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C7lsbR6xh3G/",
-          "normalizedUrl": "www.instagram.com/p/c7lsbr6xh3g",
-          "normalizedText": "울산 중구 가나유치원 울산과학관 견학 instagram post 울산중구가나유치원 계정 게시물 검색 결과에서 울산과학관 견학, 다양한 과학 지식 체험 단서가 확인된다.",
-          "htmlSnapshotHash": "a842209c",
-          "extractedAt": "2026-07-02T23:59:59.000Z",
+          "canonicalUrl": "https://www.instagram.com/reel/DAxx6EMPWP1/",
+          "normalizedUrl": "www.instagram.com/reel/daxx6empwp1",
+          "normalizedText": "울산 라온수피아유치원 학부모 참여수업 sns 라온수피아유치원 학부모 참여수업 문맥이 확인되는 instagram 검색 결과. 울산 중구 라온수피아유치원의 학부모 참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "07661ce5",
+          "extractedAt": "2026-06-30T21:55:00.000Z",
           "structuredFields": {
-            "kindergartenName": "가나유치원",
-            "kindergartenAddress": "울산광역시 중구 유곡로 10",
+            "kindergartenName": "라온수피아유치원",
+            "kindergartenAddress": "울산광역시 중구 병영로 41",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C7lsbR6xh3G%22%20%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EA%B0%80%EB%82%98%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B4%80%22",
+            "searchUrl": "https://www.google.com/search?q=%22DAxx6EMPWP1%22+%22%EB%9D%BC%EC%98%A8%EC%88%98%ED%94%BC%EC%95%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "가나유치원은 동명이 있으나 울산중구가나유치원 단서와 울산 중구 유곡로 주소가 일치해 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:59.000Z",
+        "approvedAt": "2026-06-30T21:55:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08c-fc10-b044-e053-0a32095ab044": [
       {
-        "id": "rev-e53e3a9f",
+        "id": "rev-sns-wave724-8c173001",
         "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 중구 은성유치원 공개수업 Instagram",
-        "url": "https://www.instagram.com/reel/DZMUOEWJjuo/",
+        "title": "울산 은성유치원 교통랜드 견학 기록",
+        "url": "https://www.instagram.com/p/DaMbfsAEcF2/",
         "source": "other",
         "sourceName": "Instagram · 은성유치원",
-        "snippet": "울산 중구 은성유치원 공식 정보와 공개수업·동화·부모 참여 문맥이 확인되는 Instagram 릴.",
+        "snippet": "울산 은성유치원 친구들이 교통랜드에서 신호등과 교통안전 교육을 체험한 게시물입니다.",
+        "summary": "유아들이 교통랜드 견학을 통해 안전한 보행과 교통 규칙을 익힌 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "traffic-land",
+          "field-trip",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave724-8c173001",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DaMbfsAEcF2/",
+          "normalizedUrl": "instagram.com/p/dambfsaecf2",
+          "normalizedText": "은성유치원 울산중구유치원 교통랜드 견학 교통안전 신호등",
+          "htmlSnapshotHash": "sns-wave724-8c173001",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DaMbfsAEcF2/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave724"
+      },
+      {
+        "id": "rev-sns-wave750-91e51eba",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 교통안전 골든벨 기록",
+        "url": "https://www.instagram.com/p/DZo3CqDjcG_/",
+        "source": "other",
+        "sourceName": "Instagram · 은성유치원",
+        "snippet": "은성유치원이 울산 중구 단서와 함께 어린이 교통안전 골든벨 활동을 소개한 공개 게시물입니다.",
+        "summary": "울산 중구 은성유치원의 교통안전, 신호등, 안전 수칙 학습 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "traffic-safety",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave750-91e51eba",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZo3CqDjcG_/",
+          "normalizedUrl": "instagram.com/p/dzo3cqdjcg_",
+          "normalizedText": "울산 중구 은성유치원 어린이 교통안전 골든벨 신호등",
+          "htmlSnapshotHash": "sns-wave750-91e51eba",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZo3CqDjcG_/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
+      },
+      {
+        "id": "rev-sns-wave687-e9893cb7",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 유초이음 체육놀이 기록",
+        "url": "https://www.instagram.com/reel/DYL8vwcSwUt/",
+        "source": "other",
+        "sourceName": "Instagram · 울산 은성유치원",
+        "snippet": "울산 은성유치원이 유치원과 초등학교가 함께하는 유초이음 체육놀이 활동과 단계별 체육 교육을 소개한 공개 릴스입니다.",
+        "summary": "유초이음 체육놀이와 매일 이어지는 신체 활동 모습을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "physical-education",
+          "sports-play",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:56.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave687-e9893cb7",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/",
+          "normalizedUrl": "instagram.com/reel/dyl8vwcswut",
+          "normalizedText": "은성유치원 울산은성유치원 울산중구유치원 유초이음 체육놀이 체육활동",
+          "htmlSnapshotHash": "sns-wave687-e9893cb7",
+          "extractedAt": "2026-07-03T23:59:56.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:56.000Z",
+        "approvedBy": "codex-manual-sns-wave687"
+      },
+      {
+        "id": "rev-sns-wave686-b6cc1de4",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 작은 음악회 기록",
+        "url": "https://www.instagram.com/reel/DUH2u-JE_c5/",
+        "source": "other",
+        "sourceName": "Instagram · 울산 은성유치원",
+        "snippet": "울산 은성유치원이 작은 음악회 활동을 소개한 공개 릴스입니다.",
+        "summary": "울산 유치원의 음악회 발표 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "performance",
+          "ulsan"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-b6cc1de4",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/",
+          "normalizedUrl": "instagram.com/reel/duh2u-je_c5",
+          "normalizedText": "은성유치원 울산유치원 울산은성유치원 작은음악회",
+          "htmlSnapshotHash": "sns-wave686-b6cc1de4",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
+      },
+      {
+        "id": "rev-075cb27b",
+        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
+        "title": "울산 은성유치원 체육교육 Instagram",
+        "url": "https://www.instagram.com/p/DWTxjGCAM04/",
+        "source": "other",
+        "sourceName": "Instagram · 은성유치원",
+        "snippet": "Instagram 검색 결과에서 은성유치원의 성장 발달에 맞는 체계적인 체육교육 프로그램 운영 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "open-class",
-          "parent-participation"
+          "physical-education",
+          "curriculum"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -1266,26 +1189,26 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "f19feac6",
+        "evidenceChecksum": "7b2308eb",
         "structuredFields": {
           "kindergartenName": "은성유치원",
           "kindergartenAddress": "울산광역시 중구 산전1길 12",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZMUOEWJjuo%22+%22은성유치원%22+%22울산중구유치원%22",
+          "searchUrl": "https://www.google.com/search?q=%22DWTxjGCAM04%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZMUOEWJjuo/",
-          "normalizedUrl": "www.instagram.com/reel/dzmuoewjjuo",
-          "normalizedText": "울산 중구 은성유치원 공개수업 instagram 울산 중구 은성유치원 공식 정보와 공개수업·동화·부모 참여 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "f19feac6",
+          "canonicalUrl": "https://www.instagram.com/p/DWTxjGCAM04/",
+          "normalizedUrl": "www.instagram.com/p/dwtxjgcam04",
+          "normalizedText": "울산 은성유치원 체육교육 instagram instagram 검색 결과에서 은성유치원의 성장 발달에 맞는 체계적인 체육교육 프로그램 운영 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "7b2308eb",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "은성유치원",
             "kindergartenAddress": "울산광역시 중구 산전1길 12",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZMUOEWJjuo%22+%22은성유치원%22+%22울산중구유치원%22",
+            "searchUrl": "https://www.google.com/search?q=%22DWTxjGCAM04%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1393,47 +1316,47 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-075cb27b",
+        "id": "rev-96902624",
         "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 은성유치원 체육교육 Instagram",
-        "url": "https://www.instagram.com/p/DWTxjGCAM04/",
+        "title": "울산 중구 은성유치원 교통안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DWSs9WCEjY4/",
         "source": "other",
         "sourceName": "Instagram · 은성유치원",
-        "snippet": "Instagram 검색 결과에서 은성유치원의 성장 발달에 맞는 체계적인 체육교육 프로그램 운영 문맥이 확인되는 게시물.",
+        "snippet": "Instagram 검색 결과에서 은성유치원 친구들의 교통안전교육 참여와 울산중구유치원 지역 해시태그가 확인되는 게시물.",
         "tags": [
           "sns",
           "instagram",
-          "address-not-required",
-          "physical-education",
-          "curriculum"
+          "address-confirmed",
+          "safety-education",
+          "traffic-safety"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "7b2308eb",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "evidenceChecksum": "271e799a",
         "structuredFields": {
           "kindergartenName": "은성유치원",
           "kindergartenAddress": "울산광역시 중구 산전1길 12",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWTxjGCAM04%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-          "addressEvidenceRequired": false,
+          "searchUrl": "https://www.google.com/search?q=%22DWSs9WCEjY4%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": true,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DWTxjGCAM04/",
-          "normalizedUrl": "www.instagram.com/p/dwtxjgcam04",
-          "normalizedText": "울산 은성유치원 체육교육 instagram instagram 검색 결과에서 은성유치원의 성장 발달에 맞는 체계적인 체육교육 프로그램 운영 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "7b2308eb",
+          "canonicalUrl": "https://www.instagram.com/p/DWSs9WCEjY4/",
+          "normalizedUrl": "www.instagram.com/p/dwss9wcejy4",
+          "normalizedText": "울산 중구 은성유치원 교통안전교육 instagram post instagram 검색 결과에서 은성유치원 친구들의 교통안전교육 참여와 울산중구유치원 지역 해시태그가 확인되는 게시물.",
+          "htmlSnapshotHash": "271e799a",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "은성유치원",
             "kindergartenAddress": "울산광역시 중구 산전1길 12",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWTxjGCAM04%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
-            "addressEvidenceRequired": false,
+            "searchUrl": "https://www.google.com/search?q=%22DWSs9WCEjY4%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": true,
             "snippetOnly": true
           }
         },
@@ -1491,48 +1414,99 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-96902624",
+        "id": "rev-e53e3a9f",
         "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 중구 은성유치원 교통안전교육 Instagram Post",
-        "url": "https://www.instagram.com/p/DWSs9WCEjY4/",
+        "title": "울산 중구 은성유치원 공개수업 Instagram",
+        "url": "https://www.instagram.com/reel/DZMUOEWJjuo/",
         "source": "other",
         "sourceName": "Instagram · 은성유치원",
-        "snippet": "Instagram 검색 결과에서 은성유치원 친구들의 교통안전교육 참여와 울산중구유치원 지역 해시태그가 확인되는 게시물.",
+        "snippet": "울산 중구 은성유치원 공식 정보와 공개수업·동화·부모 참여 문맥이 확인되는 Instagram 릴.",
         "tags": [
           "sns",
           "instagram",
-          "address-confirmed",
-          "safety-education",
-          "traffic-safety"
+          "address-not-required",
+          "open-class",
+          "parent-participation"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "evidenceChecksum": "271e799a",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "f19feac6",
         "structuredFields": {
           "kindergartenName": "은성유치원",
           "kindergartenAddress": "울산광역시 중구 산전1길 12",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWSs9WCEjY4%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": true,
+          "searchUrl": "https://www.google.com/search?q=%22DZMUOEWJjuo%22+%22은성유치원%22+%22울산중구유치원%22",
+          "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DWSs9WCEjY4/",
-          "normalizedUrl": "www.instagram.com/p/dwss9wcejy4",
-          "normalizedText": "울산 중구 은성유치원 교통안전교육 instagram post instagram 검색 결과에서 은성유치원 친구들의 교통안전교육 참여와 울산중구유치원 지역 해시태그가 확인되는 게시물.",
-          "htmlSnapshotHash": "271e799a",
+          "canonicalUrl": "https://www.instagram.com/reel/DZMUOEWJjuo/",
+          "normalizedUrl": "www.instagram.com/reel/dzmuoewjjuo",
+          "normalizedText": "울산 중구 은성유치원 공개수업 instagram 울산 중구 은성유치원 공식 정보와 공개수업·동화·부모 참여 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "f19feac6",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "은성유치원",
             "kindergartenAddress": "울산광역시 중구 산전1길 12",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWSs9WCEjY4%22+%22%EC%9D%80%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%EC%A4%91%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": true,
+            "searchUrl": "https://www.google.com/search?q=%22DZMUOEWJjuo%22+%22은성유치원%22+%22울산중구유치원%22",
+            "addressEvidenceRequired": false,
             "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "2ed1a2eb-84fb-4dbf-b008-879be24df3ab": [
+      {
+        "id": "rev-5d1d3ab7",
+        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
+        "title": "울산 중구 아리솔유치원 월드컵 프로젝트 Instagram",
+        "url": "https://www.instagram.com/reel/DZmGDHnS33J/",
+        "source": "other",
+        "sourceName": "Instagram · 아리솔유치원",
+        "snippet": "arisol___kindergarten 계정에서 아리솔유치원이 신체운동 능력 향상과 체력 단련을 위해 축구수업을 진행하고 2026 월드컵 프로젝트 교실활동을 한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "physical-education",
+          "project-learning"
+        ],
+        "date": "2026-06-14",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "bb904a57",
+        "structuredFields": {
+          "kindergartenName": "아리솔유치원",
+          "kindergartenAddress": "울산광역시 중구 종가5길 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZmGDHnS33J%22+%22arisol___kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZmGDHnS33J/",
+          "normalizedUrl": "www.instagram.com/reel/dzmgdhns33j",
+          "normalizedText": "울산 중구 아리솔유치원 월드컵 프로젝트 instagram arisol___kindergarten 계정에서 아리솔유치원이 신체운동 능력 향상과 체력 단련을 위해 축구수업을 진행하고 2026 월드컵 프로젝트 교실활동을 한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "bb904a57",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아리솔유치원",
+            "kindergartenAddress": "울산광역시 중구 종가5길 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZmGDHnS33J%22+%22arisol___kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
           }
         },
         "approvalStatus": "approved",
@@ -1540,94 +1514,122 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave686-b6cc1de4",
-        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 은성유치원 작은 음악회 기록",
-        "url": "https://www.instagram.com/reel/DUH2u-JE_c5/",
+        "id": "rev-5d4960f7",
+        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
+        "title": "울산 중구 아리솔유치원 구강보건교육 Instagram",
+        "url": "https://www.instagram.com/reel/DY6tqeiyj6R/",
         "source": "other",
-        "sourceName": "Instagram · 울산 은성유치원",
-        "snippet": "울산 은성유치원이 작은 음악회 활동을 소개한 공개 릴스입니다.",
-        "summary": "울산 유치원의 음악회 발표 활동을 확인할 수 있는 SNS 원문입니다.",
+        "sourceName": "Instagram · 아리솔유치원",
+        "snippet": "arisol___kindergarten 계정에서 아리솔유치원이 울산중구보건소와 연계해 구강보건교육을 진행하고 올바른 양치 방법과 생활습관을 배운 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "health-education",
+          "safety-education"
+        ],
+        "date": "2026-05-29",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "5940855e",
+        "structuredFields": {
+          "kindergartenName": "아리솔유치원",
+          "kindergartenAddress": "울산광역시 중구 종가5길 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DY6tqeiyj6R%22+%22arisol___kindergarten%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DY6tqeiyj6R/",
+          "normalizedUrl": "www.instagram.com/reel/dy6tqeiyj6r",
+          "normalizedText": "울산 중구 아리솔유치원 구강보건교육 instagram arisol___kindergarten 계정에서 아리솔유치원이 울산중구보건소와 연계해 구강보건교육을 진행하고 올바른 양치 방법과 생활습관을 배운 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "5940855e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아리솔유치원",
+            "kindergartenAddress": "울산광역시 중구 종가5길 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DY6tqeiyj6R%22+%22arisol___kindergarten%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-db433b39",
+        "kindergartenId": "2ed1a2eb-84fb-4dbf-b008-879be24df3ab",
+        "title": "울산 중구 아리솔유치원 봄소풍 Instagram",
+        "url": "https://www.instagram.com/reel/DXOQt17km9d/",
+        "source": "other",
+        "sourceName": "Instagram · 아리솔유치원",
+        "snippet": "arisol___kindergarten 계정 프로필에서 울산 아리솔유치원임이 확인되며, 2026년 4월 따뜻하고 행복했던 봄소풍 모습을 담은 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "spring-picnic",
+          "field-trip"
+        ],
+        "date": "2026-04-16",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "9e01a468",
+        "structuredFields": {
+          "kindergartenName": "아리솔유치원",
+          "kindergartenAddress": "울산광역시 중구 종가5길 31",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22arisol___kindergarten%22+%22%EC%95%84%EB%A6%AC%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXOQt17km9d/",
+          "normalizedUrl": "www.instagram.com/reel/dxoqt17km9d",
+          "normalizedText": "울산 중구 아리솔유치원 봄소풍 instagram arisol___kindergarten 계정 프로필에서 울산 아리솔유치원임이 확인되며, 2026년 4월 따뜻하고 행복했던 봄소풍 모습을 담은 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "9e01a468",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아리솔유치원",
+            "kindergartenAddress": "울산광역시 중구 종가5길 31",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22arisol___kindergarten%22+%22%EC%95%84%EB%A6%AC%EC%86%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9A%B8%EC%82%B0%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "ccd41ee5-10f4-42d5-a91d-57353b5e924d": [
+      {
+        "id": "rev-sns-wave712-950f8f18",
+        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
+        "title": "울산 약사가온유치원 방문 클래식 음악회 기록",
+        "url": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+        "source": "other",
+        "sourceName": "Instagram · 울산교육 소식",
+        "snippet": "울산 중구 약사가온유치원이 유아들에게 클래식과 다양한 장르의 음악을 들려주는 방문 클래식 음악회를 운영한 게시물입니다.",
+        "summary": "유아들이 클래식과 여러 음악 장르를 가까이 접한 문화예술 활동 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
+          "classic-concert",
           "music-concert",
-          "performance",
-          "ulsan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:55.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave686-b6cc1de4",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/",
-          "normalizedUrl": "instagram.com/reel/duh2u-je_c5",
-          "normalizedText": "은성유치원 울산유치원 울산은성유치원 작은음악회",
-          "htmlSnapshotHash": "sns-wave686-b6cc1de4",
-          "extractedAt": "2026-07-03T23:59:55.000Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DUH2u-JE_c5/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:55.000Z",
-        "approvedBy": "codex-manual-sns-wave686"
-      },
-      {
-        "id": "rev-sns-wave687-e9893cb7",
-        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 은성유치원 유초이음 체육놀이 기록",
-        "url": "https://www.instagram.com/reel/DYL8vwcSwUt/",
-        "source": "other",
-        "sourceName": "Instagram · 울산 은성유치원",
-        "snippet": "울산 은성유치원이 유치원과 초등학교가 함께하는 유초이음 체육놀이 활동과 단계별 체육 교육을 소개한 공개 릴스입니다.",
-        "summary": "유초이음 체육놀이와 매일 이어지는 신체 활동 모습을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "physical-education",
-          "sports-play",
-          "ulsan"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:56.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave687-e9893cb7",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/",
-          "normalizedUrl": "instagram.com/reel/dyl8vwcswut",
-          "normalizedText": "은성유치원 울산은성유치원 울산중구유치원 유초이음 체육놀이 체육활동",
-          "htmlSnapshotHash": "sns-wave687-e9893cb7",
-          "extractedAt": "2026-07-03T23:59:56.000Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DYL8vwcSwUt/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:56.000Z",
-        "approvedBy": "codex-manual-sns-wave687"
-      },
-      {
-        "id": "rev-sns-wave724-8c173001",
-        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 은성유치원 교통랜드 견학 기록",
-        "url": "https://www.instagram.com/p/DaMbfsAEcF2/",
-        "source": "other",
-        "sourceName": "Instagram · 은성유치원",
-        "snippet": "울산 은성유치원 친구들이 교통랜드에서 신호등과 교통안전 교육을 체험한 게시물입니다.",
-        "summary": "유아들이 교통랜드 견학을 통해 안전한 보행과 교통 규칙을 익힌 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "traffic-safety",
-          "traffic-land",
-          "field-trip",
+          "arts-education",
           "ulsan"
         ],
         "date": null,
@@ -1635,54 +1637,52 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave724-8c173001",
+        "evidenceChecksum": "sns-wave712-950f8f18",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DaMbfsAEcF2/",
-          "normalizedUrl": "instagram.com/p/dambfsaecf2",
-          "normalizedText": "은성유치원 울산중구유치원 교통랜드 견학 교통안전 신호등",
-          "htmlSnapshotHash": "sns-wave724-8c173001",
+          "canonicalUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/",
+          "normalizedUrl": "instagram.com/p/dkepyflt3zz",
+          "normalizedText": "약사가온유치원 울산 중구 방문 클래식 음악회 다양한 장르 음악",
+          "htmlSnapshotHash": "sns-wave712-950f8f18",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DaMbfsAEcF2/"
+          "sourcePageUrl": "https://www.instagram.com/p/DKEPYFlT3Zz/"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave724"
+        "approvedBy": "codex-manual-sns-wave712"
       },
       {
-        "id": "rev-sns-wave750-91e51eba",
-        "kindergartenId": "1ecec08c-fc10-b044-e053-0a32095ab044",
-        "title": "울산 은성유치원 교통안전 골든벨 기록",
-        "url": "https://www.instagram.com/p/DZo3CqDjcG_/",
-        "source": "other",
-        "sourceName": "Instagram · 은성유치원",
-        "snippet": "은성유치원이 울산 중구 단서와 함께 어린이 교통안전 골든벨 활동을 소개한 공개 게시물입니다.",
-        "summary": "울산 중구 은성유치원의 교통안전, 신호등, 안전 수칙 학습 활동을 확인할 수 있는 원문입니다.",
+        "id": "rev-894110f5",
+        "kindergartenId": "ccd41ee5-10f4-42d5-a91d-57353b5e924d",
+        "title": "울산 약사가온유치원 입학설명회 기록 20251021",
+        "url": "https://blog.naver.com/PostView.naver?blogId=aram9295&logNo=224048073264",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체...",
+        "summary": "내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔...",
         "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "traffic-safety",
-          "ulsan"
+          "public"
         ],
         "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "collectedAt": "2026-06-29T07:50:09.390Z",
+        "relevanceScore": 6,
         "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave750-91e51eba",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "a3f162ff",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZo3CqDjcG_/",
-          "normalizedUrl": "instagram.com/p/dzo3cqdjcg_",
-          "normalizedText": "울산 중구 은성유치원 어린이 교통안전 골든벨 신호등",
-          "htmlSnapshotHash": "sns-wave750-91e51eba",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DZo3CqDjcG_/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave750"
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=aram9295&logNo=224048073264",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=aram9295&logno=224048073264",
+          "normalizedText": "울산 약사가온유치원 입학설명회 기록 20251021 26 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체... 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔... 내년 유치원을 생각하며, 중구 몇 곳의 유치원 입학설명회를 신청해두었어요.오늘은 생애 첫 유치원 입학설명회에 다녀왔는데, 나중에 기억하기 위해 기록용으로 정리해봅니다.※포스팅 내용은 제가 느낀거라 주관적이고, 틀린것도 있을 수 있습니다유치원 위치 및 기본 정보-위치: 약사동, 약사중학교와 인접-개원: 2021년-유형: 국공립 유치원-특징: 시설이 깨끗하고, 건물이 넓고 쾌적함 자연 친화적 체험: 놀이터, 화단, 작은 숲이 있어 유치원 내에서 자연 체험 가능 실내 시설 : 초등학교 축소판 느낌 꿈자람실 도서관도 있고/ 음악실 급식실 (급식실보고 좀 놀램, 초등학교 적응 완전 가능하겠다 싶었어요) / 생각놀이실 /양호실 등 교실 : 넓고 깔끔했어요 . 손씼는 공간도 있어요 프로그램 / 방과후 활동-음악: 뮤직팡팡-체육: 펀플렉스-영어: 정글비트 등 학급 정원 3세반 14명으로 3반 4세반 18명 3반5세반 20명 3반국공립이라 학급 정원 14명으로 작은게 제일 맘에 드네요 공립은 우선모집 60% 뽑고사립은 우선모집 100% 차이점이라고 하더라고요 -1층 3세반/2층 4세반 / 3층 5세반-엘리베이터 o-초등학교 축소판느낌으로 급식실, 양호실, 교무실 있는게 좀 놀랬음-저녁 돌봄 19시30분까지 가능-방학 :총 4주 급식o, 차량 o 그 4주 중 1주는 진짜 방학 급식o, 차량x (맞벌이 아니더라도 신청하면 돌봄 가능)-4시부터 하원 차량 운행-현장 체험 월 1회-원어민 x-주1회씩 특활 수업 -비용 x (일체 돈 내는게 없다함)-특수반이 있음-선생님들이 4년에 한번씩 로테이션",
+          "htmlSnapshotHash": "a3f162ff",
+          "extractedAt": "2026-06-29T07:50:09.390Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%95%BD%EC%82%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9A%B8%EC%82%B0+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "약사가온유치원",
+            "kindergartenAddress": "울산광역시 중구 평산4길 10",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%95%BD%EC%82%AC%EA%B0%80%EC%98%A8%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9A%B8%EC%82%B0+%EC%A4%91%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ]
   }

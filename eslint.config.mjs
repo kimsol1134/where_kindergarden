@@ -12,10 +12,21 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    ".claude/worktrees/**",
+    "playwright-report/**",
+    "test-results/**",
+    "scripts/review-autoresearch/sessions/**",
     // Capacitor native platforms (generated code)
     "android/**",
     "ios/**",
   ]),
+  {
+    files: ["scripts/**/*.js"],
+    rules: {
+      // Historical maintenance utilities are intentionally CommonJS scripts.
+      "@typescript-eslint/no-require-imports": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

@@ -1,181 +1,403 @@
 {
-  "version": "2026-07-03",
-  "totalCount": 57,
+  "version": "2026-08-06",
+  "totalCount": 60,
   "kindergartenCount": 21,
   "reviews": {
-    "1ecec08d-0579-b044-e053-0a32095ab044": [
+    "1ecec08c-efe3-b044-e053-0a32095ab044": [
       {
-        "id": "rev-5048-qj23",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "인천 부평구 산곡동 동심유치원 후기 - 원장님이 교육에 대한 열정이 매우 뛰어나요",
-        "url": "http://cafe.naver.com/tabong98/5048",
-        "source": "naver_cafe",
-        "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
-        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 동심유치원 환경 및 시설 ]... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
+        "id": "rev-sns-wave709-0e0bd0b1",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 근산유치원 가족운동회 응원전 기록",
+        "url": "https://www.instagram.com/p/DZ69w0VEzpH/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "근산유치원 친구들이 가족운동회를 앞두고 청팀과 홍팀으로 나뉘어 응원 대항전을 펼친 게시물입니다.",
+        "summary": "유아들이 팀 응원과 운동회 준비 활동을 통해 협동과 소속감을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "sports-day",
+          "team-cheering",
+          "physical-activity",
+          "incheon"
+        ],
         "date": null,
-        "collectedAt": "2026-02-18T06:13:58.246Z",
-        "relevanceScore": 3
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave709-0e0bd0b1",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DZ69w0VEzpH/",
+          "normalizedUrl": "instagram.com/p/dz69w0vezph",
+          "normalizedText": "근산유치원 가족운동회 청팀 홍팀 응원 대항전",
+          "htmlSnapshotHash": "sns-wave709-0e0bd0b1",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DZ69w0VEzpH/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave709"
       },
       {
-        "id": "rev-np-2199-0-s2uf",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "리뷰 68사진 22팔로워 1 상담예약 오늘은 실외 놀이터 활동을 했나봐요~ㅎㅎㅎ 아이가 집...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "리뷰 68사진 22팔로워 1 상담예약 오늘은 실외 놀이터 활동을 했나봐요~ㅎㅎㅎ 아이가 집에 와서 “텃밭에 무가 진짜 많아. 우리가 수확할꺼야!” 하면서 신나게 이야기하더라고요. 체험 중심 활동이 아이에게 큰 즐거움이 되는 것 같아요ㅎㅎ 더보기 1번째 방문",
-        "date": "2025-12-30",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
+        "id": "rev-b6df655b",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 근산유치원 검단 선사박물관 견학 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DQshpb1ElJ5/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "근산유치원 계정에서 7살 형님들이 검단 선사박물관으로 견학을 다녀온 문맥과 문화관광 해설사 단서가 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "museum-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "8fcc8458",
+        "structuredFields": {
+          "kindergartenName": "근산유치원",
+          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQshpb1ElJ5%22+%22%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%80%EB%8B%A8+%EC%84%A0%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "근산유치원은 로컬 원장부 단일 매칭이며 검단 선사박물관 견학 문맥이 인천 로컬 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQshpb1ElJ5/",
+          "normalizedUrl": "www.instagram.com/reel/dqshpb1elj5",
+          "normalizedText": "인천 근산유치원 검단 선사박물관 견학 instagram reel 근산유치원 계정에서 7살 형님들이 검단 선사박물관으로 견학을 다녀온 문맥과 문화관광 해설사 단서가 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "8fcc8458",
+          "extractedAt": "2026-07-02T23:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "근산유치원",
+            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQshpb1ElJ5%22+%22%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%80%EB%8B%A8+%EC%84%A0%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "근산유치원은 로컬 원장부 단일 매칭이며 검단 선사박물관 견학 문맥이 인천 로컬 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-np-2199-1-md3y",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "리뷰 134사진 359팔로워 1 상담예약 생일파티를 유치원에서 해주셨는데요 아이가 너무 행...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "리뷰 134사진 359팔로워 1 상담예약 생일파티를 유치원에서 해주셨는데요 아이가 너무 행복해했어요. 사진도 예쁘게 찍어주고, 친구들과 함께 즐기는 모습이 정말 보기 좋았습니다🎂💛 더보기 1번째 방문",
-        "date": "2025-12-30",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
+        "id": "rev-132fc7fa",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 부평 근산유치원 딸기체험 농부교실 Instagram",
+        "url": "https://www.instagram.com/reel/DYBNtiGPZU8/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "kuen_san2 계정에서 근산유치원 조약돌반 원아들이 농업기술센터 농부교실에서 딸기 수확과 먹거리 교육을 경험한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "farm-experience",
+          "field-trip"
+        ],
+        "date": "2026-05-06",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "35f21a3d",
+        "structuredFields": {
+          "kindergartenName": "근산유치원",
+          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DYBNtiGPZU8%22+%22kuen_san2%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DYBNtiGPZU8/",
+          "normalizedUrl": "www.instagram.com/reel/dybntigpzu8",
+          "normalizedText": "인천 부평 근산유치원 딸기체험 농부교실 instagram kuen_san2 계정에서 근산유치원 조약돌반 원아들이 농업기술센터 농부교실에서 딸기 수확과 먹거리 교육을 경험한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "35f21a3d",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "근산유치원",
+            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DYBNtiGPZU8%22+%22kuen_san2%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-np-2199-2-2gip",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "pjihye6 리뷰 232사진 754 상담예약 선생님들께서 아이들에게 진심인게 느껴지고 다...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "pjihye6 리뷰 232사진 754 상담예약 선생님들께서 아이들에게 진심인게 느껴지고 다들너무 친절하시고 섬세하게 잘봐주세요~ 저는 그것만으로도 너무 감사합니다~!! 1번째 방문",
-        "date": "2025-12-29",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
+        "id": "rev-9d13fe5d",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 부평구 근산유치원 운영위원회 Instagram",
+        "url": "https://www.instagram.com/reel/DWfsgo2j9po/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "kuen_san2 계정에서 근산유치원 운영위원회가 학사일정, 방과후 프로그램 운영, 예결산 등 안건을 학부모 위원과 함께 논의한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "school-committee",
+          "after-school"
+        ],
+        "date": "2026-03-29",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "8a55f25e",
+        "structuredFields": {
+          "kindergartenName": "근산유치원",
+          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DWfsgo2j9po%22+%22kuen_san2%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DWfsgo2j9po/",
+          "normalizedUrl": "www.instagram.com/reel/dwfsgo2j9po",
+          "normalizedText": "인천 부평구 근산유치원 운영위원회 instagram kuen_san2 계정에서 근산유치원 운영위원회가 학사일정, 방과후 프로그램 운영, 예결산 등 안건을 학부모 위원과 함께 논의한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "8a55f25e",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "근산유치원",
+            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DWfsgo2j9po%22+%22kuen_san2%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-np-2199-3-8oxj",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "미성1111 리뷰 29사진 27 상담예약 아이가 등원할 때마다 선생님이 이름 불러주며 꼭 ...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "미성1111 리뷰 29사진 27 상담예약 아이가 등원할 때마다 선생님이 이름 불러주며 꼭 안아주시는 모습이 참 좋았어요. 작은 행동 하나하나에서 진심이 느껴져서 마음이 편안했습니다. 아이도 유치원을 ‘놀이터’처럼 여겨서 매일 기분 좋게 보냅니다. 더보기 1번째 방문",
-        "date": "2025-12-24",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
+        "id": "rev-dce077a2",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 부평 근산유치원 2026학년도 입학식 Instagram",
+        "url": "https://www.instagram.com/reel/DV0O8PwD_3b/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "kuen_san2 계정에서 2026학년도 근산유치원 입학식, 애국조회, 교사 소개, 교구 탐색, 동화책과 간식으로 첫날을 시작한 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "event"
+        ],
+        "date": "2026-03-13",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "a598a0c7",
+        "structuredFields": {
+          "kindergartenName": "근산유치원",
+          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+kuen_san2+%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DV0O8PwD_3b/",
+          "normalizedUrl": "www.instagram.com/reel/dv0o8pwd_3b",
+          "normalizedText": "인천 부평 근산유치원 2026학년도 입학식 instagram kuen_san2 계정에서 2026학년도 근산유치원 입학식, 애국조회, 교사 소개, 교구 탐색, 동화책과 간식으로 첫날을 시작한 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "a598a0c7",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "근산유치원",
+            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+kuen_san2+%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-np-2199-4-j53o",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "리뷰 150사진 52 상담예약 아이 적응 기간이 걱정됐는데 선생님들이 정말 세심하게 챙겨주...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "리뷰 150사진 52 상담예약 아이 적응 기간이 걱정됐는데 선생님들이 정말 세심하게 챙겨주셔서 생각보다 훨씬 빨리 적응했어요. 수업 내용도 매일 사진으로 공유해주셔서 어떤 활동을 하는지 확인할 수 있어 좋습니다. 전반적으로 안정적이고 믿음 가는 원이에요. 더보기 1번째 방문",
-        "date": "2025-12-23",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
+        "id": "rev-8fb38fdd",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
+        "title": "인천 부평 근산유치원 햄 에그 샐러드 요리활동 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DRO0VgGEqNq/",
+        "source": "other",
+        "sourceName": "Instagram · 근산유치원",
+        "snippet": "Instagram 검색 결과에서 kuen_san2 계정의 근산유치원 새싹반 햄 에그 샐러드 만들기 요리활동 문맥이 확인되는 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-confirmed",
+          "cooking",
+          "class-event"
+        ],
+        "date": "2025-11-19",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "3eb862b2",
+        "structuredFields": {
+          "kindergartenName": "근산유치원",
+          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DRO0VgGEqNq%22+%22kuen_san2%22+%22%ED%96%84+%EC%97%90%EA%B7%B8+%EC%83%90%EB%9F%AC%EB%93%9C%22",
+          "addressEvidenceRequired": true,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRO0VgGEqNq/",
+          "normalizedUrl": "www.instagram.com/reel/dro0vggeqnq",
+          "normalizedText": "인천 부평 근산유치원 햄 에그 샐러드 요리활동 instagram reel instagram 검색 결과에서 kuen_san2 계정의 근산유치원 새싹반 햄 에그 샐러드 만들기 요리활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "3eb862b2",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "근산유치원",
+            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DRO0VgGEqNq%22+%22kuen_san2%22+%22%ED%96%84+%EC%97%90%EA%B7%B8+%EC%83%90%EB%9F%AC%EB%93%9C%22",
+            "addressEvidenceRequired": true,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-np-2199-5-bn4d",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "Seungmi93 리뷰 73사진 27팔로워 6 상담예약 지금은 매일 유치원 가는 걸 즐거워...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "Seungmi93 리뷰 73사진 27팔로워 6 상담예약 지금은 매일 유치원 가는 걸 즐거워해요. 선생님과 친구들 덕분에 아이가 하루하루 행복해하는 모습이 보여서 정말 너무예뻐요 ^^ 1번째 방문",
-        "date": "2025-12-22",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
-      },
+        "id": "rev-99852239",
+        "title": "근산유치원을 입학 후 다닌지 벌써 2년 감사한 것이 참 많은 것...",
+        "url": "https://blog.naver.com/icanfly0214/221380063846",
+        "source": "naver_blog",
+        "sourceName": "법률상담공작소",
+        "snippet": "물론 저희가 다른 유치원을 다녀보지도 않아서 비교를 할 수가 없고, 다른 곳도 똑 같이 하는지 알 수는... 저희가 곧 서울로 다시 이사를 가야 하다 보니 아마도 근산유치원은 올해가 마지막 일 것 같습니다. 아들...",
+        "date": "2018-10-20",
+        "collectedAt": "2026-01-30T02:56:08.767Z",
+        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-efe4-b044-e053-0a32095ab044": [
       {
-        "id": "rev-np-2199-6-dpt2",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "참된사람43 리뷰 163사진 483 상담예약 요즘 유치원에서 만들어 오는 작품이나 활동 결...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "참된사람43 리뷰 163사진 483 상담예약 요즘 유치원에서 만들어 오는 작품이나 활동 결과물이 정말 다양한데요ㅎ 미술, 신체 놀이, 소근육 활동 등 프로그램 구성이 알차서 아이가 매일 신나 해요ㅎ 특히 요리활동 날에는 집에 와서 또 만들어보자고 할 정도로 즐거웠다고하네요ㅎ 교육환경 진짜 좋아요 추천합니다! 더보기 1번째 방문",
-        "date": "2025-12-18",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
-      },
+        "id": "rev-99852240",
+        "title": "후기 /동탄/능동/이화유치원/나인유치원/하늘빛유치원...",
+        "url": "https://blog.naver.com/idrhythm-/224146874862",
+        "source": "naver_blog",
+        "sourceName": "ID-Rhythmic Gymnastics",
+        "snippet": "솔직히 처음엔 리듬체조가 어렵지 않을까, 아이한테 부담 되진 않을까 걱정했는데 몇 달 다녀보니 왜 주변에서 추천이 많은지 알겠더라고요. 1. 여자아이 전문이라 확실히 다르더라고요 가장 마음에 들었던 건...",
+        "date": "2026-01-14",
+        "collectedAt": "2026-01-30T02:56:08.767Z",
+        "kindergartenId": "1ecec08c-efe4-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-f37c-b044-e053-0a32095ab044": [
       {
-        "id": "rev-np-2199-7-9wxb",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "mun2597 리뷰 67사진 79팔로워 1 상담예약 깔끔하고 체계적인 원이라고 느꼈어요. ...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "mun2597 리뷰 67사진 79팔로워 1 상담예약 깔끔하고 체계적인 원이라고 느꼈어요. 등원·하원 시스템도 잘 되어 있고 알림장 업데이트가 빨라서 부모 입장에서 편합니다. 선생님들도 전문적이면서도 아이에게 따뜻하게 대해주셔서 믿고 맡길 수 있었어요. 더보기 1번째 방문",
-        "date": "2025-12-18",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
-      },
-      {
-        "id": "rev-np-2199-9-82kb",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "placetori 리뷰 81사진 69 상담예약 처음엔 친구들과 어울리는 걸 어려워했어요. ...",
-        "url": "https://m.place.naver.com/place/16522199/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "placetori 리뷰 81사진 69 상담예약 처음엔 친구들과 어울리는 걸 어려워했어요. 선생님이 자연스럽게 도와주셔서 이제 친구들과 즐겁게 놀이하고 있어요. 집에서도 친구 이야기만 하면 웃음꽃이 피네요ㅎㅎ 1번째 방문",
-        "date": "2025-12-12",
-        "collectedAt": "2026-04-05T15:23:06.221Z"
-      },
-      {
-        "id": "rev-23f1a03b",
-        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
-        "title": "아이를 위한 감성놀이 생태활동이 준비되어있는 인천 부평 동심유치원",
-        "url": "https://blog.naver.com/PostView.naver?blogId=vjva38&logNo=224118184682",
+        "id": "rev-f0bf708f",
+        "kindergartenId": "1ecec08c-f37c-b044-e053-0a32095ab044",
+        "title": "[부평구 갈산동]새빛솔금유치원입학설명회",
+        "url": "https://blog.naver.com/PostView.naver?blogId=kidsat_solgeum&logNo=224053728665",
         "source": "naver_blog",
         "sourceName": "네이버 블로그",
-        "snippet": "안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡...",
-        "summary": "안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답...",
+        "snippet": "10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수...",
+        "summary": "10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다.",
         "tags": [
           "public"
         ],
         "date": null,
-        "collectedAt": "2026-06-26T07:15:34.501Z",
-        "relevanceScore": 4,
+        "collectedAt": "2026-06-26T07:20:22.245Z",
+        "relevanceScore": 9,
         "accessMode": "public",
         "evidenceType": "longform_post",
         "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "39e73a14",
+        "evidenceChecksum": "c118a583",
         "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=vjva38&logNo=224118184682",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=vjva38&logno=224118184682",
-          "normalizedText": "아이를 위한 감성놀이 생태활동이 준비되어있는 인천 부평 동심유치원 아이들 유치원 하나 고르는 데에도 정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고 생태활동 감성놀이 등등 다양한 활동은 물론 부평구 산곡동에 위치해있고 40년 역사와 전통을 가져 오랜 시간 사랑받아온 인천부평 동심유치원을... 부모교육이나 동심모임 같은 여러 행사가 진행되는 다목적 공간이랍니다! 이곳은 아이들이 가장~좋아하는 공간인데요... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답니다내부 시설은 물론요즘은 뛰어놀 일이 많이 없는아이들이 맘편히 뛰어놀 수 있도록야외 놀이터와 텃밭 공간도 준비되어 있어요 특히 햇살이 잘 드는3층 강당에서는넓은 공간을 활용해서음악, 체육, 축구 등 다양한 학습과인형극, 공연, 부모교육이나 동심모임 같은여러 행사가 진행되는다목적 공간이랍니다! 이곳은 아이들이 가장~좋아하는 공간인데요사진만 봐도 엄청 신나할 것 같은 이곳은지하 1층에 있는 실내 놀이터예요냉난방시설이 완비되어 있기 때문에계절 상관없이 뛰어놀며건강도 챙길 수 있겠죠? 그리고 잠깐 설명드렸던실외 놀이터와 그늘막이 설치되어 있어미술 퍼포먼스나 텃밭 수업 같은여러 야외활동도 활발히 이루어지고 있답니다! 감성놀이 위주로수업의 질을 높이기 위해 마련된특별활동 전용 공간도 빼놓을 수 없는데요✔️푸드 아트실은 아이들이예쁜 앞치마를 두르고 모자를 쓰고한달에 한번!재미와 창의성을 길러주는 요리활동을 해요알록달록한 요리도구를 사용해주제에 맞는 요리를 배우기도 하고직접 만들어먹는 즐거움도 느낀답니다 ✔️미술실에서는 다양한 재료를 써서상상력과 창의력을 마음껏 표현할 수 있는데요아이들이 공부 뿐만 아니라감성놀이 를 통해뇌를 활성화시킬 수 있도록여러 커리큘럼이 준비되어 있어요이게 끝이 아니라야외 텃밭에서 직접 작물도 심어보고수확한 것들로 요리 체험으로 이어진답니다 식물의 성장 과정을 관찰하면서자연에 대한 관심과생명에 대한 소중함도 배울 수 있다는 건일석이조겠죠? 봄이 되면 상추 감자 방울토마토 완두콩부터애플수박 옥수수 당근 무 딸기까지제철채소들이 무엇인지도 알아볼 수 있어요넓고 쾌적한 공간은아이들이 더욱 더 자유롭고쾌활하게 활동할 수 있도록 도와주는데요 동심유치원의 교실만 봐도공간 하나하나에 아이들을 위한세심한 배려가 녹아져있다는 걸 느낄 수 있답니다이외에도 정말 많은 장점들이있는 곳이었는데요 직접 방문하셔서 따뜻한 분위기와교육 환경을 생생하게 느껴보시면결정하시는데에 더욱 좋은 기회가 되겠죠? 동심유치원(@dongsim.kids) • instagram 사진 및 동영상 팔로워 89명, 팔로잉 2명, 게시물 74개 - 동심유치원(@dongsim.kids)님의 instagram 사진 및 동영상 보기 www.instagram.com 위 인스타그램 계정으로늘 소식까지 볼 수 있으니더욱 아이를 믿고 맡길 수 있는 곳이라는 걸알아볼 수 있었답니다~ 동심유치원 인천광역시 부평구 원적로416번길 20 이 블로그의 체크인 이 장소의 다른 글 📍주소인천 부평구 원적로416번길 20📍문의전화032-527-6711",
-          "htmlSnapshotHash": "39e73a14",
-          "extractedAt": "2026-06-26T07:15:34.501Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kidsat_solgeum&logNo=224053728665",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kidsat_solgeum&logno=224053728665",
+          "normalizedText": "[부평구 갈산동]새빛솔금유치원입학설명회 10월 25일 새빛솔금유치원의 입학 설명회 -국가수준의 누리과정 -방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니… 신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술 -체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다 -숲체험 : 전문가와 함께! -굴포천의 아름다운... 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수... 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다. 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다.",
+          "htmlSnapshotHash": "c118a583",
+          "extractedAt": "2026-06-26T07:20:22.245Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EB%B9%9B%EC%86%94%EA%B8%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
           "structuredFields": {
-            "kindergartenName": "동심유치원",
-            "kindergartenAddress": "인천광역시 부평구 원적로416번길 38",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "kindergartenName": "새빛솔금유치원",
+            "kindergartenAddress": "인천광역시 부평구 주부토로 146",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EB%B9%9B%EC%86%94%EA%B8%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
             "accessMode": "public"
           }
         }
       }
     ],
-    "1ecec08d-09c7-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-5052-9cp2",
-        "kindergartenId": "1ecec08d-09c7-b044-e053-0a32095ab044",
-        "title": "인천 부평구 산곡동 산곡유치원 후기 - 아이들 위주의 수업이에요",
-        "url": "http://cafe.naver.com/tabong98/5052",
-        "source": "naver_cafe",
-        "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
-        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 산곡유치원 환경 및... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
-        "date": null,
-        "collectedAt": "2026-02-18T06:13:58.247Z",
-        "relevanceScore": 3
-      }
-    ],
     "1ecec08c-f467-b044-e053-0a32095ab044": [
       {
-        "id": "rev-5028-5xgk",
+        "id": "rev-47ec3228",
         "kindergartenId": "1ecec08c-f467-b044-e053-0a32095ab044",
-        "title": "인천 부평구 산곡동 정민유치원 후기 - 프로그램이 다양해서 아이들이 좋아해요~",
-        "url": "http://cafe.naver.com/tabong98/5028",
-        "source": "naver_cafe",
-        "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
-        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 정민유치원 환경 및... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
+        "title": "부평 정민유치원 작은음악회 연습 Reel",
+        "url": "https://www.instagram.com/reel/DDy_cGwyHIn/",
+        "source": "other",
+        "sourceName": "Instagram · 정민유치원",
+        "snippet": "Instagram Reels 검색 결과에서 정민유치원, 산곡동, 부평유치원, 작은음악회 연습과 발표회 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "kindergarten-event",
+          "music-concert"
+        ],
         "date": null,
-        "collectedAt": "2026-02-18T06:13:58.247Z",
-        "relevanceScore": 3
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "9660e0dd",
+        "structuredFields": {
+          "kindergartenName": "정민유치원",
+          "kindergartenAddress": "인천광역시 부평구 부흥로111번길 51",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDy_cGwyHIn%22+%22%EC%A0%95%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%EA%B3%A1%EB%8F%99%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DDy_cGwyHIn/",
+          "normalizedUrl": "www.instagram.com/reel/ddy_cgwyhin",
+          "normalizedText": "부평 정민유치원 작은음악회 연습 reel instagram reels 검색 결과에서 정민유치원, 산곡동, 부평유치원, 작은음악회 연습과 발표회 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "9660e0dd",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "정민유치원",
+            "kindergartenAddress": "인천광역시 부평구 부흥로111번길 51",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDy_cGwyHIn%22+%22%EC%A0%95%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%EA%B3%A1%EB%8F%99%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       },
       {
         "id": "rev-e7d4cc9d",
@@ -227,266 +449,60 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-47ec3228",
+        "id": "rev-5028-5xgk",
         "kindergartenId": "1ecec08c-f467-b044-e053-0a32095ab044",
-        "title": "부평 정민유치원 작은음악회 연습 Reel",
-        "url": "https://www.instagram.com/reel/DDy_cGwyHIn/",
-        "source": "other",
-        "sourceName": "Instagram · 정민유치원",
-        "snippet": "Instagram Reels 검색 결과에서 정민유치원, 산곡동, 부평유치원, 작은음악회 연습과 발표회 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "kindergarten-event",
-          "music-concert"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "9660e0dd",
-        "structuredFields": {
-          "kindergartenName": "정민유치원",
-          "kindergartenAddress": "인천광역시 부평구 부흥로111번길 51",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DDy_cGwyHIn%22+%22%EC%A0%95%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%EA%B3%A1%EB%8F%99%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DDy_cGwyHIn/",
-          "normalizedUrl": "www.instagram.com/reel/ddy_cgwyhin",
-          "normalizedText": "부평 정민유치원 작은음악회 연습 reel instagram reels 검색 결과에서 정민유치원, 산곡동, 부평유치원, 작은음악회 연습과 발표회 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "9660e0dd",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "정민유치원",
-            "kindergartenAddress": "인천광역시 부평구 부흥로111번길 51",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DDy_cGwyHIn%22+%22%EC%A0%95%EB%AF%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%82%B0%EA%B3%A1%EB%8F%99%22+%22%EC%9E%91%EC%9D%80%EC%9D%8C%EC%95%85%ED%9A%8C%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-fa69-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-5026-w7bf",
-        "kindergartenId": "1ecec08c-fa69-b044-e053-0a32095ab044",
-        "title": "인천 부평구 부평동 경희동화나라유치원 후기 - 다양한 교육을 하고 신식 시설을 갖추고 있고 아이 눈높이 ...",
-        "url": "http://cafe.naver.com/tabong98/5026",
+        "title": "인천 부평구 산곡동 정민유치원 후기 - 프로그램이 다양해서 아이들이 좋아해요~",
+        "url": "http://cafe.naver.com/tabong98/5028",
         "source": "naver_cafe",
         "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
-        "snippet": "[ 경희동화나라유치원 환경 및 시설 ] - 건물입지 : 단독 - 주변환경 : 주택지역 - 시설유무 : 실외놀이터... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #부평동유치원",
+        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 정민유치원 환경 및... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
         "date": null,
         "collectedAt": "2026-02-18T06:13:58.247Z",
-        "relevanceScore": 4
+        "relevanceScore": 3
       }
     ],
-    "1ecec08d-0392-b044-e053-0a32095ab044": [
+    "1ecec08c-f8c1-b044-e053-0a32095ab044": [
       {
-        "id": "rev-np-0605-6-9sg2",
-        "kindergartenId": "1ecec08d-0392-b044-e053-0a32095ab044",
-        "title": "유짠이 리뷰 51사진 13 선생님들이 다 밝으시고 좋아요~ 아이가 신나게 다녀서 3년 꽉 ...",
-        "url": "https://m.place.naver.com/place/13350605/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "유짠이 리뷰 51사진 13 선생님들이 다 밝으시고 좋아요~ 아이가 신나게 다녀서 3년 꽉 채우고 졸업시키려구요 표정을 눌러 반응을 남겨 보세요! 1번째 방문",
-        "date": "2022-08-22",
-        "collectedAt": "2026-04-05T15:22:55.685Z"
-      },
-      {
-        "id": "rev-d572cb80",
-        "kindergartenId": "1ecec08d-0392-b044-e053-0a32095ab044",
-        "title": "부평 산곡동 유치원, 2026년도 입학설명회 후기 (햇살/이화/은성아트/홍익/꿈나라)",
-        "url": "https://blog.naver.com/PostView.naver?blogId=warmtoday_&logNo=224060160488",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만...",
-        "summary": "아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:15:17.799Z",
-        "relevanceScore": 7,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "8821277a",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=warmtoday_&logNo=224060160488",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=warmtoday_&logno=224060160488",
-          "normalizedText": "부평 산곡동 유치원, 2026년도 입학설명회 후기 (햇살/이화/은성아트/홍익/꿈나라) 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라 복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에 집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다 은성아트 외에는 도보권이라 셔틀은 의미가 없다 햇살유치원 이화유치원 은성아트어린이집 홍익유치원 꿈나라유치원 워낙 유치원 정보가 없어서 네이버 검색도 해보고... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자료 및 글의 무단 복제나, 재게시, 외부 공유를 금합니다.",
-          "htmlSnapshotHash": "8821277a",
-          "extractedAt": "2026-06-26T07:15:17.799Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BF%88%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "꿈나라유치원",
-            "kindergartenAddress": "인천광역시 부평구 안남로 272",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BF%88%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08d-0a2f-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-np-2443-0-rzwz",
-        "kindergartenId": "1ecec08d-0a2f-b044-e053-0a32095ab044",
-        "title": "지똥11 리뷰 1,209사진 297팔로워 4 친절한 선생님들과 쾌적한 유치원 입니다 1번째...",
-        "url": "https://m.place.naver.com/place/16572443/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "지똥11 리뷰 1,209사진 297팔로워 4 친절한 선생님들과 쾌적한 유치원 입니다 1번째 방문",
-        "date": "2020-01-31",
-        "collectedAt": "2026-04-05T15:23:29.926Z"
-      }
-    ],
-    "1ecec08d-00d2-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-np-2869-0-v3wg",
-        "kindergartenId": "1ecec08d-00d2-b044-e053-0a32095ab044",
-        "title": "Totototony 리뷰 14사진 36 가정보육만하다 성아유치원 5세반에 입학했어요. 단체...",
-        "url": "https://m.place.naver.com/place/1317612869/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "Totototony 리뷰 14사진 36 가정보육만하다 성아유치원 5세반에 입학했어요. 단체생활이 낯설고 자신감이 부족하던 아이에게 많은 응원과 격려해주신 덕분에 아이가 잘 적응하고 몬테소리 수업 외 체육ㆍ음악ㆍ영어 등 활동시간에도 만족해 하며 즐거운 생활을 하고 있어요. 요즘은 모든일에 자신감이 생겨 상도 타오고 환경ㆍ예의범절ㆍ다도 등 유치원에서 배운것을 ",
-        "date": "2024-11-06",
-        "collectedAt": "2026-04-05T15:24:52.802Z"
-      },
-      {
-        "id": "rev-np-2869-1-l8j1",
-        "kindergartenId": "1ecec08d-00d2-b044-e053-0a32095ab044",
-        "title": "주하호맘 리뷰 15사진 18 이사와서 7세부터 다니기 시작했어요. 매일 등하원할 때 배려,...",
-        "url": "https://m.place.naver.com/place/1317612869/review/visitor",
-        "source": "naver_place",
-        "sourceName": "naver_place",
-        "snippet": "주하호맘 리뷰 15사진 18 이사와서 7세부터 다니기 시작했어요. 매일 등하원할 때 배려, 예의 등 인성 함양 가치로 인사하는것부터 시작해서 친구와 어울리면서 지켜야 할 것들과 예절 교육을 잘해주셔서 아이가 많이 철 들었어요. 숲체험이나, 경기장에서 축구도 해보고, 공연도 자주 보러가고 키즈카페, 놀이공원, 물놀이, 소근육 올림픽, 읽걷쓰 꼬마작가 전시회 ",
-        "date": "2024-11-05",
-        "collectedAt": "2026-04-05T15:24:52.802Z"
-      }
-    ],
-    "1ecec08d-068f-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-76956029",
-        "kindergartenId": "1ecec08d-068f-b044-e053-0a32095ab044",
-        "title": "인천광역시 부평구 청담유치원 - 놀이중심교육은 놀기만 하나요?",
-        "url": "https://blog.naver.com/PostView.naver?blogId=chungdamkid&logNo=224291705369",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? No! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나...",
-        "summary": "놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? No! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:15:41.963Z",
-        "relevanceScore": 6,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "858d6b72",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=chungdamkid&logNo=224291705369",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=chungdamkid&logno=224291705369",
-          "normalizedText": "인천광역시 부평구 청담유치원 - 놀이중심교육은 놀기만 하나요? 13 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나... 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는... 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는 것이지요^^그러나..시행된지 8년이 경과되었지만 여전히 놀이중심 교육의 현장 적용은 쉽지 않습니다. 그만큼 대한민국 교육현실에 적용하기에는 현타가 많이 온다는 반증이겠지요.. 청담유치원은 여러가지 어려운 유아교육 현실에서도 놀이중심 교육을 위해 많은 연구와 노력을 하고 있습니다.청담유치원의 동화책을 이용한 book 프로젝트 활동, 글이 아닌 경험을 통해 배우는 다양한 체험 행사, 키즈노트와 놀이 기록지를 통한 사진 기록과유아, 교사, 학부모의 코멘트 기록 등 모든 것이 놀이중심 교육의 일환이지요. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 이러한 놀이중심 교육의 기저에는유아교육 이론들이 다양하게 녹아있습니다. 우리에게 친근한 몬테소리 프로그램, 프로젝트 접근법, 레지오 에밀리아 접근법, 다중지능이론 등의 여러 교육 철학이 기저에 깔려 있는데요.아동중심, 놀이중심 교육의 뿌리가 된 몇가지 교육철학 또는 접근법에 대해잠시만(?) 알아보겠습니다.^^ 몬테소리(montessori) 프로그램 1900년대 초 이탈리아 최초의 여의사 몬테소리는 0-6세를 특정 기술을 보다 쉽게 배울 수 있는 민감기(sensitive period)로 정의했습니다. 이 시기에 유아는 무의식적, 의식적으로 학습하는 흡수정신(absorbent mind)을 가지고 준비된 환경에서 스스로 학습한다고 보았으며이를 자동교육(self-teaching)이라명명하였습니다. [이미지 출처 : 위키피디아] a montessori classroom in the united states (몬테소리 교구=준비된 환경) 100년도 전에 마리아 몬테소리는 유아를 self-teaching이 가능한 능동적 존재로 보았으며 성인의 역할은 환경을 제공하고 도와주는 것이라 하였습니다. 이것이 현재 대한민국 아동중심 교육의 근본이 된 아동관입니다. 역시 선진국이네요^^ 프로젝트(project) 접근법 현재 많은 교육현장에서 실행되고 있는 우수한 교수-학습 방법으로 청담유치원에서도 놀이중심 교육의 실행 도구로 그림책을 활용한 프로젝트를 진행하고 있습니다. 1920년대에 듀이 등의 진보주의 교육에서 처음 제안된프로젝트 접근법은유아와 교사가 교육적 가치가 있는 주제에 대해 깊게 연구함으로써 유아의 주변 세계에 대한 이해를 도와주고 지적 호기심을 지속적으로 유발시키는 교육 방법입니다. 1단계는 계획 및 도입(브레인스토밍), 2단계는 탐색과 표상(견학, 동극, 조형물 구상), 3단계는 마무리, 전시, 평가의 순서로 진행됩니다. 인천광역시 부평구 청담유치원 만3세 프로젝트 전개 활동 레지오 에밀리아(reggio emilia) 접근법 레지오 에밀리아 접근법의 아동관은 행복한 유아, 강한 유아, 능력있는 유아입니다.제 식견으로는레지오 에밀리아 접근법이현재 우리나라 개정누리과정 놀이중심 교육에 가장 큰 영향력을 행사한 것으로 보입니다. 레지오 에밀리아 (reggio emilia)는 이탈리아 북부 에밀리아로마냐 주에 위치한 도시이자, 이 도시에서 시작된 독특한 교육 철학인 레지오 에밀리아 접근법으로 유명합니다. 이 접근법은 어린이의 잠재력과 권리를 강조하며, 다양한 표현 방식을 통해 학습하고, 공동체와 교사의 협력을 중시합니다. [구글 ai요약 reggio emilia] 레지오 에밀리아 접근법은1991년 미국 뉴스위크지에서 [세계에서 가장 훌륭한 10대 학교]로 선정되어 널리 알려졌으며 발현적 교육과정(emergent curriculum)이 핵심입니다. 발현적 교육과정은 학습목표를 정하고 순차적으로 학습하는 것이 아니라 유아의 흥미에서 시작하여 한가지 주제에 대해 심도깊게 연구해가는 것을 이릅니다. [이미지 출처 : 위키피디아] 레지오 에밀리아 도시 전경 이 접근법은 기록 작업을 매우 중요시합니다. 유아의 작품, 활동 모습을 사진으로 기록하고, 유아를 관찰하여 기록하거나 대집단 토론을 기록하기도 합니다. 유아의 작품 설명, 학부모와 교사의 코멘트 등도 글로 기록합니다. 또한 유아의 작품을 교실, 복도, 야외 등에 전시하여 유아의 흥미가 무엇인지, 교육과정이 잘 진행되었는지를 확인하고, 지역사회에 유아교육기관에서 무엇을 행하는지를 자연스럽게 알리게 됩니다. [이미지 출처 : https://www.reggiochildren.it] 청담유치원을 비롯한 놀이중심 교육을 하는 모든 기관들은 크든 작든 레지오 에밀리아 접근법의 영향을 받았다고 볼 수 있습니다. 인천광역시 부평구 청담유치원 만4세 프로젝트 활동 다중 지능 이론(multiple intelligence) 1980년대에 가드너가 제시한 이론으로 지능을 단일한 개념이 아닌 언어, 음악, 논리-수학, 자연탐구, 공간, 운동, 개인 내적 지능, 대인관계 지능의 8개의 영역으로 나누어 설명하고 있습니다. 전통적으로 지능으로 인정해온 언어와 논리-수학 지능 외의 다른 지능도 인정하고 학교에서 이를 위한 적절한 학습법을 개발해야 한다는 주장이지요. [이미지 출처: https://multiiq.com] 다중 지능 이론의 적용을 위해서는주제 중심의 통합 교육이 이루어져야 하는데요이는 프로젝트 접근법과도 일맥상통합니다. 다중지능이론은 유아 교육이 왜 교과를 나누지 않는 통합 교육을 추구하는지 그 이유를 잘 설명해 주고 있습니다.유아기에는 여러 지능을 골고루 자극하고 발달시켜야 하니까요! 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 유아교육은 한 마디로 요약하면 재미있게 놀아주면서 행복한 어린이로 키우자!인데요~이론은 무척 복잡하고 어렵죠?^^;;;(쓰다보니.. 긴글주의 경고를 넣었어야.. ㅋ) 청담유치원에서 프로젝트 자원 요청,그린 드레스코드 등부모님 협조를 부탁드리는 것들이어떤 목적을 위한 것인지 이해하셨을까요?(정답 : 놀이중심 교육) 인천광역시 부평구 청담유치원 만3세 프로젝트 활동 오늘의 포스팅이청담유치원 교육을 조금 더 이해하는데도움이 되셨기를 바랍니다. 청담유치원의아동중심, 놀이중심 교육이미래 인재 성장의밑거름이 될 수 있도록모든 교직원들이최선을 다하겠습니다. 청담유치원으로 오세요^^ 청담유치원 인천광역시 부평구 동수천로 70 이 블로그의 체크인 이 장소의 다른 글",
-          "htmlSnapshotHash": "858d6b72",
-          "extractedAt": "2026-06-26T07:15:41.963Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "청담유치원",
-            "kindergartenAddress": "인천광역시 부평구 동수천로 70",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      }
-    ],
-    "1ecec08d-0b9c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-ba4b700d",
-        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
-        "title": "🌍인천 부평구 숲속유치원 - 지구를 지키는 작은 실천, 플로깅 체험 이야기🌍",
-        "url": "https://blog.naver.com/PostView.naver?blogId=soop60&logNo=224009477755",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레...",
-        "summary": "숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다....",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:17:04.433Z",
-        "relevanceScore": 6,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "f43971a0",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=soop60&logNo=224009477755",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=soop60&logno=224009477755",
-          "normalizedText": "🌍인천 부평구 숲속유치원 - 지구를 지키는 작은 실천, 플로깅 체험 이야기🌍 10 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레... 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다.... 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다. 하지만 거기서 끝이 아니었어요. 모아온 쓰레기를 함께 분리수거하며, “이건 플라스틱인가?”, “이건 어디에 버리지?” 질문을 주고받으며 직접 확인해 보았어요.아이들이 놀이처럼 즐기면서도 자연스럽게 환경을 지키는 습관을 배우는 소중한 시간이 되었지요.작은 손길이 모여 숲을 조금 더 맑게 만들었던 하루. 🌱 우리가 바로 지구 지킴이! 앞으로도 숲속유치원은 아이들과 함께 생활 속에서 지구를 지키는 다양한 방법들을 찾아보고, 그 실천을 이어가려 합니다. 오늘의 플로깅 체험이 아이들 마음에 ‘환경을 사랑하는 씨앗’으로 뿌리내리길 기대합니다.",
-          "htmlSnapshotHash": "f43971a0",
-          "extractedAt": "2026-06-26T07:17:04.433Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "숲속유치원",
-            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
-      {
-        "id": "rev-4db6a0e1",
-        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
-        "title": "인천 부평 숲속유치원 입학설명회 일정 Instagram",
-        "url": "https://www.instagram.com/reel/DQqGPV4k43b/",
+        "id": "rev-a64fcebd",
+        "kindergartenId": "1ecec08c-f8c1-b044-e053-0a32095ab044",
+        "title": "인천부개초등학교병설유치원 학부모 수업 공개 Instagram",
+        "url": "https://www.instagram.com/reel/DYi02d_ykID/",
         "source": "other",
-        "sourceName": "Instagram · 숲속유치원",
-        "snippet": "soopsok_kid 계정에서 숲속유치원, 산곡동, 부평유치원, 숲유치원, 입학설명회 일정 문맥이 확인되는 Instagram 릴.",
+        "sourceName": "Instagram · 인천부개초등학교",
+        "snippet": "bugae_e.s 계정에서 인천부개초등학교병설유치원 2026학년도 학교 교육활동 참여 수업일과 학부모 수업 공개 문맥이 확인되는 Instagram 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "admission",
-          "info-session",
-          "nature"
+          "open-class",
+          "parent-participation"
         ],
-        "date": "2025-11-04",
+        "date": "2026-05-19",
         "collectedAt": "2026-06-30T23:59:59.999Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "2f4f37a5",
+        "evidenceChecksum": "a7815852",
         "structuredFields": {
-          "kindergartenName": "숲속유치원",
-          "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+          "kindergartenName": "인천부개초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 부평구 마분로 9",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90+%EC%82%B0%EA%B3%A1%EB%8F%99",
+          "searchUrl": "https://www.google.com/search?q=%22DYi02d_ykID%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EA%B0%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": false
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQqGPV4k43b/",
-          "normalizedUrl": "www.instagram.com/reel/dqqgpv4k43b",
-          "normalizedText": "인천 부평 숲속유치원 입학설명회 일정 instagram soopsok_kid 계정에서 숲속유치원, 산곡동, 부평유치원, 숲유치원, 입학설명회 일정 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "2f4f37a5",
+          "canonicalUrl": "https://www.instagram.com/reel/DYi02d_ykID/",
+          "normalizedUrl": "www.instagram.com/reel/dyi02d_ykid",
+          "normalizedText": "인천부개초등학교병설유치원 학부모 수업 공개 instagram bugae_e.s 계정에서 인천부개초등학교병설유치원 2026학년도 학교 교육활동 참여 수업일과 학부모 수업 공개 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "a7815852",
           "extractedAt": "2026-06-30T23:59:59.999Z",
           "structuredFields": {
-            "kindergartenName": "숲속유치원",
-            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+            "kindergartenName": "인천부개초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 부평구 마분로 9",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90+%EC%82%B0%EA%B3%A1%EB%8F%99",
+            "searchUrl": "https://www.google.com/search?q=%22DYi02d_ykID%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EA%B0%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": false
           }
@@ -494,164 +510,9 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-85482e55",
-        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
-        "title": "인천 부평 숲속유치원 입학설명회 Instagram",
-        "url": "https://www.instagram.com/p/CySYeHAy3ux/",
-        "source": "other",
-        "sourceName": "Instagram · 숲속유치원",
-        "snippet": "Instagram 검색 결과에서 숲속유치원, 인천유치원, 부평구유치원, 산곡동유치원, 입학설명회 일정 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admissions",
-          "orientation"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "ae250aaa",
-        "structuredFields": {
-          "kindergartenName": "숲속유치원",
-          "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CySYeHAy3ux%22+%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%ED%8F%89%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CySYeHAy3ux/",
-          "normalizedUrl": "www.instagram.com/p/cysyehay3ux",
-          "normalizedText": "인천 부평 숲속유치원 입학설명회 instagram instagram 검색 결과에서 숲속유치원, 인천유치원, 부평구유치원, 산곡동유치원, 입학설명회 일정 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "ae250aaa",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "숲속유치원",
-            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CySYeHAy3ux%22+%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%ED%8F%89%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave686-32cef72f",
-        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
-        "title": "인천 숲속유치원 가을음악회 기록",
-        "url": "https://www.instagram.com/reel/DRREKSlE1Pl/",
-        "source": "other",
-        "sourceName": "Instagram · 숲속유치원",
-        "snippet": "숲속유치원이 원적산공원 야외무대에서 가을음악회를 열고 클래식 공연 감상과 합창을 진행한 공개 릴스입니다.",
-        "summary": "야외무대 음악회와 합창 활동을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "music-concert",
-          "choir",
-          "outdoor-stage"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:55.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave686-32cef72f",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/",
-          "normalizedUrl": "instagram.com/reel/drreksle1pl",
-          "normalizedText": "숲속유치원 원적산공원 가을음악회 클래식음악공연 합창",
-          "htmlSnapshotHash": "sns-wave686-32cef72f",
-          "extractedAt": "2026-07-03T23:59:55.000Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:55.000Z",
-        "approvedBy": "codex-manual-sns-wave686"
-      }
-    ],
-    "1ecec08c-f37c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-f0bf708f",
-        "kindergartenId": "1ecec08c-f37c-b044-e053-0a32095ab044",
-        "title": "[부평구 갈산동]새빛솔금유치원입학설명회",
-        "url": "https://blog.naver.com/PostView.naver?blogId=kidsat_solgeum&logNo=224053728665",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수...",
-        "summary": "10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다.",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:20:22.245Z",
-        "relevanceScore": 9,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "c118a583",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=kidsat_solgeum&logNo=224053728665",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=kidsat_solgeum&logno=224053728665",
-          "normalizedText": "[부평구 갈산동]새빛솔금유치원입학설명회 10월 25일 새빛솔금유치원의 입학 설명회 -국가수준의 누리과정 -방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니… 신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술 -체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다 -숲체험 : 전문가와 함께! -굴포천의 아름다운... 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수... 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다. 10월 25일 새빛솔금유치원의 입학 설명회-국가수준의 누리과정-방과후 특성화 과정: 그렇게 저렴한 가격에 다 해 줄 수 있다니…신나는 키즈댄스, 튼튼 체육, 매일영어, 코딩, 책놀이 상상놀이, 에반이즈 사고력 수학, 음악을 배우는 오르프 수업, 창의과학, 창의미술-체험학습: 우리 노랑버스로 정말로 많이 갈 수 있다-숲체험 : 전문가와 함께!-굴포천의 아름다운 산책길을 활용한 일상 산책현장접수 가능! 하답니다.",
-          "htmlSnapshotHash": "c118a583",
-          "extractedAt": "2026-06-26T07:20:22.245Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EB%B9%9B%EC%86%94%EA%B8%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "새빛솔금유치원",
-            "kindergartenAddress": "인천광역시 부평구 주부토로 146",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%83%88%EB%B9%9B%EC%86%94%EA%B8%88%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
       }
     ],
     "1ecec08c-fc7c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-de76c42e",
-        "kindergartenId": "1ecec08c-fc7c-b044-e053-0a32095ab044",
-        "title": "부평 유치원 추천 아이 하루가 차분하게 이어지는 성심유치원 이야기 🌿",
-        "url": "https://blog.naver.com/PostView.naver?blogId=dodream572&logNo=224182512508",
-        "source": "naver_blog",
-        "sourceName": "네이버 블로그",
-        "snippet": "부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되...",
-        "summary": "부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는...",
-        "tags": [
-          "public"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-26T07:21:49.106Z",
-        "relevanceScore": 6,
-        "accessMode": "public",
-        "evidenceType": "longform_post",
-        "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "26e5550e",
-        "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=dodream572&logNo=224182512508",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=dodream572&logno=224182512508",
-          "normalizedText": "부평 유치원 추천 아이 하루가 차분하게 이어지는 성심유치원 이야기 🌿 17 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되... 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는... 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는아이들이 스스로 선택하고 참여할 수 있도록 돕고,활동과 활동 사이에도서두르지 않고 여유를 두는 흐름이에요.그래서처음 단체생활을 시작하는 아이들도조급해하지 않고자기 속도대로 적응해 나가는 모습이 보여요 🌼 놀이 속에서 자연스럽게 자라는 배움 😊아이들은앉아서 배우는 시간보다움직이고, 만지고, 경험하는 과정에서더 많은 걸 느끼잖아요.성심유치원에서는놀이를 단순한 ‘쉬는 시간’이 아니라아이 성장의 중요한 과정으로 바라보고 있어요.친구와 함께 어울리며 배우는 배려,기다림, 표현하는 방법들이일상 속에서 자연스럽게 쌓여가요 🌿이런 경험들이아이에게 부담 없이사회성과 자신감을 키워주는 것 같아요. 기본 생활습관을 차분하게 익히는 시간 🌸유치원 생활에서기본이 되는 건 결국 생활습관인 것 같아요.성심유치원은 몬테소리 교육 철학을 바탕으로아이 스스로 해볼 수 있는 환경을 먼저 준비하고어른은 한 발 물러서서 지켜보는 방식을 중요하게 여겨요.식사, 정리, 휴식처럼하루에 반복되는 일상 속에서아이들이 스스로 선택하고 시도할 수 있도록 기다려주고,필요한 순간에만 조용히 도움을 건네는 식이에요 😊이런 과정 속에서아이들은 ‘해야 해서 하는 행동’이 아니라‘스스로 할 수 있는 행동’을 하나씩 익혀가게 되고,작은 성공 경험이 쌓이면서유치원 생활 전반에 대한 자신감도 자연스럽게 자라나는 모습이 보여요 💛 교사와 아이 사이의 안정감 🌿아이를 오래 맡기는 공간일수록교사와의 관계가 정말 중요하다고 느껴져요.성심유치원은아이 한 명 한 명의 표정과 반응을세심하게 살피며 하루를 함께해요.작은 변화도 그냥 넘기지 않고아이 상태에 맞춰 반응해주기 때문에아이들도 비교적 편안하게자기 감정을 표현하는 편이에요 🌼이런 모습은부모 입장에서도안심으로 이어지게 되더라구요. 부평에서 유치원을 찾고 있다면 🌷부평 유치원을 고민하면서✔ 아이가 너무 바쁘지 않은 하루를 보내길 바라고✔ 놀이와 생활의 균형을 중요하게 생각하고✔ 차분한 분위기 속에서 성장하길 원한다면성심유치원은부평 유치원 추천 리스트에서천천히 살펴볼 만한 곳이에요. 성심유치원 인천광역시 부평구 부흥로 323 이 블로그의 체크인 이 장소의 다른 글 📍 인천광역시 부평구 부흥로 323📞 032-527-2314아이의 하루가 편안해야부모의 하루도 한결 가벼워지니까요 😊 <본 포스팅은 업체로부터 소정의 원고료를 지원받고 작성되었습니다.>",
-          "htmlSnapshotHash": "26e5550e",
-          "extractedAt": "2026-06-26T07:21:49.106Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-          "structuredFields": {
-            "kindergartenName": "성심유치원",
-            "kindergartenAddress": "인천광역시 부평구 부흥로 323",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
-            "accessMode": "public"
-          }
-        }
-      },
       {
         "id": "rev-cccdc987",
         "kindergartenId": "1ecec08c-fc7c-b044-e053-0a32095ab044",
@@ -685,310 +546,127 @@
             "accessMode": "login"
           }
         }
-      }
-    ],
-    "dc6e7a31-4a2e-48f1-85be-d6eb10fa0f4b": [
+      },
       {
-        "id": "rev-2ec2ab27",
-        "kindergartenId": "dc6e7a31-4a2e-48f1-85be-d6eb10fa0f4b",
-        "title": "인천 부평 산곡동 IBA 이바유치원 & 팰리스어린이집, 내 인생의 최고의 선택 :)",
-        "url": "https://blog.naver.com/PostView.naver?blogId=luxury0224&logNo=223246793857",
+        "id": "rev-de76c42e",
+        "kindergartenId": "1ecec08c-fc7c-b044-e053-0a32095ab044",
+        "title": "부평 유치원 추천 아이 하루가 차분하게 이어지는 성심유치원 이야기 🌿",
+        "url": "https://blog.naver.com/PostView.naver?blogId=dodream572&logNo=224182512508",
         "source": "naver_blog",
         "sourceName": "네이버 블로그",
-        "snippet": "애정하는 여러분들 안녕하세요 :D육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네...",
-        "summary": "애정하는 여러분들 안녕하세요 :D육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하...",
+        "snippet": "부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되...",
+        "summary": "부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는...",
         "tags": [
           "public"
         ],
         "date": null,
-        "collectedAt": "2026-06-26T07:23:23.081Z",
-        "relevanceScore": 9,
+        "collectedAt": "2026-06-26T07:21:49.106Z",
+        "relevanceScore": 6,
         "accessMode": "public",
         "evidenceType": "longform_post",
         "extractionMethod": "insane-search:public-page-body",
-        "evidenceChecksum": "8515559e",
+        "evidenceChecksum": "26e5550e",
         "evidence": {
-          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=luxury0224&logNo=223246793857",
-          "normalizedUrl": "blog.naver.com/postview.naver?blogid=luxury0224&logno=223246793857",
-          "normalizedText": "인천 부평 산곡동 iba 이바유치원 & 팰리스어린이집, 내 인생의 최고의 선택 :) 2023.10.26.22년 이바 팰리스 예술제 / 3세, 4세 생각보다 정보가 많이 없고 후기도 많이 없어서 살짝은 멘붕이였다는 ㅋㅋㅋ 그래도... 있었지만 인천 부평구 산곡동에 친정이 있었다 보니까 친정 엄마도 보고 반찬도 챙기려고 입학설명회 신청한 날에 맞춰... 다니다보니 정말 아이들을 인천 부평 산곡동 이바유치원, 팰리스어린이집에 다니고있는 부모님들이 너무 만족을 하셔서... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하려고 합니다 :d 22년 이바 팰리스 / 3세, 4세 저희 남편이 직업군인이라 이리저리 이사를 다니다가 황소령과 주말부부를 하던 시기에친정엄마와 인천 부평에서 살림을 합치면서 이리저리 알아보고22년 3월부터 지금까지 2년동안 저희 두 딸들이 다니고있는 아이들 보육, 교육기관입니다 :)아무래도 근처 신축 아파트들이 입주하는 시기라서 내년에는 인천 부평 산곡동에 있는유치원, 어린이집이 정말 대기도 많고 박터질 것 같다는 생각이 들더라구요! 22년 이바 팰리스 / 3세, 4세 타지에서 살다가 이번에 이사오시거나 기존에 다니고 있던 유치원, 어린이집이만족스럽지 않아서 어디를 보내야하나 고민이신 분들께 도움이 되었으면 합니다!2년전에 저도 같은 고민을 했던 두 아이의 엄마라서 어떤 마음이실지 무척 이해갑니다 20년 군포 토브키즈 / 2세, 3세 저도 경기도 군포 부곡동에 있던 토브키즈어린이집에 아이들을 보냈는데요 :)너무 만족스러워서 솔직히 이때는 군포를 떠나기 싫었다는 것!하지만 가정어린이집에서 아이들이 어렸을 때 소규모로 성장을 넘나 잘했고조금 규모가 큰 곳으로 옮겨도 좋을 시기에 인천 부평 산곡동으로 이사와서이바유치원, 팰리스어린이집을 금방 적응하여 잘 다니고 있는 듯 해요 :d경기도 군포에서 인천 부평 산곡동에 있는 괜찮은 유치원과 어린이집을 찾기에는인터넷에 정보가 많지 않았고 코로나로 인해서 방문도 어려웠다보니아이들이 생활하는 공간도 눈으로 보기가 어려워 전화, 인터넷에만 의존하였는데요 22년 이바 팰리스 / 3세, 4세 특히 14개월 차이가 나는 연년생 아이들이라서 아무래도 같이 다니는 시기가 있지만첫째가 유치원에 다닐 때 둘째가 어린이집에 다니는 다섯살 시기에는 따로따로 등원하기가어렵고 불편할 것 같아서 유치원과 어린이집이 함께 있는 곳을 알아보게 되었어요그러다가 인천 부평 산곡3동에 있는 이바유치원, 팰리스어린이집을 우연하게 알게되었던!산곡3동에서 결혼하기 전까지 대략 10년정도 살았는데 여기에 유치원, 어린이집이 있었네!?네이버 거리뷰를 보니 예전에 살던 집과 가까워서 반가웠고 괜시리 관심이 가더라구요 22년 이바 팰리스 예술제 / 3세, 4세 생각보다 정보가 많이 없고 후기도 많이 없어서 살짝은 멘붕이였다는 ㅋㅋㅋ그래도 인천으로 이사가는 집과는 또 가까워 좋을 것 같다는 생각이 들었어요 :)특히 등하원 차량을 운영하고 있으며 연장반까지 운영중이라 워킹맘에게는 딱!참고로 여름, 겨울방학에도 등원이 가능해서 (도시락지참, 차량운행안함) 정말 불편함을 느낄 수가 없답니다경기도 군포는 차량없는 가정어린이집이라 걸어서 15분 차로 5분거리에 있었다보니까제가 차로 운전해서 등하원 시키는 것이 은근 힘들어 꼭 차량이 있는 곳으로 보내고 싶었죠마침 알아보던 시기에 입학설명회 참여할 부모님도 모집하고 있어서 일단 가보자! 하면서 바로 신청을 하였다는 점 :d참고로 어린이집 대기를 3곳정도 해놨다가 입학설명회 듣고 바로 나머지 취소했어요ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ설명회 전에 궁금한 부분이 있었을 때 전화를 했더니 친절하게 설명해주시고사진도 보내주셨는데 뭔가 이때부터 믿음이 팍팍 생겼던 것 같습니다 :d 타지에서 지내고 있었지만 인천 부평구 산곡동에 친정이 있었다 보니까친정 엄마도 보고 반찬도 챙기려고 입학설명회 신청한 날에 맞춰 방문했어요 :)벌써 2년전 이맘때라는 ㅋㅋㅋㅋㅋㅋㅋ 23년 이바 팰리스 / 4세 영어유치원은 아니지만 영어유치원처럼 매일마다 영어수업이 있고체계적이며 규모도 크고 뒤에 운동장까지 있어서 무척이나 끌렸던 것 같았어요!아쉽지만 이번 이바유치원, 팰리스어린이집 입학설명회는 모든 타임 마감된 것 같더라구요 23년 이바 팰리스 / 5세 지금은 원어민 선생님 수업까지 있다보니까 더 만족스럽고 4세반부터 영어를 시작하니4세, 5세반을 다니는 두 딸들이 요즘 영어 노래를 흥얼거려요!거기에다가 각종 체험도 많고 행사도 많으니 아이들이 유치원, 어린이집에 가는 시간을너무나도 좋아한다는 것은 안비밀!다니다보니 정말 아이들을 인천 부평 산곡동 이바유치원, 팰리스어린이집에 다니고있는 부모님들이 너무 만족을 하셔서아무런 홍보없이 재원생들 부모님들의 입소문으로 항상 정원이 꽉꽉 차는 것이더라구요 :)저도 근처에 사는 친구가 저희 아이들 또래라면 무조건 보내보라고 강력추천을 할것같아요!제가 선택을 했지만 다시 생각해보면 이건 진짜 운이 너무 좋았던 것 같습니다 :d군인가족이라 앞으로도 이사를 많이하고 언젠가 인천을 떠나는 날도 있겠지만이바유치원, 팰리스어린이집을 너무 잘만나서 두 아이들 유치원 졸업까지는 인천 부평 산곡동에 있기로 했어요 ㅋㅋㅋㅋㅋ 23년 이바 팰리스 / 4세, 5세 다양한 수업과 체험을 하고 원장선생님, 원감선생님, 많은 담임선생님과 보조선생님 그리고 연장반 선생님들까지아이들에게 사랑과 관심을 듬뿍듬뿍~ 주신다는 것을 직접 느끼고 있어요특히 작년, 올해 저희 아이들 담임쌤들께 너무 감사드립니다 :)앞으로 저희 첫째, 둘째 담임선생님이 되실 분들께도 미리 감사 인사 드려요!5세 첫째가 말을 잘하고부터 유치원 생활과 친구관계 등을 하원하고 이야기 해주는데요아이도 엄청나게 만족을 하다보니 이야기를 듣는 내내 웃음이 저절로 나오더라구요!이제는 감기에 걸리면 자기 이바유치원, 팰리스어린이집 못가는거 아니냐고 눈물을 한바가지 흘리는 아이들이랍니다 :)그래서 빨리 나으려 약도 잘먹는다는 ㅋㅋㅋ 정말 너무 좋아요 :d 22년, 23년 이바팰리스 가을운동회 어린이날행사, 여름방학 전, 후 워터파크 5세반은 어린이집, 유치원 각각 한반씩 있어서 상황, 아이 성장에 맞춰 골라 보낼 수 있고지원 외에 추가로 내는 원비에 비해정말 아이들이 알차게 활동하는 것 같아 하나도 아깝지가 않으며 오히려 남는게 있으실까!? 걱정하게 된다는 점 :d 이바유치원 팰리스어린이집 원복, 체육복 이바유치원 원복으로 검색해서 들어오시는 분들이 많아서 남겨요!동복, 춘추복은 자켓 입고 벗고의 차이 :)치마는 나시 원피스 타입이고 카라티와 리본이 있습니다!자켓 대신 따로 구매한 가디건, 코트를 입을 때가 있어요!하복은 원피스 하나입니다 :d저희 아이들이 둘다 여아라서 남아 원복사진은 없어요!원복과 체육복은 일주일에 각각 두번씩, 사복은 한번입어요어린이집 원아는 5세반도 원복을 입고 4세반까지는 체육복만 일주일에 두번입어요행사가 있는 주에는 조금 다르답니다!이바유치원과 팰리스 어린이집 체육복은 같아요 키즈노트 식단표 아이들 점심과 간식도 너무 잘나와서 저희 두딸들은 매일 리필해서 먹는다고 합니다 ㅋㅋㅋㅋㅋ 이러니까 키가 쑥쑥 :)이러다보니 다자녀, 쌍둥이, 저희처럼 연년생 아이들도 많이 다니고 있답니다!4세까지는 매일 키즈노트가 올라오고 5세부터는 일주일에 한번씩 네이버카페에 아이들 사진이 올라와서행복하게 생활하는 아이들의 모습도 확인할 수 있어 더욱 만족하고 있답니다!앞으로도 아이들 초등학교 입학하기 전까지 이바유치원, 팰리스어린이집과 함께할 생각에 무척이나 든든해요! 아이들보고 언제 제일 행복해?! 라고 물어보면 유치원, 어린이집에 갈 때가제일 행복하다는 저희 아이들의 이야기를 듣고선 많은 분들이 알고계셨으면 싶어서 포스팅을 적어봤는데요!고민하시는 분들께 조금이나마 제가 도움이 되었다면 너무 좋을 듯 :)궁금하신 내용이 있으시면 댓글 주시고 원비, 차량운행, 교육과정 등은 직접 이바유치원, 팰리스어린이집에 문의해주세요 :)끝까지 읽어주셔서 감사합니다! 이바iba유치원 인천광역시 부평구 마장로168번길 17 이바유치원 이 블로그의 체크인 이 장소의 다른 글 팰리스어린이집 인천광역시 부평구 마장로168번길 17 나창선빌딩 이 블로그의 체크인 이 장소의 다른 글 인천 부평 산곡동 팰리스어린이집 이바 iba 유치원 벌써 3년째 :) 애정하는 이웃님들 너무 반가워요 :d 육아인플루언서 우아미가 인사드립니다! 벌써 유치원 일반모집이 내... blog.naver.com 인천 부평 산곡동 팰리스어린이집 이바 iba 유치원 4년째 다니고있어요 (6세, 7세) 애정하는 이웃님들 반갑습니다! 육아 인플루언서 우아미가 인사드려요 :) 오늘은 저희 아이들이 꽉 채운 4... blog.naver.com",
-          "htmlSnapshotHash": "8515559e",
-          "extractedAt": "2026-06-26T07:23:23.081Z",
-          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EB%B0%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=dodream572&logNo=224182512508",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=dodream572&logno=224182512508",
+          "normalizedText": "부평 유치원 추천 아이 하루가 차분하게 이어지는 성심유치원 이야기 🌿 17 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되... 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는... 부평에서 유치원을 알아보다 보면시설이나 프로그램도 중요하지만결국 가장 많이 고민하게 되는 건“아이 하루가 너무 힘들지 않을까?”라는 부분인 것 같아요.수업이 많고 바쁜 곳보다는놀이와 생활이 자연스럽게 이어지고아이 표정이 편안한 곳을 찾게 되더라구요.인천광역시 부평구 부흥로 323에 위치한**성심유치원(032-527-2314)**은부평 유치원을 고민하는 부모님들 사이에서차분한 분위기로 이야기되는 곳이에요 😊처음 방문했을 때도공간이 복잡하지 않고아이들이 생활하기에 부담 없는 구조라는 인상이 들었어요. 아이의 생활 리듬을 먼저 생각해요 🌱성심유치원은아이를 일정에 맞추기보다는아이의 하루 리듬을 기준으로 일과가 이어지는 편이에요.놀이 시간에는아이들이 스스로 선택하고 참여할 수 있도록 돕고,활동과 활동 사이에도서두르지 않고 여유를 두는 흐름이에요.그래서처음 단체생활을 시작하는 아이들도조급해하지 않고자기 속도대로 적응해 나가는 모습이 보여요 🌼 놀이 속에서 자연스럽게 자라는 배움 😊아이들은앉아서 배우는 시간보다움직이고, 만지고, 경험하는 과정에서더 많은 걸 느끼잖아요.성심유치원에서는놀이를 단순한 ‘쉬는 시간’이 아니라아이 성장의 중요한 과정으로 바라보고 있어요.친구와 함께 어울리며 배우는 배려,기다림, 표현하는 방법들이일상 속에서 자연스럽게 쌓여가요 🌿이런 경험들이아이에게 부담 없이사회성과 자신감을 키워주는 것 같아요. 기본 생활습관을 차분하게 익히는 시간 🌸유치원 생활에서기본이 되는 건 결국 생활습관인 것 같아요.성심유치원은 몬테소리 교육 철학을 바탕으로아이 스스로 해볼 수 있는 환경을 먼저 준비하고어른은 한 발 물러서서 지켜보는 방식을 중요하게 여겨요.식사, 정리, 휴식처럼하루에 반복되는 일상 속에서아이들이 스스로 선택하고 시도할 수 있도록 기다려주고,필요한 순간에만 조용히 도움을 건네는 식이에요 😊이런 과정 속에서아이들은 ‘해야 해서 하는 행동’이 아니라‘스스로 할 수 있는 행동’을 하나씩 익혀가게 되고,작은 성공 경험이 쌓이면서유치원 생활 전반에 대한 자신감도 자연스럽게 자라나는 모습이 보여요 💛 교사와 아이 사이의 안정감 🌿아이를 오래 맡기는 공간일수록교사와의 관계가 정말 중요하다고 느껴져요.성심유치원은아이 한 명 한 명의 표정과 반응을세심하게 살피며 하루를 함께해요.작은 변화도 그냥 넘기지 않고아이 상태에 맞춰 반응해주기 때문에아이들도 비교적 편안하게자기 감정을 표현하는 편이에요 🌼이런 모습은부모 입장에서도안심으로 이어지게 되더라구요. 부평에서 유치원을 찾고 있다면 🌷부평 유치원을 고민하면서✔ 아이가 너무 바쁘지 않은 하루를 보내길 바라고✔ 놀이와 생활의 균형을 중요하게 생각하고✔ 차분한 분위기 속에서 성장하길 원한다면성심유치원은부평 유치원 추천 리스트에서천천히 살펴볼 만한 곳이에요. 성심유치원 인천광역시 부평구 부흥로 323 이 블로그의 체크인 이 장소의 다른 글 📍 인천광역시 부평구 부흥로 323📞 032-527-2314아이의 하루가 편안해야부모의 하루도 한결 가벼워지니까요 😊 <본 포스팅은 업체로부터 소정의 원고료를 지원받고 작성되었습니다.>",
+          "htmlSnapshotHash": "26e5550e",
+          "extractedAt": "2026-06-26T07:21:49.106Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
           "structuredFields": {
-            "kindergartenName": "이바유치원",
-            "kindergartenAddress": "인천광역시 부평구 마장로168번길 17",
-            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EB%B0%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "kindergartenName": "성심유치원",
+            "kindergartenAddress": "인천광역시 부평구 부흥로 323",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
             "accessMode": "public"
           }
         }
       }
     ],
-    "1ecec08d-095d-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-5565747f",
-        "kindergartenId": "1ecec08d-095d-b044-e053-0a32095ab044",
-        "title": "부평 무지개유치원 학부모참여수업 SNS",
-        "url": "https://www.instagram.com/reel/DQLlON_ieGB/",
-        "source": "other",
-        "sourceName": "Instagram · 부평 무지개유치원",
-        "snippet": "부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 무지개유치원의 학부모참여수업 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "parent-participation"
-        ],
-        "content": "부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 Instagram 검색 결과. 무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T22:55:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "43883644",
-        "structuredFields": {
-          "kindergartenName": "무지개유치원",
-          "kindergartenAddress": "인천광역시 부평구 안남로41번길 3",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQLlON_ieGB%22+%22%EB%B6%80%ED%8F%89%22+%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQLlON_ieGB/",
-          "normalizedUrl": "www.instagram.com/reel/dqllon_iegb",
-          "normalizedText": "부평 무지개유치원 학부모참여수업 sns 부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 instagram 검색 결과. 인천 부평구 무지개유치원의 학부모참여수업 instagram 검색 결과.",
-          "htmlSnapshotHash": "43883644",
-          "extractedAt": "2026-06-30T22:55:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "무지개유치원",
-            "kindergartenAddress": "인천광역시 부평구 안남로41번길 3",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQLlON_ieGB%22+%22%EB%B6%80%ED%8F%89%22+%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T22:55:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
     "1ecec08c-fc7f-b044-e053-0a32095ab044": [
       {
-        "id": "rev-1465f3bb",
+        "id": "rev-sns-wave711-069b9f82",
         "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 엄지유치원 입학설명회 SNS",
-        "url": "https://www.instagram.com/p/DQGyWHJiQqn/",
+        "title": "인천 엄지유치원 여름캠프 물놀이 기록",
+        "url": "https://www.instagram.com/p/DMzxsw1S2v6/",
         "source": "other",
         "sourceName": "Instagram · 엄지유치원",
-        "snippet": "인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 엄지유치원의 입학설명회 SNS 정보.",
+        "snippet": "인천 엄지유치원이 여름캠프에서 준비운동 후 친구들과 물놀이를 즐긴 게시물입니다.",
+        "summary": "유아들이 준비운동과 함께 물놀이 규칙을 익히며 여름활동을 경험한 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "admission-briefing"
+          "water-play",
+          "summer-camp",
+          "warm-up",
+          "incheon"
         ],
-        "content": "인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 Instagram 검색 결과다. 인천 부평구 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T16:35:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "fb579b15",
-        "structuredFields": {
-          "kindergartenName": "엄지유치원",
-          "kindergartenAddress": "인천광역시 부평구 부일로 111",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQGyWHJiQqn%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%9D%BC%EB%A1%9C+111%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
-        },
+        "evidenceChecksum": "sns-wave711-069b9f82",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQGyWHJiQqn/",
-          "normalizedUrl": "www.instagram.com/p/dqgywhjiqqn",
-          "normalizedText": "인천 엄지유치원 입학설명회 sns 인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 입학설명회 sns 정보.",
-          "htmlSnapshotHash": "fb579b15",
-          "extractedAt": "2026-06-30T16:35:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "엄지유치원",
-            "kindergartenAddress": "인천광역시 부평구 부일로 111",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQGyWHJiQqn%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%9D%BC%EB%A1%9C+111%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
-          }
+          "canonicalUrl": "https://www.instagram.com/p/DMzxsw1S2v6/",
+          "normalizedUrl": "instagram.com/p/dmzxsw1s2v6",
+          "normalizedText": "엄지유치원 인천 여름캠프 물놀이 준비운동 친구들",
+          "htmlSnapshotHash": "sns-wave711-069b9f82",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DMzxsw1S2v6/"
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T16:35:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave711"
       },
       {
-        "id": "rev-f5233abb",
+        "id": "rev-44a8aa10",
         "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 엄지유치원 SNS 프로필",
-        "url": "https://www.instagram.com/umji_kindergarten_/",
+        "title": "인천 부평 엄지유치원 원아모집 Instagram",
+        "url": "https://www.instagram.com/p/DGTB2XGyNnw/",
         "source": "other",
         "sourceName": "Instagram · 엄지유치원",
-        "snippet": "엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 엄지유치원의 Instagram 프로필 SNS 정보.",
+        "snippet": "Instagram 검색 결과에서 엄지유치원, 인천유치원, 부개동유치원, 부개엄지유치원 문맥이 확인되는 게시물.",
         "tags": [
           "sns",
-          "search-snippet",
-          "address-not-required",
           "instagram",
-          "profile"
+          "address-not-required",
+          "admissions",
+          "official-info"
         ],
-        "content": "엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 Instagram 검색 결과다. 고양 엄지유치원과 구분하기 위해 인천 주소와 전화번호를 기준으로 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "collectedAt": "2026-07-01T00:00:00.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "124dea63",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2c864955",
         "structuredFields": {
           "kindergartenName": "엄지유치원",
           "kindergartenAddress": "인천광역시 부평구 부일로 111",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-525-0041%22+%22instagram%22",
+          "searchUrl": "https://www.google.com/search?q=%22DGTB2XGyNnw%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/umji_kindergarten_/",
-          "normalizedUrl": "www.instagram.com/umji_kindergarten_",
-          "normalizedText": "인천 엄지유치원 sns 프로필 엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "124dea63",
-          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "canonicalUrl": "https://www.instagram.com/p/DGTB2XGyNnw/",
+          "normalizedUrl": "www.instagram.com/p/dgtb2xgynnw",
+          "normalizedText": "인천 부평 엄지유치원 원아모집 instagram instagram 검색 결과에서 엄지유치원, 인천유치원, 부개동유치원, 부개엄지유치원 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2c864955",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
             "kindergartenName": "엄지유치원",
             "kindergartenAddress": "인천광역시 부평구 부일로 111",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-525-0041%22+%22instagram%22",
+            "searchUrl": "https://www.google.com/search?q=%22DGTB2XGyNnw%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.997Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-f5c9373e",
-        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 엄지유치원 교육활동 SNS",
-        "url": "https://www.instagram.com/p/DBavqvvyEC2/",
-        "source": "other",
-        "sourceName": "Instagram · 엄지유치원",
-        "snippet": "엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 엄지유치원의 교육활동 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity"
-        ],
-        "content": "엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.997Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "627035d8",
-        "structuredFields": {
-          "kindergartenName": "엄지유치원",
-          "kindergartenAddress": "인천광역시 부평구 부일로 111",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DBavqvvyEC2%22+%22umji_kindergarten_%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DBavqvvyEC2/",
-          "normalizedUrl": "www.instagram.com/p/dbavqvvyec2",
-          "normalizedText": "인천 엄지유치원 교육활동 sns 엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 교육활동 instagram 검색 결과.",
-          "htmlSnapshotHash": "627035d8",
-          "extractedAt": "2026-06-30T23:59:59.997Z",
-          "structuredFields": {
-            "kindergartenName": "엄지유치원",
-            "kindergartenAddress": "인천광역시 부평구 부일로 111",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DBavqvvyEC2%22+%22umji_kindergarten_%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.997Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-da523125",
-        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 엄지유치원 활동 SNS",
-        "url": "https://www.instagram.com/p/DVbGpR_kuVy/",
-        "source": "other",
-        "sourceName": "Instagram · 엄지유치원",
-        "snippet": "엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 엄지유치원의 활동 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity"
-        ],
-        "content": "엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.997Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "ffdef02f",
-        "structuredFields": {
-          "kindergartenName": "엄지유치원",
-          "kindergartenAddress": "인천광역시 부평구 부일로 111",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DVbGpR_kuVy%22+%22umji_kindergarten_%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DVbGpR_kuVy/",
-          "normalizedUrl": "www.instagram.com/p/dvbgpr_kuvy",
-          "normalizedText": "인천 엄지유치원 활동 sns 엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 활동 instagram 검색 결과.",
-          "htmlSnapshotHash": "ffdef02f",
-          "extractedAt": "2026-06-30T23:59:59.997Z",
-          "structuredFields": {
-            "kindergartenName": "엄지유치원",
-            "kindergartenAddress": "인천광역시 부평구 부일로 111",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DVbGpR_kuVy%22+%22umji_kindergarten_%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -1098,19 +776,296 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-44a8aa10",
+        "id": "rev-da523125",
         "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 부평 엄지유치원 원아모집 Instagram",
-        "url": "https://www.instagram.com/p/DGTB2XGyNnw/",
+        "title": "인천 엄지유치원 활동 SNS",
+        "url": "https://www.instagram.com/p/DVbGpR_kuVy/",
         "source": "other",
         "sourceName": "Instagram · 엄지유치원",
-        "snippet": "Instagram 검색 결과에서 엄지유치원, 인천유치원, 부개동유치원, 부개엄지유치원 문맥이 확인되는 게시물.",
+        "snippet": "엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 엄지유치원의 활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "ffdef02f",
+        "structuredFields": {
+          "kindergartenName": "엄지유치원",
+          "kindergartenAddress": "인천광역시 부평구 부일로 111",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVbGpR_kuVy%22+%22umji_kindergarten_%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVbGpR_kuVy/",
+          "normalizedUrl": "www.instagram.com/p/dvbgpr_kuvy",
+          "normalizedText": "인천 엄지유치원 활동 sns 엄지유치원 계정의 유치원 활동 게시물과 인천 엄지유치원 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "ffdef02f",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "엄지유치원",
+            "kindergartenAddress": "인천광역시 부평구 부일로 111",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVbGpR_kuVy%22+%22umji_kindergarten_%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f5233abb",
+        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
+        "title": "인천 엄지유치원 SNS 프로필",
+        "url": "https://www.instagram.com/umji_kindergarten_/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 엄지유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 Instagram 검색 결과다. 고양 엄지유치원과 구분하기 위해 인천 주소와 전화번호를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "124dea63",
+        "structuredFields": {
+          "kindergartenName": "엄지유치원",
+          "kindergartenAddress": "인천광역시 부평구 부일로 111",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-525-0041%22+%22instagram%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/umji_kindergarten_/",
+          "normalizedUrl": "www.instagram.com/umji_kindergarten_",
+          "normalizedText": "인천 엄지유치원 sns 프로필 엄지유치원 프로필에서 인천 부평구 부일로 111과 전화 032-525-0041 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "124dea63",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "엄지유치원",
+            "kindergartenAddress": "인천광역시 부평구 부일로 111",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-525-0041%22+%22instagram%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 인천 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-f5c9373e",
+        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
+        "title": "인천 엄지유치원 교육활동 SNS",
+        "url": "https://www.instagram.com/p/DBavqvvyEC2/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 엄지유치원의 교육활동 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "activity"
+        ],
+        "content": "엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 Instagram 검색 결과다. 공식 계정과 원장부 정보를 함께 대조해 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.997Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "627035d8",
+        "structuredFields": {
+          "kindergartenName": "엄지유치원",
+          "kindergartenAddress": "인천광역시 부평구 부일로 111",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DBavqvvyEC2%22+%22umji_kindergarten_%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DBavqvvyEC2/",
+          "normalizedUrl": "www.instagram.com/p/dbavqvvyec2",
+          "normalizedText": "인천 엄지유치원 교육활동 sns 엄지유치원 계정의 교육활동 게시물과 인천 엄지유치원 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 교육활동 instagram 검색 결과.",
+          "htmlSnapshotHash": "627035d8",
+          "extractedAt": "2026-06-30T23:59:59.997Z",
+          "structuredFields": {
+            "kindergartenName": "엄지유치원",
+            "kindergartenAddress": "인천광역시 부평구 부일로 111",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DBavqvvyEC2%22+%22umji_kindergarten_%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 원장부 정보를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.997Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-1465f3bb",
+        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
+        "title": "인천 엄지유치원 입학설명회 SNS",
+        "url": "https://www.instagram.com/p/DQGyWHJiQqn/",
+        "source": "other",
+        "sourceName": "Instagram · 엄지유치원",
+        "snippet": "인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 엄지유치원의 입학설명회 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission-briefing"
+        ],
+        "content": "인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 Instagram 검색 결과다. 인천 부평구 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T16:35:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fb579b15",
+        "structuredFields": {
+          "kindergartenName": "엄지유치원",
+          "kindergartenAddress": "인천광역시 부평구 부일로 111",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQGyWHJiQqn%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%9D%BC%EB%A1%9C+111%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DQGyWHJiQqn/",
+          "normalizedUrl": "www.instagram.com/p/dqgywhjiqqn",
+          "normalizedText": "인천 엄지유치원 입학설명회 sns 인천 부평구 엄지유치원 입학설명회와 주소 문맥이 확인되는 instagram 검색 결과. 인천 부평구 엄지유치원의 입학설명회 sns 정보.",
+          "htmlSnapshotHash": "fb579b15",
+          "extractedAt": "2026-06-30T16:35:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "엄지유치원",
+            "kindergartenAddress": "인천광역시 부평구 부일로 111",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQGyWHJiQqn%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%EC%9D%BC%EB%A1%9C+111%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 주소 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T16:35:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-99852241",
+        "title": "니또의 유치원 입학설명회 후기(행신 코끼리유치원, 엄지유치원)",
+        "url": "https://blog.naver.com/nitto_yeoni/224063115481",
+        "source": "naver_blog",
+        "sourceName": "니또즈 이야기:]",
+        "snippet": "2026년 유치원 입학을 앞두고 행신의 코끼리유치원과 엄지유치원 두 곳에 입학설명회를 신청해두었다.... 위해 설명회에 참석하고 유치원을 결정할 때 참고하기 위해 남기는 기록!  기본 운영 및 반 구성 구분...",
+        "date": "2025-11-03",
+        "collectedAt": "2026-01-30T02:56:12.275Z",
+        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08c-feb6-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852596",
+        "title": "부평구 산곡동 유치원 추천 인천 청원유치원",
+        "url": "https://blog.naver.com/daisy_days0320/224059461605",
+        "source": "naver_blog",
+        "sourceName": "홍이랑 인천에서 아이랑 놀자♥️‼️‼️",
+        "snippet": "보내본 후기를 적어본다. 남편 직업상 이사가 잦아 어쩌다보니 둘째에겐 4번째 유치원이 된 청원유치원... 청원유치원을 추천하고싶다. (아이가 오늘 따온 도토리) #부평구유치원 #산곡동유치원 #청원유치원",
+        "date": "2025-10-31",
+        "collectedAt": "2026-07-26T08:54:20.537542",
+        "kindergartenId": "1ecec08c-feb6-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-00ef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave707-9390ed45",
+        "kindergartenId": "1ecec08d-00ef-b044-e053-0a32095ab044",
+        "title": "인천 예원유치원 숲놀이 프로젝트 기록",
+        "url": "https://www.instagram.com/p/DRbqHlHj-lQ/",
+        "source": "other",
+        "sourceName": "Instagram · 예원유치원",
+        "snippet": "부평구·삼산동 단서가 있는 예원유치원이 숲놀이 프로젝트를 소개한 게시물입니다.",
+        "summary": "유아들이 숲놀이를 통해 자연 속 프로젝트 활동을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "forest-play",
+          "project-learning",
+          "outdoor-learning",
+          "incheon"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave707-9390ed45",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/",
+          "normalizedUrl": "instagram.com/p/drbqhlhj-lq",
+          "normalizedText": "예원유치원 부평구 삼산동 숲놀이유치원 프로젝트",
+          "htmlSnapshotHash": "sns-wave707-9390ed45",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave707"
+      }
+    ],
+    "1ecec08d-020c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ce18ce0e",
+        "kindergartenId": "1ecec08d-020c-b044-e053-0a32095ab044",
+        "title": "인천부원초등학교병설유치원 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/reel/C_flY_fS5rr/",
+        "source": "other",
+        "sourceName": "Instagram · 인천부원초등학교 병설유치원",
+        "snippet": "Instagram 검색 결과에서 인천부원초등학교 병설유치원, 졸업반, 학부모참여수업, 요리하기 활동 문맥이 확인되는 릴.",
         "tags": [
           "sns",
           "instagram",
           "address-not-required",
-          "admissions",
-          "official-info"
+          "parent-participation",
+          "food-activity"
         ],
         "date": null,
         "collectedAt": "2026-07-01T00:00:00.000Z",
@@ -1118,26 +1073,500 @@
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2c864955",
+        "evidenceChecksum": "3da659fe",
         "structuredFields": {
-          "kindergartenName": "엄지유치원",
-          "kindergartenAddress": "인천광역시 부평구 부일로 111",
+          "kindergartenName": "인천부원초등학교병설유치원",
+          "kindergartenAddress": "인천광역시 부평구 원적로472번길 29",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DGTB2XGyNnw%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22C_flY_fS5rr%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EC%9B%90%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22+%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DGTB2XGyNnw/",
-          "normalizedUrl": "www.instagram.com/p/dgtb2xgynnw",
-          "normalizedText": "인천 부평 엄지유치원 원아모집 instagram instagram 검색 결과에서 엄지유치원, 인천유치원, 부개동유치원, 부개엄지유치원 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "2c864955",
+          "canonicalUrl": "https://www.instagram.com/reel/C_flY_fS5rr/",
+          "normalizedUrl": "www.instagram.com/reel/c_fly_fs5rr",
+          "normalizedText": "인천부원초등학교병설유치원 학부모참여수업 instagram instagram 검색 결과에서 인천부원초등학교 병설유치원, 졸업반, 학부모참여수업, 요리하기 활동 문맥이 확인되는 릴.",
+          "htmlSnapshotHash": "3da659fe",
           "extractedAt": "2026-07-01T00:00:00.000Z",
           "structuredFields": {
-            "kindergartenName": "엄지유치원",
-            "kindergartenAddress": "인천광역시 부평구 부일로 111",
+            "kindergartenName": "인천부원초등학교병설유치원",
+            "kindergartenAddress": "인천광역시 부평구 원적로472번길 29",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DGTB2XGyNnw%22+%22%EC%97%84%EC%A7%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%9D%B8%EC%B2%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22C_flY_fS5rr%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EC%9B%90%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22+%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0392-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-d572cb80",
+        "kindergartenId": "1ecec08d-0392-b044-e053-0a32095ab044",
+        "title": "부평 산곡동 유치원, 2026년도 입학설명회 후기 (햇살/이화/은성아트/홍익/꿈나라)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=warmtoday_&logNo=224060160488",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만...",
+        "summary": "아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:15:17.799Z",
+        "relevanceScore": 7,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "8821277a",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=warmtoday_&logNo=224060160488",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=warmtoday_&logno=224060160488",
+          "normalizedText": "부평 산곡동 유치원, 2026년도 입학설명회 후기 (햇살/이화/은성아트/홍익/꿈나라) 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라 복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에 집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다 은성아트 외에는 도보권이라 셔틀은 의미가 없다 햇살유치원 이화유치원 은성아트어린이집 홍익유치원 꿈나라유치원 워낙 유치원 정보가 없어서 네이버 검색도 해보고... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자... 아이가 내년에 5세가 되어 가정어린이집 졸업 예정이라복직 전 본격적으로 유치원 설명회를 다녀왔다 나는 근거리, 도보권을 선호하기 때문에집 근처 위주와 셔틀 운행이 가능한 곳으로 추렸다은성아트 외에는 도보권이라 셔틀은 의미가 없다햇살유치원이화유치원은성아트어린이집홍익유치원꿈나라유치원워낙 유치원 정보가 없어서 네이버 검색도 해보고놀이터에서 만난 엄마들에게도 정보를 듣다보니정리가 잘 안되고 머리만 복잡해져서 1일 1설명회 방문 후 비교표를 만들어버렸다!원비는 15~35만원으로 다양한 편이었다(원비 문의는 댓글 적어주세용) * 본 포스팅은 제가 직접 다녀온유치원 설명회를 토대로 정리한 자료로,저의 개인적인 의견과 비교를 바탕으로 작성하였습니다.자료 및 글의 무단 복제나, 재게시, 외부 공유를 금합니다.",
+          "htmlSnapshotHash": "8821277a",
+          "extractedAt": "2026-06-26T07:15:17.799Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EA%BF%88%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "꿈나라유치원",
+            "kindergartenAddress": "인천광역시 부평구 안남로 272",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EA%BF%88%EB%82%98%EB%9D%BC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-np-0605-6-9sg2",
+        "kindergartenId": "1ecec08d-0392-b044-e053-0a32095ab044",
+        "title": "유짠이 리뷰 51사진 13 선생님들이 다 밝으시고 좋아요~ 아이가 신나게 다녀서 3년 꽉 ...",
+        "url": "https://m.place.naver.com/place/13350605/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "유짠이 리뷰 51사진 13 선생님들이 다 밝으시고 좋아요~ 아이가 신나게 다녀서 3년 꽉 채우고 졸업시키려구요 표정을 눌러 반응을 남겨 보세요! 1번째 방문",
+        "date": "2022-08-22",
+        "collectedAt": "2026-04-05T15:22:55.685Z"
+      }
+    ],
+    "1ecec08d-0579-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-23f1a03b",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "아이를 위한 감성놀이 생태활동이 준비되어있는 인천 부평 동심유치원",
+        "url": "https://blog.naver.com/PostView.naver?blogId=vjva38&logNo=224118184682",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡...",
+        "summary": "안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:15:34.501Z",
+        "relevanceScore": 4,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "39e73a14",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=vjva38&logNo=224118184682",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=vjva38&logno=224118184682",
+          "normalizedText": "아이를 위한 감성놀이 생태활동이 준비되어있는 인천 부평 동심유치원 아이들 유치원 하나 고르는 데에도 정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고 생태활동 감성놀이 등등 다양한 활동은 물론 부평구 산곡동에 위치해있고 40년 역사와 전통을 가져 오랜 시간 사랑받아온 인천부평 동심유치원을... 부모교육이나 동심모임 같은 여러 행사가 진행되는 다목적 공간이랍니다! 이곳은 아이들이 가장~좋아하는 공간인데요... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답... 안녕하세요~이제 내년이면 유치원에 들어가는아이들이 있는 부모님들, 계시죠?_? 제 주변에서도 어떤 기준으로자녀에게 딱 맞는 유치원을 찾을지엄청나게 고민하는 소리들이 들려오는데요✔️교육 위주일지 ✔️체험 위주일지그리고 ✔️오래 운영되어 검증된 곳인지 등등아이들 유치원 하나 고르는 데에도정말 신중한 요즘이잖아요 그래서 오늘 그 고민을 덜어드리려고생태활동 감성놀이 등등다양한 활동은 물론부평구 산곡동에 위치해있고40년 역사와 전통을 가져오랜 시간 사랑받아온인천부평 동심유치원을 소개해드리려고 합니다~ 상가나 다른 곳에 병합된 공간이 아닌단독 건물로 이루어져있어안전하고 따뜻한 분위기 인데요문을 여는 순간외관만큼이나 밝고 화사한 공간이바로 맞이해준답니다내부 시설은 물론요즘은 뛰어놀 일이 많이 없는아이들이 맘편히 뛰어놀 수 있도록야외 놀이터와 텃밭 공간도 준비되어 있어요 특히 햇살이 잘 드는3층 강당에서는넓은 공간을 활용해서음악, 체육, 축구 등 다양한 학습과인형극, 공연, 부모교육이나 동심모임 같은여러 행사가 진행되는다목적 공간이랍니다! 이곳은 아이들이 가장~좋아하는 공간인데요사진만 봐도 엄청 신나할 것 같은 이곳은지하 1층에 있는 실내 놀이터예요냉난방시설이 완비되어 있기 때문에계절 상관없이 뛰어놀며건강도 챙길 수 있겠죠? 그리고 잠깐 설명드렸던실외 놀이터와 그늘막이 설치되어 있어미술 퍼포먼스나 텃밭 수업 같은여러 야외활동도 활발히 이루어지고 있답니다! 감성놀이 위주로수업의 질을 높이기 위해 마련된특별활동 전용 공간도 빼놓을 수 없는데요✔️푸드 아트실은 아이들이예쁜 앞치마를 두르고 모자를 쓰고한달에 한번!재미와 창의성을 길러주는 요리활동을 해요알록달록한 요리도구를 사용해주제에 맞는 요리를 배우기도 하고직접 만들어먹는 즐거움도 느낀답니다 ✔️미술실에서는 다양한 재료를 써서상상력과 창의력을 마음껏 표현할 수 있는데요아이들이 공부 뿐만 아니라감성놀이 를 통해뇌를 활성화시킬 수 있도록여러 커리큘럼이 준비되어 있어요이게 끝이 아니라야외 텃밭에서 직접 작물도 심어보고수확한 것들로 요리 체험으로 이어진답니다 식물의 성장 과정을 관찰하면서자연에 대한 관심과생명에 대한 소중함도 배울 수 있다는 건일석이조겠죠? 봄이 되면 상추 감자 방울토마토 완두콩부터애플수박 옥수수 당근 무 딸기까지제철채소들이 무엇인지도 알아볼 수 있어요넓고 쾌적한 공간은아이들이 더욱 더 자유롭고쾌활하게 활동할 수 있도록 도와주는데요 동심유치원의 교실만 봐도공간 하나하나에 아이들을 위한세심한 배려가 녹아져있다는 걸 느낄 수 있답니다이외에도 정말 많은 장점들이있는 곳이었는데요 직접 방문하셔서 따뜻한 분위기와교육 환경을 생생하게 느껴보시면결정하시는데에 더욱 좋은 기회가 되겠죠? 동심유치원(@dongsim.kids) • instagram 사진 및 동영상 팔로워 89명, 팔로잉 2명, 게시물 74개 - 동심유치원(@dongsim.kids)님의 instagram 사진 및 동영상 보기 www.instagram.com 위 인스타그램 계정으로늘 소식까지 볼 수 있으니더욱 아이를 믿고 맡길 수 있는 곳이라는 걸알아볼 수 있었답니다~ 동심유치원 인천광역시 부평구 원적로416번길 20 이 블로그의 체크인 이 장소의 다른 글 📍주소인천 부평구 원적로416번길 20📍문의전화032-527-6711",
+          "htmlSnapshotHash": "39e73a14",
+          "extractedAt": "2026-06-26T07:15:34.501Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "동심유치원",
+            "kindergartenAddress": "인천광역시 부평구 원적로416번길 38",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EB%8F%99%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-5048-qj23",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "인천 부평구 산곡동 동심유치원 후기 - 원장님이 교육에 대한 열정이 매우 뛰어나요",
+        "url": "http://cafe.naver.com/tabong98/5048",
+        "source": "naver_cafe",
+        "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
+        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 동심유치원 환경 및 시설 ]... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
+        "date": null,
+        "collectedAt": "2026-02-18T06:13:58.246Z",
+        "relevanceScore": 3
+      },
+      {
+        "id": "rev-np-2199-0-s2uf",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "리뷰 68사진 22팔로워 1 상담예약 오늘은 실외 놀이터 활동을 했나봐요~ㅎㅎㅎ 아이가 집...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "리뷰 68사진 22팔로워 1 상담예약 오늘은 실외 놀이터 활동을 했나봐요~ㅎㅎㅎ 아이가 집에 와서 “텃밭에 무가 진짜 많아. 우리가 수확할꺼야!” 하면서 신나게 이야기하더라고요. 체험 중심 활동이 아이에게 큰 즐거움이 되는 것 같아요ㅎㅎ 더보기 1번째 방문",
+        "date": "2025-12-30",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-1-md3y",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "리뷰 134사진 359팔로워 1 상담예약 생일파티를 유치원에서 해주셨는데요 아이가 너무 행...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "리뷰 134사진 359팔로워 1 상담예약 생일파티를 유치원에서 해주셨는데요 아이가 너무 행복해했어요. 사진도 예쁘게 찍어주고, 친구들과 함께 즐기는 모습이 정말 보기 좋았습니다🎂💛 더보기 1번째 방문",
+        "date": "2025-12-30",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-2-2gip",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "pjihye6 리뷰 232사진 754 상담예약 선생님들께서 아이들에게 진심인게 느껴지고 다...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "pjihye6 리뷰 232사진 754 상담예약 선생님들께서 아이들에게 진심인게 느껴지고 다들너무 친절하시고 섬세하게 잘봐주세요~ 저는 그것만으로도 너무 감사합니다~!! 1번째 방문",
+        "date": "2025-12-29",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-99852680",
+        "title": "부평 산곡동 유치원 찾는다면｜40년 전통 동심유치원 방문 후기",
+        "url": "https://blog.naver.com/gyk0107/224121255173",
+        "source": "naver_blog",
+        "sourceName": "모할가영",
+        "snippet": "계신다면 인천 부평구 동심유치원, 꼭 한 번 눈여겨보셔도 좋을 것 같아요 ✨  동심유치원  인천 부평구 산곡동  @dongsim.kids #문학적접근 #무지개수영 #맵프렌즈 #감성놀이 #생태활동 #인천동심유치원...",
+        "date": "2025-12-24",
+        "collectedAt": "2026-07-26T10:10:52.619679",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044"
+      },
+      {
+        "id": "rev-np-2199-3-8oxj",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "미성1111 리뷰 29사진 27 상담예약 아이가 등원할 때마다 선생님이 이름 불러주며 꼭 ...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "미성1111 리뷰 29사진 27 상담예약 아이가 등원할 때마다 선생님이 이름 불러주며 꼭 안아주시는 모습이 참 좋았어요. 작은 행동 하나하나에서 진심이 느껴져서 마음이 편안했습니다. 아이도 유치원을 ‘놀이터’처럼 여겨서 매일 기분 좋게 보냅니다. 더보기 1번째 방문",
+        "date": "2025-12-24",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-4-j53o",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "리뷰 150사진 52 상담예약 아이 적응 기간이 걱정됐는데 선생님들이 정말 세심하게 챙겨주...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "리뷰 150사진 52 상담예약 아이 적응 기간이 걱정됐는데 선생님들이 정말 세심하게 챙겨주셔서 생각보다 훨씬 빨리 적응했어요. 수업 내용도 매일 사진으로 공유해주셔서 어떤 활동을 하는지 확인할 수 있어 좋습니다. 전반적으로 안정적이고 믿음 가는 원이에요. 더보기 1번째 방문",
+        "date": "2025-12-23",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-5-bn4d",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "Seungmi93 리뷰 73사진 27팔로워 6 상담예약 지금은 매일 유치원 가는 걸 즐거워...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "Seungmi93 리뷰 73사진 27팔로워 6 상담예약 지금은 매일 유치원 가는 걸 즐거워해요. 선생님과 친구들 덕분에 아이가 하루하루 행복해하는 모습이 보여서 정말 너무예뻐요 ^^ 1번째 방문",
+        "date": "2025-12-22",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-6-dpt2",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "참된사람43 리뷰 163사진 483 상담예약 요즘 유치원에서 만들어 오는 작품이나 활동 결...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "참된사람43 리뷰 163사진 483 상담예약 요즘 유치원에서 만들어 오는 작품이나 활동 결과물이 정말 다양한데요ㅎ 미술, 신체 놀이, 소근육 활동 등 프로그램 구성이 알차서 아이가 매일 신나 해요ㅎ 특히 요리활동 날에는 집에 와서 또 만들어보자고 할 정도로 즐거웠다고하네요ㅎ 교육환경 진짜 좋아요 추천합니다! 더보기 1번째 방문",
+        "date": "2025-12-18",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-7-9wxb",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "mun2597 리뷰 67사진 79팔로워 1 상담예약 깔끔하고 체계적인 원이라고 느꼈어요. ...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "mun2597 리뷰 67사진 79팔로워 1 상담예약 깔끔하고 체계적인 원이라고 느꼈어요. 등원·하원 시스템도 잘 되어 있고 알림장 업데이트가 빨라서 부모 입장에서 편합니다. 선생님들도 전문적이면서도 아이에게 따뜻하게 대해주셔서 믿고 맡길 수 있었어요. 더보기 1번째 방문",
+        "date": "2025-12-18",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-np-2199-9-82kb",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044",
+        "title": "placetori 리뷰 81사진 69 상담예약 처음엔 친구들과 어울리는 걸 어려워했어요. ...",
+        "url": "https://m.place.naver.com/place/16522199/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "placetori 리뷰 81사진 69 상담예약 처음엔 친구들과 어울리는 걸 어려워했어요. 선생님이 자연스럽게 도와주셔서 이제 친구들과 즐겁게 놀이하고 있어요. 집에서도 친구 이야기만 하면 웃음꽃이 피네요ㅎㅎ 1번째 방문",
+        "date": "2025-12-12",
+        "collectedAt": "2026-04-05T15:23:06.221Z"
+      },
+      {
+        "id": "rev-99852679",
+        "title": "부평유치원 추천! 동심유치원 아이가 즐겁게 다니는 곳:)",
+        "url": "https://blog.naver.com/jamieandji/224051284664",
+        "source": "naver_blog",
+        "sourceName": "지호네 일상 & 여행기록",
+        "snippet": "선택한 동심유치원인데요! 다녀보니 제 선택이 틀리지 않았다라는 걸 느끼며 만족하고 보내고 있어요!... 경험해보니 너무 좋았고 세계지도에서 나라를 척척 찾아내는 아이들의 모습이 신기했어요...",
+        "date": "2025-10-23",
+        "collectedAt": "2026-07-26T10:10:52.619676",
+        "kindergartenId": "1ecec08d-0579-b044-e053-0a32095ab044"
+      }
+    ],
+    "1ecec08d-068f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-76956029",
+        "kindergartenId": "1ecec08d-068f-b044-e053-0a32095ab044",
+        "title": "인천광역시 부평구 청담유치원 - 놀이중심교육은 놀기만 하나요?",
+        "url": "https://blog.naver.com/PostView.naver?blogId=chungdamkid&logNo=224291705369",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? No! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나...",
+        "summary": "놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? No! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는...",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:15:41.963Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "858d6b72",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=chungdamkid&logNo=224291705369",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=chungdamkid&logno=224291705369",
+          "normalizedText": "인천광역시 부평구 청담유치원 - 놀이중심교육은 놀기만 하나요? 13 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나... 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는... 놀이중심은유치원에서 하루종일~놀고만 오는 것 아닌가요? no! no!절대 아닙니다!^^ 안녕하세요?청담유치원 원감이예요.^^2019년 개정 누리과정은아동중심, 놀이중심 교육으로의 대전환입니다. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 발달의 개인차가 큰 영유아에게 극도로 세분화된 월령별,연령별,기간별 교육 목표를 설정하고 교육 내용을 선정, 조직하여교수, 학습하는 것이 과연? 얼마나?큰 도움이 되는지에 대한 반성으로 나온 전면 개정 교육과정이죠. 쉽게 말하자면인지발달 덜 된 애기들에게 치밀하게 조직된 일일,주간,월간 학습계획이 다 무슨 소용이야????계획된 틀에 박힌 후진적 교육으로 미래 인재들의 창의성을 말살하지 마라!!!는 것이지요^^그러나..시행된지 8년이 경과되었지만 여전히 놀이중심 교육의 현장 적용은 쉽지 않습니다. 그만큼 대한민국 교육현실에 적용하기에는 현타가 많이 온다는 반증이겠지요.. 청담유치원은 여러가지 어려운 유아교육 현실에서도 놀이중심 교육을 위해 많은 연구와 노력을 하고 있습니다.청담유치원의 동화책을 이용한 book 프로젝트 활동, 글이 아닌 경험을 통해 배우는 다양한 체험 행사, 키즈노트와 놀이 기록지를 통한 사진 기록과유아, 교사, 학부모의 코멘트 기록 등 모든 것이 놀이중심 교육의 일환이지요. 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 이러한 놀이중심 교육의 기저에는유아교육 이론들이 다양하게 녹아있습니다. 우리에게 친근한 몬테소리 프로그램, 프로젝트 접근법, 레지오 에밀리아 접근법, 다중지능이론 등의 여러 교육 철학이 기저에 깔려 있는데요.아동중심, 놀이중심 교육의 뿌리가 된 몇가지 교육철학 또는 접근법에 대해잠시만(?) 알아보겠습니다.^^ 몬테소리(montessori) 프로그램 1900년대 초 이탈리아 최초의 여의사 몬테소리는 0-6세를 특정 기술을 보다 쉽게 배울 수 있는 민감기(sensitive period)로 정의했습니다. 이 시기에 유아는 무의식적, 의식적으로 학습하는 흡수정신(absorbent mind)을 가지고 준비된 환경에서 스스로 학습한다고 보았으며이를 자동교육(self-teaching)이라명명하였습니다. [이미지 출처 : 위키피디아] a montessori classroom in the united states (몬테소리 교구=준비된 환경) 100년도 전에 마리아 몬테소리는 유아를 self-teaching이 가능한 능동적 존재로 보았으며 성인의 역할은 환경을 제공하고 도와주는 것이라 하였습니다. 이것이 현재 대한민국 아동중심 교육의 근본이 된 아동관입니다. 역시 선진국이네요^^ 프로젝트(project) 접근법 현재 많은 교육현장에서 실행되고 있는 우수한 교수-학습 방법으로 청담유치원에서도 놀이중심 교육의 실행 도구로 그림책을 활용한 프로젝트를 진행하고 있습니다. 1920년대에 듀이 등의 진보주의 교육에서 처음 제안된프로젝트 접근법은유아와 교사가 교육적 가치가 있는 주제에 대해 깊게 연구함으로써 유아의 주변 세계에 대한 이해를 도와주고 지적 호기심을 지속적으로 유발시키는 교육 방법입니다. 1단계는 계획 및 도입(브레인스토밍), 2단계는 탐색과 표상(견학, 동극, 조형물 구상), 3단계는 마무리, 전시, 평가의 순서로 진행됩니다. 인천광역시 부평구 청담유치원 만3세 프로젝트 전개 활동 레지오 에밀리아(reggio emilia) 접근법 레지오 에밀리아 접근법의 아동관은 행복한 유아, 강한 유아, 능력있는 유아입니다.제 식견으로는레지오 에밀리아 접근법이현재 우리나라 개정누리과정 놀이중심 교육에 가장 큰 영향력을 행사한 것으로 보입니다. 레지오 에밀리아 (reggio emilia)는 이탈리아 북부 에밀리아로마냐 주에 위치한 도시이자, 이 도시에서 시작된 독특한 교육 철학인 레지오 에밀리아 접근법으로 유명합니다. 이 접근법은 어린이의 잠재력과 권리를 강조하며, 다양한 표현 방식을 통해 학습하고, 공동체와 교사의 협력을 중시합니다. [구글 ai요약 reggio emilia] 레지오 에밀리아 접근법은1991년 미국 뉴스위크지에서 [세계에서 가장 훌륭한 10대 학교]로 선정되어 널리 알려졌으며 발현적 교육과정(emergent curriculum)이 핵심입니다. 발현적 교육과정은 학습목표를 정하고 순차적으로 학습하는 것이 아니라 유아의 흥미에서 시작하여 한가지 주제에 대해 심도깊게 연구해가는 것을 이릅니다. [이미지 출처 : 위키피디아] 레지오 에밀리아 도시 전경 이 접근법은 기록 작업을 매우 중요시합니다. 유아의 작품, 활동 모습을 사진으로 기록하고, 유아를 관찰하여 기록하거나 대집단 토론을 기록하기도 합니다. 유아의 작품 설명, 학부모와 교사의 코멘트 등도 글로 기록합니다. 또한 유아의 작품을 교실, 복도, 야외 등에 전시하여 유아의 흥미가 무엇인지, 교육과정이 잘 진행되었는지를 확인하고, 지역사회에 유아교육기관에서 무엇을 행하는지를 자연스럽게 알리게 됩니다. [이미지 출처 : https://www.reggiochildren.it] 청담유치원을 비롯한 놀이중심 교육을 하는 모든 기관들은 크든 작든 레지오 에밀리아 접근법의 영향을 받았다고 볼 수 있습니다. 인천광역시 부평구 청담유치원 만4세 프로젝트 활동 다중 지능 이론(multiple intelligence) 1980년대에 가드너가 제시한 이론으로 지능을 단일한 개념이 아닌 언어, 음악, 논리-수학, 자연탐구, 공간, 운동, 개인 내적 지능, 대인관계 지능의 8개의 영역으로 나누어 설명하고 있습니다. 전통적으로 지능으로 인정해온 언어와 논리-수학 지능 외의 다른 지능도 인정하고 학교에서 이를 위한 적절한 학습법을 개발해야 한다는 주장이지요. [이미지 출처: https://multiiq.com] 다중 지능 이론의 적용을 위해서는주제 중심의 통합 교육이 이루어져야 하는데요이는 프로젝트 접근법과도 일맥상통합니다. 다중지능이론은 유아 교육이 왜 교과를 나누지 않는 통합 교육을 추구하는지 그 이유를 잘 설명해 주고 있습니다.유아기에는 여러 지능을 골고루 자극하고 발달시켜야 하니까요! 인천광역시 부평구 청담유치원 만5세 프로젝트 활동 유아교육은 한 마디로 요약하면 재미있게 놀아주면서 행복한 어린이로 키우자!인데요~이론은 무척 복잡하고 어렵죠?^^;;;(쓰다보니.. 긴글주의 경고를 넣었어야.. ㅋ) 청담유치원에서 프로젝트 자원 요청,그린 드레스코드 등부모님 협조를 부탁드리는 것들이어떤 목적을 위한 것인지 이해하셨을까요?(정답 : 놀이중심 교육) 인천광역시 부평구 청담유치원 만3세 프로젝트 활동 오늘의 포스팅이청담유치원 교육을 조금 더 이해하는데도움이 되셨기를 바랍니다. 청담유치원의아동중심, 놀이중심 교육이미래 인재 성장의밑거름이 될 수 있도록모든 교직원들이최선을 다하겠습니다. 청담유치원으로 오세요^^ 청담유치원 인천광역시 부평구 동수천로 70 이 블로그의 체크인 이 장소의 다른 글",
+          "htmlSnapshotHash": "858d6b72",
+          "extractedAt": "2026-06-26T07:15:41.963Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "청담유치원",
+            "kindergartenAddress": "인천광역시 부평구 동수천로 70",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%B2%AD%EB%8B%B4%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      }
+    ],
+    "1ecec08d-0731-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5998d2bb",
+        "kindergartenId": "1ecec08d-0731-b044-e053-0a32095ab044",
+        "title": "인천 파란꿈숲유치원 입학식 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DVfpYw-gDhw/",
+        "source": "other",
+        "sourceName": "Instagram · 꿈숲유치원",
+        "snippet": "꿈숲유치원 입학식에서 애국가 제창과 원장님 말씀, 서로 인사하는 시간이 확인되는 Instagram 릴스 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "admission"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T03:50:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "eb149562",
+        "structuredFields": {
+          "kindergartenName": "파란꿈숲유치원",
+          "kindergartenAddress": "인천광역시 부평구 갈월동로 45",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22DVfpYw-gDhw%22+%22%EA%BF%88%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과 표기는 꿈숲유치원이고, 로컬 원장부에는 같은 갈월동 주소 계열의 파란꿈숲유치원으로 등록되어 있어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVfpYw-gDhw/",
+          "normalizedUrl": "www.instagram.com/reel/dvfpyw-gdhw",
+          "normalizedText": "인천 파란꿈숲유치원 입학식 instagram reel 꿈숲유치원 입학식에서 애국가 제창과 원장님 말씀, 서로 인사하는 시간이 확인되는 instagram 릴스 검색 결과.",
+          "htmlSnapshotHash": "eb149562",
+          "extractedAt": "2026-07-02T03:50:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "파란꿈숲유치원",
+            "kindergartenAddress": "인천광역시 부평구 갈월동로 45",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22DVfpYw-gDhw%22+%22%EA%BF%88%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과 표기는 꿈숲유치원이고, 로컬 원장부에는 같은 갈월동 주소 계열의 파란꿈숲유치원으로 등록되어 있어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T03:50:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-095d-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5565747f",
+        "kindergartenId": "1ecec08d-095d-b044-e053-0a32095ab044",
+        "title": "부평 무지개유치원 학부모참여수업 SNS",
+        "url": "https://www.instagram.com/reel/DQLlON_ieGB/",
+        "source": "other",
+        "sourceName": "Instagram · 부평 무지개유치원",
+        "snippet": "부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 무지개유치원의 학부모참여수업 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "parent-participation"
+        ],
+        "content": "부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 Instagram 검색 결과. 무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T22:55:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "43883644",
+        "structuredFields": {
+          "kindergartenName": "무지개유치원",
+          "kindergartenAddress": "인천광역시 부평구 안남로41번길 3",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DQLlON_ieGB%22+%22%EB%B6%80%ED%8F%89%22+%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQLlON_ieGB/",
+          "normalizedUrl": "www.instagram.com/reel/dqllon_iegb",
+          "normalizedText": "부평 무지개유치원 학부모참여수업 sns 부평 무지개유치원 2025년 학부모참여수업과 숲체험활동 문맥이 확인되는 instagram 검색 결과. 인천 부평구 무지개유치원의 학부모참여수업 instagram 검색 결과.",
+          "htmlSnapshotHash": "43883644",
+          "extractedAt": "2026-06-30T22:55:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "무지개유치원",
+            "kindergartenAddress": "인천광역시 부평구 안남로41번길 3",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DQLlON_ieGB%22+%22%EB%B6%80%ED%8F%89%22+%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "무지개유치원 동명이 있어 부평·동수역 문맥과 원장부 주소를 기준으로 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T22:55:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-09c7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-5052-9cp2",
+        "kindergartenId": "1ecec08d-09c7-b044-e053-0a32095ab044",
+        "title": "인천 부평구 산곡동 산곡유치원 후기 - 아이들 위주의 수업이에요",
+        "url": "http://cafe.naver.com/tabong98/5052",
+        "source": "naver_cafe",
+        "sourceName": "[ 인천맘스쿨 ] 인천맘의 자녀교육정보...",
+        "snippet": "이 후기는 '스터디홀릭'(www.studyholic.com)의 회원이 작성한 개인적인 의견입니다. [ 산곡유치원 환경 및... studyholic.com ) ※ 스터디홀릭에서 더 많은 후기를 만나보세요. (클릭) #인천부평구유치원 #산곡동유치원",
+        "date": null,
+        "collectedAt": "2026-02-18T06:13:58.247Z",
+        "relevanceScore": 3
+      }
+    ],
+    "1ecec08d-0a2f-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-np-2443-0-rzwz",
+        "kindergartenId": "1ecec08d-0a2f-b044-e053-0a32095ab044",
+        "title": "지똥11 리뷰 1,209사진 297팔로워 4 친절한 선생님들과 쾌적한 유치원 입니다 1번째...",
+        "url": "https://m.place.naver.com/place/16572443/review/visitor",
+        "source": "naver_place",
+        "sourceName": "naver_place",
+        "snippet": "지똥11 리뷰 1,209사진 297팔로워 4 친절한 선생님들과 쾌적한 유치원 입니다 1번째 방문",
+        "date": "2020-01-31",
+        "collectedAt": "2026-04-05T15:23:29.926Z"
+      }
+    ],
+    "1ecec08d-0b9c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave686-32cef72f",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "인천 숲속유치원 가을음악회 기록",
+        "url": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속유치원",
+        "snippet": "숲속유치원이 원적산공원 야외무대에서 가을음악회를 열고 클래식 공연 감상과 합창을 진행한 공개 릴스입니다.",
+        "summary": "야외무대 음악회와 합창 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music-concert",
+          "choir",
+          "outdoor-stage"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:55.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave686-32cef72f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/",
+          "normalizedUrl": "instagram.com/reel/drreksle1pl",
+          "normalizedText": "숲속유치원 원적산공원 가을음악회 클래식음악공연 합창",
+          "htmlSnapshotHash": "sns-wave686-32cef72f",
+          "extractedAt": "2026-07-03T23:59:55.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DRREKSlE1Pl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:55.000Z",
+        "approvedBy": "codex-manual-sns-wave686"
+      },
+      {
+        "id": "rev-85482e55",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "인천 부평 숲속유치원 입학설명회 Instagram",
+        "url": "https://www.instagram.com/p/CySYeHAy3ux/",
+        "source": "other",
+        "sourceName": "Instagram · 숲속유치원",
+        "snippet": "Instagram 검색 결과에서 숲속유치원, 인천유치원, 부평구유치원, 산곡동유치원, 입학설명회 일정 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "orientation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "ae250aaa",
+        "structuredFields": {
+          "kindergartenName": "숲속유치원",
+          "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CySYeHAy3ux%22+%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%ED%8F%89%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CySYeHAy3ux/",
+          "normalizedUrl": "www.instagram.com/p/cysyehay3ux",
+          "normalizedText": "인천 부평 숲속유치원 입학설명회 instagram instagram 검색 결과에서 숲속유치원, 인천유치원, 부평구유치원, 산곡동유치원, 입학설명회 일정 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "ae250aaa",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "숲속유치원",
+            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CySYeHAy3ux%22+%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B6%80%ED%8F%89%EA%B5%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1147,95 +1576,179 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-sns-wave711-069b9f82",
-        "kindergartenId": "1ecec08c-fc7f-b044-e053-0a32095ab044",
-        "title": "인천 엄지유치원 여름캠프 물놀이 기록",
-        "url": "https://www.instagram.com/p/DMzxsw1S2v6/",
+        "id": "rev-ba4b700d",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "🌍인천 부평구 숲속유치원 - 지구를 지키는 작은 실천, 플로깅 체험 이야기🌍",
+        "url": "https://blog.naver.com/PostView.naver?blogId=soop60&logNo=224009477755",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레...",
+        "summary": "숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다....",
+        "tags": [
+          "public"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-26T07:17:04.433Z",
+        "relevanceScore": 6,
+        "accessMode": "public",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "f43971a0",
+        "evidence": {
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=soop60&logNo=224009477755",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=soop60&logno=224009477755",
+          "normalizedText": "🌍인천 부평구 숲속유치원 - 지구를 지키는 작은 실천, 플로깅 체험 이야기🌍 10 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레... 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다.... 숲속유치원 인천광역시 부평구 산청로17번길 77-1 이 블로그의 체크인 이 장소의 다른 글 숲속유치원 만 5세 친구들이 환경 미래관 견학과 환경 뮤지컬을 관람한 후 지구를 지켜야 한다는 마음이 점점 싹트기 시작했습니다. 그 마음을 이어가기 위해 준비한 활동이 바로 플로깅 체험이었습니다. 아이들과 함께 늘 걸어 다니던 숲길과 원적산 공원으로 향했어요. 평소에는 그냥 지나쳤던 길가에서 작은 쓰레기들을 발견하자 “여기 있다!” 하며 서로 먼저 집으려는 아이들의 목소리가 여기저기서 들려왔습니다. 작은 손으로 조심스럽게 주워 담는 모습에는 진지함이 가득했고, 하나둘 모아질 때마다 아이들은 “우리가 숲을 깨끗하게 만들었어요!”라며 뿌듯해했습니다. 하지만 거기서 끝이 아니었어요. 모아온 쓰레기를 함께 분리수거하며, “이건 플라스틱인가?”, “이건 어디에 버리지?” 질문을 주고받으며 직접 확인해 보았어요.아이들이 놀이처럼 즐기면서도 자연스럽게 환경을 지키는 습관을 배우는 소중한 시간이 되었지요.작은 손길이 모여 숲을 조금 더 맑게 만들었던 하루. 🌱 우리가 바로 지구 지킴이! 앞으로도 숲속유치원은 아이들과 함께 생활 속에서 지구를 지키는 다양한 방법들을 찾아보고, 그 실천을 이어가려 합니다. 오늘의 플로깅 체험이 아이들 마음에 ‘환경을 사랑하는 씨앗’으로 뿌리내리길 기대합니다.",
+          "htmlSnapshotHash": "f43971a0",
+          "extractedAt": "2026-06-26T07:17:04.433Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "숲속유치원",
+            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
+      },
+      {
+        "id": "rev-4db6a0e1",
+        "kindergartenId": "1ecec08d-0b9c-b044-e053-0a32095ab044",
+        "title": "인천 부평 숲속유치원 입학설명회 일정 Instagram",
+        "url": "https://www.instagram.com/reel/DQqGPV4k43b/",
         "source": "other",
-        "sourceName": "Instagram · 엄지유치원",
-        "snippet": "인천 엄지유치원이 여름캠프에서 준비운동 후 친구들과 물놀이를 즐긴 게시물입니다.",
-        "summary": "유아들이 준비운동과 함께 물놀이 규칙을 익히며 여름활동을 경험한 원문입니다.",
+        "sourceName": "Instagram · 숲속유치원",
+        "snippet": "soopsok_kid 계정에서 숲속유치원, 산곡동, 부평유치원, 숲유치원, 입학설명회 일정 문맥이 확인되는 Instagram 릴.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admission",
+          "info-session",
+          "nature"
+        ],
+        "date": "2025-11-04",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-og-meta",
+        "evidenceChecksum": "2f4f37a5",
+        "structuredFields": {
+          "kindergartenName": "숲속유치원",
+          "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90+%EC%82%B0%EA%B3%A1%EB%8F%99",
+          "addressEvidenceRequired": false,
+          "snippetOnly": false
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DQqGPV4k43b/",
+          "normalizedUrl": "www.instagram.com/reel/dqqgpv4k43b",
+          "normalizedText": "인천 부평 숲속유치원 입학설명회 일정 instagram soopsok_kid 계정에서 숲속유치원, 산곡동, 부평유치원, 숲유치원, 입학설명회 일정 문맥이 확인되는 instagram 릴.",
+          "htmlSnapshotHash": "2f4f37a5",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "숲속유치원",
+            "kindergartenAddress": "인천광역시 부평구 산청로17번길 77-1",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%EC%88%B2%EC%86%8D%EC%9C%A0%EC%B9%98%EC%9B%90+%EC%82%B0%EA%B3%A1%EB%8F%99",
+            "addressEvidenceRequired": false,
+            "snippetOnly": false
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08d-0e43-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave726-4606277e",
+        "kindergartenId": "1ecec08d-0e43-b044-e053-0a32095ab044",
+        "title": "인천 햇살유치원 인천어린이과학관 견학 기록",
+        "url": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
+        "source": "other",
+        "sourceName": "Instagram · 햇살유치원",
+        "snippet": "인천 햇살유치원 친구들이 인천어린이과학관에서 과학 전시를 체험한 릴스입니다.",
+        "summary": "유아들이 어린이과학관에서 생활 속 과학 원리를 직접 보고 체험한 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "water-play",
-          "summer-camp",
-          "warm-up",
+          "science-museum",
+          "children-science",
+          "field-trip",
           "incheon"
         ],
         "date": null,
         "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave711-069b9f82",
+        "evidenceChecksum": "sns-wave726-4606277e",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DMzxsw1S2v6/",
-          "normalizedUrl": "instagram.com/p/dmzxsw1s2v6",
-          "normalizedText": "엄지유치원 인천 여름캠프 물놀이 준비운동 친구들",
-          "htmlSnapshotHash": "sns-wave711-069b9f82",
+          "canonicalUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
+          "normalizedUrl": "instagram.com/reel/darciugtv0y",
+          "normalizedText": "인천 햇살유치원 인천어린이과학관 견학 과학체험",
+          "htmlSnapshotHash": "sns-wave726-4606277e",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DMzxsw1S2v6/"
+          "sourcePageUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave711"
+        "approvedBy": "codex-manual-sns-wave726"
       }
     ],
     "1ecec08d-0e79-b044-e053-0a32095ab044": [
       {
-        "id": "rev-7c727225",
+        "id": "rev-1db3e25b",
         "kindergartenId": "1ecec08d-0e79-b044-e053-0a32095ab044",
-        "title": "인천 은현유치원 원아모집 SNS",
-        "url": "https://www.instagram.com/p/DQvyOwGknvc/",
+        "title": "인천 은현유치원 식목일 쿠킹클래스 Instagram",
+        "url": "https://www.instagram.com/p/DW3VtuaEoZF/",
         "source": "other",
         "sourceName": "Instagram · 은현유치원",
-        "snippet": "은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "인천 부평구 은현유치원의 2026학년도 원아모집 SNS 정보.",
+        "snippet": "eunhyun_kids 계정에서 은현유치원 식목일 '떠먹는 화분 케이크' 쿠킹클래스 문맥이 확인되는 Instagram 게시물.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "admission"
+          "activity",
+          "curriculum"
         ],
-        "content": "은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 인천 부평구 은현유치원에 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-06-30T23:59:55.000Z",
+        "collectedAt": "2026-06-30T23:59:59.999Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "22c865aa",
+        "evidenceChecksum": "a9c7a379",
         "structuredFields": {
           "kindergartenName": "은현유치원",
           "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQvyOwGknvc%22+%22%EC%9D%80%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-511-6766%22",
+          "searchUrl": "https://www.google.com/search?q=%22DW3VtuaEoZF%22+%22eunhyun_kids%22",
           "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+          "snippetOnly": true
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DQvyOwGknvc/",
-          "normalizedUrl": "www.instagram.com/p/dqvyowgknvc",
-          "normalizedText": "인천 은현유치원 원아모집 sns 은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 instagram 검색 결과. 인천 부평구 은현유치원의 2026학년도 원아모집 sns 정보.",
-          "htmlSnapshotHash": "22c865aa",
-          "extractedAt": "2026-06-30T23:59:55.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DW3VtuaEoZF/",
+          "normalizedUrl": "www.instagram.com/p/dw3vtuaeozf",
+          "normalizedText": "인천 은현유치원 식목일 쿠킹클래스 instagram eunhyun_kids 계정에서 은현유치원 식목일 '떠먹는 화분 케이크' 쿠킹클래스 문맥이 확인되는 instagram 게시물.",
+          "htmlSnapshotHash": "a9c7a379",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
           "structuredFields": {
             "kindergartenName": "은현유치원",
             "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQvyOwGknvc%22+%22%EC%9D%80%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-511-6766%22",
+            "searchUrl": "https://www.google.com/search?q=%22DW3VtuaEoZF%22+%22eunhyun_kids%22",
             "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
+            "snippetOnly": true
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:55.000Z",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
       },
       {
@@ -1279,6 +1792,55 @@
             "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
             "platform": "Instagram",
             "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Fp+OR+site%3Ainstagram.com%2Freel+%22eunhyun_kids%22+%22%EC%9D%80%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.999Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-6e812961",
+        "kindergartenId": "1ecec08d-0e79-b044-e053-0a32095ab044",
+        "title": "인천 은현유치원 봄소풍 Instagram",
+        "url": "https://www.instagram.com/reel/DZMS-agS0gq/",
+        "source": "other",
+        "sourceName": "Instagram · 은현유치원",
+        "snippet": "eunhyun_kids 계정에서 은현유치원 파주 놀이구름 봄소풍과 도시락·간식·현장체험 문맥이 확인되는 Instagram 릴스.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "field-trip"
+        ],
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.999Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e30113b7",
+        "structuredFields": {
+          "kindergartenName": "은현유치원",
+          "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DZMS-agS0gq%22+%22eunhyun_kids%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DZMS-agS0gq/",
+          "normalizedUrl": "www.instagram.com/reel/dzms-ags0gq",
+          "normalizedText": "인천 은현유치원 봄소풍 instagram eunhyun_kids 계정에서 은현유치원 파주 놀이구름 봄소풍과 도시락·간식·현장체험 문맥이 확인되는 instagram 릴스.",
+          "htmlSnapshotHash": "e30113b7",
+          "extractedAt": "2026-06-30T23:59:59.999Z",
+          "structuredFields": {
+            "kindergartenName": "은현유치원",
+            "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DZMS-agS0gq%22+%22eunhyun_kids%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true
           }
@@ -1436,502 +1998,14 @@
         "approvedBy": "manual-sns-web-search"
       },
       {
-        "id": "rev-1db3e25b",
+        "id": "rev-7c727225",
         "kindergartenId": "1ecec08d-0e79-b044-e053-0a32095ab044",
-        "title": "인천 은현유치원 식목일 쿠킹클래스 Instagram",
-        "url": "https://www.instagram.com/p/DW3VtuaEoZF/",
+        "title": "인천 은현유치원 원아모집 SNS",
+        "url": "https://www.instagram.com/p/DQvyOwGknvc/",
         "source": "other",
         "sourceName": "Instagram · 은현유치원",
-        "snippet": "eunhyun_kids 계정에서 은현유치원 식목일 '떠먹는 화분 케이크' 쿠킹클래스 문맥이 확인되는 Instagram 게시물.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "activity",
-          "curriculum"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a9c7a379",
-        "structuredFields": {
-          "kindergartenName": "은현유치원",
-          "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DW3VtuaEoZF%22+%22eunhyun_kids%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DW3VtuaEoZF/",
-          "normalizedUrl": "www.instagram.com/p/dw3vtuaeozf",
-          "normalizedText": "인천 은현유치원 식목일 쿠킹클래스 instagram eunhyun_kids 계정에서 은현유치원 식목일 '떠먹는 화분 케이크' 쿠킹클래스 문맥이 확인되는 instagram 게시물.",
-          "htmlSnapshotHash": "a9c7a379",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "은현유치원",
-            "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DW3VtuaEoZF%22+%22eunhyun_kids%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-6e812961",
-        "kindergartenId": "1ecec08d-0e79-b044-e053-0a32095ab044",
-        "title": "인천 은현유치원 봄소풍 Instagram",
-        "url": "https://www.instagram.com/reel/DZMS-agS0gq/",
-        "source": "other",
-        "sourceName": "Instagram · 은현유치원",
-        "snippet": "eunhyun_kids 계정에서 은현유치원 파주 놀이구름 봄소풍과 도시락·간식·현장체험 문맥이 확인되는 Instagram 릴스.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "field-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "e30113b7",
-        "structuredFields": {
-          "kindergartenName": "은현유치원",
-          "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DZMS-agS0gq%22+%22eunhyun_kids%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DZMS-agS0gq/",
-          "normalizedUrl": "www.instagram.com/reel/dzms-ags0gq",
-          "normalizedText": "인천 은현유치원 봄소풍 instagram eunhyun_kids 계정에서 은현유치원 파주 놀이구름 봄소풍과 도시락·간식·현장체험 문맥이 확인되는 instagram 릴스.",
-          "htmlSnapshotHash": "e30113b7",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "은현유치원",
-            "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DZMS-agS0gq%22+%22eunhyun_kids%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-efe3-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-dce077a2",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 부평 근산유치원 2026학년도 입학식 Instagram",
-        "url": "https://www.instagram.com/reel/DV0O8PwD_3b/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "kuen_san2 계정에서 2026학년도 근산유치원 입학식, 애국조회, 교사 소개, 교구 탐색, 동화책과 간식으로 첫날을 시작한 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "admission",
-          "event"
-        ],
-        "date": "2026-03-13",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "a598a0c7",
-        "structuredFields": {
-          "kindergartenName": "근산유치원",
-          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+kuen_san2+%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DV0O8PwD_3b/",
-          "normalizedUrl": "www.instagram.com/reel/dv0o8pwd_3b",
-          "normalizedText": "인천 부평 근산유치원 2026학년도 입학식 instagram kuen_san2 계정에서 2026학년도 근산유치원 입학식, 애국조회, 교사 소개, 교구 탐색, 동화책과 간식으로 첫날을 시작한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "a598a0c7",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "근산유치원",
-            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+kuen_san2+%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-132fc7fa",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 부평 근산유치원 딸기체험 농부교실 Instagram",
-        "url": "https://www.instagram.com/reel/DYBNtiGPZU8/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "kuen_san2 계정에서 근산유치원 조약돌반 원아들이 농업기술센터 농부교실에서 딸기 수확과 먹거리 교육을 경험한 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "farm-experience",
-          "field-trip"
-        ],
-        "date": "2026-05-06",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "35f21a3d",
-        "structuredFields": {
-          "kindergartenName": "근산유치원",
-          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DYBNtiGPZU8%22+%22kuen_san2%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYBNtiGPZU8/",
-          "normalizedUrl": "www.instagram.com/reel/dybntigpzu8",
-          "normalizedText": "인천 부평 근산유치원 딸기체험 농부교실 instagram kuen_san2 계정에서 근산유치원 조약돌반 원아들이 농업기술센터 농부교실에서 딸기 수확과 먹거리 교육을 경험한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "35f21a3d",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "근산유치원",
-            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DYBNtiGPZU8%22+%22kuen_san2%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-9d13fe5d",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 부평구 근산유치원 운영위원회 Instagram",
-        "url": "https://www.instagram.com/reel/DWfsgo2j9po/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "kuen_san2 계정에서 근산유치원 운영위원회가 학사일정, 방과후 프로그램 운영, 예결산 등 안건을 학부모 위원과 함께 논의한 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "school-committee",
-          "after-school"
-        ],
-        "date": "2026-03-29",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "8a55f25e",
-        "structuredFields": {
-          "kindergartenName": "근산유치원",
-          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DWfsgo2j9po%22+%22kuen_san2%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DWfsgo2j9po/",
-          "normalizedUrl": "www.instagram.com/reel/dwfsgo2j9po",
-          "normalizedText": "인천 부평구 근산유치원 운영위원회 instagram kuen_san2 계정에서 근산유치원 운영위원회가 학사일정, 방과후 프로그램 운영, 예결산 등 안건을 학부모 위원과 함께 논의한 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "8a55f25e",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "근산유치원",
-            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DWfsgo2j9po%22+%22kuen_san2%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-8fb38fdd",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 부평 근산유치원 햄 에그 샐러드 요리활동 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DRO0VgGEqNq/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "Instagram 검색 결과에서 kuen_san2 계정의 근산유치원 새싹반 햄 에그 샐러드 만들기 요리활동 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-confirmed",
-          "cooking",
-          "class-event"
-        ],
-        "date": "2025-11-19",
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "3eb862b2",
-        "structuredFields": {
-          "kindergartenName": "근산유치원",
-          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DRO0VgGEqNq%22+%22kuen_san2%22+%22%ED%96%84+%EC%97%90%EA%B7%B8+%EC%83%90%EB%9F%AC%EB%93%9C%22",
-          "addressEvidenceRequired": true,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DRO0VgGEqNq/",
-          "normalizedUrl": "www.instagram.com/reel/dro0vggeqnq",
-          "normalizedText": "인천 부평 근산유치원 햄 에그 샐러드 요리활동 instagram reel instagram 검색 결과에서 kuen_san2 계정의 근산유치원 새싹반 햄 에그 샐러드 만들기 요리활동 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "3eb862b2",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "근산유치원",
-            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DRO0VgGEqNq%22+%22kuen_san2%22+%22%ED%96%84+%EC%97%90%EA%B7%B8+%EC%83%90%EB%9F%AC%EB%93%9C%22",
-            "addressEvidenceRequired": true,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-b6df655b",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 근산유치원 검단 선사박물관 견학 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DQshpb1ElJ5/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "근산유치원 계정에서 7살 형님들이 검단 선사박물관으로 견학을 다녀온 문맥과 문화관광 해설사 단서가 확인되는 Instagram 릴스 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "museum-trip"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:50:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "8fcc8458",
-        "structuredFields": {
-          "kindergartenName": "근산유치원",
-          "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DQshpb1ElJ5%22+%22%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%80%EB%8B%A8+%EC%84%A0%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "근산유치원은 로컬 원장부 단일 매칭이며 검단 선사박물관 견학 문맥이 인천 로컬 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DQshpb1ElJ5/",
-          "normalizedUrl": "www.instagram.com/reel/dqshpb1elj5",
-          "normalizedText": "인천 근산유치원 검단 선사박물관 견학 instagram reel 근산유치원 계정에서 7살 형님들이 검단 선사박물관으로 견학을 다녀온 문맥과 문화관광 해설사 단서가 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "8fcc8458",
-          "extractedAt": "2026-07-02T23:50:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "근산유치원",
-            "kindergartenAddress": "인천광역시 부평구 영성중로 53",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DQshpb1ElJ5%22+%22%EA%B7%BC%EC%82%B0%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EA%B2%80%EB%8B%A8+%EC%84%A0%EC%82%AC%EB%B0%95%EB%AC%BC%EA%B4%80%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "근산유치원은 로컬 원장부 단일 매칭이며 검단 선사박물관 견학 문맥이 인천 로컬 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:50:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave709-0e0bd0b1",
-        "kindergartenId": "1ecec08c-efe3-b044-e053-0a32095ab044",
-        "title": "인천 근산유치원 가족운동회 응원전 기록",
-        "url": "https://www.instagram.com/p/DZ69w0VEzpH/",
-        "source": "other",
-        "sourceName": "Instagram · 근산유치원",
-        "snippet": "근산유치원 친구들이 가족운동회를 앞두고 청팀과 홍팀으로 나뉘어 응원 대항전을 펼친 게시물입니다.",
-        "summary": "유아들이 팀 응원과 운동회 준비 활동을 통해 협동과 소속감을 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "sports-day",
-          "team-cheering",
-          "physical-activity",
-          "incheon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave709-0e0bd0b1",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DZ69w0VEzpH/",
-          "normalizedUrl": "instagram.com/p/dz69w0vezph",
-          "normalizedText": "근산유치원 가족운동회 청팀 홍팀 응원 대항전",
-          "htmlSnapshotHash": "sns-wave709-0e0bd0b1",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DZ69w0VEzpH/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave709"
-      }
-    ],
-    "1ecec08c-f8c1-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-a64fcebd",
-        "kindergartenId": "1ecec08c-f8c1-b044-e053-0a32095ab044",
-        "title": "인천부개초등학교병설유치원 학부모 수업 공개 Instagram",
-        "url": "https://www.instagram.com/reel/DYi02d_ykID/",
-        "source": "other",
-        "sourceName": "Instagram · 인천부개초등학교",
-        "snippet": "bugae_e.s 계정에서 인천부개초등학교병설유치원 2026학년도 학교 교육활동 참여 수업일과 학부모 수업 공개 문맥이 확인되는 Instagram 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "open-class",
-          "parent-participation"
-        ],
-        "date": "2026-05-19",
-        "collectedAt": "2026-06-30T23:59:59.999Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-og-meta",
-        "evidenceChecksum": "a7815852",
-        "structuredFields": {
-          "kindergartenName": "인천부개초등학교병설유치원",
-          "kindergartenAddress": "인천광역시 부평구 마분로 9",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DYi02d_ykID%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EA%B0%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": false
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DYi02d_ykID/",
-          "normalizedUrl": "www.instagram.com/reel/dyi02d_ykid",
-          "normalizedText": "인천부개초등학교병설유치원 학부모 수업 공개 instagram bugae_e.s 계정에서 인천부개초등학교병설유치원 2026학년도 학교 교육활동 참여 수업일과 학부모 수업 공개 문맥이 확인되는 instagram 릴.",
-          "htmlSnapshotHash": "a7815852",
-          "extractedAt": "2026-06-30T23:59:59.999Z",
-          "structuredFields": {
-            "kindergartenName": "인천부개초등학교병설유치원",
-            "kindergartenAddress": "인천광역시 부평구 마분로 9",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DYi02d_ykID%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EA%B0%9C%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": false
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.999Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-020c-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-ce18ce0e",
-        "kindergartenId": "1ecec08d-020c-b044-e053-0a32095ab044",
-        "title": "인천부원초등학교병설유치원 학부모참여수업 Instagram",
-        "url": "https://www.instagram.com/reel/C_flY_fS5rr/",
-        "source": "other",
-        "sourceName": "Instagram · 인천부원초등학교 병설유치원",
-        "snippet": "Instagram 검색 결과에서 인천부원초등학교 병설유치원, 졸업반, 학부모참여수업, 요리하기 활동 문맥이 확인되는 릴.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "food-activity"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "3da659fe",
-        "structuredFields": {
-          "kindergartenName": "인천부원초등학교병설유치원",
-          "kindergartenAddress": "인천광역시 부평구 원적로472번길 29",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C_flY_fS5rr%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EC%9B%90%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22+%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C_flY_fS5rr/",
-          "normalizedUrl": "www.instagram.com/reel/c_fly_fs5rr",
-          "normalizedText": "인천부원초등학교병설유치원 학부모참여수업 instagram instagram 검색 결과에서 인천부원초등학교 병설유치원, 졸업반, 학부모참여수업, 요리하기 활동 문맥이 확인되는 릴.",
-          "htmlSnapshotHash": "3da659fe",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "인천부원초등학교병설유치원",
-            "kindergartenAddress": "인천광역시 부평구 원적로472번길 29",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C_flY_fS5rr%22+%22%EC%9D%B8%EC%B2%9C%EB%B6%80%EC%9B%90%EC%B4%88%EB%93%B1%ED%95%99%EA%B5%90%22+%22%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08d-0731-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-5998d2bb",
-        "kindergartenId": "1ecec08d-0731-b044-e053-0a32095ab044",
-        "title": "인천 파란꿈숲유치원 입학식 Instagram Reel",
-        "url": "https://www.instagram.com/reel/DVfpYw-gDhw/",
-        "source": "other",
-        "sourceName": "Instagram · 꿈숲유치원",
-        "snippet": "꿈숲유치원 입학식에서 애국가 제창과 원장님 말씀, 서로 인사하는 시간이 확인되는 Instagram 릴스 검색 결과.",
+        "snippet": "은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "인천 부평구 은현유치원의 2026학년도 원아모집 SNS 정보.",
         "tags": [
           "sns",
           "search-snippet",
@@ -1939,122 +2013,79 @@
           "instagram",
           "admission"
         ],
+        "content": "은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 Instagram 검색 결과다. 기관명과 전화번호, 원장부 주소를 기준으로 인천 부평구 은현유치원에 수동 매칭했다.",
         "date": null,
-        "collectedAt": "2026-07-02T03:50:00.000Z",
+        "collectedAt": "2026-06-30T23:59:55.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "eb149562",
+        "evidenceChecksum": "22c865aa",
         "structuredFields": {
-          "kindergartenName": "파란꿈숲유치원",
-          "kindergartenAddress": "인천광역시 부평구 갈월동로 45",
+          "kindergartenName": "은현유치원",
+          "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22DVfpYw-gDhw%22+%22%EA%BF%88%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "searchUrl": "https://www.google.com/search?q=%22DQvyOwGknvc%22+%22%EC%9D%80%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-511-6766%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "검색 결과 표기는 꿈숲유치원이고, 로컬 원장부에는 같은 갈월동 주소 계열의 파란꿈숲유치원으로 등록되어 있어 수동 매칭했다."
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DVfpYw-gDhw/",
-          "normalizedUrl": "www.instagram.com/reel/dvfpyw-gdhw",
-          "normalizedText": "인천 파란꿈숲유치원 입학식 instagram reel 꿈숲유치원 입학식에서 애국가 제창과 원장님 말씀, 서로 인사하는 시간이 확인되는 instagram 릴스 검색 결과.",
-          "htmlSnapshotHash": "eb149562",
-          "extractedAt": "2026-07-02T03:50:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DQvyOwGknvc/",
+          "normalizedUrl": "www.instagram.com/p/dqvyowgknvc",
+          "normalizedText": "인천 은현유치원 원아모집 sns 은현유치원 2026학년도 원아모집과 전화 032-511-6766 문맥이 확인되는 instagram 검색 결과. 인천 부평구 은현유치원의 2026학년도 원아모집 sns 정보.",
+          "htmlSnapshotHash": "22c865aa",
+          "extractedAt": "2026-06-30T23:59:55.000Z",
           "structuredFields": {
-            "kindergartenName": "파란꿈숲유치원",
-            "kindergartenAddress": "인천광역시 부평구 갈월동로 45",
+            "kindergartenName": "은현유치원",
+            "kindergartenAddress": "인천광역시 부평구 길주남로125번길 12",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com%2Freel%2F+%22DVfpYw-gDhw%22+%22%EA%BF%88%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "searchUrl": "https://www.google.com/search?q=%22DQvyOwGknvc%22+%22%EC%9D%80%ED%98%84%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22032-511-6766%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "검색 결과 표기는 꿈숲유치원이고, 로컬 원장부에는 같은 갈월동 주소 계열의 파란꿈숲유치원으로 등록되어 있어 수동 매칭했다."
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 기관명과 전화번호, 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T03:50:00.000Z",
+        "approvedAt": "2026-06-30T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08d-00ef-b044-e053-0a32095ab044": [
+    "dc6e7a31-4a2e-48f1-85be-d6eb10fa0f4b": [
       {
-        "id": "rev-sns-wave707-9390ed45",
-        "kindergartenId": "1ecec08d-00ef-b044-e053-0a32095ab044",
-        "title": "인천 예원유치원 숲놀이 프로젝트 기록",
-        "url": "https://www.instagram.com/p/DRbqHlHj-lQ/",
-        "source": "other",
-        "sourceName": "Instagram · 예원유치원",
-        "snippet": "부평구·삼산동 단서가 있는 예원유치원이 숲놀이 프로젝트를 소개한 게시물입니다.",
-        "summary": "유아들이 숲놀이를 통해 자연 속 프로젝트 활동을 경험한 원문입니다.",
+        "id": "rev-2ec2ab27",
+        "kindergartenId": "dc6e7a31-4a2e-48f1-85be-d6eb10fa0f4b",
+        "title": "인천 부평 산곡동 IBA 이바유치원 & 팰리스어린이집, 내 인생의 최고의 선택 :)",
+        "url": "https://blog.naver.com/PostView.naver?blogId=luxury0224&logNo=223246793857",
+        "source": "naver_blog",
+        "sourceName": "네이버 블로그",
+        "snippet": "애정하는 여러분들 안녕하세요 :D육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네...",
+        "summary": "애정하는 여러분들 안녕하세요 :D육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하...",
         "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "forest-play",
-          "project-learning",
-          "outdoor-learning",
-          "incheon"
+          "public"
         ],
         "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "collectedAt": "2026-06-26T07:23:23.081Z",
+        "relevanceScore": 9,
         "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave707-9390ed45",
+        "evidenceType": "longform_post",
+        "extractionMethod": "insane-search:public-page-body",
+        "evidenceChecksum": "8515559e",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/",
-          "normalizedUrl": "instagram.com/p/drbqhlhj-lq",
-          "normalizedText": "예원유치원 부평구 삼산동 숲놀이유치원 프로젝트",
-          "htmlSnapshotHash": "sns-wave707-9390ed45",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DRbqHlHj-lQ/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave707"
-      }
-    ],
-    "1ecec08d-0e43-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave726-4606277e",
-        "kindergartenId": "1ecec08d-0e43-b044-e053-0a32095ab044",
-        "title": "인천 햇살유치원 인천어린이과학관 견학 기록",
-        "url": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
-        "source": "other",
-        "sourceName": "Instagram · 햇살유치원",
-        "snippet": "인천 햇살유치원 친구들이 인천어린이과학관에서 과학 전시를 체험한 릴스입니다.",
-        "summary": "유아들이 어린이과학관에서 생활 속 과학 원리를 직접 보고 체험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "science-museum",
-          "children-science",
-          "field-trip",
-          "incheon"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave726-4606277e",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/",
-          "normalizedUrl": "instagram.com/reel/darciugtv0y",
-          "normalizedText": "인천 햇살유치원 인천어린이과학관 견학 과학체험",
-          "htmlSnapshotHash": "sns-wave726-4606277e",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DaRcIuGTV0Y/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave726"
+          "canonicalUrl": "https://blog.naver.com/PostView.naver?blogId=luxury0224&logNo=223246793857",
+          "normalizedUrl": "blog.naver.com/postview.naver?blogid=luxury0224&logno=223246793857",
+          "normalizedText": "인천 부평 산곡동 iba 이바유치원 & 팰리스어린이집, 내 인생의 최고의 선택 :) 2023.10.26.22년 이바 팰리스 예술제 / 3세, 4세 생각보다 정보가 많이 없고 후기도 많이 없어서 살짝은 멘붕이였다는 ㅋㅋㅋ 그래도... 있었지만 인천 부평구 산곡동에 친정이 있었다 보니까 친정 엄마도 보고 반찬도 챙기려고 입학설명회 신청한 날에 맞춰... 다니다보니 정말 아이들을 인천 부평 산곡동 이바유치원, 팰리스어린이집에 다니고있는 부모님들이 너무 만족을 하셔서... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하... 애정하는 여러분들 안녕하세요 :d육아 인플루언서 우아미가 인사드려요모처럼 끄적끄적 일상, 연년생 두 딸의 육아이야기 하려고 이렇게 신나게 글을 적어요 :)솔직히 이번 포스팅은 쓸까말까 고민을 많이 하고 적는데요!저희 아이들이 다니는 유치원, 어린이집 공개하는 것이고앞으로도 3년을 더 다녀야 하는 상황이라 생각을 정말 많이 해봤어요결론은 일단 적어보자!!!!! 하면서 이렇게 포스팅을 쓰고 있네요 :)그럼 관심있으신 분들은 마지막까지 꼼꼼하게 읽어주셨으면 좋겠어요! 아무 생각없이 하루하루 지내다가 입학설명회 시즌이 성큼 다가온 것을 보고저희 첫째와 둘째가 다니고 있는 인천 부평 산곡동에 위치하고 있는이바유치원, 팰리스어린이집을 신나게 소개하려고 합니다 :d 22년 이바 팰리스 / 3세, 4세 저희 남편이 직업군인이라 이리저리 이사를 다니다가 황소령과 주말부부를 하던 시기에친정엄마와 인천 부평에서 살림을 합치면서 이리저리 알아보고22년 3월부터 지금까지 2년동안 저희 두 딸들이 다니고있는 아이들 보육, 교육기관입니다 :)아무래도 근처 신축 아파트들이 입주하는 시기라서 내년에는 인천 부평 산곡동에 있는유치원, 어린이집이 정말 대기도 많고 박터질 것 같다는 생각이 들더라구요! 22년 이바 팰리스 / 3세, 4세 타지에서 살다가 이번에 이사오시거나 기존에 다니고 있던 유치원, 어린이집이만족스럽지 않아서 어디를 보내야하나 고민이신 분들께 도움이 되었으면 합니다!2년전에 저도 같은 고민을 했던 두 아이의 엄마라서 어떤 마음이실지 무척 이해갑니다 20년 군포 토브키즈 / 2세, 3세 저도 경기도 군포 부곡동에 있던 토브키즈어린이집에 아이들을 보냈는데요 :)너무 만족스러워서 솔직히 이때는 군포를 떠나기 싫었다는 것!하지만 가정어린이집에서 아이들이 어렸을 때 소규모로 성장을 넘나 잘했고조금 규모가 큰 곳으로 옮겨도 좋을 시기에 인천 부평 산곡동으로 이사와서이바유치원, 팰리스어린이집을 금방 적응하여 잘 다니고 있는 듯 해요 :d경기도 군포에서 인천 부평 산곡동에 있는 괜찮은 유치원과 어린이집을 찾기에는인터넷에 정보가 많지 않았고 코로나로 인해서 방문도 어려웠다보니아이들이 생활하는 공간도 눈으로 보기가 어려워 전화, 인터넷에만 의존하였는데요 22년 이바 팰리스 / 3세, 4세 특히 14개월 차이가 나는 연년생 아이들이라서 아무래도 같이 다니는 시기가 있지만첫째가 유치원에 다닐 때 둘째가 어린이집에 다니는 다섯살 시기에는 따로따로 등원하기가어렵고 불편할 것 같아서 유치원과 어린이집이 함께 있는 곳을 알아보게 되었어요그러다가 인천 부평 산곡3동에 있는 이바유치원, 팰리스어린이집을 우연하게 알게되었던!산곡3동에서 결혼하기 전까지 대략 10년정도 살았는데 여기에 유치원, 어린이집이 있었네!?네이버 거리뷰를 보니 예전에 살던 집과 가까워서 반가웠고 괜시리 관심이 가더라구요 22년 이바 팰리스 예술제 / 3세, 4세 생각보다 정보가 많이 없고 후기도 많이 없어서 살짝은 멘붕이였다는 ㅋㅋㅋ그래도 인천으로 이사가는 집과는 또 가까워 좋을 것 같다는 생각이 들었어요 :)특히 등하원 차량을 운영하고 있으며 연장반까지 운영중이라 워킹맘에게는 딱!참고로 여름, 겨울방학에도 등원이 가능해서 (도시락지참, 차량운행안함) 정말 불편함을 느낄 수가 없답니다경기도 군포는 차량없는 가정어린이집이라 걸어서 15분 차로 5분거리에 있었다보니까제가 차로 운전해서 등하원 시키는 것이 은근 힘들어 꼭 차량이 있는 곳으로 보내고 싶었죠마침 알아보던 시기에 입학설명회 참여할 부모님도 모집하고 있어서 일단 가보자! 하면서 바로 신청을 하였다는 점 :d참고로 어린이집 대기를 3곳정도 해놨다가 입학설명회 듣고 바로 나머지 취소했어요ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ설명회 전에 궁금한 부분이 있었을 때 전화를 했더니 친절하게 설명해주시고사진도 보내주셨는데 뭔가 이때부터 믿음이 팍팍 생겼던 것 같습니다 :d 타지에서 지내고 있었지만 인천 부평구 산곡동에 친정이 있었다 보니까친정 엄마도 보고 반찬도 챙기려고 입학설명회 신청한 날에 맞춰 방문했어요 :)벌써 2년전 이맘때라는 ㅋㅋㅋㅋㅋㅋㅋ 23년 이바 팰리스 / 4세 영어유치원은 아니지만 영어유치원처럼 매일마다 영어수업이 있고체계적이며 규모도 크고 뒤에 운동장까지 있어서 무척이나 끌렸던 것 같았어요!아쉽지만 이번 이바유치원, 팰리스어린이집 입학설명회는 모든 타임 마감된 것 같더라구요 23년 이바 팰리스 / 5세 지금은 원어민 선생님 수업까지 있다보니까 더 만족스럽고 4세반부터 영어를 시작하니4세, 5세반을 다니는 두 딸들이 요즘 영어 노래를 흥얼거려요!거기에다가 각종 체험도 많고 행사도 많으니 아이들이 유치원, 어린이집에 가는 시간을너무나도 좋아한다는 것은 안비밀!다니다보니 정말 아이들을 인천 부평 산곡동 이바유치원, 팰리스어린이집에 다니고있는 부모님들이 너무 만족을 하셔서아무런 홍보없이 재원생들 부모님들의 입소문으로 항상 정원이 꽉꽉 차는 것이더라구요 :)저도 근처에 사는 친구가 저희 아이들 또래라면 무조건 보내보라고 강력추천을 할것같아요!제가 선택을 했지만 다시 생각해보면 이건 진짜 운이 너무 좋았던 것 같습니다 :d군인가족이라 앞으로도 이사를 많이하고 언젠가 인천을 떠나는 날도 있겠지만이바유치원, 팰리스어린이집을 너무 잘만나서 두 아이들 유치원 졸업까지는 인천 부평 산곡동에 있기로 했어요 ㅋㅋㅋㅋㅋ 23년 이바 팰리스 / 4세, 5세 다양한 수업과 체험을 하고 원장선생님, 원감선생님, 많은 담임선생님과 보조선생님 그리고 연장반 선생님들까지아이들에게 사랑과 관심을 듬뿍듬뿍~ 주신다는 것을 직접 느끼고 있어요특히 작년, 올해 저희 아이들 담임쌤들께 너무 감사드립니다 :)앞으로 저희 첫째, 둘째 담임선생님이 되실 분들께도 미리 감사 인사 드려요!5세 첫째가 말을 잘하고부터 유치원 생활과 친구관계 등을 하원하고 이야기 해주는데요아이도 엄청나게 만족을 하다보니 이야기를 듣는 내내 웃음이 저절로 나오더라구요!이제는 감기에 걸리면 자기 이바유치원, 팰리스어린이집 못가는거 아니냐고 눈물을 한바가지 흘리는 아이들이랍니다 :)그래서 빨리 나으려 약도 잘먹는다는 ㅋㅋㅋ 정말 너무 좋아요 :d 22년, 23년 이바팰리스 가을운동회 어린이날행사, 여름방학 전, 후 워터파크 5세반은 어린이집, 유치원 각각 한반씩 있어서 상황, 아이 성장에 맞춰 골라 보낼 수 있고지원 외에 추가로 내는 원비에 비해정말 아이들이 알차게 활동하는 것 같아 하나도 아깝지가 않으며 오히려 남는게 있으실까!? 걱정하게 된다는 점 :d 이바유치원 팰리스어린이집 원복, 체육복 이바유치원 원복으로 검색해서 들어오시는 분들이 많아서 남겨요!동복, 춘추복은 자켓 입고 벗고의 차이 :)치마는 나시 원피스 타입이고 카라티와 리본이 있습니다!자켓 대신 따로 구매한 가디건, 코트를 입을 때가 있어요!하복은 원피스 하나입니다 :d저희 아이들이 둘다 여아라서 남아 원복사진은 없어요!원복과 체육복은 일주일에 각각 두번씩, 사복은 한번입어요어린이집 원아는 5세반도 원복을 입고 4세반까지는 체육복만 일주일에 두번입어요행사가 있는 주에는 조금 다르답니다!이바유치원과 팰리스 어린이집 체육복은 같아요 키즈노트 식단표 아이들 점심과 간식도 너무 잘나와서 저희 두딸들은 매일 리필해서 먹는다고 합니다 ㅋㅋㅋㅋㅋ 이러니까 키가 쑥쑥 :)이러다보니 다자녀, 쌍둥이, 저희처럼 연년생 아이들도 많이 다니고 있답니다!4세까지는 매일 키즈노트가 올라오고 5세부터는 일주일에 한번씩 네이버카페에 아이들 사진이 올라와서행복하게 생활하는 아이들의 모습도 확인할 수 있어 더욱 만족하고 있답니다!앞으로도 아이들 초등학교 입학하기 전까지 이바유치원, 팰리스어린이집과 함께할 생각에 무척이나 든든해요! 아이들보고 언제 제일 행복해?! 라고 물어보면 유치원, 어린이집에 갈 때가제일 행복하다는 저희 아이들의 이야기를 듣고선 많은 분들이 알고계셨으면 싶어서 포스팅을 적어봤는데요!고민하시는 분들께 조금이나마 제가 도움이 되었다면 너무 좋을 듯 :)궁금하신 내용이 있으시면 댓글 주시고 원비, 차량운행, 교육과정 등은 직접 이바유치원, 팰리스어린이집에 문의해주세요 :)끝까지 읽어주셔서 감사합니다! 이바iba유치원 인천광역시 부평구 마장로168번길 17 이바유치원 이 블로그의 체크인 이 장소의 다른 글 팰리스어린이집 인천광역시 부평구 마장로168번길 17 나창선빌딩 이 블로그의 체크인 이 장소의 다른 글 인천 부평 산곡동 팰리스어린이집 이바 iba 유치원 벌써 3년째 :) 애정하는 이웃님들 너무 반가워요 :d 육아인플루언서 우아미가 인사드립니다! 벌써 유치원 일반모집이 내... blog.naver.com 인천 부평 산곡동 팰리스어린이집 이바 iba 유치원 4년째 다니고있어요 (6세, 7세) 애정하는 이웃님들 반갑습니다! 육아 인플루언서 우아미가 인사드려요 :) 오늘은 저희 아이들이 꽉 채운 4... blog.naver.com",
+          "htmlSnapshotHash": "8515559e",
+          "extractedAt": "2026-06-26T07:23:23.081Z",
+          "sourcePageUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EB%B0%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+          "structuredFields": {
+            "kindergartenName": "이바유치원",
+            "kindergartenAddress": "인천광역시 부평구 마장로168번길 17",
+            "searchUrl": "https://search.naver.com/search.naver?query=%22%EC%9D%B4%EB%B0%94%EC%9C%A0%EC%B9%98%EC%9B%90%22+%EC%9D%B8%EC%B2%9C+%EB%B6%80%ED%8F%89%EA%B5%AC+%ED%9B%84%EA%B8%B0&where=post",
+            "accessMode": "public"
+          }
+        }
       }
     ]
-  },
-  "lastUpdatedAt": "2026-07-03T23:59:59.999Z"
+  }
 }

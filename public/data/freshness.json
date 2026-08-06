@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-06T05:03:44.360Z",
+  "overallStatus": "current",
+  "staleSources": [],
+  "attentionSources": [],
+  "sources": {
+    "kindergartens": {
+      "status": "complete",
+      "sourceVersion": "20261",
+      "sourceLabel": "2026년 1차",
+      "checkedAt": "2026-08-06T02:29:14.399Z",
+      "maxAgeHours": 336,
+      "totalCount": 7152,
+      "registryJoinCoverage": 1
+    },
+    "reviews": {
+      "status": "complete",
+      "buildVersion": "2026-08-06",
+      "catalogReconciledAt": "2026-08-06T04:57:52.044Z",
+      "catalogMaxAgeHours": 336,
+      "contentLatestCollectedAt": "2026-07-26T10:10:52.619701",
+      "contentTargetAgeHours": 720,
+      "contentAgeHours": 267.88103916666665,
+      "contentStatus": "within_target",
+      "totalCount": 6055,
+      "kindergartenCount": 1892,
+      "catalogCoverage": 0.2645413870246085,
+      "excludedOrphanReviewCount": 0,
+      "duplicateReviewCount": 0,
+      "retiredReviewCount": 193,
+      "retiredKindergartenCount": 80,
+      "newlyRetiredReviewCount": 0,
+      "restoredReviewCount": 0
+    },
+    "vacancy": {
+      "status": "complete",
+      "sourceVersion": "2026-08-06T02:48:39.629Z",
+      "checkedAt": "2026-08-06T02:48:39.629Z",
+      "maxAgeHours": 72,
+      "totalCount": 3032,
+      "positiveCount": 2353,
+      "regionCoverage": 1,
+      "detailCoverage": 0.9949001274968126,
+      "catalogMatchRate": 0.9963720316622692
+    },
+    "regionCodes": {
+      "status": "complete",
+      "checkedAt": "2026-08-06T02:46:55.740Z",
+      "maxAgeHours": 336,
+      "totalCount": 261,
+      "source": "https://e-childschoolinfo.moe.go.kr/openApi/sidoSigunguCode.do"
+    }
+  }
+}

@@ -120,14 +120,16 @@ public struct CompareView: View {
                 SystemShareSheet(activityItems: [
                     item.url,
                     NativeAppConfiguration.shareDescription,
-                ])
+                ]) { result in
+                    viewModel.trackShareResult(method: "system", result: result)
+                }
             }
         }
     }
 
     @ViewBuilder
     private var shareActions: some View {
-        if let url = viewModel.shareURL() {
+        if viewModel.shareURL() != nil {
             VStack(spacing: 12) {
                 #if canImport(KakaoSDKShare)
                 if KakaoShareService.isKakaoTalkAvailable {
@@ -136,7 +138,12 @@ public struct CompareView: View {
                             KakaoShareService.shareCompare(
                                 names: items.map(\.name),
                                 shareURL: url
-                            )
+                            ) { didOpenKakao in
+                                viewModel.trackShareResult(
+                                    method: "kakao",
+                                    result: didOpenKakao ? .handoffSucceeded : .failed
+                                )
+                            }
                         }
                     } label: {
                         Label("카카오톡으로 보내기", systemImage: "message.fill")
@@ -152,8 +159,9 @@ public struct CompareView: View {
                 #endif
 
                 Button {
-                    viewModel.trackSystemShareInitiated()
-                    systemShareItem = SystemShareItem(url: url)
+                    if let shareURL = viewModel.shareSystem() {
+                        systemShareItem = SystemShareItem(url: shareURL)
+                    }
                 } label: {
                     Label("가족에게 비교표 보내기", systemImage: "square.and.arrow.up.fill")
                         .frame(maxWidth: .infinity)
@@ -183,9 +191,18 @@ private struct SystemShareItem: Identifiable {
 #if canImport(UIKit)
 private struct SystemShareSheet: UIViewControllerRepresentable {
     let activityItems: [Any]
+    let onResult: (CompareViewModel.ShareResult) -> Void
 
     func makeUIViewController(context: Context) -> UIActivityViewController {
-        return UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        let controller = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        controller.completionWithItemsHandler = { _, completed, _, error in
+            if error != nil {
+                onResult(.failed)
+            } else {
+                onResult(completed ? .completed : .cancelled)
+            }
+        }
+        return controller
     }
 
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
@@ -193,6 +210,7 @@ private struct SystemShareSheet: UIViewControllerRepresentable {
 #else
 private struct SystemShareSheet: View {
     let activityItems: [Any]
+    let onResult: (CompareViewModel.ShareResult) -> Void
 
     var body: some View {
         EmptyView()

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { loadReviewLinkItems } from '@/lib/review-link-index';
+import { TOTAL_KINDERGARTEN_COUNT, TOTAL_SIDO_COUNT } from '@/lib/constants';
 
 export function Stats() {
   const { items, reviewsData } = loadReviewLinkItems();
@@ -9,11 +10,15 @@ export function Stats() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-5">
           <div className="brand-card flex flex-row items-center gap-4 rounded-[1.75rem] p-5 sm:flex-col sm:gap-2 sm:p-6 sm:text-center">
-            <div className="text-3xl font-bold text-[var(--brand-leaf)] sm:text-4xl">7,950+</div>
+            <div className="text-3xl font-bold text-[var(--brand-leaf)] sm:text-4xl">
+              {TOTAL_KINDERGARTEN_COUNT.toLocaleString('ko-KR')}
+            </div>
             <div className="text-sm text-[var(--brand-ink-soft)]">교육부 유치원 알리미 등록 기관</div>
           </div>
           <div className="brand-card flex flex-row items-center gap-4 rounded-[1.75rem] p-5 sm:flex-col sm:gap-2 sm:p-6 sm:text-center">
-            <div className="text-3xl font-bold text-[var(--brand-leaf)] sm:text-4xl">전국 17개</div>
+            <div className="text-3xl font-bold text-[var(--brand-leaf)] sm:text-4xl">
+              전국 {TOTAL_SIDO_COUNT}개
+            </div>
             <div className="text-sm text-[var(--brand-ink-soft)]">시/도 유치원 정보 보유</div>
           </div>
           <div className="brand-card flex flex-row items-center gap-4 rounded-[1.75rem] p-5 sm:flex-col sm:gap-2 sm:p-6 sm:text-center">
@@ -25,7 +30,7 @@ export function Stats() {
             </div>
           </div>
           <Link
-            href="/reviews/all"
+            href="/reviews/all/"
             className="brand-card flex flex-row items-center gap-4 rounded-[1.75rem] p-5 transition hover:-translate-y-0.5 hover:border-[rgba(78,169,109,0.28)] sm:flex-col sm:gap-2 sm:p-6 sm:text-center"
           >
             <div className="text-3xl font-bold text-[var(--brand-leaf)] sm:text-4xl">웹 확인</div>

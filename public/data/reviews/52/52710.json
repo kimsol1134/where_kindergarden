@@ -1,8 +1,61 @@
 {
-  "version": "2026-07-01",
-  "totalCount": 12,
-  "kindergartenCount": 6,
+  "version": "2026-08-06",
+  "totalCount": 13,
+  "kindergartenCount": 7,
   "reviews": {
+    "1ecec08c-ee57-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e246109a",
+        "kindergartenId": "1ecec08c-ee57-b044-e053-0a32095ab044",
+        "title": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 Instagram Post",
+        "url": "https://www.instagram.com/p/DDJ1xRcBD6d/",
+        "source": "other",
+        "sourceName": "Instagram · WOODURI",
+        "snippet": "삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "musical-viewing"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T11:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "15c1da33",
+        "structuredFields": {
+          "kindergartenName": "삼례중앙초등학교병설유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DDJ1xRcBD6d/",
+          "normalizedUrl": "www.instagram.com/p/ddj1xrcbd6d",
+          "normalizedText": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 instagram post 삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "15c1da33",
+          "extractedAt": "2026-07-02T11:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼례중앙초등학교병설유치원",
+            "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T11:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
     "1ecec08c-f37e-b044-e053-0a32095ab044": [
       {
         "id": "rev-e17ccf40",
@@ -39,7 +92,143 @@
         }
       }
     ],
+    "1ecec08c-f5a6-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-55f4fcc8",
+        "kindergartenId": "1ecec08c-f5a6-b044-e053-0a32095ab044",
+        "kindergartenName": "무지개재능유치원",
+        "title": "완주 무지개재능유치원 국악 방과후수업 Instagram Reel",
+        "url": "https://www.instagram.com/reel/C47tvkQrVWK/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개재능유치원",
+        "snippet": "무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "music",
+          "gugak"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:53.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "55f4fcc8",
+        "structuredFields": {
+          "kindergartenName": "무지개재능유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/C47tvkQrVWK/",
+          "normalizedUrl": "www.instagram.com/reel/c47tvkqrvwk",
+          "normalizedText": "완주 무지개재능유치원 국악 방과후수업 instagram reel 무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
+          "htmlSnapshotHash": "55f4fcc8",
+          "extractedAt": "2026-07-02T23:59:53.000Z",
+          "structuredFields": {
+            "kindergartenName": "무지개재능유치원",
+            "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T23:59:53.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-f6a7-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave738-6ecd9f1c",
+        "kindergartenId": "1ecec08c-f6a7-b044-e053-0a32095ab044",
+        "title": "완주 봉동유치원 119청소년단 소방안전 기록",
+        "url": "https://www.instagram.com/p/DILkjiqzLBG/",
+        "source": "other",
+        "sourceName": "Instagram · 완주소방서",
+        "snippet": "봉동유치원 친구들이 119청소년단 발대식과 소방차 길 터주기 캠페인에 참여한 게시물입니다.",
+        "summary": "완주 봉동유치원의 119청소년단 활동과 소방안전교육을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "fire-drill",
+          "safety-education",
+          "jeonbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave738-6ecd9f1c",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DILkjiqzLBG/",
+          "normalizedUrl": "instagram.com/p/dilkjiqzlbg",
+          "normalizedText": "완주 봉동유치원 119청소년단 소방차 길 터주기 소방안전",
+          "htmlSnapshotHash": "sns-wave738-6ecd9f1c",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DILkjiqzLBG/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave738"
+      }
+    ],
     "6d9c9561-acb0-4917-aea4-cb5fb0697c35": [
+      {
+        "id": "rev-a8401c02",
+        "kindergartenId": "6d9c9561-acb0-4917-aea4-cb5fb0697c35",
+        "kindergartenName": "별숲유치원",
+        "title": "별숲유치원 야외활동 Instagram Post",
+        "url": "https://www.instagram.com/p/CdXsS5lLEqf/",
+        "source": "other",
+        "sourceName": "Instagram · 별숲유치원",
+        "snippet": "Instagram 검색 결과에서 별숲유치원, 완주혁신도시, 전주혁신도시유치원, 야외활동 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "별숲유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 지사제안길 34-11",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CdXsS5lLEqf%22+%22%EB%B3%84%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%99%84%EC%A3%BC%ED%98%81%EC%8B%A0%EB%8F%84%EC%8B%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/CdXsS5lLEqf/",
+          "regionEvidence": [
+            "별숲유치원",
+            "완주혁신도시",
+            "전주혁신도시유치원",
+            "야외활동"
+          ]
+        },
+        "evidenceChecksum": "b2c4a317"
+      },
       {
         "id": "rev-849495ec",
         "kindergartenId": "6d9c9561-acb0-4917-aea4-cb5fb0697c35",
@@ -133,104 +322,9 @@
           ]
         },
         "evidenceChecksum": "9b2878f8"
-      },
-      {
-        "id": "rev-a8401c02",
-        "kindergartenId": "6d9c9561-acb0-4917-aea4-cb5fb0697c35",
-        "kindergartenName": "별숲유치원",
-        "title": "별숲유치원 야외활동 Instagram Post",
-        "url": "https://www.instagram.com/p/CdXsS5lLEqf/",
-        "source": "other",
-        "sourceName": "Instagram · 별숲유치원",
-        "snippet": "Instagram 검색 결과에서 별숲유치원, 완주혁신도시, 전주혁신도시유치원, 야외활동 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "outdoor-activity",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "별숲유치원",
-          "kindergartenAddress": "전북특별자치도 완주군 지사제안길 34-11",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CdXsS5lLEqf%22+%22%EB%B3%84%EC%88%B2%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%99%84%EC%A3%BC%ED%98%81%EC%8B%A0%EB%8F%84%EC%8B%9C%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/CdXsS5lLEqf/",
-          "regionEvidence": [
-            "별숲유치원",
-            "완주혁신도시",
-            "전주혁신도시유치원",
-            "야외활동"
-          ]
-        },
-        "evidenceChecksum": "b2c4a317"
       }
     ],
     "a4601fac-02be-42b7-b67d-1731c81d77c4": [
-      {
-        "id": "rev-522228c1",
-        "kindergartenId": "a4601fac-02be-42b7-b67d-1731c81d77c4",
-        "title": "완주 민족사관유치원 SNS 프로필",
-        "url": "https://www.instagram.com/minjoksakwan3579/",
-        "source": "other",
-        "sourceName": "Instagram · 민족사관유치원",
-        "snippet": "민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "전북 완주군 민족사관유치원의 Instagram 프로필 SNS 정보.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "profile"
-        ],
-        "content": "민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 Instagram 검색 결과다. 같은 이름의 광주 유치원이 있어 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T23:59:59.992Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "5d9b6d10",
-        "structuredFields": {
-          "kindergartenName": "민족사관유치원",
-          "kindergartenAddress": "전북특별자치도 완주군 갈산안길 18-7",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22minjoksakwan3579%22+%22063-714-3579%22+%22%EC%99%84%EC%A3%BC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/minjoksakwan3579/",
-          "normalizedUrl": "www.instagram.com/minjoksakwan3579",
-          "normalizedText": "완주 민족사관유치원 sns 프로필 민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 instagram 검색 결과. 전북 완주군 민족사관유치원의 instagram 프로필 sns 정보.",
-          "htmlSnapshotHash": "5d9b6d10",
-          "extractedAt": "2026-06-30T23:59:59.992Z",
-          "structuredFields": {
-            "kindergartenName": "민족사관유치원",
-            "kindergartenAddress": "전북특별자치도 완주군 갈산안길 18-7",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22minjoksakwan3579%22+%22063-714-3579%22+%22%EC%99%84%EC%A3%BC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T23:59:59.992Z",
-        "approvedBy": "manual-sns-web-search"
-      },
       {
         "id": "rev-42edcde8",
         "kindergartenId": "a4601fac-02be-42b7-b67d-1731c81d77c4",
@@ -278,6 +372,59 @@
             "addressEvidenceRequired": false,
             "snippetOnly": true,
             "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 공식 계정과 완주 태그를 함께 대조했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T23:59:59.992Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-522228c1",
+        "kindergartenId": "a4601fac-02be-42b7-b67d-1731c81d77c4",
+        "title": "완주 민족사관유치원 SNS 프로필",
+        "url": "https://www.instagram.com/minjoksakwan3579/",
+        "source": "other",
+        "sourceName": "Instagram · 민족사관유치원",
+        "snippet": "민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "전북 완주군 민족사관유치원의 Instagram 프로필 SNS 정보.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "profile"
+        ],
+        "content": "민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 Instagram 검색 결과다. 같은 이름의 광주 유치원이 있어 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T23:59:59.992Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5d9b6d10",
+        "structuredFields": {
+          "kindergartenName": "민족사관유치원",
+          "kindergartenAddress": "전북특별자치도 완주군 갈산안길 18-7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22minjoksakwan3579%22+%22063-714-3579%22+%22%EC%99%84%EC%A3%BC%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/minjoksakwan3579/",
+          "normalizedUrl": "www.instagram.com/minjoksakwan3579",
+          "normalizedText": "완주 민족사관유치원 sns 프로필 민족사관유치원 프로필에서 전북 완주 기관명과 전화 063-714-3579 문맥이 확인되는 instagram 검색 결과. 전북 완주군 민족사관유치원의 instagram 프로필 sns 정보.",
+          "htmlSnapshotHash": "5d9b6d10",
+          "extractedAt": "2026-06-30T23:59:59.992Z",
+          "structuredFields": {
+            "kindergartenName": "민족사관유치원",
+            "kindergartenAddress": "전북특별자치도 완주군 갈산안길 18-7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=site%3Ainstagram.com+%22minjoksakwan3579%22+%22063-714-3579%22+%22%EC%99%84%EC%A3%BC%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "SNS 검색 결과 스니펫 기반이며, 완주 전화번호와 원장부 주소를 기준으로 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
@@ -497,115 +644,6 @@
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
-    ],
-    "1ecec08c-ee57-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-e246109a",
-        "kindergartenId": "1ecec08c-ee57-b044-e053-0a32095ab044",
-        "title": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 Instagram Post",
-        "url": "https://www.instagram.com/p/DDJ1xRcBD6d/",
-        "source": "other",
-        "sourceName": "Instagram · WOODURI",
-        "snippet": "삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 Instagram 게시물 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "musical-viewing"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T11:10:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "15c1da33",
-        "structuredFields": {
-          "kindergartenName": "삼례중앙초등학교병설유치원",
-          "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DDJ1xRcBD6d/",
-          "normalizedUrl": "www.instagram.com/p/ddj1xrcbd6d",
-          "normalizedText": "완주 삼례중앙초등학교병설유치원 뮤지컬 관람 instagram post 삼례중앙초 병설유치원 뮤지컬 관람과 공연 전 우드리팜 방문 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "15c1da33",
-          "extractedAt": "2026-07-02T11:10:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "삼례중앙초등학교병설유치원",
-            "kindergartenAddress": "전북특별자치도 완주군 웃삼례길 17-10",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DDJ1xRcBD6d%22%20%22%EC%82%BC%EB%A1%80%EC%A4%91%EC%95%99%EC%B4%88%20%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EB%AE%A4%EC%A7%80%EC%BB%AC%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "삼례중앙초 병설유치원 명칭이 로컬 원장부 기관과 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T11:10:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f5a6-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-55f4fcc8",
-        "kindergartenId": "1ecec08c-f5a6-b044-e053-0a32095ab044",
-        "kindergartenName": "무지개재능유치원",
-        "title": "완주 무지개재능유치원 국악 방과후수업 Instagram Reel",
-        "url": "https://www.instagram.com/reel/C47tvkQrVWK/",
-        "source": "other",
-        "sourceName": "Instagram · 무지개재능유치원",
-        "snippet": "무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "music",
-          "gugak"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:53.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "55f4fcc8",
-        "structuredFields": {
-          "kindergartenName": "무지개재능유치원",
-          "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/C47tvkQrVWK/",
-          "normalizedUrl": "www.instagram.com/reel/c47tvkqrvwk",
-          "normalizedText": "완주 무지개재능유치원 국악 방과후수업 instagram reel 무지개재능유치원 계정 검색 결과에서 방과후수업, 국악수업, 얼쑤 활동 단서가 확인된다.",
-          "htmlSnapshotHash": "55f4fcc8",
-          "extractedAt": "2026-07-02T23:59:53.000Z",
-          "structuredFields": {
-            "kindergartenName": "무지개재능유치원",
-            "kindergartenAddress": "전북특별자치도 완주군 낙평동서로 14",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C47tvkQrVWK%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9E%AC%EB%8A%A5%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B5%AD%EC%95%85%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "무지개재능유치원은 로컬 원장부에서 단일 명칭으로 확인되어 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:53.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
     ]
-  },
-  "lastUpdatedAt": "2026-07-02T00:00:00.000Z"
+  }
 }

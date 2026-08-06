@@ -98,7 +98,7 @@ export const useKindergartenStore = create<KindergartenState & KindergartenActio
       // 새 로드 시작
       const promise = (async () => {
         try {
-          const response = await fetch('/data/kindergartens.json');
+          const response = await fetch('/data/kindergartens.json', { cache: 'no-store' });
 
           if (!response.ok) {
             throw new Error(`데이터 로드 실패: ${response.status}`);

@@ -1,58 +1,47 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 10,
   "kindergartenCount": 5,
   "reviews": {
-    "1ecec08c-fdce-b044-e053-0a32095ab044": [
+    "1ecec08c-f0a7-b044-e053-0a32095ab044": [
       {
-        "id": "rev-05b658c2",
-        "kindergartenId": "1ecec08c-fdce-b044-e053-0a32095ab044",
-        "title": "밀양 성모성심유치원 오리엔테이션 Reel",
-        "url": "https://www.instagram.com/reel/DVNetSbkxr_/",
+        "id": "rev-sns-wave697-3b9c8ffb",
+        "kindergartenId": "1ecec08c-f0a7-b044-e053-0a32095ab044",
+        "title": "밀양 엄마유치원 2026학년도 입학식 기록",
+        "url": "https://www.instagram.com/reel/DVdXhh_ie6D/",
         "source": "other",
-        "sourceName": "Instagram · 성모성심유치원",
-        "snippet": "Instagram Reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
+        "sourceName": "Instagram · 엄마유치원",
+        "snippet": "엄마유치원이 2026학년도 신입 유아들을 환영하며 앞으로의 유치원 생활을 응원한 공개 릴스입니다.",
+        "summary": "입학식 환영 메시지와 새 학기 시작 분위기를 확인할 수 있는 밀양 엄마유치원 원문입니다.",
         "tags": [
           "sns",
-          "instagram",
+          "search-snippet",
           "address-not-required",
-          "admissions",
-          "kindergarten-event"
+          "instagram",
+          "admission",
+          "welcome",
+          "miryang"
         ],
         "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:59:59.990Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-reel-snippet",
-        "evidenceChecksum": "05a883b4",
-        "structuredFields": {
-          "kindergartenName": "성모성심유치원",
-          "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave697-3b9c8ffb",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DVNetSbkxr_/",
-          "normalizedUrl": "www.instagram.com/reel/dvnetsbkxr_",
-          "normalizedText": "밀양 성모성심유치원 오리엔테이션 reel instagram reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "05a883b4",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "성모성심유치원",
-            "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
+          "canonicalUrl": "https://www.instagram.com/reel/DVdXhh_ie6D/",
+          "normalizedUrl": "instagram.com/reel/dvdxhh_ie6d",
+          "normalizedText": "엄마유치원 밀양 2026학년도 입학식 신입 유아 환영 새 학기",
+          "htmlSnapshotHash": "sns-wave697-3b9c8ffb",
+          "extractedAt": "2026-07-03T23:59:59.990Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DVdXhh_ie6D/"
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
+        "approvedAt": "2026-07-03T23:59:59.990Z",
+        "approvedBy": "codex-manual-sns-wave697"
+      }
+    ],
+    "1ecec08c-fdce-b044-e053-0a32095ab044": [
       {
         "id": "rev-f888d80a",
         "kindergartenId": "1ecec08c-fdce-b044-e053-0a32095ab044",
@@ -105,9 +94,95 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T23:59:59.000Z",
         "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-05b658c2",
+        "kindergartenId": "1ecec08c-fdce-b044-e053-0a32095ab044",
+        "title": "밀양 성모성심유치원 오리엔테이션 Reel",
+        "url": "https://www.instagram.com/reel/DVNetSbkxr_/",
+        "source": "other",
+        "sourceName": "Instagram · 성모성심유치원",
+        "snippet": "Instagram Reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "admissions",
+          "kindergarten-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-reel-snippet",
+        "evidenceChecksum": "05a883b4",
+        "structuredFields": {
+          "kindergartenName": "성모성심유치원",
+          "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DVNetSbkxr_/",
+          "normalizedUrl": "www.instagram.com/reel/dvnetsbkxr_",
+          "normalizedText": "밀양 성모성심유치원 오리엔테이션 reel instagram reels 검색 결과에서 성모성심유치원, 밀양사립유치원, 2026학년도 신입생 오리엔테이션 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "05a883b4",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "성모성심유치원",
+            "kindergartenAddress": "경상남도 밀양시 밀양대공원로 74",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DVNetSbkxr_%22+%22%EC%84%B1%EB%AA%A8%EC%84%B1%EC%8B%AC%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EB%B0%80%EC%96%91%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-0352-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave721-52321fbb",
+        "kindergartenId": "1ecec08d-0352-b044-e053-0a32095ab044",
+        "title": "밀양 삼양사금강유치원 소방 안전 체험 기록",
+        "url": "https://www.instagram.com/reel/DXTz35DFEvJ/",
+        "source": "other",
+        "sourceName": "Instagram · 삼양사금강유치원",
+        "snippet": "삼양사금강유치원 친구들이 밀양소방서 산불대응훈련과 소방 안전 체험에 참여한 릴스입니다.",
+        "summary": "유아들이 소방 안전 활동을 통해 화재 대응 과정을 경험한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "fire-safety",
+          "field-trip",
+          "miryang"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave721-52321fbb",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/",
+          "normalizedUrl": "instagram.com/reel/dxtz35dfevj",
+          "normalizedText": "삼양사금강유치원 안전유치원 밀양소방서 산불대응훈련 소방체험",
+          "htmlSnapshotHash": "sns-wave721-52321fbb",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave721"
+      },
       {
         "id": "rev-5b0dad75",
         "kindergartenId": "1ecec08d-0352-b044-e053-0a32095ab044",
@@ -158,82 +233,22 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T18:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08d-05e1-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave721-52321fbb",
-        "kindergartenId": "1ecec08d-0352-b044-e053-0a32095ab044",
-        "title": "밀양 삼양사금강유치원 소방 안전 체험 기록",
-        "url": "https://www.instagram.com/reel/DXTz35DFEvJ/",
-        "source": "other",
-        "sourceName": "Instagram · 삼양사금강유치원",
-        "snippet": "삼양사금강유치원 친구들이 밀양소방서 산불대응훈련과 소방 안전 체험에 참여한 릴스입니다.",
-        "summary": "유아들이 소방 안전 활동을 통해 화재 대응 과정을 경험한 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "safety",
-          "fire-safety",
-          "field-trip",
-          "miryang"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave721-52321fbb",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/",
-          "normalizedUrl": "instagram.com/reel/dxtz35dfevj",
-          "normalizedText": "삼양사금강유치원 안전유치원 밀양소방서 산불대응훈련 소방체험",
-          "htmlSnapshotHash": "sns-wave721-52321fbb",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DXTz35DFEvJ/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave721"
+        "id": "rev-99852453",
+        "title": "아랑유치원 2026년 입학설명회 (일과, 프로그램, 원비...",
+        "url": "https://blog.naver.com/19870525/224058896610",
+        "source": "naver_blog",
+        "sourceName": "봄날 블로그",
+        "snippet": "이름이 귀여운 아랑유치원 설명회에 다녀왔다. 뭐랄까... 설명회 초반에서부터 능력과 역량에 대해 설명해주시는데, 다른 원에 비해서 교육적인 면을 중요시한다면 만족할 수 있을 것 같았다. 종일반 신청한다면...",
+        "date": "2025-10-30",
+        "collectedAt": "2026-01-30T03:12:35.929Z",
+        "kindergartenId": "1ecec08d-05e1-b044-e053-0a32095ab044"
       }
     ],
     "cd612c2b-47e2-4361-a1ca-57322651de96": [
-      {
-        "id": "rev-sns-wave678-a4f0853f",
-        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
-        "title": "밀양유치원 토마토와 감자 수확 체험 기록",
-        "url": "https://www.instagram.com/reel/DaMza8ahx6c/",
-        "source": "other",
-        "sourceName": "Instagram · 밀양유치원",
-        "snippet": "밀양유치원이 유아들과 토마토와 감자를 수확하며 흙과 풀을 만져 본 공개 릴스입니다.",
-        "summary": "공립유치원 교육과정 안에서 토마토와 감자 수확을 경험한 현장체험 활동을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "harvest",
-          "farm-experience",
-          "public-kindergarten"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T22:40:00.000Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave678-a4f0853f",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaMza8ahx6c/",
-          "normalizedUrl": "instagram.com/reel/damza8ahx6c",
-          "normalizedText": "밀양유치원 토마토 감자 수확 현장체험 교육과정",
-          "htmlSnapshotHash": "sns-wave678-a4f0853f",
-          "extractedAt": "2026-07-03T22:40:00.000Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DaMza8ahx6c/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T22:40:00.000Z",
-        "approvedBy": "codex-manual-sns-wave678"
-      },
       {
         "id": "rev-sns-wave715-f3a15409",
         "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
@@ -309,6 +324,42 @@
         "approvedBy": "codex-manual-sns-wave715"
       },
       {
+        "id": "rev-sns-wave678-a4f0853f",
+        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96",
+        "title": "밀양유치원 토마토와 감자 수확 체험 기록",
+        "url": "https://www.instagram.com/reel/DaMza8ahx6c/",
+        "source": "other",
+        "sourceName": "Instagram · 밀양유치원",
+        "snippet": "밀양유치원이 유아들과 토마토와 감자를 수확하며 흙과 풀을 만져 본 공개 릴스입니다.",
+        "summary": "공립유치원 교육과정 안에서 토마토와 감자 수확을 경험한 현장체험 활동을 확인할 수 있는 SNS 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "harvest",
+          "farm-experience",
+          "public-kindergarten"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T22:40:00.000Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave678-a4f0853f",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaMza8ahx6c/",
+          "normalizedUrl": "instagram.com/reel/damza8ahx6c",
+          "normalizedText": "밀양유치원 토마토 감자 수확 현장체험 교육과정",
+          "htmlSnapshotHash": "sns-wave678-a4f0853f",
+          "extractedAt": "2026-07-03T22:40:00.000Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaMza8ahx6c/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T22:40:00.000Z",
+        "approvedBy": "codex-manual-sns-wave678"
+      },
+      {
         "id": "rev-99852454",
         "title": "어우러진 환상적인 순간! 밀양 유치원 레이저 매직쇼 공연 후기",
         "url": "https://blog.naver.com/jamjamcompany/224058650178",
@@ -316,57 +367,8 @@
         "sourceName": "이벤트 연구소",
         "snippet": "이번에는 밀양 유치원 친구들과 함께한 레이저 매직쇼 소식을 전해드리려고 합니다. 아이들의 웃음소리와 반짝이는 눈빛이 가득했던 현장이라 저희도 공연을 진행하며 큰 보람을 느낄 수 있었던 하루였습니다....",
         "date": "2025-10-30",
-        "collectedAt": "2026-01-30T03:12:39.871Z"
-      }
-    ],
-    "1ecec08c-f0a7-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave697-3b9c8ffb",
-        "kindergartenId": "1ecec08c-f0a7-b044-e053-0a32095ab044",
-        "title": "밀양 엄마유치원 2026학년도 입학식 기록",
-        "url": "https://www.instagram.com/reel/DVdXhh_ie6D/",
-        "source": "other",
-        "sourceName": "Instagram · 엄마유치원",
-        "snippet": "엄마유치원이 2026학년도 신입 유아들을 환영하며 앞으로의 유치원 생활을 응원한 공개 릴스입니다.",
-        "summary": "입학식 환영 메시지와 새 학기 시작 분위기를 확인할 수 있는 밀양 엄마유치원 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "admission",
-          "welcome",
-          "miryang"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.990Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave697-3b9c8ffb",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DVdXhh_ie6D/",
-          "normalizedUrl": "instagram.com/reel/dvdxhh_ie6d",
-          "normalizedText": "엄마유치원 밀양 2026학년도 입학식 신입 유아 환영 새 학기",
-          "htmlSnapshotHash": "sns-wave697-3b9c8ffb",
-          "extractedAt": "2026-07-03T23:59:59.990Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DVdXhh_ie6D/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.990Z",
-        "approvedBy": "codex-manual-sns-wave697"
-      }
-    ],
-    "1ecec08d-05e1-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-99852453",
-        "title": "아랑유치원 2026년 입학설명회 (일과, 프로그램, 원비...",
-        "url": "https://blog.naver.com/19870525/224058896610",
-        "source": "naver_blog",
-        "sourceName": "봄날 블로그",
-        "snippet": "이름이 귀여운 아랑유치원 설명회에 다녀왔다. 뭐랄까... 설명회 초반에서부터 능력과 역량에 대해 설명해주시는데, 다른 원에 비해서 교육적인 면을 중요시한다면 만족할 수 있을 것 같았다. 종일반 신청한다면...",
-        "date": "2025-10-30",
-        "collectedAt": "2026-01-30T03:12:35.929Z"
+        "collectedAt": "2026-01-30T03:12:39.871Z",
+        "kindergartenId": "cd612c2b-47e2-4361-a1ca-57322651de96"
       }
     ]
   }

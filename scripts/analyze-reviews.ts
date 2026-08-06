@@ -51,7 +51,7 @@ function analyze() {
   console.log('-'.repeat(40));
   const sourceStats: Record<string, number> = {};
   
-  let allReviews: ReviewLink[] = [];
+  const allReviews: ReviewLink[] = [];
   Object.values(data.reviews).forEach(list => {
     allReviews.push(...list);
     list.forEach(r => {

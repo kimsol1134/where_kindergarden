@@ -26,5 +26,23 @@ export interface VacancyDataset {
   aidYear: string;
   totalCount: number;
   positiveCount: number;
+  quality?: {
+    status: 'complete' | 'partial';
+    startedAt: string;
+    completedAt: string;
+    regionsRequested: number;
+    regionsSucceeded: number;
+    regionsFailed: number;
+    listCompleteness: number;
+    detailRequested: number;
+    detailSucceeded: number;
+    detailFailed: number;
+    detailCoverage: number;
+    failures: Array<{
+      stage: 'list' | 'detail';
+      key: string;
+      message: string;
+    }>;
+  };
   items: Record<string, VacancySummary>;
 }

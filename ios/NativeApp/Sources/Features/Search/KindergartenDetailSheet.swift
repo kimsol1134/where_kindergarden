@@ -21,8 +21,13 @@ struct KindergartenDetailSheet: View {
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
     let onNavigateToCompare: () -> Void
+    let onDetailPresented: () -> Void
+    let onVacancyViewed: () -> Void
     let onReviewLinkTapped: (ReviewLink) -> Void
     let onSubmitReviewTapped: () -> Void
+
+    @State private var hasTrackedDetailPresentation = false
+    @State private var hasTrackedVacancyView = false
 
     // MARK: - Computed Properties
 
@@ -233,6 +238,11 @@ struct KindergartenDetailSheet: View {
         .background {
             NativeScreenBackground(topTintOpacity: 0.14)
         }
+        .onAppear {
+            guard !hasTrackedDetailPresentation else { return }
+            hasTrackedDetailPresentation = true
+            onDetailPresented()
+        }
     }
 
     // MARK: - Section A: Header
@@ -396,6 +406,11 @@ struct KindergartenDetailSheet: View {
                     }
                 }
             }
+        }
+        .onAppear {
+            guard !hasTrackedVacancyView else { return }
+            hasTrackedVacancyView = true
+            onVacancyViewed()
         }
     }
 

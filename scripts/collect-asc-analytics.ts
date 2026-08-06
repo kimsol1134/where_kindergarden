@@ -51,7 +51,7 @@ export interface AscDailyMetric {
   cohort_date: string;  // YYYY-MM-DD (= date for daily snapshot)
   metric_name: string;  // "installs" | "sessions" | "impressions" | "page_views"
   value: number;
-  source: string;       // "asc_sales_report" | "asc_analytics_report"
+  source: string;       // "asc_sales_report_daily" | "asc_sales_report_monthly" | "asc_analytics_report"
 }
 
 export interface AscCollectionResult {

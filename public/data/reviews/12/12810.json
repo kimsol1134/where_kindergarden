@@ -1,0 +1,61 @@
+{
+  "version": "2026-08-06",
+  "totalCount": 1,
+  "kindergartenCount": 1,
+  "reviews": {
+    "1ecec08c-ff92-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-fc7e272e",
+        "kindergartenId": "1ecec08c-ff92-b044-e053-0a32095ab044",
+        "title": "무안 현경초등학교병설유치원 학부모참관수업 급식공개 Instagram Reel",
+        "url": "https://www.instagram.com/reel/DAWtn6HIU3B/",
+        "source": "other",
+        "sourceName": "Instagram · 개인 공개 게시물",
+        "snippet": "검색 결과에서 #현경초병설유치원 #학부모참관수업 #현경초급식공개 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "meal",
+          "parent-observation"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T07:05:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fc7e272e",
+        "structuredFields": {
+          "kindergartenName": "현경초등학교병설유치원",
+          "kindergartenAddress": "전라남도 무안군 황토길 17",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DAWtn6HIU3B%22%20%22%ED%98%84%EA%B2%BD%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EA%B3%B5%EA%B0%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "검색 결과의 현경초병설유치원 해시태그와 로컬 원장부의 현경초등학교병설유치원이 같은 기관으로 판단되어 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DAWtn6HIU3B/",
+          "normalizedUrl": "instagram.com/reel/dawtn6hiu3b",
+          "normalizedText": "무안 현경초등학교병설유치원 학부모참관수업 급식공개 instagram reel 검색 결과에서 #현경초병설유치원 #학부모참관수업 #현경초급식공개 단서가 확인된다.",
+          "htmlSnapshotHash": "fc7e272e",
+          "extractedAt": "2026-07-03T07:05:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "현경초등학교병설유치원",
+            "kindergartenAddress": "전라남도 무안군 황토길 17",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DAWtn6HIU3B%22%20%22%ED%98%84%EA%B2%BD%EC%B4%88%EB%B3%91%EC%84%A4%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EA%B8%89%EC%8B%9D%EA%B3%B5%EA%B0%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "검색 결과의 현경초병설유치원 해시태그와 로컬 원장부의 현경초등학교병설유치원이 같은 기관으로 판단되어 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T07:05:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ]
+  }
+}

@@ -24,9 +24,10 @@ public struct NativeRootView: View {
         let remoteLoader = RemoteJSONLoader(session: .shared)
 
         // Repositories (shared instances)
-        let kindergartenRepo = KindergartenRepository(loader: {
-            try bundledLoader.data(named: config.kindergartensResourceName)
-        })
+        let kindergartenRepo = KindergartenRepository(
+            remoteLoader: { try await remoteLoader.data(from: config.kindergartensRemoteURL) },
+            localLoader: { try bundledLoader.data(named: config.kindergartensResourceName) }
+        )
         let reviewRepo = ReviewRepository(
             remoteLoader: { try await remoteLoader.data(from: config.reviewsRemoteURL) },
             localLoader: { try bundledLoader.data(named: config.reviewsResourceName) }

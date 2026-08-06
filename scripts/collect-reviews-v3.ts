@@ -3,20 +3,25 @@
  *
  * v2 대비 개선사항:
  * - 지역 검증 로직 적용 (서울/경기 상호 오염 방지)
- * - --strict 모드: 관련성 점수 3점 이상만 수집
+ * - --strict 모드: 관련성 점수 4점 + 학부모 경험/선택 의도만 수집
  * - 검색 쿼리에 제외어 자동 추가
  * - 더 정교한 스팸 필터링
  *
  * 사용법:
  *   pnpm collect:reviews:v3 -- --sido 11           # 서울만 수집
  *   pnpm collect:reviews:v3 -- --sido 41           # 경기만 수집
- *   pnpm collect:reviews:v3 -- --sido 11 --strict  # 서울, 엄격 모드 (3점 이상)
+ *   pnpm collect:reviews:v3 -- --sido 11 --strict  # 서울, 엄격 모드
  *   pnpm collect:reviews:v3 -- --sido 11 --test    # 서울, 처음 3개만 테스트
  *   pnpm collect:reviews:v3 -- --google            # Google CSE 포함
  *   pnpm collect:reviews:v3 -- --max 5             # 쿼리당 최대 5개
+ *   pnpm collect:reviews:v3 -- --sido 11 --shard-index 0 --shard-count 2
  */
 
 import { config } from 'dotenv';
+import {
+  assessStrictReviewDiscoveryIntent,
+  isInReviewDiscoveryShard,
+} from '../src/lib/utils/review-discovery';
 import * as fs from 'fs';
 import * as path from 'path';
 import {
@@ -29,7 +34,6 @@ import {
   validateLocationMatch,
   buildQueryWithExclusions,
   classifyContentType,
-  type RelevanceResult,
 } from '../src/lib/utils/review-utils';
 
 config({ path: '.env.local' });
@@ -90,6 +94,7 @@ interface CollectionStats {
   filteredByScore: number;
   filteredByLocation: number;
   filteredBySpam: number;
+  filteredByIntent: number;
   finalCount: number;
 }
 
@@ -107,6 +112,7 @@ const THREE_YEARS_AGO = (() => {
 // 시도 코드별 이름 매핑
 const SIDO_NAMES: Record<string, string> = {
   '11': '서울',
+  '12': '전남광주',
   '26': '부산',
   '27': '대구',
   '28': '인천',
@@ -116,9 +122,11 @@ const SIDO_NAMES: Record<string, string> = {
   '36': '세종',
   '41': '경기',
   '42': '강원',
+  '51': '강원',
   '43': '충북',
   '44': '충남',
   '45': '전북',
+  '52': '전북',
   '46': '전남',
   '47': '경북',
   '48': '경남',
@@ -257,6 +265,7 @@ async function collectReviewsForKindergarten(
     filteredByScore: 0,
     filteredByLocation: 0,
     filteredBySpam: 0,
+    filteredByIntent: 0,
     finalCount: 0,
   };
 
@@ -355,6 +364,18 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
+      if (strictMode) {
+        const intent = assessStrictReviewDiscoveryIntent({
+          title,
+          snippet,
+          sourceName: '',
+        });
+        if (!intent.eligible) {
+          stats.filteredByIntent++;
+          continue;
+        }
+      }
+
       seenUrls.add(item.link);
       results.push({
         kindergartenId: kindergarten.kindercode,
@@ -436,6 +457,18 @@ async function collectReviewsForKindergarten(
         continue;
       }
 
+      if (strictMode) {
+        const intent = assessStrictReviewDiscoveryIntent({
+          title,
+          snippet,
+          sourceName: item[nameField] ?? '',
+        });
+        if (!intent.eligible) {
+          stats.filteredByIntent++;
+          continue;
+        }
+      }
+
       seenUrls.add(item.link);
       results.push({
         kindergartenId: kindergarten.kindercode,
@@ -471,6 +504,17 @@ async function main() {
   const strictMode = args.includes('--strict');
   const maxIdx = args.indexOf('--max');
   const maxPerQuery = maxIdx !== -1 ? parseInt(args[maxIdx + 1], 10) || 5 : 5;
+  const shardCountIdx = args.indexOf('--shard-count');
+  const shardIndexIdx = args.indexOf('--shard-index');
+  const shardCount = shardCountIdx !== -1 ? Number.parseInt(args[shardCountIdx + 1], 10) : 1;
+  const shardIndex = shardIndexIdx !== -1 ? Number.parseInt(args[shardIndexIdx + 1], 10) : 0;
+
+  if (!Number.isInteger(shardCount) || shardCount < 1) {
+    throw new Error('--shard-count must be a positive integer');
+  }
+  if (!Number.isInteger(shardIndex) || shardIndex < 0 || shardIndex >= shardCount) {
+    throw new Error('--shard-index must be between 0 and --shard-count - 1');
+  }
 
   // --sido 인자 파싱
   const sidoIdx = args.indexOf('--sido');
@@ -490,6 +534,7 @@ async function main() {
   console.log(`Google CSE: ${includeGoogle ? '포함' : '미포함'}`);
   console.log(`날짜 필터: ${THREE_YEARS_AGO.substring(0, 4)}년 이후`);
   console.log(`시도: ${sidoCode} (${SIDO_NAMES[sidoCode] || '알 수 없음'})`);
+  console.log(`수집 샤드: ${shardIndex + 1}/${shardCount}`);
   console.log('');
 
   // 유치원 데이터 로드
@@ -504,9 +549,15 @@ async function main() {
   );
 
   // 시도 코드로 필터링
-  let targets = allKindergartens.filter((k) => k.sido_code === sidoCode);
+  const regionTargets = allKindergartens.filter((k) => k.sido_code === sidoCode);
+  let targets = regionTargets.filter((kindergarten) =>
+    isInReviewDiscoveryShard(kindergarten.kindercode, shardIndex, shardCount)
+  );
   const sidoName = SIDO_NAMES[sidoCode] || sidoCode;
-  console.log(`대상 유치원: ${targets.length}개 (${sidoName})`);
+  console.log(
+    `대상 유치원: ${targets.length}/${regionTargets.length}개 (${sidoName}, ` +
+      `샤드 ${shardIndex + 1}/${shardCount})`
+  );
 
   if (targets.length === 0) {
     console.error(`ERROR: 시도 코드 ${sidoCode}에 해당하는 유치원이 없습니다.`);
@@ -526,6 +577,7 @@ async function main() {
     filteredByScore: 0,
     filteredByLocation: 0,
     filteredBySpam: 0,
+    filteredByIntent: 0,
     finalCount: 0,
   };
 
@@ -561,6 +613,7 @@ async function main() {
       globalStats.filteredByScore += stats.filteredByScore;
       globalStats.filteredByLocation += stats.filteredByLocation;
       globalStats.filteredBySpam += stats.filteredBySpam;
+      globalStats.filteredByIntent += stats.filteredByIntent;
       globalStats.finalCount += stats.finalCount;
 
       if (reviews.length > 0) {
@@ -584,8 +637,13 @@ async function main() {
   console.log(`  - 스팸 제외: ${globalStats.filteredBySpam}건`);
   console.log(`  - 지역 불일치 제외: ${globalStats.filteredByLocation}건`);
   console.log(`  - 점수 미달 제외: ${globalStats.filteredByScore}건`);
+  console.log(`  - 후기 의도 미달 제외: ${globalStats.filteredByIntent}건`);
   console.log(`최종 통과: ${globalStats.finalCount}건`);
-  console.log(`필터링률: ${((1 - globalStats.finalCount / globalStats.totalRaw) * 100).toFixed(1)}%`);
+  const filterRate =
+    globalStats.totalRaw === 0
+      ? 0
+      : (1 - globalStats.finalCount / globalStats.totalRaw) * 100;
+  console.log(`필터링률: ${filterRate.toFixed(1)}%`);
 
   // 결과 저장
   const OUTPUT_DIR = path.resolve('scripts/data-output');
@@ -605,6 +663,10 @@ async function main() {
     sidoCode,
     sidoName,
     strictMode,
+    shardIndex,
+    shardCount,
+    regionTargetCount: regionTargets.length,
+    shardTargetCount: targets.length,
     stats: globalStats,
     reviews: allReviews,
   };

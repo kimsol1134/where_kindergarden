@@ -47,6 +47,7 @@ const PAGE_SIZE = 100;
 
 const SIDO_LABELS: Record<string, string> = {
   '11': '서울',
+  '12': '전남광주',
   '26': '부산',
   '27': '대구',
   '28': '인천',
@@ -395,14 +396,14 @@ export function ReviewsBrowser({ variant = 'search' }: ReviewsBrowserProps) {
             <div className="mt-3 flex flex-wrap gap-2">
               {variant === 'links' ? (
                 <Link
-                  href="/reviews"
+                  href="/reviews/"
                   className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
                 >
                   후기 검색으로 돌아가기
                 </Link>
               ) : (
                 <Link
-                  href="/reviews/all"
+                  href="/reviews/all/"
                   className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
                 >
                   전체 링크 보기

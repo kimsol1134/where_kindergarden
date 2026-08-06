@@ -799,7 +799,7 @@ function main() {
   }
   
   // 대상 파일 결정 (하위 디렉토리 포함)
-  let files: string[] = [];
+  const files: string[] = [];
   
   if (sidoCode) {
     // 특정 시도의 메인 파일과 하위 디렉토리 파일 모두 처리

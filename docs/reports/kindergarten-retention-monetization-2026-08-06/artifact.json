@@ -1,0 +1,547 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "유치원 탐색 앱 리텐션·수익화 실행계획",
+    "description": "증가한 탐색 시즌 유입을 의사결정 리텐션과 신뢰 기반 수익으로 전환하기 위한 12주 계획",
+    "generatedAt": "2026-08-06T02:47:44+09:00",
+    "charts": [
+      {
+        "id": "install_daily_comparison_chart",
+        "title": "10일 구간별 일별 설치 근사치",
+        "subtitle": "App Store Sales Report Units; 두 구간 모두 첫 부분에 하루 급증치가 포함됨",
+        "showDescription": true,
+        "headerMarkdown": "합계뿐 아니라 **일별 분포와 급증치**를 함께 확인하세요.",
+        "intent": "trend",
+        "question": "최근 설치 증가가 구간 전체에 퍼져 있는가, 특정 하루 급증에 집중됐는가?",
+        "rationale": "각 구간에 10개 일별 관측치가 있어 선형 흐름과 급증 집중도를 함께 비교할 수 있다.",
+        "comparisonContext": {
+          "baseline": "2026-07-04 through 2026-07-13",
+          "denominator": "App Store Connect Sales Report daily Units",
+          "grain": "구간 내 일차",
+          "normalization": "각 10일 구간을 1일차부터 10일차까지 정렬",
+          "semanticFamily": "current versus comparison period",
+          "unit": "건"
+        },
+        "type": "line",
+        "dataset": "install_daily_comparison",
+        "sourceId": "asc_sales_report_source",
+        "encodings": {
+          "x": {"field": "day_index", "type": "ordinal", "label": "구간 내 일차"},
+          "y": {"field": "installs", "type": "quantitative", "label": "설치 근사치", "format": "number", "unit": "건"},
+          "color": {"field": "period", "type": "nominal", "label": "구간"},
+          "lineStyle": {"field": "line_style", "type": "nominal", "label": "선 구분"},
+          "tooltip": [
+            {"field": "actual_date", "type": "text", "label": "실제 날짜"},
+            {"field": "period_total", "type": "quantitative", "label": "구간 합계", "format": "number"},
+            {"field": "period_median", "type": "quantitative", "label": "일 중앙값", "format": "number"},
+            {"field": "period_max", "type": "quantitative", "label": "하루 최대", "format": "number"}
+          ]
+        },
+        "valueFormat": "number",
+        "unit": "건",
+        "layout": "full",
+        "labels": {"values": "endpoints"},
+        "legend": {"position": "bottom", "sort": "spec", "title": "구간"},
+        "maxRows": 20,
+        "palette": {"kind": "categorical", "name": "blue-orange"},
+        "settings": {"showPoints": "always", "sort": "custom"},
+        "surface": {"surface": "export", "interactiveLegend": true, "showControls": false, "viewMode": "visualization"}
+      }
+    ],
+    "tables": [
+      {
+        "id": "acquisition_table",
+        "title": "App Store 설치 신호",
+        "subtitle": "각 10일 연속 관측 구간의 Sales Report Units; 합계와 중앙값을 함께 확인",
+        "showDescription": true,
+        "dataset": "acquisition_periods",
+        "sourceId": "asc_sales_report_source",
+        "defaultSort": {"field": "installs", "direction": "desc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "period", "label": "구간", "type": "text"},
+          {"field": "start", "label": "시작", "type": "date"},
+          {"field": "end", "label": "종료", "type": "date"},
+          {"field": "installs", "label": "설치 근사치", "format": "number", "role": "value"},
+          {"field": "median_daily", "label": "일 중앙값", "format": "number"},
+          {"field": "max_daily", "label": "하루 최대", "format": "number"},
+          {"field": "change_pct", "label": "이전 구간 대비", "format": "percent", "movement": true, "role": "movement"}
+        ]
+      },
+      {
+        "id": "funnel_table",
+        "title": "탐색에서 비교 공유까지의 기준선",
+        "subtitle": "2026년 5월 29일~6월 28일, 이전 단계 대비 고유 사용자 전환",
+        "showDescription": true,
+        "dataset": "funnel_baseline",
+        "sourceId": "mixpanel_baseline_source",
+        "defaultSort": {"field": "step_order", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "step_order", "label": "단계", "format": "number"},
+          {"field": "step", "label": "행동", "type": "text"},
+          {"field": "users", "label": "사용자", "format": "number"},
+          {"field": "step_conversion", "label": "이전 단계 전환", "format": "percent"}
+        ]
+      },
+      {
+        "id": "decision_loop_table",
+        "title": "제품 리텐션 루프",
+        "subtitle": "탐색에서 선택 완료까지 사용자가 돌아올 이유를 단계별로 설계",
+        "dataset": "decision_loop",
+        "source": {
+          "id": "decision_loop_source",
+          "label": "의사결정 리텐션 루프 설계",
+          "path": "source-notes.md",
+          "query": {
+            "engine": "SQLite decision model",
+            "sql": "WITH decision_loop(step_order, stage, user_job, product, return_trigger) AS (VALUES (1,'탐색','생활권 안 후보를 넓게 찾기','위치·주소 검색, 필터, 후기·공식정보','새 검색 또는 공유 링크 유입'),(2,'후보화','2~3곳으로 줄이기','찜과 비교를 합친 선택 보드','후보별 미확인 항목'),(3,'검증','상담·방문에서 확인하기','기관별 체크리스트와 메모','방문 일정과 남은 질문'),(4,'변경 추적','모집·후기·공식정보 변화 확인','선택한 기관만 주간 요약·변경 알림','새로운 의미 있는 변경'),(5,'합의·완료','가족과 최종 선택','비교표·메모 공유와 결정 완료','가족 피드백 또는 마감 임박')) SELECT step_order AS \"order\", stage, user_job, product, return_trigger FROM decision_loop ORDER BY step_order",
+            "description": "현재 기능을 유치원 선택의 단계별 사용자 과업과 재방문 계기로 재구성했다.",
+            "executed_at": "2026-08-06T02:45:00+09:00",
+            "language": "sql",
+            "tables_used": ["source-notes.md", "evidence.json"]
+          }
+        },
+        "defaultSort": {"field": "order", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "order", "label": "순서", "format": "number"},
+          {"field": "stage", "label": "단계", "type": "text"},
+          {"field": "user_job", "label": "사용자 할 일", "type": "text"},
+          {"field": "product", "label": "제품 기능", "type": "text"},
+          {"field": "return_trigger", "label": "재방문 계기", "type": "text"}
+        ]
+      },
+      {
+        "id": "monetization_table",
+        "title": "수익화 구조",
+        "subtitle": "핵심 정보 접근은 무료로 유지하고 자동화·기록·협업 가치만 유료화",
+        "dataset": "monetization_layers",
+        "source": {
+          "id": "monetization_design_source",
+          "label": "수익화 레이어 및 출시 게이트",
+          "path": "source-notes.md",
+          "query": {
+            "engine": "SQLite decision model",
+            "sql": "WITH layers(step_order, layer, offer, price_test, gate) AS (VALUES (1,'무료 핵심','검색, 공식정보, 후기, 찜, 3곳 비교, 가족 공유','계속 무료','활성화와 자연 공유를 성장 루프로 유지'),(2,'시즌 패스','변경 알림, 모집 일정, 방문 체크리스트·메모, 내보내기','가짜 문 후 ₩5,900 / ₩8,900 소규모 테스트','관심률 10% 이상, 신선도 SLA 충족, 실제 구매 코호트 확보'),(3,'가족 협업','파트너와 후보 상태·메모 동기화','시즌 패스 포함 여부 비교','공유 수신자의 반복 행동과 계정 필요성 확인'),(4,'기관 공식 프로필','검증된 모집 정보·운영시간·차량·설명회 갱신','3개 우선 지역에서 10곳 인터뷰, 5곳 유료 의향','지역별 고의도 사용자 밀도와 명확한 이해상충 정책'),(5,'보류','배너·전면 광고, 검색 순위 판매, 후기 삭제, 사용자 리드 판매','실험하지 않음','신뢰 포지셔닝과 구조적으로 충돌')) SELECT step_order AS \"order\", layer, offer, price_test, gate FROM layers ORDER BY step_order",
+            "description": "무료 성장 루프와 유료 자동화 가치를 분리하고 단계별 검증 조건을 명시했다.",
+            "executed_at": "2026-08-06T02:45:00+09:00",
+            "language": "sql",
+            "tables_used": ["source-notes.md", "evidence.json"]
+          }
+        },
+        "defaultSort": {"field": "order", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "order", "label": "순서", "format": "number"},
+          {"field": "layer", "label": "레이어", "type": "text"},
+          {"field": "offer", "label": "제공 가치", "type": "text"},
+          {"field": "price_test", "label": "검증 방식", "type": "text"},
+          {"field": "gate", "label": "출시 조건", "type": "text"}
+        ]
+      },
+      {
+        "id": "readiness_table",
+        "title": "유료화 전 데이터 준비도",
+        "subtitle": "2026년 8월 6일 스냅샷; 커버리지와 신선도가 유료 약속의 범위를 제한",
+        "showDescription": true,
+        "dataset": "data_readiness",
+        "sourceId": "catalog_source",
+        "defaultSort": {"field": "priority", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "priority", "label": "우선", "format": "number"},
+          {"field": "area", "label": "데이터", "type": "text"},
+          {"field": "observed", "label": "현재 상태", "type": "text"},
+          {"field": "coverage", "label": "기관 커버리지", "format": "percent"},
+          {"field": "decision", "label": "제품 결정", "type": "text"}
+        ]
+      },
+      {
+        "id": "kpi_table",
+        "title": "주간 운영 KPI",
+        "subtitle": "성과·진단·안전 지표를 분리해 작은 표본에서도 다음 행동을 결정",
+        "dataset": "kpi_framework",
+        "source": {
+          "id": "kpi_design_source",
+          "label": "리텐션·수익화 KPI 정의",
+          "path": "source-notes.md",
+          "query": {
+            "engine": "SQLite decision model",
+            "sql": "WITH kpis(priority, role, metric, definition, target, decision) AS (VALUES (1,'주요 성과','주간 활성 선택자','주간에 후보 2곳 이상을 보유하고 비교 보기 또는 체크리스트 시작을 한 고유 사용자','2주 기준선 후 4주 내 +30% 상대 개선','낮으면 후보 보드·CTA·데이터 밀도 개선'),(2,'주요 성과','W2 의사결정 리텐션','첫 7일 안에 활성화한 사용자 중 8~21일에 후보·비교·체크리스트·알림 행동을 다시 한 비율','기준선 대비 +30%; 잠정 절대 기준 20%','낮으면 재방문 계기와 알림 타이밍 재설계'),(3,'주요 성과','시즌 패스 전환','프리미엄 의도 행동 후 가격 화면을 본 활성 사용자 중 구매 완료 비율','가짜 문 관심 10% 이상; 출시 후 잠정 3~5%','낮으면 가격보다 먼저 가치 제안·대상·시점 수정'),(4,'진단','상세→후보 행동','상세를 본 사용자 중 같은 날 찜 또는 비교 후보 추가를 한 비율','6월 비교 추가 22.5%를 재측정 후 30% 이상','상세 CTA와 후보 상태 표현을 실험'),(5,'안전','알림·데이터 신뢰','감지 변경 24시간 내 반영률, 오래된 데이터 노출, 알림 7일 내 거부·불만','반영 95% 이상, 중대 오래된 알림 0건, 거부 10% 미만','위반 시 유료 알림 중단 및 원인 복구')) SELECT priority, role, metric, definition, target, decision FROM kpis ORDER BY priority",
+            "description": "성과, 진단, 안전 지표의 정의와 초기 목표·운영 결정을 함께 고정했다.",
+            "executed_at": "2026-08-06T02:45:00+09:00",
+            "language": "sql",
+            "metric_definitions": ["W2 의사결정 리텐션 분모는 첫 7일 내 활성화한 신규 사용자", "시즌 패스 전환 분모는 가격 화면을 본 활성 사용자"],
+            "tables_used": ["source-notes.md", "evidence.json"]
+          }
+        },
+        "defaultSort": {"field": "priority", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "priority", "label": "우선", "format": "number"},
+          {"field": "role", "label": "역할", "type": "text"},
+          {"field": "metric", "label": "지표", "type": "text"},
+          {"field": "definition", "label": "정의", "type": "text"},
+          {"field": "target", "label": "초기 목표", "type": "text"},
+          {"field": "decision", "label": "움직였을 때 할 일", "type": "text"}
+        ]
+      },
+      {
+        "id": "roadmap_table",
+        "title": "12주 실행 로드맵",
+        "subtitle": "기준선 수집 → 리텐션 기능 → 수익화 검증 순서",
+        "dataset": "roadmap",
+        "source": {
+          "id": "roadmap_source",
+          "label": "12주 실행 로드맵과 단계 게이트",
+          "path": "source-notes.md",
+          "query": {
+            "engine": "SQLite decision model",
+            "sql": "WITH plan(step_order, phase, build, measure, exit_gate) AS (VALUES (1,'1~2주: 기준선','선택 보드 정보구조, 신규 이벤트, 알림·패스 가짜 문, 데이터 신선도 로그','D0 코호트, 상세→후보, 후보 2곳, W2 기준선, 관심 클릭','100명 신규 또는 4개 성숙 코호트; 계측 QA 완료'),(2,'3~6주: 리텐션 MVP','기관별 상담 체크리스트·메모, 사용자 입력 일정, 후보별 미확인 항목, 주간 요약','주간 활성 선택자, 체크리스트 시작·완료, W2 리텐션','W2 기준선 대비 +30% 또는 절대 20%; 관심 클릭 10% 이상'),(3,'7~9주: 신뢰 가능한 알림','원천 일일 점검, 변경 감지, 출처·시각 표시, 실패 시 발송 중단','반영 SLA, 잘못된·오래된 알림, 열람 후 행동','24시간 내 반영 95% 이상, 중대 오래된 알림 0건'),(4,'10~12주: 시즌 패스','소규모 결제, 복원, 혜택 설명, 환불·문의 경로','가격 셀별 전환, 구매 후 사용, 환불·불만','200명 이상 적격 노출과 최소 10건 구매 후 확대 판단'),(5,'병행: B2B 탐색','우선 지역 기관 인터뷰와 공식 프로필 목업','정보 갱신 의향, 지불 의향, 사용자 신뢰 반응','10곳 인터뷰 중 5곳 유료 의향; 검색 순위와 완전 분리')) SELECT step_order AS \"order\", phase, build, measure, exit_gate FROM plan ORDER BY step_order",
+            "description": "기준선, 리텐션 MVP, 신뢰 가능한 알림, 시즌 패스 순서와 종료 조건을 구조화했다.",
+            "executed_at": "2026-08-06T02:45:00+09:00",
+            "language": "sql",
+            "tables_used": ["source-notes.md", "evidence.json"]
+          }
+        },
+        "defaultSort": {"field": "order", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "order", "label": "순서", "format": "number"},
+          {"field": "phase", "label": "기간", "type": "text"},
+          {"field": "build", "label": "만들 것", "type": "text"},
+          {"field": "measure", "label": "측정", "type": "text"},
+          {"field": "exit_gate", "label": "다음 단계 조건", "type": "text"}
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "asc_sales_report_source",
+        "label": "App Store Connect 일별 Sales Report 아티팩트",
+        "path": "evidence.json",
+        "href": "https://github.com/kimsol1134/where_kindergarden/actions/workflows/daily-asc-analytics.yml",
+        "query": {
+          "engine": "App Store Connect Sales Reports API via GitHub Actions",
+          "sql": "WITH raw(date, installs) AS (VALUES ('2026-07-25',33),('2026-07-26',12),('2026-07-27',4),('2026-07-28',2),('2026-07-29',3),('2026-07-30',5),('2026-07-31',5),('2026-08-01',3),('2026-08-02',1),('2026-08-03',1),('2026-07-04',4),('2026-07-05',1),('2026-07-06',1),('2026-07-07',31),('2026-07-08',3),('2026-07-09',1),('2026-07-10',2),('2026-07-11',2),('2026-07-12',4),('2026-07-13',2)), labeled AS (SELECT date, installs, CASE WHEN date >= '2026-07-25' THEN '최근 10일' ELSE '비교 10일' END AS period, CAST(julianday(date) - julianday(CASE WHEN date >= '2026-07-25' THEN '2026-07-25' ELSE '2026-07-04' END) + 1 AS INTEGER) AS day_index FROM raw) SELECT period, CASE period WHEN '최근 10일' THEN 'solid' ELSE 'dashed' END AS line_style, day_index, date AS actual_date, installs, CASE period WHEN '최근 10일' THEN 69 ELSE 51 END AS period_total, CASE period WHEN '최근 10일' THEN 3.5 ELSE 2.0 END AS period_median, CASE period WHEN '최근 10일' THEN 33 ELSE 31 END AS period_max FROM labeled ORDER BY CASE period WHEN '최근 10일' THEN 1 ELSE 2 END, day_index",
+          "query": "[.[].metrics[] | select(.metric_name == \"installs\")] | unique_by(.date) | sort_by(.date)",
+          "description": "성공한 일별 워크플로우 아티팩트를 내려받아 날짜 기준으로 중복 제거하고 두 개의 10일 연속 구간을 비교했다.",
+          "executed_at": "2026-08-06T02:17:00+09:00",
+          "language": "jq",
+          "filters": [
+            "metric_name = installs",
+            "current: 2026-07-25 through 2026-08-03",
+            "comparison: 2026-07-04 through 2026-07-13",
+            "workflow failure dates 2026-07-21 through 2026-07-23 excluded from both windows"
+          ],
+          "metric_definitions": [
+            "설치 근사치 = App Store Connect Sales Report의 일별 Units 합계",
+            "변화율 = (최근 10일 합계 - 비교 10일 합계) / 비교 10일 합계"
+          ],
+          "tables_used": [
+            "GitHub Actions asc-analytics-* artifacts",
+            "docs/reports/kindergarten-retention-monetization-2026-08-06/evidence.json"
+          ]
+        }
+      },
+      {
+        "id": "mixpanel_baseline_source",
+        "label": "Mixpanel 30일 퍼널 기준선",
+        "path": "evidence.json",
+        "query": {
+          "engine": "Mixpanel",
+          "sql": "WITH funnel(step_order, step, users, step_conversion) AS (VALUES (1,'앱 실행',51,1.0),(2,'검색 실행',51,1.0),(3,'결과 선택',40,0.7843),(4,'상세 확인',40,1.0),(5,'비교 후보 추가',9,0.225),(6,'비교 화면 확인',8,0.8889),(7,'비교 공유',0,0.0)) SELECT step_order, step, users, step_conversion FROM funnel ORDER BY step_order",
+          "id": "앱 실행~비교 공유 전환율 퍼널(모든 단계)",
+          "description": "2026년 6월 28일 저장 보고서의 고유 사용자 퍼널을 기준선으로 사용했다.",
+          "executed_at": "2026-06-28T23:59:00+09:00",
+          "filters": [
+            "2026-05-29 through 2026-06-28",
+            "anonymous distinct_id users",
+            "loose ordered funnel"
+          ],
+          "metric_definitions": [
+            "단계 전환율 = 해당 단계 고유 사용자 / 직전 단계 고유 사용자",
+            "활성 사용자 = 분석 기간에 하나 이상의 추적 이벤트를 발생시킨 distinct_id"
+          ],
+          "tables_used": [
+            "docs/MIXPANEL_USAGE_ANALYSIS_2026-06-28.md",
+            "docs/reports/kindergarten-retention-monetization-2026-08-06/evidence.json"
+          ]
+        }
+      },
+      {
+        "id": "catalog_source",
+        "label": "현재 유치원·후기·결원 데이터 스냅샷",
+        "path": "evidence.json",
+        "query": {
+          "engine": "local JSON inspection",
+          "sql": "WITH catalog(priority, area, observed, covered, total, decision) AS (VALUES (1,'결원','2,753곳, 기준 2026-03-17',2753,7950,'유료 변경 알림 보류; 수집·신선도 SLA 먼저'),(2,'후기','6,304개 링크, 1,972곳',1972,7950,'보유 기관·지역 중심으로 알림과 비교 가치 강화'),(3,'기본 유치원','전국 7,950곳',7950,7950,'무료 탐색·비교의 신뢰 기반으로 유지')) SELECT priority, area, observed, CAST(covered AS REAL)/total AS coverage, decision FROM catalog ORDER BY priority",
+          "query": "coverage = covered_kindergartens / 7950",
+          "description": "현재 저장소의 데이터 버전, 레코드 수, 기관 커버리지를 확인했다.",
+          "executed_at": "2026-08-06T02:27:00+09:00",
+          "language": "jq",
+          "metric_definitions": [
+            "후기 기관 커버리지 = 후기 링크가 하나 이상 있는 기관 수 / 전체 기관 수",
+            "결원 기관 커버리지 = 결원 데이터셋에 포함된 기관 수 / 전체 기관 수",
+            "결원 데이터 경과 일수 = 2026-08-06 - 데이터 버전 날짜 2026-03-17"
+          ],
+          "tables_used": [
+            "public/data/kindergartens.json",
+            "public/data/reviews.json",
+            "public/data/vacancy.json",
+            "docs/reports/kindergarten-retention-monetization-2026-08-06/evidence.json"
+          ]
+        }
+      },
+      {
+        "id": "implementation_source",
+        "label": "현재 iOS 제품 기능과 분석 계측",
+        "path": "evidence.json",
+        "query": {
+          "engine": "repository inspection",
+          "description": "현재 출시 코드에서 찜, 비교, 공유, 후기, 결원, 상담 질문, 리뷰 요청 및 Mixpanel 이벤트를 확인했다.",
+          "executed_at": "2026-08-06T02:32:00+09:00",
+          "tables_used": [
+            "ios/NativeApp/Sources/Services/Analytics.swift",
+            "ios/NativeApp/Sources/Features/Search/KindergartenDetailSheet.swift",
+            "ios/NativeApp/Sources/Features/Saved/SavedView.swift",
+            "ios/NativeApp/Sources/Features/Compare/CompareView.swift",
+            "ios/NativeApp/Sources/Features/Compare/CompareMatrixView.swift",
+            "docs/APP_STORE_METADATA.md"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# 유치원 탐색 앱 리텐션·수익화 실행계획"
+      },
+      {
+        "id": "executive_summary",
+        "type": "markdown",
+        "body": "## Executive Summary\n\n- **지금의 최우선은 광고나 구독 출시가 아니라 ‘선택 작업공간’ 활성화다.** 유치원 탐색은 매일 쓰는 습관형 제품이 아니므로, 후보를 저장하고 비교하고 상담을 준비해 선택을 끝낼 때까지 주간 단위로 돌아오게 만들어야 한다.\n\n- **수익 모델은 월 구독보다 한 시즌 단위 패스가 제품 사용 기간에 맞다.** 검색·공식정보·후기·기본 비교·공유는 계속 무료로 두고, 변경 알림·모집 일정·방문 기록·가족 협업 같은 자동화 기능만 유료 후보로 검증한다.\n\n- **결원 알림은 아직 판매하면 안 된다.** 현재 결원 스냅샷은 유료 ‘실시간성’ 약속을 뒷받침하지 못한다. 먼저 수집 신선도, 변경 감지, 표시 시각, 오류 대응 기준을 갖춘다.\n\n- **앞으로 12주는 기준선 2주, 리텐션 MVP 4주, 수익화 검증 6주로 운영한다.** 무료 핵심 가치를 잠그지 않고, 관심 클릭과 실제 구매를 단계적으로 검증한다."
+      },
+      {
+        "id": "acquisition_finding",
+        "type": "markdown",
+        "sourceId": "asc_sales_report_source",
+        "body": "## 유입은 늘었지만 아직 ‘지속 성장’이라 단정할 단계는 아니다\n\n**최근 비교 가능한 10일 설치 근사치는 69건으로 이전 10일 51건보다 35.3% 많고, 일 중앙값도 2건에서 3.5건으로 올랐다.** 다만 각 구간에 33건과 31건의 하루 급증치가 있어 캠페인·노출·시즌 효과가 반복되는지는 더 지켜봐야 한다.\n\n**의미:** 지금의 증가분은 바로 수익을 극대화할 근거라기보다, 리텐션 실험을 빠르게 학습할 수 있는 트래픽이다. 유입 소스별 코호트와 첫 7일 가치 행동을 먼저 연결한다."
+      },
+      {"id": "acquisition_chart", "type": "chart", "chartId": "install_daily_comparison_chart"},
+      {"id": "acquisition_evidence", "type": "table", "tableId": "acquisition_table"},
+      {
+        "id": "activation_finding",
+        "type": "markdown",
+        "sourceId": "mixpanel_baseline_source",
+        "body": "## 검색은 작동했고, 병목은 후보 저장 이후다\n\n**6월 기준선에서 검색 사용자 51명 중 40명이 상세를 열었지만, 상세 사용자 40명 중 비교 후보를 추가한 사용자는 9명(22.5%)이었다.** 비교 화면까지 본 8명 중 공유는 0명이었고, 공유 UI 문제는 같은 날 수정됐다.\n\n따라서 최신 데이터에서 다시 확인할 핵심은 검색 횟수가 아니라 **상세→후보 추가→2곳 비교→가족 공유** 전환이다. 무료 핵심 흐름을 더 강하게 만들기 전에 결제벽을 넣으면 작은 고의도 사용자를 오히려 잃을 가능성이 크다."
+      },
+      {"id": "activation_evidence", "type": "table", "tableId": "funnel_table"},
+      {
+        "id": "retention_strategy",
+        "type": "markdown",
+        "sourceId": "implementation_source",
+        "body": "## 리텐션은 ‘매일 열기’가 아니라 ‘선택을 끝낼 때까지 돌아오기’여야 한다\n\n현재 앱에는 찜, 최대 3곳 비교, 가족 공유, 후기, 결원 표시, 상담 질문이 이미 있다. 새 기능을 넓게 벌리기보다 이 조각들을 하나의 **선택 보드**로 묶는 것이 가장 짧은 경로다.\n\n사용자가 자녀의 입학연도·연령과 후보 2~3곳을 정하면, 앱은 남은 확인 사항과 일정, 새 후기·공식정보 변경을 한곳에 보여준다. 푸시 권한은 첫 실행 때 요구하지 않고 후보를 2곳 이상 저장한 뒤 구체적인 알림 가치를 설명하며 요청한다."
+      },
+      {"id": "retention_loop", "type": "table", "tableId": "decision_loop_table"},
+      {
+        "id": "monetization_strategy",
+        "type": "markdown",
+        "body": "## 수익은 구독보다 시즌 패스로 검증한다\n\n**부모의 유치원 선택은 강도가 높지만 기간은 짧다.** 그래서 자동 갱신 월 구독보다 해당 모집 시즌 동안 쓰는 1회성 패스가 기대와 맞고 해지 불만도 줄이기 쉽다. 가격은 먼저 가짜 문(fake door)으로 관심을 확인한 뒤 ₩5,900·₩8,900 두 셀을 소규모로 검증한다. 이는 매출 예측이 아니라 지불 의향을 배우기 위한 임시 가격이다.\n\n무료 사용자가 후보를 만들고 가족에게 공유하는 흐름은 성장 루프이므로 막지 않는다. 광고도 현재의 ‘광고 없음’ 신뢰 포지셔닝과 충돌하므로 재도입하지 않는다. 기관 대상 상품은 사용자 의도가 특정 지역에 충분히 모인 뒤 ‘공식 프로필·모집 정보 갱신’으로 제한하고, 검색 순위 판매·후기 삭제·유료 우대 표시는 금지한다."
+      },
+      {"id": "monetization_evidence", "type": "table", "tableId": "monetization_table"},
+      {
+        "id": "data_readiness_finding",
+        "type": "markdown",
+        "sourceId": "catalog_source",
+        "body": "## 유료 알림 전에 데이터 신뢰부터 고친다\n\n**후기 링크는 7,950개 기관 중 1,972곳(24.8%)을 커버하지만, 결원 데이터는 2,753곳(34.6%)이며 버전이 2026년 3월 17일이다.** 후기 기능은 보유 기관 중심으로 가치를 강화할 수 있지만, 결원 변경 알림은 현재 상태로 정확성과 신선도를 약속하기 어렵다.\n\n출시 조건은 ‘매일 원천 확인’, ‘감지된 변경 24시간 이내 반영’, ‘각 카드에 출처·기준 시각 표시’, ‘실패 시 알림 중단’이다. 이 조건을 충족하기 전에는 결원 알림을 관심도 측정용 화면으로만 노출하고 결제는 받지 않는다."
+      },
+      {"id": "data_readiness_evidence", "type": "table", "tableId": "readiness_table"},
+      {
+        "id": "kpi_section",
+        "type": "markdown",
+        "body": "## 세 지표만 주간 운영 지표로 본다\n\n핵심 성과는 단순 실행 수가 아니라 **주간 활성 선택자**, **W2 의사결정 리텐션**, **활성 사용자 중 시즌 패스 전환**이다. 상세→후보 행동과 알림 관심은 진단 지표로 두고, 데이터 신선도와 알림 거부는 반드시 함께 본다.\n\n처음 2주는 확정 목표를 강요하지 않고 기준선을 만든다. 이후에는 절대 수치보다 코호트별 상대 개선을 우선하며, 최소 100명의 신규 사용자 또는 4개의 성숙한 주간 코호트가 쌓이기 전에는 작은 변동을 성공·실패로 단정하지 않는다."
+      },
+      {"id": "kpi_evidence", "type": "table", "tableId": "kpi_table"},
+      {
+        "id": "roadmap_section",
+        "type": "markdown",
+        "body": "## 12주는 기준선 → 리텐션 → 수익화 순서로 간다\n\n**1~2주에는 측정과 가짜 문, 3~6주에는 선택 보드와 체크리스트, 7~12주에는 데이터 조건을 충족한 알림과 시즌 패스를 검증한다.** 한 단계의 종료 조건을 통과하지 못하면 다음 단계의 개발 범위를 넓히지 않는다."
+      },
+      {"id": "roadmap_evidence", "type": "table", "tableId": "roadmap_table"},
+      {
+        "id": "immediate_actions",
+        "type": "markdown",
+        "body": "## 이번 주 바로 할 일\n\n1. Mixpanel에 `Decision Workspace Activated`, `Checklist Started`, `Alert Interest Clicked`, `Paywall Viewed`, `Purchase Completed`, `Notification Opened`를 추가하고 `days_since_install=0` 코호트를 저장한다.\n\n2. 현재 찜·비교 상태를 합친 ‘내 후보’ 화면을 설계하고, 후보 2곳이 모이면 비교·상담 체크리스트로 이어지는 CTA를 노출한다.\n\n3. 결원 수집 파이프라인의 최신 성공 시각·기관 커버리지·변경 건수·실패 여부를 매일 기록하고, 오래된 데이터에는 경고를 표시한다.\n\n4. 후보 2곳 이상 사용자에게만 ‘새 결원/후기/모집 일정 알림’ 가짜 문을 보여 관심률을 측정한다. 아직 결제는 받지 않는다.\n\n5. 매주 월요일 코호트 리뷰에서 주간 활성 선택자, W2 리텐션, 상세→후보 행동, 데이터 신선도만 확인하고 다음 한 주의 실험 하나를 결정한다."
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## Further Questions\n\n- 설치 급증은 App Store 검색, 외부 콘텐츠, 특정 지역 노출 중 어디에서 왔는가? 유입 소스별 활성화 차이가 있는가?\n\n- 부모가 가장 돈을 낼 의향이 높은 것은 결원 변경, 모집 일정, 방문 기록, 가족 협업 중 무엇인가?\n\n- 사용자가 실제로 후보를 결정한 시점과 합격·입학 후 앱을 떠나는 시점을 어떻게 익명으로 측정할 것인가?\n\n- 우선 공략할 지역에서 후기와 최신 모집 데이터 커버리지가 충분한가? 전국 평균보다 지역별 밀도가 더 중요한가?\n\n- 기관 공식 프로필 파일럿을 할 때 사용자 신뢰를 해치지 않는 표시·검수·이해상충 규칙은 무엇인가?"
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "body": "## Caveats and Assumptions\n\n- App Store 수치는 Sales Report Units 기반 설치 근사치이며 순수 최초 설치와 동일하지 않을 수 있다. 두 10일 구간 모두 하루 급증치가 있어 장기 성장률이나 매출을 예측하지 않았다.\n\n- 최신 Mixpanel 전체 퍼널과 리텐션은 이번 조회에서 속도 제한으로 확보하지 못했다. 6월 퍼널은 병목 가설의 기준선이며, 8월 성과값으로 사용하지 않는다.\n\n- 7월 25일 검색 이벤트 디바운스 변경 전후의 `Search Executed` 총량은 비교하지 않는다. 사용자 수와 후속 행동 전환으로 판단한다.\n\n- 가격과 전환 목표는 임시 실험값이다. 실제 결제 출시 전 사용자 인터뷰, 데이터 신선도, 스토어 결제 설계, 개인정보·알림 고지를 별도로 검토해야 한다.\n\n- 2027학년도 공식 모집 일정의 특정 날짜는 이 계획에 가정하지 않았다. 공식 일정이 발표되면 리마인드 캘린더를 갱신한다."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-06T02:47:44+09:00",
+    "status": "ready",
+    "datasets": {
+      "install_daily_comparison": [
+        {"period": "최근 10일", "line_style": "solid", "day_index": 1, "actual_date": "2026-07-25", "installs": 33, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 2, "actual_date": "2026-07-26", "installs": 12, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 3, "actual_date": "2026-07-27", "installs": 4, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 4, "actual_date": "2026-07-28", "installs": 2, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 5, "actual_date": "2026-07-29", "installs": 3, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 6, "actual_date": "2026-07-30", "installs": 5, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 7, "actual_date": "2026-07-31", "installs": 5, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 8, "actual_date": "2026-08-01", "installs": 3, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 9, "actual_date": "2026-08-02", "installs": 1, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "최근 10일", "line_style": "solid", "day_index": 10, "actual_date": "2026-08-03", "installs": 1, "period_total": 69, "period_median": 3.5, "period_max": 33},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 1, "actual_date": "2026-07-04", "installs": 4, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 2, "actual_date": "2026-07-05", "installs": 1, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 3, "actual_date": "2026-07-06", "installs": 1, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 4, "actual_date": "2026-07-07", "installs": 31, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 5, "actual_date": "2026-07-08", "installs": 3, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 6, "actual_date": "2026-07-09", "installs": 1, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 7, "actual_date": "2026-07-10", "installs": 2, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 8, "actual_date": "2026-07-11", "installs": 2, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 9, "actual_date": "2026-07-12", "installs": 4, "period_total": 51, "period_median": 2.0, "period_max": 31},
+        {"period": "비교 10일", "line_style": "dashed", "day_index": 10, "actual_date": "2026-07-13", "installs": 2, "period_total": 51, "period_median": 2.0, "period_max": 31}
+      ],
+      "acquisition_periods": [
+        {"period": "최근 10일", "start": "2026-07-25", "end": "2026-08-03", "installs": 69, "median_daily": 3.5, "max_daily": 33, "change_pct": 0.3529411765},
+        {"period": "비교 10일", "start": "2026-07-04", "end": "2026-07-13", "installs": 51, "median_daily": 2.0, "max_daily": 31, "change_pct": null}
+      ],
+      "funnel_baseline": [
+        {"step_order": 1, "step": "앱 실행", "users": 51, "step_conversion": 1.0},
+        {"step_order": 2, "step": "검색 실행", "users": 51, "step_conversion": 1.0},
+        {"step_order": 3, "step": "결과 선택", "users": 40, "step_conversion": 0.7843},
+        {"step_order": 4, "step": "상세 확인", "users": 40, "step_conversion": 1.0},
+        {"step_order": 5, "step": "비교 후보 추가", "users": 9, "step_conversion": 0.225},
+        {"step_order": 6, "step": "비교 화면 확인", "users": 8, "step_conversion": 0.8889},
+        {"step_order": 7, "step": "비교 공유", "users": 0, "step_conversion": 0.0}
+      ],
+      "decision_loop": [
+        {"order": 1, "stage": "탐색", "user_job": "생활권 안 후보를 넓게 찾기", "product": "위치·주소 검색, 필터, 후기·공식정보", "return_trigger": "새 검색 또는 공유 링크 유입"},
+        {"order": 2, "stage": "후보화", "user_job": "2~3곳으로 줄이기", "product": "찜과 비교를 합친 선택 보드", "return_trigger": "후보별 미확인 항목"},
+        {"order": 3, "stage": "검증", "user_job": "상담·방문에서 확인하기", "product": "기관별 체크리스트와 메모", "return_trigger": "방문 일정과 남은 질문"},
+        {"order": 4, "stage": "변경 추적", "user_job": "모집·후기·공식정보 변화 확인", "product": "선택한 기관만 주간 요약·변경 알림", "return_trigger": "새로운 의미 있는 변경"},
+        {"order": 5, "stage": "합의·완료", "user_job": "가족과 최종 선택", "product": "비교표·메모 공유와 결정 완료", "return_trigger": "가족 피드백 또는 마감 임박"}
+      ],
+      "monetization_layers": [
+        {"order": 1, "layer": "무료 핵심", "offer": "검색, 공식정보, 후기, 찜, 3곳 비교, 가족 공유", "price_test": "계속 무료", "gate": "활성화와 자연 공유를 성장 루프로 유지"},
+        {"order": 2, "layer": "시즌 패스", "offer": "변경 알림, 모집 일정, 방문 체크리스트·메모, 내보내기", "price_test": "가짜 문 후 ₩5,900 / ₩8,900 소규모 테스트", "gate": "관심률 10% 이상, 신선도 SLA 충족, 실제 구매 코호트 확보"},
+        {"order": 3, "layer": "가족 협업", "offer": "파트너와 후보 상태·메모 동기화", "price_test": "시즌 패스 포함 여부 비교", "gate": "공유 수신자의 반복 행동과 계정 필요성 확인"},
+        {"order": 4, "layer": "기관 공식 프로필", "offer": "검증된 모집 정보·운영시간·차량·설명회 갱신", "price_test": "3개 우선 지역에서 10곳 인터뷰, 5곳 유료 의향", "gate": "지역별 고의도 사용자 밀도와 명확한 이해상충 정책"},
+        {"order": 5, "layer": "보류", "offer": "배너·전면 광고, 검색 순위 판매, 후기 삭제, 사용자 리드 판매", "price_test": "실험하지 않음", "gate": "신뢰 포지셔닝과 구조적으로 충돌"}
+      ],
+      "data_readiness": [
+        {"priority": 1, "area": "결원", "observed": "2,753곳, 기준 2026-03-17", "coverage": 0.3462893082, "decision": "유료 변경 알림 보류; 수집·신선도 SLA 먼저"},
+        {"priority": 2, "area": "후기", "observed": "6,304개 링크, 1,972곳", "coverage": 0.2480503145, "decision": "보유 기관·지역 중심으로 알림과 비교 가치 강화"},
+        {"priority": 3, "area": "기본 유치원", "observed": "전국 7,950곳", "coverage": 1.0, "decision": "무료 탐색·비교의 신뢰 기반으로 유지"}
+      ],
+      "kpi_framework": [
+        {"priority": 1, "role": "주요 성과", "metric": "주간 활성 선택자", "definition": "주간에 후보 2곳 이상을 보유하고 비교 보기 또는 체크리스트 시작을 한 고유 사용자", "target": "2주 기준선 후 4주 내 +30% 상대 개선", "decision": "낮으면 후보 보드·CTA·데이터 밀도 개선"},
+        {"priority": 2, "role": "주요 성과", "metric": "W2 의사결정 리텐션", "definition": "첫 7일 안에 활성화한 사용자 중 8~21일에 후보·비교·체크리스트·알림 행동을 다시 한 비율", "target": "기준선 대비 +30%; 잠정 절대 기준 20%", "decision": "낮으면 재방문 계기와 알림 타이밍 재설계"},
+        {"priority": 3, "role": "주요 성과", "metric": "시즌 패스 전환", "definition": "프리미엄 의도 행동 후 가격 화면을 본 활성 사용자 중 구매 완료 비율", "target": "가짜 문 관심 10% 이상; 출시 후 잠정 3~5%", "decision": "낮으면 가격보다 먼저 가치 제안·대상·시점 수정"},
+        {"priority": 4, "role": "진단", "metric": "상세→후보 행동", "definition": "상세를 본 사용자 중 같은 날 찜 또는 비교 후보 추가를 한 비율", "target": "6월 비교 추가 22.5%를 재측정 후 30% 이상", "decision": "상세 CTA와 후보 상태 표현을 실험"},
+        {"priority": 5, "role": "안전", "metric": "알림·데이터 신뢰", "definition": "감지 변경 24시간 내 반영률, 오래된 데이터 노출, 알림 7일 내 거부·불만", "target": "반영 95% 이상, 중대 오래된 알림 0건, 거부 10% 미만", "decision": "위반 시 유료 알림 중단 및 원인 복구"}
+      ],
+      "roadmap": [
+        {"order": 1, "phase": "1~2주: 기준선", "build": "선택 보드 정보구조, 신규 이벤트, 알림·패스 가짜 문, 데이터 신선도 로그", "measure": "D0 코호트, 상세→후보, 후보 2곳, W2 기준선, 관심 클릭", "exit_gate": "100명 신규 또는 4개 성숙 코호트; 계측 QA 완료"},
+        {"order": 2, "phase": "3~6주: 리텐션 MVP", "build": "기관별 상담 체크리스트·메모, 사용자 입력 일정, 후보별 미확인 항목, 주간 요약", "measure": "주간 활성 선택자, 체크리스트 시작·완료, W2 리텐션", "exit_gate": "W2 기준선 대비 +30% 또는 절대 20%; 관심 클릭 10% 이상"},
+        {"order": 3, "phase": "7~9주: 신뢰 가능한 알림", "build": "원천 일일 점검, 변경 감지, 출처·시각 표시, 실패 시 발송 중단", "measure": "반영 SLA, 잘못된·오래된 알림, 열람 후 행동", "exit_gate": "24시간 내 반영 95% 이상, 중대 오래된 알림 0건"},
+        {"order": 4, "phase": "10~12주: 시즌 패스", "build": "소규모 결제, 복원, 혜택 설명, 환불·문의 경로", "measure": "가격 셀별 전환, 구매 후 사용, 환불·불만", "exit_gate": "200명 이상 적격 노출과 최소 10건 구매 후 확대 판단"},
+        {"order": 5, "phase": "병행: B2B 탐색", "build": "우선 지역 기관 인터뷰와 공식 프로필 목업", "measure": "정보 갱신 의향, 지불 의향, 사용자 신뢰 반응", "exit_gate": "10곳 인터뷰 중 5곳 유료 의향; 검색 순위와 완전 분리"}
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "asc_sales_report_source",
+      "label": "App Store Connect 일별 Sales Report 아티팩트",
+      "path": "evidence.json",
+      "href": "https://github.com/kimsol1134/where_kindergarden/actions/workflows/daily-asc-analytics.yml",
+      "query": {
+        "engine": "App Store Connect Sales Reports API via GitHub Actions",
+        "sql": "WITH raw(date, installs) AS (VALUES ('2026-07-25',33),('2026-07-26',12),('2026-07-27',4),('2026-07-28',2),('2026-07-29',3),('2026-07-30',5),('2026-07-31',5),('2026-08-01',3),('2026-08-02',1),('2026-08-03',1),('2026-07-04',4),('2026-07-05',1),('2026-07-06',1),('2026-07-07',31),('2026-07-08',3),('2026-07-09',1),('2026-07-10',2),('2026-07-11',2),('2026-07-12',4),('2026-07-13',2)), labeled AS (SELECT date, installs, CASE WHEN date >= '2026-07-25' THEN '최근 10일' ELSE '비교 10일' END AS period, CAST(julianday(date) - julianday(CASE WHEN date >= '2026-07-25' THEN '2026-07-25' ELSE '2026-07-04' END) + 1 AS INTEGER) AS day_index FROM raw) SELECT period, CASE period WHEN '최근 10일' THEN 'solid' ELSE 'dashed' END AS line_style, day_index, date AS actual_date, installs, CASE period WHEN '최근 10일' THEN 69 ELSE 51 END AS period_total, CASE period WHEN '최근 10일' THEN 3.5 ELSE 2.0 END AS period_median, CASE period WHEN '최근 10일' THEN 33 ELSE 31 END AS period_max FROM labeled ORDER BY CASE period WHEN '최근 10일' THEN 1 ELSE 2 END, day_index",
+        "query": "[.[].metrics[] | select(.metric_name == \"installs\")] | unique_by(.date) | sort_by(.date)",
+        "description": "성공한 일별 아티팩트를 날짜 기준으로 중복 제거하고 두 개의 10일 연속 구간을 비교했다.",
+        "executed_at": "2026-08-06T02:17:00+09:00",
+        "language": "jq",
+        "filters": ["metric_name = installs", "two complete 10-day windows"],
+        "metric_definitions": ["설치 근사치 = App Store Connect Sales Report의 일별 Units 합계"],
+        "tables_used": ["GitHub Actions asc-analytics-* artifacts", "evidence.json"]
+      }
+    },
+    {
+      "id": "mixpanel_baseline_source",
+      "label": "Mixpanel 30일 퍼널 기준선",
+      "path": "evidence.json",
+      "query": {
+        "engine": "Mixpanel",
+        "sql": "WITH funnel(step_order, step, users, step_conversion) AS (VALUES (1,'앱 실행',51,1.0),(2,'검색 실행',51,1.0),(3,'결과 선택',40,0.7843),(4,'상세 확인',40,1.0),(5,'비교 후보 추가',9,0.225),(6,'비교 화면 확인',8,0.8889),(7,'비교 공유',0,0.0)) SELECT step_order, step, users, step_conversion FROM funnel ORDER BY step_order",
+        "id": "앱 실행~비교 공유 전환율 퍼널(모든 단계)",
+        "description": "2026년 6월 28일 저장 보고서의 고유 사용자 퍼널.",
+        "executed_at": "2026-06-28T23:59:00+09:00",
+        "filters": ["2026-05-29 through 2026-06-28", "anonymous distinct_id users"],
+        "metric_definitions": ["단계 전환율 = 해당 단계 고유 사용자 / 직전 단계 고유 사용자"],
+        "tables_used": ["docs/MIXPANEL_USAGE_ANALYSIS_2026-06-28.md", "evidence.json"]
+      }
+    },
+    {
+      "id": "catalog_source",
+      "label": "현재 유치원·후기·결원 데이터 스냅샷",
+      "path": "evidence.json",
+      "query": {
+        "engine": "local JSON inspection",
+        "sql": "WITH catalog(priority, area, observed, covered, total, decision) AS (VALUES (1,'결원','2,753곳, 기준 2026-03-17',2753,7950,'유료 변경 알림 보류; 수집·신선도 SLA 먼저'),(2,'후기','6,304개 링크, 1,972곳',1972,7950,'보유 기관·지역 중심으로 알림과 비교 가치 강화'),(3,'기본 유치원','전국 7,950곳',7950,7950,'무료 탐색·비교의 신뢰 기반으로 유지')) SELECT priority, area, observed, CAST(covered AS REAL)/total AS coverage, decision FROM catalog ORDER BY priority",
+        "query": "coverage = covered_kindergartens / 7950",
+        "description": "현재 저장소의 데이터 버전, 레코드 수, 기관 커버리지를 확인했다.",
+        "executed_at": "2026-08-06T02:27:00+09:00",
+        "language": "jq",
+        "metric_definitions": ["기관 커버리지 = 해당 데이터가 있는 기관 수 / 전체 7,950곳"],
+        "tables_used": ["public/data/kindergartens.json", "public/data/reviews.json", "public/data/vacancy.json", "evidence.json"]
+      }
+    },
+    {
+      "id": "implementation_source",
+      "label": "현재 iOS 제품 기능과 분석 계측",
+      "path": "evidence.json",
+      "query": {
+        "engine": "repository inspection",
+        "description": "현재 출시 코드에서 찜, 비교, 공유, 후기, 결원, 상담 질문 및 분석 이벤트를 확인했다.",
+        "executed_at": "2026-08-06T02:32:00+09:00",
+        "tables_used": [
+          "ios/NativeApp/Sources/Services/Analytics.swift",
+          "ios/NativeApp/Sources/Features/Search/KindergartenDetailSheet.swift",
+          "ios/NativeApp/Sources/Features/Saved/SavedView.swift",
+          "ios/NativeApp/Sources/Features/Compare/CompareView.swift",
+          "ios/NativeApp/Sources/Features/Compare/CompareMatrixView.swift",
+          "docs/APP_STORE_METADATA.md",
+          "evidence.json"
+        ]
+      }
+    }
+  ],
+  "package_info": {
+    "originUrl": "artifact://kindergarten-retention-monetization-2026-08-06",
+    "controls": {"edit": false, "refresh": false}
+  }
+}

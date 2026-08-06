@@ -21,7 +21,12 @@ public enum AnalyticsEvent: String, Sendable {
     case comparisonAdded   = "Comparison Added"
     case comparisonRemoved = "Comparison Removed"
     case compareViewed     = "Compare Viewed"
+    case compareShareInitiated = "Compare Share Initiated"
+    case compareShareResult = "Compare Share Result"
+    /// 완료 또는 카카오톡 인계 성공만 기록하는 하위 호환 이벤트.
+    /// 2026-08-06 이전 데이터는 공유 시도 시점에 기록됐으므로 전후를 직접 비교하면 안 된다.
     case compareShared     = "Compare Shared"
+    case vacancyViewed     = "Vacancy Viewed"
     case filterApplied     = "Filter Applied"
     case tabChanged        = "Tab Changed"
 

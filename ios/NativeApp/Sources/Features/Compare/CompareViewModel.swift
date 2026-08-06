@@ -7,6 +7,13 @@ import Services
 @Observable
 @MainActor
 public final class CompareViewModel {
+    public enum ShareResult: String, Sendable, Equatable {
+        case completed
+        case cancelled
+        case failed
+        case handoffSucceeded = "handoff_succeeded"
+    }
+
     private let compareRepo: any CompareStoring
     private let kindergartenRepo: any KindergartenProviding
     private let reviewRepo: any ReviewProviding
@@ -86,6 +93,7 @@ public final class CompareViewModel {
 
     public func trackCompareViewed() {
         let count = comparedKindergartens.count
+        guard count >= 2 else { return }
         analytics?.track(event: .compareViewed, properties: [
             "compare_count": .int(count),
         ])
@@ -96,12 +104,9 @@ public final class CompareViewModel {
     }
 
     public func shareKakao(names: [String]) -> URL? {
+        _ = names
         guard let url = shareURL() else { return nil }
-        analytics?.track(event: .compareShared, properties: [
-            "method": .string("kakao"),
-            "compare_count": .int(comparedKindergartens.count),
-            "result": .string("initiated"),
-        ])
+        trackShareInitiated(method: "kakao")
         return url
     }
 
@@ -112,10 +117,29 @@ public final class CompareViewModel {
     }
 
     public func trackSystemShareInitiated() {
-        analytics?.track(event: .compareShared, properties: [
-            "method": .string("system"),
+        trackShareInitiated(method: "system")
+    }
+
+    public func trackShareResult(method: String, result: ShareResult) {
+        let properties: AnalyticsProperties = [
+            "method": .string(method),
             "compare_count": .int(comparedKindergartens.count),
-            "result": .string("initiated"),
+            "result": .string(result.rawValue),
+            "measurement_version": .string("completion_v2_2026-08-06"),
+        ]
+        analytics?.track(event: .compareShareResult, properties: properties)
+
+        // 기존 대시보드와의 연결을 유지하되, 성공으로 판단할 수 있는 결과에만 기록한다.
+        if result == .completed || result == .handoffSucceeded {
+            analytics?.track(event: .compareShared, properties: properties)
+        }
+    }
+
+    private func trackShareInitiated(method: String) {
+        analytics?.track(event: .compareShareInitiated, properties: [
+            "method": .string(method),
+            "compare_count": .int(comparedKindergartens.count),
+            "measurement_version": .string("completion_v2_2026-08-06"),
         ])
     }
 

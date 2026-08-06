@@ -1,8 +1,21 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 6,
   "kindergartenCount": 6,
   "reviews": {
+    "1ecec08c-f1ef-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-99852404",
+        "title": "서산초등학교 병설유치원 버블매직쇼 후기 버블타이거와...",
+        "url": "https://blog.naver.com/mcrstar/223927746501",
+        "source": "naver_blog",
+        "sourceName": "퍼니키즈컴퍼니",
+        "snippet": "서산초 병설유치원의 강당은 그날 하루 내내 웃음과 행복이 피어나는 공간이었습니다. 비눗방울은 사라졌지만 웃음은 남았다 비눗방울은 바람 속에서 스치듯 사라졌지만, 그날 서산초등학교 병설유치원에서...",
+        "date": "2025-07-10",
+        "collectedAt": "2026-01-30T03:07:15.999Z",
+        "kindergartenId": "1ecec08c-f1ef-b044-e053-0a32095ab044"
+      }
+    ],
     "1ecec08c-fb8b-b044-e053-0a32095ab044": [
       {
         "id": "rev-bca524f8",
@@ -58,57 +71,6 @@
         "approvedBy": "manual-sns-web-search"
       }
     ],
-    "1ecec08c-fbf1-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-ac21868f",
-        "kindergartenId": "1ecec08c-fbf1-b044-e053-0a32095ab044",
-        "title": "서산 삼성유치원 학부모참여수업 Instagram",
-        "url": "https://www.instagram.com/p/C8dQl_Ky992/",
-        "source": "other",
-        "sourceName": "Instagram · 서산 삼성유치원",
-        "snippet": "Instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "parent-participation",
-          "open-class"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-01T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-snippet",
-        "evidenceChecksum": "2389ed28",
-        "structuredFields": {
-          "kindergartenName": "삼성유치원",
-          "kindergartenAddress": "충청남도 서산시 남부순환로 767",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/C8dQl_Ky992/",
-          "normalizedUrl": "www.instagram.com/p/c8dql_ky992",
-          "normalizedText": "서산 삼성유치원 학부모참여수업 instagram instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
-          "htmlSnapshotHash": "2389ed28",
-          "extractedAt": "2026-07-01T00:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "삼성유치원",
-            "kindergartenAddress": "충청남도 서산시 남부순환로 767",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-01T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
     "1ecec08c-fbef-b044-e053-0a32095ab044": [
       {
         "id": "rev-a7cb1141",
@@ -159,6 +121,57 @@
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-02T12:20:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fbf1-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-ac21868f",
+        "kindergartenId": "1ecec08c-fbf1-b044-e053-0a32095ab044",
+        "title": "서산 삼성유치원 학부모참여수업 Instagram",
+        "url": "https://www.instagram.com/p/C8dQl_Ky992/",
+        "source": "other",
+        "sourceName": "Instagram · 서산 삼성유치원",
+        "snippet": "Instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "parent-participation",
+          "open-class"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-01T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-snippet",
+        "evidenceChecksum": "2389ed28",
+        "structuredFields": {
+          "kindergartenName": "삼성유치원",
+          "kindergartenAddress": "충청남도 서산시 남부순환로 767",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/C8dQl_Ky992/",
+          "normalizedUrl": "www.instagram.com/p/c8dql_ky992",
+          "normalizedText": "서산 삼성유치원 학부모참여수업 instagram instagram 검색 결과에서 서산, 삼성유치원, 학부모참여수업 문맥이 확인되는 게시물.",
+          "htmlSnapshotHash": "2389ed28",
+          "extractedAt": "2026-07-01T00:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "삼성유치원",
+            "kindergartenAddress": "충청남도 서산시 남부순환로 767",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22C8dQl_Ky992%22+%22%EC%84%9C%EC%82%B0%22+%22%EC%82%BC%EC%84%B1%EC%9C%A0%EC%B9%98%EC%9B%90%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
       }
     ],
@@ -252,18 +265,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
         "approvedBy": "codex-manual-sns-wave739"
-      }
-    ],
-    "1ecec08c-f1ef-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-99852404",
-        "title": "서산초등학교 병설유치원 버블매직쇼 후기 버블타이거와...",
-        "url": "https://blog.naver.com/mcrstar/223927746501",
-        "source": "naver_blog",
-        "sourceName": "퍼니키즈컴퍼니",
-        "snippet": "서산초 병설유치원의 강당은 그날 하루 내내 웃음과 행복이 피어나는 공간이었습니다. 비눗방울은 사라졌지만 웃음은 남았다 비눗방울은 바람 속에서 스치듯 사라졌지만, 그날 서산초등학교 병설유치원에서...",
-        "date": "2025-07-10",
-        "collectedAt": "2026-01-30T03:07:15.999Z"
       }
     ]
   }

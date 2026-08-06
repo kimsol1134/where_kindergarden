@@ -1,160 +1,135 @@
 {
-  "version": "2026-07-26",
+  "version": "2026-08-06",
   "totalCount": 19,
   "kindergartenCount": 8,
   "reviews": {
-    "1ecec08c-fbb3-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-110c9fb7",
-        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
-        "title": "칠곡 신영유치원 학부모 참여수업 Threads",
-        "url": "https://www.threads.com/@sinyoung_kindergarten/post/DFKxcoFSpTr",
-        "source": "other",
-        "sourceName": "Threads · @sinyoung_kindergarten",
-        "snippet": "칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 Threads 검색 결과.",
-        "summary": "칠곡 신영유치원의 학부모 참여수업 Threads 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "threads",
-          "official-info"
-        ],
-        "content": "칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 Threads 검색 결과. 공식 행사 소식 성격이나 학부모 참여수업 운영 정보를 보여주는 SNS 자료로 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T18:45:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "a71fc92b",
-        "structuredFields": {
-          "kindergartenName": "신영유치원",
-          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
-          "platform": "Threads",
-          "searchUrl": "https://www.google.com/search?q=%22DFKxcoFSpTr%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "북삼·칠곡유치원 문맥과 계정명으로 경북 칠곡 신영유치원에 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.threads.com/@sinyoung_kindergarten/post/DFKxcoFSpTr",
-          "normalizedUrl": "www.threads.com/@sinyoung_kindergarten/post/dfkxcofsptr",
-          "normalizedText": "칠곡 신영유치원 학부모 참여수업 threads 칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 threads 검색 결과. 칠곡 신영유치원의 학부모 참여수업 threads 검색 결과.",
-          "htmlSnapshotHash": "a71fc92b",
-          "extractedAt": "2026-06-30T18:45:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "신영유치원",
-            "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
-            "platform": "Threads",
-            "searchUrl": "https://www.google.com/search?q=%22DFKxcoFSpTr%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "북삼·칠곡유치원 문맥과 계정명으로 경북 칠곡 신영유치원에 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T18:45:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-08aca222",
-        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
-        "title": "칠곡 신영유치원 예비학부모 설명회 SNS",
-        "url": "https://www.instagram.com/p/DXG9E2pH7XD/",
-        "source": "other",
-        "sourceName": "Instagram · @sinyoung_kindergarten",
-        "snippet": "칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 Instagram 검색 결과.",
-        "summary": "칠곡 신영유치원의 예비학부모 설명회 Instagram 검색 결과.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "official-info"
-        ],
-        "content": "칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 Instagram 검색 결과. 공식 안내 성격이지만 예비 학부모 설명회 정보로 수동 반영했다.",
-        "date": null,
-        "collectedAt": "2026-06-30T18:45:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "6d85fb91",
-        "structuredFields": {
-          "kindergartenName": "신영유치원",
-          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXG9E2pH7XD%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "계정명과 칠곡 문맥으로 경북 칠곡 신영유치원에 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DXG9E2pH7XD/",
-          "normalizedUrl": "www.instagram.com/p/dxg9e2ph7xd",
-          "normalizedText": "칠곡 신영유치원 예비학부모 설명회 sns 칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 instagram 검색 결과. 칠곡 신영유치원의 예비학부모 설명회 instagram 검색 결과.",
-          "htmlSnapshotHash": "6d85fb91",
-          "extractedAt": "2026-06-30T18:45:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "신영유치원",
-            "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DXG9E2pH7XD%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "계정명과 칠곡 문맥으로 경북 칠곡 신영유치원에 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-06-30T18:45:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-a289412f",
-        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
-        "kindergartenName": "신영유치원",
-        "title": "신영유치원 숲놀이 Instagram Post",
-        "url": "https://www.instagram.com/p/DXI9f2sEf4l/",
-        "source": "other",
-        "sourceName": "Instagram · 신영유치원",
-        "snippet": "Instagram 검색 결과에서 신영유치원 신영숲어린이집, 숲교육 칠곡, 숲에서 자라는 아이들, 숲놀이 문맥이 확인되는 게시물.",
-        "date": null,
-        "collectedAt": "2026-07-02T00:00:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:instagram-post-snippet",
-        "tags": [
-          "sns",
-          "instagram",
-          "address-not-required",
-          "outdoor-activity",
-          "kindergarten-life"
-        ],
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T00:00:00.000Z",
-        "approvedBy": "manual-sns-web-search",
-        "structuredFields": {
-          "kindergartenName": "신영유치원",
-          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DXI9f2sEf4l%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "canonicalUrl": "https://www.instagram.com/p/DXI9f2sEf4l/",
-          "regionEvidence": [
-            "신영유치원",
-            "신영숲어린이집",
-            "숲교육 칠곡",
-            "숲놀이",
-            "숲에서 자라는 아이들"
-          ]
-        },
-        "evidenceChecksum": "e3513262"
-      }
-    ],
     "1ecec08c-eedb-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-sns-wave722-8bbfbc57",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "칠곡 무지개유치원 양떼목장 참여행사 기록",
+        "url": "https://www.instagram.com/p/DX6-O8fkaro/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개유치원",
+        "snippet": "경북 무지개유치원 친구들이 칠곡양떼목장에서 양떼목장 견학과 참여행사를 진행한 게시물입니다.",
+        "summary": "유아와 가족이 목장에서 동물과 교감하는 체험형 행사를 기록한 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "farm",
+          "animals",
+          "field-trip",
+          "chilgok"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave722-8bbfbc57",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DX6-O8fkaro/",
+          "normalizedUrl": "instagram.com/p/dx6-o8fkaro",
+          "normalizedText": "무지개유치원 경북 칠곡양떼목장 학부모참여행사 양떼목장견학",
+          "htmlSnapshotHash": "sns-wave722-8bbfbc57",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DX6-O8fkaro/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave722"
+      },
+      {
+        "id": "rev-sns-wave740-0921300b",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "경북 칠곡 무지개유치원 물길놀이 기록",
+        "url": "https://www.instagram.com/reel/DaP8qz5JwUl/",
+        "source": "other",
+        "sourceName": "Instagram · 석적무지개유치원",
+        "snippet": "석적무지개유치원이 여름을 맞아 물길놀이와 야외 물놀이 활동을 진행한 릴스입니다.",
+        "summary": "경북 칠곡 무지개유치원의 여름 물길놀이 활동을 확인할 수 있는 원문입니다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "water-play",
+          "summer-activity",
+          "gyeongbuk"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave740-0921300b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/",
+          "normalizedUrl": "instagram.com/reel/dap8qz5jwul",
+          "normalizedText": "경북 칠곡 석적무지개유치원 물길놀이 여름 물놀이",
+          "htmlSnapshotHash": "sns-wave740-0921300b",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave740"
+      },
+      {
+        "id": "rev-fbf816e9",
+        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
+        "title": "칠곡 석적 무지개유치원 통학버스 안전교육 Instagram Post",
+        "url": "https://www.instagram.com/p/DHNxZTUReGJ/",
+        "source": "other",
+        "sourceName": "Instagram · 무지개유치원",
+        "snippet": "검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "safety",
+          "school-bus"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "fbf816e9",
+        "structuredFields": {
+          "kindergartenName": "무지개유치원",
+          "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DHNxZTUReGJ/",
+          "normalizedUrl": "instagram.com/p/dhnxzturegj",
+          "normalizedText": "칠곡 석적 무지개유치원 통학버스 안전교육 instagram post 검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+          "htmlSnapshotHash": "fbf816e9",
+          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "무지개유치원",
+            "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-411564e5",
         "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
@@ -309,112 +284,115 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-06-30T23:59:59.999Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08c-f272-b044-e053-0a32095ab044": [
       {
-        "id": "rev-fbf816e9",
-        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
-        "title": "칠곡 석적 무지개유치원 통학버스 안전교육 Instagram Post",
-        "url": "https://www.instagram.com/p/DHNxZTUReGJ/",
+        "id": "rev-sns-wave694-a489a46b",
+        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
+        "title": "칠곡 신비유치원 생일밥상 기록",
+        "url": "https://www.instagram.com/p/DVnQ0Ocktsi/",
         "source": "other",
-        "sourceName": "Instagram · 무지개유치원",
-        "snippet": "검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
+        "sourceName": "Instagram · 신비유치원",
+        "snippet": "신비유치원이 생일을 맞은 유아를 위해 생일밥상을 준비한 모습을 담은 공개 게시물입니다.",
+        "summary": "생일상과 식사 시간을 통해 아이의 특별한 날을 기념하는 유치원 생활 모습을 확인할 수 있는 SNS 원문입니다.",
         "tags": [
           "sns",
           "search-snippet",
           "address-not-required",
           "instagram",
-          "safety",
-          "school-bus"
+          "birthday-party",
+          "meal",
+          "chilgok"
         ],
         "date": null,
-        "collectedAt": "2026-07-03T09:10:00.000Z",
+        "collectedAt": "2026-07-03T23:59:59.950Z",
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "sns-wave694-a489a46b",
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/",
+          "normalizedUrl": "instagram.com/p/dvnq0ocktsi",
+          "normalizedText": "신비유치원 경북 칠곡 생일밥상 생일 축하",
+          "htmlSnapshotHash": "sns-wave694-a489a46b",
+          "extractedAt": "2026-07-03T23:59:59.950Z",
+          "sourcePageUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/"
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-03T23:59:59.950Z",
+        "approvedBy": "codex-manual-sns-wave694"
+      },
+      {
+        "id": "rev-0a6db4ca",
+        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
+        "kindergartenName": "신비유치원",
+        "title": "칠곡 신비유치원 칠곡보건소 구강검진 Instagram Post",
+        "url": "https://www.instagram.com/p/DJN5y2ESEQ-/",
+        "source": "other",
+        "sourceName": "Instagram · 신비유치원",
+        "snippet": "신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "dental",
+          "health-check"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T23:59:55.000Z",
         "relevanceScore": 2,
         "accessMode": "public",
         "evidenceType": "structured_list_row",
         "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "fbf816e9",
+        "evidenceChecksum": "0a6db4ca",
         "structuredFields": {
-          "kindergartenName": "무지개유치원",
-          "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+          "kindergartenName": "신비유치원",
+          "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
           "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+          "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
           "addressEvidenceRequired": false,
           "snippetOnly": true,
-          "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+          "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
         },
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DHNxZTUReGJ/",
-          "normalizedUrl": "instagram.com/p/dhnxzturegj",
-          "normalizedText": "칠곡 석적 무지개유치원 통학버스 안전교육 instagram post 검색 결과에서 무지개 통학버스 안전교육, #경북 #칠곡 #석적 #무지개유치원 #석적무지개유치원 단서가 확인된다.",
-          "htmlSnapshotHash": "fbf816e9",
-          "extractedAt": "2026-07-03T09:10:00.000Z",
+          "canonicalUrl": "https://www.instagram.com/p/DJN5y2ESEQ-/",
+          "normalizedUrl": "www.instagram.com/p/djn5y2eseq-",
+          "normalizedText": "칠곡 신비유치원 칠곡보건소 구강검진 instagram post 신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
+          "htmlSnapshotHash": "0a6db4ca",
+          "extractedAt": "2026-07-02T23:59:55.000Z",
           "structuredFields": {
-            "kindergartenName": "무지개유치원",
-            "kindergartenAddress": "경상북도 칠곡군 동중리2길 16",
+            "kindergartenName": "신비유치원",
+            "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
             "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DHNxZTUReGJ%22%20%22%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%22%20%22%ED%86%B5%ED%95%99%EB%B2%84%EC%8A%A4%20%EC%95%88%EC%A0%84%EA%B5%90%EC%9C%A1%22",
+            "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
             "addressEvidenceRequired": false,
             "snippetOnly": true,
-            "snippetCaveat": "무지개유치원은 동명이 많으나 경북/칠곡/석적 단서가 로컬 칠곡군 주소와 일치해 수동 매칭했다."
+            "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
           }
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T09:10:00.000Z",
+        "approvedAt": "2026-07-02T23:59:55.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08c-fb9b-b044-e053-0a32095ab044": [
       {
-        "id": "rev-sns-wave722-8bbfbc57",
-        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
-        "title": "칠곡 무지개유치원 양떼목장 참여행사 기록",
-        "url": "https://www.instagram.com/p/DX6-O8fkaro/",
+        "id": "rev-sns-wave749-61d81c45",
+        "kindergartenId": "1ecec08c-fb9b-b044-e053-0a32095ab044",
+        "title": "칠곡 낙산초병설유치원 숲놀이 현장체험학습 기록",
+        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
         "source": "other",
-        "sourceName": "Instagram · 무지개유치원",
-        "snippet": "경북 무지개유치원 친구들이 칠곡양떼목장에서 양떼목장 견학과 참여행사를 진행한 게시물입니다.",
-        "summary": "유아와 가족이 목장에서 동물과 교감하는 체험형 행사를 기록한 원문입니다.",
+        "sourceName": "경북일보",
+        "snippet": "낙산초등학교병설유치원이 국립칠곡숲체원에서 숲놀이 현장체험학습을 운영했다는 공개 기사입니다.",
+        "summary": "경북 칠곡 낙산초등학교병설유치원의 생태체험과 지속가능발전교육 활동을 확인할 수 있는 원문입니다.",
         "tags": [
-          "sns",
-          "search-snippet",
+          "web",
+          "news",
           "address-not-required",
-          "instagram",
-          "farm",
-          "animals",
+          "forest-play",
           "field-trip",
-          "chilgok"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave722-8bbfbc57",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DX6-O8fkaro/",
-          "normalizedUrl": "instagram.com/p/dx6-o8fkaro",
-          "normalizedText": "무지개유치원 경북 칠곡양떼목장 학부모참여행사 양떼목장견학",
-          "htmlSnapshotHash": "sns-wave722-8bbfbc57",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DX6-O8fkaro/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave722"
-      },
-      {
-        "id": "rev-sns-wave740-0921300b",
-        "kindergartenId": "1ecec08c-eedb-b044-e053-0a32095ab044",
-        "title": "경북 칠곡 무지개유치원 물길놀이 기록",
-        "url": "https://www.instagram.com/reel/DaP8qz5JwUl/",
-        "source": "other",
-        "sourceName": "Instagram · 석적무지개유치원",
-        "snippet": "석적무지개유치원이 여름을 맞아 물길놀이와 야외 물놀이 활동을 진행한 릴스입니다.",
-        "summary": "경북 칠곡 무지개유치원의 여름 물길놀이 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "water-play",
-          "summer-activity",
           "gyeongbuk"
         ],
         "date": null,
@@ -422,22 +400,279 @@
         "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave740-0921300b",
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave749-61d81c45",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/",
-          "normalizedUrl": "instagram.com/reel/dap8qz5jwul",
-          "normalizedText": "경북 칠곡 석적무지개유치원 물길놀이 여름 물놀이",
-          "htmlSnapshotHash": "sns-wave740-0921300b",
+          "canonicalUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
+          "normalizedUrl": "kyongbuk.co.kr/news/articleview.html?idxno=4075120",
+          "normalizedText": "칠곡 낙산초등학교병설유치원 국립칠곡숲체원 숲놀이 현장체험학습",
+          "htmlSnapshotHash": "sns-wave749-61d81c45",
           "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.instagram.com/reel/DaP8qz5JwUl/"
+          "sourcePageUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120"
         },
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave740"
+        "approvedBy": "codex-manual-sns-wave749"
+      }
+    ],
+    "1ecec08c-fbb3-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-a289412f",
+        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
+        "kindergartenName": "신영유치원",
+        "title": "신영유치원 숲놀이 Instagram Post",
+        "url": "https://www.instagram.com/p/DXI9f2sEf4l/",
+        "source": "other",
+        "sourceName": "Instagram · 신영유치원",
+        "snippet": "Instagram 검색 결과에서 신영유치원 신영숲어린이집, 숲교육 칠곡, 숲에서 자라는 아이들, 숲놀이 문맥이 확인되는 게시물.",
+        "date": null,
+        "collectedAt": "2026-07-02T00:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:instagram-post-snippet",
+        "tags": [
+          "sns",
+          "instagram",
+          "address-not-required",
+          "outdoor-activity",
+          "kindergarten-life"
+        ],
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T00:00:00.000Z",
+        "approvedBy": "manual-sns-web-search",
+        "structuredFields": {
+          "kindergartenName": "신영유치원",
+          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXI9f2sEf4l%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "canonicalUrl": "https://www.instagram.com/p/DXI9f2sEf4l/",
+          "regionEvidence": [
+            "신영유치원",
+            "신영숲어린이집",
+            "숲교육 칠곡",
+            "숲놀이",
+            "숲에서 자라는 아이들"
+          ]
+        },
+        "evidenceChecksum": "e3513262"
+      },
+      {
+        "id": "rev-08aca222",
+        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
+        "title": "칠곡 신영유치원 예비학부모 설명회 SNS",
+        "url": "https://www.instagram.com/p/DXG9E2pH7XD/",
+        "source": "other",
+        "sourceName": "Instagram · @sinyoung_kindergarten",
+        "snippet": "칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 Instagram 검색 결과.",
+        "summary": "칠곡 신영유치원의 예비학부모 설명회 Instagram 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "official-info"
+        ],
+        "content": "칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 Instagram 검색 결과. 공식 안내 성격이지만 예비 학부모 설명회 정보로 수동 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "6d85fb91",
+        "structuredFields": {
+          "kindergartenName": "신영유치원",
+          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22DXG9E2pH7XD%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "계정명과 칠곡 문맥으로 경북 칠곡 신영유치원에 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/DXG9E2pH7XD/",
+          "normalizedUrl": "www.instagram.com/p/dxg9e2ph7xd",
+          "normalizedText": "칠곡 신영유치원 예비학부모 설명회 sns 칠곡 신영유치원 예비학부모 대상 설명회와 원아 모집 문맥이 확인되는 instagram 검색 결과. 칠곡 신영유치원의 예비학부모 설명회 instagram 검색 결과.",
+          "htmlSnapshotHash": "6d85fb91",
+          "extractedAt": "2026-06-30T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신영유치원",
+            "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22DXG9E2pH7XD%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "계정명과 칠곡 문맥으로 경북 칠곡 신영유치원에 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
+      {
+        "id": "rev-110c9fb7",
+        "kindergartenId": "1ecec08c-fbb3-b044-e053-0a32095ab044",
+        "title": "칠곡 신영유치원 학부모 참여수업 Threads",
+        "url": "https://www.threads.com/@sinyoung_kindergarten/post/DFKxcoFSpTr",
+        "source": "other",
+        "sourceName": "Threads · @sinyoung_kindergarten",
+        "snippet": "칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 Threads 검색 결과.",
+        "summary": "칠곡 신영유치원의 학부모 참여수업 Threads 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "threads",
+          "official-info"
+        ],
+        "content": "칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 Threads 검색 결과. 공식 행사 소식 성격이나 학부모 참여수업 운영 정보를 보여주는 SNS 자료로 반영했다.",
+        "date": null,
+        "collectedAt": "2026-06-30T18:45:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "a71fc92b",
+        "structuredFields": {
+          "kindergartenName": "신영유치원",
+          "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
+          "platform": "Threads",
+          "searchUrl": "https://www.google.com/search?q=%22DFKxcoFSpTr%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "북삼·칠곡유치원 문맥과 계정명으로 경북 칠곡 신영유치원에 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.threads.com/@sinyoung_kindergarten/post/DFKxcoFSpTr",
+          "normalizedUrl": "www.threads.com/@sinyoung_kindergarten/post/dfkxcofsptr",
+          "normalizedText": "칠곡 신영유치원 학부모 참여수업 threads 칠곡 신영유치원 4세 학부모 참여수업과 북삼·칠곡유치원 해시태그가 확인되는 threads 검색 결과. 칠곡 신영유치원의 학부모 참여수업 threads 검색 결과.",
+          "htmlSnapshotHash": "a71fc92b",
+          "extractedAt": "2026-06-30T18:45:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "신영유치원",
+            "kindergartenAddress": "경상북도 칠곡군 무림3길 16-20",
+            "platform": "Threads",
+            "searchUrl": "https://www.google.com/search?q=%22DFKxcoFSpTr%22+%22%EC%8B%A0%EC%98%81%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%B9%A0%EA%B3%A1%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "북삼·칠곡유치원 문맥과 계정명으로 경북 칠곡 신영유치원에 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-06-30T18:45:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      }
+    ],
+    "1ecec08c-fc0e-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-e8830e57",
+        "kindergartenId": "1ecec08c-fc0e-b044-e053-0a32095ab044",
+        "kindergartenName": "아람유치원",
+        "title": "칠곡 아람유치원 경북 119소방동요경연 X Post",
+        "url": "https://x.com/chilgok119/status/877348668973633536",
+        "source": "other",
+        "sourceName": "X · 칠곡소방서",
+        "snippet": "칠곡소방서 X 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "x",
+          "fire-safety",
+          "public-safety-event"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T21:15:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "e8830e57",
+        "structuredFields": {
+          "kindergartenName": "아람유치원",
+          "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
+          "platform": "X",
+          "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://x.com/chilgok119/status/877348668973633536",
+          "normalizedUrl": "x.com/chilgok119/status/877348668973633536",
+          "normalizedText": "칠곡 아람유치원 경북 119소방동요경연 x post 칠곡소방서 x 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
+          "htmlSnapshotHash": "e8830e57",
+          "extractedAt": "2026-07-02T21:15:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "아람유치원",
+            "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
+            "platform": "X",
+            "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T21:15:00.000Z",
+        "approvedBy": "manual-sns-web-search"
       }
     ],
     "1ecec08d-075c-b044-e053-0a32095ab044": [
+      {
+        "id": "rev-234d66fa",
+        "kindergartenId": "1ecec08d-075c-b044-e053-0a32095ab044",
+        "title": "칠곡 바움유치원 배수확체험 Instagram Post",
+        "url": "https://www.instagram.com/p/CyNfbQbRLLe/",
+        "source": "other",
+        "sourceName": "Instagram · 바움유치원_석적",
+        "snippet": "바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "tags": [
+          "sns",
+          "search-snippet",
+          "address-not-required",
+          "instagram",
+          "pear-picking"
+        ],
+        "date": null,
+        "collectedAt": "2026-07-02T14:00:00.000Z",
+        "relevanceScore": 2,
+        "accessMode": "public",
+        "evidenceType": "structured_list_row",
+        "extractionMethod": "sns-search:web-search-snippet",
+        "evidenceChecksum": "5331ba02",
+        "structuredFields": {
+          "kindergartenName": "바움유치원",
+          "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
+          "platform": "Instagram",
+          "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
+          "addressEvidenceRequired": false,
+          "snippetOnly": true,
+          "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
+        },
+        "evidence": {
+          "canonicalUrl": "https://www.instagram.com/p/CyNfbQbRLLe/",
+          "normalizedUrl": "www.instagram.com/p/cynfbqbrlle",
+          "normalizedText": "칠곡 바움유치원 배수확체험 instagram post 바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 instagram 게시물 검색 결과.",
+          "htmlSnapshotHash": "5331ba02",
+          "extractedAt": "2026-07-02T14:00:00.000Z",
+          "structuredFields": {
+            "kindergartenName": "바움유치원",
+            "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
+            "platform": "Instagram",
+            "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
+            "addressEvidenceRequired": false,
+            "snippetOnly": true,
+            "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
+          }
+        },
+        "approvalStatus": "approved",
+        "approvedAt": "2026-07-02T14:00:00.000Z",
+        "approvedBy": "manual-sns-web-search"
+      },
       {
         "id": "rev-9cd9eda0",
         "kindergartenId": "1ecec08d-075c-b044-e053-0a32095ab044",
@@ -535,57 +770,44 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-01T00:00:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      },
+      }
+    ],
+    "1ecec08d-0802-b044-e053-0a32095ab044": [
       {
-        "id": "rev-234d66fa",
-        "kindergartenId": "1ecec08d-075c-b044-e053-0a32095ab044",
-        "title": "칠곡 바움유치원 배수확체험 Instagram Post",
-        "url": "https://www.instagram.com/p/CyNfbQbRLLe/",
+        "id": "rev-sns-wave750-32b2cfaf",
+        "kindergartenId": "1ecec08d-0802-b044-e053-0a32095ab044",
+        "title": "칠곡 왜관동부초병설유치원 지진대피훈련 기록",
+        "url": "https://www.dkitnews.com/469452",
         "source": "other",
-        "sourceName": "Instagram · 바움유치원_석적",
-        "snippet": "바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 Instagram 게시물 검색 결과.",
+        "sourceName": "경북다경뉴스",
+        "snippet": "왜관동부초등학교병설유치원이 유아와 교원을 대상으로 지진대피훈련을 실시했다는 공개 기사입니다.",
+        "summary": "경북 칠곡 왜관동부초등학교병설유치원의 지진대피훈련과 재난안전교육을 확인할 수 있는 원문입니다.",
         "tags": [
-          "sns",
-          "search-snippet",
+          "web",
+          "news",
           "address-not-required",
-          "instagram",
-          "pear-picking"
+          "earthquake-drill",
+          "safety-education",
+          "gyeongbuk"
         ],
         "date": null,
-        "collectedAt": "2026-07-02T14:00:00.000Z",
-        "relevanceScore": 2,
+        "collectedAt": "2026-07-03T23:59:59.999Z",
+        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
         "accessMode": "public",
         "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "5331ba02",
-        "structuredFields": {
-          "kindergartenName": "바움유치원",
-          "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
-        },
+        "extractionMethod": "web-search:news-snippet",
+        "evidenceChecksum": "sns-wave750-32b2cfaf",
         "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/CyNfbQbRLLe/",
-          "normalizedUrl": "www.instagram.com/p/cynfbqbrlle",
-          "normalizedText": "칠곡 바움유치원 배수확체험 instagram post 바움유치원_석적 계정에서 칠곡, 석적, 중리, 바움유치원과 배수확체험 문맥이 확인되는 instagram 게시물 검색 결과.",
-          "htmlSnapshotHash": "5331ba02",
-          "extractedAt": "2026-07-02T14:00:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "바움유치원",
-            "kindergartenAddress": "경상북도 칠곡군 남중리6길 7",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22CyNfbQbRLLe%22+%22%EB%B0%94%EC%9B%80%EC%9C%A0%EC%B9%98%EC%9B%90%22+%22%EC%84%9D%EC%A0%81%22+%22%EB%B0%B0%EC%88%98%ED%99%95%EC%B2%B4%ED%97%98%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "바움유치원 동명이 있으나 석적, 칠곡, 중리 단서가 경북 칠곡 로컬 주소와 일치해 수동 매칭했다."
-          }
+          "canonicalUrl": "https://www.dkitnews.com/469452",
+          "normalizedUrl": "dkitnews.com/469452",
+          "normalizedText": "칠곡 왜관동부초등학교병설유치원 지진대피훈련",
+          "htmlSnapshotHash": "sns-wave750-32b2cfaf",
+          "extractedAt": "2026-07-03T23:59:59.999Z",
+          "sourcePageUrl": "https://www.dkitnews.com/469452"
         },
         "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T14:00:00.000Z",
-        "approvedBy": "manual-sns-web-search"
+        "approvedAt": "2026-07-03T23:59:59.999Z",
+        "approvedBy": "codex-manual-sns-wave750"
       }
     ],
     "1ecec08d-0cc9-b044-e053-0a32095ab044": [
@@ -681,228 +903,6 @@
         "approvalStatus": "approved",
         "approvedAt": "2026-07-03T16:20:00.000Z",
         "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-fc0e-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-e8830e57",
-        "kindergartenId": "1ecec08c-fc0e-b044-e053-0a32095ab044",
-        "kindergartenName": "아람유치원",
-        "title": "칠곡 아람유치원 경북 119소방동요경연 X Post",
-        "url": "https://x.com/chilgok119/status/877348668973633536",
-        "source": "other",
-        "sourceName": "X · 칠곡소방서",
-        "snippet": "칠곡소방서 X 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "x",
-          "fire-safety",
-          "public-safety-event"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T21:15:00.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "e8830e57",
-        "structuredFields": {
-          "kindergartenName": "아람유치원",
-          "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
-          "platform": "X",
-          "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://x.com/chilgok119/status/877348668973633536",
-          "normalizedUrl": "x.com/chilgok119/status/877348668973633536",
-          "normalizedText": "칠곡 아람유치원 경북 119소방동요경연 x post 칠곡소방서 x 검색 결과에서 아람유치원 어린이들이 제17회 경북 119소방동요경연대회에서 칠곡소방서 대표 유치부 은상을 수상한 단서가 확인된다.",
-          "htmlSnapshotHash": "e8830e57",
-          "extractedAt": "2026-07-02T21:15:00.000Z",
-          "structuredFields": {
-            "kindergartenName": "아람유치원",
-            "kindergartenAddress": "경상북도 칠곡군 남중리1길 18",
-            "platform": "X",
-            "searchUrl": "https://www.google.com/search?q=%22877348668973633536%22%20%22%EC%95%84%EB%9E%8C%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%EC%86%8C%EB%B0%A9%EC%84%9C%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "칠곡소방서 단서와 로컬 칠곡 아람유치원 원장부 매칭을 기준으로 수동 반영했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T21:15:00.000Z",
-        "approvedBy": "manual-sns-web-search"
-      }
-    ],
-    "1ecec08c-f272-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-0a6db4ca",
-        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
-        "kindergartenName": "신비유치원",
-        "title": "칠곡 신비유치원 칠곡보건소 구강검진 Instagram Post",
-        "url": "https://www.instagram.com/p/DJN5y2ESEQ-/",
-        "source": "other",
-        "sourceName": "Instagram · 신비유치원",
-        "snippet": "신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "dental",
-          "health-check"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-02T23:59:55.000Z",
-        "relevanceScore": 2,
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "0a6db4ca",
-        "structuredFields": {
-          "kindergartenName": "신비유치원",
-          "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
-          "platform": "Instagram",
-          "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
-          "addressEvidenceRequired": false,
-          "snippetOnly": true,
-          "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
-        },
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DJN5y2ESEQ-/",
-          "normalizedUrl": "www.instagram.com/p/djn5y2eseq-",
-          "normalizedText": "칠곡 신비유치원 칠곡보건소 구강검진 instagram post 신비유치원 계정 게시물 검색 결과에서 칠곡 보건소에서 구강검진과 불소 도포를 받은 단서가 확인된다.",
-          "htmlSnapshotHash": "0a6db4ca",
-          "extractedAt": "2026-07-02T23:59:55.000Z",
-          "structuredFields": {
-            "kindergartenName": "신비유치원",
-            "kindergartenAddress": "경상북도 칠곡군 관호11길 10-11",
-            "platform": "Instagram",
-            "searchUrl": "https://www.google.com/search?q=%22DJN5y2ESEQ-%22%20%22%EC%8B%A0%EB%B9%84%EC%9C%A0%EC%B9%98%EC%9B%90%22%20%22%EC%B9%A0%EA%B3%A1%20%EB%B3%B4%EA%B1%B4%EC%86%8C%22",
-            "addressEvidenceRequired": false,
-            "snippetOnly": true,
-            "snippetCaveat": "신비유치원은 로컬 원장부에서 단일 명칭이며 칠곡 보건소 단서와 지역이 일치해 수동 매칭했다."
-          }
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-02T23:59:55.000Z",
-        "approvedBy": "manual-sns-web-search"
-      },
-      {
-        "id": "rev-sns-wave694-a489a46b",
-        "kindergartenId": "1ecec08c-f272-b044-e053-0a32095ab044",
-        "title": "칠곡 신비유치원 생일밥상 기록",
-        "url": "https://www.instagram.com/p/DVnQ0Ocktsi/",
-        "source": "other",
-        "sourceName": "Instagram · 신비유치원",
-        "snippet": "신비유치원이 생일을 맞은 유아를 위해 생일밥상을 준비한 모습을 담은 공개 게시물입니다.",
-        "summary": "생일상과 식사 시간을 통해 아이의 특별한 날을 기념하는 유치원 생활 모습을 확인할 수 있는 SNS 원문입니다.",
-        "tags": [
-          "sns",
-          "search-snippet",
-          "address-not-required",
-          "instagram",
-          "birthday-party",
-          "meal",
-          "chilgok"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.950Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "sns-search:web-search-snippet",
-        "evidenceChecksum": "sns-wave694-a489a46b",
-        "evidence": {
-          "canonicalUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/",
-          "normalizedUrl": "instagram.com/p/dvnq0ocktsi",
-          "normalizedText": "신비유치원 경북 칠곡 생일밥상 생일 축하",
-          "htmlSnapshotHash": "sns-wave694-a489a46b",
-          "extractedAt": "2026-07-03T23:59:59.950Z",
-          "sourcePageUrl": "https://www.instagram.com/p/DVnQ0Ocktsi/"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.950Z",
-        "approvedBy": "codex-manual-sns-wave694"
-      }
-    ],
-    "1ecec08c-fb9b-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave749-61d81c45",
-        "kindergartenId": "1ecec08c-fb9b-b044-e053-0a32095ab044",
-        "title": "칠곡 낙산초병설유치원 숲놀이 현장체험학습 기록",
-        "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
-        "source": "other",
-        "sourceName": "경북일보",
-        "snippet": "낙산초등학교병설유치원이 국립칠곡숲체원에서 숲놀이 현장체험학습을 운영했다는 공개 기사입니다.",
-        "summary": "경북 칠곡 낙산초등학교병설유치원의 생태체험과 지속가능발전교육 활동을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "web",
-          "news",
-          "address-not-required",
-          "forest-play",
-          "field-trip",
-          "gyeongbuk"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "web-search:news-snippet",
-        "evidenceChecksum": "sns-wave749-61d81c45",
-        "evidence": {
-          "canonicalUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120",
-          "normalizedUrl": "kyongbuk.co.kr/news/articleview.html?idxno=4075120",
-          "normalizedText": "칠곡 낙산초등학교병설유치원 국립칠곡숲체원 숲놀이 현장체험학습",
-          "htmlSnapshotHash": "sns-wave749-61d81c45",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075120"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave749"
-      }
-    ],
-    "1ecec08d-0802-b044-e053-0a32095ab044": [
-      {
-        "id": "rev-sns-wave750-32b2cfaf",
-        "kindergartenId": "1ecec08d-0802-b044-e053-0a32095ab044",
-        "title": "칠곡 왜관동부초병설유치원 지진대피훈련 기록",
-        "url": "https://www.dkitnews.com/469452",
-        "source": "other",
-        "sourceName": "경북다경뉴스",
-        "snippet": "왜관동부초등학교병설유치원이 유아와 교원을 대상으로 지진대피훈련을 실시했다는 공개 기사입니다.",
-        "summary": "경북 칠곡 왜관동부초등학교병설유치원의 지진대피훈련과 재난안전교육을 확인할 수 있는 원문입니다.",
-        "tags": [
-          "web",
-          "news",
-          "address-not-required",
-          "earthquake-drill",
-          "safety-education",
-          "gyeongbuk"
-        ],
-        "date": null,
-        "collectedAt": "2026-07-03T23:59:59.999Z",
-        "lastUpdatedAt": "2026-07-03T23:59:59.999Z",
-        "accessMode": "public",
-        "evidenceType": "structured_list_row",
-        "extractionMethod": "web-search:news-snippet",
-        "evidenceChecksum": "sns-wave750-32b2cfaf",
-        "evidence": {
-          "canonicalUrl": "https://www.dkitnews.com/469452",
-          "normalizedUrl": "dkitnews.com/469452",
-          "normalizedText": "칠곡 왜관동부초등학교병설유치원 지진대피훈련",
-          "htmlSnapshotHash": "sns-wave750-32b2cfaf",
-          "extractedAt": "2026-07-03T23:59:59.999Z",
-          "sourcePageUrl": "https://www.dkitnews.com/469452"
-        },
-        "approvalStatus": "approved",
-        "approvedAt": "2026-07-03T23:59:59.999Z",
-        "approvedBy": "codex-manual-sns-wave750"
       }
     ]
   }

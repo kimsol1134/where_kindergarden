@@ -2,7 +2,7 @@
  * 카카오톡 공유 기능
  */
 import type { KakaoShareFeedOptions } from '@/types/kakao.d';
-import { SITE_URL, TOTAL_KINDERGARTEN_COUNT, OG_IMAGE } from '@/lib/constants';
+import { SITE_URL, OG_IMAGE } from '@/lib/constants';
 
 interface ShareToKakaoParams {
   title: string;
@@ -49,9 +49,6 @@ export function shareToKakao({
         mobileWebUrl: url,
         webUrl: url,
       },
-    },
-    social: {
-      viewCount: TOTAL_KINDERGARTEN_COUNT,
     },
     buttons: [
       {

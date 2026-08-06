@@ -95,7 +95,7 @@ export function Footer() {
               className="h-auto w-16"
             />
             <p className="text-xs leading-relaxed text-[var(--brand-ink-soft)]/60">
-              본 저작물은 &apos;교육부&apos;에서 &apos;2026년&apos; 작성하여 공공누리 제1유형으로 개방한
+              본 저작물은 &apos;교육부&apos;에서 &apos;{DATA_VERSION.year}년&apos; 작성하여 공공누리 제1유형으로 개방한
               &apos;전국유치원표준데이터&apos;를 이용하였으며, 해당 저작물은{' '}
               <a
                 href="https://e-childschoolinfo.moe.go.kr"
@@ -123,7 +123,9 @@ export function Footer() {
                 </a>
                 . All rights reserved.
               </p>
-              <p className="text-[var(--brand-ink-soft)]/60">데이터 기준: {DATA_VERSION.label}</p>
+              <p className="text-[var(--brand-ink-soft)]/60">
+                데이터 기준: {DATA_VERSION.label} · {DATA_VERSION.updatedAt}
+              </p>
               <p className="text-[var(--brand-ink-soft)]/60">
                 데이터 출처:{' '}
                 <a

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import X from 'lucide-react/dist/esm/icons/x';
 import Phone from 'lucide-react/dist/esm/icons/phone';
@@ -27,6 +27,8 @@ import { ChartErrorBoundary } from './ChartErrorBoundary';
 import { useCompareStore, useFavoriteStore, useReviewStore, useVacancyStore } from '@/stores';
 import { ReviewLinkList } from '@/components/review/ReviewLinkList';
 import { ReviewPreview } from '@/components/review/ReviewPreview';
+import { BodyPortal } from '@/components/common/BodyPortal';
+import { useOverlayFocus } from '@/hooks/useOverlayFocus';
 
 function ChartSkeleton() {
   return (
@@ -114,7 +116,27 @@ export function KindergartenDetailPanel({
   canAddToCompare,
 }: KindergartenDetailPanelProps) {
   const [activeTab, setActiveTab] = useState<DetailTab>('info');
+  const [isMobilePresentation, setIsMobilePresentation] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
   const typeStyle = TYPE_STYLES[kindergarten.type];
+
+  useEffect(() => {
+    if (typeof window.matchMedia !== 'function') return;
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const updatePresentation = () => setIsMobilePresentation(mediaQuery.matches);
+    updatePresentation();
+    mediaQuery.addEventListener('change', updatePresentation);
+    return () => mediaQuery.removeEventListener('change', updatePresentation);
+  }, []);
+
+  useOverlayFocus({
+    active: true,
+    containerRef: panelRef,
+    initialFocusRef: closeButtonRef,
+    onClose,
+    trapFocus: isMobilePresentation,
+  });
 
   // CompareFloatingBar가 표시되는지 확인 (비교함에 아이템이 있을 때)
   const compareItems = useCompareStore((state) => state.items);
@@ -213,22 +235,35 @@ export function KindergartenDetailPanel({
   }
 
   return (
-    <>
+    <BodyPortal>
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/30 z-40 md:hidden"
         onClick={onClose}
+        aria-hidden="true"
       />
 
       {/* Panel */}
       <div
+        ref={panelRef}
+        role="dialog"
+        aria-modal={isMobilePresentation ? 'true' : undefined}
+        aria-labelledby="kindergarten-detail-title"
+        tabIndex={-1}
         className="fixed top-0 right-0 w-full md:w-[550px] md:max-w-none bg-white shadow-2xl z-50 flex flex-col animate-slide-in-right fixed-bottom-with-ad"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b-0 bg-white/80 backdrop-blur-md sticky top-0 z-10">
-          <h2 className="text-lg font-bold text-[var(--brand-ink)]">상세 정보</h2>
+          <h2
+            id="kindergarten-detail-title"
+            className="text-lg font-bold text-[var(--brand-ink)]"
+          >
+            {kindergarten.name} 상세 정보
+          </h2>
           <button
+            ref={closeButtonRef}
             onClick={onClose}
+            aria-label="상세 정보 닫기"
             className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-[var(--brand-mist-strong)] text-[var(--brand-ink-soft)] transition-colors"
           >
             <X className="w-5 h-5" />
@@ -752,6 +787,6 @@ export function KindergartenDetailPanel({
           </div>
         </div>
       </div>
-    </>
+    </BodyPortal>
   );
 }
