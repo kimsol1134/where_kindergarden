@@ -1,21 +1,21 @@
 {
-  "version": "2026-08-06T05:57:25.887Z",
+  "version": "2026-08-07T02:06:37.131Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3032,
-  "positiveCount": 2353,
+  "positiveCount": 2352,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-06T05:31:36.860Z",
-    "completedAt": "2026-08-06T05:57:25.887Z",
+    "startedAt": "2026-08-07T01:37:57.113Z",
+    "completedAt": "2026-08-07T02:06:37.131Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2353,
-    "detailSucceeded": 2341,
+    "detailRequested": 2352,
+    "detailSucceeded": 2340,
     "detailFailed": 12,
-    "detailCoverage": 0.9949001274968126,
+    "detailCoverage": 0.9948979591836735,
     "failures": [
       {
         "stage": "detail",
@@ -24780,29 +24780,16 @@
     "1ecec08d-0bda-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0bda-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 3,
-      "updatedAt": "2026-03-12",
-      "preschCd": "J100006865",
-      "upperEduOfficeCd": "J100000001",
-      "eduOfficeCd": "J100000233",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-06",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "산운유치원",
       "address": "경기도 성남시 분당구 판교원로117번길 11",
       "phone": "031-8017-9531",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        },
-        {
-          "rowNo": 2,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 2
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-09c8-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-09c8-b044-e053-0a32095ab044",
