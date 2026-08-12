@@ -1,21 +1,21 @@
 {
-  "version": "2026-08-11T23:51:31.220Z",
+  "version": "2026-08-12T23:49:10.223Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3033,
-  "positiveCount": 2352,
+  "positiveCount": 2350,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-11T23:21:05.249Z",
-    "completedAt": "2026-08-11T23:51:31.220Z",
+    "startedAt": "2026-08-12T23:20:17.977Z",
+    "completedAt": "2026-08-12T23:49:10.223Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2352,
-    "detailSucceeded": 2340,
+    "detailRequested": 2350,
+    "detailSucceeded": 2338,
     "detailFailed": 12,
-    "detailCoverage": 0.9948979591836735,
+    "detailCoverage": 0.9948936170212765,
     "failures": [
       {
         "stage": "detail",
@@ -10307,23 +10307,16 @@
     "c2bde8b4-3f3a-469d-bb1e-bf8e0f9824fc": {
       "kindercode": "c2bde8b4-3f3a-469d-bb1e-bf8e0f9824fc",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-03",
-      "preschCd": "9000001105",
-      "upperEduOfficeCd": "K100000001",
-      "eduOfficeCd": "K100000092",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-12",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "늘해랑유치원",
       "address": "강원특별자치도 강릉시 명주로17번길 24-1 (홍제동)",
       "phone": "033-823-2333",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-05a4-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-05a4-b044-e053-0a32095ab044",
@@ -17943,8 +17936,8 @@
     "0bf5f1dc-6bc7-4469-9aa4-8c51ad791507": {
       "kindercode": "0bf5f1dc-6bc7-4469-9aa4-8c51ad791507",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-07-01",
+      "vacancyCount": 2,
+      "updatedAt": "2026-08-12",
       "preschCd": "9000001071",
       "upperEduOfficeCd": "C100000001",
       "eduOfficeCd": "C100000258",
@@ -17956,6 +17949,12 @@
         {
           "rowNo": 1,
           "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        },
+        {
+          "rowNo": 2,
+          "age": "4세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 1
         }
@@ -36893,8 +36892,8 @@
     "1ecec08d-0cc4-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0cc4-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 26,
-      "updatedAt": "2026-03-04",
+      "vacancyCount": 23,
+      "updatedAt": "2026-08-12",
       "preschCd": "B100004151",
       "upperEduOfficeCd": "B100000001",
       "eduOfficeCd": "B100000315",
@@ -36919,7 +36918,7 @@
           "rowNo": 3,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 7
+          "vacancyCount": 4
         }
       ]
     },
@@ -42574,23 +42573,16 @@
     "41e6c449-ad2d-4c8c-b75c-fe83bc724ea6": {
       "kindercode": "41e6c449-ad2d-4c8c-b75c-fe83bc724ea6",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-06-16",
-      "preschCd": "C100002261",
-      "upperEduOfficeCd": "C100000001",
-      "eduOfficeCd": "C100000258",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-12",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "신명유치원",
       "address": "부산광역시 강서구 명지국제7로 178 신명유치원",
       "phone": "051-293-6633",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-0a18-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0a18-b044-e053-0a32095ab044",
@@ -58943,8 +58935,8 @@
     "e6ca9bb4-d187-463a-94ec-bfc5a7b10197": {
       "kindercode": "e6ca9bb4-d187-463a-94ec-bfc5a7b10197",
       "aidYear": "2026",
-      "vacancyCount": 3,
-      "updatedAt": "2026-08-03",
+      "vacancyCount": 2,
+      "updatedAt": "2026-08-12",
       "preschCd": "9000000810",
       "upperEduOfficeCd": "P100000001",
       "eduOfficeCd": "P100000246",
@@ -58957,7 +58949,7 @@
           "rowNo": 1,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 3
+          "vacancyCount": 2
         }
       ]
     },
