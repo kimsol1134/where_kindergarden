@@ -1,13 +1,13 @@
 {
-  "version": "2026-08-12T23:49:10.223Z",
+  "version": "2026-08-13T23:48:41.287Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3033,
   "positiveCount": 2350,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-12T23:20:17.977Z",
-    "completedAt": "2026-08-12T23:49:10.223Z",
+    "startedAt": "2026-08-13T23:22:15.767Z",
+    "completedAt": "2026-08-13T23:48:41.287Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -8982,7 +8982,7 @@
     "bca4bd97-2238-4a4e-a986-d8b70c9b2cab": {
       "kindercode": "bca4bd97-2238-4a4e-a986-d8b70c9b2cab",
       "aidYear": "2026",
-      "vacancyCount": 22,
+      "vacancyCount": 21,
       "updatedAt": "2026-04-29",
       "preschCd": "J100007232",
       "upperEduOfficeCd": "J100000001",
@@ -8997,12 +8997,6 @@
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 21
-        },
-        {
-          "rowNo": 2,
-          "age": "3세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
         }
       ]
     },
@@ -20760,16 +20754,23 @@
     "1ecec08d-02ad-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-02ad-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": "2026-03-09",
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-13",
+      "preschCd": "N100002812",
+      "upperEduOfficeCd": "N100000001",
+      "eduOfficeCd": "N100000066",
       "foundType": "국공립",
       "name": "배방유치원",
       "address": "충청남도 아산시 북수로25번길 10",
       "phone": "041-549-0141",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "4세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08d-0de0-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0de0-b044-e053-0a32095ab044",
@@ -65264,23 +65265,16 @@
     "282fbbe9-99c5-465b-9964-4094a44d3120": {
       "kindercode": "282fbbe9-99c5-465b-9964-4094a44d3120",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-03-16",
-      "preschCd": "9000000648",
-      "upperEduOfficeCd": "M100000001",
-      "eduOfficeCd": "M100000120",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-13",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "탄금유치원",
       "address": "충청북도 충주시 천변로 135 (교현동)",
       "phone": "043-857-8001",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "5세",
-          "course": "교육과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-f075-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f075-b044-e053-0a32095ab044",
