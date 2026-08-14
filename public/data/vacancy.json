@@ -1,13 +1,13 @@
 {
-  "version": "2026-08-13T23:48:41.287Z",
+  "version": "2026-08-14T23:24:57.849Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
-  "totalCount": 3033,
+  "totalCount": 3034,
   "positiveCount": 2350,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-13T23:22:15.767Z",
-    "completedAt": "2026-08-13T23:48:41.287Z",
+    "startedAt": "2026-08-14T22:55:12.493Z",
+    "completedAt": "2026-08-14T23:24:57.849Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -3089,7 +3089,7 @@
     "c59ccdcb-5b15-416d-84c6-cd209c7dad09": {
       "kindercode": "c59ccdcb-5b15-416d-84c6-cd209c7dad09",
       "aidYear": "2026",
-      "vacancyCount": 18,
+      "vacancyCount": 19,
       "updatedAt": "2026-08-10",
       "preschCd": "S100004007",
       "upperEduOfficeCd": "S100000001",
@@ -3110,6 +3110,12 @@
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 11
+        },
+        {
+          "rowNo": 3,
+          "age": "4세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
         }
       ]
     },
@@ -4400,23 +4406,16 @@
     "abee8f5d-108c-49f8-83c0-b53eca80eabb": {
       "kindercode": "abee8f5d-108c-49f8-83c0-b53eca80eabb",
       "aidYear": "2026",
-      "vacancyCount": 12,
-      "updatedAt": "2026-02-26",
-      "preschCd": "J100007550",
-      "upperEduOfficeCd": "J100000001",
-      "eduOfficeCd": "J100000132",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-14",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "광주유치원",
       "address": "경기도 광주시 담안길 84-8",
       "phone": "031-798-0560",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 12
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-fdbd-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fdbd-b044-e053-0a32095ab044",
@@ -44744,7 +44743,7 @@
       "kindercode": "8b1e6998-cc63-413d-9ead-ecd99e9c9973",
       "aidYear": "2026",
       "vacancyCount": 8,
-      "updatedAt": "2026-03-11",
+      "updatedAt": "2026-08-14",
       "preschCd": "9000001087",
       "upperEduOfficeCd": "C100000001",
       "eduOfficeCd": "C100000202",
@@ -58870,6 +58869,27 @@
       "name": "전주새뜰유치원",
       "address": "전북특별자치도 전주시 덕진구 오공로 101 (중동)",
       "phone": "063-290-0980",
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
+    },
+    "ae18d51c-975f-4d45-b6a4-39a11ebb67b9": {
+      "kindercode": "ae18d51c-975f-4d45-b6a4-39a11ebb67b9",
+      "aidYear": "2026",
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-14",
+      "preschCd": "P100002775",
+      "upperEduOfficeCd": "P100000001",
+      "eduOfficeCd": "P100000246",
+      "foundType": "국공립",
+      "name": "전주새솔유치원",
+      "address": "전북특별자치도 전주시 덕진구 화암1길 24 전주새솔유치원",
+      "phone": "063-274-6102",
       "detail": [
         {
           "rowNo": 1,
