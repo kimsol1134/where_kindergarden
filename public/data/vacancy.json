@@ -1,21 +1,21 @@
 {
-  "version": "2026-08-17T23:20:19.323Z",
+  "version": "2026-08-18T23:21:36.569Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3034,
-  "positiveCount": 2350,
+  "positiveCount": 2351,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-17T22:55:35.342Z",
-    "completedAt": "2026-08-17T23:20:19.323Z",
+    "startedAt": "2026-08-18T22:56:13.865Z",
+    "completedAt": "2026-08-18T23:21:36.569Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2350,
-    "detailSucceeded": 2338,
+    "detailRequested": 2351,
+    "detailSucceeded": 2339,
     "detailFailed": 12,
-    "detailCoverage": 0.9948936170212765,
+    "detailCoverage": 0.9948957890259464,
     "failures": [
       {
         "stage": "detail",
@@ -25320,23 +25320,16 @@
     "9b3c4f4a-f8fd-4ecd-85b7-4f01ba2491e3": {
       "kindercode": "9b3c4f4a-f8fd-4ecd-85b7-4f01ba2491e3",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-04-02",
-      "preschCd": "9000001278",
-      "upperEduOfficeCd": "P100000001",
-      "eduOfficeCd": "P100000190",
+      "vacancyCount": 0,
+      "updatedAt": "2026-08-18",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "삼봉유치원",
       "address": "전북특별자치도 완주군 삼례읍 삼봉중앙로 91-10",
       "phone": "01091403987",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-0eaf-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0eaf-b044-e053-0a32095ab044",
@@ -57097,8 +57090,8 @@
     "330ad29a-af14-45ed-88fb-dd04c55a2566": {
       "kindercode": "330ad29a-af14-45ed-88fb-dd04c55a2566",
       "aidYear": "2026",
-      "vacancyCount": 13,
-      "updatedAt": "2026-07-14",
+      "vacancyCount": 9,
+      "updatedAt": "2026-08-18",
       "preschCd": "9000000761",
       "upperEduOfficeCd": "E100000001",
       "eduOfficeCd": "E100000082",
@@ -57111,13 +57104,13 @@
           "rowNo": 1,
           "age": "3세",
           "course": "교육과정",
-          "vacancyCount": 9
+          "vacancyCount": 7
         },
         {
           "rowNo": 2,
           "age": "4세",
           "course": "교육과정",
-          "vacancyCount": 4
+          "vacancyCount": 2
         }
       ]
     },
@@ -65402,7 +65395,7 @@
     "1ecec08d-0df2-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0df2-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 2,
+      "vacancyCount": 3,
       "updatedAt": "2026-05-20",
       "preschCd": "H100000479",
       "upperEduOfficeCd": "H100000001",
@@ -65417,6 +65410,12 @@
           "age": "3세",
           "course": "교육과정",
           "vacancyCount": 2
+        },
+        {
+          "rowNo": 2,
+          "age": "5세",
+          "course": "교육과정",
+          "vacancyCount": 1
         }
       ]
     },
@@ -68324,16 +68323,23 @@
     "1ecec08c-fdbc-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fdbc-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": null,
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-18",
+      "preschCd": "S100003232",
+      "upperEduOfficeCd": "S100000001",
+      "eduOfficeCd": "S100003752",
       "foundType": "국공립",
       "name": "한사랑유치원",
       "address": "경상남도 창원시 마산합포구 월영마을로 42 한사랑유치원",
       "phone": "055-247-9619",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08c-ee83-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-ee83-b044-e053-0a32095ab044",
@@ -69372,16 +69378,23 @@
     "dad15845-6e9b-4620-9b27-576b346d8809": {
       "kindercode": "dad15845-6e9b-4620-9b27-576b346d8809",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": null,
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-18",
+      "preschCd": "9000000800",
+      "upperEduOfficeCd": "C100000001",
+      "eduOfficeCd": "C100000312",
       "foundType": "국공립",
       "name": "해빛유치원",
       "address": "부산광역시 기장군 일광면 해빛6로 17",
       "phone": "051-982-1400",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "e564ac6e-562f-4857-b1cf-da4a9ebd66b3": {
       "kindercode": "e564ac6e-562f-4857-b1cf-da4a9ebd66b3",
