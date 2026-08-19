@@ -1,21 +1,21 @@
 {
-  "version": "2026-08-18T23:21:36.569Z",
+  "version": "2026-08-19T23:23:52.353Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3034,
-  "positiveCount": 2351,
+  "positiveCount": 2353,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-08-18T22:56:13.865Z",
-    "completedAt": "2026-08-18T23:21:36.569Z",
+    "startedAt": "2026-08-19T22:55:53.445Z",
+    "completedAt": "2026-08-19T23:23:52.353Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2351,
-    "detailSucceeded": 2339,
+    "detailRequested": 2353,
+    "detailSucceeded": 2341,
     "detailFailed": 12,
-    "detailCoverage": 0.9948957890259464,
+    "detailCoverage": 0.9949001274968126,
     "failures": [
       {
         "stage": "detail",
@@ -7702,7 +7702,7 @@
       "kindercode": "1ecec08c-fbf5-b044-e053-0a32095ab044",
       "aidYear": "2026",
       "vacancyCount": 12,
-      "updatedAt": "2026-03-30",
+      "updatedAt": "2026-08-19",
       "preschCd": "S100003412",
       "upperEduOfficeCd": "S100000001",
       "eduOfficeCd": "S100000152",
@@ -7715,13 +7715,13 @@
           "rowNo": 1,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 7
+          "vacancyCount": 8
         },
         {
           "rowNo": 2,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 5
+          "vacancyCount": 4
         }
       ]
     },
@@ -25320,16 +25320,23 @@
     "9b3c4f4a-f8fd-4ecd-85b7-4f01ba2491e3": {
       "kindercode": "9b3c4f4a-f8fd-4ecd-85b7-4f01ba2491e3",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": "2026-08-18",
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-19",
+      "preschCd": "9000001278",
+      "upperEduOfficeCd": "P100000001",
+      "eduOfficeCd": "P100000190",
       "foundType": "국공립",
       "name": "삼봉유치원",
       "address": "전북특별자치도 완주군 삼례읍 삼봉중앙로 91-10",
       "phone": "01091403987",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "3세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08d-0eaf-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0eaf-b044-e053-0a32095ab044",
@@ -43658,7 +43665,7 @@
       "kindercode": "1ecec08c-f01a-b044-e053-0a32095ab044",
       "aidYear": "2026",
       "vacancyCount": 7,
-      "updatedAt": "2026-04-24",
+      "updatedAt": "2026-08-19",
       "preschCd": "E100000714",
       "upperEduOfficeCd": "E100000001",
       "eduOfficeCd": "E100000117",
@@ -43671,13 +43678,13 @@
           "rowNo": 1,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 5
+          "vacancyCount": 6
         },
         {
           "rowNo": 2,
-          "age": "5세",
+          "age": "3세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 2
+          "vacancyCount": 1
         }
       ]
     },
@@ -45133,16 +45140,23 @@
     "8660cd46-901f-45a1-8979-dcd9ffac4dd2": {
       "kindercode": "8660cd46-901f-45a1-8979-dcd9ffac4dd2",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": "2026-07-30",
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-19",
+      "preschCd": "9000000827",
+      "upperEduOfficeCd": "S100000001",
+      "eduOfficeCd": "S100003752",
       "foundType": "국공립",
       "name": "양덕솔빛유치원",
       "address": "경상남도 창원시 마산회원구 삼호로 108 (양덕동)",
       "phone": "055-299-0030",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "3세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08c-f527-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f527-b044-e053-0a32095ab044",
@@ -59155,7 +59169,7 @@
     "77dcb48b-85a5-4ab8-a510-ffbebb65db89": {
       "kindercode": "77dcb48b-85a5-4ab8-a510-ffbebb65db89",
       "aidYear": "2026",
-      "vacancyCount": 6,
+      "vacancyCount": 5,
       "updatedAt": "2026-07-30",
       "preschCd": "P100002773",
       "upperEduOfficeCd": "P100000001",
@@ -59170,12 +59184,6 @@
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 5
-        },
-        {
-          "rowNo": 2,
-          "age": "3세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
         }
       ]
     },
@@ -64785,7 +64793,7 @@
     "8e23308b-6f35-41bd-836d-7f182e79206e": {
       "kindercode": "8e23308b-6f35-41bd-836d-7f182e79206e",
       "aidYear": "2026",
-      "vacancyCount": 3,
+      "vacancyCount": 4,
       "updatedAt": "2026-05-18",
       "preschCd": "9000000678",
       "upperEduOfficeCd": "M100000001",
@@ -64800,6 +64808,12 @@
           "age": "4세",
           "course": "교육과정",
           "vacancyCount": 3
+        },
+        {
+          "rowNo": 2,
+          "age": "3세",
+          "course": "교육과정",
+          "vacancyCount": 1
         }
       ]
     },
@@ -70487,8 +70501,8 @@
     "1ecec08d-02e5-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-02e5-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-07-28",
+      "vacancyCount": 4,
+      "updatedAt": "2026-08-19",
       "preschCd": "P100002473",
       "upperEduOfficeCd": "P100000001",
       "eduOfficeCd": "P100000108",
@@ -70499,9 +70513,9 @@
       "detail": [
         {
           "rowNo": 1,
-          "age": "3세",
+          "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 1
+          "vacancyCount": 4
         }
       ]
     },
