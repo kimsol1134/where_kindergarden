@@ -30,6 +30,7 @@ public enum NativeAppStorageKey: String, CaseIterable, Sendable {
     case compareSelection = "native.compareSelection"
     case hasLaunched = "native.hasLaunched"
     case reviewPromptState = "native.reviewPromptState"
+    case seenSurveyCampaigns = "native.seenSurveyCampaigns"
 }
 
 @MainActor
@@ -80,6 +81,7 @@ public final class NativeAppPersistence {
     private let recentSearchesStore: CodableStoredValue<[RecentSearch]>
     private let compareSelectionStore: CodableStoredValue<CompareSelection>
     private let hasLaunchedStore: CodableStoredValue<Bool>
+    private let surveyCampaignsStore: CodableStoredValue<Set<String>>
     private let reviewPromptStore: CodableStoredValue<ReviewPromptState>
 
     public init(store: NativeAppDataStoring = UserDefaults.standard) {
@@ -88,6 +90,7 @@ public final class NativeAppPersistence {
         compareSelectionStore = CodableStoredValue(key: .compareSelection, store: store)
         hasLaunchedStore = CodableStoredValue(key: .hasLaunched, store: store)
         reviewPromptStore = CodableStoredValue(key: .reviewPromptState, store: store)
+        surveyCampaignsStore = CodableStoredValue(key: .seenSurveyCampaigns, store: store)
     }
 
     public func restore() -> PersistedNativeState {
@@ -116,6 +119,16 @@ public final class NativeAppPersistence {
 
     public func markAsLaunched() {
         hasLaunchedStore.save(true)
+    }
+
+    public func seenSurveyCampaigns() -> Set<String> {
+        surveyCampaignsStore.load(defaultValue: [])
+    }
+
+    public func markSurveyCampaignSeen(_ id: String) {
+        var campaigns = seenSurveyCampaigns()
+        campaigns.insert(id)
+        surveyCampaignsStore.save(campaigns)
     }
 
     public func loadReviewPromptState() -> ReviewPromptState {

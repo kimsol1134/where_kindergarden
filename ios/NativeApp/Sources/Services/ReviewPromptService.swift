@@ -63,6 +63,7 @@ extension NativeAppPersistence: ReviewPromptStateStoring {}
 /// 계측만 담당한다.
 @MainActor
 public final class ReviewPromptCoordinator {
+    private let sessionGate: SessionPromptGate
     private let prompter: any ReviewPromptRequesting
     private let store: any ReviewPromptStateStoring
     private let analytics: AnalyticsTracking?
@@ -76,9 +77,11 @@ public final class ReviewPromptCoordinator {
         prompter: any ReviewPromptRequesting,
         store: any ReviewPromptStateStoring,
         analytics: AnalyticsTracking? = nil,
+        sessionGate: SessionPromptGate? = nil,
         appVersion: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "",
         now: @escaping () -> Date = Date.init
     ) {
+        self.sessionGate = sessionGate ?? SessionPromptGate()
         self.prompter = prompter
         self.store = store
         self.analytics = analytics
@@ -107,6 +110,7 @@ public final class ReviewPromptCoordinator {
             return false
         }
 
+        guard sessionGate.claim(.review) else { return false }
         hasPromptedInSession = true
         store.saveReviewPromptState(
             ReviewPromptPolicy.recordingPrompt(

@@ -55,10 +55,15 @@ public struct NativeRootView: View {
             : OSLogAnalytics()
         let router = AppRouter()
         // 검색·비교 두 경로가 같은 이력을 공유해야 세션당 한 번만 요청된다.
+        let promptGate = SessionPromptGate()
+        let survey = ParentSurveyCoordinator(
+            persistence: persistence, gate: promptGate, analytics: analytics
+        )
         let reviewPrompt = ReviewPromptCoordinator(
             prompter: StoreKitReviewPrompter(),
             store: persistence,
-            analytics: analytics
+            analytics: analytics,
+            sessionGate: promptGate
         )
 
         // Store config for service init
@@ -81,7 +86,8 @@ public struct NativeRootView: View {
             router: router,
             persistence: persistence,
             configuration: config,
-            reviewPrompt: reviewPrompt
+            reviewPrompt: reviewPrompt,
+            parentSurvey: survey
         ))
         _compareVM = State(initialValue: CompareViewModel(
             compareRepo: compareRepo,

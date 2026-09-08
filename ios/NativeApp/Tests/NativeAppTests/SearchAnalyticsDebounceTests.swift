@@ -146,7 +146,9 @@ final class SearchAnalyticsDebounceTests: XCTestCase {
 
     private func makeViewModel(
         kindergartens: [KindergartenRaw],
-        analytics: MockAnalytics
+        analytics: MockAnalytics,
+        parentSurvey: ParentSurveyCoordinator? = nil,
+        router: AppRouter? = nil
     ) -> SearchViewModel {
         SearchViewModel(
             kindergartenRepo: StubKindergartenRepo(kindergartens: kindergartens),
@@ -158,10 +160,11 @@ final class SearchAnalyticsDebounceTests: XCTestCase {
             locationProvider: StubLocationProvider(),
             remoteSearchService: StubRemoteSearch(),
             analytics: analytics,
-            router: AppRouter(),
+            router: router ?? AppRouter(),
             persistence: NativeAppPersistence(store: InMemoryNativeAppStore()),
             configuration: NativeAppConfiguration(kakaoAppKey: nil),
-            searchAnalyticsDebounce: debounce
+            searchAnalyticsDebounce: debounce,
+            parentSurvey: parentSurvey
         )
     }
 
@@ -292,4 +295,39 @@ final class SearchAnalyticsDebounceTests: XCTestCase {
         XCTAssertEqual(detailEvent.properties["kindercode"], .string("A001"))
         XCTAssertEqual(detailEvent.properties["source"], .string("result"))
     }
+
+    func testSurveyNeedsActualDetailPresentationAndSearchReturn() throws {
+        let survey = ParentSurveyCoordinator(
+            campaign: ParentSurveyCampaign(id: "integration", url: URL(string: "https://docs.google.com/forms/d/e/test/viewform")),
+            persistence: NativeAppPersistence(store: InMemoryNativeAppStore()),
+            gate: SessionPromptGate()
+        )
+        let router = AppRouter()
+        let viewModel = makeViewModel(
+            kindergartens: [
+                try makeKindergarten(kindercode: "A001", name: "가유치원"),
+                try makeKindergarten(kindercode: "A002", name: "나유치원"),
+            ], analytics: MockAnalytics(), parentSurvey: survey, router: router
+        )
+        XCTAssertEqual(viewModel.results.count, 2)
+        for kindergarten in viewModel.results {
+            viewModel.select(kindergarten: kindergarten)
+            viewModel.dismissDetail()
+            viewModel.returnedFromDetailToSearch()
+        }
+        XCTAssertFalse(survey.isInvitationVisible, "Selection alone must not qualify")
+        for kindergarten in viewModel.results {
+            viewModel.select(kindergarten: kindergarten)
+            viewModel.makeDetailSheet(for: kindergarten).onDetailPresented()
+        }
+        viewModel.returnedFromDetailToSearch()
+        XCTAssertFalse(survey.isInvitationVisible, "A detail is still presented")
+        viewModel.navigateToCompare()
+        viewModel.returnedFromDetailToSearch()
+        XCTAssertFalse(survey.isInvitationVisible, "Do not show on the compare tab")
+        viewModel.navigateToSearch()
+        viewModel.returnedFromDetailToSearch()
+        XCTAssertTrue(survey.isInvitationVisible)
+    }
+
 }

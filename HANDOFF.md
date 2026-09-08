@@ -1,5 +1,13 @@
 # HANDOFF.md
 
+## 2026-09-08 학부모 설문 구현
+
+- 작업 브랜치: `codex/parent-survey` (별도 worktree)
+- 네이티브 iOS 상세 2곳 탐색 후 설문 카드, 캠페인별 재노출 방지, StoreKit 요청 상호 배제, 설문 이벤트 구현.
+- 로그인 없는 Google Form 생성·게시·연결 완료. 연락처는 선택 동의자만 입력.
+- 상세 운영·검증·연락처 보유 기간: [PARENT_SURVEY.md](docs/PARENT_SURVEY.md).
+- App Store 배포는 수행하지 않음. 아래 기록은 이전 작업 이력.
+
 ## 마지막 작업 일시
 2026-04-22 (ASC Sales Reports API 완전 동작 — Vendor Number 재확인 + App ID 수정)
 

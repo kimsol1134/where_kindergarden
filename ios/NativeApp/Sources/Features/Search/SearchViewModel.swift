@@ -49,6 +49,7 @@ public final class SearchViewModel {
     public private(set) var isFirstLaunch: Bool
     public var shouldFocusSearchField: Bool = false
 
+    public let parentSurvey: ParentSurveyCoordinator?
     public let configuration: NativeAppConfiguration
 
     // MARK: - Dependencies
@@ -109,7 +110,8 @@ public final class SearchViewModel {
         filters: SearchFilters = SearchFilters(),
         searchDebounceDuration: Duration = .milliseconds(300),
         searchAnalyticsDebounce: Duration = .milliseconds(600),
-        reviewPrompt: ReviewPromptCoordinator? = nil
+        reviewPrompt: ReviewPromptCoordinator? = nil,
+        parentSurvey: ParentSurveyCoordinator? = nil
     ) {
         self.kindergartenRepo = kindergartenRepo
         self.reviewRepo = reviewRepo
@@ -129,6 +131,7 @@ public final class SearchViewModel {
         self.searchDebounceDuration = searchDebounceDuration
         self.searchAnalyticsDebounce = searchAnalyticsDebounce
         self.reviewPrompt = reviewPrompt
+        self.parentSurvey = parentSurvey
 
         self.hasBootstrapped = false
         self.kindergartenLookup = [:]
@@ -505,6 +508,11 @@ public final class SearchViewModel {
         selectedKindergarten = nil
     }
 
+    public func returnedFromDetailToSearch() {
+        guard selectedKindergarten == nil, isSearchTabActive else { return }
+        parentSurvey?.returnedToSearch()
+    }
+
     func makeDetailSheet(for kindergarten: Kindergarten) -> KindergartenDetailSheet {
         KindergartenDetailSheet(
             kindergarten: kindergarten,
@@ -541,6 +549,7 @@ public final class SearchViewModel {
     }
 
     private func trackDetailPresented(for kindergarten: Kindergarten) {
+        parentSurvey?.recordDetailPresented(kindercode: kindergarten.kindercode)
         let properties: AnalyticsProperties
         if case .string(let pendingID) = pendingDetailAnalyticsProperties?["kindercode"],
            pendingID == kindergarten.kindercode {

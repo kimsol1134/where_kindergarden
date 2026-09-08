@@ -11,6 +11,10 @@ public enum AnalyticsValue: Sendable, Equatable {
 public typealias AnalyticsProperties = [String: AnalyticsValue]
 
 public enum AnalyticsEvent: String, Sendable {
+    case surveyInvitationShown = "Survey Invitation Shown"
+    case surveyInvitationDismissed = "Survey Invitation Dismissed"
+    case surveyLinkTapped = "Survey Link Tapped"
+    case surveyLinkOpenResult = "Survey Link Open Result"
     case appLaunched       = "App Launched"
     case searchExecuted    = "Search Executed"
     case emptyStateShown   = "Empty State Shown"

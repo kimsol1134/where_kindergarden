@@ -261,7 +261,13 @@ public struct SearchHomeView: View {
                     .offset(y: -liveSheetHeight)
                 }
             }
-            .fullScreenCover(item: sheetSelection) { kindergarten in
+            .fullScreenCover(item: sheetSelection, onDismiss: {
+                viewModel.returnedFromDetailToSearch()
+                if viewModel.parentSurvey?.isInvitationVisible == true {
+                    isSearchPanelPresented = false
+                    updateResultsDetent(.mid)
+                }
+            }) { kindergarten in
                 NavigationStack {
                     viewModel.makeDetailSheet(for: kindergarten)
                         .toast(
@@ -914,38 +920,48 @@ private struct ResultSheet: View {
                 emptyContent
                     .frame(maxHeight: .infinity, alignment: .top)
             } else {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 18) {
-                        if !recentSearchPreview.isEmpty {
-                            RecentSearchSummaryStrip(searches: recentSearchPreview) { search in
-                                viewModel.restoreRecentSearch(search)
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 18) {
+                            if !recentSearchPreview.isEmpty {
+                                RecentSearchSummaryStrip(searches: recentSearchPreview) { search in
+                                    viewModel.restoreRecentSearch(search)
+                                }
                             }
-                        }
 
-                        LazyVStack(spacing: 12) {
-                            ForEach(Array(results.enumerated()), id: \.element.kindercode) { index, kindergarten in
-                                SearchResultCard(
-                                    kindergarten: kindergarten,
-                                    isCompared: comparedIDs.contains(kindergarten.kindercode),
-                                    isFavorite: favoriteIDs.contains(kindergarten.kindercode),
-                                    vacancyCount: viewModel.vacancyCount(for: kindergarten.kindercode),
-                                    reviewCount: viewModel.reviews(for: kindergarten.kindercode).count,
-                                    onTap: {
-                                        viewModel.select(
-                                            kindergarten: kindergarten,
-                                            source: "result_card",
-                                            rankPosition: index + 1
-                                        )
-                                    },
-                                    onToggleCompare: { viewModel.toggleCompare(for: kindergarten, source: "result_card") },
-                                    onToggleFavorite: { viewModel.toggleFavorite(for: kindergarten, source: "result_card") }
-                                )
+                            LazyVStack(spacing: 12) {
+                                if let survey = viewModel.parentSurvey, survey.isInvitationVisible {
+                                    ParentSurveyCard(survey: survey)
+                                        .id("parent-survey")
+                                }
+
+                                ForEach(Array(results.enumerated()), id: \.element.kindercode) { index, kindergarten in
+                                    SearchResultCard(
+                                        kindergarten: kindergarten,
+                                        isCompared: comparedIDs.contains(kindergarten.kindercode),
+                                        isFavorite: favoriteIDs.contains(kindergarten.kindercode),
+                                        vacancyCount: viewModel.vacancyCount(for: kindergarten.kindercode),
+                                        reviewCount: viewModel.reviews(for: kindergarten.kindercode).count,
+                                        onTap: {
+                                            viewModel.select(
+                                                kindergarten: kindergarten,
+                                                source: "result_card",
+                                                rankPosition: index + 1
+                                            )
+                                        },
+                                        onToggleCompare: { viewModel.toggleCompare(for: kindergarten, source: "result_card") },
+                                        onToggleFavorite: { viewModel.toggleFavorite(for: kindergarten, source: "result_card") }
+                                    )
+                                }
                             }
                         }
+                        .padding(.bottom, 8)
                     }
-                    .padding(.bottom, 8)
+                    .frame(maxHeight: .infinity, alignment: .top)
+                    .onChange(of: viewModel.parentSurvey?.isInvitationVisible) { _, visible in
+                        if visible == true { proxy.scrollTo("parent-survey", anchor: .top) }
+                    }
                 }
-                .frame(maxHeight: .infinity, alignment: .top)
             }
         }
         .padding(.horizontal, 20)
