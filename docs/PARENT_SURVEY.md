@@ -6,7 +6,7 @@
 - 응답: https://docs.google.com/forms/d/e/1FAIpQLScdR-EJW-JzJTRqibkPVw4V-fBJbBW1_YJmRZO_4HfnHNrSGA/viewform
 - 운영자 편집·응답 확인: https://docs.google.com/forms/d/1YK6mGv4lEly49HuBDr8pLv-b74wB_9cGiJlY6uuzncY/edit
 - 게시 완료. 링크가 있는 누구나 응답 가능. 이메일 자동 수집, 1회 응답을 위한 로그인 제한, 응답 요약 공개는 꺼져 있다.
-- 앱 소스 연결은 완료했으며 App Store 배포는 별도다. 이번 작업은 앱 심사·배포를 수행하지 않는다.
+- 2026-09-08 버전 2.2.6 (11)로 심사 제출 완료. 현재 WAITING_FOR_REVIEW이며, 승인 후 수동 출시한다.
 
 ## 노출 정책
 

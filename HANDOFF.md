@@ -1,5 +1,12 @@
 # HANDOFF.md
 
+## 2026-09-08 2.2.6 심사 제출
+
+- 버전 2.2.6 (11), ASC 심사 상태 WAITING_FOR_REVIEW 확인.
+- 설문 기능 + 새 스크린샷 + 승인한 Remotion 영상 반영. 승인 후 수동 출시 유지.
+- 세부 제출 ID와 검증: [docs/releases/2.2.6.md](docs/releases/2.2.6.md).
+
+
 ## 2026-09-08 학부모 설문 구현
 
 - 작업 브랜치: `codex/parent-survey` (별도 worktree)
