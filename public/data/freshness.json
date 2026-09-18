@@ -1,31 +1,33 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-19T23:23:53.038Z",
-  "overallStatus": "current",
+  "generatedAt": "2026-09-18T04:13:50.934Z",
+  "overallStatus": "attention",
   "staleSources": [],
-  "attentionSources": [],
+  "attentionSources": [
+    "reviewContent"
+  ],
   "sources": {
     "kindergartens": {
       "status": "complete",
       "sourceVersion": "20261",
       "sourceLabel": "2026년 1차",
-      "checkedAt": "2026-08-06T02:29:14.399Z",
+      "checkedAt": "2026-09-18T03:43:38.797Z",
       "maxAgeHours": 336,
-      "totalCount": 7152,
-      "registryJoinCoverage": 1
+      "totalCount": 7150,
+      "registryJoinCoverage": 0.9997203579418344
     },
     "reviews": {
       "status": "complete",
-      "buildVersion": "2026-08-06",
-      "catalogReconciledAt": "2026-08-06T04:57:52.044Z",
+      "buildVersion": "2026-09-18",
+      "catalogReconciledAt": "2026-09-18T03:44:05.433Z",
       "catalogMaxAgeHours": 336,
       "contentLatestCollectedAt": "2026-07-26T10:10:52.619701",
       "contentTargetAgeHours": 720,
-      "contentAgeHours": 598.2167830555555,
-      "contentStatus": "within_target",
+      "contentAgeHours": 1299.0495319444444,
+      "contentStatus": "needs_discovery",
       "totalCount": 6055,
       "kindergartenCount": 1892,
-      "catalogCoverage": 0.2645413870246085,
+      "catalogCoverage": 0.26461538461538464,
       "excludedOrphanReviewCount": 0,
       "duplicateReviewCount": 0,
       "retiredReviewCount": 193,
@@ -35,18 +37,18 @@
     },
     "vacancy": {
       "status": "complete",
-      "sourceVersion": "2026-08-19T23:23:52.353Z",
-      "checkedAt": "2026-08-19T23:23:52.353Z",
+      "sourceVersion": "2026-09-18T04:13:41.597Z",
+      "checkedAt": "2026-09-18T04:13:41.597Z",
       "maxAgeHours": 72,
-      "totalCount": 3034,
-      "positiveCount": 2353,
+      "totalCount": 3042,
+      "positiveCount": 2367,
       "regionCoverage": 1,
-      "detailCoverage": 0.9949001274968126,
-      "catalogMatchRate": 0.9963744232036915
+      "detailCoverage": 0.9949302915082383,
+      "catalogMatchRate": 0.9963839579224194
     },
     "regionCodes": {
       "status": "complete",
-      "checkedAt": "2026-08-06T02:46:55.740Z",
+      "checkedAt": "2026-09-18T03:40:18.407Z",
       "maxAgeHours": 336,
       "totalCount": 261,
       "source": "https://e-childschoolinfo.moe.go.kr/openApi/sidoSigunguCode.do"

@@ -265,6 +265,29 @@ final class SearchAnalyticsDebounceTests: XCTestCase {
         XCTAssertEqual(last.properties["has_results"], .bool(true))
         XCTAssertEqual(last.properties["result_count"], .int(1))
         XCTAssertEqual(last.properties["query_type"], .string("keyword"))
+        XCTAssertEqual(last.properties["sigungu_code"], .string("11680"))
+    }
+
+    func testEmptyNearbySearchExpandsRadiusUntilResultsAppear() async throws {
+        let analytics = MockAnalytics()
+        let far = try makeKindergarten(kindercode: "FAR1", name: "먼유치원")
+        // 기본 중심(서울 시청)에서 약 3km 남쪽으로 옮겨 2km 기본 반경 밖, 5km 안에 둔다.
+        let encoded = try JSONEncoder().encode(far)
+        var object = try JSONSerialization.jsonObject(with: encoded) as? [String: Any]
+        object?["lat"] = 37.5395
+        object?["lng"] = 126.9780
+        object?["sigungu_code"] = "11140"
+        let data = try JSONSerialization.data(withJSONObject: object as Any)
+        let distant = try JSONDecoder().decode(KindergartenRaw.self, from: data)
+
+        let viewModel = makeViewModel(kindergartens: [distant], analytics: analytics)
+        try await waitForDebounce()
+
+        XCTAssertEqual(viewModel.filters.radiusKM, 5)
+        XCTAssertEqual(viewModel.results.count, 1)
+        let last = try XCTUnwrap(analytics.events.last { $0.event == .searchExecuted })
+        XCTAssertEqual(last.properties["radius"], .int(5))
+        XCTAssertEqual(last.properties["has_results"], .bool(true))
     }
 
     func testDetailOpenedIsRecordedOnlyAfterSheetPresentation() async throws {

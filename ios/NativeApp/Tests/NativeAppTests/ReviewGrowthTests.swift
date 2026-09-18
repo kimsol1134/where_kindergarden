@@ -46,6 +46,15 @@ final class ReviewPromptCoordinatorTests: XCTestCase {
         XCTAssertEqual(store.state.promptedAppVersions, ["2.2.3"])
     }
 
+    func testPromptsAfterSuccessfulCompareShare() {
+        let store = StubPromptStore()
+        let prompter = MockReviewPrompter()
+        let coordinator = makeCoordinator(store: store, prompter: prompter)
+
+        XCTAssertTrue(coordinator.requestReviewIfEligible(trigger: .compareShared, count: 2))
+        XCTAssertEqual(prompter.requestCount, 1)
+    }
+
     func testDoesNotPromptBelowThreshold() {
         let store = StubPromptStore()
         let prompter = MockReviewPrompter()

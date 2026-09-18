@@ -410,7 +410,7 @@ private struct SearchChrome: View {
     }
 
     private var primaryLenses: [SearchLens] {
-        [.publicOnly, .privateOnly, .bus, .afterSchool, .vacancy]
+        [.vacancy, .publicOnly, .privateOnly, .bus, .afterSchool]
     }
 
 
@@ -858,7 +858,9 @@ private struct ResultSheet: View {
                 EmptyStateView(
                     icon: "map",
                     title: "이 근처에서는 찾지 못했어요",
-                    message: "범위를 넓혀서 다시 찾아보세요.",
+                    message: viewModel.nextRadiusResultCount > 0
+                        ? "반경 \(Int(viewModel.nextRadius))km로 넓히면 \(viewModel.nextRadiusResultCount)곳이 있어요."
+                        : "범위를 넓혀서 다시 찾아보세요.",
                     ctaLabel: "범위 넓히기",
                     ctaAction: { viewModel.updateRadius(to: viewModel.nextRadius) }
                 )
@@ -872,11 +874,21 @@ private struct ResultSheet: View {
                 )
             }
         } else if results.isEmpty && !trimmedSearchQuery.isEmpty && !viewModel.isCurrentLocationSearchActive {
-            EmptyStateView(
-                icon: "magnifyingglass",
-                title: "'\(trimmedSearchQuery)' 결과가 없어요",
-                message: "다른 이름이나 동네로 다시 찾아보세요."
-            )
+            if viewModel.nextRadiusResultCount > 0 {
+                EmptyStateView(
+                    icon: "magnifyingglass",
+                    title: "'\(trimmedSearchQuery)' 결과가 없어요",
+                    message: "반경 \(Int(viewModel.nextRadius))km로 넓히면 \(viewModel.nextRadiusResultCount)곳이 있어요.",
+                    ctaLabel: "범위 넓히기",
+                    ctaAction: { viewModel.updateRadius(to: viewModel.nextRadius) }
+                )
+            } else {
+                EmptyStateView(
+                    icon: "magnifyingglass",
+                    title: "'\(trimmedSearchQuery)' 결과가 없어요",
+                    message: "다른 이름이나 동네로 다시 찾아보세요."
+                )
+            }
         } else if results.isEmpty && viewModel.hasActiveAdvancedFilters {
             EmptyStateView(
                 icon: "line.3.horizontal.decrease.circle",
@@ -995,6 +1007,10 @@ private struct SearchResultCard: View {
         var items: [(String, NativeBadge.Tone)] = [
             (kindergarten.type.label, typeTone)
         ]
+
+        if vacancyCount > 0 {
+            items.append(("여유 \(vacancyCount)", .jade))
+        }
 
         if isFavorite {
             items.append(("저장됨", .sun))

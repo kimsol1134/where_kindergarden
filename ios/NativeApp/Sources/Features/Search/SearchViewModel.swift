@@ -22,7 +22,9 @@ public final class SearchViewModel {
 
     public var filters: SearchFilters {
         didSet {
-            scheduleFilterAppliedTracking()
+            if !isAutomaticallyExpandingRadius {
+                scheduleFilterAppliedTracking()
+            }
             refresh()
         }
     }
@@ -82,6 +84,8 @@ public final class SearchViewModel {
     @ObservationIgnored nonisolated(unsafe) private var searchAnalyticsTask: Task<Void, Never>?
     /// 직전에 계측으로 보고한 검색이 결과를 가지고 있었는지. 빈 결과 화면 "전환"을 판정하는 데 쓴다.
     private var lastReportedSearchHadResults = false
+    /// 빈 결과를 피하려고 반경을 코드가 넓히는 중이면 필터 적용 이벤트를 남기지 않는다.
+    private var isAutomaticallyExpandingRadius = false
     private var resultQuery: String
     private var pendingDetailAnalyticsProperties: AnalyticsProperties?
     private var currentDeviceLocationTask: Task<Coordinates, Error>?
@@ -261,6 +265,18 @@ public final class SearchViewModel {
         case 2: return 5
         default: return 5
         }
+    }
+
+    /// 한 단계 넓은 반경에서 나올 결과 수. 빈 결과 CTA에 쓴다.
+    public var nextRadiusResultCount: Int {
+        guard filters.radiusKM < 5, !kindergartenRepo.kindergartens.isEmpty else { return 0 }
+        return searchUseCase.previewCount(
+            catalog: kindergartenRepo.kindergartens,
+            location: userLocation,
+            filters: filters,
+            query: resultQuery,
+            radiusKM: nextRadius
+        )
     }
 
     public var activeAdvancedFilterCount: Int {
@@ -575,14 +591,19 @@ public final class SearchViewModel {
         let result = compareRepo.toggle(id: kindergarten.kindercode)
         switch result {
         case .added:
+            let compareCount = compareRepo.selection.ids.count
             analytics?.track(event: .comparisonAdded, properties: [
                 "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
                 "source": .string(source),
-                "compare_count": .int(compareRepo.selection.ids.count),
+                "compare_count": .int(compareCount),
             ])
             refreshSelectedKindergarten()
-            router.showToast(.success("비교에 담았어요"))
+            if compareCount == 2 {
+                navigateFromDetailToCompare()
+            } else {
+                router.showToast(.success("비교에 담았어요"))
+            }
         case .removed:
             analytics?.track(event: .comparisonRemoved, properties: [
                 "kindergarten_id": .string(kindergarten.kindercode),
@@ -653,7 +674,8 @@ public final class SearchViewModel {
         analytics?.track(event: .reviewLinkTapped, properties: [
             "kindergarten_id": .string(kindergarten.kindercode),
             "kindercode": .string(kindergarten.kindercode),
-            "source": .string(review.sourceName ?? review.source),
+            "source": .string(review.source),
+            "source_name": .string(review.sourceName ?? review.source),
             "review_count": .int(reviews(for: kindergarten.kindercode).count),
         ])
     }
@@ -802,13 +824,37 @@ public final class SearchViewModel {
             return
         }
 
-        results = searchUseCase.search(
+        var workingFilters = filters
+        var workingResults = searchUseCase.search(
             catalog: catalog,
             location: userLocation,
-            filters: filters,
+            filters: workingFilters,
             query: resultQuery
         )
 
+        if !isAutomaticallyExpandingRadius {
+            while let expandedRadius = searchUseCase.expandedRadiusIfNeeded(
+                currentRadius: workingFilters.radiusKM,
+                results: workingResults
+            ) {
+                workingFilters.radiusKM = expandedRadius
+                workingResults = searchUseCase.search(
+                    catalog: catalog,
+                    location: userLocation,
+                    filters: workingFilters,
+                    query: resultQuery
+                )
+            }
+
+            if workingFilters.radiusKM != filters.radiusKM {
+                isAutomaticallyExpandingRadius = true
+                filters.radiusKM = workingFilters.radiusKM
+                isAutomaticallyExpandingRadius = false
+                return
+            }
+        }
+
+        results = workingResults
         scheduleSearchAnalytics()
         refreshSelectedKindergarten()
     }
@@ -820,6 +866,7 @@ public final class SearchViewModel {
         let radius: Int
         let sort: String
         let filterCount: Int
+        let sigunguCode: String?
     }
 
     /// 검색 계측을 디바운스한다.
@@ -835,7 +882,12 @@ public final class SearchViewModel {
             query: resultQuery,
             radius: Int(filters.radiusKM),
             sort: filters.sort.rawValue,
-            filterCount: activeAdvancedFilterCount
+            filterCount: activeAdvancedFilterCount,
+            sigunguCode: results.first?.sigunguCode
+                ?? searchUseCase.nearestSigunguCode(
+                    catalog: kindergartenRepo.kindergartens,
+                    location: userLocation
+                )
         )
         let debounce = searchAnalyticsDebounce
 
@@ -866,6 +918,9 @@ public final class SearchViewModel {
         var searchProperties = sharedProperties
         searchProperties["result_count"] = .int(snapshot.resultCount)
         searchProperties["has_results"] = .bool(hasResults)
+        if let sigunguCode = snapshot.sigunguCode, !sigunguCode.isEmpty {
+            searchProperties["sigungu_code"] = .string(sigunguCode)
+        }
         analytics?.track(event: .searchExecuted, properties: searchProperties)
 
         if !hasResults && lastReportedSearchHadResults {

@@ -126,7 +126,8 @@ public final class SavedViewModel {
         analytics?.track(event: .reviewLinkTapped, properties: [
             "kindergarten_id": .string(kindergarten.kindercode),
             "kindercode": .string(kindergarten.kindercode),
-            "source": .string(review.sourceName ?? review.source),
+            "source": .string(review.source),
+            "source_name": .string(review.sourceName ?? review.source),
             "review_count": .int(reviewRepo.reviews(for: kindergarten.kindercode).count),
         ])
     }
@@ -191,13 +192,18 @@ public final class SavedViewModel {
         let result = compareRepo.toggle(id: kindergarten.kindercode)
         switch result {
         case .added:
+            let compareCount = compareRepo.selection.ids.count
             analytics?.track(event: .comparisonAdded, properties: [
                 "kindergarten_id": .string(kindergarten.kindercode),
                 "kindercode": .string(kindergarten.kindercode),
                 "source": .string("saved"),
-                "compare_count": .int(compareRepo.selection.ids.count),
+                "compare_count": .int(compareCount),
             ])
-            router.showToast(.success("비교에 담았어요"))
+            if compareCount == 2 {
+                router.activeTab = .compare
+            } else {
+                router.showToast(.success("비교에 담았어요"))
+            }
         case .removed:
             analytics?.track(event: .comparisonRemoved, properties: [
                 "kindergarten_id": .string(kindergarten.kindercode),

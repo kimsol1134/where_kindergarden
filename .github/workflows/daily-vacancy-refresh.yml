@@ -42,7 +42,7 @@ jobs:
         run: pnpm sync:vacancy
 
       - name: Validate all public data and refresh manifest
-        run: pnpm validate:data -- --write-manifest
+        run: pnpm validate:data -- --write-manifest --freshness vacancy
 
       - name: Type-check data consumers
         run: pnpm type-check

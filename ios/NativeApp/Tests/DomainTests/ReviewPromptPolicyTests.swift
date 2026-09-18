@@ -99,6 +99,12 @@ final class ReviewPromptPolicyTests: XCTestCase {
         XCTAssertTrue(ReviewPromptPolicy.meetsThreshold(.compareViewed, count: 3))
     }
 
+    func testCompareSharedNeedsOneSuccessfulShare() {
+        XCTAssertFalse(ReviewPromptPolicy.meetsThreshold(.compareShared, count: 0))
+        XCTAssertTrue(ReviewPromptPolicy.meetsThreshold(.compareShared, count: 1))
+        XCTAssertTrue(ReviewPromptPolicy.meetsThreshold(.compareShared, count: 2))
+    }
+
     func testFavoriteMilestoneNeedsTwoFavorites() {
         XCTAssertFalse(ReviewPromptPolicy.meetsThreshold(.favoriteMilestone, count: 1))
         XCTAssertTrue(ReviewPromptPolicy.meetsThreshold(.favoriteMilestone, count: 2))

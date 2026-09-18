@@ -97,10 +97,6 @@ public final class CompareViewModel {
         analytics?.track(event: .compareViewed, properties: [
             "compare_count": .int(count),
         ])
-
-        // 2곳 이상을 실제로 비교한 시점이 이 앱의 핵심 가치를 경험한 가장 강한 신호다.
-        // D1 재방문이 10% 미만이라 다음 세션을 기다릴 수 없으므로 여기서 요청한다.
-        reviewPrompt?.requestReviewIfEligible(trigger: .compareViewed, count: count)
     }
 
     public func shareKakao(names: [String]) -> URL? {
@@ -120,18 +116,30 @@ public final class CompareViewModel {
         trackShareInitiated(method: "system")
     }
 
-    public func trackShareResult(method: String, result: ShareResult) {
-        let properties: AnalyticsProperties = [
+    public func trackShareResult(
+        method: String,
+        result: ShareResult,
+        failureReason: String? = nil
+    ) {
+        var properties: AnalyticsProperties = [
             "method": .string(method),
             "compare_count": .int(comparedKindergartens.count),
             "result": .string(result.rawValue),
             "measurement_version": .string("completion_v2_2026-08-06"),
         ]
+        if let failureReason {
+            properties["failure_reason"] = .string(failureReason)
+        }
         analytics?.track(event: .compareShareResult, properties: properties)
 
         // 기존 대시보드와의 연결을 유지하되, 성공으로 판단할 수 있는 결과에만 기록한다.
         if result == .completed || result == .handoffSucceeded {
             analytics?.track(event: .compareShared, properties: properties)
+            // 공유가 끝난 뒤에만 리뷰를 물어 비교표 공유를 가로막지 않는다.
+            reviewPrompt?.requestReviewIfEligible(
+                trigger: .compareShared,
+                count: comparedKindergartens.count
+            )
         }
     }
 

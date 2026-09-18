@@ -98,6 +98,39 @@ public struct SearchUseCase: Sendable {
         return candidates.first { $0 > currentRadius }
     }
 
+    /// 현재 필터에서 반경만 바꿔 몇 곳이 나오는지 미리 센다.
+    public func previewCount(
+        catalog: [KindergartenRaw],
+        location: Coordinates,
+        filters: SearchFilters,
+        query: String,
+        radiusKM: Double
+    ) -> Int {
+        var previewFilters = filters
+        previewFilters.radiusKM = radiusKM
+        return search(
+            catalog: catalog,
+            location: location,
+            filters: previewFilters,
+            query: query
+        ).count
+    }
+
+    /// 검색 기준점에서 가장 가까운 기관의 시군구 코드.
+    public func nearestSigunguCode(
+        catalog: [KindergartenRaw],
+        location: Coordinates
+    ) -> String? {
+        searchEngine
+            .makeKindergartens(raws: catalog, relativeTo: location)
+            .min { lhs, rhs in
+                let left = lhs.distance >= 0 ? lhs.distance : .greatestFiniteMagnitude
+                let right = rhs.distance >= 0 ? rhs.distance : .greatestFiniteMagnitude
+                return left < right
+            }?
+            .sigunguCode
+    }
+
     /// KindergartenRaw -> Kindergarten 변환 (거리 계산 포함)
     public func makeKindergarten(
         from raw: KindergartenRaw,
