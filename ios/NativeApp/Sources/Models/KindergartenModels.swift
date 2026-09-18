@@ -454,7 +454,7 @@ public struct SearchFilters: Codable, Hashable, Sendable {
     public var sort: SortOption
 
     public init(
-        radiusKM: Double = 1,
+        radiusKM: Double = 2,
         type: InstitutionFilter = .all,
         hasBus: Bool? = nil,
         hasVacancy: Bool? = nil,

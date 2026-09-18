@@ -105,4 +105,58 @@ struct SearchUseCaseTests {
 
         #expect(result == nil)
     }
+
+    @Test func expandedRadius_defaultTwoKilometers_expandsToFive() {
+        let result = sut.expandedRadiusIfNeeded(currentRadius: 2, results: [])
+
+        #expect(result == 5)
+    }
+
+    @Test func previewCount_usesRequestedRadius() {
+        let catalog = [
+            makeTestKindergartenRaw(kindercode: "A", name: "먼유치원", lat: 37.5200, lng: 127.0276),
+        ]
+        let filters = SearchFilters(radiusKM: 1)
+
+        let nearby = sut.previewCount(
+            catalog: catalog,
+            location: userLocation,
+            filters: filters,
+            query: "",
+            radiusKM: 1
+        )
+        let wider = sut.previewCount(
+            catalog: catalog,
+            location: userLocation,
+            filters: filters,
+            query: "",
+            radiusKM: 5
+        )
+
+        #expect(nearby == 0)
+        #expect(wider == 1)
+    }
+
+    @Test func nearestSigunguCode_returnsClosestInstitution() {
+        let catalog = [
+            makeTestKindergartenRaw(
+                kindercode: "FAR",
+                name: "먼유치원",
+                lat: 37.5512,
+                lng: 126.9882,
+                sigunguCode: "11140"
+            ),
+            makeTestKindergartenRaw(
+                kindercode: "NEAR",
+                name: "가까운유치원",
+                lat: 37.4985,
+                lng: 127.0280,
+                sigunguCode: "11680"
+            ),
+        ]
+
+        let code = sut.nearestSigunguCode(catalog: catalog, location: userLocation)
+
+        #expect(code == "11680")
+    }
 }

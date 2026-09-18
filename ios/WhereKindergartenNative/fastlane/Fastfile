@@ -34,7 +34,7 @@ platform :ios do
       in_house: false
     )
 
-    package_json = JSON.parse(File.read("../../../package.json"))
+    package_json = JSON.parse(File.read(File.expand_path("../../../package.json", __dir__)))
     app_version = package_json["version"]
 
     ipa_path = build_app(
@@ -46,23 +46,31 @@ platform :ios do
       xcargs: "CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates"
     )
 
-    upload_to_app_store(
-      api_key: api_key,
-      app_version: app_version,
-      ipa: ipa_path,
-      metadata_path: "./fastlane/metadata",
-      skip_screenshots: true,
-      force: true,
-      submit_for_review: true,
-      automatic_release: false,
-      phased_release: false,
-      precheck_include_in_app_purchases: false,
-      precheck_default_rule_level: :warn,
-      submission_information: {
-        add_id_info_uses_idfa: false,
-        export_compliance_uses_encryption: false
-      }
-    )
+    name_file = "fastlane/metadata/ko/name.txt"
+    name_backup = "fastlane/metadata/ko/name.txt.bak"
+    FileUtils.mv(name_file, name_backup) if File.exist?(name_file)
+
+    begin
+      upload_to_app_store(
+        api_key: api_key,
+        app_version: app_version,
+        ipa: ipa_path,
+        metadata_path: "./fastlane/metadata",
+        skip_screenshots: true,
+        force: true,
+        submit_for_review: true,
+        automatic_release: false,
+        phased_release: false,
+        precheck_include_in_app_purchases: false,
+        precheck_default_rule_level: :warn,
+        submission_information: {
+          add_id_info_uses_idfa: false,
+          export_compliance_uses_encryption: false
+        }
+      )
+    ensure
+      FileUtils.mv(name_backup, name_file) if File.exist?(name_backup)
+    end
   end
 
   desc "Build only (no upload)"
@@ -85,8 +93,7 @@ platform :ios do
       in_house: false
     )
 
-    # Read version from package.json
-    package_json = JSON.parse(File.read("../../../package.json"))
+    package_json = JSON.parse(File.read(File.expand_path("../../../package.json", __dir__)))
     app_version = package_json["version"]
 
     # Temporarily rename name.txt to avoid app name conflicts

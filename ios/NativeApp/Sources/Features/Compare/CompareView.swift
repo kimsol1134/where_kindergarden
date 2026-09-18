@@ -38,9 +38,9 @@ public struct CompareView: View {
                         if items.isEmpty {
                             EmptyStateView(
                                 icon: "square.split.2x2",
-                                title: "비교할 곳이 아직 없어요",
-                                message: "탐색에서 비교 버튼을 누르면 여기에 모여요.",
-                                ctaLabel: "탐색하러 가기",
+                                title: "아직 비교할 곳이 없어요",
+                                message: "주변 유치원 2곳을 담으면 한눈에 비교할 수 있어요.",
+                                ctaLabel: "유치원 담으러 가기",
                                 ctaAction: { viewModel.navigateToSearch() }
                             )
                             .accessibilityIdentifier("compare.emptyState")
@@ -57,7 +57,7 @@ public struct CompareView: View {
                                         Image(systemName: "plus.circle")
                                             .font(.body)
                                             .foregroundStyle(slateSoft)
-                                        Text("추가")
+                                        Text("한 곳 더 담기")
                                             .font(.caption2.weight(.medium))
                                             .foregroundStyle(slateSoft)
                                     }
@@ -139,10 +139,21 @@ public struct CompareView: View {
                                 names: items.map(\.name),
                                 shareURL: url
                             ) { didOpenKakao in
-                                viewModel.trackShareResult(
-                                    method: "kakao",
-                                    result: didOpenKakao ? .handoffSucceeded : .failed
-                                )
+                                Task { @MainActor in
+                                    if didOpenKakao {
+                                        viewModel.trackShareResult(
+                                            method: "kakao",
+                                            result: .handoffSucceeded
+                                        )
+                                    } else {
+                                        viewModel.trackShareResult(
+                                            method: "kakao",
+                                            result: .failed,
+                                            failureReason: "kakao_open_failed"
+                                        )
+                                        systemShareItem = SystemShareItem(url: url)
+                                    }
+                                }
                             }
                         }
                     } label: {

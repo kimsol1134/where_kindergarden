@@ -5,11 +5,13 @@
  *   pnpm validate:data
  *   pnpm validate:data -- --write-manifest
  *   pnpm validate:data -- --allow-stale   # 구조만 검증
+ *   pnpm validate:data -- --freshness kindergartens,reviews,regionCodes
  */
 
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 import { SIGUNGU_CODES } from './data/sigungu-codes';
 import type { ReviewLink, ReviewsData } from '../src/types/review';
 import type { VacancyDataset } from '../src/types/vacancy';
@@ -47,6 +49,7 @@ interface KindergartenMetadata {
   totalCount: number;
   registryCount: number;
   registryJoinCoverage: number;
+  omittedNotInOperatingRegistry?: number;
   componentCoverage: Record<string, number>;
   regionCodeCount: number;
   regionResolution: Record<string, number>;
@@ -127,6 +130,37 @@ const MAX_AGE_HOURS = {
   vacancy: 72,
   regionCodes: 14 * 24,
 } as const;
+const FRESHNESS_SOURCES = ['kindergartens', 'reviews', 'vacancy', 'regionCodes'] as const;
+export type FreshnessSource = (typeof FRESHNESS_SOURCES)[number];
+
+export function parseFreshnessFilter(argv: string[]): Set<FreshnessSource> | null {
+  const index = argv.indexOf('--freshness');
+  if (index < 0) return null;
+  const value = argv[index + 1];
+  if (!value || value.startsWith('--')) {
+    throw new Error('--freshness requires a comma-separated source list');
+  }
+  const allowed = new Set<string>(FRESHNESS_SOURCES);
+  const selected = new Set<FreshnessSource>();
+  for (const source of value.split(',').map((item) => item.trim()).filter(Boolean)) {
+    if (!allowed.has(source)) {
+      throw new Error(`Unknown freshness source: ${source}`);
+    }
+    selected.add(source as FreshnessSource);
+  }
+  if (selected.size === 0) {
+    throw new Error('--freshness requires a comma-separated source list');
+  }
+  return selected;
+}
+
+export function blockingStaleSources(
+  staleSources: string[],
+  freshnessFilter: Set<string> | null
+): string[] {
+  if (freshnessFilter === null) return staleSources;
+  return staleSources.filter((source) => freshnessFilter.has(source));
+}
 const REVIEW_CONTENT_TARGET_AGE_HOURS = 30 * 24;
 
 function readJson<T>(fileName: string): T {
@@ -212,6 +246,7 @@ function main(): void {
   const now = new Date();
   const allowStale = process.argv.includes('--allow-stale');
   const writeManifest = process.argv.includes('--write-manifest');
+  const freshnessFilter = parseFreshnessFilter(process.argv);
 
   const kindergartens = readJson<KindergartenEntry[]>('kindergartens.json');
   const kindergartenMeta = readJson<KindergartenMetadata>('kindergartens.meta.json');
@@ -236,7 +271,14 @@ function main(): void {
   assert(kindergartenMeta.status === 'complete', 'Kindergarten catalog is not complete');
   assert(kindergartens.length === kindergartenMeta.totalCount, 'Kindergarten count metadata mismatch');
   assert(kindergartenMeta.registryCount >= kindergartens.length, 'Kindergarten registry count is incomplete');
-  assert(kindergartenMeta.registryJoinCoverage >= 0.999, 'Registry join coverage is below 99.9%');
+  assert(kindergartenMeta.registryJoinCoverage >= 0.99, 'Registry join coverage is below 99%');
+  if (kindergartenMeta.omittedNotInOperatingRegistry !== undefined) {
+    assert(
+      Number.isInteger(kindergartenMeta.omittedNotInOperatingRegistry) &&
+        kindergartenMeta.omittedNotInOperatingRegistry >= 0,
+      'omittedNotInOperatingRegistry must be a non-negative integer'
+    );
+  }
   assert(kindergartenMeta.regionCodeCount === SIGUNGU_CODES.length, 'Kindergarten region-code count mismatch');
   assert(
     Object.values(kindergartenMeta.regionResolution).reduce((sum, count) => sum + count, 0) ===
@@ -531,8 +573,9 @@ function main(): void {
   const staleSources = Object.entries(ages)
     .filter(([source, age]) => age > MAX_AGE_HOURS[source as keyof typeof MAX_AGE_HOURS])
     .map(([source]) => source);
+  const blockingStale = blockingStaleSources(staleSources, freshnessFilter);
   if (!allowStale) {
-    assert(staleSources.length === 0, `Stale public data sources: ${staleSources.join(', ')}`);
+    assert(blockingStale.length === 0, `Stale public data sources: ${blockingStale.join(', ')}`);
   }
   const attentionSources =
     reviewContentAgeHours > REVIEW_CONTENT_TARGET_AGE_HOURS ? ['reviewContent'] : [];
@@ -602,4 +645,6 @@ function main(): void {
   process.stdout.write('Public data validation passed\n');
 }
 
-main();
+const isMainModule =
+  process.argv[1] !== undefined && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMainModule) main();

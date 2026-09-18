@@ -77,4 +77,23 @@ final class CompareAnalyticsSemanticsTests: XCTestCase {
         XCTAssertEqual(analytics.events.filter { $0.event == .compareShareResult }.count, 2)
         XCTAssertEqual(analytics.events.filter { $0.event == .compareShared }.count, 1)
     }
+
+    func testShareFailureKeepsReasonAndDoesNotCountAsShared() async {
+        let analytics = MockAnalytics()
+        let viewModel = await makeViewModel(
+            selection: CompareSelection(ids: ["A001", "A002"]),
+            analytics: analytics
+        )
+
+        viewModel.trackShareResult(
+            method: "kakao",
+            result: .failed,
+            failureReason: "kakao_open_failed"
+        )
+
+        let results = analytics.events.filter { $0.event == .compareShareResult }
+        XCTAssertEqual(results.count, 1)
+        XCTAssertEqual(results.first?.properties["failure_reason"], .string("kakao_open_failed"))
+        XCTAssertTrue(analytics.events.filter { $0.event == .compareShared }.isEmpty)
+    }
 }

@@ -5,7 +5,7 @@ is the machine-readable status used to block stale or partial publication.
 
 | Dataset | Authoritative source | Target freshness | Automated workflow | Publication gate |
 | --- | --- | --- | --- | --- |
-| Kindergarten disclosure | 유치원알리미 official disclosure + identifier registry | 14 days | `weekly-catalog-refresh.yml` | complete component coverage, 100% identifier join |
+| Kindergarten disclosure | 유치원알리미 official disclosure + identifier registry | 14 days | `weekly-catalog-refresh.yml` | complete component coverage; published rows keep official IDs; operating-registry join ≥ 99% (휴원·폐원 omitted) |
 | Region codes | 유치원알리미 official region-code table | 14 days | `weekly-catalog-refresh.yml` | official row set and required current codes |
 | Vacancy | 처음학교로 live vacancy pages | 72 hours | `daily-vacancy-refresh.yml` | all regions, at least 98% detail coverage |
 | Review links | Published review catalog + Naver discovery | discovery twice monthly; published content target 30 days | `semimonthly-review-discovery.yml`, `review-verification-incremental.yml` | strict candidate filter; removals and new publication remain human-approved |
@@ -42,6 +42,17 @@ collection must exit before replacing the last known-good public file. Workflows
 commit only the files they own, then poll the production freshness manifest for
 up to ten minutes so a repository update without a completed deployment fails
 visibly.
+
+Weekly catalog validation uses `--freshness kindergartens,reviews,regionCodes`.
+Daily vacancy validation uses `--freshness vacancy`. Structure, checksums and
+cross-references are still checked for every public file; only freshness SLAs
+are scoped to the datasets that workflow publishes. This keeps a stale vacancy
+snapshot from blocking an official catalog update, and the reverse.
+
+Disclosure rows missing from the current operating registry (휴원/폐원 제외
+검색) are omitted from the published catalog instead of failing the whole sync.
+The join still requires at least 99% of disclosure rows to match. Removed
+institutions retire their reviews through `sync:reviews-catalog`.
 
 ## Required GitHub secrets
 

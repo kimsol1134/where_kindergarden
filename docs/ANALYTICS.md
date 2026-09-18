@@ -119,7 +119,7 @@ D1 재방문율이 10% 미만이라 "설치 N일 후" 규칙은 대상자가 거
 
 | 항목 | 값 |
 |------|-----|
-| 발동 경로 | `compare_viewed` (비교 2곳 이상 조회), `favorite_milestone` (즐겨찾기 2곳째) |
+| 발동 경로 | `compare_shared` (비교표 공유 성공), `favorite_milestone` (즐겨찾기 2곳째) |
 | 세션당 최대 | 1회 (두 경로 합산) |
 | 앱 버전당 최대 | 1회 |
 | 최소 재요청 간격 | 90일 |
@@ -154,7 +154,7 @@ iOS가 표시 여부를 결정하고 앱에 알려주지 않으므로, 이 이�
 | `from_tab` | String | `Tab Changed`에서 필수 | `"search"` | 이전 탭. `search` / `compare` / `saved` / `more` |
 | `to_tab` | String | `Tab Changed`에서 필수 | `"compare"` | 이동한 탭. `search` / `compare` / `saved` / `more` |
 | `review_count` | Number (Int) | 조건부 | `5` | 해당 유치원의 외부 후기 링크 수. `has_reviews`만으로는 후기 1건과 10건이 구분되지 않아 함께 수집한다. `Detail Opened`, `Review Link Tapped`, `Review Submit Opened`에서 필수 |
-| `trigger` | String | `Review Prompt Triggered`에서 필수 | `"compare_viewed"` | 리뷰 요청을 유발한 행동. `compare_viewed` / `favorite_milestone` |
+| `trigger` | String | `Review Prompt Triggered`에서 필수 | `"compare_shared"` | 리뷰 요청을 유발한 행동. `compare_shared` / `favorite_milestone` |
 | `count` | Number (Int) | `Review Prompt Triggered`에서 필수 | `2` | 발동 시점의 비교 중 유치원 수 또는 즐겨찾기 총 개수 |
 
 ---

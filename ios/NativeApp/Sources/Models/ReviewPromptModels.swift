@@ -5,8 +5,10 @@ import Foundation
 /// D1 재방문율이 10% 미만이므로 "설치 N일 후" 같은 시간 기반 규칙은 대상자가 거의 남지 않는다.
 /// 대신 첫 세션 안에서 사용자가 앱의 가치를 실제로 경험한 순간에 요청한다.
 public enum ReviewPromptTrigger: String, Codable, Sendable, CaseIterable {
-    /// 비교표를 2곳 이상으로 실제 조회한 시점. 앱의 핵심 가치를 경험한 가장 강한 신호.
+    /// 비교표를 2곳 이상으로 실제 조회한 시점. 공유 성공 경로로 대체되어 신규 요청에는 쓰지 않는다.
     case compareViewed = "compare_viewed"
+    /// 비교표를 가족에게 보낸 뒤. 핵심 과제를 끝낸 뒤에만 리뷰를 물어 공유를 방해하지 않는다.
+    case compareShared = "compare_shared"
     /// 즐겨찾기 2곳째를 담은 시점. 비교까지 가지 않는 사용자를 담는 보조 경로.
     case favoriteMilestone = "favorite_milestone"
 }

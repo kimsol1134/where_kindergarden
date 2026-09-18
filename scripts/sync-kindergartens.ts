@@ -13,6 +13,7 @@
 import { createHash } from 'node:crypto';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { config as loadEnvironment } from 'dotenv';
 import { SIGUNGU_CODES, type SigunguCode } from './data/sigungu-codes';
 
@@ -31,6 +32,7 @@ const MAX_ATTEMPTS = 3;
 const REGISTRY_PAGE_SIZE = 1_000;
 const MIN_RECORD_COUNT = 6_500;
 const MIN_COMPONENT_COVERAGE = 0.99;
+export const MIN_REGISTRY_JOIN_COVERAGE = 0.99;
 
 type Cell = string | number | boolean | null;
 
@@ -45,8 +47,13 @@ interface SourceSpec {
   requiredHeaders: string[];
 }
 
-interface RegistryRow {
+export interface RegistryRow {
   id: string;
+  name: string;
+  address: string;
+}
+
+export interface DisclosureJoinRow {
   name: string;
   address: string;
 }
@@ -103,7 +110,7 @@ interface KindergartenRecord {
   cctv_count: number;
 }
 
-interface RegionResolution {
+export interface RegionResolution {
   region: SigunguCode;
   method: 'official-address' | 'current-reform-rule' | 'previous-address';
 }
@@ -222,6 +229,47 @@ function stripTags(value: string): string {
 
 function recordKey(name: Cell | undefined, address: Cell | undefined): string {
   return `${cleanText(name)}\u0000${cleanText(address)}`;
+}
+
+export function joinDisclosureToOperatingRegistry<T extends DisclosureJoinRow>(
+  rows: T[],
+  registry: RegistryRow[]
+): {
+  matched: Array<{ row: T; registryRow: RegistryRow; key: string }>;
+  unmatched: Array<{ row: T; key: string }>;
+} {
+  const registryByKey = new Map<string, RegistryRow>();
+  for (const row of registry) {
+    const key = recordKey(row.name, row.address);
+    if (registryByKey.has(key)) {
+      throw new Error(`Duplicate registry key: ${row.name} / ${row.address}`);
+    }
+    registryByKey.set(key, row);
+  }
+
+  const matched: Array<{ row: T; registryRow: RegistryRow; key: string }> = [];
+  const unmatched: Array<{ row: T; key: string }> = [];
+  for (const row of rows) {
+    const key = recordKey(row.name, row.address);
+    const registryRow = registryByKey.get(key);
+    if (registryRow) {
+      matched.push({ row, registryRow, key });
+    } else {
+      unmatched.push({ row, key });
+    }
+  }
+  return { matched, unmatched };
+}
+
+export function assertRegistryJoinCoverage(matchedCount: number, disclosureCount: number): number {
+  const coverage = disclosureCount === 0 ? 0 : matchedCount / disclosureCount;
+  if (coverage < MIN_REGISTRY_JOIN_COVERAGE) {
+    throw new Error(
+      `Operating registry join coverage below ${(MIN_REGISTRY_JOIN_COVERAGE * 100).toFixed(0)}%: ` +
+        `${matchedCount}/${disclosureCount} (${(coverage * 100).toFixed(2)}%)`
+    );
+  }
+  return coverage;
 }
 
 function parseNumber(value: Cell | undefined): number {
@@ -348,6 +396,7 @@ function registryRequestBody(pageIndex: number): URLSearchParams {
   for (const value of ['01', '02', '03', '04', '05']) {
     body.append('kinderEstablishCB', value);
   }
+  // 체크 시 휴원(KDSP_YN)·폐원(KDCL_YN)을 검색에서 제외한다.
   body.append('kinderStatusCB', 'KDSP_YN');
   body.append('kinderStatusCB', 'KDCL_YN');
   return body;
@@ -439,18 +488,28 @@ function reformRule(name: string, address: string): SigunguCode | null {
   return null;
 }
 
-function regionFromAddress(office: string, address: string): SigunguCode | null {
-  const currentSido = office.replace(/교육청$/, '');
-  const candidates = SIGUNGU_CODES.filter((region) => region.sidoName === currentSido);
-  if (candidates.length === 1) return candidates[0];
-
+function matchSigungu(address: string, candidates: SigunguCode[]): SigunguCode | null {
   const matches = candidates
     .filter((region) => address.includes(region.sggName))
     .sort((left, right) => right.sggName.length - left.sggName.length);
   return matches[0] ?? null;
 }
 
-function resolveRegion(
+function regionFromAddress(office: string, address: string): SigunguCode | null {
+  const currentSido = office.replace(/교육청$/, '').trim();
+  if (currentSido) {
+    const candidates = SIGUNGU_CODES.filter((region) => region.sidoName === currentSido);
+    if (candidates.length === 1) return candidates[0];
+    const fromOffice = matchSigungu(address, candidates);
+    if (fromOffice) return fromOffice;
+  }
+
+  const fromSidoInAddress = SIGUNGU_CODES.filter((region) => address.includes(region.sidoName));
+  if (fromSidoInAddress.length === 1) return fromSidoInAddress[0];
+  return matchSigungu(address, fromSidoInAddress);
+}
+
+export function resolveRegion(
   name: string,
   office: string,
   address: string,
@@ -598,27 +657,35 @@ async function main(): Promise<void> {
     throw new Error(`Official general dataset is unexpectedly small: ${general.dataset.body.length}`);
   }
 
-  const registryByKey = new Map<string, RegistryRow>();
-  for (const row of registry) {
-    const key = recordKey(row.name, row.address);
-    if (registryByKey.has(key)) throw new Error(`Duplicate registry key: ${row.name} / ${row.address}`);
-    registryByKey.set(key, row);
-  }
-
   const publicPath = path.join(process.cwd(), 'public', 'data', 'kindergartens.json');
   const previousRecords = fs.existsSync(publicPath)
     ? (JSON.parse(fs.readFileSync(publicPath, 'utf8')) as KindergartenRecord[])
     : [];
   const previousByID = new Map(previousRecords.map((record) => [record.kindercode, record]));
 
-  const joined = general.dataset.body.map((generalRow) => {
-    const key = recordKey(general.get(generalRow, '유치원명'), general.get(generalRow, '주소'));
-    const registryRow = registryByKey.get(key);
-    if (!registryRow) {
-      throw new Error(`Official identifier join failed: ${key.replace('\u0000', ' / ')}`);
-    }
-    return { key, generalRow, registryRow };
-  });
+  const disclosureRows = general.dataset.body.map((generalRow) => ({
+    generalRow,
+    name: cleanText(general.get(generalRow, '유치원명')),
+    address: cleanText(general.get(generalRow, '주소')),
+  }));
+  const joinResult = joinDisclosureToOperatingRegistry(disclosureRows, registry);
+  for (const missed of joinResult.unmatched) {
+    warn(`omitting institution not in operating registry: ${missed.row.name} / ${missed.row.address}`);
+  }
+  log(
+    `operating registry join: ${joinResult.matched.length.toLocaleString('ko-KR')}/` +
+      `${disclosureRows.length.toLocaleString('ko-KR')} ` +
+      `(omitted ${joinResult.unmatched.length.toLocaleString('ko-KR')} 휴원·폐원 등)`
+  );
+  const registryJoinCoverage = assertRegistryJoinCoverage(
+    joinResult.matched.length,
+    disclosureRows.length
+  );
+  const joined = joinResult.matched.map((entry) => ({
+    key: entry.key,
+    generalRow: entry.row.generalRow,
+    registryRow: entry.registryRow,
+  }));
   if (new Set(joined.map((entry) => entry.registryRow.id)).size !== joined.length) {
     throw new Error('Official identifier join produced duplicate IDs');
   }
@@ -777,12 +844,18 @@ async function main(): Promise<void> {
 
   records.sort((left, right) => left.name.localeCompare(right.name, 'ko'));
   const recordIDs = new Set(records.map((record) => record.kindercode));
-  if (recordIDs.size !== records.length || records.length !== general.dataset.body.length) {
+  if (recordIDs.size !== records.length || records.length !== joined.length) {
     throw new Error(`Final record quality failure: rows=${records.length}, IDs=${recordIDs.size}`);
   }
 
+  const publishedKeys = new Set(joined.map((entry) => entry.key));
   const componentCoverage = Object.fromEntries(
-    Object.entries(tables).map(([name, table]) => [name, table.rowsByKey.size / records.length])
+    Object.entries(tables).map(([name, table]) => [
+      name,
+      records.length === 0
+        ? 0
+        : Array.from(publishedKeys).filter((key) => table.rowsByKey.has(key)).length / records.length,
+    ])
   );
   const lowCoverage = Object.entries(componentCoverage).filter(
     ([, coverage]) => coverage < MIN_COMPONENT_COVERAGE
@@ -807,7 +880,8 @@ async function main(): Promise<void> {
     collectedAt: new Date().toISOString(),
     totalCount: records.length,
     registryCount: registry.length,
-    registryJoinCoverage: 1,
+    registryJoinCoverage,
+    omittedNotInOperatingRegistry: joinResult.unmatched.length,
     componentCoverage,
     regionCodeCount: SIGUNGU_CODES.length,
     regionResolution: regionMethodCounts,
@@ -819,6 +893,8 @@ async function main(): Promise<void> {
       outdoor_playground_area:
         '2026 공개 교실면적 자료에서 제공되지 않아 0으로 설정; 과거 조리실 면적 오매핑을 제거함',
       has_playground: '실내체육장 또는 놀이시설 안전검사 대상 여부로 계산',
+      omittedNotInOperatingRegistry:
+        '공시자료에 있으나 현재 운영 명부(휴원·폐원 제외)에 없는 기관은 게시하지 않음',
     },
   };
   const metadataPayload = `${JSON.stringify(metadata, null, 2)}\n`;
@@ -843,8 +919,12 @@ async function main(): Promise<void> {
   }
 }
 
-main().catch((error) => {
-  const message = error instanceof Error ? error.stack ?? error.message : String(error);
-  process.stderr.write(`Kindergarten sync failed: ${message}\n`);
-  process.exit(1);
-});
+const isMainModule =
+  process.argv[1] !== undefined && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMainModule) {
+  main().catch((error) => {
+    const message = error instanceof Error ? error.stack ?? error.message : String(error);
+    process.stderr.write(`Kindergarten sync failed: ${message}\n`);
+    process.exit(1);
+  });
+}

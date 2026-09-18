@@ -50,7 +50,7 @@ jobs:
         run: pnpm sync:reviews-catalog
 
       - name: Validate all public data and refresh manifest
-        run: pnpm validate:data -- --write-manifest
+        run: pnpm validate:data -- --write-manifest --freshness kindergartens,reviews,regionCodes
 
       - name: Run tests and type-check
         run: |

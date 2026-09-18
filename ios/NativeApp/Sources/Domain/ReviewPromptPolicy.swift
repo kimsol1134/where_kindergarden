@@ -15,8 +15,10 @@ public enum ReviewPromptPolicy {
 
     /// 즐겨찾기 경로의 발동 기준. 2곳째부터 "후보를 모으는 중"으로 본다.
     public static let favoriteMilestoneThreshold = 2
-    /// 비교표 경로의 발동 기준. 최소 2곳을 비교해야 비교표가 의미를 갖는다.
+    /// 비교표 조회 경로의 발동 기준. 공유 성공 경로로 대체되어 신규 요청에는 쓰지 않는다.
     public static let compareViewedThreshold = 2
+    /// 비교 공유 성공 경로. 공유 한 번이면 결정을 끝낸 것으로 본다.
+    public static let compareSharedThreshold = 1
 
     private static let secondsPerDay: TimeInterval = 24 * 60 * 60
 
@@ -55,6 +57,8 @@ public enum ReviewPromptPolicy {
         switch trigger {
         case .compareViewed:
             return count >= compareViewedThreshold
+        case .compareShared:
+            return count >= compareSharedThreshold
         case .favoriteMilestone:
             return count >= favoriteMilestoneThreshold
         }
