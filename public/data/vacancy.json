@@ -1,13 +1,13 @@
 {
-  "version": "2026-09-21T00:55:20.412Z",
+  "version": "2026-09-22T01:36:15.956Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3042,
   "positiveCount": 2366,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-09-21T00:28:05.505Z",
-    "completedAt": "2026-09-21T00:55:20.412Z",
+    "startedAt": "2026-09-22T01:06:31.087Z",
+    "completedAt": "2026-09-22T01:36:15.956Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -59098,8 +59098,8 @@
     "e6ca9bb4-d187-463a-94ec-bfc5a7b10197": {
       "kindercode": "e6ca9bb4-d187-463a-94ec-bfc5a7b10197",
       "aidYear": "2026",
-      "vacancyCount": 3,
-      "updatedAt": "2026-08-12",
+      "vacancyCount": 4,
+      "updatedAt": "2026-09-21",
       "preschCd": "9000000810",
       "upperEduOfficeCd": "P100000001",
       "eduOfficeCd": "P100000246",
@@ -59118,7 +59118,7 @@
           "rowNo": 2,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 1
+          "vacancyCount": 2
         }
       ]
     },
@@ -66324,7 +66324,7 @@
       "kindercode": "1ecec08d-074c-b044-e053-0a32095ab044",
       "aidYear": "2026",
       "vacancyCount": 35,
-      "updatedAt": "2026-03-23",
+      "updatedAt": "2026-09-21",
       "preschCd": "J100004149",
       "upperEduOfficeCd": "J100000001",
       "eduOfficeCd": "J100000412",
@@ -68533,8 +68533,8 @@
     "1ecec08c-fdbc-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fdbc-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-18",
+      "vacancyCount": 2,
+      "updatedAt": "2026-09-21",
       "preschCd": "S100003232",
       "upperEduOfficeCd": "S100000001",
       "eduOfficeCd": "S100003752",
@@ -68547,7 +68547,7 @@
           "rowNo": 1,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 1
+          "vacancyCount": 2
         }
       ]
     },
@@ -69588,8 +69588,8 @@
     "dad15845-6e9b-4620-9b27-576b346d8809": {
       "kindercode": "dad15845-6e9b-4620-9b27-576b346d8809",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-18",
+      "vacancyCount": 2,
+      "updatedAt": "2026-09-21",
       "preschCd": "9000000800",
       "upperEduOfficeCd": "C100000001",
       "eduOfficeCd": "C100000312",
@@ -69601,6 +69601,12 @@
         {
           "rowNo": 1,
           "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        },
+        {
+          "rowNo": 2,
+          "age": "4세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 1
         }
