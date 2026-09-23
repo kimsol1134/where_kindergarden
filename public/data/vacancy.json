@@ -1,13 +1,13 @@
 {
-  "version": "2026-09-22T01:36:15.956Z",
+  "version": "2026-09-23T01:18:26.931Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
-  "totalCount": 3042,
+  "totalCount": 3043,
   "positiveCount": 2366,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-09-22T01:06:31.087Z",
-    "completedAt": "2026-09-22T01:36:15.956Z",
+    "startedAt": "2026-09-23T00:54:04.085Z",
+    "completedAt": "2026-09-23T01:18:26.931Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -40324,6 +40324,20 @@
         }
       ]
     },
+    "4457a012-0c4f-42e3-adb9-972710fa80c4": {
+      "kindercode": "4457a012-0c4f-42e3-adb9-972710fa80c4",
+      "aidYear": "2026",
+      "vacancyCount": 0,
+      "updatedAt": "2026-03-20",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
+      "foundType": "국공립",
+      "name": "솔향유치원",
+      "address": "강원특별자치도 강릉시 보래미하길 78 (포남동)",
+      "phone": "033-650-0910",
+      "detail": []
+    },
     "1ecec08c-f49e-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f49e-b044-e053-0a32095ab044",
       "aidYear": "2026",
@@ -51236,8 +51250,8 @@
     "172e28be-4dae-47d2-80cb-a31f6f7a381c": {
       "kindercode": "172e28be-4dae-47d2-80cb-a31f6f7a381c",
       "aidYear": "2026",
-      "vacancyCount": 18,
-      "updatedAt": "2026-09-10",
+      "vacancyCount": 17,
+      "updatedAt": "2026-08-24",
       "preschCd": "9000001337",
       "upperEduOfficeCd": "U100000001",
       "eduOfficeCd": "F100000072",
@@ -51248,12 +51262,6 @@
       "detail": [
         {
           "rowNo": 1,
-          "age": "3세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        },
-        {
-          "rowNo": 2,
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 17
@@ -69588,8 +69596,8 @@
     "dad15845-6e9b-4620-9b27-576b346d8809": {
       "kindercode": "dad15845-6e9b-4620-9b27-576b346d8809",
       "aidYear": "2026",
-      "vacancyCount": 2,
-      "updatedAt": "2026-09-21",
+      "vacancyCount": 1,
+      "updatedAt": "2026-08-18",
       "preschCd": "9000000800",
       "upperEduOfficeCd": "C100000001",
       "eduOfficeCd": "C100000312",
@@ -69601,12 +69609,6 @@
         {
           "rowNo": 1,
           "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        },
-        {
-          "rowNo": 2,
-          "age": "4세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 1
         }
