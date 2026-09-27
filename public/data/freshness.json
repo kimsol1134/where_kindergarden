@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-27T01:15:49.348Z",
+  "generatedAt": "2026-09-27T23:51:52.907Z",
   "overallStatus": "attention",
   "staleSources": [],
   "attentionSources": [
@@ -11,19 +11,19 @@
       "status": "complete",
       "sourceVersion": "20261",
       "sourceLabel": "2026년 1차",
-      "checkedAt": "2026-09-20T23:19:13.084Z",
+      "checkedAt": "2026-09-27T23:51:50.995Z",
       "maxAgeHours": 336,
       "totalCount": 7150,
       "registryJoinCoverage": 0.9997203579418344
     },
     "reviews": {
       "status": "complete",
-      "buildVersion": "2026-09-20",
-      "catalogReconciledAt": "2026-09-20T23:19:14.650Z",
+      "buildVersion": "2026-09-27",
+      "catalogReconciledAt": "2026-09-27T23:51:51.999Z",
       "catalogMaxAgeHours": 336,
       "contentLatestCollectedAt": "2026-07-26T10:10:52.619701",
       "contentTargetAgeHours": 720,
-      "contentAgeHours": 1512.0824247222222,
+      "contentAgeHours": 1534.6834133333334,
       "contentStatus": "needs_discovery",
       "totalCount": 6055,
       "kindergartenCount": 1892,
@@ -48,7 +48,7 @@
     },
     "regionCodes": {
       "status": "complete",
-      "checkedAt": "2026-09-20T23:18:01.155Z",
+      "checkedAt": "2026-09-27T23:50:47.751Z",
       "maxAgeHours": 336,
       "totalCount": 261,
       "source": "https://e-childschoolinfo.moe.go.kr/openApi/sidoSigunguCode.do"
