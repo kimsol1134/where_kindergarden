@@ -1,21 +1,21 @@
 {
-  "version": "2026-09-28T01:35:19.162Z",
+  "version": "2026-09-29T02:43:33.558Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3043,
-  "positiveCount": 2366,
+  "positiveCount": 2364,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-09-28T01:09:12.316Z",
-    "completedAt": "2026-09-28T01:35:19.162Z",
+    "startedAt": "2026-09-29T02:16:06.979Z",
+    "completedAt": "2026-09-29T02:43:33.558Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2366,
-    "detailSucceeded": 2354,
+    "detailRequested": 2364,
+    "detailSucceeded": 2352,
     "detailFailed": 12,
-    "detailCoverage": 0.9949281487743026,
+    "detailCoverage": 0.9949238578680203,
     "failures": [
       {
         "stage": "detail",
@@ -47741,23 +47741,16 @@
     "60b08f67-bf98-41b7-9d5d-4241980360c7": {
       "kindercode": "60b08f67-bf98-41b7-9d5d-4241980360c7",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-07-16",
-      "preschCd": "9000001348",
-      "upperEduOfficeCd": "N100000001",
-      "eduOfficeCd": "N100000075",
+      "vacancyCount": 0,
+      "updatedAt": "2026-09-28",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "예목유치원",
       "address": "충청남도 예산군 삽교읍 예학로 187",
       "phone": "070-4739-4723",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-fb1d-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fb1d-b044-e053-0a32095ab044",
@@ -59243,29 +59236,16 @@
     "1ecec08d-0f3b-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0f3b-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 2,
-      "updatedAt": "2026-09-01",
-      "preschCd": "P100002695",
-      "upperEduOfficeCd": "P100000001",
-      "eduOfficeCd": "P100000246",
+      "vacancyCount": 0,
+      "updatedAt": "2026-09-28",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "전주온샘유치원",
       "address": "전북특별자치도 전주시 덕진구 심방죽로 24",
       "phone": "063-242-5412",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        },
-        {
-          "rowNo": 2,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-0ae2-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0ae2-b044-e053-0a32095ab044",
@@ -63359,8 +63339,8 @@
     "41756ebd-3bde-4511-a168-1e1b643c7033": {
       "kindercode": "41756ebd-3bde-4511-a168-1e1b643c7033",
       "aidYear": "2026",
-      "vacancyCount": 9,
-      "updatedAt": "2026-03-16",
+      "vacancyCount": 5,
+      "updatedAt": "2026-09-28",
       "preschCd": "N100002909",
       "upperEduOfficeCd": "N100000001",
       "eduOfficeCd": "N100000079",
@@ -63373,7 +63353,7 @@
           "rowNo": 1,
           "age": "3세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 7
+          "vacancyCount": 3
         },
         {
           "rowNo": 2,
