@@ -1,13 +1,13 @@
 {
-  "version": "2026-09-29T02:43:33.558Z",
+  "version": "2026-09-30T01:57:43.568Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
-  "totalCount": 3043,
+  "totalCount": 3044,
   "positiveCount": 2364,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-09-29T02:16:06.979Z",
-    "completedAt": "2026-09-29T02:43:33.558Z",
+    "startedAt": "2026-09-30T01:30:17.655Z",
+    "completedAt": "2026-09-30T01:57:43.568Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -12586,23 +12586,16 @@
     "1ecec08c-eec1-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-eec1-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-09-15",
-      "preschCd": "S100003498",
-      "upperEduOfficeCd": "S100000001",
-      "eduOfficeCd": "S100003752",
+      "vacancyCount": 0,
+      "updatedAt": "2026-09-29",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "사립",
       "name": "대자유치원",
       "address": "경상남도 창원시 마산합포구 문신길 214",
       "phone": "055-245-0108",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-ef53-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-ef53-b044-e053-0a32095ab044",
@@ -50826,16 +50819,23 @@
     "1ecec08c-f7ef-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f7ef-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": null,
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-09-29",
+      "preschCd": "R100001304",
+      "upperEduOfficeCd": "R100000001",
+      "eduOfficeCd": "R100000168",
       "foundType": "국공립",
       "name": "용황유치원",
       "address": "경상북도 경주시 원지길12번길 49",
       "phone": "054-776-3782",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "5세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08c-f2c1-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f2c1-b044-e053-0a32095ab044",
@@ -57705,23 +57705,16 @@
     "74c62b56-6edb-4c92-b037-7b7dc5bd9c40": {
       "kindercode": "74c62b56-6edb-4c92-b037-7b7dc5bd9c40",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-04",
-      "preschCd": "C100002279",
-      "upperEduOfficeCd": "C100000001",
-      "eduOfficeCd": "C100000312",
+      "vacancyCount": 0,
+      "updatedAt": "2026-09-30",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "일광유치원",
       "address": "부산광역시 기장군 해빛로 42 해빛로42",
       "phone": "0519678800",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "5세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-fd89-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fd89-b044-e053-0a32095ab044",
@@ -60135,6 +60128,27 @@
           "age": "혼합연령(4~5세)",
           "course": "교육과정+방과후과정",
           "vacancyCount": 8
+        }
+      ]
+    },
+    "1ecec08d-05db-b044-e053-0a32095ab044": {
+      "kindercode": "1ecec08d-05db-b044-e053-0a32095ab044",
+      "aidYear": "2026",
+      "vacancyCount": 9,
+      "updatedAt": "2026-09-29",
+      "preschCd": "P100001755",
+      "upperEduOfficeCd": "P100000001",
+      "eduOfficeCd": "P100000288",
+      "foundType": "국공립",
+      "name": "조림초등학교병설유치원",
+      "address": "전북특별자치도 진안군 봉학로 52",
+      "phone": "063-432-6289",
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "혼합연령(3~5세)",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 9
         }
       ]
     },
