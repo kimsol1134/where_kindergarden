@@ -56,6 +56,14 @@ export function Footer() {
                   비교하기
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/guides"
+                  className="hover:text-[var(--brand-leaf)]"
+                >
+                  유치원 선택 가이드
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

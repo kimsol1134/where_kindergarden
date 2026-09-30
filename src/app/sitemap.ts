@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { guides, guidePath } from './guides/_lib/guides';
 
 // 정적 빌드(output: 'export')를 위한 설정
 export const dynamic = 'force-static';
@@ -12,6 +13,11 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://where-kindergarden.vercel.app';
   const currentDate = new Date();
+  const guideUrls = [
+    '/guides',
+    '/guides/kindergarten-selection',
+    ...guides.map((guide) => guidePath(guide.slug)),
+  ];
 
   return [
     {
@@ -44,6 +50,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/guides/kindergarten-selection`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    ...guideUrls
+      .filter((path) => path !== '/guides/kindergarten-selection')
+      .map((path) => ({
+        url: `${baseUrl}${path}`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly' as const,
+        priority: path === '/guides' ? 0.7 : 0.6,
+      })),
     {
       url: `${baseUrl}/privacy`,
       lastModified: currentDate,

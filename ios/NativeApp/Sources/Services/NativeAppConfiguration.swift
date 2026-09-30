@@ -29,7 +29,8 @@ public struct NativeAppConfiguration: Sendable {
     public static let defaultCompareShareBaseURL = URL(string: "https://where-kindergarden.vercel.app/compare")!
     public static let defaultShareImageURL = URL(string: "https://where-kindergarden.vercel.app/og-image.png")!
     public static let totalKindergartenCount = 7950
-    public static let shareDescription = "교육비, 교사 비율, 시설 등 한눈에 비교해봤어요!"
+    public static let shareTitle = "우리동네 유치원 비교표"
+    public static let shareDescription = "위치, 통학버스, 급식, 면적, 후기까지 한눈에 비교해봤어요."
     public static let defaultAdMobBannerUnitID: String = {
         #if DEBUG
         return "ca-app-pub-3940256099942544/2435281174"
@@ -75,6 +76,14 @@ public struct NativeAppConfiguration: Sendable {
         self.kindergartensResourceName = kindergartensResourceName
         self.reviewsResourceName = reviewsResourceName
         self.vacancyResourceName = vacancyResourceName
+    }
+
+    public static func compareShareMessage(url: URL) -> String {
+        """
+        \(shareTitle)
+        \(shareDescription)
+        \(url.absoluteString)
+        """
     }
 
     public static func live(bundle: Bundle = .main) -> NativeAppConfiguration {

@@ -91,6 +91,20 @@ struct CompareUseCaseTests {
         #expect(url?.absoluteString.contains("ids=A001,A002") == true)
     }
 
+    @Test func shareURL_withShareMedium_addsAttributionParameters() throws {
+        let baseURL = URL(string: "https://example.com/compare?ref=existing")!
+
+        let url = sut.shareURL(ids: ["A001", "A002"], baseURL: baseURL, shareMedium: "kakao")
+        let components = URLComponents(url: try #require(url), resolvingAgainstBaseURL: false)
+        let queryItems = components?.queryItems ?? []
+
+        #expect(queryItems.contains(URLQueryItem(name: "ref", value: "existing")))
+        #expect(queryItems.contains(URLQueryItem(name: "ids", value: "A001,A002")))
+        #expect(queryItems.contains(URLQueryItem(name: "utm_source", value: "native_ios")))
+        #expect(queryItems.contains(URLQueryItem(name: "utm_medium", value: "kakao")))
+        #expect(queryItems.contains(URLQueryItem(name: "utm_campaign", value: "compare_share")))
+    }
+
     @Test func shareURL_emptyIds_returnsNil() {
         let baseURL = URL(string: "https://example.com/compare")!
 

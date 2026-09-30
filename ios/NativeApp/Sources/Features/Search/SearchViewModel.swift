@@ -500,7 +500,44 @@ public final class SearchViewModel {
             isFavorite: isFavorite(kindergarten),
             fitReasons: fitReasons(for: kindergarten),
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
-            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) },
+            onCallTapped: { [weak self] in
+                self?.analytics?.trackContactTapped(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "detail"
+                )
+            },
+            onHomepageTapped: { [weak self] in
+                self?.analytics?.trackHomepageOpened(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "detail"
+                )
+            },
+            onDirectionsTapped: { [weak self] in
+                self?.analytics?.trackDirectionsOpened(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "detail"
+                )
+            },
+            onReviewTapped: { [weak self] review in
+                self?.analytics?.trackReviewOpened(
+                    kindercode: kindergarten.kindercode,
+                    reviewSource: review.source,
+                    reviewCount: self?.reviews(for: kindergarten.kindercode).count ?? 0,
+                    source: "detail"
+                )
+            },
+            onAlertRequested: { [weak self] alertType in
+                self?.analytics?.trackAlertRequested(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    alertType: alertType,
+                    source: "detail"
+                )
+            }
         )
     }
 

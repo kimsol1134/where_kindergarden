@@ -24,6 +24,12 @@ public enum AnalyticsEvent: String, Sendable {
     case compareShared     = "Compare Shared"
     case filterApplied     = "Filter Applied"
     case tabChanged        = "Tab Changed"
+    // Intent events — 사용자가 특정 유치원에 행동(전환 신호)을 보인 시점.
+    case contactTapped     = "Contact Tapped"
+    case homepageOpened    = "Homepage Opened"
+    case directionsOpened  = "Directions Opened"
+    case reviewOpened      = "Review Opened"
+    case alertRequested    = "Alert Requested"
 }
 
 public protocol AnalyticsTracking: AnyObject {
@@ -34,6 +40,58 @@ public protocol AnalyticsTracking: AnyObject {
 extension AnalyticsTracking {
     public func track(event: AnalyticsEvent) {
         track(event: event, properties: [:])
+    }
+
+    /// 전화 걸기 탭 — 앱이 가진 가장 강한 전환(의도) 신호.
+    /// - Parameter source: 발생 화면 (`detail` / `saved` 등).
+    public func trackContactTapped(kindercode: String, type: String, source: String) {
+        track(event: .contactTapped, properties: [
+            "kindercode": .string(kindercode),
+            "kindergarten_type": .string(type),
+            "source": .string(source),
+        ])
+    }
+
+    /// 홈페이지 열기 탭 — 깊은 탐색 의도.
+    public func trackHomepageOpened(kindercode: String, type: String, source: String) {
+        track(event: .homepageOpened, properties: [
+            "kindercode": .string(kindercode),
+            "kindergarten_type": .string(type),
+            "source": .string(source),
+        ])
+    }
+
+    /// 지도/길찾기 열기 탭 — 오프라인 방문 의도.
+    public func trackDirectionsOpened(kindercode: String, type: String, source: String) {
+        track(event: .directionsOpened, properties: [
+            "kindercode": .string(kindercode),
+            "kindergarten_type": .string(type),
+            "source": .string(source),
+        ])
+    }
+
+    /// 후기 링크 열기 탭 — 신뢰 검증 단계 + 후기 콘텐츠 가치 측정.
+    /// - Parameter reviewSource: 후기 플랫폼 (`naver_blog` 등). 화면 출처는 `source`.
+    public func trackReviewOpened(kindercode: String, reviewSource: String, reviewCount: Int, source: String) {
+        track(event: .reviewOpened, properties: [
+            "kindercode": .string(kindercode),
+            "review_source": .string(reviewSource),
+            "review_count": .int(reviewCount),
+            "source": .string(source),
+        ])
+    }
+
+    /// 모집/빈자리 알림 수요 확인용 fake-door 이벤트.
+    /// - Parameters:
+    ///   - alertType: `admission_deadline` / `vacancy` 등 알림 종류.
+    ///   - source: 발생 화면 (`detail` / `saved` / `compare` 등).
+    public func trackAlertRequested(kindercode: String, type: String, alertType: String, source: String) {
+        track(event: .alertRequested, properties: [
+            "kindercode": .string(kindercode),
+            "kindergarten_type": .string(type),
+            "alert_type": .string(alertType),
+            "source": .string(source),
+        ])
     }
 }
 

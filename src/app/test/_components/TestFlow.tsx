@@ -360,7 +360,7 @@ export function TestFlow() {
               <ResultIcon className="w-10 h-10 text-white drop-shadow-md" />
             </div>
             <p className="text-white/80 text-sm font-medium mb-2">테스트 결과</p>
-            <h1 className="text-2xl font-bold text-white drop-shadow-sm">{result.title}</h1>
+            <h2 className="text-2xl font-bold text-white drop-shadow-sm">{result.title}</h2>
           </div>
 
           {/* 설명 */}

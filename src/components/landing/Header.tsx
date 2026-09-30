@@ -23,6 +23,9 @@ export function Header() {
             <Link href="#preview" className="transition-colors hover:text-[var(--brand-leaf)]">
               미리보기
             </Link>
+            <Link href="/guides" className="transition-colors hover:text-[var(--brand-leaf)]">
+              가이드
+            </Link>
             <Link href="#faq" className="transition-colors hover:text-[var(--brand-leaf)]">
               자주 묻는 질문
             </Link>
@@ -65,6 +68,13 @@ export function Header() {
                 className="rounded-xl px-3 py-2 transition-colors hover:bg-[var(--brand-mist)] hover:text-[var(--brand-leaf)]"
               >
                 자주 묻는 질문
+              </Link>
+              <Link
+                href="/guides"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-3 py-2 transition-colors hover:bg-[var(--brand-mist)] hover:text-[var(--brand-leaf)]"
+              >
+                유치원 선택 가이드
               </Link>
             </nav>
             <div className="mt-3 border-t border-[rgba(203,188,174,0.2)] pt-3">

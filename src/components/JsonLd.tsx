@@ -17,23 +17,17 @@ interface WebsiteJsonLdProps {
 export function WebsiteJsonLd({
   url = 'https://where-kindergarden.vercel.app',
   name = '우리동네 유치원',
-  description = '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 전국 7,950개 이상의 유치원 정보를 한눈에 확인할 수 있습니다.',
+  description = '현재 위치나 주소 기준으로 가까운 유치원을 찾고 지도, 거리, 정원, 셔틀버스, 방과후, 급식 정보를 한눈에 비교하세요.',
 }: WebsiteJsonLdProps) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name,
+    alternateName: ['내 주변 유치원 찾기', '주변 유치원 검색'],
     url,
     description,
     inLanguage: 'ko-KR',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${url}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+    image: `${url}/og-image-20260612.png`,
   };
 
   return (

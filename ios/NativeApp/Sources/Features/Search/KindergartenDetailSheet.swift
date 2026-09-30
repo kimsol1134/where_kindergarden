@@ -4,7 +4,9 @@ import SwiftUI
 
 struct KindergartenDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
     @State private var showAllReviews = false
+    @State private var didRequestAlert = false
     let kindergarten: Kindergarten
     let reviews: [ReviewLink]
     let reviewsVersion: String?
@@ -17,6 +19,12 @@ struct KindergartenDetailSheet: View {
     let fitReasons: [KindergartenFitReason]
     let onToggleCompare: () -> Void
     let onToggleFavorite: () -> Void
+    // Intent tracking — 기본값 no-op이라 프리뷰/기존 호출부는 영향받지 않음.
+    var onCallTapped: () -> Void = {}
+    var onHomepageTapped: () -> Void = {}
+    var onDirectionsTapped: () -> Void = {}
+    var onReviewTapped: (ReviewLink) -> Void = { _ in }
+    var onAlertRequested: (_ alertType: String) -> Void = { _ in }
 
     // MARK: - Computed Properties
 
@@ -118,6 +126,20 @@ struct KindergartenDetailSheet: View {
         return "후기 \(reviews.count)건 · 최근 \(latestDate)"
     }
 
+    private var alertRequestType: String {
+        vacancyCount > 0 ? "admission_deadline" : "vacancy"
+    }
+
+    private var alertRequestTitle: String {
+        vacancyCount > 0 ? "모집 일정 알림 받기" : "빈자리 알림 받기"
+    }
+
+    private var alertRequestSubtitle: String {
+        vacancyCount > 0
+            ? "관심 유치원의 모집 마감 시점을 놓치지 않도록 준비 중이에요."
+            : "정원 마감 기관의 빈자리 변동을 확인할 수 있도록 준비 중이에요."
+    }
+
     // MARK: - New Computed Properties
 
     private var districtName: String {
@@ -207,18 +229,21 @@ struct KindergartenDetailSheet: View {
                     sectionVacancy
                 }
 
-                // Section D: Reviews (moved up for faster parent access)
+                // Section D: Alert demand probe
+                sectionAlertRequest
+
+                // Section E: Reviews (moved up for faster parent access)
                 sectionReviews
 
-                // Section E: Details Grid
+                // Section F: Details Grid
                 sectionDetails
 
-                // Section F: Quick Links
+                // Section G: Quick Links
                 if hasContactInfo {
                     sectionLinks
                 }
 
-                // Section G: Footer
+                // Section H: Footer
                 sectionFooter
             }
             .padding(24)
@@ -320,13 +345,17 @@ struct KindergartenDetailSheet: View {
                 .accessibilityLabel(isFavorite ? "저장 취소" : "저장")
 
                 if let phoneURL {
-                    Link(destination: phoneURL) {
+                    Button {
+                        onCallTapped()
+                        openURL(phoneURL)
+                    } label: {
                         Image(systemName: "phone.fill")
                             .font(.body.weight(.semibold))
                             .foregroundStyle(jadeDeep)
                             .frame(width: 48, height: 48)
                             .background(slateBlue.opacity(0.08), in: Circle())
                     }
+                    .buttonStyle(.plain)
                     .accessibilityLabel("전화")
                 }
             }
@@ -384,7 +413,31 @@ struct KindergartenDetailSheet: View {
         }
     }
 
-    // MARK: - Section D: Details Grid
+    // MARK: - Section D: Alert Demand Probe
+
+    private var sectionAlertRequest: some View {
+        DetailSectionCard(title: "모집 알림") {
+            VStack(alignment: .leading, spacing: 10) {
+                Button {
+                    onAlertRequested(alertRequestType)
+                    withAnimation(.spring(duration: 0.30, bounce: 0.10)) {
+                        didRequestAlert = true
+                    }
+                } label: {
+                    DetailLinkRow(
+                        title: didRequestAlert ? "요청 완료" : alertRequestTitle,
+                        subtitle: didRequestAlert ? "요청을 기록했어요." : alertRequestSubtitle,
+                        systemImage: didRequestAlert ? "checkmark.circle.fill" : "bell.badge.fill"
+                    )
+                }
+                .buttonStyle(.plain)
+                .disabled(didRequestAlert)
+                .accessibilityLabel(alertRequestTitle)
+            }
+        }
+    }
+
+    // MARK: - Section F: Details Grid
 
     private var sectionDetails: some View {
         DetailSectionCard(title: "상세 정보") {
@@ -426,7 +479,10 @@ struct KindergartenDetailSheet: View {
                 } else {
                     ForEach(showAllReviews ? reviews : Array(reviews.prefix(3))) { review in
                         if let url = URL(string: review.url) {
-                            Link(destination: url) {
+                            Button {
+                                onReviewTapped(review)
+                                openURL(url)
+                            } label: {
                                 ReviewCard(review: review)
                             }
                             .buttonStyle(.plain)
@@ -464,7 +520,10 @@ struct KindergartenDetailSheet: View {
         DetailSectionCard(title: "바로가기") {
             VStack(spacing: 10) {
                 if let mapURL {
-                    Link(destination: mapURL) {
+                    Button {
+                        onDirectionsTapped()
+                        openURL(mapURL)
+                    } label: {
                         DetailLinkRow(
                             title: "지도에서 보기",
                             subtitle: kindergarten.address,
@@ -475,7 +534,10 @@ struct KindergartenDetailSheet: View {
                 }
 
                 if let homepageURL {
-                    Link(destination: homepageURL) {
+                    Button {
+                        onHomepageTapped()
+                        openURL(homepageURL)
+                    } label: {
                         DetailLinkRow(
                             title: "홈페이지",
                             subtitle: homepageSubtitle,
@@ -486,7 +548,10 @@ struct KindergartenDetailSheet: View {
                 }
 
                 if let phoneURL, let phone = kindergarten.phone {
-                    Link(destination: phoneURL) {
+                    Button {
+                        onCallTapped()
+                        openURL(phoneURL)
+                    } label: {
                         DetailLinkRow(
                             title: "전화하기",
                             subtitle: phone,

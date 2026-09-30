@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  robots: { index: false, follow: false },
   title: '우리 아이 성향 테스트 | 우리동네 유치원',
   description:
     '7가지 질문으로 알아보는 우리 아이 성향과 맞춤 유치원 추천. 유아 MBTI, 아이 성향 분석, 유치원 추천 테스트.',
@@ -84,9 +83,9 @@ export default function TestLayout({
           >
             ← 홈으로
           </Link>
-          <h1 className="text-base font-semibold text-gray-800">
+          <p className="text-base font-semibold text-gray-800">
             우리 아이 성향 테스트
-          </h1>
+          </p>
           <div className="w-12" /> {/* 균형을 위한 스페이서 */}
         </div>
       </header>

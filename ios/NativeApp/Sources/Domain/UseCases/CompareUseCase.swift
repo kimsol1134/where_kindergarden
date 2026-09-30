@@ -70,11 +70,23 @@ public struct CompareUseCase: Sendable {
     }
 
     /// 비교 공유 URL 생성
-    public func shareURL(ids: [String], baseURL: URL) -> URL? {
+    public func shareURL(ids: [String], baseURL: URL, shareMedium: String? = nil) -> URL? {
         guard !ids.isEmpty,
               var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)
         else { return nil }
-        components.queryItems = [URLQueryItem(name: "ids", value: ids.joined(separator: ","))]
+
+        var queryItems = components.queryItems ?? []
+        let reservedNames = Set(["ids", "utm_source", "utm_medium", "utm_campaign"])
+        queryItems.removeAll { reservedNames.contains($0.name) }
+        queryItems.append(URLQueryItem(name: "ids", value: ids.joined(separator: ",")))
+
+        if let shareMedium, !shareMedium.isEmpty {
+            queryItems.append(URLQueryItem(name: "utm_source", value: "native_ios"))
+            queryItems.append(URLQueryItem(name: "utm_medium", value: shareMedium))
+            queryItems.append(URLQueryItem(name: "utm_campaign", value: "compare_share"))
+        }
+
+        components.queryItems = queryItems
         return components.url
     }
 }

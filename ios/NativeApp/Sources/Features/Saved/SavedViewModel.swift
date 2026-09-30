@@ -73,7 +73,44 @@ public final class SavedViewModel {
             isFavorite: favoriteRepo.isFavorite(kindergarten.kindercode),
             fitReasons: [],
             onToggleCompare: { [weak self] in self?.toggleCompare(for: kindergarten) },
-            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) }
+            onToggleFavorite: { [weak self] in self?.toggleFavorite(for: kindergarten) },
+            onCallTapped: { [weak self] in
+                self?.analytics?.trackContactTapped(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "saved"
+                )
+            },
+            onHomepageTapped: { [weak self] in
+                self?.analytics?.trackHomepageOpened(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "saved"
+                )
+            },
+            onDirectionsTapped: { [weak self] in
+                self?.analytics?.trackDirectionsOpened(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    source: "saved"
+                )
+            },
+            onReviewTapped: { [weak self] review in
+                self?.analytics?.trackReviewOpened(
+                    kindercode: kindergarten.kindercode,
+                    reviewSource: review.source,
+                    reviewCount: self?.reviewRepo.reviews(for: kindergarten.kindercode).count ?? 0,
+                    source: "saved"
+                )
+            },
+            onAlertRequested: { [weak self] alertType in
+                self?.analytics?.trackAlertRequested(
+                    kindercode: kindergarten.kindercode,
+                    type: kindergarten.type.rawValue,
+                    alertType: alertType,
+                    source: "saved"
+                )
+            }
         )
     }
 

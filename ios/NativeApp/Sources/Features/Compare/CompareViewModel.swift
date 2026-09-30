@@ -80,6 +80,14 @@ public final class CompareViewModel {
         compareUseCase.shareURL(ids: compareRepo.selection.ids, baseURL: configuration.compareShareBaseURL)
     }
 
+    private func trackedShareURL(medium: String) -> URL? {
+        compareUseCase.shareURL(
+            ids: compareRepo.selection.ids,
+            baseURL: configuration.compareShareBaseURL,
+            shareMedium: medium
+        )
+    }
+
     public func trackCompareViewed() {
         analytics?.track(event: .compareViewed, properties: [
             "compare_count": .int(comparedKindergartens.count),
@@ -87,7 +95,7 @@ public final class CompareViewModel {
     }
 
     public func shareKakao(names: [String]) -> URL? {
-        guard let url = shareURL() else { return nil }
+        guard let url = trackedShareURL(medium: "kakao") else { return nil }
         analytics?.track(event: .compareShared, properties: [
             "method": .string("kakao"),
             "compare_count": .int(comparedKindergartens.count),
@@ -96,7 +104,7 @@ public final class CompareViewModel {
     }
 
     public func shareSystem() -> URL? {
-        guard let url = shareURL() else { return nil }
+        guard let url = trackedShareURL(medium: "system_share") else { return nil }
         analytics?.track(event: .compareShared, properties: [
             "method": .string("system"),
             "compare_count": .int(comparedKindergartens.count),

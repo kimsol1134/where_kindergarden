@@ -6,25 +6,35 @@ import { WebsiteJsonLd, OrganizationJsonLd } from '@/components/JsonLd';
 import { AdContainer } from '@/components/ads/AdContainer';
 import { OfflineBanner } from '@/components/common/OfflineBanner';
 import { Analytics } from '@vercel/analytics/next';
+import { OG_IMAGE } from '@/lib/constants';
 
 const SITE_URL = 'https://where-kindergarden.vercel.app';
 const FAVICON_URL = `${SITE_URL}/favicon-20260612.png`;
-const OG_IMAGE_URL = `${SITE_URL}/og-image-20260612.png`;
+const OG_IMAGE_URL = `${SITE_URL}${OG_IMAGE.path}`;
 const OG_IMAGE_ALT =
-  '우리동네 유치원 - 내 주변 유치원을 찾고 한눈에 비교하세요';
+  '우리동네 유치원 - 내 주변 유치원 검색 및 비교';
+const HOME_SEO_TITLE = '내 주변 유치원 찾기 | 우리동네 유치원';
+const HOME_SEO_DESCRIPTION =
+  '현재 위치나 주소 기준으로 가까운 유치원을 찾고 지도, 거리, 정원, 셔틀버스, 방과후, 급식 정보를 한눈에 비교하세요.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
+    default: HOME_SEO_TITLE,
     template: '%s | 우리동네 유치원',
   },
-  description:
-    '내 주변 국공립, 사립 유치원을 찾고 계신가요? 우리동네 유치원에서 거리순, 비용순으로 비교하고 아이에게 딱 맞는 유치원을 발견하세요.',
+  description: HOME_SEO_DESCRIPTION,
   keywords: [
     '유치원',
     '유치원 검색',
     '주변 유치원',
+    '주변 유치원 찾기',
+    '내 주변 유치원',
+    '내주변 유치원',
+    '가까운 유치원',
+    '유치원 위치',
+    '유치원 지도',
+    '유치원 거리비교',
     '유치원 비교',
     '우리동네 유치원',
     '유치원 찾기',
@@ -51,28 +61,26 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     url: SITE_URL,
     siteName: '우리동네 유치원',
-    title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
-    description:
-      '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요. 전국 7,950개 이상의 유치원 정보를 한눈에 확인할 수 있습니다.',
+    title: HOME_SEO_TITLE,
+    description: HOME_SEO_DESCRIPTION,
     images: [
       {
         url: OG_IMAGE_URL,
-        width: 1200,
-        height: 630,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
         alt: OG_IMAGE_ALT,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '우리동네 유치원 - 내 주변 유치원 검색 및 비교',
-    description:
-      '현재 위치 기반으로 주변 유치원을 검색하고 비교해보세요.',
+    title: HOME_SEO_TITLE,
+    description: HOME_SEO_DESCRIPTION,
     images: [
       {
         url: OG_IMAGE_URL,
-        width: 1200,
-        height: 630,
+        width: OG_IMAGE.width,
+        height: OG_IMAGE.height,
         alt: OG_IMAGE_ALT,
       },
     ],

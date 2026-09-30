@@ -31,7 +31,7 @@ public enum KakaoShareService {
         )
 
         let content = Content(
-            title: "\(namesText) 비교 결과",
+            title: "우리동네 유치원 | \(namesText) 비교표",
             imageUrl: NativeAppConfiguration.defaultShareImageURL,
             imageWidth: 1200,
             imageHeight: 630,
@@ -46,7 +46,7 @@ public enum KakaoShareService {
             social: social,
             buttons: [
                 Button(
-                    title: "비교표 바로 보기",
+                    title: "우리동네 유치원에서 보기",
                     link: link
                 )
             ]

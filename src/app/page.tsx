@@ -1,6 +1,7 @@
 import { Header } from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
 import { Features } from '@/components/landing/Features';
+import { GuideHighlights } from '@/components/landing/GuideHighlights';
 import { Stats } from '@/components/landing/Stats';
 import { FAQ } from '@/components/landing/FAQ';
 import { CTA } from '@/components/landing/CTA';
@@ -32,6 +33,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <GuideHighlights />
         <Stats />
         <FAQ />
         <CTA />

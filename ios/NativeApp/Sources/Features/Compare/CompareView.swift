@@ -174,7 +174,7 @@ public struct CompareView: View {
     private func presentSystemShare(url: URL) {
         #if canImport(UIKit)
         let activityVC = UIActivityViewController(
-            activityItems: [url, NativeAppConfiguration.shareDescription],
+            activityItems: [NativeAppConfiguration.compareShareMessage(url: url)],
             applicationActivities: nil
         )
         guard let rootVC = UIApplication.shared.connectedScenes

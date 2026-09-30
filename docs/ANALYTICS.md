@@ -92,6 +92,17 @@
 | `Compare Shared` | `compareShared` | 공유 완료 시 | `method: String`, `compare_count: Int` | - |
 | `Filter Applied` | `filterApplied` | Apply 버튼 탭 또는 슬라이더 조작 완료(500ms debounce) 후 | `radius: Int`, `sort: String` | - |
 | `Tab Changed` | `tabChanged` | 탭 바에서 탭 전환 시 | `from_tab: String`, `to_tab: String` | - |
+| `Contact Tapped` | `contactTapped` | 상세/저장 화면에서 전화 버튼 탭 시 | `kindercode: String`, `kindergarten_type: String`, `source: String` | - |
+| `Homepage Opened` | `homepageOpened` | 상세/저장 화면에서 홈페이지 링크 탭 시 | `kindercode: String`, `kindergarten_type: String`, `source: String` | - |
+| `Directions Opened` | `directionsOpened` | 상세/저장 화면에서 지도/길찾기 링크 탭 시 | `kindercode: String`, `kindergarten_type: String`, `source: String` | - |
+| `Review Opened` | `reviewOpened` | 상세/저장 화면에서 후기 링크 탭 시 | `kindercode: String`, `review_source: String`, `review_count: Int`, `source: String` | - |
+| `Alert Requested` | `alertRequested` | 모집 마감/빈자리 알림 수요 확인용 fake-door 또는 실제 알림 요청 시 | `kindercode: String`, `kindergarten_type: String`, `alert_type: String`, `source: String` | - |
+
+**Intent 이벤트 (수익화·전환 측정용):**
+- `Contact Tapped`가 앱이 가진 가장 강한 전환(의도) 신호. 전화 = 바닥 퍼널.
+- `source`는 발생 화면(`detail` / `saved`)을 구분. 추후 B2B("우리 앱이 귀 원에 전화 N건을 보냈습니다") 근거 데이터.
+- `Review Opened`의 `review_source`는 후기 플랫폼(`naver_blog` 등). 화면 출처는 `source`로 분리.
+- `Alert Requested`는 H1에서 유료화 없이 모집철 알림 수요를 검증하는 fake-door 이벤트. 현재 상세/저장 화면의 모집 알림 CTA에서 발생한다.
 
 **기존 이벤트 변경 사항:**
 - `filterChanged` → `filterApplied` (슬라이더 드래그마다가 아닌 commit 시점에만 발생)
@@ -109,6 +120,10 @@
 | `sigungu_code` | String | 선택 | `"11110"` | 검색 기준 시군구 코드 5자리. 위치 미확인 시 생략 |
 | `kindercode` | String | 조건부 | `"D100000001"` | 유치원 고유 코드. 유치원 관련 이벤트에서 필수 |
 | `kindergarten_type` | String | `Detail Opened`에서 필수 | `"private"` | `public` / `private` / `home` |
+| `source` | String | Intent 이벤트에서 필수 | `"detail"` | 이벤트 발생 화면. `detail` / `saved`. `Contact/Homepage/Directions/Review` 이벤트 공통 |
+| `review_source` | String | `Review Opened`에서 필수 | `"naver_blog"` | 탭한 후기의 플랫폼. `ReviewLink.source` 값 |
+| `review_count` | Number (Int) | `Review Opened`에서 필수 | `7` | 해당 유치원에 매핑된 후기 총 개수 |
+| `alert_type` | String | `Alert Requested`에서 필수 | `"admission_deadline"` | 요청한 알림 종류. `admission_deadline` / `vacancy` 등 |
 | `compare_count` | Number (Int) | 조건부 | `2` | 비교 목록 내 유치원 수. `Compare Viewed`, `Compare Shared`에서 필수 |
 | `method` | String | `Compare Shared`에서 필수 | `"kakao"` | 공유 방식. `kakao` 또는 `system` |
 | `sort` | String | `Filter Applied`에서 필수 | `"distance"` | 정렬 기준. `distance` / `name` 등 SortOption rawValue |

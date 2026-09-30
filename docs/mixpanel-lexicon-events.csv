@@ -12,3 +12,8 @@ Compare Viewed,비교 탭 진입,비교 탭의 onAppear 시점. compare_count가
 Compare Shared,비교표 공유,비교표를 카카오톡 또는 시스템 공유시트로 전송한 시점.,Compare
 Filter Applied,필터 적용,반경/정렬 등 필터가 변경된 후 500ms debounce가 끝나 실제로 적용된 시점.,Search
 Tab Changed,탭 전환,하단 탭바에서 탭을 전환한 시점.,Navigation
+Contact Tapped,전화 탭,상세/저장 화면에서 전화 버튼을 탭한 시점. 앱이 가진 가장 강한 전환(의도) 신호.,Intent
+Homepage Opened,홈페이지 열기,상세/저장 화면에서 홈페이지 링크를 탭한 시점. 깊은 탐색 의도.,Intent
+Directions Opened,길찾기 열기,상세/저장 화면에서 지도/길찾기 링크를 탭한 시점. 오프라인 방문 의도.,Intent
+Review Opened,후기 열기,상세/저장 화면에서 후기 링크를 탭한 시점. 신뢰 검증 단계.,Intent
+Alert Requested,알림 요청,모집 마감/빈자리 알림 수요 확인용 fake-door 또는 실제 알림 요청 시점.,Intent

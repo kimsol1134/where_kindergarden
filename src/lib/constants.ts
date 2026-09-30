@@ -6,7 +6,7 @@ export const TOTAL_KINDERGARTEN_COUNT = 7950;
 
 /** OG 공유 이미지 */
 export const OG_IMAGE = {
-  path: '/og-image.png',
+  path: '/og-image-20260612.png',
   width: 1200,
   height: 630,
 } as const;
