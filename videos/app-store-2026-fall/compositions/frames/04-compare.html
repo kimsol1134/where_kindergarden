@@ -1,0 +1,32 @@
+<template>
+  <div data-hf-id="hf-79dk" id="root" data-composition-id="04-compare" data-width="886" data-height="1920">
+    <div data-hf-id="hf-yfhf" class="clip" id="f04-compare-background" data-start="0" data-duration="6" data-track-index="0"></div>
+    <div data-hf-id="hf-1gtm" class="clip" id="f04-compare-header" data-start="0" data-duration="6" data-track-index="2">
+      <div data-hf-id="hf-va9a" id="f04-compare-brand">우리동네 유치원</div>
+      <h1 data-hf-id="hf-4pja" id="f04-compare-headline">조건을 나란히 비교해요</h1>
+      <p data-hf-id="hf-d19a" id="f04-compare-subtitle">교사 비율 · 셔틀 · 면적까지</p>
+    </div>
+    <!-- approved frame video hoisted by assemble-index -->
+    <div data-hf-id="hf-eh2p" class="clip" id="f04-compare-progress" data-start="0" data-duration="6" data-track-index="3"></div>
+  </div>
+  <style>
+    @font-face { font-family: 'Pretendard'; src: url('assets/fonts/Pretendard-ExtraBold.otf') format('opentype'); font-weight: 800; font-style: normal; }
+    @font-face { font-family: 'Pretendard'; src: url('assets/fonts/Pretendard-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
+    #root { position: relative; width: 886px; height: 1920px; overflow: hidden; container-type: size; font-family: 'Pretendard'; color: #182D26; }
+    [id="f04-compare-background"] { position: absolute; inset: 0; background: #F7F8F1; }
+    [id="f04-compare-header"] { position: absolute; inset: 0; }
+    [id="f04-compare-brand"] { position: absolute; left: 58px; top: 54px; font-size: 22px; font-weight: 500; color: #287148; }
+    [id="f04-compare-headline"] { position: absolute; left: 54px; top: 104px; width: 778px; margin: 0; font-size: 62px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
+    [id="f04-compare-subtitle"] { position: absolute; left: 56px; top: 202px; width: 774px; margin: 0; font-size: 29px; line-height: 1.25; font-weight: 500; }
+    [id="f04-compare-media"] { position: absolute; left: 76px; top: 280px; width: 734px; height: 1596px; object-fit: contain; }
+    [id="f04-compare-progress"] { position: absolute; left: 58px; top: 1900px; width: 770px; height: 4px; border-radius: 9999px; background: #287148; transform-origin: left center; }
+  </style>
+  
+  <script>
+    const timeline = gsap.timeline({ paused: true });
+    timeline.fromTo('[id="f04-compare-header"]', { opacity: 0.7 }, { opacity: 1, duration: 0.3, ease: 'none' }, 0);
+    timeline.fromTo('[id="f04-compare-progress"]', { scaleX: 0 }, { scaleX: 1, duration: 6, ease: 'none' }, 0);
+    window.__timelines = window.__timelines || {};
+    window.__timelines['04-compare'] = timeline;
+  </script>
+</template>

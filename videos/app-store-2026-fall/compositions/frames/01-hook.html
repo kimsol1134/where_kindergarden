@@ -1,0 +1,32 @@
+<template>
+  <div data-hf-id="hf-u3ui" id="root" data-composition-id="01-hook" data-duration="3" data-width="886" data-height="1920">
+    <div data-hf-id="hf-ott3" class="clip" id="f01-hook-background" data-start="0" data-duration="3" data-track-index="0"></div>
+    <div data-hf-id="hf-yo7e" class="clip" id="f01-hook-header" data-start="0" data-duration="3" data-track-index="2">
+      <div data-hf-id="hf-4dq9" id="f01-hook-brand">우리동네 유치원</div>
+      <h1 data-hf-id="hf-3pdi" id="f01-hook-headline">유치원, 어디가 다를까요?</h1>
+      <p data-hf-id="hf-k0h3" id="f01-hook-subtitle">관심 있는 곳을 나란히 비교해요</p>
+    </div>
+    <img data-hf-id="hf-v22p" class="clip" id="f01-hook-media" data-start="0" data-duration="3" data-track-index="1" src="assets/01-compare-detail.png" alt="우리동네 유치원 앱의 유치원 비교 화면">
+    <div data-hf-id="hf-f2cr" class="clip" id="f01-hook-progress" data-start="0" data-duration="3" data-track-index="3"></div>
+  </div>
+  <style>
+    @font-face { font-family: 'Pretendard'; src: url('assets/fonts/Pretendard-ExtraBold.otf') format('opentype'); font-weight: 800; font-style: normal; }
+    @font-face { font-family: 'Pretendard'; src: url('assets/fonts/Pretendard-Medium.otf') format('opentype'); font-weight: 500; font-style: normal; }
+    #root { position: relative; width: 886px; height: 1920px; overflow: hidden; container-type: size; font-family: 'Pretendard'; color: #182D26; }
+    [id="f01-hook-background"] { position: absolute; inset: 0; background: #F7F8F1; }
+    [id="f01-hook-header"] { position: absolute; inset: 0; }
+    [id="f01-hook-brand"] { position: absolute; left: 58px; top: 54px; font-size: 22px; font-weight: 500; color: #287148; }
+    [id="f01-hook-headline"] { position: absolute; left: 54px; top: 104px; width: 778px; margin: 0; font-size: 62px; line-height: 1.12; font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
+    [id="f01-hook-subtitle"] { position: absolute; left: 56px; top: 202px; width: 774px; margin: 0; font-size: 29px; line-height: 1.25; font-weight: 500; }
+    [id="f01-hook-media"] { position: absolute; left: 76px; top: 280px; width: 734px; height: 1596px; object-fit: contain; }
+    [id="f01-hook-progress"] { position: absolute; left: 58px; top: 1900px; width: 770px; height: 4px; border-radius: 9999px; background: #287148; transform-origin: left center; }
+  </style>
+  
+  <script>
+    const timeline = gsap.timeline({ paused: true });
+    timeline.fromTo('[id="f01-hook-header"]', { opacity: 0.7 }, { opacity: 1, duration: 0.3, ease: 'none' }, 0);
+    timeline.fromTo('[id="f01-hook-progress"]', { scaleX: 0 }, { scaleX: 1, duration: 3, ease: 'none' }, 0);
+    window.__timelines = window.__timelines || {};
+    window.__timelines['01-hook'] = timeline;
+  </script>
+</template>

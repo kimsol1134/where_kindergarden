@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=886, height=1920">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 886px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 886px;
+        height: 1920px;
+        overflow: hidden;
+        background: #F7F8F1;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-4015" id="root" data-composition-id="main" data-start="0" data-duration="24" data-width="886" data-height="1920">
+      <div data-hf-id="hf-kvw8" id="el-01-hook" class="scene" data-composition-id="01-hook" data-composition-src="compositions/frames/01-hook.html" data-start="0" data-duration="3" data-track-index="1"></div>
+
+      <div data-hf-id="hf-ng8e" id="el-02-search" class="scene" data-composition-id="02-search" data-composition-src="compositions/frames/02-search.html" data-start="3" data-duration="4" data-track-index="1"></div>
+
+      <div data-hf-id="hf-h5n3" id="el-03-select" class="scene" data-composition-id="03-select" data-composition-src="compositions/frames/03-select.html" data-start="7" data-duration="4" data-track-index="1"></div>
+
+      <div data-hf-id="hf-ax6u" id="el-04-compare" class="scene" data-composition-id="04-compare" data-composition-src="compositions/frames/04-compare.html" data-start="11" data-duration="6" data-track-index="1"></div>
+
+      <div data-hf-id="hf-mlvt" id="el-05-reviews" class="scene" data-composition-id="05-reviews" data-composition-src="compositions/frames/05-reviews.html" data-start="17" data-duration="4" data-track-index="1"></div>
+
+      <div data-hf-id="hf-5t0w" id="el-06-saved" class="scene" data-composition-id="06-saved" data-composition-src="compositions/frames/06-saved.html" data-start="21" data-duration="3" data-track-index="1"></div>
+
+<!-- native-video-layers:start -->
+<video data-hf-id="hf-xd05" id="native-search" class="clip" src="assets/search.mp4" muted playsinline preload="auto" data-start="3" data-duration="4" data-track-index="5" style="position:absolute;left:76px;top:280px;width:734px;height:1596px;object-fit:contain;z-index:10;"></video>
+<video data-hf-id="hf-otdx" id="native-select" class="clip" src="assets/select.mp4" muted playsinline preload="auto" data-start="7" data-duration="4" data-track-index="5" style="position:absolute;left:76px;top:280px;width:734px;height:1596px;object-fit:contain;z-index:10;"></video>
+<video data-hf-id="hf-fyzs" id="native-compare" class="clip" src="assets/compare.mp4" muted playsinline preload="auto" data-start="11" data-duration="6" data-track-index="5" style="position:absolute;left:76px;top:280px;width:734px;height:1596px;object-fit:contain;z-index:10;"></video>
+<video data-hf-id="hf-vvmw" id="native-reviews" class="clip" src="assets/reviews.mp4" muted playsinline preload="auto" data-start="17" data-duration="4" data-track-index="5" style="position:absolute;left:76px;top:280px;width:734px;height:1596px;object-fit:contain;z-index:10;"></video>
+<!-- native-video-layers:end -->
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>
