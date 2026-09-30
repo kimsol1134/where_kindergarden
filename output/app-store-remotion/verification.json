@@ -1,0 +1,47 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 886,
+      "height": 1920,
+      "pix_fmt": "yuv420p",
+      "level": 40,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "bit_rate": "5052092",
+      "nb_frames": "720",
+      "side_data_list": [
+        {}
+      ]
+    },
+    {
+      "codec_name": "aac",
+      "profile": "LC",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "bit_rate": "260227",
+      "nb_frames": "1126"
+    }
+  ],
+  "format": {
+    "duration": "24.000000",
+    "size": "15965418",
+    "bit_rate": "5321806"
+  },
+  "checks": {
+    "full_decode": "passed",
+    "typecheck": "passed",
+    "visual_scene_review": "8 scenes checked",
+    "sha256": "d7efe7863dbfcdcace91fb49997379f051fba485f0fe85f118c72402df87c227",
+    "soundtrack": "original synthesized 100 BPM; approximately -20 LUFS"
+  }
+}

@@ -47,18 +47,23 @@ export function Footer() {
             <h4 className="mb-4 font-bold text-[var(--brand-ink)]">서비스</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/search" className="hover:text-[var(--brand-leaf)]">
+                <Link href="/search/" className="hover:text-[var(--brand-leaf)]">
                   유치원 찾기
                 </Link>
               </li>
               <li>
-                <Link href="/compare" className="hover:text-[var(--brand-leaf)]">
+                <Link href="/compare/" className="hover:text-[var(--brand-leaf)]">
                   비교하기
                 </Link>
               </li>
               <li>
-                <Link href="/reviews/all" className="hover:text-[var(--brand-leaf)]">
+                <Link href="/reviews/all/" className="hover:text-[var(--brand-leaf)]">
                   후기 원문 전체 확인
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides/" className="hover:text-[var(--brand-leaf)]">
+                  유치원 선택 가이드
                 </Link>
               </li>
             </ul>
@@ -77,7 +82,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-[var(--brand-leaf)]">
+                <Link href="/privacy/" className="hover:text-[var(--brand-leaf)]">
                   개인정보처리방침
                 </Link>
               </li>

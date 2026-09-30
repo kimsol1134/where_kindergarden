@@ -30,7 +30,7 @@ const PLATFORM_CLASSES: Record<ReviewPlatformKey, string> = {
 };
 
 function getPageHref(pageNumber: number): string {
-  return pageNumber === 1 ? '/reviews/all' : `/reviews/all/page/${pageNumber}`;
+  return pageNumber === 1 ? '/reviews/all/' : `/reviews/all/page/${pageNumber}/`;
 }
 
 function getStringField(value: unknown): string | null {
@@ -133,7 +133,7 @@ export function AllReviewLinksPage({ pageNumber = 1 }: { pageNumber?: number }) 
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
               <Link
-                href="/reviews"
+                href="/reviews/"
                 className="inline-flex h-10 items-center justify-center rounded-lg border border-gray-200 bg-white px-3 text-sm font-semibold text-gray-700 transition hover:bg-gray-50"
               >
                 후기 검색

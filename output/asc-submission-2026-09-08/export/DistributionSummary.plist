@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WhereKindergartenNative.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>11</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>57548A6844F2D1CD3B695CBDA877209D1B6E6A8F</string>
+				<key>dateExpires</key>
+				<string>8/28/27</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>buildNumber</key>
+					<string>41</string>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>57548A6844F2D1CD3B695CBDA877209D1B6E6A8F</string>
+						<key>dateExpires</key>
+						<string>8/28/27</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>KakaoMapsSDK.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>D48DDX5D5W</string>
+						<key>name</key>
+						<string></string>
+					</dict>
+					<key>versionNumber</key>
+					<string>2.12.10</string>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>D48DDX5D5W.com.solkim.kindergarden</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>applinks:where-kindergarden.vercel.app</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>D48DDX5D5W</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>WhereKindergartenNative.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>56857d0c-310b-4bab-9a98-49614ac22218</string>
+				<key>dateExpires</key>
+				<string>8/28/27</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.solkim.kindergarden</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>D48DDX5D5W</string>
+				<key>name</key>
+				<string></string>
+			</dict>
+			<key>versionNumber</key>
+			<string>2.2.6</string>
+		</dict>
+	</array>
+</dict>
+</plist>

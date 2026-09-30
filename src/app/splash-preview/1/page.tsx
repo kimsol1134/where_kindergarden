@@ -40,7 +40,7 @@ export default function Splash1() {
       </div>
 
       {/* Back Link for Demo */}
-      <Link href="/splash-preview" className="absolute top-10 right-4 px-4 py-2 bg-gray-100 rounded-full text-xs text-gray-500 z-50">
+      <Link href="/splash-preview/" className="absolute top-10 right-4 px-4 py-2 bg-gray-100 rounded-full text-xs text-gray-500 z-50">
         Close
       </Link>
     </div>

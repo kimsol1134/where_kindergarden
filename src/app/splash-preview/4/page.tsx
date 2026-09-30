@@ -45,7 +45,7 @@ export default function Splash4() {
         }
       `}</style>
 
-      <Link href="/splash-preview" className="absolute top-10 right-4 px-4 py-2 bg-white/50 backdrop-blur-md rounded-full text-xs text-gray-600 z-50">
+      <Link href="/splash-preview/" className="absolute top-10 right-4 px-4 py-2 bg-white/50 backdrop-blur-md rounded-full text-xs text-gray-600 z-50">
         Close
       </Link>
     </div>

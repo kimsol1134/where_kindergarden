@@ -37,7 +37,6 @@ export const metadata: Metadata = {
     '유치원 비교',
     '우리동네 유치원',
     '유치원 찾기',
-    '유치원 알리미',
     '공립 유치원',
     '사립 유치원',
     '영유아 학교',
@@ -51,9 +50,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-  alternates: {
-    canonical: '/',
   },
   openGraph: {
     type: 'website',

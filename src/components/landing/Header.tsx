@@ -23,15 +23,18 @@ export function Header() {
             <Link href="#preview" className="transition-colors hover:text-[var(--brand-leaf)]">
               미리보기
             </Link>
-            <Link href="/reviews/all" className="transition-colors hover:text-[var(--brand-leaf)]">
+            <Link href="/reviews/all/" className="transition-colors hover:text-[var(--brand-leaf)]">
               후기 원문
+            </Link>
+            <Link href="/guides/" className="transition-colors hover:text-[var(--brand-leaf)]">
+              선택 가이드
             </Link>
             <Link href="#faq" className="transition-colors hover:text-[var(--brand-leaf)]">
               자주 묻는 질문
             </Link>
           </nav>
           <Link
-            href="/search?mode=location"
+            href="/search/?mode=location"
             className="hidden rounded-full bg-[var(--brand-leaf)] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(78,169,109,0.22)] md:inline-flex"
           >
             유치원 찾기
@@ -63,11 +66,18 @@ export function Header() {
                 미리보기
               </Link>
               <Link
-                href="/reviews/all"
+                href="/reviews/all/"
                 onClick={() => setMenuOpen(false)}
                 className="rounded-xl px-3 py-2 transition-colors hover:bg-[var(--brand-mist)] hover:text-[var(--brand-leaf)]"
               >
                 후기 원문
+              </Link>
+              <Link
+                href="/guides/"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-3 py-2 transition-colors hover:bg-[var(--brand-mist)] hover:text-[var(--brand-leaf)]"
+              >
+                선택 가이드
               </Link>
               <Link
                 href="#faq"
@@ -79,7 +89,7 @@ export function Header() {
             </nav>
             <div className="mt-3 border-t border-[rgba(203,188,174,0.2)] pt-3">
               <Link
-                href="/search?mode=location"
+                href="/search/?mode=location"
                 onClick={() => setMenuOpen(false)}
                 className="block w-full rounded-full bg-[var(--brand-leaf)] px-4 py-2.5 text-center text-sm font-semibold text-white shadow-[0_8px_20px_rgba(78,169,109,0.22)]"
               >

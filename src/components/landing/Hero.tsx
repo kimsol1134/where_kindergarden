@@ -36,14 +36,14 @@ export function Hero() {
 
             <div className="mt-7 flex flex-col gap-3 animate-fade-up delay-300 sm:flex-row sm:gap-4">
               <Link
-                href="/search?mode=location"
+                href="/search/?mode=location"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-7 py-3.5 text-base font-semibold text-white shadow-[0_14px_28px_rgba(78,169,109,0.24)] transition-transform hover:-translate-y-0.5 sm:px-8 sm:py-4 sm:text-lg"
               >
                 <MapPin className="h-5 w-5" />
                 내 주변 유치원 찾기
               </Link>
               <Link
-                href="/test"
+                href="/test/"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-[rgba(203,188,174,0.36)] bg-white/78 px-7 py-3.5 text-base font-semibold text-[var(--brand-ink)] shadow-[0_12px_24px_rgba(133,138,103,0.08)] transition-transform hover:-translate-y-0.5 sm:px-8 sm:py-4 sm:text-lg"
               >
                 <Sparkles className="h-5 w-5 text-[var(--brand-sun)]" />

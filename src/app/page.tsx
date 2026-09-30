@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Header } from '@/components/landing/Header';
 import { Hero } from '@/components/landing/Hero';
 import { Features } from '@/components/landing/Features';
@@ -6,6 +7,12 @@ import { FAQ } from '@/components/landing/FAQ';
 import { CTA } from '@/components/landing/CTA';
 import { Footer } from '@/components/landing/Footer';
 import { FAQJsonLd } from '@/components/JsonLd';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 
 const FAQ_DATA = [
   {

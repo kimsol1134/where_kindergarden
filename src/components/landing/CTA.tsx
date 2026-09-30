@@ -15,7 +15,7 @@ export function CTA() {
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/search?mode=location"
+              href="/search/?mode=location"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--brand-leaf)] px-8 py-4 text-lg font-bold text-white shadow-[0_14px_28px_rgba(78,169,109,0.24)] transition-all hover:-translate-y-0.5"
             >
               <MapPin className="h-5 w-5" />

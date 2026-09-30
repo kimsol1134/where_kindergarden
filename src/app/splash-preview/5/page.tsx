@@ -67,7 +67,7 @@ export default function Splash5() {
         </div>
       </div>
 
-      <Link href="/splash-preview" className="absolute top-10 right-4 px-4 py-2 bg-gray-100 rounded-full text-xs text-gray-500 z-50">
+      <Link href="/splash-preview/" className="absolute top-10 right-4 px-4 py-2 bg-gray-100 rounded-full text-xs text-gray-500 z-50">
         Reset
       </Link>
     </div>

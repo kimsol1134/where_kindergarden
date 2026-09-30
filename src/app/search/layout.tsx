@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     '현재 위치나 주소를 입력해 가까운 유치원을 지도에서 찾고 거리순, 국공립·사립, 셔틀버스, 여유정원 조건으로 비교하세요.',
   alternates: {
-    canonical: '/search',
+    canonical: '/search/',
   },
   openGraph: {
     title: '내 주변 유치원 검색 지도 | 우리동네 유치원',
     description:
       '가까운 유치원을 지도에서 찾고 거리순, 국공립·사립, 셔틀버스, 여유정원 조건으로 비교하세요.',
-    url: '/search',
+    url: '/search/',
     images: [
       {
         url: OG_IMAGE.path,

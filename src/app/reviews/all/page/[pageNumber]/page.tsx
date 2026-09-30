@@ -9,8 +9,8 @@ interface ReviewLinksPageRouteProps {
 }
 
 export function generateStaticParams() {
-  return Array.from({ length: getReviewLinkPageCount() }, (_, index) => ({
-    pageNumber: String(index + 1),
+  return Array.from({ length: Math.max(0, getReviewLinkPageCount() - 1) }, (_, index) => ({
+    pageNumber: String(index + 2),
   }));
 }
 
@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: ReviewLinksPageRouteProps): P
   const { pageNumber } = await params;
 
   return {
-    title: `전체 후기 원문 링크 ${pageNumber}페이지 | 우리동네 유치원`,
-    description: '수집된 유치원 후기 원문 링크를 페이지별로 확인합니다.',
+    title: `전체 후기 원문 링크 ${pageNumber}페이지`,
+    description: `수집된 유치원 후기 원문 링크를 ${pageNumber}페이지에서 확인합니다.`,
     alternates: {
-      canonical: pageNumber === '1' ? '/reviews/all' : `/reviews/all/page/${pageNumber}`,
+      canonical: pageNumber === '1' ? '/reviews/all/' : `/reviews/all/page/${pageNumber}/`,
     },
   };
 }

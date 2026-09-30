@@ -43,9 +43,12 @@ function CompareLoading() {
 
 export default function ComparePage() {
   return (
-    <Suspense fallback={<CompareLoading />}>
-      <CompareContent />
-    </Suspense>
+    <>
+      <h1 className="sr-only">유치원 거리·정원·셔틀 비교</h1>
+      <Suspense fallback={<CompareLoading />}>
+        <CompareContent />
+      </Suspense>
+    </>
   );
 }
 
@@ -125,7 +128,7 @@ function CompareContent() {
             검색 결과에서 비교할 유치원을 선택해주세요
           </p>
           <Link
-            href="/search"
+            href="/search/"
             className="rounded-full bg-[var(--brand-leaf)] px-6 py-3 text-sm font-bold text-white shadow-[0_18px_36px_rgba(78,169,109,0.24)] transition-colors hover:bg-[var(--brand-leaf-deep)]"
           >
             유치원 검색하기
@@ -142,7 +145,7 @@ function CompareContent() {
           <div className="mx-4 mt-4 flex items-center justify-between gap-3 rounded-xl bg-amber-50 border border-amber-200 px-4 py-3">
             <p className="text-sm text-amber-700">비교할 유치원을 더 추가해보세요</p>
             <Link
-              href="/search"
+              href="/search/"
               className="flex-shrink-0 rounded-lg bg-amber-500 px-3 py-1.5 text-xs font-bold text-white hover:bg-amber-600 transition-colors"
             >
               검색으로

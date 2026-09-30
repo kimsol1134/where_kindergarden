@@ -4,9 +4,12 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
-  title: '우리 아이 성향 테스트 | 우리동네 유치원',
+  title: '우리 아이 성향 테스트',
   description:
     '7가지 질문으로 알아보는 우리 아이 성향과 맞춤 유치원 추천. 유아 MBTI, 아이 성향 분석, 유치원 추천 테스트.',
+  alternates: {
+    canonical: '/test/',
+  },
   keywords: [
     '아이 성향 테스트',
     '유아 성향 분석',
@@ -21,6 +24,7 @@ export const metadata: Metadata = {
     title: '우리 아이 성향 테스트 | 7가지 질문으로 알아보는 맞춤 유치원',
     description:
       '아이 성향에 맞는 유치원 유형은? 지금 테스트로 알아보세요!',
+    url: '/test/',
     images: [
       {
         url: '/og-test.png',

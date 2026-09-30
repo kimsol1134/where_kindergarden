@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     '후보 유치원을 나란히 놓고 거리, 정원, 교사 현황, 특수학급, 셔틀버스, 급식 정보를 한눈에 비교하세요.',
   alternates: {
-    canonical: '/compare',
+    canonical: '/compare/',
   },
   openGraph: {
     title: '유치원 비교 - 거리·정원·셔틀 한눈에 | 우리동네 유치원',
     description:
       '후보 유치원을 나란히 놓고 거리, 정원, 교사 현황, 특수학급, 셔틀버스, 급식 정보를 비교하세요.',
-    url: '/compare',
+    url: '/compare/',
     images: [
       {
         url: OG_IMAGE.path,

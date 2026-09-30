@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { guides } from '@/app/guides/guideData';
 import { getReviewLinkPageCount } from '@/lib/review-link-index';
 
 // 정적 빌드(output: 'export')를 위한 설정
@@ -17,55 +18,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/search`,
+      url: `${baseUrl}/search/`,
       lastModified: currentDate,
       changeFrequency: 'always',
       priority: 1,
     },
     {
-      url: `${baseUrl}/compare`,
+      url: `${baseUrl}/compare/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/reviews`,
+      url: `${baseUrl}/reviews/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/reviews/all`,
+      url: `${baseUrl}/reviews/all/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     ...Array.from({ length: Math.max(0, reviewPageCount - 1) }, (_, index) => ({
-      url: `${baseUrl}/reviews/all/page/${index + 2}`,
+      url: `${baseUrl}/reviews/all/page/${index + 2}/`,
       lastModified: currentDate,
       changeFrequency: 'daily' as const,
       priority: 0.65,
     })),
     {
-      url: `${baseUrl}/test`,
+      url: `${baseUrl}/guides/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    ...guides.map((guide) => ({
+      url: `${baseUrl}/guides/${guide.slug}/`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.65,
+    })),
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/about/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/privacy`,
+      url: `${baseUrl}/privacy/`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.3,

@@ -66,7 +66,7 @@ export function CompareFloatingBar() {
 
           {/* 우: 비교하기 CTA */}
           <Link
-            href="/compare"
+            href="/compare/"
             className="bg-[var(--brand-leaf)] hover:bg-[var(--brand-leaf-deep)] text-white px-5 py-2 rounded-lg font-bold text-sm shadow-[0_8px_20px_rgba(129,136,97,0.06)] transition-colors flex items-center gap-1.5"
           >
             비교하기

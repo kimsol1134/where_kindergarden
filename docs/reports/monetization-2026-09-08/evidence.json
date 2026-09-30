@@ -1,0 +1,3158 @@
+{
+  "as_of": "2026-09-08",
+  "project": "4014822",
+  "note": "Counts are distinct device IDs, not downloads. Query date boundaries follow project settings. No explicit TestFlight filter in these queries.",
+  "current_week": [
+    {
+      "event": "A. 앱 실행 [Unique Users]",
+      "count": 227
+    },
+    {
+      "event": "B. 상세 화면 오픈 [Unique Users]",
+      "count": 173
+    },
+    {
+      "event": "C. 비교 추가 [Unique Users]",
+      "count": 86
+    },
+    {
+      "event": "D. 비교 탭 진입 [Unique Users]",
+      "count": 60
+    },
+    {
+      "event": "E. 즐겨찾기 추가 [Unique Users]",
+      "count": 52
+    },
+    {
+      "event": "F. Review Link Tapped [Unique Users]",
+      "count": 62
+    },
+    {
+      "event": "G. Vacancy Viewed [Unique Users]",
+      "count": 101
+    },
+    {
+      "event": "H. Compare Share Result [Unique Users]",
+      "count": 4
+    }
+  ],
+  "previous_week": [
+    {
+      "event": "A. 앱 실행 [Unique Users]",
+      "count": 119
+    },
+    {
+      "event": "B. 상세 화면 오픈 [Unique Users]",
+      "count": 83
+    },
+    {
+      "event": "C. 비교 추가 [Unique Users]",
+      "count": 45
+    },
+    {
+      "event": "D. 비교 탭 진입 [Unique Users]",
+      "count": 27
+    },
+    {
+      "event": "E. 즐겨찾기 추가 [Unique Users]",
+      "count": 33
+    },
+    {
+      "event": "F. Review Link Tapped [Unique Users]",
+      "count": 41
+    },
+    {
+      "event": "G. Vacancy Viewed [Unique Users]",
+      "count": 43
+    },
+    {
+      "event": "H. Compare Share Result [Unique Users]",
+      "count": 7
+    }
+  ],
+  "rolling_30": [
+    {
+      "event": "A. 앱 실행 [Unique Users]",
+      "count": 475
+    },
+    {
+      "event": "B. 상세 화면 오픈 [Unique Users]",
+      "count": 390
+    },
+    {
+      "event": "C. 비교 추가 [Unique Users]",
+      "count": 198
+    },
+    {
+      "event": "D. 비교 탭 진입 [Unique Users]",
+      "count": 131
+    },
+    {
+      "event": "E. 즐겨찾기 추가 [Unique Users]",
+      "count": 128
+    },
+    {
+      "event": "F. Review Link Tapped [Unique Users]",
+      "count": 166
+    },
+    {
+      "event": "G. Vacancy Viewed [Unique Users]",
+      "count": 225
+    },
+    {
+      "event": "H. Compare Share Result [Unique Users]",
+      "count": 17
+    }
+  ],
+  "two_candidate_funnel": [
+    {
+      "step": 1,
+      "event": "앱 실행",
+      "count": 227,
+      "step_conv_ratio": 1.0,
+      "overall_conv_ratio": 1.0,
+      "avg_time": null,
+      "avg_time_from_start": null
+    },
+    {
+      "step": 2,
+      "event": "비교 추가",
+      "count": 65,
+      "step_conv_ratio": 0.286344,
+      "overall_conv_ratio": 0.286344,
+      "avg_time": 3858.0,
+      "avg_time_from_start": 3858.0
+    }
+  ],
+  "new_retention": {
+    "d1": {
+      "returned_users": 23,
+      "eligible_users": 412,
+      "rate": 0.055825242718446605,
+      "matured_start": "2026-08-09",
+      "matured_end": "2026-09-06",
+      "cohorts": [
+        [
+          "2026-08-09",
+          7,
+          0
+        ],
+        [
+          "2026-08-10",
+          13,
+          1
+        ],
+        [
+          "2026-08-11",
+          8,
+          0
+        ],
+        [
+          "2026-08-12",
+          7,
+          0
+        ],
+        [
+          "2026-08-13",
+          9,
+          0
+        ],
+        [
+          "2026-08-14",
+          27,
+          2
+        ],
+        [
+          "2026-08-15",
+          10,
+          0
+        ],
+        [
+          "2026-08-16",
+          4,
+          0
+        ],
+        [
+          "2026-08-17",
+          8,
+          1
+        ],
+        [
+          "2026-08-18",
+          14,
+          2
+        ],
+        [
+          "2026-08-19",
+          19,
+          3
+        ],
+        [
+          "2026-08-20",
+          15,
+          0
+        ],
+        [
+          "2026-08-21",
+          10,
+          0
+        ],
+        [
+          "2026-08-22",
+          11,
+          1
+        ],
+        [
+          "2026-08-23",
+          7,
+          1
+        ],
+        [
+          "2026-08-24",
+          10,
+          1
+        ],
+        [
+          "2026-08-25",
+          7,
+          1
+        ],
+        [
+          "2026-08-26",
+          8,
+          0
+        ],
+        [
+          "2026-08-27",
+          14,
+          1
+        ],
+        [
+          "2026-08-28",
+          17,
+          0
+        ],
+        [
+          "2026-08-29",
+          9,
+          0
+        ],
+        [
+          "2026-08-30",
+          6,
+          0
+        ],
+        [
+          "2026-08-31",
+          14,
+          1
+        ],
+        [
+          "2026-09-01",
+          16,
+          2
+        ],
+        [
+          "2026-09-02",
+          26,
+          1
+        ],
+        [
+          "2026-09-03",
+          34,
+          0
+        ],
+        [
+          "2026-09-04",
+          36,
+          3
+        ],
+        [
+          "2026-09-05",
+          22,
+          0
+        ],
+        [
+          "2026-09-06",
+          24,
+          2
+        ]
+      ]
+    },
+    "d7": {
+      "returned_users": 10,
+      "eligible_users": 254,
+      "rate": 0.03937007874015748,
+      "matured_start": "2026-08-09",
+      "matured_end": "2026-08-31",
+      "cohorts": [
+        [
+          "2026-08-09",
+          7,
+          0
+        ],
+        [
+          "2026-08-10",
+          13,
+          1
+        ],
+        [
+          "2026-08-11",
+          8,
+          0
+        ],
+        [
+          "2026-08-12",
+          7,
+          0
+        ],
+        [
+          "2026-08-13",
+          9,
+          1
+        ],
+        [
+          "2026-08-14",
+          27,
+          0
+        ],
+        [
+          "2026-08-15",
+          10,
+          0
+        ],
+        [
+          "2026-08-16",
+          4,
+          0
+        ],
+        [
+          "2026-08-17",
+          8,
+          0
+        ],
+        [
+          "2026-08-18",
+          14,
+          0
+        ],
+        [
+          "2026-08-19",
+          19,
+          1
+        ],
+        [
+          "2026-08-20",
+          15,
+          2
+        ],
+        [
+          "2026-08-21",
+          10,
+          0
+        ],
+        [
+          "2026-08-22",
+          11,
+          1
+        ],
+        [
+          "2026-08-23",
+          7,
+          1
+        ],
+        [
+          "2026-08-24",
+          10,
+          2
+        ],
+        [
+          "2026-08-25",
+          7,
+          0
+        ],
+        [
+          "2026-08-26",
+          8,
+          0
+        ],
+        [
+          "2026-08-27",
+          14,
+          1
+        ],
+        [
+          "2026-08-28",
+          17,
+          0
+        ],
+        [
+          "2026-08-29",
+          9,
+          0
+        ],
+        [
+          "2026-08-30",
+          6,
+          0
+        ],
+        [
+          "2026-08-31",
+          14,
+          0
+        ]
+      ]
+    }
+  },
+  "testflight_breakdown": [
+    {
+      "event": "앱 실행 [Unique Users]",
+      "segment": "$overall",
+      "count": 227
+    },
+    {
+      "event": "앱 실행 [Unique Users]",
+      "segment": "false",
+      "count": 227
+    }
+  ],
+  "vacancy_versions": [
+    {
+      "event": "Vacancy Viewed [Unique Users]",
+      "segment": "$overall",
+      "count": 101
+    },
+    {
+      "event": "Vacancy Viewed [Unique Users]",
+      "segment": "2026-08-20T08:23:52",
+      "count": 101
+    },
+    {
+      "event": "Vacancy Viewed [Unique Users]",
+      "segment": "2026-08-06T14:57:25",
+      "count": 1
+    }
+  ],
+  "rolling_two_candidates": [
+    {
+      "step": 1,
+      "event": "앱 실행",
+      "count": 475,
+      "step_conv_ratio": 1.0,
+      "overall_conv_ratio": 1.0,
+      "avg_time": null,
+      "avg_time_from_start": null
+    },
+    {
+      "step": 2,
+      "event": "비교 추가",
+      "count": 138,
+      "step_conv_ratio": 0.290526,
+      "overall_conv_ratio": 0.290526,
+      "avg_time": 1849.0,
+      "avg_time_from_start": 1849.0
+    }
+  ],
+  "detail_institutions": [
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "$overall",
+      "count": 173
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5f3-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eead-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-edf7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e01-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-07b2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "bca4bd97-2238-4a4e-a986-d8b70c9b2cab",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0123-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f76d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7f5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e29-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "eb9b3ba7-83e9-4eb1-b025-502b89668be8",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fce7-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc72-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7ad38e90-63e6-470b-8c3d-e094141f973c",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fbc0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fbc9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f33a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0cc6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f47c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f701-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f721-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "faa7426d-89f6-476f-ba34-4ea32c5f8350",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc61-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "af436cbf-d3de-48b9-b0d2-a6a5945a7101",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f106-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "33144a42-4c9b-4b23-8043-adcd1c9fe776",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0ebd-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0d5a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f93e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0882-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "168cbafe-5ffe-4e9f-8b66-97b7695b8ec7",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ae546d50-5f9e-4b03-afae-c32f291514e5",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "676321f0-152c-4de5-852c-d428f560956d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efe8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0c32-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0f7f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "653aa91a-0ae3-4961-a7b7-60c92593429e",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "89a6c47d-5244-4173-9698-cd8dd4fc34d9",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7a4a1b05-c84a-43b0-8f02-ebdbe5072f01",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efe4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f0f2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc0b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "810ec711-a1da-4163-94b9-59c4beed9aff",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "29da2d65-17bd-4830-b5f5-6be4f93a0931",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0426-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f376-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c88d858e-88d7-49ea-b2c9-3e5decf2fba9",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0c78-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f688-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0dd1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b41-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-028f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5ee-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff50-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0c3e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b73-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fd3c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e95-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02e0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2b744e1d-f4fc-404a-894a-fe371fb83fb9",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f027-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa6d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-00f3-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f228-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "56d5dd46-57f3-43d7-b787-d5e9cc9bc2ff",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f103-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f844-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0d77-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-01b1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f379-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "5eeb3676-68c0-4464-9dc0-0096783e9c29",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed9e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "17c65387-0a4d-4694-a34a-4fdc555c48b0",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b1c-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5e0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0806-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ef11d789-6c93-4f61-b61e-f5cf865c08b8",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c7497866-aadd-4bc9-a89f-cbf47214849e",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f054-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef5b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03ef-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0548-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d4536502-7276-4a01-8002-79d80777bfcc",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-073d-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7ed1e901-46a4-4f88-ac83-c5684755fde5",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa13-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b5b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-095c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f8a0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef65-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fc6dd86-ccb8-d1d2-e053-0a32095ad1d2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fbbf-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9b067115-585f-4c9b-81e3-1a69072573ef",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f802-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "727d7afb-8480-4c3c-90eb-12796d1e8d57",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2a597533-76bf-4759-a98c-d7dbaaa9045c",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "a7208d1f-879b-4bcc-9859-09466c8f7d10",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "bb54bea4-9ef0-444a-ae29-1baf5f55a7be",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f345-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e5b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0bb0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "f29e057c-b59c-4566-9964-15ab5d307593",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f000-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed80-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1a7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0760-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "542f23c0-9702-497a-a5d0-b7b651cecd78",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff0e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fec0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "5bd28a4b-6aa7-4c78-aebb-8b1abc3b0359",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fe11-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9365cbcb-8a64-4a34-8a77-0af26f0a8c63",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc2c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-05d6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0412-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fcb1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f687-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f08b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "6f004e70-44c8-4bbe-bf97-0e3a0abb121d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff11-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f992-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0d54-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f42a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa08-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-01b5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa4c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0bd2caf0-5d21-4ec7-95c8-e1e982b1edf5",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-09d4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef01-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fdd7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e9e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-068d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "96ab7c76-c004-44a2-875b-bd90524bc4f8",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed31-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2ae87251-8389-40ba-91a2-1556e90e057c",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-026a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-00c0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb60-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d7a0f6ea-2f58-4920-a45b-70e26156e8a1",
+      "count": 3
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f8ba-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "e9ceb1bd-121d-4549-b15c-223dc3447268",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc8d-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0685-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f6fa-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02fd-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b96-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "6be08128-c84d-4152-ad2c-7e30a9795ffc",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efb6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fd6777e-151a-e0b0-e053-0a32095ae0b0",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7e4-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b85-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "31f91c90-4c4e-485d-9929-976cb8bfac30",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0d6f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f3bc-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed1f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0959-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff4f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efd7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f00d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "71ab6d2e-591c-46cf-8ddf-d71eaed55045",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ed682c34-db69-462c-acbd-0d09741b387d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fe09-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-faa9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "a958e71c-1bea-4a28-96b1-a48761a6a5b1",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee5f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a22-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "a4a4834c-5b49-4a2d-a07d-8311cc46c148",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2dc0d75e-793f-42f2-97ee-dd37d3a84e86",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c2bde8b4-3f3a-469d-bb1e-bf8e0f9824fc",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-095e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "120dced0-9471-4ae6-9e57-9236ed9496ac",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03f2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "f6195f6a-466f-472f-890e-2fc0cbb297cf",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-edb1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e7b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b61-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eff9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fd6a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5ef-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f093-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "172e28be-4dae-47d2-80cb-a31f6f7a381c",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eff0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f372-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f07f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "f989a1f7-1610-4bc9-8ead-ddb5fdfdfe1e",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a6e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "3793fbb6-306e-4f06-931a-9adaa5b2945b",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "bd08221d-362f-4d72-9274-69f096f33f5b",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fe63-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0fb2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fd6777e-14fd-e0b0-e053-0a32095ae0b0",
+      "count": 3
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f0ca-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0fd55203-7171-4186-8227-ae196da0c9f4",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-092c-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04d2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef51-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee19-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f2f5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f734-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a65-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04b0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efba-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f90c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f2e4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-00eb-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0cc4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fd6777e-14fb-e0b0-e053-0a32095ae0b0",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5f5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0147-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-012b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0fa1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04f7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "f10d3393-f828-460a-a5ed-0a134f8ddd34",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a93-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e4b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff0d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02aa-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0438c9e6-ec9c-4c70-bf11-f73c3626b9f2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fcf7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f59d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a84-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f600-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "70905504-3dff-47c8-8efa-a9c0be1f8095",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eda9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "693aaeb6-cbf6-495a-b272-d0ac0e37335c",
+      "count": 3
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "04c79373-2752-47ea-8d01-df17038b2f42",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f657-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0cd2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eef4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f950-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-019a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0893-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed57-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f179-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc56-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f2ec-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-08f3-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5ed-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb8b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc4b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0f9f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0275-b044-e053-0a32095ab044",
+      "count": 3
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb43-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0dbb-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "b1976b34-8eeb-452d-8011-0e1ae42b6524",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "dd4b3942-3917-4335-a2f6-fdef2c492584",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fff2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f946-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9ef-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eed6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f54a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-08b8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-00aa-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1856faad-a6c5-4c20-9d39-25b56254f24b",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04df-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "96a0e941-44dc-42f6-9252-97e6883005d7",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9ff-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f59f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff26-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9bf-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0574-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0499-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0078-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fe07-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f92e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-010e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03ad-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "95174dfc-0465-4671-a4f5-6d51693f67d6",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1b13dd28-5e23-4f82-8521-3bb1fe4b4776",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fedb-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0da5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0377-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2c078f2c-d95d-4f08-ba49-b81e21dd9678",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0579-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0530-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f3a6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f556-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-015d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0676-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0092-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2f510713-21aa-4794-b62f-5359f91d2cdd",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f865-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-edad-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f196-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0392-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-06f8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-024f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-072a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "b4404be1-1beb-4154-8ada-4f8c37cb749e",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-024e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c64ff9ed-d5b5-4ab4-a9f1-1ab884c51266",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03ff-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef17-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2420204c-94e5-4300-a487-a045066088ed",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0d4fbfcf-5601-42c3-bec3-ef10e451a3f8",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c603910a-ee56-4b27-883d-9913b0d28f4b",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0456-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0d56-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d31ba437-bd21-47e1-99b7-a7a5c1c17948",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e72-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9908f066-bd20-4346-9589-15fdc418e2ce",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0251-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fed5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1d8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eece-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f2c7-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f07c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9f5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-062f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-08e2-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f10a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f59a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ffd3-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "26a84551-a218-4d6b-9b9a-cc8a57459fbe",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-01fc-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f56d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ae93acf6-bd01-4401-b3e2-035d83d1aa99",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb54-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f16a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02d8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0bb4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eecc-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed0e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f20a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "31336450-390d-4852-a3f6-9f0abf46597b",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0726-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0291-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa2d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb71-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e8a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f025-b044-e053-0a32095ab044",
+      "count": 5
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f90f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d3c8c8a3-6559-47d4-9922-d4a50c0b2d3d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-091d-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-06b8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f280-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f20b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f77f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0f75-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04cf-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "2dcaeab3-7026-4940-be78-1135c606bc94",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9eba0b21-6410-435e-90dd-62c975abb460",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fecc-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f187-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0389-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02fb-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee69-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0ce8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a26-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f00c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f0c9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f3c3-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-07f0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7b5f7da3-0674-4364-b909-07b3b6c91ed2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eeb1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ec81f57c-aff2-4478-a43b-89e664a63e06",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "63a230bc-cc5f-437a-8fa2-5e2ddb97db1a",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7f2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fd79-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "8d90bb97-35b8-4f8f-8f45-b4c6963d3574",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f021-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "f848dbf4-1c90-414e-8f36-68dcd83d0f6f",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b6d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f125-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7c1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1c6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7bbaa995-7196-4fad-b6d8-0e43e5512179",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee78-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f706-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a17-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc45-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-023d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0519-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f469-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9236ee2c-f1f2-4550-911b-4ee00ac5dc2d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d9f191e1-5c57-4604-90e2-9b60b6d016bd",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-054c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "6753ead8-09ce-47af-a9a4-6dd0f2347edb",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a6f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-020c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0dc4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee40-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f46e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9b0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-09f2-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-05a9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f493-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f89a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0cf0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff48-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-095f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0749-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0ac6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee1b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-01ff-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "be180228-c6fb-4dd6-8185-54e9e7c40493",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f09d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ead0d20d-1be6-4755-be4f-0e7e38491aaa",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efca-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-043f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f363-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e43-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff3b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "3cfe3a36-56f3-46a3-874a-a641eee31103",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0752-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0ba1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9e59d2ae-93b8-49a4-894e-f674e8ffe573",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fc6dd86-ccc6-d1d2-e053-0a32095ad1d2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0bfa-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "6a247c4f-241f-4bd4-8e29-b279491261c6",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fd17-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1b2-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-02e9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5c0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-effd-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff89-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "82f20b40-6aac-477b-83fe-637a7b9fde82",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f128-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "32273eac-fd14-49c6-8c4f-0f34e2defa97",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9ec10da9-844b-4c9b-ae03-7983e72df833",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "81b1e057-d5ce-494e-b387-1e337416892a",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-05c9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0cd3-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efe6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "94d9db6f-2fe3-4481-b31c-cb1015af236d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "08d485cb-06c8-4964-bf03-ed1b178ef3fd",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f71c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-068a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eec0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff53-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0f5c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f644-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-06af-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0fa8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef87-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f209-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f497-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b09-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f069-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "bbc01edd-3428-41d0-9a8c-8369c54e1fd5",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef04-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7ea-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0d3f841b-0cfc-40f4-9bd2-7a1166939f21",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "b2663f69-587c-4a1a-968b-9bc97862d470",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "838f8d7b-8004-4fdb-94cd-0e76a396a270",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0394-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed2a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0a21-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f085-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-08b9-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0bd9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "9125bfd7-945e-473f-aabd-6115d62e4faa",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "8660cd46-901f-45a1-8979-dcd9ffac4dd2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f894-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0372-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0701-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-edac-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04f6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d8ea4cac-dbb3-4f30-adbe-b0f2b9b574e2",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fdf8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed7b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fa73-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "e264a849-8f5e-444c-923c-56af2842f458",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f4e6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0393-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-facf-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f9f8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "eb8cde61-5718-4f14-ab59-7df432e254ee",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0159-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb44-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f477-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "7b8827db-706c-4ee2-a327-73af24ca111a",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-faae-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ef67-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-032c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f3e9-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b19-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "afd7749b-9028-47c0-8a1f-ef7949614b86",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-04a0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "27694cdf-c96d-4ed5-8304-d8502a7a958c",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-09aa-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fc6f-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03e7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0408-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "6a721eff-6803-4a83-be61-2031803d2740",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "0e12017e-420e-4506-93a4-c0fa9c55a352",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0ba4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-03a4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "3526a83f-21be-4efc-8de5-d9bb6c307609",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "bedc871d-4b30-4b24-bf7a-a38077eb1ea8",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb72-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ff17-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-09ea-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-00f1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "c3984d85-adce-45a7-85a2-e362c2529846",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "a349eaf8-6c71-432f-8892-859dac4f24ca",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f5a0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f146-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "8bf34ec7-4f0e-4420-9e0b-300584ee1c91",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-017e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0fb1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f7f6-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f899-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b0c-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0b77-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fb73-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eee4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ed8e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "a36f1133-c92f-4802-9077-06f69b8dbb0d",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-edc7-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ee2a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f019-b044-e053-0a32095ab044",
+      "count": 2
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f390-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f27c-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f129-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0241-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1a0-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-eff4-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0bda-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0c4d-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0283-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f081-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1fd6777e-1525-e0b0-e053-0a32095ae0b0",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "53e93c6d-b8ab-42c7-b88f-7a124823438e",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-fd2a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "4358d8db-7469-48f9-857c-02dbc2fca508",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-faa1-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "d636eec2-e6ec-41da-b5aa-540280f8af85",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-efda-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f434-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-063b-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-ffe5-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-056a-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f1f8-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-091e-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08c-f162-b044-e053-0a32095ab044",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ff76abf-a519-49f7-9c73-cdb63feb87e7",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "ff92c9dc-aab0-4574-ba42-adf81990bc43",
+      "count": 1
+    },
+    {
+      "event": "상세 화면 오픈 [Unique Users]",
+      "segment": "1ecec08d-0e84-b044-e053-0a32095ab044",
+      "count": 1
+    }
+  ]
+}

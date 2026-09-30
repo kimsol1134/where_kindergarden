@@ -61,7 +61,6 @@ export function SearchHeader() {
 
   // Hydration mismatch 방지: 클라이언트 마운트 후에만 localStorage 값 사용
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- 마운트 상태 추적은 의도적인 패턴
     setHasMounted(true);
   }, []);
 
@@ -384,7 +383,7 @@ export function SearchHeader() {
 
         {/* Header Actions - 모바일 */}
         <Link
-          href="/reviews/all"
+          href="/reviews/all/"
           className="flex-shrink-0 rounded-2xl p-2 text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)] md:hidden"
           aria-label="후기 원문 전체 확인"
           title="후기 원문 전체 확인"
@@ -406,7 +405,7 @@ export function SearchHeader() {
         {/* Header Actions - 데스크톱에서만 표시 */}
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <Link
-            href="/reviews/all"
+            href="/reviews/all/"
             className="flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium text-[var(--brand-ink-soft)] hover:bg-white/60 hover:text-[var(--brand-ink)]"
           >
             <ExternalLink className="w-4 h-4" />

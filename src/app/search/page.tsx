@@ -175,9 +175,12 @@ function SearchPageContent() {
 
 export default function SearchPage() {
   return (
-    <Suspense fallback={<SearchPageSkeleton />}>
-      <SearchPageContent />
-    </Suspense>
+    <>
+      <h1 className="sr-only">내 주변 유치원 검색 지도</h1>
+      <Suspense fallback={<SearchPageSkeleton />}>
+        <SearchPageContent />
+      </Suspense>
+    </>
   );
 }
 
