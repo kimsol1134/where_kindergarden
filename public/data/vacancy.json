@@ -1,21 +1,21 @@
 {
-  "version": "2026-09-30T01:57:43.568Z",
+  "version": "2026-10-01T01:57:01.531Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
-  "totalCount": 3044,
-  "positiveCount": 2364,
+  "totalCount": 3045,
+  "positiveCount": 2366,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-09-30T01:30:17.655Z",
-    "completedAt": "2026-09-30T01:57:43.568Z",
+    "startedAt": "2026-10-01T01:31:57.928Z",
+    "completedAt": "2026-10-01T01:57:01.531Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2364,
-    "detailSucceeded": 2352,
+    "detailRequested": 2366,
+    "detailSucceeded": 2354,
     "detailFailed": 12,
-    "detailCoverage": 0.9949238578680203,
+    "detailCoverage": 0.9949281487743026,
     "failures": [
       {
         "stage": "detail",
@@ -3095,8 +3095,8 @@
     "c59ccdcb-5b15-416d-84c6-cd209c7dad09": {
       "kindercode": "c59ccdcb-5b15-416d-84c6-cd209c7dad09",
       "aidYear": "2026",
-      "vacancyCount": 19,
-      "updatedAt": "2026-08-10",
+      "vacancyCount": 20,
+      "updatedAt": "2026-09-30",
       "preschCd": "S100004007",
       "upperEduOfficeCd": "S100000001",
       "eduOfficeCd": "S100003752",
@@ -3121,7 +3121,7 @@
           "rowNo": 3,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 1
+          "vacancyCount": 2
         }
       ]
     },
@@ -7667,8 +7667,8 @@
     "1ecec08c-fdcc-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fdcc-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 11,
-      "updatedAt": "2026-03-09",
+      "vacancyCount": 8,
+      "updatedAt": "2026-09-30",
       "preschCd": "J100006827",
       "upperEduOfficeCd": "J100000001",
       "eduOfficeCd": "J100000158",
@@ -7681,7 +7681,7 @@
           "rowNo": 1,
           "age": "3세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 8
+          "vacancyCount": 6
         },
         {
           "rowNo": 2,
@@ -7693,7 +7693,7 @@
           "rowNo": 3,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 2
+          "vacancyCount": 1
         }
       ]
     },
@@ -44526,8 +44526,8 @@
     "d34cc13b-3244-45c4-9d93-4f05540db203": {
       "kindercode": "d34cc13b-3244-45c4-9d93-4f05540db203",
       "aidYear": "2026",
-      "vacancyCount": 7,
-      "updatedAt": "2026-07-22",
+      "vacancyCount": 6,
+      "updatedAt": "2026-10-01",
       "preschCd": "J100007563",
       "upperEduOfficeCd": "J100000001",
       "eduOfficeCd": "J100000268",
@@ -44540,7 +44540,7 @@
           "rowNo": 1,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 7
+          "vacancyCount": 6
         }
       ]
     },
@@ -57705,16 +57705,23 @@
     "74c62b56-6edb-4c92-b037-7b7dc5bd9c40": {
       "kindercode": "74c62b56-6edb-4c92-b037-7b7dc5bd9c40",
       "aidYear": "2026",
-      "vacancyCount": 0,
-      "updatedAt": "2026-09-30",
-      "preschCd": null,
-      "upperEduOfficeCd": null,
-      "eduOfficeCd": null,
+      "vacancyCount": 1,
+      "updatedAt": "2026-10-01",
+      "preschCd": "C100002279",
+      "upperEduOfficeCd": "C100000001",
+      "eduOfficeCd": "C100000312",
       "foundType": "국공립",
       "name": "일광유치원",
       "address": "부산광역시 기장군 해빛로 42 해빛로42",
       "phone": "0519678800",
-      "detail": []
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "4세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        }
+      ]
     },
     "1ecec08c-fd89-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fd89-b044-e053-0a32095ab044",
@@ -60330,6 +60337,27 @@
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 11
+        }
+      ]
+    },
+    "1ecec08c-ee0e-b044-e053-0a32095ab044": {
+      "kindercode": "1ecec08c-ee0e-b044-e053-0a32095ab044",
+      "aidYear": "2026",
+      "vacancyCount": 9,
+      "updatedAt": "2026-09-30",
+      "preschCd": "P100000777",
+      "upperEduOfficeCd": "P100000001",
+      "eduOfficeCd": "P100000128",
+      "foundType": "국공립",
+      "name": "종정초등학교병설유치원",
+      "address": "전북특별자치도 김제시 종정1길 143",
+      "phone": "063-547-1281",
+      "detail": [
+        {
+          "rowNo": 1,
+          "age": "혼합연령(3~5세)",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 9
         }
       ]
     },
