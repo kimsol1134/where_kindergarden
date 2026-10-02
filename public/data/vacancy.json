@@ -1,21 +1,21 @@
 {
-  "version": "2026-10-01T01:57:01.531Z",
+  "version": "2026-10-02T02:14:05.485Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3045,
-  "positiveCount": 2366,
+  "positiveCount": 2363,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-10-01T01:31:57.928Z",
-    "completedAt": "2026-10-01T01:57:01.531Z",
+    "startedAt": "2026-10-02T01:48:10.300Z",
+    "completedAt": "2026-10-02T02:14:05.485Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
     "listCompleteness": 1,
-    "detailRequested": 2366,
-    "detailSucceeded": 2354,
+    "detailRequested": 2363,
+    "detailSucceeded": 2351,
     "detailFailed": 12,
-    "detailCoverage": 0.9949281487743026,
+    "detailCoverage": 0.9949217096910706,
     "failures": [
       {
         "stage": "detail",
@@ -1376,8 +1376,8 @@
     "1ecec08d-0f2a-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0f2a-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 10,
-      "updatedAt": "2026-04-29",
+      "vacancyCount": 6,
+      "updatedAt": "2026-10-01",
       "preschCd": "T100000360",
       "upperEduOfficeCd": "T100000001",
       "eduOfficeCd": "T100000095",
@@ -1390,7 +1390,7 @@
           "rowNo": 1,
           "age": "혼합연령(3~5세)",
           "course": "교육과정",
-          "vacancyCount": 10
+          "vacancyCount": 6
         }
       ]
     },
@@ -5830,7 +5830,7 @@
       "kindercode": "1fd6777e-150d-e0b0-e053-0a32095ae0b0",
       "aidYear": "2026",
       "vacancyCount": 17,
-      "updatedAt": "2026-08-11",
+      "updatedAt": "2026-10-02",
       "preschCd": "P100002717",
       "upperEduOfficeCd": "P100000001",
       "eduOfficeCd": "P100000108",
@@ -5843,19 +5843,13 @@
           "rowNo": 1,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 8
+          "vacancyCount": 9
         },
         {
           "rowNo": 2,
           "age": "5세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 8
-        },
-        {
-          "rowNo": 3,
-          "age": "3세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
         }
       ]
     },
@@ -7775,8 +7769,8 @@
     "1ecec08c-fdae-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fdae-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 7,
-      "updatedAt": "2026-07-16",
+      "vacancyCount": 5,
+      "updatedAt": "2026-10-01",
       "preschCd": "S100001225",
       "upperEduOfficeCd": "S100000001",
       "eduOfficeCd": "S100000152",
@@ -7789,7 +7783,7 @@
           "rowNo": 1,
           "age": "혼합연령(3~5세)",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 7
+          "vacancyCount": 5
         }
       ]
     },
@@ -26699,23 +26693,16 @@
     "1ecec08c-ffd3-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-ffd3-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-26",
-      "preschCd": "K100003716",
-      "upperEduOfficeCd": "K100000001",
-      "eduOfficeCd": "K100000257",
+      "vacancyCount": 0,
+      "updatedAt": "2026-10-01",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "새봄유치원",
       "address": "강원특별자치도 춘천시 중앙로113번길 12",
       "phone": "033-241-9872",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-0d69-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0d69-b044-e053-0a32095ab044",
@@ -48647,8 +48634,8 @@
     "1ecec08d-03b3-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-03b3-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 6,
-      "updatedAt": "2026-09-03",
+      "vacancyCount": 7,
+      "updatedAt": "2026-10-01",
       "preschCd": "M100002086",
       "upperEduOfficeCd": "M100000001",
       "eduOfficeCd": "M100000109",
@@ -48661,7 +48648,7 @@
           "rowNo": 1,
           "age": "5세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 5
+          "vacancyCount": 6
         },
         {
           "rowNo": 2,
@@ -56047,8 +56034,8 @@
     "1ecec08d-0a21-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-0a21-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 9,
-      "updatedAt": "2026-09-03",
+      "vacancyCount": 7,
+      "updatedAt": "2026-10-01",
       "preschCd": "E100001962",
       "upperEduOfficeCd": "E100000001",
       "eduOfficeCd": "E100000117",
@@ -56059,15 +56046,9 @@
       "detail": [
         {
           "rowNo": 1,
-          "age": "3세",
-          "course": "교육과정",
-          "vacancyCount": 1
-        },
-        {
-          "rowNo": 2,
           "age": "5세",
           "course": "교육과정",
-          "vacancyCount": 8
+          "vacancyCount": 7
         }
       ]
     },
@@ -57705,23 +57686,16 @@
     "74c62b56-6edb-4c92-b037-7b7dc5bd9c40": {
       "kindercode": "74c62b56-6edb-4c92-b037-7b7dc5bd9c40",
       "aidYear": "2026",
-      "vacancyCount": 1,
+      "vacancyCount": 0,
       "updatedAt": "2026-10-01",
-      "preschCd": "C100002279",
-      "upperEduOfficeCd": "C100000001",
-      "eduOfficeCd": "C100000312",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "일광유치원",
       "address": "부산광역시 기장군 해빛로 42 해빛로42",
       "phone": "0519678800",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정+방과후과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08c-fd89-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fd89-b044-e053-0a32095ab044",
@@ -58517,8 +58491,8 @@
     "1ecec08c-f47a-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-f47a-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 11,
-      "updatedAt": "2026-03-19",
+      "vacancyCount": 5,
+      "updatedAt": "2026-10-01",
       "preschCd": "T100000253",
       "upperEduOfficeCd": "T100000001",
       "eduOfficeCd": "T100000110",
@@ -58531,7 +58505,7 @@
           "rowNo": 1,
           "age": "5세",
           "course": "교육과정",
-          "vacancyCount": 11
+          "vacancyCount": 5
         }
       ]
     },
@@ -59942,23 +59916,16 @@
     "1ecec08c-fd8a-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-fd8a-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 1,
-      "updatedAt": "2026-08-24",
-      "preschCd": "T100000484",
-      "upperEduOfficeCd": "T100000001",
-      "eduOfficeCd": "T100000110",
+      "vacancyCount": 0,
+      "updatedAt": "2026-10-01",
+      "preschCd": null,
+      "upperEduOfficeCd": null,
+      "eduOfficeCd": null,
       "foundType": "국공립",
       "name": "제주북초등학교병설유치원",
       "address": "제주특별자치도 제주시 중앙로8길 18",
       "phone": "064-717-3372",
-      "detail": [
-        {
-          "rowNo": 1,
-          "age": "4세",
-          "course": "교육과정",
-          "vacancyCount": 1
-        }
-      ]
+      "detail": []
     },
     "1ecec08d-01c1-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08d-01c1-b044-e053-0a32095ab044",
@@ -65243,8 +65210,8 @@
     "1ecec08c-efe2-b044-e053-0a32095ab044": {
       "kindercode": "1ecec08c-efe2-b044-e053-0a32095ab044",
       "aidYear": "2026",
-      "vacancyCount": 25,
-      "updatedAt": "2026-08-25",
+      "vacancyCount": 24,
+      "updatedAt": "2026-10-02",
       "preschCd": "E100001472",
       "upperEduOfficeCd": "E100000001",
       "eduOfficeCd": "E100000070",
@@ -65263,7 +65230,7 @@
           "rowNo": 2,
           "age": "4세",
           "course": "교육과정+방과후과정",
-          "vacancyCount": 5
+          "vacancyCount": 4
         },
         {
           "rowNo": 3,
