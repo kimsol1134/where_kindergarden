@@ -1,13 +1,13 @@
 {
-  "version": "2026-10-03T01:48:42.112Z",
+  "version": "2026-10-04T02:24:59.935Z",
   "source": "https://www.go-firstschool.go.kr/PAMS_SS",
   "aidYear": "2026",
   "totalCount": 3045,
   "positiveCount": 2363,
   "quality": {
     "status": "complete",
-    "startedAt": "2026-10-03T01:23:46.329Z",
-    "completedAt": "2026-10-03T01:48:42.112Z",
+    "startedAt": "2026-10-04T01:58:03.323Z",
+    "completedAt": "2026-10-04T02:24:59.935Z",
     "regionsRequested": 261,
     "regionsSucceeded": 261,
     "regionsFailed": 0,
@@ -18802,7 +18802,7 @@
     "c2a33217-04cc-4d1d-b2a1-85eda3fcee06": {
       "kindercode": "c2a33217-04cc-4d1d-b2a1-85eda3fcee06",
       "aidYear": "2026",
-      "vacancyCount": 10,
+      "vacancyCount": 11,
       "updatedAt": "2026-06-21",
       "preschCd": "9000001059",
       "upperEduOfficeCd": "S100000001",
@@ -18821,6 +18821,12 @@
         {
           "rowNo": 2,
           "age": "4세",
+          "course": "교육과정+방과후과정",
+          "vacancyCount": 1
+        },
+        {
+          "rowNo": 3,
+          "age": "3세",
           "course": "교육과정+방과후과정",
           "vacancyCount": 1
         }
