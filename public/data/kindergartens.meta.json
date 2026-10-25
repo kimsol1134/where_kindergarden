@@ -5,11 +5,11 @@
   "identifierSource": "https://e-childschoolinfo.moe.go.kr/kinderMt/combineFind.do",
   "sourceVersion": "20261",
   "sourceLabel": "2026년 1차",
-  "collectedAt": "2026-10-18T23:22:18.476Z",
-  "totalCount": 7150,
-  "registryCount": 7215,
-  "registryJoinCoverage": 0.9997203579418344,
-  "omittedNotInOperatingRegistry": 2,
+  "collectedAt": "2026-10-25T23:21:24.941Z",
+  "totalCount": 7149,
+  "registryCount": 7214,
+  "registryJoinCoverage": 0.9995805369127517,
+  "omittedNotInOperatingRegistry": 3,
   "componentCoverage": {
     "general": 1,
     "building": 1,
@@ -18,24 +18,24 @@
     "tenure": 1,
     "meal": 1,
     "afterSchool": 1,
-    "bus": 0.9998601398601399,
+    "bus": 0.9998601202965449,
     "safety": 1
   },
   "regionCodeCount": 261,
   "regionResolution": {
-    "official-address": 7120,
+    "official-address": 7119,
     "current-reform-rule": 30,
     "previous-address": 0
   },
   "coordinateResolution": {
-    "officialBulk": 7119,
+    "officialBulk": 7118,
     "officialDetail": 0,
     "previous": 31,
     "kakaoAddress": 0
   },
   "newSincePrevious": 0,
-  "removedSincePrevious": 0,
-  "checksumSha256": "7e31b5efb83d6a46f155411ea0032dc838bed61abfa70056ab2a6c59a842598c",
+  "removedSincePrevious": 1,
+  "checksumSha256": "0c69e2212b389b8df79791d8be65778c82aca08f8c6a539b2623aed7a395e85f",
   "fieldNotes": {
     "outdoor_playground_area": "2026 공개 교실면적 자료에서 제공되지 않아 0으로 설정; 과거 조리실 면적 오매핑을 제거함",
     "has_playground": "실내체육장 또는 놀이시설 안전검사 대상 여부로 계산",
